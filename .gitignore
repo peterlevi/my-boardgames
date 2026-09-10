@@ -4,3 +4,6 @@ credentials.env
 # Python
 __pycache__/
 *.pyc
+
+# Generated reports
+reports/

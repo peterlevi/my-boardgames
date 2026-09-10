@@ -1,22 +1,76 @@
-# Games excluded from "not a point salad" queries.
-# A point salad here means: victory points arrive from many loosely-coupled
-# sources, so most plays converge on "score a bit of everything" rather than
-# committing to a contested strategy. Judgment call — edit freely.
+# Games flagged "point salad" — the report's Point Salad filter reads this file.
+#
+# Working definition: victory points arrive from many loosely-coupled sources,
+# so a typical play is "score a bit of everything" rather than committing to a
+# contested strategy. It is about how the scoring is *shaped*, not whether the
+# game is good — several favourites are on this list.
+#
+# This is a judgment call, not BGG data. Edit freely and re-run build.py.
+# Games not listed here are treated as "not a point salad", including a handful
+# I don't know well enough to judge (Salton Sea, Bamboo, Minos, Daitoshi).
+
+# --- heavy euros with parallel scoring tracks ---
+Ark Nova
+Terraforming Mars
+A Feast for Odin
+Great Western Trail
+Great Western Trail: Argentina
+Great Western Trail: New Zealand
 Scythe
-Orleans
+Lost Ruins of Arnak
 Orléans
+Underwater Cities
+Kanban EV
+Darwin's Journey
+Maracaibo
+Revive
 Teotihuacan: City of Gods
 Carnegie
+Praga Caput Regni
+Paladins of the West Kingdom
+Viscounts of the West Kingdom
 Trajan
 Rajas of the Ganges
-Cartographers
+Coimbra
+Tiletum
+Bitoku
 Pulsar 2849
-Bruxelles 1893
+Wayfarers of the South Tigris
+Shackleton Base: A Journey to the Moon
+Tekhenu: Obelisk of the Sun
+Boonlake
+Santa Maria
 Skymines
-Mille Fiori
+Golem
+Witchstone
 Khôra: Rise of an Empire
-Little Town
+Black Angel
+Tawantinsuyu: The Inca Empire
 Alma Mater
 Tabannusi: Builders of Ur
+Ishtar: Gardens of Babylon
+Bruxelles 1893
+Gùgōng
+Civolution
+Ezra and Nehemiah
+The Castles of Burgundy
+Lorenzo il Magnifico: Big Box
+Newton & Great Discoveries
+Ultimate Railroads
+The White Castle
+The Red Cathedral
+
+# --- lighter games that still score from everything ---
+Wingspan
+Everdell
+Harmonies
+Five Tribes: The Djinns of Naqala
+Mille Fiori
+Cartographers
+Evergreen
+Little Town
+3 Ring Circus
+Dinosaur Island: Rawr 'n Write
+Imperial Settlers: Empires of the North
+Fantastic Factories
 Space Gate Odyssey
-Byzanz

@@ -1,12 +1,12 @@
 ---
 name: bgg-collection
-description: Answer questions about the user's BoardGameGeek collection — which owned games play best at N players, filtered by weight, length, rank or approval. Use whenever the user asks what to play, what suits a player count, or anything about games they own.
+description: Answer questions about the user's BoardGameGeek collection — which owned games suit a player count, filtered by complexity, length, interaction, play count, rank or point-salad-ness — and render an interactive HTML report of it. Use whenever the user asks what to play, what suits a group size, or anything about games they own.
 ---
 
 # BGG collection
 
-A cached copy of the user's owned BGG games with a query script. Everything
-except `fetch.py` is offline and instant.
+A cached copy of the user's owned games and expansions, with query and report
+scripts. Everything except `fetch.py` is offline and instant.
 
 **Location:** `~/hs/bgg-collection-data`
 
@@ -19,36 +19,49 @@ python3 scripts/query.py --players 4 --exclude-file point-salads.txt --format md
 
 Flags: `--players N`, `--min-best PCT` (default 50), `--min-approval PCT`,
 `--min-votes N` (default 10), `--min-weight` / `--max-weight`,
-`--max-time MIN`, `--exclude-file FILE`, `--format txt|md|json`.
+`--max-time MIN`, `--exclude-file FILE`, `--format txt|md|json`. Output sorts
+by BGG rank ascending, unranked last.
 
-Output is sorted by BGG rank ascending, unranked entries last.
+## Build the interactive report with `report.py`
+
+```bash
+python3 scripts/report.py -o reports/collection.html
+```
+
+One self-contained HTML file containing the whole collection, filtered in the
+browser: search, player count, Best/Good rule, point salad, interaction,
+complexity, time, plays, and expansion handling. Prefer this when the user
+wants to explore rather than get one answer.
 
 For anything the flags don't cover, read `data/games.json` directly — one
-object per game with `name`, `rank`, `weight`, `average`, `year`,
-`minplayers`/`maxplayers`, `minplaytime`/`maxplaytime`, and the raw `poll`
-(`{"4": {"Best": n, "Recommended": n, "Not Recommended": n}, ...}`).
+object per game with `name`, `rank`, `weight`, `average`, `year`, `plays`,
+`minplayers`/`maxplayers`, `minplaytime`/`maxplaytime`, `mechanics`,
+`categories`, `interaction`, `point_salad`, `is_expansion`, `expands`, and the
+raw `poll` (`{"4": {"Best": n, "Recommended": n, "Not Recommended": n}}`).
 
 ## Terms
 
 - **Best at N** — N got more Best votes than any other count.
-- **Great at N** — ≥ `--min-best`% of voters at N called N the Best count.
-- **Approval at N** — (Best + Recommended) / total votes at N.
+- **Good at N** — Best at N, or ≥50% of voters at N called N best.
+- **Approval at N** — (Best + Recommended) ÷ total votes at N.
 
 Report Best and Approval separately; they say different things. A party game
 can be 99% approved at 4 while being Best at 6.
 
+## Say when a column is an opinion
+
+`interaction` and `point_salad` are **derived locally, not BGG data** — BGG
+exposes no interaction statistic and no point-salad flag. Whenever you present
+either, say so. `point-salads.txt` and `scripts/interaction.py` are meant to be
+edited when the user disagrees; re-run `build.py` afterwards.
+
 ## Refreshing (network — needs the user's OK)
 
-`scripts/fetch.py` makes ~14 requests to BGG spaced 6s apart, then
+`scripts/fetch.py` makes ~16 requests to BGG spaced 6s apart, then
 `scripts/build.py` regenerates `games.json`. Only do this if the user asks or
 the cache is clearly stale (check `data/raw/collection.xml` mtime). The API
 needs a bearer token, already in the gitignored `credentials.env`.
 
-Don't scrape boardgamegeek.com — Cloudflare returns 403 to non-browser
-clients. See README.md for the rest of the API's quirks.
-
-## Taste filters
-
-`point-salads.txt` lists games excluded when the user asks to skip point
-salads. It's a judgment list, not BGG data — if the user disagrees with an
-entry, edit the file.
+Don't scrape boardgamegeek.com — Cloudflare returns 403 to non-browser clients.
+See README.md for the rest of the API's quirks and for geekgroup.app as a
+fallback source.

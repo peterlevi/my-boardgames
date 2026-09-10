@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Board game collection</title>
+<style>
+:root {
+  --bg:#f7f6f3; --panel:#fff; --ink:#1b1a17; --muted:#6b6862; --line:#e2ded6;
+  --accent:#7a5c3e; --best:#2f6b45; --best-bg:#e4f0e8; --great:#7a6320;
+  --great-bg:#f6efd8; --warn:#8a4b32; --warn-bg:#f4e5de;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:#16150f; --panel:#201e18; --ink:#ece8df; --muted:#9b958a; --line:#332f27;
+    --accent:#d3ab7d; --best:#8fd0a6; --best-bg:#1d3226; --great:#e0c477;
+    --great-bg:#332d15; --warn:#e5a488; --warn-bg:#38241c;
+  }
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink);
+  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+.wrap { max-width:1280px; margin:0 auto; padding:28px 16px 64px; }
+h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
+.sub { color:var(--muted); margin:0 0 6px; max-width:75ch; }
+.note { font-size:.85rem; }
+.note b { color:var(--ink); }
+
+.panel { position:sticky; top:0; z-index:6; background:var(--bg);
+  padding:14px 0 12px; margin-top:16px; border-bottom:1px solid var(--line); }
+.row { display:flex; gap:10px 14px; align-items:flex-end; flex-wrap:wrap; }
+.row + .row { margin-top:10px; }
+.f { display:flex; flex-direction:column; gap:3px; }
+.f > label { font-size:.68rem; text-transform:uppercase; letter-spacing:.06em;
+  color:var(--muted); font-weight:600; }
+input, select { font:inherit; color:var(--ink); background:var(--panel);
+  border:1px solid var(--line); border-radius:7px; padding:7px 9px; }
+input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px; }
+#q { min-width:190px; }
+.f.grow { flex:1 1 190px; min-width:0; }
+.f.grow #q { width:100%; }
+.pair { display:flex; align-items:center; gap:5px; }
+.pair input { width:66px; }
+.pair span { color:var(--muted); font-size:.85rem; }
+#count { margin-left:auto; color:var(--muted); font-variant-numeric:tabular-nums;
+  white-space:nowrap; align-self:center; }
+button.link { background:none; border:none; color:var(--accent); cursor:pointer;
+  font:inherit; text-decoration:underline; padding:7px 0; }
+
+table { width:100%; border-collapse:separate; border-spacing:0; margin-top:6px; }
+th, td { padding:8px 9px; text-align:left; border-bottom:1px solid var(--line);
+  vertical-align:middle; }
+th { position:sticky; top:var(--thtop,120px); z-index:4; background:var(--bg);
+  cursor:pointer; user-select:none; font-size:.7rem; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--muted); white-space:nowrap; }
+th:hover { color:var(--ink); }
+th[aria-sort]::after { content:" ▲"; color:var(--accent); }
+th[aria-sort="descending"]::after { content:" ▼"; }
+td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+tbody tr:hover { background:var(--panel); }
+img.thumb { width:48px; height:38px; object-fit:cover; border-radius:5px;
+  background:var(--panel); display:block; }
+td.thumb { width:48px; padding-right:0; }
+a.game { color:var(--ink); text-decoration:none; font-weight:600; }
+a.game:hover { color:var(--accent); text-decoration:underline; }
+.yr { color:var(--muted); font-weight:400; font-size:.85em; }
+.tag { display:inline-block; padding:2px 8px; border-radius:99px;
+  font-size:.72rem; font-weight:700; white-space:nowrap; }
+.tag.best { color:var(--best); background:var(--best-bg); }
+.tag.good { color:var(--great); background:var(--great-bg); }
+.tag.exp  { color:var(--warn); background:var(--warn-bg); font-size:.65rem;
+  margin-left:5px; vertical-align:middle; }
+.ix { font-size:.8rem; color:var(--muted); }
+.ix.High { color:var(--warn); font-weight:600; }
+.ix.Medium { color:var(--ink); }
+.bar { position:relative; min-width:72px; }
+.bar span { position:absolute; left:9px; right:9px; bottom:2px; height:3px;
+  background:var(--line); border-radius:2px; }
+.bar span i { display:block; height:100%; background:var(--accent);
+  border-radius:2px; }
+.dot { color:var(--muted); }
+.empty { padding:44px 10px; color:var(--muted); text-align:center; }
+footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; }
+/* An overflow container becomes the containing block for sticky children, which
+   would pin the header inside this box instead of the viewport. So the table
+   only gets its horizontal scroller on narrow screens. */
+@media (max-width:1000px) { .scroll { overflow-x:auto; } }
+@media (max-width:700px) { .hide-sm { display:none; } }
+</style>
+</head><body>
+<div class="wrap">
+<h1>Board game collection</h1>
+<p class="sub">__NGAMES__ owned games and __NEXP__ owned expansions. Every filter
+runs in the page — click a column to sort, and nothing here calls out to BGG.</p>
+<p class="sub note"><b>Best at N</b> = N drew more “Best” votes than any other
+count in BGG's player-count poll. <b>Good at N</b> = Best, or ≥50% of voters at
+N called N the best count. <b>Appr</b> = (Best + Recommended) ÷ all votes at N.
+<b>Interaction</b> is <em>not</em> a BGG statistic — no such data exists in
+their API — it is derived from each game's mechanics and categories, so treat
+it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p>
+
+<div class="panel">
+  <div class="row">
+    <div class="f grow"><label for="q">Search</label>
+      <input id="q" type="search" placeholder="Game name…" autocomplete="off"></div>
+    <div class="f"><label for="players">Players</label>
+      <select id="players"></select></div>
+    <div class="f"><label for="mode">Rule</label>
+      <select id="mode">
+        <option value="any">Plays at that count</option>
+        <option value="good">Good at that count</option>
+        <option value="best">Best at that count</option>
+      </select></div>
+    <div class="f"><label for="salad">Point salad</label>
+      <select id="salad">
+        <option value="any">Doesn't matter</option>
+        <option value="no">No — exclude salads</option>
+        <option value="yes">Yes — only salads</option>
+      </select></div>
+    <div class="f"><label for="ix">Interaction</label>
+      <select id="ix">
+        <option value="">Any</option><option>Low</option>
+        <option>Medium</option><option>High</option>
+      </select></div>
+  </div>
+  <div class="row">
+    <div class="f"><label>Complexity</label>
+      <div class="pair"><input id="wmin" type="number" min="0" max="5" step="0.1"
+        placeholder="0"><span>to</span><input id="wmax" type="number" min="0"
+        max="5" step="0.1" placeholder="5"></div></div>
+    <div class="f"><label>Time (min)</label>
+      <div class="pair"><input id="tmin" type="number" min="0" step="5"
+        placeholder="0"><span>to</span><input id="tmax" type="number" min="0"
+        step="5" placeholder="any"></div></div>
+    <div class="f"><label>Plays</label>
+      <div class="pair"><input id="plmin" type="number" min="0" step="1"
+        placeholder="0"><span>to</span><input id="plmax" type="number" min="0"
+        step="1" placeholder="any"></div></div>
+    <div class="f"><label for="exp">Expansions</label>
+      <select id="exp">
+        <option value="fold">Hide, but count for base game</option>
+        <option value="show">Show as their own rows</option>
+        <option value="drop">Ignore completely</option>
+      </select></div>
+    <div class="f"><label for="votes">Min poll votes</label>
+      <input id="votes" type="number" min="0" step="5" style="width:80px"></div>
+    <button class="link" id="reset" type="button">Reset filters</button>
+    <span id="count"></span>
+  </div>
+</div>
+
+<div class="scroll">
+<table>
+  <thead><tr>
+    <th class="thumb"></th>
+    <th class="num" data-k="rk">Rank</th>
+    <th data-k="n">Game</th>
+    <th class="num" data-k="pl">Plays</th>
+    <th class="num" data-k="tmax">Time</th>
+    <th class="num" data-k="w">Weight</th>
+    <th data-k="ix">Interact</th>
+    <th class="num" data-k="sal">Salad</th>
+    <th class="num" data-k="verdict">At N</th>
+    <th class="num" data-k="bestPct">Best</th>
+    <th class="num" data-k="appr">Appr</th>
+    <th class="num hide-sm" data-k="total">Votes</th>
+  </tr></thead>
+  <tbody id="rows"></tbody>
+</table>
+</div>
+<p class="empty" id="empty" hidden>Nothing matches those filters.</p>
+<footer>BGG snapshot __STAMP__ — ranks, weights, play counts and player-count
+polls from boardgamegeek.com; thumbnails hotlinked from BGG. Interaction and
+point-salad columns are derived locally and are opinions, not BGG data.</footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/;
+const OPTS = /*__OPTS__*/;
+
+// Owned expansions, indexed by the base game they attach to, so a base game can
+// borrow its expansion's player-count poll when "fold" is selected.
+const EXP_OF = {};
+for (const g of DATA) {
+  if (!g.exp) continue;
+  for (const base of g.of) (EXP_OF[base] ||= []).push(g);
+}
+
+const el = id => document.getElementById(id);
+const F = {
+  q: el('q'), players: el('players'), mode: el('mode'), salad: el('salad'),
+  ix: el('ix'), wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
+  tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'), exp: el('exp'),
+  votes: el('votes'),
+};
+
+F.players.innerHTML = '<option value="0">Any</option>' +
+  [1,2,3,4,5,6,7,8].map(n => `<option value="${n}">${n} players</option>`).join('');
+
+function applyDefaults() {
+  F.q.value = '';
+  F.players.value = OPTS.players;
+  F.mode.value = OPTS.mode;
+  F.salad.value = OPTS.salad;
+  F.exp.value = OPTS.expansions;
+  F.votes.value = OPTS.minVotes;
+  F.ix.value = '';
+  for (const k of ['wmin','wmax','tmin','tmax','plmin','plmax']) F[k].value = '';
+}
+
+/** Aggregate the poll for one game at n players, or null if nobody voted. */
+function statsAt(g, n) {
+  const d = g.poll[n];
+  if (!d) return null;
+  const [b, r, x] = d, total = b + r + x;
+  if (!total) return null;
+  return { best: b, total, bestPct: 100 * b / total,
+           appr: 100 * (b + r) / total, isBest: b === g.top && b > 0 };
+}
+
+function qualifies(s, mode) {
+  if (!s) return false;
+  if (mode === 'best') return s.isBest;
+  if (mode === 'good') return s.isBest || s.bestPct >= 50;
+  return true;
+}
+
+/** The reading to judge a game by at n players.
+ *
+ *  Normally the game's own poll. When folding expansions in, an owned expansion
+ *  only gets to speak if the base game does NOT already qualify — an expansion
+ *  is there to open up a count the base game can't do well, not to restate one
+ *  it already does. (Letting the strongest percentage win instead put Root's
+ *  13-vote expansion poll ahead of its own 1359-vote one.) */
+function reading(g, n, fold, minVotes, mode) {
+  let base = statsAt(g, n);
+  if (base && base.total < minVotes) base = null;
+  if (!fold || g.exp || qualifies(base, mode)) return base;
+  for (const e of EXP_OF[g.id] || []) {
+    const s = statsAt(e, n);
+    if (!s || s.total < minVotes) continue;
+    if (qualifies(s, mode)) return { ...s, via: e.n };
+  }
+  return base;
+}
+
+const num = v => v === '' ? null : parseFloat(v);
+
+function visible() {
+  const term = F.q.value.trim().toLowerCase();
+  const n = +F.players.value, mode = F.mode.value, expMode = F.exp.value;
+  const minVotes = +F.votes.value || 0;
+  const wmin = num(F.wmin.value), wmax = num(F.wmax.value);
+  const tmin = num(F.tmin.value), tmax = num(F.tmax.value);
+  const plmin = num(F.plmin.value), plmax = num(F.plmax.value);
+  const salad = F.salad.value, ix = F.ix.value;
+  const fold = expMode === 'fold';
+
+  const out = [];
+  for (const g of DATA) {
+    if (g.exp && expMode !== 'show') continue;
+    if (term && !`${g.n} ${g.y || ''}`.toLowerCase().includes(term)) continue;
+    if (salad === 'no' && g.sal) continue;
+    if (salad === 'yes' && !g.sal) continue;
+    if (ix && g.ix !== ix) continue;
+    if (wmin !== null && !(g.w >= wmin)) continue;
+    if (wmax !== null && !(g.w <= wmax)) continue;
+    if (tmin !== null && !((g.tmax ?? 0) >= tmin)) continue;
+    if (tmax !== null && !((g.tmax ?? 0) <= tmax)) continue;
+    if (plmin !== null && g.pl < plmin) continue;
+    if (plmax !== null && g.pl > plmax) continue;
+
+    let s = null;
+    if (n) {
+      s = reading(g, n, fold, minVotes, mode);
+      if (!qualifies(s, mode)) continue;
+    }
+    out.push([g, s]);
+  }
+  return out;
+}
+
+let sortKey = 'rk', sortDesc = false;
+
+function sortRows(rows) {
+  const get = ([g, s]) => {
+    switch (sortKey) {
+      case 'verdict': return s ? (s.isBest ? 0 : 1) : 2;
+      case 'bestPct': return s ? s.bestPct : null;
+      case 'appr': return s ? s.appr : null;
+      case 'total': return s ? s.total : null;
+      case 'ix': return ['Low','Medium','High'].indexOf(g.ix);
+      default: return g[sortKey];
+    }
+  };
+  const text = sortKey === 'n';
+  rows.sort((a, b) => {
+    let x = get(a), y = get(b);
+    if (text) return sortDesc ? String(y).localeCompare(String(x))
+                              : String(x).localeCompare(String(y));
+    // Missing values (unranked, unpolled) always sink, whichever way we sort.
+    x = (x === null || x === undefined) ? Infinity : x;
+    y = (y === null || y === undefined) ? Infinity : y;
+    if (x === y) return (a[0].rk ?? Infinity) - (b[0].rk ?? Infinity);
+    return sortDesc ? y - x : x - y;
+  });
+  return rows;
+}
+
+const esc = s => String(s).replace(/[&<>"]/g, c =>
+  ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
+
+function bar(p) {
+  return `${p.toFixed(0)}%<span><i style="width:${Math.min(p,100).toFixed(0)}%"></i></span>`;
+}
+
+function render() {
+  const rows = sortRows(visible());
+  const n = +F.players.value;
+  const html = rows.map(([g, s]) => {
+    const thumb = g.th ? `<img class="thumb" loading="lazy" alt="" src="${esc(g.th)}">` : '';
+    const expTag = g.exp ? '<span class="tag exp">EXPANSION</span>' : '';
+    const viaTag = s && s.via
+      ? `<span class="tag exp" title="${esc(s.via)}">+EXP</span>` : '';
+    const verdict = !s ? '<span class="dot">—</span>'
+      : s.isBest ? '<span class="tag best">Best</span>'
+                 : (s.bestPct >= 50 ? '<span class="tag good">Good</span>'
+                                    : '<span class="dot">plays</span>');
+    return `<tr>
+<td class="thumb">${thumb}</td>
+<td class="num">${g.rk ?? '<span class="dot">—</span>'}</td>
+<td><a class="game" href="https://boardgamegeek.com/boardgame/${g.id}" target="_blank" rel="noopener">${esc(g.n)}</a> <span class="yr">${g.y || ''}</span>${expTag}${viaTag}</td>
+<td class="num">${g.pl || '<span class="dot">0</span>'}</td>
+<td class="num">${esc(g.t)}</td>
+<td class="num">${g.w ? g.w.toFixed(2) : '<span class="dot">—</span>'}</td>
+<td><span class="ix ${g.ix}">${g.ix}</span></td>
+<td class="num">${g.sal ? 'yes' : '<span class="dot">no</span>'}</td>
+<td class="num">${n ? verdict : '<span class="dot">—</span>'}</td>
+<td class="num bar">${s ? bar(s.bestPct) : '<span class="dot">—</span>'}</td>
+<td class="num bar">${s ? bar(s.appr) : '<span class="dot">—</span>'}</td>
+<td class="num hide-sm">${s ? s.total : '<span class="dot">—</span>'}</td>
+</tr>`;
+  }).join('');
+  el('rows').innerHTML = html;
+  el('empty').hidden = rows.length > 0;
+  const shown = rows.length;
+  const games = rows.filter(r => !r[0].exp).length;
+  el('count').textContent = shown === 0 ? 'no matches'
+    : `${shown} row${shown === 1 ? '' : 's'}` +
+      (shown !== games ? ` (${games} games)` : '');
+}
+
+document.querySelectorAll('th[data-k]').forEach(th => {
+  th.addEventListener('click', () => {
+    const k = th.dataset.k;
+    sortDesc = (k === sortKey) ? !sortDesc : false;
+    sortKey = k;
+    document.querySelectorAll('th').forEach(o => o.removeAttribute('aria-sort'));
+    th.setAttribute('aria-sort', sortDesc ? 'descending' : 'ascending');
+    render();
+  });
+});
+Object.values(F).forEach(i => i.addEventListener('input', render));
+el('reset').addEventListener('click', () => { applyDefaults(); render(); });
+
+// The filter panel is sticky and wraps to more rows on narrow screens, so the
+// table header's offset has to track its real height rather than a guess.
+const panel = document.querySelector('.panel');
+const setStickyTop = () => document.documentElement.style
+  .setProperty('--thtop', panel.offsetHeight + 'px');
+new ResizeObserver(setStickyTop).observe(panel);
+setStickyTop();
+
+applyDefaults();
+document.querySelector('th[data-k="rk"]').setAttribute('aria-sort', 'ascending');
+render();
+</script>
+</body></html>

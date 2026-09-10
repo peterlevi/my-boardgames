@@ -12,70 +12,14 @@ Approval at N = (Best + Recommended) / all votes for N.
 import argparse
 import json
 
-from common import ROOT
-
-
-def poll_stats(g, n):
-    d = g["poll"].get(str(n))
-    if not d:
-        return None
-    best, rec, nr = (d.get("Best", 0), d.get("Recommended", 0),
-                     d.get("Not Recommended", 0))
-    total = best + rec + nr
-    if total == 0:
-        return None
-    top = max((v.get("Best", 0) for v in g["poll"].values()), default=0)
-    return dict(best=best, total=total, best_pct=100 * best / total,
-                approval=100 * (best + rec) / total,
-                is_best=(best == top and best > 0))
+from common import add_filter_args, playtime, select
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--players", type=int, default=4)
-    ap.add_argument("--min-votes", type=int, default=10,
-                    help="ignore games with fewer poll votes at this count")
-    ap.add_argument("--min-best", type=float, default=50.0,
-                    help="'great at N' threshold, in percent")
-    ap.add_argument("--min-approval", type=float, default=0.0)
-    ap.add_argument("--max-weight", type=float)
-    ap.add_argument("--min-weight", type=float)
-    ap.add_argument("--max-time", type=int, help="max of maxplaytime, minutes")
-    ap.add_argument("--exclude-file",
-                    help="file of game names to drop, one per line, # = comment")
+    ap = add_filter_args(argparse.ArgumentParser())
     ap.add_argument("--format", choices=["txt", "md", "json"], default="txt")
     a = ap.parse_args()
-
-    games = json.loads((ROOT / "data" / "games.json").read_text())
-
-    excluded = set()
-    if a.exclude_file:
-        for line in (ROOT / a.exclude_file).read_text().splitlines():
-            line = line.split("#")[0].strip()
-            if line:
-                excluded.add(line)
-
-    rows = []
-    for g in games:
-        s = poll_stats(g, a.players)
-        if not s or s["total"] < a.min_votes:
-            continue
-        if not (s["is_best"] or s["best_pct"] >= a.min_best):
-            continue
-        if s["approval"] < a.min_approval:
-            continue
-        if g["name"] in excluded:
-            continue
-        w = g["weight"]
-        if a.max_weight and (w is None or w > a.max_weight):
-            continue
-        if a.min_weight and (w is None or w < a.min_weight):
-            continue
-        if a.max_time and (g["maxplaytime"] or 0) > a.max_time:
-            continue
-        rows.append((g, s))
-
-    rows.sort(key=lambda r: (r[0]["rank"] is None, r[0]["rank"] or 10**9))
+    rows = select(a)
 
     if a.format == "json":
         print(json.dumps([{**g, "stats": s} for g, s in rows], indent=1,
@@ -89,8 +33,7 @@ def main():
         print("| " + " | ".join(hdr) + " |")
         print("|---:|---|---|---:|---|---:|---:|---:|")
     for g, s in rows:
-        lo, hi = g["minplaytime"], g["maxplaytime"]
-        t = str(lo) if lo == hi else f"{lo}–{hi}"
+        t = playtime(g)
         verdict = "Best" if s["is_best"] else "Great"
         cells = [str(g["rank"] or "—"), g["name"], t,
                  f'{g["weight"]:.2f}' if g["weight"] else "—", verdict,

@@ -72,15 +72,16 @@ a.game:hover { color:var(--accent); text-decoration:underline; }
 .ix { font-size:.8rem; color:var(--muted); }
 .ix.High { color:var(--warn); font-weight:600; }
 .ix.Medium { color:var(--ink); }
-/* BGG's rating badge: a hexagon with points top and bottom, coloured by the
-   integer band of the rating (their scale, 1 red through 10 green). The text
-   is always dark because every band colour is a pastel. */
+/* BGG's rating badge: a regular pointy-top hexagon in their muted palette,
+   white text. The clip-path below only describes a *regular* hexagon when the
+   box is taller than it is wide by 2/√3 (≈1.155) — at any other aspect ratio
+   the edges come out uneven, which is what "crooked" looked like. */
 .hex { display:inline-flex; align-items:center; justify-content:center;
-  width:44px; height:38px; color:#111; font-weight:700; font-size:.82rem;
+  width:34px; aspect-ratio:0.86603; color:#fff; font-weight:700; font-size:.78rem;
   font-variant-numeric:tabular-nums; letter-spacing:-.02em;
   clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
-.hex.none { background:#b3b3b3; color:#444; font-weight:600; }
-td.score { width:44px; padding-right:4px; }
+.hex.none { background:#9b9b9b; font-weight:600; }
+td.score { width:34px; padding-right:4px; }
 .bar { position:relative; min-width:72px; }
 .bar span { position:absolute; left:9px; right:9px; bottom:2px; height:3px;
   background:var(--line); border-radius:2px; }
@@ -328,9 +329,13 @@ function sortRows(rows) {
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
 
-// BGG's own rating palette, indexed by the integer band of the rating.
-const RATING_COLORS = ['#ff0000','#ff0000','#ff3366','#ff6699','#ff66cc',
-                       '#cc99ff','#9999ff','#99ffff','#66ff99','#33cc99','#00cc00'];
+// BGG's muted rating palette, indexed by the integer band of the rating.
+// Bands 6, 7 and 8 are matched to BGG's own badges; this collection spans
+// 6.22–8.70, so those three are the only ones that actually render. The rest
+// follow BGG's progression down through purple and red.
+const RATING_COLORS = ['#a03530','#a03530','#b3414c','#b94a75','#a9518f',
+                       '#8560a4','#5b71ac','#3778a8','#3f8a5f','#2d7a4d',
+                       '#1d6b40'];
 
 function hex(g) {
   if (!g.av) return '<span class="hex none">—</span>';

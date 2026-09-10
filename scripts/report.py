@@ -8,25 +8,45 @@ Unlike query.py this does not filter server-side: every owned game is embedded
 in the page and all filtering happens in the browser, so one file answers any
 question. The CLI flags only choose which filters the page *opens* with.
 
-Thumbnails are hotlinked to BGG's image CDN and lazy-loaded, so the file stays
-small and generating it costs zero API calls — but it needs internet to show
-the pictures.
+By default thumbnails are inlined as data URIs from data/thumbs/, making the
+file completely self-contained — Slack renders the page but blocks hotlinked
+images, so a report meant to travel has to carry its own. Run
+`python3 scripts/thumbs.py` first to populate that cache. Pass --link-thumbs
+for a ~10x smaller file that hotlinks to BGG's CDN instead and therefore needs
+internet.
 """
 import argparse
+import base64
 import datetime as dt
 import json
 from pathlib import Path
 
 from common import ROOT, load_games, playtime
 
+THUMBS = ROOT / "data" / "thumbs"
+
 HERE = Path(__file__).resolve().parent
 
 
-def compact(games):
+def thumb_uri(game):
+    """A base64 data URI for the cached, downscaled thumbnail, or None."""
+    f = THUMBS / f'{game["id"]}.jpg'
+    if not f.exists():
+        return None
+    return "data:image/jpeg;base64," + base64.b64encode(f.read_bytes()).decode()
+
+
+def compact(games, inline=True):
     """Trim to what the page actually renders, and precompute per-game values
     the browser would otherwise recompute on every keystroke."""
-    out = []
+    out, missing = [], 0
     for g in games:
+        thumb = g["thumbnail"]
+        if inline:
+            thumb = thumb_uri(g)
+            if thumb is None:
+                missing += 1
+                thumb = g["thumbnail"]
         poll = {}
         for n, d in g["poll"].items():
             b, r, x = (d.get("Best", 0), d.get("Recommended", 0),
@@ -35,7 +55,7 @@ def compact(games):
                 poll[n] = [b, r, x]
         out.append({
             "id": g["id"], "n": g["name"], "y": g["year"], "rk": g["rank"],
-            "th": g["thumbnail"], "w": g["weight"], "av": g["average"],
+            "th": thumb, "w": g["weight"], "av": g["average"],
             "gk": g["geek"],
             "tmin": g["minplaytime"], "tmax": g["maxplaytime"],
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
@@ -45,6 +65,9 @@ def compact(games):
             "top": max((v[0] for v in poll.values()), default=0),
             "poll": poll,
         })
+    if missing:
+        print(f"warning: {missing} thumbnails not cached, hotlinked instead — "
+              f"run scripts/thumbs.py")
     return out
 
 
@@ -59,11 +82,13 @@ def main():
                     default="fold", help="fold: hide expansion rows but let "
                                          "them speak for their base game")
     ap.add_argument("--min-votes", type=int, default=10)
+    ap.add_argument("--link-thumbs", action="store_true",
+                    help="hotlink thumbnails to BGG instead of inlining them")
     ap.add_argument("-o", "--out", default="reports/collection.html")
     a = ap.parse_args()
 
     games = load_games()
-    data = compact(games)
+    data = compact(games, inline=not a.link_thumbs)
     tpl = (HERE / "report_template.html").read_text(encoding="utf-8")
     opts = {"players": a.players, "mode": a.mode, "salad": a.salad,
             "expansions": a.expansions, "minVotes": a.min_votes}

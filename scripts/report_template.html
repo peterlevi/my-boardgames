@@ -72,6 +72,15 @@ a.game:hover { color:var(--accent); text-decoration:underline; }
 .ix { font-size:.8rem; color:var(--muted); }
 .ix.High { color:var(--warn); font-weight:600; }
 .ix.Medium { color:var(--ink); }
+/* BGG's rating badge: a hexagon with points top and bottom, coloured by the
+   integer band of the rating (their scale, 1 red through 10 green). The text
+   is always dark because every band colour is a pastel. */
+.hex { display:inline-flex; align-items:center; justify-content:center;
+  width:44px; height:38px; color:#111; font-weight:700; font-size:.82rem;
+  font-variant-numeric:tabular-nums; letter-spacing:-.02em;
+  clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+.hex.none { background:#b3b3b3; color:#444; font-weight:600; }
+td.score { width:44px; padding-right:4px; }
 .bar { position:relative; min-width:72px; }
 .bar span { position:absolute; left:9px; right:9px; bottom:2px; height:3px;
   background:var(--line); border-radius:2px; }
@@ -123,6 +132,10 @@ it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p
       </select></div>
   </div>
   <div class="row">
+    <div class="f"><label>BGG score</label>
+      <div class="pair"><input id="smin" type="number" min="0" max="10" step="0.1"
+        placeholder="0"><span>to</span><input id="smax" type="number" min="0"
+        max="10" step="0.1" placeholder="10"></div></div>
     <div class="f"><label>Complexity</label>
       <div class="pair"><input id="wmin" type="number" min="0" max="5" step="0.1"
         placeholder="0"><span>to</span><input id="wmax" type="number" min="0"
@@ -153,6 +166,7 @@ it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p
   <thead><tr>
     <th class="thumb"></th>
     <th class="num" data-k="rk">Rank</th>
+    <th class="num" data-k="av">Score</th>
     <th data-k="n">Game</th>
     <th class="num" data-k="pl">Plays</th>
     <th class="num" data-k="tmax">Time</th>
@@ -188,7 +202,8 @@ for (const g of DATA) {
 const el = id => document.getElementById(id);
 const F = {
   q: el('q'), players: el('players'), mode: el('mode'), salad: el('salad'),
-  ix: el('ix'), wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
+  ix: el('ix'), smin: el('smin'), smax: el('smax'),
+  wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
   tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'), exp: el('exp'),
   votes: el('votes'),
 };
@@ -204,7 +219,8 @@ function applyDefaults() {
   F.exp.value = OPTS.expansions;
   F.votes.value = OPTS.minVotes;
   F.ix.value = '';
-  for (const k of ['wmin','wmax','tmin','tmax','plmin','plmax']) F[k].value = '';
+  for (const k of ['smin','smax','wmin','wmax','tmin','tmax','plmin','plmax'])
+    F[k].value = '';
 }
 
 /** Aggregate the poll for one game at n players, or null if nobody voted. */
@@ -249,6 +265,7 @@ function visible() {
   const term = F.q.value.trim().toLowerCase();
   const n = +F.players.value, mode = F.mode.value, expMode = F.exp.value;
   const minVotes = +F.votes.value || 0;
+  const smin = num(F.smin.value), smax = num(F.smax.value);
   const wmin = num(F.wmin.value), wmax = num(F.wmax.value);
   const tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   const plmin = num(F.plmin.value), plmax = num(F.plmax.value);
@@ -262,6 +279,8 @@ function visible() {
     if (salad === 'no' && g.sal) continue;
     if (salad === 'yes' && !g.sal) continue;
     if (ix && g.ix !== ix) continue;
+    if (smin !== null && !(g.av >= smin)) continue;
+    if (smax !== null && !(g.av <= smax)) continue;
     if (wmin !== null && !(g.w >= wmin)) continue;
     if (wmax !== null && !(g.w <= wmax)) continue;
     if (tmin !== null && !((g.tmax ?? 0) >= tmin)) continue;
@@ -309,6 +328,18 @@ function sortRows(rows) {
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
 
+// BGG's own rating palette, indexed by the integer band of the rating.
+const RATING_COLORS = ['#ff0000','#ff0000','#ff3366','#ff6699','#ff66cc',
+                       '#cc99ff','#9999ff','#99ffff','#66ff99','#33cc99','#00cc00'];
+
+function hex(g) {
+  if (!g.av) return '<span class="hex none">—</span>';
+  const band = Math.max(0, Math.min(10, Math.floor(g.av)));
+  const title = `Average ${g.av.toFixed(2)}` +
+    (g.gk ? ` · Geek rating ${g.gk.toFixed(2)}` : '');
+  return `<span class="hex" style="background:${RATING_COLORS[band]}" title="${title}">${g.av.toFixed(1)}</span>`;
+}
+
 function bar(p) {
   return `${p.toFixed(0)}%<span><i style="width:${Math.min(p,100).toFixed(0)}%"></i></span>`;
 }
@@ -328,6 +359,7 @@ function render() {
     return `<tr>
 <td class="thumb">${thumb}</td>
 <td class="num">${g.rk ?? '<span class="dot">—</span>'}</td>
+<td class="score">${hex(g)}</td>
 <td><a class="game" href="https://boardgamegeek.com/boardgame/${g.id}" target="_blank" rel="noopener">${esc(g.n)}</a> <span class="yr">${g.y || ''}</span>${expTag}${viaTag}</td>
 <td class="num">${g.pl || '<span class="dot">0</span>'}</td>
 <td class="num">${esc(g.t)}</td>

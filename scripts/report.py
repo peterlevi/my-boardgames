@@ -36,6 +36,7 @@ def compact(games):
         out.append({
             "id": g["id"], "n": g["name"], "y": g["year"], "rk": g["rank"],
             "th": g["thumbnail"], "w": g["weight"], "av": g["average"],
+            "gk": g["geek"],
             "tmin": g["minplaytime"], "tmax": g["maxplaytime"],
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
             "pl": g["plays"], "sal": 1 if g["point_salad"] else 0,

@@ -70,6 +70,7 @@ def parse_item(it, is_expansion=False):
         rank=rank, is_expansion=is_expansion, expands=expands,
         thumbnail=(it.findtext("thumbnail") or "").strip() or None,
         weight=num(attr(st, "averageweight")), average=num(attr(st, "average")),
+        geek=num(attr(st, "bayesaverage")),
         minplayers=num(attr(it, "minplayers"), int),
         maxplayers=num(attr(it, "maxplayers"), int),
         playingtime=num(attr(it, "playingtime"), int),

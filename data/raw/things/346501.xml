@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="346501">
+         <thumbnail>https://cf.geekdo-images.com/acERQjU6qQ_BGxF3IBri8w__small/img/AHl1ONikJsG3ZqNfow6E_nT0bh0=/fit-in/200x150/filters:strip_icc()/pic6703416.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/acERQjU6qQ_BGxF3IBri8w__original/img/knjL-l4xv88R0K-RXwSm_iAar-U=/0x0/filters:format(jpeg)/pic6703416.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Mille Fiori" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Венецианская мозаика" />
+			    				
+				<name type="alternate" sortindex="1" value="ミルフィオリ" />
+			
+						               													<description>In Reiner Knizia's Mille Fiori (millefiori is a glasswork technique for decorative patterns, the name means Thousand Flowers), you take the role of glass manufacturers and traders who want to profit as much as they can from their role in the production of fine glass art.
+
+The game board features different aspects of the glass production cycle: workshops where the glass is created, houses where it's installed, people who support your work, trade shops where it's sold, and the harbor where ships take the glass to faraway locations. You want to be present in all of these areas, preferably at just the right time to maximize your earnings. The gameboard features 109 spaces, with one card in the deck for each of those spaces.
+
+At the start of a round, each player receives a hand of five cards. Each player chooses a card from hand, then passes the remaining cards to the next player, then each player plays their card in turn, beginning with the round's start player and typically placing a diamond-shaped token of their color in the location depicted on that card:
+
+
+     In the Workshops, you score 1 point for each of your tokens in a connected group with the newly placed token, doubling that score if you played on a pigment field.
+     In the Residences, you score the listed number of points, and if your token is preceded in the line by one or more tokens of your color, you score those previously played tokens again.
+     In the Townspeople area, you score 1, 3 or 6 points based on the height of your token in the pyramids, but you can only place at higher levels if the lower spaces are filled. Double your points if the card symbol matches the space your filled. Supporting tokens score again as higher tokens are placed.
+     In the Trade shops, four types of goods are present, and when you place a token, each token on that goods type scores for its owner points equal to the number of goods of that type now covered.
+     In the Harbor, you move your ship equal to the number on the played card, scoring points based on the space where you land, then place a token in one of the five rows. When that row is filled with three ships, each token in that row scores for its owner 1/3/6/10 points depending on the number of trade goods in that row.
+
+
+Alternatively, you can play a card for ship movement points and not place a token on the game board.
+
+Each player plays four cards in a round (in a 3 or 4 player game), then adds the last card in hand to those displayed beside the game board, then the start player marker rotates and you begin a new round.
+
+For each of the five areas, you can meet a certain condition that allows you to play a bonus card from those beside the game board, e.g., in the Workshops when you place the third card that surrounds a bonus card symbol, or in the Trade shops when you score a goods type that gives someone else more points than you. When you play a bonus card, you might trigger another bonus card... and then another!
+
+Additionally, there are five different ways to score substantial bonus points for the areas, e.g., in the Residences you need to place tokens on houses of four different values, and in the Townspeople area you need to place tokens on all three types in a pyramid. You can only score each area's bonus once, and importantly each time a bonus is claimed then the value available for later players is reduced.
+
+When someone has placed their final diamond token or when you can't deal a new hand of five cards to each player, then the game ends and the player with the most successful glass dynasty (most points) is declared the winner.
+
+</description>
+										      	               				<yearpublished value="2021" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="170">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="83" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="37" />
+					<result value="Not Recommended" numvotes="86" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="37" />
+					<result value="Recommended" numvotes="82" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="104" />
+					<result value="Recommended" numvotes="33" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="64" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 3–4 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="90" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="32">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="2" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="15" />
+					<result value="10" numvotes="11" />
+					<result value="12" numvotes="3" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="11">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="11" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1088" value="Industry / Manufacturing" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2984" value="Closed Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="17740" value="Cities: Venice (Veneto, Italy)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65206" value="Components: Transparent Elements" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11515" value="Country: Italy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="6485" value="Misc: Mensa Select" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="377715" value="Mille Fiori: The Masterpieces" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="2" value="Reiner Knizia" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="130926" value="Stephan Lorenz" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38" value="Schmidt Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9325" value="Lifestyle Boardgames Ltd" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3504" value="Möbius Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="5892" />
+			<average value="7.41749" />
+			<bayesaverage value="6.85463" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="681" bayesaverage="6.85463" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="422" bayesaverage="6.96604" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="138" bayesaverage="6.99204" />
+												</ranks>
+
+			<stddev value="1.16726" />
+			<median value="0" />
+			<owned value="10090" />
+			<trading value="128" />
+			<wanting value="305" />
+			<wishing value="1742" />
+			<numcomments value="959" />
+			<numweights value="158" />
+			<averageweight value="2.1835" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

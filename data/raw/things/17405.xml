@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="17405">
+         <thumbnail>https://cf.geekdo-images.com/zRZkmUtRhHosQNrcsYquOg__small/img/1l7TYgRKw5INM3_PNSsjAqBloAs=/fit-in/200x150/filters:strip_icc()/pic4001497.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/zRZkmUtRhHosQNrcsYquOg__original/img/26Rizb3LBWjVmzHplrYCPcOnZS0=/0x0/filters:format(jpeg)/pic4001497.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="1846: The Race for the Midwest" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="1846: 美国中西部铁路竞速" />
+			
+						               													<description>1846 is an 18xx game that traces the westward expansion of railways across the Midwestern United States.
+
+As in other 18XX games, the winner is the player with the greatest combined wealth (cash on hand + value of stock held + value of private companies owned) at the end of the game.  Play proceeds in a series of stock rounds, each followed by a pair of operating rounds.  In stock rounds, players act as investors buying and selling stock in corporations.  During operating rounds, corporations will lay track, build stations, run trains for revenue to be paid out as dividends or withheld, and buy trains.  The majority shareholder of each corporation acts at its president, making all decisions during operating rounds.  Players will continue operating companies, collecting dividends, and reinvesting until the bank breaks.
+
+1846 features several unique elements, such as scaling the number of corporations, private companies, and bank size to the number of players.  Additionally, the traditional starting private company auction has been replaced with a private company draft, introducing hidden information and a degree of randomness.  Corporations that run a train from the East coast to the West will receive additional revenue.  Moreover, virtually all track builds will incur costs, bringing corporate capitalization and long term financing questions to the fore.
+
+An unofficial 2-player variant from the designer has been made available in the files section.
+
+</description>
+										      	               				<yearpublished value="2005" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="97">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="55" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="25" />
+					<result value="Not Recommended" numvotes="38" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="15" />
+					<result value="Recommended" numvotes="58" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="69" />
+					<result value="Recommended" numvotes="17" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="20" />
+					<result value="Recommended" numvotes="50" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="47" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 3–5 players" />
+</poll-summary> 			               				<playingtime value="240" />
+						               				<minplaytime value="120" />
+						               				<maxplaytime value="240" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="19">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="7" />
+					<result value="14" numvotes="9" />
+					<result value="16" numvotes="3" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="10">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="9" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1034" value="Trains" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2026" value="Hexagon Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2910" value="Investment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2900" value="Market" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2081" value="Network and Route Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2911" value="Ownership" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2005" value="Stock Holding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2874" value="Victory Points as a Resource" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="14835" value="Country: USA" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70710" value="Digital Implementations: 18xx.games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="113768" value="Players: Games with expansions that change player count" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19" value="Series: 18xx" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="306258" value="18 Grand Junction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="343143" value="18 Milwaukee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="340705" value="1846: The Race for the Midwest – Mini-Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="431958" value="Barons of the Backwaters (Fan expansion to 1846: The Race for the Midwest)" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="318306" value="1846: The Race for the Midwest – Seahorse Organizer" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="415259" value="18Gewohnheit Essen Seele Auf: 18Quake" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="150" value="Thomas Lehmann" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="497" value="Chris Lawson" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="71" value="Rodger B. MacGowan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11872" value="Kurt Miller" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="140" value="Mark Simonitch" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="97845" value="John Tamplin" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4192" value="Deep Thought Games, LLC" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="52" value="GMT Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="31085" value="Golden Spike Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="45510" value="Rawstone" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="3289" />
+			<average value="7.86373" />
+			<bayesaverage value="6.86554" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="665" bayesaverage="6.86554" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="348" bayesaverage="7.07308" />
+												</ranks>
+
+			<stddev value="1.41501" />
+			<median value="0" />
+			<owned value="4917" />
+			<trading value="114" />
+			<wanting value="217" />
+			<wishing value="863" />
+			<numcomments value="916" />
+			<numweights value="192" />
+			<averageweight value="3.9948" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

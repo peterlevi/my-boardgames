@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="220">
+         <thumbnail>https://cf.geekdo-images.com/lNRG273h6gkd3szSY3EswQ__small/img/NZ-oIqqX02QUBX2GhB3hSRwpNcg=/fit-in/200x150/filters:strip_icc()/pic9202764.png</thumbnail>
+      <image>https://cf.geekdo-images.com/lNRG273h6gkd3szSY3EswQ__original/img/M-gutK8AQBBaQ9wBQ3OU8TV14j4=/0x0/filters:format(png)/pic9202764.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="High Society" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Alta società" />
+			    				
+				<name type="alternate" sortindex="1" value="Animalement Vôtre" />
+			    				
+				<name type="alternate" sortindex="1" value="Bale i skandale" />
+			    				
+				<name type="alternate" sortindex="1" value="Beestenveiling" />
+			    				
+				<name type="alternate" sortindex="1" value="Einfach tierisch!" />
+			    				
+				<name type="alternate" sortindex="4" value="Le Grand Jeu" />
+			    				
+				<name type="alternate" sortindex="1" value="Milionerzy i bankruci" />
+			    				
+				<name type="alternate" sortindex="1" value="Вище Суспільство" />
+			    				
+				<name type="alternate" sortindex="1" value="Высшее общество" />
+			    				
+				<name type="alternate" sortindex="1" value="جامعه اشرافی" />
+			    				
+				<name type="alternate" sortindex="1" value="ハイソサエティ" />
+			    				
+				<name type="alternate" sortindex="1" value="上流社會" />
+			    				
+				<name type="alternate" sortindex="1" value="하이 소사이어티" />
+			
+						               													<description>In Reiner Knizia's High Society, players bid against each other to acquire the various trappings of wealth (positive-number and multiplier cards) while avoiding its pitfalls (negative number and divisor cards).  While bidding, though, keep an eye on your remaining cash - at the end of the game, even though all those positive-number cards might add up to a win, the player with the least money isn't even considered for victory.
+
+</description>
+										      	               				<yearpublished value="1995" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="265">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="166" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="167" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="32" />
+					<result value="Recommended" numvotes="153" />
+					<result value="Not Recommended" numvotes="46" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="169" />
+					<result value="Recommended" numvotes="72" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="148" />
+					<result value="Recommended" numvotes="72" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="119" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4–5 players" />
+  <result name="recommmendedwith" value="Recommended with 3–5 players" />
+</poll-summary> 			               				<playingtime value="30" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="30" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="42">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="1" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="14" />
+					<result value="10" numvotes="20" />
+					<result value="12" numvotes="5" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="34">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="33" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2012" value="Auction / Bidding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2919" value="Auction: Turn Order Until Pass" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2922" value="Constrained Bidding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78680" value="Misc: Made by Panda" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="76" value="Series: Bookshelf (Gryphon Games)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="107125" value="Series: Small Box Big Game (Allplay)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="75454" value="Theme: Art style – Art Nouveau" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="2" value="Reiner Knizia" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="71875" value="Marie Bergeron" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="38917" value="Mateusz Bielski" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="98717" value="Medusa Dollmaker" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12705" value="Wesly Gibs" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="111611" value="Dahee Lee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11478" value="Alvin Madden" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="75070" value="Yusuke Mamada" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12714" value="Ulf Marckwort" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11997" value="Paul Niemeyer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12024" value="Björn Pertoft" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="123923" value="Piotr Sokołowski" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="7387" value="Rolf Vogt" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12038" value="Markus Wagner" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34" value="Ravensburger AG" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39686" value="Across the Board" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="53065" value="Allplay" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8" value="AMIGO" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="597" value="Eagle-Gryphon Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="26380" value="FoxGames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29194" value="GaGa Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8328" value="Gemblo Company" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9287" value="Kanga Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54941" value="Meeple King" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44563" value="Muduko" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9881" value="New Games Order, LLC" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48430" value="Nova Era (Нова Ера)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37303" value="OPEN'N PLAY" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22651" value="Origames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29313" value="Osprey Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41167" value="Popcorn Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33010" value="SD Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44181" value="Studio Supernova" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9234" value="Swan Panasia Co., Ltd." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="59162" value="Time Fades Away" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1901" value="Überplay" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="254" value="University Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8759" value="Wargames Club Publishing" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="16981" />
+			<average value="7.20126" />
+			<bayesaverage value="6.97618" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="535" bayesaverage="6.97618" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="126" bayesaverage="7.03157" />
+												</ranks>
+
+			<stddev value="1.2415" />
+			<median value="0" />
+			<owned value="26057" />
+			<trading value="421" />
+			<wanting value="438" />
+			<wishing value="4121" />
+			<numcomments value="3828" />
+			<numweights value="742" />
+			<averageweight value="1.4811" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

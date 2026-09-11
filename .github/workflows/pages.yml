@@ -1,14 +1,14 @@
 name: Build report and deploy to Pages
 
 # The build reads only the cached data in this repo — no BGG calls, no
-# credentials — so it can safely run on every push.
+# credentials — so it is safe to run on every push.
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write   # to commit the refreshed README screenshot
   pages: write
   id-token: write
 
@@ -30,11 +30,33 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Install a browser for the screenshot
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
       - name: Normalise the cached XML
         run: python3 scripts/build.py
 
       - name: Render the report
         run: python3 scripts/report.py -o site/index.html
+
+      - name: Refresh the README screenshot
+        run: python3 scripts/screenshot.py --html site/index.html -o docs/screenshot.png
+
+      - name: Commit the screenshot if it changed
+        # Pushes made with GITHUB_TOKEN do not trigger further workflow runs,
+        # so this cannot loop.
+        run: |
+          if git diff --quiet -- docs/screenshot.png; then
+            echo "screenshot unchanged"
+          else
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add docs/screenshot.png
+            git commit -m "Refresh README screenshot [skip ci]"
+            git push
+          fi
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

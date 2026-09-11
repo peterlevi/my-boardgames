@@ -1,0 +1,518 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="184267">
+         <thumbnail>https://cf.geekdo-images.com/Nm0Iw8NoiM9V8IsifimGBw__small/img/4GFbhkEWyIublXmikE2Tep6wSIQ=/fit-in/200x150/filters:strip_icc()/pic4357658.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/Nm0Iw8NoiM9V8IsifimGBw__original/img/GNjjsgxq7wYO9pSIteDJe6Sxt00=/0x0/filters:format(jpeg)/pic4357658.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="On Mars" />
+			
+						                               				
+				<name type="alternate" sortindex="3" value="A Mars" />
+			    				
+				<name type="alternate" sortindex="1" value="На Марсе" />
+			    				
+				<name type="alternate" sortindex="1" value="オン・マーズ" />
+			    				
+				<name type="alternate" sortindex="1" value="火星之上" />
+			    				
+				<name type="alternate" sortindex="1" value="온 마스" />
+			
+						               													<description>Following the success of unmanned rover missions, the United Nations established the Department of Operations and Mars Exploration (D.O.M.E.). The first settlers arrived on Mars in the year 2037 and in the decades after establishment of Mars Base Camp, private exploration companies began work on the creation of a self-sustaining colony. As chief astronaut for one of these enterprises, you want to be a pioneer in the development of the biggest, most advanced colony on Mars by achieving both D.O.M.E. mission goals as well as your company&amp;rsquo;s private agenda.  In the beginning, you will be dependent on supplies from Earth and will have to travel often between the Mars Space Station and the planet's surface. As the colony expands over time, you will shift your activities to construct mines, power generators, water extractors, greenhouses, oxygen factories, and shelters. Your goal is to develop a self-sustaining colony independent of any terrestrial organization. This will require understanding the importance of water, air, power, and food &amp;mdash; the necessities for survival. Do you dare take part in humankind&amp;rsquo;s biggest challenge?
+
+On Mars is played over several rounds, each consisting of two phases - the Colonization Phase ​and the Shuttle Phase​.
+
+During the Colonization Phase, each player takes a turn during which they take actions. The available actions depend on the side of the board they are on. If you are in orbit, you can take blueprints, buy and develop technologies, and take supplies from the Warehouse. If you are on the surface of the planet, you can construct buildings with your bots, upgrade these buildings using blueprints, take scientists and new contracts, welcome new ships, and explore the planet&amp;rsquo;s surface with your rover. In the Shuttle Phase, players may travel between the colony and the Space Station in orbit.
+
+All buildings on Mars have a dependency on each other and some are required for the colony to grow. Building shelters for Colonists to live in requires oxygen; generating oxygen requires plants; growing plants requires water; extracting water from ice requires power; generating power requires mining minerals; and mining minerals requires Colonists. Upgrading the colony&amp;rsquo;s ability to provide each of these resources is vital. As the colony grows, more shelters are needed so that the Colonists can survive the inhospitable conditions on Mars.
+
+During the game, players are also trying to complete missions. Once a total of three missions have been completed, the game ends. To win the game, players must contribute to the development of the first colony on Mars. This is represented during the game by players gaining Opportunity Points (OP). The player with the most OP at the end of the game is declared the winner.
+
+</description>
+										      	               				<yearpublished value="2020" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="447">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="15" />
+					<result value="Recommended" numvotes="141" />
+					<result value="Not Recommended" numvotes="99" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="77" />
+					<result value="Recommended" numvotes="249" />
+					<result value="Not Recommended" numvotes="29" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="249" />
+					<result value="Recommended" numvotes="95" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="88" />
+					<result value="Recommended" numvotes="156" />
+					<result value="Not Recommended" numvotes="74" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="186" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="150" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="150" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="89">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="1" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="3" />
+					<result value="12" numvotes="7" />
+					<result value="14" numvotes="45" />
+					<result value="16" numvotes="29" />
+					<result value="18" numvotes="3" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="21">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="19" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1029" value="City Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1016" value="Science Fiction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1113" value="Space Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1086" value="Territory Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2912" value="Contracts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2901" value="Delayed Purchase" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2026" value="Hexagon Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2947" value="Movement Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2079" value="Variable Phase Order" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="76261" value="Game: On Mars" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78680" value="Misc: Made by Panda" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="111131" value="Space: Colonization / Extraterrestrial Colonisation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19298" value="Space: Earth's Solar System" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10169" value="Space: Mars" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="278241" value="On Mars: Alien Invasion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="278431" value="On Mars: Beacon Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="296981" value="On Mars: Upgrade Pack" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="299855" value="On Mars: Playmat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="12396" value="Vital Lacerda" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="64844" value="Ian O'Toole" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="597" value="Eagle-Gryphon Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38809" value="Angry Lion Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3475" value="Arclight Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6194" value="Delta Vision Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7251" value="Giochix.it" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10562" value="hobbity.eu" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34801" value="Lavka Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44349" value="Mosaico Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="40058" value="Skellig Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41423" value="TLAMA games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8147" value="YOKA Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="15252" />
+			<average value="8.15821" />
+			<bayesaverage value="7.74105" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="59" bayesaverage="7.74105" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="43" bayesaverage="7.82161" />
+												</ranks>
+
+			<stddev value="1.51659" />
+			<median value="0" />
+			<owned value="23493" />
+			<trading value="202" />
+			<wanting value="863" />
+			<wishing value="8778" />
+			<numcomments value="2421" />
+			<numweights value="1793" />
+			<averageweight value="4.6241" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

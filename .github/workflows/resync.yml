@@ -1,0 +1,64 @@
+name: Resync collection from BGG
+
+# OPT-IN. This is the only workflow that talks to BGG, so it is the only one
+# that needs credentials. It stays dormant until you add two repository
+# secrets (Settings -> Secrets and variables -> Actions):
+#
+#   BGG_USERNAME   your BGG username
+#   BGG_TOKEN      your BGG XML API bearer token
+#
+# Without them the job exits cleanly rather than failing. When it does run and
+# something changed, it commits the refreshed cache; that push then triggers
+# the Pages workflow, which rebuilds and republishes the report.
+on:
+  schedule:
+    - cron: '17 6 * * 1'   # Mondays, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  resync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Check credentials are configured
+        id: creds
+        env:
+          BGG_TOKEN: ${{ secrets.BGG_TOKEN }}
+        run: |
+          if [ -z "$BGG_TOKEN" ]; then
+            echo "No BGG_TOKEN secret set — skipping. See this file's header."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Resync from BGG
+        if: steps.creds.outputs.ready == 'true'
+        env:
+          BGG_USERNAME: ${{ secrets.BGG_USERNAME }}
+          BGG_TOKEN: ${{ secrets.BGG_TOKEN }}
+        run: python3 scripts/sync.py --no-report
+
+      - name: Commit any changes
+        if: steps.creds.outputs.ready == 'true'
+        run: |
+          if git diff --quiet -- data/; then
+            echo "collection unchanged"
+          else
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/
+            git commit -m "Resync collection from BGG"
+            git push
+          fi

@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="271320">
+         <thumbnail>https://cf.geekdo-images.com/VrNrk7XVU1hN0j1ZFhjcjw__small/img/6XPO0XNGGw3V77NjWR0K7Y33fqc=/fit-in/200x150/filters:strip_icc()/pic4934938.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/VrNrk7XVU1hN0j1ZFhjcjw__original/img/IYxnn0KV56lDy18_0e23DSLcMso=/0x0/filters:format(jpeg)/pic4934938.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="5" value="The Castles of Burgundy" />
+			
+						                               				
+				<name type="alternate" sortindex="5" value="Les Châteaux de Bourgogne" />
+			    				
+				<name type="alternate" sortindex="1" value="Hrady v Burgundsku" />
+			    				
+				<name type="alternate" sortindex="1" value="Zamki Burgundii" />
+			    				
+				<name type="alternate" sortindex="1" value="勃根地城堡豪華版" />
+			    				
+				<name type="alternate" sortindex="1" value="버건디의 성" />
+			
+						               													<description>The Castles of Burgundy is set in the Burgundy region of High Medieval France. Each player takes on the role of an aristocrat, originally controlling a small princedom. While playing, they aim to build settlements and powerful castles, practice trade along the river, exploit silver mines, and use the knowledge of travelers.
+
+The game is about players taking settlement tiles from the game board and placing them into their princedom, which is represented by the player board. Every tile has a function that starts when the tile is placed in the princedom. The princedom itself consists of several regions, each of which demands its own type of settlement tile.
+
+The game is played in five phases, each consisting of five rounds. Each phase begins with the game board stocked with settlement tiles and goods tiles. During each round, players take their turns in the current turn order. During their turn, a player may perform any two of the four possible types of actions:
+
+
+    Place a settlement tile in the staging area on their player board.
+    Place a settlement tile from the staging area of their player board to a space on their player board.
+    Deliver goods with a number matching one of their dice.
+    Take worker tokens that allow the player to adjust the roll of their dice.
+
+
+Each settlement tile offers a benefit: additional actions, additional money, advancement on the turn order track, more goods tiles, die roll adjustment or victory points. Bonus victory points are awarded for filling a region with settlement tiles.
+
+The game ends when the last player finishes their turn of the fifth round of the fifth phase. Victory points are awarded for unused money and workers and for undelivered goods. Bonus victory points from certain settlement tiles are awarded at the end of the game. The player with the most victory points wins.
+
+</description>
+										      	               				<yearpublished value="2019" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="411">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="146" />
+					<result value="Not Recommended" numvotes="110" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="274" />
+					<result value="Recommended" numvotes="97" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="120" />
+					<result value="Recommended" numvotes="198" />
+					<result value="Not Recommended" numvotes="11" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="57" />
+					<result value="Recommended" numvotes="185" />
+					<result value="Not Recommended" numvotes="68" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="200" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="70" />
+						               				<maxplaytime value="120" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="76">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="2" />
+					<result value="8" numvotes="4" />
+					<result value="10" numvotes="21" />
+					<result value="12" numvotes="37" />
+					<result value="14" numvotes="12" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="22">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="22" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1017" value="Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1035" value="Medieval" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1086" value="Territory Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2978" value="Grid Coverage" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2026" value="Hexagon Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2826" value="Turn Order: Stat-Based" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2935" value="Worker Placement with Dice Workers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7530" value="Animals: Cattle / Cows" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7535" value="Animals: Chickens / Roosters" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7379" value="Animals: Pigs" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7481" value="Animals: Sheep" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="67874" value="Components: Hexagonal Tiles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11006" value="Country: France" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77349" value="Digital Implementations: Steam" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="57501" value="Game: The Castles of Burgundy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="57997" value="Region: Burgundy (France)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64921" value="Series: Alea Revised Big Box" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62849" value="Versions &amp; Editions: Big Box Versions of Individual Games" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="110926" value="The Castles of Burgundy: 1st Expansion – New Player Boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="139160" value="The Castles of Burgundy: 3rd Expansion – German Board Game Championship Board 2013" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="193585" value="The Castles of Burgundy: 7th Expansion – German Board Game Championship Board 2016" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="449932" value="The Castles of Burgundy: Board Bento Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="315061" value="The Castles of Burgundy: Deluxe Token Bundle" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="326373" value="The Castles of Burgundy: Folded Space Insert (Second edition)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="464186" value="The Castles of Burgundy: InMyBox Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="346993" value="The Castles of Burgundy: Laserox Burgundy Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="462117" value="The Castles of Burgundy: PolandGames Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="373845" value="The Castles of Burgundy: Spike Craft Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="348624" value="The Castles of Burgundy: The GiftForge Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="365813" value="The Castles of Burgundy: Tower Rex Organizer" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="84876" value="The Castles of Burgundy" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="264104" value="The Castles of Burgundy: 10th Expansion – Solo" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="132477" value="The Castles of Burgundy: 2nd Expansion – New Hex Tiles" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="166589" value="The Castles of Burgundy: 5th Expansion – Pleasure Garden" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="190225" value="The Castles of Burgundy: 6th Expansion – The Cloisters" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="214005" value="The Castles of Burgundy: 8th Expansion – Trade Routes" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="234163" value="The Castles of Burgundy: 9th Expansion – The Team Game" inbound="true" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="4958" value="Stefan Feld" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="72917" value="Antje Stephan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11902" value="Claus Stephan" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9" value="alea" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34" value="Ravensburger AG" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9068" value="Broadway Toys LTD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="49985" value="Lelekan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="15566" />
+			<average value="8.45515" />
+			<bayesaverage value="8.01881" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="8.01881" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="8.08679" />
+												</ranks>
+
+			<stddev value="1.0885" />
+			<median value="0" />
+			<owned value="31585" />
+			<trading value="289" />
+			<wanting value="320" />
+			<wishing value="4640" />
+			<numcomments value="2349" />
+			<numweights value="573" />
+			<averageweight value="2.911" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

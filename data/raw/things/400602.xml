@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="400602">
+         <thumbnail>https://cf.geekdo-images.com/DahMIPzUpexvhUPAG3dGbA__small/img/uzogBNlLw3GBuGa1T6_8oQbADnY=/fit-in/200x150/filters:strip_icc()/pic8303209.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/DahMIPzUpexvhUPAG3dGbA__original/img/P01WNfQ0kOF9n7FFNXpGCo-tueE=/0x0/filters:format(jpeg)/pic8303209.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Civolution" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Civolución" />
+			    				
+				<name type="alternate" sortindex="1" value="シヴォリューション" />
+			    				
+				<name type="alternate" sortindex="1" value="文明演化" />
+			    				
+				<name type="alternate" sortindex="1" value="시볼루션" />
+			
+						               													<description>Hello, student beings! The cosmic faculty of the Technical Academy of Creation is delighted to welcome you to your Civolution, the final exam in Civilization Design!
+
+For this occasion, we prepared a humanoid scenario on an isolated continent. Here, each of you holds the rank of a local deity which is closely linked to its very own civilization and must lead it to success over the other civilizations. Your developmental possibilities are endless and reach from cultural and technical progress to evolutional adaptations. For example, what would you consider more beneficial to your tribes: inventing the wheel or growing wings? Demonstrate your ability to operate your civilization console and show us how well you can adjust to changeable environmental conditions and mild creational chaos.
+
+When the exam ceases after four eras, whoever managed to gather the most success points will not only pass the exam but will become a full member of the Technical Academy of Creation and garner the opportunity to be promoted to the next instance.
+
+Civolution is a medium heavy to heavy euro-style game that utilizes a dice selection mechanism to trigger actions on a tech tree-like structure. As you figure out how to best use your dice and put your unique cards into play, tons of strategies and paths to victory emerge, though each time you play, you will only explore a fraction of the possibilities that the game&amp;rsquo;s system and many cards provide.
+
+&amp;mdash;description from the publisher
+
+A webapp implementation of the V.I.C.I solo automa is available (requires a physical copy of the game).
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="293">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="39" />
+					<result value="Recommended" numvotes="130" />
+					<result value="Not Recommended" numvotes="33" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="147" />
+					<result value="Recommended" numvotes="95" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="122" />
+					<result value="Recommended" numvotes="90" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="22" />
+					<result value="Recommended" numvotes="71" />
+					<result value="Not Recommended" numvotes="109" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="126" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2–3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–3 players" />
+</poll-summary> 			               				<playingtime value="180" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="180" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="35">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="3" />
+					<result value="14" numvotes="30" />
+					<result value="16" numvotes="2" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="7">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="7" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1017" value="Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1016" value="Science Fiction" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2046" value="Area Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2850" value="Events" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2011" value="Modular Board" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2939" value="Track Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="450530" value="Civolution: Acceptance Letter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="439687" value="Civolution: Promo Pack 1" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="4958" value="Stefan Feld" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12484" value="Dennis Lohausen" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44712" value="Deep Print Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="23205" value="DiceTree Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gémklub" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4785" value="Ghenos Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="27311" value="Grail Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39" value="Pegasus Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8147" value="YOKA Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="6561" />
+			<average value="8.18109" />
+			<bayesaverage value="7.43263" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="160" bayesaverage="7.43263" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="94" bayesaverage="7.58863" />
+												</ranks>
+
+			<stddev value="1.45423" />
+			<median value="0" />
+			<owned value="10994" />
+			<trading value="76" />
+			<wanting value="665" />
+			<wishing value="5025" />
+			<numcomments value="1153" />
+			<numweights value="534" />
+			<averageweight value="4.264" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

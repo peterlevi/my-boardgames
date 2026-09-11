@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="414317">
+         <thumbnail>https://cf.geekdo-images.com/A_XP2_VN3ugyqPhezowB_w__small/img/ln5eKAzhse2PIHvWn7bu-jiW_uk=/fit-in/200x150/filters:strip_icc()/pic8026369.png</thumbnail>
+      <image>https://cf.geekdo-images.com/A_XP2_VN3ugyqPhezowB_w__original/img/_Rv8lSr3fC1oDRkrQleQW2H2yCs=/0x0/filters:format(png)/pic8026369.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Harmonies" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Harmoni" />
+			    				
+				<name type="alternate" sortindex="1" value="Harmónia" />
+			    				
+				<name type="alternate" sortindex="1" value="Krajina zvířat" />
+			    				
+				<name type="alternate" sortindex="1" value="Ostoja" />
+			    				
+				<name type="alternate" sortindex="1" value="Αρμονία" />
+			    				
+				<name type="alternate" sortindex="1" value="Гармония" />
+			    				
+				<name type="alternate" sortindex="1" value="Гармонія" />
+			    				
+				<name type="alternate" sortindex="1" value="Природа" />
+			    				
+				<name type="alternate" sortindex="1" value="ハーモニーズ" />
+			    				
+				<name type="alternate" sortindex="1" value="自然和弦" />
+			    				
+				<name type="alternate" sortindex="1" value="하모니즈" />
+			
+						               													<description>In Harmonies, build landscapes by placing colored tokens and create habitats for your animals. To earn the most points and win the game, incorporate the habitats in your landscapes wisely and have as many animals as you can settle there.
+
+Starting with the first player and proceeding clockwise, each player will choose a set of 3 terrain tokens from the central area to place on their personal board. They may optionally choose an Animal card from the 5 displayed and/or place an Animal cube from their Animal card(s) on any completed patterns on their board that match their personal Animal cards. There is a 4-card limit per player. After their turn, refill with a new set of 3 tokens and a new Animal card if needed.
+
+Placement of the terrain tokens will depend on the personal Animal card goals, and scoring rules for the various terrain types (mountain, field, forest, etc). For example, mountain tiles score based on how high they are (1 tile scores 1, while 3 tiles stacked score 7), but the mountain scores zero if it is not adjacent to at least one other mountain. If all the cubes on a given Animal card have been placed, the card is set aside and a new card can be drawn. The cards are scored at game end based on the highest number that isn't covered by a cube.
+
+The games ends when there are no tokens left in the bag to refill the central area, or at least one players has 2 or fewer empty spaces on their player board. Play continues until all players have had an equal turn that round. The player with the highest points is the winner.
+
+Optionally, you can use Nature's Spirit cards for richer gameplay. During setup, each player chooses 1 of 2 spirit cards and places a Spirit cube on the card. They follow the same placement rules as Animal cards, but tend to have an ongoing effect once completed. The spirit card does count towards the 4-card hand limit.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="605">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="69" />
+					<result value="Recommended" numvotes="242" />
+					<result value="Not Recommended" numvotes="76" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="350" />
+					<result value="Recommended" numvotes="178" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="308" />
+					<result value="Recommended" numvotes="177" />
+					<result value="Not Recommended" numvotes="13" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="79" />
+					<result value="Recommended" numvotes="286" />
+					<result value="Not Recommended" numvotes="87" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="269" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2–3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="45" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="147">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="13" />
+					<result value="8" numvotes="78" />
+					<result value="10" numvotes="54" />
+					<result value="12" numvotes="2" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="53">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="53" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1084" value="Environmental" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1028" value="Puzzle" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2956" value="Chaining" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2026" value="Hexagon Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="48871" value="Theme: Nature" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="472690" value="Harmonies: Crescendo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="419336" value="Harmonies: Mini Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="466234" value="Harmonies: Pulse" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="475604" value="Harmonies: Acrylic Animal Tokens" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="439688" value="Harmonies: Bees Alternate Art Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="473950" value="Harmonies: GripMat Expanded Double-sided Playmat Upgrade" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="472002" value="Harmonies: Ibong Adarna Alternate Art Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="421982" value="Harmonies: LaserLand Acrylic Animal Upgrades" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="423113" value="Harmonies: LaserLand Card Overlays &amp; Central Board Overlay" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="475605" value="Harmonies: Pulse – Acrylic Animal Tokens" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="95323" value="Johan Benvenuto" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="40295" value="Maëva da Silva" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9051" value="Libellud" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="23043" value="ADC Blackfire Entertainment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="50696" value="CoolPlay" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34522" value="CrowD Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55730" value="Fjórir Ásar" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gémklub" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6214" value="Kaissa Chess &amp; Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44209" value="Ігромаг" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="32553" />
+			<average value="8.03192" />
+			<bayesaverage value="7.77186" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="53" bayesaverage="7.77186" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="2" bayesaverage="7.65499" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="8" bayesaverage="7.79893" />
+												</ranks>
+
+			<stddev value="1.18013" />
+			<median value="0" />
+			<owned value="56259" />
+			<trading value="195" />
+			<wanting value="740" />
+			<wishing value="10502" />
+			<numcomments value="3716" />
+			<numweights value="859" />
+			<averageweight value="2.0116" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

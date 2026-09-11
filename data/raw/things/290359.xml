@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="290359">
+         <thumbnail>https://cf.geekdo-images.com/Zp0x_lURkRrHcLyyYv2aSw__small/img/d9luLahO6n0itCfqpjpLexz24OE=/fit-in/200x150/filters:strip_icc()/pic5536142.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/Zp0x_lURkRrHcLyyYv2aSw__original/img/xk-EPbXMZ8ut9LAMobKNsro6cSw=/0x0/filters:format(jpeg)/pic5536142.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Undaunted: North Africa" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Destemidos: Norte da África" />
+			    				
+				<name type="alternate" sortindex="1" value="Inflexibles: Afrique du Nord" />
+			    				
+				<name type="alternate" sortindex="1" value="Nieustraszeni: Afryka Północna" />
+			    				
+				<name type="alternate" sortindex="1" value="Odhodlaní: Severní Afrika" />
+			    				
+				<name type="alternate" sortindex="1" value="Undaunted: Nordafrika" />
+			    				
+				<name type="alternate" sortindex="1" value="Неустрашимые: Северная Африка" />
+			    				
+				<name type="alternate" sortindex="1" value="언던티드: 북아프리카" />
+			
+						               													<description>The Undaunted series continues with this two-player deck-building game of tactical combat, pitting the raiders of Britain's Long Range Desert Group against Italian forces in the North African Theater of World War II.
+
+The North African campaign has begun. Take control of the British Army's Long Range Desert Group and operate behind enemy lines or command the formidable Italian forces opposing them. In "Undaunted: North Africa", a sequel to Undaunted: Normandy, players once again lead their sides through a varied series of missions. As casualties mount, wounded soldiers leave the players' decks, forcing them to adapt in the face of changing tactical circumstances. Use your cards to strengthen your forces, deploy vehicles to advance rapidly across the battlefield, and seize the initiative as you determine the outcome of the North African Theater.
+
+&amp;mdash;description from the publisher
+
+Contents:
+88 Cards
+22 Large map tiles
+4 D10 dice
+Tokens
+1 Rule booklet
+1 Campaign booklet
+
+</description>
+										      	               				<yearpublished value="2020" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="66">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="20" />
+					<result value="Not Recommended" numvotes="33" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="64" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="46" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="60" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="29">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="2" />
+					<result value="8" numvotes="5" />
+					<result value="10" numvotes="8" />
+					<result value="12" numvotes="6" />
+					<result value="14" numvotes="4" />
+					<result value="16" numvotes="4" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="8">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="4" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="4" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1019" value="Wargame" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1049" value="World War II" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2841" value="Command Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2026" value="Hexagon Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2011" value="Modular Board" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2070" value="Simulation" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="6471" value="Country: Egypt" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11515" value="Country: Italy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="13244" value="Country: Libya" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10308" value="Country: New Zealand" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="17056" value="Country: United Kingdom" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="22135" value="Crowdfunding: Spieleschmiede" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="53215" value="History: World War II (Africa)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65851" value="Players: Games with expansions that add solo play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61979" value="Players: Two-Player Only Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="72016" value="Players: Wargames with Rules Supporting Only Two Players" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59607" value="Region: North Africa" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="63557" value="Series: Undaunted (Osprey Games)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="13265" value="Theme: Deserts" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="440479" value="Undaunted: North Africa – Promo Scenario 12: The Prize" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="313441" value="Undaunted: Reinforcements" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="367231" value="Undaunted: North Africa – Laserox Organizer" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="268864" value="Undaunted: Normandy" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="90410" value="Trevor Benjamin" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="67071" value="David Thompson (I)" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="51039" value="Roland MacDonald" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29313" value="Osprey Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39751" value="Doit Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29194" value="GaGa Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4785" value="Ghenos Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42147" value="Giant Roc" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32591" value="MeepleBR" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7992" value="MINDOK" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15906" value="Nuts! Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29487" value="Ogry Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="4701" />
+			<average value="7.74002" />
+			<bayesaverage value="6.93527" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="588" bayesaverage="6.93527" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="57" bayesaverage="7.37309" />
+												</ranks>
+
+			<stddev value="1.29051" />
+			<median value="0" />
+			<owned value="14213" />
+			<trading value="221" />
+			<wanting value="255" />
+			<wishing value="1834" />
+			<numcomments value="948" />
+			<numweights value="108" />
+			<averageweight value="2.3519" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

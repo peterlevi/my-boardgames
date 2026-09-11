@@ -11,7 +11,6 @@ Expansions are parsed too (from exp_*.xml) and carry `expands`: the ids of the
 base games they attach to, via the inbound boardgameexpansion link. The report
 uses that to let an expansion's player-count poll speak for its base game.
 """
-import glob
 import json
 import xml.etree.ElementTree as ET
 
@@ -82,31 +81,61 @@ def parse_item(it, is_expansion=False):
     )
 
 
-def plays_by_id():
-    """Play counts come free with the collection export (`stats=1`), so this
-    costs no extra API calls."""
-    plays = {}
+def ids_in(name):
+    """Object ids listed in one of the collection exports, in file order."""
+    f = RAW / name
+    if not f.exists():
+        return []
+    return [it.get("objectid") for it in ET.parse(f).getroot().findall("item")]
+
+
+def collection_stats():
+    """Play counts and the owner's own rating both ride along with the
+    collection export (`stats=1`), so neither costs an extra API call. An
+    unrated game carries value="N/A"."""
+    plays, mine = {}, {}
     for name in ("collection.xml", "expansions.xml"):
         f = RAW / name
         if not f.exists():
             continue
         for it in ET.parse(f).getroot().findall("item"):
-            plays[it.get("objectid")] = int(it.findtext("numplays") or 0)
-    return plays
+            oid = it.get("objectid")
+            plays[oid] = int(it.findtext("numplays") or 0)
+            rating = it.find("stats/rating")
+            v = rating.get("value") if rating is not None else None
+            if v and v != "N/A":
+                try:
+                    mine[oid] = float(v)
+                except ValueError:
+                    pass
+    return plays, mine
 
 
 def main():
-    games = []
-    for pattern, is_exp in (("thing_*.xml", False), ("exp_*.xml", True)):
-        for f in sorted(glob.glob(str(RAW / pattern))):
-            games += [parse_item(it, is_exp)
-                      for it in ET.parse(f).getroot().findall("item")]
+    # The collection exports say what is owned and which of it is an expansion;
+    # the per-id detail files supply everything else. Driving the build from the
+    # collection means a game you no longer own simply stops appearing.
+    base_ids = ids_in("collection.xml")
+    exp_ids = ids_in("expansions.xml")
+
+    games, missing = [], []
+    for oid in base_ids + exp_ids:
+        f = RAW / "things" / f"{oid}.xml"
+        if not f.exists():
+            missing.append(oid)
+            continue
+        for it in ET.parse(f).getroot().findall("item"):
+            games.append(parse_item(it, oid in exp_ids))
+    if missing:
+        print(f"warning: {len(missing)} owned item(s) have no cached detail — "
+              f"run scripts/fetch.py")
 
     salads = load_exclusions("point-salads.txt")
-    plays = plays_by_id()
+    plays, mine = collection_stats()
     for g in games:
         g["point_salad"] = g["name"] in salads
         g["plays"] = plays.get(g["id"], 0)
+        g["my_rating"] = mine.get(g["id"])
 
     out = ROOT / "data" / "games.json"
     out.write_text(json.dumps(games, indent=1, ensure_ascii=False))

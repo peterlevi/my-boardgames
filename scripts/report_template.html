@@ -41,8 +41,9 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 .pair { display:flex; align-items:center; gap:5px; }
 .pair input { width:66px; }
 .pair span { color:var(--muted); font-size:.85rem; }
-#count { margin-left:auto; color:var(--muted); font-variant-numeric:tabular-nums;
-  white-space:nowrap; align-self:center; }
+.resultline { margin:16px 0 2px; }
+#count { font-size:1.15rem; font-weight:700; color:var(--ink);
+  letter-spacing:-.01em; font-variant-numeric:tabular-nums; }
 button.link { background:none; border:none; color:var(--accent); cursor:pointer;
   font:inherit; text-decoration:underline; padding:7px 0; align-self:flex-end; }
 details > summary { cursor:pointer; color:var(--accent); font-size:.8rem;
@@ -92,10 +93,13 @@ a.game:hover { color:var(--accent); text-decoration:underline; }
   clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
 .hex.none { background:#9b9b9b; font-weight:600; }
 td.score { width:34px; padding-right:4px; }
+td.score.mine-col { padding-right:9px; }
 .bar { position:relative; min-width:72px; }
-.bar span { position:absolute; left:9px; right:9px; bottom:2px; height:3px;
+/* Scoped to .track, not to any span: an em-dash placeholder is also a span,
+   and a bare `.bar span` rule turned it into a stray 3px bar. */
+.bar > .track { position:absolute; left:9px; right:9px; bottom:2px; height:3px;
   background:var(--line); border-radius:2px; }
-.bar span i { display:block; height:100%; background:var(--accent);
+.bar > .track > i { display:block; height:100%; background:var(--accent);
   border-radius:2px; }
 .dot { color:var(--muted); }
 /* On a phone the At N column is dropped for width, so the verdict rides along
@@ -127,7 +131,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .f.grow { flex-basis:100%; }
   .f select, .f input { width:100%; }
   .pair input { width:100%; min-width:0; }
-  #count { flex-basis:100%; margin-left:0; text-align:right; }
+  .resultline { margin:12px 0 2px; }
+  #count { font-size:1.05rem; }
   button.link { flex-basis:100%; text-align:left; }
   th, td { padding:7px 6px; }
   img.thumb { width:38px; height:38px; }
@@ -160,7 +165,6 @@ it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p
       <select id="players"><!--__OPTIONS__--></select></div>
     <div class="f"><label for="mode">Rule</label>
       <select id="mode"><!--__MODE_OPTIONS__--></select></div>
-    <span id="count">__SHOWN__ rows</span>
   </div>
   <details id="more">
     <summary>More filters</summary>
@@ -180,6 +184,10 @@ it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p
         <div class="pair"><input id="smin" type="number" min="0" max="10" step="0.1"
           placeholder="0"><span>to</span><input id="smax" type="number" min="0"
           max="10" step="0.1" placeholder="10"></div></div>
+      <div class="f"><label>My rating</label>
+        <div class="pair"><input id="mymin" type="number" min="0" max="10" step="0.5"
+          placeholder="0"><span>to</span><input id="mymax" type="number" min="0"
+          max="10" step="0.5" placeholder="10"></div></div>
       <div class="f"><label>Complexity</label>
         <div class="pair"><input id="wmin" type="number" min="0" max="5" step="0.1"
           placeholder="0"><span>to</span><input id="wmax" type="number" min="0"
@@ -199,12 +207,15 @@ it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p
   </details>
 </div>
 
+<p class="resultline"><span id="count">__SHOWN__ rows</span></p>
+
 <div class="scroll">
 <table>
   <thead><tr>
     <th class="thumb"></th>
     <th class="num hide-sm" data-k="rk">Rank</th>
-    <th class="num" data-k="av">Score</th>
+    <th class="num" data-k="av">BGG</th>
+    <th class="num" data-k="my">Mine</th>
     <th data-k="n">Game</th>
     <th class="num hide-sm" data-k="pl">Plays</th>
     <th class="num" data-k="tmax">Time</th>
@@ -259,6 +270,7 @@ function el(id) { return document.getElementById(id); }
 var F = {
   q: el('q'), players: el('players'), mode: el('mode'), salad: el('salad'),
   ix: el('ix'), smin: el('smin'), smax: el('smax'),
+  mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
   tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'), exp: el('exp'),
   votes: el('votes')
@@ -272,7 +284,8 @@ function applyDefaults() {
   F.exp.value = OPTS.expansions;
   F.votes.value = OPTS.minVotes;
   F.ix.value = '';
-  ['smin', 'smax', 'wmin', 'wmax', 'tmin', 'tmax', 'plmin', 'plmax']
+  ['smin', 'smax', 'mymin', 'mymax', 'wmin', 'wmax', 'tmin', 'tmax',
+   'plmin', 'plmax']
     .forEach(function (k) { F[k].value = ''; });
 }
 
@@ -320,6 +333,7 @@ function visible() {
   var n = +F.players.value, mode = F.mode.value, expMode = F.exp.value;
   var minVotes = +F.votes.value || 0;
   var smin = num(F.smin.value), smax = num(F.smax.value);
+  var mymin = num(F.mymin.value), mymax = num(F.mymax.value);
   var wmin = num(F.wmin.value), wmax = num(F.wmax.value);
   var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
@@ -336,6 +350,9 @@ function visible() {
     if (ix && g.ix !== ix) continue;
     if (smin !== null && !(g.av >= smin)) continue;
     if (smax !== null && !(g.av <= smax)) continue;
+    // An unrated game has no opinion to match, so any bound excludes it.
+    if (mymin !== null && !(g.my >= mymin)) continue;
+    if (mymax !== null && !(g.my <= mymax)) continue;
     if (wmin !== null && !(g.w >= wmin)) continue;
     if (wmax !== null && !(g.w <= wmax)) continue;
     if (tmin !== null && !(or0(g.tmax) >= tmin)) continue;
@@ -374,9 +391,12 @@ function sortRows(rows) {
       return sortDesc ? String(y).localeCompare(String(x))
                       : String(x).localeCompare(String(y));
     }
-    // Missing values (unranked, unpolled) always sink, whichever way we sort.
-    if (x === null || x === undefined) x = Infinity;
-    if (y === null || y === undefined) y = Infinity;
+    // Missing values (unranked, unrated, unpolled) sink to the bottom in BOTH
+    // directions. Coercing them to Infinity only works ascending — descending
+    // it floated every unrated game to the top.
+    var xm = (x === null || x === undefined);
+    var ym = (y === null || y === undefined);
+    if (xm || ym) return xm && ym ? 0 : (xm ? 1 : -1);
     if (x === y) {
       var ra = DATA[a[0]].rk, rb = DATA[b[0]].rk;
       return (ra === null ? Infinity : ra) - (rb === null ? Infinity : rb);
@@ -387,7 +407,7 @@ function sortRows(rows) {
 }
 
 function bar(p) {
-  return p.toFixed(0) + '%<span><i style="width:' +
+  return p.toFixed(0) + '%<span class="track"><i style="width:' +
          Math.min(p, 100).toFixed(0) + '%"></i></span>';
 }
 

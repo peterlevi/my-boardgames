@@ -6,8 +6,11 @@ night: *what should we play, with this many people, in this much time?*
 
 **→ [Browse the live report](https://peterlevi.github.io/my-boardgames/)**
 
-Everything but the initial fetch runs offline, so day-to-day use costs no API
-calls. The published page is rebuilt from the cached data on every push.
+[![The report](docs/screenshot.png)](https://peterlevi.github.io/my-boardgames/)
+
+Everything but the fetch runs offline, so day-to-day use costs no API calls.
+The published page and the screenshot above are both rebuilt from the cached
+data on every push.
 
 ## What the report does
 
@@ -18,7 +21,8 @@ browser:
   read from BGG's own `suggested_numplayers` poll
 - **Expansions** folded in: an owned expansion can qualify its base game at a
   count the base game can't manage alone
-- **Complexity**, **play time**, **BGG score**, **number of plays**, all as ranges
+- **BGG score** and **your own rating** side by side, as BGG's rating hexagons
+- **Complexity**, **play time**, **number of plays**, all as ranges
 - **Point salad** — yes / no / doesn't matter
 - **Level of interaction** — low / medium / high
 - Name search, and every column sortable
@@ -88,15 +92,42 @@ python3 scripts/report.py -o reports/collection.html
 ## How it works
 
 ```
-scripts/fetch.py    BGG XML API      ->  data/raw/*.xml       (network, slow, rare)
-scripts/thumbs.py   BGG image CDN    ->  data/thumbs/*.jpg    (network, once)
-scripts/build.py    data/raw         ->  data/games.json      (offline, instant)
-scripts/report.py   data/games.json  ->  a single HTML file   (offline, instant)
-scripts/query.py    data/games.json  ->  a terminal table     (offline, instant)
+scripts/sync.py      run the whole pipeline below, in order
+scripts/fetch.py     BGG XML API      ->  data/raw/            (network)
+scripts/thumbs.py    BGG image CDN    ->  data/thumbs/*.jpg    (network)
+scripts/build.py     data/raw         ->  data/games.json      (offline, instant)
+scripts/report.py    data/games.json  ->  a single HTML file   (offline, instant)
+scripts/query.py     data/games.json  ->  a terminal table     (offline, instant)
+scripts/screenshot.py  the report     ->  docs/screenshot.png  (offline)
 ```
 
-Only the first two touch the network. `data/raw/` and `data/thumbs/` are
-committed, which is what lets CI rebuild the page without credentials.
+Only `fetch.py` and `thumbs.py` touch the network. `data/raw/` and
+`data/thumbs/` are committed, which is what lets CI rebuild the page without
+credentials.
+
+The cache is keyed one file per game (`data/raw/things/<id>.xml`), so a resync
+only fetches games you did not already have. Your play counts and your own
+ratings ride along with the collection export at no extra cost.
+
+### Keeping it in sync
+
+```bash
+python3 scripts/sync.py            # the regular resync
+python3 scripts/sync.py --full     # also refetch every game's details
+python3 scripts/sync.py --no-fetch # rebuild from the cache, no network at all
+```
+
+`sync.py` runs fetch → thumbs → build → report. A routine resync costs three
+BGG requests when nothing has changed — the two collection exports plus a
+poll — and one more per twenty new games. Run it whenever you have logged
+plays, changed ratings, or bought something, then commit `data/` and push;
+the Pages workflow republishes the site.
+
+To automate it, `.github/workflows/resync.yml` runs the same thing weekly. It
+is **opt-in and dormant** until you add `BGG_USERNAME` and `BGG_TOKEN` as
+repository secrets (Settings → Secrets and variables → Actions); without them
+the job exits cleanly instead of failing. It is the only workflow that talks
+to BGG, and so the only one that needs credentials.
 
 ### Terminal queries
 
@@ -121,10 +152,15 @@ python3 scripts/report.py --link-thumbs -o reports/small.html   # ~130 KB, needs
 The live page is built and published by
 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) on every push to
 `main`, using GitHub Pages' artifact deployment — there is no `gh-pages`
-branch, and no build output is committed.
+branch, and the report itself is never committed.
 
-The build is offline and needs no secrets, which is the whole reason this is
-safe to run on every push. Refreshing from BGG stays a deliberate, local step.
+The same workflow re-renders `docs/screenshot.png` and commits it when it has
+changed, so the image at the top of this file always matches the current
+report. That commit is made with `GITHUB_TOKEN`, whose pushes deliberately do
+not trigger further workflow runs, so it cannot loop.
+
+The build is offline and needs no secrets, which is the whole reason it is safe
+to run on every push.
 
 Repository **Settings → Pages → Source** must be set to **GitHub Actions**.
 
@@ -165,6 +201,14 @@ public BGG collection with rank, weight, polls, language dependency and
 estimated worth. It was checked as a second source and adds nothing this cache
 doesn't already have — including no interaction data. Useful as a fallback if
 BGG's API is down.
+
+## Requirements
+
+Python 3.9 or newer, and [Pillow](https://pillow.readthedocs.io) for the
+thumbnail cache (`pip install -r requirements.txt`). Nothing else is required
+to fetch, build or render — everything else is the standard library plus
+`curl`. Screenshots additionally want Playwright's Chromium, and fall back to
+any local Chrome installation.
 
 ## Browser support
 

@@ -1,0 +1,508 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="423401">
+         <thumbnail>https://cf.geekdo-images.com/SScMT92rIP3K0NTK43z9IA__small/img/YO9v3XH_SJE5ifQje2gin4wEBws=/fit-in/200x150/filters:strip_icc()/pic8265896.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/SScMT92rIP3K0NTK43z9IA__original/img/u5tzf8rU2TBzQVoroNdlbcdqynk=/0x0/filters:format(jpeg)/pic8265896.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Minos: Dawn of the Bronze Age" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Minos: Anbruch der Bronzezeit" />
+			    				
+				<name type="alternate" sortindex="1" value="Minos: Aurora da Idade do Bronze" />
+			    				
+				<name type="alternate" sortindex="1" value="Minos: El amanecer de la edad de bronce" />
+			    				
+				<name type="alternate" sortindex="1" value="Minos: L'Alba dell'Età del Bronzo" />
+			    				
+				<name type="alternate" sortindex="1" value="Minos: L'Aube de l'Âge de Bronze" />
+			    				
+				<name type="alternate" sortindex="1" value="Minos: Úsvit doby bronzové" />
+			    				
+				<name type="alternate" sortindex="1" value="Минос: Рассвет бронзового века" />
+			    				
+				<name type="alternate" sortindex="1" value="ミノス：青銅器時代の夜明け" />
+			
+						               													<description>In the ancient realm of Crete, amidst the sun-drenched shores and labyrinthine corridors of Knossos, the fate of the Minoan civilization is yet to be determined. As a member of one of the four illustrious Minoan clans, your destiny beckons you to vie for the prestigious title of Minos, the ultimate leader of your people.
+
+But keep in mind - unlike the tumultuous conquests of other civilizations, the Minoans are renowned for their pursuit of peace and prosperity. In this captivating journey, the essence of your quest lies not in the clash of swords, but in the art of governance and the cultivation of your clan&amp;rsquo;s unique identity.
+
+As leaders of Minoan clans players are in charge of the first European civilization. Build cities, monuments and other structures, open new trade routes, expand and fight off outsiders out of your land, plan your actions with your clan council, research and issue decrees so your actions will be more powerful than your opponents! You have only 4 rounds to prove you are worthy of the legendary Minos title.
+
+Draft and assign the dice to the programming board. With lower value dice you can secure stronger actions but the higher value dice will help you climb on the tracks and gain their benefits. During the action phase each player takes their dice in order from highest to lowest and performing the pre-planned actions. Players also build their tableau - each card has an instant effect and a triggered reward connected to the specific action or die value they can use to make the action more powerful. Moreover, twice in the game players get Victory Points for their civilization progress in the region.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="85">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="28" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="31" />
+					<result value="Recommended" numvotes="27" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="28" />
+					<result value="Recommended" numvotes="34" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="16" />
+					<result value="Not Recommended" numvotes="43" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="36" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2–3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–3 players" />
+</poll-summary> 			               				<playingtime value="150" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="150" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="5">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="4" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="6">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="6" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1017" value="Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1082" value="Mythology" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1036" value="Prehistoric" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2838" value="Action Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2947" value="Movement Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="52373" value="Ancient: Greece" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27503" value="Islands: Crete (Greece)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65163" value="Mechanism: Dice Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62772" value="Mythology: Greek" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="436060" value="Minos: Dawn of Faith" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="457338" value="Minos: Dawn of Faith – New Special Abilities Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="453097" value="Minos: Dawn of the Bronze Age – Expanded Progress Tracks Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="430035" value="Minos: Dawn of the Bronze Age – New Building Powers Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="430163" value="Minos: Dawn of the Bronze Age – New Decree Cards promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="453098" value="Minos: Dawn of the Bronze Age – New Vase Tiles Promo" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="437936" value="Minos: Dawn of the Bronze Age – JuntaDesign Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="456855" value="Minos: Dawn of the Bronze Age – Metal Coins" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="428965" value="Minos: Dawn of the Bronze Age Folded Space Insert" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="98387" value="Stan Kordonskiy" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="93868" value="Hazem Ameen" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="49390" value="Kristina Gehrmann" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="143954" value="Guilherme Olivieri" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="86237" value="Zbigniew Umgelter" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="26630" value="Board&amp;Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="58538" value="Board Bound" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21608" value="CMON Global Limited" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42147" value="Giant Roc" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44349" value="Mosaico Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30034" value="Pixie Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42061" value="Tesla Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41423" value="TLAMA games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="1637" />
+			<average value="7.53437" />
+			<bayesaverage value="6.31906" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1822" bayesaverage="6.31906" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="899" bayesaverage="6.4963" />
+												</ranks>
+
+			<stddev value="1.2603" />
+			<median value="0" />
+			<owned value="3399" />
+			<trading value="69" />
+			<wanting value="149" />
+			<wishing value="1158" />
+			<numcomments value="372" />
+			<numweights value="85" />
+			<averageweight value="3.7294" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

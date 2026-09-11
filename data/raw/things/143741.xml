@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="143741">
+         <thumbnail>https://cf.geekdo-images.com/BLTFau1Ue-gjX6geQdYrjQ__small/img/IijBpyOQC760F6XIw34WT0ePqe4=/fit-in/200x150/filters:strip_icc()/pic2909713.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/BLTFau1Ue-gjX6geQdYrjQ__original/img/3CcRDvDttHpWLP6wc_jZHufTfl4=/0x0/filters:format(jpeg)/pic2909713.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="BANG! The Dice Game" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Bang: Jocul de Zaruri" />
+			    				
+				<name type="alternate" sortindex="1" value="BANG: Le Jeu de Dés" />
+			    				
+				<name type="alternate" sortindex="1" value="BANG! El juego de dados" />
+			    				
+				<name type="alternate" sortindex="1" value="BANG! Gra kościana" />
+			    				
+				<name type="alternate" sortindex="1" value="Bang! Het dobbelspel" />
+			    				
+				<name type="alternate" sortindex="1" value="BANG! Kockajáték" />
+			    				
+				<name type="alternate" sortindex="1" value="Bang! Kostková hra" />
+			    				
+				<name type="alternate" sortindex="1" value="BANG! με Ζάρια" />
+			    				
+				<name type="alternate" sortindex="1" value="BANG! Игра със зарове" />
+			    				
+				<name type="alternate" sortindex="1" value="Бенґ! Кубикова гра" />
+			    				
+				<name type="alternate" sortindex="1" value="Бэнг! За пригоршню кубиков" />
+			    				
+				<name type="alternate" sortindex="1" value="砰！骰子版" />
+			    				
+				<name type="alternate" sortindex="1" value="뱅! 주사위 게임" />
+			
+						               													<description>In the U.S. wild west, the eternal battle between the law and the outlaws keeps heating up. Suddenly, a rain of arrows darken the sky: It's an Indian attack! Are you bold enough to keep up with the Indians? Do you have the courage to challenge your fate? Can you expose and defeat the ruthless gunmen around you?
+
+BANG! The Dice Game keeps the core of the Bang! card game in place. At the start of the game, players each take a role card that secretly places them on a team: the Sheriff and deputies, outlaws, and renegades. The Sheriff and deputies need to kill the outlaws, the outlaws win by killing the Sheriff, and the renegades want to be the last players alive in the game.
+
+Each player also receives a character card which grants him a special power in the game. The Sheriff reveals his role card and takes the first turn of the game. On a turn, a player can roll the five dice up to three times, using the results of the dice to shoot neighboring players, increase the range of his shots, heal his (or anyone else's) life points, or put him in range of the Indians, which are represented by nine tokens in the center of the table. Each time a player rolls an arrow, he takes one of these tokens; when the final token is taken, each player loses one life point for each token he holds, then the tokens are returned to the center of the table.
+
+If a player collects a trio of Gatling symbols on the dice, he fires one shot at everyone else and rids himself of Indian tokens. Who'll get his shot off first? Play continues until one team meets its winning condition &amp;ndash; and death won't necessarily keep you from winning as long as your teammates pull through!
+
+</description>
+										      	               				<yearpublished value="2013" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="8" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="414">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="287" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="288" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="28" />
+					<result value="Not Recommended" numvotes="303" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="120" />
+					<result value="Not Recommended" numvotes="195" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="105" />
+					<result value="Recommended" numvotes="228" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="230" />
+					<result value="Recommended" numvotes="112" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="227" />
+					<result value="Recommended" numvotes="104" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="115" />
+					<result value="Recommended" numvotes="173" />
+					<result value="Not Recommended" numvotes="22" />
+				</results>					
+			
+		<results numplayers="8+">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="7" />
+					<result value="Not Recommended" numvotes="188" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 6–7 players" />
+  <result name="recommmendedwith" value="Recommended with 5–8 players" />
+</poll-summary> 			               				<playingtime value="15" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="15" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="84">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="8" />
+					<result value="8" numvotes="57" />
+					<result value="10" numvotes="18" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="46">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="1" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="32" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="13" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1055" value="American West" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1023" value="Bluffing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1017" value="Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1046" value="Fighting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1030" value="Party Game" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2856" value="Die Icon Resolution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2891" value="Hidden Roles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2685" value="Player Elimination" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2661" value="Push Your Luck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2870" value="Re-rolling and Locking" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65328" value="Components: Dice with Icons" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="26397" value="Food &amp; Drink: Beer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="3862" value="Game: BANG!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="81584" value="History: American Old West (Wild West)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62201" value="Versions &amp; Editions: Dice Versions of Non-Dice Games" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="193614" value="BANG! The Dice Game: Old Saloon" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="283717" value="BANG! The Dice Game: Undead or Alive" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="181453" value="Bang! The Dice Game Resource Upgrade Kit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="319438" value="BANG! The Dice Game: Insert Here Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="378757" value="BANG! The Dice Game: Spielmaterial.de Upgrade" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="422159" value="BANG! Dice Explosion" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="177697" value="Bang! The Dice Game: The Walking Dead" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="3955" value="BANG!" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="461" value="Michael Palm" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="7808" value="Lukas Zach" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="68794" value="Riccardo Pieruccini" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="917" value="DV Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29" value="ABACUSSPIELE" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4304" value="Albi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="157" value="asmodee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9074" value="Bard Centrum Gier" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="43382" value="Black Sea Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2973" value="Edge Entertainment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="58739" value="Geekach LLC" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gémklub" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="18852" value="Hobby World" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6214" value="Kaissa Chess &amp; Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3218" value="Lautapelit.fi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30399" value="Ludicus Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="49615" value="Meeple" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9234" value="Swan Panasia Co., Ltd." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4932" value="White Goblin Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="26647" />
+			<average value="6.87367" />
+			<bayesaverage value="6.71547" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="893" bayesaverage="6.71547" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="80" bayesaverage="6.70999" />
+												</ranks>
+
+			<stddev value="1.33033" />
+			<median value="0" />
+			<owned value="43541" />
+			<trading value="839" />
+			<wanting value="249" />
+			<wishing value="3209" />
+			<numcomments value="4761" />
+			<numweights value="805" />
+			<averageweight value="1.277" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

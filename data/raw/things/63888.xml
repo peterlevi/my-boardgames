@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="63888">
+         <thumbnail>https://cf.geekdo-images.com/l4fVXtRnhKMf5UPn78rEdg__small/img/xMh4wYMS9nA77f3KScqZsWurVgQ=/fit-in/200x150/filters:strip_icc()/pic8792317.png</thumbnail>
+      <image>https://cf.geekdo-images.com/l4fVXtRnhKMf5UPn78rEdg__original/img/spomh0P7HHKNTFNLVwVX7xJPf3M=/0x0/filters:format(png)/pic8792317.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Innovation" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Innowacje" />
+			    				
+				<name type="alternate" sortindex="1" value="Inovace" />
+			    				
+				<name type="alternate" sortindex="1" value="Инновация" />
+			    				
+				<name type="alternate" sortindex="1" value="Інновація" />
+			    				
+				<name type="alternate" sortindex="1" value="חידושים והמצאות" />
+			    				
+				<name type="alternate" sortindex="1" value="イノベーション" />
+			    				
+				<name type="alternate" sortindex="1" value="创世发明" />
+			    				
+				<name type="alternate" sortindex="1" value="曠世發明" />
+			
+						               													<description>Innovation is Carl Chudyk's tableau-builder of infinite possibilities, taking you on a journey from pre-history all the way to the present...and the near future! In this game, you build a civilization using only cards; there's no map, no tokens, no dice, no pieces. The game's 105 innovations &amp;mdash; or in the fourth edition, 115 innovations &amp;mdash; are each represented by a card with a unique effect, organized into ten (or eleven) ages. Each innovation's effect is tied thematically to its identity, allowing you to either elevate your society or attack your opponents.
+
+In addition to directly affecting your opponents, you can share in the effects of their technologies if you amass enough visible icons on your board. Strategically building your tableau of cards to share often and defend against demands is crucial to success.
+
+To win, you must claim achievements, which you can attain by amassing points or by meeting certain criteria with the innovations you have built. No two games of Innovation play the same way.
+
+[Admin note: The specific card effects have changed across the four editions of Innovation, in addition to age 11 being added in the fourth edition, but the core gameplay has remained consistent across all editions, so all editions are listed on a single page in the database.]
+
+</description>
+										      	               				<yearpublished value="2010" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="604">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="316" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="412" />
+					<result value="Recommended" numvotes="148" />
+					<result value="Not Recommended" numvotes="11" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="151" />
+					<result value="Recommended" numvotes="290" />
+					<result value="Not Recommended" numvotes="71" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="46" />
+					<result value="Recommended" numvotes="189" />
+					<result value="Not Recommended" numvotes="243" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="317" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="27" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2–3 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="20" />
+						               				<maxplaytime value="60" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="73">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="3" />
+					<result value="10" numvotes="11" />
+					<result value="12" numvotes="41" />
+					<result value="14" numvotes="16" />
+					<result value="16" numvotes="2" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="94">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="79" />
+					<result level="5" value="Unplayable in another language" numvotes="13" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2843" value="Follow" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3001" value="Layering" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2981" value="Melding and Splaying" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2884" value="Sudden Death Ending" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3100" value="Tags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2686" value="Take That" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65191" value="Components: Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70354" value="Digital Implementations: Yucata" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="17657" value="Game: Innovation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="185796" value="Innovation: Artifacts of History" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="150669" value="Innovation: Cities of Destiny" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="92898" value="Innovation: Echoes of the Past" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="122323" value="Innovation: Figures in the Sand" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="185257" value="Innovation Deluxe" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="388367" value="Innovation Ultimate" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="6001" value="Carl Chudyk" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="73851" value="Alanna Cervenak" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="6001" value="Carl Chudyk" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="33502" value="Cara Judd" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="50672" value="Robin Olausson" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="26269" value="Anders Olausson" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="154275" value="Robert Simmons" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="14142" value="Christophe Swal" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12080" value="Cyril Van Der Haegen" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5407" value="Asmadi Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54051" value="4GAMES" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15889" value="Asterion Press" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48438" value="Games7Days" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42325" value="Grok Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="18852" value="Hobby World" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6275" value="HomoLudicus" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8923" value="IELLO" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17899" value="Igrology" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5812" value="Lacerta" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29242" value="Ludofy Creative" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30552" value="One Moment Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22651" value="Origames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21053" value="Rexhry" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24844" value="Schwerkraft-Verlag" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28402" value="פרש משחקים: Game Knight" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="20858" />
+			<average value="7.32839" />
+			<bayesaverage value="7.11611" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="382" bayesaverage="7.11611" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="287" bayesaverage="7.14981" />
+												</ranks>
+
+			<stddev value="1.61302" />
+			<median value="0" />
+			<owned value="27798" />
+			<trading value="729" />
+			<wanting value="539" />
+			<wishing value="4440" />
+			<numcomments value="4744" />
+			<numweights value="1030" />
+			<averageweight value="2.7835" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

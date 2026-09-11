@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="402677">
+         <thumbnail>https://cf.geekdo-images.com/RCQf2kr9tPW3RrrZj-9lvA__small/img/--Lgerr-HDIhLb7kxrNWV2HLnGY=/fit-in/200x150/filters:strip_icc()/pic7774194.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/RCQf2kr9tPW3RrrZj-9lvA__original/img/tCt01H_w1VQr-lU99inHPt1QJj8=/0x0/filters:format(jpeg)/pic7774194.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Daitoshi" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="다이토시" />
+			
+						               													<description>We have finally perfected the power of steam, and we can now use it to our advantage! We live in an unprecedented era of progress, and new steam-powered inventions are developed faster than ever. Cities are growing, trade is flourishing, and we are developing our most ambitious machine ever: a giant contraption that will bring even more progress to the city. Yes, some trees are being cut down, and the river doesn't flow as plentifully as before, but there's still an abundance of trees and water, and we can use the extra space to expand our city &amp;mdash; and it's not like the old creatures on those forests can do anything about it.
+
+On your turn in Daitoshi, you either produce or move your magnate to a new district in which you will be able to send your workers to work, command the exploit of forest or river hexes to fuel your endless need for steam, and perform an action to expand and show your greatness to the city.
+
+These actions not only help you in your search for acknowledgement, but help all the inhabitants of the big city. You will expand the city and electrify its districts, discover and develop new steam-powered inventions, and trade with faraway cities. You may even help the city build its gargantuan project: the mega-machine. Some forests might be cut down, and some rivers may be dried up, but in your generosity, you will help the displaced workers from those areas by giving them new jobs at your service.
+
+Old legends suggest the forests and rivers are guarded by Yōkai, but progress can't be stopped because of some old fairy tales. Just in case, though, it could be wise to participate on some reforestation projects and hide your participation in the abuse of the natural resources...
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="61">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="16" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="14" />
+					<result value="Recommended" numvotes="28" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="31" />
+					<result value="Recommended" numvotes="11" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="12" />
+					<result value="Not Recommended" numvotes="25" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="26" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–3 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="120" />
+						               				<maxplaytime value="120" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="3">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="2" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="1" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="5">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="5" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1029" value="City Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2843" value="Follow" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2011" value="Modular Board" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2846" value="Once-Per-Game Abilities" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2813" value="Rondel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10634" value="Country: Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="98646" value="Setting: Kemushi Saga" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="111206" value="Theme: Factories" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5610" value="Theme: Steampunk" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="430571" value="Daitoshi: Promo 1" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="451582" value="Daitoshi: e-Raptor Color Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="428966" value="Daitoshi: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="453492" value="Daitoshi: reDrewno Insert" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="117012" value="Dani Garcia" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="163658" value="Marina Vidal" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55324" value="HIT Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2726" value="Portal Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="40058" value="Skellig Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="1652" />
+			<average value="7.45124" />
+			<bayesaverage value="6.26771" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2003" bayesaverage="6.26771" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1000" bayesaverage="6.42649" />
+												</ranks>
+
+			<stddev value="1.45527" />
+			<median value="0" />
+			<owned value="4029" />
+			<trading value="99" />
+			<wanting value="116" />
+			<wishing value="1394" />
+			<numcomments value="348" />
+			<numweights value="120" />
+			<averageweight value="3.9583" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

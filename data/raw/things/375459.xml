@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="375459">
+         <thumbnail>https://cf.geekdo-images.com/Y7vIlh-m_Ugnv0jrUuOW3g__small/img/pTIdvbosIWlLSxorWRMWkUkeSj8=/fit-in/200x150/filters:strip_icc()/pic8165052.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/Y7vIlh-m_Ugnv0jrUuOW3g__original/img/anztl_yjkT6QMcW4p5Dit7KAChE=/0x0/filters:format(jpeg)/pic8165052.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Speakeasy" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Zugkocsma" />
+			    				
+				<name type="alternate" sortindex="1" value="Спикизи" />
+			    				
+				<name type="alternate" sortindex="1" value="地下酒吧 Speakeasy" />
+			    				
+				<name type="alternate" sortindex="1" value="스피크 이지" />
+			
+						               													<description>Speakeasy will transport you to the roaring 1920s during the era of Prohibition. Manhattan was under the firm control of Lucky Luciano, a prominent mobster. To strengthen his grip on the territory, he implemented a well-structured system. He divided Manhattan into different districts, each assigned to a specific mobster responsible for handling their "business" operations.
+
+In this worker-placement and card-management game, you take on the role of one of those mobsters, managing and operating your very own speakeasy empire in Manhattan. To do so, you'll need to use all your cunning and resources to stay ahead of the competition. As you improve your operation, become more infamous, and upgrade to more lavish speakeasies and even casinos, you'll attract the attention of the outside mafia and the police. You need to use your leverage to keep your business running and receive your share from Lucky Luciano.
+
+You need to hire goons to help you take over Manhattan during this exciting and dangerous time. You can associate with outside mobsters &amp;mdash; and even attack and rob rum runners to gain valuable resources to gain an edge over your rivals. You need to manage your cards carefully, placing your workers strategically to deliver illicit liquor and reach Manhattan's goals to earn income. You will cook your books to fill your safes with free tax money by achieving some goals.
+
+The ultimate goal is simple: accumulate the most money and become the most successful mobster in the city. Do you have what it takes to rise to the top of the speakeasy scene and take over Manhattan during Prohibition? It's time to grab your fedora and find out in Speakeasy.
+
+</description>
+										      	               				<yearpublished value="2025" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="189">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="15" />
+					<result value="Recommended" numvotes="75" />
+					<result value="Not Recommended" numvotes="28" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="40" />
+					<result value="Recommended" numvotes="93" />
+					<result value="Not Recommended" numvotes="13" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="98" />
+					<result value="Recommended" numvotes="49" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="46" />
+					<result value="Recommended" numvotes="49" />
+					<result value="Not Recommended" numvotes="43" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="69" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="180" />
+						               				<minplaytime value="50" />
+						               				<maxplaytime value="180" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="29">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="7" />
+					<result value="14" numvotes="13" />
+					<result value="16" numvotes="9" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="7">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="7" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1088" value="Industry / Manufacturing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1033" value="Mafia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1086" value="Territory Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2007" value="Pick-up and Deliver" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="13111" value="Cities: New York (New York, USA)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="14835" value="Country: USA" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73776" value="Decades: The 1920's" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65600" value="History: Prohibition in the USA" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="112709" value="History: Roaring Twenties (1920-1929)" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="450413" value="Speakeasy: Upgrade Pack" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="436271" value="Speakeasy: Wooden Money" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="12396" value="Vital Lacerda" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="64844" value="Ian O'Toole" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="597" value="Eagle-Gryphon Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34522" value="CrowD Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6194" value="Delta Vision Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2726" value="Portal Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="40058" value="Skellig Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42061" value="Tesla Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41423" value="TLAMA games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8147" value="YOKA Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="4476" />
+			<average value="8.42237" />
+			<bayesaverage value="7.34345" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="219" bayesaverage="7.34345" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="106" bayesaverage="7.55039" />
+												</ranks>
+
+			<stddev value="1.36993" />
+			<median value="0" />
+			<owned value="8794" />
+			<trading value="21" />
+			<wanting value="607" />
+			<wishing value="5460" />
+			<numcomments value="833" />
+			<numweights value="469" />
+			<averageweight value="4.4328" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

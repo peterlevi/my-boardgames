@@ -1,0 +1,529 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="318182">
+         <thumbnail>https://cf.geekdo-images.com/-6AnQ0BuCM8u1lqAwTe8Rw__small/img/da5eYCvhYSmPb03hEhNwxR8-s6g=/fit-in/200x150/filters:strip_icc()/pic5623567.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/-6AnQ0BuCM8u1lqAwTe8Rw__original/img/3isy4jQQdEpy8D-JKV2zLxrUjs8=/0x0/filters:format(jpeg)/pic5623567.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Imperium: Legends" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Imperium: Legendarios" />
+			    				
+				<name type="alternate" sortindex="1" value="Imperium: Legenden" />
+			    				
+				<name type="alternate" sortindex="1" value="Imperium: Légendes" />
+			    				
+				<name type="alternate" sortindex="1" value="Imperium: Legendy" />
+			    				
+				<name type="alternate" sortindex="1" value="Imperium: Lendas" />
+			    				
+				<name type="alternate" sortindex="1" value="Империи: Легенды" />
+			    				
+				<name type="alternate" sortindex="1" value="帝国：传奇" />
+			    				
+				<name type="alternate" sortindex="1" value="帝国の時代：インペリウム・レジェンド" />
+			    				
+				<name type="alternate" sortindex="1" value="帝國:傳奇" />
+			    				
+				<name type="alternate" sortindex="1" value="임페리움: 레전드" />
+			
+						               													<description>In your hands lies the destiny of one of history's great civilizations. Under constant threat of attack, you must conquer new lands, oversee dramatic scientific and cultural advances, and lead your people into the era of empire. Expand too rapidly, and unrest will bring your civilization to its knees; build up too slowly, however, and you might find yourself a mere footnote of history. As one of eight radically asymmetric civilizations, you will compete to become the most dominant empire the world has ever seen.
+
+Imperium: Legends is a standalone game that contains the Arthurian, Atlantian, Egyptian, Mauryan, Minoan, Olmec, Qin, and Utopian civilizations and an individual solo opponent behaving as each nation. It is also fully compatible with Imperium: Classics for players wanting to expand their pool of civilizations even further.
+
+The game is played in a series of rounds. Each round starts with the player to the left of the solstice card taking their turn and then turn order proceeds clockwise.  On each turn, players will activate, innovate, or revolt. Once you have finished resolving your action, you will clean up.
+After you have cleaned up, the player to your left takes their turn. If the solstice card is between you and the player to your left, the round ends.
+
+Play continues until either scoring or collapse is triggered, which ends the game. The player with the most victory points wins.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2021" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="180">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="118" />
+					<result value="Recommended" numvotes="39" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="90" />
+					<result value="Recommended" numvotes="58" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="15" />
+					<result value="Recommended" numvotes="35" />
+					<result value="Not Recommended" numvotes="78" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="20" />
+					<result value="Not Recommended" numvotes="109" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="106" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 1–2 players" />
+  <result name="recommmendedwith" value="Recommended with 1–2 players" />
+</poll-summary> 			               				<playingtime value="160" />
+						               				<minplaytime value="40" />
+						               				<maxplaytime value="160" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="20">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="5" />
+					<result value="14" numvotes="15" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="14">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="2" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="9" />
+					<result level="5" value="Unplayable in another language" numvotes="3" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2962" value="Move Through Deck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="106514" value="Category: Autonomous simulation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="22135" value="Crowdfunding: Spieleschmiede" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="105983" value="Game: Imperium (Osprey Games)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="109882" value="Series: Imperium Engine Meta Series" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="374325" value="Imperium: Progeny Promo Pack" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="430172" value="Imperium: Undaunted Promo Card" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="363051" value="Imperium: Antyk/Legendy – Drewniana karta przesilenia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="392637" value="Imperium: Classics/Legends – GameMaker3D 3D printed upgrade components" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="354431" value="Imperium: Classics/Legends – Laserox Imperium Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="425057" value="Imperium: Horizons – Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="440118" value="Imperium: Horizons – The GiftForge Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="348867" value="Imperium: Legends – The GiftForge Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="368018" value="Imperium: Legendy – reDrewno Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="421917" value="Imperium: Spielmatte &quot;Auslage&quot;" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="421916" value="Imperium: Spielmatte &quot;Markt&quot;" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="421918" value="Imperium: Spielmatte &quot;Solo&quot;" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="318184" value="Imperium: Classics" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="367518" value="Imperium: Horizons" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="5864" value="Nigel Buckle" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="76227" value="Dávid Turczi" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="70533" value="Mihajlo Dimitrievski" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29313" value="Osprey Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="35928" value="Banana Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44580" value="Board Game Rookie" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21608" value="CMON Global Limited" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33710" value="Fox in the Box" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42147" value="Giant Roc" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="27470" value="Lucrum Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32591" value="MeepleBR" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="50506" value="Niza Gams" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22651" value="Origames" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="5133" />
+			<average value="7.84173" />
+			<bayesaverage value="7.04755" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="455" bayesaverage="7.04755" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="265" bayesaverage="7.19293" />
+												</ranks>
+
+			<stddev value="1.43549" />
+			<median value="0" />
+			<owned value="13612" />
+			<trading value="261" />
+			<wanting value="231" />
+			<wishing value="1643" />
+			<numcomments value="915" />
+			<numweights value="205" />
+			<averageweight value="3.7561" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,0 +1,726 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="28143">
+         <thumbnail>https://cf.geekdo-images.com/-DOqixs8uwKUvvWPKI4f9w__small/img/xLs-ldTPwaADbvzkOpF0sgWzwck=/fit-in/200x150/filters:strip_icc()/pic5261714.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/-DOqixs8uwKUvvWPKI4f9w__original/img/Vh-DCkTPa8OU45LaJdUywwhiYqE=/0x0/filters:format(jpeg)/pic5261714.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Race for the Galaxy" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Dobyvatelé Vesmíru" />
+			    				
+				<name type="alternate" sortindex="1" value="Galaxia: La conquista" />
+			    				
+				<name type="alternate" sortindex="1" value="Race for the Galaxy: Narodziny Imperiów" />
+			    				
+				<name type="alternate" sortindex="1" value="Борьба за галактику" />
+			    				
+				<name type="alternate" sortindex="1" value="レース・フォー・ザ・ギャラクシー" />
+			    				
+				<name type="alternate" sortindex="1" value="レース・フォー・ザ・ギャラクシー 第二版" />
+			    				
+				<name type="alternate" sortindex="1" value="銀河競逐 (银河竞逐)" />
+			    				
+				<name type="alternate" sortindex="1" value="银河竞逐：第二版" />
+			    				
+				<name type="alternate" sortindex="1" value="레이스 포 더 갤럭시" />
+			
+						               													<description>In Race for the Galaxy, players build galactic civilizations by playing cards representing worlds or technical and social developments.
+
+Each round, players secretly and simultaneously select an action card corresponding to one phase of a round. These phases let players draw cards, play cards, add goods to worlds, or consume goods for VP chips. Only the phases chosen will occur that round. Every player may act in a phase that occurs, but the players who chose that phase get a bonus.
+
+Game end is triggered either when a player has built a civilization of 12 cards or when the pool of VP chips is exhausted. Each player then totals the victory points in their tableau plus any VP chips earned during play.
+
+Detailed Overview
+Race for the Galaxy tells a story of galactic discovery and expansion through a single deck of cards. Every card in the deck represents either a world that you might settle or a development that you might implement. Cards placed into your tableau represent your current achievements -- worlds you have colonized, technology you now wield -- while cards in your hand represent the options currently available to you.
+
+To play a card, discard the number of cards equal to its cost, representing other opportunities you must forgo to concentrate on your current course. Once in your tableau, a card provides special powers during the game and, at the end, its listed number of victory points. Many worlds, once placed, also produce goods that can be traded for more cards or consumed for VP chips.
+
+Race for the Galaxy is played in rounds. In each round, you and your opponents secretly select an action phase for the upcoming turn. You can choose to:
+&amp;bull; Place a world in your tableau with settle or a development with develop.
+&amp;bull; Produce goods on worlds with produce.
+&amp;bull; Consume goods for VPs with consume.
+&amp;bull; Add cards to your hand with explore or by trading a good.
+
+Each round, only those phases that are selected will occur -- but they'll occur for everyone. Selecting a phase both ensures that it occurs that round and gains the selecting player a bonus.
+
+Round follows round until someone builds their tableau to twelve cards, or until the last VP chip is claimed. The victor is the player with the most VPs.
+
+2018 UPDATE
+The second edition of the game is improved for CVD (color blindness) and includes 5 revised cards from the original version and 6 New Worlds promo homeworlds. The promo homeworlds and first edition compatible Revised Cards are both available for purchase through the BGG store.
+
+UPC 655132003018
+
+</description>
+										      	               				<yearpublished value="2007" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1282">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="14" />
+					<result value="Recommended" numvotes="118" />
+					<result value="Not Recommended" numvotes="561" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="848" />
+					<result value="Recommended" numvotes="318" />
+					<result value="Not Recommended" numvotes="37" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="379" />
+					<result value="Recommended" numvotes="649" />
+					<result value="Not Recommended" numvotes="53" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="437" />
+					<result value="Recommended" numvotes="519" />
+					<result value="Not Recommended" numvotes="91" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="19" />
+					<result value="Recommended" numvotes="111" />
+					<result value="Not Recommended" numvotes="480" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="60" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="239">
+			<results>		
+					<result value="2" numvotes="1" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="2" />
+					<result value="8" numvotes="11" />
+					<result value="10" numvotes="47" />
+					<result value="12" numvotes="111" />
+					<result value="14" numvotes="53" />
+					<result value="16" numvotes="11" />
+					<result value="18" numvotes="2" />
+					<result value="21 and up" numvotes="1" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="301">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="11" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="187" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="93" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="7" />
+					<result level="5" value="Unplayable in another language" numvotes="3" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1016" value="Science Fiction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1113" value="Space Exploration" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2843" value="Follow" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2900" value="Market" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3099" value="Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3100" value="Tags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2079" value="Variable Phase Order" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65191" value="Components: Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78432" value="Digital Implementations: Google Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77349" value="Digital Implementations: Steam" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="4571" value="Game: Race for the Galaxy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="109134" value="Misc: BGG Hall of Fame" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="105030" value="Misc: Dice Tower Hall of Fame" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78680" value="Misc: Made by Panda" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65851" value="Players: Games with expansions that add solo play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="113768" value="Players: Games with expansions that change player count" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="145148" value="Patronage (fan expansion for Race for the Galaxy)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="92932" value="Race for the Galaxy: Alien Artifacts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="270439" value="Race for the Galaxy: Expansion and Brinkmanship" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="242309" value="Race for the Galaxy: New Worlds Promo Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="40210" value="Race for the Galaxy: Rebel vs Imperium" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="66121" value="Race for the Galaxy: The Brink of War" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="34499" value="Race for the Galaxy: The Gathering Storm" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="394555" value="Race for the Galaxy: Xeno Counterstrike" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="161599" value="Race for the Galaxy: Xeno Invasion" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="238247" value="Race for the Galaxy: Broken Token Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="274568" value="Race for the Galaxy: Broken Token Organizer – Bits Box" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="272794" value="Race for the Galaxy: Broken Token Organizer – Extra Dividers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="476922" value="Race for the Galaxy: Feldherr Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="262000" value="Race for the Galaxy: GeekUp Bit Set" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="268829" value="Race for the Galaxy: Retrofit Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="444536" value="Race for the Galaxy: Tokens Garden Metal Coins" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="205597" value="Jump Drive" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="255692" value="New Frontiers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="132531" value="Roll for the Galaxy" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="150" value="Thomas Lehmann" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11968" value="Martin Hoffmann" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11902" value="Claus Stephan" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3" value="Rio Grande Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29" value="ABACUSSPIELE" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4304" value="Albi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24883" value="Ediciones MasQueOca" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36981" value="Feelindigo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8500" value="Gabinete Lúdico" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9465" value="Gamesinitaly" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4785" value="Ghenos Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7251" value="Giochix.it" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="18852" value="Hobby World" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5400" value="Matagot" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39" value="Pegasus Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8313" value="Smart Ltd" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8759" value="Wargames Club Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8147" value="YOKA Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2861" value="Ystari Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="59405" />
+			<average value="7.73588" />
+			<bayesaverage value="7.61443" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="94" bayesaverage="7.61443" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="82" bayesaverage="7.61733" />
+												</ranks>
+
+			<stddev value="1.46394" />
+			<median value="0" />
+			<owned value="74538" />
+			<trading value="1287" />
+			<wanting value="1101" />
+			<wishing value="11898" />
+			<numcomments value="11679" />
+			<numweights value="3882" />
+			<averageweight value="2.9938" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

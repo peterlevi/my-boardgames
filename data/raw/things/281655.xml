@@ -1,0 +1,765 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="281655">
+         <thumbnail>https://cf.geekdo-images.com/SjfNTsR84Ad--u5lo6HY-A__small/img/waH7O4sQox4guuFAHmst0-H_KHQ=/fit-in/200x150/filters:strip_icc()/pic5316685.png</thumbnail>
+      <image>https://cf.geekdo-images.com/SjfNTsR84Ad--u5lo6HY-A__original/img/xMVJcFIcFMAECB2IWTh_mRG-o4w=/0x0/filters:format(png)/pic5316685.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="High Frontier 4 All" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Высокий рубеж: Для всех" />
+			    				
+				<name type="alternate" sortindex="1" value="高边疆第四版" />
+			    				
+				<name type="alternate" sortindex="1" value="하이 프론티어 4 올" />
+			
+						               													<description>This is the 4th ed of Phil Eklund's signature game High Frontier. It started with Rocket Flight (1999), a game with the vision to let "Each player start as a spacefaring company in the year 2020 trying to make a profit in trade and technology development." Now that we are at that year, High Frontier has evolved into a modular system open to enthusiasts to keep it updated ever farther into the future.
+
+The Core Game is equivalent to the previous edition's basic and advanced rules, and includes Module 0 (Politics). It also comes with the beginner's game Space Diamonds (accessible to bright children), Race for Glory (introductory, including a playthrough), and a variety of solitaire and cooperative variants. The iconic map of High Frontier is the most comprehensive map of the solar system ever published! Since it is a delta-v map, it offers a completely different view of the accessibility of the worlds that orbit Sol. The cards and map have been expanded and produced in consultation with experts in the field, and the author himself is a former rocket scientist, and we can safely say this is the most accurate yet accessible game of space exploration/exploitation ever published. Transition rules allow High Frontier to work as an independent 4th stage in the Bios:Earth trilogy (Bios: Genesis, Bios: Megafauna, and BIOS: Origins) about the evolution of life on our planet.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2020" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="115">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="20" />
+					<result value="Recommended" numvotes="65" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="22" />
+					<result value="Recommended" numvotes="69" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="74" />
+					<result value="Recommended" numvotes="30" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="26" />
+					<result value="Recommended" numvotes="63" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="27" />
+					<result value="Not Recommended" numvotes="54" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="65" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="240" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="240" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="34">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="3" />
+					<result value="12" numvotes="5" />
+					<result value="14" numvotes="5" />
+					<result value="16" numvotes="13" />
+					<result value="18" numvotes="6" />
+					<result value="21 and up" numvotes="1" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="8">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="3" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="4" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1088" value="Industry / Manufacturing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1016" value="Science Fiction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1113" value="Space Exploration" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2012" value="Auction / Bidding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2915" value="Negotiation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2081" value="Network and Route Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2007" value="Pick-up and Deliver" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2078" value="Point to Point Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2948" value="Resource to Move" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2070" value="Simulation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64949" value="Components: Map (Interplanetary or Interstellar scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="44077" value="Game: High Frontier" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="81592" value="Occupation: Astronaut" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19296" value="Space: Asteroids" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19297" value="Space: Comets" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10166" value="Space: Earth's Moon" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19298" value="Space: Earth's Solar System" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="43631" value="Space: Jupiter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10169" value="Space: Mars" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="43633" value="Space: Mercury" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="43630" value="Space: Neptune" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="63679" value="Space: Pluto" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19295" value="Space: Saturn" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="43632" value="Space: Uranus" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="43634" value="Space: Venus" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66108" value="Theme: Astronomy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66167" value="Theme: Science" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="331587" value="High Frontier 4 All: 6th Player Component Kit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="304511" value="High Frontier 4 All: Module 1 – Terawatt &amp; Futures" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="304512" value="High Frontier 4 All: Module 2 – Colonization" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="305726" value="High Frontier 4 All: Module 3 – Conflict" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="333517" value="High Frontier 4 All: Module 4 – Exodus" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="402188" value="High Frontier 4 All: Module 5 – Economy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="441381" value="High Frontier 4 All: Module 6 – Odyssey" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="374374" value="High Frontier 4 All: Promo Pack 1 – The Station Pack" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="396137" value="High Frontier 4 All: Promo Pack 2 – Achievements" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="466150" value="High Frontier 4 All: Promo Pack 3 – Crew" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="413405" value="High Frontier 4 All: Tools 1" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="441380" value="High Frontier 4 All: Tools 2" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="452057" value="High Frontier 4 All: Market Stand" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="326244" value="High Frontier 4 All: Neoprene Mat" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="329412" value="High Frontier 4 All: Spectral Factories" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="98918" value="Bios: Genesis" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="221769" value="Bios: Megafauna (Second Edition)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="235555" value="Bios: Origins (Second Edition)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="477606" value="High Frontier 4 All: The Right Stuff" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="339591" value="Interstellar" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="172737" value="High Frontier (Third Edition)" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="124147" value="High Frontier Colonization" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="68305" value="High Frontier Expansion" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="5525" value="Rocket Flight" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="174" value="Phil Eklund" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="120251" value="Justin Grey" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="52913" value="Jon Manker" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="118461" value="Dom Rougier" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="118462" value="Anna H Lindberg" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="125415" value="Josefin Strand" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28765" value="Ion Game Design" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="101" value="Sierra Madre Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="35738" value="500 Nuances de Geek" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="35928" value="Banana Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24883" value="Ediciones MasQueOca" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37681" value="Fabrika Igr" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33710" value="Fox in the Box" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4617" value="Galakta" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55324" value="HIT Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44349" value="Mosaico Jogos" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="2464" />
+			<average value="8.3358" />
+			<bayesaverage value="6.84095" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="708" bayesaverage="6.84095" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="78" bayesaverage="7.27287" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="361" bayesaverage="7.05683" />
+												</ranks>
+
+			<stddev value="1.71919" />
+			<median value="0" />
+			<owned value="6546" />
+			<trading value="69" />
+			<wanting value="245" />
+			<wishing value="2054" />
+			<numcomments value="712" />
+			<numweights value="490" />
+			<averageweight value="4.8184" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

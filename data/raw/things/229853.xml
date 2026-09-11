@@ -1,0 +1,832 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="229853">
+         <thumbnail>https://cf.geekdo-images.com/wW5xjgBJcFyLaEWZwrYuKA__small/img/MppmP7GtDAfKiB5LiAl-ZtPxOPE=/fit-in/200x150/filters:strip_icc()/pic4583626.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/wW5xjgBJcFyLaEWZwrYuKA__original/img/72kzn6t41ZxLEr3GFd8ir6hDdH4=/0x0/filters:format(jpeg)/pic4583626.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Teotihuacan: City of Gods" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Teotihuacan: Az istenek városa" />
+			    				
+				<name type="alternate" sortindex="1" value="Teotihuacan: Città degli Dei" />
+			    				
+				<name type="alternate" sortindex="1" value="Teotihuacán: Ciudad de Dioses" />
+			    				
+				<name type="alternate" sortindex="1" value="Teotihuacan: Die Stadt der Götter" />
+			    				
+				<name type="alternate" sortindex="1" value="Teotihuacan: La Cité Des Dieux" />
+			    				
+				<name type="alternate" sortindex="1" value="Teotihuacan: Miasto Bogów" />
+			    				
+				<name type="alternate" sortindex="1" value="Teotihuacan: Stad der Goden" />
+			    				
+				<name type="alternate" sortindex="1" value="Теотиуакан. Город богов" />
+			    				
+				<name type="alternate" sortindex="1" value="テオティワカン：シティオブゴッズ" />
+			    				
+				<name type="alternate" sortindex="1" value="特奧蒂瓦坎：眾神之城" />
+			    				
+				<name type="alternate" sortindex="1" value="테오티우아칸: 신들의 도시" />
+			
+						               													<description>Travel back in time to the greatest city in Mesoamerica. Witness the glory and the twilight of the powerful pre-Columbian civilization. Strategize, accrue wealth, gain the favour of the gods, and become the builder of the magnificent Pyramid of the Sun.
+
+In Teotihuacan: City of Gods, each player commands a force of worker dice, which grow in strength with every move. On your turn, you move a worker around a modular board, always choosing one of two areas of the location tile you land on: one offering you an action (and a worker upgrade), the other providing you with a powerful bonus (but without an upgrade).
+
+While managing their workforce and resources, players develop new technologies, climb the steps of the three great temples, build houses for the inhabitants of the city, and raise the legendary and breath-taking Pyramid of the Sun in the center of the city.
+
+Each game is played in three eras. As the dawn of the Aztecs comes closer, player efforts (and their ability to feed their workforce) are evaluated a total of three times. The player with the most fame is the winner.
+
+</description>
+										      	               				<yearpublished value="2018" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="418">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="11" />
+					<result value="Recommended" numvotes="145" />
+					<result value="Not Recommended" numvotes="100" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="53" />
+					<result value="Recommended" numvotes="227" />
+					<result value="Not Recommended" numvotes="52" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="156" />
+					<result value="Recommended" numvotes="165" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="198" />
+					<result value="Recommended" numvotes="105" />
+					<result value="Not Recommended" numvotes="22" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="171" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="120" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="77">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="1" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="3" />
+					<result value="12" numvotes="31" />
+					<result value="14" numvotes="32" />
+					<result value="16" numvotes="6" />
+					<result value="18" numvotes="1" />
+					<result value="21 and up" numvotes="1" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="27">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="27" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1050" value="Ancient" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1029" value="City Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2046" value="Area Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2850" value="Events" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2978" value="Grid Coverage" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3001" value="Layering" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2911" value="Ownership" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2813" value="Rondel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2823" value="Score-and-Reset Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2940" value="Square Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2939" value="Track Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2874" value="Victory Points as a Resource" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2935" value="Worker Placement with Dice Workers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62518" value="Components: 8 x 8 Grids" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77012" value="Constructions: Pyramids" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10642" value="Country: Mexico" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="60543" value="Game: Teotihuacan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="111632" value="Series: T games (Daniele Tascini)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="43639" value="Theme: Native Americans / First Peoples" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="256951" value="Brettspiel Adventskalender 2018" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="350461" value="Loot Box #1" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="264153" value="Teotihuacan: Brettspiel Adventskalender 2018 Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="315049" value="Teotihuacan: City of Gods – 5th Player Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="283302" value="Teotihuacan: City of Gods – Decoration Tiles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="279161" value="Teotihuacan: City of Gods – Man vs Meeple Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="301254" value="Teotihuacan: City of Gods – Promo Bundle" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="279160" value="Teotihuacan: City of Gods – Pyramid Tile Promo, Red Temple" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="262936" value="Teotihuacan: Dice Settlers Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="316777" value="Teotihuacan: Expansion Period" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="340392" value="Teotihuacan: Expert Challenges – Book 1" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="341949" value="Teotihuacan: Expert Challenges – Book 2" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="350462" value="Teotihuacan: Expert Challenges – Book 3" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="270364" value="Teotihuacan: Late Preclassic Period" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="386071" value="Teotihuacan: New Priests" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="293473" value="Teotihuacan: Shadow of Xitle" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="334572" value="Teotihuacan: Miasto Bogów + dwa dodatki – reDrewno Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="349236" value="Teotihuacan: Miasto Bogów + trzy dodatki – reDrewno Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="476951" value="Teotihuacan: City of Gods – Deluxe Master Set Box of Holding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="476952" value="Teotihuacan: City of Gods – Deluxe Master Set: Cardboard Resource Holder" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="309505" value="Teotihuacan: City of Gods – e-Raptor Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="316247" value="Teotihuacan: City of Gods – GeekUp Bit Set" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="393627" value="Teotihuacan: City of Gods – Meeple Source Upgraded Decorations" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="427458" value="Teotihuacan: City of Gods – Set of Double Sided Playmats" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="427460" value="Teotihuacan: City of Gods – Set of Players' Game Mats" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="365909" value="Teotihuacan: City of Gods – Tower Rex Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="284314" value="Teotihuacan: City of Gods – Upgrade Set" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="455400" value="Teotihuacan: Eurohell Design 3D Token" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="310082" value="Teotihuacan: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="282767" value="Teotihuacan: GeekUp Drawstring Bags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="464194" value="Teotihuacan: InMyBox Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="268237" value="Teotihuacan: Meeple Realty Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="382562" value="Teotihuacan: Sloyca Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="373841" value="Teotihuacan: Spike Craft Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="348654" value="Teotihuacan: The GiftForge Insert" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="381715" value="Teotihuacan: City of Gods – Deluxe Master Set" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="59986" value="Daniele Tascini" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="59181" value="Odysseas Stamoglou" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="18529" value="NSKN Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="26630" value="Board&amp;Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41518" value="Bucaneiros Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34522" value="CrowD Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6194" value="Delta Vision Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="12540" value="Game Harbor" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7251" value="Giochix.it" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="25996" value="Jumping Turtle Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30034" value="Pixie Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2726" value="Portal Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24844" value="Schwerkraft-Verlag" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39249" value="sternenschimmermeer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22609" value="テンデイズゲームズ (TendaysGames)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41423" value="TLAMA games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="22302" />
+			<average value="7.82976" />
+			<bayesaverage value="7.55952" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="113" bayesaverage="7.55952" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="86" bayesaverage="7.6062" />
+												</ranks>
+
+			<stddev value="1.31152" />
+			<median value="0" />
+			<owned value="29126" />
+			<trading value="552" />
+			<wanting value="601" />
+			<wishing value="5732" />
+			<numcomments value="3211" />
+			<numweights value="954" />
+			<averageweight value="3.783" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,0 +1,474 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="359438">
+         <thumbnail>https://cf.geekdo-images.com/loa-OQHFaTlKV2eU_WKVFw__small/img/Jsvw38z4mMfKZzKCDjiQRe7mJ9k=/fit-in/200x150/filters:strip_icc()/pic6800089.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/loa-OQHFaTlKV2eU_WKVFw__original/img/x7qsiqjs4OLfVfrcvlMDIvyCuDA=/0x0/filters:format(jpeg)/pic6800089.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Skymines" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="スカイマイン" />
+			    				
+				<name type="alternate" sortindex="1" value="天际矿脉" />
+			    				
+				<name type="alternate" sortindex="1" value="스카이마인" />
+			
+						               													<description>Fifty years ago, humanity began mining the Moon and the asteroids, and for decades that task was firmly kept in the hands of the World Government. But the turmoils of recent years have caused this enterprise to collapse. Now, adventurous companies and private investors take to the sky to revive this mining network.
+
+As investors, you try to earn the most CrypCoin over the course of seven rounds. You do this by investing mined resources in companies and by spreading their outposts. You can improve your earnings by supporting your scientists&amp;rsquo; research and by having them collect precious helium-3.
+
+The heart of Skymines is a unique card programming and hand management system that requires careful and clever planning. It provides deep player interaction by letting you invest in any of the four companies as you see fit.
+
+And as the combination of company abilities changes each game, there are endless synergies and strategies to explore.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="119">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="15" />
+					<result value="Recommended" numvotes="34" />
+					<result value="Not Recommended" numvotes="16" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="10" />
+					<result value="Recommended" numvotes="55" />
+					<result value="Not Recommended" numvotes="20" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="54" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="59" />
+					<result value="Recommended" numvotes="17" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="36" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="150" />
+						               				<minplaytime value="75" />
+						               				<maxplaytime value="150" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="12">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="1" />
+					<result value="12" numvotes="3" />
+					<result value="14" numvotes="8" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="19">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="8" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="3" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="8" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1016" value="Science Fiction" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2689" value="Action Queue" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2910" value="Investment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2948" value="Resource to Move" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2892" value="Roles with Asymmetric Information" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2005" value="Stock Holding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2829" value="Turn Order: Claim Action" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2874" value="Victory Points as a Resource" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70354" value="Digital Implementations: Yucata" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19296" value="Space: Asteroids" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="111131" value="Space: Colonization / Extraterrestrial Colonisation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10166" value="Space: Earth's Moon" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19298" value="Space: Earth's Solar System" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="21425" value="Theme: Mining" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="379389" value="Skymines: Metal coins" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="172386" value="Mombasa" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="8108" value="Viktor Kobilke" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="11767" value="Alexander Pfister" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="85375" value="Javier González Cava" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44712" value="Deep Print Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="25074" value="BoardM Factory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33626" value="Lucky Duck Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39" value="Pegasus Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29409" value="Super Meeple" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8147" value="YOKA Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="3837" />
+			<average value="7.90589" />
+			<bayesaverage value="6.95578" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="559" bayesaverage="6.95578" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="291" bayesaverage="7.14703" />
+												</ranks>
+
+			<stddev value="1.24264" />
+			<median value="0" />
+			<owned value="8227" />
+			<trading value="166" />
+			<wanting value="295" />
+			<wishing value="1964" />
+			<numcomments value="706" />
+			<numweights value="174" />
+			<averageweight value="3.8966" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

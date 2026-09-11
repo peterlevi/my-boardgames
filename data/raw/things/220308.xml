@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="220308">
+         <thumbnail>https://cf.geekdo-images.com/hGWFm3hbMlCDsfCsauOQ4g__small/img/NNG7Ijyx4evp5gcVReis9i0koas=/fit-in/200x150/filters:strip_icc()/pic5375625.png</thumbnail>
+      <image>https://cf.geekdo-images.com/hGWFm3hbMlCDsfCsauOQ4g__original/img/tjlflQtUPFiTpLpwk1NCVCS29Ic=/0x0/filters:format(png)/pic5375625.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Gaia Project" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Gaia Project: Galaxie Terra Mystica" />
+			    				
+				<name type="alternate" sortindex="1" value="Gaia projekt" />
+			    				
+				<name type="alternate" sortindex="1" value="Progetto Gaia" />
+			    				
+				<name type="alternate" sortindex="1" value="Projekt Gaja" />
+			    				
+				<name type="alternate" sortindex="1" value="Projet Gaia" />
+			    				
+				<name type="alternate" sortindex="1" value="Projeto Gaia" />
+			    				
+				<name type="alternate" sortindex="1" value="Terra Mystica: Projeto Gaia" />
+			    				
+				<name type="alternate" sortindex="1" value="Проект &quot;Гайя&quot;" />
+			    				
+				<name type="alternate" sortindex="1" value="Проєкт &quot;Гая&quot;" />
+			    				
+				<name type="alternate" sortindex="1" value="テラミスティカ：ガイアプロジェクト" />
+			    				
+				<name type="alternate" sortindex="1" value="蓋亞計畫" />
+			    				
+				<name type="alternate" sortindex="1" value="가이아 프로젝트" />
+			
+						               													<description>Expand, research, upgrade, and settle the galaxy with one of 14 factions.
+
+Gaia Project is the follow-up to the critically acclaimed Terra Mystica! 14 different factions live on 7 different kinds of planets, and each faction can only thrive on their specific type of planet. To develop and grow, a faction must terraform neighboring planets into their home environments while competing with the other factions. Special Gaia planets can be used by all factions and rare Transdimensional planets can be changed into Gaia planets!
+
+All factions can improve their skills in 6 unique areas of development which leads to advanced technology and special bonuses! To help out, each faction has its own unique special skills and abilities.
+
+A challenging solo experience is also included in Gaia Project!
+
+&amp;mdash; description from the publisher
+
+</description>
+										      	               				<yearpublished value="2017" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="838">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="67" />
+					<result value="Recommended" numvotes="352" />
+					<result value="Not Recommended" numvotes="143" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="131" />
+					<result value="Recommended" numvotes="481" />
+					<result value="Not Recommended" numvotes="68" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="437" />
+					<result value="Recommended" numvotes="227" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="356" />
+					<result value="Recommended" numvotes="248" />
+					<result value="Not Recommended" numvotes="45" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="313" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3–4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="150" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="150" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="157">
+			<results>		
+					<result value="2" numvotes="1" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="5" />
+					<result value="12" numvotes="31" />
+					<result value="14" numvotes="94" />
+					<result value="16" numvotes="24" />
+					<result value="18" numvotes="1" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="48">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="42" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="6" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1016" value="Science Fiction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1113" value="Space Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1086" value="Territory Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2026" value="Hexagon Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2011" value="Modular Board" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2081" value="Network and Route Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3100" value="Tags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2830" value="Turn Order: Pass Order" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2874" value="Victory Points as a Resource" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="26432" value="Category: Combinatorial" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66553" value="Components: Control Boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64949" value="Components: Map (Interplanetary or Interstellar scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78432" value="Digital Implementations: Google Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77349" value="Digital Implementations: Steam" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78680" value="Misc: Made by Panda" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="72487" value="Organizations: Automa Factory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="26098" value="Series: Terra Mystica" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="111131" value="Space: Colonization / Extraterrestrial Colonisation" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="396802" value="Gaia Project: The Lost Fleet" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="478924" value="Gaia Project + Lost Fleet: GGG Insert/Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="259640" value="Gaia Project: Drawstring Bags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="309467" value="Gaia Project: e-Raptor Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="309605" value="Gaia Project: e-Raptor Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="280580" value="Gaia Project: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="461967" value="Gaia Project: Folded Space Insert (Second edition)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="346169" value="Gaia Project: GGG Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="464169" value="Gaia Project: InMyBox Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="430767" value="Gaia Project: Inserty Herman Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="306397" value="Gaia Project: Laserox GaiArranger Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="457026" value="Gaia Project: Laserox Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="263804" value="Gaia Project: Overlay" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="348635" value="Gaia Project: The GiftForge Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="267170" value="Gaia Project: Tower Rex Organizer" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="120677" value="Terra Mystica" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="4300" value="Jens Drögemüller" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="4407" value="Helge Ostertag" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12484" value="Dennis Lohausen" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22380" value="Feuerland Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="57596" value="Automa Factory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30958" value="Capstone Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10768" value="Cranio Creations" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="23205" value="DiceTree Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2973" value="Edge Entertainment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="12540" value="Game Harbor" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="35960" value="Games Factory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="18852" value="Hobby World" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17179" value="IGAMES" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="35035" value="Mandala Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2726" value="Portal Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36563" value="Reflexshop" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29409" value="Super Meeple" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22609" value="テンデイズゲームズ (TendaysGames)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41423" value="TLAMA games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4932" value="White Goblin Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="538" value="Z-Man Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="31794" />
+			<average value="8.34642" />
+			<bayesaverage value="8.0827" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="13" bayesaverage="8.0827" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="9" bayesaverage="8.1203" />
+												</ranks>
+
+			<stddev value="1.41478" />
+			<median value="0" />
+			<owned value="39281" />
+			<trading value="387" />
+			<wanting value="1331" />
+			<wishing value="13061" />
+			<numcomments value="4492" />
+			<numweights value="1974" />
+			<averageweight value="4.4037" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

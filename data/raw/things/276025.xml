@@ -1,0 +1,675 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="276025">
+         <thumbnail>https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__small/img/lVlnhYyxlZb3WuKZJHLoJcFHEjs=/fit-in/200x150/filters:strip_icc()/pic4917407.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/rMNa0k05zMdKgSEp26Q3Tw__original/img/yhnCcq9UplffqjSCe08mjTFvgOM=/0x0/filters:format(jpeg)/pic4917407.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Maracaibo" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Маракайбо" />
+			    				
+				<name type="alternate" sortindex="1" value="マラカイボ" />
+			    				
+				<name type="alternate" sortindex="1" value="马拉开波" />
+			    				
+				<name type="alternate" sortindex="1" value="마라카이보" />
+			
+						               													<description>Maracaibo, a strategy game for 1-4 players by Alexander Pfister, is set in the Caribbean during the 17th century. The players try to increase their influence in three nations in four rounds with a play time of 40 minutes per player.
+
+The players sail on a round course through the Caribbean, e.g., you have city tiles where you are able to perform various&amp;nbsp;actions or deliver goods to. One special feature is an implemented quest mode over more and various tiles, which tells the player, who chase after it, a little story.
+
+As a player, you move with your ship around the course, managing it by using cards like in other games from Alexander Pfister.
+
+
+NOTE: The Spanish and Portuguese editions of Maracaibo contain La Armada mini-expansion packaged inside the base game's box.
+
+</description>
+										      	               				<yearpublished value="2019" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="430">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="39" />
+					<result value="Recommended" numvotes="195" />
+					<result value="Not Recommended" numvotes="49" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="85" />
+					<result value="Recommended" numvotes="220" />
+					<result value="Not Recommended" numvotes="18" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="213" />
+					<result value="Recommended" numvotes="103" />
+					<result value="Not Recommended" numvotes="9" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="49" />
+					<result value="Recommended" numvotes="155" />
+					<result value="Not Recommended" numvotes="84" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="173" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="120" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="64">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="3" />
+					<result value="12" numvotes="22" />
+					<result value="14" numvotes="35" />
+					<result value="16" numvotes="4" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="31">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="15" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="14" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1008" value="Nautical" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1090" value="Pirates" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2912" value="Contracts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2850" value="Events" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2947" value="Movement Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3099" value="Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2851" value="Narrative Choice / Paragraph" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2078" value="Point to Point Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2822" value="Scenario / Mission / Campaign Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2005" value="Stock Holding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2939" value="Track Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="63093" value="Cities: Maracaibo (Venezuela)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66553" value="Components: Control Boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64960" value="Components: Map (Continental / National scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65191" value="Components: Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78432" value="Digital Implementations: Google Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="63194" value="Game: Maracaibo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="57981" value="Region: Caribbean Sea" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="21622" value="Theme: Colonial" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="371943" value="Maracaibo: El Dorado" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="316190" value="Maracaibo: Flying Dutchman Promo Tile" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="349388" value="Maracaibo: Founding Spirit Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="296519" value="Maracaibo: La Armada" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="316191" value="Maracaibo: Oportunista Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="313600" value="Maracaibo: Own Monument Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="338013" value="Maracaibo: The Uprising" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="458766" value="Maracaibo + The Uprising: e-Raptor UV Print Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="297788" value="Maracaibo: Brettspiel-News Overlay Set" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="309498" value="Maracaibo: e-Raptor Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="309601" value="Maracaibo: e-Raptor Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="318181" value="Maracaibo: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="325546" value="Maracaibo: Go7 Gaming Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="464174" value="Maracaibo: InMyBox Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="288857" value="Maracaibo: Metal Coins" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="409003" value="Maracaibo: Stapido Personal Board Organizer x 4 Piece Set" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="402114" value="Maracaibo: The GiftForge Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="326648" value="Maracaibo: Tower Rex Organizer" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="11767" value="Alexander Pfister" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="61842" value="Fiore GmbH" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="97761" value="Aline Kirrmann" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33525" value="Game's Up" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="25074" value="BoardM Factory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30958" value="Capstone Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10848" value="dlp games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24883" value="Ediciones MasQueOca" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44532" value="Fishbone Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="47476" value="Geronimo Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="18852" value="Hobby World" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32591" value="MeepleBR" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29409" value="Super Meeple" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22609" value="テンデイズゲームズ (TendaysGames)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17786" value="uplay.it edizioni" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8147" value="YOKA Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="18932" />
+			<average value="7.9331" />
+			<bayesaverage value="7.62353" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="91" bayesaverage="7.62353" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="70" bayesaverage="7.68563" />
+												</ranks>
+
+			<stddev value="1.30707" />
+			<median value="0" />
+			<owned value="25128" />
+			<trading value="425" />
+			<wanting value="740" />
+			<wishing value="6626" />
+			<numcomments value="2810" />
+			<numweights value="905" />
+			<averageweight value="3.916" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

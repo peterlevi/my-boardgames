@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="303551">
+         <thumbnail>https://cf.geekdo-images.com/sR9vKUFfimiNWW7dOSkBMg__small/img/rg7Lwz8yf4l11GEPXGF7ACHsBSg=/fit-in/200x150/filters:strip_icc()/pic5264401.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/sR9vKUFfimiNWW7dOSkBMg__original/img/RNYk3JfdCaMmsTGatAqn5onZPBs=/0x0/filters:format(jpeg)/pic5264401.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Polis" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Полис: Пелопоннесская война" />
+			
+						               													<description>Polis&amp;nbsp;is a two-player civ-lite game set in the beginning of the conflict between the two major poleis of the 5th century B.C: Athens and the Delian League against Sparta and the Peloponnesian League. The winner will be the Empire with more population and prestige at the end of the game.
+
+Both players must secure their supplies and the routes to five markets to trade with them. Every turn you get goods from a territory where you have population supporting your Empire, but you should feed them.
+
+You can fight to control the territories and siege other polis or you might use your diplomacy to convince a polis to join your league. But polis are proud of their independence so you will have to create some projects to gain prestige needed for your military manoeuvres.
+
+This new edition of Polis has updated revised rules and new art that will enhance your game experience.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2020" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="18">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="18" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="12" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="120" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="6">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="3" />
+					<result value="16" numvotes="2" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="2" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1050" value="Ancient" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1019" value="Wargame" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2046" value="Area Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2857" value="Card Play Conflict Resolution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2900" value="Market" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2070" value="Simulation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2826" value="Turn Order: Stat-Based" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2874" value="Victory Points as a Resource" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="52373" value="Ancient: Greece" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="24921" value="Ancient: Sparta" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="18614" value="Cities: Athens (Greece)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64960" value="Components: Map (Continental / National scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10640" value="Country: Greece" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="58052" value="History: Peloponnesian War" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61979" value="Players: Two-Player Only Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65387" value="Region: Aegean Sea" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="69779" value="Polis: Fight for the Hegemony" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="30466" value="Fran Diaz" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="124965" value="Enrique Corominas" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33710" value="Fox in the Box" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29194" value="GaGa Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="1074" />
+			<average value="8.03908" />
+			<bayesaverage value="6.25168" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2051" bayesaverage="6.25168" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="94" bayesaverage="7.20492" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="978" bayesaverage="6.44703" />
+												</ranks>
+
+			<stddev value="1.35894" />
+			<median value="0" />
+			<owned value="2473" />
+			<trading value="68" />
+			<wanting value="107" />
+			<wishing value="942" />
+			<numcomments value="265" />
+			<numweights value="74" />
+			<averageweight value="3.8243" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

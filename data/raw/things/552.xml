@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="552">
+         <thumbnail>https://cf.geekdo-images.com/EI6jGtH3CLqLiI9pfW0pTA__small/img/gcj9ymrelp9mdUJRXtqT9Ek0LCk=/fit-in/200x150/filters:strip_icc()/pic8179997.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/EI6jGtH3CLqLiI9pfW0pTA__original/img/skAAQF86A9wjMElJOXA0EcnJmLE=/0x0/filters:format(jpeg)/pic8179997.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Bus" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Bus: Anniversary Edition" />
+			    				
+				<name type="alternate" sortindex="1" value="Bus: Complete Edition" />
+			
+						               													<description>Prior to Essen 1999, a group of students created Splotter Spellen to sell some of their own game designs.  This game is regarded as one of the highlights of that group.  The object of the game is to deliver as many people to their destinations as you can.  To accomplish this, players place route markers on the board to connect passengers to their destinations.  However, the destination types (work, bar, home) vary from turn to turn, so you can follow certain passengers as they make their way through the daily grind.
+
+Players may buy more buses (they start off with one), build onto their bus route, bring new passengers to the city (via the trains), expand the city by adding more buildings, and run their buses. There is another option, the clock. The action board has one other clever feature. On some actions, route expansion and building, the first player to choose that action actually gets to execute the action last! Which leads to some interesting games of chicken and some painful decisions.
+
+Buying more buses allows a player to carry one more passenger every time they run their buses - hence scoring, in the best case, one more point. Depending on how the city gets built, however, finding lots of passengers on the street can be tricky.
+
+Bus routes extend from either end of a Settlers-style initial placement. Extensions are appended to either end. Routes may only run parallel if there are no empty streets at one of the ends or the line ends on the crossing as another player's end. All new passengers will arrive at one of two train stations so that is one concern when route building. One must also be careful to run by a nice mix of building types. And, when building, one must always have an eye towards spoiling other players' routes by placing a mix of building types at each of their intersection so that all of their passengers just walk! Finally, when carrying passengers, one wants to be careful to set up to carry the same passenger next turn.
+
+</description>
+										      	               				<yearpublished value="1999" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="132">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="66" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="69" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="33" />
+					<result value="Recommended" numvotes="72" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="78" />
+					<result value="Recommended" numvotes="31" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="14" />
+					<result value="Recommended" numvotes="42" />
+					<result value="Not Recommended" numvotes="40" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="56" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 3–5 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="120" />
+						               				<maxplaytime value="120" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="23">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="1" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="5" />
+					<result value="12" numvotes="14" />
+					<result value="14" numvotes="2" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="14">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="13" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1011" value="Transportation" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2001" value="Action Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2689" value="Action Queue" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2081" value="Network and Route Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2007" value="Pick-up and Deliver" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2829" value="Turn Order: Claim Action" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2828" value="Turn Order: Progressive" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="26432" value="Category: Combinatorial" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="67953" value="Components: Map (City Scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="68769" value="Components: Wooden pieces &amp; boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="116404" value="Digital Implementations: Online Board Gamers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="6258" value="Theme: Time Travel" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="467545" value="Pittsburgh (fan expansion to Bus)" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="335339" value="Bus: Custom Start Player Marker" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="270" value="Jeroen Doumen" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="407" value="Joris Wiersinga" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="408" value="Herman Haverkort" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="7246" value="Tamara Jannink" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="70041" value="Daan van Paridon" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="108409" value="Thijs van Paridon" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="407" value="Joris Wiersinga" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="140" value="Splotter Spellen" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30958" value="Capstone Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="5639" />
+			<average value="7.7085" />
+			<bayesaverage value="7.05289" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="448" bayesaverage="7.05289" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="258" bayesaverage="7.20394" />
+												</ranks>
+
+			<stddev value="1.42838" />
+			<median value="0" />
+			<owned value="7834" />
+			<trading value="78" />
+			<wanting value="631" />
+			<wishing value="2611" />
+			<numcomments value="1331" />
+			<numweights value="210" />
+			<averageweight value="3.0429" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

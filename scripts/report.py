@@ -56,7 +56,7 @@ def compact(games, inline=True):
         out.append({
             "id": g["id"], "n": g["name"], "y": g["year"], "rk": g["rank"],
             "th": thumb, "w": g["weight"], "av": g["average"],
-            "gk": g["geek"],
+            "gk": g["geek"], "my": g["my_rating"],
             "tmin": g["minplaytime"], "tmax": g["maxplaytime"],
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
             "pl": g["plays"], "sal": 1 if g["point_salad"] else 0,
@@ -74,6 +74,9 @@ def compact(games, inline=True):
 RATING_COLORS = ["#a03530", "#a03530", "#b3414c", "#b94a75", "#a9518f",
                  "#8560a4", "#5b71ac", "#3778a8", "#3f8a5f", "#2d7a4d",
                  "#1d6b40"]
+
+
+EM_DASH = "\u2014"
 
 
 def esc(v):
@@ -121,18 +124,45 @@ def reading(g, n, by_base, fold, min_votes, mode):
 
 
 def bar(pct):
-    return (f'{pct:.0f}%<span><i style="width:{min(pct, 100):.0f}%"></i></span>')
+    return (f'{pct:.0f}%<span class="track">'
+            f'<i style="width:{min(pct, 100):.0f}%"></i></span>')
 
 
-def hexagon(g):
+def fmt_rating(v, decimals=1):
+    """Drop a trailing ".0" — "10" fits the hexagon where "10.0" crowds it, and
+    whole numbers are how BGG shows a user's own rating anyway."""
+    return f"{v:.0f}" if float(v).is_integer() else f"{v:.{decimals}f}"
+
+
+def hexagon(value, title, decimals=1):
+    """BGG's rating badge. Used for both the community score and the owner's
+    own rating, so the same number means the same colour in both columns. The
+    BGG / Mine headers tell the two apart — a ring or border would not, since
+    clip-path clips box-shadow away."""
+    if not value:
+        return '<span class="dot">&mdash;</span>'
+    band = max(0, min(10, int(value)))
+    return (f'<span class="hex" style="background:{RATING_COLORS[band]}" '
+            f'title="{esc(title)}">{fmt_rating(value, decimals)}</span>')
+
+
+def bgg_hex(g):
     if not g["av"]:
-        return '<span class="hex none">—</span>'
-    band = max(0, min(10, int(g["av"])))
-    title = f'Average {g["av"]:.2f}'
+        return '<span class="dot">&mdash;</span>'
+    title = f'BGG average {g["av"]:.2f}'
     if g["gk"]:
-        title += f' · Geek rating {g["gk"]:.2f}'
+        title += f' \u00b7 Geek rating {g["gk"]:.2f}'
+    # The community average keeps its decimal: 8.1 and 8.6 are different enough
+    # to matter when scanning the column.
+    band = max(0, min(10, int(g["av"])))
     return (f'<span class="hex" style="background:{RATING_COLORS[band]}" '
             f'title="{esc(title)}">{g["av"]:.1f}</span>')
+
+
+def mine_hex(g):
+    if not g["my"]:
+        return '<span class="dot">&mdash;</span>'
+    return hexagon(g["my"], f'Your rating {fmt_rating(g["my"])}')
 
 
 def verdict_html(s, mode_n):
@@ -188,26 +218,29 @@ def rows_html(data, a):
         if via:
             badges += f'<span class="tag exp" title="{esc(via)}">+EXP</span>'
         v = verdict_html(s, n)
+        weight = f'{g["w"]:.2f}' if g["w"] else EM_DASH
+        rank = g["rk"] if g["rk"] else EM_DASH
         inline = f'<span class="vinline">{v}</span>' if n else ""
         search = esc(f'{g["n"]} {g["y"] or ""}'.lower())
 
         out.append(
             f'<tr data-i="{i}" data-search="{search}"{"" if shown else " hidden"}>'
             f'<td class="thumb">{thumb}</td>'
-            f'<td class="num hide-sm">{g["rk"] if g["rk"] else chr(8212)}</td>'
-            f'<td class="score">{hexagon(g)}</td>'
+            f'<td class="num hide-sm">{rank}</td>'
+            f'<td class="score">{bgg_hex(g)}</td>'
+            f'<td class="score mine-col">{mine_hex(g)}</td>'
             f'<td><a class="game" href="https://boardgamegeek.com/boardgame/{g["id"]}"'
             f' target="_blank" rel="noopener">{esc(g["n"])}</a> '
             f'<span class="yr">{g["y"] or ""}</span>{badges}{inline}</td>'
             f'<td class="num hide-sm">{g["pl"]}</td>'
             f'<td class="num">{esc(g["t"])}</td>'
-            f'<td class="num">{f"{g["w"]:.2f}" if g["w"] else chr(8212)}</td>'
+            f'<td class="num">{weight}</td>'
             f'<td class="hide-sm"><span class="ix {g["ix"]}">{g["ix"]}</span></td>'
             f'<td class="num hide-sm">{"yes" if g["sal"] else "no"}</td>'
             f'<td class="num hide-sm j-verdict">{v}</td>'
-            f'<td class="num bar hide-sm j-best">{bar(s["bestPct"]) if s else chr(8212)}</td>'
-            f'<td class="num bar hide-sm j-appr">{bar(s["appr"]) if s else chr(8212)}</td>'
-            f'<td class="num hide-sm j-votes">{s["total"] if s else chr(8212)}</td>'
+            f'<td class="num bar hide-sm j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
+            f'<td class="num bar hide-sm j-appr">{bar(s["appr"]) if s else EM_DASH}</td>'
+            f'<td class="num hide-sm j-votes">{s["total"] if s else EM_DASH}</td>'
             f'</tr>')
     shown = sum(1 for o in out if not o.startswith(tuple()) and " hidden>" not in o)
     return "\n".join(out), shown

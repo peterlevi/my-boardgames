@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="406321">
+         <thumbnail>https://cf.geekdo-images.com/iq3ldBmMjWqhi24UPSm1TQ__small/img/AWcO-xjQBZXTiAXw_tQdYmnnRHs=/fit-in/200x150/filters:strip_icc()/pic7946428.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/iq3ldBmMjWqhi24UPSm1TQ__original/img/XF5e2WoFRIJYjp_QISqP0QA1L9g=/0x0/filters:format(jpeg)/pic7946428.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Take 5: 30th Anniversary Edition" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="¡Toma 6!: Edición 30 Aniversario" />
+			    				
+				<name type="alternate" sortindex="1" value="6 bere! 30 let" />
+			    				
+				<name type="alternate" sortindex="1" value="6 nimmt! 30 Years Anniversary Edition" />
+			    				
+				<name type="alternate" sortindex="1" value="6 nimmt!: 30 Jahre-Edition" />
+			    				
+				<name type="alternate" sortindex="1" value="6 Qui Prend: Édition Spéciale 30 ans" />
+			    				
+				<name type="alternate" sortindex="1" value="6. bierze!: Wydanie jubileuszowe" />
+			    				
+				<name type="alternate" sortindex="1" value="Take 5! Jubileum Editie" />
+			    				
+				<name type="alternate" sortindex="1" value="ニムト30周年記念版" />
+			    				
+				<name type="alternate" sortindex="1" value="牛頭王：30週年紀念版" />
+			    				
+				<name type="alternate" sortindex="1" value="誰是牛頭王 30週年版" />
+			    				
+				<name type="alternate" sortindex="1" value="젝스 님트!: 30주년 기념판" />
+			
+						               													<description>6 nimmt!: 30 Jahre-Edition is a 30th anniversary edition of 6 nimmt! that includes the standard base game that's playable by 2-10 players, as well as cards used in four variants of the base game (created by fans to commemorate the 25th anniversary of the game) and separate cards used in a new co-operative variant. Each variant must be played on its own, not combined with another. They are:
+
+&amp;bull; Even/Odd: During set-up, place a double-sided even/odd card to the left of the lowest starting card, placing it even or odd side face up to match that card. Only cards of the same type can be added to that row, so if the card is on odd, then even cards can be placed only on the other three rows. If you take the row next to this card, move this card next to the row with the lowest number at right, flipping it if needed.
+
+&amp;bull; Mountain Climbing: During set-up, place a double-sided card to the left of the bottommost starting card with the face showing the up arrow in the corner and down arrow on a row of cards. Cards placed in this row go in descending order instead of ascending. If you play 35 and the descending row ends in 40 and an ascending row ends in 28, you'll place your card in the descending row since the difference between 35 &amp; 40 is less than between 35 &amp; 20. If you take this row, slide the double-sided card up to the next row; when it reaches the top row, it then starts moving back down.
+
+&amp;bull; The Jumping Cow: During set-up, place the jumping cow card to the right of the lowest starting card; this card counts as part of this row. When someone places the sixth card in this row, they claim the number cards other than the one they played, then the cow immediately jumps to the end of the row with the lowest number at right; if this row now has six cards, they claim these cards as well!
+
+&amp;bull; Number Spinner: During set-up, each player takes a number spinner card along with ten number cards. Once during the round, they can play the number spinner along with a two-digit number card. During card placement, the digits on this player's card are reversed, e.g. 41 becomes 14, so if 14 is the lowest number, they place their card first. However, once placed, the digits are treated in their original order for all subsequent card placements.
+
+&amp;bull; Beat the Buffalo: This co-operative variant is for 1-6 players, who try to score less collectively than the buffalo. During set-up, deal ten cards face down to the buffalo board; additionally, take 0-16 random action cards depending on the player count, then lay two of them face up. Each turn, all players choose and reveal their cards, then flip the buffalo's top number card. All of the cards are placed in the rows like normal, but at any time before, during, or after this process, players can choose to use one or more action cards, replacing each with a new card immediately. Action cards let you make a row off-limits, place a card inside a row, move an already placed card, and more. (In a game with one or two players, the buffalo must score twice as many points as the players for the players to win.)
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="10" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="14">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="9" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="9" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="8" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="7" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="8">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="9">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="10">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="10+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5–6 players" />
+  <result name="recommmendedwith" value="Recommended with 3–8 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="45" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="3">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="3" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="0" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="1">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="1" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1098" value="Number" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Cooperative Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2823" value="Score-and-Reset Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2020" value="Simultaneous Action Selection" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7530" value="Animals: Cattle / Cows" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5012" value="Game: 6 nimmt!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66890" value="Misc: Lowest Score Wins" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="107343" value="Series: Amigo Anniversary Rubber-Band Games" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="315750" value="6 nimmt!: Even/Odd" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="432" value="Take 5" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="416325" value="Take 5: The Jumping Cow" inbound="true" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="7" value="Wolfgang Kramer" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11883" value="Franz Vohwinkel" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8" value="AMIGO" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9607" value="Adamigo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4304" value="Albi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9068" value="Broadway Toys LTD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33618" value="Fractal Juegos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="155" value="Gigamic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3504" value="Möbius Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9234" value="Swan Panasia Co., Ltd." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38709" value="VR Distribution" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="682" />
+			<average value="7.52834" />
+			<bayesaverage value="5.93295" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.93295" />
+												</ranks>
+
+			<stddev value="1.11859" />
+			<median value="0" />
+			<owned value="2679" />
+			<trading value="16" />
+			<wanting value="12" />
+			<wishing value="173" />
+			<numcomments value="112" />
+			<numweights value="19" />
+			<averageweight value="1.5263" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

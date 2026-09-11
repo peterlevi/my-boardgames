@@ -80,6 +80,9 @@ def add_filter_args(ap, default_players=4):
     ap.add_argument("--max-time", type=int, help="max of maxplaytime, minutes")
     ap.add_argument("--exclude-file",
                     help="file of game names to drop, one per line, # = comment")
+    ap.add_argument("--expansions", choices=["drop", "show"], default="drop",
+                    help="expansions are listed as their own rows, or not "
+                         "(default: not, matching the report)")
     return ap
 
 
@@ -89,6 +92,8 @@ def select(a):
     excluded = load_exclusions(a.exclude_file)
     rows = []
     for g in load_games():
+        if g["is_expansion"] and getattr(a, "expansions", "drop") != "show":
+            continue
         s = poll_stats(g, a.players)
         if not s or s["total"] < a.min_votes:
             continue

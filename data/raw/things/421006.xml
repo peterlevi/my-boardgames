@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="421006">
+         <thumbnail>https://cf.geekdo-images.com/EybxJlUc9rz7F7HVFLqsdw__small/img/rojFW0-h-bteedVG4aJXG1x7V0o=/fit-in/200x150/filters:strip_icc()/pic8378939.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/EybxJlUc9rz7F7HVFLqsdw__original/img/Ts4M5eOW38r2oTvJmkx0uwNodv4=/0x0/filters:format(jpeg)/pic8378939.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="5" value="The Lord of the Rings: Duel for Middle-earth" />
+			
+						                               				
+				<name type="alternate" sortindex="3" value="A Gyűrűk Ura: Párbaj Középföldéért" />
+			    				
+				<name type="alternate" sortindex="5" value="Der Herr der Ringe: Duell um Mittelerde" />
+			    				
+				<name type="alternate" sortindex="5" value="The Lord of the Rings: Μονομαχία για τη Μέση Γη" />
+			    				
+				<name type="alternate" sortindex="1" value="Pán prstenů: Duel o Středozem" />
+			    				
+				<name type="alternate" sortindex="4" value="Le Seigneur des Anneaux: Duel pour la Terre du Milieu" />
+			    				
+				<name type="alternate" sortindex="3" value="O Senhor dos Anéis: Duelo pela Terra Média" />
+			    				
+				<name type="alternate" sortindex="4" value="El Señor de los Anillos: El Duelo por la Tierra Media" />
+			    				
+				<name type="alternate" sortindex="4" value="Il Signore degli Anelli: Duel for Middle-earth" />
+			    				
+				<name type="alternate" sortindex="1" value="Władca Pierścieni: Pojedynek o Śródziemie" />
+			    				
+				<name type="alternate" sortindex="1" value="Властелинът на пръстените: Дуел за Средната земя" />
+			    				
+				<name type="alternate" sortindex="1" value="Володар Перснів: Дуель за Середзем'я" />
+			    				
+				<name type="alternate" sortindex="1" value="指輪物語：デュエル 中つ国の決戦" />
+			    				
+				<name type="alternate" sortindex="1" value="魔戒：中洲对决" />
+			    				
+				<name type="alternate" sortindex="1" value="반지의 제왕: 가운데땅에서의 대결" />
+			
+						               													<description>A dark rumour rises from Mordor. The Eye turns to Middle-earth. The hour has come. The Fellowship is reunited. The Heroes prepare for battle. Will you play as the Fellowship of the Ring to defend the free races and destroy the One Ring? Or will you play as Sauron and pursue Frodo and Sam while deploying your hordes to the gates of the enemy cities? The destiny of Middle-earth is in your hands!
+
+A game plays over 3 successive chapters that unfold similarly.
+On your turn, strengthen your Skills, hoard your treasure, stretch your presence across Middle-earth, rally Races to your cause, or advance the Quest of the Ring.
+
+				
+				
+					Turn OverviewIn each chapter players take cards from a display of face-down and face-up cards arranged at the start of a round. A player can take a card only if it's available, that is not partially covered by any other cards. Players can either play the card, paying its cost and placing it in their play area, obtaining its benefit, or discard the card and take as many coins from the reserve as the current chapter.
+
+Players can also take a Landmark tile from one of the faceup tiles, paying its cost placing it in their play area. They will be able to immediately place a Fortress pawn on the corresponding region of the central board and benefit from its other effects.
+
+				
+				
+					Victory ConditionsImmediately win the game by fulfilling one of the 3 victory conditions:
+
+				
+				
+					Quest of the Ring
+     For the Fellowship: If Frodo and Sam reach Mount Doom, they destroy the One Ring and you immediately win the game.
+     For Sauron: If the Nazg&amp;ucirc;l catch Frodo and Sam, they seize the One Ring and you immediately win the game.
+
+
+				
+				
+					Support of the RacesIf any player gathers 6 different Race symbols on their Green cards, they rally the support of the Races of Middle-earth and immediately win the game
+
+				
+				
+					Conquering Middle-earthIf a player is present in all 7 regions (with a Fortress and/or at least 1 Unit), they dominate Middle-earth and immediately win the game.
+
+If none of these three victory conditions are achieved by the end of chapter 3, the player who is present in the most regions of Middle-earth (with a Fortress and/or at least 1 Unit) wins the game. In case of tie, share the victory.
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="238">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="11" />
+					<result value="Not Recommended" numvotes="180" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="231" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="186" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2 players" />
+</poll-summary> 			               				<playingtime value="30" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="30" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="87">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="1" />
+					<result value="6" numvotes="7" />
+					<result value="8" numvotes="25" />
+					<result value="10" numvotes="39" />
+					<result value="12" numvotes="14" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="22">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="21" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1093" value="Novel-based" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3001" value="Layering" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2900" value="Market" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2011" value="Modular Board" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3099" value="Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2846" value="Once-Per-Game Abilities" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2078" value="Point to Point Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2876" value="Race" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2954" value="Relative Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2884" value="Sudden Death Ending" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3100" value="Tags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2686" value="Take That" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="4263" value="Authors: J.R.R. Tolkien" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="39540" value="Game: 7 Wonders Duel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61979" value="Players: Two-Player Only Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="109411" value="Theme: Medieval Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="113560" value="Theme: Wizards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="79018" value="Versions &amp; Editions: Versions with IP after the original release" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="450429" value="The Lord of the Rings: Duel for Middle-Earth – Allies" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="430036" value="The Lord of the Rings: Duel for Middle-earth – Grond Promo Tile" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="428620" value="The Lord of the Rings: Duel for Middle-earth – The Shire Promo Tile" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="449822" value="The Lord of the Rings: Duel for Middle-earth – Board Bento Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="442417" value="The Lord of the Rings: Duel for Middle-earth – Eurohell 3D Tokens" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="442418" value="The Lord of the Rings: Duel for Middle-earth – Eurohell Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="467818" value="The Lord of the Rings: Duel for Middle-earth – Role Token Goodie" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="437679" value="The Lord of the Rings: Duel for Middle-earth – Spielefürst Insert" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="173346" value="7 Wonders Duel" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="9714" value="Antoine Bauza" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="1727" value="Bruno Cathala" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12130" value="Vincent Dutrait" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4384" value="Repos Production" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="23043" value="ADC Blackfire Entertainment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="50696" value="CoolPlay" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8820" value="Gémklub" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6214" value="Kaissa Chess &amp; Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44043" value="Metagame Studio" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="31904" value="Ponva d.o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44209" value="Ігромаг" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="21934" />
+			<average value="8.35116" />
+			<bayesaverage value="7.99997" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="19" bayesaverage="7.99997" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="18" bayesaverage="8.01869" />
+												</ranks>
+
+			<stddev value="1.11849" />
+			<median value="0" />
+			<owned value="45007" />
+			<trading value="144" />
+			<wanting value="608" />
+			<wishing value="7380" />
+			<numcomments value="2757" />
+			<numweights value="506" />
+			<averageweight value="2.0692" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

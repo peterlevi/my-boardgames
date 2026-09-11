@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="228372">
+         <thumbnail>https://cf.geekdo-images.com/SMVRFdGdP8i45UmlHHZafw__small/img/2QkzK2566ptGVQpBS_Swy00sfjQ=/fit-in/200x150/filters:strip_icc()/pic6336687.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/SMVRFdGdP8i45UmlHHZafw__original/img/4f9AtBdOGDj5LMp8UsNwHcTnLmA=/0x0/filters:format(jpeg)/pic6336687.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Iberian Gauge" />
+			
+						                           
+						               													<description>The morning stretches over the tops of the tall, rugged mountains that dominate the Iberian Peninsula. Hammers ring, iron on iron, fighting stubbornly for every inch of new track against the unforgiving and unyielding terrain. The age of the railroad is coming to Iberia, but it won&amp;rsquo;t be easy&amp;hellip;
+
+In Iberian Gauge, you will invest in railroad companies during Stock Rounds. In the Operating Rounds, each share of stock allows the shareholder to build track for that company, in the order those shares were purchased. But building in such hostile terrain is expensive! Leasing track from other companies reduces cost and keeps your railroads expanding. Failure to expand will sink your stock values, leading to ruin!
+
+</description>
+										      	               				<yearpublished value="2017" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="55">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="31" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="31" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="16" />
+					<result value="Not Recommended" numvotes="22" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="12" />
+					<result value="Recommended" numvotes="30" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="31" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5 players" />
+  <result name="recommmendedwith" value="Recommended with 4–5 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="90" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="7">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="5" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="8">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="7" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1034" value="Trains" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2689" value="Action Queue" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2883" value="Connections" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2026" value="Hexagon Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2910" value="Investment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2081" value="Network and Route Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2005" value="Stock Holding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2830" value="Turn Order: Pass Order" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2874" value="Victory Points as a Resource" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="26432" value="Category: Combinatorial" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5614" value="Country: Portugal" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10310" value="Country: Spain" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="18979" value="Series: Cube Rails" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59682" value="Series: Iron Rail (Capstone Games)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="18796" value="Series: Winsome Essen Sets" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="430546" value="Iron Horses" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="50619" value="Amabel Holland" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="64844" value="Ian O'Toole" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30958" value="Capstone Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="65" value="Winsome Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="1964" />
+			<average value="7.25211" />
+			<bayesaverage value="6.29085" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1935" bayesaverage="6.29085" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="968" bayesaverage="6.45485" />
+												</ranks>
+
+			<stddev value="1.30085" />
+			<median value="0" />
+			<owned value="3677" />
+			<trading value="89" />
+			<wanting value="150" />
+			<wishing value="772" />
+			<numcomments value="422" />
+			<numweights value="44" />
+			<averageweight value="2.5" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

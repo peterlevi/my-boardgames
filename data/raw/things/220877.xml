@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="220877">
+         <thumbnail>https://cf.geekdo-images.com/hR5sxxqNY3gjvLwifaqRww__small/img/dPZ7zqlIVCt4xiWfISkpujiwKwk=/fit-in/200x150/filters:strip_icc()/pic3646165.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/hR5sxxqNY3gjvLwifaqRww__original/img/kaXHOjBJX-URkjTjhQUhFl7E8Ng=/0x0/filters:format(jpeg)/pic3646165.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Rajas of the Ganges" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Ganges" />
+			    				
+				<name type="alternate" sortindex="3" value="I Ragià del Gange" />
+			    				
+				<name type="alternate" sortindex="1" value="Raja's van de Ganges" />
+			    				
+				<name type="alternate" sortindex="1" value="Раджи Ганга" />
+			    				
+				<name type="alternate" sortindex="1" value="ガンジスの藩王" />
+			    				
+				<name type="alternate" sortindex="1" value="恆河王侯" />
+			    				
+				<name type="alternate" sortindex="1" value="갠지스의 라자" />
+			
+						               													<description>Through tactics and karma to wealth and fame. In 16th century India, the powerful empire of the Great Moguls rises between the Indus and the Ganges rivers. Taking on the role of rajas and ranis &amp;ndash; the country's influential nobles &amp;ndash; players in Rajas of the Ganges race against each other in support of the empire by developing their estates into wealthy and magnificent provinces. Players must use their dice wisely and carefully plot where to place their workers, while never underestimating the benefits of good karma. Success will bring them great riches and fame in their quest to become legendary rulers.
+
+Your task is to develop your province with the help of your workers, money, and dice. In the end, you must win the race with a combination of wealth and fame. The fame track and the money track run parallel to each other in opposite directions around the gameboard. The fame markers are moved clockwise, the money markers, counter-clockwise. As you build and expand, you attempt to increase both your fame and wealth so that
+your fame marker and your money marker intersect.
+
+As soon as one player manages to have his fame marker and his money marker converge or pass each other, the end of the game is triggered. The
+current stage will still be completed &amp;ndash; i.e., all players who are sitting between the player who has triggered the end of the game and the current starting player still have a chance to win and may place one more worker (if they have one) and carry out the applicable action. All plyers whose markers pass each others counts his fame points.  The player with the most fame points wins.
+
+</description>
+										      	               				<yearpublished value="2017" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="248">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="10" />
+					<result value="Not Recommended" numvotes="120" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="56" />
+					<result value="Recommended" numvotes="131" />
+					<result value="Not Recommended" numvotes="27" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="76" />
+					<result value="Recommended" numvotes="114" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="113" />
+					<result value="Recommended" numvotes="69" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="120" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="75" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="75" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="47">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="5" />
+					<result value="10" numvotes="17" />
+					<result value="12" numvotes="24" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="15">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="15" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1017" value="Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1070" value="Renaissance" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1086" value="Territory Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2883" value="Connections" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2876" value="Race" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2939" value="Track Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2935" value="Worker Placement with Dice Workers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="113664" value="Components: Coloured Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="9961" value="Country: India" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70948" value="Digital Implementations: Tabletopia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70354" value="Digital Implementations: Yucata" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="56993" value="Game: Rajas of the Ganges" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65163" value="Mechanism: Dice Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73578" value="Religious: Hinduism" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="231506" value="Brettspiel Adventskalender 2017" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="256951" value="Brettspiel Adventskalender 2018" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="257590" value="Deutscher Spielepreis 2018 Goodie Box" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="278814" value="Rajas of the Ganges: Blessings of Kedarnath" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="286383" value="Rajas of the Ganges: Goodie Box 1" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="306920" value="Rajas of the Ganges: Goodie Box 2" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="234158" value="Rajas of the Ganges: Mango Village" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="264018" value="Rajas of the Ganges: Snake Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="264233" value="Rajas of the Ganges: Tiger Expansion" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="333869" value="Rajas of the Ganges: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="295526" value="Rajas of the Ganges: Insert Here Insert" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="389092" value="Rajas of the Ganges: Big Box" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="410625" value="Rajas of the Ganges: Cards &amp; Karma" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="318553" value="Rajas of the Ganges: The Dice Charmers" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="6940" value="Inka Brand" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="6941" value="Markus Brand" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12484" value="Dennis Lohausen" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3490" value="HUCH!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46544" value="Dice Realm" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="917" value="DV Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7496" value="Egmont Polska" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37681" value="Fabrika Igr" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="12540" value="Game Harbor" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17130" value="HOT Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="52507" value="nostalgia (III)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="105" value="R&amp;R Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="16288" />
+			<average value="7.71811" />
+			<bayesaverage value="7.41207" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="170" bayesaverage="7.41207" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="131" bayesaverage="7.47504" />
+												</ranks>
+
+			<stddev value="1.13655" />
+			<median value="0" />
+			<owned value="21663" />
+			<trading value="209" />
+			<wanting value="685" />
+			<wishing value="4083" />
+			<numcomments value="2332" />
+			<numweights value="514" />
+			<averageweight value="2.9027" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

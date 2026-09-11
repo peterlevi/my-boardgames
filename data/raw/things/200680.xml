@@ -1,0 +1,799 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="200680">
+         <thumbnail>https://cf.geekdo-images.com/YCGWJMFwOI5efji2RJ2mSw__small/img/h_Rp2XYqaNElM2hrYxUSzMxRRgM=/fit-in/200x150/filters:strip_icc()/pic8093340.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/YCGWJMFwOI5efji2RJ2mSw__original/img/jC_He46LcIcKWU-kSwkYdr9Z45E=/0x0/filters:format(jpeg)/pic8093340.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Agricola (Revised Edition)" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Agrícola (Edição Revisada)" />
+			    				
+				<name type="alternate" sortindex="1" value="Agrícola (edición revisada)" />
+			    				
+				<name type="alternate" sortindex="1" value="Agricola expert-editie" />
+			    				
+				<name type="alternate" sortindex="1" value="Agricola: Advanced Level" />
+			    				
+				<name type="alternate" sortindex="1" value="Agricola: Revised Edition" />
+			    				
+				<name type="alternate" sortindex="1" value="Agricola: Überarbeitete Neuauflage" />
+			    				
+				<name type="alternate" sortindex="1" value="Agricola: wersja dla graczy" />
+			    				
+				<name type="alternate" sortindex="1" value="Агрикола. Новое издание" />
+			    				
+				<name type="alternate" sortindex="1" value="アグリコラ：リバイズドエディション" />
+			    				
+				<name type="alternate" sortindex="1" value="农场主" />
+			    				
+				<name type="alternate" sortindex="1" value="農家樂" />
+			    				
+				<name type="alternate" sortindex="1" value="아그리콜라 (개정판)" />
+			
+						               													<description>Updated and streamlined for a new generation of players, Agricola, the award-winning and highly acclaimed game by Uwe Rosenberg, features a revised rulebook and gameplay, wood pieces and components, and a card selection from the base game as well as its expansions, revised and updated for this edition.
+
+The 17th century was not an easy time to be a farmer. 
+Players begin the game with two family members and can grow their families over the course of the game. This allows them more actions but remember you have to grow more food to feed your family as it grows! Feeding your family is a special kind of challenge and players will plant grain and vegetables while supplementing their food supply with sheep, wild boar and cattle. Guide your family to wealth, health and prosperity and you will win the game.
+
+</description>
+										      	               				<yearpublished value="2016" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="388">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="18" />
+					<result value="Recommended" numvotes="172" />
+					<result value="Not Recommended" numvotes="91" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="101" />
+					<result value="Recommended" numvotes="208" />
+					<result value="Not Recommended" numvotes="27" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="167" />
+					<result value="Recommended" numvotes="141" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="185" />
+					<result value="Recommended" numvotes="104" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="5" />
+					<result value="Recommended" numvotes="22" />
+					<result value="Not Recommended" numvotes="158" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3–4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="120" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="77">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="2" />
+					<result value="8" numvotes="3" />
+					<result value="10" numvotes="15" />
+					<result value="12" numvotes="40" />
+					<result value="14" numvotes="16" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="33">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="31" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1013" value="Farming" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2043" value="Enclosure" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2847" value="Advantage Token" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2903" value="Automatic Resource Growth" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2984" value="Closed Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2914" value="Increase Value of Unchosen Resources" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2829" value="Turn Order: Claim Action" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7530" value="Animals: Cattle / Cows" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7379" value="Animals: Pigs" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7481" value="Animals: Sheep" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64990" value="Components: Meeples (Animal) / Animeeples" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="68769" value="Components: Wooden pieces &amp; boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="3865" value="Game: Agricola" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="69363" value="Occupation: Farmer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="113768" value="Players: Games with expansions that change player count" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="3866" value="Series: Harvest (Uwe Rosenberg)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5841" value="Theme: Food / Cooking" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="216651" value="Agricola Game Expansion: Blue" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="216650" value="Agricola Game Expansion: Green" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="216652" value="Agricola Game Expansion: Purple" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="216654" value="Agricola Game Expansion: Red" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="216649" value="Agricola Game Expansion: White" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="216655" value="Agricola Game Expansion: Yellow" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="292850" value="Agricola: Agricola Meets Newdale" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="234218" value="Agricola: Artifex Deck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="247720" value="Agricola: Bubulcus Deck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="263965" value="Agricola: Changelings" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="329847" value="Agricola: Consul Dirigens Deck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="271144" value="Agricola: Corbarius Deck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="109012" value="Agricola: De Lage Landen" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="311545" value="Agricola: Dulcinaria Deck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="393922" value="Agricola: Ephipparius Deck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="210625" value="Agricola: Expansion for 5 and 6 Players" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="257344" value="Agricola: Farmers of the Moor" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="39090" value="Agricola: L-Deck" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="309444" value="Agricola (Revised Edition): e-Raptor Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="276446" value="Agricola (Revised Edition): Geekmod Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="272267" value="Agricola (Revised Edition): Tower Rex Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="370440" value="Agricola 15th Anniversary Collector's Box" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="329884" value="Agricola: Art Sleeves" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="266245" value="Agricola: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="264122" value="Agricola: Kuhflecken Sticker" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="358609" value="Agricola: Meeple Source Food" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="273444" value="Agricola: Starting Player Token – Rooster" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="348611" value="Agricola: The GiftForge Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="205557" value="Agricola: Upgrade Deck – Revised edition" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="359999" value="Agricola 15" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="440147" value="Agricola: Special Edition" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="31260" value="Agricola" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="10" value="Uwe Rosenberg" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11507" value="Klemens Franz" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="234" value="Lookout Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="157" value="asmodee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46980" value="Brädspel.se" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="14813" value="Compaya.hu: Gamer Café Kft." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8832" value="Funforge" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28415" value="GoKids 玩樂小子" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="18852" value="Hobby World" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5812" value="Lacerta" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3218" value="Lautapelit.fi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10" value="Mayfair Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9234" value="Swan Panasia Co., Ltd." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17786" value="uplay.it edizioni" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="21702" />
+			<average value="7.95311" />
+			<bayesaverage value="7.64899" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="87" bayesaverage="7.64899" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="73" bayesaverage="7.68523" />
+												</ranks>
+
+			<stddev value="1.41443" />
+			<median value="0" />
+			<owned value="29747" />
+			<trading value="362" />
+			<wanting value="417" />
+			<wishing value="4185" />
+			<numcomments value="2821" />
+			<numweights value="759" />
+			<averageweight value="3.4506" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

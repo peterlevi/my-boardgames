@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="5">
+         <thumbnail>https://cf.geekdo-images.com/gIQlWhlaqjPiunZjjwz_XA__small/img/f06arYYwY_QZmOnAbQhhg-6mIUo=/fit-in/200x150/filters:strip_icc()/pic8483227.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/gIQlWhlaqjPiunZjjwz_XA__original/img/ZRnstiRspAWMorOn6UKoKx9ibwI=/0x0/filters:format(jpeg)/pic8483227.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Acquire" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Acquire: 60th Anniversary Edition" />
+			    				
+				<name type="alternate" sortindex="1" value="Cartel" />
+			    				
+				<name type="alternate" sortindex="1" value="Grand Hôtel" />
+			    				
+				<name type="alternate" sortindex="1" value="Hotel-Haie" />
+			    				
+				<name type="alternate" sortindex="1" value="Hotel-König" />
+			    				
+				<name type="alternate" sortindex="1" value="Investor" />
+			    				
+				<name type="alternate" sortindex="1" value="Trust" />
+			    				
+				<name type="alternate" sortindex="1" value="アクワイア" />
+			    				
+				<name type="alternate" sortindex="1" value="併購風雲" />
+			    				
+				<name type="alternate" sortindex="1" value="并购" />
+			    				
+				<name type="alternate" sortindex="1" value="并购风云：60周年纪念版" />
+			    				
+				<name type="alternate" sortindex="1" value="어콰이어" />
+			
+						               													<description>In Acquire, each player strategically invests in businesses, trying to retain a majority of stock.  As the businesses grow with tile placements, they also start merging, giving the majority stockholders of the acquired business sizable bonuses, which can then be used to reinvest into other chains.  All of the investors in the acquired company can then cash in their stocks for current value or trade them 2-for-1 for shares of the newer, larger business.  The game is a race to acquire the greatest wealth.
+
+History of Acquire: This Sid Sackson classic has taken many different forms over the years depending on the publisher, yet the rules and game play have stayed the same. The 1966 version of the 3M bookshelf edition included rules for a 2-player variant. The original version is part of the 3M Bookshelf Series.
+
+Many books and websites incorrectly list this as a 1962 publication as the 3M Company used previously copyrighted artwork when they released the game in 1964. 3M actually received the idea for the game of "Vacations" from Sid Sackson in May of 1963 and decided to take his idea and put it into artwork they had developed the year before for a game called "ACQUIRE." 3M's original game idea for a game called ACQUIRE must not have been very good so they decided to take Sid's idea of Vacations and put it into their concept of ACQUIRE. They released some limited test market games in 8 Midwestern U.S. cities in December of 1963 with a box that had a 1963 copyright. These games had Sid's original rules. When 3M released the mass market games in 1964, they had developed some of Sid's original ideas and changed some rules and game play to match their production desires. They released them with outer boxes that were copyrighted 1962 and inner boxes with rules that were dated 1963.
+
+December 1963 - Test Market World Map Wood Tile Edition
+1964 - Dated 1962/63 wood tiles, chipboard with plastic overlay &amp; stocks with printed backs
+1965 - Dated 1962/63 plastic tiles, chipboard with plastic overlay &amp; stocks with printed backs (last edition made with printed backs until 1999)
+1966 - Dated 1962/66 plastic tiles, chipboard with plastic overlay &amp; non-wax coated stocks (Only edition with these stocks)
+1968 - Dated 1968/66 plastic tiles, clear plastic board with paper underlay (Both 1966 inner box games have a lot of mixed parts)
+1971 - Dated 1968/71 plastic tiles, yellow hard plastic board
+1975 - 3M sells rights for game of ACQUIRE to the Avalon Hill Company
+1976 - Dated 1976 plastic tiles, yellow hard plastic board, redesigned money, no inner box (This edition was also produced in 1977, 79, 81, 82,       &amp; 86)
+1989 - Dated 1976 Gray box edition with new box artwork same contents as regular 1976 editions (This edition was also produced in 1992)
+1995 - Dated 1995 Large box cardboard edition with chipboard board and tiles, Special Powers Variant Tiles inspired by German editions
+1997 - Avalon Hill sells the rights to the game of ACQUIRE to Hasbro
+1999 - Dated 1999 Large box with large plastic board and tiles, 3D company buildings, redesigned stocks &amp; money, large info cards
+2006 - Hasbro assigns rights for the game of ACQUIRE to their subsidiary, Wizards of the Coast
+2006 - Lloyd's (private) Rules of ACQUIRE are made public, two major rule changes that help to bring the balance of the game of ACQUIRE back to the  intentions of Sid Sackson's original ideas. Lloyd Solon's Rules help players to correct poor strategy during the beginning of the game that can been seen with new and unexperienced players (running out of money soon is the main mistake that must be omitted!).  
+2008 - Dated 2008 cardboard edition with chipboard board &amp; tiles, redesigned stocks &amp; money
+2016 - Dated 2016 The current affordable mass-market edition. It looks at first sight to be similar to previous modern editions, but has been criticised for the use of inferior design choices such as hard-to-read grey-on-grey embossed slots and the unusual tile fonts. It contains modified rules and a slightly smaller playing grid. Although these changes have been criticised for not ultimately improving upon Sackson's original design, they are generally regarded as not being too damaging to it.
+2023 - Renegade Game Studio partners with Hasbro, and releases their new version, with Classic Mode or Tycoon Mode &amp;mdash; play with or without tertiary stockholder merger bonus. 
+2024 - The Renegade 60th Anniversary edition includes a set of plastic weighted poker chips, and Special Powers Variant cards.
+
+</description>
+										      	               				<yearpublished value="1963" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="390">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="233" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="4" />
+					<result value="Recommended" numvotes="50" />
+					<result value="Not Recommended" numvotes="226" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="81" />
+					<result value="Recommended" numvotes="191" />
+					<result value="Not Recommended" numvotes="50" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="260" />
+					<result value="Recommended" numvotes="98" />
+					<result value="Not Recommended" numvotes="3" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="102" />
+					<result value="Recommended" numvotes="179" />
+					<result value="Not Recommended" numvotes="36" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="40" />
+					<result value="Recommended" numvotes="137" />
+					<result value="Not Recommended" numvotes="110" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="189" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 3–6 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="90" />
+						               				<maxplaytime value="90" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="89">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="7" />
+					<result value="10" numvotes="30" />
+					<result value="12" numvotes="39" />
+					<result value="14" numvotes="12" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="91">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="77" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="13" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="1" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1086" value="Territory Building" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2883" value="Connections" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2987" value="Hidden Victory Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2910" value="Investment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2900" value="Market" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2048" value="Pattern Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2940" value="Square Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2005" value="Stock Holding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2874" value="Victory Points as a Resource" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5607" value="Components: 3-Dimensional (3D)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78494" value="Components: 9 x 12 Grids" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73596" value="Digital Implementations: TableTop Simulator Mod (TTS)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="81575" value="Digital Implementations: VASSAL" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="109134" value="Misc: BGG Hall of Fame" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="105030" value="Misc: Dice Tower Hall of Fame" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="4891" value="Series: 3M Bookshelf Series" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="324384" value="1963 World Map Conversion Kit for the Game of Acquire" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="323173" value="Wild Tile Variant Kit for the Game of ACQUIRE" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="272805" value="Acquire: Insert Here Insert" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="4" value="Sid Sackson" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="107207" value="Eric Hibbeler" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="132062" value="Scott O'Gara" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="12658" value="Scott Okumura" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="96753" value="Anita Osburn" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="18317" value="Peter Whitley" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="92" value="3M" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5" value="The Avalon Hill Game Co" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3475" value="Arclight Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4871" value="Avalon Hill" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="35928" value="Banana Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9068" value="Broadway Toys LTD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3082" value="Dujardin" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="858" value="Grow Jogos e Brinquedos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2962" value="PS-Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="28072" value="Renegade Game Studios" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5392" value="Schmidt France" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4668" value="Schmidt International" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38" value="Schmidt Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4622" value="Selecta Spel en Hobby" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7107" value="Smart Games, Inc." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42760" value="Yayoi The Dreamer" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="22389" />
+			<average value="7.35644" />
+			<bayesaverage value="7.12791" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="367" bayesaverage="7.12791" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="289" bayesaverage="7.14762" />
+												</ranks>
+
+			<stddev value="1.33697" />
+			<median value="0" />
+			<owned value="30623" />
+			<trading value="939" />
+			<wanting value="584" />
+			<wishing value="3758" />
+			<numcomments value="6704" />
+			<numweights value="1711" />
+			<averageweight value="2.4868" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

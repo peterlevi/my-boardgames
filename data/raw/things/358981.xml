@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="358981">
+         <thumbnail>https://cf.geekdo-images.com/nieWal_YYafCZatp6xErag__small/img/gBaj0nkMAheKQpVsJXv6uF6d9UY=/fit-in/200x150/filters:strip_icc()/pic7844545.png</thumbnail>
+      <image>https://cf.geekdo-images.com/nieWal_YYafCZatp6xErag__original/img/My98bDu_w4bfmjdMlk76zuoxP1w=/0x0/filters:format(png)/pic7844545.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Air, Land, &amp; Sea: Spies, Lies, &amp; Supplies" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Animali in Guerra: Spie, Bugie e Fattorie" />
+			    				
+				<name type="alternate" sortindex="1" value="Bestioles En Guerre: Bobards, Pétards &amp; Mouchards" />
+			    				
+				<name type="alternate" sortindex="1" value="Critters at War: Flies, Lies &amp; Supplies" />
+			    				
+				<name type="alternate" sortindex="1" value="Zwierzęcy front: Spiski, piski i przyciski" />
+			    				
+				<name type="alternate" sortindex="1" value="Звірі на війні: Невидимі фронти" />
+			
+						               													<description>Standalone -- Just play with the 3 new theaters provided: Intelligence, Diplomacy, Economics
+
+Mix w/ Base Game -- Play with any combination of 3 theaters from either box: ex. Intelligence, Air, Land
+
+Epic Mode -- Play with any combination of 5 theaters from either box: ex. Intelligence, Diplomacy, Economics, Land, Sea
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="2" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="22">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="19" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="2+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2 players" />
+</poll-summary> 			               				<playingtime value="30" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="30" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="7">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="6" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="6">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="4" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1049" value="World War II" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2857" value="Card Play Conflict Resolution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="103962" value="Card Games: Lane Battler" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61979" value="Players: Two-Player Only Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="72016" value="Players: Wargames with Rules Supporting Only Two Players" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="115722" value="Series:  Air, Land, &amp; Sea" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65154" value="Theme: Animal Battles" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="377006" value="Air, Land, &amp; Sea: Spies, Lies, &amp; Supplies – Economics, Diplomacy and Intelligence Foil Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="446937" value="Critters at War: Flies, Lies &amp; Supplies – Economics, Diplomacy and Intelligence Foil Cards" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="247367" value="Air, Land, &amp; Sea" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="478092" value="Air, Land, &amp; Sea: Hearts, Minds, &amp; Enemy Lines" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecompilation" id="478329" value="Animali in Guerra: Collector's Box" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="73364" value="Jon Perry" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="110420" value="Valerio Buonfantino" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="174258" value="Jose Angel Trancón Fernández" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="106544" value="Derek Laufman" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="38179" value="Damien Mammoliti" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17812" value="Arcane Wonders" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48438" value="Games7Days" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33626" value="Lucky Duck Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44181" value="Studio Supernova" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="1733" />
+			<average value="7.71707" />
+			<bayesaverage value="6.42048" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1544" bayesaverage="6.42048" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="803" bayesaverage="6.58006" />
+												</ranks>
+
+			<stddev value="1.18476" />
+			<median value="0" />
+			<owned value="5652" />
+			<trading value="78" />
+			<wanting value="104" />
+			<wishing value="962" />
+			<numcomments value="427" />
+			<numweights value="37" />
+			<averageweight value="1.7838" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

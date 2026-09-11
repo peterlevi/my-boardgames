@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="66589">
+         <thumbnail>https://cf.geekdo-images.com/rdZb15WqByPZzdTKEvNz0Q__small/img/H49jq0-D4ceSoqO2c3ZGiNfkOH8=/fit-in/200x150/filters:strip_icc()/pic3246725.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/rdZb15WqByPZzdTKEvNz0Q__original/img/Bfuphp_LyNR24k8Y4wLXjeUDdNs=/0x0/filters:format(jpeg)/pic3246725.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Navegador" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Casa da India" />
+			    				
+				<name type="alternate" sortindex="1" value="ナヴェガドール" />
+			
+						               													<description>This game is inspired by the Portuguese Age of Discoveries in the 15th-16th century. Players take actions such as contracting workers, acquiring ships and buildings, sailing the seas, establishing colonies in discovered lands, trading goods on the market, and getting privileges.
+
+Each player starts with only two ships and three workers and tries to expand his wealth.
+
+There are several lands that, once sailed to, allow players to found colonies. Colonies exist in different places where sugar, gold and spices are available and can be sold to the market to make some money. Money is used to build ships, erect buildings such as factories, shipyards and churches, and to get workers. Workers are necessary to found colonies or to acquire buildings and privileges, which exist in five categories and therefore encourage players to follow different strategies competing with each other.
+
+At the end of the game the player who is most successful in combining their privileges with their achievements (colonies, factories, discoveries, shipyards, and churches) is the winner.
+
+</description>
+										      	               				<yearpublished value="2010" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="229">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="95" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="16" />
+					<result value="Recommended" numvotes="91" />
+					<result value="Not Recommended" numvotes="57" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="42" />
+					<result value="Recommended" numvotes="108" />
+					<result value="Not Recommended" numvotes="19" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="142" />
+					<result value="Recommended" numvotes="34" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="39" />
+					<result value="Recommended" numvotes="107" />
+					<result value="Not Recommended" numvotes="18" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="81" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 2–5 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="90" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="44">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="5" />
+					<result value="12" numvotes="33" />
+					<result value="14" numvotes="5" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="52">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="34" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="18" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1020" value="Exploration" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1008" value="Nautical" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1070" value="Renaissance" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2847" value="Advantage Token" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2046" value="Area Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2900" value="Market" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2813" value="Rondel" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64952" value="Components: Map (Global Scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="68769" value="Components: Wooden pieces &amp; boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5614" value="Country: Portugal" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70354" value="Digital Implementations: Yucata" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="47326" value="Game: Navegador" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5549" value="History: Age of Discovery" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62881" value="Region: The World" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="84" value="Series: Rondel (Mac Gerdts)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="21622" value="Theme: Colonial" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="120105" value="Navegador: Pirates &amp; Diplomats" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="209573" value="Navegador: Privilege Cards" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="248910" value="Navegador: Player Pieces in Additional Colors" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="6045" value="Mac Gerdts" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="31545" value="Marina Fahrenbach" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="6045" value="Mac Gerdts" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8401" value="PD-Verlag" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10768" value="Cranio Creations" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24883" value="Ediciones MasQueOca" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2862" value="The Game Master BV" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9881" value="New Games Order, LLC" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3" value="Rio Grande Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2861" value="Ystari Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="9713" />
+			<average value="7.52644" />
+			<bayesaverage value="7.11815" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="377" bayesaverage="7.11815" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="250" bayesaverage="7.21701" />
+												</ranks>
+
+			<stddev value="1.17695" />
+			<median value="0" />
+			<owned value="9543" />
+			<trading value="191" />
+			<wanting value="554" />
+			<wishing value="2185" />
+			<numcomments value="1953" />
+			<numweights value="601" />
+			<averageweight value="3.0799" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

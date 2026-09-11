@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="453740">
+         <thumbnail>https://cf.geekdo-images.com/AXJ3ur6OZecgmPSACVm2Lw__small/img/c0Y6cYn2rNN4oxcd3InUsOCxd3k=/fit-in/200x150/filters:strip_icc()/pic9085223.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/AXJ3ur6OZecgmPSACVm2Lw__original/img/Eu753bTK_xgrPZUkMsL76m0e8nM=/0x0/filters:format(jpeg)/pic9085223.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Container" />
+			
+						                           
+						               													<description>Every decision you make in Container shapes the market. During play, you build factories, produce containers, set prices, negotiate with your rivals, sail across the sea to trade, and (obviously) buy low, and sell high. At least that's the goal &amp;mdash; but can you make it happen?
+
+The rules for Container are simple; the real challenge is understanding and timing the market. Players build machines, warehouses, and containers, then sail your containers to the island and auction them off.  Be careful with your money &amp;mdash; in the closed economy, money's tight and your opponents are cutthroat!
+
+At the beginning of the game, container value cards are secretly dealt to all players. Because these values aren&amp;rsquo;t shown, you&amp;rsquo;ll have to suss out what your opponents are going for throughout the game! But at final scoring, these come into play.  The player with the most money wins.
+
+</description>
+										      	               				<yearpublished value="2026" />
+						               				<minplayers value="3" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="61">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="33" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="39" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="13" />
+					<result value="Not Recommended" numvotes="31" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="8" />
+					<result value="Recommended" numvotes="35" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="45" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="25" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 5 players" />
+  <result name="recommmendedwith" value="Recommended with 4–5 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="90" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="5">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="1" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="3" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="2" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1088" value="Industry / Manufacturing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1011" value="Transportation" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2012" value="Auction / Bidding" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2928" value="Closed Economy Auction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2013" value="Commodity Speculation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2904" value="Loans" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2007" value="Pick-up and Deliver" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="115036" value="Game: Container" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="468181" value="More Containers" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="474848" value="Container: Playmat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="26990" value="Container" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="229892" value="Container: 10th Anniversary Jumbo Edition!" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="57" value="Franz-Benno Delonge" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="8061" value="Thomas Ewert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="11028" value="Kevin Nesbitt" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="106136" value="Adam Allsuch Boardman" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="53065" value="Allplay" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="1596" />
+			<average value="7.9039" />
+			<bayesaverage value="6.44313" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1479" bayesaverage="6.44313" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="749" bayesaverage="6.63533" />
+												</ranks>
+
+			<stddev value="1.3727" />
+			<median value="0" />
+			<owned value="5459" />
+			<trading value="39" />
+			<wanting value="216" />
+			<wishing value="1807" />
+			<numcomments value="437" />
+			<numweights value="58" />
+			<averageweight value="2.8621" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

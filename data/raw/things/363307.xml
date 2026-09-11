@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="363307">
+         <thumbnail>https://cf.geekdo-images.com/71I0Ku92KgjaW_ZokJidCA__small/img/3BpSIoMWf4ig9_S-CTMpoo3KdfU=/fit-in/200x150/filters:strip_icc()/pic6872745.png</thumbnail>
+      <image>https://cf.geekdo-images.com/71I0Ku92KgjaW_ZokJidCA__original/img/idwvytJgNpT0IXRTVUUXw8AWhTE=/0x0/filters:format(png)/pic6872745.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Evergreen" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Evergreen: зелена планета" />
+			    				
+				<name type="alternate" sortindex="1" value="Зеленый мир" />
+			    				
+				<name type="alternate" sortindex="1" value="에버그린" />
+			
+						               													<description>In Evergreen, your goal is to build a lush ecosystem by planting seeds, growing trees, and placing other natural elements on your planet, trying to make it the greenest and most fertile of all.
+
+You choose biome cards from a common pool to determine which area of your planet you'll develop in a round. The cards not chosen make those regions more fertile, and thus more valuable. To create a huge forest, you want to grow trees, plant bushes, and place lakes, while using the power of nature to gain extra actions. Ideally you can concentrate your trees in the most fertile areas, but without them overshadowing one another as you also want them to collect as much light as possible.
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="100">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="10" />
+					<result value="Recommended" numvotes="48" />
+					<result value="Not Recommended" numvotes="11" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="58" />
+					<result value="Recommended" numvotes="29" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="28" />
+					<result value="Recommended" numvotes="40" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="12" />
+					<result value="Recommended" numvotes="44" />
+					<result value="Not Recommended" numvotes="11" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="39" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="45" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="45" />
+						               				<minage value="8" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="27">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="1" />
+					<result value="8" numvotes="11" />
+					<result value="10" numvotes="14" />
+					<result value="12" numvotes="1" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="12">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="12" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1084" value="Environmental" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1028" value="Puzzle" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2957" value="Bias" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2978" value="Grid Coverage" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78432" value="Digital Implementations: Google Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77349" value="Digital Implementations: Steam" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="48871" value="Theme: Nature" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="57181" value="Theme: Trees and Forests" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="448442" value="Evergreen: Cherry Blossoms and Bamboo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="372323" value="Evergreen: Essen 2022 Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="429028" value="Evergreen: Giant Trees and Mushrooms" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="400944" value="Evergreen: Pines and Cacti" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="405291" value="Evergreen: Custom Card Sleeves" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="91211" value="Hjalmar Hach" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="145655" value="Wenyi Geng" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="26623" value="Horrible Guild" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48438" value="Games7Days" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4785" value="Ghenos Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="155" value="Gigamic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="38505" value="HeidelBÄR Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55324" value="HIT Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8923" value="IELLO" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34801" value="Lavka Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="4519" />
+			<average value="7.44904" />
+			<bayesaverage value="6.74819" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="843" bayesaverage="6.74819" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="182" bayesaverage="6.90227" />
+												</ranks>
+
+			<stddev value="1.13931" />
+			<median value="0" />
+			<owned value="7392" />
+			<trading value="66" />
+			<wanting value="266" />
+			<wishing value="2742" />
+			<numcomments value="754" />
+			<numweights value="127" />
+			<averageweight value="2.1339" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

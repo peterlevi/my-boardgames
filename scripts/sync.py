@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+"""Resync everything from BGG and rebuild, in one command.
+
+    python3 scripts/sync.py                  # the regular resync
+    python3 scripts/sync.py --full           # refetch every game's details too
+    python3 scripts/sync.py --no-fetch       # rebuild from the cache, no network
+    python3 scripts/sync.py --no-report      # refresh the data only (used by CI)
+
+Runs the pipeline end to end:
+
+    fetch.py    collection + any new games     (network)
+    thumbs.py   thumbnails for any new games   (network, image CDN)
+    build.py    data/games.json                (offline)
+    report.py   reports/collection.html        (offline)
+
+A routine resync is cheap: two collection requests plus one request per twenty
+*new* games, so an unchanged collection costs three requests in total. Run it
+whenever you have logged plays, changed ratings, or bought something.
+"""
+import subprocess
+import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+
+
+def run(script, *args):
+    print(f"\n--- {script} {' '.join(args)}".ljust(72, "-"))
+    r = subprocess.run([sys.executable, str(HERE / script), *args])
+    if r.returncode:
+        raise SystemExit(f"{script} failed ({r.returncode})")
+
+
+def main():
+    argv = sys.argv[1:]
+    full = "--full" in argv
+    if "--no-fetch" not in argv:
+        run("fetch.py", *(["--full"] if full else []))
+        run("thumbs.py", *(["--force"] if full else []))
+    run("build.py")
+    if "--no-report" in argv:
+        print("\nData refreshed. Commit data/ and push to republish.")
+        return
+    run("report.py", "-o", "reports/collection.html")
+    print("\nDone. Open reports/collection.html, or commit and push to "
+          "republish the hosted copy.")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="229220">
+         <thumbnail>https://cf.geekdo-images.com/bpwAMn7t9LnBQKFJw6VNPg__small/img/S-tPq43ITn88ppHjIbi8eaIbOX8=/fit-in/200x150/filters:strip_icc()/pic3882016.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/bpwAMn7t9LnBQKFJw6VNPg__original/img/6tMXw9izC_uv_AJLOLztsqNPW3o=/0x0/filters:format(jpeg)/pic3882016.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Santa Maria" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Санта-Мария" />
+			    				
+				<name type="alternate" sortindex="1" value="聖瑪利亞 SANTA MARIA" />
+			    				
+				<name type="alternate" sortindex="1" value="산타 마리아" />
+			
+						               													<description>Santa Maria is a streamlined, medium complexity Eurogame in which each player establishes and develops a colony. The game features elements of dice drafting and strategic engine building. The game is low on luck and has no direct destructive player conflict; all components are language independent.
+
+In the game, you expand your colony by placing polyominoes with buildings on your colony board. Dice (representing migrant workers) are used to activate buildings; each die activates a complete row or column of buildings in your colony. The buildings are activated in order (left to right / top to bottom), then the die is placed on the last activated building to block this space. It is therefore crucial where you put new buildings in your colony, and in which order you use the dice.
+
+As the game progresses, you produce resources, form shipping routes, send out conquistadors, and improve your religious power to recruit monks. When you recruit a monk, you must decide if it becomes a scholar (providing a permanent special ability), a missionary (for an immediate bonus) or a bishop (for possible end game points). The player who has accumulated the most happiness after three rounds wins. The available specialists, end game bonuses and buildings vary from game to game, which makes for near endless replayability.
+
+</description>
+										      	               				<yearpublished value="2017" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="182">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="15" />
+					<result value="Recommended" numvotes="60" />
+					<result value="Not Recommended" numvotes="26" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="43" />
+					<result value="Recommended" numvotes="88" />
+					<result value="Not Recommended" numvotes="8" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="80" />
+					<result value="Recommended" numvotes="50" />
+					<result value="Not Recommended" numvotes="5" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="24" />
+					<result value="Recommended" numvotes="79" />
+					<result value="Not Recommended" numvotes="29" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="58" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="90" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="90" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="27">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="5" />
+					<result value="12" numvotes="20" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="24">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="24" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1013" value="Farming" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2081" value="Network and Route Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="113664" value="Components: Coloured Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="24571" value="Components: Polyominoes" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64368" value="Game: Santa Maria" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65163" value="Mechanism: Dice Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="21622" value="Theme: Colonial" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="251217" value="Santa Maria: American Kingdoms" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="262750" value="Santa Maria: Exploration Deck" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="293240" value="Super Power" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="363519" value="Santa Maria: GeekUp Bag Set" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="422674" value="Saltfjord" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="4063" value="Kristian Amundsen Østby" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="9637" value="Eilif Svensson" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="76491" value="Gjermund Bohne" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="27674" value="Aporta Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36401" value="Arrakis Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37575" value="Dal Tenda" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5350" value="Granna" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="25996" value="Jumping Turtle Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34801" value="Lavka Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32581" value="PaperGames (III)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39" value="Pegasus Spiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36731" value="Sharp Point Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37459" value="Summon Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="7580" />
+			<average value="7.45407" />
+			<bayesaverage value="6.96329" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="546" bayesaverage="6.96329" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="350" bayesaverage="7.07244" />
+												</ranks>
+
+			<stddev value="1.18885" />
+			<median value="0" />
+			<owned value="9830" />
+			<trading value="317" />
+			<wanting value="294" />
+			<wishing value="1535" />
+			<numcomments value="1302" />
+			<numweights value="291" />
+			<averageweight value="3.0344" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

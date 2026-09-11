@@ -1,0 +1,396 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="388367">
+         <thumbnail>https://cf.geekdo-images.com/n3oc3G4fIsrGwqD_i0fjTA__small/img/sO-dblU1r9xEcyhY4RGFD76Drqs=/fit-in/200x150/filters:strip_icc()/pic8790819.png</thumbnail>
+      <image>https://cf.geekdo-images.com/n3oc3G4fIsrGwqD_i0fjTA__original/img/8iZHWeIU1WdYCpLjWSUe5lBGU14=/0x0/filters:format(png)/pic8790819.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Innovation Ultimate" />
+			
+						                           
+						               													<description>Innovation Ultimate is a box set containing Innovation and all five of its expansions, which includes a brand new expansion titled The Unseen.
+
+Many, many updates have been made to this edition. First, Age 11 has been added, representing the recent past and potential near future at the time of release. Language and mechanics have been streamlined, and in particular, the expansions have all been heavily reworked to be more accessible and easy to include while playing.
+
+</description>
+										      	               				<yearpublished value="2025" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="5" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="42">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="29" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="33" />
+					<result value="Recommended" numvotes="5" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="14" />
+					<result value="Recommended" numvotes="23" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="17" />
+					<result value="Not Recommended" numvotes="10" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="6" />
+					<result value="Not Recommended" numvotes="21" />
+				</results>					
+			
+		<results numplayers="5+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="2" />
+					<result value="Not Recommended" numvotes="27" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="60" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="7">
+			<results>		
+					<result value="2" numvotes="1" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="0" />
+					<result value="12" numvotes="2" />
+					<result value="14" numvotes="3" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="3">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="3" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1002" value="Card Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1015" value="Civilization" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2843" value="Follow" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3001" value="Layering" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2981" value="Melding and Splaying" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3100" value="Tags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2686" value="Take That" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2849" value="Tech Trees / Tech Tracks" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2079" value="Variable Phase Order" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="22783" value="Admin: Better Description Needed!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65191" value="Components: Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="76292" value="Crowdfunding: BackerKit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70354" value="Digital Implementations: Yucata" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="17657" value="Game: Innovation" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="62849" value="Versions &amp; Editions: Big Box Versions of Individual Games" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="63888" value="Innovation" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="185796" value="Innovation: Artifacts of History" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="150669" value="Innovation: Cities of Destiny" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="92898" value="Innovation: Echoes of the Past" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="122323" value="Innovation: Figures in the Sand" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="6001" value="Carl Chudyk" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="73851" value="Alanna Cervenak" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="49198" value="Sarah Farooqi" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="154275" value="Robert Simmons" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5407" value="Asmadi Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54051" value="4GAMES" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="27311" value="Grail Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24844" value="Schwerkraft-Verlag" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="1438" />
+			<average value="8.46035" />
+			<bayesaverage value="6.59078" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1130" bayesaverage="6.59078" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="516" bayesaverage="6.85077" />
+												</ranks>
+
+			<stddev value="1.44556" />
+			<median value="0" />
+			<owned value="3865" />
+			<trading value="34" />
+			<wanting value="191" />
+			<wishing value="1484" />
+			<numcomments value="336" />
+			<numweights value="42" />
+			<averageweight value="3.1429" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

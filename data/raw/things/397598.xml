@@ -1,0 +1,720 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="397598">
+         <thumbnail>https://cf.geekdo-images.com/UVUkjMV_Q2paVUIUP30Vvw__small/img/H6qmxJrRFjtOAPZOfDoZ480-46I=/fit-in/200x150/filters:strip_icc()/pic7664424.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/UVUkjMV_Q2paVUIUP30Vvw__original/img/BoUtCkd1NRO0bR1R5EwL51xIuXA=/0x0/filters:format(jpeg)/pic7664424.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Dune: Imperium – Uprising" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Diuna: Imperium – Powstanie" />
+			    				
+				<name type="alternate" sortindex="1" value="Duna: Impérium – Povstání" />
+			    				
+				<name type="alternate" sortindex="1" value="Duna: Imperium – Uprising" />
+			    				
+				<name type="alternate" sortindex="1" value="Dune: Imperiul – Revolta" />
+			    				
+				<name type="alternate" sortindex="1" value="Dűne: Impérium – Felkelés" />
+			    				
+				<name type="alternate" sortindex="1" value="Dune: Imperium – Insurrección" />
+			    				
+				<name type="alternate" sortindex="1" value="Dune: Imperium – Insurrection" />
+			    				
+				<name type="alternate" sortindex="1" value="Dune: Imperium – Insurrezione" />
+			    				
+				<name type="alternate" sortindex="1" value="Дюна: Империя – Восстание" />
+			    				
+				<name type="alternate" sortindex="1" value="Дюна: Імперіум – Піднесення" />
+			    				
+				<name type="alternate" sortindex="1" value="デューン 砂の惑星：インペリウム 反乱" />
+			    				
+				<name type="alternate" sortindex="1" value="沙丘：帝国 - 起义" />
+			    				
+				<name type="alternate" sortindex="1" value="듄 임페리움: 봉기" />
+			
+						               													<description>In Dune: Imperium Uprising, you want to continue to balance military might with political intrigue, wielding new tools in pursuit of victory. Spies will shore up your plans, vital contracts will expand your resources, or you can learn the ways of the Fremen and ride mighty sandworms into battle!
+
+Dune: Imperium Uprising is a standalone spinoff to Dune: Imperium that expands on that game's blend of deck-building and worker placement, while introducing a new six-player mode that pits two teams against one other in the biggest struggle yet.
+
+The Dune: Imperium expansions Rise of Ix and Immortality work with Uprising, as do almost all of the cards from the base game, and elements of Uprising can be used with Dune: Imperium.
+
+The choices are yours. The Imperium awaits!
+
+</description>
+										      	               				<yearpublished value="2023" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="6" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="523">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="22" />
+					<result value="Recommended" numvotes="164" />
+					<result value="Not Recommended" numvotes="123" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="186" />
+					<result value="Not Recommended" numvotes="130" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="171" />
+					<result value="Recommended" numvotes="220" />
+					<result value="Not Recommended" numvotes="21" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="348" />
+					<result value="Recommended" numvotes="93" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="2" />
+					<result value="Recommended" numvotes="15" />
+					<result value="Not Recommended" numvotes="257" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="63" />
+					<result value="Recommended" numvotes="150" />
+					<result value="Not Recommended" numvotes="58" />
+				</results>					
+			
+		<results numplayers="6+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="197" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4, 6 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="120" />
+						               				<minage value="13" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="42">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="6" />
+					<result value="12" numvotes="12" />
+					<result value="14" numvotes="19" />
+					<result value="16" numvotes="4" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="18">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="16" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1064" value="Movies / TV / Radio theme" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1093" value="Novel-based" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1016" value="Science Fiction" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2903" value="Automatic Resource Growth" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2857" value="Card Play Conflict Resolution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2912" value="Contracts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2901" value="Delayed Purchase" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2864" value="Force Commitment" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2914" value="Increase Value of Unchosen Resources" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3099" value="Multi-Use Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2019" value="Team-Based Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2828" value="Turn Order: Progressive" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2015" value="Variable Player Powers" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5838" value="Books: Dune" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78432" value="Digital Implementations: Google Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="79009" value="Game: Dune: Imperium" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="426129" value="Dune: Imperium – Bloodlines" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="343598" value="Dune: Imperium – Boundless Ambition Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="472822" value="Dune: Imperium – Conspiracy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="345692" value="Dune: Imperium – Duncan, Loyal Blade Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="367466" value="Dune: Imperium – Immortality" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="326431" value="Dune: Imperium – Jessica of Arrakis Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="374597" value="Dune: Imperium – Piter, Genius Advisor Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="441634" value="Dune: Imperium – Pivotal Gambit Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="342031" value="Dune: Imperium – Rise of Ix" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="434489" value="Dune: Imperium – Ruthless Leadership Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="392622" value="Dune: Imperium – Thumper Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="404444" value="Dune: Imperium – Uprising: Arrakis Revolt Promo Card" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="421984" value="Dune: Imperium – Uprising: The Beast's Spoils Promo Card" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="453495" value="Diuna: Imperium – Powstanie: reDrewno Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="453794" value="Dune: Imperium - Uprising: PlaySystem Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="447981" value="Dune: Imperium – Deluxygames Upgrade Kit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="444538" value="Dune: Imperium – Tokens Garden Metal Coins" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="454930" value="Dune: Imperium – Uprising &amp; Bloodlines: PlaySystem Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="447969" value="Dune: Imperium – Uprising: Board Bento Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="428958" value="Dune: Imperium – Uprising: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="414753" value="Dune: Imperium – Uprising: Levity Games Meeple Sticker Upgrade Kit" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameintegration" id="316554" value="Dune: Imperium" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="92370" value="Paul Dennen" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="119957" value="Clay Brooks" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="115889" value="Derek Herring" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="119958" value="Kenan Jackson" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="155730" value="Brett Nienburg" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="73773" value="Raul Ramos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="31001" value="Nate Storm" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="44135" value="Dan Taylor (I)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="59074" value="Dan Taylor (II)" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33706" value="Dire Wolf" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3475" value="Arclight Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9068" value="Broadway Toys LTD" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="58739" value="Geekach LLC" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34801" value="Lavka Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33626" value="Lucky Duck Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="36563" value="Reflexshop" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44241" value="Regatul Jocurilor" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21053" value="Rexhry" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55404" value="Tabletop KZ" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="20130" />
+			<average value="8.69812" />
+			<bayesaverage value="8.26057" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5" bayesaverage="8.26057" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="4" bayesaverage="8.31597" />
+												</ranks>
+
+			<stddev value="1.32953" />
+			<median value="0" />
+			<owned value="30722" />
+			<trading value="114" />
+			<wanting value="927" />
+			<wishing value="8324" />
+			<numcomments value="2559" />
+			<numweights value="622" />
+			<averageweight value="3.5273" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

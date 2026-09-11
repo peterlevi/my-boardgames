@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="351913">
+         <thumbnail>https://cf.geekdo-images.com/DvvSoTrB3-UMEgz2rBraHg__small/img/TnJONz9KNXPJBQ42sorXuoUTlew=/fit-in/200x150/filters:strip_icc()/pic7533289.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/DvvSoTrB3-UMEgz2rBraHg__original/img/a70U9DGHGxiyo8WWMOb9Zd4hrxc=/0x0/filters:format(jpeg)/pic7533289.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Tiletum" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Тилетум" />
+			    				
+				<name type="alternate" sortindex="1" value="นคราแห่งวาณิช" />
+			    				
+				<name type="alternate" sortindex="1" value="ティルトゥム" />
+			    				
+				<name type="alternate" sortindex="1" value="蒂尔特之辉" />
+			    				
+				<name type="alternate" sortindex="1" value="틸레툼" />
+			
+						               													<description>In Tiletum, you and fellow players take on the roles of rich merchants traveling throughout Europe, from Flanders to Venice, during the Golden Age of the Renaissance.
+
+You will travel to various cities to acquire trade contracts for wool and iron, as well as a collection of their coats of arms. You must collect the required resources to fulfill contracts, invest in the construction of monumental cathedrals, gain the favor of noble families, and participate in important fairs where your main business occurs. You will also use the services of notable people who will be welcomed into your houses. You will thus gain prestige that will make you the most famous merchant of the Renaissance.
+
+Tiletum is a dice management game in which dice have a dual function: gaining resources and performing actions. A certain number of dice will be rolled each round. On your turn, choose a die to gain the number of corresponding resources equal to the value of the die, then perform the associated action. The power of the action is inversely proportional to the value of the die, so the fewer resources you gain, the more powerful the actions you take and vice versa.
+
+</description>
+										      	               				<yearpublished value="2022" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="273">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="16" />
+					<result value="Recommended" numvotes="74" />
+					<result value="Not Recommended" numvotes="40" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="122" />
+					<result value="Recommended" numvotes="83" />
+					<result value="Not Recommended" numvotes="9" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="121" />
+					<result value="Recommended" numvotes="74" />
+					<result value="Not Recommended" numvotes="13" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="13" />
+					<result value="Recommended" numvotes="64" />
+					<result value="Not Recommended" numvotes="114" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="88" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2–3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–3 players" />
+</poll-summary> 			               				<playingtime value="100" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="100" />
+						               				<minage value="14" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="31">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="1" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="1" />
+					<result value="12" numvotes="13" />
+					<result value="14" numvotes="14" />
+					<result value="16" numvotes="2" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="22">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="18" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="3" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1070" value="Renaissance" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2838" value="Action Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2001" value="Action Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2912" value="Contracts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2078" value="Point to Point Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="113664" value="Components: Coloured Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64960" value="Components: Map (Continental / National scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="50153" value="Continents: Europe" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="12226" value="Country: Belgium" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70354" value="Digital Implementations: Yucata" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65163" value="Mechanism: Dice Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="59705" value="Misc: LongPack Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="81590" value="Occupation: Architect" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="67862" value="Occupation: Merchant" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="111632" value="Series: T games (Daniele Tascini)" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="397075" value="Tiletum: Tantrum House Character Tiles" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="371359" value="Tiletum: Promo Cards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="434042" value="Tiletum: Prospect for Silver" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="437647" value="Tiletum: Prospect for Silver – Stone Tablets mini-expansion" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="400426" value="Tiletum: Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="417471" value="Tiletum: Laserox Organizer" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="35418" value="Simone Luciani" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="59986" value="Daniele Tascini" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="50670" value="Giorgio De Michele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="86237" value="Zbigniew Umgelter" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="26630" value="Board&amp;Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="58538" value="Board Bound" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21608" value="CMON Global Limited" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6194" value="Delta Vision Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42147" value="Giant Roc" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7251" value="Giochix.it" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="48587" value="Midnight Jungle" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="44349" value="Mosaico Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30034" value="Pixie Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="22609" value="テンデイズゲームズ (TendaysGames)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="41423" value="TLAMA games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="53618" value="Well Designed Game" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="7149" />
+			<average value="7.85152" />
+			<bayesaverage value="7.22756" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="280" bayesaverage="7.22756" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="171" bayesaverage="7.36097" />
+												</ranks>
+
+			<stddev value="1.20001" />
+			<median value="0" />
+			<owned value="10891" />
+			<trading value="154" />
+			<wanting value="364" />
+			<wishing value="2900" />
+			<numcomments value="1103" />
+			<numweights value="330" />
+			<averageweight value="3.3879" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,0 +1,748 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="102794">
+         <thumbnail>https://cf.geekdo-images.com/EAqbd46lFxo-7GumlO8U4w__small/img/g-qxFyjgqn7kwH3erf3jhmgYaIU=/fit-in/200x150/filters:strip_icc()/pic5598833.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/EAqbd46lFxo-7GumlO8U4w__original/img/oNM6bkDbjww-7nKZX-WYYmPxRws=/0x0/filters:format(jpeg)/pic5598833.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Caverna: The Cave Farmers" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Caverna" />
+			    				
+				<name type="alternate" sortindex="1" value="Caverna: Die Höhlenbauern" />
+			    				
+				<name type="alternate" sortindex="1" value="Caverna: I Contadini delle Caverne" />
+			    				
+				<name type="alternate" sortindex="1" value="Caverna: il Popolo delle Montagne" />
+			    				
+				<name type="alternate" sortindex="1" value="Caverna: Los Granjeros Trogloditas" />
+			    				
+				<name type="alternate" sortindex="1" value="Caverna: Sedláci z jeskyní" />
+			    				
+				<name type="alternate" sortindex="1" value="Caverna: Пещерные фермеры" />
+			    				
+				<name type="alternate" sortindex="1" value="Kawerna: Rolnicy z Jaskiń" />
+			    				
+				<name type="alternate" sortindex="1" value="カヴェルナ: 洞窟の農夫たち" />
+			    				
+				<name type="alternate" sortindex="1" value="洞穴農夫" />
+			    				
+				<name type="alternate" sortindex="1" value="洞穴農夫" />
+			    				
+				<name type="alternate" sortindex="1" value="카베르나: 동굴 속 농부들" />
+			
+						               													<description>Following along the same lines as its predecessor (Agricola), Caverna: The Cave Farmers is a worker-placement game at heart, with a focus on farming. In the game, you are the bearded leader of a small dwarf family that lives in a little cave in the mountains. You begin the game with a farmer and his spouse, and each member of the farming family represents an action that the player can take each turn. Together, you cultivate the forest in front of your cave and dig deeper into the mountain. You furnish the caves as dwellings for your offspring as well as working spaces for small enterprises.
+
+It's up to you how much ore you want to mine. You will need it to forge weapons that allow you to go on expeditions to gain bonus items and actions. While digging through the mountain, you may come across water sources and find ore and ruby mines that help you increase your wealth. Right in front of your cave, you can increase your wealth even further with agriculture: You can cut down the forest to sow fields and fence in pastures to hold your animals. You can also expand your family while running your ever-growing farm. In the end, the player with the most efficiently developed home board wins.
+
+You can also play the solo variant of this game to familiarize yourself with the 48 different furnishing tiles for your cave.
+
+Caverna: The Cave Farmers, which has a playing time of roughly 30 minutes per player, is a complete redesign of Agricola that substitutes the card decks from the former game with a set of buildings while adding the ability to purchase weapons and send your farmers on quests to gain further resources. Designer Uwe Rosenberg says that the game includes parts of Agricola, but also has new ideas, especially the cave part of your game board, where you can build mines and search for rubies. The game also includes two new animals: dogs and donkeys.
+
+</description>
+										      	               				<yearpublished value="2013" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="7" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="624">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="17" />
+					<result value="Recommended" numvotes="219" />
+					<result value="Not Recommended" numvotes="146" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="93" />
+					<result value="Recommended" numvotes="328" />
+					<result value="Not Recommended" numvotes="64" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="217" />
+					<result value="Recommended" numvotes="264" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="318" />
+					<result value="Recommended" numvotes="174" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+			
+		<results numplayers="5">		
+					<result value="Best" numvotes="90" />
+					<result value="Recommended" numvotes="227" />
+					<result value="Not Recommended" numvotes="120" />
+				</results>					
+			
+		<results numplayers="6">		
+					<result value="Best" numvotes="20" />
+					<result value="Recommended" numvotes="123" />
+					<result value="Not Recommended" numvotes="265" />
+				</results>					
+			
+		<results numplayers="7">		
+					<result value="Best" numvotes="15" />
+					<result value="Recommended" numvotes="68" />
+					<result value="Not Recommended" numvotes="328" />
+				</results>					
+			
+		<results numplayers="7+">		
+					<result value="Best" numvotes="1" />
+					<result value="Recommended" numvotes="4" />
+					<result value="Not Recommended" numvotes="278" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–5 players" />
+</poll-summary> 			               				<playingtime value="210" />
+						               				<minplaytime value="30" />
+						               				<maxplaytime value="210" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="125">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="3" />
+					<result value="8" numvotes="7" />
+					<result value="10" numvotes="18" />
+					<result value="12" numvotes="64" />
+					<result value="14" numvotes="32" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="70">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="22" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="45" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="2" />
+					<result level="5" value="Unplayable in another language" numvotes="1" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1013" value="Farming" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2903" value="Automatic Resource Growth" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2914" value="Increase Value of Unchosen Resources" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2829" value="Turn Order: Claim Action" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7530" value="Animals: Cattle / Cows" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7349" value="Animals: Dogs" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7542" value="Animals: Donkeys" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7481" value="Animals: Sheep" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="110270" value="Animals: Wild boar" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="73592" value="Components: Gems/Crystals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64990" value="Components: Meeples (Animal) / Animeeples" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="68769" value="Components: Wooden pieces &amp; boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="104952" value="Digital Implementations: Apple App Store" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78432" value="Digital Implementations: Google Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="77349" value="Digital Implementations: Steam" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="43538" value="Game: Caverna (Uwe Rosenberg)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="3866" value="Series: Harvest (Uwe Rosenberg)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="21425" value="Theme: Mining" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="154204" value="Caverna: Christmas Chamber" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="322816" value="Caverna: Frantic Fiends" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="160803" value="Caverna: LARP and Cosplay Postcard" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="166187" value="Caverna: Mini Expansion" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="245932" value="Caverna: The Forgotten Folk" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="272699" value="Caverna: The Forgotten Folk – Adventurers Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="248951" value="Caverna: The Forgotten Folk – Halflings promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="183531" value="Caverna: Water Expansion" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="156646" value="Caverna: Character Meeples" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="309445" value="Caverna: e-Raptor Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="414451" value="Caverna: Inserty Herman Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="306204" value="Caverna: Laserox Dwarven Mine Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="257943" value="Caverna: The Cave Farmers – Broken Token Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="271279" value="Caverna: The Cave Farmers – Cave Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="348692" value="Caverna: The Cave Farmers – Dwarf Weapon Dials" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="266247" value="Caverna: The Cave Farmers – Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="326372" value="Caverna: The Cave Farmers – Folded Space Insert (Second edition)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="464084" value="Caverna: The Cave Farmers – InMyBox Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="324633" value="Caverna: The Cave Farmers – Meeple Realty Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="266305" value="Caverna: The Cave Farmers – The Game Doctors Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="271749" value="Caverna: Tower Rex Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="409004" value="Caverna: Wooden Insert" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="220520" value="Caverna: Cave vs Cave" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="31260" value="Agricola" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="10" value="Uwe Rosenberg" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="85375" value="Javier González Cava" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11507" value="Klemens Franz" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="234" value="Lookout Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="267" value="999 Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34522" value="CrowD Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5657" value="Filosofia Éditions" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8832" value="Funforge" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24867" value="Gemenot" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1391" value="Hobby Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6275" value="HomoLudicus" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5812" value="Lacerta" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29242" value="Ludofy Creative" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10" value="Mayfair Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7992" value="MINDOK" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="9234" value="Swan Panasia Co., Ltd." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="17786" value="uplay.it edizioni" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="37599" />
+			<average value="7.91878" />
+			<bayesaverage value="7.72747" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="62" bayesaverage="7.72747" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="55" bayesaverage="7.74533" />
+												</ranks>
+
+			<stddev value="1.34088" />
+			<median value="0" />
+			<owned value="48676" />
+			<trading value="620" />
+			<wanting value="1574" />
+			<wishing value="11941" />
+			<numcomments value="6001" />
+			<numweights value="1750" />
+			<averageweight value="3.7777" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

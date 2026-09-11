@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="371947">
+         <thumbnail>https://cf.geekdo-images.com/rlVMW44IxSdXg0mfbdOdOg__small/img/-AEXgv7NazOF2KXxPb-KPuR1yvg=/fit-in/200x150/filters:strip_icc()/pic7819093.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/rlVMW44IxSdXg0mfbdOdOg__original/img/0dv_H-9NXnu7aKwbZD0T9cHTHyw=/0x0/filters:format(jpeg)/pic7819093.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="3 Ring Circus" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="3リングサーカス" />
+			    				
+				<name type="alternate" sortindex="1" value="Цирк трёх арен" />
+			
+						               													<description>The circus has come to town! Under the tent, jugglers, clowns, magicians, strongmen and wild beasts capture the curiosity of a dedicated audience that applauds non-stop. After each performance, your little troupe accumulates fame and may one day pique the interest of P.T. Barnum, the greatest circus mogul of all time.
+
+In 3 Ring Circus, players take on the role of a circus director who tours the United States at the end of the 19th century. Your objective is to hire artists and offer performances in various towns and cities with the intention of gaining fame. In towns, features are easy to set up and give you starting resources to upgrade your cast; small cities are somewhat more demanding, but they allow you to come into contact with better artists; audiences in big cities are even more demanding and want to see very specific numbers, but performing there brings you much more fame!
+
+On their turn, players can hire an artist or host a performance. At the beginning of the game, each player's circuses are empty, so it will be necessary to contract to form the company. The artist cards grant more or fewer benefits depending on the order in which they act, so one of the keys to the game is planning the shows that will be offered.
+
+If they decide to act, the players must move to a free space on the map. If it is a town, they receive the most basic currency cards as a prize. If you perform in a small city, depending on the number of pedestals you have in your company you can claim more or fewer entry cards (the second most valuable) or fame points. In the big cities, you get a lot of fame points, but the public always demands a specific type of artist.
+
+While your little circus tries to survive, the great and splendid Barnum Circus travels across the country, and when it arrives in a big city, a score is held in that region, and the circuses that have given the most performances there will gain even more fame.
+
+-description from the publisher
+
+</description>
+										      	               				<yearpublished value="2023" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="75">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="6" />
+					<result value="Recommended" numvotes="22" />
+					<result value="Not Recommended" numvotes="15" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="9" />
+					<result value="Recommended" numvotes="31" />
+					<result value="Not Recommended" numvotes="12" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="29" />
+					<result value="Recommended" numvotes="22" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="25" />
+					<result value="Recommended" numvotes="21" />
+					<result value="Not Recommended" numvotes="6" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="24" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="75" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="75" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="10">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="3" />
+					<result value="12" numvotes="6" />
+					<result value="14" numvotes="1" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="8">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="8" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2947" value="Movement Points" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2078" value="Point to Point Movement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66553" value="Components: Control Boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="61646" value="Continents: North America" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="14835" value="Country: USA" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="99601" value="Series: Small Box Euros (Devir)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5743" value="Theme: Circus" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="71573" value="Theme: Retro" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="397812" value="3 Ring Circus: Solidarity Deck" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="49759" value="Remo Conzadori" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="100575" value="Fabio Lopiano" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="123975" value="Edu Valls" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21608" value="CMON Global Limited" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34522" value="CrowD Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8923" value="IELLO" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37" value="KOSMOS" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="3067" />
+			<average value="7.14667" />
+			<bayesaverage value="6.3981" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1607" bayesaverage="6.3981" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="877" bayesaverage="6.51601" />
+												</ranks>
+
+			<stddev value="1.17779" />
+			<median value="0" />
+			<owned value="6729" />
+			<trading value="173" />
+			<wanting value="104" />
+			<wishing value="1075" />
+			<numcomments value="506" />
+			<numweights value="125" />
+			<averageweight value="2.76" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -311,6 +311,45 @@ def rows_html(data, a):
     return "\n".join(out), shown
 
 
+VOID_TAGS = {"img", "br", "hr", "input", "meta", "link", "source", "col"}
+
+
+def check_balanced(html):
+    """Fail the build on unbalanced markup.
+
+    A single stray </div> in the filter panel once closed the page wrapper
+    early, which put the result line and the whole table outside it — they
+    stretched to the window edges while the header stayed inset. The page still
+    rendered, so nothing caught it but the eye. This does.
+    """
+    from html.parser import HTMLParser
+
+    body = html[html.index('<div class="wrap">'):html.index("</body>")]
+
+    class Checker(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.stack, self.errors = [], []
+
+        def handle_starttag(self, tag, attrs):
+            if tag not in VOID_TAGS:
+                self.stack.append(tag)
+
+        def handle_endtag(self, tag):
+            if not self.stack:
+                self.errors.append(f"stray </{tag}>")
+            elif self.stack[-1] == tag:
+                self.stack.pop()
+            else:
+                self.errors.append(f"</{tag}> while inside <{self.stack[-1]}>")
+
+    c = Checker()
+    c.feed(body)
+    problems = c.errors + [f"unclosed <{t}>" for t in c.stack]
+    if problems:
+        raise SystemExit("unbalanced markup: " + "; ".join(problems[:5]))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--players", type=int, default=4,
@@ -377,6 +416,8 @@ def main():
             .replace("__STAMP__", dt.date.today().isoformat())
             .replace("__NGAMES__", str(sum(1 for g in data if not g["exp"])))
             .replace("__NEXP__", str(sum(1 for g in data if g["exp"]))))
+
+    check_balanced(html)
 
     out = ROOT / a.out
     out.parent.mkdir(parents=True, exist_ok=True)

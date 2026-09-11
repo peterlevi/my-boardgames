@@ -5,12 +5,12 @@ credentials.env
 __pycache__/
 *.pyc
 
-# Generated reports
-reports/
-
 # Full-size thumbnail originals — regenerable, the downscaled jpgs are kept
 data/thumbs/orig/
 data/thumbs/_fetch.conf
+
+# Generated reports
+reports/
 
 # CI build output
 site/

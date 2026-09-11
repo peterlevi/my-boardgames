@@ -109,6 +109,9 @@ def compact(games, tag_idx, inline=True):
             "tmin": g["minplaytime"], "tmax": g["maxplaytime"],
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
             "pl": g["plays"], "ds": g["designers"],
+            "rt": g["ratings"], "ow": g["owners"],
+            "de": (g["description"] or "")[:900],
+            "mn": g["minplayers"], "mx": g["maxplayers"],
             "ix": g["interaction"], "exp": 1 if g["is_expansion"] else 0,
             "of": g["expands"], "t": playtime(g),
             "top": max((v[0] for v in poll.values()), default=0),
@@ -195,6 +198,17 @@ def bar(pct):
     return (f'<span class="pct">{pct:.0f}%</span><span class="track">'
             f'<i class="{meter_class(pct)}" '
             f'style="width:{min(pct, 100):.0f}%"></i></span>')
+
+
+def fmt_count(n):
+    """60082 -> 60k. The exact figure is on the cell's title."""
+    if not n:
+        return EM_DASH
+    if n >= 10000:
+        return f"{n / 1000:.0f}k"
+    if n >= 1000:
+        return f"{n / 1000:.1f}k"
+    return str(n)
 
 
 def fmt_rating(v, decimals=1):
@@ -313,7 +327,7 @@ def rows_html(data, a):
         search = esc(f'{g["n"]} {g["y"] or ""}'.lower())
 
         out.append(
-            f'<tr data-i="{i}" data-search="{search}"{"" if shown else " hidden"}>'
+            f'<tr class="game-row" data-i="{i}" data-search="{search}"{"" if shown else " hidden"}>'
             f'<td class="thumb">{thumb}</td>'
             f'<td class="num hide-sm">{rank}</td>'
             f'<td class="score">{bgg_hex(g)}</td>'
@@ -330,7 +344,8 @@ def rows_html(data, a):
             f'<td class="num hide-sm j-verdict">{v}</td>'
             f'<td class="num bar hide-sm j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
             f'<td class="num bar hide-sm j-appr">{bar(s["appr"]) if s else EM_DASH}</td>'
-            f'<td class="num hide-sm j-votes">{s["total"] if s else EM_DASH}</td>'
+            f'<td class="num hide-sm" title="{g["rt"] or 0} BGG ratings">'
+            f'{fmt_count(g["rt"])}</td>'
             f'</tr>')
     shown = sum(1 for o in out if not o.startswith(tuple()) and " hidden>" not in o)
     return "\n".join(out), shown

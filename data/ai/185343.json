@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Anachrony is a dense worker-placement/resource-engine game about racing four factions to build up tech and resilience while managing a strict day/night action-order twist and optional time-travel loops that let you undo or preload actions. It rewards long-term planning and engine-building far more than reactive tactics, with a heavy rules and iconography load especially in the first few plays.",
+ "praised": [
+  "Clever, tightly integrated exogenesis/time-loop mechanism that feels genuinely novel",
+  "Strong sense of progression and engine-building satisfaction",
+  "High component and production quality (in the Kickstarter/deluxe editions)",
+  "Good solo mode and scalability",
+  "Lots of variable setup and replayability via modules"
+ ],
+ "criticised": [
+  "Steep learning curve and heavy rulebook/iconography overhead",
+  "Long turns and analysis paralysis, especially at higher player counts",
+  "Time-travel mechanic can feel fiddly or gimmicky to some rather than essential",
+  "Overwhelming number of small modules/expansions for newcomers to sort through"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker placement blocking and shared space competition, mostly parallel engine-building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from multiple converging tracks (tech, resources, contracts, time-rift bonuses), so winning depends on efficiently layering several scoring engines rather than one dominant strategy"
+ },
+ "similar": [
+  "Tzolk'in: The Mayan Calendar",
+  "Gaia Project",
+  "Trickerion: Legends of Illusion",
+  "On Mars",
+  "A Feast for Odin"
+ ],
+ "_fingerprint": "8fcdf6fc29ff3996",
+ "_name": "Anachrony"
+}

@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A dense Terra Mystica successor where you terraform hexes into your faction's home terrain, build up an interlocking network of structures, and race up tech tracks for bonuses and abilities. Every action is an efficiency puzzle with almost no randomness, and the tension comes from tight resource conversion and racing opponents for key upgrades and adjacency spots.",
+ "praised": [
+  "Extremely deep, tight economic engine with satisfying resource conversion puzzles",
+  "High replayability from faction/board/tech combinations",
+  "Cleaner, more flexible structure than Terra Mystica (tech tree instead of fixed favor tiles, more varied scoring)",
+  "Beautiful production and modular map",
+  "Rewards long-term planning and efficient turn optimization"
+ ],
+ "criticised": [
+  "Very high rules and strategic complexity, steep learning curve",
+  "Long playtime, especially with more players or new players",
+  "Analysis paralysis prone due to the depth of optimization",
+  "Low direct interaction can make it feel solitaire-ish despite spatial competition",
+  "Overwhelming for casual or first-time players"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial via terrain/adjacency competition"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from terraforming, building, cult/tech track advancement, faction abilities, and end-game bonuses, so the winner is whoever optimizes the most scoring channels simultaneously"
+ },
+ "similar": [
+  "Terra Mystica",
+  "Gaia Project",
+  "Underwater Cities",
+  "Barrage",
+  "Great Western Trail"
+ ],
+ "_fingerprint": "e4cc607cb0b24626",
+ "_name": "Age of Innovation"
+}

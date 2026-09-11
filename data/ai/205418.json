@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "This is Agricola stripped down to its friendliest form: no vegetables, no stone, no card-driven asymmetry, just a tight loop of grabbing resources, building rooms, plowing and sowing fields, and fencing pastures to feed your growing family each harvest. It plays fast and teaches worker placement and resource-conversion planning without the brutal food-crisis punishment or the overwhelming card deck of the full game.",
+ "praised": [
+  "Excellent, gentle on-ramp to worker placement and engine-building for newer or younger players",
+  "Fixed round-by-round action reveal removes the deckbuilding/drafting complexity of the original",
+  "Still delivers real tension over feeding your family and satisfying puzzle-like farm optimization",
+  "Fast, consistent 45-minute playtime"
+ ],
+ "criticised": [
+  "Feels thin and less replayable for veteran Agricola players once the novelty wears off",
+  "Removing the occupation/minor improvement cards strips out much of the variety and strategic depth fans love",
+  "Some feel it's a stepping stone game you outgrow quickly rather than a destination in its own right"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker placement blocking and action-space denial"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from a spread of farm categories (fields, pastures, animals, house size/type, family size) so the winner is whoever balances growth across categories rather than maxing one"
+ },
+ "similar": [
+  "Agricola",
+  "Agricola: All Creatures Big and Small",
+  "Caverna",
+  "Le Havre",
+  "Fields of Arle"
+ ],
+ "_fingerprint": "2817739ff50d4694",
+ "_name": "Agricola: Family Edition"
+}

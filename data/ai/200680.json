@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Agricola is a dense worker-placement engine-builder where you juggle a constant tug-of-war between growing your family, farming, and building a house, all while a harvest clock forces you to feed everyone or suffer penalties. Games are tense, calculation-heavy, and reward efficient long-term planning over reactive play.",
+ "praised": [
+  "Deep, satisfying engine-building with many viable strategies",
+  "The revised edition's streamlined card decks and clearer rules make it more approachable than the original",
+  "High replayability from the occupation/minor improvement cards",
+  "Tight, tense resource management (the 'feed your family' pressure)",
+  "Strong solo mode"
+ ],
+ "criticised": [
+  "Can feel punishing or fiddly for newer players, especially the food/begging penalty",
+  "Longer playtime and analysis paralysis in higher player counts",
+  "Card-drafting variability can create imbalance between players",
+  "Farm-building theme is thin; feels more like an abstract optimization puzzle to some"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial over shared action spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points are totaled across fields, pastures, animals, house type, family size, and card bonuses, so a balanced farm usually beats a one-track strategy"
+ },
+ "similar": [
+  "Le Havre",
+  "Caverna",
+  "A Feast for Odin",
+  "Viticulture",
+  "Great Western Trail"
+ ],
+ "_fingerprint": "059f85d759c14e07",
+ "_name": "Agricola (Revised Edition)"
+}

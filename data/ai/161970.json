@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Alchemists is a dense deduction puzzle where you mix ingredients, test them via app or paper, and try to logically narrow down the hidden rules of alchemy before publishing theories for points. It rewards careful note-taking and risk assessment over table talk, with a brutal turn structure where a single wrong guess can tank your score.",
+ "praised": [
+  "Ingenious deduction puzzle with a real 'aha' feeling when solving the rule set",
+  "Companion app streamlines bookkeeping and enables blind bidding/testing",
+  "Strong theme integration between mechanics and alchemy fantasy",
+  "High replayability since ingredient properties randomize each game"
+ ],
+ "criticised": [
+  "Steep learning curve and heavy rulebook overhead for new players",
+  "Analysis paralysis from tracking many logical possibilities at once",
+  "App dependency is a dealbreaker for some, and reduces it to a solitaire-ish exercise",
+  "Punishing for newcomers who publish incorrect theories early and fall behind"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker placement with light blocking and indirect competition over public information and artifacts"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points come from published theories, sold potions, artifacts, academic favor, and correctly refuted rivals, so efficient deduction across several income streams decides the winner"
+ },
+ "similar": [
+  "Suspects",
+  "Mysterium",
+  "The Search for Planet X",
+  "Chimera Station",
+  "Blood Bowl: Team Manager"
+ ],
+ "_fingerprint": "3b177d95b55c707a",
+ "_name": "Alchemists"
+}

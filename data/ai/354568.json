@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Amun-Re is a two-phase auction game where players bid for Egyptian provinces then decide how much of their gold to spend on farming versus sacrificing to Amun-Re for bonus points, with a second round resetting land and forcing new pyramid-building decisions. The tension comes from balancing short-term income against long-term pyramid value, all under a hidden/simultaneous bidding system that punishes overpaying.",
+ "praised": [
+  "Clever push-your-luck bidding mechanism where money becomes worthless if you don't spend it",
+  "Tight, tense auctions with meaningful opportunity cost",
+  "Good player interaction through competitive bidding without direct conflict",
+  "Elegant, well-integrated theme of provinces, farming, and pyramid-building",
+  "Quick to teach relative to its depth"
+ ],
+ "criticised": [
+  "Luck of the province/bonus tile draw can swing available value",
+  "Two-round structure can feel like it resets progress just as things get going",
+  "Some player elimination-adjacent frustration if you're outbid on key provinces repeatedly",
+  "Can suffer from analysis paralysis during bidding for experienced players"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "competitive auction/bidding for limited provinces"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Points come almost entirely from pyramid stones built each round plus end-game pyramid-size bonuses, driven by how well you managed farming income versus sacrifices"
+ },
+ "similar": [
+  "Ra",
+  "Samurai",
+  "Tigris & Euphrates",
+  "Chinatown",
+  "Merchants of Amsterdam"
+ ],
+ "_fingerprint": "65772a71f4fb0aa2",
+ "_name": "Amun-Re: 20th Anniversary Edition"
+}

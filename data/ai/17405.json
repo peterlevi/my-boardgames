@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "1846 is a lean, fast-playing 18xx that puts heavy pressure on route optimization and timing your train purchases before obsolescence wrecks a corporation; games run 2-4 hours rather than the 6+ of heavier 18xx titles. It's a cutthroat blend of stock manipulation and operational efficiency where dumping a corporation on other shareholders at the right moment is as important as good track building.",
+ "praised": [
+  "Excellent introductory 18xx due to shorter length and cleaner rules",
+  "Tight, well-tuned economy with meaningful decisions every turn",
+  "Private company draft adds interesting asymmetric variety without a long auction",
+  "Scales well across player counts"
+ ],
+ "criticised": [
+  "Still has significant downtime during other players' operating rounds",
+  "Multitasking as president of multiple corporations can be fiddly",
+  "Stock round dumping mechanics can feel mean and kingmaker-ish to newer players",
+  "Less depth/complexity than heavier 18xx titles for veteran fans"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "stock manipulation, presidencies, and route competition"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is determined by total net worth (cash plus stock value plus private companies), driven by efficient train running and stock market timing"
+ },
+ "similar": [
+  "1830",
+  "1889: History of Japan",
+  "1817",
+  "18Chesapeake",
+  "Age of Steam"
+ ],
+ "_fingerprint": "8301ae421ab7ce1b",
+ "_name": "1846: The Race for the Midwest"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "medium",
+ "summary": "A mid-heavy euro where you build a troupe of artist cards whose power depends on turn order, then tour a point-to-point map hiring artists and staging performances that trigger area-majority scoring in towns and cities. Turns are tight optimization puzzles about sequencing hires and performances before rivals lock up the best town slots or artist combos.",
+ "praised": [
+  "Clever artist card system where positional/order effects create real hand-management puzzles",
+  "Smooth production and iconography for a fairly dense ruleset",
+  "Satisfying engine-building feel as your troupe compounds in efficiency",
+  "Good table presence and theme integration for a euro"
+ ],
+ "criticised": [
+  "Fair amount of rules overhead and a slow-to-click first play",
+  "Can feel like parallel optimization with only intermittent direct clashes over map/majority spots",
+  "Some downtime in higher player counts",
+  "End-game scoring can feel a bit swingy relative to the mid-game decisions"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "area majority contests over limited town/city performance slots, otherwise mostly parallel engine-building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "fame comes from performance payouts, area-majority bonuses in towns/cities, artist-card synergies, and end-game bonus cards, so the winner is usually whoever balanced several of these rather than maxing one"
+ },
+ "similar": [
+  "Merv: The Heart of the Silk Road",
+  "On Mars",
+  "Ragusa",
+  "Newton",
+  "Trekking Through History"
+ ],
+ "_fingerprint": "90e645b899c84686",
+ "_name": "3 Ring Circus"
+}

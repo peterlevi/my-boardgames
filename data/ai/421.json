@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "1830 is a long, intensely cerebral game of building rail networks while simultaneously manipulating a stock market, where the real game is knowing when to dump a company's stock on other players before running it into the ground. There is no luck at all — every outcome flows from player decisions, and the interplay between operating trains for revenue and gaming share prices is what makes it a genre-defining classic.",
+ "praised": [
+  "Deep, purely skill-based strategy with zero randomness",
+  "The stock market / share manipulation layer is considered one of the best ever designed",
+  "High replayability due to emergent, player-driven outcomes",
+  "Satisfying long-term planning and tension between personal and company interests"
+ ],
+ "criticised": [
+  "Very long playtime (often 4-6+ hours)",
+  "Steep learning curve and high rules overhead for new players",
+  "Analysis paralysis, especially with more players",
+  "Can be brutal/'take that' via the robber baron stock mechanics, which some find mean-spirited",
+  "Not beginner friendly compared to lighter 18xx entries"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "stock manipulation, route blocking, and negotiation"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is whoever ends the game with the greatest personal net worth, combining cash on hand and the value of their stock holdings."
+ },
+ "similar": [
+  "1846",
+  "1817",
+  "Age of Steam",
+  "1889",
+  "18Chesapeake"
+ ],
+ "_fingerprint": "5530f133da6cf400",
+ "_name": "1830: Railways & Robber Barons"
+}

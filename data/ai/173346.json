@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A tight, fast two-player duel where you draft cards from a shifting pyramid, racing to build a stronger civilization across three ages while watching your opponent's military and science tracks like a hawk. Games can end abruptly via military conquest or a science victory long before the normal point-count finish, which keeps every pick tense.",
+ "praised": [
+  "Extremely tight, tense two-player experience with constant meaningful decisions",
+  "Elegant card-drafting mechanism where visibility and access to cards matters as much as the cards themselves",
+  "Fast to teach and play (30 minutes) yet very deep strategically",
+  "Multiple viable paths to victory (military, science, civilian points) create real tension",
+  "High replayability due to variable setup and interaction between paths"
+ ],
+ "criticised": [
+  "Strictly two-player only, no way to scale up or down",
+  "Sudden-death military/science wins can feel abrupt or swingy if one path snowballs unnoticed",
+  "Some card/wonder combinations are considered stronger than others, leading to perceived imbalance",
+  "Can feel overwhelming for newer players tracking multiple resource and progress tracks at once"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "card denial and racing on shared tracks"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from civilian buildings, science sets, commerce, and wonders, but the game is often decided outright before scoring by a military or scientific sudden-death win."
+ },
+ "similar": [
+  "7 Wonders",
+  "Jaipur",
+  "Star Realms",
+  "Lost Cities",
+  "Targi"
+ ],
+ "_fingerprint": "baf9a883b9b2cbb7",
+ "_name": "7 Wonders Duel"
+}

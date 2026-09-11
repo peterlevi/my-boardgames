@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "7 Wonders is a fast-paced card drafting game where you build a civilization by picking one card from a hand and passing the rest, repeating until your city takes shape across three ages. It runs almost entirely in parallel with your neighbors, punctuated by quick resource-cost checks and occasional military comparisons, culminating in a broad points tally across military, science, commerce, guilds, and wonders.",
+ "praised": [
+  "Extremely fast turns with no downtime despite the player count",
+  "Scales smoothly from 3 to 7 players with consistent playtime",
+  "High variety from different wonders, card combos, and set collection paths",
+  "Low rules overhead for the strategic depth it offers"
+ ],
+ "criticised": [
+  "Limited direct interaction beyond your two neighbors, which can feel solitaire-like",
+  "Military and science can snowball or feel swingy if under-drafted early",
+  "Symbol-heavy iconography has a steep initial learning curve",
+  "Card text/effects require some memorization or reference early on"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with limited neighbor-only conflict"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final score sums civilian buildings, coins, wonders, military conflict tokens, science sets, and guild bonuses, so no single track dominates"
+ },
+ "similar": [
+  "7 Wonders Duel",
+  "Sushi Go!",
+  "Race for the Galaxy",
+  "Innovation",
+  "Century: Spice Road"
+ ],
+ "_fingerprint": "55debf2117908321",
+ "_name": "7 Wonders"
+}

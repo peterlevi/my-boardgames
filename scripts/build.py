@@ -12,11 +12,12 @@ base games they attach to, via the inbound boardgameexpansion link. The report
 uses that to let an expansion's player-count poll speak for its base game.
 """
 import json
+import re
 import xml.etree.ElementTree as ET
 
 import interaction
 import traits
-from common import RAW, ROOT, load_exclusions, load_overrides
+from common import RAW, ROOT
 
 
 def attr(node, tag):
@@ -28,6 +29,14 @@ def attr(node, tag):
 
 def links(it, kind):
     return [l.get("value") for l in it.findall("link") if l.get("type") == kind]
+
+
+def clean_description(raw):
+    """BGG descriptions arrive with HTML entities and literal &#10; newlines."""
+    import html as htmllib
+    text = htmllib.unescape(raw).replace("\r", "")
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
 
 
 def parse_item(it, is_expansion=False):
@@ -73,6 +82,12 @@ def parse_item(it, is_expansion=False):
         thumbnail=(it.findtext("thumbnail") or "").strip() or None,
         weight=num(attr(st, "averageweight")), average=num(attr(st, "average")),
         geek=num(attr(st, "bayesaverage")),
+        # How many people rated it: BGG calls this "usersrated" and labels it
+        # "Ratings" on a game page. Unlike the poll votes it does not depend on
+        # a player count.
+        ratings=num(attr(st, "usersrated"), int),
+        owners=num(attr(st, "owned"), int),
+        description=clean_description(it.findtext("description") or ""),
         minplayers=num(attr(it, "minplayers"), int),
         maxplayers=num(attr(it, "maxplayers"), int),
         playingtime=num(attr(it, "playingtime"), int),
@@ -134,10 +149,8 @@ def main():
         print(f"warning: {len(missing)} owned item(s) have no cached detail — "
               f"run scripts/fetch.py")
 
-    salads = load_exclusions("point-salads.txt")
     plays, mine = collection_stats()
     for g in games:
-        g["point_salad"] = g["name"] in salads
         g["plays"] = plays.get(g["id"], 0)
         g["my_rating"] = mine.get(g["id"])
 

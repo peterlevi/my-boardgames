@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Alma Mater is a dense engine-builder where you manage two disciples through overlapping worker-placement and tile-drafting systems to grow your school's reputation across four disciplines. It rewards careful long-term planning and combo-building, with turns that can run long as players calculate optimal paths through the tightly interlocking systems.",
+ "praised": [
+  "Rich, tightly interlocking systems that reward planning and optimization",
+  "High replayability from variable setup and multiple viable strategies",
+  "Satisfying sense of building an efficient engine over the game",
+  "Strong production values and thematic presentation for a euro"
+ ],
+ "criticised": [
+  "Steep learning curve and rules overhead for new players",
+  "Analysis paralysis potential due to the many interacting decisions",
+  "Downtime between turns in higher player counts",
+  "Theme feels pasted onto what is fundamentally an abstract points-optimization puzzle"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with some worker-placement blocking"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from multiple disciplines, student/staff recruitment, prestige tracks, and end-game bonuses simultaneously"
+ },
+ "similar": [
+  "Tzolk'in: The Mayan Calendar",
+  "Lorenzo il Magnifico",
+  "The Gallerist",
+  "Grand Austria Hotel",
+  "Teotihuacan: City of Gods"
+ ],
+ "_fingerprint": "67ac8f0c08041cae",
+ "_name": "Alma Mater"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Anno 1800 is a tight worker-placement/hand-management game where you draft action cards to build production chains, ship goods between your home island and new territories, and satisfy an increasingly demanding population. Turns are quick and parallel, but there's constant tension over which action spaces and contracts get taken before your opponents grab them.",
+ "praised": [
+  "Fast, low-downtime turns for a Martin Wallace economic game",
+  "Satisfying production-chain building and engine growth",
+  "Good table presence and components tied to a recognizable video game theme",
+  "Tight 2-hour runtime relative to its complexity/depth"
+ ],
+ "criticised": [
+  "Hidden victory points and contract scoring can feel opaque or swingy",
+  "Some randomness in card/tile draws frustrates players who want tighter engine control",
+  "Interaction is mostly indirect (racing for spaces/contracts) rather than direct conflict, which some find underwhelming",
+  "Rulebook/setup can be fiddly for a first play"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "Racing for shared action spaces, contracts, and territory tiles"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from a mix of population level, hidden endgame objectives, contracts fulfilled, and territory development, so the winner is decided by overall efficiency across several scoring channels rather than one dominant strategy"
+ },
+ "similar": [
+  "Brass: Birmingham",
+  "Great Western Trail",
+  "Le Havre",
+  "Gizmos",
+  "Terraforming Mars"
+ ],
+ "_fingerprint": "d5e2ae85bf2ef9c8",
+ "_name": "Anno 1800: The Board Game"
+}

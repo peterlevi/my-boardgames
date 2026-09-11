@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A worker-placement game about gathering resources, building landmarks, and advancing the cathedral, with a virtue/corruption track that lets you steal workers or dodge the black market at moral cost. It plays as a tight engine-builder with light take-that (sending rivals' workers to jail) layered on top of otherwise fairly parallel development.",
+ "praised": [
+  "Clean, tightly interlocking worker-placement systems (money, resources, apprentices, virtue) that all feed into each other",
+  "The virtue/corruption mechanic adds thematic tension and meaningful decisions",
+  "Strong solo mode and good scaling across player counts",
+  "High production values and evocative medieval theme",
+  "The 'kill steal'/jailing mechanic gives worker placement rare teeth without full conflict"
+ ],
+ "criticised": [
+  "Can feel a bit dry or math-y/optimization-heavy for players wanting more narrative or interaction",
+  "Jailing/sending workers to the block can feel mean or swingy at 2 players",
+  "Some rules overhead and iconography to learn early on",
+  "Randomness in contract/building card draws can limit planning",
+  "Runs long for its weight class at higher player counts"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker denial and occasional direct sabotage (jailing/robbing rivals) layered over parallel engine-building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from buildings constructed, cathedral contributions, virtue/end-game bonuses, and leftover resources/money, so efficient multi-track engine building decides the winner"
+ },
+ "similar": [
+  "Raiders of the North Sea",
+  "Paladins of the West Kingdom",
+  "Coimbra",
+  "Tzolk'in: The Mayan Calendar",
+  "Lords of Waterdeep"
+ ],
+ "_fingerprint": "7aa5c5ef2c1a5382",
+ "_name": "Architects of the West Kingdom"
+}

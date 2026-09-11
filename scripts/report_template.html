@@ -197,6 +197,26 @@ td.score.mine-col { padding-right:9px; }
 /* On a phone the At N column is dropped for width, so the verdict rides along
    inside the game cell instead of disappearing. */
 .vinline { display:none; }
+tbody tr.game-row { cursor:pointer; }
+tr.detail > td { padding:0; border-bottom:1px solid var(--line); }
+.detail-inner { padding:14px 16px 18px 60px; background:var(--panel);
+  display:grid; grid-template-columns:minmax(0,2fr) minmax(0,1fr); gap:6px 28px; }
+.detail-inner h4 { margin:0 0 4px; font-size:.7rem; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--muted); }
+.detail-inner p { margin:0 0 12px; font-size:.86rem; max-width:70ch; }
+.detail-side { font-size:.82rem; }
+.detail-side dl { display:grid; grid-template-columns:auto 1fr; gap:3px 10px;
+  margin:0 0 12px; }
+.detail-side dt { color:var(--muted); }
+.detail-side dd { margin:0; font-variant-numeric:tabular-nums; }
+.chips { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:12px; }
+.chip { font-size:.74rem; padding:2px 8px; border-radius:99px;
+  background:var(--chip); color:var(--ink); }
+.chip.cat { color:var(--accent); }
+.chip.trait { color:var(--best); }
+@media (max-width:760px) {
+  .detail-inner { grid-template-columns:1fr; padding-left:16px; }
+}
 .empty { padding:44px 10px; color:var(--muted); text-align:center; }
 /* Search matches that the current filters exclude. Same table, so the columns
    stay aligned, but a loud divider row so the two groups never blur together. */
@@ -347,7 +367,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="num hide-sm" data-k="verdict">At N</th>
     <th class="num hide-sm" data-k="bestPct">Best</th>
     <th class="num hide-sm" data-k="appr">Appr</th>
-    <th class="num hide-sm" data-k="total">Votes</th>
+    <th class="num hide-sm" data-k="rt" title="How many people have rated the game on BGG">Ratings</th>
   </tr></thead>
   <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="14"
     id="septext"></td></tr><!--__ROWS__--></tbody>
@@ -612,7 +632,7 @@ function sortRows(rows) {
       case 'verdict': return s ? (s.isBest ? 0 : 1) : 2;
       case 'bestPct': return s ? s.bestPct : null;
       case 'appr': return s ? s.appr : null;
-      case 'total': return s ? s.total : null;
+      case 'rt': return g.rt;
       case 'ix': return ['Low', 'Medium', 'High'].indexOf(g.ix);
       case 'ds': return (g.ds && g.ds[0]) || null;
       case 'breadth':
@@ -671,7 +691,6 @@ function paint(tr, g, s, n) {
   tr.querySelector('.j-verdict').innerHTML = v;
   tr.querySelector('.j-best').innerHTML = s ? bar(s.bestPct) : dash;
   tr.querySelector('.j-appr').innerHTML = s ? bar(s.appr) : dash;
-  tr.querySelector('.j-votes').innerHTML = s ? s.total : dash;
 
   var inline = tr.querySelector('.vinline');
   if (inline) inline.innerHTML = n ? v : '';
@@ -697,6 +716,7 @@ function paint(tr, g, s, n) {
 }
 
 function render() {
+  closeDetail();
   var parts = partition();
   var inside = sortRows(parts.inside);
   var outside = sortRows(parts.outside);
@@ -713,7 +733,7 @@ function render() {
     shownIdx[idx] = 1;
     paint(tr, DATA[idx], inside[i][1], n);
     tr.hidden = false;
-    tr.className = '';
+    tr.className = 'game-row';
     frag.appendChild(tr);
   }
 
@@ -730,7 +750,7 @@ function render() {
       shownIdx[idx] = 1;
       paint(tr, DATA[idx], outside[i][1], n);
       tr.hidden = false;
-      tr.className = 'out';
+      tr.className = 'game-row out';
       frag.appendChild(tr);
     }
   } else {
@@ -755,6 +775,76 @@ function render() {
   oc.textContent = outside.length ? '+' + outside.length + ' outside filters' : '';
   oc.hidden = !outside.length;
 }
+
+// Clicking a row opens a panel underneath with everything the columns cannot
+// fit. Built on demand — 242 of these up front would bloat the page.
+var openDetail = null;
+
+function tagNamesFor(g, kind) {
+  var out = [];
+  (g.tg || []).forEach(function (i) {
+    if (TAGS[i] && TAGS[i].k === kind) out.push(TAGS[i].n);
+  });
+  return out;
+}
+
+function buildDetail(g) {
+  function chips(names, cls) {
+    if (!names.length) return '';
+    return '<div class="chips">' + names.map(function (n) {
+      return '<span class="chip ' + cls + '">' + esc(n) + '</span>';
+    }).join('') + '</div>';
+  }
+  var players = g.mn === g.mx ? g.mn + ' players' : g.mn + '–' + g.mx + ' players';
+  var rows = [
+    ['Players', players],
+    ['Play time', esc(g.t) + ' min'],
+    ['Weight', g.w ? g.w.toFixed(2) + ' / 5' : '—'],
+    ['BGG average', g.av ? g.av.toFixed(2) : '—'],
+    ['Your rating', g.my ? fmt(g.my) : 'not rated'],
+    ['Ratings on BGG', g.rt ? g.rt.toLocaleString() : '—'],
+    ['Owners', g.ow ? g.ow.toLocaleString() : '—'],
+    ['Your plays', g.pl],
+    ['Designers', esc((g.ds || []).join(', ')) || '—'],
+    ['Interaction', g.ix + ' (derived)']
+  ];
+  return '<div class="detail-inner">' +
+    '<div>' +
+      (g.de ? '<h4>Description</h4><p>' + esc(g.de) + '…</p>' : '') +
+      '<h4>Traits</h4>' + (chips(tagNamesFor(g, 'trait'), 'trait') || '<p>—</p>') +
+      '<h4>Categories</h4>' + (chips(tagNamesFor(g, 'cat'), 'cat') || '<p>—</p>') +
+      '<h4>Mechanics</h4>' + (chips(tagNamesFor(g, 'mech'), '') || '<p>—</p>') +
+    '</div>' +
+    '<div class="detail-side"><h4>At a glance</h4><dl>' +
+      rows.map(function (r) {
+        return '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>';
+      }).join('') +
+    '</dl><a class="game" href="https://boardgamegeek.com/boardgame/' + g.id +
+    '" target="_blank" rel="noopener">Open on BGG →</a></div>' +
+    '</div>';
+}
+
+function fmt(v) { return v % 1 === 0 ? String(v) : v.toFixed(1); }
+
+function closeDetail() {
+  if (openDetail) { openDetail.parentNode.removeChild(openDetail); openDetail = null; }
+}
+
+TBODY.addEventListener('click', function (e) {
+  if (e.target.closest('a')) return;          // links still navigate
+  var tr = e.target.closest('tr');
+  if (!tr || !tr.hasAttribute('data-i')) return;
+  var wasOpen = openDetail && openDetail.previousSibling === tr;
+  closeDetail();
+  if (wasOpen) return;
+  var g = DATA[+tr.getAttribute('data-i')];
+  var row = document.createElement('tr');
+  row.className = 'detail';
+  row.innerHTML = '<td colspan="' +
+    document.querySelectorAll('thead th').length + '">' + buildDetail(g) + '</td>';
+  tr.parentNode.insertBefore(row, tr.nextSibling);
+  openDetail = row;
+});
 
 [].forEach.call(document.querySelectorAll('th[data-k]'), function (th) {
   th.addEventListener('click', function () {

@@ -67,15 +67,6 @@ def load_exclusions(path):
     return names
 
 
-BREADTH_SETS = {
-    "any": None,
-    "focused": {"Focused"},
-    "upto-some": {"Focused", "Some"},
-    "broad": {"Broad", "Salad"},
-    "salad": {"Salad"},
-}
-
-
 def load_overrides(path):
     """`Name = Level` lines; blanks and # comments ignored."""
     f = ROOT / path
@@ -103,11 +94,8 @@ def add_filter_args(ap, default_players=4):
     ap.add_argument("--max-time", type=int, help="max of maxplaytime, minutes")
     ap.add_argument("--exclude-file",
                     help="file of game names to drop, one per line, # = comment")
-    ap.add_argument("--breadth", default="any",
-                    choices=["any", "focused", "upto-some", "broad", "salad"],
-                    help="scoring breadth: how widely points are spread")
-    ap.add_argument("--trait", action="append", default=[], metavar="NAME",
-                    help="require a scoring trait; repeatable")
+    ap.add_argument("--tag", action="append", default=[], metavar="NAME",
+                    help="require a BGG mechanic or category; repeatable")
     ap.add_argument("--expansions", choices=["drop", "show"], default="drop",
                     help="expansions are listed as their own rows, or not "
                          "(default: not, matching the report)")
@@ -134,10 +122,8 @@ def select(a):
                 continue
         if g["name"] in excluded:
             continue
-        allowed = BREADTH_SETS.get(getattr(a, "breadth", "any"))
-        if allowed is not None and g["breadth"] not in allowed:
-            continue
-        if any(t not in g["traits"] for t in getattr(a, "trait", [])):
+        tags = set(g["mechanics"]) | set(g["categories"])
+        if any(t not in tags for t in getattr(a, "tag", [])):
             continue
         w = g["weight"]
         if a.max_weight and (w is None or w > a.max_weight):

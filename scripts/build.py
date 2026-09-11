@@ -14,7 +14,6 @@ uses that to let an expansion's player-count poll speak for its base game.
 import json
 import xml.etree.ElementTree as ET
 
-import breadth
 import interaction
 from common import RAW, ROOT, load_exclusions, load_overrides
 
@@ -133,17 +132,9 @@ def main():
               f"run scripts/fetch.py")
 
     salads = load_exclusions("point-salads.txt")
-    overrides = load_overrides("breadth-overrides.txt")
     plays, mine = collection_stats()
     for g in games:
-        # Kept only for query.py's --exclude-file; breadth is computed
-        # independently and names no games.
         g["point_salad"] = g["name"] in salads
-        level, bscore, traits = breadth.classify(
-            g["name"], g["mechanics"], g["families"], overrides)
-        g["breadth"] = level
-        g["breadth_score"] = bscore
-        g["traits"] = traits
         g["plays"] = plays.get(g["id"], 0)
         g["my_rating"] = mine.get(g["id"])
 

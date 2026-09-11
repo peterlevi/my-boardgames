@@ -46,22 +46,59 @@ h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 .f { display:flex; flex-direction:column; gap:3px; }
 .f > label { font-size:.68rem; text-transform:uppercase; letter-spacing:.06em;
   color:var(--muted); font-weight:600; }
-input, select { font:inherit; color:var(--ink); background:var(--panel);
-  border:1px solid var(--line); border-radius:7px; padding:7px 9px; }
+input, select, .selbtn { font:inherit; font-size:.84rem; color:var(--ink);
+  background:var(--panel); border:1px solid var(--line); border-radius:7px;
+  padding:6px 9px; }
+.f > label { font-size:.66rem; }
 input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px; }
 #q { width:230px; max-width:100%; }
 .pair { display:flex; align-items:center; gap:5px; }
 .pair input { width:66px; }
-.traitbox { display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center;
-  padding-bottom:2px; }
-.traitbox label { display:inline-flex; align-items:center; gap:5px;
-  font-size:.8rem; color:var(--muted); cursor:pointer; white-space:nowrap;
-  padding:3px 9px 3px 7px; border:1px solid var(--line); border-radius:99px;
-  background:var(--panel); }
-.traitbox label:hover { color:var(--ink); }
-.traitbox input { margin:0; }
-.traitbox label:has(input:checked) { color:var(--ink); border-color:var(--accent);
-  box-shadow:inset 0 0 0 1px var(--accent); }
+#tagsearch { width:230px; max-width:100%; }
+
+/* A native <select> popup is drawn by the OS and cannot be styled, which is
+   why it lands in a different typeface on top of the field. So the select is
+   kept as the real control — it still works with no JavaScript — and when the
+   script runs it is visually replaced by a button and a list we can style. */
+.sel { position:relative; display:inline-block; }
+.sel > select { width:100%; }
+.sel.enhanced > select { position:absolute; inset:0; opacity:0;
+  pointer-events:none; }
+.selbtn { display:flex; align-items:center; gap:8px; width:100%;
+  cursor:pointer; text-align:left; white-space:nowrap; }
+.selbtn::after { content:"⌄"; margin-left:auto; color:var(--muted);
+  font-size:1.05em; line-height:0.7; }
+.sel.open .selbtn, .selbtn:focus-visible { outline:2px solid var(--accent);
+  outline-offset:-1px; }
+.sellist { position:absolute; z-index:30; top:calc(100% + 4px); left:0;
+  min-width:100%; margin:0; padding:4px; list-style:none;
+  background:var(--panel); border:1px solid var(--line); border-radius:8px;
+  box-shadow:0 8px 24px rgba(0,0,0,.14); max-height:260px; overflow-y:auto; }
+:root:not([data-theme="light"]) .sellist { box-shadow:0 8px 24px rgba(0,0,0,.5); }
+.sellist li { padding:6px 10px; border-radius:6px; cursor:pointer;
+  font-size:.84rem; white-space:nowrap; }
+.sellist li[aria-selected="true"] { font-weight:700; }
+.sellist li.active, .sellist li:hover { background:var(--bg); }
+.tagpicked { font-size:.8rem; color:var(--accent); align-self:center; }
+/* 213 tags will not lay out flat, so the list scrolls and the search narrows
+   it. Each row carries its description: "Follow" or "Rondel" mean nothing
+   unless you already know them. */
+.tagbox { max-height:208px; overflow-y:auto; margin-top:8px;
+  border:1px solid var(--line); border-radius:8px; background:var(--panel);
+  padding:4px; }
+.tagbox label { display:flex; align-items:baseline; gap:8px; padding:4px 8px;
+  border-radius:6px; cursor:pointer; font-size:.82rem; }
+.tagbox label:hover { background:var(--bg); }
+.tagbox input { margin:0; flex:none; position:relative; top:2px; }
+.tagbox .tname { font-weight:600; white-space:nowrap; }
+.tagbox .tkind { font-size:.68rem; color:var(--accent); text-transform:uppercase;
+  letter-spacing:.04em; flex:none; }
+.tagbox .tcount { color:var(--muted); font-variant-numeric:tabular-nums;
+  flex:none; }
+.tagbox .tdesc { color:var(--muted); overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap; }
+.tagbox label.on { background:var(--bg); box-shadow:inset 0 0 0 1px var(--accent); }
+.tagbox .none { padding:10px; color:var(--muted); }
 .pair span { color:var(--muted); font-size:.85rem; }
 /* The only thing pinned while scrolling: the count, what it is counting, and
    the column headers. The filters scroll away — they are a thing you set, not
@@ -113,7 +150,7 @@ td.thumb { width:44px; padding-right:0; }
 a.game { color:var(--ink); text-decoration:none; font-weight:600; }
 a.game:hover { color:var(--accent); text-decoration:underline; }
 .yr { color:var(--muted); font-weight:400; font-size:.85em; }
-/* Every categorical cell — the player-count verdict, interaction, breadth
+/* Every categorical cell — the player-count verdict, interaction, salad
    — uses one pill, at one size, a little smaller than the numbers beside it.
    The ramp is always strong → neutral, so a column can be read by colour. */
 .tag { display:inline-block; padding:2px 9px; border-radius:99px;
@@ -214,10 +251,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     voters at N called N the best count. <b>Appr</b> = (Best + Recommended) ÷
     all votes at N. <b>Interaction</b> is <em>not</em> a BGG statistic — no such
     data exists in their API — it is derived from each game's mechanics and
-    categories, so treat it as a rough sort, not a fact. <b>Breadth</b> is how widely a game spreads its
-    scoring — Focused means one contested currency decides it, Salad means
-    points come from everywhere — and it is derived the same way, with a
-    hand-maintained override list. Every filter runs in the page; nothing here calls out
+    categories, so treat it as a rough sort, not a fact. <b>Mechanics &amp; categories</b> are BGG's own tags,
+    filterable directly. Every filter runs in the page; nothing here calls out
     to BGG.</p>
   </details>
 </div>
@@ -234,8 +269,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   <details id="more">
     <summary>More filters</summary>
     <div class="row">
-      <div class="f"><label for="breadth">Scoring breadth</label>
-        <select id="breadth"><!--__BREADTH_OPTIONS__--></select></div>
+      <div class="f"><label for="salad">Point salad</label>
+        <select id="salad"><!--__SALAD_OPTIONS__--></select></div>
       <div class="f"><label for="ix">Interaction</label>
         <select id="ix">
           <option value="">Any</option><option>Low</option>
@@ -269,14 +304,19 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         <input id="votes" type="number" min="0" step="5" value="__MINVOTES__"></div>
       <button class="link" id="reset" type="button">Reset filters</button>
     </div>
-    <div class="row traits">
-      <div class="f"><label for="traitmode">Scoring traits</label>
-        <select id="traitmode">
-          <option value="all">match all ticked</option>
-          <option value="any">match any ticked</option>
-          <option value="none">exclude all ticked</option>
+    <div class="row">
+      <div class="f"><label for="tagsearch">Mechanics &amp; categories</label>
+        <input id="tagsearch" type="search" placeholder="Search tags…"
+               autocomplete="off"></div>
+      <div class="f"><label for="tagmode">Match</label>
+        <select id="tagmode">
+          <option value="all">all ticked</option>
+          <option value="any">any ticked</option>
+          <option value="none">none of the ticked</option>
         </select></div>
-      <div id="traitbox" class="traitbox"></div>
+      <span id="tagpicked" class="tagpicked"></span>
+    </div>
+    <div id="tagbox" class="tagbox"></div>
     </div>
   </details>
 </div>
@@ -296,7 +336,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="num" data-k="tmax">Time</th>
     <th class="num hide-sm" data-k="w">Weight</th>
     <th class="hide-sm" data-k="ix">Interact</th>
-    <th class="hide-sm" data-k="breadth">Breadth</th>
+    <th class="num hide-sm" data-k="sal">Salad</th>
     <th class="num hide-sm" data-k="verdict">At N</th>
     <th class="num hide-sm" data-k="bestPct">Best</th>
     <th class="num hide-sm" data-k="appr">Appr</th>
@@ -312,12 +352,13 @@ need JavaScript</b>, which this preview does not run. The table above shows the
 opening selection; open the file in a browser for the full controls.</p></noscript>
 <footer>BGG snapshot __STAMP__ — ranks, weights, play counts and player-count
 polls from boardgamegeek.com; thumbnails embedded in the file. Interaction and
-breadth columns are derived locally and are opinions, not BGG data.</footer>
+point-salad columns are derived locally and are opinions, not BGG data.</footer>
 </div>
 
 <script>
 const DATA = /*__DATA__*/;
 const OPTS = /*__OPTS__*/;
+const TAGS = /*__TAGS__*/;
 
 // Every row already exists in the markup, rendered server-side; DATA[i] pairs
 // with the row carrying data-i="i". This script only filters, reorders, and
@@ -344,37 +385,62 @@ DATA.forEach(function (g) {
 
 function el(id) { return document.getElementById(id); }
 
-// The trait vocabulary comes from the data, so adding a trait in breadth.py
-// needs no change here.
-var TRAITS = (function () {
-  var seen = {}, list = [];
-  DATA.forEach(function (g) {
-    (g.tr || []).forEach(function (t) {
-      if (!seen[t]) { seen[t] = 1; list.push(t); }
-    });
-  });
-  return list.sort();
-})();
-
-var traitBox = document.getElementById('traitbox');
-TRAITS.forEach(function (t) {
-  var id = 'tr-' + t.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
+// 213 mechanics and categories, rendered once and then shown or hidden by the
+// search box; rebuilding the list on every keystroke would be wasteful.
+var tagBox = document.getElementById('tagbox');
+var tagRows = TAGS.map(function (t, i) {
   var label = document.createElement('label');
-  label.setAttribute('for', id);
-  label.innerHTML = '<input type="checkbox" id="' + id + '" value="' +
-                    t.replace(/"/g, '&quot;') + '"> ' + t;
-  traitBox.appendChild(label);
+  label.setAttribute('data-i', i);
+  label.innerHTML =
+    '<input type="checkbox" value="' + i + '">' +
+    '<span class="tname"></span>' +
+    '<span class="tkind"></span>' +
+    '<span class="tcount"></span>' +
+    '<span class="tdesc"></span>';
+  label.querySelector('.tname').textContent = t.n;
+  label.querySelector('.tkind').textContent = t.k === 'category' ? 'cat' : 'mech';
+  label.querySelector('.tcount').textContent = t.c;
+  label.querySelector('.tdesc').textContent = t.d;
+  label.title = t.d || t.n;
+  tagBox.appendChild(label);
+  return label;
 });
-function checkedTraits() {
+var tagEmpty = document.createElement('div');
+tagEmpty.className = 'none';
+tagEmpty.textContent = 'No mechanic or category matches that.';
+tagEmpty.hidden = true;
+tagBox.appendChild(tagEmpty);
+
+function pickedTags() {
   var out = [];
-  [].forEach.call(traitBox.querySelectorAll('input:checked'), function (c) {
-    out.push(c.value);
-  });
+  for (var i = 0; i < tagRows.length; i++) {
+    if (tagRows[i].firstChild.checked) out.push(i);
+  }
   return out;
 }
+
+function refreshTagList() {
+  var q = document.getElementById('tagsearch').value.trim().toLowerCase();
+  var shown = 0;
+  for (var i = 0; i < tagRows.length; i++) {
+    var t = TAGS[i], on = tagRows[i].firstChild.checked;
+    // A ticked tag stays visible whatever the search says, so you can always
+    // see and undo what you have chosen.
+    var hit = on || !q ||
+      t.n.toLowerCase().indexOf(q) !== -1 || t.d.toLowerCase().indexOf(q) !== -1;
+    tagRows[i].hidden = !hit;
+    tagRows[i].className = on ? 'on' : '';
+    if (hit) shown++;
+  }
+  tagEmpty.hidden = shown > 0;
+  var n = pickedTags().length;
+  document.getElementById('tagpicked').textContent =
+    n ? n + ' selected' : '';
+}
+
 var F = {
   q: el('q'), players: el('players'), mode: el('mode'),
-  ix: el('ix'), breadth: el('breadth'), traitmode: el('traitmode'),
+  ix: el('ix'), salad: el('salad'), tagmode: el('tagmode'),
   smin: el('smin'), smax: el('smax'),
   mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
@@ -386,14 +452,14 @@ function applyDefaults() {
   F.q.value = '';
   F.players.value = OPTS.players;
   F.mode.value = OPTS.mode;
-  F.breadth.value = OPTS.breadth;
+  F.salad.value = OPTS.salad;
   F.exp.value = OPTS.expansions;
   F.votes.value = OPTS.minVotes;
   F.ix.value = '';
-  F.traitmode.value = 'all';
-  [].forEach.call(traitBox.querySelectorAll('input'), function (c) {
-    c.checked = false;
-  });
+  F.tagmode.value = 'all';
+  document.getElementById('tagsearch').value = '';
+  tagRows.forEach(function (r) { r.firstChild.checked = false; });
+  refreshTagList();
   ['smin', 'smax', 'mymin', 'mymax', 'wmin', 'wmax', 'tmin', 'tmax',
    'plmin', 'plmax']
     .forEach(function (k) { F[k].value = ''; });
@@ -437,22 +503,9 @@ function reading(g, n, fold, minVotes, mode) {
 
 function num(v) { return v === '' ? null : parseFloat(v); }
 
-var BREADTH_SETS = {
-  any: null,
-  focused: ['Focused'],
-  'upto-some': ['Focused', 'Some'],
-  broad: ['Broad', 'Salad'],
-  salad: ['Salad']
-};
-
-function breadthOk(g) {
-  var allowed = BREADTH_SETS[F.breadth.value];
-  return !allowed || allowed.indexOf(g.br) !== -1;
-}
-
-function traitsOk(g, picked, mode) {
+function tagsOk(g, picked, mode) {
   if (!picked.length) return true;
-  var has = g.tr || [], n = 0;
+  var has = g.tg || [], n = 0;
   for (var i = 0; i < picked.length; i++) {
     if (has.indexOf(picked[i]) !== -1) n++;
   }
@@ -474,8 +527,8 @@ function partition() {
   var wmin = num(F.wmin.value), wmax = num(F.wmax.value);
   var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
-  var ix = F.ix.value;
-  var picked = checkedTraits(), tmode = F.traitmode.value;
+  var ix = F.ix.value, salad = F.salad.value;
+  var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
 
   var inside = [], outside = [];
@@ -489,7 +542,8 @@ function partition() {
     var structural = !(g.exp && expMode !== 'show');
 
     var s = n ? reading(g, n, fold, minVotes, mode) : null;
-    var pass = structural && breadthOk(g) && traitsOk(g, picked, tmode) &&
+    var pass = structural && tagsOk(g, picked, tmode) &&
+      !(salad === 'no' && g.sal) && !(salad === 'yes' && !g.sal) &&
       !(ix && g.ix !== ix) &&
       !(smin !== null && !(g.av >= smin)) && !(smax !== null && !(g.av <= smax)) &&
       !(mymin !== null && !(g.my >= mymin)) && !(mymax !== null && !(g.my <= mymax)) &&
@@ -518,15 +572,15 @@ function describe() {
   if (!n && expMode !== 'show') head = 'All games';
 
   var extra = [];
-  var bl = { focused: 'focused scoring only', 'upto-some': 'focused or some',
-             broad: 'broad scoring', salad: 'point salads only' };
-  if (bl[F.breadth.value]) extra.push(bl[F.breadth.value]);
+  if (F.salad.value === 'no') extra.push('no point salads');
+  if (F.salad.value === 'yes') extra.push('point salads only');
   if (F.ix.value) extra.push(F.ix.value.toLowerCase() + ' interaction');
-  var picked = checkedTraits();
+  var picked = pickedTags();
   if (picked.length) {
     var joiner = { all: ' + ', any: ' or ', none: ' or ' };
-    extra.push((F.traitmode.value === 'none' ? 'no ' : '') +
-               picked.join(joiner[F.traitmode.value]).toLowerCase());
+    var names = picked.map(function (i) { return TAGS[i].n.toLowerCase(); });
+    extra.push((F.tagmode.value === 'none' ? 'no ' : '') +
+               names.join(joiner[F.tagmode.value]));
   }
   var pair = function (lo, hi, label, unit) {
     var a = num(F[lo].value), b = num(F[hi].value);
@@ -717,7 +771,9 @@ Object.keys(F).forEach(function (k) {
   F[k].addEventListener('input', render);
   F[k].addEventListener('change', render);
 });
-traitBox.addEventListener('change', render);
+tagBox.addEventListener('change', function () { refreshTagList(); render(); });
+document.getElementById('tagsearch')
+  .addEventListener('input', refreshTagList);
 el('reset').addEventListener('click', function () { applyDefaults(); render(); });
 
 // The result line is the only sticky thing above the table, so the header's
@@ -741,7 +797,91 @@ if (typeof ResizeObserver === 'function') {
 }
 setStickyTop();
 
+// Replace each filter <select> with a styled equivalent. The native element
+// stays in the DOM and keeps its value, so nothing here is load-bearing: with
+// scripts blocked the plain selects are what you get, and they work.
+function enhanceSelect(sel) {
+  var wrap = document.createElement('span');
+  wrap.className = 'sel enhanced';
+  sel.parentNode.insertBefore(wrap, sel);
+  wrap.appendChild(sel);
+
+  var btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'selbtn';
+  btn.setAttribute('aria-haspopup', 'listbox');
+  btn.setAttribute('aria-expanded', 'false');
+  var caption = document.createElement('span');
+  btn.appendChild(caption);
+
+  var list = document.createElement('ul');
+  list.className = 'sellist';
+  list.setAttribute('role', 'listbox');
+  list.hidden = true;
+
+  var items = [].map.call(sel.options, function (o, i) {
+    var li = document.createElement('li');
+    li.setAttribute('role', 'option');
+    li.textContent = o.textContent;
+    li.addEventListener('click', function () { choose(i); });
+    list.appendChild(li);
+    return li;
+  });
+
+  function sync() {
+    var o = sel.options[sel.selectedIndex];
+    caption.textContent = o ? o.text : '';
+    items.forEach(function (li, i) {
+      li.setAttribute('aria-selected', i === sel.selectedIndex ? 'true' : 'false');
+    });
+  }
+  function open(yes) {
+    if (yes) closeAll(wrap);
+    list.hidden = !yes;
+    wrap.className = 'sel enhanced' + (yes ? ' open' : '');
+    btn.setAttribute('aria-expanded', yes ? 'true' : 'false');
+    if (yes && items[sel.selectedIndex]) {
+      items[sel.selectedIndex].scrollIntoView({ block: 'nearest' });
+    }
+  }
+  function choose(i) {
+    sel.selectedIndex = i;
+    sync();
+    open(false);
+    btn.focus();
+    sel.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+
+  btn.addEventListener('click', function () { open(list.hidden); });
+  btn.addEventListener('keydown', function (e) {
+    var i = sel.selectedIndex;
+    if (e.key === 'ArrowDown' && i < items.length - 1) { choose(i + 1); e.preventDefault(); }
+    else if (e.key === 'ArrowUp' && i > 0) { choose(i - 1); e.preventDefault(); }
+    else if (e.key === 'Escape') { open(false); }
+    else if (e.key === 'Enter' || e.key === ' ') { open(list.hidden); e.preventDefault(); }
+  });
+
+  wrap.appendChild(btn);
+  wrap.appendChild(list);
+  sel.addEventListener('change', sync);
+  sync();
+  wrap._close = function () { open(false); };
+  return wrap;
+}
+
+var enhanced = [];
+function closeAll(except) {
+  enhanced.forEach(function (w) { if (w !== except) w._close(); });
+}
+[].forEach.call(document.querySelectorAll('.panel select'), function (sel) {
+  enhanced.push(enhanceSelect(sel));
+});
+document.addEventListener('click', function (e) {
+  if (!e.target.closest || !e.target.closest('.sel')) closeAll(null);
+});
+
 applyDefaults();
+refreshTagList();
 document.querySelector('th[data-k="rk"]').setAttribute('aria-sort', 'ascending');
 render();
 </script>

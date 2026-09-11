@@ -92,7 +92,7 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 /* A grid, not a flex row: across 710 rows of wildly different name lengths,
    flex leaves the kind, count and description ragged all the way down. */
 .tagbox label { display:grid;
-  grid-template-columns:16px minmax(0,15em) 4.5em 3em 1fr;
+  grid-template-columns:16px minmax(0,15em) 6.5em 5.5em 1fr;
   align-items:baseline; gap:8px; padding:4px 8px; border-radius:6px;
   cursor:pointer; font-size:.82rem; }
 .tagbox label:hover { background:var(--bg); }
@@ -107,12 +107,13 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 .tagbox .tcount { color:var(--muted); font-variant-numeric:tabular-nums;
   text-align:right; }
 .tagbox label.zero { opacity:.45; }
+.tagbox .tot { opacity:.62; font-size:.92em; }
 .tagbox .tdesc { color:var(--muted); overflow:hidden; text-overflow:ellipsis;
   white-space:nowrap; }
 .tagbox label.on { background:var(--bg); box-shadow:inset 0 0 0 1px var(--accent); }
 .tagbox .none { padding:10px; color:var(--muted); }
-td.designer { max-width:118px; overflow:hidden; text-overflow:ellipsis;
-  white-space:nowrap; font-size:.82rem; }
+td.designer { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  font-size:.82rem; }
 td.designer .more { color:var(--muted); }
 .pair span { color:var(--muted); font-size:.85rem; }
 /* The only thing pinned while scrolling: the count, what it is counting, and
@@ -125,16 +126,32 @@ td.designer .more { color:var(--muted); }
   letter-spacing:-.01em; font-variant-numeric:tabular-nums; white-space:nowrap; }
 #desc { font-size:.85rem; color:var(--muted); }
 #outcount { font-size:.85rem; color:var(--accent); }
+.resultline #reset { margin-left:auto; font-size:.82rem; }
 button.link { background:none; border:none; color:var(--accent); cursor:pointer;
   font:inherit; text-decoration:underline; padding:7px 0; align-self:flex-end; }
-details > summary { cursor:pointer; color:var(--accent); font-size:.8rem;
-  font-weight:600; padding:9px 0 2px; list-style:none; width:max-content; }
+details > summary { cursor:pointer; color:var(--accent); font-size:.84rem;
+  font-weight:700; padding:12px 0 10px; list-style:none; width:max-content;
+  display:flex; align-items:center; gap:7px; }
+details > summary:hover { color:var(--ink); }
 details > summary::-webkit-details-marker { display:none; }
-details > summary::before { content:"▸ "; display:inline-block;
-  transition:transform .12s; }
-details[open] > summary::before { content:"▾ "; }
+details > summary::before { content:"▸"; font-size:1.15em; line-height:1;
+  display:inline-block; }
+details[open] > summary::before { content:"▾"; }
+#more { margin-top:2px; }
+#more > .row:first-of-type { margin-top:2px; }
 
-table { width:100%; border-collapse:separate; border-spacing:0; margin-top:6px; }
+/* Fixed layout, so a full-width expanded row cannot renegotiate the column
+   widths underneath it. Widths come from the header cells below. */
+table { width:100%; table-layout:fixed; border-collapse:separate;
+  border-spacing:0; margin-top:6px; }
+th.w-thumb { width:52px; } th.w-rank { width:48px; }
+th.w-hex { width:44px; } th.w-plays { width:50px; }
+th.w-time { width:72px; } th.w-weight { width:58px; }
+th.w-ix { width:86px; } th.w-designer { width:210px; }
+th.w-atn { width:64px; } th.w-pct { width:66px; }
+th.w-ratings { width:62px; }
+td.gamecell { min-width:0; }
+a.game { overflow-wrap:anywhere; }
 th, td { padding:8px 9px; text-align:left; border-bottom:1px solid var(--line);
   vertical-align:middle; }
 th { position:sticky; top:var(--thtop,46px); z-index:4; background:var(--bg);
@@ -217,8 +234,21 @@ tr.detail > td { padding:0; border-bottom:1px solid var(--line); }
 .detail-side dd { margin:0; font-variant-numeric:tabular-nums; }
 .chips { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:12px; }
 .shots { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+.shots .shot { padding:0; border:0; background:none; cursor:zoom-in;
+  border-radius:7px; line-height:0; }
+.shots .shot:hover { box-shadow:0 0 0 2px var(--accent); }
 .shots img { height:104px; width:auto; max-width:170px; object-fit:cover;
   border-radius:7px; background:var(--tile); display:block; }
+/* An inline viewer rather than a new tab: opening a browser tab to look at one
+   picture loses your place in the table. */
+#lightbox { position:fixed; inset:0; z-index:200; display:flex;
+  align-items:center; justify-content:center; flex-direction:column; gap:12px;
+  background:rgba(0,0,0,.82); padding:32px; cursor:zoom-out; }
+#lightbox img { max-width:min(1100px, 92vw); max-height:82vh; width:auto;
+  height:auto; border-radius:10px; background:var(--tile); }
+#lightbox .cap { color:#f2efe9; font-size:.88rem; max-width:80ch;
+  text-align:center; }
+#lightbox .hint { color:#9d978c; font-size:.76rem; }
 ul.learn { list-style:none; padding:0; margin:0 0 8px; font-size:.84rem; }
 ul.learn li { margin-bottom:4px; }
 ul.learn .who { color:var(--muted); font-size:.78rem; }
@@ -389,7 +419,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
           step="1" placeholder="any"></div></div>
       <div class="f"><label for="votes">Min poll votes</label>
         <input id="votes" type="number" min="0" step="5" value="__MINVOTES__"></div>
-      <button class="link" id="reset" type="button">Reset filters</button>
     </div>
     <div class="row">
       <div class="f"><label for="tagsearch">Filter by trait, category, mechanic, designer…</label>
@@ -408,25 +437,26 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 </div>
 
 <p class="resultline"><span id="count">__SHOWN__ rows</span><span
-  id="desc">__DESC__</span><span id="outcount" hidden></span></p>
+  id="desc">__DESC__</span><span id="outcount" hidden></span><button class="link" id="reset"
+  type="button">Reset filters</button></p>
 
 <div class="scroll">
 <table>
   <thead><tr>
-    <th class="thumb"></th>
-    <th class="num hide-sm" data-k="rk">Rank</th>
-    <th class="num" data-k="av">BGG</th>
-    <th class="num" data-k="my">Mine</th>
+    <th class="thumb w-thumb"></th>
+    <th class="num hide-sm w-rank" data-k="rk">Rank</th>
+    <th class="num w-hex" data-k="av">BGG</th>
+    <th class="num w-hex" data-k="my">Mine</th>
     <th data-k="n">Game</th>
-    <th class="num hide-sm" data-k="pl">Plays</th>
-    <th class="num" data-k="tmax">Time</th>
-    <th class="num hide-sm" data-k="w">Weight</th>
-    <th class="hide-sm" data-k="ix">Interact</th>
-    <th class="hide-sm" data-k="ds">Designer</th>
-    <th class="num hide-sm" data-k="verdict">At N</th>
-    <th class="num hide-sm wide-only" data-k="bestPct">Best</th>
-    <th class="num hide-sm" data-k="appr">Appr</th>
-    <th class="num hide-sm" data-k="rt" title="How many people have rated the game on BGG">Ratings</th>
+    <th class="num hide-sm w-plays" data-k="pl">Plays</th>
+    <th class="num w-time" data-k="tmax">Time</th>
+    <th class="num hide-sm w-weight" data-k="w">Weight</th>
+    <th class="hide-sm w-ix" data-k="ix">Interact</th>
+    <th class="hide-sm w-designer" data-k="ds">Designer</th>
+    <th class="num hide-sm w-atn" data-k="verdict">At N</th>
+    <th class="num hide-sm wide-only w-pct" data-k="bestPct">Best</th>
+    <th class="num hide-sm w-pct" data-k="appr">Appr</th>
+    <th class="num hide-sm w-ratings" data-k="rt" class="w-ratings" title="How many people have rated the game on BGG">Ratings</th>
   </tr></thead>
   <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="14"
     id="septext"></td></tr><!--__ROWS__--></tbody>
@@ -485,9 +515,12 @@ var tagRows = TAGS.map(function (t, i) {
     '<span class="tdesc"></span>';
   label.querySelector('.tname').textContent = t.n;
   var kindEl = label.querySelector('.tkind');
-  kindEl.textContent = t.k;
+  kindEl.textContent = { cat: 'category', mech: 'mechanic',
+                         trait: 'trait', designer: 'designer',
+                         family: 'family' }[t.k] || t.k;
   kindEl.className = 'tkind ' + t.k;
-  label.querySelector('.tcount').textContent = t.c;
+  label.querySelector('.tcount').innerHTML =
+    t.c + ' <span class="tot">of ' + t.c + '</span>';
   label.dataset.total = t.c;
   label.querySelector('.tdesc').textContent = t.d;
   label.title = t.d || t.n;
@@ -520,9 +553,11 @@ function recountTags(visibleIdx) {
   }
   for (var k = 0; k < tagRows.length; k++) {
     var row = tagRows[k], on = row.firstChild.checked;
-    // A ticked tag's own count would just restate the filtered total, which
-    // says nothing, so it keeps showing the collection-wide figure.
-    row.querySelector('.tcount').textContent = on ? row.dataset.total : counts[k];
+    // "X of Y": how many you would see if you ticked this, out of how many
+    // exist in the whole collection. A ticked row keeps showing its real
+    // current count rather than jumping back to the total.
+    row.querySelector('.tcount').innerHTML =
+      counts[k] + ' <span class="tot">of ' + row.dataset.total + '</span>';
     if (!on && counts[k] === 0) row.classList.add('zero');
     else row.classList.remove('zero');
   }
@@ -897,6 +932,7 @@ function filterByTag(i) {
   F.mode.value = mode;
   F.votes.value = votes;
   row.firstChild.checked = true;
+  syncSelects();
   el('more').open = true;
   refreshTagList();
   render();
@@ -932,13 +968,19 @@ function pollMatrix(g) {
 }
 
 function mediaBlock(g) {
-  var shots = (g.gal || []).slice(0, 4);
-  if (!shots.length && g.img) shots = [{ u: g.img, c: '' }];
+  // The box cover always leads; the gallery follows, minus any duplicate of it.
+  var shots = [];
+  if (g.img) shots.push({ u: g.img, c: g.n + ' — cover' });
+  (g.gal || []).forEach(function (im) {
+    if (im.u !== g.img) shots.push(im);
+  });
+  shots = shots.slice(0, 5);
   if (!shots.length) return '';
-  return '<div class="shots">' + shots.map(function (im) {
-    return '<a href="' + esc(im.u) + '" target="_blank" rel="noopener">' +
-      '<img loading="lazy" alt="' + esc(im.c) + '" title="' + esc(im.c) +
-      '" src="' + esc(im.u) + '"></a>';
+  return '<div class="shots">' + shots.map(function (im, i) {
+    return '<button type="button" class="shot" data-shot="' + esc(im.u) +
+      '" data-cap="' + esc(im.c) + '" title="' + esc(im.c) + '">' +
+      '<img loading="lazy" alt="' + esc(im.c) + '" src="' + esc(im.u) +
+      '"></button>';
   }).join('') + '</div>';
 }
 
@@ -1064,7 +1106,31 @@ function closeDetail() {
   if (openDetail) { openDetail.parentNode.removeChild(openDetail); openDetail = null; }
 }
 
+var lightbox = null;
+function openLightbox(url, caption) {
+  closeLightbox();
+  lightbox = document.createElement('div');
+  lightbox.id = 'lightbox';
+  lightbox.innerHTML = '<img src="' + esc(url) + '" alt="' + esc(caption) +
+    '"><div class="cap">' + esc(caption) + '</div>' +
+    '<div class="hint">click anywhere, or press Esc, to close</div>';
+  lightbox.addEventListener('click', closeLightbox);
+  document.body.appendChild(lightbox);
+}
+function closeLightbox() {
+  if (lightbox) { lightbox.parentNode.removeChild(lightbox); lightbox = null; }
+}
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeLightbox();
+});
+
 TBODY.addEventListener('click', function (e) {
+  var shot = e.target.closest('[data-shot]');
+  if (shot) {
+    e.stopPropagation();
+    openLightbox(shot.getAttribute('data-shot'), shot.getAttribute('data-cap'));
+    return;
+  }
   var gameBtn = e.target.closest('[data-game]');
   if (gameBtn) {
     e.stopPropagation();
@@ -1125,7 +1191,9 @@ Object.keys(F).forEach(function (k) {
 tagBox.addEventListener('change', function () { refreshTagList(); render(); });
 document.getElementById('tagsearch')
   .addEventListener('input', refreshTagList);
-el('reset').addEventListener('click', function () { applyDefaults(); render(); });
+el('reset').addEventListener('click', function () {
+  applyDefaults(); syncSelects(); render();
+});
 
 // The result line is the only sticky thing above the table, so the header's
 // offset tracks its height — which changes when the description wraps.
@@ -1217,12 +1285,19 @@ function enhanceSelect(sel) {
   sel.addEventListener('change', sync);
   sync();
   wrap._close = function () { open(false); };
+  wrap._sync = sync;
   return wrap;
 }
 
 var enhanced = [];
 function closeAll(except) {
   enhanced.forEach(function (w) { if (w !== except) w._close(); });
+}
+/** Re-read every styled dropdown from its native select. Needed whenever a
+ *  value is set in code — Reset, or a tag click — because assigning .value
+ *  fires no event for the button caption to listen to. */
+function syncSelects() {
+  enhanced.forEach(function (w) { if (w._sync) w._sync(); });
 }
 [].forEach.call(document.querySelectorAll('.panel select'), function (sel) {
   enhanced.push(enhanceSelect(sel));

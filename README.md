@@ -23,7 +23,8 @@ browser:
   count the base game can't manage alone
 - **BGG score** and **your own rating** side by side, as BGG's rating hexagons
 - **Complexity**, **play time**, **number of plays**, all as ranges
-- **Point salad** — yes / no / doesn't matter
+- **Scoring breadth** — Focused / Some / Broad / Salad, plus a multi-select of
+  the underlying scoring traits (end-game bonuses, contested market, auction, …)
 - **Level of interaction** — low / medium / high
 - Name search, and every column sortable
 
@@ -39,8 +40,29 @@ mechanics and categories: tags that mean players act *on* each other score
 High, competition over a shared pool scores Medium, parallel play scores Low,
 with a handful of documented overrides where BGG's tags mislead.
 
-**Point salad** is a hand-maintained list in
-[`point-salads.txt`](point-salads.txt).
+**Scoring breadth** — how widely a game spreads its points, from *Focused*
+(one contested currency decides it) to *Salad* (points come from everywhere) —
+is derived in [`scripts/breadth.py`](scripts/breadth.py). It names no games:
+the model counts *kinds of evidence* rather than weighting individual
+mechanics, because a weighted table invites quietly encoding opinions and a
+list of named games is a lookup, not a model.
+
+It rests on a measured finding. Comparing broad-scoring games against focused
+ones, the sharpest separator was how many **shared-pool** mechanics a game has
+— an auction, a market, a stock track (focused games averaged 1.43, broad ones
+0.19). Second was solo-play support (0.62 vs 0.07): a game that works alone is
+one where your score comes from your own engine rather than from beating
+anybody. Two plausible-sounding signals turned out worthless and are
+deliberately absent — the raw count of mechanics (gap 0.03) and BGG weight
+(0.17).
+
+Against a set of reference games it agrees on 21 of 23. The two it misses,
+left uncorrected so the model stays honest, are noted in
+[`breadth-overrides.txt`](breadth-overrides.txt) — which ships empty.
+
+The same mechanics also yield **scoring traits**, exposed as a multi-select, so
+you can ask for combinations a single flag could never express: *broad scoring,
+but still a contested market*.
 
 Both are meant to be argued with. Edit either file, re-run `build.py`, and the
 report follows.
@@ -132,7 +154,8 @@ to BGG, and so the only one that needs credentials.
 ### Terminal queries
 
 ```bash
-python3 scripts/query.py --players 4 --exclude-file point-salads.txt
+python3 scripts/query.py --players 4 --breadth upto-some
+python3 scripts/query.py --players 0 --breadth broad --trait "Contested market"
 python3 scripts/query.py --players 2 --max-weight 2.5 --max-time 45
 python3 scripts/query.py --players 5 --min-approval 90 --format json
 ```

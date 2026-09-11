@@ -31,6 +31,14 @@
    "Trains",
    "Transportation"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Components: Map (Continental / National scale)",
+   "Country: USA",
+   "Digital Implementations: 18xx.games",
+   "Misc: BGG Hall of Fame",
+   "Series: 18xx"
+  ],
   "interaction": "High",
   "interaction_shared": 5.0,
   "poll": {
@@ -76,6 +84,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.5,
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -108,6 +123,12 @@
   "categories": [
    "Economic",
    "Trains"
+  ],
+  "families": [
+   "Country: USA",
+   "Digital Implementations: 18xx.games",
+   "Players: Games with expansions that change player count",
+   "Series: 18xx"
   ],
   "interaction": "High",
   "interaction_shared": 4.0,
@@ -144,6 +165,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "End-game bonuses",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -177,6 +204,13 @@
    "Economic",
    "Trains",
    "Transportation"
+  ],
+  "families": [
+   "Country: USA",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: 18xx.games",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Series: 18xx"
   ],
   "interaction": "High",
   "interaction_shared": 4.5,
@@ -218,6 +252,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.5,
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -245,6 +286,15 @@
    "Point to Point Movement"
   ],
   "categories": [],
+  "families": [
+   "Components: Control Boards",
+   "Continents: North America",
+   "Country: USA",
+   "Mechanism: Tableau Building",
+   "Series: Small Box Euros (Devir)",
+   "Theme: Circus",
+   "Theme: Retro"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -275,6 +325,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "End-game bonuses",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -316,6 +372,25 @@
    "City Building",
    "Civilization",
    "Economic"
+  ],
+  "families": [
+   "Ancient: Babylon",
+   "Ancient: Egypt",
+   "Ancient: Greece",
+   "Constructions: Lighthouses",
+   "Constructions: Pyramids",
+   "Constructions: The Hanging Gardens of Babylon",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: BrettspielWelt",
+   "Digital Implementations: Google Play",
+   "Game: 7 Wonders",
+   "Mechanism: Artificial Player",
+   "Mechanism: Tableau Building",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: DIZED Tutorial",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with expansions that change player count"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -362,6 +437,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Tableau multipliers"
+  ],
   "plays": 3,
   "my_rating": 6.5
  },
@@ -405,6 +488,24 @@
    "Civilization",
    "Economic"
   ],
+  "families": [
+   "Ancient: Babylon",
+   "Ancient: Egypt",
+   "Ancient: Greece",
+   "Ancient: Rome",
+   "Constructions: Lighthouses",
+   "Constructions: Pyramids",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Game: 7 Wonders",
+   "Game: 7 Wonders Duel",
+   "Mechanism: Tableau Building",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with expansions that add solo play",
+   "Players: Two-Player Only Games",
+   "Versions & Editions: Two-Player Versions of More-Player Games"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -425,6 +526,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 6.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 15,
   "my_rating": 9.0
  },
@@ -461,6 +571,15 @@
   "categories": [
    "Economic",
    "Territory Building"
+  ],
+  "families": [
+   "Components: 3-Dimensional (3D)",
+   "Components: 9 x 12 Grids",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: VASSAL",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Series: 3M Bookshelf Series"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -502,6 +621,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -540,6 +667,12 @@
    "Fantasy",
    "Territory Building"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Components: Control Boards",
+   "Digital Implementations: Board Game Arena",
+   "Series: Terra Mystica"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -575,6 +708,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 6.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -612,6 +753,21 @@
    "Economic",
    "Farming"
   ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Animals: Pigs",
+   "Animals: Sheep",
+   "Components: Meeples (Animal) / Animeeples",
+   "Components: Wooden pieces & boards",
+   "Digital Implementations: Board Game Arena",
+   "Game: Agricola",
+   "Mechanism: Tableau Building",
+   "Occupation: Farmer",
+   "Players: Games with expansions that change player count",
+   "Players: Games with Solitaire Rules",
+   "Series: Harvest (Uwe Rosenberg)",
+   "Theme: Food / Cooking"
+  ],
   "interaction": "Medium",
   "interaction_shared": 5.25,
   "poll": {
@@ -642,6 +798,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -668,6 +831,13 @@
   "categories": [
    "Animals",
    "Farming"
+  ],
+  "families": [
+   "Components: Meeples (Animal) / Animeeples",
+   "Game: Agricola",
+   "Occupation: Farmer",
+   "Series: Harvest (Uwe Rosenberg)",
+   "Versions & Editions: Junior Versions of Grown-Up Games"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -699,6 +869,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -728,6 +903,14 @@
    "Card Game",
    "World War II"
   ],
+  "families": [
+   "Card Games: Lane Battler",
+   "Misc: LongPack Games",
+   "Players: Two-Player Only Games",
+   "Players: Wargames with Rules Supporting Only Two Players",
+   "Series:  Air, Land, & Sea",
+   "Theme: Animal Battles"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -748,6 +931,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Area control"
+  ],
   "plays": 1,
   "my_rating": 7.5
  },
@@ -783,6 +971,16 @@
    "Fantasy",
    "Puzzle"
   ],
+  "families": [
+   "Components: Digital Hybrid – App/Website Required",
+   "Components: Gems/Crystals",
+   "Components: Player Screens",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Boiteajeux",
+   "Digital Implementations: VASSAL",
+   "Theme: Alchemy",
+   "Theme: Wizards"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
   "poll": {
@@ -813,6 +1011,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "End-game bonuses",
+   "Auction"
+  ],
   "plays": 2,
   "my_rating": 7.0
  },
@@ -841,6 +1045,9 @@
   ],
   "categories": [
    "Renaissance"
+  ],
+  "families": [
+   "Theme: School / College / University"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -872,6 +1079,11 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "End-game bonuses"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -900,6 +1112,11 @@
   "categories": [
    "Ancient",
    "Economic"
+  ],
+  "families": [
+   "Ancient: Egypt",
+   "Constructions: Pyramids",
+   "Rivers: Nile"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
@@ -936,6 +1153,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -6.0,
+  "traits": [
+   "Auction",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -975,6 +1198,19 @@
    "Economic",
    "Science Fiction"
   ],
+  "families": [
+   "Components: Miniatures",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Yucata",
+   "Game: Anachrony",
+   "Mechanism: Tableau Building",
+   "Misc: Made by Panda",
+   "Players: Games with Solitaire Rules",
+   "Theme: Post-Apocalyptic",
+   "Theme: Time Travel"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.25,
   "poll": {
@@ -1005,6 +1241,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 8.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -1053,6 +1297,13 @@
    "Post-Napoleonic",
    "Video Game Theme"
   ],
+  "families": [
+   "History: Industrial Revolution",
+   "Mechanism: Tableau Building",
+   "Misc: LongPack Games",
+   "Players: Games with expansions that add solo play",
+   "Video Game Theme: Anno"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.25,
   "poll": {
@@ -1083,6 +1334,16 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 6.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -1124,6 +1385,24 @@
    "Economic",
    "Medieval"
   ],
+  "families": [
+   "Components:  Meeples",
+   "Components: Wooden pieces & boards",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "History: Francia",
+   "Misc: Mensa Select",
+   "Misc: Watch It Played How To Videos",
+   "Occupation: Architect",
+   "Players: Games with expansions that change player count",
+   "Players: Games with Solitaire Rules",
+   "Religious: Monks/Abbots & Monasteries/Abbeys",
+   "Series: Medieval Trilogies (Garphill Games)",
+   "Series: The West Kingdom Trilogy (Garphill Games)",
+   "Theme: Construction"
+  ],
   "interaction": "High",
   "interaction_shared": 2.25,
   "poll": {
@@ -1159,6 +1438,16 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 6.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 7.7
  },
@@ -1202,6 +1491,28 @@
    "Card Game",
    "Environmental"
   ],
+  "families": [
+   "Animals: Okapi",
+   "Components: Hexagonal Tiles",
+   "Continents: Africa",
+   "Continents: Asia",
+   "Continents: Europe",
+   "Continents: North America",
+   "Continents: South America",
+   "Country: Australia",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Game: Ark Nova",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules",
+   "Theme: Biology",
+   "Theme: Ecology",
+   "Theme: Science",
+   "Theme: Zoos, Aquaria, Safari Parks"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -1232,6 +1543,16 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 10.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market"
+  ],
   "plays": 1,
   "my_rating": 8.0
  },
@@ -1274,6 +1595,14 @@
    "Economic",
    "Industry / Manufacturing"
   ],
+  "families": [
+   "Country: England",
+   "Crowdfunding: Modian",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: VASSAL",
+   "Game: Arkwright",
+   "History: Industrial Revolution"
+  ],
   "interaction": "High",
   "interaction_shared": 5.5,
   "poll": {
@@ -1304,6 +1633,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 1.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -1343,6 +1681,14 @@
    "Card Game",
    "Industry / Manufacturing"
   ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Tabletopia",
+   "Game: Arkwright",
+   "History: Industrial Revolution",
+   "Players: Games with Solitaire Rules",
+   "Versions & Editions: Card Versions of Non-Card Games"
+  ],
   "interaction": "High",
   "interaction_shared": 3.0,
   "poll": {
@@ -1373,6 +1719,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market",
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -1407,6 +1762,16 @@
    "Abstract Strategy",
    "Renaissance"
   ],
+  "families": [
+   "Components: 5 x 5 Grids",
+   "Country: Portugal",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Game: Azul",
+   "Misc: Mensa Select",
+   "Theme: Art",
+   "Versions & Editions: Travel Versions of Non-Travel Games"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -1437,6 +1802,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Tableau multipliers"
+  ],
   "plays": 15,
   "my_rating": 8.5
  },
@@ -1470,6 +1842,15 @@
   "categories": [
    "Ancient"
   ],
+  "families": [
+   "Ancient: Babylon",
+   "Ancient: Mesopotamia",
+   "Components: Map (Regional scale)",
+   "Digital Implementations: VASSAL",
+   "Region: Middle East",
+   "Rivers: Euphrates",
+   "Rivers: Tigris"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -1500,6 +1881,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Area control"
+  ],
   "plays": 6,
   "my_rating": 8.5
  },
@@ -1527,6 +1913,11 @@
    "Abstract Strategy",
    "Fantasy",
    "Farming"
+  ],
+  "families": [
+   "Country: Japan",
+   "Series: Small Box Euros (Devir)",
+   "Setting: Kemushi Saga"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -1558,6 +1949,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -1594,6 +1988,13 @@
    "Dice",
    "Fighting",
    "Party Game"
+  ],
+  "families": [
+   "Components: Dice with Icons",
+   "Food & Drink: Beer",
+   "Game: BANG!",
+   "History: American Old West (Wild West)",
+   "Versions & Editions: Dice Versions of Non-Dice Games"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -1645,6 +2046,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 2,
   "my_rating": 6.0
  },
@@ -1681,6 +2087,18 @@
    "Environmental",
    "Industry / Manufacturing"
   ],
+  "families": [
+   "Components: Control Boards",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Game: Barrage",
+   "Occupation: Architect",
+   "Players: Games with expansions that change player count",
+   "Players: Games with Solitaire Rules",
+   "Theme: Art style – Art Deco",
+   "Theme: Dieselpunk",
+   "Theme: Electricity Generation"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -1711,6 +2129,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 6.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine"
+  ],
   "plays": 7,
   "my_rating": 9.0
  },
@@ -1746,6 +2171,15 @@
    "Farming",
    "Medieval"
   ],
+  "families": [
+   "Components: Multi-Use Cards",
+   "Components: Scoring pad",
+   "Digital Implementations: Board Game Arena",
+   "Food & Drink: Beer",
+   "Misc: LongPack Games",
+   "Players: Two-Player Only Games",
+   "Theme: Food / Cooking"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -1766,6 +2200,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -1795,6 +2235,13 @@
    "Card Game",
    "Economic",
    "Nautical"
+  ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Cities: Amsterdam (The Netherlands)",
+   "Country: Netherlands",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Theme: Colonial"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -1826,6 +2273,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Set collection",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -1860,6 +2313,14 @@
    "Science Fiction",
    "Space Exploration"
   ],
+  "families": [
+   "Components: Control Boards",
+   "Components: Dice with Icons",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Mechanism: Tableau Building",
+   "Players: Games with expansions that add solo play"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
   "poll": {
@@ -1890,6 +2351,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 5,
   "my_rating": 8.5
  },
@@ -1922,6 +2392,15 @@
    "Medieval",
    "Religious"
   ],
+  "families": [
+   "Containers: Book-like",
+   "Containers: Magnetic Flip Box",
+   "Containers: Video Tape Boxes",
+   "Religious: Monks/Abbots & Monasteries/Abbeys",
+   "Series: Biblios (Steve Finn)",
+   "Theme: Art",
+   "Theme: Books / Libraries"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
   "poll": {
@@ -1952,6 +2431,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.5,
+  "traits": [
+   "Set collection",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 9,
   "my_rating": 7.8
  },
@@ -1987,6 +2473,14 @@
    "Fantasy",
    "Mythology"
   ],
+  "families": [
+   "Animals: Rats",
+   "Animals: Turtles",
+   "Country: Japan",
+   "Digital Implementations: Tabletopia",
+   "Setting: Kemushi Saga",
+   "Theme: Trees and Forests"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.75,
   "poll": {
@@ -2017,6 +2511,14 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -2051,6 +2553,10 @@
    "Science Fiction",
    "Space Exploration"
   ],
+  "families": [
+   "Players: Games with Solitaire Rules",
+   "Theme: Robots"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.25,
   "poll": {
@@ -2081,6 +2587,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -2115,6 +2627,15 @@
    "Economic",
    "Exploration"
   ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Components: Dice with Icons",
+   "Components: Map (City Scale)",
+   "Components: Wooden pieces & boards",
+   "Players: Games with Solitaire Rules",
+   "Region: Hong Kong",
+   "Theme: Emergency Management / Disaster Preparedness"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -2145,6 +2666,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.5,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -2177,6 +2706,14 @@
   "categories": [
    "Abstract Strategy"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Components: Map (Regional scale)",
+   "Misc: LongPack Games",
+   "Region: Oceania",
+   "Theme: Tropical",
+   "Theme: Tropical Islands"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -2207,6 +2744,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Set collection",
+   "Area control"
+  ],
   "plays": 9,
   "my_rating": 8.5
  },
@@ -2238,6 +2781,20 @@
    "Card Game",
    "Farming",
    "Negotiation"
+  ],
+  "families": [
+   "Components: Multi-Use Cards",
+   "Containers: Tin/Metal Box",
+   "Digital Implementations: BrettspielWelt",
+   "Food & Drink: Vegetables",
+   "Game: Bohnanza",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: LongPack Games",
+   "Occupation: Farmer",
+   "Players: Games with expansions that change player count",
+   "Series: Bean Games (Lookout)",
+   "Series: Beveled Boxes (Gigamic)",
+   "Theme: Flowers"
   ],
   "interaction": "High",
   "interaction_shared": 0.0,
@@ -2284,6 +2841,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.5,
+  "traits": [
+   "Set collection",
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -2325,6 +2888,15 @@
    "Industry / Manufacturing",
    "Territory Building"
   ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Components: Control Boards",
+   "Components: Map (Regional scale)",
+   "Components: Meeples (Animal) / Animeeples",
+   "Components: Wooden pieces & boards",
+   "Digital Implementations: Tabletopia",
+   "Theme: Colonial"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -2355,6 +2927,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -2398,6 +2977,26 @@
    "Trains",
    "Transportation"
   ],
+  "families": [
+   "Cities: Birmingham (England)",
+   "Components: Map (Regional scale)",
+   "Components: Multi-Use Cards",
+   "Country: England",
+   "Country: United Kingdom",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Steam",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: VASSAL",
+   "Food & Drink: Beer",
+   "Game: Brass",
+   "History: Industrial Revolution",
+   "Misc: LongPack Games",
+   "Misc: Watch It Played How To Videos",
+   "Occupation: Engineer",
+   "Organizations: The Game Artisans of Canada",
+   "Theme: Canals"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -2428,6 +3027,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market"
+  ],
   "plays": 10,
   "my_rating": 10.0
  },
@@ -2471,6 +3079,19 @@
    "Post-Napoleonic",
    "Transportation"
   ],
+  "families": [
+   "Cities: Manchester (England, UK)",
+   "Components: Map (Regional scale)",
+   "Country: England",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Steam",
+   "Game: Brass",
+   "History: Industrial Revolution",
+   "Misc: BGG Hall of Fame",
+   "Misc: LongPack Games",
+   "Theme: Canals"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -2501,6 +3122,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market"
+  ],
   "plays": 3,
   "my_rating": 9.5
  },
@@ -2537,6 +3167,11 @@
    "Medieval",
    "Territory Building"
   ],
+  "families": [
+   "Components: Map (Continental / National scale)",
+   "Country: Ireland",
+   "Misc: Watch It Played How To Videos"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -2572,6 +3207,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -5.0,
+  "traits": [
+   "End-game bonuses",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -2602,6 +3244,12 @@
   ],
   "categories": [
    "Fantasy"
+  ],
+  "families": [
+   "Game: Broom Service",
+   "Series: Alea Big Box",
+   "Theme: Witches",
+   "Theme: Wizards"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -2638,6 +3286,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 1,
   "my_rating": 7.5
  },
@@ -2666,6 +3319,16 @@
   ],
   "categories": [
    "Economic"
+  ],
+  "families": [
+   "Cities: Brussels (Belgium)",
+   "Country: Belgium",
+   "Digital Implementations: Boiteajeux",
+   "Game: Bruxelles 189X",
+   "History: La Belle Epoque (1871–1914)",
+   "Occupation: Architect",
+   "Theme: Art",
+   "Theme: Art style – Art Nouveau"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
@@ -2702,6 +3365,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Auction",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -2732,6 +3401,14 @@
   ],
   "categories": [
    "Transportation"
+  ],
+  "families": [
+   "Category: Combinatorial",
+   "Components: Map (City Scale)",
+   "Components: Wooden pieces & boards",
+   "Digital Implementations: Online Board Gamers",
+   "Misc: Watch It Played How To Videos",
+   "Theme: Time Travel"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -2768,6 +3445,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 1,
   "my_rating": 8.0
  },
@@ -2799,6 +3479,13 @@
   "categories": [
    "Card Game",
    "Economic"
+  ],
+  "families": [
+   "Cities: Istanbul (Turkey)",
+   "History: Byzantium",
+   "Occupation: Merchant",
+   "Series: Small box (Lautapelit.fi)",
+   "Series: Small box (Mont Tàber)"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
@@ -2840,6 +3527,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -4.0,
+  "traits": [
+   "Set collection",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -2866,6 +3559,10 @@
   ],
   "categories": [
    "Card Game"
+  ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Setting: Capital Lux"
   ],
   "interaction": "Low",
   "interaction_shared": 0.5,
@@ -2897,6 +3594,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -2925,6 +3625,11 @@
    "City Building",
    "Medieval",
    "Territory Building"
+  ],
+  "families": [
+   "Game: Carcassonne",
+   "Theme: Wizards",
+   "Versions & Editions: Big Box Versions of Individual Games"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -2966,6 +3671,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Tableau multipliers",
+   "Area control"
+  ],
   "plays": 3,
   "my_rating": 7.0
  },
@@ -3008,6 +3719,18 @@
    "Industry / Manufacturing",
    "Post-Napoleonic"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Components: Game Trayz Inside",
+   "Components: Map (Continental / National scale)",
+   "Country: USA",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Misc: GettingGames Tutorial Videos",
+   "Series: Master Print (Quined)",
+   "Theme: Art style – Art Nouveau"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.75,
   "poll": {
@@ -3038,6 +3761,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -3073,6 +3803,25 @@
   "categories": [
    "Fantasy",
    "Territory Building"
+  ],
+  "families": [
+   "Components: Map (Continental / National scale)",
+   "Components: Polyominoes",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Yucata",
+   "Game: Cartographers",
+   "Mechanism: Drawing",
+   "Mechanism: Flip-and-Write",
+   "Misc: DIZED Tutorial",
+   "Misc: LongPack Games",
+   "Misc: Made by Panda",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with Solitaire Rules",
+   "Setting: World of Ulos"
   ],
   "interaction": "Low",
   "interaction_shared": -2.75,
@@ -3234,6 +3983,15 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 5.5,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 3,
   "my_rating": 6.5
  },
@@ -3272,6 +4030,23 @@
    "Medieval",
    "Territory Building"
   ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Animals: Chickens / Roosters",
+   "Animals: Pigs",
+   "Animals: Sheep",
+   "Components: Hexagonal Tiles",
+   "Country: France",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Steam",
+   "Game: The Castles of Burgundy",
+   "Mechanism: Tableau Building",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with Solitaire Rules",
+   "Region: Burgundy (France)",
+   "Series: Alea Revised Big Box",
+   "Versions & Editions: Big Box Versions of Individual Games"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.75,
   "poll": {
@@ -3302,6 +4077,14 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 8.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 2,
   "my_rating": 7.5
  },
@@ -3342,6 +4125,26 @@
    "Economic",
    "Negotiation"
   ],
+  "families": [
+   "Animals: Sheep",
+   "Components: Hexagonal Tiles",
+   "Components: HexHex3 Grids",
+   "Components: Wooden pieces & boards",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: BrettspielWelt",
+   "Digital Implementations: Screentop.gg",
+   "Digital Implementations: Steam",
+   "Game: Catan",
+   "Islands: Fictional",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with expansions that change player count",
+   "Promotional: Board Games",
+   "Series: World's Smallest (Super Impulse)",
+   "Theme: Colonial"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -3372,6 +4175,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -4.0,
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Direct conflict"
+  ],
   "plays": 27,
   "my_rating": 8.2
  },
@@ -3404,6 +4214,24 @@
    "Economic",
    "Fantasy",
    "Farming"
+  ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Animals: Dogs",
+   "Animals: Donkeys",
+   "Animals: Sheep",
+   "Animals: Wild boar",
+   "Components: Gems/Crystals",
+   "Components: Meeples (Animal) / Animeeples",
+   "Components: Wooden pieces & boards",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Caverna (Uwe Rosenberg)",
+   "Players: Games with Solitaire Rules",
+   "Series: Harvest (Uwe Rosenberg)",
+   "Theme: Mining"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.25,
@@ -3450,6 +4278,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 1.5,
+  "traits": [
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 1,
   "my_rating": 7.5
  },
@@ -3492,6 +4326,11 @@
    "Economic",
    "Medieval"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Country: France",
+   "Game: Caylus"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
   "poll": {
@@ -3527,6 +4366,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -3557,6 +4404,84 @@
   "categories": [
    "Abstract Strategy"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Traditional Games: Chess",
+   "Animals: Dogs",
+   "Animals: Ducks",
+   "Animals: Mice",
+   "Animals: Pigs",
+   "Authors: J.R.R. Tolkien",
+   "Books: Harry Potter",
+   "Brands: Coca-Cola",
+   "Brands: Disney",
+   "Characters: Mickey Mouse",
+   "Cities: Chicago (Illinois, USA)",
+   "Cities: New York (New York, USA)",
+   "Comic Books: DC Universe",
+   "Comic Books: Justice League",
+   "Comic Books: Marvel Universe",
+   "Comic Books: Superman",
+   "Comic Strips: Peanuts",
+   "Components: 8 x 8 Grids",
+   "Components: Miniatures",
+   "Components: Wooden pieces & boards",
+   "Country: USA",
+   "Creatures: Monsters",
+   "Digital Implementations: Ai Ai",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: BoardSpace",
+   "Digital Implementations: GoldToken",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: GrandGamesArena",
+   "Digital Implementations: igGameCenter",
+   "Digital Implementations: Little Golem",
+   "Digital Implementations: MindSports",
+   "Digital Implementations: Play Abstract Games",
+   "Digital Implementations: PlayOK",
+   "Digital Implementations: PlayStrategy",
+   "Digital Implementations: Pychess",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Triqqy",
+   "Digital Implementations: VASSAL",
+   "Fictional Events: Clone Wars",
+   "Misc: DIZED Tutorial",
+   "Movies: DreamWorks Animation",
+   "Movies: Pirates of the Caribbean",
+   "Movies: Shrek",
+   "Movies: Star Wars",
+   "Movies: Universal Studios Monsters",
+   "Players: Two-Player Only Games",
+   "Political: Elections",
+   "Promotional: Board Games",
+   "Series: 3M Bookshelf Series",
+   "Series: Games for Dummies",
+   "Series: GoPlay",
+   "Series: LEGO Games",
+   "Series: Take 'N' Play Anywhere (Patch Products)",
+   "Series: World's Smallest (Super Impulse)",
+   "Sports Teams: Manchester United Football Club",
+   "Theme: Anime / Manga",
+   "Theme: Superheroes",
+   "Theme: Vikings",
+   "Theme: Wizards",
+   "Toys: LEGO",
+   "Toys: Transformers",
+   "TV Shows: Buffy the Vampire Slayer",
+   "TV Shows: Doctor Who",
+   "TV Shows: Hanna-Barbera",
+   "TV Shows: Scooby-Doo!",
+   "TV Shows: Sesame Street",
+   "TV Shows: South Park",
+   "TV Shows: The Flintstones",
+   "TV Shows: The Muppet Show",
+   "TV Shows: The Simpsons",
+   "TV Shows: Thunderbirds",
+   "Video Game Theme: Minecraft",
+   "Video Game Theme: Nintendo",
+   "Video Game Theme: Super Mario Bros.",
+   "Video Game Theme: The Legend of Zelda"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -3577,6 +4502,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 102,
   "my_rating": 10.0
  },
@@ -3612,6 +4540,11 @@
    "Card Game",
    "City Building",
    "Medieval"
+  ],
+  "families": [
+   "Digital Implementations: Board Game Arena",
+   "Game: Citadels",
+   "Mechanism: Tableau Building"
   ],
   "interaction": "High",
   "interaction_shared": 2.5,
@@ -3663,6 +4596,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.5,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Direct conflict"
+  ],
   "plays": 2,
   "my_rating": 6.8
  },
@@ -3702,6 +4642,9 @@
    "Exploration",
    "Science Fiction"
   ],
+  "families": [
+   "Misc: LongPack Games"
+  ],
   "interaction": "Low",
   "interaction_shared": -0.25,
   "poll": {
@@ -3732,6 +4675,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 7.0,
+  "traits": [
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -3764,6 +4714,19 @@
    "Party Game",
    "Spies / Secret Agents",
    "Word Game"
+  ],
+  "families": [
+   "Components: 5 x 5 Grids",
+   "Components: Oversized Editions",
+   "Components: Sand Timers",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: VASSAL",
+   "Game: Codenames",
+   "Mechanism: Give a Clue / Get a Clue",
+   "Misc: Watch It Played How To Videos",
+   "Versions & Editions: Bigger Versions of Regular-Size Games",
+   "Word Games: Guess the Word"
   ],
   "interaction": "High",
   "interaction_shared": 1.5,
@@ -3815,6 +4778,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 10,
   "my_rating": 6.8
  },
@@ -3845,6 +4811,15 @@
    "Spies / Secret Agents",
    "Word Game"
   ],
+  "families": [
+   "Components: 5 x 5 Grids",
+   "Game: Codenames",
+   "Mechanism: Give a Clue / Get a Clue",
+   "Players: Two-Player Only Games",
+   "Versions & Editions: Bigger Versions of Regular-Size Games",
+   "Versions & Editions: Two-Player Versions of More-Player Games",
+   "Word Games: Guess the Word"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -3865,6 +4840,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -3894,6 +4872,11 @@
    "Deduction",
    "Party Game",
    "Spies / Secret Agents"
+  ],
+  "families": [
+   "Game: Codenames",
+   "Mechanism: Image Interpretation",
+   "Versions & Editions: Bigger Versions of Regular-Size Games"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -3945,6 +4928,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 10,
   "my_rating": 7.0
  },
@@ -3982,6 +4968,13 @@
    "Dice",
    "Renaissance"
   ],
+  "families": [
+   "Components: Coloured Dice",
+   "Components: Map (Continental / National scale)",
+   "Country: Portugal",
+   "History: Age of Discovery",
+   "Mechanism: Dice Drafting"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -4012,6 +5005,15 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -4045,6 +5047,18 @@
    "Bluffing",
    "Fighting",
    "Trains"
+  ],
+  "families": [
+   "Components: 3-Dimensional (3D)",
+   "Components: Oversized Editions",
+   "Components: Wooden pieces & boards",
+   "Digital Implementations: Board Game Arena",
+   "Game: Colt Express",
+   "Players: Games with expansions that add solo play",
+   "Players: Games with expansions that change player count",
+   "States: New Mexico",
+   "Theme: Burglary and Heists",
+   "Versions & Editions: Bigger Versions of Regular-Size Games"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -4086,6 +5100,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 4,
   "my_rating": 6.0
  },
@@ -4124,6 +5143,14 @@
   "categories": [
    "Ancient",
    "Economic"
+  ],
+  "families": [
+   "Ancient: Rome",
+   "Components: Map (Continental / National scale)",
+   "Game: Concordia",
+   "Mythology: Roman",
+   "Players: Games with expansions that add solo play",
+   "Players: Games with expansions that change player count"
   ],
   "interaction": "High",
   "interaction_shared": 3.5,
@@ -4165,6 +5192,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 1.5,
+  "traits": [
+   "Set collection",
+   "Auction"
+  ],
   "plays": 2,
   "my_rating": 8.0
  },
@@ -4194,6 +5227,14 @@
    "Card Game",
    "Fantasy",
    "Nautical"
+  ],
+  "families": [
+   "Components: Bombyx Score Scoring App",
+   "Digital Implementations: Board Game Arena",
+   "Mechanism: Tableau Building",
+   "Players: Games with expansions that add solo play",
+   "Series: Abyss Universe",
+   "Theme: Under the Sea"
   ],
   "interaction": "Low",
   "interaction_shared": 0.5,
@@ -4225,6 +5266,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "Set collection",
+   "Tableau multipliers"
+  ],
   "plays": 4,
   "my_rating": 7.5
  },
@@ -4256,6 +5303,10 @@
    "Economic",
    "Industry / Manufacturing",
    "Transportation"
+  ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Game: Container"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
@@ -4292,6 +5343,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.5,
+  "traits": [
+   "Set collection",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -4325,6 +5383,13 @@
    "Deduction",
    "Party Game",
    "Political"
+  ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Players: Games with expansions that change player count",
+   "Series: Postcard Box Games (Indie Boards and Cards)",
+   "Setting: Dystopian Universe (Indie Boards & Cards)"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -4366,6 +5431,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -4.5,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 10,
   "my_rating": 7.5
  },
@@ -4396,6 +5466,15 @@
    "Card Game",
    "Science Fiction",
    "Space Exploration"
+  ],
+  "families": [
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: BrettspielWelt",
+   "Digital Implementations: Tabletopia",
+   "Game: The Crew",
+   "Mechanism: Artificial Player",
+   "Misc: LongPack Games",
+   "Space: Earth's Solar System"
   ],
   "interaction": "High",
   "interaction_shared": 0.0,
@@ -4432,6 +5511,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [],
   "plays": 10,
   "my_rating": 7.0
  },
@@ -4468,6 +5550,9 @@
    "Science Fiction",
    "Wargame"
   ],
+  "families": [
+   "Components: Gems/Crystals"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -4498,6 +5583,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "End-game bonuses",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -4532,6 +5623,14 @@
   "categories": [
    "City Building"
   ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Cities: Cusco (Peru)",
+   "Country: Inca Empire",
+   "Country: Peru",
+   "Mountains: Andes",
+   "Series: The Mask Trilogy (Kramer / Kiesling)"
+  ],
   "interaction": "High",
   "interaction_shared": 2.5,
   "poll": {
@@ -4562,6 +5661,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Tableau multipliers",
+   "Auction",
+   "Area control"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -4591,6 +5697,12 @@
   ],
   "categories": [
    "City Building"
+  ],
+  "families": [
+   "Country: Japan",
+   "Setting: Kemushi Saga",
+   "Theme: Factories",
+   "Theme: Steampunk"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -4622,6 +5734,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Multi-track"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -4657,6 +5774,19 @@
    "Exploration",
    "Travel"
   ],
+  "families": [
+   "Components: Official Music Soundtrack",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Historical Figures: Charles Darwin",
+   "Islands: Galápagos (Ecuador)",
+   "Occupation: Researcher / Scientist",
+   "Series: 30 Journeys (Thundergryph)",
+   "Theme: Biology",
+   "Theme: Evolution",
+   "Theme: Science"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.75,
   "poll": {
@@ -4687,6 +5817,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "Set collection",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -4717,6 +5853,15 @@
    "Party Game",
    "Spies / Secret Agents",
    "Word Game"
+  ],
+  "families": [
+   "Components: Oversized Editions",
+   "Components: Sand Timers",
+   "Digital Implementations: Board Game Arena",
+   "Mechanism: Give a Clue / Get a Clue",
+   "Theme: Retro",
+   "Versions & Editions: Bigger Versions of Regular-Size Games",
+   "Word Games: Guess the Word"
   ],
   "interaction": "High",
   "interaction_shared": -0.5,
@@ -4768,6 +5913,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 2,
   "my_rating": 9.0
  },
@@ -4801,6 +5949,21 @@
    "Dice",
    "Science Fiction"
   ],
+  "families": [
+   "Animals: Dinosaurs",
+   "Components: Dice with Icons",
+   "Components: Polyominoes",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Tabletopia",
+   "Game: Dinosaur Island/Dinosaur World",
+   "Islands: Fictional",
+   "Mechanism: Dice Drafting",
+   "Mechanism: Roll-and-Write",
+   "Players: Games with Solitaire Rules",
+   "Theme: Amusement Parks / Theme Parks",
+   "Theme: Zoos, Aquaria, Safari Parks",
+   "Versions & Editions: Roll- or Flip-and-Write Versions of Non-Writing Games"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -4831,6 +5994,9 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -4862,6 +6028,16 @@
    "Card Game",
    "Humor",
    "Party Game"
+  ],
+  "families": [
+   "Components: Meeples (Animal) / Animeeples",
+   "Digital Implementations: Boiteajeux",
+   "Digital Implementations: VASSAL",
+   "Game: Dixit",
+   "Mechanism: Give a Clue / Get a Clue",
+   "Mechanism: Image Interpretation",
+   "Mechanism: Judging Games",
+   "Misc: Dice Tower Hall of Fame"
   ],
   "interaction": "High",
   "interaction_shared": -0.5,
@@ -4903,6 +6079,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 3,
   "my_rating": 6.5
  },
@@ -4938,6 +6117,19 @@
    "Environmental",
    "Prehistoric"
   ],
+  "families": [
+   "Animals: Prehistoric Non-Dinosaurs",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: VASSAL",
+   "Game: Dominant Species",
+   "Mechanism: 4X",
+   "Theme: Biology",
+   "Theme: Evolution",
+   "Theme: Nature",
+   "Theme: Science",
+   "Theme: Sealife, Seas, and Oceans",
+   "Theme: Seashells"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -4968,6 +6160,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -4999,6 +6196,17 @@
    "Card Game",
    "Medieval"
   ],
+  "families": [
+   "Crowdfunding: Wspieram",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Digital Implementations: VASSAL",
+   "Game: Dominion",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: Mensa Select"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -5029,6 +6237,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 3,
   "my_rating": 5.0
  },
@@ -5072,6 +6285,13 @@
    "Science Fiction",
    "Wargame"
   ],
+  "families": [
+   "Animals: Worms",
+   "Books: Dune",
+   "Components: Player Screens",
+   "Game: Dune (Avalon Hill original)",
+   "Theme: Deserts"
+  ],
   "interaction": "High",
   "interaction_shared": 5.0,
   "poll": {
@@ -5112,6 +6332,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -6.0,
+  "traits": [
+   "Auction",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 3,
   "my_rating": 6.6
  },
@@ -5154,6 +6381,19 @@
    "Political",
    "Science Fiction"
   ],
+  "families": [
+   "Books: Dune",
+   "Components:  Meeples",
+   "Components: Multi-Use Cards",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Dire Wolf Game Room",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Dune: Imperium",
+   "Misc: LongPack Games",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with Solitaire Rules"
+  ],
   "interaction": "High",
   "interaction_shared": 4.25,
   "poll": {
@@ -5184,6 +6424,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market",
+   "Direct conflict"
+  ],
   "plays": 9,
   "my_rating": 9.0
  },
@@ -5223,6 +6471,15 @@
    "Movies / TV / Radio theme",
    "Novel-based",
    "Science Fiction"
+  ],
+  "families": [
+   "Books: Dune",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Google Play",
+   "Game: Dune: Imperium",
+   "Misc: LongPack Games",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with Solitaire Rules"
   ],
   "interaction": "High",
   "interaction_shared": 3.75,
@@ -5264,6 +6521,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 1,
   "my_rating": 8.0
  },
@@ -5295,6 +6559,13 @@
    "Economic",
    "Transportation"
   ],
+  "families": [
+   "Components: Dice with Icons",
+   "Country: India",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Misc: LongPack Games",
+   "Theme: Colonial"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
   "poll": {
@@ -5325,6 +6596,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.0,
+  "traits": [
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -5356,6 +6632,13 @@
   ],
   "categories": [
    "Adventure"
+  ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Tabletopia",
+   "Players: Games with Solitaire Rules",
+   "Theme: Burglary and Heists",
+   "Theme: Mystery / Crime"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -5392,6 +6675,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -5430,6 +6718,40 @@
    "City Building",
    "Fantasy"
   ],
+  "families": [
+   "Animals: Badgers",
+   "Animals: Bats",
+   "Animals: Birds",
+   "Animals: Foxes",
+   "Animals: Hedgehogs / Porcupines",
+   "Animals: Lizards",
+   "Animals: Mice",
+   "Animals: Moles",
+   "Animals: Owls",
+   "Animals: Skunks",
+   "Animals: Squirrels / Chipmunks",
+   "Animals: Turtles",
+   "Components: 3-Dimensional (3D)",
+   "Components: Meeples (Animal) / Animeeples",
+   "Components: Wooden pieces & boards",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Dire Wolf Game Room",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "Game: Everdell",
+   "Mechanism: Tableau Building",
+   "Misc: DIZED Tutorial",
+   "Misc: LongPack Games",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with expansions that change player count",
+   "Players: Games with Solitaire Rules",
+   "Theme: Anthropomorphic Animals",
+   "Theme: Nature",
+   "Theme: Trees and Forests"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -5460,6 +6782,14 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 10.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -5489,6 +6819,15 @@
   "categories": [
    "Environmental",
    "Puzzle"
+  ],
+  "families": [
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Players: Games with Solitaire Rules",
+   "Theme: Nature",
+   "Theme: Trees and Forests"
   ],
   "interaction": "Low",
   "interaction_shared": 0.0,
@@ -5520,6 +6859,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -5555,6 +6900,16 @@
    "Environmental",
    "Prehistoric",
    "Print & Play"
+  ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Google Play",
+   "Mechanism: Tableau Building",
+   "Series: Evolution (North Star Games)",
+   "Theme: Biology",
+   "Theme: Evolution",
+   "Theme: Nature",
+   "Theme: Science"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -5596,6 +6951,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -5628,6 +6988,11 @@
    "Comic Book / Strip",
    "Humor",
    "Party Game"
+  ],
+  "families": [
+   "Animals: Cats",
+   "Card Games: Matching",
+   "Game: Exploding Kittens"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -5689,6 +7054,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Set collection",
+   "Direct conflict"
+  ],
   "plays": 2,
   "my_rating": 5.5
  },
@@ -5722,6 +7093,13 @@
    "City Building",
    "Religious"
   ],
+  "families": [
+   "Cities: Jerusalem",
+   "Country: Israel",
+   "Crowdfunding: Kickstarter",
+   "Religious: The Bible",
+   "Series: Ancient Anthology (Garphill Games)"
+  ],
   "interaction": "Low",
   "interaction_shared": -0.25,
   "poll": {
@@ -5752,6 +7130,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 2.5,
+  "traits": [
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -5785,6 +7169,15 @@
    "City Building",
    "Economic",
    "Farming"
+  ],
+  "families": [
+   "Ancient: Egypt",
+   "Animals: Alligators / Crocodiles",
+   "Components: Meeples (Animal) / Animeeples",
+   "Components: Wooden pieces & boards",
+   "Digital Implementations: Tabletopia",
+   "Rivers: Nile",
+   "Theme: Construction"
   ],
   "interaction": "Low",
   "interaction_shared": 0.75,
@@ -5821,6 +7214,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -5862,6 +7260,20 @@
    "Dice",
    "Industry / Manufacturing"
   ],
+  "families": [
+   "Components: Coloured Dice",
+   "Components: Multi-Use Cards",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "Game: Fantastic Factories",
+   "Mechanism: Tableau Building",
+   "Occupation: Architect",
+   "Occupation: Engineer",
+   "Players: Games with Solitaire Rules",
+   "Theme: Construction",
+   "Theme: Robots"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.75,
   "poll": {
@@ -5897,6 +7309,14 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -5940,6 +7360,29 @@
    "Medieval",
    "Puzzle"
   ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Animals: Fish / Fishes",
+   "Animals: Moose / Elk",
+   "Animals: Sheep",
+   "Components: Polyhedral (not D6) dice",
+   "Components: Polyominoes",
+   "Components: Wooden pieces & boards",
+   "Country: Iceland",
+   "Country: Norway",
+   "Digital Implementations: Board Game Arena",
+   "Game: A Feast for Odin",
+   "History: Viking Expansion",
+   "Islands: Greenland (Denmark)",
+   "Mechanism: Tableau Building",
+   "Mythology: Norse",
+   "Occupation: Farmer",
+   "Players: Games with Solitaire Rules",
+   "Region: Arctic",
+   "Series: Harvest (Uwe Rosenberg)",
+   "Theme: Food / Cooking",
+   "Theme: Vikings"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -5970,6 +7413,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 8.0,
+  "traits": [
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -6001,6 +7451,12 @@
    "Political",
    "Science Fiction"
   ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Players: Games with expansions that add solo play",
+   "Space: Colonization / Extraterrestrial Colonisation"
+  ],
   "interaction": "High",
   "interaction_shared": 3.0,
   "poll": {
@@ -6031,6 +7487,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "End-game bonuses",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -6071,6 +7533,15 @@
    "Fantasy",
    "Mythology"
   ],
+  "families": [
+   "Animals: Camels",
+   "Components: Meeples (Animal) / Animeeples",
+   "Digital Implementations: Board Game Arena",
+   "Game: Five Tribes",
+   "Mythology: Arabian",
+   "Players: Games with expansions that change player count",
+   "Region: Middle East"
+  ],
   "interaction": "Medium",
   "interaction_shared": 5.0,
   "poll": {
@@ -6101,6 +7572,14 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": -3.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction",
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -6135,6 +7614,10 @@
    "Economic",
    "Exploration",
    "Nautical"
+  ],
+  "families": [
+   "Misc: LongPack Games",
+   "Theme: Post-Apocalyptic"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -6171,6 +7654,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -6203,6 +7691,25 @@
   "categories": [
    "Economic",
    "Industry / Manufacturing"
+  ],
+  "families": [
+   "Components: Map (City Scale)",
+   "Crowdfunding: Gamefound",
+   "Decades: The 1950's",
+   "Digital Implementations: Boardgamecore",
+   "Digital Implementations: Online Board Gamers",
+   "Food & Drink: Beer",
+   "Food & Drink: Burgers",
+   "Food & Drink: Pizza",
+   "Food & Drink: Sausages / Hot Dogs",
+   "Food & Drink: Soda Pop / Soft Drinks",
+   "Mechanism: Tableau Building",
+   "Misc: LongPack Games",
+   "Misc: Made by Panda",
+   "Theme: Business/Management",
+   "Theme: Food / Cooking",
+   "Theme: Pub, Bars, Bistros...",
+   "Theme: Retro"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -6239,6 +7746,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 12,
   "my_rating": 10.0
  },
@@ -6279,6 +7794,22 @@
    "Space Exploration",
    "Territory Building"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Components: Control Boards",
+   "Components: Map (Interplanetary or Interstellar scale)",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Mechanism: Tableau Building",
+   "Misc: Made by Panda",
+   "Organizations: Automa Factory",
+   "Players: Games with Solitaire Rules",
+   "Series: Terra Mystica",
+   "Space: Colonization / Extraterrestrial Colonisation"
+  ],
   "interaction": "Medium",
   "interaction_shared": 0.75,
   "poll": {
@@ -6309,6 +7840,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 9.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 2,
   "my_rating": 8.0
  },
@@ -6353,6 +7892,18 @@
    "Science Fiction",
    "Space Exploration"
   ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Game: Galactic Cruise",
+   "Misc: GettingGames Tutorial Videos",
+   "Misc: LongPack Games",
+   "Occupation: Astronaut",
+   "Players: Games with Solitaire Rules",
+   "Space: Earth's Solar System",
+   "Theme: Cruise ships"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.75,
   "poll": {
@@ -6383,6 +7934,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 6.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 1,
   "my_rating": null
  },
@@ -6420,6 +7980,13 @@
    "Space Exploration",
    "Transportation"
   ],
+  "families": [
+   "Components: Gems/Crystals",
+   "Components: Sand Timers",
+   "Creatures: Aliens / Extraterrestrials",
+   "Digital Implementations: Steam",
+   "Game: Galaxy Trucker"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -6450,6 +8017,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Multi-track"
+  ],
   "plays": 2,
   "my_rating": 6.0
  },
@@ -6485,6 +8057,18 @@
   "categories": [
    "Economic"
   ],
+  "families": [
+   "Crowdfunding: Giochistarter",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Tabletopia",
+   "Game: The Gallerist",
+   "Misc: Made by Panda",
+   "Players: Games with Solitaire Rules",
+   "Theme: Art",
+   "Theme: Fine Art and Art Museums",
+   "Theme: Painting / Paintings"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.75,
   "poll": {
@@ -6515,6 +8099,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 4.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 3,
   "my_rating": 6.5
  },
@@ -6554,6 +8146,16 @@
    "Science Fiction",
    "Territory Building"
   ],
+  "families": [
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Boiteajeux",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules",
+   "Theme: Construction",
+   "Theme: Ecology",
+   "Theme: Solarpunk",
+   "Theme: Trees and Forests"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -6589,6 +8191,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 4.5,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -6640,6 +8250,22 @@
    "Fighting",
    "Miniatures"
   ],
+  "families": [
+   "Category: Dungeon Crawler",
+   "Components: Book as Board",
+   "Components: Forteller Audio Narration",
+   "Components: Miniatures",
+   "Components: Multi-Use Cards",
+   "Components: Standees",
+   "Digital Implementations: Steam",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Game: Gloomhaven",
+   "Mechanism: Campaign Games",
+   "Mechanism: Legacy",
+   "Misc: Limited Replayability",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with Solitaire Rules"
+  ],
   "interaction": "High",
   "interaction_shared": -0.75,
   "poll": {
@@ -6670,6 +8296,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.5,
+  "traits": [
+   "Parallel engine",
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 4.0
  },
@@ -6702,6 +8334,12 @@
    "Novel-based",
    "Renaissance"
   ],
+  "families": [
+   "Cities: Prague (Czech Republic)",
+   "Components: Marbles",
+   "Digital Implementations: Tabletopia",
+   "Religious: Judaism"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -6732,6 +8370,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "Set collection",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -6764,6 +8408,18 @@
   ],
   "categories": [
    "Medieval"
+  ],
+  "families": [
+   "Components: Map (Continental / National scale)",
+   "Containers: Tin/Metal Box",
+   "Country: Spain",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Yucata",
+   "Game: El Grande",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: DIZED Tutorial",
+   "Misc: Made by Panda"
   ],
   "interaction": "Medium",
   "interaction_shared": 5.0,
@@ -6800,6 +8456,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -6.5,
+  "traits": [
+   "Auction",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 7.5
  },
@@ -6834,6 +8497,19 @@
    "American West",
    "Animals"
   ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Cities: Kansas City (Missouri, USA)",
+   "Components: Control Boards",
+   "Components: Map (Regional scale)",
+   "Components: Wooden pieces & boards",
+   "Country: USA",
+   "Digital Implementations: Board Game Arena",
+   "Game: Great Western Trail",
+   "Mechanism: Tableau Building",
+   "Series: The Great Designers (Stronghold Games)",
+   "States: Texas"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -6864,6 +8540,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 6.0,
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 3,
   "my_rating": 8.0
  },
@@ -6896,6 +8579,14 @@
   "categories": [
    "Animals"
   ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Components: Control Boards",
+   "Country: Argentina",
+   "Game: Great Western Trail",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.25,
   "poll": {
@@ -6926,6 +8617,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 6.0,
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -6959,6 +8657,15 @@
    "Animals",
    "Farming"
   ],
+  "families": [
+   "Animals: Sheep",
+   "Components: Control Boards",
+   "Country: New Zealand",
+   "Game: Great Western Trail",
+   "Occupation: Farmer",
+   "Players: Games with Solitaire Rules",
+   "Theme: Colonial"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.25,
   "poll": {
@@ -6989,6 +8696,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -7028,6 +8742,12 @@
    "Industry / Manufacturing",
    "Transportation"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Country: Zimbabwe",
+   "Digital Implementations: Boardgamecore",
+   "Digital Implementations: Online Board Gamers"
+  ],
   "interaction": "Medium",
   "interaction_shared": 5.0,
   "poll": {
@@ -7063,6 +8783,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 6,
   "my_rating": 9.5
  },
@@ -7091,6 +8818,15 @@
   "categories": [
    "Medieval",
    "Travel"
+  ],
+  "families": [
+   "Components: Game Trayz Inside",
+   "Construction: Forbidden City (China)",
+   "Country: China",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Tabletopia",
+   "History: Ming Dynasty",
+   "Players: Games with Solitaire Rules"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -7127,6 +8863,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Set collection",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -7157,6 +8899,15 @@
   ],
   "categories": [
    "Medieval"
+  ],
+  "families": [
+   "Components: Control Boards",
+   "Components: Map (Continental / National scale)",
+   "Country: Germany",
+   "Game: Hansa Teutonica",
+   "Occupation: Merchant",
+   "Theme: Hanseatic League",
+   "Versions & Editions: Big Box Versions of Individual Games"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -7193,6 +8944,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 3,
   "my_rating": 7.5
  },
@@ -7227,6 +8986,12 @@
    "Environmental",
    "Puzzle"
   ],
+  "families": [
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Misc: LongPack Games",
+   "Theme: Nature"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.25,
   "poll": {
@@ -7257,6 +9022,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 3,
   "my_rating": 7.5
  },
@@ -7290,6 +9062,15 @@
    "Economic",
    "Industry / Manufacturing",
    "Nautical"
+  ],
+  "families": [
+   "Cities: Le Havre (France)",
+   "Country: France",
+   "Digital Implementations: Apple App Store",
+   "Game: Le Havre",
+   "Players: Games with Solitaire Rules",
+   "Region: Normandy (France)",
+   "Series: Harvest (Uwe Rosenberg)"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.75,
@@ -7326,6 +9107,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.5,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -7360,6 +9148,11 @@
    "Farming",
    "Industry / Manufacturing"
   ],
+  "families": [
+   "Food & Drink: Beer",
+   "Religious: Monks/Abbots & Monasteries/Abbeys",
+   "Theme: Stained Glass"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
   "poll": {
@@ -7390,6 +9183,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Multi-track"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -7423,6 +9221,17 @@
    "Negotiation",
    "Political"
   ],
+  "families": [
+   "Components:  Meeples",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "Game: Hegemony",
+   "Players: Games with expansions that add solo play",
+   "Theme: Labour movement / Workers rights / Unionising"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -7453,6 +9262,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 1,
   "my_rating": 8.0
  },
@@ -7492,6 +9304,28 @@
    "Science Fiction",
    "Space Exploration"
   ],
+  "families": [
+   "Components: Map (Interplanetary or Interstellar scale)",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Game: High Frontier",
+   "Misc: LongPack Games",
+   "Occupation: Astronaut",
+   "Space: Asteroids",
+   "Space: Comets",
+   "Space: Earth's Moon",
+   "Space: Earth's Solar System",
+   "Space: Jupiter",
+   "Space: Mars",
+   "Space: Mercury",
+   "Space: Neptune",
+   "Space: Pluto",
+   "Space: Saturn",
+   "Space: Uranus",
+   "Space: Venus",
+   "Theme: Astronomy",
+   "Theme: Science"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -7527,6 +9361,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.0,
+  "traits": [
+   "Auction",
+   "Direct conflict"
+  ],
   "plays": 2,
   "my_rating": 6.0
  },
@@ -7554,6 +9394,12 @@
   ],
   "categories": [
    "Card Game"
+  ],
+  "families": [
+   "Misc: Made by Panda",
+   "Series: Bookshelf (Gryphon Games)",
+   "Series: Small Box Big Game (Allplay)",
+   "Theme: Art style – Art Nouveau"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -7590,6 +9436,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -4.5,
+  "traits": [
+   "Auction"
+  ],
   "plays": 6,
   "my_rating": 8.5
  },
@@ -7620,6 +9471,11 @@
   "categories": [
    "Economic",
    "Industry / Manufacturing"
+  ],
+  "families": [
+   "Brands: Vehicles (Cars, Trucks, etc.)",
+   "Digital Implementations: Online Board Gamers",
+   "Theme: Automotive Industry"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -7656,6 +9512,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Multi-track",
+   "Tableau multipliers",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -7689,6 +9552,14 @@
   "categories": [
    "Economic",
    "Trains"
+  ],
+  "families": [
+   "Category: Combinatorial",
+   "Country: Portugal",
+   "Country: Spain",
+   "Series: Cube Rails",
+   "Series: Iron Rail (Capstone Games)",
+   "Series: Winsome Essen Sets"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -7725,6 +9596,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 2,
   "my_rating": 8.0
  },
@@ -7758,6 +9636,15 @@
    "Exploration",
    "Nautical"
   ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Digital Implementations: Tabletopia",
+   "Game: Imperial Settlers",
+   "Mechanism: Tableau Building",
+   "Misc: LongPack Games",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with Solitaire Rules"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -7788,6 +9675,11 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -7832,6 +9724,14 @@
    "Post-Napoleonic",
    "Trains"
   ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Category: Combinatorial",
+   "Cities: Trieste (Italy)",
+   "Country: Austria-Hungary",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Misc: GettingGames Tutorial Videos"
+  ],
   "interaction": "High",
   "interaction_shared": 5.0,
   "poll": {
@@ -7862,6 +9762,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -7898,6 +9807,15 @@
    "Card Game",
    "Civilization"
   ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Category: Autonomous simulation",
+   "Crowdfunding: Spieleschmiede",
+   "Game: Imperium (Osprey Games)",
+   "Historical Figures: Various",
+   "Mechanism: Tableau Building",
+   "Series: Imperium Engine Meta Series"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -7928,6 +9846,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 6.0
  },
@@ -7961,6 +9886,13 @@
    "Card Game",
    "Civilization"
   ],
+  "families": [
+   "Category: Autonomous simulation",
+   "Crowdfunding: Spieleschmiede",
+   "Game: Imperium (Osprey Games)",
+   "Mechanism: Tableau Building",
+   "Series: Imperium Engine Meta Series"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.75,
   "poll": {
@@ -7991,6 +9923,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -8032,6 +9970,13 @@
    "Industry / Manufacturing",
    "Transportation"
   ],
+  "families": [
+   "Components: Gems/Crystals",
+   "Country: Indonesia",
+   "Digital Implementations: Online Board Gamers",
+   "Digital Implementations: SlothNinja",
+   "Digital Implementations: TableTop Simulator Mod (TTS)"
+  ],
   "interaction": "High",
   "interaction_shared": 4.5,
   "poll": {
@@ -8067,6 +10012,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 1.5,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -8096,6 +10049,11 @@
   ],
   "categories": [
    "Abstract Strategy"
+  ],
+  "families": [
+   "Components: 3-Dimensional (3D)",
+   "Game: Ingenious",
+   "Players: Games with Solitaire Rules"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -8127,6 +10085,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 1.5,
+  "traits": [
+   "Tableau multipliers"
+  ],
   "plays": 6,
   "my_rating": 8.7
  },
@@ -8159,6 +10122,13 @@
   "categories": [
    "Card Game",
    "Civilization"
+  ],
+  "families": [
+   "Components: Multi-Use Cards",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Yucata",
+   "Game: Innovation",
+   "Mechanism: Tableau Building"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -8195,6 +10165,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Multi-track",
+   "Tableau multipliers",
+   "Direct conflict"
+  ],
   "plays": 61,
   "my_rating": 10.0
  },
@@ -8227,6 +10204,16 @@
   "categories": [
    "Card Game",
    "Civilization"
+  ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Components: Multi-Use Cards",
+   "Crowdfunding: BackerKit",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Yucata",
+   "Game: Innovation",
+   "Mechanism: Tableau Building",
+   "Versions & Editions: Big Box Versions of Individual Games"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -8263,6 +10250,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Multi-track",
+   "Tableau multipliers",
+   "Direct conflict"
+  ],
   "plays": 4,
   "my_rating": 10.0
  },
@@ -8290,6 +10284,11 @@
   "categories": [
    "Civilization",
    "Industry / Manufacturing"
+  ],
+  "families": [
+   "Components: Map (Global Scale)",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Tabletopia"
   ],
   "interaction": "Low",
   "interaction_shared": 0.75,
@@ -8321,6 +10320,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -8354,6 +10358,14 @@
    "Economic",
    "Post-Napoleonic",
    "Trains"
+  ],
+  "families": [
+   "Country: Ireland",
+   "Digital Implementations: Board Game Arena",
+   "Misc: Watch It Played How To Videos",
+   "Series: Cube Rails",
+   "Series: Iron Rail (Capstone Games)",
+   "Series: Winsome Essen Sets"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -8390,6 +10402,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.0,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 3,
   "my_rating": 7.0
  },
@@ -8416,6 +10436,12 @@
   ],
   "categories": [
    "Ancient"
+  ],
+  "families": [
+   "Ancient: Babylon",
+   "Ancient: Mesopotamia",
+   "Misc: Mensa Select",
+   "Theme: Gardening"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -8447,6 +10473,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Multi-track",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -8479,6 +10511,16 @@
   ],
   "categories": [
    "Economic"
+  ],
+  "families": [
+   "Cities: Istanbul (Turkey)",
+   "Components: Wooden pieces & boards",
+   "Country: Turkey",
+   "Digital Implementations: Tabletopia",
+   "Game: Istanbul (AEG)",
+   "Misc: LongPack Games",
+   "Series: Istanbul (Pegasus Spiele)",
+   "Versions & Editions: Big Box Versions of Individual Games"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -8515,6 +10557,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -8549,6 +10596,16 @@
    "Civilization",
    "Economic",
    "Science Fiction"
+  ],
+  "families": [
+   "Components: Multi-Use Cards",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Game Park",
+   "Game: It's a Wonderful World",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules"
   ],
   "interaction": "Low",
   "interaction_shared": 0.25,
@@ -8585,6 +10642,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 4.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine"
+  ],
   "plays": 1,
   "my_rating": null
  },
@@ -8615,6 +10679,13 @@
    "Deduction",
    "Party Game",
    "Word Game"
+  ],
+  "families": [
+   "Components: Dry Erase Markers / Dry Erase Surfaces",
+   "Digital Implementations: Board Game Arena",
+   "Mechanism: Give a Clue / Get a Clue",
+   "Misc: LongPack Games",
+   "Word Games: Guess the Word"
   ],
   "interaction": "High",
   "interaction_shared": -0.5,
@@ -8661,6 +10732,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [],
   "plays": 3,
   "my_rating": 6.0
  },
@@ -8690,6 +10764,13 @@
   "categories": [
    "Economic",
    "Industry / Manufacturing"
+  ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Tabletopia",
+   "Game: Kanban",
+   "Misc: Made by Panda",
+   "Theme: Automotive Industry"
   ],
   "interaction": "Low",
   "interaction_shared": 0.75,
@@ -8721,6 +10802,11 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Parallel engine"
+  ],
   "plays": 3,
   "my_rating": 7.5
  },
@@ -8765,6 +10851,18 @@
    "Territory Building",
    "Transportation"
   ],
+  "families": [
+   "Components: Player Screens",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Online Board Gamers",
+   "Digital Implementations: Tabletopia",
+   "Game: Keyflower",
+   "History: Age of Discovery",
+   "Series: Key (Richard Breese)",
+   "Series: Master Print (Quined)",
+   "Theme: Colonial"
+  ],
   "interaction": "Medium",
   "interaction_shared": 10.0,
   "poll": {
@@ -8805,6 +10903,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -6.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -8838,6 +10943,11 @@
    "City Building",
    "Economic"
   ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Ancient: Greece",
+   "Misc: Watch It Played How To Videos"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -8868,6 +10978,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -8902,6 +11018,16 @@
    "Political",
    "Wargame"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Components: Map (Continental / National scale)",
+   "Country: England",
+   "Country: Scotland",
+   "Country: Wales",
+   "Crowdfunding: Spieleschmiede",
+   "Game:  The King Is Dead",
+   "Misc: Watch It Played How To Videos"
+  ],
   "interaction": "High",
   "interaction_shared": 3.5,
   "poll": {
@@ -8932,6 +11058,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Contested market",
+   "Area control"
+  ],
   "plays": 5,
   "my_rating": 8.7
  },
@@ -8966,6 +11098,20 @@
    "Fighting",
    "Movies / TV / Radio theme",
    "Science Fiction"
+  ],
+  "families": [
+   "Cities: Tokyo (Japan)",
+   "Components: Dice with Icons",
+   "Components: Standees",
+   "Country: Japan",
+   "Creatures: Aliens / Extraterrestrials",
+   "Creatures: Monsters",
+   "Digital Implementations: Board Game Arena",
+   "Game: King of Tokyo",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: DIZED Tutorial",
+   "Theme: Kaiju",
+   "Theme: Villainy"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -9007,6 +11153,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.5,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 2,
   "my_rating": 4.0
  },
@@ -9039,6 +11190,22 @@
    "Puzzle",
    "Territory Building"
   ],
+  "families": [
+   "Components: 5 x 5 Grids",
+   "Components: Non-Traditional Dominoes",
+   "Components: Oversized Editions",
+   "Components: Scoring pad",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Kingdomino",
+   "Misc: DIZED Tutorial",
+   "Misc: LongPack Games",
+   "Misc: Watch It Played How To Videos",
+   "Series: Europe Collection (Blue Orange Games)",
+   "Versions & Editions: Bigger Versions of Regular-Size Games"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -9069,6 +11236,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Area control"
+  ],
   "plays": 3,
   "my_rating": 7.0
  },
@@ -9098,6 +11270,13 @@
    "Economic",
    "Industry / Manufacturing",
    "Racing"
+  ],
+  "families": [
+   "Brands: Vehicles (Cars, Trucks, etc.)",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Occupation: Engineer",
+   "Theme: Automotive Industry"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -9129,6 +11308,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Set collection",
+   "Multi-track"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -9165,6 +11350,11 @@
    "Economic",
    "Medieval"
   ],
+  "families": [
+   "Components: RE-Wood",
+   "Country: Czech Republic",
+   "Theme: Mining"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -9195,6 +11385,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -9230,6 +11425,18 @@
    "Industry / Manufacturing",
    "Political"
   ],
+  "families": [
+   "Cities: Lisbon (Portugal)",
+   "Components: Multi-Use Cards",
+   "Country: Portugal",
+   "Crowdfunding: Giochistarter",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Tabletopia",
+   "Misc: Made by Panda",
+   "Players: Games with Solitaire Rules",
+   "Theme: Earthquakes"
+  ],
   "interaction": "High",
   "interaction_shared": 1.75,
   "poll": {
@@ -9260,6 +11467,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 1,
   "my_rating": null
  },
@@ -9287,6 +11501,9 @@
   "categories": [
    "City Building",
    "Medieval"
+  ],
+  "families": [
+   "Theme: City"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -9318,6 +11535,11 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 4,
   "my_rating": 7.5
  },
@@ -9355,6 +11577,12 @@
    "City Building",
    "Economic"
   ],
+  "families": [
+   "Cities: London (England, UK)",
+   "Country: United Kingdom",
+   "Mechanism: Tableau Building",
+   "Misc: LongPack Games"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -9385,6 +11613,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 6.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -9430,6 +11667,16 @@
    "Fantasy",
    "Novel-based"
   ],
+  "families": [
+   "Authors: J.R.R. Tolkien",
+   "Game: 7 Wonders Duel",
+   "Mechanism: Tableau Building",
+   "Misc: LongPack Games",
+   "Players: Two-Player Only Games",
+   "Theme: Medieval Fantasy",
+   "Theme: Wizards",
+   "Versions & Editions: Versions with IP after the original release"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
   "poll": {
@@ -9450,6 +11697,17 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 3,
   "my_rating": 9.5
  },
@@ -9487,6 +11745,13 @@
   "categories": [
    "Renaissance"
   ],
+  "families": [
+   "Cities: Florence (Tuscany, Italy)",
+   "Country: Italy",
+   "Game: Lorenzo il Magnifico",
+   "Mechanism: Tableau Building",
+   "Versions & Editions: Big Box Versions of Individual Games"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
   "poll": {
@@ -9522,6 +11787,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -9554,6 +11826,19 @@
    "Exploration",
    "Number"
   ],
+  "families": [
+   "Card Games: Draw and Discard",
+   "Card Games: Lane Battler",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Steam",
+   "Digital Implementations: Triqqy",
+   "Game: Lost Cities",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: LongPack Games",
+   "Players: Two-Player Only Games",
+   "Series: Two-player games (Kosmos)",
+   "Theme: Archaeology / Paleontology"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.0,
   "poll": {
@@ -9574,6 +11859,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 5,
   "my_rating": 7.0
  },
@@ -9615,6 +11905,23 @@
    "Exploration",
    "Fantasy"
   ],
+  "families": [
+   "Components: Gems/Crystals",
+   "Components: Multi-Use Cards",
+   "Components: Official Music Soundtrack",
+   "Creatures: Monsters",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Yucata",
+   "Game: Lost Ruins of Arnak",
+   "Islands: Fictional",
+   "Occupation: Adventurer / Explorer",
+   "Players: Games with expansions that change player count",
+   "Players: Games with Solitaire Rules",
+   "Theme: Archaeology / Paleontology",
+   "Theme: Temple",
+   "Theme: Tropical",
+   "Theme: Tropical Islands"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -9645,6 +11952,14 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -9675,6 +11990,14 @@
    "Card Game",
    "Deduction",
    "Renaissance"
+  ],
+  "families": [
+   "Card Games: Draw and Discard",
+   "Containers: Drawstring Bag",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Tabletopia",
+   "Game: Love Letter",
+   "Theme: Love / Romance"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -9716,6 +12039,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -4.5,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 15,
   "my_rating": 7.0
  },
@@ -9752,6 +12080,15 @@
    "Fantasy",
    "Maze",
    "Real-time"
+  ],
+  "families": [
+   "Components: Sand Timers",
+   "Contests: Fastaval Design Competition",
+   "Game: Magic Maze",
+   "Misc: LongPack Games",
+   "Players: Games with Solitaire Rules",
+   "Theme: Burglary and Heists",
+   "Theme: Mystery / Crime"
   ],
   "interaction": "High",
   "interaction_shared": 0.25,
@@ -9803,6 +12140,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Parallel engine"
+  ],
   "plays": 1,
   "my_rating": 2.0
  },
@@ -9832,6 +12174,15 @@
    "Abstract Strategy",
    "Card Game"
   ],
+  "families": [
+   "Card Games: Lane Battler",
+   "Components: Cloth Boards",
+   "Digital Implementations: Board Game Arena",
+   "Players: Two-Player Only Games",
+   "Religious: Buddhism",
+   "Series: Fur Zwei Spieler (Lookout Games)",
+   "Series: Mandala (Lookout games)"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
   "poll": {
@@ -9852,6 +12203,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Set collection",
+   "Auction",
+   "Area control"
+  ],
   "plays": 21,
   "my_rating": 8.5
  },
@@ -9895,6 +12253,19 @@
    "Nautical",
    "Pirates"
   ],
+  "families": [
+   "Cities: Maracaibo (Venezuela)",
+   "Components: Control Boards",
+   "Components: Map (Continental / National scale)",
+   "Components: Multi-Use Cards",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Game: Maracaibo",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules",
+   "Region: Caribbean Sea",
+   "Theme: Colonial"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.75,
   "poll": {
@@ -9925,6 +12296,15 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 5.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -9959,6 +12339,12 @@
    "Space Exploration",
    "Video Game Theme"
   ],
+  "families": [
+   "Creatures: Aliens / Extraterrestrials",
+   "Crowdfunding: Spieleschmiede",
+   "Mechanism: Tableau Building",
+   "Space: Orion"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -9989,6 +12375,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -10018,6 +12409,15 @@
   ],
   "categories": [
    "Renaissance"
+  ],
+  "families": [
+   "Cities: Florence (Tuscany, Italy)",
+   "Components: Wooden pieces & boards",
+   "Country: Italy",
+   "Crowdfunding: Kickstarter",
+   "Misc: LongPack Games",
+   "Occupation: Merchant",
+   "Series: Knizia Florentine auction games"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -10059,6 +12459,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Auction"
+  ],
   "plays": 5,
   "my_rating": 8.5
  },
@@ -10086,6 +12494,12 @@
   "categories": [
    "Card Game",
    "Industry / Manufacturing"
+  ],
+  "families": [
+   "Cities: Venice (Veneto, Italy)",
+   "Components: Transparent Elements",
+   "Country: Italy",
+   "Misc: Mensa Select"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -10117,6 +12531,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Tableau multipliers",
+   "Area control"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -10150,6 +12570,18 @@
    "Comic Book / Strip",
    "Deduction",
    "Spies / Secret Agents"
+  ],
+  "families": [
+   "Components: Digital Hybrid – App/Website Required",
+   "Components: Game Trayz Inside",
+   "Components: Player Screens",
+   "Components: Standees",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Tabletopia",
+   "Players: One versus Many",
+   "Theme: Psychology"
   ],
   "interaction": "High",
   "interaction_shared": 0.0,
@@ -10186,6 +12618,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 4,
   "my_rating": 6.5
  },
@@ -10223,6 +12658,14 @@
    "Mythology",
    "Prehistoric"
   ],
+  "families": [
+   "Ancient: Greece",
+   "Digital Implementations: Tabletopia",
+   "Islands: Crete (Greece)",
+   "Mechanism: Dice Drafting",
+   "Mechanism: Tableau Building",
+   "Mythology: Greek"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -10253,6 +12696,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -10283,6 +12732,14 @@
   "categories": [
    "Card Game",
    "Print & Play"
+  ],
+  "families": [
+   "Components: Multi-Use Cards",
+   "Country: Japan",
+   "Digital Implementations: Yucata",
+   "Mechanism: Tableau Building",
+   "Religious: Buddhism",
+   "Theme: Temple"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -10319,6 +12776,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.0,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 1,
   "my_rating": 7.5
  },
@@ -10354,6 +12816,18 @@
    "Murder / Mystery",
    "Party Game",
    "Real-time"
+  ],
+  "families": [
+   "Components: Official Music Soundtrack",
+   "Components: Player Screens",
+   "Components: Sand Timers",
+   "Creatures: Ghosts",
+   "Digital Implementations: Steam",
+   "Game: Mysterium",
+   "Holidays: Halloween",
+   "Mechanism: Give a Clue / Get a Clue",
+   "Mechanism: Image Interpretation",
+   "Theme: Spooky Old Houses"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -10400,6 +12874,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 1,
   "my_rating": null
  },
@@ -10430,6 +12907,17 @@
    "Exploration",
    "Nautical",
    "Renaissance"
+  ],
+  "families": [
+   "Components: Map (Global Scale)",
+   "Components: Wooden pieces & boards",
+   "Country: Portugal",
+   "Digital Implementations: Yucata",
+   "Game: Navegador",
+   "History: Age of Discovery",
+   "Region: The World",
+   "Series: Rondel (Mac Gerdts)",
+   "Theme: Colonial"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -10466,6 +12954,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Multi-track",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -10501,6 +12995,12 @@
    "Age of Reason",
    "Travel"
   ],
+  "families": [
+   "Game: Newton",
+   "Occupation: Researcher / Scientist",
+   "Theme: Physics",
+   "Theme: Science"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -10531,6 +13031,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -10564,6 +13071,13 @@
    "Card Game",
    "Fantasy",
    "Mythology"
+  ],
+  "families": [
+   "Components: Scoring pad",
+   "Creatures: Dwarves & Gnomes",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Game Park",
+   "Mythology: Norse"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
@@ -10600,6 +13114,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -5.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -10636,6 +13157,18 @@
    "Industry / Manufacturing",
    "Science Fiction"
   ],
+  "families": [
+   "Components: Map (Regional scale)",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Yucata",
+   "History: Industrial Revolution",
+   "Misc: GettingGames Tutorial Videos",
+   "Misc: LongPack Games",
+   "Region: Saxony (Germany)",
+   "Theme: Alternate History",
+   "Theme: Electricity Generation"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -10666,6 +13199,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -10693,6 +13235,13 @@
   "categories": [
    "Economic",
    "Nautical"
+  ],
+  "families": [
+   "Animals: Fish / Fishes",
+   "Country: Norway",
+   "Players: Games with Solitaire Rules",
+   "Series: Harvest (Uwe Rosenberg)",
+   "Theme: Fishing / Angling"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -10729,6 +13278,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -10770,6 +13322,14 @@
    "Territory Building",
    "Wargame"
   ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Game: Oath",
+   "Mechanism: Campaign Games",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules"
+  ],
   "interaction": "High",
   "interaction_shared": 1.25,
   "poll": {
@@ -10810,6 +13370,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Parallel engine",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 2,
   "my_rating": 6.8
  },
@@ -10851,6 +13418,16 @@
    "Space Exploration",
    "Territory Building"
   ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Tabletopia",
+   "Game: On Mars",
+   "Misc: Made by Panda",
+   "Players: Games with Solitaire Rules",
+   "Space: Colonization / Extraterrestrial Colonisation",
+   "Space: Earth's Solar System",
+   "Space: Mars"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -10881,6 +13458,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 7.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 1,
   "my_rating": 6.5
  },
@@ -10914,6 +13499,14 @@
    "Deduction",
    "Horror",
    "Party Game"
+  ],
+  "families": [
+   "Creatures: Werewolves",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Game: Werewolf / Mafia",
+   "Misc: Made by Panda",
+   "Series: One Night (Bézier Games)"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -10975,6 +13568,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 23,
   "my_rating": 7.8
  },
@@ -11008,6 +13604,12 @@
    "Deduction",
    "Horror",
    "Party Game"
+  ],
+  "families": [
+   "Creatures: Werewolves",
+   "Crowdfunding: Kickstarter",
+   "Game: Werewolf / Mafia",
+   "Series: One Night (Bézier Games)"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -11069,6 +13671,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -11103,6 +13708,16 @@
    "Religious",
    "Territory Building"
   ],
+  "families": [
+   "Country: France",
+   "Country: Ireland",
+   "Food & Drink: Beer",
+   "Food & Drink: Wine",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules",
+   "Religious: Monks/Abbots & Monasteries/Abbeys",
+   "Series: Harvest (Uwe Rosenberg)"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
   "poll": {
@@ -11133,6 +13748,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Contested market"
+  ],
   "plays": 1,
   "my_rating": 8.2
  },
@@ -11170,6 +13790,20 @@
    "Religious",
    "Travel"
   ],
+  "families": [
+   "Cities: Orléans (France)",
+   "Components:  Meeples",
+   "Components: Map (Continental / National scale)",
+   "Country: France",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Wspieram",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Tabletopia",
+   "Game: Orléans",
+   "Misc: Made by Panda",
+   "Players: Games with expansions that add solo play",
+   "Religious: Monks/Abbots & Monasteries/Abbeys"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -11205,6 +13839,14 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Direct conflict"
+  ],
   "plays": 3,
   "my_rating": 7.0
  },
@@ -11234,6 +13876,17 @@
   ],
   "categories": [
    "Medieval"
+  ],
+  "families": [
+   "Components: Control Boards",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Tabletopia",
+   "History: Francia",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules",
+   "Series: Medieval Trilogies (Garphill Games)",
+   "Series: The West Kingdom Trilogy (Garphill Games)"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.25,
@@ -11265,6 +13918,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 2,
   "my_rating": 7.5
  },
@@ -11303,6 +13963,12 @@
    "Economic",
    "Transportation"
   ],
+  "families": [
+   "Brands: Airlines",
+   "Components: Map (Global Scale)",
+   "Region: The World",
+   "Theme: Retro"
+  ],
   "interaction": "Medium",
   "interaction_shared": 7.0,
   "poll": {
@@ -11333,6 +13999,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -5.0,
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 2,
   "my_rating": 7.3
  },
@@ -11373,6 +14046,28 @@
    "Medical",
    "Travel"
   ],
+  "families": [
+   "Components: Map (Global Scale)",
+   "Components: Multi-Use Cards",
+   "Containers: Unique Shape",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Pandemic",
+   "Medical: Diseases",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: Made by Panda",
+   "Misc: Watch It Played How To Videos",
+   "Occupation: Dispatcher",
+   "Occupation: Medic / Doctor / Nurses",
+   "Occupation: Researcher / Scientist",
+   "Players: Games with expansions that add solo play",
+   "Players: Games with expansions that change player count",
+   "Region: The World",
+   "Theme: Science"
+  ],
   "interaction": "High",
   "interaction_shared": -0.25,
   "poll": {
@@ -11403,6 +14098,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 3,
   "my_rating": 6.5
  },
@@ -11438,6 +14140,25 @@
    "Economic",
    "Puzzle"
   ],
+  "families": [
+   "Theme: Sewing / Knitting / Cloth-Making",
+   "Category: Combinatorial",
+   "Components: 9 x 9 Grids",
+   "Components: Polyominoes",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Patchwork",
+   "Holidays: Christmas",
+   "Holidays: Halloween",
+   "Holidays: Valentine's Day",
+   "Misc: Dice Tower Hall of Fame",
+   "Players: Games with expansions that add solo play",
+   "Players: Two-Player Only Games",
+   "Series: Fur Zwei Spieler (Lookout Games)",
+   "Theme: Austronesian peoples"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -11458,6 +14179,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 13,
   "my_rating": 8.0
  },
@@ -11492,6 +14220,18 @@
    "Economic",
    "Wargame"
   ],
+  "families": [
+   "Ancient: Greece",
+   "Ancient: Sparta",
+   "Cities: Athens (Greece)",
+   "Components: Map (Continental / National scale)",
+   "Country: Greece",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "History: Peloponnesian War",
+   "Misc: LongPack Games",
+   "Players: Two-Player Only Games",
+   "Region: Aegean Sea"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -11512,6 +14252,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -11549,6 +14296,19 @@
    "Nautical",
    "Pirates"
   ],
+  "families": [
+   "Components: Multi-Use Cards",
+   "Country: Jamaica",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Yucata",
+   "Game: Port Royal",
+   "Mechanism: Tableau Building",
+   "Players: Games with expansions that add solo play",
+   "Region: Caribbean Sea",
+   "Theme: Colonial",
+   "Theme: Pirates"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -11584,6 +14344,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 4.5,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 12,
   "my_rating": 7.0
  },
@@ -11616,6 +14383,23 @@
   "categories": [
    "Economic",
    "Industry / Manufacturing"
+  ],
+  "families": [
+   "Components: Map (Continental / National scale)",
+   "Components: Wooden pieces & boards",
+   "Country: Germany",
+   "Country: USA",
+   "Decades: The 2000's",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: BrettspielWelt",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Power Grid",
+   "Mechanism: Tableau Building",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Occupation: Engineer",
+   "Theme: Electricity Generation"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
@@ -11657,6 +14441,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 6,
   "my_rating": 8.2
  },
@@ -11693,6 +14484,14 @@
    "Medieval",
    "Puzzle"
   ],
+  "families": [
+   "Cities: Prague (Czech Republic)",
+   "Components: Map (City Scale)",
+   "Country: Czech Republic",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Yucata",
+   "Mechanism: Purchase Additonal Actions"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -11723,6 +14522,14 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -11755,6 +14562,17 @@
    "City Building",
    "Economic",
    "Farming"
+  ],
+  "families": [
+   "Components: Wooden pieces & boards",
+   "Country: Puerto Rico",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: BrettspielWelt",
+   "Game: Puerto Rico",
+   "Mechanism: Tableau Building",
+   "Misc: Dice Tower Hall of Fame",
+   "Series: Alea Big Box",
+   "Theme: Colonial"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -11791,6 +14609,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.0,
+  "traits": [
+   "End-game bonuses",
+   "Contested market"
+  ],
   "plays": 1,
   "my_rating": 9.0
  },
@@ -11820,6 +14644,12 @@
    "Dice",
    "Science Fiction",
    "Space Exploration"
+  ],
+  "families": [
+   "Components: Coloured Dice",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "Mechanism: Dice Drafting"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -11851,6 +14681,9 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -11888,6 +14721,16 @@
    "Fantasy",
    "Medieval"
   ],
+  "families": [
+   "Components: Dice with Icons",
+   "Components: Gems/Crystals",
+   "Country: Germany",
+   "Digital Implementations: Tabletopia",
+   "Game: The Quacks of Quedlinburg",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with expansions that change player count",
+   "Theme: Witches"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -11918,6 +14761,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Multi-track"
+  ],
   "plays": 4,
   "my_rating": 6.2
  },
@@ -11957,6 +14805,16 @@
    "Exploration",
    "Racing"
   ],
+  "families": [
+   "Components:  Meeples",
+   "Components: Multi-Use Cards",
+   "Continents: South America",
+   "Game: The Quest for El Dorado",
+   "Misc: LongPack Games",
+   "Occupation: Adventurer / Explorer",
+   "Region: Amazon Rainforest",
+   "Theme: Tropical"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -11987,6 +14845,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.0,
+  "traits": [],
   "plays": 3,
   "my_rating": 7.7
  },
@@ -12018,6 +14879,18 @@
   "categories": [
    "Ancient",
    "Mythology"
+  ],
+  "families": [
+   "Ancient: Egypt",
+   "Crowdfunding: Gamefound",
+   "Game: Ra",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: LongPack Games",
+   "Mythology: Egyptian",
+   "Series: Alea Big Box",
+   "Series: Book Box (DiceTree)",
+   "Series: Euro Classics (Reiner Knizia)"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
@@ -12054,6 +14927,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -6.5,
+  "traits": [
+   "Set collection",
+   "Auction"
+  ],
   "plays": 9,
   "my_rating": 8.7
  },
@@ -12091,6 +14970,20 @@
    "Science Fiction",
    "Space Exploration"
   ],
+  "families": [
+   "Components: Multi-Use Cards",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Race for the Galaxy",
+   "Mechanism: Tableau Building",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: Made by Panda",
+   "Players: Games with expansions that add solo play",
+   "Players: Games with expansions that change player count"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -12121,6 +15014,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market"
+  ],
   "plays": 9,
   "my_rating": 7.5
  },
@@ -12154,6 +15055,12 @@
   "categories": [
    "Ancient"
   ],
+  "families": [
+   "Animals: Eagles",
+   "Country: Russia",
+   "Country: Ukraine",
+   "Series: Ancient Anthology (Garphill Games)"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.25,
   "poll": {
@@ -12184,6 +15091,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "Set collection",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -12218,6 +15131,15 @@
    "Renaissance",
    "Territory Building"
   ],
+  "families": [
+   "Components: Coloured Dice",
+   "Country: India",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Yucata",
+   "Game: Rajas of the Ganges",
+   "Mechanism: Dice Drafting",
+   "Religious: Hinduism"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -12248,6 +15170,11 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Multi-track"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -12274,6 +15201,18 @@
   ],
   "categories": [
    "Dice"
+  ],
+  "families": [
+   "Components: Coloured Dice",
+   "Components: Dice with Icons",
+   "Country: India",
+   "Digital Implementations: Yucata",
+   "Game: Rajas of the Ganges",
+   "Mechanism: Dice Drafting",
+   "Mechanism: Roll-and-Write",
+   "Religious: Hinduism",
+   "Versions & Editions: Dice Versions of Non-Dice Games",
+   "Versions & Editions: Roll- or Flip-and-Write Versions of Non-Writing Games"
   ],
   "interaction": "Low",
   "interaction_shared": -1.0,
@@ -12310,6 +15249,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -12342,6 +15284,20 @@
    "Dice",
    "Economic"
   ],
+  "families": [
+   "Cities: Moscow (Russia)",
+   "Components: Coloured Dice",
+   "Components: Control Boards",
+   "Country: Russia",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Yucata",
+   "Game: The Red Cathedral",
+   "Mechanism: Tableau Building",
+   "Misc: DIZED Tutorial",
+   "Occupation: Builder",
+   "Series: Small Box Euros (Devir)",
+   "Theme: Construction"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.75,
   "poll": {
@@ -12372,6 +15328,15 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -12410,6 +15375,13 @@
    "Negotiation",
    "Party Game",
    "Spies / Secret Agents"
+  ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Game: The Resistance",
+   "Game: Werewolf / Mafia",
+   "Series: Postcard Box Games (Indie Boards and Cards)",
+   "Theme: King Arthur / The Knights of the Round Table / Camelot"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -12471,6 +15443,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 5,
   "my_rating": 7.0
  },
@@ -12506,6 +15481,14 @@
    "Industry / Manufacturing",
    "Science Fiction"
   ],
+  "families": [
+   "Components: Multi-Use Cards",
+   "Digital Implementations: Board Game Arena",
+   "Game: Revive",
+   "Mechanism: Campaign Games",
+   "Mechanism: Tableau Building",
+   "Theme: Post-Apocalyptic"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -12536,6 +15519,11 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 1.5,
+  "traits": [
+   "Multi-track"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -12568,6 +15556,12 @@
    "Maze",
    "Puzzle",
    "Real-time"
+  ],
+  "families": [
+   "Components: 16 x 16 Grids",
+   "Components: Sand Timers",
+   "Players: Games with Solitaire Rules",
+   "Theme: Robots"
   ],
   "interaction": "Low",
   "interaction_shared": 0.5,
@@ -12729,6 +15723,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [],
   "plays": 5,
   "my_rating": 7.0
  },
@@ -12773,6 +15770,23 @@
    "Novel-based",
    "Territory Building"
   ],
+  "families": [
+   "Books: Robinson Crusoe",
+   "Components: Dice with Icons",
+   "Components: Wooden pieces & boards",
+   "Digital Implementations: Tabletopia",
+   "Game: Robinson Crusoe – Adventures on the Cursed Island",
+   "Islands: Fictional",
+   "Misc: DIZED Tutorial",
+   "Misc: LongPack Games",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with Solitaire Rules",
+   "Theme: Colonial",
+   "Theme: Survival",
+   "Theme: Tropical",
+   "Theme: Tropical Islands",
+   "Theme: Volcanoes"
+  ],
   "interaction": "High",
   "interaction_shared": 1.25,
   "poll": {
@@ -12803,6 +15817,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Parallel engine"
+  ],
   "plays": 2,
   "my_rating": 5.0
  },
@@ -12846,6 +15865,35 @@
    "Territory Building",
    "Wargame"
   ],
+  "families": [
+   "Animals: Beavers",
+   "Animals: Birds",
+   "Animals: Cats",
+   "Animals: Foxes",
+   "Animals: Mice",
+   "Animals: Rabbits / Hares",
+   "Animals: Raccoons",
+   "Components: Control Boards",
+   "Components: Map (Continental / National scale)",
+   "Components: Meeples (Animal) / Animeeples",
+   "Components: Polyhedral (not D6) dice",
+   "Components: Wooden pieces & boards",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Modian",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Dire Wolf Game Room",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Root",
+   "Mechanism: Tableau Building",
+   "Misc: Made by Panda",
+   "Players: Games with expansions that add solo play",
+   "Players: Games with expansions that change player count",
+   "Theme: Animal Battles",
+   "Theme: Anthropomorphic Animals",
+   "Theme: Nature",
+   "War Level of Command: Grand Strategy"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -12876,6 +15924,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -4.0,
+  "traits": [
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 6.5
  },
@@ -12907,6 +15961,15 @@
   "categories": [
    "Industry / Manufacturing"
   ],
+  "families": [
+   "Country: USA",
+   "Crowdfunding: Modian",
+   "Players: Games with Solitaire Rules",
+   "Series: Small Box Euros (Devir)",
+   "States: California",
+   "Theme: Climate Change",
+   "Theme: Environmental Protection / Degradation / Pollution"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.25,
   "poll": {
@@ -12937,6 +16000,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.5,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -12968,6 +16038,15 @@
    "Civilization",
    "Farming"
   ],
+  "families": [
+   "Components: Coloured Dice",
+   "Components: Polyominoes",
+   "Game: Santa Maria",
+   "Mechanism: Dice Drafting",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules",
+   "Theme: Colonial"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -12998,6 +16077,11 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -13042,6 +16126,33 @@
    "Science Fiction",
    "Territory Building"
   ],
+  "families": [
+   "Category: Autonomous simulation",
+   "Components:  Meeples",
+   "Components: Control Boards",
+   "Components: Map (Continental / National scale)",
+   "Components: Miniatures",
+   "Components: Wooden pieces & boards",
+   "Continents: Europe",
+   "Crowdfunding: Kickstarter",
+   "Decades: The 1920's",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "Game: Scythe",
+   "Mechanism: Tableau Building",
+   "Misc: DIZED Tutorial",
+   "Misc: Made by Panda",
+   "Misc: Watch It Played How To Videos",
+   "Organizations: Automa Factory",
+   "Players: Games with Solitaire Rules",
+   "Theme: Alternate History",
+   "Theme: Dieselpunk",
+   "Theme: Mech Warfare"
+  ],
   "interaction": "High",
   "interaction_shared": 2.25,
   "poll": {
@@ -13077,6 +16188,16 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 3.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 4,
   "my_rating": 6.9
  },
@@ -13111,6 +16232,19 @@
    "Pike and Shot",
    "Wargame"
   ],
+  "families": [
+   "Components: Block Wargames",
+   "Components: Map (Continental / National scale)",
+   "Components: Multi-Use Cards",
+   "Country: Japan",
+   "Digital Implementations: VASSAL",
+   "Digital Implementations: Yucata",
+   "History: Sengoku Period",
+   "Players: Two-Player Only Games",
+   "Players: Wargames with Rules Supporting Only Two Players",
+   "Series: Sekigahara mechanism",
+   "War Level of Command: Strategic"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -13131,6 +16265,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Auction"
+  ],
   "plays": 2,
   "my_rating": null
  },
@@ -13163,6 +16302,11 @@
    "Science Fiction",
    "Space Exploration"
   ],
+  "families": [
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Space: Colonization / Extraterrestrial Colonisation",
+   "Space: Earth's Moon"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -13193,6 +16337,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 2.5,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -13229,6 +16380,11 @@
    "Real-time",
    "Science Fiction",
    "Space Exploration"
+  ],
+  "families": [
+   "Creatures: Aliens / Extraterrestrials",
+   "Game: Sidereal Confluence",
+   "Misc: LongPack Games"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -13285,6 +16441,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.5,
+  "traits": [
+   "Multi-track",
+   "Parallel engine",
+   "Auction",
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 6.5
  },
@@ -13326,6 +16490,16 @@
    "Economic",
    "Science Fiction"
   ],
+  "families": [
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Yucata",
+   "Misc: LongPack Games",
+   "Space: Asteroids",
+   "Space: Colonization / Extraterrestrial Colonisation",
+   "Space: Earth's Moon",
+   "Space: Earth's Solar System",
+   "Theme: Mining"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.75,
   "poll": {
@@ -13356,6 +16530,14 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -13387,6 +16569,13 @@
   "categories": [
    "Territory Building"
   ],
+  "families": [
+   "Components: Miniatures",
+   "Crowdfunding: Kickstarter",
+   "Misc: Watch It Played How To Videos",
+   "Theme: Art style – Art Deco",
+   "Theme: Floating islands in the sky"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -13417,6 +16606,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction",
+   "Area control"
+  ],
   "plays": 1,
   "my_rating": null
  },
@@ -13450,6 +16647,17 @@
    "Fantasy",
    "Fighting",
    "Territory Building"
+  ],
+  "families": [
+   "Components: Map (Continental / National scale)",
+   "Creatures: Fairies / Elves / Pixies",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Small World",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with expansions that add solo play"
   ],
   "interaction": "High",
   "interaction_shared": 2.0,
@@ -13486,6 +16694,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.5,
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Area control"
+  ],
   "plays": 8,
   "my_rating": 7.0
  },
@@ -13515,6 +16730,7 @@
    "Card Game",
    "Children's Game"
   ],
+  "families": [],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -13550,6 +16766,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -4.5,
+  "traits": [
+   "Contested market",
+   "Auction"
+  ],
   "plays": 6,
   "my_rating": 6.7
  },
@@ -13580,6 +16802,7 @@
    "Science Fiction",
    "Space Exploration"
   ],
+  "families": [],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -13610,6 +16833,9 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -13641,6 +16867,14 @@
    "Mafia",
    "Territory Building"
   ],
+  "families": [
+   "Cities: New York (New York, USA)",
+   "Country: USA",
+   "Crowdfunding: Kickstarter",
+   "Decades: The 1920's",
+   "History: Prohibition in the USA",
+   "History: Roaring Twenties (1920-1929)"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -13671,6 +16905,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -13700,6 +16939,18 @@
    "Card Game",
    "Economic",
    "Renaissance"
+  ],
+  "families": [
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Splendor",
+   "Mechanism: Tableau Building",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: DIZED Tutorial",
+   "Misc: Watch It Played How To Videos",
+   "Theme: Jewelry",
+   "Theme: Jewels"
   ],
   "interaction": "Low",
   "interaction_shared": 0.5,
@@ -13731,6 +16982,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 2,
   "my_rating": 7.0
  },
@@ -13763,6 +17019,11 @@
    "Fighting",
    "Science Fiction"
   ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Game: Star Realms",
+   "Players: Games with Solitaire Rules"
+  ],
   "interaction": "High",
   "interaction_shared": 0.75,
   "poll": {
@@ -13793,6 +17054,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [
+   "Parallel engine",
+   "Direct conflict"
+  ],
   "plays": 7,
   "my_rating": 6.5
  },
@@ -13839,6 +17106,14 @@
    "Space Exploration",
    "Wargame"
   ],
+  "families": [
+   "Components: Dice with Icons",
+   "Components: Map (Interplanetary or Interstellar scale)",
+   "Components: Miniatures",
+   "Components: Standees",
+   "Creatures: Aliens / Extraterrestrials",
+   "Movies: Star Wars"
+  ],
   "interaction": "High",
   "interaction_shared": 3.0,
   "poll": {
@@ -13869,6 +17144,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 5,
   "my_rating": 8.0
  },
@@ -13900,6 +17184,12 @@
    "Economic",
    "Trains",
    "Transportation"
+  ],
+  "families": [
+   "Components: Map (Continental / National scale)",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Steam"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
@@ -13941,6 +17231,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Auction"
+  ],
   "plays": 1,
   "my_rating": 8.5
  },
@@ -13977,6 +17272,15 @@
    "Fantasy",
    "Fighting"
   ],
+  "families": [
+   "Category: Two-Player Fighting Games",
+   "Components: Dice with Icons",
+   "Game: Summoner Wars",
+   "Misc: LongPack Games",
+   "Misc: Watch It Played How To Videos",
+   "Players: Two-Player Only Games",
+   "Theme: Wizards"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -13997,6 +17301,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.0,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 3,
   "my_rating": 6.8
  },
@@ -14030,6 +17339,16 @@
    "Ancient",
    "City Building"
   ],
+  "families": [
+   "Ancient: Mesopotamia",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Tabletopia",
+   "Mechanism: Dice Drafting",
+   "Misc: LongPack Games",
+   "Occupation: Builder",
+   "Series: T games (Daniele Tascini)",
+   "Theme: Construction"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -14060,6 +17379,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 1.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -14090,6 +17416,12 @@
   "categories": [
    "Bluffing",
    "Political"
+  ],
+  "families": [
+   "Cities: Agra (India)",
+   "Country: India",
+   "Series: Alea Big Box",
+   "Series: Euro Classics (Reiner Knizia)"
   ],
   "interaction": "High",
   "interaction_shared": 3.0,
@@ -14126,6 +17458,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.0,
+  "traits": [
+   "Set collection",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -14154,6 +17492,13 @@
   "categories": [
    "Card Game",
    "Number"
+  ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Game: 6 nimmt!",
+   "Misc: Lowest Score Wins",
+   "Players: Games with Solitaire Rules",
+   "Series: Amigo Anniversary Rubber-Band Games"
   ],
   "interaction": "High",
   "interaction_shared": -0.5,
@@ -14215,6 +17560,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [],
   "plays": 4,
   "my_rating": 6.3
  },
@@ -14256,6 +17604,22 @@
    "Farming",
    "Territory Building"
   ],
+  "families": [
+   "Animals: Pandas",
+   "Components: 3-Dimensional (3D)",
+   "Components: Miniatures",
+   "Components: Wooden pieces & boards",
+   "Country: Japan",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Misc: Watch It Played How To Videos",
+   "Theme: Gardening",
+   "Theme: Nature",
+   "Theme: Trees and Forests",
+   "Theme: Weather"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -14286,6 +17650,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Tableau multipliers"
+  ],
   "plays": 3,
   "my_rating": 6.5
  },
@@ -14319,6 +17690,17 @@
    "Arabian",
    "Card Game"
   ],
+  "families": [
+   "Region: North Africa",
+   "Theme: Deserts",
+   "Components:  Meeples",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Yucata",
+   "Mechanism: Tableau Building",
+   "Players: Games with expansions that add solo play",
+   "Players: Two-Player Only Games",
+   "Series: Two-player games (Kosmos)"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -14339,6 +17721,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Tableau multipliers"
+  ],
   "plays": 1,
   "my_rating": null
  },
@@ -14375,6 +17764,16 @@
    "Economic",
    "Renaissance"
   ],
+  "families": [
+   "Cities: Cusco (Peru)",
+   "Country: Inca Empire",
+   "Country: Peru",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Tabletopia",
+   "Misc: LongPack Games",
+   "Players: Games with Solitaire Rules",
+   "Theme: Native Americans / First Peoples"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -14405,6 +17804,15 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.5,
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -14437,6 +17845,19 @@
    "Dice",
    "Mythology"
   ],
+  "families": [
+   "Ancient: Egypt",
+   "Cities: Luxor (Egypt)",
+   "Components: Coloured Dice",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Tabletopia",
+   "Game: Tekhenu – Obelisk of the Sun",
+   "Mechanism: Dice Drafting",
+   "Misc: LongPack Games",
+   "Mythology: Egyptian",
+   "Players: Games with Solitaire Rules",
+   "Series: T games (Daniele Tascini)"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -14467,6 +17888,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -14509,6 +17936,19 @@
    "City Building",
    "Economic"
   ],
+  "families": [
+   "Components: 8 x 8 Grids",
+   "Constructions: Pyramids",
+   "Country: Mexico",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Tabletopia",
+   "Game: Teotihuacan",
+   "Misc: LongPack Games",
+   "Misc: Watch It Played How To Videos",
+   "Players: Games with Solitaire Rules",
+   "Series: T games (Daniele Tascini)",
+   "Theme: Native Americans / First Peoples"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -14539,6 +17979,15 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 7.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers"
+  ],
   "plays": 1,
   "my_rating": 6.5
  },
@@ -14577,6 +18026,25 @@
    "Fantasy",
    "Territory Building"
   ],
+  "families": [
+   "Category: Combinatorial",
+   "Components: Control Boards",
+   "Components: Map (Continental / National scale)",
+   "Components: Wooden pieces & boards",
+   "Creatures: Dwarves & Gnomes",
+   "Creatures: Mermaids",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Yucata",
+   "Mechanism: Tableau Building",
+   "Misc: BGG Hall of Fame",
+   "Players: Games with expansions that add solo play",
+   "Series: Terra Mystica",
+   "Theme: Witches"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
   "poll": {
@@ -14612,6 +18080,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 4.5,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -14655,6 +18131,25 @@
    "Space Exploration",
    "Territory Building"
   ],
+  "families": [
+   "Components: Map (Global Scale)",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Terraforming Mars",
+   "Mechanism: Tableau Building",
+   "Misc: DIZED Tutorial",
+   "Occupation: Engineer",
+   "Players: Games with Solitaire Rules",
+   "Series: Terraforming Mars",
+   "Setting: Future Timeline (Fryxgames)",
+   "Space: Colonization / Extraterrestrial Colonisation",
+   "Space: Earth's Solar System",
+   "Space: Jupiter",
+   "Space: Mars",
+   "Theme: Science"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -14690,6 +18185,15 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 6.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Direct conflict"
+  ],
   "plays": 6,
   "my_rating": 8.2
  },
@@ -14725,6 +18229,17 @@
    "Civilization",
    "Economic"
   ],
+  "families": [
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Through the Ages",
+   "Historical Figures: Various",
+   "Mechanism: Tableau Building",
+   "Misc: BGG Hall of Fame",
+   "Theme: Colonial"
+  ],
   "interaction": "High",
   "interaction_shared": 3.0,
   "poll": {
@@ -14755,6 +18270,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "Parallel engine",
+   "Tableau multipliers",
+   "Auction",
+   "Direct conflict"
+  ],
   "plays": 2,
   "my_rating": 7.0
  },
@@ -14788,6 +18311,20 @@
    "Abstract Strategy",
    "Animals",
    "Arabian"
+  ],
+  "families": [
+   "Animals: Camels",
+   "Category: Combinatorial",
+   "Components: Meeples (Animal) / Animeeples",
+   "Mechanism: Connection",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: Made by Panda",
+   "Region: Middle East",
+   "Region: North Africa",
+   "Series: Euro Classics (Reiner Knizia)",
+   "Series: Fantasy Flight Silver Line",
+   "Series: Tile-Laying Trilogy (Reiner Knizia)",
+   "Theme: Deserts"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -14824,6 +18361,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 1.5,
+  "traits": [
+   "End-game bonuses",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -14855,6 +18398,21 @@
   ],
   "categories": [
    "Trains"
+  ],
+  "families": [
+   "Components: Map (Continental / National scale)",
+   "Continents: Europe",
+   "Country: Belgium",
+   "Country: France",
+   "Country: Germany",
+   "Country: Netherlands",
+   "Country: Russia",
+   "Country: Spain",
+   "Country: United Kingdom",
+   "Digital Implementations: Board Game Arena",
+   "Game: Ticket to Ride (Official)",
+   "Players: Games with expansions that change player count",
+   "Theme: Trains"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -14891,6 +18449,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection"
+  ],
   "plays": 1,
   "my_rating": 7.5
  },
@@ -14930,6 +18494,23 @@
    "Civilization",
    "Territory Building"
   ],
+  "families": [
+   "Ancient: Babylon",
+   "Ancient: Mesopotamia",
+   "Components: Map (Regional scale)",
+   "Components: Player Screens",
+   "Components: Wooden pieces & boards",
+   "Country: Syria",
+   "Digital Implementations: Board Game Arena",
+   "Game: Tigris & Euphrates",
+   "Misc: BGG Hall of Fame",
+   "Misc: Dice Tower Hall of Fame",
+   "Region: Middle East",
+   "Rivers: Euphrates",
+   "Rivers: Tigris",
+   "Series: Euro Classics (Reiner Knizia)",
+   "Series: Tile-Laying Trilogy (Reiner Knizia)"
+  ],
   "interaction": "High",
   "interaction_shared": 4.0,
   "poll": {
@@ -14960,6 +18541,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -4.0,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 3,
   "my_rating": 9.0
  },
@@ -15001,6 +18590,18 @@
    "Exploration",
    "Territory Building"
   ],
+  "families": [
+   "Country: Guatemala",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Board Game Arena",
+   "Misc: Dice Tower Hall of Fame",
+   "Promotional: Board Games",
+   "Series: The Mask Trilogy (Kramer / Kiesling)",
+   "Theme: Archaeology / Paleontology",
+   "Theme: Mayans",
+   "Theme: Native Americans / First Peoples",
+   "Theme: Temple"
+  ],
   "interaction": "High",
   "interaction_shared": 2.5,
   "poll": {
@@ -15031,6 +18632,16 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Tableau multipliers",
+   "Auction",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15063,6 +18674,18 @@
   "categories": [
    "Renaissance"
   ],
+  "families": [
+   "Components: Coloured Dice",
+   "Components: Map (Continental / National scale)",
+   "Continents: Europe",
+   "Country: Belgium",
+   "Digital Implementations: Yucata",
+   "Mechanism: Dice Drafting",
+   "Misc: LongPack Games",
+   "Occupation: Architect",
+   "Occupation: Merchant",
+   "Series: T games (Daniele Tascini)"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -15093,6 +18716,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15121,6 +18750,16 @@
   ],
   "categories": [
    "Ancient"
+  ],
+  "families": [
+   "Ancient: Rome",
+   "Components: Map (Continental / National scale)",
+   "Components: Wooden pieces & boards",
+   "Digital Implementations: Boiteajeux",
+   "History: Roman Empire",
+   "Misc: LongPack Games",
+   "Series: Book Box (DiceTree)",
+   "Series: Master Print (Quined)"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -15152,6 +18791,11 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15185,6 +18829,17 @@
   "categories": [
    "Post-Napoleonic"
   ],
+  "families": [
+   "Components: Dice with Icons",
+   "Components: Gems/Crystals",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Spieleschmiede",
+   "Digital Implementations: Tabletopia",
+   "Game: Trickerion",
+   "Misc: Made by Panda",
+   "Players: Games with expansions that add solo play",
+   "Theme: Art style – Art Deco"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -15215,6 +18870,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -15256,6 +18914,15 @@
    "Economic",
    "Medieval"
   ],
+  "families": [
+   "Cities: Troyes (France)",
+   "Components: Coloured Dice",
+   "Country: France",
+   "Digital Implementations: Board Game Arena",
+   "Game: Troyes",
+   "Misc: Made by Panda",
+   "Players: Games with Solitaire Rules"
+  ],
   "interaction": "High",
   "interaction_shared": 3.75,
   "poll": {
@@ -15286,6 +18953,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15336,6 +19011,15 @@
    "Territory Building",
    "Wargame"
   ],
+  "families": [
+   "Components: Hexagonal Tiles",
+   "Components: Map (Interplanetary or Interstellar scale)",
+   "Components: Miniatures",
+   "Digital Implementations: Board Game Arena",
+   "Game: Twilight Imperium",
+   "Mechanism: 4X",
+   "Misc: Made by Panda"
+  ],
   "interaction": "High",
   "interaction_shared": 2.5,
   "poll": {
@@ -15376,6 +19060,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.5,
+  "traits": [
+   "Multi-track",
+   "Contested market",
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15410,6 +19101,20 @@
    "Farming",
    "Mythology"
   ],
+  "families": [
+   "Components: Calendars",
+   "Components: Gears",
+   "Country: Guatemala",
+   "Country: Mexico",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Boiteajeux",
+   "Game: Tzolk'in – The Mayan Calendar",
+   "Players: Games with expansions that change player count",
+   "Series: T games (Daniele Tascini)",
+   "Theme: Mayans",
+   "Theme: Native Americans / First Peoples",
+   "Theme: Tropical"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
   "poll": {
@@ -15440,6 +19145,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15468,6 +19179,13 @@
   "categories": [
    "Industry / Manufacturing",
    "Trains"
+  ],
+  "families": [
+   "Country: Russia",
+   "Digital Implementations: Board Game Arena",
+   "Game: Russian Railroads",
+   "Mechanism: Tableau Building",
+   "Versions & Editions: Big Box Versions of Individual Games"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -15499,6 +19217,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track"
+  ],
   "plays": 1,
   "my_rating": null
  },
@@ -15532,6 +19256,21 @@
    "Wargame",
    "World War II"
   ],
+  "families": [
+   "Country: Egypt",
+   "Country: Italy",
+   "Country: Libya",
+   "Country: New Zealand",
+   "Country: United Kingdom",
+   "Crowdfunding: Spieleschmiede",
+   "History: World War II (Africa)",
+   "Players: Games with expansions that add solo play",
+   "Players: Two-Player Only Games",
+   "Players: Wargames with Rules Supporting Only Two Players",
+   "Region: North Africa",
+   "Series: Undaunted (Osprey Games)",
+   "Theme: Deserts"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -15552,6 +19291,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [],
   "plays": 7,
   "my_rating": 7.5
  },
@@ -15588,6 +19330,13 @@
    "Nautical",
    "Science Fiction"
   ],
+  "families": [
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Yucata",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules",
+   "Theme: Under the Sea"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.25,
   "poll": {
@@ -15618,6 +19367,12 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 5.0,
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15654,6 +19409,19 @@
    "Mythology",
    "Novel-based"
   ],
+  "families": [
+   "Books: Alice in Wonderland",
+   "Category: Two-Player Fighting Games",
+   "Components: Miniatures",
+   "Components: Multi-Use Cards",
+   "Digital Implementations: Google Play",
+   "Game: Unmatched",
+   "Misc: Made by Panda",
+   "Misc: Watch It Played How To Videos",
+   "Mythology: Arabian",
+   "Mythology: Greek",
+   "Theme: King Arthur / The Knights of the Round Table / Camelot"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -15684,6 +19452,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.0,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15722,6 +19495,18 @@
    "Horror",
    "Novel-based"
   ],
+  "families": [
+   "Books: Dr. Jekyll and Mr. Hyde",
+   "Books: Dracula",
+   "Books: Sherlock Holmes",
+   "Books: The Invisible Man",
+   "Category: Two-Player Fighting Games",
+   "Components: Miniatures",
+   "Components: Multi-Use Cards",
+   "Game: Unmatched",
+   "Misc: Made by Panda",
+   "Misc: Watch It Played How To Videos"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -15752,6 +19537,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.0,
+  "traits": [
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15786,6 +19576,16 @@
    "Mythology",
    "Novel-based"
   ],
+  "families": [
+   "Category: Two-Player Fighting Games",
+   "Components: Miniatures",
+   "Components: Multi-Use Cards",
+   "Creatures: Bigfoot / Yeti / Sasquatch",
+   "Folk Tales & Fairy Tales: Robin Hood",
+   "Game: Unmatched",
+   "Misc: Made by Panda",
+   "Players: Two-Player Only Games"
+  ],
   "interaction": "High",
   "interaction_shared": 0.0,
   "poll": {
@@ -15806,6 +19606,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -15834,6 +19637,14 @@
    "Card Game",
    "Humor",
    "Party Game"
+  ],
+  "families": [
+   "Card Games: Adding",
+   "Containers: Magnetic Flip Box",
+   "Creatures: Unicorns",
+   "Crowdfunding: Kickstarter",
+   "Game: Unstable unicorns",
+   "Misc: LongPack Games"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -15885,6 +19696,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Set collection",
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 3.0
  },
@@ -15926,6 +19743,17 @@
    "Economic",
    "Industry / Manufacturing"
   ],
+  "families": [
+   "Country: Portugal",
+   "Crowdfunding: Giochistarter",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Spieleschmiede",
+   "Food & Drink: Wine",
+   "Game: Vinhos",
+   "Misc: Made by Panda",
+   "Players: Games with Solitaire Rules",
+   "Rivers: Douro"
+  ],
   "interaction": "Medium",
   "interaction_shared": 5.25,
   "poll": {
@@ -15956,6 +19784,15 @@
    }
   },
   "point_salad": false,
+  "breadth": "Salad",
+  "breadth_score": 5.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -15990,6 +19827,15 @@
   "categories": [
    "Medieval"
   ],
+  "families": [
+   "Components: Control Boards",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "History: Francia",
+   "Series: Medieval Trilogies (Garphill Games)",
+   "Series: The West Kingdom Trilogy (Garphill Games)"
+  ],
   "interaction": "High",
   "interaction_shared": 0.75,
   "poll": {
@@ -16020,6 +19866,16 @@
    }
   },
   "point_salad": true,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 1,
   "my_rating": 7.0
  },
@@ -16056,6 +19912,16 @@
    "Science Fiction",
    "Space Exploration"
   ],
+  "families": [
+   "Components: Game Trayz Inside",
+   "Components: Hexagonal Tiles",
+   "Components: Map (Interplanetary or Interstellar scale)",
+   "Components: Miniatures",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Mechanism: 4X",
+   "Misc: Made by Panda"
+  ],
   "interaction": "High",
   "interaction_shared": -0.25,
   "poll": {
@@ -16086,6 +19952,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -16120,6 +19991,17 @@
    "Post-Napoleonic",
    "Trains",
    "Transportation"
+  ],
+  "families": [
+   "Category: Combinatorial",
+   "Cities: Chicago (Illinois, USA)",
+   "Country: USA",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: VASSAL",
+   "Series: Cube Rails",
+   "Series: Historic Railroads System (Winsome Games)",
+   "Series: Winsome Essen Sets",
+   "Series: Winsome Train Games (Rio Grande Games)"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
@@ -16161,6 +20043,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.5,
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -16200,6 +20089,17 @@
    "Territory Building",
    "Wargame"
   ],
+  "families": [
+   "Authors: J.R.R. Tolkien",
+   "Components: Map (Continental / National scale)",
+   "Components: Miniatures",
+   "Creatures: Dwarves & Gnomes",
+   "Creatures: Monsters",
+   "Misc: DIZED Tutorial",
+   "Series: War of the Ring (Nexus/Ares Games)",
+   "Theme: Medieval Fantasy",
+   "Theme: Wizards"
+  ],
   "interaction": "High",
   "interaction_shared": 1.5,
   "poll": {
@@ -16230,6 +20130,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Area control"
+  ],
   "plays": 2,
   "my_rating": 8.0
  },
@@ -16268,6 +20173,17 @@
    "Arabian",
    "Exploration"
   ],
+  "families": [
+   "Cities: Baghdad (Iraq)",
+   "Components: Coloured Dice",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Mechanism: Tableau Building",
+   "Series: Medieval Trilogies (Garphill Games)",
+   "Series: The South Tigris Trilogy (Garphill Games)",
+   "Theme: Astronomy"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.75,
   "poll": {
@@ -16298,6 +20214,16 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 5.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -16326,6 +20252,17 @@
   "categories": [
    "Environmental",
    "Science Fiction"
+  ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "Players: Games with expansions that add solo play",
+   "Theme: Art style – Art Nouveau",
+   "Theme: Climate Change",
+   "Theme: Steampunk",
+   "Theme: Weather"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -16357,6 +20294,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -16399,6 +20341,17 @@
    "Economic",
    "Medieval"
   ],
+  "families": [
+   "Components: Coloured Dice",
+   "Components: Control Boards",
+   "Country: Japan",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Tabletopia",
+   "Digital Implementations: Yucata",
+   "Mechanism: Dice Drafting",
+   "Series: Small Box Euros (Devir)",
+   "Theme: Samurai"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.75,
   "poll": {
@@ -16429,6 +20382,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Broad",
+  "breadth_score": 4.5,
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "plays": 2,
   "my_rating": 7.0
  },
@@ -16465,6 +20425,34 @@
    "Educational",
    "Environmental"
   ],
+  "families": [
+   "Animals: Birds",
+   "Animals: Crows / Ravens / Magpies",
+   "Animals: Ducks",
+   "Animals: Eagles",
+   "Animals: Geese",
+   "Animals: Owls",
+   "Animals: Turkeys",
+   "Components: Control Boards",
+   "Components: Dice with Icons",
+   "Components: Drop Tower",
+   "Components: Game Trayz Inside",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Board Game Arena",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Digital Implementations: Tabletopia",
+   "Game: Wingspan",
+   "Mechanism: Tableau Building",
+   "Misc: Made by Panda",
+   "Misc: Watch It Played How To Videos",
+   "Organizations: Automa Factory",
+   "Players: Games with Solitaire Rules",
+   "Theme: Biology",
+   "Theme: Ecology",
+   "Theme: Nature"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.25,
   "poll": {
@@ -16500,6 +20488,13 @@
    }
   },
   "point_salad": true,
+  "breadth": "Salad",
+  "breadth_score": 6.0,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine"
+  ],
   "plays": 2,
   "my_rating": 6.0
  },
@@ -16531,6 +20526,10 @@
   "categories": [
    "Fantasy"
   ],
+  "families": [
+   "Digital Implementations: Tabletopia",
+   "Theme: Witches"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -16561,6 +20560,11 @@
    }
   },
   "point_salad": true,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "End-game bonuses"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -16600,6 +20604,20 @@
    "Civilization",
    "Territory Building"
   ],
+  "families": [
+   "Components: Hexagonal Tiles",
+   "Components: Map (Regional scale)",
+   "Components: Player Screens",
+   "Country: China",
+   "Digital Implementations: Apple App Store",
+   "Digital Implementations: Dire Wolf Game Room",
+   "Digital Implementations: Google Play",
+   "Digital Implementations: Steam",
+   "Game: Tigris & Euphrates",
+   "History: Warring States Period of China",
+   "Rivers: Yangtze",
+   "Rivers: Yellow"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
   "poll": {
@@ -16630,6 +20648,14 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.0,
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 6,
   "my_rating": 9.5
  },
@@ -16664,6 +20690,13 @@
    "Animals",
    "Negotiation",
    "Political"
+  ],
+  "families": [
+   "Components: Player Screens",
+   "Misc: Made by Panda",
+   "Series: Crown Jewel Selection (Bitewing Games)",
+   "Theme: Anthropomorphic Animals",
+   "Theme: Zoos, Aquaria, Safari Parks"
   ],
   "interaction": "High",
   "interaction_shared": 0.0,
@@ -16710,6 +20743,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -2.0,
+  "traits": [
+   "End-game bonuses",
+   "Direct conflict"
+  ],
   "plays": 6,
   "my_rating": 7.5
  },
@@ -16742,6 +20781,15 @@
    "City Building",
    "Civilization"
   ],
+  "families": [
+   "Ancient: Babylon",
+   "Ancient: Egypt",
+   "Ancient: Greece",
+   "Digital Implementations: Board Game Arena",
+   "Game: 7 Wonders",
+   "Game: 7 Wonders Duel",
+   "Mechanism: Tableau Building"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -16762,6 +20810,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "Set collection"
+  ],
   "plays": 5,
   "my_rating": 8.0
  },
@@ -16796,6 +20849,10 @@
    "Medieval",
    "Negotiation"
   ],
+  "families": [
+   "Digital Implementations: Board Game Arena",
+   "Game: Catan"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -16826,6 +20883,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 1,
   "my_rating": 6.0
  },
@@ -16861,6 +20921,12 @@
    "Nautical",
    "Negotiation"
   ],
+  "families": [
+   "Components: Hexagonal Tiles",
+   "Digital Implementations: Apple App Store",
+   "Game: Catan",
+   "Islands: Fictional"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -16891,6 +20957,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 2,
   "my_rating": 7.0
  },
@@ -16924,6 +20993,10 @@
    "Expansion for Base-game",
    "Negotiation"
   ],
+  "families": [
+   "Creatures: Dragons",
+   "Game: Catan"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -16954,6 +21027,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -16986,6 +21062,13 @@
    "Economic",
    "Expansion for Base-game",
    "Industry / Manufacturing"
+  ],
+  "families": [
+   "Components: Map (City Scale)",
+   "Digital Implementations: Online Board Gamers",
+   "Food & Drink: Sausages / Hot Dogs",
+   "Food & Drink: Soda Pop / Soft Drinks",
+   "Theme: Food / Cooking"
   ],
   "interaction": "Low",
   "interaction_shared": 0.5,
@@ -17027,6 +21110,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -17058,6 +21144,11 @@
    "Expansion for Base-game",
    "Trains"
   ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Digital Implementations: Board Game Arena",
+   "Game: Great Western Trail"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.0,
   "poll": {
@@ -17088,6 +21179,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -17119,6 +21213,10 @@
    "Card Game",
    "Civilization",
    "Expansion for Base-game"
+  ],
+  "families": [
+   "Digital Implementations: Board Game Arena",
+   "Game: Innovation"
   ],
   "interaction": "Low",
   "interaction_shared": 0.0,
@@ -17155,6 +21253,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Tableau multipliers"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -17188,6 +21291,11 @@
    "Civilization",
    "Expansion for Base-game"
   ],
+  "families": [
+   "Admin: Better Description Needed!",
+   "Digital Implementations: Board Game Arena",
+   "Game: Innovation"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.0,
   "poll": {
@@ -17218,6 +21326,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Set collection",
+   "Tableau multipliers"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -17250,6 +21364,11 @@
    "Expansion for Base-game",
    "Card Game",
    "Civilization"
+  ],
+  "families": [
+   "Digital Implementations: Board Game Arena",
+   "Game: Innovation",
+   "Players: Expansions Changing Player Count"
   ],
   "interaction": "Low",
   "interaction_shared": 0.0,
@@ -17286,6 +21405,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Set collection",
+   "Tableau multipliers"
+  ],
   "plays": 1,
   "my_rating": 6.5
  },
@@ -17318,6 +21443,9 @@
    "Card Game",
    "Civilization",
    "Expansion for Base-game"
+  ],
+  "families": [
+   "Game: Innovation"
   ],
   "interaction": "Low",
   "interaction_shared": 0.0,
@@ -17359,6 +21487,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.0,
+  "traits": [
+   "Set collection",
+   "Tableau multipliers"
+  ],
   "plays": 1,
   "my_rating": null
  },
@@ -17396,6 +21530,14 @@
    "Economic",
    "Expansion for Base-game",
    "Science Fiction"
+  ],
+  "families": [
+   "Components: Multi-Use Cards",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Spieleschmiede",
+   "Game: It's a Wonderful World",
+   "Mechanism: Tableau Building",
+   "Players: Expansions Changing Player Count"
   ],
   "interaction": "Low",
   "interaction_shared": 0.25,
@@ -17442,6 +21584,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 2.5,
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -17477,6 +21626,11 @@
    "Exploration",
    "Travel"
   ],
+  "families": [
+   "Game: Lost Ruins of Arnak",
+   "Players: Games with Solitaire Rules",
+   "Theme: Archaeology / Paleontology"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -17507,6 +21661,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Some",
+  "breadth_score": 3.0,
+  "traits": [
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -17541,6 +21700,10 @@
    "Economic",
    "Industry / Manufacturing",
    "Transportation"
+  ],
+  "families": [
+   "Admin: Upcoming Releases",
+   "Game: Container"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
@@ -17577,6 +21740,13 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -3.5,
+  "traits": [
+   "Set collection",
+   "Contested market",
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -17610,6 +21780,14 @@
    "Medieval",
    "Religious",
    "Travel"
+  ],
+  "families": [
+   "Cities: Orléans (France)",
+   "Country: France",
+   "Crowdfunding: Wspieram",
+   "Digital Implementations: Tabletopia",
+   "Game: Orléans",
+   "Players: Expansions Changing Player Count"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -17646,6 +21824,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -17670,6 +21851,10 @@
   "mechanics": [],
   "categories": [
    "Expansion for Base-game"
+  ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Game: Ra"
   ],
   "interaction": "Low",
   "interaction_shared": 0.0,
@@ -17706,6 +21891,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -17736,6 +21924,11 @@
    "Animals",
    "Expansion for Base-game",
    "Wargame"
+  ],
+  "families": [
+   "Game: Root",
+   "Theme: Animal Battles",
+   "Theme: Anthropomorphic Animals"
   ],
   "interaction": "High",
   "interaction_shared": 0.0,
@@ -17777,6 +21970,9 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.0,
+  "traits": [],
   "plays": 0,
   "my_rating": null
  },
@@ -17813,6 +22009,16 @@
    "Expansion for Base-game",
    "Fantasy",
    "Wargame"
+  ],
+  "families": [
+   "Animals: Birds",
+   "Animals: Crows / Ravens / Magpies",
+   "Animals: Moles",
+   "Crowdfunding: Kickstarter",
+   "Game: Root",
+   "Players: Expansions Changing Player Count",
+   "Theme: Animal Battles",
+   "Theme: Anthropomorphic Animals"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -17854,6 +22060,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -4.5,
+  "traits": [
+   "Area control",
+   "Direct conflict"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -17884,6 +22096,14 @@
    "Economic",
    "Expansion for Base-game",
    "Transportation"
+  ],
+  "families": [
+   "Digital Implementations: Tabletopia",
+   "Game: Scythe",
+   "Organizations: Automa Factory",
+   "Players: Expansions Changing Player Count",
+   "Players: Games with Solitaire Rules",
+   "Theme: Alternate History"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -17930,6 +22150,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -0.5,
+  "traits": [
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -17961,6 +22186,9 @@
    "Expansion for Base-game",
    "Trains",
    "Transportation"
+  ],
+  "families": [
+   "Game: Steam"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -18002,6 +22230,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -18034,6 +22267,10 @@
    "Trains",
    "Transportation"
   ],
+  "families": [
+   "Game: Steam",
+   "States: California"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -18064,6 +22301,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Auction"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -18102,6 +22344,14 @@
    "Science Fiction",
    "Territory Building"
   ],
+  "families": [
+   "Digital Implementations: Board Game Arena",
+   "Game: Terraforming Mars",
+   "Series: Terraforming Mars",
+   "Setting: Future Timeline (Fryxgames)",
+   "Space: Colonization / Extraterrestrial Colonisation",
+   "Space: Jupiter"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -18137,6 +22387,12 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 0.5,
+  "traits": [
+   "Set collection",
+   "Contested market"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -18164,6 +22420,9 @@
   ],
   "categories": [
    "Expansion for Base-game"
+  ],
+  "families": [
+   "Game: Vinhos"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -18195,6 +22454,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": 1.0,
+  "traits": [
+   "Parallel engine"
+  ],
   "plays": 0,
   "my_rating": null
  },
@@ -18234,6 +22498,10 @@
    "Territory Building",
    "Wargame"
   ],
+  "families": [
+   "Authors: J.R.R. Tolkien",
+   "Series: War of the Ring (Nexus/Ares Games)"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -18264,6 +22532,11 @@
    }
   },
   "point_salad": false,
+  "breadth": "Focused",
+  "breadth_score": -1.5,
+  "traits": [
+   "Area control"
+  ],
   "plays": 0,
   "my_rating": null
  }

@@ -30,10 +30,16 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Install a browser for the screenshot
+      - name: Install a browser and fonts for the screenshot
+        # The report's font stack leads with Avenir Next, which is a macOS
+        # system font. Ubuntu has neither it nor a close match, so without a
+        # font here the README screenshot renders in DejaVu and looks nothing
+        # like the real page. Inter is the next entry in the stack. Cosmetic
+        # only, so a failure here must not fail the build.
         run: |
           pip install playwright
           playwright install --with-deps chromium
+          sudo apt-get install -y fonts-inter ||             echo "fonts-inter unavailable; screenshot will use a fallback face"
 
       - name: Normalise the cached XML
         run: python3 scripts/build.py

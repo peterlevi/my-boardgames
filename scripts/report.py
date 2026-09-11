@@ -59,7 +59,7 @@ def compact(games, inline=True):
             "gk": g["geek"], "my": g["my_rating"],
             "tmin": g["minplaytime"], "tmax": g["maxplaytime"],
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
-            "pl": g["plays"], "sal": 1 if g["point_salad"] else 0,
+            "pl": g["plays"], "br": g["breadth"], "tr": g["traits"],
             "ix": g["interaction"], "exp": 1 if g["is_expansion"] else 0,
             "of": g["expands"], "t": playtime(g),
             "top": max((v[0] for v in poll.values()), default=0),
@@ -77,6 +77,21 @@ RATING_COLORS = ["#a03530", "#a03530", "#b3414c", "#b94a75", "#a9518f",
 
 
 EM_DASH = "\u2014"
+
+# More interaction reads as the better end of the ramp.
+IX_PILL = {"High": "p3", "Medium": "p2", "Low": "p1"}
+# Narrower scoring reads as the better end, since that is the thing being
+# filtered for; Salad gets the warning tone.
+BREADTH_PILL = {"Focused": "p3", "Some": "p2", "Broad": "p1", "Salad": "pw"}
+
+# What each opening breadth filter admits.
+BREADTH_SETS = {
+    "any": None,
+    "focused": {"Focused"},
+    "upto-some": {"Focused", "Some"},
+    "broad": {"Broad", "Salad"},
+    "salad": {"Salad"},
+}
 
 
 def esc(v):
@@ -123,9 +138,21 @@ def reading(g, n, by_base, fold, min_votes, mode):
     return s, None
 
 
+def meter_class(pct):
+    """Strong to weak, so a column of percentages reads by colour."""
+    if pct >= 85:
+        return "m4"
+    if pct >= 70:
+        return "m3"
+    if pct >= 50:
+        return "m2"
+    return "m1"
+
+
 def bar(pct):
-    return (f'{pct:.0f}%<span class="track">'
-            f'<i style="width:{min(pct, 100):.0f}%"></i></span>')
+    return (f'<span class="pct">{pct:.0f}%</span><span class="track">'
+            f'<i class="{meter_class(pct)}" '
+            f'style="width:{min(pct, 100):.0f}%"></i></span>')
 
 
 def fmt_rating(v, decimals=1):
@@ -180,13 +207,35 @@ def passes_static(g, s, a, mode):
     viewer without JavaScript — sees exactly what the controls describe."""
     if g["exp"] and a.expansions != "show":
         return False
-    if a.salad == "no" and g["sal"]:
-        return False
-    if a.salad == "yes" and not g["sal"]:
+    allowed = BREADTH_SETS[a.breadth]
+    if allowed is not None and g["br"] not in allowed:
         return False
     if a.players and not qualifies(s, mode):
         return False
     return True
+
+
+def describe(a):
+    """Mirror of describe() in the page script: a short statement of what the
+    table is showing, for the first paint and for viewers without JavaScript."""
+    noun = "games and expansions" if a.expansions == "show" else "games"
+    if not a.players:
+        head = f"All {noun}"
+    elif a.mode == "best":
+        head = f"Games best at {a.players}p"
+    elif a.mode == "good":
+        head = f"Games good at {a.players}p"
+    else:
+        head = f"Games that play at {a.players}p"
+
+    extra = []
+    label = {"focused": "focused scoring only", "upto-some": "focused or some",
+             "broad": "broad scoring", "salad": "point salads only"}
+    if a.breadth != "any":
+        extra.append(label[a.breadth])
+    if a.expansions == "drop":
+        extra.append("expansions ignored")
+    return head + (", " + ", ".join(extra) if extra else "")
 
 
 def rows_html(data, a):
@@ -219,6 +268,9 @@ def rows_html(data, a):
             badges += f'<span class="tag exp" title="{esc(via)}">+EXP</span>'
         v = verdict_html(s, n)
         weight = f'{g["w"]:.2f}' if g["w"] else EM_DASH
+        ix_html = f'<span class="tag {IX_PILL[g["ix"]]}">{g["ix"]}</span>'
+        breadth_html = (f'<span class="tag {BREADTH_PILL[g["br"]]}">'
+                        f'{g["br"]}</span>')
         rank = g["rk"] if g["rk"] else EM_DASH
         inline = f'<span class="vinline">{v}</span>' if n else ""
         search = esc(f'{g["n"]} {g["y"] or ""}'.lower())
@@ -229,14 +281,15 @@ def rows_html(data, a):
             f'<td class="num hide-sm">{rank}</td>'
             f'<td class="score">{bgg_hex(g)}</td>'
             f'<td class="score mine-col">{mine_hex(g)}</td>'
-            f'<td><a class="game" href="https://boardgamegeek.com/boardgame/{g["id"]}"'
+            f'<td class="gamecell">'
+            f'<a class="game" href="https://boardgamegeek.com/boardgame/{g["id"]}"'
             f' target="_blank" rel="noopener">{esc(g["n"])}</a> '
             f'<span class="yr">{g["y"] or ""}</span>{badges}{inline}</td>'
             f'<td class="num hide-sm">{g["pl"]}</td>'
             f'<td class="num">{esc(g["t"])}</td>'
-            f'<td class="num">{weight}</td>'
-            f'<td class="hide-sm"><span class="ix {g["ix"]}">{g["ix"]}</span></td>'
-            f'<td class="num hide-sm">{"yes" if g["sal"] else "no"}</td>'
+            f'<td class="num hide-sm">{weight}</td>'
+            f'<td class="hide-sm">{ix_html}</td>'
+            f'<td class="hide-sm">{breadth_html}</td>'
             f'<td class="num hide-sm j-verdict">{v}</td>'
             f'<td class="num bar hide-sm j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
             f'<td class="num bar hide-sm j-appr">{bar(s["appr"]) if s else EM_DASH}</td>'
@@ -252,7 +305,9 @@ def main():
                     help="player count the page opens on (0 = any)")
     ap.add_argument("--mode", choices=["best", "good", "any"], default="good",
                     help="opening player-count rule")
-    ap.add_argument("--salad", choices=["any", "no", "yes"], default="no")
+    ap.add_argument("--breadth", default="any",
+                    choices=["any", "focused", "upto-some", "broad", "salad"],
+                    help="scoring breadth the page opens on")
     ap.add_argument("--expansions", choices=["fold", "show", "drop"],
                     default="fold", help="fold: hide expansion rows but let "
                                          "them speak for their base game")
@@ -268,7 +323,7 @@ def main():
     # JavaScript gets the same order rather than raw cache order.
     data.sort(key=lambda g: (g["rk"] is None, g["rk"] or 10 ** 9))
     tpl = (HERE / "report_template.html").read_text(encoding="utf-8")
-    opts = {"players": a.players, "mode": a.mode, "salad": a.salad,
+    opts = {"players": a.players, "mode": a.mode, "breadth": a.breadth,
             "expansions": a.expansions, "minVotes": a.min_votes}
 
     rows, shown = rows_html(data, a)
@@ -282,8 +337,11 @@ def main():
     modes = options([("any", "Plays at that count"),
                      ("good", "Good at that count"),
                      ("best", "Best at that count")], a.mode)
-    salads = options([("any", "Doesn't matter"), ("no", "No — exclude salads"),
-                      ("yes", "Yes — only salads")], a.salad)
+    breadths = options([("any", "Doesn't matter"),
+                        ("focused", "Focused only"),
+                        ("upto-some", "Focused + Some"),
+                        ("broad", "Broad or wider"),
+                        ("salad", "Salad only")], a.breadth)
     exps = options([("fold", "Hide, but count for base game"),
                     ("show", "Show as their own rows"),
                     ("drop", "Ignore completely")], a.expansions)
@@ -298,10 +356,11 @@ def main():
             .replace("<!--__ROWS__-->", rows)
             .replace("<!--__OPTIONS__-->", players)
             .replace("<!--__MODE_OPTIONS__-->", modes)
-            .replace("<!--__SALAD_OPTIONS__-->", salads)
+            .replace("<!--__BREADTH_OPTIONS__-->", breadths)
             .replace("<!--__EXP_OPTIONS__-->", exps)
             .replace("__MINVOTES__", str(a.min_votes))
             .replace("__SHOWN__", str(shown))
+            .replace("__DESC__", esc(describe(a)))
             .replace("/*__DATA__*/", json.dumps(data, ensure_ascii=False,
                                                 separators=(",", ":")))
             .replace("/*__OPTS__*/", json.dumps(opts))

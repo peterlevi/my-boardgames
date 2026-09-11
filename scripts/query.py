@@ -34,11 +34,12 @@ def main():
         print("|---:|---|---|---:|---|---:|---:|---:|")
     for g, s in rows:
         t = playtime(g)
-        verdict = "Best" if s["is_best"] else "Great"
+        verdict = "—" if not s else ("Best" if s["is_best"] else "Great")
         cells = [str(g["rank"] or "—"), g["name"], t,
                  f'{g["weight"]:.2f}' if g["weight"] else "—", verdict,
-                 f'{s["best_pct"]:.0f}%', f'{s["approval"]:.0f}%',
-                 str(s["total"])]
+                 f'{s["best_pct"]:.0f}%' if s else "—",
+                 f'{s["approval"]:.0f}%' if s else "—",
+                 str(s["total"]) if s else "—"]
         if a.format == "md":
             print("| " + " | ".join(cells) + " |")
         else:

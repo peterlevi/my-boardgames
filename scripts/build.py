@@ -14,8 +14,9 @@ uses that to let an expansion's player-count poll speak for its base game.
 import json
 import xml.etree.ElementTree as ET
 
+import breadth
 import interaction
-from common import RAW, ROOT, load_exclusions
+from common import RAW, ROOT, load_exclusions, load_overrides
 
 
 def attr(node, tag):
@@ -58,6 +59,7 @@ def parse_item(it, is_expansion=False):
 
     mechanics = links(it, "boardgamemechanic")
     categories = links(it, "boardgamecategory")
+    families = links(it, "boardgamefamily")
     # On an expansion's page the boardgameexpansion link is inbound and names
     # the base game; on a base game it is outbound and names the expansions.
     expands = [l.get("id") for l in it.findall("link")
@@ -75,7 +77,7 @@ def parse_item(it, is_expansion=False):
         playingtime=num(attr(it, "playingtime"), int),
         minplaytime=num(attr(it, "minplaytime"), int),
         maxplaytime=num(attr(it, "maxplaytime"), int),
-        mechanics=mechanics, categories=categories,
+        mechanics=mechanics, categories=categories, families=families,
         interaction=level, interaction_shared=shared,
         poll=poll,
     )
@@ -131,9 +133,17 @@ def main():
               f"run scripts/fetch.py")
 
     salads = load_exclusions("point-salads.txt")
+    overrides = load_overrides("breadth-overrides.txt")
     plays, mine = collection_stats()
     for g in games:
+        # Kept only for query.py's --exclude-file; breadth is computed
+        # independently and names no games.
         g["point_salad"] = g["name"] in salads
+        level, bscore, traits = breadth.classify(
+            g["name"], g["mechanics"], g["families"], overrides)
+        g["breadth"] = level
+        g["breadth_score"] = bscore
+        g["traits"] = traits
         g["plays"] = plays.get(g["id"], 0)
         g["my_rating"] = mine.get(g["id"])
 

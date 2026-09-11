@@ -67,6 +67,29 @@ def load_exclusions(path):
     return names
 
 
+BREADTH_SETS = {
+    "any": None,
+    "focused": {"Focused"},
+    "upto-some": {"Focused", "Some"},
+    "broad": {"Broad", "Salad"},
+    "salad": {"Salad"},
+}
+
+
+def load_overrides(path):
+    """`Name = Level` lines; blanks and # comments ignored."""
+    f = ROOT / path
+    if not f.exists():
+        return {}
+    out = {}
+    for line in f.read_text().splitlines():
+        line = line.split("#")[0].strip()
+        if "=" in line:
+            name, level = line.split("=", 1)
+            out[name.strip()] = level.strip()
+    return out
+
+
 def add_filter_args(ap, default_players=4):
     """The filter flags shared by query.py and report.py."""
     ap.add_argument("--players", type=int, default=default_players)
@@ -80,6 +103,11 @@ def add_filter_args(ap, default_players=4):
     ap.add_argument("--max-time", type=int, help="max of maxplaytime, minutes")
     ap.add_argument("--exclude-file",
                     help="file of game names to drop, one per line, # = comment")
+    ap.add_argument("--breadth", default="any",
+                    choices=["any", "focused", "upto-some", "broad", "salad"],
+                    help="scoring breadth: how widely points are spread")
+    ap.add_argument("--trait", action="append", default=[], metavar="NAME",
+                    help="require a scoring trait; repeatable")
     ap.add_argument("--expansions", choices=["drop", "show"], default="drop",
                     help="expansions are listed as their own rows, or not "
                          "(default: not, matching the report)")
@@ -94,14 +122,22 @@ def select(a):
     for g in load_games():
         if g["is_expansion"] and getattr(a, "expansions", "drop") != "show":
             continue
-        s = poll_stats(g, a.players)
-        if not s or s["total"] < a.min_votes:
-            continue
-        if not (s["is_best"] or s["best_pct"] >= a.min_best):
-            continue
-        if s["approval"] < a.min_approval:
-            continue
+        # --players 0 means "any count", matching the report; the poll filters
+        # then do not apply at all.
+        s = poll_stats(g, a.players) if a.players else None
+        if a.players:
+            if not s or s["total"] < a.min_votes:
+                continue
+            if not (s["is_best"] or s["best_pct"] >= a.min_best):
+                continue
+            if s["approval"] < a.min_approval:
+                continue
         if g["name"] in excluded:
+            continue
+        allowed = BREADTH_SETS.get(getattr(a, "breadth", "any"))
+        if allowed is not None and g["breadth"] not in allowed:
+            continue
+        if any(t not in g["traits"] for t in getattr(a, "trait", [])):
             continue
         w = g["weight"]
         if a.max_weight and (w is None or w > a.max_weight):

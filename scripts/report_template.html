@@ -8,25 +8,39 @@
   --bg:#f7f6f3; --panel:#fff; --ink:#1b1a17; --muted:#6b6862; --line:#e2ded6;
   --accent:#7a5c3e; --best:#2f6b45; --best-bg:#e4f0e8; --great:#7a6320;
   --great-bg:#f6efd8; --warn:#8a4b32; --warn-bg:#f4e5de;
+  --chip:#eae6de; --tile:#dcd6c9;
+  /* Meter scale, strong to weak, so a percentage reads before it is parsed. */
+  --m4:#3f8a5f; --m3:#7d9b45; --m2:#c0952b; --m1:#b3aca1;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg:#16150f; --panel:#201e18; --ink:#ece8df; --muted:#9b958a; --line:#332f27;
     --accent:#d3ab7d; --best:#8fd0a6; --best-bg:#1d3226; --great:#e0c477;
     --great-bg:#332d15; --warn:#e5a488; --warn-bg:#38241c;
+    --chip:#2b2822; --tile:#322d25;
+    --m4:#6fbf8e; --m3:#a3c274; --m2:#dcbc6a; --m1:#6b665d;
   }
 }
 * { box-sizing:border-box; }
+/* Geometric-humanist, and every entry is a system font: the report has to
+   stay self-contained, so a webfont link would simply fail wherever external
+   resources are blocked (Slack's preview, a strict CSP). Avenir Next carries
+   real tabular figures, which the number columns depend on. */
 body { margin:0; background:var(--bg); color:var(--ink);
-  font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  font:15px/1.5 "Avenir Next","Segoe UI Variable Text","Segoe UI",Inter,
+       "Nunito Sans",system-ui,-apple-system,sans-serif;
+  font-variant-numeric:tabular-nums; }
 .wrap { max-width:1280px; margin:0 auto; padding:28px 16px 64px; }
 h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 .sub { color:var(--muted); margin:0 0 6px; max-width:75ch; }
 .note { font-size:.85rem; }
 .note b { color:var(--ink); }
 
-.panel { position:sticky; top:0; z-index:6; background:var(--bg);
-  padding:14px 0 12px; margin-top:16px; border-bottom:1px solid var(--line); }
+.titlebar { display:flex; align-items:baseline; column-gap:12px; row-gap:2px;
+  flex-wrap:wrap; margin-bottom:2px; }
+.titlebar .sub { margin:0; font-size:.9rem; }
+.titlebar details { margin-left:auto; }
+.panel { padding:10px 0 8px; margin-top:6px; }
 .row { display:flex; gap:10px 14px; align-items:flex-end; flex-wrap:wrap; }
 .row + .row { margin-top:10px; }
 .f { display:flex; flex-direction:column; gap:3px; }
@@ -35,15 +49,30 @@ h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 input, select { font:inherit; color:var(--ink); background:var(--panel);
   border:1px solid var(--line); border-radius:7px; padding:7px 9px; }
 input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px; }
-#q { min-width:190px; }
-.f.grow { flex:1 1 190px; min-width:0; }
-.f.grow #q { width:100%; }
+#q { width:230px; max-width:100%; }
 .pair { display:flex; align-items:center; gap:5px; }
 .pair input { width:66px; }
+.traitbox { display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center;
+  padding-bottom:2px; }
+.traitbox label { display:inline-flex; align-items:center; gap:5px;
+  font-size:.8rem; color:var(--muted); cursor:pointer; white-space:nowrap;
+  padding:3px 9px 3px 7px; border:1px solid var(--line); border-radius:99px;
+  background:var(--panel); }
+.traitbox label:hover { color:var(--ink); }
+.traitbox input { margin:0; }
+.traitbox label:has(input:checked) { color:var(--ink); border-color:var(--accent);
+  box-shadow:inset 0 0 0 1px var(--accent); }
 .pair span { color:var(--muted); font-size:.85rem; }
-.resultline { margin:16px 0 2px; }
+/* The only thing pinned while scrolling: the count, what it is counting, and
+   the column headers. The filters scroll away — they are a thing you set, not
+   a thing you read. */
+.resultline { position:sticky; top:0; z-index:6; background:var(--bg);
+  margin:0; padding:10px 0 7px; border-top:1px solid var(--line);
+  display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
 #count { font-size:1.15rem; font-weight:700; color:var(--ink);
-  letter-spacing:-.01em; font-variant-numeric:tabular-nums; }
+  letter-spacing:-.01em; font-variant-numeric:tabular-nums; white-space:nowrap; }
+#desc { font-size:.85rem; color:var(--muted); }
+#outcount { font-size:.85rem; color:var(--accent); }
 button.link { background:none; border:none; color:var(--accent); cursor:pointer;
   font:inherit; text-decoration:underline; padding:7px 0; align-self:flex-end; }
 details > summary { cursor:pointer; color:var(--accent); font-size:.8rem;
@@ -56,33 +85,45 @@ details[open] > summary::before { content:"▾ "; }
 table { width:100%; border-collapse:separate; border-spacing:0; margin-top:6px; }
 th, td { padding:8px 9px; text-align:left; border-bottom:1px solid var(--line);
   vertical-align:middle; }
-th { position:sticky; top:var(--thtop,120px); z-index:4; background:var(--bg);
+th { position:sticky; top:var(--thtop,46px); z-index:4; background:var(--bg);
+  /* Paints the page background 14px above each header cell, so no row can
+     ever show through the seam under the pinned count line. */
+  box-shadow:0 -14px 0 var(--bg);
   cursor:pointer; user-select:none; font-size:.7rem; text-transform:uppercase;
   letter-spacing:.05em; color:var(--muted); white-space:nowrap; }
 th:hover { color:var(--ink); }
-th[aria-sort]::after { content:" ▲"; color:var(--accent); }
-th[aria-sort="descending"]::after { content:" ▼"; }
-td.num, th.num { text-align:right; font-variant-numeric:tabular-nums;
-  white-space:nowrap; }
+/* The caret is always in the layout, only sometimes visible — otherwise every
+   header changed width as the sorted column moved, shifting the whole table. */
+th[data-k]::after { content:" ▲"; color:var(--accent); visibility:hidden; }
+th[data-k][aria-sort]::after { visibility:visible; }
+th[data-k][aria-sort="descending"]::after { content:" ▼"; }
+/* The plain-number columns sat at the 15px body size, noticeably larger than
+   the pills beside them; a touch smaller settles the row. */
+td.num { text-align:right; white-space:nowrap; font-size:.84rem; }
+th.num { text-align:right; white-space:nowrap; }
 tbody tr:hover { background:var(--panel); }
-/* Square box, `contain` not `cover`: box art runs from 0.50 to 2.29 in aspect,
-   so cropping to a rectangle cut the tall and wide ones badly. Letterboxing is
-   transparent, which reads as breathing room against the row. */
-img.thumb { width:44px; height:44px; object-fit:contain; border-radius:6px;
-  display:block; }
+/* Box art runs from 0.50 to 2.29 in aspect, so cropping to a square would cut
+   the tall and wide covers badly. Instead the square IS the tile: `contain`
+   centres the whole cover inside a rounded, tinted box. Every thumbnail then
+   has the same rounded silhouette whatever the cover's shape, with nothing
+   cropped away. */
+img.thumb { width:44px; height:44px; object-fit:contain; border-radius:7px;
+  display:block; background:var(--tile); padding:2px; }
 td.thumb { width:44px; padding-right:0; }
 a.game { color:var(--ink); text-decoration:none; font-weight:600; }
 a.game:hover { color:var(--accent); text-decoration:underline; }
 .yr { color:var(--muted); font-weight:400; font-size:.85em; }
-.tag { display:inline-block; padding:2px 8px; border-radius:99px;
-  font-size:.72rem; font-weight:700; white-space:nowrap; }
-.tag.best { color:var(--best); background:var(--best-bg); }
-.tag.good { color:var(--great); background:var(--great-bg); }
+/* Every categorical cell — the player-count verdict, interaction, breadth
+   — uses one pill, at one size, a little smaller than the numbers beside it.
+   The ramp is always strong → neutral, so a column can be read by colour. */
+.tag { display:inline-block; padding:2px 9px; border-radius:99px;
+  font-size:.76rem; font-weight:700; white-space:nowrap; line-height:1.45; }
+.tag.p3 { color:var(--best); background:var(--best-bg); }
+.tag.p2 { color:var(--great); background:var(--great-bg); }
+.tag.p1 { color:var(--muted); background:var(--chip); }
+.tag.pw { color:var(--warn); background:var(--warn-bg); }
 .tag.exp  { color:var(--warn); background:var(--warn-bg); font-size:.65rem;
   margin-left:5px; vertical-align:middle; }
-.ix { font-size:.8rem; color:var(--muted); }
-.ix.High { color:var(--warn); font-weight:600; }
-.ix.Medium { color:var(--ink); }
 /* BGG's rating badge: a regular pointy-top hexagon in their muted palette,
    white text. The clip-path below only describes a *regular* hexagon when the
    box is taller than it is wide by 2/√3 (≈1.155) — at any other aspect ratio
@@ -94,18 +135,31 @@ a.game:hover { color:var(--accent); text-decoration:underline; }
 .hex.none { background:#9b9b9b; font-weight:600; }
 td.score { width:34px; padding-right:4px; }
 td.score.mine-col { padding-right:9px; }
-.bar { position:relative; min-width:72px; }
-/* Scoped to .track, not to any span: an em-dash placeholder is also a span,
-   and a bare `.bar span` rule turned it into a stray 3px bar. */
-.bar > .track { position:absolute; left:9px; right:9px; bottom:2px; height:3px;
-  background:var(--line); border-radius:2px; }
-.bar > .track > i { display:block; height:100%; background:var(--accent);
-  border-radius:2px; }
+/* A percentage plus a bar directly under it, coloured by value rather than a
+   uniform brown, so a column of them is scannable at a glance. Scoped to
+   .track, not to any span — an em-dash placeholder is also a span. */
+.bar { min-width:66px; }
+.bar > .track { display:block; height:4px; margin-top:3px; border-radius:2px;
+  background:var(--chip); overflow:hidden; }
+.bar > .track > i { display:block; height:100%; border-radius:2px;
+  background:var(--m1); }
+.bar > .track > i.m4 { background:var(--m4); }
+.bar > .track > i.m3 { background:var(--m3); }
+.bar > .track > i.m2 { background:var(--m2); }
+.bar .pct { font-size:.82rem; font-variant-numeric:tabular-nums; }
 .dot { color:var(--muted); }
 /* On a phone the At N column is dropped for width, so the verdict rides along
    inside the game cell instead of disappearing. */
 .vinline { display:none; }
 .empty { padding:44px 10px; color:var(--muted); text-align:center; }
+/* Search matches that the current filters exclude. Same table, so the columns
+   stay aligned, but a loud divider row so the two groups never blur together. */
+tr.sep > td { background:var(--panel); border-top:2px solid var(--accent);
+  border-bottom:1px solid var(--line); padding:9px 10px; font-size:.82rem;
+  color:var(--muted); }
+tr.sep b { color:var(--accent); }
+tbody tr.out > td { opacity:.72; }
+tbody tr.out:hover > td { opacity:1; }
 footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; }
 /* An overflow container becomes the containing block for sticky children, so a
    sticky <th> inside it is pinned to the box rather than the viewport. On wide
@@ -113,7 +167,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
    turns on, the header MUST go static — otherwise it is offset by the panel
    height *inside* the box and lands hundreds of pixels below the first row,
    hiding the table completely. */
-@media (max-width:1000px) {
+/* The horizontal scroller is only needed in the middle band, where lots of
+   columns still show but space is tight. Below 700px enough columns are hidden
+   that the table fits outright — and without an overflow ancestor the sticky
+   header keeps working there, which is the whole point of freezing it. */
+@media (max-width:1000px) and (min-width:701px) {
   .scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
   th { position:static; }
 }
@@ -126,6 +184,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .wrap { padding-left:12px; padding-right:12px; }
   h1 { font-size:1.3rem; }
   .row { gap:8px 10px; }
+  .titlebar { row-gap:0; }
+  .titlebar h1 { margin-bottom:0; }
   /* Two filters per line instead of one, to keep the panel short. */
   .f { flex:1 1 calc(50% - 5px); min-width:0; }
   .f.grow { flex-basis:100%; }
@@ -145,21 +205,26 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 </style>
 </head><body>
 <div class="wrap">
-<h1>Board game collection</h1>
-<p class="sub">__NGAMES__ owned games and __NEXP__ owned expansions. Every filter
-runs in the page — click a column to sort, and nothing here calls out to BGG.</p>
-<details id="legend"><summary>What the columns mean</summary>
-<p class="sub note"><b>Best at N</b> = N drew more “Best” votes than any other
-count in BGG's player-count poll. <b>Good at N</b> = Best, or ≥50% of voters at
-N called N the best count. <b>Appr</b> = (Best + Recommended) ÷ all votes at N.
-<b>Interaction</b> is <em>not</em> a BGG statistic — no such data exists in
-their API — it is derived from each game's mechanics and categories, so treat
-it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p>
-</details>
+<div class="titlebar">
+  <h1>Board game collection</h1>
+  <span class="sub">__NGAMES__ games · __NEXP__ expansions</span>
+  <details id="legend"><summary>What the columns mean</summary>
+    <p class="sub note"><b>Best at N</b> = N drew more “Best” votes than any
+    other count in BGG's player-count poll. <b>Good at N</b> = Best, or ≥50% of
+    voters at N called N the best count. <b>Appr</b> = (Best + Recommended) ÷
+    all votes at N. <b>Interaction</b> is <em>not</em> a BGG statistic — no such
+    data exists in their API — it is derived from each game's mechanics and
+    categories, so treat it as a rough sort, not a fact. <b>Breadth</b> is how widely a game spreads its
+    scoring — Focused means one contested currency decides it, Salad means
+    points come from everywhere — and it is derived the same way, with a
+    hand-maintained override list. Every filter runs in the page; nothing here calls out
+    to BGG.</p>
+  </details>
+</div>
 
 <div class="panel">
   <div class="row">
-    <div class="f grow"><label for="q">Search</label>
+    <div class="f"><label for="q">Search</label>
       <input id="q" type="search" placeholder="Game name…" autocomplete="off"></div>
     <div class="f"><label for="players">Players</label>
       <select id="players"><!--__OPTIONS__--></select></div>
@@ -169,8 +234,8 @@ it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p
   <details id="more">
     <summary>More filters</summary>
     <div class="row">
-      <div class="f"><label for="salad">Point salad</label>
-        <select id="salad"><!--__SALAD_OPTIONS__--></select></div>
+      <div class="f"><label for="breadth">Scoring breadth</label>
+        <select id="breadth"><!--__BREADTH_OPTIONS__--></select></div>
       <div class="f"><label for="ix">Interaction</label>
         <select id="ix">
           <option value="">Any</option><option>Low</option>
@@ -204,10 +269,20 @@ it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p
         <input id="votes" type="number" min="0" step="5" value="__MINVOTES__"></div>
       <button class="link" id="reset" type="button">Reset filters</button>
     </div>
+    <div class="row traits">
+      <div class="f"><label for="traitmode">Scoring traits</label>
+        <select id="traitmode">
+          <option value="all">match all ticked</option>
+          <option value="any">match any ticked</option>
+          <option value="none">exclude all ticked</option>
+        </select></div>
+      <div id="traitbox" class="traitbox"></div>
+    </div>
   </details>
 </div>
 
-<p class="resultline"><span id="count">__SHOWN__ rows</span></p>
+<p class="resultline"><span id="count">__SHOWN__ rows</span><span
+  id="desc">__DESC__</span><span id="outcount" hidden></span></p>
 
 <div class="scroll">
 <table>
@@ -219,15 +294,16 @@ it as a rough sort, not a fact. <b>Point salad</b> is a hand-maintained list.</p
     <th data-k="n">Game</th>
     <th class="num hide-sm" data-k="pl">Plays</th>
     <th class="num" data-k="tmax">Time</th>
-    <th class="num" data-k="w">Weight</th>
+    <th class="num hide-sm" data-k="w">Weight</th>
     <th class="hide-sm" data-k="ix">Interact</th>
-    <th class="num hide-sm" data-k="sal">Salad</th>
+    <th class="hide-sm" data-k="breadth">Breadth</th>
     <th class="num hide-sm" data-k="verdict">At N</th>
     <th class="num hide-sm" data-k="bestPct">Best</th>
     <th class="num hide-sm" data-k="appr">Appr</th>
     <th class="num hide-sm" data-k="total">Votes</th>
   </tr></thead>
-  <tbody id="rows"><!--__ROWS__--></tbody>
+  <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="14"
+    id="septext"></td></tr><!--__ROWS__--></tbody>
 </table>
 </div>
 <p class="empty" id="empty" hidden>Nothing matches those filters.</p>
@@ -236,7 +312,7 @@ need JavaScript</b>, which this preview does not run. The table above shows the
 opening selection; open the file in a browser for the full controls.</p></noscript>
 <footer>BGG snapshot __STAMP__ — ranks, weights, play counts and player-count
 polls from boardgamegeek.com; thumbnails embedded in the file. Interaction and
-point-salad columns are derived locally and are opinions, not BGG data.</footer>
+breadth columns are derived locally and are opinions, not BGG data.</footer>
 </div>
 
 <script>
@@ -267,9 +343,39 @@ DATA.forEach(function (g) {
 });
 
 function el(id) { return document.getElementById(id); }
+
+// The trait vocabulary comes from the data, so adding a trait in breadth.py
+// needs no change here.
+var TRAITS = (function () {
+  var seen = {}, list = [];
+  DATA.forEach(function (g) {
+    (g.tr || []).forEach(function (t) {
+      if (!seen[t]) { seen[t] = 1; list.push(t); }
+    });
+  });
+  return list.sort();
+})();
+
+var traitBox = document.getElementById('traitbox');
+TRAITS.forEach(function (t) {
+  var id = 'tr-' + t.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
+  var label = document.createElement('label');
+  label.setAttribute('for', id);
+  label.innerHTML = '<input type="checkbox" id="' + id + '" value="' +
+                    t.replace(/"/g, '&quot;') + '"> ' + t;
+  traitBox.appendChild(label);
+});
+function checkedTraits() {
+  var out = [];
+  [].forEach.call(traitBox.querySelectorAll('input:checked'), function (c) {
+    out.push(c.value);
+  });
+  return out;
+}
 var F = {
-  q: el('q'), players: el('players'), mode: el('mode'), salad: el('salad'),
-  ix: el('ix'), smin: el('smin'), smax: el('smax'),
+  q: el('q'), players: el('players'), mode: el('mode'),
+  ix: el('ix'), breadth: el('breadth'), traitmode: el('traitmode'),
+  smin: el('smin'), smax: el('smax'),
   mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
   tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'), exp: el('exp'),
@@ -280,10 +386,14 @@ function applyDefaults() {
   F.q.value = '';
   F.players.value = OPTS.players;
   F.mode.value = OPTS.mode;
-  F.salad.value = OPTS.salad;
+  F.breadth.value = OPTS.breadth;
   F.exp.value = OPTS.expansions;
   F.votes.value = OPTS.minVotes;
   F.ix.value = '';
+  F.traitmode.value = 'all';
+  [].forEach.call(traitBox.querySelectorAll('input'), function (c) {
+    c.checked = false;
+  });
   ['smin', 'smax', 'mymin', 'mymax', 'wmin', 'wmax', 'tmin', 'tmax',
    'plmin', 'plmax']
     .forEach(function (k) { F[k].value = ''; });
@@ -326,9 +436,36 @@ function reading(g, n, fold, minVotes, mode) {
 }
 
 function num(v) { return v === '' ? null : parseFloat(v); }
+
+var BREADTH_SETS = {
+  any: null,
+  focused: ['Focused'],
+  'upto-some': ['Focused', 'Some'],
+  broad: ['Broad', 'Salad'],
+  salad: ['Salad']
+};
+
+function breadthOk(g) {
+  var allowed = BREADTH_SETS[F.breadth.value];
+  return !allowed || allowed.indexOf(g.br) !== -1;
+}
+
+function traitsOk(g, picked, mode) {
+  if (!picked.length) return true;
+  var has = g.tr || [], n = 0;
+  for (var i = 0; i < picked.length; i++) {
+    if (has.indexOf(picked[i]) !== -1) n++;
+  }
+  if (mode === 'any') return n > 0;
+  if (mode === 'none') return n === 0;
+  return n === picked.length;
+}
 function or0(v) { return (v === null || v === undefined) ? 0 : v; }
 
-function visible() {
+/** Split every row into two buckets: rows passing the filters, and rows that
+ *  only the search term matched. The second bucket is what lets a search find
+ *  a game the current filters would otherwise hide. */
+function partition() {
   var term = F.q.value.trim().toLowerCase();
   var n = +F.players.value, mode = F.mode.value, expMode = F.exp.value;
   var minVotes = +F.votes.value || 0;
@@ -337,37 +474,74 @@ function visible() {
   var wmin = num(F.wmin.value), wmax = num(F.wmax.value);
   var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
-  var salad = F.salad.value, ix = F.ix.value;
+  var ix = F.ix.value;
+  var picked = checkedTraits(), tmode = F.traitmode.value;
   var fold = expMode === 'fold';
 
-  var out = [];
+  var inside = [], outside = [];
   for (var i = 0; i < DATA.length; i++) {
     var g = DATA[i];
-    if (g.exp && expMode !== 'show') continue;
-    if (term && (g.n + ' ' + (g.y || '')).toLowerCase().indexOf(term) === -1) continue;
-    if (salad === 'no' && g.sal) continue;
-    if (salad === 'yes' && !g.sal) continue;
-    if (ix && g.ix !== ix) continue;
-    if (smin !== null && !(g.av >= smin)) continue;
-    if (smax !== null && !(g.av <= smax)) continue;
-    // An unrated game has no opinion to match, so any bound excludes it.
-    if (mymin !== null && !(g.my >= mymin)) continue;
-    if (mymax !== null && !(g.my <= mymax)) continue;
-    if (wmin !== null && !(g.w >= wmin)) continue;
-    if (wmax !== null && !(g.w <= wmax)) continue;
-    if (tmin !== null && !(or0(g.tmax) >= tmin)) continue;
-    if (tmax !== null && !(or0(g.tmax) <= tmax)) continue;
-    if (plmin !== null && g.pl < plmin) continue;
-    if (plmax !== null && g.pl > plmax) continue;
+    var hit = !term || (g.n + ' ' + (g.y || '')).toLowerCase().indexOf(term) !== -1;
+    if (!hit) continue;
 
-    var s = null;
-    if (n) {
-      s = reading(g, n, fold, minVotes, mode);
-      if (!qualifies(s, mode)) continue;
-    }
-    out.push([i, s]);
+    // Expansion visibility is structural rather than a filter you relax, so
+    // it applies to the search results too.
+    var structural = !(g.exp && expMode !== 'show');
+
+    var s = n ? reading(g, n, fold, minVotes, mode) : null;
+    var pass = structural && breadthOk(g) && traitsOk(g, picked, tmode) &&
+      !(ix && g.ix !== ix) &&
+      !(smin !== null && !(g.av >= smin)) && !(smax !== null && !(g.av <= smax)) &&
+      !(mymin !== null && !(g.my >= mymin)) && !(mymax !== null && !(g.my <= mymax)) &&
+      !(wmin !== null && !(g.w >= wmin)) && !(wmax !== null && !(g.w <= wmax)) &&
+      !(tmin !== null && !(or0(g.tmin) >= tmin)) &&
+      !(tmax !== null && !(or0(g.tmax) <= tmax)) &&
+      !(plmin !== null && g.pl < plmin) && !(plmax !== null && g.pl > plmax) &&
+      (!n || qualifies(s, mode));
+
+    if (pass) inside.push([i, s]);
+    else if (term && structural) outside.push([i, s]);
   }
-  return out;
+  return { inside: inside, outside: outside };
+}
+
+/** A short, readable statement of what the table is showing. */
+function describe() {
+  var n = +F.players.value, mode = F.mode.value;
+  var expMode = F.exp.value;
+  var noun = expMode === 'show' ? 'games and expansions' : 'games';
+  var head;
+  if (!n) head = 'All ' + noun;
+  else if (mode === 'best') head = 'Games best at ' + n + 'p';
+  else if (mode === 'good') head = 'Games good at ' + n + 'p';
+  else head = 'Games that play at ' + n + 'p';
+  if (!n && expMode !== 'show') head = 'All games';
+
+  var extra = [];
+  var bl = { focused: 'focused scoring only', 'upto-some': 'focused or some',
+             broad: 'broad scoring', salad: 'point salads only' };
+  if (bl[F.breadth.value]) extra.push(bl[F.breadth.value]);
+  if (F.ix.value) extra.push(F.ix.value.toLowerCase() + ' interaction');
+  var picked = checkedTraits();
+  if (picked.length) {
+    var joiner = { all: ' + ', any: ' or ', none: ' or ' };
+    extra.push((F.traitmode.value === 'none' ? 'no ' : '') +
+               picked.join(joiner[F.traitmode.value]).toLowerCase());
+  }
+  var pair = function (lo, hi, label, unit) {
+    var a = num(F[lo].value), b = num(F[hi].value);
+    if (a === null && b === null) return;
+    if (a !== null && b !== null) extra.push(label + ' ' + a + '–' + b + (unit || ''));
+    else if (a !== null) extra.push(label + ' ≥ ' + a + (unit || ''));
+    else extra.push(label + ' ≤ ' + b + (unit || ''));
+  };
+  pair('smin', 'smax', 'BGG');
+  pair('mymin', 'mymax', 'my rating');
+  pair('wmin', 'wmax', 'weight');
+  pair('tmin', 'tmax', 'time', ' min');
+  pair('plmin', 'plmax', 'plays');
+  if (expMode === 'drop') extra.push('expansions ignored');
+  return head + (extra.length ? ', ' + extra.join(', ') : '');
 }
 
 var sortKey = 'rk', sortDesc = false;
@@ -381,6 +555,8 @@ function sortRows(rows) {
       case 'appr': return s ? s.appr : null;
       case 'total': return s ? s.total : null;
       case 'ix': return ['Low', 'Medium', 'High'].indexOf(g.ix);
+      case 'breadth':
+        return ['Focused', 'Some', 'Broad', 'Salad'].indexOf(g.br);
       default: return g[sortKey];
     }
   }
@@ -406,16 +582,26 @@ function sortRows(rows) {
   return rows;
 }
 
+function esc(t) {
+  return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+                  .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function meterClass(p) {
+  return p >= 85 ? 'm4' : p >= 70 ? 'm3' : p >= 50 ? 'm2' : 'm1';
+}
+
 function bar(p) {
-  return p.toFixed(0) + '%<span class="track"><i style="width:' +
+  return '<span class="pct">' + p.toFixed(0) + '%</span>' +
+         '<span class="track"><i class="' + meterClass(p) + '" style="width:' +
          Math.min(p, 100).toFixed(0) + '%"></i></span>';
 }
 
 function verdictHtml(s, n) {
   if (!n || !s) return '<span class="dot">&mdash;</span>';
-  if (s.isBest) return '<span class="tag best">Best</span>';
-  if (s.bestPct >= 50) return '<span class="tag good">Good</span>';
-  return '<span class="dot">plays</span>';
+  if (s.isBest) return '<span class="tag p3">Best</span>';
+  if (s.bestPct >= 50) return '<span class="tag p2">Good</span>';
+  return '<span class="tag p1">plays</span>';
 }
 
 /** Repaint only the cells that depend on the selected player count. */
@@ -431,7 +617,10 @@ function paint(tr, g, s, n) {
   if (inline) inline.innerHTML = n ? v : '';
 
   // The +EXP badge marks a row qualified by an expansion rather than the base.
-  var name = tr.children[3];
+  // Found by class, never by child index: this used to be tr.children[3] and
+  // silently became the wrong cell the moment a column was inserted before it,
+  // throwing out of render() entirely.
+  var name = tr.querySelector('.gamecell');
   var badge = name.querySelector('.tag.exp[data-via]');
   if (s && s.via) {
     if (!badge) {
@@ -448,29 +637,63 @@ function paint(tr, g, s, n) {
 }
 
 function render() {
-  var rows = sortRows(visible());
+  var parts = partition();
+  var inside = sortRows(parts.inside);
+  var outside = sortRows(parts.outside);
   var n = +F.players.value;
-  var shownIdx = {};
+
+  var sep = document.getElementById('sep');
   var frag = document.createDocumentFragment();
-  for (var i = 0; i < rows.length; i++) {
-    var idx = rows[i][0], tr = ROWS[idx];
+  var shownIdx = {};
+  var i, idx, tr;
+
+  for (i = 0; i < inside.length; i++) {
+    idx = inside[i][0]; tr = ROWS[idx];
     if (!tr) continue;
     shownIdx[idx] = 1;
-    paint(tr, DATA[idx], rows[i][1], n);
+    paint(tr, DATA[idx], inside[i][1], n);
     tr.hidden = false;
+    tr.className = '';
     frag.appendChild(tr);
   }
+
+  if (outside.length) {
+    document.getElementById('septext').innerHTML =
+      'Also matching <b>' + esc(F.q.value.trim()) + '</b>, but outside the ' +
+      'current filters — ' + outside.length +
+      (outside.length === 1 ? ' game' : ' games');
+    sep.hidden = false;
+    frag.appendChild(sep);
+    for (i = 0; i < outside.length; i++) {
+      idx = outside[i][0]; tr = ROWS[idx];
+      if (!tr) continue;
+      shownIdx[idx] = 1;
+      paint(tr, DATA[idx], outside[i][1], n);
+      tr.hidden = false;
+      tr.className = 'out';
+      frag.appendChild(tr);
+    }
+  } else {
+    sep.hidden = true;
+  }
+
   for (var j = 0; j < ROWS.length; j++) {
     if (ROWS[j] && !shownIdx[j]) ROWS[j].hidden = true;
   }
   TBODY.appendChild(frag);
 
-  el('empty').hidden = rows.length > 0;
+  el('empty').hidden = inside.length + outside.length > 0;
+
   var games = 0;
-  for (var k = 0; k < rows.length; k++) if (!DATA[rows[k][0]].exp) games++;
-  el('count').textContent = rows.length === 0 ? 'no matches'
-    : rows.length + ' row' + (rows.length === 1 ? '' : 's') +
-      (rows.length !== games ? ' (' + games + ' games)' : '');
+  for (var k = 0; k < inside.length; k++) if (!DATA[inside[k][0]].exp) games++;
+  el('count').textContent = inside.length === 0 ? 'no matches'
+    : inside.length + ' row' + (inside.length === 1 ? '' : 's') +
+      (inside.length !== games ? ' (' + games + ' games)' : '');
+  el('desc').textContent = describe();
+
+  var oc = el('outcount');
+  oc.textContent = outside.length ? '+' + outside.length + ' outside filters' : '';
+  oc.hidden = !outside.length;
 }
 
 [].forEach.call(document.querySelectorAll('th[data-k]'), function (th) {
@@ -490,27 +713,33 @@ function render() {
 // reliable on older mobile Safari, which is why the player-count picker did
 // nothing on the phone. Listen for both.
 Object.keys(F).forEach(function (k) {
+  if (!F[k]) { return; }   // a renamed control should not abort setup
   F[k].addEventListener('input', render);
   F[k].addEventListener('change', render);
 });
+traitBox.addEventListener('change', render);
 el('reset').addEventListener('click', function () { applyDefaults(); render(); });
 
-// The filter panel is sticky and wraps to more rows on narrow screens, so the
-// table header's offset has to track its real height rather than a guess.
-var panel = document.querySelector('.panel');
+// The result line is the only sticky thing above the table, so the header's
+// offset tracks its height — which changes when the description wraps.
+// Keep the divider spanning the full table even if columns are added later.
+document.querySelector('#sep > td').colSpan =
+  document.querySelectorAll('thead th').length;
+
+var resultline = document.querySelector('.resultline');
 function setStickyTop() {
-  document.documentElement.style.setProperty('--thtop', panel.offsetHeight + 'px');
+  // getBoundingClientRect, not offsetHeight: the latter rounds to whole
+  // pixels, and half a pixel of drift is enough to let table rows show
+  // through the seam between the pinned count line and the pinned header.
+  document.documentElement.style.setProperty(
+    '--thtop', resultline.getBoundingClientRect().height + 'px');
 }
 if (typeof ResizeObserver === 'function') {
-  new ResizeObserver(setStickyTop).observe(panel);
+  new ResizeObserver(setStickyTop).observe(resultline);
 } else {
   window.addEventListener('resize', setStickyTop);
 }
 setStickyTop();
-
-var wide = matchMedia('(min-width: 701px)').matches;
-el('more').open = wide;
-el('legend').open = wide;
 
 applyDefaults();
 document.querySelector('th[data-k="rk"]').setAttribute('aria-sort', 'ascending');

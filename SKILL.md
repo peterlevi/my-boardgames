@@ -55,10 +55,15 @@ can be 99% approved at 4 while being Best at 6.
 
 ## Say when a column is an opinion
 
-`interaction` and `point_salad` are **derived locally, not BGG data** — BGG
-exposes no interaction statistic and no point-salad flag. Whenever you present
-either, say so. `point-salads.txt` and `scripts/interaction.py` are meant to be
-edited when the user disagrees; re-run `build.py` afterwards.
+`interaction`, `breadth` and `traits` are **derived locally, not BGG data** —
+BGG exposes none of them. Whenever you present any of them, say so.
+
+`breadth` is a four-level scale (Focused / Some / Broad / Salad) computed from
+counted evidence in the mechanic and family tags; it names no games. `traits`
+lists why, and is multi-selectable, so combinations like "broad scoring but a
+contested market" are askable. Correct individual games in
+`breadth-overrides.txt`, tune the model in `scripts/breadth.py` or
+`scripts/interaction.py`, then re-run `build.py`.
 
 ## Refreshing (network — needs the user's OK)
 

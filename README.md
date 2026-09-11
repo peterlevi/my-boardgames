@@ -23,13 +23,24 @@ browser:
   count the base game can't manage alone
 - **BGG score** and **your own rating** side by side, as BGG's rating hexagons
 - **Complexity**, **play time**, **number of plays**, all as ranges
-- **Scoring breadth** — Focused / Some / Broad / Salad, plus a multi-select of
-  the underlying scoring traits (end-game bonuses, contested market, auction, …)
-- **Level of interaction** — low / medium / high
-- Name search, and every column sortable
+- **Level of interaction** — low / medium / high, with the *kind* of
+  interaction on hover
+- **One filter field over every property** a game has — 710 of them here:
+  traits, categories, mechanics, designers and BGG families, searchable by name
+  or description, multi-select with match all / any / none. Counts read
+  "23 of 60": how many you would see if you ticked it, out of how many exist.
+- Name search that reaches **past** the current filters, showing what they
+  excluded under a divider rather than hiding it
+- Every column sortable
 
-Thumbnails are embedded in the file, so it works with no network and survives
-being mailed or dropped into a chat client.
+**Click any row** to expand it: gallery images in an inline viewer (arrow keys
+browse), what people say about the game, how you win, how players interact,
+the full player-count poll, and every trait, category, mechanic and designer
+as a button that filters the table by it.
+
+Thumbnails are embedded in the file, so the table works with no network and
+survives being mailed or dropped into a chat client. Only the expanded row's
+gallery images load remotely.
 
 ### A local opinion database (optional)
 
@@ -92,41 +103,31 @@ Batching matters: one game per `claude` call took about 100 minutes for 242
 games, because agent startup dominates. Eight per call takes about four
 minutes.
 
-### Two columns are opinions
+### What is derived, and what is measured
 
-**Interaction** is not a BGG statistic. Their API has no such field, and
-neither does geekgroup's — nothing authoritative exists to import. It is
-derived in [`scripts/interaction.py`](scripts/interaction.py) from each game's
-mechanics and categories: tags that mean players act *on* each other score
-High, competition over a shared pool scores Medium, parallel play scores Low,
-with a handful of documented overrides where BGG's tags mislead.
+Three things in the report are **not** BGG data, and it says so wherever it
+shows them.
 
-**Scoring breadth** — how widely a game spreads its points, from *Focused*
-(one contested currency decides it) to *Salad* (points come from everywhere) —
-is derived in [`scripts/breadth.py`](scripts/breadth.py). It names no games:
-the model counts *kinds of evidence* rather than weighting individual
-mechanics, because a weighted table invites quietly encoding opinions and a
-list of named games is a lookup, not a model.
+**Interaction** — BGG has no such field, and neither does geekgroup's API. The
+level, and the description of *how* players interact, come from the opinion
+database above. Where that is unavailable it falls back to a rule in
+[`scripts/interaction.py`](scripts/interaction.py) reading BGG's mechanic and
+category tags: tags meaning players act *on* each other score High,
+competition over a shared pool Medium, parallel play Low.
 
-It rests on a measured finding. Comparing broad-scoring games against focused
-ones, the sharpest separator was how many **shared-pool** mechanics a game has
-— an auction, a market, a stock track (focused games averaged 1.43, broad ones
-0.19). Second was solo-play support (0.62 vs 0.07): a game that works alone is
-one where your score comes from your own engine rather than from beating
-anybody. Two plausible-sounding signals turned out worthless and are
-deliberately absent — the raw count of mechanics (gap 0.03) and BGG weight
-(0.17).
+**Wins by** and **scoring breadth**, both in the expanded row, also come from
+the opinion database. An earlier attempt derived breadth from mechanic tags
+alone and is gone: it put Food Chain Magnate — a shared bank, a shared
+customer pool, one currency — in the *broad* bucket, and called more than half
+the collection focused. BGG's tags describe what you *do*, never how you
+*win*, and no weighting of them recovers the difference.
 
-Against a set of reference games it agrees on 21 of 23. The two it misses,
-left uncorrected so the model stays honest, are noted in
-[`breadth-overrides.txt`](breadth-overrides.txt) — which ships empty.
-
-The same mechanics also yield **scoring traits**, exposed as a multi-select, so
-you can ask for combinations a single flag could never express: *broad scoring,
-but still a contested market*.
-
-Both are meant to be argued with. Edit either file, re-run `build.py`, and the
-report follows.
+**Traits** are groupings rather than judgments. Each means "this game has at
+least one of these mechanics", defined in
+[`scripts/traits.py`](scripts/traits.py). They exist because BGG's vocabulary
+is granular — eleven separate auction mechanics, three worker-placement ones —
+and you usually want the family, not the variant. Every trait is checkable
+against the mechanics list in the same expanded row.
 
 ## Quick start
 
@@ -175,13 +176,22 @@ python3 scripts/report.py -o reports/collection.html
 ## How it works
 
 ```
-scripts/sync.py      run the whole pipeline below, in order
-scripts/fetch.py     BGG XML API      ->  data/raw/            (network)
-scripts/thumbs.py    BGG image CDN    ->  data/thumbs/*.jpg    (network)
-scripts/build.py     data/raw         ->  data/games.json      (offline, instant)
-scripts/report.py    data/games.json  ->  a single HTML file   (offline, instant)
-scripts/query.py     data/games.json  ->  a terminal table     (offline, instant)
-scripts/screenshot.py  the report     ->  docs/screenshot.png  (offline)
+scripts/sync.py        runs the whole pipeline below, in order
+
+scripts/fetch.py       BGG XML API       -> data/raw/           (network)
+scripts/thumbs.py      BGG image CDN     -> data/thumbs/*.jpg   (network)
+scripts/gallery.py     geekdo gallery    -> data/gallery/*.json (network)
+scripts/build.py       data/raw          -> data/games.json     (offline)
+scripts/enrich.py      `claude` CLI      -> data/ai/*.json      (optional)
+scripts/report.py      data/games.json   -> a single HTML file  (offline)
+
+scripts/query.py       data/games.json   -> a terminal table    (offline)
+scripts/screenshot.py  the report        -> docs/screenshot.png (offline)
+
+scripts/common.py             paths, credentials, shared filter logic
+scripts/interaction.py        the fallback interaction rule
+scripts/traits.py             named groupings of BGG mechanics
+scripts/report_template.html  the page's markup, styles and browser-side code
 ```
 
 Only `fetch.py` and `thumbs.py` touch the network. `data/raw/` and
@@ -215,8 +225,8 @@ to BGG, and so the only one that needs credentials.
 ### Terminal queries
 
 ```bash
-python3 scripts/query.py --players 4 --breadth upto-some
-python3 scripts/query.py --players 0 --breadth broad --trait "Contested market"
+python3 scripts/query.py --players 4
+python3 scripts/query.py --players 0 --tag Economic --tag "Auction / Bidding"
 python3 scripts/query.py --players 2 --max-weight 2.5 --max-time 45
 python3 scripts/query.py --players 5 --min-approval 90 --format json
 ```

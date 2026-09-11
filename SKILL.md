@@ -13,13 +13,14 @@ scripts. Everything except `fetch.py` is offline and instant.
 ## Answer questions with `query.py` — do not re-fetch
 
 ```bash
-python3 scripts/query.py --players 4 --exclude-file point-salads.txt --format md
+python3 scripts/query.py --players 4 --format md
 ```
 
-Flags: `--players N`, `--min-best PCT` (default 50), `--min-approval PCT`,
-`--min-votes N` (default 10), `--min-weight` / `--max-weight`,
-`--max-time MIN`, `--exclude-file FILE`, `--format txt|md|json`. Output sorts
-by BGG rank ascending, unranked last.
+Flags: `--players N` (0 = any), `--min-best PCT` (default 50),
+`--min-approval PCT`, `--min-votes N` (default 10), `--min-weight` /
+`--max-weight`, `--max-time MIN`, `--tag NAME` (repeatable — any BGG mechanic
+or category), `--expansions drop|show`, `--format txt|md|json`. Output sorts by
+BGG rank ascending, unranked last.
 
 ## Build the interactive report with `report.py`
 
@@ -35,8 +36,14 @@ wants to explore rather than get one answer.
 Rows are rendered server-side and thumbnails are inlined, so the file still
 reads correctly where scripts or external images are blocked (Slack's mobile
 preview does both). Keep the page script at ES2019 or older — newer syntax is
-a parse error there and silently disables everything. Run `scripts/thumbs.py`
-once first if `data/thumbs/` is empty.
+a parse error there and silently disables everything, and `report.py` refuses
+to write unbalanced markup, so a stray tag fails the build rather than
+rendering wrong.
+
+`scripts/sync.py` runs the whole pipeline: fetch → thumbs → gallery → build →
+enrich → report. Everything except `fetch.py`, `thumbs.py`, `gallery.py` and
+`enrich.py` is offline, and `enrich.py` skips itself cleanly when the `claude`
+CLI is missing.
 
 For anything the flags don't cover, read `data/games.json` directly — one
 object per game with `name`, `rank`, `weight`, `average`, `year`, `plays`,
@@ -55,15 +62,19 @@ can be 99% approved at 4 while being Best at 6.
 
 ## Say when a column is an opinion
 
-`interaction`, `breadth` and `traits` are **derived locally, not BGG data** —
-BGG exposes none of them. Whenever you present any of them, say so.
+`interaction`, `win_criteria`, `scoring.breadth`, the opinion text and
+`traits` are **derived locally, not BGG data** — BGG exposes none of them.
+Whenever you present any of them, say so.
 
-`breadth` is a four-level scale (Focused / Some / Broad / Salad) computed from
-counted evidence in the mechanic and family tags; it names no games. `traits`
-lists why, and is multi-selectable, so combinations like "broad scoring but a
-contested market" are askable. Correct individual games in
-`breadth-overrides.txt`, tune the model in `scripts/breadth.py` or
-`scripts/interaction.py`, then re-run `build.py`.
+Most come from `data/ai/`, the opinion database built by `scripts/enrich.py`
+using the `claude` CLI. Each entry carries a `confidence`, and `source`:
+absent means the model answered from what it knows, `"description"` means it
+only read the BGG text, `"web"` means it searched and the entry cites its
+sources. Interaction falls back to a tag rule in `scripts/interaction.py` when
+the database is absent. `traits` are groupings of mechanics from
+`scripts/traits.py` — "has at least one of these" — not judgments.
+
+Tune those files or re-run `scripts/enrich.py --force`, then `build.py`.
 
 ## Refreshing (network — needs the user's OK)
 

@@ -3290,45 +3290,44 @@
    }
   },
   "ai": {
-   "confidence": "medium",
-   "summary": "Each of four rounds you place incense to earn bamboo pieces, which convert into actions (gather resources, buy home tiles, satisfy balance contracts) while also competing for area-majority bonuses on a shared temple/spirit board. The core tension is a tile-laying puzzle on your own 5x3 home board, where you must keep left/right \"balance\" while packing in valuable tiles, and reviewers describe a cascading effect where early placements ripple into what's available on later turns.",
+   "confidence": "high",
+   "summary": "Players slide bamboo/incense tokens into grooved home boards to pick actions across four rounds of four seasons, placing tiles to build a balanced (left/right symmetric) farm while burning incense at shared temples for spirit bonuses. It plays as a relaxed, puzzly tile-optimization game rather than a tense strategy title — reviewers describe it as cozy and contemplative.",
    "praised": [
-    "the incense/action-selection system, seen as clever and distinctive",
-    "the balance/comfort tile-placement puzzle elevating it above typical tile-layers",
-    "excellent, serene production and art",
-    "quick, easy end-game scoring and brisk play at lower counts"
+    "The tactile bamboo/incense sliding action-selection mechanism, called unique and satisfying",
+    "Artwork and overall thematic mood (whimsical, gorgeous)",
+    "Depth in the home-tile placement puzzle from the balance requirement",
+    "High production quality"
    ],
    "criticised": [
-    "poor iconography — tile-type icons are small and tucked in corners",
-    "cluttered player boards with unexplained arrows/labels",
-    "awkward temple placement on the shared board and missing timing info on spirit tiles",
-    "oversized box/component count relative to what's actually used",
-    "some reviewers found it merely 'fine,' calling it an 'elevated shoulder shrug', and it has no solo mode"
+    "Iconography and UI problems: key tile info tucked in small corners, tiny alignment arrows, oversized trackers wasting board space",
+    "A middling, must-keep-handy rulebook",
+    "Summed up by one reviewer as 'everyone likes it, no one loves it' — solidly good but rarely a favorite",
+    "Minor component complaints (excess currency tokens, tile holders that spill)"
    ],
    "interaction": {
     "level": "Low",
-    "kind": "shared area-majority drafting",
-    "detail": "Each player runs their own home board and temple track largely in parallel, so most of the game is solo optimization. The only shared state is a central temple/spirit board where players compete for majority bonuses and for limited bamboo/market tiles, with no direct conflict, attacking, or stealing."
+    "kind": "Indirect, shared temple majority",
+    "detail": "Each player builds on a private home board that is not shared, so most of the game is parallel development. The only shared, contested state is the temple spaces, where incense placement creates area-majority competition for spirit bonuses, with ties broken by turn order."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
-    "breadth": "Some",
-    "why": "Points come from a handful of interlocking categories rather than one dominant engine or a huge sprawling salad.",
-    "how_you_win": "Points accumulate from placed home tiles, completed balance/comfort contracts (with half-credit for incomplete ones), roughly 2 points per spirit majority won, and penalties for board imbalance; highest total after 4 rounds wins."
+    "breadth": "Broad",
+    "why": "Points come from home-tile values, unique spirit tiles, completed balance 'contracts,' and a left/right imbalance penalty rather than one dominant track",
+    "how_you_win": "Accumulate the most points across in-round and end-game scoring from tile placement, temple favors, and balance bonuses over four years/rounds."
    },
    "similar": [
     "Bitoku",
     "Silk",
-    "Sabika",
     "The Red Cathedral",
-    "The White Castle",
-    "Kanagawa"
+    "Kanagawa",
+    "The White Castle"
    ],
    "sources": [
     "https://www.boardgamequest.com/bamboo-review/",
     "https://www.meeplemountain.com/reviews/bamboo/",
     "https://www.whatboardgame.com/post/bamboo-board-game-review",
-    "https://boardgamegeek.com/boardgame/351538/bamboo"
+    "https://devirgames.com/the-kemushi-saga-a-magical-world-for-devir-board-games",
+    "boardgamegeek.com/boardgame/351538 (search snippets only, direct fetch blocked)"
    ],
    "source": "web",
    "_fingerprint": "a0950d1c36025330",
@@ -3845,33 +3844,37 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Players reveal goods/action cards and bid Guilders against each other for them, with the current holder able to accept an offered price or pay it themselves to keep the card, all while racing to assemble the exact goods combination a ship captain wants before that ship fills and sails. It's described as a tense, hard-nosed trading game where grabbing cards you don't need purely to extort opponents is a core, sanctioned tactic.",
+   "confidence": "medium",
+   "summary": "Players bid on action cards to acquire goods for a personal warehouse, then race to assemble the exact cargo a harbor ship demands before it fills and sails; the signature 'extortion' mechanic has one player set price/terms that an opponent then chooses which side of. It was an unexpected buzz title at Essen Spiel 2007 and got a Golden Geek nomination, but some found it fiddly to teach.",
    "praised": [
-    "the bidding/extortion mechanic — setting prices you'd be happy either to pay or receive — called clever and tense",
-    "packs a surprising amount of game into a small box; overperformed expectations at its Essen 2007 debut"
+    "Surprisingly deep, tense decision-making for a small card game",
+    "The forced-choice extortion bidding mechanic, called 'agonizing and incredibly rewarding' by longtime fans",
+    "Was a standout buzz title at Essen Spiel 2007 and a 2008 Golden Geek Best Card Game nominee"
    ],
    "criticised": [
-    "drab, plain artwork",
-    "uniform round-to-round structure that some reviewers felt dampened long-term motivation/replay variety",
-    "stressful and mean, which not every player will enjoy"
+    "Some reviewers found it demanding/fiddly to teach new players",
+    "The mean, forced extortion mechanic is divisive — loved by some, off-putting to others",
+    "Drab artwork"
    ],
    "interaction": {
     "level": "High",
-    "kind": "direct bidding/extortion",
-    "detail": "There's no parallel private-hand play here — nearly every turn is a face-to-face price war over a shared pool of goods cards, and a named strategy is buying cards you don't need just to squeeze opponents who do. State is largely shared (the goods market and ships in harbor) rather than siloed per player."
+    "kind": "Forced-choice auction/extortion",
+    "detail": "The harbor with its limited ship slots is a shared, contested space, but each player also keeps a private warehouse of goods. Interaction is direct: a player sets price/terms on a deal and an opponent is forced to pick which side of it they get stuck with, actively shaping rivals' outcomes rather than just competing indirectly."
    },
    "win_criteria": "Most money",
    "scoring": {
     "breadth": "Focused",
-    "why": "Available sources point to a single scoring channel — accumulated money/goods value — rather than multiple bonus categories, though this could not be fully verified against the rulebook.",
-    "how_you_win": "The player who ends with the most money/goods value, built through successful trades and bidding, wins; this could not be independently confirmed beyond secondhand review summaries."
+    "why": "No evidence turned up of multiple disconnected scoring tracks; it centers on money earned from completed ship deliveries",
+    "how_you_win": "Deliver the right combination of goods to ships before they depart to earn Guilders, ending with the most money (inferred from available sources, not independently confirmed)."
    },
    "similar": [],
    "sources": [
-    "https://opinionatedgamers.com/2021/04/06/top-20-most-underappreciated-games/",
-    "https://www.reich-der-spiele.de/kritiken/VorDemWind",
-    "https://boardgamegeek.com/boardgame/28723/before-the-wind"
+    "boardgamegeek.com/boardgame/28723/before-the-wind (search snippet only, 403 on direct fetch)",
+    "boardgamegeek.com/thread/271697",
+    "boardgamegeek.com/thread/210563",
+    "boardgamegeek.com/thread/197245",
+    "https://opinionatedgamers.com/2021/04/06/top-20-most-underappreciated-games",
+    "https://www.angespielt.de/kritiken/vor-dem-wind"
    ],
    "source": "web",
    "_fingerprint": "5b35dc18350debe2",
@@ -11680,41 +11683,41 @@
   },
   "ai": {
    "confidence": "high",
-   "summary": "Over 14 turns across four seasons, players draft from a shared market of Biome cards (one more than the player count), each card granting a power and unlocking an action on their own personal planet board, before resolving simultaneously. Trees cast shadows that block sunlight scoring while clustering trees and bushes into contiguous groups earns bonus points, so it's a push-pull between spreading out for light and clustering for adjacency bonuses.",
+   "summary": "Each round players draft a biome card that dictates where they can act, then place sprouts, trees, bushes, and lakes on their own board while managing sunlight, shadow, and forest clustering. It runs a brisk 14 turns over 4 rounds and is widely seen as a calmer, more solitaire-ish take on Photosynthesis's tree-growing puzzle.",
    "praised": [
-    "gorgeous production — dual-layer boards, wooden pieces, lovely card art",
-    "the draft adds real tension since unpicked cards shape the shared end-game Fertility Zone scoring",
-    "accessible rules with genuine depth, and it scales well from 1 to 4 players"
+    "Beautiful dual-layer boards and artwork",
+    "A genuinely tense spatial puzzle balancing light exposure against clustering for forest bonuses",
+    "Meaningful drafting decisions, since cards left behind boost a shared Fertility zone",
+    "Quick pacing (roughly 30-45 minutes) once players know the game"
    ],
    "criticised": [
-    "very low interaction beyond the draft — often called 'multiplayer solitaire'",
-    "limited setup variability leading some reviewers to feel it has a shorter shelf life",
-    "fiddly scoring (seasonal sunlight, adjacency, end-game multipliers) that's hard to explain until demonstrated once"
+    "Frequently called pleasant but unmemorable — 'completely unobjectionable' with players leaving saying only 'yeah, it was good'",
+    "Fiddly small wooden pieces",
+    "Limited replayability/strategic variability",
+    "Feels even more solitaire-like than its inspiration, Photosynthesis"
    ],
    "interaction": {
     "level": "Low",
-    "kind": "shared drafting pool only",
-    "detail": "Each player grows their own ecosystem on their own board with no direct conflict. The sole point of contact is the shared card market — what you take (or leave) shapes opponents' available powers and feeds a shared end-game Fertility Zone that everyone scores against."
+    "kind": "Shared drafting pool, private boards",
+    "detail": "Each player develops an entirely separate personal board with no spatial competition, unlike Photosynthesis's single shared board. The main touchpoint is drafting biome cards from a shared pool, where players weigh what they take against what they leave behind, since unchosen cards boost the shared Fertility zone."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
-    "breadth": "Broad",
-    "why": "Points come from three distinct channels — recurring seasonal sunlight, forest/adjacency clustering, and an end-game comparison of Big Trees against a shared Fertility Zone — that reviewers say can each swing a large share of the final score.",
-    "how_you_win": "Highest total after 4 seasons, combining ongoing sunlight and adjacency scoring with an end-game bonus from Big Trees valued against the community Fertility Zone; observed scores ranged roughly 80-165."
+    "breadth": "Salad",
+    "why": "One review explicitly calls it salad scoring, with points from seasonal sunlight exposure, largest contiguous forest bonuses, and endgame fertility-biome scoring as largely independent tracks",
+    "how_you_win": "Accumulate the highest total across sunlight, forest-size, and fertility bonuses by the end of round 4, with scores commonly landing in the 80-200 range."
    },
    "similar": [
     "Photosynthesis",
-    "Tang Garden",
-    "Cascadia",
-    "Calico",
-    "Verdant"
+    "Tang Garden"
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/evergreen/",
     "https://opinionatedgamers.com/2022/09/19/dale-yu-review-of-evergreen/",
-    "https://www.boardgamequest.com/evergreen-review/",
     "https://www.thestartplayer.com/review-evergreen/",
-    "https://boardgamegeek.com/boardgame/363307/evergreen"
+    "https://www.geeksundergrace.com/tabletop/review-evergreen/",
+    "https://www.meepleuniversity.com/2022/10/07/evergreen-is-it-like-photosynthesis/",
+    "boardgamegeek.com/boardgame/363307/evergreen (search snippet only, 403 on direct fetch)"
    ],
    "source": "web",
    "_fingerprint": "e8c72ebc652bf0c4",
@@ -12742,28 +12745,31 @@
    }
   },
   "ai": {
-   "confidence": "medium",
-   "summary": "Over 5 rounds, each turn you place a double-sided Ambassador pawn either as a Vote (seeding the shared Senate board and swaying which planet/goal scores that round) or as Funding (unlocking missions on your own player board), with Senate spaces holding only one token so blocking is constant. One reviewer found winners leaned on the Funding side about 62% of the time, finishing with 200+ points spread across many sources.",
+   "confidence": "high",
+   "summary": "Each round players place Ambassador tokens on a shared Senate grid, deciding every time whether that token funds a Major Project or casts a vote on pending legislation, with single-use spaces creating constant blocking tension. It rewards funding-heavy play and shifts noticeably by player count, playing best with 4 and feeling weaker at 2-3.",
    "praised": [
-    "the dual-use Ambassador pawn 'Vote or Fund?' dilemma, called the game's best idea",
-    "the shared Senate action board, which creates real tension every turn",
-    "strong production quality and rulebook"
+    "The Senate placement/voting dilemma and the blocking tension it creates ('plenty of tension on the Senate board')",
+    "High production quality with clear player-progress tracking",
+    "A strong, example-filled rulebook",
+    "Plays best and most interactively at higher player counts"
    ],
    "criticised": [
-    "the private player-board tracks feel repetitive and dry compared to the Senate",
-    "the sci-fi/political theme feels tacked onto what plays like an abstract Euro",
-    "lower-player-count blocking-tile variants feel clunkier than the full 4-player game"
+    "Funding tokens are disproportionately used by winners (~62% per one reviewer's tally), making optimal play somewhat formulaic",
+    "Secondary planet-development tracks feel 'pedestrian' and repetitive",
+    "Balance shifts noticeably by player count, weaker at 2-3 players",
+    "Most Major Projects reliably complete, reducing end-game suspense",
+    "Theme described by one reviewer as fairly tacked-on"
    ],
    "interaction": {
     "level": "High",
-    "kind": "worker-placement blocking, area majority, voting",
-    "detail": "The shared Senate board only allows one token per action space, forcing direct blocking, and players compete for area-majority influence over planets while votes can be nudged to favor or disadvantage others. Each player also has a private board with individual tracks and missions, so state is a mix of one contested shared board plus separate personal engines."
+    "kind": "Shared worker placement, blocking, and voting",
+    "detail": "Most of the game state is communal rather than private: the Senate grid, Major Project tracks, and passed laws are all shared, and single-use action spaces mean players directly block each other's options. Voting on legislation also lets players collectively alter shared scoring conditions that affect everyone."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
     "breadth": "Broad",
-    "why": "Prestige accrues from passing laws, funding/completing Major Projects, planetary/Senate majority influence, and end-game bonuses rather than one dominant track.",
-    "how_you_win": "Highest prestige after 5 rounds, with the reviewed source finding Major Project completion and end-game bonuses contributing the most points for winners."
+    "why": "Points accrue from Major Project majority payouts, Senate/voting actions, passed laws, and character recruitment as several only loosely connected tracks",
+    "how_you_win": "Score the most prestige points after 5 rounds by combining Major Project majorities, legislation outcomes, and character bonuses; ties result in a shared victory."
    },
    "similar": [
     "Bruxelles 1893: Belle Époque"
@@ -12771,7 +12777,10 @@
    "sources": [
     "https://www.meeplemountain.com/reviews/federation/",
     "https://mr-boardgames.com/en/reviews/review-federation/",
-    "https://boardgamegeek.com/boardgame/345868/federation"
+    "https://www.meeplemountain.com/boardgame/federation/",
+    "boardgamegeek.com/thread/3313008/a-review-after-about-10-plays (search snippet only, 403 on direct fetch)",
+    "boardgamegeek.com/thread/3129380/federation-review (search snippet only)",
+    "boardgamegeek.com/boardgame/345868/federation (search snippet only)"
    ],
    "source": "web",
    "_fingerprint": "b443b3aae01341e4",

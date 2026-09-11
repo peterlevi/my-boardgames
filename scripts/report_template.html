@@ -145,12 +145,15 @@ details[open] > summary::before { content:"▾"; }
    widths underneath it. Widths come from the header cells below. */
 table { width:100%; table-layout:fixed; border-collapse:separate;
   border-spacing:0; margin-top:6px; }
-th.w-thumb { width:52px; } th.w-rank { width:48px; }
-th.w-hex { width:44px; } th.w-plays { width:50px; }
-th.w-time { width:72px; } th.w-weight { width:58px; }
+/* Each width fits its own label *plus the sort caret*, measured rather than
+   guessed: the caret is always in the layout, so a column sized to the bare
+   word clipped as soon as you sorted by it. */
+th.w-thumb { width:52px; } th.w-rank { width:56px; }
+th.w-hex { width:54px; } th.w-plays { width:58px; }
+th.w-time { width:72px; } th.w-weight { width:70px; }
 th.w-ix { width:86px; } th.w-designer { width:210px; }
 th.w-atn { width:64px; } th.w-pct { width:66px; }
-th.w-ratings { width:62px; }
+th.w-ratings { width:74px; }
 td.gamecell { min-width:0; }
 a.game { overflow-wrap:anywhere; }
 th, td { padding:8px 9px; text-align:left; border-bottom:1px solid var(--line);

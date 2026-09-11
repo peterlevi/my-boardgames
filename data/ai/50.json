@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "A tight two-player card game where you build ascending number runs in five (or six) colored expeditions, weighing when to commit to a color against the risk that low investment leaves you in the red. Turns are quick and simple but every discard is a tense decision because it can hand your opponent exactly the card they need.",
+ "summary": "A tight two-player Knizia classic where each turn you either advance one of your color-coded expeditions or discard, weighing the risk of committing early against a colored suit's steep negative starting cost. It plays fast and rewards careful hand-reading and push-your-luck judgment about how many suits to invest in.",
  "praised": [
-  "Fast, portable, easy to teach",
-  "Elegant push-your-luck tension on when to start an expedition",
-  "Tight two-player duel with real bite despite simple rules",
-  "Great as a filler or gateway two-player game"
+  "elegant, minimal rules hiding real decision depth",
+  "quick, tense push-your-luck play perfect for two players",
+  "great as a filler or a 'one more round' game",
+  "cards and components hold up well over many plays"
  ],
  "criticised": [
-  "Can feel too luck-dependent, especially in the draw",
-  "Limited long-term variety once you know the strategy",
-  "Some find it too abstract/dry compared to Knizia's other designs",
-  "Only supports two players (base game)"
+  "can feel mathematical or dry to players who dislike Knizia's abstract style",
+  "meaningful luck in what you draw versus what's available",
+  "limited long-term variability since there's no variable setup"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "card denial via shared discard piles"
+  "kind": "shared discard denial, parallel expeditions",
+  "detail": "Each player builds their own separate expeditions in front of them, but the shared discard piles mean you're constantly deciding whether to hand your opponent a useful card or deny them one. It's mostly parallel play punctuated by these discard-timing decisions."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Whoever manages their expedition investments best, avoiding negative-scoring colors while denying useful discards to the opponent, wins"
+  "breadth": "Some",
+  "why": "Each color expedition scores independently and the totals are summed, so the winner is whoever best balanced which expeditions to invest in.",
+  "how_you_win": "Commit to expeditions where you can play enough high-value cards to overcome the -20 point starting cost, while avoiding spreading too thin across colors."
  },
  "similar": [
-  "Schotten Totten",
   "Jaipur",
   "Battle Line",
-  "Guillotine",
-  "7 Wonders Duel"
+  "Schotten Totten",
+  "7 Wonders Duel",
+  "Air, Land, & Sea"
  ],
- "_fingerprint": "79e6031408c2d161",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Game Boy Geek"
+ ],
+ "_fingerprint": "9cdf65e7da868ba9",
  "_name": "Lost Cities"
 }

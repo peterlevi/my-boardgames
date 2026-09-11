@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Taj Mahal is a tense, cutthroat auction game where you bid cards across twelve rounds to win majorities in one of five categories, then cash those wins into palaces and commodities for points; it plays fast and mean, with players baiting each other into overspending or ganging up to deny a leader.",
+ "summary": "Taj Mahal is a classic Knizia design where players bid across multiple simultaneous auctions each round using a hand of cards, competing to control regions and collect commodities that convert to influence points. It's tense and cutthroat, with every auction affecting your standing relative to your neighbors.",
  "praised": [
-  "Tight, tense bidding mechanism where knowing when to drop out is the whole game",
-  "Constant player interaction and 'kingmaking' tension without direct conflict",
-  "Short, brisk playtime relative to the depth of decisions",
-  "Elegant, tightly designed Knizia ruleset with little downtime"
+  "Brilliant, tense multi-track auction system",
+  "High player interaction and tough decisions",
+  "Elegant design that rewards reading opponents",
+  "Strong replayability"
  ],
  "criticised": [
-  "Heavy multiplayer solitaire risk if players don't actively gang up on the leader",
-  "Can feel mean or swingy — a coalition can crush a leading player",
-  "Thin theme bolted onto an abstract bidding system",
-  "Component/board iconography can be fiddly to learn at first"
+  "Can feel mean or kingmaking in some groups",
+  "Card luck in hand draw",
+  "Auction mechanism takes a play or two to click",
+  "Theme is thin pasted-on"
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction bluffing and coalition-building to deny the leader"
+  "kind": "bidding and area majority",
+  "detail": "Players bid against each other for regional control and palace-building rights using cards from a shared hand, directly blocking or outbidding rivals each round. The shared board state of regional influence markers means every win or loss directly affects everyone else's position."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "the winner is decided by who best times card commitments across the palace/commodity auctions to bank the most cumulative influence points"
+  "breadth": "Broad",
+  "why": "Points come from building palaces of each type and controlling commodities, with the lowest category among certain sets acting as a scoring cap.",
+  "how_you_win": "You win by winning enough regional auctions to build a spread of different palace types and collect valuable commodities, edging out rivals in overall influence."
  },
  "similar": [
   "Ra",
   "Amun-Re",
-  "Blue Moon City",
   "Samurai",
-  "Modern Art"
+  "Blue Lagoon",
+  "Tigris & Euphrates"
  ],
- "_fingerprint": "ed4400c7de2c8279",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Gaming Rules!"
+ ],
+ "_fingerprint": "9c64ad9ccb406d96",
  "_name": "Taj Mahal"
 }

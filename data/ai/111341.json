@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "A dense, aggressive economic game where players bid for turn order and worker placement while building networks of trading posts to move goods and score points by dedicating monuments to one of twelve gods. Every action is entangled with every other player's plans, making it a spatial, multiplayer chess-like puzzle with brutal opportunity costs and heavy player interaction through the auction and shared board.",
+ "summary": "The Great Zimbabwe is a brutal Splotter economic game about building trade networks across Africa and specializing hard into a narrow scoring strategy multiplied by god cards. It's known for a steep, punishing learning curve and huge swings based on early strategic commitment.",
  "praised": [
-  "Deeply interlocking systems where every decision affects every other player",
-  "High replayability from variable god choice, modular board, and player count scaling",
-  "Rewards long-term planning and reading opponents' positions",
-  "Satisfying economic engine-building once the systems click",
-  "Strong Splotter pedigree for tight, no-luck design"
+  "deep, satisfying long-term planning",
+  "unique specialization-based scoring via god cards",
+  "strong direct interaction through auctions and blocking",
+  "high replay value from variable setup"
  ],
  "criticised": [
-  "Steep learning curve and opaque rules on first plays",
-  "Long downtime and analysis paralysis, especially with full player counts",
-  "Punishing for new players who make early positional mistakes",
-  "Small print run/high price typical of Splotter games makes it hard to acquire",
-  "Auction mechanism can feel swingy or hard to value early on"
+  "brutally steep rules and strategy learning curve",
+  "punishing for new or casual players",
+  "can feel mean at lower player counts",
+  "requires early commitment that can doom a bad start"
  ],
  "interaction": {
   "level": "High",
-  "kind": "auctions, blocking, and area denial over shared board space and turn order"
+  "kind": "auction and route blocking",
+  "detail": "Players bid against each other for turn order and huts, and compete for limited routes and resources on a shared board, actively blocking rivals' expansion. Nearly all board state — routes, huts, and available resources — is contested and shared."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Points come from monuments dedicated to your chosen god, so success hinges on optimizing one scoring path rather than diversifying across many."
+  "breadth": "Broad",
+  "why": "Points come from specializing heavily in one or two resource types and multiplying their value with god cards, so early, deep commitment to a scoring path usually wins.",
+  "how_you_win": "You build routes and huts to produce specific goods, then use god cards and monuments to multiply that production into victory points, out-scaling opponents in your chosen specialty."
  },
  "similar": [
   "Antiquity",
+  "Food Chain Magnate",
   "Indonesia",
   "Container",
-  "Food Chain Magnate",
-  "Puerto Rico"
+  "Bus: Cottbus Extra"
  ],
- "_fingerprint": "34b1521d966006e5",
+ "teachers": [
+  "Heavy Cardboard",
+  "Watch It Played",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "c6ab0951505816b3",
  "_name": "The Great Zimbabwe"
 }

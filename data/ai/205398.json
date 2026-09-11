@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Citadels is a light bluffing and city-building card game where players secretly choose roles each round that grant unique powers, then use gold to construct buildings toward a points-based win. Much of the fun comes from guessing who picked which role and using assassination/theft powers to disrupt opponents.",
+ "summary": "In Citadels, players secretly pick a character role each round (like Assassin, Thief, or King) whose special power shapes the whole round, then use their role to gather gold and build colored city districts. The push is to be the first to build eight districts while out-guessing everyone else's hidden role choices.",
  "praised": [
-  "clever role-selection mechanism with great bluffing potential",
-  "quick to teach and play",
-  "high variable player powers keep it fresh",
-  "great gateway game for social/deduction fans"
+  "Clever hidden-role deduction with real teeth (Assassin/Thief threats)",
+  "Quick, light rules for the amount of strategy it delivers",
+  "Great player count flexibility and fast turns",
+  "High replayability from variable character powers"
  ],
  "criticised": [
-  "luck of card draw for building types can be swingy",
-  "king-maker potential and sometimes one player gets targeted unfairly",
-  "some character powers are stronger than others",
-  "can run long with more players/analysis paralysis on role picks"
+  "Kingmaking possible when players target a leader out of spite",
+  "Some character imbalance debated among players",
+  "Character abilities can create swingy, sometimes non-interactive rounds",
+  "Can run long with more experienced/cutthroat players"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "bluffing, targeted take-that abilities"
+  "level": "Medium",
+  "kind": "bluffing and take-that via hidden role selection",
+  "detail": "Players secretly choose characters whose powers can steal gold, destroy buildings, or kill another player's turn entirely, so deducing who picked what and targeting them is central. Your own city (tableau of districts) is private and separate, but character effects reach directly into opponents' gold and buildings."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
-  "why": "points come mainly from building costs plus a few bonus conditions like color sets or being first to finish"
+  "why": "Score comes from the point values of built districts plus bonuses for completing eight, having all colors, or building first, so district selection and completion timing decide the winner.",
+  "how_you_win": "You collect gold via your chosen character each round and spend it to build districts; once someone completes eight districts the game ends that round, and total district value plus bonuses determines the winner."
  },
  "similar": [
   "Coup",
+  "Sheriff of Nottingham",
   "Libertalia",
-  "Five Tribes",
-  "Blood Rage",
-  "Aluxes"
+  "The Resistance",
+  "Machi Koro"
  ],
- "_fingerprint": "da132004687a6eca",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "2f3b9330369bffd8",
  "_name": "Citadels"
 }

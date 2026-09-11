@@ -1,35 +1,39 @@
 {
  "confidence": "high",
- "summary": "A fast, tactical duel where each hero's unique deck of movement/attack/defense cards creates a distinct combat rhythm, with Robin Hood's crew sniping from range and stealing cards while Bigfoot smashes in for big hits before vanishing into the woods. Games are quick (20 minutes), decided by careful positioning, bluffing which card you'll play, and timing your special abilities against the opponent's hand.",
+ "summary": "A dedicated two-player Unmatched box pitting Robin Hood's ranged, resource-stealing outlaws against Bigfoot and his Jackalope companion smashing through terrain. It delivers the same fast, dice-free tactical duel as other Unmatched sets, just packaged as a standalone two-hero matchup that can also be folded into larger four-player games with other sets.",
  "praised": [
-  "Deep asymmetry between heroes despite simple core rules",
-  "Fast setup and playtime, easy to teach",
-  "High production value (sculpted miniatures, dual-sided board)",
-  "No-luck combat resolution rewards skill and card-reading over dice",
-  "Great entry point into the wider Unmatched line, good for two players"
+  "strong thematic contrast between a ranged skirmisher and a brawler",
+  "cheaper, focused entry point into the Unmatched system",
+  "quick to teach and quick to play",
+  "combines cleanly with other Unmatched boxes"
  ],
  "criticised": [
-  "Small card pool per hero means matches can become solved/repetitive with experience",
-  "Fixed 2-player set has less replay variety than 4-player Unmatched boxes",
-  "Bigfoot vs Robin Hood specifically seen as a slightly weaker/less iconic pairing than other sets",
-  "Line-of-sight/ranged rules can slow down play with board measuring disputes"
+  "only two heroes limits variety on its own",
+  "less value if you don't plan to mix with other sets",
+  "Bigfoot's terrain-smashing can feel swingy against inexperienced Robin Hood players"
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct card-based combat and positional blocking"
+  "kind": "direct one-on-one combat with hand-based bluffing",
+  "detail": "The two heroes fight directly on a shared point-to-point map, attacking and defending with cards from hand, so essentially the entire game state is contested rather than private."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The match ends the instant one hero's life total is reduced to zero, so the whole game is about managing your own health and closing out attacks."
+  "why": "There is no scoring; the duel ends the moment one hero's health track hits zero.",
+  "how_you_win": "You win by using positioning, ranged attacks or terrain destruction, and well-timed defense cards to reduce the opposing hero to zero health."
  },
  "similar": [
-  "Unmatched: Battle of Legends Volume One",
+  "Unmatched: Battle of Legends, Volume One",
   "Unmatched: Cobble & Fog",
-  "Unmatched: Buffy the Vampire Slayer",
-  "Star Wars: Rebellion",
-  "BattleCON"
+  "BattleCON",
+  "Smash Up"
  ],
- "_fingerprint": "55f7a171789c524a",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "68af075274fd72ca",
  "_name": "Unmatched: Robin Hood vs. Bigfoot"
 }

@@ -576,7 +576,23 @@ The game comes with 50 missions, with three additional missions published in spi
 			
 
 			
-	
+			<videos total="242">
+						<video id="624811" title="Cum se joaca The Crew In cautarea celei de-a noua planete " category="instructional" language="Romanian" link="http://www.youtube.com/watch?v=83cuQxjrMCE" username="CristiD" userid="2702130" postdate="2026-08-11T17:06:23-05:00" />
+						<video id="621096" title="A Tripulação (Devir) - Regras e Gameplay" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=cTwat2IIh30" username="RSanzzio" userid="713978" postdate="2026-07-18T20:07:05-05:00" />
+						<video id="605656" title="Come si gioca a The Crew: The Quest for Planet Nine in un lampo" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=NfsfjvHKCYM" username="CappellaioMoltoMatto" userid="401298" postdate="2026-04-04T10:06:19-05:00" />
+						<video id="598031" title="A Tripulação - Como Jogar" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=jBOKQYcW7os" username="Romir" userid="9484" postdate="2026-02-15T10:01:04-06:00" />
+						<video id="586690" title="The Crew - Quest for Planet Nine Card Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=LBAR4qd2jAE" username="Smalfri2" userid="2564271" postdate="2025-12-07T11:30:06-06:00" />
+						<video id="559756" title="The Crew: The Quest for Planet Nine #boardgames #boardgamelife #boardgamegeek #星際探險隊 #第九行星任務" category="other" language="English" link="http://www.youtube.com/watch?v=bGAJfzmAjRo" username="czeslaw6300149" userid="798383" postdate="2025-06-22T23:00:49-05:00" />
+						<video id="554350" title="Crew Balls - When you end the night on a loss" category="humor" language="English" link="http://www.youtube.com/watch?v=EdTQ9hjDdqI" username="TheBeesKnees13" userid="1795767" postdate="2025-05-16T08:31:17-05:00" />
+						<video id="523302" title="How to Teach - The Crew: Quest for Planet Nine" category="instructional" language="English" link="http://www.youtube.com/watch?v=o8OqC9sPT1c" username="JC_Wollslager" userid="2022819" postdate="2024-11-08T12:42:51-06:00" />
+						<video id="512357" title="The Crew: Quest for Planet Nine - Board With Each Other Review" category="review" language="English" link="http://www.youtube.com/watch?v=qP-FYhvfpFg" username="BoardWithEachOther" userid="1146520" postdate="2024-09-03T03:32:40-05:00" />
+						<video id="501501" title="Tabletop Gaming Guild Show: TGG Chat and playing The Crew on Board Game Arena" category="session" language="English" link="http://www.youtube.com/watch?v=NDEU-DD1Arg" username="program2game" userid="934384" postdate="2024-06-24T19:57:22-05:00" />
+						<video id="500986" title="Review of The Crew: Quest For Planet Nine - Space Game" category="review" language="English" link="http://www.youtube.com/watch?v=ic_E2_CXYSo" username="PartyTails" userid="2256902" postdate="2024-06-21T09:20:29-05:00" />
+						<video id="495942" title="The Crew, Quest for Planet Nine Review" category="review" language="English" link="http://www.youtube.com/watch?v=zJ_kaHMNmGM" username="Eezore" userid="3714468" postdate="2024-05-18T14:39:45-05:00" />
+						<video id="487781" title="Posada" category="review" language="Serbian" link="http://www.youtube.com/watch?v=xK06LlGkPmY" username="SAKY90" userid="3483845" postdate="2024-03-26T19:09:18-05:00" />
+						<video id="483241" title="Tabletop Gaming Guild Show: The Crew: The Quest for Planet Nine Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=PxanZRfzS0g" username="program2game" userid="934384" postdate="2024-02-26T13:00:08-06:00" />
+						<video id="475598" title="Sådan spiller du THE CREW" category="instructional" language="Danish" link="http://www.youtube.com/watch?v=RQcGtl0YYfY" username="Ringsted Bibliotek" userid="1397105" postdate="2024-01-18T07:31:06-06:00" />
+					</videos>
 
 	
 
@@ -585,8 +601,8 @@ The game comes with 50 missions, with three additional missions published in spi
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="49381" />
-			<average value="7.75007" />
+			<usersrated value="49391" />
+			<average value="7.74998" />
 			<bayesaverage value="7.61115" />
 
 			<ranks>
@@ -594,13 +610,13 @@ The game comes with 50 missions, with three additional missions published in spi
 																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="12" bayesaverage="7.63587" />
 												</ranks>
 
-			<stddev value="1.31701" />
+			<stddev value="1.31687" />
 			<median value="0" />
-			<owned value="95010" />
-			<trading value="1403" />
+			<owned value="95040" />
+			<trading value="1400" />
 			<wanting value="319" />
-			<wishing value="6299" />
-			<numcomments value="6529" />
+			<wishing value="6302" />
+			<numcomments value="6531" />
 			<numweights value="1015" />
 			<averageweight value="1.9685" />
 			</ratings>

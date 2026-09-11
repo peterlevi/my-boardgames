@@ -639,7 +639,23 @@ NOTE: The Spanish and Portuguese editions of Maracaibo contain La Armada mini-ex
 			
 
 			
-	
+			<videos total="195">
+						<video id="579213" title="Maracaibo. Start Playing in 14 Minutes. Quick Start Board Game Tutorial" category="instructional" language="English" link="http://www.youtube.com/watch?v=h-yy4z6P0ow" username="JetSkiPopper" userid="1310667" postdate="2025-10-27T07:01:26-05:00" />
+						<video id="578918" title="Maracaibo [JcK Opina / Juego de Mesa / Mas Que Oca]" category="review" language="Spanish" link="http://www.youtube.com/watch?v=lhq49rG3krE" username="JugandoConKetty" userid="120496" postdate="2025-10-25T06:30:58-05:00" />
+						<video id="559222" title="MARACAIBO Comment jouer une partie solo avec vidéo règle du jeu de société. Super Meeple." category="session" language="French" link="http://www.youtube.com/watch?v=jaEbG6b29lw" username="Fabiiien" userid="2556154" postdate="2025-06-18T15:01:04-05:00" />
+						<video id="556511" title="J'aime j'y rejoue - Maracaïbo (et ses pirates)" category="review" language="French" link="http://www.youtube.com/watch?v=TVYA5bU6CJE" username="blochjo6" userid="1629389" postdate="2025-05-30T04:13:16-05:00" />
+						<video id="544105" title="MARACAIBO - PARTIE SOLO - FINAL" category="session" language="French" link="http://www.youtube.com/watch?v=0xJ0hdKlbt4" username="sheridan8" userid="2316761" postdate="2025-03-18T07:17:03-05:00" />
+						<video id="544104" title="MARACAIBO - PARTIE SOLO - SESSION I" category="session" language="French" link="http://www.youtube.com/watch?v=ZBJJmwgz3eI" username="sheridan8" userid="2316761" postdate="2025-03-18T07:16:17-05:00" />
+						<video id="544103" title="MARACAIBO - MISE EN BOUCHE" category="session" language="French" link="http://www.youtube.com/watch?v=-U9qZ5pi4T4" username="sheridan8" userid="2316761" postdate="2025-03-18T07:15:20-05:00" />
+						<video id="523578" title="Maracaibo Rules Challenge" category="instructional" language="English" link="http://www.youtube.com/watch?v=EDa20QBJGEs" username="Fishpeddler" userid="152771" postdate="2024-11-10T13:53:53-06:00" />
+						<video id="512891" title="Maracaibo solo: vs Jean (medium) " category="session" language="English" link="http://www.youtube.com/watch?v=niXP9Ipr2iY" username="ceephour" userid="1599070" postdate="2024-09-06T08:38:58-05:00" />
+						<video id="504834" title="MARACAIBO | Boardgame | How to Play and Full 2-Player Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=v6K6mMi5rAE" username="all_aboard" userid="2563668" postdate="2024-07-17T09:15:36-05:00" />
+						<video id="497100" title="Maracaibo - Solo Hard Mode" category="session" language="English" link="http://www.youtube.com/watch?v=iWrNEZrCmro" username="Khoodos" userid="361957" postdate="2024-05-25T20:52:22-05:00" />
+						<video id="497099" title="Maracaibo - Strategy Overview" category="instructional" language="English" link="http://www.youtube.com/watch?v=nSn_7bd7MZY" username="Khoodos" userid="361957" postdate="2024-05-25T20:50:44-05:00" />
+						<video id="495181" title="Maracaibo Uprising: Fully Co-Op mode - Playthrough &amp; Review" category="review" language="English" link="http://www.youtube.com/watch?v=xK6toqCVSk8" username="PaulGrogan" userid="1685" postdate="2024-05-13T13:40:11-05:00" />
+						<video id="492967" title="Maracaibo - BGA Playthrough" category="review" language="English" link="http://www.youtube.com/watch?v=mPGHM3WVZBk" username="PaulGrogan" userid="1685" postdate="2024-04-29T12:08:52-05:00" />
+						<video id="492382" title="Maracaibo Review - Board Game Hot Takes Podcast" category="review" language="English" link="http://www.youtube.com/watch?v=rE5AldCtgGQ" username="Denga" userid="1723329" postdate="2024-04-25T18:41:54-05:00" />
+					</videos>
 
 	
 
@@ -648,22 +664,22 @@ NOTE: The Spanish and Portuguese editions of Maracaibo contain La Armada mini-ex
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="18932" />
-			<average value="7.9331" />
-			<bayesaverage value="7.62353" />
+			<usersrated value="18939" />
+			<average value="7.93293" />
+			<bayesaverage value="7.62356" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="91" bayesaverage="7.62353" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="70" bayesaverage="7.68563" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="91" bayesaverage="7.62356" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="70" bayesaverage="7.68567" />
 												</ranks>
 
-			<stddev value="1.30707" />
+			<stddev value="1.30699" />
 			<median value="0" />
-			<owned value="25128" />
+			<owned value="25132" />
 			<trading value="425" />
-			<wanting value="740" />
-			<wishing value="6626" />
-			<numcomments value="2810" />
+			<wanting value="739" />
+			<wishing value="6622" />
+			<numcomments value="2809" />
 			<numweights value="905" />
 			<averageweight value="3.916" />
 			</ratings>

@@ -509,7 +509,23 @@ The game ends when the worker pool has become exhausted, symbolizing the full in
 			
 
 			
-	
+			<videos total="98">
+						<video id="624831" title="Tawantinsuyu: Discussion" category="review" language="English" link="http://www.youtube.com/watch?v=AnBEGe7aVjw" username="FantasyNerd8" userid="1029024" postdate="2026-08-11T18:49:22-05:00" />
+						<video id="620543" title="Segment E18-6 - Les jeux que je ne joue pas assez souvent" category="other" language="French" link="http://www.youtube.com/watch?v=kSvF4A68QhE" username="Hyvll" userid="1597619" postdate="2026-07-14T11:19:37-05:00" />
+						<video id="580958" title="Kości PLAY - Tawantinsuyu (zasady + rozgrywka)" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=Q2LK654DbMM" username="SMGP Kosci" userid="1684808" postdate="2025-11-04T09:59:38-06:00" />
+						<video id="570298" title="Tawantinsuyu [JcK Opina / Juego de Mesa / Maldito Games]" category="review" language="Spanish" link="http://www.youtube.com/watch?v=1pgWL4lu7yw" username="JugandoConKetty" userid="120496" postdate="2025-09-04T11:30:05-05:00" />
+						<video id="524705" title="(1209) Tawantinsuyu: Imperium Inków - pierwsze wrażenia (PL)" category="review" language="Polish" link="http://www.youtube.com/watch?v=SDi_5ws5wEo" username="Jean_Leviathan" userid="234662" postdate="2024-11-17T02:30:13-06:00" />
+						<video id="520230" title="Tawantinsuyu | Solo Playthrough | Live Stream" category="session" language="English" link="http://www.youtube.com/watch?v=dcAK76Qs0rQ" username="Dads_and_Dice" userid="3205436" postdate="2024-10-20T17:36:03-05:00" />
+						<video id="502199" title="Tawantinsuyu Micro Reseña  [Juego de Mesa / Cómo se Juega / JcK]" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=O2ebsJIHDQ0" username="JugandoConKetty" userid="120496" postdate="2024-06-29T07:00:38-05:00" />
+						<video id="487231" title="Παίζουμε Tawantinsuyu: The Inca Empire | House of Nerds" category="session" language="Greek" link="http://www.youtube.com/watch?v=mdH1vlqDRBI" username="Giannis2" userid="1419327" postdate="2024-03-24T04:17:14-05:00" />
+						<video id="467066" title="Unboxing de Tawatinsuyu" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=MI2PyXak194" username="zantk" userid="3215970" postdate="2023-11-18T12:43:03-06:00" />
+						<video id="450768" title="Botm June 22" category="review" language="English" link="http://www.youtube.com/watch?v=M1ZdTdvcFFI" username="AmassGames" userid="1206296" postdate="2023-08-08T06:37:28-05:00" />
+						<video id="447314" title="Dice distancing Tawantinsuyu, how far do dice roll?" category="instructional" language="English" link="http://www.youtube.com/watch?v=lBP-KavV8MM" username="AmassGames" userid="1206296" postdate="2023-07-19T10:02:59-05:00" />
+						<video id="443644" title="How to setup play and review Tawantinsuyu by AmassGames " category="review" language="English" link="http://www.youtube.com/watch?v=kwr3qUQNBOA" username="AmassGames" userid="1206296" postdate="2023-06-26T10:25:21-05:00" />
+						<video id="443440" title="Unboxing teaser trailer preview overview Tawantinsuyu by AmassGames " category="unboxing" language="English" link="http://www.youtube.com/watch?v=wygafkW4yK4" username="AmassGames" userid="1206296" postdate="2023-06-24T10:23:44-05:00" />
+						<video id="413345" title="TAWANTINSUYU TUTORIAL ESPAÑOL" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=PAQ8EsyqA3o" username="L1XU5" userid="2744101" postdate="2022-12-09T19:20:16-06:00" />
+						<video id="393010" title="Unboxing Tawantinsuyu: The Inca Empire (No Talking)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=27Ag-07oVzc" username="nimasdj" userid="2204600" postdate="2022-08-04T08:16:52-05:00" />
+					</videos>
 
 	
 
@@ -518,21 +534,21 @@ The game ends when the worker pool has become exhausted, symbolizing the full in
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="3155" />
-			<average value="7.36764" />
-			<bayesaverage value="6.53225" />
+			<usersrated value="3157" />
+			<average value="7.36757" />
+			<bayesaverage value="6.53252" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1263" bayesaverage="6.53225" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="690" bayesaverage="6.68675" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1262" bayesaverage="6.53252" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="690" bayesaverage="6.68699" />
 												</ranks>
 
-			<stddev value="1.41568" />
+			<stddev value="1.41536" />
 			<median value="0" />
-			<owned value="7468" />
+			<owned value="7471" />
 			<trading value="258" />
 			<wanting value="135" />
-			<wishing value="1059" />
+			<wishing value="1060" />
 			<numcomments value="684" />
 			<numweights value="241" />
 			<averageweight value="4.0954" />

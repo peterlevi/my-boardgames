@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "It's a two-phase roll-and-write: draft dice to use as workers placing them on a shared action board, then solve a polyomino puzzle fitting attractions and dinosaur pens onto your park sheet while connecting everything with paths to the exit. It carries over real thematic weight from the parent game and rewards planning ahead more than most roll-and-writes do.",
+ "summary": "Dinosaur Island: Rawr 'n Write takes the worker-placement dino-park builder and turns it into a roll-and-write, where players draft dice to use as workers, then puzzle out how to fit attractions and dinosaur enclosures onto a personal park sheet. It's a satisfying solo-friendly puzzle with light interaction through dice drafting.",
  "praised": [
-  "Successfully translates the worker-placement/park-building feel of Dinosaur Island into a lighter roll-and-write format",
-  "Interesting dice-drafting layer adds a strategic wrinkle most roll-and-writes lack",
-  "Good production and clear iconography",
-  "Solid solo mode"
+  "Clever dice-as-worker drafting twist on roll-and-write",
+  "Enjoyable polyomino/park-building puzzle",
+  "Good solo mode",
+  "Faster and lighter than the original Dinosaur Island"
  ],
  "criticised": [
-  "Fiddly with several systems to track (dice values, DNA, attractions, paths) for a roll-and-write",
-  "Some randomness in which dice/actions are available can swing outcomes",
-  "Less thematic punch than the full board game it's based on",
-  "Rulebook/setup can feel like a lot for a 'write' game"
+  "Can feel a bit fiddly with multiple sheets to track",
+  "Less table interaction than the base game",
+  "Some find scoring categories a bit disconnected",
+  "Production/theme feels thinner than the original board game"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light drafting tension over shared dice/actions"
+  "kind": "dice drafting, mostly parallel play",
+  "detail": "Players take turns drafting available dice from a shared pool, which affects what workers others can access, but otherwise everyone fills in their own park sheet independently. The shared element is limited to the dice pool and turn order; scoring and board state are entirely personal."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from multiple simultaneous tracks: dinosaur pens, attractions, path connections to exits, and set bonuses, so efficient polyomino packing across categories decides the winner"
+  "why": "Points come from attractions, dinosaurs, roads/routes to exits, and bonus objectives, so efficient overall park design decides the winner",
+  "how_you_win": "Fill your park sheet efficiently with high-value dinosaurs and attractions connected to exits, maximizing points across multiple scoring categories by game end."
  },
  "similar": [
+  "Dinosaur Island",
   "Welcome To...",
   "Cartographers",
-  "Railroad Ink",
-  "Dinosaur Island",
-  "That's Pretty Clever!"
+  "Petal",
+  "My City Roll & Write"
  ],
- "_fingerprint": "76fce48ca63519b5",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "a6d0d85626b199c6",
  "_name": "Dinosaur Island: Rawr 'n Write"
 }

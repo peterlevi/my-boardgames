@@ -89,18 +89,24 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 .tagbox { max-height:208px; overflow-y:auto; margin-top:8px;
   border:1px solid var(--line); border-radius:8px; background:var(--panel);
   padding:4px; }
-.tagbox label { display:flex; align-items:baseline; gap:8px; padding:4px 8px;
-  border-radius:6px; cursor:pointer; font-size:.82rem; }
+/* A grid, not a flex row: across 710 rows of wildly different name lengths,
+   flex leaves the kind, count and description ragged all the way down. */
+.tagbox label { display:grid;
+  grid-template-columns:16px minmax(0,15em) 4.5em 3em 1fr;
+  align-items:baseline; gap:8px; padding:4px 8px; border-radius:6px;
+  cursor:pointer; font-size:.82rem; }
 .tagbox label:hover { background:var(--bg); }
-.tagbox input { margin:0; flex:none; position:relative; top:2px; }
-.tagbox .tname { font-weight:600; white-space:nowrap; }
-.tagbox .tkind { font-size:.66rem; text-transform:uppercase; flex:none;
-  letter-spacing:.04em; color:var(--muted); min-width:52px; }
+.tagbox input { margin:0; position:relative; top:2px; }
+.tagbox .tname { font-weight:600; white-space:nowrap; overflow:hidden;
+  text-overflow:ellipsis; }
+.tagbox .tkind { font-size:.66rem; text-transform:uppercase;
+  letter-spacing:.04em; color:var(--muted); }
 .tagbox .tkind.trait { color:var(--best); }
 .tagbox .tkind.cat { color:var(--accent); }
 .tagbox .tkind.designer { color:var(--warn); }
 .tagbox .tcount { color:var(--muted); font-variant-numeric:tabular-nums;
-  flex:none; }
+  text-align:right; }
+.tagbox label.zero { opacity:.45; }
 .tagbox .tdesc { color:var(--muted); overflow:hidden; text-overflow:ellipsis;
   white-space:nowrap; }
 .tagbox label.on { background:var(--bg); box-shadow:inset 0 0 0 1px var(--accent); }
@@ -210,6 +216,13 @@ tr.detail > td { padding:0; border-bottom:1px solid var(--line); }
 .detail-side dt { color:var(--muted); }
 .detail-side dd { margin:0; font-variant-numeric:tabular-nums; }
 .chips { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:12px; }
+.shots { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+.shots img { height:104px; width:auto; max-width:170px; object-fit:cover;
+  border-radius:7px; background:var(--tile); display:block; }
+ul.learn { list-style:none; padding:0; margin:0 0 8px; font-size:.84rem; }
+ul.learn li { margin-bottom:4px; }
+ul.learn .who { color:var(--muted); font-size:.78rem; }
+p.rules { margin:0 0 12px; font-size:.84rem; }
 .chip { font-size:.74rem; padding:3px 9px; border-radius:99px; border:0;
   background:var(--chip); color:var(--ink); cursor:pointer; font-family:inherit; }
 .chip:hover { box-shadow:inset 0 0 0 1px var(--accent); }
@@ -409,8 +422,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="num" data-k="tmax">Time</th>
     <th class="num hide-sm" data-k="w">Weight</th>
     <th class="hide-sm" data-k="ix">Interact</th>
-    <th class="hide-sm" data-k="wc" title="What actually decides the winner">Wins by</th>
-    <th class="hide-sm" data-k="br" title="How widely the scoring is spread">Breadth</th>
     <th class="hide-sm" data-k="ds">Designer</th>
     <th class="num hide-sm" data-k="verdict">At N</th>
     <th class="num hide-sm wide-only" data-k="bestPct">Best</th>
@@ -477,6 +488,7 @@ var tagRows = TAGS.map(function (t, i) {
   kindEl.textContent = t.k;
   kindEl.className = 'tkind ' + t.k;
   label.querySelector('.tcount').textContent = t.c;
+  label.dataset.total = t.c;
   label.querySelector('.tdesc').textContent = t.d;
   label.title = t.d || t.n;
   tagBox.appendChild(label);
@@ -494,6 +506,26 @@ function pickedTags() {
     if (tagRows[i].firstChild.checked) out.push(i);
   }
   return out;
+}
+
+/** Recount every tag against the rows currently passing the other filters, so
+ *  a number answers "how many would I see if I ticked this" rather than "how
+ *  many exist in the collection". A few thousand operations per render. */
+function recountTags(visibleIdx) {
+  var counts = new Array(TAGS.length);
+  for (var z = 0; z < counts.length; z++) counts[z] = 0;
+  for (var i = 0; i < visibleIdx.length; i++) {
+    var tg = DATA[visibleIdx[i]].tg || [];
+    for (var j = 0; j < tg.length; j++) counts[tg[j]]++;
+  }
+  for (var k = 0; k < tagRows.length; k++) {
+    var row = tagRows[k], on = row.firstChild.checked;
+    // A ticked tag's own count would just restate the filtered total, which
+    // says nothing, so it keeps showing the collection-wide figure.
+    row.querySelector('.tcount').textContent = on ? row.dataset.total : counts[k];
+    if (!on && counts[k] === 0) row.classList.add('zero');
+    else row.classList.remove('zero');
+  }
 }
 
 function refreshTagList() {
@@ -698,18 +730,13 @@ function sortRows(rows) {
       case 'rt': return g.rt;
       case 'ix':
         return ['Low', 'Medium', 'High'].indexOf((g.ai && g.ai.ixl) || g.ix);
-      case 'wc': return (g.ai && g.ai.wc) || null;
-      case 'br':
-        var bi = ['Focused', 'Some', 'Broad', 'Salad']
-          .indexOf(g.ai && g.ai.br);
-        return bi < 0 ? null : bi;
       case 'ds': return (g.ds && g.ds[0]) || null;
       case 'breadth':
         return ['Focused', 'Some', 'Broad', 'Salad'].indexOf(g.br);
       default: return g[sortKey];
     }
   }
-  var text = sortKey === 'n' || sortKey === 'ds' || sortKey === 'wc';
+  var text = sortKey === 'n' || sortKey === 'ds';
   rows.sort(function (a, b) {
     var x = get(a), y = get(b);
     if (text) {
@@ -839,6 +866,7 @@ function render() {
     : inside.length + ' row' + (inside.length === 1 ? '' : 's') +
       (inside.length !== games ? ' (' + games + ' games)' : '');
   el('desc').textContent = describe();
+  recountTags(inside.map(function (r) { return r[0]; }));
 
   var oc = el('outcount');
   oc.textContent = outside.length ? '+' + outside.length + ' outside filters' : '';
@@ -857,10 +885,17 @@ function tagsOfKind(g, kind) {
   return out;
 }
 
-/** Tick a tag in the picker and filter by it. */
+/** Tick a tag in the picker and filter by it, from a clean slate.
+ *  Everything else is cleared except the player-count rule, which is the one
+ *  thing you are usually still holding fixed while you explore sideways. */
 function filterByTag(i) {
   var row = tagRows[i];
   if (!row) return;
+  var players = F.players.value, mode = F.mode.value, votes = F.votes.value;
+  applyDefaults();
+  F.players.value = players;
+  F.mode.value = mode;
+  F.votes.value = votes;
   row.firstChild.checked = true;
   el('more').open = true;
   refreshTagList();
@@ -896,6 +931,44 @@ function pollMatrix(g) {
     'recommended</p>';
 }
 
+function mediaBlock(g) {
+  var shots = (g.gal || []).slice(0, 4);
+  if (!shots.length && g.img) shots = [{ u: g.img, c: '' }];
+  if (!shots.length) return '';
+  return '<div class="shots">' + shots.map(function (im) {
+    return '<a href="' + esc(im.u) + '" target="_blank" rel="noopener">' +
+      '<img loading="lazy" alt="' + esc(im.c) + '" title="' + esc(im.c) +
+      '" src="' + esc(im.u) + '"></a>';
+  }).join('') + '</div>';
+}
+
+function learnBlock(g) {
+  var out = [];
+  (g.vid || []).slice(0, 3).forEach(function (v) {
+    out.push('<li><a href="' + esc(v.link) + '" target="_blank" ' +
+      'rel="noopener">' + esc(v.title) + '</a> <span class="who">' +
+      esc(v.who || '') + (v.lang && v.lang !== 'English'
+        ? ' · ' + esc(v.lang) : '') + '</span></li>');
+  });
+  // No fabricated video URLs: a named channel becomes a YouTube *search*,
+  // which is always a valid link even when the exact video is unknown.
+  var ai = g.ai || {};
+  (ai.teach || []).slice(0, 3).forEach(function (ch) {
+    var q = encodeURIComponent(ch + ' ' + g.n + ' how to play');
+    out.push('<li><a href="https://www.youtube.com/results?search_query=' + q +
+      '" target="_blank" rel="noopener">Search ' + esc(ch) + '</a> ' +
+      '<span class="who">suggested channel</span></li>');
+  });
+  if (!out.length) {
+    var q2 = encodeURIComponent(g.n + ' how to play');
+    out.push('<li><a href="https://www.youtube.com/results?search_query=' + q2 +
+      '" target="_blank" rel="noopener">Search YouTube</a></li>');
+  }
+  return '<h4>How to play</h4><ul class="learn">' + out.join('') + '</ul>' +
+    '<p class="rules"><a href="https://boardgamegeek.com/boardgame/' + g.id +
+    '/files" target="_blank" rel="noopener">Rules &amp; files on BGG →</a></p>';
+}
+
 function buildDetail(g) {
   function chips(idxs, cls) {
     if (!idxs.length) return '';
@@ -922,11 +995,22 @@ function buildDetail(g) {
           : '<button type="button" class="linkish" data-tag="' + i + '">' +
             esc(d) + '</button>';
       }).join(', ') || '—'],
-    ['Interaction', g.ix + ' (derived)']
+    ['Interaction', ((g.ai && g.ai.ixl) || g.ix)],
+    ['Scoring breadth', (g.ai && g.ai.br) || '—'],
+    ['Wins by', (g.ai && g.ai.wc) || '—']
   ];
+  var ai = g.ai || {};
+  var howWin = ai.howwin || ai.why;
   return '<div class="detail-inner">' +
     '<div>' +
+      mediaBlock(g) +
       opinionBlock(g) +
+      (howWin ? '<h4>How you win' +
+        (ai.wc ? ' — ' + esc(ai.wc) : '') + '</h4><p>' + esc(howWin) +
+        '</p>' : '') +
+      (ai.ixd ? '<h4>Interaction — ' + esc(ai.ixl || '') +
+        (ai.ixk ? ', ' + esc(ai.ixk) : '') + '</h4><p>' + esc(ai.ixd) +
+        '</p>' : '') +
       (g.de ? '<h4>From BGG</h4><p>' + esc(g.de) + '…</p>' : '') +
       '<h4>Traits</h4>' + (chips(tagsOfKind(g, 'trait'), 'trait') || '<p>—</p>') +
       '<h4>Categories</h4>' + (chips(tagsOfKind(g, 'cat'), 'cat') || '<p>—</p>') +
@@ -936,7 +1020,7 @@ function buildDetail(g) {
       rows.map(function (r) {
         return '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>';
       }).join('') +
-    '</dl>' + pollMatrix(g) +
+    '</dl>' + learnBlock(g) + pollMatrix(g) +
     '<a class="game" href="https://boardgamegeek.com/boardgame/' + g.id +
     '" target="_blank" rel="noopener">Open on BGG →</a></div>' +
     '</div>';

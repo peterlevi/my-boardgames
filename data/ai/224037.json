@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "Codenames: Duet is a two-player cooperative twist on Codenames, where both players see different secret agent maps and work together giving one-word clues to identify all agents within a limited number of turns before hitting an assassin. It transforms the competitive party game into a tense, collaborative puzzle for couples or pairs.",
+ "summary": "Codenames: Duet is a two-player cooperative twist on Codenames where both players are spymasters and guessers simultaneously, working together to find all 15 agents within a limited number of turns before hitting an assassin. It keeps the same word-clueing tension but reframes it as a shared puzzle rather than a competition.",
  "praised": [
-  "clever cooperative redesign that works great for exactly two players",
-  "tense shared-goal puzzle-solving",
-  "quick setup and replayability with the same box",
-  "great for partners/couples as a regular two-player game"
+  "Excellent two-player cooperative option",
+  "Same clever wordplay tension as the original, now collaborative",
+  "Turn limit creates real pressure and stakes",
+  "Great for couples or small groups wanting co-op"
  ],
  "criticised": [
-  "loses the multiplayer party energy of the original",
-  "some clue combos feel unsolvable/unlucky",
-  "can be frustrating when you keep hitting near-misses",
-  "less appealing to groups who wanted the original's social banter"
+  "Loses the competitive team-vs-team energy of the original",
+  "Can feel frustrating when communication styles clash",
+  "Fixed turn limit sometimes feels too harsh"
  ],
  "interaction": {
   "level": "High",
-  "kind": "cooperative clue-giving and guessing"
+  "kind": "cooperative communication and shared deduction",
+  "detail": "Both players alternate giving clues to each other over the same shared grid, and each player's assassin squares differ from the other's key card, so misjudging a clue can cost the whole team a turn or the game. The board and win/loss state are entirely shared between the two players."
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "the team either finds all agents within the turn limit or loses by hitting an assassin, with no points involved"
+  "why": "There's no scoring; the team either finds all agent words within the turn limit or fails by hitting an assassin or running out of turns.",
+  "how_you_win": "You and your partner win by jointly identifying all 15 agent words across both key cards before the turn counter runs out or an assassin card is picked."
  },
  "similar": [
   "Codenames",
   "Codenames: Pictures",
-  "The Crew: The Quest for Planet Nine",
+  "The Crew",
   "Hanabi",
   "Decrypto"
  ],
- "_fingerprint": "9aad66c36a7cc0db",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "a92822058213a29d",
  "_name": "Codenames: Duet"
 }

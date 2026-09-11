@@ -1,36 +1,39 @@
 {
  "confidence": "high",
- "summary": "Every player secretly checks or swaps roles in a brief night phase, then the whole table argues, bluffs, and accuses for a few loud minutes before a single simultaneous vote decides the outcome. It plays in about ten minutes but generates disproportionate table talk and replay value because roles differ every round and nobody, including former werewolves, is ever fully sure who anyone is.",
+ "summary": "A fast, ten-minute hidden-role party game where everyone gets a secret role and character abilities happen once at night, then the whole group argues and votes on who's a werewolf. There's no elimination and no moderator needed, so it plays quickly and repeatedly with large mixed groups.",
  "praised": [
-  "Extremely fast setup and playtime, easy to fire off multiple rounds in a row",
-  "Strong social deduction and bluffing even with no elimination and no moderator needed once you use the app",
-  "High replayability since the role mix changes what strategies matter each game",
-  "Great as a party icebreaker with large, mixed-experience groups",
-  "The companion app narrator removes the need for a dedicated moderator"
+  "extremely fast, easy to teach to newcomers",
+  "great for large groups and quick repeat plays",
+  "clever design lets anyone run it via the companion app with no dedicated moderator"
  ],
  "criticised": [
-  "Very light strategically, almost entirely social rather than mechanical",
-  "Some special roles have little to do or feel weaker than others (e.g., Villager, Insomniac in certain mixes)",
-  "Can be chaotic or overwhelming for shy players or large tables all talking over each other",
-  "Outcome can hinge heavily on who is more convincing rather than any decision quality",
-  "Needs a confident 'loud' player or app to keep discussion moving, or it stalls"
+  "outcome leans heavily on group bluffing skill and social dynamics rather than strategy",
+  "can feel like a coin-flip when players are quiet or new to bluffing",
+  "loses novelty after many plays with the same group"
  ],
  "interaction": {
   "level": "High",
-  "kind": "open accusation, bluffing, and group argument"
+  "kind": "open accusation, bluffing, and group voting",
+  "detail": "Players openly discuss, accuse, and defend themselves before a single simultaneous vote decides the outcome, so the entire game is driven by direct verbal interaction. Nearly all information is either shared through discussion or deliberately concealed, with almost no private tableau."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The village wins by lynching at least one werewolf (or werewolves win if none are lynched, with a few role-specific exceptions like the Tanner), decided purely by the single end-of-round vote."
+  "why": "There's no score; the village team wins by voting out a werewolf, while werewolves win by evading detection or having no werewolves in play unnoticed.",
+  "how_you_win": "You win as a villager by correctly identifying and voting out a werewolf, or as a werewolf by convincing the group to lynch someone else."
  },
  "similar": [
-  "The Resistance",
+  "One Night Ultimate Werewolf: Daybreak",
   "Secret Hitler",
-  "Werewolf/Mafia",
-  "Coup",
-  "One Night Ultimate Werewolf: Daybreak"
+  "The Resistance",
+  "Avalon",
+  "Mafia"
  ],
- "_fingerprint": "1ea6c7a0d3214183",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "How to Play"
+ ],
+ "_fingerprint": "626e0c12500159d1",
  "_name": "One Night Ultimate Werewolf"
 }

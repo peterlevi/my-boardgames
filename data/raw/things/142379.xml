@@ -315,7 +315,23 @@ The game design is influenced by great heist films.
 			
 
 			
-	
+			<videos total="89">
+						<video id="628914" title="Les mécanismes que j'aimerais voir réutilisés - Escape Plan" category="other" language="French" link="http://www.youtube.com/watch?v=MgOsHb5plHY" username="Hyvll" userid="1597619" postdate="2026-09-08T09:39:36-05:00" />
+						<video id="611718" title="SAM erklärt ESCAPE PLAN" category="instructional" language="German" link="http://www.youtube.com/watch?v=4p_PW_zol-U" username="brettspielfieber" userid="1952235" postdate="2026-05-14T09:06:49-05:00" />
+						<video id="604176" title="Escape Plan solo rules and playthrough (rus)" category="session" language="Russian" link="http://www.youtube.com/watch?v=jwi74xHrlRM" username="Univanger" userid="1371121" postdate="2026-03-25T00:09:02-05:00" />
+						<video id="592595" title="LIVE ESCAPE PLAN - Quatro Homens e Nenhum Segredo" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=Ce4ewfuDf_g" username="lfigaro" userid="3046229" postdate="2026-01-14T12:16:38-06:00" />
+						<video id="590628" title="Escape Plan - 10-Minute Extended Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=G_szsQhiEyE" username="TheFamilyMeeple" userid="2419723" postdate="2026-01-02T14:52:09-06:00" />
+						<video id="590627" title="Escape Plan - 3-Minute Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=cU3MOib-TB4" username="TheFamilyMeeple" userid="2419723" postdate="2026-01-02T14:51:35-06:00" />
+						<video id="579482" title="Making Plans and Inserts" category="review" language="English" link="http://www.youtube.com/watch?v=r5PkX7nzlhc" username="pecktec" userid="318603" postdate="2025-10-28T18:25:18-05:00" />
+						<video id="558155" title="Escape Plan | first impressions and game overview" category="review" language="English" link="http://www.youtube.com/watch?v=ipiOQc3YxTc" username="TrybSolo" userid="2100396" postdate="2025-06-11T01:24:23-05:00" />
+						<video id="535349" title="Escape Plan українською Летсплей" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=uV7JeOPcnPU" username="kerl24" userid="2923135" postdate="2025-01-31T02:31:59-06:00" />
+						<video id="527491" title="Escape Plan - Gameplay" category="session" language="Hungarian" link="http://www.youtube.com/watch?v=Se27a_U6DEY" username="Play_right_away" userid="860351" postdate="2024-12-04T16:17:44-06:00" />
+						<video id="492363" title="Apertura y Sinopsis - Escape Plan" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=nvQ_y8GrWNc" username="DicepairGames" userid="2753373" postdate="2024-04-25T15:28:40-05:00" />
+						<video id="471140" title="Escape Plan - Italian Unboxing" category="unboxing" language="Italian" link="http://www.youtube.com/watch?v=G9w5jxfZ_3o" username="HydraGames" userid="1226701" postdate="2023-12-14T05:13:03-06:00" />
+						<video id="412452" title="Board Game Advent Countdown | #21 Escape Plan" category="other" language="English" link="http://www.youtube.com/watch?v=ko9RgKzW_Ws" username="TheFamilyMeeple" userid="2419723" postdate="2022-12-04T08:21:25-06:00" />
+						<video id="389977" title="Escape Plan - Board SHORTS" category="review" language="English" link="http://www.youtube.com/watch?v=czaTrZYlY_8" username="BoardStupid" userid="3006239" postdate="2022-07-14T05:13:58-05:00" />
+						<video id="382325" title="Booghy plays... Escape Plan" category="review" language="English" link="http://www.youtube.com/watch?v=5zYHodTp5_4" username="bogdani0405" userid="1267302" postdate="2022-05-24T18:32:11-05:00" />
+					</videos>
 
 	
 
@@ -324,20 +340,20 @@ The game design is influenced by great heist films.
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="5984" />
-			<average value="7.47502" />
-			<bayesaverage value="6.88623" />
+			<usersrated value="5987" />
+			<average value="7.47507" />
+			<bayesaverage value="6.88648" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="642" bayesaverage="6.88623" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="391" bayesaverage="7.0057" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="642" bayesaverage="6.88648" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="391" bayesaverage="7.00593" />
 												</ranks>
 
-			<stddev value="1.4022" />
+			<stddev value="1.40235" />
 			<median value="0" />
-			<owned value="9807" />
-			<trading value="229" />
-			<wanting value="400" />
+			<owned value="9806" />
+			<trading value="228" />
+			<wanting value="399" />
 			<wishing value="2452" />
 			<numcomments value="1225" />
 			<numweights value="340" />

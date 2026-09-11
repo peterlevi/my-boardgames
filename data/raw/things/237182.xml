@@ -996,7 +996,23 @@ In Root, players drive the narrative, and the differences between each role crea
 			
 
 			
-	
+			<videos total="531">
+						<video id="628430" title="Top 10 Board Games of All Time" category="review" language="English" link="http://www.youtube.com/watch?v=W2ZgYRXesos" username="heatbbx" userid="3091342" postdate="2026-09-04T17:14:56-05:00" />
+						<video id="628155" title="Spotlight on Root - The Woodland War Game Where Every Faction Plays Differently!" category="other" language="English" link="http://www.youtube.com/watch?v=3ur-K_lQ9Co" username="chesborn" userid="4387202" postdate="2026-09-03T07:00:16-05:00" />
+						<video id="623972" title="What Game Do You Not Play Enough Of? " category="other" language="English" link="http://www.youtube.com/watch?v=mpk0DQcOnvw" username="joeyj1220" userid="343482" postdate="2026-08-06T07:32:55-05:00" />
+						<video id="623558" title="How to organize Root &amp; The new cardstock Faction Boards" category="instructional" language="English" link="http://www.youtube.com/watch?v=7Ba4rum9aeA" username="jeddy lee" userid="460040" postdate="2026-08-03T14:43:06-05:00" />
+						<video id="622314" title="Root Faction Experiment Goes Horribly Wrong | Week vs. Strong" category="review" language="English" link="http://www.youtube.com/watch?v=kscJXIT16Ms" username="Quackalope" userid="1996209" postdate="2026-07-26T15:45:59-05:00" />
+						<video id="621290" title="Root: The Homeland Expansion - Three Player Rematch featuring the Knaves!" category="session" language="English" link="http://www.youtube.com/watch?v=P9gqefrYwgI" username="optimalplay" userid="1930556" postdate="2026-07-20T12:20:08-05:00" />
+						<video id="619341" title="Root: The Homeland Expansion - Four Player Game featuring the Lilypad Diaspora" category="session" language="English" link="http://www.youtube.com/watch?v=9BG1obGGNQg" username="optimalplay" userid="1930556" postdate="2026-07-07T11:13:09-05:00" />
+						<video id="618745" title="We Just Played! - Root (Quick Review)" category="review" language="English" link="http://www.youtube.com/watch?v=vKCTbpcrgYk" username="Arvias" userid="209684" postdate="2026-07-03T15:49:35-05:00" />
+						<video id="618422" title="Überblick zu Root" category="review" language="German" link="http://www.youtube.com/watch?v=Q_WIKtR1Ed8" username="BoardgameBenjamino" userid="1618849" postdate="2026-07-01T15:33:58-05:00" />
+						<video id="615658" title="Ranking EVERY Root Faction from BEST to WORST" category="review" language="English" link="http://www.youtube.com/watch?v=r829UPapUtM" username="Quackalope" userid="1996209" postdate="2026-06-11T13:34:48-05:00" />
+						<video id="615473" title="These New Root Cards are Changing Everything" category="review" language="English" link="http://www.youtube.com/watch?v=1eE1hXwAR_8" username="Quackalope" userid="1996209" postdate="2026-06-10T14:32:23-05:00" />
+						<video id="615096" title="Root | The Most Brutal Three-Player Matchup" category="review" language="English" link="http://www.youtube.com/watch?v=VrcdvdzRQ6E" username="Quackalope" userid="1996209" postdate="2026-06-08T07:55:54-05:00" />
+						<video id="614058" title=" Root Juego de Mesa: Guía de Compra" category="other" language="Spanish" link="http://www.youtube.com/watch?v=miFPkMYh32Y" username="Absurdmeeple" userid="2841780" postdate="2026-05-31T08:52:36-05:00" />
+						<video id="612190" title="ROOT #3: Hướng dẫn chơi Phe Chim Eyrie Dynasties" category="instructional" language="Vietnamese" link="http://www.youtube.com/watch?v=TvKZsullWy0" username="kboardgamevn" userid="1842339" postdate="2026-05-18T04:39:23-05:00" />
+						<video id="609766" title="Root- Homeland Expansion - Unboxing" category="unboxing" language="Italian" link="http://www.youtube.com/watch?v=9x9GVskAHys" username="OrsoRock" userid="3096431" postdate="2026-04-30T09:13:34-05:00" />
+					</videos>
 
 	
 
@@ -1005,25 +1021,25 @@ In Root, players drive the narrative, and the differences between each role crea
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="65998" />
-			<average value="8.06941" />
-			<bayesaverage value="7.88008" />
+			<usersrated value="66023" />
+			<average value="8.06937" />
+			<bayesaverage value="7.87995" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="34" bayesaverage="7.88008" />
-																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="15" bayesaverage="7.74483" />
-											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="38" bayesaverage="7.84259" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="34" bayesaverage="7.87995" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="15" bayesaverage="7.74465" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="38" bayesaverage="7.84245" />
 												</ranks>
 
-			<stddev value="1.48878" />
+			<stddev value="1.48911" />
 			<median value="0" />
-			<owned value="105098" />
-			<trading value="763" />
-			<wanting value="1561" />
-			<wishing value="25029" />
-			<numcomments value="9625" />
-			<numweights value="2747" />
-			<averageweight value="3.8416" />
+			<owned value="105161" />
+			<trading value="762" />
+			<wanting value="1563" />
+			<wishing value="25038" />
+			<numcomments value="9628" />
+			<numweights value="2748" />
+			<averageweight value="3.8421" />
 			</ratings>
 								</statistics>
      

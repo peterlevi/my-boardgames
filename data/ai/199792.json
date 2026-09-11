@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Everdell is a soft-edged worker placement and tableau builder where you gather berries, twigs, resin, and pebbles to construct a woodland city of critters and buildings over four seasons. The tension comes from a tight worker supply, timing when to pass into the next season, and chaining card discounts and card-draw engines rather than direct conflict with opponents.",
+ "summary": "Everdell is a charming tableau-building and worker-placement game where players grow a woodland critter city over four seasons, playing cards for resources and points while managing a small but tight worker pool. It's approachable and gorgeous, appealing to both casual and hobbyist gamers, though the puzzle underneath is more substantial than its cute art suggests.",
  "praised": [
-  "Stunning production values and the 3D tree tray",
-  "Satisfying engine-building as card discounts and bonuses chain together",
-  "Approachable rules for the theme and component heft, works well solo",
-  "Charming, relaxing theme that appeals beyond typical euro-gamers"
+  "Beautiful art and components (the tree box, wooden pieces)",
+  "Satisfying tableau-building puzzle that rewards planning",
+  "Accessible enough for family/gateway play but has real depth",
+  "Good solo mode"
  ],
  "criticised": [
-  "Card draw luck can swing available buildings/critters significantly",
-  "Can feel solitaire-ish with limited meaningful interaction between players",
-  "Some card combos are notably stronger than others, creating balance complaints",
-  "Base game can run long for the amount of decision depth, especially at higher player counts"
+  "Can suffer from analysis paralysis with the shared card market",
+  "Limited direct player interaction beyond drafting competition",
+  "Some randomness in the card row availability",
+  "Base game has been seen as needing expansions for full variety"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "worker placement blocking on shared locations, otherwise mostly parallel tableau building"
+  "kind": "Mostly parallel play with shared card drafting",
+  "detail": "Players build their own individual city tableau and worker pool privately, interacting mainly by racing for the same limited cards and events in a shared central display and occasionally taking a spot an opponent wanted."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from building/critter values, completed events, seasonal bonuses, and end-game city/card synergies, so the winner is usually whoever assembles the most efficient multi-source scoring engine."
+  "why": "Points accumulate from card values, city size, special events, and end-game bonuses, rewarding a well-rounded, synergistic tableau.",
+  "how_you_win": "Build the highest-scoring city by playing point-generating cards, completing special events, and end-game bonus conditions before the four seasons end."
  },
  "similar": [
   "Wingspan",
+  "Res Arcana",
+  "Menara",
   "Viticulture",
-  "Underwater Cities",
-  "Fields of Arle",
   "Paladins of the West Kingdom"
  ],
- "_fingerprint": "33d62bb7a4a07514",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "30b8cc1b70f76306",
  "_name": "Everdell"
 }

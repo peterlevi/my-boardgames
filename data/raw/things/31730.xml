@@ -398,7 +398,23 @@ Note: Some editions of this game have carried a player count of 2-6, while the 2
 			
 
 			
-	
+			<videos total="33">
+						<video id="532628" title="All the Games with Steph: Wabash Cannonball - Full Teach" category="instructional" language="English" link="http://www.youtube.com/watch?v=UMLyzfxWdLE" username="boardgamersteph" userid="212591" postdate="2025-01-13T20:57:00-06:00" />
+						<video id="489454" title="Wabash Cannonball - 4p Teaching, Play-through, &amp; Round table by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=St-lntxhyvo" username="eapeas" userid="377742" postdate="2024-04-07T17:18:59-05:00" />
+						<video id="465470" title="Wabash Cannonball - Learn While Playing" category="review" language="English" link="http://www.youtube.com/watch?v=y9djOVeMpqA" username="HappyHexagon" userid="315890" postdate="2023-11-07T08:00:32-06:00" />
+						<video id="383720" title="Chicago Express, Full Review Episode I. Overview, components and buyer's guide." category="review" language="English" link="http://www.youtube.com/watch?v=szDJj7g6lxw" username="SumidaWolf" userid="3000632" postdate="2022-06-03T07:12:01-05:00" />
+						<video id="350561" title="The Choo Choo Crew Teach &amp; Play: Chicago Express" category="instructional" language="English" link="http://www.youtube.com/watch?v=3ApAIrgSLy8" username="ManWith_ManyCheeses" userid="1065291" postdate="2021-11-01T17:07:03-05:00" />
+						<video id="346079" title="Train Games Part II" category="other" language="English" link="http://www.youtube.com/watch?v=OQbpgwRWdvE" username="SumidaWolf" userid="3000632" postdate="2021-10-04T03:21:48-05:00" />
+						<video id="322706" title="Chicago Express: Run-through, Economic Board Games" category="instructional" language="English" link="http://www.youtube.com/watch?v=0vRGeIncrVg" username="Craig D" userid="1951552" postdate="2021-05-05T14:02:35-05:00" />
+						<video id="321419" title="Chicago Express: Overview, Economic Board Games" category="review" language="English" link="http://www.youtube.com/watch?v=m6ZMVEGxQkE" username="Craig D" userid="1951552" postdate="2021-04-28T12:14:59-05:00" />
+						<video id="300926" title="Chicago Express 4p Teaching, Play-through, &amp; Round table by Heavy Cardboard" category="review" language="English" link="http://www.youtube.com/watch?v=WNH54ag99rE" username="eapeas" userid="377742" postdate="2021-01-07T14:04:41-06:00" />
+						<video id="286469" title="Chicago Express - Tutorial &amp; Playthrough via Tabletop Simulator" category="instructional" language="English" link="http://www.youtube.com/watch?v=c_nFO8nw1zU" username="PaulGrogan" userid="1685" postdate="2020-10-14T03:48:13-05:00" />
+						<video id="260766" title="Table for Two Show Review!" category="review" language="English" link="http://www.youtube.com/watch?v=_HRpMdWYwpM" username="jetii" userid="42561" postdate="2020-04-19T08:14:38-05:00" />
+						<video id="181213" title="Unboxing of Chicago Express" category="other" language="English" link="http://www.youtube.com/watch?v=a9wIcKc-SjU" username="erichopkins" userid="1085398" postdate="2018-06-27T10:16:39-05:00" />
+						<video id="175413" title="[TH] Chicago Express" category="review" language="Thai" link="http://www.youtube.com/watch?v=fM-MT_SbvOw" username="chatsakhon" userid="305608" postdate="2018-05-04T18:13:05-05:00" />
+						<video id="147639" title="Failroad Express Unboxes Chicago Express" category="other" language="English" link="http://www.youtube.com/watch?v=MQoNrMQnV6Y" username="jwhofilm" userid="1140945" postdate="2017-08-27T17:46:24-05:00" />
+						<video id="133434" title="Chicago Express [JcK Opina ep. 74]" category="review" language="Spanish" link="http://www.youtube.com/watch?v=lIl3BlxWero" username="JugandoConKetty" userid="120496" postdate="2017-04-16T08:07:55-05:00" />
+					</videos>
 
 	
 
@@ -408,21 +424,21 @@ Note: Some editions of this game have carried a player count of 2-6, while the 2
    		<statistics page="1">
 								<ratings>
 			<usersrated value="8737" />
-			<average value="7.2566" />
-			<bayesaverage value="6.87152" />
+			<average value="7.25686" />
+			<bayesaverage value="6.87173" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="655" bayesaverage="6.87152" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="425" bayesaverage="6.96511" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="655" bayesaverage="6.87173" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="424" bayesaverage="6.96534" />
 												</ranks>
 
-			<stddev value="1.35203" />
+			<stddev value="1.35243" />
 			<median value="0" />
-			<owned value="9487" />
-			<trading value="323" />
-			<wanting value="298" />
+			<owned value="9486" />
+			<trading value="322" />
+			<wanting value="296" />
 			<wishing value="1336" />
-			<numcomments value="2682" />
+			<numcomments value="2681" />
 			<numweights value="641" />
 			<averageweight value="2.7722" />
 			</ratings>

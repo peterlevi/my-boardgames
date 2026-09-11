@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "Skyrise revolves around a spatial blind-bidding system where you place numbered tiles on a grid and adjacency/value determines who wins which building site, so every round is a tense read of what everyone else wants. Beyond the auction, it's a fairly standard tile-laying/set-collection engine about building neighborhoods, courting patrons, and chasing objectives, but the bidding is what people remember.",
+ "summary": "Skyrise is a spatial auction game where players bid influence to claim hexagonal building sites on a rising modular cityscape, then race to complete neighborhoods, court wealthy patrons, and fulfill objectives before the city tops out. The bidding is the heart of it: you're constantly reading which sites your opponents want and deciding how much of your limited pool to burn to deny or secure them.",
  "praised": [
-  "The unique spatial auction/bidding mechanism is genuinely novel and tense",
-  "High player interaction — reading opponents and predicting their bids matters a lot",
-  "Attractive, colorful production and satisfying city-building visuals",
-  "Multiple viable scoring paths keep replayability high"
+  "clever spatial auction system that's easy to learn but hard to master",
+  "strong player interaction through bidding without direct conflict",
+  "handsome tactile production with the rising 3D city",
+  "good variety from patrons and secret/public objectives"
  ],
  "criticised": [
-  "The bidding system has a steep learning curve and is hard to teach cleanly",
-  "Analysis paralysis can creep in as players overthink bids",
-  "Some randomness from patron/objective card draws feels swingy to some players",
-  "Can run long, especially at 4 players, given the deliberation the auction invites"
+  "can suffer analysis paralysis as the bidding board gets crowded",
+  "some feel the wonder-building endgame is underdeveloped compared to the main auction",
+  "scoring can feel a bit fiddly to track"
  ],
  "interaction": {
   "level": "High",
-  "kind": "blind spatial bidding and area denial"
+  "kind": "constrained bidding and area majority",
+  "detail": "Every site is won through a simultaneous or escalating bid against the same pool of rivals, so you are constantly reacting to what others are chasing and can price them out of a site. The city itself is a fully shared board, and neighborhood/wonder scoring depends on who has built where relative to everyone else."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from neighborhood majorities, patron cards, secret/public objectives, and the Wonder, so winning requires balancing several scoring engines rather than maxing one."
+  "why": "Points accumulate from neighborhood completion, patron cards, public/secret objectives, and the shared wonder, so no single strategy dominates.",
+  "how_you_win": "You win by out-bidding rivals for the most valuable sites and stitching them into scoring neighborhoods and objectives more efficiently than anyone else by game end."
  },
  "similar": [
-  "Metropolys",
   "Ra",
-  "Blue Lagoon",
-  "Reef",
-  "Between Two Cities"
+  "Metropolys",
+  "Suburbia",
+  "Praga Caput Regni",
+  "Underwater Cities"
  ],
- "_fingerprint": "3947df69ed9282ed",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "BoardGameCo"
+ ],
+ "_fingerprint": "f3616e97929100e6",
  "_name": "Skyrise"
 }

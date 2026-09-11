@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Rebellion is a sprawling area-movement wargame built around hidden movement and asymmetric objectives, where the Empire hunts for the Rebel base while the Rebels stall and chip away with guerrilla tactics. Games run long (3-4 hours) and hinge as much on the card-driven diplomacy and leader deployment as on the dice-based combat.",
+ "summary": "Star Wars: Rebellion is a sprawling asymmetric game where one player commands the Galactic Empire hunting for the hidden Rebel base while the other leads the Rebellion trying to survive and complete objectives, using area movement, hidden information, and card-driven action selection across the galaxy. Games run long and swing on tense reveals, like the Empire finally locating the Rebel base or a key mission succeeding or failing.",
  "praised": [
-  "Immersive Star Wars theming with iconic miniatures and leaders",
-  "Asymmetric factions that genuinely require different strategies",
-  "Hidden movement and base-hunting create real tension",
-  "Strong sense of narrative and epic scale over a full game"
+  "exceptional thematic immersion and asymmetric factions that feel truly different",
+  "tense hidden-movement hunt for the Rebel base",
+  "memorable narrative arcs emerging from play"
  ],
  "criticised": [
-  "Very long playtime (often 3-5 hours) that can drag in the midgame",
-  "High rules overhead and setup complexity",
-  "Combat can feel like a lopsided coin-flip at times",
-  "Analysis paralysis for the Imperial player managing many units and choices"
+  "very long playtime, often 3-4+ hours",
+  "can feel one-sided if the hunt for the Rebel base goes badly early",
+  "notable downtime during objective and combat resolution for the player not acting"
  ],
  "interaction": {
   "level": "High",
-  "kind": "hidden movement, area control, and direct military conflict"
+  "kind": "hidden movement and open conflict",
+  "detail": "Both sides move fleets and fight directly over the same shared galaxy map, and the Empire is actively hunting the Rebellion's hidden base location, so nearly every action affects the other player. Each side does hold private hands and hidden information, but the map and combat are fully shared stakes."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The Empire wins by finding and destroying the Rebel base (or subjugating enough systems) while the Rebels win by surviving until a turn limit or completing objective cards, so the outcome is decided by a single asymmetric race condition rather than an accumulated score."
+  "why": "There's no points total — the game ends when the Empire destroys the Rebel base, the Rebellion completes enough objectives, or a turn limit is reached.",
+  "how_you_win": "The Empire wins by finding and destroying the hidden Rebel base before time runs out, while the Rebellion wins by surviving and racking up enough objective successes."
  },
  "similar": [
-  "Twilight Imperium",
   "War of the Ring",
   "Fury of Dracula",
+  "Twilight Imperium: Fourth Edition",
   "Forbidden Stars",
-  "Star Wars: Imperial Assault"
+  "Cthulhu Wars"
  ],
- "_fingerprint": "8de8af681d7c5613",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "30b3fe49dfaa7d0b",
  "_name": "Star Wars: Rebellion"
 }

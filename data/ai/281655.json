@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "High Frontier is a brutally realistic space-exploration game built on real delta-v maps and rocket science, where you build engine/fuel/rocket card chains to physically route probes and colonists across the solar system to claim resource sites. It's punishing, fiddly, and slow to learn, but rewards players who enjoy optimizing thruster/propellant combos and reading a genuinely educational simulation of orbital mechanics.",
+ "summary": "High Frontier 4 All is Phil Eklund's uncompromisingly realistic space exploration simulation, where players design rockets from real physics-based components and navigate an actual solar-system map using delta-v costs. It's notoriously dense, rewarding careful route planning and technology investment over flashy action.",
  "praised": [
-  "Unmatched thematic authenticity and scientific accuracy for a board game",
-  "Deep, satisfying engine-building around real rocket technology",
-  "Huge replayability from modular systems, factions, and expansions",
-  "Delta-v solar system map is a remarkable piece of design/education in itself"
+  "unmatched scientific authenticity and educational depth",
+  "satisfying long-term tech and route planning",
+  "modular scenarios scale from beginner to expert",
+  "strong solo/cooperative options"
  ],
  "criticised": [
-  "Extremely steep learning curve and dense rulebook",
-  "Long, fiddly turns with a lot of bookkeeping and card lookup",
-  "Can suffer from analysis paralysis and downtime between turns",
-  "Production/iconography is dense and unfriendly to newcomers"
+  "extremely steep learning curve and rulebook density",
+  "long setup and turn times",
+  "iconography and card text are notoriously hard to parse",
+  "can be punishing/swingy for newcomers"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "site claiming and area denial, with some auction/negotiation over patents and sites"
+  "kind": "competing for claims, auctions, and shared board space",
+  "detail": "Players bid against each other for cards and race to claim limited sites on the shared solar-system map, so territory and resource claims are contested even though each player's rocket and tech tree development happens independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory points come from a mix of colonized/claimed sites, technology (patents), and mission completion, so the winner is whoever built the most efficient economic engine across several scoring channels"
+  "why": "Victory points accrue from claimed sites, factories, and technology, so the winner is whoever built the most productive off-world economy.",
+  "how_you_win": "You win by successfully landing, claiming, and industrializing enough valuable sites across the solar system to out-score opponents by game end."
  },
  "similar": [
-  "High Frontier (3rd edition)",
-  "Pax Renaissance",
-  "American Megafauna",
   "Bios: Megafauna",
-  "Neanderthal"
+  "Pax Renaissance",
+  "Greenland",
+  "Age of Steam",
+  "Gaia Project"
  ],
- "_fingerprint": "44e73cf2b2f0e11a",
+ "teachers": [
+  "Watch It Played",
+  "Heavy Cardboard",
+  "The Undead Viking"
+ ],
+ "_fingerprint": "e82bf80a9a6d9317",
  "_name": "High Frontier 4 All"
 }

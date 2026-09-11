@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Harmonies is a quiet, meditative tile-stacking puzzle where you build a small hex landscape and try to satisfy several scoring conditions and animal habitat requirements at once. Turns are fast and tactile, but players work almost entirely on their own board with only light tension over which token sets remain available.",
+ "summary": "Harmonies is a relaxed, colorful tile-stacking puzzle where you build small landscapes on a hex board to form habitats and settle animals onto them for points. It's mostly a personal, parallel puzzle with only light competition over the shared pool of tokens and animal cards.",
  "praised": [
-  "Beautiful, tactile components (chunky wooden tokens, painted animal figures)",
-  "Satisfying, flexible puzzle with many viable strategies",
-  "Easy to teach, quick turns, scales well solo to 4",
-  "Rewards planning ahead without heavy analysis paralysis"
+  "gorgeous, tactile components",
+  "easy to teach and quick to play",
+  "satisfying puzzle with meaningful spatial choices",
+  "works well solo and at all player counts"
  ],
  "criticised": [
-  "Very low direct interaction, can feel like solitaire at the same table",
-  "Animal card draws add a luck element some feel undercuts the puzzle purity",
-  "End-game scoring can feel fiddly to tally",
-  "Limited long-term replay tension since opponents rarely affect your plan"
+  "light player interaction can feel too solitary for gamers wanting conflict",
+  "limited strategic depth for heavier-game fans",
+  "can feel samey across repeated plays",
+  "animal card draws add some luck"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light drafting tension over the shared token/animal-card supply"
+  "kind": "mostly parallel play with light drafting",
+  "detail": "Players choose token sets and animal cards from a small shared display, so timing what you take can deny others their preferred pick, but each player builds and scores their own landscape board entirely independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from multiple independent terrain-type scoring rules plus completed animal habitat cards, so the winner is whoever best balances several scoring engines rather than maximizing one."
+  "why": "Points come from multiple completed habitat types and settled animal sets, so building the most efficient, diverse landscape wins.",
+  "how_you_win": "You place terrain tokens to form valuable habitat patterns and settle animals onto completed habitats, ending with the highest combined score from habitats and animals."
  },
  "similar": [
   "Cascadia",
   "Calico",
-  "Parks",
-  "Trekking the National Parks",
-  "Photosynthesis"
+  "Dorfromantik: The Board Game",
+  "Photosynthesis",
+  "Sobek"
  ],
- "_fingerprint": "4a2cda0af0994467",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "42ab58bbf745a443",
  "_name": "Harmonies"
 }

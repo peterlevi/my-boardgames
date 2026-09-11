@@ -348,7 +348,23 @@ A dynamic and well-balanced game mechanics will offer you plenty of paths to the
 			
 
 			
-	
+			<videos total="24">
+						<video id="539532" title="Master of Orion - Kurzreview" category="review" language="German" link="http://www.youtube.com/watch?v=g73tX5iYbOM" username="Chronos79" userid="446861" postdate="2025-02-21T15:21:07-06:00" />
+						<video id="501101" title="Abrimos - MASTER OF ORION (2016) " category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=P6eyoomWWBU" username="rewindmasters" userid="1866329" postdate="2024-06-22T03:56:25-05:00" />
+						<video id="406838" title="Reseña Master of Orion" category="review" language="Spanish" link="http://www.youtube.com/watch?v=UI1MBm0cfBw" username="AllanH" userid="1512474" postdate="2022-10-30T20:33:28-05:00" />
+						<video id="357686" title="Master of Orion - Castellano" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=8hYUKTjp5h8" username="LL81" userid="550276" postdate="2021-12-20T08:49:36-06:00" />
+						<video id="343835" title="Master of Orion | Unboxing" category="unboxing" language="Polish" link="http://www.youtube.com/watch?v=yPBnsfew1-o" username="Loopsy" userid="455701" postdate="2021-09-20T01:34:40-05:00" />
+						<video id="343834" title="DGA Plays Board Games: Master of Orion" category="session" language="English" link="http://www.youtube.com/watch?v=aJrMiOGqzRI" username="Loopsy" userid="455701" postdate="2021-09-20T01:26:17-05:00" />
+						<video id="343832" title="Master of Orion | Cryptozoic Interview | Roll For Crit" category="interview" language="English" link="http://www.youtube.com/watch?v=qNxDEem5r8U" username="Loopsy" userid="455701" postdate="2021-09-20T01:15:59-05:00" />
+						<video id="327105" title="Master of Orion The Board Game" category="unboxing" language="English" link="http://www.youtube.com/watch?v=iSSonWPvrgo" username="ender821" userid="985459" postdate="2021-05-30T15:48:22-05:00" />
+						<video id="320352" title="VLOG#8 Lo siento mucho... lo he vuelto a hacer" category="other" language="Spanish" link="http://www.youtube.com/watch?v=wYONU6qWBsc" username="miqueljornet" userid="374076" postdate="2021-04-22T17:38:34-05:00" />
+						<video id="253946" title="Unboxing Master of Orion" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=boGLxuCNGfg" username="AllanH" userid="1512474" postdate="2020-02-29T19:07:33-06:00" />
+						<video id="222264" title="Monday Night Multiplayer Solitaire: Master Of Orion: The Board Game" category="session" language="English" link="http://www.youtube.com/watch?v=Ds0ZgyqcPeI" username="Harblnger" userid="355891" postdate="2019-06-19T18:04:57-05:00" />
+						<video id="160524" title="Master of Orion (Partida) OB" category="session" language="Spanish" link="http://www.youtube.com/watch?v=Doyu-a_L2_o" username="SteinerX" userid="1429098" postdate="2017-12-18T02:14:40-06:00" />
+						<video id="160523" title="Master of Orion (Presentación y como se juega) OB" category="review" language="Spanish" link="http://www.youtube.com/watch?v=6DmBWCCs8hU" username="SteinerX" userid="1429098" postdate="2017-12-18T02:12:51-06:00" />
+						<video id="153434" title="Master of Orion. Reseña." category="review" language="Spanish" link="http://www.youtube.com/watch?v=nsgs8-hD2hA" username="Falcata" userid="39386" postdate="2017-10-18T08:57:05-05:00" />
+						<video id="150155" title="Video Tutorial y Reseña de Master Of Orion" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=qAtwup9V9uY" username="BelialSpain" userid="459982" postdate="2017-09-19T06:34:13-05:00" />
+					</videos>
 
 	
 
@@ -357,20 +373,20 @@ A dynamic and well-balanced game mechanics will offer you plenty of paths to the
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="2020" />
-			<average value="6.89873" />
-			<bayesaverage value="6.10682" />
+			<usersrated value="2021" />
+			<average value="6.89903" />
+			<bayesaverage value="6.10715" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2641" bayesaverage="6.10682" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1309" bayesaverage="6.212" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2641" bayesaverage="6.10715" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1307" bayesaverage="6.21238" />
 												</ranks>
 
-			<stddev value="1.27806" />
+			<stddev value="1.27781" />
 			<median value="0" />
 			<owned value="4038" />
 			<trading value="156" />
-			<wanting value="40" />
+			<wanting value="41" />
 			<wishing value="484" />
 			<numcomments value="524" />
 			<numweights value="73" />

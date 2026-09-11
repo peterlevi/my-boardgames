@@ -1,35 +1,39 @@
 {
  "confidence": "high",
- "summary": "Each round you blind-bid coins across four taverns to determine turn order, then draft dwarves in descending bid order while your coin values grow via a satisfying 'coin-building' upgrade mechanic. It plays fast and tense, with a light push-your-luck feel around guessing what others will bid and when to hire the big-value heroes.",
+ "summary": "A quick, tense bidding game where players simultaneously commit coins to taverns, then draft dwarves in descending bid order, gradually assembling a scoring army across five character classes. Its clever twist is that spent coins upgrade in value, so early sacrifices can pay off in later rounds.",
  "praised": [
-  "Clever coin-upgrading mechanism that ties bidding directly into economy growth",
-  "Fast, tense rounds with meaningful blind-bid tension",
-  "Easy to teach, quick to play, scales well 2-5",
-  "Great production/art and satisfying tactile coin play",
-  "High replayability from varied dwarf/hero combos"
+  "simple, elegant bidding mechanism that stays tense throughout",
+  "fast playtime with real decision weight each round",
+  "charming, high-quality dwarf miniatures and production"
  ],
  "criticised": [
-  "Can feel a bit solitaire/multiplayer-solitaire since interaction is indirect",
-  "Randomness in which heroes/dwarves appear can swing scoring",
-  "Some find the five scoring categories fiddly to track and optimize",
-  "Endgame scoring math can be a bit dry/calculation-heavy"
+  "outcomes can feel swingy based on what's available to bid on",
+  "limited strategic depth once the bidding pattern is learned",
+  "some player-count dependent downtime during simultaneous reveals"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "simultaneous blind bidding that indirectly blocks others from cards/turn order"
+  "level": "High",
+  "kind": "simultaneous sealed bidding and drafting from shared taverns",
+  "detail": "Every round players bid directly against each other for the same pool of cards, and bid order determines who gets first pick, so opponents' choices constantly reshape what's left for you. The taverns are fully shared state, while each player's growing army of dwarves is their own private tableau."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "final score sums five different dwarf-type categories plus heroes and gold, so balancing multiple scoring tracks decides the winner"
+  "why": "Points come from five differently-scoring dwarf classes plus recruited heroes, so a balanced or specialized army can both win depending on synergies.",
+  "how_you_win": "You win by out-bidding rivals to assemble the highest-scoring combination of blacksmiths, hunters, warriors, explorers, miners, and heroes."
  },
  "similar": [
-  "Kingdomino",
-  "Raiders of the North Sea",
-  "Century: Spice Road",
-  "Sushi Go!",
-  "Res Arcana"
+  "Ra",
+  "For Sale",
+  "Libertalia",
+  "Blue Lagoon",
+  "Raiders of the North Sea"
  ],
- "_fingerprint": "8c09b861be1d9830",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "bd44e32f0678e3b7",
  "_name": "Nidavellir"
 }

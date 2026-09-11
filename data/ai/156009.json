@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Each turn you flip cards from a shared deck into the harbor, deciding when to stop before a repeated ship busts your haul, then either bank the coins or spend people cards to buy more people or complete expeditions for points. It plays fast and tense, with real competition to snipe the person or expedition cards you need before an opponent takes them.",
+ "summary": "Port Royal is a fast push-your-luck card game where players flip cards from a shared deck into the harbor, deciding when to stop before a duplicate ship type busts their turn, then recruit sellable people or ships for coins and points. It's a snappy filler with real tension in deciding how far to push your luck each turn.",
  "praised": [
-  "Quick, tense push-your-luck decisions every turn",
-  "Very portable, low table footprint, easy to teach",
-  "Meaningful tension between greed and safety on each draw",
-  "Card-sniping/drafting adds real interaction despite the simple core loop"
+  "Very quick to teach and play",
+  "Tense push-your-luck decisions every turn",
+  "Good scaling from 2 to 5 players"
  ],
  "criticised": [
-  "Can feel like multiplayer solitaire when the harbor stays safe",
-  "Luck of the draw can swing outcomes regardless of skill",
-  "Little to do on other players' long push-your-luck turns",
-  "Limited long-term strategy depth for heavier gamers"
+  "Can feel swingy/luck-driven for a 'strategy' game",
+  "Limited strategic depth over repeated plays",
+  "End-game can drag as scores climb"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "open drafting and card sniping for people/expeditions"
+  "kind": "push-your-luck with opportunistic taking",
+  "detail": "Any player can grab cards revealed into the shared harbor before the active player, so there's constant opportunistic sniping of good cards, though each player's own tableau of recruited cards/coins is private. The shared deck and harbor row are the main point of contact between players."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Points come mainly from the people cards you've hired (with set-collection bonuses for color variety) plus expedition cards you've completed"
+  "why": "First to 12 points ends the round, then points come from person cards and expedition tiles collected",
+  "how_you_win": "You win by amassing the most victory points from recruited characters and completed expeditions once someone triggers the game-end threshold."
  },
  "similar": [
-  "Meuterer",
-  "The Quest for El Dorado",
-  "Rajas of the Ganges",
-  "Raiders of the North Sea",
-  "Libertalia"
+  "Jaipur",
+  "Coloretto",
+  "The Great Split",
+  "Fresh Fish",
+  "Nova Luna"
  ],
- "_fingerprint": "ca2b3f9783f061bd",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "317d2d8fc6e5df29",
  "_name": "Port Royal"
 }

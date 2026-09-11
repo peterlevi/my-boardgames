@@ -1,32 +1,40 @@
 {
  "confidence": "medium",
- "summary": "Same core Knizia puzzle as the original Ingenious: place tiles to extend lines of matching colored symbols, and your score is capped by your weakest color, forcing balanced play instead of specialization. The 3D layering adds a spatial twist where tiles can stack, opening new scoring lines but also adding a bit of visual clutter and analysis time compared to the flat original.",
+ "summary": "Ingenious 3D takes Knizia's classic tile-laying abstract and adds stackable layers, letting players place hexagonal tiles on top of existing ones to open new scoring lines. The core tension is unchanged: you must raise your worst-scoring color rather than maximize your best, keeping matches close and forcing balanced play.",
  "praised": [
-  "Retains the elegant, easy-to-teach 'score your worst color' mechanism that makes the base game a classic",
-  "Stacking/layering adds a fresh spatial puzzle layer for fans of the original",
-  "Quick to learn, scales well from 1-4 players"
+  "elegant, quick abstract puzzle",
+  "close, tense scoring from the 'raise your minimum' rule",
+  "strong two-player experience",
+  "3D layering adds a fresh spatial wrinkle to a familiar formula"
  ],
  "criticised": [
-  "3D tiles can be fiddly to place and see clearly compared to a flat board",
-  "Feels like a reskin/variant rather than a substantially new game to those who already own Ingenious",
-  "Some prefer the cleaner, faster flat original over the added physical complexity"
+  "theme-free abstraction won't appeal to everyone",
+  "stacking can feel like an add-on rather than an essential change",
+  "still largely a multiplayer-solitaire puzzle with limited direct interaction"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "blocking and area denial via shared board space"
+  "level": "Low",
+  "kind": "mostly parallel play with shared tile supply and occasional blocking",
+  "detail": "Players draw from a shared pool of tiles and can block or deny opponents' scoring lines through placement, but each player scores on their own board, so most of the game is independent optimization rather than direct conflict."
  },
  "win_criteria": "Lowest-highest scoring",
  "scoring": {
   "breadth": "Broad",
-  "why": "The winner is whoever best balances scoring across all colors, since the final score is your lowest color total, not your sum."
+  "why": "Each player tracks six color scores simultaneously, and the winner is decided by whoever's lowest color score is highest.",
+  "how_you_win": "Place tiles to keep all six of your color scores climbing evenly, since your final score is determined by your weakest color, not your strongest."
  },
  "similar": [
   "Ingenious",
   "Qwirkle",
-  "Azul",
   "Kingdomino",
-  "Twin It!"
+  "Azul",
+  "Tsuro"
  ],
- "_fingerprint": "06d683f2821ddb87",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "4694942be156cb00",
  "_name": "Ingenious 3D"
 }

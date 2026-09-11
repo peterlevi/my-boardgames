@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Codenames is a light social word-association party game where two spymasters give one-word clues to help their teammates identify their team's agents on a shared grid of words, while avoiding the opposing team's agents and the deadly assassin. It plays fast, scales to large groups, and lives or dies on the cleverness and wit of the clue-givers.",
+ "summary": "Codenames has spymasters giving one-word clues to get their teammates to point at their team's agent words on a 5x5 grid, while avoiding the opponent's agents, bystanders, and especially the assassin. It's a fast, clever party game almost entirely about clever wordplay and reading your teammates' minds.",
  "praised": [
-  "extremely easy to teach and universally accessible",
-  "clever, memorable, laugh-out-loud clue moments",
-  "scales well to large groups",
-  "endlessly replayable with the same components"
+  "Extremely easy to teach and endlessly replayable",
+  "Great mix of word-association cleverness and tension",
+  "Scales well from small groups to large parties",
+  "Cheap, small footprint, huge value"
  ],
  "criticised": [
-  "heavily dependent on having witty players; weaker with mismatched groups",
-  "the assassin can end a game abruptly and feel anticlimactic",
-  "language/culture-dependent clues can confuse some players",
-  "less fun with only 2-3 people who overlap awkwardly"
+  "Relies heavily on shared cultural/language references between teammates",
+  "Can be swingy if a team hits the assassin early",
+  "Less fun with players who overthink or underthink clues",
+  "Imbalanced if one team has a much better clue-giver"
  ],
  "interaction": {
   "level": "High",
-  "kind": "team communication and clue-guessing under uncertainty"
+  "kind": "team communication and word-association deduction",
+  "detail": "The entire 25-card grid is shared, and one player's clue directly shapes their whole team's guesses each turn, with opposing teams racing against each other on the same board. There's no private player state at all — it's fully public information filtered through hidden knowledge held only by spymasters."
  },
  "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "the team that contacts all of its own agents first wins, with no accumulating point total"
+  "why": "There's no point scoring; the only thing that matters is which team contacts all of their agents first without hitting the assassin.",
+  "how_you_win": "Your team wins by correctly identifying all of your agent words before the other team does, or if the other team accidentally picks the assassin card."
  },
  "similar": [
   "Codenames: Duet",
   "Codenames: Pictures",
-  "Just One",
   "Decrypto",
+  "Just One",
   "Wavelength"
  ],
- "_fingerprint": "e117a5b810e293c9",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "6dc4549db86744ac",
  "_name": "Codenames"
 }

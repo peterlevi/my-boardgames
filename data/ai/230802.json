@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "Azul is a light, tactile tile-drafting game where you snake-draft colored tiles into staging rows and then transfer them onto a wall to score points, with the tension coming from denying opponents useful colors and managing overflow penalties. It plays fast, looks gorgeous on the table, and rewards short-term tactical planning more than deep strategy.",
+ "summary": "A light-to-medium abstract tile-drafting game where players take colored tiles from shared factory displays to build patterns on their own board, scoring for adjacency and completed rows while being careful not to get stuck with leftover penalty tiles. It's quick to teach, tense in a quiet way, and looks beautiful on the table.",
  "praised": [
-  "Beautiful, tactile components (the tiles feel great to handle)",
-  "Easy to teach and quick to play",
-  "Satisfying push-your-luck tension between grabbing tiles you need and dumping unwanted colors on opponents",
-  "Scales well and works as a gateway/family game"
+  "simple rules with surprisingly sharp tactical depth",
+  "gorgeous, tactile components",
+  "quick to teach and play",
+  "tense drafting decisions each round"
  ],
  "criticised": [
-  "Can feel too abstract or 'mathy' for players wanting theme",
-  "Runaway leader potential is low but a single bad round can be very punishing",
-  "Limited long-term strategic depth once the pattern is learned",
-  "Some find it a bit solitaire-ish at 2 players compared to 3-4"
+  "can feel a bit solitaire-ish since boards develop independently",
+  "some randomness in tile availability",
+  "limited long-term variety across plays"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial via tile drafting"
+  "kind": "tile drafting and denial",
+  "detail": "Players draft from shared factory displays and can deliberately take tiles they don't need just to dump penalty tiles on an opponent, but each player builds their pattern on their own private board. The shared supply of tiles is the main point of contact between players."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Wall-tile placement adjacency bonuses plus end-game row/column/color completion bonuses decide the winner, while floor-line penalties for overflow tiles punish poor drafting."
+  "why": "Scoring is driven almost entirely by how tiles are placed for adjacency and row/column completion bonuses.",
+  "how_you_win": "You win by placing tiles to maximize adjacency chains and completing bonus rows, columns, and color sets while minimizing penalty tiles."
  },
  "similar": [
   "Sagrada",
-  "Azul: Summer Pavilion",
-  "Calico",
+  "Kingdomino",
   "Patchwork",
-  "Kingdomino"
+  "Azul: Summer Pavilion",
+  "Calico"
  ],
- "_fingerprint": "6598b92a89966892",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "98a1eab44f44043a",
  "_name": "Azul"
 }

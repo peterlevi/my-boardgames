@@ -686,7 +686,23 @@ Scoring example 3: An expedition has 1 HS, and 4,6,7 for a total of 17. This exp
 			
 
 			
-	
+			<videos total="206">
+						<video id="625382" title="Lost Cities Thematic Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=Im7Y71omBrg" username="TheShameTable" userid="4558441" postdate="2026-08-15T14:53:10-05:00" />
+						<video id="624853" title="Partita Live a Città Perdute" category="session" language="Italian" link="http://www.youtube.com/watch?v=DmtO2d-hDFg" username="boardgamesfrancesco" userid="2473716" postdate="2026-08-12T01:43:49-05:00" />
+						<video id="618019" title="Ludochrono - Lost Cities Duel" category="instructional" language="French" link="http://www.youtube.com/watch?v=5xV3HNph7Q4" username="loutre_on_fire" userid="1037076" postdate="2026-06-29T03:50:51-05:00" />
+						<video id="609837" title="Lost Cities Unboxing by Myboardgames.net" category="unboxing" language="English" link="http://www.youtube.com/watch?v=qd61qJcL34s" username="My_BoardGames" userid="4345861" postdate="2026-04-30T20:07:58-05:00" />
+						<video id="602007" title="Lost Cities | Overview &amp; Gameplay " category="instructional" language="English" link="http://www.youtube.com/watch?v=FJKqzJQAzaY" username="fenirob" userid="478021" postdate="2026-03-11T13:23:43-05:00" />
+						<video id="590002" title="Lost Cities Playthrough on Board Game Arena | Full Gameplay &amp; Strategy Tips" category="session" language="English" link="http://www.youtube.com/watch?v=4UF2FJDQ_n4" username="program2game" userid="934384" postdate="2025-12-28T14:14:41-06:00" />
+						<video id="589090" title="Zaginione Miasta - recenzja i zasady gry" category="review" language="Polish" link="http://www.youtube.com/watch?v=xT0qr05y1Ys" username="boardgamestv" userid="480024" postdate="2025-12-21T06:00:34-06:00" />
+						<video id="582160" title="Lost Cities Playthrough | Shadow of the Game" category="session" language="English" link="http://www.youtube.com/watch?v=7aLFClcMiaA" username="ShadowoftheGame" userid="4089225" postdate="2025-11-10T16:07:03-06:00" />
+						<video id="574060" title="World Series of Board Gaming - MY RESULTS!!!" category="other" language="English" link="http://www.youtube.com/watch?v=GCHjBqoUefg" username="ZValentin" userid="2082778" postdate="2025-09-26T15:35:35-05:00" />
+						<video id="571150" title="Zaginione miasta: Pojedynek - Recenzja" category="review" language="Polish" link="http://www.youtube.com/watch?v=MecOI-3fFp8" username="Planszowo_PL" userid="3785749" postdate="2025-09-10T04:05:49-05:00" />
+						<video id="571148" title="Zaginione miasta: Pojedynek - Rozgrywka EP08 Solo: Wariant IV C" category="session" language="Polish" link="http://www.youtube.com/watch?v=cqkTsQuGSIM" username="Planszowo_PL" userid="3785749" postdate="2025-09-10T04:04:39-05:00" />
+						<video id="571145" title="Zaginione miasta&quot; Pojedynek - Instrukcja Solo: Wariant IV C" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=_Zd8bb_Akgk" username="Planszowo_PL" userid="3785749" postdate="2025-09-10T04:02:48-05:00" />
+						<video id="571144" title="Zaginione miasta: Pojedynek - Rozgrywka EP07 Solo: Wariant IV B" category="session" language="Polish" link="http://www.youtube.com/watch?v=P7UTEPOXcZw" username="Planszowo_PL" userid="3785749" postdate="2025-09-10T04:02:11-05:00" />
+						<video id="571142" title="Zaginione miasta: Pojedynek - Instrukcja Solo: Wariant IV B" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=6f0a9urGiB4" username="Planszowo_PL" userid="3785749" postdate="2025-09-10T04:00:54-05:00" />
+						<video id="571140" title="Zaginione miasta: Pojedynek - Rozgrywka EP06: Solo Wariant IV A" category="session" language="Polish" link="http://www.youtube.com/watch?v=Y3rzZzzH1VU" username="Planszowo_PL" userid="3785749" postdate="2025-09-10T03:59:28-05:00" />
+					</videos>
 
 	
 
@@ -695,22 +711,22 @@ Scoring example 3: An expedition has 1 HS, and 4,6,7 for a total of 17. This exp
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="51497" />
-			<average value="7.26038" />
-			<bayesaverage value="7.15408" />
+			<usersrated value="51509" />
+			<average value="7.26033" />
+			<bayesaverage value="7.15406" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="348" bayesaverage="7.15408" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="83" bayesaverage="7.17429" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="348" bayesaverage="7.15406" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="82" bayesaverage="7.17426" />
 												</ranks>
 
-			<stddev value="1.27176" />
+			<stddev value="1.27179" />
 			<median value="0" />
-			<owned value="77394" />
-			<trading value="1071" />
+			<owned value="77409" />
+			<trading value="1069" />
 			<wanting value="571" />
-			<wishing value="6978" />
-			<numcomments value="11105" />
+			<wishing value="6984" />
+			<numcomments value="11107" />
 			<numweights value="3246" />
 			<averageweight value="1.475" />
 			</ratings>

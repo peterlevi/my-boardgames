@@ -38,36 +38,36 @@ Brass: Birmingham also features a new sixth action:
 										      	               				<yearpublished value="2018" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1437">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1438">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="72" />
-					<result value="Not Recommended" numvotes="789" />
+					<result value="Not Recommended" numvotes="790" />
 				</results>					
 			
 		<results numplayers="2">		
-					<result value="Best" numvotes="134" />
+					<result value="Best" numvotes="135" />
 					<result value="Recommended" numvotes="902" />
 					<result value="Not Recommended" numvotes="186" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="772" />
+					<result value="Best" numvotes="773" />
 					<result value="Recommended" numvotes="466" />
 					<result value="Not Recommended" numvotes="20" />
 				</results>					
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="799" />
-					<result value="Recommended" numvotes="378" />
+					<result value="Recommended" numvotes="379" />
 					<result value="Not Recommended" numvotes="54" />
 				</results>					
 			
 		<results numplayers="4+">		
 					<result value="Best" numvotes="2" />
 					<result value="Recommended" numvotes="6" />
-					<result value="Not Recommended" numvotes="666" />
+					<result value="Not Recommended" numvotes="667" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -77,7 +77,7 @@ Brass: Birmingham also features a new sixth action:
 						               				<minplaytime value="60" />
 						               				<maxplaytime value="120" />
 						               				<minage value="14" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="202">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="203">
 			<results>		
 					<result value="2" numvotes="1" />
 					<result value="3" numvotes="0" />
@@ -89,7 +89,7 @@ Brass: Birmingham also features a new sixth action:
 					<result value="12" numvotes="45" />
 					<result value="14" numvotes="102" />
 					<result value="16" numvotes="32" />
-					<result value="18" numvotes="2" />
+					<result value="18" numvotes="3" />
 					<result value="21 and up" numvotes="1" />
 				</results>					
 	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="61">
@@ -882,7 +882,23 @@ Brass: Birmingham also features a new sixth action:
 			
 
 			
-	
+			<videos total="305">
+						<video id="626311" title="Brass Birmingham - Czy ten klasyk nadal się broni? | Recenzja gry planszowej" category="review" language="Polish" link="http://www.youtube.com/watch?v=Su1xrwqNZ3U" username="chmod700" userid="1837323" postdate="2026-08-21T17:45:10-05:00" />
+						<video id="623544" title="Is the Player Count on Board Games Accurate? I Checked 100 Games" category="other" language="English" link="http://www.youtube.com/watch?v=Mtz386BxJ_c" username="rob2kewl" userid="536700" postdate="2026-08-03T12:15:13-05:00" />
+						<video id="620719" title="Pion &amp; Pazur | Brass Birmingham | zasady + rozgrywka" category="session" language="Polish" link="http://www.youtube.com/watch?v=ovKB9LVzv4Q" username="Dr_Mike_" userid="3161430" postdate="2026-07-15T15:11:38-05:00" />
+						<video id="614862" title="Unboxing: Brass Birmingham" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=B2IA4Z81DYM" username="StarGamers" userid="1907987" postdate="2026-06-05T15:52:00-05:00" />
+						<video id="613632" title="All the Games with Steph: Deep Dive Review of Brass: Birmingham" category="review" language="English" link="http://www.youtube.com/watch?v=sR5ykZq-39g" username="boardgamersteph" userid="212591" postdate="2026-05-27T23:53:46-05:00" />
+						<video id="613631" title="All the Games with Steph: Brass: Birmingham - Teach" category="instructional" language="English" link="http://www.youtube.com/watch?v=vwnl4ZEaypM" username="boardgamersteph" userid="212591" postdate="2026-05-27T23:53:42-05:00" />
+						<video id="612635" title="Top 10 Solo Modes By Fans (&amp; 3 Fan Made Solo Modes for Brass Birmingham)" category="other" language="English" link="http://www.youtube.com/watch?v=whkc-7jPeXU" username="Boardgaymergirl" userid="1466890" postdate="2026-05-21T00:23:12-05:00" />
+						<video id="611840" title="Нумограй із двома гравцями від каналу &quot;Board Game Fun&quot;" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=PBY_kwNgI9E" username="davose" userid="1472043" postdate="2026-05-15T06:26:58-05:00" />
+						<video id="609797" title="Brass. Бирмингем настольная игра" category="session" language="Russian" link="http://www.youtube.com/watch?v=x2SLnJ3ysV0" username="AlexArchanfel" userid="3396602" postdate="2026-04-30T11:51:43-05:00" />
+						<video id="608970" title="Brass: Regras CANTADAS em 4min" category="humor" language="Portuguese" link="http://www.youtube.com/watch?v=1BoRx3jv3L4" username="DanielNobrega" userid="529747" postdate="2026-04-24T09:58:39-05:00" />
+						<video id="608650" title="Огляд настільної гри &quot;Brass. Бірмінгем&quot; від видавництва &quot;Lord of boards&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=jMVj5LbDxvc" username="Arkhandgel" userid="3278135" postdate="2026-04-22T06:52:14-05:00" />
+						<video id="607764" title="Board Buds Brass Birmingham Review" category="review" language="English" link="http://www.youtube.com/watch?v=CwXDmhXAWM8" username="lupecazaril" userid="349030" postdate="2026-04-16T06:19:56-05:00" />
+						<video id="607571" title="Rulebook直說｜工業革命：伯明翰｜Brass: Birmingham｜教學｜廣東話" category="instructional" language="" link="http://www.youtube.com/watch?v=GpBkScKlI1o" username="sonofkyo" userid="2885517" postdate="2026-04-15T15:40:17-05:00" />
+						<video id="607501" title="Brass Birmingham - Erklärung am Spielabend" category="instructional" language="German" link="http://www.youtube.com/watch?v=qbw7AwLEGqc" username="brettspielfieber" userid="1952235" postdate="2026-04-15T10:41:53-05:00" />
+						<video id="604826" title="Brass: Birmingham (Revisited) - 4p Play-through &amp; Roundtable Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=hz5nplEq_Xg" username="eapeas" userid="377742" postdate="2026-03-29T20:09:07-05:00" />
+					</videos>
 
 	
 
@@ -891,24 +907,24 @@ Brass: Birmingham also features a new sixth action:
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="60082" />
-			<average value="8.55996" />
-			<bayesaverage value="8.39023" />
+			<usersrated value="60104" />
+			<average value="8.55989" />
+			<bayesaverage value="8.39033" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1" bayesaverage="8.39023" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1" bayesaverage="8.4014" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1" bayesaverage="8.39033" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1" bayesaverage="8.40146" />
 												</ranks>
 
-			<stddev value="1.43158" />
+			<stddev value="1.43177" />
 			<median value="0" />
-			<owned value="86318" />
-			<trading value="389" />
+			<owned value="86357" />
+			<trading value="390" />
 			<wanting value="1719" />
-			<wishing value="22379" />
-			<numcomments value="8149" />
-			<numweights value="2934" />
-			<averageweight value="3.8599" />
+			<wishing value="22391" />
+			<numcomments value="8150" />
+			<numweights value="2935" />
+			<averageweight value="3.8603" />
 			</ratings>
 								</statistics>
      

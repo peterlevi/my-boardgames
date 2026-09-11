@@ -1,35 +1,40 @@
 {
  "confidence": "high",
- "summary": "A fast, tense bluffing and deduction game where you hold one card at a time and try to deduce what everyone else is holding while avoiding elimination. Rounds last only a few minutes, so it plays as a light palate-cleanser or filler rather than a deep strategic experience.",
+ "summary": "A minimalist bluffing and deduction game where each turn you play one of just two cards in hand, using character powers to guess, compare, or eliminate opponents. Rounds are over in minutes, and the tension comes almost entirely from reading what little information is available about who holds what.",
  "praised": [
-  "Extremely quick setup and round length",
-  "Surprising depth of deduction from a tiny 16-card deck",
-  "Easy to teach to non-gamers",
-  "Great portability and low table footprint",
-  "Tense push-your-luck moments with the Guard and Baron"
+  "extremely fast to teach and play",
+  "surprisingly tense bluffing and deduction from a tiny card pool",
+  "great icebreaker or filler between heavier games",
+  "scales well from two players up to larger groups"
  ],
  "criticised": [
-  "High variance - a single lucky/unlucky draw can decide a round",
-  "Player elimination means early-eliminated players wait for the round to end",
-  "Very light strategic depth for experienced gamers",
-  "Playing at higher player counts (5-6) dilutes information and increases luck"
+  "outcomes can feel very swingy and luck-driven, especially in short rounds",
+  "player elimination within a round can leave someone waiting",
+  "limited strategic depth for players wanting a serious game"
  ],
  "interaction": {
   "level": "High",
-  "kind": "bluffing, deduction, and direct targeted elimination"
+  "kind": "direct targeting, bluffing and deduction",
+  "detail": "Almost every card played targets another specific player, forcing guesses, comparisons, or eliminations, so the entire game state is about what your opponents might be holding rather than any private tableau. There is essentially no solitaire play — every turn is about the other players."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "Favor tokens are won round-by-round by surviving or holding the highest card, and the first to reach the token threshold wins"
+  "why": "A round ends when one card remains or the deck runs out, and whoever holds the highest (or last surviving) card claims a favor token; the game is won by being first to the target number of tokens.",
+  "how_you_win": "Survive each short round holding the highest card or by outlasting eliminated opponents, and accumulate favor tokens across enough rounds to hit the winning threshold."
  },
  "similar": [
   "Coup",
-  "The Resistance",
-  "Sheriff of Nottingham",
-  "No Thanks!",
-  "Skull"
+  "The Fox in the Forest",
+  "Sushi Go!",
+  "Skull",
+  "No Thanks!"
  ],
- "_fingerprint": "3d8e9433d1b7e59d",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "f00719d855f74d82",
  "_name": "Love Letter"
 }

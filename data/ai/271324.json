@@ -1,35 +1,40 @@
 {
  "confidence": "high",
- "summary": "It's a Wonderful World is a card-drafting engine-builder where you draft from a hand, then simultaneously decide which cards to recycle for resources versus construct for ongoing production and points. The tense part is that production resolves in a fixed resource order each round, so timing your engine and covering shortfalls (or converting excess via recycling) is the core puzzle.",
+ "summary": "It's a Wonderful World is a card-drafting engine builder where every player drafts from the same rotating hand simultaneously, then decides whether to recycle each card for immediate resources or build it for ongoing production and points. The simultaneous draft-and-plan structure keeps downtime low even though most of the actual building happens in parallel on personal empire boards.",
  "praised": [
-  "Efficient simultaneous-play drafting means little downtime despite being a drafting game",
-  "Satisfying engine-building puzzle with meaningful tension between recycling now vs building for later",
-  "Strong solo mode",
-  "Attractive production and thematic sci-fi/civilization art",
-  "Scales well and plays quickly for the amount of decision-making involved"
+  "clever simultaneous drafting keeps everyone engaged",
+  "satisfying resource-engine puzzle",
+  "quick round structure",
+  "well-regarded solo mode"
  ],
  "criticised": [
-  "Can feel like a multiplayer solitaire with limited direct interaction beyond drafting",
-  "Some randomness in what cards appear can swing a game",
-  "Rules around production order and resource conversion have a learning curve for new players",
-  "Later plays can feel a bit samey without expansions"
+  "mostly parallel play with limited direct interaction",
+  "some randomness in which cards appear",
+  "feels similar to 7 Wonders/Res Arcana to experienced gamers"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "drafting against opponents but mostly parallel engine-building"
+  "kind": "mostly parallel drafting and engine building",
+  "detail": "Players see and pass around the same pool of cards, so they can deny each other specific cards by drafting them first, but production, resources, and scoring all live on each player's own empire board with almost no direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from multiple card types (empire cards, achievements, bonuses) so the winner is whoever builds the most efficient, well-timed production engine"
+  "why": "Points come from constructed buildings, empire development track bonuses, and leftover resources at game end.",
+  "how_you_win": "Build the most efficient multi-resource production engine and cash in development bonuses before the final era ends."
  },
  "similar": [
   "7 Wonders",
   "Res Arcana",
+  "Century: Spice Road",
   "Terraforming Mars",
-  "Innovation",
-  "Century: Spice Road"
+  "Bloodstones"
  ],
- "_fingerprint": "c8f59ae5e2bcfd57",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "b0e5c03a5a21696e",
  "_name": "It's a Wonderful World"
 }

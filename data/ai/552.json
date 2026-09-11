@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Bus is a brutal, cutthroat pickup-and-deliver game where the real battle is over turn order itself, since choosing certain actions first means executing them last, forcing constant bluffing about when to commit. It rewards players who can read the shifting passenger flows and route contention on the board far more than raw efficiency, making it one of the more mentally taxing Euros of its era.",
+ "summary": "Bus is a brutal, calculating pickup-and-deliver game where you build competing bus networks through a growing city, and the person who looks like they're winning gets ganged up on relentlessly. It runs long, demands constant recalculation as passenger demand shifts, and rewards players willing to bankrupt an opponent's route rather than just optimize their own.",
  "praised": [
-  "the clever inverted turn-order mechanic that turns action selection into a game of chicken",
-  "deep, tense player interaction over shared board space and routes",
-  "high replayability from the modular, ever-shifting city and passenger destinations",
-  "rewards careful planning and reading opponents over luck"
+  "deep, satisfying network-building puzzle",
+  "meaningful long-term planning and route optimization",
+  "classic early Splotter design pedigree"
  ],
  "criticised": [
-  "steep rules overhead and long teach for new players",
-  "long playtime that can drag, especially with full player counts",
-  "punishing for newcomers playing against experienced players",
-  "out-of-print scarcity and high secondary market prices"
+  "extremely long, punishing playtime",
+  "brutal negative interaction that can eliminate a player's plans outright",
+  "steep rules overhead and unforgiving learning curve"
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking and area denial via route/turn-order chicken"
+  "kind": "direct route blocking and economic sabotage",
+  "detail": "Players share the same city map and can build routes that intercept, block, or steal passengers destined for a rival's buses, and can deliberately target a leader to bankrupt them. The board and passenger pool are fully shared, so almost every action affects what routes remain viable for opponents."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "the winner is decided almost entirely by how many passengers you successfully deliver via your bus routes each round"
+  "why": "Points come almost entirely from successfully delivering passengers to their destinations before routes are disrupted.",
+  "how_you_win": "You win by building and expanding bus routes that most efficiently ferry passengers to work, bar, and home destinations while undermining rivals' ability to do the same."
  },
  "similar": [
   "Antiquity",
-  "Food Chain Magnate",
-  "Roads & Boats",
+  "Container",
   "The Great Zimbabwe",
-  "Indonesia"
+  "Food Chain Magnate",
+  "Age of Steam"
  ],
- "_fingerprint": "4a848d2cd2cb98f0",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "7616105ec0c0f46b",
  "_name": "Bus"
 }

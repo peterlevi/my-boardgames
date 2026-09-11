@@ -378,7 +378,23 @@ As the game progresses, you produce resources, form shipping routes, send out co
 			
 
 			
-	
+			<videos total="103">
+						<video id="591686" title="Santa Maria | Regras e Gameplay | Tirando a Poeira" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=8c_y_ym0fBc" username="TORUGO" userid="1169932" postdate="2026-01-09T16:02:36-06:00" />
+						<video id="488674" title="Déballage de Santa Maria" category="unboxing" language="French" link="http://www.youtube.com/watch?v=HZczKK0mqvM" username="No_Way301" userid="513208" postdate="2024-04-02T09:30:15-05:00" />
+						<video id="475917" title="Santa Maria Review - Dice Placement In The New World" category="review" language="English" link="http://www.youtube.com/watch?v=hOvG7HapDnM" username="BoardGameCo" userid="987813" postdate="2024-01-20T15:00:30-06:00" />
+						<video id="471843" title="santa maria" category="review" language="Polish" link="http://www.youtube.com/watch?v=y4DRNZAAfBE" username="MaMiKr" userid="1722436" postdate="2023-12-18T17:47:54-06:00" />
+						<video id="458934" title="Tutorial &amp; Solo Playthrough of Santa Maria - Solo Board Game" category="instructional" language="English" link="http://www.youtube.com/watch?v=copfgeo6dgM" username="JJ2B2B" userid="2445682" postdate="2023-09-29T04:15:36-05:00" />
+						<video id="449746" title="SANTA MARIA [Gameplay + Tutorial] Un gran bel gioco da tavolo di gestione dadi, molto sottovalutato!" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=HpkKqTW_pXQ" username="AleBoardGamer" userid="2686298" postdate="2023-08-03T05:02:15-05:00" />
+						<video id="422109" title="Santa Maria - Review - Board Gaming 365" category="review" language="Greek" link="http://www.youtube.com/watch?v=va2UtrEYwLk" username="GladiatorGr" userid="635181" postdate="2023-02-05T16:44:19-06:00" />
+						<video id="421823" title="Santa Maria - Unboxing - Board Gaming 365" category="unboxing" language="Greek" link="http://www.youtube.com/watch?v=qh1u1mIN1F0" username="GladiatorGr" userid="635181" postdate="2023-02-03T17:25:11-06:00" />
+						<video id="420378" title="Santa Maria - How to Play - Board Gaming 365" category="instructional" language="Greek" link="http://www.youtube.com/watch?v=YO12zQau8dY" username="GladiatorGr" userid="635181" postdate="2023-01-26T10:39:53-06:00" />
+						<video id="418359" title="Live gameplay de Santa Maria" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=zCdWJgJzbt8" username="andrerodomille1977" userid="1340683" postdate="2023-01-15T05:45:50-06:00" />
+						<video id="417304" title="Variante en solitario Competitiva" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=JYAYBeN-AUs" username="Angel_Solo" userid="869566" postdate="2023-01-08T11:04:11-06:00" />
+						<video id="416522" title="Santa Maria - 3-Minute Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=fBpy-g5wjzg" username="TheFamilyMeeple" userid="2419723" postdate="2023-01-03T08:03:00-06:00" />
+						<video id="414567" title="Board Game Advent Countdown | #6 Santa Maria" category="other" language="English" link="http://www.youtube.com/watch?v=nxa2FCNgSRo" username="TheFamilyMeeple" userid="2419723" postdate="2022-12-19T08:14:29-06:00" />
+						<video id="406746" title="Robert SoloPlay - Santa Maria - Átbeszélés" category="review" language="Hungarian" link="http://www.youtube.com/watch?v=PBpqmt7dBQY" username="RobertSoloPlay" userid="2913260" postdate="2022-10-30T07:21:34-05:00" />
+						<video id="406745" title="Robert SoloPlay - Santa Maria - Egyszemélyes végigjátszás" category="session" language="Hungarian" link="http://www.youtube.com/watch?v=-dt-6VNQ-jI" username="RobertSoloPlay" userid="2913260" postdate="2022-10-30T07:20:23-05:00" />
+					</videos>
 
 	
 
@@ -387,21 +403,21 @@ As the game progresses, you produce resources, form shipping routes, send out co
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="7580" />
-			<average value="7.45407" />
-			<bayesaverage value="6.96329" />
+			<usersrated value="7581" />
+			<average value="7.45418" />
+			<bayesaverage value="6.96343" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="546" bayesaverage="6.96329" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="350" bayesaverage="7.07244" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="546" bayesaverage="6.96343" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="350" bayesaverage="7.07258" />
 												</ranks>
 
-			<stddev value="1.18885" />
+			<stddev value="1.18882" />
 			<median value="0" />
-			<owned value="9830" />
+			<owned value="9833" />
 			<trading value="317" />
 			<wanting value="294" />
-			<wishing value="1535" />
+			<wishing value="1536" />
 			<numcomments value="1302" />
 			<numweights value="291" />
 			<averageweight value="3.0344" />

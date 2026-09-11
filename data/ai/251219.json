@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "Istanbul is a tight pick-up-and-deliver game where you move your merchant and assistants around a modular grid of place tiles, leaving assistants behind to trigger repeatable actions while racing to collect rubies for scoring. It plays fast and tense despite the calm theme, with efficient route-planning and light blocking as other players occupy the tiles you need.",
+ "summary": "Istanbul is a tight pick-up-and-deliver game where you move your merchant around a modular market grid, dropping off assistants to trigger repeatable actions while racing to collect rubies. The Big Box bundles both expansions (Mocha & Baksheesh, Letters & Seals), adding tile variety and route options without diluting the crisp, tense core loop.",
  "praised": [
-  "Tight, tense action-efficiency puzzle despite simple rules",
-  "Modular board gives high replayability and varied setups",
-  "Quick turns keep downtime low even at higher player counts",
-  "Big Box bundles both expansions plus mini-expansion at good value and improves component quality/insert"
+  "excellent tension from a limited number of assistants",
+  "satisfying route optimization each game",
+  "high replayability from the modular board",
+  "expansions add welcome variety without bloating play time"
  ],
  "criticised": [
-  "Can feel a bit dry or 'mechanical' thematically",
-  "Assistant-placement blocking can occasionally lead to slight kingmaking or bad luck if a needed tile is occupied",
-  "Some find the base game a bit light at higher weight expectations; the 5x5 big bazaar mode with more players can drag",
-  "Expansions (esp. Letters & Seals) add complexity that not all groups want"
+  "early turns can feel constrained and samey",
+  "some analysis paralysis chasing the optimal route",
+  "expansions can slow the pace slightly for newer players"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "tile/space blocking and light area denial via assistant placement"
+  "kind": "shared tile spaces and light blocking",
+  "detail": "Players move across the same board and can land on tiles already occupied by an opponent (paying them a small bonus) or beat them to the last needed good, but each player otherwise builds up goods and money on their own personal mat."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is decided almost entirely by rubies collected, with bonus tiles/wheelbarrow upgrades acting as accelerants rather than separate scoring tracks"
+  "why": "The game ends the instant a player collects the required number of rubies.",
+  "how_you_win": "Be the first to gather the target number of rubies by efficiently chaining tile actions to acquire and trade up goods."
  },
  "similar": [
-  "The Pillars of the Earth",
-  "Coimbra",
-  "Puerto Rico",
-  "Marco Polo",
-  "Trajan"
+  "The Voyages of Marco Polo",
+  "Orleans",
+  "Merchants of Venice",
+  "Trickerion",
+  "The Gallerist"
  ],
- "_fingerprint": "d0230301c43aaab5",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "45c4096b49242d7e",
  "_name": "Istanbul: Big Box"
 }

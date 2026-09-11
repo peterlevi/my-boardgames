@@ -778,7 +778,23 @@ UPC 681706716909
 			
 
 			
-	
+			<videos total="205">
+						<video id="624978" title="Curating a Board Game Collection: Part 2 - Board Game Arena Culls!" category="other" language="English" link="http://www.youtube.com/watch?v=NU--yJanD4s" username="ZValentin" userid="2082778" postdate="2026-08-12T14:23:20-05:00" />
+						<video id="619109" title="Viking Glory or Total Chaos? A Feast for Odin First Take" category="review" language="English" link="http://www.youtube.com/watch?v=AUHo-b7LCn0" username="TheBoardGameBruh" userid="4125054" postdate="2026-07-06T10:11:36-05:00" />
+						<video id="613937" title="A Feast For Odin | Solo | Live Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=y9TsXcZYL2o" username="Dads_and_Dice" userid="3205436" postdate="2026-05-30T08:26:22-05:00" />
+						<video id="612355" title="Board Game Highlights Episode 8: Mean Games Edition!" category="review" language="English" link="http://www.youtube.com/watch?v=lXveR8CEX7A" username="Faz1224" userid="2532579" postdate="2026-05-19T05:53:56-05:00" />
+						<video id="611627" title="A Feast for Odin - Legends of Nerdvana Review" category="review" language="English" link="http://www.youtube.com/watch?v=Iotvc-LK6Io" username="randrac" userid="28944" postdate="2026-05-13T16:54:00-05:00" />
+						<video id="607728" title="A Feast for Odin (with The Norwegians Expansion) | Unboxing + First Look" category="unboxing" language="English" link="http://www.youtube.com/watch?v=PASbM-7_aMQ" username="OneLastHand" userid="4143055" postdate="2026-04-16T04:42:52-05:00" />
+						<video id="602509" title="S3E28 - A Feast for Odin" category="session" language="English" link="http://www.youtube.com/watch?v=ZtffX3i4rAc" username="Bellissimo" userid="1721069" postdate="2026-03-14T13:57:39-05:00" />
+						<video id="597245" title=" A Feast for Odin &amp; Folded Space Insert - raskutijavanje" category="unboxing" language="Croatian" link="http://www.youtube.com/watch?v=wne-81JGbQQ" username="Gejmeraja" userid="3876365" postdate="2026-02-11T13:39:17-06:00" />
+						<video id="594819" title="Just Played! - A Feast for Odin (Quick Review)" category="review" language="English" link="http://www.youtube.com/watch?v=LC23lNpReoU" username="Arvias" userid="209684" postdate="2026-01-27T15:30:56-06:00" />
+						<video id="583395" title="Chess VS Monopoly | Ranking 30 of Your Favorite Board Game" category="other" language="English" link="http://www.youtube.com/watch?v=OOku4wmFEGE" username="Red14Blue16" userid="1046041" postdate="2025-11-17T15:00:41-06:00" />
+						<video id="577855" title="EL BANQUETE DE ODIN | ¿El eurogame con mas opciones del mercado? | Análisis y Opinión" category="review" language="Spanish" link="http://www.youtube.com/watch?v=3Z6TXy65ddw" username="La_Critica_Ludica" userid="2803453" postdate="2025-10-20T02:48:31-05:00" />
+						<video id="573266" title="Ranking Endings ~ How do YOU like your Games to End?" category="other" language="English" link="http://www.youtube.com/watch?v=thbPyGNTAGo" username="Red14Blue16" userid="1046041" postdate="2025-09-22T16:01:02-05:00" />
+						<video id="565319" title="Uczta Dla Odyna | Zasady Gry | Instrukcja | Zasady Solo" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=n-Rgvg75hFM" username="deshione" userid="3424462" postdate="2025-08-01T15:03:34-05:00" />
+						<video id="542692" title="Una partita a... La Festa per Odino" category="session" language="Italian" link="http://www.youtube.com/watch?v=y8Huxmk8Ibg" username="Hunters12" userid="2403288" postdate="2025-03-11T05:43:51-05:00" />
+						<video id="534781" title="A Feast for Odin - ORGANIZER " category="review" language="English" link="http://www.youtube.com/watch?v=w1JaWvOK5Vw" username="sbogardus" userid="1656935" postdate="2025-01-27T10:10:43-06:00" />
+					</videos>
 
 	
 
@@ -787,22 +803,22 @@ UPC 681706716909
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="34097" />
-			<average value="8.16011" />
-			<bayesaverage value="7.93927" />
+			<usersrated value="34112" />
+			<average value="8.16041" />
+			<bayesaverage value="7.93955" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="26" bayesaverage="7.93927" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="23" bayesaverage="7.9666" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="26" bayesaverage="7.93955" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="23" bayesaverage="7.96683" />
 												</ranks>
 
-			<stddev value="1.38177" />
+			<stddev value="1.38167" />
 			<median value="0" />
-			<owned value="44532" />
-			<trading value="316" />
-			<wanting value="1938" />
-			<wishing value="16618" />
-			<numcomments value="5190" />
+			<owned value="44543" />
+			<trading value="318" />
+			<wanting value="1942" />
+			<wishing value="16621" />
+			<numcomments value="5191" />
 			<numweights value="1196" />
 			<averageweight value="3.8679" />
 			</ratings>

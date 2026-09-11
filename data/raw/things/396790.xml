@@ -30,7 +30,7 @@ Players earn victory points by developing their networks, building and powering 
 										      	               				<yearpublished value="2023" />
 						               				<minplayers value="1" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="297">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="299">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="8" />
@@ -39,21 +39,21 @@ Players earn victory points by developing their networks, building and powering 
 				</results>					
 			
 		<results numplayers="2">		
-					<result value="Best" numvotes="50" />
+					<result value="Best" numvotes="51" />
 					<result value="Recommended" numvotes="131" />
 					<result value="Not Recommended" numvotes="26" />
 				</results>					
 			
 		<results numplayers="3">		
 					<result value="Best" numvotes="128" />
-					<result value="Recommended" numvotes="82" />
+					<result value="Recommended" numvotes="83" />
 					<result value="Not Recommended" numvotes="9" />
 				</results>					
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="88" />
 					<result value="Recommended" numvotes="84" />
-					<result value="Not Recommended" numvotes="33" />
+					<result value="Not Recommended" numvotes="34" />
 				</results>					
 			
 		<results numplayers="4+">		
@@ -634,7 +634,23 @@ Players earn victory points by developing their networks, building and powering 
 			
 
 			
-	
+			<videos total="149">
+						<video id="624519" title="New to BGA - Nucleum - 3 min overview and BGA review " category="review" language="English" link="http://www.youtube.com/watch?v=BBUz6XzQm5I" username="Digital_Board_Gamer" userid="77580" postdate="2026-08-09T22:14:56-05:00" />
+						<video id="614991" title="Nucleum: A Buyer's Guide (Nucleum + All Expansions!)" category="review" language="English" link="http://www.youtube.com/watch?v=PTwB4hCDVgk" username="Faz1224" userid="2532579" postdate="2026-06-07T09:01:39-05:00" />
+						<video id="612367" title="A quick view of Nucleum!" category="review" language="English" link="http://www.youtube.com/watch?v=LFyxBHlGGBk" username="fanlandria" userid="3703221" postdate="2026-05-19T06:58:21-05:00" />
+						<video id="609171" title="10 Plays Nucleum" category="review" language="German" link="http://www.youtube.com/watch?v=dptVI4M6h44" username="Dunnagh" userid="609191" postdate="2026-04-26T04:46:37-05:00" />
+						<video id="608262" title="Booghy plays... Nucleum(w. exp)(2p, Playthrough, Impressions)" category="review" language="English" link="http://www.youtube.com/watch?v=D-EmxZX7PKY" username="bogdani0405" userid="1267302" postdate="2026-04-20T03:12:16-05:00" />
+						<video id="607308" title="Booghy plays... Nucleum Australia(2p, Playthrough, Impressions)" category="review" language="English" link="http://www.youtube.com/watch?v=TFFcouwoOII" username="bogdani0405" userid="1267302" postdate="2026-04-14T12:52:33-05:00" />
+						<video id="603168" title="Unboxing Nucleum" category="unboxing" language="English" link="http://www.youtube.com/watch?v=0cJWGXyH7MU" username="thatboardgamelife" userid="4208912" postdate="2026-03-19T10:05:06-05:00" />
+						<video id="602348" title="Nucleum Gibraltar: Tutorial &amp; Playthrough" category="instructional" language="English" link="http://www.youtube.com/watch?v=5AbOF3kuEX4" username="PaulGrogan" userid="1685" postdate="2026-03-13T15:02:08-05:00" />
+						<video id="600547" title="Нумограй від каналу &quot;Катерина Кордон&quot;" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=1Sv2lUUjryQ" username="punk_rock" userid="2986072" postdate="2026-03-02T12:23:58-06:00" />
+						<video id="593132" title="BigDenoPlays - Nucleum" category="session" language="English" link="http://www.youtube.com/watch?v=S1hIhoSXVOg" username="BigDeno" userid="1669411" postdate="2026-01-18T05:56:51-06:00" />
+						<video id="593007" title="Nucleum Board Game Unboxing &amp; Component Overview" category="unboxing" language="English" link="http://www.youtube.com/watch?v=4ZYCWUxBjCM" username="tabletop_4world" userid="3429899" postdate="2026-01-17T09:51:47-06:00" />
+						<video id="586646" title="NUCLEUM | ¿El nuevo rey de los juegos de construcción de redes? | Análisis y Opinión" category="review" language="Spanish" link="http://www.youtube.com/watch?v=aJaU4Ai2ttk" username="La_Critica_Ludica" userid="2803453" postdate="2025-12-07T07:54:41-06:00" />
+						<video id="572372" title="Hoe speel je Nucleum? (#615): Stoom, stroom en strategie!" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=oYNeLJpCLs8" username="Molotail" userid="958802" postdate="2025-09-17T00:01:02-05:00" />
+						<video id="561622" title="Bob's Nucleum Board Game Review &amp; Giveaway – Massive Game, Major Meltdown" category="review" language="English" link="http://www.youtube.com/watch?v=mtN7OmmIv64" username="rkleopold" userid="63649" postdate="2025-07-05T18:20:59-05:00" />
+						<video id="559720" title="Wahnsinn! Tokenschalen aus Glasdeckel basteln - perfekt für Brettspiele wie für Nukleum" category="other" language="German" link="http://www.youtube.com/watch?v=fPN1m4tn7I8" username="DieHausis" userid="2425988" postdate="2025-06-22T11:39:19-05:00" />
+					</videos>
 
 	
 
@@ -643,24 +659,24 @@ Players earn victory points by developing their networks, building and powering 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="8915" />
-			<average value="8.10988" />
-			<bayesaverage value="7.51306" />
+			<usersrated value="8927" />
+			<average value="8.11051" />
+			<bayesaverage value="7.51421" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="131" bayesaverage="7.51306" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="76" bayesaverage="7.64" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="131" bayesaverage="7.51421" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="76" bayesaverage="7.64097" />
 												</ranks>
 
-			<stddev value="1.28538" />
+			<stddev value="1.28497" />
 			<median value="0" />
-			<owned value="14667" />
-			<trading value="122" />
-			<wanting value="517" />
-			<wishing value="4094" />
-			<numcomments value="1319" />
-			<numweights value="611" />
-			<averageweight value="4.1948" />
+			<owned value="14679" />
+			<trading value="123" />
+			<wanting value="516" />
+			<wishing value="4095" />
+			<numcomments value="1318" />
+			<numweights value="613" />
+			<averageweight value="4.1909" />
 			</ratings>
 								</statistics>
      

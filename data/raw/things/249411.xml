@@ -338,7 +338,23 @@
 			
 
 			
-	
+			<videos total="25">
+						<video id="378967" title="Marcellão Jogos &amp; Algo a Mais... Ep.129 - CUZCO" category="review" language="English" link="http://www.youtube.com/watch?v=1SGao4BMUF8" username="freejones" userid="730523" postdate="2022-05-03T12:44:37-05:00" />
+						<video id="367299" title="Video Review" category="review" language="English" link="http://www.youtube.com/watch?v=WpNOY6Ydyyg" username="marnaudo" userid="266775" postdate="2022-02-19T09:53:34-06:00" />
+						<video id="356374" title="Cuzco - First Impressions!" category="review" language="English" link="http://www.youtube.com/watch?v=tBpOuh13iTM" username="ZValentin" userid="2082778" postdate="2021-12-09T19:38:34-06:00" />
+						<video id="333467" title="Cuzco - Regras e Review" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=w3gwUUjDimg" username="Shinjipen" userid="2356004" postdate="2021-07-10T21:07:15-05:00" />
+						<video id="317404" title="Cuzco Review - Tense, Strategic, Thinky &amp; Too Long For What It Is" category="review" language="English" link="http://www.youtube.com/watch?v=6meoYCe9Y6A" username="BoardGameCo" userid="987813" postdate="2021-04-07T10:14:16-05:00" />
+						<video id="280944" title="Unboxing di Cuzco" category="unboxing" language="Italian" link="http://www.youtube.com/watch?v=cXMXLDyaKTA" username="mdbx" userid="1246925" postdate="2020-09-08T11:57:51-05:00" />
+						<video id="255652" title="Conociendo Cuzco - Zacatrus" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=s4SgYMaKRJE" username="nunovix" userid="1007961" postdate="2020-03-12T05:21:32-05:00" />
+						<video id="246571" title="Jack Explicador - Review" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=MS8H1Bc-pwE" username="JackExplicador" userid="761184" postdate="2020-01-06T09:32:28-06:00" />
+						<video id="241910" title="CUZCO - Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=na5VyBQrXds" username="Meffy" userid="1399213" postdate="2019-11-20T05:12:46-06:00" />
+						<video id="234922" title="Abrimos Cuzco!" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=LSfvob7j_co" username="rewindmasters" userid="1866329" postdate="2019-10-01T17:12:17-05:00" />
+						<video id="234918" title="Jugamos a Cuzco! #1" category="session" language="Spanish" link="http://www.youtube.com/watch?v=jP5Jz_qFLmk" username="rewindmasters" userid="1866329" postdate="2019-10-01T16:57:42-05:00" />
+						<video id="234686" title="Cómo funciona...Cuzco!" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=Ni6G6JHByqc" username="rewindmasters" userid="1866329" postdate="2019-09-30T02:59:37-05:00" />
+						<video id="234586" title="Jugamos a Cuzco! #2" category="session" language="Spanish" link="http://www.youtube.com/watch?v=rqYkhRFUiVo" username="rewindmasters" userid="1866329" postdate="2019-09-29T05:46:19-05:00" />
+						<video id="220981" title="Vídeo reseña Cuzco por El club del dado" category="review" language="Spanish" link="http://www.youtube.com/watch?v=jhWffsTxLTY" username="Hellbrass" userid="434137" postdate="2019-06-07T11:29:24-05:00" />
+						<video id="220851" title="¿Méxica, Tikal o Cuzco?" category="other" language="Spanish" link="http://www.youtube.com/watch?v=tk_uysgydjk" username="Meepletopia" userid="1542271" postdate="2019-06-06T10:20:29-05:00" />
+					</videos>
 
 	
 
@@ -352,16 +368,16 @@
 			<bayesaverage value="6.1412" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2491" bayesaverage="6.1412" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1193" bayesaverage="6.28584" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2492" bayesaverage="6.1412" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1192" bayesaverage="6.28584" />
 												</ranks>
 
 			<stddev value="1.19982" />
 			<median value="0" />
-			<owned value="3266" />
-			<trading value="57" />
-			<wanting value="182" />
-			<wishing value="855" />
+			<owned value="3267" />
+			<trading value="56" />
+			<wanting value="181" />
+			<wishing value="856" />
 			<numcomments value="308" />
 			<numweights value="66" />
 			<averageweight value="2.6515" />

@@ -446,7 +446,23 @@ There is truly a wide range of actions to carry out, and this is without taking 
 			
 
 			
-	
+			<videos total="148">
+						<video id="616072" title="Board Game Gumbo - Playthrough (3p)" category="session" language="English" link="http://www.youtube.com/watch?v=19I_9IzXnao" username="BoardGameGumbo" userid="786127" postdate="2026-06-14T21:12:17-05:00" />
+						<video id="584142" title="Bitoku - Erklärung am Spielabend" category="instructional" language="German" link="http://www.youtube.com/watch?v=3NwWHchat8E" username="brettspielfieber" userid="1952235" postdate="2025-11-21T09:13:51-06:00" />
+						<video id="550225" title="El Bitoku de la caja a tu mesa en pocos minutos con este inserto 3D por Argentino.3D | Devir | PDL" category="review" language="Spanish" link="http://www.youtube.com/watch?v=VcYb0G4FUhM" username="turmoil23" userid="940247" postdate="2025-04-22T15:39:45-05:00" />
+						<video id="541346" title="Yokai Collector Solo Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=-LCPp3y4Wfg" username="BoardGaymesJames" userid="484692" postdate="2025-03-04T07:33:19-06:00" />
+						<video id="499606" title="Bitoku - Unboxing!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=jorGda08s_o" username="ZValentin" userid="2082778" postdate="2024-06-11T14:05:44-05:00" />
+						<video id="497080" title="Bot'a Jogar Bitoku Gameplay (2P) + Review" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=SCWE_cT4zU0" username="Strovik" userid="1528890" postdate="2024-05-25T16:17:33-05:00" />
+						<video id="477100" title="Bitoku | Solo playthrough and final thoughts!" category="other" language="English" link="http://www.youtube.com/watch?v=7mnFdKvlXT4" username="BlueDogBoardGames" userid="2653657" postdate="2024-01-27T11:10:03-06:00" />
+						<video id="475234" title="Bitoku - Review &amp; Round the table discussion" category="review" language="English" link="http://www.youtube.com/watch?v=qDtR-kSea7E" username="PaulGrogan" userid="1685" postdate="2024-01-15T13:13:01-06:00" />
+						<video id="460835" title="Bitoku (Got spirit?)" category="session" language="English" link="http://www.youtube.com/watch?v=haIWOUfF62w" username="ReadySteadyPlay" userid="1411684" postdate="2023-10-10T05:29:28-05:00" />
+						<video id="458803" title="Bitoku - Review S07E23" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=VoCsDwP0uHk" username="fabricio" userid="459058" postdate="2023-09-28T03:57:55-05:00" />
+						<video id="458679" title="Bitoku &amp; Expansion Review - Very Rewarding But Even More Complicated" category="review" language="English" link="http://www.youtube.com/watch?v=020v_4oJk3A" username="BoardGameCo" userid="987813" postdate="2023-09-27T14:00:47-05:00" />
+						<video id="448810" title="Unboxing - Bitoku" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=OgDZm8m4-T4" username="GuuZ" userid="1681427" postdate="2023-07-28T13:09:31-05:00" />
+						<video id="441208" title="Review in russian" category="review" language="Russian" link="http://www.youtube.com/watch?v=0NiS9CSH9RU" username="bregus" userid="33169" postdate="2023-06-09T16:27:40-05:00" />
+						<video id="440377" title="Unboxing Bitoku (No Talking)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=qWtVcMQDnTw" username="nimasdj" userid="2204600" postdate="2023-06-03T23:39:33-05:00" />
+						<video id="436413" title="Unboxing: Bitoku" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=aqrgpwK6VKQ" username="ElJugadorZ" userid="3197855" postdate="2023-05-05T10:41:00-05:00" />
+					</videos>
 
 	
 
@@ -455,13 +471,13 @@ There is truly a wide range of actions to carry out, and this is without taking 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="8160" />
-			<average value="7.76714" />
-			<bayesaverage value="7.19879" />
+			<usersrated value="8166" />
+			<average value="7.76752" />
+			<bayesaverage value="7.19916" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="310" bayesaverage="7.19879" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="199" bayesaverage="7.30036" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="310" bayesaverage="7.19916" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="199" bayesaverage="7.30042" />
 												</ranks>
 
 			<stddev value="1.36452" />
@@ -470,7 +486,7 @@ There is truly a wide range of actions to carry out, and this is without taking 
 			<trading value="211" />
 			<wanting value="304" />
 			<wishing value="3875" />
-			<numcomments value="1330" />
+			<numcomments value="1332" />
 			<numweights value="472" />
 			<averageweight value="3.7669" />
 			</ratings>

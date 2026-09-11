@@ -1,35 +1,39 @@
 {
  "confidence": "high",
- "summary": "This is the definitive Carcassonne collection, bundling the base game with Inns & Cathedrals and Traders & Builders plus a pile of small mini-expansions, so most sessions play like enhanced base Carcassonne with occasional extra rules from a mini-expansion tile mixed in. Turns remain simple tile-and-meeple placement, but the added expansions increase strategic depth (big followers, pigs, trade goods) and can push game length and player count higher than vanilla.",
+ "summary": "Carcassonne Big Box 6 is the classic tile-laying game bundled with its most beloved expansions, so it plays like familiar Carcassonne but with more variety from farmers, traders, rivers, and inns and cathedrals mixed in. It's simple to teach, quick to play, and scales from a light two-player game to a chaotic multiplayer scramble for territory.",
  "praised": [
-  "High-quality all-in-one bundle of essential expansions",
-  "Great value versus buying expansions separately",
-  "Inns & Cathedrals and Traders & Builders meaningfully deepen the base game",
-  "Mini-expansions add welcome variety without much added complexity",
-  "Still easy to teach new players"
+  "easy-to-learn, universally accessible tile-laying",
+  "great expansion content that adds meaningful variety without complexity spikes",
+  "high production value bundling in one box"
  ],
  "criticised": [
-  "Box insert and organization can be poor for the amount of content",
-  "Mixing in too many mini-expansions at once can feel gimmicky or bloated",
-  "Scoring farmers remains fiddly and is a common sticking point for new players",
-  "Some mini-expansions are minor and rarely hit the table"
+  "base game can feel too simple or repetitive for hobbyists",
+  "meeple placement luck of the tile draw can frustrate planners",
+  "farmer scoring can be fiddly and swingy"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial through tile placement and meeple contests"
+  "kind": "tile placement and area majority contests",
+  "detail": "Players place tiles onto a shared, ever-growing map and place meeples to claim roads, cities, cloisters, and fields, directly contesting the same features for majority control. The map is entirely communal while each player's meeples and score are tracked individually."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from completed roads/cities, farms, and whichever mini-expansions are in play, so the winner is usually whoever balances short-term completions with long-term farm/majority control"
+  "why": "Points come from completed roads, cities, cloisters, and farmland, so a winning strategy usually spreads across several of these sources.",
+  "how_you_win": "You win by placing tiles and meeples to complete and control the most valuable roads, cities, cloisters, and fields by game end."
  },
  "similar": [
-  "Carcassonne",
-  "Kingdom Builder",
+  "Kingdomino",
   "Isle of Skye",
   "Karuba",
-  "Suburbia"
+  "Patchwork",
+  "Cascadia"
  ],
- "_fingerprint": "f4b05248e4b068fd",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "96bb6dc688ed4c06",
  "_name": "Carcassonne Big Box 6"
 }

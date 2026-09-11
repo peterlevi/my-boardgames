@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "Alma Mater is a dense engine-builder where you manage two disciples through overlapping worker-placement and tile-drafting systems to grow your school's reputation across four disciplines. It rewards careful long-term planning and combo-building, with turns that can run long as players calculate optimal paths through the tightly interlocking systems.",
+ "confidence": "medium",
+ "summary": "Alma Mater casts players as heads of a Renaissance university competing to recruit professors and students and build prestige across four academic disciplines. It's a dense euro of worker placement and drafting with an engine-building feel, aimed at experienced gamers.",
  "praised": [
-  "Rich, tightly interlocking systems that reward planning and optimization",
-  "High replayability from variable setup and multiple viable strategies",
-  "Satisfying sense of building an efficient engine over the game",
-  "Strong production values and thematic presentation for a euro"
+  "rich thematic integration of academic life",
+  "deep interlocking systems for building an engine",
+  "high replayability from modular setup"
  ],
  "criticised": [
-  "Steep learning curve and rules overhead for new players",
-  "Analysis paralysis potential due to the many interacting decisions",
-  "Downtime between turns in higher player counts",
-  "Theme feels pasted onto what is fundamentally an abstract points-optimization puzzle"
+  "steep learning curve and dense rulebook",
+  "notable downtime in multiplayer games",
+  "iconography and complexity can feel overwhelming"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with some worker-placement blocking"
+  "level": "Medium",
+  "kind": "worker placement and shared market competition",
+  "detail": "Players compete for shared action spaces and a shared pool of students and professors to recruit, but each player's scoring engine and university tableau develops independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from multiple disciplines, student/staff recruitment, prestige tracks, and end-game bonuses simultaneously"
+  "why": "Points accumulate from prestige across all four disciplines, students, staff quality, and end-game bonuses.",
+  "how_you_win": "Build the highest-reputation university by amassing the best students, professors, and bonus achievements across all four disciplines by game's end."
  },
  "similar": [
-  "Tzolk'in: The Mayan Calendar",
-  "Lorenzo il Magnifico",
+  "Lisboa",
+  "Teotihuacan",
+  "Trickerion",
   "The Gallerist",
-  "Grand Austria Hotel",
-  "Teotihuacan: City of Gods"
+  "Tzolk'in"
  ],
- "_fingerprint": "67ac8f0c08041cae",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "706371588ecc5917",
  "_name": "Alma Mater"
 }

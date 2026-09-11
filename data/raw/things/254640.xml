@@ -516,7 +516,23 @@ After eliminating duplicate clues, reveal the remaining clues to the active play
 			
 
 			
-	
+			<videos total="157">
+						<video id="627690" title="Just One Playthrough on Board Game Arena | Hilarious Cooperative Word Game!" category="session" language="English" link="http://www.youtube.com/watch?v=du2z9Wxc-ws" username="program2game" userid="934384" postdate="2026-08-31T08:59:04-05:00" />
+						<video id="615659" title="Reseña + HTP | Mesamórfosis - Just One" category="review" language="Spanish" link="http://www.youtube.com/watch?v=162buK1H8gM" username="Mesamorfosis" userid="3361165" postdate="2026-06-11T13:38:37-05:00" />
+						<video id="611499" title="Uitleg &amp; review door Nox' Spellenzolder." category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=XfjYmlp5Dt8" username="Dharquen" userid="408533" postdate="2026-05-13T03:31:17-05:00" />
+						<video id="610760" title="Just one Spel uitleg" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=Y9qp0BhAg4U" username="bordspelgids" userid="4604598" postdate="2026-05-07T14:32:00-05:00" />
+						<video id="609358" title="I'm Judging Every Game I Own! — Shelfageddon! #1" category="review" language="English" link="http://www.youtube.com/watch?v=ccKgAflebUQ" username="rob2kewl" userid="536700" postdate="2026-04-27T12:15:10-05:00" />
+						<video id="593860" title="Regolamento Just One in un lampo" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=sXiG4vtNW2c" username="CappellaioMoltoMatto" userid="401298" postdate="2026-01-22T15:06:18-06:00" />
+						<video id="590472" title="Just One on New Years Eve" category="session" language="English" link="http://www.youtube.com/watch?v=lerHIT2ShAw" username="Nap16" userid="20104" postdate="2026-01-01T13:25:17-06:00" />
+						<video id="588771" title="The Twelve Games of Giftmas: Just One" category="instructional" language="English" link="http://www.youtube.com/watch?v=Endl0CRHGQU" username="dlgcp" userid="26392" postdate="2025-12-18T12:21:34-06:00" />
+						<video id="565976" title="Speluitleg Just One - Regels (NL/BE)" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=2z7z-0Q44PE" username="Bram Vonck" userid="1869173" postdate="2025-08-07T04:26:59-05:00" />
+						<video id="565975" title="Unboxing Just One - Unboxing (NL/BE)" category="unboxing" language="Dutch" link="http://www.youtube.com/watch?v=JhiROs2Y-Uw" username="Bram Vonck" userid="1869173" postdate="2025-08-07T04:26:27-05:00" />
+						<video id="563855" title="Just One Party Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=LxpqEeCh_Vs" username="davidthedane" userid="2349788" postdate="2025-07-21T18:29:50-05:00" />
+						<video id="555884" title="Just one in under 3 minutes" category="review" language="English" link="http://www.youtube.com/watch?v=5oS0P9YJd_Y" username="J_3MBG" userid="53862" postdate="2025-05-26T14:30:40-05:00" />
+						<video id="540927" title="Огляд від каналу &quot;PRO настілки&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=HU8GORhbH3c" username="punk_rock" userid="2986072" postdate="2025-03-01T14:40:15-06:00" />
+						<video id="533997" title="Just One in Sixty Seconds" category="review" language="English" link="http://www.youtube.com/watch?v=b1hI0BgqgwI" username="Bellman" userid="4712" postdate="2025-01-22T12:23:04-06:00" />
+						<video id="515503" title="How to Play Just One | Board Game Rules &amp; Instructions" category="instructional" language="English" link="http://www.youtube.com/watch?v=sV9TObPdOgA" username="Boardgaimz" userid="4008099" postdate="2024-09-23T07:48:43-05:00" />
+					</videos>
 
 	
 
@@ -525,22 +541,22 @@ After eliminating duplicate clues, reveal the remaining clues to the active play
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="35842" />
-			<average value="7.58812" />
-			<bayesaverage value="7.43573" />
+			<usersrated value="35856" />
+			<average value="7.58799" />
+			<bayesaverage value="7.43563" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="159" bayesaverage="7.43573" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="3" bayesaverage="7.5066" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="159" bayesaverage="7.43563" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="3" bayesaverage="7.50648" />
 												</ranks>
 
-			<stddev value="1.20955" />
+			<stddev value="1.20954" />
 			<median value="0" />
-			<owned value="61832" />
-			<trading value="355" />
-			<wanting value="376" />
-			<wishing value="6224" />
-			<numcomments value="4892" />
+			<owned value="61849" />
+			<trading value="354" />
+			<wanting value="377" />
+			<wishing value="6223" />
+			<numcomments value="4890" />
 			<numweights value="705" />
 			<averageweight value="1.0326" />
 			</ratings>

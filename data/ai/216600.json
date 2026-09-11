@@ -1,32 +1,41 @@
 {
  "confidence": "medium",
- "summary": "A dice-worker-placement game where players race to build factories and complete contracts, rolling and locking dice to trigger card abilities in a light engine-building loop. It's often compared to Machi Koro or Orleans-lite in feel: quick to teach, snowbally, and driven by combo chains rather than deep strategy.",
+ "summary": "Fantastic Factories is a light-to-medium engine-builder where players draft blueprint cards and roll dice to act as workers, assigning them to build factories that generate resources and points. It moves quickly for its genre, playing like a streamlined mashup of worker placement and tableau-building card games.",
  "praised": [
-  "fast-playing and easy to teach for the amount of engine building it offers",
-  "satisfying combo chains from cards interacting with dice workers",
-  "solid solo mode"
+  "Quick, accessible engine-building for the weight class",
+  "Good scaling down to solo play",
+  "Satisfying combo-building as your tableau grows",
+  "Reasonably short playtime for the depth offered"
  ],
  "criticised": [
-  "can feel swingy or snowbally once someone's engine gets going",
-  "art and production seen as budget compared to similar euros",
-  "some find the contract/scoring system fiddly to track"
+  "Can suffer from runaway leader/snowball effect",
+  "Card draw luck affects available blueprints",
+  "Less table interaction than the 'race' framing suggests",
+  "Iconography-heavy cards need reference lookups early on"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "shared market competition, mostly parallel play"
+  "kind": "mostly parallel building with light drafting competition",
+  "detail": "Players build separate factory tableaus and mainly interact by racing to grab the same blueprint cards from a shared market before opponents do. There's little direct conflict once a blueprint is claimed, since production happens independently on each player's own board."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from completed contracts, buildings, and bonus tags, rewarding the fastest, most synergistic factory engine"
+  "why": "Points come from built factories, completed contracts, and end-game bonuses.",
+  "how_you_win": "You win by assembling the most efficient chain of factory cards to fulfill contracts and rack up building bonuses before the game ends."
  },
  "similar": [
+  "Gizmos",
   "Trickerion",
-  "Orléans",
   "Machi Koro",
-  "Grand Austria Hotel",
-  "Coimbra"
+  "Century: Spice Road",
+  "Roll for the Galaxy"
  ],
- "_fingerprint": "63939807d310453b",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "90a8a876bff5a4a3",
  "_name": "Fantastic Factories"
 }

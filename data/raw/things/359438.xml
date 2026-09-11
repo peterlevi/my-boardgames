@@ -26,28 +26,28 @@ And as the combination of company abilities changes each game, there are endless
 										      	               				<yearpublished value="2022" />
 						               				<minplayers value="1" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="119">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="120">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="15" />
 					<result value="Recommended" numvotes="34" />
-					<result value="Not Recommended" numvotes="16" />
+					<result value="Not Recommended" numvotes="17" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="10" />
 					<result value="Recommended" numvotes="55" />
-					<result value="Not Recommended" numvotes="20" />
+					<result value="Not Recommended" numvotes="21" />
 				</results>					
 			
 		<results numplayers="3">		
 					<result value="Best" numvotes="21" />
-					<result value="Recommended" numvotes="54" />
+					<result value="Recommended" numvotes="55" />
 					<result value="Not Recommended" numvotes="4" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="59" />
+					<result value="Best" numvotes="60" />
 					<result value="Recommended" numvotes="17" />
 					<result value="Not Recommended" numvotes="6" />
 				</results>					
@@ -55,7 +55,7 @@ And as the combination of company abilities changes each game, there are endless
 		<results numplayers="4+">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="0" />
-					<result value="Not Recommended" numvotes="36" />
+					<result value="Not Recommended" numvotes="37" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -65,7 +65,7 @@ And as the combination of company abilities changes each game, there are endless
 						               				<minplaytime value="75" />
 						               				<maxplaytime value="150" />
 						               				<minage value="12" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="12">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="13">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
@@ -74,7 +74,7 @@ And as the combination of company abilities changes each game, there are endless
 					<result value="6" numvotes="0" />
 					<result value="8" numvotes="0" />
 					<result value="10" numvotes="1" />
-					<result value="12" numvotes="3" />
+					<result value="12" numvotes="4" />
 					<result value="14" numvotes="8" />
 					<result value="16" numvotes="0" />
 					<result value="18" numvotes="0" />
@@ -438,7 +438,23 @@ And as the combination of company abilities changes each game, there are endless
 			
 
 			
-	
+			<videos total="63">
+						<video id="602785" title="Розпаковка від каналу &quot;Ігровий затишок&quot;" category="unboxing" language="Ukrainian" link="http://www.youtube.com/watch?v=PwW55IOAMX0" username="punk_rock" userid="2986072" postdate="2026-03-16T15:11:52-05:00" />
+						<video id="547444" title="Играем в Skymines. Правила, летсплей и мнения" category="session" language="Russian" link="http://www.youtube.com/watch?v=2uBmfo66wHQ" username="BladeItSelf" userid="775775" postdate="2025-04-07T04:00:41-05:00" />
+						<video id="546209" title="SKYMINES | ¿Merece 8 de puntuación? | Análisis y Opinión" category="review" language="Spanish" link="http://www.youtube.com/watch?v=V-dWHUUR-E4" username="La_Critica_Ludica" userid="2803453" postdate="2025-03-29T13:30:41-05:00" />
+						<video id="532136" title="Skymines Unboxing: A Box Full of Boxes!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=FrbgS9k5U8g" username="Astrotron" userid="3333239" postdate="2025-01-10T12:00:56-06:00" />
+						<video id="490341" title="Skymines A psuper unboxing!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=mOua1cEID68" username="Hagenchuck" userid="2125315" postdate="2024-04-13T12:10:38-05:00" />
+						<video id="474226" title="SKYMINES - Il Mio Parere" category="review" language="Italian" link="http://www.youtube.com/watch?v=wOBm7vAlNIo" username="The Real Oivalf" userid="1084307" postdate="2024-01-08T11:36:31-06:00" />
+						<video id="470048" title="Abrindo: Skymines" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=718g7r81rwg" username="Micaelsousa" userid="790334" postdate="2023-12-06T17:00:57-06:00" />
+						<video id="457691" title="Skymines - Unboxing - After Match" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=xyjR2n2GLMI" username="fabricio" userid="459058" postdate="2023-09-21T13:47:10-05:00" />
+						<video id="457688" title="Skymines - Review S08E15" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=D9PZ4sCgp6o" username="fabricio" userid="459058" postdate="2023-09-21T13:42:24-05:00" />
+						<video id="445326" title="Skymines recension - Brädspelsgeneralen" category="review" language="Swedish" link="http://www.youtube.com/watch?v=_XHhhCFuSWQ" username="BradspelsGeneralen" userid="1634234" postdate="2023-07-08T09:13:05-05:00" />
+						<video id="434211" title="Skymines | pełna rozgrywka solo | zasady gry | automa: Luna " category="session" language="Polish" link="http://www.youtube.com/watch?v=LhmDicalvwE" username="SologramYT" userid="2932035" postdate="2023-04-21T03:31:22-05:00" />
+						<video id="433998" title="[中文字幕]大師經典重生 Skymines天際礦脈 - BG Port How to Play 桌遊講 教桌遊 Ch.28" category="review" language="Chinese" link="http://www.youtube.com/watch?v=QeTTLvMtaUk" username="bgport" userid="1485663" postdate="2023-04-19T21:39:30-05:00" />
+						<video id="432948" title="Skymines - Alexander Pfister - gameplay, zasady, recenzja" category="session" language="Polish" link="http://www.youtube.com/watch?v=iB8mVLsK8dI" username="Barolek88" userid="1489851" postdate="2023-04-12T15:44:57-05:00" />
+						<video id="432806" title="SKYMINES - Uma visão geral das regras do novo Mombasa" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=eZBdLePD-x0" username="emerfob" userid="2126978" postdate="2023-04-11T18:01:24-05:00" />
+						<video id="431840" title="Skymines | Regras e Gameplay" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=FLrq1jaxaEY" username="TORUGO" userid="1169932" postdate="2023-04-05T20:42:20-05:00" />
+					</videos>
 
 	
 
@@ -447,24 +463,24 @@ And as the combination of company abilities changes each game, there are endless
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="3837" />
-			<average value="7.90589" />
-			<bayesaverage value="6.95578" />
+			<usersrated value="3841" />
+			<average value="7.90624" />
+			<bayesaverage value="6.95647" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="559" bayesaverage="6.95578" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="291" bayesaverage="7.14703" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="559" bayesaverage="6.95647" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="289" bayesaverage="7.14772" />
 												</ranks>
 
-			<stddev value="1.24264" />
+			<stddev value="1.24233" />
 			<median value="0" />
-			<owned value="8227" />
-			<trading value="166" />
+			<owned value="8226" />
+			<trading value="165" />
 			<wanting value="295" />
 			<wishing value="1964" />
 			<numcomments value="706" />
-			<numweights value="174" />
-			<averageweight value="3.8966" />
+			<numweights value="175" />
+			<averageweight value="3.8914" />
 			</ratings>
 								</statistics>
      

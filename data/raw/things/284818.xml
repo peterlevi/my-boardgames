@@ -386,7 +386,23 @@ The King calls you again, so it's time to go back to Caylus!
 			
 
 			
-	
+			<videos total="60">
+						<video id="617538" title="Нумограй із двома гравцями від каналу &quot;Ігровий затишок&quot;" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=hxsGu_W_O7Q" username="davose" userid="1472043" postdate="2026-06-25T06:37:33-05:00" />
+						<video id="500098" title="Unboxing Caylus 1303" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=ThcNrDOXI8E" username="zantk" userid="3215970" postdate="2024-06-15T06:46:23-05:00" />
+						<video id="433511" title="Знакомство с игрой" category="review" language="Russian" link="http://www.youtube.com/watch?v=vfwn13LGn8A" username="snowbody" userid="201253" postdate="2023-04-17T01:42:31-05:00" />
+						<video id="402084" title="Παίζουμε Caylus 1303 | House of Nerds" category="session" language="Greek" link="http://www.youtube.com/watch?v=u585zpwiP60" username="Giannis2" userid="1419327" postdate="2022-10-01T06:02:17-05:00" />
+						<video id="402018" title="Caylus 1303 in about 3 minutes" category="review" language="English" link="http://www.youtube.com/watch?v=_vp0bQ8AbGI" username="J_3MBG" userid="53862" postdate="2022-09-30T15:09:58-05:00" />
+						<video id="378429" title="On s'emm... à Caylus, ça tourne mal !" category="humor" language="French" link="http://www.youtube.com/watch?v=WE_bTaXv6WU" username="Triaglon" userid="3040096" postdate="2022-04-29T15:06:37-05:00" />
+						<video id="357141" title="Caylus: 1303 - First Impressions!" category="review" language="English" link="http://www.youtube.com/watch?v=qezkDa1H7Hc" username="ZValentin" userid="2082778" postdate="2021-12-15T21:06:27-06:00" />
+						<video id="356204" title="Unboxing - Caylus 1303" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=D4u-B4t9XMY" username="GuuZ" userid="1681427" postdate="2021-12-08T20:51:26-06:00" />
+						<video id="344849" title="Caylus 1303 - pełna rozgrywka solo | zasady gry" category="other" language="Polish" link="http://www.youtube.com/watch?v=ju4M2wsjZ-0" username="SologramYT" userid="2932035" postdate="2021-09-26T05:49:46-05:00" />
+						<video id="325358" title="Caylus 1303 - How to Play Video by Epitrapaizoume.gr" category="review" language="Greek" link="http://www.youtube.com/watch?v=hZrkfDkHmfU" username="evkefalas" userid="389019" postdate="2021-05-20T08:08:22-05:00" />
+						<video id="325356" title="Caylus 1303 - Unboxing &amp; Impressions by Epitrapaizoume.gr" category="review" language="Greek" link="http://www.youtube.com/watch?v=IYZvBFnUSaA" username="evkefalas" userid="389019" postdate="2021-05-20T08:00:17-05:00" />
+						<video id="324405" title="Uitleg &amp; review door Nox' Spellenzolder." category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=kg6BTxZAGM0" username="Dharquen" userid="408533" postdate="2021-05-15T09:27:12-05:00" />
+						<video id="316603" title="Caylus 1303 Gamesplained - Follow Up" category="review" language="English" link="http://www.youtube.com/watch?v=FY72AmFRaKo" username="The Gamesplainer" userid="1516105" postdate="2021-04-02T23:43:47-05:00" />
+						<video id="309704" title="Würfel &amp; Zucker | Wir zeigen euch: Caylus 1303" category="instructional" language="German" link="http://www.youtube.com/watch?v=A4aVqfN2u7o" username="WuerfelUndZucker" userid="1670080" postdate="2021-02-24T06:41:17-06:00" />
+						<video id="295277" title="Ludochrono - Caylus 1303" category="review" language="French" link="http://www.youtube.com/watch?v=Tt1kJZWoxys" username="loutre_on_fire" userid="1037076" postdate="2020-12-01T09:22:34-06:00" />
+					</videos>
 
 	
 
@@ -395,19 +411,19 @@ The King calls you again, so it's time to go back to Caylus!
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="3833" />
-			<average value="7.39156" />
-			<bayesaverage value="6.64124" />
+			<usersrated value="3834" />
+			<average value="7.39133" />
+			<bayesaverage value="6.64121" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1027" bayesaverage="6.64124" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="581" bayesaverage="6.78318" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1027" bayesaverage="6.64121" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="580" bayesaverage="6.78313" />
 												</ranks>
 
-			<stddev value="1.26943" />
+			<stddev value="1.2695" />
 			<median value="0" />
-			<owned value="7053" />
-			<trading value="227" />
+			<owned value="7051" />
+			<trading value="225" />
 			<wanting value="226" />
 			<wishing value="1238" />
 			<numcomments value="744" />

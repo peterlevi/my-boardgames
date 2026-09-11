@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "London is a tight tableau-builder where you play cards to construct buildings and civic works, then periodically 'run the city' by triggering all your card effects at once for income and resources. The tension comes from balancing expansion against loans and poverty markers, since loans must be repaid and poverty quietly erodes your score.",
+ "summary": "In this streamlined second edition of Martin Wallace's classic, players build up a personal tableau of London cards representing buildings and districts, then periodically 'run the city' to trigger all their cards' income and poverty effects at once. The tension comes from balancing borrowed money and expansion against the poverty you generate, since loans must be repaid before the game ends and unchecked poverty actively hurts you.",
  "praised": [
-  "Elegant, tight design with little downtime and quick turns",
-  "Satisfying engine-building feel without excessive fiddliness",
-  "Strong sense of progression as your city tableau grows",
-  "Good length (60-90 min) for the depth it offers",
-  "Second edition's mix of card actions keeps replayability high with variable setup"
+  "elegant tension between expansion and poverty management",
+  "quick, clean card-drafting gameplay",
+  "streamlined rules compared to the dense original edition",
+  "strong sense of building a personal city identity"
  ],
  "criticised": [
-  "Some feel the poverty/scoring mechanism is abstract and thematically thin",
-  "Card draw and available buildings can create swingy or lucky setups",
-  "Less direct player interaction than some Wallace designs, closer to parallel optimization",
-  "The 'run the city' bookkeeping can slow down with more players",
-  "Some find it a bit dry/mechanical compared to more thematic city builders"
+  "some take-that poverty-dumping cards can feel mean",
+  "limited direct interaction beyond drafting and poverty effects",
+  "can feel like solitaire engine-building between the shared draft moments",
+  "less thematic depth than some city-building peers"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light drafting/take-that from cards"
+  "level": "Medium",
+  "kind": "card drafting with poverty-dumping take-that",
+  "detail": "Players draft from a shared row of cards, competing for the best buildings, and some cards let you dump poverty onto opponents, directly hurting their income; otherwise each player develops their own separate city tableau."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score comes from building values, card bonuses, and end-game scoring cards, offset by poverty accumulated during play"
+  "breadth": "Some",
+  "why": "The winner is whoever ends the game with the most money after repaying all loans, balancing income against accumulated poverty.",
+  "how_you_win": "You win by building an efficient income-generating tableau, managing poverty, and repaying your loans while ending with more cash than opponents."
  },
  "similar": [
   "Brass: Birmingham",
-  "Le Havre",
-  "Concordia",
-  "Great Western Trail",
-  "Wallenstein"
+  "Race for the Galaxy",
+  "San Juan",
+  "Glory to Rome",
+  "Coup"
  ],
- "_fingerprint": "0e77355cd69069d7",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "5b8a9f3b9e600d43",
  "_name": "London (Second Edition)"
 }

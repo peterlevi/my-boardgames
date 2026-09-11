@@ -1,34 +1,41 @@
 {
- "confidence": "high",
- "summary": "18Chesapeake is a well-regarded entry point into the 18xx series, offering the genre's core stock-and-rail mechanics (share manipulation, route building, train runs) in a shorter, more accessible package than heavyweight titles like 1830 or 1817. Play revolves around bidding for private companies, floating and running public railroads, and navigating the tension between maximizing personal share value and steering a company you may not fully control.",
+ "confidence": "medium",
+ "summary": "18Chesapeake is designed as a friendlier, faster on-ramp into the 18xx genre, trimming playtime to around 2.5-3.5 hours while keeping the core stock-and-operate loop intact. It's generally seen as a solid teaching game for the family, with a simplified private company structure compared to older titles like 1830.",
  "praised": [
-  "Excellent 'gateway' 18xx design that's faster and less punishing than classic entries in the series",
-  "Clean, well-tuned map and share mechanics that preserve genuine 18xx decision-making",
-  "President/minority-shareholder tension creates real tension without excessive complexity",
-  "Scales well and plays in a more manageable 2.5-4 hours"
+  "more approachable length and complexity for an 18xx title",
+  "good as a first 18xx game for newcomers",
+  "retains meaningful stock and route decisions without excessive fiddliness",
+  "clean production and map design"
  ],
  "criticised": [
-  "Still intimidating and opaque for true newcomers to the genre despite being 'lighter'",
-  "Heavy reliance on stock market math and spreadsheet-like optimization can feel dry",
-  "Downtime between turns in higher player counts",
-  "Less depth/crunch than the series' heavier titles, which some veteran 18xx players find less satisfying"
+  "less depth than flagship titles like 1830 or 1846 for experienced 18xx players",
+  "some feel it's a bit too streamlined once you know the genre",
+  "still requires learning unfamiliar 18xx conventions",
+  "niche appeal outside train-game enthusiasts"
  ],
  "interaction": {
   "level": "High",
-  "kind": "share manipulation, route/track blocking, and economic competition for control of companies"
+  "kind": "stock manipulation and route competition",
+  "detail": "As in other 18xx games, players buy and sell shares in shared public companies, directly affecting each other's holdings and who controls the presidency, while operating rounds compete for the same track connections and revenue on one shared map."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "the winner is whoever ends with the most personal cash plus share value, driven almost entirely by railroad operations and stock manipulation"
+  "why": "the player with the greatest personal net worth of cash and shares at game end wins",
+  "how_you_win": "you win by building and running profitable railroad routes through companies you control and by buying and selling stock at the right moments"
  },
  "similar": [
   "1830: Railways & Robber Barons",
   "1846: The Race for the Midwest",
-  "18Ohio",
-  "1817",
-  "Age of Steam"
+  "Ticket to Ride",
+  "Age of Steam",
+  "1817"
  ],
- "_fingerprint": "667e56abb3eb90f8",
+ "teachers": [
+  "Heavy Cardboard",
+  "Watch It Played",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "a09e2ec95e8adf54",
  "_name": "18Chesapeake"
 }

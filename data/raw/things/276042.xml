@@ -360,7 +360,23 @@ The game ends as soon as someone finishes their pyramid, then all players score 
 			
 
 			
-	
+			<videos total="56">
+						<video id="617230" title="Regles completes en 4min!" category="instructional" language="French" link="http://www.youtube.com/watch?v=mbaRUWwONKQ" username="NoiramB" userid="2801510" postdate="2026-06-22T16:32:28-05:00" />
+						<video id="556101" title="Conociendo Conspiracy: Abyss Universe" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=EVSrpbQTZE8" username="GrooveJohn" userid="4041758" postdate="2025-05-27T14:18:21-05:00" />
+						<video id="522656" title="CONSPIRACY - Brettspiel - Regeln &amp; Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=86VVnuCzOZo" username="Geekpunkt" userid="3167273" postdate="2024-11-04T11:22:29-06:00" />
+						<video id="516638" title="How to play Conspiracy: Abyss Universe - board game rules" category="instructional" language="English" link="http://www.youtube.com/watch?v=8YN3OK7Zp4I" username="Spacebase" userid="3221918" postdate="2024-09-29T14:43:28-05:00" />
+						<video id="516636" title="Conspiracy: Abyss Universe - My Short Review" category="review" language="English" link="http://www.youtube.com/watch?v=eELnJX7SB1s" username="Spacebase" userid="3221918" postdate="2024-09-29T14:41:27-05:00" />
+						<video id="511871" title=" The Purge: #4586 Conspiracy: Abyss Universe: The head of the table is before you" category="review" language="English" link="http://www.youtube.com/watch?v=2reT8W0EZbA" username="william4192" userid="296644" postdate="2024-08-30T10:24:58-05:00" />
+						<video id="509911" title="Abyss: Verschwörung (Grimspire) - grafisch genial und spielerisch am liebsten zu Zweit!" category="review" language="German" link="http://www.youtube.com/watch?v=uN-klQReHoI" username="Spieleblog" userid="190316" postdate="2024-08-20T09:25:38-05:00" />
+						<video id="493107" title="Abyss conspiracy playthrough " category="other" language="Greek" link="http://www.youtube.com/watch?v=2u35dfL-UsE" username="smpeter" userid="1095050" postdate="2024-04-30T07:37:59-05:00" />
+						<video id="493087" title="Review " category="review" language="Greek" link="http://www.youtube.com/watch?v=VSvi3K_NBjU" username="smpeter" userid="1095050" postdate="2024-04-30T05:30:48-05:00" />
+						<video id="483575" title="Conspiracy: Abyss Universe - Unboxing!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=1wr1eZBt-uA" username="ZValentin" userid="2082778" postdate="2024-02-28T14:36:07-06:00" />
+						<video id="483574" title="Conspiracy: Abyss Universe - Try Before You Buy &amp; BGA Playthrough!" category="session" language="English" link="http://www.youtube.com/watch?v=mDRBUfiy4ZA" username="ZValentin" userid="2082778" postdate="2024-02-28T14:34:11-06:00" />
+						<video id="462791" title="ПОВЕЛИТЕЛИ БЕЗДНЫ (CONSPIRACY: ABYSS UNIVERSE) – играем в настольную игру вдвоём @theboardgames" category="session" language="Russian" link="http://www.youtube.com/watch?v=QLy_ZYedT2w" username="Hint666" userid="3512570" postdate="2023-10-22T15:12:53-05:00" />
+						<video id="459784" title="Jouer a Conspiracy sur BGA." category="instructional" language="French" link="http://www.youtube.com/watch?v=5YCoZPv3V7k" username="Armicwan" userid="2854581" postdate="2023-10-03T04:38:56-05:00" />
+						<video id="443573" title="Abyss Conspiracy - Spiel - WATN DAT? - Brettspiel Teddy - Board Games ?" category="review" language="German" link="http://www.youtube.com/watch?v=rIGL2Wd1vg8" username="BrettSpielTeddy" userid="2423700" postdate="2023-06-25T16:04:19-05:00" />
+						<video id="420599" title="Conspiracy: Abyss Universe de Bombyx" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=GPcA9Cl03AE" username="eldoclogan" userid="265577" postdate="2023-01-27T19:55:22-06:00" />
+					</videos>
 
 	
 
@@ -374,8 +390,8 @@ The game ends as soon as someone finishes their pyramid, then all players score 
 			<bayesaverage value="6.5179" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1302" bayesaverage="6.5179" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="341" bayesaverage="6.65545" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1304" bayesaverage="6.5179" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="340" bayesaverage="6.65545" />
 												</ranks>
 
 			<stddev value="1.1592" />
@@ -383,7 +399,7 @@ The game ends as soon as someone finishes their pyramid, then all players score 
 			<owned value="6736" />
 			<trading value="111" />
 			<wanting value="99" />
-			<wishing value="768" />
+			<wishing value="769" />
 			<numcomments value="657" />
 			<numweights value="127" />
 			<averageweight value="1.7953" />

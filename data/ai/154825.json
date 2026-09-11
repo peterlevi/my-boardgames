@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "Arkwright is a dense economic simulation where you run parallel factories, balance worker wages against machine costs, and set your own prices while watching demand and competitors' output ripple through a shared market. It plays more like optimizing a spreadsheet than a typical Euro, with almost every turn a multi-variable calculation rather than a simple placement.",
+ "confidence": "medium",
+ "summary": "A brutally heavy economic simulation of the Industrial Revolution where you run factories, set your own prices, manage supply and demand, and try to grow the value of your own shares while workers and machines slowly replace each other. It's a dense, spreadsheet-like game that rewards careful market reading over flashy plays.",
  "praised": [
-  "Remarkably deep and internally consistent economic simulation (supply, demand, pricing, wages, tech all interact logically)",
-  "Strong sense of building and optimizing a real business over time",
-  "High replayability from variable setup and modular industries",
-  "Rewards long-term planning and efficiency tuning"
+  "deep, rewarding economic simulation with real supply/demand dynamics",
+  "strong sense of building and optimizing a business over time",
+  "unique share-value win condition instead of raw points"
  ],
  "criticised": [
-  "Extremely steep learning curve and rulebook, even by heavy-Euro standards",
-  "Very long playtime (often exceeding the printed 4 hours with new players)",
-  "Heavy bookkeeping and fiddly tracking can feel like homework",
-  "Low direct player interaction — mostly parallel optimization rather than confrontation"
+  "extremely steep learning curve and long playtime",
+  "heavy bookkeeping and fiddly market tracking",
+  "not forgiving of mistakes, can feel punishing for new players",
+  "niche appeal, not a game for casual groups"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "shared market and demand pools with indirect price competition, mostly parallel factory-building"
+  "level": "Medium",
+  "kind": "market competition and pricing pressure",
+  "detail": "Players compete on a shared market for selling goods, where undercutting others' prices or flooding demand affects everyone's sales, but each player's factories, workers, and share portfolio are managed on their own board. The interaction is economic and indirect rather than direct conflict."
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Some",
-  "why": "the winner is whoever builds the most valuable block of their own company shares, driven by efficient production, pricing, and reinvestment rather than accumulating varied point sources"
+  "breadth": "Focused",
+  "why": "The game is won on the value of your own share holdings rather than a broad mix of point sources.",
+  "how_you_win": "You win by growing your factories' output and efficiency to drive up your share price, then holding the most valuable block of shares at game end."
  },
  "similar": [
-  "Container",
-  "Chicago Express",
-  "Food Chain Magnate",
   "Brass: Birmingham",
-  "Age of Steam"
+  "Age of Steam",
+  "El Grande",
+  "Container",
+  "Le Havre"
  ],
- "_fingerprint": "58583d4ba059c803",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "76e69836a0ffa1c2",
  "_name": "Arkwright"
 }

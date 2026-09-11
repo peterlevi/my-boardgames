@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "A dense, engine-building worker-placement game where you send caravans out along three tracks (land, water, sky) while drafting dice as workers with escalating restrictions. It's a tight, crunchy puzzle with a strong solo mode, but sessions run long and the rules overhead is significant for new players.",
+ "summary": "Wayfarers of the South Tigris has players sending caravans of worker-dice out from Baghdad to explore land, water, and sky tiles, racing to fill in a shared modular map before returning home to report findings. It's a mid-weight exploration and set-collection game with light worker-placement-with-dice-workers mechanics, played mostly on your own tableau with the occasional bump into rivals over map tiles.",
  "praised": [
-  "Gorgeous, evocative art and production quality",
-  "Rich, interlocking scoring paths that reward planning",
-  "Strong, well-tuned solo automa",
-  "Satisfying puzzle of optimizing dice-worker placement and caravan upgrades"
+  "clever dice-as-workers exploration mechanic",
+  "attractive, tactile modular map that grows during play",
+  "smooth engine with satisfying tableau development",
+  "good mix of planning and light tactics without excessive downtime"
  ],
  "criticised": [
-  "Steep rules overhead and long teach for new players",
-  "Can suffer from analysis paralysis due to many simultaneous scoring avenues",
-  "Some randomness from dice rolls feels at odds with the game's otherwise heavy strategy",
-  "Playtime can drag, especially at higher player counts"
+  "can feel somewhat solitaire/parallel with limited direct interaction",
+  "some rules overhead for a mid-weight game",
+  "map tile luck can favor some players",
+  "mechanically similar to the designers' other games, so less novel for series fans"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "area majority and race-style tile/track claiming with light blocking"
+  "level": "Low",
+  "kind": "mostly parallel play with light competition for map tiles",
+  "detail": "Players mostly develop their own caravan and score their own tableau of tags and journal entries; the main shared element is the modular map, where claiming a tile or route can deny it to opponents, but there is no direct conflict or negotiation."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory comes from balancing mapping progress (land/water/sky), guild influence, noble inspiration, and caravan upgrades rather than any single dominant strategy"
+  "why": "Victory points come from mapped land, water, and sky tiles, journal entries, and end-game bonuses, so no single strategy dominates scoring.",
+  "how_you_win": "You win by efficiently exploring and mapping more territory than your rivals while completing journal and bonus objectives that add up to the highest total score."
  },
  "similar": [
-  "Raiders of the North Sea",
-  "Explorers of the North Sea",
   "Architects of the West Kingdom",
-  "Trekking the National Parks",
-  "Lost Ruins of Arnak"
+  "Rajas of the Ganges",
+  "Great Western Trail",
+  "The Isle of Cats",
+  "Barrage"
  ],
- "_fingerprint": "b5ebbc7a9c5fc2d4",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "e4bb5e96aba75e3b",
  "_name": "Wayfarers of the South Tigris"
 }

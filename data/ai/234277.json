@@ -1,36 +1,39 @@
 {
  "confidence": "high",
- "summary": "Nusfjord is a lighter, faster Uwe Rosenberg game than his usual epics, with players placing three workers to gather resources, build tiles, and complete contracts to score points while occasionally cooperating on shared buildings that benefit everyone who invests. It plays tight and interactive for a Rosenberg title thanks to few worker-placement spots, but still delivers his signature engine-building satisfaction in under half the time of Agricola or Caverna.",
+ "summary": "A lighter, more accessible worker-placement game from Uwe Rosenberg set in a Norwegian fishing village, where players claim buildings and turn order slots to grow a small economic engine. It's a gentler on-ramp into his style compared to Agricola or Le Havre, with less punishing resource pressure.",
  "praised": [
-  "Much shorter playtime than typical Rosenberg games while keeping engine-building depth",
-  "Elegant, clean production with nice wooden ship/building pieces",
-  "Communal buildings mechanic adds a novel cooperative-competitive twist",
-  "Good entry point into Rosenberg-style worker placement for newer gamers",
-  "Scales well and plays briskly even at higher player counts"
+  "accessible entry point into Rosenberg-style worker placement",
+  "beautiful, evocative board and building tiles",
+  "clean, quick-to-learn economic engine"
  ],
  "criticised": [
-  "Feels thin and less satisfying than Agricola/Caverna to Rosenberg veterans",
-  "Limited worker placement spots create heavy blocking, which can frustrate some players",
-  "Contracts/scoring can feel a bit swingy or luck-dependent on card draws",
-  "Less thematic immersion than his farming games",
-  "Solo/automa mode considered mediocre compared to standalone solo games"
+  "shallower and less tense than Rosenberg's heavier titles",
+  "can feel a bit dry or repetitive for the asking price/complexity",
+  "building tile draws add some luck to available strategies"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial over limited worker-placement spots, plus shared investment in communal buildings"
+  "kind": "worker placement blocking via claim-action turn order",
+  "detail": "Players compete for the same limited worker-placement spots and buildings, with a turn-order-claiming mechanism meaning earlier turns cost more, directly affecting who gets first pick. Beyond that shared board, each player builds their own private village and resource engine."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from completed contracts, buildings, ships, herring house tiles, and gold, so the winner is decided by whichever engine converts resources into the most diverse scoring bonuses"
+  "breadth": "Some",
+  "why": "Final scoring converts remaining money and a few building bonuses into victory points, so overall wealth largely decides the winner.",
+  "how_you_win": "You win by running the most profitable fishing and building economy, ending the game with the most money and building value."
  },
  "similar": [
   "Agricola",
-  "Caverna",
   "Le Havre",
-  "Ora et Labora",
-  "The Castles of Burgundy"
+  "A Feast for Odin",
+  "Caverna: The Cave Farmers",
+  "Fields of Arle"
  ],
- "_fingerprint": "5a4082ff9703aead",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "6f2344935e2569c8",
  "_name": "Nusfjord"
 }

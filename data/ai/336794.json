@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "In a frantic real-time phase, players scramble to slap spaceship tiles onto their board before the timer runs out, then fly the resulting ramshackle ship through a gauntlet of card-driven hazards that can rip off engines, cargo, and crew. It's a gleefully chaotic, often hilarious game about building something under pressure and watching it (and your plans) fall apart.",
+ "summary": "A chaotic real-time game where you first scramble to slap together a spaceship from randomly drawn tiles under a running timer, then fly it through a gauntlet of meteors, pirates, and disasters hoping the shoddy build holds together. It's equal parts building-phase panic and flight-phase schadenfreude as ships lose engines, cargo, and crew piece by piece.",
  "praised": [
-  "unique frantic real-time building phase",
-  "hilarious, memorable disaster stories",
-  "great tension between greed (more cargo) and safety (more armor)",
-  "second edition streamlines rules and components nicely"
+  "hilarious, high-energy real-time building phase",
+  "huge replayability from random tiles and event decks",
+  "tension between greedy building and safe building",
+  "great for groups who enjoy laughing at their own disasters"
  ],
  "criticised": [
-  "real-time building can stress out slower or younger players",
-  "luck of the draw on hazard cards can feel unfair",
-  "one player can spiral into a hopeless wreck with little to do",
-  "expansions needed for full variety"
+  "heavy luck in what tiles you draw and what events hit",
+  "real-time segment stresses out some players",
+  "a ship can be crippled early with little to be done about it",
+  "less satisfying for players who want tight strategic control"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "shared component scrambling and race-based positional jockeying"
+  "level": "High",
+  "kind": "shared tile pool scramble plus open conflict in flight",
+  "detail": "During building, everyone grabs from the same public pool of tiles in real time, so speed and spatial awareness directly cost opponents pieces they wanted. During flight, players share the same event deck and can end up firing on or colliding with each other's ships, with the board state (position on the track) fully shared and visible."
  },
  "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Some",
-  "why": "final credits from delivered goods minus penalties for lost parts/crew determine the winner, with bonus credits for finishing position"
+  "breadth": "Focused",
+  "why": "Credits earned from deliveries and survival bonuses, minus penalties for lost components and crew, decide the winner.",
+  "how_you_win": "You build a ship greedy enough to carry valuable cargo but sturdy enough to survive the flight, then cash in deliveries while losing less than your rivals to disasters."
  },
  "similar": [
+  "Space Alert",
+  "Merchants & Marauders",
   "Roll for the Galaxy",
-  "Escape: The Curse of the Temple",
-  "Alhambra",
-  "Flamme Rouge",
-  "Galaxy Trucker (original edition)"
+  "Cosmic Encounter",
+  "Flotilla"
  ],
- "_fingerprint": "70e927ee8408825c",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "a228f3eb3bc17a57",
  "_name": "Galaxy Trucker (Second Edition)"
 }

@@ -70,6 +70,16 @@ def parse_item(it, is_expansion=False):
     categories = links(it, "boardgamecategory")
     families = links(it, "boardgamefamily")
     designers = links(it, "boardgamedesigner")
+    # BGG returns a mixed bag; instructional videos are the teaching ones, and
+    # English first since that is what this collection wants.
+    videos = []
+    for v in it.findall("videos/video"):
+        if v.get("category") != "instructional":
+            continue
+        videos.append({"title": v.get("title"), "link": v.get("link"),
+                       "who": v.get("username"),
+                       "lang": v.get("language")})
+    videos.sort(key=lambda v: v["lang"] != "English")
     # On an expansion's page the boardgameexpansion link is inbound and names
     # the base game; on a base game it is outbound and names the expansions.
     expands = [l.get("id") for l in it.findall("link")
@@ -94,7 +104,8 @@ def parse_item(it, is_expansion=False):
         minplaytime=num(attr(it, "minplaytime"), int),
         maxplaytime=num(attr(it, "maxplaytime"), int),
         mechanics=mechanics, categories=categories, families=families,
-        designers=designers, traits=traits.of(mechanics),
+        designers=designers, traits=traits.of(mechanics), videos=videos[:3],
+        image=(it.findtext("image") or "").strip() or None,
         interaction=level, interaction_shared=shared,
         poll=poll,
     )

@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Mottainai is a tight, cutthroat card game where every card in your hand is simultaneously a potential task, material, or work, forcing constant hard choices about what to sacrifice for what. Games are short but tense, since the follow mechanic means your opponents often benefit from the action you choose to take, so timing and reading the table matter as much as your own plan.",
+ "summary": "Mottainai is a fast, clever card game from the designer of Glory to Rome, where every card can be used as an action, a resource, or a building material depending on how you play it. It rewards tight tactical thinking about how your discarded actions help the next player, creating a tense push-pull rhythm in a very short playtime.",
  "praised": [
-  "Incredible depth and replayability packed into a small deck and quick playtime",
-  "Every card being usable in multiple ways creates constant meaningful decisions",
-  "Tight, elegant design typical of Carl Chudyk (Innovation, Glory to Rome)",
-  "Fast setup and teardown, good for repeated plays in one sitting"
+  "elegant multi-use card design",
+  "tight, replayable 20-30 minute experience",
+  "rewards clever tactical sequencing"
  ],
  "criticised": [
-  "Steep learning curve and unintuitive rules text that make teaching it hard",
-  "Can feel fiddly or 'crunchy' for such a short, small game",
-  "Some multi-use card text is dense and requires reference/cheat sheets",
-  "Two-player experience is considered weaker than with more players"
+  "rules can be confusing to first-time players",
+  "iconography-heavy cards are a barrier to entry",
+  "some feel it lacks the depth of Glory to Rome"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "follow/role-selection interaction where your chosen action lets others act too"
+  "level": "Medium",
+  "kind": "following and resource denial",
+  "detail": "Players choose an action for everyone to follow, meaning your choices directly enable or restrict what opponents can do next turn, while each player still maintains their own private tableau of materials and works."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "Winning comes down to efficiently completing high-value works while managing scarce materials, so a well-timed focused engine beats spreading effort thin"
+  "why": "The game ends when someone completes their personal victory condition (filling their needs) rather than a points count",
+  "how_you_win": "You efficiently gather materials and complete works to satisfy your character's specific completion requirement before anyone else does."
  },
  "similar": [
   "Glory to Rome",
-  "Innovation",
   "San Juan",
-  "Race for the Galaxy",
-  "Res Arcana"
+  "Innovation",
+  "Res Arcana",
+  "Fivecard"
  ],
- "_fingerprint": "12df0e58882b7eb2",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "cac61c9a40057754",
  "_name": "Mottainai"
 }

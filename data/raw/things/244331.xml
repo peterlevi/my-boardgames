@@ -352,7 +352,23 @@ The game is played over two phases (the exploration phase followed by the settle
 			
 
 			
-	
+			<videos total="72">
+						<video id="461297" title="Blue Lagoon Final Thoughts" category="session" language="English" link="http://www.youtube.com/watch?v=eF0LYeWr4xM" username="ReadySteadyPlay" userid="1411684" postdate="2023-10-12T15:39:02-05:00" />
+						<video id="456096" title="Jogos &amp; Algo a Mais... Ep.188 - BLUE LAGOON" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=CiA6IfqsdeU" username="freejones" userid="730523" postdate="2023-09-11T08:56:02-05:00" />
+						<video id="429738" title="Unboxing: Blue Lagoon" category="unboxing" language="English" link="http://www.youtube.com/watch?v=PuEMD_fxCtc" username="Kardkid" userid="1650482" postdate="2023-03-23T17:11:28-05:00" />
+						<video id="415979" title="Hra v kocke" category="instructional" language="Slovak" link="http://www.youtube.com/watch?v=neKl2z9-qrk" username="LeDock" userid="2825645" postdate="2022-12-30T09:47:29-06:00" />
+						<video id="395193" title="Blue Lagoon - ASMR Board Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=wik7IKy3CtE" username="ibiliss" userid="1854607" postdate="2022-08-21T01:54:15-05:00" />
+						<video id="394540" title="Blue Lagoon - 3-Minute Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=2-M_hgqGwgc" username="TheFamilyMeeple" userid="2419723" postdate="2022-08-16T09:16:08-05:00" />
+						<video id="390758" title="Blue Lagoon (Grok Games) Como Jogar - Casa NERD lol" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=9VHoACCcnUo" username="RSanzzio" userid="713978" postdate="2022-07-19T21:53:26-05:00" />
+						<video id="386141" title="Blue Lagoon Review - Blue Orange Games" category="review" language="English" link="http://www.youtube.com/watch?v=KQ8Pg7wJi24" username="AnthonyM123" userid="544202" postdate="2022-06-18T19:47:23-05:00" />
+						<video id="385566" title="Blue Lagoon Playthrough - Blue Orange Games" category="session" language="English" link="http://www.youtube.com/watch?v=iNeHLO9mBew" username="AnthonyM123" userid="544202" postdate="2022-06-14T13:57:13-05:00" />
+						<video id="376360" title="Blue Lagoon - Como Jogar" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=mnK2cn0CwCE" username="Romir" userid="9484" postdate="2022-04-16T11:03:02-05:00" />
+						<video id="371791" title="Blue Lagoon - Unboxing" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=wSPFcny4j2o" username="Romir" userid="9484" postdate="2022-03-18T11:41:39-05:00" />
+						<video id="369590" title="Blue Lagoon Unboxing - Blue Orange Games" category="unboxing" language="English" link="http://www.youtube.com/watch?v=nIbwGqouo80" username="AnthonyM123" userid="544202" postdate="2022-03-05T21:49:21-06:00" />
+						<video id="362720" title="Blue lagoon es blu lagun?" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=hgZklKcGw0U" username="ElpitufoDV" userid="2500487" postdate="2022-01-24T14:28:54-06:00" />
+						<video id="342598" title="Blue Lagoon Review" category="review" language="English" link="http://www.youtube.com/watch?v=ltWpq17m_G0" username="program2game" userid="934384" postdate="2021-09-12T10:47:07-05:00" />
+						<video id="336473" title="Blue Lagoon Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=c9roXtDeQIo" username="program2game" userid="934384" postdate="2021-08-02T08:51:47-05:00" />
+					</videos>
 
 	
 
@@ -361,23 +377,23 @@ The game is played over two phases (the exploration phase followed by the settle
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="5905" />
-			<average value="7.20187" />
-			<bayesaverage value="6.69854" />
+			<usersrated value="5907" />
+			<average value="7.20222" />
+			<bayesaverage value="6.69893" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="926" bayesaverage="6.69854" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="30" bayesaverage="7.03323" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="216" bayesaverage="6.81964" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="925" bayesaverage="6.69893" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="30" bayesaverage="7.03312" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="215" bayesaverage="6.8196" />
 												</ranks>
 
-			<stddev value="1.1666" />
+			<stddev value="1.167" />
 			<median value="0" />
-			<owned value="8245" />
-			<trading value="228" />
+			<owned value="8248" />
+			<trading value="230" />
 			<wanting value="295" />
-			<wishing value="2281" />
-			<numcomments value="1328" />
+			<wishing value="2279" />
+			<numcomments value="1329" />
 			<numweights value="172" />
 			<averageweight value="2.0407" />
 			</ratings>

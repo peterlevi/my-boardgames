@@ -356,7 +356,23 @@ Unlock Achievements and, above all, make sure you have the most points at the en
 			
 
 			
-	
+			<videos total="126">
+						<video id="580974" title="Szybka Wrzutka - Khora" category="review" language="Polish" link="http://www.youtube.com/watch?v=PpJIL4PKuS4" username="SMGP Kosci" userid="1684808" postdate="2025-11-04T10:38:39-06:00" />
+						<video id="564843" title="Khora: Rise of an Empire - Unboxing!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=UehCYf0ABGE" username="ZValentin" userid="2082778" postdate="2025-07-28T19:57:36-05:00" />
+						<video id="564842" title="Khora: Rise of an Empire - First Impression Review!" category="review" language="English" link="http://www.youtube.com/watch?v=MAjmad9LCCk" username="ZValentin" userid="2082778" postdate="2025-07-28T19:56:28-05:00" />
+						<video id="545123" title="Відеоправила від Kilogames" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=E7NEolrxH6A" username="davose" userid="1472043" postdate="2025-03-24T09:05:23-05:00" />
+						<video id="544316" title="Hoe speel je... Khôra" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=124LJ1C1FNk" username="Elah2810" userid="3768968" postdate="2025-03-19T03:08:07-05:00" />
+						<video id="540232" title="Огляд від каналу &quot;Dice &amp; Cards&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=CXl6HXSMPdQ" username="punk_rock" userid="2986072" postdate="2025-02-25T14:37:57-06:00" />
+						<video id="532004" title="Огляд від WoodCatGames" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=Au6MJA2w-nM" username="davose" userid="1472043" postdate="2025-01-09T12:30:48-06:00" />
+						<video id="530614" title="Швидкий старт від Kilogames" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=2upDO80vJA4" username="davose" userid="1472043" postdate="2024-12-30T12:49:45-06:00" />
+						<video id="510669" title="[La Partie] KHÔRA - L'APOGÉE D'UN EMPIRE | 2 joueurs | IELLO | VOD Live" category="session" language="French" link="http://www.youtube.com/watch?v=emkRbrLdqJM" username="AlecsCVG" userid="2120784" postdate="2024-08-24T06:18:34-05:00" />
+						<video id="505774" title="Короткий огляд від Kilogames" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=hJoOB0_53iY" username="punk_rock" userid="2986072" postdate="2024-07-23T17:15:04-05:00" />
+						<video id="497943" title="Огляд від Ігри до столу" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=-YrLOsReGjg" username="Dark_ninja_UA" userid="1541447" postdate="2024-05-31T03:09:10-05:00" />
+						<video id="496198" title="Khora: rise of an Empire Review" category="review" language="English" link="http://www.youtube.com/watch?v=3ponwd63U-A" username="Eezore" userid="3714468" postdate="2024-05-20T15:48:16-05:00" />
+						<video id="483744" title="How to Setup and Play Khora: Rise of an Empire" category="instructional" language="English" link="http://www.youtube.com/watch?v=adXUDl7h-oY" username="Eezore" userid="3714468" postdate="2024-02-29T15:40:14-06:00" />
+						<video id="467023" title="Огляд від Здвинуті кубики" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=B9VsrHcnyfI" username="punk_rock" userid="2986072" postdate="2023-11-18T11:16:42-06:00" />
+						<video id="467022" title="Нумограй від uGames" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=EHZPKu2I-Uo" username="punk_rock" userid="2986072" postdate="2023-11-18T11:15:43-06:00" />
+					</videos>
 
 	
 
@@ -366,17 +382,17 @@ Unlock Achievements and, above all, make sure you have the most points at the en
    		<statistics page="1">
 								<ratings>
 			<usersrated value="4870" />
-			<average value="7.35186" />
-			<bayesaverage value="6.7092" />
+			<average value="7.35192" />
+			<bayesaverage value="6.70924" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="904" bayesaverage="6.7092" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="537" bayesaverage="6.82538" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="904" bayesaverage="6.70924" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="537" bayesaverage="6.82543" />
 												</ranks>
 
-			<stddev value="1.21865" />
+			<stddev value="1.21869" />
 			<median value="0" />
-			<owned value="8080" />
+			<owned value="8084" />
 			<trading value="193" />
 			<wanting value="141" />
 			<wishing value="1360" />

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "A brutally difficult, deeply thematic cooperative survival game where every turn is an agonizing trade-off between exploring, gathering food, building shelter, and resting, all while a deck of events actively works to kill you. Its action-selection system (committing workers before seeing outcomes, then resolving with dice and risky discovery tokens) makes even simple actions feel tense and consequential.",
+ "summary": "A brutally challenging cooperative survival game where shipwrecked players use an action-queue system and scenario-driven event decks to gather food, build shelter, and fend off threats, with a real sense of narrative discovery across scenarios. It's known for being punishing, thematic, and demanding careful long-term resource planning under constant time pressure.",
  "praised": [
-  "Exceptional theme integration where mechanics genuinely simulate desperate survival",
-  "Tense, meaningful decisions every round with real risk of a character dying",
-  "High replayability from modular scenarios, adventure decks, and companion app content",
-  "Strong solo mode that plays two characters"
+  "Deep, tense cooperative survival experience",
+  "Strong thematic immersion and event writing",
+  "High replayability across many scenarios/expansions",
+  "Excellent solo mode"
  ],
  "criticised": [
-  "Steep rulebook and heavy upkeep/bookkeeping each round",
-  "Punishing difficulty and swingy dice/event luck can undo careful planning",
-  "Long setup and playtime, with a slow first game or two while learning",
-  "Some scenarios feel unbalanced or overly harsh compared to others"
+  "Steep learning curve and heavy rulebook",
+  "Can be punishingly difficult, especially early scenarios",
+  "Long setup and playtime",
+  "Alpha-player problem in co-op can dominate decisions"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "cooperative planning and resource allocation, with limited direct interaction beyond assigning shared actions"
+  "kind": "cooperative planning against the game",
+  "detail": "Players jointly manage a shared island map, shared resource pool, and shared threats, deciding together each round how to allocate limited actions; the challenge comes from coordinating against the game system rather than against each other."
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game is won or lost as a team by surviving the scenario's specific objective (e.g., building a shelter, defeating a beast, escaping the island) before morale or health runs out, not by accumulating points"
+  "breadth": "Other",
+  "why": "There's no victory points; success or failure is determined by scenario-specific objectives like survival, discovery, or building requirements",
+  "how_you_win": "Players win by collectively completing the scenario's specific objectives (such as surviving a set number of weeks or discovering an item) before running out of morale or resources."
  },
  "similar": [
-  "Tanares Adventures",
-  "First Martians: Adventures on the Red Planet",
-  "Nemo's War",
+  "Tokaido",
+  "This War of Mine: The Board Game",
   "Trudvang Legends",
-  "This War of Mine: The Board Game"
+  "First Martians",
+  "Sub Terra"
  ],
- "_fingerprint": "ffa29e16a642648a",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "10ee0e6d36fb54e4",
  "_name": "Robinson Crusoe: Adventures on the Cursed Island"
 }

@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Weather Machine is a dense, puzzly Lacerda game about managing a shifting weather board while juggling multiple interlocking engines for research, contracts, and resource conversion. Turns are short and simple in isolation but the game demands constant multi-turn planning since almost every action shifts the weather grid and opens or closes options for everyone.",
+ "summary": "Weather Machine is a dense Vital Lacerda puzzle where players manage overlapping tracks and resource conversions to tune the weather while dodging an escalating side-effect mechanism that threatens to shut down their machine. Turns require careful action-point planning across a personal player board packed with interlocking systems, and the game rewards chaining several actions into a single efficient turn.",
  "praised": [
-  "Elegant, tightly interlocking systems with almost no wasted mechanisms",
-  "The weather-grid 'butterfly effect' mechanic is a genuinely fresh puzzle",
-  "High replayability from modular boards and variable player powers",
-  "Strong table presence and component quality",
-  "Rewards long-term planning and rewards mastery over repeated plays"
+  "intricate, tightly interlocking systems typical of Lacerda designs",
+  "satisfying long-term engine optimization",
+  "beautiful, functional player boards and iconography",
+  "strong sense of progression as your machine becomes more efficient"
  ],
  "criticised": [
-  "Very steep learning curve and rulebook that takes multiple plays to fully click",
-  "Long turns and analysis paralysis, especially at 3-4 players",
-  "Player interaction is indirect, which some find isolating for a game this long",
-  "Iconography and initial setup are intimidating",
-  "High weight can make it a hard sell for the group"
+  "very steep learning curve and long teach",
+  "significant analysis-paralysis risk",
+  "mostly solitaire-feeling turns with limited direct interaction",
+  "high cost and heavy production may be daunting for casual groups"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with indirect competition for shared spaces and the shifting weather board"
+  "kind": "mostly parallel play with shared resource/market competition",
+  "detail": "Each player operates their own machine and board almost independently, with interaction limited to competing for shared market slots, turn order, and end-game scoring positions rather than direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from research tracks, contracts, resource management, and end-game bonuses, so efficient engine-building across several systems decides the winner"
+  "why": "Points come from multiple interlocking tracks (weather effects, contracts, side-effect management, and end-game bonuses), rewarding a well-balanced engine over a single strategy.",
+  "how_you_win": "You win by building the most efficient personal engine, converting resources into completed weather effects and contracts faster and cleaner than your opponents while limiting harmful side effects."
  },
  "similar": [
   "On Mars",
-  "Gaia Project",
-  "The Gallerist",
   "Escape Plan",
-  "Lisboa"
+  "Gaia Project",
+  "Barrage",
+  "Anachrony"
  ],
- "_fingerprint": "221788b67acf5233",
+ "teachers": [
+  "Heavy Cardboard",
+  "Watch It Played",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "95b8c18ffdeca3e4",
  "_name": "Weather Machine"
 }

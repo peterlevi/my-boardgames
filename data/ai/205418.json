@@ -1,33 +1,39 @@
 {
  "confidence": "high",
- "summary": "This is Agricola stripped down to its friendliest form: no vegetables, no stone, no card-driven asymmetry, just a tight loop of grabbing resources, building rooms, plowing and sowing fields, and fencing pastures to feed your growing family each harvest. It plays fast and teaches worker placement and resource-conversion planning without the brutal food-crisis punishment or the overwhelming card deck of the full game.",
+ "summary": "Agricola: Family Edition strips out the occupation and minor improvement cards and softens the food penalties, turning the original's punishing engine puzzle into a gentler, faster farm-building race for newcomers and families. It keeps the worker-placement bones but removes most of the swinginess.",
  "praised": [
-  "Excellent, gentle on-ramp to worker placement and engine-building for newer or younger players",
-  "Fixed round-by-round action reveal removes the deckbuilding/drafting complexity of the original",
-  "Still delivers real tension over feeding your family and satisfying puzzle-like farm optimization",
-  "Fast, consistent 45-minute playtime"
+  "accessible on-ramp to Agricola's farm-building core",
+  "faster, less punishing than the full game",
+  "good teaching tool before moving to the full version"
  ],
  "criticised": [
-  "Feels thin and less replayable for veteran Agricola players once the novelty wears off",
-  "Removing the occupation/minor improvement cards strips out much of the variety and strategic depth fans love",
-  "Some feel it's a stepping stone game you outgrow quickly rather than a destination in its own right"
+  "loses the card-driven variety that gives the original its replay value",
+  "feels thin for experienced euro gamers",
+  "still has worker-placement blocking that can frustrate younger players"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking and action-space denial"
+  "kind": "worker placement blocking, mostly parallel farm boards",
+  "detail": "As in the original, players race for shared action spaces each round while developing separate farm boards, so interaction is indirect and limited to which spaces get claimed first."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from a spread of farm categories (fields, pastures, animals, house size/type, family size) so the winner is whoever balances growth across categories rather than maxing one"
+  "breadth": "Some",
+  "why": "Points come from a handful of fixed farm-development categories without the added card-based scoring of the full game.",
+  "how_you_win": "End the game with the most developed, well-rounded farm judged across fields, pastures, animals and rooms."
  },
  "similar": [
   "Agricola",
-  "Agricola: All Creatures Big and Small",
   "Caverna",
-  "Le Havre",
-  "Fields of Arle"
+  "Catan",
+  "Ticket to Ride",
+  "Stone Age"
  ],
- "_fingerprint": "2817739ff50d4694",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "7cdceadff8dc11b2",
  "_name": "Agricola: Family Edition"
 }

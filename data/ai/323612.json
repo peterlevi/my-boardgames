@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "Bitoku is a dense hand-management and worker-placement engine-builder where you send dice-workers into forest regions to unlock actions, build structures, and grow a hand of yōkai cards that combo together; turns are short but each one matters, and the tableau grows into a satisfying engine over the game's two hours. It rewards planning a route through several scoring paths (structures, crystals, mitama tracks, set collection) rather than one dominant strategy.",
+ "confidence": "medium",
+ "summary": "Bitoku is a hand-management and worker-placement engine builder where players place spirit cards to gather resources and unlock abilities on a shared board, building toward multiple possible paths to victory. It's a fairly heavy, fiddly euro with strong production values and a lot of small interlocking bonuses to track.",
  "praised": [
-  "Rich, tightly interlocking engine-building with a strong sense of progression each round",
-  "Beautiful, thematic art and production quality",
-  "Multiple viable paths to victory that reward long-term planning",
-  "Good solo mode"
+  "Satisfying engine building with multiple viable strategies",
+  "Attractive art and high production quality",
+  "Good solo mode for a game of this complexity"
  ],
  "criticised": [
-  "Steep rules overhead and long first-play teach relative to the payoff",
-  "Significant analysis paralysis, especially with 4 players",
-  "Iconography-heavy cards can be hard to parse early on",
-  "Player interaction is fairly limited/indirect for a 120-minute game"
+  "Fiddly bookkeeping with many small bonuses and exceptions to track",
+  "Dry, mechanical feel despite the fantasy theme",
+  "Rules overhead can slow down first plays significantly"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "area denial on worker placement spots, mostly parallel engine-building"
+  "kind": "mostly parallel play with some area majority",
+  "detail": "Most of a player's engine — hand of yōkai cards, resources, and abilities — is private and built up largely independently of opponents. Interaction comes mainly from competing for shared worker-placement spots and area-majority scoring on the shared board rather than direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score is an accumulation across structures, crystals, mitamas, sets, and end-game bonuses, so efficient engine-building across several tracks decides the winner rather than any single dominant path"
+  "why": "Points accumulate from resource collection, area majority, card sets, and end-game bonuses, so a winning engine typically combines several scoring paths rather than one.",
+  "how_you_win": "You win by building the most efficient engine of yōkai and pilgrims, converting resources into area influence and end-game bonuses faster than your opponents."
  },
  "similar": [
   "Res Arcana",
-  "Tzolk'in: The Mayan Calendar",
   "Everdell",
-  "Carnegie",
-  "Anachrony"
+  "Architects of the West Kingdom",
+  "Trickerion: Legends of Illusion",
+  "Tekhenu: Obelisk of the Sun"
  ],
- "_fingerprint": "5af8ba5a572bfd00",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "b418abae61dd64da",
  "_name": "Bitoku"
 }

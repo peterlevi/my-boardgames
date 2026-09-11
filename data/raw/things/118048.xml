@@ -32,16 +32,16 @@ The winner at the end of the game is the player with the most victory points.
 										      	               				<yearpublished value="2012" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="2" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="258">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="259">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="27" />
-					<result value="Not Recommended" numvotes="180" />
+					<result value="Not Recommended" numvotes="181" />
 				</results>					
 			
 		<results numplayers="2">		
-					<result value="Best" numvotes="243" />
+					<result value="Best" numvotes="244" />
 					<result value="Recommended" numvotes="10" />
 					<result value="Not Recommended" numvotes="0" />
 				</results>					
@@ -49,7 +49,7 @@ The winner at the end of the game is the player with the most victory points.
 		<results numplayers="2+">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="1" />
-					<result value="Not Recommended" numvotes="192" />
+					<result value="Not Recommended" numvotes="193" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -520,7 +520,23 @@ The winner at the end of the game is the player with the most victory points.
 			
 
 			
-	
+			<videos total="157">
+						<video id="614938" title="Mailbag June 05, 2026" category="unboxing" language="English" link="http://www.youtube.com/watch?v=WfRbU6BNdiI" username="Wingman709" userid="1953255" postdate="2026-06-06T12:01:43-05:00" />
+						<video id="602156" title="Targi" category="review" language="English" link="http://www.youtube.com/watch?v=j0-OLgAhMlA" username="Melaniebarr" userid="1626931" postdate="2026-03-12T12:19:05-05:00" />
+						<video id="601508" title="Targi Playthrough - Playing for Second" category="session" language="English" link="http://www.youtube.com/watch?v=rLeHQL1wtKo" username="Caligula8" userid="963459" postdate="2026-03-09T06:03:35-05:00" />
+						<video id="596383" title="TARGI - Brettspiel - Regeln &amp; Let's Play - Board Game Arena" category="session" language="German" link="http://www.youtube.com/watch?v=i-Cw4Qa24rs" username="Geekpunkt" userid="3167273" postdate="2026-02-06T12:43:15-06:00" />
+						<video id="590932" title="Trying Targi Solo Mode for the First Time!" category="session" language="English" link="http://www.youtube.com/watch?v=tBpYLP0cnL4" username="Soloroll" userid="3634740" postdate="2026-01-04T14:29:47-06:00" />
+						<video id="577897" title="TUAREG | Cómo se juega | TUTORIAL FÁCIL" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=eZEf-v-8jT4" username="Inesjuegosymas" userid="4208902" postdate="2025-10-20T04:55:11-05:00" />
+						<video id="562027" title="How to Play - Targi" category="instructional" language="English" link="http://www.youtube.com/watch?v=IKM29VMrPr0" username="Boardgaming_Duo" userid="1642463" postdate="2025-07-08T13:57:50-05:00" />
+						<video id="547879" title="Targi 12 years later Review. IT'S GREAAAAAAAAAAAAAAATT!" category="review" language="English" link="http://www.youtube.com/watch?v=DnMp88imNss" username="elwayfan2k" userid="494955" postdate="2025-04-09T20:53:17-05:00" />
+						<video id="544939" title="Targi - schneller Überblick" category="other" language="German" link="http://www.youtube.com/watch?v=XhjByVZRZbE" username="Hawk1982" userid="577830" postdate="2025-03-23T02:14:21-05:00" />
+						<video id="538616" title="Targi Playthrough | Shadow of the Game" category="session" language="English" link="http://www.youtube.com/watch?v=nK-UWlSLJEo" username="ShadowoftheGame" userid="4089225" postdate="2025-02-16T20:18:25-06:00" />
+						<video id="527818" title="Review of Targi, a fantastic two-player only game that packs a big punch for it's small size" category="review" language="English" link="http://www.youtube.com/watch?v=HlIMAkMe0MY" username="TabletopBellhop" userid="45484" postdate="2024-12-06T17:23:01-06:00" />
+						<video id="510909" title="Targi 2-Player Playthrough | Dice Jesters" category="session" language="English" link="http://www.youtube.com/watch?v=Ogo3QN_wXxI" username="DiceJesters" userid="3906726" postdate="2024-08-25T10:22:02-05:00" />
+						<video id="506207" title="Tabletop Gaming Guild Show: Targi Playthrough on Board Game Arena" category="session" language="English" link="http://www.youtube.com/watch?v=T2m1EL9uGic" username="program2game" userid="934384" postdate="2024-07-26T06:43:40-05:00" />
+						<video id="500095" title="Παίζουμε Τουαρέγκ | House of Nerds" category="session" language="Greek" link="http://www.youtube.com/watch?v=p6cm48mhPl0" username="Giannis2" userid="1419327" postdate="2024-06-15T06:08:22-05:00" />
+						<video id="494123" title="Ryan and Bethany review Targi!" category="review" language="English" link="http://www.youtube.com/watch?v=kwZgilhktRg" username="skaanimal22" userid="818026" postdate="2024-05-06T18:07:04-05:00" />
+					</videos>
 
 	
 
@@ -529,22 +545,22 @@ The winner at the end of the game is the player with the most victory points.
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="27061" />
-			<average value="7.5847" />
-			<bayesaverage value="7.39868" />
+			<usersrated value="27066" />
+			<average value="7.58469" />
+			<bayesaverage value="7.39876" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="177" bayesaverage="7.39868" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="144" bayesaverage="7.42872" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="177" bayesaverage="7.39876" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="144" bayesaverage="7.42884" />
 												</ranks>
 
-			<stddev value="1.11794" />
+			<stddev value="1.11791" />
 			<median value="0" />
-			<owned value="44809" />
-			<trading value="528" />
-			<wanting value="787" />
-			<wishing value="6332" />
-			<numcomments value="4347" />
+			<owned value="44819" />
+			<trading value="527" />
+			<wanting value="788" />
+			<wishing value="6337" />
+			<numcomments value="4348" />
 			<numweights value="780" />
 			<averageweight value="2.3423" />
 			</ratings>

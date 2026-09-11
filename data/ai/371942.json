@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "A tight, dice-driven worker placement game where the numbers you roll dictate which actions you can take and how strong they are, with a central tug-of-war track for the shrine and moon-viewing bonuses driving tense positioning. It rewards efficient engine-building across several resource tracks (wisdom, honor tiles, cards) rather than any single dominant strategy, and plays fast for its weight.",
+ "summary": "The White Castle is a mid-weight worker-placement game set in feudal Japan, where players roll and place worker dice to gather resources, advance along tracks, and meld cards into combos, all while racing to be first through key milestones. It plays briskly for its depth, with tension coming from contested worker-placement spots and a shared area-movement track around the castle.",
  "praised": [
-  "Elegant dice-as-workers mechanism where die value and color both matter",
-  "High player interaction via the shared influence track despite being a euro",
-  "Fast playtime relative to its strategic depth",
-  "Beautiful production and Japanese-castle theme integration",
-  "Multiple viable paths to victory (cards, tiles, dice sets)"
+  "clean, elegant integration of dice-as-workers with card melding",
+  "quick turns and low downtime for the genre",
+  "attractive, thematic production",
+  "good tension from limited worker-placement spots and race elements"
  ],
  "criticised": [
-  "Dice luck can swing which actions are available on a given turn",
-  "Rulebook/iconography has a learning curve up front",
-  "Some feel the theme is pasted onto a fairly abstract euro engine",
-  "Solo mode is decent but noticeably weaker than multiplayer"
+  "dice-roll randomness can frustrate planning",
+  "scoring can feel a bit fiddly to track",
+  "less thematic depth once the mechanisms are learned",
+  "worker-placement conflicts can occasionally lock a player out of a needed action"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial on the shared track and action spaces"
+  "kind": "worker placement blocking and area-movement race",
+  "detail": "Players compete for the same limited worker-placement spaces each round and race along a shared circular track around the castle, which can block or slow opponents, while resource and card development otherwise sit on each player's own tableau."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from combining honor tiles, card sets, temple/shrine track position, and end-game bonuses, so the winner is usually whoever built the most efficient multi-track engine."
+  "why": "Final score combines court influence, resource-management bonuses, card-melding sets, and end-game track positions.",
+  "how_you_win": "You win by splaying and melding cards for combo bonuses, timing your worker placements to out-race rivals around the castle track, and converting resources into influence points more efficiently than the table."
  },
  "similar": [
-  "The Red Cathedral",
-  "Tzolk'in: The Mayan Calendar",
+  "Tekhenu: Obelisk of the Sun",
+  "Ark Nova",
   "Trickerion",
-  "Barrage",
-  "Coimbra"
+  "Barony",
+  "Teotihuacan: City of Gods"
  ],
- "_fingerprint": "27a7816f1cd3ee39",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames",
+  "Before You Play"
+ ],
+ "_fingerprint": "cdb1d62ad4ad421b",
  "_name": "The White Castle"
 }

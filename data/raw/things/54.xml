@@ -543,7 +543,23 @@ Sequel:
 			
 
 			
-	
+			<videos total="96">
+						<video id="626358" title="Do you see that?!? Tikal Game Play" category="session" language="English" link="http://www.youtube.com/watch?v=BSRPx3FKPC0" username="sine_square_x" userid="709600" postdate="2026-08-22T02:14:59-05:00" />
+						<video id="622663" title="I love Tikal" category="other" language="English" link="http://www.youtube.com/watch?v=Skbom1cf2E0" username="joeyj1220" userid="343482" postdate="2026-07-28T10:25:17-05:00" />
+						<video id="620289" title="Tikal - First Play Review" category="review" language="English" link="http://www.youtube.com/watch?v=WffkQr_sUDg" username="HappyHexagon" userid="315890" postdate="2026-07-13T06:30:44-05:00" />
+						<video id="576026" title="Let's Play for 4! Explore the pyramids and collect treasures in the jungle! [Kubikini]" category="session" language="Russian" link="http://www.youtube.com/watch?v=_NkTXbTgwE0" username="reeboohin" userid="329613" postdate="2025-10-08T13:06:06-05:00" />
+						<video id="546695" title="Aprende a jugar a Tikal" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=Je18uPUshg4" username="Tak30" userid="1890318" postdate="2025-04-01T16:03:30-05:00" />
+						<video id="532460" title="Tikal - schneller Überblick" category="other" language="German" link="http://www.youtube.com/watch?v=3g50zy9VuUw" username="Hawk1982" userid="577830" postdate="2025-01-13T01:43:11-06:00" />
+						<video id="521713" title="Tikal Regeln Anleitung Brettspiel - Spiel des Jahres 1999 + Neuauflage" category="instructional" language="German" link="http://www.youtube.com/watch?v=OmttELJCljQ" username="Brettspiel Guru" userid="1959498" postdate="2024-10-29T12:21:08-05:00" />
+						<video id="520700" title="Tikal - Regras e Gameplay" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=mLpQ3WFzuBo" username="Tankbr" userid="1077155" postdate="2024-10-23T08:03:00-05:00" />
+						<video id="512649" title="Tikal Review - Board Game Hot Takes Podcast" category="review" language="English" link="http://www.youtube.com/watch?v=t8XLIVo48mE" username="Denga" userid="1723329" postdate="2024-09-04T17:22:32-05:00" />
+						<video id="498711" title="Tikal - First Impressions!" category="review" language="English" link="http://www.youtube.com/watch?v=BfQR7Awaj8E" username="ZValentin" userid="2082778" postdate="2024-06-05T15:13:43-05:00" />
+						<video id="498710" title="Tikal - Unboxing!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=_G0MfKthkRA" username="ZValentin" userid="2082778" postdate="2024-06-05T15:11:45-05:00" />
+						<video id="446710" title="Dad vs Dad - Tikal" category="review" language="English" link="http://www.youtube.com/watch?v=54c6z819BdY" username="Brezman" userid="777272" postdate="2023-07-16T07:31:28-05:00" />
+						<video id="443463" title="Dad vs Daughter - Tikal - Unboxing the Super Meeple Edition &amp; Component Comparison" category="unboxing" language="English" link="http://www.youtube.com/watch?v=VSuD3-NpK6k" username="Brezman" userid="777272" postdate="2023-06-24T14:30:54-05:00" />
+						<video id="400647" title="Clip Mini Review Tikal Agosto 2022" category="review" language="Spanish" link="http://www.youtube.com/watch?v=ylhwO4cgi_E" username="laestanteria83" userid="1076527" postdate="2022-09-23T14:31:15-05:00" />
+						<video id="397157" title="Tikal, Cuzco, and Mexica - Mask Series Reviews" category="review" language="English" link="http://www.youtube.com/watch?v=hd4iewPi1LQ" username="eNVyBoardGaming" userid="2747219" postdate="2022-09-02T10:43:29-05:00" />
+					</videos>
 
 	
 
@@ -552,22 +568,22 @@ Sequel:
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="21625" />
-			<average value="7.31576" />
-			<bayesaverage value="7.10543" />
+			<usersrated value="21626" />
+			<average value="7.31595" />
+			<bayesaverage value="7.10562" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="390" bayesaverage="7.10543" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="299" bayesaverage="7.13725" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="391" bayesaverage="7.10562" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="300" bayesaverage="7.13745" />
 												</ranks>
 
-			<stddev value="1.19557" />
+			<stddev value="1.19553" />
 			<median value="0" />
-			<owned value="29602" />
-			<trading value="713" />
-			<wanting value="630" />
+			<owned value="29604" />
+			<trading value="712" />
+			<wanting value="629" />
 			<wishing value="3831" />
-			<numcomments value="4862" />
+			<numcomments value="4861" />
 			<numweights value="1603" />
 			<averageweight value="2.7779" />
 			</ratings>

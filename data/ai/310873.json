@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "Carnegie is a dense economic worker-placement game about building an industrial empire, where you retrieve your own workers each round and use movement points to send them along a growing rail/road network to claim increasingly powerful actions. It's a heavier, more efficient descendant of the Age of Industry/Steam lineage, with a strong emphasis on engine timing and tight action economy.",
+ "confidence": "medium",
+ "summary": "Carnegie is a dense economic euro about building an industrial empire across America, mixing action retrieval, network movement, and tech-track progression into a demanding engine-building puzzle. It's a heavier, slower-burn game that rewards efficient long-term planning over reactive tactics.",
  "praised": [
-  "tight, satisfying action-retrieval mechanism",
-  "strong sense of building an efficient personal engine",
-  "good production and thematic integration of movement/network building",
-  "solid solo mode"
+  "satisfying tightly-interlocking economic engine",
+  "strong solo mode",
+  "good thematic tie to industrial expansion history"
  ],
  "criticised": [
-  "steep learning curve and heavy rulebook",
-  "can feel dry/spreadsheet-y for some players",
-  "downtime in higher player counts",
-  "map/network building can feel fiddly at first"
+  "long playtime and heavy rules overhead",
+  "can feel overwhelming or fiddly for newer euro players",
+  "downtime between turns at higher player counts"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "indirect competition for action spaces and routes"
+  "kind": "action retrieval and route competition",
+  "detail": "Players compete for the same map connections and limited actions available each round, so choices about where to expand and which actions to retrieve affect what's left for opponents. The map and action spaces are shared, while each player develops their own economic engine on an individual board."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from buildings, technology, endgame bonuses, and network efficiency all combined"
+  "why": "Points accrue from business development, network expansion, and end-game bonuses across several tracks.",
+  "how_you_win": "You win by building the most efficient economic engine of connections, industries, and technology upgrades to accumulate the most victory points by game end."
  },
  "similar": [
-  "Age of Industry",
   "Brass: Birmingham",
-  "The Gallerist",
+  "Age of Steam",
   "Le Havre",
+  "K2",
   "Barrage"
  ],
- "_fingerprint": "e777ea5af13301e2",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "cf6fb11fa18a9cab",
  "_name": "Carnegie"
 }

@@ -1,35 +1,39 @@
 {
  "confidence": "high",
- "summary": "Biblios is a fast, tight two-stage game: a card-drafting round where you pick up items or gold with a random modifier attached, followed by a bidding round where you spend that gold to win sets of the drafted cards. It plays in well under an hour and hinges on reading which of the five categories are worth fighting for versus conceding.",
+ "summary": "Biblios is a quick, elegant filler about bidding on and drafting cards representing manuscripts, scribes, and resources needed to win five separate scoring categories. Its two-phase structure — a card-passing draft followed by blind auctions — makes for tense, fast decisions with a strong push-your-luck feel.",
  "praised": [
-  "Quick playtime with real depth for its length",
-  "Clever two-phase structure (draft then auction) that keeps every turn meaningful",
-  "Scales well and plays fast at all player counts",
-  "High replayability due to shifting category values and randomized card draws",
-  "Easy to teach and portable/small box"
+  "Fast, elegant design that teaches in minutes",
+  "Clever two-phase structure combining drafting and bidding",
+  "Plays very well at two players and scales cleanly"
  ],
  "criticised": [
-  "Can feel a bit dry or abstract/thematically thin despite the monastery flavor",
-  "Luck of the draw (which cards appear, the coin-flip-style bishop card) can swing outcomes",
-  "Two-player experience is considered the strongest, with some feeling it's less interesting at 4",
-  "Not much room for meaningful player interaction beyond bidding"
+  "Significant luck from the initial card reveal and God's Favor phase",
+  "Low strategic depth compared to heavier auction games",
+  "Can feel too random for players wanting more control"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "Auction/bidding with turn-order pressure over shared card pool"
+  "kind": "blind bidding and drafting",
+  "detail": "Players bid against each other for the same cards during the market phase and compete directly for majority control in each of the five categories. The card marketplace and gold reserves are shared/visible state, while each player's collected cards and coins form their own hidden holdings until scoring."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from winning majorities across five separately-valued categories, so the winner is whoever best balances drafting and bidding across multiple fronts rather than one dominant strategy"
+  "breadth": "Some",
+  "why": "The winner is decided by who holds the majority in the most of five categories (illuminators, scribes, manuscripts, scrolls, supplies), so category control matters more than raw point totals.",
+  "how_you_win": "You win by securing majority holdings in more of the five card categories than any other player, using careful bidding and drafting to outmaneuver rivals."
  },
  "similar": [
-  "Ra",
   "For Sale",
+  "Ra",
   "Fresh Fish",
-  "Coloretto",
-  "High Society"
+  "Medici",
+  "Modern Art"
  ],
- "_fingerprint": "09f092d3ec16456d",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "e023ecdf62aabc38",
  "_name": "Biblios"
 }

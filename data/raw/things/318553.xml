@@ -292,7 +292,23 @@ As in the original game, you win this race for wealth and fame if you are the fi
 			
 
 			
-	
+			<videos total="47">
+						<video id="580923" title="Szybka Wrzutka - Rajas of the Ganges: The Dice Charmers" category="review" language="Polish" link="http://www.youtube.com/watch?v=k1TBn3jtR4A" username="SMGP Kosci" userid="1684808" postdate="2025-11-04T08:35:44-06:00" />
+						<video id="532656" title="{ Règles Et Partie } ON JOUE À RAJAS OF THE GANGES THE DICE CHARMERS | Jeu De Société | Huch !" category="session" language="French" link="http://www.youtube.com/watch?v=PAEQnwq1EmQ" username="Nicolas21992" userid="3179281" postdate="2025-01-14T04:59:41-06:00" />
+						<video id="442322" title="Règles et partie à 2 j. - Entre joueurs" category="session" language="French" link="http://www.youtube.com/watch?v=CZ922vH2bhY" username="servalwolverine" userid="1976235" postdate="2023-06-16T12:25:26-05:00" />
+						<video id="432918" title="Rajas of the Ganges:  The Dice Charmers - First Impressions! " category="review" language="English" link="http://www.youtube.com/watch?v=wo3FC_DsD6c" username="ZValentin" userid="2082778" postdate="2023-04-12T12:13:59-05:00" />
+						<video id="432917" title="Rajas of the Ganges:  The Dice Charmers - Unboxing! " category="unboxing" language="English" link="http://www.youtube.com/watch?v=F68QMMpSjto" username="ZValentin" userid="2082778" postdate="2023-04-12T12:11:16-05:00" />
+						<video id="431854" title="Rolling With Two: Rajas of the Ganges: The Dice Charmers" category="review" language="English" link="http://www.youtube.com/watch?v=Y6cUgek4VsU" username="SilvaShado" userid="508855" postdate="2023-04-05T22:16:56-05:00" />
+						<video id="431853" title="Rolling With Reviews: Rajas of the Ganges: The Dice Charmers" category="review" language="English" link="http://www.youtube.com/watch?v=up_DMZ8Fbzs" username="SilvaShado" userid="508855" postdate="2023-04-05T22:15:35-05:00" />
+						<video id="431676" title="Throwing dice!" category="session" language="Russian" link="http://www.youtube.com/watch?v=Oug3rNGTcb0" username="reeboohin" userid="329613" postdate="2023-04-05T08:57:53-05:00" />
+						<video id="427661" title="Deep in India! Best Roll-and-write / Rollandright games" category="session" language="Russian" link="http://www.youtube.com/watch?v=8vZIiJySic4" username="reeboohin" userid="329613" postdate="2023-03-11T12:52:07-06:00" />
+						<video id="420621" title="Hoy Jugamos a Rajas of the Ganges - The Dice Chambers en castellano (Juego de Mesa Roll &amp; Write )" category="session" language="Spanish" link="http://www.youtube.com/watch?v=XZjAN02lDEU" username="elputovader" userid="1196190" postdate="2023-01-28T02:22:52-06:00" />
+						<video id="420620" title="Como se Juega a Rajas of the Ganges - The Dice Chambers en castellano (Juego de Mesa Roll &amp; Write )" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=ytlXkD2o1-c" username="elputovader" userid="1196190" postdate="2023-01-28T02:21:43-06:00" />
+						<video id="387043" title="Rajas of the Ganges: The Dice Charmers - Brettspiel Unboxing (HUCH!)" category="unboxing" language="German" link="http://www.youtube.com/watch?v=9haBpmV-drE" username="Madhunter" userid="1062702" postdate="2022-06-24T08:35:37-05:00" />
+						<video id="374916" title="Reseña Fugaz - Rajas of the Ganges: Roll &amp; Write" category="review" language="Spanish" link="http://www.youtube.com/watch?v=iltxBdUZ9XM" username="frannob85" userid="1171454" postdate="2022-04-06T15:07:32-05:00" />
+						<video id="365356" title="Rajas of the Ganges: The Dice Charmers" category="review" language="English" link="http://www.youtube.com/watch?v=-tPhQVTpw1Q" username="randrac" userid="28944" postdate="2022-02-08T06:54:39-06:00" />
+						<video id="364743" title="Rajas Of The Ganges: The Dice Charmers Gamesplained - Introduction" category="review" language="English" link="http://www.youtube.com/watch?v=Xi2WFoZLFDI" username="The Gamesplainer" userid="1516105" postdate="2022-02-05T00:31:33-06:00" />
+					</videos>
 
 	
 
@@ -306,18 +322,18 @@ As in the original game, you win this race for wealth and fame if you are the fi
 			<bayesaverage value="6.59241" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1127" bayesaverage="6.59241" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="619" bayesaverage="6.74824" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="256" bayesaverage="6.77383" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1128" bayesaverage="6.59241" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="618" bayesaverage="6.74824" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="255" bayesaverage="6.77383" />
 												</ranks>
 
 			<stddev value="1.14058" />
 			<median value="0" />
-			<owned value="6148" />
+			<owned value="6150" />
 			<trading value="116" />
 			<wanting value="93" />
 			<wishing value="674" />
-			<numcomments value="488" />
+			<numcomments value="489" />
 			<numweights value="81" />
 			<averageweight value="2.2716" />
 			</ratings>

@@ -374,7 +374,23 @@ Over three weeks (rounds), players will use their hand of cards, workers, and re
 			
 
 			
-	
+			<videos total="86">
+						<video id="619264" title="Una partita a... Esdra e Neemia" category="session" language="Italian" link="http://www.youtube.com/watch?v=DadhJfE8Oyw" username="Hunters12" userid="2403288" postdate="2026-07-07T05:26:00-05:00" />
+						<video id="612086" title="Solo Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=QHz3fEfkQhM" username="got_koopa" userid="1743848" postdate="2026-05-17T06:44:11-05:00" />
+						<video id="606860" title="Как строился Иерусалим - Обзор настольной игры Эздра и Неемия" category="review" language="Salishan languages" link="http://www.youtube.com/watch?v=OAs6xT9VbBY" username="Geek_Media" userid="2207816" postdate="2026-04-12T02:32:59-05:00" />
+						<video id="597919" title="S3E23 - Ezra and Nehemiah" category="session" language="English" link="http://www.youtube.com/watch?v=Rw-BWlqcbmw" username="Bellissimo" userid="1721069" postdate="2026-02-14T16:13:00-06:00" />
+						<video id="579323" title="Ezra and Nehemiah | Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=Grihb6R2W3Q" username="Northlang" userid="3529823" postdate="2025-10-27T23:50:08-05:00" />
+						<video id="577418" title="8 things I wish I knew before playing Ezra and Nehemiah" category="instructional" language="English" link="http://www.youtube.com/watch?v=28WeNyZA5qg" username="thatboardgamelife" userid="4208912" postdate="2025-10-17T06:57:41-05:00" />
+						<video id="576853" title="Brettspiel Esra und Nehemia Review" category="review" language="German" link="http://www.youtube.com/watch?v=Fow2TyD4ovw" username="CPost" userid="766153" postdate="2025-10-14T02:28:21-05:00" />
+						<video id="569764" title="[PARTIDA|TUTORIAL|OPINIÓN] EZRA AND NEHEMIAH - Uno de los más esperados de 2025" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=eNl0G9baGcA" username="pareja_ludica" userid="3776915" postdate="2025-09-01T11:20:00-05:00" />
+						<video id="557142" title="ESDRA &amp; NEEMIA - Tutorial Gameplay" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=z8LajtzyU1g" username="The Real Oivalf" userid="1084307" postdate="2025-06-04T02:48:23-05:00" />
+						<video id="557140" title="ESDRA &amp; NEEMIA - Il Mio Parere" category="review" language="Italian" link="http://www.youtube.com/watch?v=SwV0iLYBJCQ" username="The Real Oivalf" userid="1084307" postdate="2025-06-04T02:47:35-05:00" />
+						<video id="557037" title="Ezra &amp; Nehemiah Board Game Review" category="review" language="English" link="http://www.youtube.com/watch?v=jDP1ZsIZBzE" username="dkingnu" userid="32736" postdate="2025-06-03T10:01:25-05:00" />
+						<video id="556228" title="[FR] Esdras et Néhémie (1/3) | Ouverture de boîte | Découverte des composants" category="unboxing" language="French" link="http://www.youtube.com/watch?v=0nEJRfVpcM0" username="AlbanSolo" userid="2891226" postdate="2025-05-28T08:48:34-05:00" />
+						<video id="555446" title="Ezra &amp; Nehemiah Unboxing (4K)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=l49TvGFTl_8" username="davidthedane" userid="2349788" postdate="2025-05-23T00:00:12-05:00" />
+						<video id="553585" title="Ezra &amp; Nehemiah - Unboxing &amp; Reboxing - What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=eQWcvjUXsYI" username="broseygames" userid="4181268" postdate="2025-05-11T19:30:42-05:00" />
+						<video id="547960" title="Ezra and Nehemiah - rozgrywka i opinia" category="session" language="Polish" link="http://www.youtube.com/watch?v=3YYidbkyoYw" username="GramZielonymi" userid="3657026" postdate="2025-04-10T11:20:41-05:00" />
+					</videos>
 
 	
 
@@ -383,22 +399,22 @@ Over three weeks (rounds), players will use their hand of cards, workers, and re
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="3577" />
-			<average value="8.12775" />
-			<bayesaverage value="7.04093" />
+			<usersrated value="3584" />
+			<average value="8.1261" />
+			<bayesaverage value="7.04071" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="465" bayesaverage="7.04093" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="235" bayesaverage="7.23473" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="465" bayesaverage="7.04071" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="236" bayesaverage="7.23408" />
 												</ranks>
 
-			<stddev value="1.23495" />
+			<stddev value="1.23774" />
 			<median value="0" />
-			<owned value="7002" />
+			<owned value="7008" />
 			<trading value="54" />
-			<wanting value="353" />
-			<wishing value="2153" />
-			<numcomments value="676" />
+			<wanting value="351" />
+			<wishing value="2154" />
+			<numcomments value="678" />
 			<numweights value="224" />
 			<averageweight value="3.8482" />
 			</ratings>

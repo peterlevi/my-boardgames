@@ -400,7 +400,23 @@ Ora et Labora features two variants: France and Ireland.
 			
 
 			
-	
+			<videos total="56">
+						<video id="610562" title="Unboxing de Ora et Labora" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=qP8OZbArXDE" username="zantk" userid="3215970" postdate="2026-05-06T08:52:21-05:00" />
+						<video id="599491" title="Ora et Labora - Sell It or Save It with John LaRuffa" category="session" language="English" link="http://www.youtube.com/watch?v=boPw4xC7YmE" username="magnus1515" userid="109899" postdate="2026-02-23T05:16:57-06:00" />
+						<video id="567986" title="Ora et Labora Gameplay - Rezá e Trampá" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=HPKCMddjwjk" username="lfigaro" userid="3046229" postdate="2025-08-20T17:00:11-05:00" />
+						<video id="567587" title="ORA ET LABORA | Opinando" category="review" language="Spanish" link="http://www.youtube.com/watch?v=vi7RP_hMAOE" username="rikardus66" userid="2802133" postdate="2025-08-18T01:46:59-05:00" />
+						<video id="558469" title="Ora et Labora (Revisited) - 3p Play-through, &amp; Roundtable Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=xacZ3FQ0hWU" username="eapeas" userid="377742" postdate="2025-06-13T00:07:06-05:00" />
+						<video id="470651" title="Ora et Labora - schneller Überblick" category="other" language="German" link="http://www.youtube.com/watch?v=5Y0lcF-6WY8" username="Hawk1982" userid="577830" postdate="2023-12-10T09:07:29-06:00" />
+						<video id="440545" title="ORA ET LABORA - Cómo se juega - TUTORIAL - Juego de Mesa - unna" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=1yn3vBZnhw8" username="unnasam" userid="1127347" postdate="2023-06-05T11:57:42-05:00" />
+						<video id="386419" title="Ora Et Labora - Playthrough &amp; Review (Uwe Rosenberg Series)" category="review" language="English" link="http://www.youtube.com/watch?v=thUwE5X8gF0" username="BeforeYouPlay" userid="2180342" postdate="2022-06-20T20:45:35-05:00" />
+						<video id="350701" title="Ora et Labora Playthru - Live!" category="session" language="English" link="http://www.youtube.com/watch?v=GXMvGEngb1o" username="Untoldent" userid="599403" postdate="2021-11-02T13:47:28-05:00" />
+						<video id="328943" title="Ora &amp; Labora Playthrough" category="review" language="English" link="http://www.youtube.com/watch?v=brqfUoqzFCU" username="Harrygomez10" userid="1406624" postdate="2021-06-11T07:13:57-05:00" />
+						<video id="316094" title="Ora et Labora - Solo Playthrough" category="review" language="English" link="http://www.youtube.com/watch?v=LnkWZok-KJo" username="slickerdrips" userid="781754" postdate="2021-03-31T12:43:52-05:00" />
+						<video id="298382" title="Secret Mystery Unboxing Reaction: Part 3" category="unboxing" language="English" link="http://www.youtube.com/watch?v=lrZUAb9b72E" username="Untoldent" userid="599403" postdate="2020-12-18T19:15:05-06:00" />
+						<video id="280742" title="Ora et Labora - A Gaming Rules! Review" category="review" language="English" link="http://www.youtube.com/watch?v=uf9flN26kfc" username="PaulGrogan" userid="1685" postdate="2020-09-07T06:56:48-05:00" />
+						<video id="277004" title="Ora et Labora - Solo Playthrough" category="instructional" language="English" link="http://www.youtube.com/watch?v=SQtM_2ysB9Y" username="PaulGrogan" userid="1685" postdate="2020-08-13T14:50:04-05:00" />
+						<video id="276046" title="Ora et Labora - Tutorial &amp; Playthrough" category="instructional" language="English" link="http://www.youtube.com/watch?v=Kp7dC2Gn8b4" username="PaulGrogan" userid="1685" postdate="2020-08-07T18:55:47-05:00" />
+					</videos>
 
 	
 
@@ -409,21 +425,21 @@ Ora et Labora features two variants: France and Ireland.
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="11688" />
-			<average value="7.67388" />
-			<bayesaverage value="7.28539" />
+			<usersrated value="11689" />
+			<average value="7.67389" />
+			<bayesaverage value="7.28543" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="248" bayesaverage="7.28539" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="161" bayesaverage="7.37879" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="248" bayesaverage="7.28543" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="161" bayesaverage="7.37882" />
 												</ranks>
 
-			<stddev value="1.35559" />
+			<stddev value="1.35553" />
 			<median value="0" />
-			<owned value="15884" />
+			<owned value="15886" />
 			<trading value="302" />
-			<wanting value="863" />
-			<wishing value="3630" />
+			<wanting value="862" />
+			<wishing value="3628" />
 			<numcomments value="2208" />
 			<numweights value="704" />
 			<averageweight value="3.8864" />

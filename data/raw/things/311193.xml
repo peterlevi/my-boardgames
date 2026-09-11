@@ -462,7 +462,23 @@ Ship fleets allow for lively trade and the development of new islands in the Old
 			
 
 			
-	
+			<videos total="155">
+						<video id="627241" title="¿A quien le toca? ANNO 1800" category="session" language="Spanish" link="http://www.youtube.com/watch?v=3J5OxjdexQo" username="Luisjoey" userid="169069" postdate="2026-08-28T06:37:58-05:00" />
+						<video id="615087" title="Anno 1800 de Martin Wallace: La Joya Infravalorada que no debió ser Saldada" category="review" language="Spanish" link="http://www.youtube.com/watch?v=F7aqGZN4inM" username="Meffy" userid="1399213" postdate="2026-06-08T06:51:26-05:00" />
+						<video id="599764" title="Anno 1800 The Board Game: A Review for Two" category="review" language="English" link="http://www.youtube.com/watch?v=oRdwl3ZVGR0" username="Gerbanator" userid="1143738" postdate="2026-02-24T15:38:03-06:00" />
+						<video id="596312" title="Anno 1800 The Board Game" category="review" language="English" link="http://www.youtube.com/watch?v=wARlLHH_k1g" username="Melaniebarr" userid="1626931" postdate="2026-02-06T07:56:54-06:00" />
+						<video id="594359" title="Anno 1800" category="review" language="English" link="http://www.youtube.com/watch?v=QxJ--B1D2lw" username="Melaniebarr" userid="1626931" postdate="2026-01-25T13:38:17-06:00" />
+						<video id="581420" title="Anno 1800  наша ДУМКА про гру" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=-BiLX0HphqQ" username="kerl24" userid="2923135" postdate="2025-11-06T07:09:18-06:00" />
+						<video id="570633" title="Anno 1800" category="review" language="Slovak" link="http://www.youtube.com/watch?v=DF-PjGD9i_g" username="dufusok" userid="909953" postdate="2025-09-07T03:29:24-05:00" />
+						<video id="568490" title="Te explico Anno 1800 en 15 Minutos [Cómo se Juega / Tutorial / JcK / Juego de Mesa / Devir]" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=PyxDsfwgCH8" username="JugandoConKetty" userid="120496" postdate="2025-08-24T11:00:02-05:00" />
+						<video id="555822" title="Anno 1800 - Speluitleg &amp; Review - (NL)" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=L8JoAzkATZk" username="Bordspelgeuzen" userid="4179612" postdate="2025-05-26T07:53:45-05:00" />
+						<video id="546004" title="Anno 1800 [JcK Opina / Juego de Mesa / Devir]" category="review" language="Spanish" link="http://www.youtube.com/watch?v=rJ4KIn2mdiU" username="JugandoConKetty" userid="120496" postdate="2025-03-28T10:30:23-05:00" />
+						<video id="543659" title="SEÑORAS MAYORES JUGANDO A...ANNO 1800" category="session" language="Spanish" link="http://www.youtube.com/watch?v=HrivzwtB1xY" username="Julio_Alberto" userid="656618" postdate="2025-03-16T04:11:31-05:00" />
+						<video id="527231" title="Anno 1800 with expansion: Tutorial, Playthrough, &amp; Review" category="review" language="English" link="http://www.youtube.com/watch?v=C72MOaJdZ5E" username="PaulGrogan" userid="1685" postdate="2024-12-03T08:01:55-06:00" />
+						<video id="512045" title="Anno 1800 | Zasady Gry | Wideoinstrukcja" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=8vM7ZXordPQ" username="deshione" userid="3424462" postdate="2024-08-31T17:17:34-05:00" />
+						<video id="510660" title="[La Partie] ANNO 1800 | 2 joueurs | IELLO | VOD Live" category="session" language="French" link="http://www.youtube.com/watch?v=SCQiERV2RL4" username="AlecsCVG" userid="2120784" postdate="2024-08-24T06:18:30-05:00" />
+						<video id="510249" title="ANNO 1800 - Live unboxing" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=0JhdcvObqnc" username="joaojotta" userid="1708586" postdate="2024-08-22T08:19:08-05:00" />
+					</videos>
 
 	
 
@@ -471,24 +487,24 @@ Ship fleets allow for lively trade and the development of new islands in the Old
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="9164" />
-			<average value="7.68957" />
-			<bayesaverage value="7.20742" />
+			<usersrated value="9166" />
+			<average value="7.68941" />
+			<bayesaverage value="7.2074" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="300" bayesaverage="7.20742" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="196" bayesaverage="7.30772" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="301" bayesaverage="7.2074" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="196" bayesaverage="7.30769" />
 												</ranks>
 
-			<stddev value="1.21007" />
+			<stddev value="1.20998" />
 			<median value="0" />
 			<owned value="13591" />
-			<trading value="157" />
-			<wanting value="385" />
-			<wishing value="2860" />
-			<numcomments value="1436" />
-			<numweights value="323" />
-			<averageweight value="3.13" />
+			<trading value="158" />
+			<wanting value="384" />
+			<wishing value="2862" />
+			<numcomments value="1437" />
+			<numweights value="324" />
+			<averageweight value="3.1296" />
 			</ratings>
 								</statistics>
      

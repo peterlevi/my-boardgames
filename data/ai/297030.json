@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "A dense, dial-turning euro where every turn you're juggling which of the sun/shadow/dark zones are active, what your dice-based turn order will be, and which of several long-term engines (temple building, obelisk tiles, gods' favor) to advance. It rewards careful sequencing and planning several rounds ahead more than reacting to opponents.",
+ "summary": "Tekhenu is a dense Tascini/Turczi euro where you rotate a central obelisk to unlock different action spaces and spend dice as workers whose strength grows as you invest in them. Turns are short but every decision ripples across several interlocking subsystems (temple building, gods' favor, monuments), so the game rewards planning several rounds ahead.",
  "praised": [
-  "The rotating obelisk shadow mechanic that constantly reshuffles which actions are available",
-  "Dice-driven turn order as a genuinely interesting risk/planning layer rather than pure luck",
-  "Deep, interlocking systems that reward long-term planning and give strong replayability via variable setup",
-  "Satisfying sense of building an efficient engine across the temple/obelisk/gods tracks"
+  "variety of viable strategies and paths to points",
+  "clever action-wheel/dice-strength mechanism",
+  "strong replayability from variable setup"
  ],
  "criticised": [
-  "Steep rules overhead and long teach for a game that plays fairly abstractly once learned",
-  "Turn order dice can feel swingy or unfair to players who dislike variance affecting planning",
-  "Significant analysis paralysis, especially in the middle game with many viable lines",
-  "Egyptian theme feels pasted on top of what is a very mechanical, abstract euro"
+  "overwhelming rulebook and iconography for a first play",
+  "long, sometimes fiddly turns",
+  "thin theme bolted onto abstract systems"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "action-space blocking and turn-order jockeying, otherwise mostly parallel engine-building"
+  "level": "Medium",
+  "kind": "action-space blocking and worker denial",
+  "detail": "Players compete for limited spaces around the rotating obelisk and can be shut out of an action if someone takes it first, and dice/worker strength is a shared, visible resource others plan around. Most of each player's engine (temple grid, monuments) lives on their own board, so a large share of the state is private."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points accumulate across several parallel systems (temple tiles, obelisk pattern-building, gods' favor tracks) so the winner is usually whoever balances multiple engines rather than maxing one"
+  "why": "Points accumulate from temple tile placement, god favor tracks, monuments, and end-game bonuses, so the winner is whoever builds the most efficient combination rather than maxing one track.",
+  "how_you_win": "You out-engine opponents by chaining action-wheel turns into temple growth, god advancement, and monument completion faster than they can."
  },
  "similar": [
-  "Tzolk'in: The Mayan Calendar",
   "Teotihuacan: City of Gods",
-  "Trismegistus",
+  "Trismegistus: The Great Alchemist",
   "Anachrony",
+  "Tzolk'in: The Mayan Calendar",
   "Newton"
  ],
- "_fingerprint": "a73576b182fa920d",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "406027e9d0729a49",
  "_name": "Tekhenu: Obelisk of the Sun"
 }

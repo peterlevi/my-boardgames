@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "A denser, more restrictive cousin of Agricola and Le Havre where you build out a personal tableau of production buildings on a small hex-based estate, converting raw resources through multi-step chains into high-value goods. The rondel resource system and tight building-placement puzzle create a heavier, more solitaire-feeling optimization game than Rosenberg's other titles, with real tension over land and building slots.",
+ "summary": "A dense Uwe Rosenberg building-and-engine game where players buy hexes, erect production buildings, and chain resource conversions to churn out high-value goods like whiskey, bricks, and relics. It plays like a heavier, more interlocking cousin of Agricola/Le Havre with less randomness and more spatial puzzle-solving about where buildings go.",
  "praised": [
-  "Deep, satisfying production-chain puzzle with many viable strategies (peat/coal vs. grain/livestock economies)",
-  "Rondel mechanism elegantly controls resource availability without upkeep bookkeeping",
-  "High replayability from modular building decks and different starting maps",
-  "Strong sense of building an efficient personal engine"
+  "Deep, satisfying engine-building puzzle",
+  "Strong replayability via the alternate Ireland/religious building sets",
+  "Rewards efficient long-term planning"
  ],
  "criticised": [
-  "Very heavy rules overhead and long teach for new players",
-  "Multiplayer interaction is minimal, mostly a race for tiles/buildings rather than direct engagement",
-  "Analysis paralysis due to the number of building options and long-term planning required",
-  "Can feel dry or overly mechanical/spreadsheet-like compared to more thematic worker placement games"
+  "Long downtime in multiplayer, especially with 4",
+  "Steep learning curve and rulebook complexity",
+  "Can feel solitaire-ish with little direct interaction"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light competition for shared buildings and rondel resources"
+  "kind": "worker placement blocking",
+  "detail": "Players compete for a shared row of action/building spaces so taking one denies it to others that round, but the bulk of the game happens on each player's private board of hexes and buildings. There's no direct attack on opponents' resources or scores."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from a wide mix of buildings constructed, goods produced/converted, and end-game bonuses, rewarding overall economic efficiency rather than any single track"
+  "why": "Final score sums building values, leftover goods, and bonus tiles, rewarding whoever built the most efficient production chain",
+  "how_you_win": "You win by converting cheap raw resources into valuable finished goods and prestigious buildings faster and more efficiently than opponents."
  },
  "similar": [
   "Le Havre",
   "Agricola",
-  "Caverna: The Cave Farmers",
+  "Caverna",
   "A Feast for Odin",
   "Fields of Arle"
  ],
- "_fingerprint": "ee8f0453c3c54705",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "1b45f2e63ef2b7ae",
  "_name": "Ora et Labora"
 }

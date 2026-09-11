@@ -242,7 +242,8 @@ There are a few minor new mechanics. One is the compel effect. This effect is si
 			
 
 			
-	
+			<videos total="0">
+					</videos>
 
 	
 
@@ -261,7 +262,7 @@ There are a few minor new mechanics. One is the compel effect. This effect is si
 
 			<stddev value="1.57308" />
 			<median value="0" />
-			<owned value="1017" />
+			<owned value="1016" />
 			<trading value="27" />
 			<wanting value="46" />
 			<wishing value="135" />

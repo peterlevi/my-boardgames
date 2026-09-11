@@ -1202,7 +1202,23 @@ Part of the Dominion series.
 			
 
 			
-	
+			<videos total="257">
+						<video id="625359" title="Dominion - 4p Play-through by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=42QLYhYcwVo" username="eapeas" userid="377742" postdate="2026-08-15T10:43:02-05:00" />
+						<video id="625131" title="Règles complètes en 3 minutes!" category="instructional" language="French" link="http://www.youtube.com/watch?v=FKgHdQcVobU" username="NoiramB" userid="2801510" postdate="2026-08-13T14:32:22-05:00" />
+						<video id="622960" title="Collapsing Dominion expansions into the original box" category="other" language="English" link="http://www.youtube.com/watch?v=z8GFvG1PWyQ" username="kacoplays" userid="2729997" postdate="2026-07-29T13:45:19-05:00" />
+						<video id="622155" title="Deckbuilding 101" category="review" language="English" link="http://www.youtube.com/watch?v=YpqfQU2qenk" username="DuckRabbitGoose" userid="4667651" postdate="2026-07-25T07:58:20-05:00" />
+						<video id="593542" title="Dominion" category="review" language="English" link="http://www.youtube.com/watch?v=P_fxBt1UglQ" username="Melaniebarr" userid="1626931" postdate="2026-01-20T18:45:57-06:00" />
+						<video id="591816" title="Dominion AAR" category="session" language="English" link="http://www.youtube.com/watch?v=YS5bqsRWdEE" username="Nap16" userid="20104" postdate="2026-01-10T12:56:22-06:00" />
+						<video id="585312" title="2025 Ranking Every Expansion &amp; Choosing Our Favorite Artwork" category="review" language="English" link="http://www.youtube.com/watch?v=UWo4FVIUHKE" username="undiscovered_games" userid="3484540" postdate="2025-11-28T23:11:05-06:00" />
+						<video id="574407" title="Dominion card game. Tutorial in greek" category="review" language="Greek" link="http://www.youtube.com/watch?v=RjlUiF1Fj84" username="nikoskokalas" userid="1262073" postdate="2025-09-29T08:42:07-05:00" />
+						<video id="563424" title="Unboxing and Rules Skim through of Dominion 2nd edition" category="unboxing" language="English" link="http://www.youtube.com/watch?v=rDOehZEc01U" username="thatboardgamelife" userid="4208912" postdate="2025-07-18T15:03:46-05:00" />
+						<video id="561015" title="Templegate Games Makes All the Apps #boardgame #tabletop #dominion" category="review" language="English" link="http://www.youtube.com/watch?v=s9maZgRdvBc" username="gamesandbourbon" userid="1415090" postdate="2025-06-30T13:25:17-05:00" />
+						<video id="552412" title="Unboxing Dominion Big Box - Unboxing (NL/BE)" category="unboxing" language="Dutch" link="http://www.youtube.com/watch?v=sOrTOyhHST4" username="Bram Vonck" userid="1869173" postdate="2025-05-05T01:43:44-05:00" />
+						<video id="542393" title="2 Player Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=sdjSBnqS1M0" username="BoardGaymesJames" userid="484692" postdate="2025-03-09T11:34:57-05:00" />
+						<video id="539914" title="Top 10 Deckbuilder Board Games" category="session" language="English" link="http://www.youtube.com/watch?v=CHtcPCFJVq8" username="randalthompson" userid="663880" postdate="2025-02-23T16:31:34-06:00" />
+						<video id="508511" title="Learn to Play Dominion in 10 Minutes!!" category="instructional" language="English" link="http://www.youtube.com/watch?v=CD1piLLNqNc" username="davidhouck19" userid="2017232" postdate="2024-08-10T08:01:21-05:00" />
+						<video id="508510" title="The Best Way to Play Dominion... and It's Free!!" category="review" language="English" link="http://www.youtube.com/watch?v=kqQttZW4uXE" username="davidhouck19" userid="2017232" postdate="2024-08-10T07:59:51-05:00" />
+					</videos>
 
 	
 
@@ -1211,22 +1227,22 @@ Part of the Dominion series.
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="97352" />
+			<usersrated value="97363" />
 			<average value="7.59726" />
-			<bayesaverage value="7.47304" />
+			<bayesaverage value="7.47302" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="146" bayesaverage="7.47304" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="143" bayesaverage="7.43239" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="146" bayesaverage="7.47302" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="143" bayesaverage="7.43243" />
 												</ranks>
 
-			<stddev value="1.41449" />
+			<stddev value="1.41448" />
 			<median value="0" />
-			<owned value="131711" />
-			<trading value="2118" />
-			<wanting value="664" />
-			<wishing value="10886" />
-			<numcomments value="15889" />
+			<owned value="131734" />
+			<trading value="2120" />
+			<wanting value="665" />
+			<wishing value="10889" />
+			<numcomments value="15892" />
 			<numweights value="5367" />
 			<averageweight value="2.3441" />
 			</ratings>

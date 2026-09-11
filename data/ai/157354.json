@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "Players take turns picking up meeples from a shared board in a Mancala-like sowing action, capturing the last-dropped-on square and its tribe for various effects, then sending their Djinn/Elder meeples off to score at game end. It's a tense spatial puzzle where good squares get sniped constantly and the board shrinks as tiles and camels are removed.",
+ "summary": "Five Tribes is a clever mancala-style worker-placement game where players move meeples already on the board to trigger effects, collect resources, and control tiles and djinns for scoring combos. The Djinns of Naqala expansion adds new djinn cards and a resource-based scoring djinn, deepening the combo potential without changing the core flow.",
  "praised": [
-  "clever mancala-style pick-up-and-deliver mechanic",
-  "tight, tense turn order with lots of blocking",
-  "high player interaction without direct conflict",
-  "beautiful production and components",
-  "quick to teach relative to its depth"
+  "Unique mancala-based worker movement mechanic",
+  "Tight, tense auction for turn order",
+  "Rich combo potential between tiles, resources, and djinns",
+  "Beautiful production and satisfying meeple manipulation"
  ],
  "criticised": [
-  "can have significant downtime as the board narrows late game",
-  "strong 'take that' feel can frustrate newer players",
-  "some combos (assassins, viziers) can feel swingy or snowbally",
-  "two-player feels quite different/less interactive than 3-4"
+  "Can suffer from analysis paralysis, especially with more players",
+  "Auction-based turn order can feel punishing to less experienced players",
+  "Late-game moves are heavily constrained by board state",
+  "Take-that elements (assassins) can feel harsh to newer players"
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking, denial, and direct meeple/tile removal"
+  "kind": "blocking and area denial on a shared board",
+  "detail": "All meeples and tiles sit on one shared board, and every move changes what's available to the next player, so positioning and denying good moves to opponents is central. Players also bid against each other for turn order and can directly attack opponents' meeples with assassins."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from tribe combos, resources, gold, and end-game bonus cards, so the winner is whoever chains the most efficient multi-source engine"
+  "why": "Points come from gold, resource sets, tile control, and djinn abilities that combo together.",
+  "how_you_win": "You win by cleverly moving meeples to trigger tile and djinn effects, accumulating the most gold and points by the end of the game."
  },
  "similar": [
-  "Century: Spice Road",
-  "Yellow & Yangtze",
-  "Trajan",
   "The Isle of Cats",
-  "Lords of Waterdeep"
+  "Yspahan",
+  "Trekking Through History",
+  "Raiders of the North Sea",
+  "Lords of Vegas"
  ],
- "_fingerprint": "9cf6dc5427810133",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "0d34e56745430484",
  "_name": "Five Tribes: The Djinns of Naqala"
 }

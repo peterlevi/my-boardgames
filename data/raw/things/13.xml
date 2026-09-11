@@ -2654,7 +2654,23 @@ Points are accumulated by building settlements and cities, having the longest ro
 			
 
 			
-	
+			<videos total="532">
+						<video id="626508" title="CATAN en 12 MINUTOS ? - Tutorial Punto de partida " category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=SbsrYf-g_vE" username="puntodepartidacafe" userid="3236542" postdate="2026-08-23T17:50:15-05:00" />
+						<video id="626008" title="Catan destruyendo amistades! ¿A quien le toca? " category="session" language="Spanish" link="http://www.youtube.com/watch?v=TrAcXQE8xEw" username="Luisjoey" userid="169069" postdate="2026-08-20T00:10:39-05:00" />
+						<video id="625021" title="Cum se joaca Catan" category="instructional" language="Romanian" link="http://www.youtube.com/watch?v=aBXUMrH-QDk" username="CristiD" userid="2702130" postdate="2026-08-13T02:29:16-05:00" />
+						<video id="620064" title="White Glove Demo - The Settlers of Catan" category="instructional" language="English" link="http://www.youtube.com/watch?v=0KrsW1ChBYw" username="sine_square_x" userid="709600" postdate="2026-07-11T16:56:35-05:00" />
+						<video id="614722" title="CATAN Rules — but it's a SONG" category="humor" language="English" link="http://www.youtube.com/watch?v=c0WoN0ZA6EU" username="DanielNobrega" userid="529747" postdate="2026-06-04T12:47:20-05:00" />
+						<video id="605779" title="CATAN 6th Edition: Hướng dẫn cách chơi chi tiết siêu phẩm Board Game huyền thoại" category="instructional" language="Vietnamese" link="http://www.youtube.com/watch?v=D-G23iqCROA" username="kboardgamevn" userid="1842339" postdate="2026-04-05T03:10:40-05:00" />
+						<video id="602478" title="▶️ UNBOX 5 BOARD GAME ĐẦU TIÊN LÊN KỆ K BOARD GAME STORE" category="unboxing" language="Vietnamese" link="http://www.youtube.com/watch?v=P5s9lOvaZKY" username="kboardgamevn" userid="1842339" postdate="2026-03-14T09:43:25-05:00" />
+						<video id="600935" title="CATAN: Regras CANTADAS em 4min ?" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=o9IGCwkS8NI" username="DanielNobrega" userid="529747" postdate="2026-03-04T16:35:14-06:00" />
+						<video id="599050" title="I'm Having My One Podcast | Catan Review" category="review" language="English" link="http://www.youtube.com/watch?v=va9kIpwKyCY" username="paul_otter" userid="2800098" postdate="2026-02-20T05:34:53-06:00" />
+						<video id="598268" title="Cómo jugar a Catán—Tutorial y análisis" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=nUbPHPNm9gA" username="Torre_Token" userid="3834177" postdate="2026-02-16T10:50:13-06:00" />
+						<video id="597934" title="What would CATAN look like in pixel art?" category="other" language="English" link="http://www.youtube.com/watch?v=iXXHKzKPEO0" username="JorWat" userid="2447222" postdate="2026-02-14T17:45:14-06:00" />
+						<video id="596173" title="The Catan original paintings used in the creation of the game on public display" category="other" language="English" link="http://www.youtube.com/watch?v=7NU4Ws7J_bQ" username="GameOnArtMuseum" userid="76742" postdate="2026-02-05T09:12:51-06:00" />
+						<video id="594985" title="Carlos Sainz plays Settlers of Catan with friends" category="session" language="English" link="http://www.youtube.com/watch?v=ZW5TCNHUHrc" username="turmoil23" userid="940247" postdate="2026-01-28T21:24:49-06:00" />
+						<video id="594984" title="Pilotos Ferrari jugando #catan ¿conoces otros famosos que jueguen? #williams #formula1 #pdl #f1" category="interview" language="English" link="http://www.youtube.com/watch?v=Y1vs6yoy870" username="turmoil23" userid="940247" postdate="2026-01-28T21:23:05-06:00" />
+						<video id="594078" title="Catan" category="review" language="English" link="http://www.youtube.com/watch?v=5csS7LMh1rA" username="Melaniebarr" userid="1626931" postdate="2026-01-23T16:45:09-06:00" />
+					</videos>
 
 	
 
@@ -2663,25 +2679,25 @@ Points are accumulated by building settlements and cities, having the longest ro
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="144268" />
-			<average value="7.09034" />
-			<bayesaverage value="6.90178" />
+			<usersrated value="144299" />
+			<average value="7.0903" />
+			<bayesaverage value="6.90165" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="626" bayesaverage="6.90178" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="593" bayesaverage="6.77094" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="207" bayesaverage="6.84932" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="626" bayesaverage="6.90165" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="594" bayesaverage="6.77078" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="207" bayesaverage="6.84915" />
 												</ranks>
 
-			<stddev value="1.50662" />
+			<stddev value="1.50671" />
 			<median value="0" />
-			<owned value="244499" />
-			<trading value="2390" />
+			<owned value="244570" />
+			<trading value="2389" />
 			<wanting value="529" />
-			<wishing value="8370" />
-			<numcomments value="24178" />
-			<numweights value="8616" />
-			<averageweight value="2.2808" />
+			<wishing value="8380" />
+			<numcomments value="24182" />
+			<numweights value="8618" />
+			<averageweight value="2.2807" />
 			</ratings>
 								</statistics>
      

@@ -26,7 +26,7 @@ Inventions is a tactical game, but you will do best by building these tactics ar
 										      	               				<yearpublished value="2024" />
 						               				<minplayers value="1" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="147">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="148">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="8" />
@@ -36,18 +36,18 @@ Inventions is a tactical game, but you will do best by building these tactics ar
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="21" />
-					<result value="Recommended" numvotes="60" />
+					<result value="Recommended" numvotes="61" />
 					<result value="Not Recommended" numvotes="22" />
 				</results>					
 			
 		<results numplayers="3">		
 					<result value="Best" numvotes="73" />
-					<result value="Recommended" numvotes="32" />
+					<result value="Recommended" numvotes="33" />
 					<result value="Not Recommended" numvotes="5" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="28" />
+					<result value="Best" numvotes="29" />
 					<result value="Recommended" numvotes="55" />
 					<result value="Not Recommended" numvotes="22" />
 				</results>					
@@ -294,7 +294,23 @@ Inventions is a tactical game, but you will do best by building these tactics ar
 			
 
 			
-	
+			<videos total="77">
+						<video id="622454" title="Inventions Evolution of Ideas - Live Playthrough (Full Gameplay) | Epitrapaizoume.gr" category="session" language="Greek" link="http://www.youtube.com/watch?v=J8MXpEGBG5I" username="evkefalas" userid="389019" postdate="2026-07-27T08:22:36-05:00" />
+						<video id="610644" title="Inventions Evolution of Ideas - How to Play Video by Epitrapaizoume.gr" category="instructional" language="Greek" link="http://www.youtube.com/watch?v=dO1r8h-xWlE" username="evkefalas" userid="389019" postdate="2026-05-06T23:00:46-05:00" />
+						<video id="609188" title="Birthday Re-boxing: Inventions Evolution of Ideas" category="unboxing" language="English" link="http://www.youtube.com/watch?v=vdBGcHDRiN8" username="chesborn" userid="4387202" postdate="2026-04-26T07:15:14-05:00" />
+						<video id="609185" title="Birthday Unboxing: Inventions Evolution of Ideas" category="unboxing" language="English" link="http://www.youtube.com/watch?v=CGZijx6kVgk" username="chesborn" userid="4387202" postdate="2026-04-26T07:00:34-05:00" />
+						<video id="605560" title="[FR] Partie Solo complète" category="session" language="French" link="http://www.youtube.com/watch?v=GwoRWhuF7d8" username="Nelsonox" userid="1177862" postdate="2026-04-03T15:15:56-05:00" />
+						<video id="599586" title="Нумограй від каналу &quot;Катерина Кордон&quot;" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=mKumy4XQUhM" username="punk_rock" userid="2986072" postdate="2026-02-23T14:06:12-06:00" />
+						<video id="595131" title=" BigDenoPlays - Inventions, Evolution of Ideas" category="session" language="English" link="http://www.youtube.com/watch?v=FjHYFfFu8AY" username="BigDeno" userid="1669411" postdate="2026-01-29T18:24:17-06:00" />
+						<video id="580347" title="Inventions: Evolution of Ideas - What's in the Box?" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=Io5NrVfzWfM" username="Lalasupremo" userid="3364906" postdate="2025-11-01T16:25:16-05:00" />
+						<video id="580346" title="Inventions: Evolution of Ideas - Is it worth it? Our Review" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=TwgjMlFcay8" username="Lalasupremo" userid="3364906" postdate="2025-11-01T16:24:32-05:00" />
+						<video id="573840" title="Inventions: Evolution of Ideas | Solo Playthrough" category="review" language="English" link="http://www.youtube.com/watch?v=RlaLAPmVg1w" username="slickerdrips" userid="781754" postdate="2025-09-25T16:14:11-05:00" />
+						<video id="557170" title="Inventions Evolution of ideas : Explication des règles et partie en solo" category="session" language="French" link="http://www.youtube.com/watch?v=e5BJnU-X4C4" username="Ludikovore" userid="1536568" postdate="2025-06-04T04:24:44-05:00" />
+						<video id="539318" title="Inventions: evolution of ideas - gameplay e impressioni (gioco da tavolo ita)" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=mU603J26Eh0" username="Davr87" userid="2798680" postdate="2025-02-20T11:33:43-06:00" />
+						<video id="529182" title="Booghy plays... Inventions(2p, Playthrough, Review)" category="review" language="English" link="http://www.youtube.com/watch?v=s1NkABFQdf8" username="bogdani0405" userid="1267302" postdate="2024-12-17T02:42:25-06:00" />
+						<video id="511985" title="Game in a Nutshell &quot;live teach&quot; - Inventions (How to Play)" category="instructional" language="English" link="http://www.youtube.com/watch?v=CZnArwVvvfs" username="Cardinalle" userid="291773" postdate="2024-08-31T03:43:48-05:00" />
+						<video id="508064" title="Inventions: Evolution of Ideas" category="review" language="German" link="http://www.youtube.com/watch?v=9Tt1YWAY_OQ" username="BrettSpielTeddy" userid="2423700" postdate="2024-08-07T03:00:25-05:00" />
+					</videos>
 
 	
 
@@ -303,22 +319,22 @@ Inventions is a tactical game, but you will do best by building these tactics ar
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="3042" />
-			<average value="7.91321" />
-			<bayesaverage value="6.803" />
+			<usersrated value="3043" />
+			<average value="7.91373" />
+			<bayesaverage value="6.80353" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="757" bayesaverage="6.803" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="397" bayesaverage="6.99601" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="756" bayesaverage="6.80353" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="397" bayesaverage="6.99659" />
 												</ranks>
 
-			<stddev value="1.59831" />
+			<stddev value="1.59836" />
 			<median value="0" />
-			<owned value="6970" />
+			<owned value="6972" />
 			<trading value="89" />
 			<wanting value="255" />
-			<wishing value="2454" />
-			<numcomments value="679" />
+			<wishing value="2452" />
+			<numcomments value="678" />
 			<numweights value="459" />
 			<averageweight value="4.5969" />
 			</ratings>

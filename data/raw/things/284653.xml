@@ -450,7 +450,23 @@ Mind MGMT wins by either collecting twelve recruits or surviving sixteen turns. 
 			
 
 			
-	
+			<videos total="116">
+						<video id="553240" title="Mind MGMT: Casusluk Kutu Oyunu Nasıl Oynanır?" category="instructional" language="Turkish" link="http://www.youtube.com/watch?v=QYgaF3OKVrc" username="ibiliss" userid="1854607" postdate="2025-05-09T08:17:44-05:00" />
+						<video id="531704" title="Правила від Geekach Games" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=cwsZtKig4ao" username="punk_rock" userid="2986072" postdate="2025-01-07T16:26:07-06:00" />
+						<video id="527857" title="Hidden Movement Board Game &quot;Mind MGMT&quot; | 2-Player Playthrough" category="session" language="Japanese" link="http://www.youtube.com/watch?v=w826MvlPwFk" username="JoeAkagi" userid="3692320" postdate="2024-12-07T03:03:30-06:00" />
+						<video id="510633" title="[Partie] MIND MGMT | 2 joueurs | Matagot | VOD Live" category="session" language="French" link="http://www.youtube.com/watch?v=xoF_k2TiiEY" username="AlecsCVG" userid="2120784" postdate="2024-08-24T06:17:59-05:00" />
+						<video id="506305" title="Mind MGMT/Scanners Review" category="review" language="English" link="http://www.youtube.com/watch?v=ZYplYH2tImY" username="agent foiliage" userid="492290" postdate="2024-07-26T16:32:13-05:00" />
+						<video id="504554" title="Mind MGMT - Tabletop Game Review [Spacehawk Reviews]" category="review" language="English" link="http://www.youtube.com/watch?v=NyzAsPHdde8" username="GeeksPlusTabletop" userid="3924629" postdate="2024-07-15T08:14:28-05:00" />
+						<video id="503291" title="Review" category="review" language="English" link="http://www.youtube.com/watch?v=R9rg89Qkvp4" username="Come_Play_with_Us" userid="3823922" postdate="2024-07-06T20:41:43-05:00" />
+						<video id="502568" title="Playthrough" category="instructional" language="English" link="http://www.youtube.com/watch?v=RXWL7pV_ylo" username="Come_Play_with_Us" userid="3823922" postdate="2024-07-01T22:21:58-05:00" />
+						<video id="488300" title="Mind MGMT (Avançado) - Como Jogar" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=xCbu1u0uO0o" username="Romir" userid="9484" postdate="2024-03-30T11:01:25-05:00" />
+						<video id="487882" title="Mind MGMT (Treinamento) - Como Jogar" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=uoYwbRyiy08" username="Romir" userid="9484" postdate="2024-03-27T11:01:28-05:00" />
+						<video id="487619" title="MIND MGMT -  Regras e Gameplay" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=lF-1CrHKrA0" username="Tankbr" userid="1077155" postdate="2024-03-26T08:04:51-05:00" />
+						<video id="486412" title="Mind MGMT - Unboxing" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=kEfzvQewfnA" username="Romir" userid="9484" postdate="2024-03-19T11:01:16-05:00" />
+						<video id="485807" title="O Que Tem na Caixa? Unboxing Mind MGMT" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=VI2LMaa3Sw8" username="Tankbr" userid="1077155" postdate="2024-03-15T07:44:50-05:00" />
+						<video id="485187" title="MIND MGMT | Hogyan kell játszani?" category="instructional" language="Hungarian" link="http://www.youtube.com/watch?v=epafx-jVp64" username="Reflexshop" userid="1565084" postdate="2024-03-11T02:42:48-05:00" />
+						<video id="476870" title="MIND MGMT - Bemutató (Hungarian)" category="unboxing" language="Hungarian" link="http://www.youtube.com/watch?v=9yQLeVE59lA" username="Reflexshop" userid="1565084" postdate="2024-01-26T02:26:15-06:00" />
+					</videos>
 
 	
 
@@ -460,20 +476,20 @@ Mind MGMT wins by either collecting twelve recruits or surviving sixteen turns. 
    		<statistics page="1">
 								<ratings>
 			<usersrated value="7491" />
-			<average value="7.77269" />
-			<bayesaverage value="7.17784" />
+			<average value="7.77265" />
+			<bayesaverage value="7.17781" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="327" bayesaverage="7.17784" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="205" bayesaverage="7.2836" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="327" bayesaverage="7.17781" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="205" bayesaverage="7.28348" />
 												</ranks>
 
 			<stddev value="1.3445" />
 			<median value="0" />
-			<owned value="16897" />
-			<trading value="352" />
-			<wanting value="502" />
-			<wishing value="5027" />
+			<owned value="16906" />
+			<trading value="351" />
+			<wanting value="503" />
+			<wishing value="5033" />
 			<numcomments value="1506" />
 			<numweights value="159" />
 			<averageweight value="2.8931" />

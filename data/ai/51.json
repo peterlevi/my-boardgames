@@ -1,36 +1,39 @@
 {
  "confidence": "high",
- "summary": "Players race in real time to find the shortest path to slide a colored robot onto its target, with robots sliding until they hit a wall or another robot. It's a shared puzzle rather than a traditional turn-based game — everyone stares at the same board and shouts out solutions as they spot them.",
+ "summary": "A real-time deduction puzzle where all players simultaneously race to find the shortest path to move a target robot to its goal, with robots sliding until they hit a wall or another robot. It's less a game and more a shared puzzle-solving competition, prized for how it sharpens spatial reasoning under time pressure.",
  "praised": [
-  "Brilliant, addictive puzzle mechanic",
-  "Simultaneous real-time play keeps everyone engaged, no downtime",
-  "Endlessly replayable due to random target/board setups",
-  "Great mental workout, satisfying aha-moment solutions",
-  "Works for a huge range of group sizes and ages"
+  "Brilliantly simple, endlessly replayable puzzle",
+  "Genuinely brain-burning 'aha' moments",
+  "Great for mixed-skill and mixed-age groups",
+  "Fast setup, easy to teach"
  ],
  "criticised": [
-  "Can feel stressful or unfair to slower thinkers",
-  "Not really a 'game' in the traditional sense (no hidden info, negotiation, or asymmetry)",
-  "Loud/dominant players can shout out answers constantly, sidelining others",
-  "Little social interaction beyond competing to solve first",
-  "Can cause decision paralysis or frustration for some players"
+  "Real-time format can intimidate slower thinkers",
+  "Not really a 'game' in the traditional sense—no hidden info or strategy across turns",
+  "Can be dominated by a few fast players"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "simultaneous competitive puzzle-solving, no direct conflict"
+  "level": "High",
+  "kind": "simultaneous real-time competition",
+  "detail": "All players stare at the same shared board and race to shout out the shortest solution first; there's no individual tableau at all, just a single communal puzzle everyone attacks at once."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Whoever accumulates the most solved targets (found in fewest moves) across rounds wins"
+  "why": "Points are won by being first to correctly solve a robot's path in the fewest moves, repeated over many rounds",
+  "how_you_win": "You win by accumulating the most solved puzzles by consistently being fastest to find (or beat) the optimal move sequence."
  },
  "similar": [
-  "Karuba",
   "Rush Hour",
-  "Circle the Wagons",
-  "Anti-Virus",
-  "Guards!! Guards!!"
+  "Karuba",
+  "Anomia",
+  "Ivan's Hard Puzzles",
+  "Metro"
  ],
- "_fingerprint": "831d62495ce9ded4",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "8cbfb14ab2644f96",
  "_name": "Ricochet Robots"
 }

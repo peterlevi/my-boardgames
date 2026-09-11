@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Indonesia is a dense economic engine-builder where you race to merge companies into ever-larger conglomerates while managing shipping routes and production capacity to deliver goods to hungry cities. The tension comes from the auction-driven mergers (you set the price, others decide who runs the merged company) and constant zone-of-control jockeying over ports and shipping lanes.",
+ "summary": "Indonesia is a brutal, high-complexity economic game about shipping, manufacturing, and mergers, where companies grow through takeovers and compete for scarce shipping capacity across the archipelago. It's a cutthroat, long-form economic simulation known for its punishing depth and lack of hand-holding.",
  "praised": [
-  "Innovative merger/auction mechanic where the bidder doesn't necessarily end up controlling the result",
-  "Deep, satisfying economic engine with real interlocking systems",
-  "Strong theme integration for an economic game",
-  "High replayability from variable setup and multiple viable strategies",
-  "Rewards long-term planning and route optimization"
+  "deep, unforgiving economic simulation",
+  "clever company-merger mechanic",
+  "strong sense of building a shipping/manufacturing empire",
+  "high replayability from variable setup"
  ],
  "criticised": [
-  "Long playtime and heavy downtime, especially with 5 players",
-  "Steep learning curve and rules overhead for a first play",
-  "Can feel very dry or spreadsheet-like to non-economic-game fans",
-  "Early mistakes can snowball and leave players uncompetitive for a long stretch",
-  "Production of physical components (ships/tiles) sometimes criticized in older printings"
+  "very steep learning curve",
+  "long playtime (3-4+ hours)",
+  "punishing for new players against experienced ones",
+  "auctions and route control can feel cutthroat"
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction-driven mergers and zone-of-control competition over shipping routes and ports"
+  "kind": "auctions, mergers, and zone-of-control over shipping routes",
+  "detail": "Players directly compete for the same shipping lanes and port access, can absorb each other's companies via merger, and bid against one another in auctions, making much of the map and company ownership shared and contested rather than siloed."
  },
  "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The winner is simply whoever accumulates the most cash by the game's end, driven by efficient production-to-delivery chains"
+  "breadth": "Some",
+  "why": "The game ends at a fixed point and the player with the greatest net worth from company holdings and cash wins.",
+  "how_you_win": "Grow and merge companies to dominate shipping and production routes, converting efficient logistics into the highest net worth by game's end."
  },
  "similar": [
   "Antiquity",
-  "Le Havre",
+  "Container",
+  "The Great Zimbabwe",
   "Brass: Birmingham",
-  "Automobile",
-  "Container"
+  "Age of Steam"
  ],
- "_fingerprint": "c941f3f1ddba40f1",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "939ecb177f6dfb68",
  "_name": "Indonesia"
 }

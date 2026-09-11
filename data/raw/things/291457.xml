@@ -898,7 +898,23 @@ Gloomhaven: Jaws of the Lion is aimed at a more casual audience to get people in
 			
 
 			
-	
+			<videos total="606">
+						<video id="615787" title="CAPITULO 8: EVOLUCION EXPLOSIVA" category="session" language="Spanish" link="http://www.youtube.com/watch?v=of6oqknSdlU" username="arturo45" userid="2921034" postdate="2026-06-12T08:55:52-05:00" />
+						<video id="615786" title="CAPITULO 7: TUMOR HUNDIDO" category="session" language="Spanish" link="http://www.youtube.com/watch?v=IlIC0fo1wnk" username="arturo45" userid="2921034" postdate="2026-06-12T08:48:25-05:00" />
+						<video id="615785" title="CAPITULO 6: INVESTIGACION CORRUPTA" category="session" language="Spanish" link="http://www.youtube.com/watch?v=j7X6gU2EIgo" username="arturo45" userid="2921034" postdate="2026-06-12T08:47:17-05:00" />
+						<video id="615783" title="CAPITULO 5: PROFUNDIZANDO EN LA INVESTIGACION" category="session" language="Spanish" link="http://www.youtube.com/watch?v=2ypC0GAurAc" username="arturo45" userid="2921034" postdate="2026-06-12T08:42:37-05:00" />
+						<video id="615781" title="ESCENARIO 4: RITUAL DE PIEDRAS" category="session" language="Spanish" link="http://www.youtube.com/watch?v=cesK9CkOfxI" username="arturo45" userid="2921034" postdate="2026-06-12T08:38:03-05:00" />
+						<video id="615780" title="ESCENARIO 3: EL BARCO NEGRO" category="session" language="Spanish" link="http://www.youtube.com/watch?v=VfzgoE5U60k" username="arturo45" userid="2921034" postdate="2026-06-12T08:34:23-05:00" />
+						<video id="615779" title="ESCENARIO 2: UN AGUJERO EN LA PARED" category="session" language="Spanish" link="http://www.youtube.com/watch?v=1SD0zf714xk" username="arturo45" userid="2921034" postdate="2026-06-12T08:31:55-05:00" />
+						<video id="615778" title="ESCENARIO 1, EL INICIO DE TODO" category="session" language="Spanish" link="http://www.youtube.com/watch?v=ZxMP-kiLv0A" username="arturo45" userid="2921034" postdate="2026-06-12T08:30:17-05:00" />
+						<video id="612259" title="Whats in the Box - Gloomhaven Jaws of the Lion" category="unboxing" language="English" link="http://www.youtube.com/watch?v=TZhQmORKRTk" username="GeeksPlusTabletop" userid="3924629" postdate="2026-05-18T11:55:58-05:00" />
+						<video id="612121" title="We Just Played! - Gloomhaven: Jaws of the Lion (Quick Review)" category="review" language="English" link="http://www.youtube.com/watch?v=TPp6wOLNB9U" username="Arvias" userid="209684" postdate="2026-05-17T12:03:22-05:00" />
+						<video id="603125" title="Gloomhaven: Fauces del León Escenario 14 Parte3Final" category="session" language="Spanish" link="http://www.youtube.com/watch?v=9HTq7qphJL4" username="Xebastron" userid="1758530" postdate="2026-03-19T00:03:01-05:00" />
+						<video id="602666" title="Gloomhaven: Fauces del León Escenario 14 Parte2" category="session" language="Spanish" link="http://www.youtube.com/watch?v=if1A6WxUoSk" username="Xebastron" userid="1758530" postdate="2026-03-16T01:56:18-05:00" />
+						<video id="602402" title="Gloomhaven Jaws of the Lion - Live Playthrough (Scenario 5: A Deeper Understanding)" category="session" language="Greek" link="http://www.youtube.com/watch?v=OKFS8NMqjqE" username="evkefalas" userid="389019" postdate="2026-03-14T00:00:35-05:00" />
+						<video id="602089" title="Gloomhaven: Fauces del León Escenario 14 Parte1" category="session" language="Spanish" link="http://www.youtube.com/watch?v=WgQnuTnB8p0" username="Xebastron" userid="1758530" postdate="2026-03-12T06:23:50-05:00" />
+						<video id="601091" title="Gloomhaven Jaws of the Lion - Live Playthrough (Scenario 4: A Ritual in Stone) (2nd RUN)" category="session" language="Greek" link="http://www.youtube.com/watch?v=B8DxF7whMzU" username="evkefalas" userid="389019" postdate="2026-03-05T23:00:33-06:00" />
+					</videos>
 
 	
 
@@ -907,23 +923,23 @@ Gloomhaven: Jaws of the Lion is aimed at a more casual audience to get people in
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="41889" />
-			<average value="8.35132" />
-			<bayesaverage value="8.08935" />
+			<usersrated value="41902" />
+			<average value="8.35135" />
+			<bayesaverage value="8.08943" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="12" bayesaverage="8.08935" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="8" bayesaverage="8.09022" />
-											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="14" bayesaverage="8.06499" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="12" bayesaverage="8.08943" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="8" bayesaverage="8.09021" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="14" bayesaverage="8.06494" />
 												</ranks>
 
-			<stddev value="1.47465" />
+			<stddev value="1.47452" />
 			<median value="0" />
-			<owned value="90396" />
-			<trading value="1151" />
+			<owned value="90421" />
+			<trading value="1152" />
 			<wanting value="437" />
-			<wishing value="9455" />
-			<numcomments value="6059" />
+			<wishing value="9454" />
+			<numcomments value="6063" />
 			<numweights value="1196" />
 			<averageweight value="3.643" />
 			</ratings>

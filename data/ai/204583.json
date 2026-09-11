@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "Kingdomino plays fast and light: each turn you draft a domino and place it to grow a compact 5x5 kingdom, weighing terrain matches against crown-heavy tiles. It's a satisfying little optimization puzzle that resolves in well under half an hour, with almost no downtime.",
+ "summary": "Players draft double-sided domino tiles each round based on a value ranking, then place them edge-to-edge into their own personal kingdom, matching terrain types and chasing crown symbols. It's a light, quick, almost meditative spatial puzzle where the only real interaction is competing over which tiles you get to pick, not what happens on anyone's board.",
  "praised": [
-  "Extremely easy to teach and fast to play",
-  "Elegant turn-order-as-drafting-priority mechanism",
-  "Satisfying spatial puzzle for its weight",
-  "Great gateway/family game and works well with kids",
-  "High production value components (chunky wooden tiles in the deluxe edition)"
+  "very easy to teach even to kids",
+  "clever draft-order-tied-to-tile-value mechanism",
+  "quick 15-20 minute playtime",
+  "satisfying puzzle of shaping a compact kingdom"
  ],
  "criticised": [
-  "Very light strategic depth, can feel too simple for gamers",
-  "Luck of the draw/tile order can swing outcomes",
-  "Limited long-term replayability for experienced gamers",
-  "Interaction is indirect and can feel solitaire-ish at low player counts"
+  "low player interaction beyond the draft",
+  "limited long-term strategic depth",
+  "can feel too light or repetitive for serious gamers",
+  "little to no catch-up mechanism if you fall behind"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "indirect drafting/denial via turn order and tile choice"
+  "kind": "mostly parallel play with a competitive draft",
+  "detail": "The only shared resource is the row of available dominoes each round, where picking a strong tile bumps you later in the next turn order; beyond that, each player builds and scores their own separate kingdom grid with no way to affect anyone else's board directly."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "the winner is decided almost entirely by maximizing (territory size x crowns) across connected same-terrain regions"
+  "why": "Final score is simply each connected terrain region's tile count multiplied by its crown count, summed across your kingdom.",
+  "how_you_win": "You win by arranging dominoes so that large matching-terrain regions overlap with as many crowns as possible."
  },
  "similar": [
-  "Queendomino",
-  "Karuba",
   "Azul",
-  "Isle of Skye",
-  "Cottage Garden"
+  "Kingdomino Origins",
+  "Karuba",
+  "Cascadia",
+  "Isle of Cats"
  ],
- "_fingerprint": "9391dcffa986a066",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "e10234a9badddeb2",
  "_name": "Kingdomino"
 }

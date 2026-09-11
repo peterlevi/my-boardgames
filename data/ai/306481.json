@@ -1,36 +1,41 @@
 {
- "confidence": "high",
- "summary": "A dense, interlocking worker-placement engine-builder where you cycle two types of workers around a rondel to gather resources, climb the temple, build structures, weave textiles, and muster an army to seize villages. It rewards careful long-term planning and combo-building far more than it rewards reacting to opponents.",
+ "confidence": "medium",
+ "summary": "Tawantinsuyu is a heavy euro game about the Inca Empire, combining a rondel-style action selection with worker placement and area influence to climb temples, build structures, and expand influence across four regions. It's dense and multi-layered, appealing to players who enjoy intricate engine-building with a lot of interlocking systems.",
  "praised": [
-  "Tightly interlocking systems that all feed into each other in satisfying ways",
-  "High variability from modular setup, keeping replays fresh",
-  "Strong, well-designed solo mode",
-  "Attractive production and thematic Inca art direction",
-  "Rewarding sense of engine-building and long-term strategy payoff"
+  "Deep, interlocking systems for heavy euro fans",
+  "Beautiful production and thematic integration",
+  "Strong solo mode",
+  "Rewarding long-term planning"
  ],
  "criticised": [
-  "Steep learning curve and a dense rulebook that make the first game overwhelming",
-  "Long teach and play time, especially at 3-4 players",
-  "Mostly parallel play (\"multiplayer solitaire\") with limited direct interaction",
-  "Prone to analysis paralysis given the number of simultaneous tracks to optimize",
-  "Can feel more like an optimization puzzle than a thematic experience"
+  "Very long teach and high complexity",
+  "Can suffer from analysis paralysis",
+  "Some feel it's overloaded with subsystems",
+  "Not for casual or new gamers"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light area-majority conflict over village conquest"
+  "level": "Medium",
+  "kind": "area majority and worker placement competition",
+  "detail": "Players compete for limited action spaces and regional influence on a shared board, occasionally blocking each other's plans, but each player also develops a private tableau of buildings and resources. Much of the tension comes from indirect competition over scarce spaces rather than direct attacks."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate across temple steps, statues, buildings, weavings, and military area-majority conquests, so winners are usually those who build the most efficient multi-track engine rather than specialize in one"
+  "why": "Points accumulate from temple climbing, area influence in the four regions, buildings, and end-game bonuses.",
+  "how_you_win": "You win by balancing worker placement efficiency with area influence and temple advancement to accumulate the most victory points."
  },
  "similar": [
-  "Teotihuacan: City of Gods",
   "Tzolk'in: The Mayan Calendar",
-  "Anachrony",
-  "On Mars",
-  "Lisboa"
+  "Teotihuacan",
+  "Tabannusi: Builders of Ur",
+  "Trismegistus",
+  "The Voyages of Marco Polo"
  ],
- "_fingerprint": "9e6d468fa55471a9",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "No Pun Included"
+ ],
+ "_fingerprint": "910a6e24b7a49fd3",
  "_name": "Tawantinsuyu: The Inca Empire"
 }

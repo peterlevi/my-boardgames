@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Players build rival fast-food empires, hiring staff, researching menus, and blanketing the board with ads and restaurants to steal each other's customers in a brutally tight economic engine. It's famous for a merciless, escalating aggression curve where early mistakes compound and the endgame becomes a slow-motion demolition of whoever fell behind.",
+ "summary": "A brutal economic engine-builder where you open burger, pizza, and sushi restaurants, hire and train staff, and blast the board with advertising to steer a fixed pool of customers to your tables. Turn order is earned rather than given, so a strong early lead compounds into a runaway win while late movers can be locked out entirely.",
  "praised": [
-  "deep, elegant economic engine with real long-term planning",
-  "unique 'no direct combat but total economic warfare' feel",
-  "huge replayability from variable player powers and market openness",
-  "extremely satisfying when your engine clicks"
+  "unforgiving depth and long-term planning",
+  "no rubber-banding — good decisions actually snowball",
+  "huge variety of viable opening strategies",
+  "satisfying \"aha\" moment when an engine clicks"
  ],
  "criticised": [
-  "notoriously long playtime, especially at higher player counts",
-  "brutal kingmaking/pile-on potential against a leader",
-  "steep learning curve and analysis paralysis for newcomers",
-  "a bad early game can leave a player with almost nothing to do for hours"
+  "brutal to new players, especially in a 4-5p game",
+  "very long teach and long playtime",
+  "can feel solved/mathematical rather than thematic",
+  "a bad early game can be unwinnable by turn 3"
  ],
  "interaction": {
   "level": "High",
-  "kind": "market competition, customer stealing, and price/ad warfare"
+  "kind": "direct competition for a shared customer pool and blocking",
+  "detail": "All players sell into the same finite demand track, so opening a restaurant or advertisement directly reduces what's available to everyone else, and recipe/discount choices are explicitly aimed at undercutting opponents. Employee hiring and firing timing lets you deny cheap staff to rivals, so most of the tension is about denying resources rather than sharing a board."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "final cash on hand decides everything, driven by how efficiently your restaurant network out-competed rivals for customers"
+  "why": "Whoever ends the game with the most cash wins, and cash comes almost entirely from restaurant sales minus wages and setup costs.",
+  "how_you_win": "You build a machine of restaurants, staff, and marketing that serves more customers more profitably than anyone else, then hold onto that lead to the final count."
  },
  "similar": [
   "Brass: Birmingham",
-  "Terraforming Mars",
-  "Great Western Trail",
   "Underwater Cities",
-  "Automobiles"
+  "Container",
+  "Automobiles",
+  "Anachrony"
  ],
- "_fingerprint": "2c0e8cf9c28fbe33",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "d80cdc426ccd6fb0",
  "_name": "Food Chain Magnate"
 }

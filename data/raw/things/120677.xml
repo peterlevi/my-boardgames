@@ -816,7 +816,23 @@ Terra Mystica FAQ
 			
 
 			
-	
+			<videos total="200">
+						<video id="614225" title="Terra Mystica Regelkunde" category="instructional" language="German" link="http://www.youtube.com/watch?v=WFwTeh-erx0" username="Brettspiel_Buben" userid="4414977" postdate="2026-06-01T12:14:40-05:00" />
+						<video id="584181" title="Ein Blick auf Terra Mystica" category="review" language="German" link="http://www.youtube.com/watch?v=jo9AAkEhc9g" username="Brettspiel_Buben" userid="4414977" postdate="2025-11-21T12:03:03-06:00" />
+						<video id="580647" title="Terra Mystica Fan Factions Sneak Peak - Playing for Second" category="unboxing" language="English" link="http://www.youtube.com/watch?v=k0JQl2j6uEU" username="Caligula8" userid="963459" postdate="2025-11-03T07:19:38-06:00" />
+						<video id="579553" title="Terra Mystica with Age of Innovation - Start Playing in 15 minutes - Concise Board Game Tutorial" category="instructional" language="English" link="http://www.youtube.com/watch?v=wFfp1K9evbA" username="JetSkiPopper" userid="1310667" postdate="2025-10-29T07:02:19-05:00" />
+						<video id="559274" title="Terra Mystica - Unboxing &amp; Reboxing - What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=ozRwP7KzYto" username="broseygames" userid="4181268" postdate="2025-06-18T22:30:39-05:00" />
+						<video id="545873" title="Terra Mystica (How To Play)" category="instructional" language="English" link="http://www.youtube.com/watch?v=X8O_2tLuQ5s" username="GreyElephantGaming" userid="3965850" postdate="2025-03-27T12:26:36-05:00" />
+						<video id="534447" title="Terra Mystica: Chaos Magicians (Digital Play)" category="session" language="English" link="http://www.youtube.com/watch?v=lDxZ-7b1NOk" username="GreyElephantGaming" userid="3965850" postdate="2025-01-25T09:14:59-06:00" />
+						<video id="534300" title="Terra Mystica: 2025 BoardGameGeek Hall of Fame Inductee" category="other" language="English" link="http://www.youtube.com/watch?v=moFKZ_Yr-Z4" username="boardgamegeektv" userid="473702" postdate="2025-01-24T08:01:18-06:00" />
+						<video id="512366" title="Terra Mystica - Board With Each Other Review" category="review" language="English" link="http://www.youtube.com/watch?v=P3URfddiHSA" username="BoardWithEachOther" userid="1146520" postdate="2024-09-03T03:39:45-05:00" />
+						<video id="509013" title="Terra Mystica -  Regras e Gameplay" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=jYr1yC-BW7U" username="Tankbr" userid="1077155" postdate="2024-08-14T08:29:44-05:00" />
+						<video id="499615" title="Strategy Tips for Beginners - From 0 to 200 elo in 2 minutes - Terra Mystica" category="instructional" language="English" link="http://www.youtube.com/watch?v=VgQYxn_-t_c" username="Mrfickles" userid="591396" postdate="2024-06-11T14:58:34-05:00" />
+						<video id="493500" title="Terra Mystica - Mermaids VS Kuddlers 5-1-24" category="session" language="English" link="http://www.youtube.com/watch?v=xQe-bFd4qCE" username="PhoenixKnight08" userid="2077516" postdate="2024-05-02T06:08:28-05:00" />
+						<video id="487499" title="2012: The BEST Year in Board Games - My Top 10" category="interview" language="English" link="http://www.youtube.com/watch?v=S7gN70RN2rw" username="randalthompson" userid="663880" postdate="2024-03-25T12:07:13-05:00" />
+						<video id="482768" title="Terra Mystica gameplay" category="session" language="Polish" link="http://www.youtube.com/watch?v=hsnsU0nsF_A" username="MaMiKr" userid="1722436" postdate="2024-02-23T06:12:02-06:00" />
+						<video id="477875" title="coś o terra mystice" category="review" language="Polish" link="http://www.youtube.com/watch?v=7u2DdK-KiNI" username="MaMiKr" userid="1722436" postdate="2024-02-02T02:58:00-06:00" />
+					</videos>
 
 	
 
@@ -825,22 +841,22 @@ Terra Mystica FAQ
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="51367" />
-			<average value="8.0311" />
-			<bayesaverage value="7.85549" />
+			<usersrated value="51375" />
+			<average value="8.03123" />
+			<bayesaverage value="7.8556" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="36" bayesaverage="7.85549" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="34" bayesaverage="7.86746" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="36" bayesaverage="7.8556" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="34" bayesaverage="7.86756" />
 												</ranks>
 
-			<stddev value="1.47155" />
+			<stddev value="1.47128" />
 			<median value="0" />
-			<owned value="55439" />
-			<trading value="930" />
-			<wanting value="1494" />
-			<wishing value="14509" />
-			<numcomments value="7409" />
+			<owned value="55449" />
+			<trading value="931" />
+			<wanting value="1493" />
+			<wishing value="14508" />
+			<numcomments value="7411" />
 			<numweights value="3063" />
 			<averageweight value="3.9722" />
 			</ratings>

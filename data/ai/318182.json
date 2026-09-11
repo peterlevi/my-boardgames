@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "You draft and play cards from an asymmetric civilization deck, moving cards through hand, discard, and achievement zones to build an engine that produces resources, unrest management, and victory points. It plays like efficient multiplayer solitaire: turns are quick and mostly non-interactive, with the tension coming from managing your own deck's growth and timing your Revolt to lock in bonuses before the game ends.",
+ "summary": "Imperium: Legends is the standalone companion to Imperium: Classics, using the same card-driven civilization engine but with eight different, more fantastical factions (Arthurian, Atlantean, Egyptian, and others). It delivers the same tight asymmetric deck-pruning and clash-of-civilizations feel, and can be combined with Classics for even more variety.",
  "praised": [
-  "high card quality and strong asymmetry between civilizations",
-  "excellent solo mode with civilization-specific AI opponents",
-  "satisfying, tight engine-building within a small card pool",
-  "very replayable due to variable setup and many civ combinations",
-  "fully compatible with Imperium: Classics, doubling the civ pool"
+  "fresh, more mythic/asymmetric faction designs",
+  "combines seamlessly with Imperium: Classics",
+  "strong solo mode",
+  "satisfying tableau and deck evolution over a short playtime"
  ],
  "criticised": [
-  "dense keyword/iconography learning curve on first plays",
-  "some civilizations feel notably stronger or weaker than others",
-  "low direct interaction can feel like solitaire at a shared table",
-  "end-game achievement scoring can be fiddly to track",
-  "some Legends civs seen as more complex/fiddly than Classics ones"
+  "same fiddly keyword/icon lookups as Classics",
+  "faction balance is uneven",
+  "combat can swing hard on card draw",
+  "requires owning or pairing with Classics to get full faction variety"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light open drafting for shared cards"
+  "level": "Medium",
+  "kind": "card-based raids and drafting from a shared market",
+  "detail": "As in Classics, players raid each other with military cards and draft from a shared card row, while each civilization's deck and tableau remain private and individually managed."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "final score combines achievement track bonuses, leftover resources, and points printed on played cards, so efficient long-term engine building wins"
+  "why": "Points come from completing faction-specific missions, tag bonuses, and end-game scoring, mirroring Classics' structure.",
+  "how_you_win": "Complete your civilization's objectives and accumulate tag-based bonuses to have the highest score when the final age ends."
  },
  "similar": [
   "Imperium: Classics",
-  "Res Arcana",
   "Race for the Galaxy",
   "Innovation",
-  "Through the Ages: A New Story of Civilization"
+  "Nemo's War",
+  "Tyrants of the Underdark"
  ],
- "_fingerprint": "34bede36d6150725",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "db7ee8eaef5bd5a7",
  "_name": "Imperium: Legends"
 }

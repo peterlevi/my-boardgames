@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Targi is a tight, elegant two-player worker-placement game where you and your opponent each place four meeples around a shared 5x5 grid, with placement restrictions forcing you to react to your opponent's choices turn by turn. Most of the tension comes from figuring out which resource/action combo lets you snag the tribe cards you need while denying your opponent theirs.",
+ "summary": "Targi is a tight two-player worker placement and card-drafting game where players place their two figures on a shared 5x5 grid to gather resources and tribe cards, aiming to build the most valuable set of tribe abilities. It's a dense, puzzly duel with very little downtime and constant tension over which grid spots to claim first.",
  "praised": [
-  "Extremely tight, elegant design with almost no wasted rules for a two-player-only game",
-  "Clever placement restriction (can't sit on or directly across from an opponent's meeple) creates real tactical tension",
-  "Fast to teach and plays quickly once learned",
-  "High replayability from the shifting mix of tribe cards and market cards each game"
+  "Excellent tight two-player design",
+  "Rich combos from tribe card synergies",
+  "Quick turns keep both players engaged",
+  "High replayability for a small box"
  ],
  "criticised": [
-  "Can feel solved or samey after many plays since the board and core actions never change",
-  "Some randomness in which tribe/market cards appear can swing available strategies",
-  "Two-player-only limits table use",
-  "Rulebook/first-play icon overload makes the opening learning curve steeper than the game actually is"
+  "Only supports two players",
+  "Can feel a bit mathy or dry for some",
+  "Early tribe card draws can feel imbalanced",
+  "Rules for the grid take a game or two to internalize"
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking and area denial via meeple placement"
+  "kind": "worker placement blocking on a shared grid",
+  "detail": "Both players place figures on the same central grid, and taking a space denies it to the opponent for that round, creating constant tactical blocking. The central board is fully shared while each player's tribe card tableau and resources remain private."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from a mix of tribe card sets, gold, and end-game bonuses, so the winner is decided by who best converts limited worker placements into the right combination of cards and resources"
+  "why": "Points come from a combination of collected tribe cards, goods sets, and end-game bonuses from the council and other cards.",
+  "how_you_win": "You win by drafting and building a stronger combination of tribe and goods cards than your opponent by game's end."
  },
  "similar": [
   "Jaipur",
   "Lost Cities",
+  "Hera and Zeus",
   "Patchwork",
-  "Agricola: All Creatures Big and Small",
-  "Amun-Re"
+  "7 Wonders Duel"
  ],
- "_fingerprint": "a644ae2a512598a2",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Gaming Rules!"
+ ],
+ "_fingerprint": "af5ab28f8a277cad",
  "_name": "Targi"
 }

@@ -40,7 +40,7 @@ import sys
 from common import ROOT, load_games
 
 AI = ROOT / "data" / "ai"
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 
 WIN_CRITERIA = [
     "Most points, many sources", "Most points, one or two sources",
@@ -65,14 +65,23 @@ Entry shape, for every id below:
   "interaction": {{
     "level": "Low" | "Medium" | "High",
     "kind": "a few words, e.g. blocking and area denial, open conflict, \
-trading and negotiation, mostly parallel play"
+trading and negotiation, mostly parallel play",
+    "detail": "two or three sentences: through what actions players actually \
+affect each other, and how much of the game state is shared versus each \
+player's own board or tableau"
   }},
   "win_criteria": one of {criteria},
   "scoring": {{
     "breadth": "Focused" | "Some" | "Broad" | "Salad",
-    "why": "one sentence on what actually decides the winner"
+    "why": "one sentence on what actually decides the winner",
+    "how_you_win": "one or two sentences on how a player actually wins, in \
+plain language"
   }},
-  "similar": ["3-5 games liked by people who like this one"]
+  "similar": ["3-5 games liked by people who like this one"],
+  "teachers": ["2-3 YouTube channels that are known for teaching this kind of \
+game and plausibly cover this one — name the channel only, e.g. Watch It \
+Played, Rahdo Runs Through, JonGetsGames, Before You Play. Never invent a \
+video title or URL."]
 }}
 
 GAMES:

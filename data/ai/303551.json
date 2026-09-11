@@ -1,18 +1,21 @@
 {
  "confidence": "low",
- "summary": "Playing it is likely to feel like a lean, dueling 2-player ancient-Greece conflict game where you juggle feeding your population, running trade routes to five markets, and spending prestige to fund military and diplomatic pushes on Sparta or Athens. Beyond what the mechanics and publisher description imply, I don't have reliable first-hand knowledge of how this specific, low-profile title actually plays at the table.",
+ "summary": "",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "High",
-  "kind": "direct territorial conflict, sieges, and diplomatic poaching of rival poleis"
+  "kind": "",
+  "detail": ""
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
-  "why": "the winner is decided by combining population and prestige, with prestige also spent as a resource to fuel military and diplomatic actions"
+  "why": "",
+  "how_you_win": ""
  },
  "similar": [],
- "_fingerprint": "713637636de8c3a5",
+ "teachers": [],
+ "_fingerprint": "ae50d086028eff33",
  "_name": "Polis"
 }

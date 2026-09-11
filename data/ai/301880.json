@@ -1,36 +1,40 @@
 {
  "confidence": "high",
- "summary": "A worker-placement/pickup-and-deliver hybrid where you send crew members to gather resources, then use those crew to raid settlements or complete quests for points; it plays like a streamlined descendant of Raiders of the North Sea with an added dice/animal-training layer. Turns are quick and puzzly, with a satisfying engine-build feel as your crew and animals grow more efficient over the course of the game.",
+ "summary": "A worker-placement game where each worker type (raiders, horses, etc.) resolves differently based on a die roll, sending you around the board collecting resources to fulfill contracts and build up your tribe. It plays like a lighter cousin of Phillips' North Sea/West Kingdom games, with the same contract-fulfillment engine and a Mongol-steppe reskin.",
  "praised": [
-  "Smooth, low-downtime worker placement with meaningful but not overwhelming choices",
-  "Strong solo mode",
-  "Nice production and thematic art despite abstracted mechanics",
-  "Good entry point for newer gamers into worker placement/Euro design",
-  "Satisfying sense of building an efficient engine over the game"
+  "Satisfying contract/set-collection puzzle",
+  "Good solo mode",
+  "Attractive art and production",
+  "Accessible weight for the genre"
  ],
  "criticised": [
-  "Thin theme bolted onto fairly dry mechanics — raiding and Scythian setting feel pasted on",
-  "Very similar to (and considered by some a lesser version of) Raiders of the North Sea",
-  "Limited player interaction beyond worker-placement blocking",
-  "Some randomness from dice/quest draws can feel swingy for a Euro",
-  "Can feel a bit solitaire-ish even in multiplayer"
+  "Very similar to Phillips' other Garphill games, feels derivative",
+  "Limited interaction",
+  "Dice mitigation can feel swingy for some workers"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "worker-placement blocking, mostly parallel play"
+  "kind": "worker placement with some spot-blocking",
+  "detail": "Players occupy shared action spaces so there is some blocking and racing for key contract tiles, but most of the game is building your own tableau and fulfilling your own contracts. The shared board state (available spaces, contract tiles) is the main point of contact between players."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from raiding settlements, collecting plunder, and completing quests, so the winner is usually whoever balances the most scoring avenues efficiently."
+  "why": "Points come from completed contracts, city development, and end-game bonuses stacked across several tracks",
+  "how_you_win": "You win by efficiently converting workers and resources into completed contracts and building improvements over the course of the game."
  },
  "similar": [
-  "Raiders of the North Sea",
-  "Explorers of the North Sea",
-  "Rajas of the Ganges",
   "Architects of the West Kingdom",
-  "Trickerion"
+  "Paladins of the West Kingdom",
+  "Raiders of the North Sea",
+  "Trickerion",
+  "Grand Austria Hotel"
  ],
- "_fingerprint": "320aa3e0f7f2273d",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "1ad1537d3ab956c8",
  "_name": "Raiders of Scythia"
 }

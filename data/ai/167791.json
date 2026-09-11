@@ -1,35 +1,39 @@
 {
  "confidence": "high",
- "summary": "You build an engine of production (steel, titanium, plants, energy, heat) across a long game, playing cards that combo off tags and thresholds while racing to push temperature, oxygen, and oceans to terraforming completion. It's a card-driven engine-builder with light multiplayer interaction — most of the game is optimizing your own tableau, with occasional greedy grabs for shared milestones/awards and tile-placement spite.",
+ "summary": "Terraforming Mars has each player run a corporation drafting and playing project cards to raise Mars's temperature, oxygen, and oceans while building out their own tableau of tags and production. Most of the game is parallel tableau-building, punctuated by competition for shared milestones, awards, and increasingly scarce global-parameter and tile-placement bonuses.",
  "praised": [
-  "Huge variety of project cards creating strong replayability and emergent combos",
-  "Satisfying long-arc engine building as production snowballs",
-  "Strong solo mode",
-  "Thematic tile placement on the Mars map"
+  "huge variety of cards giving strong replayability",
+  "satisfying feeling of building an engine that snowballs",
+  "strong solo mode"
  ],
  "criticised": [
-  "Long playtime, especially with 4-5 players or first-timers (can run well over 2 hours)",
-  "Significant luck in card draw/availability, especially in the corporate era draft",
-  "Downtime waiting for other players' turns",
-  "Some cards are much weaker than others, creating balance issues",
-  "Milestones/awards can be a race that rewards whoever gets there first with little counterplay"
+  "long playtime with real downtime, especially at higher player counts",
+  "card draw luck and uneven card/corporation balance",
+  "can feel more solitaire than interactive"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with occasional tile blocking and awards/milestones racing"
+  "level": "Medium",
+  "kind": "shared board race, mostly parallel tableau building",
+  "detail": "Players affect each other by racing to claim milestones and awards and by placing tiles on a shared Mars map for adjacency bonuses, but each player's card tableau and production engine is entirely their own."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score comes from terraform rating, milestones, awards, greenery/city tiles, and card-specific victory points, so the winner is decided by whoever best balanced several scoring channels rather than maxing one."
+  "why": "Final score sums terraforming contribution, milestones, awards, tile placement, and card-specific victory points, so no single track guarantees the win.",
+  "how_you_win": "You win by building the most efficient card engine while also grabbing enough milestones and awards to edge out rivals on the final tally."
  },
  "similar": [
+  "Terraforming Mars: Ares Expedition",
   "Gaia Project",
-  "Scythe",
-  "Res Arcana",
-  "Planet Unknown",
-  "On Mars"
+  "Underwater Cities",
+  "On Mars",
+  "Scythe"
  ],
- "_fingerprint": "39069c175a3e95ca",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "No Pun Included"
+ ],
+ "_fingerprint": "143e26ab3d5f29d1",
  "_name": "Terraforming Mars"
 }

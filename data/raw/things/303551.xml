@@ -318,7 +318,23 @@ This new edition of Polis has updated revised rules and new art that will enhanc
 			
 
 			
-	
+			<videos total="37">
+						<video id="626014" title="Polis - návod" category="instructional" language="Czech" link="http://www.youtube.com/watch?v=b6LkS6rF5_0" username="Milford" userid="464810" postdate="2026-08-20T01:58:58-05:00" />
+						<video id="563401" title="Reseña de Polis | Conflictos en Juego | Bruss Brusco | Partida de Locos" category="review" language="Spanish" link="http://www.youtube.com/watch?v=pCN0yQ9iR8M" username="turmoil23" userid="940247" postdate="2025-07-18T12:30:20-05:00" />
+						<video id="540683" title="Polis, juego de mesa. Tutorial ( griego)" category="review" language="English" link="http://www.youtube.com/watch?v=hC0UZo_rcWM" username="nikoskokalas" userid="1262073" postdate="2025-02-28T07:27:54-06:00" />
+						<video id="540682" title="Polis gameplay. ( greek) Part 1" category="review" language="English" link="http://www.youtube.com/watch?v=Qdo_jpfq9P0" username="nikoskokalas" userid="1262073" postdate="2025-02-28T07:26:32-06:00" />
+						<video id="540681" title="Polis, gameplay  greek 2" category="review" language="Greek" link="http://www.youtube.com/watch?v=Ow1FGsxbPg8" username="nikoskokalas" userid="1262073" postdate="2025-02-28T07:25:48-06:00" />
+						<video id="460998" title="(dżentelmeni przy stole) Polis. Lekcja cierpliwości" category="review" language="Polish" link="http://www.youtube.com/watch?v=xH7N6WIDPzU" username="pwoloszun" userid="1228337" postdate="2023-10-11T06:50:14-05:00" />
+						<video id="429544" title="Polis Unboxing [Spanish / Español]" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=14sGA56Sp5k" username="dice_n_josh" userid="2323846" postdate="2023-03-22T12:57:35-05:00" />
+						<video id="422252" title="Polis - 2p Teaching, Play-through, &amp; Roundtable Discussion by Heavy Cardboard" category="review" language="English" link="http://www.youtube.com/watch?v=vdfzECnJp8Q" username="eapeas" userid="377742" postdate="2023-02-06T13:37:23-06:00" />
+						<video id="409908" title="Знакомство с игрой" category="unboxing" language="Russian" link="http://www.youtube.com/watch?v=qz5QV3vhTTI" username="snowbody" userid="201253" postdate="2022-11-18T00:21:01-06:00" />
+						<video id="408741" title="Polis - Unboxing | Devir" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=a6PwdckmXi0" username="Vgreen" userid="1227780" postdate="2022-11-11T05:13:42-06:00" />
+						<video id="370832" title="Polis - Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=6OlPOKT_ocY" username="PaulGrogan" userid="1685" postdate="2022-03-13T07:41:37-05:00" />
+						<video id="367700" title="How to play Polis" category="instructional" language="English" link="http://www.youtube.com/watch?v=h_bIncp4De8" username="Devir Iberia" userid="1300229" postdate="2022-02-22T06:43:14-06:00" />
+						<video id="361478" title="POLIS - Tutorial &amp; Playthrough" category="instructional" language="English" link="http://www.youtube.com/watch?v=MIjyMO_RTLs" username="PaulGrogan" userid="1685" postdate="2022-01-17T03:26:56-06:00" />
+						<video id="359617" title="POLIS - Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=86Fi-LSZADg" username="PaulGrogan" userid="1685" postdate="2022-01-05T03:16:03-06:00" />
+						<video id="358236" title="Polis! Kyne vs Joachim - Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=yiKortg1vTI" username="SMGSLT" userid="2247845" postdate="2021-12-23T18:14:29-06:00" />
+					</videos>
 
 	
 
@@ -327,22 +343,22 @@ This new edition of Polis has updated revised rules and new art that will enhanc
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="1074" />
-			<average value="8.03908" />
-			<bayesaverage value="6.25168" />
+			<usersrated value="1075" />
+			<average value="8.03835" />
+			<bayesaverage value="6.25198" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2051" bayesaverage="6.25168" />
-																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="94" bayesaverage="7.20492" />
-											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="978" bayesaverage="6.44703" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2051" bayesaverage="6.25198" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="94" bayesaverage="7.20465" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="978" bayesaverage="6.44735" />
 												</ranks>
 
-			<stddev value="1.35894" />
+			<stddev value="1.35856" />
 			<median value="0" />
-			<owned value="2473" />
+			<owned value="2472" />
 			<trading value="68" />
 			<wanting value="107" />
-			<wishing value="942" />
+			<wishing value="941" />
 			<numcomments value="265" />
 			<numweights value="74" />
 			<averageweight value="3.8243" />

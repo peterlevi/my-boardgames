@@ -408,7 +408,12 @@ Exploding Kittens is a kitty-powered version of Russian Roulette. Players take t
 			
 
 			
-	
+			<videos total="4">
+						<video id="577826" title="Exploding Kittens Party Pack - Quick Look Unboxing - What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=XzC9YiViqmo" username="broseygames" userid="4181268" postdate="2025-10-19T19:52:18-05:00" />
+						<video id="469897" title="Exploding Kittens Cómo jugar - Español Latino" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=tW2Ki051s1g" username="santosresena" userid="3542758" postdate="2023-12-05T18:05:28-06:00" />
+						<video id="461680" title="Inside…Exploding Kittens: Party Pack…from TEMU (4K60fps)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=U63GmVxrULY" username="table_talks" userid="3249213" postdate="2023-10-15T05:12:55-05:00" />
+						<video id="346563" title="集資破億的口愛貓貓遊戲☆爆炸貓狂歡派對包 Exploding Kittens: Party Pack-桌遊教學試玩#265" category="instructional" language="Chinese" link="http://www.youtube.com/watch?v=QO2nKOI3Nxs" username="bgxonex" userid="607305" postdate="2021-10-07T01:06:47-05:00" />
+					</videos>
 
 	
 
@@ -417,21 +422,21 @@ Exploding Kittens is a kitty-powered version of Russian Roulette. Players take t
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="3019" />
-			<average value="7.0423" />
-			<bayesaverage value="6.22271" />
+			<usersrated value="3023" />
+			<average value="7.04158" />
+			<bayesaverage value="6.22287" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2174" bayesaverage="6.22271" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="165" bayesaverage="6.36578" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="2171" bayesaverage="6.22287" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="165" bayesaverage="6.36605" />
 												</ranks>
 
-			<stddev value="1.52468" />
+			<stddev value="1.52435" />
 			<median value="0" />
-			<owned value="9702" />
+			<owned value="9707" />
 			<trading value="75" />
 			<wanting value="15" />
-			<wishing value="382" />
+			<wishing value="381" />
 			<numcomments value="436" />
 			<numweights value="73" />
 			<averageweight value="1.0685" />

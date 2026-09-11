@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "You spend each round guessing which of two role cards (or seven, at the highest complexity) opponents will pick, since everyone secretly chooses a phase and you benefit only from phases you also chose. It plays fast and silent for a card game, with almost no table talk, as engines of tableau-built worlds and developments snowball into big scoring turns.",
+ "summary": "Race for the Galaxy is a fast card-driven engine-building game where players simultaneously select phase cards to develop worlds and technologies, with a steep initial learning curve due to dense iconography. Once learned, it plays quickly and rewards efficient tableau synergies over direct conflict.",
  "praised": [
-  "Extremely tight, elegant engine-building with dense, meaningful card text",
-  "High replayability from card variety and multiple viable strategies",
-  "Fast turns once players know the icons, giving a lot of depth per minute of playtime",
-  "Strong solo mode and satisfying multiplayer solitaire-with-a-twist puzzle"
+  "Deep strategic engine-building packed into a short playtime",
+  "Simultaneous action selection keeps the game fast with little downtime",
+  "High replayability from card variety and combos",
+  "Rewards careful reading of the tableau and opponents' likely picks"
  ],
  "criticised": [
-  "Steep learning curve and iconography that intimidates new players",
-  "Low direct interaction feels like parallel solitaire to some groups",
-  "Military/conflict subtheme is thin and abstract compared to the economic engine",
-  "Card draw and starting hand can swing outcomes before skill takes over"
+  "Notoriously steep learning curve with dense symbol-only cards",
+  "Limited direct player interaction, feels solitaire-ish to some",
+  "Military strategy can feel less interesting than the trade/consume engine",
+  "Card text/icons are unforgiving for new players without a reference"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with phase-selection bluffing"
+  "kind": "phase selection with shared bonuses, mostly parallel tableau building",
+  "detail": "Players choose action phases simultaneously and everyone benefits from whichever phases are chosen, with a small bonus to whoever picked it, so there's indirect competition over phase selection and the VP chip pool. Each player's tableau of worlds and developments is entirely their own."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Winners combine tableau VP from played cards, chip VP from consuming goods, and end-game bonuses, so efficient engine synergy across several scoring sources decides it"
+  "why": "Points accrue from card values, goods consumed, and bonus chips, so building the most efficient combo of a dozen cards decides the winner.",
+  "how_you_win": "You win by assembling a tableau of synergistic worlds and developments that generates victory points faster than opponents before the card or chip supply runs out."
  },
  "similar": [
   "San Juan",
   "Roll for the Galaxy",
+  "Puerto Rico",
   "Innovation",
-  "7 Wonders",
-  "Glory to Rome"
+  "Res Arcana"
  ],
- "_fingerprint": "22f477100d5b099d",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "6363fa940148bd01",
  "_name": "Race for the Galaxy"
 }

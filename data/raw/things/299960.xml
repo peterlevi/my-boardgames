@@ -264,7 +264,23 @@
 			
 
 			
-	
+			<videos total="64">
+						<video id="575647" title="S3E8 - Alma Mater" category="session" language="English" link="http://www.youtube.com/watch?v=QLpuJqNPOQM" username="Bellissimo" userid="1721069" postdate="2025-10-06T20:08:52-05:00" />
+						<video id="501583" title="Alma Mater: Gameplay &amp; Review" category="review" language="English" link="http://www.youtube.com/watch?v=4L60yElDpTw" username="marecky76" userid="1124503" postdate="2024-06-25T07:44:13-05:00" />
+						<video id="488906" title="Tutorial Alma Mater" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=3gxDj8-gudQ" username="zantk" userid="3215970" postdate="2024-04-04T03:38:33-05:00" />
+						<video id="475901" title="Unboxing Alma Mater" category="unboxing" language="English" link="http://www.youtube.com/watch?v=35MN3onr0TY" username="Hagenchuck" userid="2125315" postdate="2024-01-20T11:40:59-06:00" />
+						<video id="466757" title="Unboxing de Alma Mater" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=l2iMJXx6x3M" username="zantk" userid="3215970" postdate="2023-11-16T14:43:46-06:00" />
+						<video id="416304" title="Reseña Español - TableTop Bunny" category="review" language="Spanish" link="http://www.youtube.com/watch?v=FOD2a7juokA" username="TableTop_Bunny" userid="3128393" postdate="2023-01-02T00:57:49-06:00" />
+						<video id="381291" title="ALMA MATER VideoReseña (RDJ)" category="review" language="Spanish" link="http://www.youtube.com/watch?v=Mi8A-Wzcgzg" username="Dinare" userid="492355" postdate="2022-05-18T13:14:48-05:00" />
+						<video id="378828" title="Alma Mater Board Game Review (2020)" category="review" language="English" link="http://www.youtube.com/watch?v=3KhDoRoySJU" username="EmpressMyriam" userid="1886817" postdate="2022-05-02T18:01:44-05:00" />
+						<video id="366524" title="ALMA MATER - Обзор" category="review" language="Russian" link="http://www.youtube.com/watch?v=DoVDORd5Xp0" username="Geek_Media" userid="2207816" postdate="2022-02-15T07:30:41-06:00" />
+						<video id="362255" title="Alma Mater - Regeln - Brettspiel" category="instructional" language="German" link="http://www.youtube.com/watch?v=HLl4J0PMYik" username="Kalestron" userid="2212412" postdate="2022-01-21T14:44:57-06:00" />
+						<video id="357870" title="Cómo se juega | Not in my Game" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=04GG1Wb7lM0" username="GatthePekerd" userid="1303281" postdate="2021-12-21T09:30:45-06:00" />
+						<video id="356231" title="Alma Mater Unboxing!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=TN54BOOYuVQ" username="ZValentin" userid="2082778" postdate="2021-12-08T22:39:16-06:00" />
+						<video id="352295" title="Alma Mater - Regler &amp; anmeldelse" category="instructional" language="Danish" link="http://www.youtube.com/watch?v=bfoM-MvCZCg" username="Parabellum76" userid="442912" postdate="2021-11-11T09:57:54-06:00" />
+						<video id="351495" title="Alma Mater : Ouvre ta boite, par Tartenpionne" category="unboxing" language="French" link="http://www.youtube.com/watch?v=o0obbZNJ1r8" username="servalwolverine" userid="1976235" postdate="2021-11-07T04:50:49-06:00" />
+						<video id="346065" title="Alma Mater - 2-player Playthrough" category="session" language="Turkish" link="http://www.youtube.com/watch?v=T9juBAFjcaU" username="ibiliss" userid="1854607" postdate="2021-10-04T01:55:35-05:00" />
+					</videos>
 
 	
 
@@ -274,15 +290,15 @@
    		<statistics page="1">
 								<ratings>
 			<usersrated value="3603" />
-			<average value="7.24938" />
-			<bayesaverage value="6.52952" />
+			<average value="7.24966" />
+			<bayesaverage value="6.53013" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1271" bayesaverage="6.52952" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="709" bayesaverage="6.6679" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1269" bayesaverage="6.53013" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="707" bayesaverage="6.66857" />
 												</ranks>
 
-			<stddev value="1.33662" />
+			<stddev value="1.33709" />
 			<median value="0" />
 			<owned value="7704" />
 			<trading value="298" />

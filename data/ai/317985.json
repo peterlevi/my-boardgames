@@ -1,36 +1,39 @@
 {
- "confidence": "high",
- "summary": "Beyond the Sun is a tight, engine-building worker placement game where every action is a meaningful opportunity cost, and the tech tree branches shape a distinct strategic path each game since there's no combat or player elimination. It plays fast for its weight, with tension coming from racing for limited achievement tiles and contested systems rather than direct conflict.",
+ "confidence": "medium",
+ "summary": "Beyond the Sun is a card-driven space tech-tree game where players spend action pawns to research technologies, build economy, and colonize systems, racing to trigger and claim shared end-game achievements. It plays quickly for its depth, with the branching tech tree giving each game a distinct shape depending on which paths players prioritize.",
  "praised": [
-  "Elegant tech tree that creates real strategic divergence between games",
-  "No player elimination or direct attacks despite the space civ theme",
-  "Tight, efficient action economy where every turn matters",
-  "Clean rules for the depth offered",
-  "Strong replayability from variable tech paths and achievements"
+  "Elegant, branching tech tree that creates real strategic choices",
+  "No player elimination and relatively low downtime for a civ-style game",
+  "Smooth, well-paced turns despite meaningful depth"
  ],
  "criticised": [
-  "Player interaction can feel indirect/low for some who want more conflict",
-  "Achievement/tech tile availability can create swingy 'race' moments",
-  "Some find the tech tree overwhelming to parse on first plays",
-  "Solo-ish feel at times despite shared board",
-  "Iconography and tech tree layout can be a barrier initially"
+  "Can feel like multiplayer solitaire with limited direct interaction",
+  "Dense iconography and rules text on the tech cards early on",
+  "Colonization/area-influence layer feels somewhat secondary to the tech engine"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial over systems and achievements, indirect tech-tree racing"
+  "kind": "racing for shared techs and territory",
+  "detail": "Players race to research the same limited pool of technologies and to claim system tiles for area influence, so timing and denial matter even though each player mostly builds their own economic engine. The tech tree and galaxy map are shared state, while resource and production tracks are private to each player."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from technologies researched, economic development, system control/colonization, and achievements/events, so the winner is usually whoever balances several of these engines rather than maxing one"
+  "why": "Victory points accumulate from researched technologies, economic development, system influence, and completed achievements, so a strong game usually draws from several of these simultaneously.",
+  "how_you_win": "You win by out-teching and out-developing your rivals, grabbing key achievements before they do, and ending with the highest combined score across research, economy, and influence."
  },
  "similar": [
-  "Terraforming Mars",
   "Race for the Galaxy",
-  "Gaia Project",
-  "Underwater Cities",
-  "Anachrony"
+  "Through the Ages",
+  "Roll for the Galaxy",
+  "Innovation",
+  "Eclipse: Second Dawn for the Galaxy"
  ],
- "_fingerprint": "d704db01e7930633",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "74d327028f7413af",
  "_name": "Beyond the Sun"
 }

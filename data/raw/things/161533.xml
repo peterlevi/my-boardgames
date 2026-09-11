@@ -436,7 +436,23 @@ Lisboa is played in rounds. Each round, all players play one turn. They may plac
 			
 
 			
-	
+			<videos total="138">
+						<video id="608144" title="LISBOA - Erklärung vom Spielabend" category="instructional" language="German" link="http://www.youtube.com/watch?v=Mo_zJBs6c5Y" username="brettspielfieber" userid="1952235" postdate="2026-04-19T06:08:11-05:00" />
+						<video id="601507" title="BigDenoPlays - Lisboa" category="session" language="English" link="http://www.youtube.com/watch?v=pX2jGqdu7Hs" username="BigDeno" userid="1669411" postdate="2026-03-09T06:01:11-05:00" />
+						<video id="595340" title="Нумограй від каналу &quot;Катерина Кордон&quot;" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=JzVqohpBDVI" username="punk_rock" userid="2986072" postdate="2026-01-31T10:00:59-06:00" />
+						<video id="590865" title="All-Time Favorits #4: LISBOA - der stärkste Lacerda &amp; eines der besten Heavy-EUROs meiner Sammlung!" category="review" language="German" link="http://www.youtube.com/watch?v=IH5fNFc7kJ8" username="Melhilion" userid="1311348" postdate="2026-01-04T07:00:04-06:00" />
+						<video id="588954" title="LIVE! Lisboa....Ah Vital, seu danadinho..." category="session" language="Portuguese" link="http://www.youtube.com/watch?v=571kNCtKVA8" username="lfigaro" userid="3046229" postdate="2025-12-19T16:33:47-06:00" />
+						<video id="558858" title="How To Play Lisboa Fast and Easy! Board Game Tutorial in 15 Minutes" category="instructional" language="English" link="http://www.youtube.com/watch?v=nioit1UWDII" username="JetSkiPopper" userid="1310667" postdate="2025-06-16T07:01:26-05:00" />
+						<video id="551656" title="Lisboa | Zasady Gry | Instrukcja" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=J2HZGRrcHVs" username="deshione" userid="3424462" postdate="2025-04-30T04:05:16-05:00" />
+						<video id="533958" title="Lisboa | Solo Playthrough" category="review" language="English" link="http://www.youtube.com/watch?v=Chr9z_8QyTU" username="slickerdrips" userid="781754" postdate="2025-01-22T09:53:37-06:00" />
+						<video id="533650" title="Robert SoloPlay - Lisboa - Átbeszélés" category="review" language="Hungarian" link="http://www.youtube.com/watch?v=qwBSvEoaVYU" username="RobertSoloPlay" userid="2913260" postdate="2025-01-20T13:42:07-06:00" />
+						<video id="533649" title="Robert SoloPlay - Lisboa - Végigjátszás" category="session" language="Hungarian" link="http://www.youtube.com/watch?v=yg1hTkt2WjI" username="RobertSoloPlay" userid="2913260" postdate="2025-01-20T13:41:17-06:00" />
+						<video id="530920" title="Règles complètes en français " category="instructional" language="French" link="http://www.youtube.com/watch?v=l3cjaQdBv2o" username="Le_Dav" userid="651385" postdate="2025-01-02T03:40:50-06:00" />
+						<video id="513382" title="The Game Gallery Review -  Lisboa" category="review" language="Japanese" link="http://www.youtube.com/watch?v=nZxSvZ9Si58" username="hal99" userid="27784" postdate="2024-09-09T20:28:17-05:00" />
+						<video id="509382" title="Lisboa Thoughts" category="review" language="English" link="http://www.youtube.com/watch?v=aPNbIdna4wM" username="BoardGaymesJames" userid="484692" postdate="2024-08-16T14:10:20-05:00" />
+						<video id="505332" title="Lisboa Unboxing - Tabletop24" category="unboxing" language="English" link="http://www.youtube.com/watch?v=v-Y1yG0ZLkc" username="Tabletop24" userid="3227843" postdate="2024-07-21T06:30:22-05:00" />
+						<video id="495309" title="[FR] Lisboa - partie solo explicative - 1ere session" category="instructional" language="French" link="http://www.youtube.com/watch?v=75jAwHoGlzQ" username="AlbanSolo" userid="2891226" postdate="2024-05-14T09:45:50-05:00" />
+					</videos>
 
 	
 
@@ -445,22 +461,22 @@ Lisboa is played in rounds. Each round, all players play one turn. They may plac
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="13119" />
-			<average value="8.16564" />
-			<bayesaverage value="7.70842" />
+			<usersrated value="13121" />
+			<average value="8.1655" />
+			<bayesaverage value="7.7082" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="70" bayesaverage="7.70842" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="46" bayesaverage="7.80509" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="70" bayesaverage="7.7082" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="47" bayesaverage="7.80485" />
 												</ranks>
 
-			<stddev value="1.46137" />
+			<stddev value="1.4613" />
 			<median value="0" />
-			<owned value="19251" />
+			<owned value="19256" />
 			<trading value="144" />
-			<wanting value="1060" />
-			<wishing value="7054" />
-			<numcomments value="2300" />
+			<wanting value="1059" />
+			<wishing value="7056" />
+			<numcomments value="2301" />
 			<numweights value="1182" />
 			<averageweight value="4.5626" />
 			</ratings>

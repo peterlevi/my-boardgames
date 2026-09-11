@@ -553,7 +553,23 @@ Play continues until either scoring or collapse is triggered, which ends the gam
 			
 
 			
-	
+			<videos total="156">
+						<video id="623265" title="Imperium Classics - Playthrough - Macedonians" category="session" language="English" link="http://www.youtube.com/watch?v=U1mClip735w" username="Emeres89" userid="3829979" postdate="2026-08-01T00:03:56-05:00" />
+						<video id="618728" title="Vamos a jugar Imperium Clasicos - Celtas en solitario" category="session" language="Spanish" link="http://www.youtube.com/watch?v=XPPamgcVnHM" username="ElCanu" userid="1157957" postdate="2026-07-03T13:03:41-05:00" />
+						<video id="575611" title="Imperium: Classics - Brutally Honest Board Game Review" category="review" language="English" link="http://www.youtube.com/watch?v=5N3ECt4GZvk" username="Damondietz" userid="2295822" postdate="2025-10-06T14:30:14-05:00" />
+						<video id="558925" title="Nullitaire Tournament of Imperium (Part 15 [Final] - Atlanteans vs. Celts)" category="session" language="English" link="http://www.youtube.com/watch?v=0gyOtq7Gm-M" username="brayle" userid="529962" postdate="2025-06-16T19:34:17-05:00" />
+						<video id="552395" title="Nullitaire Tournament of Imperium (Part 14 - Macedonians vs. Celts)" category="session" language="English" link="http://www.youtube.com/watch?v=IfH4YqgJB4I" username="brayle" userid="529962" postdate="2025-05-04T21:48:17-05:00" />
+						<video id="552394" title="Nullitaire Tournament of Imperium (Part 13 - Atlanteans vs. Egyptians)" category="session" language="English" link="http://www.youtube.com/watch?v=JAV0eDSjvmw" username="brayle" userid="529962" postdate="2025-05-04T21:47:06-05:00" />
+						<video id="551045" title="Imperium: Classics + Legends - unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=MN_KcSBqg5s" username="edd_hunter" userid="823546" postdate="2025-04-26T07:22:17-05:00" />
+						<video id="549757" title="Unboxing Imperium Classics" category="unboxing" language="English" link="http://www.youtube.com/watch?v=77Jb03Hvj5M" username="Hagenchuck" userid="2125315" postdate="2025-04-19T15:24:35-05:00" />
+						<video id="532524" title="[會員無廣告] 帝國: 經典 &amp; 傳奇 ????????: ???????? &amp; ??????? | 不只任天堂大亂鬥，歷史也來大亂鬥? 趕快加入瘋狂多元宇宙一起亂鬥! #中文字幕 #桌遊 #肥龍教學" category="instructional" language="Chinese" link="http://www.youtube.com/watch?v=wQGe22Qb-S0" username="czeslaw6300149" userid="798383" postdate="2025-01-13T10:38:08-06:00" />
+						<video id="531940" title="Nullitaire Tournament of Imperium (Part 12 - Qin vs. Celts)" category="session" language="English" link="http://www.youtube.com/watch?v=vX3Ja2Dqc5M" username="brayle" userid="529962" postdate="2025-01-09T06:21:25-06:00" />
+						<video id="529413" title="Nullitaire Tournament of Imperium (Part 11 - Olmecs vs. Macedonians)" category="session" language="English" link="http://www.youtube.com/watch?v=TXtcXP4G9u8" username="brayle" userid="529962" postdate="2024-12-19T05:52:06-06:00" />
+						<video id="524631" title="Nullitaire Tournament of Imperium (Part 10 - Persians vs. Atlanteans)" category="session" language="English" link="http://www.youtube.com/watch?v=NEijd6NKuyk" username="brayle" userid="529962" postdate="2024-11-16T11:34:15-06:00" />
+						<video id="519548" title="Uitleg &amp; review door Nox' Spellenzolder." category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=egLjhBhWd48" username="Dharquen" userid="408533" postdate="2024-10-16T06:44:36-05:00" />
+						<video id="504169" title="Partida en Solitario - Macedonios vs Vikingos" category="session" language="Spanish" link="http://www.youtube.com/watch?v=t8xH-a13ygc" username="JorgeAlonso93" userid="1958411" postdate="2024-07-12T07:45:54-05:00" />
+						<video id="497443" title="Nullitaire Tournament of Imperium (Part 9 - Egyptians vs. Arthurians)" category="session" language="English" link="http://www.youtube.com/watch?v=WbSKfSIbrdk" username="brayle" userid="529962" postdate="2024-05-28T07:43:43-05:00" />
+					</videos>
 
 	
 
@@ -562,22 +578,22 @@ Play continues until either scoring or collapse is triggered, which ends the gam
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="9015" />
-			<average value="7.6801" />
-			<bayesaverage value="7.16577" />
+			<usersrated value="9020" />
+			<average value="7.68032" />
+			<bayesaverage value="7.16593" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="335" bayesaverage="7.16577" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="224" bayesaverage="7.25641" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="335" bayesaverage="7.16593" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="224" bayesaverage="7.25653" />
 												</ranks>
 
-			<stddev value="1.45508" />
+			<stddev value="1.45524" />
 			<median value="0" />
-			<owned value="17972" />
-			<trading value="354" />
+			<owned value="17985" />
+			<trading value="353" />
 			<wanting value="327" />
-			<wishing value="2861" />
-			<numcomments value="1509" />
+			<wishing value="2860" />
+			<numcomments value="1513" />
 			<numweights value="454" />
 			<averageweight value="3.6256" />
 			</ratings>

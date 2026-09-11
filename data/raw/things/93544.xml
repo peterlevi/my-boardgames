@@ -224,7 +224,13 @@ Steam: Map Expansion #1 also includes an extra tile sheet for Steam.
 			
 
 			
-	
+			<videos total="5">
+						<video id="324619" title="¿Puede una partida de Steam a 2 ser brutal? Videosesión mapa Metro Bruselas" category="session" language="Spanish" link="http://www.youtube.com/watch?v=WjiH9MUi0f0" username="marioaguila" userid="37918" postdate="2021-05-16T22:54:57-05:00" />
+						<video id="323182" title="Videosesión: jugando a dos jugadores, el mapa de Bélgica, para Steam." category="session" language="Spanish" link="http://www.youtube.com/watch?v=rVT9WVF9J5w" username="marioaguila" userid="37918" postdate="2021-05-08T23:42:35-05:00" />
+						<video id="323041" title="Videotutorial: explico mapa Metro de Bruselas, para Steam (Expansión #1)" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=-uuchTfCw30" username="marioaguila" userid="37918" postdate="2021-05-07T17:28:14-05:00" />
+						<video id="323040" title="Videotutorial: Bélgica y Luxemburgo para Steam (2 jugadores)" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=WuJkGhn0WGo" username="marioaguila" userid="37918" postdate="2021-05-07T17:26:58-05:00" />
+						<video id="323039" title="Videotutorial: mapa Mid-Atlantic, para Steam (Expansión #1)" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=tBjs3Z539t0" username="marioaguila" userid="37918" postdate="2021-05-07T17:26:09-05:00" />
+					</videos>
 
 	
 
@@ -246,7 +252,7 @@ Steam: Map Expansion #1 also includes an extra tile sheet for Steam.
 			<median value="0" />
 			<owned value="1544" />
 			<trading value="36" />
-			<wanting value="38" />
+			<wanting value="39" />
 			<wishing value="102" />
 			<numcomments value="147" />
 			<numweights value="14" />

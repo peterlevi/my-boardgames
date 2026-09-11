@@ -1,35 +1,40 @@
 {
  "confidence": "high",
- "summary": "Just One is a fast, low-stress cooperative party game where the table quietly compares one-word clues and giggles over near-misses and duplicate wipeouts; there's no real strategy, just word association and trying to read your teammates' minds. It plays best as a light, inclusive icebreaker that works across a wide range of ages and group sizes.",
+ "summary": "Just One is a lightweight cooperative party game where everyone but the guesser writes a one-word clue for a mystery word, and any clues that match each other get wiped out before the guesser sees them. Rounds are extremely fast, and the fun comes from the scramble to be original but still helpful, plus the comedy of accidental duplicate wipeouts.",
  "praised": [
-  "Extremely easy to teach and get running in under a minute",
-  "Generates a lot of laughter, especially from unintentionally duplicate or wildly off-base clues",
-  "Fully cooperative so there's no downtime tension or player elimination",
-  "Scales well from small to large groups and works with mixed skill/age levels",
-  "Great value/production for a small box"
+  "dead simple to teach",
+  "works great with mixed groups including non-gamers",
+  "genuinely funny moments from clue collisions",
+  "cheap, portable, and quick to set up"
  ],
  "criticised": [
-  "Little to no strategic depth, so it can feel thin for gamers looking for a 'real' game",
-  "Luck of word association means a good guesser can still fail on a bad card",
-  "Replayability can dip once the included word cards are exhausted",
-  "Some groups find it too light or repetitive after several sessions"
+  "limited long-term replayability once cards are familiar",
+  "very little strategic depth",
+  "can drag if players overthink their clues"
  ],
  "interaction": {
   "level": "High",
-  "kind": "Simultaneous clue-writing and shared deduction toward one guesser"
+  "kind": "cooperative clue-giving and communication",
+  "detail": "All non-active players see the same secret word and simultaneously write clues into a shared pool that gets filtered by matching duplicates, so nearly the entire game state — the surviving clues — is shaped collectively by everyone's choices at once."
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "The team's single running score is simply the count of mystery words correctly guessed minus the ones guessed wrong, so there's no 'winner' beyond the group's shared tally."
+  "why": "The group's cumulative score is the number of mystery words correctly guessed across all rounds.",
+  "how_you_win": "The team succeeds together by maximizing correct guesses, ideally reaching a perfect score."
  },
  "similar": [
   "Codenames",
   "Wavelength",
-  "Decrypto",
   "The Mind",
+  "Decrypto",
   "Concept"
  ],
- "_fingerprint": "77e0aa8e833fbe7f",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Before You Play"
+ ],
+ "_fingerprint": "71e83a9c7a7653eb",
  "_name": "Just One"
 }

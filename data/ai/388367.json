@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Innovation is a fast, brain-burning card game where you build tech trees and constantly steal or copy each other's effects via chained 'dogma' actions, so a quiet turn can suddenly cascade into your opponent's cards firing repeatedly against you. This Ultimate edition bundles the base game with all five expansions plus a new Age 11 and reworked rules, making an already dense engine even bigger and more combo-laden.",
+ "summary": "Innovation Ultimate bundles the base Innovation game with all five expansions plus a new Unseen expansion and a new Age 11, all streamlined for easier setup and play. The underlying experience is unchanged from base Innovation: fast, chaotic tech-tree racing full of card-driven attacks and reversals.",
  "praised": [
-  "Explosive, satisfying combos and chain reactions once you see the engine click",
-  "Extremely fast to play despite deep strategic depth",
-  "High replayability from asymmetric card effects and splaying",
-  "Clever theme expressed through card icons and history-themed names",
-  "This edition's rules streamlining and consolidation of all expansions in one box"
+  "all-in-one definitive edition with everything streamlined",
+  "new Age 11 content extends the arc into the near future",
+  "reworked expansions are easier to mix in than the originals",
+  "same enormous replay value as base Innovation"
  ],
  "criticised": [
-  "Steep learning curve; card text is famously hard to parse for new players",
-  "Can feel like solitaire with occasional interference rather than direct interaction",
-  "Snowballing/kingmaking issues, especially at higher player counts",
-  "Analysis paralysis from tracking everyone's board and available dogma actions",
-  "Adding all expansions plus Age 11 raises complexity/rules overhead further"
+  "still has Innovation's steep learning curve for newcomers",
+  "expansions can add even more rules overhead once mixed in",
+  "combo-driven swinginess remains",
+  "large box/card count can be overwhelming to organize"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "sharing and stealing dogma effects, take-that card/resource disruption"
+  "level": "High",
+  "kind": "open tableau effects, forced exchanges, and direct attacks",
+  "detail": "As with base Innovation, all tableaus are public and dogma effects let players constantly share, steal, or destroy each other's cards, with expansions adding further ways for players to affect one another's boards."
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Winning comes from reaching achievement thresholds or accumulating enough score-value icons through a tuned tech-tree engine, not from summing unrelated scoring categories"
+  "breadth": "Some",
+  "why": "Winning is primarily a race to collect enough achievements, with a score comparison as the fallback if the deck runs out.",
+  "how_you_win": "Reach the required number of achievements before your opponents, or hold the highest score if the top-age deck is exhausted first."
  },
  "similar": [
-  "Glory to Rome",
+  "Innovation",
   "Res Arcana",
+  "Glory to Rome",
   "Race for the Galaxy",
-  "7 Wonders",
   "Roll for the Galaxy"
  ],
- "_fingerprint": "1766ae07e1493707",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "c138f3081e7fa87c",
  "_name": "Innovation Ultimate"
 }

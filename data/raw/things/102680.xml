@@ -394,7 +394,23 @@ All game components are language neutral, and the playing time is 30 minutes per
 			
 
 			
-	
+			<videos total="134">
+						<video id="583145" title="Trajan | Quick Board Game Review | Ancient Strategy Board Game" category="review" language="English" link="http://www.youtube.com/watch?v=tbF_2j5aUnc" username="TheDiceTreasures" userid="3672309" postdate="2025-11-16T11:02:28-06:00" />
+						<video id="578790" title="Unboxing TRAJAN DELUXE - SPANISH - ESPAÑOL" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=gTM28RFq2fs" username="gatoeneltablero" userid="2388037" postdate="2025-10-24T13:21:58-05:00" />
+						<video id="571896" title="Opinando sobre TRAJANO" category="review" language="Spanish" link="http://www.youtube.com/watch?v=cmJ8-vXToyg" username="rikardus66" userid="2802133" postdate="2025-09-14T00:44:11-05:00" />
+						<video id="526607" title="Kaerugames Trajana [ES]" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=2y7jdd4yLJs" username="KaeruGames" userid="2248840" postdate="2024-11-28T22:14:53-06:00" />
+						<video id="522964" title="Trajan - how to play, przebieg gry (mlodygiercownik.pl)" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=04wDP5Lqx4E" username="tomdra" userid="1269996" postdate="2024-11-06T12:22:45-06:00" />
+						<video id="522963" title="Trajan - unboxing, otwarcie (mlodygiercownik.pl)" category="unboxing" language="Polish" link="http://www.youtube.com/watch?v=648A9uaeP60" username="tomdra" userid="1269996" postdate="2024-11-06T12:21:55-06:00" />
+						<video id="491109" title="Unboxing Trajan - Mancala Style Board Game" category="unboxing" language="English" link="http://www.youtube.com/watch?v=IHzdNFc49Yc" username="PartyTails" userid="2256902" postdate="2024-04-18T08:21:33-05:00" />
+						<video id="485521" title="Trajan (gioco da tavolo) - Tutorial italiano" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=H3gS4vEeegI" username="IlPuntoLudico" userid="3449840" postdate="2024-03-13T07:14:57-05:00" />
+						<video id="482745" title="Trajan | Solo Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=a5Z_pN0x1oY" username="slickerdrips" userid="781754" postdate="2024-02-22T23:57:21-06:00" />
+						<video id="453346" title="Videosesión juego de mesa Trajanᴴᴰ" category="session" language="Spanish" link="http://www.youtube.com/watch?v=ZwSSS1CdWzE" username="marioaguila" userid="37918" postdate="2023-08-24T23:17:02-05:00" />
+						<video id="437892" title="Inside…Trajan (4K60fps)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=9InyCaUvKgc" username="table_talks" userid="3249213" postdate="2023-05-16T07:23:56-05:00" />
+						<video id="429192" title="Trajan Rules Challenge" category="instructional" language="English" link="http://www.youtube.com/watch?v=T_VYwMU13xc" username="Fishpeddler" userid="152771" postdate="2023-03-20T12:47:13-05:00" />
+						<video id="417287" title="Variante para jugar en solitario a Trajan" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=dxtvwr_YTxs" username="Angel_Solo" userid="869566" postdate="2023-01-08T10:36:27-06:00" />
+						<video id="414845" title="Знакомство с игрой" category="instructional" language="Russian" link="http://www.youtube.com/watch?v=FswJquHEOL0" username="snowbody" userid="201253" postdate="2022-12-21T00:36:17-06:00" />
+						<video id="398777" title="Jason's Board Game Diagnostics of Trajan" category="review" language="English" link="http://www.youtube.com/watch?v=O8w_ZR4lfDo" username="BoardgameMechanics" userid="1339218" postdate="2022-09-13T10:02:03-05:00" />
+					</videos>
 
 	
 
@@ -403,22 +419,22 @@ All game components are language neutral, and the playing time is 30 minutes per
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="19027" />
-			<average value="7.74154" />
-			<bayesaverage value="7.46109" />
+			<usersrated value="19030" />
+			<average value="7.74151" />
+			<bayesaverage value="7.4611" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="151" bayesaverage="7.46109" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="151" bayesaverage="7.4611" />
 																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="116" bayesaverage="7.52155" />
 												</ranks>
 
-			<stddev value="1.3365" />
+			<stddev value="1.33637" />
 			<median value="0" />
-			<owned value="22503" />
+			<owned value="22508" />
 			<trading value="356" />
 			<wanting value="933" />
 			<wishing value="4839" />
-			<numcomments value="3343" />
+			<numcomments value="3345" />
 			<numweights value="1017" />
 			<averageweight value="3.6244" />
 			</ratings>

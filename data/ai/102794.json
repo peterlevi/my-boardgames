@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Caverna is a big, generous worker-placement farming game where you build up a dwarf family, cave, and land while juggling multiple viable strategies (farming, mining, weapons for expeditions) with almost no direct conflict. It has a gentler, more forgiving feel than Agricola since you're never fully locked out of feeding your family or forced into begging cards.",
+ "summary": "You run a dwarf family carving out a cave-and-farm empire, choosing between peaceful growth (farming, breeding animals) and a combat path, though almost everyone plays it peacefully. It's a long, satisfying worker-placement puzzle where you're mostly optimizing your own tableau rather than fighting over the same spaces.",
  "praised": [
-  "Huge variety of viable strategies and near-total freedom from a hand of restrictive cards",
-  "Satisfying sense of building up a personal empire/engine",
-  "Tactile, chunky components and a beautiful, functional player board",
-  "Less punishing and more solo-friendly than Agricola",
-  "Excellent standalone solo mode"
+  "Huge, tactile personal board with satisfying cave-digging",
+  "Many viable strategies to reach a good score",
+  "No player elimination or forced combat",
+  "Great solo mode"
  ],
  "criticised": [
-  "Long playtime and significant downtime with full player counts",
-  "Analysis paralysis from the sheer number of options each turn",
-  "Very heavy table presence and setup/teardown time",
-  "Weapons/expedition subsystem feels like a mini-game bolted onto the farming core",
-  "Can feel like a solitaire multiplayer game with little direct interaction"
+  "Very long playtime, especially at higher player counts",
+  "Can feel like a solitaire multiplayer experience with little interaction",
+  "Overwhelming rulebook and iconography for new players",
+  "Analysis paralysis due to huge number of options"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "worker placement blocking, mostly parallel empire-building"
+  "kind": "worker placement with action-space blocking",
+  "detail": "Players compete for the same limited action spaces on a shared board, so taking a space denies it to others that round, but most of the game happens on each player's own cave board. There's no direct attacking of other players' resources, so interaction is mainly about tempo and space-denial."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from a wide scoring table covering rooms, fields, animals, resources, and family size, so the winner is whoever builds the most efficient, well-rounded farm rather than one who maximizes a single category"
+  "why": "Final score sums points from dwellings, fields, pastures, animals, ore/ruby goods, and dungeon/weapon tracks, so a wide, balanced cave usually beats a narrow one.",
+  "how_you_win": "You build up your cave and farm efficiently across many categories over several rounds, then tally points at the end; whoever has optimized the most productive, well-rounded setup wins."
  },
  "similar": [
   "Agricola",
   "Le Havre",
   "A Feast for Odin",
-  "Fields of Arle",
-  "Barenpark"
+  "Terra Mystica",
+  "Barrage"
  ],
- "_fingerprint": "ce920d68d09d2b39",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "df783817fe1b2837",
  "_name": "Caverna: The Cave Farmers"
 }

@@ -1,35 +1,40 @@
 {
- "confidence": "high",
- "summary": "Ishtar is a tight, puzzly rondel-and-tile-placement game where you plant flowers to trigger chained bonuses, then race to claim gem-based scoring conditions before opponents beat you to them. Turns are quick but the board state is tense, since good flower placements are contested and trees can cut off your opponents' combos.",
+ "confidence": "medium",
+ "summary": "Ishtar: Gardens of Babylon is a colorful tile-laying game about planting flower gardens whose shapes and connections matter, using a rondel-like structure to gather gems and place gardeners for end-of-round scoring. It's a light-medium euro puzzle where cutting off an opponent's garden link with a tree can be as important as your own growth.",
  "praised": [
-  "Clever, tight rondel mechanism that constrains choices meaningfully",
-  "Satisfying chain-reaction flower placement puzzle",
-  "Fast turns keep the game moving despite the thinking involved",
-  "Attractive, colorful production",
-  "Good player count scalability, plays well at 2"
+  "beautiful art and production",
+  "satisfying tile-shape connection puzzle",
+  "quick to teach",
+  "tension from tree-blocking"
  ],
  "criticised": [
-  "Can feel a bit dry or abstract despite the gardening theme",
-  "Some player interaction is more about racing/blocking than direct engagement, which can feel solitaire-ish at times",
-  "Upgrade/gem economy can be hard to parse for new players",
-  "Limited replayability variance once strategies are known"
+  "can feel dry or overly mathematical for the pretty theme",
+  "availability of actions depends on card draws",
+  "runs a bit long relative to its depth at higher counts"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial via tree placement and racing for gem thresholds"
+  "kind": "area blocking and race for shared spots",
+  "detail": "Players compete for the same limited flower-plot connections on a shared board, and buying a tree can directly sever a link an opponent needed, but each player's gems, upgrades, and apprentices are otherwise tracked mostly independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come from trees, apprentice scoring in flower copses, and upgrade bonuses, but efficient combo-chaining on the rondel decides the winner"
+  "breadth": "Broad",
+  "why": "Points come from garden size, gems collected, purchased upgrades, and apprentice placement.",
+  "how_you_win": "Build the largest, most efficiently connected garden network and grab upgrade bonuses before opponents cut off your links."
  },
  "similar": [
-  "Kingdomino",
-  "Yokohama",
-  "Coimbra",
-  "Trekking Through History",
-  "Sagrada"
+  "Azul",
+  "Yspahan",
+  "Coloma",
+  "Habitats",
+  "Cacao"
  ],
- "_fingerprint": "3315bea48f941233",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "8a87a5888548413c",
  "_name": "Ishtar: Gardens of Babylon"
 }

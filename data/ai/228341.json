@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Pulsar 2849 is a tight, engine-building Euro where each round's drafted dice (by value and color) shape which of several parallel tracks you can advance — exploring space, developing pulsars, patenting technologies, or building transmitter networks. It rewards efficient combo-building and timing over the fixed 8 rounds more than direct competition with opponents.",
+ "summary": "Pulsar 2849 is a dice-drafting space euro where players draft dice from a shared communal pool to fuel technology, exploration, and infrastructure tracks. It offers multiple parallel paths to victory and rewards efficient engine-building over an eight-round arc.",
  "praised": [
-  "Clever, tense dice-drafting mechanism where value and order both matter",
-  "Deep, satisfying engine-building with multiple viable strategies",
-  "High player agency and replayability from varied tech/board setups",
-  "Elegant integration of theme (energy distribution) with mechanics"
+  "Clever dice-drafting mechanism where die value and color both matter",
+  "Multiple distinct paths to victory keep games varied",
+  "Satisfying engine-building feel with tech tree upgrades",
+  "Elegant, tight ruleset for the depth it offers"
  ],
  "criticised": [
-  "Steep learning curve and dense rulebook/iconography for a first play",
-  "Significant analysis paralysis, especially with 4 players",
-  "Player interaction is largely indirect (drafting scarcity), which can feel solitaire-ish",
-  "Turn order/dice luck can swing early-round options"
+  "Can feel dry and heavily systems-focused with little theme",
+  "Some strategies (e.g., certain tech combos) seen as stronger in analysis",
+  "Dice availability can feel swingy if the pool doesn't favor your plan",
+  "Player interaction is fairly indirect for some tastes"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light drafting-based scarcity"
+  "level": "Medium",
+  "kind": "drafting from a shared pool",
+  "detail": "Players draft from the same rolled pool of dice each round, so taking a die denies it to others and can shift what's left, plus a shared map has limited pulsar/planet spots to claim. Beyond that, each player develops their own tech and production engine independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from multiple engines run in parallel — exploration, pulsar development, technology patents, and transmitter networks — so the winner is whoever builds the most efficient combination across these tracks."
+  "why": "Points come from multiple tracks including planets, technologies, and end-game bonuses, so overall efficiency across systems decides the winner.",
+  "how_you_win": "You win by building the most efficient combination of claimed planets, researched technologies, and infrastructure to out-score opponents after eight rounds."
  },
  "similar": [
+  "The Voyages of Marco Polo",
+  "Barrage",
+  "Praga Caput Regni",
   "Underwater Cities",
-  "On Mars",
-  "Anachrony",
-  "The Great Zimbabwe",
-  "Trickerion"
+  "Teotihuacan: City of Gods"
  ],
- "_fingerprint": "689f2253c778c9ae",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "d0b68ff349d00455",
  "_name": "Pulsar 2849"
 }

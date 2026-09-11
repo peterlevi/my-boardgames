@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "7 Wonders is a fast-paced card drafting game where you build a civilization by picking one card from a hand and passing the rest, repeating until your city takes shape across three ages. It runs almost entirely in parallel with your neighbors, punctuated by quick resource-cost checks and occasional military comparisons, culminating in a broad points tally across military, science, commerce, guilds, and wonders.",
+ "summary": "7 Wonders is a fast-playing card drafting game where each player builds up a small civilization over three ages, picking one card from a hand and passing the rest along, simultaneously with everyone else. It plays quickly even at high player counts because interaction is mostly limited to your two neighbors, via military conflict and resource trading, while your own tableau engine runs mostly in parallel.",
  "praised": [
-  "Extremely fast turns with no downtime despite the player count",
-  "Scales smoothly from 3 to 7 players with consistent playtime",
-  "High variety from different wonders, card combos, and set collection paths",
-  "Low rules overhead for the strategic depth it offers"
+  "fast simultaneous play that scales well to large groups",
+  "satisfying tableau-building and engine-building feel",
+  "short, punchy 30-minute playtime",
+  "variable wonders and strategies keep it replayable"
  ],
  "criticised": [
-  "Limited direct interaction beyond your two neighbors, which can feel solitaire-like",
-  "Military and science can snowball or feel swingy if under-drafted early",
-  "Symbol-heavy iconography has a steep initial learning curve",
-  "Card text/effects require some memorization or reference early on"
+  "scoring can feel like a disconnected point salad with little narrative arc",
+  "military and science can snowball and feel a bit swingy",
+  "limited direct interaction beyond your two neighbors",
+  "some find the endgame scoring math fiddly and anticlimactic"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with limited neighbor-only conflict"
+  "level": "Medium",
+  "kind": "card drafting with neighbor-only conflict and trading",
+  "detail": "Players draft cards from a shared, rotating hand and can only fight or trade resources with the two players seated beside them, so most of the tableau you build is your own private board while the drafted card pool is the only shared state."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "final score sums civilian buildings, coins, wonders, military conflict tokens, science sets, and guild bonuses, so no single track dominates"
+  "breadth": "Salad",
+  "why": "final score is a sum of several unrelated categories (military, coins, wonders, civilian buildings, science, guilds) with little overlap between them",
+  "how_you_win": "you win by accumulating the highest total score across these disparate categories, often by picking one or two engines (like science or military) to specialize in while staying safe elsewhere"
  },
  "similar": [
   "7 Wonders Duel",
-  "Sushi Go!",
   "Race for the Galaxy",
-  "Innovation",
-  "Century: Spice Road"
+  "Sushi Go!",
+  "Century: Spice Road",
+  "Innovation"
  ],
- "_fingerprint": "55debf2117908321",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "a7ef41ddd65e4d44",
  "_name": "7 Wonders"
 }

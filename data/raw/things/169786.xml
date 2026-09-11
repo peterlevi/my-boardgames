@@ -32,42 +32,42 @@ Scythe gives players almost complete control over their fate. Other than each pl
 										      	               				<yearpublished value="2016" />
 						               				<minplayers value="1" />
 						               				<maxplayers value="5" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1688">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1689">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="67" />
-					<result value="Recommended" numvotes="598" />
+					<result value="Recommended" numvotes="599" />
 					<result value="Not Recommended" numvotes="428" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="64" />
-					<result value="Recommended" numvotes="792" />
+					<result value="Recommended" numvotes="793" />
 					<result value="Not Recommended" numvotes="486" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="361" />
+					<result value="Best" numvotes="362" />
 					<result value="Recommended" numvotes="896" />
 					<result value="Not Recommended" numvotes="108" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="1043" />
+					<result value="Best" numvotes="1044" />
 					<result value="Recommended" numvotes="364" />
 					<result value="Not Recommended" numvotes="31" />
 				</results>					
 			
 		<results numplayers="5">		
 					<result value="Best" numvotes="454" />
-					<result value="Recommended" numvotes="663" />
+					<result value="Recommended" numvotes="664" />
 					<result value="Not Recommended" numvotes="150" />
 				</results>					
 			
 		<results numplayers="5+">		
 					<result value="Best" numvotes="63" />
 					<result value="Recommended" numvotes="269" />
-					<result value="Not Recommended" numvotes="571" />
+					<result value="Not Recommended" numvotes="572" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -77,7 +77,7 @@ Scythe gives players almost complete control over their fate. Other than each pl
 						               				<minplaytime value="115" />
 						               				<maxplaytime value="115" />
 						               				<minage value="14" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="361">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="362">
 			<results>		
 					<result value="2" numvotes="2" />
 					<result value="3" numvotes="0" />
@@ -87,7 +87,7 @@ Scythe gives players almost complete control over their fate. Other than each pl
 					<result value="8" numvotes="18" />
 					<result value="10" numvotes="55" />
 					<result value="12" numvotes="120" />
-					<result value="14" numvotes="137" />
+					<result value="14" numvotes="138" />
 					<result value="16" numvotes="22" />
 					<result value="18" numvotes="2" />
 					<result value="21 and up" numvotes="1" />
@@ -1258,7 +1258,23 @@ Scythe gives players almost complete control over their fate. Other than each pl
 			
 
 			
-	
+			<videos total="630">
+						<video id="614839" title="Scythe Solo Playthrough: Saxony Mechanical" category="session" language="English" link="http://www.youtube.com/watch?v=QBygL2Dr8xc" username="Astrotron" userid="3333239" postdate="2026-06-05T12:23:07-05:00" />
+						<video id="614549" title="Scythe Rules Refresher: Automa Solo Mode" category="instructional" language="English" link="http://www.youtube.com/watch?v=iVD8_7-jULM" username="Astrotron" userid="3333239" postdate="2026-06-03T12:20:23-05:00" />
+						<video id="609991" title="Booghy plays... Scythe(2p, Playthrough, Review)" category="review" language="English" link="http://www.youtube.com/watch?v=9WLxE5kSbmg" username="bogdani0405" userid="1267302" postdate="2026-05-02T08:25:00-05:00" />
+						<video id="608162" title="Unboxing Scythe بالعربي" category="unboxing" language="Arabic" link="http://www.youtube.com/watch?v=jlegVfcnM1g" username="hussein1" userid="1185934" postdate="2026-04-19T09:30:42-05:00" />
+						<video id="603467" title="Scythe - Board Game Music (Saxony, Combat)" category="other" language="English" link="http://www.youtube.com/watch?v=Lz7wNN1PmrM" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T23:01:00-05:00" />
+						<video id="603462" title="Scythe - Board Game Music (Saxony, Action)" category="other" language="English" link="http://www.youtube.com/watch?v=WT_obmcaCn0" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T22:35:36-05:00" />
+						<video id="603453" title="Scythe - Board Game Music (Crimea, Combat)" category="other" language="English" link="http://www.youtube.com/watch?v=smxbb6zJbqU" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T21:30:05-05:00" />
+						<video id="603451" title="Scythe - Board Game Music (Crimea, Action)" category="other" language="English" link="http://www.youtube.com/watch?v=v06R0i6ggN8" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T21:20:21-05:00" />
+						<video id="603450" title="Scythe - Board Game Music (Rusviet, Combat)" category="other" language="English" link="http://www.youtube.com/watch?v=GfrNiANiXb0" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T21:10:05-05:00" />
+						<video id="603449" title="Scythe - Board Game Music (Rusviet, Action)" category="other" language="English" link="http://www.youtube.com/watch?v=nQBnTb8NYWk" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T21:05:23-05:00" />
+						<video id="603363" title="Scythe - Board Game Music (Nordic, Combat)" category="other" language="English" link="http://www.youtube.com/watch?v=1s6vlZ3ZSok" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T11:00:08-05:00" />
+						<video id="603361" title="Scythe - Board Game Music (Nordic, Action)" category="other" language="English" link="http://www.youtube.com/watch?v=2udUDsl_Bo8" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T10:55:01-05:00" />
+						<video id="603314" title="Scythe - Board Game Music (Polania, Combat)" category="other" language="English" link="http://www.youtube.com/watch?v=BO-8iY2jaZ4" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T09:30:02-05:00" />
+						<video id="603313" title="Scythe - Board Game Music (Polania, Action)" category="other" language="English" link="http://www.youtube.com/watch?v=uInWqvXqvyk" username="Telcontar_BG" userid="2817490" postdate="2026-03-20T09:25:02-05:00" />
+						<video id="603123" title="Scythe - Board Game Music (Setup)" category="other" language="English" link="http://www.youtube.com/watch?v=X9LE3ZSeDso" username="Telcontar_BG" userid="2817490" postdate="2026-03-18T23:50:32-05:00" />
+					</videos>
 
 	
 
@@ -1267,24 +1283,24 @@ Scythe gives players almost complete control over their fate. Other than each pl
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="94513" />
-			<average value="8.09513" />
-			<bayesaverage value="7.93891" />
+			<usersrated value="94538" />
+			<average value="8.09505" />
+			<bayesaverage value="7.93884" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="27" bayesaverage="7.93891" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="29" bayesaverage="7.90975" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="27" bayesaverage="7.93884" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="29" bayesaverage="7.90968" />
 												</ranks>
 
-			<stddev value="1.46051" />
+			<stddev value="1.46054" />
 			<median value="0" />
-			<owned value="130179" />
-			<trading value="1061" />
+			<owned value="130215" />
+			<trading value="1062" />
 			<wanting value="1791" />
-			<wishing value="26857" />
-			<numcomments value="13804" />
-			<numweights value="3644" />
-			<averageweight value="3.452" />
+			<wishing value="26864" />
+			<numcomments value="13806" />
+			<numweights value="3645" />
+			<averageweight value="3.4521" />
 			</ratings>
 								</statistics>
      

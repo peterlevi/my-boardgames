@@ -298,7 +298,23 @@ After five rounds, the game ends and players score bonus points based on their a
 			
 
 			
-	
+			<videos total="32">
+						<video id="602363" title="Bruxelles 1893" category="review" language="English" link="http://www.youtube.com/watch?v=beKhqp7nWos" username="Melaniebarr" userid="1626931" postdate="2026-03-13T15:21:36-05:00" />
+						<video id="523826" title="Брюссель 1893 - Обзор настольной игры Bruxelles 1893 | Geek Media" category="review" language="Russian" link="http://www.youtube.com/watch?v=LXGomleQMnI" username="Geek_Media" userid="2207816" postdate="2024-11-12T02:00:30-06:00" />
+						<video id="446265" title="Bruxelles 1893 - Tutorial - KludiK" category="instructional" language="English" link="http://www.youtube.com/watch?v=W23aF3z3S98" username="karallan" userid="585668" postdate="2023-07-13T14:01:55-05:00" />
+						<video id="419223" title="Live gameplay de Bruxelles 1893" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=pkL_Kde_o-M" username="andrerodomille1977" userid="1340683" postdate="2023-01-20T09:58:33-06:00" />
+						<video id="418263" title="Bruxelles 1893 Review - Chairman of the Board " category="review" language="English" link="http://www.youtube.com/watch?v=K2KLWPL35IU" username="CotB" userid="1500800" postdate="2023-01-14T08:32:01-06:00" />
+						<video id="348051" title="(Dżentelmeni Przy Stole) Na gorąco: Bruxelles 1893" category="review" language="Polish" link="http://www.youtube.com/watch?v=mxYiIYv68FI" username="pwoloszun" userid="1228337" postdate="2021-10-16T15:55:01-05:00" />
+						<video id="334718" title="Bruxelles 1893 - Tutorial, Playthrough, &amp; Review" category="session" language="English" link="http://www.youtube.com/watch?v=BBDhOrnIIiM" username="PaulGrogan" userid="1685" postdate="2021-07-19T09:47:57-05:00" />
+						<video id="303768" title="Bruxelles 1893 ... Full Playthrough and Review by the Crabby Dice" category="session" language="English" link="http://www.youtube.com/watch?v=3hpXQDPIubI" username="theCrabbyDice" userid="1287268" postdate="2021-01-23T19:58:38-06:00" />
+						<video id="303767" title="Bruxelles 1893 ... Setup and Rules by the Crabby Dice" category="instructional" language="English" link="http://www.youtube.com/watch?v=GEHwblTItOM" username="theCrabbyDice" userid="1287268" postdate="2021-01-23T19:57:56-06:00" />
+						<video id="293074" title="Bruxelles 1893 Overview &amp; Review" category="review" language="English" link="http://www.youtube.com/watch?v=TpaC0TCLhB0" username="eNVyBoardGaming" userid="2747219" postdate="2020-11-19T08:46:47-06:00" />
+						<video id="195240" title=" Initial Thoughts from the Bottom Shelf" category="review" language="English" link="http://www.youtube.com/watch?v=iOjdRjf6ngM" username="singhalex" userid="252181" postdate="2018-10-30T09:54:00-05:00" />
+						<video id="163183" title="Bruxelles 1893 3p Play-through, Teaching, &amp; Roundtable discussion by Heavy Cardboard" category="review" language="English" link="http://www.youtube.com/watch?v=o7D0vRher1A" username="eapeas" userid="377742" postdate="2018-01-15T17:19:52-06:00" />
+						<video id="156092" title="Bruxelle the rules with the designer" category="instructional" language="French" link="http://www.youtube.com/watch?v=LWY-u1bLMpA" username="matinciel" userid="224528" postdate="2017-11-10T08:20:45-06:00" />
+						<video id="144921" title="Boardgame Opinions: Bruxelles 1893" category="review" language="English" link="http://www.youtube.com/watch?v=dEe0n5uYFB4" username="Jonathan Hicks" userid="597327" postdate="2017-08-06T05:17:48-05:00" />
+						<video id="140525" title="Bruxelles 1893: How to Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=Z-OBrL4BMl4" username="johnpriebe" userid="809593" postdate="2017-06-25T15:43:11-05:00" />
+					</videos>
 
 	
 
@@ -308,20 +324,20 @@ After five rounds, the game ends and players score bonus points based on their a
    		<statistics page="1">
 								<ratings>
 			<usersrated value="5918" />
-			<average value="7.58824" />
-			<bayesaverage value="6.97314" />
+			<average value="7.58828" />
+			<bayesaverage value="6.97317" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="537" bayesaverage="6.97314" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="322" bayesaverage="7.11058" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="538" bayesaverage="6.97317" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="322" bayesaverage="7.11062" />
 												</ranks>
 
-			<stddev value="1.2437" />
+			<stddev value="1.24379" />
 			<median value="0" />
-			<owned value="6582" />
+			<owned value="6584" />
 			<trading value="185" />
 			<wanting value="344" />
-			<wishing value="1603" />
+			<wishing value="1605" />
 			<numcomments value="1166" />
 			<numweights value="365" />
 			<averageweight value="3.5836" />

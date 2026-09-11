@@ -425,7 +425,23 @@ One of the Knizia Florentine auction games.
 			
 
 			
-	
+			<videos total="44">
+						<video id="615325" title="Medici - 6p Teaching, Play-through &amp; Roundtable Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=tARX5IXVSIk" username="eapeas" userid="377742" postdate="2026-06-09T22:41:13-05:00" />
+						<video id="598586" title="Medici" category="review" language="English" link="http://www.youtube.com/watch?v=uGS68M0691k" username="Melaniebarr" userid="1626931" postdate="2026-02-17T15:29:02-06:00" />
+						<video id="596534" title="Medici" category="review" language="English" link="http://www.youtube.com/watch?v=kTBlsBhJfcM" username="Melaniebarr" userid="1626931" postdate="2026-02-07T16:23:21-06:00" />
+						<video id="595234" title="Medici | El clásico de subastas de Reiner Knizia ¿sigue siendo bueno?" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=Do7zGK4AHBo" username="eldoclogan" userid="265577" postdate="2026-01-30T13:21:18-06:00" />
+						<video id="527411" title="Top 10 New to Me Board Games of 2024" category="review" language="English" link="http://www.youtube.com/watch?v=J3RveLAPtEk" username="grantlyon" userid="2561488" postdate="2024-12-04T12:41:52-06:00" />
+						<video id="500567" title="Medici Review - How Much Is That Cargo Worth To You?" category="review" language="English" link="http://www.youtube.com/watch?v=Kh6-5mOeBxw" username="BoardGameCo" userid="987813" postdate="2024-06-18T12:00:38-05:00" />
+						<video id="492471" title="Medici Board Game (2024 Edition) | Playthrough (2 Players)" category="session" language="English" link="http://www.youtube.com/watch?v=kBfY2NsAZmA" username="fenirob" userid="478021" postdate="2024-04-26T11:01:15-05:00" />
+						<video id="492131" title="How to Play Medici Board Game in 5 minutes" category="instructional" language="English" link="http://www.youtube.com/watch?v=MeOU4v1piCM" username="DChallenger" userid="473638" postdate="2024-04-24T10:09:39-05:00" />
+						<video id="491906" title="Medici Board Game (2024 Edition) Unboxing (No Talking)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=CcxSqU-N1Hs" username="fenirob" userid="478021" postdate="2024-04-23T11:00:16-05:00" />
+						<video id="488070" title="Best New Edition Board Games Coming to Retail in March, 2024" category="review" language="English" link="http://www.youtube.com/watch?v=xyLNdHHJvE4" username="grantlyon" userid="2561488" postdate="2024-03-28T18:44:08-05:00" />
+						<video id="476894" title="The Purge: # 4419 Medici: The good doctor brings us one of the most re-produced games in history..." category="review" language="English" link="http://www.youtube.com/watch?v=vSsO40txsNU" username="william4192" userid="296644" postdate="2024-01-26T07:32:59-06:00" />
+						<video id="450828" title="The Purge: # 4219 Medici: Learn How to Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=pm1x7mpMabU" username="william4192" userid="296644" postdate="2023-08-08T08:43:39-05:00" />
+						<video id="431404" title="Medici — How to Play, and Is it a Gem?" category="review" language="English" link="http://www.youtube.com/watch?v=fYOgcz8lczc" username="booned" userid="74675" postdate="2023-04-03T14:55:14-05:00" />
+						<video id="424954" title="Medici — Side-by-Slide Comparison" category="other" language="English" link="http://www.youtube.com/watch?v=oD5wjxkpyqY" username="booned" userid="74675" postdate="2023-02-23T12:51:02-06:00" />
+						<video id="315635" title="Medici - 6p Teaching, Play-through, &amp; Round table by Heavy Cardboard" category="review" language="English" link="http://www.youtube.com/watch?v=bTV_YvBhtDk" username="eapeas" userid="377742" postdate="2021-03-29T06:23:20-05:00" />
+					</videos>
 
 	
 
@@ -434,22 +450,22 @@ One of the Knizia Florentine auction games.
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="9189" />
-			<average value="7.18966" />
-			<bayesaverage value="6.82857" />
+			<usersrated value="9193" />
+			<average value="7.18977" />
+			<bayesaverage value="6.8288" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="729" bayesaverage="6.82857" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="467" bayesaverage="6.91567" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="729" bayesaverage="6.8288" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="467" bayesaverage="6.91587" />
 												</ranks>
 
-			<stddev value="1.26079" />
+			<stddev value="1.26067" />
 			<median value="0" />
-			<owned value="10466" />
-			<trading value="253" />
+			<owned value="10468" />
+			<trading value="255" />
 			<wanting value="399" />
-			<wishing value="1841" />
-			<numcomments value="2716" />
+			<wishing value="1842" />
+			<numcomments value="2717" />
 			<numweights value="649" />
 			<averageweight value="2.2157" />
 			</ratings>

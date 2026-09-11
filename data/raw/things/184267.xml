@@ -482,7 +482,23 @@ During the game, players are also trying to complete missions. Once a total of t
 			
 
 			
-	
+			<videos total="205">
+						<video id="628821" title="On Mars (revisited) - 3p Teaching, Play-through &amp; Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=nEvjK-jjkLI" username="eapeas" userid="377742" postdate="2026-09-07T19:22:35-05:00" />
+						<video id="612465" title="On Mars unboxing by Myboardgames.net" category="unboxing" language="English" link="http://www.youtube.com/watch?v=XTligUF50GE" username="My_BoardGames" userid="4345861" postdate="2026-05-19T16:14:48-05:00" />
+						<video id="604402" title="On Mars solo playthrough (rus). Martian potato mode." category="session" language="Russian" link="http://www.youtube.com/watch?v=U6ICBRGeIGY" username="Univanger" userid="1371121" postdate="2026-03-26T10:58:58-05:00" />
+						<video id="604175" title="On Mars solo tutorial and playthrough (rus)" category="session" language="Russian" link="http://www.youtube.com/watch?v=iG-e0BxSne0" username="Univanger" userid="1371121" postdate="2026-03-25T00:05:06-05:00" />
+						<video id="602781" title="Нумограй від каналу &quot;Катерина Кордон&quot;" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=tLKXzSQE_B8" username="punk_rock" userid="2986072" postdate="2026-03-16T15:06:01-05:00" />
+						<video id="591719" title="S3E20 - On Mars" category="session" language="English" link="http://www.youtube.com/watch?v=EeVIvj_DkRA" username="Bellissimo" userid="1721069" postdate="2026-01-09T19:04:54-06:00" />
+						<video id="589444" title="LIVE! On Mars...fritando no planeta vermelho" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=syIfByRwEjk" username="lfigaro" userid="3046229" postdate="2025-12-23T17:30:40-06:00" />
+						<video id="580620" title="Szybka Wrzutka - On Mars" category="review" language="Polish" link="http://www.youtube.com/watch?v=XZeDo9vE2Zc" username="SMGP Kosci" userid="1684808" postdate="2025-11-03T05:32:38-06:00" />
+						<video id="570939" title="Unsere Lieblingsspiele: On Mars - Der Beste Lacerda ? - Couple of Dice" category="review" language="German" link="http://www.youtube.com/watch?v=KvPc_DUaC-w" username="Carstenl91" userid="3121038" postdate="2025-09-09T05:02:00-05:00" />
+						<video id="570109" title="On Mars | What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=V1DNuK39nWA" username="JGLW00d" userid="1101452" postdate="2025-09-03T08:01:32-05:00" />
+						<video id="570091" title="On Mars | Explained" category="instructional" language="English" link="http://www.youtube.com/watch?v=7ck6nurIisQ" username="JGLW00d" userid="1101452" postdate="2025-09-03T05:40:17-05:00" />
+						<video id="545668" title="On Mars [JcK Opina / Juego de Mesa]" category="review" language="Spanish" link="http://www.youtube.com/watch?v=RFWHap9c71s" username="JugandoConKetty" userid="120496" postdate="2025-03-26T10:30:21-05:00" />
+						<video id="538299" title="On Mars - recenzja" category="review" language="Polish" link="http://www.youtube.com/watch?v=2SIg8YG0jW4" username="upadly_bankowiec" userid="1963812" postdate="2025-02-14T11:28:34-06:00" />
+						<video id="536170" title="On Mars - 30 minut przykładowej rozgrywki" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=oEbAvVC-bpc" username="upadly_bankowiec" userid="1963812" postdate="2025-02-04T03:22:08-06:00" />
+						<video id="516122" title="On Mars - zasady" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=wyk0JpdEiKw" username="upadly_bankowiec" userid="1963812" postdate="2024-09-26T13:25:11-05:00" />
+					</videos>
 
 	
 
@@ -491,22 +507,22 @@ During the game, players are also trying to complete missions. Once a total of t
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="15252" />
-			<average value="8.15821" />
-			<bayesaverage value="7.74105" />
+			<usersrated value="15259" />
+			<average value="8.15783" />
+			<bayesaverage value="7.74079" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="59" bayesaverage="7.74105" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="43" bayesaverage="7.82161" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="59" bayesaverage="7.74079" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="43" bayesaverage="7.8213" />
 												</ranks>
 
-			<stddev value="1.51659" />
+			<stddev value="1.51738" />
 			<median value="0" />
-			<owned value="23493" />
+			<owned value="23499" />
 			<trading value="202" />
 			<wanting value="863" />
-			<wishing value="8778" />
-			<numcomments value="2421" />
+			<wishing value="8783" />
+			<numcomments value="2423" />
 			<numweights value="1793" />
 			<averageweight value="4.6241" />
 			</ratings>

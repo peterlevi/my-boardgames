@@ -1,33 +1,39 @@
 {
- "confidence": "high",
- "summary": "Players take turns dropping one firefly token at a time onto critter cards, trying to end up controlling the cute critters worth points while dumping fireflies on wild critters they don't want (which then hurt whoever ends up owning them). It plays fast and light, with the real tension being whether to keep spending fireflies now or hold them back for a better card later in the round.",
+ "confidence": "medium",
+ "summary": "Smile is a light Michael Schacht card game where players place fireflies one at a time onto shared critter cards, trying to attract cute creatures while avoiding the wild ones that score negative. It plays fast and is pitched as a family filler built on a simple push-your-luck bidding rhythm.",
  "praised": [
-  "Very quick to teach and play, works well as a filler or family/gateway game",
-  "Charming, colorful critter artwork",
-  "Simple push-your-luck bidding creates real moment-to-moment tension despite minimal rules",
-  "Good for mixed-age or non-gamer groups"
+  "quick, colorful, easy to teach to families",
+  "cute art and a satisfying simple bidding puzzle",
+  "portable and short playtime"
  ],
  "criticised": [
-  "Too light and repetitive to hold the interest of experienced gamers",
-  "Limited long-term replayability once the pattern is learned",
-  "Outcomes can feel swingy or luck-driven due to card draw and turn order"
+  "thin for experienced gamers who want more decision depth",
+  "can feel repetitive across a full session",
+  "luck of card order can swing outcomes"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "auction/bidding with blocking via shared firefly pool"
+  "kind": "closed economy bidding",
+  "detail": "All fireflies are drawn from and returned to the same shared supply, so every token you commit to a card is one your opponents can't use, and you're watching their pace to time your own bids. There's no private tableau of note beyond the cards you've claimed."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is decided almost entirely by the point values of the critter cards each player ends up owning, offset by penalties from unwanted wild critters."
+  "why": "Final score is simply the sum of your claimed creature card values minus any wild critters you were stuck with.",
+  "how_you_win": "You win by claiming the highest-value creature cards while managing your firefly supply so you aren't forced onto negative wild cards."
  },
  "similar": [
   "Coloretto",
   "For Sale",
-  "No Thanks!",
-  "Web of Deception",
-  "Money"
+  "Bohnanza",
+  "Sushi Go",
+  "Point Salad"
  ],
- "_fingerprint": "69176b19dd4c238e",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "BoardGameCo"
+ ],
+ "_fingerprint": "972ec308e655e223",
  "_name": "Smile"
 }

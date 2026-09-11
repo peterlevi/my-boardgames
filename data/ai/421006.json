@@ -1,34 +1,41 @@
 {
  "confidence": "medium",
- "summary": "A tense two-player card-drafting duel where one side plays the Fellowship racing to destroy the Ring and the other plays Sauron building armies and corrupting the map, with area-majority control over Middle-earth's regions deciding momentum each chapter. It plays fast and tight, with several different ways for either side to trigger a sudden-death win before the final scoring even happens.",
+ "summary": "A tense two-player asymmetric duel where one player pushes the Fellowship's quest toward Mount Doom while managing skills and hoarding treasure, and the other plays Sauron racing to conquer Middle-earth's regions and hunt down the ring-bearer. Turns are quick and tightly interlocking, with the tension ratcheting up across three escalating chapters toward a sudden-death finish.",
  "praised": [
-  "Tight, tense two-player design from experienced co-designers",
-  "Strong thematic integration of Fellowship vs Sauron asymmetry",
-  "Multiple paths to instant victory keep every turn meaningful",
-  "Quick to teach and play (30 minutes) while staying strategically dense"
+  "strong thematic asymmetry between the two sides",
+  "tense, escalating tension toward the finish",
+  "quick, cleanly structured turns despite depth",
+  "good production values typical of the designers' recent output"
  ],
  "criticised": [
-  "Inevitable comparisons to 7 Wonders Duel as derivative rather than fresh",
-  "Asymmetric factions can feel unbalanced or favor one side in early plays",
-  "Card draw/setup variance can swing a short game significantly",
-  "Sudden-death win conditions can end games abruptly before a side feels they've had their turn"
+  "can feel unbalanced between the two sides depending on card draws",
+  "some luck in the shared card row/market",
+  "replayability may plateau after many plays",
+  "asymmetry means each side must be learned somewhat separately"
  ],
  "interaction": {
   "level": "High",
-  "kind": "area control and open conflict over a shared card row and map"
+  "kind": "asymmetric race and area majority",
+  "detail": "Players draft from a shared card row and directly contest control over regions of Middle-earth on a shared modular board, while racing on parallel tracks (the Ring's progress vs. Sauron's hunt). Very little happens in isolation — almost every action either advances your own race or directly threatens the opponent's."
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Some",
-  "why": "The winner is decided either by triggering one of several sudden-death conditions (quest completion, army advance, area domination) or by comparing accumulated points/board state if the chapters run their course"
+  "breadth": "Focused",
+  "why": "The game isn't decided by points but by which side reaches its objective first — the Ring's destruction or Sauron's conquest/capture.",
+  "how_you_win": "As the Fellowship you advance the Quest track while building up skills and holding off Sauron; as Sauron you dominate regions and race to catch Frodo before the quest completes."
  },
  "similar": [
   "7 Wonders Duel",
   "Star Wars: The Duel",
   "Watergate",
-  "Targi",
-  "Ankh: Gods of Egypt"
+  "Jaws the Board Game",
+  "Battle Line"
  ],
- "_fingerprint": "03cd5bfaa8351fc5",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "764c0012dfc98742",
  "_name": "The Lord of the Rings: Duel for Middle-earth"
 }

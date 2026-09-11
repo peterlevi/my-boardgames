@@ -286,7 +286,23 @@ Mottainai is a quick, but deep, game experience.
 			
 
 			
-	
+			<videos total="19">
+						<video id="484817" title="Mottainai Board Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=FVKyHkdn1uc" username="program2game" userid="934384" postdate="2024-03-08T07:25:11-06:00" />
+						<video id="443089" title="Mottainai Playthrough by Which Game First - A Board Game Podcast" category="session" language="English" link="http://www.youtube.com/watch?v=YpkZTJXYg2U" username="WhichGameFirst" userid="2265981" postdate="2023-06-21T21:51:11-05:00" />
+						<video id="391367" title="Analysis of finals loss" category="session" language="English" link="http://www.youtube.com/watch?v=w-z399j4ZZg" username="st_arcturus" userid="2988521" postdate="2022-07-23T14:08:07-05:00" />
+						<video id="373274" title="analysis of play" category="session" language="English" link="http://www.youtube.com/watch?v=1Cbc_x4QWiU" username="st_arcturus" userid="2988521" postdate="2022-03-28T10:38:05-05:00" />
+						<video id="268421" title="Mottainai Board Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=u2VEk9V2Xq0" username="Athex" userid="20808" postdate="2020-06-13T11:41:49-05:00" />
+						<video id="212735" title="Mottainai - recensione #057" category="review" language="Italian" link="http://www.youtube.com/watch?v=JIPk8eH3BP4" username="Dentro la Scatola" userid="1184776" postdate="2019-03-23T04:06:30-05:00" />
+						<video id="210449" title="Mottainai Solo Play" category="session" language="English" link="http://www.youtube.com/watch?v=m1Qw4chDNPE" username="Wilko18" userid="872080" postdate="2019-03-05T03:30:01-06:00" />
+						<video id="129974" title="Jack Explicador - Partida Completa" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=VR93ltATpo8" username="JackExplicador" userid="761184" postdate="2017-03-11T07:58:08-06:00" />
+						<video id="112971" title="Mottainai - Full Tutorial and 2-player Play-through of Mottainai - Computerized" category="instructional" language="English" link="http://www.youtube.com/watch?v=rEO5KB8HPZE" username="schnel" userid="212420" postdate="2016-10-04T22:15:57-05:00" />
+						<video id="85978" title="Rahdo Runs Through►►► Mottainai" category="review" language="English" link="http://www.youtube.com/watch?v=LGb-nQ53-B0" username="rahdo" userid="313730" postdate="2015-12-12T03:09:08-06:00" />
+						<video id="81615" title="The Dice Tower reviews Mottainai" category="review" language="English" link="http://www.youtube.com/watch?v=SwRTPNMHzBM" username="ZeeGarcia" userid="46676" postdate="2015-10-24T12:26:12-05:00" />
+						<video id="78663" title="The Game Gallery Channel -  Mottainai Unboxing Review" category="review" language="Japanese" link="http://www.youtube.com/watch?v=KxQ700m6hrg" username="hal99" userid="27784" postdate="2015-09-17T19:41:18-05:00" />
+						<video id="77622" title="Mottainai - An Example Turn" category="instructional" language="English" link="http://www.youtube.com/watch?v=nOhF6VtkCUQ" username="laxisusous" userid="944134" postdate="2015-09-05T09:38:56-05:00" />
+						<video id="77140" title="Bonding With Board Games: The Chief Review Mottainai" category="review" language="English" link="http://www.youtube.com/watch?v=9zZWFbA0R4c" username="armed-medic" userid="21746" postdate="2015-08-29T17:05:59-05:00" />
+						<video id="76893" title="Overview of Mottainai at Gen Con 2015" category="interview" language="English" link="http://www.youtube.com/watch?v=cjVt7TKX9-o" username="W Eric Martin" userid="15734" postdate="2015-08-26T10:23:11-05:00" />
+					</videos>
 
 	
 
@@ -295,21 +311,21 @@ Mottainai is a quick, but deep, game experience.
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="4699" />
-			<average value="7.04676" />
-			<bayesaverage value="6.51833" />
+			<usersrated value="4701" />
+			<average value="7.04674" />
+			<bayesaverage value="6.51847" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1301" bayesaverage="6.51833" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="756" bayesaverage="6.62937" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1299" bayesaverage="6.51847" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="755" bayesaverage="6.62949" />
 												</ranks>
 
-			<stddev value="1.5427" />
+			<stddev value="1.54237" />
 			<median value="0" />
-			<owned value="8624" />
-			<trading value="353" />
+			<owned value="8623" />
+			<trading value="352" />
 			<wanting value="174" />
-			<wishing value="1381" />
+			<wishing value="1382" />
 			<numcomments value="1386" />
 			<numweights value="197" />
 			<averageweight value="3.1726" />

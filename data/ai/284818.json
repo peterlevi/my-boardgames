@@ -1,34 +1,40 @@
 {
- "confidence": "high",
- "summary": "Caylus 1303 is a streamlined reimagining of the classic worker-placement game Caylus, where players place workers to gather resources and construct buildings while competing for limited action slots. It trims the complexity of the original into a faster, more accessible but still meaty euro experience.",
+ "confidence": "medium",
+ "summary": "A streamlined, faster reboot of the classic Caylus, where players place workers to gather resources and construct buildings along the castle's road for points and bonuses. It keeps the worker-placement bones of the original but trims playtime and adds variable setup and character powers for more replayability.",
  "praised": [
-  "successfully modernizes and speeds up the classic Caylus formula",
-  "meaningful worker-placement blocking and tension",
-  "good variability from modular setup and characters",
-  "faster playtime than the original while retaining depth"
+  "Faithful modernization that keeps Caylus's strategic depth",
+  "Shorter playtime than the original Caylus",
+  "Variable setup keeps games fresh",
+  "Good production and tighter rules"
  ],
  "criticised": [
-  "loses some of the depth/crunch fans of the original wanted",
-  "still has a learning curve for newcomers",
-  "some feel it's a lesser echo of the 2005 original",
-  "building selection can feel swingy"
+  "Some feel it loses a bit of the original's grandeur",
+  "Still fairly dry/economic for players wanting theme",
+  "Comparisons to the original divide opinion on which is better"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "worker placement blocking and competition for limited actions"
+  "level": "Medium",
+  "kind": "worker placement with shared building slots and take-that elements",
+  "detail": "Players place workers on shared action spots that others can also use (with the provost/turn-order mechanic affecting who benefits), and buildings placed by one player can be used by others for a fee. Most resource management happens on a shared board rather than isolated player boards."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "victory points come from buildings built, resources banked, and favor with the provost/king mechanisms"
+  "why": "Points come from buildings built, favor with the castle, and end-game bonuses, so success requires a mix of building efficiently and timing your worker placements.",
+  "how_you_win": "You build valuable buildings along the road and earn favor/prestige points through the game, and the player with the most total points at the end wins."
  },
  "similar": [
   "Caylus",
   "Le Havre",
-  "Lords of Waterdeep",
-  "旅 (The Voyages of Marco Polo)",
-  "Coimbra"
+  "The Voyages of Marco Polo",
+  "Anachrony",
+  "Barrage"
  ],
- "_fingerprint": "b8a703cd1c2bd383",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "19bf8b049dabcc4c",
  "_name": "Caylus 1303"
 }

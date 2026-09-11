@@ -42,16 +42,16 @@ You can win 7 Wonders Duel in one of three ways: each time you acquire a militar
 										      	               				<yearpublished value="2015" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="2" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1540">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1541">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="13" />
 					<result value="Recommended" numvotes="110" />
-					<result value="Not Recommended" numvotes="1108" />
+					<result value="Not Recommended" numvotes="1109" />
 				</results>					
 			
 		<results numplayers="2">		
-					<result value="Best" numvotes="1489" />
+					<result value="Best" numvotes="1490" />
 					<result value="Recommended" numvotes="32" />
 					<result value="Not Recommended" numvotes="6" />
 				</results>					
@@ -59,7 +59,7 @@ You can win 7 Wonders Duel in one of three ways: each time you acquire a militar
 		<results numplayers="2+">		
 					<result value="Best" numvotes="7" />
 					<result value="Recommended" numvotes="5" />
-					<result value="Not Recommended" numvotes="1182" />
+					<result value="Not Recommended" numvotes="1183" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -69,7 +69,7 @@ You can win 7 Wonders Duel in one of three ways: each time you acquire a militar
 						               				<minplaytime value="30" />
 						               				<maxplaytime value="30" />
 						               				<minage value="10" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="423">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="424">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
@@ -77,7 +77,7 @@ You can win 7 Wonders Duel in one of three ways: each time you acquire a militar
 					<result value="5" numvotes="2" />
 					<result value="6" numvotes="9" />
 					<result value="8" numvotes="117" />
-					<result value="10" numvotes="193" />
+					<result value="10" numvotes="194" />
 					<result value="12" numvotes="88" />
 					<result value="14" numvotes="12" />
 					<result value="16" numvotes="1" />
@@ -890,7 +890,23 @@ You can win 7 Wonders Duel in one of three ways: each time you acquire a militar
 			
 
 			
-	
+			<videos total="522">
+						<video id="616832" title="7 Wonders Duel | One Mistake Costs the Game" category="session" language="English" link="http://www.youtube.com/watch?v=HEV-uwrPCoQ" username="JUSTFELLAS" userid="4595430" postdate="2026-06-19T14:21:07-05:00" />
+						<video id="611556" title="7 WONDERS DUEL + PANTHEON - Brettspiel - Regeln &amp; Let's Play - Board Game Arena" category="session" language="German" link="http://www.youtube.com/watch?v=2QrD4qnAHkk" username="Geekpunkt" userid="3167273" postdate="2026-05-13T11:28:55-05:00" />
+						<video id="610684" title="7 Wonders Duel Review" category="review" language="Greek" link="http://www.youtube.com/watch?v=0FWCxast_XQ" username="fanlandria" userid="3703221" postdate="2026-05-07T06:21:07-05:00" />
+						<video id="606972" title="The 2 Mistakes New Players Make | 7 Wonders Duel" category="other" language="English" link="http://www.youtube.com/watch?v=auZcuOAJKD4" username="Red14Blue16" userid="1046041" postdate="2026-04-12T23:00:08-05:00" />
+						<video id="605889" title="Great Lighthouse or Piraeus: Which should YOU build FIRST?" category="other" language="English" link="http://www.youtube.com/watch?v=NKJBT8zK6M0" username="Red14Blue16" userid="1046041" postdate="2026-04-05T23:00:24-05:00" />
+						<video id="605705" title="Come si gioca a 7 Wonders Duel in un lampo" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=gfNtksQn8lM" username="CappellaioMoltoMatto" userid="401298" postdate="2026-04-04T10:51:54-05:00" />
+						<video id="604968" title="7 Wonders Duel | Do we have an ACE up our Sleave" category="other" language="English" link="http://www.youtube.com/watch?v=2Qequh3kT-k" username="Red14Blue16" userid="1046041" postdate="2026-03-30T16:00:09-05:00" />
+						<video id="604810" title="7 Wonders Duel | Why a BAD IDEA to EXTRA TURN as Player 2?" category="other" language="English" link="http://www.youtube.com/watch?v=KAjIyoPud2s" username="Red14Blue16" userid="1046041" postdate="2026-03-29T16:00:15-05:00" />
+						<video id="604294" title="7 Wonders Duel | ALMOST a Military Supremacy Victory!" category="other" language="English" link="http://www.youtube.com/watch?v=q9iewdsSEmE" username="Red14Blue16" userid="1046041" postdate="2026-03-25T16:01:10-05:00" />
+						<video id="603948" title="7 Wonders Duel | Strategy to GUARANTEE a Science Win!" category="other" language="English" link="http://www.youtube.com/watch?v=GiUBiVIPUTo" username="Red14Blue16" userid="1046041" postdate="2026-03-23T16:00:32-05:00" />
+						<video id="603702" title="I Give up... Let's Just Play Vanilla 7 Wonders Duel SilentProtest" category="other" language="English" link="http://www.youtube.com/watch?v=CPcQzNBnwjU" username="Red14Blue16" userid="1046041" postdate="2026-03-22T16:00:18-05:00" />
+						<video id="603210" title="Silent Protest Game 2 Rematch 2025 | 7 Wonders Duel Board Game" category="other" language="English" link="http://www.youtube.com/watch?v=Q2yinECqaog" username="Red14Blue16" userid="1046041" postdate="2026-03-19T16:00:39-05:00" />
+						<video id="603088" title="Silent Protest Game 1 Vs me | 7 Wonders Duel Board Game" category="other" language="English" link="http://www.youtube.com/watch?v=9PQ-DTZd6zQ" username="Red14Blue16" userid="1046041" postdate="2026-03-18T16:00:24-05:00" />
+						<video id="602941" title="Spied on by Top Player while 7 Wonders Dueling | Board Game Strategy" category="other" language="English" link="http://www.youtube.com/watch?v=I_ywRdacsd0" username="Red14Blue16" userid="1046041" postdate="2026-03-17T16:00:27-05:00" />
+						<video id="602791" title="Tried to mess with the WRONG DUELIST | 7WD Board Game" category="other" language="English" link="http://www.youtube.com/watch?v=N9rnwG2Fnlk" username="Red14Blue16" userid="1046041" postdate="2026-03-16T16:00:22-05:00" />
+					</videos>
 
 	
 
@@ -899,24 +915,24 @@ You can win 7 Wonders Duel in one of three ways: each time you acquire a militar
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="110468" />
-			<average value="8.07438" />
-			<bayesaverage value="7.9494" />
+			<usersrated value="110497" />
+			<average value="8.07432" />
+			<bayesaverage value="7.94937" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="24" bayesaverage="7.9494" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="27" bayesaverage="7.91404" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="24" bayesaverage="7.94937" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="27" bayesaverage="7.914" />
 												</ranks>
 
-			<stddev value="1.20162" />
+			<stddev value="1.2016" />
 			<median value="0" />
-			<owned value="187198" />
-			<trading value="1458" />
-			<wanting value="850" />
-			<wishing value="12391" />
-			<numcomments value="14439" />
-			<numweights value="3460" />
-			<averageweight value="2.2269" />
+			<owned value="187278" />
+			<trading value="1463" />
+			<wanting value="851" />
+			<wishing value="12402" />
+			<numcomments value="14441" />
+			<numweights value="3463" />
+			<averageweight value="2.2267" />
 			</ratings>
 								</statistics>
      

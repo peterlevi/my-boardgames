@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Orléans is a bag-building worker placement game where you draft followers into a bag, then draw a handful each round to place on action spaces and trigger their effects. It rewards efficient engine-building across trade, science, and exploration tracks, with a calm, low-conflict feel punctuated by tense event cards that can wreck an unprepared player.",
+ "summary": "Orléans is a deck/bag-building worker placement game where you draw followers from a cloth bag and place them on a personal board to trigger actions, gradually upgrading your bag with better specialists. It's a tight, satisfying engine builder with light theme and a strong sense of steady improvement each round.",
  "praised": [
-  "Elegant bag-building mechanism that feels fresh compared to standard worker placement",
-  "Multiple viable paths to victory with satisfying engine-building",
-  "Tight, clean rules that produce deep strategic decisions",
-  "Beautiful, thematic production and map"
+  "Elegant bag-building mechanic feels fresh",
+  "Multiple viable strategies (trade, research, exploration)",
+  "Clean rules for the depth it offers"
  ],
  "criticised": [
-  "Very low direct player interaction, can feel solitaire-ish",
-  "Event deck can deliver harsh, sometimes 'gotcha' setbacks",
-  "Downtime between turns in higher player counts",
-  "Some randomness in the bag draw can feel swingy for a euro"
+  "Dry, spreadsheet-like theme",
+  "Can feel a bit solitaire with limited direct interaction",
+  "Trading/event track bookkeeping can slow turns"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with some space competition and trade route/knight-based blocking"
+  "kind": "mostly parallel play with shared board spaces",
+  "detail": "Players compete for limited slots on shared action spaces and the shared trade/travel tracks, so timing and first-mover advantage matter, but each player's engine (bag, board, followers) is entirely their own. There's no direct combat or resource theft."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from multiple tracks (science, trade stations, finances, development) so the winner is usually whoever built the most efficient multi-track engine rather than one dominant source"
+  "why": "Points accumulate from trade stations, developments, research track, and town hall tiles",
+  "how_you_win": "You win by building the most efficient follower engine and converting it into the most development/research/trade points by game end."
  },
  "similar": [
-  "Trajan",
   "The Voyages of Marco Polo",
-  "Le Havre",
   "Grand Austria Hotel",
-  "Bruges"
+  "Great Western Trail",
+  "Trickerion",
+  "Le Havre"
  ],
- "_fingerprint": "13f17ba88dd5140b",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "ff908650772e977b",
  "_name": "Orléans"
 }

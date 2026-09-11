@@ -1,34 +1,41 @@
 {
- "confidence": "high",
- "summary": "Golem is a dense engine-building euro where you grow a golem's power through careful action drafting on a marble-based turn order system, balancing risk against reward since an overgrown golem can rampage and hurt you. Every round is a tight puzzle of sequencing actions, managing resources, and timing when to cash in your golem's power before it becomes a liability.",
+ "confidence": "medium",
+ "summary": "A dense worker-placement engine-builder set in 16th-century Prague, where players train rabbi-students and grow golems that wander a shared neighborhood board, delivering benefits until they grow dangerously powerful. It's from the same team behind Grand Austria Hotel and Lorenzo il Magnifico, and plays with a similar flavor of tightly interlocking action-selection systems.",
  "praised": [
-  "Clever marble-drafting turn order mechanism that ties action selection to when you act",
-  "Strong engine-building depth with meaningful variable player powers",
-  "High replayability from variable setup and multiple viable strategies",
-  "Satisfying tension between growing the golem and controlling it before it turns destructive"
+  "deep, rewarding engine-building with many viable paths",
+  "clever risk/reward tension in growing versus destroying golems",
+  "high production values and strong table presence",
+  "good replayability from variable player powers and setup"
  ],
  "criticised": [
-  "Steep rules overhead and long teach for a first play",
-  "Heavy on fiddly bookkeeping and tracking many resource types",
-  "Player interaction is limited and mostly indirect",
-  "Can feel like a solitaire, multiplayer-solitaire experience at lower player counts"
+  "heavy rulebook and long teach",
+  "dense iconography to learn",
+  "can suffer from analysis paralysis with so many options",
+  "some find it a busy \"salad\" of subsystems rather than a focused design"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light blocking over shared action spaces and turn order"
+  "level": "Medium",
+  "kind": "worker placement blocking with golems on a shared board",
+  "detail": "Players take turns on shared action spaces, so popular spots get blocked, and golems move through a shared neighborhood map where they can affect or threaten other players' students and buildings. Each player otherwise develops their own tableau of cards and resources largely independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from golem development, artifacts, book collection, and end-game bonuses, rewarding whoever builds the most efficient overall engine"
+  "why": "Final score draws from golem management, card sets, resource conversion, and end-game bonuses, spreading value across several systems.",
+  "how_you_win": "You build an efficient engine of students and golems, converting resources and completed goals into victory points faster and more consistently than your opponents."
  },
  "similar": [
   "Lorenzo il Magnifico",
   "Grand Austria Hotel",
   "Tzolk'in: The Mayan Calendar",
-  "The Voyages of Marco Polo",
-  "Anachrony"
+  "Underwater Cities",
+  "Trickerion: Legends of Illusion"
  ],
- "_fingerprint": "7682e13a5a7199d9",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "31bfa53355b3d093",
  "_name": "Golem"
 }

@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "A fast, tight two-player skirmish game where you summon units from a hand of cards onto a small grid, attack with dice, and race to kill the enemy summoner before they kill yours. Games run 30-45 minutes once you know the factions, with constant back-and-forth tempo swings and a strong deckbuilding/faction-identity layer on top.",
+ "summary": "Summoner Wars is a fast, tactical head-to-head card game where each player commands a unique faction, summoning units onto a shared battle grid to destroy the enemy summoner. Games are quick, aggressive, and full of card-based combat tricks and positioning.",
  "praised": [
-  "Extremely fast setup and short, tense playtime",
-  "Strong asymmetric faction design where each army feels distinct to play",
-  "Good depth-to-complexity ratio for a card/dice combat game",
-  "High production quality and faction expandability in the 2nd edition relaunch",
-  "Tactical positioning on the small grid matters a lot despite the simple ruleset"
+  "Fast, tense two-player duels",
+  "Strong faction asymmetry and variety",
+  "Good production quality in the second edition",
+  "Deck-building potential for veterans"
  ],
  "criticised": [
-  "Dice-based combat introduces swingy randomness that can decide fights",
-  "Only 2 players, so it's a pure head-to-head confrontation game with no diplomacy or team play",
-  "Faction/card balance has been an ongoing point of debate across factions and expansions",
-  "Deck construction and faction knowledge create a real experience gap between new and veteran players"
+  "Luck from dice/card draw can swing combat",
+  "Some factions felt unbalanced at launch",
+  "Limited to two players only",
+  "Can feel swingy in short games"
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct open conflict and area denial on a shared grid"
+  "kind": "open conflict on a shared grid",
+  "detail": "Both players' units occupy and fight directly on the same battlefield, with attacks, movement, and card play constantly affecting the opponent's board state. There is no parallel play; nearly every action is a direct confrontation."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game ends the instant one player's summoner is destroyed, so there is no point-counting at all."
+  "why": "There is no point scoring; the game ends immediately when a summoner is destroyed.",
+  "how_you_win": "You win by maneuvering your units to destroy the opposing summoner before yours falls."
  },
  "similar": [
-  "Summoner Wars (First Edition)",
+  "Star Wars: The Deckbuilding Game",
   "BattleCON",
-  "Star Realms",
+  "Smash Up",
   "Netrunner",
-  "Smash Up"
+  "Ashes: Rise of the Phoenixborn"
  ],
- "_fingerprint": "88e2f28e38d38544",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Before You Play"
+ ],
+ "_fingerprint": "867e6acd8a2bc60a",
  "_name": "Summoner Wars (Second Edition)"
 }

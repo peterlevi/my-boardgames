@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "It's the same simple hot-potato press-your-luck game as base Exploding Kittens, but scaled up to fit huge groups with a bigger deck and sillier extra cards. Turns are quick and the humor is broad and juvenile, so it plays best as a loud, casual icebreaker rather than a game with real strategic depth.",
+ "summary": "A fast, loud party game where players draw cards hoping not to pull an exploding kitten, using a hand of joke and defusal cards to manipulate the deck and dump bad luck on opponents. It plays in a few minutes per round with lots of shouting and bluffing rather than deep strategy.",
  "praised": [
-  "Easy to teach to non-gamers and kids in minutes",
-  "Great for large groups (up to 10 players) where few games scale",
-  "Quick, high-energy rounds with real tension when drawing",
-  "Irreverent NSFW-adjacent art and humor lands well with casual/party crowds"
+  "Simple rules anyone can pick up in a minute",
+  "Great with large groups and non-gamers",
+  "Funny illustrations and card text",
+  "Fast rounds encourage replaying immediately"
  ],
  "criticised": [
-  "Very light, mostly luck-driven with limited meaningful decisions",
-  "Player elimination means knocked-out players sit out and wait",
-  "Humor and card art can feel gimmicky or wear thin after repeated plays",
-  "Little replayability or depth for regular gamer groups"
+  "Very little actual decision-making once you're used to it",
+  "Luck of the draw can decide the game regardless of play",
+  "Party Pack adds volume/variants but not real depth",
+  "Wears thin with dedicated hobbyist groups"
  ],
  "interaction": {
   "level": "High",
-  "kind": "take-that and player elimination"
+  "kind": "take that and push your luck",
+  "detail": "Players directly target each other with attack, skip, and 'make another player draw' cards, and the shared deck is the entire game state everyone is manipulating. Almost every turn is a decision about who to hurt or how to dodge the exploding kitten, so the game is nearly all interaction with no private tableau."
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Other",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is simply the last player who hasn't drawn an Exploding Kitten"
+  "why": "There is no scoring — it's survival, so the winner is simply the last player who hasn't exploded.",
+  "how_you_win": "You win by being the only player left who hasn't drawn an exploding kitten card, using defuse and deflection cards to survive."
  },
  "similar": [
-  "Exploding Kittens",
-  "Throw Throw Burrito",
-  "Mafia/Werewolf",
   "Munchkin",
-  "Sushi Go Party!"
+  "Sushi Go Party!",
+  "Skull",
+  "Throw Throw Burrito",
+  "Coup"
  ],
- "_fingerprint": "2943c7d61fc2b396",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "Geek & Sundry"
+ ],
+ "_fingerprint": "ccd008cb07f63597",
  "_name": "Exploding Kittens: Party Pack"
 }

@@ -1841,7 +1841,23 @@ When the three global parameters (temperature, oxygen, ocean) have all reached t
 			
 
 			
-	
+			<videos total="745">
+						<video id="628064" title="Top 100 Games of All Time: 60-51! (2026)" category="other" language="English" link="http://www.youtube.com/watch?v=BYIkefQmPbQ" username="ZValentin" userid="2082778" postdate="2026-09-02T14:36:27-05:00" />
+						<video id="619518" title="Les jeux que je ne joue pas assez souvent" category="other" language="French" link="http://www.youtube.com/watch?v=rTpJBDiC0ls" username="Hyvll" userid="1597619" postdate="2026-07-08T10:12:55-05:00" />
+						<video id="614877" title="Top 10 (Should've Been) #1 Games!" category="other" language="English" link="http://www.youtube.com/watch?v=Xprz5brWTkQ" username="ZValentin" userid="2082778" postdate="2026-06-05T18:22:44-05:00" />
+						<video id="614460" title="TERRAFORMING MARS - Live Stream || Mid Day Madness on Board Game Arena" category="session" language="English" link="http://www.youtube.com/watch?v=ilsXpWDLNmk" username="neeber89" userid="457826" postdate="2026-06-03T02:13:49-05:00" />
+						<video id="610789" title=" Terraforming Mars: Regras CANTADAS em 3min ?" category="humor" language="Portuguese" link="http://www.youtube.com/watch?v=m-DVkqnzets" username="DanielNobrega" userid="529747" postdate="2026-05-07T18:19:11-05:00" />
+						<video id="607851" title="Unboxing Terraforming Mars بالعربي" category="unboxing" language="Arabic" link="http://www.youtube.com/watch?v=-2uK63oSFi8" username="hussein1" userid="1185934" postdate="2026-04-16T11:18:39-05:00" />
+						<video id="605450" title="Terraforming Mars - Unboxing &amp; Reboxing - What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=rmPYm3UbOFE" username="broseygames" userid="4181268" postdate="2026-04-02T23:03:01-05:00" />
+						<video id="604364" title="Automa Showdown! Terraforming Mars Solo Gameplay" category="session" language="English" link="http://www.youtube.com/watch?v=Ojp2okUlNCo" username="The_Lone_Boardgamer" userid="4170248" postdate="2026-03-26T07:05:15-05:00" />
+						<video id="602359" title="Terraforming Mars" category="review" language="English" link="http://www.youtube.com/watch?v=JAHG1eqj9Qw" username="Melaniebarr" userid="1626931" postdate="2026-03-13T15:16:52-05:00" />
+						<video id="599527" title="Making Terraforming Mars" category="interview" language="English" link="http://www.youtube.com/watch?v=7qgcaUEkHGs" username="cypherpunkbg" userid="4365257" postdate="2026-02-23T09:18:22-06:00" />
+						<video id="599367" title="Terraforming Mars | Venus Next &amp; Colonies | Live Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=gC43NJJ6W3s" username="Dads_and_Dice" userid="3205436" postdate="2026-02-22T09:51:23-06:00" />
+						<video id="597295" title=" Terraforming Mars - mape - raskutijavanje" category="unboxing" language="Croatian" link="http://www.youtube.com/watch?v=o2MF_u3cYkI" username="Gejmeraja" userid="3876365" postdate="2026-02-11T14:14:29-06:00" />
+						<video id="597229" title=" Terraforming Mars - raskutijavanje" category="unboxing" language="Croatian" link="http://www.youtube.com/watch?v=82pF2RYwRXM" username="Gejmeraja" userid="3876365" postdate="2026-02-11T13:21:10-06:00" />
+						<video id="596470" title=" Immersive Terraforming Mars Soundtrack | 2.5 Hours of Sci-Fi Ambience for Gaming" category="other" language="English" link="http://www.youtube.com/watch?v=XF1PX03-kSQ" username="naykris" userid="2480193" postdate="2026-02-07T02:54:02-06:00" />
+						<video id="595418" title="Unboxing - Terraforming Mars" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=C15kh6vRRJ4" username="AllMight15" userid="2830395" postdate="2026-01-31T12:49:08-06:00" />
+					</videos>
 
 	
 
@@ -1850,22 +1866,22 @@ When the three global parameters (temperature, oxygen, ocean) have all reached t
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="114866" />
-			<average value="8.33107" />
-			<bayesaverage value="8.17952" />
+			<usersrated value="114896" />
+			<average value="8.33092" />
+			<bayesaverage value="8.17937" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="9" bayesaverage="8.17952" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="8" bayesaverage="8.1561" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="9" bayesaverage="8.17937" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="8" bayesaverage="8.15598" />
 												</ranks>
 
-			<stddev value="1.43841" />
+			<stddev value="1.43846" />
 			<median value="0" />
-			<owned value="162117" />
-			<trading value="858" />
+			<owned value="162163" />
+			<trading value="860" />
 			<wanting value="1861" />
-			<wishing value="27460" />
-			<numcomments value="16101" />
+			<wishing value="27461" />
+			<numcomments value="16105" />
 			<numweights value="4724" />
 			<averageweight value="3.2722" />
 			</ratings>

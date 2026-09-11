@@ -1,36 +1,39 @@
 {
  "confidence": "high",
- "summary": "Splendor is a fast, tactile engine-building game where you spend chips to buy gem cards that discount future purchases, snowballing toward 15 points. Turns are simple and quick, but there's real tension in reading opponents' likely purchases and timing your reserves to deny key cards.",
+ "summary": "Splendor is a light engine-building game where players collect gem tokens to buy development cards, which in turn provide permanent discounts that snowball toward richer purchases and noble visits. It plays in about half an hour and is often a gateway game for new players.",
  "praised": [
-  "Extremely easy to teach and learn, great gateway game",
-  "Satisfying tactile chip-collecting and engine-building feel",
-  "Quick turns keep downtime low",
-  "Nice production values (chunky chips, nice cards)",
-  "Scales well and plays fast at any player count"
+  "extremely quick to teach and play",
+  "satisfying engine snowball as discounts compound",
+  "portable and reliably enjoyable as a filler"
  ],
  "criticised": [
-  "Can feel solitaire-ish with limited direct interaction beyond card/chip denial",
-  "Multiplayer solitaire feeling increases at higher player counts",
-  "Little variability between plays, can feel repetitive over many sessions",
-  "Card draw luck (which cards flip up) can swing a game",
-  "Fairly light strategically, not much long-term depth for hardcore gamers"
+  "limited direct interaction beyond taking chips or sniping a card someone wants",
+  "can feel a bit solitaire once you're deep in your own plan",
+  "luck of the card flip affects available options"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "blocking and area denial via card reservation and chip scarcity"
+  "kind": "resource denial and card sniping",
+  "detail": "Players draw from the same limited pool of gem tokens and the same face-up card row, so taking a token or buying a card someone else needed is the main way you affect opponents. Otherwise each player builds their own private engine of cards largely independent of others' boards."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever first assembles the most efficient chain of discount cards to afford high-value cards and hit 15 points fastest."
+  "why": "Points come almost entirely from development card prestige values plus occasional noble visit bonuses.",
+  "how_you_win": "You win by being first to reach 15 points, usually by building a gem-discount engine that lets you afford high-value cards faster than opponents."
  },
  "similar": [
   "Century: Spice Road",
   "Res Arcana",
-  "Azul",
-  "Jaipur",
-  "Great Western Trail"
+  "7 Wonders",
+  "Concordia",
+  "Splendor Duel"
  ],
- "_fingerprint": "32671a930e3f32e2",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "c8270261bca9cddd",
  "_name": "Splendor"
 }

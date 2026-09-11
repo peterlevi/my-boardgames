@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Puerto Rico is a tight economic engine-builder where you balance producing goods, shipping them before the boats fill up, and building an efficient production chain with limited colonists. Every role you pick benefits all players, so the real skill is choosing roles that help you more than your opponents.",
+ "summary": "Puerto Rico is a classic role-selection economic game where players build plantations and buildings on individual boards, choosing roles each round that give everyone an action but a bonus to the picker. It's a masterclass in efficient engine-building with a distinctive twist: shipped goods and buildings score points, but hoarded doubloons at game end are worthless.",
  "praised": [
-  "Deep, elegant economic engine with almost no luck",
-  "Role-selection mechanism where every choice benefits everyone but you get the edge",
-  "High replayability from different building/strategy combinations",
-  "Strong sense of engine optimization and satisfying long-term planning"
+  "Innovative role-selection mechanism that influenced a generation of euros",
+  "Deep strategic tension between building, shipping, and producing",
+  "Multiple viable strategies to victory",
+  "Still holds up as a tight, well-balanced design"
  ],
  "criticised": [
-  "Can feel solitaire-ish with limited direct interaction beyond shipping and role choice",
-  "Downtime between turns, especially at higher player counts",
-  "Corn/theme is thin and abstract despite the colonial setting",
-  "Colonization theme has drawn criticism as dated/uncomfortable for some players"
+  "Colonial theme (plantations, colonists) has aged poorly and draws criticism",
+  "Can have a long, dry midgame with a lot of downtime between turns",
+  "Some role/building combos considered stronger than others in analysis",
+  "Player elimination-adjacent feel if you fall behind on production"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "role selection denial and competition for shared shipping space"
+  "kind": "role selection and shared shipping/market competition",
+  "detail": "Players affect each other mainly by picking roles that deny bonus benefits to others and by competing for limited shipping space and a shared trading house, but the plantations and buildings themselves sit on each player's own board. The colonist supply and ships are the main shared resources creating tension."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Victory points come almost entirely from buildings and shipped goods, so the winner is decided by production efficiency and building point value, not diverse scoring categories"
+  "breadth": "Some",
+  "why": "Victory points come mainly from buildings and shipped goods, with money serving only as a means to that end.",
+  "how_you_win": "You win by converting production and shipping into victory points faster than opponents, since leftover doubloons don't count at the end."
  },
  "similar": [
-  "Caylus",
   "Le Havre",
+  "San Juan",
+  "Caylus",
   "Race for the Galaxy",
-  "Container",
-  "San Juan"
+  "Container"
  ],
- "_fingerprint": "1243d86b2e1eed1e",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "cfc997e518b1df1a",
  "_name": "Puerto Rico"
 }

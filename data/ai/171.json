@@ -1,35 +1,40 @@
 {
  "confidence": "high",
- "summary": "Chess is a pure two-player abstract battle of maneuver and calculation with no luck and no hidden information, where every piece's fixed movement pattern creates a vast space of tactical and positional possibilities. Games range from quick tactical skirmishes to long, tense strategic maneuvering, and outcomes are determined entirely by the players' skill and preparation.",
+ "summary": "Chess is the archetypal perfect-information abstract strategy game: two players maneuver 16 asymmetric pieces on an 8x8 board trying to checkmate the opponent's king. Games can range from quick tactical skirmishes to deep, patient positional battles depending on skill level.",
  "praised": [
-  "Infinite strategic depth from simple rules",
-  "Pure skill expression with zero luck",
-  "Enormous body of theory, literature, and community support",
-  "Endlessly replayable with no two games alike",
-  "Widely accessible and playable at any level from casual to professional"
+  "Nearly infinite strategic depth from simple rules",
+  "No luck, pure skill-based competition",
+  "Massive body of theory, literature, and community",
+  "Endlessly replayable and universally recognized"
  ],
  "criticised": [
-  "Steep skill ceiling means mismatched players have little fun",
-  "Can be slow and mentally exhausting at longer time controls",
-  "Opening theory memorization can feel like a barrier to entry",
-  "No hidden information or variance can make it feel dry to some casual players"
+  "Steep skill ceiling makes mismatches lopsided and unfun for the weaker player",
+  "Can be slow and cerebral for casual players",
+  "Opening theory memorization can feel like a barrier to entry"
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct confrontation and calculated attrition"
+  "kind": "open conflict, direct confrontation",
+  "detail": "The entire board is shared and every move directly affects the opponent's options, threats, and pieces; players are in constant direct conflict trying to capture pieces and threaten the king. There is no private player board — the game state is entirely public and mutual."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game is decided by checkmate, resignation, or draw, not by any point accumulation."
+  "why": "There is no scoring; the game is decided entirely by checkmate, resignation, or draw conditions.",
+  "how_you_win": "You win by maneuvering your pieces to trap the opponent's king in checkmate, or if your opponent resigns or runs out of time."
  },
  "similar": [
   "Xiangqi",
   "Shogi",
   "Go",
-  "Draughts (Checkers)",
-  "Hive"
+  "Hive",
+  "Onitama"
  ],
- "_fingerprint": "0289ee9d912cf9af",
+ "teachers": [
+  "GothamChess",
+  "Hanging Pawns",
+  "Watch It Played"
+ ],
+ "_fingerprint": "815fb3185a4ad784",
  "_name": "Chess"
 }

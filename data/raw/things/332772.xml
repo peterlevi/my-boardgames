@@ -514,7 +514,23 @@ On your turn you take two actions:
 			
 
 			
-	
+			<videos total="160">
+						<video id="618758" title="Revive: Discussion" category="review" language="English" link="http://www.youtube.com/watch?v=-NVoCUrjx6g" username="FantasyNerd8" userid="1029024" postdate="2026-07-03T18:23:27-05:00" />
+						<video id="613247" title="Top 50 Board Games of All Time (40-31)" category="review" language="English" link="http://www.youtube.com/watch?v=PC_8QR1lJW8" username="heatbbx" userid="3091342" postdate="2026-05-25T14:21:34-05:00" />
+						<video id="603939" title="Revive - First Impression Review!" category="review" language="English" link="http://www.youtube.com/watch?v=fV90aUA78wQ" username="ZValentin" userid="2082778" postdate="2026-03-23T14:28:25-05:00" />
+						<video id="603938" title="Revive - Board Game Unboxing!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=Ugs3iTOb4mk" username="ZValentin" userid="2082778" postdate="2026-03-23T14:27:38-05:00" />
+						<video id="594010" title="Revive | Opinión y Puntuación | La Crítica Lúdica" category="review" language="Spanish" link="http://www.youtube.com/watch?v=7-FXanNO59k" username="La_Critica_Ludica" userid="2803453" postdate="2026-01-23T11:39:11-06:00" />
+						<video id="594008" title="¿Funciona Revive en solitario? | La Crítica Lúdica" category="review" language="Spanish" link="http://www.youtube.com/watch?v=2Y9HaxvtGnU" username="La_Critica_Ludica" userid="2803453" postdate="2026-01-23T11:37:49-06:00" />
+						<video id="593504" title="Revive: ¿Está justificado su precio? | Diseño y Componentes | La Crítica Lúdica" category="review" language="Spanish" link="http://www.youtube.com/watch?v=q49AqX0u8Ww" username="La_Critica_Ludica" userid="2803453" postdate="2026-01-20T13:56:04-06:00" />
+						<video id="576001" title="Luces y Sombras: Revive - El resurgir de la civilización" category="review" language="Spanish" link="http://www.youtube.com/watch?v=Kmv-WhnRbaM" username="cuatrocubitos" userid="3505962" postdate="2025-10-08T10:24:15-05:00" />
+						<video id="567546" title="I Tested Revive with 2 Players and Found a new Favorite!" category="review" language="English" link="http://www.youtube.com/watch?v=jY0uSztWxMY" username="Quackalope" userid="1996209" postdate="2025-08-17T14:02:25-05:00" />
+						<video id="566715" title="Top 80 Games: 60-51!" category="other" language="English" link="http://www.youtube.com/watch?v=NgTtKDjxkbo" username="ZValentin" userid="2082778" postdate="2025-08-12T13:16:28-05:00" />
+						<video id="565223" title="Tabletop Turtle - Revive review" category="review" language="English" link="http://www.youtube.com/watch?v=Pw__iqc5xdE" username="imfrumlakewood" userid="1091315" postdate="2025-07-31T16:56:47-05:00" />
+						<video id="564494" title="Revive 3 Player Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=ryEdVn_JrVw" username="BoardGaymesJames" userid="484692" postdate="2025-07-25T18:48:19-05:00" />
+						<video id="563859" title="Episode 51: Player Board Rewards: Black Forest vs. Revive" category="review" language="English" link="http://www.youtube.com/watch?v=j3A2F-UeA0I" username="dgin321" userid="3017262" postdate="2025-07-21T20:22:27-05:00" />
+						<video id="557271" title="Revive | Zasady Gry | Instrukcja" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=iBD5Gno6-o8" username="deshione" userid="3424462" postdate="2025-06-04T15:42:44-05:00" />
+						<video id="557124" title="Revive - Board Game Unboxing &amp; Reboxing - What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=oIAY3vatkqg" username="broseygames" userid="4181268" postdate="2025-06-03T22:04:43-05:00" />
+					</videos>
 
 	
 
@@ -523,22 +539,22 @@ On your turn you take two actions:
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="13347" />
-			<average value="8.04562" />
-			<bayesaverage value="7.61881" />
+			<usersrated value="13355" />
+			<average value="8.04548" />
+			<bayesaverage value="7.61882" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="92" bayesaverage="7.61881" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="92" bayesaverage="7.61882" />
 																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="67" bayesaverage="7.70585" />
 												</ranks>
 
-			<stddev value="1.23417" />
+			<stddev value="1.23419" />
 			<median value="0" />
-			<owned value="18696" />
-			<trading value="181" />
-			<wanting value="758" />
-			<wishing value="6700" />
-			<numcomments value="1713" />
+			<owned value="18702" />
+			<trading value="182" />
+			<wanting value="760" />
+			<wishing value="6701" />
+			<numcomments value="1712" />
 			<numweights value="546" />
 			<averageweight value="3.4615" />
 			</ratings>

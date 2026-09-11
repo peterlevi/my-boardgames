@@ -288,7 +288,23 @@
 			
 
 			
-	
+			<videos total="99">
+						<video id="588756" title="Thoughts on Ishtar: Gardens of Babylon from Jamie, Tabletoptiktok" category="review" language="English" link="http://www.youtube.com/watch?v=2W0iXuySc7U" username="Jamie_Tabletoptiktok" userid="3780107" postdate="2025-12-18T11:00:56-06:00" />
+						<video id="588509" title="ISHTAR | Cómo se juega | TUTORIAL FÁCIL" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=V_lS24uBcwU" username="Inesjuegosymas" userid="4208902" postdate="2025-12-17T04:10:09-06:00" />
+						<video id="522732" title="Ishtar: Jardines de Babilonia | Tutorial" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=X-q2_2qAvlU" username="Vgreen" userid="1227780" postdate="2024-11-04T20:26:59-06:00" />
+						<video id="447908" title="Огляд від Ігромаг" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=-I6qVU9DfhI" username="punk_rock" userid="2986072" postdate="2023-07-23T00:18:59-05:00" />
+						<video id="439673" title="Ishtar: Gardens of Babylon - First Impressions: Ish or Tarrific?" category="review" language="English" link="http://www.youtube.com/watch?v=CBYHqSew-dU" username="ZValentin" userid="2082778" postdate="2023-05-29T14:55:45-05:00" />
+						<video id="439672" title="Ishtar: Gardens of Babylon- Unboxing!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=jVgE3xIXEpo" username="ZValentin" userid="2082778" postdate="2023-05-29T14:53:13-05:00" />
+						<video id="431521" title="Learn to Play Ishtar: Gardens of Babylon" category="instructional" language="English" link="http://www.youtube.com/watch?v=W8x6M5fSbd4" username="yrnotyrkhakis" userid="429344" postdate="2023-04-04T09:00:35-05:00" />
+						<video id="429765" title="Unboxing: Ishtar: Gardens of Babylon" category="unboxing" language="English" link="http://www.youtube.com/watch?v=c9by0c54cvQ" username="Kardkid" userid="1650482" postdate="2023-03-23T19:08:58-05:00" />
+						<video id="426202" title="Ishtar Unboxing - Cloudy with a Chance of Meeples" category="unboxing" language="English" link="http://www.youtube.com/watch?v=143Lifc9d50" username="thefinalforecast" userid="1907482" postdate="2023-03-02T15:14:09-06:00" />
+						<video id="404941" title="Unboxing Ishtar: Gardens of Babylon" category="unboxing" language="English" link="http://www.youtube.com/watch?v=_A7T-LwIN8k" username="yrnotyrkhakis" userid="429344" postdate="2022-10-19T09:01:02-05:00" />
+						<video id="404736" title="Una partita a... Ishtar" category="session" language="Italian" link="http://www.youtube.com/watch?v=bTfZ80YJdug" username="Hunters12" userid="2403288" postdate="2022-10-18T03:28:51-05:00" />
+						<video id="404046" title="Unboxing di Ishtar" category="unboxing" language="Italian" link="http://www.youtube.com/watch?v=HsTKdU0mJLM" username="Simbaboardgames" userid="3346346" postdate="2022-10-13T15:54:17-05:00" />
+						<video id="395393" title="How to Play: Ishtar: Gardens of Babylon" category="instructional" language="English" link="http://www.youtube.com/watch?v=Dk-R2KjdVn0" username="Kardkid" userid="1650482" postdate="2022-08-22T08:11:47-05:00" />
+						<video id="390231" title="Lançamento Buró - Ishtar os Jardins da Babilônia (Game trailer)" category="other" language="Portuguese" link="http://www.youtube.com/watch?v=V45nZQpHYuU" username="JAVI_" userid="977728" postdate="2022-07-16T04:13:13-05:00" />
+						<video id="384895" title="Unboxing Ishtar (No Talking)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=RZiMYr5YOhY" username="nimasdj" userid="2204600" postdate="2022-06-10T07:30:44-05:00" />
+					</videos>
 
 	
 
@@ -298,18 +314,18 @@
    		<statistics page="1">
 								<ratings>
 			<usersrated value="3560" />
-			<average value="6.95154" />
-			<bayesaverage value="6.33319" />
+			<average value="6.95126" />
+			<bayesaverage value="6.33301" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1778" bayesaverage="6.33319" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="999" bayesaverage="6.42817" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="532" bayesaverage="6.45736" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1779" bayesaverage="6.33301" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="999" bayesaverage="6.42797" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="532" bayesaverage="6.45715" />
 												</ranks>
 
-			<stddev value="1.15893" />
+			<stddev value="1.15868" />
 			<median value="0" />
-			<owned value="7236" />
+			<owned value="7240" />
 			<trading value="257" />
 			<wanting value="94" />
 			<wishing value="1074" />

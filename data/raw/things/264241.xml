@@ -319,7 +319,23 @@ Contents:
 			
 
 			
-	
+			<videos total="52">
+						<video id="605562" title="Mandala Playthrough | Shadow of the Game" category="session" language="English" link="http://www.youtube.com/watch?v=xYeyYK3msu8" username="ShadowoftheGame" userid="4089225" postdate="2026-04-03T15:30:31-05:00" />
+						<video id="594126" title="Παίζουμε Mandala | House of Nerds" category="session" language="Greek" link="http://www.youtube.com/watch?v=pyYmtmpxfu4" username="Giannis2" userid="1419327" postdate="2026-01-24T05:32:00-06:00" />
+						<video id="588340" title="Mandala #boardgames #boardgamelife #曼荼羅" category="other" language="English" link="http://www.youtube.com/watch?v=L36HtfclFhc" username="czeslaw6300149" userid="798383" postdate="2025-12-15T22:00:36-06:00" />
+						<video id="528156" title="Sacred Circles and UNHOLY Competition! | Mandala" category="review" language="English" link="http://www.youtube.com/watch?v=il3Q3DxdnYg" username="christeven115" userid="2362646" postdate="2024-12-10T04:07:03-06:00" />
+						<video id="505067" title="Lanlalen EP325: Mandala" category="review" language="Thai" link="http://www.youtube.com/watch?v=rQQHgOcgCPc" username="lanlalencafe" userid="760965" postdate="2024-07-19T06:05:02-05:00" />
+						<video id="445219" title="Огляд від Життя на столі" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=5Dy2EoeCWaA" username="punk_rock" userid="2986072" postdate="2023-07-07T11:16:55-05:00" />
+						<video id="417943" title="Regler på dansk" category="instructional" language="Danish" link="http://www.youtube.com/watch?v=L6bFEKhvegc" username="pstaal90" userid="3010755" postdate="2023-01-12T08:29:58-06:00" />
+						<video id="410906" title="Lär dig spela Mandala!" category="instructional" language="Swedish" link="http://www.youtube.com/watch?v=N4MURYCTX_Y" username="larshall" userid="102159" postdate="2022-11-24T11:12:38-06:00" />
+						<video id="395808" title="Mandala Unboxing: What's In The Box?!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=pdnV845Ghww" username="squaraine" userid="3134915" postdate="2022-08-24T11:49:11-05:00" />
+						<video id="369661" title="(REGRAS) Mandala" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=mo_ApqQ5FzI" username="ludotecario" userid="3139149" postdate="2022-03-06T12:53:09-06:00" />
+						<video id="358881" title="Jason's Board Game Diagnostics of Mandala" category="review" language="English" link="http://www.youtube.com/watch?v=rwQJEzVhhVs" username="BoardgameMechanics" userid="1339218" postdate="2021-12-29T23:02:04-06:00" />
+						<video id="346522" title="Mandala - How to Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=3Zhr2qLm8wI" username="thediceyreview" userid="1263206" postdate="2021-10-06T18:38:58-05:00" />
+						<video id="342883" title="Mandala - Rules Breakdown and Playthrough" category="instructional" language="English" link="http://www.youtube.com/watch?v=f1QW0GSNcq8" username="Cutterbeck" userid="1024383" postdate="2021-09-13T21:25:30-05:00" />
+						<video id="337696" title="Mandala Review - Chairman of the Board" category="review" language="English" link="http://www.youtube.com/watch?v=Pm-t8-fJabo" username="CotB" userid="1500800" postdate="2021-08-08T13:46:25-05:00" />
+						<video id="331033" title="Mandala / Videotutorial - Il gioco di carte in cui si costruiscono mandala / Guarda&amp;Gioca #7" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=qSaRxDnuaxM" username="Canopus80" userid="399244" postdate="2021-06-25T07:42:51-05:00" />
+					</videos>
 
 	
 
@@ -328,21 +344,21 @@ Contents:
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="7276" />
-			<average value="7.43185" />
-			<bayesaverage value="6.94195" />
+			<usersrated value="7277" />
+			<average value="7.43158" />
+			<bayesaverage value="6.9418" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="574" bayesaverage="6.94195" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="14" bayesaverage="7.25953" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="114" bayesaverage="7.06396" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="575" bayesaverage="6.9418" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="14" bayesaverage="7.25921" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="113" bayesaverage="7.06377" />
 												</ranks>
 
-			<stddev value="1.1775" />
+			<stddev value="1.17769" />
 			<median value="0" />
 			<owned value="11827" />
 			<trading value="173" />
-			<wanting value="300" />
+			<wanting value="299" />
 			<wishing value="2301" />
 			<numcomments value="1319" />
 			<numweights value="153" />

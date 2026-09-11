@@ -1,35 +1,40 @@
 {
  "confidence": "high",
- "summary": "Two players each pilot a unique deck of iconic characters, moving on a point-to-point map and resolving fights by simultaneously revealing attack/defense cards with tactical boosts and combos, so combat feels like a tense card-based duel rather than dice luck. Matches are fast (20-40 min), highly asymmetric, and reward learning each hero's specific deck quirks and counters.",
+ "summary": "Unmatched pits two (or more) wildly asymmetric heroes against each other in dice-free, card-driven combat on a point-to-point map, where every fighter's unique deck defines a completely different playstyle. King Arthur, Merlin, Alice, Sinbad, and Medusa each demand different tactics, so matches feel fresh even after many plays.",
  "praised": [
-  "Deep asymmetry between characters despite simple core rules",
-  "No-luck, card-based combat that rewards reading your opponent",
-  "Fast setup and playtime, easy to teach the basic loop",
-  "High production value miniatures and board art",
-  "Great replayability from mixing heroes across different sets"
+  "excellent asymmetric balance between heroes",
+  "fast setup and teach",
+  "high replayability from mixing and matching sets",
+  "strong miniatures and production"
  ],
  "criticised": [
-  "Miniatures add cost/hype but don't affect gameplay, seen as unnecessary bling by some",
-  "Some hero match-ups feel imbalanced, especially early sets before errata",
-  "4-player free-for-all/team mode is less tight than 1v1",
-  "Overwhelming and expensive to collect as the line expanded across many sets"
+  "four-player free-for-all is less tight than head-to-head duels",
+  "a single base set has a smaller matchup pool on its own",
+  "some heroes are simpler than others, creating a slight skill ceiling gap"
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct head-to-head combat and positioning"
+  "kind": "direct one-on-one combat with hand-based bluffing",
+  "detail": "Both players fight on the same shared map, directly attacking and blocking each other's characters, and hand management creates bluffing over which card the opponent is holding for an ambush or defense."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game ends the instant one side's characters are all reduced to zero health, so there is no scoring at all beyond elimination"
+  "why": "There is no point total; the match ends the instant one side's fighters are all reduced to zero health.",
+  "how_you_win": "You win by using movement, attacks, and scheme cards to whittle the opposing hero(es) down to zero life before they do the same to you."
  },
  "similar": [
-  "Unmatched: Robin Hood vs Bigfoot",
   "Unmatched: Cobble & Fog",
+  "Unmatched: Robin Hood vs. Bigfoot",
   "BattleCON",
-  "Yomi",
-  "Star Wars: Epic Duels"
+  "Smash Up",
+  "Star Wars: The Card Game"
  ],
- "_fingerprint": "b8e7bb128fd72246",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "c36817ec02fb21b1",
  "_name": "Unmatched: Battle of Legends, Volume One"
 }

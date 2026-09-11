@@ -970,7 +970,23 @@ This game requires CATAN.  Ideally, using the same publisher and edition of the 
 			
 
 			
-	
+			<videos total="41">
+						<video id="620069" title="White Glove Demo - Catan: Seafarers" category="instructional" language="English" link="http://www.youtube.com/watch?v=IhhUWvo6J1E" username="sine_square_x" userid="709600" postdate="2026-07-11T17:06:24-05:00" />
+						<video id="591473" title="Огляд від каналу &quot;Beaver Games&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=IPtF1wUqSs4" username="punk_rock" userid="2986072" postdate="2026-01-08T13:12:54-06:00" />
+						<video id="579636" title="Catan Seafarers Expansion Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=6iNx1EOekbM" username="Smalfri2" userid="2564271" postdate="2025-10-29T13:33:38-05:00" />
+						<video id="561935" title="Огляд та відеоправила від Rozum" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=ezCrvIsD9XQ" username="davose" userid="1472043" postdate="2025-07-08T00:14:02-05:00" />
+						<video id="559164" title="CATAN Seafarers Review: The Sea Was Angry That Day My Friends" category="review" language="English" link="http://www.youtube.com/watch?v=YNymxC1wFuM" username="TomVasel" userid="722" postdate="2025-06-18T10:01:06-05:00" />
+						<video id="554275" title="Catan: Seafarers Expansion - Unboxing &amp; Reboxing - What's in the box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=mTogA1xXOK4" username="broseygames" userid="4181268" postdate="2025-05-15T20:06:52-05:00" />
+						<video id="552835" title="Catan Seafarers | Inside #724" category="unboxing" language="English" link="http://www.youtube.com/watch?v=WDLONR4yNWY" username="table_talks" userid="3249213" postdate="2025-05-07T03:34:59-05:00" />
+						<video id="549999" title="How to Play CATAN: Seafarers Expansion | 6th Edition (2025)" category="instructional" language="English" link="http://www.youtube.com/watch?v=krXbw4UV3Kk" username="Cardboard_CC" userid="1379969" postdate="2025-04-21T10:14:20-05:00" />
+						<video id="486499" title="CATAN: Seafarers - Scenario 2: &quot;The Four Islands&quot; (III)" category="session" language="English" link="http://www.youtube.com/watch?v=hES7VHZPFwU" username="Nova_Bright_Gaming" userid="3458715" postdate="2024-03-19T20:59:44-05:00" />
+						<video id="451811" title="CATAN: Seafarers - Scenario 1 &quot;New Shores&quot;" category="session" language="English" link="http://www.youtube.com/watch?v=_9wAqfx19aI" username="Nova_Bright_Gaming" userid="3458715" postdate="2023-08-14T20:00:33-05:00" />
+						<video id="429869" title="Kako se igra? Catan Pomorci!" category="instructional" language="Serbian" link="http://www.youtube.com/watch?v=LL5FejH97XE" username="jovus" userid="431722" postdate="2023-03-24T07:24:00-05:00" />
+						<video id="416179" title="Catan: Seafarers - 3-player Playthrough" category="session" language="Turkish" link="http://www.youtube.com/watch?v=QTZr_CqfBjg" username="ibiliss" userid="1854607" postdate="2023-01-01T01:02:10-06:00" />
+						<video id="398327" title="Catan:  Navegantes #11 | Expansión | Como se juega" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=1lDIRunnws0" username="ocastellanoh" userid="1666602" postdate="2022-09-09T18:44:24-05:00" />
+						<video id="397469" title="Catan: Navegantes #10 | Expansión | Unboxing" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=LxT0y0Z--Kg" username="ocastellanoh" userid="1666602" postdate="2022-09-05T03:52:47-05:00" />
+						<video id="392343" title="Siedler von Catan Seefahrer • Regeln • Anleitung • Regelerklärung Erweiterung" category="instructional" language="German" link="http://www.youtube.com/watch?v=eR0mAxQe3XQ" username="Brettspiel Guru" userid="1959498" postdate="2022-07-31T04:42:37-05:00" />
+					</videos>
 
 	
 
@@ -979,23 +995,23 @@ This game requires CATAN.  Ideally, using the same publisher and edition of the 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="21528" />
-			<average value="7.16504" />
-			<bayesaverage value="6.9102" />
+			<usersrated value="21534" />
+			<average value="7.16485" />
+			<bayesaverage value="6.90988" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.9102" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.88323" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="Not Ranked" bayesaverage="6.93094" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.90988" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.88285" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="Not Ranked" bayesaverage="6.93057" />
 												</ranks>
 
-			<stddev value="1.34194" />
+			<stddev value="1.34193" />
 			<median value="0" />
-			<owned value="53134" />
+			<owned value="53143" />
 			<trading value="503" />
 			<wanting value="206" />
 			<wishing value="1554" />
-			<numcomments value="4264" />
+			<numcomments value="4263" />
 			<numweights value="1215" />
 			<averageweight value="2.3737" />
 			</ratings>

@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "Cry Havoc is an asymmetric area-control game where three of the four factions (Humans, Machines, Trogs) play by genuinely different rule sets, so combat and territory grabs feel completely different depending on who you're facing. Victory points are earned by taking and holding resource-rich zones, and the tight turn structure with dual-purpose cards forces constant tradeoffs between attacking, expanding, and building your engine.",
+ "summary": "Cry Havoc is an area-control war game where four wildly asymmetric factions fight over a resource-rich moon, with combat resolved through card-based unit abilities rather than dice. It's a sharp, aggressive game where controlling territory directly feeds your economy and victory points each round.",
  "praised": [
-  "Deep faction asymmetry — each side plays like a different game",
-  "Clever multi-use cards that double as resources, actions, or combat cards",
-  "High tension in combat and territory decisions",
-  "Great production value with distinct miniatures per faction",
-  "Rewards replay as you learn each faction's unique strategy"
+  "strong faction asymmetry with distinct playstyles",
+  "tense card-driven tactical combat",
+  "great production values and miniatures",
+  "rewards area-control strategy over pure combat power"
  ],
  "criticised": [
-  "Steep learning curve — teaching four different rule sets is a lot",
-  "Perceived faction balance issues, especially with the fourth (Skrat) faction added later",
-  "Can feel swingy or punishing if you fall behind early",
-  "High rules overhead relative to playtime for newer wargamers"
+  "steep learning curve with asymmetric factions",
+  "can feel swingy or unbalanced between factions",
+  "long playtime for a 2-4 player game",
+  "some factions/strategies seen as dominant in certain metas"
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict and area denial over contested zones"
+  "kind": "area control and open conflict",
+  "detail": "Players directly fight over the same regions on a shared board, with combat, resource denial, and VP-scoring zones constantly contested. Nearly the entire board state is shared territory, so almost every action affects opponents' position and economy."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Victory points come almost entirely from controlling and holding valuable territory zones at scoring intervals"
+  "why": "Victory points are earned each round mainly from controlling key regions and resources, so the winner is whoever holds the most valuable territory over time.",
+  "how_you_win": "You win by controlling contested regions each scoring round to accumulate more victory points than your opponents by game end."
  },
  "similar": [
+  "Rising Sun",
   "Blood Rage",
   "Kemet",
-  "Rising Sun",
-  "Chaos in the Old World",
-  "Root"
+  "Root",
+  "Chaos in the Old World"
  ],
- "_fingerprint": "f1b761f9669c2d67",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "a7c23fa192b5b218",
  "_name": "Cry Havoc"
 }

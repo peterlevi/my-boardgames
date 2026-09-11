@@ -1,18 +1,21 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "I don't have confident, specific knowledge of Flotilla's actual gameplay feel or reception beyond its post-apocalyptic nautical theme.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": ""
+  "kind": "",
+  "detail": ""
  },
- "win_criteria": "Other",
+ "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
-  "why": ""
+  "why": "",
+  "how_you_win": ""
  },
  "similar": [],
- "_fingerprint": "12a6ceb1b9842857",
+ "teachers": [],
+ "_fingerprint": "08b07b645bbe4e67",
  "_name": "Flotilla"
 }

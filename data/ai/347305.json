@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "A dense Vital Lacerda worker-placement engine-builder where you develop invention cards through stages (idea to invention to global spread), pulling levers across several interlocking boards to generate Intellectual Property Points. Turns are quiet and heads-down as each player optimizes their own engine, with occasional friction over shared worker-placement spots and card availability.",
+ "summary": "Inventions: Evolution of Ideas is a dense Vital Lacerda euro in which players guide humanity's technological progress across historical eras, developing interlocking engines of resources, cards, and tech trees. As with Lacerda's other designs, it's a cerebral, tightly interconnected puzzle with a long rules teach and a lot of moving parts.",
  "praised": [
-  "Tight, elegant interlocking systems typical of Lacerda's design",
-  "Strong sense of building an engine and watching it snowball",
-  "High replayability from variable inventions and multiple viable paths to points",
-  "Satisfying puzzle of sequencing actions efficiently",
-  "Solo mode is well regarded"
+  "rich, deeply interlocking systems with genuine long-term strategy",
+  "strong thematic connection between mechanics and the history of invention",
+  "high replayability from variable paths through the tech tree",
+  "well-designed solo mode"
  ],
  "criticised": [
-  "Steep rules overhead and long teach/setup time",
-  "Heavy iconography that takes several plays to internalize",
-  "Analysis paralysis due to the number of simultaneous considerations",
-  "Low direct interaction can make multiplayer feel like parallel solitaire",
-  "High cost of entry (price, table space) for a niche heavy-gamer audience"
+  "steep learning curve and lengthy rules explanation",
+  "heavy iconography requiring frequent reference checks",
+  "significant downtime and analysis paralysis in multiplayer",
+  "not approachable for casual groups"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel engine-building with light blocking over shared worker spots and card draft"
+  "level": "Medium",
+  "kind": "competition for shared technologies and board positions",
+  "detail": "Players compete for limited era cards, shared technology slots, and bonus tiles on a common board, occasionally blocking each other's plans, but most of a turn is spent optimizing your own personal player board and engine rather than interacting directly."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "IPP accumulates from multiple systems (developing and spreading inventions, technology/economy/culture tracks, and bonus objectives), so the winner is whoever best diversifies and chains these scoring avenues"
+  "why": "Points accrue from developed technologies, completed era objectives, and engine efficiency across the game rather than a single dominant track.",
+  "how_you_win": "Build the most efficient technology-development engine, completing era objectives and accumulating bonuses to finish with the highest total score."
  },
  "similar": [
   "On Mars",
-  "Lisboa",
   "Gaia Project",
+  "Barrage",
   "The Gallerist",
-  "Escape Plan"
+  "Underwater Cities"
  ],
- "_fingerprint": "d227f5825af89289",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "3d5bacf0defc6445",
  "_name": "Inventions: Evolution of Ideas"
 }

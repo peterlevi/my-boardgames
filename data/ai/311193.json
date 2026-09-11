@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Anno 1800 is a tight worker-placement/hand-management game where you draft action cards to build production chains, ship goods between your home island and new territories, and satisfy an increasingly demanding population. Turns are quick and parallel, but there's constant tension over which action spaces and contracts get taken before your opponents grab them.",
+ "summary": "Anno 1800: The Board Game translates the city-building video game into a worker-placement engine where players build production chains to satisfy their population's growing needs and race to complete contracts. Martin Wallace's design leans toward efficient engine-building rather than direct conflict.",
  "praised": [
-  "Fast, low-downtime turns for a Martin Wallace economic game",
-  "Satisfying production-chain building and engine growth",
-  "Good table presence and components tied to a recognizable video game theme",
-  "Tight 2-hour runtime relative to its complexity/depth"
+  "satisfying production-chain engine building true to the video game's feel",
+  "clean worker-placement flow",
+  "attractive components and modular map"
  ],
  "criticised": [
-  "Hidden victory points and contract scoring can feel opaque or swingy",
-  "Some randomness in card/tile draws frustrates players who want tighter engine control",
-  "Interaction is mostly indirect (racing for spaces/contracts) rather than direct conflict, which some find underwhelming",
-  "Rulebook/setup can be fiddly for a first play"
+  "relatively low player interaction for a worker-placement game",
+  "contract-race pacing can feel less tense to some",
+  "individual boards can feel solitaire-ish"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "Racing for shared action spaces, contracts, and territory tiles"
+  "level": "Low",
+  "kind": "mostly parallel play with light competition for shared spaces and market",
+  "detail": "Players share a worker-placement board and market where the best spots or offers can be taken by others first, but each player's population and production tableau otherwise develops independently."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from a mix of population level, hidden endgame objectives, contracts fulfilled, and territory development, so the winner is decided by overall efficiency across several scoring channels rather than one dominant strategy"
+  "breadth": "Some",
+  "why": "The game ends when a player completes their contract track, so being first to satisfy population demands and fulfill contracts decides the winner.",
+  "how_you_win": "Build production chains to keep your population happy and be the first to complete your contract track, typically winning outright by ending the game."
  },
  "similar": [
-  "Brass: Birmingham",
-  "Great Western Trail",
   "Le Havre",
-  "Gizmos",
-  "Terraforming Mars"
+  "Puerto Rico",
+  "Trellis",
+  "Terraforming Mars",
+  "Great Western Trail"
  ],
- "_fingerprint": "d5e2ae85bf2ef9c8",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "0b4188689f96326c",
  "_name": "Anno 1800: The Board Game"
 }

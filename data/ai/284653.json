@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "One player (Mind MGMT) secretly moves around a hidden map trying to recruit locations matching their feature cards while the rest of the team asks yes/no-style questions and cross-references clues on a shared deduction sheet to pinpoint and intercept them. It plays like a cooperative, more streamlined riff on Letters from Whitechapel/Scotland Yard, with a distinctive comic-book aesthetic and asymmetric roles.",
+ "confidence": "medium",
+ "summary": "Mind MGMT is a cooperative deduction game where a team of psychic agents tries to piece together hidden information using shared clues, echoing the comic book's mind-bending aesthetic. It plays like a hybrid of hidden-movement and pattern-deduction games, demanding careful communication within tight limits.",
  "praised": [
-  "Tense, satisfying deduction puzzle for the hunting team",
-  "Strong asymmetry between the hidden-movement player and the deduction team",
-  "Attractive comic-inspired art and thematic integration with the Mind MGMT source material",
-  "Good scaling for a fully cooperative game, including solo/low-player-count variants"
+  "strong thematic tie-in to the beloved comic",
+  "clever communication-limited deduction puzzle",
+  "good replayability via variable scenarios"
  ],
  "criticised": [
-  "The Mind MGMT player's role can feel repetitive or less engaging than the deduction side",
-  "Some downtime for players waiting on questions/answers to resolve",
-  "Rules and bookkeeping (feature cards, immortals, tracking) have a learning curve",
-  "Replayability can dip once the map-reading and deduction patterns become familiar"
+  "rules and iconography can be dense to learn",
+  "can suffer from alpha-player quarterbacking",
+  "some find the solo/co-op puzzle repetitive over many plays"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "hidden movement and deduction via question-and-answer, one vs. team"
+  "kind": "cooperative deduction with limited communication",
+  "detail": "Players share a common board state and pool of clues but face restrictions on how much they can openly discuss, so success depends on collectively inferring hidden information rather than direct player-vs-player conflict."
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "The team wins or loses as a whole based on whether they corner and expose Mind MGMT before time/turns run out."
+  "why": "The team either succeeds at the mission objective or loses collectively; there's no individual point salad",
+  "how_you_win": "The team works together to correctly deduce hidden locations/identities and complete the scenario objective before running out of time or attempts."
  },
  "similar": [
-  "Letters from Whitechapel",
-  "Scotland Yard",
-  "Fury of Dracula",
-  "The Grimm Forest",
-  "Deep Sea Adventure"
+  "Hanabi",
+  "The Mind",
+  "Codenames Duet",
+  "Sherlock Holmes Consulting Detective",
+  "Decrypto"
  ],
- "_fingerprint": "8f5f92a4cd42970d",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Before You Play"
+ ],
+ "_fingerprint": "b6bdb25398913d23",
  "_name": "Mind MGMT: The Psychic Espionage “Game.”"
 }

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Troyes is a dice-and-card worker placement game where your workers are dice whose rolled values determine what they can do, and you're constantly trading, selling, or losing dice to opponents and events. It's a tight economic engine game with a distinctive push-your-luck feel layered onto worker placement, since die values fluctuate and can be manipulated by cards.",
+ "summary": "Troyes uses dice as workers, rolled each round and distributed among three color-coded 'action pools' representing the city's religious, military, and civil life, which players then spend from a shared communal supply to fuel their hand of cards. It's a clever hybrid of worker-placement and hand management with a strong economic push-your-luck feel, since dice can be stolen or bribed away from you.",
  "praised": [
-  "unique dice-as-workers mechanism that feels fresh even to experienced gamers",
-  "deep, tense economic engine-building with many viable strategies",
-  "strong replayability from variable card decks and interaction between religious/military/civic tracks",
-  "clever way of turning dice rolling into a strategic resource rather than pure luck"
+  "inventive dice-as-workers mechanism with real tactical depth",
+  "good economic tension from paying opponents to use their dice",
+  "compact playtime for the strategic weight",
+  "solid solo mode"
  ],
  "criticised": [
-  "steep learning curve and dense rulebook that intimidates new players",
-  "significant luck from dice rolls, even if mitigated by manipulation options",
-  "downtime and analysis paralysis in higher player counts",
-  "can feel fiddly and overwrought with icons/tracks for newcomers"
+  "dice luck can swing outcomes despite mitigation options",
+  "hidden victory-point cards make it hard to gauge the score during play",
+  "fiddly bookkeeping with multiple resource types",
+  "art and theme feel a bit flat for some players"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker/die trading, selling dice to opponents, and competing for limited action spaces"
+  "kind": "shared dice pool and paid worker borrowing",
+  "detail": "The dice pool generated each round is shared, and players can pay opponents to use their dice or lose their own to misfortune events, so there's constant low-level negotiation over a common resource even though each player's card hand and building track stay private."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from multiple tracks (military, religious, civic influence) plus card bonuses, favoring balanced engine-building over one dominant strategy"
+  "why": "Victory points come from a mix of visible building progress and hidden bonus cards revealed only at game end.",
+  "how_you_win": "You win by combining efficient use of your dice across religious, military, and civil actions with a well-chosen set of scoring cards kept hidden until the final tally."
  },
  "similar": [
-  "Le Havre",
-  "Caylus",
-  "Puerto Rico",
-  "The Voyages of Marco Polo",
-  "Grand Austria Hotel"
+  "Lorenzo il Magnifico",
+  "Tzolk'in: The Mayan Calendar",
+  "Grand Austria Hotel",
+  "Trajan",
+  "The Voyages of Marco Polo"
  ],
- "_fingerprint": "d71ffc7f2a1d3416",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "8d4f9f1156c3432d",
  "_name": "Troyes"
 }

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Hegemony is a dense, asymmetric economic-political simulation where each player runs a different class with fundamentally different win conditions and mechanisms, engaging in production, labor markets, taxation, and legislative votes across a full economic cycle each round. It plays like a cross between a euro engine-builder and a political simulation, with heavy interlocking systems (loans, contracts, unemployment, class struggle) that reward players who understand macroeconomics.",
+ "summary": "Hegemony casts each player as a distinct social class (Workers, Capitalists, Middle Class, or the State) with wildly asymmetric goals and mechanisms, all fighting over a shared national economy through legislation, production, and negotiation. It plays like a economic simulation crossed with a political board game, where policy votes and class interests genuinely put players at odds.",
  "praised": [
-  "Deep, believable economic simulation with genuinely asymmetric roles",
-  "Legislation/voting system creates real negotiation and shifting alliances",
-  "High replayability due to class asymmetry and variable strategies",
-  "Satisfying engine-building within each class's distinct toolkit"
+  "genuinely asymmetric factions with different win conditions",
+  "sharp systemic commentary on economics baked into mechanics",
+  "high replayability from shifting alliances and legislation",
+  "rewards real negotiation and reading the table"
  ],
  "criticised": [
-  "Very steep learning curve and long teach time",
-  "Long playtime, especially first few plays",
-  "Runaway leader potential if one class snowballs economically",
-  "Middle class role sometimes seen as less impactful than the other three"
+  "very high complexity and rules overhead",
+  "long playtime that can drag for less-engaged players",
+  "steep learning curve requiring a patient first game",
+  "some feel it lectures rather than simulates"
  ],
  "interaction": {
   "level": "High",
-  "kind": "negotiation, trading, and legislative voting alongside competitive market/economic pressure"
+  "kind": "negotiation, voting, and competing economic interests",
+  "detail": "The economy, legislation votes, and labor market are fully shared systems, so one player's production or policy choices directly reshape what's available or profitable for everyone else. Players constantly negotiate deals and vote on laws that reward some classes while hurting others."
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Each class has its own distinct victory metric (e.g. capital, popularity, wages, budget) determined by that class's economic performance and legislative influence over the game"
+  "breadth": "Other",
+  "why": "Each class has its own distinct victory condition tied to its economic role rather than a shared point total.",
+  "how_you_win": "You win by fulfilling your class's unique objective (e.g., the Working Class securing enough welfare and wages, the Capitalist accumulating enough profit) before or better than your rivals achieve theirs."
  },
  "similar": [
-  "Arkwright",
-  "Brass: Birmingham",
   "Kapital",
-  "A Few Acres of Snow",
-  "Root"
+  "Root",
+  "Founders of Gloomhaven",
+  "Brass: Birmingham",
+  "Vital Lacerda's Lisboa"
  ],
- "_fingerprint": "51bc6fde7b5877d5",
+ "teachers": [
+  "Watch It Played",
+  "Heavy Cardboard",
+  "No Pun Included"
+ ],
+ "_fingerprint": "1608631f714b81e5",
  "_name": "Hegemony: Lead Your Class to Victory"
 }

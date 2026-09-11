@@ -1,34 +1,41 @@
 {
  "confidence": "medium",
- "summary": "Players use a rondel to select actions each turn, researching and combining engines and bodies to build a competitive lineup of cars, then cash in on sales and race prestige. It's a tight, plan-ahead economic game where the rondel forces you to sequence actions efficiently rather than freely picking whatever you want.",
+ "summary": "This is a streamlined reimplementation of Cramer's 2011 Kraftwagen, putting players in charge of early American car manufacturers who research engines and bodies, assemble car models, and race them for prestige while managing a rondel of limited actions. Turn order and timing matter a lot, since the rondel forces you to plan several turns ahead and everyone is racing to get desirable engine/body combinations to market before the field is saturated.",
  "praised": [
-  "Clever, tense rondel action-selection mechanism",
-  "Satisfying engine/body combination puzzle for building cars",
-  "This edition trims luck and streamlines the fiddly original",
-  "Good component quality and thematic car-building feel"
+  "satisfying rondel-based planning puzzle",
+  "thematic tie between engineering and racing",
+  "streamlined, less fiddly than the 2011 original",
+  "attractive presentation and components"
  ],
  "criticised": [
-  "Rondel can feel restrictive or fiddly to learn at first",
-  "Racing element is a smaller, sometimes underwhelming part of the game",
-  "Can run long and a bit dry/mechanical for a car-racing theme",
-  "Niche reimplementation with less table presence than flashier economic games"
+  "still fairly dry and mechanical for the theme",
+  "rondel can feel restrictive/fiddly to newcomers",
+  "market/pricing swings can punish bad timing hard",
+  "niche appeal, less known than the designer's bigger hits"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "indirect competition over shared rondel spaces and market/race positions"
+  "kind": "market competition and race timing",
+  "detail": "Players compete for the same limited technology upgrades and race slots on a shared board, and flooding the market with similar car models depresses everyone's prices, so choices are interdependent even though each player mostly develops their own production line."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come mainly from selling well-designed cars and race results, with prestige/money conversions layered on top"
+  "breadth": "Broad",
+  "why": "Points accumulate from selling cars, winning races, and technology milestones, so the winner is whoever balances production efficiency with race performance best.",
+  "how_you_win": "You win by efficiently developing engine and body technology, selling cars profitably, and placing well in the Grand Prix races."
  },
  "similar": [
+  "Kraftwagen (2011)",
   "Automobiles",
-  "Kraftwagen (original)",
-  "Steam Time",
-  "The Gallerist",
-  "Trickerion: Legends of Illusion"
+  "Age of Steam",
+  "Container",
+  "Long Shot: The Dice Game"
  ],
- "_fingerprint": "1454a3674887bb0c",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "c46040c13a81d8b3",
  "_name": "Kraftwagen: Age of Engineering"
 }

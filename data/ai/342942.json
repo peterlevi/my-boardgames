@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Ark Nova is a dense, engine-building zoo management game where you juggle five action cards whose power depends on their position in a rotating track, building enclosures and acquiring animals with specific space, ecosystem, and continent requirements. It rewards long-term planning and synergy-spotting over reactive play, with most of the tension coming from managing your own tableau rather than direct clashes with opponents.",
+ "summary": "A dense engine-building game where you design a zoo, playing cards to build enclosures, acquire animals, and trigger conservation projects while juggling appeal, reputation, and a tight action-economy where card slots determine how powerful each action is. It plays slow and cerebral, rewarding a long-view engine that only starts paying off in the back half of the game.",
  "praised": [
-  "Deep, satisfying engine-building with strong card synergies",
-  "High replayability due to huge card pool and variable setup",
-  "Thematic cohesion between mechanics and zoo/conservation theme",
-  "Rewarding sense of progression as your zoo snowballs"
+  "deep, satisfying engine-building with a strong theme",
+  "gorgeous animal art and production value",
+  "high replayability from varied player powers and card pool",
+  "rewards long-term planning and synergy-building"
  ],
  "criticised": [
-  "Steep learning curve and heavy rulebook/iconography overhead",
-  "Long playtime, especially for first few games or with four players",
-  "Analysis paralysis, particularly in the CARDS/ANIMALS phases",
-  "Low direct interaction can make it feel like solitaire at a shared table"
+  "long playtime and heavy analysis paralysis, especially with new players",
+  "steep learning curve and rulebook complexity",
+  "slow start can feel unrewarding until the engine kicks in",
+  "conservation/appeal icon soup takes a while to parse"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light drafting competition for cards and end-game timing"
+  "kind": "mostly parallel play with light drafting competition",
+  "detail": "Each player builds their own zoo on a private board and mostly optimizes their own engine, but there is competition over which animal and sponsor cards are available to draft and over shared conservation project thresholds. Turn order and icon count on the shared action cards create some indirect jostling, but boards otherwise develop independently."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The winner is decided by the combination of appeal and conservation points, but conservation points dominate and require concentrated investment in a small set of engine synergies to maximize."
+  "breadth": "Broad",
+  "why": "Final score blends appeal-based points, conservation project points, and end-game bonus cards, so no single scoring source dominates.",
+  "how_you_win": "You win by building an efficient engine of animals, enclosures, and sponsors that generates appeal and conservation points faster than your opponents across the mid-to-late game."
  },
  "similar": [
   "Terraforming Mars",
+  "Marco Polo",
   "Great Western Trail",
   "Res Arcana",
-  "Praga Caput Regni",
-  "Barrage"
+  "Concordia"
  ],
- "_fingerprint": "4cd867fbb31dc8b7",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "753ffc60c6e073a4",
  "_name": "Ark Nova"
 }

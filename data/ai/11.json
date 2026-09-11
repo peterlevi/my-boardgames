@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "Bohnanza is a fast, chatty trading game where you're constantly begging tablemates to take beans off your hands before you're forced to plant a card you don't want. The fun lives almost entirely in the negotiation - the bean-growing math is simple, but reading the table and cutting good deals is where games are won.",
+ "summary": "Bohnanza is a card-trading game where you plant and harvest bean cards for coins, but the real game is the constant table talk and negotiation over trades. It's chaotic, social, and shines most as a loud party-ish game with a full table.",
  "praised": [
-  "Trading and table talk are the whole game and stay engaging every session",
-  "Simple rules that scale well from casual groups to gamers",
-  "Strict hand-order rule creates constant tension and forces interesting trades",
-  "Great with larger groups (5-7) since more players means more trading chaos"
+  "Negotiation and trading is genuinely fun and social",
+  "Very easy to teach and explain",
+  "Great with larger groups",
+  "High replayability from unpredictable trades"
  ],
  "criticised": [
-  "Weak or quiet groups who don't negotiate make the game fall flat",
-  "Can run long with 6-7 players as trading rounds drag",
-  "Luck of the draw (which beans you pick up) matters more than some want",
-  "Not much game left if you strip out the negotiation"
+  "Can get chaotic and loud with experienced traders",
+  "Runtime can drag at higher player counts",
+  "Luck of the draw can hurt players who can't rearrange their hand"
  ],
  "interaction": {
   "level": "High",
-  "kind": "trading and negotiation"
+  "kind": "trading and negotiation",
+  "detail": "The entire game revolves around open trading and deal-making between players, with almost no private strategy beyond your fixed hand order. The shared trading pool and market are constantly being negotiated over in real time."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "Coins come from efficiently harvesting large single-type bean fields, so the winner is whoever manages field space and trades to avoid planting low-value beans"
+  "why": "The only currency is coins earned from harvesting bean sets, so the game comes down to trading efficiency",
+  "how_you_win": "You win by ending the game with the most coins, earned by harvesting large, well-timed sets of matching bean cards."
  },
  "similar": [
-  "The Bohnanza expansions (e.g. Al Cabohne)",
-  "Chinatown",
-  "Sheriff of Nottingham",
+  "Coloretto",
   "For Sale",
-  "Catan"
+  "Traders of Osaka",
+  "Chinatown",
+  "The Princes of Florence"
  ],
- "_fingerprint": "fc27b3b7b0ce3f4b",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "90dead16860d84ef",
  "_name": "Bohnanza"
 }

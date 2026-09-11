@@ -1,35 +1,39 @@
 {
  "confidence": "high",
- "summary": "Catan is a resource-trading race where dice rolls determine income and players constantly negotiate trades to get the combination of wood, brick, sheep, wheat, and ore they need to expand. Turns are quick but the game lives or dies on the table talk, as blocking a rival's best spot with the robber or refusing a lopsided trade can shift momentum entirely.",
+ "summary": "Catan is the classic trading-and-building game where players gather resources from a shared hex map and negotiate trades to build settlements, cities, and roads toward ten victory points. It's driven as much by table negotiation and dice luck as by strategic placement, making it social and unpredictable in equal measure.",
  "praised": [
-  "Approachable gateway game that introduced a generation to modern board gaming",
-  "Trading and negotiation create real player interaction",
-  "High replayability from the modular, randomized board setup",
-  "Quick to teach and reasonably quick to play"
+  "accessible gateway game that introduced euro-style trading to millions",
+  "strong social negotiation and trading dynamic",
+  "quick to teach with high replayability from modular board setup"
  ],
  "criticised": [
-  "Dice-driven resource production can be swingy and punish bad starting placement",
-  "The robber and 7-rolls introduce luck-based setbacks that feel unfair",
-  "Player elimination-adjacent feel when someone gets blocked or resource-starved early",
-  "Downtime between turns, especially at higher player counts",
-  "Runaway leader problem once someone gets a strong production engine going"
+  "heavy dice dependency can swing outcomes",
+  "robber and blocking mechanics can feel mean or kingmaking",
+  "can suffer from runaway leader problems in some games"
  ],
  "interaction": {
   "level": "High",
-  "kind": "trading and negotiation, with robber-based blocking"
+  "kind": "trading and negotiation with blocking",
+  "detail": "Players negotiate resource trades directly with each other every turn and can block opponents' expansion or steal resources with the robber, making the shared hex board and trade economy central to the experience. Individual settlements and hands are private, but the resource-producing board and robber placement are entirely shared and contested."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points accumulate from settlements, cities, longest road, largest army, and hidden development cards, so the winner is usually whoever diversifies best rather than maxing one source."
+  "breadth": "Some",
+  "why": "Points come from settlements, cities, longest road, largest army, and development cards, rewarding balanced expansion.",
+  "how_you_win": "You win by expanding settlements and cities across the island while securing bonus points from road networks or knight cards, reaching ten points first."
  },
  "similar": [
-  "Catan: Seafarers",
-  "Puerto Rico",
   "Ticket to Ride",
-  "The Settlers of Catan Card Game",
-  "Carcassonne"
+  "Puerto Rico",
+  "Carcassonne",
+  "Bohnanza",
+  "Power Grid"
  ],
- "_fingerprint": "0929edb447491899",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "8dee95893ff12b19",
  "_name": "Catan"
 }

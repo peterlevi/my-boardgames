@@ -1,35 +1,41 @@
 {
- "confidence": "high",
- "summary": "A tight two-to-four-player area-majority game where players secretly place influence cubes to sway which of three factions (or all four with foreign invaders) will control regions, then race to remember what everyone actually committed since much of it is played face-down. It plays fast and mean, with a distinctive memory element that rewards tracking opponents' hidden bids as much as spatial strategy.",
+ "confidence": "medium",
+ "summary": "Players secretly back one of several rival claimants to a divided kingdom and spend a tight hand of dual-use cards to reinforce armies in contested regions or squirrel away resources for later. At the end, whichever faction actually ends up strongest on the map determines who scores well, so a lot of the game is reading opponents' hidden loyalties and nudging the map toward (or away from) outcomes that favor you.",
  "praised": [
-  "Clever memory mechanic where you must recall face-down/hidden commitments rather than rely on open information",
-  "Tight, fast playtime (30-45 min) with high replayability from variable setup",
-  "Elegant, minimalist design that hides real depth",
-  "Strong player interaction and tension despite the small footprint",
-  "Second edition's improved components, art, and the new asymmetric advanced mode"
+  "tight, elegant ruleset for the depth it produces",
+  "tense bluffing over hidden loyalties",
+  "fast 30-45 minute playtime",
+  "high replayability from variable setup"
  ],
  "criticised": [
-  "Memory requirement can frustrate players who dislike memory-based mechanics or feel it punishes forgetfulness over strategy",
-  "Rules and interactions (especially multi-faction/backstab dynamics) take a play or two to click",
-  "Can feel swingy or kingmaker-ish in some player counts, especially with only 2-3 factions in play",
-  "Relatively abstract/dry theme layered thinly onto the mechanics"
+  "can feel swingy or kingmaker-y when one player is clearly losing",
+  "weaker/more solved at 2 players",
+  "cube/area-majority tracking can be fiddly",
+  "some find the theme thin dressing over an abstract system"
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking, hidden bidding, and area-majority maneuvering with a memory-tracking element"
+  "kind": "area majority with hidden loyalties and bluffing",
+  "detail": "Every army cube goes onto one shared map, so contesting a region directly denies or overtakes another player's position there. Because everyone's ultimate scoring depends on which faction ends up dominant, players are constantly reading each other's hidden allegiance and either reinforcing or undermining specific regions to steer the outcome."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is determined by which faction ends up dominant and whether that outcome favors your secretly held allegiances, not by accumulating points from multiple sources"
+  "why": "Your score depends on backing whichever faction actually ends up dominant on the map, not on accumulating points from varied sources.",
+  "how_you_win": "You win by aligning your hidden loyalty with the faction that ends up strongest and by having contributed strongly to that faction's regions."
  },
  "similar": [
-  "Tigris & Euphrates",
-  "Blood Rage",
-  "Kemet",
-  "Libertalia",
-  "Coup"
+  "El Grande",
+  "Inis",
+  "Chaos in the Old World",
+  "Tammany Hall",
+  "Blood Rage"
  ],
- "_fingerprint": "a774d3c9dc601f45",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "6c94965a81e1b1b9",
  "_name": "The King Is Dead: Second Edition"
 }

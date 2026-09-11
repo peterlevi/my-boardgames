@@ -40,28 +40,28 @@ The Dixit base game and each expansion contain 84 cards, and the cards can be mi
 										      	               				<yearpublished value="2008" />
 						               				<minplayers value="3" />
 						               				<maxplayers value="6" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="941">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="942">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="2" />
-					<result value="Not Recommended" numvotes="683" />
+					<result value="Not Recommended" numvotes="684" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="2" />
 					<result value="Recommended" numvotes="11" />
-					<result value="Not Recommended" numvotes="689" />
+					<result value="Not Recommended" numvotes="690" />
 				</results>					
 			
 		<results numplayers="3">		
 					<result value="Best" numvotes="10" />
-					<result value="Recommended" numvotes="179" />
+					<result value="Recommended" numvotes="180" />
 					<result value="Not Recommended" numvotes="577" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="144" />
+					<result value="Best" numvotes="145" />
 					<result value="Recommended" numvotes="605" />
 					<result value="Not Recommended" numvotes="79" />
 				</results>					
@@ -91,13 +91,13 @@ The Dixit base game and each expansion contain 84 cards, and the cards can be mi
 						               				<minplaytime value="30" />
 						               				<maxplaytime value="30" />
 						               				<minage value="8" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="316">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="317">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="2" />
 					<result value="4" numvotes="10" />
 					<result value="5" numvotes="23" />
-					<result value="6" numvotes="106" />
+					<result value="6" numvotes="107" />
 					<result value="8" numvotes="128" />
 					<result value="10" numvotes="34" />
 					<result value="12" numvotes="8" />
@@ -1040,7 +1040,23 @@ The Dixit base game and each expansion contain 84 cards, and the cards can be mi
 			
 
 			
-	
+			<videos total="221">
+						<video id="627492" title="شرح لعبة ديكست Dixit" category="instructional" language="Arabic" link="http://www.youtube.com/watch?v=4aR6eoFCfpA" username="TableAndCard" userid="4720127" postdate="2026-08-29T21:45:48-05:00" />
+						<video id="625409" title="Looking at Pretty Pictures | Dixit Gameplay" category="session" language="English" link="http://www.youtube.com/watch?v=afTKFhsPXBY" username="criticalhitgames" userid="4704583" postdate="2026-08-15T21:18:17-05:00" />
+						<video id="618568" title="The Purge: #5451 Dixit: Maybe the best family/party game ever released? " category="review" language="English" link="http://www.youtube.com/watch?v=zQofPmht53s" username="william4192" userid="296644" postdate="2026-07-02T11:31:21-05:00" />
+						<video id="607813" title="How to Play Dixit" category="instructional" language="English" link="http://www.youtube.com/watch?v=-Md8eYHMYI0" username="sine_square_x" userid="709600" postdate="2026-04-16T09:27:58-05:00" />
+						<video id="598735" title="How to Play Dixit - Full tutorial" category="instructional" language="English" link="http://www.youtube.com/watch?v=HnGbfhGA8xM" username="DChallenger" userid="473638" postdate="2026-02-18T09:17:28-06:00" />
+						<video id="590160" title="Bora jogar: DIXIT, FLIP 7 e EXPLODING KITTENS | Última Live 2025" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=NyJdoSKYlD0" username="TORUGO" userid="1169932" postdate="2025-12-29T17:03:25-06:00" />
+						<video id="585160" title="Dixit Unboxing by MyboardGames.net" category="unboxing" language="English" link="http://www.youtube.com/watch?v=Qr7w4Nq5uBU" username="My_BoardGames" userid="4345861" postdate="2025-11-27T18:17:58-06:00" />
+						<video id="574710" title="Dixit - Quick Look Unboxing &amp; Reboxing with Assembly - What's in the box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=djHnt9izfPo" username="broseygames" userid="4181268" postdate="2025-09-30T19:54:42-05:00" />
+						<video id="569498" title="Vergiss Dixit, spiel lieber..." category="other" language="German" link="http://www.youtube.com/watch?v=bd3HMwVk8NM" username="WuerfelUndZucker" userid="1670080" postdate="2025-08-30T12:07:51-05:00" />
+						<video id="554618" title="Dixit" category="instructional" language="French" link="http://www.youtube.com/watch?v=mwI9EMs9LZM" username="kikik58" userid="3827212" postdate="2025-05-18T12:08:21-05:00" />
+						<video id="542957" title="Огляд від каналу &quot;Antoshka&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=i3Ap7aI59Vo" username="davose" userid="1472043" postdate="2025-03-12T08:08:53-05:00" />
+						<video id="531084" title="Нумограй від Підпільний LIVE" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=GG1swBdiWhY" username="punk_rock" userid="2986072" postdate="2025-01-03T03:58:27-06:00" />
+						<video id="523407" title="Dixit 2a Edição | Unboxing" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=2Z_9sBvW_JU" username="P2BG" userid="3282950" postdate="2024-11-09T10:11:28-06:00" />
+						<video id="512081" title="Inside…Dixit Rare Promo Cards (4K 60fps)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=hu3AXz2rJKA" username="table_talks" userid="3249213" postdate="2024-09-01T05:17:27-05:00" />
+						<video id="508988" title="Présentation du jeu - Nouveaux joueurs ou le temps de préparer le plateau" category="other" language="French" link="http://www.youtube.com/watch?v=_798EEWIN1c" username="tomboardgame" userid="3951464" postdate="2024-08-14T03:06:07-05:00" />
+					</videos>
 
 	
 
@@ -1049,22 +1065,22 @@ The Dixit base game and each expansion contain 84 cards, and the cards can be mi
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="72089" />
-			<average value="7.17804" />
-			<bayesaverage value="7.06228" />
+			<usersrated value="72108" />
+			<average value="7.17782" />
+			<bayesaverage value="7.06225" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="435" bayesaverage="7.06228" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="30" bayesaverage="7.06218" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="435" bayesaverage="7.06225" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="30" bayesaverage="7.06209" />
 												</ranks>
 
-			<stddev value="1.39318" />
+			<stddev value="1.39313" />
 			<median value="0" />
-			<owned value="109972" />
-			<trading value="1180" />
+			<owned value="109993" />
+			<trading value="1179" />
 			<wanting value="459" />
-			<wishing value="7430" />
-			<numcomments value="10794" />
+			<wishing value="7427" />
+			<numcomments value="10797" />
 			<numweights value="2536" />
 			<averageweight value="1.1909" />
 			</ratings>

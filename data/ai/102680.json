@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Trajan is a dense Feld point-salad game where the mancala-like bowl mechanism constrains which of six actions you can take each turn, forcing you to plan several moves ahead to line up the action you actually need. Turns are quick once you know the system, but the puzzle of managing your tableau and reading opponents' bowls to avoid being blocked is the whole game.",
+ "summary": "Trajan is a Feld design built around a mancala-style tableau where picking up and redistributing pieces from one of six bowls determines which action you take, forcing players to plan several turns ahead to line up the actions they actually want. It's a classic 'salad bowl' Euro where you're juggling six semi-independent mini-games at once, each feeding a different scoring track.",
  "praised": [
-  "Clever, unique mancala-based action-selection mechanism",
-  "Tight, puzzly turn planning with meaningful long-term sequencing",
-  "Multiple viable strategies and good replayability",
-  "Efficient turns once the system clicks"
+  "clever and unusual mancala action-selection mechanism",
+  "tight, satisfying puzzle of planning your bowl rotations",
+  "good replayability from the modular board and tile setups",
+  "efficient runtime for the strategic depth"
  ],
  "criticised": [
-  "Steep learning curve and unintuitive rules explanation",
-  "Thematically dry/pasted-on Roman setting",
-  "Point-salad scoring can feel like an accounting exercise",
-  "Low direct interaction; can feel like parallel solitaire"
+  "thematically dry — feels like an abstract puzzle wearing a Roman skin",
+  "salad-bowl scoring can feel disconnected and hard to evaluate mid-game",
+  "steep learning curve for the mancala action system",
+  "some tracks feel stronger than others depending on tile draws"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with some indirect blocking via forum tile drafting and senate track positioning"
+  "level": "Medium",
+  "kind": "drafting shared tiles and competing for senate/track position",
+  "detail": "Players draft from shared forum tiles and race up common tracks (like the Senate), so there is real competition for limited resources and position, but most of the actual play happens on each player's own bowl tableau. Direct attacks or blocking of opponents is rare."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Salad",
-  "why": "Points trickle in from building, trading, military campaigns, senate influence, and forum tile sets, so the winner is whoever chains the bowl-action system most efficiently across several tracks rather than dominating one."
+  "why": "Six different tracks — building, trading, military, Senate, forum tiles, and Trajan tiles — each contribute points in different ways.",
+  "how_you_win": "You win by efficiently cycling your mancala bowls to fuel whichever combination of the six scoring tracks you can push furthest."
  },
  "similar": [
-  "The Castles of Burgundy",
-  "Bruges",
   "Amerigo",
-  "The Speicherstadt",
-  "Le Havre"
+  "In the Year of the Dragon",
+  "Bora Bora",
+  "The Castles of Burgundy",
+  "Antike Duellum"
  ],
- "_fingerprint": "d1e845094681a1b6",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "e5659bb776a80caf",
  "_name": "Trajan"
 }

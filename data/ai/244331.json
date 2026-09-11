@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Blue Lagoon is a spatial puzzle where you race to claim resource-rich hexes by carefully extending chains of settlers and villages, with the mid-game reset forcing you to have planted village 'seeds' in the right spots for phase two. It plays fast and tense, with much of the game coming down to reading the shrinking board and picking exactly the right placement each turn rather than any real negotiation.",
+ "summary": "A lean Knizia area-control and set-collection game where you spread settlers and villages across a shrinking archipelago in two distinct phases. It plays fast, feels tense turn to turn, and rewards efficient positioning more than long-term planning.",
  "praised": [
-  "Elegant, easy-to-teach rules producing a surprisingly tight strategic puzzle",
-  "Strong tension from the two-phase structure (villages placed in phase one become the only expansion points in phase two)",
-  "Quick playtime with high replayability due to variable island setups",
-  "Attractive, colorful production"
+  "Elegant, simple rules for the depth they produce",
+  "Tense, meaningful decisions every turn",
+  "Quick playtime and easy teach",
+  "Beautiful, tactile production",
+  "Works well at 2 players"
  ],
  "criticised": [
-  "Can feel like solitaire/parallel optimization with limited direct player interaction beyond spatial blocking",
-  "Snowballing/positional advantage for whoever secures key spots early, especially with experienced players",
-  "Some analysis paralysis in the placement decisions despite simple rules",
-  "Scoring math (set collection tiers) can feel a bit fiddly for new players"
+  "Some randomness in tile/resource setup",
+  "Can feel dry or overly abstract for players wanting theme",
+  "Limited long-term strategy once the phase-two reset happens"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial via tile placement"
+  "kind": "area majority and blocking",
+  "detail": "Players place settlers and villages on a shared island board, directly contesting the same resource tiles and blocking each other's expansion routes. Nearly all the game state is shared on the central board, with only your token supply kept private."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from multiple resource sets, giant sea creatures, and largest connected network, so the winner is whoever balances several scoring channels rather than maxing one"
+  "why": "Points come from resource set collection, village majorities on islands, and the largest connected network, so no single strategy dominates",
+  "how_you_win": "You win by combining collected resource sets, controlling the most islands via village majority, and building the biggest connected settlement network by game end."
  },
  "similar": [
-  "Yavalath",
-  "Ingenious",
+  "Yellow & Yangtze",
   "Tigris & Euphrates",
-  "Ta-Yü",
-  "Cacao"
+  "Ta Yu",
+  "Isle of Skye",
+  "Web of Power"
  ],
- "_fingerprint": "2100b2f8178d8867",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "2bfca1c29c4a7bf5",
  "_name": "Blue Lagoon"
 }

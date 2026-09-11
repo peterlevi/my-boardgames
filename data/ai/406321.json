@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Players simultaneously reveal a hand card each round and slot it into one of four ascending rows, taking the whole row (and its penalty bull's-heads) if their card is the sixth added; the tension comes from guessing how close your number is to the current row-ends and fearing being forced into a bad row. It's fast, light, and mean in a friendly way, with almost no direct control over your fate beyond calculated bluffing on card values.",
+ "summary": "6 nimmt! (Take 5) is a simple, cutthroat card game where players simultaneously play numbered cards into rows, trying to avoid being the one who takes a row full of penalty 'bull head' points. It's quick, laugh-out-loud mean, and scales well to large groups.",
  "praised": [
-  "Extremely quick to teach and play",
-  "Tense push-your-luck decisions despite simple rules",
-  "Scales well from small to large groups",
-  "Great as a filler or gateway game"
+  "Extremely easy to teach and quick to play",
+  "Great with large groups",
+  "Surprisingly tense despite simplicity",
+  "Good mix of prediction and luck"
  ],
  "criticised": [
-  "Heavy luck/randomness in hand draw and turn order reveal",
-  "Can feel mean when you're forced to eat a big row",
-  "Limited long-term depth or replayable strategy",
-  "Some feel it overstays its welcome at higher player counts"
+  "Heavily luck-dependent",
+  "Little strategic depth",
+  "Can feel repetitive over many rounds",
+  "Little you can do about a bad hand"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "Simultaneous card placement forcing indirect blocking and row denial"
+  "level": "High",
+  "kind": "simultaneous card placement and penalty avoidance",
+  "detail": "All players reveal cards simultaneously onto shared rows, and where your card lands depends entirely on everyone else's plays, often forcing you to take a bad row because of others' choices. The row state is fully shared and constantly reshaped by every player's card each turn."
  },
  "win_criteria": "Lowest-highest scoring",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game ends when a player crosses a bull's-head penalty threshold, and the player with the fewest accumulated penalty points wins"
+  "why": "Players accumulate bull-head penalty points from taken rows, and the game ends when someone crosses a threshold.",
+  "how_you_win": "You win by having the fewest penalty points when another player crosses the losing threshold, achieved by avoiding taking full rows."
  },
  "similar": [
   "Coloretto",
-  "For Sale",
   "No Thanks!",
-  "Medici",
-  "Camel Up"
+  "For Sale",
+  "Camel Up",
+  "The Game"
  ],
- "_fingerprint": "05c4fca422e3199e",
+ "teachers": [
+  "Watch It Played",
+  "Gaming Rules!",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "56f1cfaa2a430e55",
  "_name": "Take 5: 30th Anniversary Edition"
 }

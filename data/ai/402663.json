@@ -1,18 +1,41 @@
 {
- "confidence": "low",
- "summary": "",
- "praised": [],
- "criticised": [],
+ "confidence": "medium",
+ "summary": "Salton Sea is a dense economic engine-builder about mining lithium and investing in geothermal companies, in the vein of designer David Bernal's earlier heavy Euros like Teotihuacan and Merv. Turns involve careful contract fulfillment and stock/investment decisions that snowball into a long, brain-burning economic race.",
+ "praised": [
+  "satisfying engine-building progression",
+  "clean production and modular board",
+  "strong solo mode",
+  "interesting investment/stock mechanism"
+ ],
+ "criticised": [
+  "long playtime for the payoff",
+  "can feel dry or spreadsheet-like",
+  "heavy rules overhead for a niche theme",
+  "downtime in higher player counts"
+ ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with worker placement contention"
+  "kind": "mostly parallel play with worker-placement blocking",
+  "detail": "Players mainly build their own engine on a personal board, occasionally competing for the same worker-placement spots or investment opportunities on the shared board. There is light indirect competition for contracts and resources but little direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": ""
+  "why": "Final score comes from company investments, contracts fulfilled, and end-game bonuses layered on top of an economic engine.",
+  "how_you_win": "Build the most efficient production and investment engine over seven rounds to end with the highest combined score from CrypCoin-style earnings and bonuses."
  },
- "similar": [],
- "_fingerprint": "7164f9645867bf90",
+ "similar": [
+  "Teotihuacan: City of Gods",
+  "Merv: The Heart of the Silk Road",
+  "Barrage",
+  "On Mars",
+  "Skymines"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "c4817d80aa4c1cf5",
  "_name": "Salton Sea"
 }

@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "Zoo Vadis is a fast, cutthroat negotiation game where players openly bargain, bribe, and vote to move their animal up a shared hierarchy, with victory points doubling as the currency you spend to buy influence. It plays best as a social, table-talk-heavy experience where alliances shift constantly and the mechanics matter less than reading the room.",
+ "confidence": "medium",
+ "summary": "A light social deduction/negotiation game where animal players jockey for position on a track of enclosures, using hidden victory points as currency to bribe and persuade others into voting them upward. It's fast, chaotic, and lives or dies on the table's willingness to talk, trade favors, and occasionally betray each other for laurels.",
  "praised": [
-  "Tight, clever design that layers negotiation, hidden VP tracking, and bribery into a short 20-40 minute package",
-  "Scales unusually well from 3 to 7 players thanks to the neutral, bribable peacock pieces filling out lower counts",
-  "High replayability driven by shifting alliances and table dynamics rather than the rules themselves",
-  "Polished Osprey Games production and quick teach for a negotiation-heavy title"
+  "Quick, silly, high-energy negotiation with a big player count range",
+  "Simple rules that open up lots of table talk and dealmaking",
+  "Good as a party-weight filler for groups that enjoy Knizia's negotiation games"
  ],
  "criticised": [
-  "Lives or dies on the group - a quiet, non-negotiating, or overly analytical table falls flat",
-  "Prone to kingmaking and runaway-leader dynamics common to open-negotiation designs",
-  "Feels derivative to fans of Knizia's other negotiation games (original Quo Vadis, Amun-Re, Medici, Ra)",
-  "Thin, pasted-on theme that's mostly an excuse for the voting/bribery structure"
+  "Very swingy and reliant on group dynamics; can feel unsatisfying with quiet or non-negotiating players",
+  "Some feel it's a lesser, more randomized reskin of Knizia's earlier negotiation designs (e.g. Medici vs. Strozzi/Intrigue lineage)",
+  "Downtime or feel-bad moments when players gang up on a leader"
  ],
  "interaction": {
   "level": "High",
-  "kind": "trading and negotiation, open bribery and voting"
+  "kind": "bribery, negotiation, and voting",
+  "detail": "Players spend hidden victory-point tokens to bribe each other for votes on a shared enclosure track, so almost every turn is a direct negotiation affecting a single communal board state. There is no private tableau of note; the entire game is about converting private points into public influence over others."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "Your final score comes almost entirely from laurels (victory points) you've hoarded and spent as bribery currency during voting, so the winner is whoever manages that single VP-as-resource economy best."
+  "why": "The winner is whichever species reaches and holds the top 'Zoo Mascot' enclosure, determined by accumulated laurels earned through votes",
+  "how_you_win": "You win by successfully campaigning your species to the top enclosure through bribery and vote-trading, ending the game with the most laurels/support at the top spot."
  },
  "similar": [
-  "Quo Vadis",
-  "Amun-Re",
-  "Medici",
-  "Cutthroat Caverns",
-  "Chinatown"
+  "Intrigue",
+  "Medici vs. Strozzi",
+  "Cannes",
+  "For Sale",
+  "The Traitors of Camelot"
  ],
- "_fingerprint": "d9098949fcf63164",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "22e8f11db7c49730",
  "_name": "Zoo Vadis"
 }

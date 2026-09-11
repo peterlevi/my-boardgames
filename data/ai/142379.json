@@ -1,32 +1,41 @@
 {
  "confidence": "medium",
- "summary": "A Vital Lacerda escape-the-city game where players draft action tiles to move their crew across a hex-based city map, grabbing cash and dodging the closing police cordon before the exits seal. Like most Lacerda designs it's a dense, interlocking puzzle of route-planning and resource optimization rather than a light thematic romp.",
+ "summary": "Escape Plan is a Vital Lacerda puzzle game where thief characters race across a modular hex city map to reach an exit before lockdown, picking up cash and dodging obstacles along asymmetric character powers. It's a tighter, shorter, more accessible design than Lacerda's usual heavy fare, playing almost like a movement puzzle race.",
  "praised": [
-  "tight, satisfying puzzle of route optimization",
-  "strong table presence and thematic heist framing",
-  "meaningful player interaction over shared spaces and tile drafting"
+  "Clever modular map and route-planning puzzle",
+  "Shorter and lighter than typical Lacerda games while retaining clever design",
+  "Strong player asymmetry via unique character powers",
+  "High production values and thematic heist framing"
  ],
  "criticised": [
-  "steep rules overhead typical of Lacerda games",
-  "some feel the theme is thin compared to the mechanical complexity",
-  "long playtime for what is essentially a spatial optimization puzzle"
+  "Can feel more solitaire/puzzly than interactive",
+  "Some find the theme thin compared to the mechanical puzzle",
+  "Less depth than Lacerda's flagship titles like Vinhos or On Mars",
+  "Niche appeal since it doesn't fit the 'usual heavy Lacerda' expectation"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "area movement and drafting contention"
+  "level": "Low",
+  "kind": "Mostly parallel play with a shared shrinking map",
+  "detail": "Players move and place tiles on a shared modular board that changes for everyone as the city locks down, but scoring and routes are largely individual, with interaction coming from competing for the same map spaces and enclosure timing rather than direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "final score comes from recovered money, completed routes, and end-game bonuses tied to how efficiently you escaped"
+  "breadth": "Some",
+  "why": "Points come from cash collected en route and successfully escaping before the city fully locks down.",
+  "how_you_win": "Plan the most efficient escape route to gather the most money and reach an exit tile before the map closes off, scoring highest at the end."
  },
  "similar": [
-  "Lisboa",
   "On Mars",
-  "Vinhos",
-  "The Gallerist",
-  "CO2"
+  "The Networks",
+  "Vinhos Deluxe Edition",
+  "Kanban EV",
+  "CO2: Second Chance"
  ],
- "_fingerprint": "b2ffa50e661ade3e",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Space-Biff"
+ ],
+ "_fingerprint": "e2a32d8ff1a4c667",
  "_name": "Escape Plan"
 }

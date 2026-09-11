@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "A dense, systems-heavy Pfister design where you route specialists across a hex map to fulfill ever-shifting resource needs while managing a bag/deck of tokens and riding a day/night rondel. It rewards efficient engine-building and planning several turns ahead more than reacting to opponents, with real weight in tracking multiple interlocking subsystems.",
+ "confidence": "medium",
+ "summary": "Blackout: Hong Kong is a dense Alexander Pfister economic game where players manage specialists, resources, and a rondel-like action wheel to restore order after a citywide blackout, building an engine while competing for area influence across the city. It's a heavy, interlocking euro that rewards efficient planning over many rounds.",
  "praised": [
-  "Deep, satisfying puzzle of resource and route optimization",
-  "Strong solo mode that holds up on repeated plays",
-  "High replayability from varied need cards and map routes",
-  "Thematic day/night and blackout mechanisms feel well integrated"
+  "Deep, interlocking systems that reward long-term engine building",
+  "High replayability from modular setup and variable specialists",
+  "Satisfying sense of progression as your engine comes online"
  ],
  "criticised": [
-  "Steep learning curve and fiddly rules overhead",
-  "Long turns and downtime, especially at higher player counts",
-  "Bag/token management can feel bookkeeping-heavy",
-  "Theme is thin dressing over a dense Euro engine"
+  "Steep learning curve with a lot of rules and icon overhead",
+  "Long playtime that can drag, especially with new players",
+  "Interaction can feel indirect, closer to parallel engine-building"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light competition for map routes and shared resources"
+  "level": "Medium",
+  "kind": "area majority and shared drafting",
+  "detail": "Players draft from shared card and resource pools and compete for area-majority control on the city map, so timing and positioning affect opponents' options. Each player's own specialist network and resource engine, however, are built and optimized largely independently on their own board."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from fulfilling need cards, route/network building, and end-game bonuses, so the winner is whoever built the most efficient overall engine rather than one dominant strategy"
+  "why": "Victory points come from area control, specialist networks, resource management, and end-game bonuses, so strong scores typically combine several of these systems.",
+  "how_you_win": "You win by building the most efficient network of specialists and resources while securing area-majority control across the city, out-scoring rivals across multiple tracks by game end."
  },
  "similar": [
-  "Great Western Trail",
   "Mombasa",
+  "Great Western Trail",
   "Maracaibo",
-  "Underwater Cities",
-  "Oh My Goods!"
+  "Barrage",
+  "Anachrony"
  ],
- "_fingerprint": "b57206cde2a246e2",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "b05984ae72980763",
  "_name": "Blackout: Hong Kong"
 }

@@ -1,34 +1,21 @@
 {
- "confidence": "medium",
- "summary": "A dense civilization game where you draft dice onto a shared programming/council board, using low-value dice to unlock stronger actions and high-value dice to advance on a turn-order track; over four rounds you build cities and monuments, run trade routes, research decrees, and jockey for area influence around Knossos. It plays like a heavier cousin of the designer's earlier Rurik: Dawn of Kiev, trading direct conflict for economic and positional competition.",
- "praised": [
-  "Clever dice-drafting/programming system that rewards planning several actions ahead",
-  "Strong table presence and production quality",
-  "Meaningful variable player powers and setup that change strategy each game",
-  "Satisfying multi-path economic engine building (trade, monuments, decrees)"
- ],
- "criticised": [
-  "High rules overhead and long teach for a first play",
-  "Analysis paralysis from the dice-programming puzzle, especially in higher player counts",
-  "Some imbalance/luck perceived in dice rolls despite the drafting mitigation",
-  "Runtime can drag past the stated 90-150 minutes"
- ],
+ "confidence": "low",
+ "summary": "",
+ "praised": [],
+ "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority/influence and dice drafting with some blocking, plus limited direct conflict against outsiders"
+  "kind": "",
+  "detail": ""
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Other",
  "scoring": {
-  "breadth": "Broad",
-  "why": "victory points accumulate from multiple systems at once—city/monument building, area majority, trade routes, and decrees—so the winner is usually whoever balances several engines rather than maxing one"
+  "breadth": "Some",
+  "why": "",
+  "how_you_win": ""
  },
- "similar": [
-  "Rurik: Dawn of Kiev",
-  "Fief: France 1429",
-  "Tzolk'in: The Mayan Calendar",
-  "Teotihuacan: City of Gods",
-  "Trickerion: Legends of Illusion"
- ],
- "_fingerprint": "05793a337d45ca67",
+ "similar": [],
+ "teachers": [],
+ "_fingerprint": "00c32e9b852da1f4",
  "_name": "Minos: Dawn of the Bronze Age"
 }

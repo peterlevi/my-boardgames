@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Lorenzo il Magnifico is a dense worker-placement game where dice-value workers claim action spaces to gather resources, buy cards, and race through developments across a shared board, with the twist that better dice values often mean worse placement order. Every turn is a tight optimization puzzle balancing short-term resource needs against long-term excommunication penalties and card-engine building, and this Big Box bundles the base game with several expansions adding new leaders, characters, and Pazzi Conspiracy cards for extra variability.",
+ "summary": "A dense worker-placement euro where the strength of your dice-workers determines which action spaces you can claim, forcing constant tradeoffs between speed and power across resource gathering, card acquisition, and church-track advancement. Games reward building an efficient engine of development cards that snowball into strong late-round turns.",
  "praised": [
-  "Deep, satisfying worker-placement puzzle with meaningful dice-as-workers mechanic",
-  "Strong sense of engine-building and multiple viable strategies",
-  "High replayability from variable setup and modular expansion content",
-  "Excellent production values and thematic Renaissance art"
+  "deep, satisfying engine-building with many viable strategies",
+  "clever dice-as-workers mechanism that adds tactical texture to placement",
+  "excellent production and long-term replayability, especially with the included expansions",
+  "strong sense of progression as your tableau compounds"
  ],
  "criticised": [
-  "Heavy rulebook and many symbols/exceptions make onboarding slow",
-  "Can suffer from analysis paralysis, especially at higher player counts",
-  "Excommunication tiles can feel punishing if a player falls behind",
-  "Some expansion content seen as adding complexity without proportional depth"
+  "significant downtime, especially at 4-5 players",
+  "steep learning curve and heavy rulebook for newcomers",
+  "dice/card luck can swing available options",
+  "prone to analysis paralysis in the mid-to-late game"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial via worker placement"
+  "kind": "worker placement with dice, indirect blocking",
+  "detail": "Players compete for a limited set of shared action spaces and cards, so claiming a strong spot or card denies it to everyone else, but each player otherwise develops their own private board of resources, cards, and tracks. The shared council/church track and excommunication penalties are the main points of direct cross-player effect."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from military/territory/building/character cards, excommunication penalties, and end-game bonuses, so the winner is usually whoever built the most efficient multi-track engine."
+  "why": "Final score comes from development card values, leftover resources, military strength, and faith/vatican track position all added together.",
+  "how_you_win": "Build an efficient personal engine by claiming high-value development cards and resource conversions before opponents, then convert everything into victory points at game end."
  },
  "similar": [
-  "Grand Austria Hotel",
+  "Great Western Trail",
   "Tzolk'in: The Mayan Calendar",
   "The Voyages of Marco Polo",
-  "Marco Polo II: In the Service of the Khan",
-  "Praga Caput Regni"
+  "Underwater Cities",
+  "Barrage"
  ],
- "_fingerprint": "582162c31850ca7e",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "2da0d28c5059ea0a",
  "_name": "Lorenzo il Magnifico: Big Box"
 }

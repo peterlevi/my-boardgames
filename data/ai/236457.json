@@ -1,36 +1,40 @@
 {
  "confidence": "high",
- "summary": "A worker-placement game about gathering resources, building landmarks, and advancing the cathedral, with a virtue/corruption track that lets you steal workers or dodge the black market at moral cost. It plays as a tight engine-builder with light take-that (sending rivals' workers to jail) layered on top of otherwise fairly parallel development.",
+ "summary": "A worker-placement game where you gather resources to construct grand buildings for the King while deciding whether to play virtuously or dabble in smuggling and sabotage. Other players can throw your workers in jail or steal your resources, which keeps everyone glancing sideways at the shared building sites and the black market.",
  "praised": [
-  "Clean, tightly interlocking worker-placement systems (money, resources, apprentices, virtue) that all feed into each other",
-  "The virtue/corruption mechanic adds thematic tension and meaningful decisions",
-  "Strong solo mode and good scaling across player counts",
-  "High production values and evocative medieval theme",
-  "The 'kill steal'/jailing mechanic gives worker placement rare teeth without full conflict"
+  "tight worker-placement puzzle with meaningful choices",
+  "virtue/corruption track adds a moral dimension to strategy",
+  "satisfying building-construction theme",
+  "good player interaction without full-on chaos"
  ],
  "criticised": [
-  "Can feel a bit dry or math-y/optimization-heavy for players wanting more narrative or interaction",
-  "Jailing/sending workers to the block can feel mean or swingy at 2 players",
-  "Some rules overhead and iconography to learn early on",
-  "Randomness in contract/building card draws can limit planning",
-  "Runs long for its weight class at higher player counts"
+  "can feel mean when workers get jailed repeatedly",
+  "some rules overhead (raiding, contracts) for newer players",
+  "downtime between turns in higher player counts"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker denial and occasional direct sabotage (jailing/robbing rivals) layered over parallel engine-building"
+  "kind": "worker sabotage and shared building sites",
+  "detail": "Players compete for the same worker-placement spots and can pay to jail an opponent's worker or raid their warehouse, so turn order and timing matter a lot. Buildings under construction are a shared board state everyone contributes bricks to, while resources, virtue, and money are tracked on individual player boards."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from buildings constructed, cathedral contributions, virtue/end-game bonuses, and leftover resources/money, so efficient multi-track engine building decides the winner"
+  "why": "Points come from constructed buildings, completed contracts, virtue/corruption bonuses, and apprentices, so a winning strategy usually stacks several of these together.",
+  "how_you_win": "You win by efficiently converting raw resources into building contributions and contracts across the game while managing whether you lean virtuous or corrupt for bonus points at the end."
  },
  "similar": [
   "Raiders of the North Sea",
   "Paladins of the West Kingdom",
-  "Coimbra",
+  "Marco Polo",
   "Tzolk'in: The Mayan Calendar",
-  "Lords of Waterdeep"
+  "Grand Austria Hotel"
  ],
- "_fingerprint": "7aa5c5ef2c1a5382",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "831db33e1eec7069",
  "_name": "Architects of the West Kingdom"
 }

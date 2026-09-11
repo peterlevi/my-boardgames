@@ -1,18 +1,21 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "I don't have reliable first-hand knowledge of how Federation actually plays at the table or how it's specifically received by the community.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": ""
+  "kind": "",
+  "detail": ""
  },
- "win_criteria": "Other",
+ "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
-  "why": ""
+  "why": "",
+  "how_you_win": ""
  },
  "similar": [],
- "_fingerprint": "3deb58a059e9cd78",
+ "teachers": [],
+ "_fingerprint": "b443b3aae01341e4",
  "_name": "Federation"
 }

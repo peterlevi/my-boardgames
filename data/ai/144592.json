@@ -1,34 +1,38 @@
 {
- "confidence": "high",
- "summary": "A dense worker-placement/bidding game where the modular board means the available action spots shift each round, forcing constant replanning around a tight economic engine of materials, patrons, art, and building levels. It rewards efficient multi-turn planning and punishes players who get outbid or locked out of key spots, with a real risk of losing workers on the 'free' actions.",
+ "confidence": "medium",
+ "summary": "Bruxelles 1893 combines worker placement with auction and majority-control elements, as players develop Art Nouveau buildings and art in Belle Époque Brussels. The modular action board and bidding for turn order create a distinct, if fiddly, worker-placement experience.",
  "praised": [
-  "Clever modular board that changes the game every session",
-  "Tight, interlocking economic engine with meaningful decisions",
-  "High replayability due to variable action availability",
-  "Satisfying tension between free-but-risky and paid-but-safe actions"
+  "Clever modular board keeps action availability varied each game",
+  "Interesting fusion of bidding and worker placement",
+  "Rewarding for players who like tight economic optimization"
  ],
  "criticised": [
-  "Steep rules overhead and learning curve for new players",
-  "Can feel fiddly/overloaded with tracks and sub-systems",
-  "Downtime and analysis paralysis in higher player counts",
-  "Bidding/blocking can feel harsh for newer players caught unaware"
+  "Fiddly rules and dense iconography",
+  "Downtime can build with more players",
+  "Underrated but overlooked, so less community support and fewer plays"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial via worker placement and bidding"
+  "kind": "blocking and bidding",
+  "detail": "Players compete for limited action spaces on a shared modular board and bid against each other for turn order and patrons, directly affecting each other's available options. The action board and market are shared, while each player's building and money track are private."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from multiple interacting systems — building levels, art sales, patrons, and prestige from the action board — so the winner is usually whoever balances several engines rather than maxing one."
+  "why": "Points come from constructing building levels, creating and selling art, and gaining patrons and prestige",
+  "how_you_win": "You win by combining the highest-value building construction with successful art creation and patron/prestige bonuses by game end."
  },
  "similar": [
+  "Vikings",
   "Le Havre",
   "Caylus",
-  "Vinhos",
-  "Antike Duo",
-  "Village"
+  "The Gallerist",
+  "Manhattan Project"
  ],
- "_fingerprint": "1914c8238493387f",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "647bc09a0c63f10e",
  "_name": "Bruxelles 1893"
 }

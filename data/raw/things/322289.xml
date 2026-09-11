@@ -32,7 +32,7 @@ With the game's innovative worker progression system, each worker will have to s
 										      	               				<yearpublished value="2023" />
 						               				<minplayers value="1" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="353">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="354">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="12" />
@@ -47,7 +47,7 @@ With the game's innovative worker progression system, each worker will have to s
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="191" />
+					<result value="Best" numvotes="192" />
 					<result value="Recommended" numvotes="85" />
 					<result value="Not Recommended" numvotes="10" />
 				</results>					
@@ -628,7 +628,23 @@ With the game's innovative worker progression system, each worker will have to s
 			
 
 			
-	
+			<videos total="171">
+						<video id="597560" title="Episode 85: Battle of the Beards: Carnegie vs Darwin's Journey" category="review" language="English" link="http://www.youtube.com/watch?v=Rbu04Kt6EHE" username="dgin321" userid="3017262" postdate="2026-02-12T15:24:38-06:00" />
+						<video id="597185" title=" Darwin's Journey - raskutijavanje" category="unboxing" language="Croatian" link="http://www.youtube.com/watch?v=eiVKk2itkmU" username="Gejmeraja" userid="3876365" postdate="2026-02-11T12:46:52-06:00" />
+						<video id="584772" title="Darwin's Journey Review - Why Am I Constantly Late To My Favorite Games?" category="review" language="English" link="http://www.youtube.com/watch?v=TnAQe7ahz8Y" username="BoardGameCo" userid="987813" postdate="2025-11-25T15:21:10-06:00" />
+						<video id="584402" title="DARWIN'S JOURNEY | ¿El eurogame de colocación de trabajadores más evolucionado? | Análisis y Opinión" category="review" language="Spanish" link="http://www.youtube.com/watch?v=wxeiDGTP-zg" username="La_Critica_Ludica" userid="2803453" postdate="2025-11-23T09:01:43-06:00" />
+						<video id="575643" title="S3E6 - Darwin's Journey" category="session" language="English" link="http://www.youtube.com/watch?v=7Zb336EcjRI" username="Bellissimo" userid="1721069" postdate="2025-10-06T20:03:12-05:00" />
+						<video id="572072" title="Darwin's Journey українською, думка." category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=Si7jC3gsxRU" username="kerl24" userid="2923135" postdate="2025-09-15T05:23:43-05:00" />
+						<video id="558135" title="Games I'm Excited About - Darwin's Journey" category="review" language="English" link="http://www.youtube.com/watch?v=CEiMWJEgxTM" username="bookofnerds" userid="1036608" postdate="2025-06-10T19:24:22-05:00" />
+						<video id="556996" title="Правила и летсплей от GAMEDEMIC" category="session" language="Russian" link="http://www.youtube.com/watch?v=Y8eUax2YSwQ" username="GAMEDEMIC" userid="3831029" postdate="2025-06-03T05:37:35-05:00" />
+						<video id="556727" title="Darwin's Journey - Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=K70bL17HGqY" username="GreyDragoner" userid="1483175" postdate="2025-06-01T02:39:38-05:00" />
+						<video id="551147" title="Darwin's Journey - Unboxing &amp; Reboxing.- What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=nobkzVS3wz0" username="broseygames" userid="4181268" postdate="2025-04-26T20:41:45-05:00" />
+						<video id="547924" title="Explipartie de Darwin's Journey de Thundergryph Games par Le Carnet des Meeples" category="instructional" language="French" link="http://www.youtube.com/watch?v=-g7QbGPFozU" username="auzias" userid="408065" postdate="2025-04-10T06:27:41-05:00" />
+						<video id="547747" title="Unboxing of Russian version" category="unboxing" language="English" link="http://www.youtube.com/watch?v=QF1XMG3R6Yw" username="Boardgamersha" userid="1792431" postdate="2025-04-09T04:21:42-05:00" />
+						<video id="546488" title="Mise en place de Darwin's Journey de Thundergryph Games par Le Carnet des Meeples" category="instructional" language="French" link="http://www.youtube.com/watch?v=kngrXgdX_nU" username="auzias" userid="408065" postdate="2025-03-31T12:43:52-05:00" />
+						<video id="546235" title="Ouvre la boite Darwin's Journey Thundergryph Games Le Carnet des Meeples" category="unboxing" language="French" link="http://www.youtube.com/watch?v=irf2o2BMrSI" username="auzias" userid="408065" postdate="2025-03-29T16:39:08-05:00" />
+						<video id="537692" title="Ersteindruck Update: Darwin's Journey | Auf den Tisch!" category="other" language="German" link="http://www.youtube.com/watch?v=7s-zqBfHLMQ" username="Ironheart300" userid="1067703" postdate="2025-02-11T08:26:26-06:00" />
+					</videos>
 
 	
 
@@ -637,22 +653,22 @@ With the game's innovative worker progression system, each worker will have to s
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="12793" />
-			<average value="8.08673" />
-			<bayesaverage value="7.63251" />
+			<usersrated value="12814" />
+			<average value="8.08713" />
+			<bayesaverage value="7.63342" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="90" bayesaverage="7.63251" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="60" bayesaverage="7.72409" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="90" bayesaverage="7.63342" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="60" bayesaverage="7.72477" />
 												</ranks>
 
-			<stddev value="1.30282" />
+			<stddev value="1.30314" />
 			<median value="0" />
-			<owned value="17484" />
+			<owned value="17494" />
 			<trading value="111" />
 			<wanting value="517" />
-			<wishing value="5324" />
-			<numcomments value="1834" />
+			<wishing value="5325" />
+			<numcomments value="1837" />
 			<numweights value="719" />
 			<averageweight value="3.904" />
 			</ratings>

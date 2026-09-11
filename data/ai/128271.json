@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Players lay tiles to build an ever-growing, layered city, choosing whether to place tiles for immediate resources or points, or stack them atop existing tiles to expand their influence and score at game's end. It's a light-to-medium tile-laying game with a clever 'card as tile, tile as card' resource loop and neat area-influence scoring.",
+ "summary": "A clever, fairly quick city-building game where players lay tiles onto a shared, ever-growing city, stacking new buildings on top of old ones to reshape the skyline. Each player also manages a personal hand of resource and role cards that convert into points, resources, or new tiles.",
  "praised": [
-  "elegant, tactile layering mechanic where tiles double as cards",
-  "quick to teach and plays fast",
-  "good tension between short-term resources and long-term influence",
-  "solid solo variant"
+  "elegant tile-stacking mechanism that keeps the city evolving",
+  "quick, tight playtime for the depth offered",
+  "scales well across player counts including solo",
+  "satisfying tableau/engine building each round"
  ],
  "criticised": [
-  "can feel a bit dry or abstract thematically",
-  "limited direct interaction beyond spatial competition",
-  "some randomness in tile draws",
-  "less depth than other Georges/heavier euros for veteran gamers"
+  "can feel like multiplayer solitaire with limited direct conflict",
+  "thin sci-fi theme that many find pasted-on",
+  "card draw luck in what resources/roles are available",
+  "some find the scoring a bit abstract or hard to track"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "spatial competition for adjacency and territory influence"
+  "level": "Medium",
+  "kind": "shared city board with tile stacking and district takeover",
+  "detail": "Players build directly onto a single shared city map, and placing a new tile can bury or extend a rival's district, changing who benefits from its output. Alongside that shared board, each player keeps a private hand of resource, building, and role cards that they manage largely on their own."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from building height, district influence, and resource-card sets, rewarding whoever balances expansion with efficient tile use"
+  "why": "Points come from yellow scoring tiles retained in hand, district size and control at game end, and end-game bonuses, so no single engine dominates.",
+  "how_you_win": "You expand and defend your visible districts in the shared city while stockpiling scoring tiles in hand, ending with more accumulated points than anyone else."
  },
  "similar": [
   "Suburbia",
-  "Blueprints",
-  "Yokohama",
-  "Karesansho",
-  "Bruges"
+  "Between Two Cities",
+  "Innovation",
+  "7 Wonders",
+  "Yokohama"
  ],
- "_fingerprint": "5632d249d0d6e17e",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "cddca64f0e71ad5a",
  "_name": "Ginkgopolis"
 }

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Coimbra is a dense dice-drafting Eurogame where the value of each die is entangled with its number, color, and position, so every choice ripples across three or four systems at once (buildings, monastery favor, advisors, expeditions). Turns are quick but each one is a small optimization puzzle, and the tight interlocking of tracks and tableaus rewards players who can plan two rounds ahead.",
+ "summary": "Coimbra is a dense Euro where each round you draft dice that double as currency, action-strength, and a track-advancement resource, forcing constant trade-offs about what to give up. It rewards building engines across several interlocking tracks (ships, coins, monastery favors) that all pay off at game end.",
  "praised": [
-  "the dice-as-resource mechanism is genuinely original and elegant",
-  "strong sense of building an efficient engine with satisfying synergies",
-  "high replayability from variable setup of advisors, monasteries, and expeditions",
-  "gorgeous, thematic production and clean iconography"
+  "clever multi-use dice mechanism",
+  "tight interlocking economy with real trade-offs",
+  "high replayability from variable setup",
+  "satisfying long-term engine building"
  ],
  "criticised": [
-  "steep learning curve and a rulebook/mechanism that's hard to teach",
-  "analysis paralysis, especially in the bidding/drafting phase with more players",
-  "runaway leader potential if one player locks in a strong engine early",
-  "some randomness in die rolls can feel punishing given how tightly optimized play needs to be"
+  "steep rules overhead and analysis paralysis",
+  "bidding/dice-drafting can feel fiddly to teach",
+  "some randomness in dice rolls frustrates planners",
+  "can run long for a mid-weight game"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "competitive drafting and bidding over shared dice/spaces"
+  "kind": "drafting and light auction/blocking",
+  "detail": "Players draft dice in turn order and can be blocked from taking the die or advisor they wanted, and the shared player-order track and artisan/ship spaces create competition for limited slots. Most of the actual building happens on each player's own tableau and tracks, so it's parallel development with periodic friction points."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "final score is a sum across monastery tiles, advisor tracks, expeditions, and building tableaus, so the winner is whoever built the best-synergized multi-track engine rather than maxing one path"
+  "why": "Points accumulate from ship tracks, monastery relics, coats of arms, and end-game bonuses, so the winner is whoever built the most efficient combination of tracks.",
+  "how_you_win": "You win by advancing furthest on the most lucrative combination of tracks and cashing in end-game bonus tiles that reward your specific strategy."
  },
  "similar": [
-  "Marco Polo",
-  "Lorenzo il Magnifico",
+  "Concordia",
+  "The Voyages of Marco Polo",
   "Grand Austria Hotel",
-  "Trickerion",
-  "The Voyages of Marco Polo: Agents of Venice"
+  "Le Havre",
+  "Great Western Trail"
  ],
- "_fingerprint": "88d158857eab4be4",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "27df1b3a7f025f18",
  "_name": "Coimbra"
 }

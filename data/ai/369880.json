@@ -1,33 +1,39 @@
 {
  "confidence": "medium",
- "summary": "A tight two-player card game where every card can be played several different ways (as a field, a good, a building, or fuel), so most of the tension is in figuring out the most efficient use of a small hand rather than in direct conflict. The real bite is in the scoring: you only count coins from whichever good, beer or bread, you produced less of, so you're constantly forced to keep both economies roughly balanced instead of just maximizing one.",
+ "summary": "Beer & Bread is a compact two-player card game where you alternate managing a beer village and a bread village across a series of years, drafting and playing multi-use cards to build production while denying your neighbor the same resources. It plays fast but rewards careful sequencing, since a single card can serve as a resource, a building, or a scoring asset depending on how it's used.",
  "praised": [
-  "Clever multi-use cards that make each card a small puzzle rather than a single-purpose resource",
-  "The lowest-of-two scoring rule creates real tension and forces constant rebalancing instead of a runaway strategy",
-  "Fast, satisfying two-player-only design with a lot of depth for its small footprint",
-  "Alternating fruitful/dry years give each playthrough a different resource rhythm"
+  "Clever multi-use card design that rewards efficient sequencing",
+  "Fast, tight two-player experience with real head-to-head tension",
+  "Good production and component quality for a small-box game"
  ],
  "criticised": [
-  "Strictly two players only, so it can't flex to other group sizes",
-  "Interaction is mostly indirect (shared field/drafting pressure) rather than confrontational, which can feel low-key for players wanting more conflict",
-  "Rules and card text take a session or two to fully click given how much each card can do"
+  "Can feel dry or overly mechanical given the farming theme",
+  "Some randomness in card draws affects available options",
+  "Limited long-term variety once the system is learned"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared drafting pressure and timing squeezes rather than direct conflict"
+  "kind": "shared resource competition",
+  "detail": "The two villages draw from and compete over shared fields and resource availability, so choices about what to take or build affect what remains for the other player. Each player still develops their own private tableau of buildings and production, but scoring categories are compared directly against each other at game end."
  },
- "win_criteria": "Lowest-highest scoring",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "final score is capped by whichever of your two goods (beer or bread) you produced less of, so balancing both tracks decides the winner rather than maximizing either one"
+  "why": "The game centers on producing and selling beer and bread for coins, with victory points tightly tied to how efficiently you convert resources into these two goods.",
+  "how_you_win": "You win by building the more efficient production chain over six alternating years, ending with more points from goods sold and upgrades than your opponent."
  },
  "similar": [
-  "Sprawlopolis",
-  "Fantasy Realms",
-  "Res Arcana",
-  "Tiny Epic Galaxies",
-  "Agricola: All Creatures Big and Small"
+  "7 Wonders Duel",
+  "Jaipur",
+  "Innovation",
+  "Targi",
+  "Habitat"
  ],
- "_fingerprint": "08ec34b639040033",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "8fd69d3738eba319",
  "_name": "Beer & Bread"
 }

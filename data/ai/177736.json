@@ -1,33 +1,41 @@
 {
  "confidence": "high",
- "summary": "Uwe Rosenberg's magnum-opus Viking game has players sending out raiding and trading expeditions to collect a huge variety of resources, then fitting everything into a personal grid board like a sprawling game of Tetris, where uncovered squares cost negative points. It's a long, meaty puzzle with an enormous breadth of options and combos, prized for its depth but notorious for its rulebook and setup weight.",
+ "summary": "A Feast for Odin is a sprawling Uwe Rosenberg worker-placement puzzle where players gather resources through actions and then fit occupation tiles into their personal board like a game of Tetris to minimize empty spaces. It's a long, meaty solo-friendly Euro built around the tension of greedy resource collection versus tight, penalty-avoiding board packing.",
  "praised": [
-  "extremely satisfying spatial puzzle of packing goods onto your board",
-  "huge variety of strategies and combos across countless resource types and occupations",
-  "immense replayability and a strong sense of accomplishment"
+  "Deeply satisfying tile-packing puzzle on the player board",
+  "Huge variety of viable strategies and paths to points",
+  "Excellent solo mode",
+  "Immense replayability from the sheer number of occupation/resource options"
  ],
  "criticised": [
-  "heavy rules overhead and long teach for newcomers",
-  "significant table/component footprint and setup/teardown time",
-  "can run very long, especially at higher player counts",
-  "mostly solitaire multiplayer experience with little direct interaction"
+  "Very long playtime and heavy rules overhead",
+  "Analysis paralysis from the enormous number of choices",
+  "Player boards can feel like solitaire with little direct interaction",
+  "Overwhelming for new players without a patient teacher"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light resource competition"
+  "kind": "worker placement blocking with mostly independent tableau-building",
+  "detail": "Players compete for the same limited action spaces on a shared board, so timing and blocking opponents' preferred actions matters early in a round. Beyond that scramble for actions, almost all of the game's depth plays out privately on each player's own board as they tile-pack resources and occupations."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "score nets covered board squares, animals, ships, weapons, and occupation bonuses against penalties for empty spaces, rewarding the tightest overall build"
+  "why": "Score comes from a wide mix of occupations, animals, ships, exploration, and heavy penalties for empty board spaces.",
+  "how_you_win": "You win by using worker-placement actions to gather resources and acquire occupations/animals, then packing your player board efficiently enough to avoid negative points for empty squares."
  },
  "similar": [
   "Le Havre",
-  "Agricola",
   "Caverna",
-  "Nusfjord",
-  "Cottage Garden"
+  "Agricola",
+  "Fields of Arle",
+  "Barrage"
  ],
- "_fingerprint": "0f85bd42738ff6cf",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "c976f7f5aadbf11c",
  "_name": "A Feast for Odin"
 }

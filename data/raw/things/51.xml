@@ -516,7 +516,23 @@
 			
 
 			
-	
+			<videos total="40">
+						<video id="580097" title="Ricochet Robots" category="instructional" language="French" link="http://www.youtube.com/watch?v=JO9Hmwu4YF8" username="kikik58" userid="3827212" postdate="2025-10-31T09:34:42-05:00" />
+						<video id="548101" title="Ricochet Robots Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=de2FQj2Muts" username="Wingman709" userid="1953255" postdate="2025-04-11T12:00:56-05:00" />
+						<video id="532208" title="All the Games with Steph: Ricochet Robots" category="instructional" language="English" link="http://www.youtube.com/watch?v=I7MqhX1vCG4" username="boardgamersteph" userid="212591" postdate="2025-01-11T02:02:10-06:00" />
+						<video id="452300" title="PnP" category="other" language="Spanish" link="http://www.youtube.com/watch?v=hFv6J9frfPA" username="Richvaso" userid="3118115" postdate="2023-08-17T18:30:01-05:00" />
+						<video id="373897" title="De que va Ricochet Robots" category="humor" language="Spanish" link="http://www.youtube.com/watch?v=iIlJcUzhOnk" username="AztekPermi" userid="641122" postdate="2022-03-31T23:27:47-05:00" />
+						<video id="345855" title="[Korean] How to play Ricochet Robots" category="instructional" language="Korean" link="http://www.youtube.com/watch?v=u0YSNPYGsx0" username="ernai" userid="955293" postdate="2021-10-02T04:20:19-05:00" />
+						<video id="338874" title="RICOCHET ROBOTS 碰撞機器人｜天鵝不只開箱" category="instructional" language="Chinese" link="http://www.youtube.com/watch?v=iKLlhtSJHpU" username="Kuraki Mura" userid="1012661" postdate="2021-08-17T02:22:16-05:00" />
+						<video id="302826" title="Ludochrono - Ricochet Robots" category="review" language="French" link="http://www.youtube.com/watch?v=JkOGcy7T6FM" username="loutre_on_fire" userid="1037076" postdate="2021-01-19T03:50:11-06:00" />
+						<video id="302312" title="RICOCHET ROBOTS, παρουσίαση" category="review" language="Greek" link="http://www.youtube.com/watch?v=Lglb9x4hPX4" username="fantasygate" userid="1241302" postdate="2021-01-16T12:13:00-06:00" />
+						<video id="302069" title="Ricochet Robots, un Juegazo para Todas las Ludotecas!" category="review" language="Spanish" link="http://www.youtube.com/watch?v=kFeU60ksAQw" username="Cawa Girona" userid="1998636" postdate="2021-01-14T13:07:17-06:00" />
+						<video id="277929" title="Com es juga a Ricochet Robots" category="instructional" language="Catalan" link="http://www.youtube.com/watch?v=cTDL07ToFFs" username="Devir Iberia" userid="1300229" postdate="2020-08-19T03:21:41-05:00" />
+						<video id="277928" title="Cómo jugar a Ricochet Robots" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=xdDbj_Xsf0I" username="Devir Iberia" userid="1300229" postdate="2020-08-19T03:20:24-05:00" />
+						<video id="274283" title="Rock 'n' roll robot (Ricochet Robot) - Recensioni Minute [299]" category="review" language="Italian" link="http://www.youtube.com/watch?v=c-TNQSXOnXo" username="TeOoh" userid="479736" postdate="2020-07-25T15:32:14-05:00" />
+						<video id="271133" title="Rock'N'Roll Robot Unboxing ITA HD - JustNerd" category="unboxing" language="Italian" link="http://www.youtube.com/watch?v=XTpMyjjHXDA" username="R3g0_0" userid="1934783" postdate="2020-07-04T03:08:28-05:00" />
+						<video id="222531" title="Ricochet Robots - Review por Dados do Tabuleiro" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=cQ1I0_VUuEU" username="jackbezerra" userid="951498" postdate="2019-06-21T20:57:55-05:00" />
+					</videos>
 
 	
 
@@ -526,19 +542,19 @@
    		<statistics page="1">
 								<ratings>
 			<usersrated value="9826" />
-			<average value="7.04131" />
-			<bayesaverage value="6.69863" />
+			<average value="7.04136" />
+			<bayesaverage value="6.69867" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="925" bayesaverage="6.69863" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="56" bayesaverage="6.82082" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="926" bayesaverage="6.69867" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="56" bayesaverage="6.8209" />
 												</ranks>
 
-			<stddev value="1.66526" />
+			<stddev value="1.66521" />
 			<median value="0" />
-			<owned value="10776" />
-			<trading value="144" />
-			<wanting value="229" />
+			<owned value="10774" />
+			<trading value="145" />
+			<wanting value="228" />
 			<wishing value="1502" />
 			<numcomments value="2201" />
 			<numweights value="541" />

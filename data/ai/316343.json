@@ -1,34 +1,38 @@
 {
- "confidence": "high",
- "summary": "A tight, tense push-your-luck card game where every round you must decide how much to risk in your home base versus feeding the shared capital, since exceeding the capital's value in any color wipes out your gains. The 81 power combinations keep it fresh, forcing you to re-learn optimal timing and card synergies each session.",
+ "confidence": "medium",
+ "summary": "Capital Lux 2: Pocket is a quick tactical card game about deciding whether to keep character cards for personal points or feed them into a shared capital to trigger useful powers everyone benefits from. Its modular power combinations keep it feeling fresh across plays despite a short runtime and small footprint.",
  "praised": [
-  "High replayability from the modular capital powers",
-  "Fast, tense decision-making despite simple rules",
-  "Compact 'pocket' production travels well and plays quickly",
-  "Rewards careful timing and reading opponents' likely contributions"
+  "compact box with high replayability from mixable powers",
+  "meaningful push-and-pull between personal and shared benefit",
+  "quick to teach and play"
  ],
  "criticised": [
-  "Some power combinations are stronger or more swingy than others",
-  "Can feel a bit dry or fiddly until players learn the icons/powers",
-  "Two-player games lose some of the multiplayer tension",
-  "Slightly abstract theme that doesn't add much beyond mechanics"
+  "can feel a bit dry or abstract for some",
+  "power combination variance means some setups are stronger than others",
+  "limited long-term strategic depth compared to bigger card games"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared risk pool with indirect competition over the capital threshold"
+  "kind": "shared resource contribution with individual scoring",
+  "detail": "Players choose whether to keep drafted cards in their own tableau or contribute them to a shared capital area whose powers benefit everyone, so decisions constantly ripple into what opponents can do next round. Most of the board is a shared capital area while each player keeps a separate personal tableau for direct scoring."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Points come almost entirely from card values banked safely in your home base at game end, so the winner is whoever best times their withdrawals against the capital threshold."
+  "breadth": "Some",
+  "why": "Points accumulate from character cards kept for personal scoring plus bonuses triggered through capital contributions.",
+  "how_you_win": "You win by balancing which cards you keep for direct points against which you donate to the capital for power synergies, ending with the highest total score."
  },
  "similar": [
-  "Capital Lux 2: Generations",
-  "Yokohama",
-  "Fantastic Factories",
-  "Ethnos",
-  "Trismegistus"
+  "Capital Lux",
+  "Jaipur",
+  "Big Shot",
+  "Coloretto",
+  "Le Havre: The Inland Port"
  ],
- "_fingerprint": "b6bff7c4c6205151",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "9a200c472b87c44c",
  "_name": "Capital Lux 2: Pocket"
 }

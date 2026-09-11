@@ -666,7 +666,23 @@ Clarifications: available in a pinned forum post.
 			
 
 			
-	
+			<videos total="191">
+						<video id="629313" title="Partita Live a  Small World" category="session" language="Italian" link="http://www.youtube.com/watch?v=laKfNS1EPws" username="boardgamesfrancesco" userid="2473716" postdate="2026-09-10T11:27:03-05:00" />
+						<video id="618881" title="SMALLWORLD - Brettspiel - Regeln &amp; Let's Play - Board Game Arena" category="session" language="German" link="http://www.youtube.com/watch?v=6HYpMIgLiqk" username="Geekpunkt" userid="3167273" postdate="2026-07-05T03:45:13-05:00" />
+						<video id="594099" title="Small World" category="review" language="English" link="http://www.youtube.com/watch?v=gMljK6JUpuw" username="Melaniebarr" userid="1626931" postdate="2026-01-23T18:11:27-06:00" />
+						<video id="591983" title="Огляд від каналу &quot;Beaver Games&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=jyzczj-el3E" username="punk_rock" userid="2986072" postdate="2026-01-11T12:31:40-06:00" />
+						<video id="591415" title="Races Rise, Decline, and Clash in Small World" category="session" language="English" link="http://www.youtube.com/watch?v=vUc1eTF0_f8" username="rolltoonegaming" userid="4375304" postdate="2026-01-08T08:13:30-06:00" />
+						<video id="589580" title="Small World │Hogyan legyél jó benne? Taktikák és fajok elemzése" category="review" language="Hungarian" link="http://www.youtube.com/watch?v=Ugvgh1uGpnA" username="nemapeti" userid="2055717" postdate="2025-12-24T16:12:17-06:00" />
+						<video id="589574" title="Taktikai tanácsadó: Small World képességek elemzése" category="review" language="Hungarian" link="http://www.youtube.com/watch?v=1NrHL3wWveU" username="nemapeti" userid="2055717" postdate="2025-12-24T16:06:40-06:00" />
+						<video id="561917" title="On joue! Small World - Live 5 juillet 2025" category="session" language="French" link="http://www.youtube.com/watch?v=vTwKWx6E1Pk" username="LaVouteLudique" userid="4279021" postdate="2025-07-07T20:55:20-05:00" />
+						<video id="553144" title="Small World - Unboxing &amp; Reboxing - What's in the box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=lUW5V5qkIOs" username="broseygames" userid="4181268" postdate="2025-05-08T19:20:00-05:00" />
+						<video id="536376" title="Small World Playthrough on Board Game Arena" category="session" language="English" link="http://www.youtube.com/watch?v=gmVN7vbIAiw" username="program2game" userid="934384" postdate="2025-02-05T08:14:03-06:00" />
+						<video id="532029" title="Огляд від WoodCatGames" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=_UTOZHVWXZ4" username="davose" userid="1472043" postdate="2025-01-09T12:50:22-06:00" />
+						<video id="526783" title="Відеоправила від Lord Of Boards" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=YaU6DAzdV8A" username="davose" userid="1472043" postdate="2024-11-30T12:40:10-06:00" />
+						<video id="520251" title="Tric Trac - Small World, la partie" category="session" language="French" link="http://www.youtube.com/watch?v=3PP0SzQSaD8" username="Sysyphuss" userid="787738" postdate="2024-10-20T20:40:22-05:00" />
+						<video id="509948" title="Small World - schneller Überblick" category="other" language="German" link="http://www.youtube.com/watch?v=daRbdOlrRII" username="Hawk1982" userid="577830" postdate="2024-08-20T13:14:00-05:00" />
+						<video id="494481" title="Small World: Discussion" category="review" language="English" link="http://www.youtube.com/watch?v=2oePiqoeNOM" username="FantasyNerd8" userid="1029024" postdate="2024-05-08T18:26:01-05:00" />
+					</videos>
 
 	
 
@@ -675,23 +691,23 @@ Clarifications: available in a pinned forum post.
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="75396" />
-			<average value="7.18961" />
-			<bayesaverage value="7.08214" />
+			<usersrated value="75402" />
+			<average value="7.18966" />
+			<bayesaverage value="7.08218" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="412" bayesaverage="7.08214" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="363" bayesaverage="7.05158" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="111" bayesaverage="7.07718" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="412" bayesaverage="7.08218" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="364" bayesaverage="7.05162" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="110" bayesaverage="7.07721" />
 												</ranks>
 
-			<stddev value="1.30088" />
+			<stddev value="1.30082" />
 			<median value="0" />
-			<owned value="104717" />
-			<trading value="2299" />
-			<wanting value="876" />
-			<wishing value="10652" />
-			<numcomments value="11571" />
+			<owned value="104732" />
+			<trading value="2300" />
+			<wanting value="875" />
+			<wishing value="10651" />
+			<numcomments value="11572" />
 			<numweights value="3562" />
 			<averageweight value="2.3456" />
 			</ratings>

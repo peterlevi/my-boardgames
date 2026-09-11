@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Sidereal Confluence is built almost entirely around a frantic, simultaneous live-trading phase where every player scrambles to strike deals for the exact resource cubes their race's economy needs, followed by a quick simultaneous conversion/scoring phase. It rewards social skill, reading who needs what, and building a self-sufficient engine, more than any kind of tactical board-level play.",
+ "summary": "Sidereal Confluence is a real-time trading frenzy where players desperately barter goods and technology across simultaneous negotiation rounds because no single race's economy can function alone. The chaos of everyone talking and dealing at once gives it a uniquely frantic, cooperative-feeling energy despite being fully competitive underneath.",
  "praised": [
-  "Electric, high-energy free-form trading phase unlike almost any other game",
-  "Strong asymmetry between the alien races creates very different strategies each game",
-  "Low downtime for a big-box game since everyone trades at once",
-  "Satisfying engine-building feel as your economy compounds turn to turn"
+  "exhilarating real-time trading phase unlike almost any other game",
+  "strong asymmetric race powers",
+  "creates a genuinely social, table-wide experience",
+  "rewards creative deal-making"
  ],
  "criticised": [
-  "Chaotic and can be overwhelming or intimidating for shy or less assertive players",
-  "Needs a near-full table (ideally 6-8) to sing; feels flat at low counts",
-  "Real-time trading can let louder/more experienced players dominate deals",
-  "Fiddly bookkeeping with lots of cubes, cards, and races to track"
+  "can be overwhelming or exclusionary for shy or slower players",
+  "hidden scoring can feel opaque until the end",
+  "needs a full table (4-9) to shine",
+  "chaotic trading can leave some players confused about optimal plays"
  ],
  "interaction": {
   "level": "High",
-  "kind": "trading and negotiation"
+  "kind": "real-time trading and negotiation",
+  "detail": "Players spend most of each round simultaneously negotiating and trading resources and technology directly with one another, since production chains depend on goods only other races can supply. Individual economies are private, but the entire game hinges on constant shared bartering."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from a mix of converted resources, technologies researched, and race-specific bonuses, so whoever builds the most efficient trading-fueled economy over the rounds wins."
+  "why": "Each race has hidden victory point conditions tied to technology, colonization, and economy that only reveal their value at the end.",
+  "how_you_win": "Trade aggressively to fuel your race's unique economy, research technologies, and colonize planets to accumulate the most hidden victory points by the final round."
  },
  "similar": [
   "Cosmic Encounter",
   "Chinatown",
+  "Prosperity",
   "Bohnanza",
-  "Meadow",
-  "Origins: First Contact"
+  "Struggle of Empires"
  ],
- "_fingerprint": "9921453ae75f8dfd",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Shut Up & Sit Down"
+ ],
+ "_fingerprint": "717104349f25641f",
  "_name": "Sidereal Confluence"
 }

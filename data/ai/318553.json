@@ -1,34 +1,37 @@
 {
- "confidence": "high",
- "summary": "A dice-drafting spin-off of Rajas of the Ganges that strips out the board and shrinks the whole game onto a scoresheet where players race to make their fame and money tracks intersect. It plays fast and light, with most of the tension coming from clever dice allocation and combo timing rather than long-term strategy.",
+ "confidence": "medium",
+ "summary": "A standalone, lighter roll-and-write-style spinoff of Rajas of the Ganges that keeps the same race-to-intersect-money-and-fame idea but strips it down to shared dice and pencil-and-paper-style province building. It plays faster and simpler than the original, aimed at a broader, more casual audience.",
  "praised": [
-  "Fast, portable, and easy to teach compared to the original board game",
-  "Satisfying dice-allocation puzzle with useful combos between symbols",
-  "Good solo mode and quick setup/teardown",
-  "Captures the core race-to-intersect tension of the original in a smaller package"
+  "Faster, more accessible than the original",
+  "Keeps the clever crossing-tracks win condition",
+  "Good for introducing non-gamers to the family"
  ],
  "criticised": [
-  "Feels thin and repetitive after several plays, less depth than the base game",
-  "Very little player interaction beyond a shared dice pool",
-  "Some find the paper-and-pencil execution fiddly with the erasable sheets/pens",
-  "Comparisons to the original often favor the original for long-term replayability"
+  "Less depth than the base game",
+  "Feels like a simplified reskin rather than its own thing",
+  "Shared dice can create downtime"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play, minor competition over shared dice"
+  "kind": "shared dice drafting, mostly parallel play",
+  "detail": "Players draft from a shared pool of rolled dice each round but then develop their own paper province independently; interaction is limited to competing over which dice to take."
  },
  "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever first makes their fame and money markers meet on the two opposing tracks, driven by efficient dice use each round"
+  "why": "As in the original, the game ends the moment a player's fame and money markers meet",
+  "how_you_win": "You win by developing your province efficiently enough that your fame and wealth trackers converge before anyone else's."
  },
  "similar": [
   "Rajas of the Ganges",
-  "Ganz schön clever",
   "Welcome To...",
   "That's Pretty Clever",
-  "Cartographers"
+  "Second Chance"
  ],
- "_fingerprint": "f0e13454fec04109",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play"
+ ],
+ "_fingerprint": "b4e3681126650368",
  "_name": "Rajas of the Ganges: The Dice Charmers"
 }

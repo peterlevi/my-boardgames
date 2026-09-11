@@ -1,36 +1,40 @@
 {
  "confidence": "high",
- "summary": "Keyflower is a clever hybrid of worker placement and auction where you bid workers to win tiles, then use those same (or other) workers to activate tiles for resources and points, including tiles in opponents' villages. The tension between using workers now versus saving them for the endgame winter bidding round is the heart of the game, and building an efficient engine across four rounds feels very satisfying.",
+ "summary": "Keyflower blends tile auctions with worker placement across four seasonal rounds, where colored workers both bid for new village tiles and activate abilities on any tile at the table — including opponents'. It rewards reading the auction carefully and squeezing value from other players' villages as much as building up your own.",
  "praised": [
-  "Clever double-use of workers for both bidding and activating tiles",
-  "High interaction via using resources/skills on opponents' tiles",
-  "Satisfying variable setup and modular board every game",
-  "Rewards planning and engine-building without excessive downtime",
-  "Strong tension around the winter round using only your held tiles"
+  "brilliant mechanism of activating others' tiles",
+  "strong tension in the winter round when workers can't leave",
+  "high replayability from modular tile setup",
+  "scales well to higher player counts"
  ],
  "criticised": [
-  "Can suffer from significant analysis paralysis, especially at higher player counts",
-  "Rules and icons have a learning curve for new players",
-  "Some randomness in which tiles come up for auction",
-  "Can feel like a 'take that' game to newer players unfamiliar with the shared-tile mechanic",
-  "Endgame scoring tiles can create swingy, hard-to-predict outcomes"
+  "fiddly bookkeeping with many worker colors and tile abilities",
+  "somewhat dry, abstract theme",
+  "upkeep tracking who benefits from which tile action"
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction/bidding plus using workers on others' tiles"
+  "kind": "auction/bidding and shared tile exploitation",
+  "detail": "Players bid workers against each other for new tiles, and crucially any player's workers can activate abilities on any other player's village tiles, making much of the board a shared resource that everyone actively exploits rather than private territory."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from a mix of resources, skills, workers, and building combinations set by winter tiles, so the winning strategy varies each game"
+  "why": "Points come from tile abilities, resources, skills, and bonus tiles accumulated across four rounds.",
+  "how_you_win": "Win key tile auctions to assemble an efficient village while also exploiting both your own and opponents' tiles for resources and points."
  },
  "similar": [
-  "Alien Frontiers",
-  "The Speicherstadt",
-  "Puerto Rico",
-  "Le Havre",
-  "Village"
+  "Suburbia",
+  "Village",
+  "Caylus",
+  "The Voyages of Marco Polo",
+  "Alien Frontiers"
  ],
- "_fingerprint": "4a6d2c6985febfea",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "d2c852157646d52a",
  "_name": "Keyflower"
 }

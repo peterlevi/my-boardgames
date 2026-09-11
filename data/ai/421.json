@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "1830 is a long, intensely cerebral game of building rail networks while simultaneously manipulating a stock market, where the real game is knowing when to dump a company's stock on other players before running it into the ground. There is no luck at all — every outcome flows from player decisions, and the interplay between operating trains for revenue and gaming share prices is what makes it a genre-defining classic.",
+ "summary": "1830 is a heavy 18xx train and stock game where players alternate between buying and dumping shares in railroad companies and physically operating those companies on a hex map to build track and run trains for revenue. The real game is almost entirely economic: timing a stock sale to tank a rival's company, forcing someone into a presidency they can't afford to run, and squeezing every dollar out of train routes.",
  "praised": [
-  "Deep, purely skill-based strategy with zero randomness",
-  "The stock market / share manipulation layer is considered one of the best ever designed",
-  "High replayability due to emergent, player-driven outcomes",
-  "Satisfying long-term planning and tension between personal and company interests"
+  "deep, purely skill-based stock manipulation with no randomness",
+  "tense economic decisions and company presidency fights",
+  "huge replayability and strategic depth",
+  "considered a genre-defining classic of the 18xx family"
  ],
  "criticised": [
-  "Very long playtime (often 4-6+ hours)",
-  "Steep learning curve and high rules overhead for new players",
-  "Analysis paralysis, especially with more players",
-  "Can be brutal/'take that' via the robber baron stock mechanics, which some find mean-spirited",
-  "Not beginner friendly compared to lighter 18xx entries"
+  "very long playtime (often 4-6+ hours)",
+  "steep learning curve and unforgiving of mistakes",
+  "significant downtime watching other players' operating rounds",
+  "can produce spiteful or kingmaking moves late game"
  ],
  "interaction": {
   "level": "High",
-  "kind": "stock manipulation, route blocking, and negotiation"
+  "kind": "stock manipulation and economic warfare",
+  "detail": "Players buy, sell, and dump shares of the same public companies, so one player's stock moves directly change prices and even hand company presidencies to others. Company operations (track, trains, dividends) are public and permanently alter the shared map and market, so almost nothing happens in isolation."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever ends the game with the greatest personal net worth, combining cash on hand and the value of their stock holdings."
+  "why": "the game ends when the bank runs low on cash and whoever has the highest personal net worth (cash plus share value) wins",
+  "how_you_win": "you win by building profitable train routes for companies you control and by trading shares shrewdly enough that your personal wealth outpaces everyone else's"
  },
  "similar": [
-  "1846",
-  "1817",
+  "1846: The Race for the Midwest",
+  "18Chesapeake",
   "Age of Steam",
-  "1889",
-  "18Chesapeake"
+  "Brass: Birmingham",
+  "Container"
  ],
- "_fingerprint": "5530f133da6cf400",
+ "teachers": [
+  "Heavy Cardboard",
+  "Watch It Played",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "993b55d23ff3529c",
  "_name": "1830: Railways & Robber Barons"
 }

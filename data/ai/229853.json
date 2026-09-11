@@ -1,36 +1,39 @@
 {
  "confidence": "high",
- "summary": "Teotihuacan is a dense, multi-layered worker-placement game where dice act as your workers and grow in value as you use them, forcing constant tension between advancing dice and needing lower numbers for cheaper actions. Every turn is a puzzle of optimizing a tight engine across temples, technology, houses, and the central pyramid, with the game periodically resetting resources at era-end scoring.",
+ "summary": "Teotihuacan has you moving worker dice around a modular board, where each die's pip value grows every time you use it, letting you unlock better and better actions over the game. Much of the tension comes from timing when to reset a maxed-out die versus riding it for one more powerful action, all while racing to contribute to the shared central pyramid.",
  "praised": [
-  "Dice-as-workers mechanic feels fresh and creates a unique 'value vs. utility' puzzle",
-  "Deep, tightly interlocking systems with satisfying engine-building",
-  "High replayability from modular board and variable setup",
-  "Strong solo mode",
-  "Rewards efficient long-term planning"
+  "the die-growth engine is elegant and satisfying to optimize",
+  "tightly interlocking systems that reward planning",
+  "strong solo mode and scaling across player counts"
  ],
  "criticised": [
-  "Steep learning curve and heavy rulebook overhead for new players",
-  "Can feel solitary/multiplayer-solitaire with limited direct interaction",
-  "Analysis paralysis due to many simultaneous considerations",
-  "Iconography and initial onboarding seen as unintuitive",
-  "Theme feels pasted on top of a heavily Euro-style mechanism set"
+  "heavy analysis paralysis from the branching action choices",
+  "dry, spreadsheet-like theme",
+  "steep learning curve similar to other heavy worker-placement games"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "Mostly parallel play with some space/tile competition and area denial on the shared board"
+  "level": "Medium",
+  "kind": "shared pyramid competition and space blocking",
+  "detail": "Players race to place tiles on the communal pyramid of the sun for bonuses, and board spaces can be occupied or taken, but each player's own dice, resources, and technology track are private and largely unaffected by others' choices."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Fame comes from multiple systems (temples, pyramid layers, technology, houses, resources at reset) so the winner is usually whoever balances the most engines efficiently across all three eras"
+  "why": "Victory points come from pyramid contributions, technologies, god favor, and end-game resource conversion, so no single track dominates.",
+  "how_you_win": "You win by efficiently growing and cashing in your worker dice to out-produce rivals across the pyramid, tech tree, and god tracks."
  },
  "similar": [
   "Tzolk'in: The Mayan Calendar",
-  "Terra Mystica",
+  "Trismegistus: The Great Alchemist",
+  "Tekhenu: Obelisk of the Sun",
   "Newton",
-  "Trickerion: Legends of Illusion",
-  "Anachrony"
+  "Underwater Cities"
  ],
- "_fingerprint": "2e6b8e903c9a56de",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "23807385da675a93",
  "_name": "Teotihuacan: City of Gods"
 }

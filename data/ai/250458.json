@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "Each round you place workers on a rotating wheel around the Forbidden City to grab resources and gift cards, then spend those cards to bribe officials and climb influence tracks that pay out at scored intervals. It's a tight, cerebral engine-builder where timing your bribes against the wheel's rotation and other players' plans matters more than direct conflict.",
+ "summary": "Gùgōng is a mid-weight worker-placement game where the central twist is exchanging your currency tokens back into the general supply and back each round, forcing careful economic timing alongside area majority in the Forbidden City. It plays lean and fast for the genre.",
  "praised": [
-  "The rotating wheel mechanism feels fresh and is the game's signature hook",
-  "Tense, puzzly worker placement with meaningful long-term planning",
-  "Clean, elegant rules for the depth of decisions offered",
-  "Strong replayability from variable scoring track combinations"
+  "clever token-exchange economy mechanic",
+  "tight, efficient decision space",
+  "quick turns and playtime for a worker-placement game",
+  "attractive theme and production"
  ],
  "criticised": [
-  "Can feel like multiplayer solitaire with relatively indirect player interaction",
-  "Steep learning curve and rules overhead for new players",
-  "Some randomness in gift card draws can undercut careful planning",
-  "Theme feels pasted on top of an abstract optimization puzzle"
+  "can feel like multiplayer solitaire",
+  "area-majority scoring sometimes feels like an afterthought next to the token economy",
+  "card draw luck limits pure strategy for some"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking and area majority on influence tracks"
+  "kind": "worker-placement blocking and area majority",
+  "detail": "Players compete for limited action spaces and for majority control on the palace track, but each otherwise builds a private tableau of goods and cards mostly independent of rivals."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from multiple influence tracks (army, money, palace, etc.) scored at intervals plus end-game bonuses, rewarding whoever balances several tracks best rather than one dominant strategy"
+  "why": "Points accumulate from delivered goods, area majority in the Forbidden City, and completed card sets, rewarding overall efficiency across the round.",
+  "how_you_win": "You place workers efficiently to gather resources and complete valuable card sets while timing your currency exchanges, ending with the most accumulated points."
  },
  "similar": [
-  "Teotihuacan: City of Gods",
-  "Underwater Cities",
-  "Le Havre",
-  "Barrage",
-  "Trismegistus: The Ultimate Formula"
+  "Amerigo",
+  "Hansa Teutonica",
+  "Fresko",
+  "Vasco da Gama",
+  "Cacao"
  ],
- "_fingerprint": "cc61407bb827cdc3",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "4e9bf4392775b832",
  "_name": "Gùgōng"
 }

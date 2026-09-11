@@ -1,34 +1,41 @@
 {
- "confidence": "high",
- "summary": "A dense worker-placement/dice-drafting euro where the die you take doubles as a resource and dictates your next action, forcing constant lookahead planning across five interlocking districts. It plays like a tighter, more tactical cousin of Tascini's other dice-driven designs, with area-majority scoring for building placement layered on top of engine-building.",
+ "confidence": "medium",
+ "summary": "Tabannusi is a heavy euro about constructing districts in ancient Ur, using dice as both resources and action activators across five contract-driven regions. It's a dense, mid-to-heavy weight game of resource conversion, contracts, and area influence with a strong economic puzzle feel.",
  "praised": [
-  "The die-as-resource-and-action-selector mechanism feels genuinely novel and creates satisfying forward-planning puzzles",
-  "Strong production values and thematic board depicting the districts of Ur",
-  "Multiple viable paths to points (construction, temple favor, ships) give replayability",
-  "Rewards efficient turn optimization for players who like tight euro puzzles"
+  "Clever dual-use dice mechanism",
+  "Deep, satisfying resource engine building",
+  "Attractive board and production",
+  "Good solo mode"
  ],
  "criticised": [
-  "Steep rules overhead and iconography that make the first few plays confusing",
-  "Long playtime (2 hours) that can drag, especially at 4 players with downtime between turns",
-  "Some randomness in which dice/values are available can undercut careful planning",
-  "Considered one of Tascini's more inaccessible designs, overwhelming for less experienced euro gamers"
+  "Steep rules overhead and long teach",
+  "Can feel dry or overly mechanical",
+  "Long playtime for the complexity",
+  "Some randomness from dice values"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority and competition for districts/dice, indirect blocking"
+  "kind": "area influence and resource competition",
+  "detail": "Players compete for limited dice and district spaces on a shared board, occasionally contesting the same region influence, but much of the game is building your own tableau of districts and contracts. Interaction is indirect, mostly through resource scarcity and race-to-the-spot tension."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from building construction and area majority, temple/king's favor tracks, ship abilities, and end-game bonuses, so winners typically balance several of these rather than maxing one."
+  "why": "Points accumulate from district construction, contracts fulfilled, temple advancement, and end-game bonuses.",
+  "how_you_win": "You win by efficiently converting dice into buildings and contract fulfillment to out-score opponents across multiple scoring categories."
  },
  "similar": [
-  "Teotihuacan: City of Gods",
+  "Teotihuacan",
   "Tzolk'in: The Mayan Calendar",
-  "Trickerion: Legends of Illusion",
-  "Anachrony",
-  "Newton"
+  "Trickerion",
+  "The Voyages of Marco Polo",
+  "Anachrony"
  ],
- "_fingerprint": "7541ec4127e62dc2",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "No Pun Included"
+ ],
+ "_fingerprint": "281d290a669e922b",
  "_name": "Tabannusi: Builders of Ur"
 }

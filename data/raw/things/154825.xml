@@ -442,7 +442,23 @@ To get familiar with the market mechanics you may start with a 120 minutes versi
 			
 
 			
-	
+			<videos total="39">
+						<video id="591386" title="Booghy plays... Arkwright(2p, Playthrough, Review)" category="review" language="English" link="http://www.youtube.com/watch?v=taqXDRD8lVg" username="bogdani0405" userid="1267302" postdate="2026-01-08T04:02:02-06:00" />
+						<video id="590952" title="Arkwright:  Anniversary Edition Automa Rules - Rules Speed Through with John LaRuffa" category="instructional" language="English" link="http://www.youtube.com/watch?v=4aGNJXjp2Xo" username="magnus1515" userid="109899" postdate="2026-01-04T19:06:05-06:00" />
+						<video id="590683" title="Arkwright:  Anniversary Edition - Straight Up Solo with John LaRuffa" category="review" language="English" link="http://www.youtube.com/watch?v=8pqbpdOzJG0" username="magnus1515" userid="109899" postdate="2026-01-02T20:45:26-06:00" />
+						<video id="590294" title="Arkwright:  Anniversary Edition - Unbiased Unboxing with John LaRuffa" category="unboxing" language="English" link="http://www.youtube.com/watch?v=dy1g-oV47lA" username="magnus1515" userid="109899" postdate="2025-12-30T19:19:26-06:00" />
+						<video id="493364" title="Booghy plays... Arkwright(2p, Playthrough, Review)" category="review" language="English" link="http://www.youtube.com/watch?v=keEA2dew-RQ" username="bogdani0405" userid="1267302" postdate="2024-05-01T10:03:18-05:00" />
+						<video id="427245" title="Arkwright, Water Frame.Repaso Rápido de Reglas" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=bzZKtqpC3A0" username="Rododendro" userid="366905" postdate="2023-03-09T03:11:33-06:00" />
+						<video id="369553" title="Kaerugames Tutorial + Arkwright (Variante Waterframe) [ES]" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=yUr25Qm3TvM" username="KaeruGames" userid="2248840" postdate="2022-03-05T13:55:53-06:00" />
+						<video id="331312" title="Arkwright Learn to Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=q_92Se2jWi0" username="PieLoGic" userid="1054024" postdate="2021-06-26T17:45:48-05:00" />
+						<video id="320820" title="The Game Gallery Unboxing - Arkwright" category="unboxing" language="Japanese" link="http://www.youtube.com/watch?v=3WgU2RCxmhE" username="hal99" userid="27784" postdate="2021-04-25T19:51:46-05:00" />
+						<video id="220404" title="Arkwright Board Game Review!...with Justin and Max" category="review" language="English" link="http://www.youtube.com/watch?v=DhNJWGbFsU8" username="jrubin1" userid="353434" postdate="2019-06-03T07:48:12-05:00" />
+						<video id="206130" title="Arkwright 2nd Edition Board Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=fNl31CMk-5s" username="MiltoLab" userid="1651239" postdate="2019-01-29T02:29:24-06:00" />
+						<video id="201386" title="Arkwright - Présentation du jeu" category="unboxing" language="French" link="http://www.youtube.com/watch?v=ZtobTHQ9GOM" username="Dalor42" userid="1136775" postdate="2018-12-17T12:35:12-06:00" />
+						<video id="200709" title="Arkwright Board Game EPIC Unboxing! with Justin and Max" category="unboxing" language="English" link="http://www.youtube.com/watch?v=pkDbCop4UiE" username="jrubin1" userid="353434" postdate="2018-12-12T05:58:18-06:00" />
+						<video id="190422" title="Arkwright 2 Player Let's Play by Victoria Parta Spiele (Lots of Chatting)" category="session" language="German" link="http://www.youtube.com/watch?v=j88U_cZwhB0" username="Port_Ellen74" userid="595768" postdate="2018-09-18T16:14:14-05:00" />
+						<video id="180622" title="Shut Up &amp; Sit Down reviews: ARKWRIGHT" category="review" language="English" link="http://www.youtube.com/watch?v=gVKRqF0kQB0" username="tiagoVIP" userid="363959" postdate="2018-06-22T07:31:38-05:00" />
+					</videos>
 
 	
 
@@ -456,16 +472,16 @@ To get familiar with the market mechanics you may start with a 120 minutes versi
 			<bayesaverage value="6.72282" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="880" bayesaverage="6.72282" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="881" bayesaverage="6.72282" />
 																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="461" bayesaverage="6.92029" />
 												</ranks>
 
 			<stddev value="1.49937" />
 			<median value="0" />
-			<owned value="4856" />
-			<trading value="133" />
-			<wanting value="318" />
-			<wishing value="1703" />
+			<owned value="4861" />
+			<trading value="132" />
+			<wanting value="317" />
+			<wishing value="1700" />
 			<numcomments value="760" />
 			<numweights value="317" />
 			<averageweight value="4.5899" />

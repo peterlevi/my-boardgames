@@ -249,7 +249,10 @@ Contents
 			
 
 			
-	
+			<videos total="2">
+						<video id="417647" title="Before the wind Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=4W8i2A2EYeg" username="mobiltel75" userid="2033278" postdate="2023-01-10T09:15:08-06:00" />
+						<video id="129302" title="The Purge # 1267 Before the Wind: A resource card game where goods need to be stored before shipped and the are very strict about this!" category="review" language="English" link="http://www.youtube.com/watch?v=zddtkUVSaIk" username="william4192" userid="296644" postdate="2017-03-05T07:03:37-06:00" />
+					</videos>
 
 	
 
@@ -263,7 +266,7 @@ Contents
 			<bayesaverage value="5.92689" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3693" bayesaverage="5.92689" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3697" bayesaverage="5.92689" />
 																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="1644" bayesaverage="6.02191" />
 												</ranks>
 

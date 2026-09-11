@@ -712,7 +712,23 @@ Caverna: The Cave Farmers, which has a playing time of roughly 30 minutes per pl
 			
 
 			
-	
+			<videos total="162">
+						<video id="608962" title="Caverna in about 3 minutes" category="review" language="English" link="http://www.youtube.com/watch?v=DSPlDeyDkic" username="J_3MBG" userid="53862" postdate="2026-04-24T09:00:24-05:00" />
+						<video id="602135" title="Caverna" category="review" language="English" link="http://www.youtube.com/watch?v=GlgvDltNnfs" username="Melaniebarr" userid="1626931" postdate="2026-03-12T10:40:36-05:00" />
+						<video id="565816" title="Lär dig spela Caverna: The Cave Farmers!" category="instructional" language="Swedish" link="http://www.youtube.com/watch?v=JBb1oVhUNhM" username="larshall" userid="102159" postdate="2025-08-06T00:40:15-05:00" />
+						<video id="561557" title="Booghy plays... Caverna(2p, Rules, Playthrough, Impressions)" category="review" language="English" link="http://www.youtube.com/watch?v=t_Gn_oIPlg4" username="bogdani0405" userid="1267302" postdate="2025-07-05T06:50:45-05:00" />
+						<video id="522020" title="Caverna | Solo Playthrough | Live Stream" category="session" language="English" link="http://www.youtube.com/watch?v=zNXlnpWJwP4" username="Dads_and_Dice" userid="3205436" postdate="2024-10-31T09:18:49-05:00" />
+						<video id="500065" title="Caverna: Cave Farmers. A Whose Turn Review" category="review" language="English" link="http://www.youtube.com/watch?v=6QaBC2oIh8o" username="Eezore" userid="3714468" postdate="2024-06-14T17:24:11-05:00" />
+						<video id="490291" title="Caverna Anleitung" category="instructional" language="German" link="http://www.youtube.com/watch?v=xXLAb86FEn4" username="GamerGE" userid="616401" postdate="2024-04-13T05:37:07-05:00" />
+						<video id="485433" title="3 Things I love about Caverna - solo play" category="other" language="English" link="http://www.youtube.com/watch?v=4JrbPprxyDE" username="JennyKile" userid="3440561" postdate="2024-03-12T12:58:13-05:00" />
+						<video id="482958" title="Cum se joaca Caverna: The Cave Farmers" category="review" language="Romanian" link="http://www.youtube.com/watch?v=eQsygfmkGpE" username="Proti_BG" userid="2067383" postdate="2024-02-24T12:45:22-06:00" />
+						<video id="480735" title="Caverna: The Cave Farmers - strategy blitz" category="instructional" language="English" link="http://www.youtube.com/watch?v=dAMH9_GsniI" username="mkttimer" userid="22012" postdate="2024-02-10T09:05:41-06:00" />
+						<video id="480734" title="Caverna: The Cave Farmers - rules blitz" category="instructional" language="English" link="http://www.youtube.com/watch?v=sfHnOPxG1EM" username="mkttimer" userid="22012" postdate="2024-02-10T09:04:18-06:00" />
+						<video id="480732" title="Caverna: The Cave Farmers - set up &amp; play" category="instructional" language="English" link="http://www.youtube.com/watch?v=zEUl-opC1Z8" username="mkttimer" userid="22012" postdate="2024-02-10T09:00:33-06:00" />
+						<video id="467246" title="Caverna: The Cave Farmers - solo playthrough and final thoughts (solo Uwe Rosenberg series)" category="session" language="English" link="http://www.youtube.com/watch?v=4qW2pbE7ESY" username="BlueDogBoardGames" userid="2653657" postdate="2023-11-19T23:21:56-06:00" />
+						<video id="439723" title="Una partita a... Caverna" category="session" language="Italian" link="http://www.youtube.com/watch?v=rVW3CL040hA" username="Hunters12" userid="2403288" postdate="2023-05-30T04:05:10-05:00" />
+						<video id="439338" title="Highlighting Caverna; my wife’s #1 game" category="review" language="English" link="http://www.youtube.com/watch?v=IcCYInx4u0o" username="sprucepomplamoose" userid="3415392" postdate="2023-05-26T12:56:19-05:00" />
+					</videos>
 
 	
 
@@ -721,22 +737,22 @@ Caverna: The Cave Farmers, which has a playing time of roughly 30 minutes per pl
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="37599" />
+			<usersrated value="37605" />
 			<average value="7.91878" />
-			<bayesaverage value="7.72747" />
+			<bayesaverage value="7.7275" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="62" bayesaverage="7.72747" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="55" bayesaverage="7.74533" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="62" bayesaverage="7.7275" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="55" bayesaverage="7.74536" />
 												</ranks>
 
-			<stddev value="1.34088" />
+			<stddev value="1.34077" />
 			<median value="0" />
-			<owned value="48676" />
-			<trading value="620" />
-			<wanting value="1574" />
-			<wishing value="11941" />
-			<numcomments value="6001" />
+			<owned value="48681" />
+			<trading value="621" />
+			<wanting value="1575" />
+			<wishing value="11944" />
+			<numcomments value="6002" />
 			<numweights value="1750" />
 			<averageweight value="3.7777" />
 			</ratings>

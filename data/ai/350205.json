@@ -1,34 +1,41 @@
 {
  "confidence": "medium",
- "summary": "A Splotter Spelen heavyweight where players build up an early automobile company, using tile placement to assemble cars from parts (engines, brakes, steering, wheels) while racing up tech tracks as safety regulations tighten each era. Like other Splotter titles it plays as a tightly interlocking economic engine with commodity speculation and real teeth in the player interaction, running 3-4 hours once everyone knows the rules.",
+ "summary": "Horseless Carriage is a heavy economic game from the designers behind Antiquity and Food Chain Magnate, casting players as early automobile manufacturers speculating on parts, demand, and factory tech trees. It's long, mechanically dense, and rewards careful reading of a fluctuating commodity market over multiple hours.",
  "praised": [
-  "Deeply interlocking systems where every decision has knock-on effects, classic Splotter design",
-  "Satisfying puzzle of assembling car variants to match shifting market/regulatory demand",
-  "Strong long-term strategic tension between expanding the factory and cashing in early",
-  "High replayability from the modular board and tech-track variation"
+  "deep, satisfying economic simulation of an emerging industry",
+  "clever commodity speculation mechanics",
+  "strong sense of building up a manufacturing empire over time",
+  "rewards long-term planning and foresight"
  ],
  "criticised": [
-  "Very steep rules overhead and onboarding, unfriendly to first-time players",
-  "Long playtime (3-4+ hours) that punishes analysis paralysis",
-  "Interaction can feel punishing/mean, closer to a Splotter-style economic fight than a friendly game",
-  "Small print run typical of Splotter releases makes it hard to acquire"
+  "very long playtime for a niche audience",
+  "steep rules complexity and setup",
+  "market-based scoring can be opaque to new players",
+  "limited table availability/print run makes it hard to find"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "blocking and area denial, commodity speculation"
+  "level": "Medium",
+  "kind": "commodity speculation and shared market pressure",
+  "detail": "Players buy and sell into a shared, dynamic commodity market whose prices shift based on collective actions, so one player's speculation directly affects what others can profitably do, even though factory development itself sits on individual player boards."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Broad",
-  "why": "the winner is decided by balancing factory investment, tech-track progress, and car sales against the shifting cost of raw components"
+  "breadth": "Focused",
+  "why": "Success is measured by accumulated capital from successful manufacturing and market speculation.",
+  "how_you_win": "You win by out-earning opponents through shrewd factory investment and timing your commodity trades better than the market punishes you."
  },
  "similar": [
   "Food Chain Magnate",
   "Antiquity",
   "The Great Zimbabwe",
   "Indonesia",
-  "Brass: Birmingham"
+  "Container"
  ],
- "_fingerprint": "fc01da88b7375204",
+ "teachers": [
+  "Heavy Cardboard",
+  "Watch It Played",
+  "The Undead Viking"
+ ],
+ "_fingerprint": "9562d2c70440ebc0",
  "_name": "Horseless Carriage"
 }

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Coup is a fast, tense bluffing game where you claim character powers you may not actually have, daring opponents to challenge you or fold to your threat. Games are short and vicious, often decided by a single successful bluff or a lucky challenge near the end.",
+ "summary": "Coup is a fast, cutthroat bluffing game where players claim character powers they may or may not actually hold, daring others to challenge them. It's tense and social, with the whole game riding on reading opponents' nerve and managing your dwindling influence cards.",
  "praised": [
-  "Extremely fast setup and playtime",
-  "High tension despite simple rules",
-  "Bluffing and reading opponents is genuinely fun",
-  "Easy to teach, portable, cheap"
+  "extremely fast, tense bluffing gameplay",
+  "easy to teach and portable",
+  "great for groups who enjoy social deduction",
+  "high replayability despite tiny card count"
  ],
  "criticised": [
-  "Player elimination means early-out players wait around",
-  "Luck of the draw (which characters you get) can swing outcomes",
-  "Can devolve into pure aggression/kingmaking in larger groups",
-  "Depth is fairly shallow after many plays"
+  "player elimination can leave people waiting out a round",
+  "kingmaking possible in multiplayer endgames",
+  "some feel it's more about table read than skill",
+  "two-player variant is notably weaker"
  ],
  "interaction": {
   "level": "High",
-  "kind": "bluffing, accusing, and open conflict via coin theft and assassination"
+  "kind": "bluffing and direct confrontation",
+  "detail": "Every action can be challenged or blocked by any other player, and coup/assassinate actions directly strip opponents of influence cards, so the game is almost entirely about player-vs-player confrontation. There's no personal board; the shared state is just coins and each player's hidden two cards, constantly under threat."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The last player left with any influence (face-down cards) wins, decided entirely by bluffing, challenges, and eliminating opponents' cards"
+  "why": "There's no scoring; the last player left with any influence cards remaining wins outright.",
+  "how_you_win": "You win by successfully bluffing, blocking, and eliminating opponents' influence cards until you're the last family standing."
  },
  "similar": [
   "The Resistance",
-  "Secret Hitler",
-  "One Night Ultimate Werewolf",
+  "Love Letter",
   "Skull",
-  "Sheriff of Nottingham"
+  "Secret Hitler",
+  "Bang!"
  ],
- "_fingerprint": "7099cb7896086a1c",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames",
+  "Before You Play"
+ ],
+ "_fingerprint": "feb63d2dc6b13f6d",
  "_name": "Coup"
 }

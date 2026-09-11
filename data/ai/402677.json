@@ -5,14 +5,17 @@
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with movement/blocking on shared districts"
+  "kind": "",
+  "detail": ""
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Multiple simultaneous tracks (city expansion, electrification, inventions, trade) suggest the winner is decided by whoever integrates several scoring engines rather than a single dominant strategy"
+  "why": "",
+  "how_you_win": ""
  },
  "similar": [],
- "_fingerprint": "d2491f9ee57743b9",
+ "teachers": [],
+ "_fingerprint": "9b28f2b433823657",
  "_name": "Daitoshi"
 }

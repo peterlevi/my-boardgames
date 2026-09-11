@@ -48,36 +48,36 @@ The aim of Paladins of the West Kingdom is to be the player with the most victor
 										      	               				<yearpublished value="2019" />
 						               				<minplayers value="1" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="586">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="587">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="78" />
-					<result value="Recommended" numvotes="223" />
+					<result value="Recommended" numvotes="224" />
 					<result value="Not Recommended" numvotes="75" />
 				</results>					
 			
 		<results numplayers="2">		
-					<result value="Best" numvotes="364" />
+					<result value="Best" numvotes="365" />
 					<result value="Recommended" numvotes="123" />
 					<result value="Not Recommended" numvotes="9" />
 				</results>					
 			
 		<results numplayers="3">		
 					<result value="Best" numvotes="117" />
-					<result value="Recommended" numvotes="234" />
+					<result value="Recommended" numvotes="235" />
 					<result value="Not Recommended" numvotes="55" />
 				</results>					
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="25" />
 					<result value="Recommended" numvotes="126" />
-					<result value="Not Recommended" numvotes="246" />
+					<result value="Not Recommended" numvotes="247" />
 				</results>					
 			
 		<results numplayers="4+">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="0" />
-					<result value="Not Recommended" numvotes="245" />
+					<result value="Not Recommended" numvotes="246" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -636,7 +636,23 @@ The aim of Paladins of the West Kingdom is to be the player with the most victor
 			
 
 			
-	
+			<videos total="179">
+						<video id="622760" title="Regles completes en 8 min!" category="instructional" language="French" link="http://www.youtube.com/watch?v=TlmjOyZiSkU" username="NoiramB" userid="2801510" postdate="2026-07-28T12:36:39-05:00" />
+						<video id="618443" title="Solo Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=1610MnBt_xA" username="got_koopa" userid="1743848" postdate="2026-07-01T17:17:04-05:00" />
+						<video id="607583" title="桌遊獨遊｜西國聖騎士｜Architects of the West Kingdom｜Playthrough｜廣東話" category="instructional" language="" link="http://www.youtube.com/watch?v=6YRWC5rvTH0" username="sonofkyo" userid="2885517" postdate="2026-04-15T15:49:11-05:00" />
+						<video id="593445" title="Paladins of the West Kingdom: Medieval Strategy Music for Concentration" category="other" language="English" link="http://www.youtube.com/watch?v=AW38E4C7Prw" username="naykris" userid="2480193" postdate="2026-01-20T08:02:48-06:00" />
+						<video id="576521" title="BigDenoPlays Paladins of the West Kingdom" category="session" language="English" link="http://www.youtube.com/watch?v=YjWNtQKWyNI" username="BigDeno" userid="1669411" postdate="2025-10-11T23:52:22-05:00" />
+						<video id="556229" title="[FR] Paladins du Royaume de l'Ouest (2/3) | Comment le mettre en place pour jouer en solo ?" category="session" language="French" link="http://www.youtube.com/watch?v=RC__WCTI1BM" username="AlbanSolo" userid="2891226" postdate="2025-05-28T08:49:02-05:00" />
+						<video id="554511" title="Paladins of the West Kingdom: Unboxing &amp; Reboxing - What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=YNBOjXdWzPI" username="broseygames" userid="4181268" postdate="2025-05-17T20:28:58-05:00" />
+						<video id="544329" title="Hoe speel je... Paladijnen van het Westelijk Koninkrijk" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=tYkFHNNLAFA" username="Elah2810" userid="3768968" postdate="2025-03-19T03:30:15-05:00" />
+						<video id="539569" title="Hoe speel je Paladijnen van het Westelijke koninkrijk? (#581)" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=IDNH1Nk7soc" username="Molotail" userid="958802" postdate="2025-02-22T00:00:12-06:00" />
+						<video id="527338" title="PALADINS DU ROYAUME DE L'OUEST - PARTIE SOLO - Final" category="session" language="French" link="http://www.youtube.com/watch?v=fkzWxZSC7X0" username="sheridan8" userid="2316761" postdate="2024-12-04T03:53:23-06:00" />
+						<video id="525735" title="PALADINS DU ROYAUME DE L'OUEST - PARTIE SOLO - session I" category="session" language="French" link="http://www.youtube.com/watch?v=c6EGSbfyJXM" username="sheridan8" userid="2316761" postdate="2024-11-23T14:54:24-06:00" />
+						<video id="515206" title="A Nyugati Királyság Lovagjai társasjáték bemutató" category="instructional" language="Hungarian" link="http://www.youtube.com/watch?v=uYdIC4pHthM" username="ianniesimo" userid="2875723" postdate="2024-09-21T08:05:55-05:00" />
+						<video id="514360" title="The Purge: #4593 Paladins of the West Kingdom: Meeple Source Upgrades" category="review" language="English" link="http://www.youtube.com/watch?v=E_3QaZLyna8" username="william4192" userid="296644" postdate="2024-09-16T10:56:51-05:00" />
+						<video id="497233" title="Bot'a Jogar Paladins of the West Kingdom Gameplay + Review" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=J6ZpJnxyZ8E" username="Strovik" userid="1528890" postdate="2024-05-26T17:00:16-05:00" />
+						<video id="494800" title="Paladins Reminder Video" category="instructional" language="English" link="http://www.youtube.com/watch?v=rVaTMlK5Kw4" username="LightRanger17" userid="1625443" postdate="2024-05-10T21:48:55-05:00" />
+					</videos>
 
 	
 
@@ -645,24 +661,24 @@ The aim of Paladins of the West Kingdom is to be the player with the most victor
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="20891" />
-			<average value="7.95151" />
-			<bayesaverage value="7.65641" />
+			<usersrated value="20899" />
+			<average value="7.95166" />
+			<bayesaverage value="7.65666" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="82" bayesaverage="7.65641" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="65" bayesaverage="7.71018" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="82" bayesaverage="7.65666" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="65" bayesaverage="7.71036" />
 												</ranks>
 
-			<stddev value="1.25096" />
+			<stddev value="1.25079" />
 			<median value="0" />
-			<owned value="33633" />
-			<trading value="344" />
-			<wanting value="682" />
-			<wishing value="6561" />
+			<owned value="33644" />
+			<trading value="343" />
+			<wanting value="683" />
+			<wishing value="6559" />
 			<numcomments value="2991" />
-			<numweights value="931" />
-			<averageweight value="3.7046" />
+			<numweights value="932" />
+			<averageweight value="3.7049" />
 			</ratings>
 								</statistics>
      

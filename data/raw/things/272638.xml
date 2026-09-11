@@ -428,7 +428,12 @@
 			
 
 			
-	
+			<videos total="4">
+						<video id="396551" title="https://www.youtube.com/watch?v=8HObpIarRM4" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=9oqc0P7DQaY" username="Micaelsousa" userid="790334" postdate="2022-08-29T17:25:50-05:00" />
+						<video id="380433" title="Root: RONIN Vagabond NEW Exiles and Partisans Digital Expansion PLAYTHROUGH and STRATEGY" category="instructional" language="English" link="http://www.youtube.com/watch?v=Zr9Cucwkji0" username="randalthompson" userid="663880" postdate="2022-05-12T20:04:32-05:00" />
+						<video id="363513" title="unboxing CZ Fox in the Box" category="unboxing" language="Czech" link="http://www.youtube.com/watch?v=28bC_AAQXlA" username="1a2a3a4" userid="668856" postdate="2022-01-29T01:32:00-06:00" />
+						<video id="302243" title="Root The Exiles and Partisans Deck" category="unboxing" language="English" link="http://www.youtube.com/watch?v=JZ2k9H3sSKw" username="logicbomb" userid="586450" postdate="2021-01-16T00:32:04-06:00" />
+					</videos>
 
 	
 
@@ -437,20 +442,20 @@
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="3579" />
-			<average value="8.71649" />
-			<bayesaverage value="7.35242" />
+			<usersrated value="3581" />
+			<average value="8.71693" />
+			<bayesaverage value="7.35272" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.35242" />
-																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="7.81785" />
-											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.54685" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.35272" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="7.8171" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.54663" />
 												</ranks>
 
-			<stddev value="1.14171" />
+			<stddev value="1.14184" />
 			<median value="0" />
-			<owned value="20159" />
-			<trading value="97" />
+			<owned value="20174" />
+			<trading value="96" />
 			<wanting value="141" />
 			<wishing value="1039" />
 			<numcomments value="721" />

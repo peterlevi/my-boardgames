@@ -1,35 +1,21 @@
 {
- "confidence": "high",
- "summary": "Container is a tense economic game about producing, shipping, and trading goods in a closed economy where every dollar in play came from another player, making timing and reading opponents' secret goals crucial. There's little direct conflict, but the market pressure and negotiation over prices creates real tension as you decide when to build, when to sell, and when to just profit off others' trades.",
- "praised": [
-  "Innovative closed-economy design where money never enters or leaves the system",
-  "Deep, tense market dynamics from buying low and selling high",
-  "Rewards patient, calculating play and reading opponents",
-  "High replayability due to variable player interactions and secret goals"
- ],
- "criticised": [
-  "Can be brutal or swingy for new players who misjudge the market",
-  "Slow, fiddly turns with lots of bookkeeping",
-  "Rich-get-richer dynamics can snowball",
-  "Low direct interaction can feel isolating despite being a 'trading' game",
-  "Steep learning curve to understand the economy well enough to compete"
- ],
+ "confidence": "low",
+ "summary": "",
+ "praised": [],
+ "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "trading and negotiation, commodity speculation"
+  "kind": "",
+  "detail": ""
  },
  "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Final cash total decides the winner, driven mostly by how well you timed production, shipping, and sales against secret container-value cards"
+  "breadth": "Some",
+  "why": "",
+  "how_you_win": ""
  },
- "similar": [
-  "Antiquity",
-  "Le Havre",
-  "Trade on the Tigris",
-  "Chinatown",
-  "Automobile"
- ],
- "_fingerprint": "603de7cff2caa0af",
+ "similar": [],
+ "teachers": [],
+ "_fingerprint": "b0afa1cbf5e6731b",
  "_name": "Container"
 }

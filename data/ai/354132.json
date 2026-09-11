@@ -1,34 +1,21 @@
 {
- "confidence": "medium",
- "summary": "Players run shipping companies hauling goods like tea, spices, and silk between India and Europe, using worker placement to secure ships, cargo, and market actions while a fluctuating supply-and-demand market swings commodity prices. A big part of the game is buying stock in your own and rival companies, so your fortunes are tied not just to trade routes but to how the market values everyone's business.",
- "praised": [
-  "Dynamic, reactive market that genuinely shifts strategy each game",
-  "Meaningful ship-management choices (fast/small vs slow/large tonnage)",
-  "Stock investment layer adds a distinct economic-game twist beyond typical pick-up-and-deliver",
-  "Strong production values and thematic presentation"
- ],
- "criticised": [
-  "Can feel dry and spreadsheet-like at times, heavy on optimization",
-  "Worker placement can create downtime, especially at higher player counts",
-  "Rules and market/stock interactions have a learning curve up front",
-  "Some swinginess from market price movements outside a player's control"
- ],
+ "confidence": "low",
+ "summary": "",
+ "praised": [],
+ "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement competition plus indirect market and stock-price interaction"
+  "kind": "",
+  "detail": ""
  },
- "win_criteria": "Most money",
+ "win_criteria": "Other",
  "scoring": {
   "breadth": "Some",
-  "why": "Final standing comes mainly from accumulated cash plus the value of stock holdings in the various shipping companies"
+  "why": "",
+  "how_you_win": ""
  },
- "similar": [
-  "Navegador",
-  "Container",
-  "Indonesia",
-  "Antike",
-  "Trading Companies"
- ],
- "_fingerprint": "c0a5fc176b6cdc71",
+ "similar": [],
+ "teachers": [],
+ "_fingerprint": "d6270d1911cc35f5",
  "_name": "East India Companies"
 }

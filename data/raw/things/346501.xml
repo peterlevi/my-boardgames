@@ -266,7 +266,23 @@ When someone has placed their final diamond token or when you can't deal a new h
 			
 
 			
-	
+			<videos total="87">
+						<video id="584706" title="Mille Fiori - A Game Schooler Review" category="review" language="English" link="http://www.youtube.com/watch?v=zIomfpM3dIo" username="BoardGameRadio" userid="3207451" postdate="2025-11-25T09:04:47-06:00" />
+						<video id="562860" title="Mille Fiori Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=faqmtzSjEiA" username="WeAreBoardAtHome" userid="3196717" postdate="2025-07-15T06:02:37-05:00" />
+						<video id="550241" title="Reseña + HTP | Mesamórfosis - Mille Fiori" category="review" language="Spanish" link="http://www.youtube.com/watch?v=2RVcaDHCUyY" username="Mesamorfosis" userid="3361165" postdate="2025-04-22T15:53:50-05:00" />
+						<video id="549710" title="The Boardgame Mechanics Review Mille Fiori w/ The Masterpieces Expansion" category="review" language="English" link="http://www.youtube.com/watch?v=xinnYwOAGJc" username="BoardgameMechanics" userid="1339218" postdate="2025-04-19T10:01:24-05:00" />
+						<video id="548246" title="Mille Fiori Board Game | Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=v9ubZtPlSXw" username="fenirob" userid="478021" postdate="2025-04-12T11:01:20-05:00" />
+						<video id="544099" title="Mille Fiori | Inside #699" category="unboxing" language="English" link="http://www.youtube.com/watch?v=6F_fFgCAN30" username="table_talks" userid="3249213" postdate="2025-03-18T06:49:32-05:00" />
+						<video id="529237" title="Mille Fiori Board Game | Unboxing (No Talking)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=YWOI-tjUzrg" username="fenirob" userid="478021" postdate="2024-12-17T11:00:41-06:00" />
+						<video id="506517" title="Aprende a Jugar MILLE FIORI - Tutorial, Rondas de Ejemplo y Comentarios" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=JpSZT7vqFIM" username="GuuZ" userid="1681427" postdate="2024-07-27T23:33:55-05:00" />
+						<video id="504677" title="Choose your rulebook" category="humor" language="English" link="http://www.youtube.com/watch?v=9ckacyK4F9c" username="ghosthack" userid="163019" postdate="2024-07-16T07:59:56-05:00" />
+						<video id="490752" title="ВЕНЕЦИАНСКАЯ МОЗАИКА - ОБЗОР настольной игры Mille Fiori | Geek Media" category="review" language="Russian" link="http://www.youtube.com/watch?v=Aob_6U84ii8" username="Geek_Media" userid="2207816" postdate="2024-04-16T04:06:53-05:00" />
+						<video id="488085" title="ASI SE JUEGA" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=uCh60RFqyAc" username="ElpitufoDV" userid="2500487" postdate="2024-03-28T23:35:29-05:00" />
+						<video id="487414" title="Знакомство с игрой" category="review" language="Russian" link="http://www.youtube.com/watch?v=-fA7Q6cXdu8" username="snowbody" userid="201253" postdate="2024-03-25T01:47:01-05:00" />
+						<video id="480675" title="Apertura y Sinopsis - Mille Fiori" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=hMsDZJGzJCY" username="DicepairGames" userid="2753373" postdate="2024-02-09T23:38:13-06:00" />
+						<video id="477537" title="Mille Fiori!! Encore et encore! - Évaluation de performance" category="review" language="French" link="http://www.youtube.com/watch?v=smLoOsPbOMc" username="Bolivar" userid="2804638" postdate="2024-01-30T11:39:13-06:00" />
+						<video id="469956" title="Mille Fiori Partita Completa tra i mastri vetrai di Venezia! Chi ha detto che non c'è interazione?" category="session" language="Italian" link="http://www.youtube.com/watch?v=hux1JjrA-8U" username="IGiullari" userid="701078" postdate="2023-12-06T05:22:48-06:00" />
+					</videos>
 
 	
 
@@ -275,22 +291,22 @@ When someone has placed their final diamond token or when you can't deal a new h
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="5892" />
-			<average value="7.41749" />
-			<bayesaverage value="6.85463" />
+			<usersrated value="5893" />
+			<average value="7.41741" />
+			<bayesaverage value="6.85465" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="681" bayesaverage="6.85463" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="681" bayesaverage="6.85465" />
 																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="422" bayesaverage="6.96604" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="138" bayesaverage="6.99204" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="137" bayesaverage="6.99204" />
 												</ranks>
 
-			<stddev value="1.16726" />
+			<stddev value="1.16717" />
 			<median value="0" />
-			<owned value="10090" />
-			<trading value="128" />
-			<wanting value="305" />
-			<wishing value="1742" />
+			<owned value="10092" />
+			<trading value="127" />
+			<wanting value="304" />
+			<wishing value="1743" />
 			<numcomments value="959" />
 			<numweights value="158" />
 			<averageweight value="2.1835" />

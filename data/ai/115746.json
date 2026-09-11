@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "A sweeping asymmetric wargame where one player commands overwhelming Shadow armies while the other must balance thin Free Peoples defenses with the desperate, secretive quest to sneak the Ring into Mordor. It's a tense race between military conquest and stealth, with huge swings driven by the Hunt for the Ring mechanic and event cards.",
+ "summary": "War of the Ring is a big asymmetric wargame where one side commands Sauron's armies pushing across Middle-earth while the other secretly guides the Ring-bearer toward Mount Doom and rallies Free People nations to resist. Every turn is a tense card-driven balancing act between fighting open battles and protecting the fragile, hidden quest that is the Free Peoples' only real hope.",
  "praised": [
-  "Captures the narrative tension of the books/films better than almost any other adaptation",
-  "Elegant asymmetry between military conflict and the hidden Ring-bearer quest",
-  "High production values (huge map, minis, art)",
-  "Deep, tense decision-making for both sides",
-  "Strong replayability due to variable strategies each game"
+  "outstanding asymmetric tension between military and hidden quest",
+  "beautiful, evocative Tolkien production",
+  "action-die and event-card system that creates hard strategic choices",
+  "strong narrative arc each playthrough"
  ],
  "criticised": [
-  "Long playtime (often exceeds the stated 150-240 min, especially for new players)",
-  "Steep rules overhead and learning curve",
-  "Can feel very swingy if the Hunt for the Ring dice go badly",
-  "Requires a well-matched, committed opponent to shine",
-  "Shadow player can feel like they're just executing a checklist of attacks if Free Peoples play too passively"
+  "long playtime and heavy rules overhead",
+  "needs a dedicated 2-4 player group who commit to a full session",
+  "combat can be dice-swingy",
+  "the 4-player team variant can create imbalance between teammates"
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict and area control with a hidden-movement cat-and-mouse thread"
+  "kind": "open military conflict and hidden information tension",
+  "detail": "Free Peoples and Shadow directly battle over a shared map of regions and strongholds, while the Ring-bearer's secret movement and the political track create asymmetric information both sides are constantly reading and reacting to; almost all game state is shared and contested."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "Victory comes from either the Shadow army conquering enough Free People cities/strongholds or the Ring being destroyed/corrupted, not from accumulating points"
+  "why": "There is no points total; the game ends immediately when either side achieves a military conquest threshold or the Ring's fate is resolved.",
+  "how_you_win": "The Shadow player wins by capturing enough Free People strongholds, while the Free Peoples win by reaching Mount Doom with the Ring or by surviving long enough that Sauron cannot break through militarily."
  },
  "similar": [
   "Twilight Struggle",
-  "Star Wars: Rebellion",
   "A Game of Thrones: The Board Game",
-  "Battlestar Galactica: The Board Game",
+  "Kemet",
+  "Star Wars: Rebellion",
   "Root"
  ],
- "_fingerprint": "0e834ea07a36d481",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "8882781fcf8edcd8",
  "_name": "War of the Ring: Second Edition"
 }

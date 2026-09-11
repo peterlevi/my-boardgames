@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Oath is a dense, narrative-driven area-control game where players vie for a shifting set of win conditions (Oathkeeper vs. Successor) while a chronicle system carries the consequences of each session — who holds relics, which sites are ruined, who founded a dynasty — into the next game played with the same box. Sessions feel like political jockeying and opportunistic backstabbing as much as tactical warfare, with a steep rules overhead that pays off mainly across a campaign rather than in a single isolated play.",
+ "summary": "A chronicle-based area-control game where a persistent world evolves session to session, with players negotiating, warring, and betraying each other to seize or hold power over an ancient land. Every playthrough writes a bit of history that shapes the setup and stakes of the next.",
  "praised": [
-  "Emergent, personal narratives that build across sessions via the chronicle/legacy system",
-  "Clever asymmetric win conditions that keep every player's goals different and shifting",
-  "High replayability since the game state and rules can evolve indefinitely, yet it can be reset to a fresh start",
-  "Rich, evocative art and card-driven world-building"
+  "genuinely emergent, novel-feeling narrative across sessions",
+  "deep asymmetric strategy and meaningful long-term consequences",
+  "outstanding art and thematic cohesion"
  ],
  "criticised": [
-  "Very steep learning curve and dense rulebook, rough for first-time players",
-  "Long, sometimes fiddly turns with heavy bookkeeping",
-  "Swingy and chaotic outcomes that can feel arbitrary, especially early in a chronicle",
-  "Best experienced with a stable group over multiple sessions, which is a big ask logistically"
+  "steep, unusual rulebook that's hard to onboard new players into",
+  "best experienced with a stable group playing repeatedly, which not everyone has",
+  "can feel chaotic or punishing in early plays before the world settles"
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority conflict, negotiation, and opportunistic backstabbing"
+  "kind": "open conflict, negotiation, and shifting alliances",
+  "detail": "Players directly battle for map regions, form and break alliances, and vote on political outcomes, with the shared world state (the Chronicle) persisting and being altered by everyone's actions across games. Very little is private; almost the entire board and its history is shared and contested."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is decided not by points but by whichever player fulfills the current game's Oathkeeper or Successor victory condition, which itself changes from game to game."
+  "why": "There's no point total; a player wins by fulfilling their faction's specific victory condition, such as the Chancellor retaining power or a challenger seizing it.",
+  "how_you_win": "You win by either holding onto the Chancellorship against challengers or by successfully overthrowing it and surviving as the new ruling power."
  },
  "similar": [
   "Root",
-  "Pax Pamir (Second Edition)",
-  "John Company (Second Edition)",
-  "Vast: The Crystal Caverns",
-  "Twilight Struggle"
+  "Pax Pamir: Second Edition",
+  "Twilight Imperium: Fourth Edition",
+  "Rising Sun",
+  "Kemet"
  ],
- "_fingerprint": "4d4e47995e3a33dd",
+ "teachers": [
+  "Watch It Played",
+  "No Pun Included",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "5874a26186de5ae8",
  "_name": "Oath"
 }

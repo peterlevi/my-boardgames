@@ -1,35 +1,40 @@
 {
- "confidence": "high",
- "summary": "It plays like a leaner, more elegant remix of the original Great Western Trail, replacing the Kansas City hiring puzzle with a farmer-recruitment and grain-economy system that feels tighter and less fiddly. Games tend to be faster and slightly less brain-burning than the original while keeping the same core tension of engine-building on your player board versus racing the rondel to Buenos Aires.",
+ "confidence": "medium",
+ "summary": "Great Western Trail: Argentina reworks Pfister's cattle-driving engine around the Pampas, adding farmers and new route choices while keeping the deck-building and rondel core intact. It plays very similarly to the original but with fresh route decisions and a slightly different economic rhythm.",
  "praised": [
-  "Cleaner, more streamlined rules than the original GWT",
-  "Farmer/grain mechanic adds a fresh, well-integrated twist",
-  "Strong player board upgrade puzzle and engine building",
-  "Shorter playtime and less downtime than the original",
-  "Works well solo"
+  "fresh take on a proven engine-building formula",
+  "new farmer worker type adds decision variety",
+  "works well solo",
+  "strong production values"
  ],
  "criticised": [
-  "Less iconic/thematic than the cowboy original for some fans",
-  "Some feel it's a bit too similar to GWT rather than a bold new game",
-  "Map/route choices can feel less dramatic than the original's shortcuts",
-  "Still a heavy-ish rules overhead for newcomers"
+  "very similar bones to the original, so it can feel like more of the same to fans",
+  "still a long, dense game with real rules overhead",
+  "niche appeal to those who didn't like the original"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "route/tile drafting and light blocking on the shared board"
+  "kind": "route and building competition",
+  "detail": "As in the original, players share the trail and compete for building spots and delivery timing, while each maintains a private deck and personal board. Direct conflict is limited to positional blocking rather than attacks."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from cattle deliveries, buildings, city/boat tiles, objectives, and engine efficiency, so the winner is decided by who builds the best combination of scoring sources."
+  "why": "Points come from cattle deliveries, buildings, and objective bonuses much like the original GWT, rewarding an efficient overall engine.",
+  "how_you_win": "You build an efficient herd-and-worker engine to deliver valuable cattle repeatedly while grabbing building and objective bonuses, finishing with the highest score."
  },
  "similar": [
   "Great Western Trail",
-  "Res Arcana",
-  "Maracaibo",
-  "Underwater Cities",
-  "Terra Mystica"
+  "Great Western Trail: New Zealand",
+  "Orléans",
+  "Concordia",
+  "Voyages of Marco Polo"
  ],
- "_fingerprint": "ba331928b0e5e99a",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "b5de756fb13072aa",
  "_name": "Great Western Trail: Argentina"
 }

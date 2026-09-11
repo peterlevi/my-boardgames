@@ -1,36 +1,39 @@
 {
  "confidence": "high",
- "summary": "Each round every player draws the same revealed shape onto their own map at the same time, racing to fit it against terrain they've already placed while chasing that season's scoring edicts. It's a quiet, cerebral tetris-like puzzle where the tension comes from awkward shape draws and edict scoring, not from talking to the other players.",
+ "summary": "Cartographers is a light roll-and-write style flip-and-write game where players simultaneously draw shapes onto their own map to satisfy the queen's shifting seasonal demands while blocking encroaching monster tiles. It's quick, low-stress, and works surprisingly well solo or at large table counts.",
  "praised": [
-  "Tight, tetris-like spatial puzzle that stays satisfying over many plays",
-  "Fast to teach and fast to play (30-45 min)",
-  "Variable edicts and monster cards give strong replayability and variable setup",
-  "Works great solo and scales painlessly up to large groups since everyone plays simultaneously",
-  "Charming presentation and low cost of entry"
+  "quick, satisfying puzzle with simultaneous play so no downtime",
+  "great replayability from varied edict decks and seasons",
+  "works well solo and scales easily to big groups"
  ],
  "criticised": [
-  "Almost entirely solitaire/parallel play with little to no real interaction",
-  "Randomness of shape draws can feel punishing when nothing fits your board",
-  "Can feel repetitive after many plays since the core puzzle loop doesn't change much",
-  "Downtime/anticlimax at the end when others are still filling in their sheets",
-  "Light strategic depth compared to heavier polyomino games"
+  "luck of the shape draw can swing scores",
+  "limited direct player interaction",
+  "some feel it lacks depth for repeated heavy play"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play, with the queen's edicts and Dragul (monster) squares as the only shared pressure"
+  "kind": "mostly parallel play with shared shape reveals",
+  "detail": "Everyone draws the same revealed shape onto their own individual map each turn, so the only shared element is the shape and scoring conditions being revealed, while each player's grid stays completely private. There's essentially no direct player-to-player action beyond racing to fulfill the same public objectives better than others."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "the winner is whoever best matches their limited terrain shapes to the season's random edicts while minimizing monster penalties"
+  "breadth": "Broad",
+  "why": "Scoring is split across four seasonal edict cards plus monster penalties, so a well-rounded map usually wins.",
+  "how_you_win": "You win by shaping your map each season to best satisfy that season's scoring edicts while minimizing monster incursions, ending with the highest total reputation."
  },
  "similar": [
-  "Cartographers Heroes",
+  "Kingdomino",
+  "Take the Lead",
   "Silver & Gold",
-  "Second Chance",
-  "Railroad Ink",
-  "Take It Easy"
+  "Welcome To...",
+  "Railroad Ink"
  ],
- "_fingerprint": "5bde4211e7f6bfc7",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "56b5197fde6b22f3",
  "_name": "Cartographers"
 }

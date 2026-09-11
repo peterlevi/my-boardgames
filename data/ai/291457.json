@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Jaws of the Lion strips away Gloomhaven's map-tile fiddliness by printing scenarios directly in a spiral-bound book, delivering the same tactical hand-management combat (card-based initiative, simultaneous action selection, resource attrition via cards-as-health) in a tighter, faster-to-teach package. Sessions feel like tightly-scripted tactical puzzles where positioning, timing your card retirement, and managing a shrinking hand of actions matter more than raw dice luck.",
+ "summary": "A standalone, easier-entry cooperative dungeon crawler that keeps Gloomhaven's card-driven combat and hand-management tension while trimming setup and rules overhead. You and up to three friends fight through a branching campaign of scenarios, retiring cards for stamina and racing the clock before your hand runs empty.",
  "praised": [
-  "Much easier onboarding than base Gloomhaven, with a genuine guided tutorial",
-  "No more map-tile setup/teardown; scenario books streamline play",
-  "Same satisfying tactical combat and character progression loop",
-  "Strong solo and small-group experience",
-  "Good value/entry point before committing to full Gloomhaven"
+  "much faster, friendlier onramp than base Gloomhaven",
+  "tense hand-management combat with meaningful initiative choices",
+  "strong minis and production quality",
+  "engaging character-specific campaign story"
  ],
  "criticised": [
-  "Fewer scenarios and less long-term content than base Gloomhaven",
-  "Only 4 characters, less build variety",
-  "Still a big table/time commitment per session relative to lighter games",
-  "Legacy elements mean limited replayability once the campaign is done",
-  "Some find combat can become a bit of a numbers-crunching routine over time"
+  "still a real time investment with fiddly setup/teardown per scenario",
+  "scenario difficulty can spike sharply",
+  "limited character roster compared to full Gloomhaven",
+  "quarterbacking risk if one player reads all the rules"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "cooperative tactical coordination, minimal negotiation"
+  "level": "Medium",
+  "kind": "cooperative coordination via simultaneous card initiative",
+  "detail": "Players choose action cards secretly and reveal them together, so combo-ing abilities and managing shared initiative order is the main way characters affect each other, while the monster/map state is fully shared. Each hero still manages a private hand and character sheet independent of the others."
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "Success is defined by completing scenario objectives cooperatively before the party is wiped or runs out of cards, not by points"
+  "why": "Success is measured by completing each scenario's objective before the party is wiped out or runs out of cards, not by a points race.",
+  "how_you_win": "The party wins by clearing a scenario's stated objective, usually defeating specific enemies or reaching a location, while keeping characters from exhausting their hands or losing all their health."
  },
  "similar": [
   "Gloomhaven",
   "Frosthaven",
   "Sleeping Gods",
-  "Aeon's End",
-  "Mage Knight Board Game"
+  "Tainted Grail: The Fall of Avalon",
+  "Marvel Champions: The Card Game"
  ],
- "_fingerprint": "a38d02dab14e523e",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "2a97553f04e4438a",
  "_name": "Gloomhaven: Jaws of the Lion"
 }

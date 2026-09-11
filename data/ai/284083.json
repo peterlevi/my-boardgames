@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "A tightly designed cooperative trick-taking game where each player secretly holds individual card-winning goals for the round, and the team succeeds only if everyone hits theirs, with communication restricted to one card gesture per mission. The 50-mission campaign ramps difficulty steadily, turning ordinary trick-taking into a puzzle about sequencing and deduction under a near-silent table.",
+ "summary": "The Crew is a cooperative trick-taking game where each hand the team must silently agree on a plan to complete specific card-winning tasks, using an extremely limited one-time signal to help. It's tense and puzzle-like, escalating in difficulty across a 50-mission campaign.",
  "praised": [
-  "Brilliant, tense communication mechanic that makes trick-taking feel new",
-  "Escalating campaign structure gives a strong sense of progression and 'one more mission' pull",
-  "Extremely portable and quick to teach relative to its depth",
-  "Cheap price point for the amount of content"
+  "ingenious minimal-communication co-op twist on trick-taking",
+  "escalating campaign structure keeps it fresh",
+  "creates genuine tense deduction without a rulebook of chatter",
+  "quick to teach for trick-taking fans"
  ],
  "criticised": [
-  "Later missions can feel like they require near-mind-reading or a lucky deal, adding perceived luck/frustration",
-  "Once the campaign is finished there's limited replayability of the same missions",
-  "A dominant or overly analytical player can quarterback the team, reducing others' agency",
-  "Some missions have unclear or fiddly rule interactions requiring FAQ lookups"
+  "strict communication limits frustrate players who want to talk more",
+  "a single mistake can doom the whole mission",
+  "less appealing to those who dislike trick-taking fundamentals",
+  "quieter/more analytical players may dominate signal usage"
  ],
  "interaction": {
   "level": "High",
-  "kind": "Constrained communication and joint deduction toward shared/individual goals"
+  "kind": "cooperative trick-taking with restricted communication",
+  "detail": "Every trick affects the whole team's shared mission state, and the entire challenge is inferring teammates' hands from extremely limited signals rather than open talk. There's no individual tableau; the trick pile and mission tasks are fully shared."
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "The team wins or loses as a whole based solely on whether every player completes their assigned card-winning tasks for that mission."
+  "why": "There's no point total; the team either completes all assigned tasks in the mission correctly or fails it.",
+  "how_you_win": "The team wins a mission by ensuring every assigned task card is won by the right player at the right trick, communicating only through one limited token per round."
  },
  "similar": [
   "The Mind",
-  "Sky Team",
-  "Decrypto",
   "Hanabi",
-  "The Crew: Mission Deep Sea"
+  "Sky Team",
+  "Trick of the Rails",
+  "Decrypto"
  ],
- "_fingerprint": "ced20510e0b67697",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "2e41d6c2fb563338",
  "_name": "The Crew: The Quest for Planet Nine"
 }

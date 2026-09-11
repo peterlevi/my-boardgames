@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Playing it feels like a rapid-fire, one-round social deduction puzzle: everyone secretly checks or swaps roles in the dark, then spends a few frantic minutes of accusation and bluffing before a single simultaneous vote decides everything. Daybreak adds new asymmetric roles (like the Alpha Wolf, Village Idiot, and Bombers) that create more chaotic role-swapping and new win conditions, making the logic puzzle messier and the table talk louder than the base game alone.",
+ "summary": "A standalone expansion/companion to One Night Ultimate Werewolf that adds eleven new roles with more elaborate abilities, keeping the same single-night, no-elimination, vote-to-win structure. It can be played alone or merged with the original for bigger, more chaotic groups.",
  "praised": [
-  "Extremely fast setup-to-finish loop, great as a filler or icebreaker",
-  "No player elimination and no moderator needed thanks to the app/companion timer",
-  "New roles add fun asymmetric win conditions and more chaotic bluffing than the base game",
-  "Scales well and works even with players who don't normally like deduction games"
+  "adds welcome variety and new role interactions to keep the format fresh",
+  "still fast and easy to run via the companion app",
+  "combines seamlessly with the base game for larger player counts"
  ],
  "criticised": [
-  "Some Daybreak roles (e.g. Bomber, Village Idiot) can feel swingy or unclear about their exact win condition until you've played a few rounds",
-  "Best experience depends heavily on a loud, talkative group; quiet groups fall flat",
-  "Requires mixing with or owning the base One Night Ultimate Werewolf to get full player counts and role variety",
-  "Very little replayable depth beyond the initial dozen or so plays"
+  "more roles mean more rules overhead for what's meant to be a quick filler",
+  "some new roles can be unbalanced or confusing for newcomers",
+  "same reliance on group bluffing skill as the base game, for better or worse"
  ],
  "interaction": {
   "level": "High",
-  "kind": "open bluffing, accusation, and deduction discussion"
+  "kind": "open accusation, bluffing, and group voting",
+  "detail": "As in the base game, players openly discuss and accuse one another before a simultaneous vote resolves the round, with new roles adding more ways to manipulate or gather information from other players' secret roles. Almost the entire experience is shared, verbal, and interactive rather than solitary."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The single vote at dawn either eliminates a werewolf (villagers win) or doesn't (werewolves win), with a handful of roles overriding this with their own special win conditions"
+  "why": "There's no score; the village-aligned team wins by voting out a werewolf, while the werewolf-aligned team wins by evading the vote.",
+  "how_you_win": "You win as a villager-aligned player by correctly identifying and voting out a werewolf, or as a werewolf-aligned player by escaping detection."
  },
  "similar": [
   "One Night Ultimate Werewolf",
   "One Night Ultimate Vampire",
-  "The Resistance",
   "Secret Hitler",
-  "Mascarade"
+  "The Resistance",
+  "Mafia"
  ],
- "_fingerprint": "10c9c34267cd62d7",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "How to Play"
+ ],
+ "_fingerprint": "b36c53f9ba2d4a12",
  "_name": "One Night Ultimate Werewolf: Daybreak"
 }

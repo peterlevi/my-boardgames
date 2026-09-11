@@ -238,7 +238,16 @@ Contains:
 			
 
 			
-	
+			<videos total="8">
+						<video id="576719" title="Нумограй із двома гравцями від каналу &quot;Ігровий затишок&quot;" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=U-A896UdllQ" username="davose" userid="1472043" postdate="2025-10-13T07:58:21-05:00" />
+						<video id="505753" title="Огляд від Кубасик" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=VpwWoFAbYhk" username="punk_rock" userid="2986072" postdate="2024-07-23T16:45:42-05:00" />
+						<video id="448867" title="Нумограй від WoodCatGames" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=F3uD2UoO0C8" username="punk_rock" userid="2986072" postdate="2023-07-29T05:28:03-05:00" />
+						<video id="441758" title="Огляд від Beaver Games" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=mi9vnM_xZLc" username="punk_rock" userid="2986072" postdate="2023-06-13T15:21:18-05:00" />
+						<video id="441756" title="Огляд від TheDrotUA" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=w7145BSSmxs" username="punk_rock" userid="2986072" postdate="2023-06-13T15:19:30-05:00" />
+						<video id="441017" title="Правила настільної гри Хроніки Мегаполіса (Capital Lux 2)" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=MtPn-rC_KQ0" username="Nekon" userid="2805581" postdate="2023-06-08T10:31:47-05:00" />
+						<video id="415811" title="Хроніки Мегаполіса летсплей" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=pg2bfUfaAFA" username="hobbetalkua" userid="2888536" postdate="2022-12-29T06:46:56-06:00" />
+						<video id="314370" title="Ludochrono - Capital Lux 2 Pocket" category="review" language="French" link="http://www.youtube.com/watch?v=k9IblFVkllo" username="loutre_on_fire" userid="1037076" postdate="2021-03-22T08:41:38-05:00" />
+					</videos>
 
 	
 
@@ -252,15 +261,15 @@ Contains:
 			<bayesaverage value="5.75421" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5452" bayesaverage="5.75421" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5454" bayesaverage="5.75421" />
 												</ranks>
 
 			<stddev value="1.21396" />
 			<median value="0" />
 			<owned value="650" />
 			<trading value="18" />
-			<wanting value="44" />
-			<wishing value="145" />
+			<wanting value="45" />
+			<wishing value="146" />
 			<numcomments value="73" />
 			<numweights value="8" />
 			<averageweight value="2.125" />

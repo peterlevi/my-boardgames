@@ -113,6 +113,8 @@ def compact(games, tag_idx, inline=True):
             "de": (g["description"] or "")[:900],
             "mn": g["minplayers"], "mx": g["maxplayers"],
             "ai": trim_ai(g.get("ai")),
+            "img": g.get("image"), "vid": g.get("videos") or [],
+            "gal": load_gallery(g["id"]),
             "ix": g["interaction"], "exp": 1 if g["is_expansion"] else 0,
             "of": g["expands"], "t": playtime(g),
             "top": max((v[0] for v in poll.values()), default=0),
@@ -215,6 +217,18 @@ def bar(pct):
 # Opinion fields from the local database. A low-confidence entry means the
 # model did not recognise the game, so its opinion fields are dropped rather
 # than shown — the report never presents a guess as a finding.
+def load_gallery(gid):
+    """Gallery image URLs cached by scripts/gallery.py. Only URLs travel in the
+    page; the images themselves load from BGG when a row is expanded."""
+    f = ROOT / "data" / "gallery" / f"{gid}.json"
+    if not f.exists():
+        return []
+    try:
+        return json.loads(f.read_text())[:5]
+    except Exception:  # noqa: BLE001
+        return []
+
+
 def trim_ai(ai):
     if not ai:
         return None
@@ -223,7 +237,10 @@ def trim_ai(ai):
            "br": (ai.get("scoring") or {}).get("breadth"),
            "why": (ai.get("scoring") or {}).get("why"),
            "ixl": (ai.get("interaction") or {}).get("level"),
-           "ixk": (ai.get("interaction") or {}).get("kind")}
+           "ixk": (ai.get("interaction") or {}).get("kind"),
+           "ixd": (ai.get("interaction") or {}).get("detail"),
+           "howwin": (ai.get("scoring") or {}).get("how_you_win"),
+           "teach": ai.get("teachers") or []}
     if conf != "low":
         out["sm"] = ai.get("summary")
         out["up"] = ai.get("praised") or []
@@ -396,8 +413,6 @@ def rows_html(data, a):
             f'<td class="num">{esc(g["t"])}</td>'
             f'<td class="num hide-sm">{weight}</td>'
             f'<td class="hide-sm">{ix_html}</td>'
-            f'<td class="hide-sm">{win_html}</td>'
-            f'<td class="hide-sm">{br_html}</td>'
             f'<td class="hide-sm designer">{designer}</td>'
             f'<td class="num hide-sm j-verdict">{v}</td>'
             f'<td class="num bar hide-sm wide-only j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'

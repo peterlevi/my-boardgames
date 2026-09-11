@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "A dense, tightly-optimized worker-placement game where your workers must first study disciplines before they can perform stronger actions, layering a skill-development puzzle on top of pick-up-and-deliver ship movement around the Galápagos. Turns feel purposeful and interlocking, but the sheer number of subsystems (contracts, species collection, exploration cards, boat routes, worker training) makes early plays heavy and slow.",
+ "summary": "Darwin's Journey has players sending expedition teams around the Galapagos on a worker-placement/pick-up-and-deliver engine, fulfilling contracts, collecting species, and managing a ship route while a tense action-claiming mechanism forces tough ordering decisions. It's a rich, modern heavy euro with a strong sense of forward momentum and satisfying engine-building.",
  "praised": [
-  "Innovative worker-progression/skill-training system layered onto worker placement",
-  "Gorgeous, thematic production (islands, ship miniature, wooden bits)",
-  "Deep, satisfying engine-building and route optimization",
-  "Strong solo mode",
-  "Meaningful long-term planning across contracts and exploration"
+  "Excellent turn-order/action-claiming tension",
+  "Strong sense of progression and multiple viable strategies",
+  "Beautiful, thematic production",
+  "Tight, well-balanced solo mode"
  ],
  "criticised": [
-  "High rules overhead and iconography, steep learning curve",
-  "Long playtime, especially first few games",
-  "Can feel dry/cerebral with limited table talk",
-  "Similar 'multiplayer solitaire' feel to Luciani's other worker-placement designs (Barrage, On Mars)",
-  "Analysis paralysis due to many simultaneous optimization paths"
+  "Heavy rules overhead and long teach",
+  "Analysis paralysis potential with many simultaneous tracks",
+  "Some find the theme thin dressing over mechanisms",
+  "Long playtime for a full 4-player game"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker-placement space-blocking (claim action), otherwise mostly parallel play"
+  "level": "Medium",
+  "kind": "action/worker-spot claiming and contract competition",
+  "detail": "Players compete for limited worker-placement spots and race to complete contracts before others, with claimed actions blocking rivals from the same spot that round. Most of the board (map, action spaces) is shared, while each player also manages their own ship, contracts, and personal tableau."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from fulfilled contracts, species/set collection, exploration progress, and endgame bonuses, so the winner is usually whoever balanced several scoring engines rather than maxing one."
+  "why": "Points accrue from completed contracts, species collection, notebook advancement, and end-game bonuses, so overall efficiency across systems decides the winner",
+  "how_you_win": "Build an efficient engine that completes high-value contracts and advances your research track faster than opponents, converting actions into points across several parallel tracks."
  },
  "similar": [
+  "Lorenzo il Magnifico",
+  "Tzolk'in",
+  "The Gallerist",
   "Barrage",
-  "On Mars",
-  "Anachrony",
-  "Praga Caput Regni",
-  "Tzolk'in: The Mayan Calendar"
+  "On Mars"
  ],
- "_fingerprint": "a374fc17c25e7e4e",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "No Pun Included"
+ ],
+ "_fingerprint": "353f54ceaec4261f",
  "_name": "Darwin's Journey"
 }

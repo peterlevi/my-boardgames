@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Players run an art gallery, moving a single meeple around a Lisbon-style board to hire assistants, acquire and promote artists, host exhibitions, and sell paintings for profit and reputation. It's a dense, cerebral engine-builder with tight worker/time management and satisfying multi-step combos, marked by Lacerda's signature complexity and thematic depth.",
+ "summary": "A dense Vital Lacerda worker-placement game where you run an art gallery: acquiring artists and artwork, hosting exhibitions, managing an auction house, and building your reputation to draw wealthy visitors. It's a long, intricate puzzle of interlocking systems where every action ripples through several tracks at once.",
  "praised": [
-  "rich, thematic engine with a real sense of running a business",
-  "clever action-selection and movement system (single meeple, action cards)",
-  "excellent solo mode",
-  "gorgeous, thoughtful production and iconography once learned"
+  "remarkable thematic integration of mechanisms with the art-dealing theme",
+  "deep, satisfying engine-building puzzle",
+  "high production values and clever board design",
+  "strong solo mode"
  ],
  "criticised": [
-  "very steep learning curve and rulebook density",
-  "long playtime and heavy analysis paralysis",
-  "fiddly bookkeeping (loans, exhibitions, contracts)",
-  "can feel isolating/solitaire-ish with limited direct interaction"
+  "very long playtime and steep learning curve",
+  "heavy rules overhead and fiddly bookkeeping",
+  "downtime between turns at higher player counts",
+  "can feel more like solving a puzzle than competing with people"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "competition for shared spaces/artists, mostly indirect"
+  "level": "Medium",
+  "kind": "worker placement blocking and competitive auctions",
+  "detail": "Players place workers on a shared board of galleries, artists, and transport routes, so taking a spot or artist denies it to opponents, and the auction mechanism pits players directly against each other's bids. Each player still runs their own gallery and finances mostly independently between these contested moments."
  },
- "win_criteria": "Most money",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "final wealth from art sales, reputation bonuses, and efficient use of contracts/loans determines the winner"
+  "breadth": "Broad",
+  "why": "Final score combines money, reputation track position, exhibition and contract bonuses, so building the strongest overall economy matters more than any single track.",
+  "how_you_win": "You cultivate artists, sell and exhibit their art profitably, and climb the reputation track faster than your rivals, converting a well-run gallery into the highest end-game score."
  },
  "similar": [
-  "Lisboa",
-  "Vinhos",
   "On Mars",
-  "Kanban EV",
-  "Anachrony"
+  "Vinhos Deluxe Edition",
+  "Kanban: Automotive Revolution",
+  "Weather Machine",
+  "Lisboa"
  ],
- "_fingerprint": "ca65130c2175d657",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "9db02d5ee52672e0",
  "_name": "The Gallerist"
 }

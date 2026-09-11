@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "Players manage a network of workers moving along a branching space-gate structure to claim actions, then race to build efficient settlements on modular exoplanet boards. It plays as a tight worker-placement/tile-laying engine-builder where positioning on the gate track matters as much as the actions themselves.",
+ "confidence": "medium",
+ "summary": "Space Gate Odyssey is a mid-weight sci-fi euro where players route settlers through a network of space gates and worker-placement stations to colonize exoplanets, balancing action efficiency against the routes rivals are also trying to build. It's more about optimizing your own network and timing than direct confrontation.",
  "praised": [
-  "The space-gate movement mechanism is inventive and central to strategy, not just a theme skin",
-  "Strong, well-integrated theme with modular double-sided planet boards for replayability",
-  "Satisfying puzzle of route-building and timing when your worker \"jumps\" to a planet",
-  "Good production quality and component design"
+  "distinctive gate/flow network-building puzzle not seen in many other euros",
+  "solid production and a satisfying sense of expansion",
+  "decent depth for its mid-weight footprint"
  ],
  "criticised": [
-  "Rules overhead and setup are fiddly for the depth of play",
-  "Can feel a bit dry/mechanical with limited narrative tension between turns",
-  "Some objective/scoring cards are stronger than others, creating imbalance",
-  "Downtime and AP-prone decision points in higher player counts"
+  "theme feels pasted onto a fairly abstract engine",
+  "rules overhead is a bit much for how dry the play experience is",
+  "worker placement spots can create some downtime"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "indirect blocking via shared gate positions and planet spot competition"
+  "kind": "shared worker placement and race for network slots",
+  "detail": "Players compete for the same limited worker-placement actions and gate connections, so timing and blocking matter, but most of your engine (routes, settlers, resources) lives on your own board. The shared exoplanet map is where majority and space races actually collide."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from multiple sources: settlement placement bonuses, completed objectives, resource/technology tracks, and end-game scoring cards, so the winner is usually whoever balances several engines rather than maxing one."
+  "why": "Points come from colonization progress, technology, objectives, and network efficiency, so several strategies can compete.",
+  "how_you_win": "You win by building the most efficient settler network across the space gates and converting that into colonization and objective points faster than your rivals."
  },
  "similar": [
-  "Terraforming Mars",
-  "Praga Caput Regni",
-  "Barrage",
-  "The Gallerist",
-  "Trickerion: Legends of Illusion"
+  "Yokohama",
+  "Trickerion",
+  "Gizmos",
+  "Teotihuacan: City of Gods",
+  "Kanban: Driver's Edition"
  ],
- "_fingerprint": "55bda485f7f7dc57",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "BoardGameCo"
+ ],
+ "_fingerprint": "0e6a8537228abd56",
  "_name": "Space Gate Odyssey"
 }

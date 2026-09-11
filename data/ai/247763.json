@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "A tight, engine-building worker-placement game where every turn is a puzzle of matching colored cards to board slots to unlock both an action and a card bonus, while managing a constant tension between borrowing resources now and paying interest later. It rewards efficient long-term planning over reactive play, with tableau/network building (domes, tunnels, production buildings) driving a slow but satisfying snowball toward the endgame scoring.",
+ "summary": "Underwater Cities is a tight Vladimír Suchý card-placement engine builder where you slot cards into colored action tracks to gain resources, build tunnels and domes, and unlock research, all while racing the clock across three eras. Every card you take also becomes part of a growing network that scores at the end, so early choices about what to build and where compound over the whole game.",
  "praised": [
-  "Deep, satisfying puzzle of optimizing card-slot combos and action timing",
-  "Elegant loan/interest system that adds real risk-reward tension without feeling punishing",
-  "High replayability from the large pool of unique special cards",
-  "Strong, genuinely solo-friendly mode",
-  "Smooth turn order/initiative track mechanic that keeps the game moving"
+  "interlocking engine-building systems",
+  "satisfying long-term planning",
+  "low direct luck once you understand the systems",
+  "high replayability from varied card pool"
  ],
  "criticised": [
-  "Significant analysis paralysis, especially in the back half of the game",
-  "Player interaction is thin, closer to a multiplayer solitaire experience",
-  "Card draw luck can meaningfully affect available strategies each round",
-  "Steep initial learning curve and icon/rules overhead before it clicks"
+  "steep learning curve for new euro players",
+  "harsh negative scoring for undeveloped tunnel slots",
+  "can provoke analysis paralysis",
+  "unforgiving of early mistakes"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light competition over shared card/action slots"
+  "level": "Medium",
+  "kind": "competition for shared action slots and cards",
+  "detail": "Players compete for a limited number of colored slots along the shared card row and for special action spaces on the main board, so timing and denial matter, but each player otherwise develops their own underwater city network independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from city/tunnel/dome networks, special cards, end-game bonus tiles, and efficient resource/loan management, so the winner is whoever builds the most efficient overall engine rather than maxing one track"
+  "why": "Points come from built structures, completed contracts, certificates, and end-game bonuses, so the winner is whoever built the most efficient overall network.",
+  "how_you_win": "You out-build and out-tech your opponents across three eras, converting resources into cities, tunnels, and completed contracts that add up to the highest final score."
  },
  "similar": [
+  "Pipeline",
   "Barrage",
+  "Teotihuacan: City of Gods",
   "Praga Caput Regni",
-  "Pulsar 2849",
-  "Great Western Trail",
-  "Teotihuacan: City of Gods"
+  "On Mars"
  ],
- "_fingerprint": "0571cd9be72444fd",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "No Pun Included"
+ ],
+ "_fingerprint": "246f6d31b6ebf584",
  "_name": "Underwater Cities"
 }

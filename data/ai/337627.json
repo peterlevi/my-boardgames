@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Voidfall is a sprawling, rules-dense 4X-style civilization game where each faction has a genuinely unique tech tree and card set, so games unfold very differently depending on who you're playing; turns involve careful resource conversion, area control on a hex map, and combat, all while racing to complete scoring objectives before an escalating Voidborn threat (or each other) closes in. It plays as either fully competitive or with a cooperative/semi-cooperative mode against the game itself, and a full session is a multi-hour commitment best suited to groups who enjoy heavy, fiddly strategy games.",
+ "summary": "Voidfall plays like a tense, systems-heavy 4X in a box, where each player runs a sprawling tech tree and command-card engine while racing against a scripted Voidborn threat that escalates over the game. Turns are dense with choices about combat, expansion, and tech unlocks, and a single session can run three to four hours even with experienced players.",
  "praised": [
-  "Deep faction asymmetry — each side has its own tech tree, cards, and playstyle",
-  "High production value and thematic component design (Chip Theory Games' signature chips/minis)",
-  "Satisfying long-term engine building and tech progression",
-  "Flexible modes (competitive vs. cooperative/solo) add replayability"
+  "deeply interconnected systems and tech tree",
+  "strong table presence and production",
+  "meaningful asymmetric factions",
+  "the automated Voidborn threat creates real tension without needing a human antagonist"
  ],
  "criticised": [
-  "Extremely steep learning curve and long, complicated rulebook",
-  "Very long playtime, especially for a first game",
-  "High price point and component overhead relative to what some feel is delivered",
-  "Analysis paralysis risk given the number of simultaneous systems to track"
+  "very long teach and setup",
+  "extremely heavy rules overhead and analysis paralysis",
+  "high cost and component overload",
+  "can feel more like a solitaire optimization puzzle on each player's turn"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "area control and combat mixed with mostly independent tech/economy engine building"
+  "level": "High",
+  "kind": "area control and racing against a shared AI threat",
+  "detail": "Players compete for the same systems and resources on a shared galactic map and can attack each other's fleets, while all also react to a common scripted Voidborn menace that pressures everyone; each player still manages a large personal tech tree and command-card tableau."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from completing objectives, military conquest, tech advancement, and faction-specific goals, so the winner is usually whoever balances multiple scoring paths best rather than maximizing one."
+  "why": "Points accumulate from tech advancement, combat victories, quest completion and faction objectives, so the winner is whoever built the most efficient overall engine rather than excelling at one path.",
+  "how_you_win": "You out-tech and out-expand your rivals while contributing enough to the fight against the Voidborn, ending with the highest combined score."
  },
  "similar": [
-  "Gaia Project",
   "Eclipse: Second Dawn for the Galaxy",
-  "Tapestry",
-  "Anachrony",
-  "Scythe"
+  "Gaia Project",
+  "Twilight Imperium: Fourth Edition",
+  "Great Western Trail",
+  "Anachrony"
  ],
- "_fingerprint": "4c8c18da69038fee",
+ "teachers": [
+  "Heavy Cardboard",
+  "Watch It Played",
+  "No Pun Included"
+ ],
+ "_fingerprint": "dc00557c0d5313b6",
  "_name": "Voidfall"
 }

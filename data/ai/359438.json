@@ -1,34 +1,41 @@
 {
  "confidence": "medium",
- "summary": "Skymines is a mid-heavy economic game where you program a hand of cards to activate one of four asymmetric mining companies, investing in their success and racing to plant outposts and grab helium-3 before your rivals lock you out. The tension comes from never fully controlling any company yourself, so timing your investments around what other players will trigger is the core puzzle.",
+ "summary": "Skymines is a mid-heavy economic game co-designed by Alexander Pfister about mining lunar and asteroid resources, using a card-programming system for worker placement and investing resources into stock-like companies. It plays like a fusion of an engine-builder and a stock market game, rewarding players who plan several turns of action-queue moves ahead.",
  "praised": [
-  "Clever card-programming/hand-management system that feels fresh compared to typical worker placement",
-  "High replayability since company powers and combinations change every game",
-  "Deep, satisfying player interaction despite no direct conflict, since everyone invests in the same shared companies",
-  "Strong production values and thematic sci-fi mining presentation"
+  "clever card-programming action selection",
+  "interesting investment/stock-holding layer",
+  "solid solo mode",
+  "good production quality typical of Pfister designs"
  ],
  "criticised": [
-  "Steep rules overhead and fiddly bookkeeping (shares, outposts, research tracks) for a first few plays",
-  "Can suffer from analysis paralysis given the number of viable investment lines",
-  "Some find the ending anticlimactic relative to the mid-game tension",
-  "Theme feels somewhat abstract/pasted-on despite the sci-fi dressing"
+  "fiddly bookkeeping with resources and stocks",
+  "can feel overly complex for the payoff",
+  "less table interaction than its economic theme suggests",
+  "somewhat overshadowed by Pfister's more popular titles"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "indirect competition through shared company investment and area majority for outposts"
+  "level": "Low",
+  "kind": "mostly parallel play with worker-placement and market competition",
+  "detail": "Players mainly optimize their own card-queue and resource engine, occasionally competing for limited worker-placement spots or investment opportunities in shared companies. There is little to no direct conflict between players."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from a mix of company share payouts, outpost area majority, research progress, and helium-3 collection, so the winner is usually whoever balances several of these engines best."
+  "why": "CrypCoin earnings come from company investments, resource sales, and research bonuses accumulated across seven rounds.",
+  "how_you_win": "Build the most efficient resource-extraction and investment engine to finish the seven rounds with the most CrypCoin."
  },
  "similar": [
   "Great Western Trail",
   "Maracaibo",
-  "The Voyages of Marco Polo",
-  "Underwater Cities",
-  "Teotihuacan: City of Gods"
+  "Merv: The Heart of the Silk Road",
+  "On Mars",
+  "Salton Sea"
  ],
- "_fingerprint": "84d2e2b4e1104115",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "240a0ba2655b972e",
  "_name": "Skymines"
 }

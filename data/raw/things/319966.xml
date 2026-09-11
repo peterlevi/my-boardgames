@@ -32,36 +32,36 @@ The King is Dead: Second Edition refreshes the accessible yet strikingly deep ga
 										      	               				<yearpublished value="2020" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="232">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="233">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="21" />
-					<result value="Not Recommended" numvotes="119" />
+					<result value="Not Recommended" numvotes="120" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="51" />
 					<result value="Recommended" numvotes="114" />
-					<result value="Not Recommended" numvotes="25" />
+					<result value="Not Recommended" numvotes="26" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="148" />
+					<result value="Best" numvotes="149" />
 					<result value="Recommended" numvotes="55" />
 					<result value="Not Recommended" numvotes="7" />
 				</results>					
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="30" />
-					<result value="Recommended" numvotes="92" />
+					<result value="Recommended" numvotes="93" />
 					<result value="Not Recommended" numvotes="29" />
 				</results>					
 			
 		<results numplayers="4+">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="0" />
-					<result value="Not Recommended" numvotes="113" />
+					<result value="Not Recommended" numvotes="114" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -374,6 +374,14 @@ The King is Dead: Second Edition refreshes the accessible yet strikingly deep ga
 
 			
 		
+					<link type="boardgamepublisher" id="50209" value="Playte" />
+		
+									
+				
+		 			
+
+			
+		
 					<link type="boardgamepublisher" id="44181" value="Studio Supernova" />
 		
 									
@@ -388,7 +396,23 @@ The King is Dead: Second Edition refreshes the accessible yet strikingly deep ga
 			
 
 			
-	
+			<videos total="80">
+						<video id="619977" title="The King is Dead board game review" category="review" language="English" link="http://www.youtube.com/watch?v=s8J4B-Ur4Q8" username="Pauls_Games_Brushes" userid="863361" postdate="2026-07-11T06:28:42-05:00" />
+						<video id="563977" title="TCbH's Top 10 Minimalist Board Games of All Time" category="review" language="English" link="http://www.youtube.com/watch?v=ytSzN5jVuJM" username="jeddy lee" userid="460040" postdate="2025-07-22T12:48:23-05:00" />
+						<video id="532658" title="HOW TO WIN The King is Dead: Second Edition – 2 Minute Review, Strategy Tips &amp; Comedy - I Teach Her She Wins" category="review" language="English" link="http://www.youtube.com/watch?v=LtIVvX8FOzw" username="elbirbo" userid="914131" postdate="2025-01-14T05:05:27-06:00" />
+						<video id="531101" title="The King is Dead (Second Edition) | Inside #663" category="unboxing" language="English" link="http://www.youtube.com/watch?v=olZ8IUyr9XY" username="table_talks" userid="3249213" postdate="2025-01-03T05:36:13-06:00" />
+						<video id="510655" title="[La Partie] LE ROI EST MORT | 2 joueurs | Origames | VOD Live" category="session" language="French" link="http://www.youtube.com/watch?v=K9LHGvMY40U" username="AlecsCVG" userid="2120784" postdate="2024-08-24T06:18:29-05:00" />
+						<video id="484215" title="Kdo z nás se stane vládcem Anglie? | The King is Dead" category="session" language="Czech" link="http://www.youtube.com/watch?v=0d609LlGtLQ" username="PepaSed" userid="1956977" postdate="2024-03-04T08:49:15-06:00" />
+						<video id="466722" title="[Ru] ЗНАКОМСТВО С УЧАСТНИКАМИ | The King is Dead | ШОУ Не последний настольщик" category="session" language="Russian" link="http://www.youtube.com/watch?v=0O_L2G4ktMo" username="BGWithUs" userid="2958162" postdate="2023-11-16T10:34:11-06:00" />
+						<video id="452096" title="The King is Dead Review " category="review" language="English" link="http://www.youtube.com/watch?v=80Mdnm7eLQQ" username="Frank_N_Dice" userid="2716649" postdate="2023-08-16T15:33:39-05:00" />
+						<video id="416810" title="The King Is Dead Board Game I Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=SSlRBtMHtkY" username="fenirob" userid="478021" postdate="2023-01-04T22:02:33-06:00" />
+						<video id="408369" title="Board Game Art || The King Is Dead " category="other" language="English" link="http://www.youtube.com/watch?v=Wow23MEf_L0" username="fenirob" userid="478021" postdate="2022-11-08T15:52:06-06:00" />
+						<video id="401918" title="Hrad Hier:  Král je mrtev - Prvé dojmy" category="review" language="Slovak" link="http://www.youtube.com/watch?v=QtOXGTu78E0" username="dufusok" userid="909953" postdate="2022-09-30T02:59:36-05:00" />
+						<video id="401262" title="The King is Dead Second Edition Review (Sneak Attack!) #shorts" category="review" language="English" link="http://www.youtube.com/watch?v=UWnABHVW7wg" username="rob2kewl" userid="536700" postdate="2022-09-26T12:15:27-05:00" />
+						<video id="401242" title="Board Game 101 (EP377) Le Roi est Mort - Règles et critique" category="instructional" language="French" link="http://www.youtube.com/watch?v=l-n-8joFFgg" username="Nashgoth" userid="1123036" postdate="2022-09-26T09:45:19-05:00" />
+						<video id="391031" title="UNBOXING in 2 minutes" category="unboxing" language="English" link="http://www.youtube.com/watch?v=QAJEIG6kfJo" username="1a2a3a4" userid="668856" postdate="2022-07-21T14:05:37-05:00" />
+						<video id="391030" title="Videonávod od POD VÍKEM" category="instructional" language="Czech" link="http://www.youtube.com/watch?v=R5nR6aziIeQ" username="1a2a3a4" userid="668856" postdate="2022-07-21T14:03:58-05:00" />
+					</videos>
 
 	
 
@@ -397,21 +421,21 @@ The King is Dead: Second Edition refreshes the accessible yet strikingly deep ga
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="8863" />
-			<average value="7.58383" />
-			<bayesaverage value="7.11985" />
+			<usersrated value="8868" />
+			<average value="7.58452" />
+			<bayesaverage value="7.12018" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="375" bayesaverage="7.11985" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="254" bayesaverage="7.21275" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="374" bayesaverage="7.12018" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="254" bayesaverage="7.2131" />
 												</ranks>
 
-			<stddev value="1.19574" />
+			<stddev value="1.19605" />
 			<median value="0" />
-			<owned value="13354" />
-			<trading value="226" />
+			<owned value="13360" />
+			<trading value="227" />
 			<wanting value="378" />
-			<wishing value="3236" />
+			<wishing value="3241" />
 			<numcomments value="1468" />
 			<numweights value="255" />
 			<averageweight value="2.1686" />

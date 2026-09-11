@@ -50,28 +50,28 @@ When a player reaches one of the 3 finishing spaces, he moves to El Dorado and t
 										      	               				<yearpublished value="2017" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="563">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="565">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="13" />
-					<result value="Not Recommended" numvotes="327" />
+					<result value="Not Recommended" numvotes="328" />
 				</results>					
 			
 		<results numplayers="2">		
-					<result value="Best" numvotes="261" />
-					<result value="Recommended" numvotes="208" />
+					<result value="Best" numvotes="262" />
+					<result value="Recommended" numvotes="209" />
 					<result value="Not Recommended" numvotes="23" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="174" />
-					<result value="Recommended" numvotes="280" />
+					<result value="Best" numvotes="175" />
+					<result value="Recommended" numvotes="281" />
 					<result value="Not Recommended" numvotes="14" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="354" />
+					<result value="Best" numvotes="356" />
 					<result value="Recommended" numvotes="118" />
 					<result value="Not Recommended" numvotes="15" />
 				</results>					
@@ -79,7 +79,7 @@ When a player reaches one of the 3 finishing spaces, he moves to El Dorado and t
 		<results numplayers="4+">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="7" />
-					<result value="Not Recommended" numvotes="274" />
+					<result value="Not Recommended" numvotes="275" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -582,7 +582,23 @@ When a player reaches one of the 3 finishing spaces, he moves to El Dorado and t
 			
 
 			
-	
+			<videos total="196">
+						<video id="607157" title="The Quest for El Dorado - 5 Rules People Often Get Wrong" category="instructional" language="English" link="http://www.youtube.com/watch?v=EydpFFRmSmM" username="BoardGameBananas" userid="4250303" postdate="2026-04-14T05:01:52-05:00" />
+						<video id="603937" title="У Пошуках Ельдорадо ДУМКА про гру" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=Yhl-8fiag00" username="kerl24" userid="2923135" postdate="2026-03-23T14:21:27-05:00" />
+						<video id="600428" title="Knizia in Five Minutes. Episode 23 Quest For El Dorado" category="review" language="English" link="http://www.youtube.com/watch?v=DSosRGnOwjU" username="dougadamsau" userid="3223" postdate="2026-03-01T14:56:34-06:00" />
+						<video id="589470" title="Wettlauf nach El Dorado Regeln Anleitung Regelvideo Nominiert Kennerspiel des jahres 2017" category="instructional" language="German" link="http://www.youtube.com/watch?v=0L_ALWkDEpE" username="Brettspiel Guru" userid="1959498" postdate="2025-12-24T02:34:17-06:00" />
+						<video id="586414" title="Hľadanie Eldoráda - videopredstavenie hry" category="other" language="Slovak" link="http://www.youtube.com/watch?v=bLFRHK3sEig" username="Jutrinem" userid="4279911" postdate="2025-12-05T17:42:58-06:00" />
+						<video id="585375" title="The Quest For Eldorado Board Game | Unboxing (No Talking)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=yV4vbMq7J0k" username="fenirob" userid="478021" postdate="2025-11-29T11:01:45-06:00" />
+						<video id="583240" title="The Quest For El Dorado 2 Player Episode 5 Finale" category="session" language="English" link="http://www.youtube.com/watch?v=Icz1XG9GKtE" username="PaulDarcy" userid="65714" postdate="2025-11-17T04:17:15-06:00" />
+						<video id="583102" title="The Quest For El Dorado 2 Player Episode 4" category="session" language="English" link="http://www.youtube.com/watch?v=mA49Kkj3uqA" username="PaulDarcy" userid="65714" postdate="2025-11-16T04:04:52-06:00" />
+						<video id="582932" title="The Quest For El Dorado 2 Player Episode 3" category="session" language="English" link="http://www.youtube.com/watch?v=_eH_edrIbPw" username="PaulDarcy" userid="65714" postdate="2025-11-15T04:27:28-06:00" />
+						<video id="582795" title="The Quest For El Dorado 2 Player Episode 2" category="session" language="English" link="http://www.youtube.com/watch?v=KBACrq9qXHw" username="PaulDarcy" userid="65714" postdate="2025-11-14T04:49:42-06:00" />
+						<video id="582644" title="The Quest For El Dorado 2 Player Episode 1" category="session" language="English" link="http://www.youtube.com/watch?v=DMmb5lU7EAM" username="PaulDarcy" userid="65714" postdate="2025-11-13T04:44:24-06:00" />
+						<video id="572231" title="Quest for El Dorado - Original vs Golden Temples" category="review" language="English" link="http://www.youtube.com/watch?v=WzZ6_-_Z55Y" username="BoardGameBananas" userid="4250303" postdate="2025-09-16T06:18:52-05:00" />
+						<video id="571747" title="The Quest for El Dorado - Corrida no meio do mato! | Regras e Gameplay | Tirando a Poeira" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=mjTxPlkKHcI" username="TORUGO" userid="1169932" postdate="2025-09-12T18:07:46-05:00" />
+						<video id="558168" title="Quest for El Dorado - Review - Best deck-building game?" category="review" language="English" link="http://www.youtube.com/watch?v=TMOQv0JcacI" username="BoardGameBananas" userid="4250303" postdate="2025-06-11T03:07:49-05:00" />
+						<video id="556419" title="The Quest for El Dorado: Sencillo, Divertido y Súper Rejugable" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=spyPmVW1yaw" username="eldoclogan" userid="265577" postdate="2025-05-29T09:50:30-05:00" />
+					</videos>
 
 	
 
@@ -591,22 +607,22 @@ When a player reaches one of the 3 finishing spaces, he moves to El Dorado and t
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="33631" />
-			<average value="7.72077" />
-			<bayesaverage value="7.54163" />
+			<usersrated value="33645" />
+			<average value="7.72084" />
+			<bayesaverage value="7.54159" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="120" bayesaverage="7.54163" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="18" bayesaverage="7.58201" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="120" bayesaverage="7.54159" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="18" bayesaverage="7.58195" />
 												</ranks>
 
-			<stddev value="1.10293" />
+			<stddev value="1.10301" />
 			<median value="0" />
-			<owned value="55283" />
-			<trading value="463" />
-			<wanting value="1053" />
-			<wishing value="9646" />
-			<numcomments value="5125" />
+			<owned value="55309" />
+			<trading value="465" />
+			<wanting value="1052" />
+			<wishing value="9655" />
+			<numcomments value="5126" />
 			<numweights value="861" />
 			<averageweight value="1.9431" />
 			</ratings>

@@ -1040,7 +1040,23 @@ Additionally, players must acquire the raw materials (coal, oil, garbage, and ur
 			
 
 			
-	
+			<videos total="192">
+						<video id="629053" title="Alta tensión reenergizado - Tutorial " category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=cCbYXPJbaR8" username="ryoga121" userid="564225" postdate="2026-09-09T06:18:31-05:00" />
+						<video id="579564" title="HAUTE TENSION - Comment jouer + critique" category="instructional" language="French" link="http://www.youtube.com/watch?v=YoL93oISp_M" username="Nashgoth" userid="1123036" postdate="2025-10-29T07:38:47-05:00" />
+						<video id="575654" title="Unboxing and Rules skim through Power Grid Recharged with N. Europe / UK expansion " category="unboxing" language="English" link="http://www.youtube.com/watch?v=nKmAYTELEYg" username="thatboardgamelife" userid="4208912" postdate="2025-10-07T00:10:37-05:00" />
+						<video id="533937" title="Power Grid: 2025 BoardGameGeek Hall of Fame Inductee" category="other" language="English" link="http://www.youtube.com/watch?v=W0XGaMgkShw" username="boardgamegeektv" userid="473702" postdate="2025-01-22T08:00:44-06:00" />
+						<video id="528492" title="Power Grid Ranked In 18 Seconds" category="review" language="English" link="http://www.youtube.com/watch?v=WSl1IPH0XcM" username="Bryle" userid="1233729" postdate="2024-12-12T12:42:45-06:00" />
+						<video id="522343" title="The Boardgame Mechanics Review Power Grid" category="review" language="English" link="http://www.youtube.com/watch?v=Fs571dFlLt0" username="BoardgameMechanics" userid="1339218" postdate="2024-11-02T08:27:57-05:00" />
+						<video id="522201" title="Power Grid Outpost Review   Is it Better Than the Original?" category="review" language="English" link="http://www.youtube.com/watch?v=bt-ytJzLr0U" username="dkingnu" userid="32736" postdate="2024-11-01T11:21:35-05:00" />
+						<video id="501742" title="Off the Shelf: Power Grid" category="review" language="English" link="http://www.youtube.com/watch?v=YwW1ZUGpCtY" username="yrnotyrkhakis" userid="429344" postdate="2024-06-26T09:01:13-05:00" />
+						<video id="498836" title="Spielvorstellung und Übersicht - Funkenschlag" category="instructional" language="German" link="http://www.youtube.com/watch?v=F6VihAvrD_E" username="hiveworld" userid="1523235" postdate="2024-06-06T11:40:15-05:00" />
+						<video id="495830" title="Power Grid Review" category="review" language="English" link="http://www.youtube.com/watch?v=LqA_j-KFCcM" username="Eezore" userid="3714468" postdate="2024-05-17T14:27:23-05:00" />
+						<video id="482974" title="How to play and setup Power Grid" category="instructional" language="English" link="http://www.youtube.com/watch?v=WGRbz3DM4vU" username="Eezore" userid="3714468" postdate="2024-02-24T16:24:50-06:00" />
+						<video id="482118" title="Power Grid - Great Game Debate - Review" category="review" language="English" link="http://www.youtube.com/watch?v=ckKKLFrujxE" username="Oasis" userid="406409" postdate="2024-02-19T07:26:03-06:00" />
+						<video id="480819" title="Ep 36 Games of Industry " category="other" language="English" link="http://www.youtube.com/watch?v=RK3uxnRSIeE" username="Oasis" userid="406409" postdate="2024-02-11T07:34:25-06:00" />
+						<video id="476589" title="Power Grid - strategy blitz" category="instructional" language="English" link="http://www.youtube.com/watch?v=yVPv7lGaYLw" username="mkttimer" userid="22012" postdate="2024-01-24T21:45:05-06:00" />
+						<video id="476588" title="Power Grid - set up &amp; play" category="instructional" language="English" link="http://www.youtube.com/watch?v=ziMkmlCkbbY" username="mkttimer" userid="22012" postdate="2024-01-24T21:42:39-06:00" />
+					</videos>
 
 	
 
@@ -1049,22 +1065,22 @@ Additionally, players must acquire the raw materials (coal, oil, garbage, and ur
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="70069" />
+			<usersrated value="70080" />
 			<average value="7.79683" />
 			<bayesaverage value="7.67927" />
 
 			<ranks>
 															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="76" bayesaverage="7.67927" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="74" bayesaverage="7.67733" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="74" bayesaverage="7.67732" />
 												</ranks>
 
-			<stddev value="1.33649" />
+			<stddev value="1.33652" />
 			<median value="0" />
-			<owned value="87588" />
-			<trading value="1129" />
-			<wanting value="1376" />
-			<wishing value="12532" />
-			<numcomments value="12217" />
+			<owned value="87601" />
+			<trading value="1127" />
+			<wanting value="1377" />
+			<wishing value="12537" />
+			<numcomments value="12220" />
 			<numweights value="5150" />
 			<averageweight value="3.2452" />
 			</ratings>

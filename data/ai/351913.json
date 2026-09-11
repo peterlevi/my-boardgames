@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "Tiletum is a dense, dice-driven action-selection euro where the die you pick determines both a resource yield and the strength of an action, forcing constant trade-offs between engine-building and grabbing points. It plays like a heavier, more austere cousin of the designers' other games (Tzolk'in, Newton, Prêt-à-Porter), rewarding tight optimization over narrative or theme.",
+ "summary": "Tiletum is a dense modern Euro where each turn you place a die-worker on the board to gather resources, artisans, or favors, then spend a busy engine of contracts, cathedral construction, and noble alliances to convert everything into points. It plays like a checklist optimization puzzle more than a story, with heavy AP-prone decision points and a strong sense of an engine coming together over the course of the game.",
  "praised": [
-  "Clever dual-use dice mechanic (value = resources gained, inversely = action power)",
-  "High replayability from variable setup and modular boards",
-  "Satisfying puzzle of sequencing actions and contracts efficiently",
-  "Good production quality and iconography once learned"
+  "satisfying engine-building and multiple viable strategies",
+  "high production values and thematic Renaissance dressing",
+  "good solo mode",
+  "rewarding for players who like Luciani/Tascini-style resource conversion puzzles"
  ],
  "criticised": [
-  "Steep learning curve with a lot of upfront rules and icons to absorb",
-  "Very low player interaction, essentially multiplayer solitaire",
-  "Thin, pasted-on Renaissance theme that does nothing for immersion",
-  "Analysis paralysis potential given the number of simultaneous scoring paths",
-  "Feels similar to other Luciani/Tascini titles, less distinct for fans of their catalogue"
+  "heavy analysis paralysis, especially in 4-player games",
+  "dense iconography and rules overhead for new players",
+  "can feel more like a solitaire optimization exercise than an interactive game",
+  "randomness in die results some find frustrating at this weight"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light drafting competition over dice and action spaces"
+  "kind": "shared board space drafting with mostly parallel tableau-building",
+  "detail": "Players compete for the same limited spaces on shared tracks and the fair/market area, so timing and blocking matter, but each player mostly develops their own private engine of contracts and buildings. Direct conflict is minimal; interaction is mostly about racing for the same resource nodes."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from multiple simultaneous engines (contracts, coats of arms, cathedrals, noble favor, fairs, notable people), so the winner is whoever best balances and completes several of these tracks rather than maxing one."
+  "why": "Points accumulate from contracts, cathedral contributions, noble favor, and end-game bonuses across several tracks.",
+  "how_you_win": "You win by building the most efficient combination of contract fulfillment, cathedral investment, and noble favors before the game's rounds run out."
  },
  "similar": [
-  "Tzolk'in: The Mayan Calendar",
   "Newton",
-  "Prêt-à-Porter",
-  "The Great Zimbabwe",
-  "Trismegistus"
+  "Marco Polo II",
+  "Anno 1800",
+  "Lorenzo il Magnifico",
+  "Res Arcana"
  ],
- "_fingerprint": "e817761a299dd0b1",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "No Pun Included"
+ ],
+ "_fingerprint": "9111cb452fa2ef24",
  "_name": "Tiletum"
 }

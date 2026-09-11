@@ -432,7 +432,13 @@ Any other promos are not included.
 			
 
 			
-	
+			<videos total="5">
+						<video id="412780" title="Dice distancing #71" category="review" language="English" link="http://www.youtube.com/watch?v=UOKAL6rWcHo" username="AmassGames" userid="1206296" postdate="2022-12-06T10:14:27-06:00" />
+						<video id="411230" title="How to setup play and review Lorenzo il Magnifico big box by AmassGames " category="review" language="English" link="http://www.youtube.com/watch?v=cguR9ojW24E" username="AmassGames" userid="1206296" postdate="2022-11-26T12:34:22-06:00" />
+						<video id="408787" title="Unboxing overview for Lorenzo il Magnifico big box by AmassGames " category="unboxing" language="English" link="http://www.youtube.com/watch?v=MaPglAmZMcc" username="AmassGames" userid="1206296" postdate="2022-11-11T10:54:36-06:00" />
+						<video id="403563" title="Unboxing Lorenzo il Magnifico: Big Box (No Talking)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=8oV5NbL9KZg" username="nimasdj" userid="2204600" postdate="2022-10-11T17:02:08-05:00" />
+						<video id="400679" title="Booghy plays... Lorenzo Il Magnifico(Big Box Edition)" category="review" language="English" link="http://www.youtube.com/watch?v=89x1zL-tocE" username="bogdani0405" userid="1267302" postdate="2022-09-23T17:24:27-05:00" />
+					</videos>
 
 	
 
@@ -442,18 +448,18 @@ Any other promos are not included.
    		<statistics page="1">
 								<ratings>
 			<usersrated value="1575" />
-			<average value="8.3632" />
-			<bayesaverage value="6.62386" />
+			<average value="8.36288" />
+			<bayesaverage value="6.62373" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.62386" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.87055" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.62373" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.87038" />
 												</ranks>
 
-			<stddev value="1.02506" />
+			<stddev value="1.02509" />
 			<median value="0" />
 			<owned value="4036" />
-			<trading value="38" />
+			<trading value="40" />
 			<wanting value="105" />
 			<wishing value="384" />
 			<numcomments value="281" />

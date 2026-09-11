@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "A quiet, brain-burning abstract where players snake camel trains across a hex desert to claim oases and territory, with points hidden in multiple scoring tracks that only resolve at the end. It plays fast and tense despite the calm theme, since every placement blocks someone else's route.",
+ "summary": "Through the Desert is a Knizia abstract where players snake colored camel trains across a hex desert, trying to reach oases and enclose territory while blocking rivals from doing the same. It plays fast and is easy to teach, but has real bite because routes can be sealed off with a single well-placed piece.",
  "praised": [
-  "Elegant, tight rules that generate deep decisions",
-  "Multiple scoring paths keep every game different",
-  "Satisfying tension between building your own routes and blocking opponents",
-  "Quick to teach and quick to play relative to its depth"
+  "elegant, easy-to-teach rules hiding real depth",
+  "tense spatial blocking reminiscent of Go",
+  "quick playtime with tight decisions"
  ],
  "criticised": [
-  "Can feel dry or overly analytical for players wanting theme",
-  "End-game scoring can be hard to track/predict, leading to swingy surprises",
-  "Analysis paralysis in a group prone to overthinking each placement",
-  "Two-player games lose some of the multiplayer blocking dynamics"
+  "can feel visually and thematically dry",
+  "hidden scoring until the end can surprise new players",
+  "less satisfying at low player counts"
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking and area denial"
+  "kind": "route blocking and area enclosure",
+  "detail": "All camels are placed on a single shared board, and players directly cut off each other's expansion routes and race to claim oases and enclose empty territory, so almost the entire game state is shared and contested."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from several independent tracks (camel-color majorities, longest chains, and oasis bonuses) that all combine at the end, so the winner is whoever balances several scoring routes best rather than maximizing one."
+  "breadth": "Some",
+  "why": "Points come from several sources at once: each color's longest chain, oasis control, and largest enclosed empty area, so a well-rounded network usually beats one huge single-color snake.",
+  "how_you_win": "You win by building the most efficient network of camel trains that reaches oases and encloses territory while denying opponents the same opportunities."
  },
  "similar": [
   "Tigris & Euphrates",
-  "Yspahan",
-  "Torres",
-  "Samurai",
-  "Ingenious"
+  "Ingenious",
+  "Blokus",
+  "Hive",
+  "Yspahan"
  ],
- "_fingerprint": "f647cedf2f117682",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames",
+  "Before You Play"
+ ],
+ "_fingerprint": "4cab8ec151c8d6b0",
  "_name": "Through the Desert"
 }

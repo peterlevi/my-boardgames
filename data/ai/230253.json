@@ -1,26 +1,26 @@
 {
  "confidence": "high",
- "summary": "Frontiers plays like a leaner Star Realms built for one or two people at a table with fewer external inputs needed, using scorecards to drive solo objectives or a shared threat in co-op mode. Turns are the same fast trade-for-ships-then-attack loop, but the ship pool is smaller and more curated than base Star Realms plus Colony Wars.",
+ "summary": "Star Realms: Frontiers is a standalone entry in the fast, combative Star Realms deckbuilding line, where players buy ships and bases from a shared trade row and use them to pummel each other's Authority down to zero. This version adds solo and cooperative scenarios alongside the usual head-to-head duels.",
  "praised": [
-  "Fast, satisfying deckbuilding loop that's easy to teach",
-  "Works well solo or two-player without needing a full group",
-  "Compact box and quick setup/teardown",
-  "Combines cleanly with other Star Realms sets for more variety"
+  "extremely fast, tight deckbuilding with almost no downtime",
+  "great value and portability for the depth it offers",
+  "solo/co-op modes add welcome variety to the format"
  ],
  "criticised": [
-  "Feels thin as a standalone purchase if you already own base Star Realms",
-  "Solo/co-op scorecard objectives can feel gamey or repetitive over many plays",
-  "Less tactical depth than the head-to-head competitive mode",
-  "Card pool overlap with other Star Realms products can feel redundant"
+  "doesn't innovate much beyond the core Star Realms formula",
+  "card draw luck can swing individual games",
+  "combat can feel a bit swingy at low player counts"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "open conflict and take-that combat, or shared cooperative threat"
+  "level": "High",
+  "kind": "direct combat deckbuilding",
+  "detail": "Players draw from the same shared trade row to build their decks, then attack each other's Authority directly with combat, so both the acquisition pool and the damage race are constantly shared and contested. There's little parallel play — every turn is aimed at either building your deck or hurting your opponent."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "Whoever reduces the opponent's Authority to zero first wins, or in solo/co-op mode the scorecard objective is met before the shared threat overwhelms the players"
+  "why": "There's no points salad — the only thing tracked is each player's Authority total.",
+  "how_you_win": "You win by building a deck of ships and bases efficient enough to reduce your opponent's Authority to zero before they do the same to you."
  },
  "similar": [
   "Star Realms",
@@ -29,6 +29,11 @@
   "Ascension",
   "Dominion"
  ],
- "_fingerprint": "5628139f713ebc96",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "BoardGameCo"
+ ],
+ "_fingerprint": "4d436584397a24e4",
  "_name": "Star Realms: Frontiers"
 }

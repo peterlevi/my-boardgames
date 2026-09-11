@@ -760,6 +760,14 @@ The original German edition supports 3-5 players. The English version from Rio G
 
 			
 		
+					<link type="boardgameartist" id="56353" value="Stephanie Böhm" />
+		
+									
+				
+		 			
+
+			
+		
 					<link type="boardgameartist" id="11507" value="Klemens Franz" />
 		
 									
@@ -938,6 +946,14 @@ The original German edition supports 3-5 players. The English version from Rio G
 
 			
 		
+					<link type="boardgamepublisher" id="21847" value="Pandasaurus Games" />
+		
+									
+				
+		 			
+
+			
+		
 					<link type="boardgamepublisher" id="2528" value="Paper Iyagi" />
 		
 									
@@ -1008,7 +1024,23 @@ The original German edition supports 3-5 players. The English version from Rio G
 			
 
 			
-	
+			<videos total="122">
+						<video id="629248" title="Bohnanza - How To Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=E4qcmCeudwE" username="Watch It Played" userid="247565" postdate="2026-09-10T10:54:24-05:00" />
+						<video id="602654" title="?? Bohnanza – Board Game Unboxing! ??" category="unboxing" language="English" link="http://www.youtube.com/watch?v=teK2nOyXWvs" username="chesborn" userid="4387202" postdate="2026-03-16T00:00:58-05:00" />
+						<video id="602344" title="Bohnanza" category="review" language="English" link="http://www.youtube.com/watch?v=6JgLfhE8x7w" username="Melaniebarr" userid="1626931" postdate="2026-03-13T14:57:34-05:00" />
+						<video id="592722" title="Bohnanza is still board game must play" category="instructional" language="English" link="http://www.youtube.com/watch?v=w4MwIgGK2cw" username="GamexFrame" userid="4356792" postdate="2026-01-15T10:05:57-06:00" />
+						<video id="592603" title="Bohnanza" category="instructional" language="French" link="http://www.youtube.com/watch?v=mPFD4x7Y2gM" username="kikik58" userid="3827212" postdate="2026-01-14T13:07:48-06:00" />
+						<video id="591967" title="Bohnanza" category="review" language="English" link="http://www.youtube.com/watch?v=zd76noFko0c" username="Melaniebarr" userid="1626931" postdate="2026-01-11T11:23:03-06:00" />
+						<video id="590534" title="Bohnanza in about 3 minutes" category="review" language="English" link="http://www.youtube.com/watch?v=My8JACcOfoM" username="J_3MBG" userid="53862" postdate="2026-01-02T07:00:56-06:00" />
+						<video id="555628" title="Thoughts on Bohnanza from Jamie, Tabletoptiktok" category="review" language="English" link="http://www.youtube.com/watch?v=QBh2dNCgUtQ" username="Jamie_Tabletoptiktok" userid="3780107" postdate="2025-05-24T11:51:49-05:00" />
+						<video id="553847" title="Bohnanza Review - How Do The Beans Grow?" category="review" language="English" link="http://www.youtube.com/watch?v=HwiH_2N87AA" username="MerryMarriedMeeples" userid="3264236" postdate="2025-05-13T00:00:34-05:00" />
+						<video id="547613" title="Bohnanza: To Bean or Not To Bean | Hướng Dẫn Chơi | K Board Game" category="instructional" language="Vietnamese" link="http://www.youtube.com/watch?v=yUBur3LXzg0" username="kboardgamevn" userid="1842339" postdate="2025-04-08T08:15:16-05:00" />
+						<video id="540974" title="Bohnanza How to Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=W_BeVids4RQ" username="Northlang" userid="3529823" postdate="2025-03-01T23:22:36-06:00" />
+						<video id="530651" title="Bohnanza Great Game Debate Review" category="review" language="English" link="http://www.youtube.com/watch?v=CMUdDLSbLgc" username="Oasis" userid="406409" postdate="2024-12-30T17:50:13-06:00" />
+						<video id="524956" title="Ep 52 - All About Uwe Rosenberg" category="other" language="English" link="http://www.youtube.com/watch?v=G8K7PEpS3qQ" username="Oasis" userid="406409" postdate="2024-11-18T23:54:17-06:00" />
+						<video id="513281" title="Bohnanza 25th Anniversary Edition: 3-Player Playthrough" category="session" language="Japanese" link="http://www.youtube.com/watch?v=mjGrdqwTCs0" username="JoeAkagi" userid="3692320" postdate="2024-09-09T08:49:24-05:00" />
+						<video id="509709" title="Знакомство с игрой" category="review" language="Russian" link="http://www.youtube.com/watch?v=lPyYsFlvMTc" username="snowbody" userid="201253" postdate="2024-08-19T02:35:23-05:00" />
+					</videos>
 
 	
 
@@ -1017,22 +1049,22 @@ The original German edition supports 3-5 players. The English version from Rio G
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="51918" />
-			<average value="7.08273" />
-			<bayesaverage value="6.9639" />
+			<usersrated value="51934" />
+			<average value="7.08291" />
+			<bayesaverage value="6.96392" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="545" bayesaverage="6.9639" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="149" bayesaverage="6.97105" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="545" bayesaverage="6.96392" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="149" bayesaverage="6.97104" />
 												</ranks>
 
-			<stddev value="1.30864" />
+			<stddev value="1.3088" />
 			<median value="0" />
-			<owned value="84458" />
+			<owned value="84489" />
 			<trading value="1129" />
 			<wanting value="416" />
-			<wishing value="4204" />
-			<numcomments value="10526" />
+			<wishing value="4208" />
+			<numcomments value="10529" />
 			<numweights value="3119" />
 			<averageweight value="1.6662" />
 			</ratings>

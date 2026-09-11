@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "Mille Fiori is a quiet, cerebral drafting game where you pick a card, pass the rest, and place a token in one of five interconnected production areas, chasing multipliers from adjacency and majority bonuses. It rewards efficient, multi-track engine-building more than direct confrontation, with tension coming from anticipating what others will take from the shrinking hand.",
+ "confidence": "medium",
+ "summary": "Mille Fiori is a solitaire-ish Knizia pattern-building game about placing glass tiles across five interconnected boards while occasionally jostling for majority spots. Turns are quick and the puzzle is mostly about efficient personal engine-building rather than fighting opponents.",
  "praised": [
-  "Elegant, tightly interlocking scoring systems typical of Knizia",
-  "Meaningful decisions every turn despite simple rules",
-  "Good length for the depth offered",
-  "Strong replayability from the many scoring interactions"
+  "clever interlocking multi-board puzzle",
+  "satisfying long-term engine building",
+  "quick individual turns despite a meaty ruleset"
  ],
  "criticised": [
-  "Can feel dry or overly abstract/mathematical",
-  "Limited player interaction beyond drafting and majority contests",
-  "Analysis paralysis from optimizing across five scoring areas",
-  "Theme is pasted-on"
+  "fiddly to teach with many icons/boards",
+  "interaction feels thin for a Knizia design",
+  "can feel like solitaire with occasional bumps"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "card drafting with majority/area contests, mostly parallel engine-building"
+  "level": "Low",
+  "kind": "mostly parallel play with occasional area majority",
+  "detail": "Each player mostly develops their own board and card tableau independently, with limited direct interaction through shared majority spaces on the board rather than direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate across five distinct production areas (workshops, houses, guilds, trade, harbor), and the winner is whoever best balances and multiplies scoring across them"
+  "why": "Points accumulate from multiple interlocking systems (workshops, houses, trade, harbor, majorities)",
+  "how_you_win": "You optimize your engine across the five boards to generate the most cumulative points by game end."
  },
  "similar": [
-  "Ra",
+  "Yellow & Yangtze",
+  "Through the Ages",
   "Tigris & Euphrates",
-  "Yokohama",
-  "The Voyages of Marco Polo",
-  "Blue Lagoon"
+  "Blue Lagoon",
+  "The Palaces of Carrara"
  ],
- "_fingerprint": "638135abe1efebb0",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "8f31d1a74e2a1617",
  "_name": "Mille Fiori"
 }

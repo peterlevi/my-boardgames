@@ -493,7 +493,23 @@ Play continues until either scoring or collapse is triggered, which ends the gam
 			
 
 			
-	
+			<videos total="56">
+						<video id="624690" title="Imperium Legends - Playthrough - Olmecs" category="session" language="English" link="http://www.youtube.com/watch?v=b9jmwmsGWO0" username="Emeres89" userid="3829979" postdate="2026-08-11T00:11:59-05:00" />
+						<video id="618491" title="Imperium Legends - Playthrough - Qin" category="session" language="English" link="http://www.youtube.com/watch?v=ZXSnvL7f6sY" username="Emeres89" userid="3829979" postdate="2026-07-02T02:30:06-05:00" />
+						<video id="616288" title="Imperium: Legends | Solo Play #3 Report" category="review" language="English" link="http://www.youtube.com/watch?v=9kI4cZT2N-g" username="Darknlves" userid="2394417" postdate="2026-06-16T05:26:47-05:00" />
+						<video id="616109" title="Imperium: Legends | Unboxing the Scary Game" category="unboxing" language="English" link="http://www.youtube.com/watch?v=I-0PzkNUyiM" username="Darknlves" userid="2394417" postdate="2026-06-15T06:41:33-05:00" />
+						<video id="577255" title="Vamos a jugar - Imperium - Artúricos en solitario sin bot" category="session" language="Spanish" link="http://www.youtube.com/watch?v=VkcbWmH4DkQ" username="ElCanu" userid="1157957" postdate="2025-10-16T09:00:37-05:00" />
+						<video id="541005" title="imperium Legendarios - Egipcios vs Olmecas" category="session" language="Spanish" link="http://www.youtube.com/watch?v=d4AdeEBbGQ0" username="ElCanu" userid="1157957" postdate="2025-03-02T08:22:24-06:00" />
+						<video id="513369" title="Imperium Legends - Solo Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=KdxxAvGiUyM" username="itskdog" userid="414075" postdate="2024-09-09T18:01:39-05:00" />
+						<video id="490042" title="[FR] Arthuriens contre Egyptiens (partie Solo)" category="session" language="French" link="http://www.youtube.com/watch?v=xeq-JeOyIhU" username="Nelsonox" userid="1177862" postdate="2024-04-11T07:49:16-05:00" />
+						<video id="484506" title="[FR] Présentation du jeu et partie Solo complète (Qin)" category="instructional" language="French" link="http://www.youtube.com/watch?v=AunuCsqYCFg" username="Nelsonox" userid="1177862" postdate="2024-03-06T04:05:49-06:00" />
+						<video id="476684" title="(1082)  Imperium: Legendy - recenzja (PL)" category="review" language="Polish" link="http://www.youtube.com/watch?v=ZfJxHCY4Bdw" username="Jean_Leviathan" userid="234662" postdate="2024-01-25T09:30:36-06:00" />
+						<video id="475447" title="Imperium: Legends Board Game Unboxing | DaniCha" category="unboxing" language="English" link="http://www.youtube.com/watch?v=_ujlx3xuHL0" username="danicha" userid="2702403" postdate="2024-01-17T06:34:55-06:00" />
+						<video id="439821" title="Tuto Turnos - Imperium: Legends - Modo Solo" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=K7uMWhET2cM" username="rewindmasters" userid="1866329" postdate="2023-05-30T15:03:07-05:00" />
+						<video id="435554" title="TutoTurnos Imperium: Legends" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=XR7t3oNYQUI" username="rewindmasters" userid="1866329" postdate="2023-04-29T10:51:45-05:00" />
+						<video id="427576" title="Imperium: Lendas (Meeple Br) - Arturianos x Utopianos | Casa NERD lol" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=rnYhFK4hsqA" username="RSanzzio" userid="713978" postdate="2023-03-11T02:18:33-06:00" />
+						<video id="427351" title="Imperium: Lendas (Meeple Br) - Arturianos | Casa NERD lol" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=r6eNv3snfs0" username="RSanzzio" userid="713978" postdate="2023-03-09T16:25:46-06:00" />
+					</videos>
 
 	
 
@@ -502,22 +518,22 @@ Play continues until either scoring or collapse is triggered, which ends the gam
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="5133" />
-			<average value="7.84173" />
-			<bayesaverage value="7.04755" />
+			<usersrated value="5135" />
+			<average value="7.84237" />
+			<bayesaverage value="7.04783" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="455" bayesaverage="7.04755" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="265" bayesaverage="7.19293" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="455" bayesaverage="7.04783" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="265" bayesaverage="7.19322" />
 												</ranks>
 
-			<stddev value="1.43549" />
+			<stddev value="1.43521" />
 			<median value="0" />
-			<owned value="13612" />
+			<owned value="13625" />
 			<trading value="261" />
 			<wanting value="231" />
-			<wishing value="1643" />
-			<numcomments value="915" />
+			<wishing value="1642" />
+			<numcomments value="918" />
 			<numweights value="205" />
 			<averageweight value="3.7561" />
 			</ratings>

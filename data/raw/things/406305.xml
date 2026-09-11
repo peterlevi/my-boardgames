@@ -230,7 +230,14 @@ That description will be familiar to anyone who has played the original Ingeniou
 			
 
 			
-	
+			<videos total="6">
+						<video id="594697" title="The Game Gallery Review -  Ingenious 3D" category="review" language="Japanese" link="http://www.youtube.com/watch?v=kdd7JD_26T0" username="hal99" userid="27784" postdate="2026-01-27T00:36:35-06:00" />
+						<video id="564287" title="Ingenious 3D Review - Chairman of the Board " category="review" language="English" link="http://www.youtube.com/watch?v=1-6TTnboDHg" username="CotB" userid="1500800" postdate="2025-07-24T13:20:33-05:00" />
+						<video id="527998" title="Game Review: Einfach Genial 3D" category="review" language="English" link="http://www.youtube.com/watch?v=YUJsTfJJfrA" username="W Eric Martin" userid="15734" postdate="2024-12-09T00:45:04-06:00" />
+						<video id="516004" title="Einfach Genial 3D (KOSMOS) / KOSMOS Presstage 2024 / Essen 2024" category="instructional" language="German" link="http://www.youtube.com/watch?v=3e_CkD4mHx0" username="MathiasCliquenabend" userid="3884474" postdate="2024-09-25T16:42:13-05:00" />
+						<video id="513312" title="Dreidimensionales Legespiel: Die neue Dimension des strategischen Bauens! Einfach Genial 3D (Kosmos)" category="review" language="German" link="http://www.youtube.com/watch?v=3S5BxszfKx4" username="Spieleblog" userid="190316" postdate="2024-09-09T11:34:38-05:00" />
+						<video id="493838" title="Spielvorstellung und Regeln" category="instructional" language="German" link="http://www.youtube.com/watch?v=oj-tbZP7-Ek" username="Smuker" userid="125523" postdate="2024-05-04T09:25:29-05:00" />
+					</videos>
 
 	
 
@@ -244,7 +251,7 @@ That description will be familiar to anyone who has played the original Ingeniou
 			<bayesaverage value="5.76446" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5299" bayesaverage="5.76446" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="5301" bayesaverage="5.76446" />
 												</ranks>
 
 			<stddev value="1.02796" />

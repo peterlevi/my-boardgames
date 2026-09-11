@@ -1,35 +1,40 @@
 {
- "confidence": "high",
- "summary": "Ultimate Railroads is a dice-placement/worker-placement engine-builder where you claim increasingly efficient action spaces to lay track, upgrade locomotives, and build factories across four linked mini-boards (Russian, German, American, Asian Railroads). Turns are quick and parallel, but the game is a tight optimization puzzle where the real tension is racing opponents to the best upgrade slots and squeezing maximum synergy out of a handful of engine tracks.",
+ "confidence": "medium",
+ "summary": "Ultimate Railroads is a heavy worker-placement train-building game from the designers of Lorenzo il Magnifico-adjacent Euro pedigree, where players lay track, upgrade locomotives and technology, and build out a rail network across a shared map. It plays as a dense economic engine-builder in the vein of other Ohley/Orgler designs, with multiple paths to victory rather than a single dominant strategy.",
  "praised": [
-  "Extremely tight, satisfying engine-building puzzle with meaningful upgrade paths",
-  "Modular design lets you mix and match Russian/German/American/Asian boards for variable difficulty and replayability",
-  "Great value as a compilation of a beloved base game plus all its expansions in one box",
-  "Solid solo mode",
-  "Fast turns despite the depth, low downtime"
+  "deep, flexible tech-tree progression",
+  "high production quality typical of the designers' recent titles",
+  "multiple viable strategic paths",
+  "satisfying long-term engine building"
  ],
  "criticised": [
-  "Very low direct player interaction — mostly a race/multiplayer solitaire feel",
-  "Rulebook and icon-heavy boards have a steep learning curve for new players",
-  "Can feel dry/mechanical, more of a spreadsheet-in-a-box for some players",
-  "So many modules and combinations that the fixed 'best' setups can feel overwhelming or unbalanced without experience"
+  "very heavy rules overhead and long playtime",
+  "can suffer from analysis paralysis with so many options",
+  "shared worker-placement spots can create early-game bottlenecks",
+  "not a lot of thematic train-building flavor beyond the track-laying visuals"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light blocking over shared action/upgrade spaces"
+  "level": "Medium",
+  "kind": "worker placement blocking over shared action spaces",
+  "detail": "Players compete for the same limited worker-placement slots each round, so being crowded out of a key action is a constant threat, while track networks and tech development are largely built on each player's own board. The shared map and action spaces are the main point of contact between players."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "final score comes from track length, locomotive/factory levels, engineers, and end-game bonus tiles, so winners are decided by how efficiently they built a multi-track engine rather than any single dominant strategy"
+  "why": "Points accrue from track built, technology upgrades, and end-game bonuses across several tracks.",
+  "how_you_win": "You win by building the most efficient combination of rail network expansion and technological upgrades, converting worker actions into points across multiple scoring tracks by game end."
  },
  "similar": [
-  "Russian Railroads",
-  "Village",
-  "The Great Zimbabwe",
-  "Automobiles",
-  "Trismegistus: The Ultimate Formula"
+  "Great Western Trail",
+  "Age of Steam",
+  "Lorenzo il Magnifico",
+  "Barrage",
+  "Snowdonia"
  ],
- "_fingerprint": "44677e22e71901a3",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "dc793aa05aea6258",
  "_name": "Ultimate Railroads"
 }

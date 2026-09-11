@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Magic Maze is a real-time cooperative puzzle where each player controls a limited action (move north, move south, escalator, search) across all four heroes, and the core twist is that verbal communication is banned once the sand timer starts, forcing players to grab each other's pawns and point frantically instead. It plays fast and chaotic, with tension coming from the ban on talking rather than from the maze-building itself.",
+ "summary": "A wordless real-time cooperative game where players control specific action types across all the shared heroes, racing against a sand timer to equip everyone and escape the maze without triggering an alarm. It's chaotic and often hilarious, since you can't talk and must instead tap the table or gesture to alert teammates.",
  "praised": [
-  "Unique communication-limit gimmick that creates genuinely funny, tense moments",
-  "Fast setup and short playtime, good as a filler or icebreaker",
-  "Scales unusually well, including a solo mode controlling multiple heroes",
-  "Modular board and expansions add variety"
+  "genuinely unique no-communication real-time coordination",
+  "quick to teach, quick to play, and endlessly replayable",
+  "great energy and shared panic in a group setting",
+  "scales cleanly with modular board expansion for more players"
  ],
  "criticised": [
-  "Can create real frustration or friction for players who dislike being unable to speak",
-  "One dominant/fast player can effectively solve it for the group, reducing others to spectators",
-  "Puzzle logic is fairly light and repetitive across plays",
-  "Not very forgiving for very young or new-to-boardgames players despite low weight"
+  "the real-time pressure and silence rule aren't for everyone",
+  "can feel overwhelming or unfair at higher player counts",
+  "some find it more chaotic than genuinely strategic",
+  "base game content is thin without the expansions"
  ],
  "interaction": {
   "level": "High",
-  "kind": "silent cooperative coordination, non-verbal signaling and pawn-grabbing"
+  "kind": "real-time cooperative coordination",
+  "detail": "All players act on a single shared board and shared set of pawns, with each player restricted to only certain move types across all heroes, so success depends entirely on watching and silently cueing each other. There is no individual board at all — the whole game state is communal."
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "the group either gets all heroes to the exit before the timer/pyramid runs out or loses together, with no individual scoring"
+  "breadth": "Other",
+  "why": "There are no points; the team either completes every hero's objectives before the timer runs out or fails.",
+  "how_you_win": "Silently coordinate to move each hero to their equipment, meeting point, and the exit before the sand timer expires or the alarm maxes out."
  },
  "similar": [
   "Space Alert",
-  "Escape: The Curse of the Temple",
   "The Mind",
-  "Sherlock Holmes Consulting Detective",
-  "Pandemic"
+  "Escape: The Curse of the Temple",
+  "Sky Team",
+  "Chronicles of Crime"
  ],
- "_fingerprint": "6760a9ab070ac3ae",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "c1238fb2a50bc5a6",
  "_name": "Magic Maze"
 }

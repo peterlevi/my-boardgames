@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "The Castles of Burgundy is a dice-driven tile-placement game where players race to fill their personal princedom boards with settlement tiles, optimizing for combos and efficient turns each round. It's a puzzly, low-conflict euro that rewards planning and flexibility around dice rolls more than direct competition.",
+ "summary": "The Castles of Burgundy is a tight, satisfying dice-and-tile-placement euro where you draft hexagonal tiles matched to dice rolls to build out a personal principality across several distinct regions. It rewards efficient planning and flexible dice usage more than luck, making each turn feel like a small optimization puzzle.",
  "praised": [
-  "elegant, tight puzzle of tile placement",
-  "high replayability from modular boards and phase order",
-  "smooth turn structure with almost no downtime",
-  "excellent solo mode"
+  "elegant, tightly-tuned dice mitigation and tile placement puzzle",
+  "strong replayability from varied player boards",
+  "clean design with almost no downtime"
  ],
  "criticised": [
-  "dice rolls can feel restrictive/lucky at times",
-  "low direct player interaction",
-  "iconography and initial rules can be a hurdle",
-  "some feel it's dry/mechanical"
+  "can feel a bit dry or solitaire-like with low interaction",
+  "phase-based turn structure takes a game or two to click",
+  "some find the tile abstraction thematically thin"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "race to grab tiles from a shared market, mostly parallel play"
+  "kind": "mostly parallel play with shared tile market",
+  "detail": "Players draft tiles from a shared central display based on dice rolls, so faster or luckier players can snatch tiles others wanted, but most of the game happens on each player's own principality board. There is little direct conflict beyond racing for the same limited tiles."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points accumulate from multiple region bonuses, tile synergies, and end-game scoring across the board"
+  "why": "Points come from completing regions of many different tile types plus end-game bonuses, rewarding a well-rounded principality.",
+  "how_you_win": "You win by efficiently using dice rolls to place matching tiles into your regions, completing sets and bonus goals for the highest total score after five rounds."
  },
  "similar": [
-  "Kingdom Builder",
+  "Village",
   "Orleans",
-  "Bruges",
-  "The Voyages of Marco Polo",
-  "Grand Austria Hotel"
+  "Barony",
+  "Le Havre",
+  "Fields of Arle"
  ],
- "_fingerprint": "dcd8c89821d7bb49",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "74129cdb9e5d8405",
  "_name": "The Castles of Burgundy"
 }

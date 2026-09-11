@@ -1,32 +1,38 @@
 {
  "confidence": "medium",
- "summary": "Byzanz is a lean, tense bidding game where you pay with the very goods cards you're trying to collect, forcing constant trade-offs between hoarding cards for sets and spending them to win auctions. It plays fast and is driven almost entirely by auction psychology rather than direct player interaction outside the bidding.",
+ "summary": "Byzanz is a fast, tight bidding game where the same cards in your hand are both your currency and your potential winnings, forcing constant trade-offs between bidding aggressively now and hoarding value for later. It's a short, sharp filler that rewards reading the market and opponents' hands more than deep strategy.",
  "praised": [
-  "Clever closed-economy bidding where cards double as currency and scoring material",
-  "Quick, tight playtime for the depth of decisions",
-  "Tension between saving cards for sets versus using them to bid"
+  "clever dual-use-card mechanism (cards are both money and points)",
+  "quick playtime with real tension",
+  "easy to teach"
  ],
  "criticised": [
-  "Can feel a bit dry or abstract thematically",
-  "Luck of the draw on which goods appear can swing outcomes",
-  "Repetitive auction structure may wear thin over multiple plays"
+  "can feel swingy or luck-dependent with the auction order",
+  "limited long-term strategy depth",
+  "less impactful with lower player counts"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "competitive bidding for shared offers"
+  "kind": "auction and bidding",
+  "detail": "Players bid against each other for shared market offers using cards from their own hand, so every bid affects what remains available and how much competitors can spend later. There's no shared board beyond the market itself; most of the game state is what's visible in each player's hand and completed sets."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever accumulates the most valuable completed sets of 3 matching goods cards through smart bidding and timing of when to sell"
+  "why": "The winner is whoever accumulates the most valuable completed sets of goods cards by game end.",
+  "how_you_win": "You win by successfully bidding on and collecting sets of three matching goods cards, using your remaining hand cards as bidding currency until the deck runs out."
  },
  "similar": [
   "Ra",
-  "Traders of Genoa",
+  "Modern Art",
   "Amun-Re",
-  "Medici",
-  "Web of Power"
+  "For Sale",
+  "Medici"
  ],
- "_fingerprint": "55ed5c541ddbba37",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "84b339630f2c2903",
  "_name": "Byzanz"
 }

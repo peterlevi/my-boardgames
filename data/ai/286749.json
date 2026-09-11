@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Hansa Teutonica is a lean, brutal network-building game where you extend trade routes by placing merchants, but rival players can bump you off contested routes, forcing tense calculations about when to lock in a route versus upgrade your abilities. The tech-track upgrades (more actions, swapping pieces, moving through occupied spaces) create a snowballing efficiency race that rewards tight optimization over any theme.",
+ "summary": "Hansa Teutonica is a lean, cutthroat network-building game where you race to claim trade routes with only two actions per turn, and can bump rival pieces off routes to steal their position. It rewards efficient upgrading of personal abilities as much as raw map presence.",
  "praised": [
-  "tight, efficient action-point puzzle with almost no downtime",
-  "meaningful player interaction through displacement",
-  "upgrade tracks give satisfying engine-building progression",
-  "high replayability across different maps/expansions in the Big Box"
+  "tight, elegant action-economy design",
+  "meaningful direct interaction via displacement",
+  "high replayability with multiple viable strategies",
+  "fast turns despite deep decisions"
  ],
  "criticised": [
-  "thin theme, essentially an abstract optimization game",
-  "can feel mean when your routes get bumped repeatedly",
-  "analysis paralysis for new players facing many viable strategies",
-  "map/route knowledge advantage for experienced players"
+  "thin, pasted-on theme",
+  "can feel mean when pieces get bumped back to supply",
+  "some upkeep tracking bonuses slows new players",
+  "map balance varies by edition/expansion"
  ],
  "interaction": {
   "level": "High",
-  "kind": "displacement and area majority contention over shared routes"
+  "kind": "network claiming and displacement (take that)",
+  "detail": "Players compete for the same routes and cities on a shared map, and can knock a rival's piece back to their personal supply to take their spot. Upgrade tracks and general stock remain private, but the map itself is fully contested."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "points come from completed routes, upgraded abilities, and end-game bonuses, but efficient network control dominates"
+  "breadth": "Broad",
+  "why": "Points come from completed routes, city presence bonuses, upgrade track completion, and endgame network bonuses, so efficient action use across all of these decides the winner.",
+  "how_you_win": "You use your limited actions to claim trade routes and upgrade your abilities faster than opponents, banking points from routes and bonuses to finish with the highest total."
  },
  "similar": [
-  "Web of Power",
-  "Age of Steam",
   "Concordia",
-  "The Great Zimbabwe",
-  "Yspahan"
+  "El Grande",
+  "The Voyages of Marco Polo",
+  "Navegador",
+  "Yokohama"
  ],
- "_fingerprint": "49a95d5a99e2b52b",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "ca95a0bd0bb73328",
  "_name": "Hansa Teutonica: Big Box"
 }

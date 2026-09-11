@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "A fast, loud dice-chucker where you push your luck rolling and re-rolling for points, energy, and attacks while whoever occupies Tokyo racks up bonus points but can't heal. Games are short, swingy, and driven by table talk and gang-up dynamics rather than deep strategy.",
+ "summary": "Each turn you roll six dice Yahtzee-style, re-rolling to chase claws (attack), hearts (heal), energy, or victory points, while whoever is inside Tokyo takes damage from everyone else's attacks but can't heal. It's a fast, loud, push-your-luck brawl where you're constantly deciding whether to stay in the punishing but point-rich city or retreat to safety.",
  "praised": [
-  "Fast, easy to teach, great gateway/family game",
-  "Fun push-your-luck dice mechanic",
-  "Thematic monster/kaiju presentation and components",
-  "Card market adds variety and replayability",
-  "Plays well with kids and non-gamers"
+  "extremely easy to teach and fast to play",
+  "satisfying dice-chucking push-your-luck tension",
+  "fun monster theme and card powers",
+  "great gateway/family game energy"
  ],
  "criticised": [
-  "High luck/randomness can undercut player agency",
-  "Player elimination can leave people sitting out",
-  "Ganging up on the Tokyo occupant can feel mean or kingmaker-y",
-  "Shallow long-term strategy once the novelty wears off"
+  "heavy luck can make outcomes feel arbitrary",
+  "player elimination can leave people sitting out",
+  "little strategic depth beyond dice math",
+  "runaway leader problem if someone gets a strong card engine"
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict via dice attacks and take-that ganging up on whoever is in Tokyo"
+  "kind": "open conflict and take-that attacks",
+  "detail": "Attacks from the player in Tokyo hit everyone else simultaneously, and everyone else's attacks hit whoever is in Tokyo, so the shared 'who occupies Tokyo' state is the main lever players fight over. There's no private tableau of real consequence beyond your own health and cards; the board state is almost entirely shared and adversarial."
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is decided by racing to 20 victory points (mostly from dice and Tokyo occupancy) or by being the last monster standing after eliminating everyone else."
+  "why": "The game ends the instant someone hits 20 victory points or is the last monster standing.",
+  "how_you_win": "You win by racing to 20 victory points through dice rolls and Tokyo occupation, or by being the last monster left alive."
  },
  "similar": [
   "King of New York",
   "Munchkin",
-  "Cash 'n Guns",
-  "Zombie Dice",
-  "Star Realms"
+  "Cthulhu Wars",
+  "Dice Forge",
+  "Machi Koro"
  ],
- "_fingerprint": "817024ca591e5056",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Geek & Sundry"
+ ],
+ "_fingerprint": "97275d155c0ad025",
  "_name": "King of Tokyo"
 }

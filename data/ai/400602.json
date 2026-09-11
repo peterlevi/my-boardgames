@@ -1,34 +1,21 @@
 {
- "confidence": "medium",
- "summary": "Civolution is Stefan Feld's heavy sci-fi civilization-building game where players guide a nascent species through tech development, exploration, and adaptation using dice and card-driven actions across a modular alien landscape. It's one of Feld's most complex and ambitious designs, blending exploration, tech trees, and area movement into a long, intricate experience.",
- "praised": [
-  "ambitious, unique theme for a Feld game",
-  "deep and varied tech/adaptation paths",
-  "high production value and modular replayability",
-  "rewards strategic long-term planning"
- ],
- "criticised": [
-  "very high complexity and long playtime",
-  "steep rules overhead relative to payoff for some players",
-  "can feel overwhelming on first plays",
-  "mixed reception compared to Feld's more streamlined classics"
- ],
+ "confidence": "low",
+ "summary": "",
+ "praised": [],
+ "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "competition for exploration space and shared drafting pools"
+  "kind": "",
+  "detail": ""
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points accrue from technology, territory, adaptation, and civilization development tracks simultaneously"
+  "why": "",
+  "how_you_win": ""
  },
- "similar": [
-  "Bruxelles 1897",
-  "The Gallerist",
-  "Trickerion",
-  "Anachrony",
-  "Tzolk'in: The Mayan Calendar"
- ],
- "_fingerprint": "e9baac48870fa8c1",
+ "similar": [],
+ "teachers": [],
+ "_fingerprint": "2651526626297111",
  "_name": "Civolution"
 }

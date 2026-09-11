@@ -258,7 +258,23 @@ Horseless Carriage is a game about the dawn of the automobile, a time when cars 
 			
 
 			
-	
+			<videos total="39">
+						<video id="602621" title="(2023) Horseless Carriage" category="humor" language="German" link="http://www.youtube.com/watch?v=fbsGTmN3pb8" username="naturspur" userid="990023" postdate="2026-03-15T15:31:57-05:00" />
+						<video id="571814" title="Horselles Carriage Gameplay: Inovação e Fritação v2" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=JUKDtvNu50o" username="lfigaro" userid="3046229" postdate="2025-09-13T11:00:33-05:00" />
+						<video id="549092" title="Board Game Gumbo: Unboxing " category="unboxing" language="English" link="http://www.youtube.com/watch?v=8BRUwgBqZR8" username="BoardGameGumbo" userid="786127" postdate="2025-04-17T04:24:01-05:00" />
+						<video id="537363" title="All the Games with Steph: Horseless Carriage" category="instructional" language="English" link="http://www.youtube.com/watch?v=Se9Iwmcc79Y" username="boardgamersteph" userid="212591" postdate="2025-02-10T02:06:19-06:00" />
+						<video id="530826" title="Un omaggio a Splotter Spellen." category="review" language="Italian" link="http://www.youtube.com/watch?v=zqUHmf-FueU" username="iPuzzillanimi" userid="3667616" postdate="2025-01-01T08:53:30-06:00" />
+						<video id="515929" title="Horseless Carriage (gioco da tavolo) - Tutorial italiano" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=cOYvyl99wB4" username="IlPuntoLudico" userid="3449840" postdate="2024-09-25T08:28:10-05:00" />
+						<video id="483858" title="Horseless Carriage Review with Chris Yi" category="other" language="English" link="http://www.youtube.com/watch?v=wjetaW8EA5I" username="TomVasel" userid="722" postdate="2024-03-01T12:01:05-06:00" />
+						<video id="483620" title="Horseless Carriage - 4p Play-through, &amp; Roundtable Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=ziQJW_EM76g" username="eapeas" userid="377742" postdate="2024-02-28T21:08:17-06:00" />
+						<video id="480474" title="HORSELESS CARRIAGE - 4-PLAYER SOLO PLAYTHRU (NORMAL GAME)" category="instructional" language="English" link="http://www.youtube.com/watch?v=JbUDZ_NRvys" username="schnel" userid="212420" postdate="2024-02-08T16:00:18-06:00" />
+						<video id="475186" title="Horseless Carriage - SOLO PLAYTHRU and FULL TUTORIAL" category="instructional" language="English" link="http://www.youtube.com/watch?v=HKXVTv3Ee88" username="schnel" userid="212420" postdate="2024-01-15T09:05:43-06:00" />
+						<video id="474883" title="Horseless Carriage Board Game Review" category="review" language="English" link="http://www.youtube.com/watch?v=QQZ3ts8iMFA" username="zzeroparticle" userid="588934" postdate="2024-01-12T19:42:12-06:00" />
+						<video id="467257" title="말없는 마차" category="instructional" language="Korean" link="http://www.youtube.com/watch?v=J5S8PeHEm74" username="twoBeatT" userid="57114" postdate="2023-11-19T23:40:41-06:00" />
+						<video id="432445" title="Horseless Carriage la vidéo règle qu'il vous faut" category="instructional" language="French" link="http://www.youtube.com/watch?v=duLYnzm38Lw" username="Pardieu" userid="695661" postdate="2023-04-10T03:50:19-05:00" />
+						<video id="431478" title="Who Needs Brakes! Review" category="review" language="English" link="http://www.youtube.com/watch?v=2RTBbwXnl_k" username="HDEagle71" userid="3032995" postdate="2023-04-04T06:27:17-05:00" />
+						<video id="430889" title="Horseless Carriage - trudna sztuka handlu bezkonnymi powozami" category="review" language="Polish" link="http://www.youtube.com/watch?v=I3DviR3--LY" username="Mardar" userid="684913" postdate="2023-03-31T02:44:01-05:00" />
+					</videos>
 
 	
 
@@ -267,22 +283,22 @@ Horseless Carriage is a game about the dawn of the automobile, a time when cars 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="1922" />
-			<average value="7.69605" />
-			<bayesaverage value="6.47158" />
+			<usersrated value="1921" />
+			<average value="7.69693" />
+			<bayesaverage value="6.47169" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1405" bayesaverage="6.47158" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="705" bayesaverage="6.66939" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1405" bayesaverage="6.47169" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="705" bayesaverage="6.66959" />
 												</ranks>
 
-			<stddev value="1.52382" />
+			<stddev value="1.52373" />
 			<median value="0" />
-			<owned value="4628" />
-			<trading value="183" />
-			<wanting value="106" />
-			<wishing value="1031" />
-			<numcomments value="528" />
+			<owned value="4630" />
+			<trading value="184" />
+			<wanting value="105" />
+			<wishing value="1029" />
+			<numcomments value="529" />
 			<numweights value="144" />
 			<averageweight value="4.3194" />
 			</ratings>

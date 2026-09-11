@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "A chaotic, visual game where you queue up movement and shooting actions blind, then watch your plan collide with everyone else's as figures physically get punched off the 3D train car by car. It plays fast and loud, rewarding people who enjoy laughing at plans falling apart more than those who want tight control over outcomes.",
+ "summary": "Colt Express is a lighthearted programmed-movement game where players secretly queue actions for their bandit figures on a 3D train, leading to chaotic, often comedic mismatches between plan and outcome. Direct conflict comes from shooting, punching, and looting the same loot piles as your rivals.",
  "praised": [
-  "The 3D train model and physical bumping/punching of figures is a huge tabletop presence",
-  "Programming actions blind creates genuine surprise and table talk",
-  "Fast, light, and very approachable for families and non-gamers",
-  "Character powers and the Marshal add variety without much added complexity"
+  "fun 3D train model and physical presence",
+  "comedic chaos from programmed movement going wrong",
+  "easy to teach, quick playtime",
+  "great for families and casual groups"
  ],
  "criticised": [
-  "Programming can feel like it doesn't matter since bumps and shooting scramble your plan (some feel it undercuts strategy)",
-  "Night round (blind card-stacking) can feel like a coin flip",
-  "Player elimination/being knocked off the train can sideline someone briefly",
-  "Little to no strategy for experienced gamers once the novelty wears off"
+  "high luck/chaos can undercut strategic planning",
+  "player elimination-adjacent feel when you get shot repeatedly",
+  "some find it too random for a 'strategy' game",
+  "can have downtime with more players"
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict via punching, shooting, and bumping to disrupt others' plans"
+  "kind": "take that and direct conflict",
+  "detail": "Players shoot, punch, and steal directly from each other on a fully shared train board, and the programmed-action queue means your plans routinely get disrupted by others' cards. Nearly all meaningful state (loot, bandit positions, the marshal) is shared and constantly contested."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "Whoever collects the most loot (cash, jewels, the strongbox) across five rounds wins, with bullet wounds subtracting points"
+  "why": "The winner is simply whoever has the most valuable loot in their possession at game end.",
+  "how_you_win": "You win by looting the most valuable cash, jewels, and strongbox items while avoiding getting shot or knocked off the train too often."
  },
  "similar": [
   "Flamme Rouge",
-  "Bandido",
-  "Ca$h 'n Guns",
-  "Libertalia",
-  "Cutthroat Caverns"
+  "Adrenaline",
+  "King of Tokyo",
+  "Elysium",
+  "Hey, That's My Fish!"
  ],
- "_fingerprint": "abf9f691458e8277",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "52024afe65acabb7",
  "_name": "Colt Express"
 }

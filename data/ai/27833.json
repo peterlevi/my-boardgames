@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Steam is a leaner, friendlier reworking of Age of Steam: you bid for turn order, build track networks, and deliver goods cubes for points or income, but the harsh forced-income-reduction of the original is replaced by an optional loan mechanism. It plays as a tight, cutthroat economic puzzle where efficient route-building and timing your deliveries matter more than raw luck.",
+ "summary": "Steam is a heavier train pick-up-and-deliver game where players build track networks, then run trains to fulfill goods deliveries for income or victory points. It rewards careful route planning and timing of upgrades, with tense decisions about spending on infrastructure versus banking points.",
  "praised": [
-  "More forgiving and accessible than Age of Steam while keeping the same core tension",
-  "Double-sided board and modular map system give strong replayability",
-  "Tight, efficient rules with meaningful decisions every turn",
-  "Satisfying network-building and delivery optimization puzzle"
+  "Tight, meaningful economic decisions",
+  "Flexible modular map system",
+  "Good player interaction over shared track and goods",
+  "Strong replayability across different maps"
  ],
  "criticised": [
-  "Still very cutthroat and can be brutal for new players who fall behind economically",
-  "Auction/bidding start can feel swingy or unintuitive to newcomers",
-  "High player interaction on the shared map leads to analysis paralysis in some groups",
-  "Some feel it lost a bit of the original Age of Steam's harsher, more strategic bite"
+  "Steep learning curve for newcomers",
+  "Can feel fiddly with cubes and cards",
+  "Downtime in higher player counts",
+  "Some find the theme thin compared to the mechanics"
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking and area denial over track and delivery routes"
+  "kind": "network building and route competition",
+  "detail": "Players compete for the same track spaces, cities, and goods cubes on a shared board, so building into contested areas or grabbing high-value goods directly affects opponents' options. Turn order is auctioned, adding another layer of direct interaction each round."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Victory points come almost entirely from successful goods deliveries, with efficient track building and income management as the main lever to maximize them"
+  "why": "Victory points come primarily from delivering goods along built track, converted from income at round's end.",
+  "how_you_win": "You win by efficiently building track and delivering goods to score the most victory points over the course of the game."
  },
  "similar": [
   "Age of Steam",
-  "Railways of the World",
-  "Railroad Tycoon",
+  "Container",
   "Chicago Express",
-  "Irish Gauge"
+  "Irish Gauge",
+  "Snowdonia"
  ],
- "_fingerprint": "c2cd51d6270b6bfb",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "8fb63263cf1806a2",
  "_name": "Steam"
 }

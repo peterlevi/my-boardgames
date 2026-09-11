@@ -227,7 +227,9 @@ Vinhos Deluxe: Connoisseur Pack (17 large tiles)
 			
 
 			
-	
+			<videos total="1">
+						<video id="487456" title="Vinhos Deluxe Edition: Expansion Bundle - 3-Minute Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=ieFlqEiL9JU" username="TheFamilyMeeple" userid="2419723" postdate="2024-03-25T08:35:22-05:00" />
+					</videos>
 
 	
 
@@ -236,20 +238,20 @@ Vinhos Deluxe: Connoisseur Pack (17 large tiles)
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="140" />
-			<average value="8.17386" />
-			<bayesaverage value="5.63889" />
+			<usersrated value="141" />
+			<average value="8.16553" />
+			<bayesaverage value="5.63945" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.63889" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.63945" />
 												</ranks>
 
-			<stddev value="1.32984" />
+			<stddev value="1.32877" />
 			<median value="0" />
 			<owned value="1223" />
 			<trading value="7" />
 			<wanting value="18" />
-			<wishing value="65" />
+			<wishing value="66" />
 			<numcomments value="44" />
 			<numweights value="7" />
 			<averageweight value="3.7143" />

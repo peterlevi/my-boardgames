@@ -44,16 +44,16 @@ Action Dice can also be used to draw or play Event Cards. Event Cards are played
 										      	               				<yearpublished value="2011" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="604">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="605">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="1" />
-					<result value="Recommended" numvotes="39" />
+					<result value="Recommended" numvotes="40" />
 					<result value="Not Recommended" numvotes="372" />
 				</results>					
 			
 		<results numplayers="2">		
-					<result value="Best" numvotes="555" />
+					<result value="Best" numvotes="556" />
 					<result value="Recommended" numvotes="35" />
 					<result value="Not Recommended" numvotes="3" />
 				</results>					
@@ -61,19 +61,19 @@ Action Dice can also be used to draw or play Event Cards. Event Cards are played
 		<results numplayers="3">		
 					<result value="Best" numvotes="12" />
 					<result value="Recommended" numvotes="94" />
-					<result value="Not Recommended" numvotes="331" />
+					<result value="Not Recommended" numvotes="332" />
 				</results>					
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="45" />
 					<result value="Recommended" numvotes="154" />
-					<result value="Not Recommended" numvotes="251" />
+					<result value="Not Recommended" numvotes="252" />
 				</results>					
 			
 		<results numplayers="4+">		
 					<result value="Best" numvotes="1" />
 					<result value="Recommended" numvotes="2" />
-					<result value="Not Recommended" numvotes="350" />
+					<result value="Not Recommended" numvotes="351" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -83,7 +83,7 @@ Action Dice can also be used to draw or play Event Cards. Event Cards are played
 						               				<minplaytime value="150" />
 						               				<maxplaytime value="240" />
 						               				<minage value="13" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="142">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="143">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
@@ -93,7 +93,7 @@ Action Dice can also be used to draw or play Event Cards. Event Cards are played
 					<result value="8" numvotes="1" />
 					<result value="10" numvotes="5" />
 					<result value="12" numvotes="36" />
-					<result value="14" numvotes="69" />
+					<result value="14" numvotes="70" />
 					<result value="16" numvotes="30" />
 					<result value="18" numvotes="0" />
 					<result value="21 and up" numvotes="1" />
@@ -688,7 +688,23 @@ Action Dice can also be used to draw or play Event Cards. Event Cards are played
 			
 
 			
-	
+			<videos total="476">
+						<video id="627466" title="The Discriminating Gamer: War of the Ring: Second Edition unboxing with Ray" category="unboxing" language="English" link="http://www.youtube.com/watch?v=d2mCsrteGIU" username="discriminatingGamer" userid="806048" postdate="2026-08-29T16:41:07-05:00" />
+						<video id="625887" title="How Multiplayer Rules Work in War of the Ring" category="instructional" language="English" link="http://www.youtube.com/watch?v=VjJejaXAo0M" username="busco" userid="11416" postdate="2026-08-19T07:25:49-05:00" />
+						<video id="625823" title="War of the Ring | ALL Expansions 08-18-26" category="session" language="English" link="http://www.youtube.com/watch?v=Lghx26SOLzU" username="Maltsensation" userid="1050390" postdate="2026-08-18T18:27:57-05:00" />
+						<video id="625439" title="War of the Ring Kutu Oyunu Nasıl Oynanır? | Orta Dünya'nın Kaderini Belirleyin" category="instructional" language="Turkish" link="http://www.youtube.com/watch?v=FBtcw9JaMow" username="ibiliss" userid="1854607" postdate="2026-08-16T06:08:57-05:00" />
+						<video id="625086" title="War of the Ring &amp; Expansions 08-12-26" category="session" language="English" link="http://www.youtube.com/watch?v=hQHjP6BJx10" username="Maltsensation" userid="1050390" postdate="2026-08-13T10:15:25-05:00" />
+						<video id="622580" title="War of the Ring | ALL Expansion " category="session" language="English" link="http://www.youtube.com/watch?v=hf3GPUPlBnQ" username="Maltsensation" userid="1050390" postdate="2026-07-27T21:42:07-05:00" />
+						<video id="616723" title="War of the Ring with all Expansions - Jenna as Shadow vs Mark as Free 06/18/25 " category="session" language="English" link="http://www.youtube.com/watch?v=UTkde0HgGMA" username="Maltsensation" userid="1050390" postdate="2026-06-18T22:49:17-05:00" />
+						<video id="616719" title="War of the Ring with ALL Expansions - Jenna as Free vs Mark as Shadow 06/18/2" category="session" language="English" link="http://www.youtube.com/watch?v=jeuCR1_lnFQ" username="Maltsensation" userid="1050390" postdate="2026-06-18T21:21:44-05:00" />
+						<video id="613402" title="War of the Ring with Expansions 05 26 26 " category="session" language="English" link="http://www.youtube.com/watch?v=yxc4epgtcAg" username="Maltsensation" userid="1050390" postdate="2026-05-26T17:49:20-05:00" />
+						<video id="610513" title="How to Play War of the Ring by Ares Games" category="instructional" language="English" link="http://www.youtube.com/watch?v=fi2v3jadtmE" username="busco" userid="11416" postdate="2026-05-06T06:43:21-05:00" />
+						<video id="610141" title="Como se hizo Guerra del anillo" category="other" language="Spanish" link="http://www.youtube.com/watch?v=hd_LzR57PHU" username="lacupula" userid="289165" postdate="2026-05-03T12:28:21-05:00" />
+						<video id="604226" title="War of the Ring: Playthrough and Review" category="review" language="English" link="http://www.youtube.com/watch?v=Z2xF4HJForM" username="PaulGrogan" userid="1685" postdate="2026-03-25T08:01:22-05:00" />
+						<video id="599345" title="War of the Ring Game Play through 2-21-26 " category="session" language="English" link="http://www.youtube.com/watch?v=czsDvkZMGbw" username="Maltsensation" userid="1050390" postdate="2026-02-22T06:38:21-06:00" />
+						<video id="596201" title="War of the Ring (Second Edition) Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=-G0XmSSS3mc" username="Smalfri2" userid="2564271" postdate="2026-02-05T11:11:03-06:00" />
+						<video id="595656" title="How do War of the Ring, Battle of Five Armies, and Hunt for the Ring fit together?" category="other" language="English" link="http://www.youtube.com/watch?v=3RlhdLvzcAc" username="LakesideGamer" userid="3530867" postdate="2026-02-01T23:04:44-06:00" />
+					</videos>
 
 	
 
@@ -697,25 +713,25 @@ Action Dice can also be used to draw or play Event Cards. Event Cards are played
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="25539" />
-			<average value="8.55324" />
-			<bayesaverage value="8.1994" />
+			<usersrated value="25549" />
+			<average value="8.55265" />
+			<bayesaverage value="8.19901" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="8" bayesaverage="8.1994" />
-																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="1" bayesaverage="8.32014" />
-											<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="3" bayesaverage="8.25351" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="8" bayesaverage="8.19901" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="1" bayesaverage="8.31942" />
+											<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="3" bayesaverage="8.25289" />
 												</ranks>
 
-			<stddev value="1.47877" />
+			<stddev value="1.47937" />
 			<median value="0" />
-			<owned value="42235" />
+			<owned value="42260" />
 			<trading value="309" />
 			<wanting value="1386" />
-			<wishing value="13196" />
+			<wishing value="13194" />
 			<numcomments value="4360" />
-			<numweights value="1409" />
-			<averageweight value="4.2321" />
+			<numweights value="1410" />
+			<averageweight value="4.2326" />
 			</ratings>
 								</statistics>
      

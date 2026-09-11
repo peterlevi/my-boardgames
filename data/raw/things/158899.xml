@@ -49,7 +49,7 @@ At the end of the game, whoever fired the most bullets receives a $1,000 braggar
 										      	               				<yearpublished value="2014" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="6" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="527">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="528">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="0" />
@@ -76,7 +76,7 @@ At the end of the game, whoever fired the most bullets receives a $1,000 braggar
 				</results>					
 			
 		<results numplayers="5">		
-					<result value="Best" numvotes="331" />
+					<result value="Best" numvotes="332" />
 					<result value="Recommended" numvotes="120" />
 					<result value="Not Recommended" numvotes="5" />
 				</results>					
@@ -849,7 +849,23 @@ At the end of the game, whoever fired the most bullets receives a $1,000 braggar
 			
 
 			
-	
+			<videos total="205">
+						<video id="629314" title="Partita Live a Colt Express" category="session" language="Italian" link="http://www.youtube.com/watch?v=NeywXC9XfY4" username="boardgamesfrancesco" userid="2473716" postdate="2026-09-10T11:27:51-05:00" />
+						<video id="625237" title=" YEE HAW! Let's rob a train! - Colt Express" category="session" language="English" link="http://www.youtube.com/watch?v=BYr31nqG984" username="criticalhitgames" userid="4704583" postdate="2026-08-14T09:44:06-05:00" />
+						<video id="624676" title="Schemin' and Stealin'" category="review" language="English" link="http://www.youtube.com/watch?v=FtdEmxGujhQ" username="PoindexterG" userid="2901564" postdate="2026-08-10T19:15:30-05:00" />
+						<video id="623991" title="Jugando a... Colt Express" category="session" language="Spanish" link="http://www.youtube.com/watch?v=HVUHKSHcmIQ" username="Ushikai" userid="195924" postdate="2026-08-06T10:23:09-05:00" />
+						<video id="623040" title="Colt Express: How To Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=4Qk-bJPiN3E" username="Lavinia_and_Peter" userid="2686984" postdate="2026-07-30T09:19:46-05:00" />
+						<video id="613424" title="Opinando sobre COLT EXPRESS" category="review" language="Spanish" link="http://www.youtube.com/watch?v=gjZw_D9vKn8" username="rikardus66" userid="2802133" postdate="2026-05-27T00:34:27-05:00" />
+						<video id="599094" title="Colt Express - Tutorial do Jogo" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=VbC9ZFg-xpg" username="Estrategia_Invicta" userid="4394377" postdate="2026-02-20T11:07:15-06:00" />
+						<video id="590845" title="Colt Express Horses/Stagecoach And Marshal/Prisoners Expansion Review" category="review" language="English" link="http://www.youtube.com/watch?v=2mAAoh5O1yI" username="TheBoardGameMuseum" userid="472970" postdate="2026-01-03T23:28:30-06:00" />
+						<video id="575741" title="Colt Express Playthrough on Board Game Arena" category="session" language="English" link="http://www.youtube.com/watch?v=rYjqa9Aof0E" username="program2game" userid="934384" postdate="2025-10-07T09:00:23-05:00" />
+						<video id="565376" title="Ludomanía: Review de Colt Express" category="review" language="Spanish" link="http://www.youtube.com/watch?v=FxsJkq0OX54" username="Ludomania_Reviews" userid="2840135" postdate="2025-08-02T04:58:27-05:00" />
+						<video id="538263" title="How to Play Colt Express: 10th Anniversary Edition" category="instructional" language="English" link="http://www.youtube.com/watch?v=034WnzT0fvU" username="thebaker1983" userid="765711" postdate="2025-02-14T08:39:09-06:00" />
+						<video id="537722" title="Кольт Экспресс - играем в настольную игру" category="session" language="Russian" link="http://www.youtube.com/watch?v=QfUQAMMyg74" username="alpaya" userid="2607310" postdate="2025-02-11T10:22:37-06:00" />
+						<video id="531088" title="Нумограй від Підпільний LIVE " category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=BJ1k_sRVagE" username="punk_rock" userid="2986072" postdate="2025-01-03T04:07:47-06:00" />
+						<video id="526817" title="Огляд від Beaver Games" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=hnLUzDvFVXo" username="davose" userid="1472043" postdate="2024-11-30T13:24:33-06:00" />
+						<video id="526815" title="Відеоправила від Lord Of Boards" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=gwQG_tdcEik" username="davose" userid="1472043" postdate="2024-11-30T13:23:40-06:00" />
+					</videos>
 
 	
 
@@ -858,24 +874,24 @@ At the end of the game, whoever fired the most bullets receives a $1,000 braggar
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="35817" />
-			<average value="7.09744" />
-			<bayesaverage value="6.95278" />
+			<usersrated value="35825" />
+			<average value="7.09765" />
+			<bayesaverage value="6.95291" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="564" bayesaverage="6.95278" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="150" bayesaverage="6.97093" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="564" bayesaverage="6.95291" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="148" bayesaverage="6.97107" />
 												</ranks>
 
-			<stddev value="1.24917" />
+			<stddev value="1.24908" />
 			<median value="0" />
-			<owned value="52098" />
-			<trading value="817" />
-			<wanting value="417" />
-			<wishing value="4785" />
-			<numcomments value="5340" />
-			<numweights value="1096" />
-			<averageweight value="1.8339" />
+			<owned value="52114" />
+			<trading value="821" />
+			<wanting value="418" />
+			<wishing value="4787" />
+			<numcomments value="5343" />
+			<numweights value="1097" />
+			<averageweight value="1.8341" />
 			</ratings>
 								</statistics>
      

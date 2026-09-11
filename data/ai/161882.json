@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "A tight, fast-playing cube-rail auction game where players bid on shares, build track, and time dividend calls to maximize their own stock value while starving rivals of income; games run under an hour but every auction and build decision is loaded with opportunity cost. It's considered one of the best entry points into the Winsome/18xx-style stock-and-rail genre because of its short length and clean rules.",
+ "summary": "Irish Gauge is a fast, cutthroat 18xx-lite game where players auction shares in five railway companies and then any shareholder can build track, upgrade towns, or call dividends for a company they hold. It plays in about an hour and rewards reading when to trigger a dividend payout versus quietly building position first.",
  "praised": [
-  "Short playtime relative to the depth of decisions",
-  "Tense, meaningful share auctions where price-setting matters as much as buying",
-  "Good gateway into 18xx-style stock/rail mechanics without the complexity",
-  "High replayability from variable company performance each game"
+  "tight 60-minute playtime",
+  "clever auction-driven turn structure",
+  "strong player interaction despite companies being jointly owned",
+  "good gateway into 18xx-style stock games"
  ],
  "criticised": [
-  "Can feel swingy or luck-influenced by which companies randomly draw good routes",
-  "Runaway leader potential if one player dominates early share/track decisions",
-  "Thin theme, essentially an abstract economic puzzle",
-  "Some feel it's overshadowed by other titles in the same Winsome/Iron Rail lineage"
+  "can feel swingy or chaotic with inexperienced players",
+  "very thin/abstract theme",
+  "initial confusion over letting any shareholder act on a company"
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction bidding and share/track competition"
+  "kind": "auction/bidding and shared-company manipulation",
+  "detail": "Players bid against each other for the right to take the next action, and crucially any shareholder can build track, upgrade a town, or call dividends for a company — so the five railway companies are fully shared state that everyone manipulates, not just their nominal owner."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever ends with the highest combined cash and stock value, driven mainly by smart auction timing and dividend calls"
+  "why": "Cash on hand at game end, built from share value and dividends received, decides the winner.",
+  "how_you_win": "Buy and time shares wisely and push companies to pay dividends at the right moment so you end with more cash than everyone else."
  },
  "similar": [
   "Chicago Express",
   "Australian Rails",
-  "London (Winsome)",
-  "Steel Driver",
-  "1830: Railways & Robber Barons"
+  "1830",
+  "Steam Barons",
+  "Volldampf"
  ],
- "_fingerprint": "7c04737d46749c98",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "No Pun Included"
+ ],
+ "_fingerprint": "7da818b1cd55576f",
  "_name": "Irish Gauge"
 }

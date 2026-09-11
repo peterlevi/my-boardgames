@@ -1,32 +1,41 @@
 {
  "confidence": "medium",
- "summary": "Friedemann Friese's ancient-Egypt entry in his oasis series is a deck/bag-building worker-placement game where players expand canals and fields on a hex-grid personal board while managing a growing pool of action cards. It rewards long-term engine planning as much as tactical adaptation, with a fair bit of solitaire-style optimization on your own tableau.",
+ "summary": "Faiyum is a Friedemann Friese design where players build canal networks on hex tiles to irrigate farmland, retrieve action cards to gain resources, and grow an engine over the course of the game. It has the fiddly, resource-heavy feel typical of Friese's designs, with route-building on a shared modular board layered over an action-retrieval economic engine.",
  "praised": [
-  "satisfying engine-building progression as your deck of actions grows",
-  "attractive, tactile hex-tile canal-building puzzle",
-  "good solo mode and scales well"
+  "Interesting canal/network-building puzzle",
+  "Good solo mode",
+  "Rewards long-term planning and efficient resource chains",
+  "Attractive modular hex board"
  ],
  "criticised": [
-  "can run long and feel a bit dry or fiddly with bookkeeping",
-  "interaction is fairly limited, mostly a multiplayer solitaire experience",
-  "learning curve to see how all the systems interlock"
+  "Rules and iconography are dense for the payoff",
+  "Can feel dry or overly fiddly compared to Friese's more famous titles",
+  "Some randomness in tile/resource availability",
+  "Less table presence and buzz than Power Grid or Fresh Fish"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "shared market/resource competition, mostly parallel play"
+  "level": "Medium",
+  "kind": "shared board competition for canal routes and tiles",
+  "detail": "Players build on a shared hex board where canal placement and land claims can block or route around opponents, but most of the engine-building happens on individual player boards. Competition for limited action cards and building sites is the main point of contact."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "final score combines developed land, buildings, and goods produced, favoring whoever built the most efficient personal engine"
+  "why": "Points come from settlements, buildings, goods delivered, and network efficiency at game end.",
+  "how_you_win": "You win by building the most efficient network of canals and settlements to generate goods and complete scoring bonuses by game end."
  },
  "similar": [
-  "Fertility",
-  "Faiyum: The Rise of Egypt expansions",
-  "Agricola",
-  "Terra Mystica",
-  "Bonfire"
+  "Fresh Fish",
+  "Power Grid",
+  "Le Havre",
+  "Bora Bora",
+  "Fields of Arle"
  ],
- "_fingerprint": "15b71e6c49414964",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "a80f042fb91b3be6",
  "_name": "Faiyum"
 }

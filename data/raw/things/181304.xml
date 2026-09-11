@@ -652,7 +652,23 @@ Once a medium has correctly guessed the suspect, location and weapon, they move 
 			
 
 			
-	
+			<videos total="208">
+						<video id="628909" title="What's in the Box - Mysterium" category="unboxing" language="English" link="http://www.youtube.com/watch?v=TADL55avrXM" username="GeeksPlusTabletop" userid="3924629" postdate="2026-09-08T09:26:45-05:00" />
+						<video id="621092" title="The Discriminating Gamer: Mysterium" category="review" language="English" link="http://www.youtube.com/watch?v=uZBoAy66cdM" username="discriminatingGamer" userid="806048" postdate="2026-07-18T19:19:36-05:00" />
+						<video id="612120" title="On tente de résoudre le meurtre avec les visions du fantôme | Mysterium" category="session" language="French" link="http://www.youtube.com/watch?v=ZXtaA1HCAOo" username="hark25" userid="134371" postdate="2026-05-17T12:00:56-05:00" />
+						<video id="599090" title="Mysterium - Tutorial do jogo" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=y7z2d9h_LJc" username="Estrategia_Invicta" userid="4394377" postdate="2026-02-20T11:02:01-06:00" />
+						<video id="597378" title="The Discriminating Gamer: Mysterium unboxing with Ray" category="unboxing" language="English" link="http://www.youtube.com/watch?v=f9Ewyepl-4M" username="discriminatingGamer" userid="806048" postdate="2026-02-11T17:18:57-06:00" />
+						<video id="596918" title="Mystérium" category="instructional" language="French" link="http://www.youtube.com/watch?v=sSYM7u2r3TQ" username="kikik58" userid="3827212" postdate="2026-02-10T10:17:08-06:00" />
+						<video id="576151" title="Mysterium Unboxing! Stunning Components &amp; Haunting Art!" category="unboxing" language="English" link="http://www.youtube.com/watch?v=IT3abZi1Kus" username="tabletop_4world" userid="3429899" postdate="2025-10-09T08:59:17-05:00" />
+						<video id="576051" title="How to play mysterium بالعربي" category="instructional" language="Arabic" link="http://www.youtube.com/watch?v=SXpMC8oFuAo" username="hussein1" userid="1185934" postdate="2025-10-08T14:45:38-05:00" />
+						<video id="575789" title="Mysterium - Nos Parties Intimes" category="session" language="French" link="http://www.youtube.com/watch?v=GnHj0X1D50Y" username="estugameofficiel" userid="2282185" postdate="2025-10-07T11:17:56-05:00" />
+						<video id="575317" title="Mysterium new version with Oleksandr Nevskiy" category="instructional" language="English" link="http://www.youtube.com/watch?v=nYQrmlTd2Uw" username="Stefan B" userid="34869" postdate="2025-10-04T14:17:37-05:00" />
+						<video id="553747" title="Reimagined Retro Board Game Classics - Clue (Cluedo)" category="review" language="English" link="http://www.youtube.com/watch?v=pvLRYH87eFE" username="dkingnu" userid="32736" postdate="2025-05-12T10:01:34-05:00" />
+						<video id="550295" title="Reseña + HTP | Mesamórfosis - Mysterium" category="review" language="Spanish" link="http://www.youtube.com/watch?v=eRw1JUqwPlc" username="Mesamorfosis" userid="3361165" postdate="2025-04-22T18:07:05-05:00" />
+						<video id="543767" title="Mysterium - Unboxing and Reboxing with Clock Assembly and Storage" category="unboxing" language="English" link="http://www.youtube.com/watch?v=hMATrcNhmbg" username="broseygames" userid="4181268" postdate="2025-03-16T22:27:10-05:00" />
+						<video id="541655" title="Mysterium in Sixty Seconds" category="review" language="English" link="http://www.youtube.com/watch?v=IMMhoAgJACg" username="Bellman" userid="4712" postdate="2025-03-05T15:59:14-06:00" />
+						<video id="530204" title="Contacting The Spirit Of Christmas | Mysterium [2]" category="session" language="English" link="http://www.youtube.com/watch?v=_Q5REW8SV6U" username="Gawyjo" userid="2940068" postdate="2024-12-26T14:36:30-06:00" />
+					</videos>
 
 	
 
@@ -661,23 +677,23 @@ Once a medium has correctly guessed the suspect, location and weapon, they move 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="49767" />
-			<average value="7.18809" />
-			<bayesaverage value="7.04578" />
+			<usersrated value="49776" />
+			<average value="7.18792" />
+			<bayesaverage value="7.04573" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="460" bayesaverage="7.04578" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="158" bayesaverage="7.02237" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="123" bayesaverage="7.04175" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="460" bayesaverage="7.04573" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="159" bayesaverage="7.02232" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="122" bayesaverage="7.04169" />
 												</ranks>
 
-			<stddev value="1.39265" />
+			<stddev value="1.3927" />
 			<median value="0" />
-			<owned value="85471" />
+			<owned value="85495" />
 			<trading value="1302" />
-			<wanting value="581" />
-			<wishing value="9502" />
-			<numcomments value="7022" />
+			<wanting value="583" />
+			<wishing value="9499" />
+			<numcomments value="7023" />
 			<numweights value="1040" />
 			<averageweight value="1.8904" />
 			</ratings>

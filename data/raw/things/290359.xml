@@ -438,7 +438,23 @@ Tokens
 			
 
 			
-	
+			<videos total="74">
+						<video id="524682" title="nieustraszeni: afryka północna. unbixing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=J4MeUnKziSE" username="edd_hunter" userid="823546" postdate="2024-11-16T17:40:33-06:00" />
+						<video id="509972" title="Undaunted North Africa Unboxing 8/20/24" category="session" language="English" link="http://www.youtube.com/watch?v=jdup_P3u5Oc" username="Maltsensation" userid="1050390" postdate="2024-08-20T16:34:48-05:00" />
+						<video id="460522" title="No Strings Attached - Undaunted: North Africa" category="review" language="English" link="http://www.youtube.com/watch?v=3XVDbfUqzu4" username="TomVasel" userid="722" postdate="2023-10-07T17:13:06-05:00" />
+						<video id="448446" title="Destemidos Norte da África -  Regras e Gameplay" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=_I8UsFfmtUk" username="Tankbr" userid="1077155" postdate="2023-07-26T14:45:01-05:00" />
+						<video id="447845" title="Розпаковка від ІгроЛігво" category="unboxing" language="Ukrainian" link="http://www.youtube.com/watch?v=ON9fetYDw54" username="punk_rock" userid="2986072" postdate="2023-07-22T15:32:01-05:00" />
+						<video id="445325" title="Destemidos: Norte da África | Visão geral e componentes" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=IrFZE0GeFZ4" username="TORUGO" userid="1169932" postdate="2023-07-08T09:05:30-05:00" />
+						<video id="444089" title="O que Tem na Caixa? Unboxing Destemidos Norte da África" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=3Y_acNfFarg" username="Tankbr" userid="1077155" postdate="2023-06-29T15:06:05-05:00" />
+						<video id="429558" title="Undaunted North Africa &amp; Normandy - Due Chiacchiere con il Meeple con la Camicia " category="review" language="Italian" link="http://www.youtube.com/watch?v=4PIbL56U1J0" username="The Real Oivalf" userid="1084307" postdate="2023-03-22T14:54:37-05:00" />
+						<video id="418133" title="Unboxing di Undaunted: North Africa" category="unboxing" language="Italian" link="http://www.youtube.com/watch?v=ESyEdFYkiV0" username="SuperRiccio" userid="2041863" postdate="2023-01-13T09:33:34-06:00" />
+						<video id="414464" title="Odhodlaní: Severní Afrika a Normandie - videorecenze [CZ]" category="review" language="Czech" link="http://www.youtube.com/watch?v=s-rw82NjUaY" username="bedikk" userid="1480921" postdate="2022-12-18T05:26:32-06:00" />
+						<video id="410583" title="(898) Undaunted: North Africa - review (ENG)" category="review" language="Polish" link="http://www.youtube.com/watch?v=OGZwN0QsuO8" username="Jean_Leviathan" userid="234662" postdate="2022-11-22T09:31:05-06:00" />
+						<video id="410339" title="OnTableTop Undaunted: North Africa Solo Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=vcx7sKSiQlo" username="Ben_OspreyGames" userid="3207326" postdate="2022-11-21T04:17:53-06:00" />
+						<video id="407781" title="Undaunted: Nordafrika - Brettspiel Unboxing" category="unboxing" language="German" link="http://www.youtube.com/watch?v=LPgmDe8tqpg" username="Madhunter" userid="1062702" postdate="2022-11-05T04:54:15-05:00" />
+						<video id="398698" title="Rules Breakdown: Undaunted North Africa Part 2" category="instructional" language="English" link="http://www.youtube.com/watch?v=d3QJVlr_8dQ" username="BenHarsh" userid="1099418" postdate="2022-09-12T18:16:38-05:00" />
+						<video id="394613" title="Undaunted North Africa - Mission 4 playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=JEQnho9wJ8k" username="Def_Oz" userid="790515" postdate="2022-08-16T18:38:00-05:00" />
+					</videos>
 
 	
 
@@ -447,21 +463,21 @@ Tokens
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="4701" />
-			<average value="7.74002" />
-			<bayesaverage value="6.93527" />
+			<usersrated value="4702" />
+			<average value="7.74028" />
+			<bayesaverage value="6.93496" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="588" bayesaverage="6.93527" />
-																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="57" bayesaverage="7.37309" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="589" bayesaverage="6.93496" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="57" bayesaverage="7.37248" />
 												</ranks>
 
-			<stddev value="1.29051" />
+			<stddev value="1.29133" />
 			<median value="0" />
-			<owned value="14213" />
-			<trading value="221" />
+			<owned value="14223" />
+			<trading value="222" />
 			<wanting value="255" />
-			<wishing value="1834" />
+			<wishing value="1833" />
 			<numcomments value="948" />
 			<numweights value="108" />
 			<averageweight value="2.3519" />

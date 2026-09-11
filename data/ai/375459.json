@@ -1,34 +1,40 @@
 {
- "confidence": "medium",
- "summary": "Speakeasy is a dense Vital Lacerda worker-placement engine-builder where you juggle hand management, resource conversion, and area influence to run a Prohibition-era bootlegging operation while dodging mob and police pressure. Turns involve tight optimization of interlocking subsystems rather than direct conflict, with occasional aggressive options (robbing rum runners) layered on top of a mostly parallel economic race.",
+ "confidence": "high",
+ "summary": "Speakeasy is a dense Vital Lacerda worker-placement game where players run rival Prohibition-era speakeasies, juggling territory influence, production chains, and card-driven abilities across a tightly interlocked system. Like his other designs, it rewards long-term planning and punishes wasted actions, with a heavy rules load up front.",
  "praised": [
-  "Intricate, tightly interlocking systems typical of Lacerda's design",
-  "Strong thematic integration between mechanisms and Prohibition-era setting",
-  "High production values and player agency in multiple viable strategies",
-  "Satisfying long-term engine building once the rules click"
+  "deeply interlocking systems where every decision ripples elsewhere",
+  "strong thematic integration of Prohibition-era mob business",
+  "high replayability from Lacerda's typical density of options",
+  "excellent production values"
  ],
  "criticised": [
-  "Steep learning curve and dense rulebook typical of Lacerda titles",
-  "Long teach and setup time",
-  "Analysis paralysis due to many simultaneous options",
-  "Requires multiple plays before the systems feel intuitive"
+  "steep rules teach and long playtime that can alienate casual players",
+  "prone to analysis paralysis given how many systems interact",
+  "niche appeal outside dedicated heavy-euro gamers"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light blocking on worker-placement spots and occasional targeted robbing/attacking"
+  "level": "Medium",
+  "kind": "area majority and worker placement competition",
+  "detail": "Players contest the same districts and placement spots, so territorial influence and timing directly affect rivals, while much of the engine-building (resources, cards, upgrades) happens on individual player boards. The shared Manhattan map is where most direct competition plays out."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "final score combines infamy, territory control, business upgrades, and multiple end-game bonuses typical of Lacerda's multi-track scoring"
+  "breadth": "Salad",
+  "why": "As in most Lacerda designs, points are stitched together from many semi-independent tracks: territory influence, production, cards, and end-game bonuses.",
+  "how_you_win": "You win by building the most efficient speakeasy operation, converting resources and territorial influence into the widest spread of scoring opportunities by game end."
  },
  "similar": [
   "On Mars",
-  "Weather Machine",
-  "Gaia Project",
+  "Lisboa",
+  "Escape Plan",
   "The Gallerist",
-  "Lisboa"
+  "Vinhos"
  ],
- "_fingerprint": "ccc41daddc6750f0",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "687646f51c4ef81e",
  "_name": "Speakeasy"
 }

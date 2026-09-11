@@ -39,9 +39,20 @@ That is where **Wins by**, **Breadth**, the interaction *kind*, and the "what
 people say" panel come from.
 
 ```bash
-python3 scripts/enrich.py            # only games without a current answer
+python3 scripts/sync.py              # runs it as part of the pipeline
+python3 scripts/enrich.py            # or on its own
 python3 scripts/enrich.py --force    # redo everything
+python3 scripts/sync.py --no-ai      # skip it deliberately
 ```
+
+**Without it the report still works.** No `claude` on PATH and the step says
+so and exits 0; the rest of the pipeline is unaffected. Interaction falls back
+to the level derived from BGG's mechanics, the detail panel omits the opinion
+block rather than showing empty fields, images fall back to BGG's single box
+shot, and "How to play" falls back to a YouTube search. Verified by rendering
+a copy of the collection with `data/ai` and `data/gallery` absent and `claude`
+removed from PATH. A half-finished run is fine too: the cache is per game, so
+some rows simply have more than others.
 
 Three things make it trustworthy enough to put in a table:
 

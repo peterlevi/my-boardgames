@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Broom Service is a tense bluffing game where you simultaneously commit to role cards and then find out if your bold 'brave' actions get stolen out from under you by braver opponents. The push-your-luck tension of deciding cowardly-vs-brave, combined with racing potions across the map, makes for a fast, mean, and often hilarious multiplayer experience.",
+ "summary": "Broom Service is a bluffing-driven role-selection game where players choose bold or timid versions of witch and druid roles to deliver potions. The simultaneous reveal creates constant tension as bold actions are more powerful but can be blocked by other bold players.",
  "praised": [
-  "Clever bluffing/mind-reading tension between cowardly and brave role choices",
-  "Fast-playing with high player interaction and table talk",
-  "Good scaling including a well-regarded 2-player variant",
-  "Nice component and art upgrade over Witch's Brew"
+  "Clever push-your-luck role selection with real bluffing tension",
+  "Quick to teach and plays fast",
+  "Fun simultaneous-reveal moments that spark table talk"
  ],
  "criticised": [
-  "Can feel mean or swingy when your brave action gets stolen, especially for newer players",
-  "Some find the theme pasted-on and interchangeable with the original Witch's Brew",
-  "Simultaneous role selection can lead to analysis paralysis in longer player counts",
-  "Luck of card draw for ingredients/weather adds variance some don't like"
+  "Can feel swingy or luck-driven in outcomes",
+  "Round structure can feel repetitive over 7 rounds",
+  "Some find the theme forgettable"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "bluffing and role-stealing"
+  "level": "Medium",
+  "kind": "bluffing and blocking",
+  "detail": "Players secretly choose roles that are revealed simultaneously, and bold actions get blocked if multiple players choose the same bold role, directly punishing predictable play. The delivery board and potions are shared, while each player's chosen cards stay hidden until reveal."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points mainly come from delivering potions of different colors, with bonus scoring from special roles and end-game majorities"
+  "breadth": "Focused",
+  "why": "Victory points come almost entirely from delivering potions to villages and completing castle deliveries",
+  "how_you_win": "You win by delivering the most potions to houses and castles across the game's rounds before the track runs out."
  },
  "similar": [
   "Witch's Brew",
-  "Libertalia",
-  "Skull King",
-  "Mission: Red Planet",
-  "Diamant"
+  "Hawaii",
+  "Kobayakawa",
+  "Incan Gold / Diamant",
+  "Traders of Osaka"
  ],
- "_fingerprint": "ccb9e08bc062592b",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "0ed92094f1c6ef04",
  "_name": "Broom Service"
 }

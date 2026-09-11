@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "A tight, puzzly worker-placement-adjacent Euro where you race around a rondel-like action track to gather resources and place them on angled garden boards to determine ingredient quality, then brew barrels scored by their weakest ingredient. It plays fast for its depth, with constant tension between rushing to grab good rondel spots and taking time to upgrade your garden.",
+ "summary": "Heaven & Ale has you moving a shared rondel-like track to gather ingredients and monks while carefully layering colored barrel tiles to maximize scoring runs. It's a tight, efficient engine game where spatial puzzle-solving on your barrel board matters as much as resource collection.",
  "praised": [
-  "Elegant, tightly interlocking systems for a mid-weight game",
-  "Clever tile-tilting garden mechanic that rewards spatial planning",
-  "Fast turns and low downtime despite meaningful depth",
-  "High replayability from varied strategies and player counts",
-  "Satisfying puzzle of optimizing barrel quality before scoring"
+  "clever barrel-layering scoring puzzle",
+  "tight and efficient game length",
+  "meaningful once-per-game special abilities",
+  "elegant tension between garden expansion and harvesting"
  ],
  "criticised": [
-  "Barrel scoring uses lowest-value-counts-most, which can feel punishing or fiddly to track",
-  "Rondel/turn-order tension can create early-game analysis paralysis",
-  "Some randomness in resource/tile availability can swing outcomes",
-  "Theme feels pasted on rather than integrated"
+  "rondel/turn-order mechanism can feel fiddly at first",
+  "barrel scoring math takes a game or two to click",
+  "limited direct player interaction beyond spot competition",
+  "theme feels pasted on"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "turn-order and rondel-spot claiming, indirect competition for shared resources"
+  "level": "Low",
+  "kind": "spot/rondel competition for resources",
+  "detail": "Players race for shared spaces on a central rondel and monk track, occasionally blocking each other from ideal actions, but nearly all scoring happens on each player's own barrel board independent of others."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Points come from barrel quality (bounded by the weakest ingredient), garden expansion, and bonus track progress, so efficient balancing across a few interlocking systems decides the winner"
+  "why": "Points come from barrel-tile layering bonuses plus building and garden upgrades, all converging on a final tally.",
+  "how_you_win": "You win by arranging barrel tiles into long same-colored horizontal runs across upgraded rows, maximizing multiplied scoring at game end."
  },
  "similar": [
-  "The Castles of Burgundy",
-  "Village",
-  "Bruges",
-  "Vineyard",
-  "Concordia"
+  "Trajan",
+  "Villagers",
+  "Barrage",
+  "The Voyages of Marco Polo",
+  "Vinhos"
  ],
- "_fingerprint": "7311ac967d74929d",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "0e0232507df26b2e",
  "_name": "Heaven & Ale"
 }

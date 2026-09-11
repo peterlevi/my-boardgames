@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "A dense, puzzly worker-placement-adjacent game where the six actions on the shifting 'crane' constantly change in cost and reward, so most of the game is spent reading the current board state and chaining a few efficient moves before the setup shifts again. It rewards engine-building and tight optimization over direct interaction, with construction of the bridge, city walls, and cathedral providing the scoring backbone.",
+ "summary": "Praga Caput Regni is a dense action-drafting euro where players build up personal tableaus of city districts, cathedral levels, and university tracks by choosing actions on a shared central board. It's a heavy points-optimization puzzle with several interlocking scoring engines that reward planning a coherent long-term strategy over reacting turn to turn.",
  "praised": [
-  "Clever, tightly-interlocking action system where the crane's shifting costs/rewards create constant fresh puzzles",
-  "High replayability due to variable setup and multiple viable strategies",
-  "Strong sense of progression and engine-building satisfaction",
-  "Elegant hexagonal tile-laying for New Prague City",
-  "Manages its complexity without feeling bloated once learned"
+  "Rich, interlocking systems that feel satisfying to optimize",
+  "High replayability from variable setup and multiple viable strategies",
+  "Elegant action-selection mechanism (the crane) that creates real decisions",
+  "Strong solo mode"
  ],
  "criticised": [
-  "Steep learning curve and a lot of upfront rules/iconography to absorb",
-  "Can feel more solitaire/multiplayer-solitaire than interactive",
-  "Analysis paralysis potential given the many interlocking sub-systems",
-  "Some find the theme pasted-on to what is fundamentally an abstract optimization puzzle"
+  "Steep learning curve and rules overhead for new players",
+  "Can suffer from analysis paralysis given the many options",
+  "Thematic integration feels thin compared to the mechanical depth",
+  "Some symbol/iconography heaviness"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light area-majority competition for building spots"
+  "level": "Medium",
+  "kind": "area majority and shared board competition",
+  "detail": "Players compete for limited actions on the shared action crane and for area-majority bonuses on the map, so timing and racing for key spots matters, but most of the actual building happens on each player's own tableau. The shared elements (board spaces, majority bonuses) create indirect pressure rather than direct attacks."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from multiple construction projects (city tiles, bridge, walls, cathedral), resource/action-strength efficiency, and end-game bonuses, so the winner is decided by whoever builds the most efficient overall engine rather than one dominant source"
+  "why": "Points accumulate from multiple tracks: buildings, cathedral, university, coats of arms, and end-game bonuses, so the winner is whoever balances several engines best.",
+  "how_you_win": "You win by efficiently combining building placements, majority control, and track advancement to rack up more total points than opponents by game end."
  },
  "similar": [
   "Underwater Cities",
   "The Voyages of Marco Polo",
-  "Bonfire",
-  "Pulsar 2849",
-  "Alchemists"
+  "Barrage",
+  "Merv: The Heart of the Silk Road",
+  "Pipeline"
  ],
- "_fingerprint": "1e8b69c7338e6d44",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "c52a2b5bc5fe39ba",
  "_name": "Praga Caput Regni"
 }

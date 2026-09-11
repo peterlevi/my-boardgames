@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "A dense, cutthroat tile-placement game where you build linked civilizations along rivers and fight brutal internal and external conflicts to install or topple leaders. It rewards ruthless, calculated aggression and balanced development over any single strong suit, since your final score is only as high as your weakest of four categories.",
+ "summary": "Tigris & Euphrates is Knizia's abstract civilization classic where players place tiles to grow kingdoms led by four types of leaders, with your final score determined by your weakest of the four color categories, forcing balanced development. Conflicts between adjacent kingdoms are resolved by leader strength and can wipe out large swaths of tiles, making it a tense, cutthroat game beneath its calm exterior.",
  "praised": [
-  "Deep, ruthless strategic depth that rewards long-term planning",
-  "Conflict system (internal and external) is tense and meaningful",
-  "Elegant, tightly interlocking rules with no wasted mechanisms",
-  "High replayability due to shifting alliances and board states"
+  "brilliant 'your weakest category counts' scoring twist",
+  "deep, elegant rules with minimal luck",
+  "high tension from tile-placement conflicts"
  ],
  "criticised": [
-  "Steep learning curve and rules that are hard to fully grasp on a first play",
-  "Can feel mean and confrontational, alienating players who dislike direct conflict",
-  "Downtime and analysis paralysis in higher player counts",
-  "Red (conflict) tiles and combat math are unintuitive at first"
+  "steep learning curve for an abstract game",
+  "can feel harsh or swingy for newer players when a kingdom collapses",
+  "dry presentation that undersells its depth"
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct conflict, blocking, and area control"
+  "kind": "open conflict and territorial tile placement",
+  "detail": "All tiles and leaders are placed on one shared board, and kingdoms merging or leaders clashing directly destroys opponents' tiles and points, so nearly the entire game state is contested rather than private."
  },
  "win_criteria": "Lowest-highest scoring",
  "scoring": {
-  "breadth": "Broad",
-  "why": "The winner is whoever has the highest score in their single weakest of the four leader categories, forcing balanced growth across all colors rather than a dominant specialty."
+  "breadth": "Focused",
+  "why": "Only your lowest-scoring color category counts at the end, so the winner is whoever balances all four leader types rather than maxing any single one.",
+  "how_you_win": "You win by carefully bringing all four of your victory point colors up together while using conflicts to weaken opponents' weakest categories even further."
  },
  "similar": [
   "Through the Desert",
-  "Samurai",
-  "El Grande",
-  "Twilight Struggle",
-  "Blood Rage"
+  "Ra",
+  "Amun-Re",
+  "Blue Lagoon",
+  "Yspahan"
  ],
- "_fingerprint": "6e5f9cf64ae86d78",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames",
+  "Before You Play"
+ ],
+ "_fingerprint": "7688c2532f57ad2b",
  "_name": "Tigris & Euphrates"
 }

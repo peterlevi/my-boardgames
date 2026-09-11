@@ -1,34 +1,39 @@
 {
- "confidence": "high",
- "summary": "Black Angel is a heavy euro where players use dice as workers to explore a shrinking, tile-based spaceship map, gathering resources and completing contracts while racing to reach planet Spes before the Ravager deck runs out. Despite the cooperative-sounding theme, it's a competitive point-salad race with tight turn efficiency puzzles and a constant push against the game's own countdown clock.",
+ "confidence": "medium",
+ "summary": "Black Angel is a cooperative sci-fi worker-placement game where a crew of robots must keep a generation ship running across a long journey through space, using dice as degrading workers to manage systems, explore, and survive crises. It has a tense, atmospheric feel but carries a fair amount of rules and bookkeeping overhead for a cooperative title.",
  "praised": [
-  "innovative dice-as-workers mechanic with meaningful dice manipulation",
-  "tense shared countdown (map reduction / Ravager deck) that pressures every turn",
-  "strong production values and thematic artwork/sculpts",
-  "satisfying engine-building and turn-optimization puzzle"
+  "Atmospheric theme with a real sense of a long, perilous journey",
+  "Unique dice-as-workers mechanic where dice degrade with use",
+  "Tense cooperative decision-making under pressure"
  ],
  "criticised": [
-  "dense, icon-heavy rulebook with a steep learning curve",
-  "significant setup/teardown and table footprint",
-  "some luck from dice rolls even with mitigation options",
-  "can feel more solitaire/parallel than interactive for a 'shared ship' theme"
+  "Rules complexity is heavy for a cooperative game",
+  "Bookkeeping and exceptions can slow the game down",
+  "Some swinginess from dice/event randomness"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "indirect competition for shared tiles/worker spots and racing the shrinking map"
+  "level": "High",
+  "kind": "cooperative resource and crisis management",
+  "detail": "Players jointly manage a shared ship board, shared resource pools, and shared threats, discussing and coordinating which worker-dice to commit where each round. Individual player roles exist but nearly all meaningful state — power, hull integrity, exploration progress — is shared and affected by everyone's choices."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Broad",
-  "why": "points come from exploring/claiming tiles, completing contracts, combat tokens, and end-game bonuses, so efficient multi-source engine building decides the winner"
+  "breadth": "Focused",
+  "why": "Success or failure hinges on whether the crew collectively keeps the ship functional and reaches its destination rather than on accumulating points against each other.",
+  "how_you_win": "The group wins by managing power, resources, and crises well enough to keep the ship alive and complete its objectives before systems fail or time runs out."
  },
  "similar": [
-  "On Mars",
-  "Anachrony",
-  "Trickerion: Legends of Illusion",
-  "Tzolk'in: The Mayan Calendar",
-  "Rurik: Dawn of Kiev"
+  "Robinson Crusoe: Adventures on the Cursed Island",
+  "First Martians: Adventures on the Red Planet",
+  "Nemesis",
+  "Space Alert",
+  "Andor"
  ],
- "_fingerprint": "c4aed25e12f15655",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "059d19bb2258bfe6",
  "_name": "Black Angel"
 }

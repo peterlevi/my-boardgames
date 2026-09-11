@@ -328,7 +328,23 @@ A feature of 18Chesapeake, as with all the other games in the series, is that th
 			
 
 			
-	
+			<videos total="23">
+						<video id="545290" title="18Chesapeake - Tutorial" category="instructional" language="English" link="http://www.youtube.com/watch?v=Xc0IHHViFlM" username="danielbonito" userid="379105" postdate="2025-03-25T04:10:35-05:00" />
+						<video id="489462" title="18Chesapeake- 4p Teaching, Play-through, &amp; Roundtable Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=HXd3WIoZSro" username="eapeas" userid="377742" postdate="2024-04-07T18:17:56-05:00" />
+						<video id="392107" title="18Chesapeake - Tutorial - KludiK" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=4-q4yeIpHbg" username="karallan" userid="585668" postdate="2022-07-29T05:26:31-05:00" />
+						<video id="383731" title="We Tried 18xx, So You Don't Have To - 18 Chesapeake | 4p Gameplay" category="review" language="English" link="http://www.youtube.com/watch?v=rVz0Yif0yD8" username="Quackalope" userid="1996209" postdate="2022-06-03T07:50:54-05:00" />
+						<video id="364594" title="Live Teach Q&amp;A: 18Chesapeake (A Great Intro to 18xx)" category="instructional" language="English" link="http://www.youtube.com/watch?v=StNbdIFlzfk" username="ryanespin" userid="240424" postdate="2022-02-04T09:01:18-06:00" />
+						<video id="364431" title="18Chesapeake - 4p Teaching, Play-through, &amp; Roundtable by Heavy Cardboard" category="review" language="English" link="http://www.youtube.com/watch?v=5fxfrEUqD6Q" username="eapeas" userid="377742" postdate="2022-02-03T10:24:30-06:00" />
+						<video id="329129" title="Explications des règles en français" category="instructional" language="French" link="http://www.youtube.com/watch?v=PN_rdS3loGE" username="thrasho" userid="1579077" postdate="2021-06-12T08:40:27-05:00" />
+						<video id="316901" title="18Chesapeake Green Phase Builds" category="instructional" language="English" link="http://www.youtube.com/watch?v=ZDZgPzrFaJY" username="leonej" userid="701581" postdate="2021-04-04T22:19:41-05:00" />
+						<video id="316718" title="18chesapeake Yellow Phase track build" category="instructional" language="English" link="http://www.youtube.com/watch?v=pMKE6HmYMUE" username="leonej" userid="701581" postdate="2021-04-03T20:41:00-05:00" />
+						<video id="315276" title="How to play 18Chesapeake Off The Rails" category="instructional" language="English" link="http://www.youtube.com/watch?v=wEydBV35SWE" username="leonej" userid="701581" postdate="2021-03-26T22:57:46-05:00" />
+						<video id="310740" title="How to Play 18Chesapeake" category="instructional" language="English" link="http://www.youtube.com/watch?v=RZhxv0Aa4lw" username="cwhitpan" userid="528128" postdate="2021-03-01T17:51:20-06:00" />
+						<video id="270516" title="18Chesapeake Operating Round" category="instructional" language="English" link="http://www.youtube.com/watch?v=nBg-u7o0t_Y" username="leonej" userid="701581" postdate="2020-06-29T17:08:53-05:00" />
+						<video id="269951" title="The Stock round" category="instructional" language="English" link="http://www.youtube.com/watch?v=s2ADKmmn6E4" username="leonej" userid="701581" postdate="2020-06-24T17:00:44-05:00" />
+						<video id="269600" title="18Chesapeake Initial Auction" category="instructional" language="English" link="http://www.youtube.com/watch?v=WIwesB8TCEs" username="leonej" userid="701581" postdate="2020-06-22T14:38:01-05:00" />
+						<video id="269140" title="18Chesapeake - All-Aboard Games, 2020" category="unboxing" language="English" link="http://www.youtube.com/watch?v=tthao0Y1f3w" username="ender821" userid="985459" postdate="2020-06-18T13:05:18-05:00" />
+					</videos>
 
 	
 
@@ -337,16 +353,16 @@ A feature of 18Chesapeake, as with all the other games in the series, is that th
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="1898" />
-			<average value="7.57273" />
-			<bayesaverage value="6.42157" />
+			<usersrated value="1899" />
+			<average value="7.5719" />
+			<bayesaverage value="6.42147" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1540" bayesaverage="6.42157" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1540" bayesaverage="6.42147" />
 																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="777" bayesaverage="6.61045" />
 												</ranks>
 
-			<stddev value="1.36925" />
+			<stddev value="1.36936" />
 			<median value="0" />
 			<owned value="2600" />
 			<trading value="59" />

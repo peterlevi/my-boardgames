@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Witchstone is a dense Knizia-designed puzzle of drafting hexagonal dominoes to build a personal cauldron network, scooping crystals, and chaining bonus actions across witches, the pentagram, and the wand; it plays like a solitaire optimization exercise where every turn ripples through your own engine. The eleven-round structure creates a tight arc where early tile choices constrain later combos, rewarding players who can plan several moves ahead.",
+ "summary": "Witchstone is a Reiner Knizia network-and-tile game where players extend paths of witches out from their towers around a central hexagonal board, scooping crystals from a shared cauldron and racing to claim scoring tiles before others. It plays with the clean, mathematical tension typical of Knizia designs, where timing and route efficiency matter more than direct confrontation.",
  "praised": [
-  "Clever, tightly interlocking systems that create satisfying combos",
-  "High replayability from variable domino draws and multiple viable strategies",
-  "Strong table presence and component quality",
-  "Rewards long-term planning and efficient engine-building"
+  "clean, elegant Knizia-style rules with real depth",
+  "satisfying network-building puzzle on the hex board",
+  "good tension from competing for the same scoring opportunities",
+  "quick to teach relative to its strategic depth"
  ],
  "criticised": [
-  "Steep rules overhead and fiddly bookkeeping for what is essentially a multiplayer solitaire",
-  "Low direct interaction beyond drafting competition",
-  "Can feel overwhelming or analysis-paralysis-inducing on early plays",
-  "Some feel it's overly complex relative to the depth of decisions"
+  "can feel dry or abstract despite the fantasy theme",
+  "some player-count-dependent balance issues",
+  "route-blocking can feel harsh to newer players",
+  "less table talk or direct interaction than the fantasy theme might suggest"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "competitive tile drafting, otherwise mostly parallel play"
+  "level": "Medium",
+  "kind": "route blocking and area competition",
+  "detail": "Players extend witch paths across a shared hex board and compete for the same crystals, prophecy scrolls, and scoring tiles, so claiming a spot can block or slow a rival's route, even though each player also tracks their own private cauldron and score."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from multiple engines at once (crystal collection, network connections, prophecy scrolls, end-game bonuses), so the winner is whoever built the most efficient combination across systems rather than maximizing one track."
+  "why": "Points come from network length, crystal collection, prophecy scroll fulfillment, and pentagram/wand bonuses, rewarding whoever balances multiple scoring tracks best.",
+  "how_you_win": "You win by extending your witch network efficiently to claim crystals and prophecy bonuses ahead of opponents, ending with the highest combined score across the game's several scoring tracks."
  },
  "similar": [
-  "Barony",
-  "Yokohama",
-  "The Voyages of Marco Polo",
-  "Kingdomino",
-  "Trajan"
+  "Yellow & Yangtze",
+  "Tigris & Euphrates",
+  "Ra",
+  "Blue Lagoon",
+  "Through the Desert"
  ],
- "_fingerprint": "8fdebf0c5b6b75d2",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "fdecf9cb09ed6c19",
  "_name": "Witchstone"
 }

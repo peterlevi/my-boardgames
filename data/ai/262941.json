@@ -1,36 +1,41 @@
 {
- "confidence": "high",
- "summary": "A tighter, faster-playing sibling to the original Dominant Species, where you place action pawns to gain domination cards, adapt your species to survive shifting ocean and shoreline tiles, and outcompete rivals before recurring extinction events wipe out the unprepared. It's still a dense worker-placement/area-influence engine, but trimmed down in rules overhead and playtime compared to its predecessor.",
+ "confidence": "medium",
+ "summary": "Dominant Species: Marine takes Chad Jensen's brutal ice-age survival epic underwater, with players guiding aquatic animal classes competing for domination via tile placement, action-pawn drafting, and elimination-driven scoring. It's a long, heavy, cutthroat area-control game where every action is a trade-off in a tightening ecological squeeze.",
  "praised": [
-  "Tense, meaningful worker placement where action order and blocking matter a lot",
-  "Strong theme integration — adaptation, migration, and extinction feel mechanically justified",
-  "Noticeably shorter and more approachable than the original Dominant Species while keeping its depth",
-  "High replayability from the four asymmetric animal classes and variable card/tile draws",
-  "Satisfying long-term strategic tension between spreading wide and dominating specific habitats"
+  "Deep, interlocking action-selection mechanism",
+  "Strong thematic tension of ecological competition",
+  "Rewards long-term planning and adaptation",
+  "Faithful, well-regarded reworking of a beloved heavy game"
  ],
  "criticised": [
-  "Still a heavy, brain-burny game with real analysis paralysis potential",
-  "Runtime and rules overhead remain a lot to ask of casual groups despite being 'the shorter one'",
-  "Multiplayer solitaire feel at lower player counts",
-  "Can feel swingy or punishing when an extinction event catches you unprepared",
-  "Compared favorably but sometimes seen as 'Dominant Species lite' by fans of the original"
+  "Very long playtime, often 2.5-3+ hours",
+  "High rules complexity and steep learning curve",
+  "Significant player elimination pressure/scarcity can feel punishing",
+  "Niche appeal outside heavy-eurogamer audiences"
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking and area denial via worker placement and area majority"
+  "kind": "area majority, tile placement, and direct competition for survival",
+  "detail": "Players place elements and take actions on a shared, shrinking hex map, directly displacing and eliminating each other's species to control regions. Nearly the entire board is contested shared space, with minimal private player area beyond an action-pawn track."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory points come from multiple domination cards and habitat/species scoring at various tile ascensions, so success depends on diversifying scoring sources rather than one dominant strategy."
+  "why": "Points accumulate from dominance in various habitat types and elements each scoring round, so consistent, wide-reaching board presence decides the winner",
+  "how_you_win": "Out-compete other species for majority control across the most valuable habitats and elements over repeated scoring rounds, ending with the highest cumulative total."
  },
  "similar": [
   "Dominant Species",
   "Tichu",
-  "Bios: Megafauna",
-  "Evolution",
-  "Trickerion: Legends of Illusion"
+  "Vast: The Crystal Caverns",
+  "Root",
+  "Kanban EV"
  ],
- "_fingerprint": "4f26cfe1ed4bf46a",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "d29e206cc937b2f5",
  "_name": "Dominant Species: Marine"
 }

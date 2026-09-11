@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Through the Ages is a dense civilization-building card game where you spend action points each turn to grow population, mine resources, research technologies, and build wonders while managing a separate military track to deter aggression. Turns are heavy with multi-step planning and the game rewards efficient engine-building over a long, calculation-intensive playtime.",
+ "summary": "Through the Ages is a dense civilization-building card game where players draft technologies, leaders, and wonders across three ages while balancing culture, production, and military strength. It's widely regarded as one of the deepest civ games on cardboard, with tense decisions about when to invest in military to threaten or deter opponents.",
  "praised": [
-  "Extremely deep, satisfying engine-building with meaningful long-term strategy",
-  "Elegant action-point and card-drafting systems that create constant tough choices",
-  "Military/aggression mechanic gives real teeth to interaction without direct elimination of turns",
-  "High replayability due to variable card availability each game"
+  "exceptional strategic depth and long-term planning",
+  "elegant tension between military, culture, and economy",
+  "very high replayability"
  ],
  "criticised": [
-  "Long playtime and heavy analysis paralysis, especially with 4 players",
-  "Steep learning curve and rulebook complexity for new players",
-  "Aggression/war mechanic can feel punishing or swingy for the player on the receiving end",
-  "Downtime between turns can be significant in higher player counts"
+  "brutal learning curve, especially around military mechanics",
+  "long playtime that can drag with new players",
+  "can feel punishing if you fall behind militarily early"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "competitive drafting plus military aggression/take-that"
+  "level": "High",
+  "kind": "open drafting and military take-that",
+  "detail": "Players compete over a shared, visible market of cards to draft each round, and military strength can be used to directly attack and steal points from weaker opponents, making the shared board state constantly relevant even though each player's civilization track is their own."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Culture points accumulate over the whole game from technologies, wonders, leaders, and events, so the winner is whoever built the most efficient, well-rounded civilization engine."
+  "why": "Culture points accumulate every round from civil actions, buildings, and wonders, with military events able to swing totals sharply, so the winner is whoever manages the broadest balanced civilization.",
+  "how_you_win": "You win by out-teching and out-culturing opponents while keeping enough military to avoid being raided for points."
  },
  "similar": [
-  "Terra Mystica",
-  "Brass: Birmingham",
-  "Puerto Rico",
-  "Twilight Imperium",
-  "Clash of Cultures"
+  "Clash of Cultures",
+  "Innovation",
+  "Nations",
+  "Concordia",
+  "Brass: Birmingham"
  ],
- "_fingerprint": "0f236d56da6d0502",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "765a3586bf912194",
  "_name": "Through the Ages: A New Story of Civilization"
 }

@@ -358,7 +358,23 @@ An unofficial 2-player variant from the designer has been made available in the 
 			
 
 			
-	
+			<videos total="51">
+						<video id="456045" title="Знакомство с игрой" category="review" language="Russian" link="http://www.youtube.com/watch?v=-7Xqt-gl45o" username="snowbody" userid="201253" postdate="2023-09-11T02:49:23-05:00" />
+						<video id="391234" title="¿1846 más amable que 1830?" category="review" language="Spanish" link="http://www.youtube.com/watch?v=AfVzRmZ2vME" username="marioaguila" userid="37918" postdate="2022-07-22T11:27:06-05:00" />
+						<video id="390107" title="Comparativa juegos 1830 versus 1846" category="review" language="Spanish" link="http://www.youtube.com/watch?v=1K0TKTND4Bo" username="marioaguila" userid="37918" postdate="2022-07-15T07:19:01-05:00" />
+						<video id="389629" title="Videoreseña en 5' - 1846" category="review" language="Spanish" link="http://www.youtube.com/watch?v=jxBxC5ZGOo4" username="marioaguila" userid="37918" postdate="2022-07-11T19:05:58-05:00" />
+						<video id="389584" title="Tutorial 1846: 2/4 - Ronda Accionaria" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=Pshz6sK7J9o" username="marioaguila" userid="37918" postdate="2022-07-11T11:16:07-05:00" />
+						<video id="389583" title="Tutorial 1846:  1/4 - Intro-Setup-Selección cartas especiales" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=gp7occ2WeKE" username="marioaguila" userid="37918" postdate="2022-07-11T11:14:52-05:00" />
+						<video id="389394" title="Tutorial 1846: 3/4 - Ronda Operativa" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=U8L0PiPcyS8" username="marioaguila" userid="37918" postdate="2022-07-10T12:09:37-05:00" />
+						<video id="388524" title="Jugando 1846 a 4 jugadores. De la serie 18xx." category="session" language="Spanish" link="http://www.youtube.com/watch?v=brda36hm6fE" username="marioaguila" userid="37918" postdate="2022-07-04T18:58:27-05:00" />
+						<video id="388103" title="Tutorial 1846: 4/4 - Cartas especiales" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=Ku63l8BmVj4" username="marioaguila" userid="37918" postdate="2022-07-01T09:03:00-05:00" />
+						<video id="373880" title="(Dżentelmeni Przy Stole) 1846 The Race for the Midwest unboxing i komentarz" category="unboxing" language="Polish" link="http://www.youtube.com/watch?v=wwYIK2S_Qbc" username="pwoloszun" userid="1228337" postdate="2022-03-31T19:30:09-05:00" />
+						<video id="364729" title="(Dżentelmeni Przy Stole) Nocna zmiana 6: 1846 Race to the Midwest" category="review" language="Polish" link="http://www.youtube.com/watch?v=0H4PtIntynU" username="pwoloszun" userid="1228337" postdate="2022-02-04T18:54:50-06:00" />
+						<video id="354651" title="1846 New Private Companies" category="instructional" language="English" link="http://www.youtube.com/watch?v=5F4t1yt-ywY" username="leonej" userid="701581" postdate="2021-11-27T19:30:04-06:00" />
+						<video id="352947" title="1846. The Race for the Midwest (second printing)" category="unboxing" language="English" link="http://www.youtube.com/watch?v=SWiCyTc1hZc" username="ender821" userid="985459" postdate="2021-11-16T08:24:02-06:00" />
+						<video id="342010" title="Unboxing 1846: The Race for the Midwest" category="unboxing" language="Greek" link="http://www.youtube.com/watch?v=XlLMOmrUXrE" username="paredrus" userid="134325" postdate="2021-09-08T03:11:41-05:00" />
+						<video id="329479" title="1846 : The Race to the Midwest Unboxing" category="unboxing" language="Korean" link="http://www.youtube.com/watch?v=d5ohGEU4RTM" username="Leedeukjong" userid="2855442" postdate="2021-06-15T03:52:12-05:00" />
+					</videos>
 
 	
 
@@ -372,15 +388,15 @@ An unofficial 2-player variant from the designer has been made available in the 
 			<bayesaverage value="6.86554" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="665" bayesaverage="6.86554" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="348" bayesaverage="7.07308" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="666" bayesaverage="6.86554" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="349" bayesaverage="7.07308" />
 												</ranks>
 
 			<stddev value="1.41501" />
 			<median value="0" />
 			<owned value="4917" />
-			<trading value="114" />
-			<wanting value="217" />
+			<trading value="115" />
+			<wanting value="216" />
 			<wishing value="863" />
 			<numcomments value="916" />
 			<numweights value="192" />

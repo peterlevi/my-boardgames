@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Alchemists is a dense deduction puzzle where you mix ingredients, test them via app or paper, and try to logically narrow down the hidden rules of alchemy before publishing theories for points. It rewards careful note-taking and risk assessment over table talk, with a brutal turn structure where a single wrong guess can tank your score.",
+ "summary": "Alchemists is a deduction game where players mix ingredients and test alchemical theories through a companion app, then risk their reputation by publishing conclusions that might be wrong. The tension comes from balancing careful logical deduction against the calculated risk of committing to a public theory before you're certain.",
  "praised": [
-  "Ingenious deduction puzzle with a real 'aha' feeling when solving the rule set",
-  "Companion app streamlines bookkeeping and enables blind bidding/testing",
-  "Strong theme integration between mechanics and alchemy fantasy",
-  "High replayability since ingredient properties randomize each game"
+  "brilliant deduction puzzle with the app removing bookkeeping and cheating",
+  "meaningful risk/reward in choosing when to publish",
+  "satisfying deductive breakthroughs from combining clues"
  ],
  "criticised": [
-  "Steep learning curve and heavy rulebook overhead for new players",
-  "Analysis paralysis from tracking many logical possibilities at once",
-  "App dependency is a dealbreaker for some, and reduces it to a solitaire-ish exercise",
-  "Punishing for newcomers who publish incorrect theories early and fall behind"
+  "heavy analysis paralysis and downtime",
+  "app dependency bothers some purists",
+  "punishing to newcomers who publish wrong theories early and tank their score"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with light blocking and indirect competition over public information and artifacts"
+  "kind": "shared public information race with indirect blocking",
+  "detail": "Players see each other's public experiments and published theories, so racing to deduce and publish first matters, but each player's own ingredients and private reasoning stay hidden. There's no direct attack, just competitive deduction over shared public clues."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "points come from published theories, sold potions, artifacts, academic favor, and correctly refuted rivals, so efficient deduction across several income streams decides the winner"
+  "breadth": "Some",
+  "why": "Points mostly come from correctly published theories and favor tokens, with reputation loss for wrong publications limiting how much risk a player can afford.",
+  "how_you_win": "Correctly deduce ingredient properties, publish accurate theories before rivals, and manage your reputation to end with the highest net score."
  },
  "similar": [
-  "Suspects",
+  "Chai",
   "Mysterium",
   "The Search for Planet X",
-  "Chimera Station",
-  "Blood Bowl: Team Manager"
+  "Sherlock Holmes Consulting Detective",
+  "Cryptid"
  ],
- "_fingerprint": "3b177d95b55c707a",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "2cd64339add2017f",
  "_name": "Alchemists"
 }

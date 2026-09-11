@@ -82,7 +82,7 @@ Spymasters continue giving clues until one team has identified all of their agen
 										      	               				<yearpublished value="2015" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="8" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1452">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1453">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="1" />
@@ -103,7 +103,7 @@ Spymasters continue giving clues until one team has identified all of their agen
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="436" />
+					<result value="Best" numvotes="437" />
 					<result value="Recommended" numvotes="753" />
 					<result value="Not Recommended" numvotes="151" />
 				</results>					
@@ -145,7 +145,7 @@ Spymasters continue giving clues until one team has identified all of their agen
 						               				<minplaytime value="15" />
 						               				<maxplaytime value="15" />
 						               				<minage value="10" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="305">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="306">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
@@ -153,7 +153,7 @@ Spymasters continue giving clues until one team has identified all of their agen
 					<result value="5" numvotes="0" />
 					<result value="6" numvotes="9" />
 					<result value="8" numvotes="71" />
-					<result value="10" numvotes="124" />
+					<result value="10" numvotes="125" />
 					<result value="12" numvotes="78" />
 					<result value="14" numvotes="19" />
 					<result value="16" numvotes="2" />
@@ -1198,7 +1198,23 @@ Spymasters continue giving clues until one team has identified all of their agen
 			
 
 			
-	
+			<videos total="372">
+						<video id="626820" title="Aprende a jugar a Código Secreto" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=CLIp_RKdnHU" username="GeneracionHortaleza" userid="3201048" postdate="2026-08-25T13:58:24-05:00" />
+						<video id="611164" title="John Cena, Mariachi, and One Very Bad Assassin Guess" category="session" language="English" link="http://www.youtube.com/watch?v=-5fJU434egQ" username="rolltoonegaming" userid="4375304" postdate="2026-05-10T21:31:16-05:00" />
+						<video id="607313" title="Insert do Bargal do MakerWorld para o jogo Código Secreto da Devir #codenames" category="other" language="Portuguese" link="http://www.youtube.com/watch?v=XVJeuVmfq9M" username="asergioam" userid="3770000" postdate="2026-04-14T13:00:32-05:00" />
+						<video id="607296" title="Unboxing da Expansão Promocional de Portugal do Código Secreto da Devir" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=a2zcE3qqGgc" username="asergioam" userid="3770000" postdate="2026-04-14T12:00:06-05:00" />
+						<video id="607068" title="Unboxing do Código Secreto - Edição Portuguesa da Devir" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=H1rNhGGPLcU" username="asergioam" userid="3770000" postdate="2026-04-13T12:00:28-05:00" />
+						<video id="604767" title="Codenames XXL, Tajniacy XXL - how to play &amp; comparisn, przebieg gry i porównanie (mlodygiercownik.pl)" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=-N2dBqHBl70" username="tomdra" userid="1269996" postdate="2026-03-29T09:03:31-05:00" />
+						<video id="604766" title="Codenames XXL, Tajniacy XXL - unboxing, otwarcie (mlodygiercownik.pl)" category="unboxing" language="Polish" link="http://www.youtube.com/watch?v=cAHtADjUB3Y" username="tomdra" userid="1269996" postdate="2026-03-29T09:02:17-05:00" />
+						<video id="602126" title="Codenames" category="review" language="English" link="http://www.youtube.com/watch?v=Na4-5CJO0_g" username="Melaniebarr" userid="1626931" postdate="2026-03-12T10:30:10-05:00" />
+						<video id="600705" title="Meeple Mentor Reviews Codenames XXL (2025)" category="review" language="English" link="http://www.youtube.com/watch?v=sYIyZ-SvgfY" username="yrnotyrkhakis" userid="429344" postdate="2026-03-03T12:01:06-06:00" />
+						<video id="593859" title="Regolamento Nome in codice in un lampo" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=PEegQOugaTg" username="CappellaioMoltoMatto" userid="401298" postdate="2026-01-22T15:05:40-06:00" />
+						<video id="593254" title="Santa won't let them play Codenames wrong #boardgame #shorts #viral" category="humor" language="English" link="http://www.youtube.com/watch?v=pE2rBu8YEkw" username="JetSkiPopper" userid="1310667" postdate="2026-01-19T06:01:39-06:00" />
+						<video id="590792" title="Código Secreto - Como Jogar" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=fUOnQNVHvfY" username="Romir" userid="9484" postdate="2026-01-03T11:22:43-06:00" />
+						<video id="589612" title="Speluitleg Codenames XXL- Regels (NL/BE)" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=6hkDZYTH2yk" username="Bram Vonck" userid="1869173" postdate="2025-12-25T04:48:39-06:00" />
+						<video id="589033" title="Unboxing Codenames XXL - Unboxing (NL/BE)" category="unboxing" language="Dutch" link="http://www.youtube.com/watch?v=HJQ_5oHfHBg" username="Bram Vonck" userid="1869173" postdate="2025-12-20T11:55:16-06:00" />
+						<video id="584001" title="Thoughts on Codenames from Jamie, Tabletoptiktok" category="review" language="English" link="http://www.youtube.com/watch?v=Rni70Lq49Dw" username="Jamie_Tabletoptiktok" userid="3780107" postdate="2025-11-20T13:06:23-06:00" />
+					</videos>
 
 	
 
@@ -1207,22 +1223,22 @@ Spymasters continue giving clues until one team has identified all of their agen
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="105540" />
-			<average value="7.52348" />
-			<bayesaverage value="7.42707" />
+			<usersrated value="105568" />
+			<average value="7.52341" />
+			<bayesaverage value="7.427" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="163" bayesaverage="7.42707" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="6" bayesaverage="7.43589" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="163" bayesaverage="7.427" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="6" bayesaverage="7.43582" />
 												</ranks>
 
-			<stddev value="1.30043" />
+			<stddev value="1.30044" />
 			<median value="0" />
-			<owned value="183543" />
-			<trading value="1498" />
-			<wanting value="366" />
-			<wishing value="8060" />
-			<numcomments value="13732" />
+			<owned value="183600" />
+			<trading value="1497" />
+			<wanting value="365" />
+			<wishing value="8065" />
+			<numcomments value="13733" />
 			<numweights value="2622" />
 			<averageweight value="1.2525" />
 			</ratings>

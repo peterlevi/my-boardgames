@@ -81,8 +81,8 @@ From the 7th printing on, the base game box includes Wingspan: Swift-Start Promo
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="556" />
-					<result value="Recommended" numvotes="948" />
+					<result value="Best" numvotes="555" />
+					<result value="Recommended" numvotes="949" />
 					<result value="Not Recommended" numvotes="243" />
 				</results>					
 			
@@ -1350,7 +1350,23 @@ From the 7th printing on, the base game box includes Wingspan: Swift-Start Promo
 			
 
 			
-	
+			<videos total="684">
+						<video id="626620" title="Wingspan review w/ Bear, Applez" category="review" language="English" link="http://www.youtube.com/watch?v=LDYeyE5Y0U0" username="FNGRaleighNC" userid="3944891" postdate="2026-08-24T09:03:43-05:00" />
+						<video id="626618" title="Wingspan playthrough /w Bear and Applez" category="session" language="English" link="http://www.youtube.com/watch?v=s_Bc5bgii1o" username="FNGRaleighNC" userid="3944891" postdate="2026-08-24T09:02:19-05:00" />
+						<video id="625046" title="Spotlight: Wingspan | Why This Award-Winning Board Game Changed the Hobby" category="other" language="English" link="http://www.youtube.com/watch?v=DfGlbN5pdV0" username="chesborn" userid="4387202" postdate="2026-08-13T07:00:49-05:00" />
+						<video id="624256" title="Wingspan" category="review" language="English" link="http://www.youtube.com/watch?v=g-0ytQUCqMk" username="Melaniebarr" userid="1626931" postdate="2026-08-07T12:48:29-05:00" />
+						<video id="624180" title="Sådan vinder du i WINGSPAN" category="instructional" language="Danish" link="http://www.youtube.com/watch?v=V4b-AYw1uYk" username="Ringsted Bibliotek" userid="1397105" postdate="2026-08-07T07:16:37-05:00" />
+						<video id="624179" title="Sådan spiller du WINGSPAN" category="instructional" language="Danish" link="http://www.youtube.com/watch?v=D6q3Adlpwg8" username="Ringsted Bibliotek" userid="1397105" postdate="2026-08-07T07:14:18-05:00" />
+						<video id="620360" title="Wingspan - Spacehawk Reviews" category="review" language="English" link="http://www.youtube.com/watch?v=1NKKvYSR5tM" username="GeeksPlusTabletop" userid="3924629" postdate="2026-07-13T08:19:21-05:00" />
+						<video id="619576" title=" Wingspan | Inside with João Ricardo Ep894" category="unboxing" language="English" link="http://www.youtube.com/watch?v=bbJ5p4Gm1p4" username="table_talks" userid="3249213" postdate="2026-07-08T16:32:06-05:00" />
+						<video id="619277" title=" Wingspan Nesting Box | Inside with João Ricardo Ep893" category="unboxing" language="English" link="http://www.youtube.com/watch?v=7pusxH-YJyA" username="table_talks" userid="3249213" postdate="2026-07-07T07:55:36-05:00" />
+						<video id="613976" title="All of Our #1 Games Ever!" category="other" language="English" link="http://www.youtube.com/watch?v=jmI51CNtTBI" username="BG_Pepper" userid="4500435" postdate="2026-05-30T14:31:26-05:00" />
+						<video id="610804" title="Let's Play Wingspan - The Board &amp; Barrel" category="session" language="English" link="http://www.youtube.com/watch?v=zo7UnqhWnWs" username="MickeyC13" userid="957635" postdate="2026-05-07T23:00:14-05:00" />
+						<video id="610533" title="Wingspan + Americas Expansion - Game Report" category="session" language="English" link="http://www.youtube.com/watch?v=mVB0ZMDE1yI" username="Cardboard_CC" userid="1379969" postdate="2026-05-06T07:51:27-05:00" />
+						<video id="606911" title="Dad vs Daughter - Wingspan" category="review" language="English" link="http://www.youtube.com/watch?v=sARQ35kqQM0" username="Brezman" userid="777272" postdate="2026-04-12T10:46:59-05:00" />
+						<video id="606218" title="Wingspan How to play" category="instructional" language="English" link="http://www.youtube.com/watch?v=BMt8azU2NoM" username="your_turn_boardgames" userid="4382046" postdate="2026-04-07T13:55:50-05:00" />
+						<video id="604559" title="ALL the WINGSPAN Expansions | Which One(s) Do You Need?!" category="review" language="English" link="http://www.youtube.com/watch?v=7idak9OIVdM" username="berly24" userid="129044" postdate="2026-03-27T12:01:26-05:00" />
+					</videos>
 
 	
 
@@ -1359,23 +1375,23 @@ From the 7th printing on, the base game box includes Wingspan: Swift-Start Promo
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="115309" />
-			<average value="7.99422" />
-			<bayesaverage value="7.84055" />
+			<usersrated value="115355" />
+			<average value="7.9941" />
+			<bayesaverage value="7.84043" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="38" bayesaverage="7.84055" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="50" bayesaverage="7.77342" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="5" bayesaverage="7.84919" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="38" bayesaverage="7.84043" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="50" bayesaverage="7.77327" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="5" bayesaverage="7.8491" />
 												</ranks>
 
-			<stddev value="1.37795" />
+			<stddev value="1.37796" />
 			<median value="0" />
-			<owned value="185053" />
-			<trading value="977" />
+			<owned value="185116" />
+			<trading value="980" />
 			<wanting value="1257" />
-			<wishing value="22361" />
-			<numcomments value="15272" />
+			<wishing value="22359" />
+			<numcomments value="15276" />
 			<numweights value="3814" />
 			<averageweight value="2.4809" />
 			</ratings>

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Iberian Gauge is a fast, lighter cousin of 18xx train games: you alternate buying stock in rail companies with operating rounds where your shares (in purchase order) let you extend that company's network across a hex map of Iberia, leasing rival track to save money. It plays in well under two hours but keeps the genre's core tension of propping up a company's stock price through expansion versus personally profiting from dividends and cash.",
+ "summary": "Iberian Gauge is a lighter entry in Amabel Holland's 'Gauge' series of stock-and-track train games, where players buy shares in railroad companies and then use those shares to build track across Iberia's rugged hex map. It's a tighter, faster take on 18xx-style stock manipulation without the full complexity of a traditional 18xx title.",
  "praised": [
-  "Much faster and more approachable than full 18xx while keeping real economic tension",
-  "The share-purchase-order-determines-build-order mechanic creates clever, tight decision points",
-  "Leasing track from other companies is an elegant cost-saving twist",
-  "Good table presence and production for a small-press game"
+  "accessible entry point into stock-holding train game mechanics",
+  "quick playtime relative to genre",
+  "tense stock-value and track-building tension",
+  "good production and clear iconography"
  ],
  "criticised": [
-  "Turn order and initial company assignment can create swingy, luck-influenced starts",
-  "Rules have some ambiguous edge cases around leasing and connections",
-  "Smaller map can feel cramped with more players, limiting expansion options",
-  "Stock round downtime while waiting for others to act"
+  "can feel swingy if stock prices crash early",
+  "less depth than full 18xx games for veteran train gamers",
+  "leasing/track rules take a round to fully grasp",
+  "map interaction can feel limited with fewer players"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "network blocking and route competition intertwined with stock manipulation"
+  "level": "Medium",
+  "kind": "stock investment and competitive track/network building",
+  "detail": "Companies and the rail network are entirely shared, so building track for one company can help or block rivals' connections, and stock ownership order determines whose track gets built first, directly tying players' fortunes together."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever ends with the most combined cash and stock value, driven almost entirely by how well their companies' networks and dividends performed"
+  "why": "Final wealth from stock value and cash on hand determines the winner, in classic 18xx-lite fashion.",
+  "how_you_win": "You win by holding shares in companies whose stock values you helped grow through smart track expansion, ending with the highest personal net worth."
  },
  "similar": [
-  "Chicago Express",
   "Irish Gauge",
-  "1846",
-  "Steam Barons",
-  "Wabash Cannonball"
+  "Chicago Express",
+  "Age of Steam",
+  "18xx family",
+  "Snowdonia"
  ],
- "_fingerprint": "b5bd982f7949448e",
+ "teachers": [
+  "Watch It Played",
+  "Board Game Replay",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "ec96e9eac940e2ed",
  "_name": "Iberian Gauge"
 }

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Ra is a tense bidding game where players use a shrinking pool of numbered sun tiles to win auctions for tiles that score points immediately, protect against penalties, or pay off at the end of an epoch. The game's signature tension comes from the Ra tile forcing early epoch endings and from the escalating temptation to keep drawing tiles into an auction rather than triggering one yourself.",
+ "summary": "Ra is a Knizia auction game where players bid Sun tokens to win sets of tiles representing ancient Egyptian civilization elements, across three escalating epochs. It's tense and quick, with elegant push-your-luck decisions about when to trigger an auction versus keep drawing tiles.",
  "praised": [
-  "Tense, elegant push-your-luck auction mechanic",
-  "Fast to teach and play despite meaningful depth",
-  "Every sun tile bid is a genuine dilemma with opportunity cost",
-  "Scales well and plays quickly across its full 2-5 player range"
+  "Elegant, tense bidding mechanism with real psychological depth",
+  "Fast-playing and easy to teach despite strategic richness",
+  "Strong theme integration through tile types (monuments, floods, civilizations)",
+  "High replayability"
  ],
  "criticised": [
-  "Heavy luck in tile draws can swing a game regardless of skill",
-  "Endgame scoring math (especially civilizations and monuments) can feel fiddly for new players",
-  "Downtime during other players' auctions in higher player counts",
-  "Some find the theme pasted-on rather than integrated"
+  "Can feel swingy with disaster tiles wiping out progress",
+  "Bidding math and scoring can be fiddly for newcomers",
+  "Some randomness in tile draws affects auction quality",
+  "Runs best at 3-5, weaker with 2"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "competitive bidding and auction psychology"
+  "level": "High",
+  "kind": "open auction and bidding",
+  "detail": "Every auction is a shared, direct competition where players bid against each other for the same set of tiles, and choosing to call Ra affects everyone's turn timing. Individual tile collections are private, but the auction pool and Ra track are entirely shared."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score comes from a mix of gold, civilization sets, monuments, Pharaoh/Nile/flood tiles, and end-game bonuses/penalties, so winning requires balancing several scoring tracks rather than maximizing one."
+  "why": "Points come from monuments, civilizations, gold, and other tile sets scored across three epochs, so balanced collecting wins out.",
+  "how_you_win": "You win by winning auctions for valuable tile sets and managing your suns wisely across three epochs to end with the highest cumulative score."
  },
  "similar": [
-  "Medici",
-  "For Sale",
   "Amun-Re",
   "Modern Art",
-  "High Society"
+  "For Sale",
+  "Blue Lagoon",
+  "Medici"
  ],
- "_fingerprint": "c9083b65ab75a668",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames",
+  "Before You Play"
+ ],
+ "_fingerprint": "7058b4a1189286fe",
  "_name": "Ra"
 }

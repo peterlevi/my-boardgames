@@ -530,7 +530,23 @@
 			
 
 			
-	
+			<videos total="16">
+						<video id="566092" title="Carcassonne Big Box | Inside with João Ricardo Ep771" category="unboxing" language="English" link="http://www.youtube.com/watch?v=UJJzLWBMfP4" username="table_talks" userid="3249213" postdate="2025-08-08T02:48:36-05:00" />
+						<video id="415666" title="Como jogar Carcassonne | A FAMÍLIA CARCASSONNE" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=D38tuW_iOyY" username="jogosdomundo" userid="2197110" postdate="2022-12-28T05:37:26-06:00" />
+						<video id="343185" title="Carcassonne Plus | Unboxing (Português)" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=0a8lupdSISI" username="catiaavlis" userid="2502779" postdate="2021-09-15T15:29:48-05:00" />
+						<video id="327425" title="MR Boardgames Unboxes Carcassonne Big Box 6" category="unboxing" language="English" link="http://www.youtube.com/watch?v=UKuQVJipl_I" username="MR_LonelyTable" userid="2892410" postdate="2021-06-01T15:14:18-05:00" />
+						<video id="327424" title="MR Boardgames Plays: Carcassonne(Base)" category="session" language="English" link="http://www.youtube.com/watch?v=8AckLv-CNIk" username="MR_LonelyTable" userid="2892410" postdate="2021-06-01T15:11:04-05:00" />
+						<video id="323047" title="Carcassonne Plus 2017 #2 | Partida" category="session" language="Spanish" link="http://www.youtube.com/watch?v=T5cqOfPnL_4" username="ocastellanoh" userid="1666602" postdate="2021-05-07T17:42:42-05:00" />
+						<video id="322938" title="Carcassonne Plus 2017 #1 | Unboxing" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=-5CygutyANU" username="ocastellanoh" userid="1666602" postdate="2021-05-07T05:18:23-05:00" />
+						<video id="312941" title="Carcassonne Big Box 2017 Version Unbox 卡卡城/卡卡頌2017年大盒版開箱 [WTF Unbox]" category="unboxing" language="Chinese" link="http://www.youtube.com/watch?v=9lPhwNPMKEs" username="Edwinloveboardgames" userid="1643430" postdate="2021-03-14T01:55:37-06:00" />
+						<video id="311399" title="Carcassonne Plus - Desencaixotamento Musicado" category="unboxing" language="(neutral)" link="http://www.youtube.com/watch?v=y6bMrbiK2VQ" username="pauloantunes" userid="1798061" postdate="2021-03-05T03:25:35-06:00" />
+						<video id="290556" title="Como jogar Carcassonne - Apresentação das extensões do Jogo Base" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=lHVxHR7cnWI" username="jogosdomundo" userid="2197110" postdate="2020-11-04T16:07:15-06:00" />
+						<video id="280876" title="Carcassone Big Box 2017 Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=wtDRDsNc5X0" username="Smalfri2" userid="2564271" postdate="2020-09-08T04:38:47-05:00" />
+						<video id="249185" title="Na MIra: Carcassonne Plus" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=gzDFzopiAb0" username="Na Mira" userid="1485224" postdate="2020-01-28T14:17:09-06:00" />
+						<video id="184883" title="Re-Imagined" category="humor" language="English" link="http://www.youtube.com/watch?v=4mITIHXsVCg" username="BBHouseRodent" userid="1035252" postdate="2018-08-01T09:42:57-05:00" />
+						<video id="155976" title="La ludoteca #42 - Carcassonne Big Box 6 (2017) Tutorial" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=a2_GHCk4WQM" username="Miss_Meeple" userid="1219254" postdate="2017-11-09T02:44:25-06:00" />
+						<video id="155024" title="Unboxing en español de Carcassonne Big Box 2017 - Otarrec Channel" category="other" language="Spanish" link="http://www.youtube.com/watch?v=d78n3obVsDk" username="Otarrec" userid="1020308" postdate="2017-11-01T12:54:02-05:00" />
+					</videos>
 
 	
 
@@ -539,22 +555,22 @@
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="5360" />
-			<average value="8.05469" />
-			<bayesaverage value="7.135" />
+			<usersrated value="5362" />
+			<average value="8.05411" />
+			<bayesaverage value="7.13469" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.135" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="Not Ranked" bayesaverage="7.28236" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.13469" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="Not Ranked" bayesaverage="7.28195" />
 												</ranks>
 
-			<stddev value="1.15611" />
+			<stddev value="1.15616" />
 			<median value="0" />
-			<owned value="15329" />
+			<owned value="15337" />
 			<trading value="93" />
-			<wanting value="66" />
-			<wishing value="586" />
-			<numcomments value="770" />
+			<wanting value="68" />
+			<wishing value="587" />
+			<numcomments value="769" />
 			<numweights value="144" />
 			<averageweight value="1.9514" />
 			</ratings>

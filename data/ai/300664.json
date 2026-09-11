@@ -1,34 +1,38 @@
 {
- "confidence": "high",
- "summary": "Arkwright: The Card Game compresses the sprawling economic simulation of the original Arkwright into a leaner, faster card-driven package where you build and upgrade factories, manage workforce and quality, and time your production against a fluctuating market. It still feels like running a company across the Industrial Revolution, with tight decisions about loans, shares, and when to sell versus reinvest.",
+ "confidence": "medium",
+ "summary": "A streamlined card-game adaptation of Arkwright that keeps the factory-running and market-pricing core but trims the playtime and fiddliness of the original board game. It's still a fairly heavy economic puzzle, just faster and more portable.",
  "praised": [
-  "Captures much of the depth and satisfying economic engine-building of the original Arkwright in a shorter playtime",
-  "Clever multi-use cards that create meaningful trade-offs each turn",
-  "Strong sense of running an evolving business with real long-term planning",
-  "More accessible entry point into the Arkwright system without the huge board and long runtime"
+  "captures the economic depth of Arkwright in a shorter format",
+  "good solo mode",
+  "less table space and setup than the original"
  ],
  "criticised": [
-  "Still a heavy, fiddly game with a steep learning curve and dense rulebook",
-  "Player elimination via bankruptcy can leave someone out of the game early",
-  "Some feel it loses a bit of the tactile grandeur and tension of the original big-box version",
-  "Market and scoring interactions can feel abstract or hard to parse for new players"
+  "still fairly complex for a \"card game\"",
+  "loses some of the tactile board-game feel of the original",
+  "niche appeal to fans of heavy economic games"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "indirect competition through shared market saturation and open drafting of development cards"
+  "kind": "market competition and pricing pressure",
+  "detail": "As in the base game, players sell goods into a shared market where pricing and demand are affected by what others produce, while each player's factory development happens on their own tableau of cards."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score blends factory production efficiency, share value, development track progress, and end-game bonuses, so success comes from balancing multiple economic engines rather than one metric."
+  "breadth": "Focused",
+  "why": "As with the original, share value rather than a broad point salad determines the winner.",
+  "how_you_win": "You win by efficiently upgrading and running your factories to increase your share value over the three decades of play."
  },
  "similar": [
   "Arkwright",
   "Brass: Birmingham",
-  "Age of Steam",
   "Container",
-  "Food Chain Magnate"
+  "Age of Steam",
+  "Concordia"
  ],
- "_fingerprint": "f9247654f57bb8c4",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "a8318b43ffbd1b95",
  "_name": "Arkwright: The Card Game"
 }

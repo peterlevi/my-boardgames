@@ -480,7 +480,23 @@ The goal of the game is to build the most prestigious company, as symbolized by 
 			
 
 			
-	
+			<videos total="153">
+						<video id="620544" title="Segment E18-5 - Les jeux que je ne joue pas assez souvent" category="other" language="French" link="http://www.youtube.com/watch?v=nF-n_uIogBw" username="Hyvll" userid="1597619" postdate="2026-07-14T11:21:00-05:00" />
+						<video id="617878" title="Carnegie | How to Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=bDQvY3S52hI" username="EZBoardGames" userid="3258706" postdate="2026-06-27T12:00:25-05:00" />
+						<video id="601563" title="One tip for anyone trying Carnegie. Get on BGG and get a better player reference for this gem?" category="other" language="English" link="http://www.youtube.com/watch?v=WBIg1swumOk" username="elwayfan2k" userid="494955" postdate="2026-03-09T11:47:53-05:00" />
+						<video id="579170" title="Carnegie #boardgame #boardgamelife #卡內基" category="other" language="English" link="http://www.youtube.com/watch?v=FaWnLd1GFfQ" username="czeslaw6300149" userid="798383" postdate="2025-10-26T23:00:36-05:00" />
+						<video id="579067" title="Carnegie [JcK Opina / Juego de Mesa / Maldito Games]" category="review" language="Spanish" link="http://www.youtube.com/watch?v=Rpu2PFgdFiY" username="JugandoConKetty" userid="120496" postdate="2025-10-26T06:30:28-05:00" />
+						<video id="557009" title="Carnegie: How to Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=kV0JMoi_fYM" username="Lavinia_and_Peter" userid="2686984" postdate="2025-06-03T07:54:34-05:00" />
+						<video id="545607" title="CARNEGIE, English edition, Teaser" category="instructional" language="English" link="http://www.youtube.com/watch?v=qfvUv9yAQYA" username="Pegasus Spiele" userid="881033" postdate="2025-03-26T04:36:31-05:00" />
+						<video id="530952" title="Règles complètes en français " category="instructional" language="French" link="http://www.youtube.com/watch?v=zPG8TCBanqY" username="Le_Dav" userid="651385" postdate="2025-01-02T04:10:42-06:00" />
+						<video id="528453" title="Carnegie Playthrough | Live Stream" category="session" language="English" link="http://www.youtube.com/watch?v=Y3_1CSJco1k" username="Dads_and_Dice" userid="3205436" postdate="2024-12-12T08:37:05-06:00" />
+						<video id="524665" title="Carnegie - Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=NAI_cLBYUrE" username="edd_hunter" userid="823546" postdate="2024-11-16T17:12:30-06:00" />
+						<video id="505818" title="Огляд від Здвинуті Кубики" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=zagQpRvxpZ0" username="punk_rock" userid="2986072" postdate="2024-07-24T04:52:50-05:00" />
+						<video id="501094" title="Hoe speel je Carnegie? (#536 )" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=dTJ5LN_iHxE" username="Molotail" userid="958802" postdate="2024-06-22T00:01:26-05:00" />
+						<video id="499536" title="Carnegie - Solo Sessions with John LaRuffa" category="session" language="English" link="http://www.youtube.com/watch?v=IoVioP0rhok" username="magnus1515" userid="109899" postdate="2024-06-11T06:13:06-05:00" />
+						<video id="492457" title="Правила игры, подготовка и летсплей от канала The Meeples" category="session" language="Russian" link="http://www.youtube.com/watch?v=nNOZkrSnc34" username="Hint666" userid="3512570" postdate="2024-04-26T10:16:20-05:00" />
+						<video id="491763" title="Carnegie Rules Challenge" category="instructional" language="English" link="http://www.youtube.com/watch?v=1M8z4WkcjWM" username="Fishpeddler" userid="152771" postdate="2024-04-22T14:42:17-05:00" />
+					</videos>
 
 	
 
@@ -489,19 +505,19 @@ The goal of the game is to build the most prestigious company, as symbolized by 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="12211" />
-			<average value="7.94765" />
-			<bayesaverage value="7.51718" />
+			<usersrated value="12218" />
+			<average value="7.94742" />
+			<bayesaverage value="7.51701" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="128" bayesaverage="7.51718" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="85" bayesaverage="7.60889" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="130" bayesaverage="7.51701" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="85" bayesaverage="7.60867" />
 												</ranks>
 
-			<stddev value="1.21759" />
+			<stddev value="1.21766" />
 			<median value="0" />
-			<owned value="17095" />
-			<trading value="232" />
+			<owned value="17104" />
+			<trading value="233" />
 			<wanting value="500" />
 			<wishing value="3799" />
 			<numcomments value="1870" />

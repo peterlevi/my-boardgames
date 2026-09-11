@@ -368,7 +368,23 @@ Includes solo mode by D&amp;aacute;vid Turczi
 			
 
 			
-	
+			<videos total="122">
+						<video id="629353" title="KANBAN EV: Quick Start SETUP in 5 Minutes!" category="instructional" language="English" link="http://www.youtube.com/watch?v=_Jz7Ai7pKvc" username="RuleTheBoard" userid="2615862" postdate="2026-09-10T14:34:58-05:00" />
+						<video id="627592" title="Lacerda Spiele - thematisch &amp; komplex" category="review" language="German" link="http://www.youtube.com/watch?v=mWhbOZdniyo" username="BoardgameBenjamino" userid="1618849" postdate="2026-08-30T16:46:13-05:00" />
+						<video id="623701" title="Tabletop Tastings Whiskey &amp; Board Game Pairing Video" category="review" language="English" link="http://www.youtube.com/watch?v=JC6IcbtZT1w" username="Tabletop_Tastings" userid="3652076" postdate="2026-08-04T16:05:56-05:00" />
+						<video id="615475" title="Kanban EV Review - Full Spoilers (for the film Christopher Robin)" category="review" language="English" link="http://www.youtube.com/watch?v=aq3fl0VCpHg" username="Hidetoshi" userid="406745" postdate="2026-06-10T14:53:23-05:00" />
+						<video id="604363" title="Efficiency in Deluxe - Kanban EV + Upgrade Pack: Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=c7e6cL39O-E" username="The_Lone_Boardgamer" userid="4170248" postdate="2026-03-26T07:03:48-05:00" />
+						<video id="604177" title="Kanban EV solo playthrough (rus)" category="session" language="Russian" link="http://www.youtube.com/watch?v=2OysFsvfA8U" username="Univanger" userid="1371121" postdate="2026-03-25T00:12:22-05:00" />
+						<video id="602276" title="Kanban EV | Unboxing w/ Johnny" category="unboxing" language="English" link="http://www.youtube.com/watch?v=qgWyDXkitrA" username="Darknlves" userid="2394417" postdate="2026-03-13T08:11:47-05:00" />
+						<video id="598956" title="Kanban EV in 60 Seconds! #review" category="review" language="English" link="http://www.youtube.com/watch?v=l3p2Fx6iAKI" username="elbirbo" userid="914131" postdate="2026-02-19T13:40:15-06:00" />
+						<video id="591513" title="Розпаковка від каналу &quot;IBG&quot;" category="unboxing" language="Ukrainian" link="http://www.youtube.com/watch?v=_6-qBieOIGg" username="punk_rock" userid="2986072" postdate="2026-01-08T14:21:48-06:00" />
+						<video id="585775" title="Kanban EV - Playthrough &amp; Review" category="review" language="English" link="http://www.youtube.com/watch?v=_PBpqgOOA0o" username="PaulGrogan" userid="1685" postdate="2025-12-02T07:08:26-06:00" />
+						<video id="584137" title="Kanban EV - Erklärung am Spielabend" category="instructional" language="German" link="http://www.youtube.com/watch?v=srdrOi3zejA" username="brettspielfieber" userid="1952235" postdate="2025-11-21T09:08:47-06:00" />
+						<video id="576445" title="KANBAN EV: Full RULES Overview - Refresh before you play!" category="instructional" language="English" link="http://www.youtube.com/watch?v=-FGWXZjt7wg" username="RuleTheBoard" userid="2615862" postdate="2025-10-11T09:06:20-05:00" />
+						<video id="565405" title="Kanban EV - 4p Teaching, Play-through, &amp; RoundTable by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=lCctSqdcrUk" username="eapeas" userid="377742" postdate="2025-08-02T11:17:25-05:00" />
+						<video id="530263" title="Kanban EV | 2-Player Playthrough with GOOD Sandra" category="session" language="Japanese" link="http://www.youtube.com/watch?v=cbWsuBKNw3k" username="JoeAkagi" userid="3692320" postdate="2024-12-27T00:05:14-06:00" />
+						<video id="526866" title="KANBAN EV - Cómo se juega - TUTORIAL - Juego de Mesa" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=ouY1qeOuiK8" username="unnasam" userid="1127347" postdate="2024-11-30T13:54:47-06:00" />
+					</videos>
 
 	
 
@@ -377,22 +393,22 @@ Includes solo mode by D&amp;aacute;vid Turczi
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="10609" />
-			<average value="8.37196" />
-			<bayesaverage value="7.80874" />
+			<usersrated value="10616" />
+			<average value="8.3723" />
+			<bayesaverage value="7.809" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="42" bayesaverage="7.80874" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="25" bayesaverage="7.92958" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="42" bayesaverage="7.809" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="25" bayesaverage="7.92981" />
 												</ranks>
 
-			<stddev value="1.31881" />
+			<stddev value="1.31865" />
 			<median value="0" />
-			<owned value="17078" />
-			<trading value="67" />
+			<owned value="17082" />
+			<trading value="66" />
 			<wanting value="930" />
-			<wishing value="6596" />
-			<numcomments value="1625" />
+			<wishing value="6601" />
+			<numcomments value="1626" />
 			<numweights value="599" />
 			<averageweight value="4.2955" />
 			</ratings>

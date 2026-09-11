@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "A fast, tight card game where each of the six clan decks plays like a distinct engine-builder, with players racing to chain building bonuses while occasionally raiding or blocking each other's islands. It's lighter and more streamlined than the original Imperial Settlers, with a strong solo/duel feel even at higher player counts.",
+ "summary": "Empires of the North is a standalone card-driven civilization builder in the Imperial Settlers universe, where players draft asymmetric faction decks (Scotsmen, Inuit, Vikings) to build engines of resource production and raid enemy islands. It plays faster and leaner than the original Imperial Settlers, with pre-built decks lowering setup time.",
  "praised": [
-  "Six wildly different clan decks give strong replayability and asymmetry",
-  "Fast turns and short playtime relative to depth",
-  "Satisfying engine-building and combo chaining within a single deck",
-  "Good production values and iconography once learned",
-  "Works well solo and at 2 players"
+  "fast, satisfying tableau-building with real faction asymmetry",
+  "raiding/exploration mechanic adds welcome aggression",
+  "quick setup thanks to pre-constructed clan decks",
+  "strong solo mode"
  ],
  "criticised": [
-  "Interaction can feel indirect or bolted-on (raiding/exploring) compared to true confrontation",
-  "Some clans are noticeably harder to pilot well than others (stated 1-10 difficulty spread)",
-  "Iconography-heavy cards have a learning curve",
-  "Can feel more solitaire/parallel than the 'Take That' tag suggests, especially at higher player counts",
-  "Diminishing tension in the endgame as players optimize known combos"
+  "take-that raiding can feel harsh to the player being attacked",
+  "some card combos are notably stronger than others",
+  "can suffer from swinginess if you're raided early",
+  "iconography-heavy cards need a learning session"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "raiding, blocking islands, and occasional take-that card effects amid mostly parallel engine building"
+  "kind": "take-that raiding and card drafting",
+  "detail": "Each player builds their own tableau of buildings, but ships let players actively raid opponents' islands to steal resources or damage their engine, and cards are drafted from a shared row, so choices affect what's available to rivals."
  },
- "win_criteria": "Race to a finish",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points accumulate from a mix of building bonuses, raiding/exploration rewards, and end-game scoring cards, but the game ends the instant someone crosses the 25-point threshold, so tempo matters as much as total sources."
+  "breadth": "Broad",
+  "why": "Points accumulate from built structures, completed objectives, and successful raids/exploration by game end.",
+  "how_you_win": "You win by building the most efficient combination of buildings and completing objective cards while using raids to hamper rivals, ending with the highest total score."
  },
  "similar": [
   "Imperial Settlers",
   "Raiders of the North Sea",
-  "Blood Rage",
   "Champions of Midgard",
-  "Trickerion"
+  "Trickerion",
+  "Robinson Crusoe"
  ],
- "_fingerprint": "20eae49995cac337",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "054b72c4651e3413",
  "_name": "Imperial Settlers: Empires of the North"
 }

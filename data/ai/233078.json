@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "A full evening (or all-day) epic of galactic empire-building where players expand, build fleets, research tech, and politically maneuver across a modular hex map; it's defined by dramatic swings of diplomacy, betrayal, and alliance as much as by combat and economic engines. Games run 4-8+ hours and reward table talk, deal-making, and long-term strategic patience over quick tactical plays.",
+ "summary": "Twilight Imperium: Fourth Edition is the definitive epic space 4X board game — a full evening (often 4-8+ hours) of galactic exploration, diplomacy, trade, and large-scale combat as each unique faction races toward a handful of victory points. Much of the drama comes not from the rules but from the table talk: alliances form and break, secret objectives are pursued, and huge fleet battles can swing the whole game.",
  "praised": [
-  "Unmatched sense of epic scale and narrative arc across a game",
-  "Deep asymmetry between the 17+ factions, each playing very differently",
-  "Rich player interaction through trading, politics, and voting via the Galactic Council",
-  "Satisfying tech trees and strategy-card-driven turn structure",
-  "High table-talk and diplomacy element that creates memorable moments"
+  "unmatched sense of epic scale and narrative emergence",
+  "each faction plays genuinely differently",
+  "rich negotiation and diplomacy layer",
+  "satisfying combat and strategy-card action selection"
  ],
  "criticised": [
-  "Enormous time commitment (often 6-8+ hours), hard to schedule and finish",
-  "Steep rules overhead and long setup/teardown",
-  "Runaway leader problems and player elimination risk in longer games",
-  "Can bog down with analysis paralysis, especially with 6 players",
-  "Requires a dedicated, experienced group to run smoothly"
+  "enormous time commitment, often a full day for one game",
+  "steep rules complexity and long first-play teaching time",
+  "can be brutal for a player who falls behind or gets ganged up on",
+  "table size and space requirements are a real barrier"
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict, trading and negotiation, political voting"
+  "kind": "negotiation, trading, and open military conflict",
+  "detail": "Players share a single galaxy map and constantly negotiate trade agreements, alliances, and non-aggression pacts while also directly invading and battling over the same systems. Almost the entire game state — the map, trade, political votes — is shared and contested rather than private."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory points come from a mix of public and secret objectives spanning military conquest, economic development, technology, and political influence, so the winner is whoever best balances multiple scoring paths rather than maximizing one."
+  "why": "Points come from public and secret objectives spanning military, economic, and political achievements, and the game ends the instant someone hits the target score.",
+  "how_you_win": "You win by being the first to reach the victory point threshold (commonly 10) through a mix of completed public objectives, secret objectives, and holding key systems like Mecatol Rex."
  },
  "similar": [
-  "Eclipse",
-  "Twilight Imperium: Third Edition",
+  "Eclipse: Second Dawn for the Galaxy",
   "Rex: Final Days of an Empire",
-  "Cosmic Encounter",
-  "Star Wars: Rebellion"
+  "Star Wars: Rebellion",
+  "Forbidden Stars",
+  "Cosmic Encounter"
  ],
- "_fingerprint": "76fc7895ac7a7606",
+ "teachers": [
+  "Watch It Played",
+  "Heavy Cardboard",
+  "The Secret Cabal"
+ ],
+ "_fingerprint": "6da7819a85ad61ff",
  "_name": "Twilight Imperium: Fourth Edition"
 }

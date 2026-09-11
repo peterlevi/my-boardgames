@@ -56,28 +56,28 @@ For players of the original Dominant Species, this iteration introduces several 
 										      	               				<yearpublished value="2021" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="4" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="77">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="78">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="1" />
-					<result value="Not Recommended" numvotes="40" />
+					<result value="Not Recommended" numvotes="41" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="8" />
 					<result value="Recommended" numvotes="37" />
-					<result value="Not Recommended" numvotes="20" />
+					<result value="Not Recommended" numvotes="21" />
 				</results>					
 			
 		<results numplayers="3">		
 					<result value="Best" numvotes="20" />
-					<result value="Recommended" numvotes="35" />
+					<result value="Recommended" numvotes="36" />
 					<result value="Not Recommended" numvotes="4" />
 				</results>					
 			
 		<results numplayers="4">		
-					<result value="Best" numvotes="50" />
+					<result value="Best" numvotes="51" />
 					<result value="Recommended" numvotes="8" />
 					<result value="Not Recommended" numvotes="2" />
 				</results>					
@@ -85,7 +85,7 @@ For players of the original Dominant Species, this iteration introduces several 
 		<results numplayers="4+">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="0" />
-					<result value="Not Recommended" numvotes="31" />
+					<result value="Not Recommended" numvotes="32" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -95,7 +95,7 @@ For players of the original Dominant Species, this iteration introduces several 
 						               				<minplaytime value="90" />
 						               				<maxplaytime value="150" />
 						               				<minage value="14" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="17">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="18">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
@@ -105,7 +105,7 @@ For players of the original Dominant Species, this iteration introduces several 
 					<result value="8" numvotes="0" />
 					<result value="10" numvotes="3" />
 					<result value="12" numvotes="6" />
-					<result value="14" numvotes="5" />
+					<result value="14" numvotes="6" />
 					<result value="16" numvotes="3" />
 					<result value="18" numvotes="0" />
 					<result value="21 and up" numvotes="0" />
@@ -468,7 +468,23 @@ For players of the original Dominant Species, this iteration introduces several 
 			
 
 			
-	
+			<videos total="55">
+						<video id="624115" title="Dominant Species Marine (revisited) - 4p Teaching, Play-through &amp; Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=y2KQ3_fG3BA" username="eapeas" userid="377742" postdate="2026-08-06T20:09:35-05:00" />
+						<video id="587842" title="Dominant Species Marine - Présentation et Règles" category="instructional" language="French" link="http://www.youtube.com/watch?v=_3pzsUpe1no" username="ADKTSickness" userid="2618876" postdate="2025-12-12T11:03:28-06:00" />
+						<video id="565101" title="Dominant Species Marine Gameplay - O Gameplay Mais Zicado do Canal VERSAO 2" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=xPEXqkkhftM" username="lfigaro" userid="3046229" postdate="2025-07-30T17:00:12-05:00" />
+						<video id="488785" title="Знакомство с игрой" category="review" language="Russian" link="http://www.youtube.com/watch?v=fZcujl2zN2A" username="snowbody" userid="201253" postdate="2024-04-03T01:39:49-05:00" />
+						<video id="481211" title="優勢物種-海洋版(Dominant Species: Marine)" category="instructional" language="Chinese" link="http://www.youtube.com/watch?v=IpJef1cjxS8" username="cancleeric" userid="963283" postdate="2024-02-13T18:20:10-06:00" />
+						<video id="470240" title="DOMINANT SPECIES MARINE: First Impressions REVIEW" category="review" language="English" link="http://www.youtube.com/watch?v=ocR4Rq72fWc" username="thegreat2" userid="412153" postdate="2023-12-06T23:10:26-06:00" />
+						<video id="451380" title="Dominant Species: Władcy Oceanu - gameplay, zasady, recenzja" category="session" language="Polish" link="http://www.youtube.com/watch?v=QA7o_kDFEz8" username="Barolek88" userid="1489851" postdate="2023-08-11T15:03:50-05:00" />
+						<video id="451175" title="DOMINANT SPECIES: MARINE Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=Ohrahptb_DU" username="thegreat2" userid="412153" postdate="2023-08-10T11:46:38-05:00" />
+						<video id="446342" title="DOMINANT SPECIES: Władcy Oceanu | pełna rozgrywka na 4 graczy" category="session" language="Polish" link="http://www.youtube.com/watch?v=QIqp36koBY8" username="SologramYT" userid="2932035" postdate="2023-07-14T03:23:11-05:00" />
+						<video id="444726" title="Dominant Species: Władcy Oceanów - prezentacja gry" category="review" language="Polish" link="http://www.youtube.com/watch?v=BKJdNSfLeMk" username="PlanszoweNewsy" userid="2899417" postdate="2023-07-04T12:43:08-05:00" />
+						<video id="444527" title="Video Review" category="review" language="English" link="http://www.youtube.com/watch?v=-KJTqZtF5U0" username="marnaudo" userid="266775" postdate="2023-07-03T08:06:00-05:00" />
+						<video id="435845" title="DOMINANT SPECIES MARINE | Board Game | How to Play and Full 2-Player Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=W1SdXzfnxnk" username="all_aboard" userid="2563668" postdate="2023-05-01T21:38:56-05:00" />
+						<video id="433396" title="Dominant Species Marine Strategy with WSBG winner Nick Henning" category="instructional" language="English" link="http://www.youtube.com/watch?v=CmukkkAaRvo" username="thestoryguy" userid="2110676" postdate="2023-04-15T23:12:11-05:00" />
+						<video id="432903" title="UNBOXING DOMINANT SPECIES MARINE - #indabox" category="unboxing" language="English" link="http://www.youtube.com/watch?v=XeLbnHe6Rng" username="stocaylus" userid="2442273" postdate="2023-04-12T11:11:25-05:00" />
+						<video id="427844" title="Dominant Species Marine - Review" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=s5GpKekKqOk" username="lfigaro" userid="3046229" postdate="2023-03-13T06:37:31-05:00" />
+					</videos>
 
 	
 
@@ -477,24 +493,24 @@ For players of the original Dominant Species, this iteration introduces several 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="3015" />
-			<average value="7.8483" />
-			<bayesaverage value="6.78981" />
+			<usersrated value="3016" />
+			<average value="7.84852" />
+			<bayesaverage value="6.79014" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="776" bayesaverage="6.78981" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="406" bayesaverage="6.98917" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="776" bayesaverage="6.79014" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="406" bayesaverage="6.98951" />
 												</ranks>
 
-			<stddev value="1.41724" />
+			<stddev value="1.41729" />
 			<median value="0" />
-			<owned value="5596" />
+			<owned value="5595" />
 			<trading value="103" />
-			<wanting value="240" />
-			<wishing value="1752" />
+			<wanting value="241" />
+			<wishing value="1751" />
 			<numcomments value="630" />
-			<numweights value="158" />
-			<averageweight value="3.6962" />
+			<numweights value="159" />
+			<averageweight value="3.6981" />
 			</ratings>
 								</statistics>
      

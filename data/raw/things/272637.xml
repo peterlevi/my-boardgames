@@ -24,6 +24,8 @@
 			    				
 				<name type="alternate" sortindex="1" value="Корни: Подземный мир" />
 			    				
+				<name type="alternate" sortindex="1" value="ルート 拡張 ～そびえる山のいきもの乱記～" />
+			    				
 				<name type="alternate" sortindex="1" value="茂林源記：地底擴充" />
 			    				
 				<name type="alternate" sortindex="1" value="루트: 언더월드 확장" />
@@ -501,6 +503,14 @@ The Underworld Expansion includes:
 
 			
 		
+					<link type="boardgamepublisher" id="3475" value="Arclight Games" />
+		
+									
+				
+		 			
+
+			
+		
 					<link type="boardgamepublisher" id="21608" value="CMON Global Limited" />
 		
 									
@@ -603,7 +613,23 @@ The Underworld Expansion includes:
 			
 
 			
-	
+			<videos total="62">
+						<video id="624298" title="My 3 Favorite Root Factions" category="other" language="English" link="http://www.youtube.com/watch?v=iy6sn3CLPj8" username="GamingCaravan" userid="3426893" postdate="2026-08-07T16:13:49-05:00" />
+						<video id="621356" title="My Favorite Board Game From Every Year (2016–2025)" category="other" language="English" link="http://www.youtube.com/watch?v=K7mm4nogdJo" username="GamingCaravan" userid="3426893" postdate="2026-07-20T23:51:32-05:00" />
+						<video id="544127" title="?Cómo jugar a  juegos de mesa | Tutoriales Juegos de mesa" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=1r9DKXyj6QY" username="Meffy" userid="1399213" postdate="2025-03-18T09:25:41-05:00" />
+						<video id="498614" title="Zrozumieć Root cz.10 - Krucza Konspiracja I instrukcja I zasady I porady" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=UERW5r8jxz8" username="ushijager" userid="1500106" postdate="2024-06-05T02:15:49-05:00" />
+						<video id="498609" title="Zrozumieć Root cz.9 - Podziemne Księstwo I zasady I instrukcja I porady" category="instructional" language="Polish" link="http://www.youtube.com/watch?v=4dG_k0ljP3Q" username="ushijager" userid="1500106" postdate="2024-06-05T01:13:25-05:00" />
+						<video id="443980" title="13 Point Turn With Underground Duchy in the Root Board Game" category="session" language="English" link="http://www.youtube.com/watch?v=8IywyWp00KY" username="randalthompson" userid="663880" postdate="2023-06-28T22:02:19-05:00" />
+						<video id="443770" title="Bit för bit - Root: Corvid Conspiracy" category="instructional" language="Swedish" link="http://www.youtube.com/watch?v=5wgzL3nOKMk" username="Bitforbit" userid="2090566" postdate="2023-06-27T08:54:49-05:00" />
+						<video id="443263" title="Bit för bit - Root: Underground Duchy" category="instructional" language="Swedish" link="http://www.youtube.com/watch?v=4LCq5r9QR9Q" username="Bitforbit" userid="2090566" postdate="2023-06-23T04:13:10-05:00" />
+						<video id="434500" title="CORVID Conspiracy Tutorial for the ROOT Board Game" category="instructional" language="English" link="http://www.youtube.com/watch?v=Wasow1fwaM8" username="thegreat2" userid="412153" postdate="2023-04-22T23:34:12-05:00" />
+						<video id="428790" title="UNBOXING in 2 minutes" category="unboxing" language="English" link="http://www.youtube.com/watch?v=Wj7QwmBYbus" username="1a2a3a4" userid="668856" postdate="2023-03-18T02:29:11-05:00" />
+						<video id="427156" title="unboxing CZ Fox in the Box" category="unboxing" language="Czech" link="http://www.youtube.com/watch?v=_aaQ3wsxChU" username="1a2a3a4" userid="668856" postdate="2023-03-08T14:01:13-06:00" />
+						<video id="396554" title="Abrindo: Root: The Underworld Expansion (KS)" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=idP-SPr0AEU" username="Micaelsousa" userid="790334" postdate="2022-08-29T17:31:15-05:00" />
+						<video id="364755" title="insert Laserox" category="other" language="Czech" link="http://www.youtube.com/watch?v=PncFJcsQ4u4" username="1a2a3a4" userid="668856" postdate="2022-02-05T01:41:51-06:00" />
+						<video id="364378" title="Unboxing &amp; Reseña / Opinion de la Expansión Los subterraneos - ¿Merece la Pena?" category="review" language="Spanish" link="http://www.youtube.com/watch?v=4Y8gkm8PJJw" username="zakak" userid="2276178" postdate="2022-02-03T07:33:59-06:00" />
+						<video id="353668" title="Cómo Jugar/How To play" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=DYAOcfy2Hb4" username="VidaInfinita" userid="1331205" postdate="2021-11-21T03:00:20-06:00" />
+					</videos>
 
 	
 
@@ -612,22 +638,22 @@ The Underworld Expansion includes:
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="6594" />
-			<average value="8.70702" />
-			<bayesaverage value="7.77339" />
+			<usersrated value="6597" />
+			<average value="8.7076" />
+			<bayesaverage value="7.77418" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.77339" />
-																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="8.02627" />
-											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.91486" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.77418" />
+																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="8.02677" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.91529" />
 												</ranks>
 
-			<stddev value="1.10745" />
+			<stddev value="1.10604" />
 			<median value="0" />
-			<owned value="29702" />
-			<trading value="132" />
+			<owned value="29720" />
+			<trading value="131" />
 			<wanting value="265" />
-			<wishing value="2244" />
+			<wishing value="2245" />
 			<numcomments value="1127" />
 			<numweights value="102" />
 			<averageweight value="3.6471" />

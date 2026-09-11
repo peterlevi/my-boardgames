@@ -1,36 +1,39 @@
 {
  "confidence": "high",
- "summary": "Brass: Lancashire is a tight, tense economic puzzle where you build overlapping networks of canals and railways while timing industry sales and loans to maximize two separate scoring rounds. Every turn is an agonizing choice between building your own engine and blocking or piggybacking on opponents' links, with a merciless economy that punishes inefficiency.",
+ "summary": "The original Brass, set in Lancashire's cotton industry, plays much like Birmingham but with a tighter, more linear network and slightly less variability. It's a classic heavy economic game about timing your industry development against a fluctuating market.",
  "praised": [
-  "Deep, interlocking economic engine with real long-term planning",
-  "Clever double-scoring structure (canal era then rail era) rewards timing and flipping tiles at the right moment",
-  "High player interaction through shared network links and resource markets",
-  "Strong replayability due to variable player counts and card draws",
-  "Elegant mechanical unity — every action ties back to the network and resource flow"
+  "Tight, elegant economic design that rewards planning",
+  "Strong sense of building an industrial-era empire",
+  "Excellent replayability for veteran gamers"
  ],
  "criticised": [
-  "Steep learning curve and rules overhead for new players",
-  "Downtime and analysis paralysis, especially at higher player counts",
-  "Thin theme that's really just a numbers/logistics puzzle",
-  "Punishing for beginners playing against experienced players",
-  "Some fiddliness tracking coal/iron resource flow along links"
+  "Steep learning curve and unforgiving mistakes",
+  "Feels more austere and less varied than Birmingham's later redesign",
+  "Low direct interaction can feel isolating"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "network/route building with blocking, resource competition, and market manipulation"
+  "level": "Medium",
+  "kind": "network and market blocking",
+  "detail": "Players indirectly compete for map space and shared market demand for coal and cotton, so placement decisions constrain opponents' future options. The board and market are fully shared while each player's money and hand of cards stay private."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points come from flipped industry tiles plus connected canal/rail links, scored twice across two eras, so efficient network building and well-timed industry development decide the winner."
+  "breadth": "Some",
+  "why": "Points come from flipped industry tiles and connected links, scored once at the end of each of the two eras",
+  "how_you_win": "You win by maximizing the value of your connected, flipped industry tiles at the two scoring points of the canal and rail eras."
  },
  "similar": [
   "Brass: Birmingham",
   "Age of Steam",
-  "Food Chain Magnate",
-  "Great Western Trail",
-  "Container"
+  "Age of Industry",
+  "Barrage",
+  "Le Havre"
  ],
- "_fingerprint": "512c49613f220d89",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "34266fc8236f93f6",
  "_name": "Brass: Lancashire"
 }

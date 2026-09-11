@@ -360,7 +360,23 @@ At the end of the game the player who is most successful in combining their priv
 			
 
 			
-	
+			<videos total="48">
+						<video id="600976" title="Navegador - Début de partie commentée - Jeux Conseils # 44b - " category="session" language="French" link="http://www.youtube.com/watch?v=sNRWDvY87Z8" username="JeuxConseils" userid="2774684" postdate="2026-03-05T04:05:50-06:00" />
+						<video id="488080" title="Navegador ... Full Playthrough by the Crabby Dice" category="session" language="English" link="http://www.youtube.com/watch?v=ND2GSathesU" username="theCrabbyDice" userid="1287268" postdate="2024-03-28T21:26:54-05:00" />
+						<video id="488079" title="Navegador ... Setup and Rules by the Crabby Dice" category="instructional" language="English" link="http://www.youtube.com/watch?v=UFH9ZMq-mig" username="theCrabbyDice" userid="1287268" postdate="2024-03-28T21:26:22-05:00" />
+						<video id="470043" title="Navegador: fast review (ENG" category="review" language="English" link="http://www.youtube.com/watch?v=ziOOUSxFfes" username="Micaelsousa" userid="790334" postdate="2023-12-06T16:47:52-06:00" />
+						<video id="454466" title="Navegador: tutorial e análise" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=wy9lN9TZFoY" username="Micaelsousa" userid="790334" postdate="2023-09-01T16:52:14-05:00" />
+						<video id="431032" title="Abrindo: Navegador" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=Sdh6L_pJh4U" username="Micaelsousa" userid="790334" postdate="2023-03-31T13:37:42-05:00" />
+						<video id="413432" title="UNBOXING NAVEGADOR - #indabox" category="unboxing" language="English" link="http://www.youtube.com/watch?v=8mXlrGINA_I" username="stocaylus" userid="2442273" postdate="2022-12-10T11:10:45-06:00" />
+						<video id="378046" title="Navegador: Run-through: Economic Board Games" category="instructional" language="English" link="http://www.youtube.com/watch?v=urYMSSLI6h0" username="Craig D" userid="1951552" postdate="2022-04-27T11:31:12-05:00" />
+						<video id="376941" title="Navegador: Overview: Economic Board Games" category="review" language="English" link="http://www.youtube.com/watch?v=7L6Sd_XZuG0" username="Craig D" userid="1951552" postdate="2022-04-20T12:52:19-05:00" />
+						<video id="371000" title="Navegador - Règles importantes, conseils, variantes et configurations" category="instructional" language="French" link="http://www.youtube.com/watch?v=PwzKP5JQbAk" username="JeuxConseils" userid="2774684" postdate="2022-03-14T09:18:02-05:00" />
+						<video id="368685" title="Navegador - How to Play" category="instructional" language="Turkish" link="http://www.youtube.com/watch?v=8qCE5sVoPmg" username="ibiliss" userid="1854607" postdate="2022-02-28T05:55:44-06:00" />
+						<video id="368684" title="Navegador - ASMR Board Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=SkIW0H0WUZU" username="ibiliss" userid="1854607" postdate="2022-02-28T05:55:08-06:00" />
+						<video id="326506" title="Conociendo Navegador" category="review" language="Spanish" link="http://www.youtube.com/watch?v=DyP8IJy53Ls" username="microbio007" userid="478376" postdate="2021-05-26T20:22:46-05:00" />
+						<video id="325102" title="Cómo se juega exprés | Not in my Game" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=A1a05Z-pEAQ" username="GatthePekerd" userid="1303281" postdate="2021-05-19T03:07:58-05:00" />
+						<video id="322876" title="Videoanálisis: desmenuzando Navegador, juego de Mac Gerdts (Concordia)" category="other" language="Spanish" link="http://www.youtube.com/watch?v=fmKE-ZnvOmM" username="marioaguila" userid="37918" postdate="2021-05-06T16:18:52-05:00" />
+					</videos>
 
 	
 
@@ -369,21 +385,21 @@ At the end of the game the player who is most successful in combining their priv
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="9713" />
-			<average value="7.52644" />
-			<bayesaverage value="7.11815" />
+			<usersrated value="9715" />
+			<average value="7.52551" />
+			<bayesaverage value="7.11744" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="377" bayesaverage="7.11815" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="250" bayesaverage="7.21701" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="379" bayesaverage="7.11744" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="251" bayesaverage="7.21623" />
 												</ranks>
 
-			<stddev value="1.17695" />
+			<stddev value="1.17862" />
 			<median value="0" />
-			<owned value="9543" />
+			<owned value="9544" />
 			<trading value="191" />
-			<wanting value="554" />
-			<wishing value="2185" />
+			<wanting value="555" />
+			<wishing value="2186" />
 			<numcomments value="1953" />
 			<numweights value="601" />
 			<averageweight value="3.0799" />

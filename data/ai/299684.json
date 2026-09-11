@@ -1,36 +1,40 @@
 {
- "confidence": "high",
- "summary": "Khôra is a dice-driven engine-builder where you pick 2 of 7 actions each round and must adapt your plan to the die roll you get, climbing tracks that snowball into stronger resources, cards, and points. It plays fast for its depth, with tight turns and a real puzzle in reconciling your strategy with variable dice.",
+ "confidence": "medium",
+ "summary": "Khôra: Rise of an Empire is a dice-driven city-building game where each turn you pick two of seven possible actions, constrained by your dice roll, and climb economy, culture, and military tracks to unlock stronger options. It's a tight, quick-turn engine-building race with a Greek city-state theme layered over fairly abstract track advancement.",
  "praised": [
-  "Clever, tense action-selection puzzle balancing planned strategy against dice randomness",
-  "Multiple viable paths to victory (economy, military, culture, politics)",
-  "Fast turns and low downtime despite meaningful depth",
-  "Good component quality and iconography once learned",
-  "Strong replayability from varied strategies and achievement goals"
+  "clever dice-constrained action selection",
+  "satisfying tech-track progression",
+  "brisk turns keep the game moving",
+  "solid production value"
  ],
  "criticised": [
-  "Steep learning curve and dense rulebook/iconography for a first play",
-  "Dice manipulation mitigates but doesn't eliminate swingy bad rolls",
-  "Low direct player interaction can make it feel solitaire-ish",
-  "Some symbol/track overload makes teaching it to new players hard",
-  "End-of-game scoring can feel a bit fiddly to tally"
+  "theme feels pasted onto the mechanisms",
+  "results can swing on dice rolls",
+  "compared unfavorably as derivative of other engine-builders by some reviewers"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel engine-building with light racing for shared resources/track positions"
+  "kind": "shared tracks with light racing",
+  "detail": "Players advance along common economy, culture, and military tracks and can be first to claim limited achievements, but most of a turn is spent managing your own dice results and resources somewhat independently of opponents."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from multiple tracks, achievements, and end-game bonuses tied to how far you advanced across economy, culture, and military development"
+  "why": "Victory points accumulate from track positions, claimed achievements, and end-game bonuses tied to your developed city-state.",
+  "how_you_win": "Climb the economy, culture, and military tracks efficiently and claim achievements ahead of opponents to finish with the most points."
  },
  "similar": [
-  "Trismegistus",
-  "Teotihuacan: City of Gods",
+  "Trajan",
   "Tzolk'in: The Mayan Calendar",
-  "Underwater Cities",
-  "Barrage"
+  "Yokohama",
+  "Teotihuacan: City of Gods",
+  "Nusfjord"
  ],
- "_fingerprint": "b93313f4ded65a6c",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "04c8c70bfcb77d3d",
  "_name": "Khôra: Rise of an Empire"
 }

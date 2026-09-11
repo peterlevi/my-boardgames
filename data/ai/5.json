@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Acquire is a lean, almost puzzle-like exercise in timing: you place tiles to grow hotel chains and buy stock, but the real game is watching for mergers and maneuvering to hold majority/minority shares right before a chain gets swallowed. Turns are fast and rules are simple, yet the stock-value math and merger bonuses create surprisingly sharp, cutthroat decisions.",
+ "summary": "Acquire is a classic tile-laying and stock investment game where players place tiles to grow hotel chains on a shared board and buy stock in those chains hoping they merge profitably. The tension comes from timing: buying into a small chain before it merges into a larger one, and deciding whether to hold or sell shares right as a merger is about to pay out big bonuses.",
  "praised": [
-  "Extremely clean, teachable rules that still yield deep strategic tension",
-  "The merger/majority-bonus mechanic feels clever and rewards paying attention to the board",
-  "Fast turns keep the game moving despite meaningful decisions",
-  "Holds up remarkably well as one of the earliest modern economic games"
+  "simple rules hiding surprisingly deep investment strategy",
+  "classic, enduring design that still holds up",
+  "tense merger moments with real money swings",
+  "easy to teach to non-gamers"
  ],
  "criticised": [
-  "Tile draw luck can hand someone a dominant position or trigger a merger at a bad time",
-  "Can produce kingmaker moments where a losing player's merger choice decides the winner",
-  "Downtime and fiddly share bookkeeping increase with 5-6 players",
-  "Endgame timing (when to end it) can feel like a swingy, sometimes controversial decision"
+  "can be swingy based on tile luck late game",
+  "runaway leader potential if one player dominates early mergers",
+  "some player-elimination-adjacent frustration when a chain you invested in never grows",
+  "fairly dry theme and presentation"
  ],
  "interaction": {
   "level": "High",
-  "kind": "stock speculation and merger timing/takeovers"
+  "kind": "stock investment and market manipulation on a shared board",
+  "detail": "All chains and the tile grid are fully shared and public, so a tile placement that merges two hotel chains directly determines bonus payouts and share values for every player holding stock in those chains."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is decided almost entirely by cash plus stock value, driven by who holds majority/minority positions in chains when mergers happen."
+  "why": "final cash total, including money from stock sold and merger bonuses, decides the winner",
+  "how_you_win": "you win by holding majority stock in chains right before they merge or end the game, cashing in for large bonuses and high share payouts"
  },
  "similar": [
-  "Chinatown",
-  "Union Pacific",
+  "Acquire (variants)",
   "Container",
-  "Age of Steam",
-  "Airlines Europe"
+  "Chinatown",
+  "Airlines Europe",
+  "Fund Manager"
  ],
- "_fingerprint": "c2676f7442dd3f02",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames",
+  "GameNight!"
+ ],
+ "_fingerprint": "7c1503a819eb7e4c",
  "_name": "Acquire"
 }

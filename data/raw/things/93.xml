@@ -532,7 +532,23 @@ The goal is to have a caballero majority in as many regions (and the castillo) a
 			
 
 			
-	
+			<videos total="125">
+						<video id="626492" title="El Grande à 5 joueurs : est-il toujours la référence du jeu de majorité ?" category="session" language="French" link="http://www.youtube.com/watch?v=TEiurCTCI60" username="hark25" userid="134371" postdate="2026-08-23T13:35:33-05:00" />
+						<video id="611707" title="Lanlalen EP615: El Grande" category="review" language="Thai" link="http://www.youtube.com/watch?v=JgQE5iSQgWs" username="lanlalencafe" userid="760965" postdate="2026-05-14T08:05:47-05:00" />
+						<video id="586553" title="El Grande - videopredstavenie hry" category="other" language="Slovak" link="http://www.youtube.com/watch?v=JjMDXSNt8gA" username="Jutrinem" userid="4279911" postdate="2025-12-06T12:54:51-06:00" />
+						<video id="583853" title="Огляд від каналу &quot;тупа настілки.&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=xcpDpZ618JQ" username="davose" userid="1472043" postdate="2025-11-20T00:01:57-06:00" />
+						<video id="575864" title="El Grande Insert" category="unboxing" language="English" link="http://www.youtube.com/watch?v=HL7xd4zuawg" username="KnittelMan" userid="2991868" postdate="2025-10-07T18:36:39-05:00" />
+						<video id="566278" title="El Grande -1 minute Overview - Peaky Boardgamer" category="review" language="English" link="http://www.youtube.com/watch?v=ewofyrGqdZk" username="PeakyBoardgamer" userid="2874308" postdate="2025-08-09T12:58:08-05:00" />
+						<video id="565001" title="El Grande - Unboxing &amp; Reboxing with Assembly - What’s in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=pWWgESbrSS4" username="broseygames" userid="4181268" postdate="2025-07-29T22:32:48-05:00" />
+						<video id="564117" title="Cómo jugar El Grande ESPAÑOL LATINO" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=8zqkP4RFMiM" username="santosresena" userid="3542758" postdate="2025-07-23T12:48:26-05:00" />
+						<video id="562649" title="ceci n'est pas une video règle" category="review" language="French" link="http://www.youtube.com/watch?v=7e1s87XxjIQ" username="Cainayato" userid="136862" postdate="2025-07-13T15:00:52-05:00" />
+						<video id="561463" title="Booghy plays... El Grande(3p, Rules, Playthrough, Review) " category="review" language="English" link="http://www.youtube.com/watch?v=20G93sx0Lfs" username="bogdani0405" userid="1267302" postdate="2025-07-04T08:24:26-05:00" />
+						<video id="552672" title="Nopparallin arvostelussa El Grande" category="review" language="Finnish" link="http://www.youtube.com/watch?v=FpCGx_n6bLE" username="Nopparalli" userid="1407333" postdate="2025-05-06T10:32:01-05:00" />
+						<video id="533775" title="El Grande: 2025 BoardGameGeek Hall of Fame Inductee" category="other" language="English" link="http://www.youtube.com/watch?v=93tpwW62qtc" username="boardgamegeektv" userid="473702" postdate="2025-01-21T08:00:36-06:00" />
+						<video id="525465" title="Lär dig spela El Grande!" category="instructional" language="Swedish" link="http://www.youtube.com/watch?v=KMhGrRtsXQc" username="larshall" userid="102159" postdate="2024-11-22T02:14:22-06:00" />
+						<video id="525370" title="El Grande, el juego de mesa: reseña en vivo." category="review" language="Spanish" link="http://www.youtube.com/watch?v=MglFoxFn8RM" username="davicazu" userid="150780" postdate="2024-11-21T10:31:52-06:00" />
+						<video id="522822" title="Abrindo: El Grande (nova edição)" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=YT8A4pisfYE" username="Micaelsousa" userid="790334" postdate="2024-11-05T12:39:46-06:00" />
+					</videos>
 
 	
 
@@ -541,22 +557,22 @@ The goal is to have a caballero majority in as many regions (and the castillo) a
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="33569" />
-			<average value="7.77218" />
-			<bayesaverage value="7.59363" />
+			<usersrated value="33581" />
+			<average value="7.77208" />
+			<bayesaverage value="7.59354" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="100" bayesaverage="7.59363" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="79" bayesaverage="7.6231" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="101" bayesaverage="7.59354" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="79" bayesaverage="7.62308" />
 												</ranks>
 
-			<stddev value="1.32277" />
+			<stddev value="1.32334" />
 			<median value="0" />
-			<owned value="36386" />
-			<trading value="522" />
-			<wanting value="1389" />
-			<wishing value="7832" />
-			<numcomments value="6633" />
+			<owned value="36395" />
+			<trading value="524" />
+			<wanting value="1393" />
+			<wishing value="7831" />
+			<numcomments value="6635" />
 			<numweights value="2500" />
 			<averageweight value="2.9312" />
 			</ratings>

@@ -1,35 +1,21 @@
 {
- "confidence": "high",
- "summary": "It's a tight two-player bluffing and hand-management duel where you fight over three theaters and must decide when to play a strong card for tempo versus holding it as a Reserve to threaten a swing. Games are fast and tense, often decided by a single well-timed Support, Retreat, or Redeploy special ability that flips a losing theater.",
- "praised": [
-  "Huge depth from a tiny card pool",
-  "Fast, replayable 15-20 minute plays",
-  "Elegant special-ability text that creates constant bluffing and mind games",
-  "New theaters (Intelligence, Diplomacy, Economics) add fresh tactical texture without bloating the game",
-  "Easy to teach, hard to master"
- ],
- "criticised": [
-  "Strictly two-player, so it can't flex to groups",
-  "Some new cards/theaters seen as less balanced or elegant than the original six",
-  "Thin, abstract theme (WWII/animal art skin) that doesn't add narrative weight",
-  "Requires the base game or its own theaters to reach 'Epic Mode' variety"
- ],
+ "confidence": "low",
+ "summary": "",
+ "praised": [],
+ "criticised": [],
  "interaction": {
-  "level": "High",
-  "kind": "direct card-play conflict and bluffing over shared theaters"
+  "level": "",
+  "kind": "",
+  "detail": ""
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Other",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The player controlling more theaters (by total card value) at the end of the round wins, so it comes down to concentrating strength and timing key plays across just three or five theaters"
+  "breadth": "",
+  "why": "",
+  "how_you_win": ""
  },
- "similar": [
-  "Air, Land & Sea (base game)",
-  "Battle Line",
-  "Schotten Totten",
-  "Radlands",
-  "Undaunted: Normandy"
- ],
- "_fingerprint": "373f22bb11c27ddc",
+ "similar": [],
+ "teachers": [],
+ "_fingerprint": "d6fc7f81a467a2f7",
  "_name": "Air, Land, & Sea: Spies, Lies, & Supplies"
 }

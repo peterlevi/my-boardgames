@@ -782,7 +782,23 @@ Over five rounds, the players must fulfill power requirements represented by a c
 			
 
 			
-	
+			<videos total="190">
+						<video id="615266" title="Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=oepO7rzAEtE" username="Laurent_B" userid="4354045" postdate="2026-06-09T11:53:12-05:00" />
+						<video id="608276" title="Barrage - jak sprawdza się solo? | zasady w praktyce" category="session" language="Polish" link="http://www.youtube.com/watch?v=INs9uMzRLtY" username="majzownik" userid="262674" postdate="2026-04-20T03:59:12-05:00" />
+						<video id="600067" title="Barrage in 30 Seconds! | I Teach Her She Wins" category="review" language="English" link="http://www.youtube.com/watch?v=NuS6R9gbNt4" username="elbirbo" userid="914131" postdate="2026-02-26T13:30:12-06:00" />
+						<video id="594582" title="BARRAGE - Ti mostro la DIGA!" category="review" language="Italian" link="http://www.youtube.com/watch?v=SCh6biPW6aY" username="Kandysultavolo" userid="3837796" postdate="2026-01-26T11:49:17-06:00" />
+						<video id="594474" title="Barrage - Board Game Music" category="other" language="English" link="http://www.youtube.com/watch?v=f6jZH-hI1PU" username="Telcontar_BG" userid="2817490" postdate="2026-01-26T05:05:22-06:00" />
+						<video id="581173" title="Szybka Wrzutka - Barrage" category="review" language="Polish" link="http://www.youtube.com/watch?v=nVAcjKL2kEs" username="SMGP Kosci" userid="1684808" postdate="2025-11-05T02:57:18-06:00" />
+						<video id="573627" title="Barrage, it's a dam good game!" category="review" language="English" link="http://www.youtube.com/watch?v=3yAzMQ4mENQ" username="Craig D" userid="1951552" postdate="2025-09-24T13:38:37-05:00" />
+						<video id="561859" title="Barrage Digital Review" category="review" language="English" link="http://www.youtube.com/watch?v=IpjnTIK9SjY" username="rob2kewl" userid="536700" postdate="2025-07-07T12:15:07-05:00" />
+						<video id="554777" title="Barrage - First look at the Digital Version &amp; Giveaway" category="review" language="English" link="http://www.youtube.com/watch?v=dIrfDEJ3bm8" username="PaulGrogan" userid="1685" postdate="2025-05-19T08:39:45-05:00" />
+						<video id="554248" title="Barrage Digital Dev Story: Turning a Boardgame in a digital experience" category="other" language="English" link="http://www.youtube.com/watch?v=yXxwsoibxjA" username="BGGCranioCreations" userid="2627888" postdate="2025-05-15T15:36:52-05:00" />
+						<video id="548214" title="Огляд від каналу &quot;WoodCatGames&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=zz9k7kSBOKk" username="punk_rock" userid="2986072" postdate="2025-04-12T02:40:13-05:00" />
+						<video id="536741" title="Barrage - gra planszowa, dodruk | KONTROLA JAKOŚCI [2025]" category="unboxing" language="Polish" link="http://www.youtube.com/watch?v=TcS8-oE-xAU" username="ArgoNawija" userid="1986033" postdate="2025-02-07T11:29:00-06:00" />
+						<video id="529435" title="(1223) Barrage - recenzja (PL)" category="review" language="Polish" link="http://www.youtube.com/watch?v=3rZatH8FhBE" username="Jean_Leviathan" userid="234662" postdate="2024-12-19T09:30:05-06:00" />
+						<video id="528503" title="Barrage Ranked In 14 Seconds" category="review" language="English" link="http://www.youtube.com/watch?v=kKfJRrzYZyQ" username="Bryle" userid="1233729" postdate="2024-12-12T12:59:36-06:00" />
+						<video id="528197" title="(1219) Barrage - unboxing (PL)" category="unboxing" language="Polish" link="http://www.youtube.com/watch?v=-ZyFlR997P8" username="Jean_Leviathan" userid="234662" postdate="2024-12-10T09:30:03-06:00" />
+					</videos>
 
 	
 
@@ -791,21 +807,21 @@ Over five rounds, the players must fulfill power requirements represented by a c
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="22220" />
+			<usersrated value="22236" />
 			<average value="8.13209" />
-			<bayesaverage value="7.83478" />
+			<bayesaverage value="7.83477" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="40" bayesaverage="7.83478" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="32" bayesaverage="7.89106" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="40" bayesaverage="7.83477" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="32" bayesaverage="7.89091" />
 												</ranks>
 
-			<stddev value="1.44707" />
+			<stddev value="1.44733" />
 			<median value="0" />
-			<owned value="27097" />
-			<trading value="216" />
-			<wanting value="843" />
-			<wishing value="7582" />
+			<owned value="27103" />
+			<trading value="221" />
+			<wanting value="841" />
+			<wishing value="7589" />
 			<numcomments value="3091" />
 			<numweights value="1247" />
 			<averageweight value="4.1147" />

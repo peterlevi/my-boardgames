@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "A tight two-player abstract game where you race to buy irregularly-shaped patches and pack them efficiently onto your 9x9 board while managing a tiny economy of buttons and time. Turn order is driven by a shared time track rather than alternation, so tempo and timing matter as much as the puzzle itself.",
+ "summary": "Patchwork is a light two-player abstract game where players buy irregularly-shaped tetromino-like patches to tile their personal 9x9 quilt board while managing a shared time track and limited buttons (currency). It's quick, tactile, and puzzly, with a satisfying tension between grabbing good pieces and staying ahead on time.",
  "praised": [
-  "Elegant, tight rules that create real depth",
-  "Satisfying tactile Tetris-like puzzle of fitting patches together",
-  "Fast to teach and play, works well as a filler or gateway two-player game",
-  "Clever time-track turn order mechanism keeps both players engaged"
+  "Excellent gateway/filler for two players",
+  "Tactile, satisfying spatial puzzle",
+  "Quick setup and short playtime"
  ],
  "criticised": [
-  "Can feel solitaire-ish with limited direct interaction beyond patch/timing denial",
-  "Luck of the patch circle draw can swing outcomes",
-  "Limited long-term replayability once optimal patterns are learned",
-  "Only supports 2 players, excluding larger groups"
+  "Limited long-term depth or replay variety",
+  "Can feel like a solved puzzle after many plays",
+  "Only supports two players"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light blocking via patch and timing denial"
+  "level": "Medium",
+  "kind": "race and denial for shared pieces",
+  "detail": "Both players draw from the same circle of available patches and race along a shared time track, so taking a good patch or moving ahead in time directly denies options to the other player. Each player's quilt board itself is private and not directly attacked."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Final score is buttons remaining plus board bonuses minus empty-square penalties, so efficient patch fitting and button income dominate the outcome"
+  "why": "Final score is buttons remaining minus a penalty for empty squares on your quilt",
+  "how_you_win": "You win by filling your quilt board efficiently with patches that earn buttons, leaving the fewest empty squares while ending with the most spare buttons."
  },
  "similar": [
   "Patchwork Doodle",
-  "Uwe Rosenberg's Cottage Garden",
-  "Kingdomino",
-  "Azul",
-  "Karuba"
+  "Cottage Garden",
+  "Karuba",
+  "Barenpark",
+  "Calico"
  ],
- "_fingerprint": "b366cc86229f5cb9",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "7c858567ff55c042",
  "_name": "Patchwork"
 }

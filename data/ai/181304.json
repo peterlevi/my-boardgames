@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "One player plays a mute ghost showing dreamy, surreal illustrated cards to the other players (mediums), who must match suspect/location/weapon cards to the visions under a time pressure; it's a cooperative, real-time guessing game built on interpreting evocative art rather than tight logic. The tension comes from the ghost's frustration at not being able to just say the answer, and the mediums' delight (or despair) at wildly divergent interpretations of the same surreal image.",
+ "summary": "Mysterium is a cooperative deduction party game where one player acts as a mute ghost communicating clues through surreal illustrated cards while the rest of the table tries to guess a suspect, location, and weapon. It's a beloved, atmospheric icebreaker that thrives on wild interpretation and shared laughter rather than tight logic.",
  "praised": [
-  "Gorgeous, evocative artwork that makes the guessing genuinely fun",
-  "Strong asymmetric player experience (ghost vs mediums) that's rare in party games",
-  "Great for groups including non-gamers, since only the ghost needs to fully know the rules",
-  "Tense, satisfying payoff when a hard clue finally clicks"
+  "gorgeous, evocative artwork",
+  "great as a party/family icebreaker",
+  "unique asymmetric ghost role is memorable"
  ],
  "criticised": [
-  "Luck of the draw matters a lot — a bad hand of cards can make the ghost unable to signal clearly",
-  "Can run long and drag in the middle chapters",
-  "Ghost player has little to do mechanically except sort cards, which some find passive",
-  "Interpretation-based deduction means outcomes vary wildly by group chemistry, not skill"
+  "luck-dependent on which clue cards you're dealt",
+  "ghost player can feel passive/frustrated if clues don't align",
+  "less satisfying with very analytical groups expecting tight logic"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "cooperative real-time communication and guessing"
+  "level": "Medium",
+  "kind": "cooperative clue-giving with communication limits",
+  "detail": "One player (the ghost) silently guides the rest of the group toward shared answers using visual cards, so the entire game state is communal and success depends on collective interpretation rather than individual boards."
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "the group either collectively identifies suspect, location, and weapon within the time limit or fails together, with no individual scoring"
+  "why": "The group either successfully identifies the correct suspect/location/weapon combination in time or fails together",
+  "how_you_win": "The mediums correctly interpret the ghost's visions to identify the culprit before the seven hours (turns) run out."
  },
  "similar": [
   "Dixit",
-  "The Mind",
-  "Codenames",
-  "Chronicles of Crime",
-  "Decrypto"
+  "Detective: A Modern Crime Board Game",
+  "The Vale of Eternity",
+  "Photosynthesis",
+  "Just One"
  ],
- "_fingerprint": "2c42a34fbe6494a2",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Gaming Rules!"
+ ],
+ "_fingerprint": "851398b990c37fe4",
  "_name": "Mysterium"
 }

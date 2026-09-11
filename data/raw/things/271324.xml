@@ -48,42 +48,42 @@ More info on the Campaign mode : It's a Wonderful World - Campaign Mode
 										      	               				<yearpublished value="2019" />
 						               				<minplayers value="1" />
 						               				<maxplayers value="5" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="450">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="451">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="76" />
-					<result value="Recommended" numvotes="168" />
+					<result value="Recommended" numvotes="169" />
 					<result value="Not Recommended" numvotes="61" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="82" />
-					<result value="Recommended" numvotes="220" />
+					<result value="Recommended" numvotes="221" />
 					<result value="Not Recommended" numvotes="44" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="139" />
+					<result value="Best" numvotes="140" />
 					<result value="Recommended" numvotes="177" />
 					<result value="Not Recommended" numvotes="18" />
 				</results>					
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="198" />
-					<result value="Recommended" numvotes="111" />
+					<result value="Recommended" numvotes="112" />
 					<result value="Not Recommended" numvotes="16" />
 				</results>					
 			
 		<results numplayers="5">		
 					<result value="Best" numvotes="55" />
-					<result value="Recommended" numvotes="175" />
+					<result value="Recommended" numvotes="176" />
 					<result value="Not Recommended" numvotes="47" />
 				</results>					
 			
 		<results numplayers="5+">		
 					<result value="Best" numvotes="8" />
 					<result value="Recommended" numvotes="23" />
-					<result value="Not Recommended" numvotes="147" />
+					<result value="Not Recommended" numvotes="148" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -93,7 +93,7 @@ More info on the Campaign mode : It's a Wonderful World - Campaign Mode
 						               				<minplaytime value="45" />
 						               				<maxplaytime value="45" />
 						               				<minage value="14" />
-						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="93">
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="94">
 			<results>		
 					<result value="2" numvotes="0" />
 					<result value="3" numvotes="0" />
@@ -101,7 +101,7 @@ More info on the Campaign mode : It's a Wonderful World - Campaign Mode
 					<result value="5" numvotes="0" />
 					<result value="6" numvotes="0" />
 					<result value="8" numvotes="22" />
-					<result value="10" numvotes="30" />
+					<result value="10" numvotes="31" />
 					<result value="12" numvotes="33" />
 					<result value="14" numvotes="7" />
 					<result value="16" numvotes="1" />
@@ -570,7 +570,23 @@ More info on the Campaign mode : It's a Wonderful World - Campaign Mode
 			
 
 			
-	
+			<videos total="283">
+						<video id="621674" title="It's a Wonderful World | Base Game &amp; Expansions Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=yhnZVBcCZDQ" username="OneLastHand" userid="4143055" postdate="2026-07-22T15:32:01-05:00" />
+						<video id="615011" title="It's a Wonderful World | Solo Play #6 Report" category="review" language="English" link="http://www.youtube.com/watch?v=Vkr7-W7_Eps" username="Darknlves" userid="2394417" postdate="2026-06-07T11:00:38-05:00" />
+						<video id="607863" title="Unboxing It's wondefrul world بالعربي" category="unboxing" language="Arabic" link="http://www.youtube.com/watch?v=IRXx_gPYXCg" username="hussein1" userid="1185934" postdate="2026-04-16T11:58:22-05:00" />
+						<video id="596715" title="It's a Wonderful World: ¿Deberías comprarlo? | Opinión y Puntuación" category="review" language="Spanish" link="http://www.youtube.com/watch?v=cVCuLXt5Yng" username="La_Critica_Ludica" userid="2803453" postdate="2026-02-09T02:25:46-06:00" />
+						<video id="596345" title="It's a Wonderful World | ¿Funciona en Solitario?" category="review" language="Spanish" link="http://www.youtube.com/watch?v=RSeUkRRDAcY" username="La_Critica_Ludica" userid="2803453" postdate="2026-02-06T10:59:13-06:00" />
+						<video id="595886" title="It's a Wonderful World: ¿Está justificado su precio? | Diseño y Componentes" category="review" language="Spanish" link="http://www.youtube.com/watch?v=qj0Ss_rbTXo" username="La_Critica_Ludica" userid="2803453" postdate="2026-02-03T12:33:18-06:00" />
+						<video id="562555" title="Better than 7 Wonders?  It's a Wonderful World REVIEW" category="review" language="English" link="http://www.youtube.com/watch?v=GCPe65-b7jY" username="Cardboard_RJ" userid="2415344" postdate="2025-07-12T16:46:58-05:00" />
+						<video id="559638" title="It's a Wonderful World #boardgames #boardgamelife #boardgamegeek #美麗新世界" category="other" language="English" link="http://www.youtube.com/watch?v=NfF-bUbjL3s" username="czeslaw6300149" userid="798383" postdate="2025-06-21T23:00:37-05:00" />
+						<video id="556953" title="Відеоправила від Kilogames" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=Ep3v3bKVKfQ" username="davose" userid="1472043" postdate="2025-06-02T17:11:12-05:00" />
+						<video id="549963" title="It's a Wonderful World #boardgames #boardgamelife #boardgamegeek #美麗新世界" category="other" language="English" link="http://www.youtube.com/watch?v=5Nxx0d3Q4DU" username="czeslaw6300149" userid="798383" postdate="2025-04-21T07:00:12-05:00" />
+						<video id="549353" title="A 7 Csoda legnagyobb ellenfele? Egy szép új világ társasjáték játékbemutató és szabályismertető" category="review" language="Hungarian" link="http://www.youtube.com/watch?v=oxuEalV7Jl8" username="nemapeti" userid="2055717" postdate="2025-04-18T03:19:09-05:00" />
+						<video id="533841" title="It's a Wonderful World by ‪LuckyDuckGames‬ | 2 Player Board Games | Card Drafting | Engine Building" category="session" language="English" link="http://www.youtube.com/watch?v=54JljdkIBCE" username="WackyTabaxiTavern" userid="2679732" postdate="2025-01-21T12:25:11-06:00" />
+						<video id="530628" title="Огляд від Kilogames" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=FtnzagXeYKk" username="davose" userid="1472043" postdate="2024-12-30T13:11:41-06:00" />
+						<video id="527485" title="IT'S A WONDERFUL WORLD Board Game | Inside #41" category="unboxing" language="English" link="http://www.youtube.com/watch?v=adI9DiYkaMU" username="table_talks" userid="3249213" postdate="2024-12-04T15:45:32-06:00" />
+						<video id="514057" title="Board Game Gumbo: Review" category="review" language="English" link="http://www.youtube.com/watch?v=GtYLZaaIrio" username="BoardGameGumbo" userid="786127" postdate="2024-09-14T09:30:25-05:00" />
+					</videos>
 
 	
 
@@ -579,24 +595,24 @@ More info on the Campaign mode : It's a Wonderful World - Campaign Mode
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="23709" />
-			<average value="7.62092" />
-			<bayesaverage value="7.38194" />
+			<usersrated value="23720" />
+			<average value="7.62097" />
+			<bayesaverage value="7.38197" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="188" bayesaverage="7.38194" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="150" bayesaverage="7.40612" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="188" bayesaverage="7.38197" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="151" bayesaverage="7.40607" />
 												</ranks>
 
-			<stddev value="1.26606" />
+			<stddev value="1.26552" />
 			<median value="0" />
-			<owned value="30540" />
+			<owned value="30554" />
 			<trading value="305" />
-			<wanting value="647" />
-			<wishing value="6479" />
-			<numcomments value="3224" />
-			<numweights value="631" />
-			<averageweight value="2.3233" />
+			<wanting value="645" />
+			<wishing value="6486" />
+			<numcomments value="3222" />
+			<numweights value="633" />
+			<averageweight value="2.3223" />
 			</ratings>
 								</statistics>
      

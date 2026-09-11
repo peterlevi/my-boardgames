@@ -241,7 +241,9 @@ Ever wonder how containers move from factories to warehouses? With trucks, of co
 			
 
 			
-	
+			<videos total="1">
+						<video id="629182" title="All the Games with Steph: More Containers - Overview" category="instructional" language="English" link="http://www.youtube.com/watch?v=V3h2B39nOWU" username="boardgamersteph" userid="212591" postdate="2026-09-09T23:49:10-05:00" />
+					</videos>
 
 	
 
@@ -250,20 +252,20 @@ Ever wonder how containers move from factories to warehouses? With trucks, of co
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="83" />
-			<average value="7.71052" />
-			<bayesaverage value="5.56281" />
+			<usersrated value="84" />
+			<average value="7.71397" />
+			<bayesaverage value="5.56384" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.56281" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.56384" />
 												</ranks>
 
-			<stddev value="1.74956" />
+			<stddev value="1.7394" />
 			<median value="0" />
-			<owned value="2122" />
+			<owned value="2136" />
 			<trading value="13" />
 			<wanting value="11" />
-			<wishing value="63" />
+			<wishing value="64" />
 			<numcomments value="52" />
 			<numweights value="0" />
 			<averageweight value="0" />

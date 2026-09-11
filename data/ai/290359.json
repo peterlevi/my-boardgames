@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "A two-player hex-and-card wargame where you build and prune a deck of unit cards over a series of short scenarios, using command cards to activate squads, ambush, and fight for control points. Vehicles, wounded soldiers leaving your deck, and asymmetric British/Italian decks give it a tighter tactical, more mobile feel than the original Normandy entry.",
+ "summary": "Two players each command a deck representing their squads, playing cards to move, spot, suppress, or attack across a hex battlefield inspired by real WWII skirmishes in North Africa. As units take casualties their cards leave the deck (or go into a wound pile), so your options visibly degrade over the course of a scenario, mirroring the attrition of the fight.",
  "praised": [
-  "Fast, tense scenarios that teach a real deckbuilding-meets-wargame system without heavy rules overhead",
-  "Evolving decks (wounds, reinforcements, vehicles) make each game feel like a narrative battle rather than an abstract exercise",
-  "Strong two-player asymmetry between the mobile LRDG raiders and the more static Italian defenders",
-  "Solid campaign mode that links scenarios together with persistent consequences"
+  "elegant fusion of deckbuilding with a tactical wargame",
+  "tense, story-driven scenario campaign",
+  "quick to teach despite deep tactics",
+  "strong two-player experience"
  ],
  "criticised": [
-  "Dice-based combat resolution introduces swingy luck that can undercut careful positioning",
-  "Scenario-to-scenario structure can feel samey if played outside the campaign",
-  "Vehicle rules and open desert terrain are seen by some as a step down in tension from Normandy's hedgerow chokepoints",
-  "Solo/asymmetric balance across some individual scenarios is uneven"
+  "card draw luck can swing a scenario",
+  "later campaign missions can feel unbalanced",
+  "deck thinning can snowball for the player already ahead"
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct combat and area/objective control on a shared hex map"
+  "kind": "direct tactical combat and area denial",
+  "detail": "Players act on a single shared hex map, using line of sight, suppression, and initiative order to directly block, ambush, or shoot each other's units. Nearly all meaningful state (the map, unit positions, casualties) is shared and contested rather than sitting on a private tableau."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "Each scenario is decided by mission-specific objectives (holding control points, eliminating units, or reaching a zone) rather than an accumulated score"
+  "why": "Each scenario has its own victory objective (control points, eliminate units, survive turns) rather than an accumulated score.",
+  "how_you_win": "You complete the specific mission objective, usually by holding key hexes or breaking the other side's force, before the scenario's turn limit runs out."
  },
  "similar": [
   "Undaunted: Normandy",
   "Undaunted: Reinforcements",
-  "Undaunted: Stalingrad",
-  "Hostage Negotiator",
-  "Fort"
+  "Undaunted: 2200",
+  "Memoir '44",
+  "Battle Line"
  ],
- "_fingerprint": "2a87059d3c601eea",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "e300fc9d2beea1a3",
  "_name": "Undaunted: North Africa"
 }

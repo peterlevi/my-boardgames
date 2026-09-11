@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "Codenames: Pictures swaps the word grid for illustrated image cards, making it more accessible to younger players and non-native speakers while keeping the same clue-giving, team-guessing structure as the original. Clues tend to be more abstract and visual, focused on shapes, colors, and concepts within the images.",
+ "summary": "Codenames: Pictures swaps the word grid for a grid of surreal, densely-illustrated image cards, making clue-giving looser and more associative than the word version. It plays the same as base Codenames but tends to be friendlier for younger players or non-native speakers since it leans on visual rather than verbal association.",
  "praised": [
-  "great option for families, kids, or mixed-language groups",
-  "images allow for more creative, abstract clue associations",
-  "same fast, easy-to-teach structure as original Codenames",
-  "combines well with original Codenames cards for variety"
+  "Great for kids, families, or mixed-language groups",
+  "Whimsical, imaginative artwork sparks creative clues",
+  "Fully compatible/combinable with other Codenames sets",
+  "Same easy-to-teach, fast-playing formula"
  ],
  "criticised": [
-  "some feel picture clues are less satisfying/clever than word clues",
-  "images can be ambiguous or overly busy",
-  "loses some of the sharp wordplay wit of the original",
-  "considered a variant rather than essential on its own"
+  "Images can be more ambiguous than words, leading to messier clues",
+  "Some feel it's a bit easier/less sharp than the original",
+  "Not a huge structural change if you already own base Codenames"
  ],
  "interaction": {
   "level": "High",
-  "kind": "team communication and clue-guessing under uncertainty"
+  "kind": "team communication and visual-association deduction",
+  "detail": "Like the original, the whole grid of image cards is shared and one player's clue guides their entire team's guesses each turn, with two teams racing on the same board. All game information is public except for the spymasters' hidden knowledge of which cards belong to whom."
  },
  "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "the team that contacts all of its own agents first wins, with no accumulating point total"
+  "why": "There's no points; only which team contacts all their agents first without touching the assassin decides the outcome.",
+  "how_you_win": "Your team wins by identifying all of your image-agents before the opposing team does, or if the opponents accidentally select the assassin."
  },
  "similar": [
   "Codenames",
   "Codenames: Duet",
   "Dixit",
   "Mysterium",
-  "Just One"
+  "Decrypto"
  ],
- "_fingerprint": "4ea08ee8922a42ce",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "16bae85ca175b2a8",
  "_name": "Codenames: Pictures"
 }

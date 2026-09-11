@@ -1,35 +1,40 @@
 {
  "confidence": "high",
- "summary": "Players draft dice from a shared rondel-like row and use their values/colors to buy resources, fulfill contracts, and place gems to build the cathedral's arches. It's a tight, fairly short euro with light dice-drafting tension but very little direct conflict.",
+ "summary": "Players use a shared rondel of colored dice to gather resources and place them on a communal cathedral structure, fulfilling personal contracts for points while also caring about majority control on the cathedral itself. It's a tight, midweight euro with a clever mix of individual engine-building and shared-board area control.",
  "praised": [
-  "Clever use of dice as a resource-drafting mechanism rather than pure luck",
-  "Fast turns and short playtime relative to its strategic depth",
-  "Attractive, colorful presentation and components",
-  "Multiple viable paths to score (contracts, arches, favor track)",
-  "Works well solo"
+  "Clever rondel/dice mechanism",
+  "Nice tension between personal contracts and shared cathedral",
+  "Quick turns, low downtime",
+  "Good production for a smaller box"
  ],
  "criticised": [
-  "Interaction is limited to competing for the same dice, which can feel too solitaire-ish for gamers wanting more conflict",
-  "Some randomness in available dice can swing options turn to turn",
-  "End-game scoring can feel a bit fiddly to track across several tracks",
-  "Slightly dry theme integration"
+  "Can feel a bit fiddly to learn at first",
+  "Some randomness in dice availability",
+  "Endgame scoring can be swingy"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light dice/resource drafting competition"
+  "level": "Medium",
+  "kind": "area majority and contract racing",
+  "detail": "The cathedral itself is a shared, physical structure players build onto together, so there's direct competition for tile placement and majorities, layered over each player's own contract cards and resource stock."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Points come mainly from completed contracts, arch placement, and the favor track, so the winner is decided by efficient dice use across a few interlocking systems rather than one dominant source."
+  "why": "Points come from completed contracts plus majority bonuses on the shared cathedral and leftover resources",
+  "how_you_win": "You win by completing high-value contracts and securing good positions on the communal cathedral more efficiently than your opponents."
  },
  "similar": [
+  "Barrage",
+  "Tzolk'in: The Mayan Calendar",
   "Trickerion",
-  "Coimbra",
-  "Rajas of the Ganges",
-  "Cannikin",
-  "Fresco"
+  "Raiders of Scythia",
+  "Merv: The Heart of the Silk Road"
  ],
- "_fingerprint": "5b171fe93051a1a0",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "655cf1d3b17ae67a",
  "_name": "The Red Cathedral"
 }

@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Playing Wingspan feels like a calm, puzzly engine-builder where you chain bird powers across three habitat rows to snowball food, eggs, and card draws, then cash in on end-round and end-game bonus cards. Turns are quick and mostly solitaire-ish, with occasional envy when someone else's bird power triggers off your dice roll.",
+ "summary": "Wingspan is a smooth engine-building card game where players attract birds into three habitat rows, chaining bird powers to generate food, lay eggs, and draw more cards each round. It's approachable and gorgeous, playing mostly in parallel with only occasional bumps into other players via powers that trigger off what another player does.",
  "praised": [
-  "Gorgeous, high-quality bird art and components",
-  "Satisfying engine-building as bird combos click together",
-  "Approachable rules with real depth in play",
-  "Strong solo mode (Automa)",
-  "Broad appeal, including to non-gamers and birders"
+  "gorgeous art and bird theme that appeals broadly",
+  "satisfying, tactile engine-building with real combo moments",
+  "smooth rules for the depth of the tableau-building genre",
+  "great solo mode and wide table appeal across experience levels"
  ],
  "criticised": [
-  "Low direct interaction, can feel multiplayer solitaire",
-  "Heavy luck of the draw in which bird cards/bonus cards you get",
-  "Bird powers vary widely in strength, leading to snowballing",
-  "End-game/round bonus cards can feel like hidden scoring races",
-  "Expansions add table/box clutter"
+  "mostly solitaire/parallel play with limited direct interaction",
+  "bird-power variance can make some hands feel stronger than others",
+  "the birdfeeder dice can occasionally swing food availability",
+  "end-game bonus card scoring can feel disconnected from the birds themselves"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with occasional food/tray competition"
+  "kind": "mostly parallel play with occasional 'when another player...' triggers",
+  "detail": "Each player builds their own three-row habitat tableau independently; the shared birdfeeder and bird tray create light competition for resources and cards, and some bird powers trigger off other players' actions, but there is no direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from bird card values, eggs, cached food, tucked cards, and bonus/round-goal cards, so the winner is usually whoever best combines several of these sources rather than maxing one."
+  "why": "Points accumulate from bird cards, eggs, cached food, tucked cards, bonus cards, and round-end goals, so a balanced engine beats a narrow one.",
+  "how_you_win": "You win by building an efficient chain of bird powers that lets you rack up eggs, food, and cards faster than opponents, then converting that engine into the highest combined score across all categories."
  },
  "similar": [
   "Everdell",
-  "Terraforming Mars",
+  "Ark Nova",
+  "Cascadia",
   "Res Arcana",
-  "Fantastic Factories",
-  "Ark Nova"
+  "Fauna"
  ],
- "_fingerprint": "3fa7cbdd30ad61ad",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "0a385d940b9701b8",
  "_name": "Wingspan"
 }

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "You spend most of the game routing a rondel-like path north to south, deciding when to spend actions upgrading your cattle, buildings, and railroad workers versus rushing herds to Kansas City for delivery bonuses. It rewards long-term engine building over multiple deliveries rather than any single big score.",
+ "summary": "Great Western Trail has you driving cattle herds along a shared trail, buying stronger cows and buildings to build an efficient deck-and-route engine over repeated trips to Kansas City. It's a long, cerebral engine-builder where the trail itself creates most of the friction with opponents.",
  "praised": [
-  "Tight, interlocking engine-building with multiple viable strategies",
-  "High replayability from variable building setup and station tiles",
-  "Satisfying tension between short-term cash needs and long-term engine investment",
-  "Strong player agency with few wasted turns"
+  "satisfying deck/engine synergy",
+  "high replayability from the modular board",
+  "multiple viable long-term strategies",
+  "rewarding sense of building an efficient machine"
  ],
  "criticised": [
-  "Steep rules overhead and long first play for new groups",
-  "Some luck/timing dependency on which buildings appear along the trail",
-  "Can run long at higher player counts, with downtime between turns",
-  "Kansas City auction/bonus spaces can feel swingy"
+  "long playtime with real downtime, especially at 4 players",
+  "steep learning curve for newcomers",
+  "analysis paralysis from the sheer number of options",
+  "some card-draw luck"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "spatial blocking on the trail and building slots, indirect competition for scoring bonuses"
+  "kind": "route and building competition",
+  "detail": "Players share one trail and race for limited building spots, station placements, and staff hires, so positioning and timing matter a great deal. Each player otherwise develops a private deck, herd, and player board largely independent of others."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from cattle delivered, buildings built, railroad progress, objective cards, and station bonuses, so the winner is whoever best balances several engines rather than maxing one"
+  "why": "Points accumulate from cattle deliveries, buildings, railroad stations, and objective cards, so overall efficiency across several tracks decides the winner.",
+  "how_you_win": "You build the most efficient cattle-driving and railroad engine, repeatedly delivering strong herds while collecting building and objective bonuses, to end with the highest total score."
  },
  "similar": [
-  "Terraforming Mars",
-  "Le Havre",
+  "Orléans",
+  "Voyages of Marco Polo",
+  "Concordia",
   "Brass: Birmingham",
-  "Trickerion: Legends of Illusion",
-  "Amerigo"
+  "Le Havre"
  ],
- "_fingerprint": "39d4637faa549577",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "90bd96ea52cdc88c",
  "_name": "Great Western Trail"
 }

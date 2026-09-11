@@ -314,7 +314,20 @@ Epic Mode -- Play with any combination of 5 theaters from either box: ex. Intell
 			
 
 			
-	
+			<videos total="12">
+						<video id="512412" title="Critters At War Flies Lies and Supplies Board Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=bRXaezhGj6Y" username="program2game" userid="934384" postdate="2024-09-03T09:13:48-05:00" />
+						<video id="512410" title="How to Play Critters at War Flies Lies and Supplies" category="instructional" language="English" link="http://www.youtube.com/watch?v=OhvVl9yvQsg" username="program2game" userid="934384" postdate="2024-09-03T09:12:47-05:00" />
+						<video id="512409" title="Critters at War Flies Lies and Supplies Board Game Review" category="review" language="English" link="http://www.youtube.com/watch?v=HrIvI2dQTrw" username="program2game" userid="934384" postdate="2024-09-03T09:11:58-05:00" />
+						<video id="510534" title="[Règles &amp; Partie] BOBARDS, PÉTARDS &amp; MOUCHARDS | 2 joueurs | Lucky Duck Games | VOD Live" category="session" language="French" link="http://www.youtube.com/watch?v=Fphw6udHrJM" username="AlecsCVG" userid="2120784" postdate="2024-08-24T06:14:04-05:00" />
+						<video id="484460" title="Нумограй від uGames" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=IeBg7qzWv0Y" username="punk_rock" userid="2986072" postdate="2024-03-05T14:55:21-06:00" />
+						<video id="480674" title="What's in the box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=pXJZbSqDi64" username="Shamus" userid="163332" postdate="2024-02-09T23:34:41-06:00" />
+						<video id="465018" title="All the Games with Steph: Critters at War: Flies, Lies, &amp; Supplies" category="instructional" language="English" link="http://www.youtube.com/watch?v=pz190uBO3Ns" username="boardgamersteph" userid="212591" postdate="2023-11-04T09:29:37-05:00" />
+						<video id="463436" title="Air, land and sea: Spie, bugie e fattorie - Recensioni Minute [572]" category="review" language="Italian" link="http://www.youtube.com/watch?v=Xh6acA0oses" username="TeOoh" userid="479736" postdate="2023-10-26T06:29:26-05:00" />
+						<video id="454928" title="Tutorial e Recensione ANIMALI IN GUERRA: Spie, Bugie &amp; Fattorie - Verso Nuovi Fronti!" category="review" language="Italian" link="http://www.youtube.com/watch?v=X3q11V-5pVw" username="vincyus" userid="887654" postdate="2023-09-05T03:09:06-05:00" />
+						<video id="388294" title="Video Review" category="review" language="English" link="http://www.youtube.com/watch?v=ZAKniSyiQO0" username="marnaudo" userid="266775" postdate="2022-07-03T03:45:10-05:00" />
+						<video id="371917" title="Air, Land, and Sea: Spies, Lies, and Supplies Review - with Tom Vasel" category="review" language="English" link="http://www.youtube.com/watch?v=fMj1HSY3aOo" username="TomVasel" userid="722" postdate="2022-03-19T10:01:02-05:00" />
+						<video id="369390" title="Air Land &amp; Sea: Spies, Lies &amp; Supplies - Daily Game Unboxing" category="other" language="English" link="http://www.youtube.com/watch?v=zPLzoiJ1Hwc" username="TomVasel" userid="722" postdate="2022-03-04T08:03:02-06:00" />
+					</videos>
 
 	
 
@@ -323,8 +336,8 @@ Epic Mode -- Play with any combination of 5 theaters from either box: ex. Intell
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="1733" />
-			<average value="7.71707" />
+			<usersrated value="1734" />
+			<average value="7.71695" />
 			<bayesaverage value="6.42048" />
 
 			<ranks>
@@ -332,13 +345,13 @@ Epic Mode -- Play with any combination of 5 theaters from either box: ex. Intell
 																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="803" bayesaverage="6.58006" />
 												</ranks>
 
-			<stddev value="1.18476" />
+			<stddev value="1.18297" />
 			<median value="0" />
-			<owned value="5652" />
+			<owned value="5660" />
 			<trading value="78" />
 			<wanting value="104" />
 			<wishing value="962" />
-			<numcomments value="427" />
+			<numcomments value="429" />
 			<numweights value="37" />
 			<averageweight value="1.7838" />
 			</ratings>

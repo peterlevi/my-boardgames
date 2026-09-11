@@ -1,34 +1,41 @@
 {
  "confidence": "medium",
- "summary": "A dense, modular worker-placement game where you juggle multiple types of astronauts and resources to build structures and fund corporation projects on a shared lunar base; the drafted shuttle tile each round dictates both your options and turn order, creating a tight tactical puzzle layered on top of a longer-term engine-building plan. With only three of seven corporations in play each game, the available resources, actions, and scoring paths shift substantially from one session to the next.",
+ "summary": "Shackleton Base is a heavy worker-placement game from Fabio Lopiano in the style of his earlier Merv and On Mars, where players fund lunar corporations and build up bases while managing tightly interlocking resource chains. Like his other designs, the appeal is in optimizing an efficient sequence of actions and timing across multiple asymmetric corporation modules.",
  "praised": [
-  "high replayability from the modular corporation setup",
-  "clever shuttle-draft mechanism that ties resource access to turn order",
-  "satisfying, tight worker-placement puzzle with meaningful trade-offs each turn",
-  "strong production and thematic presentation of the lunar base"
+  "deep, interlocking worker-placement puzzle",
+  "high replayability from randomized corporation modules",
+  "polished production",
+  "rewarding long-term planning"
  ],
  "criticised": [
-  "steep learning curve and heavy rules/iconography overhead",
-  "corporation combinations can feel imbalanced or swingy between games",
-  "prone to analysis paralysis, especially with four players",
-  "a lot to track for a fairly short (three-round) game"
+  "heavy rules and setup for a first play",
+  "can feel dry and calculation-heavy",
+  "similar complexity fatigue to the designer's other games",
+  "risk of analysis paralysis"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking and area majority for base structures, mostly indirect competition for spots and resources"
+  "kind": "worker placement blocking and area majority",
+  "detail": "Players compete for limited worker-placement spots and area-majority positions on the shared base, so timing and blocking opponents from key actions matters, while most engine-building happens on individual player boards."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "final score comes from structures built, projects funded, and area-majority control, with the exact mix varying by which three corporations were drafted into the game"
+  "why": "Points accrue from corporation projects, structures built, and area-majority bonuses on the shared base.",
+  "how_you_win": "Efficiently sequence worker placements to fund corporation projects and secure structure majorities, ending with the highest total score."
  },
  "similar": [
   "Merv: The Heart of the Silk Road",
-  "Anachrony",
+  "On Mars",
   "Barrage",
   "Teotihuacan: City of Gods",
-  "The Gallerist"
+  "Trickerion"
  ],
- "_fingerprint": "c7031953a234c950",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "641d8958de231892",
  "_name": "Shackleton Base: A Journey to the Moon"
 }

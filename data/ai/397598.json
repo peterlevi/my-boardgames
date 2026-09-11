@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "Uprising keeps the core deck-building/worker-placement loop of Dune: Imperium intact while adding new factions, sandworm-riding, spy tokens, and asymmetric team play for six; it plays fast and tense, with agonizing worker-placement choices every round. It feels both familiar to fans of the original and meaningfully fresh thanks to new cards, the Fremen/Smugglers factions, and the redesigned Landsraad-style contract system.",
+ "summary": "Dune: Imperium – Uprising is a standalone expansion/sequel that keeps the same worker-placement-plus-deckbuilding core but adds new mechanisms like sandworm riding, spy networks, and contracts for extra strategic texture. It supports up to 6 players with a new team mode, making it feel like a bigger, richer version of the original rather than a wholly new game.",
  "praised": [
-  "Tense worker placement with meaningful blocking and denial",
-  "Strong theme integration (spice, sandworms, factions, conflict)",
-  "High replayability from combat/conflict variability and modular content",
-  "New 6-player team mode adds a fresh way to experience the game",
-  "Streamlines and improves on some base-game rough edges (contracts, tech cards)"
+  "Adds meaningful new strategic layers (spies, sandworms, contracts) without bloating the core",
+  "Great new 6-player team variant",
+  "Compatible with base game and other expansions for mix-and-match variety",
+  "Strong component and art quality"
  ],
  "criticised": [
-  "Can feel like 'more of the same' to owners of the original Dune: Imperium",
-  "Rules overhead increases with new mechanisms (sandworms, spies, contracts)",
-  "Compatibility/integration with base game and expansions can be confusing to track",
-  "Combat can occasionally feel swingy or luck-influenced via troop/agent card draws"
+  "Slightly higher complexity and longer setup than the base game",
+  "Some new mechanics can feel like they dilute the tight original design",
+  "Best experienced after already knowing the base game",
+  "Team mode can be uneven depending on group experience"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking, area control combat, and open drafting"
+  "kind": "Worker placement contention and area conflict",
+  "detail": "As in the base game, players contend for placement spots and battle over a shared combat track, with new elements like sandworms and spy actions adding extra ways to interfere with opponents. Team mode adds a shared victory state between two players against another pair."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory points come from combat wins, Landsraad/contract objectives, Fremen alliance and sandworm actions, and intrigue/tech card synergies, so multiple viable scoring paths compete for the win."
+  "why": "Points accumulate from combat, alliances, contracts, and card play much like the base game, rewarding balanced engine-building.",
+  "how_you_win": "Reach the victory point threshold first through combat victories, faction favor, and scoring cards, or as a team in the 6-player mode."
  },
  "similar": [
   "Dune: Imperium",
-  "Res Arcana",
-  "Everdell",
+  "Trickerion",
   "Lords of Waterdeep",
+  "Clank!: A Deck-Building Adventure",
   "Tyrants of the Underdark"
  ],
- "_fingerprint": "942c85ec1ab60d65",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "d552f22e31c66e34",
  "_name": "Dune: Imperium – Uprising"
 }

@@ -65,8 +65,8 @@ Discover the Lost Ruins of Arnak!
 						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="1148">
 			
 		<results numplayers="1">		
-					<result value="Best" numvotes="116" />
-					<result value="Recommended" numvotes="440" />
+					<result value="Best" numvotes="117" />
+					<result value="Recommended" numvotes="439" />
 					<result value="Not Recommended" numvotes="161" />
 				</results>					
 			
@@ -1042,7 +1042,23 @@ Discover the Lost Ruins of Arnak!
 			
 
 			
-	
+			<videos total="590">
+						<video id="626052" title="Lost Ruins of Arnak Review - Still Holds Up!" category="review" language="English" link="http://www.youtube.com/watch?v=PrXX_kyv7U0" username="easto1a" userid="1524613" postdate="2026-08-20T09:06:36-05:00" />
+						<video id="622630" title="The Metal Coin Problem (Board Gamers Understand) #boardgames #relatable" category="review" language="English" link="http://www.youtube.com/watch?v=MwCzVGIHa-g" username="JetSkiPopper" userid="1310667" postdate="2026-07-28T07:00:55-05:00" />
+						<video id="620801" title="Lost Ruins of Arnak - All Expansions Ranked and Reviewed" category="review" language="English" link="http://www.youtube.com/watch?v=Y7wOUlJKdn4" username="Threescoopz" userid="2085141" postdate="2026-07-16T07:19:12-05:00" />
+						<video id="618302" title="Zaginiona Skrzynia Arnak: Skrzynia Przygód – czy ten big box ma sens? | Unboxing i przepakowanie" category="unboxing" language="Polish" link="http://www.youtube.com/watch?v=5nv9UDJGta4" username="majzownik" userid="262674" postdate="2026-07-01T06:19:00-05:00" />
+						<video id="618291" title="Lost Ruins of Arnak  | Solo Playthrough &amp; Tutorial (Learn to Play)" category="instructional" language="English" link="http://www.youtube.com/watch?v=ut6iaHNu-14" username="Boardgamecabin" userid="1771955" postdate="2026-07-01T04:06:52-05:00" />
+						<video id="610622" title="Extension Sentiers Sinueux" category="unboxing" language="French" link="http://www.youtube.com/watch?v=Lfl5z_VJpIg" username="CellocellFigurines" userid="1791408" postdate="2026-05-06T20:11:55-05:00" />
+						<video id="605575" title="Lost Ruins of Arnak - Cinematic Trailer" category="other" language="English" link="http://www.youtube.com/watch?v=77FtTRUVtyY" username="derniereronde" userid="230359" postdate="2026-04-03T17:47:46-05:00" />
+						<video id="600861" title="Le Rovine Perdute di Arnak - Gameplay" category="session" language="Italian" link="http://www.youtube.com/watch?v=o4X5sUlK3LI" username="tara259" userid="2824355" postdate="2026-03-04T08:40:38-06:00" />
+						<video id="600168" title="Dice Tower Arena: Lost Ruins of Arnak, Draft &amp; Write Records" category="review" language="English" link="http://www.youtube.com/watch?v=0kwYlF8emPI" username="TomVasel" userid="722" postdate="2026-02-27T10:00:10-06:00" />
+						<video id="599659" title="Lost Ruins of Arnak Review" category="review" language="English" link="http://www.youtube.com/watch?v=2GF4AATe1KM" username="BoardGameBananas" userid="4250303" postdate="2026-02-24T06:04:24-06:00" />
+						<video id="598452" title="Lost Ruins of Arnak - Solo Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=t6dw3RZj2u4" username="BoardGameBananas" userid="4250303" postdate="2026-02-17T06:08:13-06:00" />
+						<video id="597254" title=" Lost Ruins of Arnak - raskutijavanje" category="unboxing" language="Croatian" link="http://www.youtube.com/watch?v=-c22IVtQeX4" username="Gejmeraja" userid="3876365" postdate="2026-02-11T13:45:30-06:00" />
+						<video id="596871" title="How to Play Lost Ruins of Arnak" category="instructional" language="English" link="http://www.youtube.com/watch?v=Jxuph4CGrLA" username="BoardGameBananas" userid="4250303" postdate="2026-02-10T05:33:45-06:00" />
+						<video id="595210" title="Twisted Paths or Adventure Chest? - Lost Ruins of Arnak" category="other" language="English" link="http://www.youtube.com/watch?v=aNl_rWyEgDM" username="Baby_Rhino" userid="1168804" postdate="2026-01-30T10:10:07-06:00" />
+						<video id="594758" title="Lost Ruins of Arnak: Adventure Chest Review" category="review" language="English" link="http://www.youtube.com/watch?v=Ay9MrN_4sKo" username="TomVasel" userid="722" postdate="2026-01-27T09:00:24-06:00" />
+					</videos>
 
 	
 
@@ -1051,22 +1067,22 @@ Discover the Lost Ruins of Arnak!
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="58665" />
-			<average value="8.08446" />
-			<bayesaverage value="7.91811" />
+			<usersrated value="58699" />
+			<average value="8.08443" />
+			<bayesaverage value="7.91817" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="30" bayesaverage="7.91811" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="28" bayesaverage="7.91069" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="30" bayesaverage="7.91817" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="28" bayesaverage="7.91079" />
 												</ranks>
 
-			<stddev value="1.26875" />
+			<stddev value="1.26884" />
 			<median value="0" />
-			<owned value="89132" />
-			<trading value="500" />
+			<owned value="89192" />
+			<trading value="501" />
 			<wanting value="1132" />
-			<wishing value="16889" />
-			<numcomments value="7206" />
+			<wishing value="16894" />
+			<numcomments value="7212" />
 			<numweights value="1894" />
 			<averageweight value="2.934" />
 			</ratings>

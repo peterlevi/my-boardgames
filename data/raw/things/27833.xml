@@ -695,7 +695,23 @@ Similar to:
 			
 
 			
-	
+			<videos total="28">
+						<video id="525443" title="Steam Board Game - Rails to Riches - How to Play" category="instructional" language="English" link="http://www.youtube.com/watch?v=xoPwjIMmtLA" username="apml" userid="823270" postdate="2024-11-21T17:37:18-06:00" />
+						<video id="393155" title="Marcellão Jogos &amp; Algo a Mais... Ep.135 - STEAM" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=gCjdxN43Uvo" username="freejones" userid="730523" postdate="2022-08-05T09:02:07-05:00" />
+						<video id="361406" title="Steam: Rails to Riches Unboxing" category="unboxing" language="English" link="http://www.vimeo.com/665426501" username="Johnasaurs" userid="231311" postdate="2022-01-16T15:05:32-06:00" />
+						<video id="357445" title="STEAM: Rails To Riches / HOW To PLAY / DIGITAL TUTORIAL" category="instructional" language="English" link="http://www.youtube.com/watch?v=DUlyIpxyrEk" username="thegreat2" userid="412153" postdate="2021-12-17T23:19:33-06:00" />
+						<video id="327576" title="Steam: Rails to Riches Digital Playthrough Standard Mode" category="session" language="English" link="http://www.youtube.com/watch?v=qvDhbQ03yxI" username="program2game" userid="934384" postdate="2021-06-02T14:00:00-05:00" />
+						<video id="324723" title="Steam Rails to Riches Digital Basic Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=IRcMA3WjwkI" username="program2game" userid="934384" postdate="2021-05-17T11:49:48-05:00" />
+						<video id="323765" title="Videosesión: dramática partida a 5 jugadores de Steam - Westward Ho!, a la conquista del Oeste" category="session" language="Spanish" link="http://www.youtube.com/watch?v=rsyEEegpL9Q" username="marioaguila" userid="37918" postdate="2021-05-12T07:42:53-05:00" />
+						<video id="321706" title="Videoanálisis: cómo leer mapa inicial en Steam (o Age of Steam)" category="other" language="Spanish" link="http://www.youtube.com/watch?v=kCcrEH0Kbcs" username="marioaguila" userid="37918" postdate="2021-04-29T23:37:46-05:00" />
+						<video id="320059" title="Steam Rails to Riches Digital Tutorial Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=LOiXzs99CIo" username="program2game" userid="934384" postdate="2021-04-21T06:42:08-05:00" />
+						<video id="282761" title="Videotutorial: Steam avanzado, para gamers. El tutorial definitivo! " category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=97CtnAehIzU" username="marioaguila" userid="37918" postdate="2020-09-20T20:32:52-05:00" />
+						<video id="229990" title="Abrindo: Steam" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=qqtVh1kNswI" username="Micaelsousa" userid="790334" postdate="2019-08-23T10:13:40-05:00" />
+						<video id="213674" title="【汤米酱 Tommy Jiang】Steam Review 蒸汽 致富之道 介绍" category="review" language="Chinese" link="http://www.youtube.com/watch?v=lGjVbeIENeA" username="jyh19930302" userid="1551653" postdate="2019-03-31T14:50:51-05:00" />
+						<video id="169902" title="[TH] Steam" category="review" language="Thai" link="http://www.youtube.com/watch?v=mYdwuP4FYmI" username="chatsakhon" userid="305608" postdate="2018-03-14T03:42:48-05:00" />
+						<video id="169434" title="Steam: Rails to Riches Digital Port Rules Explanation &amp; Play-Through: Standard Rules" category="instructional" language="English" link="http://www.youtube.com/watch?v=xAdAzC_4IFY" username="Rachelthfirst" userid="949881" postdate="2018-03-10T18:45:50-06:00" />
+						<video id="168406" title="Steam: Rails to Riches Digital Port Rules Explanation &amp; Play-Through: Basic Rules" category="instructional" language="English" link="http://www.youtube.com/watch?v=9xXTY3mmTj4" username="Rachelthfirst" userid="949881" postdate="2018-02-28T21:24:13-06:00" />
+					</videos>
 
 	
 
@@ -715,10 +731,10 @@ Similar to:
 
 			<stddev value="1.36398" />
 			<median value="0" />
-			<owned value="11526" />
-			<trading value="398" />
+			<owned value="11527" />
+			<trading value="399" />
 			<wanting value="375" />
-			<wishing value="2208" />
+			<wishing value="2206" />
 			<numcomments value="2407" />
 			<numweights value="715" />
 			<averageweight value="3.4517" />

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "A dense Pfister euro where you sail a rondel-like course around the Caribbean, juggling a personal deck of movement/action cards while building influence, cargo runs, and combat strength; a built-in narrative campaign runs alongside the economic engine. It's a lot of moving parts that click into a satisfying, if long, engine-building puzzle.",
+ "summary": "A heavy Pfister euro where you sail a ship around a Caribbean course, choosing at each stop whether to fight, deliver goods, build influence, or advance along multiple card-driven tracks. The story-driven event deck and layered systems make each of the four rounds feel eventful, at the cost of a fairly steep rules and iconography load.",
  "praised": [
-  "multiple viable strategies and tech-track combos",
-  "the story/quest layer adds unusual narrative texture for a euro",
-  "excellent, thematic production and card-driven movement",
-  "strong solo mode"
+  "gorgeous production and strong table presence",
+  "satisfying variety of viable strategies across combat, trading, and influence",
+  "narrative event/quest layer adds unusual flavor for a euro",
+  "well-regarded solo mode"
  ],
  "criticised": [
-  "heavy rules overhead and long teach",
-  "card draw luck affects available actions turn to turn",
-  "long playtime can drag at 4 players",
-  "can feel like solving your own puzzle with limited direct interaction"
+  "heavy rulebook and iconography overwhelm many new players",
+  "significant card-draw luck affecting available bonuses",
+  "long individual turns can create downtime for others",
+  "can feel like several games stapled together"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "competing for city control, contracts, and combat over shared spaces"
+  "kind": "shared track position, competitive influence and combat",
+  "detail": "Ship position on the shared course determines turn order and who gets first pick at locations, and players directly compete for influence and city control, but each player's hand, resources, and personal board development remain private. Conflict at sea is possible but the bulk of play is parallel engine-building."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points accumulate from influence, quests, cargo delivery, combat, and end-game bonuses all at once"
+  "why": "Final score combines influence built in three nations, completed contracts and quests, card set bonuses, and leftover coins.",
+  "how_you_win": "Efficiently route your ship each round to build influence, fulfill high-value contracts, and complete card combinations that outscore opponents by the end of round four."
  },
  "similar": [
-  "Underwater Cities",
   "Great Western Trail",
+  "Underwater Cities",
+  "The Gallerist",
   "Anachrony",
-  "Res Arcana",
-  "Newton"
+  "Barrage"
  ],
- "_fingerprint": "02e5b7bc9476b958",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "13fad2e6367b8c50",
  "_name": "Maracaibo"
 }

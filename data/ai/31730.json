@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Wabash Cannonball is a lean, cutthroat 18xx-lite where every turn is either bidding for a railroad share, building track, or developing a hex, and the constant tension is deciding whether to grab a cheap share now or let someone else overpay for company presidency. Games are tight and fast, with sharp swings from a single well-timed bid or badly placed track tile.",
+ "summary": "Wabash Cannonball (also released as Chicago Express) is a tight, hour-long 18xx-style stock and rail game where players alternate between auctioning off railroad shares and extending track using their own capital or a company's treasury. Every decision about when to buy in, dilute, or dump a company's stock ripples through everyone else's holdings, making it a lean, dry, and highly interactive economic puzzle.",
  "praised": [
-  "Fast, clean design that teaches 18xx-style stock and track mechanics in under an hour",
-  "Meaningful, tense auctions where turn order and bid amount matter enormously",
-  "High player interaction and constant decision pressure with almost no downtime",
-  "Good gateway into heavier 18xx games without their length or complexity"
+  "short, luck-free economic gameplay",
+  "meaningful share auctions with real tension",
+  "elegant, tight ruleset for the depth it offers",
+  "quick to teach relative to full 18xx games"
  ],
  "criticised": [
-  "Can feel mean or swingy at lower player counts, with runaway leader potential if early auctions go badly",
-  "Thin theme; it's an abstract economic engine wearing a railroad skin",
-  "Rules and share/dividend interactions take a play or two to click",
-  "Map and company set can feel repetitive across sessions"
+  "dry, spreadsheet-like feel with little theme immersion",
+  "can be swingy based on turn order and early auction luck",
+  "some player-elimination-adjacent frustration if a company underperforms",
+  "track building is fairly abstract"
  ],
  "interaction": {
   "level": "High",
-  "kind": "competitive bidding and stock manipulation"
+  "kind": "stock auctions and share dilution",
+  "detail": "Players bid against each other for company shares and decide when a company issues new stock, directly affecting the value of shares other players hold; the rail network and company treasuries are fully shared state, with almost no private player board."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "the winner is whoever ends with the most cash after dividends, driven almost entirely by smart share ownership and auction timing"
+  "why": "The game is decided purely by each player's personal cash plus the market value of their share holdings at game end.",
+  "how_you_win": "You win by timing your stock purchases and company investments so your total portfolio value outpaces the other investors when the final round ends."
  },
  "similar": [
   "Chicago Express",
-  "1830",
-  "Steam",
+  "1830: Railways & Robber Barons",
   "Age of Steam",
-  "China Rails"
+  "Container",
+  "Brass: Birmingham"
  ],
- "_fingerprint": "272b411ac6a14121",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Gaming Rules!"
+ ],
+ "_fingerprint": "3997f1244d71de13",
  "_name": "Wabash Cannonball"
 }

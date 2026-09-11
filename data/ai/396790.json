@@ -1,36 +1,39 @@
 {
  "confidence": "high",
- "summary": "Nucleum is a dense economic euro where players build rail and power-line networks across a map to deliver energy from nuclear plants to cities, while climbing a shared tech tree and using an action-retrieval mechanism (columns of action tiles that shift and get replaced) to plan efficient turns. Turns are engine-building puzzles with tight resource conversion, heavy multi-turn planning, and constant tension between expanding your network, upgrading buildings, and racing others to key tech and map spots.",
+ "summary": "A heavy Luciani/Turczi euro about building railway and power-line networks across a steampunk map to deliver resources and unlock a deep tech tree. It plays like a fusion of Barrage-style engine optimization with network-building route games, offering several viable strategic paths.",
  "praised": [
-  "Satisfying, tightly interlocking engine-building puzzle with a strong sense of progression",
-  "Action-retrieval system creates interesting tactical tension each round",
-  "Good component quality and thematic production for a euro",
-  "Multiple viable strategies and replayability from variable setup/tech paths",
-  "Strong solo mode"
+  "multiple genuinely competitive strategies",
+  "satisfying, interlocking tech-tree and action-retrieval systems",
+  "gorgeous board art and thematic production"
  ],
  "criticised": [
-  "Very heavy rules overhead and long teach for a first game",
-  "Significant downtime in multiplayer as turns require deep calculation",
-  "Some randomness in tile/action availability feels at odds with the otherwise tight optimization",
-  "Map/network building can feel a bit disconnected from the tech-tree half of the game",
-  "Not much direct player interaction beyond space/route competition"
+  "heavy rules overhead and long teach time",
+  "significant analysis paralysis, especially at higher player counts",
+  "feels similar to other Luciani euros, which can fatigue fans of the genre"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "indirect competition for map spots, routes, and tech track positions"
+  "kind": "network building and competition for map locations",
+  "detail": "Players compete for limited city connections, resources, and contract slots on a shared map, so route-building choices can block or route around opponents. Each player still runs a mostly independent tech-tree engine on their own player board."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from network size, power plant upgrades, tech track advancement, contracts, and end-game bonuses, rewarding a well-rounded engine over one narrow strategy"
+  "why": "Score comes from network size, contracts fulfilled, tech advancement, and end-game bonuses.",
+  "how_you_win": "You win by building the most efficient network and tech engine to maximize points from contracts, connections, and bonuses by game end."
  },
  "similar": [
   "Barrage",
-  "Trismegistus: The Ultimate Formula",
+  "Age of Innovation",
   "Great Western Trail",
-  "Brass: Birmingham",
-  "Voyages: The Great Exchange"
+  "Lorenzo il Magnifico",
+  "Res Arcana"
  ],
- "_fingerprint": "16e703ee202ade0e",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "02835433ca3b4ebd",
  "_name": "Nucleum"
 }

@@ -1,34 +1,40 @@
 {
  "confidence": "high",
- "summary": "Barrage is a tense, tightly interlocking euro about hydroelectric dam building where every action you take denies a resource, a build slot, or a turn-order position to someone else. It rewards long-term engine planning but punishes players who can't adapt when their planned spot on the river or in the turn order gets taken first.",
+ "summary": "Barrage is a brutal, tightly interlocking worker-placement game about building dams and routing water to power stations, where every action you take can block or devalue an opponent's plans. It rewards long-term planning and punishes hesitation, with turns that feel simple individually but combine into a genuinely tense economic puzzle.",
  "praised": [
-  "Deep, tightly interlocking systems where resource, turn order, and board position all pressure each other",
-  "Strong player interaction through direct competition for limited spaces and resources, unusual for a heavy euro",
-  "High replayability from variable player powers, contracts, and modular board setup",
-  "Satisfying long-term engine building and combo potential"
+  "Tight, interlocking systems where every resource matters",
+  "Strong direct interaction through blocking and route denial",
+  "Thematic cohesion between mechanics and dam-building theme",
+  "High replayability from variable player powers and setup"
  ],
  "criticised": [
-  "Very high complexity and rules overhead, steep learning curve for new players",
-  "Analysis paralysis and long turns, especially with four players",
-  "Turn order mechanism can feel punishing if you're consistently going last",
-  "Thin theme layered over a dense mechanical engine"
+  "Steep learning curve and heavy rules overhead",
+  "Can produce significant downtime, especially at 4 players",
+  "Turn-order/bidding via placed workers can feel punishing if you fall behind early"
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking and area denial over resources, build spots, and turn order"
+  "kind": "blocking and area denial",
+  "detail": "Players compete for a shared, limited set of worker placement spots and river sections, so taking a space or building on a river tile can directly deny an opponent's plan. Water flow, turn order (determined by workers already placed), and dam/river control are all shared state, while each player's own powerhouse and patent tableau are private engines fed by that shared contest."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Winning comes from combining power production, contract fulfillment, building bonuses, and end-game objectives rather than any single dominant strategy"
+  "why": "Points come from dam height, energy production efficiency, contracts fulfilled, patents, and end-game objectives, so a winning strategy usually stacks several of these rather than maxing one.",
+  "how_you_win": "You win by building the tallest, most efficient dam-and-turbine network while completing contracts and patents, converting stored water into energy more effectively than your rivals."
  },
  "similar": [
-  "Teotihuacan: City of Gods",
-  "The Gallerist",
-  "Tzolk'in: The Mayan Calendar",
   "Great Western Trail",
-  "Bonfire"
+  "Teotihuacan: City of Gods",
+  "On Mars",
+  "The Gallerist",
+  "Trickerion: Legends of Illusion"
  ],
- "_fingerprint": "a7a5b26dc4b1b552",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "43b9df1b51de1978",
  "_name": "Barrage"
 }

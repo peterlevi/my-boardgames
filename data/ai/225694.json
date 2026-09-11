@@ -1,33 +1,41 @@
 {
  "confidence": "high",
- "summary": "Two teams each protect four secret keywords while trying to communicate three-digit codes to their own teammates using cryptic one-word or one-phrase clues, all while the opposing team listens in trying to crack the code. Tension builds round to round as the same four words get reused, making clues harder to keep fresh without giving the code away to eavesdroppers.",
+ "summary": "Decrypto is a team-based clue-giving and code-cracking party game where each team tries to communicate secret words to teammates using number-coded clues, while the opposing team listens in trying to intercept the code. It plays fast, gets loud and tense, and rewards clever, ambiguous-to-outsiders-but-clear-to-teammates clue-giving.",
  "praised": [
-  "clever, tense push-pull between clarity for your team and secrecy from the other",
-  "scales well across a wide range of group sizes and party contexts",
-  "endlessly replayable since word combinations differ every game",
-  "low setup and easy to teach"
+  "Extremely clever core hook of dual-purpose clues",
+  "Scales well and generates big table talk and laughter",
+  "Simple rules, deep tension",
+  "Great for mixed groups of gamers and non-gamers"
  ],
  "criticised": [
-  "can feel unbalanced if one team is much better at giving/reading clues",
-  "some groups find the pen-and-paper bookkeeping between rounds fiddly",
-  "requires a same-wavelength team to really shine, which can frustrate mismatched groups"
+  "Requires roughly even team sizes and engaged players",
+  "Can feel unbalanced if one team is much better at clue-giving",
+  "Pen-and-paper tracking is a bit fiddly",
+  "Less fun with only 3-4 players total"
  ],
  "interaction": {
   "level": "High",
-  "kind": "team communication and code-breaking espionage"
+  "kind": "team communication and espionage/deduction",
+  "detail": "Players directly try to deceive the opposing team while informing their own, with the shared clue history being read and mined by both sides every round. There's no personal board; the entire game state (clues given, guesses) is shared information contested between two teams."
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "the first team to rack up too many interception or miscommunication tokens loses, so play centers on avoiding those penalties rather than accumulating points"
+  "why": "The game ends when one team accumulates enough interceptions or miscommunications, so the winner is determined by which team avoids losing conditions longer",
+  "how_you_win": "Your team wins by causing the opposing team to rack up two miscommunication tokens before your own team collects two interception tokens against you."
  },
  "similar": [
   "Codenames",
-  "The Mind",
   "Just One",
   "Wavelength",
+  "The Mind",
   "Concept"
  ],
- "_fingerprint": "0ff5ed3a9dd056bb",
+ "teachers": [
+  "Watch It Played",
+  "Before You Play",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "9bab4a6cba316069",
  "_name": "Decrypto"
 }

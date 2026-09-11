@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Innovation is a fast-paced tableau-builder where you race through ages of technology, splaying cards to reveal icons and chaining dogpile combos that can swing the game in a single turn. It's brutally interactive despite having no board or dice — you're constantly reading opponents' tableaus and timing when to demand, share, or rush an achievement before they do.",
+ "summary": "Innovation is a fast, chaotic tableau-builder where you climb through ten ages of technology, chaining special card abilities that can steal, destroy, splay, or copy your opponents' cards. Because every tableau is public and constantly interacted with, the leader is often the biggest target, and games can swing wildly on a single turn.",
  "praised": [
-  "Incredible depth and replayability from a small deck of cards",
-  "Elegant, tightly integrated rules where every card's effect ties into its theme",
-  "Explosive, satisfying combo turns once you see the engine click",
-  "Fast to play and easy to reset for another game"
+  "enormous depth and combo potential from a small deck",
+  "fast setup and short playtime relative to its strategic depth",
+  "high replayability and emergent strategies",
+  "clever 'share vs. demand' icon mechanic drives constant interaction"
  ],
  "criticised": [
-  "Steep learning curve and dense rules text on cards makes early games confusing",
-  "Can feel swingy or 'solved' by a single big combo that ends the game abruptly",
-  "Kingmaking and analysis paralysis in multiplayer as players parse others' boards",
-  "Iconography and card interactions are hard to teach to new players"
+  "steep learning curve reading card icons and effects",
+  "can feel swingy or dominated by rush/combo strategies",
+  "leader can get piled on, sometimes bordering on kingmaking",
+  "early luck of the draw matters a lot"
  ],
  "interaction": {
   "level": "High",
-  "kind": "sharing/demanding effects and tableau disruption (take that)"
+  "kind": "open tableau effects, forced exchanges, and direct attacks",
+  "detail": "All players' tableaus are fully public, and dogma effects constantly let players share, steal, transfer, or destroy cards across the table, so the shared board state matters as much as any individual player's cards."
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game is won by claiming achievements (via score thresholds or special criteria), not by tallying broad point sources, so a single well-timed combo or dogma chain usually decides the winner."
+  "breadth": "Some",
+  "why": "Winning usually comes from racing to collect enough achievements, though a fallback score comparison decides things if the deck runs out.",
+  "how_you_win": "Collect the required number of achievement cards (earned via top-card values and special effects) before your opponents, or hold the highest score if the age-10 card supply is exhausted first."
  },
  "similar": [
+  "Innovation Ultimate",
   "Glory to Rome",
   "Res Arcana",
-  "7 Wonders",
-  "Through the Ages",
+  "Race for the Galaxy",
   "Roll for the Galaxy"
  ],
- "_fingerprint": "9d1231851cf3ae3d",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "68ac02a4e0b117b5",
  "_name": "Innovation"
 }

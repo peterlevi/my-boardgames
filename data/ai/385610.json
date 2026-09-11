@@ -1,34 +1,41 @@
 {
- "confidence": "high",
- "summary": "A dense, systems-heavy Euro where you queue actions via double-sided cards and watch nearly every move ripple through a shared supply-and-demand market for resources like ore, stone, and permits. Turns are quick individually, but the payoff comes from reading the whole board's economy and timing your mining, building, and cathedral contributions before rivals shift prices against you.",
+ "confidence": "medium",
+ "summary": "Kutná Hora drops players into a medieval mining boomtown where every action you take shifts a shared supply-and-demand market, so prices for silver, workers, and buildings actively move based on what everyone is doing. It plays as a heavier, tightly interlocking Euro where you're constantly reading the market and adapting your plan rather than executing a fixed engine.",
  "praised": [
-  "The dynamic market/pricing system feels genuinely reactive and clever rather than bolted-on",
-  "Strong sense of economic interdependence — other players' actions visibly affect your options",
-  "Asymmetric guild powers give replayability and distinct strategies",
-  "Satisfying long-term puzzle of sequencing actions on the card queue"
+  "genuinely reactive supply-and-demand market system",
+  "high strategic depth with meaningful choices every turn",
+  "beautiful production and thematic city-building feel",
+  "strong sense that opponents' actions matter to your plans"
  ],
  "criticised": [
-  "Steep rules overhead and a fiddly first few plays before the systems click",
-  "Iconography and card-queue mechanism can feel unintuitive early on",
-  "Can run long, especially at 4 players, with some downtime between turns",
-  "Production/component quality and rulebook clarity drew some complaints at launch"
+  "steep learning curve and heavy rules overhead",
+  "long playtime that can drag at higher player counts",
+  "market swings can feel opaque to new players",
+  "analysis paralysis potential from the many interacting systems"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "shared market pricing and competition for land/permits"
+  "level": "Medium",
+  "kind": "shared market dynamics and indirect competition",
+  "detail": "There's no direct player-versus-player conflict, but every purchase or sale shifts the shared market prices that everyone else must then react to, making the market itself the primary shared game state alongside each player's individual city tableau."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from building, guild production, cathedral contribution, and economic efficiency, so the winner is usually whoever manages the market and multiple income streams best rather than one dominant strategy"
+  "why": "Victory points come from multiple building types, market trading profit, and end-game bonuses, rewarding whoever built the most efficient, diversified economic engine.",
+  "how_you_win": "You win by developing a strong mix of mining, production, and trading actions that outpaces opponents' points across several scoring categories."
  },
  "similar": [
+  "Le Havre",
+  "Brass: Birmingham",
+  "Underwater Cities",
   "Barrage",
-  "The Gallerist",
-  "Great Western Trail",
-  "Praga Caput Regni",
-  "Trickerion: Legends of Illusion"
+  "Great Western Trail"
  ],
- "_fingerprint": "cbd0e72fe6dafd0d",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "2440ac890e3c6dc5",
  "_name": "Kutná Hora: The City of Silver"
 }

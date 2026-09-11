@@ -416,7 +416,23 @@
 			
 
 			
-	
+			<videos total="105">
+						<video id="464831" title="PAINTING MINIS / CRY HAVOC Board Game" category="other" language="English" link="http://www.youtube.com/watch?v=NZ4fBS2xYxY" username="thegreat2" userid="412153" postdate="2023-11-03T00:31:14-05:00" />
+						<video id="461195" title="Hoe speel je Cry Havoc? (#448 )" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=eiAt_shVVOI" username="Molotail" userid="958802" postdate="2023-10-12T09:20:04-05:00" />
+						<video id="422942" title="Favourite Game Friday - Asymmetrical Powers" category="other" language="English" link="http://www.youtube.com/watch?v=-PS4Of4if9w" username="BoxedMeeples" userid="3462483" postdate="2023-02-10T19:35:22-06:00" />
+						<video id="375006" title="Cry Havoc - обзор настольной игры" category="review" language="Russian" link="http://www.youtube.com/watch?v=1hspOwbmJos" username="Geek_Media" userid="2207816" postdate="2022-04-07T07:03:05-05:00" />
+						<video id="354820" title="SAIBA TUDO SOBRE CRY HAVOC ? I SUA VEZ" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=Rup_Hh761Fc" username="fdcorte" userid="3060890" postdate="2021-11-29T06:50:52-06:00" />
+						<video id="230177" title="Rezension" category="review" language="German" link="http://www.youtube.com/watch?v=r-YCPmNC2Es" username="WanielDeiss" userid="2148780" postdate="2019-08-25T05:20:39-05:00" />
+						<video id="218708" title="Conociendo Cry Havoc - Zacatrus" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=wYln4A1S2og" username="nunovix" userid="1007961" postdate="2019-05-17T16:57:45-05:00" />
+						<video id="172956" title="Hunter &amp; Cron: Boardgame Review - Cry Havoc" category="review" language="German" link="http://www.youtube.com/watch?v=NkELTJETHJ8" username="Norc" userid="405769" postdate="2018-04-10T12:01:10-05:00" />
+						<video id="169700" title="Spielwarenmesse 2018 - Game Preview (German)" category="instructional" language="German" link="http://www.youtube.com/watch?v=w0uG4OKUtOM" username="Smuker" userid="125523" postdate="2018-03-12T14:20:19-05:00" />
+						<video id="163116" title="Painting Cry Havoc Pilgrims" category="instructional" language="English" link="http://www.youtube.com/watch?v=CpffZXoCmAY" username="Sonath" userid="825341" postdate="2018-01-15T07:19:11-06:00" />
+						<video id="159536" title="Painting Cry Havoc Machines" category="instructional" language="English" link="http://www.youtube.com/watch?v=MXP3-UeUdTI" username="Sonath" userid="825341" postdate="2017-12-09T11:49:27-06:00" />
+						<video id="154391" title="[How to play] Cry Havoc" category="instructional" language="Russian" link="http://www.youtube.com/watch?v=Xk5G9IaMUJw" username="nastolkitv" userid="1630954" postdate="2017-10-27T05:05:51-05:00" />
+						<video id="154023" title="[Review] Cry Havoc" category="review" language="Russian" link="http://www.youtube.com/watch?v=6HrVy-WPI78" username="nastolkitv" userid="1630954" postdate="2017-10-24T03:49:28-05:00" />
+						<video id="152294" title="Painting Cry Havoc Humans" category="instructional" language="English" link="http://www.youtube.com/watch?v=p7G3kmkpNRs" username="Sonath" userid="825341" postdate="2017-10-07T07:01:45-05:00" />
+						<video id="151156" title="LudoChrono - Cry Havoc - English version" category="review" language="English" link="http://www.youtube.com/watch?v=su0HP534JtU" username="loutre_on_fire" userid="1037076" postdate="2017-09-27T09:38:50-05:00" />
+					</videos>
 
 	
 
@@ -432,16 +448,16 @@
 			<ranks>
 															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1025" bayesaverage="6.64191" />
 																				<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="293" bayesaverage="6.75936" />
-											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="645" bayesaverage="6.72561" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="646" bayesaverage="6.72561" />
 												</ranks>
 
 			<stddev value="1.43116" />
 			<median value="0" />
-			<owned value="11125" />
-			<trading value="629" />
-			<wanting value="211" />
-			<wishing value="1953" />
-			<numcomments value="1498" />
+			<owned value="11132" />
+			<trading value="632" />
+			<wanting value="209" />
+			<wishing value="1952" />
+			<numcomments value="1499" />
 			<numweights value="214" />
 			<averageweight value="3.2944" />
 			</ratings>

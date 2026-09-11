@@ -1,34 +1,41 @@
 {
- "confidence": "high",
- "summary": "Evolution: Climate layers a food-scarcity meter and a fluctuating hot/cold climate track onto the base Evolution engine, so alongside starving or getting eaten by carnivores, species must also evolve traits to survive temperature swings. The extra dimension and fourth trait slot add depth and tension but also more upkeep and card-reading, making an already fiddly game noticeably heavier.",
+ "confidence": "medium",
+ "summary": "Evolution: Climate adds shifting hot/cold weather swings to the Evolution card game system, where players build species with trait cards to survive as carnivores or herbivores competing for limited food. It's a tableau-and-hand-management game with a light simulation feel, where adapting your species to the current climate and food supply determines survival.",
  "praised": [
-  "Adds a genuinely new strategic axis (climate) rather than just more content",
-  "Trait combos and card interactions feel clever and varied",
-  "Strong replayability from emergent species-building",
-  "Works well as a standalone game, not just an expansion"
+  "Clever trait combos create emergent, story-like species",
+  "Adds meaningful strategic layer over base Evolution with climate swings",
+  "Good replayability from the trait card variety",
+  "Approachable rules for a game with real depth"
  ],
  "criticised": [
-  "Steeper rules overhead and more card-text reading than the base game",
-  "Can run long and slow down with more players",
-  "Take-that carnivore attacks can feel mean or swingy, especially for newer players",
-  "Bookkeeping (traits, population, food, climate track) gets fiddly"
+  "Can run long with higher player counts",
+  "Some trait interactions are fiddly to track",
+  "Take-that carnivore attacks can feel harsh to herbivore-focused players",
+  "Overshadowed in the hobby by other 'engine building animal' games like Wingspan"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared food pool competition plus direct carnivore attacks on rivals' species"
+  "kind": "Open conflict and shared resource competition",
+  "detail": "Players build private species tableaus but compete directly for a shared, limited food supply on the watering hole, and carnivores can directly attack and eat opponents' species, making predation a direct player-vs-player action."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Final score is essentially total surviving population and body size across your species, so winning comes down to building fat, well-fed, well-protected species rather than accumulating varied point sources"
+  "why": "Score is primarily driven by the size and food-carrying capacity of surviving species at game end.",
+  "how_you_win": "Build and protect species that accumulate the most points from population size and traits by the end of the final round."
  },
  "similar": [
-  "Evolution (base game)",
-  "Evolution: Oceans",
+  "Evolution",
+  "Wingspan",
   "Bios: Megafauna",
   "Dominant Species",
-  "Trickerion (for trait/engine tinkering fans)"
+  "Ecos: First Continent"
  ],
- "_fingerprint": "a2d4aed2d7890802",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "d2f59cebd5f613d5",
  "_name": "Evolution: Climate"
 }

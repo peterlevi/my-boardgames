@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "A tight, tense bidding game where players spend from a shared, shrinking pool of cash cards to acquire luxury cards or avoid disaster cards, all while knowing the poorest player at the end is disqualified from winning. Every bid is a real trade-off between building a score and having enough cash left to stay in contention, which makes even a 15-20 minute game feel sharp and painful.",
+ "summary": "High Society is a fast, brutal Knizia bidding game where players spend cash cards to win luxury items, except the player with the least money left at the end is disqualified from winning entirely. It plays in about 20 minutes but demands sharp psychological reads on when to bid, when to fold, and when to bail using the one escape card.",
  "praised": [
-  "Elegant, minimalist design with almost no rules overhead",
-  "Constant nail-biting tension despite the short playtime",
-  "The 'poorest player is disqualified' twist forces genuinely hard bidding decisions",
-  "Plays fast and scales well across its player count",
-  "Highly replayable due to variable card draw order"
+  "quick, tense, and easy to teach",
+  "clever last-place-elimination twist forces careful spending",
+  "great psychological bluffing and bidding tension",
+  "small box, big impact for filler slot"
  ],
  "criticised": [
-  "Can feel like a 'take that' bluffing/psychology exercise more than a strategic game to some",
-  "Luck of card order can swing outcomes",
-  "Very light theme pasted onto an abstract bidding mechanism",
-  "Not much to do beyond bidding, so repeated plays can feel samey to some groups"
+  "can feel purely mathematical/dry to some",
+  "luck of card order affects available bidding options",
+  "less satisfying with only 3 players",
+  "one bad early bid can tank a player's whole game"
  ],
  "interaction": {
   "level": "High",
-  "kind": "Simultaneous-ish turn-order bidding and bluffing over a shared resource pool"
+  "kind": "open bidding and auction brinkmanship",
+  "detail": "Every card auctioned is fully shared and visible, and players directly outbid one another in real time, watching rivals' remaining cash to judge how hard to push. There's no private tableau at all — the entire game state is the shared auction and each player's dwindling hand of money."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever has the highest total of acquired number/multiplier cards among players who did not end with the least money."
+  "why": "The winner is the richest-in-status player among those who didn't finish with the least money.",
+  "how_you_win": "You win by accumulating the highest total of status-point cards while ensuring you are not the player left with the smallest remaining bankroll."
  },
  "similar": [
   "For Sale",
   "Ra",
   "Modern Art",
-  "Medici",
-  "No Thanks!"
+  "Verräter",
+  "Medici"
  ],
- "_fingerprint": "5124c580aaf5c875",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "eacb595cf07e9aba",
  "_name": "High Society"
 }

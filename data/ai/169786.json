@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Scythe is a slow-burn engine-builder where players expand across a hex map, upgrade production, and build mechs, with combat resolved by hidden card bids rather than dice — most games see little to no actual fighting despite the war-torn theme. It rewards efficient action sequencing and territory/resource snowballing over direct conflict, with a long midgame of quiet optimization punctuated by occasional tense standoffs.",
+ "summary": "Scythe is a slow-building area-control engine game where five asymmetric factions expand across a hex map, gathering resources and building up mechs and territory while mostly avoiding direct combat until it's decisive. The gorgeous production and quiet tension of watching engines grow make it feel more like a Euro with a war painted on top than an actual wargame.",
  "praised": [
-  "Stunning art and production value (Jakub Różalski)",
-  "Elegant action-selection system with no downtime for turn-taking",
-  "Strong asymmetry between factions and player mats",
-  "Low direct conflict but constant tension over territory and timing",
-  "Satisfying engine-building and snowball feel"
+  "stunning art and components",
+  "asymmetric factions and player mats create varied strategies",
+  "combat is rare but meaningful, avoiding constant conflict",
+  "satisfying engine-building"
  ],
  "criticised": [
-  "Long playtime for the amount of interaction",
-  "Steep upfront learning curve and rules overhead",
-  "Some factions/mats considered stronger than others (balance complaints)",
-  "Can feel solitaire-ish/multiplayer-solitaire in lower-conflict groups",
-  "Bookkeeping-heavy (popularity, resources, stars) for a relatively simple core loop"
+  "combat can feel anticlimactic or swingy when it happens",
+  "long setup and playtime for its actual depth",
+  "some factions/mats are stronger than others",
+  "can feel like a multiplayer solitaire race to end triggers"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "territory/area control with occasional combat, mostly indirect blocking"
+  "kind": "area majority with occasional direct combat",
+  "detail": "Players build largely on their own player mat and home territory but must contest the same hex map for resources, encounters, and territory control, with combat and popularity affecting shared standings. Most turns are independent optimization, punctuated by pivotal territorial clashes."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score combines stars (achievements), territory, resources, and popularity multipliers, so the winner is decided by a broad end-game tally rather than one dominant track."
+  "why": "Coins are earned during the game and converted to final stars/points via territories, resources, popularity, and achieved objectives once someone triggers the end.",
+  "how_you_win": "Trigger the game's end by completing six stars, then have the highest combined coin total from resources, territories, popularity, and structures."
  },
  "similar": [
-  "Terraforming Mars",
   "Root",
-  "Gaia Project",
-  "The Great Zimbabwe",
-  "Blood Rage"
+  "Blood Rage",
+  "Tapestry",
+  "Rise of Fenris (Scythe's own campaign expansion)",
+  "Terraforming Mars"
  ],
- "_fingerprint": "5cfe2a2ecc8d706d",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "aed7a7a639617452",
  "_name": "Scythe"
 }

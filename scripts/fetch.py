@@ -88,8 +88,10 @@ def fetch_things(ids, token):
     tmp = RAW / "_batch.xml"
     for i in range(0, len(missing), BATCH):
         chunk = missing[i:i + BATCH]
+        # videos=1 brings the community's how-to-play links along with the
+        # rest, so the detail panel costs no extra request.
         url = ("https://boardgamegeek.com/xmlapi2/thing?id="
-               + ",".join(chunk) + "&stats=1")
+               + ",".join(chunk) + "&stats=1&videos=1")
         for attempt in range(4):
             code = curl(url, tmp, token)
             if code == "200" and tmp.exists() and tmp.stat().st_size > 500:

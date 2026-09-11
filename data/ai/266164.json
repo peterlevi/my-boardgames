@@ -1,34 +1,38 @@
 {
- "confidence": "high",
- "summary": "Babylonia is a tense area-majority game where you draft tiles from shared face-up rows and chain them onto a hex map to build farms, cities, and monuments, all while jockeying for majority control near royal courts. It has classic Knizia tension: every tile you take denies an opponent, and the game can end abruptly once a tile stack runs dry, so timing your final moves matters as much as your placements.",
+ "confidence": "medium",
+ "summary": "A Knizia area-control and tile-laying game where players place tokens along rivers and near cities in ancient Mesopotamia to gain influence and score based on shared territories. It's a lean, tightly designed game with a sudden-death ending that rewards careful positioning over long-term engine building.",
  "praised": [
-  "Deep, tense decision-making from a simple set of rules",
-  "Clever chaining/tile-drafting mechanism that creates constant blocking opportunities",
-  "Multiple viable scoring paths that reward different strategies",
-  "Strong table interaction typical of top-tier Knizia designs"
+  "elegant, tight Knizia design with meaningful decisions",
+  "clean area-majority mechanics",
+  "quick sudden-death ending keeps tension high"
  ],
  "criticised": [
-  "Fiddly bookkeeping (court favor tiles, bull tokens, scoring tracks) that slows play",
-  "Steep rules/strategy learning curve for a first play",
-  "Sudden-death ending can feel abrupt or anticlimactic",
-  "Dry historical theme that feels pasted on rather than integrated"
+  "can feel dry or abstract despite the theme",
+  "sudden ending can catch players off guard",
+  "less well-known so harder to find opponents familiar with it"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "blocking and area denial through competitive tile drafting"
+  "level": "High",
+  "kind": "area majority and territorial competition",
+  "detail": "Players place pieces on a shared hex map where majority in each region determines who scores, so placements are constantly contesting the same spaces. There is very little private player board; almost all the meaningful state is shared on the map."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from several semi-independent systems (farm/irrigation majorities, city/court favor, ziggurats, and bull-token bonuses), so the winner is whoever best balances multiple scoring engines rather than maxing one."
+  "breadth": "Focused",
+  "why": "Points come almost entirely from area-majority control of cities and regions on the shared map.",
+  "how_you_win": "You win by controlling the most valuable combinations of regions and cities when the sudden-death ending is triggered."
  },
  "similar": [
+  "El Grande",
   "Tigris & Euphrates",
-  "Yspahan",
-  "Ra",
   "Blue Lagoon",
-  "Amun-Re"
+  "Yellow & Yangtze",
+  "Through the Desert"
  ],
- "_fingerprint": "7b25c751bd2b2444",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "330c52184ba5bcac",
  "_name": "Babylonia"
 }

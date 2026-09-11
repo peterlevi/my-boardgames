@@ -486,7 +486,23 @@ But what arcane secrets do these strange ingredients hide? Now it is time to fin
 			
 
 			
-	
+			<videos total="150">
+						<video id="568755" title="Your Board Game Horoscope - Taurus" category="humor" language="English" link="http://www.youtube.com/watch?v=7_wP8n9KHYU" username="Baby_Rhino" userid="1168804" postdate="2025-08-26T04:25:13-05:00" />
+						<video id="548463" title="BEST Deduction Board Games! ??" category="session" language="English" link="http://www.youtube.com/watch?v=WAw_YVlSbW8" username="jucchee" userid="2849251" postdate="2025-04-14T02:43:36-05:00" />
+						<video id="511000" title="Огляд від Карти на стіл" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=gEv2sh0BqxY" username="punk_rock" userid="2986072" postdate="2024-08-25T16:23:50-05:00" />
+						<video id="510999" title="Правила від Lord of Boards" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=JRrmlkaNbDU" username="punk_rock" userid="2986072" postdate="2024-08-25T16:23:19-05:00" />
+						<video id="508719" title="Alchimisti Deduzione Avanzata (ITA) parte 1" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=RCDgEoq6vpU" username="UtterMarcus" userid="507669" postdate="2024-08-12T04:32:41-05:00" />
+						<video id="503407" title="Alchimisti Deduzione Base (ITA)" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=GCUOMmJ3Hek" username="UtterMarcus" userid="507669" postdate="2024-07-08T03:59:21-05:00" />
+						<video id="481613" title="Alchemists Board Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=M3Vv_5xG6Jg" username="program2game" userid="934384" postdate="2024-02-16T06:55:22-06:00" />
+						<video id="452247" title="Cómo hacer la deducción" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=V2i2Ml2NdDk" username="Richvaso" userid="3118115" postdate="2023-08-17T10:16:51-05:00" />
+						<video id="452244" title="Alquimistas PnP" category="other" language="English" link="http://www.youtube.com/watch?v=3Dhjl5OEDUM" username="Richvaso" userid="3118115" postdate="2023-08-17T10:16:03-05:00" />
+						<video id="447997" title="Alchemists" category="other" language="Portuguese" link="http://www.youtube.com/watch?v=S2M_k2934MQ" username="Bafo de Onca" userid="233914" postdate="2023-07-23T13:51:52-05:00" />
+						<video id="445185" title="Розпаковка від Настілки - UA" category="unboxing" language="Ukrainian" link="http://www.youtube.com/watch?v=o45bxmMGiQ4" username="punk_rock" userid="2986072" postdate="2023-07-07T09:42:36-05:00" />
+						<video id="435168" title="Alchemists - ASMR Board Game Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=-N5L38cFUKY" username="ibiliss" userid="1854607" postdate="2023-04-27T08:02:16-05:00" />
+						<video id="416178" title="Alchemists - Review" category="review" language="Turkish" link="http://www.youtube.com/watch?v=U-TXz_DgGZA" username="ibiliss" userid="1854607" postdate="2023-01-01T01:01:13-06:00" />
+						<video id="395382" title="Aprende a jugar Alquimistas" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=hmqSwKLR2Q4" username="Tak30" userid="1890318" postdate="2022-08-22T07:07:43-05:00" />
+						<video id="359460" title="Règles et partie, avec Pénélope Gaming" category="session" language="French" link="http://www.youtube.com/watch?v=rmjHzENwXTM" username="servalwolverine" userid="1976235" postdate="2022-01-04T06:04:21-06:00" />
+					</videos>
 
 	
 
@@ -495,22 +511,22 @@ But what arcane secrets do these strange ingredients hide? Now it is time to fin
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="24664" />
+			<usersrated value="24666" />
 			<average value="7.63627" />
-			<bayesaverage value="7.39334" />
+			<bayesaverage value="7.39338" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="179" bayesaverage="7.39334" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="147" bayesaverage="7.41685" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="179" bayesaverage="7.39338" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="147" bayesaverage="7.41688" />
 												</ranks>
 
-			<stddev value="1.43155" />
+			<stddev value="1.43165" />
 			<median value="0" />
-			<owned value="33825" />
-			<trading value="582" />
-			<wanting value="551" />
-			<wishing value="5943" />
-			<numcomments value="3771" />
+			<owned value="33839" />
+			<trading value="583" />
+			<wanting value="550" />
+			<wishing value="5944" />
+			<numcomments value="3772" />
 			<numweights value="1311" />
 			<averageweight value="3.923" />
 			</ratings>

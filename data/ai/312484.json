@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "A tight worker-placement/deck-building hybrid where a small, growing deck feeds both actions and resources, and the real tension is timing when to explore, dig, or fight guardians before opponents grab key spots. Turns are fast and decisions are dense despite the low luck, since only one action happens per turn and the board's action slots evolve as the island opens up.",
+ "summary": "A hybrid of deckbuilding and worker placement where you send explorers around an island to unlock new action sites while your hand of cards funds resources and artifact purchases. Games feel like a satisfying puzzle of timing and resource conversion, with a low-conflict but competitively tense race for the best spots and cards.",
  "praised": [
-  "Clean fusion of deck-building and worker placement that avoids the bloat of typical deck-builders",
-  "Low luck/high skill ratio with meaningful tactical decisions each turn",
-  "Strong solo mode",
-  "Satisfying sense of escalating power and exploration",
-  "Quick turns keep downtime low despite the game's depth"
+  "clever, tightly integrated fusion of deckbuilding and worker placement",
+  "satisfying exploration/discovery arc as new board sections open up",
+  "gorgeous art and production",
+  "works well solo and scales cleanly across player counts"
  ],
  "criticised": [
-  "Limited direct interaction can make it feel a bit solitaire-ish even multiplayer",
-  "Some randomness in card/site setup can swing difficulty",
-  "Guardians and idols can feel like a secondary system bolted onto the worker placement core",
-  "Analysis paralysis potential from the many viable action paths"
+  "worker-placement blocking can feel harsh to players used to pure deckbuilders",
+  "heavy iconography takes a game or two to internalize",
+  "guardians and the research track add rules overhead for newcomers",
+  "some randomness in which cards/sites are available"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking and racing for limited action/exploration spots"
+  "kind": "indirect blocking over shared worker-placement spots",
+  "detail": "Players compete for the same limited action spaces and market cards, so taking a spot denies it to others that round, but each player's deck, resources, and exploration progress are entirely their own. There's no direct attack — interaction is about tempo and racing for the same opportunities."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from research track position, idols, artifacts, resources left over, and guardians defeated, so the winner is usually whoever balanced several scoring engines rather than maxing one"
+  "why": "Points accumulate from research track position, temples/idols uncovered, leftover resources, and card bonuses at game end.",
+  "how_you_win": "Efficiently combine deckbuilding purchases with worker placement to advance your research track and acquire high-value artifacts and guardians before the fifth round ends."
  },
  "similar": [
   "Res Arcana",
   "Tzolk'in: The Mayan Calendar",
-  "Clank!",
-  "Raiders of the North Sea",
-  "Lost Ruins of Arnak: Expedition Leaders"
+  "Everdell",
+  "Clank!: A Deck-Building Adventure",
+  "Great Western Trail"
  ],
- "_fingerprint": "b2332709e1222171",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "c3bf7033060dd40e",
  "_name": "Lost Ruins of Arnak"
 }

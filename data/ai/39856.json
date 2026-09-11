@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Dixit is a lightly structured storytelling and guessing game where the fun comes almost entirely from the surreal, evocative artwork and the clever (or intentionally vague) clues players invent for it. It plays fast, is nearly language- and rules-barrier-free, and works well as a mixed-group icebreaker rather than a strategic exercise.",
+ "summary": "Dixit is a party game of visual storytelling where the storyteller gives an evocative clue for one of their surreal, dreamlike cards, and everyone else tries to submit a card from their own hand that could also match. It's beloved for sparking creativity and gentle social deduction with almost no rules overhead.",
  "praised": [
-  "gorgeous, dreamlike artwork that sustains replayability across many sessions and expansions",
-  "extremely easy to teach to non-gamers, including kids and casual groups",
-  "clever scoring that punishes clues that are too obvious or too obscure",
-  "generates memorable, funny moments and inside jokes"
+  "Gorgeous, evocative artwork",
+  "Very easy to teach, works for all ages and non-gamers",
+  "Encourages creative, funny clue-giving",
+  "Great icebreaker for mixed groups"
  ],
  "criticised": [
-  "very light on decision-making or strategy once you understand the scoring incentive",
-  "storyteller can feel underpowered or overpowered depending on group's cleverness",
-  "quality of experience depends heavily on the group's creativity and shared references",
-  "can feel repetitive over many plays without expansion cards"
+  "Can feel repetitive over many plays",
+  "Storyteller can be too obvious or too obscure, unbalancing scoring",
+  "Not much strategic depth",
+  "Groups that don't 'click' creatively can find it flat"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "targeted clue-giving and voting/guessing"
+  "kind": "storytelling, voting, and bluffing",
+  "detail": "Every round the storyteller's clue and card become shared information that all other players react to by choosing cards and voting, directly affecting each other's scoring chances. There's no personal board; the interaction is entirely social, mediated through card choice and guessing."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "points come from a single mechanism (the storyteller's clue-matching guess plus bonus votes on your own card), so success is entirely about calibrating clue ambiguity"
+  "why": "Points come from correctly guessing the storyteller's card or fooling others into picking your own, so balancing cleverness and ambiguity decides the winner",
+  "how_you_win": "Score points steadily by guessing right as a listener or crafting clues that split the vote as storyteller, and be the first to cross the finish line on the score track."
  },
  "similar": [
   "Mysterium",
-  "Codenames",
   "Concept",
-  "Just One",
-  "Story Cubes"
+  "Once Upon a Time",
+  "Story Cubes",
+  "Imagine"
  ],
- "_fingerprint": "0faf071bdaefb498",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Before You Play"
+ ],
+ "_fingerprint": "ddcfaa1e70febd6f",
  "_name": "Dixit"
 }

@@ -34,42 +34,42 @@ To win, you must claim achievements, which you can attain by amassing points or 
 										      	               				<yearpublished value="2010" />
 						               				<minplayers value="2" />
 						               				<maxplayers value="5" />
-						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="604">
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="605">
 			
 		<results numplayers="1">		
 					<result value="Best" numvotes="2" />
 					<result value="Recommended" numvotes="6" />
-					<result value="Not Recommended" numvotes="316" />
+					<result value="Not Recommended" numvotes="317" />
 				</results>					
 			
 		<results numplayers="2">		
 					<result value="Best" numvotes="412" />
-					<result value="Recommended" numvotes="148" />
+					<result value="Recommended" numvotes="149" />
 					<result value="Not Recommended" numvotes="11" />
 				</results>					
 			
 		<results numplayers="3">		
-					<result value="Best" numvotes="151" />
+					<result value="Best" numvotes="152" />
 					<result value="Recommended" numvotes="290" />
 					<result value="Not Recommended" numvotes="71" />
 				</results>					
 			
 		<results numplayers="4">		
 					<result value="Best" numvotes="46" />
-					<result value="Recommended" numvotes="189" />
+					<result value="Recommended" numvotes="190" />
 					<result value="Not Recommended" numvotes="243" />
 				</results>					
 			
 		<results numplayers="5">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="6" />
-					<result value="Not Recommended" numvotes="317" />
+					<result value="Not Recommended" numvotes="318" />
 				</results>					
 			
 		<results numplayers="5+">		
 					<result value="Best" numvotes="0" />
 					<result value="Recommended" numvotes="0" />
-					<result value="Not Recommended" numvotes="27" />
+					<result value="Not Recommended" numvotes="28" />
 				</results>					
 	</poll>
 <poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
@@ -516,7 +516,23 @@ To win, you must claim achievements, which you can attain by amassing points or 
 			
 
 			
-	
+			<videos total="80">
+						<video id="623393" title="1 Vistazo: Innovation - Turno Y Acción" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=zt_ZC8aV_ik" username="Skyjordi" userid="1589130" postdate="2026-08-02T12:35:39-05:00" />
+						<video id="612438" title="Règles complètes en français 4eme édition " category="instructional" language="French" link="http://www.youtube.com/watch?v=c1DlezWTfnQ" username="Le_Dav" userid="651385" postdate="2026-05-19T13:07:50-05:00" />
+						<video id="608938" title="Нумограй із двома гравцями від каналу &quot;uGames&quot;" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=Sn2JXxOIxhI" username="davose" userid="1472043" postdate="2026-04-24T06:55:52-05:00" />
+						<video id="596346" title="Інновація Настільна Гра | Розповідаємо правила та розбираємо нюанси" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=zMX5JBvFEfE" username="ihorko" userid="2644433" postdate="2026-02-06T11:01:08-06:00" />
+						<video id="589800" title="Огляд від каналу &quot;Games7Days&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=lvr-xyb0PQw" username="davose" userid="1472043" postdate="2025-12-27T07:20:04-06:00" />
+						<video id="588717" title="Огляд від каналу &quot;Beaver Games&quot;" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=ZqL4HYarI5U" username="davose" userid="1472043" postdate="2025-12-18T05:48:23-06:00" />
+						<video id="584946" title="Explipartie - Tric Trac" category="session" language="French" link="http://www.youtube.com/watch?v=1Rri9namSRE" username="servalwolverine" userid="1976235" postdate="2025-11-26T13:51:41-06:00" />
+						<video id="584945" title="Règles et partie, avec Pénélope &amp; Polgara" category="session" language="French" link="http://www.youtube.com/watch?v=32DH7SshYPw" username="servalwolverine" userid="1976235" postdate="2025-11-26T13:48:13-06:00" />
+						<video id="584944" title="Règles et partie - Pénélope joue sur BGA" category="session" language="French" link="http://www.youtube.com/watch?v=S35T16MPQpI" username="servalwolverine" userid="1976235" postdate="2025-11-26T13:46:06-06:00" />
+						<video id="564173" title="Innovation #boardgames #boardgamelife #boardgamegeek #曠世發明" category="other" language="English" link="http://www.youtube.com/watch?v=MeaR9o3Ytk0" username="czeslaw6300149" userid="798383" postdate="2025-07-23T23:00:38-05:00" />
+						<video id="561391" title="Shut Up &amp; Sit Down review: INNOVATION" category="review" language="English" link="http://www.youtube.com/watch?v=ra3yS6NoQ-A" username="tiagoVIP" userid="363959" postdate="2025-07-03T14:10:01-05:00" />
+						<video id="534358" title="Innovation Playthrough on Board Game Arena" category="session" language="English" link="http://www.youtube.com/watch?v=swUL07Jfaro" username="program2game" userid="934384" postdate="2025-01-24T13:08:28-06:00" />
+						<video id="532725" title="Innovation Board Game Review" category="review" language="English" link="http://www.youtube.com/watch?v=SJS1QoLDt7I" username="program2game" userid="934384" postdate="2025-01-14T11:11:15-06:00" />
+						<video id="529583" title="How To Play Innovation" category="instructional" language="English" link="http://www.youtube.com/watch?v=o58LZCB-0Us" username="program2game" userid="934384" postdate="2024-12-20T09:26:19-06:00" />
+						<video id="464925" title="Innovation Overview &amp; Review" category="review" language="English" link="http://www.youtube.com/watch?v=Mfe6k-0wHAg" username="AnthonyM123" userid="544202" postdate="2023-11-03T13:13:18-05:00" />
+					</videos>
 
 	
 
@@ -525,22 +541,22 @@ To win, you must claim achievements, which you can attain by amassing points or 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="20858" />
-			<average value="7.32839" />
-			<bayesaverage value="7.11611" />
+			<usersrated value="20862" />
+			<average value="7.32785" />
+			<bayesaverage value="7.11564" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="382" bayesaverage="7.11611" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="287" bayesaverage="7.14981" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="382" bayesaverage="7.11564" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="288" bayesaverage="7.1495" />
 												</ranks>
 
-			<stddev value="1.61302" />
+			<stddev value="1.61407" />
 			<median value="0" />
-			<owned value="27798" />
+			<owned value="27819" />
 			<trading value="729" />
-			<wanting value="539" />
-			<wishing value="4440" />
-			<numcomments value="4744" />
+			<wanting value="537" />
+			<wishing value="4441" />
+			<numcomments value="4745" />
 			<numweights value="1030" />
 			<averageweight value="2.7835" />
 			</ratings>

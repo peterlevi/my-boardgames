@@ -1,35 +1,40 @@
 {
  "confidence": "high",
- "summary": "A tense two-player card-driven wargame where battles are resolved not by dice but by whether you can play matching cards to keep your units loyal in the fight; the real game is a tight logistics puzzle of moving armies across the map while managing a shrinking, fluctuating hand of cards that represents your commanders' wavering allegiance. It plays fast for a wargame of its scope, with clean rules but deep, tense decision-making around when to commit forces to battle.",
+ "summary": "Sekigahara is a lean two-player card-driven wargame about maneuvering armies across feudal Japan, where hidden unit strength and clever hand management matter more than dice luck. Battles are resolved through card play rather than randomness, so the tension comes from bluffing troop strength and committing forces at the right crossroads.",
  "praised": [
-  "Elegant, novel mechanics (no dice, cards as loyalty/movement fuel) that model historical uncertainty",
-  "Fast playtime and low rules overhead relative to typical wargames",
-  "High tension in deciding when to commit troops versus holding back",
-  "Strong two-player interaction and replayability from variable setup",
-  "Beautiful, functional map and component design"
+  "elegant, low-luck battle resolution using cards instead of dice",
+  "tight two-player design with real strategic depth",
+  "quick to learn for a wargame",
+  "strong historical theme integration"
  ],
  "criticised": [
-  "Steep initial learning curve to fully grasp the battle/deployment system",
-  "Can feel swingy if a key card isn't drawn at the right time",
-  "Strictly two-player, no scaling options",
-  "Some find the abstracted 'loyalty' battle resolution less satisfying than direct combat"
+  "can feel abstract or dry for players wanting miniatures-style combat",
+  "map and iconography take a session to fully internalize",
+  "steep skill gap between experienced and new players"
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct area-control conflict and blocking on a point-to-point map"
+  "kind": "open conflict and area control on a shared map",
+  "detail": "Both players maneuver armies across the same point-to-point map and directly clash in battles, with card play determining troop commitment and outcomes. The entire board state is shared and contested at every turn."
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game ends immediately when one side captures enough enemy leaders/objectives or the other side's forces are exhausted, so there is no points tally at all"
+  "why": "The game ends immediately once a player controls enough key road/castle spaces or eliminates enough of the opponent's leaders.",
+  "how_you_win": "Control a majority of the map's key roads and castles, or destroy enough enemy leader blocks, to trigger an instant victory."
  },
  "similar": [
   "Twilight Struggle",
-  "Nevsky",
-  "Successors",
   "1775: Rebellion",
-  "Pax Pamir (Second Edition)"
+  "Nevsky",
+  "Hannibal: Rome vs Carthage",
+  "Undaunted"
  ],
- "_fingerprint": "775cd10bd8df8d1d",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Beau Lac"
+ ],
+ "_fingerprint": "b484fcbc8a38c6b1",
  "_name": "Sekigahara: The Unification of Japan"
 }

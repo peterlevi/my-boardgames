@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Takenoko is a light, cheerful tile-laying and resource-management game where players irrigate plots, grow bamboo, and feed the panda while quietly chasing a hidden hand of objective cards. It plays fast and pleasantly with little friction, though the panda's random appetite can occasionally scupper careful planning.",
+ "summary": "Takenoko is a light-to-mid weight family game about cultivating a bamboo garden for the emperor's panda, using dice-driven weather and action points to irrigate plots, grow bamboo, and complete objective cards. It's colorful, low-conflict, and puzzle-like in laying out your garden efficiently.",
  "praised": [
-  "Charming theme and components (the panda and gardener meeples)",
-  "Easy to teach and quick to play",
-  "Satisfying multi-use turns (irrigate, grow, harvest, place tiles) that create interesting puzzle-like decisions",
-  "Good gateway/family game that scales well for its short playtime"
+  "Charming theme and components",
+  "Accessible for families and casual gamers",
+  "Satisfying tile-laying puzzle",
+  "Multiple paths to score via different objective types"
  ],
  "criticised": [
-  "Can feel a bit solitaire-ish with limited direct player interaction",
-  "Dice roll for the gardener/panda's free action adds a luck element some find frustrating",
-  "Objective card draws can be swingy, favoring lucky hands",
-  "Limited long-term depth or replayability for experienced gamers"
+  "Can feel too random with the dice",
+  "Panda can eat your carefully grown bamboo, which frustrates some",
+  "Limited long-term strategic depth",
+  "Objective card luck matters a lot"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "indirect competition for plots and tiles, some blocking of favorable land"
+  "kind": "shared board, parallel objective completion",
+  "detail": "All players build on and affect the same growing garden of plots and bamboo, so the panda eating bamboo or another player irrigating a plot you wanted does affect your plans, but most scoring comes from your own hidden objective cards. Interaction is indirect and mostly about tempo and shared resources rather than direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come from completing plot, gardener, and panda objective cards plus a bonus for the most improvements, so success hinges on collecting and completing the right mix of contracts."
+  "breadth": "Broad",
+  "why": "Points come from completing a mix of plot, gardener, and panda objective cards collected during play.",
+  "how_you_win": "You win by completing the most objective cards, which are revealed and fulfilled by growing bamboo and shaping the garden in the ways each card demands."
  },
  "similar": [
   "Kingdomino",
-  "Karuba",
+  "My Little Scythe",
   "Cottage Garden",
-  "Spring Meadow",
-  "My Little Scythe"
+  "Karuba",
+  "Ticket to Ride"
  ],
- "_fingerprint": "f0b55a0ed6a8586d",
+ "teachers": [
+  "Watch It Played",
+  "Gaming Rules!",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "2a1f4812ed31f289",
  "_name": "Takenoko"
 }

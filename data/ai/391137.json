@@ -5,14 +5,20 @@
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": ""
+  "kind": "shared worker placement and network building",
+  "detail": "Based on the described mechanics (worker placement with different worker types, a shared market, and a company network), players likely compete for placement spots and connections, but I don't have reliable knowledge of how this specific 2025 release actually plays or was received."
  },
- "win_criteria": "Other",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": ""
+  "breadth": "Broad",
+  "why": "Unknown — I don't have verified information on what actually decides the winner in this specific game.",
+  "how_you_win": "Insufficient reliable knowledge of this game to describe how it's actually won."
  },
  "similar": [],
- "_fingerprint": "bb523494f7fd71a4",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played"
+ ],
+ "_fingerprint": "7358aaa10d99011a",
  "_name": "Galactic Cruise"
 }

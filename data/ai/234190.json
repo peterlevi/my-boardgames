@@ -1,34 +1,38 @@
 {
  "confidence": "high",
- "summary": "Players draw, discard, and play cards to be the first to build a stable of seven unicorns, while everyone else uses Neigh and Downgrade cards to destroy, steal, or sabotage each other's progress. Games are short, chaotic, and heavy on direct player attacks, with little long-term planning since board states can be undone in a single turn.",
+ "summary": "Unstable Unicorns is a light, chaotic take-that card game where players race to assemble a stable of seven unicorn cards while using magic, downgrade, and \"neigh\" cards to sabotage each other. It's fast, silly, and heavily reliant on attacking whoever looks closest to winning.",
  "praised": [
-  "Cute, colorful unicorn art and irreverent humor land well with casual and younger players",
-  "Very easy to teach and quick to set up",
-  "Large card pool and expansions/themed decks add replayability and collectibility",
-  "Good gateway game for non-gamers or family game night"
+  "cute, appealing art and presentation",
+  "very easy to teach to casual and non-gamer groups",
+  "fast, chaotic fun in short bursts"
  ],
  "criticised": [
-  "Shallow decision-making with little meaningful strategy once you know the cards",
-  "Take-that destruction can feel mean-spirited or frustrating, especially for younger or newer players who get repeatedly targeted",
-  "High luck/swinginess from the draw means a strong position can be erased instantly",
-  "Little appeal for hobbyist gamers looking for depth"
+  "shallow long-term strategy",
+  "heavy take-that can feel mean-spirited or swingy",
+  "runaway leader/kingmaking issues in larger groups"
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict via direct attacks, stealing, and destroying opponents' cards"
+  "kind": "take-that sabotage",
+  "detail": "Players directly destroy, steal, or neigh away each other's unicorn cards, so most of the tension comes from attacking whoever is closest to seven unicorns; each player's stable is their own small tableau but it's constantly under threat from everyone else."
  },
  "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "the winner is simply whoever completes a 7-unicorn stable first, with no separate scoring system"
+  "why": "There's no point total; the game ends the instant someone completes their stable.",
+  "how_you_win": "You win by being the first to get seven unicorn cards into your stable while using attack cards to slow everyone else down."
  },
  "similar": [
   "Exploding Kittens",
-  "Throw Throw Burrito",
   "Munchkin",
   "Fluxx",
-  "Sushi Go Party"
+  "Throw Throw Burrito"
  ],
- "_fingerprint": "e919702c37a5eede",
+ "teachers": [
+  "Watch It Played",
+  "The Dice Tower",
+  "Before You Play"
+ ],
+ "_fingerprint": "7cd121ee01476aad",
  "_name": "Unstable Unicorns"
 }

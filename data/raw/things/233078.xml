@@ -774,7 +774,23 @@ After every player has passed their turn, players move up the victory track by c
 			
 
 			
-	
+			<videos total="408">
+						<video id="628030" title="Faction guide for Mentak Coalition" category="review" language="German" link="http://www.youtube.com/watch?v=rX-C1xWCEBw" username="BoardgameBenjamino" userid="1618849" postdate="2026-09-02T11:13:25-05:00" />
+						<video id="627499" title="Faction guide for Last Bastion" category="review" language="German" link="http://www.youtube.com/watch?v=Oto1or5nwok" username="BoardgameBenjamino" userid="1618849" postdate="2026-08-30T00:43:48-05:00" />
+						<video id="625538" title="Brilliant TI4 upgrades" category="review" language="German" link="http://www.youtube.com/watch?v=S5JYWbNm-2M" username="BoardgameBenjamino" userid="1618849" postdate="2026-08-17T02:10:30-05:00" />
+						<video id="625144" title="Faction guide for the L1Z1X Mindnet" category="review" language="German" link="http://www.youtube.com/watch?v=OkWT8gcd10M" username="BoardgameBenjamino" userid="1618849" postdate="2026-08-13T16:20:03-05:00" />
+						<video id="623776" title="Talking Twilight Imperium 4 with Erik Dewey | On Board Games" category="interview" language="English" link="http://www.youtube.com/watch?v=3KDZtOwEc48" username="Frenchie112" userid="2006122" postdate="2026-08-05T09:50:47-05:00" />
+						<video id="623726" title="Faction guide for the Embers of Muaat" category="review" language="German" link="http://www.youtube.com/watch?v=a_L-4FUExxQ" username="BoardgameBenjamino" userid="1618849" postdate="2026-08-05T02:31:52-05:00" />
+						<video id="622583" title="I Finally Played Twilight Imperium..." category="session" language="English" link="http://www.youtube.com/watch?v=J6HK1dl9I3k" username="GamingCaravan" userid="3426893" postdate="2026-07-27T21:51:15-05:00" />
+						<video id="622372" title="Board Game Highlights Episode 10: Have We Just Found Our Game Of The Year?" category="review" language="English" link="http://www.youtube.com/watch?v=YMkrnTtlbNk" username="Faz1224" userid="2532579" postdate="2026-07-27T01:39:02-05:00" />
+						<video id="618423" title="Tipps und Hilfen für eure erste Partie TI4" category="review" language="German" link="http://www.youtube.com/watch?v=cfx03IhRFg4" username="BoardgameBenjamino" userid="1618849" postdate="2026-07-01T15:37:11-05:00" />
+						<video id="617811" title="Twilight Imperium GALACTIC REPORT - Six Player Gameplay!" category="session" language="English" link="http://www.youtube.com/watch?v=iO4YhT2U86w" username="Cardboard_CC" userid="1379969" postdate="2026-06-27T00:50:29-05:00" />
+						<video id="617648" title="Shut Up  &amp; Sit Down review: TWILIGHT IMPERIUM: FOURTH EDITION" category="review" language="English" link="http://www.youtube.com/watch?v=7XrJtF-ddF4" username="tiagoVIP" userid="363959" postdate="2026-06-25T22:29:39-05:00" />
+						<video id="616985" title="Board Game Highlights: Episode 9!" category="review" language="English" link="http://www.youtube.com/watch?v=Ge80VLEjl5A" username="Faz1224" userid="2532579" postdate="2026-06-21T08:00:27-05:00" />
+						<video id="609713" title="How to Play TI (Full beginner guide)" category="instructional" language="English" link="http://www.youtube.com/watch?v=jtFYMSe7N7A" username="Frenchie112" userid="2006122" postdate="2026-04-29T20:40:05-05:00" />
+						<video id="608765" title="I finally played TWILIGHT IMPERIUM" category="other" language="English" link="http://www.youtube.com/watch?v=LojJ-IqXp1Q" username="SamuraiCreek" userid="2368846" postdate="2026-04-23T02:32:21-05:00" />
+						<video id="605247" title="TWILIGHT IMPERIUM - Steam Let's Play #daddelstunde" category="session" language="German" link="http://www.youtube.com/watch?v=BdwjKog6eJ8" username="Geekpunkt" userid="3167273" postdate="2026-04-01T11:43:35-05:00" />
+					</videos>
 
 	
 
@@ -783,22 +799,22 @@ After every player has passed their turn, players move up the victory track by c
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="28985" />
-			<average value="8.55946" />
-			<bayesaverage value="8.21758" />
+			<usersrated value="28993" />
+			<average value="8.55976" />
+			<bayesaverage value="8.21772" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="7" bayesaverage="8.21758" />
-																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="4" bayesaverage="8.22295" />
-											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="6" bayesaverage="8.23383" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="7" bayesaverage="8.21772" />
+																				<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="4" bayesaverage="8.22294" />
+											<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="6" bayesaverage="8.23398" />
 												</ranks>
 
-			<stddev value="1.65002" />
+			<stddev value="1.64998" />
 			<median value="0" />
-			<owned value="34356" />
+			<owned value="34372" />
 			<trading value="214" />
-			<wanting value="1044" />
-			<wishing value="13278" />
+			<wanting value="1045" />
+			<wishing value="13281" />
 			<numcomments value="4308" />
 			<numweights value="1421" />
 			<averageweight value="4.3638" />

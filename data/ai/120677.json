@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Terra Mystica is a dense, no-luck engine-building and territory game where you terraform hexes to expand your faction's network while racing up four cult tracks for efficiency bonuses. Every turn is a tight optimization puzzle with heavy opportunity cost, and the game rewards players who plan several turns ahead over a fixed number of rounds.",
+ "summary": "Terra Mystica is a no-luck strategy game where each player's asymmetric faction terraforms hex terrain to expand a network of buildings, upgrade structures, and climb four cult tracks. Games are quiet and cerebral, with success coming from efficient long-term resource planning rather than direct confrontation.",
  "praised": [
-  "Deep, satisfying strategic depth with no luck or hidden information",
-  "Highly asymmetric factions that each play very differently",
-  "Elegant scoring/bonus tile system that gives replayability",
-  "Tight resource economy where every decision has real opportunity cost"
+  "deep, satisfying economic engine with zero luck",
+  "highly asymmetric factions that each play differently",
+  "rewarding for players who like optimization puzzles"
  ],
  "criticised": [
-  "Steep learning curve and heavy rulebook/upfront teaching burden",
-  "Low direct interaction beyond spatial blocking, can feel solitaire-ish",
-  "Some factions are considered stronger than others depending on map/matchup",
-  "Long playtime and analysis paralysis, especially with new players"
+  "steep learning curve and a slow, unrewarding first play",
+  "can feel dry and math-heavy rather than thematic",
+  "needs a full table and careful faction balance to sing"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "blocking and area denial via terraforming adjacency, indirect competition for cult track and bonus positions"
+  "level": "High",
+  "kind": "territory adjacency and area competition",
+  "detail": "Players build on a single shared hex board where adjacency to other players' structures grants bonuses, so land grabs and blocking opponents' expansion routes are central; cult tracks are also a shared, contested resource."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate continuously from building, terraforming, cult track advancement, and end-game bonus tiles, so the winner is decided by consistent efficiency across many small scoring streams rather than one dominant strategy"
+  "why": "Points trickle in throughout the game from building, network size, cult track position, favor tiles, and town founding, plus a final area-scoring round.",
+  "how_you_win": "You win by out-expanding and out-upgrading opponents on the shared board while squeezing extra points from cult tracks and favors along the way."
  },
  "similar": [
-  "Terra Mystica: Gaia Project",
-  "Puerto Rico",
-  "The Castles of Burgundy",
+  "Gaia Project",
+  "Teotihuacan: City of Gods",
   "Concordia",
+  "Tzolk'in: The Mayan Calendar",
   "Brass: Birmingham"
  ],
- "_fingerprint": "cfc2410050e3ac7c",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "6397a3ebced5fc85",
  "_name": "Terra Mystica"
 }

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Le Havre is a dense, cerebral resource-conversion game where you shepherd raw goods through building chains into fish, food, and finished products while carefully managing feeding costs each round. It rewards long-term engine planning over reactive play, and games can run long with real downtime and analysis paralysis, especially at higher player counts.",
+ "summary": "Le Havre is a dense Uwe Rosenberg resource-conversion game where you shuffle raw goods through a chain of buildings to turn wood and clay into food, iron, steel, and eventually ships and victory points. It's a slow, cerebral engine-builder where every turn is an agonizing choice between feeding your workers and investing in long-term infrastructure.",
  "praised": [
-  "Deep, satisfying resource-conversion puzzle with meaningful long-term planning",
-  "High strategic depth and replayability from variable building sets",
-  "Strong, well-regarded solo mode",
-  "Rewards efficient engine-building and multiple viable paths to victory"
+  "deep, satisfying resource-chain engine building",
+  "meaningful long-term planning",
+  "great solo mode",
+  "building ownership creates passive income streams"
  ],
  "criticised": [
-  "Long playtime, especially with more players, exacerbated by analysis paralysis",
-  "Steep learning curve and heavy rulebook/iconography to internalize",
-  "Low direct player interaction, feels solitaire-ish at the table",
-  "Building costs and offer spaces can feel fiddly to track"
+  "long playtime, especially at higher player counts",
+  "heavy analysis paralysis due to many building options",
+  "steep learning curve for new players",
+  "can feel like a solitaire game with others at the table"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light competition for buildings and offer spaces"
+  "kind": "mostly parallel play with some building-fee taxation",
+  "detail": "Players mainly develop their own tableau of buildings and resources, but the shared offer spaces and the fact that you pay rivals when using buildings they own not you creates light indirect interaction. Turn order and taking whole offer stacks before opponents can also matter tactically."
  },
- "win_criteria": "Most money",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Final wealth is the sum of cash plus the value of owned buildings and ships, so the winner is whoever built the most efficient, high-value production and ownership engine"
+  "breadth": "Broad",
+  "why": "Final score sums money, buildings, and ships, so the winner is whoever built the most efficient economic engine by game end.",
+  "how_you_win": "You win by converting resources through buildings into money and constructed buildings/ships, accumulating the highest combined value at the end of the round track."
  },
  "similar": [
   "Agricola",
   "Caverna",
+  "A Feast for Odin",
   "Puerto Rico",
-  "The Castles of Burgundy",
-  "Power Grid"
+  "Fields of Arle"
  ],
- "_fingerprint": "07a192ebf0e9d0f2",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "03d35643a1f92e5b",
  "_name": "Le Havre"
 }

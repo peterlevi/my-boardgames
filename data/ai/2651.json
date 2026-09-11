@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "A tight economic puzzle where players bid for power plants, buy resources on a shared market, and build networks of cities, but only the plants you can actually fuel and power at payout matter. Turn order rotates so the leader goes last in every phase except paying the most for plants, creating a self-balancing catch-up mechanism that keeps games close until the end.",
+ "summary": "Power Grid is a tight economic game about building an electrical network across a map while bidding for power plants and managing a fluctuating resource market. It rewards efficient expansion and resource timing over raw aggression, with the built-in leader-punishing turn order keeping the game close until the end.",
  "praised": [
-  "Elegant self-balancing turn order that keeps the game close",
-  "Deep economic tension between expanding, buying plants, and stockpiling resources",
-  "High replayability from variable maps, plant decks, and player counts",
-  "Rewards efficient planning and resource management"
+  "Elegant economic engine where every subsystem (auction, resources, network, payout) interlocks",
+  "Turn order mechanism that automatically slows down the leader",
+  "High replayability from different maps and plant decks",
+  "Tense, meaningful auctions"
  ],
  "criticised": [
-  "Long playtime, especially with 5-6 players due to auction and bidding phases",
-  "Downtime waiting for other players' turns, particularly the auction phase",
-  "Can feel unforgiving to new players who fall behind early",
-  "Theme is dry/abstract for some tastes",
-  "Fixed endgame trigger can lead to anticlimactic finishes"
+  "Long playtime and slow first game while learning the systems",
+  "Can feel mathematical/dry, low thematic engagement",
+  "Elimination-adjacent frustration if you fall behind early",
+  "Fiddly bookkeeping with resources and money"
  ],
  "interaction": {
   "level": "High",
-  "kind": "Auction/bidding and route/resource blocking"
+  "kind": "auction/bidding and resource market competition",
+  "detail": "Players directly compete for power plants in open auctions and for limited resources in a shared market whose prices rise and fall based on collective demand, and city connections on the shared map can block or wall off rivals' expansion routes. Each player has their own plants and cities but the map, resource supply, and plant market are entirely shared and contested."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever can power the most cities when someone's network hits the end-game size threshold."
+  "why": "The player who can power the most cities on the final turn wins, so network size and plant capacity are what matter.",
+  "how_you_win": "Once someone's network reaches the endgame city threshold, everyone gets one final turn to power as many cities as possible, and whoever powers the most cities wins (money is the tiebreaker)."
  },
  "similar": [
-  "Chicago Express",
-  "Age of Steam",
-  "Container",
   "Brass: Birmingham",
-  "El Grande"
+  "Le Havre",
+  "Container",
+  "Kanban: Automotive Revolution",
+  "Snowdonia"
  ],
- "_fingerprint": "88b639465c83c4c3",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "351a77aca9f3d983",
  "_name": "Power Grid"
 }

@@ -1,35 +1,39 @@
 {
  "confidence": "high",
- "summary": "Anachrony is a dense worker-placement/resource-engine game about racing four factions to build up tech and resilience while managing a strict day/night action-order twist and optional time-travel loops that let you undo or preload actions. It rewards long-term planning and engine-building far more than reactive tactics, with a heavy rules and iconography load especially in the first few plays.",
+ "summary": "Anachrony is a heavy sci-fi worker-placement game about rebuilding civilization after a cataclysm, with a signature time-travel mechanic where Exosuits sent to the past let players borrow future resources at a cost. It's dense with interlocking contracts, tech tracks, and production systems aimed at serious euro gamers.",
  "praised": [
-  "Clever, tightly integrated exogenesis/time-loop mechanism that feels genuinely novel",
-  "Strong sense of progression and engine-building satisfaction",
-  "High component and production quality (in the Kickstarter/deluxe editions)",
-  "Good solo mode and scalability",
-  "Lots of variable setup and replayability via modules"
+  "innovative and thematic time-travel loop mechanic",
+  "satisfying long-term engine building",
+  "excellent production and miniatures"
  ],
  "criticised": [
-  "Steep learning curve and heavy rulebook/iconography overhead",
-  "Long turns and analysis paralysis, especially at higher player counts",
-  "Time-travel mechanic can feel fiddly or gimmicky to some rather than essential",
-  "Overwhelming number of small modules/expansions for newcomers to sort through"
+  "steep learning curve and heavy rules overhead",
+  "long playtime",
+  "catch-up disaster track can feel frustrating to some"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking and shared space competition, mostly parallel engine-building"
+  "kind": "worker placement competing for shared spaces and contracts",
+  "detail": "Players place workers on shared action spaces and compete for limited contracts and tech upgrades, but each player's production engine and base develop mostly on their own board."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from multiple converging tracks (tech, resources, contracts, time-rift bonuses), so winning depends on efficiently layering several scoring engines rather than one dominant strategy"
+  "why": "Points come from contracts fulfilled, tech tracks advanced, and end-game bonuses spread across multiple systems.",
+  "how_you_win": "Build the most efficient production and contract-fulfillment engine, using time-travel loops to convert resources into the most victory points by game end."
  },
  "similar": [
-  "Tzolk'in: The Mayan Calendar",
+  "Trickerion",
+  "Tzolk'in",
   "Gaia Project",
-  "Trickerion: Legends of Illusion",
   "On Mars",
-  "A Feast for Odin"
+  "Newton"
  ],
- "_fingerprint": "8fcdf6fc29ff3996",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "324a5de02621248f",
  "_name": "Anachrony"
 }

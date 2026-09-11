@@ -1,35 +1,39 @@
 {
  "confidence": "high",
- "summary": "A mid-weight worker-placement game built around a rondel: you move your meeple around a wheel of action spaces to collect resources, recruit characters, and build up your tableau, while also competing for control of the Sheriff track for bonus points. It's less mean than its predecessor Architects (no direct sabotage/corruption), with the tension coming from tight resource management and racing others to the best rondel spaces and building slots.",
+ "summary": "Viscounts of the West Kingdom, the closing entry in the West Kingdom trilogy, has players moving pieces around a shared rondel to collect resources and cards, then using deck-building-style cards to construct buildings and place bishops or knights in a king-of-the-hill contest for control of city spaces. It rewards building an efficient multi-track engine while occasionally bumping opponents off contested spots.",
  "praised": [
-  "Clever rondel movement mechanic that creates meaningful spend-vs-advance decisions",
-  "Multiple viable strategies (buildings, manuscripts, castle work, deeds) that support different tableaus",
-  "Strong solo mode",
-  "High production values and thematic art consistent with the West Kingdom series",
-  "Good complexity-to-playtime ratio for a mid-weight euro"
+  "satisfying multiple paths to victory points",
+  "polished, attractive production consistent with the trilogy",
+  "streamlined and slightly lighter than its predecessors"
  ],
  "criticised": [
-  "Less player interaction than Architects of the West Kingdom, feels fairly solitaire/parallel outside the Sheriff track",
-  "Rulebook and icons can be a bit fiddly to learn initially",
-  "Can feel a little dry or formulaic if you've played other Garphill/West Kingdom titles",
-  "Some randomness in available characters/cards can swing early game options"
+  "the rondel can feel fiddly compared to straightforward worker placement",
+  "less direct player interaction than the area-majority theme suggests",
+  "some randomness in the available card/tile offer"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with light area-majority competition for Sheriff/castle control"
+  "level": "Medium",
+  "kind": "king-of-the-hill area majority and shared rondel spaces",
+  "detail": "Players displace each other's bishops and knights from contested city spaces in a king-of-the-hill mechanic and compete for the same rondel slots, but each player otherwise builds their own tableau of cards and buildings independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from several parallel engines (buildings, manuscripts, deeds, castle influence, character bonuses) so the winner is usually whoever built the most efficient combination rather than maxing one track"
+  "why": "Points accumulate from buildings, city influence, deployed followers, and end-game bonuses, so overall engine efficiency across several tracks decides the winner.",
+  "how_you_win": "You win by combining resource generation, card plays, and well-timed follower placement to rack up the most victory points across buildings, influence, and bonuses by the end of the game."
  },
  "similar": [
   "Architects of the West Kingdom",
   "Paladins of the West Kingdom",
-  "Barrage",
-  "Trickerion: Legends of Illusion",
-  "Lorenzo il Magnifico"
+  "Raiders of the North Sea",
+  "Trickerion",
+  "Lords of Waterdeep"
  ],
- "_fingerprint": "f17237874afe9fb0",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "4f79be8f94add145",
  "_name": "Viscounts of the West Kingdom"
 }

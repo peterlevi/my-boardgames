@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Cuzco (a re-theme of Java) is a tight tile-laying game where players place hexagonal terrain and building tiles to grow settlements, competing for majority control of temples, markets, and palaces at scoring intervals. It's a dry, cerebral optimization puzzle about timing your placements and majorities rather than direct conflict.",
+ "summary": "Cuzco is a reworking of Java/Mask Trilogy where players place tiles to build a hex map of temples, houses, and terraces while bidding for turn order with a unique auction mechanism. It's a dense, elegant Kramer/Kiesling area-control and majority-scoring game where positioning and timing matter far more than luck.",
  "praised": [
-  "Elegant, tightly interlocking tile-placement and scoring system",
-  "Meaningful area-majority tension without being mean",
-  "High replayability due to variable map growth",
-  "Rewards careful planning and efficient action use"
+  "Clever turn-order auction where higher bids act later",
+  "Tight, interlocking tile placement puzzle",
+  "High replayability due to map variability",
+  "Elegant production and layered rules that reward mastery"
  ],
  "criticised": [
-  "Abstract theme feels pasted on and forgettable",
-  "Can be fiddly to teach with several scoring triggers to track",
-  "Downtime in higher player counts",
-  "Auction/bidding for turn order can feel swingy"
+  "Steep learning curve and rules overhead for new players",
+  "Can feel dry/abstract thematically",
+  "Downtime during the bidding phase",
+  "Older-feeling design that some find fiddly compared to modern euros"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "area majority tension and zone of control, mostly indirect"
+  "level": "High",
+  "kind": "area majority and blocking via tile placement",
+  "detail": "Players place tiles on a shared hex map, contesting adjacent territory and majority in shared regions (houses, temples, terraces); the turn-order auction directly determines who gets to react to whom. Almost the entire board is shared and contested, so nearly every placement affects opponents' options."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Points come almost entirely from controlling majorities in temples, palaces, and markets at three scoring rounds"
+  "breadth": "Broad",
+  "why": "Points come from majorities in houses/regions, temple levels, and terraces, so overall board control across several scoring categories decides the winner",
+  "how_you_win": "Accumulate the most points by controlling majorities in regions and building efficiently timed temple/terrace structures across the shared map."
  },
  "similar": [
   "Java",
   "Mexica",
   "Tikal",
-  "Torres",
-  "Amun-Re"
+  "Web of Power",
+  "Torres"
  ],
- "_fingerprint": "9b6e062c01a1380c",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "91dd49e0c07414ba",
  "_name": "Cuzco"
 }

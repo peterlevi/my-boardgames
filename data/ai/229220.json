@@ -1,36 +1,40 @@
 {
  "confidence": "high",
- "summary": "Santa Maria is a tight, puzzly engine-builder where you tetris polyomino buildings onto your colony board and use dice as workers that trigger entire rows/columns before getting stuck in place. Turns are quick but the spatial planning is dense, rewarding careful sequencing of dice placement and building layout over three tense rounds.",
+ "summary": "Santa Maria is a smooth, medium-weight engine builder where you place tetromino-shaped buildings on your colony board and activate whole rows or columns with placed dice, chaining production in a satisfying cascade. It scales well solo to four players and rewards planning your colony's layout more than any direct fight with opponents.",
  "praised": [
-  "Clever dice-as-workers mechanic where placement order and position matter enormously",
-  "Satisfying polyomino/tetris-like puzzle of fitting buildings onto your board",
-  "Fast turns and low downtime despite the depth",
-  "High replayability from varied building tiles and monk/scholar choices",
-  "Solo mode is well regarded"
+  "clever dice-as-workers activation mechanism",
+  "smooth building-chain combos feel rewarding",
+  "quick to teach relative to its depth",
+  "good solo mode"
  ],
  "criticised": [
-  "Steep learning curve and fiddly rules explanation for newcomers",
-  "Can feel overwhelming or 'mathy'/optimization-heavy rather than thematic",
-  "Iconography and symbol-heavy components require a learning period",
-  "Thin theme pasted onto an abstract engine-building puzzle",
-  "Only three rounds means early mistakes are hard to recover from"
+  "multiplayer solitaire feel with little direct interaction",
+  "can suffer analysis paralysis planning colony layout",
+  "some expansion content adds complexity creep"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light drafting competition for dice and buildings"
+  "kind": "mostly parallel play with light drafting competition",
+  "detail": "Each player develops their own colony board independently; the only shared contention is drafting which dice/buildings to take before opponents do. There is no direct attack or negotiation between players."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Happiness points accumulate from building layout efficiency, shipping routes, conquistadors, and monk types, so the winner is whoever builds the most efficient multi-source engine."
+  "why": "Points accumulate from buildings, goods produced, and various colony bonuses at game end.",
+  "how_you_win": "Chain building activations efficiently across your colony to generate the most victory points by the end of the round track."
  },
  "similar": [
-  "Trickerion: Legends of Illusion",
-  "Grand Austria Hotel",
-  "Barrage",
-  "Teotihuacan: City of Gods",
-  "Bonfire"
+  "Fresco",
+  "Trismegistus",
+  "Bonfire",
+  "Barenpark",
+  "Praga Caput Regni"
  ],
- "_fingerprint": "185338849f9efc80",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "a708c9b7326a859f",
  "_name": "Santa Maria"
 }

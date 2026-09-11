@@ -384,7 +384,23 @@ As players take actions, they research new technologies that come in four levels
 			
 
 			
-	
+			<videos total="148">
+						<video id="609577" title="Revisamos el juego BEYOND THE SUN (2020) de Riogrande Games" category="review" language="Spanish" link="http://www.youtube.com/watch?v=I_oD-0gk5y4" username="Luisjoey" userid="169069" postdate="2026-04-28T21:31:30-05:00" />
+						<video id="604055" title="Review - Beyond the Sun" category="review" language="English" link="http://www.youtube.com/watch?v=MjBxPW57nVY" username="TubbsPlaysGames" userid="1183136" postdate="2026-03-24T09:37:22-05:00" />
+						<video id="598576" title="Beyond the Sun" category="review" language="English" link="http://www.youtube.com/watch?v=GgHqIgGOw70" username="Melaniebarr" userid="1626931" postdate="2026-02-17T15:14:02-06:00" />
+						<video id="596545" title="Beyond the Sun" category="review" language="English" link="http://www.youtube.com/watch?v=B-hAEfVtFJo" username="Melaniebarr" userid="1626931" postdate="2026-02-07T17:07:13-06:00" />
+						<video id="567656" title="Beyond the Sun- Spacehawk Reviews" category="review" language="English" link="http://www.youtube.com/watch?v=yhF3r2LQbdU" username="GeeksPlusTabletop" userid="3924629" postdate="2025-08-18T10:35:03-05:00" />
+						<video id="564309" title="Unboxing and Rules skim through of Beyond the sun" category="unboxing" language="English" link="http://www.youtube.com/watch?v=Z3uHbKzZqSs" username="thatboardgamelife" userid="4208912" postdate="2025-07-24T18:06:13-05:00" />
+						<video id="562960" title="Beyond the Sun: Discussion" category="review" language="English" link="http://www.youtube.com/watch?v=jVYJ726x1EA" username="FantasyNerd8" userid="1029024" postdate="2025-07-15T19:12:08-05:00" />
+						<video id="559893" title="Why Is No One Talking About BEYOND THE SUN?! - The Tech Tree Game That Blew Us Away" category="other" language="English" link="http://www.youtube.com/watch?v=XCfVfjR89Pk" username="neeber89" userid="457826" postdate="2025-06-23T17:18:22-05:00" />
+						<video id="557975" title="What's in the Box? - Beyond the Sun" category="unboxing" language="English" link="http://www.youtube.com/watch?v=B40C5s0ef2M" username="GeeksPlusTabletop" userid="3924629" postdate="2025-06-09T12:38:39-05:00" />
+						<video id="550915" title="J'aime J'y r'joue : Beyond the Sun" category="review" language="French" link="http://www.youtube.com/watch?v=MWEu037RdGU" username="blochjo6" userid="1629389" postdate="2025-04-25T12:56:08-05:00" />
+						<video id="550702" title="Beyond the Sun [JcK Opina / Juego de Mesa / Rio Grande Games / Maldito Games]" category="review" language="Spanish" link="http://www.youtube.com/watch?v=9SRYf27wUhE" username="JugandoConKetty" userid="120496" postdate="2025-04-24T11:30:11-05:00" />
+						<video id="548247" title="Beyond The Sun et son expansion Leaders of the New Dawn - Déballage Usagé" category="unboxing" language="French" link="http://www.youtube.com/watch?v=SPIqpV-GbZs" username="Hyvll" userid="1597619" postdate="2025-04-12T11:32:03-05:00" />
+						<video id="528502" title="Beyond The Sun Ranked In 16 Seconds" category="review" language="English" link="http://www.youtube.com/watch?v=cPHcc8qFQBE" username="Bryle" userid="1233729" postdate="2024-12-12T12:58:50-06:00" />
+						<video id="504086" title="Beyond the Hard - A Beyond the Sun Solo Play" category="session" language="English" link="http://www.youtube.com/watch?v=fDNmU65Sbzk" username="MerryMarriedMeeples" userid="3264236" postdate="2024-07-11T15:37:41-05:00" />
+						<video id="494651" title="Beyond the Sun Board Game Review" category="review" language="English" link="http://www.youtube.com/watch?v=SM3Qqlq5_GI" username="program2game" userid="934384" postdate="2024-05-10T07:08:00-05:00" />
+					</videos>
 
 	
 
@@ -393,22 +409,22 @@ As players take actions, they research new technologies that come in four levels
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="17906" />
-			<average value="7.85916" />
-			<bayesaverage value="7.5568" />
+			<usersrated value="17913" />
+			<average value="7.85952" />
+			<bayesaverage value="7.557" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="114" bayesaverage="7.5568" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="78" bayesaverage="7.62366" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="114" bayesaverage="7.557" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="78" bayesaverage="7.62386" />
 												</ranks>
 
-			<stddev value="1.17276" />
+			<stddev value="1.17262" />
 			<median value="0" />
-			<owned value="20328" />
-			<trading value="255" />
-			<wanting value="748" />
+			<owned value="20345" />
+			<trading value="257" />
+			<wanting value="747" />
 			<wishing value="6670" />
-			<numcomments value="2492" />
+			<numcomments value="2493" />
 			<numweights value="534" />
 			<averageweight value="3.1536" />
 			</ratings>

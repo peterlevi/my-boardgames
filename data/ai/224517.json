@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "Brass: Birmingham is a tight, punishing economic engine-builder where every action is a resource trade-off and the board state constantly threatens to lock you out of profitable moves. Two eras force you to build, network, and sell in overlapping cycles, with the greatest tension coming from timing your own development against the flip-and-sell demand of rivals.",
+ "summary": "Brass: Birmingham is a dense economic Euro where you build canal and rail networks while flipping industry tiles for points across two historical eras. It's a tight, punishing engine of loans, markets, and network-building that rewards careful sequencing.",
  "praised": [
-  "Extremely tight, elegant economic engine with almost no wasted design space",
-  "Deep, multi-layered strategy with a very high skill ceiling",
-  "Strong tension between short-term efficiency and long-term positioning",
-  "Beautiful, functional production and tactile components",
-  "High replayability due to variable player powers and market fluctuations"
+  "Deep, interlocking economic systems",
+  "Extremely high replayability and strategic depth",
+  "Gorgeous, thematic production and map design",
+  "Rewarding for experienced strategy gamers"
  ],
  "criticised": [
-  "Steep learning curve and heavy rules overhead for new players",
-  "Can feel punishing or swingy for first-timers who misjudge the link/build economy",
-  "Downtime between turns in higher player counts",
-  "Some find the theme thin dressing over a pure optimization puzzle"
+  "Steep learning curve, unforgiving for new players",
+  "Long playtime for the complexity",
+  "Can feel like multiplayer solitaire with only indirect interaction"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "blocking and area denial via network/market competition"
+  "level": "Medium",
+  "kind": "network and market blocking",
+  "detail": "Players compete indirectly for space on a shared map and for limited resources in a shared coal/iron market, so building near or ahead of opponents can starve their options. Most of the tension comes from anticipating others' moves rather than direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points accumulate from canal/rail links and flipped industry tiles across two scoring rounds, rewarding efficient chains of development, building, and selling rather than any single dominant strategy"
+  "breadth": "Some",
+  "why": "Scoring is tied to flipped industry tiles and connected canal/rail links, counted twice across the two eras",
+  "how_you_win": "You win by having the most valuable flipped industries connected to your canal and rail network at the end of each of the two scoring eras."
  },
  "similar": [
   "Brass: Lancashire",
   "Age of Steam",
-  "Great Western Trail",
   "Barrage",
-  "Food Chain Magnate"
+  "Great Western Trail",
+  "Age of Industry"
  ],
- "_fingerprint": "9113c15e26baaa3e",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "02d185558fc37f22",
  "_name": "Brass: Birmingham"
 }

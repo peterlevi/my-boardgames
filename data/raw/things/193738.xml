@@ -694,7 +694,23 @@ If you cleverly manage your herd and navigate the opportunities and pitfalls of 
 			
 
 			
-	
+			<videos total="252">
+						<video id="623965" title="A quick view of Great Western Trail!" category="review" language="English" link="http://www.youtube.com/watch?v=9MAbOk6_SCI" username="fanlandria" userid="3703221" postdate="2026-08-06T05:03:41-05:00" />
+						<video id="600091" title="Episode 87: Pfister Face-Off:  Great Western Trail vs Maracaibo" category="review" language="English" link="http://www.youtube.com/watch?v=4zrnTmKrpnU" username="dgin321" userid="3017262" postdate="2026-02-26T18:54:58-06:00" />
+						<video id="558361" title="BGG Top 100 Brettspiele im Tier Ranking: Liebe, Lob &amp; Lästerattacken" category="other" language="German" link="http://www.youtube.com/watch?v=uknb-BsnRm4" username="Njoltis" userid="468151" postdate="2025-06-12T03:19:26-05:00" />
+						<video id="543619" title="Booghy plays... Great Western Trail(2p, Playthrough, Review)" category="review" language="English" link="http://www.youtube.com/watch?v=PBgOqvKy-YY" username="bogdani0405" userid="1267302" postdate="2025-03-15T18:45:59-05:00" />
+						<video id="513894" title="Game the Game: Great Western Trail Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=dmtxWx2BVLw" username="ranash1995" userid="1241534" postdate="2024-09-13T02:18:23-05:00" />
+						<video id="494887" title="Great Western Trail | Playthrough | Live Stream" category="session" language="English" link="http://www.youtube.com/watch?v=G-y3GzxmBk8" username="Dads_and_Dice" userid="3205436" postdate="2024-05-11T12:40:19-05:00" />
+						<video id="486646" title="Say Goodbye to Great Western Trail - So Long Partner..." category="other" language="English" link="http://www.youtube.com/watch?v=ds-4AaPuiQ0" username="Bencer" userid="638398" postdate="2024-03-20T14:57:26-05:00" />
+						<video id="486367" title="GWT vs. GWT Argentina vs. GWT New Zealand - Friendly Ties Podcast" category="review" language="English" link="http://www.youtube.com/watch?v=dAmFqGnzgIA" username="HappyHexagon" userid="315890" postdate="2024-03-19T06:01:01-05:00" />
+						<video id="477727" title="Great Western Trail - strategy blitz" category="instructional" language="English" link="http://www.youtube.com/watch?v=OiBwS-e-2Jk" username="mkttimer" userid="22012" postdate="2024-01-31T21:40:07-06:00" />
+						<video id="477726" title="Great Western Trail - rules blitz" category="instructional" language="English" link="http://www.youtube.com/watch?v=KonkSqbhcvM" username="mkttimer" userid="22012" postdate="2024-01-31T21:38:59-06:00" />
+						<video id="477725" title="Great Western Trail - set up &amp; play" category="instructional" language="English" link="http://www.youtube.com/watch?v=PnfmHpaAd5w" username="mkttimer" userid="22012" postdate="2024-01-31T21:37:30-06:00" />
+						<video id="457264" title="Great Western Trail (eggertspiele / asmodee) - Teil 1 - auch nach Jahren noch sehr beliebt" category="review" language="German" link="http://www.youtube.com/watch?v=OyqENYl4FKY" username="Spieleblog" userid="190316" postdate="2023-09-19T10:19:41-05:00" />
+						<video id="449247" title="Great Western Trail" category="other" language="Portuguese" link="http://www.youtube.com/watch?v=_zX1L7VA5xw" username="Bafo de Onca" userid="233914" postdate="2023-07-31T11:39:09-05:00" />
+						<video id="441821" title="Great Western Trail WSBG Ring Final Strategy Commentary" category="other" language="English" link="http://www.youtube.com/watch?v=t4uRXg4Izx0" username="nickismyname" userid="496653" postdate="2023-06-13T19:00:41-05:00" />
+						<video id="441812" title="GWT Setup Strategy and Considerations" category="other" language="English" link="http://www.youtube.com/watch?v=wtrlAAE3680" username="nickismyname" userid="496653" postdate="2023-06-13T18:41:31-05:00" />
+					</videos>
 
 	
 
@@ -703,22 +719,22 @@ If you cleverly manage your herd and navigate the opportunities and pitfalls of 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="44121" />
+			<usersrated value="44131" />
 			<average value="8.14291" />
-			<bayesaverage value="7.96706" />
+			<bayesaverage value="7.96695" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="21" bayesaverage="7.96706" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="21" bayesaverage="7.98908" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="21" bayesaverage="7.96695" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="21" bayesaverage="7.98897" />
 												</ranks>
 
-			<stddev value="1.32475" />
+			<stddev value="1.32482" />
 			<median value="0" />
-			<owned value="47261" />
-			<trading value="667" />
-			<wanting value="1070" />
-			<wishing value="10095" />
-			<numcomments value="5644" />
+			<owned value="47269" />
+			<trading value="666" />
+			<wanting value="1071" />
+			<wishing value="10097" />
+			<numcomments value="5648" />
 			<numweights value="1696" />
 			<averageweight value="3.6963" />
 			</ratings>

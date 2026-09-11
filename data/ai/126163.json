@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Tzolk'in is a mid-heavy worker placement game where the central mechanical conceit—gears that physically carry your workers forward in time—forces you to commit resources early and wait for payoff, creating constant tension between short-term corn costs and long-term action value. Turns are tight and puzzly, with success coming from planning several rounds ahead and balancing multiple resource tracks (corn, wood, stone, gold, skulls) against a hard game-length clock.",
+ "summary": "Tzolk'in has players place workers onto interlocking gears that physically rotate each round, so a worker placed on a low-value early spot slowly moves toward more powerful actions the longer it's left in place — but you have to pay corn upkeep to leave workers out and pull them at the wrong moment forfeits the better reward. The result is a worker-placement game with a distinctive timing puzzle layered on top of standard resource and building management.",
  "praised": [
-  "innovative and tactile gear mechanism that's genuinely unlike other worker placement games",
-  "meaningful long-term planning and tension between short-term needs and long-term payoff",
-  "high production values (the physical gears/wheels)",
-  "multiple viable strategies and paths to victory",
-  "tight, well-balanced economy once you know it"
+  "the rotating gear mechanism is genuinely innovative and tactile",
+  "strong risk/reward tension in deciding when to pull workers",
+  "satisfying resource-conversion engine building",
+  "beautiful, functional production"
  ],
  "criticised": [
-  "steep learning curve and rules overhead for new players",
-  "corn/resource management can feel punishing or fiddly early on",
-  "analysis paralysis, especially with 4 players, since committing a worker locks in a plan for several turns",
-  "low direct interaction beyond blocking gear spaces",
-  "table space and setup/teardown due to the large gear boards"
+  "punishing for new players who mistime the gears",
+  "corn upkeep can create a snowballing problem for players who fall behind",
+  "fiddly component overhead (gears, resources, temple tracks)",
+  "can run long for the amount of choice on a given turn"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial on gear spaces, indirect competition for limited action slots"
+  "kind": "worker placement blocking on shared rotating gears",
+  "detail": "All players place workers on the same set of gears, so popular spots get blocked or bumped, forcing rivals onto worse options, while resource and building tracks are otherwise managed on each player's own board. The temple tracks and available action spots are the main shared state."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "points accumulate from multiple parallel engines (temples, buildings, skulls to the gods, resources converted at game end, tech track bonuses) so the winner is usually whoever built the most efficient combination rather than maxed one track"
+  "breadth": "Some",
+  "why": "Points come primarily from temple track advancement, buildings, and monuments, all fed by the same corn/resource engine.",
+  "how_you_win": "You win by timing your gear placements to gather resources efficiently and converting them into temple advancement and building points before the game's 26 rounds end."
  },
  "similar": [
+  "Trajan",
+  "Caverna: The Cave Farmers",
+  "Le Havre",
   "Puerto Rico",
-  "Caverna",
-  "The Voyages of Marco Polo",
-  "Grand Austria Hotel",
   "Teotihuacan: City of Gods"
  ],
- "_fingerprint": "55e2f6aacbcd3bac",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "36fe7bc39c527f2e",
  "_name": "Tzolk'in: The Mayan Calendar"
 }

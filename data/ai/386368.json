@@ -1,18 +1,41 @@
 {
- "confidence": "low",
- "summary": "",
- "praised": [],
- "criticised": [],
+ "confidence": "medium",
+ "summary": "Ezra and Nehemiah is a card-driven tableau and engine-building game from Shem Phillips (of Raiders of the North Sea / Architects of the West Kingdom fame) with a biblical setting, focused on chaining multi-use cards to rebuild Jerusalem's walls and temple. It plays as a mid-heavy Euro with tech-track progression and a strong solo mode, in the vein of his other Garphill Games titles.",
+ "praised": [
+  "Satisfying card-chaining and engine-building puzzle",
+  "High production values and thematic art",
+  "Strong solo/automa mode",
+  "Approachable for fans of the designer's other games"
+ ],
+ "criticised": [
+  "Theme may feel niche or overly specific to some buyers",
+  "Can feel like a reskin of familiar Garphill Games mechanisms",
+  "Multiplayer interaction is fairly light",
+  "Rulebook/iconography learning curve typical of the designer's catalog"
+ ],
  "interaction": {
   "level": "Low",
-  "kind": ""
+  "kind": "mostly parallel play with light competition for shared resources",
+  "detail": "Each player builds their own tableau and progresses along personal tracks, so most of the game happens on individual boards rather than a shared space. Interaction is limited to competing over shared card offers or race elements rather than direct conflict."
  },
- "win_criteria": "Other",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": ""
+  "breadth": "Broad",
+  "why": "Points accumulate from building progress, completed goals, and end-game bonuses across several tracks.",
+  "how_you_win": "You win by efficiently chaining cards to advance building projects and fulfill objectives, ending with the most victory points."
  },
- "similar": [],
- "_fingerprint": "21309e10fed537cd",
+ "similar": [
+  "Raiders of the North Sea",
+  "Architects of the West Kingdom",
+  "Trade Towns",
+  "Fresh Fish",
+  "Blackout: Hong Kong"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Player's Aid"
+ ],
+ "_fingerprint": "50af9403a9e8388f",
  "_name": "Ezra and Nehemiah"
 }

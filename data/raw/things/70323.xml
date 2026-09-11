@@ -1618,7 +1618,23 @@ First Game in the King of Tokyo series
 			
 
 			
-	
+			<videos total="433">
+						<video id="627792" title="Staying Alive - Episode 10 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=fYY6-GvYo_g" username="Geekpunkt" userid="3167273" postdate="2026-09-01T02:24:48-05:00" />
+						<video id="625460" title="Staying Alive - Episode 09 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=UzT49Zf97zA" username="Geekpunkt" userid="3167273" postdate="2026-08-16T10:18:13-05:00" />
+						<video id="623477" title="Staying Alive - Episode 08 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=QUs58LrFQ34" username="Geekpunkt" userid="3167273" postdate="2026-08-03T03:44:28-05:00" />
+						<video id="623475" title="Staying Alive - Episode 07 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=3L0veV0yPYg" username="Geekpunkt" userid="3167273" postdate="2026-08-03T03:43:26-05:00" />
+						<video id="620335" title="Нумограй із трьома гравцями від каналу &quot;Ігромаг&quot;" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=NxCN6NJ5Xl4" username="davose" userid="1472043" postdate="2026-07-13T07:51:53-05:00" />
+						<video id="619150" title="Staying Alive - Episode 06 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=jEGAdYHl-D4" username="Geekpunkt" userid="3167273" postdate="2026-07-06T11:17:40-05:00" />
+						<video id="617019" title="Staying Alive - Episode 05 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=qohVjnqU-J8" username="Geekpunkt" userid="3167273" postdate="2026-06-21T11:19:18-05:00" />
+						<video id="616748" title="KING OF TOKYO - Steam Let's Play #daddelstunde" category="session" language="German" link="http://www.youtube.com/watch?v=l7b7KcUJ6sE" username="Geekpunkt" userid="3167273" postdate="2026-06-19T04:56:35-05:00" />
+						<video id="616747" title="Staying Alive Episode 04 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=UgByhoCLE0o" username="Geekpunkt" userid="3167273" postdate="2026-06-19T04:55:40-05:00" />
+						<video id="613003" title="Staying Alive Episode 03 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=knX6JIuoeOE" username="Geekpunkt" userid="3167273" postdate="2026-05-23T10:25:05-05:00" />
+						<video id="610415" title="How to Play King of Tokyo | Complete Rules &amp; Gameplay Tutorial" category="instructional" language="English" link="http://www.youtube.com/watch?v=Su7aA825rlo" username="program2game" userid="934384" postdate="2026-05-05T12:14:13-05:00" />
+						<video id="609208" title="Staying Alive - Episode 02 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=Nq8eIQxhcUA" username="Geekpunkt" userid="3167273" postdate="2026-04-26T10:16:50-05:00" />
+						<video id="609207" title="Staying Alive - Episode 01 - King of Tokyo Legacy Let's Play" category="session" language="German" link="http://www.youtube.com/watch?v=Sjxkk9blDC0" username="Geekpunkt" userid="3167273" postdate="2026-04-26T10:15:54-05:00" />
+						<video id="605687" title="Come si gioca a King of Tokyo in un lampo" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=7OVxqn6B5-4" username="CappellaioMoltoMatto" userid="401298" postdate="2026-04-04T10:33:02-05:00" />
+						<video id="602154" title="King of Tokyo" category="review" language="English" link="http://www.youtube.com/watch?v=Qhc5EnNk7q0" username="Melaniebarr" userid="1626931" postdate="2026-03-12T12:15:59-05:00" />
+					</videos>
 
 	
 
@@ -1627,22 +1643,22 @@ First Game in the King of Tokyo series
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="76530" />
-			<average value="7.11087" />
-			<bayesaverage value="7.00512" />
+			<usersrated value="76540" />
+			<average value="7.11074" />
+			<bayesaverage value="7.005" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="506" bayesaverage="7.00512" />
-																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="137" bayesaverage="6.99557" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="507" bayesaverage="7.005" />
+																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="136" bayesaverage="6.99545" />
 												</ranks>
 
-			<stddev value="1.33096" />
+			<stddev value="1.331" />
 			<median value="0" />
-			<owned value="113081" />
-			<trading value="1615" />
+			<owned value="113105" />
+			<trading value="1614" />
 			<wanting value="653" />
-			<wishing value="8621" />
-			<numcomments value="12203" />
+			<wishing value="8619" />
+			<numcomments value="12204" />
 			<numweights value="2955" />
 			<averageweight value="1.4843" />
 			</ratings>

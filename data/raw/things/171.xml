@@ -3204,7 +3204,23 @@ Chess evolved from the ancient Indian game Chaturanga, which became Shatranj whe
 			
 
 			
-	
+			<videos total="139">
+						<video id="598267" title="Cómo jugar al Ajedrez—Tutorial y análisis" category="instructional" language="English" link="http://www.youtube.com/watch?v=BzPqOgZgSck" username="Torre_Token" userid="3834177" postdate="2026-02-16T10:42:36-06:00" />
+						<video id="598102" title="Короткі правила від каналу &quot;Dmytro Polovynka&quot;" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=6y92bIxKNnE" username="punk_rock" userid="2986072" postdate="2026-02-15T15:34:05-06:00" />
+						<video id="592709" title="Not In 10,000 Lifetimes Will We See Chess Like This Again" category="other" language="English" link="http://www.youtube.com/watch?v=P9u9p8vIVBU" username="joakim589" userid="65238" postdate="2026-01-15T09:50:52-06:00" />
+						<video id="571602" title="la présentation rapide:  " category="review" language="French" link="http://www.youtube.com/watch?v=OEjXJNWs4Is" username="expliquemoica" userid="1661550" postdate="2025-09-12T04:32:17-05:00" />
+						<video id="571601" title="les règles complètes: " category="instructional" language="French" link="http://www.youtube.com/watch?v=XF750qmnyRY" username="expliquemoica" userid="1661550" postdate="2025-09-12T04:32:00-05:00" />
+						<video id="553939" title="NEWS: Taliban BANNED Chess!" category="other" language="English" link="http://www.youtube.com/watch?v=9TmZ-IsPujA" username="NerdSection" userid="4191691" postdate="2025-05-13T14:15:54-05:00" />
+						<video id="547678" title="How to Play Chess for Beginners – Learn Rules, Setup, and Piece Movement" category="instructional" language="English" link="http://www.youtube.com/watch?v=W2tM76cZ-PY" username="WEGames" userid="4015071" postdate="2025-04-08T17:19:00-05:00" />
+						<video id="538525" title="Bobby Fischer's God Move Sends Entire Chess World Into Meltdown! | &quot;Game Of The Century&quot;" category="session" language="English" link="http://www.youtube.com/watch?v=4S-9tk0vKHw" username="joakim589" userid="65238" postdate="2025-02-16T06:45:05-06:00" />
+						<video id="525320" title="A Brief History of the Game of Chess" category="other" language="English" link="http://www.youtube.com/watch?v=w2aCK1yT8Ms" username="stillbuyvhs" userid="3374793" postdate="2024-11-21T08:02:44-06:00" />
+						<video id="518129" title="Spielvorstellung: Schach (Chess)" category="instructional" language="German" link="http://www.youtube.com/watch?v=n81JCuQtg4A" username="raphaell7" userid="861956" postdate="2024-10-07T15:33:07-05:00" />
+						<video id="515203" title="Magnus Carlsen Is NOT HUMAN! Destroys Hans Niemann With MACHINE MIND | 100% Accuracy!" category="session" language="English" link="http://www.youtube.com/watch?v=0lPsTUpZfHY" username="joakim589" userid="65238" postdate="2024-09-21T08:00:31-05:00" />
+						<video id="514965" title="LSD and Chess: Matt Thrower's Story" category="humor" language="English" link="http://www.youtube.com/watch?v=gWJPzSzZuKI" username="Hector Bravado" userid="440532" postdate="2024-09-19T19:08:58-05:00" />
+						<video id="510823" title="Entire Chess World In Shock As Carlsen Gets DESTROYED In Just 23 Moves" category="session" language="English" link="http://www.youtube.com/watch?v=htJxvDYeOU0" username="joakim589" userid="65238" postdate="2024-08-24T18:40:24-05:00" />
+						<video id="498679" title="&quot;It's Unbelievable.&quot; The Entire Chess World Is Speechless Right Now" category="session" language="English" link="http://www.youtube.com/watch?v=NPji6OwNxs8" username="joakim589" userid="65238" postdate="2024-06-05T11:57:09-05:00" />
+						<video id="490365" title="Steg för steg - Schack" category="session" language="Swedish" link="http://www.youtube.com/watch?v=O8cRa9jxuoY" username="Bitforbit" userid="2090566" postdate="2024-04-13T17:20:19-05:00" />
+					</videos>
 
 	
 
@@ -3213,22 +3229,22 @@ Chess evolved from the ancient Indian game Chaturanga, which became Shatranj whe
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="41014" />
-			<average value="7.24193" />
-			<bayesaverage value="7.04178" />
+			<usersrated value="41018" />
+			<average value="7.24181" />
+			<bayesaverage value="7.04181" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="463" bayesaverage="7.04178" />
-																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="50" bayesaverage="6.86401" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="463" bayesaverage="7.04181" />
+																				<rank type="family" id="4666" name="abstracts" friendlyname="Abstract Game Rank" value="50" bayesaverage="6.86407" />
 												</ranks>
 
-			<stddev value="1.85375" />
+			<stddev value="1.85374" />
 			<median value="0" />
-			<owned value="62070" />
-			<trading value="204" />
+			<owned value="62083" />
+			<trading value="205" />
 			<wanting value="43" />
 			<wishing value="500" />
-			<numcomments value="8333" />
+			<numcomments value="8335" />
 			<numweights value="3067" />
 			<averageweight value="3.642" />
 			</ratings>

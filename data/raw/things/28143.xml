@@ -690,7 +690,23 @@ UPC 655132003018
 			
 
 			
-	
+			<videos total="182">
+						<video id="628638" title="Race for the Galaxy Playthrough | Shadow of the Game" category="session" language="English" link="http://www.youtube.com/watch?v=oTnZeLUt348" username="shadowofthegame_" userid="4403852" postdate="2026-09-06T15:46:19-05:00" />
+						<video id="623519" title="Race for the Galaxy 2 Player Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=rYWmfgcuTTU" username="eNVyBoardGaming" userid="2747219" postdate="2026-08-03T09:44:13-05:00" />
+						<video id="620730" title="Race For The Galaxy (2nd Edition) Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=LB0vQM-hKlo" username="Crh007" userid="2068178" postdate="2026-07-15T16:52:51-05:00" />
+						<video id="601672" title="Unboxing Race for the Galaxy" category="unboxing" language="English" link="http://www.youtube.com/watch?v=uZPD43PP0Wc" username="kacoplays" userid="2729997" postdate="2026-03-09T19:26:12-05:00" />
+						<video id="596870" title="Homenaje al Race for the Galaxy" category="review" language="Spanish" link="http://www.youtube.com/watch?v=x4jumpLZB-0" username="hombrepollo" userid="1039109" postdate="2026-02-10T05:19:57-06:00" />
+						<video id="564947" title="Speluitleg Race for the Galaxy - Regels (NL/BE)" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=3vvBbO7-Dyk" username="Bram Vonck" userid="1869173" postdate="2025-07-29T12:44:37-05:00" />
+						<video id="553645" title="Unboxing Race for the Galaxy - Unboxing (NL/BE)" category="unboxing" language="Dutch" link="http://www.youtube.com/watch?v=rQpGNJ65_K4" username="Bram Vonck" userid="1869173" postdate="2025-05-12T01:52:06-05:00" />
+						<video id="549467" title="Race for the Galaxy Playthrough on Board Game Arena" category="session" language="English" link="http://www.youtube.com/watch?v=rrw1dBlXiWk" username="program2game" userid="934384" postdate="2025-04-18T11:57:30-05:00" />
+						<video id="546212" title="Race For The Galaxy | Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=WUU3bbuytak" username="Dads_and_Dice" userid="3205436" postdate="2025-03-29T14:00:05-05:00" />
+						<video id="534123" title="Race for the Galaxy: 2025 BoardGameGeek Hall of Fame Inductee" category="other" language="English" link="http://www.youtube.com/watch?v=bWoLtNuAn48" username="boardgamegeektv" userid="473702" postdate="2025-01-23T08:00:47-06:00" />
+						<video id="529678" title="[FR] Partie Solo sur Tabletop Sim" category="instructional" language="French" link="http://www.youtube.com/watch?v=R_n2yJmtrf4" username="Nelsonox" userid="1177862" postdate="2024-12-21T05:07:54-06:00" />
+						<video id="522341" title="Règles et partie, avec Pénélope &amp; Polgara" category="session" language="French" link="http://www.youtube.com/watch?v=viyntvJHkzw" username="servalwolverine" userid="1976235" postdate="2024-11-02T08:12:37-05:00" />
+						<video id="518758" title="The Boardgame Mechanics Review Race for the Galaxy" category="review" language="English" link="http://www.youtube.com/watch?v=lw_KngIKfEY" username="BoardgameMechanics" userid="1339218" postdate="2024-10-11T09:01:13-05:00" />
+						<video id="513236" title="Race for the Galaxy - Una partida en solitario" category="session" language="Spanish" link="http://www.youtube.com/watch?v=JfVMKNbIpkg" username="EntwistleJohn" userid="1607132" postdate="2024-09-09T02:04:23-05:00" />
+						<video id="493323" title="Review " category="review" language="Greek" link="http://www.youtube.com/watch?v=gG0iVqrLl5U" username="smpeter" userid="1095050" postdate="2024-05-01T05:07:43-05:00" />
+					</videos>
 
 	
 
@@ -699,23 +715,23 @@ UPC 655132003018
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="59405" />
-			<average value="7.73588" />
-			<bayesaverage value="7.61443" />
+			<usersrated value="59415" />
+			<average value="7.73598" />
+			<bayesaverage value="7.61452" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="94" bayesaverage="7.61443" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="82" bayesaverage="7.61733" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="94" bayesaverage="7.61452" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="82" bayesaverage="7.6174" />
 												</ranks>
 
-			<stddev value="1.46394" />
+			<stddev value="1.46385" />
 			<median value="0" />
-			<owned value="74538" />
-			<trading value="1287" />
-			<wanting value="1101" />
-			<wishing value="11898" />
-			<numcomments value="11679" />
-			<numweights value="3882" />
+			<owned value="74560" />
+			<trading value="1289" />
+			<wanting value="1100" />
+			<wishing value="11896" />
+			<numcomments value="11682" />
+			<numweights value="3883" />
 			<averageweight value="2.9938" />
 			</ratings>
 								</statistics>

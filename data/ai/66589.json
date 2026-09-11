@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Navegador is a tight, efficient rondel-based economic game where players cycle through action spaces to build up colonies, ships, and factories while carefully managing an ever-tightening money supply. It rewards planning several rondel turns ahead and reading the sugar/gold/spice market, with privileges providing quiet but significant end-game scoring swings.",
+ "summary": "Navegador is a Mac Gerdts rondel game about Portuguese exploration, where players rotate a shared action wheel to manage colonization, trade, and shipbuilding. It's a tight economic engine-builder with a satisfying market mechanism where selling goods drives prices down for everyone, forcing careful timing.",
  "praised": [
-  "Elegant, tight rondel mechanism with meaningful action-space tension",
-  "Clean, efficient design with almost no downtime or luck",
-  "Privileges add strategic depth and multiple viable paths to victory",
-  "Strong sense of economic engine-building and escalating snowball"
+  "elegant rondel action-selection system",
+  "satisfying economic engine building",
+  "clean, tight rules for the depth offered"
  ],
  "criticised": [
-  "Can feel dry or overly mechanical/abstract for its Age of Discovery theme",
-  "Slower player interaction is mostly indirect (space/market competition) rather than direct",
-  "Early leader advantages can snowball, reducing catch-up potential",
-  "Rondel plus privilege system has a learning curve that can feel fiddly at first"
+  "can feel dry or overly mechanical to some",
+  "downtime as you plan around a shared rondel",
+  "similar to Gerdts' other rondel games, less distinctive to fans of the series"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "Indirect competition for colony spots, market prices, and privilege slots rather than direct conflict"
+  "kind": "shared market and rondel positioning",
+  "detail": "Players share a common rondel and market prices, so selling goods or taking certain actions affects the value and availability for everyone else, even though each player builds their own private economic engine of colonies and ships."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score combines privileges matched against colonies, factories, discoveries, shipyards, and churches, so the winner is whoever best aligns their privilege choices with their board presence"
+  "why": "Points come from buildings, privileges, colonies, and money converted at the end",
+  "how_you_win": "You build the most efficient trading and colonization engine, converting goods and buildings into victory points and leftover money by game's end."
  },
  "similar": [
-  "Imperial",
   "Antike",
-  "Concordia",
-  "Le Havre",
-  "Puerto Rico"
+  "Imperial",
+  "Puerto Rico",
+  "Notre Dame",
+  "Concordia"
  ],
- "_fingerprint": "c429d9c5b8897f3a",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "a265b91f969a0953",
  "_name": "Navegador"
 }

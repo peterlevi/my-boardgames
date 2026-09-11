@@ -382,7 +382,23 @@ The end of the game brings a final scoring, then the player with the most points
 			
 
 			
-	
+			<videos total="112">
+						<video id="626315" title="Baza Shackleton - Czy potrzebujemy kolejnego kosmicznego euro? | Recenzja gry planszowej" category="review" language="Polish" link="http://www.youtube.com/watch?v=rUSX2k3mjys" username="chmod700" userid="1837323" postdate="2026-08-21T17:48:37-05:00" />
+						<video id="625191" title="Shackleton Holdbázis rövid bemutató" category="review" language="Hungarian" link="http://www.youtube.com/watch?v=P3O7R3VOAaE" username="Kovazsola" userid="800886" postdate="2026-08-14T02:04:16-05:00" />
+						<video id="620590" title="Shackleton Base plus Expansion Tutorial and Playthrough" category="instructional" language="English" link="http://www.youtube.com/watch?v=umx4gnwHwd4" username="stormfold" userid="1618692" postdate="2026-07-14T18:48:08-05:00" />
+						<video id="619806" title="База Шеклтон, Путешествие на Луну - обзор игры" category="review" language="Russian" link="http://www.youtube.com/watch?v=o8MOBW9c2Wo" username="MagicBG" userid="1516581" postdate="2026-07-10T02:03:28-05:00" />
+						<video id="619804" title="База Шеклтон, Путешествие на Луну - правила и летсплей" category="session" language="Russian" link="http://www.youtube.com/watch?v=LFPV5EhVuN0" username="MagicBG" userid="1516581" postdate="2026-07-10T01:56:47-05:00" />
+						<video id="619089" title="I Played Shackleton Base: A Journey to the Moon... and My Brain Is Still Orbiting ??" category="review" language="English" link="http://www.youtube.com/watch?v=Kry9OFpLu4s" username="TheBoardGameBruh" userid="4125054" postdate="2026-07-06T09:56:30-05:00" />
+						<video id="618703" title="Shackleton Base: Uma Jornada para a Lua - Unboxing" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=kdmUwMH53rg" username="Romir" userid="9484" postdate="2026-07-03T11:00:16-05:00" />
+						<video id="612385" title="Shackleton Base - Solo Playthrough" category="instructional" language="English" link="http://www.youtube.com/watch?v=FyCnF72j1HE" username="PaulGrogan" userid="1685" postdate="2026-05-19T09:02:17-05:00" />
+						<video id="612340" title="Una partita a... Shackleton Base" category="session" language="Italian" link="http://www.youtube.com/watch?v=dmQScn8mV7o" username="Hunters12" userid="2403288" postdate="2026-05-19T04:41:51-05:00" />
+						<video id="609915" title="Shackleton Base: Below. Within. Above. Expansion | Solo Board Game Tutorial and Playthrough" category="instructional" language="English" link="http://www.youtube.com/watch?v=j8hTLb0rtwY" username="shaggi30" userid="701523" postdate="2026-05-01T13:03:14-05:00" />
+						<video id="609913" title="Shackleton Base with Expansion - Playthrough &amp; Review" category="review" language="English" link="http://www.youtube.com/watch?v=1S3CYOvIcjI" username="PaulGrogan" userid="1685" postdate="2026-05-01T13:00:30-05:00" />
+						<video id="609823" title="Shackleton Base Board Game | Let's Learn How to Play Solo | THE LEARNING GAME" category="instructional" language="English" link="http://www.youtube.com/watch?v=lHNdjzrPMkQ" username="shaggi30" userid="701523" postdate="2026-04-30T14:25:44-05:00" />
+						<video id="609394" title="Shackleton Base" category="review" language="English" link="http://www.youtube.com/watch?v=8_wwAFR-lRs" username="Melaniebarr" userid="1626931" postdate="2026-04-27T16:44:17-05:00" />
+						<video id="609059" title="Shackleton Base How to Play with Expansion" category="instructional" language="English" link="http://www.youtube.com/watch?v=KFd-vxQRI_U" username="rollingdoubles" userid="2675013" postdate="2026-04-25T04:35:22-05:00" />
+						<video id="608057" title="Shackleton Base (Grok Games) - Regras e Gameplay" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=FOyqVvuR5wE" username="RSanzzio" userid="713978" postdate="2026-04-18T05:38:21-05:00" />
+					</videos>
 
 	
 
@@ -391,22 +407,22 @@ The end of the game brings a final scoring, then the player with the most points
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="4608" />
-			<average value="8.01154" />
-			<bayesaverage value="7.12665" />
+			<usersrated value="4618" />
+			<average value="8.01221" />
+			<bayesaverage value="7.12815" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="369" bayesaverage="7.12665" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="194" bayesaverage="7.30934" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="368" bayesaverage="7.12815" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="194" bayesaverage="7.31077" />
 												</ranks>
 
-			<stddev value="1.21513" />
+			<stddev value="1.21469" />
 			<median value="0" />
-			<owned value="7557" />
-			<trading value="46" />
-			<wanting value="542" />
-			<wishing value="3113" />
-			<numcomments value="721" />
+			<owned value="7569" />
+			<trading value="47" />
+			<wanting value="541" />
+			<wishing value="3116" />
+			<numcomments value="722" />
 			<numweights value="250" />
 			<averageweight value="3.932" />
 			</ratings>

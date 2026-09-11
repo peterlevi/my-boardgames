@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "Quacks is a tense push-your-luck bag-builder where you draw ingredient chips one at a time, adding them to your pot and hoping not to blow it up before you decide to stop. The excitement comes from the mounting dread as your pot fills up, with every player experiencing the same tension simultaneously and privately.",
+ "summary": "The Quacks of Quedlinburg is a push-your-luck bag-building game where players draw ingredient chips to fill their cauldron, risking an explosion if they draw too many cherry bombs. It's light, fast, and tense, with simultaneous play keeping downtime low.",
  "praised": [
-  "Push-your-luck tension is visceral and exciting every round",
-  "Simultaneous play means no downtime waiting for turns",
-  "Easy to teach, quick to play despite meaningful decisions",
-  "Bag-building lets you customize your risk profile over the game",
-  "Scales well and works great with mixed-experience groups"
+  "Excellent push-your-luck tension every single round",
+  "Simultaneous play means minimal downtime",
+  "Easy to teach and quick to play",
+  "Satisfying bag-building progression across the game"
  ],
  "criticised": [
-  "Can feel very luck-dependent, especially in a single play",
-  "Little direct player interaction beyond the leader-catch-up mechanism",
-  "Some feel the decisions become repetitive across the nine rounds",
-  "Explosion penalty can feel harsh and swingy late game"
+  "Luck of the draw can feel swingy, especially for newer players",
+  "Runaway leader potential if someone's bag gets too strong early",
+  "Fairly light strategic depth for hobbyist gamers",
+  "Some feel the catch-up rat mechanism is not enough to offset early leads"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with a mild catch-the-leader rubber-band"
+  "kind": "mostly parallel play with light take-that via ranking",
+  "detail": "Each player has their own bag, cauldron, and chips, drawing and busting independently and simultaneously with no direct targeting. The main interaction is comparative: final ranking each round determines rat/ruby rewards, and everyone buys from the same shared chip market."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Victory points earned from how far you push your pot each round before it explodes, accumulated over nine rounds, decide the winner."
+  "why": "Victory points accumulate from potion strength each round plus a few bonus rubies, so consistently brewing strong potions decides the winner.",
+  "how_you_win": "You win by building a bag of ingredients that reliably brews powerful potions round after round without exploding too often, ending with the most points."
  },
  "similar": [
-  "Coloretto",
-  "Get Bit!",
-  "Point Salad",
+  "The Quest for El Dorado",
   "Machi Koro",
-  "Skull King"
+  "Valeria: Card Kingdoms",
+  "Trellis",
+  "Century: Spice Road"
  ],
- "_fingerprint": "f4d935ee8bfa8e98",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "068610c973fa68bb",
  "_name": "Quacks"
 }

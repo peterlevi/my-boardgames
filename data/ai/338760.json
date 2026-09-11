@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Imperial Steam is a dense, multi-layered economic game where you juggle worker placement-adjacent action selection, factory production, railway building, and contract fulfillment under constant time pressure, with an auction/bidding turn order that adds a tense meta-layer. It rewards tight efficiency and planning several turns ahead, ending abruptly once the Trieste connection is completed, which can catch slower-developing strategies off guard.",
+ "summary": "Imperial Steam is a tight economic pick-up-and-deliver game where you hire workers, lay track, staff factories, and fulfill contracts before the connection to Trieste triggers sudden-death scoring. It's a spiritual successor to the Age of Steam/Indonesia lineage, rewarding efficient engine-building and route timing over direct confrontation.",
  "praised": [
-  "Tight, interlocking engine where every action has opportunity cost",
-  "Auction-based turn order adds meaningful tension and player interaction",
-  "High replayability from variable setup and multiple viable strategies",
-  "Satisfying sense of building and optimizing a growing economic engine",
-  "Good production quality and clear iconography for a heavy game"
+  "tightly interlocking economic systems",
+  "satisfying network and engine building",
+  "meaningful decisions on nearly every action",
+  "strong sense of progression as the map fills up"
  ],
  "criticised": [
-  "Sudden-death ending can feel abrupt and punish players who haven't converted progress to points yet",
-  "Steep learning curve and heavy rules overhead for a first play",
-  "Some luck/timing dependency in when the end trigger fires relative to your plans",
-  "Can suffer from analysis paralysis given the many interacting subsystems",
-  "Two-player experience seen as less dynamic than 3-4 players"
+  "steep rules overhead and onboarding",
+  "notable downtime at higher player counts",
+  "dense iconography and player aids",
+  "punishing for players who mismanage cash flow early"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "auction-driven turn order and competition for routes/contracts"
+  "kind": "competition for shared routes, contracts, and market space",
+  "detail": "Players build on the same map and compete for the same limited contracts, workers, and delivery routes, indirectly blocking each other by claiming space and depressing shared markets rather than attacking directly. Each player still runs their own factory/track engine, so much of the state is personal even though the map and contract pool are shared."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Net worth at game end combines money, delivered contracts, factory/network development, and end-game bonuses, so diversified economic efficiency wins."
+  "breadth": "Some",
+  "why": "The game ends abruptly once the Trieste connection is made, and whoever has the highest net worth (cash plus assets) at that moment wins.",
+  "how_you_win": "Build the most efficient factory-and-rail engine, fulfill profitable contracts, and hold the strongest net worth when the sudden-death ending is triggered."
  },
  "similar": [
   "Age of Steam",
+  "Irish Gauge",
+  "Indonesia",
   "Brass: Birmingham",
-  "Barrage",
-  "Maracaibo",
-  "Great Western Trail"
+  "Snowdonia"
  ],
- "_fingerprint": "ee5b808527bf71e2",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "6b728deb0d7343e2",
  "_name": "Imperial Steam"
 }

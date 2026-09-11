@@ -312,7 +312,23 @@ This game features a card mechanism reminiscent of deck builders and the market 
 			
 
 			
-	
+			<videos total="60">
+						<video id="589446" title="TdE: &quot;Fayún&quot;" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=BIvjbDTfMtg" username="plissken2013es" userid="157757" postdate="2025-12-23T17:44:15-06:00" />
+						<video id="588949" title="Unboxing Faiyum from the mystery box" category="unboxing" language="English" link="http://www.youtube.com/watch?v=BLwHCjv3Xdw" username="DuffmanGaming" userid="2135717" postdate="2025-12-19T16:14:21-06:00" />
+						<video id="561800" title="Fayun | Partida Solo" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=MgWxOCqja7Q" username="berett" userid="481850" postdate="2025-07-07T08:08:19-05:00" />
+						<video id="538262" title="Présentation de Faiyum et de Privileges" category="other" language="French" link="http://www.youtube.com/watch?v=mFROCjLr_Vo" username="Hyvll" userid="1597619" postdate="2025-02-14T08:29:54-06:00" />
+						<video id="476105" title="Faiyum, &quot;Eu falei faraó, êêêêê faraó&quot;" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=6Yc4F-Z_ewk" username="lfigaro" userid="3046229" postdate="2024-01-21T23:45:54-06:00" />
+						<video id="465439" title="Faiyum - Discussion après une partie" category="review" language="French" link="http://www.youtube.com/watch?v=iKO-qrqQJtI" username="angelo" userid="8704" postdate="2023-11-07T03:53:19-06:00" />
+						<video id="442737" title="Faiyum Review - Is This Friedemann Friese's 2nd Best Game (to Power Grid)?" category="review" language="English" link="http://www.youtube.com/watch?v=TcMrrvse6AA" username="dkingnu" userid="32736" postdate="2023-06-19T12:20:01-05:00" />
+						<video id="432332" title="Curious + Chill Unboxing " category="unboxing" language="English" link="http://www.youtube.com/watch?v=ceUYIGD3IG8" username="eVanDiesel" userid="1048756" postdate="2023-04-09T07:11:26-05:00" />
+						<video id="422933" title="Faiyum - Tutorial, Playthrough, &amp; Review" category="review" language="English" link="http://www.youtube.com/watch?v=8dRzmxRj7Vw" username="PaulGrogan" userid="1685" postdate="2023-02-10T18:47:40-06:00" />
+						<video id="391324" title="Faiyum - 4p Teaching, Play-through, &amp; Roundtable by Heavy Cardboard" category="review" language="English" link="http://www.youtube.com/watch?v=SCw-rUp1i2o" username="eapeas" userid="377742" postdate="2022-07-23T07:58:36-05:00" />
+						<video id="389941" title="Sobran cartas en el modo solitario." category="other" language="Spanish" link="http://www.youtube.com/watch?v=KVZ10QGy5_8" username="Sonodio73" userid="2592140" postdate="2022-07-13T16:39:46-05:00" />
+						<video id="387157" title="Faiyum - Brettspiel Unboxing (2F-Spiele)" category="unboxing" language="German" link="http://www.youtube.com/watch?v=QHY0ryDdSRE" username="Madhunter" userid="1062702" postdate="2022-06-24T11:05:09-05:00" />
+						<video id="373081" title="Faiyum – Brettspiel – Review und Regelübersicht" category="review" language="German" link="http://www.youtube.com/watch?v=JU02VYZqiFc" username="GamerGE" userid="616401" postdate="2022-03-27T07:07:01-05:00" />
+						<video id="367130" title="Faiyum | autorski &quot;Crobo-bot&quot; | pełna rozgrywka solo | zasady gry" category="session" language="Polish" link="http://www.youtube.com/watch?v=9qSma44WFrY" username="SologramYT" userid="2932035" postdate="2022-02-18T04:39:31-06:00" />
+						<video id="362557" title="Faiyum - Legends of Nerdvana Review" category="review" language="English" link="http://www.youtube.com/watch?v=C_kwATE0eq8" username="randrac" userid="28944" postdate="2022-01-23T16:30:43-06:00" />
+					</videos>
 
 	
 
@@ -321,21 +337,21 @@ This game features a card mechanism reminiscent of deck builders and the market 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="3021" />
-			<average value="7.45182" />
-			<bayesaverage value="6.58733" />
+			<usersrated value="3024" />
+			<average value="7.45279" />
+			<bayesaverage value="6.58822" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1137" bayesaverage="6.58733" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="607" bayesaverage="6.76057" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="1137" bayesaverage="6.58822" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="606" bayesaverage="6.76152" />
 												</ranks>
 
-			<stddev value="1.24481" />
+			<stddev value="1.2442" />
 			<median value="0" />
-			<owned value="4870" />
-			<trading value="124" />
+			<owned value="4867" />
+			<trading value="125" />
 			<wanting value="249" />
-			<wishing value="1349" />
+			<wishing value="1350" />
 			<numcomments value="701" />
 			<numweights value="131" />
 			<averageweight value="3.0687" />

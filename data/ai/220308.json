@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "A heavier, more mathematically precise reimagining of Terra Mystica, where each of 14 asymmetric factions terraforms hex planets, builds structures, and races up tech tracks in a tight, low-luck economic engine. Every action is a careful optimization puzzle, and games reward efficient long-term planning over reactive tactics.",
+ "summary": "A dense sci-fi civilization game where you terraform hex planets to match your species, build a network of connected outposts, and climb six research tracks for snowballing bonuses. It plays like a tighter, better-balanced sequel to Terra Mystica, with the same feeling of racing rivals up shared tech tracks while carving out territory on a modular board.",
  "praised": [
-  "extremely well-balanced factions despite high asymmetry",
-  "deep, satisfying engine-building with almost no luck",
-  "gorgeous, thematic production for a euro this crunchy",
-  "huge replayability from faction and round-scoring variability"
+  "clean, elegant systems for a game this deep",
+  "excellent asymmetry between the 14 factions",
+  "strong solo mode",
+  "satisfying tech-tree optimization puzzle"
  ],
  "criticised": [
-  "steep learning curve and heavy rulebook",
-  "long playtime, especially early plays",
-  "low direct interaction can feel like solitaire multiplayer",
-  "analysis paralysis is common given the many optimization paths"
+  "steep learning curve and long first plays",
+  "heavy iconography and upfront rules overhead",
+  "can feel more solitary/optimization-puzzle than confrontational",
+  "analysis paralysis in the mid-late game"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "territory/spatial competition for adjacent hexes, mostly indirect"
+  "level": "Medium",
+  "kind": "territorial adjacency and shared tech-track racing",
+  "detail": "Players expand onto a shared hex map where planet adjacency and terraforming range matter, so building near a rival can block their expansion or trigger federations together. The six research tracks and round bonuses are also raced against everyone else, but each player otherwise manages their own faction board largely independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points accrue from round bonuses, tech tiles, building/research tracks, and end-game scoring, rewarding whichever engine converts resources most efficiently"
+  "why": "Final score sums research advancement, building/federation bonuses, round scoring tiles, and end-game scoring tiles, so no single source dominates.",
+  "how_you_win": "You out-expand and out-tech your rivals across multiple scoring tracks at once, timing your buildings and federations to hit round and final bonuses better than anyone else."
  },
  "similar": [
   "Terra Mystica",
-  "Terraforming Mars",
-  "Underwater Cities",
   "The Great Zimbabwe",
-  "Anachrony"
+  "Underwater Cities",
+  "Anachrony",
+  "Teotihuacan: City of Gods"
  ],
- "_fingerprint": "5891efbe2636798a",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "No Pun Included"
+ ],
+ "_fingerprint": "91322a5ff02d1ac2",
  "_name": "Gaia Project"
 }

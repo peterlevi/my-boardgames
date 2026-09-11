@@ -358,7 +358,23 @@ Skyrise is a brand new game inspired by Sebastien Pauchon's 2008 Spiel Des Jahre
 			
 
 			
-	
+			<videos total="108">
+						<video id="625524" title="Opinando sobre SKYRYSE" category="review" language="Spanish" link="http://www.youtube.com/watch?v=YkSeuxtaShY" username="rikardus66" userid="2802133" postdate="2026-08-17T00:50:42-05:00" />
+						<video id="624076" title=" Skyrise - Regras &amp; Gameplay" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=Jqar6bAAAc4" username="tamirestuh" userid="2903218" postdate="2026-08-06T15:41:59-05:00" />
+						<video id="621693" title="The Game Gallery Review -  Skyrise" category="review" language="Japanese" link="http://www.youtube.com/watch?v=CclsHY3c4iw" username="hal99" userid="27784" postdate="2026-07-22T21:08:01-05:00" />
+						<video id="617753" title="Learn to Play: Skyrise" category="instructional" language="English" link="http://www.youtube.com/watch?v=12IAafpC_W8" username="DragonLance17" userid="828220" postdate="2026-06-26T11:55:53-05:00" />
+						<video id="612297" title="Правила игры и летсплей от GAMEDEMIC" category="session" language="Russian" link="http://www.youtube.com/watch?v=IFoXtF_5hJ4" username="GAMEDEMIC" userid="3831029" postdate="2026-05-18T15:41:10-05:00" />
+						<video id="608337" title="Skyrise, les règles en 8 minutes" category="instructional" language="French" link="http://www.youtube.com/watch?v=IUVJhLV-5YI" username="Vidberg" userid="575020" postdate="2026-04-20T08:56:13-05:00" />
+						<video id="607629" title="SKYRISE - Brettspiel - Unboxing" category="unboxing" language="German" link="http://www.youtube.com/watch?v=mFMEtCmipZc" username="Geekpunkt" userid="3167273" postdate="2026-04-16T01:29:42-05:00" />
+						<video id="601523" title="Hoy jugamos a… Skyrise | Partida al juego de Reiner Knizia" category="session" language="Spanish" link="http://www.youtube.com/watch?v=RMFKHIb3eSk" username="Aventourateclub" userid="4176668" postdate="2026-03-09T08:13:18-05:00" />
+						<video id="598836" title="Skyrise - Recenzja i Zasady " category="review" language="Polish" link="http://www.youtube.com/watch?v=QyUa5mBVKiw" username="boardgamestv" userid="480024" postdate="2026-02-19T01:05:05-06:00" />
+						<video id="598749" title="Skyrise, On explique et on joue" category="session" language="French" link="http://www.youtube.com/watch?v=uH9WmdF1JvQ" username="Vidberg" userid="575020" postdate="2026-02-18T10:46:11-06:00" />
+						<video id="597272" title=" Skyrise - raskutijavanje" category="unboxing" language="Croatian" link="http://www.youtube.com/watch?v=WKMUd_SO1HA" username="Gejmeraja" userid="3876365" postdate="2026-02-11T13:58:19-06:00" />
+						<video id="596309" title="Skyrise" category="review" language="English" link="http://www.youtube.com/watch?v=214EkfFUODc" username="Melaniebarr" userid="1626931" postdate="2026-02-06T07:49:14-06:00" />
+						<video id="594953" title="Skyrise | لعبة بناء وسيطرة بآلية مزادات ذكية" category="instructional" language="Arabic" link="http://www.youtube.com/watch?v=l8xyV2LJE8o" username="Deset_Dice" userid="3883700" postdate="2026-01-28T14:59:08-06:00" />
+						<video id="593609" title="CES JEUX QUI MARCHENT MIEUX À TROIS - [CHRONIXX]" category="review" language="French" link="http://www.youtube.com/watch?v=fVPnBGxu7Lc" username="Nixxaras" userid="2095025" postdate="2026-01-21T07:41:24-06:00" />
+						<video id="592168" title="Ludochrono - Skyrise" category="instructional" language="French" link="http://www.youtube.com/watch?v=xcWaqFNzE7E" username="loutre_on_fire" userid="1037076" postdate="2026-01-12T07:31:02-06:00" />
+					</videos>
 
 	
 
@@ -368,20 +384,20 @@ Skyrise is a brand new game inspired by Sebastien Pauchon's 2008 Spiel Des Jahre
    		<statistics page="1">
 								<ratings>
 			<usersrated value="4071" />
-			<average value="7.66281" />
-			<bayesaverage value="6.82797" />
+			<average value="7.66269" />
+			<bayesaverage value="6.82788" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="730" bayesaverage="6.82797" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="412" bayesaverage="6.97922" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="730" bayesaverage="6.82788" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="412" bayesaverage="6.97913" />
 												</ranks>
 
-			<stddev value="1.22209" />
+			<stddev value="1.22208" />
 			<median value="0" />
-			<owned value="7450" />
+			<owned value="7462" />
 			<trading value="112" />
-			<wanting value="368" />
-			<wishing value="2761" />
+			<wanting value="369" />
+			<wishing value="2764" />
 			<numcomments value="909" />
 			<numweights value="97" />
 			<averageweight value="2.2474" />

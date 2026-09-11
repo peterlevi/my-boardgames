@@ -1,34 +1,39 @@
 {
  "confidence": "high",
- "summary": "Players collect colored train cards and claim routes across a map of Europe, trying to complete ticket contracts connecting distant cities while blocking opponents on contested routes. The tunnel, ferry, and station mechanics add a bit more texture than the original US version, and the tight, often congested map creates real tension in the endgame.",
+ "summary": "Ticket to Ride: Europe is the accessible train-route family game where players collect colored cards to claim routes across a map, fulfilling secret destination tickets for points, spiced up with tunnels and ferries that add small extra costs and risk. It teaches in minutes and plays quickly, making it a reliable gateway game for mixed groups.",
  "praised": [
-  "Easy to teach, plays in under an hour",
-  "Tunnels, ferries, and stations add welcome variety over the original game",
-  "Satisfying push-your-luck tension in deciding when to commit to routes",
-  "Good gateway game that scales well from casual to competitive groups"
+  "extremely easy to teach and quick to play",
+  "satisfying tactile moment of claiming a route",
+  "tunnels and stations add welcome variety over the original map"
  ],
  "criticised": [
-  "Luck of the ticket draw can swing outcomes significantly",
-  "Limited player interaction beyond route blocking",
-  "Can feel a bit solitaire-ish until the map gets contested",
-  "Little strategic depth for heavier gamers after repeated plays"
+  "luck of the ticket and card draws can swing outcomes",
+  "interaction is mostly indirect, limited to route blocking",
+  "little room for comeback once behind late game"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial over shared routes"
+  "kind": "route blocking, otherwise parallel set collection",
+  "detail": "Players share a single map of routes, so claiming a route you need before an opponent can is the main point of contact, but each player's hand of cards and completed tickets are private and otherwise played in parallel."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Points come from route length, completed (or failed) ticket contracts, and a longest-route bonus, but ticket completion dominates the outcome"
+  "why": "Points come from route length, completed (or failed) destination tickets, and a longest-route bonus, so the winner balances efficient route claims with well-chosen tickets.",
+  "how_you_win": "You win by claiming a network of routes that completes your secret tickets while denying opponents key connections."
  },
  "similar": [
-  "Ticket to Ride (original US map)",
+  "Ticket to Ride",
   "Ticket to Ride: Nordic Countries",
-  "Camel Up",
-  "Elfenland",
-  "Steam"
+  "Steam",
+  "Northern Pacific",
+  "Union Pacific"
  ],
- "_fingerprint": "e3fe06c2ce3d800d",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames",
+  "Before You Play"
+ ],
+ "_fingerprint": "dd416365a5d413ea",
  "_name": "Ticket to Ride: Europe"
 }

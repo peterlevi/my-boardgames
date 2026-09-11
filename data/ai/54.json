@@ -1,35 +1,41 @@
 {
  "confidence": "high",
- "summary": "Tikal is a tense action-point puzzle where every turn's ten action points must be split between moving explorers, uncovering jungle tiles, and excavating temples, with the ever-present threat that opponents will jump onto a temple you've invested in and steal the majority. The scoring-at-two-checkpoints structure and the choice of how much of the new tile to reveal creates constant tactical tension over a fairly dry, cerebral hour and a half.",
+ "summary": "Tikal is a tense area-control game where two explorers per player creep across a modular jungle board, uncovering temples and treasures whose value only becomes clear as the map grows. Every turn is a tight budget of ten action points spent choosing between exploring further, digging temples deeper, or grabbing/holding treasures, and the two mid-game scoring rounds create real anxiety about who's controlling what right now.",
  "praised": [
-  "Clever action-point allowance system that forces hard tactical choices each turn",
-  "Modular tile-laying creates a different jungle layout and strong replayability each game",
-  "Tense area-majority fights over temples, especially the volcano/treasure and 'kill steal' potential",
-  "Elegant, tightly interlocking mechanisms for a late-90s design"
+  "clever tile-laying that builds a different map every game",
+  "meaningful tension in the action-point budgeting each turn",
+  "the 'kill steal' treasure mechanic creates genuine table talk and betrayal moments",
+  "tight 90-minute runtime for the depth on offer"
  ],
  "criticised": [
-  "Can feel dry, fiddly, and abstract despite the jungle-exploration theme",
-  "Bookkeeping (tracking worker positions, temple levels, treasures) can bog down turns",
-  "Analysis paralysis potential given how many small options each action point offers",
-  "Two-player games can feel less dynamic than 3-4 player games",
-  "Rulebook/scoring rounds are considered fussy to teach"
+  "fiddly bookkeeping with treasures, camps, and temple levels",
+  "can feel swingy if the volcano/scoring tiles land badly for one player",
+  "downtime between turns in 4-player games",
+  "rulebook and iconography are notoriously unclear for a first play"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "area majority and blocking, with occasional direct 'kill steal' confrontation over temples and treasures"
+  "level": "High",
+  "kind": "area majority and treasure stealing",
+  "detail": "Players contest the same temples for majority control at two scored 'volcano' events, and can steal treasures directly from an opponent's holdings via the market action, so much of the shared board state is directly fought over rather than built in isolation. Movement and tile placement also block or open routes for other players' explorers."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Victory comes almost entirely from majority control of temple levels at the two scoring checkpoints, with treasure sets acting as a secondary tiebreak/multiplier."
+  "breadth": "Some",
+  "why": "Points come from temple majority at two scoring rounds plus sets of treasures, so a player needs to time both to win.",
+  "how_you_win": "You win by controlling the most valuable temples when scoring triggers and by collecting well-matched sets of treasures to cash in."
  },
  "similar": [
   "Java",
   "Mexica",
   "Torres",
-  "El Grande",
-  "Amun-Re"
+  "Amun-Re",
+  "El Grande"
  ],
- "_fingerprint": "07c76606c010482f",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "ab9863ae70b79f9d",
  "_name": "Tikal"
 }

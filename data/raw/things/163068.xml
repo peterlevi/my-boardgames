@@ -488,7 +488,23 @@ The "Dark Alley" expansion included in the base game adds a new location to the 
 			
 
 			
-	
+			<videos total="127">
+						<video id="628991" title="Trickerion" category="review" language="English" link="http://www.youtube.com/watch?v=jXUiOUNXgRI" username="Melaniebarr" userid="1626931" postdate="2026-09-08T19:04:39-05:00" />
+						<video id="618426" title="Warum du Trickerion spielen musst!" category="review" language="German" link="http://www.youtube.com/watch?v=XAwxuEn1frY" username="BoardgameBenjamino" userid="1618849" postdate="2026-07-01T15:45:29-05:00" />
+						<video id="615839" title="Re-boxing Trickerion with Expansions" category="other" language="English" link="http://www.youtube.com/watch?v=-mYGbZJrpVk" username="ultimatejarhead" userid="454436" postdate="2026-06-12T17:52:41-05:00" />
+						<video id="609805" title="Trickerion Rules Refresher: Dark Alley" category="instructional" language="English" link="http://www.youtube.com/watch?v=LiTyJoqLAvc" username="Astrotron" userid="3333239" postdate="2026-04-30T12:27:10-05:00" />
+						<video id="607109" title="Trickerion w/Arcane Arts expansion - 3p Play-through &amp; Roundtable Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=qABja_phu3o" username="eapeas" userid="377742" postdate="2026-04-13T19:03:54-05:00" />
+						<video id="606992" title=" Застримимся! Играем в &quot;Трикерион&quot; с дополнением &quot;Академия Далгарда&quot; (2019)" category="session" language="Russian" link="http://www.youtube.com/watch?v=TArtJ3Aav3w" username="BladeItSelf" userid="775775" postdate="2026-04-13T02:50:19-05:00" />
+						<video id="604865" title="? Trickerion &amp; alle Erweiterungen ? –  Was du wirklich brauchst!" category="review" language="German" link="http://www.youtube.com/watch?v=E1q_FG56aSM" username="Denagogen" userid="1187454" postdate="2026-03-30T03:48:07-05:00" />
+						<video id="602472" title=" Trickerion w/Dalgard's Academy - 3p Play-through &amp; Roundtable Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=Kh_WtIY1FfA" username="eapeas" userid="377742" postdate="2026-03-14T09:10:00-05:00" />
+						<video id="595460" title="TRICKERION - BdB - SOLO FINAL et conclusion" category="session" language="French" link="http://www.youtube.com/watch?v=oYEIbYe8kC0" username="sheridan8" userid="2316761" postdate="2026-01-31T15:18:01-06:00" />
+						<video id="594679" title="TRICKERION - Boite de Base - SOLO - SESSION II" category="session" language="French" link="http://www.youtube.com/watch?v=nv373pKapc8" username="sheridan8" userid="2316761" postdate="2026-01-27T00:02:21-06:00" />
+						<video id="594254" title="TRICKERION - Boite de Base - SOLO SESSION I" category="session" language="French" link="http://www.youtube.com/watch?v=-0iWXTcQeos" username="sheridan8" userid="2316761" postdate="2026-01-25T00:15:04-06:00" />
+						<video id="592414" title="TRICKERION: Magia de verdade acontece aqui..." category="session" language="Portuguese" link="http://www.youtube.com/watch?v=MHPuulRa-5c" username="lfigaro" userid="3046229" postdate="2026-01-13T10:22:50-06:00" />
+						<video id="590490" title="S3E16 - Trickerion" category="session" language="English" link="http://www.youtube.com/watch?v=qdv8jff3PBE" username="Bellissimo" userid="1721069" postdate="2026-01-01T17:57:12-06:00" />
+						<video id="590180" title="Trickerion (Revisited) - 3p Play-through &amp; Roundtable Discussion by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=VXPu-AGrU8s" username="eapeas" userid="377742" postdate="2025-12-29T23:17:39-06:00" />
+						<video id="580703" title="Szybka Wrzutka - Trickerion Legends of Illusion" category="review" language="Polish" link="http://www.youtube.com/watch?v=qJFz1aQKe5M" username="SMGP Kosci" userid="1684808" postdate="2025-11-03T08:40:08-06:00" />
+					</videos>
 
 	
 
@@ -497,22 +513,22 @@ The "Dark Alley" expansion included in the base game adds a new location to the 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="12873" />
-			<average value="7.96539" />
-			<bayesaverage value="7.53629" />
+			<usersrated value="12877" />
+			<average value="7.96564" />
+			<bayesaverage value="7.53663" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="124" bayesaverage="7.53629" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="80" bayesaverage="7.62189" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="124" bayesaverage="7.53663" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="80" bayesaverage="7.62223" />
 												</ranks>
 
-			<stddev value="1.43774" />
+			<stddev value="1.43766" />
 			<median value="0" />
-			<owned value="17891" />
+			<owned value="17896" />
 			<trading value="275" />
-			<wanting value="590" />
+			<wanting value="589" />
 			<wishing value="4489" />
-			<numcomments value="2102" />
+			<numcomments value="2100" />
 			<numweights value="818" />
 			<averageweight value="4.2665" />
 			</ratings>

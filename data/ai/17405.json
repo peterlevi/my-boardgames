@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "1846 is a lean, fast-playing 18xx that puts heavy pressure on route optimization and timing your train purchases before obsolescence wrecks a corporation; games run 2-4 hours rather than the 6+ of heavier 18xx titles. It's a cutthroat blend of stock manipulation and operational efficiency where dumping a corporation on other shareholders at the right moment is as important as good track building.",
+ "summary": "1846 is a leaner, more elegant 18xx game set in the Midwest, prized for tightening up 1830's formula into a shorter, sharper package with a distinctive private-company auction and a build to Chicago that everyone fights over. It's still a stock-and-operate game where share manipulation and route efficiency both matter enormously.",
  "praised": [
-  "Excellent introductory 18xx due to shorter length and cleaner rules",
-  "Tight, well-tuned economy with meaningful decisions every turn",
-  "Private company draft adds interesting asymmetric variety without a long auction",
-  "Scales well across player counts"
+  "cleaner, more streamlined design than 1830",
+  "exciting fight for the Chicago hexes and key connections",
+  "strong balance between stock trading and train operations",
+  "widely considered one of the best entry points into serious 18xx"
  ],
  "criticised": [
-  "Still has significant downtime during other players' operating rounds",
-  "Multitasking as president of multiple corporations can be fiddly",
-  "Stock round dumping mechanics can feel mean and kingmaker-ish to newer players",
-  "Less depth/complexity than heavier 18xx titles for veteran fans"
+  "still a long, demanding game for newcomers",
+  "requires understanding stock-market subtleties to compete",
+  "less replay variety than modular 18xx titles",
+  "can be swingy if a player misplays private company auctions"
  ],
  "interaction": {
   "level": "High",
-  "kind": "stock manipulation, presidencies, and route competition"
+  "kind": "stock manipulation and route competition",
+  "detail": "Players hold shares in the same corporations and can force presidency changes or dump stock to hurt rivals, while operating rounds see everyone competing for the same limited track connections and revenue-generating routes on a shared map."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is determined by total net worth (cash plus stock value plus private companies), driven by efficient train running and stock market timing"
+  "why": "final net worth (cash plus share value) at game end determines the winner",
+  "how_you_win": "you win by running efficient, well-connected train routes through corporations you control and by trading shares to maximize personal wealth rather than any single company's success"
  },
  "similar": [
-  "1830",
-  "1889: History of Japan",
-  "1817",
+  "1830: Railways & Robber Barons",
   "18Chesapeake",
-  "Age of Steam"
+  "Age of Steam",
+  "Brass: Birmingham",
+  "1817"
  ],
- "_fingerprint": "8301ae421ab7ce1b",
+ "teachers": [
+  "Heavy Cardboard",
+  "Watch It Played",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "eac36478cf9d5ede",
  "_name": "1846: The Race for the Midwest"
 }

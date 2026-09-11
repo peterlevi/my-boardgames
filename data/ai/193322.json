@@ -1,33 +1,39 @@
 {
  "confidence": "medium",
- "summary": "A licensed card game riff on the classic 4X video game, where players expand an empire, tech up, and clash militarily using action-point card play. It plays as a fairly light, quick skirmish game rather than a deep space-empire simulation.",
+ "summary": "A fast card-driven 4X game that compresses galactic conquest into 40-60 minutes, with players juggling a hand of dual-purpose cards for economy, research, and combat. It's more of a lean, snappy skirmish game than a deep 4X simulation, and it lives or dies on how much table talk and take-that aggression your group enjoys.",
  "praised": [
-  "quick, accessible take on a beloved video game IP",
-  "asymmetric race powers give some replay variety",
-  "decent production and card art"
+  "quick playtime for a space 4X theme",
+  "asymmetric alien races with distinct powers",
+  "cards that can be used multiple ways adds tension"
  ],
  "criticised": [
-  "doesn't capture the depth or scale fans expected from the video game",
-  "take-that attacks can feel random and frustrating",
-  "combat swinginess can overshadow strategic planning",
-  "seen as a fairly generic 4X-lite card game"
+  "swingy combat and card luck",
+  "can feel thin compared to deeper 4X games",
+  "take-that attacks can be punishing to a leading or unlucky player"
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct military take-that and espionage"
+  "kind": "open conflict and take-that attacks",
+  "detail": "Players directly attack each other's planets and fleets and can target opponents with disruptive cards, so a large share of the game state (galaxy map, planet ownership) is shared and contested rather than private."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Broad",
-  "why": "victory points come from a mix of territory, technology, and military conquest"
+  "breadth": "Some",
+  "why": "Victory usually comes from accumulating the most planets/influence or eliminating rivals rather than a points salad",
+  "how_you_win": "You expand your empire's planets and military strength faster than opponents, often finishing them off or simply controlling more territory when the game ends."
  },
  "similar": [
-  "Eminent Domain",
   "Cosmic Encounter",
-  "Race for the Galaxy",
+  "Eclipse",
+  "Twilight Imperium",
   "Small World",
-  "Nova Luna"
+  "Nexus Ops"
  ],
- "_fingerprint": "ad8cf83739308823",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "a76fae6fd2fd614f",
  "_name": "Master of Orion: The Board Game"
 }

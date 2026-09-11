@@ -416,7 +416,23 @@ Imperial Steam is a highly strategic yet accessible economic and logistics game 
 			
 
 			
-	
+			<videos total="52">
+						<video id="593906" title="Imperial Steam - Unboxing &amp; Reboxing - What's on the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=2JxFYZZTxLw" username="broseygames" userid="4181268" postdate="2026-01-22T21:30:31-06:00" />
+						<video id="468921" title="Imperial Steam – Brettspiel – Review und Regelerklärung" category="review" language="German" link="http://www.youtube.com/watch?v=W58LnIrLt6o" username="Tinnek" userid="685688" postdate="2023-12-01T03:17:56-06:00" />
+						<video id="451661" title="Repaso &quot;Rápido&quot; de Reglas" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=UEJ9k0WToVE" username="Rododendro" userid="366905" postdate="2023-08-14T05:46:10-05:00" />
+						<video id="449024" title="UNBOXING IMPERIAL STEAM - #indabox" category="unboxing" language="English" link="http://www.youtube.com/watch?v=gbi7fYRfdfI" username="stocaylus" userid="2442273" postdate="2023-07-29T21:44:23-05:00" />
+						<video id="425059" title="Recensione Imperial Steam - COMPLESSO, PUNITIVO e STRETTO... Lo ADORO!!!" category="review" language="Italian" link="http://www.youtube.com/watch?v=aSxCzA7dMvg" username="vincyus" userid="887654" postdate="2023-02-24T03:08:48-06:00" />
+						<video id="424512" title="The Game Gallery Review -  Imperial Steam" category="review" language="Japanese" link="http://www.youtube.com/watch?v=9YJIEwCjl40" username="hal99" userid="27784" postdate="2023-02-20T19:30:58-06:00" />
+						<video id="422355" title="IMPERIAL STEAM - Gameplay" category="session" language="Italian" link="http://www.youtube.com/watch?v=oMCPKr_MekM" username="The Real Oivalf" userid="1084307" postdate="2023-02-07T08:43:38-06:00" />
+						<video id="422354" title="IMPERIAL STEAM - Tutorial" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=oEmZNrxyVrE" username="The Real Oivalf" userid="1084307" postdate="2023-02-07T08:43:03-06:00" />
+						<video id="422353" title="IMPERIAL STEAM - Il Mio Parere" category="review" language="Italian" link="http://www.youtube.com/watch?v=jyj_V-nNE7U" username="The Real Oivalf" userid="1084307" postdate="2023-02-07T08:42:15-06:00" />
+						<video id="419042" title="Знакомство с игровыми компонентами" category="unboxing" language="Russian" link="http://www.youtube.com/watch?v=Hj9VmSHBmHM" username="snowbody" userid="201253" postdate="2023-01-18T23:59:23-06:00" />
+						<video id="415553" title="Imperial Steam: tutorial e análise" category="review" language="Portuguese" link="http://www.youtube.com/watch?v=edI7SgnSsp8" username="Micaelsousa" userid="790334" postdate="2022-12-27T08:36:00-06:00" />
+						<video id="412964" title="IMPERIAL STEAM el juego de mesa que combina BRASS y BARRAGE | RESEÑA" category="review" language="Spanish" link="http://www.youtube.com/watch?v=grc_Fmj84Lw" username="dantitan1981" userid="2595875" postdate="2022-12-07T13:01:41-06:00" />
+						<video id="411419" title="Unboxing di Imperial Steam" category="unboxing" language="Italian" link="http://www.youtube.com/watch?v=dO_GcM6_Afc" username="SuperRiccio" userid="2041863" postdate="2022-11-28T04:31:13-06:00" />
+						<video id="409954" title="Règles du jeu, avec Pénélope" category="instructional" language="French" link="http://www.youtube.com/watch?v=p_Y9SkIpn7M" username="servalwolverine" userid="1976235" postdate="2022-11-18T09:39:35-06:00" />
+						<video id="402485" title="Imperial Steam Tutorial" category="instructional" language="Italian" link="http://www.youtube.com/watch?v=Pzsw_xx3FDQ" username="enavico" userid="1483512" postdate="2022-10-04T06:47:54-05:00" />
+					</videos>
 
 	
 
@@ -425,22 +441,22 @@ Imperial Steam is a highly strategic yet accessible economic and logistics game 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="2750" />
-			<average value="7.7214" />
-			<bayesaverage value="6.67985" />
+			<usersrated value="2752" />
+			<average value="7.72142" />
+			<bayesaverage value="6.68028" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="951" bayesaverage="6.67985" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="498" bayesaverage="6.87962" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="951" bayesaverage="6.68028" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="498" bayesaverage="6.88004" />
 												</ranks>
 
-			<stddev value="1.40645" />
+			<stddev value="1.40577" />
 			<median value="0" />
-			<owned value="5475" />
-			<trading value="171" />
-			<wanting value="131" />
-			<wishing value="1133" />
-			<numcomments value="540" />
+			<owned value="5474" />
+			<trading value="172" />
+			<wanting value="133" />
+			<wishing value="1137" />
+			<numcomments value="542" />
 			<numweights value="200" />
 			<averageweight value="4.215" />
 			</ratings>

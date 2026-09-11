@@ -888,7 +888,23 @@ You use the Ships and Bases you acquire to either generate more Trade, or to gen
 			
 
 			
-	
+			<videos total="66">
+						<video id="619694" title="Star Realms Frontiers Solo Playthrough vs Blob Assault" category="session" language="English" link="http://www.youtube.com/watch?v=-7rt8RfJNRY" username="GettinJiggly" userid="2809280" postdate="2026-07-09T10:59:04-05:00" />
+						<video id="613403" title="Star realms frontiers en solitario explicado en unos 8 minutos " category="review" language="Spanish" link="http://www.youtube.com/watch?v=5WkStk2oRD8" username="rdockend" userid="1870054" postdate="2026-05-26T17:50:38-05:00" />
+						<video id="587326" title="Star Realms Solo vs Blob Assault Episode 2 Finale" category="session" language="English" link="http://www.youtube.com/watch?v=mq8X6CRSXTY" username="PaulDarcy" userid="65714" postdate="2025-12-11T04:32:38-06:00" />
+						<video id="587145" title="Star Realms Solo vs Blob Assault Episode 1" category="session" language="English" link="http://www.youtube.com/watch?v=Oyhwz2WAT6E" username="PaulDarcy" userid="65714" postdate="2025-12-10T04:06:44-06:00" />
+						<video id="568512" title="STAR REALMS: Dimensional Horror - A Cosmic Solo Card Game Adventure" category="session" language="English" link="http://www.youtube.com/watch?v=gbRUR_-DMEw" username="Soloroll" userid="3634740" postdate="2025-08-24T14:01:17-05:00" />
+						<video id="566495" title="? Star Realms en Solitario | Duelo Épico contra los Autómatas" category="session" language="Spanish" link="http://www.youtube.com/watch?v=iL8d9YJPXIo" username="Meffy" userid="1399213" postdate="2025-08-11T06:38:42-05:00" />
+						<video id="565425" title="Star Realms Frontiers - Automatons - Solo Let's Play Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=zg2xS_5kW3o" username="Soloroll" userid="3634740" postdate="2025-08-02T14:56:19-05:00" />
+						<video id="528270" title="Star Realms Frontiers - Partida en Solitario contra El Precio de la Libertad" category="session" language="Spanish" link="http://www.youtube.com/watch?v=5oVywl_T8uE" username="NumesKalUn" userid="1216435" postdate="2024-12-11T02:17:35-06:00" />
+						<video id="528269" title="Star Realms Frontiers - Partida en Solitario contra Desafío al Imperio" category="session" language="Spanish" link="http://www.youtube.com/watch?v=J_sAML6rImQ" username="NumesKalUn" userid="1216435" postdate="2024-12-11T02:15:07-06:00" />
+						<video id="528257" title="Star Realms Frontiers - Partida en Solitario contra Piratas de la Estrella Oscura" category="session" language="Spanish" link="http://www.youtube.com/watch?v=usFlHuMNWYA" username="NumesKalUn" userid="1216435" postdate="2024-12-10T18:34:43-06:00" />
+						<video id="528084" title="Star Realms Frontiers - Partida en Solitario contra Bestia Némesis" category="session" language="Spanish" link="http://www.youtube.com/watch?v=irmNHLlU0Io" username="NumesKalUn" userid="1216435" postdate="2024-12-09T13:03:46-06:00" />
+						<video id="528082" title="Star Realms Frontiers - Partida en Solitario contra La Locura de la Maquina" category="session" language="Spanish" link="http://www.youtube.com/watch?v=LprDxxMQL_o" username="NumesKalUn" userid="1216435" postdate="2024-12-09T13:01:50-06:00" />
+						<video id="526567" title="Star Realms - Partida en Solitario contra Horror Dimensional" category="session" language="Spanish" link="http://www.youtube.com/watch?v=RXjjvXlv0q8" username="NumesKalUn" userid="1216435" postdate="2024-11-28T11:41:59-06:00" />
+						<video id="526356" title="Star Realms Frontiers - Partida en Solitario contra Asalto Blob" category="session" language="Spanish" link="http://www.youtube.com/watch?v=ssWkoBs6vNE" username="NumesKalUn" userid="1216435" postdate="2024-11-27T11:21:43-06:00" />
+						<video id="526355" title="Star Realms Frontiers - Partida en Solitario contra Autómatas" category="session" language="Spanish" link="http://www.youtube.com/watch?v=opL6gOBYDJk" username="NumesKalUn" userid="1216435" postdate="2024-11-27T11:20:29-06:00" />
+					</videos>
 
 	
 
@@ -897,22 +913,22 @@ You use the Ships and Bases you acquire to either generate more Trade, or to gen
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="6385" />
-			<average value="7.90406" />
-			<bayesaverage value="7.18602" />
+			<usersrated value="6388" />
+			<average value="7.90374" />
+			<bayesaverage value="7.18585" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="318" bayesaverage="7.18602" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="211" bayesaverage="7.27476" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="318" bayesaverage="7.18585" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="211" bayesaverage="7.27454" />
 												</ranks>
 
-			<stddev value="1.22211" />
+			<stddev value="1.22189" />
 			<median value="0" />
-			<owned value="16144" />
+			<owned value="16151" />
 			<trading value="171" />
 			<wanting value="125" />
 			<wishing value="1303" />
-			<numcomments value="1134" />
+			<numcomments value="1135" />
 			<numweights value="152" />
 			<averageweight value="1.875" />
 			</ratings>

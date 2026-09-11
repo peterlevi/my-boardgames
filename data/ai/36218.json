@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Each player starts with a weak identical deck and spends turns buying better cards from a shared central market, gradually deleting Copper and Estates while building an efficient engine of Actions and Treasures. Games are short, replayable due to variable kingdom setup, and reward optimizing your deck's engine over reacting to opponents.",
+ "summary": "Dominion is the original deckbuilder, where players start with a weak deck and use turns to buy better cards from a shared, rotating market to build an efficient engine before triggering the endgame. It plays fast and gives every session a distinct puzzle because the ten available Kingdom cards change each time.",
  "praised": [
-  "High replayability from randomized kingdom card combinations each game",
-  "Elegant, easy-to-teach core rules with deep strategic possibility space",
-  "Satisfying deck-building puzzle and engine optimization",
-  "Fast turns and short overall playtime"
+  "Endlessly replayable due to card combinations",
+  "Fast setup and clean, teachable rules",
+  "Elegant, tight design with no wasted rules",
+  "Genre-defining and hugely influential"
  ],
  "criticised": [
-  "Low direct player interaction in the base game (mostly parallel solitaire-ish play)",
-  "Some kingdom card combinations can feel imbalanced or degenerate",
-  "Card text requires frequent rules lookups/reference for newer players",
-  "Can feel repetitive or 'samey' without expansions"
+  "Little direct player interaction in many card sets",
+  "Can suffer analysis paralysis in the buy phase",
+  "Base set feels dated/thin compared to later expansions",
+  "Solvability of optimal strategies in some card combos"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play, with occasional Attack cards for indirect take-that"
+  "kind": "shared market competition, mostly parallel play",
+  "detail": "Players compete for limited copies of cards from a shared central supply and can be affected by Attack cards, but each player otherwise builds and plays their own deck independently. The market is the main shared resource; the rest of the game state is private to each player's deck."
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever accumulates the most Victory Points, primarily from Estates/Duchies/Provinces and any Victory cards enabled by the kingdom setup, at game end."
+  "why": "Victory points come almost entirely from Victory cards bought and stuffed into your deck, so efficient deck-thinning and timing of VP purchases decides the winner",
+  "how_you_win": "Build an efficient engine of action/treasure cards to buy Victory cards faster and more efficiently than opponents before the Province pile (or three piles) empties."
  },
  "similar": [
   "Dominion: Intrigue",
   "Star Realms",
   "Clank!",
   "Puerto Rico",
-  "Concordia"
+  "Ascension"
  ],
- "_fingerprint": "3119672380cdc873",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "The Dice Tower"
+ ],
+ "_fingerprint": "b6056546a1552b5d",
  "_name": "Dominion"
 }

@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Lisboa is a dense, puzzly Lacerda design where every action ripples across half a dozen interlocking systems — building tiles, ships, wigs, factories, and disaster markers all pull on the same few resources. Turns are quiet and heads-down as players optimize multi-use cards and timing rather than clash directly, with the game rewarding a long-term engine plan over reactive play.",
+ "summary": "Lisboa is a dense, interlocking Vital Lacerda euro about rebuilding earthquake-ravaged Lisbon, where multi-use cards let you take one of several actions and every building you place has ripple effects across your personal board and the shared city map. It rewards careful long-term planning and engine-building far more than reactive play, and it has a reputation as one of the heaviest, most demanding games in the genre.",
  "praised": [
-  "Tight, elegant interlocking of systems for how much is going on",
-  "Multi-use cards create constant meaningful trade-offs",
-  "Strong solo mode",
-  "Thematic tie to the Lisbon earthquake reconstruction is well integrated into mechanisms",
-  "High replayability from variable card draws and multiple viable strategies"
+  "extremely rich, tightly interlocking systems",
+  "strong sense of building a coherent long-term plan",
+  "beautiful, historically grounded theme integration",
+  "excellent solo mode"
  ],
  "criticised": [
-  "Steep learning curve and dense rulebook/iconography",
-  "Analysis paralysis, especially with 4 players",
-  "Low direct interaction can make it feel like solitaire at the same table",
-  "Very unforgiving of early mistakes",
-  "Production/component overhead (small tiles, many trackers) can feel fiddly"
+  "brutal learning curve and rules overhead",
+  "significant downtime in multiplayer",
+  "can feel punishing if you fall behind early",
+  "not accessible to casual or new gamers"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel play with some indirect competition over tile placement and card availability"
+  "level": "Medium",
+  "kind": "shared map competition with mostly parallel engines",
+  "detail": "Players compete for limited building plots and church/reconstruction tiles on a shared city map, and taking a market action can shift prices for everyone, but most of the depth comes from optimizing your own personal player board and card engine rather than direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from building placement, factories, ships, wigs, and end-game bonuses, so the winner is whoever best converts an efficient engine into the most scoring avenues"
+  "why": "Points come from building placement, factory production chains, ships, nobility tracks, and end-game bonuses, so the winner is whoever built the most efficient overall engine.",
+  "how_you_win": "You win by chaining production and construction actions into an efficient long-term engine that scores across many categories by game end."
  },
  "similar": [
-  "The Gallerist",
-  "Vinhos Deluxe Edition",
+  "Vinhos",
   "On Mars",
-  "Anachrony",
-  "Barrage"
+  "Great Western Trail",
+  "The Gallerist",
+  "Brass: Birmingham"
  ],
- "_fingerprint": "1373dfaf44f040eb",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "No Pun Included"
+ ],
+ "_fingerprint": "906d59bfae83e8bd",
  "_name": "Lisboa"
 }

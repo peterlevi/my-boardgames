@@ -1,36 +1,39 @@
 {
- "confidence": "high",
- "summary": "Kanban EV is a dense, interlocking worker-placement/action-point game where you juggle multiple resource chains (car components, R&D, JIT contracts) across a tight board with heavy multi-use action spaces; turns are short but decisions are agonizing because every action interacts with several systems at once. It rewards efficient engine-building and planning several moves ahead more than direct confrontation with opponents.",
+ "confidence": "medium",
+ "summary": "Kanban EV is a heavy Vital Lacerda worker-placement game about running an electric vehicle assembly line, juggling interlocking production stages, R&D, and logistics under constant time pressure. It's dense with interconnected subsystems and rewards careful sequencing across long sessions rather than quick, casual plays.",
  "praised": [
-  "Tight, elegant interlocking systems where every action affects multiple resources",
-  "Strong solo mode",
-  "Streamlined and more approachable than the original Kanban: Automotive Revolution while keeping its depth",
-  "Satisfying puzzle of optimizing just-in-time production and R&D upgrades",
-  "High replayability due to multiple viable strategies"
+  "deeply interlocking systems that feel like genuinely managing a factory",
+  "strong payoff when the engine clicks together",
+  "gorgeous and highly functional production"
  ],
  "criticised": [
-  "Steep learning curve and lengthy rules overhead for a new group",
-  "Can trigger significant analysis paralysis",
-  "Feels iterative rather than groundbreaking to players who already own the original Kanban",
-  "Dry, spreadsheet-like theme integration despite the EV dressing",
-  "Long teach and setup time relative to actual play tension"
+  "steep learning curve and heavy rules overhead",
+  "significant table presence and long playtime",
+  "theme feels more like a skin over the mechanisms to some players"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial on worker placement spaces, indirect competition for shared resources/contracts"
+  "kind": "worker placement over shared action spaces",
+  "detail": "Players compete for the same limited production and R&D action spaces and can block each other from key spots or race for track bonuses, while each maintains their own assembly line and resources on a personal board."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from multiple independent systems (contracts fulfilled, R&D/technology tracks, department efficiency, end-game bonuses), so the winner is usually whoever balances several engines rather than maxing one."
+  "why": "Points accrue from efficient production, completed vehicle orders, R&D advancement, and track bonuses.",
+  "how_you_win": "Optimize your production line and complete more valuable orders and objectives than your opponents before the game ends."
  },
  "similar": [
   "Kanban: Automotive Revolution",
   "On Mars",
   "Gaia Project",
-  "CO2: First Contact",
-  "Anachrony"
+  "Barrage",
+  "Lisboa"
  ],
- "_fingerprint": "a6374932ead415f7",
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "No Pun Included"
+ ],
+ "_fingerprint": "32925b76520af946",
  "_name": "Kanban EV"
 }

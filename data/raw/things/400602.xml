@@ -370,7 +370,23 @@ A webapp implementation of the V.I.C.I solo automa is available (requires a phys
 			
 
 			
-	
+			<videos total="125">
+						<video id="622135" title="Purple Moose Plays...Civolution (solo) - sponsored by Noble Knight Games" category="review" language="English" link="http://www.youtube.com/watch?v=vXrJSQANE7Q" username="PurpleMoosePlays" userid="1189971" postdate="2026-07-24T22:17:27-05:00" />
+						<video id="618940" title="Civolution + Extension : Mode solo Ép. 4 FINALE [FR]" category="session" language="English" link="http://www.youtube.com/watch?v=RVpXQ7Tz3BE" username="LesRoisDeTrefle" userid="2041496" postdate="2026-07-05T12:13:16-05:00" />
+						<video id="618744" title="Civolution + Extension : Mode solo Ép. 3 [FR]" category="session" language="French" link="http://www.youtube.com/watch?v=ogLK_cLBVuU" username="LesRoisDeTrefle" userid="2041496" postdate="2026-07-03T15:07:17-05:00" />
+						<video id="618525" title="Civolution - Playthrough &amp; Review" category="review" language="English" link="http://www.youtube.com/watch?v=9o0NyJfzW2A" username="PaulGrogan" userid="1685" postdate="2026-07-02T08:04:24-05:00" />
+						<video id="618349" title="Civolution + Extension : Mode solo Ép. 2 [FR]" category="session" language="French" link="http://www.youtube.com/watch?v=mZsXYNf7b2s" username="LesRoisDeTrefle" userid="2041496" postdate="2026-07-01T10:04:01-05:00" />
+						<video id="618114" title="Civolution + Extension : Mode solo Ép. 1 [FR]" category="session" language="French" link="http://www.youtube.com/watch?v=ltD3lBBF2Ps" username="LesRoisDeTrefle" userid="2041496" postdate="2026-06-29T15:21:18-05:00" />
+						<video id="617859" title="Civolution + Extension : Mode solo Ép. 0 [FR]" category="session" language="French" link="http://www.youtube.com/watch?v=JgZmTAkEXd4" username="LesRoisDeTrefle" userid="2041496" postdate="2026-06-27T09:54:34-05:00" />
+						<video id="617704" title="Unboxing: Civolución" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=3efs6WE0WMc" username="StarGamers" userid="1907987" postdate="2026-06-26T07:57:46-05:00" />
+						<video id="608159" title="Is This Brain Burner Worth it? Civolution Review!" category="review" language="English" link="http://www.youtube.com/watch?v=kYUHJJNpKI4" username="timchuon" userid="2389951" postdate="2026-04-19T09:25:59-05:00" />
+						<video id="607066" title="[4K] CIVOLUTION - Solo Playthrough " category="session" language="English" link="http://www.youtube.com/watch?v=TOICK5zFaNM" username="SMGSLT" userid="2247845" postdate="2026-04-13T11:54:41-05:00" />
+						<video id="602462" title="Dice and cards and civilization | Civolution review | One Stop Co-Op Shop" category="review" language="English" link="http://www.youtube.com/watch?v=Yf8iuFgLe-E" username="GameMasterX0" userid="12549" postdate="2026-03-14T07:33:37-05:00" />
+						<video id="602045" title="Solo Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=YTOdHp51EJ8" username="got_koopa" userid="1743848" postdate="2026-03-11T19:32:44-05:00" />
+						<video id="600379" title="BigDenoPlays - Civolution, Acceptance Letter" category="session" language="English" link="http://www.youtube.com/watch?v=W5NN_cyJIPc" username="BigDeno" userid="1669411" postdate="2026-03-01T05:37:31-06:00" />
+						<video id="597045" title="ON JOUE À CIVOLUTION ! Règles + Partie + Avis | Jeu de Société Grail Games" category="session" language="French" link="http://www.youtube.com/watch?v=Bp5m6yf7UxI" username="Nicolas21992" userid="3179281" postdate="2026-02-11T03:16:45-06:00" />
+						<video id="596578" title=" [As d'Or 2026] Civolution - Les règles et la partie" category="session" language="French" link="http://www.youtube.com/watch?v=TqZ1gcvtFq0" username="Aslantr" userid="2180062" postdate="2026-02-08T02:30:42-06:00" />
+					</videos>
 
 	
 
@@ -379,24 +395,24 @@ A webapp implementation of the V.I.C.I solo automa is available (requires a phys
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="6561" />
-			<average value="8.18109" />
-			<bayesaverage value="7.43263" />
+			<usersrated value="6580" />
+			<average value="8.1792" />
+			<bayesaverage value="7.4323" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="160" bayesaverage="7.43263" />
-																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="94" bayesaverage="7.58863" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="160" bayesaverage="7.4323" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="95" bayesaverage="7.58791" />
 												</ranks>
 
-			<stddev value="1.45423" />
+			<stddev value="1.45534" />
 			<median value="0" />
-			<owned value="10994" />
-			<trading value="76" />
-			<wanting value="665" />
-			<wishing value="5025" />
-			<numcomments value="1153" />
-			<numweights value="534" />
-			<averageweight value="4.264" />
+			<owned value="11003" />
+			<trading value="77" />
+			<wanting value="664" />
+			<wishing value="5024" />
+			<numcomments value="1154" />
+			<numweights value="535" />
+			<averageweight value="4.2636" />
 			</ratings>
 								</statistics>
      

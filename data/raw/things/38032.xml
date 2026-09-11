@@ -308,7 +308,20 @@ Following rounds are played the same way until all goods have been auctioned. Pl
 			
 
 			
-	
+			<videos total="12">
+						<video id="439209" title="Byzanz: Run-Through " category="instructional" language="English" link="http://www.youtube.com/watch?v=TY6OYeHVXmE" username="Craig D" userid="1951552" postdate="2023-05-25T12:24:35-05:00" />
+						<video id="438710" title="Byzanz: Overview " category="review" language="English" link="http://www.youtube.com/watch?v=BJ6NWTUWKGk" username="Craig D" userid="1951552" postdate="2023-05-22T11:23:06-05:00" />
+						<video id="219227" title="Conociendo Byzanz - Zacatrus" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=Nh5TqM1m-aA" username="nunovix" userid="1007961" postdate="2019-05-23T03:52:57-05:00" />
+						<video id="177998" title="Drafthouse Select: Byzanz" category="review" language="English" link="http://www.youtube.com/watch?v=I_S1Ai2xX8s" username="DrafthouseGames" userid="1530223" postdate="2018-05-27T13:26:25-05:00" />
+						<video id="174973" title="The Game Boy Geek's Allegro (2-min Review) of Byzanz" category="review" language="English" link="http://www.youtube.com/watch?v=uOB6PHLeCvs" username="dkingnu" userid="32736" postdate="2018-04-30T11:02:25-05:00" />
+						<video id="174890" title="The Game Boy Geek Reviews Byzanz" category="review" language="English" link="http://www.youtube.com/watch?v=C8_h58U2fhA" username="dkingnu" userid="32736" postdate="2018-04-29T22:34:18-05:00" />
+						<video id="169386" title="Learn How to Play Byzanz (Rules School) with the Game Boy Geek" category="instructional" language="English" link="http://www.youtube.com/watch?v=m35G7GKeQ5o" username="dkingnu" userid="32736" postdate="2018-03-10T11:41:49-06:00" />
+						<video id="168994" title="Byzanz - Tantrum House Review" category="review" language="English" link="http://www.youtube.com/watch?v=UdmQ_FEMQHw" username="kdelp" userid="246218" postdate="2018-03-06T15:35:32-06:00" />
+						<video id="131100" title="The Game Gallery Channel - Byzanz Review" category="review" language="Japanese" link="http://www.youtube.com/watch?v=Vrf9d_NEvMw" username="hal99" userid="27784" postdate="2017-03-22T17:02:56-05:00" />
+						<video id="70152" title="The Dice Tower reviews Byzanz" category="review" language="English" link="http://www.youtube.com/watch?v=VZmETvni-NM" username="ZeeGarcia" userid="46676" postdate="2015-05-21T10:26:58-05:00" />
+						<video id="62878" title="Byzanz - The Auction Card Game" category="instructional" language="English" link="http://www.youtube.com/watch?v=j9G2HqLIY6g" username="laxisusous" userid="944134" postdate="2015-02-09T13:56:27-06:00" />
+						<video id="21339" title="[Jugando con Ketty] Byzanz" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=-4ZPdZQ6gKM" username="JugandoConKetty" userid="120496" postdate="2012-09-24T19:00:25-05:00" />
+					</videos>
 
 	
 
@@ -322,7 +335,7 @@ Following rounds are played the same way until all goods have been auctioned. Pl
 			<bayesaverage value="5.92629" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3699" bayesaverage="5.92629" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="3702" bayesaverage="5.92629" />
 																				<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="1173" bayesaverage="6.03182" />
 												</ranks>
 
@@ -332,7 +345,7 @@ Following rounds are played the same way until all goods have been auctioned. Pl
 			<trading value="113" />
 			<wanting value="36" />
 			<wishing value="201" />
-			<numcomments value="424" />
+			<numcomments value="425" />
 			<numweights value="126" />
 			<averageweight value="1.5317" />
 			</ratings>

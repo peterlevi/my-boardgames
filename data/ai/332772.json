@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "Revive is a big, engine-building euro where you race across a hex map to claim ancient sites and populate them for points, while managing a growing hand of technology and resource cards through a bag/deck-building layer. Turns involve efficient action selection and long-term tech planning, with almost no direct player interaction beyond racing for the same spots.",
+ "summary": "A post-apocalyptic civilization-building campaign game where players explore a modular map, recruit survivors, and build up tech trees and factories using a deck/bag-building resource engine across five interconnected scenarios. It's a meaty, asymmetric euro from the Aporta Games team (Kristian Amundsen Østby and Eilif Svensson) that rewards efficient engine optimization over multiple linked plays.",
  "praised": [
-  "Strong table presence with the dual-layer boards and chunky components",
-  "Deep, satisfying engine building with meaningful tech tree choices",
-  "High variability from randomized ancient sites, tribe powers, and modular setup keeps replays fresh",
-  "Solid solo mode and a well-paced 5-scenario campaign that eases players into the rules",
-  "Good production value for the price point"
+  "Excellent campaign structure with real permanent unlocks",
+  "Strong asymmetric factions",
+  "Satisfying resource/tech engine building",
+  "Beautiful dual-layer boards and production"
  ],
  "criticised": [
-  "Rulebook and iconography are dense and can be confusing early on",
-  "Significant setup and teardown time given the number of components",
-  "Some player interaction is limited to racing for the same ancient sites, which can feel too solitaire for groups wanting more conflict",
-  "Early turns can feel slow while engines are still being built",
-  "Campaign progression means the base game is less interesting once unlocks are exhausted, until you've gone through it"
+  "High complexity and long playtime",
+  "Steep learning curve, especially early scenarios",
+  "Analysis paralysis potential",
+  "Some scenario balance issues reported"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with racing/blocking for ancient sites and shared resource spaces"
+  "kind": "mostly parallel play with shared map exploration",
+  "detail": "Players expand onto a shared hex map and compete to recruit limited survivor cards and unlock tech, but each player mainly manages their own tribe board and engine with little direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from populated ancient sites, technology advancement, completed objectives, and leftover resources, so the winner is usually whoever built the most efficient overall engine rather than one dominant strategy"
+  "why": "Points accumulate from technologies unlocked, populated sites, recruited citizens, and end-game bonuses across the campaign",
+  "how_you_win": "You win by building the most efficient civilization engine, unlocking and using technologies faster than opponents to rack up victory points."
  },
  "similar": [
-  "Trickerion: Legends of Illusion",
   "Scythe",
+  "Brass: Birmingham",
+  "Trickerion",
   "Anachrony",
-  "Res Arcana",
   "Terraforming Mars"
  ],
- "_fingerprint": "41f6a84ccce527d1",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "000c2ee823fb7694",
  "_name": "Revive"
 }

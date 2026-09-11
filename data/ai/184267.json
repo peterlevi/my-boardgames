@@ -1,36 +1,39 @@
 {
  "confidence": "high",
- "summary": "On Mars is a dense, puzzle-heavy worker-placement and tile-laying game where you juggle multiple interlocking resource chains (water, air, power, food) while ferrying workers between a space station and the Martian surface. It rewards long-term planning and engine-building over reactive tactics, with a steep learning curve and heavy rulebook overhead before it clicks.",
+ "summary": "An extremely dense Vital Lacerda euro about establishing a Mars colony, juggling interlocking systems of contracts, tech, movement, and resource logistics between Earth and Mars. It rewards patient, puzzle-like planning far more than it punishes with direct conflict.",
  "praised": [
-  "Intricate, tightly interlocking systems that feel deeply satisfying once mastered",
-  "Strong thematic integration of mechanics with the Mars colonization setting",
-  "High replayability due to variable mission goals and personal agendas",
-  "Rewarding sense of engine-building and efficiency optimization",
-  "Excellent solo mode"
+  "intricate, deeply interlocking systems that feel genuinely rewarding to master",
+  "unusually strong thematic integration for such a mechanically heavy game",
+  "high strategic depth with multiple viable paths to victory"
  ],
  "criticised": [
-  "Very steep learning curve with a dense, sometimes unclear rulebook",
-  "Long setup and long playtime, especially for first plays",
-  "Analysis paralysis due to the sheer number of decision points",
-  "Can feel more like a solitaire puzzle than a game with meaningful interaction",
-  "Iconography and initial teaching are overwhelming for new players"
+  "brutal rules overhead and long teaching time",
+  "very long playtime that can punish new or slower players",
+  "heavy analysis paralysis potential given the sheer number of interlocking decisions"
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with some race-for-tiles/contracts competition"
+  "kind": "competition for shared map hexes and contracts",
+  "detail": "Players compete for limited hex tiles, contracts, and action spaces on the shared Mars map, occasionally blocking each other's plans, but each player mostly develops their own engine and colony independently. The bulk of the game state is a private player board rather than a shared one."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from completing mission goals, contracts, private agendas, and colony development, so the winner is decided by whoever most efficiently optimizes multiple simultaneous scoring tracks."
+  "why": "Points accrue from contracts, tech tracks, tile placement bonuses, and personal agenda goals.",
+  "how_you_win": "You win by building the most efficient colony engine, completing contracts and objectives to out-score opponents by game end."
  },
  "similar": [
   "Gaia Project",
-  "Terraforming Mars",
-  "The Gallerist",
   "Lisboa",
-  "Great Western Trail"
+  "CO2: Second Chance",
+  "The Gallerist",
+  "Weather Machine"
  ],
- "_fingerprint": "1d259bd6fb1c06ed",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Heavy Cardboard"
+ ],
+ "_fingerprint": "40eeb70be7619474",
  "_name": "On Mars"
 }

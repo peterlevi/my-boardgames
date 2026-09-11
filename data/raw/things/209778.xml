@@ -624,7 +624,23 @@ At the start of the game, you have only three minutes in which to take actions. 
 			
 
 			
-	
+			<videos total="182">
+						<video id="617775" title="Jugamos en grupo al Magic Maze" category="session" language="Spanish" link="http://www.youtube.com/watch?v=WEuRnKR2ACw" username="modojuegook" userid="3647532" postdate="2026-06-26T14:42:15-05:00" />
+						<video id="593414" title="How to play in 1 minute" category="review" language="Russian" link="http://www.youtube.com/watch?v=_q6QogB26Wo" username="reeboohin" userid="329613" postdate="2026-01-20T04:32:05-06:00" />
+						<video id="589003" title="Magic Maze #boardgames #boardgamelife #飛躍魔盜團" category="other" language="English" link="http://www.youtube.com/watch?v=6vFGepbIzfU" username="czeslaw6300149" userid="798383" postdate="2025-12-20T06:00:16-06:00" />
+						<video id="555324" title="Magic Maze Overview" category="instructional" language="English" link="http://www.youtube.com/watch?v=b-Q-Rs6ix5M" username="Board Gaming Crew" userid="1886826" postdate="2025-05-22T09:03:43-05:00" />
+						<video id="548039" title="Magic Maze - Cómo se juega, partida y reseña" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=BfSY2-SDsrI" username="Glirp" userid="3148460" postdate="2025-04-11T04:24:54-05:00" />
+						<video id="546666" title="Aprende a jugar a Magic Maze" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=kZaYzbTMD-o" username="Tak30" userid="1890318" postdate="2025-04-01T13:18:57-05:00" />
+						<video id="541330" title="Magic Maze ~ Unboxing" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=wQbQ3r2VxE8" username="tirandodados" userid="3698833" postdate="2025-03-04T05:35:46-06:00" />
+						<video id="525714" title="Нумограй від TheDrotUA" category="session" language="Ukrainian" link="http://www.youtube.com/watch?v=0j3qiWxNbFw" username="punk_rock" userid="2986072" postdate="2024-11-23T14:03:11-06:00" />
+						<video id="525713" title="Огляд від TheDrotUA" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=6DxOv5mV3ds" username="punk_rock" userid="2986072" postdate="2024-11-23T14:02:48-06:00" />
+						<video id="487788" title="MagicMaze" category="review" language="Serbian" link="http://www.youtube.com/watch?v=GOkMWtVcsw8" username="SAKY90" userid="3483845" postdate="2024-03-26T19:14:58-05:00" />
+						<video id="467001" title="Огляд від Beaver Games" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=f0eKRswxYFU" username="punk_rock" userid="2986072" postdate="2023-11-18T10:40:54-06:00" />
+						<video id="441018" title="Летсплей настільної гри Magic Maze" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=UIvJ9vDgJN4" username="Nekon" userid="2805581" postdate="2023-06-08T10:32:42-05:00" />
+						<video id="441015" title="Правила настільної гри Magic Maze" category="instructional" language="Ukrainian" link="http://www.youtube.com/watch?v=GvuZIKcdAo0" username="Nekon" userid="2805581" postdate="2023-06-08T10:28:38-05:00" />
+						<video id="433221" title="Introspective: Magic Maze and the 'Do Something' pawn" category="other" language="English" link="http://www.youtube.com/watch?v=hfEwnkqYpuE" username="snicholson" userid="305" postdate="2023-04-14T18:40:02-05:00" />
+						<video id="406681" title="Magic Maze: New Wooden Pawns" category="unboxing" language="Czech" link="http://www.youtube.com/watch?v=GocqyG0pLy8" username="1a2a3a4" userid="668856" postdate="2022-10-29T11:14:32-05:00" />
+					</videos>
 
 	
 
@@ -633,23 +649,23 @@ At the start of the game, you have only three minutes in which to take actions. 
 	
    		<statistics page="1">
 								<ratings>
-			<usersrated value="24184" />
-			<average value="6.93382" />
-			<bayesaverage value="6.77283" />
+			<usersrated value="24194" />
+			<average value="6.93395" />
+			<bayesaverage value="6.77286" />
 
 			<ranks>
-															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="805" bayesaverage="6.77283" />
-																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="60" bayesaverage="6.81947" />
-											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="231" bayesaverage="6.79694" />
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="806" bayesaverage="6.77286" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="60" bayesaverage="6.81953" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="230" bayesaverage="6.79697" />
 												</ranks>
 
-			<stddev value="1.34442" />
+			<stddev value="1.34445" />
 			<median value="0" />
-			<owned value="38704" />
-			<trading value="745" />
+			<owned value="38713" />
+			<trading value="743" />
 			<wanting value="356" />
-			<wishing value="4790" />
-			<numcomments value="3520" />
+			<wishing value="4789" />
+			<numcomments value="3521" />
 			<numweights value="418" />
 			<averageweight value="1.7512" />
 			</ratings>

@@ -1,34 +1,41 @@
 {
  "confidence": "high",
- "summary": "Imperium: Classics is a card-driven civilization builder where you cycle a small deck (via the 'move through deck' mechanic) to unlock increasingly powerful cards while balancing expansion against unrest; each of the eight civilizations plays with genuinely different mechanics and priorities. It plays fast for its weight, works very well solo against a card-driven AI, and rewards efficient engine-building over direct conflict.",
+ "summary": "Imperium: Classics is a card-driven civilization game where each player pilots one of eight asymmetric factions through its own custom deck, pruning starting cards for stronger ones as their civilization rises. Games feel like a tight, tactical duel of tempo, army-building, and card synergy rather than a sprawling 4X.",
  "praised": [
-  "Strong, well-tuned solo mode with a card-based AI opponent",
-  "Deep asymmetry — each civilization feels mechanically distinct, not just re-skinned",
-  "Fast turns and short deck-cycling create a satisfying rhythm without long downtime",
-  "High replayability from civilization/scenario combinations"
+  "strong asymmetry between civilizations",
+  "satisfying deckbuilding-style pruning",
+  "solid solo mode against AI opponent decks",
+  "faster to teach than its depth suggests"
  ],
  "criticised": [
-  "Low direct player interaction — often feels like parallel solitaire at the table",
-  "Rulebook and icon-heavy cards have a steep initial learning curve",
-  "Some civilizations/cards are viewed as stronger or more fun than others (balance complaints)",
-  "Take-that elements exist but are minor, so conflict-seeking players may find it too dry"
+  "fiddly keyword and card-text lookups",
+  "some civilizations feel notably stronger than others",
+  "combat and card draw can feel swingy",
+  "shuffling/sleeving overhead between games"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "mostly parallel empire-building with occasional take-that cards"
+  "level": "Medium",
+  "kind": "card-based raids and drafting from a shared market",
+  "detail": "Players attack each other's civilizations with military cards and compete to draft cards from a shared market row, but each player otherwise builds and prunes their own personal deck independently."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from your civilization's unique track, end-game card bonuses, and accumulated achievements, so the winner is decided by how efficiently you built your engine across several scoring channels rather than one dominant strategy."
+  "why": "Points accumulate from completed civilization objectives, tag-based bonuses, and end-game scoring cards rather than one dominant source.",
+  "how_you_win": "Score the most points by completing your civilization's mission objectives and building up tag synergies across the ages until the game ends."
  },
  "similar": [
-  "Res Arcana",
+  "Imperium: Legends",
   "Race for the Galaxy",
-  "Tyrants of the Underdark",
-  "Concordia",
-  "Clank! Legacy: Acquisitions Incorporated"
+  "Innovation",
+  "Nemo's War",
+  "Tyrants of the Underdark"
  ],
- "_fingerprint": "154e1bda7707eb78",
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "2b25ad38ff833122",
  "_name": "Imperium: Classics"
 }

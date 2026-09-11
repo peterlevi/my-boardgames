@@ -1,36 +1,41 @@
 {
  "confidence": "high",
- "summary": "A dense Terra Mystica successor where you terraform hexes into your faction's home terrain, build up an interlocking network of structures, and race up tech tracks for bonuses and abilities. Every action is an efficiency puzzle with almost no randomness, and the tension comes from tight resource conversion and racing opponents for key upgrades and adjacency spots.",
+ "summary": "Age of Innovation is a standalone reimplementation of Terra Mystica, where players guide one of twelve asymmetric factions terraforming hexes into their preferred terrain type to build and upgrade structures, forming a growing network of connected buildings. It's a dense, spatial-puzzle euro where proximity to opponents both constrains your expansion and grants bonus resources, making the shared map the central strategic battleground.",
  "praised": [
-  "Extremely deep, tight economic engine with satisfying resource conversion puzzles",
-  "High replayability from faction/board/tech combinations",
-  "Cleaner, more flexible structure than Terra Mystica (tech tree instead of fixed favor tiles, more varied scoring)",
-  "Beautiful production and modular map",
-  "Rewards long-term planning and efficient turn optimization"
+  "deep asymmetric faction design with genuine strategic variety",
+  "satisfying network and area-building puzzle",
+  "tight economic engine with meaningful upgrade paths",
+  "strong replayability from faction and map combinations"
  ],
  "criticised": [
-  "Very high rules and strategic complexity, steep learning curve",
-  "Long playtime, especially with more players or new players",
-  "Analysis paralysis prone due to the depth of optimization",
-  "Low direct interaction can make it feel solitaire-ish despite spatial competition",
-  "Overwhelming for casual or first-time players"
+  "steep learning curve and heavy rules overhead",
+  "long playtime, especially at higher player counts",
+  "can feel very tight/unforgiving if you fall behind the terraforming curve",
+  "fiddly bookkeeping with many tracks and resources to manage"
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and area denial via terrain/adjacency competition"
+  "kind": "area proximity and indirect competition for terrain",
+  "detail": "Players mostly build out their own faction's network on their own terrain colors, but the shared hex map means adjacency to opponents' buildings grants power/resource bonuses and contested terrain can block expansion, so the map itself is the main shared state rather than direct conflict."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from terraforming, building, cult/tech track advancement, faction abilities, and end-game bonuses, so the winner is whoever optimizes the most scoring channels simultaneously"
+  "why": "points accumulate from building placement, cult track advancement, favor tiles, and end-game bonus scoring conditions, all of which combine at game end",
+  "how_you_win": "you win by expanding your building network efficiently, advancing on the cult tracks, and timing upgrades to score well against the round-specific and final scoring bonuses"
  },
  "similar": [
   "Terra Mystica",
   "Gaia Project",
-  "Underwater Cities",
+  "Cascadia",
   "Barrage",
-  "Great Western Trail"
+  "Brass: Birmingham"
  ],
- "_fingerprint": "e4cc607cb0b24626",
+ "teachers": [
+  "Heavy Cardboard",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "afe423de59935331",
  "_name": "Age of Innovation"
 }

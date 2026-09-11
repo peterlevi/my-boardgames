@@ -1,34 +1,40 @@
 {
  "confidence": "medium",
- "summary": "Players race to fill a shrinking reverse-pyramid of cards drafted from a shared river, using color and number combinations to trigger key-based location bonuses and pearl majorities. It plays fast and light, feeling like a puzzly, ever-tightening set-collection sprint rather than a deep strategic contest.",
+ "summary": "Conspiracy: Abyss Universe is a quick drafting card game where players build a pyramid of colored, numbered cards trying to complete key-matching or numeric sets before opponents. It plays fast and light, serving as a small-box spinoff of the Abyss universe rather than a full strategy game.",
  "praised": [
-  "Clever, tense drafting where taking cards for yourself also shapes what's available to opponents",
-  "Quick to teach and quick to play at around 30 minutes",
-  "Attractive Abyss-universe presentation for fans of the series",
-  "Satisfying puzzle of fitting numbers/colors into a shrinking pyramid"
+  "fast setup and short playtime",
+  "attractive Abyss-universe art",
+  "simple, teachable drafting puzzle",
+  "good filler between heavier games"
  ],
  "criticised": [
-  "Feels very similar to other games in the Conspiracy system, offering little new if you've played a sibling title",
-  "Can feel randomly dependent on what the river offers, especially near the end",
-  "Light theme integration — mechanically it's an abstract drafting puzzle wearing Abyss skin",
-  "Limited long-term replay depth once the pattern is learned"
+  "fairly light and forgettable for gamers seeking depth",
+  "luck of the draw can outweigh planning",
+  "limited long-term replay depth",
+  "overshadowed by the deeper Abyss base game"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "open drafting and majority races (pearls, key bonuses) rather than direct conflict"
+  "level": "Low",
+  "kind": "open drafting with shared card pool",
+  "detail": "Players draw from and leave cards in a shared communal pool, so choices affect what's available to opponents next, but each player builds their own private pyramid tableau. Interaction is indirect denial rather than direct confrontation."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Some",
-  "why": "Final score comes from per-color totals modified by location card bonuses and pearl majority bonuses, so it's a handful of interacting sources rather than one simple tally."
+  "breadth": "Focused",
+  "why": "The game ends the instant a player completes their pyramid with the required matching keys or sets, making it a race rather than a points contest.",
+  "how_you_win": "You win by being the first to complete your card pyramid with the needed matches (keys or triads) among your rows."
  },
  "similar": [
-  "Conspiracy: Kutná Hora – The Card Game",
   "Abyss",
-  "Sail",
-  "Council of Shadows",
-  "Karuba"
+  "Sushi Go!",
+  "Fantasy Realms",
+  "Jaipur",
+  "7 Wonders"
  ],
- "_fingerprint": "43db86e2da8dbeab",
+ "teachers": [
+  "Watch It Played",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "7f4626bfc9c8a1a7",
  "_name": "Conspiracy: Abyss Universe"
 }

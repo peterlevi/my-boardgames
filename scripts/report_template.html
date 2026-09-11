@@ -33,7 +33,7 @@ body { margin:0; background:var(--bg); color:var(--ink);
   font:15px/1.5 "Avenir Next","Segoe UI Variable Text","Segoe UI",Inter,
        "Nunito Sans",system-ui,-apple-system,sans-serif;
   font-variant-numeric:tabular-nums; }
-.wrap { max-width:1500px; margin:0 auto; padding:28px 16px 64px; }
+.wrap { max-width:1280px; margin:0 auto; padding:28px 16px 64px; }
 h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 .sub { color:var(--muted); margin:0 0 6px; max-width:75ch; }
 .note { font-size:.85rem; }
@@ -105,7 +105,7 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
   white-space:nowrap; }
 .tagbox label.on { background:var(--bg); box-shadow:inset 0 0 0 1px var(--accent); }
 .tagbox .none { padding:10px; color:var(--muted); }
-td.designer { max-width:150px; overflow:hidden; text-overflow:ellipsis;
+td.designer { max-width:118px; overflow:hidden; text-overflow:ellipsis;
   white-space:nowrap; font-size:.82rem; }
 td.designer .more { color:var(--muted); }
 .pair span { color:var(--muted); font-size:.85rem; }
@@ -271,6 +271,14 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
    columns still show but space is tight. Below 700px enough columns are hidden
    that the table fits outright — and without an overflow ancestor the sticky
    header keeps working there, which is the whole point of freezing it. */
+/* Sixteen columns fit the 1280px column exactly. Below that the window itself
+   is the constraint, and Best% is dropped first: the At N verdict already
+   encodes it, and Appr carries the number worth scanning. */
+@media (max-width:1310px) {
+  .wide-only { display:none; }
+  th, td { padding:8px 5px; }
+  td.designer { max-width:104px; }
+}
 @media (max-width:1000px) and (min-width:701px) {
   .scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
   th { position:static; }
@@ -405,7 +413,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="hide-sm" data-k="br" title="How widely the scoring is spread">Breadth</th>
     <th class="hide-sm" data-k="ds">Designer</th>
     <th class="num hide-sm" data-k="verdict">At N</th>
-    <th class="num hide-sm" data-k="bestPct">Best</th>
+    <th class="num hide-sm wide-only" data-k="bestPct">Best</th>
     <th class="num hide-sm" data-k="appr">Appr</th>
     <th class="num hide-sm" data-k="rt" title="How many people have rated the game on BGG">Ratings</th>
   </tr></thead>

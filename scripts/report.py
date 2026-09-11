@@ -400,7 +400,7 @@ def rows_html(data, a):
             f'<td class="hide-sm">{br_html}</td>'
             f'<td class="hide-sm designer">{designer}</td>'
             f'<td class="num hide-sm j-verdict">{v}</td>'
-            f'<td class="num bar hide-sm j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
+            f'<td class="num bar hide-sm wide-only j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
             f'<td class="num bar hide-sm j-appr">{bar(s["appr"]) if s else EM_DASH}</td>'
             f'<td class="num hide-sm" title="{g["rt"] or 0} BGG ratings">'
             f'{fmt_count(g["rt"])}</td>'

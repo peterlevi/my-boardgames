@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Khôra is a dice-driven engine-builder where you pick 2 of 7 actions each round and must adapt your plan to the die roll you get, climbing tracks that snowball into stronger resources, cards, and points. It plays fast for its depth, with tight turns and a real puzzle in reconciling your strategy with variable dice.",
+ "praised": [
+  "Clever, tense action-selection puzzle balancing planned strategy against dice randomness",
+  "Multiple viable paths to victory (economy, military, culture, politics)",
+  "Fast turns and low downtime despite meaningful depth",
+  "Good component quality and iconography once learned",
+  "Strong replayability from varied strategies and achievement goals"
+ ],
+ "criticised": [
+  "Steep learning curve and dense rulebook/iconography for a first play",
+  "Dice manipulation mitigates but doesn't eliminate swingy bad rolls",
+  "Low direct player interaction can make it feel solitaire-ish",
+  "Some symbol/track overload makes teaching it to new players hard",
+  "End-of-game scoring can feel a bit fiddly to tally"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel engine-building with light racing for shared resources/track positions"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from multiple tracks, achievements, and end-game bonuses tied to how far you advanced across economy, culture, and military development"
+ },
+ "similar": [
+  "Trismegistus",
+  "Teotihuacan: City of Gods",
+  "Tzolk'in: The Mayan Calendar",
+  "Underwater Cities",
+  "Barrage"
+ ],
+ "_fingerprint": "b93313f4ded65a6c",
+ "_name": "Khôra: Rise of an Empire"
+}

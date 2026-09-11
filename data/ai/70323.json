@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A fast, loud dice-chucker where you push your luck rolling and re-rolling for points, energy, and attacks while whoever occupies Tokyo racks up bonus points but can't heal. Games are short, swingy, and driven by table talk and gang-up dynamics rather than deep strategy.",
+ "praised": [
+  "Fast, easy to teach, great gateway/family game",
+  "Fun push-your-luck dice mechanic",
+  "Thematic monster/kaiju presentation and components",
+  "Card market adds variety and replayability",
+  "Plays well with kids and non-gamers"
+ ],
+ "criticised": [
+  "High luck/randomness can undercut player agency",
+  "Player elimination can leave people sitting out",
+  "Ganging up on the Tokyo occupant can feel mean or kingmaker-y",
+  "Shallow long-term strategy once the novelty wears off"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "open conflict via dice attacks and take-that ganging up on whoever is in Tokyo"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is decided by racing to 20 victory points (mostly from dice and Tokyo occupancy) or by being the last monster standing after eliminating everyone else."
+ },
+ "similar": [
+  "King of New York",
+  "Munchkin",
+  "Cash 'n Guns",
+  "Zombie Dice",
+  "Star Realms"
+ ],
+ "_fingerprint": "817024ca591e5056",
+ "_name": "King of Tokyo"
+}

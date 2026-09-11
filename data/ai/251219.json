@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Istanbul is a tight pick-up-and-deliver game where you move your merchant and assistants around a modular grid of place tiles, leaving assistants behind to trigger repeatable actions while racing to collect rubies for scoring. It plays fast and tense despite the calm theme, with efficient route-planning and light blocking as other players occupy the tiles you need.",
+ "praised": [
+  "Tight, tense action-efficiency puzzle despite simple rules",
+  "Modular board gives high replayability and varied setups",
+  "Quick turns keep downtime low even at higher player counts",
+  "Big Box bundles both expansions plus mini-expansion at good value and improves component quality/insert"
+ ],
+ "criticised": [
+  "Can feel a bit dry or 'mechanical' thematically",
+  "Assistant-placement blocking can occasionally lead to slight kingmaking or bad luck if a needed tile is occupied",
+  "Some find the base game a bit light at higher weight expectations; the 5x5 big bazaar mode with more players can drag",
+  "Expansions (esp. Letters & Seals) add complexity that not all groups want"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "tile/space blocking and light area denial via assistant placement"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is decided almost entirely by rubies collected, with bonus tiles/wheelbarrow upgrades acting as accelerants rather than separate scoring tracks"
+ },
+ "similar": [
+  "The Pillars of the Earth",
+  "Coimbra",
+  "Puerto Rico",
+  "Marco Polo",
+  "Trajan"
+ ],
+ "_fingerprint": "d0230301c43aaab5",
+ "_name": "Istanbul: Big Box"
+}

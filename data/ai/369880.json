@@ -1,0 +1,33 @@
+{
+ "confidence": "medium",
+ "summary": "A tight two-player card game where every card can be played several different ways (as a field, a good, a building, or fuel), so most of the tension is in figuring out the most efficient use of a small hand rather than in direct conflict. The real bite is in the scoring: you only count coins from whichever good, beer or bread, you produced less of, so you're constantly forced to keep both economies roughly balanced instead of just maximizing one.",
+ "praised": [
+  "Clever multi-use cards that make each card a small puzzle rather than a single-purpose resource",
+  "The lowest-of-two scoring rule creates real tension and forces constant rebalancing instead of a runaway strategy",
+  "Fast, satisfying two-player-only design with a lot of depth for its small footprint",
+  "Alternating fruitful/dry years give each playthrough a different resource rhythm"
+ ],
+ "criticised": [
+  "Strictly two players only, so it can't flex to other group sizes",
+  "Interaction is mostly indirect (shared field/drafting pressure) rather than confrontational, which can feel low-key for players wanting more conflict",
+  "Rules and card text take a session or two to fully click given how much each card can do"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "shared drafting pressure and timing squeezes rather than direct conflict"
+ },
+ "win_criteria": "Lowest-highest scoring",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "final score is capped by whichever of your two goods (beer or bread) you produced less of, so balancing both tracks decides the winner rather than maximizing either one"
+ },
+ "similar": [
+  "Sprawlopolis",
+  "Fantasy Realms",
+  "Res Arcana",
+  "Tiny Epic Galaxies",
+  "Agricola: All Creatures Big and Small"
+ ],
+ "_fingerprint": "08ec34b639040033",
+ "_name": "Beer & Bread"
+}

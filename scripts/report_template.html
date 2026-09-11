@@ -210,8 +210,32 @@ tr.detail > td { padding:0; border-bottom:1px solid var(--line); }
 .detail-side dt { color:var(--muted); }
 .detail-side dd { margin:0; font-variant-numeric:tabular-nums; }
 .chips { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:12px; }
-.chip { font-size:.74rem; padding:2px 8px; border-radius:99px;
-  background:var(--chip); color:var(--ink); }
+.chip { font-size:.74rem; padding:3px 9px; border-radius:99px; border:0;
+  background:var(--chip); color:var(--ink); cursor:pointer; font-family:inherit; }
+.chip:hover { box-shadow:inset 0 0 0 1px var(--accent); }
+.linkish { background:none; border:0; padding:0; font:inherit; cursor:pointer;
+  color:var(--accent); text-decoration:underline; }
+table.poll { width:100%; border-collapse:collapse; margin:0 0 10px; }
+table.poll th { position:static; background:none; padding:2px 8px 2px 0;
+  text-align:right; width:1px; font-size:.8rem; color:var(--muted);
+  text-transform:none; letter-spacing:0; }
+table.poll td { padding:2px 0; border:0; }
+table.poll tr.peak th { color:var(--ink); font-weight:700; }
+.stack { display:flex; height:15px; border-radius:4px; overflow:hidden;
+  background:var(--chip); }
+.stack i { font-style:normal; font-size:.62rem; line-height:15px;
+  text-align:center; color:#fff; }
+.stack i.b { background:var(--m4); }
+.stack i.r { background:var(--m2); }
+.stack i.n { background:var(--m1); }
+.polllegend { display:flex; align-items:center; gap:5px; font-size:.72rem;
+  color:var(--muted); margin:0 0 12px; }
+.polllegend .k { width:10px; height:10px; border-radius:2px; display:inline-block;
+  margin-left:8px; }
+.polllegend .k:first-child { margin-left:0; }
+.polllegend .k.b { background:var(--m4); }
+.polllegend .k.r { background:var(--m2); }
+.polllegend .k.n { background:var(--m1); }
 .chip.cat { color:var(--accent); }
 .chip.trait { color:var(--best); }
 @media (max-width:760px) {
@@ -780,19 +804,59 @@ function render() {
 // fit. Built on demand — 242 of these up front would bloat the page.
 var openDetail = null;
 
-function tagNamesFor(g, kind) {
+function tagsOfKind(g, kind) {
   var out = [];
   (g.tg || []).forEach(function (i) {
-    if (TAGS[i] && TAGS[i].k === kind) out.push(TAGS[i].n);
+    if (TAGS[i] && TAGS[i].k === kind) out.push(i);
   });
   return out;
 }
 
+/** Tick a tag in the picker and filter by it. */
+function filterByTag(i) {
+  var row = tagRows[i];
+  if (!row) return;
+  row.firstChild.checked = true;
+  el('more').open = true;
+  refreshTagList();
+  render();
+  row.scrollIntoView({ block: 'nearest' });
+}
+
+/** The player-count poll in full, rather than only the selected count. */
+function pollMatrix(g) {
+  var counts = Object.keys(g.poll).sort(function (a, b) {
+    return (parseInt(a, 10) || 99) - (parseInt(b, 10) || 99);
+  });
+  if (!counts.length) return '';
+  var rows = counts.map(function (c) {
+    var d = g.poll[c], total = d[0] + d[1] + d[2];
+    if (!total) return '';
+    var pct = function (v) { return 100 * v / total; };
+    var seg = function (v, cls) {
+      return pct(v) < 1 ? '' :
+        '<i class="' + cls + '" style="width:' + pct(v).toFixed(1) + '%">' +
+        (pct(v) >= 12 ? Math.round(pct(v)) + '%' : '') + '</i>';
+    };
+    var best = d[0] === g.top && d[0] > 0;
+    return '<tr' + (best ? ' class="peak"' : '') + '>' +
+      '<th>' + esc(c) + '</th>' +
+      '<td><span class="stack">' + seg(d[0], 'b') + seg(d[1], 'r') +
+      seg(d[2], 'n') + '</span></td>' +
+      '<td class="num">' + total + '</td></tr>';
+  }).join('');
+  return '<h4>Player-count poll</h4><table class="poll"><tbody>' + rows +
+    '</tbody></table><p class="polllegend"><span class="k b"></span>Best' +
+    '<span class="k r"></span>Recommended<span class="k n"></span>Not ' +
+    'recommended</p>';
+}
+
 function buildDetail(g) {
-  function chips(names, cls) {
-    if (!names.length) return '';
-    return '<div class="chips">' + names.map(function (n) {
-      return '<span class="chip ' + cls + '">' + esc(n) + '</span>';
+  function chips(idxs, cls) {
+    if (!idxs.length) return '';
+    return '<div class="chips">' + idxs.map(function (i) {
+      return '<button type="button" class="chip ' + cls + '" data-tag="' + i +
+        '" title="Filter by this">' + esc(TAGS[i].n) + '</button>';
     }).join('') + '</div>';
   }
   var players = g.mn === g.mx ? g.mn + ' players' : g.mn + '–' + g.mx + ' players';
@@ -805,21 +869,29 @@ function buildDetail(g) {
     ['Ratings on BGG', g.rt ? g.rt.toLocaleString() : '—'],
     ['Owners', g.ow ? g.ow.toLocaleString() : '—'],
     ['Your plays', g.pl],
-    ['Designers', esc((g.ds || []).join(', ')) || '—'],
+    ['Designers', (g.ds || []).map(function (d) {
+        var i = TAGS.findIndex(function (t) {
+          return t.k === 'designer' && t.n === d;
+        });
+        return i < 0 ? esc(d)
+          : '<button type="button" class="linkish" data-tag="' + i + '">' +
+            esc(d) + '</button>';
+      }).join(', ') || '—'],
     ['Interaction', g.ix + ' (derived)']
   ];
   return '<div class="detail-inner">' +
     '<div>' +
       (g.de ? '<h4>Description</h4><p>' + esc(g.de) + '…</p>' : '') +
-      '<h4>Traits</h4>' + (chips(tagNamesFor(g, 'trait'), 'trait') || '<p>—</p>') +
-      '<h4>Categories</h4>' + (chips(tagNamesFor(g, 'cat'), 'cat') || '<p>—</p>') +
-      '<h4>Mechanics</h4>' + (chips(tagNamesFor(g, 'mech'), '') || '<p>—</p>') +
+      '<h4>Traits</h4>' + (chips(tagsOfKind(g, 'trait'), 'trait') || '<p>—</p>') +
+      '<h4>Categories</h4>' + (chips(tagsOfKind(g, 'cat'), 'cat') || '<p>—</p>') +
+      '<h4>Mechanics</h4>' + (chips(tagsOfKind(g, 'mech'), '') || '<p>—</p>') +
     '</div>' +
     '<div class="detail-side"><h4>At a glance</h4><dl>' +
       rows.map(function (r) {
         return '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>';
       }).join('') +
-    '</dl><a class="game" href="https://boardgamegeek.com/boardgame/' + g.id +
+    '</dl>' + pollMatrix(g) +
+    '<a class="game" href="https://boardgamegeek.com/boardgame/' + g.id +
     '" target="_blank" rel="noopener">Open on BGG →</a></div>' +
     '</div>';
 }
@@ -831,6 +903,12 @@ function closeDetail() {
 }
 
 TBODY.addEventListener('click', function (e) {
+  var tagBtn = e.target.closest('[data-tag]');
+  if (tagBtn) {                               // a chip filters instead
+    e.stopPropagation();
+    filterByTag(+tagBtn.getAttribute('data-tag'));
+    return;
+  }
   if (e.target.closest('a')) return;          // links still navigate
   var tr = e.target.closest('tr');
   if (!tr || !tr.hasAttribute('data-i')) return;

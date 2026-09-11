@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Each round every player draws the same revealed shape onto their own map at the same time, racing to fit it against terrain they've already placed while chasing that season's scoring edicts. It's a quiet, cerebral tetris-like puzzle where the tension comes from awkward shape draws and edict scoring, not from talking to the other players.",
+ "praised": [
+  "Tight, tetris-like spatial puzzle that stays satisfying over many plays",
+  "Fast to teach and fast to play (30-45 min)",
+  "Variable edicts and monster cards give strong replayability and variable setup",
+  "Works great solo and scales painlessly up to large groups since everyone plays simultaneously",
+  "Charming presentation and low cost of entry"
+ ],
+ "criticised": [
+  "Almost entirely solitaire/parallel play with little to no real interaction",
+  "Randomness of shape draws can feel punishing when nothing fits your board",
+  "Can feel repetitive after many plays since the core puzzle loop doesn't change much",
+  "Downtime/anticlimax at the end when others are still filling in their sheets",
+  "Light strategic depth compared to heavier polyomino games"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play, with the queen's edicts and Dragul (monster) squares as the only shared pressure"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "the winner is whoever best matches their limited terrain shapes to the season's random edicts while minimizing monster penalties"
+ },
+ "similar": [
+  "Cartographers Heroes",
+  "Silver & Gold",
+  "Second Chance",
+  "Railroad Ink",
+  "Take It Easy"
+ ],
+ "_fingerprint": "5bde4211e7f6bfc7",
+ "_name": "Cartographers"
+}

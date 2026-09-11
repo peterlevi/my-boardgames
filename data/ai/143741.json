@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A fast, loud party game where hidden roles and dice-based dueling create chaotic accusations at the table; it plays in about 15 minutes but scales awkwardly since eliminated players just sit out. It leans heavily on Yahtzee-style dice mechanics rather than the hand-management of the original card game, trading strategic depth for speed and noise.",
+ "praised": [
+  "Very quick to teach and play",
+  "Captures the social deduction/bluffing fun of the original Bang! with less setup",
+  "Great for large groups and non-gamers",
+  "Portable, simple dice-and-tokens components"
+ ],
+ "criticised": [
+  "Player elimination leaves people out for the rest of the game",
+  "Very light strategy, mostly luck-driven",
+  "Can feel repetitive over multiple plays",
+  "Less depth than the original Bang! card game"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "open conflict and accusation via bluffing"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The game ends the moment one team's hidden win condition is met (Sheriff's side kills all outlaws, outlaws kill the Sheriff, or a renegade survives alone), not by tallying points."
+ },
+ "similar": [
+  "Bang!",
+  "Coup",
+  "Saboteur",
+  "The Resistance",
+  "Skull"
+ ],
+ "_fingerprint": "af8be1881237e470",
+ "_name": "BANG! The Dice Game"
+}

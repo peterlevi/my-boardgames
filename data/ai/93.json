@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "El Grande is a tense area-majority game where you're constantly recalculating who controls which region as caballeros shift each round, with the castillo and king's-region rules forcing hard tactical trade-offs. It's a slow-building, cerebral tug-of-war where the scoring rounds every third turn create real peaks of tension.",
+ "praised": [
+  "Elegant, tightly interlocking rule set that still feels rich decades later",
+  "Power-card turn-order auction is a clever tension point every round",
+  "High player interaction through constant area-majority shifts",
+  "Action cards add variety and replayability without bloating the rules",
+  "Considered a classic/foundational Euro area-control design"
+ ],
+ "criticised": [
+  "Can feel a bit dry or abstract thematically despite the Spain setting",
+  "Slower turns and downtime, especially at higher player counts",
+  "Some find the king-movement/adjacency rule fiddly to track",
+  "Newer players can be crushed by experienced players' timing of scoring rounds"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "area majority and blocking via troop placement"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from majority control in multiple regions at three scoring rounds plus secretive castillo bonuses, so the winner is whoever times region control best across the whole game."
+ },
+ "similar": [
+  "Tigris & Euphrates",
+  "Age of Steam",
+  "Republic of Rome",
+  "Torres",
+  "Chinatown"
+ ],
+ "_fingerprint": "6a7c3c26682c6898",
+ "_name": "El Grande"
+}

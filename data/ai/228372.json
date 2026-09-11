@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Iberian Gauge is a fast, lighter cousin of 18xx train games: you alternate buying stock in rail companies with operating rounds where your shares (in purchase order) let you extend that company's network across a hex map of Iberia, leasing rival track to save money. It plays in well under two hours but keeps the genre's core tension of propping up a company's stock price through expansion versus personally profiting from dividends and cash.",
+ "praised": [
+  "Much faster and more approachable than full 18xx while keeping real economic tension",
+  "The share-purchase-order-determines-build-order mechanic creates clever, tight decision points",
+  "Leasing track from other companies is an elegant cost-saving twist",
+  "Good table presence and production for a small-press game"
+ ],
+ "criticised": [
+  "Turn order and initial company assignment can create swingy, luck-influenced starts",
+  "Rules have some ambiguous edge cases around leasing and connections",
+  "Smaller map can feel cramped with more players, limiting expansion options",
+  "Stock round downtime while waiting for others to act"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "network blocking and route competition intertwined with stock manipulation"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is whoever ends with the most combined cash and stock value, driven almost entirely by how well their companies' networks and dividends performed"
+ },
+ "similar": [
+  "Chicago Express",
+  "Irish Gauge",
+  "1846",
+  "Steam Barons",
+  "Wabash Cannonball"
+ ],
+ "_fingerprint": "b5bd982f7949448e",
+ "_name": "Iberian Gauge"
+}

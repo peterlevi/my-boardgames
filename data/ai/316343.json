@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A tight, tense push-your-luck card game where every round you must decide how much to risk in your home base versus feeding the shared capital, since exceeding the capital's value in any color wipes out your gains. The 81 power combinations keep it fresh, forcing you to re-learn optimal timing and card synergies each session.",
+ "praised": [
+  "High replayability from the modular capital powers",
+  "Fast, tense decision-making despite simple rules",
+  "Compact 'pocket' production travels well and plays quickly",
+  "Rewards careful timing and reading opponents' likely contributions"
+ ],
+ "criticised": [
+  "Some power combinations are stronger or more swingy than others",
+  "Can feel a bit dry or fiddly until players learn the icons/powers",
+  "Two-player games lose some of the multiplayer tension",
+  "Slightly abstract theme that doesn't add much beyond mechanics"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "shared risk pool with indirect competition over the capital threshold"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Points come almost entirely from card values banked safely in your home base at game end, so the winner is whoever best times their withdrawals against the capital threshold."
+ },
+ "similar": [
+  "Capital Lux 2: Generations",
+  "Yokohama",
+  "Fantastic Factories",
+  "Ethnos",
+  "Trismegistus"
+ ],
+ "_fingerprint": "b6bff7c4c6205151",
+ "_name": "Capital Lux 2: Pocket"
+}

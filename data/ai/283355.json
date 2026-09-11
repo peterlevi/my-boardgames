@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Dune is a tense multiplayer negotiation game where public alliances and private side-deals matter as much as the area-control battles fought over Arrakis' spice and strongholds. Combat is resolved through simultaneous secret bidding of force strength and traitor cards, so most games turn on bluffing, betrayal, and timing rather than raw military strength.",
+ "praised": [
+  "Negotiation and diplomacy phase is the heart of the game and creates memorable table dynamics",
+  "Asymmetric factions with genuinely different win conditions and abilities keep replays fresh",
+  "Traitor cards and secret alliances create high-tension bluffing moments",
+  "Faithful, thematic recreation of the novel's factions and politics"
+ ],
+ "criticised": [
+  "Long playtime and heavy downtime when not directly involved in a negotiation",
+  "Steep rules overhead and asymmetric faction powers make teaching difficult",
+  "Kingmaking and runaway-leader dynamics can frustrate players late game",
+  "Needs a full table of engaged players; weaker with fewer than 5-6 or with quiet/non-negotiating groups"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "negotiation, alliance-forming, bluffing, and open conflict"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the game ends the instant a faction meets its specific victory condition (usually controlling enough strongholds, or a faction-specific alternate win), so there is no cumulative scoring at all"
+ },
+ "similar": [
+  "Twilight Imperium",
+  "Cosmic Encounter",
+  "Rex: Final Days of an Empire",
+  "Chaos in the Old World",
+  "Battlestar Galactica: The Board Game"
+ ],
+ "_fingerprint": "37014b89ede1b0fa",
+ "_name": "Dune"
+}

@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Brass: Birmingham is a tight, punishing economic engine-builder where every action is a resource trade-off and the board state constantly threatens to lock you out of profitable moves. Two eras force you to build, network, and sell in overlapping cycles, with the greatest tension coming from timing your own development against the flip-and-sell demand of rivals.",
+ "praised": [
+  "Extremely tight, elegant economic engine with almost no wasted design space",
+  "Deep, multi-layered strategy with a very high skill ceiling",
+  "Strong tension between short-term efficiency and long-term positioning",
+  "Beautiful, functional production and tactile components",
+  "High replayability due to variable player powers and market fluctuations"
+ ],
+ "criticised": [
+  "Steep learning curve and heavy rules overhead for new players",
+  "Can feel punishing or swingy for first-timers who misjudge the link/build economy",
+  "Downtime between turns in higher player counts",
+  "Some find the theme thin dressing over a pure optimization puzzle"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking and area denial via network/market competition"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Victory points accumulate from canal/rail links and flipped industry tiles across two scoring rounds, rewarding efficient chains of development, building, and selling rather than any single dominant strategy"
+ },
+ "similar": [
+  "Brass: Lancashire",
+  "Age of Steam",
+  "Great Western Trail",
+  "Barrage",
+  "Food Chain Magnate"
+ ],
+ "_fingerprint": "9113c15e26baaa3e",
+ "_name": "Brass: Birmingham"
+}

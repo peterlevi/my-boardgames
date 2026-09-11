@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "It's the same simple hot-potato press-your-luck game as base Exploding Kittens, but scaled up to fit huge groups with a bigger deck and sillier extra cards. Turns are quick and the humor is broad and juvenile, so it plays best as a loud, casual icebreaker rather than a game with real strategic depth.",
+ "praised": [
+  "Easy to teach to non-gamers and kids in minutes",
+  "Great for large groups (up to 10 players) where few games scale",
+  "Quick, high-energy rounds with real tension when drawing",
+  "Irreverent NSFW-adjacent art and humor lands well with casual/party crowds"
+ ],
+ "criticised": [
+  "Very light, mostly luck-driven with limited meaningful decisions",
+  "Player elimination means knocked-out players sit out and wait",
+  "Humor and card art can feel gimmicky or wear thin after repeated plays",
+  "Little replayability or depth for regular gamer groups"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "take-that and player elimination"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is simply the last player who hasn't drawn an Exploding Kitten"
+ },
+ "similar": [
+  "Exploding Kittens",
+  "Throw Throw Burrito",
+  "Mafia/Werewolf",
+  "Munchkin",
+  "Sushi Go Party!"
+ ],
+ "_fingerprint": "2943c7d61fc2b396",
+ "_name": "Exploding Kittens: Party Pack"
+}

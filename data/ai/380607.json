@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "This is a reimagining of Great Western Trail that swaps the deck-building cattle-drive engine for a rondel-driven system of building up sheep breeds, hiring workers, and shipping wool to trading posts, while keeping the core tension of building an efficient personal engine along a branching trail. It plays tighter and shorter than the original GWT games, with less direct interaction but plenty of tricky action-timing and rondel-positioning puzzles.",
+ "praised": [
+  "Clever new rondel mechanic replaces card-drafting and feels fresh within the GWT family",
+  "Tight, efficient engine-building with meaningful choices at every stop",
+  "Strong solo mode",
+  "High replayability from variable setup and multiple viable strategies",
+  "Streamlined compared to the original (shorter playtime, less table space)"
+ ],
+ "criticised": [
+  "Rondel mechanic can feel fiddly or restrictive compared to the freedom of the original GWT",
+  "Heavy rules overhead and steep learning curve for a first play",
+  "Less direct player interaction than the original, mostly parallel engine-building",
+  "Some feel it doesn't reach the highs of the original Great Western Trail or Argentina"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel engine-building with light blocking on shared trail spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from sheep breed diversification, delivery contracts, buildings, and workers, so the winner is usually whoever built the most efficient multi-source scoring engine rather than maximizing one path"
+ },
+ "similar": [
+  "Great Western Trail (first edition)",
+  "Great Western Trail: Argentina",
+  "Barrage",
+  "Voyages of Marco Polo",
+  "Maracaibo"
+ ],
+ "_fingerprint": "45f760134b40435f",
+ "_name": "Great Western Trail: New Zealand"
+}

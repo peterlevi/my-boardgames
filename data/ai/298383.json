@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Golem is a dense engine-building euro where you grow a golem's power through careful action drafting on a marble-based turn order system, balancing risk against reward since an overgrown golem can rampage and hurt you. Every round is a tight puzzle of sequencing actions, managing resources, and timing when to cash in your golem's power before it becomes a liability.",
+ "praised": [
+  "Clever marble-drafting turn order mechanism that ties action selection to when you act",
+  "Strong engine-building depth with meaningful variable player powers",
+  "High replayability from variable setup and multiple viable strategies",
+  "Satisfying tension between growing the golem and controlling it before it turns destructive"
+ ],
+ "criticised": [
+  "Steep rules overhead and long teach for a first play",
+  "Heavy on fiddly bookkeeping and tracking many resource types",
+  "Player interaction is limited and mostly indirect",
+  "Can feel like a solitaire, multiplayer-solitaire experience at lower player counts"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light blocking over shared action spaces and turn order"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from golem development, artifacts, book collection, and end-game bonuses, rewarding whoever builds the most efficient overall engine"
+ },
+ "similar": [
+  "Lorenzo il Magnifico",
+  "Grand Austria Hotel",
+  "Tzolk'in: The Mayan Calendar",
+  "The Voyages of Marco Polo",
+  "Anachrony"
+ ],
+ "_fingerprint": "7682e13a5a7199d9",
+ "_name": "Golem"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "It's a two-phase roll-and-write: draft dice to use as workers placing them on a shared action board, then solve a polyomino puzzle fitting attractions and dinosaur pens onto your park sheet while connecting everything with paths to the exit. It carries over real thematic weight from the parent game and rewards planning ahead more than most roll-and-writes do.",
+ "praised": [
+  "Successfully translates the worker-placement/park-building feel of Dinosaur Island into a lighter roll-and-write format",
+  "Interesting dice-drafting layer adds a strategic wrinkle most roll-and-writes lack",
+  "Good production and clear iconography",
+  "Solid solo mode"
+ ],
+ "criticised": [
+  "Fiddly with several systems to track (dice values, DNA, attractions, paths) for a roll-and-write",
+  "Some randomness in which dice/actions are available can swing outcomes",
+  "Less thematic punch than the full board game it's based on",
+  "Rulebook/setup can feel like a lot for a 'write' game"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light drafting tension over shared dice/actions"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points come from multiple simultaneous tracks: dinosaur pens, attractions, path connections to exits, and set bonuses, so efficient polyomino packing across categories decides the winner"
+ },
+ "similar": [
+  "Welcome To...",
+  "Cartographers",
+  "Railroad Ink",
+  "Dinosaur Island",
+  "That's Pretty Clever!"
+ ],
+ "_fingerprint": "76fce48ca63519b5",
+ "_name": "Dinosaur Island: Rawr 'n Write"
+}

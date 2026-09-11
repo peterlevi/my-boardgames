@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Barrage is a tense, tightly interlocking euro about hydroelectric dam building where every action you take denies a resource, a build slot, or a turn-order position to someone else. It rewards long-term engine planning but punishes players who can't adapt when their planned spot on the river or in the turn order gets taken first.",
+ "praised": [
+  "Deep, tightly interlocking systems where resource, turn order, and board position all pressure each other",
+  "Strong player interaction through direct competition for limited spaces and resources, unusual for a heavy euro",
+  "High replayability from variable player powers, contracts, and modular board setup",
+  "Satisfying long-term engine building and combo potential"
+ ],
+ "criticised": [
+  "Very high complexity and rules overhead, steep learning curve for new players",
+  "Analysis paralysis and long turns, especially with four players",
+  "Turn order mechanism can feel punishing if you're consistently going last",
+  "Thin theme layered over a dense mechanical engine"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking and area denial over resources, build spots, and turn order"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Winning comes from combining power production, contract fulfillment, building bonuses, and end-game objectives rather than any single dominant strategy"
+ },
+ "similar": [
+  "Teotihuacan: City of Gods",
+  "The Gallerist",
+  "Tzolk'in: The Mayan Calendar",
+  "Great Western Trail",
+  "Bonfire"
+ ],
+ "_fingerprint": "a7a5b26dc4b1b552",
+ "_name": "Barrage"
+}

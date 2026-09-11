@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Imperial Steam is a dense, multi-layered economic game where you juggle worker placement-adjacent action selection, factory production, railway building, and contract fulfillment under constant time pressure, with an auction/bidding turn order that adds a tense meta-layer. It rewards tight efficiency and planning several turns ahead, ending abruptly once the Trieste connection is completed, which can catch slower-developing strategies off guard.",
+ "praised": [
+  "Tight, interlocking engine where every action has opportunity cost",
+  "Auction-based turn order adds meaningful tension and player interaction",
+  "High replayability from variable setup and multiple viable strategies",
+  "Satisfying sense of building and optimizing a growing economic engine",
+  "Good production quality and clear iconography for a heavy game"
+ ],
+ "criticised": [
+  "Sudden-death ending can feel abrupt and punish players who haven't converted progress to points yet",
+  "Steep learning curve and heavy rules overhead for a first play",
+  "Some luck/timing dependency in when the end trigger fires relative to your plans",
+  "Can suffer from analysis paralysis given the many interacting subsystems",
+  "Two-player experience seen as less dynamic than 3-4 players"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "auction-driven turn order and competition for routes/contracts"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Net worth at game end combines money, delivered contracts, factory/network development, and end-game bonuses, so diversified economic efficiency wins."
+ },
+ "similar": [
+  "Age of Steam",
+  "Brass: Birmingham",
+  "Barrage",
+  "Maracaibo",
+  "Great Western Trail"
+ ],
+ "_fingerprint": "ee5b808527bf71e2",
+ "_name": "Imperial Steam"
+}

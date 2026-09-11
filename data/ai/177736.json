@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "Uwe Rosenberg's magnum-opus Viking game has players sending out raiding and trading expeditions to collect a huge variety of resources, then fitting everything into a personal grid board like a sprawling game of Tetris, where uncovered squares cost negative points. It's a long, meaty puzzle with an enormous breadth of options and combos, prized for its depth but notorious for its rulebook and setup weight.",
+ "praised": [
+  "extremely satisfying spatial puzzle of packing goods onto your board",
+  "huge variety of strategies and combos across countless resource types and occupations",
+  "immense replayability and a strong sense of accomplishment"
+ ],
+ "criticised": [
+  "heavy rules overhead and long teach for newcomers",
+  "significant table/component footprint and setup/teardown time",
+  "can run very long, especially at higher player counts",
+  "mostly solitaire multiplayer experience with little direct interaction"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light resource competition"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "score nets covered board squares, animals, ships, weapons, and occupation bonuses against penalties for empty spaces, rewarding the tightest overall build"
+ },
+ "similar": [
+  "Le Havre",
+  "Agricola",
+  "Caverna",
+  "Nusfjord",
+  "Cottage Garden"
+ ],
+ "_fingerprint": "0f85bd42738ff6cf",
+ "_name": "A Feast for Odin"
+}

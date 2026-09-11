@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "Little Town is a light-medium worker placement game where you gather resources from a shared grid and build up your town with buildings that give ongoing bonuses. There's a clever tension in building things others can use (for a fee) versus keeping efficient combos to yourself.",
+ "praised": [
+  "clever building/renting mechanic",
+  "tight puzzle in only 4 rounds",
+  "quick to teach",
+  "nice production and modular board"
+ ],
+ "criticised": [
+  "can feel a bit dry or mechanical",
+  "limited replayability once patterns are learned",
+  "little direct player interaction beyond space contention"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "worker placement contention and paying rent on shared buildings"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points come from buildings built, resources banked, and end-game bonuses combined"
+ },
+ "similar": [
+  "Village",
+  "Grand Austria Hotel",
+  "Viticulture",
+  "Caverna",
+  "Barrage"
+ ],
+ "_fingerprint": "e27ea550f102780c",
+ "_name": "Little Town"
+}

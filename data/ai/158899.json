@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A chaotic, visual game where you queue up movement and shooting actions blind, then watch your plan collide with everyone else's as figures physically get punched off the 3D train car by car. It plays fast and loud, rewarding people who enjoy laughing at plans falling apart more than those who want tight control over outcomes.",
+ "praised": [
+  "The 3D train model and physical bumping/punching of figures is a huge tabletop presence",
+  "Programming actions blind creates genuine surprise and table talk",
+  "Fast, light, and very approachable for families and non-gamers",
+  "Character powers and the Marshal add variety without much added complexity"
+ ],
+ "criticised": [
+  "Programming can feel like it doesn't matter since bumps and shooting scramble your plan (some feel it undercuts strategy)",
+  "Night round (blind card-stacking) can feel like a coin flip",
+  "Player elimination/being knocked off the train can sideline someone briefly",
+  "Little to no strategy for experienced gamers once the novelty wears off"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "open conflict via punching, shooting, and bumping to disrupt others' plans"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Whoever collects the most loot (cash, jewels, the strongbox) across five rounds wins, with bullet wounds subtracting points"
+ },
+ "similar": [
+  "Flamme Rouge",
+  "Bandido",
+  "Ca$h 'n Guns",
+  "Libertalia",
+  "Cutthroat Caverns"
+ ],
+ "_fingerprint": "abf9f691458e8277",
+ "_name": "Colt Express"
+}

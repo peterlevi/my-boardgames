@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Players lay tiles to build an ever-growing, layered city, choosing whether to place tiles for immediate resources or points, or stack them atop existing tiles to expand their influence and score at game's end. It's a light-to-medium tile-laying game with a clever 'card as tile, tile as card' resource loop and neat area-influence scoring.",
+ "praised": [
+  "elegant, tactile layering mechanic where tiles double as cards",
+  "quick to teach and plays fast",
+  "good tension between short-term resources and long-term influence",
+  "solid solo variant"
+ ],
+ "criticised": [
+  "can feel a bit dry or abstract thematically",
+  "limited direct interaction beyond spatial competition",
+  "some randomness in tile draws",
+  "less depth than other Georges/heavier euros for veteran gamers"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "spatial competition for adjacency and territory influence"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points come from building height, district influence, and resource-card sets, rewarding whoever balances expansion with efficient tile use"
+ },
+ "similar": [
+  "Suburbia",
+  "Blueprints",
+  "Yokohama",
+  "Karesansho",
+  "Bruges"
+ ],
+ "_fingerprint": "5632d249d0d6e17e",
+ "_name": "Ginkgopolis"
+}

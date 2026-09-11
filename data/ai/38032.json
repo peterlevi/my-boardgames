@@ -1,0 +1,32 @@
+{
+ "confidence": "medium",
+ "summary": "Byzanz is a lean, tense bidding game where you pay with the very goods cards you're trying to collect, forcing constant trade-offs between hoarding cards for sets and spending them to win auctions. It plays fast and is driven almost entirely by auction psychology rather than direct player interaction outside the bidding.",
+ "praised": [
+  "Clever closed-economy bidding where cards double as currency and scoring material",
+  "Quick, tight playtime for the depth of decisions",
+  "Tension between saving cards for sets versus using them to bid"
+ ],
+ "criticised": [
+  "Can feel a bit dry or abstract thematically",
+  "Luck of the draw on which goods appear can swing outcomes",
+  "Repetitive auction structure may wear thin over multiple plays"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "competitive bidding for shared offers"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is whoever accumulates the most valuable completed sets of 3 matching goods cards through smart bidding and timing of when to sell"
+ },
+ "similar": [
+  "Ra",
+  "Traders of Genoa",
+  "Amun-Re",
+  "Medici",
+  "Web of Power"
+ ],
+ "_fingerprint": "55ed5c541ddbba37",
+ "_name": "Byzanz"
+}

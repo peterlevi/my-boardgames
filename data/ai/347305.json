@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A dense Vital Lacerda worker-placement engine-builder where you develop invention cards through stages (idea to invention to global spread), pulling levers across several interlocking boards to generate Intellectual Property Points. Turns are quiet and heads-down as each player optimizes their own engine, with occasional friction over shared worker-placement spots and card availability.",
+ "praised": [
+  "Tight, elegant interlocking systems typical of Lacerda's design",
+  "Strong sense of building an engine and watching it snowball",
+  "High replayability from variable inventions and multiple viable paths to points",
+  "Satisfying puzzle of sequencing actions efficiently",
+  "Solo mode is well regarded"
+ ],
+ "criticised": [
+  "Steep rules overhead and long teach/setup time",
+  "Heavy iconography that takes several plays to internalize",
+  "Analysis paralysis due to the number of simultaneous considerations",
+  "Low direct interaction can make multiplayer feel like parallel solitaire",
+  "High cost of entry (price, table space) for a niche heavy-gamer audience"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel engine-building with light blocking over shared worker spots and card draft"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "IPP accumulates from multiple systems (developing and spreading inventions, technology/economy/culture tracks, and bonus objectives), so the winner is whoever best diversifies and chains these scoring avenues"
+ },
+ "similar": [
+  "On Mars",
+  "Lisboa",
+  "Gaia Project",
+  "The Gallerist",
+  "Escape Plan"
+ ],
+ "_fingerprint": "d227f5825af89289",
+ "_name": "Inventions: Evolution of Ideas"
+}

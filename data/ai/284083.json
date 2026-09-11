@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A tightly designed cooperative trick-taking game where each player secretly holds individual card-winning goals for the round, and the team succeeds only if everyone hits theirs, with communication restricted to one card gesture per mission. The 50-mission campaign ramps difficulty steadily, turning ordinary trick-taking into a puzzle about sequencing and deduction under a near-silent table.",
+ "praised": [
+  "Brilliant, tense communication mechanic that makes trick-taking feel new",
+  "Escalating campaign structure gives a strong sense of progression and 'one more mission' pull",
+  "Extremely portable and quick to teach relative to its depth",
+  "Cheap price point for the amount of content"
+ ],
+ "criticised": [
+  "Later missions can feel like they require near-mind-reading or a lucky deal, adding perceived luck/frustration",
+  "Once the campaign is finished there's limited replayability of the same missions",
+  "A dominant or overly analytical player can quarterback the team, reducing others' agency",
+  "Some missions have unclear or fiddly rule interactions requiring FAQ lookups"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "Constrained communication and joint deduction toward shared/individual goals"
+ },
+ "win_criteria": "Cooperative goal",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The team wins or loses as a whole based solely on whether every player completes their assigned card-winning tasks for that mission."
+ },
+ "similar": [
+  "The Mind",
+  "Sky Team",
+  "Decrypto",
+  "Hanabi",
+  "The Crew: Mission Deep Sea"
+ ],
+ "_fingerprint": "ced20510e0b67697",
+ "_name": "The Crew: The Quest for Planet Nine"
+}

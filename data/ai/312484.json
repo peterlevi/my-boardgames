@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "Lost Ruins of Arnak blends deck-building with worker placement as you explore an island, gain resources, and fight guardians to unlock new areas and actions. It rewards building an efficient engine across cards, workers, and resources while managing a limited number of actions per round.",
+ "praised": [
+  "excellent fusion of deck-building and worker placement",
+  "gorgeous art and thematic exploration feel",
+  "tight, satisfying five-round structure",
+  "good solo mode"
+ ],
+ "criticised": [
+  "can feel a bit fiddly with many resource types",
+  "limited direct interaction between players",
+  "some randomness in card/site draws"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "worker placement contention over shared spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points come from research track progress, artifacts, guardians defeated, and end-game card bonuses"
+ },
+ "similar": [
+  "Res Arcana",
+  "Tzolk'in: The Mayan Calendar",
+  "Clank!",
+  "Wingspan",
+  "Everdell"
+ ],
+ "_fingerprint": "b2332709e1222171",
+ "_name": "Lost Ruins of Arnak"
+}

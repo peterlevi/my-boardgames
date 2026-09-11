@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Bus is a brutal, cutthroat pickup-and-deliver game where the real battle is over turn order itself, since choosing certain actions first means executing them last, forcing constant bluffing about when to commit. It rewards players who can read the shifting passenger flows and route contention on the board far more than raw efficiency, making it one of the more mentally taxing Euros of its era.",
+ "praised": [
+  "the clever inverted turn-order mechanic that turns action selection into a game of chicken",
+  "deep, tense player interaction over shared board space and routes",
+  "high replayability from the modular, ever-shifting city and passenger destinations",
+  "rewards careful planning and reading opponents over luck"
+ ],
+ "criticised": [
+  "steep rules overhead and long teach for new players",
+  "long playtime that can drag, especially with full player counts",
+  "punishing for newcomers playing against experienced players",
+  "out-of-print scarcity and high secondary market prices"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking and area denial via route/turn-order chicken"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the winner is decided almost entirely by how many passengers you successfully deliver via your bus routes each round"
+ },
+ "similar": [
+  "Antiquity",
+  "Food Chain Magnate",
+  "Roads & Boats",
+  "The Great Zimbabwe",
+  "Indonesia"
+ ],
+ "_fingerprint": "4a848d2cd2cb98f0",
+ "_name": "Bus"
+}

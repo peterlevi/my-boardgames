@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Concordia Venus plays like a leaner, more tactical Concordia: you're still building an efficient card-driven engine to produce and trade goods across a network of cities, but the Venus role cards and consolidation/salary mechanics push you toward more aggressive card recycling and tighter resource plans. It's a quiet, brain-burny optimization puzzle with almost no direct conflict, decided by efficient route-building and card synergy rather than confrontation.",
+ "praised": [
+  "Elegant, tight ruleset that still yields deep strategic depth",
+  "Multiple viable paths to victory (production, trade, city-founding)",
+  "Venus cards and role-swapping add replayability over base Concordia",
+  "Low luck, high control — a true strategy gamer's game",
+  "Modular maps keep games feeling fresh"
+ ],
+ "criticised": [
+  "Very low direct interaction; can feel solitaire-ish / multiplayer solitaire",
+  "Scoring/VP calculation at the end is fiddly and can be an 'aha' surprise",
+  "Analysis paralysis potential given the planning depth",
+  "Theme is thin — mechanically a Roman-flavored optimization engine",
+  "Some feel it's only incrementally different from original Concordia, not essential if you own that"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light competition over city spots and card availability"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final scoring multiplies goods-production strength by resource types collected across cards, so the winner is decided by whoever built the most efficient, diversified production-and-trade engine"
+ },
+ "similar": [
+  "Concordia",
+  "Le Havre",
+  "Puerto Rico",
+  "The Voyages of Marco Polo",
+  "Trajan"
+ ],
+ "_fingerprint": "c107fbecae5e84da",
+ "_name": "Concordia Venus"
+}

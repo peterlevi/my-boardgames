@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A tighter, faster-playing sibling to the original Dominant Species, where you place action pawns to gain domination cards, adapt your species to survive shifting ocean and shoreline tiles, and outcompete rivals before recurring extinction events wipe out the unprepared. It's still a dense worker-placement/area-influence engine, but trimmed down in rules overhead and playtime compared to its predecessor.",
+ "praised": [
+  "Tense, meaningful worker placement where action order and blocking matter a lot",
+  "Strong theme integration — adaptation, migration, and extinction feel mechanically justified",
+  "Noticeably shorter and more approachable than the original Dominant Species while keeping its depth",
+  "High replayability from the four asymmetric animal classes and variable card/tile draws",
+  "Satisfying long-term strategic tension between spreading wide and dominating specific habitats"
+ ],
+ "criticised": [
+  "Still a heavy, brain-burny game with real analysis paralysis potential",
+  "Runtime and rules overhead remain a lot to ask of casual groups despite being 'the shorter one'",
+  "Multiplayer solitaire feel at lower player counts",
+  "Can feel swingy or punishing when an extinction event catches you unprepared",
+  "Compared favorably but sometimes seen as 'Dominant Species lite' by fans of the original"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking and area denial via worker placement and area majority"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Victory points come from multiple domination cards and habitat/species scoring at various tile ascensions, so success depends on diversifying scoring sources rather than one dominant strategy."
+ },
+ "similar": [
+  "Dominant Species",
+  "Tichu",
+  "Bios: Megafauna",
+  "Evolution",
+  "Trickerion: Legends of Illusion"
+ ],
+ "_fingerprint": "4f26cfe1ed4bf46a",
+ "_name": "Dominant Species: Marine"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Cuzco (a re-theme of Java) is a tight tile-laying game where players place hexagonal terrain and building tiles to grow settlements, competing for majority control of temples, markets, and palaces at scoring intervals. It's a dry, cerebral optimization puzzle about timing your placements and majorities rather than direct conflict.",
+ "praised": [
+  "Elegant, tightly interlocking tile-placement and scoring system",
+  "Meaningful area-majority tension without being mean",
+  "High replayability due to variable map growth",
+  "Rewards careful planning and efficient action use"
+ ],
+ "criticised": [
+  "Abstract theme feels pasted on and forgettable",
+  "Can be fiddly to teach with several scoring triggers to track",
+  "Downtime in higher player counts",
+  "Auction/bidding for turn order can feel swingy"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "area majority tension and zone of control, mostly indirect"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Points come almost entirely from controlling majorities in temples, palaces, and markets at three scoring rounds"
+ },
+ "similar": [
+  "Java",
+  "Mexica",
+  "Tikal",
+  "Torres",
+  "Amun-Re"
+ ],
+ "_fingerprint": "9b6e062c01a1380c",
+ "_name": "Cuzco"
+}

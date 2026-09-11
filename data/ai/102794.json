@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Caverna is a big, generous worker-placement farming game where you build up a dwarf family, cave, and land while juggling multiple viable strategies (farming, mining, weapons for expeditions) with almost no direct conflict. It has a gentler, more forgiving feel than Agricola since you're never fully locked out of feeding your family or forced into begging cards.",
+ "praised": [
+  "Huge variety of viable strategies and near-total freedom from a hand of restrictive cards",
+  "Satisfying sense of building up a personal empire/engine",
+  "Tactile, chunky components and a beautiful, functional player board",
+  "Less punishing and more solo-friendly than Agricola",
+  "Excellent standalone solo mode"
+ ],
+ "criticised": [
+  "Long playtime and significant downtime with full player counts",
+  "Analysis paralysis from the sheer number of options each turn",
+  "Very heavy table presence and setup/teardown time",
+  "Weapons/expedition subsystem feels like a mini-game bolted onto the farming core",
+  "Can feel like a solitaire multiplayer game with little direct interaction"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "worker placement blocking, mostly parallel empire-building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from a wide scoring table covering rooms, fields, animals, resources, and family size, so the winner is whoever builds the most efficient, well-rounded farm rather than one who maximizes a single category"
+ },
+ "similar": [
+  "Agricola",
+  "Le Havre",
+  "A Feast for Odin",
+  "Fields of Arle",
+  "Barenpark"
+ ],
+ "_fingerprint": "ce920d68d09d2b39",
+ "_name": "Caverna: The Cave Farmers"
+}

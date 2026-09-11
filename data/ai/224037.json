@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Codenames: Duet is a two-player cooperative twist on Codenames, where both players see different secret agent maps and work together giving one-word clues to identify all agents within a limited number of turns before hitting an assassin. It transforms the competitive party game into a tense, collaborative puzzle for couples or pairs.",
+ "praised": [
+  "clever cooperative redesign that works great for exactly two players",
+  "tense shared-goal puzzle-solving",
+  "quick setup and replayability with the same box",
+  "great for partners/couples as a regular two-player game"
+ ],
+ "criticised": [
+  "loses the multiplayer party energy of the original",
+  "some clue combos feel unsolvable/unlucky",
+  "can be frustrating when you keep hitting near-misses",
+  "less appealing to groups who wanted the original's social banter"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "cooperative clue-giving and guessing"
+ },
+ "win_criteria": "Cooperative goal",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the team either finds all agents within the turn limit or loses by hitting an assassin, with no points involved"
+ },
+ "similar": [
+  "Codenames",
+  "Codenames: Pictures",
+  "The Crew: The Quest for Planet Nine",
+  "Hanabi",
+  "Decrypto"
+ ],
+ "_fingerprint": "9aad66c36a7cc0db",
+ "_name": "Codenames: Duet"
+}

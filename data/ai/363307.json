@@ -1,0 +1,32 @@
+{
+ "confidence": "medium",
+ "summary": "A solo-friendly ecosystem-building puzzle where players draft biome cards to grow forests on their own board, balancing tree height, sunlight, and adjacency so their canopy doesn't shade itself out. It plays as a quiet, contemplative optimization game rather than a confrontational one, with light indirect interaction over card availability.",
+ "praised": [
+  "soothing, meditative theme executed well through art and components",
+  "clever light/shadow mechanic for tree growth adds real puzzle depth",
+  "works well solo and scales smoothly to more players"
+ ],
+ "criticised": [
+  "fairly solitaire-feeling even in multiplayer",
+  "some find the scoring and bonus tracking fiddly",
+  "limited long-term replay variety once the systems are learned"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light drafting contention"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points accrue from tree growth, biome completion, and end-game bonus cards, rewarding whoever built the most efficient ecosystem"
+ },
+ "similar": [
+  "Cascadia",
+  "Calico",
+  "Photosynthesis",
+  "Canopy",
+  "Verdant"
+ ],
+ "_fingerprint": "b7249f46e7e322cf",
+ "_name": "Evergreen"
+}

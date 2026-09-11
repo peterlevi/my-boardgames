@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Boonlake is a dense, multi-track engine-builder where every action you take also benefits your opponents to some degree, forcing you to weigh personal gain against how much you're boosting the table. Turns are quick and elegant but the game demands constant multi-tasking across resource production, tile placement, ship movement, and card synergies, giving it a heavier feel than its short playtime suggests.",
+ "praised": [
+  "clever shared-action mechanism that creates tension without direct conflict",
+  "smooth, low-downtime turns despite high strategic depth",
+  "strong replayability from variable setup and modular cards",
+  "satisfying engine-building and resource conversion puzzle",
+  "solid solo mode"
+ ],
+ "criticised": [
+  "steep rules overhead and iconography to learn before it clicks",
+  "can feel dry or clinical, low table talk and narrative flavor",
+  "some player-count and card-combo imbalance reported",
+  "risk of analysis paralysis with so many simultaneous options"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "shared benefit from chosen actions, mostly parallel engine-building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final score aggregates points from buildings, cattle, exploration, cards, and end-game bonuses, rewarding whichever engine you assembled most efficiently"
+ },
+ "similar": [
+  "Great Western Trail",
+  "Barrage",
+  "Maracaibo",
+  "Grand Austria Hotel",
+  "Trickerion"
+ ],
+ "_fingerprint": "43454eb53ea56b44",
+ "_name": "Boonlake"
+}

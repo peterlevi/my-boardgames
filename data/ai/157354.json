@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Players take turns picking up meeples from a shared board in a Mancala-like sowing action, capturing the last-dropped-on square and its tribe for various effects, then sending their Djinn/Elder meeples off to score at game end. It's a tense spatial puzzle where good squares get sniped constantly and the board shrinks as tiles and camels are removed.",
+ "praised": [
+  "clever mancala-style pick-up-and-deliver mechanic",
+  "tight, tense turn order with lots of blocking",
+  "high player interaction without direct conflict",
+  "beautiful production and components",
+  "quick to teach relative to its depth"
+ ],
+ "criticised": [
+  "can have significant downtime as the board narrows late game",
+  "strong 'take that' feel can frustrate newer players",
+  "some combos (assassins, viziers) can feel swingy or snowbally",
+  "two-player feels quite different/less interactive than 3-4"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking, denial, and direct meeple/tile removal"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points come from tribe combos, resources, gold, and end-game bonus cards, so the winner is whoever chains the most efficient multi-source engine"
+ },
+ "similar": [
+  "Century: Spice Road",
+  "Yellow & Yangtze",
+  "Trajan",
+  "The Isle of Cats",
+  "Lords of Waterdeep"
+ ],
+ "_fingerprint": "9cf6dc5427810133",
+ "_name": "Five Tribes: The Djinns of Naqala"
+}

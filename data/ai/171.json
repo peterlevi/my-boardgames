@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Chess is a pure two-player abstract battle of maneuver and calculation with no luck and no hidden information, where every piece's fixed movement pattern creates a vast space of tactical and positional possibilities. Games range from quick tactical skirmishes to long, tense strategic maneuvering, and outcomes are determined entirely by the players' skill and preparation.",
+ "praised": [
+  "Infinite strategic depth from simple rules",
+  "Pure skill expression with zero luck",
+  "Enormous body of theory, literature, and community support",
+  "Endlessly replayable with no two games alike",
+  "Widely accessible and playable at any level from casual to professional"
+ ],
+ "criticised": [
+  "Steep skill ceiling means mismatched players have little fun",
+  "Can be slow and mentally exhausting at longer time controls",
+  "Opening theory memorization can feel like a barrier to entry",
+  "No hidden information or variance can make it feel dry to some casual players"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "direct confrontation and calculated attrition"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The game is decided by checkmate, resignation, or draw, not by any point accumulation."
+ },
+ "similar": [
+  "Xiangqi",
+  "Shogi",
+  "Go",
+  "Draughts (Checkers)",
+  "Hive"
+ ],
+ "_fingerprint": "0289ee9d912cf9af",
+ "_name": "Chess"
+}

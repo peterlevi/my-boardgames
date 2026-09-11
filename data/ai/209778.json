@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "Magic Maze is a real-time cooperative game where players silently control all characters (not just their own) using shared movement icons, racing against a sand timer to complete a heist without speaking. The communication restriction creates a unique, often hilarious, chaotic tension as players must anticipate each other's moves.",
+ "praised": [
+  "innovative no-talking real-time co-op mechanic",
+  "hilarious chaotic tension",
+  "quick 15-minute plays",
+  "scales well solo to eight players"
+ ],
+ "criticised": [
+  "frustration when players struggle to communicate silently",
+  "can feel stressful rather than fun for some groups",
+  "modular map setup takes a bit of time relative to playtime"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "silent real-time cooperative coordination"
+ },
+ "win_criteria": "Cooperative goal",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the team either escapes the maze in time or fails, with no points involved"
+ },
+ "similar": [
+  "Escape: The Curse of the Temple",
+  "The Mind",
+  "Space Alert",
+  "Captain Sonar",
+  "Pandemic"
+ ],
+ "_fingerprint": "6760a9ab070ac3ae",
+ "_name": "Magic Maze"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "You spend most of the game routing a rondel-like path north to south, deciding when to spend actions upgrading your cattle, buildings, and railroad workers versus rushing herds to Kansas City for delivery bonuses. It rewards long-term engine building over multiple deliveries rather than any single big score.",
+ "praised": [
+  "Tight, interlocking engine-building with multiple viable strategies",
+  "High replayability from variable building setup and station tiles",
+  "Satisfying tension between short-term cash needs and long-term engine investment",
+  "Strong player agency with few wasted turns"
+ ],
+ "criticised": [
+  "Steep rules overhead and long first play for new groups",
+  "Some luck/timing dependency on which buildings appear along the trail",
+  "Can run long at higher player counts, with downtime between turns",
+  "Kansas City auction/bonus spaces can feel swingy"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "spatial blocking on the trail and building slots, indirect competition for scoring bonuses"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from cattle delivered, buildings built, railroad progress, objective cards, and station bonuses, so the winner is whoever best balances several engines rather than maxing one"
+ },
+ "similar": [
+  "Terraforming Mars",
+  "Le Havre",
+  "Brass: Birmingham",
+  "Trickerion: Legends of Illusion",
+  "Amerigo"
+ ],
+ "_fingerprint": "39d4637faa549577",
+ "_name": "Great Western Trail"
+}

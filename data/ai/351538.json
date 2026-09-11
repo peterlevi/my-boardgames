@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Bamboo is a dense action-selection and tile-optimization game where you place bamboo tiles onto a shared board to trigger effects, then spend those resources on personal home-tile puzzles for balance, cooking, and finance. It plays like a lighter cousin of Bitoku, with tight turn order tension over which spots on the shared board get taken and a heavy focus on optimizing your own tableau over four years of seasonal turns.",
+ "praised": [
+  "Satisfying puzzle of optimizing home tiles and balance patterns",
+  "Good production and thematic art consistent with the Kemushi series",
+  "Meaningful tension over shared board spaces without being overly confrontational",
+  "Strong sense of progression across the four game-years"
+ ],
+ "criticised": [
+  "Rulebook and icon-heavy symbology can be a steep initial learning curve",
+  "Some player-count and turn-order imbalance, especially at higher player counts",
+  "Can feel a bit dry or overly mechanical/soulless despite the theme",
+  "Runtime feels long relative to the depth of decisions for some players"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial over shared action/board spaces, otherwise mostly parallel optimization"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Final score is an accumulation across several home-tile categories (balance, cooking, finance, home improvement) plus bonuses, so the winner is whoever best balances multiple scoring engines rather than maxing one."
+ },
+ "similar": [
+  "Bitoku",
+  "Silk",
+  "Everdell",
+  "Barrage",
+  "Trickerion"
+ ],
+ "_fingerprint": "ff198fafbc9cca07",
+ "_name": "Bamboo"
+}

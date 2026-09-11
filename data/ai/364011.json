@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "It plays like a leaner, more elegant remix of the original Great Western Trail, replacing the Kansas City hiring puzzle with a farmer-recruitment and grain-economy system that feels tighter and less fiddly. Games tend to be faster and slightly less brain-burning than the original while keeping the same core tension of engine-building on your player board versus racing the rondel to Buenos Aires.",
+ "praised": [
+  "Cleaner, more streamlined rules than the original GWT",
+  "Farmer/grain mechanic adds a fresh, well-integrated twist",
+  "Strong player board upgrade puzzle and engine building",
+  "Shorter playtime and less downtime than the original",
+  "Works well solo"
+ ],
+ "criticised": [
+  "Less iconic/thematic than the cowboy original for some fans",
+  "Some feel it's a bit too similar to GWT rather than a bold new game",
+  "Map/route choices can feel less dramatic than the original's shortcuts",
+  "Still a heavy-ish rules overhead for newcomers"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "route/tile drafting and light blocking on the shared board"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from cattle deliveries, buildings, city/boat tiles, objectives, and engine efficiency, so the winner is decided by who builds the best combination of scoring sources."
+ },
+ "similar": [
+  "Great Western Trail",
+  "Res Arcana",
+  "Maracaibo",
+  "Underwater Cities",
+  "Terra Mystica"
+ ],
+ "_fingerprint": "ba331928b0e5e99a",
+ "_name": "Great Western Trail: Argentina"
+}

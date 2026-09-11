@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Codenames is a light social word-association party game where two spymasters give one-word clues to help their teammates identify their team's agents on a shared grid of words, while avoiding the opposing team's agents and the deadly assassin. It plays fast, scales to large groups, and lives or dies on the cleverness and wit of the clue-givers.",
+ "praised": [
+  "extremely easy to teach and universally accessible",
+  "clever, memorable, laugh-out-loud clue moments",
+  "scales well to large groups",
+  "endlessly replayable with the same components"
+ ],
+ "criticised": [
+  "heavily dependent on having witty players; weaker with mismatched groups",
+  "the assassin can end a game abruptly and feel anticlimactic",
+  "language/culture-dependent clues can confuse some players",
+  "less fun with only 2-3 people who overlap awkwardly"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "team communication and clue-guessing under uncertainty"
+ },
+ "win_criteria": "Race to a finish",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the team that contacts all of its own agents first wins, with no accumulating point total"
+ },
+ "similar": [
+  "Codenames: Duet",
+  "Codenames: Pictures",
+  "Just One",
+  "Decrypto",
+  "Wavelength"
+ ],
+ "_fingerprint": "e117a5b810e293c9",
+ "_name": "Codenames"
+}

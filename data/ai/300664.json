@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Arkwright: The Card Game compresses the sprawling economic simulation of the original Arkwright into a leaner, faster card-driven package where you build and upgrade factories, manage workforce and quality, and time your production against a fluctuating market. It still feels like running a company across the Industrial Revolution, with tight decisions about loans, shares, and when to sell versus reinvest.",
+ "praised": [
+  "Captures much of the depth and satisfying economic engine-building of the original Arkwright in a shorter playtime",
+  "Clever multi-use cards that create meaningful trade-offs each turn",
+  "Strong sense of running an evolving business with real long-term planning",
+  "More accessible entry point into the Arkwright system without the huge board and long runtime"
+ ],
+ "criticised": [
+  "Still a heavy, fiddly game with a steep learning curve and dense rulebook",
+  "Player elimination via bankruptcy can leave someone out of the game early",
+  "Some feel it loses a bit of the tactile grandeur and tension of the original big-box version",
+  "Market and scoring interactions can feel abstract or hard to parse for new players"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "indirect competition through shared market saturation and open drafting of development cards"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Final score blends factory production efficiency, share value, development track progress, and end-game bonuses, so success comes from balancing multiple economic engines rather than one metric."
+ },
+ "similar": [
+  "Arkwright",
+  "Brass: Birmingham",
+  "Age of Steam",
+  "Container",
+  "Food Chain Magnate"
+ ],
+ "_fingerprint": "f9247654f57bb8c4",
+ "_name": "Arkwright: The Card Game"
+}

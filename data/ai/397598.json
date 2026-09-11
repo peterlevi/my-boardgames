@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Uprising keeps the core deck-building/worker-placement loop of Dune: Imperium intact while adding new factions, sandworm-riding, spy tokens, and asymmetric team play for six; it plays fast and tense, with agonizing worker-placement choices every round. It feels both familiar to fans of the original and meaningfully fresh thanks to new cards, the Fremen/Smugglers factions, and the redesigned Landsraad-style contract system.",
+ "praised": [
+  "Tense worker placement with meaningful blocking and denial",
+  "Strong theme integration (spice, sandworms, factions, conflict)",
+  "High replayability from combat/conflict variability and modular content",
+  "New 6-player team mode adds a fresh way to experience the game",
+  "Streamlines and improves on some base-game rough edges (contracts, tech cards)"
+ ],
+ "criticised": [
+  "Can feel like 'more of the same' to owners of the original Dune: Imperium",
+  "Rules overhead increases with new mechanisms (sandworms, spies, contracts)",
+  "Compatibility/integration with base game and expansions can be confusing to track",
+  "Combat can occasionally feel swingy or luck-influenced via troop/agent card draws"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker placement blocking, area control combat, and open drafting"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Victory points come from combat wins, Landsraad/contract objectives, Fremen alliance and sandworm actions, and intrigue/tech card synergies, so multiple viable scoring paths compete for the win."
+ },
+ "similar": [
+  "Dune: Imperium",
+  "Res Arcana",
+  "Everdell",
+  "Lords of Waterdeep",
+  "Tyrants of the Underdark"
+ ],
+ "_fingerprint": "942c85ec1ab60d65",
+ "_name": "Dune: Imperium – Uprising"
+}

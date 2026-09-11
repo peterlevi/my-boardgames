@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Acquire is a lean, almost puzzle-like exercise in timing: you place tiles to grow hotel chains and buy stock, but the real game is watching for mergers and maneuvering to hold majority/minority shares right before a chain gets swallowed. Turns are fast and rules are simple, yet the stock-value math and merger bonuses create surprisingly sharp, cutthroat decisions.",
+ "praised": [
+  "Extremely clean, teachable rules that still yield deep strategic tension",
+  "The merger/majority-bonus mechanic feels clever and rewards paying attention to the board",
+  "Fast turns keep the game moving despite meaningful decisions",
+  "Holds up remarkably well as one of the earliest modern economic games"
+ ],
+ "criticised": [
+  "Tile draw luck can hand someone a dominant position or trigger a merger at a bad time",
+  "Can produce kingmaker moments where a losing player's merger choice decides the winner",
+  "Downtime and fiddly share bookkeeping increase with 5-6 players",
+  "Endgame timing (when to end it) can feel like a swingy, sometimes controversial decision"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "stock speculation and merger timing/takeovers"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is decided almost entirely by cash plus stock value, driven by who holds majority/minority positions in chains when mergers happen."
+ },
+ "similar": [
+  "Chinatown",
+  "Union Pacific",
+  "Container",
+  "Age of Steam",
+  "Airlines Europe"
+ ],
+ "_fingerprint": "c2676f7442dd3f02",
+ "_name": "Acquire"
+}

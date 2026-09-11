@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A dense worker-placement/bidding game where the modular board means the available action spots shift each round, forcing constant replanning around a tight economic engine of materials, patrons, art, and building levels. It rewards efficient multi-turn planning and punishes players who get outbid or locked out of key spots, with a real risk of losing workers on the 'free' actions.",
+ "praised": [
+  "Clever modular board that changes the game every session",
+  "Tight, interlocking economic engine with meaningful decisions",
+  "High replayability due to variable action availability",
+  "Satisfying tension between free-but-risky and paid-but-safe actions"
+ ],
+ "criticised": [
+  "Steep rules overhead and learning curve for new players",
+  "Can feel fiddly/overloaded with tracks and sub-systems",
+  "Downtime and analysis paralysis in higher player counts",
+  "Bidding/blocking can feel harsh for newer players caught unaware"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial via worker placement and bidding"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from multiple interacting systems — building levels, art sales, patrons, and prestige from the action board — so the winner is usually whoever balances several engines rather than maxing one."
+ },
+ "similar": [
+  "Le Havre",
+  "Caylus",
+  "Vinhos",
+  "Antike Duo",
+  "Village"
+ ],
+ "_fingerprint": "1914c8238493387f",
+ "_name": "Bruxelles 1893"
+}

@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "This deluxe edition of Love Letter is the same beloved 16-card deduction game: players deduce and eliminate opponents by playing character cards with special powers, trying to be the last one holding (or holding the highest) card. Rounds are extremely short and rely heavily on bluffing and reading opponents.",
+ "praised": [
+  "extremely quick and easy to teach",
+  "tense bluffing and deduction",
+  "great portability and production in this edition",
+  "works well as a filler or icebreaker"
+ ],
+ "criticised": [
+  "luck-heavy, especially in short rounds",
+  "can feel too light for gamer groups",
+  "player elimination within rounds, though rounds are short"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "deduction, bluffing, and direct targeted elimination"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "winner is whoever accumulates enough favor tokens by surviving rounds, not by point totals"
+ },
+ "similar": [
+  "Coup",
+  "The Fox in the Forest",
+  "Sheriff of Nottingham",
+  "Skull",
+  "No Thanks!"
+ ],
+ "_fingerprint": "3d8e9433d1b7e59d",
+ "_name": "Love Letter"
+}

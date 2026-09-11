@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Ark Nova is a dense, engine-building zoo management game where you juggle five action cards whose power depends on their position in a rotating track, building enclosures and acquiring animals with specific space, ecosystem, and continent requirements. It rewards long-term planning and synergy-spotting over reactive play, with most of the tension coming from managing your own tableau rather than direct clashes with opponents.",
+ "praised": [
+  "Deep, satisfying engine-building with strong card synergies",
+  "High replayability due to huge card pool and variable setup",
+  "Thematic cohesion between mechanics and zoo/conservation theme",
+  "Rewarding sense of progression as your zoo snowballs"
+ ],
+ "criticised": [
+  "Steep learning curve and heavy rulebook/iconography overhead",
+  "Long playtime, especially for first few games or with four players",
+  "Analysis paralysis, particularly in the CARDS/ANIMALS phases",
+  "Low direct interaction can make it feel like solitaire at a shared table"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light drafting competition for cards and end-game timing"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is decided by the combination of appeal and conservation points, but conservation points dominate and require concentrated investment in a small set of engine synergies to maximize."
+ },
+ "similar": [
+  "Terraforming Mars",
+  "Great Western Trail",
+  "Res Arcana",
+  "Praga Caput Regni",
+  "Barrage"
+ ],
+ "_fingerprint": "4cd867fbb31dc8b7",
+ "_name": "Ark Nova"
+}

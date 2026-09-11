@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Hegemony is a dense, asymmetric economic-political simulation where each player runs a different class with fundamentally different win conditions and mechanisms, engaging in production, labor markets, taxation, and legislative votes across a full economic cycle each round. It plays like a cross between a euro engine-builder and a political simulation, with heavy interlocking systems (loans, contracts, unemployment, class struggle) that reward players who understand macroeconomics.",
+ "praised": [
+  "Deep, believable economic simulation with genuinely asymmetric roles",
+  "Legislation/voting system creates real negotiation and shifting alliances",
+  "High replayability due to class asymmetry and variable strategies",
+  "Satisfying engine-building within each class's distinct toolkit"
+ ],
+ "criticised": [
+  "Very steep learning curve and long teach time",
+  "Long playtime, especially first few plays",
+  "Runaway leader potential if one class snowballs economically",
+  "Middle class role sometimes seen as less impactful than the other three"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "negotiation, trading, and legislative voting alongside competitive market/economic pressure"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Each class has its own distinct victory metric (e.g. capital, popularity, wages, budget) determined by that class's economic performance and legislative influence over the game"
+ },
+ "similar": [
+  "Arkwright",
+  "Brass: Birmingham",
+  "Kapital",
+  "A Few Acres of Snow",
+  "Root"
+ ],
+ "_fingerprint": "51bc6fde7b5877d5",
+ "_name": "Hegemony: Lead Your Class to Victory"
+}

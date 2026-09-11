@@ -1,0 +1,34 @@
+{
+ "confidence": "medium",
+ "summary": "A Splotter Spelen heavyweight where players build up an early automobile company, using tile placement to assemble cars from parts (engines, brakes, steering, wheels) while racing up tech tracks as safety regulations tighten each era. Like other Splotter titles it plays as a tightly interlocking economic engine with commodity speculation and real teeth in the player interaction, running 3-4 hours once everyone knows the rules.",
+ "praised": [
+  "Deeply interlocking systems where every decision has knock-on effects, classic Splotter design",
+  "Satisfying puzzle of assembling car variants to match shifting market/regulatory demand",
+  "Strong long-term strategic tension between expanding the factory and cashing in early",
+  "High replayability from the modular board and tech-track variation"
+ ],
+ "criticised": [
+  "Very steep rules overhead and onboarding, unfriendly to first-time players",
+  "Long playtime (3-4+ hours) that punishes analysis paralysis",
+  "Interaction can feel punishing/mean, closer to a Splotter-style economic fight than a friendly game",
+  "Small print run typical of Splotter releases makes it hard to acquire"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking and area denial, commodity speculation"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "the winner is decided by balancing factory investment, tech-track progress, and car sales against the shifting cost of raw components"
+ },
+ "similar": [
+  "Food Chain Magnate",
+  "Antiquity",
+  "The Great Zimbabwe",
+  "Indonesia",
+  "Brass: Birmingham"
+ ],
+ "_fingerprint": "fc01da88b7375204",
+ "_name": "Horseless Carriage"
+}

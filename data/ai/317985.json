@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Beyond the Sun is a tight, engine-building worker placement game where every action is a meaningful opportunity cost, and the tech tree branches shape a distinct strategic path each game since there's no combat or player elimination. It plays fast for its weight, with tension coming from racing for limited achievement tiles and contested systems rather than direct conflict.",
+ "praised": [
+  "Elegant tech tree that creates real strategic divergence between games",
+  "No player elimination or direct attacks despite the space civ theme",
+  "Tight, efficient action economy where every turn matters",
+  "Clean rules for the depth offered",
+  "Strong replayability from variable tech paths and achievements"
+ ],
+ "criticised": [
+  "Player interaction can feel indirect/low for some who want more conflict",
+  "Achievement/tech tile availability can create swingy 'race' moments",
+  "Some find the tech tree overwhelming to parse on first plays",
+  "Solo-ish feel at times despite shared board",
+  "Iconography and tech tree layout can be a barrier initially"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial over systems and achievements, indirect tech-tree racing"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from technologies researched, economic development, system control/colonization, and achievements/events, so the winner is usually whoever balances several of these engines rather than maxing one"
+ },
+ "similar": [
+  "Terraforming Mars",
+  "Race for the Galaxy",
+  "Gaia Project",
+  "Underwater Cities",
+  "Anachrony"
+ ],
+ "_fingerprint": "d704db01e7930633",
+ "_name": "Beyond the Sun"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A tight, fast-playing cube-rail auction game where players bid on shares, build track, and time dividend calls to maximize their own stock value while starving rivals of income; games run under an hour but every auction and build decision is loaded with opportunity cost. It's considered one of the best entry points into the Winsome/18xx-style stock-and-rail genre because of its short length and clean rules.",
+ "praised": [
+  "Short playtime relative to the depth of decisions",
+  "Tense, meaningful share auctions where price-setting matters as much as buying",
+  "Good gateway into 18xx-style stock/rail mechanics without the complexity",
+  "High replayability from variable company performance each game"
+ ],
+ "criticised": [
+  "Can feel swingy or luck-influenced by which companies randomly draw good routes",
+  "Runaway leader potential if one player dominates early share/track decisions",
+  "Thin theme, essentially an abstract economic puzzle",
+  "Some feel it's overshadowed by other titles in the same Winsome/Iron Rail lineage"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "auction bidding and share/track competition"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is whoever ends with the highest combined cash and stock value, driven mainly by smart auction timing and dividend calls"
+ },
+ "similar": [
+  "Chicago Express",
+  "Australian Rails",
+  "London (Winsome)",
+  "Steel Driver",
+  "1830: Railways & Robber Barons"
+ ],
+ "_fingerprint": "7c04737d46749c98",
+ "_name": "Irish Gauge"
+}

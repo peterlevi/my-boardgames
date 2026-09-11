@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Caylus 1303 is a streamlined reimagining of the classic worker-placement game Caylus, where players place workers to gather resources and construct buildings while competing for limited action slots. It trims the complexity of the original into a faster, more accessible but still meaty euro experience.",
+ "praised": [
+  "successfully modernizes and speeds up the classic Caylus formula",
+  "meaningful worker-placement blocking and tension",
+  "good variability from modular setup and characters",
+  "faster playtime than the original while retaining depth"
+ ],
+ "criticised": [
+  "loses some of the depth/crunch fans of the original wanted",
+  "still has a learning curve for newcomers",
+  "some feel it's a lesser echo of the 2005 original",
+  "building selection can feel swingy"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "worker placement blocking and competition for limited actions"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "victory points come from buildings built, resources banked, and favor with the provost/king mechanisms"
+ },
+ "similar": [
+  "Caylus",
+  "Le Havre",
+  "Lords of Waterdeep",
+  "旅 (The Voyages of Marco Polo)",
+  "Coimbra"
+ ],
+ "_fingerprint": "b8a703cd1c2bd383",
+ "_name": "Caylus 1303"
+}

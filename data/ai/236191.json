@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "London is a card-driven city-building game where you develop your city hand by playing cards, then periodically 'run' the city to trigger all your building effects at once in an efficient engine-building sequence. The core tension is managing poverty and loans against building an efficient, high-scoring city.",
+ "praised": [
+  "elegant hand-management and engine building",
+  "quick turns despite depth",
+  "strong replayability from variable card draws",
+  "second edition's card-only streamlining"
+ ],
+ "criticised": [
+  "can feel solitaire-ish with limited direct interaction",
+  "poverty/loan bookkeeping can be fiddly for new players",
+  "some find the theme thin"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "card drafting and indirect race for efficiency"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final score combines built cards, city development, and penalties from poverty/loans"
+ },
+ "similar": [
+  "Brass: Birmingham",
+  "Race for the Galaxy",
+  "Trains",
+  "Innovation",
+  "Concordia"
+ ],
+ "_fingerprint": "0e77355cd69069d7",
+ "_name": "London (Second Edition)"
+}

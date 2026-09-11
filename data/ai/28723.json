@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Before the Wind is a tight economic card game about collecting the right combination of goods and delivering complete sets to waiting ships before the fleet sails on favorable winds. It rewards careful timing and hand management over pure card counting, with an unusual bidding-for-turn-order mechanism layered on top of the set-collection core.",
+ "praised": [
+  "Clever push-your-luck timing around the departing ships/wind mechanic",
+  "Tight, well-integrated ruleset with little wasted design",
+  "Good tension between hoarding goods and cashing in before ships leave",
+  "Solid player interaction through the auction/bidding for turn order"
+ ],
+ "criticised": [
+  "Fiddly bookkeeping with many card types (action, goods, guilder, ship cards)",
+  "Can feel dry or overly mechanical/thinky for a nautical trading theme",
+  "Rulebook and initial learning curve considered clunky by some",
+  "Runtime can drag toward the 75-minute mark with more players"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "auction/bidding for priority combined with set collection racing"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Winning comes from efficiently completing ship deliveries for money and bonus points while timing your warehouse transfers better than opponents."
+ },
+ "similar": [
+  "Traders of Genoa",
+  "Navegador",
+  "Le Havre",
+  "Merchants & Marauders",
+  "Antike"
+ ],
+ "_fingerprint": "65394070d2dadb82",
+ "_name": "Before the Wind"
+}

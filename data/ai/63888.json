@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Innovation is a fast-paced tableau-builder where you race through ages of technology, splaying cards to reveal icons and chaining dogpile combos that can swing the game in a single turn. It's brutally interactive despite having no board or dice — you're constantly reading opponents' tableaus and timing when to demand, share, or rush an achievement before they do.",
+ "praised": [
+  "Incredible depth and replayability from a small deck of cards",
+  "Elegant, tightly integrated rules where every card's effect ties into its theme",
+  "Explosive, satisfying combo turns once you see the engine click",
+  "Fast to play and easy to reset for another game"
+ ],
+ "criticised": [
+  "Steep learning curve and dense rules text on cards makes early games confusing",
+  "Can feel swingy or 'solved' by a single big combo that ends the game abruptly",
+  "Kingmaking and analysis paralysis in multiplayer as players parse others' boards",
+  "Iconography and card interactions are hard to teach to new players"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "sharing/demanding effects and tableau disruption (take that)"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The game is won by claiming achievements (via score thresholds or special criteria), not by tallying broad point sources, so a single well-timed combo or dogma chain usually decides the winner."
+ },
+ "similar": [
+  "Glory to Rome",
+  "Res Arcana",
+  "7 Wonders",
+  "Through the Ages",
+  "Roll for the Galaxy"
+ ],
+ "_fingerprint": "9d1231851cf3ae3d",
+ "_name": "Innovation"
+}

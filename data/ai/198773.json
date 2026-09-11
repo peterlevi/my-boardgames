@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Codenames: Pictures swaps the word grid for illustrated image cards, making it more accessible to younger players and non-native speakers while keeping the same clue-giving, team-guessing structure as the original. Clues tend to be more abstract and visual, focused on shapes, colors, and concepts within the images.",
+ "praised": [
+  "great option for families, kids, or mixed-language groups",
+  "images allow for more creative, abstract clue associations",
+  "same fast, easy-to-teach structure as original Codenames",
+  "combines well with original Codenames cards for variety"
+ ],
+ "criticised": [
+  "some feel picture clues are less satisfying/clever than word clues",
+  "images can be ambiguous or overly busy",
+  "loses some of the sharp wordplay wit of the original",
+  "considered a variant rather than essential on its own"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "team communication and clue-guessing under uncertainty"
+ },
+ "win_criteria": "Race to a finish",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the team that contacts all of its own agents first wins, with no accumulating point total"
+ },
+ "similar": [
+  "Codenames",
+  "Codenames: Duet",
+  "Dixit",
+  "Mysterium",
+  "Just One"
+ ],
+ "_fingerprint": "4ea08ee8922a42ce",
+ "_name": "Codenames: Pictures"
+}

@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Brass: Lancashire is a tight, tense economic puzzle where you build overlapping networks of canals and railways while timing industry sales and loans to maximize two separate scoring rounds. Every turn is an agonizing choice between building your own engine and blocking or piggybacking on opponents' links, with a merciless economy that punishes inefficiency.",
+ "praised": [
+  "Deep, interlocking economic engine with real long-term planning",
+  "Clever double-scoring structure (canal era then rail era) rewards timing and flipping tiles at the right moment",
+  "High player interaction through shared network links and resource markets",
+  "Strong replayability due to variable player counts and card draws",
+  "Elegant mechanical unity — every action ties back to the network and resource flow"
+ ],
+ "criticised": [
+  "Steep learning curve and rules overhead for new players",
+  "Downtime and analysis paralysis, especially at higher player counts",
+  "Thin theme that's really just a numbers/logistics puzzle",
+  "Punishing for beginners playing against experienced players",
+  "Some fiddliness tracking coal/iron resource flow along links"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "network/route building with blocking, resource competition, and market manipulation"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Victory points come from flipped industry tiles plus connected canal/rail links, scored twice across two eras, so efficient network building and well-timed industry development decide the winner."
+ },
+ "similar": [
+  "Brass: Birmingham",
+  "Age of Steam",
+  "Food Chain Magnate",
+  "Great Western Trail",
+  "Container"
+ ],
+ "_fingerprint": "512c49613f220d89",
+ "_name": "Brass: Lancashire"
+}

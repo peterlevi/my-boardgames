@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Cry Havoc is an asymmetric area-control game where three of the four factions (Humans, Machines, Trogs) play by genuinely different rule sets, so combat and territory grabs feel completely different depending on who you're facing. Victory points are earned by taking and holding resource-rich zones, and the tight turn structure with dual-purpose cards forces constant tradeoffs between attacking, expanding, and building your engine.",
+ "praised": [
+  "Deep faction asymmetry — each side plays like a different game",
+  "Clever multi-use cards that double as resources, actions, or combat cards",
+  "High tension in combat and territory decisions",
+  "Great production value with distinct miniatures per faction",
+  "Rewards replay as you learn each faction's unique strategy"
+ ],
+ "criticised": [
+  "Steep learning curve — teaching four different rule sets is a lot",
+  "Perceived faction balance issues, especially with the fourth (Skrat) faction added later",
+  "Can feel swingy or punishing if you fall behind early",
+  "High rules overhead relative to playtime for newer wargamers"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "open conflict and area denial over contested zones"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Victory points come almost entirely from controlling and holding valuable territory zones at scoring intervals"
+ },
+ "similar": [
+  "Blood Rage",
+  "Kemet",
+  "Rising Sun",
+  "Chaos in the Old World",
+  "Root"
+ ],
+ "_fingerprint": "f1b761f9669c2d67",
+ "_name": "Cry Havoc"
+}

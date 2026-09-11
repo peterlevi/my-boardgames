@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Imperium: Classics is a card-driven civilization builder where you cycle a small deck (via the 'move through deck' mechanic) to unlock increasingly powerful cards while balancing expansion against unrest; each of the eight civilizations plays with genuinely different mechanics and priorities. It plays fast for its weight, works very well solo against a card-driven AI, and rewards efficient engine-building over direct conflict.",
+ "praised": [
+  "Strong, well-tuned solo mode with a card-based AI opponent",
+  "Deep asymmetry — each civilization feels mechanically distinct, not just re-skinned",
+  "Fast turns and short deck-cycling create a satisfying rhythm without long downtime",
+  "High replayability from civilization/scenario combinations"
+ ],
+ "criticised": [
+  "Low direct player interaction — often feels like parallel solitaire at the table",
+  "Rulebook and icon-heavy cards have a steep initial learning curve",
+  "Some civilizations/cards are viewed as stronger or more fun than others (balance complaints)",
+  "Take-that elements exist but are minor, so conflict-seeking players may find it too dry"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel empire-building with occasional take-that cards"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from your civilization's unique track, end-game card bonuses, and accumulated achievements, so the winner is decided by how efficiently you built your engine across several scoring channels rather than one dominant strategy."
+ },
+ "similar": [
+  "Res Arcana",
+  "Race for the Galaxy",
+  "Tyrants of the Underdark",
+  "Concordia",
+  "Clank! Legacy: Acquisitions Incorporated"
+ ],
+ "_fingerprint": "154e1bda7707eb78",
+ "_name": "Imperium: Classics"
+}

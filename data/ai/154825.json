@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Arkwright is a dense economic simulation where you run parallel factories, balance worker wages against machine costs, and set your own prices while watching demand and competitors' output ripple through a shared market. It plays more like optimizing a spreadsheet than a typical Euro, with almost every turn a multi-variable calculation rather than a simple placement.",
+ "praised": [
+  "Remarkably deep and internally consistent economic simulation (supply, demand, pricing, wages, tech all interact logically)",
+  "Strong sense of building and optimizing a real business over time",
+  "High replayability from variable setup and modular industries",
+  "Rewards long-term planning and efficiency tuning"
+ ],
+ "criticised": [
+  "Extremely steep learning curve and rulebook, even by heavy-Euro standards",
+  "Very long playtime (often exceeding the printed 4 hours with new players)",
+  "Heavy bookkeeping and fiddly tracking can feel like homework",
+  "Low direct player interaction — mostly parallel optimization rather than confrontation"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "shared market and demand pools with indirect price competition, mostly parallel factory-building"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Some",
+  "why": "the winner is whoever builds the most valuable block of their own company shares, driven by efficient production, pricing, and reinvestment rather than accumulating varied point sources"
+ },
+ "similar": [
+  "Container",
+  "Chicago Express",
+  "Food Chain Magnate",
+  "Brass: Birmingham",
+  "Age of Steam"
+ ],
+ "_fingerprint": "58583d4ba059c803",
+ "_name": "Arkwright"
+}

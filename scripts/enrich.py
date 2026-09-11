@@ -5,6 +5,7 @@
     python3 scripts/enrich.py --force      # redo everything
     python3 scripts/enrich.py --limit 5    # try a handful first
     python3 scripts/enrich.py --jobs 6     # parallel calls (default 4)
+    python3 scripts/enrich.py --batch 1    # one game per call (slower, finer)
 
 Optional by design. If `claude` is not on PATH the script says so and exits 0,
 and every other script keeps working — the enrichment only ever adds columns.
@@ -12,6 +13,11 @@ and every other script keeps working — the enrichment only ever adds columns.
 Each answer is cached at data/ai/<id>.json and committed, so a resync only
 pays for genuinely new games, and anyone who clones the repo gets the whole
 database for free without running this at all.
+
+Games are asked about in batches. Each `claude` invocation boots a whole agent
+session, and that startup — not the thinking — dominates: one game per call
+measured at roughly 100 minutes for this collection, where eight per call
+takes minutes. The batch is small enough that the answers stay specific.
 
 Two things keep the answers honest:
 
@@ -42,22 +48,15 @@ WIN_CRITERIA = [
     "Special win condition", "Cooperative goal", "Other",
 ]
 
-PROMPT = """You are cataloguing a board game collection. Answer ONLY with a \
-JSON object, no prose, no code fence.
+HEADER = """You are cataloguing a board game collection. Answer ONLY with a \
+JSON object mapping each game's id to its entry. No prose, no code fence.
 
-Use what you know about how this game is actually received and played. \
-Reconcile it with the BGG data below — if you do not recognise the game, say \
-so with "confidence": "low" and leave the opinion fields empty rather than \
-guessing.
+For each game use what you know about how it is actually received and played, \
+reconciled with the BGG data given. If you do not recognise a game, set \
+"confidence": "low" and leave the opinion fields empty rather than guessing — \
+an honest gap is worth more here than a plausible invention.
 
-GAME: {name} ({year})
-DESIGNERS: {designers}
-BGG WEIGHT: {weight}/5   PLAYERS: {players}   TIME: {time} min
-CATEGORIES: {categories}
-MECHANICS: {mechanics}
-BGG DESCRIPTION: {description}
-
-Return exactly this shape:
+Entry shape, for every id below:
 {{
   "confidence": "high" | "medium" | "low",
   "summary": "two sentences on what playing it is actually like",
@@ -65,7 +64,7 @@ Return exactly this shape:
   "criticised": ["what people consistently dislike", "..."],
   "interaction": {{
     "level": "Low" | "Medium" | "High",
-    "kind": "a few words: e.g. blocking and area denial, open conflict, \
+    "kind": "a few words, e.g. blocking and area denial, open conflict, \
 trading and negotiation, mostly parallel play"
   }},
   "win_criteria": one of {criteria},
@@ -74,21 +73,35 @@ trading and negotiation, mostly parallel play"
     "why": "one sentence on what actually decides the winner"
   }},
   "similar": ["3-5 games liked by people who like this one"]
-}}"""
+}}
+
+GAMES:
+"""
+
+ENTRY = """
+--- id {id}
+NAME: {name} ({year})
+DESIGNERS: {designers}
+BGG WEIGHT: {weight}/5   PLAYERS: {players}   TIME: {time} min
+CATEGORIES: {categories}
+MECHANICS: {mechanics}
+DESCRIPTION: {description}
+"""
 
 
-def prompt_for(g):
-    return PROMPT.format(
-        name=g["name"], year=g["year"] or "?",
-        designers=", ".join(g["designers"]) or "unknown",
-        weight=f'{g["weight"]:.2f}' if g["weight"] else "?",
-        players=f'{g["minplayers"]}-{g["maxplayers"]}',
-        time=f'{g["minplaytime"]}-{g["maxplaytime"]}',
-        categories=", ".join(g["categories"]) or "none listed",
-        mechanics=", ".join(g["mechanics"]) or "none listed",
-        description=(g["description"] or "")[:1200],
-        criteria=json.dumps(WIN_CRITERIA),
-    )
+def prompt_for(batch):
+    body = "".join(
+        ENTRY.format(
+            id=g["id"], name=g["name"], year=g["year"] or "?",
+            designers=", ".join(g["designers"]) or "unknown",
+            weight=f'{g["weight"]:.2f}' if g["weight"] else "?",
+            players=f'{g["minplayers"]}-{g["maxplayers"]}',
+            time=f'{g["minplaytime"]}-{g["maxplaytime"]}',
+            categories=", ".join(g["categories"]) or "none listed",
+            mechanics=", ".join(g["mechanics"]) or "none listed",
+            description=(g["description"] or "")[:700],
+        ) for g in batch)
+    return HEADER.format(criteria=json.dumps(WIN_CRITERIA)) + body
 
 
 def fingerprint(g):
@@ -113,13 +126,19 @@ def ask(prompt, model):
     return json.loads(text)
 
 
-def process(g, model):
-    out = AI / f'{g["id"]}.json'
-    data = ask(prompt_for(g), model)
-    data["_fingerprint"] = fingerprint(g)
-    data["_name"] = g["name"]
-    out.write_text(json.dumps(data, indent=1, ensure_ascii=False))
-    return g["name"], data.get("confidence", "?")
+def process(batch, model):
+    answers = ask(prompt_for(batch), model)
+    written = []
+    for g in batch:
+        data = answers.get(str(g["id"])) or answers.get(g["id"])
+        if not isinstance(data, dict):
+            continue
+        data["_fingerprint"] = fingerprint(g)
+        data["_name"] = g["name"]
+        (AI / f'{g["id"]}.json').write_text(
+            json.dumps(data, indent=1, ensure_ascii=False))
+        written.append(g["name"])
+    return written
 
 
 def main():
@@ -127,6 +146,8 @@ def main():
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--jobs", type=int, default=4)
+    ap.add_argument("--batch", type=int, default=8,
+                    help="games per claude call (CLI startup dominates)")
     ap.add_argument("--model", default="claude-sonnet-5")
     a = ap.parse_args()
 
@@ -154,21 +175,25 @@ def main():
     if not todo:
         print("nothing to enrich — every game is cached and current")
         return
-    print(f"enriching {len(todo)} game(s) with {a.model}, {a.jobs} at a time")
+    batches = [todo[i:i + a.batch] for i in range(0, len(todo), a.batch)]
+    print(f"enriching {len(todo)} game(s) with {a.model}: "
+          f"{len(batches)} calls of {a.batch}, {a.jobs} at a time", flush=True)
 
     done = failed = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=a.jobs) as pool:
-        futures = {pool.submit(process, g, a.model): g for g in todo}
+        futures = {pool.submit(process, b, a.model): b for b in batches}
         for f in concurrent.futures.as_completed(futures):
-            g = futures[f]
+            batch = futures[f]
             try:
-                name, conf = f.result()
-                done += 1
-                print(f"  [{done + failed}/{len(todo)}] {name} ({conf})")
+                written = f.result()
+                done += len(written)
+                failed += len(batch) - len(written)
+                print(f"  {done + failed}/{len(todo)} — {', '.join(written[:3])}"
+                      + ("…" if len(written) > 3 else ""), flush=True)
             except Exception as e:  # noqa: BLE001
-                failed += 1
-                print(f"  [{done + failed}/{len(todo)}] {g['name']} FAILED: {e}",
-                      file=sys.stderr)
+                failed += len(batch)
+                print(f"  batch FAILED ({batch[0]['name']}…): {e}",
+                      file=sys.stderr, flush=True)
     print(f"done: {done} enriched, {failed} failed")
 
 

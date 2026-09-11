@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Azul is a light, tactile tile-drafting game where you snake-draft colored tiles into staging rows and then transfer them onto a wall to score points, with the tension coming from denying opponents useful colors and managing overflow penalties. It plays fast, looks gorgeous on the table, and rewards short-term tactical planning more than deep strategy.",
+ "praised": [
+  "Beautiful, tactile components (the tiles feel great to handle)",
+  "Easy to teach and quick to play",
+  "Satisfying push-your-luck tension between grabbing tiles you need and dumping unwanted colors on opponents",
+  "Scales well and works as a gateway/family game"
+ ],
+ "criticised": [
+  "Can feel too abstract or 'mathy' for players wanting theme",
+  "Runaway leader potential is low but a single bad round can be very punishing",
+  "Limited long-term strategic depth once the pattern is learned",
+  "Some find it a bit solitaire-ish at 2 players compared to 3-4"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial via tile drafting"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Wall-tile placement adjacency bonuses plus end-game row/column/color completion bonuses decide the winner, while floor-line penalties for overflow tiles punish poor drafting."
+ },
+ "similar": [
+  "Sagrada",
+  "Azul: Summer Pavilion",
+  "Calico",
+  "Patchwork",
+  "Kingdomino"
+ ],
+ "_fingerprint": "6598b92a89966892",
+ "_name": "Azul"
+}

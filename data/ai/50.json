@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "Lost Cities is a tight two-player card game where you play or discard cards to build ascending expeditions in five colors, weighing the risk of committing to a costly expedition against the point penalty for starting one at all. It's a quick, tense push-your-luck experience that plays in about 30 minutes.",
+ "praised": [
+  "elegant, simple rules with real depth",
+  "quick playtime perfect for two",
+  "tense risk/reward decisions",
+  "classic Knizia design that holds up"
+ ],
+ "criticised": [
+  "can feel repetitive over many plays",
+  "luck of the draw can swing outcomes",
+  "purely two-player, no variant for groups"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "shared discard piles and card counting/blocking"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "score is purely expedition totals across the colored suits, with a penalty for starting an expedition at all"
+ },
+ "similar": [
+  "Lost Cities: Rivals",
+  "Jaipur",
+  "Star Realms",
+  "Schotten Totten",
+  "Battle Line"
+ ],
+ "_fingerprint": "79e6031408c2d161",
+ "_name": "Lost Cities"
+}

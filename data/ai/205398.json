@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Citadels is a light bluffing and city-building card game where players secretly choose roles each round that grant unique powers, then use gold to construct buildings toward a points-based win. Much of the fun comes from guessing who picked which role and using assassination/theft powers to disrupt opponents.",
+ "praised": [
+  "clever role-selection mechanism with great bluffing potential",
+  "quick to teach and play",
+  "high variable player powers keep it fresh",
+  "great gateway game for social/deduction fans"
+ ],
+ "criticised": [
+  "luck of card draw for building types can be swingy",
+  "king-maker potential and sometimes one player gets targeted unfairly",
+  "some character powers are stronger than others",
+  "can run long with more players/analysis paralysis on role picks"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "bluffing, targeted take-that abilities"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "points come mainly from building costs plus a few bonus conditions like color sets or being first to finish"
+ },
+ "similar": [
+  "Coup",
+  "Libertalia",
+  "Five Tribes",
+  "Blood Rage",
+  "Aluxes"
+ ],
+ "_fingerprint": "da132004687a6eca",
+ "_name": "Citadels"
+}

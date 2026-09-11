@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Dixit is a lightly structured storytelling and guessing game where the fun comes almost entirely from the surreal, evocative artwork and the clever (or intentionally vague) clues players invent for it. It plays fast, is nearly language- and rules-barrier-free, and works well as a mixed-group icebreaker rather than a strategic exercise.",
+ "praised": [
+  "gorgeous, dreamlike artwork that sustains replayability across many sessions and expansions",
+  "extremely easy to teach to non-gamers, including kids and casual groups",
+  "clever scoring that punishes clues that are too obvious or too obscure",
+  "generates memorable, funny moments and inside jokes"
+ ],
+ "criticised": [
+  "very light on decision-making or strategy once you understand the scoring incentive",
+  "storyteller can feel underpowered or overpowered depending on group's cleverness",
+  "quality of experience depends heavily on the group's creativity and shared references",
+  "can feel repetitive over many plays without expansion cards"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "targeted clue-giving and voting/guessing"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "points come from a single mechanism (the storyteller's clue-matching guess plus bonus votes on your own card), so success is entirely about calibrating clue ambiguity"
+ },
+ "similar": [
+  "Mysterium",
+  "Codenames",
+  "Concept",
+  "Just One",
+  "Story Cubes"
+ ],
+ "_fingerprint": "0faf071bdaefb498",
+ "_name": "Dixit"
+}

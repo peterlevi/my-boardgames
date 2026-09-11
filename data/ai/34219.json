@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Biblios is a fast, tight two-stage game: a card-drafting round where you pick up items or gold with a random modifier attached, followed by a bidding round where you spend that gold to win sets of the drafted cards. It plays in well under an hour and hinges on reading which of the five categories are worth fighting for versus conceding.",
+ "praised": [
+  "Quick playtime with real depth for its length",
+  "Clever two-phase structure (draft then auction) that keeps every turn meaningful",
+  "Scales well and plays fast at all player counts",
+  "High replayability due to shifting category values and randomized card draws",
+  "Easy to teach and portable/small box"
+ ],
+ "criticised": [
+  "Can feel a bit dry or abstract/thematically thin despite the monastery flavor",
+  "Luck of the draw (which cards appear, the coin-flip-style bishop card) can swing outcomes",
+  "Two-player experience is considered the strongest, with some feeling it's less interesting at 4",
+  "Not much room for meaningful player interaction beyond bidding"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "Auction/bidding with turn-order pressure over shared card pool"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from winning majorities across five separately-valued categories, so the winner is whoever best balances drafting and bidding across multiple fronts rather than one dominant strategy"
+ },
+ "similar": [
+  "Ra",
+  "For Sale",
+  "Fresh Fish",
+  "Coloretto",
+  "High Society"
+ ],
+ "_fingerprint": "09f092d3ec16456d",
+ "_name": "Biblios"
+}

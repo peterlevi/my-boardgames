@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Evolution: Climate layers a food-scarcity meter and a fluctuating hot/cold climate track onto the base Evolution engine, so alongside starving or getting eaten by carnivores, species must also evolve traits to survive temperature swings. The extra dimension and fourth trait slot add depth and tension but also more upkeep and card-reading, making an already fiddly game noticeably heavier.",
+ "praised": [
+  "Adds a genuinely new strategic axis (climate) rather than just more content",
+  "Trait combos and card interactions feel clever and varied",
+  "Strong replayability from emergent species-building",
+  "Works well as a standalone game, not just an expansion"
+ ],
+ "criticised": [
+  "Steeper rules overhead and more card-text reading than the base game",
+  "Can run long and slow down with more players",
+  "Take-that carnivore attacks can feel mean or swingy, especially for newer players",
+  "Bookkeeping (traits, population, food, climate track) gets fiddly"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "shared food pool competition plus direct carnivore attacks on rivals' species"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Final score is essentially total surviving population and body size across your species, so winning comes down to building fat, well-fed, well-protected species rather than accumulating varied point sources"
+ },
+ "similar": [
+  "Evolution (base game)",
+  "Evolution: Oceans",
+  "Bios: Megafauna",
+  "Dominant Species",
+  "Trickerion (for trait/engine tinkering fans)"
+ ],
+ "_fingerprint": "a2d4aed2d7890802",
+ "_name": "Evolution: Climate"
+}

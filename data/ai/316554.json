@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Dune: Imperium blends worker placement with deck building, so each turn you play cards from a small hand to gain agents you send to board spaces, all while racing rivals for limited spots and building military strength for a combat phase at round's end. The tension between deck-building efficiency, faction politics, and open-drafting for combat cards creates a tight, multi-path race to whichever victory condition you can reach first.",
+ "praised": [
+  "Elegant fusion of deck-building with worker placement, each feeding the other",
+  "Strong theme integration via factions, Spice, and combat",
+  "Multiple viable paths to victory (military, political, economic)",
+  "Tense space-blocking since only one player can occupy most spots",
+  "Good solo mode"
+ ],
+ "criticised": [
+  "Can feel swingy or 'take that' when combat losses gut a player's board position",
+  "Early turns give little agency until deck develops",
+  "Some randomness in card draw can undercut careful planning",
+  "Rich-get-richer dynamics if one player pulls ahead on Spice or troops"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking and area denial, plus open conflict via combat"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Victory points come mainly from a few big swings: controlling Arrakeen/high council spots, winning combat, and completing faction alliances, rather than accumulating many small point sources"
+ },
+ "similar": [
+  "Lost Ruins of Arnak",
+  "Res Arcana",
+  "Tyrants of the Underdark",
+  "Great Western Trail",
+  "Clank! Legacy: Acquisitions Incorporated"
+ ],
+ "_fingerprint": "8e77a70baa2d5527",
+ "_name": "Dune: Imperium"
+}

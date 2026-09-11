@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Ishtar is a tight, puzzly rondel-and-tile-placement game where you plant flowers to trigger chained bonuses, then race to claim gem-based scoring conditions before opponents beat you to them. Turns are quick but the board state is tense, since good flower placements are contested and trees can cut off your opponents' combos.",
+ "praised": [
+  "Clever, tight rondel mechanism that constrains choices meaningfully",
+  "Satisfying chain-reaction flower placement puzzle",
+  "Fast turns keep the game moving despite the thinking involved",
+  "Attractive, colorful production",
+  "Good player count scalability, plays well at 2"
+ ],
+ "criticised": [
+  "Can feel a bit dry or abstract despite the gardening theme",
+  "Some player interaction is more about racing/blocking than direct engagement, which can feel solitaire-ish at times",
+  "Upgrade/gem economy can be hard to parse for new players",
+  "Limited replayability variance once strategies are known"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial via tree placement and racing for gem thresholds"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Points come from trees, apprentice scoring in flower copses, and upgrade bonuses, but efficient combo-chaining on the rondel decides the winner"
+ },
+ "similar": [
+  "Kingdomino",
+  "Yokohama",
+  "Coimbra",
+  "Trekking Through History",
+  "Sagrada"
+ ],
+ "_fingerprint": "3315bea48f941233",
+ "_name": "Ishtar: Gardens of Babylon"
+}

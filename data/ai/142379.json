@@ -1,0 +1,32 @@
+{
+ "confidence": "medium",
+ "summary": "A Vital Lacerda escape-the-city game where players draft action tiles to move their crew across a hex-based city map, grabbing cash and dodging the closing police cordon before the exits seal. Like most Lacerda designs it's a dense, interlocking puzzle of route-planning and resource optimization rather than a light thematic romp.",
+ "praised": [
+  "tight, satisfying puzzle of route optimization",
+  "strong table presence and thematic heist framing",
+  "meaningful player interaction over shared spaces and tile drafting"
+ ],
+ "criticised": [
+  "steep rules overhead typical of Lacerda games",
+  "some feel the theme is thin compared to the mechanical complexity",
+  "long playtime for what is essentially a spatial optimization puzzle"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "area movement and drafting contention"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final score comes from recovered money, completed routes, and end-game bonuses tied to how efficiently you escaped"
+ },
+ "similar": [
+  "Lisboa",
+  "On Mars",
+  "Vinhos",
+  "The Gallerist",
+  "CO2"
+ ],
+ "_fingerprint": "b2ffa50e661ade3e",
+ "_name": "Escape Plan"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Each round you place workers on a rotating wheel around the Forbidden City to grab resources and gift cards, then spend those cards to bribe officials and climb influence tracks that pay out at scored intervals. It's a tight, cerebral engine-builder where timing your bribes against the wheel's rotation and other players' plans matters more than direct conflict.",
+ "praised": [
+  "The rotating wheel mechanism feels fresh and is the game's signature hook",
+  "Tense, puzzly worker placement with meaningful long-term planning",
+  "Clean, elegant rules for the depth of decisions offered",
+  "Strong replayability from variable scoring track combinations"
+ ],
+ "criticised": [
+  "Can feel like multiplayer solitaire with relatively indirect player interaction",
+  "Steep learning curve and rules overhead for new players",
+  "Some randomness in gift card draws can undercut careful planning",
+  "Theme feels pasted on top of an abstract optimization puzzle"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker placement blocking and area majority on influence tracks"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from multiple influence tracks (army, money, palace, etc.) scored at intervals plus end-game bonuses, rewarding whoever balances several tracks best rather than one dominant strategy"
+ },
+ "similar": [
+  "Teotihuacan: City of Gods",
+  "Underwater Cities",
+  "Le Havre",
+  "Barrage",
+  "Trismegistus: The Ultimate Formula"
+ ],
+ "_fingerprint": "cc61407bb827cdc3",
+ "_name": "Gùgōng"
+}

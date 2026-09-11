@@ -1,0 +1,32 @@
+{
+ "confidence": "medium",
+ "summary": "The King Is Dead is a lean area-majority game where three medieval factions vie for the throne while you secretly want a particular faction (not necessarily your own pieces) to end up on top. Hidden agendas and a shrinking map create a tense, bluffy negotiation-adjacent experience in a short playtime.",
+ "praised": [
+  "clever hidden-goal twist on area control",
+  "short playtime for the depth offered",
+  "tense multiplayer diplomacy and bluffing"
+ ],
+ "criticised": [
+  "can feel swingy or kingmaker-y with certain player counts",
+  "memory/limited-communication mechanic divides opinion",
+  "thin theme"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "area majority and hidden-agenda negotiation"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "winning depends on which faction ends up dominant relative to your secret allegiance, not a points total"
+ },
+ "similar": [
+  "Blood Rage",
+  "Kemet",
+  "Chinatown",
+  "Cyclades",
+  "El Grande"
+ ],
+ "_fingerprint": "a774d3c9dc601f45",
+ "_name": "The King Is Dead: Second Edition"
+}

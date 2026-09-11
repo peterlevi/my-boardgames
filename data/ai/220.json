@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A tight, tense bidding game where players spend from a shared, shrinking pool of cash cards to acquire luxury cards or avoid disaster cards, all while knowing the poorest player at the end is disqualified from winning. Every bid is a real trade-off between building a score and having enough cash left to stay in contention, which makes even a 15-20 minute game feel sharp and painful.",
+ "praised": [
+  "Elegant, minimalist design with almost no rules overhead",
+  "Constant nail-biting tension despite the short playtime",
+  "The 'poorest player is disqualified' twist forces genuinely hard bidding decisions",
+  "Plays fast and scales well across its player count",
+  "Highly replayable due to variable card draw order"
+ ],
+ "criticised": [
+  "Can feel like a 'take that' bluffing/psychology exercise more than a strategic game to some",
+  "Luck of card order can swing outcomes",
+  "Very light theme pasted onto an abstract bidding mechanism",
+  "Not much to do beyond bidding, so repeated plays can feel samey to some groups"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "Simultaneous-ish turn-order bidding and bluffing over a shared resource pool"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is whoever has the highest total of acquired number/multiplier cards among players who did not end with the least money."
+ },
+ "similar": [
+  "For Sale",
+  "Ra",
+  "Modern Art",
+  "Medici",
+  "No Thanks!"
+ ],
+ "_fingerprint": "5124c580aaf5c875",
+ "_name": "High Society"
+}

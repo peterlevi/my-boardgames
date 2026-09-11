@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Black Angel is a heavy euro where players use dice as workers to explore a shrinking, tile-based spaceship map, gathering resources and completing contracts while racing to reach planet Spes before the Ravager deck runs out. Despite the cooperative-sounding theme, it's a competitive point-salad race with tight turn efficiency puzzles and a constant push against the game's own countdown clock.",
+ "praised": [
+  "innovative dice-as-workers mechanic with meaningful dice manipulation",
+  "tense shared countdown (map reduction / Ravager deck) that pressures every turn",
+  "strong production values and thematic artwork/sculpts",
+  "satisfying engine-building and turn-optimization puzzle"
+ ],
+ "criticised": [
+  "dense, icon-heavy rulebook with a steep learning curve",
+  "significant setup/teardown and table footprint",
+  "some luck from dice rolls even with mitigation options",
+  "can feel more solitaire/parallel than interactive for a 'shared ship' theme"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "indirect competition for shared tiles/worker spots and racing the shrinking map"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points come from exploring/claiming tiles, completing contracts, combat tokens, and end-game bonuses, so efficient multi-source engine building decides the winner"
+ },
+ "similar": [
+  "On Mars",
+  "Anachrony",
+  "Trickerion: Legends of Illusion",
+  "Tzolk'in: The Mayan Calendar",
+  "Rurik: Dawn of Kiev"
+ ],
+ "_fingerprint": "c4aed25e12f15655",
+ "_name": "Black Angel"
+}

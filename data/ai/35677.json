@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Le Havre is a dense, cerebral resource-conversion game where you shepherd raw goods through building chains into fish, food, and finished products while carefully managing feeding costs each round. It rewards long-term engine planning over reactive play, and games can run long with real downtime and analysis paralysis, especially at higher player counts.",
+ "praised": [
+  "Deep, satisfying resource-conversion puzzle with meaningful long-term planning",
+  "High strategic depth and replayability from variable building sets",
+  "Strong, well-regarded solo mode",
+  "Rewards efficient engine-building and multiple viable paths to victory"
+ ],
+ "criticised": [
+  "Long playtime, especially with more players, exacerbated by analysis paralysis",
+  "Steep learning curve and heavy rulebook/iconography to internalize",
+  "Low direct player interaction, feels solitaire-ish at the table",
+  "Building costs and offer spaces can feel fiddly to track"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light competition for buildings and offer spaces"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Final wealth is the sum of cash plus the value of owned buildings and ships, so the winner is whoever built the most efficient, high-value production and ownership engine"
+ },
+ "similar": [
+  "Agricola",
+  "Caverna",
+  "Puerto Rico",
+  "The Castles of Burgundy",
+  "Power Grid"
+ ],
+ "_fingerprint": "07a192ebf0e9d0f2",
+ "_name": "Le Havre"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Players build rival fast-food empires, hiring staff, researching menus, and blanketing the board with ads and restaurants to steal each other's customers in a brutally tight economic engine. It's famous for a merciless, escalating aggression curve where early mistakes compound and the endgame becomes a slow-motion demolition of whoever fell behind.",
+ "praised": [
+  "deep, elegant economic engine with real long-term planning",
+  "unique 'no direct combat but total economic warfare' feel",
+  "huge replayability from variable player powers and market openness",
+  "extremely satisfying when your engine clicks"
+ ],
+ "criticised": [
+  "notoriously long playtime, especially at higher player counts",
+  "brutal kingmaking/pile-on potential against a leader",
+  "steep learning curve and analysis paralysis for newcomers",
+  "a bad early game can leave a player with almost nothing to do for hours"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "market competition, customer stealing, and price/ad warfare"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "final cash on hand decides everything, driven by how efficiently your restaurant network out-competed rivals for customers"
+ },
+ "similar": [
+  "Brass: Birmingham",
+  "Terraforming Mars",
+  "Great Western Trail",
+  "Underwater Cities",
+  "Automobiles"
+ ],
+ "_fingerprint": "2c0e8cf9c28fbe33",
+ "_name": "Food Chain Magnate"
+}

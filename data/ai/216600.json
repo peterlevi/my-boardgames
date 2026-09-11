@@ -1,0 +1,32 @@
+{
+ "confidence": "medium",
+ "summary": "A dice-worker-placement game where players race to build factories and complete contracts, rolling and locking dice to trigger card abilities in a light engine-building loop. It's often compared to Machi Koro or Orleans-lite in feel: quick to teach, snowbally, and driven by combo chains rather than deep strategy.",
+ "praised": [
+  "fast-playing and easy to teach for the amount of engine building it offers",
+  "satisfying combo chains from cards interacting with dice workers",
+  "solid solo mode"
+ ],
+ "criticised": [
+  "can feel swingy or snowbally once someone's engine gets going",
+  "art and production seen as budget compared to similar euros",
+  "some find the contract/scoring system fiddly to track"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "shared market competition, mostly parallel play"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points come from completed contracts, buildings, and bonus tags, rewarding the fastest, most synergistic factory engine"
+ },
+ "similar": [
+  "Trickerion",
+  "Orléans",
+  "Machi Koro",
+  "Grand Austria Hotel",
+  "Coimbra"
+ ],
+ "_fingerprint": "63939807d310453b",
+ "_name": "Fantastic Factories"
+}

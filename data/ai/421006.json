@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "Duel for Middle-earth is an asymmetric two-player card game where one player controls the Fellowship racing to destroy the Ring while the other plays Sauron hunting them down and building military strength. Games are tense and tactical, built around drafting cards from a shared market to fuel your engine each of the three chapters.",
+ "praised": [
+  "strong asymmetric theming and tension",
+  "tight two-player design from respected designers",
+  "quick chapters keep pace snappy",
+  "good replayability from card variety"
+ ],
+ "criticised": [
+  "can feel swingy or luck-dependent in card draws",
+  "learning both sides' strategies takes a few plays",
+  "market/drafting can create some analysis paralysis"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "direct racing and combat with card drafting"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "winner is decided by completing the Fellowship's quest or Sauron stopping them, not by points"
+ },
+ "similar": [
+  "War of the Ring",
+  "Star Wars: The Deckbuilding Game",
+  "Lost Cities",
+  "7 Wonders Duel",
+  "Star Wars: Rebellion"
+ ],
+ "_fingerprint": "03cd5bfaa8351fc5",
+ "_name": "The Lord of the Rings: Duel for Middle-earth"
+}

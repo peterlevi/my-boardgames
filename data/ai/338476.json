@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "Lorenzo il Magnifico is a heavier Euro combining worker placement with dice-based action strength, where you develop cards across military, territory, character, and building tracks toward a strong end-game engine. The Big Box bundles the base game with several expansions adding variety and player powers.",
+ "praised": [
+  "deep strategic depth with meaningful choices",
+  "excellent production values",
+  "great variable player powers via leader cards",
+  "satisfying engine-building payoff"
+ ],
+ "criticised": [
+  "long playtime and setup, especially with expansions",
+  "steep learning curve for new players",
+  "can suffer analysis paralysis at higher player counts"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker/dice placement contention and blocking key spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points accumulate from military, territory, character, and building cards plus resources converted at game end"
+ },
+ "similar": [
+  "Tzolk'in: The Mayan Calendar",
+  "Grand Austria Hotel",
+  "Underwater Cities",
+  "Great Western Trail",
+  "Marco Polo"
+ ],
+ "_fingerprint": "582162c31850ca7e",
+ "_name": "Lorenzo il Magnifico: Big Box"
+}

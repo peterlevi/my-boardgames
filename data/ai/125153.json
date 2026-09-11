@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Players run an art gallery, moving a single meeple around a Lisbon-style board to hire assistants, acquire and promote artists, host exhibitions, and sell paintings for profit and reputation. It's a dense, cerebral engine-builder with tight worker/time management and satisfying multi-step combos, marked by Lacerda's signature complexity and thematic depth.",
+ "praised": [
+  "rich, thematic engine with a real sense of running a business",
+  "clever action-selection and movement system (single meeple, action cards)",
+  "excellent solo mode",
+  "gorgeous, thoughtful production and iconography once learned"
+ ],
+ "criticised": [
+  "very steep learning curve and rulebook density",
+  "long playtime and heavy analysis paralysis",
+  "fiddly bookkeeping (loans, exhibitions, contracts)",
+  "can feel isolating/solitaire-ish with limited direct interaction"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "competition for shared spaces/artists, mostly indirect"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Some",
+  "why": "final wealth from art sales, reputation bonuses, and efficient use of contracts/loans determines the winner"
+ },
+ "similar": [
+  "Lisboa",
+  "Vinhos",
+  "On Mars",
+  "Kanban EV",
+  "Anachrony"
+ ],
+ "_fingerprint": "ca65130c2175d657",
+ "_name": "The Gallerist"
+}

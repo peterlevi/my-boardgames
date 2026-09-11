@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "High Frontier is a brutally realistic space-exploration game built on real delta-v maps and rocket science, where you build engine/fuel/rocket card chains to physically route probes and colonists across the solar system to claim resource sites. It's punishing, fiddly, and slow to learn, but rewards players who enjoy optimizing thruster/propellant combos and reading a genuinely educational simulation of orbital mechanics.",
+ "praised": [
+  "Unmatched thematic authenticity and scientific accuracy for a board game",
+  "Deep, satisfying engine-building around real rocket technology",
+  "Huge replayability from modular systems, factions, and expansions",
+  "Delta-v solar system map is a remarkable piece of design/education in itself"
+ ],
+ "criticised": [
+  "Extremely steep learning curve and dense rulebook",
+  "Long, fiddly turns with a lot of bookkeeping and card lookup",
+  "Can suffer from analysis paralysis and downtime between turns",
+  "Production/iconography is dense and unfriendly to newcomers"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "site claiming and area denial, with some auction/negotiation over patents and sites"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Victory points come from a mix of colonized/claimed sites, technology (patents), and mission completion, so the winner is whoever built the most efficient economic engine across several scoring channels"
+ },
+ "similar": [
+  "High Frontier (3rd edition)",
+  "Pax Renaissance",
+  "American Megafauna",
+  "Bios: Megafauna",
+  "Neanderthal"
+ ],
+ "_fingerprint": "44e73cf2b2f0e11a",
+ "_name": "High Frontier 4 All"
+}

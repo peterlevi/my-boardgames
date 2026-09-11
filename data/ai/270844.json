@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A fast, tight card game where each of the six clan decks plays like a distinct engine-builder, with players racing to chain building bonuses while occasionally raiding or blocking each other's islands. It's lighter and more streamlined than the original Imperial Settlers, with a strong solo/duel feel even at higher player counts.",
+ "praised": [
+  "Six wildly different clan decks give strong replayability and asymmetry",
+  "Fast turns and short playtime relative to depth",
+  "Satisfying engine-building and combo chaining within a single deck",
+  "Good production values and iconography once learned",
+  "Works well solo and at 2 players"
+ ],
+ "criticised": [
+  "Interaction can feel indirect or bolted-on (raiding/exploring) compared to true confrontation",
+  "Some clans are noticeably harder to pilot well than others (stated 1-10 difficulty spread)",
+  "Iconography-heavy cards have a learning curve",
+  "Can feel more solitaire/parallel than the 'Take That' tag suggests, especially at higher player counts",
+  "Diminishing tension in the endgame as players optimize known combos"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "raiding, blocking islands, and occasional take-that card effects amid mostly parallel engine building"
+ },
+ "win_criteria": "Race to a finish",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Points accumulate from a mix of building bonuses, raiding/exploration rewards, and end-game scoring cards, but the game ends the instant someone crosses the 25-point threshold, so tempo matters as much as total sources."
+ },
+ "similar": [
+  "Imperial Settlers",
+  "Raiders of the North Sea",
+  "Blood Rage",
+  "Champions of Midgard",
+  "Trickerion"
+ ],
+ "_fingerprint": "20eae49995cac337",
+ "_name": "Imperial Settlers: Empires of the North"
+}

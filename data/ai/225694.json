@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "Two teams each protect four secret keywords while trying to communicate three-digit codes to their own teammates using cryptic one-word or one-phrase clues, all while the opposing team listens in trying to crack the code. Tension builds round to round as the same four words get reused, making clues harder to keep fresh without giving the code away to eavesdroppers.",
+ "praised": [
+  "clever, tense push-pull between clarity for your team and secrecy from the other",
+  "scales well across a wide range of group sizes and party contexts",
+  "endlessly replayable since word combinations differ every game",
+  "low setup and easy to teach"
+ ],
+ "criticised": [
+  "can feel unbalanced if one team is much better at giving/reading clues",
+  "some groups find the pen-and-paper bookkeeping between rounds fiddly",
+  "requires a same-wavelength team to really shine, which can frustrate mismatched groups"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "team communication and code-breaking espionage"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the first team to rack up too many interception or miscommunication tokens loses, so play centers on avoiding those penalties rather than accumulating points"
+ },
+ "similar": [
+  "Codenames",
+  "The Mind",
+  "Just One",
+  "Wavelength",
+  "Concept"
+ ],
+ "_fingerprint": "0ff5ed3a9dd056bb",
+ "_name": "Decrypto"
+}

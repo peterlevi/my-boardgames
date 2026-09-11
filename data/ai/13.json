@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Catan is a resource-trading race where dice rolls determine income and players constantly negotiate trades to get the combination of wood, brick, sheep, wheat, and ore they need to expand. Turns are quick but the game lives or dies on the table talk, as blocking a rival's best spot with the robber or refusing a lopsided trade can shift momentum entirely.",
+ "praised": [
+  "Approachable gateway game that introduced a generation to modern board gaming",
+  "Trading and negotiation create real player interaction",
+  "High replayability from the modular, randomized board setup",
+  "Quick to teach and reasonably quick to play"
+ ],
+ "criticised": [
+  "Dice-driven resource production can be swingy and punish bad starting placement",
+  "The robber and 7-rolls introduce luck-based setbacks that feel unfair",
+  "Player elimination-adjacent feel when someone gets blocked or resource-starved early",
+  "Downtime between turns, especially at higher player counts",
+  "Runaway leader problem once someone gets a strong production engine going"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "trading and negotiation, with robber-based blocking"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Victory points accumulate from settlements, cities, longest road, largest army, and hidden development cards, so the winner is usually whoever diversifies best rather than maxing one source."
+ },
+ "similar": [
+  "Catan: Seafarers",
+  "Puerto Rico",
+  "Ticket to Ride",
+  "The Settlers of Catan Card Game",
+  "Carcassonne"
+ ],
+ "_fingerprint": "0929edb447491899",
+ "_name": "Catan"
+}

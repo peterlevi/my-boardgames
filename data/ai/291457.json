@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Jaws of the Lion strips away Gloomhaven's map-tile fiddliness by printing scenarios directly in a spiral-bound book, delivering the same tactical hand-management combat (card-based initiative, simultaneous action selection, resource attrition via cards-as-health) in a tighter, faster-to-teach package. Sessions feel like tightly-scripted tactical puzzles where positioning, timing your card retirement, and managing a shrinking hand of actions matter more than raw dice luck.",
+ "praised": [
+  "Much easier onboarding than base Gloomhaven, with a genuine guided tutorial",
+  "No more map-tile setup/teardown; scenario books streamline play",
+  "Same satisfying tactical combat and character progression loop",
+  "Strong solo and small-group experience",
+  "Good value/entry point before committing to full Gloomhaven"
+ ],
+ "criticised": [
+  "Fewer scenarios and less long-term content than base Gloomhaven",
+  "Only 4 characters, less build variety",
+  "Still a big table/time commitment per session relative to lighter games",
+  "Legacy elements mean limited replayability once the campaign is done",
+  "Some find combat can become a bit of a numbers-crunching routine over time"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "cooperative tactical coordination, minimal negotiation"
+ },
+ "win_criteria": "Cooperative goal",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Success is defined by completing scenario objectives cooperatively before the party is wiped or runs out of cards, not by points"
+ },
+ "similar": [
+  "Gloomhaven",
+  "Frosthaven",
+  "Sleeping Gods",
+  "Aeon's End",
+  "Mage Knight Board Game"
+ ],
+ "_fingerprint": "a38d02dab14e523e",
+ "_name": "Gloomhaven: Jaws of the Lion"
+}

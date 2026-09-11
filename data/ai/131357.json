@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Coup is a fast, tense bluffing game where you claim character powers you may not actually have, daring opponents to challenge you or fold to your threat. Games are short and vicious, often decided by a single successful bluff or a lucky challenge near the end.",
+ "praised": [
+  "Extremely fast setup and playtime",
+  "High tension despite simple rules",
+  "Bluffing and reading opponents is genuinely fun",
+  "Easy to teach, portable, cheap"
+ ],
+ "criticised": [
+  "Player elimination means early-out players wait around",
+  "Luck of the draw (which characters you get) can swing outcomes",
+  "Can devolve into pure aggression/kingmaking in larger groups",
+  "Depth is fairly shallow after many plays"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "bluffing, accusing, and open conflict via coin theft and assassination"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The last player left with any influence (face-down cards) wins, decided entirely by bluffing, challenges, and eliminating opponents' cards"
+ },
+ "similar": [
+  "The Resistance",
+  "Secret Hitler",
+  "One Night Ultimate Werewolf",
+  "Skull",
+  "Sheriff of Nottingham"
+ ],
+ "_fingerprint": "7099cb7896086a1c",
+ "_name": "Coup"
+}

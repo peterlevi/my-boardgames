@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Bitoku is a dense hand-management and worker-placement engine-builder where you send dice-workers into forest regions to unlock actions, build structures, and grow a hand of yōkai cards that combo together; turns are short but each one matters, and the tableau grows into a satisfying engine over the game's two hours. It rewards planning a route through several scoring paths (structures, crystals, mitama tracks, set collection) rather than one dominant strategy.",
+ "praised": [
+  "Rich, tightly interlocking engine-building with a strong sense of progression each round",
+  "Beautiful, thematic art and production quality",
+  "Multiple viable paths to victory that reward long-term planning",
+  "Good solo mode"
+ ],
+ "criticised": [
+  "Steep rules overhead and long first-play teach relative to the payoff",
+  "Significant analysis paralysis, especially with 4 players",
+  "Iconography-heavy cards can be hard to parse early on",
+  "Player interaction is fairly limited/indirect for a 120-minute game"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "area denial on worker placement spots, mostly parallel engine-building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Final score is an accumulation across structures, crystals, mitamas, sets, and end-game bonuses, so efficient engine-building across several tracks decides the winner rather than any single dominant path"
+ },
+ "similar": [
+  "Res Arcana",
+  "Tzolk'in: The Mayan Calendar",
+  "Everdell",
+  "Carnegie",
+  "Anachrony"
+ ],
+ "_fingerprint": "5af8ba5a572bfd00",
+ "_name": "Bitoku"
+}

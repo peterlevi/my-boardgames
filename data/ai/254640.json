@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Just One is a fast, low-stress cooperative party game where the table quietly compares one-word clues and giggles over near-misses and duplicate wipeouts; there's no real strategy, just word association and trying to read your teammates' minds. It plays best as a light, inclusive icebreaker that works across a wide range of ages and group sizes.",
+ "praised": [
+  "Extremely easy to teach and get running in under a minute",
+  "Generates a lot of laughter, especially from unintentionally duplicate or wildly off-base clues",
+  "Fully cooperative so there's no downtime tension or player elimination",
+  "Scales well from small to large groups and works with mixed skill/age levels",
+  "Great value/production for a small box"
+ ],
+ "criticised": [
+  "Little to no strategic depth, so it can feel thin for gamers looking for a 'real' game",
+  "Luck of word association means a good guesser can still fail on a bad card",
+  "Replayability can dip once the included word cards are exhausted",
+  "Some groups find it too light or repetitive after several sessions"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "Simultaneous clue-writing and shared deduction toward one guesser"
+ },
+ "win_criteria": "Cooperative goal",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The team's single running score is simply the count of mystery words correctly guessed minus the ones guessed wrong, so there's no 'winner' beyond the group's shared tally."
+ },
+ "similar": [
+  "Codenames",
+  "Wavelength",
+  "Decrypto",
+  "The Mind",
+  "Concept"
+ ],
+ "_fingerprint": "77e0aa8e833fbe7f",
+ "_name": "Just One"
+}

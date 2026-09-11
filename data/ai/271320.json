@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "The Castles of Burgundy is a dice-driven tile-placement game where players race to fill their personal princedom boards with settlement tiles, optimizing for combos and efficient turns each round. It's a puzzly, low-conflict euro that rewards planning and flexibility around dice rolls more than direct competition.",
+ "praised": [
+  "elegant, tight puzzle of tile placement",
+  "high replayability from modular boards and phase order",
+  "smooth turn structure with almost no downtime",
+  "excellent solo mode"
+ ],
+ "criticised": [
+  "dice rolls can feel restrictive/lucky at times",
+  "low direct player interaction",
+  "iconography and initial rules can be a hurdle",
+  "some feel it's dry/mechanical"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "race to grab tiles from a shared market, mostly parallel play"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points accumulate from multiple region bonuses, tile synergies, and end-game scoring across the board"
+ },
+ "similar": [
+  "Kingdom Builder",
+  "Orleans",
+  "Bruges",
+  "The Voyages of Marco Polo",
+  "Grand Austria Hotel"
+ ],
+ "_fingerprint": "dcd8c89821d7bb49",
+ "_name": "The Castles of Burgundy"
+}

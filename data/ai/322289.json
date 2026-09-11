@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A dense, tightly-optimized worker-placement game where your workers must first study disciplines before they can perform stronger actions, layering a skill-development puzzle on top of pick-up-and-deliver ship movement around the Galápagos. Turns feel purposeful and interlocking, but the sheer number of subsystems (contracts, species collection, exploration cards, boat routes, worker training) makes early plays heavy and slow.",
+ "praised": [
+  "Innovative worker-progression/skill-training system layered onto worker placement",
+  "Gorgeous, thematic production (islands, ship miniature, wooden bits)",
+  "Deep, satisfying engine-building and route optimization",
+  "Strong solo mode",
+  "Meaningful long-term planning across contracts and exploration"
+ ],
+ "criticised": [
+  "High rules overhead and iconography, steep learning curve",
+  "Long playtime, especially first few games",
+  "Can feel dry/cerebral with limited table talk",
+  "Similar 'multiplayer solitaire' feel to Luciani's other worker-placement designs (Barrage, On Mars)",
+  "Analysis paralysis due to many simultaneous optimization paths"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "worker-placement space-blocking (claim action), otherwise mostly parallel play"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from fulfilled contracts, species/set collection, exploration progress, and endgame bonuses, so the winner is usually whoever balanced several scoring engines rather than maxing one."
+ },
+ "similar": [
+  "Barrage",
+  "On Mars",
+  "Anachrony",
+  "Praga Caput Regni",
+  "Tzolk'in: The Mayan Calendar"
+ ],
+ "_fingerprint": "a374fc17c25e7e4e",
+ "_name": "Darwin's Journey"
+}

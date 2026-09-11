@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Everdell is a soft-edged worker placement and tableau builder where you gather berries, twigs, resin, and pebbles to construct a woodland city of critters and buildings over four seasons. The tension comes from a tight worker supply, timing when to pass into the next season, and chaining card discounts and card-draw engines rather than direct conflict with opponents.",
+ "praised": [
+  "Stunning production values and the 3D tree tray",
+  "Satisfying engine-building as card discounts and bonuses chain together",
+  "Approachable rules for the theme and component heft, works well solo",
+  "Charming, relaxing theme that appeals beyond typical euro-gamers"
+ ],
+ "criticised": [
+  "Card draw luck can swing available buildings/critters significantly",
+  "Can feel solitaire-ish with limited meaningful interaction between players",
+  "Some card combos are notably stronger than others, creating balance complaints",
+  "Base game can run long for the amount of decision depth, especially at higher player counts"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "worker placement blocking on shared locations, otherwise mostly parallel tableau building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from building/critter values, completed events, seasonal bonuses, and end-game city/card synergies, so the winner is usually whoever assembles the most efficient multi-source scoring engine."
+ },
+ "similar": [
+  "Wingspan",
+  "Viticulture",
+  "Underwater Cities",
+  "Fields of Arle",
+  "Paladins of the West Kingdom"
+ ],
+ "_fingerprint": "33d62bb7a4a07514",
+ "_name": "Everdell"
+}

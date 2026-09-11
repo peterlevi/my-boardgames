@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A dense, aggressive economic game where players bid for turn order and worker placement while building networks of trading posts to move goods and score points by dedicating monuments to one of twelve gods. Every action is entangled with every other player's plans, making it a spatial, multiplayer chess-like puzzle with brutal opportunity costs and heavy player interaction through the auction and shared board.",
+ "praised": [
+  "Deeply interlocking systems where every decision affects every other player",
+  "High replayability from variable god choice, modular board, and player count scaling",
+  "Rewards long-term planning and reading opponents' positions",
+  "Satisfying economic engine-building once the systems click",
+  "Strong Splotter pedigree for tight, no-luck design"
+ ],
+ "criticised": [
+  "Steep learning curve and opaque rules on first plays",
+  "Long downtime and analysis paralysis, especially with full player counts",
+  "Punishing for new players who make early positional mistakes",
+  "Small print run/high price typical of Splotter games makes it hard to acquire",
+  "Auction mechanism can feel swingy or hard to value early on"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "auctions, blocking, and area denial over shared board space and turn order"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Points come from monuments dedicated to your chosen god, so success hinges on optimizing one scoring path rather than diversifying across many."
+ },
+ "similar": [
+  "Antiquity",
+  "Indonesia",
+  "Container",
+  "Food Chain Magnate",
+  "Puerto Rico"
+ ],
+ "_fingerprint": "34b1521d966006e5",
+ "_name": "The Great Zimbabwe"
+}

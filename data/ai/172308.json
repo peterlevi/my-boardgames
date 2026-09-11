@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Broom Service is a tense bluffing game where you simultaneously commit to role cards and then find out if your bold 'brave' actions get stolen out from under you by braver opponents. The push-your-luck tension of deciding cowardly-vs-brave, combined with racing potions across the map, makes for a fast, mean, and often hilarious multiplayer experience.",
+ "praised": [
+  "Clever bluffing/mind-reading tension between cowardly and brave role choices",
+  "Fast-playing with high player interaction and table talk",
+  "Good scaling including a well-regarded 2-player variant",
+  "Nice component and art upgrade over Witch's Brew"
+ ],
+ "criticised": [
+  "Can feel mean or swingy when your brave action gets stolen, especially for newer players",
+  "Some find the theme pasted-on and interchangeable with the original Witch's Brew",
+  "Simultaneous role selection can lead to analysis paralysis in longer player counts",
+  "Luck of card draw for ingredients/weather adds variance some don't like"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "bluffing and role-stealing"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Points mainly come from delivering potions of different colors, with bonus scoring from special roles and end-game majorities"
+ },
+ "similar": [
+  "Witch's Brew",
+  "Libertalia",
+  "Skull King",
+  "Mission: Red Planet",
+  "Diamant"
+ ],
+ "_fingerprint": "ccb9e08bc062592b",
+ "_name": "Broom Service"
+}

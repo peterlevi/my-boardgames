@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Bohnanza is a fast, chatty trading game where you're constantly begging tablemates to take beans off your hands before you're forced to plant a card you don't want. The fun lives almost entirely in the negotiation - the bean-growing math is simple, but reading the table and cutting good deals is where games are won.",
+ "praised": [
+  "Trading and table talk are the whole game and stay engaging every session",
+  "Simple rules that scale well from casual groups to gamers",
+  "Strict hand-order rule creates constant tension and forces interesting trades",
+  "Great with larger groups (5-7) since more players means more trading chaos"
+ ],
+ "criticised": [
+  "Weak or quiet groups who don't negotiate make the game fall flat",
+  "Can run long with 6-7 players as trading rounds drag",
+  "Luck of the draw (which beans you pick up) matters more than some want",
+  "Not much game left if you strip out the negotiation"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "trading and negotiation"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Coins come from efficiently harvesting large single-type bean fields, so the winner is whoever manages field space and trades to avoid planting low-value beans"
+ },
+ "similar": [
+  "The Bohnanza expansions (e.g. Al Cabohne)",
+  "Chinatown",
+  "Sheriff of Nottingham",
+  "For Sale",
+  "Catan"
+ ],
+ "_fingerprint": "fc27b3b7b0ce3f4b",
+ "_name": "Bohnanza"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "In a frantic real-time phase, players scramble to slap spaceship tiles onto their board before the timer runs out, then fly the resulting ramshackle ship through a gauntlet of card-driven hazards that can rip off engines, cargo, and crew. It's a gleefully chaotic, often hilarious game about building something under pressure and watching it (and your plans) fall apart.",
+ "praised": [
+  "unique frantic real-time building phase",
+  "hilarious, memorable disaster stories",
+  "great tension between greed (more cargo) and safety (more armor)",
+  "second edition streamlines rules and components nicely"
+ ],
+ "criticised": [
+  "real-time building can stress out slower or younger players",
+  "luck of the draw on hazard cards can feel unfair",
+  "one player can spiral into a hopeless wreck with little to do",
+  "expansions needed for full variety"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "shared component scrambling and race-based positional jockeying"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Some",
+  "why": "final credits from delivered goods minus penalties for lost parts/crew determine the winner, with bonus credits for finishing position"
+ },
+ "similar": [
+  "Roll for the Galaxy",
+  "Escape: The Curse of the Temple",
+  "Alhambra",
+  "Flamme Rouge",
+  "Galaxy Trucker (original edition)"
+ ],
+ "_fingerprint": "70e927ee8408825c",
+ "_name": "Galaxy Trucker (Second Edition)"
+}

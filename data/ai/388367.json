@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Innovation is a fast, brain-burning card game where you build tech trees and constantly steal or copy each other's effects via chained 'dogma' actions, so a quiet turn can suddenly cascade into your opponent's cards firing repeatedly against you. This Ultimate edition bundles the base game with all five expansions plus a new Age 11 and reworked rules, making an already dense engine even bigger and more combo-laden.",
+ "praised": [
+  "Explosive, satisfying combos and chain reactions once you see the engine click",
+  "Extremely fast to play despite deep strategic depth",
+  "High replayability from asymmetric card effects and splaying",
+  "Clever theme expressed through card icons and history-themed names",
+  "This edition's rules streamlining and consolidation of all expansions in one box"
+ ],
+ "criticised": [
+  "Steep learning curve; card text is famously hard to parse for new players",
+  "Can feel like solitaire with occasional interference rather than direct interaction",
+  "Snowballing/kingmaking issues, especially at higher player counts",
+  "Analysis paralysis from tracking everyone's board and available dogma actions",
+  "Adding all expansions plus Age 11 raises complexity/rules overhead further"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "sharing and stealing dogma effects, take-that card/resource disruption"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Winning comes from reaching achievement thresholds or accumulating enough score-value icons through a tuned tech-tree engine, not from summing unrelated scoring categories"
+ },
+ "similar": [
+  "Glory to Rome",
+  "Res Arcana",
+  "Race for the Galaxy",
+  "7 Wonders",
+  "Roll for the Galaxy"
+ ],
+ "_fingerprint": "1766ae07e1493707",
+ "_name": "Innovation Ultimate"
+}

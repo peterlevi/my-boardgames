@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Each round you play a card whose suit either wins you a trick (and influence in a town toward area majority) or, if you lose it, lets you take a strong action like recruiting, building a monastery, or arranging a marriage. The tension between wanting to win tricks for board position and wanting to lose them for tempo-defining actions makes for a tight, cerebral, high-interaction game that plays out more like a control-point puzzle than a typical trick-taker.",
+ "praised": [
+  "Genuinely novel twist on trick-taking where losing a trick is often as valuable as winning it",
+  "Tight, interlocking systems with little wasted design space",
+  "High player interaction through area majority fights over towns and regions",
+  "Strong theme integration of the three historical pillars (war, church, marriage) into the three suits",
+  "Rewards planning and reading opponents' hands/intentions"
+ ],
+ "criticised": [
+  "Steep learning curve and rules overhead for a card game, with a lot to track on the first few plays",
+  "Some players find the trick-taking layer fiddly when combined with area control bookkeeping",
+  "Can feel swingy or luck-influenced when a bad hand of cards limits your options",
+  "Downtime/analysis paralysis at higher player counts as everyone evaluates trick implications",
+  "Iconography and the town/region map take real effort to parse before the game clicks"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "area majority fights over towns/regions plus direct trick-taking confrontation"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Victory is driven primarily by controlling towns and regions through trick-won influence, with actions from lost tricks serving mainly to set up or defend that majority control"
+ },
+ "similar": [
+  "The Voyages of Marco Polo",
+  "Blood Rage",
+  "Trickerion: Legends of Illusion",
+  "El Grande",
+  "Tzolk'in: The Mayan Calendar"
+ ],
+ "_fingerprint": "a394fc4172af8989",
+ "_name": "Brian Boru: High King of Ireland"
+}

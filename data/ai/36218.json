@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Each player starts with a weak identical deck and spends turns buying better cards from a shared central market, gradually deleting Copper and Estates while building an efficient engine of Actions and Treasures. Games are short, replayable due to variable kingdom setup, and reward optimizing your deck's engine over reacting to opponents.",
+ "praised": [
+  "High replayability from randomized kingdom card combinations each game",
+  "Elegant, easy-to-teach core rules with deep strategic possibility space",
+  "Satisfying deck-building puzzle and engine optimization",
+  "Fast turns and short overall playtime"
+ ],
+ "criticised": [
+  "Low direct player interaction in the base game (mostly parallel solitaire-ish play)",
+  "Some kingdom card combinations can feel imbalanced or degenerate",
+  "Card text requires frequent rules lookups/reference for newer players",
+  "Can feel repetitive or 'samey' without expansions"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play, with occasional Attack cards for indirect take-that"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is whoever accumulates the most Victory Points, primarily from Estates/Duchies/Provinces and any Victory cards enabled by the kingdom setup, at game end."
+ },
+ "similar": [
+  "Dominion: Intrigue",
+  "Star Realms",
+  "Clank!",
+  "Puerto Rico",
+  "Concordia"
+ ],
+ "_fingerprint": "3119672380cdc873",
+ "_name": "Dominion"
+}

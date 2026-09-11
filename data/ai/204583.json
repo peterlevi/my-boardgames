@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Kingdomino plays fast and light: each turn you draft a domino and place it to grow a compact 5x5 kingdom, weighing terrain matches against crown-heavy tiles. It's a satisfying little optimization puzzle that resolves in well under half an hour, with almost no downtime.",
+ "praised": [
+  "Extremely easy to teach and fast to play",
+  "Elegant turn-order-as-drafting-priority mechanism",
+  "Satisfying spatial puzzle for its weight",
+  "Great gateway/family game and works well with kids",
+  "High production value components (chunky wooden tiles in the deluxe edition)"
+ ],
+ "criticised": [
+  "Very light strategic depth, can feel too simple for gamers",
+  "Luck of the draw/tile order can swing outcomes",
+  "Limited long-term replayability for experienced gamers",
+  "Interaction is indirect and can feel solitaire-ish at low player counts"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "indirect drafting/denial via turn order and tile choice"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the winner is decided almost entirely by maximizing (territory size x crowns) across connected same-terrain regions"
+ },
+ "similar": [
+  "Queendomino",
+  "Karuba",
+  "Azul",
+  "Isle of Skye",
+  "Cottage Garden"
+ ],
+ "_fingerprint": "9391dcffa986a066",
+ "_name": "Kingdomino"
+}

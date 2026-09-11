@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Hansa Teutonica is a lean, brutal network-building game where you extend trade routes by placing merchants, but rival players can bump you off contested routes, forcing tense calculations about when to lock in a route versus upgrade your abilities. The tech-track upgrades (more actions, swapping pieces, moving through occupied spaces) create a snowballing efficiency race that rewards tight optimization over any theme.",
+ "praised": [
+  "tight, efficient action-point puzzle with almost no downtime",
+  "meaningful player interaction through displacement",
+  "upgrade tracks give satisfying engine-building progression",
+  "high replayability across different maps/expansions in the Big Box"
+ ],
+ "criticised": [
+  "thin theme, essentially an abstract optimization game",
+  "can feel mean when your routes get bumped repeatedly",
+  "analysis paralysis for new players facing many viable strategies",
+  "map/route knowledge advantage for experienced players"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "displacement and area majority contention over shared routes"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "points come from completed routes, upgraded abilities, and end-game bonuses, but efficient network control dominates"
+ },
+ "similar": [
+  "Web of Power",
+  "Age of Steam",
+  "Concordia",
+  "The Great Zimbabwe",
+  "Yspahan"
+ ],
+ "_fingerprint": "49a95d5a99e2b52b",
+ "_name": "Hansa Teutonica: Big Box"
+}

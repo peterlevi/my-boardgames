@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Babylonia is a tense area-majority game where you draft tiles from shared face-up rows and chain them onto a hex map to build farms, cities, and monuments, all while jockeying for majority control near royal courts. It has classic Knizia tension: every tile you take denies an opponent, and the game can end abruptly once a tile stack runs dry, so timing your final moves matters as much as your placements.",
+ "praised": [
+  "Deep, tense decision-making from a simple set of rules",
+  "Clever chaining/tile-drafting mechanism that creates constant blocking opportunities",
+  "Multiple viable scoring paths that reward different strategies",
+  "Strong table interaction typical of top-tier Knizia designs"
+ ],
+ "criticised": [
+  "Fiddly bookkeeping (court favor tiles, bull tokens, scoring tracks) that slows play",
+  "Steep rules/strategy learning curve for a first play",
+  "Sudden-death ending can feel abrupt or anticlimactic",
+  "Dry historical theme that feels pasted on rather than integrated"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial through competitive tile drafting"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from several semi-independent systems (farm/irrigation majorities, city/court favor, ziggurats, and bull-token bonuses), so the winner is whoever best balances multiple scoring engines rather than maxing one."
+ },
+ "similar": [
+  "Tigris & Euphrates",
+  "Yspahan",
+  "Ra",
+  "Blue Lagoon",
+  "Amun-Re"
+ ],
+ "_fingerprint": "7b25c751bd2b2444",
+ "_name": "Babylonia"
+}

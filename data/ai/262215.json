@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A dense, systems-heavy Pfister design where you route specialists across a hex map to fulfill ever-shifting resource needs while managing a bag/deck of tokens and riding a day/night rondel. It rewards efficient engine-building and planning several turns ahead more than reacting to opponents, with real weight in tracking multiple interlocking subsystems.",
+ "praised": [
+  "Deep, satisfying puzzle of resource and route optimization",
+  "Strong solo mode that holds up on repeated plays",
+  "High replayability from varied need cards and map routes",
+  "Thematic day/night and blackout mechanisms feel well integrated"
+ ],
+ "criticised": [
+  "Steep learning curve and fiddly rules overhead",
+  "Long turns and downtime, especially at higher player counts",
+  "Bag/token management can feel bookkeeping-heavy",
+  "Theme is thin dressing over a dense Euro engine"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light competition for map routes and shared resources"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from fulfilling need cards, route/network building, and end-game bonuses, so the winner is whoever built the most efficient overall engine rather than one dominant strategy"
+ },
+ "similar": [
+  "Great Western Trail",
+  "Mombasa",
+  "Maracaibo",
+  "Underwater Cities",
+  "Oh My Goods!"
+ ],
+ "_fingerprint": "b57206cde2a246e2",
+ "_name": "Blackout: Hong Kong"
+}

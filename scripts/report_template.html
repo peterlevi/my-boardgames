@@ -1106,29 +1106,66 @@ function closeDetail() {
   if (openDetail) { openDetail.parentNode.removeChild(openDetail); openDetail = null; }
 }
 
-var lightbox = null;
-function openLightbox(url, caption) {
+var lightbox = null, lbShots = [], lbIndex = 0;
+
+function openLightbox(shots, index) {
   closeLightbox();
+  lbShots = shots;
+  lbIndex = index;
   lightbox = document.createElement('div');
   lightbox.id = 'lightbox';
-  lightbox.innerHTML = '<img src="' + esc(url) + '" alt="' + esc(caption) +
-    '"><div class="cap">' + esc(caption) + '</div>' +
-    '<div class="hint">click anywhere, or press Esc, to close</div>';
+  lightbox.innerHTML =
+    '<img alt=""><div class="cap"></div><div class="hint"></div>';
   lightbox.addEventListener('click', closeLightbox);
   document.body.appendChild(lightbox);
+  paintLightbox();
 }
+
+function paintLightbox() {
+  if (!lightbox) return;
+  var shot = lbShots[lbIndex];
+  lightbox.querySelector('img').src = shot.u;
+  lightbox.querySelector('img').alt = shot.c;
+  lightbox.querySelector('.cap').textContent = shot.c;
+  lightbox.querySelector('.hint').textContent = lbShots.length > 1
+    ? (lbIndex + 1) + ' of ' + lbShots.length +
+      ' — ← → to browse, Esc or click to close'
+    : 'click anywhere, or press Esc, to close';
+}
+
+/** Wraps around, so browsing a handful of images never dead-ends. */
+function stepLightbox(delta) {
+  if (!lightbox || lbShots.length < 2) return;
+  lbIndex = (lbIndex + delta + lbShots.length) % lbShots.length;
+  paintLightbox();
+}
+
 function closeLightbox() {
   if (lightbox) { lightbox.parentNode.removeChild(lightbox); lightbox = null; }
+  lbShots = [];
 }
+
 document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape') closeLightbox();
+  if (!lightbox) return;
+  if (e.key === 'Escape') { closeLightbox(); }
+  else if (e.key === 'ArrowRight') { stepLightbox(1); e.preventDefault(); }
+  else if (e.key === 'ArrowLeft') { stepLightbox(-1); e.preventDefault(); }
 });
 
 TBODY.addEventListener('click', function (e) {
   var shot = e.target.closest('[data-shot]');
   if (shot) {
     e.stopPropagation();
-    openLightbox(shot.getAttribute('data-shot'), shot.getAttribute('data-cap'));
+    // The whole strip travels with the click, so the arrows have somewhere to
+    // go without needing to know which game is open.
+    var strip = [].map.call(
+      shot.closest('.shots').querySelectorAll('[data-shot]'),
+      function (b) {
+        return { u: b.getAttribute('data-shot'), c: b.getAttribute('data-cap') };
+      });
+    var idx = [].indexOf.call(
+      shot.closest('.shots').querySelectorAll('[data-shot]'), shot);
+    openLightbox(strip, idx < 0 ? 0 : idx);
     return;
   }
   var gameBtn = e.target.closest('[data-game]');

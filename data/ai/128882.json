@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A fast, highly social hidden-role game where Merlin's team must get missions approved while spies quietly sabotage them, and the tension comes almost entirely from reading people's arguments and votes rather than mechanics. Games are short, loud, and often end in an intense final-round accusation session once Merlin has to be found or protected.",
+ "praised": [
+  "Extremely high social interaction and table talk",
+  "Tense, dramatic endgame where players hunt for Merlin",
+  "Easy to teach and quick to play multiple rounds",
+  "Great for larger groups where not everyone wants a heavy game",
+  "Asymmetric roles (Merlin, Percival, Assassin, Morgana) add depth over base Resistance"
+ ],
+ "criticised": [
+  "Very quarterback-able and dominated by louder/more persuasive players",
+  "Eliminated feeling for players once their role's usefulness is spent (e.g., early-outed spies)",
+  "Merlin can win or lose the game almost single-handedly, which some find swingy",
+  "Not great with fewer than 6-7 players",
+  "Little to no strategic depth outside of social deduction/bluffing"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "bluffing, accusation, and persuasion"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The game is decided by whether the Resistance completes three missions and survives the Assassin's attempt to identify Merlin, not by point accumulation"
+ },
+ "similar": [
+  "The Resistance",
+  "One Night Ultimate Werewolf",
+  "Secret Hitler",
+  "Coup",
+  "Two Rooms and a Boom"
+ ],
+ "_fingerprint": "5fb397631b1fbd03",
+ "_name": "The Resistance: Avalon"
+}

@@ -1,31 +1,32 @@
 {
  "confidence": "high",
- "summary": "Magic Maze is a real-time cooperative game where players silently control all characters (not just their own) using shared movement icons, racing against a sand timer to complete a heist without speaking. The communication restriction creates a unique, often hilarious, chaotic tension as players must anticipate each other's moves.",
+ "summary": "Magic Maze is a real-time cooperative puzzle where each player controls a limited action (move north, move south, escalator, search) across all four heroes, and the core twist is that verbal communication is banned once the sand timer starts, forcing players to grab each other's pawns and point frantically instead. It plays fast and chaotic, with tension coming from the ban on talking rather than from the maze-building itself.",
  "praised": [
-  "innovative no-talking real-time co-op mechanic",
-  "hilarious chaotic tension",
-  "quick 15-minute plays",
-  "scales well solo to eight players"
+  "Unique communication-limit gimmick that creates genuinely funny, tense moments",
+  "Fast setup and short playtime, good as a filler or icebreaker",
+  "Scales unusually well, including a solo mode controlling multiple heroes",
+  "Modular board and expansions add variety"
  ],
  "criticised": [
-  "frustration when players struggle to communicate silently",
-  "can feel stressful rather than fun for some groups",
-  "modular map setup takes a bit of time relative to playtime"
+  "Can create real frustration or friction for players who dislike being unable to speak",
+  "One dominant/fast player can effectively solve it for the group, reducing others to spectators",
+  "Puzzle logic is fairly light and repetitive across plays",
+  "Not very forgiving for very young or new-to-boardgames players despite low weight"
  ],
  "interaction": {
   "level": "High",
-  "kind": "silent real-time cooperative coordination"
+  "kind": "silent cooperative coordination, non-verbal signaling and pawn-grabbing"
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "the team either escapes the maze in time or fails, with no points involved"
+  "why": "the group either gets all heroes to the exit before the timer/pyramid runs out or loses together, with no individual scoring"
  },
  "similar": [
+  "Space Alert",
   "Escape: The Curse of the Temple",
   "The Mind",
-  "Space Alert",
-  "Captain Sonar",
+  "Sherlock Holmes Consulting Detective",
   "Pandemic"
  ],
  "_fingerprint": "6760a9ab070ac3ae",

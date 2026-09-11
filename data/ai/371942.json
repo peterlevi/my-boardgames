@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A tight, dice-driven worker placement game where the numbers you roll dictate which actions you can take and how strong they are, with a central tug-of-war track for the shrine and moon-viewing bonuses driving tense positioning. It rewards efficient engine-building across several resource tracks (wisdom, honor tiles, cards) rather than any single dominant strategy, and plays fast for its weight.",
+ "praised": [
+  "Elegant dice-as-workers mechanism where die value and color both matter",
+  "High player interaction via the shared influence track despite being a euro",
+  "Fast playtime relative to its strategic depth",
+  "Beautiful production and Japanese-castle theme integration",
+  "Multiple viable paths to victory (cards, tiles, dice sets)"
+ ],
+ "criticised": [
+  "Dice luck can swing which actions are available on a given turn",
+  "Rulebook/iconography has a learning curve up front",
+  "Some feel the theme is pasted onto a fairly abstract euro engine",
+  "Solo mode is decent but noticeably weaker than multiplayer"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial on the shared track and action spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from combining honor tiles, card sets, temple/shrine track position, and end-game bonuses, so the winner is usually whoever built the most efficient multi-track engine."
+ },
+ "similar": [
+  "The Red Cathedral",
+  "Tzolk'in: The Mayan Calendar",
+  "Trickerion",
+  "Barrage",
+  "Coimbra"
+ ],
+ "_fingerprint": "27a7816f1cd3ee39",
+ "_name": "The White Castle"
+}

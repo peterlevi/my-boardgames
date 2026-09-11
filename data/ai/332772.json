@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Revive is a big, engine-building euro where you race across a hex map to claim ancient sites and populate them for points, while managing a growing hand of technology and resource cards through a bag/deck-building layer. Turns involve efficient action selection and long-term tech planning, with almost no direct player interaction beyond racing for the same spots.",
+ "praised": [
+  "Strong table presence with the dual-layer boards and chunky components",
+  "Deep, satisfying engine building with meaningful tech tree choices",
+  "High variability from randomized ancient sites, tribe powers, and modular setup keeps replays fresh",
+  "Solid solo mode and a well-paced 5-scenario campaign that eases players into the rules",
+  "Good production value for the price point"
+ ],
+ "criticised": [
+  "Rulebook and iconography are dense and can be confusing early on",
+  "Significant setup and teardown time given the number of components",
+  "Some player interaction is limited to racing for the same ancient sites, which can feel too solitaire for groups wanting more conflict",
+  "Early turns can feel slow while engines are still being built",
+  "Campaign progression means the base game is less interesting once unlocks are exhausted, until you've gone through it"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with racing/blocking for ancient sites and shared resource spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from populated ancient sites, technology advancement, completed objectives, and leftover resources, so the winner is usually whoever built the most efficient overall engine rather than one dominant strategy"
+ },
+ "similar": [
+  "Trickerion: Legends of Illusion",
+  "Scythe",
+  "Anachrony",
+  "Res Arcana",
+  "Terraforming Mars"
+ ],
+ "_fingerprint": "41f6a84ccce527d1",
+ "_name": "Revive"
+}

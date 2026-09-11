@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Small World is a fast-moving conquest game where you drive one race across the map for a few turns, milk it for points, then abandon it into decline and pick up a fresh race with a new special power. The core tension is timing your decline correctly and picking race/power combos that synergize, all while reading the shrinking map and squeezing opponents out of territory.",
+ "praised": [
+  "Clever decline mechanic that keeps every race relevant even as it weakens",
+  "High replayability from randomized race/power combinations",
+  "Fast, light, accessible ruleset for the amount of strategy it offers",
+  "Great table presence and thematic, whimsical race/power names and art",
+  "Works well across a wide range of player counts"
+ ],
+ "criticised": [
+  "Runaway leader potential if one player snowballs early",
+  "Can feel a bit random or lucky depending on which races/powers are available when it's your turn to pick",
+  "End-of-game scoring swings and hidden decline timing can feel fiddly",
+  "Less strategic depth than other area-control games once the decline gimmick is learned",
+  "Combat is largely deterministic/luck-light but dice for the occasional reinforcement roll can frustrate"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "direct territorial conquest and area denial, attacking neighbors to grab land and points"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "points accumulate turn after turn mainly from territories controlled by your active and declined races, so the winner is decided by consistent territorial income across multiple race cycles rather than one big swing"
+ },
+ "similar": [
+  "Vinci",
+  "Risk Legacy",
+  "Cyclades",
+  "Kemet",
+  "El Grande"
+ ],
+ "_fingerprint": "671e883bd5b85139",
+ "_name": "Small World"
+}

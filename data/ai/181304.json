@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "One player plays a mute ghost showing dreamy, surreal illustrated cards to the other players (mediums), who must match suspect/location/weapon cards to the visions under a time pressure; it's a cooperative, real-time guessing game built on interpreting evocative art rather than tight logic. The tension comes from the ghost's frustration at not being able to just say the answer, and the mediums' delight (or despair) at wildly divergent interpretations of the same surreal image.",
+ "praised": [
+  "Gorgeous, evocative artwork that makes the guessing genuinely fun",
+  "Strong asymmetric player experience (ghost vs mediums) that's rare in party games",
+  "Great for groups including non-gamers, since only the ghost needs to fully know the rules",
+  "Tense, satisfying payoff when a hard clue finally clicks"
+ ],
+ "criticised": [
+  "Luck of the draw matters a lot — a bad hand of cards can make the ghost unable to signal clearly",
+  "Can run long and drag in the middle chapters",
+  "Ghost player has little to do mechanically except sort cards, which some find passive",
+  "Interpretation-based deduction means outcomes vary wildly by group chemistry, not skill"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "cooperative real-time communication and guessing"
+ },
+ "win_criteria": "Cooperative goal",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the group either collectively identifies suspect, location, and weapon within the time limit or fails together, with no individual scoring"
+ },
+ "similar": [
+  "Dixit",
+  "The Mind",
+  "Codenames",
+  "Chronicles of Crime",
+  "Decrypto"
+ ],
+ "_fingerprint": "2c42a34fbe6494a2",
+ "_name": "Mysterium"
+}

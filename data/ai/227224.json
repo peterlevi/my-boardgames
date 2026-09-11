@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Players draft dice from a shared rondel-like row and use their values/colors to buy resources, fulfill contracts, and place gems to build the cathedral's arches. It's a tight, fairly short euro with light dice-drafting tension but very little direct conflict.",
+ "praised": [
+  "Clever use of dice as a resource-drafting mechanism rather than pure luck",
+  "Fast turns and short playtime relative to its strategic depth",
+  "Attractive, colorful presentation and components",
+  "Multiple viable paths to score (contracts, arches, favor track)",
+  "Works well solo"
+ ],
+ "criticised": [
+  "Interaction is limited to competing for the same dice, which can feel too solitaire-ish for gamers wanting more conflict",
+  "Some randomness in available dice can swing options turn to turn",
+  "End-game scoring can feel a bit fiddly to track across several tracks",
+  "Slightly dry theme integration"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light dice/resource drafting competition"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Points come mainly from completed contracts, arch placement, and the favor track, so the winner is decided by efficient dice use across a few interlocking systems rather than one dominant source."
+ },
+ "similar": [
+  "Trickerion",
+  "Coimbra",
+  "Rajas of the Ganges",
+  "Cannikin",
+  "Fresco"
+ ],
+ "_fingerprint": "5b171fe93051a1a0",
+ "_name": "The Red Cathedral"
+}

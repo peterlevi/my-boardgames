@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "One player (Mind MGMT) secretly moves around a hidden map trying to recruit locations matching their feature cards while the rest of the team asks yes/no-style questions and cross-references clues on a shared deduction sheet to pinpoint and intercept them. It plays like a cooperative, more streamlined riff on Letters from Whitechapel/Scotland Yard, with a distinctive comic-book aesthetic and asymmetric roles.",
+ "praised": [
+  "Tense, satisfying deduction puzzle for the hunting team",
+  "Strong asymmetry between the hidden-movement player and the deduction team",
+  "Attractive comic-inspired art and thematic integration with the Mind MGMT source material",
+  "Good scaling for a fully cooperative game, including solo/low-player-count variants"
+ ],
+ "criticised": [
+  "The Mind MGMT player's role can feel repetitive or less engaging than the deduction side",
+  "Some downtime for players waiting on questions/answers to resolve",
+  "Rules and bookkeeping (feature cards, immortals, tracking) have a learning curve",
+  "Replayability can dip once the map-reading and deduction patterns become familiar"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "hidden movement and deduction via question-and-answer, one vs. team"
+ },
+ "win_criteria": "Cooperative goal",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The team wins or loses as a whole based on whether they corner and expose Mind MGMT before time/turns run out."
+ },
+ "similar": [
+  "Letters from Whitechapel",
+  "Scotland Yard",
+  "Fury of Dracula",
+  "The Grimm Forest",
+  "Deep Sea Adventure"
+ ],
+ "_fingerprint": "8f5f92a4cd42970d",
+ "_name": "Mind MGMT: The Psychic Espionage “Game.”"
+}

@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Scythe is a slow-burn engine-builder where players expand across a hex map, upgrade production, and build mechs, with combat resolved by hidden card bids rather than dice — most games see little to no actual fighting despite the war-torn theme. It rewards efficient action sequencing and territory/resource snowballing over direct conflict, with a long midgame of quiet optimization punctuated by occasional tense standoffs.",
+ "praised": [
+  "Stunning art and production value (Jakub Różalski)",
+  "Elegant action-selection system with no downtime for turn-taking",
+  "Strong asymmetry between factions and player mats",
+  "Low direct conflict but constant tension over territory and timing",
+  "Satisfying engine-building and snowball feel"
+ ],
+ "criticised": [
+  "Long playtime for the amount of interaction",
+  "Steep upfront learning curve and rules overhead",
+  "Some factions/mats considered stronger than others (balance complaints)",
+  "Can feel solitaire-ish/multiplayer-solitaire in lower-conflict groups",
+  "Bookkeeping-heavy (popularity, resources, stars) for a relatively simple core loop"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "territory/area control with occasional combat, mostly indirect blocking"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Final score combines stars (achievements), territory, resources, and popularity multipliers, so the winner is decided by a broad end-game tally rather than one dominant track."
+ },
+ "similar": [
+  "Terraforming Mars",
+  "Root",
+  "Gaia Project",
+  "The Great Zimbabwe",
+  "Blood Rage"
+ ],
+ "_fingerprint": "5cfe2a2ecc8d706d",
+ "_name": "Scythe"
+}

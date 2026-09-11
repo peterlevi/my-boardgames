@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A dense worker-placement/dice-drafting euro where the die you take doubles as a resource and dictates your next action, forcing constant lookahead planning across five interlocking districts. It plays like a tighter, more tactical cousin of Tascini's other dice-driven designs, with area-majority scoring for building placement layered on top of engine-building.",
+ "praised": [
+  "The die-as-resource-and-action-selector mechanism feels genuinely novel and creates satisfying forward-planning puzzles",
+  "Strong production values and thematic board depicting the districts of Ur",
+  "Multiple viable paths to points (construction, temple favor, ships) give replayability",
+  "Rewards efficient turn optimization for players who like tight euro puzzles"
+ ],
+ "criticised": [
+  "Steep rules overhead and iconography that make the first few plays confusing",
+  "Long playtime (2 hours) that can drag, especially at 4 players with downtime between turns",
+  "Some randomness in which dice/values are available can undercut careful planning",
+  "Considered one of Tascini's more inaccessible designs, overwhelming for less experienced euro gamers"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "area majority and competition for districts/dice, indirect blocking"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from building construction and area majority, temple/king's favor tracks, ship abilities, and end-game bonuses, so winners typically balance several of these rather than maxing one."
+ },
+ "similar": [
+  "Teotihuacan: City of Gods",
+  "Tzolk'in: The Mayan Calendar",
+  "Trickerion: Legends of Illusion",
+  "Anachrony",
+  "Newton"
+ ],
+ "_fingerprint": "7541ec4127e62dc2",
+ "_name": "Tabannusi: Builders of Ur"
+}

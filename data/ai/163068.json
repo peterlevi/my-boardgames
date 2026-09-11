@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Trickerion is a heavy worker-placement game where you juggle a team of differently-abled workers to gather components and rehearse tricks, then cash them in via a tense tile-laying performance minigame at the Theater. The performance mechanic is the highlight, rewarding planning and adaptability, but the rest of the game is a long, fiddly build-up of resource and blueprint management.",
+ "praised": [
+  "The Theater performance minigame is tense, clever, and genuinely different from typical worker placement",
+  "Strong player asymmetry via unique Illusionist powers and customizable teams",
+  "High production value and thematic component design (workshop board, trick tiles)",
+  "Rewarding long-term planning as you build toward big performances"
+ ],
+ "criticised": [
+  "Long playtime and heavy downtime, especially with 4 players and simultaneous action selection resolution",
+  "Steep rules overhead and fiddly bookkeeping (component tracking, worker assignment) for the payoff",
+  "Snowballing/leader problems can make catch-up difficult once someone gets an efficient trick engine going",
+  "Can feel more like a puzzle/engine to optimize solo than a game with rich player interaction outside the Theater"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker placement blocking plus direct tile-laying conflict during Theater performances"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Fame from successfully performing tricks (with a coin cushion) is essentially the whole game, so the winner is whoever executes the biggest, best-timed performances"
+ },
+ "similar": [
+  "Coimbra",
+  "Grand Austria Hotel",
+  "Lorenzo il Magnifico",
+  "Anachrony",
+  "Teotihuacan: City of Gods"
+ ],
+ "_fingerprint": "15748c7be4fcdb4e",
+ "_name": "Trickerion: Legends of Illusion"
+}

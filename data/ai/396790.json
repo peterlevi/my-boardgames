@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Nucleum is a dense economic euro where players build rail and power-line networks across a map to deliver energy from nuclear plants to cities, while climbing a shared tech tree and using an action-retrieval mechanism (columns of action tiles that shift and get replaced) to plan efficient turns. Turns are engine-building puzzles with tight resource conversion, heavy multi-turn planning, and constant tension between expanding your network, upgrading buildings, and racing others to key tech and map spots.",
+ "praised": [
+  "Satisfying, tightly interlocking engine-building puzzle with a strong sense of progression",
+  "Action-retrieval system creates interesting tactical tension each round",
+  "Good component quality and thematic production for a euro",
+  "Multiple viable strategies and replayability from variable setup/tech paths",
+  "Strong solo mode"
+ ],
+ "criticised": [
+  "Very heavy rules overhead and long teach for a first game",
+  "Significant downtime in multiplayer as turns require deep calculation",
+  "Some randomness in tile/action availability feels at odds with the otherwise tight optimization",
+  "Map/network building can feel a bit disconnected from the tech-tree half of the game",
+  "Not much direct player interaction beyond space/route competition"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "indirect competition for map spots, routes, and tech track positions"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from network size, power plant upgrades, tech track advancement, contracts, and end-game bonuses, rewarding a well-rounded engine over one narrow strategy"
+ },
+ "similar": [
+  "Barrage",
+  "Trismegistus: The Ultimate Formula",
+  "Great Western Trail",
+  "Brass: Birmingham",
+  "Voyages: The Great Exchange"
+ ],
+ "_fingerprint": "16e703ee202ade0e",
+ "_name": "Nucleum"
+}

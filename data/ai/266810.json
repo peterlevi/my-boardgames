@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A dense worker-placement game where you send unique worker types (each with escalating strength-based bonuses) to build outposts, commission monks for combos, or confront raiders, while managing a hidden virtue/corruption track that shapes which endgame bonuses you can claim. It's slower and more of a brain-burner than its siblings Architects and Merchants, rewarding a coherent long-term engine over reactive play.",
+ "praised": [
+  "Strong thematic and mechanical variety within one system (building, faith, combat)",
+  "Beautiful, high-quality art and production",
+  "Satisfying engine-building via monk commissioning combos",
+  "Good solo mode",
+  "Meaningful choices around the virtue/corruption alignment track"
+ ],
+ "criticised": [
+  "Heaviest and most fiddly of the West Kingdom trilogy, with a steeper learning curve",
+  "Can feel a bit dry or spreadsheet-like compared to Architects",
+  "Significant downtime in higher player counts",
+  "Some randomness in the market/outsider decks can swing outcomes",
+  "Rulebook and icon-heavy components require a learning investment"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker placement blocking and spot competition"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from a mix of outposts, fortifications, commissioned monks, confronted outsiders, and endgame bonuses tied to virtue/strength/influence tracks."
+ },
+ "similar": [
+  "Architects of the West Kingdom",
+  "Merchants of the Dark Road",
+  "Raiders of the North Sea",
+  "Grand Austria Hotel",
+  "Lords of Waterdeep"
+ ],
+ "_fingerprint": "062f7672eb428a36",
+ "_name": "Paladins of the West Kingdom"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Mottainai is a tight, cutthroat card game where every card in your hand is simultaneously a potential task, material, or work, forcing constant hard choices about what to sacrifice for what. Games are short but tense, since the follow mechanic means your opponents often benefit from the action you choose to take, so timing and reading the table matter as much as your own plan.",
+ "praised": [
+  "Incredible depth and replayability packed into a small deck and quick playtime",
+  "Every card being usable in multiple ways creates constant meaningful decisions",
+  "Tight, elegant design typical of Carl Chudyk (Innovation, Glory to Rome)",
+  "Fast setup and teardown, good for repeated plays in one sitting"
+ ],
+ "criticised": [
+  "Steep learning curve and unintuitive rules text that make teaching it hard",
+  "Can feel fiddly or 'crunchy' for such a short, small game",
+  "Some multi-use card text is dense and requires reference/cheat sheets",
+  "Two-player experience is considered weaker than with more players"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "follow/role-selection interaction where your chosen action lets others act too"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Winning comes down to efficiently completing high-value works while managing scarce materials, so a well-timed focused engine beats spreading effort thin"
+ },
+ "similar": [
+  "Glory to Rome",
+  "Innovation",
+  "San Juan",
+  "Race for the Galaxy",
+  "Res Arcana"
+ ],
+ "_fingerprint": "12df0e58882b7eb2",
+ "_name": "Mottainai"
+}

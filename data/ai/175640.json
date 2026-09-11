@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Vinhos is a dense, multi-layered economic game where you juggle vineyard planting, wine production, quality upgrades, trade fairs, and contracts across six harvest years, with almost every turn forcing tight trade-offs between several viable strategies. It plays like a spreadsheet come to life — deeply satisfying once the engine clicks, but demanding heavy upfront study of interlocking subsystems.",
+ "praised": [
+  "Rich, interlocking decision space where every action has ripple effects",
+  "Strong thematic integration of wine-making stages into mechanics",
+  "High replayability from variable player powers, contracts, and events",
+  "Satisfying sense of building and optimizing an efficient engine"
+ ],
+ "criticised": [
+  "Steep learning curve and rules overhead, especially for a first play",
+  "Dense iconography and a lot of fiddly bookkeeping",
+  "Significant analysis paralysis, especially with more players",
+  "Can feel more like a solitaire optimization puzzle than an interactive game"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker placement blocking, area majority at the trade fair, and competing for limited contracts"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final score combines wine quality/exports, contracts fulfilled, vineyard and building investments, and end-game bonuses, so success comes from balancing several economic engines rather than one dominant path"
+ },
+ "similar": [
+  "Kanban: Automotive Revolution",
+  "On Mars",
+  "Great Western Trail",
+  "The Gallerist",
+  "Anachrony"
+ ],
+ "_fingerprint": "d1d7c03b7f32b3c2",
+ "_name": "Vinhos: Deluxe Edition"
+}

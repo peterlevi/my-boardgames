@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A quiet, brain-burning abstract where players snake camel trains across a hex desert to claim oases and territory, with points hidden in multiple scoring tracks that only resolve at the end. It plays fast and tense despite the calm theme, since every placement blocks someone else's route.",
+ "praised": [
+  "Elegant, tight rules that generate deep decisions",
+  "Multiple scoring paths keep every game different",
+  "Satisfying tension between building your own routes and blocking opponents",
+  "Quick to teach and quick to play relative to its depth"
+ ],
+ "criticised": [
+  "Can feel dry or overly analytical for players wanting theme",
+  "End-game scoring can be hard to track/predict, leading to swingy surprises",
+  "Analysis paralysis in a group prone to overthinking each placement",
+  "Two-player games lose some of the multiplayer blocking dynamics"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking and area denial"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from several independent tracks (camel-color majorities, longest chains, and oasis bonuses) that all combine at the end, so the winner is whoever balances several scoring routes best rather than maximizing one."
+ },
+ "similar": [
+  "Tigris & Euphrates",
+  "Yspahan",
+  "Torres",
+  "Samurai",
+  "Ingenious"
+ ],
+ "_fingerprint": "f647cedf2f117682",
+ "_name": "Through the Desert"
+}

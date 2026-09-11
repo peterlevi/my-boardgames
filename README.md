@@ -31,6 +31,36 @@ browser:
 Thumbnails are embedded in the file, so it works with no network and survives
 being mailed or dropped into a chat client.
 
+### A local opinion database (optional)
+
+`scripts/enrich.py` builds `data/ai/<id>.json` — one grounded summary per game
+— using the `claude` CLI if it is on PATH, and skipping cleanly if it is not.
+That is where **Wins by**, **Breadth**, the interaction *kind*, and the "what
+people say" panel come from.
+
+```bash
+python3 scripts/enrich.py            # only games without a current answer
+python3 scripts/enrich.py --force    # redo everything
+```
+
+Three things make it trustworthy enough to put in a table:
+
+- **Grounded, not recalled.** Every prompt carries the cached BGG description,
+  mechanics, categories, weight and poll, and asks the model to reconcile what
+  it knows against what is in front of it. That is what makes it work for
+  games published after the model's training cutoff.
+- **It is allowed to not know.** Each entry carries a confidence. A
+  low-confidence game keeps its structural fields and its opinion fields are
+  dropped rather than shown, so the report never presents a guess as a
+  finding. On this collection: 200 high, 35 medium, 7 low.
+- **Cached and committed.** Keyed by a fingerprint of the inputs plus a schema
+  version, so a resync only pays for genuinely new games — and anyone cloning
+  the repo gets the database without running it or needing the CLI at all.
+
+Batching matters: one game per `claude` call took about 100 minutes for 242
+games, because agent startup dominates. Eight per call takes about four
+minutes.
+
 ### Two columns are opinions
 
 **Interaction** is not a BGG statistic. Their API has no such field, and

@@ -1,18 +1,34 @@
 {
- "confidence": "low",
- "summary": "",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "A dense, systems-heavy Euro where you queue actions via double-sided cards and watch nearly every move ripple through a shared supply-and-demand market for resources like ore, stone, and permits. Turns are quick individually, but the payoff comes from reading the whole board's economy and timing your mining, building, and cathedral contributions before rivals shift prices against you.",
+ "praised": [
+  "The dynamic market/pricing system feels genuinely reactive and clever rather than bolted-on",
+  "Strong sense of economic interdependence — other players' actions visibly affect your options",
+  "Asymmetric guild powers give replayability and distinct strategies",
+  "Satisfying long-term puzzle of sequencing actions on the card queue"
+ ],
+ "criticised": [
+  "Steep rules overhead and a fiddly first few plays before the systems click",
+  "Iconography and card-queue mechanism can feel unintuitive early on",
+  "Can run long, especially at 4 players, with some downtime between turns",
+  "Production/component quality and rulebook clarity drew some complaints at launch"
+ ],
  "interaction": {
-  "level": "Medium",
-  "kind": ""
+  "level": "High",
+  "kind": "shared market pricing and competition for land/permits"
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": ""
+  "why": "Points accumulate from building, guild production, cathedral contribution, and economic efficiency, so the winner is usually whoever manages the market and multiple income streams best rather than one dominant strategy"
  },
- "similar": [],
+ "similar": [
+  "Barrage",
+  "The Gallerist",
+  "Great Western Trail",
+  "Praga Caput Regni",
+  "Trickerion: Legends of Illusion"
+ ],
  "_fingerprint": "cbd0e72fe6dafd0d",
  "_name": "Kutná Hora: The City of Silver"
 }

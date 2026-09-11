@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "A tight two-player abstract where you feed cards into two shared mandalas without knowing which colors will end up scoring big or small, then race to grab the right colors once values are revealed. Every play is a bet on future information, and the endgame scramble to seize the correct mandala colors is genuinely tense.",
+ "praised": [
+  "clever hidden-value hook that rewards paying attention",
+  "fast but deep for a 20-minute two-player game",
+  "elegant, minimal ruleset with a lot of decision space",
+  "gorgeous production for an abstract"
+ ],
+ "criticised": [
+  "theme is pure dressing on an abstract engine",
+  "can feel swingy when the wrong colors go valuable late",
+  "very dry for players wanting narrative or table talk"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "area majority and blocking over shared card pools"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "the winner is decided by who ends up holding the majority of the colors that turn out valuable"
+ },
+ "similar": [
+  "Hanamikoji",
+  "Battle Line",
+  "Lost Cities",
+  "Jaipur",
+  "Targi"
+ ],
+ "_fingerprint": "793f8d623d408428",
+ "_name": "Mandala"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Players simultaneously reveal a hand card each round and slot it into one of four ascending rows, taking the whole row (and its penalty bull's-heads) if their card is the sixth added; the tension comes from guessing how close your number is to the current row-ends and fearing being forced into a bad row. It's fast, light, and mean in a friendly way, with almost no direct control over your fate beyond calculated bluffing on card values.",
+ "praised": [
+  "Extremely quick to teach and play",
+  "Tense push-your-luck decisions despite simple rules",
+  "Scales well from small to large groups",
+  "Great as a filler or gateway game"
+ ],
+ "criticised": [
+  "Heavy luck/randomness in hand draw and turn order reveal",
+  "Can feel mean when you're forced to eat a big row",
+  "Limited long-term depth or replayable strategy",
+  "Some feel it overstays its welcome at higher player counts"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "Simultaneous card placement forcing indirect blocking and row denial"
+ },
+ "win_criteria": "Lowest-highest scoring",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The game ends when a player crosses a bull's-head penalty threshold, and the player with the fewest accumulated penalty points wins"
+ },
+ "similar": [
+  "Coloretto",
+  "For Sale",
+  "No Thanks!",
+  "Medici",
+  "Camel Up"
+ ],
+ "_fingerprint": "05c4fca422e3199e",
+ "_name": "Take 5: 30th Anniversary Edition"
+}

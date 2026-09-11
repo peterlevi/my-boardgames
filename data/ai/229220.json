@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Santa Maria is a tight, puzzly engine-builder where you tetris polyomino buildings onto your colony board and use dice as workers that trigger entire rows/columns before getting stuck in place. Turns are quick but the spatial planning is dense, rewarding careful sequencing of dice placement and building layout over three tense rounds.",
+ "praised": [
+  "Clever dice-as-workers mechanic where placement order and position matter enormously",
+  "Satisfying polyomino/tetris-like puzzle of fitting buildings onto your board",
+  "Fast turns and low downtime despite the depth",
+  "High replayability from varied building tiles and monk/scholar choices",
+  "Solo mode is well regarded"
+ ],
+ "criticised": [
+  "Steep learning curve and fiddly rules explanation for newcomers",
+  "Can feel overwhelming or 'mathy'/optimization-heavy rather than thematic",
+  "Iconography and symbol-heavy components require a learning period",
+  "Thin theme pasted onto an abstract engine-building puzzle",
+  "Only three rounds means early mistakes are hard to recover from"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light drafting competition for dice and buildings"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Happiness points accumulate from building layout efficiency, shipping routes, conquistadors, and monk types, so the winner is whoever builds the most efficient multi-source engine."
+ },
+ "similar": [
+  "Trickerion: Legends of Illusion",
+  "Grand Austria Hotel",
+  "Barrage",
+  "Teotihuacan: City of Gods",
+  "Bonfire"
+ ],
+ "_fingerprint": "185338849f9efc80",
+ "_name": "Santa Maria"
+}

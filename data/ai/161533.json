@@ -1,32 +1,35 @@
 {
  "confidence": "high",
- "summary": "Lisboa is a dense, puzzly Vital Lacerda eurogame about rebuilding earthquake-ravaged Lisbon, layering multi-use cards, market speculation, and tile-placement into an intricate engine. It's a heavy, brain-burning experience that rewards careful long-term planning and combo-building over direct conflict.",
+ "summary": "Lisboa is a dense, puzzly Lacerda design where every action ripples across half a dozen interlocking systems — building tiles, ships, wigs, factories, and disaster markers all pull on the same few resources. Turns are quiet and heads-down as players optimize multi-use cards and timing rather than clash directly, with the game rewarding a long-term engine plan over reactive play.",
  "praised": [
-  "incredibly tight, interlocking systems",
-  "strong theme integration for a heavy euro",
-  "satisfying multi-use card mechanism",
-  "great solo mode"
+  "Tight, elegant interlocking of systems for how much is going on",
+  "Multi-use cards create constant meaningful trade-offs",
+  "Strong solo mode",
+  "Thematic tie to the Lisbon earthquake reconstruction is well integrated into mechanisms",
+  "High replayability from variable card draws and multiple viable strategies"
  ],
  "criticised": [
-  "steep learning curve and rules overhead",
-  "significant analysis paralysis potential",
-  "iconography and setup can be intimidating"
+  "Steep learning curve and dense rulebook/iconography",
+  "Analysis paralysis, especially with 4 players",
+  "Low direct interaction can make it feel like solitaire at the same table",
+  "Very unforgiving of early mistakes",
+  "Production/component overhead (small tiles, many trackers) can feel fiddly"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "market manipulation and competitive tile/area claiming"
+  "level": "Low",
+  "kind": "mostly parallel play with some indirect competition over tile placement and card availability"
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from building types, church influence, factory production, and end-game majorities all combined"
+  "why": "Points accumulate from building placement, factories, ships, wigs, and end-game bonuses, so the winner is whoever best converts an efficient engine into the most scoring avenues"
  },
  "similar": [
-  "Vinhos",
-  "On Mars",
-  "Gaia Project",
   "The Gallerist",
-  "Anachrony"
+  "Vinhos Deluxe Edition",
+  "On Mars",
+  "Anachrony",
+  "Barrage"
  ],
  "_fingerprint": "1373dfaf44f040eb",
  "_name": "Lisboa"

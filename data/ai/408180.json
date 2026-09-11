@@ -1,0 +1,34 @@
+{
+ "confidence": "medium",
+ "summary": "A dense, modular worker-placement game where you juggle multiple types of astronauts and resources to build structures and fund corporation projects on a shared lunar base; the drafted shuttle tile each round dictates both your options and turn order, creating a tight tactical puzzle layered on top of a longer-term engine-building plan. With only three of seven corporations in play each game, the available resources, actions, and scoring paths shift substantially from one session to the next.",
+ "praised": [
+  "high replayability from the modular corporation setup",
+  "clever shuttle-draft mechanism that ties resource access to turn order",
+  "satisfying, tight worker-placement puzzle with meaningful trade-offs each turn",
+  "strong production and thematic presentation of the lunar base"
+ ],
+ "criticised": [
+  "steep learning curve and heavy rules/iconography overhead",
+  "corporation combinations can feel imbalanced or swingy between games",
+  "prone to analysis paralysis, especially with four players",
+  "a lot to track for a fairly short (three-round) game"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker placement blocking and area majority for base structures, mostly indirect competition for spots and resources"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final score comes from structures built, projects funded, and area-majority control, with the exact mix varying by which three corporations were drafted into the game"
+ },
+ "similar": [
+  "Merv: The Heart of the Silk Road",
+  "Anachrony",
+  "Barrage",
+  "Teotihuacan: City of Gods",
+  "The Gallerist"
+ ],
+ "_fingerprint": "c7031953a234c950",
+ "_name": "Shackleton Base: A Journey to the Moon"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A dense, dial-turning euro where every turn you're juggling which of the sun/shadow/dark zones are active, what your dice-based turn order will be, and which of several long-term engines (temple building, obelisk tiles, gods' favor) to advance. It rewards careful sequencing and planning several rounds ahead more than reacting to opponents.",
+ "praised": [
+  "The rotating obelisk shadow mechanic that constantly reshuffles which actions are available",
+  "Dice-driven turn order as a genuinely interesting risk/planning layer rather than pure luck",
+  "Deep, interlocking systems that reward long-term planning and give strong replayability via variable setup",
+  "Satisfying sense of building an efficient engine across the temple/obelisk/gods tracks"
+ ],
+ "criticised": [
+  "Steep rules overhead and long teach for a game that plays fairly abstractly once learned",
+  "Turn order dice can feel swingy or unfair to players who dislike variance affecting planning",
+  "Significant analysis paralysis, especially in the middle game with many viable lines",
+  "Egyptian theme feels pasted on top of what is a very mechanical, abstract euro"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "action-space blocking and turn-order jockeying, otherwise mostly parallel engine-building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points accumulate across several parallel systems (temple tiles, obelisk pattern-building, gods' favor tracks) so the winner is usually whoever balances multiple engines rather than maxing one"
+ },
+ "similar": [
+  "Tzolk'in: The Mayan Calendar",
+  "Teotihuacan: City of Gods",
+  "Trismegistus",
+  "Anachrony",
+  "Newton"
+ ],
+ "_fingerprint": "a73576b182fa920d",
+ "_name": "Tekhenu: Obelisk of the Sun"
+}

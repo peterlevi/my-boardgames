@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Players manage a network of workers moving along a branching space-gate structure to claim actions, then race to build efficient settlements on modular exoplanet boards. It plays as a tight worker-placement/tile-laying engine-builder where positioning on the gate track matters as much as the actions themselves.",
+ "praised": [
+  "The space-gate movement mechanism is inventive and central to strategy, not just a theme skin",
+  "Strong, well-integrated theme with modular double-sided planet boards for replayability",
+  "Satisfying puzzle of route-building and timing when your worker \"jumps\" to a planet",
+  "Good production quality and component design"
+ ],
+ "criticised": [
+  "Rules overhead and setup are fiddly for the depth of play",
+  "Can feel a bit dry/mechanical with limited narrative tension between turns",
+  "Some objective/scoring cards are stronger than others, creating imbalance",
+  "Downtime and AP-prone decision points in higher player counts"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "indirect blocking via shared gate positions and planet spot competition"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from multiple sources: settlement placement bonuses, completed objectives, resource/technology tracks, and end-game scoring cards, so the winner is usually whoever balances several engines rather than maxing one."
+ },
+ "similar": [
+  "Terraforming Mars",
+  "Praga Caput Regni",
+  "Barrage",
+  "The Gallerist",
+  "Trickerion: Legends of Illusion"
+ ],
+ "_fingerprint": "55bda485f7f7dc57",
+ "_name": "Space Gate Odyssey"
+}

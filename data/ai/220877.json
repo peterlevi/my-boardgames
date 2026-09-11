@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A dice-and-worker-placement game where you roll dice to determine worker strength and use them to develop your province across four resource tracks, racing to make your wealth and fame markers meet on opposite tracks. It plays as a tight, puzzly engine-builder with light conflict, rewarding efficient dice allocation and route planning over direct confrontation.",
+ "praised": [
+  "Clever dual-track win condition (fame and money converging)",
+  "Satisfying dice/worker allocation puzzle",
+  "Good variety of paths to victory",
+  "Attractive production and components",
+  "Scales well and plays relatively quickly for its depth"
+ ],
+ "criticised": [
+  "Some randomness from dice rolls can frustrate planning",
+  "Bit of analysis paralysis from many options",
+  "Karma/dice mitigation can feel like a workaround rather than elegant",
+  "Interaction is mostly indirect, which some find too solitaire-ish"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light race tension over shared spaces/tiles"
+ },
+ "win_criteria": "Race to a finish",
+ "scoring": {
+  "breadth": "Some",
+  "why": "The game ends when a player's fame and money markers meet, so the winner is determined by race position rather than a broad point tally."
+ },
+ "similar": [
+  "The Voyages of Marco Polo",
+  "Grand Austria Hotel",
+  "Great Western Trail",
+  "Century: Spice Road",
+  "Puerto Rico"
+ ],
+ "_fingerprint": "5f60c0897387981d",
+ "_name": "Rajas of the Ganges"
+}

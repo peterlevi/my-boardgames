@@ -1,0 +1,34 @@
+{
+ "confidence": "medium",
+ "summary": "Speakeasy is a dense Vital Lacerda worker-placement engine-builder where you juggle hand management, resource conversion, and area influence to run a Prohibition-era bootlegging operation while dodging mob and police pressure. Turns involve tight optimization of interlocking subsystems rather than direct conflict, with occasional aggressive options (robbing rum runners) layered on top of a mostly parallel economic race.",
+ "praised": [
+  "Intricate, tightly interlocking systems typical of Lacerda's design",
+  "Strong thematic integration between mechanisms and Prohibition-era setting",
+  "High production values and player agency in multiple viable strategies",
+  "Satisfying long-term engine building once the rules click"
+ ],
+ "criticised": [
+  "Steep learning curve and dense rulebook typical of Lacerda titles",
+  "Long teach and setup time",
+  "Analysis paralysis due to many simultaneous options",
+  "Requires multiple plays before the systems feel intuitive"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light blocking on worker-placement spots and occasional targeted robbing/attacking"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final score combines infamy, territory control, business upgrades, and multiple end-game bonuses typical of Lacerda's multi-track scoring"
+ },
+ "similar": [
+  "On Mars",
+  "Weather Machine",
+  "Gaia Project",
+  "The Gallerist",
+  "Lisboa"
+ ],
+ "_fingerprint": "ccc41daddc6750f0",
+ "_name": "Speakeasy"
+}

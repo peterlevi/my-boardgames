@@ -1,0 +1,34 @@
+{
+ "confidence": "medium",
+ "summary": "Players bid for landing rights and route tiles, extend their reach with better planes, and periodically cash out routes to the ever-encroaching Pan Am company for cash or stock; the stock holding becomes a slow-burn secondary win path alongside route-building. It plays as a light-to-mid auction and network game with historic event cards sprinkled in, moving at a brisk pace for its production values.",
+ "praised": [
+  "Attractive, thematic production (planes, routes, historical flavor)",
+  "Auction mechanism for routes creates real tension and give-and-take",
+  "Approachable rules for the theme, plays quickly for a route-building game",
+  "Stock/buyout mechanic gives an interesting alternate path to points"
+ ],
+ "criticised": [
+  "Feels like a mashup of better games (Chicago Express-style stock, Ticket to Ride-style routes) without fully gelling",
+  "Randomness from dice/events can undercut careful planning",
+  "Limited long-term strategic depth once you've played it a few times",
+  "Runaway leader potential once someone establishes strong routes"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "competitive bidding and route/space contention"
+ },
+ "win_criteria": "Most money",
+ "scoring": {
+  "breadth": "Some",
+  "why": "The winner is decided mainly by cash accumulated from selling routes to Pan Am and any stock payout, with route income as the supporting engine."
+ },
+ "similar": [
+  "Chicago Express",
+  "Airlines Europe",
+  "Ticket to Ride",
+  "Wingspan",
+  "Steam"
+ ],
+ "_fingerprint": "74cdaecfda2368f1",
+ "_name": "Pan Am"
+}

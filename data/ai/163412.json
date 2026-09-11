@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A tight two-player abstract game where you race to buy irregularly-shaped patches and pack them efficiently onto your 9x9 board while managing a tiny economy of buttons and time. Turn order is driven by a shared time track rather than alternation, so tempo and timing matter as much as the puzzle itself.",
+ "praised": [
+  "Elegant, tight rules that create real depth",
+  "Satisfying tactile Tetris-like puzzle of fitting patches together",
+  "Fast to teach and play, works well as a filler or gateway two-player game",
+  "Clever time-track turn order mechanism keeps both players engaged"
+ ],
+ "criticised": [
+  "Can feel solitaire-ish with limited direct interaction beyond patch/timing denial",
+  "Luck of the patch circle draw can swing outcomes",
+  "Limited long-term replayability once optimal patterns are learned",
+  "Only supports 2 players, excluding larger groups"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light blocking via patch and timing denial"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Final score is buttons remaining plus board bonuses minus empty-square penalties, so efficient patch fitting and button income dominate the outcome"
+ },
+ "similar": [
+  "Patchwork Doodle",
+  "Uwe Rosenberg's Cottage Garden",
+  "Kingdomino",
+  "Azul",
+  "Karuba"
+ ],
+ "_fingerprint": "b366cc86229f5cb9",
+ "_name": "Patchwork"
+}

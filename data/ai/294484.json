@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A tactical, no-luck card-driven fighting game where each of the four heroes (Invisible Man, Sherlock & Watson, Dracula, Jekyll & Hyde) plays with a wildly different toolkit and win condition on a small point-to-point map. Matches are quick, tense duels decided by bluffing which card you'll play for attack, defense, or scheme value rather than by randomness.",
+ "praised": [
+  "Deep asymmetry between heroes with genuinely distinct playstyles and win patterns",
+  "Fast setup and short playtime relative to the strategic depth",
+  "High-quality minis and production values",
+  "Sherlock & Watson's two-body mechanic and Invisible Man's stealth add fresh twists to the system",
+  "Rewards mastery and improves a lot with repeated plays against the same opponent"
+ ],
+ "criticised": [
+  "Steep learning curve for new players facing experienced ones due to hidden hero-specific tech",
+  "Some heroes (notably Invisible Man) are considered fiddly or swingy compared to others",
+  "Card draw variance can still occasionally overwhelm skill in a single short match",
+  "Small box means less content than some other Unmatched sets"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "direct combat, positioning, and bluffing over card play"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The game ends when one player reduces all opposing heroes' health to zero (or meets a hero-specific special condition), so combat efficiency alone decides the winner"
+ },
+ "similar": [
+  "Unmatched: Battle of Legends Volume One",
+  "Unmatched: Battle of Legends Volume Two",
+  "Unmatched: Robin Hood vs. Bigfoot",
+  "Star Wars: Unmatched",
+  "BattleCON"
+ ],
+ "_fingerprint": "877f1314ea703b85",
+ "_name": "Unmatched: Cobble & Fog"
+}

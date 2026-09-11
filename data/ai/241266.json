@@ -1,32 +1,33 @@
 {
- "confidence": "high",
- "summary": "Little Town is a light-medium worker placement game where you gather resources from a shared grid and build up your town with buildings that give ongoing bonuses. There's a clever tension in building things others can use (for a fee) versus keeping efficient combos to yourself.",
+ "confidence": "medium",
+ "summary": "A light, tidy worker-placement game where each of your three workers per round vacuums up resources from the eight adjacent tiles, letting you construct buildings that fuel your engine or that opponents can also use if they pay you a toll. Games move briskly over four rounds, with scoring coming from a mix of building powers, constructed buildings, and secret goal cards dealt at the start.",
  "praised": [
-  "clever building/renting mechanic",
-  "tight puzzle in only 4 rounds",
-  "quick to teach",
-  "nice production and modular board"
+  "Clean, elegant core mechanism where placing a worker grabs resources from all eight surrounding spaces",
+  "The toll system for using rivals' buildings adds a neat, low-friction layer of interaction",
+  "Short, brisk playtime (about 30-45 minutes) for the amount of engine-building it offers",
+  "Charming, colorful production and easy-to-teach rules make it a solid gateway/family-weight pick"
  ],
  "criticised": [
-  "can feel a bit dry or mechanical",
-  "limited replayability once patterns are learned",
-  "little direct player interaction beyond space contention"
+  "Can feel like parallel solitaire in lower player counts since direct conflict is limited to space-blocking and tolls",
+  "Secret goal cards introduce a luck-of-the-draw element some feel outweighs strategic play",
+  "Limited long-term replayability once the building set and strategies are explored",
+  "Iconography and building effects can require some upfront explanation despite the simple core loop"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker placement contention and paying rent on shared buildings"
+  "level": "Medium",
+  "kind": "blocking and area denial, plus toll payments when using others' buildings"
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from buildings built, resources banked, and end-game bonuses combined"
+  "why": "Points accumulate from building powers used over the game, buildings you've constructed, and how well you complete your secret goal cards."
  },
  "similar": [
+  "Suburbia",
   "Village",
-  "Grand Austria Hotel",
-  "Viticulture",
-  "Caverna",
-  "Barrage"
+  "Istanbul",
+  "Isle of Skye",
+  "Praga Caput Regni"
  ],
  "_fingerprint": "e27ea550f102780c",
  "_name": "Little Town"

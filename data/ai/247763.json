@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A tight, engine-building worker-placement game where every turn is a puzzle of matching colored cards to board slots to unlock both an action and a card bonus, while managing a constant tension between borrowing resources now and paying interest later. It rewards efficient long-term planning over reactive play, with tableau/network building (domes, tunnels, production buildings) driving a slow but satisfying snowball toward the endgame scoring.",
+ "praised": [
+  "Deep, satisfying puzzle of optimizing card-slot combos and action timing",
+  "Elegant loan/interest system that adds real risk-reward tension without feeling punishing",
+  "High replayability from the large pool of unique special cards",
+  "Strong, genuinely solo-friendly mode",
+  "Smooth turn order/initiative track mechanic that keeps the game moving"
+ ],
+ "criticised": [
+  "Significant analysis paralysis, especially in the back half of the game",
+  "Player interaction is thin, closer to a multiplayer solitaire experience",
+  "Card draw luck can meaningfully affect available strategies each round",
+  "Steep initial learning curve and icon/rules overhead before it clicks"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light competition over shared card/action slots"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from city/tunnel/dome networks, special cards, end-game bonus tiles, and efficient resource/loan management, so the winner is whoever builds the most efficient overall engine rather than maxing one track"
+ },
+ "similar": [
+  "Barrage",
+  "Praga Caput Regni",
+  "Pulsar 2849",
+  "Great Western Trail",
+  "Teotihuacan: City of Gods"
+ ],
+ "_fingerprint": "0571cd9be72444fd",
+ "_name": "Underwater Cities"
+}

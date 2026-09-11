@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Taj Mahal is a tense, cutthroat auction game where you bid cards across twelve rounds to win majorities in one of five categories, then cash those wins into palaces and commodities for points; it plays fast and mean, with players baiting each other into overspending or ganging up to deny a leader.",
+ "praised": [
+  "Tight, tense bidding mechanism where knowing when to drop out is the whole game",
+  "Constant player interaction and 'kingmaking' tension without direct conflict",
+  "Short, brisk playtime relative to the depth of decisions",
+  "Elegant, tightly designed Knizia ruleset with little downtime"
+ ],
+ "criticised": [
+  "Heavy multiplayer solitaire risk if players don't actively gang up on the leader",
+  "Can feel mean or swingy — a coalition can crush a leading player",
+  "Thin theme bolted onto an abstract bidding system",
+  "Component/board iconography can be fiddly to learn at first"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "auction bluffing and coalition-building to deny the leader"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "the winner is decided by who best times card commitments across the palace/commodity auctions to bank the most cumulative influence points"
+ },
+ "similar": [
+  "Ra",
+  "Amun-Re",
+  "Blue Moon City",
+  "Samurai",
+  "Modern Art"
+ ],
+ "_fingerprint": "ed4400c7de2c8279",
+ "_name": "Taj Mahal"
+}

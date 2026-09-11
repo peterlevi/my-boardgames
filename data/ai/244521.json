@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Quacks is a tense push-your-luck bag-builder where you draw ingredient chips one at a time, adding them to your pot and hoping not to blow it up before you decide to stop. The excitement comes from the mounting dread as your pot fills up, with every player experiencing the same tension simultaneously and privately.",
+ "praised": [
+  "Push-your-luck tension is visceral and exciting every round",
+  "Simultaneous play means no downtime waiting for turns",
+  "Easy to teach, quick to play despite meaningful decisions",
+  "Bag-building lets you customize your risk profile over the game",
+  "Scales well and works great with mixed-experience groups"
+ ],
+ "criticised": [
+  "Can feel very luck-dependent, especially in a single play",
+  "Little direct player interaction beyond the leader-catch-up mechanism",
+  "Some feel the decisions become repetitive across the nine rounds",
+  "Explosion penalty can feel harsh and swingy late game"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with a mild catch-the-leader rubber-band"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Victory points earned from how far you push your pot each round before it explodes, accumulated over nine rounds, decide the winner."
+ },
+ "similar": [
+  "Coloretto",
+  "Get Bit!",
+  "Point Salad",
+  "Machi Koro",
+  "Skull King"
+ ],
+ "_fingerprint": "f4d935ee8bfa8e98",
+ "_name": "Quacks"
+}

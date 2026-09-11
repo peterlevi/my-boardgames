@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "You build an engine of production (steel, titanium, plants, energy, heat) across a long game, playing cards that combo off tags and thresholds while racing to push temperature, oxygen, and oceans to terraforming completion. It's a card-driven engine-builder with light multiplayer interaction — most of the game is optimizing your own tableau, with occasional greedy grabs for shared milestones/awards and tile-placement spite.",
+ "praised": [
+  "Huge variety of project cards creating strong replayability and emergent combos",
+  "Satisfying long-arc engine building as production snowballs",
+  "Strong solo mode",
+  "Thematic tile placement on the Mars map"
+ ],
+ "criticised": [
+  "Long playtime, especially with 4-5 players or first-timers (can run well over 2 hours)",
+  "Significant luck in card draw/availability, especially in the corporate era draft",
+  "Downtime waiting for other players' turns",
+  "Some cards are much weaker than others, creating balance issues",
+  "Milestones/awards can be a race that rewards whoever gets there first with little counterplay"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with occasional tile blocking and awards/milestones racing"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Final score comes from terraform rating, milestones, awards, greenery/city tiles, and card-specific victory points, so the winner is decided by whoever best balanced several scoring channels rather than maxing one."
+ },
+ "similar": [
+  "Gaia Project",
+  "Scythe",
+  "Res Arcana",
+  "Planet Unknown",
+  "On Mars"
+ ],
+ "_fingerprint": "39069c175a3e95ca",
+ "_name": "Terraforming Mars"
+}

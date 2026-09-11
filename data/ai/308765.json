@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A dense, puzzly worker-placement-adjacent game where the six actions on the shifting 'crane' constantly change in cost and reward, so most of the game is spent reading the current board state and chaining a few efficient moves before the setup shifts again. It rewards engine-building and tight optimization over direct interaction, with construction of the bridge, city walls, and cathedral providing the scoring backbone.",
+ "praised": [
+  "Clever, tightly-interlocking action system where the crane's shifting costs/rewards create constant fresh puzzles",
+  "High replayability due to variable setup and multiple viable strategies",
+  "Strong sense of progression and engine-building satisfaction",
+  "Elegant hexagonal tile-laying for New Prague City",
+  "Manages its complexity without feeling bloated once learned"
+ ],
+ "criticised": [
+  "Steep learning curve and a lot of upfront rules/iconography to absorb",
+  "Can feel more solitaire/multiplayer-solitaire than interactive",
+  "Analysis paralysis potential given the many interlocking sub-systems",
+  "Some find the theme pasted-on to what is fundamentally an abstract optimization puzzle"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light area-majority competition for building spots"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from multiple construction projects (city tiles, bridge, walls, cathedral), resource/action-strength efficiency, and end-game bonuses, so the winner is decided by whoever builds the most efficient overall engine rather than one dominant source"
+ },
+ "similar": [
+  "Underwater Cities",
+  "The Voyages of Marco Polo",
+  "Bonfire",
+  "Pulsar 2849",
+  "Alchemists"
+ ],
+ "_fingerprint": "1e8b69c7338e6d44",
+ "_name": "Praga Caput Regni"
+}

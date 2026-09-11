@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Pandemic is a tense cooperative puzzle where players jointly plan efficient routes and role synergies to cure four diseases before outbreaks chain into a loss; the deck's escalating epidemic cards create a tightening clock that forces constant re-prioritization. Turns are short and mechanical, but the shared threat produces a lot of table talk and quarterbacking as the group tries to optimize the group's actions.",
+ "praised": [
+  "Tense, escalating difficulty curve from epidemic cards and the infection rate track",
+  "Strong cooperative puzzle-solving and role synergy (variable player powers)",
+  "Approachable rules for a co-op game, quick to teach",
+  "High replayability from variable setup and roles",
+  "Genuine nail-biting tension near the end of a game"
+ ],
+ "criticised": [
+  "Prone to 'quarterbacking' where one player dictates everyone's moves",
+  "Can feel solved/repetitive after many plays since optimal strategy emerges",
+  "Randomness (epidemic card draws, city card draws) can swing a well-played game to a loss",
+  "Low personal agency once a dominant player takes over group decisions",
+  "Some find the theme thin/abstracted despite the medical setting"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "cooperative planning and negotiation, no conflict"
+ },
+ "win_criteria": "Cooperative goal",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The group wins or loses together based solely on curing all four diseases before running out of player cards, outbreaks (8), or infection cards."
+ },
+ "similar": [
+  "Pandemic Legacy: Season 1",
+  "Forbidden Island",
+  "Flash Point: Fire Rescue",
+  "Ghost Stories",
+  "Hanabi"
+ ],
+ "_fingerprint": "6f7039f5922ce7c3",
+ "_name": "Pandemic"
+}

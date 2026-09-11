@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A two-player hex-and-card wargame where you build and prune a deck of unit cards over a series of short scenarios, using command cards to activate squads, ambush, and fight for control points. Vehicles, wounded soldiers leaving your deck, and asymmetric British/Italian decks give it a tighter tactical, more mobile feel than the original Normandy entry.",
+ "praised": [
+  "Fast, tense scenarios that teach a real deckbuilding-meets-wargame system without heavy rules overhead",
+  "Evolving decks (wounds, reinforcements, vehicles) make each game feel like a narrative battle rather than an abstract exercise",
+  "Strong two-player asymmetry between the mobile LRDG raiders and the more static Italian defenders",
+  "Solid campaign mode that links scenarios together with persistent consequences"
+ ],
+ "criticised": [
+  "Dice-based combat resolution introduces swingy luck that can undercut careful positioning",
+  "Scenario-to-scenario structure can feel samey if played outside the campaign",
+  "Vehicle rules and open desert terrain are seen by some as a step down in tension from Normandy's hedgerow chokepoints",
+  "Solo/asymmetric balance across some individual scenarios is uneven"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "direct combat and area/objective control on a shared hex map"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Each scenario is decided by mission-specific objectives (holding control points, eliminating units, or reaching a zone) rather than an accumulated score"
+ },
+ "similar": [
+  "Undaunted: Normandy",
+  "Undaunted: Reinforcements",
+  "Undaunted: Stalingrad",
+  "Hostage Negotiator",
+  "Fort"
+ ],
+ "_fingerprint": "2a87059d3c601eea",
+ "_name": "Undaunted: North Africa"
+}

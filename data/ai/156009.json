@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Each turn you flip cards from a shared deck into the harbor, deciding when to stop before a repeated ship busts your haul, then either bank the coins or spend people cards to buy more people or complete expeditions for points. It plays fast and tense, with real competition to snipe the person or expedition cards you need before an opponent takes them.",
+ "praised": [
+  "Quick, tense push-your-luck decisions every turn",
+  "Very portable, low table footprint, easy to teach",
+  "Meaningful tension between greed and safety on each draw",
+  "Card-sniping/drafting adds real interaction despite the simple core loop"
+ ],
+ "criticised": [
+  "Can feel like multiplayer solitaire when the harbor stays safe",
+  "Luck of the draw can swing outcomes regardless of skill",
+  "Little to do on other players' long push-your-luck turns",
+  "Limited long-term strategy depth for heavier gamers"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "open drafting and card sniping for people/expeditions"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Points come mainly from the people cards you've hired (with set-collection bonuses for color variety) plus expedition cards you've completed"
+ },
+ "similar": [
+  "Meuterer",
+  "The Quest for El Dorado",
+  "Rajas of the Ganges",
+  "Raiders of the North Sea",
+  "Libertalia"
+ ],
+ "_fingerprint": "ca2b3f9783f061bd",
+ "_name": "Port Royal"
+}

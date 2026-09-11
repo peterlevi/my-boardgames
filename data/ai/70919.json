@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Takenoko is a light, cheerful tile-laying and resource-management game where players irrigate plots, grow bamboo, and feed the panda while quietly chasing a hidden hand of objective cards. It plays fast and pleasantly with little friction, though the panda's random appetite can occasionally scupper careful planning.",
+ "praised": [
+  "Charming theme and components (the panda and gardener meeples)",
+  "Easy to teach and quick to play",
+  "Satisfying multi-use turns (irrigate, grow, harvest, place tiles) that create interesting puzzle-like decisions",
+  "Good gateway/family game that scales well for its short playtime"
+ ],
+ "criticised": [
+  "Can feel a bit solitaire-ish with limited direct player interaction",
+  "Dice roll for the gardener/panda's free action adds a luck element some find frustrating",
+  "Objective card draws can be swingy, favoring lucky hands",
+  "Limited long-term depth or replayability for experienced gamers"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "indirect competition for plots and tiles, some blocking of favorable land"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Points come from completing plot, gardener, and panda objective cards plus a bonus for the most improvements, so success hinges on collecting and completing the right mix of contracts."
+ },
+ "similar": [
+  "Kingdomino",
+  "Karuba",
+  "Cottage Garden",
+  "Spring Meadow",
+  "My Little Scythe"
+ ],
+ "_fingerprint": "f0b55a0ed6a8586d",
+ "_name": "Takenoko"
+}

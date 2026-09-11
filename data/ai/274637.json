@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Two players each pilot a unique deck of iconic characters, moving on a point-to-point map and resolving fights by simultaneously revealing attack/defense cards with tactical boosts and combos, so combat feels like a tense card-based duel rather than dice luck. Matches are fast (20-40 min), highly asymmetric, and reward learning each hero's specific deck quirks and counters.",
+ "praised": [
+  "Deep asymmetry between characters despite simple core rules",
+  "No-luck, card-based combat that rewards reading your opponent",
+  "Fast setup and playtime, easy to teach the basic loop",
+  "High production value miniatures and board art",
+  "Great replayability from mixing heroes across different sets"
+ ],
+ "criticised": [
+  "Miniatures add cost/hype but don't affect gameplay, seen as unnecessary bling by some",
+  "Some hero match-ups feel imbalanced, especially early sets before errata",
+  "4-player free-for-all/team mode is less tight than 1v1",
+  "Overwhelming and expensive to collect as the line expanded across many sets"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "direct head-to-head combat and positioning"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The game ends the instant one side's characters are all reduced to zero health, so there is no scoring at all beyond elimination"
+ },
+ "similar": [
+  "Unmatched: Robin Hood vs Bigfoot",
+  "Unmatched: Cobble & Fog",
+  "BattleCON",
+  "Yomi",
+  "Star Wars: Epic Duels"
+ ],
+ "_fingerprint": "b8e7bb128fd72246",
+ "_name": "Unmatched: Battle of Legends, Volume One"
+}

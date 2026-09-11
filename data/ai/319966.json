@@ -1,31 +1,34 @@
 {
- "confidence": "medium",
- "summary": "The King Is Dead is a lean area-majority game where three medieval factions vie for the throne while you secretly want a particular faction (not necessarily your own pieces) to end up on top. Hidden agendas and a shrinking map create a tense, bluffy negotiation-adjacent experience in a short playtime.",
+ "confidence": "high",
+ "summary": "A tight two-to-four-player area-majority game where players secretly place influence cubes to sway which of three factions (or all four with foreign invaders) will control regions, then race to remember what everyone actually committed since much of it is played face-down. It plays fast and mean, with a distinctive memory element that rewards tracking opponents' hidden bids as much as spatial strategy.",
  "praised": [
-  "clever hidden-goal twist on area control",
-  "short playtime for the depth offered",
-  "tense multiplayer diplomacy and bluffing"
+  "Clever memory mechanic where you must recall face-down/hidden commitments rather than rely on open information",
+  "Tight, fast playtime (30-45 min) with high replayability from variable setup",
+  "Elegant, minimalist design that hides real depth",
+  "Strong player interaction and tension despite the small footprint",
+  "Second edition's improved components, art, and the new asymmetric advanced mode"
  ],
  "criticised": [
-  "can feel swingy or kingmaker-y with certain player counts",
-  "memory/limited-communication mechanic divides opinion",
-  "thin theme"
+  "Memory requirement can frustrate players who dislike memory-based mechanics or feel it punishes forgetfulness over strategy",
+  "Rules and interactions (especially multi-faction/backstab dynamics) take a play or two to click",
+  "Can feel swingy or kingmaker-ish in some player counts, especially with only 2-3 factions in play",
+  "Relatively abstract/dry theme layered thinly onto the mechanics"
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and hidden-agenda negotiation"
+  "kind": "blocking, hidden bidding, and area-majority maneuvering with a memory-tracking element"
  },
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "winning depends on which faction ends up dominant relative to your secret allegiance, not a points total"
+  "why": "The winner is determined by which faction ends up dominant and whether that outcome favors your secretly held allegiances, not by accumulating points from multiple sources"
  },
  "similar": [
+  "Tigris & Euphrates",
   "Blood Rage",
   "Kemet",
-  "Chinatown",
-  "Cyclades",
-  "El Grande"
+  "Libertalia",
+  "Coup"
  ],
  "_fingerprint": "a774d3c9dc601f45",
  "_name": "The King Is Dead: Second Edition"

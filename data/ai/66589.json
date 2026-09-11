@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Navegador is a tight, efficient rondel-based economic game where players cycle through action spaces to build up colonies, ships, and factories while carefully managing an ever-tightening money supply. It rewards planning several rondel turns ahead and reading the sugar/gold/spice market, with privileges providing quiet but significant end-game scoring swings.",
+ "praised": [
+  "Elegant, tight rondel mechanism with meaningful action-space tension",
+  "Clean, efficient design with almost no downtime or luck",
+  "Privileges add strategic depth and multiple viable paths to victory",
+  "Strong sense of economic engine-building and escalating snowball"
+ ],
+ "criticised": [
+  "Can feel dry or overly mechanical/abstract for its Age of Discovery theme",
+  "Slower player interaction is mostly indirect (space/market competition) rather than direct",
+  "Early leader advantages can snowball, reducing catch-up potential",
+  "Rondel plus privilege system has a learning curve that can feel fiddly at first"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "Indirect competition for colony spots, market prices, and privilege slots rather than direct conflict"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Final score combines privileges matched against colonies, factories, discoveries, shipyards, and churches, so the winner is whoever best aligns their privilege choices with their board presence"
+ },
+ "similar": [
+  "Imperial",
+  "Antike",
+  "Concordia",
+  "Le Havre",
+  "Puerto Rico"
+ ],
+ "_fingerprint": "c429d9c5b8897f3a",
+ "_name": "Navegador"
+}

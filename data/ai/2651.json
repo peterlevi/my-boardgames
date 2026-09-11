@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A tight economic puzzle where players bid for power plants, buy resources on a shared market, and build networks of cities, but only the plants you can actually fuel and power at payout matter. Turn order rotates so the leader goes last in every phase except paying the most for plants, creating a self-balancing catch-up mechanism that keeps games close until the end.",
+ "praised": [
+  "Elegant self-balancing turn order that keeps the game close",
+  "Deep economic tension between expanding, buying plants, and stockpiling resources",
+  "High replayability from variable maps, plant decks, and player counts",
+  "Rewards efficient planning and resource management"
+ ],
+ "criticised": [
+  "Long playtime, especially with 5-6 players due to auction and bidding phases",
+  "Downtime waiting for other players' turns, particularly the auction phase",
+  "Can feel unforgiving to new players who fall behind early",
+  "Theme is dry/abstract for some tastes",
+  "Fixed endgame trigger can lead to anticlimactic finishes"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "Auction/bidding and route/resource blocking"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is whoever can power the most cities when someone's network hits the end-game size threshold."
+ },
+ "similar": [
+  "Chicago Express",
+  "Age of Steam",
+  "Container",
+  "Brass: Birmingham",
+  "El Grande"
+ ],
+ "_fingerprint": "88b639465c83c4c3",
+ "_name": "Power Grid"
+}

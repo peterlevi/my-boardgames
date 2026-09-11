@@ -33,7 +33,7 @@ body { margin:0; background:var(--bg); color:var(--ink);
   font:15px/1.5 "Avenir Next","Segoe UI Variable Text","Segoe UI",Inter,
        "Nunito Sans",system-ui,-apple-system,sans-serif;
   font-variant-numeric:tabular-nums; }
-.wrap { max-width:1280px; margin:0 auto; padding:28px 16px 64px; }
+.wrap { max-width:1500px; margin:0 auto; padding:28px 16px 64px; }
 h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 .sub { color:var(--muted); margin:0 0 6px; max-width:75ch; }
 .note { font-size:.85rem; }
@@ -238,6 +238,16 @@ table.poll tr.peak th { color:var(--ink); font-weight:700; }
 .polllegend .k.n { background:var(--m1); }
 .chip.cat { color:var(--accent); }
 .chip.trait { color:var(--best); }
+.chip.owned { box-shadow:inset 0 0 0 1px var(--accent); color:var(--accent); }
+.detail-inner ul { margin:0 0 12px; padding-left:18px; font-size:.84rem; }
+.detail-inner ul li { margin-bottom:2px; }
+.detail-inner ul.up li::marker { color:var(--m4); }
+.detail-inner ul.dn li::marker { color:var(--warn); }
+.detail-inner h4 em { font-style:normal; color:var(--warn); text-transform:none;
+  letter-spacing:0; }
+td .wc { font-size:.78rem; white-space:nowrap; }
+td.gamecell { min-width:170px; }
+th, td { padding:8px 7px; }
 @media (max-width:760px) {
   .detail-inner { grid-template-columns:1fr; padding-left:16px; }
 }
@@ -328,6 +338,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
           <option value="">Any</option><option>Low</option>
           <option>Medium</option><option>High</option>
         </select></div>
+      <div class="f"><label for="win">Wins by</label>
+        <select id="win"><!--__WIN_OPTIONS__--></select></div>
+      <div class="f"><label for="breadth">Scoring breadth</label>
+        <select id="breadth"><!--__BREADTH_OPTIONS__--></select></div>
       <div class="f"><label for="exp">Expansions</label>
         <select id="exp"><!--__EXP_OPTIONS__--></select></div>
     </div>
@@ -387,6 +401,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="num" data-k="tmax">Time</th>
     <th class="num hide-sm" data-k="w">Weight</th>
     <th class="hide-sm" data-k="ix">Interact</th>
+    <th class="hide-sm" data-k="wc" title="What actually decides the winner">Wins by</th>
+    <th class="hide-sm" data-k="br" title="How widely the scoring is spread">Breadth</th>
     <th class="hide-sm" data-k="ds">Designer</th>
     <th class="num hide-sm" data-k="verdict">At N</th>
     <th class="num hide-sm" data-k="bestPct">Best</th>
@@ -493,7 +509,7 @@ function refreshTagList() {
 
 var F = {
   q: el('q'), players: el('players'), mode: el('mode'),
-  ix: el('ix'), tagmode: el('tagmode'),
+  ix: el('ix'), win: el('win'), breadth: el('breadth'), tagmode: el('tagmode'),
   smin: el('smin'), smax: el('smax'),
   mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
@@ -505,6 +521,8 @@ function applyDefaults() {
   F.q.value = '';
   F.players.value = OPTS.players;
   F.mode.value = OPTS.mode;
+  F.win.value = OPTS.win;
+  F.breadth.value = OPTS.breadth;
   F.exp.value = OPTS.expansions;
   F.votes.value = OPTS.minVotes;
   F.ix.value = '';
@@ -579,7 +597,7 @@ function partition() {
   var wmin = num(F.wmin.value), wmax = num(F.wmax.value);
   var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
-  var ix = F.ix.value;
+  var ix = F.ix.value, win = F.win.value, breadth = F.breadth.value;
   var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
 
@@ -594,8 +612,11 @@ function partition() {
     var structural = !(g.exp && expMode !== 'show');
 
     var s = n ? reading(g, n, fold, minVotes, mode) : null;
+    var ai = g.ai || {};
     var pass = structural && tagsOk(g, picked, tmode) &&
-      !(ix && g.ix !== ix) &&
+      !(ix && (ai.ixl || g.ix) !== ix) &&
+      !(win !== 'any' && ai.wc !== win) &&
+      !(breadth !== 'any' && ai.br !== breadth) &&
       !(smin !== null && !(g.av >= smin)) && !(smax !== null && !(g.av <= smax)) &&
       !(mymin !== null && !(g.my >= mymin)) && !(mymax !== null && !(g.my <= mymax)) &&
       !(wmin !== null && !(g.w >= wmin)) && !(wmax !== null && !(g.w <= wmax)) &&
@@ -624,6 +645,10 @@ function describe() {
 
   var extra = [];
   if (F.ix.value) extra.push(F.ix.value.toLowerCase() + ' interaction');
+  if (F.win.value !== 'any') extra.push(F.win.value.toLowerCase());
+  if (F.breadth.value !== 'any') {
+    extra.push(F.breadth.value.toLowerCase() + ' scoring');
+  }
   var picked = pickedTags();
   if (picked.length) {
     var joiner = { all: ' + ', any: ' or ', none: ' or ' };
@@ -657,14 +682,20 @@ function sortRows(rows) {
       case 'bestPct': return s ? s.bestPct : null;
       case 'appr': return s ? s.appr : null;
       case 'rt': return g.rt;
-      case 'ix': return ['Low', 'Medium', 'High'].indexOf(g.ix);
+      case 'ix':
+        return ['Low', 'Medium', 'High'].indexOf((g.ai && g.ai.ixl) || g.ix);
+      case 'wc': return (g.ai && g.ai.wc) || null;
+      case 'br':
+        var bi = ['Focused', 'Some', 'Broad', 'Salad']
+          .indexOf(g.ai && g.ai.br);
+        return bi < 0 ? null : bi;
       case 'ds': return (g.ds && g.ds[0]) || null;
       case 'breadth':
         return ['Focused', 'Some', 'Broad', 'Salad'].indexOf(g.br);
       default: return g[sortKey];
     }
   }
-  var text = sortKey === 'n' || sortKey === 'ds';
+  var text = sortKey === 'n' || sortKey === 'ds' || sortKey === 'wc';
   rows.sort(function (a, b) {
     var x = get(a), y = get(b);
     if (text) {
@@ -881,7 +912,8 @@ function buildDetail(g) {
   ];
   return '<div class="detail-inner">' +
     '<div>' +
-      (g.de ? '<h4>Description</h4><p>' + esc(g.de) + '…</p>' : '') +
+      opinionBlock(g) +
+      (g.de ? '<h4>From BGG</h4><p>' + esc(g.de) + '…</p>' : '') +
       '<h4>Traits</h4>' + (chips(tagsOfKind(g, 'trait'), 'trait') || '<p>—</p>') +
       '<h4>Categories</h4>' + (chips(tagsOfKind(g, 'cat'), 'cat') || '<p>—</p>') +
       '<h4>Mechanics</h4>' + (chips(tagsOfKind(g, 'mech'), '') || '<p>—</p>') +
@@ -898,11 +930,58 @@ function buildDetail(g) {
 
 function fmt(v) { return v % 1 === 0 ? String(v) : v.toFixed(1); }
 
+var OWNED = (function () {
+  var m = {};
+  DATA.forEach(function (g, i) { m[g.n.toLowerCase()] = i; });
+  return m;
+})();
+
+/** What people say about the game, from the local opinion database. Absent or
+ *  low-confidence entries render nothing at all rather than a guess. */
+function opinionBlock(g) {
+  var ai = g.ai;
+  if (!ai || ai.cf === 'low' || !ai.sm) return '';
+  function list(items, cls) {
+    return '<ul class="' + cls + '">' + items.map(function (t) {
+      return '<li>' + esc(t) + '</li>';
+    }).join('') + '</ul>';
+  }
+  var sim = (ai.sim || []).map(function (n) {
+    var i = OWNED[n.toLowerCase()];
+    return i === undefined
+      ? '<span class="chip">' + esc(n) + '</span>'
+      : '<button type="button" class="chip owned" data-game="' + i +
+        '" title="You own this — open it">' + esc(n) + '</button>';
+  }).join('');
+  return '<h4>What people say' +
+    (ai.cf === 'medium' ? ' <em>(lower confidence)</em>' : '') + '</h4>' +
+    '<p>' + esc(ai.sm) + '</p>' +
+    (ai.up && ai.up.length ? '<h4>Liked</h4>' + list(ai.up, 'up') : '') +
+    (ai.dn && ai.dn.length ? '<h4>Criticised</h4>' + list(ai.dn, 'dn') : '') +
+    (sim ? '<h4>People who like this also like</h4><div class="chips">' +
+      sim + '</div>' : '');
+}
+
 function closeDetail() {
   if (openDetail) { openDetail.parentNode.removeChild(openDetail); openDetail = null; }
 }
 
 TBODY.addEventListener('click', function (e) {
+  var gameBtn = e.target.closest('[data-game]');
+  if (gameBtn) {
+    e.stopPropagation();
+    var target = TBODY.querySelector(
+      'tr[data-i="' + gameBtn.getAttribute('data-game') + '"]');
+    if (target && !target.hidden) {
+      closeDetail();
+      target.click();
+      target.scrollIntoView({ block: 'center' });
+    } else {
+      el('q').value = DATA[+gameBtn.getAttribute('data-game')].n;
+      el('q').dispatchEvent(new Event('input'));
+    }
+    return;
+  }
   var tagBtn = e.target.closest('[data-tag]');
   if (tagBtn) {                               // a chip filters instead
     e.stopPropagation();

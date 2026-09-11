@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Skyrise revolves around a spatial blind-bidding system where you place numbered tiles on a grid and adjacency/value determines who wins which building site, so every round is a tense read of what everyone else wants. Beyond the auction, it's a fairly standard tile-laying/set-collection engine about building neighborhoods, courting patrons, and chasing objectives, but the bidding is what people remember.",
+ "praised": [
+  "The unique spatial auction/bidding mechanism is genuinely novel and tense",
+  "High player interaction — reading opponents and predicting their bids matters a lot",
+  "Attractive, colorful production and satisfying city-building visuals",
+  "Multiple viable scoring paths keep replayability high"
+ ],
+ "criticised": [
+  "The bidding system has a steep learning curve and is hard to teach cleanly",
+  "Analysis paralysis can creep in as players overthink bids",
+  "Some randomness from patron/objective card draws feels swingy to some players",
+  "Can run long, especially at 4 players, given the deliberation the auction invites"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blind spatial bidding and area denial"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from neighborhood majorities, patron cards, secret/public objectives, and the Wonder, so winning requires balancing several scoring engines rather than maxing one."
+ },
+ "similar": [
+  "Metropolys",
+  "Ra",
+  "Blue Lagoon",
+  "Reef",
+  "Between Two Cities"
+ ],
+ "_fingerprint": "3947df69ed9282ed",
+ "_name": "Skyrise"
+}

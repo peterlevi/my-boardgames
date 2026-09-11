@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A tighter, more streamlined redesign of Knizia's Tigris & Euphrates using the same core tension of tile placement, area majority, and conflict, but replacing the four-leader catastrophe/war rules with a cleaner system of unifications and battles. Games are tense and calculating throughout, with players constantly weighing whether to trigger a fight, since you score in your weakest category and a single collapse there can sink an otherwise strong position.",
+ "praised": [
+  "Elegant, tight ruleset that streamlines Tigris & Euphrates without losing its depth",
+  "Meaningful conflict and area-majority tension on every turn",
+  "The weakest-category scoring forces balanced strategy and punishes tunnel vision",
+  "High replayability and strong two-player experience",
+  "Clean production and quicker teach than the original"
+ ],
+ "criticised": [
+  "Very dry/abstract theme despite the historical dressing",
+  "Takes several plays to see the strategic depth, can feel fiddly at first",
+  "Some feel it loses a bit of the original's ruthless edge (temple/war leader removed)",
+  "Can run long and feel calculating rather than exciting to newer or less analytical players",
+  "Comparisons to Tigris & Euphrates are unavoidable and some prefer the original's rawer conflict"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "area majority battles and blocking, with take-that unification conflicts"
+ },
+ "win_criteria": "Lowest-highest scoring",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "final score equals your total in whichever of the five leader categories is weakest, so the winner is whoever best balances development across all categories rather than maximizing any single one"
+ },
+ "similar": [
+  "Tigris & Euphrates",
+  "Samurai",
+  "Ra",
+  "Through the Desert",
+  "El Grande"
+ ],
+ "_fingerprint": "e147787cb45b5ec9",
+ "_name": "Yellow & Yangtze"
+}

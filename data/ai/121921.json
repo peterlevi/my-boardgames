@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A brutally difficult, deeply thematic cooperative survival game where every turn is an agonizing trade-off between exploring, gathering food, building shelter, and resting, all while a deck of events actively works to kill you. Its action-selection system (committing workers before seeing outcomes, then resolving with dice and risky discovery tokens) makes even simple actions feel tense and consequential.",
+ "praised": [
+  "Exceptional theme integration where mechanics genuinely simulate desperate survival",
+  "Tense, meaningful decisions every round with real risk of a character dying",
+  "High replayability from modular scenarios, adventure decks, and companion app content",
+  "Strong solo mode that plays two characters"
+ ],
+ "criticised": [
+  "Steep rulebook and heavy upkeep/bookkeeping each round",
+  "Punishing difficulty and swingy dice/event luck can undo careful planning",
+  "Long setup and playtime, with a slow first game or two while learning",
+  "Some scenarios feel unbalanced or overly harsh compared to others"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "cooperative planning and resource allocation, with limited direct interaction beyond assigning shared actions"
+ },
+ "win_criteria": "Cooperative goal",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The game is won or lost as a team by surviving the scenario's specific objective (e.g., building a shelter, defeating a beast, escaping the island) before morale or health runs out, not by accumulating points"
+ },
+ "similar": [
+  "Tanares Adventures",
+  "First Martians: Adventures on the Red Planet",
+  "Nemo's War",
+  "Trudvang Legends",
+  "This War of Mine: The Board Game"
+ ],
+ "_fingerprint": "ffa29e16a642648a",
+ "_name": "Robinson Crusoe: Adventures on the Cursed Island"
+}

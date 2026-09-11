@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Frontiers plays like a leaner Star Realms built for one or two people at a table with fewer external inputs needed, using scorecards to drive solo objectives or a shared threat in co-op mode. Turns are the same fast trade-for-ships-then-attack loop, but the ship pool is smaller and more curated than base Star Realms plus Colony Wars.",
+ "praised": [
+  "Fast, satisfying deckbuilding loop that's easy to teach",
+  "Works well solo or two-player without needing a full group",
+  "Compact box and quick setup/teardown",
+  "Combines cleanly with other Star Realms sets for more variety"
+ ],
+ "criticised": [
+  "Feels thin as a standalone purchase if you already own base Star Realms",
+  "Solo/co-op scorecard objectives can feel gamey or repetitive over many plays",
+  "Less tactical depth than the head-to-head competitive mode",
+  "Card pool overlap with other Star Realms products can feel redundant"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "open conflict and take-that combat, or shared cooperative threat"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Whoever reduces the opponent's Authority to zero first wins, or in solo/co-op mode the scorecard objective is met before the shared threat overwhelms the players"
+ },
+ "similar": [
+  "Star Realms",
+  "Star Realms: Colony Wars",
+  "Hero Realms",
+  "Ascension",
+  "Dominion"
+ ],
+ "_fingerprint": "5628139f713ebc96",
+ "_name": "Star Realms: Frontiers"
+}

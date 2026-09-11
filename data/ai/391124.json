@@ -1,18 +1,34 @@
 {
- "confidence": "low",
- "summary": "",
- "praised": [],
- "criticised": [],
+ "confidence": "medium",
+ "summary": "Players use a rondel to select actions each turn, researching and combining engines and bodies to build a competitive lineup of cars, then cash in on sales and race prestige. It's a tight, plan-ahead economic game where the rondel forces you to sequence actions efficiently rather than freely picking whatever you want.",
+ "praised": [
+  "Clever, tense rondel action-selection mechanism",
+  "Satisfying engine/body combination puzzle for building cars",
+  "This edition trims luck and streamlines the fiddly original",
+  "Good component quality and thematic car-building feel"
+ ],
+ "criticised": [
+  "Rondel can feel restrictive or fiddly to learn at first",
+  "Racing element is a smaller, sometimes underwhelming part of the game",
+  "Can run long and a bit dry/mechanical for a car-racing theme",
+  "Niche reimplementation with less table presence than flashier economic games"
+ ],
  "interaction": {
   "level": "Medium",
-  "kind": ""
+  "kind": "indirect competition over shared rondel spaces and market/race positions"
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": ""
+  "breadth": "Some",
+  "why": "Points come mainly from selling well-designed cars and race results, with prestige/money conversions layered on top"
  },
- "similar": [],
+ "similar": [
+  "Automobiles",
+  "Kraftwagen (original)",
+  "Steam Time",
+  "The Gallerist",
+  "Trickerion: Legends of Illusion"
+ ],
  "_fingerprint": "1454a3674887bb0c",
  "_name": "Kraftwagen: Age of Engineering"
 }

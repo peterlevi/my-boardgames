@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A light, fast-playing race game where you build a bespoke deck of movement and hiring cards to zip across a modular jungle board before your opponents; the tension comes from timing when to spend cards on buying versus moving, and from occasional blocking on the shared path. It plays in well under an hour and scales smoothly, feeling more like an elegant puzzle of route and card efficiency than a heavy strategy game.",
+ "praised": [
+  "Clean, elegant Knizia design with very low rules overhead for a deckbuilder",
+  "Fast, tense races that stay tight to the end",
+  "High table appeal and beautiful, tactile production (jungle tiles, boat pieces)",
+  "Great gateway/family deckbuilder that teaches the mechanism painlessly",
+  "Good replayability from modular board setup and expansions"
+ ],
+ "criticised": [
+  "Limited long-term strategic depth; can feel too light or repetitive for heavier gamers",
+  "Deck-thinning and card choices are somewhat samey between plays",
+  "Little direct player interaction beyond occasional path blocking",
+  "Some randomness in card draw can undercut tactical planning",
+  "Base game can feel like it needs expansions for full variety"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel racing with occasional blocking via zone of control on shared hex spaces"
+ },
+ "win_criteria": "Race to a finish",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is simply whoever reaches El Dorado first, with blockade tokens only used as a tiebreaker among players who arrive in the same final round"
+ },
+ "similar": [
+  "Century: Spice Road",
+  "Clank!: A Deck-Building Adventure",
+  "Trans America",
+  "Elysium",
+  "Great Western Trail"
+ ],
+ "_fingerprint": "03e18df78b89137e",
+ "_name": "The Quest for El Dorado"
+}

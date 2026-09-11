@@ -1,0 +1,33 @@
+{
+ "confidence": "high",
+ "summary": "Players take turns dropping one firefly token at a time onto critter cards, trying to end up controlling the cute critters worth points while dumping fireflies on wild critters they don't want (which then hurt whoever ends up owning them). It plays fast and light, with the real tension being whether to keep spending fireflies now or hold them back for a better card later in the round.",
+ "praised": [
+  "Very quick to teach and play, works well as a filler or family/gateway game",
+  "Charming, colorful critter artwork",
+  "Simple push-your-luck bidding creates real moment-to-moment tension despite minimal rules",
+  "Good for mixed-age or non-gamer groups"
+ ],
+ "criticised": [
+  "Too light and repetitive to hold the interest of experienced gamers",
+  "Limited long-term replayability once the pattern is learned",
+  "Outcomes can feel swingy or luck-driven due to card draw and turn order"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "auction/bidding with blocking via shared firefly pool"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is decided almost entirely by the point values of the critter cards each player ends up owning, offset by penalties from unwanted wild critters."
+ },
+ "similar": [
+  "Coloretto",
+  "For Sale",
+  "No Thanks!",
+  "Web of Deception",
+  "Money"
+ ],
+ "_fingerprint": "69176b19dd4c238e",
+ "_name": "Smile"
+}

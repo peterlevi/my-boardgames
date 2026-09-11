@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A dense Pfister euro where you sail a rondel-like course around the Caribbean, juggling a personal deck of movement/action cards while building influence, cargo runs, and combat strength; a built-in narrative campaign runs alongside the economic engine. It's a lot of moving parts that click into a satisfying, if long, engine-building puzzle.",
+ "praised": [
+  "multiple viable strategies and tech-track combos",
+  "the story/quest layer adds unusual narrative texture for a euro",
+  "excellent, thematic production and card-driven movement",
+  "strong solo mode"
+ ],
+ "criticised": [
+  "heavy rules overhead and long teach",
+  "card draw luck affects available actions turn to turn",
+  "long playtime can drag at 4 players",
+  "can feel like solving your own puzzle with limited direct interaction"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "competing for city control, contracts, and combat over shared spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points accumulate from influence, quests, cargo delivery, combat, and end-game bonuses all at once"
+ },
+ "similar": [
+  "Underwater Cities",
+  "Great Western Trail",
+  "Anachrony",
+  "Res Arcana",
+  "Newton"
+ ],
+ "_fingerprint": "02e5b7bc9476b958",
+ "_name": "Maracaibo"
+}

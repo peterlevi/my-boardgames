@@ -1,32 +1,34 @@
 {
  "confidence": "high",
- "summary": "Lost Ruins of Arnak blends deck-building with worker placement as you explore an island, gain resources, and fight guardians to unlock new areas and actions. It rewards building an efficient engine across cards, workers, and resources while managing a limited number of actions per round.",
+ "summary": "A tight worker-placement/deck-building hybrid where a small, growing deck feeds both actions and resources, and the real tension is timing when to explore, dig, or fight guardians before opponents grab key spots. Turns are fast and decisions are dense despite the low luck, since only one action happens per turn and the board's action slots evolve as the island opens up.",
  "praised": [
-  "excellent fusion of deck-building and worker placement",
-  "gorgeous art and thematic exploration feel",
-  "tight, satisfying five-round structure",
-  "good solo mode"
+  "Clean fusion of deck-building and worker placement that avoids the bloat of typical deck-builders",
+  "Low luck/high skill ratio with meaningful tactical decisions each turn",
+  "Strong solo mode",
+  "Satisfying sense of escalating power and exploration",
+  "Quick turns keep downtime low despite the game's depth"
  ],
  "criticised": [
-  "can feel a bit fiddly with many resource types",
-  "limited direct interaction between players",
-  "some randomness in card/site draws"
+  "Limited direct interaction can make it feel a bit solitaire-ish even multiplayer",
+  "Some randomness in card/site setup can swing difficulty",
+  "Guardians and idols can feel like a secondary system bolted onto the worker placement core",
+  "Analysis paralysis potential from the many viable action paths"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker placement contention over shared spaces"
+  "level": "Medium",
+  "kind": "worker placement blocking and racing for limited action/exploration spots"
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points come from research track progress, artifacts, guardians defeated, and end-game card bonuses"
+  "why": "Points come from research track position, idols, artifacts, resources left over, and guardians defeated, so the winner is usually whoever balanced several scoring engines rather than maxing one"
  },
  "similar": [
   "Res Arcana",
   "Tzolk'in: The Mayan Calendar",
   "Clank!",
-  "Wingspan",
-  "Everdell"
+  "Raiders of the North Sea",
+  "Lost Ruins of Arnak: Expedition Leaders"
  ],
  "_fingerprint": "b2332709e1222171",
  "_name": "Lost Ruins of Arnak"

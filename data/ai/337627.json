@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Voidfall is a sprawling, rules-dense 4X-style civilization game where each faction has a genuinely unique tech tree and card set, so games unfold very differently depending on who you're playing; turns involve careful resource conversion, area control on a hex map, and combat, all while racing to complete scoring objectives before an escalating Voidborn threat (or each other) closes in. It plays as either fully competitive or with a cooperative/semi-cooperative mode against the game itself, and a full session is a multi-hour commitment best suited to groups who enjoy heavy, fiddly strategy games.",
+ "praised": [
+  "Deep faction asymmetry — each side has its own tech tree, cards, and playstyle",
+  "High production value and thematic component design (Chip Theory Games' signature chips/minis)",
+  "Satisfying long-term engine building and tech progression",
+  "Flexible modes (competitive vs. cooperative/solo) add replayability"
+ ],
+ "criticised": [
+  "Extremely steep learning curve and long, complicated rulebook",
+  "Very long playtime, especially for a first game",
+  "High price point and component overhead relative to what some feel is delivered",
+  "Analysis paralysis risk given the number of simultaneous systems to track"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "area control and combat mixed with mostly independent tech/economy engine building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from completing objectives, military conquest, tech advancement, and faction-specific goals, so the winner is usually whoever balances multiple scoring paths best rather than maximizing one."
+ },
+ "similar": [
+  "Gaia Project",
+  "Eclipse: Second Dawn for the Galaxy",
+  "Tapestry",
+  "Anachrony",
+  "Scythe"
+ ],
+ "_fingerprint": "4c8c18da69038fee",
+ "_name": "Voidfall"
+}

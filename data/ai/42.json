@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A dense, cutthroat tile-placement game where you build linked civilizations along rivers and fight brutal internal and external conflicts to install or topple leaders. It rewards ruthless, calculated aggression and balanced development over any single strong suit, since your final score is only as high as your weakest of four categories.",
+ "praised": [
+  "Deep, ruthless strategic depth that rewards long-term planning",
+  "Conflict system (internal and external) is tense and meaningful",
+  "Elegant, tightly interlocking rules with no wasted mechanisms",
+  "High replayability due to shifting alliances and board states"
+ ],
+ "criticised": [
+  "Steep learning curve and rules that are hard to fully grasp on a first play",
+  "Can feel mean and confrontational, alienating players who dislike direct conflict",
+  "Downtime and analysis paralysis in higher player counts",
+  "Red (conflict) tiles and combat math are unintuitive at first"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "direct conflict, blocking, and area control"
+ },
+ "win_criteria": "Lowest-highest scoring",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "The winner is whoever has the highest score in their single weakest of the four leader categories, forcing balanced growth across all colors rather than a dominant specialty."
+ },
+ "similar": [
+  "Through the Desert",
+  "Samurai",
+  "El Grande",
+  "Twilight Struggle",
+  "Blood Rage"
+ ],
+ "_fingerprint": "6e5f9cf64ae86d78",
+ "_name": "Tigris & Euphrates"
+}

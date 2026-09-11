@@ -1,0 +1,33 @@
+{
+ "confidence": "medium",
+ "summary": "A licensed card game riff on the classic 4X video game, where players expand an empire, tech up, and clash militarily using action-point card play. It plays as a fairly light, quick skirmish game rather than a deep space-empire simulation.",
+ "praised": [
+  "quick, accessible take on a beloved video game IP",
+  "asymmetric race powers give some replay variety",
+  "decent production and card art"
+ ],
+ "criticised": [
+  "doesn't capture the depth or scale fans expected from the video game",
+  "take-that attacks can feel random and frustrating",
+  "combat swinginess can overshadow strategic planning",
+  "seen as a fairly generic 4X-lite card game"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "direct military take-that and espionage"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "victory points come from a mix of territory, technology, and military conquest"
+ },
+ "similar": [
+  "Eminent Domain",
+  "Cosmic Encounter",
+  "Race for the Galaxy",
+  "Small World",
+  "Nova Luna"
+ ],
+ "_fingerprint": "ad8cf83739308823",
+ "_name": "Master of Orion: The Board Game"
+}

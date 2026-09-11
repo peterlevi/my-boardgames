@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Tiletum is a dense, dice-driven action-selection euro where the die you pick determines both a resource yield and the strength of an action, forcing constant trade-offs between engine-building and grabbing points. It plays like a heavier, more austere cousin of the designers' other games (Tzolk'in, Newton, Prêt-à-Porter), rewarding tight optimization over narrative or theme.",
+ "praised": [
+  "Clever dual-use dice mechanic (value = resources gained, inversely = action power)",
+  "High replayability from variable setup and modular boards",
+  "Satisfying puzzle of sequencing actions and contracts efficiently",
+  "Good production quality and iconography once learned"
+ ],
+ "criticised": [
+  "Steep learning curve with a lot of upfront rules and icons to absorb",
+  "Very low player interaction, essentially multiplayer solitaire",
+  "Thin, pasted-on Renaissance theme that does nothing for immersion",
+  "Analysis paralysis potential given the number of simultaneous scoring paths",
+  "Feels similar to other Luciani/Tascini titles, less distinct for fans of their catalogue"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light drafting competition over dice and action spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from multiple simultaneous engines (contracts, coats of arms, cathedrals, noble favor, fairs, notable people), so the winner is whoever best balances and completes several of these tracks rather than maxing one."
+ },
+ "similar": [
+  "Tzolk'in: The Mayan Calendar",
+  "Newton",
+  "Prêt-à-Porter",
+  "The Great Zimbabwe",
+  "Trismegistus"
+ ],
+ "_fingerprint": "e817761a299dd0b1",
+ "_name": "Tiletum"
+}

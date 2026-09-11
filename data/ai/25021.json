@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A tense two-player card-driven wargame where battles are resolved not by dice but by whether you can play matching cards to keep your units loyal in the fight; the real game is a tight logistics puzzle of moving armies across the map while managing a shrinking, fluctuating hand of cards that represents your commanders' wavering allegiance. It plays fast for a wargame of its scope, with clean rules but deep, tense decision-making around when to commit forces to battle.",
+ "praised": [
+  "Elegant, novel mechanics (no dice, cards as loyalty/movement fuel) that model historical uncertainty",
+  "Fast playtime and low rules overhead relative to typical wargames",
+  "High tension in deciding when to commit troops versus holding back",
+  "Strong two-player interaction and replayability from variable setup",
+  "Beautiful, functional map and component design"
+ ],
+ "criticised": [
+  "Steep initial learning curve to fully grasp the battle/deployment system",
+  "Can feel swingy if a key card isn't drawn at the right time",
+  "Strictly two-player, no scaling options",
+  "Some find the abstracted 'loyalty' battle resolution less satisfying than direct combat"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "direct area-control conflict and blocking on a point-to-point map"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The game ends immediately when one side captures enough enemy leaders/objectives or the other side's forces are exhausted, so there is no points tally at all"
+ },
+ "similar": [
+  "Twilight Struggle",
+  "Nevsky",
+  "Successors",
+  "1775: Rebellion",
+  "Pax Pamir (Second Edition)"
+ ],
+ "_fingerprint": "775cd10bd8df8d1d",
+ "_name": "Sekigahara: The Unification of Japan"
+}

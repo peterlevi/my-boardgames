@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Each round you blind-bid coins across four taverns to determine turn order, then draft dwarves in descending bid order while your coin values grow via a satisfying 'coin-building' upgrade mechanic. It plays fast and tense, with a light push-your-luck feel around guessing what others will bid and when to hire the big-value heroes.",
+ "praised": [
+  "Clever coin-upgrading mechanism that ties bidding directly into economy growth",
+  "Fast, tense rounds with meaningful blind-bid tension",
+  "Easy to teach, quick to play, scales well 2-5",
+  "Great production/art and satisfying tactile coin play",
+  "High replayability from varied dwarf/hero combos"
+ ],
+ "criticised": [
+  "Can feel a bit solitaire/multiplayer-solitaire since interaction is indirect",
+  "Randomness in which heroes/dwarves appear can swing scoring",
+  "Some find the five scoring categories fiddly to track and optimize",
+  "Endgame scoring math can be a bit dry/calculation-heavy"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "simultaneous blind bidding that indirectly blocks others from cards/turn order"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final score sums five different dwarf-type categories plus heroes and gold, so balancing multiple scoring tracks decides the winner"
+ },
+ "similar": [
+  "Kingdomino",
+  "Raiders of the North Sea",
+  "Century: Spice Road",
+  "Sushi Go!",
+  "Res Arcana"
+ ],
+ "_fingerprint": "8c09b861be1d9830",
+ "_name": "Nidavellir"
+}

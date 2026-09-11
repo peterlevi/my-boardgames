@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Tikal is a tense action-point puzzle where every turn's ten action points must be split between moving explorers, uncovering jungle tiles, and excavating temples, with the ever-present threat that opponents will jump onto a temple you've invested in and steal the majority. The scoring-at-two-checkpoints structure and the choice of how much of the new tile to reveal creates constant tactical tension over a fairly dry, cerebral hour and a half.",
+ "praised": [
+  "Clever action-point allowance system that forces hard tactical choices each turn",
+  "Modular tile-laying creates a different jungle layout and strong replayability each game",
+  "Tense area-majority fights over temples, especially the volcano/treasure and 'kill steal' potential",
+  "Elegant, tightly interlocking mechanisms for a late-90s design"
+ ],
+ "criticised": [
+  "Can feel dry, fiddly, and abstract despite the jungle-exploration theme",
+  "Bookkeeping (tracking worker positions, temple levels, treasures) can bog down turns",
+  "Analysis paralysis potential given how many small options each action point offers",
+  "Two-player games can feel less dynamic than 3-4 player games",
+  "Rulebook/scoring rounds are considered fussy to teach"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "area majority and blocking, with occasional direct 'kill steal' confrontation over temples and treasures"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Victory comes almost entirely from majority control of temple levels at the two scoring checkpoints, with treasure sets acting as a secondary tiebreak/multiplier."
+ },
+ "similar": [
+  "Java",
+  "Mexica",
+  "Torres",
+  "El Grande",
+  "Amun-Re"
+ ],
+ "_fingerprint": "07c76606c010482f",
+ "_name": "Tikal"
+}

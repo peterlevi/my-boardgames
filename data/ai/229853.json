@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Teotihuacan is a dense, multi-layered worker-placement game where dice act as your workers and grow in value as you use them, forcing constant tension between advancing dice and needing lower numbers for cheaper actions. Every turn is a puzzle of optimizing a tight engine across temples, technology, houses, and the central pyramid, with the game periodically resetting resources at era-end scoring.",
+ "praised": [
+  "Dice-as-workers mechanic feels fresh and creates a unique 'value vs. utility' puzzle",
+  "Deep, tightly interlocking systems with satisfying engine-building",
+  "High replayability from modular board and variable setup",
+  "Strong solo mode",
+  "Rewards efficient long-term planning"
+ ],
+ "criticised": [
+  "Steep learning curve and heavy rulebook overhead for new players",
+  "Can feel solitary/multiplayer-solitaire with limited direct interaction",
+  "Analysis paralysis due to many simultaneous considerations",
+  "Iconography and initial onboarding seen as unintuitive",
+  "Theme feels pasted on top of a heavily Euro-style mechanism set"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "Mostly parallel play with some space/tile competition and area denial on the shared board"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Fame comes from multiple systems (temples, pyramid layers, technology, houses, resources at reset) so the winner is usually whoever balances the most engines efficiently across all three eras"
+ },
+ "similar": [
+  "Tzolk'in: The Mayan Calendar",
+  "Terra Mystica",
+  "Newton",
+  "Trickerion: Legends of Illusion",
+  "Anachrony"
+ ],
+ "_fingerprint": "2e6b8e903c9a56de",
+ "_name": "Teotihuacan: City of Gods"
+}

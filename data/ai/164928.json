@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Orléans is a bag-building worker placement game where you draft followers into a bag, then draw a handful each round to place on action spaces and trigger their effects. It rewards efficient engine-building across trade, science, and exploration tracks, with a calm, low-conflict feel punctuated by tense event cards that can wreck an unprepared player.",
+ "praised": [
+  "Elegant bag-building mechanism that feels fresh compared to standard worker placement",
+  "Multiple viable paths to victory with satisfying engine-building",
+  "Tight, clean rules that produce deep strategic decisions",
+  "Beautiful, thematic production and map"
+ ],
+ "criticised": [
+  "Very low direct player interaction, can feel solitaire-ish",
+  "Event deck can deliver harsh, sometimes 'gotcha' setbacks",
+  "Downtime between turns in higher player counts",
+  "Some randomness in the bag draw can feel swingy for a euro"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with some space competition and trade route/knight-based blocking"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from multiple tracks (science, trade stations, finances, development) so the winner is usually whoever built the most efficient multi-track engine rather than one dominant source"
+ },
+ "similar": [
+  "Trajan",
+  "The Voyages of Marco Polo",
+  "Le Havre",
+  "Grand Austria Hotel",
+  "Bruges"
+ ],
+ "_fingerprint": "13f17ba88dd5140b",
+ "_name": "Orléans"
+}

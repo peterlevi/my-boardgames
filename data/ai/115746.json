@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A sweeping asymmetric wargame where one player commands overwhelming Shadow armies while the other must balance thin Free Peoples defenses with the desperate, secretive quest to sneak the Ring into Mordor. It's a tense race between military conquest and stealth, with huge swings driven by the Hunt for the Ring mechanic and event cards.",
+ "praised": [
+  "Captures the narrative tension of the books/films better than almost any other adaptation",
+  "Elegant asymmetry between military conflict and the hidden Ring-bearer quest",
+  "High production values (huge map, minis, art)",
+  "Deep, tense decision-making for both sides",
+  "Strong replayability due to variable strategies each game"
+ ],
+ "criticised": [
+  "Long playtime (often exceeds the stated 150-240 min, especially for new players)",
+  "Steep rules overhead and learning curve",
+  "Can feel very swingy if the Hunt for the Ring dice go badly",
+  "Requires a well-matched, committed opponent to shine",
+  "Shadow player can feel like they're just executing a checklist of attacks if Free Peoples play too passively"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "open conflict and area control with a hidden-movement cat-and-mouse thread"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Victory comes from either the Shadow army conquering enough Free People cities/strongholds or the Ring being destroyed/corrupted, not from accumulating points"
+ },
+ "similar": [
+  "Twilight Struggle",
+  "Star Wars: Rebellion",
+  "A Game of Thrones: The Board Game",
+  "Battlestar Galactica: The Board Game",
+  "Root"
+ ],
+ "_fingerprint": "0e834ea07a36d481",
+ "_name": "War of the Ring: Second Edition"
+}

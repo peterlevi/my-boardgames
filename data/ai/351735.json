@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Newton is a tight worker-placement-adjacent game where you place cards on a shared board to trigger actions (buying goods, researching theories, moving your pawn, building machines) but must leave one card behind each round, permanently shrinking your options as the game progresses. It's a dense, efficient engine-builder with a satisfying tech-tree feel and almost no direct conflict, just competition for the same spaces.",
+ "praised": [
+  "Elegant, tightly-interlocking action system where every choice has an opportunity cost",
+  "Strong sense of progression through the technology/discovery tracks",
+  "High replayability due to variable setup and multiple viable strategies",
+  "Good scaling and satisfying puzzle at 2 players especially"
+ ],
+ "criticised": [
+  "Steep rules overhead and iconography-heavy board that's intimidating for new players",
+  "Can feel dry or overly mechanical/spreadsheet-like with a thin scientific theme",
+  "Analysis paralysis potential given the many interlocking options each turn",
+  "First game often spent just learning what's possible before real strategy emerges"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light space/resource competition"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from multiple tracks (theories, discoveries, machines, end-game bonuses, leftover resources), rewarding an efficient, diversified engine over a single dominant strategy"
+ },
+ "similar": [
+  "Res Arcana",
+  "Great Western Trail",
+  "Barrage",
+  "Lorenzo il Magnifico",
+  "Tzolk'in: The Mayan Calendar"
+ ],
+ "_fingerprint": "6929548a566a2ea7",
+ "_name": "Newton & Great Discoveries"
+}

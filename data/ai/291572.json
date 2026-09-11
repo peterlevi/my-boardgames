@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Oath is a dense, narrative-driven area-control game where players vie for a shifting set of win conditions (Oathkeeper vs. Successor) while a chronicle system carries the consequences of each session — who holds relics, which sites are ruined, who founded a dynasty — into the next game played with the same box. Sessions feel like political jockeying and opportunistic backstabbing as much as tactical warfare, with a steep rules overhead that pays off mainly across a campaign rather than in a single isolated play.",
+ "praised": [
+  "Emergent, personal narratives that build across sessions via the chronicle/legacy system",
+  "Clever asymmetric win conditions that keep every player's goals different and shifting",
+  "High replayability since the game state and rules can evolve indefinitely, yet it can be reset to a fresh start",
+  "Rich, evocative art and card-driven world-building"
+ ],
+ "criticised": [
+  "Very steep learning curve and dense rulebook, rough for first-time players",
+  "Long, sometimes fiddly turns with heavy bookkeeping",
+  "Swingy and chaotic outcomes that can feel arbitrary, especially early in a chronicle",
+  "Best experienced with a stable group over multiple sessions, which is a big ask logistically"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "area majority conflict, negotiation, and opportunistic backstabbing"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is decided not by points but by whichever player fulfills the current game's Oathkeeper or Successor victory condition, which itself changes from game to game."
+ },
+ "similar": [
+  "Root",
+  "Pax Pamir (Second Edition)",
+  "John Company (Second Edition)",
+  "Vast: The Crystal Caverns",
+  "Twilight Struggle"
+ ],
+ "_fingerprint": "4d4e47995e3a33dd",
+ "_name": "Oath"
+}

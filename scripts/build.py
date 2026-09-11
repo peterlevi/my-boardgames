@@ -100,6 +100,21 @@ def parse_item(it, is_expansion=False):
     )
 
 
+def load_ai():
+    """The optional opinion database from scripts/enrich.py. Absent is fine —
+    every field it feeds is additive."""
+    out = {}
+    d = ROOT / "data" / "ai"
+    if not d.exists():
+        return out
+    for f in d.glob("*.json"):
+        try:
+            out[f.stem] = json.loads(f.read_text())
+        except Exception:  # noqa: BLE001
+            continue
+    return out
+
+
 def ids_in(name):
     """Object ids listed in one of the collection exports, in file order."""
     f = RAW / name
@@ -150,7 +165,9 @@ def main():
               f"run scripts/fetch.py")
 
     plays, mine = collection_stats()
+    ai = load_ai()
     for g in games:
+        g["ai"] = ai.get(g["id"])
         g["plays"] = plays.get(g["id"], 0)
         g["my_rating"] = mine.get(g["id"])
 

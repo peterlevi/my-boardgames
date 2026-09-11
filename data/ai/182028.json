@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Through the Ages is a dense civilization-building card game where you spend action points each turn to grow population, mine resources, research technologies, and build wonders while managing a separate military track to deter aggression. Turns are heavy with multi-step planning and the game rewards efficient engine-building over a long, calculation-intensive playtime.",
+ "praised": [
+  "Extremely deep, satisfying engine-building with meaningful long-term strategy",
+  "Elegant action-point and card-drafting systems that create constant tough choices",
+  "Military/aggression mechanic gives real teeth to interaction without direct elimination of turns",
+  "High replayability due to variable card availability each game"
+ ],
+ "criticised": [
+  "Long playtime and heavy analysis paralysis, especially with 4 players",
+  "Steep learning curve and rulebook complexity for new players",
+  "Aggression/war mechanic can feel punishing or swingy for the player on the receiving end",
+  "Downtime between turns can be significant in higher player counts"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "competitive drafting plus military aggression/take-that"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Culture points accumulate over the whole game from technologies, wonders, leaders, and events, so the winner is whoever built the most efficient, well-rounded civilization engine."
+ },
+ "similar": [
+  "Terra Mystica",
+  "Brass: Birmingham",
+  "Puerto Rico",
+  "Twilight Imperium",
+  "Clash of Cultures"
+ ],
+ "_fingerprint": "0f236d56da6d0502",
+ "_name": "Through the Ages: A New Story of Civilization"
+}

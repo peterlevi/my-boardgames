@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Witchstone is a dense Knizia-designed puzzle of drafting hexagonal dominoes to build a personal cauldron network, scooping crystals, and chaining bonus actions across witches, the pentagram, and the wand; it plays like a solitaire optimization exercise where every turn ripples through your own engine. The eleven-round structure creates a tight arc where early tile choices constrain later combos, rewarding players who can plan several moves ahead.",
+ "praised": [
+  "Clever, tightly interlocking systems that create satisfying combos",
+  "High replayability from variable domino draws and multiple viable strategies",
+  "Strong table presence and component quality",
+  "Rewards long-term planning and efficient engine-building"
+ ],
+ "criticised": [
+  "Steep rules overhead and fiddly bookkeeping for what is essentially a multiplayer solitaire",
+  "Low direct interaction beyond drafting competition",
+  "Can feel overwhelming or analysis-paralysis-inducing on early plays",
+  "Some feel it's overly complex relative to the depth of decisions"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "competitive tile drafting, otherwise mostly parallel play"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from multiple engines at once (crystal collection, network connections, prophecy scrolls, end-game bonuses), so the winner is whoever built the most efficient combination across systems rather than maximizing one track."
+ },
+ "similar": [
+  "Barony",
+  "Yokohama",
+  "The Voyages of Marco Polo",
+  "Kingdomino",
+  "Trajan"
+ ],
+ "_fingerprint": "8fdebf0c5b6b75d2",
+ "_name": "Witchstone"
+}

@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "A mid-weight worker-placement game built around a rondel: you move your meeple around a wheel of action spaces to collect resources, recruit characters, and build up your tableau, while also competing for control of the Sheriff track for bonus points. It's less mean than its predecessor Architects (no direct sabotage/corruption), with the tension coming from tight resource management and racing others to the best rondel spaces and building slots.",
+ "praised": [
+  "Clever rondel movement mechanic that creates meaningful spend-vs-advance decisions",
+  "Multiple viable strategies (buildings, manuscripts, castle work, deeds) that support different tableaus",
+  "Strong solo mode",
+  "High production values and thematic art consistent with the West Kingdom series",
+  "Good complexity-to-playtime ratio for a mid-weight euro"
+ ],
+ "criticised": [
+  "Less player interaction than Architects of the West Kingdom, feels fairly solitaire/parallel outside the Sheriff track",
+  "Rulebook and icons can be a bit fiddly to learn initially",
+  "Can feel a little dry or formulaic if you've played other Garphill/West Kingdom titles",
+  "Some randomness in available characters/cards can swing early game options"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light area-majority competition for Sheriff/castle control"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from several parallel engines (buildings, manuscripts, deeds, castle influence, character bonuses) so the winner is usually whoever built the most efficient combination rather than maxing one track"
+ },
+ "similar": [
+  "Architects of the West Kingdom",
+  "Paladins of the West Kingdom",
+  "Barrage",
+  "Trickerion: Legends of Illusion",
+  "Lorenzo il Magnifico"
+ ],
+ "_fingerprint": "f17237874afe9fb0",
+ "_name": "Viscounts of the West Kingdom"
+}

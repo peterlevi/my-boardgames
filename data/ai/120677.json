@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Terra Mystica is a dense, no-luck engine-building and territory game where you terraform hexes to expand your faction's network while racing up four cult tracks for efficiency bonuses. Every turn is a tight optimization puzzle with heavy opportunity cost, and the game rewards players who plan several turns ahead over a fixed number of rounds.",
+ "praised": [
+  "Deep, satisfying strategic depth with no luck or hidden information",
+  "Highly asymmetric factions that each play very differently",
+  "Elegant scoring/bonus tile system that gives replayability",
+  "Tight resource economy where every decision has real opportunity cost"
+ ],
+ "criticised": [
+  "Steep learning curve and heavy rulebook/upfront teaching burden",
+  "Low direct interaction beyond spatial blocking, can feel solitaire-ish",
+  "Some factions are considered stronger than others depending on map/matchup",
+  "Long playtime and analysis paralysis, especially with new players"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial via terraforming adjacency, indirect competition for cult track and bonus positions"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate continuously from building, terraforming, cult track advancement, and end-game bonus tiles, so the winner is decided by consistent efficiency across many small scoring streams rather than one dominant strategy"
+ },
+ "similar": [
+  "Terra Mystica: Gaia Project",
+  "Puerto Rico",
+  "The Castles of Burgundy",
+  "Concordia",
+  "Brass: Birmingham"
+ ],
+ "_fingerprint": "cfc2410050e3ac7c",
+ "_name": "Terra Mystica"
+}

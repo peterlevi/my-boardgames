@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Mille Fiori is a quiet, cerebral drafting game where you pick a card, pass the rest, and place a token in one of five interconnected production areas, chasing multipliers from adjacency and majority bonuses. It rewards efficient, multi-track engine-building more than direct confrontation, with tension coming from anticipating what others will take from the shrinking hand.",
+ "praised": [
+  "Elegant, tightly interlocking scoring systems typical of Knizia",
+  "Meaningful decisions every turn despite simple rules",
+  "Good length for the depth offered",
+  "Strong replayability from the many scoring interactions"
+ ],
+ "criticised": [
+  "Can feel dry or overly abstract/mathematical",
+  "Limited player interaction beyond drafting and majority contests",
+  "Analysis paralysis from optimizing across five scoring areas",
+  "Theme is pasted-on"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "card drafting with majority/area contests, mostly parallel engine-building"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate across five distinct production areas (workshops, houses, guilds, trade, harbor), and the winner is whoever best balances and multiplies scoring across them"
+ },
+ "similar": [
+  "Ra",
+  "Tigris & Euphrates",
+  "Yokohama",
+  "The Voyages of Marco Polo",
+  "Blue Lagoon"
+ ],
+ "_fingerprint": "638135abe1efebb0",
+ "_name": "Mille Fiori"
+}

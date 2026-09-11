@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Zoo Vadis is a fast, cutthroat negotiation game where players openly bargain, bribe, and vote to move their animal up a shared hierarchy, with victory points doubling as the currency you spend to buy influence. It plays best as a social, table-talk-heavy experience where alliances shift constantly and the mechanics matter less than reading the room.",
+ "praised": [
+  "Tight, clever design that layers negotiation, hidden VP tracking, and bribery into a short 20-40 minute package",
+  "Scales unusually well from 3 to 7 players thanks to the neutral, bribable peacock pieces filling out lower counts",
+  "High replayability driven by shifting alliances and table dynamics rather than the rules themselves",
+  "Polished Osprey Games production and quick teach for a negotiation-heavy title"
+ ],
+ "criticised": [
+  "Lives or dies on the group - a quiet, non-negotiating, or overly analytical table falls flat",
+  "Prone to kingmaking and runaway-leader dynamics common to open-negotiation designs",
+  "Feels derivative to fans of Knizia's other negotiation games (original Quo Vadis, Amun-Re, Medici, Ra)",
+  "Thin, pasted-on theme that's mostly an excuse for the voting/bribery structure"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "trading and negotiation, open bribery and voting"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Your final score comes almost entirely from laurels (victory points) you've hoarded and spent as bribery currency during voting, so the winner is whoever manages that single VP-as-resource economy best."
+ },
+ "similar": [
+  "Quo Vadis",
+  "Amun-Re",
+  "Medici",
+  "Cutthroat Caverns",
+  "Chinatown"
+ ],
+ "_fingerprint": "d9098949fcf63164",
+ "_name": "Zoo Vadis"
+}

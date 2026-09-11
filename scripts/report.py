@@ -112,6 +112,7 @@ def compact(games, tag_idx, inline=True):
             "rt": g["ratings"], "ow": g["owners"],
             "de": (g["description"] or "")[:900],
             "mn": g["minplayers"], "mx": g["maxplayers"],
+            "ai": trim_ai(g.get("ai")),
             "ix": g["interaction"], "exp": 1 if g["is_expansion"] else 0,
             "of": g["expands"], "t": playtime(g),
             "top": max((v[0] for v in poll.values()), default=0),
@@ -136,6 +137,17 @@ EM_DASH = "\u2014"
 
 # More interaction reads as the better end of the ramp.
 IX_PILL = {"High": "p3", "Medium": "p2", "Low": "p1"}
+BREADTH_PILL = {"Focused": "p3", "Some": "p2", "Broad": "p1", "Salad": "pw"}
+# Column headings must be short; the full phrase stays in the filter.
+WIN_SHORT = {
+    "Most points, many sources": "Points, many",
+    "Most points, one or two sources": "Points, few",
+    "Most money": "Money", "Race to a finish": "Race",
+    "Lowest-highest scoring": "Low-high",
+    "Special win condition": "Special", "Cooperative goal": "Co-op goal",
+    "Other": "Other",
+}
+WIN_CRITERIA = list(WIN_SHORT)
 
 
 
@@ -198,6 +210,26 @@ def bar(pct):
     return (f'<span class="pct">{pct:.0f}%</span><span class="track">'
             f'<i class="{meter_class(pct)}" '
             f'style="width:{min(pct, 100):.0f}%"></i></span>')
+
+
+# Opinion fields from the local database. A low-confidence entry means the
+# model did not recognise the game, so its opinion fields are dropped rather
+# than shown — the report never presents a guess as a finding.
+def trim_ai(ai):
+    if not ai:
+        return None
+    conf = ai.get("confidence", "low")
+    out = {"cf": conf, "wc": ai.get("win_criteria"),
+           "br": (ai.get("scoring") or {}).get("breadth"),
+           "why": (ai.get("scoring") or {}).get("why"),
+           "ixl": (ai.get("interaction") or {}).get("level"),
+           "ixk": (ai.get("interaction") or {}).get("kind")}
+    if conf != "low":
+        out["sm"] = ai.get("summary")
+        out["up"] = ai.get("praised") or []
+        out["dn"] = ai.get("criticised") or []
+        out["sim"] = ai.get("similar") or []
+    return out
 
 
 def fmt_count(n):
@@ -265,6 +297,11 @@ def passes_static(g, s, a, mode):
         return False
     if a.players and not qualifies(s, mode):
         return False
+    ai = g["ai"] or {}
+    if a.win != "any" and ai.get("wc") != a.win:
+        return False
+    if a.breadth != "any" and ai.get("br") != a.breadth:
+        return False
     return True
 
 
@@ -282,6 +319,10 @@ def describe(a):
         head = f"Games that play at {a.players}p"
 
     extra = []
+    if a.win != "any":
+        extra.append(WIN_SHORT.get(a.win, a.win).lower())
+    if a.breadth != "any":
+        extra.append(a.breadth.lower() + " scoring")
     if a.expansions == "drop":
         extra.append("expansions ignored")
     return head + (", " + ", ".join(extra) if extra else "")
@@ -317,7 +358,17 @@ def rows_html(data, a):
             badges += f'<span class="tag exp" title="{esc(via)}">+EXP</span>'
         v = verdict_html(s, n)
         weight = f'{g["w"]:.2f}' if g["w"] else EM_DASH
-        ix_html = f'<span class="tag {IX_PILL[g["ix"]]}">{g["ix"]}</span>'
+        ai = g["ai"] or {}
+        ix_level = ai.get("ixl") or g["ix"]
+        ix_html = (f'<span class="tag {IX_PILL.get(ix_level, "p1")}"'
+                   f' title="{esc(ai.get("ixk") or "derived from mechanics")}">'
+                   f'{ix_level}</span>')
+        win_html = (f'<span class="wc" title="{esc(ai.get("why") or "")}">'
+                    f'{esc(WIN_SHORT.get(ai.get("wc"), ai.get("wc") or EM_DASH))}'
+                    f'</span>')
+        br = ai.get("br")
+        br_html = (f'<span class="tag {BREADTH_PILL.get(br, "p1")}">{br}</span>'
+                   if br else EM_DASH)
         who = g["ds"]
         designer = (f'<span title="{esc(", ".join(who))}">{esc(who[0])}'
                     + (f' <span class="more">+{len(who) - 1}</span>'
@@ -340,6 +391,8 @@ def rows_html(data, a):
             f'<td class="num">{esc(g["t"])}</td>'
             f'<td class="num hide-sm">{weight}</td>'
             f'<td class="hide-sm">{ix_html}</td>'
+            f'<td class="hide-sm">{win_html}</td>'
+            f'<td class="hide-sm">{br_html}</td>'
             f'<td class="hide-sm designer">{designer}</td>'
             f'<td class="num hide-sm j-verdict">{v}</td>'
             f'<td class="num bar hide-sm j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
@@ -396,6 +449,9 @@ def main():
                     help="player count the page opens on (0 = any)")
     ap.add_argument("--mode", choices=["best", "good", "any"], default="good",
                     help="opening player-count rule")
+    ap.add_argument("--win", default="any")
+    ap.add_argument("--breadth", default="any",
+                    choices=["any", "Focused", "Some", "Broad", "Salad"])
     ap.add_argument("--expansions", choices=["fold", "show", "drop"],
                     default="fold", help="fold: hide expansion rows but let "
                                          "them speak for their base game")
@@ -412,7 +468,8 @@ def main():
     # JavaScript gets the same order rather than raw cache order.
     data.sort(key=lambda g: (g["rk"] is None, g["rk"] or 10 ** 9))
     tpl = (HERE / "report_template.html").read_text(encoding="utf-8")
-    opts = {"players": a.players, "mode": a.mode,
+    opts = {"players": a.players, "mode": a.mode, "win": a.win,
+            "breadth": a.breadth,
             "expansions": a.expansions, "minVotes": a.min_votes}
 
     rows, shown = rows_html(data, a)
@@ -426,6 +483,11 @@ def main():
     modes = options([("any", "Plays at that count"),
                      ("good", "Good at that count"),
                      ("best", "Best at that count")], a.mode)
+    wins = options([("any", "Doesn't matter")]
+                   + [(w, w) for w in WIN_CRITERIA], a.win)
+    breadths = options([("any", "Doesn't matter")]
+                       + [(b, b) for b in ("Focused", "Some", "Broad", "Salad")],
+                       a.breadth)
     exps = options([("fold", "Hide, but count for base game"),
                     ("show", "Show as their own rows"),
                     ("drop", "Ignore completely")], a.expansions)
@@ -441,6 +503,8 @@ def main():
             .replace("<!--__OPTIONS__-->", players)
             .replace("<!--__MODE_OPTIONS__-->", modes)
             .replace("<!--__EXP_OPTIONS__-->", exps)
+            .replace("<!--__WIN_OPTIONS__-->", wins)
+            .replace("<!--__BREADTH_OPTIONS__-->", breadths)
             .replace("__MINVOTES__", str(a.min_votes))
             .replace("__SHOWN__", str(shown))
             .replace("__DESC__", esc(describe(a)))

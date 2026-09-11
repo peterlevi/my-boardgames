@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Trajan is a dense Feld point-salad game where the mancala-like bowl mechanism constrains which of six actions you can take each turn, forcing you to plan several moves ahead to line up the action you actually need. Turns are quick once you know the system, but the puzzle of managing your tableau and reading opponents' bowls to avoid being blocked is the whole game.",
+ "praised": [
+  "Clever, unique mancala-based action-selection mechanism",
+  "Tight, puzzly turn planning with meaningful long-term sequencing",
+  "Multiple viable strategies and good replayability",
+  "Efficient turns once the system clicks"
+ ],
+ "criticised": [
+  "Steep learning curve and unintuitive rules explanation",
+  "Thematically dry/pasted-on Roman setting",
+  "Point-salad scoring can feel like an accounting exercise",
+  "Low direct interaction; can feel like parallel solitaire"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with some indirect blocking via forum tile drafting and senate track positioning"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Salad",
+  "why": "Points trickle in from building, trading, military campaigns, senate influence, and forum tile sets, so the winner is whoever chains the bowl-action system most efficiently across several tracks rather than dominating one."
+ },
+ "similar": [
+  "The Castles of Burgundy",
+  "Bruges",
+  "Amerigo",
+  "The Speicherstadt",
+  "Le Havre"
+ ],
+ "_fingerprint": "d1e845094681a1b6",
+ "_name": "Trajan"
+}

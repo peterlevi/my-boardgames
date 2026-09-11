@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "On Mars is a dense, puzzle-heavy worker-placement and tile-laying game where you juggle multiple interlocking resource chains (water, air, power, food) while ferrying workers between a space station and the Martian surface. It rewards long-term planning and engine-building over reactive tactics, with a steep learning curve and heavy rulebook overhead before it clicks.",
+ "praised": [
+  "Intricate, tightly interlocking systems that feel deeply satisfying once mastered",
+  "Strong thematic integration of mechanics with the Mars colonization setting",
+  "High replayability due to variable mission goals and personal agendas",
+  "Rewarding sense of engine-building and efficiency optimization",
+  "Excellent solo mode"
+ ],
+ "criticised": [
+  "Very steep learning curve with a dense, sometimes unclear rulebook",
+  "Long setup and long playtime, especially for first plays",
+  "Analysis paralysis due to the sheer number of decision points",
+  "Can feel more like a solitaire puzzle than a game with meaningful interaction",
+  "Iconography and initial teaching are overwhelming for new players"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with some race-for-tiles/contracts competition"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from completing mission goals, contracts, private agendas, and colony development, so the winner is decided by whoever most efficiently optimizes multiple simultaneous scoring tracks."
+ },
+ "similar": [
+  "Gaia Project",
+  "Terraforming Mars",
+  "The Gallerist",
+  "Lisboa",
+  "Great Western Trail"
+ ],
+ "_fingerprint": "1d259bd6fb1c06ed",
+ "_name": "On Mars"
+}

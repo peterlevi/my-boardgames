@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Root plays like a tightly wound asymmetric war game where each faction (militaristic Marquise, resurgent Eyrie, guerrilla Woodland Alliance, solo Vagabond, and others in expansions) is essentially playing a different game with its own economy and win path, all fighting over the same map. Turns are fast and full of hard tactical decisions, but the real challenge is reading the table and timing strikes before a leading faction snowballs out of control.",
+ "praised": [
+  "Genuinely asymmetric factions that each feel like a distinct game",
+  "Fast-paced turns with meaningful decisions every turn",
+  "Charming woodland-creatures art and theme paired with a surprisingly cutthroat war game",
+  "High replayability from faction combos and variable setup",
+  "Rewards map awareness and threat assessment over rote strategy"
+ ],
+ "criticised": [
+  "Steep asymmetric learning curve — new players often bounce off their first faction",
+  "Runaway leader problem if the table doesn't gang up on whoever is winning",
+  "Eyrie's rigid Decree can spiral into an unrecoverable meltdown that feels bad to pilot",
+  "Needs experienced players to self-police the alpha player/leader early, or games get lopsided",
+  "Direct conflict and dice-based combat can feel swingy for players who dislike confrontation"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "open conflict, area denial, and shifting alliances/negotiation"
+ },
+ "win_criteria": "Special win condition",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Each faction races to 30 victory points (or a unique alternate win condition) generated almost entirely through its own faction-specific engine, so the winner is decided by who best executes their faction's path while others are held in check."
+ },
+ "similar": [
+  "Vast: The Crystal Caverns",
+  "Oath",
+  "Cole Wehrle's Pax Pamir (2nd Edition)",
+  "Undaunted: Normandy",
+  "Spirit Island"
+ ],
+ "_fingerprint": "19e4dcf4473cfdac",
+ "_name": "Root"
+}

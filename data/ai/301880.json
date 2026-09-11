@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A worker-placement/pickup-and-deliver hybrid where you send crew members to gather resources, then use those crew to raid settlements or complete quests for points; it plays like a streamlined descendant of Raiders of the North Sea with an added dice/animal-training layer. Turns are quick and puzzly, with a satisfying engine-build feel as your crew and animals grow more efficient over the course of the game.",
+ "praised": [
+  "Smooth, low-downtime worker placement with meaningful but not overwhelming choices",
+  "Strong solo mode",
+  "Nice production and thematic art despite abstracted mechanics",
+  "Good entry point for newer gamers into worker placement/Euro design",
+  "Satisfying sense of building an efficient engine over the game"
+ ],
+ "criticised": [
+  "Thin theme bolted onto fairly dry mechanics — raiding and Scythian setting feel pasted on",
+  "Very similar to (and considered by some a lesser version of) Raiders of the North Sea",
+  "Limited player interaction beyond worker-placement blocking",
+  "Some randomness from dice/quest draws can feel swingy for a Euro",
+  "Can feel a bit solitaire-ish even in multiplayer"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "worker-placement blocking, mostly parallel play"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points accumulate from raiding settlements, collecting plunder, and completing quests, so the winner is usually whoever balances the most scoring avenues efficiently."
+ },
+ "similar": [
+  "Raiders of the North Sea",
+  "Explorers of the North Sea",
+  "Rajas of the Ganges",
+  "Architects of the West Kingdom",
+  "Trickerion"
+ ],
+ "_fingerprint": "320aa3e0f7f2273d",
+ "_name": "Raiders of Scythia"
+}

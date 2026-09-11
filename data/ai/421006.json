@@ -1,32 +1,33 @@
 {
- "confidence": "high",
- "summary": "Duel for Middle-earth is an asymmetric two-player card game where one player controls the Fellowship racing to destroy the Ring while the other plays Sauron hunting them down and building military strength. Games are tense and tactical, built around drafting cards from a shared market to fuel your engine each of the three chapters.",
+ "confidence": "medium",
+ "summary": "A tense two-player card-drafting duel where one side plays the Fellowship racing to destroy the Ring and the other plays Sauron building armies and corrupting the map, with area-majority control over Middle-earth's regions deciding momentum each chapter. It plays fast and tight, with several different ways for either side to trigger a sudden-death win before the final scoring even happens.",
  "praised": [
-  "strong asymmetric theming and tension",
-  "tight two-player design from respected designers",
-  "quick chapters keep pace snappy",
-  "good replayability from card variety"
+  "Tight, tense two-player design from experienced co-designers",
+  "Strong thematic integration of Fellowship vs Sauron asymmetry",
+  "Multiple paths to instant victory keep every turn meaningful",
+  "Quick to teach and play (30 minutes) while staying strategically dense"
  ],
  "criticised": [
-  "can feel swingy or luck-dependent in card draws",
-  "learning both sides' strategies takes a few plays",
-  "market/drafting can create some analysis paralysis"
+  "Inevitable comparisons to 7 Wonders Duel as derivative rather than fresh",
+  "Asymmetric factions can feel unbalanced or favor one side in early plays",
+  "Card draw/setup variance can swing a short game significantly",
+  "Sudden-death win conditions can end games abruptly before a side feels they've had their turn"
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct racing and combat with card drafting"
+  "kind": "area control and open conflict over a shared card row and map"
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "winner is decided by completing the Fellowship's quest or Sauron stopping them, not by points"
+  "breadth": "Some",
+  "why": "The winner is decided either by triggering one of several sudden-death conditions (quest completion, army advance, area domination) or by comparing accumulated points/board state if the chapters run their course"
  },
  "similar": [
-  "War of the Ring",
-  "Star Wars: The Deckbuilding Game",
-  "Lost Cities",
   "7 Wonders Duel",
-  "Star Wars: Rebellion"
+  "Star Wars: The Duel",
+  "Watergate",
+  "Targi",
+  "Ankh: Gods of Egypt"
  ],
  "_fingerprint": "03cd5bfaa8351fc5",
  "_name": "The Lord of the Rings: Duel for Middle-earth"

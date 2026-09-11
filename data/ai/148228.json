@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Splendor is a fast, tactile engine-building game where you spend chips to buy gem cards that discount future purchases, snowballing toward 15 points. Turns are simple and quick, but there's real tension in reading opponents' likely purchases and timing your reserves to deny key cards.",
+ "praised": [
+  "Extremely easy to teach and learn, great gateway game",
+  "Satisfying tactile chip-collecting and engine-building feel",
+  "Quick turns keep downtime low",
+  "Nice production values (chunky chips, nice cards)",
+  "Scales well and plays fast at any player count"
+ ],
+ "criticised": [
+  "Can feel solitaire-ish with limited direct interaction beyond card/chip denial",
+  "Multiplayer solitaire feeling increases at higher player counts",
+  "Little variability between plays, can feel repetitive over many sessions",
+  "Card draw luck (which cards flip up) can swing a game",
+  "Fairly light strategically, not much long-term depth for hardcore gamers"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "blocking and area denial via card reservation and chip scarcity"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "The winner is whoever first assembles the most efficient chain of discount cards to afford high-value cards and hit 15 points fastest."
+ },
+ "similar": [
+  "Century: Spice Road",
+  "Res Arcana",
+  "Azul",
+  "Jaipur",
+  "Great Western Trail"
+ ],
+ "_fingerprint": "32671a930e3f32e2",
+ "_name": "Splendor"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Troyes is a dice-and-card worker placement game where your workers are dice whose rolled values determine what they can do, and you're constantly trading, selling, or losing dice to opponents and events. It's a tight economic engine game with a distinctive push-your-luck feel layered onto worker placement, since die values fluctuate and can be manipulated by cards.",
+ "praised": [
+  "unique dice-as-workers mechanism that feels fresh even to experienced gamers",
+  "deep, tense economic engine-building with many viable strategies",
+  "strong replayability from variable card decks and interaction between religious/military/civic tracks",
+  "clever way of turning dice rolling into a strategic resource rather than pure luck"
+ ],
+ "criticised": [
+  "steep learning curve and dense rulebook that intimidates new players",
+  "significant luck from dice rolls, even if mitigated by manipulation options",
+  "downtime and analysis paralysis in higher player counts",
+  "can feel fiddly and overwrought with icons/tracks for newcomers"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker/die trading, selling dice to opponents, and competing for limited action spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "points come from multiple tracks (military, religious, civic influence) plus card bonuses, favoring balanced engine-building over one dominant strategy"
+ },
+ "similar": [
+  "Le Havre",
+  "Caylus",
+  "Puerto Rico",
+  "The Voyages of Marco Polo",
+  "Grand Austria Hotel"
+ ],
+ "_fingerprint": "d71ffc7f2a1d3416",
+ "_name": "Troyes"
+}

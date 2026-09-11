@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Targi is a tight, elegant two-player worker-placement game where you and your opponent each place four meeples around a shared 5x5 grid, with placement restrictions forcing you to react to your opponent's choices turn by turn. Most of the tension comes from figuring out which resource/action combo lets you snag the tribe cards you need while denying your opponent theirs.",
+ "praised": [
+  "Extremely tight, elegant design with almost no wasted rules for a two-player-only game",
+  "Clever placement restriction (can't sit on or directly across from an opponent's meeple) creates real tactical tension",
+  "Fast to teach and plays quickly once learned",
+  "High replayability from the shifting mix of tribe cards and market cards each game"
+ ],
+ "criticised": [
+  "Can feel solved or samey after many plays since the board and core actions never change",
+  "Some randomness in which tribe/market cards appear can swing available strategies",
+  "Two-player-only limits table use",
+  "Rulebook/first-play icon overload makes the opening learning curve steeper than the game actually is"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking and area denial via meeple placement"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from a mix of tribe card sets, gold, and end-game bonuses, so the winner is decided by who best converts limited worker placements into the right combination of cards and resources"
+ },
+ "similar": [
+  "Jaipur",
+  "Lost Cities",
+  "Patchwork",
+  "Agricola: All Creatures Big and Small",
+  "Amun-Re"
+ ],
+ "_fingerprint": "a644ae2a512598a2",
+ "_name": "Targi"
+}

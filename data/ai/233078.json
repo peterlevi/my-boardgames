@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "A full evening (or all-day) epic of galactic empire-building where players expand, build fleets, research tech, and politically maneuver across a modular hex map; it's defined by dramatic swings of diplomacy, betrayal, and alliance as much as by combat and economic engines. Games run 4-8+ hours and reward table talk, deal-making, and long-term strategic patience over quick tactical plays.",
+ "praised": [
+  "Unmatched sense of epic scale and narrative arc across a game",
+  "Deep asymmetry between the 17+ factions, each playing very differently",
+  "Rich player interaction through trading, politics, and voting via the Galactic Council",
+  "Satisfying tech trees and strategy-card-driven turn structure",
+  "High table-talk and diplomacy element that creates memorable moments"
+ ],
+ "criticised": [
+  "Enormous time commitment (often 6-8+ hours), hard to schedule and finish",
+  "Steep rules overhead and long setup/teardown",
+  "Runaway leader problems and player elimination risk in longer games",
+  "Can bog down with analysis paralysis, especially with 6 players",
+  "Requires a dedicated, experienced group to run smoothly"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "open conflict, trading and negotiation, political voting"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Victory points come from a mix of public and secret objectives spanning military conquest, economic development, technology, and political influence, so the winner is whoever best balances multiple scoring paths rather than maximizing one."
+ },
+ "similar": [
+  "Eclipse",
+  "Twilight Imperium: Third Edition",
+  "Rex: Final Days of an Empire",
+  "Cosmic Encounter",
+  "Star Wars: Rebellion"
+ ],
+ "_fingerprint": "76fc7895ac7a7606",
+ "_name": "Twilight Imperium: Fourth Edition"
+}

@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Steam is a leaner, friendlier reworking of Age of Steam: you bid for turn order, build track networks, and deliver goods cubes for points or income, but the harsh forced-income-reduction of the original is replaced by an optional loan mechanism. It plays as a tight, cutthroat economic puzzle where efficient route-building and timing your deliveries matter more than raw luck.",
+ "praised": [
+  "More forgiving and accessible than Age of Steam while keeping the same core tension",
+  "Double-sided board and modular map system give strong replayability",
+  "Tight, efficient rules with meaningful decisions every turn",
+  "Satisfying network-building and delivery optimization puzzle"
+ ],
+ "criticised": [
+  "Still very cutthroat and can be brutal for new players who fall behind economically",
+  "Auction/bidding start can feel swingy or unintuitive to newcomers",
+  "High player interaction on the shared map leads to analysis paralysis in some groups",
+  "Some feel it lost a bit of the original Age of Steam's harsher, more strategic bite"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "blocking and area denial over track and delivery routes"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Victory points come almost entirely from successful goods deliveries, with efficient track building and income management as the main lever to maximize them"
+ },
+ "similar": [
+  "Age of Steam",
+  "Railways of the World",
+  "Railroad Tycoon",
+  "Chicago Express",
+  "Irish Gauge"
+ ],
+ "_fingerprint": "c2cd51d6270b6bfb",
+ "_name": "Steam"
+}

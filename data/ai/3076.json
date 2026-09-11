@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Puerto Rico is a tight economic engine-builder where you balance producing goods, shipping them before the boats fill up, and building an efficient production chain with limited colonists. Every role you pick benefits all players, so the real skill is choosing roles that help you more than your opponents.",
+ "praised": [
+  "Deep, elegant economic engine with almost no luck",
+  "Role-selection mechanism where every choice benefits everyone but you get the edge",
+  "High replayability from different building/strategy combinations",
+  "Strong sense of engine optimization and satisfying long-term planning"
+ ],
+ "criticised": [
+  "Can feel solitaire-ish with limited direct interaction beyond shipping and role choice",
+  "Downtime between turns, especially at higher player counts",
+  "Corn/theme is thin and abstract despite the colonial setting",
+  "Colonization theme has drawn criticism as dated/uncomfortable for some players"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "role selection denial and competition for shared shipping space"
+ },
+ "win_criteria": "Most points, one or two sources",
+ "scoring": {
+  "breadth": "Focused",
+  "why": "Victory points come almost entirely from buildings and shipped goods, so the winner is decided by production efficiency and building point value, not diverse scoring categories"
+ },
+ "similar": [
+  "Caylus",
+  "Le Havre",
+  "Race for the Galaxy",
+  "Container",
+  "San Juan"
+ ],
+ "_fingerprint": "1243d86b2e1eed1e",
+ "_name": "Puerto Rico"
+}

@@ -1,32 +1,34 @@
 {
  "confidence": "high",
- "summary": "This deluxe edition of Love Letter is the same beloved 16-card deduction game: players deduce and eliminate opponents by playing character cards with special powers, trying to be the last one holding (or holding the highest) card. Rounds are extremely short and rely heavily on bluffing and reading opponents.",
+ "summary": "A fast, tense bluffing and deduction game where you hold one card at a time and try to deduce what everyone else is holding while avoiding elimination. Rounds last only a few minutes, so it plays as a light palate-cleanser or filler rather than a deep strategic experience.",
  "praised": [
-  "extremely quick and easy to teach",
-  "tense bluffing and deduction",
-  "great portability and production in this edition",
-  "works well as a filler or icebreaker"
+  "Extremely quick setup and round length",
+  "Surprising depth of deduction from a tiny 16-card deck",
+  "Easy to teach to non-gamers",
+  "Great portability and low table footprint",
+  "Tense push-your-luck moments with the Guard and Baron"
  ],
  "criticised": [
-  "luck-heavy, especially in short rounds",
-  "can feel too light for gamer groups",
-  "player elimination within rounds, though rounds are short"
+  "High variance - a single lucky/unlucky draw can decide a round",
+  "Player elimination means early-eliminated players wait for the round to end",
+  "Very light strategic depth for experienced gamers",
+  "Playing at higher player counts (5-6) dilutes information and increases luck"
  ],
  "interaction": {
   "level": "High",
-  "kind": "deduction, bluffing, and direct targeted elimination"
+  "kind": "bluffing, deduction, and direct targeted elimination"
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "winner is whoever accumulates enough favor tokens by surviving rounds, not by point totals"
+  "why": "Favor tokens are won round-by-round by surviving or holding the highest card, and the first to reach the token threshold wins"
  },
  "similar": [
   "Coup",
-  "The Fox in the Forest",
+  "The Resistance",
   "Sheriff of Nottingham",
-  "Skull",
-  "No Thanks!"
+  "No Thanks!",
+  "Skull"
  ],
  "_fingerprint": "3d8e9433d1b7e59d",
  "_name": "Love Letter"

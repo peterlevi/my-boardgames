@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "You spend each round guessing which of two role cards (or seven, at the highest complexity) opponents will pick, since everyone secretly chooses a phase and you benefit only from phases you also chose. It plays fast and silent for a card game, with almost no table talk, as engines of tableau-built worlds and developments snowball into big scoring turns.",
+ "praised": [
+  "Extremely tight, elegant engine-building with dense, meaningful card text",
+  "High replayability from card variety and multiple viable strategies",
+  "Fast turns once players know the icons, giving a lot of depth per minute of playtime",
+  "Strong solo mode and satisfying multiplayer solitaire-with-a-twist puzzle"
+ ],
+ "criticised": [
+  "Steep learning curve and iconography that intimidates new players",
+  "Low direct interaction feels like parallel solitaire to some groups",
+  "Military/conflict subtheme is thin and abstract compared to the economic engine",
+  "Card draw and starting hand can swing outcomes before skill takes over"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with phase-selection bluffing"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Winners combine tableau VP from played cards, chip VP from consuming goods, and end-game bonuses, so efficient engine synergy across several scoring sources decides it"
+ },
+ "similar": [
+  "San Juan",
+  "Roll for the Galaxy",
+  "Innovation",
+  "7 Wonders",
+  "Glory to Rome"
+ ],
+ "_fingerprint": "22f477100d5b099d",
+ "_name": "Race for the Galaxy"
+}

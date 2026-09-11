@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Players collect colored train cards and claim routes across a map of Europe, trying to complete ticket contracts connecting distant cities while blocking opponents on contested routes. The tunnel, ferry, and station mechanics add a bit more texture than the original US version, and the tight, often congested map creates real tension in the endgame.",
+ "praised": [
+  "Easy to teach, plays in under an hour",
+  "Tunnels, ferries, and stations add welcome variety over the original game",
+  "Satisfying push-your-luck tension in deciding when to commit to routes",
+  "Good gateway game that scales well from casual to competitive groups"
+ ],
+ "criticised": [
+  "Luck of the ticket draw can swing outcomes significantly",
+  "Limited player interaction beyond route blocking",
+  "Can feel a bit solitaire-ish until the map gets contested",
+  "Little strategic depth for heavier gamers after repeated plays"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "blocking and area denial over shared routes"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Points come from route length, completed (or failed) ticket contracts, and a longest-route bonus, but ticket completion dominates the outcome"
+ },
+ "similar": [
+  "Ticket to Ride (original US map)",
+  "Ticket to Ride: Nordic Countries",
+  "Camel Up",
+  "Elfenland",
+  "Steam"
+ ],
+ "_fingerprint": "e3fe06c2ce3d800d",
+ "_name": "Ticket to Ride: Europe"
+}

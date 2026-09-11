@@ -1,0 +1,36 @@
+{
+ "confidence": "high",
+ "summary": "Playing Wingspan feels like a calm, puzzly engine-builder where you chain bird powers across three habitat rows to snowball food, eggs, and card draws, then cash in on end-round and end-game bonus cards. Turns are quick and mostly solitaire-ish, with occasional envy when someone else's bird power triggers off your dice roll.",
+ "praised": [
+  "Gorgeous, high-quality bird art and components",
+  "Satisfying engine-building as bird combos click together",
+  "Approachable rules with real depth in play",
+  "Strong solo mode (Automa)",
+  "Broad appeal, including to non-gamers and birders"
+ ],
+ "criticised": [
+  "Low direct interaction, can feel multiplayer solitaire",
+  "Heavy luck of the draw in which bird cards/bonus cards you get",
+  "Bird powers vary widely in strength, leading to snowballing",
+  "End-game/round bonus cards can feel like hidden scoring races",
+  "Expansions add table/box clutter"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with occasional food/tray competition"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from bird card values, eggs, cached food, tucked cards, and bonus/round-goal cards, so the winner is usually whoever best combines several of these sources rather than maxing one."
+ },
+ "similar": [
+  "Everdell",
+  "Terraforming Mars",
+  "Res Arcana",
+  "Fantastic Factories",
+  "Ark Nova"
+ ],
+ "_fingerprint": "3fa7cbdd30ad61ad",
+ "_name": "Wingspan"
+}

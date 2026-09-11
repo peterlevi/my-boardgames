@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "Sidereal Confluence is built almost entirely around a frantic, simultaneous live-trading phase where every player scrambles to strike deals for the exact resource cubes their race's economy needs, followed by a quick simultaneous conversion/scoring phase. It rewards social skill, reading who needs what, and building a self-sufficient engine, more than any kind of tactical board-level play.",
+ "praised": [
+  "Electric, high-energy free-form trading phase unlike almost any other game",
+  "Strong asymmetry between the alien races creates very different strategies each game",
+  "Low downtime for a big-box game since everyone trades at once",
+  "Satisfying engine-building feel as your economy compounds turn to turn"
+ ],
+ "criticised": [
+  "Chaotic and can be overwhelming or intimidating for shy or less assertive players",
+  "Needs a near-full table (ideally 6-8) to sing; feels flat at low counts",
+  "Real-time trading can let louder/more experienced players dominate deals",
+  "Fiddly bookkeeping with lots of cubes, cards, and races to track"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "trading and negotiation"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from a mix of converted resources, technologies researched, and race-specific bonuses, so whoever builds the most efficient trading-fueled economy over the rounds wins."
+ },
+ "similar": [
+  "Cosmic Encounter",
+  "Chinatown",
+  "Bohnanza",
+  "Meadow",
+  "Origins: First Contact"
+ ],
+ "_fingerprint": "9921453ae75f8dfd",
+ "_name": "Sidereal Confluence"
+}

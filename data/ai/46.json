@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Medici is a fast, tense once-around auction game where players bid points (not money) on lots of 1-3 goods cards to fill their ships; over three rounds you're weighing how much a lot is worth against how many bidding turns you have left. It's lighter and quicker than most Knizia auction games, with a satisfying push-your-luck feel to timing your bids and gauging when to let a lot pass to the next player.",
+ "praised": [
+  "Quick, tight auction mechanism that's easy to teach",
+  "Interesting tension since points are the bidding currency, not separate money",
+  "Scales well across player counts",
+  "Short playtime with real decisions each turn",
+  "Classic Knizia elegance and depth from simple rules"
+ ],
+ "criticised": [
+  "Can feel a bit dry or abstract thematically (cards are just commodities)",
+  "Luck of the card reveals can swing outcomes",
+  "Some find the scoring math (majorities plus cargo value) fiddly to track",
+  "Less depth than some other Knizia auction titles like Ra or Modern Art"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "competitive bidding where every point spent denies future bids"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Some",
+  "why": "Winner is decided by round-end majority bonuses in specific commodities plus total cargo value, so a couple of commodity types you focus on drive most of your score"
+ },
+ "similar": [
+  "Ra",
+  "Modern Art",
+  "High Society",
+  "Amun-Re",
+  "Fits (or Medici vs. Strozzi for the 2-player version)"
+ ],
+ "_fingerprint": "dc5cd4a1aa59765f",
+ "_name": "Medici"
+}

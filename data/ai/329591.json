@@ -1,0 +1,35 @@
+{
+ "confidence": "high",
+ "summary": "Ultimate Railroads is a dice-placement/worker-placement engine-builder where you claim increasingly efficient action spaces to lay track, upgrade locomotives, and build factories across four linked mini-boards (Russian, German, American, Asian Railroads). Turns are quick and parallel, but the game is a tight optimization puzzle where the real tension is racing opponents to the best upgrade slots and squeezing maximum synergy out of a handful of engine tracks.",
+ "praised": [
+  "Extremely tight, satisfying engine-building puzzle with meaningful upgrade paths",
+  "Modular design lets you mix and match Russian/German/American/Asian boards for variable difficulty and replayability",
+  "Great value as a compilation of a beloved base game plus all its expansions in one box",
+  "Solid solo mode",
+  "Fast turns despite the depth, low downtime"
+ ],
+ "criticised": [
+  "Very low direct player interaction — mostly a race/multiplayer solitaire feel",
+  "Rulebook and icon-heavy boards have a steep learning curve for new players",
+  "Can feel dry/mechanical, more of a spreadsheet-in-a-box for some players",
+  "So many modules and combinations that the fixed 'best' setups can feel overwhelming or unbalanced without experience"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light blocking over shared action/upgrade spaces"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "final score comes from track length, locomotive/factory levels, engineers, and end-game bonus tiles, so winners are decided by how efficiently they built a multi-track engine rather than any single dominant strategy"
+ },
+ "similar": [
+  "Russian Railroads",
+  "Village",
+  "The Great Zimbabwe",
+  "Automobiles",
+  "Trismegistus: The Ultimate Formula"
+ ],
+ "_fingerprint": "44677e22e71901a3",
+ "_name": "Ultimate Railroads"
+}

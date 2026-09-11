@@ -1,0 +1,34 @@
+{
+ "confidence": "medium",
+ "summary": "Skymines is a mid-heavy economic game where you program a hand of cards to activate one of four asymmetric mining companies, investing in their success and racing to plant outposts and grab helium-3 before your rivals lock you out. The tension comes from never fully controlling any company yourself, so timing your investments around what other players will trigger is the core puzzle.",
+ "praised": [
+  "Clever card-programming/hand-management system that feels fresh compared to typical worker placement",
+  "High replayability since company powers and combinations change every game",
+  "Deep, satisfying player interaction despite no direct conflict, since everyone invests in the same shared companies",
+  "Strong production values and thematic sci-fi mining presentation"
+ ],
+ "criticised": [
+  "Steep rules overhead and fiddly bookkeeping (shares, outposts, research tracks) for a first few plays",
+  "Can suffer from analysis paralysis given the number of viable investment lines",
+  "Some find the ending anticlimactic relative to the mid-game tension",
+  "Theme feels somewhat abstract/pasted-on despite the sci-fi dressing"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "indirect competition through shared company investment and area majority for outposts"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from a mix of company share payouts, outpost area majority, research progress, and helium-3 collection, so the winner is usually whoever balances several of these engines best."
+ },
+ "similar": [
+  "Great Western Trail",
+  "Maracaibo",
+  "The Voyages of Marco Polo",
+  "Underwater Cities",
+  "Teotihuacan: City of Gods"
+ ],
+ "_fingerprint": "84d2e2b4e1104115",
+ "_name": "Skymines"
+}

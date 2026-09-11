@@ -1,0 +1,34 @@
+{
+ "confidence": "high",
+ "summary": "A denser, more restrictive cousin of Agricola and Le Havre where you build out a personal tableau of production buildings on a small hex-based estate, converting raw resources through multi-step chains into high-value goods. The rondel resource system and tight building-placement puzzle create a heavier, more solitaire-feeling optimization game than Rosenberg's other titles, with real tension over land and building slots.",
+ "praised": [
+  "Deep, satisfying production-chain puzzle with many viable strategies (peat/coal vs. grain/livestock economies)",
+  "Rondel mechanism elegantly controls resource availability without upkeep bookkeeping",
+  "High replayability from modular building decks and different starting maps",
+  "Strong sense of building an efficient personal engine"
+ ],
+ "criticised": [
+  "Very heavy rules overhead and long teach for new players",
+  "Multiplayer interaction is minimal, mostly a race for tiles/buildings rather than direct engagement",
+  "Analysis paralysis due to the number of building options and long-term planning required",
+  "Can feel dry or overly mechanical/spreadsheet-like compared to more thematic worker placement games"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "mostly parallel play with light competition for shared buildings and rondel resources"
+ },
+ "win_criteria": "Most points, many sources",
+ "scoring": {
+  "breadth": "Broad",
+  "why": "Points come from a wide mix of buildings constructed, goods produced/converted, and end-game bonuses, rewarding overall economic efficiency rather than any single track"
+ },
+ "similar": [
+  "Le Havre",
+  "Agricola",
+  "Caverna: The Cave Farmers",
+  "A Feast for Odin",
+  "Fields of Arle"
+ ],
+ "_fingerprint": "ee8f0453c3c54705",
+ "_name": "Ora et Labora"
+}

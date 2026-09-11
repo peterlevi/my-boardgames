@@ -466,7 +466,7 @@ def check_balanced(html):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--players", type=int, default=4,
+    ap.add_argument("--players", type=int, default=0,
                     help="player count the page opens on (0 = any)")
     ap.add_argument("--mode", choices=["best", "good", "any"], default="good",
                     help="opening player-count rule")

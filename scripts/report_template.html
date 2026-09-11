@@ -106,7 +106,6 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 .tagbox .tkind.designer { color:var(--warn); }
 .tagbox .tcount { color:var(--muted); font-variant-numeric:tabular-nums;
   text-align:right; }
-.tagbox label.zero { opacity:.45; }
 .tagbox .tot { opacity:.62; font-size:.92em; }
 .tagbox .tdesc { color:var(--muted); overflow:hidden; text-overflow:ellipsis;
   white-space:nowrap; }
@@ -126,7 +125,9 @@ td.designer .more { color:var(--muted); }
   letter-spacing:-.01em; font-variant-numeric:tabular-nums; white-space:nowrap; }
 #desc { font-size:.85rem; color:var(--muted); }
 #outcount { font-size:.85rem; color:var(--accent); }
-.titlebar #reset { font-weight:700; font-size:.86rem; }
+.titlebar #reset { font-weight:700; font-size:.86rem; padding:0;
+  text-decoration:none; align-self:baseline; }
+.titlebar #reset:hover { color:var(--ink); }
 button.link { background:none; border:none; color:var(--accent); cursor:pointer;
   font:inherit; text-decoration:underline; padding:7px 0; align-self:flex-end; }
 details > summary { cursor:pointer; color:var(--accent); font-size:.84rem;
@@ -526,7 +527,7 @@ var tagRows = TAGS.map(function (t, i) {
 });
 var tagEmpty = document.createElement('div');
 tagEmpty.className = 'none';
-tagEmpty.textContent = 'No mechanic or category matches that.';
+tagEmpty.textContent = 'Nothing here narrows the current selection further.';
 tagEmpty.hidden = true;
 tagBox.appendChild(tagEmpty);
 
@@ -553,30 +554,37 @@ function recountTags(visibleIdx) {
     // "X of Y": how many you would see if you ticked this, out of how many
     // exist in the whole collection. A ticked row keeps showing its real
     // current count rather than jumping back to the total.
+    row.dataset.now = counts[k];
     row.querySelector('.tcount').innerHTML =
       counts[k] + ' <span class="tot">of ' + row.dataset.total + '</span>';
-    if (!on && counts[k] === 0) row.classList.add('zero');
-    else row.classList.remove('zero');
   }
+  applyTagVisibility();
 }
 
-function refreshTagList() {
+/** Show a tag when it matches the search AND there is something behind it.
+ *  A tag reading "0 of 2" cannot narrow anything, so listing it is noise. A
+ *  ticked tag always stays, whatever the search or the count, so a choice can
+ *  always be seen and undone. */
+function applyTagVisibility() {
   var q = document.getElementById('tagsearch').value.trim().toLowerCase();
   var shown = 0;
   for (var i = 0; i < tagRows.length; i++) {
-    var t = TAGS[i], on = tagRows[i].firstChild.checked;
-    // A ticked tag stays visible whatever the search says, so you can always
-    // see and undo what you have chosen.
-    var hit = on || !q ||
-      t.n.toLowerCase().indexOf(q) !== -1 || t.d.toLowerCase().indexOf(q) !== -1;
-    tagRows[i].hidden = !hit;
-    tagRows[i].className = on ? 'on' : '';
+    var t = TAGS[i], row = tagRows[i], on = row.firstChild.checked;
+    var matches = !q || t.n.toLowerCase().indexOf(q) !== -1 ||
+                  t.d.toLowerCase().indexOf(q) !== -1;
+    var reachable = row.dataset.now === undefined || +row.dataset.now > 0;
+    var hit = on || (matches && reachable);
+    row.hidden = !hit;
+    row.className = on ? 'on' : '';
     if (hit) shown++;
   }
   tagEmpty.hidden = shown > 0;
   var n = pickedTags().length;
-  document.getElementById('tagpicked').textContent =
-    n ? n + ' selected' : '';
+  document.getElementById('tagpicked').textContent = n ? n + ' selected' : '';
+}
+
+function refreshTagList() {
+  applyTagVisibility();
 }
 
 var F = {

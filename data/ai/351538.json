@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Across four years, each divided into four seasonal phases, players draft actions and place tiles to grow bamboo, tend to their family, and convert the results into happiness points. Turn choices in the action drafting determine what remains available afterward, while tile placement builds out each player's own field layout over the four years.",
  "praised": [],
  "criticised": [],
  "interaction": {
-  "level": "Low",
-  "kind": "",
-  "detail": ""
+  "level": "Medium",
+  "kind": "drafting from a shared pool of actions",
+  "detail": "Because actions are drafted from a shared, limited pool, taking one denies it to other players that round, but the bamboo fields and tiles being placed are otherwise built up on each player's own individual board."
  },
  "win_criteria": "Other",
  "scoring": {
   "breadth": "Some",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "Happiness points earned from tending family and harvesting bamboo over the four years are totaled, and the highest total wins."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "a0950d1c36025330",
- "_name": "Bamboo"
+ "_name": "Bamboo",
+ "source": "description"
 }

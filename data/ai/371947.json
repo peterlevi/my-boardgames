@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Players direct a touring circus, using movement points to travel point-to-point between towns and cities of the 19th-century United States, playing cards from hand to hire artists and stage performances. Locations differ in what they demand and offer: towns are quick, easy stops that provide starting resources to upgrade a troupe's cast, while small cities require more from the player.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "",
-  "detail": ""
+  "kind": "area majority over shared towns and cities",
+  "detail": "Because location control is resolved through area majority/influence, players' chosen stops can put them in direct competition over the same towns and cities, while each player otherwise manages their own hand of cards, troupe, and resources on their own side of the table."
  },
  "win_criteria": "Other",
  "scoring": {
   "breadth": "Some",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "Fame earned from performances, combined with end-game bonuses, determines a player's total, and the most fame at the end of the game wins."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "4f87a05ef6fdcf13",
- "_name": "3 Ring Circus"
+ "_name": "3 Ring Circus",
+ "source": "description"
 }

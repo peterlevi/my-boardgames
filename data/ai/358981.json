@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Two players play cards into three theater rows chosen from the new Intelligence, Diplomacy, and Economics theaters (or mixed with the base game's Air, Land, and Sea, or five theaters in Epic Mode), each card contributing strength or an effect to its theater. Which theaters are combined for a given session changes the specific effects and interactions available during card play conflict resolution.",
  "praised": [],
  "criticised": [],
  "interaction": {
-  "level": "",
-  "kind": "",
-  "detail": ""
+  "level": "High",
+  "kind": "card conflict over shared theater rows",
+  "detail": "Both players play and resolve cards within the same shared theater rows, so a card placed by one side can be affected by cards the other side plays there, leaving little beyond each player's hand that is not shared, contested space."
  },
  "win_criteria": "Other",
  "scoring": {
   "breadth": "",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "A player wins by gaining majority/influence across the chosen theaters through card play and conflict resolution."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "d6fc7f81a467a2f7",
- "_name": "Air, Land, & Sea: Spies, Lies, & Supplies"
+ "_name": "Air, Land, & Sea: Spies, Lies, & Supplies",
+ "source": "description"
 }

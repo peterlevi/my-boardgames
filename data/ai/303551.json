@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "In this two-player civ-lite game, each side plays Athens and the Delian League or Sparta and the Peloponnesian League, securing supply routes to five markets for trade while feeding the population drawn from controlled territories. Players fight to seize territories and siege poleis, or use diplomacy to convince a polis to join their league, using dice rolling and card play to resolve conflicts.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "High",
-  "kind": "",
-  "detail": ""
+  "kind": "Direct area control and conflict",
+  "detail": "Both players contest the same map of territories, poleis, and trade routes, either through combat and sieges or through diplomatic persuasion, so control of shared spaces shifts directly between opponents. Each player also manages their own empire's supply and feeding of population as a separate concern."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "The empire with the greater population and prestige at the end of the game wins, built through territorial control, successful trade with the five markets, and poleis won by conquest or diplomacy."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "ae50d086028eff33",
- "_name": "Polis"
+ "_name": "Polis",
+ "source": "description"
 }

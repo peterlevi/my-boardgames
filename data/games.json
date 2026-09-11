@@ -551,24 +551,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Players direct a touring circus, using movement points to travel point-to-point between towns and cities of the 19th-century United States, playing cards from hand to hire artists and stage performances. Locations differ in what they demand and offer: towns are quick, easy stops that provide starting resources to upgrade a troupe's cast, while small cities require more from the player.",
    "praised": [],
    "criticised": [],
    "interaction": {
     "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "kind": "area majority over shared towns and cities",
+    "detail": "Because location control is resolved through area majority/influence, players' chosen stops can put them in direct competition over the same towns and cities, while each player otherwise manages their own hand of cards, troupe, and resources on their own side of the table."
    },
    "win_criteria": "Other",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "Fame earned from performances, combined with end-game bonuses, determines a player's total, and the most fame at the end of the game wins."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "4f87a05ef6fdcf13",
-   "_name": "3 Ring Circus"
+   "_name": "3 Ring Circus",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -1561,24 +1562,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Two players play cards into three theater rows chosen from the new Intelligence, Diplomacy, and Economics theaters (or mixed with the base game's Air, Land, and Sea, or five theaters in Epic Mode), each card contributing strength or an effect to its theater. Which theaters are combined for a given session changes the specific effects and interactions available during card play conflict resolution.",
    "praised": [],
    "criticised": [],
    "interaction": {
-    "level": "",
-    "kind": "",
-    "detail": ""
+    "level": "High",
+    "kind": "card conflict over shared theater rows",
+    "detail": "Both players play and resolve cards within the same shared theater rows, so a card placed by one side can be affected by cards the other side plays there, leaving little beyond each player's hand that is not shared, contested space."
    },
    "win_criteria": "Other",
    "scoring": {
     "breadth": "",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "A player wins by gaining majority/influence across the chosen theaters through card play and conflict resolution."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "d6fc7f81a467a2f7",
-   "_name": "Air, Land, & Sea: Spies, Lies, & Supplies"
+   "_name": "Air, Land, & Sea: Spies, Lies, & Supplies",
+   "source": "description"
   },
   "plays": 1,
   "my_rating": 7.5
@@ -3256,24 +3258,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Across four years, each divided into four seasonal phases, players draft actions and place tiles to grow bamboo, tend to their family, and convert the results into happiness points. Turn choices in the action drafting determine what remains available afterward, while tile placement builds out each player's own field layout over the four years.",
    "praised": [],
    "criticised": [],
    "interaction": {
-    "level": "Low",
-    "kind": "",
-    "detail": ""
+    "level": "Medium",
+    "kind": "drafting from a shared pool of actions",
+    "detail": "Because actions are drafted from a shared, limited pool, taking one denies it to other players that round, but the bamboo fields and tiles being placed are otherwise built up on each player's own individual board."
    },
    "win_criteria": "Other",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "Happiness points earned from tending family and harvesting bamboo over the four years are totaled, and the highest total wins."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "a0950d1c36025330",
-   "_name": "Bamboo"
+   "_name": "Bamboo",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -3787,24 +3790,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Players act as traders who draft goods and bid at auction to fill their warehouses, then must judge the right moment to transfer a complete, matching combination of goods onto a waiting ship before the fleet departs. Since each ship's captain will only accept a full delivery from a single trader, hand management and set collection of the right goods combination are central to completing a sale.",
    "praised": [],
    "criticised": [],
    "interaction": {
     "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "kind": "bidding and racing for the same ships",
+    "detail": "Because a given ship accepts goods from only one trader and the whole fleet leaves once storage fills or the wind turns favorable, players compete through auctions and drafting over which trader gets to supply which ship, even though each trader's own warehouse and hand of goods are kept separately."
    },
    "win_criteria": "Most money",
    "scoring": {
     "breadth": "",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "A player succeeds by assembling and delivering the exact combination of goods a ship's captain requires before that ship departs, doing so ahead of rival traders competing for the same vessels."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "5b35dc18350debe2",
-   "_name": "Before the Wind"
+   "_name": "Before the Wind",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -7748,24 +7752,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Each player acts as a deity guiding their own civilization, advancing along tech trees and tracks that span both cultural/technological progress and evolutionary adaptations, with dice rolling and drafted options shaping which advances are available on a given turn. Area movement across a modular, variably set-up board and an income mechanic support the civilization's ongoing development.",
    "praised": [],
    "criticised": [],
    "interaction": {
     "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "kind": "drafting shared advances, moving on a shared board",
+    "detail": "Players draft from a shared, open pool of developmental options and move across the same modular board via area movement, while each civilization's own tech tracks, patterns, and income are recorded on that player's individual console."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
     "breadth": "Broad",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "Progress made along tech trees/tracks and pattern building, reflecting a civilization's cultural, technical, and evolutionary development, determines how a player fares relative to the other civilizations."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "2651526626297111",
-   "_name": "Civolution"
+   "_name": "Civolution",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -8914,24 +8919,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Players build factories to produce containers, then set prices and sail those containers across the sea to sell at auction, operating within a closed economy where money circulates only among the players rather than from a bank. Secretly dealt container value cards mean each player privately values certain goods more than others, shaping negotiation and speculation around every sale.",
    "praised": [],
    "criticised": [],
    "interaction": {
-    "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "level": "High",
+    "kind": "closed-economy auctions and negotiation between players",
+    "detail": "Because the economy is closed, every auction, sale, and loan moves money and containers directly from one player to another rather than through a bank, so prices depend heavily on what rivals are willing to pay, even though each player's own factories and production are managed individually."
    },
    "win_criteria": "Most money",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "Players profit by producing, pricing, and selling containers for more than they cost to build and ship, and the player who accumulates the most money ends up ahead."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "b0afa1cbf5e6731b",
-   "_name": "Container"
+   "_name": "Container",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -9616,24 +9622,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "On a turn, a player either produces resources or moves their magnate around a rondel to reach worker-placement spots on a modular, variably set-up board, building up their city while drawing on the surrounding forest and river resources. Once-per-game abilities and a follow mechanic let players react to or piggyback on actions taken by others as the city and its steam-powered contraption progress.",
    "praised": [],
    "criticised": [],
    "interaction": {
     "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "kind": "following others' actions and contesting shared board spots",
+    "detail": "The follow mechanic lets a player react to an opponent's action, and worker-placement spots on the shared modular board can be taken before a rival reaches them, while each player's own city and resources remain on their individual side of play."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
     "breadth": "Broad",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "A player advances by growing their city and contributing to the shared contraption's progress through their magnate's production and movement around the rondel, aiming to outpace the other players' civilizations."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "9b28f2b433823657",
-   "_name": "Daitoshi"
+   "_name": "Daitoshi",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -11093,24 +11100,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Players manage a shipping company, using worker placement to pick up commodities such as tea, spices, coffee, and silk and deliver them between trading posts, while buying and selling on a market whose prices shift with supply and demand. Turn order is set by a stat-based measure, and players can also invest by holding stock in their own company or in a rival's.",
    "praised": [],
    "criticised": [],
    "interaction": {
     "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "kind": "shared market and cross-investment in rivals' companies",
+    "detail": "Because players can buy shares in each other's shipping companies and trade on the same fluctuating market, one player's buying and selling affects prices and holdings for everyone, even though each player's own ships and delivery routes are run separately."
    },
    "win_criteria": "Other",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "A player profits from delivering goods at favorable market prices and from the returns on stock held, including shares in competitors' companies, with the greatest accumulated wealth determining the winner."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "d6270d1911cc35f5",
-   "_name": "East India Companies"
+   "_name": "East India Companies",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -11518,24 +11526,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Each round you draft a biome card from a shared pool to choose which area of your own board to develop, while the cards you leave behind make those regions grow more fertile and valuable for later. You spend the round planting trees, bushes, and lakes on your personal ecosystem grid, trying to cluster trees in the most fertile spots without letting them shade each other out, and chaining nature powers into extra actions.",
    "praised": [],
    "criticised": [],
    "interaction": {
-    "level": "Low",
-    "kind": "",
-    "detail": ""
+    "level": "Medium",
+    "kind": "Shared drafting pool, separate boards",
+    "detail": "Players take turns drafting from a common set of biome cards, so your pick removes an option from everyone else and changes which regions become more fertile for whoever chooses them later. Beyond that shared card pool, each player develops their own separate ecosystem grid independently."
    },
    "win_criteria": "Other",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "The player whose planet ends up greenest and most fertile wins, which comes from concentrating trees in high-fertility regions, maximizing the light each tree collects, and collecting end-game bonuses from bushes and lakes."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "e8c72ebc652bf0c4",
-   "_name": "Evergreen"
+   "_name": "Evergreen",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -12560,24 +12569,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "I don't have reliable first-hand knowledge of how Federation actually plays at the table or how it's specifically received by the community.",
+   "summary": "Over five rounds, players use a double-sided worker placement system to develop strategies, deploy tactics, and pursue alliances as they compete to join a federation of planets. Turns involve placing workers of different types to take actions, with area majority/influence and voting used to determine outcomes on shared spaces.",
    "praised": [],
    "criticised": [],
    "interaction": {
-    "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "level": "High",
+    "kind": "Worker placement contention, voting, alliances",
+    "detail": "Players place workers on shared locations where area majority and influence are contested directly, and voting mechanics mean choices are made collectively rather than in isolation. Alliances and opportunities are formed and broken between players, so much of the game state is shared and fought over rather than kept on separate boards."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "After five rounds, the delegation with the most prestige is the one chosen to join the federation, prestige being built through strategic worker placement, area influence, and alliances formed along the way."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "b443b3aae01341e4",
-   "_name": "Federation"
+   "_name": "Federation",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -12829,24 +12839,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "I don't have confident, specific knowledge of Flotilla's actual gameplay feel or reception beyond its post-apocalyptic nautical theme.",
+   "summary": "Flotilla combines two interwoven modes of play: starting as a 'Sinkside' Fleet Commander, players use action retrieval, dice rolling, and hand management to manage a fleet, moving on a grid to pick up and deliver goods across a modular board built from tiles. Deck, bag, and pool building lets players grow their available actions and resources over the course of the game as they trade in a shared market.",
    "praised": [],
    "criticised": [],
    "interaction": {
     "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "kind": "Shared modular board, pick-up-and-deliver",
+    "detail": "Players move and act on a common modular board built from placed tiles, competing for the same delivery routes, market opportunities, and board space. Each player otherwise manages their own separate pool of actions, cards, and fleet resources."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "Players win by outpacing their opponents in bringing prosperity to the Flotilla, achieved through efficient pick-up-and-delivery runs, market trading, and building up their own action pool over the game."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "08b07b645bbe4e67",
-   "_name": "Flotilla"
+   "_name": "Flotilla",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -13279,19 +13290,19 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Players act as supervisors building ships, satisfying guests, and expanding a shared company network across a modular board, using action points, worker placement, and card play to invent technologies and grow their workforce over three years. Victory points themselves can be spent as a resource, so players must balance banking points for the end against using them to fuel further actions.",
    "praised": [],
    "criticised": [],
    "interaction": {
     "level": "Medium",
-    "kind": "shared worker placement and network building",
-    "detail": "Based on the described mechanics (worker placement with different worker types, a shared market, and a company network), players likely compete for placement spots and connections, but I don't have reliable knowledge of how this specific 2025 release actually plays or was received."
+    "kind": "Shared company network, worker placement",
+    "detail": "Actions taken by one supervisor build out a shared company network that makes other players' jobs easier, so the board's connections are a common resource even as each player runs their own ships and workforce. Worker placement spots and open drafting also put players in direct competition for the same options."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
     "breadth": "Broad",
     "why": "Unknown — I don't have verified information on what actually decides the winner in this specific game.",
-    "how_you_win": "Insufficient reliable knowledge of this game to describe how it's actually won."
+    "how_you_win": "The supervisor with the most success after three years takes over as CEO, built through constructing ships, satisfying guests, expanding the network, researching technologies, and managing victory points as a spendable resource."
    },
    "similar": [],
    "teachers": [
@@ -13299,7 +13310,8 @@
     "Watch It Played"
    ],
    "_fingerprint": "7358aaa10d99011a",
-   "_name": "Galactic Cruise"
+   "_name": "Galactic Cruise",
+   "source": "description"
   },
   "plays": 1,
   "my_rating": null
@@ -21628,24 +21640,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Players lead one of four Minoan clans, using action and open drafting along with dice rolling to take actions, earn income, and move across the map, competing through governance and cultivation of their clan's identity rather than warfare. Area majority/influence determines control as clans jockey for position toward the title of Minos.",
    "praised": [],
    "criticised": [],
    "interaction": {
     "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "kind": "Area influence, shared drafting",
+    "detail": "Clans contest control of shared areas through area majority/influence and draft from common action pools, putting players in direct competition for the same spaces and options. Each clan also develops its own variable powers and identity on a separate part of its board."
    },
    "win_criteria": "Other",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "The clan that best establishes governance, prosperity, and area influence over the other clans is declared Minos, the ultimate leader of the Minoan people."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "00c32e9b852da1f4",
-   "_name": "Minos: Dawn of the Bronze Age"
+   "_name": "Minos: Dawn of the Bronze Age",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null
@@ -23845,24 +23858,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "Players bid against rivals to win landing rights, then use income and investment to buy planes with longer range to expand their air-travel network across four decades of historical events. Routes can be sold to the growing Pan Am company for profit, with that money reinvested into further growth or into Pan Am stock.",
    "praised": [],
    "criticised": [],
    "interaction": {
-    "level": "Medium",
-    "kind": "",
-    "detail": ""
+    "level": "High",
+    "kind": "Competitive bidding, shared route rights",
+    "detail": "Landing rights are won through auction and constrained bidding against other players, so the same limited spaces are directly contested, and turn order is claimed rather than fixed. Stock holding in the shared Pan Am company also ties players' fortunes to a common asset."
    },
    "win_criteria": "Most money",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "Players build value by winning landing rights, expanding their route network, selling routes to Pan Am for profit, and investing in growth and Pan Am stock across the game's four decades."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "93623219284944f7",
-   "_name": "Pan Am"
+   "_name": "Pan Am",
+   "source": "description"
   },
   "plays": 2,
   "my_rating": 7.3
@@ -24259,24 +24273,25 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "",
+   "summary": "In this two-player civ-lite game, each side plays Athens and the Delian League or Sparta and the Peloponnesian League, securing supply routes to five markets for trade while feeding the population drawn from controlled territories. Players fight to seize territories and siege poleis, or use diplomacy to convince a polis to join their league, using dice rolling and card play to resolve conflicts.",
    "praised": [],
    "criticised": [],
    "interaction": {
     "level": "High",
-    "kind": "",
-    "detail": ""
+    "kind": "Direct area control and conflict",
+    "detail": "Both players contest the same map of territories, poleis, and trade routes, either through combat and sieges or through diplomatic persuasion, so control of shared spaces shifts directly between opponents. Each player also manages their own empire's supply and feeding of population as a separate concern."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
     "breadth": "Some",
     "why": "",
-    "how_you_win": ""
+    "how_you_win": "The empire with the greater population and prestige at the end of the game wins, built through territorial control, successful trade with the five markets, and poleis won by conquest or diplomacy."
    },
    "similar": [],
    "teachers": [],
    "_fingerprint": "ae50d086028eff33",
-   "_name": "Polis"
+   "_name": "Polis",
+   "source": "description"
   },
   "plays": 0,
   "my_rating": null

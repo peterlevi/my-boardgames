@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Players bid against rivals to win landing rights, then use income and investment to buy planes with longer range to expand their air-travel network across four decades of historical events. Routes can be sold to the growing Pan Am company for profit, with that money reinvested into further growth or into Pan Am stock.",
  "praised": [],
  "criticised": [],
  "interaction": {
-  "level": "Medium",
-  "kind": "",
-  "detail": ""
+  "level": "High",
+  "kind": "Competitive bidding, shared route rights",
+  "detail": "Landing rights are won through auction and constrained bidding against other players, so the same limited spaces are directly contested, and turn order is claimed rather than fixed. Stock holding in the shared Pan Am company also ties players' fortunes to a common asset."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Some",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "Players build value by winning landing rights, expanding their route network, selling routes to Pan Am for profit, and investing in growth and Pan Am stock across the game's four decades."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "93623219284944f7",
- "_name": "Pan Am"
+ "_name": "Pan Am",
+ "source": "description"
 }

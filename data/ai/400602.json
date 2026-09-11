@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Each player acts as a deity guiding their own civilization, advancing along tech trees and tracks that span both cultural/technological progress and evolutionary adaptations, with dice rolling and drafted options shaping which advances are available on a given turn. Area movement across a modular, variably set-up board and an income mechanic support the civilization's ongoing development.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "",
-  "detail": ""
+  "kind": "drafting shared advances, moving on a shared board",
+  "detail": "Players draft from a shared, open pool of developmental options and move across the same modular board via area movement, while each civilization's own tech tracks, patterns, and income are recorded on that player's individual console."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "Progress made along tech trees/tracks and pattern building, reflecting a civilization's cultural, technical, and evolutionary development, determines how a player fares relative to the other civilizations."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "2651526626297111",
- "_name": "Civolution"
+ "_name": "Civolution",
+ "source": "description"
 }

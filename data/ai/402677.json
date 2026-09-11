@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "On a turn, a player either produces resources or moves their magnate around a rondel to reach worker-placement spots on a modular, variably set-up board, building up their city while drawing on the surrounding forest and river resources. Once-per-game abilities and a follow mechanic let players react to or piggyback on actions taken by others as the city and its steam-powered contraption progress.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "",
-  "detail": ""
+  "kind": "following others' actions and contesting shared board spots",
+  "detail": "The follow mechanic lets a player react to an opponent's action, and worker-placement spots on the shared modular board can be taken before a rival reaches them, while each player's own city and resources remain on their individual side of play."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "A player advances by growing their city and contributing to the shared contraption's progress through their magnate's production and movement around the rondel, aiming to outpace the other players' civilizations."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "9b28f2b433823657",
- "_name": "Daitoshi"
+ "_name": "Daitoshi",
+ "source": "description"
 }

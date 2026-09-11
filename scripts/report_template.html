@@ -126,7 +126,7 @@ td.designer .more { color:var(--muted); }
   letter-spacing:-.01em; font-variant-numeric:tabular-nums; white-space:nowrap; }
 #desc { font-size:.85rem; color:var(--muted); }
 #outcount { font-size:.85rem; color:var(--accent); }
-.resultline #reset { margin-left:auto; font-size:.82rem; }
+.titlebar #reset { font-weight:700; font-size:.86rem; }
 button.link { background:none; border:none; color:var(--accent); cursor:pointer;
   font:inherit; text-decoration:underline; padding:7px 0; align-self:flex-end; }
 details > summary { cursor:pointer; color:var(--accent); font-size:.84rem;
@@ -249,10 +249,7 @@ tr.detail > td { padding:0; border-bottom:1px solid var(--line); }
 #lightbox .cap { color:#f2efe9; font-size:.88rem; max-width:80ch;
   text-align:center; }
 #lightbox .hint { color:#9d978c; font-size:.76rem; }
-ul.learn { list-style:none; padding:0; margin:0 0 8px; font-size:.84rem; }
-ul.learn li { margin-bottom:4px; }
-ul.learn .who { color:var(--muted); font-size:.78rem; }
-p.rules { margin:0 0 12px; font-size:.84rem; }
+.outlinks { display:flex; flex-direction:column; gap:6px; font-size:.86rem; }
 .chip { font-size:.74rem; padding:3px 9px; border-radius:99px; border:0;
   background:var(--chip); color:var(--ink); cursor:pointer; font-family:inherit; }
 .chip:hover { box-shadow:inset 0 0 0 1px var(--accent); }
@@ -359,6 +356,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 <div class="titlebar">
   <h1>Board game collection</h1>
   <span class="sub">__NGAMES__ games · __NEXP__ expansions</span>
+  <button class="link" id="reset" type="button">Reset filters</button>
   <details id="legend"><summary>What the columns mean</summary>
     <p class="sub note"><b>Best at N</b> = N drew more “Best” votes than any
     other count in BGG's player-count poll. <b>Good at N</b> = Best, or ≥50% of
@@ -437,8 +435,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 </div>
 
 <p class="resultline"><span id="count">__SHOWN__ rows</span><span
-  id="desc">__DESC__</span><span id="outcount" hidden></span><button class="link" id="reset"
-  type="button">Reset filters</button></p>
+  id="desc">__DESC__</span><span id="outcount" hidden></span></p>
 
 <div class="scroll">
 <table>
@@ -984,33 +981,6 @@ function mediaBlock(g) {
   }).join('') + '</div>';
 }
 
-function learnBlock(g) {
-  var out = [];
-  (g.vid || []).slice(0, 3).forEach(function (v) {
-    out.push('<li><a href="' + esc(v.link) + '" target="_blank" ' +
-      'rel="noopener">' + esc(v.title) + '</a> <span class="who">' +
-      esc(v.who || '') + (v.lang && v.lang !== 'English'
-        ? ' · ' + esc(v.lang) : '') + '</span></li>');
-  });
-  // No fabricated video URLs: a named channel becomes a YouTube *search*,
-  // which is always a valid link even when the exact video is unknown.
-  var ai = g.ai || {};
-  (ai.teach || []).slice(0, 3).forEach(function (ch) {
-    var q = encodeURIComponent(ch + ' ' + g.n + ' how to play');
-    out.push('<li><a href="https://www.youtube.com/results?search_query=' + q +
-      '" target="_blank" rel="noopener">Search ' + esc(ch) + '</a> ' +
-      '<span class="who">suggested channel</span></li>');
-  });
-  if (!out.length) {
-    var q2 = encodeURIComponent(g.n + ' how to play');
-    out.push('<li><a href="https://www.youtube.com/results?search_query=' + q2 +
-      '" target="_blank" rel="noopener">Search YouTube</a></li>');
-  }
-  return '<h4>How to play</h4><ul class="learn">' + out.join('') + '</ul>' +
-    '<p class="rules"><a href="https://boardgamegeek.com/boardgame/' + g.id +
-    '/files" target="_blank" rel="noopener">Rules &amp; files on BGG →</a></p>';
-}
-
 function buildDetail(g) {
   function chips(idxs, cls) {
     if (!idxs.length) return '';
@@ -1062,9 +1032,14 @@ function buildDetail(g) {
       rows.map(function (r) {
         return '<dt>' + r[0] + '</dt><dd>' + r[1] + '</dd>';
       }).join('') +
-    '</dl>' + learnBlock(g) + pollMatrix(g) +
+    '</dl>' + pollMatrix(g) +
+    '<div class="outlinks">' +
     '<a class="game" href="https://boardgamegeek.com/boardgame/' + g.id +
-    '" target="_blank" rel="noopener">Open on BGG →</a></div>' +
+    '" target="_blank" rel="noopener">Open on BGG →</a>' +
+    '<a class="game" href="https://www.google.com/search?tbm=vid&q=' +
+    encodeURIComponent(g.n + ' how to play board game') +
+    '" target="_blank" rel="noopener">How to play video →</a>' +
+    '</div></div>' +
     '</div>';
 }
 
@@ -1080,7 +1055,8 @@ var OWNED = (function () {
  *  low-confidence entries render nothing at all rather than a guess. */
 function opinionBlock(g) {
   var ai = g.ai;
-  if (!ai || ai.cf === 'low' || !ai.sm) return '';
+  if (!ai || !ai.sm) return '';
+  var fromDesc = ai.src === 'description';
   function list(items, cls) {
     return '<ul class="' + cls + '">' + items.map(function (t) {
       return '<li>' + esc(t) + '</li>';
@@ -1093,8 +1069,10 @@ function opinionBlock(g) {
       : '<button type="button" class="chip owned" data-game="' + i +
         '" title="You own this — open it">' + esc(n) + '</button>';
   }).join('');
-  return '<h4>What people say' +
-    (ai.cf === 'medium' ? ' <em>(lower confidence)</em>' : '') + '</h4>' +
+  return '<h4>' + (fromDesc ? 'How it plays <em>(from the BGG description — ' +
+      'too little is known about this one to report what players think)</em>'
+      : 'What people say' +
+        (ai.cf === 'medium' ? ' <em>(lower confidence)</em>' : '')) + '</h4>' +
     '<p>' + esc(ai.sm) + '</p>' +
     (ai.up && ai.up.length ? '<h4>Liked</h4>' + list(ai.up, 'up') : '') +
     (ai.dn && ai.dn.length ? '<h4>Criticised</h4>' + list(ai.dn, 'dn') : '') +
@@ -1229,7 +1207,12 @@ tagBox.addEventListener('change', function () { refreshTagList(); render(); });
 document.getElementById('tagsearch')
   .addEventListener('input', refreshTagList);
 el('reset').addEventListener('click', function () {
-  applyDefaults(); syncSelects(); render();
+  applyDefaults();
+  // A reset clears the player-count rule too, rather than returning to the
+  // count the page happened to open on.
+  F.players.value = '0';
+  syncSelects();
+  render();
 });
 
 // The result line is the only sticky thing above the table, so the header's

@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "I don't have confident, specific knowledge of Flotilla's actual gameplay feel or reception beyond its post-apocalyptic nautical theme.",
+ "summary": "Flotilla combines two interwoven modes of play: starting as a 'Sinkside' Fleet Commander, players use action retrieval, dice rolling, and hand management to manage a fleet, moving on a grid to pick up and deliver goods across a modular board built from tiles. Deck, bag, and pool building lets players grow their available actions and resources over the course of the game as they trade in a shared market.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "",
-  "detail": ""
+  "kind": "Shared modular board, pick-up-and-deliver",
+  "detail": "Players move and act on a common modular board built from placed tiles, competing for the same delivery routes, market opportunities, and board space. Each player otherwise manages their own separate pool of actions, cards, and fleet resources."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "Players win by outpacing their opponents in bringing prosperity to the Flotilla, achieved through efficient pick-up-and-delivery runs, market trading, and building up their own action pool over the game."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "08b07b645bbe4e67",
- "_name": "Flotilla"
+ "_name": "Flotilla",
+ "source": "description"
 }

@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Players manage a shipping company, using worker placement to pick up commodities such as tea, spices, coffee, and silk and deliver them between trading posts, while buying and selling on a market whose prices shift with supply and demand. Turn order is set by a stat-based measure, and players can also invest by holding stock in their own company or in a rival's.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "",
-  "detail": ""
+  "kind": "shared market and cross-investment in rivals' companies",
+  "detail": "Because players can buy shares in each other's shipping companies and trade on the same fluctuating market, one player's buying and selling affects prices and holdings for everyone, even though each player's own ships and delivery routes are run separately."
  },
  "win_criteria": "Other",
  "scoring": {
   "breadth": "Some",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "A player profits from delivering goods at favorable market prices and from the returns on stock held, including shares in competitors' companies, with the greatest accumulated wealth determining the winner."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "d6270d1911cc35f5",
- "_name": "East India Companies"
+ "_name": "East India Companies",
+ "source": "description"
 }

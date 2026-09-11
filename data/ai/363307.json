@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Each round you draft a biome card from a shared pool to choose which area of your own board to develop, while the cards you leave behind make those regions grow more fertile and valuable for later. You spend the round planting trees, bushes, and lakes on your personal ecosystem grid, trying to cluster trees in the most fertile spots without letting them shade each other out, and chaining nature powers into extra actions.",
  "praised": [],
  "criticised": [],
  "interaction": {
-  "level": "Low",
-  "kind": "",
-  "detail": ""
+  "level": "Medium",
+  "kind": "Shared drafting pool, separate boards",
+  "detail": "Players take turns drafting from a common set of biome cards, so your pick removes an option from everyone else and changes which regions become more fertile for whoever chooses them later. Beyond that shared card pool, each player develops their own separate ecosystem grid independently."
  },
  "win_criteria": "Other",
  "scoring": {
   "breadth": "Some",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "The player whose planet ends up greenest and most fertile wins, which comes from concentrating trees in high-fertility regions, maximizing the light each tree collects, and collecting end-game bonuses from bushes and lakes."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "e8c72ebc652bf0c4",
- "_name": "Evergreen"
+ "_name": "Evergreen",
+ "source": "description"
 }

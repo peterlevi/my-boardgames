@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Players build factories to produce containers, then set prices and sail those containers across the sea to sell at auction, operating within a closed economy where money circulates only among the players rather than from a bank. Secretly dealt container value cards mean each player privately values certain goods more than others, shaping negotiation and speculation around every sale.",
  "praised": [],
  "criticised": [],
  "interaction": {
-  "level": "Medium",
-  "kind": "",
-  "detail": ""
+  "level": "High",
+  "kind": "closed-economy auctions and negotiation between players",
+  "detail": "Because the economy is closed, every auction, sale, and loan moves money and containers directly from one player to another rather than through a bank, so prices depend heavily on what rivals are willing to pay, even though each player's own factories and production are managed individually."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Some",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "Players profit by producing, pricing, and selling containers for more than they cost to build and ship, and the player who accumulates the most money ends up ahead."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "b0afa1cbf5e6731b",
- "_name": "Container"
+ "_name": "Container",
+ "source": "description"
 }

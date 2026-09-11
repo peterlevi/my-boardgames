@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "I don't have reliable first-hand knowledge of how Federation actually plays at the table or how it's specifically received by the community.",
+ "summary": "Over five rounds, players use a double-sided worker placement system to develop strategies, deploy tactics, and pursue alliances as they compete to join a federation of planets. Turns involve placing workers of different types to take actions, with area majority/influence and voting used to determine outcomes on shared spaces.",
  "praised": [],
  "criticised": [],
  "interaction": {
-  "level": "Medium",
-  "kind": "",
-  "detail": ""
+  "level": "High",
+  "kind": "Worker placement contention, voting, alliances",
+  "detail": "Players place workers on shared locations where area majority and influence are contested directly, and voting mechanics mean choices are made collectively rather than in isolation. Alliances and opportunities are formed and broken between players, so much of the game state is shared and fought over rather than kept on separate boards."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "After five rounds, the delegation with the most prestige is the one chosen to join the federation, prestige being built through strategic worker placement, area influence, and alliances formed along the way."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "b443b3aae01341e4",
- "_name": "Federation"
+ "_name": "Federation",
+ "source": "description"
 }

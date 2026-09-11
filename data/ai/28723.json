@@ -1,21 +1,22 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Players act as traders who draft goods and bid at auction to fill their warehouses, then must judge the right moment to transfer a complete, matching combination of goods onto a waiting ship before the fleet departs. Since each ship's captain will only accept a full delivery from a single trader, hand management and set collection of the right goods combination are central to completing a sale.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "",
-  "detail": ""
+  "kind": "bidding and racing for the same ships",
+  "detail": "Because a given ship accepts goods from only one trader and the whole fleet leaves once storage fills or the wind turns favorable, players compete through auctions and drafting over which trader gets to supply which ship, even though each trader's own warehouse and hand of goods are kept separately."
  },
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "",
   "why": "",
-  "how_you_win": ""
+  "how_you_win": "A player succeeds by assembling and delivering the exact combination of goods a ship's captain requires before that ship departs, doing so ahead of rival traders competing for the same vessels."
  },
  "similar": [],
  "teachers": [],
  "_fingerprint": "5b35dc18350debe2",
- "_name": "Before the Wind"
+ "_name": "Before the Wind",
+ "source": "description"
 }

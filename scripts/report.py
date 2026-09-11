@@ -241,7 +241,8 @@ def trim_ai(ai):
            "ixd": (ai.get("interaction") or {}).get("detail"),
            "howwin": (ai.get("scoring") or {}).get("how_you_win"),
            "teach": ai.get("teachers") or []}
-    if conf != "low":
+    out["src"] = ai.get("source")
+    if conf != "low" or ai.get("source") == "description":
         out["sm"] = ai.get("summary")
         out["up"] = ai.get("praised") or []
         out["dn"] = ai.get("criticised") or []

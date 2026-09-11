@@ -1,18 +1,18 @@
 {
  "confidence": "low",
- "summary": "",
+ "summary": "Players act as supervisors building ships, satisfying guests, and expanding a shared company network across a modular board, using action points, worker placement, and card play to invent technologies and grow their workforce over three years. Victory points themselves can be spent as a resource, so players must balance banking points for the end against using them to fuel further actions.",
  "praised": [],
  "criticised": [],
  "interaction": {
   "level": "Medium",
-  "kind": "shared worker placement and network building",
-  "detail": "Based on the described mechanics (worker placement with different worker types, a shared market, and a company network), players likely compete for placement spots and connections, but I don't have reliable knowledge of how this specific 2025 release actually plays or was received."
+  "kind": "Shared company network, worker placement",
+  "detail": "Actions taken by one supervisor build out a shared company network that makes other players' jobs easier, so the board's connections are a common resource even as each player runs their own ships and workforce. Worker placement spots and open drafting also put players in direct competition for the same options."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
   "why": "Unknown — I don't have verified information on what actually decides the winner in this specific game.",
-  "how_you_win": "Insufficient reliable knowledge of this game to describe how it's actually won."
+  "how_you_win": "The supervisor with the most success after three years takes over as CEO, built through constructing ships, satisfying guests, expanding the network, researching technologies, and managing victory points as a spendable resource."
  },
  "similar": [],
  "teachers": [
@@ -20,5 +20,6 @@
   "Watch It Played"
  ],
  "_fingerprint": "7358aaa10d99011a",
- "_name": "Galactic Cruise"
+ "_name": "Galactic Cruise",
+ "source": "description"
 }

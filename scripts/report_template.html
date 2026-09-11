@@ -635,13 +635,12 @@ function partition() {
 function describe() {
   var n = +F.players.value, mode = F.mode.value;
   var expMode = F.exp.value;
-  var noun = expMode === 'show' ? 'games and expansions' : 'games';
-  var head;
-  if (!n) head = 'All ' + noun;
-  else if (mode === 'best') head = 'Games best at ' + n + 'p';
-  else if (mode === 'good') head = 'Games good at ' + n + 'p';
-  else head = 'Games that play at ' + n + 'p';
-  if (!n && expMode !== 'show') head = 'All games';
+  var head = null;
+  if (n) {
+    head = mode === 'best' ? 'Games best at ' + n + 'p'
+         : mode === 'good' ? 'Games good at ' + n + 'p'
+         : 'Games that play at ' + n + 'p';
+  }
 
   var extra = [];
   if (F.ix.value) extra.push(F.ix.value.toLowerCase() + ' interaction');
@@ -669,7 +668,14 @@ function describe() {
   pair('tmin', 'tmax', 'time', ' min');
   pair('plmin', 'plmax', 'plays');
   if (expMode === 'drop') extra.push('expansions ignored');
-  return head + (extra.length ? ', ' + extra.join(', ') : '');
+  // With a filter applied, "All games, X" is noise — the filter is the subject.
+  if (head) return head + (extra.length ? ', ' + extra.join(', ') : '');
+  if (!extra.length) {
+    return expMode === 'show' ? 'All games and expansions' : 'All games';
+  }
+  if (expMode === 'show') extra.push('including expansions');
+  var t = extra.join(', ');
+  return t.charAt(0).toUpperCase() + t.slice(1);
 }
 
 var sortKey = 'rk', sortDesc = false;

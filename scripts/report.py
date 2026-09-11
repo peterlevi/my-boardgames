@@ -308,15 +308,11 @@ def passes_static(g, s, a, mode):
 def describe(a):
     """Mirror of describe() in the page script: a short statement of what the
     table is showing, for the first paint and for viewers without JavaScript."""
-    noun = "games and expansions" if a.expansions == "show" else "games"
-    if not a.players:
-        head = f"All {noun}"
-    elif a.mode == "best":
-        head = f"Games best at {a.players}p"
-    elif a.mode == "good":
-        head = f"Games good at {a.players}p"
-    else:
-        head = f"Games that play at {a.players}p"
+    head = None
+    if a.players:
+        head = {"best": f"Games best at {a.players}p",
+                "good": f"Games good at {a.players}p"}.get(
+                    a.mode, f"Games that play at {a.players}p")
 
     extra = []
     if a.win != "any":
@@ -325,7 +321,16 @@ def describe(a):
         extra.append(a.breadth.lower() + " scoring")
     if a.expansions == "drop":
         extra.append("expansions ignored")
-    return head + (", " + ", ".join(extra) if extra else "")
+    # With a filter applied, "All games, X" is noise — the filter is the subject.
+    if head:
+        return head + (", " + ", ".join(extra) if extra else "")
+    if not extra:
+        return ("All games and expansions" if a.expansions == "show"
+                else "All games")
+    if a.expansions == "show":
+        extra.append("including expansions")
+    text = ", ".join(extra)
+    return text[0].upper() + text[1:]
 
 
 def rows_html(data, a):

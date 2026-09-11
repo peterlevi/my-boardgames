@@ -8,12 +8,11 @@ description: Answer questions about the user's BoardGameGeek collection — whic
 A cached copy of the user's owned games and expansions, with query and report
 scripts. Everything except `fetch.py` is offline and instant.
 
-**Location:** `~/hs/bgg-collection-data`
+**Location:** this repository (`~/hs/bgg-collection-data` locally)
 
 ## Answer questions with `query.py` — do not re-fetch
 
 ```bash
-cd ~/hs/bgg-collection-data
 python3 scripts/query.py --players 4 --exclude-file point-salads.txt --format md
 ```
 

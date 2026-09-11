@@ -1,0 +1,3 @@
+# Only the thumbnail cache needs a third-party package; fetching, building and
+# rendering the report are standard library plus curl.
+Pillow>=10.0

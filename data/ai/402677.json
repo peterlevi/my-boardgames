@@ -1,22 +1,44 @@
 {
- "confidence": "low",
- "summary": "On a turn, a player either produces resources or moves their magnate around a rondel to reach worker-placement spots on a modular, variably set-up board, building up their city while drawing on the surrounding forest and river resources. Once-per-game abilities and a follow mechanic let players react to or piggyback on actions taken by others as the city and its steam-powered contraption progress.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Daitoshi is a heavy worker-placement/rondel game where you build up a steam-powered city, developing districts and inventions while racing against the clock of dwindling wilderness resources. Turns feel tight and combo-driven, and the game rewards long-term engine building over 2+ hours, with a notably harsh sarcastic-imperialism theme about paving over nature.",
+ "praised": [
+  "High production quality and thematic art/graphic design of the tiles and boards",
+  "Satisfying, combo-heavy engine building with a tight, interesting resource economy",
+  "\"Mutual benefit\" production triggers that give everyone a little something, keeping the whole table engaged",
+  "Strong variability in setup/modular board across plays"
+ ],
+ "criticised": [
+  "Steep learning curve: dense ~30-page rulebook and long teach time relative to a 2-hour game",
+  "Cluttered graphic design — costs, action spaces, and scoring tracks are unclear for the first several rounds",
+  "\"Four tracks too many\" — described as point-salad scoring that can feel like busywork",
+  "Solo mode feels like a chore, and 4-player games can overstay their welcome / run long"
+ ],
  "interaction": {
   "level": "Medium",
-  "kind": "following others' actions and contesting shared board spots",
-  "detail": "The follow mechanic lets a player react to an opponent's action, and worker-placement spots on the shared modular board can be taken before a rival reaches them, while each player's own city and resources remain on their individual side of play."
+  "kind": "Shared triggers, indirect blocking",
+  "detail": "Each player runs their own city/board, but triggering a Production phase hands every player a bonus based on their own invention tracks, so opponents' actions constantly \"drip\" benefits to you. Expanding districts and using shared worker-placement/rondel spaces also opens or closes opportunities for others, so interaction is mostly indirect rather than direct confrontation."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "",
-  "how_you_win": "A player advances by growing their city and contributing to the shared contraption's progress through their magnate's production and movement around the rondel, aiming to outpace the other players' civilizations."
+  "breadth": "Salad",
+  "why": "Reviewers explicitly describe it as point-salad, with scoring spread across four Wilderness tracks, invention advancement, and continuous point accumulation through the game",
+  "how_you_win": "Highest total score at game end wins; final scores typically land in the low 100s to mid 200s, tallied from multiple tracks and end-game bonuses."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Bitoku",
+  "Ark Nova",
+  "Anachrony",
+  "Underwater Cities",
+  "Barrage"
+ ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/daitoshi/",
+  "https://boardgamegeek.com/thread/3430670/daitoshi-ravaging-bitoku-a-board-game-views-review",
+  "https://boardgamegeek.com/thread/3451372/daitoshi-a-solo-review-by-stidjen-plays-solo",
+  "https://devirgames.com/master-the-power-of-steam-in-daitoshi",
+  "https://devirgames.com/the-kemushi-saga-a-magical-world-for-devir-board-games"
+ ],
+ "source": "web",
  "_fingerprint": "9b28f2b433823657",
- "_name": "Daitoshi",
- "source": "description"
+ "_name": "Daitoshi"
 }

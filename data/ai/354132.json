@@ -1,22 +1,43 @@
 {
- "confidence": "low",
- "summary": "Players manage a shipping company, using worker placement to pick up commodities such as tea, spices, coffee, and silk and deliver them between trading posts, while buying and selling on a market whose prices shift with supply and demand. Turn order is set by a stat-based measure, and players can also invest by holding stock in their own company or in a rival's.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "East India Companies is a mid-weight economic game where players race ships to trading regions, sell goods for profit, and grow their fortune partly by investing in shares of their own or rivals' companies. It plays as an accessible on-ramp to heavier stock/pick-up-and-deliver games, with tension coming from speed to market and fluctuating prices rather than direct conflict.",
+ "praised": [
+  "Accessible, clean rules make it a good \"gateway\" to heavier economic/18XX-style games",
+  "Loading/Selling loop with shifting profit margins stays engaging and \"fresh\" across multiple plays",
+  "Pick-up-and-deliver ship placement creates real tension and drama around who gets to a region first",
+  "Clever mix of stock investment and buy/sell tactics rewards reading the market"
+ ],
+ "criticised": [
+  "Thematically odd that buying shares in a rival's company pays no money to that player",
+  "Only one language's player aid included, and new players often misjudge early stock investments before they understand the economy",
+  "Some players find rounds start to feel repetitive/samey over a full game",
+  "Best experienced at higher player counts (4) — with fewer players the market tension and competition soften noticeably",
+  "Some forum discussion criticizes the colonial-trade theme as glossing over real-world exploitation"
+ ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared market and cross-investment in rivals' companies",
-  "detail": "Because players can buy shares in each other's shipping companies and trade on the same fluctuating market, one player's buying and selling affects prices and holdings for everyone, even though each player's own ships and delivery routes are run separately."
+  "kind": "Market racing and shared stock",
+  "detail": "Players share regional markets where the fastest ship to arrive gets first pick of available goods, so speed and timing directly affect what's left for others. Players can also buy shares in each other's companies, tying part of everyone's fortune to rivals' fluctuating success, though each player still manages their own ships, cash, and holdings on a mostly individual board."
  },
- "win_criteria": "Other",
+ "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "A player profits from delivering goods at favorable market prices and from the returns on stock held, including shares in competitors' companies, with the greatest accumulated wealth determining the winner."
+  "breadth": "Focused",
+  "why": "Final score is just cash on hand plus the current value of held shares — no separate tracks or bonus categories",
+  "how_you_win": "The richest player at game end wins, with typical final totals around 125–175 points/money combined from cash and share value."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Le Havre",
+  "Navegador",
+  "Imperial Steam",
+  "John Company",
+  "Merchant of Venus"
+ ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/east-india-companies/",
+  "https://boardgamegeek.com/thread/3689770/how-well-can-you-manage-an-east-india-company",
+  "https://boardgamegeek.com/boardgame/354132/east-india-companies"
+ ],
+ "source": "web",
  "_fingerprint": "d6270d1911cc35f5",
- "_name": "East India Companies",
- "source": "description"
+ "_name": "East India Companies"
 }

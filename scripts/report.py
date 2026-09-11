@@ -247,6 +247,7 @@ def trim_ai(ai):
         out["up"] = ai.get("praised") or []
         out["dn"] = ai.get("criticised") or []
         out["sim"] = ai.get("similar") or []
+        out["srcs"] = (ai.get("sources") or [])[:4]
     return out
 
 

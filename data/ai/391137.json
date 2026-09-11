@@ -1,25 +1,43 @@
 {
- "confidence": "low",
- "summary": "Players act as supervisors building ships, satisfying guests, and expanding a shared company network across a modular board, using action points, worker placement, and card play to invent technologies and grow their workforce over three years. Victory points themselves can be spent as a resource, so players must balance banking points for the end against using them to fuel further actions.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Galactic Cruise is a big, visually striking worker-placement/engine game about running a space cruise line across three eras, with a worker-bumping system that keeps spots from being permanently locked out. Reviewers are split: some find it a satisfying, generous Euro with great production, while at least one detailed review felt turns become a repetitive checklist with little real strategic tension and no true engine progression since your economy resets after each ship launch.",
+ "praised": [
+  "Exceptional production and art direction (retro-futuristic, Jetsons-meets-2001 aesthetic) by Ian O'Toole",
+  "Best-in-class player aids and iconography for a game of this complexity",
+  "Worker-bumping mechanic solves the old worker-placement 'locked out' problem — bumped players get compensation",
+  "Broad, varied point sources typical of big Euros, appealing to genre fans"
+ ],
+ "criticised": [
+  "Some found gameplay formulaic — 'going through the motions' rather than making meaningful choices",
+  "Player economy resets after launching each ship, giving little sense of progression or payoff",
+  "Iconography can be confusing in places, particularly the 'day in space' section of the player board",
+  "Physically huge box/footprint, even bigger than typical Lacerda-scale games, adds setup burden",
+  "Some reviewers feel it overpromises and underdelivers relative to its scale and ambition"
+ ],
  "interaction": {
   "level": "Medium",
-  "kind": "Shared company network, worker placement",
-  "detail": "Actions taken by one supervisor build out a shared company network that makes other players' jobs easier, so the board's connections are a common resource even as each player runs their own ships and workforce. Worker placement spots and open drafting also put players in direct competition for the same options."
+  "kind": "Worker-placement bumping on a shared board",
+  "detail": "Players compete for the same central worker-placement spots but can bump an occupying opponent's worker off, with the bumped player receiving income as compensation rather than being fully blocked. Most of the actual building — ships, technologies, company network — happens on individual player boards, so shared state is limited mainly to the contested placement spots and market/track positions."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Unknown — I don't have verified information on what actually decides the winner in this specific game.",
-  "how_you_win": "The supervisor with the most success after three years takes over as CEO, built through constructing ships, satisfying guests, expanding the network, researching technologies, and managing victory points as a spendable resource."
+  "why": "Victory points accrue from several separate systems (ship building, guest satisfaction, technology, network growth) as is typical for a big Euro",
+  "how_you_win": "Tally points from multiple sources across the three eras — the highest total becomes the new company CEO."
  },
- "similar": [],
- "teachers": [
-  "Rahdo Runs Through",
-  "Watch It Played"
+ "similar": [
+  "Anachrony",
+  "Barrage",
+  "On Mars",
+  "Great Western Trail",
+  "Lisboa"
  ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/galactic-cruise/",
+  "https://boardgamegeek.com/boardgame/391137/galactic-cruise",
+  "https://boardgamegeek.com/thread/3619185/galactic-cruise-a-solo-and-multiplayer-review"
+ ],
+ "source": "web",
  "_fingerprint": "7358aaa10d99011a",
- "_name": "Galactic Cruise",
- "source": "description"
+ "_name": "Galactic Cruise"
 }

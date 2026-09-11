@@ -1,22 +1,42 @@
 {
- "confidence": "low",
- "summary": "Each round you draft a biome card from a shared pool to choose which area of your own board to develop, while the cards you leave behind make those regions grow more fertile and valuable for later. You spend the round planting trees, bushes, and lakes on your personal ecosystem grid, trying to cluster trees in the most fertile spots without letting them shade each other out, and chaining nature powers into extra actions.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Each round players draft a biome card that dictates where they can act, then place sprouts, trees, bushes, and lakes on their own board while managing sunlight, shadow, and forest clustering. It runs a brisk 14 turns over 4 rounds and is widely seen as a calmer, more solitaire-ish take on Photosynthesis's tree-growing puzzle.",
+ "praised": [
+  "Beautiful dual-layer boards and artwork",
+  "A genuinely tense spatial puzzle balancing light exposure against clustering for forest bonuses",
+  "Meaningful drafting decisions, since cards left behind boost a shared Fertility zone",
+  "Quick pacing (roughly 30-45 minutes) once players know the game"
+ ],
+ "criticised": [
+  "Frequently called pleasant but unmemorable — 'completely unobjectionable' with players leaving saying only 'yeah, it was good'",
+  "Fiddly small wooden pieces",
+  "Limited replayability/strategic variability",
+  "Feels even more solitaire-like than its inspiration, Photosynthesis"
+ ],
  "interaction": {
-  "level": "Medium",
-  "kind": "Shared drafting pool, separate boards",
-  "detail": "Players take turns drafting from a common set of biome cards, so your pick removes an option from everyone else and changes which regions become more fertile for whoever chooses them later. Beyond that shared card pool, each player develops their own separate ecosystem grid independently."
+  "level": "Low",
+  "kind": "Shared drafting pool, private boards",
+  "detail": "Each player develops an entirely separate personal board with no spatial competition, unlike Photosynthesis's single shared board. The main touchpoint is drafting biome cards from a shared pool, where players weigh what they take against what they leave behind, since unchosen cards boost the shared Fertility zone."
  },
- "win_criteria": "Other",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "The player whose planet ends up greenest and most fertile wins, which comes from concentrating trees in high-fertility regions, maximizing the light each tree collects, and collecting end-game bonuses from bushes and lakes."
+  "breadth": "Salad",
+  "why": "One review explicitly calls it salad scoring, with points from seasonal sunlight exposure, largest contiguous forest bonuses, and endgame fertility-biome scoring as largely independent tracks",
+  "how_you_win": "Accumulate the highest total across sunlight, forest-size, and fertility bonuses by the end of round 4, with scores commonly landing in the 80-200 range."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Photosynthesis",
+  "Tang Garden"
+ ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/evergreen/",
+  "https://opinionatedgamers.com/2022/09/19/dale-yu-review-of-evergreen/",
+  "https://www.thestartplayer.com/review-evergreen/",
+  "https://www.geeksundergrace.com/tabletop/review-evergreen/",
+  "https://www.meepleuniversity.com/2022/10/07/evergreen-is-it-like-photosynthesis/",
+  "boardgamegeek.com/boardgame/363307/evergreen (search snippet only, 403 on direct fetch)"
+ ],
+ "source": "web",
  "_fingerprint": "e8c72ebc652bf0c4",
- "_name": "Evergreen",
- "source": "description"
+ "_name": "Evergreen"
 }

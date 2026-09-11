@@ -1,22 +1,39 @@
 {
- "confidence": "low",
- "summary": "Two players play cards into three theater rows chosen from the new Intelligence, Diplomacy, and Economics theaters (or mixed with the base game's Air, Land, and Sea, or five theaters in Epic Mode), each card contributing strength or an effect to its theater. Which theaters are combined for a given session changes the specific effects and interactions available during card play conflict resolution.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Spies, Lies & Supplies is a standalone 18-card expansion for Air, Land & Sea, swapping in Intelligence, Diplomacy, and Economics theaters for a fast, tight two-player bluffing duel over three simultaneous mini-battles. Reviewers say it keeps the same elegant push-and-pull tension as the original but shifts the flavor toward information warfare and hidden-info plays rather than raw power swings.",
+ "praised": [
+  "High variety from just 18 new cards, with abilities that add flavor without new rules overhead",
+  "Espionage/information theme gives real counterplay — reading and predicting opponent's hand",
+  "Mixes cleanly with the base game or other expansions for more theater combinations"
+ ],
+ "criticised": [
+  "New cards feel less punchy/decisive than the original Air, Land & Sea deck",
+  "Many cards carry sacrificial costs, which some found less satisfying than direct aggression",
+  "Adds little necessity for owners who already have the base game; the 5-theater 'Epic Mode' didn't land for one reviewer"
+ ],
  "interaction": {
   "level": "High",
-  "kind": "card conflict over shared theater rows",
-  "detail": "Both players play and resolve cards within the same shared theater rows, so a card placed by one side can be affected by cards the other side plays there, leaving little beyond each player's hand that is not shared, contested space."
+  "kind": "Head-to-head card battle with bluffing",
+  "detail": "Two players play cards directly against each other across three shared theater rows each round, with card effects letting you flip, move, or negate opponent's cards. There's no separate personal board — the theaters are entirely shared state, and much of the game is reading and reacting to the opponent's hand."
  },
- "win_criteria": "Other",
+ "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "",
-  "why": "",
-  "how_you_win": "A player wins by gaining majority/influence across the chosen theaters through card play and conflict resolution."
+  "breadth": "Focused",
+  "why": "Points only come from winning individual theater battles and rounds",
+  "how_you_win": "Win the majority of theaters (or all three) in a round to score victory points, first player to reach 12 total points wins the match."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Air, Land & Sea",
+  "Air, Land & Sea: Critters at War",
+  "Battle Line",
+  "Schotten Totten",
+  "Hanamikoji"
+ ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/air-land-sea-spies-lies-supplies/",
+  "https://rolltoreview.com/spies-lies-and-supplies-review/"
+ ],
+ "source": "web",
  "_fingerprint": "d6fc7f81a467a2f7",
- "_name": "Air, Land, & Sea: Spies, Lies, & Supplies",
- "source": "description"
+ "_name": "Air, Land, & Sea: Spies, Lies, & Supplies"
 }

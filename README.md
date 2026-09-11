@@ -45,6 +45,26 @@ python3 scripts/enrich.py --force    # redo everything
 python3 scripts/sync.py --no-ai      # skip it deliberately
 ```
 
+Three passes, in increasing order of cost:
+
+| pass | what it asks | cost per game |
+|---|---|---|
+| default | what the model already knows, grounded in the BGG data | ~$0.002 |
+| `--describe` | how it plays, from the BGG text only — no reception | ~$0.002 |
+| `--online` | searches the web and cites its sources | ~$0.07 |
+
+`--online` exists because training data is simply *absent* for recent games,
+not vague. Fifteen games here came back "low confidence"; looking them up
+found, for instance, that Daitoshi is Devir's 2024 title by Dani García, part
+of the Kemushi Saga — and returned sourced praise and criticism. All fifteen
+now have real panels, headed "looked up on the web" and listing the pages used.
+
+Batch size is what makes that affordable. One game per call measured at
+**$0.60**, because the agent loop's fixed overhead dominates a single lookup;
+five games in one call measured at **$0.338, or $0.068 each** — nearly ten
+times cheaper. The whole collection online would be about $16 rather than
+$145.
+
 **Without it the report still works.** No `claude` on PATH and the step says
 so and exits 0; the rest of the pipeline is unaffected. Interaction falls back
 to the level derived from BGG's mechanics, the detail panel omits the opinion

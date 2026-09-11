@@ -1,22 +1,46 @@
 {
- "confidence": "low",
- "summary": "In this two-player civ-lite game, each side plays Athens and the Delian League or Sparta and the Peloponnesian League, securing supply routes to five markets for trade while feeding the population drawn from controlled territories. Players fight to seize territories and siege poleis, or use diplomacy to convince a polis to join their league, using dice rolling and card play to resolve conflicts.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Polis plays like a tight economic engine-management game wearing a wargame's clothes: most of the tension comes from feeding your population, running trade routes to five markets, and husbanding scarce prestige, with actual battles being infrequent but pivotal set pieces. It is widely described as brutally unforgiving of mismanagement, where a single misstep in logistics, iron, or prestige can end the game outright long before the map is settled.",
+ "praised": [
+  "Elegant, tightly balanced design that fuses euro-style economic engine-building with a light wargame",
+  "High component and production quality, including a double-layered board",
+  "Strong thematic cohesion between trade, feeding your population, diplomacy, and war",
+  "Deep strategy emerging from a compact, minimalist ruleset with little tedium",
+  "Genuine tension since combat, market access, and diplomacy directly interfere with the opponent"
+ ],
+ "criticised": [
+  "Very unforgiving/punishing: no safety nets, and new players often lose outright to starvation, running out of prestige, or a botched attack rather than losing on points",
+  "Steep learning curve best learned by losing a few times",
+  "Fixed setup and limited variability between plays compared to modern asymmetric designs",
+  "Surprisingly little actual fighting for a game themed around the Peloponnesian War",
+  "Games can end abruptly and early (after any of four eras) if a player collapses economically, which some find anticlimactic"
+ ],
  "interaction": {
   "level": "High",
-  "kind": "Direct area control and conflict",
-  "detail": "Both players contest the same map of territories, poleis, and trade routes, either through combat and sieges or through diplomatic persuasion, so control of shared spaces shifts directly between opponents. Each player also manages their own empire's supply and feeding of population as a separate concern."
+  "kind": "Direct competition for trade routes, cities, and battles",
+  "detail": "Players contest a shared market (only five trade slots) and a shared map of poleis, so one player's trading, military movement, or diplomatic overtures actively block or threaten the other's supply lines and territorial control. Combat and sieges are resolved directly between opponents' forces, and diplomats (proxenoi) can flip a contested city, making almost every action zero-sum against the opponent rather than played on a private tableau."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "The empire with the greater population and prestige at the end of the game wins, built through territorial control, successful trade with the five markets, and poleis won by conquest or diplomacy."
+  "breadth": "Focused",
+  "why": "Final score is built from prestige and population/city control rather than many disparate scoring categories, but the game can also end instantly via a loss condition (starvation or zero prestige) rather than a points count.",
+  "how_you_win": "Survive four eras while managing population feeding and prestige; whoever accumulates more prestige and controls more population/poleis at the end wins, but a player who lets credibility hit zero or fails to feed their population loses immediately regardless of points."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Pericles: The Peloponnesian Wars",
+  "Blue Moon",
+  "Taj Mahal",
+  "Scythe",
+  "COIN series games (e.g. Gandhi, All Bridges Burning)"
+ ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/polis-second-edition/",
+  "https://punchboard.co.uk/polis-review/",
+  "http://hiewandboardgames.blogspot.com/2025/12/polis-fight-for-hegemony.html",
+  "https://boardgamegeek.com/thread/883808/polis-a-game-deserving-a-wider-audience",
+  "https://boardgamegeek.com/boardgame/303551/polis"
+ ],
+ "source": "web",
  "_fingerprint": "ae50d086028eff33",
- "_name": "Polis",
- "source": "description"
+ "_name": "Polis"
 }

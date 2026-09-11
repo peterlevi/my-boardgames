@@ -251,6 +251,7 @@ tr.detail > td { padding:0; border-bottom:1px solid var(--line); }
   text-align:center; }
 #lightbox .hint { color:#9d978c; font-size:.76rem; }
 .outlinks { display:flex; flex-direction:column; gap:6px; font-size:.86rem; }
+.cites { font-size:.78rem; color:var(--muted); margin:0 0 12px; }
 .chip { font-size:.74rem; padding:3px 9px; border-radius:99px; border:0;
   background:var(--chip); color:var(--ink); cursor:pointer; font-family:inherit; }
 .chip:hover { box-shadow:inset 0 0 0 1px var(--accent); }
@@ -379,21 +380,21 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <select id="players"><!--__OPTIONS__--></select></div>
     <div class="f"><label for="mode">Rule</label>
       <select id="mode"><!--__MODE_OPTIONS__--></select></div>
+    <div class="f"><label for="ix">Interaction</label>
+      <select id="ix">
+        <option value="">Any</option><option>Low</option>
+        <option>Medium</option><option>High</option>
+      </select></div>
+    <div class="f"><label for="exp">Expansions</label>
+      <select id="exp"><!--__EXP_OPTIONS__--></select></div>
   </div>
   <details id="more">
     <summary>More filters</summary>
     <div class="row">
-      <div class="f"><label for="ix">Interaction</label>
-        <select id="ix">
-          <option value="">Any</option><option>Low</option>
-          <option>Medium</option><option>High</option>
-        </select></div>
       <div class="f"><label for="win">Wins by</label>
         <select id="win"><!--__WIN_OPTIONS__--></select></div>
       <div class="f"><label for="breadth">Scoring breadth</label>
         <select id="breadth"><!--__BREADTH_OPTIONS__--></select></div>
-      <div class="f"><label for="exp">Expansions</label>
-        <select id="exp"><!--__EXP_OPTIONS__--></select></div>
     </div>
     <div class="row">
       <div class="f"><label>BGG score</label>
@@ -1077,15 +1078,26 @@ function opinionBlock(g) {
       : '<button type="button" class="chip owned" data-game="' + i +
         '" title="You own this — open it">' + esc(n) + '</button>';
   }).join('');
-  return '<h4>' + (fromDesc ? 'How it plays <em>(from the BGG description — ' +
-      'too little is known about this one to report what players think)</em>'
-      : 'What people say' +
-        (ai.cf === 'medium' ? ' <em>(lower confidence)</em>' : '')) + '</h4>' +
+  var fromWeb = ai.src === 'web';
+  var head = fromDesc
+    ? 'How it plays <em>(from the BGG description — too little is known about ' +
+      'this one to report what players think)</em>'
+    : 'What people say' +
+      (fromWeb ? ' <em>(looked up on the web)</em>'
+               : ai.cf === 'medium' ? ' <em>(lower confidence)</em>' : '');
+  var cites = (ai.srcs || []).length
+    ? '<p class="cites">Sources: ' + ai.srcs.map(function (u) {
+        var host = u.replace(/^https?:\/\//, '').split('/')[0];
+        return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' +
+               esc(host) + '</a>';
+      }).join(', ') + '</p>'
+    : '';
+  return '<h4>' + head + '</h4>' +
     '<p>' + esc(ai.sm) + '</p>' +
     (ai.up && ai.up.length ? '<h4>Liked</h4>' + list(ai.up, 'up') : '') +
     (ai.dn && ai.dn.length ? '<h4>Criticised</h4>' + list(ai.dn, 'dn') : '') +
     (sim ? '<h4>People who like this also like</h4><div class="chips">' +
-      sim + '</div>' : '');
+      sim + '</div>' : '') + cites;
 }
 
 function closeDetail() {

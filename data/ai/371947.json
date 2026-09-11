@@ -1,22 +1,38 @@
 {
- "confidence": "low",
- "summary": "Players direct a touring circus, using movement points to travel point-to-point between towns and cities of the 19th-century United States, playing cards from hand to hire artists and stage performances. Locations differ in what they demand and offer: towns are quick, easy stops that provide starting resources to upgrade a troupe's cast, while small cities require more from the player.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "3 Ring Circus is a mid-weight tableau/area-majority game where you hire performers and tour them through small towns, cities, and big cities on a shared map, timing your shows to hit majority thresholds as Barnum's caravan advances. Reviewers describe it as smooth, well-produced, and satisfyingly puzzly, but say the circus theme is mostly cosmetic — it plays like an abstract numbers-and-colors optimization game.",
+ "praised": [
+  "Excellent production value, especially the 3D circus tent components",
+  "Clean, well-integrated area-majority scoring tied to the Barnum caravan track",
+  "Smart, replayable engine/tableau building with performer synergies"
+ ],
+ "criticised": [
+  "Theme feels pasted on — could be swapped for any commodity/set-collection theme without changing the feel",
+  "Reduces to matching numbers/colors rather than a evocative circus experience",
+  "Some found it competent but not exciting enough to stand out from similar Euros"
+ ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority over shared towns and cities",
-  "detail": "Because location control is resolved through area majority/influence, players' chosen stops can put them in direct competition over the same towns and cities, while each player otherwise manages their own hand of cards, troupe, and resources on their own side of the table."
+  "kind": "Area majority + card drafting competition",
+  "detail": "Players build their own performer tableau privately, but everyone competes for majority control in the same towns/cities as the shared Barnum caravan advances, and available artist/performance cards are drafted from a shared pool. Direct confrontation is limited, but timing your performances to beat rivals to area majorities is a constant tension."
  },
- "win_criteria": "Other",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "Fame earned from performances, combined with end-game bonuses, determines a player's total, and the most fame at the end of the game wins."
+  "breadth": "Broad",
+  "why": "Points come from small-town money, medium-city pedestal bonuses, large-city performer-set requirements, area-majority control, and end-game bonuses",
+  "how_you_win": "Accumulate the most fame by touring your circus through towns and cities, staging performances that match ordered performer requirements, and controlling regions when the Barnum track advances."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Wingspan",
+  "Luna Capital",
+  "Castell",
+  "Merv: The Silk Road"
+ ],
+ "sources": [
+  "https://boardgameoverlord.com/board-game-reviews/how-many-rings-in-a-circus-3-a-3-ring-circus-review/",
+  "https://boardgamegeek.com/boardgame/371947/3-ring-circus"
+ ],
+ "source": "web",
  "_fingerprint": "4f87a05ef6fdcf13",
- "_name": "3 Ring Circus",
- "source": "description"
+ "_name": "3 Ring Circus"
 }

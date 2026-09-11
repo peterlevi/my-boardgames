@@ -1,22 +1,42 @@
 {
- "confidence": "low",
- "summary": "Over five rounds, players use a double-sided worker placement system to develop strategies, deploy tactics, and pursue alliances as they compete to join a federation of planets. Turns involve placing workers of different types to take actions, with area majority/influence and voting used to determine outcomes on shared spaces.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Each round players place Ambassador tokens on a shared Senate grid, deciding every time whether that token funds a Major Project or casts a vote on pending legislation, with single-use spaces creating constant blocking tension. It rewards funding-heavy play and shifts noticeably by player count, playing best with 4 and feeling weaker at 2-3.",
+ "praised": [
+  "The Senate placement/voting dilemma and the blocking tension it creates ('plenty of tension on the Senate board')",
+  "High production quality with clear player-progress tracking",
+  "A strong, example-filled rulebook",
+  "Plays best and most interactively at higher player counts"
+ ],
+ "criticised": [
+  "Funding tokens are disproportionately used by winners (~62% per one reviewer's tally), making optimal play somewhat formulaic",
+  "Secondary planet-development tracks feel 'pedestrian' and repetitive",
+  "Balance shifts noticeably by player count, weaker at 2-3 players",
+  "Most Major Projects reliably complete, reducing end-game suspense",
+  "Theme described by one reviewer as fairly tacked-on"
+ ],
  "interaction": {
   "level": "High",
-  "kind": "Worker placement contention, voting, alliances",
-  "detail": "Players place workers on shared locations where area majority and influence are contested directly, and voting mechanics mean choices are made collectively rather than in isolation. Alliances and opportunities are formed and broken between players, so much of the game state is shared and fought over rather than kept on separate boards."
+  "kind": "Shared worker placement, blocking, and voting",
+  "detail": "Most of the game state is communal rather than private: the Senate grid, Major Project tracks, and passed laws are all shared, and single-use action spaces mean players directly block each other's options. Voting on legislation also lets players collectively alter shared scoring conditions that affect everyone."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "After five rounds, the delegation with the most prestige is the one chosen to join the federation, prestige being built through strategic worker placement, area influence, and alliances formed along the way."
+  "breadth": "Broad",
+  "why": "Points accrue from Major Project majority payouts, Senate/voting actions, passed laws, and character recruitment as several only loosely connected tracks",
+  "how_you_win": "Score the most prestige points after 5 rounds by combining Major Project majorities, legislation outcomes, and character bonuses; ties result in a shared victory."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Bruxelles 1893: Belle Époque"
+ ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/federation/",
+  "https://mr-boardgames.com/en/reviews/review-federation/",
+  "https://www.meeplemountain.com/boardgame/federation/",
+  "boardgamegeek.com/thread/3313008/a-review-after-about-10-plays (search snippet only, 403 on direct fetch)",
+  "boardgamegeek.com/thread/3129380/federation-review (search snippet only)",
+  "boardgamegeek.com/boardgame/345868/federation (search snippet only)"
+ ],
+ "source": "web",
  "_fingerprint": "b443b3aae01341e4",
- "_name": "Federation",
- "source": "description"
+ "_name": "Federation"
 }

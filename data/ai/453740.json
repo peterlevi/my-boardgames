@@ -1,22 +1,44 @@
 {
- "confidence": "low",
- "summary": "Players build factories to produce containers, then set prices and sail those containers across the sea to sell at auction, operating within a closed economy where money circulates only among the players rather than from a bank. Secretly dealt container value cards mean each player privately values certain goods more than others, shaping negotiation and speculation around every sale.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Container is a tense closed-economy game (this is a new compact 2026 Allplay edition of the 2007 Franz-Benno Delonge/Thomas Ewert design, with Kevin Nesbitt credited on this release) where players manufacture, price, and auction shipping containers to each other rather than to a passive market. Playing it feels like running a cutthroat micro-economy — you're constantly reading opponents' secret value cards, undercutting their prices, and deciding when to sell versus hoard, and one badly-timed move can crash the whole market.",
+ "praised": [
+  "Deep, believable closed-economy simulation where supply, demand, and pricing are entirely player-driven",
+  "High, meaningful interaction — buying low/selling high against real opponents, not a fixed market",
+  "Clever auction mechanic where the shipper can either take double the winning bid or buy the goods themselves, forcing tough calls",
+  "Hidden container-value cards create a deduction/bluffing layer as you try to read rivals' goals",
+  "Considered a genre-defining classic among economic gamers ('everyone trying to learn economics should be forced to play it')"
+ ],
+ "criticised": [
+  "Tight, unforgiving money supply can snowball badly for a player who falls behind early",
+  "Requires the full player count (game is much weaker or breaks down outside 3-5 players)",
+  "Steep initial learning curve to grasp market timing and pricing strategy",
+  "Some find the theme thin/abstract dressing over a pure economic engine"
+ ],
  "interaction": {
   "level": "High",
-  "kind": "closed-economy auctions and negotiation between players",
-  "detail": "Because the economy is closed, every auction, sale, and loan moves money and containers directly from one player to another rather than through a bank, so prices depend heavily on what rivals are willing to pay, even though each player's own factories and production are managed individually."
+  "kind": "Direct market manipulation, auctions, negotiation",
+  "detail": "The economy is entirely shared and player-created: every player's pricing, buying, and selling decisions directly move the market other players depend on. Auctions are player-vs-player (a shipper can choose to sell to the bank at double the top bid or must buy at that price themselves), and players can deliberately refuse to trade with a rival to choke off their income — the board state is almost entirely communal rather than separate player boards."
  },
  "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "Players profit by producing, pricing, and selling containers for more than they cost to build and ship, and the player who accumulates the most money ends up ahead."
+  "breadth": "Focused",
+  "why": "There is essentially one path to victory — accumulate more end-game cash than opponents by trading containers profitably",
+  "how_you_win": "Convert manufactured containers into cash through production, sale, and auction cycles; whoever has the most money when the container supply depletes and the game ends wins."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Antiquity",
+  "Le Havre",
+  "Automobiles",
+  "Chinatown",
+  "Kanban EV"
+ ],
+ "sources": [
+  "https://elusivemeeple.com/2022/12/03/container-review/",
+  "https://boardgamegeek.com/thread/3706458/container-an-economic-classic-by-thousand-word-rev",
+  "https://en.wikipedia.org/wiki/Container_(board_game)",
+  "https://www.allplay.com/board-games/container"
+ ],
+ "source": "web",
  "_fingerprint": "b0afa1cbf5e6731b",
- "_name": "Container",
- "source": "description"
+ "_name": "Container"
 }

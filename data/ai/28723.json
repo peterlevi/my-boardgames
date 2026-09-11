@@ -1,22 +1,37 @@
 {
- "confidence": "low",
- "summary": "Players act as traders who draft goods and bid at auction to fill their warehouses, then must judge the right moment to transfer a complete, matching combination of goods onto a waiting ship before the fleet departs. Since each ship's captain will only accept a full delivery from a single trader, hand management and set collection of the right goods combination are central to completing a sale.",
- "praised": [],
- "criticised": [],
+ "confidence": "medium",
+ "summary": "Players bid on action cards to acquire goods for a personal warehouse, then race to assemble the exact cargo a harbor ship demands before it fills and sails; the signature 'extortion' mechanic has one player set price/terms that an opponent then chooses which side of. It was an unexpected buzz title at Essen Spiel 2007 and got a Golden Geek nomination, but some found it fiddly to teach.",
+ "praised": [
+  "Surprisingly deep, tense decision-making for a small card game",
+  "The forced-choice extortion bidding mechanic, called 'agonizing and incredibly rewarding' by longtime fans",
+  "Was a standout buzz title at Essen Spiel 2007 and a 2008 Golden Geek Best Card Game nominee"
+ ],
+ "criticised": [
+  "Some reviewers found it demanding/fiddly to teach new players",
+  "The mean, forced extortion mechanic is divisive — loved by some, off-putting to others",
+  "Drab artwork"
+ ],
  "interaction": {
-  "level": "Medium",
-  "kind": "bidding and racing for the same ships",
-  "detail": "Because a given ship accepts goods from only one trader and the whole fleet leaves once storage fills or the wind turns favorable, players compete through auctions and drafting over which trader gets to supply which ship, even though each trader's own warehouse and hand of goods are kept separately."
+  "level": "High",
+  "kind": "Forced-choice auction/extortion",
+  "detail": "The harbor with its limited ship slots is a shared, contested space, but each player also keeps a private warehouse of goods. Interaction is direct: a player sets price/terms on a deal and an opponent is forced to pick which side of it they get stuck with, actively shaping rivals' outcomes rather than just competing indirectly."
  },
  "win_criteria": "Most money",
  "scoring": {
-  "breadth": "",
-  "why": "",
-  "how_you_win": "A player succeeds by assembling and delivering the exact combination of goods a ship's captain requires before that ship departs, doing so ahead of rival traders competing for the same vessels."
+  "breadth": "Focused",
+  "why": "No evidence turned up of multiple disconnected scoring tracks; it centers on money earned from completed ship deliveries",
+  "how_you_win": "Deliver the right combination of goods to ships before they depart to earn Guilders, ending with the most money (inferred from available sources, not independently confirmed)."
  },
  "similar": [],
- "teachers": [],
+ "sources": [
+  "boardgamegeek.com/boardgame/28723/before-the-wind (search snippet only, 403 on direct fetch)",
+  "boardgamegeek.com/thread/271697",
+  "boardgamegeek.com/thread/210563",
+  "boardgamegeek.com/thread/197245",
+  "https://opinionatedgamers.com/2021/04/06/top-20-most-underappreciated-games",
+  "https://www.angespielt.de/kritiken/vor-dem-wind"
+ ],
+ "source": "web",
  "_fingerprint": "5b35dc18350debe2",
- "_name": "Before the Wind",
- "source": "description"
+ "_name": "Before the Wind"
 }

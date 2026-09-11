@@ -7,6 +7,7 @@
     python3 scripts/enrich.py --jobs 6     # parallel calls (default 4)
     python3 scripts/enrich.py --batch 1    # one game per call (slower, finer)
     python3 scripts/enrich.py --describe   # second pass over unknown games
+    python3 scripts/enrich.py --online     # look the unknown ones up on the web
 
 Optional by design. If `claude` is not on PATH the script says so and exits 0,
 and every other script keeps working — the enrichment only ever adds columns.
@@ -31,11 +32,27 @@ Two things keep the answers honest:
   invention, and the report can then show nothing rather than a fabrication.
 
 That honesty leaves a gap: an obscure or very recent game ends up with an
-empty panel. `--describe` is a second pass over exactly those entries that
-asks a narrower question — describe how this plays *from the rulebook text
-supplied*, and say nothing about reception. The result is marked
-`"source": "description"` so the report can label it as read off the
-description rather than drawn from what players think.
+empty panel. Two passes fill it, in increasing order of cost.
+
+`--describe` asks a narrower question of the same offline model — describe how
+this plays *from the rulebook text supplied*, and say nothing about reception.
+Marked `"source": "description"`.
+
+`--online` actually goes and looks, giving the model WebSearch and WebFetch.
+This is the right answer for recent games, where training data is simply
+absent rather than vague: asked about Daitoshi it found the game is Devir's
+2024 title by Dani García, part of the Kemushi Saga, and returned sourced
+praise and criticism. Batch size matters enormously here. One game per call measured at $0.60,
+because the agent loop's fixed overhead — system prompt, tool definitions,
+accumulated search context — dominates a single lookup. Five games in one call
+measured at $0.338, or $0.068 each: nearly ten times cheaper for the same
+work. So --online batches by default, and the whole collection would cost
+around $16 rather than $145. Marked `"source": "web"`, with the pages it used
+stored alongside.
+
+The subprocess gets web tools and is explicitly denied Bash, Write and Edit.
+Permission prompts have to be bypassed for a non-interactive run, so the
+denial list is what keeps an unattended loop from doing anything but read.
 """
 import argparse
 import concurrent.futures
@@ -129,6 +146,40 @@ GAMES:
 """
 
 
+ONLINE = """Search the web for each game below and report what players \
+actually say about it. Use BoardGameGeek, reviews and forum threads. The BGG \
+data given may be thin or wrong — trust what you find over what is supplied, \
+and over anything you half-remember.
+
+Answer ONLY with a JSON object mapping each id to:
+{{
+  "confidence": "high" | "medium" | "low",
+  "summary": "two sentences on what playing it is actually like",
+  "praised": ["what people consistently like", "..."],
+  "criticised": ["what people consistently dislike", "..."],
+  "interaction": {{
+    "level": "Low" | "Medium" | "High",
+    "kind": "a few words",
+    "detail": "two or three sentences on how players affect each other and \
+how much of the state is shared versus each player's own board"
+  }},
+  "win_criteria": one of {criteria},
+  "scoring": {{
+    "breadth": "Focused" | "Some" | "Broad" | "Salad",
+    "why": "one sentence",
+    "how_you_win": "one or two sentences"
+  }},
+  "similar": ["3-5 games"],
+  "sources": ["the pages you actually used"]
+}}
+
+If the search genuinely turns up nothing, say so with "confidence": "low" and \
+empty fields. Never pad the answer out with plausible invention.
+
+GAMES:
+"""
+
+
 def prompt_for(batch, header=None):
     body = "".join(
         ENTRY.format(
@@ -153,11 +204,17 @@ def fingerprint(g):
     return hashlib.sha256(basis.encode()).hexdigest()[:16]
 
 
-def ask(prompt, model):
-    r = subprocess.run(
-        ["claude", "-p", prompt, "--output-format", "json",
-         "--model", model],
-        capture_output=True, text=True, timeout=240)
+def ask(prompt, model, online=False):
+    cmd = ["claude", "-p", prompt, "--output-format", "json", "--model", model]
+    if online:
+        cmd += ["--allowedTools", "WebSearch", "WebFetch",
+                # A non-interactive run cannot answer prompts, so the gate has
+                # to come down; this list is what stops it doing anything but
+                # read the web.
+                "--disallowedTools", "Bash", "Write", "Edit", "NotebookEdit",
+                "--permission-mode", "bypassPermissions"]
+    r = subprocess.run(cmd, capture_output=True, text=True,
+                       timeout=600 if online else 240)
     if r.returncode != 0:
         raise RuntimeError((r.stderr or r.stdout)[-300:])
     envelope = json.loads(r.stdout)
@@ -167,13 +224,17 @@ def ask(prompt, model):
     return json.loads(text)
 
 
-def process(batch, model, describe=False):
-    answers = ask(prompt_for(batch, DESCRIBE if describe else None), model)
+def process(batch, model, describe=False, online=False):
+    header = (ONLINE.format(criteria=json.dumps(WIN_CRITERIA)) if online
+              else DESCRIBE if describe else None)
+    answers = ask(prompt_for(batch, header), model, online=online)
     written = []
     for g in batch:
         data = answers.get(str(g["id"])) or answers.get(g["id"])
         if not isinstance(data, dict):
             continue
+        if online:
+            data["source"] = "web"
         if describe:
             # Fill only the blanks; the structural fields from the first pass
             # stay as they were, and the panel gets labelled as descriptive.
@@ -203,6 +264,8 @@ def main():
     ap.add_argument("--model", default="claude-sonnet-5")
     ap.add_argument("--describe", action="store_true",
                     help="second pass over low-confidence entries")
+    ap.add_argument("--online", action="store_true",
+                    help="look entries up on the web (slow, costs real money)")
     a = ap.parse_args()
 
     if not shutil.which("claude"):
@@ -216,7 +279,7 @@ def main():
         if g["is_expansion"]:
             continue
         cached = AI / f'{g["id"]}.json'
-        if a.describe:
+        if a.describe or a.online:
             # Only entries the first pass could not speak to.
             if not cached.exists():
                 continue
@@ -224,7 +287,8 @@ def main():
                 d = json.loads(cached.read_text())
             except Exception:  # noqa: BLE001
                 continue
-            if d.get("confidence") == "low" and not d.get("source"):
+            weak = d.get("confidence") == "low" or d.get("source") == "description"
+            if a.force or (weak and d.get("source") != "web"):
                 todo.append(g)
             continue
         if cached.exists() and not a.force:
@@ -241,12 +305,17 @@ def main():
         print("nothing to enrich — every game is cached and current")
         return
     batches = [todo[i:i + a.batch] for i in range(0, len(todo), a.batch)]
+    if a.online:
+        # Measured at ~$0.068/game in batches of five; a lone game costs
+        # nearly ten times that, so the batch size is doing real work.
+        print(f"WEB LOOKUP: {len(todo)} game(s), roughly "
+              f"${0.07 * len(todo):.2f}", flush=True)
     print(f"enriching {len(todo)} game(s) with {a.model}: "
           f"{len(batches)} calls of {a.batch}, {a.jobs} at a time", flush=True)
 
     done = failed = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=a.jobs) as pool:
-        futures = {pool.submit(process, b, a.model, a.describe): b
+        futures = {pool.submit(process, b, a.model, a.describe, a.online): b
                    for b in batches}
         for f in concurrent.futures.as_completed(futures):
             batch = futures[f]

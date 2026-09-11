@@ -550,26 +550,42 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Players direct a touring circus, using movement points to travel point-to-point between towns and cities of the 19th-century United States, playing cards from hand to hire artists and stage performances. Locations differ in what they demand and offer: towns are quick, easy stops that provide starting resources to upgrade a troupe's cast, while small cities require more from the player.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "3 Ring Circus is a mid-weight tableau/area-majority game where you hire performers and tour them through small towns, cities, and big cities on a shared map, timing your shows to hit majority thresholds as Barnum's caravan advances. Reviewers describe it as smooth, well-produced, and satisfyingly puzzly, but say the circus theme is mostly cosmetic — it plays like an abstract numbers-and-colors optimization game.",
+   "praised": [
+    "Excellent production value, especially the 3D circus tent components",
+    "Clean, well-integrated area-majority scoring tied to the Barnum caravan track",
+    "Smart, replayable engine/tableau building with performer synergies"
+   ],
+   "criticised": [
+    "Theme feels pasted on — could be swapped for any commodity/set-collection theme without changing the feel",
+    "Reduces to matching numbers/colors rather than a evocative circus experience",
+    "Some found it competent but not exciting enough to stand out from similar Euros"
+   ],
    "interaction": {
     "level": "Medium",
-    "kind": "area majority over shared towns and cities",
-    "detail": "Because location control is resolved through area majority/influence, players' chosen stops can put them in direct competition over the same towns and cities, while each player otherwise manages their own hand of cards, troupe, and resources on their own side of the table."
+    "kind": "Area majority + card drafting competition",
+    "detail": "Players build their own performer tableau privately, but everyone competes for majority control in the same towns/cities as the shared Barnum caravan advances, and available artist/performance cards are drafted from a shared pool. Direct confrontation is limited, but timing your performances to beat rivals to area majorities is a constant tension."
    },
-   "win_criteria": "Other",
+   "win_criteria": "Most points, many sources",
    "scoring": {
-    "breadth": "Some",
-    "why": "",
-    "how_you_win": "Fame earned from performances, combined with end-game bonuses, determines a player's total, and the most fame at the end of the game wins."
+    "breadth": "Broad",
+    "why": "Points come from small-town money, medium-city pedestal bonuses, large-city performer-set requirements, area-majority control, and end-game bonuses",
+    "how_you_win": "Accumulate the most fame by touring your circus through towns and cities, staging performances that match ordered performer requirements, and controlling regions when the Barnum track advances."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Wingspan",
+    "Luna Capital",
+    "Castell",
+    "Merv: The Silk Road"
+   ],
+   "sources": [
+    "https://boardgameoverlord.com/board-game-reviews/how-many-rings-in-a-circus-3-a-3-ring-circus-review/",
+    "https://boardgamegeek.com/boardgame/371947/3-ring-circus"
+   ],
+   "source": "web",
    "_fingerprint": "4f87a05ef6fdcf13",
-   "_name": "3 Ring Circus",
-   "source": "description"
+   "_name": "3 Ring Circus"
   },
   "plays": 0,
   "my_rating": null
@@ -1561,26 +1577,43 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Two players play cards into three theater rows chosen from the new Intelligence, Diplomacy, and Economics theaters (or mixed with the base game's Air, Land, and Sea, or five theaters in Epic Mode), each card contributing strength or an effect to its theater. Which theaters are combined for a given session changes the specific effects and interactions available during card play conflict resolution.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Spies, Lies & Supplies is a standalone 18-card expansion for Air, Land & Sea, swapping in Intelligence, Diplomacy, and Economics theaters for a fast, tight two-player bluffing duel over three simultaneous mini-battles. Reviewers say it keeps the same elegant push-and-pull tension as the original but shifts the flavor toward information warfare and hidden-info plays rather than raw power swings.",
+   "praised": [
+    "High variety from just 18 new cards, with abilities that add flavor without new rules overhead",
+    "Espionage/information theme gives real counterplay — reading and predicting opponent's hand",
+    "Mixes cleanly with the base game or other expansions for more theater combinations"
+   ],
+   "criticised": [
+    "New cards feel less punchy/decisive than the original Air, Land & Sea deck",
+    "Many cards carry sacrificial costs, which some found less satisfying than direct aggression",
+    "Adds little necessity for owners who already have the base game; the 5-theater 'Epic Mode' didn't land for one reviewer"
+   ],
    "interaction": {
     "level": "High",
-    "kind": "card conflict over shared theater rows",
-    "detail": "Both players play and resolve cards within the same shared theater rows, so a card placed by one side can be affected by cards the other side plays there, leaving little beyond each player's hand that is not shared, contested space."
+    "kind": "Head-to-head card battle with bluffing",
+    "detail": "Two players play cards directly against each other across three shared theater rows each round, with card effects letting you flip, move, or negate opponent's cards. There's no separate personal board — the theaters are entirely shared state, and much of the game is reading and reacting to the opponent's hand."
    },
-   "win_criteria": "Other",
+   "win_criteria": "Race to a finish",
    "scoring": {
-    "breadth": "",
-    "why": "",
-    "how_you_win": "A player wins by gaining majority/influence across the chosen theaters through card play and conflict resolution."
+    "breadth": "Focused",
+    "why": "Points only come from winning individual theater battles and rounds",
+    "how_you_win": "Win the majority of theaters (or all three) in a round to score victory points, first player to reach 12 total points wins the match."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Air, Land & Sea",
+    "Air, Land & Sea: Critters at War",
+    "Battle Line",
+    "Schotten Totten",
+    "Hanamikoji"
+   ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/air-land-sea-spies-lies-supplies/",
+    "https://rolltoreview.com/spies-lies-and-supplies-review/"
+   ],
+   "source": "web",
    "_fingerprint": "d6fc7f81a467a2f7",
-   "_name": "Air, Land, & Sea: Spies, Lies, & Supplies",
-   "source": "description"
+   "_name": "Air, Land, & Sea: Spies, Lies, & Supplies"
   },
   "plays": 1,
   "my_rating": 7.5
@@ -3257,26 +3290,49 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Across four years, each divided into four seasonal phases, players draft actions and place tiles to grow bamboo, tend to their family, and convert the results into happiness points. Turn choices in the action drafting determine what remains available afterward, while tile placement builds out each player's own field layout over the four years.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "medium",
+   "summary": "Each of four rounds you place incense to earn bamboo pieces, which convert into actions (gather resources, buy home tiles, satisfy balance contracts) while also competing for area-majority bonuses on a shared temple/spirit board. The core tension is a tile-laying puzzle on your own 5x3 home board, where you must keep left/right \"balance\" while packing in valuable tiles, and reviewers describe a cascading effect where early placements ripple into what's available on later turns.",
+   "praised": [
+    "the incense/action-selection system, seen as clever and distinctive",
+    "the balance/comfort tile-placement puzzle elevating it above typical tile-layers",
+    "excellent, serene production and art",
+    "quick, easy end-game scoring and brisk play at lower counts"
+   ],
+   "criticised": [
+    "poor iconography — tile-type icons are small and tucked in corners",
+    "cluttered player boards with unexplained arrows/labels",
+    "awkward temple placement on the shared board and missing timing info on spirit tiles",
+    "oversized box/component count relative to what's actually used",
+    "some reviewers found it merely 'fine,' calling it an 'elevated shoulder shrug', and it has no solo mode"
+   ],
    "interaction": {
-    "level": "Medium",
-    "kind": "drafting from a shared pool of actions",
-    "detail": "Because actions are drafted from a shared, limited pool, taking one denies it to other players that round, but the bamboo fields and tiles being placed are otherwise built up on each player's own individual board."
+    "level": "Low",
+    "kind": "shared area-majority drafting",
+    "detail": "Each player runs their own home board and temple track largely in parallel, so most of the game is solo optimization. The only shared state is a central temple/spirit board where players compete for majority bonuses and for limited bamboo/market tiles, with no direct conflict, attacking, or stealing."
    },
-   "win_criteria": "Other",
+   "win_criteria": "Most points, many sources",
    "scoring": {
     "breadth": "Some",
-    "why": "",
-    "how_you_win": "Happiness points earned from tending family and harvesting bamboo over the four years are totaled, and the highest total wins."
+    "why": "Points come from a handful of interlocking categories rather than one dominant engine or a huge sprawling salad.",
+    "how_you_win": "Points accumulate from placed home tiles, completed balance/comfort contracts (with half-credit for incomplete ones), roughly 2 points per spirit majority won, and penalties for board imbalance; highest total after 4 rounds wins."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Bitoku",
+    "Silk",
+    "Sabika",
+    "The Red Cathedral",
+    "The White Castle",
+    "Kanagawa"
+   ],
+   "sources": [
+    "https://www.boardgamequest.com/bamboo-review/",
+    "https://www.meeplemountain.com/reviews/bamboo/",
+    "https://www.whatboardgame.com/post/bamboo-board-game-review",
+    "https://boardgamegeek.com/boardgame/351538/bamboo"
+   ],
+   "source": "web",
    "_fingerprint": "a0950d1c36025330",
-   "_name": "Bamboo",
-   "source": "description"
+   "_name": "Bamboo"
   },
   "plays": 0,
   "my_rating": null
@@ -3790,25 +3846,36 @@
   },
   "ai": {
    "confidence": "low",
-   "summary": "Players act as traders who draft goods and bid at auction to fill their warehouses, then must judge the right moment to transfer a complete, matching combination of goods onto a waiting ship before the fleet departs. Since each ship's captain will only accept a full delivery from a single trader, hand management and set collection of the right goods combination are central to completing a sale.",
-   "praised": [],
-   "criticised": [],
+   "summary": "Players reveal goods/action cards and bid Guilders against each other for them, with the current holder able to accept an offered price or pay it themselves to keep the card, all while racing to assemble the exact goods combination a ship captain wants before that ship fills and sails. It's described as a tense, hard-nosed trading game where grabbing cards you don't need purely to extort opponents is a core, sanctioned tactic.",
+   "praised": [
+    "the bidding/extortion mechanic — setting prices you'd be happy either to pay or receive — called clever and tense",
+    "packs a surprising amount of game into a small box; overperformed expectations at its Essen 2007 debut"
+   ],
+   "criticised": [
+    "drab, plain artwork",
+    "uniform round-to-round structure that some reviewers felt dampened long-term motivation/replay variety",
+    "stressful and mean, which not every player will enjoy"
+   ],
    "interaction": {
-    "level": "Medium",
-    "kind": "bidding and racing for the same ships",
-    "detail": "Because a given ship accepts goods from only one trader and the whole fleet leaves once storage fills or the wind turns favorable, players compete through auctions and drafting over which trader gets to supply which ship, even though each trader's own warehouse and hand of goods are kept separately."
+    "level": "High",
+    "kind": "direct bidding/extortion",
+    "detail": "There's no parallel private-hand play here — nearly every turn is a face-to-face price war over a shared pool of goods cards, and a named strategy is buying cards you don't need just to squeeze opponents who do. State is largely shared (the goods market and ships in harbor) rather than siloed per player."
    },
    "win_criteria": "Most money",
    "scoring": {
-    "breadth": "",
-    "why": "",
-    "how_you_win": "A player succeeds by assembling and delivering the exact combination of goods a ship's captain requires before that ship departs, doing so ahead of rival traders competing for the same vessels."
+    "breadth": "Focused",
+    "why": "Available sources point to a single scoring channel — accumulated money/goods value — rather than multiple bonus categories, though this could not be fully verified against the rulebook.",
+    "how_you_win": "The player who ends with the most money/goods value, built through successful trades and bidding, wins; this could not be independently confirmed beyond secondhand review summaries."
    },
    "similar": [],
-   "teachers": [],
+   "sources": [
+    "https://opinionatedgamers.com/2021/04/06/top-20-most-underappreciated-games/",
+    "https://www.reich-der-spiele.de/kritiken/VorDemWind",
+    "https://boardgamegeek.com/boardgame/28723/before-the-wind"
+   ],
+   "source": "web",
    "_fingerprint": "5b35dc18350debe2",
-   "_name": "Before the Wind",
-   "source": "description"
+   "_name": "Before the Wind"
   },
   "plays": 0,
   "my_rating": null
@@ -7751,26 +7818,48 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Each player acts as a deity guiding their own civilization, advancing along tech trees and tracks that span both cultural/technological progress and evolutionary adaptations, with dice rolling and drafted options shaping which advances are available on a given turn. Area movement across a modular, variably set-up board and an income mechanic support the civilization's ongoing development.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Civolution plays as a dense, dice-driven civilization-building game where each of the 3-4 hour early plays (settling to ~2 hours once familiar) is spent juggling 20+ action modules, tech tracks, and card combos with very little direct conflict between players. It's widely described as Stefan Feld's most maximalist point-salad design yet, rewarding planning and combo-building over confrontation.",
+   "praised": [
+    "Huge variety of viable strategies and combos, with strong replayability from modular board/goal setup",
+    "Clean, logical individual mechanics despite the game's overall size and density",
+    "Polished production, organization, and rulebook",
+    "Feels fresh and rewarding to players who enjoy heavy Euro optimization (compared favorably to Castles of Burgundy 'on steroids')"
+   ],
+   "criticised": [
+    "Overwhelming complexity and steep learning curve, especially teaching it to new players",
+    "Long playtime and a huge table footprint (multiple boards, hard to fit on a standard table)",
+    "Noticeable luck element from dice and hidden map/card draws that some feel undercuts strategic control",
+    "Risk of analysis paralysis and downtime given the sheer number of options",
+    "Reception is polarized — some player groups split roughly a third love it, a third dislike it"
+   ],
    "interaction": {
-    "level": "Medium",
-    "kind": "drafting shared advances, moving on a shared board",
-    "detail": "Players draft from a shared, open pool of developmental options and move across the same modular board via area movement, while each civilization's own tech tracks, patterns, and income are recorded on that player's individual console."
+    "level": "Low",
+    "kind": "Parallel building, indirect competition",
+    "detail": "Players mostly develop their own civilization console and tracks independently, racing for the same map territory and shared goal/scoring tiles rather than directly attacking each other. Reviewers note 'there's very little your opponents can do to interfere' — the worst you can do is temporarily weaken a rival tribe, not stop them scoring — so most of the game is solitaire-style optimization with light positional competition over shared spaces."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
-    "breadth": "Broad",
-    "why": "",
-    "how_you_win": "Progress made along tech trees/tracks and pattern building, reflecting a civilization's cultural, technical, and evolutionary development, determines how a player fares relative to the other civilizations."
+    "breadth": "Salad",
+    "why": "Points come from interim era scoring, multiple end-game tracks, console diamonds, features, worker placement, map spread, and card multipliers simultaneously",
+    "how_you_win": "Accumulate the most 'diamond' victory points across dozens of overlapping scoring systems spanning exploration, tech, and civilization development."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "The Castles of Burgundy",
+    "Trickerion",
+    "Bonfire",
+    "Anachrony",
+    "Great Western Trail"
+   ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/civolution/",
+    "https://dudetakeyourturn.ca/2024/12/24/first-impressions-civolution/",
+    "https://opinionatedgamers.com/2023/10/07/simon-saturday-report-including-mini-preview-of-civolution/",
+    "https://unknowns.de/forum/thread/24435-civolution-deep-print-games-stefan-feld/"
+   ],
+   "source": "web",
    "_fingerprint": "2651526626297111",
-   "_name": "Civolution",
-   "source": "description"
+   "_name": "Civolution"
   },
   "plays": 0,
   "my_rating": null
@@ -8918,26 +9007,48 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Players build factories to produce containers, then set prices and sail those containers across the sea to sell at auction, operating within a closed economy where money circulates only among the players rather than from a bank. Secretly dealt container value cards mean each player privately values certain goods more than others, shaping negotiation and speculation around every sale.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Container is a tense closed-economy game (this is a new compact 2026 Allplay edition of the 2007 Franz-Benno Delonge/Thomas Ewert design, with Kevin Nesbitt credited on this release) where players manufacture, price, and auction shipping containers to each other rather than to a passive market. Playing it feels like running a cutthroat micro-economy — you're constantly reading opponents' secret value cards, undercutting their prices, and deciding when to sell versus hoard, and one badly-timed move can crash the whole market.",
+   "praised": [
+    "Deep, believable closed-economy simulation where supply, demand, and pricing are entirely player-driven",
+    "High, meaningful interaction — buying low/selling high against real opponents, not a fixed market",
+    "Clever auction mechanic where the shipper can either take double the winning bid or buy the goods themselves, forcing tough calls",
+    "Hidden container-value cards create a deduction/bluffing layer as you try to read rivals' goals",
+    "Considered a genre-defining classic among economic gamers ('everyone trying to learn economics should be forced to play it')"
+   ],
+   "criticised": [
+    "Tight, unforgiving money supply can snowball badly for a player who falls behind early",
+    "Requires the full player count (game is much weaker or breaks down outside 3-5 players)",
+    "Steep initial learning curve to grasp market timing and pricing strategy",
+    "Some find the theme thin/abstract dressing over a pure economic engine"
+   ],
    "interaction": {
     "level": "High",
-    "kind": "closed-economy auctions and negotiation between players",
-    "detail": "Because the economy is closed, every auction, sale, and loan moves money and containers directly from one player to another rather than through a bank, so prices depend heavily on what rivals are willing to pay, even though each player's own factories and production are managed individually."
+    "kind": "Direct market manipulation, auctions, negotiation",
+    "detail": "The economy is entirely shared and player-created: every player's pricing, buying, and selling decisions directly move the market other players depend on. Auctions are player-vs-player (a shipper can choose to sell to the bank at double the top bid or must buy at that price themselves), and players can deliberately refuse to trade with a rival to choke off their income — the board state is almost entirely communal rather than separate player boards."
    },
    "win_criteria": "Most money",
    "scoring": {
-    "breadth": "Some",
-    "why": "",
-    "how_you_win": "Players profit by producing, pricing, and selling containers for more than they cost to build and ship, and the player who accumulates the most money ends up ahead."
+    "breadth": "Focused",
+    "why": "There is essentially one path to victory — accumulate more end-game cash than opponents by trading containers profitably",
+    "how_you_win": "Convert manufactured containers into cash through production, sale, and auction cycles; whoever has the most money when the container supply depletes and the game ends wins."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Antiquity",
+    "Le Havre",
+    "Automobiles",
+    "Chinatown",
+    "Kanban EV"
+   ],
+   "sources": [
+    "https://elusivemeeple.com/2022/12/03/container-review/",
+    "https://boardgamegeek.com/thread/3706458/container-an-economic-classic-by-thousand-word-rev",
+    "https://en.wikipedia.org/wiki/Container_(board_game)",
+    "https://www.allplay.com/board-games/container"
+   ],
+   "source": "web",
    "_fingerprint": "b0afa1cbf5e6731b",
-   "_name": "Container",
-   "source": "description"
+   "_name": "Container"
   },
   "plays": 0,
   "my_rating": null
@@ -9621,26 +9732,48 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "On a turn, a player either produces resources or moves their magnate around a rondel to reach worker-placement spots on a modular, variably set-up board, building up their city while drawing on the surrounding forest and river resources. Once-per-game abilities and a follow mechanic let players react to or piggyback on actions taken by others as the city and its steam-powered contraption progress.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Daitoshi is a heavy worker-placement/rondel game where you build up a steam-powered city, developing districts and inventions while racing against the clock of dwindling wilderness resources. Turns feel tight and combo-driven, and the game rewards long-term engine building over 2+ hours, with a notably harsh sarcastic-imperialism theme about paving over nature.",
+   "praised": [
+    "High production quality and thematic art/graphic design of the tiles and boards",
+    "Satisfying, combo-heavy engine building with a tight, interesting resource economy",
+    "\"Mutual benefit\" production triggers that give everyone a little something, keeping the whole table engaged",
+    "Strong variability in setup/modular board across plays"
+   ],
+   "criticised": [
+    "Steep learning curve: dense ~30-page rulebook and long teach time relative to a 2-hour game",
+    "Cluttered graphic design — costs, action spaces, and scoring tracks are unclear for the first several rounds",
+    "\"Four tracks too many\" — described as point-salad scoring that can feel like busywork",
+    "Solo mode feels like a chore, and 4-player games can overstay their welcome / run long"
+   ],
    "interaction": {
     "level": "Medium",
-    "kind": "following others' actions and contesting shared board spots",
-    "detail": "The follow mechanic lets a player react to an opponent's action, and worker-placement spots on the shared modular board can be taken before a rival reaches them, while each player's own city and resources remain on their individual side of play."
+    "kind": "Shared triggers, indirect blocking",
+    "detail": "Each player runs their own city/board, but triggering a Production phase hands every player a bonus based on their own invention tracks, so opponents' actions constantly \"drip\" benefits to you. Expanding districts and using shared worker-placement/rondel spaces also opens or closes opportunities for others, so interaction is mostly indirect rather than direct confrontation."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
-    "breadth": "Broad",
-    "why": "",
-    "how_you_win": "A player advances by growing their city and contributing to the shared contraption's progress through their magnate's production and movement around the rondel, aiming to outpace the other players' civilizations."
+    "breadth": "Salad",
+    "why": "Reviewers explicitly describe it as point-salad, with scoring spread across four Wilderness tracks, invention advancement, and continuous point accumulation through the game",
+    "how_you_win": "Highest total score at game end wins; final scores typically land in the low 100s to mid 200s, tallied from multiple tracks and end-game bonuses."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Bitoku",
+    "Ark Nova",
+    "Anachrony",
+    "Underwater Cities",
+    "Barrage"
+   ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/daitoshi/",
+    "https://boardgamegeek.com/thread/3430670/daitoshi-ravaging-bitoku-a-board-game-views-review",
+    "https://boardgamegeek.com/thread/3451372/daitoshi-a-solo-review-by-stidjen-plays-solo",
+    "https://devirgames.com/master-the-power-of-steam-in-daitoshi",
+    "https://devirgames.com/the-kemushi-saga-a-magical-world-for-devir-board-games"
+   ],
+   "source": "web",
    "_fingerprint": "9b28f2b433823657",
-   "_name": "Daitoshi",
-   "source": "description"
+   "_name": "Daitoshi"
   },
   "plays": 0,
   "my_rating": null
@@ -11099,26 +11232,47 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Players manage a shipping company, using worker placement to pick up commodities such as tea, spices, coffee, and silk and deliver them between trading posts, while buying and selling on a market whose prices shift with supply and demand. Turn order is set by a stat-based measure, and players can also invest by holding stock in their own company or in a rival's.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "East India Companies is a mid-weight economic game where players race ships to trading regions, sell goods for profit, and grow their fortune partly by investing in shares of their own or rivals' companies. It plays as an accessible on-ramp to heavier stock/pick-up-and-deliver games, with tension coming from speed to market and fluctuating prices rather than direct conflict.",
+   "praised": [
+    "Accessible, clean rules make it a good \"gateway\" to heavier economic/18XX-style games",
+    "Loading/Selling loop with shifting profit margins stays engaging and \"fresh\" across multiple plays",
+    "Pick-up-and-deliver ship placement creates real tension and drama around who gets to a region first",
+    "Clever mix of stock investment and buy/sell tactics rewards reading the market"
+   ],
+   "criticised": [
+    "Thematically odd that buying shares in a rival's company pays no money to that player",
+    "Only one language's player aid included, and new players often misjudge early stock investments before they understand the economy",
+    "Some players find rounds start to feel repetitive/samey over a full game",
+    "Best experienced at higher player counts (4) — with fewer players the market tension and competition soften noticeably",
+    "Some forum discussion criticizes the colonial-trade theme as glossing over real-world exploitation"
+   ],
    "interaction": {
     "level": "Medium",
-    "kind": "shared market and cross-investment in rivals' companies",
-    "detail": "Because players can buy shares in each other's shipping companies and trade on the same fluctuating market, one player's buying and selling affects prices and holdings for everyone, even though each player's own ships and delivery routes are run separately."
+    "kind": "Market racing and shared stock",
+    "detail": "Players share regional markets where the fastest ship to arrive gets first pick of available goods, so speed and timing directly affect what's left for others. Players can also buy shares in each other's companies, tying part of everyone's fortune to rivals' fluctuating success, though each player still manages their own ships, cash, and holdings on a mostly individual board."
    },
-   "win_criteria": "Other",
+   "win_criteria": "Most money",
    "scoring": {
-    "breadth": "Some",
-    "why": "",
-    "how_you_win": "A player profits from delivering goods at favorable market prices and from the returns on stock held, including shares in competitors' companies, with the greatest accumulated wealth determining the winner."
+    "breadth": "Focused",
+    "why": "Final score is just cash on hand plus the current value of held shares — no separate tracks or bonus categories",
+    "how_you_win": "The richest player at game end wins, with typical final totals around 125–175 points/money combined from cash and share value."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Le Havre",
+    "Navegador",
+    "Imperial Steam",
+    "John Company",
+    "Merchant of Venus"
+   ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/east-india-companies/",
+    "https://boardgamegeek.com/thread/3689770/how-well-can-you-manage-an-east-india-company",
+    "https://boardgamegeek.com/boardgame/354132/east-india-companies"
+   ],
+   "source": "web",
    "_fingerprint": "d6270d1911cc35f5",
-   "_name": "East India Companies",
-   "source": "description"
+   "_name": "East India Companies"
   },
   "plays": 0,
   "my_rating": null
@@ -11525,26 +11679,46 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Each round you draft a biome card from a shared pool to choose which area of your own board to develop, while the cards you leave behind make those regions grow more fertile and valuable for later. You spend the round planting trees, bushes, and lakes on your personal ecosystem grid, trying to cluster trees in the most fertile spots without letting them shade each other out, and chaining nature powers into extra actions.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Over 14 turns across four seasons, players draft from a shared market of Biome cards (one more than the player count), each card granting a power and unlocking an action on their own personal planet board, before resolving simultaneously. Trees cast shadows that block sunlight scoring while clustering trees and bushes into contiguous groups earns bonus points, so it's a push-pull between spreading out for light and clustering for adjacency bonuses.",
+   "praised": [
+    "gorgeous production — dual-layer boards, wooden pieces, lovely card art",
+    "the draft adds real tension since unpicked cards shape the shared end-game Fertility Zone scoring",
+    "accessible rules with genuine depth, and it scales well from 1 to 4 players"
+   ],
+   "criticised": [
+    "very low interaction beyond the draft — often called 'multiplayer solitaire'",
+    "limited setup variability leading some reviewers to feel it has a shorter shelf life",
+    "fiddly scoring (seasonal sunlight, adjacency, end-game multipliers) that's hard to explain until demonstrated once"
+   ],
    "interaction": {
-    "level": "Medium",
-    "kind": "Shared drafting pool, separate boards",
-    "detail": "Players take turns drafting from a common set of biome cards, so your pick removes an option from everyone else and changes which regions become more fertile for whoever chooses them later. Beyond that shared card pool, each player develops their own separate ecosystem grid independently."
+    "level": "Low",
+    "kind": "shared drafting pool only",
+    "detail": "Each player grows their own ecosystem on their own board with no direct conflict. The sole point of contact is the shared card market — what you take (or leave) shapes opponents' available powers and feeds a shared end-game Fertility Zone that everyone scores against."
    },
-   "win_criteria": "Other",
+   "win_criteria": "Most points, many sources",
    "scoring": {
-    "breadth": "Some",
-    "why": "",
-    "how_you_win": "The player whose planet ends up greenest and most fertile wins, which comes from concentrating trees in high-fertility regions, maximizing the light each tree collects, and collecting end-game bonuses from bushes and lakes."
+    "breadth": "Broad",
+    "why": "Points come from three distinct channels — recurring seasonal sunlight, forest/adjacency clustering, and an end-game comparison of Big Trees against a shared Fertility Zone — that reviewers say can each swing a large share of the final score.",
+    "how_you_win": "Highest total after 4 seasons, combining ongoing sunlight and adjacency scoring with an end-game bonus from Big Trees valued against the community Fertility Zone; observed scores ranged roughly 80-165."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Photosynthesis",
+    "Tang Garden",
+    "Cascadia",
+    "Calico",
+    "Verdant"
+   ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/evergreen/",
+    "https://opinionatedgamers.com/2022/09/19/dale-yu-review-of-evergreen/",
+    "https://www.boardgamequest.com/evergreen-review/",
+    "https://www.thestartplayer.com/review-evergreen/",
+    "https://boardgamegeek.com/boardgame/363307/evergreen"
+   ],
+   "source": "web",
    "_fingerprint": "e8c72ebc652bf0c4",
-   "_name": "Evergreen",
-   "source": "description"
+   "_name": "Evergreen"
   },
   "plays": 0,
   "my_rating": null
@@ -12568,26 +12742,40 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Over five rounds, players use a double-sided worker placement system to develop strategies, deploy tactics, and pursue alliances as they compete to join a federation of planets. Turns involve placing workers of different types to take actions, with area majority/influence and voting used to determine outcomes on shared spaces.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "medium",
+   "summary": "Over 5 rounds, each turn you place a double-sided Ambassador pawn either as a Vote (seeding the shared Senate board and swaying which planet/goal scores that round) or as Funding (unlocking missions on your own player board), with Senate spaces holding only one token so blocking is constant. One reviewer found winners leaned on the Funding side about 62% of the time, finishing with 200+ points spread across many sources.",
+   "praised": [
+    "the dual-use Ambassador pawn 'Vote or Fund?' dilemma, called the game's best idea",
+    "the shared Senate action board, which creates real tension every turn",
+    "strong production quality and rulebook"
+   ],
+   "criticised": [
+    "the private player-board tracks feel repetitive and dry compared to the Senate",
+    "the sci-fi/political theme feels tacked onto what plays like an abstract Euro",
+    "lower-player-count blocking-tile variants feel clunkier than the full 4-player game"
+   ],
    "interaction": {
     "level": "High",
-    "kind": "Worker placement contention, voting, alliances",
-    "detail": "Players place workers on shared locations where area majority and influence are contested directly, and voting mechanics mean choices are made collectively rather than in isolation. Alliances and opportunities are formed and broken between players, so much of the game state is shared and fought over rather than kept on separate boards."
+    "kind": "worker-placement blocking, area majority, voting",
+    "detail": "The shared Senate board only allows one token per action space, forcing direct blocking, and players compete for area-majority influence over planets while votes can be nudged to favor or disadvantage others. Each player also has a private board with individual tracks and missions, so state is a mix of one contested shared board plus separate personal engines."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
-    "breadth": "Some",
-    "why": "",
-    "how_you_win": "After five rounds, the delegation with the most prestige is the one chosen to join the federation, prestige being built through strategic worker placement, area influence, and alliances formed along the way."
+    "breadth": "Broad",
+    "why": "Prestige accrues from passing laws, funding/completing Major Projects, planetary/Senate majority influence, and end-game bonuses rather than one dominant track.",
+    "how_you_win": "Highest prestige after 5 rounds, with the reviewed source finding Major Project completion and end-game bonuses contributing the most points for winners."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Bruxelles 1893: Belle Époque"
+   ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/federation/",
+    "https://mr-boardgames.com/en/reviews/review-federation/",
+    "https://boardgamegeek.com/boardgame/345868/federation"
+   ],
+   "source": "web",
    "_fingerprint": "b443b3aae01341e4",
-   "_name": "Federation",
-   "source": "description"
+   "_name": "Federation"
   },
   "plays": 0,
   "my_rating": null
@@ -12838,26 +13026,48 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Flotilla combines two interwoven modes of play: starting as a 'Sinkside' Fleet Commander, players use action retrieval, dice rolling, and hand management to manage a fleet, moving on a grid to pick up and deliver goods across a modular board built from tiles. Deck, bag, and pool building lets players grow their available actions and resources over the course of the game as they trade in a shared market.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Flotilla is a dense, brain-burning economic engine-builder where players split time between exploring/gathering as a \"Sinkside\" captain and building up the flotilla as a \"Skyside\" commissioner, with a shared market and interlocking economies tying everyone together. It's a long, fiddly game (often running 2-4 hours) that rewards repeated plays once the two-layer system clicks, but the first game or two is largely spent just learning how the pieces interact.",
+   "praised": [
+    "Unique dual Sinkside/Skyside role-switching system",
+    "Strong post-apocalyptic nautical theme woven into mechanics (not just pasted on)",
+    "Shared market creates real tension — sales and purchases shift prices for everyone",
+    "Beautiful, thematic art and production",
+    "Great long-term depth and variety of strategic paths (artifacts, quests, outposts, guild seals)"
+   ],
+   "criticised": [
+    "Very high learning curve; teaching requires explaining two interacting layers of rules",
+    "Long playtime that can stretch to 3-4 hours, especially early plays",
+    "Resources are abstract colors (red/green/blue/yellow) rather than thematic goods, which some find immersion-breaking",
+    "Limited to 3-5 players",
+    "Not a game you can expect to optimize until several plays in"
+   ],
    "interaction": {
-    "level": "Medium",
-    "kind": "Shared modular board, pick-up-and-deliver",
-    "detail": "Players move and act on a common modular board built from placed tiles, competing for the same delivery routes, market opportunities, and board space. Each player otherwise manages their own separate pool of actions, cards, and fleet resources."
+    "level": "High",
+    "kind": "Shared market and interdependent roles",
+    "detail": "Sinkside players gather resources that feed Skyside players' construction, and a shared, fluctuating market means every purchase or sale changes prices for the whole table. Positive actions frequently benefit other players as a side effect, and players compete for the same quests, guild seals, and outpost placements, so timing and reading opponents matters a lot."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
-    "breadth": "Some",
-    "why": "",
-    "how_you_win": "Players win by outpacing their opponents in bringing prosperity to the Flotilla, achieved through efficient pick-up-and-delivery runs, market trading, and building up their own action pool over the game."
+    "breadth": "Broad",
+    "why": "Points come from completed quests (diminishing value over time), collected artifacts, connected flotilla tile placement, and guild seals",
+    "how_you_win": "Accumulate the most victory points by completing quests early (they pay less the longer they sit), building and connecting flotilla tiles, and winning guild seals (10 points for first, 5 for second per guild)."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Trickerion",
+    "Anachrony",
+    "Terraforming Mars",
+    "Great Western Trail",
+    "Underwater Cities"
+   ],
+   "sources": [
+    "https://spacebiff.com/2020/01/15/flotilla/",
+    "https://www.meeplemountain.com/reviews/flotilla/",
+    "https://boardgamegeek.com/boardgame/275969/flotilla/ratings?rated=1&comment=1"
+   ],
+   "source": "web",
    "_fingerprint": "08b07b645bbe4e67",
-   "_name": "Flotilla",
-   "source": "description"
+   "_name": "Flotilla"
   },
   "plays": 0,
   "my_rating": null
@@ -13289,29 +13499,47 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Players act as supervisors building ships, satisfying guests, and expanding a shared company network across a modular board, using action points, worker placement, and card play to invent technologies and grow their workforce over three years. Victory points themselves can be spent as a resource, so players must balance banking points for the end against using them to fuel further actions.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Galactic Cruise is a big, visually striking worker-placement/engine game about running a space cruise line across three eras, with a worker-bumping system that keeps spots from being permanently locked out. Reviewers are split: some find it a satisfying, generous Euro with great production, while at least one detailed review felt turns become a repetitive checklist with little real strategic tension and no true engine progression since your economy resets after each ship launch.",
+   "praised": [
+    "Exceptional production and art direction (retro-futuristic, Jetsons-meets-2001 aesthetic) by Ian O'Toole",
+    "Best-in-class player aids and iconography for a game of this complexity",
+    "Worker-bumping mechanic solves the old worker-placement 'locked out' problem — bumped players get compensation",
+    "Broad, varied point sources typical of big Euros, appealing to genre fans"
+   ],
+   "criticised": [
+    "Some found gameplay formulaic — 'going through the motions' rather than making meaningful choices",
+    "Player economy resets after launching each ship, giving little sense of progression or payoff",
+    "Iconography can be confusing in places, particularly the 'day in space' section of the player board",
+    "Physically huge box/footprint, even bigger than typical Lacerda-scale games, adds setup burden",
+    "Some reviewers feel it overpromises and underdelivers relative to its scale and ambition"
+   ],
    "interaction": {
     "level": "Medium",
-    "kind": "Shared company network, worker placement",
-    "detail": "Actions taken by one supervisor build out a shared company network that makes other players' jobs easier, so the board's connections are a common resource even as each player runs their own ships and workforce. Worker placement spots and open drafting also put players in direct competition for the same options."
+    "kind": "Worker-placement bumping on a shared board",
+    "detail": "Players compete for the same central worker-placement spots but can bump an occupying opponent's worker off, with the bumped player receiving income as compensation rather than being fully blocked. Most of the actual building — ships, technologies, company network — happens on individual player boards, so shared state is limited mainly to the contested placement spots and market/track positions."
    },
    "win_criteria": "Most points, many sources",
    "scoring": {
     "breadth": "Broad",
-    "why": "Unknown — I don't have verified information on what actually decides the winner in this specific game.",
-    "how_you_win": "The supervisor with the most success after three years takes over as CEO, built through constructing ships, satisfying guests, expanding the network, researching technologies, and managing victory points as a spendable resource."
+    "why": "Victory points accrue from several separate systems (ship building, guest satisfaction, technology, network growth) as is typical for a big Euro",
+    "how_you_win": "Tally points from multiple sources across the three eras — the highest total becomes the new company CEO."
    },
-   "similar": [],
-   "teachers": [
-    "Rahdo Runs Through",
-    "Watch It Played"
+   "similar": [
+    "Anachrony",
+    "Barrage",
+    "On Mars",
+    "Great Western Trail",
+    "Lisboa"
    ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/galactic-cruise/",
+    "https://boardgamegeek.com/boardgame/391137/galactic-cruise",
+    "https://boardgamegeek.com/thread/3619185/galactic-cruise-a-solo-and-multiplayer-review"
+   ],
+   "source": "web",
    "_fingerprint": "7358aaa10d99011a",
-   "_name": "Galactic Cruise",
-   "source": "description"
+   "_name": "Galactic Cruise"
   },
   "plays": 1,
   "my_rating": null
@@ -21639,26 +21867,48 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Players lead one of four Minoan clans, using action and open drafting along with dice rolling to take actions, earn income, and move across the map, competing through governance and cultivation of their clan's identity rather than warfare. Area majority/influence determines control as clans jockey for position toward the title of Minos.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Minos plays as a dice-drafting, engine-building Euro where you draft dice to trigger card-based combo actions, build up tracks, and place warriors for area presence; it feels lush and combo-heavy but suffers from significant downtime and fiddly turns, especially at 3-4 players. Despite a wide array of tracks and bonuses, most of the score actually comes from just two sources (Palace/Decree cards and area majority/presence), making it feel narrower than its length and complexity suggest.",
+   "praised": [
+    "Tense, satisfying dice-drafting mechanic with real push-your-luck/blocking tension",
+    "Strong combo-building and engine-building payoff as tracks and cards interact",
+    "High production quality and clear player aids from Board&Dice",
+    "Solo mode is straightforward to run"
+   ],
+   "criticised": [
+    "Heavy downtime, especially at 3-4 players (games can run 3.5-5 hours; one reviewer felt 80% of a 4-player game was waiting)",
+    "Fiddly, substep-heavy actions that slow the dice-drafting phase down",
+    "Scoring is 'point-salady' with lots of minor bonus sources but no real tiebreaker",
+    "Despite many mechanisms, only 1-2 sources (Palace/Decree cards, area majority) actually swing the score, making other systems (e.g. boats) feel superfluous",
+    "Best experienced at low player counts (1-2), which undercuts its billing as a 1-4 player game"
+   ],
    "interaction": {
-    "level": "Medium",
-    "kind": "Area influence, shared drafting",
-    "detail": "Clans contest control of shared areas through area majority/influence and draft from common action pools, putting players in direct competition for the same spaces and options. Each clan also develops its own variable powers and identity on a separate part of its board."
+    "level": "Low",
+    "kind": "Indirect blocking and drafting competition",
+    "detail": "Players mostly build their own engines and boards independently; the main interaction point is turn-order blocking during dice/action drafting (taking a die or space before an opponent can), plus competing for area majority/presence on a shared board. There is no direct conflict or combat, and reviewers explicitly describe interaction as minimal, calling out 'little to no player interaction apart from the blocking during dice placement.'"
    },
-   "win_criteria": "Other",
+   "win_criteria": "Most points, many sources",
    "scoring": {
-    "breadth": "Some",
-    "why": "",
-    "how_you_win": "The clan that best establishes governance, prosperity, and area influence over the other clans is declared Minos, the ultimate leader of the Minoan people."
+    "breadth": "Salad",
+    "why": "There are many nominal scoring inputs (cards, tracks, resources, farms, warriors, player board bonuses) but reviewers note only a couple of sources actually move the needle much.",
+    "how_you_win": "You win by accumulating the most points, primarily from Decree/Palace cards you've tucked and from area majority/presence scored with warriors (at set rounds), supplemented by many smaller bonuses from actions and tracks."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Coimbra",
+    "Tiletum",
+    "The Artemis Project",
+    "Rurik: Dawn of Kiev",
+    "Dice Hospital"
+   ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/minos-dawn-of-the-bronze-age/",
+    "https://boardgameoverlord.com/board-game-reviews/minos-dawn-of-the-dice-or-maybe-dawn-of-the-downtime-a-minos-dawn-of-the-bronze-age-review-a-wait-for-sale-recommendation/",
+    "https://boardgamegeek.com/thread/3601845/minos-dawn-of-the-bronze-age-a-detailed-review-by",
+    "https://boardgamegeek.com/boardgame/423401/minos-dawn-of-the-bronze-age"
+   ],
+   "source": "web",
    "_fingerprint": "00c32e9b852da1f4",
-   "_name": "Minos: Dawn of the Bronze Age",
-   "source": "description"
+   "_name": "Minos: Dawn of the Bronze Age"
   },
   "plays": 0,
   "my_rating": null
@@ -23857,26 +24107,51 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "Players bid against rivals to win landing rights, then use income and investment to buy planes with longer range to expand their air-travel network across four decades of historical events. Routes can be sold to the growing Pan Am company for profit, with that money reinvested into further growth or into Pan Am stock.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Pan Am is a worker-placement/bidding game where players bid on airport and destination cards to build air routes, buy planes, sell routes to Pan Am for cash, and funnel that money into buying Pan Am stock, with the retro aviation theme woven tightly into the mechanics. Most of the tension comes from an open-bidding worker placement track rather than direct route conflict, and reviewers consistently call it a tight, well-paced design that punches above its \"mass market\" origins, though the payoff is narrower than the theme suggests since it all reduces to who holds the most stock at the end.",
+   "praised": [
+    "The open-bidding/auction take on worker placement, widely called the standout mechanic and more interactive than typical worker placement",
+    "Strong theme integration - route building, plane upgrades, and Pan Am's expansion feel thematically coherent (some reviewers read it as a comment on startups being absorbed by a giant corporation)",
+    "Attractive retro aesthetic, accessible iconography (colorblind-friendly icons, textured plane pieces for visually impaired players)",
+    "Approachable for newer players while still offering enough depth/multiple viable strategies to reward veterans and repeat plays",
+    "Well-paced, smoothly flowing turn structure"
+   ],
+   "criticised": [
+    "Stock price randomness/Event card swings can unfairly punish players who invest heavily in shares early if the price stays low",
+    "Directive/Event card draws add randomness some reviewers felt was unnecessary, with house-rule suggestions to draft instead of draw",
+    "Feels flat or lackluster at 2 players since bidding tension depends on more competitors",
+    "Component quality criticized by some as cheap for the price - small hard-to-read destination cards, similar card colors for different regions, lightweight plastic pieces",
+    "Ultimately most decisions funnel into a single money/stock-accumulation race, so despite thematic variety the actual win condition is narrow"
+   ],
    "interaction": {
-    "level": "High",
-    "kind": "Competitive bidding, shared route rights",
-    "detail": "Landing rights are won through auction and constrained bidding against other players, so the same limited spaces are directly contested, and turn order is claimed rather than fixed. Stock holding in the shared Pan Am company also ties players' fortunes to a common asset."
+    "level": "Medium",
+    "kind": "Competitive bidding and shared resource claiming",
+    "detail": "Players compete directly over a shared set of airport/destination cards and route claims through open, visible bidding - being outbid sends your worker back for reuse, so it's tense but not a hard lockout. Money is public knowledge, which shapes bidding strategy, and Pan Am's own expansion (via die rolls and events) can seize routes players already claimed, forcing a sale - so the shared board state and stock market are the main channels through which players affect each other, while each player's own fleet/route income functions more like a personal engine feeding the shared stock race."
    },
    "win_criteria": "Most money",
    "scoring": {
-    "breadth": "Some",
-    "why": "",
-    "how_you_win": "Players build value by winning landing rights, expanding their route network, selling routes to Pan Am for profit, and investing in growth and Pan Am stock across the game's four decades."
+    "breadth": "Focused",
+    "why": "Routes, planes, and directive-card bonuses all exist mainly to generate cash, which is then funneled into a single win condition: owning the most Pan Am stock at game end.",
+    "how_you_win": "Convert route income and one-time route-sale payouts into capital, then time your stock purchases (cheaper early, but price is volatile) to end the game holding more Pan Am shares than any opponent."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Chicago Express",
+    "Airlines Europe",
+    "Power Grid",
+    "18XX stock/route games (e.g. 1830)",
+    "Steam/Age of Steam"
+   ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/pan-am/",
+    "https://gamingtrend.com/reviews/pan-am-review-mile-high-gaming-club/",
+    "https://opinionatedgamers.com/2020/08/04/larry-levy-first-impressions-of-pan-am/",
+    "https://boardgamereview.co.uk/game-reviews/pan-am-board-game-review/",
+    "https://boardgamegeek.com/thread/3097562/pan-am-board-game-review-funko-games-prospero-hall",
+    "https://techraptor.net/tabletop/reviews/pan-am-board-game-review-0"
+   ],
+   "source": "web",
    "_fingerprint": "93623219284944f7",
-   "_name": "Pan Am",
-   "source": "description"
+   "_name": "Pan Am"
   },
   "plays": 2,
   "my_rating": 7.3
@@ -24272,26 +24547,50 @@
    }
   },
   "ai": {
-   "confidence": "low",
-   "summary": "In this two-player civ-lite game, each side plays Athens and the Delian League or Sparta and the Peloponnesian League, securing supply routes to five markets for trade while feeding the population drawn from controlled territories. Players fight to seize territories and siege poleis, or use diplomacy to convince a polis to join their league, using dice rolling and card play to resolve conflicts.",
-   "praised": [],
-   "criticised": [],
+   "confidence": "high",
+   "summary": "Polis plays like a tight economic engine-management game wearing a wargame's clothes: most of the tension comes from feeding your population, running trade routes to five markets, and husbanding scarce prestige, with actual battles being infrequent but pivotal set pieces. It is widely described as brutally unforgiving of mismanagement, where a single misstep in logistics, iron, or prestige can end the game outright long before the map is settled.",
+   "praised": [
+    "Elegant, tightly balanced design that fuses euro-style economic engine-building with a light wargame",
+    "High component and production quality, including a double-layered board",
+    "Strong thematic cohesion between trade, feeding your population, diplomacy, and war",
+    "Deep strategy emerging from a compact, minimalist ruleset with little tedium",
+    "Genuine tension since combat, market access, and diplomacy directly interfere with the opponent"
+   ],
+   "criticised": [
+    "Very unforgiving/punishing: no safety nets, and new players often lose outright to starvation, running out of prestige, or a botched attack rather than losing on points",
+    "Steep learning curve best learned by losing a few times",
+    "Fixed setup and limited variability between plays compared to modern asymmetric designs",
+    "Surprisingly little actual fighting for a game themed around the Peloponnesian War",
+    "Games can end abruptly and early (after any of four eras) if a player collapses economically, which some find anticlimactic"
+   ],
    "interaction": {
     "level": "High",
-    "kind": "Direct area control and conflict",
-    "detail": "Both players contest the same map of territories, poleis, and trade routes, either through combat and sieges or through diplomatic persuasion, so control of shared spaces shifts directly between opponents. Each player also manages their own empire's supply and feeding of population as a separate concern."
+    "kind": "Direct competition for trade routes, cities, and battles",
+    "detail": "Players contest a shared market (only five trade slots) and a shared map of poleis, so one player's trading, military movement, or diplomatic overtures actively block or threaten the other's supply lines and territorial control. Combat and sieges are resolved directly between opponents' forces, and diplomats (proxenoi) can flip a contested city, making almost every action zero-sum against the opponent rather than played on a private tableau."
    },
-   "win_criteria": "Most points, many sources",
+   "win_criteria": "Most points, one or two sources",
    "scoring": {
-    "breadth": "Some",
-    "why": "",
-    "how_you_win": "The empire with the greater population and prestige at the end of the game wins, built through territorial control, successful trade with the five markets, and poleis won by conquest or diplomacy."
+    "breadth": "Focused",
+    "why": "Final score is built from prestige and population/city control rather than many disparate scoring categories, but the game can also end instantly via a loss condition (starvation or zero prestige) rather than a points count.",
+    "how_you_win": "Survive four eras while managing population feeding and prestige; whoever accumulates more prestige and controls more population/poleis at the end wins, but a player who lets credibility hit zero or fails to feed their population loses immediately regardless of points."
    },
-   "similar": [],
-   "teachers": [],
+   "similar": [
+    "Pericles: The Peloponnesian Wars",
+    "Blue Moon",
+    "Taj Mahal",
+    "Scythe",
+    "COIN series games (e.g. Gandhi, All Bridges Burning)"
+   ],
+   "sources": [
+    "https://www.meeplemountain.com/reviews/polis-second-edition/",
+    "https://punchboard.co.uk/polis-review/",
+    "http://hiewandboardgames.blogspot.com/2025/12/polis-fight-for-hegemony.html",
+    "https://boardgamegeek.com/thread/883808/polis-a-game-deserving-a-wider-audience",
+    "https://boardgamegeek.com/boardgame/303551/polis"
+   ],
+   "source": "web",
    "_fingerprint": "ae50d086028eff33",
-   "_name": "Polis",
-   "source": "description"
+   "_name": "Polis"
   },
   "plays": 0,
   "my_rating": null

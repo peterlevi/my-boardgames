@@ -1,22 +1,47 @@
 {
- "confidence": "low",
- "summary": "Players bid against rivals to win landing rights, then use income and investment to buy planes with longer range to expand their air-travel network across four decades of historical events. Routes can be sold to the growing Pan Am company for profit, with that money reinvested into further growth or into Pan Am stock.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Pan Am is a worker-placement/bidding game where players bid on airport and destination cards to build air routes, buy planes, sell routes to Pan Am for cash, and funnel that money into buying Pan Am stock, with the retro aviation theme woven tightly into the mechanics. Most of the tension comes from an open-bidding worker placement track rather than direct route conflict, and reviewers consistently call it a tight, well-paced design that punches above its \"mass market\" origins, though the payoff is narrower than the theme suggests since it all reduces to who holds the most stock at the end.",
+ "praised": [
+  "The open-bidding/auction take on worker placement, widely called the standout mechanic and more interactive than typical worker placement",
+  "Strong theme integration - route building, plane upgrades, and Pan Am's expansion feel thematically coherent (some reviewers read it as a comment on startups being absorbed by a giant corporation)",
+  "Attractive retro aesthetic, accessible iconography (colorblind-friendly icons, textured plane pieces for visually impaired players)",
+  "Approachable for newer players while still offering enough depth/multiple viable strategies to reward veterans and repeat plays",
+  "Well-paced, smoothly flowing turn structure"
+ ],
+ "criticised": [
+  "Stock price randomness/Event card swings can unfairly punish players who invest heavily in shares early if the price stays low",
+  "Directive/Event card draws add randomness some reviewers felt was unnecessary, with house-rule suggestions to draft instead of draw",
+  "Feels flat or lackluster at 2 players since bidding tension depends on more competitors",
+  "Component quality criticized by some as cheap for the price - small hard-to-read destination cards, similar card colors for different regions, lightweight plastic pieces",
+  "Ultimately most decisions funnel into a single money/stock-accumulation race, so despite thematic variety the actual win condition is narrow"
+ ],
  "interaction": {
-  "level": "High",
-  "kind": "Competitive bidding, shared route rights",
-  "detail": "Landing rights are won through auction and constrained bidding against other players, so the same limited spaces are directly contested, and turn order is claimed rather than fixed. Stock holding in the shared Pan Am company also ties players' fortunes to a common asset."
+  "level": "Medium",
+  "kind": "Competitive bidding and shared resource claiming",
+  "detail": "Players compete directly over a shared set of airport/destination cards and route claims through open, visible bidding - being outbid sends your worker back for reuse, so it's tense but not a hard lockout. Money is public knowledge, which shapes bidding strategy, and Pan Am's own expansion (via die rolls and events) can seize routes players already claimed, forcing a sale - so the shared board state and stock market are the main channels through which players affect each other, while each player's own fleet/route income functions more like a personal engine feeding the shared stock race."
  },
  "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "Players build value by winning landing rights, expanding their route network, selling routes to Pan Am for profit, and investing in growth and Pan Am stock across the game's four decades."
+  "breadth": "Focused",
+  "why": "Routes, planes, and directive-card bonuses all exist mainly to generate cash, which is then funneled into a single win condition: owning the most Pan Am stock at game end.",
+  "how_you_win": "Convert route income and one-time route-sale payouts into capital, then time your stock purchases (cheaper early, but price is volatile) to end the game holding more Pan Am shares than any opponent."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Chicago Express",
+  "Airlines Europe",
+  "Power Grid",
+  "18XX stock/route games (e.g. 1830)",
+  "Steam/Age of Steam"
+ ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/pan-am/",
+  "https://gamingtrend.com/reviews/pan-am-review-mile-high-gaming-club/",
+  "https://opinionatedgamers.com/2020/08/04/larry-levy-first-impressions-of-pan-am/",
+  "https://boardgamereview.co.uk/game-reviews/pan-am-board-game-review/",
+  "https://boardgamegeek.com/thread/3097562/pan-am-board-game-review-funko-games-prospero-hall",
+  "https://techraptor.net/tabletop/reviews/pan-am-board-game-review-0"
+ ],
+ "source": "web",
  "_fingerprint": "93623219284944f7",
- "_name": "Pan Am",
- "source": "description"
+ "_name": "Pan Am"
 }

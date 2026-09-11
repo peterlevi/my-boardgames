@@ -1,22 +1,44 @@
 {
- "confidence": "low",
- "summary": "Flotilla combines two interwoven modes of play: starting as a 'Sinkside' Fleet Commander, players use action retrieval, dice rolling, and hand management to manage a fleet, moving on a grid to pick up and deliver goods across a modular board built from tiles. Deck, bag, and pool building lets players grow their available actions and resources over the course of the game as they trade in a shared market.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Flotilla is a dense, brain-burning economic engine-builder where players split time between exploring/gathering as a \"Sinkside\" captain and building up the flotilla as a \"Skyside\" commissioner, with a shared market and interlocking economies tying everyone together. It's a long, fiddly game (often running 2-4 hours) that rewards repeated plays once the two-layer system clicks, but the first game or two is largely spent just learning how the pieces interact.",
+ "praised": [
+  "Unique dual Sinkside/Skyside role-switching system",
+  "Strong post-apocalyptic nautical theme woven into mechanics (not just pasted on)",
+  "Shared market creates real tension — sales and purchases shift prices for everyone",
+  "Beautiful, thematic art and production",
+  "Great long-term depth and variety of strategic paths (artifacts, quests, outposts, guild seals)"
+ ],
+ "criticised": [
+  "Very high learning curve; teaching requires explaining two interacting layers of rules",
+  "Long playtime that can stretch to 3-4 hours, especially early plays",
+  "Resources are abstract colors (red/green/blue/yellow) rather than thematic goods, which some find immersion-breaking",
+  "Limited to 3-5 players",
+  "Not a game you can expect to optimize until several plays in"
+ ],
  "interaction": {
-  "level": "Medium",
-  "kind": "Shared modular board, pick-up-and-deliver",
-  "detail": "Players move and act on a common modular board built from placed tiles, competing for the same delivery routes, market opportunities, and board space. Each player otherwise manages their own separate pool of actions, cards, and fleet resources."
+  "level": "High",
+  "kind": "Shared market and interdependent roles",
+  "detail": "Sinkside players gather resources that feed Skyside players' construction, and a shared, fluctuating market means every purchase or sale changes prices for the whole table. Positive actions frequently benefit other players as a side effect, and players compete for the same quests, guild seals, and outpost placements, so timing and reading opponents matters a lot."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "Players win by outpacing their opponents in bringing prosperity to the Flotilla, achieved through efficient pick-up-and-delivery runs, market trading, and building up their own action pool over the game."
+  "breadth": "Broad",
+  "why": "Points come from completed quests (diminishing value over time), collected artifacts, connected flotilla tile placement, and guild seals",
+  "how_you_win": "Accumulate the most victory points by completing quests early (they pay less the longer they sit), building and connecting flotilla tiles, and winning guild seals (10 points for first, 5 for second per guild)."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Trickerion",
+  "Anachrony",
+  "Terraforming Mars",
+  "Great Western Trail",
+  "Underwater Cities"
+ ],
+ "sources": [
+  "https://spacebiff.com/2020/01/15/flotilla/",
+  "https://www.meeplemountain.com/reviews/flotilla/",
+  "https://boardgamegeek.com/boardgame/275969/flotilla/ratings?rated=1&comment=1"
+ ],
+ "source": "web",
  "_fingerprint": "08b07b645bbe4e67",
- "_name": "Flotilla",
- "source": "description"
+ "_name": "Flotilla"
 }

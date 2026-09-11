@@ -1,22 +1,44 @@
 {
- "confidence": "low",
- "summary": "Players lead one of four Minoan clans, using action and open drafting along with dice rolling to take actions, earn income, and move across the map, competing through governance and cultivation of their clan's identity rather than warfare. Area majority/influence determines control as clans jockey for position toward the title of Minos.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Minos plays as a dice-drafting, engine-building Euro where you draft dice to trigger card-based combo actions, build up tracks, and place warriors for area presence; it feels lush and combo-heavy but suffers from significant downtime and fiddly turns, especially at 3-4 players. Despite a wide array of tracks and bonuses, most of the score actually comes from just two sources (Palace/Decree cards and area majority/presence), making it feel narrower than its length and complexity suggest.",
+ "praised": [
+  "Tense, satisfying dice-drafting mechanic with real push-your-luck/blocking tension",
+  "Strong combo-building and engine-building payoff as tracks and cards interact",
+  "High production quality and clear player aids from Board&Dice",
+  "Solo mode is straightforward to run"
+ ],
+ "criticised": [
+  "Heavy downtime, especially at 3-4 players (games can run 3.5-5 hours; one reviewer felt 80% of a 4-player game was waiting)",
+  "Fiddly, substep-heavy actions that slow the dice-drafting phase down",
+  "Scoring is 'point-salady' with lots of minor bonus sources but no real tiebreaker",
+  "Despite many mechanisms, only 1-2 sources (Palace/Decree cards, area majority) actually swing the score, making other systems (e.g. boats) feel superfluous",
+  "Best experienced at low player counts (1-2), which undercuts its billing as a 1-4 player game"
+ ],
  "interaction": {
-  "level": "Medium",
-  "kind": "Area influence, shared drafting",
-  "detail": "Clans contest control of shared areas through area majority/influence and draft from common action pools, putting players in direct competition for the same spaces and options. Each clan also develops its own variable powers and identity on a separate part of its board."
+  "level": "Low",
+  "kind": "Indirect blocking and drafting competition",
+  "detail": "Players mostly build their own engines and boards independently; the main interaction point is turn-order blocking during dice/action drafting (taking a die or space before an opponent can), plus competing for area majority/presence on a shared board. There is no direct conflict or combat, and reviewers explicitly describe interaction as minimal, calling out 'little to no player interaction apart from the blocking during dice placement.'"
  },
- "win_criteria": "Other",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "The clan that best establishes governance, prosperity, and area influence over the other clans is declared Minos, the ultimate leader of the Minoan people."
+  "breadth": "Salad",
+  "why": "There are many nominal scoring inputs (cards, tracks, resources, farms, warriors, player board bonuses) but reviewers note only a couple of sources actually move the needle much.",
+  "how_you_win": "You win by accumulating the most points, primarily from Decree/Palace cards you've tucked and from area majority/presence scored with warriors (at set rounds), supplemented by many smaller bonuses from actions and tracks."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Coimbra",
+  "Tiletum",
+  "The Artemis Project",
+  "Rurik: Dawn of Kiev",
+  "Dice Hospital"
+ ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/minos-dawn-of-the-bronze-age/",
+  "https://boardgameoverlord.com/board-game-reviews/minos-dawn-of-the-dice-or-maybe-dawn-of-the-downtime-a-minos-dawn-of-the-bronze-age-review-a-wait-for-sale-recommendation/",
+  "https://boardgamegeek.com/thread/3601845/minos-dawn-of-the-bronze-age-a-detailed-review-by",
+  "https://boardgamegeek.com/boardgame/423401/minos-dawn-of-the-bronze-age"
+ ],
+ "source": "web",
  "_fingerprint": "00c32e9b852da1f4",
- "_name": "Minos: Dawn of the Bronze Age",
- "source": "description"
+ "_name": "Minos: Dawn of the Bronze Age"
 }

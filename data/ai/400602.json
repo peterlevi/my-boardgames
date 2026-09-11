@@ -1,22 +1,44 @@
 {
- "confidence": "low",
- "summary": "Each player acts as a deity guiding their own civilization, advancing along tech trees and tracks that span both cultural/technological progress and evolutionary adaptations, with dice rolling and drafted options shaping which advances are available on a given turn. Area movement across a modular, variably set-up board and an income mechanic support the civilization's ongoing development.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Civolution plays as a dense, dice-driven civilization-building game where each of the 3-4 hour early plays (settling to ~2 hours once familiar) is spent juggling 20+ action modules, tech tracks, and card combos with very little direct conflict between players. It's widely described as Stefan Feld's most maximalist point-salad design yet, rewarding planning and combo-building over confrontation.",
+ "praised": [
+  "Huge variety of viable strategies and combos, with strong replayability from modular board/goal setup",
+  "Clean, logical individual mechanics despite the game's overall size and density",
+  "Polished production, organization, and rulebook",
+  "Feels fresh and rewarding to players who enjoy heavy Euro optimization (compared favorably to Castles of Burgundy 'on steroids')"
+ ],
+ "criticised": [
+  "Overwhelming complexity and steep learning curve, especially teaching it to new players",
+  "Long playtime and a huge table footprint (multiple boards, hard to fit on a standard table)",
+  "Noticeable luck element from dice and hidden map/card draws that some feel undercuts strategic control",
+  "Risk of analysis paralysis and downtime given the sheer number of options",
+  "Reception is polarized — some player groups split roughly a third love it, a third dislike it"
+ ],
  "interaction": {
-  "level": "Medium",
-  "kind": "drafting shared advances, moving on a shared board",
-  "detail": "Players draft from a shared, open pool of developmental options and move across the same modular board via area movement, while each civilization's own tech tracks, patterns, and income are recorded on that player's individual console."
+  "level": "Low",
+  "kind": "Parallel building, indirect competition",
+  "detail": "Players mostly develop their own civilization console and tracks independently, racing for the same map territory and shared goal/scoring tiles rather than directly attacking each other. Reviewers note 'there's very little your opponents can do to interfere' — the worst you can do is temporarily weaken a rival tribe, not stop them scoring — so most of the game is solitaire-style optimization with light positional competition over shared spaces."
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "",
-  "how_you_win": "Progress made along tech trees/tracks and pattern building, reflecting a civilization's cultural, technical, and evolutionary development, determines how a player fares relative to the other civilizations."
+  "breadth": "Salad",
+  "why": "Points come from interim era scoring, multiple end-game tracks, console diamonds, features, worker placement, map spread, and card multipliers simultaneously",
+  "how_you_win": "Accumulate the most 'diamond' victory points across dozens of overlapping scoring systems spanning exploration, tech, and civilization development."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "The Castles of Burgundy",
+  "Trickerion",
+  "Bonfire",
+  "Anachrony",
+  "Great Western Trail"
+ ],
+ "sources": [
+  "https://www.meeplemountain.com/reviews/civolution/",
+  "https://dudetakeyourturn.ca/2024/12/24/first-impressions-civolution/",
+  "https://opinionatedgamers.com/2023/10/07/simon-saturday-report-including-mini-preview-of-civolution/",
+  "https://unknowns.de/forum/thread/24435-civolution-deep-print-games-stefan-feld/"
+ ],
+ "source": "web",
  "_fingerprint": "2651526626297111",
- "_name": "Civolution",
- "source": "description"
+ "_name": "Civolution"
 }

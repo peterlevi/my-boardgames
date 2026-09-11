@@ -1,22 +1,44 @@
 {
- "confidence": "low",
- "summary": "Across four years, each divided into four seasonal phases, players draft actions and place tiles to grow bamboo, tend to their family, and convert the results into happiness points. Turn choices in the action drafting determine what remains available afterward, while tile placement builds out each player's own field layout over the four years.",
- "praised": [],
- "criticised": [],
+ "confidence": "high",
+ "summary": "Players slide bamboo/incense tokens into grooved home boards to pick actions across four rounds of four seasons, placing tiles to build a balanced (left/right symmetric) farm while burning incense at shared temples for spirit bonuses. It plays as a relaxed, puzzly tile-optimization game rather than a tense strategy title — reviewers describe it as cozy and contemplative.",
+ "praised": [
+  "The tactile bamboo/incense sliding action-selection mechanism, called unique and satisfying",
+  "Artwork and overall thematic mood (whimsical, gorgeous)",
+  "Depth in the home-tile placement puzzle from the balance requirement",
+  "High production quality"
+ ],
+ "criticised": [
+  "Iconography and UI problems: key tile info tucked in small corners, tiny alignment arrows, oversized trackers wasting board space",
+  "A middling, must-keep-handy rulebook",
+  "Summed up by one reviewer as 'everyone likes it, no one loves it' — solidly good but rarely a favorite",
+  "Minor component complaints (excess currency tokens, tile holders that spill)"
+ ],
  "interaction": {
-  "level": "Medium",
-  "kind": "drafting from a shared pool of actions",
-  "detail": "Because actions are drafted from a shared, limited pool, taking one denies it to other players that round, but the bamboo fields and tiles being placed are otherwise built up on each player's own individual board."
+  "level": "Low",
+  "kind": "Indirect, shared temple majority",
+  "detail": "Each player builds on a private home board that is not shared, so most of the game is parallel development. The only shared, contested state is the temple spaces, where incense placement creates area-majority competition for spirit bonuses, with ties broken by turn order."
  },
- "win_criteria": "Other",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "",
-  "how_you_win": "Happiness points earned from tending family and harvesting bamboo over the four years are totaled, and the highest total wins."
+  "breadth": "Broad",
+  "why": "Points come from home-tile values, unique spirit tiles, completed balance 'contracts,' and a left/right imbalance penalty rather than one dominant track",
+  "how_you_win": "Accumulate the most points across in-round and end-game scoring from tile placement, temple favors, and balance bonuses over four years/rounds."
  },
- "similar": [],
- "teachers": [],
+ "similar": [
+  "Bitoku",
+  "Silk",
+  "The Red Cathedral",
+  "Kanagawa",
+  "The White Castle"
+ ],
+ "sources": [
+  "https://www.boardgamequest.com/bamboo-review/",
+  "https://www.meeplemountain.com/reviews/bamboo/",
+  "https://www.whatboardgame.com/post/bamboo-board-game-review",
+  "https://devirgames.com/the-kemushi-saga-a-magical-world-for-devir-board-games",
+  "boardgamegeek.com/boardgame/351538 (search snippets only, direct fetch blocked)"
+ ],
+ "source": "web",
  "_fingerprint": "a0950d1c36025330",
- "_name": "Bamboo",
- "source": "description"
+ "_name": "Bamboo"
 }

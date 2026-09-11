@@ -15,6 +15,7 @@ import json
 import xml.etree.ElementTree as ET
 
 import interaction
+import traits
 from common import RAW, ROOT, load_exclusions, load_overrides
 
 
@@ -59,6 +60,7 @@ def parse_item(it, is_expansion=False):
     mechanics = links(it, "boardgamemechanic")
     categories = links(it, "boardgamecategory")
     families = links(it, "boardgamefamily")
+    designers = links(it, "boardgamedesigner")
     # On an expansion's page the boardgameexpansion link is inbound and names
     # the base game; on a base game it is outbound and names the expansions.
     expands = [l.get("id") for l in it.findall("link")
@@ -77,6 +79,7 @@ def parse_item(it, is_expansion=False):
         minplaytime=num(attr(it, "minplaytime"), int),
         maxplaytime=num(attr(it, "maxplaytime"), int),
         mechanics=mechanics, categories=categories, families=families,
+        designers=designers, traits=traits.of(mechanics),
         interaction=level, interaction_shared=shared,
         poll=poll,
     )

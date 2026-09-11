@@ -22,6 +22,9 @@
   }
 }
 * { box-sizing:border-box; }
+/* `hidden` must win over any display rule, or a filtered-out row stays on
+   screen — which is exactly what made the tag search look broken. */
+[hidden] { display:none !important; }
 /* Geometric-humanist, and every entry is a system font: the report has to
    stay self-contained, so a webfont link would simply fail wherever external
    resources are blocked (Slack's preview, a strict CSP). Avenir Next carries
@@ -91,14 +94,20 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 .tagbox label:hover { background:var(--bg); }
 .tagbox input { margin:0; flex:none; position:relative; top:2px; }
 .tagbox .tname { font-weight:600; white-space:nowrap; }
-.tagbox .tkind { font-size:.68rem; color:var(--accent); text-transform:uppercase;
-  letter-spacing:.04em; flex:none; }
+.tagbox .tkind { font-size:.66rem; text-transform:uppercase; flex:none;
+  letter-spacing:.04em; color:var(--muted); min-width:52px; }
+.tagbox .tkind.trait { color:var(--best); }
+.tagbox .tkind.cat { color:var(--accent); }
+.tagbox .tkind.designer { color:var(--warn); }
 .tagbox .tcount { color:var(--muted); font-variant-numeric:tabular-nums;
   flex:none; }
 .tagbox .tdesc { color:var(--muted); overflow:hidden; text-overflow:ellipsis;
   white-space:nowrap; }
 .tagbox label.on { background:var(--bg); box-shadow:inset 0 0 0 1px var(--accent); }
 .tagbox .none { padding:10px; color:var(--muted); }
+td.designer { max-width:150px; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap; font-size:.82rem; }
+td.designer .more { color:var(--muted); }
 .pair span { color:var(--muted); font-size:.85rem; }
 /* The only thing pinned while scrolling: the count, what it is counting, and
    the column headers. The filters scroll away — they are a thing you set, not
@@ -251,8 +260,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     voters at N called N the best count. <b>Appr</b> = (Best + Recommended) ÷
     all votes at N. <b>Interaction</b> is <em>not</em> a BGG statistic — no such
     data exists in their API — it is derived from each game's mechanics and
-    categories, so treat it as a rough sort, not a fact. <b>Mechanics &amp; categories</b> are BGG's own tags,
-    filterable directly. Every filter runs in the page; nothing here calls out
+    categories, so treat it as a rough sort, not a fact. One filter field covers every property a game has —
+    BGG's own categories, mechanics, designers and families, plus a few named
+    groupings of mechanics — searchable by name or description. Every filter runs in the page; nothing here calls out
     to BGG.</p>
   </details>
 </div>
@@ -269,8 +279,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   <details id="more">
     <summary>More filters</summary>
     <div class="row">
-      <div class="f"><label for="salad">Point salad</label>
-        <select id="salad"><!--__SALAD_OPTIONS__--></select></div>
       <div class="f"><label for="ix">Interaction</label>
         <select id="ix">
           <option value="">Any</option><option>Low</option>
@@ -305,8 +313,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <button class="link" id="reset" type="button">Reset filters</button>
     </div>
     <div class="row">
-      <div class="f"><label for="tagsearch">Mechanics &amp; categories</label>
-        <input id="tagsearch" type="search" placeholder="Search tags…"
+      <div class="f"><label for="tagsearch">Filter by trait, category, mechanic, designer…</label>
+        <input id="tagsearch" type="search" placeholder="Search 710 properties…"
                autocomplete="off"></div>
       <div class="f"><label for="tagmode">Match</label>
         <select id="tagmode">
@@ -335,7 +343,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="num" data-k="tmax">Time</th>
     <th class="num hide-sm" data-k="w">Weight</th>
     <th class="hide-sm" data-k="ix">Interact</th>
-    <th class="num hide-sm" data-k="sal">Salad</th>
+    <th class="hide-sm" data-k="ds">Designer</th>
     <th class="num hide-sm" data-k="verdict">At N</th>
     <th class="num hide-sm" data-k="bestPct">Best</th>
     <th class="num hide-sm" data-k="appr">Appr</th>
@@ -397,7 +405,9 @@ var tagRows = TAGS.map(function (t, i) {
     '<span class="tcount"></span>' +
     '<span class="tdesc"></span>';
   label.querySelector('.tname').textContent = t.n;
-  label.querySelector('.tkind').textContent = t.k === 'category' ? 'cat' : 'mech';
+  var kindEl = label.querySelector('.tkind');
+  kindEl.textContent = t.k;
+  kindEl.className = 'tkind ' + t.k;
   label.querySelector('.tcount').textContent = t.c;
   label.querySelector('.tdesc').textContent = t.d;
   label.title = t.d || t.n;
@@ -439,7 +449,7 @@ function refreshTagList() {
 
 var F = {
   q: el('q'), players: el('players'), mode: el('mode'),
-  ix: el('ix'), salad: el('salad'), tagmode: el('tagmode'),
+  ix: el('ix'), tagmode: el('tagmode'),
   smin: el('smin'), smax: el('smax'),
   mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
@@ -451,7 +461,6 @@ function applyDefaults() {
   F.q.value = '';
   F.players.value = OPTS.players;
   F.mode.value = OPTS.mode;
-  F.salad.value = OPTS.salad;
   F.exp.value = OPTS.expansions;
   F.votes.value = OPTS.minVotes;
   F.ix.value = '';
@@ -526,7 +535,7 @@ function partition() {
   var wmin = num(F.wmin.value), wmax = num(F.wmax.value);
   var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
-  var ix = F.ix.value, salad = F.salad.value;
+  var ix = F.ix.value;
   var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
 
@@ -542,7 +551,6 @@ function partition() {
 
     var s = n ? reading(g, n, fold, minVotes, mode) : null;
     var pass = structural && tagsOk(g, picked, tmode) &&
-      !(salad === 'no' && g.sal) && !(salad === 'yes' && !g.sal) &&
       !(ix && g.ix !== ix) &&
       !(smin !== null && !(g.av >= smin)) && !(smax !== null && !(g.av <= smax)) &&
       !(mymin !== null && !(g.my >= mymin)) && !(mymax !== null && !(g.my <= mymax)) &&
@@ -571,8 +579,6 @@ function describe() {
   if (!n && expMode !== 'show') head = 'All games';
 
   var extra = [];
-  if (F.salad.value === 'no') extra.push('no point salads');
-  if (F.salad.value === 'yes') extra.push('point salads only');
   if (F.ix.value) extra.push(F.ix.value.toLowerCase() + ' interaction');
   var picked = pickedTags();
   if (picked.length) {
@@ -608,12 +614,13 @@ function sortRows(rows) {
       case 'appr': return s ? s.appr : null;
       case 'total': return s ? s.total : null;
       case 'ix': return ['Low', 'Medium', 'High'].indexOf(g.ix);
+      case 'ds': return (g.ds && g.ds[0]) || null;
       case 'breadth':
         return ['Focused', 'Some', 'Broad', 'Salad'].indexOf(g.br);
       default: return g[sortKey];
     }
   }
-  var text = sortKey === 'n';
+  var text = sortKey === 'n' || sortKey === 'ds';
   rows.sort(function (a, b) {
     var x = get(a), y = get(b);
     if (text) {

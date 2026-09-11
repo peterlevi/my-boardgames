@@ -36,23 +36,52 @@ def thumb_uri(game):
     return "data:image/jpeg;base64," + base64.b64encode(f.read_bytes()).decode()
 
 
+# Everything the one filter field can match, in the order the list shows them.
+# Names can collide across kinds, so a tag is keyed by (kind, name).
+TAG_KINDS = [
+    ("trait", "traits", "trait"),
+    ("category", "categories", "cat"),
+    ("mechanic", "mechanics", "mech"),
+    ("designer", "designers", "designer"),
+    ("family", "families", "family"),
+]
+
+# BGG families are a long tail of one-offs and housekeeping; anything appearing
+# once is noise in a picker this size.
+FAMILY_MIN = 2
+FAMILY_SKIP = ("Admin:", "Digital Implementations", "Crowdfunding")
+
+
 def tag_index(games):
-    """Every mechanic and category in the collection, with counts and a plain
-    description, plus each game's tags as indices into that list. Indices keep
-    the payload small: the names would otherwise repeat ~3,400 times."""
+    """Every filterable property in the collection — trait, category,
+    mechanic, designer, family — with counts and, where useful, a description.
+    Each game carries indices into this list; the names would otherwise repeat
+    thousands of times in the payload."""
+    import traits as traits_mod
+
     desc = load_overrides("tag-descriptions.txt")
-    counts, kind = {}, {}
+    desc.update(traits_mod.DESCRIPTIONS)
+
+    counts = {}
     for g in games:
-        for t in g["mechanics"]:
-            counts[t] = counts.get(t, 0) + 1
-            kind[t] = "mechanic"
-        for t in g["categories"]:
-            counts[t] = counts.get(t, 0) + 1
-            kind.setdefault(t, "category")
-    names = sorted(counts, key=lambda t: (kind[t] != "category", t))
-    idx = {t: i for i, t in enumerate(names)}
-    tags = [{"n": t, "k": kind[t], "c": counts[t], "d": desc.get(t, "")}
-            for t in names]
+        for kind, field, _ in TAG_KINDS:
+            for t in g.get(field, []):
+                counts[(kind, t)] = counts.get((kind, t), 0) + 1
+
+    order = {k: i for i, (k, _, _) in enumerate(TAG_KINDS)}
+    label = {k: lab for k, _, lab in TAG_KINDS}
+
+    def keep(key):
+        kind, name = key
+        if kind != "family":
+            return True
+        return counts[key] >= FAMILY_MIN and not name.startswith(FAMILY_SKIP)
+
+    keys = sorted((k for k in counts if keep(k)),
+                  key=lambda k: (order[k[0]], k[1]))
+    idx = {k: i for i, k in enumerate(keys)}
+    tags = [{"n": name, "k": label[kind], "c": counts[(kind, name)],
+             "d": desc.get(name, "")} for kind, name in keys]
     return tags, idx
 
 
@@ -79,13 +108,15 @@ def compact(games, tag_idx, inline=True):
             "gk": g["geek"], "my": g["my_rating"],
             "tmin": g["minplaytime"], "tmax": g["maxplaytime"],
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
-            "pl": g["plays"], "sal": 1 if g["point_salad"] else 0,
+            "pl": g["plays"], "ds": g["designers"],
             "ix": g["interaction"], "exp": 1 if g["is_expansion"] else 0,
             "of": g["expands"], "t": playtime(g),
             "top": max((v[0] for v in poll.values()), default=0),
             "poll": poll,
-            "tg": sorted(tag_idx[t] for t in
-                         set(g["mechanics"]) | set(g["categories"])),
+            "tg": sorted(tag_idx[(kind, t)]
+                         for kind, field, _ in TAG_KINDS
+                         for t in set(g.get(field, []))
+                         if (kind, t) in tag_idx),
         })
     if missing:
         print(f"warning: {missing} thumbnails not cached, hotlinked instead — "
@@ -218,10 +249,6 @@ def passes_static(g, s, a, mode):
     viewer without JavaScript — sees exactly what the controls describe."""
     if g["exp"] and a.expansions != "show":
         return False
-    if a.salad == "no" and g["sal"]:
-        return False
-    if a.salad == "yes" and not g["sal"]:
-        return False
     if a.players and not qualifies(s, mode):
         return False
     return True
@@ -241,10 +268,6 @@ def describe(a):
         head = f"Games that play at {a.players}p"
 
     extra = []
-    if a.salad == "no":
-        extra.append("no point salads")
-    elif a.salad == "yes":
-        extra.append("point salads only")
     if a.expansions == "drop":
         extra.append("expansions ignored")
     return head + (", " + ", ".join(extra) if extra else "")
@@ -281,8 +304,10 @@ def rows_html(data, a):
         v = verdict_html(s, n)
         weight = f'{g["w"]:.2f}' if g["w"] else EM_DASH
         ix_html = f'<span class="tag {IX_PILL[g["ix"]]}">{g["ix"]}</span>'
-        salad_html = ('<span class="tag pw">yes</span>' if g["sal"]
-                      else '<span class="tag p1">no</span>')
+        who = g["ds"]
+        designer = (f'<span title="{esc(", ".join(who))}">{esc(who[0])}'
+                    + (f' <span class="more">+{len(who) - 1}</span>'
+                       if len(who) > 1 else '') + '</span>') if who else EM_DASH
         rank = g["rk"] if g["rk"] else EM_DASH
         inline = f'<span class="vinline">{v}</span>' if n else ""
         search = esc(f'{g["n"]} {g["y"] or ""}'.lower())
@@ -301,7 +326,7 @@ def rows_html(data, a):
             f'<td class="num">{esc(g["t"])}</td>'
             f'<td class="num hide-sm">{weight}</td>'
             f'<td class="hide-sm">{ix_html}</td>'
-            f'<td class="num hide-sm">{salad_html}</td>'
+            f'<td class="hide-sm designer">{designer}</td>'
             f'<td class="num hide-sm j-verdict">{v}</td>'
             f'<td class="num bar hide-sm j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
             f'<td class="num bar hide-sm j-appr">{bar(s["appr"]) if s else EM_DASH}</td>'
@@ -356,7 +381,6 @@ def main():
                     help="player count the page opens on (0 = any)")
     ap.add_argument("--mode", choices=["best", "good", "any"], default="good",
                     help="opening player-count rule")
-    ap.add_argument("--salad", choices=["any", "no", "yes"], default="any")
     ap.add_argument("--expansions", choices=["fold", "show", "drop"],
                     default="fold", help="fold: hide expansion rows but let "
                                          "them speak for their base game")
@@ -373,7 +397,7 @@ def main():
     # JavaScript gets the same order rather than raw cache order.
     data.sort(key=lambda g: (g["rk"] is None, g["rk"] or 10 ** 9))
     tpl = (HERE / "report_template.html").read_text(encoding="utf-8")
-    opts = {"players": a.players, "mode": a.mode, "salad": a.salad,
+    opts = {"players": a.players, "mode": a.mode,
             "expansions": a.expansions, "minVotes": a.min_votes}
 
     rows, shown = rows_html(data, a)
@@ -387,8 +411,6 @@ def main():
     modes = options([("any", "Plays at that count"),
                      ("good", "Good at that count"),
                      ("best", "Best at that count")], a.mode)
-    salads = options([("any", "Doesn't matter"), ("no", "No — exclude salads"),
-                      ("yes", "Yes — only salads")], a.salad)
     exps = options([("fold", "Hide, but count for base game"),
                     ("show", "Show as their own rows"),
                     ("drop", "Ignore completely")], a.expansions)
@@ -403,7 +425,6 @@ def main():
             .replace("<!--__ROWS__-->", rows)
             .replace("<!--__OPTIONS__-->", players)
             .replace("<!--__MODE_OPTIONS__-->", modes)
-            .replace("<!--__SALAD_OPTIONS__-->", salads)
             .replace("<!--__EXP_OPTIONS__-->", exps)
             .replace("__MINVOTES__", str(a.min_votes))
             .replace("__SHOWN__", str(shown))

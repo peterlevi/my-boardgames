@@ -39,6 +39,16 @@
    "Misc: BGG Hall of Fame",
    "Series: 18xx"
   ],
+  "designers": [
+   "Bruce Shelley",
+   "Francis Tresham"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Auction of any kind",
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 5.0,
   "poll": {
@@ -123,6 +133,14 @@
    "Players: Games with expansions that change player count",
    "Series: 18xx"
   ],
+  "designers": [
+   "Thomas Lehmann"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 4.0,
   "poll": {
@@ -199,6 +217,15 @@
    "Digital Implementations: TableTop Simulator Mod (TTS)",
    "Series: 18xx"
   ],
+  "designers": [
+   "Scott Petersen"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Auction of any kind",
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 4.5,
   "poll": {
@@ -274,6 +301,14 @@
    "Series: Small Box Euros (Devir)",
    "Theme: Circus",
    "Theme: Retro"
+  ],
+  "designers": [
+   "Remo Conzadori",
+   "Fabio Lopiano"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Area control"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -365,6 +400,16 @@
    "Misc: DIZED Tutorial",
    "Misc: Watch It Played How To Videos",
    "Players: Games with expansions that change player count"
+  ],
+  "designers": [
+   "Antoine Bauza"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Tableau multipliers",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -472,6 +517,18 @@
    "Players: Two-Player Only Games",
    "Versions & Editions: Two-Player Versions of More-Player Games"
   ],
+  "designers": [
+   "Antoine Bauza",
+   "Bruno Cathala"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Drafting of any kind"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -537,6 +594,17 @@
    "Misc: BGG Hall of Fame",
    "Misc: Dice Tower Hall of Fame",
    "Series: 3M Bookshelf Series"
+  ],
+  "designers": [
+   "Sid Sackson"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market",
+   "Hidden information",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -621,6 +689,16 @@
    "Components: Control Boards",
    "Digital Implementations: Board Game Arena",
    "Series: Terra Mystica"
+  ],
+  "designers": [
+   "Helge Ostertag"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -709,6 +787,17 @@
    "Series: Harvest (Uwe Rosenberg)",
    "Theme: Food / Cooking"
   ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Area control",
+   "Worker placement of any kind",
+   "Drafting of any kind",
+   "Co-operative"
+  ],
   "interaction": "Medium",
   "interaction_shared": 5.25,
   "poll": {
@@ -772,6 +861,13 @@
    "Occupation: Farmer",
    "Series: Harvest (Uwe Rosenberg)",
    "Versions & Editions: Junior Versions of Grown-Up Games"
+  ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -840,6 +936,12 @@
    "Series:  Air, Land, & Sea",
    "Theme: Animal Battles"
   ],
+  "designers": [
+   "Jon Perry"
+  ],
+  "traits": [
+   "Area control"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -905,6 +1007,15 @@
    "Theme: Alchemy",
    "Theme: Wizards"
   ],
+  "designers": [
+   "Matúš Kotry"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Auction of any kind",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
   "poll": {
@@ -966,6 +1077,18 @@
   ],
   "families": [
    "Theme: School / College / University"
+  ],
+  "designers": [
+   "Acchittocca",
+   "Flaminia Brasini",
+   "Virginio Gigli",
+   "Stefano Luperto",
+   "Antonio Tinto"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -1030,6 +1153,13 @@
    "Ancient: Egypt",
    "Constructions: Pyramids",
    "Rivers: Nile"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Auction of any kind",
+   "Area control"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
@@ -1118,6 +1248,19 @@
    "Theme: Post-Apocalyptic",
    "Theme: Time Travel"
   ],
+  "designers": [
+   "Dávid Turczi",
+   "Richard Ámann",
+   "Viktor Péter"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Area control",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.25,
   "poll": {
@@ -1202,6 +1345,20 @@
    "Misc: LongPack Games",
    "Players: Games with expansions that add solo play",
    "Video Game Theme: Anno"
+  ],
+  "designers": [
+   "Martin Wallace"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market",
+   "Worker placement of any kind",
+   "Drafting of any kind",
+   "Hidden information"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.25,
@@ -1291,6 +1448,20 @@
    "Series: Medieval Trilogies (Garphill Games)",
    "Series: The West Kingdom Trilogy (Garphill Games)",
    "Theme: Construction"
+  ],
+  "designers": [
+   "S J Macdonald",
+   "Shem Phillips"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Direct conflict",
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "High",
   "interaction_shared": 2.25,
@@ -1392,6 +1563,18 @@
    "Theme: Science",
    "Theme: Zoos, Aquaria, Safari Parks"
   ],
+  "designers": [
+   "Mathias Wigge"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -1472,6 +1655,17 @@
    "Game: Arkwright",
    "History: Industrial Revolution"
   ],
+  "designers": [
+   "Stefan Risthaus"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market",
+   "Worker placement of any kind"
+  ],
   "interaction": "High",
   "interaction_shared": 5.5,
   "poll": {
@@ -1549,6 +1743,17 @@
    "Players: Games with Solitaire Rules",
    "Versions & Editions: Card Versions of Non-Card Games"
   ],
+  "designers": [
+   "Stefan Risthaus"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market",
+   "Direct conflict",
+   "Drafting of any kind"
+  ],
   "interaction": "High",
   "interaction_shared": 3.0,
   "poll": {
@@ -1623,6 +1828,15 @@
    "Theme: Art",
    "Versions & Editions: Travel Versions of Non-Travel Games"
   ],
+  "designers": [
+   "Michael Kiesling"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Tableau multipliers",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -1695,6 +1909,14 @@
    "Rivers: Euphrates",
    "Rivers: Tigris"
   ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Area control",
+   "Drafting of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -1757,6 +1979,12 @@
    "Country: Japan",
    "Series: Small Box Euros (Devir)",
    "Setting: Kemushi Saga"
+  ],
+  "designers": [
+   "Germán P. Millán"
+  ],
+  "traits": [
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -1831,6 +2059,15 @@
    "Game: BANG!",
    "History: American Old West (Wild West)",
    "Versions & Editions: Dice Versions of Non-Dice Games"
+  ],
+  "designers": [
+   "Michael Palm",
+   "Lukas Zach"
+  ],
+  "traits": [
+   "Direct conflict",
+   "Hidden information",
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -1930,6 +2167,17 @@
    "Theme: Dieselpunk",
    "Theme: Electricity Generation"
   ],
+  "designers": [
+   "Tommaso Battista",
+   "Simone Luciani"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -2004,6 +2252,14 @@
    "Players: Two-Player Only Games",
    "Theme: Food / Cooking"
   ],
+  "designers": [
+   "Scott Almes"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -2060,6 +2316,14 @@
    "Country: Netherlands",
    "Digital Implementations: TableTop Simulator Mod (TTS)",
    "Theme: Colonial"
+  ],
+  "designers": [
+   "Torsten Landsvogt"
+  ],
+  "traits": [
+   "Set collection",
+   "Auction of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -2133,6 +2397,17 @@
    "Mechanism: Tableau Building",
    "Players: Games with expansions that add solo play"
   ],
+  "designers": [
+   "Dennis K. Chan"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control",
+   "Worker placement of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
   "poll": {
@@ -2203,6 +2478,15 @@
    "Series: Biblios (Steve Finn)",
    "Theme: Art",
    "Theme: Books / Libraries"
+  ],
+  "designers": [
+   "Steve Finn"
+  ],
+  "traits": [
+   "Set collection",
+   "Contested market",
+   "Auction of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
@@ -2277,6 +2561,17 @@
    "Setting: Kemushi Saga",
    "Theme: Trees and Forests"
   ],
+  "designers": [
+   "Germán P. Millán"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Area control",
+   "Worker placement of any kind",
+   "Deck or bag building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.75,
   "poll": {
@@ -2344,6 +2639,16 @@
   "families": [
    "Players: Games with Solitaire Rules",
    "Theme: Robots"
+  ],
+  "designers": [
+   "Sébastien Dujardin",
+   "Xavier Georges",
+   "Alain Orban"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Area control",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.25,
@@ -2418,6 +2723,18 @@
    "Region: Hong Kong",
    "Theme: Emergency Management / Disaster Preparedness"
   ],
+  "designers": [
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Area control",
+   "Deck or bag building",
+   "Drafting of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -2487,6 +2804,14 @@
    "Region: Oceania",
    "Theme: Tropical",
    "Theme: Tropical Islands"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Set collection",
+   "Area control",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -2563,6 +2888,13 @@
    "Series: Bean Games (Lookout)",
    "Series: Beveled Boxes (Gigamic)",
    "Theme: Flowers"
+  ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "traits": [
+   "Set collection",
+   "Direct conflict"
   ],
   "interaction": "High",
   "interaction_shared": 0.0,
@@ -2659,6 +2991,14 @@
    "Digital Implementations: Tabletopia",
    "Theme: Colonial"
   ],
+  "designers": [
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -2752,6 +3092,19 @@
    "Organizations: The Game Artisans of Canada",
    "Theme: Canals"
   ],
+  "designers": [
+   "Gavan Brown",
+   "Matt Tolman",
+   "Martin Wallace"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -2838,6 +3191,17 @@
    "Misc: LongPack Games",
    "Theme: Canals"
   ],
+  "designers": [
+   "Martin Wallace"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -2908,6 +3272,15 @@
    "Components: Map (Continental / National scale)",
    "Country: Ireland",
    "Misc: Watch It Played How To Videos"
+  ],
+  "designers": [
+   "Peer Sylvester"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Area control",
+   "Direct conflict",
+   "Drafting of any kind"
   ],
   "interaction": "High",
   "interaction_shared": 2.0,
@@ -2980,6 +3353,14 @@
    "Series: Alea Big Box",
    "Theme: Witches",
    "Theme: Wizards"
+  ],
+  "designers": [
+   "Andreas Pelikan",
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "Set collection",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -3055,6 +3436,15 @@
    "Theme: Art",
    "Theme: Art style – Art Nouveau"
   ],
+  "designers": [
+   "Etienne Espreman"
+  ],
+  "traits": [
+   "Auction of any kind",
+   "Area control",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
   "poll": {
@@ -3128,6 +3518,14 @@
    "Digital Implementations: Online Board Gamers",
    "Misc: Watch It Played How To Videos",
    "Theme: Time Travel"
+  ],
+  "designers": [
+   "Jeroen Doumen",
+   "Joris Wiersinga"
+  ],
+  "traits": [
+   "Worker placement of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -3203,6 +3601,14 @@
    "Series: Small box (Lautapelit.fi)",
    "Series: Small box (Mont Tàber)"
   ],
+  "designers": [
+   "Emanuele Ornella"
+  ],
+  "traits": [
+   "Set collection",
+   "Auction of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
   "poll": {
@@ -3274,6 +3680,13 @@
    "Crowdfunding: Kickstarter",
    "Setting: Capital Lux"
   ],
+  "designers": [
+   "Kristian Amundsen Østby",
+   "Eilif Svensson"
+  ],
+  "traits": [
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -3337,6 +3750,13 @@
    "Game: Carcassonne",
    "Theme: Wizards",
    "Versions & Editions: Big Box Versions of Individual Games"
+  ],
+  "designers": [
+   "Klaus-Jürgen Wrede"
+  ],
+  "traits": [
+   "Tableau multipliers",
+   "Area control"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -3432,6 +3852,16 @@
    "Series: Master Print (Quined)",
    "Theme: Art style – Art Nouveau"
   ],
+  "designers": [
+   "Xavier Georges"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.75,
   "poll": {
@@ -3516,6 +3946,16 @@
    "Misc: Watch It Played How To Videos",
    "Players: Games with Solitaire Rules",
    "Setting: World of Ulos"
+  ],
+  "designers": [
+   "Jordy Adan"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control",
+   "Direct conflict"
   ],
   "interaction": "Low",
   "interaction_shared": -2.75,
@@ -3732,6 +4172,17 @@
    "Series: Alea Revised Big Box",
    "Versions & Editions: Big Box Versions of Individual Games"
   ],
+  "designers": [
+   "Stefan Feld"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Worker placement of any kind",
+   "Co-operative"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.75,
   "poll": {
@@ -3822,6 +4273,16 @@
    "Series: World's Smallest (Super Impulse)",
    "Theme: Colonial"
   ],
+  "designers": [
+   "Klaus Teuber"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Direct conflict",
+   "Hidden information",
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -3902,6 +4363,14 @@
    "Players: Games with Solitaire Rules",
    "Series: Harvest (Uwe Rosenberg)",
    "Theme: Mining"
+  ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.25,
@@ -3994,6 +4463,18 @@
    "Category: Combinatorial",
    "Country: France",
    "Game: Caylus"
+  ],
+  "designers": [
+   "William Attia"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Direct conflict",
+   "Worker placement of any kind",
+   "Drafting of any kind",
+   "Hidden information"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
@@ -4138,6 +4619,10 @@
    "Video Game Theme: Super Mario Bros.",
    "Video Game Theme: The Legend of Zelda"
   ],
+  "designers": [
+   "(Uncredited)"
+  ],
+  "traits": [],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -4198,6 +4683,15 @@
    "Digital Implementations: Board Game Arena",
    "Game: Citadels",
    "Mechanism: Tableau Building"
+  ],
+  "designers": [
+   "Bruno Faidutti"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Direct conflict",
+   "Drafting of any kind"
   ],
   "interaction": "High",
   "interaction_shared": 2.5,
@@ -4291,6 +4785,15 @@
   "families": [
    "Misc: LongPack Games"
   ],
+  "designers": [
+   "Stefan Feld"
+  ],
+  "traits": [
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": -0.25,
   "poll": {
@@ -4366,6 +4869,12 @@
    "Misc: Watch It Played How To Videos",
    "Versions & Editions: Bigger Versions of Regular-Size Games",
    "Word Games: Guess the Word"
+  ],
+  "designers": [
+   "Vlaada Chvátil"
+  ],
+  "traits": [
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": 1.5,
@@ -4456,6 +4965,13 @@
    "Versions & Editions: Two-Player Versions of More-Player Games",
    "Word Games: Guess the Word"
   ],
+  "designers": [
+   "Vlaada Chvátil",
+   "Scot Eaton"
+  ],
+  "traits": [
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -4510,6 +5026,12 @@
    "Game: Codenames",
    "Mechanism: Image Interpretation",
    "Versions & Editions: Bigger Versions of Regular-Size Games"
+  ],
+  "designers": [
+   "Vlaada Chvátil"
+  ],
+  "traits": [
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -4605,6 +5127,19 @@
    "History: Age of Discovery",
    "Mechanism: Dice Drafting"
   ],
+  "designers": [
+   "Flaminia Brasini",
+   "Virginio Gigli"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Auction of any kind",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -4680,6 +5215,12 @@
    "States: New Mexico",
    "Theme: Burglary and Heists",
    "Versions & Editions: Bigger Versions of Regular-Size Games"
+  ],
+  "designers": [
+   "Christophe Raimbault"
+  ],
+  "traits": [
+   "Direct conflict"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -4768,6 +5309,17 @@
    "Players: Games with expansions that add solo play",
    "Players: Games with expansions that change player count"
   ],
+  "designers": [
+   "Mac Gerdts"
+  ],
+  "traits": [
+   "Set collection",
+   "Auction of any kind",
+   "Deck or bag building",
+   "Drafting of any kind",
+   "Co-operative",
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 3.5,
   "poll": {
@@ -4846,6 +5398,15 @@
    "Series: Abyss Universe",
    "Theme: Under the Sea"
   ],
+  "designers": [
+   "Bruno Cathala",
+   "Charles Chevallier"
+  ],
+  "traits": [
+   "Set collection",
+   "Tableau multipliers",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -4911,6 +5472,17 @@
   "families": [
    "Crowdfunding: Kickstarter",
    "Game: Container"
+  ],
+  "designers": [
+   "Franz-Benno Delonge",
+   "Thomas Ewert",
+   "Kevin Nesbitt"
+  ],
+  "traits": [
+   "Set collection",
+   "Contested market",
+   "Auction of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
@@ -4987,6 +5559,13 @@
    "Players: Games with expansions that change player count",
    "Series: Postcard Box Games (Indie Boards and Cards)",
    "Setting: Dystopian Universe (Indie Boards & Cards)"
+  ],
+  "designers": [
+   "Rikki Tahta"
+  ],
+  "traits": [
+   "Direct conflict",
+   "Hidden information"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -5068,6 +5647,12 @@
    "Misc: LongPack Games",
    "Space: Earth's Solar System"
   ],
+  "designers": [
+   "Thomas Sing"
+  ],
+  "traits": [
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": 0.0,
   "poll": {
@@ -5142,6 +5727,16 @@
   "families": [
    "Components: Gems/Crystals"
   ],
+  "designers": [
+   "Grant Rodiek",
+   "Michał Oracz",
+   "Michał Walczak"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Area control",
+   "Deck or bag building"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -5214,6 +5809,15 @@
    "Mountains: Andes",
    "Series: The Mask Trilogy (Kramer / Kiesling)"
   ],
+  "designers": [
+   "Michael Kiesling",
+   "Wolfgang Kramer"
+  ],
+  "traits": [
+   "Tableau multipliers",
+   "Auction of any kind",
+   "Area control"
+  ],
   "interaction": "High",
   "interaction_shared": 2.5,
   "poll": {
@@ -5279,6 +5883,13 @@
    "Setting: Kemushi Saga",
    "Theme: Factories",
    "Theme: Steampunk"
+  ],
+  "designers": [
+   "Dani Garcia"
+  ],
+  "traits": [
+   "Multi-track",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -5358,6 +5969,16 @@
    "Theme: Evolution",
    "Theme: Science"
   ],
+  "designers": [
+   "Simone Luciani",
+   "Nestore Mangone"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.75,
   "poll": {
@@ -5427,6 +6048,12 @@
    "Theme: Retro",
    "Versions & Editions: Bigger Versions of Regular-Size Games",
    "Word Games: Guess the Word"
+  ],
+  "designers": [
+   "Thomas Dagenais-Lespérance"
+  ],
+  "traits": [
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": -0.5,
@@ -5526,6 +6153,16 @@
    "Theme: Zoos, Aquaria, Safari Parks",
    "Versions & Editions: Roll- or Flip-and-Write Versions of Non-Writing Games"
   ],
+  "designers": [
+   "Brian Lewis",
+   "David McGregor",
+   "Marissa Misura"
+  ],
+  "traits": [
+   "Worker placement of any kind",
+   "Drafting of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -5598,6 +6235,10 @@
    "Mechanism: Judging Games",
    "Misc: Dice Tower Hall of Fame"
   ],
+  "designers": [
+   "Jean-Louis Roubira"
+  ],
+  "traits": [],
   "interaction": "High",
   "interaction_shared": -0.5,
   "poll": {
@@ -5686,6 +6327,14 @@
    "Theme: Sealife, Seas, and Oceans",
    "Theme: Seashells"
   ],
+  "designers": [
+   "Chad Jensen"
+  ],
+  "traits": [
+   "Area control",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -5757,6 +6406,14 @@
    "Misc: BGG Hall of Fame",
    "Misc: Dice Tower Hall of Fame",
    "Misc: Mensa Select"
+  ],
+  "designers": [
+   "Donald X. Vaccarino"
+  ],
+  "traits": [
+   "Direct conflict",
+   "Deck or bag building",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -5837,6 +6494,17 @@
    "Components: Player Screens",
    "Game: Dune (Avalon Hill original)",
    "Theme: Deserts"
+  ],
+  "designers": [
+   "Bill Eberle",
+   "Jack Kittredge",
+   "Peter Olotka"
+  ],
+  "traits": [
+   "Auction of any kind",
+   "Area control",
+   "Direct conflict",
+   "Hidden information"
   ],
   "interaction": "High",
   "interaction_shared": 5.0,
@@ -5933,6 +6601,18 @@
    "Misc: Watch It Played How To Videos",
    "Players: Games with Solitaire Rules"
   ],
+  "designers": [
+   "Paul Dennen"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market",
+   "Direct conflict",
+   "Worker placement of any kind",
+   "Deck or bag building",
+   "Drafting of any kind"
+  ],
   "interaction": "High",
   "interaction_shared": 4.25,
   "poll": {
@@ -6012,6 +6692,18 @@
    "Misc: Watch It Played How To Videos",
    "Players: Games with Solitaire Rules"
   ],
+  "designers": [
+   "Paul Dennen"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Contested market",
+   "Worker placement of any kind",
+   "Deck or bag building",
+   "Drafting of any kind",
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": 3.75,
   "poll": {
@@ -6090,6 +6782,14 @@
    "Misc: LongPack Games",
    "Theme: Colonial"
   ],
+  "designers": [
+   "Pascal Ribrault"
+  ],
+  "traits": [
+   "Contested market",
+   "Worker placement of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
   "poll": {
@@ -6158,6 +6858,13 @@
    "Players: Games with Solitaire Rules",
    "Theme: Burglary and Heists",
    "Theme: Mystery / Crime"
+  ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "Area control",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -6266,6 +6973,17 @@
    "Theme: Nature",
    "Theme: Trees and Forests"
   ],
+  "designers": [
+   "James A. Wilson"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -6334,6 +7052,14 @@
    "Players: Games with Solitaire Rules",
    "Theme: Nature",
    "Theme: Trees and Forests"
+  ],
+  "designers": [
+   "Hjalmar Hach"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Drafting of any kind"
   ],
   "interaction": "Low",
   "interaction_shared": 0.0,
@@ -6410,6 +7136,15 @@
    "Theme: Evolution",
    "Theme: Nature",
    "Theme: Science"
+  ],
+  "designers": [
+   "Dominic Crapuchettes",
+   "Dmitry Knorre",
+   "Sergey Machin"
+  ],
+  "traits": [
+   "Direct conflict",
+   "Hidden information"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -6488,6 +7223,15 @@
    "Animals: Cats",
    "Card Games: Matching",
    "Game: Exploding Kittens"
+  ],
+  "designers": [
+   "Matthew Inman",
+   "Elan Lee",
+   "Shane Small"
+  ],
+  "traits": [
+   "Set collection",
+   "Direct conflict"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -6589,6 +7333,14 @@
    "Religious: The Bible",
    "Series: Ancient Anthology (Garphill Games)"
   ],
+  "designers": [
+   "S J Macdonald",
+   "Shem Phillips"
+  ],
+  "traits": [
+   "Multi-track",
+   "Parallel engine"
+  ],
   "interaction": "Low",
   "interaction_shared": -0.25,
   "poll": {
@@ -6661,6 +7413,15 @@
    "Digital Implementations: Tabletopia",
    "Rivers: Nile",
    "Theme: Construction"
+  ],
+  "designers": [
+   "Friedemann Friese"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Deck or bag building",
+   "Drafting of any kind",
+   "Network building"
   ],
   "interaction": "Low",
   "interaction_shared": 0.75,
@@ -6751,6 +7512,18 @@
    "Players: Games with Solitaire Rules",
    "Theme: Construction",
    "Theme: Robots"
+  ],
+  "designers": [
+   "Joseph Z. Chen",
+   "Justin Faulkner"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Low",
   "interaction_shared": 0.75,
@@ -6853,6 +7626,15 @@
    "Theme: Food / Cooking",
    "Theme: Vikings"
   ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control",
+   "Worker placement of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -6919,6 +7701,15 @@
    "Digital Implementations: Board Game Arena",
    "Players: Games with expansions that add solo play",
    "Space: Colonization / Extraterrestrial Colonisation"
+  ],
+  "designers": [
+   "Dimitri Perrier",
+   "Matthieu Verdier"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Area control",
+   "Worker placement of any kind"
   ],
   "interaction": "High",
   "interaction_shared": 3.0,
@@ -6999,6 +7790,17 @@
    "Players: Games with expansions that change player count",
    "Region: Middle East"
   ],
+  "designers": [
+   "Bruno Cathala"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction of any kind",
+   "Direct conflict",
+   "Worker placement of any kind",
+   "Hidden information"
+  ],
   "interaction": "Medium",
   "interaction_shared": 5.0,
   "poll": {
@@ -7067,6 +7869,15 @@
   "families": [
    "Misc: LongPack Games",
    "Theme: Post-Apocalyptic"
+  ],
+  "designers": [
+   "J.B. Howell",
+   "Michael Mihealsick"
+  ],
+  "traits": [
+   "Contested market",
+   "Deck or bag building",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -7154,6 +7965,17 @@
    "Theme: Food / Cooking",
    "Theme: Pub, Bars, Bistros...",
    "Theme: Retro"
+  ],
+  "designers": [
+   "Jeroen Doumen",
+   "Joris Wiersinga"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market",
+   "Drafting of any kind"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -7246,6 +8068,17 @@
    "Series: Terra Mystica",
    "Space: Colonization / Extraterrestrial Colonisation"
   ],
+  "designers": [
+   "Jens Drögemüller",
+   "Helge Ostertag"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 0.75,
   "poll": {
@@ -7332,6 +8165,21 @@
    "Space: Earth's Solar System",
    "Theme: Cruise ships"
   ],
+  "designers": [
+   "T.K. King",
+   "Dennis Northcott",
+   "Koltin Thompson"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market",
+   "Worker placement of any kind",
+   "Drafting of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.75,
   "poll": {
@@ -7405,6 +8253,12 @@
    "Creatures: Aliens / Extraterrestrials",
    "Digital Implementations: Steam",
    "Game: Galaxy Trucker"
+  ],
+  "designers": [
+   "Vlaada Chvátil"
+  ],
+  "traits": [
+   "Multi-track"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -7482,6 +8336,17 @@
    "Theme: Art",
    "Theme: Fine Art and Art Museums",
    "Theme: Painting / Paintings"
+  ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Contested market",
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.75,
@@ -7561,6 +8426,16 @@
    "Theme: Ecology",
    "Theme: Solarpunk",
    "Theme: Trees and Forests"
+  ],
+  "designers": [
+   "Xavier Georges"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
@@ -7664,6 +8539,15 @@
    "Misc: Watch It Played How To Videos",
    "Players: Games with Solitaire Rules"
   ],
+  "designers": [
+   "Isaac Childres"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Direct conflict",
+   "Deck or bag building",
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": -0.75,
   "poll": {
@@ -7731,6 +8615,17 @@
    "Components: Marbles",
    "Digital Implementations: Tabletopia",
    "Religious: Judaism"
+  ],
+  "designers": [
+   "Flaminia Brasini",
+   "Virginio Gigli",
+   "Simone Luciani"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -7806,6 +8701,16 @@
    "Misc: Dice Tower Hall of Fame",
    "Misc: DIZED Tutorial",
    "Misc: Made by Panda"
+  ],
+  "designers": [
+   "Wolfgang Kramer",
+   "Richard Ulrich"
+  ],
+  "traits": [
+   "Auction of any kind",
+   "Area control",
+   "Direct conflict",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 5.0,
@@ -7889,6 +8794,15 @@
    "Series: The Great Designers (Stronghold Games)",
    "States: Texas"
   ],
+  "designers": [
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Deck or bag building"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -7958,6 +8872,15 @@
    "Game: Great Western Trail",
    "Mechanism: Tableau Building",
    "Players: Games with Solitaire Rules"
+  ],
+  "designers": [
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Deck or bag building"
   ],
   "interaction": "Low",
   "interaction_shared": 0.25,
@@ -8030,6 +8953,15 @@
    "Occupation: Farmer",
    "Players: Games with Solitaire Rules",
    "Theme: Colonial"
+  ],
+  "designers": [
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Deck or bag building"
   ],
   "interaction": "Low",
   "interaction_shared": 0.25,
@@ -8106,6 +9038,17 @@
    "Digital Implementations: Boardgamecore",
    "Digital Implementations: Online Board Gamers"
   ],
+  "designers": [
+   "Jeroen Doumen",
+   "Joris Wiersinga"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Auction of any kind",
+   "Drafting of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 5.0,
   "poll": {
@@ -8178,6 +9121,14 @@
    "Digital Implementations: Tabletopia",
    "History: Ming Dynasty",
    "Players: Games with Solitaire Rules"
+  ],
+  "designers": [
+   "Andreas Steding"
+  ],
+  "traits": [
+   "Set collection",
+   "Area control",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -8254,6 +9205,16 @@
    "Theme: Hanseatic League",
    "Versions & Editions: Big Box Versions of Individual Games"
   ],
+  "designers": [
+   "Andreas Steding"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Area control",
+   "Direct conflict",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -8329,6 +9290,15 @@
    "Misc: LongPack Games",
    "Theme: Nature"
   ],
+  "designers": [
+   "Johan Benvenuto"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.25,
   "poll": {
@@ -8401,6 +9371,15 @@
    "Players: Games with Solitaire Rules",
    "Region: Normandy (France)",
    "Series: Harvest (Uwe Rosenberg)"
+  ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.75,
@@ -8476,6 +9455,13 @@
    "Religious: Monks/Abbots & Monasteries/Abbeys",
    "Theme: Stained Glass"
   ],
+  "designers": [
+   "Michael Kiesling",
+   "Andreas Schmidt"
+  ],
+  "traits": [
+   "Multi-track"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
   "poll": {
@@ -8549,6 +9535,13 @@
    "Game: Hegemony",
    "Players: Games with expansions that add solo play",
    "Theme: Labour movement / Workers rights / Unionising"
+  ],
+  "designers": [
+   "Vangelis Bagiartakis",
+   "Varnavas Timotheou"
+  ],
+  "traits": [
+   "Worker placement of any kind"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -8641,6 +9634,18 @@
    "Theme: Astronomy",
    "Theme: Science"
   ],
+  "designers": [
+   "Phil Eklund",
+   "Justin Grey",
+   "Jon Manker",
+   "Dom Rougier"
+  ],
+  "traits": [
+   "Auction of any kind",
+   "Direct conflict",
+   "Deck or bag building",
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -8709,6 +9714,12 @@
    "Series: Bookshelf (Gryphon Games)",
    "Series: Small Box Big Game (Allplay)",
    "Theme: Art style – Art Nouveau"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Auction of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -8780,6 +9791,15 @@
    "Brands: Vehicles (Cars, Trucks, etc.)",
    "Digital Implementations: Online Board Gamers",
    "Theme: Automotive Industry"
+  ],
+  "designers": [
+   "Jeroen Doumen",
+   "Joris Wiersinga"
+  ],
+  "traits": [
+   "Multi-track",
+   "Tableau multipliers",
+   "Contested market"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -8858,6 +9878,15 @@
    "Series: Iron Rail (Capstone Games)",
    "Series: Winsome Essen Sets"
   ],
+  "designers": [
+   "Amabel Holland"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -8934,6 +9963,14 @@
    "Misc: LongPack Games",
    "Misc: Watch It Played How To Videos",
    "Players: Games with Solitaire Rules"
+  ],
+  "designers": [
+   "Joanna Kijanka",
+   "Ignacy Trzewiczek"
+  ],
+  "traits": [
+   "Direct conflict",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -9017,6 +10054,18 @@
    "Digital Implementations: TableTop Simulator Mod (TTS)",
    "Misc: GettingGames Tutorial Videos"
   ],
+  "designers": [
+   "Alexander Huemer"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Contested market",
+   "Auction of any kind",
+   "Drafting of any kind",
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 5.0,
   "poll": {
@@ -9092,6 +10141,17 @@
    "Mechanism: Tableau Building",
    "Series: Imperium Engine Meta Series"
   ],
+  "designers": [
+   "Nigel Buckle",
+   "Dávid Turczi"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Direct conflict",
+   "Deck or bag building",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -9161,6 +10221,16 @@
    "Game: Imperium (Osprey Games)",
    "Mechanism: Tableau Building",
    "Series: Imperium Engine Meta Series"
+  ],
+  "designers": [
+   "Nigel Buckle",
+   "Dávid Turczi"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Deck or bag building",
+   "Drafting of any kind"
   ],
   "interaction": "Low",
   "interaction_shared": 0.75,
@@ -9240,6 +10310,18 @@
    "Digital Implementations: SlothNinja",
    "Digital Implementations: TableTop Simulator Mod (TTS)"
   ],
+  "designers": [
+   "Jeroen Doumen",
+   "Joris Wiersinga"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Auction of any kind",
+   "Drafting of any kind",
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 4.5,
   "poll": {
@@ -9310,6 +10392,13 @@
    "Game: Ingenious",
    "Players: Games with Solitaire Rules"
   ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Tableau multipliers",
+   "Co-operative"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -9379,6 +10468,14 @@
    "Digital Implementations: Yucata",
    "Game: Innovation",
    "Mechanism: Tableau Building"
+  ],
+  "designers": [
+   "Carl Chudyk"
+  ],
+  "traits": [
+   "Multi-track",
+   "Tableau multipliers",
+   "Direct conflict"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -9458,6 +10555,14 @@
    "Mechanism: Tableau Building",
    "Versions & Editions: Big Box Versions of Individual Games"
   ],
+  "designers": [
+   "Carl Chudyk"
+  ],
+  "traits": [
+   "Multi-track",
+   "Tableau multipliers",
+   "Direct conflict"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -9525,6 +10630,13 @@
    "Components: Map (Global Scale)",
    "Crowdfunding: Kickstarter",
    "Digital Implementations: Tabletopia"
+  ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Worker placement of any kind"
   ],
   "interaction": "Low",
   "interaction_shared": 0.75,
@@ -9598,6 +10710,16 @@
    "Series: Iron Rail (Capstone Games)",
    "Series: Winsome Essen Sets"
   ],
+  "designers": [
+   "Amabel Holland"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market",
+   "Auction of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -9665,6 +10787,14 @@
    "Ancient: Mesopotamia",
    "Misc: Mensa Select",
    "Theme: Gardening"
+  ],
+  "designers": [
+   "Bruno Cathala",
+   "Evan Singh"
+  ],
+  "traits": [
+   "Multi-track",
+   "Area control"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -9738,6 +10868,13 @@
    "Misc: LongPack Games",
    "Series: Istanbul (Pegasus Spiele)",
    "Versions & Editions: Big Box Versions of Individual Games"
+  ],
+  "designers": [
+   "Rüdiger Dorn"
+  ],
+  "traits": [
+   "Set collection",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -9819,6 +10956,15 @@
    "Mechanism: Tableau Building",
    "Players: Games with Solitaire Rules"
   ],
+  "designers": [
+   "Frédéric Guérard"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.25,
   "poll": {
@@ -9891,6 +11037,13 @@
    "Mechanism: Give a Clue / Get a Clue",
    "Misc: LongPack Games",
    "Word Games: Guess the Word"
+  ],
+  "designers": [
+   "Ludovic Roudy",
+   "Bruno Sautter"
+  ],
+  "traits": [
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": -0.5,
@@ -9973,6 +11126,13 @@
    "Game: Kanban",
    "Misc: Made by Panda",
    "Theme: Automotive Industry"
+  ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Worker placement of any kind"
   ],
   "interaction": "Low",
   "interaction_shared": 0.75,
@@ -10060,6 +11220,17 @@
    "Series: Master Print (Quined)",
    "Theme: Colonial"
   ],
+  "designers": [
+   "Sebastian Bleasdale",
+   "Richard Breese"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction of any kind",
+   "Worker placement of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 10.0,
   "poll": {
@@ -10138,6 +11309,14 @@
    "Ancient: Greece",
    "Misc: Watch It Played How To Videos"
   ],
+  "designers": [
+   "Head Quarter Simulation Game Club"
+  ],
+  "traits": [
+   "Multi-track",
+   "Parallel engine",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -10211,6 +11390,13 @@
    "Crowdfunding: Spieleschmiede",
    "Game:  The King Is Dead",
    "Misc: Watch It Played How To Videos"
+  ],
+  "designers": [
+   "Peer Sylvester"
+  ],
+  "traits": [
+   "Contested market",
+   "Area control"
   ],
   "interaction": "High",
   "interaction_shared": 3.5,
@@ -10290,6 +11476,13 @@
    "Misc: DIZED Tutorial",
    "Theme: Kaiju",
    "Theme: Villainy"
+  ],
+  "designers": [
+   "Richard Garfield"
+  ],
+  "traits": [
+   "Direct conflict",
+   "Drafting of any kind"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -10379,6 +11572,13 @@
    "Series: Europe Collection (Blue Orange Games)",
    "Versions & Editions: Bigger Versions of Regular-Size Games"
   ],
+  "designers": [
+   "Bruno Cathala"
+  ],
+  "traits": [
+   "Area control",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -10445,6 +11645,14 @@
    "Digital Implementations: TableTop Simulator Mod (TTS)",
    "Occupation: Engineer",
    "Theme: Automotive Industry"
+  ],
+  "designers": [
+   "Matthias Cramer"
+  ],
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -10516,6 +11724,14 @@
    "Components: RE-Wood",
    "Country: Czech Republic",
    "Theme: Mining"
+  ],
+  "designers": [
+   "Ondřej Bystroň",
+   "Petr Čáslava",
+   "Pavel Jarosch"
+  ],
+  "traits": [
+   "Contested market"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -10594,6 +11810,15 @@
    "Players: Games with Solitaire Rules",
    "Theme: Earthquakes"
   ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Area control",
+   "Drafting of any kind"
+  ],
   "interaction": "High",
   "interaction_shared": 1.75,
   "poll": {
@@ -10654,6 +11879,14 @@
   ],
   "families": [
    "Theme: City"
+  ],
+  "designers": [
+   "Shun Taguchi",
+   "Aya Taguchi"
+  ],
+  "traits": [
+   "Set collection",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -10727,6 +11960,17 @@
    "Country: United Kingdom",
    "Mechanism: Tableau Building",
    "Misc: LongPack Games"
+  ],
+  "designers": [
+   "Martin Wallace"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Direct conflict",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -10813,6 +12057,20 @@
    "Theme: Wizards",
    "Versions & Editions: Versions with IP after the original release"
   ],
+  "designers": [
+   "Antoine Bauza",
+   "Bruno Cathala"
+  ],
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market",
+   "Area control",
+   "Direct conflict",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
   "poll": {
@@ -10876,6 +12134,18 @@
    "Game: Lorenzo il Magnifico",
    "Mechanism: Tableau Building",
    "Versions & Editions: Big Box Versions of Individual Games"
+  ],
+  "designers": [
+   "Flaminia Brasini",
+   "Virginio Gigli",
+   "Simone Luciani"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction of any kind",
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
@@ -10957,6 +12227,12 @@
    "Series: Two-player games (Kosmos)",
    "Theme: Archaeology / Paleontology"
   ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Set collection"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.0,
   "poll": {
@@ -11035,6 +12311,19 @@
    "Theme: Tropical",
    "Theme: Tropical Islands"
   ],
+  "designers": [
+   "Elwen",
+   "Mín"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Deck or bag building",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -11103,6 +12392,14 @@
    "Digital Implementations: Tabletopia",
    "Game: Love Letter",
    "Theme: Love / Romance"
+  ],
+  "designers": [
+   "Seiji Kanai",
+   "Justin Kemppainen",
+   "Alexandar Ortloff-Tang"
+  ],
+  "traits": [
+   "Direct conflict"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -11189,6 +12486,13 @@
    "Players: Games with Solitaire Rules",
    "Theme: Burglary and Heists",
    "Theme: Mystery / Crime"
+  ],
+  "designers": [
+   "Kasper Lapp"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": 0.25,
@@ -11278,6 +12582,15 @@
    "Series: Fur Zwei Spieler (Lookout Games)",
    "Series: Mandala (Lookout games)"
   ],
+  "designers": [
+   "Trevor Benjamin",
+   "Brett J. Gilbert"
+  ],
+  "traits": [
+   "Set collection",
+   "Auction of any kind",
+   "Area control"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
   "poll": {
@@ -11354,6 +12667,16 @@
    "Region: Caribbean Sea",
    "Theme: Colonial"
   ],
+  "designers": [
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.75,
   "poll": {
@@ -11424,6 +12747,13 @@
    "Mechanism: Tableau Building",
    "Space: Orion"
   ],
+  "designers": [
+   "Ekaterina Gorn",
+   "Igor Sklyuev"
+  ],
+  "traits": [
+   "Direct conflict"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -11492,6 +12822,15 @@
    "Misc: LongPack Games",
    "Occupation: Merchant",
    "Series: Knizia Florentine auction games"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Auction of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -11566,6 +12905,14 @@
    "Components: Transparent Elements",
    "Country: Italy",
    "Misc: Mensa Select"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Tableau multipliers",
+   "Area control",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -11642,6 +12989,14 @@
    "Digital Implementations: Tabletopia",
    "Players: One versus Many",
    "Theme: Psychology"
+  ],
+  "designers": [
+   "Jay Cormier",
+   "Sen-Foong Lim"
+  ],
+  "traits": [
+   "Hidden information",
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": 0.0,
@@ -11723,6 +13078,14 @@
    "Mechanism: Tableau Building",
    "Mythology: Greek"
   ],
+  "designers": [
+   "Stan Kordonskiy"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Area control",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -11791,6 +13154,13 @@
    "Mechanism: Tableau Building",
    "Religious: Buddhism",
    "Theme: Temple"
+  ],
+  "designers": [
+   "Carl Chudyk"
+  ],
+  "traits": [
+   "Set collection",
+   "Co-operative"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -11874,6 +13244,13 @@
    "Mechanism: Give a Clue / Get a Clue",
    "Mechanism: Image Interpretation",
    "Theme: Spooky Old Houses"
+  ],
+  "designers": [
+   "Oleksandr Nevskiy",
+   "Oleg Sidorenko"
+  ],
+  "traits": [
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -11962,6 +13339,13 @@
    "Series: Rondel (Mac Gerdts)",
    "Theme: Colonial"
   ],
+  "designers": [
+   "Mac Gerdts"
+  ],
+  "traits": [
+   "Multi-track",
+   "Contested market"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -12038,6 +13422,17 @@
    "Theme: Physics",
    "Theme: Science"
   ],
+  "designers": [
+   "Simone Luciani",
+   "Nestore Mangone"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Deck or bag building",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -12108,6 +13503,14 @@
    "Digital Implementations: Board Game Arena",
    "Digital Implementations: Game Park",
    "Mythology: Norse"
+  ],
+  "designers": [
+   "Serge Laget"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
@@ -12192,6 +13595,18 @@
    "Theme: Alternate History",
    "Theme: Electricity Generation"
   ],
+  "designers": [
+   "Simone Luciani",
+   "Dávid Turczi"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -12256,6 +13671,13 @@
    "Players: Games with Solitaire Rules",
    "Series: Harvest (Uwe Rosenberg)",
    "Theme: Fishing / Angling"
+  ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "traits": [
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -12340,6 +13762,14 @@
    "Mechanism: Campaign Games",
    "Mechanism: Tableau Building",
    "Players: Games with Solitaire Rules"
+  ],
+  "designers": [
+   "Cole Wehrle"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Area control",
+   "Direct conflict"
   ],
   "interaction": "High",
   "interaction_shared": 1.25,
@@ -12432,6 +13862,16 @@
    "Space: Earth's Solar System",
    "Space: Mars"
   ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Worker placement of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -12503,6 +13943,13 @@
    "Game: Werewolf / Mafia",
    "Misc: Made by Panda",
    "Series: One Night (Bézier Games)"
+  ],
+  "designers": [
+   "Ted Alspach",
+   "Akihisa Okui"
+  ],
+  "traits": [
+   "Hidden information"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -12603,6 +14050,13 @@
    "Crowdfunding: Kickstarter",
    "Game: Werewolf / Mafia",
    "Series: One Night (Bézier Games)"
+  ],
+  "designers": [
+   "Ted Alspach",
+   "Akihisa Okui"
+  ],
+  "traits": [
+   "Hidden information"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -12708,6 +14162,14 @@
    "Religious: Monks/Abbots & Monasteries/Abbeys",
    "Series: Harvest (Uwe Rosenberg)"
   ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "traits": [
+   "Contested market",
+   "Worker placement of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
   "poll": {
@@ -12789,6 +14251,17 @@
    "Players: Games with expansions that add solo play",
    "Religious: Monks/Abbots & Monasteries/Abbeys"
   ],
+  "designers": [
+   "Reiner Stockhausen"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Direct conflict",
+   "Worker placement of any kind",
+   "Deck or bag building"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -12865,6 +14338,17 @@
    "Series: Medieval Trilogies (Garphill Games)",
    "Series: The West Kingdom Trilogy (Garphill Games)"
   ],
+  "designers": [
+   "S J Macdonald",
+   "Shem Phillips"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.25,
   "poll": {
@@ -12938,6 +14422,17 @@
    "Components: Map (Global Scale)",
    "Region: The World",
    "Theme: Retro"
+  ],
+  "designers": [
+   "Prospero Hall",
+   "Peter Lee"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Auction of any kind",
+   "Worker placement of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 7.0,
@@ -13031,6 +14526,15 @@
    "Region: The World",
    "Theme: Science"
   ],
+  "designers": [
+   "Matt Leacock"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": -0.25,
   "poll": {
@@ -13115,6 +14619,15 @@
    "Series: Fur Zwei Spieler (Lookout Games)",
    "Theme: Austronesian peoples"
   ],
+  "designers": [
+   "Uwe Rosenberg"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -13180,6 +14693,14 @@
    "Misc: LongPack Games",
    "Players: Two-Player Only Games",
    "Region: Aegean Sea"
+  ],
+  "designers": [
+   "Fran Diaz"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Area control"
   ],
   "interaction": "High",
   "interaction_shared": 2.0,
@@ -13250,6 +14771,15 @@
    "Region: Caribbean Sea",
    "Theme: Colonial",
    "Theme: Pirates"
+  ],
+  "designers": [
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -13336,6 +14866,15 @@
    "Occupation: Engineer",
    "Theme: Electricity Generation"
   ],
+  "designers": [
+   "Friedemann Friese"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Contested market",
+   "Auction of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
   "poll": {
@@ -13420,6 +14959,16 @@
    "Digital Implementations: Yucata",
    "Mechanism: Purchase Additonal Actions"
   ],
+  "designers": [
+   "Vladimír Suchý"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Area control",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -13494,6 +15043,15 @@
    "Series: Alea Big Box",
    "Theme: Colonial"
   ],
+  "designers": [
+   "Andreas Seyfarth"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Drafting of any kind",
+   "Hidden information"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -13564,6 +15122,13 @@
    "Digital Implementations: TableTop Simulator Mod (TTS)",
    "Digital Implementations: Tabletopia",
    "Mechanism: Dice Drafting"
+  ],
+  "designers": [
+   "Vladimír Suchý"
+  ],
+  "traits": [
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -13641,6 +15206,13 @@
    "Misc: Watch It Played How To Videos",
    "Players: Games with expansions that change player count",
    "Theme: Witches"
+  ],
+  "designers": [
+   "Wolfgang Warsch"
+  ],
+  "traits": [
+   "Multi-track",
+   "Deck or bag building"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -13721,6 +15293,13 @@
    "Region: Amazon Rainforest",
    "Theme: Tropical"
   ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Deck or bag building",
+   "Drafting of any kind"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -13794,6 +15373,14 @@
    "Series: Alea Big Box",
    "Series: Book Box (DiceTree)",
    "Series: Euro Classics (Reiner Knizia)"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Set collection",
+   "Auction of any kind",
+   "Hidden information"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
@@ -13881,6 +15468,15 @@
    "Players: Games with expansions that add solo play",
    "Players: Games with expansions that change player count"
   ],
+  "designers": [
+   "Thomas Lehmann"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Contested market"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -13949,6 +15545,15 @@
    "Country: Russia",
    "Country: Ukraine",
    "Series: Ancient Anthology (Garphill Games)"
+  ],
+  "designers": [
+   "Shem Phillips"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.25,
@@ -14023,6 +15628,15 @@
    "Mechanism: Dice Drafting",
    "Religious: Hinduism"
   ],
+  "designers": [
+   "Inka Brand",
+   "Markus Brand"
+  ],
+  "traits": [
+   "Multi-track",
+   "Worker placement of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -14092,6 +15706,11 @@
    "Versions & Editions: Dice Versions of Non-Dice Games",
    "Versions & Editions: Roll- or Flip-and-Write Versions of Non-Writing Games"
   ],
+  "designers": [
+   "Inka Brand",
+   "Markus Brand"
+  ],
+  "traits": [],
   "interaction": "Low",
   "interaction_shared": -1.0,
   "poll": {
@@ -14173,6 +15792,17 @@
    "Series: Small Box Euros (Devir)",
    "Theme: Construction"
   ],
+  "designers": [
+   "Isra C.",
+   "Shei S."
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.75,
   "poll": {
@@ -14248,6 +15878,13 @@
    "Game: Werewolf / Mafia",
    "Series: Postcard Box Games (Indie Boards and Cards)",
    "Theme: King Arthur / The Knights of the Round Table / Camelot"
+  ],
+  "designers": [
+   "Don Eskridge"
+  ],
+  "traits": [
+   "Hidden information",
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -14352,6 +15989,18 @@
    "Mechanism: Tableau Building",
    "Theme: Post-Apocalyptic"
   ],
+  "designers": [
+   "Helge Meissner",
+   "Kristian Amundsen Østby",
+   "Eilif Svensson",
+   "Anna Wermlund"
+  ],
+  "traits": [
+   "Multi-track",
+   "Deck or bag building",
+   "Drafting of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -14421,6 +16070,10 @@
    "Players: Games with Solitaire Rules",
    "Theme: Robots"
   ],
+  "designers": [
+   "Alex Randolph"
+  ],
+  "traits": [],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -14642,6 +16295,15 @@
    "Theme: Tropical Islands",
    "Theme: Volcanoes"
   ],
+  "designers": [
+   "Joanna Kijanka",
+   "Ignacy Trzewiczek"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": 1.25,
   "poll": {
@@ -14744,6 +16406,13 @@
    "Theme: Nature",
    "War Level of Command: Grand Strategy"
   ],
+  "designers": [
+   "Cole Wehrle"
+  ],
+  "traits": [
+   "Area control",
+   "Direct conflict"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -14814,6 +16483,15 @@
    "Theme: Climate Change",
    "Theme: Environmental Protection / Degradation / Pollution"
   ],
+  "designers": [
+   "David Bernal"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Contested market",
+   "Worker placement of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.25,
   "poll": {
@@ -14883,6 +16561,15 @@
    "Mechanism: Tableau Building",
    "Players: Games with Solitaire Rules",
    "Theme: Colonial"
+  ],
+  "designers": [
+   "Kristian Amundsen Østby",
+   "Eilif Svensson"
+  ],
+  "traits": [
+   "Set collection",
+   "Drafting of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -14985,6 +16672,17 @@
    "Theme: Dieselpunk",
    "Theme: Mech Warfare"
   ],
+  "designers": [
+   "Jamey Stegmaier"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control",
+   "Direct conflict"
+  ],
   "interaction": "High",
   "interaction_shared": 2.25,
   "poll": {
@@ -15067,6 +16765,13 @@
    "Series: Sekigahara mechanism",
    "War Level of Command: Strategic"
   ],
+  "designers": [
+   "Matt Calkins"
+  ],
+  "traits": [
+   "Auction of any kind",
+   "Hidden information"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -15123,6 +16828,16 @@
    "Digital Implementations: TableTop Simulator Mod (TTS)",
    "Space: Colonization / Extraterrestrial Colonisation",
    "Space: Earth's Moon"
+  ],
+  "designers": [
+   "Fabio Lopiano",
+   "Nestore Mangone"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Area control",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
@@ -15195,6 +16910,16 @@
    "Creatures: Aliens / Extraterrestrials",
    "Game: Sidereal Confluence",
    "Misc: LongPack Games"
+  ],
+  "designers": [
+   "TauCeti Deichmann"
+  ],
+  "traits": [
+   "Multi-track",
+   "Parallel engine",
+   "Auction of any kind",
+   "Direct conflict",
+   "Hidden information"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -15302,6 +17027,20 @@
    "Space: Earth's Solar System",
    "Theme: Mining"
   ],
+  "designers": [
+   "Viktor Kobilke",
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Contested market",
+   "Area control",
+   "Worker placement of any kind",
+   "Deck or bag building",
+   "Drafting of any kind",
+   "Hidden information"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.75,
   "poll": {
@@ -15369,6 +17108,17 @@
    "Misc: Watch It Played How To Videos",
    "Theme: Art style – Art Deco",
    "Theme: Floating islands in the sky"
+  ],
+  "designers": [
+   "Gavan Brown",
+   "Sébastien Pauchon",
+   "Adam Wyse"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Auction of any kind",
+   "Area control"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -15445,6 +17195,15 @@
    "Misc: Watch It Played How To Videos",
    "Players: Games with expansions that add solo play"
   ],
+  "designers": [
+   "Philippe Keyaerts"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Area control",
+   "Hidden information"
+  ],
   "interaction": "High",
   "interaction_shared": 2.0,
   "poll": {
@@ -15510,6 +17269,13 @@
    "Children's Game"
   ],
   "families": [],
+  "designers": [
+   "Michael Schacht"
+  ],
+  "traits": [
+   "Contested market",
+   "Auction of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -15576,6 +17342,13 @@
    "Space Exploration"
   ],
   "families": [],
+  "designers": [
+   "Cédric Lefebvre"
+  ],
+  "traits": [
+   "Worker placement of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -15644,6 +17417,14 @@
    "Decades: The 1920's",
    "History: Prohibition in the USA",
    "History: Roaring Twenties (1920-1929)"
+  ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "Area control",
+   "Worker placement of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -15717,6 +17498,13 @@
    "Theme: Jewelry",
    "Theme: Jewels"
   ],
+  "designers": [
+   "Marc André"
+  ],
+  "traits": [
+   "Set collection",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -15783,6 +17571,17 @@
    "Crowdfunding: Kickstarter",
    "Game: Star Realms",
    "Players: Games with Solitaire Rules"
+  ],
+  "designers": [
+   "Robert Dougherty",
+   "Darwin Kastle"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Direct conflict",
+   "Deck or bag building",
+   "Drafting of any kind",
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": 0.75,
@@ -15868,6 +17667,19 @@
    "Creatures: Aliens / Extraterrestrials",
    "Movies: Star Wars"
   ],
+  "designers": [
+   "Corey Konieczka"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control",
+   "Direct conflict",
+   "Worker placement of any kind",
+   "Hidden information",
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": 3.0,
   "poll": {
@@ -15935,6 +17747,13 @@
    "Digital Implementations: Google Play",
    "Digital Implementations: Steam",
    "Game: Steam"
+  ],
+  "designers": [
+   "Martin Wallace"
+  ],
+  "traits": [
+   "Auction of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.5,
@@ -16021,6 +17840,13 @@
    "Players: Two-Player Only Games",
    "Theme: Wizards"
   ],
+  "designers": [
+   "Colby Dauch"
+  ],
+  "traits": [
+   "Direct conflict",
+   "Deck or bag building"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -16083,6 +17909,16 @@
    "Occupation: Builder",
    "Series: T games (Daniele Tascini)",
    "Theme: Construction"
+  ],
+  "designers": [
+   "David Spada",
+   "Daniele Tascini"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Area control",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -16150,6 +17986,15 @@
    "Country: India",
    "Series: Alea Big Box",
    "Series: Euro Classics (Reiner Knizia)"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Set collection",
+   "Auction of any kind",
+   "Drafting of any kind",
+   "Network building"
   ],
   "interaction": "High",
   "interaction_shared": 3.0,
@@ -16221,6 +18066,12 @@
    "Misc: Lowest Score Wins",
    "Players: Games with Solitaire Rules",
    "Series: Amigo Anniversary Rubber-Band Games"
+  ],
+  "designers": [
+   "Wolfgang Kramer"
+  ],
+  "traits": [
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": -0.5,
@@ -16339,6 +18190,15 @@
    "Theme: Trees and Forests",
    "Theme: Weather"
   ],
+  "designers": [
+   "Antoine Bauza"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Tableau multipliers",
+   "Network building"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -16413,6 +18273,16 @@
    "Players: Two-Player Only Games",
    "Series: Two-player games (Kosmos)"
   ],
+  "designers": [
+   "Andreas Steiger"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Tableau multipliers",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
   "poll": {
@@ -16478,6 +18348,18 @@
    "Misc: LongPack Games",
    "Players: Games with Solitaire Rules",
    "Theme: Native Americans / First Peoples"
+  ],
+  "designers": [
+   "Dávid Turczi"
+  ],
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control",
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
@@ -16553,6 +18435,15 @@
    "Mythology: Egyptian",
    "Players: Games with Solitaire Rules",
    "Series: T games (Daniele Tascini)"
+  ],
+  "designers": [
+   "Daniele Tascini",
+   "Dávid Turczi"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Tableau multipliers",
+   "Drafting of any kind"
   ],
   "interaction": "Low",
   "interaction_shared": 0.5,
@@ -16638,6 +18529,17 @@
    "Players: Games with Solitaire Rules",
    "Series: T games (Daniele Tascini)",
    "Theme: Native Americans / First Peoples"
+  ],
+  "designers": [
+   "Daniele Tascini"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
@@ -16725,6 +18627,17 @@
    "Players: Games with expansions that add solo play",
    "Series: Terra Mystica",
    "Theme: Witches"
+  ],
+  "designers": [
+   "Jens Drögemüller",
+   "Helge Ostertag"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Contested market",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -16823,6 +18736,17 @@
    "Space: Mars",
    "Theme: Science"
   ],
+  "designers": [
+   "Jacob Fryxelius"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Direct conflict",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.75,
   "poll": {
@@ -16904,6 +18828,16 @@
    "Misc: BGG Hall of Fame",
    "Theme: Colonial"
   ],
+  "designers": [
+   "Vlaada Chvátil"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Tableau multipliers",
+   "Auction of any kind",
+   "Direct conflict",
+   "Drafting of any kind"
+  ],
   "interaction": "High",
   "interaction_shared": 3.0,
   "poll": {
@@ -16981,6 +18915,15 @@
    "Series: Fantasy Flight Silver Line",
    "Series: Tile-Laying Trilogy (Reiner Knizia)",
    "Theme: Deserts"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Area control",
+   "Hidden information",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -17063,6 +19006,15 @@
    "Game: Ticket to Ride (Official)",
    "Players: Games with expansions that change player count",
    "Theme: Trains"
+  ],
+  "designers": [
+   "Alan R. Moon"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Drafting of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -17155,6 +19107,17 @@
    "Series: Euro Classics (Reiner Knizia)",
    "Series: Tile-Laying Trilogy (Reiner Knizia)"
   ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Area control",
+   "Direct conflict",
+   "Hidden information",
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 4.0,
   "poll": {
@@ -17238,6 +19201,18 @@
    "Theme: Native Americans / First Peoples",
    "Theme: Temple"
   ],
+  "designers": [
+   "Michael Kiesling",
+   "Wolfgang Kramer"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Tableau multipliers",
+   "Auction of any kind",
+   "Area control",
+   "Direct conflict"
+  ],
   "interaction": "High",
   "interaction_shared": 2.5,
   "poll": {
@@ -17312,6 +19287,15 @@
    "Occupation: Merchant",
    "Series: T games (Daniele Tascini)"
   ],
+  "designers": [
+   "Simone Luciani",
+   "Daniele Tascini"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -17380,6 +19364,13 @@
    "Misc: LongPack Games",
    "Series: Book Box (DiceTree)",
    "Series: Master Print (Quined)"
+  ],
+  "designers": [
+   "Stefan Feld"
+  ],
+  "traits": [
+   "Set collection",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -17454,6 +19445,13 @@
    "Misc: Made by Panda",
    "Players: Games with expansions that add solo play",
    "Theme: Art style – Art Deco"
+  ],
+  "designers": [
+   "Richard Ámann",
+   "Viktor Péter"
+  ],
+  "traits": [
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
@@ -17534,6 +19532,19 @@
    "Game: Troyes",
    "Misc: Made by Panda",
    "Players: Games with Solitaire Rules"
+  ],
+  "designers": [
+   "Sébastien Dujardin",
+   "Xavier Georges",
+   "Alain Orban"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Area control",
+   "Worker placement of any kind",
+   "Hidden information"
   ],
   "interaction": "High",
   "interaction_shared": 3.75,
@@ -17624,6 +19635,17 @@
    "Mechanism: 4X",
    "Misc: Made by Panda"
   ],
+  "designers": [
+   "Dane Beltrami",
+   "Corey Konieczka",
+   "Christian T. Petersen"
+  ],
+  "traits": [
+   "Multi-track",
+   "Contested market",
+   "Direct conflict",
+   "Drafting of any kind"
+  ],
   "interaction": "High",
   "interaction_shared": 2.5,
   "poll": {
@@ -17712,6 +19734,15 @@
    "Theme: Native Americans / First Peoples",
    "Theme: Tropical"
   ],
+  "designers": [
+   "Simone Luciani",
+   "Daniele Tascini"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Worker placement of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
   "poll": {
@@ -17777,6 +19808,15 @@
    "Game: Russian Railroads",
    "Mechanism: Tableau Building",
    "Versions & Editions: Big Box Versions of Individual Games"
+  ],
+  "designers": [
+   "Helmut Ohley",
+   "Leonhard \"Lonny\" Orgler"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.0,
@@ -17856,6 +19896,14 @@
    "Series: Undaunted (Osprey Games)",
    "Theme: Deserts"
   ],
+  "designers": [
+   "Trevor Benjamin",
+   "David Thompson (I)"
+  ],
+  "traits": [
+   "Deck or bag building",
+   "Drafting of any kind"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -17918,6 +19966,15 @@
    "Mechanism: Tableau Building",
    "Players: Games with Solitaire Rules",
    "Theme: Under the Sea"
+  ],
+  "designers": [
+   "Vladimír Suchý"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.25,
@@ -17997,6 +20054,14 @@
    "Mythology: Arabian",
    "Mythology: Greek",
    "Theme: King Arthur / The Knights of the Round Table / Camelot"
+  ],
+  "designers": [
+   "Rob Daviau",
+   "Justin D. Jacobson"
+  ],
+  "traits": [
+   "Direct conflict",
+   "Co-operative"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -18078,6 +20143,16 @@
    "Misc: Made by Panda",
    "Misc: Watch It Played How To Videos"
   ],
+  "designers": [
+   "Rob Daviau",
+   "Justin D. Jacobson",
+   "Chris Leder",
+   "Kevin Rodgers"
+  ],
+  "traits": [
+   "Direct conflict",
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": 0.5,
   "poll": {
@@ -18152,6 +20227,11 @@
    "Misc: Made by Panda",
    "Players: Two-Player Only Games"
   ],
+  "designers": [
+   "Rob Daviau",
+   "Justin D. Jacobson"
+  ],
+  "traits": [],
   "interaction": "High",
   "interaction_shared": 0.0,
   "poll": {
@@ -18208,6 +20288,13 @@
    "Crowdfunding: Kickstarter",
    "Game: Unstable unicorns",
    "Misc: LongPack Games"
+  ],
+  "designers": [
+   "Ramy Badie"
+  ],
+  "traits": [
+   "Set collection",
+   "Direct conflict"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -18311,6 +20398,17 @@
    "Players: Games with Solitaire Rules",
    "Rivers: Douro"
   ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control",
+   "Worker placement of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 5.25,
   "poll": {
@@ -18383,6 +20481,19 @@
    "History: Francia",
    "Series: Medieval Trilogies (Garphill Games)",
    "Series: The West Kingdom Trilogy (Garphill Games)"
+  ],
+  "designers": [
+   "S J Macdonald",
+   "Shem Phillips"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Area control",
+   "Direct conflict",
+   "Deck or bag building"
   ],
   "interaction": "High",
   "interaction_shared": 0.75,
@@ -18460,6 +20571,14 @@
    "Mechanism: 4X",
    "Misc: Made by Panda"
   ],
+  "designers": [
+   "Nigel Buckle",
+   "Dávid Turczi"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": -0.25,
   "poll": {
@@ -18535,6 +20654,15 @@
    "Series: Historic Railroads System (Winsome Games)",
    "Series: Winsome Essen Sets",
    "Series: Winsome Train Games (Rio Grande Games)"
+  ],
+  "designers": [
+   "John Bohrer"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Auction of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
@@ -18626,6 +20754,15 @@
    "Theme: Medieval Fantasy",
    "Theme: Wizards"
   ],
+  "designers": [
+   "Roberto Di Meglio",
+   "Marco Maggi",
+   "Francesco Nepitello"
+  ],
+  "traits": [
+   "Area control",
+   "Co-operative"
+  ],
   "interaction": "High",
   "interaction_shared": 1.5,
   "poll": {
@@ -18705,6 +20842,20 @@
    "Series: The South Tigris Trilogy (Garphill Games)",
    "Theme: Astronomy"
   ],
+  "designers": [
+   "S J Macdonald",
+   "Shem Phillips"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Area control",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.75,
   "poll": {
@@ -18774,6 +20925,13 @@
    "Theme: Climate Change",
    "Theme: Steampunk",
    "Theme: Weather"
+  ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "Set collection",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
@@ -18857,6 +21015,17 @@
    "Mechanism: Dice Drafting",
    "Series: Small Box Euros (Devir)",
    "Theme: Samurai"
+  ],
+  "designers": [
+   "Isra C.",
+   "Shei S."
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Multi-track",
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Drafting of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.75,
@@ -18952,6 +21121,15 @@
    "Theme: Ecology",
    "Theme: Nature"
   ],
+  "designers": [
+   "Elizabeth Hargrave"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.25,
   "poll": {
@@ -19021,6 +21199,15 @@
   "families": [
    "Digital Implementations: Tabletopia",
    "Theme: Witches"
+  ],
+  "designers": [
+   "Martino Chiacchiera",
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Drafting of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -19105,6 +21292,17 @@
    "Rivers: Yangtze",
    "Rivers: Yellow"
   ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "Set collection",
+   "Parallel engine",
+   "Area control",
+   "Direct conflict",
+   "Drafting of any kind",
+   "Hidden information"
+  ],
   "interaction": "Medium",
   "interaction_shared": 4.5,
   "poll": {
@@ -19176,6 +21374,14 @@
    "Series: Crown Jewel Selection (Bitewing Games)",
    "Theme: Anthropomorphic Animals",
    "Theme: Zoos, Aquaria, Safari Parks"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Direct conflict",
+   "Hidden information"
   ],
   "interaction": "High",
   "interaction_shared": 0.0,
@@ -19263,6 +21469,14 @@
    "Game: 7 Wonders Duel",
    "Mechanism: Tableau Building"
   ],
+  "designers": [
+   "Antoine Bauza",
+   "Bruno Cathala"
+  ],
+  "traits": [
+   "Set collection",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.5,
   "poll": {
@@ -19320,6 +21534,12 @@
   "families": [
    "Digital Implementations: Board Game Arena",
    "Game: Catan"
+  ],
+  "designers": [
+   "Klaus Teuber"
+  ],
+  "traits": [
+   "Network building"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,
@@ -19392,6 +21612,12 @@
    "Game: Catan",
    "Islands: Fictional"
   ],
+  "designers": [
+   "Klaus Teuber"
+  ],
+  "traits": [
+   "Network building"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -19458,6 +21684,12 @@
   "families": [
    "Creatures: Dragons",
    "Game: Catan"
+  ],
+  "designers": [
+   "Klaus Teuber"
+  ],
+  "traits": [
+   "Network building"
   ],
   "interaction": "High",
   "interaction_shared": 0.5,
@@ -19528,6 +21760,15 @@
    "Food & Drink: Sausages / Hot Dogs",
    "Food & Drink: Soda Pop / Soft Drinks",
    "Theme: Food / Cooking"
+  ],
+  "designers": [
+   "Jeroen Doumen",
+   "Joris Wiersinga"
+  ],
+  "traits": [
+   "Deck or bag building",
+   "Drafting of any kind",
+   "Network building"
   ],
   "interaction": "Low",
   "interaction_shared": 0.5,
@@ -19605,6 +21846,12 @@
    "Digital Implementations: Board Game Arena",
    "Game: Great Western Trail"
   ],
+  "designers": [
+   "Alexander Pfister"
+  ],
+  "traits": [
+   "Deck or bag building"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.0,
   "poll": {
@@ -19670,6 +21917,12 @@
   "families": [
    "Digital Implementations: Board Game Arena",
    "Game: Innovation"
+  ],
+  "designers": [
+   "Carl Chudyk"
+  ],
+  "traits": [
+   "Tableau multipliers"
   ],
   "interaction": "Low",
   "interaction_shared": 0.0,
@@ -19744,6 +21997,13 @@
    "Digital Implementations: Board Game Arena",
    "Game: Innovation"
   ],
+  "designers": [
+   "Carl Chudyk"
+  ],
+  "traits": [
+   "Set collection",
+   "Tableau multipliers"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.0,
   "poll": {
@@ -19811,6 +22071,14 @@
    "Digital Implementations: Board Game Arena",
    "Game: Innovation",
    "Players: Expansions Changing Player Count"
+  ],
+  "designers": [
+   "Carl Chudyk",
+   "Chris Cieslik"
+  ],
+  "traits": [
+   "Set collection",
+   "Tableau multipliers"
   ],
   "interaction": "Low",
   "interaction_shared": 0.0,
@@ -19882,6 +22150,13 @@
   ],
   "families": [
    "Game: Innovation"
+  ],
+  "designers": [
+   "Carl Chudyk"
+  ],
+  "traits": [
+   "Set collection",
+   "Tableau multipliers"
   ],
   "interaction": "Low",
   "interaction_shared": 0.0,
@@ -19969,6 +22244,15 @@
    "Mechanism: Tableau Building",
    "Players: Expansions Changing Player Count"
   ],
+  "designers": [
+   "Frédéric Guérard"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Parallel engine",
+   "Drafting of any kind"
+  ],
   "interaction": "Low",
   "interaction_shared": 0.25,
   "poll": {
@@ -20054,6 +22338,16 @@
    "Players: Games with Solitaire Rules",
    "Theme: Archaeology / Paleontology"
   ],
+  "designers": [
+   "Elwen",
+   "Mín"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Worker placement of any kind",
+   "Deck or bag building",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.25,
   "poll": {
@@ -20122,6 +22416,15 @@
   "families": [
    "Admin: Upcoming Releases",
    "Game: Container"
+  ],
+  "designers": [
+   "Kevin Nesbitt"
+  ],
+  "traits": [
+   "Set collection",
+   "Contested market",
+   "Auction of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 4.0,
@@ -20200,6 +22503,14 @@
    "Game: Orléans",
    "Players: Expansions Changing Player Count"
   ],
+  "designers": [
+   "Reiner Stockhausen"
+  ],
+  "traits": [
+   "Worker placement of any kind",
+   "Deck or bag building",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 1.5,
   "poll": {
@@ -20264,6 +22575,10 @@
    "Crowdfunding: Kickstarter",
    "Game: Ra"
   ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "traits": [],
   "interaction": "Low",
   "interaction_shared": 0.0,
   "poll": {
@@ -20335,6 +22650,10 @@
    "Theme: Animal Battles",
    "Theme: Anthropomorphic Animals"
   ],
+  "designers": [
+   "Cole Wehrle"
+  ],
+  "traits": [],
   "interaction": "High",
   "interaction_shared": 0.0,
   "poll": {
@@ -20422,6 +22741,14 @@
    "Theme: Animal Battles",
    "Theme: Anthropomorphic Animals"
   ],
+  "designers": [
+   "Patrick Leder",
+   "Cole Wehrle"
+  ],
+  "traits": [
+   "Area control",
+   "Direct conflict"
+  ],
   "interaction": "High",
   "interaction_shared": 1.0,
   "poll": {
@@ -20500,6 +22827,13 @@
    "Players: Expansions Changing Player Count",
    "Players: Games with Solitaire Rules",
    "Theme: Alternate History"
+  ],
+  "designers": [
+   "Kai Starck",
+   "Jamey Stegmaier"
+  ],
+  "traits": [
+   "Area control"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -20581,6 +22915,13 @@
   "families": [
    "Game: Steam"
   ],
+  "designers": [
+   "Morgan Dontanville"
+  ],
+  "traits": [
+   "Auction of any kind",
+   "Network building"
+  ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
   "poll": {
@@ -20656,6 +22997,13 @@
   "families": [
    "Game: Steam",
    "States: California"
+  ],
+  "designers": [
+   "Morgan Dontanville"
+  ],
+  "traits": [
+   "Auction of any kind",
+   "Network building"
   ],
   "interaction": "Medium",
   "interaction_shared": 2.5,
@@ -20733,6 +23081,16 @@
    "Space: Colonization / Extraterrestrial Colonisation",
    "Space: Jupiter"
   ],
+  "designers": [
+   "Jacob Fryxelius",
+   "Jonathan Fryxelius"
+  ],
+  "traits": [
+   "Set collection",
+   "Contested market",
+   "Worker placement of any kind",
+   "Drafting of any kind"
+  ],
   "interaction": "Medium",
   "interaction_shared": 3.0,
   "poll": {
@@ -20798,6 +23156,13 @@
   ],
   "families": [
    "Game: Vinhos"
+  ],
+  "designers": [
+   "Vital Lacerda"
+  ],
+  "traits": [
+   "Parallel engine",
+   "Worker placement of any kind"
   ],
   "interaction": "Medium",
   "interaction_shared": 1.0,
@@ -20871,6 +23236,14 @@
   "families": [
    "Authors: J.R.R. Tolkien",
    "Series: War of the Ring (Nexus/Ares Games)"
+  ],
+  "designers": [
+   "Roberto Di Meglio",
+   "Marco Maggi",
+   "Francesco Nepitello"
+  ],
+  "traits": [
+   "Area control"
   ],
   "interaction": "High",
   "interaction_shared": 1.0,

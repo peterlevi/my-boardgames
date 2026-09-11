@@ -14,11 +14,13 @@ credentials.env.example  template
 point-salads.txt         hand-maintained "point salad" list
 data/raw/                verbatim BGG XML — collection, expansions, thing_*, exp_*
 data/games.json          normalised; every script reads this
+data/thumbs/             downscaled thumbnails, inlined into reports
 reports/                 generated HTML (gitignored)
 scripts/fetch.py         raw XML   <- BGG          (network; slow, be sparing)
 scripts/build.py         games.json <- raw XML     (offline, instant)
 scripts/query.py         terminal table <- games.json
-scripts/report.py        HTML report    <- games.json
+scripts/report.py        HTML report    <- games.json + data/thumbs
+scripts/thumbs.py        thumbnail cache <- BGG image CDN (network, once)
 scripts/report_template.html   the report's markup, CSS and browser-side filtering
 scripts/interaction.py   the derived "level of interaction" classifier
 scripts/common.py        credentials, paths, shared filter logic
@@ -33,6 +35,14 @@ python3 scripts/report.py --players 5 --mode best -o reports/best-at-5.html
 
 The page embeds the **whole** collection and filters in the browser, so one
 file answers any question. The CLI flags only set which filters it opens with.
+
+Every row is also **rendered server-side** as real markup, and the controls
+carry their selected state in the HTML. So when the script cannot run — Slack's
+mobile file preview does not execute it — the table is still complete,
+readable, and in rank order, showing whatever the opening filters describe;
+only filtering and sorting are lost, and a `<noscript>` note says so. For the
+same reason the page script stays within ES2019: an ES2021 `||=` was a parse
+error in that webview, which silently killed the entire script.
 Available in the page: name search, player count, the Best/Good rule, point
 salad (yes/no/doesn't matter), interaction level, complexity range, time range,
 play-count range, minimum poll votes, and expansion handling. Every column
@@ -49,6 +59,11 @@ Three modes, because an expansion can change which counts a game plays well at:
   displace a 1300-vote base one. Rows qualified this way are badged `+EXP`.
 - **Show as their own rows** — expansions listed alongside games.
 - **Ignore completely** — base games only.
+
+Thumbnails are inlined as data URIs from `data/thumbs/` so the file is fully
+self-contained (~1.5 MB) — external images are blocked in Slack and elsewhere.
+Run `python3 scripts/thumbs.py` once to populate that cache; `--link-thumbs`
+builds the ~130 KB hotlinking version instead.
 
 ## Terminal queries
 

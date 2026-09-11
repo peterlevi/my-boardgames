@@ -33,6 +33,12 @@ browser: search, player count, Best/Good rule, point salad, interaction,
 complexity, time, plays, and expansion handling. Prefer this when the user
 wants to explore rather than get one answer.
 
+Rows are rendered server-side and thumbnails are inlined, so the file still
+reads correctly where scripts or external images are blocked (Slack's mobile
+preview does both). Keep the page script at ES2019 or older — newer syntax is
+a parse error there and silently disables everything. Run `scripts/thumbs.py`
+once first if `data/thumbs/` is empty.
+
 For anything the flags don't cover, read `data/games.json` directly — one
 object per game with `name`, `rank`, `weight`, `average`, `year`, `plays`,
 `minplayers`/`maxplayers`, `minplaytime`/`maxplaytime`, `mechanics`,

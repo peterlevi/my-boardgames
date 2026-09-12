@@ -64,7 +64,27 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add docs/
             git commit -m "Refresh README screenshots [skip ci]"
-            git push
+            # Any commit landing on main between this job's checkout and this
+            # push makes a bare push fail on a race that has nothing to do
+            # with the screenshots — two pushes in quick succession are
+            # enough, and it has already turned a good build red. This commit
+            # only ever touches docs/*.png, so rebasing onto whatever arrived
+            # cannot conflict with a source change.
+            #
+            # The checkout is shallow, and rebasing across that boundary is
+            # what fails; deepening fixes it but costs a full history, so it
+            # happens only on the retry, never on the common first-try path.
+            pushed=""
+            for attempt in 1 2 3; do
+              if git push; then pushed=yes; break; fi
+              echo "push rejected (attempt $attempt) - rebasing onto origin/main"
+              git fetch --unshallow origin main 2>/dev/null || git fetch origin main
+              git rebase origin/main || { git rebase --abort || true; break; }
+            done
+            if [ -z "$pushed" ]; then
+              echo "could not push the refreshed screenshots" >&2
+              exit 1
+            fi
           fi
 
       - uses: actions/configure-pages@v5

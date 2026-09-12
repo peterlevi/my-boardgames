@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and forced conflict resolution",
-  "detail": "Players place tiles and leaders on a single shared map, so territories frequently merge and trigger direct majority battles between players' leaders for control of a kingdom. Almost the entire board is shared state; there is no private tableau, so every placement can help or hinder an opponent's position."
+  "kind": "area majority and conflict on a shared map",
+  "detail": "All players place tiles and leaders onto one shared hexagonal map, competing for majority control of regions and kingdoms. Placing a tile or leader can trigger conflicts that remove an opponent's leaders or force kingdom splits, and claiming key spaces denies them to rivals, so almost the entire game state is shared rather than held on individual player boards.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

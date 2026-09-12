@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "shared market competition, mostly parallel play",
-  "detail": "Players compete for limited copies of cards from a shared central supply and can be affected by Attack cards, but each player otherwise builds and plays their own deck independently. The market is the main shared resource; the rest of the game state is private to each player's deck."
+  "kind": "shared supply with occasional attacks",
+  "detail": "Each player builds and plays a private deck, so most of the game state is individual. Interaction comes from the shared kingdom card supply piles, which can be emptied to deny cards to opponents, and from Attack cards (e.g. Witch, Militia) that force opponents to discard, gain curses, or lose cards.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -38,7 +43,12 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   25,
+   45
+  ],
+  "score_note": "lower with more players (fewer Provinces each)"
  },
  "similar": [
   "Dominion: Intrigue",

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction and route blocking",
-  "detail": "Players bid against each other for turn order and huts, and compete for limited routes and resources on a shared board, actively blocking rivals' expansion. Nearly all board state — routes, huts, and available resources — is contested and shared."
+  "kind": "auction-driven tile placement with blocking",
+  "detail": "Players build resource and monument tiles onto one shared modular board of terrain, so the land, its yields, and adjacency bonuses are public and contested; grabbing a tile or a specialist can deny it to everyone else. Turn order and privileges are decided by open bidding, and goods are sold into a common demand track, but no one removes or damages an opponent's pieces directly.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "hidden movement and open conflict",
-  "detail": "Both sides move fleets and fight directly over the same shared galaxy map, and the Empire is actively hunting the Rebellion's hidden base location, so nearly every action affects the other player. Each side does hold private hands and hidden information, but the map and combat are fully shared stakes."
+  "kind": "open conflict over a shared galaxy map",
+  "detail": "Empire and Rebellion forces occupy and move across the same galaxy board, directly battling with combat cards and dice to destroy or capture each other's units and control systems. Nearly all game state is shared and contested rather than split into private player areas.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

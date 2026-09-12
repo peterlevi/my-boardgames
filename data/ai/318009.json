@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "dice drafting, mostly parallel play",
-  "detail": "Players take turns drafting available dice from a shared pool, which affects what workers others can access, but otherwise everyone fills in their own park sheet independently. The shared element is limited to the dice pool and turn order; scoring and board state are entirely personal."
+  "kind": "dice drafting into individual puzzle boards",
+  "detail": "Players draft dice from a shared pool of rolled dice each round, so choosing a die takes it away from other players' options. After drafting, all placement and route-building happens on each player's own separate park sheet with no further interaction between players.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

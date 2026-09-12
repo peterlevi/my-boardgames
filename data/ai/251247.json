@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking and area denial",
-  "detail": "Players compete for a shared, limited set of worker placement spots and river sections, so taking a space or building on a river tile can directly deny an opponent's plan. Water flow, turn order (determined by workers already placed), and dam/river control are all shared state, while each player's own powerhouse and patent tableau are private engines fed by that shared contest."
+  "kind": "worker placement and route/area contesting on a shared map",
+  "detail": "Players build dams, pipelines, and power plants on one shared map of river basins, and once a river section or connection is claimed it is unavailable to opponents, directly shaping each other's available routes. Worker placement is also on shared action spaces with a limited number of slots, so both the map and the action spaces are contested common state.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,6 +48,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   100,
+   160
   ]
  },
  "similar": [

@@ -17,8 +17,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "Direct competition for trade routes, cities, and battles",
-  "detail": "Players contest a shared market (only five trade slots) and a shared map of poleis, so one player's trading, military movement, or diplomatic overtures actively block or threaten the other's supply lines and territorial control. Combat and sieges are resolved directly between opponents' forces, and diplomats (proxenoi) can flip a contested city, making almost every action zero-sum against the opponent rather than played on a private tableau."
+  "kind": "area control with open military conflict",
+  "detail": "Both players' forces occupy and move across a single shared territory map, competing for control of the same regions and access to five shared trade markets. Combat lets a player directly attack and siege the opponent's controlled polis, so a large share of the game state (territory, markets) is contested rather than personal.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

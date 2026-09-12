@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light drafting competition",
-  "detail": "Each player builds their own zoo on a private board and mostly optimizes their own engine, but there is competition over which animal and sponsor cards are available to draft and over shared conservation project thresholds. Turn order and icon count on the shared action cards create some indirect jostling, but boards otherwise develop independently."
+  "kind": "parallel zoo building with a shared card market and conservation race",
+  "detail": "Each player builds their own zoo grid privately, but all players draw animal, sponsor, and conservation cards from a shared row, and the shared conservation project track can be triggered or advanced by whoever acts first, denying that bonus to others. There is no ability to act directly on another player's zoo or animals.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

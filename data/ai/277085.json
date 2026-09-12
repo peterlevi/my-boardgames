@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct targeting, bluffing and deduction",
-  "detail": "Almost every card played targets another specific player, forcing guesses, comparisons, or eliminations, so the entire game state is about what your opponents might be holding rather than any private tableau. There is essentially no solitaire play — every turn is about the other players."
+  "kind": "deduction and direct targeting",
+  "detail": "Each player plays one card at a time and most cards let you name, inspect, compare against, or eliminate a specific opponent, so the entire game is players acting directly on each other rather than building anything shared. There is no shared board or market — just a hand of cards and a deck, with player elimination as the direct consequence of guessing right.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -37,7 +42,12 @@
     "how": "target_score",
     "decided_by": "objectives"
    }
-  ]
+  ],
+  "score_range": [
+   3,
+   7
+  ],
+  "score_note": "target tokens needed drops as player count rises"
  },
  "similar": [
   "Coup",

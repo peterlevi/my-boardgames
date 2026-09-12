@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "network claiming and displacement (take that)",
-  "detail": "Players compete for the same routes and cities on a shared map, and can knock a rival's piece back to their personal supply to take their spot. Upgrade tracks and general stock remain private, but the map itself is fully contested."
+  "kind": "network building with piece displacement",
+  "detail": "All players place their trader pieces onto the same map of routes and cities, and completing a link or city lets you bump an opponent's existing piece off it back to their personal supply, directly setting them back. Almost all contested state is the shared map itself; there is no common market or negotiation between players.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

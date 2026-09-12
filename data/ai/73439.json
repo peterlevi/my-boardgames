@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared dice pool and paid worker borrowing",
-  "detail": "The dice pool generated each round is shared, and players can pay opponents to use their dice or lose their own to misfortune events, so there's constant low-level negotiation over a common resource even though each player's card hand and building track stay private."
+  "kind": "worker placement with rentable rivals and disruptive events",
+  "detail": "Everyone's dice-workers get placed on a shared board of limited action spaces, so claiming a spot (cathedral, city, market) can shut opponents out of it. Players can also pay to activate an opponent's idle dice for their own benefit, and event/activity cards can inflict direct setbacks, while a shared card row is drafted from by all.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

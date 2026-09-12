@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared board construction, set collection",
-  "detail": "Both players contribute cards to the same shared mandala mountains and later choose from them in turn order, directly competing for which colors end up in their own river and cup. Most of the visible board state is shared, while each player's collected river/cup is private."
+  "kind": "shared build with a common draw pool",
+  "detail": "Both players play cards into two shared central mandalas that they build together, then take turns drawing from that common mountain into their own private river and cup. Choosing a color for yourself removes it from what the opponent can take, so the shared mandala functions as both a shared building space and a contested shared pool.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -36,6 +41,10 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   10,
+   30
   ]
  },
  "similar": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority with hidden loyalties and bluffing",
-  "detail": "Every army cube goes onto one shared map, so contesting a region directly denies or overtakes another player's position there. Because everyone's ultimate scoring depends on which faction ends up dominant, players are constantly reading each other's hidden allegiance and either reinforcing or undermining specific regions to steer the outcome."
+  "kind": "area majority and influence on a shared map",
+  "detail": "Players commit hidden influence cards to the same regions on a shared map of the divided kingdom, and gaining majority in a region comes directly at the expense of rivals who committed there too. There is no direct attack or shared resource market; the contest is entirely about out-maneuvering others for control of common territory.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

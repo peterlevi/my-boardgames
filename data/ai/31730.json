@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "stock auctions and share dilution",
-  "detail": "Players bid against each other for company shares and decide when a company issues new stock, directly affecting the value of shares other players hold; the rail network and company treasuries are fully shared state, with almost no private player board."
+  "kind": "route blocking with share auctions",
+  "detail": "Players build competing rail networks on one shared hex map, where laying track into a city or link can shut out a rival's route. Railroad shares are bought through open auctions that any player can win, making both the map and the ownership stakes a shared, contested resource.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

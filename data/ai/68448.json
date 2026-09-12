@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "card drafting with neighbor-only conflict and trading",
-  "detail": "Players draft cards from a shared, rotating hand and can only fight or trade resources with the two players seated beside them, so most of the tableau you build is your own private board while the drafted card pool is the only shared state."
+  "kind": "card drafting with neighbor conflict",
+  "detail": "Each player develops their own city board, but cards are drafted from hands passed around the table, so picking a card denies it to whichever neighbor would otherwise receive it. Military strength is compared directly against each player's two table neighbors at set points, inflicting victory-point losses on the weaker side, making conflict a direct, localized attack rather than a whole-table effect.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

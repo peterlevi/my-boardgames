@@ -145,12 +145,19 @@ minutes.
 Three things in the report are **not** BGG data, and it says so wherever it
 shows them.
 
-**Interaction** — BGG has no such field, and neither does geekgroup's API. The
-level, and the description of *how* players interact, come from the opinion
-database above. Where that is unavailable it falls back to a rule in
+**Interaction** — BGG has no such field, and neither does geekgroup's API. It
+is computed the same way as the two above: the opinion pass reports five facts
+— is there a shared board everyone plays onto, can you block on it, can you
+act directly on an opponent, is there a common market, do players negotiate —
+and [`scripts/scoring.py`](scripts/scoring.py) weighs them. Asked for the
+label directly, the model called The Quest for El Dorado *low* while its own
+description said "race along a shared modular board and can block a path
+space": it reserves anything above Low for open conflict. Blocking only counts
+where there is a board to block on, which is what keeps Ark Nova — where you
+build your own zoo and share only a card row — at Low. Where the opinion
+database is unavailable it falls back to a rule in
 [`scripts/interaction.py`](scripts/interaction.py) reading BGG's mechanic and
-category tags: tags meaning players act *on* each other score High,
-competition over a shared pool Medium, parallel play Low.
+category tags.
 
 **Win condition** and **Point salad** are computed, not asked for. The
 opinion pass reports *facts* about a game's scoring — the separate subsystems

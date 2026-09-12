@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared resource contribution with individual scoring",
-  "detail": "Players choose whether to keep drafted cards in their own tableau or contribute them to a shared capital area whose powers benefit everyone, so decisions constantly ripple into what opponents can do next round. Most of the board is a shared capital area while each player keeps a separate personal tableau for direct scoring."
+  "kind": "drafting into a shared pool with individual tableaus",
+  "detail": "Players draft character cards from a shared row, and choosing a card both feeds your own home base and can be placed into the shared capital that everyone benefits from, denying strong cards or powers to opponents. Most of the game's value is split between what each player keeps privately and what ends up in that shared communal space.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

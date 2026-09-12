@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auctions, mergers, and zone-of-control over shipping routes",
-  "detail": "Players directly compete for the same shipping lanes and port access, can absorb each other's companies via merger, and bid against one another in auctions, making much of the map and company ownership shared and contested rather than siloed."
+  "kind": "auction-driven economic competition on a shared map",
+  "detail": "Companies, ports, and shipping routes all sit on one shared map, and controlling a zone or route can lock out competitors' goods movement. Shares and company mergers are won through open bidding against the whole table, so much of the tension comes from auctions rather than acting directly on an opponent's pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

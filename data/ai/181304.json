@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "cooperative clue-giving with communication limits",
-  "detail": "One player (the ghost) silently guides the rest of the group toward shared answers using visual cards, so the entire game state is communal and success depends on collective interpretation rather than individual boards."
+  "kind": "cooperative deduction, no player-vs-player interaction",
+  "detail": "The ghost deals a private set of vision cards to whichever medium is being helped, so almost all game state sits on that one medium's own tableau rather than a shared board. Players only ever cooperate to interpret clues and vote together at the end; nothing is contested, attacked, or drawn from a common pool.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

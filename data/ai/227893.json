@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "closed economy bidding",
-  "detail": "All fireflies are drawn from and returned to the same shared supply, so every token you commit to a card is one your opponents can't use, and you're watching their pace to time your own bids. There's no private tableau of note beyond the cards you've claimed."
+  "kind": "shared auction cards, indirect blocking",
+  "detail": "Players bid fireflies onto a shared row of critter cards, so committing tokens to a card can push it out of reach or make it unattractive for others. There is no direct attack; interaction is entirely through this common bidding tableau.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "bribery, negotiation, and voting",
-  "detail": "Players spend hidden victory-point tokens to bribe each other for votes on a shared enclosure track, so almost every turn is a direct negotiation affecting a single communal board state. There is no private tableau of note; the entire game is about converting private points into public influence over others."
+  "kind": "negotiation, bribery, and voting for shared positions",
+  "detail": "Players move their animal pieces up one shared point-to-point hierarchy of enclosures, and only a limited number of slots exist at each level, so advancing can block a rival from a spot they wanted. Victory points/laurels function as a shared bargaining currency that players openly trade, bribe with, and vote with to influence who gets elected, making the interaction almost entirely about deal-making rather than direct attacks on opponents' pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "shared tracks with light racing",
-  "detail": "Players advance along common economy, culture, and military tracks and can be first to claim limited achievements, but most of a turn is spent managing your own dice results and resources somewhat independently of opponents."
+  "kind": "parallel city-state development with contested achievements",
+  "detail": "Each player advances their own economy, culture, and military tracks and manages their own city-state largely independently. Interaction is limited to racing for a shared set of Achievements and unlockable bonuses that only one player can claim first, denying them to the rest of the table.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

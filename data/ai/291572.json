@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict, negotiation, and shifting alliances",
-  "detail": "Players directly battle for map regions, form and break alliances, and vote on political outcomes, with the shared world state (the Chronicle) persisting and being altered by everyone's actions across games. Very little is private; almost the entire board and its history is shared and contested."
+  "kind": "area control, open conflict, and negotiation",
+  "detail": "Nearly the entire game state is one shared map and shared card supply: warbands occupy and fight over the same regions, and combat can banish an opponent's pieces or strip them of relics, secrets, and favor. Players also strike explicit deals, promises, and alliances with each other, making Oath one of the more directly confrontational and negotiation-heavy games on this list.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

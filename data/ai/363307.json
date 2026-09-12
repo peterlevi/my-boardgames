@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "Shared drafting pool, private boards",
-  "detail": "Each player develops an entirely separate personal board with no spatial competition, unlike Photosynthesis's single shared board. The main touchpoint is drafting biome cards from a shared pool, where players weigh what they take against what they leave behind, since unchosen cards boost the shared Fertility zone."
+  "kind": "mostly parallel play with a shared draft pool",
+  "detail": "Each player develops an entirely private planet board. The only point of contact is a shared row of biome cards each round: taking one leaves fewer options for opponents, and cards left behind become more fertile for whoever eventually takes them. There is no shared board or direct attack.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light drafting",
-  "detail": "Players choose token sets and animal cards from a small shared display, so timing what you take can deny others their preferred pick, but each player builds and scores their own landscape board entirely independently."
+  "kind": "drafting from a shared display into private boards",
+  "detail": "Players draft sets of terrain tokens and animal cards from one shared central display, so what remains available to opponents shifts based on your picks, but all the actual building happens on each player's own separate hex board. There is no removal of an opponent's pieces and no negotiation.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

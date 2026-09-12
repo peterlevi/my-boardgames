@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "real-time trading and negotiation",
-  "detail": "Players spend most of each round simultaneously negotiating and trading resources and technology directly with one another, since production chains depend on goods only other races can supply. Individual economies are private, but the entire game hinges on constant shared bartering."
+  "kind": "trading and negotiation",
+  "detail": "Players run separate economies but survive only by freely trading resources and technology cards with each other during real-time negotiation phases. Almost all meaningful interaction is through deals struck directly between players rather than through any shared board; there is no combat or space control.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

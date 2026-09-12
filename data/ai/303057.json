@@ -17,8 +17,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "Competitive bidding and shared resource claiming",
-  "detail": "Players compete directly over a shared set of airport/destination cards and route claims through open, visible bidding - being outbid sends your worker back for reuse, so it's tense but not a hard lockout. Money is public knowledge, which shapes bidding strategy, and Pan Am's own expansion (via die rolls and events) can seize routes players already claimed, forcing a sale - so the shared board state and stock market are the main channels through which players affect each other, while each player's own fleet/route income functions more like a personal engine feeding the shared stock race."
+  "kind": "competitive bidding and route auction on a shared map",
+  "detail": "All players bid against each other for the same landing rights and routes on one shared world map and can buy from a common pool of planes, so acquiring a route or plane removes it from what opponents can get. Stock in the Pan Am company is also a shared holding players compete to control, though there is no way to directly damage or seize an opponent's existing assets.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

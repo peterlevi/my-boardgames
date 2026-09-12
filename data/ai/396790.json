@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "network building and competition for map locations",
-  "detail": "Players compete for limited city connections, resources, and contract slots on a shared map, so route-building choices can block or route around opponents. Each player still runs a mostly independent tech-tree engine on their own player board."
+  "kind": "network-building and route/spot blocking on a shared map",
+  "detail": "Railways, power lines, and buildings are placed onto one common map, so claiming a hex, connection, or contract can physically block or devalue a route an opponent needed. A shared market and action-retrieval board are also drawn from by everyone, though there is no way to damage or remove an opponent's pieces directly.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "shared track space competition, mostly parallel engine-building",
-  "detail": "Players affect each other mainly by racing to occupy track spaces and research slots before opponents, and by drafting from shared open tableaus of theories and tools. Each player otherwise develops a private engine and board largely independent of what others are doing."
+  "kind": "drafting and space-blocking on a shared travel board",
+  "detail": "Player pawns move along the same point-to-point map of cities and can claim the same limited tiles/theory spots, so getting there first denies them to others. An open drafting row of student and travel cards is shared by all players, but each player otherwise builds their own tableau of tracks with little direct effect on opponents beyond that contested board and offer row.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

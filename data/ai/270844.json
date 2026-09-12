@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "take-that raiding and card drafting",
-  "detail": "Each player builds their own tableau of buildings, but ships let players actively raid opponents' islands to steal resources or damage their engine, and cards are drafted from a shared row, so choices affect what's available to rivals."
+  "kind": "card drafting with raids",
+  "detail": "Each player builds their own kingdom tableau of location and building cards, but locations are explored from a shared offer row, so taking one denies it to opponents. Raid cards let a player sail out and directly damage, steal from, or destroy an opponent's buildings and resources.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

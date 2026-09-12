@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority and worker placement competition",
-  "detail": "Players contest the same districts and placement spots, so territorial influence and timing directly affect rivals, while much of the engine-building (resources, cards, upgrades) happens on individual player boards. The shared Manhattan map is where most direct competition plays out."
+  "kind": "territorial worker placement and influence",
+  "detail": "Mobsters place workers and influence across the same set of Manhattan districts, competing for majority control and limited district actions. Taking a district or action spot can deny it to opponents, though there is no direct removal of opponents' pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

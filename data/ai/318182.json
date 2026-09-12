@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "card-based raids and drafting from a shared market",
-  "detail": "As in Classics, players raid each other with military cards and draft from a shared card row, while each civilization's deck and tableau remain private and individually managed."
+  "kind": "card drafting with take-that attacks",
+  "detail": "Same engine as its sister title: players grow a private deck/tableau for their own civilization, but pull cards from a shared drafting row, and conflict-themed cards allow direct attacks on rivals. Most of the board state (each player's deck and discard) stays private to that player.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

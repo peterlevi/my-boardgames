@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "take-that sabotage",
-  "detail": "Players directly destroy, steal, or neigh away each other's unicorn cards, so most of the tension comes from attacking whoever is closest to seven unicorns; each player's stable is their own small tableau but it's constantly under threat from everyone else."
+  "kind": "take-that card game",
+  "detail": "Each player builds their own unicorn army in front of them, but everyone draws from and discards to shared piles, and Neigh and downgrade cards let players destroy or disable cards directly in an opponent's army. Interaction is driven almost entirely by these targeted attack cards rather than by contesting any shared board.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,12 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "drafting from a shared pool",
-  "detail": "Players draft from the same rolled pool of dice each round, so taking a die denies it to others and can shift what's left, plus a shared map has limited pulsar/planet spots to claim. Beyond that, each player develops their own tech and production engine independently."
+  "kind": "dice drafting and a race to claim shared spaces",
+  "detail": "Players build their own engine on a personal board, but each round's dice come from one communal pool everyone drafts from, and pulsars and track bonuses on the shared map are claimed first-come-first-served, denying them to others. There is no way to act directly on an opponent's pieces.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true
  },
  "scoring": {
   "subsystems": [

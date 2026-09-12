@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "simultaneous card placement and penalty avoidance",
-  "detail": "All players reveal cards simultaneously onto shared rows, and where your card lands depends entirely on everyone else's plays, often forcing you to take a bad row because of others' choices. The row state is fully shared and constantly reshaped by every player's card each turn."
+  "kind": "simultaneous card play onto shared rows",
+  "detail": "All players play a card each round onto four shared rows in ascending order, so your card choice determines who is forced to take a penalty row, including forcing opponents into bad rows or being forced into one yourself. Hands are private and there is no draw pool, but the four tableau rows are entirely shared state that every player's play modifies.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,8 +48,11 @@
     "decided_by": "instant"
    }
   ],
-  "score_range": null,
-  "score_note": "lowest bull-head total wins; game ends when someone crosses the 66-point threshold"
+  "score_range": [
+   10,
+   40
+  ],
+  "score_note": "lowest penalty total wins; game ends once someone hits 66"
  },
  "similar": [
   "Coloretto",

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "shared board space drafting with mostly parallel tableau-building",
-  "detail": "Players compete for the same limited spaces on shared tracks and the fair/market area, so timing and blocking matter, but each player mostly develops their own private engine of contracts and buildings. Direct conflict is minimal; interaction is mostly about racing for the same resource nodes."
+  "kind": "shared dice draft with limited action spaces",
+  "detail": "Players draft from one shared pool of rolled dice and take actions on a common set of location and contract spaces, so an opponent taking a die or a spot first can deny it to you. Most of a player's cathedral, family favor and nobility progress is built on their own tableau, so the shared elements are the drafting pool and market rather than a shared building surface.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

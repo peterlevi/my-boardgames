@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "commodity speculation and shared market pressure",
-  "detail": "Players buy and sell into a shared, dynamic commodity market whose prices shift based on collective actions, so one player's speculation directly affects what others can profitably do, even though factory development itself sits on individual player boards."
+  "kind": "private factory building around a shared speculative market",
+  "detail": "Each player expands their own car factory through tile placement on a personal board, so construction itself isn't shared, but everyone buys and sells raw materials on one common, price-fluctuating market, meaning heavy buying or selling by one player changes the price everyone else pays. Turn order is set by comparative performance rather than by acting on another player's pieces directly.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

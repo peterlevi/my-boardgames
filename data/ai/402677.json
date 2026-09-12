@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "Shared triggers, indirect blocking",
-  "detail": "Each player runs their own city/board, but triggering a Production phase hands every player a bonus based on their own invention tracks, so opponents' actions constantly \"drip\" benefits to you. Expanding districts and using shared worker-placement/rondel spaces also opens or closes opportunities for others, so interaction is mostly indirect rather than direct confrontation."
+  "kind": "worker placement and rondel action-blocking",
+  "detail": "Players move a shared rondel and place workers on a common modular city board, so choosing an action or space can occupy it and prevent others from using it that round. Most of the strategic tension comes from this contested shared board and action selection rather than any direct attacks or a common resource pool.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

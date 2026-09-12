@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play",
-  "detail": "Each player builds and optimizes their own hex-tile board largely independently, with light competition only over shared tile supply and turn order. Most of the game state lives on individual player boards rather than a shared map."
+  "kind": "mostly parallel play with a shared card/tile display",
+  "detail": "Each player develops their own hex-tile board and personal tableau, so most of the game state is individual. Interaction is limited to picking from a shared display of tiles and multi-use cards, and to a 'follow' mechanic letting others piggyback on a chosen action, rather than any shared board or direct conflict.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

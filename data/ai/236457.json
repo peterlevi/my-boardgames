@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker sabotage and shared building sites",
-  "detail": "Players compete for the same worker-placement spots and can pay to jail an opponent's worker or raid their warehouse, so turn order and timing matter a lot. Buildings under construction are a shared board state everyone contributes bricks to, while resources, virtue, and money are tracked on individual player boards."
+  "kind": "shared city board with worker capture",
+  "detail": "Players move and place workers on one shared city board of buildings, competing for the same locations and a common resource market, and the corrupt track lets a player capture and jail an opponent's worker or block their virtuous path. So beyond space contention, pieces can be removed from play by a rival's direct action.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

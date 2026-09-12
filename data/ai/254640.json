@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "cooperative clue-giving and communication",
-  "detail": "All non-active players see the same secret word and simultaneously write clues into a shared pool that gets filtered by matching duplicates, so nearly the entire game state — the surviving clues — is shaped collectively by everyone's choices at once."
+  "kind": "fully cooperative, no competition between players",
+  "detail": "All players work toward one shared score by giving clues to help a single active player guess a word each round, with no opposing sides, no resource competition, and no ability to hinder or help through deals. The only mechanical link between players is the duplicate-clue elimination rule, which rewards coordination rather than conflict.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

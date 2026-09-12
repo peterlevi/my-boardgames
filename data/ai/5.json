@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "stock investment and market manipulation on a shared board",
-  "detail": "All chains and the tile grid are fully shared and public, so a tile placement that merges two hotel chains directly determines bonus payouts and share values for every player holding stock in those chains."
+  "kind": "tile placement triggering forced mergers",
+  "detail": "All tiles are placed onto one shared grid that forms the hotel chains, so a placement can trigger a merger that forcibly absorbs an opponent's chain and its board presence. Stock in each chain is bought from a single shared bank supply available to everyone, and merger payouts are determined by who holds the most shares in the absorbed company.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

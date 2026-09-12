@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with shared map exploration",
-  "detail": "Players expand onto a shared hex map and compete to recruit limited survivor cards and unlock tech, but each player mainly manages their own tribe board and engine with little direct conflict."
+  "kind": "competitive drafting, mostly parallel play",
+  "detail": "Each player builds up their own tribe and factory boards independently with no fighting or direct attacks. Interaction happens mainly through open drafting of shared offers (survivors, sites, technologies), where taking an option denies it to opponents.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,7 +48,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   90,
+   140
+  ],
+  "score_note": "endgame VP tally; varies with tech/pop progress"
  },
  "similar": [
   "Scythe",

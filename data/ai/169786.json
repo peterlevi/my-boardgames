@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority with occasional direct combat",
-  "detail": "Players build largely on their own player mat and home territory but must contest the same hex map for resources, encounters, and territory control, with combat and popularity affecting shared standings. Most turns are independent optimization, punctuated by pivotal territorial clashes."
+  "kind": "area control and mech combat",
+  "detail": "Factions move units and mechs across one shared hex map, contesting territory and triggering combat that can eliminate opponents' pieces or steal resources. Encounter cards and popularity tracks add further ways one player's choices constrain or hurt another.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,7 +48,12 @@
     "how": "end_trigger",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   55,
+   95
+  ],
+  "score_note": "popularity multiplier can push it higher"
  },
  "similar": [
   "Root",

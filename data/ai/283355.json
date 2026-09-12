@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "Negotiation, alliances, and open conflict",
-  "detail": "Players openly negotiate treachery card trades, troop movements, and alliances every turn, and battles are resolved via secret bidding of forces and cards against a shared board (the planet map). Almost the entire game state, the map and spice, is shared and contested, with only hand cards and faction advantages kept private."
+  "kind": "open negotiation and territorial combat",
+  "detail": "All factions move and battle for control of the same map of Arrakis, so territory and Spice are directly contested. Deals, bribes, and alliances are negotiated openly between players every turn, and combat can destroy an opponent's forces outright.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [
@@ -52,7 +57,8 @@
     "how": "fixed_length",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": null
  },
  "similar": [
   "Dune: Imperium",

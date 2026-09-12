@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "shared tile pool scramble plus open conflict in flight",
-  "detail": "During building, everyone grabs from the same public pool of tiles in real time, so speed and spatial awareness directly cost opponents pieces they wanted. During flight, players share the same event deck and can end up firing on or colliding with each other's ships, with the board state (position on the track) fully shared and visible."
+  "kind": "real-time grabbing and race positioning",
+  "detail": "During ship-building, all players grab tiles simultaneously from one common pile, so speed and blocking of desired pieces matters directly. During the flight phase, ships share a single track where position determines who meets hazards first and who can be shot at or bumped by others' fire, though most dangers come from the game's event cards rather than direct player actions.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

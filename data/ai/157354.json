@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "blocking and area denial on a shared board",
-  "detail": "All meeples and tiles sit on one shared board, and every move changes what's available to the next player, so positioning and denying good moves to opponents is central. Players also bid against each other for turn order and can directly attack opponents' meeples with assassins."
+  "kind": "shared board manipulation with elimination",
+  "detail": "All meeples sit on one shared mancala-style board, and every move redistributes meeples that other players will later have to pick up, so positioning constantly affects everyone's options. The Assassin and Vizier characters let a player directly remove an opponent's meeples or steal their resources, and turn order itself is won through a bidding auction against the other players.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking on shared rotating gears",
-  "detail": "All players place workers on the same set of gears, so popular spots get blocked or bumped, forcing rivals onto worse options, while resource and building tracks are otherwise managed on each player's own board. The temple tracks and available action spots are the main shared state."
+  "kind": "worker placement on shared rotating gears",
+  "detail": "All players place their workers onto the same connected gears, and a spot taken by one player is unavailable to others that round, with the shared temples/tech tracks also fought over positionally. There is no way to damage or steal directly from another player's resources or board; interaction is purely through contesting shared spaces and timing.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

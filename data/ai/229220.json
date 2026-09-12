@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light drafting competition",
-  "detail": "Each player develops their own colony board independently; the only shared contention is drafting which dice/buildings to take before opponents do. There is no direct attack or negotiation between players."
+  "kind": "dice drafting, mostly parallel colony building",
+  "detail": "Each player builds on their own individual colony board with no destructive conflict, but all players draft from the same shared pool of dice each round, so taking a die can deny a needed color or value to an opponent. Beyond the dice draft, boards and progress are entirely separate.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -44,6 +49,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   100,
+   160
   ]
  },
  "similar": [

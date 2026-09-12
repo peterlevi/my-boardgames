@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict and alliances",
-  "detail": "Players directly contest control of regions on a shared map through battles and shifting alliances, while trick-taking hands determine turn strength and options. The map and influence tracks are fully shared, with only card hands kept private."
+  "kind": "shifting alliances with open conflict for control",
+  "detail": "Players place and contest influence across a shared map of Irish regions, forming and breaking alliances and marriages, while combat and Viking raids let them directly unseat or damage rivals' positions. Control of key regions changes hands through both negotiation and direct confrontation, with little of the game confined to a private player board.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

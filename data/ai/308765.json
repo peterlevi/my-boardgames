@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority and shared board competition",
-  "detail": "Players compete for limited actions on the shared action crane and for area-majority bonuses on the map, so timing and racing for key spots matters, but most of the actual building happens on each player's own tableau. The shared elements (board spaces, majority bonuses) create indirect pressure rather than direct attacks."
+  "kind": "action drafting with shared board areas for majority",
+  "detail": "Players take actions from a shared rotating action space (the crane) where a used space is removed from what opponents can pick that round, and contribute pieces to shared structures like the bridge and cathedral where position and majority matter to all players. Each player also has a personal board and resource track that stays entirely their own.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

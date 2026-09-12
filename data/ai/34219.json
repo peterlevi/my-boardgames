@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blind bidding and drafting",
-  "detail": "Players bid against each other for the same cards during the market phase and compete directly for majority control in each of the five categories. The card marketplace and gold reserves are shared/visible state, while each player's collected cards and coins form their own hidden holdings until scoring."
+  "kind": "sequential card auction",
+  "detail": "Cards representing books, resources, and gold are revealed one at a time from a shared deck and auctioned or drafted, so winning a card directly removes it from what other players can acquire. Each player's won cards form a private collection scored individually, meaning the shared state is limited to the single card up for bid at any moment.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -42,6 +47,10 @@
     "how": "exhaustion",
     "decided_by": "majority"
    }
+  ],
+  "score_range": [
+   20,
+   40
   ]
  },
  "similar": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open tableau effects, forced exchanges, and direct attacks",
-  "detail": "As with base Innovation, all tableaus are public and dogma effects let players constantly share, steal, or destroy each other's cards, with expansions adding further ways for players to affect one another's boards."
+  "kind": "tableau building with shared card supply and direct effects",
+  "detail": "This is the same core Innovation engine (plus its expansions): private per-player tableaus fed by shared age piles, where drawing a card can deny it to the rest of the table. Many dogma effects reach across the table to directly affect an opponent's cards or resources.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

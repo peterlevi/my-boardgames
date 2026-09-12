@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "hidden roles, bluffing, and open accusation",
-  "detail": "The entire game is players talking, voting, and trying to read or deceive each other; there's no personal board or tableau, just shared quest outcomes and each player's hidden allegiance driving nearly all decisions."
+  "kind": "hidden roles, accusation and persuasion",
+  "detail": "There is no board or pieces at all; players affect each other purely through discussion, voting on quest teams, and accusing or defending against suspicion of being evil. All state (who's on a team, votes, quest results) is fully shared and public except each player's hidden loyalty, which is the entire crux of the game.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [
@@ -46,7 +51,8 @@
     "how": "sudden_death",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null
  },
  "similar": [
   "The Resistance",

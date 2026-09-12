@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "worker placement blocking with mostly independent tableau-building",
-  "detail": "Players compete for the same limited action spaces on a shared board, so timing and blocking opponents' preferred actions matters early in a round. Beyond that scramble for actions, almost all of the game's depth plays out privately on each player's own board as they tile-pack resources and occupations."
+  "kind": "worker placement blocking, private board building",
+  "detail": "Turns are driven by placing workers on a shared action-space board, where occupying a space locks it away from every other player for the round, creating real contention over popular actions. The tile-laying and farm/ship layout itself happens entirely on each player's own individual board, which no one else can affect.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

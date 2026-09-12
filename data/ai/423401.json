@@ -16,8 +16,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "Indirect blocking and drafting competition",
-  "detail": "Players mostly build their own engines and boards independently; the main interaction point is turn-order blocking during dice/action drafting (taking a die or space before an opponent can), plus competing for area majority/presence on a shared board. There is no direct conflict or combat, and reviewers explicitly describe interaction as minimal, calling out 'little to no player interaction apart from the blocking during dice placement.'"
+  "kind": "area majority and open drafting for influence",
+  "detail": "Clans place pieces onto one shared map of Crete and compete for area majority/influence in the same regions, so a large part of the board is common contested territory. Players also draft freely from shared card/action options, where taking one can remove it from what an opponent could otherwise take, though there's no direct damage between players.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -46,6 +51,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   60,
+   100
   ]
  },
  "similar": [

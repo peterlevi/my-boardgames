@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "Mostly parallel play with a shared shrinking map",
-  "detail": "Players move and place tiles on a shared modular board that changes for everyone as the city locks down, but scoring and routes are largely individual, with interaction coming from competing for the same map spaces and enclosure timing rather than direct conflict."
+  "kind": "race and area denial on a shared map",
+  "detail": "All players move across the same modular city map, racing to grab money tiles and secure an escape route before rivals reach the same hexes first. Route and path tiles come from a shared pool that is drafted round by round, but no action targets an opponent directly.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -41,6 +46,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   40,
+   70
   ]
  },
  "similar": [

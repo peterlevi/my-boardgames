@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "competition for shared spaces and markets",
-  "detail": "Players compete for limited action spots, loans, and trade-fair/export sales, and can be squeezed out of markets by faster opponents, but most of the game happens on each player's own winery board and vineyards rather than a shared contested space."
+  "kind": "worker placement with area-majority land grabs",
+  "detail": "Players place workers on a shared board of regions and buildings, competing for limited action spots and for majority control of wine regions that pay out at harvest. Most production happens on each player's own vineyard tableau, but the regional map and its limited placement spots are fully shared and contested.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "worker placement blocking on a shared grid",
-  "detail": "Both players place figures on the same central grid, and taking a space denies it to the opponent for that round, creating constant tactical blocking. The central board is fully shared while each player's tribe card tableau and resources remain private."
+  "kind": "shared grid with row/column denial",
+  "detail": "The two players place workers on one shared 5x5 grid, and once a worker occupies a row or column, the opponent cannot place in that same row or column that round, making every placement a direct denial of options. Goods and tribe cards are drawn from a shared central market, so both the board and the available cards are common contested resources.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

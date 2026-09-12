@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with a competitive draft",
-  "detail": "The only shared resource is the row of available dominoes each round, where picking a strong tile bumps you later in the next turn order; beyond that, each player builds and scores their own separate kingdom grid with no way to affect anyone else's board directly."
+  "kind": "drafting and area denial",
+  "detail": "Each player builds their own kingdom grid, so boards are private, but every domino is picked from a shared, visible row and turn order is set by prior picks, so taking a tile can deny a rival the exact terrain or crown combo they wanted. There's no direct interaction with an opponent's kingdom itself, just competition over the shared draft.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

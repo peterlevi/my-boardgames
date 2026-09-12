@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "Indirect, shared temple majority",
-  "detail": "Each player builds on a private home board that is not shared, so most of the game is parallel development. The only shared, contested state is the temple spaces, where incense placement creates area-majority competition for spirit bonuses, with ties broken by turn order."
+  "kind": "action drafting with individual gardens",
+  "detail": "Players select seasonal actions from a shared action wheel/board, and claiming an action or resource can deny it to opponents for that round. Each player then builds and manages their own separate bamboo garden and family board, so the bulk of the game state (the tableau being built) is private to each player.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -42,6 +47,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   50,
+   80
   ]
  },
  "similar": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open accusation, bluffing, and group voting",
-  "detail": "As in the base game, players openly discuss and accuse one another before a simultaneous vote resolves the round, with new roles adding more ways to manipulate or gather information from other players' secret roles. Almost the entire experience is shared, verbal, and interactive rather than solitary."
+  "kind": "hidden-role deduction with added kill/attack roles",
+  "detail": "Like the base game, night actions let roles such as the Vigilante or Bombardier actually kill or force death onto another player's role, going further than the original's card-swapping. A shared center pool of extra cards is still used by several roles, and the game still resolves through discussion and a single simultaneous vote rather than any shared board.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [],

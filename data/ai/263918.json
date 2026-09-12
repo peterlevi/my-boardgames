@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with shared shape reveals",
-  "detail": "Everyone draws the same revealed shape onto their own individual map each turn, so the only shared element is the shape and scoring conditions being revealed, while each player's grid stays completely private. There's essentially no direct player-to-player action beyond racing to fulfill the same public objectives better than others."
+  "kind": "mostly parallel play with shared objectives",
+  "detail": "Each player draws on their own private grid sheet in response to the same revealed shape and scoring cards, so everyone is racing to satisfy the same public objectives rather than acting on each other's boards or pieces. There is no shared space, blocking, or direct interaction—only the pressure of comparing final scores against the same rules everyone faced.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

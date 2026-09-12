@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction/bidding and shared-company manipulation",
-  "detail": "Players bid against each other for the right to take the next action, and crucially any shareholder can build track, upgrade a town, or call dividends for a company — so the five railway companies are fully shared state that everyone manipulates, not just their nominal owner."
+  "kind": "share auction and track-building on a shared map",
+  "detail": "Players build track cubes for the same five companies onto one shared map of Ireland, so a company's route and city connections are common property that affects every shareholder's dividends. Shares of each company are auctioned off one at a time, a shared pool everyone bids into, and building or upgrading a town can shape payouts for all holders of that stock, not just the acting player.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

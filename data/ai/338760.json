@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "competition for shared routes, contracts, and market space",
-  "detail": "Players build on the same map and compete for the same limited contracts, workers, and delivery routes, indirectly blocking each other by claiming space and depressing shared markets rather than attacking directly. Each player still runs their own factory/track engine, so much of the state is personal even though the map and contract pool are shared."
+  "kind": "network building and market competition",
+  "detail": "All players build factories and rail links onto one shared map, so track and city connections can be contested or blocked outright. Goods sold into a common market and public contracts fulfilled on a first-come basis mean players are constantly racing each other for the same deliveries, but without any direct action against an opponent's pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

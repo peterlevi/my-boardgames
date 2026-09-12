@@ -16,8 +16,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "Worker-placement bumping on a shared board",
-  "detail": "Players compete for the same central worker-placement spots but can bump an occupying opponent's worker off, with the bumped player receiving income as compensation rather than being fully blocked. Most of the actual building — ships, technologies, company network — happens on individual player boards, so shared state is limited mainly to the contested placement spots and market/track positions."
+  "kind": "worker placement with a shared market and network",
+  "detail": "Everyone places workers onto the same modular board of locations and buys from a shared market, so taking a spot or a good denies it to opponents. Each player also builds their own ships and technology track privately, but the contested locations and market are the main point of friction, with no direct attacks between players.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

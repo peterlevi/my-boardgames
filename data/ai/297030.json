@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "action-space blocking and worker denial",
-  "detail": "Players compete for limited spaces around the rotating obelisk and can be shut out of an action if someone takes it first, and dice/worker strength is a shared, visible resource others plan around. Most of each player's engine (temple grid, monuments) lives on their own board, so a large share of the state is private."
+  "kind": "shared rotating action wheel",
+  "detail": "Players draft actions from one shared rotating wheel board, so taking an action space removes it for others until the wheel turns again, creating constant contention over timing and position. Pattern-building and god-favor tracks are otherwise developed on each player's own board, so interaction is concentrated on the shared action wheel rather than on the player boards themselves.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

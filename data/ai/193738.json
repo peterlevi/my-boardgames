@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "route and building competition",
-  "detail": "Players share one trail and race for limited building spots, station placements, and staff hires, so positioning and timing matter a great deal. Each player otherwise develops a private deck, herd, and player board largely independent of others."
+  "kind": "shared trail with limited building spots and market rows",
+  "detail": "All players move their disc along the same trail and can build in the limited building spots at each town, so an occupied or built-up location is denied to others. Cattle, workers, and buildings are drawn from shared market displays, while each player's herd, deck, and personal board otherwise develop independently with no direct attacks.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

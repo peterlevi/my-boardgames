@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and territorial competition",
-  "detail": "Players place pieces on a shared hex map where majority in each region determines who scores, so placements are constantly contesting the same spaces. There is very little private player board; almost all the meaningful state is shared on the map."
+  "kind": "area majority and route contesting on a shared map",
+  "detail": "All players place their nobles, priests, and craftsmen tiles onto one shared hexagonal map, directly contesting adjacency to the same cities and temples to trigger scoring. Tiles are drafted from a common open supply, so both the placement space and the piece pool are shared, though there is no removal or capture of opponents' pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -46,6 +51,10 @@
     "how": "sudden_death",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   80,
+   120
   ]
  },
  "similar": [

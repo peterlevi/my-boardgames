@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared tile spaces and light blocking",
-  "detail": "Players move across the same board and can land on tiles already occupied by an opponent (paying them a small bonus) or beat them to the last needed good, but each player otherwise builds up goods and money on their own personal mat."
+  "kind": "shared board with positional interference",
+  "detail": "Every player's family members and assistants move across the same modular bazaar grid, occupying the same tiles as opponents. Landing on or claiming a tile can bump another player's piece back to base or take the tile's benefit before they reach it, but there is no direct damage or a common resource market — each tile's yield belongs to whoever occupies it.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

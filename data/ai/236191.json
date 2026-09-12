@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "card drafting with poverty-dumping take-that",
-  "detail": "Players draft from a shared row of cards, competing for the best buildings, and some cards let you dump poverty onto opponents, directly hurting their income; otherwise each player develops their own separate city tableau."
+  "kind": "take-that effects with a shared card market",
+  "detail": "Each player builds their own personal tableau of city cards, so the core building is private, but cards are drafted from a shared market (denying picks to others) and some cards have take-that effects that directly hurt an opponent's poverty track or income. Direct targeting exists but is a secondary layer on top of mostly parallel tableau-building.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

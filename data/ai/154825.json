@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "market competition and pricing pressure",
-  "detail": "Players compete on a shared market for selling goods, where undercutting others' prices or flooding demand affects everyone's sales, but each player's factories, workers, and share portfolio are managed on their own board. The interaction is economic and indirect rather than direct conflict."
+  "kind": "economic competition through a shared market",
+  "detail": "Each player runs their own factories on a private board, but everyone hires workers from a shared labor pool and sells goods into one shared market whose prices and demand shift based on what others sell and staff. Interaction is entirely indirect, through supply, demand, and price pressure rather than any action on an opponent's pieces.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

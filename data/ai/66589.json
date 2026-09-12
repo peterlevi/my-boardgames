@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared market and rondel positioning",
-  "detail": "Players share a common rondel and market prices, so selling goods or taking certain actions affects the value and availability for everyone else, even though each player builds their own private economic engine of colonies and ships."
+  "kind": "rondel action-blocking with a shared market",
+  "detail": "Ships and colonies sit on one shared map, and the rondel forces players to move through the same sequence of action spaces, so an opponent occupying or having just used a spot changes your options. Goods are sold into a shared market whose price drops as it's sold into, so players race each other to sell before the price collapses; there is no direct attack on opponents' pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

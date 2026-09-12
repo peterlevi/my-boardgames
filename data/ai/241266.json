@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared grid competition with fee-based cooperation",
-  "detail": "Workers are placed on a shared board, so claiming a good resource cluster denies it to others, and using a building adjacent to someone else's forces you to pay them, tying players' personal tableaus together through small transactional interactions."
+  "kind": "shared board with pay-to-use buildings",
+  "detail": "All workers and buildings go onto one shared town grid, so placing a worker claims the surrounding resource tiles for that turn, denying them to others, and buildings constructed by one player can be used by anyone who pays them a coin. Most of the game state (the town map and its buildings) is shared rather than owned privately.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

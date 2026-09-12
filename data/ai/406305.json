@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with shared tile supply and occasional blocking",
-  "detail": "Players draw from a shared pool of tiles and can block or deny opponents' scoring lines through placement, but each player scores on their own board, so most of the game is independent optimization rather than direct conflict."
+  "kind": "shared-board tile placement",
+  "detail": "As in the original Ingenious, all players place their tiles onto the same central board (now stackable in 3D), so a placement can extend or cut off lines that matter to other players' scores. There's no attacking opponents' pieces or drawing from a shared market; tiles are drawn privately.",
+  "shared_space": true,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

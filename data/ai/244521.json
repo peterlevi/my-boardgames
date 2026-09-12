@@ -15,8 +15,12 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light take-that via ranking",
-  "detail": "Each player has their own bag, cauldron, and chips, drawing and busting independently and simultaneously with no direct targeting. The main interaction is comparative: final ranking each round determines rat/ruby rewards, and everyone buys from the same shared chip market."
+  "kind": "mostly parallel push-your-luck with a shared market and race bonuses",
+  "detail": "Each player draws from their own bag into their own pot, so play is largely parallel, but ingredients are bought from one shared central display and the first players to pass certain points on the shared scoring track claim one-time bonuses, denying them to slower players. No action lets a player directly affect another's pot.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true
  },
  "scoring": {
   "subsystems": [

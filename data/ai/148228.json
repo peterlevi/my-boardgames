@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "resource denial and card sniping",
-  "detail": "Players draw from the same limited pool of gem tokens and the same face-up card row, so taking a token or buying a card someone else needed is the main way you affect opponents. Otherwise each player builds their own private engine of cards largely independent of others' boards."
+  "kind": "shared market drafting",
+  "detail": "Players draw chips from a common supply and buy or reserve cards from a shared row of development cards, so taking a card or the last of a gem color denies it to opponents. Each player's tableau of owned cards is otherwise built and scored individually.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

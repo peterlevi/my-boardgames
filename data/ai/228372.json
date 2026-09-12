@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "stock investment and competitive track/network building",
-  "detail": "Companies and the rail network are entirely shared, so building track for one company can help or block rivals' connections, and stock ownership order determines whose track gets built first, directly tying players' fortunes together."
+  "kind": "route-building and blocking on a shared map",
+  "detail": "Every company's track goes onto the same hex map, so a spur one company builds can block the cheapest path for a rival company, and leasing rules force players to negotiate track access economically rather than diplomatically. Ownership is via stock, so most of the game state (the map, share prices) is shared, while a player's own holdings are private.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

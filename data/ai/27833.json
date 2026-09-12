@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "network building and route competition",
-  "detail": "Players compete for the same track spaces, cities, and goods cubes on a shared board, so building into contested areas or grabbing high-value goods directly affects opponents' options. Turn order is auctioned, adding another layer of direct interaction each round."
+  "kind": "route blocking and goods competition",
+  "detail": "All players build track onto the same map, and a link once built by someone else can't be reused for free, so track space and city connections are actively contested. Goods cubes appear on a shared board and any player's train can pick up and deliver any cube, so players race each other for the same deliveries; turn order is also decided by an auction/bidding round each turn.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

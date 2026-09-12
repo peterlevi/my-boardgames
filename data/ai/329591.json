@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking over shared action spaces",
-  "detail": "Players compete for the same limited worker-placement slots each round, so being crowded out of a key action is a constant threat, while track networks and tech development are largely built on each player's own board. The shared map and action spaces are the main point of contact between players."
+  "kind": "worker placement with individual networks",
+  "detail": "Players place workers on a shared row of action spaces to gain resources and tech, so taking a space or a market good first denies it to others that round, but each player then builds their own railway network on their own board. There is no way to damage or remove an opponent's track or workers directly.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

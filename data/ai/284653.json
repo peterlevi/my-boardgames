@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "cooperative deduction with limited communication",
-  "detail": "Players share a common board state and pool of clues but face restrictions on how much they can openly discuss, so success depends on collectively inferring hidden information rather than direct player-vs-player conflict."
+  "kind": "fully cooperative shared-board play",
+  "detail": "All players move and act on one shared point-to-point map as a team of defected agents working toward common objectives, so the board state is entirely shared rather than split into individual player areas. There is no adversarial action between players since the whole team wins or loses together against the game system.",
+  "shared_space": true,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

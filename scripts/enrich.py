@@ -303,11 +303,12 @@ GAMES:
 SCORES = """For each game below, give the range a winning score typically \
 falls in — the number the winner actually ends on, not the maximum possible.
 
-Leave it null when a score is not what decides the game: a cooperative goal, \
-the last player standing, a sudden-death condition, a race whose target is \
-fixed by the rules rather than reached by accumulating (Catan's ten points \
-are the target, so that IS the winning score), or anything where players do \
-not keep a score at all.
+If the players keep a score at all, give the range — even when the game can \
+also end some other way, and even when the score is a fixed target (Catan's \
+ten points ARE its winning score, 7 Wonders Duel's sixty-odd count even \
+though a supremacy can end it early). Leave it null ONLY when nobody counts \
+anything: a pure cooperative goal, a last-player-standing fight, a game \
+decided solely by a condition with no score behind it.
 
 If the range differs by player count in a way worth knowing, say so in "note" \
 in a handful of words; otherwise leave "note" empty.
@@ -317,6 +318,35 @@ Answer ONLY with a JSON object mapping each id to:
   "score_range": [low, high] | null,
   "note": ""
 }}
+
+GAMES:
+"""
+
+
+INTERACTION = """For each game below, report how players actually affect each \
+other — as facts, not as a rating. Answer ONLY with a JSON object mapping each \
+id to:
+{{
+  "interaction": {{
+    "shared_space": true when everyone's pieces go onto one shared board, map \
+or tableau, rather than each player building on their own;
+    "blocking": true when taking something can deny it to an opponent — a \
+space, a route, a tile, a card someone else wanted;
+    "direct_attack": true when you can act ON an opponent: damage, steal, \
+capture, force a discard, remove their pieces;
+    "shared_pool": true when there is a common market, row or supply everyone \
+draws from;
+    "negotiation": true when players make deals, trade or form alliances;
+    "kind": "a few words, e.g. blocking and area denial, open conflict, \
+trading and negotiation, mostly parallel play",
+    "detail": "two or three sentences: through what actions players actually \
+affect each other, and how much of the game state is shared versus each \
+player's own board"
+  }}
+}}
+
+Judge the game as it is played, not as it is marketed. A shared board that \
+everyone places onto is shared_space even when the scoring is individual.
 
 GAMES:
 """
@@ -373,11 +403,12 @@ def ask(prompt, model, online=False):
 
 
 def process(batch, model, describe=False, online=False, rescore=False,
-            endings=False, sources=False, scores=False):
+            endings=False, sources=False, scores=False, interaction=False):
     # --rescore --online asks only for the scoring facts, but with the web
     # open: the rules of a game are written down somewhere, and a fact the
     # model half-remembers is exactly the case worth looking up.
-    header = (SCORES if scores
+    header = (INTERACTION if interaction
+              else SCORES if scores
               else SOURCES if sources
               else ENDINGS if endings
               else (RESCORE_WEB if online else "") + RESCORE.format(rule=FACTS_BRIEF)
@@ -392,7 +423,15 @@ def process(batch, model, describe=False, online=False, rescore=False,
             continue
         if online:
             data["source"] = "web"
-        if scores:
+        if interaction:
+            # Only the interaction facts are rewritten; the level itself is
+            # computed from them at render time.
+            existing = json.loads((AI / f'{g["id"]}.json').read_text())
+            got = data.get("interaction")
+            if got:
+                existing.setdefault("interaction", {}).update(got)
+            data = existing
+        elif scores:
             # Only the winning-score range is written; everything else stands.
             existing = json.loads((AI / f'{g["id"]}.json').read_text())
             rng = data.get("score_range")
@@ -461,6 +500,8 @@ def main():
     ap.add_argument("--only", metavar="IDS",
                     help="comma-separated game ids, for retrying the handful "
                          "a failed batch left behind")
+    ap.add_argument("--interaction", action="store_true",
+                    help="re-ask only how players affect each other")
     ap.add_argument("--scores", action="store_true",
                     help="re-ask only the typical winning-score range")
     ap.add_argument("--sources", action="store_true",
@@ -488,7 +529,7 @@ def main():
         if only and str(g["id"]) not in only:
             continue
         cached = AI / f'{g["id"]}.json'
-        if a.endings or a.sources or a.scores:
+        if a.endings or a.sources or a.scores or a.interaction:
             if not cached.exists():
                 continue
             try:
@@ -502,6 +543,10 @@ def main():
                 continue
             if a.scores and "score_range" in facts and not a.force:
                 continue
+            if a.interaction and not a.force:
+                ix = json.loads(cached.read_text()).get("interaction") or {}
+                if "shared_space" in ix:
+                    continue
             todo.append(g)
             continue
         if a.rescore:
@@ -556,7 +601,7 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=a.jobs) as pool:
         futures = {pool.submit(process, b, a.model, a.describe,
                                a.online, a.rescore, a.endings,
-                               a.sources, a.scores): b
+                               a.sources, a.scores, a.interaction): b
                    for b in batches}
         for f in concurrent.futures.as_completed(futures):
             batch = futures[f]

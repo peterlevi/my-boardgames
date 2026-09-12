@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority and shared drafting",
-  "detail": "Players draft from shared card and resource pools and compete for area-majority control on the city map, so timing and positioning affect opponents' options. Each player's own specialist network and resource engine, however, are built and optimized largely independently on their own board."
+  "kind": "area majority with open drafting",
+  "detail": "Players build networks and vie for area majority on a shared city map, and also draft specialists from a common open row of cards, so choices there are visible and can be denied to rivals. Beyond taking spaces/cards first, there is no direct attack between players.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

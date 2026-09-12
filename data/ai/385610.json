@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared market dynamics and indirect competition",
-  "detail": "There's no direct player-versus-player conflict, but every purchase or sale shifts the shared market prices that everyone else must then react to, making the market itself the primary shared game state alongside each player's individual city tableau."
+  "kind": "shared city grid and market competition",
+  "detail": "Buildings and mining go onto one common city map, so grabbing a plot or route can close it off to opponents, and a shared market/supply-and-demand system means buying and selling shifts prices for everyone. Player boards track individual resources and cards, but the map and market are the main shared battleground.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

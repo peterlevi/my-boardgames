@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict and area control on a shared map",
-  "detail": "Both players maneuver armies across the same point-to-point map and directly clash in battles, with card play determining troop commitment and outcomes. The entire board state is shared and contested at every turn."
+  "kind": "two-player wargame, direct combat",
+  "detail": "Both players' armies occupy and move across the same point-to-point map, fighting battles that destroy or capture the opponent's units. Nearly the entire game state, the map and unit positions, is shared and contested rather than owned separately.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -46,7 +51,9 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "won by control/attrition, not a tallied score"
  },
  "similar": [
   "Twilight Struggle",

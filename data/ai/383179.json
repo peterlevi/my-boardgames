@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area proximity and indirect competition for terrain",
-  "detail": "Players mostly build out their own faction's network on their own terrain colors, but the shared hex map means adjacency to opponents' buildings grants power/resource bonuses and contested terrain can block expansion, so the map itself is the main shared state rather than direct conflict."
+  "kind": "territory claiming and area denial",
+  "detail": "All factions terraform and build on the same shared map, so claiming or transforming a terrain hex can permanently deny that space to other players. Building adjacent to another player's structures grants bonuses to the builder, meaning proximity on the shared map matters, while each player's tech tracks and resources are otherwise managed independently.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

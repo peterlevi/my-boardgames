@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct card denial and open conflict",
-  "detail": "Players draft from a single shared card pyramid where taking a card can deny it to the opponent, and both a shared military track and shared science track can trigger an instant win, making almost every choice directly affect the other player rather than just your own tableau."
+  "kind": "shared card display with direct military and science conflict",
+  "detail": "Both players draft from one shared pyramid-shaped display of cards, and a card can only be taken once it's uncovered, so the order in which cards are exposed constantly blocks or opens options for the opponent. A shared military track and science-token track let actions push consequences directly onto the opponent, including a possible instant military or science victory.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -56,8 +61,11 @@
     "decided_by": "instant"
    }
   ],
-  "score_range": null,
-  "score_note": "can end early via military/science sudden death"
+  "score_range": [
+   40,
+   70
+  ],
+  "score_note": "military/science victories end game early, often below this range"
  },
  "similar": [
   "7 Wonders",

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open accusation, bluffing, and group voting",
-  "detail": "Players openly discuss, accuse, and defend themselves before a single simultaneous vote decides the outcome, so the entire game is driven by direct verbal interaction. Nearly all information is either shared through discussion or deliberately concealed, with almost no private tableau."
+  "kind": "hidden-role deduction, bluffing, and accusation",
+  "detail": "During the night phase, roles like the Robber and Troublemaker directly steal or swap another player's hidden role card, secretly changing what that opponent is playing as. Three extra cards form a shared center pool that several roles interact with, and the game resolves through open accusation and a simultaneous vote rather than any board or tableau.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [],

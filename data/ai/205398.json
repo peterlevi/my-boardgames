@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "bluffing and take-that via hidden role selection",
-  "detail": "Players secretly choose characters whose powers can steal gold, destroy buildings, or kill another player's turn entirely, so deducing who picked what and targeting them is central. Your own city (tableau of districts) is private and separate, but character effects reach directly into opponents' gold and buildings."
+  "kind": "hidden-role drafting with occasional direct attacks",
+  "detail": "Each player privately builds their own city from a personal hand of building cards, but every round players draft from a shared pool of character roles, so choosing one denies it to everyone else. Certain characters (Thief, Warlord, Assassin) let a player directly steal gold from, destroy a building of, or entirely skip an opponent.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

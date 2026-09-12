@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with some area majority",
-  "detail": "Most of a player's engine — hand of yōkai cards, resources, and abilities — is private and built up largely independently of opponents. Interaction comes mainly from competing for shared worker-placement spots and area-majority scoring on the shared board rather than direct conflict."
+  "kind": "area majority on a shared forest board with a card market",
+  "detail": "Players place workers and kodama tokens onto one shared forest board, contesting area majority for temples and resources with other players' pieces present in the same spaces. Yokai cards are also acquired from a shared market row, while each player's hand and engine of played cards remains private.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,6 +48,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   80,
+   130
   ]
  },
  "similar": [

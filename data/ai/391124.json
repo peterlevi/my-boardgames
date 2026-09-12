@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "market competition and race timing",
-  "detail": "Players compete for the same limited technology upgrades and race slots on a shared board, and flooding the market with similar car models depresses everyone's prices, so choices are interdependent even though each player mostly develops their own production line."
+  "kind": "shared rondel and racing, no direct attacks",
+  "detail": "Players move a shared rondel and place workers on common action spaces, so occupying a spot or space can lock it away from others that round, and a shared parts/vehicle market feeds everyone's production. The race track at the end is also a shared space where car positions compare directly, but there is no ability to damage or steal from another player's assets.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

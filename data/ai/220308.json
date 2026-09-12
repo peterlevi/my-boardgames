@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "territorial adjacency and shared tech-track racing",
-  "detail": "Players expand onto a shared hex map where planet adjacency and terraforming range matter, so building near a rival can block their expansion or trigger federations together. The six research tracks and round bonuses are also raced against everyone else, but each player otherwise manages their own faction board largely independently."
+  "kind": "shared galaxy map with territorial blocking",
+  "detail": "Factions build structures on hexes of one shared galactic map, and adjacency/range rules mean claiming or terraforming a planet can block an opponent's expansion path or federation formation. Research tracks and round bonuses are individually tracked, but the physical map and its limited planets are the main contested shared resource.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

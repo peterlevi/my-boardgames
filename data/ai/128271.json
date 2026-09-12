@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared city board with tile stacking and district takeover",
-  "detail": "Players build directly onto a single shared city map, and placing a new tile can bury or extend a rival's district, changing who benefits from its output. Alongside that shared board, each player keeps a private hand of resource, building, and role cards that they manage largely on their own."
+  "kind": "shared tile-laying with area majority",
+  "detail": "All players build onto one shared city grid, stacking and layering tiles to claim majority control of districts, so where you place directly affects who scores those tiles. Tiles and cards are drafted from a shared row each round, adding further competition over which pieces are available.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

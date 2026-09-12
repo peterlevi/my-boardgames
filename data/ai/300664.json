@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "market competition and pricing pressure",
-  "detail": "As in the base game, players sell goods into a shared market where pricing and demand are affected by what others produce, while each player's factory development happens on their own tableau of cards."
+  "kind": "economic competition through a shared market",
+  "detail": "As in its parent game, each player develops their own factories from their own hand of cards, while a shared market for selling goods and a shared pool of available upgrade cards create indirect competition. Selling into the same market or taking an improvement card before someone else can suppress prices or opportunities for rivals, but no one acts directly on another player's factories.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "following and resource denial",
-  "detail": "Players choose an action for everyone to follow, meaning your choices directly enable or restrict what opponents can do next turn, while each player still maintains their own private tableau of materials and works."
+  "kind": "follow-based shared deck, mostly parallel tableaus",
+  "detail": "Each player builds and manages their own tableau of cards used as tasks, materials, or works, so most of the board state is a private area per player. Interaction comes from choosing an action from a shared deck of role cards that other players may then 'follow' to take a lesser version of the same action, but there is no direct attack or shared physical board.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,7 +48,12 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   3,
+   6
+  ],
+  "score_note": "target is # of Works completed, fewer needed at higher player counts"
  },
  "similar": [
   "Glory to Rome",

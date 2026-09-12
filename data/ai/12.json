@@ -15,8 +15,12 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open auction and bidding",
-  "detail": "Every auction is a shared, direct competition where players bid against each other for the same set of tiles, and choosing to call Ra affects everyone's turn timing. Individual tile collections are private, but the auction pool and Ra track are entirely shared."
+  "kind": "auction over a shared tile pool",
+  "detail": "Tiles are revealed face-up in one shared row and won through bidding, so winning a lot directly denies it to every other player, and any player can end the round early by invoking Ra. Beyond the auction itself, players have no direct interaction with each other's collected tiles.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true
  },
  "scoring": {
   "subsystems": [

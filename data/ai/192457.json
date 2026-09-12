@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area control and open conflict",
-  "detail": "Players directly fight over the same regions on a shared board, with combat, resource denial, and VP-scoring zones constantly contested. Nearly the entire board state is shared territory, so almost every action affects opponents' position and economy."
+  "kind": "area control war game",
+  "detail": "Factions fight over the same regions of one shared map, with units engaging opposing units in combat to kill them and seize territory. Nearly the entire board state is contested and mutually visible, and movement/combat choices are used to deny key zones and directly eliminate rival forces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "competing for claims, auctions, and shared board space",
-  "detail": "Players bid against each other for cards and race to claim limited sites on the shared solar-system map, so territory and resource claims are contested even though each player's rocket and tech tree development happens independently."
+  "kind": "shared-map race with claims and tech trading",
+  "detail": "Every player's rockets explore and can claim mining or settlement sites on one shared map of the solar system, so a site taken by one player is generally unavailable to another, and patent/technology cards are bid on and traded from a shared market. Despite that shared board and negotiated trades, there is no combat or forced loss of an opponent's pieces in the core game.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

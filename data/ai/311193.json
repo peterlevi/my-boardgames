@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light competition for shared spaces and market",
-  "detail": "Players share a worker-placement board and market where the best spots or offers can be taken by others first, but each player's population and production tableau otherwise develops independently."
+  "kind": "parallel building with contested contracts and achievements",
+  "detail": "Each player develops their own island board privately, but everyone drafts from shared contract and market offerings, and race-style achievement bonuses can be claimed by whoever gets there first, taking them away from slower players. There is no direct action on an opponent's board or pieces.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

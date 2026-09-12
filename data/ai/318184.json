@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "card-based raids and drafting from a shared market",
-  "detail": "Players attack each other's civilizations with military cards and compete to draft cards from a shared market row, but each player otherwise builds and prunes their own personal deck independently."
+  "kind": "card drafting with take-that attacks",
+  "detail": "Each civilization builds its own personal deck and tableau, but cards are drafted from a shared market row where taking one denies it to the rest of the table. War and conflict cards let a player directly damage or set back an opponent's civilization rather than only building up their own.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

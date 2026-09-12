@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "team communication and espionage/deduction",
-  "detail": "Players directly try to deceive the opposing team while informing their own, with the shared clue history being read and mined by both sides every round. There's no personal board; the entire game state (clues given, guesses) is shared information contested between two teams."
+  "kind": "team-based code-giving and code-breaking",
+  "detail": "Each team privately manages its own four words and gives coded clues to teammates, while also trying to intercept and decode the opposing team's messages. There is no shared board, pool, or resource; interaction is entirely through the clues and deductions exchanged between and about the two teams.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

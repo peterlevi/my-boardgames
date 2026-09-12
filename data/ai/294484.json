@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct one-on-one combat with hand-based bluffing",
-  "detail": "Fighters share a single map and directly attack, block, and maneuver against each other, with hand management creating bluffing over held cards; almost all game state is shared and contested rather than private."
+  "kind": "asymmetric duel on a shared map",
+  "detail": "As in other Unmatched sets, heroes and sidekicks share one map, contesting zones and lines of sight to block each other's movement and attacks. Combat cards resolve direct damage that can eliminate an opponent's characters outright.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

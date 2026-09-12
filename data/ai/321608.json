@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "negotiation, voting, and competing economic interests",
-  "detail": "The economy, legislation votes, and labor market are fully shared systems, so one player's production or policy choices directly reshape what's available or profitable for everyone else. Players constantly negotiate deals and vote on laws that reward some classes while hurting others."
+  "kind": "asymmetric class economy with voting and direct exploitation",
+  "detail": "Working-class laborers are employed in buildings built by capitalist players, so wages and conditions set by one player directly affect another's income, and strikes or state policy can hit an opponent's engine directly. All classes buy and sell through a shared commodity market and vote on the same national policy board, with real negotiation and lobbying over how votes go, not just parallel building.",
+  "shared_space": true,
+  "blocking": false,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

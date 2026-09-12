@@ -13,8 +13,12 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "shared dice drafting, mostly parallel play",
-  "detail": "Players draft from a shared pool of rolled dice each round but then develop their own paper province independently; interaction is limited to competing over which dice to take."
+  "kind": "parallel roll-and-write with shared dice rolls",
+  "detail": "Each player fills in their own paper sheet using dice results that are rolled once and shared by everyone, so the randomness is common but the developing province, goods, and tracks are entirely individual. There is no shared board, market, or ability to affect another player's sheet.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false
  },
  "scoring": {
   "subsystems": [

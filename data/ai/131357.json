@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "bluffing and direct confrontation",
-  "detail": "Every action can be challenged or blocked by any other player, and coup/assassinate actions directly strip opponents of influence cards, so the game is almost entirely about player-vs-player confrontation. There's no personal board; the shared state is just coins and each player's hidden two cards, constantly under threat."
+  "kind": "bluffing and open conflict",
+  "detail": "Players use character actions to directly coup, assassinate, or steal coins from specific opponents, eliminating their influence cards one by one. There is a shared coin treasury players draw from, and bluffing/claims can be challenged or blocked, making nearly every action a direct interpersonal confrontation rather than parallel building.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [],

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with worker-placement blocking",
-  "detail": "Players mainly build their own engine on a personal board, occasionally competing for the same worker-placement spots or investment opportunities on the shared board. There is light indirect competition for contracts and resources but little direct conflict."
+  "kind": "worker placement with contested spaces and a shared market",
+  "detail": "Players place workers on a shared board of action spots and draw contracts from common offers, so occupying a spot or taking a contract denies it to others. There is no direct attack on opponents' holdings; each player otherwise develops their own production chain independently.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,6 +48,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   90,
+   140
   ]
  },
  "similar": [

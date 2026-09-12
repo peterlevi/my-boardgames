@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "competition for shared map hexes and contracts",
-  "detail": "Players compete for limited hex tiles, contracts, and action spaces on the shared Mars map, occasionally blocking each other's plans, but each player mostly develops their own engine and colony independently. The bulk of the game state is a private player board rather than a shared one."
+  "kind": "tile placement and spot-blocking on a shared Mars map",
+  "detail": "Colonists and modules are placed onto one shared hex map of Mars, so claiming a hex or resource vein can block an opponent from expanding into it. Contracts and a shared market of goods are likewise drawn from by all players, but there is no mechanism to directly damage or remove another player's pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

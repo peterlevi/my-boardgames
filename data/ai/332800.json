@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict on a shared grid",
-  "detail": "Both players' units occupy and fight directly on the same battlefield, with attacks, movement, and card play constantly affecting the opponent's board state. There is no parallel play; nearly every action is a direct confrontation."
+  "kind": "head-to-head combat",
+  "detail": "Two summoners deploy units onto one shared grid battlefield and fight directly: units attack and destroy each other's cards, and the goal is to strike down the opposing summoner. Each player builds and draws from their own separate deck, so there is no shared card pool, only direct conflict on the shared board.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

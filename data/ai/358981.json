@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "Head-to-head card battle with bluffing",
-  "detail": "Two players play cards directly against each other across three shared theater rows each round, with card effects letting you flip, move, or negate opponent's cards. There's no separate personal board — the theaters are entirely shared state, and much of the game is reading and reacting to the opponent's hand."
+  "kind": "simultaneous card duel over shared theaters",
+  "detail": "Both players play cards into the same three theater lanes each round, fighting for majority control of each; many cards let you flip, move, or discard cards the opponent has already committed. Almost the entire game state (the three theaters and the cards in them) is shared and contested, with no private board of your own.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

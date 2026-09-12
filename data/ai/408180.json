@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking and area majority",
-  "detail": "Players compete for limited worker-placement spots and area-majority positions on the shared base, so timing and blocking opponents from key actions matters, while most engine-building happens on individual player boards."
+  "kind": "shared base with area majority and contested projects",
+  "detail": "Agencies build structures together on the one shared Moon base map and compete for area majority there, while also drawing from shared corporation projects that reward or restrict based on who funds them first. There is no direct attack on opponents' pieces, but placement and project choices frequently block what others can do.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,6 +48,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   90,
+   140
   ]
  },
  "similar": [

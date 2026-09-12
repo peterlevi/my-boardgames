@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "action/worker-spot claiming and contract competition",
-  "detail": "Players compete for limited worker-placement spots and race to complete contracts before others, with claimed actions blocking rivals from the same spot that round. Most of the board (map, action spaces) is shared, while each player also manages their own ship, contracts, and personal tableau."
+  "kind": "worker placement with route and contract competition",
+  "detail": "Players place workers on shared action spots and compete for the same limited contracts and map routes, so claiming a space or contract first denies it to opponents. The board and available contracts are common to all, while each player still develops an individual set of ongoing bonuses and boat routes.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

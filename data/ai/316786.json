@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area influence and resource competition",
-  "detail": "Players compete for limited dice and district spaces on a shared board, occasionally contesting the same region influence, but much of the game is building your own tableau of districts and contracts. Interaction is indirect, mostly through resource scarcity and race-to-the-spot tension."
+  "kind": "shared board with contested dice draws",
+  "detail": "Players activate one of five shared districts on a common city board and must take a die from it, so district and die availability is contested turn to turn. Area-majority scoring in the districts and ports means occupying a spot can deny influence to others, but there is no direct attack on opponents' pieces, and each player still develops their own tableau of buildings.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

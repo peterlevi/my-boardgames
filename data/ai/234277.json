@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking via claim-action turn order",
-  "detail": "Players compete for the same limited worker-placement spots and buildings, with a turn-order-claiming mechanism meaning earlier turns cost more, directly affecting who gets first pick. Beyond that shared board, each player builds their own private village and resource engine."
+  "kind": "worker placement with action and building blocking",
+  "detail": "Workers are placed on one shared board of action and building spaces, and the 'claim action' rule means once a space or building is taken it is gone for every other player that round. A limited pool of building tiles and fish-market prices are likewise shared and depleted by whoever gets there first, but players never act directly on each other's boats or crews.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

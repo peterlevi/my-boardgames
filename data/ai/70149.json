@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "worker placement blocking",
-  "detail": "Players compete for a shared row of action/building spaces so taking one denies it to others that round, but the bulk of the game happens on each player's private board of hexes and buildings. There's no direct attack on opponents' resources or scores."
+  "kind": "worker placement with building competition, mostly parallel play",
+  "detail": "Each player develops their own island of land tiles and buildings, so the productive infrastructure is entirely personal. Interaction comes from worker-placement spaces (including certain buildings) that only one player can use per round, and from unique buildings that can only be built once, denying them to everyone else.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

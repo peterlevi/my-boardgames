@@ -15,7 +15,12 @@
  "interaction": {
   "level": "High",
   "kind": "trading and negotiation",
-  "detail": "The entire game revolves around open trading and deal-making between players, with almost no private strategy beyond your fixed hand order. The shared trading pool and market are constantly being negotiated over in real time."
+  "detail": "Each player has their own bean fields, but the core of the game is free-form trading and deal-making over the cards revealed from the shared draw pile before they must be planted. Almost all meaningful player-to-player interaction happens through negotiation rather than through a shared board or attacks.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

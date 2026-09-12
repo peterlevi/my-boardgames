@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct competition for a shared customer pool and blocking",
-  "detail": "All players sell into the same finite demand track, so opening a restaurant or advertisement directly reduces what's available to everyone else, and recipe/discount choices are explicitly aimed at undercutting opponents. Employee hiring and firing timing lets you deny cheap staff to rivals, so most of the tension is about denying resources rather than sharing a board."
+  "kind": "shared board with heavy positional blocking",
+  "detail": "All restaurants, houses, and billboards are built onto a single shared city board, and customer movement along shared streets means where you build directly steers or starves opponents' customer traffic. Marketing and menu cards are also drafted from a shared offer, and delayed simultaneous action selection means players are constantly reacting to what others chose that turn.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

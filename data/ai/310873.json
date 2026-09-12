@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "action retrieval and route competition",
-  "detail": "Players compete for the same map connections and limited actions available each round, so choices about where to expand and which actions to retrieve affect what's left for opponents. The map and action spaces are shared, while each player develops their own economic engine on an individual board."
+  "kind": "shared map with action retrieval and spatial blocking",
+  "detail": "Players move and place workers across one common city map and rail network, so occupying a location or route can block others from using it or force them to pay for access. Beyond that shared map, most production and development happens on each player's own individual player board.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

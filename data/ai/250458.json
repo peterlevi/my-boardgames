@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker-placement blocking and area majority",
-  "detail": "Players compete for limited action spaces and for majority control on the palace track, but each otherwise builds a private tableau of goods and cards mostly independent of rivals."
+  "kind": "worker placement feeding a shared area-majority contest",
+  "detail": "Each player runs their own cart network to produce and move goods, but delivered goods are placed onto four shared court tracks where end-game majority is contested, so that part of the board is common to everyone. Action spaces can be stacked, meaning taking one first is cheaper and forces later players to pay more, though nothing is ever removed from an opponent.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

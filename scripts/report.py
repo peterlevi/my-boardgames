@@ -26,8 +26,8 @@ from pathlib import Path
 
 from common import ROOT, load_games, playtime, load_overrides
 from scoring import (SALAD_LABEL, SALAD_PILL, SALAD_SHORT, WIN_LABEL,
-                     WIN_ORDER, WIN_SHORT, salad, score_sort, score_text,
-                     win, wins)
+                     WIN_ORDER, WIN_SHORT, interaction, salad, score_sort,
+                     score_text, win, wins)
 
 THUMBS = ROOT / "data" / "thumbs"
 
@@ -279,7 +279,7 @@ def trim_ai(ai):
            "br": salad(facts), "srcs_n": len(facts.get("sources") or []),
            "sc": score_text(facts), "scn": score_sort(facts),
            "scnote": facts.get("score_note") or "",
-           "ixl": (ai.get("interaction") or {}).get("level"),
+           "ixl": interaction(ai),
            "ixk": (ai.get("interaction") or {}).get("kind"),
            "ixd": (ai.get("interaction") or {}).get("detail"),
            "howwin": (ai.get("scoring") or {}).get("how_you_win"),

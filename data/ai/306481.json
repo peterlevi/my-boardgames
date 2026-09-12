@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority and worker placement competition",
-  "detail": "Players compete for limited action spaces and regional influence on a shared board, occasionally blocking each other's plans, but each player also develops a private tableau of buildings and resources. Much of the tension comes from indirect competition over scarce spaces rather than direct attacks."
+  "kind": "worker placement with area-majority blocking",
+  "detail": "Workers move around a shared rondel and are placed on common action spaces and temple steps, so taking a spot or advancing on a shared track can lock others out of it that round. Area-majority scoring for regions and open drafting of cards mean players are competing for the same limited slots and resources rather than building in isolation.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

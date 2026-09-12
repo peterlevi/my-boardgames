@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking and area-movement race",
-  "detail": "Players compete for the same limited worker-placement spaces each round and race along a shared circular track around the castle, which can block or slow opponents, while resource and card development otherwise sit on each player's own tableau."
+  "kind": "area majority on a shared castle board",
+  "detail": "Workers are placed into shared zones of Himeji Castle (garden, walls, court), where crowding out a zone or claiming its bonus can lock out rivals, and a shared card row supplies the actions everyone drafts from. Scoring tracks and card collections are otherwise kept individually.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

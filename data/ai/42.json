@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict and territorial tile placement",
-  "detail": "All tiles and leaders are placed on one shared board, and kingdoms merging or leaders clashing directly destroys opponents' tiles and points, so nearly the entire game state is contested rather than private."
+  "kind": "tile placement leading to open conflict",
+  "detail": "Tiles and leaders are placed on one shared grid, and when rival civilizations connect, external conflicts directly remove the losing player's leader or tiles from the board; internal conflicts can also unseat an opponent's leader. Tiles are drawn blind rather than from a visible market, so the interaction is entirely through spatial contact and combat, not a shared supply.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

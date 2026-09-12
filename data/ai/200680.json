@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking, mostly parallel farm boards",
-  "detail": "Players compete for the same limited action spaces each round, so claiming one denies it to everyone else that turn, but each player otherwise develops their own farm tableau independently. Conflict is entirely about racing for shared spaces, not attacking another player's board."
+  "kind": "worker placement action blocking",
+  "detail": "Each player develops their own private farm board, but all players place workers on a single shared row of action spaces, and once a space is taken it is unavailable to everyone else that round. Beyond this contest for actions, the farms themselves and food management are entirely separate per player.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

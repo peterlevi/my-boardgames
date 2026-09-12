@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "cooperative communication and shared deduction",
-  "detail": "Both players alternate giving clues to each other over the same shared grid, and each player's assassin squares differ from the other's key card, so misjudging a clue can cost the whole team a turn or the game. The board and win/loss state are entirely shared between the two players."
+  "kind": "cooperative shared grid, communication limited",
+  "detail": "Both players look at the same 5x5 grid from different key cards and cooperatively give each other clues to find all agents before running out of turns or hitting an assassin. There is no opposition between players, only a constrained communication puzzle over a fully shared board state.",
+  "shared_space": true,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [],

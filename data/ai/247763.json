@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "competition for shared action slots and cards",
-  "detail": "Players compete for a limited number of colored slots along the shared card row and for special action spaces on the main board, so timing and denial matter, but each player otherwise develops their own underwater city network independently."
+  "kind": "shared card row feeding separate city boards",
+  "detail": "Each player builds their own underwater city on their own board, but the cards they draft from sit in a shared row of colored slots, so taking a card denies it and its matching-color bonus to opponents. There is no ability to attack or directly alter another player's city.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

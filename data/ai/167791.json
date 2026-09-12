@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared board race, mostly parallel tableau building",
-  "detail": "Players affect each other by racing to claim milestones and awards and by placing tiles on a shared Mars map for adjacency bonuses, but each player's card tableau and production engine is entirely their own."
+  "kind": "shared board with occasional take-that cards",
+  "detail": "Ocean, city and greenery tiles all go on one shared Mars map and count toward shared global parameters, so good tile spots and parameter milestones are contested. Most of the game is otherwise parallel engine-building on private tableaus, but a subset of cards let a player directly remove an opponent's resources, production or plants.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

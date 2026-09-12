@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "Area majority + card drafting competition",
-  "detail": "Players build their own performer tableau privately, but everyone competes for majority control in the same towns/cities as the shared Barnum caravan advances, and available artist/performance cards are drafted from a shared pool. Direct confrontation is limited, but timing your performances to beat rivals to area majorities is a constant tension."
+  "kind": "area majority and hiring competition",
+  "detail": "Players move their circus troupe across a shared network of towns and cities, competing for majority influence and performance slots in the same locations. Artists and upgrades are hired from a common available pool, so taking one denies it to the other players, though each player otherwise builds up their own cast and fame track independently.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

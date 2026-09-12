@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel drafting and engine building",
-  "detail": "Players see and pass around the same pool of cards, so they can deny each other specific cards by drafting them first, but production, resources, and scoring all live on each player's own empire board with almost no direct conflict."
+  "kind": "simultaneous drafting, mostly parallel empire building",
+  "detail": "Each player builds their own tableau of construction cards and produces resources independently, so the boards themselves are not shared. Interaction happens only at the draft: cards are picked from hands passed around the table, so taking a card you want denies it to everyone else, but there is no common market, attack, or trading.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

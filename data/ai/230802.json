@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "tile drafting and denial",
-  "detail": "Players draft from shared factory displays and can deliberately take tiles they don't need just to dump penalty tiles on an opponent, but each player builds their pattern on their own private board. The shared supply of tiles is the main point of contact between players."
+  "kind": "drafting and forced discards",
+  "detail": "Players draft tiles from shared factory displays and a shared center pool, and taking a color can leave undesirable leftovers for the next player or force them into penalty tiles. Each player then places tiles on their own private pattern board and wall, so the only shared game state is the tile supply, not the boards themselves.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -41,7 +46,12 @@
     "how": "end_trigger",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   40,
+   100
+  ],
+  "score_note": "lower end at 4p, higher at 2p"
  },
  "similar": [
   "Sagrada",

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "simultaneous sealed bidding and drafting from shared taverns",
-  "detail": "Every round players bid directly against each other for the same pool of cards, and bid order determines who gets first pick, so opponents' choices constantly reshape what's left for you. The taverns are fully shared state, while each player's growing army of dwarves is their own private tableau."
+  "kind": "simultaneous blind bidding on a shared card pool",
+  "detail": "All players bid coins on the same set of tavern card rows, and choosing a card in bid order removes it from the pool for everyone below you, so a strong bid can deny a coveted dwarf or hero to an opponent. Beyond that shared bidding pool, each player's army and scoring track is entirely their own, with no way to act directly on another player's board.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

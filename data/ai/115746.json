@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open military conflict and hidden information tension",
-  "detail": "Free Peoples and Shadow directly battle over a shared map of regions and strongholds, while the Ring-bearer's secret movement and the political track create asymmetric information both sides are constantly reading and reacting to; almost all game state is shared and contested."
+  "kind": "open military conflict on a shared war map",
+  "detail": "Free Peoples and Shadow armies fight directly on one shared map of Middle-earth, with combat that destroys or displaces the opponent's units and area control over regions and strongholds. Nearly the entire game state - the map, the political track, and the hunt for the Ring - is shared and mutually affected.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -51,7 +56,7 @@
    }
   ],
   "score_range": null,
-  "score_note": "military conquest count or ring corruption track"
+  "score_note": "won by conquest count or Ring corruption track, not a tallied score"
  },
  "similar": [
   "Twilight Struggle",

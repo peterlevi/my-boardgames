@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "route and building competition",
-  "detail": "As in the original, players share the trail and compete for building spots and delivery timing, while each maintains a private deck and personal board. Direct conflict is limited to positional blocking rather than attacks."
+  "kind": "shared trail with limited building spots and market rows",
+  "detail": "Players share one trail board where movement and the limited building locations at each stop can be claimed or blocked by a single player. Cattle and other cards are drawn from shared displays, but each player's own herd and player board development stay private with no direct attacks between players.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

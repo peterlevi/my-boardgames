@@ -16,8 +16,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "Shared worker placement, blocking, and voting",
-  "detail": "Most of the game state is communal rather than private: the Senate grid, Major Project tracks, and passed laws are all shared, and single-use action spaces mean players directly block each other's options. Voting on legislation also lets players collectively alter shared scoring conditions that affect everyone."
+  "kind": "area majority and worker placement on a shared board",
+  "detail": "Delegates are placed as workers onto shared planets and federation tracks, and area-majority scoring means players are directly competing for control of the same spaces. Voting rounds determine shared outcomes for everyone but are not deal-making or trading between players.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "racing for shared techs and territory",
-  "detail": "Players race to research the same limited pool of technologies and to claim system tiles for area influence, so timing and denial matter even though each player mostly builds their own economic engine. The tech tree and galaxy map are shared state, while resource and production tracks are private to each player."
+  "kind": "area majority and shared tech tree race",
+  "detail": "Players move influence onto a shared galactic map of star systems, contesting the same systems for area-majority control, and research technologies from a shared tech tree where researching a tech can trigger effects for everyone and remove options for others. There is no direct attack or piece capture; interaction is through claiming shared map territory and shared technology slots before opponents do.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,6 +48,10 @@
     "how": "end_trigger",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   40,
+   70
   ]
  },
  "similar": [

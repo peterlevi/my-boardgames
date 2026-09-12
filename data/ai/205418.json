@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking, mostly parallel farm boards",
-  "detail": "As in the original, players race for shared action spaces each round while developing separate farm boards, so interaction is indirect and limited to which spaces get claimed first."
+  "kind": "worker placement action blocking",
+  "detail": "Players build up their own individual farms, with the only interaction coming from a shared board of action spaces where placing a worker occupies that space for the round and blocks others from using it. There is no common market, direct conflict, or negotiation beyond this competition for limited actions.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with occasional area majority",
-  "detail": "Each player mostly develops their own board and card tableau independently, with limited direct interaction through shared majority spaces on the board rather than direct conflict."
+  "kind": "shared board with competitive drafting",
+  "detail": "Players place onto one shared 109-space board covering production, houses, trade, and harbor, competing for area majority in these common zones. They also draft from a shared row of workshop cards, where taking one denies it to opponents, so both the board presence and the card supply are contested shared resources.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -41,6 +46,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   90,
+   140
   ]
  },
  "similar": [

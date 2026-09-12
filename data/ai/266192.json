@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with occasional 'when another player...' triggers",
-  "detail": "Each player builds their own three-row habitat tableau independently; the shared birdfeeder and bird tray create light competition for resources and cards, and some bird powers trigger off other players' actions, but there is no direct conflict."
+  "kind": "mostly parallel engine-building with a shared bird tray",
+  "detail": "Each player builds their own habitat rows independently, with almost no ability to touch an opponent's tableau directly. The only shared elements are the central bird tray and birdfeeder dice, where taking a bird or food resource can leave less for the next player.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

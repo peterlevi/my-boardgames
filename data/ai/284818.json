@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with shared building slots and take-that elements",
-  "detail": "Players place workers on shared action spots that others can also use (with the provost/turn-order mechanic affecting who benefits), and buildings placed by one player can be used by others for a fee. Most resource management happens on a shared board rather than isolated player boards."
+  "kind": "worker placement and building-slot denial",
+  "detail": "Players place workers on a shared, expanding board of buildings (some built by opponents), so claiming an action space or a building slot can block others from using it that round. Resource production and scoring are tracked individually, but the central board where all the action happens is fully shared.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

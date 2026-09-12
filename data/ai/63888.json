@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open tableau effects, forced exchanges, and direct attacks",
-  "detail": "All players' tableaus are fully public, and dogma effects constantly let players share, steal, transfer, or destroy cards across the table, so the shared board state matters as much as any individual player's cards."
+  "kind": "tableau building with shared card supply and direct effects",
+  "detail": "Each player melds and splays their own tableau of technology cards, but all draw from common age piles and can achieve shared achievements, so taking a top card denies it to others. Dogma effects frequently act directly on opponents, forcing them to transfer, lose, or reveal cards.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

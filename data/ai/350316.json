@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light competition for map tiles",
-  "detail": "Players mostly develop their own caravan and score their own tableau of tags and journal entries; the main shared element is the modular map, where claiming a tile or route can deny it to opponents, but there is no direct conflict or negotiation."
+  "kind": "worker placement race with a shared draft",
+  "detail": "Each player fills in their own personal map of the South Tigris, but they compete for the same limited worker-placement spots and draft tiles/cards from shared common rows, so taking a spot or a tile can deny it to an opponent. The core building happens on individual player boards rather than a communal one.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

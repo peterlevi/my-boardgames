@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with shared board spaces",
-  "detail": "Players compete for limited slots on shared action spaces and the shared trade/travel tracks, so timing and first-mover advantage matter, but each player's engine (bag, board, followers) is entirely their own. There's no direct combat or resource theft."
+  "kind": "worker placement on a shared board with a common recruitment supply",
+  "detail": "Followers are placed as workers onto a single shared town board of locations, and once a location's capacity is filled for the round it's closed off to everyone else, so players race for the same spots. New followers are also drawn from a common supply, limiting what is available to be recruited by opponents, while each player's own bag/deck of recruited followers stays private.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "cooperative resource and crisis management",
-  "detail": "Players jointly manage a shared ship board, shared resource pools, and shared threats, discussing and coordinating which worker-dice to commit where each round. Individual player roles exist but nearly all meaningful state — power, hull integrity, exploration progress — is shared and affected by everyone's choices."
+  "kind": "shared board with limited worker slots",
+  "detail": "All players place dice-workers on the same modular ship board and draw from a common pool of exploration/module tiles, so taking a space or tile denies it to others. There is no direct attack on opponents' pieces; interaction is mostly about racing for scarce shared spaces and resources rather than a fully separate player board each.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

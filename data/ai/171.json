@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict, direct confrontation",
-  "detail": "The entire board is shared and every move directly affects the opponent's options, threats, and pieces; players are in constant direct conflict trying to capture pieces and threaten the king. There is no private player board — the game state is entirely public and mutual."
+  "kind": "direct capture and confrontation",
+  "detail": "Every piece moves on one shared 8x8 board, and moving onto an opponent's square captures it outright while pieces also block each other's lines of movement. The entire game state is shared — there is no private player board or resource.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [],

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and treasure stealing",
-  "detail": "Players contest the same temples for majority control at two scored 'volcano' events, and can steal treasures directly from an opponent's holdings via the market action, so much of the shared board state is directly fought over rather than built in isolation. Movement and tile placement also block or open routes for other players' explorers."
+  "kind": "exploration with temple control and treasure stealing",
+  "detail": "All explorers move across one shared, incrementally revealed jungle map, competing for control of temples and volcano spaces. A player can move onto a space to seize majority control or steal treasures an opponent was holding, so pieces act directly on each other's holdings rather than just occupying separate territory.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

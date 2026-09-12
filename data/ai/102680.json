@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "drafting shared tiles and competing for senate/track position",
-  "detail": "Players draft from shared forum tiles and race up common tracks (like the Senate), so there is real competition for limited resources and position, but most of the actual play happens on each player's own bowl tableau. Direct attacks or blocking of opponents is rare."
+  "kind": "area majority and forum drafting with military conflict",
+  "detail": "Each player runs their own mancala-style tableau, but the forum tiles are drawn from a shared market, the Senate track is a shared race, and the province map is contested through area majority. Military actions let a player fight for control of a province, directly displacing an opponent's legionaries there.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

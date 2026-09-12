@@ -11,7 +11,7 @@ person who has played these games.
 import sys
 
 from common import ROOT, load_games
-from scoring import SALAD_ORDER, salad, win, wins
+from scoring import IX_ORDER, SALAD_ORDER, interaction, salad, win, wins
 
 FILE = ROOT / "tests" / "expectations.txt"
 
@@ -25,7 +25,7 @@ def parse():
         name, rest = line.split(":", 1)
         # Game names contain colons, so split on the last one before a key.
         while rest and not any(rest.strip().startswith(k)
-                               for k in ("salad", "win")):
+                               for k in ("salad", "win", "ix")):
             head, _, rest = rest.partition(":")
             name = f"{name}:{head}"
         checks = {}
@@ -39,12 +39,13 @@ def parse():
     return want
 
 
-def ok(op, got, val):
-    if got is None:
+def ok(op, got, val, order=None):
+    order = order or SALAD_ORDER
+    if got is None or got not in order or val not in order:
         return False
     if op == "=":
         return got == val
-    i, j = SALAD_ORDER.index(got), SALAD_ORDER.index(val)
+    i, j = order.index(got), order.index(val)
     return i <= j if op == "<=" else i >= j
 
 
@@ -58,11 +59,13 @@ def main():
             continue
         facts = (g.get("ai") or {}).get("scoring") or {}
         got = {"salad": salad(facts), "win": win(facts),
-               "wins": wins(facts)}
+               "wins": wins(facts), "ix": interaction(g.get("ai"))}
         for key, (op, val) in checks.items():
             if key == "win":
                 ways = got["wins"]
                 good = (val not in ways) if op == "!=" else (val in ways)
+            elif key == "ix":
+                good = ok(op, got["ix"], val, IX_ORDER)
             else:
                 good = ok(op, got[key], val)
             if good:

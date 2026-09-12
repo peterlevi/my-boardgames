@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction/bidding and resource market competition",
-  "detail": "Players directly compete for power plants in open auctions and for limited resources in a shared market whose prices rise and fall based on collective demand, and city connections on the shared map can block or wall off rivals' expansion routes. Each player has their own plants and cities but the map, resource supply, and plant market are entirely shared and contested."
+  "kind": "auction and shared resource market with route blocking",
+  "detail": "Players bid against each other for power plants from a shared, publicly visible market, and buy fuel from a common resource market whose prices rise as it is depleted. Building a network on the shared city map claims connections and city slots that competitors can no longer use, though there is no way to directly harm an opponent's plants or cities.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

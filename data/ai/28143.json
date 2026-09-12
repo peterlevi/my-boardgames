@@ -15,8 +15,12 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "phase selection with shared bonuses, mostly parallel tableau building",
-  "detail": "Players choose action phases simultaneously and everyone benefits from whichever phases are chosen, with a small bonus to whoever picked it, so there's indirect competition over phase selection and the VP chip pool. Each player's tableau of worlds and developments is entirely their own."
+  "kind": "mostly parallel tableau-building with shared phase bonuses",
+  "detail": "Each player develops their own tableau of worlds and developments privately, drawing from a shared deck and a shared pool of victory-point chips that depletes for everyone and can end the game. The main point of contact is simultaneous phase selection, where choosing a phase no one else picked earns a bonus, but players cannot directly target or damage each other's tableau.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": true
  },
  "scoring": {
   "subsystems": [

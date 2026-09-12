@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open drafting and military take-that",
-  "detail": "Players compete over a shared, visible market of cards to draft each round, and military strength can be used to directly attack and steal points from weaker opponents, making the shared board state constantly relevant even though each player's civilization track is their own."
+  "kind": "card drafting plus open warfare",
+  "detail": "Each player develops their own civilization board, but civil, military and action cards are drafted from shared face-up rows, so taking a card denies it to opponents. Military strength is also compared directly and can be used to wage war, causing culture loss and aggression against a specific rival.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

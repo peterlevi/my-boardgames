@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with dice, indirect blocking",
-  "detail": "Players compete for a limited set of shared action spaces and cards, so claiming a strong spot or card denies it to everyone else, but each player otherwise develops their own private board of resources, cards, and tracks. The shared council/church track and excommunication penalties are the main points of direct cross-player effect."
+  "kind": "worker placement with a shared action board",
+  "detail": "Workers are placed on one common board of towers, market, and council spaces, and taking a space (or the best die value there) can shut other players out of it that round. Cards to acquire are drawn from decks visible to all, but there is no way to directly harm another player's assets, only to out-compete them for shared spaces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -47,6 +52,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   50,
+   90
   ]
  },
  "similar": [

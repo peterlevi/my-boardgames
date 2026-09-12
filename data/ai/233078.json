@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "negotiation, trading, and open military conflict",
-  "detail": "Players share a single galaxy map and constantly negotiate trade agreements, alliances, and non-aggression pacts while also directly invading and battling over the same systems. Almost the entire game state — the map, trade, political votes — is shared and contested rather than private."
+  "kind": "open conflict, diplomacy and area control on a shared galaxy",
+  "detail": "All players expand, build, and fight across one shared modular galaxy map, so claiming systems and jump lanes directly denies them to rivals. Fleets engage in dice-based combat that destroys opponents' units, while formal trading and a voting phase mean deals and political maneuvering are core to play, not incidental.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "competition for shared technologies and board positions",
-  "detail": "Players compete for limited era cards, shared technology slots, and bonus tiles on a common board, occasionally blocking each other's plans, but most of a turn is spent optimizing your own personal player board and engine rather than interacting directly."
+  "kind": "worker placement with market competition",
+  "detail": "Players place workers on a common board of action spaces and travel a shared point-to-point map, so occupying a spot or path can shut it off to opponents that round. Invention/idea cards are drawn from a shared supply, while each player's own developed technologies and resources remain on their individual board.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

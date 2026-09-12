@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "network and market blocking",
-  "detail": "Players indirectly compete for map space and shared market demand for coal and cotton, so placement decisions constrain opponents' future options. The board and market are fully shared while each player's money and hand of cards stay private."
+  "kind": "network building and market depletion",
+  "detail": "As in its successor, industries and rail/canal links are built onto a single shared map, and coal, iron and beer come from common markets that empty out with use, letting players box each other out of routes or cheap resources. Interaction stays indirect, through shared space and shared markets rather than direct attacks.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

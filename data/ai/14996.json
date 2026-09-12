@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "route blocking, otherwise parallel set collection",
-  "detail": "Players share a single map of routes, so claiming a route you need before an opponent can is the main point of contact, but each player's hand of cards and completed tickets are private and otherwise played in parallel."
+  "kind": "route claiming with a shared card market",
+  "detail": "Routes are claimed on one shared map, and once a player takes a route it is unavailable to everyone else, which can break rivals' planned connections. Train car cards are drawn from a shared face-up row and deck, so visible cards can be taken before an opponent gets them.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "cooperative trick-taking with restricted communication",
-  "detail": "Every trick affects the whole team's shared mission state, and the entire challenge is inferring teammates' hands from extremely limited signals rather than open talk. There's no individual tableau; the trick pile and mission tasks are fully shared."
+  "kind": "cooperative trick-taking with limited communication",
+  "detail": "All players contribute cards to the same sequence of shared tricks, and each trick's outcome depends on everyone's plays together toward common and individual task goals. There is no competition, blocking, or attacking; interaction is purely coordinative, constrained by strict communication limits rather than dealmaking.",
+  "shared_space": true,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

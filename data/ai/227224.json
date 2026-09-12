@@ -14,8 +14,12 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority and contract racing",
-  "detail": "The cathedral itself is a shared, physical structure players build onto together, so there's direct competition for tile placement and majorities, layered over each player's own contract cards and resource stock."
+  "kind": "area-majority contests on a shared structure with a shared dice market",
+  "detail": "All players contribute blocks to the same central cathedral tower, and each level is scored by area majority among whoever placed there, making placement a direct contest for shared space. Dice and materials are also taken from a shared central market, so claiming a die can deny it to another player, though no action lets a player directly harm an opponent's own supply.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true
  },
  "scoring": {
   "subsystems": [

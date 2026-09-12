@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "cooperative planning against the game",
-  "detail": "Players jointly manage a shared island map, shared resource pool, and shared threats, deciding together each round how to allocate limited actions; the challenge comes from coordinating against the game system rather than against each other."
+  "kind": "cooperative, shared board and resources",
+  "detail": "Players jointly occupy one island map that grows through tile placement, and share a common pool of resources, threats, and event outcomes. There is no competition between players; all pieces and progress belong to the group working toward a common goal.",
+  "shared_space": true,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -50,7 +55,9 @@
     "how": "elimination",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "cooperative; win/lose by scenario objective"
  },
  "similar": [
   "Tokaido",

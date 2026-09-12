@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority, tile placement, and direct competition for survival",
-  "detail": "Players place elements and take actions on a shared, shrinking hex map, directly displacing and eliminating each other's species to control regions. Nearly the entire board is contested shared space, with minimal private player area beyond an action-pawn track."
+  "kind": "area control and extinction pressure",
+  "detail": "Species pawns from every player sit on one shared hex map of ocean regions, and losing the fight for dominance in a region can wipe your species out of it entirely. The action-selection track is also a shared draft, so an early pick denies that action (and its position) to everyone else.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -40,7 +45,12 @@
     "how": "end_trigger",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   70,
+   150
+  ],
+  "score_note": "wide swings from scoring/cataclysm rounds"
  },
  "similar": [
   "Dominant Species",

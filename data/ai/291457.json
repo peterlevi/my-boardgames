@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "cooperative coordination via simultaneous card initiative",
-  "detail": "Players choose action cards secretly and reveal them together, so combo-ing abilities and managing shared initiative order is the main way characters affect each other, while the monster/map state is fully shared. Each hero still manages a private hand and character sheet independent of the others."
+  "kind": "cooperative play on a shared map",
+  "detail": "All characters move and fight on the same map tiles against shared monsters, so positioning can block allies' paths or line of sight and characters can be in each other's way. There is no player-versus-player attack or shared card pool since each character keeps a private hand and deck, and coordination is cooperative rather than a negotiated exchange.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

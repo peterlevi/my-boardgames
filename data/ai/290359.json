@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct tactical combat and area denial",
-  "detail": "Players act on a single shared hex map, using line of sight, suppression, and initiative order to directly block, ambush, or shoot each other's units. Nearly all meaningful state (the map, unit positions, casualties) is shared and contested rather than sitting on a private tableau."
+  "kind": "tactical combat on a shared battlefield",
+  "detail": "Two players maneuver their own units on one shared hex map, using line of sight and positioning to block routes and set up attacks. Combat directly removes enemy units from the board and can even remove cards from an opponent's deck, so nearly all meaningful state is shared or directly contested rather than private.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -44,8 +49,11 @@
     "decided_by": "instant"
    }
   ],
-  "score_range": null,
-  "score_note": "scenario objectives decide, not a shared score"
+  "score_range": [
+   6,
+   12
+  ],
+  "score_note": "VP threshold varies by scenario"
  },
  "similar": [
   "Undaunted: Normandy",

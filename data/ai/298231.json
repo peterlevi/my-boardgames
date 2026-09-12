@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "constrained bidding and area majority",
-  "detail": "Every site is won through a simultaneous or escalating bid against the same pool of rivals, so you are constantly reacting to what others are chasing and can price them out of a site. The city itself is a fully shared board, and neighborhood/wonder scoring depends on who has built where relative to everyone else."
+  "kind": "spatial auction and area control",
+  "detail": "All players bid for and build on the same rising cityscape, so winning a site directly determines what is available to opponents. Adjacency and majority scoring mean placements constantly interact, but there is no direct attack on opponents' pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

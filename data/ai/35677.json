@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with some building-fee taxation",
-  "detail": "Players mainly develop their own tableau of buildings and resources, but the shared offer spaces and the fact that you pay rivals when using buildings they own not you creates light indirect interaction. Turn order and taking whole offer stacks before opponents can also matter tactically."
+  "kind": "worker placement with shared buildings and fees",
+  "detail": "The town's goods-offer spaces and buildings sit on one shared board, and whoever owns a building collects a fee whenever another player uses it, so choices are economically entangled even though money and goods are tracked separately per player. Claiming a space or building for your turn denies it to opponents that round, but no pieces are removed and there is no negotiation.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

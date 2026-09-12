@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with a shared threat track",
-  "detail": "Players place workers on shared action spaces, competing for limited slots, and everyone contributes to and draws from a communal 'outpost' track of raiders. Most building and scoring happens on individual player boards, so the interaction is indirect rather than confrontational."
+  "kind": "worker placement with a shared market and space competition",
+  "detail": "Workers are placed on a shared action board where filled spaces (and cards taken from the open market) are removed from opponents' options for the round, so choices are contested even though building projects and personal tableaus stay individual. There is no way to act directly on another player's pieces or resources.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority and blocking",
-  "detail": "Players place settlers and villages on a shared island board, directly contesting the same resource tiles and blocking each other's expansion routes. Nearly all the game state is shared on the central board, with only your token supply kept private."
+  "kind": "area control and resource denial on one board",
+  "detail": "Every settler and village token is placed onto a single shared hex map, and since resources and adjacency spots are limited, taking a tile or connection can directly deny it to an opponent. There is no common market and no way to act directly on another player's pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "bidding and area majority",
-  "detail": "Players bid against each other for regional control and palace-building rights using cards from a shared hand, directly blocking or outbidding rivals each round. The shared board state of regional influence markers means every win or loss directly affects everyone else's position."
+  "kind": "bidding and area-majority blocking",
+  "detail": "Players bid with hidden cards to control provinces and palace favors on one shared map, so winning a province or a vizier/general/monk/princess favor directly denies it to everyone else who bid for it that round. Commodities sit on shared regional spaces to be claimed by whoever controls the area, making palace types and goods a constant zero-sum contest rather than parallel building.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

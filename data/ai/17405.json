@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "stock manipulation and route competition",
-  "detail": "Players hold shares in the same corporations and can force presidency changes or dump stock to hurt rivals, while operating rounds see everyone competing for the same limited track connections and revenue-generating routes on a shared map."
+  "kind": "route blocking and stock manipulation",
+  "detail": "Corporations lay track and place stations on one common map, so tile and station placement regularly blocks rival corporations from the best routes and hexes. Ownership is resolved through a shared stock market where all players buy and sell shares in the same set of public companies, and the majority holder directs a company's operations for everyone invested in it.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

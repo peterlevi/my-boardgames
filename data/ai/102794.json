@@ -16,7 +16,12 @@
  "interaction": {
   "level": "Low",
   "kind": "worker placement with action-space blocking",
-  "detail": "Players compete for the same limited action spaces on a shared board, so taking a space denies it to others that round, but most of the game happens on each player's own cave board. There's no direct attacking of other players' resources, so interaction is mainly about tempo and space-denial."
+  "detail": "Players place workers on a shared board of action spaces, and once a space is taken it's unavailable to others that round, creating direct competition for key actions like ore, wood, or breeding. The actual farm/cave building happens on each player's own private board, so most of the tableau itself is not shared.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with shared resource/market competition",
-  "detail": "Each player operates their own machine and board almost independently, with interaction limited to competing for shared market slots, turn order, and end-game scoring positions rather than direct conflict."
+  "kind": "worker placement with a shared market",
+  "detail": "Players develop their own personal machine/board, but all actions are taken from a shared central board of worker-placement spaces and a common resource market, so occupying a spot or buying up a good affects what remains for others. There is no direct player-versus-player attack.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

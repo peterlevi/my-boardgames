@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict and take-that attacks",
-  "detail": "Players directly attack each other's planets and fleets and can target opponents with disruptive cards, so a large share of the game state (galaxy map, planet ownership) is shared and contested rather than private."
+  "kind": "open conflict via military and espionage",
+  "detail": "Each player develops their own race and empire separately, but the Take That mechanic lets you send spies or fleets to directly attack and damage an opponent's planets or plans. Most of the board state (empire development) is private to each player, with conflict occurring through targeted offensive actions rather than a shared board.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -43,6 +48,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   20,
+   35
   ]
  },
  "similar": [

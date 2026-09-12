@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light competition for shared resources",
-  "detail": "Each player builds their own tableau and progresses along personal tracks, so most of the game happens on individual boards rather than a shared space. Interaction is limited to competing over shared card offers or race elements rather than direct conflict."
+  "kind": "mostly parallel play",
+  "detail": "Each player builds their own city and tech track independently, chaining cards on their own tableau much like the designers' earlier Rajas/Coimbra-lineage solo-friendly games. There is no shared board, market, or way to act on another player's position; the game is fundamentally solitaire-per-player with scores compared at the end.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

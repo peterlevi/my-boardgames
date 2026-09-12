@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking and competitive auctions",
-  "detail": "Players place workers on a shared board of galleries, artists, and transport routes, so taking a spot or artist denies it to opponents, and the auction mechanism pits players directly against each other's bids. Each player still runs their own gallery and finances mostly independently between these contested moments."
+  "kind": "worker placement with a shared art market",
+  "detail": "Players place workers on a shared action board and buy/sell art through a common speculative market, so occupying a space or driving up an artist's price affects everyone else's options. Each player's own gallery and contracts are private, but the market and worker spaces are the shared contested resource.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

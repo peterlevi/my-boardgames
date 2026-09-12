@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and blocking via tile placement",
-  "detail": "Players place tiles on a shared hex map, contesting adjacent territory and majority in shared regions (houses, temples, terraces); the turn-order auction directly determines who gets to react to whom. Almost the entire board is shared and contested, so nearly every placement affects opponents' options."
+  "kind": "area majority and tile-placement blocking",
+  "detail": "Players place tiles and structures onto one shared hex map, competing for area majority and zones of control on the same spaces. Taking a hex or building height there can block opponents from that location or majority, though there is no direct attacking of opponents' pieces.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

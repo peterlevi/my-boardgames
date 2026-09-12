@@ -17,8 +17,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "Shared market and interdependent roles",
-  "detail": "Sinkside players gather resources that feed Skyside players' construction, and a shared, fluctuating market means every purchase or sale changes prices for the whole table. Positive actions frequently benefit other players as a side effect, and players compete for the same quests, guild seals, and outpost placements, so timing and reading opponents matters a lot."
+  "kind": "shared map with market competition",
+  "detail": "Fleets move and deliver goods across one shared modular map, and ships can contest the same tiles, ports, or delivery contracts, denying them to rivals. Goods and upgrades are also drawn from common market rows shared by all players.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared pyramid competition and space blocking",
-  "detail": "Players race to place tiles on the communal pyramid of the sun for bonuses, and board spaces can be occupied or taken, but each player's own dice, resources, and technology track are private and largely unaffected by others' choices."
+  "kind": "shared board with location blocking",
+  "detail": "Worker-dice move around one common modular board of location tiles, and each location offers only one of two areas at a time, so occupying a tile can deny its action or bonus to other players that round. Resources and technology tiles sit on shared board spaces to be claimed, though each player builds their own separate temple/warehouse structures with what they gather.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area control and asymmetric conflict",
-  "detail": "Players fight over the same shared map of clearings, and battles, crafting, and card denial constantly push and pull at each other's plans. Nearly all meaningful state (the map, item supply, card market) is shared and contested rather than sitting on private boards."
+  "kind": "asymmetric area-control warfare with deals",
+  "detail": "All factions place and move pieces on one shared woodland map, battling to remove each other's warriors and seize control of clearings. Players also draw from a shared card deck, and because each faction is so different in power, informal negotiation and alliances between weaker players against a leader are common.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [
@@ -52,7 +57,12 @@
     "how": "end_trigger",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": [
+   30,
+   33
+  ],
+  "score_note": "ends at 30 VP; dominance/coalition wins skip score"
  },
  "similar": [
   "Vast: The Crystal Caverns",

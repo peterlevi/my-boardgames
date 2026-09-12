@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "take that and direct conflict",
-  "detail": "Players shoot, punch, and steal directly from each other on a fully shared train board, and the programmed-action queue means your plans routinely get disrupted by others' cards. Nearly all meaningful state (loot, bandit positions, the marshal) is shared and constantly contested."
+  "kind": "physical positioning and direct attacks on a shared train",
+  "detail": "All bandits move around the same train cars and can punch, shoot, or steal loot directly from whichever other bandit occupies that space. Nearly the whole game state — the train, the loot tokens, the bullet supply — is shared rather than owned by an individual player.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

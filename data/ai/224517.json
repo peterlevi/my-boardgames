@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "network and market blocking",
-  "detail": "Players compete indirectly for space on a shared map and for limited resources in a shared coal/iron market, so building near or ahead of opponents can starve their options. Most of the tension comes from anticipating others' moves rather than direct conflict."
+  "kind": "network building and market depletion",
+  "detail": "Industries and links are built onto one shared map of Birmingham, and coal, iron and beer are drawn from common markets that deplete as players use them, so a purchase or a placed link can directly block a rival's plans. There is no way to act on an opponent's pieces directly, only to compete for the same shared spaces and resources.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

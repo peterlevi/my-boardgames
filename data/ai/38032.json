@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "auction and bidding",
-  "detail": "Players bid against each other for shared market offers using cards from their own hand, so every bid affects what remains available and how much competitors can spend later. There's no shared board beyond the market itself; most of the game state is what's visible in each player's hand and completed sets."
+  "kind": "competitive bidding on a shared market",
+  "detail": "Players bid against each other for goods cards revealed from a common stack, so winning a lot denies those goods to everyone else. Each player's holdings and sets are kept privately, so beyond the shared auction pool there's no shared board or direct actions against opponents.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

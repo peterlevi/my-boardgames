@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking with golems on a shared board",
-  "detail": "Players take turns on shared action spaces, so popular spots get blocked, and golems move through a shared neighborhood map where they can affect or threaten other players' students and buildings. Each player otherwise develops their own tableau of cards and resources largely independently."
+  "kind": "shared board with positional interference",
+  "detail": "Golems move across the same neighborhood board, and passing through spaces occupied by other players' students or golems triggers effects, so movement paths and space occupation directly affect opponents. Most engine-building (recipes, workers, resources) happens on each player's own board with no shared market.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

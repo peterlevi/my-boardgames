@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "territory adjacency and area competition",
-  "detail": "Players build on a single shared hex board where adjacency to other players' structures grants bonuses, so land grabs and blocking opponents' expansion routes are central; cult tracks are also a shared, contested resource."
+  "kind": "area control and terrain race",
+  "detail": "All players terraform and build on one shared hex map, so adjacent territory and terrain conversion are directly contested, and reaching a spot first (or a favorable cult-track slot) denies it to everyone else. There is no combat or card market; conflict is purely positional and about turn-order priority on shared tracks.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

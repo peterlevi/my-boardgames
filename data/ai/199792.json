@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "Mostly parallel play with shared card drafting",
-  "detail": "Players build their own individual city tableau and worker pool privately, interacting mainly by racing for the same limited cards and events in a shared central display and occasionally taking a spot an opponent wanted."
+  "kind": "worker placement with a shared card market, mostly parallel tableaus",
+  "detail": "Each player grows their own private city tableau, but everyone places workers on a shared board of limited-capacity locations and draws from a shared face-up meadow of cards, so claiming a spot or card before others matters. Opponents' tableaus are never touched directly.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -41,6 +46,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   50,
+   75
   ]
  },
  "similar": [

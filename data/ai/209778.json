@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "real-time cooperative coordination",
-  "detail": "All players act on a single shared board and shared set of pawns, with each player restricted to only certain move types across all heroes, so success depends entirely on watching and silently cueing each other. There is no individual board at all — the whole game state is communal."
+  "kind": "cooperative shared-board real-time play",
+  "detail": "All players move pawns on one shared modular maze board toward common exits, and any player can control any hero's movement, so almost the entire game state is shared rather than owned by an individual. There's no attacking or taking from each other since it's fully cooperative; the tension comes from the real-time clock and communication limits, not player-versus-player actions.",
+  "shared_space": true,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

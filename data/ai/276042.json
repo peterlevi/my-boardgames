@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "open drafting with shared card pool",
-  "detail": "Players draw from and leave cards in a shared communal pool, so choices affect what's available to opponents next, but each player builds their own private pyramid tableau. Interaction is indirect denial rather than direct confrontation."
+  "kind": "drafting from a shared discard into private tableaus",
+  "detail": "Players draw from a shared deck and can also claim shared piles of discarded cards sorted by color, so grabbing a color denies it to opponents who need it. Each player then builds their own private pyramid-shaped tableau with no further direct interaction.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

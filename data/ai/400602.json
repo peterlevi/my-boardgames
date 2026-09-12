@@ -16,8 +16,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "Parallel building, indirect competition",
-  "detail": "Players mostly develop their own civilization console and tracks independently, racing for the same map territory and shared goal/scoring tiles rather than directly attacking each other. Reviewers note 'there's very little your opponents can do to interfere' — the worst you can do is temporarily weaken a rival tribe, not stop them scoring — so most of the game is solitaire-style optimization with light positional competition over shared spaces."
+  "kind": "area control and drafting on a shared continent",
+  "detail": "Civilizations expand across one shared continent board and compete for the same regions and resource dice, so claiming a spot can lock rivals out of it. There is no direct attack between players; each civilization also develops its own private tech and evolution tracks alongside the shared map.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

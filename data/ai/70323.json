@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict and take-that attacks",
-  "detail": "Attacks from the player in Tokyo hit everyone else simultaneously, and everyone else's attacks hit whoever is in Tokyo, so the shared 'who occupies Tokyo' state is the main lever players fight over. There's no private tableau of real consequence beyond your own health and cards; the board state is almost entirely shared and adversarial."
+  "kind": "open conflict and direct attack",
+  "detail": "Players roll dice to deal damage directly to opponents' health, and whoever holds the single Tokyo space earns bonus points while being attacked by everyone else, so occupying it both helps the holder and blocks that benefit from others. Power cards are bought from a shared face-up row, giving players a common pool alongside the constant direct damage that can eliminate opponents.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

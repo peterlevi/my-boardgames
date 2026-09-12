@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement and shared market competition",
-  "detail": "Players compete for shared action spaces and a shared pool of students and professors to recruit, but each player's scoring engine and university tableau develops independently."
+  "kind": "worker placement and closed drafting over shared staff/students",
+  "detail": "Players place workers on shared action spaces and draft staff and students from common pools, so picking one denies it to everyone else. Each player still builds their own school board of disciplines, so interaction is limited to contention over the shared spaces and pools rather than acting directly on opponents.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

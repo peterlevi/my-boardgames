@@ -71,6 +71,11 @@ def score_range(f):
     has been run with --scores."""
     rng = (f or {}).get("score_range")
     if not isinstance(rng, list) or len(rng) != 2:
+        # The range pass may have skipped a game the facts already carry a
+        # winning score for — better a single honest number than a blank.
+        one = (f or {}).get("winning_score")
+        if isinstance(one, (int, float)) and one > 0:
+            return (int(round(one)), int(round(one)))
         return None
     try:
         lo, hi = float(rng[0]), float(rng[1])
@@ -128,6 +133,33 @@ def categories(f):
             seen.add(key)
             out.append(text)
     return out
+
+
+# How much the players' games touch each other, weighed rather than judged.
+# Asked for as a label, it came back "Low" for The Quest for El Dorado — a
+# race down a shared board where you block each other's paths — because the
+# model reserves anything higher for open conflict. The same record's own
+# description said "shared modular board... block a path space", which is the
+# evidence the weights below use.
+IX_WEIGHT = {"direct_attack": 3, "negotiation": 2, "shared_space": 2,
+             "blocking": 1, "shared_pool": 1}
+IX_ORDER = ["Low", "Medium", "High"]
+
+
+def interaction(ai):
+    """Low, Medium or High, from the interaction facts. Returns None when the
+    facts are absent, so the caller can fall back to what BGG's tags imply."""
+    ix = (ai or {}).get("interaction") or {}
+    if not any(k in ix for k in IX_WEIGHT):
+        return ix.get("level") or None
+    score = sum(w for k, w in IX_WEIGHT.items() if ix.get(k))
+    # Taking the card someone else wanted is not blocking in any meaningful
+    # sense — every shared market does that. Blocking counts when there is a
+    # board to block on, which is what separates Ark Nova, where you build
+    # your own zoo, from a race down a shared map.
+    if ix.get("blocking") and not ix.get("shared_space"):
+        score -= IX_WEIGHT["blocking"]
+    return "High" if score >= 5 else "Medium" if score >= 2 else "Low"
 
 
 SALAD_ORDER = ["no", "touch", "lot", "total"]

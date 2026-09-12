@@ -14,8 +14,12 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with light racing",
-  "detail": "Each player develops their own province board largely independently; the main touchpoint is racing for the same track positions and market goods, plus a shared game-end trigger. There is minimal direct conflict or blocking."
+  "kind": "individual boards with a shared market and limited bonuses",
+  "detail": "Each player develops their own province board with dice and tiles, but goods are sold into a shared market and a limited number of personalities and bonus spaces on shared tracks can only be claimed by one player each, so racing for those slots matters. Players cannot act directly on each other's provinces.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true
  },
  "scoring": {
   "subsystems": [

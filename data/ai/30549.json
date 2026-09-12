@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "cooperative planning and shared board state",
-  "detail": "All players share one board and one set of win/loss conditions, so every action (treating disease, trading cards, building stations) directly affects the whole team's chances. Turns are taken individually but decisions are made through constant group discussion about the shared map."
+  "kind": "cooperative play on one shared board",
+  "detail": "All players act on a single shared world map and disease/cube state, coordinating actions toward common objectives rather than competing, so essentially the entire game state is shared and there is no opponent to block or attack. Players plan together and can trade cards with each other (following specific rules on who can trade what), functioning as the game's negotiation element.",
+  "shared_space": true,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

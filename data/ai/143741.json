@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "hidden roles and open conflict",
-  "detail": "Players openly attack each other with dice results while trying to deduce or conceal team allegiance, and character abilities let players directly target others' dice or health. There's no private board; the shared dice pool and public health tokens are the entire game state."
+  "kind": "hidden roles with direct dice-based attacks",
+  "detail": "Players secretly belong to teams (Sheriff, Outlaws, Renegades) and use dice results to directly shoot other players, removing their life points and eliminating them from the game. Each player manages their own dice and life track rather than a shared board, so interaction happens entirely through targeted attacks rather than shared spatial or resource state.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [],

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "blocking and bidding",
-  "detail": "Players compete for limited action spaces on a shared modular board and bid against each other for turn order and patrons, directly affecting each other's available options. The action board and market are shared, while each player's building and money track are private."
+  "kind": "worker placement with competitive bidding",
+  "detail": "Workers are placed on a shared modular action board and buildings compete for area-majority prestige, so occupying a space or district can shut others out of it. Auctions add another layer of direct competition over the same limited actions, though players never act on each other's pieces directly.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "stock manipulation and economic warfare",
-  "detail": "Players buy, sell, and dump shares of the same public companies, so one player's stock moves directly change prices and even hand company presidencies to others. Company operations (track, trains, dividends) are public and permanently alter the shared map and market, so almost nothing happens in isolation."
+  "kind": "route blocking and stock manipulation",
+  "detail": "All players build track and run trains on one shared hexagonal map, so claiming a hex or laying a tile can cut off an opponent's route or station slot. The bigger interaction is through a shared stock market: players buy and sell shares in the same companies, and a company's president (majority holder) makes decisions that affect all its other shareholders.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

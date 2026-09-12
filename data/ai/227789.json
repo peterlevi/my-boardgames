@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "spot/rondel competition for resources",
-  "detail": "Players race for shared spaces on a central rondel and monk track, occasionally blocking each other from ideal actions, but nearly all scoring happens on each player's own barrel board independent of others."
+  "kind": "shared action selection, private tableau building",
+  "detail": "Players pick from a shared row of action/resource spaces that becomes temporarily unavailable once taken, so timing and blocking of these common spots is the main way opponents affect each other. The actual construction — garden tiles and barrel filling — happens entirely on each player's own separate board, with no attacks or negotiation.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

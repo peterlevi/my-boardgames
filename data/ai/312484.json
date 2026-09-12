@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "indirect blocking over shared worker-placement spots",
-  "detail": "Players compete for the same limited action spaces and market cards, so taking a spot denies it to others that round, but each player's deck, resources, and exploration progress are entirely their own. There's no direct attack — interaction is about tempo and racing for the same opportunities."
+  "kind": "worker placement and card drafting on a shared island",
+  "detail": "All players place workers on the same island board of locations, and a location can only be used once per round, so occupying it denies that action to others; a shared market row of cards is also drafted from by everyone. Each player otherwise builds their own deck and resource engine privately, with no direct attacks on opponents.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -46,6 +51,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   60,
+   100
   ]
  },
  "similar": [

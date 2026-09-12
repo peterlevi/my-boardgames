@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "route blocking and area competition",
-  "detail": "Players extend witch paths across a shared hex board and compete for the same crystals, prophecy scrolls, and scoring tiles, so claiming a spot can block or slow a rival's route, even though each player also tracks their own private cauldron and score."
+  "kind": "network building around a shared cauldron",
+  "detail": "All players extend their networks onto the same central Witchstone board and draw magic crystals from one shared cauldron, so claiming a hex or scooping crystals directly reduces what's available to others. There is no ability to harm an opponent's pieces directly, only to out-race them for shared space and resources.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

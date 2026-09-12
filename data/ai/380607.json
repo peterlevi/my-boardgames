@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "route and building competition",
-  "detail": "Players compete for limited trail spots and buildings while otherwise developing separate decks and boards, mirroring the interaction pattern of the base game."
+  "kind": "shared trail with limited building spots and market rows",
+  "detail": "As in the base game, all players traverse and build along one shared trail board, so occupying a building spot or path denies it to others. Sheep breeds and other cards come from shared market rows, while each player's flock and personal board remain their own with no direct player-versus-player attacks.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

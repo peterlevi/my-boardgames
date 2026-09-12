@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "take that and push your luck",
-  "detail": "Players directly target each other with attack, skip, and 'make another player draw' cards, and the shared deck is the entire game state everyone is manipulating. Almost every turn is a decision about who to hurt or how to dodge the exploding kitten, so the game is nearly all interaction with no private tableau."
+  "kind": "push-your-luck with take-that attacks",
+  "detail": "Everyone draws from one shared deck, and cards let you force opponents to draw extra, skip their turn, or dump the exploding kitten back into someone else's near-term draws. There's no board or tableau at all — the entire game state is the single shared deck and discard pile, plus whatever cards are in each player's hand.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [],

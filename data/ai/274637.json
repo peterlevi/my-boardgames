@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct one-on-one combat with hand-based bluffing",
-  "detail": "Both players fight on the same shared map, directly attacking and blocking each other's characters, and hand management creates bluffing over which card the opponent is holding for an ambush or defense."
+  "kind": "asymmetric duel on a shared map",
+  "detail": "Both heroes and their sidekicks move and fight on one shared point-to-point map, so positioning blocks movement and lines of attack. Combat directly damages and eliminates opposing characters, making the fight itself the entire point of contact between players.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "asymmetric race and area majority",
-  "detail": "Players draft from a shared card row and directly contest control over regions of Middle-earth on a shared modular board, while racing on parallel tracks (the Ring's progress vs. Sauron's hunt). Very little happens in isolation — almost every action either advances your own race or directly threatens the opponent's."
+  "kind": "open conflict on a shared map",
+  "detail": "Both players place and move pieces across one shared modular map of Middle-earth, contesting the same regions and paths, and cards/abilities let one side directly damage, remove, or block the other's forces and quest progress. A shared market/track for skills and cards adds further competition over the same limited options.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

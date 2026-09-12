@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel building with light drafting competition",
-  "detail": "Players build separate factory tableaus and mainly interact by racing to grab the same blueprint cards from a shared market before opponents do. There's little direct conflict once a blueprint is claimed, since production happens independently on each player's own board."
+  "kind": "shared market drafting, parallel tableau building",
+  "detail": "During the market phase all players draft blueprints, workers, or upgrades from a shared common market, so grabbing one denies it to the others. Actually building factories and using dice workers happens on each player's own private tableau with no direct interaction.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

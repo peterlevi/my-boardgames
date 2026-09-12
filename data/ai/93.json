@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and blocking",
-  "detail": "Players fight directly over the same regions, repositioning knights to break or hold majorities, while secretly loading the castillo for a surprise placement each round. Almost all meaningful state (the board, King position, regions) is shared; only hands of power cards and the castillo are private."
+  "kind": "area majority with direct removal effects",
+  "detail": "Caballeros from every player are placed onto the same regional map and scored by majority, so every placement competes for control of the same spaces. Some power/action cards let a player directly remove or displace opponents' caballeros from a region, going beyond simple space denial into a direct hit on their board presence.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

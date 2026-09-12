@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "storytelling, voting, and bluffing",
-  "detail": "Every round the storyteller's clue and card become shared information that all other players react to by choosing cards and voting, directly affecting each other's scoring chances. There's no personal board; the interaction is entirely social, mediated through card choice and guessing."
+  "kind": "guessing and voting on shared clues",
+  "detail": "One player's card and clue are shared with the whole table each round, and every other player votes by choosing which submitted card matches that clue. Scoring depends on how well players' guesses converge or diverge, but there is no shared board, pool, or direct action against another player's assets.",
+  "shared_space": false,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

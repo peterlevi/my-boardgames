@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction/bidding and shared tile exploitation",
-  "detail": "Players bid workers against each other for new tiles, and crucially any player's workers can activate abilities on any other player's village tiles, making much of the board a shared resource that everyone actively exploits rather than private territory."
+  "kind": "auction and cross-village worker placement",
+  "detail": "Tiles arrive on shared boats each season and are bid on by all players, a common pool that shrinks as tiles are won. Crucially, workers can be sent not only to a player's own village tiles but also onto opponents' tiles to use their abilities, meaning rival villages become part of the shared action space rather than fully private boards.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

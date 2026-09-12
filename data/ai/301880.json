@@ -14,8 +14,12 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "worker placement with some spot-blocking",
-  "detail": "Players occupy shared action spaces so there is some blocking and racing for key contract tiles, but most of the game is building your own tableau and fulfilling your own contracts. The shared board state (available spaces, contract tiles) is the main point of contact between players."
+  "kind": "worker placement with blocking on a shared map",
+  "detail": "Players place workers on shared map locations and draw from shared contracts and resources, so occupying a spot or claiming a contract denies it to opponents that round. There is no mechanism to directly damage or steal from another player's own tableau.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true
  },
  "scoring": {
   "subsystems": [

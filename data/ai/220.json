@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open bidding and auction brinkmanship",
-  "detail": "Every card auctioned is fully shared and visible, and players directly outbid one another in real time, watching rivals' remaining cash to judge how hard to push. There's no private tableau at all — the entire game state is the shared auction and each player's dwindling hand of money."
+  "kind": "pure bidding auction",
+  "detail": "There is no board; a single common deck of cards is revealed one at a time and every player bids on it with their own money cards, so winning a card comes entirely at the expense of the other bidders' chance at it and can drain the cash they need at game end. There is no direct attack on an opponent's holdings and no negotiation, just competitive bidding on shared cards.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

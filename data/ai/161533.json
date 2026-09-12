@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared map competition with mostly parallel engines",
-  "detail": "Players compete for limited building plots and church/reconstruction tiles on a shared city map, and taking a market action can shift prices for everyone, but most of the depth comes from optimizing your own personal player board and card engine rather than direct conflict."
+  "kind": "drafting and market competition, mostly parallel building",
+  "detail": "Each player develops their own city area on an individual board, so most construction is private, but goods arrive on a shared central board and are drafted from a common market/warehouse, so taking a good, ship delivery, or card can deny it to others. There is no direct action targeting another player's board.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

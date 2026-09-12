@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct route blocking and economic sabotage",
-  "detail": "Players share the same city map and can build routes that intercept, block, or steal passengers destined for a rival's buses, and can deliberately target a leader to bankrupt them. The board and passenger pool are fully shared, so almost every action affects what routes remain viable for opponents."
+  "kind": "route-building and area denial",
+  "detail": "All players place route markers and buses onto the same city board, so competing routes physically block each other from claiming the best streets. There's no direct attack on opponents' pieces, but nearly the entire game state (streets, passengers, buildings) is one shared map rather than individual player boards.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

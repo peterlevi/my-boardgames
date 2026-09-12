@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking and stealing resources",
-  "detail": "Players compete for the same limited worker placement spots on a shared city board, and can bump, block, or outbid each other for locations and resources needed to stage their shows. Each player still develops their own tricks and reputation track privately, so the shared board is the main point of friction."
+  "kind": "worker placement with a shared component market",
+  "detail": "Workers are placed on one shared city board of locations, so a spot taken by an opponent is unavailable that round, and the component shop is a shared market everyone buys from. Final magic shows are performed and scored individually, without any mechanism to damage or steal directly from an opponent's tricks or resources.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

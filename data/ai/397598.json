@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "Worker placement contention and area conflict",
-  "detail": "As in the base game, players contend for placement spots and battle over a shared combat track, with new elements like sandworms and spy actions adding extra ways to interfere with opponents. Team mode adds a shared victory state between two players against another pair."
+  "kind": "worker placement blocking with a shared market and combat",
+  "detail": "As in the base Dune: Imperium, players occupy exclusive spaces on a shared board and draft from a shared card row, denying options to opponents. Combat over Arrakis (now including sandworms) directly removes opposing troops, and an optional team mode ties two players' fates together, while deck-building remains private.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -45,6 +50,10 @@
    "https://www.rulespal.com/dune-imperium-uprising/rulebook",
    "https://boardgamegeek.com/boardgame/397598/dune-imperium-uprising",
    "https://geekdad.com/2020/12/control-the-spice-and-control-the-universe-in-dune-imperium/"
+  ],
+  "score_range": [
+   10,
+   16
   ]
  },
  "similar": [

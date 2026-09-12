@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "drafting and light auction/blocking",
-  "detail": "Players draft dice in turn order and can be blocked from taking the die or advisor they wanted, and the shared player-order track and artisan/ship spaces create competition for limited slots. Most of the actual building happens on each player's own tableau and tracks, so it's parallel development with periodic friction points."
+  "kind": "drafting from shared pools with light board conflict",
+  "detail": "Each round players draft dice and buy cards from common shared displays, so taking one denies it to opponents, and ships move along a shared discovery board where positioning matters. Most building, production, and scoring still happen on each player's own personal tableau.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

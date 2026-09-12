@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement over shared action spaces",
-  "detail": "Players compete for the same limited production and R&D action spaces and can block each other from key spots or race for track bonuses, while each maintains their own assembly line and resources on a personal board."
+  "kind": "worker placement on shared action spaces, individual production boards",
+  "detail": "Each player runs their own factory board and production chain independently, but actions are taken from a common set of worker placement spots with limited slots, so occupying one denies it to opponents for the round. There is no direct attack between players' factories, and any effect on others comes purely from racing for the same limited actions.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

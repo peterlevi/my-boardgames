@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared worker placement and race for network slots",
-  "detail": "Players compete for the same limited worker-placement actions and gate connections, so timing and blocking matter, but most of your engine (routes, settlers, resources) lives on your own board. The shared exoplanet map is where majority and space races actually collide."
+  "kind": "shared gate network and route blocking",
+  "detail": "Players build and use a common network of space gates on one shared station board, so occupying or orienting a gate affects everyone's routes to the exoplanets. Settlement slots on the planets are also limited, creating blocking without any direct attacks.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

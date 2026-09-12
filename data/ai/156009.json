@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "push-your-luck with opportunistic taking",
-  "detail": "Any player can grab cards revealed into the shared harbor before the active player, so there's constant opportunistic sniping of good cards, though each player's own tableau of recruited cards/coins is private. The shared deck and harbor row are the main point of contact between players."
+  "kind": "shared card row, push-your-luck drafting",
+  "detail": "Cards are revealed into a shared harbor row that any player can take goods or hire people from, so a card taken by one player is no longer available to the others. Each player's collected ships and person cards form a separate personal tableau, and there is no way to act directly against an opponent's holdings.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

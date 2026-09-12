@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "trading and negotiation with blocking",
-  "detail": "Players negotiate resource trades directly with each other every turn and can block opponents' expansion or steal resources with the robber, making the shared hex board and trade economy central to the experience. Individual settlements and hands are private, but the resource-producing board and robber placement are entirely shared and contested."
+  "kind": "open board conflict with trading and blocking",
+  "detail": "All settlements, roads, and cities are built on one shared hex map, so placement spacing rules and road routes actively block opponents from expanding into the same areas. The robber and certain development cards let a player directly steal resources or cards from an opponent, and players freely trade resources with each other, making negotiation a core mechanic.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": true
  },
  "scoring": {
   "subsystems": [

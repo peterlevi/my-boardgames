@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "route blocking and area enclosure",
-  "detail": "All camels are placed on a single shared board, and players directly cut off each other's expansion routes and race to claim oases and enclose empty territory, so almost the entire game state is shared and contested."
+  "kind": "pure blocking and area denial",
+  "detail": "All caravans are placed onto one shared desert board, and since routes can never cross, every placement can wall off territory or an oasis an opponent needs. There is no attacking of pieces or shared card/resource pool; the entire game is fought through spatial denial.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

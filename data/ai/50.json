@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared discard denial, parallel expeditions",
-  "detail": "Each player builds their own separate expeditions in front of them, but the shared discard piles mean you're constantly deciding whether to hand your opponent a useful card or deny them one. It's mostly parallel play punctuated by these discard-timing decisions."
+  "kind": "mostly parallel play with a shared discard row",
+  "detail": "Each player lays out their own expedition columns privately, so the bulk of the game is parallel, but cards discarded go face-up onto shared piles that either player can later take, so discarding (or refusing to discard) a needed card affects what the opponent can access. There's no way to act directly on an opponent's expeditions.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -40,6 +45,10 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   20,
+   80
   ]
  },
  "similar": [

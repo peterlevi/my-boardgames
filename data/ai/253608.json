@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "stock manipulation and route competition",
-  "detail": "As in other 18xx games, players buy and sell shares in shared public companies, directly affecting each other's holdings and who controls the presidency, while operating rounds compete for the same track connections and revenue on one shared map."
+  "kind": "route blocking and stock manipulation",
+  "detail": "As in other 18xx titles, every company's track and stations go onto a single shared regional map, so tile placement can physically block a rival company's expansion or claim a contested city slot. Company shares are bought and sold in one common stock market, and whoever holds the most shares in a company controls its operating decisions on behalf of all its shareholders.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area control and racing against a shared AI threat",
-  "detail": "Players compete for the same systems and resources on a shared galactic map and can attack each other's fleets, while all also react to a common scripted Voidborn menace that pressures everyone; each player still manages a large personal tech tree and command-card tableau."
+  "kind": "area control and combat on a shared galaxy map",
+  "detail": "Empires expand across a common hexagonal galaxy map, contesting the same systems and fighting battles that can destroy or capture an opponent's units. Each player runs their own tech and command-card engine, but territory, combat, and a shared cosmic threat all play out on the same board.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

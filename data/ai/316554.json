@@ -15,8 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "Worker placement contention and area conflict",
-  "detail": "Players compete for the same limited worker-placement spots and for board control in the combat zone, so blocking and racing for key spots matters, while each player's deck and tableau are private engines. Combat is a shared, visible tug-of-war that directly determines who scores and who loses troops."
+  "kind": "worker placement blocking with a shared market and combat",
+  "detail": "Agents are placed on a shared board of exclusive action spaces, so occupying one denies it to opponents that round. A shared Imperium Row market supplies the cards everyone drafts from, and troops committed to the Arrakis conflict fight directly against rivals' forces, while deck and tableau building stay private to each player.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -42,6 +47,10 @@
   "checked": [
    "https://meepletrail.com/how-to-play-dune-imperium",
    "https://en.wikipedia.org/wiki/Dune:_Imperium"
+  ],
+  "score_range": [
+   10,
+   15
   ]
  },
  "similar": [

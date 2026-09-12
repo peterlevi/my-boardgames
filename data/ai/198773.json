@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "team communication and visual-association deduction",
-  "detail": "Like the original, the whole grid of image cards is shared and one player's clue guides their entire team's guesses each turn, with two teams racing on the same board. All game information is public except for the spymasters' hidden knowledge of which cards belong to whom."
+  "kind": "shared grid picture-guessing race",
+  "detail": "As in base Codenames, both teams clue against one shared grid of image cards, racing to identify their own agents first. Players cannot act on opponents directly, though a wrong guess can help the other team or trigger the assassin.",
+  "shared_space": true,
+  "blocking": false,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [],

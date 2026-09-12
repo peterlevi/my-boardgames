@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "bluffing and blocking",
-  "detail": "Players secretly choose roles that are revealed simultaneously, and bold actions get blocked if multiple players choose the same bold role, directly punishing predictable play. The delivery board and potions are shared, while each player's chosen cards stay hidden until reveal."
+  "kind": "risk-based space contention",
+  "detail": "Potions are delivered across one shared map, and players simultaneously choose roles knowing that multiple players being 'bold' on the same role causes a clash where only one succeeds and others can lose goods. This creates frequent indirect conflict over shared locations and a common potion supply, without any card or action that targets an opponent directly.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with shared tile market",
-  "detail": "Players draft tiles from a shared central display based on dice rolls, so faster or luckier players can snatch tiles others wanted, but most of the game happens on each player's own principality board. There is little direct conflict beyond racing for the same limited tiles."
+  "kind": "drafting from a shared supply onto private boards",
+  "detail": "Tiles are drawn to a shared display track and players pick from it based on dice results, so taking a tile you need denies it to opponents scrambling for the same spot. Each player then places their chosen tiles onto their own separate principality board, so the shared element is limited to the supply, not the building area itself.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

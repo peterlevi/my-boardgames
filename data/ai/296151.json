@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "king-of-the-hill area majority and shared rondel spaces",
-  "detail": "Players displace each other's bishops and knights from contested city spaces in a king-of-the-hill mechanic and compete for the same rondel slots, but each player otherwise builds their own tableau of cards and buildings independently."
+  "kind": "shared rondel and city board with spot-blocking",
+  "detail": "Players move around a shared rondel to take actions and construct buildings on a common city board, where taken spaces and building slots become unavailable to others. Card/resource engines (deck and bag building) are managed individually, so only the rondel and the city map are contested territory.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "race and denial for shared pieces",
-  "detail": "Both players draw from the same circle of available patches and race along a shared time track, so taking a good patch or moving ahead in time directly denies options to the other player. Each player's quilt board itself is private and not directly attacked."
+  "kind": "shared patch circle, personal quilt boards",
+  "detail": "Each player fills their own private 9x9 quilt board, so the boards themselves are never shared. Interaction happens only through the shared circle of patches everyone draws from: taking a patch removes it from the opponent's options, and choosing which patch to take also moves the time track, which can let a player take extra turns before the other can act.",
+  "shared_space": false,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

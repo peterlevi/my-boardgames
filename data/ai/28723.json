@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "Forced-choice auction/extortion",
-  "detail": "The harbor with its limited ship slots is a shared, contested space, but each player also keeps a private warehouse of goods. Interaction is direct: a player sets price/terms on a deal and an opponent is forced to pick which side of it they get stuck with, actively shaping rivals' outcomes rather than just competing indirectly."
+  "kind": "auction drafting into a shared harbor of ships",
+  "detail": "Players bid on and collect goods cards from a shared drafting pool, then load their goods onto a common set of ships in the harbor; since each ship accepts cargo from only one trader and leaves once full, loading a ship first blocks other players from using it. The harbor and ship states are shared and visible to all, while each player's hand of goods cards is private.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -39,6 +44,10 @@
     "how": "end_trigger",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   40,
+   80
   ]
  },
  "similar": [],

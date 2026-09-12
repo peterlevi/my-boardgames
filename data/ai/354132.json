@@ -16,8 +16,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "Market racing and shared stock",
-  "detail": "Players share regional markets where the fastest ship to arrive gets first pick of available goods, so speed and timing directly affect what's left for others. Players can also buy shares in each other's companies, tying part of everyone's fortune to rivals' fluctuating success, though each player still manages their own ships, cash, and holdings on a mostly individual board."
+  "kind": "market speculation and a shared trade network",
+  "detail": "Ships move and deliver goods across one shared map of ports and trade routes, and every player buys and sells into a single fluctuating commodity market. Players can also buy shares in each other's companies, tying their fortunes together, but there is no way to directly harm an opponent's position.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": true,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [
@@ -41,6 +46,10 @@
     "how": "fixed_length",
     "decided_by": "money"
    }
+  ],
+  "score_range": [
+   100,
+   250
   ]
  },
  "similar": [

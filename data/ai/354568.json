@@ -13,8 +13,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction and bidding for shared provinces",
-  "detail": "Players bid directly against each other for the same limited set of provinces each round, competing head-to-head for resources, then develop pyramids and farms on their own individual boards."
+  "kind": "auction and area majority over a shared map",
+  "detail": "Players bid for provinces on one shared map and later compete for area majority in those provinces, so winning a province or majority directly denies it to rivals. Building and farming happen on the player's own province tiles, but the underlying territory and its majority scoring are fully shared.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": false,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

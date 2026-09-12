@@ -14,8 +14,13 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conquest and area denial",
-  "detail": "Players attack directly onto the same shared map to take each other's territories, so board space is a constant fight rather than parallel development. Whose race is in decline and who is expanding shifts the balance of power every round."
+  "kind": "area control and conquest",
+  "detail": "Every race's tokens occupy the same map, and expanding means actively rolling to conquer and remove opponents' tokens from shared territories. Nearly the entire game state is this one contested board rather than separate player areas.",
+  "shared_space": true,
+  "blocking": true,
+  "direct_attack": true,
+  "shared_pool": false,
+  "negotiation": false
  },
  "scoring": {
   "subsystems": [

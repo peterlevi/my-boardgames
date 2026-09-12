@@ -142,8 +142,24 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
    unless you already know them. */
 /* The column picker reuses the styled-select shell, but its panel is a list
    of checkboxes rather than options. */
-.colpick .selbtn { min-width:112px; }
-.colmenu { padding:8px 4px; max-height:60vh; overflow-y:auto; min-width:210px; }
+.colpick { margin-left:auto; position:relative; display:flex;
+  align-items:center; }
+.iconbtn { background:none; border:0; padding:4px; cursor:pointer;
+  color:var(--muted); display:flex; align-items:center; border-radius:6px; }
+.iconbtn:hover, .colpick.open .iconbtn { color:var(--ink); background:var(--panel); }
+.colmenu { position:absolute; z-index:30; top:calc(100% + 6px); right:0;
+  background:var(--panel); border:1px solid var(--line); border-radius:9px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14);
+  padding:8px 4px; max-height:70vh; overflow-y:auto; min-width:230px; }
+:root:not([data-theme="light"]) .colmenu { box-shadow:0 10px 28px rgba(0,0,0,.5); }
+.colhint { text-transform:none; letter-spacing:0; opacity:.8; }
+.colfoot { margin:6px 10px 2px; }
+.colfoot .link { font-size:.8rem; padding:0; }
+.colmenu label.locked { opacity:.45; }
+/* The header being dragged, and where it would land. */
+th.dragging { opacity:.45; }
+th.dropbefore { box-shadow:inset 2px 0 0 var(--accent); }
+th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
 .colmenu label { display:flex; align-items:center; gap:8px; padding:5px 10px;
   border-radius:6px; cursor:pointer; font-size:.85rem; white-space:nowrap; }
 .colmenu label:hover { background:var(--bg); }
@@ -232,7 +248,8 @@ th.w-thumb { width:52px; } th.w-rank { width:56px; }
 th.w-hex { width:54px; } th.w-plays { width:58px; }
 th.w-time { width:72px; } th.w-weight { width:70px; }
 th.w-ix { width:86px; } th.w-designer { width:150px; }
-th.w-date { width:106px; }
+th.w-date { width:106px; } th.w-price { width:96px; }
+th.w-year { width:64px; }
 th.w-atn { width:64px; } th.w-pct { width:66px; }
 th.w-ratings { width:74px; }
 th.w-win { width:124px; } th.w-br { width:104px; }
@@ -243,19 +260,28 @@ table.mode-any .c-verdict, table.mode-any .c-bestPct, table.mode-any .c-appr,
 table:not(.mode-any) .c-win, table:not(.mode-any) .c-breadth { display:none; }
 /* The column picker. One class per hidden column on the table beats setting
    display on 265 rows' worth of cells. */
-table.off-rk .c-rk, table.off-av .c-av, table.off-my .c-my,
-table.off-ds .c-ds, table.off-pl .c-pl, table.off-tmax .c-tmax,
-table.off-w .c-w, table.off-ix .c-ix, table.off-acq .c-acq,
-table.off-lp .c-lp, table.off-win .c-win, table.off-breadth .c-breadth,
+table.off-th .c-th, table.off-rk .c-rk, table.off-av .c-av, table.off-my .c-my,
+table.off-y .c-y, table.off-ds .c-ds, table.off-pl .c-pl, table.off-tmax .c-tmax,
+table.off-w .c-w, table.off-ix .c-ix, table.off-acq .c-acq, table.off-lp .c-lp,
+table.off-add .c-add, table.off-pp .c-pp,
+table.off-win .c-win, table.off-breadth .c-breadth,
 table.off-verdict .c-verdict, table.off-bestPct .c-bestPct,
 table.off-appr .c-appr, table.off-rt .c-rt { display:none; }
-/* What the Game column itself carries. */
-.gamecell .yr, .gamecell .meta { display:none; }
-table.gm-year .gamecell .yr, table.gm-designer .gamecell .yr { display:inline; }
-table.gm-designer .gamecell .meta { display:block; }
-/* The designer column is dropped for width long before the game's name is in
-   trouble, so it falls back into the cell rather than vanishing. */
+
+/* What the Game column itself carries. Anything on the second line is hidden
+   piece by piece, so one rule set covers "year and designer", "designer only"
+   and the width fallback. */
+.gamecell .yr, .gamecell .meta,
+.gamecell .m-yr, .gamecell .m-sep, .gamecell .m-ds { display:none; }
+table.gm-year .gamecell .yr { display:inline; }
+table.gm-yeards .gamecell .meta, table.gm-ds .gamecell .meta { display:block; }
+table.gm-yeards .gamecell .m-yr, table.gm-yeards .gamecell .m-sep,
+table.gm-yeards .gamecell .m-ds, table.gm-ds .gamecell .m-ds { display:inline; }
+/* The designer column goes for width long before the name is in trouble, so
+   it falls back into the cell rather than vanishing. */
 @media (max-width:1180px) {
+  table:not(.off-ds) .gamecell .meta,
+  table:not(.off-ds) .gamecell .m-ds { display:inline; }
   table:not(.off-ds) .gamecell .meta { display:block; }
 }
 td.gamecell { min-width:0; }
@@ -533,14 +559,18 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <dt>BGG · Mine</dt><dd>BGG's average rating, and your own rating from
         your collection. Both are out of 10.</dd>
       <dt>Plays</dt><dd>Plays you have logged on BGG.</dd>
-      <dt>Game</dt><dd>The <b>Columns</b> picker decides what rides along with
-        the name: nothing, the year, or the year and the designer. Designer
-        also has a column of its own, and folds back under the name when the
-        window is too narrow to hold it.</dd>
+      <dt>Game</dt><dd>The columns button above the table, at the right,
+        decides what rides along with the name: nothing, the year, the
+        designer, or both. Whatever the name carries loses its own column.
+        Designer also folds back under the name when the window is too narrow
+        to hold its column.</dd>
       <dt>Last played</dt><dd>The most recent date in your BGG play log.</dd>
-      <dt>Acquired</dt><dd>When you got the game. BGG keeps this in the
-        private part of a collection entry, which an API token cannot read, so
-        it is blank here unless BGG starts returning it.</dd>
+      <dt>Added</dt><dd>When the collection entry last changed, which is the
+        day you added the game unless you have edited the entry since — the
+        only date BGG's API gives away about a collection entry.</dd>
+      <dt>Acquired · Price paid</dt><dd>Both live in the private part of a
+        collection entry, which an API token cannot read, so they are blank
+        unless BGG starts returning them.</dd>
       <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale, shown as a bar:
         green is light, red is heavy.</dd>
       <dt>Interact</dt><dd>How much the players' games touch each other —
@@ -569,8 +599,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <dt>Point salad</dt><dd>How many different things earn you points:
         no — a sharp focus, just a touch, quite a lot, or a total point
         salad.</dd>
-      <dt>Columns</dt><dd>Pick which columns are on. Acquired and Last played
-        start off; the choice is remembered in this browser.</dd>
+
       <dt>Properties</dt><dd>One field over everything a game is tagged with —
         BGG's categories, mechanics, families and designers, plus a few named
         groupings of mechanics — searchable by name or by description.
@@ -592,6 +621,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <p>Click any row to expand it. Pills inside filter the table to that
     designer, mechanic or game — except games you do not own, which link out
     to BGG.</p>
+    <p>The columns button at the right of the count line turns columns on and
+    off and says what the Game column carries; drag a column's header to move
+    it, and "Reset to default" puts everything back. Your choices are
+    remembered in this browser.</p>
     </section>
     </div>
 
@@ -610,21 +643,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       </select></div>
     <div class="f"><label for="exp">Expansions</label>
       <select id="exp"><!--__EXP_OPTIONS__--></select></div>
-    <div class="f" id="colsf"><label for="colsbtn">Columns</label>
-      <div class="sel colpick">
-        <button type="button" id="colsbtn" class="selbtn" aria-expanded="false"
-          ><span>Choose…</span></button>
-        <div class="sellist colmenu" hidden>
-          <p class="colhead">Game column</p>
-          <label><input type="radio" name="gamemode" value="name"> Game</label>
-          <label><input type="radio" name="gamemode" value="year" checked>
-            Game, Year</label>
-          <label><input type="radio" name="gamemode" value="designer">
-            Game, Year, Designer</label>
-          <p class="colhead">Columns</p>
-          <div id="collist"></div>
-        </div>
-      </div></div>
   </div>
   <details id="more">
     <summary>More filters</summary>
@@ -655,12 +673,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         <div class="pair"><input id="plmin" type="number" min="0" step="1"
           placeholder="0"><span>to</span><input id="plmax" type="number" min="0"
           step="1" placeholder="any"></div></div>
-      <div class="f"><label>Acquired</label>
-        <div class="pair"><input id="aqmin" type="date"><span>to</span>
-          <input id="aqmax" type="date"></div></div>
-      <div class="f"><label>Last played</label>
-        <div class="pair"><input id="lpmin" type="date"><span>to</span>
-          <input id="lpmax" type="date"></div></div>
       <div class="f"><label>Year</label>
         <div class="pair"><input id="ymin" type="number" min="1900" step="1"
           placeholder="any"><span>to</span><input id="ymax" type="number"
@@ -683,17 +695,40 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   </details>
 </div>
 
-<p class="resultline"><span id="count">__SHOWN__ rows</span><span
-  id="desc">__DESC__</span><span id="outcount" hidden></span></p>
+<div class="resultline"><span id="count">__SHOWN__ games</span><span
+  id="desc">__DESC__</span><span id="outcount" hidden></span>
+  <span class="colpick" id="colsf">
+    <button type="button" id="colsbtn" class="iconbtn" aria-expanded="false"
+      title="Choose columns" aria-label="Choose columns"
+      ><svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true"
+        ><path fill="currentColor" d="M1.5 2h3v12h-3V2Zm5 0h3v12h-3V2Zm5 0h3v12h-3V2Z"
+        /></svg></button>
+    <div class="colmenu" hidden>
+      <p class="colhead">Game column</p>
+      <label><input type="radio" name="gamemode" value="name"> Game</label>
+      <label><input type="radio" name="gamemode" value="year" checked>
+        Game, Year</label>
+      <label><input type="radio" name="gamemode" value="ds">
+        Game, Designer</label>
+      <label><input type="radio" name="gamemode" value="yeards">
+        Game, Year, Designer</label>
+      <p class="colhead">Columns <span class="colhint">drag a header to
+        reorder</span></p>
+      <div id="collist"></div>
+      <p class="colfoot"><button type="button" class="link" id="colsreset"
+        >Reset to default</button></p>
+    </div>
+  </span></div>
 
 <div class="scroll">
 <table class="__TABLECLASS__">
   <thead><tr>
-    <th class="thumb w-thumb"></th>
+    <th class="thumb c-th w-thumb" data-col="th">Cover</th>
     <th class="num hide-sm c-rk w-rank" data-k="rk" data-col="rk">Rank</th>
     <th class="num c-av w-hex" data-k="av" data-col="av">BGG</th>
     <th class="num c-my w-hex" data-k="my" data-col="my">Mine</th>
-    <th data-k="n">Game</th>
+    <th class="c-n" data-k="n" data-col="n">Game</th>
+    <th class="num c-y w-year" data-k="y" data-col="y">Year</th>
     <th class="hide-md c-ds w-designer" data-k="ds" data-col="ds">Designer</th>
     <th class="num hide-sm hide-s c-pl w-plays" data-k="pl" data-col="pl">Plays</th>
     <th class="num c-tmax w-time" data-k="tmax" data-col="tmax">Time</th>
@@ -701,6 +736,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="hide-sm hide-xs c-ix w-ix" data-k="ix" data-col="ix">Interact</th>
     <th class="num hide-sm c-acq w-date" data-k="acq" data-col="acq">Acquired</th>
     <th class="num hide-sm c-lp w-date" data-k="lp" data-col="lp">Last played</th>
+    <th class="num hide-sm c-add w-date" data-k="add" data-col="add">Added</th>
+    <th class="num hide-sm c-pp w-price" data-k="pp" data-col="pp">Price paid</th>
     <th class="hide-sm hide-lg c-win w-win" data-k="win" data-col="win">Win condition</th>
     <th class="hide-sm hide-lg c-breadth w-br" data-k="breadth" data-col="breadth">Point salad</th>
     <th class="num hide-sm c-verdict w-atn" data-k="verdict" data-col="verdict">__ATN__</th>
@@ -854,8 +891,7 @@ var F = {
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
   tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'),
   ymin: el('ymin'), ymax: el('ymax'),
-  aqmin: el('aqmin'), aqmax: el('aqmax'),
-  lpmin: el('lpmin'), lpmax: el('lpmax'), exp: el('exp')
+  exp: el('exp')
 };
 
 function applyDefaults() {
@@ -871,7 +907,7 @@ function applyDefaults() {
   tagRows.forEach(function (r) { r.firstChild.checked = false; });
   refreshTagList();
   ['smin', 'smax', 'mymin', 'mymax', 'wmin', 'wmax', 'tmin', 'tmax',
-   'plmin', 'plmax', 'ymin', 'ymax', 'aqmin', 'aqmax', 'lpmin', 'lpmax']
+   'plmin', 'plmax', 'ymin', 'ymax']
     .forEach(function (k) { F[k].value = ''; });
 }
 
@@ -936,9 +972,6 @@ function partition() {
   var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
   var ymin = num(F.ymin.value), ymax = num(F.ymax.value);
-  // ISO dates compare correctly as plain strings.
-  var aqmin = F.aqmin.value, aqmax = F.aqmax.value;
-  var lpmin = F.lpmin.value, lpmax = F.lpmax.value;
   var ix = F.ix.value, win = F.win.value, breadth = F.breadth.value;
   var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
@@ -966,10 +999,6 @@ function partition() {
       !(tmax !== null && !(or0(g.tmax) <= tmax)) &&
       !(plmin !== null && g.pl < plmin) && !(plmax !== null && g.pl > plmax) &&
       !(ymin !== null && !(g.y >= ymin)) && !(ymax !== null && !(g.y <= ymax)) &&
-      !(aqmin && !(g.acq && g.acq >= aqmin)) &&
-      !(aqmax && !(g.acq && g.acq <= aqmax)) &&
-      !(lpmin && !(g.lp && g.lp >= lpmin)) &&
-      !(lpmax && !(g.lp && g.lp <= lpmax)) &&
       (!n || qualifies(s, mode));
 
     if (pass) inside.push([i, s]);
@@ -1016,14 +1045,6 @@ function describe() {
   pair('tmin', 'tmax', 'time', ' min');
   pair('plmin', 'plmax', 'plays');
   pair('ymin', 'ymax', 'year');
-  var dates = function (lo, hi, label) {
-    var a = F[lo].value, b = F[hi].value;
-    if (!a && !b) return;
-    extra.push(label + (a && b ? ' ' + a + ' – ' + b
-                               : a ? ' since ' + a : ' before ' + b));
-  };
-  dates('aqmin', 'aqmax', 'acquired');
-  dates('lpmin', 'lpmax', 'last played');
   if (expMode === 'drop') extra.push('expansions ignored');
   // With a filter applied, "All games, X" is noise — the filter is the subject.
   if (head) return head + (extra.length ? ', ' + extra.join(', ') : '');
@@ -1190,9 +1211,13 @@ function render() {
 
   var games = 0;
   for (var k = 0; k < inside.length; k++) if (!DATA[inside[k][0]].exp) games++;
+  var exps = inside.length - games;
+  var plural = function (n, word) {
+    return n + ' ' + word + (n === 1 ? '' : 's');
+  };
   el('count').textContent = inside.length === 0 ? 'no matches'
-    : inside.length + ' row' + (inside.length === 1 ? '' : 's') +
-      (inside.length !== games ? ' (' + games + ' games)' : '');
+    : exps ? plural(games, 'game') + ' and ' + plural(exps, 'expansion')
+           : plural(games, 'game');
   el('desc').textContent = describe();
   // Name the poll column after the count it is reading: "At 4p".
   var atn = document.querySelector('th[data-k="verdict"]');
@@ -1588,6 +1613,9 @@ function scrollRowToTop(tr) {
 [].forEach.call(document.querySelectorAll('th[data-k]'), function (th) {
   th.addEventListener('click', function () {
     var k = th.getAttribute('data-k');
+    // Cover has no sort, and a click that is really the tail of a drag must
+    // not reorder the rows as well as the columns.
+    if (!k || Date.now() - draggedAt < 300) return;
     sortDesc = (k === sortKey) ? !sortDesc : false;
     sortKey = k;
     [].forEach.call(document.querySelectorAll('th'), function (o) {
@@ -1750,8 +1778,7 @@ function markFilters() {
     win: OPTS.win, breadth: OPTS.breadth, exp: OPTS.expansions,
     tagmode: 'all',
     smin: '', smax: '', mymin: '', mymax: '', wmin: '', wmax: '',
-    tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: '',
-    aqmin: '', aqmax: '', lpmin: '', lpmax: ''
+    tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: ''
   };
   Object.keys(F).forEach(function (k) {
     var input = F[k];
@@ -1785,22 +1812,27 @@ document.addEventListener('click', function (e) {
 });
 
 /* ---- column picker -------------------------------------------------- */
-/** Which columns exist, in header order, with the ones that start hidden.
- *  The poll trio and the two "Any"-only columns are still governed by the
- *  player count on top of this. */
+/** Every column that can be turned off, in the order they ship in. The poll
+ *  trio travels as one entry, and Game is not here: it is always on, and what
+ *  it carries is the separate "Game column" choice. */
 var COLUMNS = [
-  { k: 'rk', n: 'Rank' }, { k: 'av', n: 'BGG' }, { k: 'my', n: 'Mine' },
+  { k: 'th', n: 'Cover' }, { k: 'rk', n: 'Rank' }, { k: 'av', n: 'BGG' },
+  { k: 'my', n: 'Mine' }, { k: 'y', n: 'Year', off: true },
   { k: 'ds', n: 'Designer' }, { k: 'pl', n: 'Plays' },
-  { k: 'tmax', n: 'Time' }, { k: 'w', n: 'Weight' },
-  { k: 'ix', n: 'Interact' },
+  { k: 'tmax', n: 'Time' }, { k: 'w', n: 'Weight' }, { k: 'ix', n: 'Interact' },
   { k: 'acq', n: 'Acquired', off: true },
   { k: 'lp', n: 'Last played', off: true },
+  { k: 'add', n: 'Added', off: true },
+  { k: 'pp', n: 'Price paid', off: true },
   { k: 'win', n: 'Win condition' }, { k: 'breadth', n: 'Point salad' },
-  { k: 'verdict', n: 'At N / Best / Appr' },
-  { k: 'rt', n: 'Ratings' }
+  { k: 'verdict', n: 'At N / Best / Appr' }, { k: 'rt', n: 'Ratings' }
 ];
-var COLKEY = 'bgg-cols-v1';
-var colState = {}, gameMode = 'year';
+/* The order cells sit in, including the two columns that are never optional. */
+var DEFAULT_ORDER = ['th', 'rk', 'av', 'my', 'n', 'y', 'ds', 'pl', 'tmax', 'w',
+  'ix', 'acq', 'lp', 'add', 'pp', 'win', 'breadth', 'verdict', 'bestPct',
+  'appr', 'rt'];
+var COLKEY = 'bgg-cols-v2';
+var colState = {}, gameMode = 'year', colOrder = DEFAULT_ORDER.slice();
 
 function colDefaults() {
   var out = {};
@@ -1811,37 +1843,60 @@ function colDefaults() {
 function loadCols() {
   colState = colDefaults();
   try {
-    var raw = window.localStorage.getItem(COLKEY);
-    if (raw) {
-      var saved = JSON.parse(raw);
+    var saved = JSON.parse(window.localStorage.getItem(COLKEY) || 'null');
+    if (saved) {
       COLUMNS.forEach(function (c) {
         if (typeof saved.cols[c.k] === 'boolean') colState[c.k] = saved.cols[c.k];
       });
       if (saved.game) gameMode = saved.game;
+      if (saved.order && saved.order.length) {
+        // Keep only known keys, then append anything the saved order predates.
+        var seen = {};
+        colOrder = saved.order.filter(function (k) {
+          if (seen[k] || DEFAULT_ORDER.indexOf(k) < 0) return false;
+          seen[k] = 1;
+          return true;
+        });
+        DEFAULT_ORDER.forEach(function (k) { if (!seen[k]) colOrder.push(k); });
+      }
     }
   } catch (e) { /* private window, or storage off: defaults are fine */ }
 }
 
 function saveCols() {
   try {
-    window.localStorage.setItem(COLKEY,
-      JSON.stringify({ cols: colState, game: gameMode }));
+    window.localStorage.setItem(COLKEY, JSON.stringify(
+      { cols: colState, game: gameMode, order: colOrder }));
   } catch (e) { /* nothing to do about it */ }
+}
+
+/** Year and designer cannot be in two places at once: whatever the Game column
+ *  carries loses its own column, whatever the checkbox says. */
+function swallowedByGame(k) {
+  return (k === 'y' && (gameMode === 'year' || gameMode === 'yeards')) ||
+         (k === 'ds' && (gameMode === 'ds' || gameMode === 'yeards'));
 }
 
 function applyCols() {
   var cls = ['gm-' + gameMode];
-  COLUMNS.forEach(function (c) { if (!colState[c.k]) cls.push('off-' + c.k); });
-  // The poll trio travels together under one entry.
+  COLUMNS.forEach(function (c) {
+    if (!colState[c.k] || swallowedByGame(c.k)) cls.push('off-' + c.k);
+  });
   if (!colState.verdict) { cls.push('off-bestPct'); cls.push('off-appr'); }
   TABLE.setAttribute('data-cols', cls.join(' '));
   paintTableClass();
-  var on = COLUMNS.filter(function (c) { return colState[c.k]; }).length;
-  var cap = document.querySelector('#colsbtn span');
-  if (cap) cap.textContent = on + ' of ' + COLUMNS.length;
-  document.getElementById('colsf').classList.toggle('active',
-    on !== COLUMNS.filter(function (c) { return !c.off; }).length ||
-    gameMode !== 'year');
+  var on = COLUMNS.filter(function (c) {
+    return colState[c.k] && !swallowedByGame(c.k);
+  }).length;
+  var btn = document.getElementById('colsbtn');
+  if (btn) btn.title = on + ' of ' + COLUMNS.length + ' columns shown';
+  [].forEach.call(document.querySelectorAll('#collist label'), function (lab) {
+    var box = lab.firstChild;
+    var k = box.getAttribute('data-colkey');
+    lab.classList.toggle('locked', swallowedByGame(k));
+    lab.title = swallowedByGame(k)
+      ? 'Shown inside the Game column' : '';
+  });
 }
 
 /** The player-count swap and the picker both live in the table's class list. */
@@ -1850,12 +1905,105 @@ function paintTableClass() {
   TABLE.className = (n ? '' : 'mode-any ') + (TABLE.getAttribute('data-cols') || '');
 }
 
-function buildColMenu() {
+/** Put every row's cells in the chosen order. appendChild moves nodes, so one
+ *  pass per row is enough; 265 rows of this is a few milliseconds and only
+ *  happens when a header is actually dropped somewhere new. */
+function applyOrder() {
+  function sortRow(tr) {
+    var byKey = {};
+    [].forEach.call(tr.children, function (td) {
+      var k = td.getAttribute('data-col');
+      if (k) byKey[k] = td;
+    });
+    colOrder.forEach(function (k) { if (byKey[k]) tr.appendChild(byKey[k]); });
+  }
+  sortRow(document.querySelector('thead tr'));
+  ROWS.forEach(function (tr) { if (tr) sortRow(tr); });
+}
+
+function resetCols() {
+  colState = colDefaults();
+  gameMode = 'year';
+  colOrder = DEFAULT_ORDER.slice();
+  saveCols();
+  buildColList();
+  applyOrder();
+  applyCols();
+  closeDetail();
+}
+
+function buildColList() {
   var box = document.getElementById('collist');
-  box.innerHTML = COLUMNS.map(function (c) {
-    return '<label><input type="checkbox" data-colkey="' + c.k + '"' +
-      (colState[c.k] ? ' checked' : '') + '> ' + esc(c.n) + '</label>';
-  }).join('');
+  // The menu lists columns in the order they appear in the table.
+  var byKey = {};
+  COLUMNS.forEach(function (c) { byKey[c.k] = c; });
+  box.innerHTML = colOrder.filter(function (k) { return byKey[k]; })
+    .map(function (k) {
+      return '<label><input type="checkbox" data-colkey="' + k + '"' +
+        (colState[k] ? ' checked' : '') + '> ' + esc(byKey[k].n) + '</label>';
+    }).join('');
+  [].forEach.call(document.querySelectorAll('input[name="gamemode"]'),
+    function (r) { r.checked = r.value === gameMode; });
+}
+
+/* Dragging a header to move its column. */
+var dragKey = null, draggedAt = 0;
+
+function markDrop(th, before) {
+  [].forEach.call(document.querySelectorAll('th'), function (o) {
+    o.classList.remove('dropbefore');
+    o.classList.remove('dropafter');
+  });
+  if (th) th.classList.add(before ? 'dropbefore' : 'dropafter');
+}
+
+function wireDrag() {
+  [].forEach.call(document.querySelectorAll('thead th'), function (th) {
+    th.setAttribute('draggable', 'true');
+    th.addEventListener('dragstart', function (e) {
+      dragKey = th.getAttribute('data-col');
+      th.classList.add('dragging');
+      if (e.dataTransfer) {
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', dragKey);
+      }
+    });
+    th.addEventListener('dragover', function (e) {
+      if (!dragKey) return;
+      e.preventDefault();
+      var r = th.getBoundingClientRect();
+      markDrop(th, e.clientX < r.left + r.width / 2);
+    });
+    th.addEventListener('drop', function (e) {
+      if (!dragKey) return;
+      e.preventDefault();
+      var target = th.getAttribute('data-col');
+      var r = th.getBoundingClientRect();
+      var before = e.clientX < r.left + r.width / 2;
+      if (target && target !== dragKey) {
+        colOrder.splice(colOrder.indexOf(dragKey), 1);
+        var at = colOrder.indexOf(target) + (before ? 0 : 1);
+        colOrder.splice(at, 0, dragKey);
+        saveCols();
+        applyOrder();
+        buildColList();
+      }
+      markDrop(null);
+    });
+    th.addEventListener('dragend', function () {
+      th.classList.remove('dragging');
+      markDrop(null);
+      dragKey = null;
+      // A drag ends with a click event on some browsers; swallow it so the
+      // column does not also get sorted.
+      draggedAt = Date.now();
+    });
+  });
+}
+
+function buildColMenu() {
+  buildColList();
+  var box = document.getElementById('collist');
   box.addEventListener('change', function (e) {
     var k = e.target.getAttribute('data-colkey');
     if (!k) return;
@@ -1866,7 +2014,6 @@ function buildColMenu() {
   });
   [].forEach.call(document.querySelectorAll('input[name="gamemode"]'),
     function (r) {
-      r.checked = r.value === gameMode;
       r.addEventListener('change', function () {
         if (!r.checked) return;
         gameMode = r.value;
@@ -1874,24 +2021,30 @@ function buildColMenu() {
         applyCols();
       });
     });
+  document.getElementById('colsreset').addEventListener('click', resetCols);
   var btn = document.getElementById('colsbtn');
   var menu = document.querySelector('.colmenu');
+  var wrap = document.getElementById('colsf');
   btn.addEventListener('click', function (e) {
     e.stopPropagation();
     var open = menu.hidden;
     closeAll(null);
     menu.hidden = !open;
+    wrap.classList.toggle('open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
   menu.addEventListener('click', function (e) { e.stopPropagation(); });
   document.addEventListener('click', function () {
     menu.hidden = true;
+    wrap.classList.remove('open');
     btn.setAttribute('aria-expanded', 'false');
   });
+  wireDrag();
 }
 
 loadCols();
 buildColMenu();
+applyOrder();
 applyCols();
 applyDefaults();
 refreshTagList();

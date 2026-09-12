@@ -113,6 +113,7 @@ def compact(games, tag_idx, inline=True):
             "pl": g["plays"], "ds": g["designers"],
             "dsid": g.get("designer_ids") or {},
             "lp": g.get("last_played"), "acq": g.get("acquired"),
+            "pp": g.get("price_paid"), "add": g.get("added"),
             "rt": g["ratings"], "ow": g["owners"],
             "de": (g["description"] or "")[:900],
             "mn": g["minplayers"], "mx": g["maxplayers"],
@@ -453,27 +454,34 @@ def rows_html(data, a):
 
         out.append(
             f'<tr class="game-row" data-i="{i}" data-search="{search}"{"" if shown else " hidden"}>'
-            f'<td class="thumb">{thumb}</td>'
-            f'<td class="num hide-sm c-rk">{rank}</td>'
-            f'<td class="score c-av">{bgg_hex(g)}</td>'
-            f'<td class="score mine-col c-my">{mine_hex(g)}</td>'
-            f'<td class="gamecell">'
+            f'<td class="thumb c-th" data-col="th">{thumb}</td>'
+            f'<td class="num hide-sm c-rk" data-col="rk">{rank}</td>'
+            f'<td class="score c-av" data-col="av">{bgg_hex(g)}</td>'
+            f'<td class="score mine-col c-my" data-col="my">{mine_hex(g)}</td>'
+            f'<td class="gamecell c-n" data-col="n">'
             f'<span class="game">{esc(g["n"])}</span> '
             f'<span class="yr">{g["y"] or ""}</span>{badges}{inline}'
-            f'<span class="meta">{who_short}</span></td>'
-            f'<td class="hide-md designer c-ds">{designer}</td>'
-            f'<td class="num hide-sm hide-s c-pl">{g["pl"]}</td>'
-            f'<td class="num c-tmax">{esc(g["t"])}</td>'
-            f'<td class="num bar hide-sm hide-xs c-w">{weight}</td>'
-            f'<td class="hide-sm hide-xs c-ix">{ix_html}</td>'
-            f'<td class="num hide-sm c-acq">{g.get("acq") or EM_DASH}</td>'
-            f'<td class="num hide-sm c-lp">{g.get("lp") or EM_DASH}</td>'
-            f'<td class="hide-sm hide-lg c-win">{win_html}</td>'
-            f'<td class="hide-sm hide-lg c-breadth">{br_html}</td>'
-            f'<td class="num hide-sm c-verdict j-verdict">{v}</td>'
-            f'<td class="num bar hide-sm wide-only c-bestPct j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
-            f'<td class="num bar hide-sm c-appr j-appr">{bar(s["appr"]) if s else EM_DASH}</td>'
-            f'<td class="num hide-sm c-rt" title="{g["rt"] or 0} BGG ratings">'
+            f'<span class="meta"><span class="m-yr">{g["y"] or ""}</span>'
+            f'<span class="m-sep"> · </span>'
+            f'<span class="m-ds">{who_short}</span></span></td>'
+            f'<td class="num c-y" data-col="y">{g["y"] or EM_DASH}</td>'
+            f'<td class="hide-md designer c-ds" data-col="ds">{designer}</td>'
+            f'<td class="num hide-sm hide-s c-pl" data-col="pl">{g["pl"]}</td>'
+            f'<td class="num c-tmax" data-col="tmax">{esc(g["t"])}</td>'
+            f'<td class="num bar hide-sm hide-xs c-w" data-col="w">{weight}</td>'
+            f'<td class="hide-sm hide-xs c-ix" data-col="ix">{ix_html}</td>'
+            f'<td class="num hide-sm c-acq" data-col="acq">{g.get("acq") or EM_DASH}</td>'
+            f'<td class="num hide-sm c-lp" data-col="lp">{g.get("lp") or EM_DASH}</td>'
+            f'<td class="num hide-sm c-add" data-col="add">{g.get("add") or EM_DASH}</td>'
+            f'<td class="num hide-sm c-pp" data-col="pp">{esc(g.get("pp") or EM_DASH)}</td>'
+            f'<td class="hide-sm hide-lg c-win" data-col="win">{win_html}</td>'
+            f'<td class="hide-sm hide-lg c-breadth" data-col="breadth">{br_html}</td>'
+            f'<td class="num hide-sm c-verdict j-verdict" data-col="verdict">{v}</td>'
+            f'<td class="num bar hide-sm wide-only c-bestPct j-best" data-col="bestPct">'
+            f'{bar(s["bestPct"]) if s else EM_DASH}</td>'
+            f'<td class="num bar hide-sm c-appr j-appr" data-col="appr">'
+            f'{bar(s["appr"]) if s else EM_DASH}</td>'
+            f'<td class="num hide-sm c-rt" data-col="rt" title="{g["rt"] or 0} BGG ratings">'
             f'{fmt_count(g["rt"])}</td>'
             f'</tr>')
     shown = sum(1 for o in out if not o.startswith(tuple()) and " hidden>" not in o)

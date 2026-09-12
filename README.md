@@ -24,9 +24,9 @@ on every push.
 One self-contained HTML file holding the whole collection, filtered in the
 browser:
 
-- **Columns** you choose, remembered per browser — including *Last played*
-  from your BGG play log, and what the game column carries (name, name and
-  year, or name, year and designer)
+- **Columns** you choose and reorder by dragging a header, remembered per
+  browser — including *Last played* from your BGG play log, and what the game
+  column carries (name alone, or with the year, the designer, or both)
 - **Player count** with three rules — plays at N, *good* at N, or *best* at N,
   read from BGG's own `suggested_numplayers` poll
 - **Expansions** folded in: an owned expansion can qualify its base game at a

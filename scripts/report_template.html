@@ -44,8 +44,8 @@ h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 .titlebar .sub { margin:0; font-size:.9rem; }
 .titlebar details { margin-left:auto; }
 .panel { padding:10px 0 8px; margin-top:6px; }
-.row { display:flex; gap:10px 14px; align-items:flex-end; flex-wrap:wrap; }
-.row + .row { margin-top:10px; }
+.row { display:flex; gap:10px 26px; align-items:flex-end; flex-wrap:wrap; }
+.row + .row { margin-top:20px; }
 .f { display:flex; flex-direction:column; gap:3px; }
 .f > label { font-size:.68rem; text-transform:uppercase; letter-spacing:.06em;
   color:var(--muted); font-weight:600; }
@@ -82,7 +82,16 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
   font-size:.84rem; white-space:nowrap; }
 .sellist li[aria-selected="true"] { font-weight:700; }
 .sellist li.active, .sellist li:hover { background:var(--bg); }
-.tagpicked { font-size:.8rem; color:var(--accent); align-self:center; }
+.tagpicked { font-size:.8rem; color:var(--accent); align-self:baseline;
+  padding-bottom:7px; }
+#tagclear { font-weight:700; font-size:.82rem; text-decoration:none;
+  align-self:baseline; padding:0 0 7px; }
+#tagclear:hover { color:var(--ink); }
+/* A filter that is not at its default announces itself, so a surprising row
+   count has a visible cause. */
+.f.active > label { color:var(--ink); font-weight:700; }
+.f.active .selbtn, .f.active input { font-weight:700; }
+.sel.off .selbtn { opacity:.45; pointer-events:none; }
 /* 213 tags will not lay out flat, so the list scrolls and the search narrows
    it. Each row carries its description: "Follow" or "Rondel" mean nothing
    unless you already know them. */
@@ -183,8 +192,11 @@ tbody tr:hover { background:var(--panel); }
 img.thumb { width:44px; height:44px; object-fit:contain; border-radius:7px;
   display:block; background:var(--tile); padding:2px; }
 td.thumb { width:44px; padding-right:0; }
-a.game { color:var(--ink); text-decoration:none; font-weight:600; }
+.game { color:var(--ink); font-weight:600; }
+a.game { text-decoration:none; }
 a.game:hover { color:var(--accent); text-decoration:underline; }
+.chip .n { color:var(--muted); font-variant-numeric:tabular-nums; }
+.chip .ext { opacity:.6; }
 .yr { color:var(--muted); font-weight:400; font-size:.85em; }
 /* Every categorical cell — the player-count verdict, interaction, salad
    — uses one pill, at one size, a little smaller than the numbers beside it.
@@ -343,7 +355,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .panel { position:static; padding-top:10px; }
   .wrap { padding-left:12px; padding-right:12px; }
   h1 { font-size:1.3rem; }
-  .row { gap:8px 10px; }
+  .row { gap:8px 14px; }
+  .row + .row { margin-top:14px; }
   .titlebar { row-gap:0; }
   .titlebar h1 { margin-bottom:0; }
   /* Two filters per line instead of one, to keep the panel short. */
@@ -431,7 +444,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         <input id="votes" type="number" min="0" step="5" value="__MINVOTES__"></div>
     </div>
     <div class="row">
-      <div class="f"><label for="tagsearch">Filter by trait, category, mechanic, designer…</label>
+      <div class="f"><label for="tagsearch">Filter by properties</label>
         <input id="tagsearch" type="search" placeholder="Search 710 properties…"
                autocomplete="off"></div>
       <div class="f"><label for="tagmode">Match</label>
@@ -441,6 +454,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
           <option value="none">none of the ticked</option>
         </select></div>
       <span id="tagpicked" class="tagpicked"></span>
+      <button class="link" id="tagclear" type="button" hidden>Clear</button>
     </div>
     <div id="tagbox" class="tagbox"></div>
   </details>
@@ -592,6 +606,7 @@ function applyTagVisibility() {
   tagEmpty.hidden = shown > 0;
   var n = pickedTags().length;
   document.getElementById('tagpicked').textContent = n ? n + ' selected' : '';
+  document.getElementById('tagclear').hidden = !n;
 }
 
 function refreshTagList() {
@@ -917,6 +932,7 @@ function render() {
     : inside.length + ' row' + (inside.length === 1 ? '' : 's') +
       (inside.length !== games ? ' (' + games + ' games)' : '');
   el('desc').textContent = describe();
+  markFilters();
   recountTags(inside.map(function (r) { return r[0]; }));
 
   var oc = el('outcount');
@@ -1005,7 +1021,8 @@ function buildDetail(g) {
     if (!idxs.length) return '';
     return '<div class="chips">' + idxs.map(function (i) {
       return '<button type="button" class="chip ' + cls + '" data-tag="' + i +
-        '" title="Filter by this">' + esc(TAGS[i].n) + '</button>';
+        '" title="Filter by this">' + esc(TAGS[i].n) +
+        ' <span class="n">' + TAGS[i].c + '</span></button>';
     }).join('') + '</div>';
   }
   var players = g.mn === g.mx ? g.mn + ' players' : g.mn + '–' + g.mx + ' players';
@@ -1083,10 +1100,16 @@ function opinionBlock(g) {
   }
   var sim = (ai.sim || []).map(function (n) {
     var i = OWNED[n.toLowerCase()];
-    return i === undefined
-      ? '<span class="chip">' + esc(n) + '</span>'
-      : '<button type="button" class="chip owned" data-game="' + i +
-        '" title="You own this — open it">' + esc(n) + '</button>';
+    if (i === undefined) {
+      // Not in the collection: nothing to filter to, so send them to BGG.
+      return '<a class="chip" target="_blank" rel="noopener" ' +
+        'href="https://boardgamegeek.com/geeksearch.php?action=search' +
+        '&objecttype=boardgame&q=' + encodeURIComponent(n) +
+        '" title="Not in your collection — look it up on BGG">' + esc(n) +
+        ' <span class="ext">↗</span></a>';
+    }
+    return '<button type="button" class="chip owned" data-game="' + i +
+      '" title="You own this — filter to it">' + esc(n) + '</button>';
   }).join('');
   var fromWeb = ai.src === 'web';
   var head = fromDesc
@@ -1179,15 +1202,19 @@ TBODY.addEventListener('click', function (e) {
   var gameBtn = e.target.closest('[data-game]');
   if (gameBtn) {
     e.stopPropagation();
-    var target = TBODY.querySelector(
-      'tr[data-i="' + gameBtn.getAttribute('data-game') + '"]');
+    // Filter down to that game, then open it — the same gesture as clicking a
+    // tag, so the table always reflects what you just asked for.
+    var gi = +gameBtn.getAttribute('data-game');
+    closeDetail();
+    applyDefaults();
+    el('q').value = DATA[gi].n;
+    syncSelects();
+    refreshTagList();
+    render();
+    var target = TBODY.querySelector('tr[data-i="' + gi + '"]');
     if (target && !target.hidden) {
-      closeDetail();
       target.click();
       target.scrollIntoView({ block: 'center' });
-    } else {
-      el('q').value = DATA[+gameBtn.getAttribute('data-game')].n;
-      el('q').dispatchEvent(new Event('input'));
     }
     return;
   }
@@ -1234,6 +1261,11 @@ Object.keys(F).forEach(function (k) {
   F[k].addEventListener('change', render);
 });
 tagBox.addEventListener('change', function () { refreshTagList(); render(); });
+el('tagclear').addEventListener('click', function () {
+  tagRows.forEach(function (r) { r.firstChild.checked = false; });
+  refreshTagList();
+  render();
+});
 document.getElementById('tagsearch')
   .addEventListener('input', refreshTagList);
 el('reset').addEventListener('click', function () {
@@ -1334,6 +1366,20 @@ function enhanceSelect(sel) {
   wrap.appendChild(list);
   sel.addEventListener('change', sync);
   sync();
+
+  // Size to the longest option once, so choosing a shorter one does not make
+  // the control — and everything after it on the row — jump leftwards.
+  var widest = 0;
+  var probe = document.createElement('span');
+  probe.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;';
+  probe.style.font = getComputedStyle(btn).font;
+  document.body.appendChild(probe);
+  [].forEach.call(sel.options, function (o) {
+    probe.textContent = o.text;
+    widest = Math.max(widest, probe.getBoundingClientRect().width);
+  });
+  probe.parentNode.removeChild(probe);
+  btn.style.width = Math.ceil(widest) + 42 + 'px';
   wrap._close = function () { open(false); };
   wrap._sync = sync;
   return wrap;
@@ -1348,6 +1394,37 @@ function closeAll(except) {
  *  fires no event for the button caption to listen to. */
 function syncSelects() {
   enhanced.forEach(function (w) { if (w._sync) w._sync(); });
+}
+
+/** Reflect filter state in the chrome: which controls are off their default,
+ *  and whether Rule means anything at all. */
+function markFilters() {
+  var defaults = {
+    q: '', players: String(OPTS.players), mode: OPTS.mode, ix: '',
+    win: OPTS.win, breadth: OPTS.breadth, exp: OPTS.expansions,
+    votes: String(OPTS.minVotes), tagmode: 'all',
+    smin: '', smax: '', mymin: '', mymax: '', wmin: '', wmax: '',
+    tmin: '', tmax: '', plmin: '', plmax: ''
+  };
+  Object.keys(F).forEach(function (k) {
+    var input = F[k];
+    if (!input) return;
+    var box = input.closest('.f');
+    if (!box) return;
+    var off = String(input.value) !== String(defaults[k]);
+    if (off) box.classList.add('active'); else box.classList.remove('active');
+  });
+  // Without a player count there is no count to be best or good at.
+  var anyPlayers = +F.players.value === 0;
+  var ruleBox = F.mode.closest('.f');
+  F.mode.disabled = anyPlayers;
+  var wrap = F.mode.parentNode;
+  if (wrap.classList.contains('sel')) {
+    wrap.classList.toggle('off', anyPlayers);
+    var cap = wrap.querySelector('.selbtn span');
+    if (cap) cap.textContent = anyPlayers ? 'N/A' : F.mode.options[F.mode.selectedIndex].text;
+  }
+  if (anyPlayers) ruleBox.classList.remove('active');
 }
 [].forEach.call(document.querySelectorAll('.panel select'), function (sel) {
   enhanced.push(enhanceSelect(sel));

@@ -53,10 +53,8 @@ Babylonia                  : salad>=touch
 # A wargame is not won on money.
 Sekigahara: The Unification of Japan : win!=money
 
-# Interaction is weighed from facts too: a shared board you can block on is
-# never "Low", however parallel the scoring feels.
-The Quest for El Dorado     : ix>=Medium
-Mille Fiori                 : ix>=Medium
-Ingenious 3D                : ix>=Medium
-Tigris & Euphrates          : ix=High
-Ark Nova                    : ix<=Low
+# Interaction is judged by the opinion pass, not computed, so there is nothing
+# here to check. Weighing it from facts was tried and reverted: it turned Ra,
+# High Society and Medici — auctions, where bidding against each other is the
+# whole game — into "Low", because they have no shared board to block on. See
+# the note at the top of scripts/scoring.py.

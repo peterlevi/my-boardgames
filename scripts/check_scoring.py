@@ -11,7 +11,7 @@ person who has played these games.
 import sys
 
 from common import ROOT, load_games
-from scoring import IX_ORDER, SALAD_ORDER, interaction, salad, win, wins
+from scoring import SALAD_ORDER, salad, win, wins
 
 FILE = ROOT / "tests" / "expectations.txt"
 
@@ -25,7 +25,7 @@ def parse():
         name, rest = line.split(":", 1)
         # Game names contain colons, so split on the last one before a key.
         while rest and not any(rest.strip().startswith(k)
-                               for k in ("salad", "win", "ix")):
+                               for k in ("salad", "win")):
             head, _, rest = rest.partition(":")
             name = f"{name}:{head}"
         checks = {}
@@ -59,13 +59,11 @@ def main():
             continue
         facts = (g.get("ai") or {}).get("scoring") or {}
         got = {"salad": salad(facts), "win": win(facts),
-               "wins": wins(facts), "ix": interaction(g.get("ai"))}
+               "wins": wins(facts)}
         for key, (op, val) in checks.items():
             if key == "win":
                 ways = got["wins"]
                 good = (val not in ways) if op == "!=" else (val in ways)
-            elif key == "ix":
-                good = ok(op, got["ix"], val, IX_ORDER)
             else:
                 good = ok(op, got[key], val)
             if good:

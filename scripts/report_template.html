@@ -82,10 +82,12 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
   font-size:.84rem; white-space:nowrap; }
 .sellist li[aria-selected="true"] { font-weight:700; }
 .sellist li.active, .sellist li:hover { background:var(--bg); }
-.tagpicked { font-size:.8rem; color:var(--accent); align-self:baseline;
-  padding-bottom:7px; }
+/* flex-end, not baseline: the row's baseline is the labels' line, which sat
+   these two above the controls instead of alongside them. */
+.tagpicked { font-size:.8rem; color:var(--accent); align-self:flex-end;
+  padding-bottom:8px; }
 #tagclear { font-weight:700; font-size:.82rem; text-decoration:none;
-  align-self:baseline; padding:0 0 7px; }
+  align-self:flex-end; padding:0 0 8px; }
 #tagclear:hover { color:var(--ink); }
 /* A filter that is not at its default announces itself, so a surprising row
    count has a visible cause. */

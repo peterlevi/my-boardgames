@@ -112,6 +112,7 @@ def compact(games, tag_idx, inline=True):
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
             "pl": g["plays"], "ds": g["designers"],
             "dsid": g.get("designer_ids") or {},
+            "lp": g.get("last_played"), "acq": g.get("acquired"),
             "rt": g["ratings"], "ow": g["owners"],
             "de": (g["description"] or "")[:900],
             "mn": g["minplayers"], "mx": g["maxplayers"],
@@ -159,8 +160,8 @@ BREADTH_SHORT = {
 }
 # Column headings must be short; the full phrase stays in the filter.
 WIN_SHORT = {
-    "Most points, many sources": "Points, many",
-    "Most points, one or two sources": "Points, few",
+    "Most points, many sources": "Points, many sources",
+    "Most points, one or two sources": "Points, few sources",
     "Most money": "Money", "Race to a finish": "Race",
     "Lowest-highest scoring": "Low-high",
     "Special win condition": "Special", "Cooperative goal": "Co-op goal",
@@ -442,12 +443,10 @@ def rows_html(data, a):
         designer = (f'<span title="{esc(", ".join(who))}">{esc(who[0])}'
                     + (f' <span class="more">+{len(who) - 1}</span>'
                        if len(who) > 1 else '') + '</span>') if who else EM_DASH
-        # Year and designer have their own columns on a wide screen and fold
-        # into a second line under the name when those columns are dropped.
-        meta = " · ".join(x for x in (str(g["y"] or ""),
-                                      ", ".join(who[:2]) + (f' +{len(who) - 2}'
-                                                            if len(who) > 2 else ""))
-                          if x)
+        # The designer also rides in the game cell, for the "Game, Year,
+        # Designer" column choice and for widths that drop the column.
+        who_short = (esc(", ".join(who[:2]))
+                     + (f' +{len(who) - 2}' if len(who) > 2 else "")) if who else ""
         rank = g["rk"] if g["rk"] else EM_DASH
         inline = f'<span class="vinline">{v}</span>' if n else ""
         search = esc(f'{g["n"]} {g["y"] or ""}'.lower())
@@ -455,24 +454,26 @@ def rows_html(data, a):
         out.append(
             f'<tr class="game-row" data-i="{i}" data-search="{search}"{"" if shown else " hidden"}>'
             f'<td class="thumb">{thumb}</td>'
-            f'<td class="num hide-sm">{rank}</td>'
-            f'<td class="score">{bgg_hex(g)}</td>'
-            f'<td class="score mine-col">{mine_hex(g)}</td>'
+            f'<td class="num hide-sm c-rk">{rank}</td>'
+            f'<td class="score c-av">{bgg_hex(g)}</td>'
+            f'<td class="score mine-col c-my">{mine_hex(g)}</td>'
             f'<td class="gamecell">'
-            f'<span class="game">{esc(g["n"])}</span>{badges}{inline}'
-            f'<span class="meta">{meta}</span></td>'
-            f'<td class="num hide-md w-year-col">{g["y"] or EM_DASH}</td>'
-            f'<td class="hide-md designer">{designer}</td>'
-            f'<td class="num hide-sm hide-s">{g["pl"]}</td>'
-            f'<td class="num">{esc(g["t"])}</td>'
-            f'<td class="num bar hide-sm hide-xs">{weight}</td>'
-            f'<td class="hide-sm hide-xs">{ix_html}</td>'
+            f'<span class="game">{esc(g["n"])}</span> '
+            f'<span class="yr">{g["y"] or ""}</span>{badges}{inline}'
+            f'<span class="meta">{who_short}</span></td>'
+            f'<td class="hide-md designer c-ds">{designer}</td>'
+            f'<td class="num hide-sm hide-s c-pl">{g["pl"]}</td>'
+            f'<td class="num c-tmax">{esc(g["t"])}</td>'
+            f'<td class="num bar hide-sm hide-xs c-w">{weight}</td>'
+            f'<td class="hide-sm hide-xs c-ix">{ix_html}</td>'
+            f'<td class="num hide-sm c-acq">{g.get("acq") or EM_DASH}</td>'
+            f'<td class="num hide-sm c-lp">{g.get("lp") or EM_DASH}</td>'
             f'<td class="hide-sm hide-lg c-win">{win_html}</td>'
-            f'<td class="hide-sm hide-lg c-br">{br_html}</td>'
-            f'<td class="num hide-sm c-atn j-verdict">{v}</td>'
-            f'<td class="num bar hide-sm wide-only c-best j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
+            f'<td class="hide-sm hide-lg c-breadth">{br_html}</td>'
+            f'<td class="num hide-sm c-verdict j-verdict">{v}</td>'
+            f'<td class="num bar hide-sm wide-only c-bestPct j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
             f'<td class="num bar hide-sm c-appr j-appr">{bar(s["appr"]) if s else EM_DASH}</td>'
-            f'<td class="num hide-sm" title="{g["rt"] or 0} BGG ratings">'
+            f'<td class="num hide-sm c-rt" title="{g["rt"] or 0} BGG ratings">'
             f'{fmt_count(g["rt"])}</td>'
             f'</tr>')
     shown = sum(1 for o in out if not o.startswith(tuple()) and " hidden>" not in o)

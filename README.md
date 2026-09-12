@@ -24,6 +24,9 @@ on every push.
 One self-contained HTML file holding the whole collection, filtered in the
 browser:
 
+- **Columns** you choose, remembered per browser — including *Last played*
+  from your BGG play log, and what the game column carries (name, name and
+  year, or name, year and designer)
 - **Player count** with three rules — plays at N, *good* at N, or *best* at N,
   read from BGG's own `suggested_numplayers` poll
 - **Expansions** folded in: an owned expansion can qualify its base game at a
@@ -205,6 +208,7 @@ python3 scripts/report.py -o reports/collection.html
 scripts/sync.py        runs the whole pipeline below, in order
 
 scripts/fetch.py       BGG XML API       -> data/raw/           (network)
+scripts/plays.py       BGG XML API       -> data/plays.json     (network)
 scripts/thumbs.py      BGG image CDN     -> data/thumbs/*.jpg   (network)
 scripts/gallery.py     geekdo gallery    -> data/gallery/*.json (network)
 scripts/build.py       data/raw          -> data/games.json     (offline)

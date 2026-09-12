@@ -140,6 +140,18 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 /* 213 tags will not lay out flat, so the list scrolls and the search narrows
    it. Each row carries its description: "Follow" or "Rondel" mean nothing
    unless you already know them. */
+/* The column picker reuses the styled-select shell, but its panel is a list
+   of checkboxes rather than options. */
+.colpick .selbtn { min-width:112px; }
+.colmenu { padding:8px 4px; max-height:60vh; overflow-y:auto; min-width:210px; }
+.colmenu label { display:flex; align-items:center; gap:8px; padding:5px 10px;
+  border-radius:6px; cursor:pointer; font-size:.85rem; white-space:nowrap; }
+.colmenu label:hover { background:var(--bg); }
+.colmenu input { margin:0; }
+.colhead { margin:6px 10px 3px; font-size:.66rem; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--muted); }
+.colhead:first-child { margin-top:2px; }
+
 .tagbox { max-height:208px; overflow-y:auto; margin-top:8px;
   border:1px solid var(--line); border-radius:8px; background:var(--panel);
   padding:4px; }
@@ -170,14 +182,8 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 .tagbox .none { padding:10px; color:var(--muted); }
 td.designer { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
   font-size:.82rem; }
-/* Year and designer live in their own columns until those are dropped for
-   width, at which point they reappear as a second line under the name —
-   the information stays, it just stops costing two columns. */
-.gamecell .meta { display:none; font-size:.78rem; color:var(--muted);
-  margin-top:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-@media (max-width:1180px) {
-  .gamecell .meta { display:block; }
-}
+.gamecell .meta { font-size:.78rem; color:var(--muted); margin-top:2px;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 td.designer .more { color:var(--muted); }
 .pair span { color:var(--muted); font-size:.85rem; }
 /* The only thing pinned while scrolling: the count, what it is counting, and
@@ -226,15 +232,32 @@ th.w-thumb { width:52px; } th.w-rank { width:56px; }
 th.w-hex { width:54px; } th.w-plays { width:58px; }
 th.w-time { width:72px; } th.w-weight { width:70px; }
 th.w-ix { width:86px; } th.w-designer { width:150px; }
-th.w-year { width:64px; }
+th.w-date { width:106px; }
 th.w-atn { width:64px; } th.w-pct { width:66px; }
 th.w-ratings { width:74px; }
 th.w-win { width:124px; } th.w-br { width:104px; }
 /* The poll columns read a player count, so with the count at "Any" all three
    are dashes. The table swaps them for the two fields that always have a
    value — what wins the game, and how broadly it scores. */
-table.mode-any .c-atn, table.mode-any .c-best, table.mode-any .c-appr,
-table:not(.mode-any) .c-win, table:not(.mode-any) .c-br { display:none; }
+table.mode-any .c-verdict, table.mode-any .c-bestPct, table.mode-any .c-appr,
+table:not(.mode-any) .c-win, table:not(.mode-any) .c-breadth { display:none; }
+/* The column picker. One class per hidden column on the table beats setting
+   display on 265 rows' worth of cells. */
+table.off-rk .c-rk, table.off-av .c-av, table.off-my .c-my,
+table.off-ds .c-ds, table.off-pl .c-pl, table.off-tmax .c-tmax,
+table.off-w .c-w, table.off-ix .c-ix, table.off-acq .c-acq,
+table.off-lp .c-lp, table.off-win .c-win, table.off-breadth .c-breadth,
+table.off-verdict .c-verdict, table.off-bestPct .c-bestPct,
+table.off-appr .c-appr, table.off-rt .c-rt { display:none; }
+/* What the Game column itself carries. */
+.gamecell .yr, .gamecell .meta { display:none; }
+table.gm-year .gamecell .yr, table.gm-designer .gamecell .yr { display:inline; }
+table.gm-designer .gamecell .meta { display:block; }
+/* The designer column is dropped for width long before the game's name is in
+   trouble, so it falls back into the cell rather than vanishing. */
+@media (max-width:1180px) {
+  table:not(.off-ds) .gamecell .meta { display:block; }
+}
 td.gamecell { min-width:0; }
 a.game { overflow-wrap:anywhere; }
 th, td { padding:8px 9px; text-align:left; border-bottom:1px solid var(--line);
@@ -510,9 +533,14 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <dt>BGG · Mine</dt><dd>BGG's average rating, and your own rating from
         your collection. Both are out of 10.</dd>
       <dt>Plays</dt><dd>Plays you have logged on BGG.</dd>
-      <dt>Game · Year · Designer</dt><dd>Three columns on a wide screen; when
-        the window cannot hold them, year and designer fold into a second line
-        under the game's name rather than disappearing.</dd>
+      <dt>Game</dt><dd>The <b>Columns</b> picker decides what rides along with
+        the name: nothing, the year, or the year and the designer. Designer
+        also has a column of its own, and folds back under the name when the
+        window is too narrow to hold it.</dd>
+      <dt>Last played</dt><dd>The most recent date in your BGG play log.</dd>
+      <dt>Acquired</dt><dd>When you got the game. BGG keeps this in the
+        private part of a collection entry, which an API token cannot read, so
+        it is blank here unless BGG starts returning it.</dd>
       <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale, shown as a bar:
         green is light, red is heavy.</dd>
       <dt>Interact</dt><dd>How much the players' games touch each other —
@@ -541,6 +569,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <dt>Point salad</dt><dd>How many different things earn you points:
         no — a sharp focus, just a touch, quite a lot, or a total point
         salad.</dd>
+      <dt>Columns</dt><dd>Pick which columns are on. Acquired and Last played
+        start off; the choice is remembered in this browser.</dd>
       <dt>Properties</dt><dd>One field over everything a game is tagged with —
         BGG's categories, mechanics, families and designers, plus a few named
         groupings of mechanics — searchable by name or by description.
@@ -580,6 +610,21 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       </select></div>
     <div class="f"><label for="exp">Expansions</label>
       <select id="exp"><!--__EXP_OPTIONS__--></select></div>
+    <div class="f" id="colsf"><label for="colsbtn">Columns</label>
+      <div class="sel colpick">
+        <button type="button" id="colsbtn" class="selbtn" aria-expanded="false"
+          ><span>Choose…</span></button>
+        <div class="sellist colmenu" hidden>
+          <p class="colhead">Game column</p>
+          <label><input type="radio" name="gamemode" value="name"> Game</label>
+          <label><input type="radio" name="gamemode" value="year" checked>
+            Game, Year</label>
+          <label><input type="radio" name="gamemode" value="designer">
+            Game, Year, Designer</label>
+          <p class="colhead">Columns</p>
+          <div id="collist"></div>
+        </div>
+      </div></div>
   </div>
   <details id="more">
     <summary>More filters</summary>
@@ -610,6 +655,12 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         <div class="pair"><input id="plmin" type="number" min="0" step="1"
           placeholder="0"><span>to</span><input id="plmax" type="number" min="0"
           step="1" placeholder="any"></div></div>
+      <div class="f"><label>Acquired</label>
+        <div class="pair"><input id="aqmin" type="date"><span>to</span>
+          <input id="aqmax" type="date"></div></div>
+      <div class="f"><label>Last played</label>
+        <div class="pair"><input id="lpmin" type="date"><span>to</span>
+          <input id="lpmax" type="date"></div></div>
       <div class="f"><label>Year</label>
         <div class="pair"><input id="ymin" type="number" min="1900" step="1"
           placeholder="any"><span>to</span><input id="ymax" type="number"
@@ -639,22 +690,24 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 <table class="__TABLECLASS__">
   <thead><tr>
     <th class="thumb w-thumb"></th>
-    <th class="num hide-sm w-rank" data-k="rk">Rank</th>
-    <th class="num w-hex" data-k="av">BGG</th>
-    <th class="num w-hex" data-k="my">Mine</th>
+    <th class="num hide-sm c-rk w-rank" data-k="rk" data-col="rk">Rank</th>
+    <th class="num c-av w-hex" data-k="av" data-col="av">BGG</th>
+    <th class="num c-my w-hex" data-k="my" data-col="my">Mine</th>
     <th data-k="n">Game</th>
-    <th class="num hide-md w-year" data-k="y">Year</th>
-    <th class="hide-md w-designer" data-k="ds">Designer</th>
-    <th class="num hide-sm hide-s w-plays" data-k="pl">Plays</th>
-    <th class="num w-time" data-k="tmax">Time</th>
-    <th class="num hide-sm hide-xs w-weight" data-k="w">Weight</th>
-    <th class="hide-sm hide-xs w-ix" data-k="ix">Interact</th>
-    <th class="hide-sm hide-lg c-win w-win" data-k="win">Win condition</th>
-    <th class="hide-sm hide-lg c-br w-br" data-k="breadth">Point salad</th>
-    <th class="num hide-sm c-atn w-atn" data-k="verdict">__ATN__</th>
-    <th class="num hide-sm wide-only c-best w-pct" data-k="bestPct">Best</th>
-    <th class="num hide-sm c-appr w-pct" data-k="appr">Appr</th>
-    <th class="num hide-sm w-ratings" data-k="rt" class="w-ratings" title="How many people have rated the game on BGG">Ratings</th>
+    <th class="hide-md c-ds w-designer" data-k="ds" data-col="ds">Designer</th>
+    <th class="num hide-sm hide-s c-pl w-plays" data-k="pl" data-col="pl">Plays</th>
+    <th class="num c-tmax w-time" data-k="tmax" data-col="tmax">Time</th>
+    <th class="num hide-sm hide-xs c-w w-weight" data-k="w" data-col="w">Weight</th>
+    <th class="hide-sm hide-xs c-ix w-ix" data-k="ix" data-col="ix">Interact</th>
+    <th class="num hide-sm c-acq w-date" data-k="acq" data-col="acq">Acquired</th>
+    <th class="num hide-sm c-lp w-date" data-k="lp" data-col="lp">Last played</th>
+    <th class="hide-sm hide-lg c-win w-win" data-k="win" data-col="win">Win condition</th>
+    <th class="hide-sm hide-lg c-breadth w-br" data-k="breadth" data-col="breadth">Point salad</th>
+    <th class="num hide-sm c-verdict w-atn" data-k="verdict" data-col="verdict">__ATN__</th>
+    <th class="num hide-sm wide-only c-bestPct w-pct" data-k="bestPct" data-col="bestPct">Best</th>
+    <th class="num hide-sm c-appr w-pct" data-k="appr" data-col="appr">Appr</th>
+    <th class="num hide-sm c-rt w-ratings" data-k="rt" data-col="rt"
+      title="How many people have rated the game on BGG">Ratings</th>
   </tr></thead>
   <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="17"
     id="septext"></td></tr><!--__ROWS__--></tbody>
@@ -800,7 +853,9 @@ var F = {
   mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
   tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'),
-  ymin: el('ymin'), ymax: el('ymax'), exp: el('exp')
+  ymin: el('ymin'), ymax: el('ymax'),
+  aqmin: el('aqmin'), aqmax: el('aqmax'),
+  lpmin: el('lpmin'), lpmax: el('lpmax'), exp: el('exp')
 };
 
 function applyDefaults() {
@@ -816,7 +871,7 @@ function applyDefaults() {
   tagRows.forEach(function (r) { r.firstChild.checked = false; });
   refreshTagList();
   ['smin', 'smax', 'mymin', 'mymax', 'wmin', 'wmax', 'tmin', 'tmax',
-   'plmin', 'plmax', 'ymin', 'ymax']
+   'plmin', 'plmax', 'ymin', 'ymax', 'aqmin', 'aqmax', 'lpmin', 'lpmax']
     .forEach(function (k) { F[k].value = ''; });
 }
 
@@ -881,6 +936,9 @@ function partition() {
   var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
   var ymin = num(F.ymin.value), ymax = num(F.ymax.value);
+  // ISO dates compare correctly as plain strings.
+  var aqmin = F.aqmin.value, aqmax = F.aqmax.value;
+  var lpmin = F.lpmin.value, lpmax = F.lpmax.value;
   var ix = F.ix.value, win = F.win.value, breadth = F.breadth.value;
   var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
@@ -908,6 +966,10 @@ function partition() {
       !(tmax !== null && !(or0(g.tmax) <= tmax)) &&
       !(plmin !== null && g.pl < plmin) && !(plmax !== null && g.pl > plmax) &&
       !(ymin !== null && !(g.y >= ymin)) && !(ymax !== null && !(g.y <= ymax)) &&
+      !(aqmin && !(g.acq && g.acq >= aqmin)) &&
+      !(aqmax && !(g.acq && g.acq <= aqmax)) &&
+      !(lpmin && !(g.lp && g.lp >= lpmin)) &&
+      !(lpmax && !(g.lp && g.lp <= lpmax)) &&
       (!n || qualifies(s, mode));
 
     if (pass) inside.push([i, s]);
@@ -954,6 +1016,14 @@ function describe() {
   pair('tmin', 'tmax', 'time', ' min');
   pair('plmin', 'plmax', 'plays');
   pair('ymin', 'ymax', 'year');
+  var dates = function (lo, hi, label) {
+    var a = F[lo].value, b = F[hi].value;
+    if (!a && !b) return;
+    extra.push(label + (a && b ? ' ' + a + ' – ' + b
+                               : a ? ' since ' + a : ' before ' + b));
+  };
+  dates('aqmin', 'aqmax', 'acquired');
+  dates('lpmin', 'lpmax', 'last played');
   if (expMode === 'drop') extra.push('expansions ignored');
   // With a filter applied, "All games, X" is noise — the filter is the subject.
   if (head) return head + (extra.length ? ', ' + extra.join(', ') : '');
@@ -987,19 +1057,20 @@ function sortRows(rows) {
       default: return g[sortKey];
     }
   }
-  var text = sortKey === 'n' || sortKey === 'ds' || sortKey === 'win';
+  var text = sortKey === 'n' || sortKey === 'ds' || sortKey === 'win' ||
+             sortKey === 'acq' || sortKey === 'lp';
   rows.sort(function (a, b) {
     var x = get(a), y = get(b);
+    // Missing values (unranked, unrated, never played) sink to the bottom in
+    // BOTH directions — checked before the text branch, or "null" sorts as a
+    // word.
+    var xm = (x === null || x === undefined || x === '');
+    var ym = (y === null || y === undefined || y === '');
+    if (xm || ym) return xm && ym ? 0 : (xm ? 1 : -1);
     if (text) {
       return sortDesc ? String(y).localeCompare(String(x))
                       : String(x).localeCompare(String(y));
     }
-    // Missing values (unranked, unrated, unpolled) sink to the bottom in BOTH
-    // directions. Coercing them to Infinity only works ascending — descending
-    // it floated every unrated game to the top.
-    var xm = (x === null || x === undefined);
-    var ym = (y === null || y === undefined);
-    if (xm || ym) return xm && ym ? 0 : (xm ? 1 : -1);
     if (x === y) {
       var ra = DATA[a[0]].rk, rb = DATA[b[0]].rk;
       return (ra === null ? Infinity : ra) - (rb === null ? Infinity : rb);
@@ -1075,6 +1146,7 @@ function render() {
   var n = +F.players.value;
 
   var sep = document.getElementById('sep');
+  sep.firstChild.colSpan = visibleCols();
   var frag = document.createDocumentFragment();
   var shownIdx = {};
   var i, idx, tr;
@@ -1125,7 +1197,7 @@ function render() {
   // Name the poll column after the count it is reading: "At 4p".
   var atn = document.querySelector('th[data-k="verdict"]');
   if (atn) atn.textContent = n ? 'At ' + n + 'p' : 'At N';
-  TABLE.className = n ? '' : 'mode-any';
+  paintTableClass();
   markFilters();
   recountTags(inside.map(function (r) { return r[0]; }));
 
@@ -1232,6 +1304,18 @@ function designerPills(g) {
         return '<span class="dspill">' + pill + out + '</span>';
       }).join('');
   return html ? '<span class="dspills">' + html + '</span>' : '—';
+}
+
+/** How many columns are actually on screen. A cell spanning more columns than
+ *  exist invents the extras, and — since they have no width of their own —
+ *  they split what the one flexible column was using, which is why expanding a
+ *  row used to shrink the game's name to a sliver. */
+function visibleCols() {
+  var n = 0;
+  [].forEach.call(document.querySelectorAll('thead th'), function (th) {
+    if (window.getComputedStyle(th).display !== 'none') n++;
+  });
+  return n;
 }
 
 function buildDetail(g) {
@@ -1450,8 +1534,8 @@ TBODY.addEventListener('click', function (e) {
   var g = DATA[+tr.getAttribute('data-i')];
   var row = document.createElement('tr');
   row.className = 'detail';
-  row.innerHTML = '<td colspan="' +
-    document.querySelectorAll('thead th').length + '">' + buildDetail(g) + '</td>';
+  row.innerHTML = '<td colspan="' + visibleCols() + '">' +
+    buildDetail(g) + '</td>';
   tr.parentNode.insertBefore(row, tr.nextSibling);
   openDetail = row;
   scrollRowToTop(tr);
@@ -1666,7 +1750,8 @@ function markFilters() {
     win: OPTS.win, breadth: OPTS.breadth, exp: OPTS.expansions,
     tagmode: 'all',
     smin: '', smax: '', mymin: '', mymax: '', wmin: '', wmax: '',
-    tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: ''
+    tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: '',
+    aqmin: '', aqmax: '', lpmin: '', lpmax: ''
   };
   Object.keys(F).forEach(function (k) {
     var input = F[k];
@@ -1699,6 +1784,115 @@ document.addEventListener('click', function (e) {
   if (!e.target.closest || !e.target.closest('.sel')) closeAll(null);
 });
 
+/* ---- column picker -------------------------------------------------- */
+/** Which columns exist, in header order, with the ones that start hidden.
+ *  The poll trio and the two "Any"-only columns are still governed by the
+ *  player count on top of this. */
+var COLUMNS = [
+  { k: 'rk', n: 'Rank' }, { k: 'av', n: 'BGG' }, { k: 'my', n: 'Mine' },
+  { k: 'ds', n: 'Designer' }, { k: 'pl', n: 'Plays' },
+  { k: 'tmax', n: 'Time' }, { k: 'w', n: 'Weight' },
+  { k: 'ix', n: 'Interact' },
+  { k: 'acq', n: 'Acquired', off: true },
+  { k: 'lp', n: 'Last played', off: true },
+  { k: 'win', n: 'Win condition' }, { k: 'breadth', n: 'Point salad' },
+  { k: 'verdict', n: 'At N / Best / Appr' },
+  { k: 'rt', n: 'Ratings' }
+];
+var COLKEY = 'bgg-cols-v1';
+var colState = {}, gameMode = 'year';
+
+function colDefaults() {
+  var out = {};
+  COLUMNS.forEach(function (c) { out[c.k] = !c.off; });
+  return out;
+}
+
+function loadCols() {
+  colState = colDefaults();
+  try {
+    var raw = window.localStorage.getItem(COLKEY);
+    if (raw) {
+      var saved = JSON.parse(raw);
+      COLUMNS.forEach(function (c) {
+        if (typeof saved.cols[c.k] === 'boolean') colState[c.k] = saved.cols[c.k];
+      });
+      if (saved.game) gameMode = saved.game;
+    }
+  } catch (e) { /* private window, or storage off: defaults are fine */ }
+}
+
+function saveCols() {
+  try {
+    window.localStorage.setItem(COLKEY,
+      JSON.stringify({ cols: colState, game: gameMode }));
+  } catch (e) { /* nothing to do about it */ }
+}
+
+function applyCols() {
+  var cls = ['gm-' + gameMode];
+  COLUMNS.forEach(function (c) { if (!colState[c.k]) cls.push('off-' + c.k); });
+  // The poll trio travels together under one entry.
+  if (!colState.verdict) { cls.push('off-bestPct'); cls.push('off-appr'); }
+  TABLE.setAttribute('data-cols', cls.join(' '));
+  paintTableClass();
+  var on = COLUMNS.filter(function (c) { return colState[c.k]; }).length;
+  var cap = document.querySelector('#colsbtn span');
+  if (cap) cap.textContent = on + ' of ' + COLUMNS.length;
+  document.getElementById('colsf').classList.toggle('active',
+    on !== COLUMNS.filter(function (c) { return !c.off; }).length ||
+    gameMode !== 'year');
+}
+
+/** The player-count swap and the picker both live in the table's class list. */
+function paintTableClass() {
+  var n = +F.players.value;
+  TABLE.className = (n ? '' : 'mode-any ') + (TABLE.getAttribute('data-cols') || '');
+}
+
+function buildColMenu() {
+  var box = document.getElementById('collist');
+  box.innerHTML = COLUMNS.map(function (c) {
+    return '<label><input type="checkbox" data-colkey="' + c.k + '"' +
+      (colState[c.k] ? ' checked' : '') + '> ' + esc(c.n) + '</label>';
+  }).join('');
+  box.addEventListener('change', function (e) {
+    var k = e.target.getAttribute('data-colkey');
+    if (!k) return;
+    colState[k] = e.target.checked;
+    saveCols();
+    applyCols();
+    closeDetail();
+  });
+  [].forEach.call(document.querySelectorAll('input[name="gamemode"]'),
+    function (r) {
+      r.checked = r.value === gameMode;
+      r.addEventListener('change', function () {
+        if (!r.checked) return;
+        gameMode = r.value;
+        saveCols();
+        applyCols();
+      });
+    });
+  var btn = document.getElementById('colsbtn');
+  var menu = document.querySelector('.colmenu');
+  btn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var open = menu.hidden;
+    closeAll(null);
+    menu.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.addEventListener('click', function (e) { e.stopPropagation(); });
+  document.addEventListener('click', function () {
+    menu.hidden = true;
+    btn.setAttribute('aria-expanded', 'false');
+  });
+}
+
+loadCols();
+buildColMenu();
+applyCols();
 applyDefaults();
 refreshTagList();
 document.querySelector('th[data-k="rk"]').setAttribute('aria-sort', 'ascending');

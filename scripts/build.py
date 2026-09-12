@@ -131,6 +131,17 @@ def load_ai():
     return out
 
 
+def load_plays():
+    """When each game was last played, from scripts/plays.py. Absent is fine."""
+    f = ROOT / "data" / "plays.json"
+    if not f.exists():
+        return {}
+    try:
+        return json.loads(f.read_text())
+    except Exception:  # noqa: BLE001
+        return {}
+
+
 def load_bgg_ids():
     """Name -> BGG id for games outside the collection, from scripts/bggids.py.
     Absent is fine: a name without an id falls back to a BGG search link."""
@@ -155,7 +166,7 @@ def collection_stats():
     """Play counts and the owner's own rating both ride along with the
     collection export (`stats=1`), so neither costs an extra API call. An
     unrated game carries value="N/A"."""
-    plays, mine = {}, {}
+    plays, mine, acquired = {}, {}, {}
     for name in ("collection.xml", "expansions.xml"):
         f = RAW / name
         if not f.exists():
@@ -163,6 +174,11 @@ def collection_stats():
         for it in ET.parse(f).getroot().findall("item"):
             oid = it.get("objectid")
             plays[oid] = int(it.findtext("numplays") or 0)
+            # Only present when BGG chooses to return private fields; it does
+            # not for an API token, so this is usually empty.
+            priv = it.find("privateinfo")
+            if priv is not None and priv.get("acquisitiondate"):
+                acquired[oid] = priv.get("acquisitiondate")[:10]
             rating = it.find("stats/rating")
             v = rating.get("value") if rating is not None else None
             if v and v != "N/A":
@@ -170,7 +186,7 @@ def collection_stats():
                     mine[oid] = float(v)
                 except ValueError:
                     pass
-    return plays, mine
+    return plays, mine, acquired
 
 
 def main():
@@ -192,7 +208,8 @@ def main():
         print(f"warning: {len(missing)} owned item(s) have no cached detail — "
               f"run scripts/fetch.py")
 
-    plays, mine = collection_stats()
+    plays, mine, acquired = collection_stats()
+    played = load_plays()
     ai = load_ai()
     bgg_ids = load_bgg_ids()
     for g in games:
@@ -206,6 +223,8 @@ def main():
             ]
         g["plays"] = plays.get(g["id"], 0)
         g["my_rating"] = mine.get(g["id"])
+        g["acquired"] = acquired.get(g["id"])
+        g["last_played"] = (played.get(g["id"]) or {}).get("last") or None
 
     out = ROOT / "data" / "games.json"
     out.write_text(json.dumps(games, indent=1, ensure_ascii=False))

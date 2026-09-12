@@ -10,6 +10,7 @@
 Runs the pipeline end to end:
 
     fetch.py     collection + any new games      (network, BGG API)
+    plays.py     the play log, for "last played" (network, BGG API)
     thumbs.py    thumbnails for any new games    (network, image CDN)
     gallery.py   gallery image URLs, new games   (network, geekdo)
     enrich.py    opinion database, new games     (local `claude`, optional)
@@ -46,6 +47,7 @@ def main():
     full = "--full" in argv
     if "--no-fetch" not in argv:
         run("fetch.py", *(["--full"] if full else []))
+        run("plays.py")
         run("thumbs.py", *(["--force"] if full else []))
         run("gallery.py", *(["--force"] if full else []))
     # build first: enrich.py reads games.json, so a newly added game has to be

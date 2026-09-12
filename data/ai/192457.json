@@ -18,11 +18,20 @@
   "kind": "area control and open conflict",
   "detail": "Players directly fight over the same regions on a shared board, with combat, resource denial, and VP-scoring zones constantly contested. Nearly the entire board state is shared territory, so almost every action affects opponents' position and economy."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points accrue from several independent streams — territory control each round, faction-specific bonuses, and units/resources converted directly into VP tokens — rather than one formula.",
-  "how_you_win": "You move units and fight to control territories and resources across a shared board using an asymmetric faction, and the player who accumulates the most victory points from area control and faction abilities by the game's end wins."
+  "subsystems": [
+   "territorial majority control for VP",
+   "resource economy funding unit/card purchases"
+  ],
+  "sources": [
+   "VP earned each round from controlling resource-producing territories"
+  ],
+  "winning_score": 15,
+  "tally": "running",
+  "shape": "majority_control",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Each round you fight for majority control of territories that pay out victory points (and resources used to recruit more units); once a player's VP total reaches the game's threshold it triggers the final round, after which the highest VP total wins."
  },
  "similar": [
   "Rising Sun",
@@ -36,6 +45,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "a7c23fa192b5b218",
+ "_fingerprint": "542a1b022130240a",
  "_name": "Cry Havoc"
 }

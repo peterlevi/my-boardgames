@@ -18,11 +18,21 @@
   "kind": "hidden roles, bluffing, and open accusation",
   "detail": "The entire game is players talking, voting, and trying to read or deceive each other; there's no personal board or tableau, just shared quest outcomes and each player's hidden allegiance driving nearly all decisions."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The outcome is decided entirely by whether Good or Evil wins a majority of the mission votes (or Evil identifies Merlin afterward), with no point totals involved.",
-  "how_you_win": "Hidden loyal and evil players alternate proposing and voting on mission teams; Good wins by succeeding on three missions, Evil wins by failing three missions or, if Good reaches three successes, by correctly identifying Merlin."
+  "subsystems": [
+   "quest voting and team success/failure",
+   "hidden role deduction and assassination"
+  ],
+  "sources": [
+   "quest results",
+   "Merlin assassination attempt"
+  ],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "objective_count",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "Good wins by succeeding on 3 of 5 quests, but only if Evil then fails to assassinate Merlin; Evil wins by failing 3 quests or by correctly identifying and assassinating Merlin after a Good quest victory."
  },
  "similar": [
   "The Resistance",
@@ -36,6 +46,6 @@
   "The Dice Tower",
   "Before You Play"
  ],
- "_fingerprint": "81a48a40cc892948",
+ "_fingerprint": "2dd9d590b528904d",
  "_name": "The Resistance: Avalon"
 }

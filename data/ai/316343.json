@@ -16,11 +16,19 @@
   "kind": "shared resource contribution with individual scoring",
   "detail": "Players choose whether to keep drafted cards in their own tableau or contribute them to a shared capital area whose powers benefit everyone, so decisions constantly ripple into what opponents can do next round. Most of the board is a shared capital area while each player keeps a separate personal tableau for direct scoring."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come from character cards you keep in your own home base plus end-of-round bonuses tied to the shared capital, so it boils down to two related tallies.",
-  "how_you_win": "Each round you either play characters into your home base to bank their point value or contribute them to the shared capital to trigger powers and majority bonuses; after the final round, the highest total score wins."
+  "subsystems": [
+   "character-card drafting into home base vs. shared capital"
+  ],
+  "sources": [
+   "end-of-round points from cards kept in your home base"
+  ],
+  "winning_score": 45,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Each round you draft character cards, choosing to keep them in your own base for points or feed them into the shared capital for power effects; after a set number of rounds, the player with the most accumulated points wins."
  },
  "similar": [
   "Capital Lux",
@@ -33,6 +41,6 @@
   "Watch It Played",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "9a200c472b87c44c",
+ "_fingerprint": "eb426defff77bcd5",
  "_name": "Capital Lux 2: Pocket"
 }

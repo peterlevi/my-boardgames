@@ -18,11 +18,31 @@
   "kind": "worker placement with action-space blocking",
   "detail": "Players compete for the same limited action spaces on a shared board, so taking a space denies it to others that round, but most of the game happens on each player's own cave board. There's no direct attacking of other players' resources, so interaction is mainly about tempo and space-denial."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final tally sums points from rooms/caves dug, pastures and fields, each type of animal, resources and dwarves, with penalties for empty spaces and unused resources.",
-  "how_you_win": "Over several rounds you place workers to expand and furnish your cave, farm and breed animals, and equip dwarves for adventures; at game end you total points across many independent categories and the highest total wins."
+  "subsystems": [
+   "farming & animal breeding (fields, crops, livestock)",
+   "cave/dwelling excavation and furnishing",
+   "weapons & adventuring for rewards"
+  ],
+  "sources": [
+   "dwarves",
+   "caverns/tunnels/shafts",
+   "stables",
+   "grain and vegetables",
+   "each type of livestock",
+   "ore and rubies",
+   "furnishings",
+   "weapon value",
+   "adventure rewards",
+   "begging tokens (negative)",
+   "unused space (negative)"
+  ],
+  "winning_score": 130,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a fixed number of worker-placement rounds you grow your dwarf family, farm and breed animals, dig out and furnish your cave, and optionally arm dwarves for adventures; at the end all these categories are totaled and the highest sum wins."
  },
  "similar": [
   "Agricola",
@@ -36,6 +56,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "df783817fe1b2837",
+ "_fingerprint": "e0d7e89adc98bef7",
  "_name": "Caverna: The Cave Farmers"
 }

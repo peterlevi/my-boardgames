@@ -16,11 +16,27 @@
   "kind": "worker placement blocking, mostly parallel farm boards",
   "detail": "As in the original, players race for shared action spaces each round while developing separate farm boards, so interaction is indirect and limited to which spaces get claimed first."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Score is a sum of core farm categories (rooms, fields, pastures, crops, animals, family size, begging) with no cards, but still spans many independent categories.",
-  "how_you_win": "Two family meeples take worker-placement actions each round to build rooms, plow fields, fence pastures, and stock animals and crops while feeding the family at each harvest; the farm with the highest total across the scoring categories wins."
+  "subsystems": [
+   "farm development (fields, pastures, animals, rooms)"
+  ],
+  "sources": [
+   "fields",
+   "pastures",
+   "grain",
+   "vegetables",
+   "animals",
+   "fenced stables",
+   "family members",
+   "house type",
+   "begging penalties"
+  ],
+  "winning_score": 30,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "The same farm-building race as Agricola but stripped of the occupation/improvement card decks; after 14 rounds you total up points across fields, pastures, animals, and house categories, and the highest sum wins."
  },
  "similar": [
   "Agricola",
@@ -34,6 +50,6 @@
   "Before You Play",
   "JonGetsGames"
  ],
- "_fingerprint": "7cdceadff8dc11b2",
+ "_fingerprint": "d9b2cfd1cd3a657b",
  "_name": "Agricola: Family Edition"
 }

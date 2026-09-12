@@ -17,11 +17,24 @@
   "kind": "area majority and contract racing",
   "detail": "The cathedral itself is a shared, physical structure players build onto together, so there's direct competition for tile placement and majorities, layered over each player's own contract cards and resource stock."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points accumulate directly as a spendable resource from contracts, cathedral construction contributions, and end-game bonuses for leftover resources and rondel position.",
-  "how_you_win": "You move around a rondel to gather dice/resources, deliver them to build sections of the cathedral and fulfill contracts, collecting VP tokens along the way; whoever has the most VP when the cathedral is finished wins."
+  "subsystems": [
+   "rondel-driven resource gathering and cathedral-building contributions",
+   "contract fulfillment",
+   "rank/favor track"
+  ],
+  "sources": [
+   "cathedral construction VP",
+   "completed contracts",
+   "rank track position",
+   "end-game bonuses"
+  ],
+  "winning_score": 45,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Gather resources via the rondel to contribute blocks to the shared cathedral, complete contracts, and climb the rank track; when the cathedral tower is completed, the player with the most VP from contributions, contracts, and bonuses wins."
  },
  "similar": [
   "Barrage",
@@ -35,6 +48,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "655cf1d3b17ae67a",
+ "_fingerprint": "97b9e0f55efeb3c1",
  "_name": "The Red Cathedral"
 }

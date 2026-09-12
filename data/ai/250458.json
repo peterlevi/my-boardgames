@@ -17,11 +17,23 @@
   "kind": "worker-placement blocking and area majority",
   "detail": "Players compete for limited action spaces and for majority control on the palace track, but each otherwise builds a private tableau of goods and cards mostly independent of rivals."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points accrue continuously from delivering silver/goods to the emperor plus separate endgame bonuses for Forbidden City room majorities and leftover resources/favor.",
-  "how_you_win": "You place workers to gather and deliver resources for steady VP, while jockeying for majority control of Forbidden City rooms, ending with the most combined points."
+  "subsystems": [
+   "resource collection via the rotating wheel",
+   "banquet card set collection on personal grid",
+   "resource track majority bonuses"
+  ],
+  "sources": [
+   "banquet cards played",
+   "grid pattern bonuses",
+   "end-game track majority bonuses"
+  ],
+  "winning_score": 55,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Place workers each round to gather resources, spend them on banquet cards that fill your personal grid for pattern bonuses, and add majority bonuses on the resource tracks at the end of a fixed number of rounds."
  },
  "similar": [
   "Amerigo",
@@ -35,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "4e9bf4392775b832",
+ "_fingerprint": "e388edd9f2a75b9b",
  "_name": "Gùgōng"
 }

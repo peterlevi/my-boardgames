@@ -16,11 +16,21 @@
   "kind": "shared resource competition",
   "detail": "The two villages draw from and compete over shared fields and resource availability, so choices about what to take or build affect what remains for the other player. Each player still develops their own private tableau of buildings and production, but scoring categories are compared directly against each other at game end."
  },
- "win_criteria": "Lowest-highest scoring",
  "scoring": {
-  "breadth": "Some",
-  "why": "Final scoring cross-compares each player's beer total against the opponent's bread total (and vice versa), so being strong where your rival is weak is what swings the result.",
-  "how_you_win": "Harvest and process resources into beer and bread across six alternating years, then at game end your beer is scored against your opponent's bread and your bread against their beer; whoever comes out ahead in that cross-comparison wins."
+  "subsystems": [
+   "goods production and sale (beer and bread)"
+  ],
+  "sources": [
+   "beer sold",
+   "bread sold",
+   "leftover/contract bonuses"
+  ],
+  "winning_score": 35,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across six alternating fruitful/dry years you produce and sell beer and bread using multi-use cards; whoever has accumulated the most coins/points by the end of the sixth year wins."
  },
  "similar": [
   "7 Wonders Duel",
@@ -34,6 +44,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "8fd69d3738eba319",
+ "_fingerprint": "cffdb05ab1efdbde",
  "_name": "Beer & Bread"
 }

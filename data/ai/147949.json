@@ -16,11 +16,15 @@
   "kind": "open accusation, bluffing, and group voting",
   "detail": "Players openly discuss, accuse, and defend themselves before a single simultaneous vote decides the outcome, so the entire game is driven by direct verbal interaction. Nearly all information is either shared through discussion or deliberately concealed, with almost no private tableau."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no scoring at all; the outcome is decided purely by whether the group's daytime deduction and vote correctly identifies (or fails to identify) a Werewolf.",
-  "how_you_win": "After a night of secret role actions, players discuss and then simultaneously vote for who to eliminate; if a Werewolf is voted out the Village team wins, otherwise the Werewolf (or other hidden) team wins."
+  "subsystems": [],
+  "sources": [],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "majority_control",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "There is no point score: after one night of secret role abilities, all players vote simultaneously to lynch one player, and whichever team's win condition is met by that outcome (e.g., villagers win if a Werewolf is lynched) wins immediately."
  },
  "similar": [
   "One Night Ultimate Werewolf: Daybreak",
@@ -34,6 +38,6 @@
   "Before You Play",
   "How to Play"
  ],
- "_fingerprint": "626e0c12500159d1",
+ "_fingerprint": "ce0b0e545727a0b8",
  "_name": "One Night Ultimate Werewolf"
 }

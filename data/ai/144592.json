@@ -16,11 +16,23 @@
   "kind": "blocking and bidding",
   "detail": "Players compete for limited action spaces on a shared modular board and bid against each other for turn order and patrons, directly affecting each other's available options. The action board and market are shared, while each player's building and money track are private."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score combines how far you've built up your own house, the art you've created and sold, and leftover money, offset by nuisance penalties picked up along the way.",
-  "how_you_win": "Use worker placement and bidding to build up your house, gather patrons and materials to create and sell art, and manage your finances while minimizing nuisance penalties; the player with the highest combined score across these elements at the end wins."
+  "subsystems": [
+   "personal house-building track",
+   "majority control auctions on city buildings",
+   "art creation and sale"
+  ],
+  "sources": [
+   "levels built on your own house",
+   "majority stakes in constructed buildings",
+   "artworks created and sold"
+  ],
+  "winning_score": 70,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You use worker placement and bidding to build up your own house, take majority stakes in Art Nouveau buildings around the modular board, and create/sell artworks; the game ends when a key resource supply is depleted, and the highest combined VP wins."
  },
  "similar": [
   "Vikings",
@@ -33,6 +45,6 @@
   "Watch It Played",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "647bc09a0c63f10e",
+ "_fingerprint": "ab031652329c7694",
  "_name": "Bruxelles 1893"
 }

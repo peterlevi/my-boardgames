@@ -17,11 +17,20 @@
   "kind": "market competition and pricing pressure",
   "detail": "Players compete on a shared market for selling goods, where undercutting others' prices or flooding demand affects everyone's sales, but each player's factories, workers, and share portfolio are managed on their own board. The interaction is economic and indirect rather than direct conflict."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Victory is decided purely by the value of your own shareholding, so everything you do exists to push your share price up.",
-  "how_you_win": "Grow your factories' output and profitability to drive up your share price, then hold enough of your own shares that their total value is highest at game end."
+  "subsystems": [
+   "factory production & sales economy",
+   "stock/share market"
+  ],
+  "sources": [
+   "value of your own held shares"
+  ],
+  "winning_score": 120,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Run factories to produce and sell goods, using profits to buy up your own company's shares and raise their price; over a fixed number of rounds, whoever holds the most valuable block of own shares wins."
  },
  "similar": [
   "Brass: Birmingham",
@@ -34,6 +43,6 @@
   "Watch It Played",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "76e69836a0ffa1c2",
+ "_fingerprint": "e48fe2c6f8872cd0",
  "_name": "Arkwright"
 }

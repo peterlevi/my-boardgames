@@ -18,11 +18,19 @@
   "kind": "real-time cooperative coordination",
   "detail": "All players act on a single shared board and shared set of pawns, with each player restricted to only certain move types across all heroes, so success depends entirely on watching and silently cueing each other. There is no individual board at all — the whole game state is communal."
  },
- "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The team wins or loses together the instant all heroes reach the exit tile, or loses if the sand timer runs out or too many 'don't panic' cards are used, with no individual scoring involved.",
-  "how_you_win": "Working in real time with strict communication limits, guide each hero (any player can move any hero) to their shop and then to the exit before the sand timer expires."
+  "subsystems": [
+   "shared exit/objective completion under a real-time hourglass"
+  ],
+  "sources": [
+   "objectives completed (map exploration, item pickup, exit)"
+  ],
+  "winning_score": 0,
+  "tally": "mixed",
+  "shape": "objective_count",
+  "ends_by": "coop_goal",
+  "sudden_death_common": true,
+  "how_you_win": "There is no point total: all players cooperatively guide every hero to explore the maze, collect their equipment, and reach the exit before the sand timer runs out, and the group wins or loses together."
  },
  "similar": [
   "Space Alert",
@@ -36,6 +44,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "c1238fb2a50bc5a6",
+ "_fingerprint": "a82037c014f2e307",
  "_name": "Magic Maze"
 }

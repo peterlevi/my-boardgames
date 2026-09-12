@@ -17,11 +17,24 @@
   "kind": "blocking and area denial",
   "detail": "Players compete for a shared, limited set of worker placement spots and river sections, so taking a space or building on a river tile can directly deny an opponent's plan. Water flow, turn order (determined by workers already placed), and dam/river control are all shared state, while each player's own powerhouse and patent tableau are private engines fed by that shared contest."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accrue continuously from energy production relative to demand, plus separate end-game totals for contracts, patents, and constructed board position.",
-  "how_you_win": "Build and raise dams, tunnels, and powerhouses to keep generating energy above demand each round, then add bonus points from completed contracts, patents, and board presence at game end; the highest total wins."
+  "subsystems": [
+   "dam/powerhouse construction & energy production",
+   "contracts",
+   "patents"
+  ],
+  "sources": [
+   "contracts fulfilled",
+   "patents held",
+   "constructed dam sections, conduits and powerhouses",
+   "executive bonus"
+  ],
+  "winning_score": 180,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over 5 fixed rounds you build up your dam, conduits and powerhouses while fulfilling energy contracts for running points; the player with the most combined points from contracts, patents and constructed infrastructure at the end wins."
  },
  "similar": [
   "Great Western Trail",
@@ -35,6 +48,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "43b9df1b51de1978",
+ "_fingerprint": "d9e301f12a67eb78",
  "_name": "Barrage"
 }

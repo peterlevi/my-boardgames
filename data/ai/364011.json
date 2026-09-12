@@ -17,11 +17,25 @@
   "kind": "route and building competition",
   "detail": "As in the original, players share the trail and compete for building spots and delivery timing, while each maintains a private deck and personal board. Direct conflict is limited to positional blocking rather than attacks."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "As in the base game, points come from several separate channels: cattle delivered, trail buildings, station/objective bonuses, and farmer-related bonuses, none of which dominate alone.",
-  "how_you_win": "You optimize your herd and rondel actions to repeatedly deliver cattle to Buenos Aires while investing in buildings and upgrades, ending with the highest combined point total."
+  "subsystems": [
+   "cattle delivery/deck-building loop",
+   "building network on the trail",
+   "farmer/worker development tracks"
+  ],
+  "sources": [
+   "delivery track advances (running)",
+   "buildings owned",
+   "hazards removed",
+   "farmer track position",
+   "station bonuses"
+  ],
+  "winning_score": 170,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Score points continuously by delivering cattle to Buenos Aires, then add end-game bonuses from your buildings, hazards cleared and farmer-track progress once the final round triggers."
  },
  "similar": [
   "Great Western Trail",
@@ -35,6 +49,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "b5de756fb13072aa",
+ "_fingerprint": "72a1666662c47e28",
  "_name": "Great Western Trail: Argentina"
 }

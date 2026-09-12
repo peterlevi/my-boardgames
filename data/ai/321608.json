@@ -18,11 +18,22 @@
   "kind": "negotiation, voting, and competing economic interests",
   "detail": "The economy, legislation votes, and labor market are fully shared systems, so one player's production or policy choices directly reshape what's available or profitable for everyone else. Players constantly negotiate deals and vote on laws that reward some classes while hurting others."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no shared point total; each class role wins by satisfying its own distinct economic/political objective cards.",
-  "how_you_win": "Playing as the working class, capitalists, middle class, or the state, you push policy, wages, prices, and production to hit your class's specific secret goals (e.g., low unemployment for workers, high profit for capitalists); whoever best fulfills their own class's agenda wins."
+  "subsystems": [
+   "working-class wage/consumption economy",
+   "capitalist production & profit economy",
+   "middle-class small-business economy",
+   "state budget & policy economy"
+  ],
+  "sources": [
+   "role-specific victory metric (e.g. worker wages/consumption, capitalist profit, business success, or national budget/stability)"
+  ],
+  "winning_score": 20,
+  "tally": "endgame",
+  "shape": "objective_count",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Each asymmetric class has its own goal to hit by game end (e.g. capitalists want profit, workers want good wages/conditions, the state wants a balanced, stable nation); whoever best satisfies their class's own formula, among those who meet the minimum bar, wins."
  },
  "similar": [
   "Kapital",
@@ -36,6 +47,6 @@
   "Heavy Cardboard",
   "No Pun Included"
  ],
- "_fingerprint": "1608631f714b81e5",
+ "_fingerprint": "b63623b8dcb4fd6f",
  "_name": "Hegemony: Lead Your Class to Victory"
 }

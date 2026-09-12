@@ -18,11 +18,22 @@
   "kind": "shared dice pool and paid worker borrowing",
   "detail": "The dice pool generated each round is shared, and players can pay opponents to use their dice or lose their own to misfortune events, so there's constant low-level negotiation over a common resource even though each player's card hand and building track stay private."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Nearly every action card played banks small amounts of hidden victory points across many separate categories (religious, military, civil dice spent, citizens, events, cash), only revealed at the end.",
-  "how_you_win": "Assign your dice-workers to religious, military, and civil actions, play cards from your hand to trigger effects (many of which secretly bank hidden VP), and manage cash and citizens over four eras; the player with the most accumulated hidden and open points at the end wins."
+  "subsystems": [
+   "hidden victory-point citizen cards",
+   "cathedral construction (dice invested)"
+  ],
+  "sources": [
+   "revealed hidden-VP cards",
+   "cathedral construction progress",
+   "unused dice/resource penalties"
+  ],
+  "winning_score": 35,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Fulfill hidden objective cards and contribute workers/dice to the cathedral through worker placement with dice; cards are revealed and totaled once the event deck runs out, highest score wins."
  },
  "similar": [
   "Lorenzo il Magnifico",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "8d4f9f1156c3432d",
+ "_fingerprint": "d7bb04bdcc584034",
  "_name": "Troyes"
 }

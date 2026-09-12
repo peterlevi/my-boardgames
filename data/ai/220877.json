@@ -17,11 +17,22 @@
   "kind": "mostly parallel play with light racing",
   "detail": "Each player develops their own province board largely independently; the main touchpoint is racing for the same track positions and market goods, plus a shared game-end trigger. There is minimal direct conflict or blocking."
  },
- "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Some",
-  "why": "The game ends the instant a player's money marker and fame marker meet on their two opposed tracks, so reaching that intersection first is the entire win condition rather than a final tally.",
-  "how_you_win": "You use workers and dice to build your province, gain goods, and earn karma, pushing your fame token and money token along two tracks that run in opposite directions; the first player whose tokens meet or cross wins immediately."
+  "subsystems": [
+   "province tile development generating goods and fame",
+   "goods market selling for money",
+   "palace personality recruitment via karma for fame"
+  ],
+  "sources": [
+   "money track",
+   "fame track"
+  ],
+  "winning_score": 40,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "Develop your province, sell goods at market, and win over palace personalities to advance your money marker and fame marker along two opposing spiral tracks; the first player whose two markers meet immediately wins."
  },
  "similar": [
   "The Castles of Burgundy",
@@ -35,6 +46,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "06d9519be908ea13",
+ "_fingerprint": "d2a52309b9aa8360",
  "_name": "Rajas of the Ganges"
 }

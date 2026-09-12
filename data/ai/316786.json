@@ -18,11 +18,24 @@
   "kind": "area influence and resource competition",
   "detail": "Players compete for limited dice and district spaces on a shared board, occasionally contesting the same region influence, but much of the game is building your own tableau of districts and contracts. Interaction is indirect, mostly through resource scarcity and race-to-the-spot tension."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score adds up district construction, contract fulfillment, temple/port progress, and end-game majority bonuses, each tracked somewhat independently.",
-  "how_you_win": "Use your worker and the dice you draft to build in the city's districts, fulfill contracts, and advance in the temple, then total all these separate point sources at the end for the highest score."
+  "subsystems": [
+   "building-district majority control",
+   "contract fulfillment for goods/coin/points",
+   "temple track advancement"
+  ],
+  "sources": [
+   "district majority bonuses",
+   "completed contracts",
+   "temple track position",
+   "leftover resources/coins"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Accumulate the most points by winning majority control in the city's building districts, fulfilling contracts with gathered dice/resources, and climbing the temple track; the game ends once the city's districts are built out, and totals are tallied then."
  },
  "similar": [
   "Teotihuacan",
@@ -36,6 +49,6 @@
   "Watch It Played",
   "No Pun Included"
  ],
- "_fingerprint": "281d290a669e922b",
+ "_fingerprint": "8bfebbee8013a5d9",
  "_name": "Tabannusi: Builders of Ur"
 }

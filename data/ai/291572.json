@@ -16,11 +16,22 @@
   "kind": "open conflict, negotiation, and shifting alliances",
   "detail": "Players directly battle for map regions, form and break alliances, and vote on political outcomes, with the shared world state (the Chronicle) persisting and being altered by everyone's actions across games. Very little is private; almost the entire board and its history is shared and contested."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Some",
-  "why": "Victory is decided by whether the ruling faction (or a rebelling Exile/Citizen faction) satisfies that game's specific Vision requirement, usually tied to favor in certain banners, relics, or sites rather than a running point total.",
-  "how_you_win": "You jockey for military and political control of the map, and at the end of a Chronicle whichever faction currently holds power checks if it meets the randomly drawn Vision's condition; if it does the Chancellor/Dynasty wins, otherwise a rebel faction that met the requirement takes over instead."
+  "subsystems": [
+   "Area control via warbands on sites/regions",
+   "Favor and secrets accumulation (Vision comparison)"
+  ],
+  "sources": [
+   "favor tokens by suit",
+   "secrets",
+   "relics/banners held"
+  ],
+  "winning_score": 8,
+  "tally": "mixed",
+  "shape": "majority_control",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "The Chancellor wins immediately if they hold the most of the favor/secrets named by the current Vision card; otherwise, any Exile who meets or beats that same Vision requirement wins instead and becomes the new Chancellor, so the game can end abruptly at the close of any Chancellor's turn."
  },
  "similar": [
   "Root",
@@ -34,6 +45,6 @@
   "No Pun Included",
   "Heavy Cardboard"
  ],
- "_fingerprint": "5874a26186de5ae8",
+ "_fingerprint": "0595026d44630f16",
  "_name": "Oath"
 }

@@ -18,11 +18,21 @@
   "kind": "shared city board with tile stacking and district takeover",
   "detail": "Players build directly onto a single shared city map, and placing a new tile can bury or extend a rival's district, changing who benefits from its output. Alongside that shared board, each player keeps a private hand of resource, building, and role cards that they manage largely on their own."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Score comes mainly from the values of tiles banked into your personal city plus district-majority control bonuses.",
-  "how_you_win": "Place and layer tiles to grow your personal city, banking higher-value tiles as they get covered and contesting majority control of city districts, then total those points at the end."
+  "subsystems": [
+   "tile-layering city building"
+  ],
+  "sources": [
+   "values of tiles incorporated into your personal city",
+   "resource cubes held",
+   "victory point tiles claimed during play"
+  ],
+  "winning_score": 45,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "When the tile supply runs out, the player with the highest total from building values in their personal city plus held resources wins."
  },
  "similar": [
   "Suburbia",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "cddca64f0e71ad5a",
+ "_fingerprint": "d9d0c783eeadf6d2",
  "_name": "Ginkgopolis"
 }

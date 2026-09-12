@@ -18,11 +18,22 @@
   "kind": "Indirect, shared temple majority",
   "detail": "Each player builds on a private home board that is not shared, so most of the game is parallel development. The only shared, contested state is the temple spaces, where incense placement creates area-majority competition for spirit bonuses, with ties broken by turn order."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Happiness points accumulate from several largely independent systems — family/worker actions, bamboo grove development, and building/objective completion — rather than one dominant track.",
-  "how_you_win": "Optimize your worker and family actions each season to grow bamboo, satisfy family needs, and complete buildings/objectives, ending with the most happiness points."
+  "subsystems": [
+   "bamboo harvest/market economy",
+   "family & temple happiness track"
+  ],
+  "sources": [
+   "harvested/sold bamboo goods",
+   "family growth events",
+   "temple offerings/objectives"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over 4 years of 4 seasons each, draft actions to grow bamboo, tend family, and fulfill temple/market goals for happiness points; highest total happiness at the end wins."
  },
  "similar": [
   "Bitoku",
@@ -39,6 +50,6 @@
   "boardgamegeek.com/boardgame/351538 (search snippets only, direct fetch blocked)"
  ],
  "source": "web",
- "_fingerprint": "a0950d1c36025330",
+ "_fingerprint": "e9ffa6e4ba7a1217",
  "_name": "Bamboo"
 }

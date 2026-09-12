@@ -16,11 +16,23 @@
   "kind": "open conflict and take-that attacks",
   "detail": "Players directly attack each other's planets and fleets and can target opponents with disruptive cards, so a large share of the game state (galaxy map, planet ownership) is shared and contested rather than private."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points accumulate from colonizing/upgrading planets, researching technology, completing objective cards, and winning battles, and the highest total after the final round wins.",
-  "how_you_win": "You build up your empire across several rounds, expanding planets, tech, and military strength, and score points from all these fronts; whoever has the most points when the game ends wins."
+  "subsystems": [
+   "military conquest (spies/fleets attacking planets)",
+   "economic/colonial development (production, tech, colonization)"
+  ],
+  "sources": [
+   "planets/colonies controlled",
+   "technology advances",
+   "military victories",
+   "leftover resources"
+  ],
+  "winning_score": 50,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You develop your race across several turns, choosing military conquest or peaceful expansion/tech, and whoever has accumulated the most victory points from planets, tech, and battles when the game ends wins."
  },
  "similar": [
   "Cosmic Encounter",
@@ -34,6 +46,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "a76fae6fd2fd614f",
+ "_fingerprint": "ec3cc102fc040efe",
  "_name": "Master of Orion: The Board Game"
 }

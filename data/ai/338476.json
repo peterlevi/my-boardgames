@@ -18,11 +18,25 @@
   "kind": "worker placement with dice, indirect blocking",
   "detail": "Players compete for a limited set of shared action spaces and cards, so claiming a strong spot or card denies it to everyone else, but each player otherwise develops their own private board of resources, cards, and tracks. The shared council/church track and excommunication penalties are the main points of direct cross-player effect."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score adds VP printed on development, territory, character, and building cards to military-track position, faith bonuses, and leftover resources converted at game end.",
-  "how_you_win": "Across six rounds, place family members (boosted by dice values) to collect resources and acquire cards from four decks, then total all card VP, track bonuses, and end-game conversions; the highest sum wins."
+  "subsystems": [
+   "development card VP (Territory/Building/Character/Venture cards)",
+   "faith track bonuses/penalties",
+   "military points vs excommunication tiles",
+   "end-game resource-to-VP conversion"
+  ],
+  "sources": [
+   "cards",
+   "faith track",
+   "military track",
+   "leftover resources"
+  ],
+  "winning_score": 160,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over six rounds you place dice-workers to collect cards and resources that grant victory points, then convert leftover resources and military standing into extra points at the end; the highest total after the final round wins."
  },
  "similar": [
   "Great Western Trail",
@@ -36,6 +50,6 @@
   "Watch It Played",
   "Heavy Cardboard"
  ],
- "_fingerprint": "2da0d28c5059ea0a",
+ "_fingerprint": "bc4228c7952a1a9e",
  "_name": "Lorenzo il Magnifico: Big Box"
 }

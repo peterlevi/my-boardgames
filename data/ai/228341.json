@@ -18,11 +18,22 @@
   "kind": "drafting from a shared pool",
   "detail": "Players draft from the same rolled pool of dice each round, so taking a die denies it to others and can shift what's left, plus a shared map has limited pulsar/planet spots to claim. Beyond that, each player develops their own tech and production engine independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from multiple independent systems — claimed pulsars/planets, researched technologies, and end-game track bonuses — that each add up separately.",
-  "how_you_win": "Draft dice each round to explore space, claim valuable pulsars, and research technologies that build an efficient engine; after 8 rounds, whoever has accumulated the most points across pulsars, tech, and bonuses wins."
+  "subsystems": [
+   "technology tracks (multiple parallel advancement tracks)",
+   "pulsar/planet tile collection and conversion"
+  ],
+  "sources": [
+   "points from technology track milestones",
+   "end-game set/conversion bonuses from planets and pulsars",
+   "leftover resources"
+  ],
+  "winning_score": 90,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across the game's fixed 8 rounds, accumulate the most points by advancing technology tracks and collecting/converting planet and pulsar tiles into victory points."
  },
  "similar": [
   "The Voyages of Marco Polo",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "d0b68ff349d00455",
+ "_fingerprint": "c3664058bda28a30",
  "_name": "Pulsar 2849"
 }

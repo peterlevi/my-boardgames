@@ -18,11 +18,20 @@
   "kind": "area control and asymmetric conflict",
   "detail": "Players fight over the same shared map of clearings, and battles, crafting, and card denial constantly push and pull at each other's plans. Nearly all meaningful state (the map, item supply, card market) is shared and contested rather than sitting on private boards."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Each faction races up a shared victory-point track using its own distinct VP-generating engine, and the game can also end via a faction-specific dominance or coalition condition instead of pure points.",
-  "how_you_win": "Reach 30 victory points before anyone else, earned through faction-specific actions like building, battling, crafting, or completing quests, or trigger your faction's special dominance/coalition victory."
+  "subsystems": [
+   "crafting cards into victory points",
+   "faction-specific action engine (building/decrees, sympathy & revolts, quests, aiding)"
+  ],
+  "sources": [
+   "shared victory point track"
+  ],
+  "winning_score": 30,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "The game ends the instant a player's marker reaches 30 on the shared score track; each asymmetric faction feeds that track through its own actions (crafting, building, completing decrees, sympathy/revolts, or quests)."
  },
  "similar": [
   "Vast: The Crystal Caverns",
@@ -36,6 +45,6 @@
   "Rahdo Runs Through",
   "Actualol"
  ],
- "_fingerprint": "8c640db7adb7a2bd",
+ "_fingerprint": "ad0195d156d1c648",
  "_name": "Root"
 }

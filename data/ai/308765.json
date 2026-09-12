@@ -18,11 +18,24 @@
   "kind": "area majority and shared board competition",
   "detail": "Players compete for limited actions on the shared action crane and for area-majority bonuses on the map, so timing and racing for key spots matters, but most of the actual building happens on each player's own tableau. The shared elements (board spaces, majority bonuses) create indirect pressure rather than direct attacks."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Final score is a sum across many largely independent tracks and structures — favor/prestige track, cathedral windows, bridge, university, deeds, and scoring cards each contribute separately.",
-  "how_you_win": "Use action-crane moves to build up the cathedral, bridge, and university, place workers and deeds around the city, and climb the favor track, then add up points from all these separate scoring elements at game end — highest total wins."
+  "subsystems": [
+   "building construction (bridge, university, cathedral)",
+   "favor tracks (Cardinal and King) with milestone bonuses",
+   "hexagonal district tile placement/majorities"
+  ],
+  "sources": [
+   "points from buildings constructed",
+   "bonuses from favor track milestones",
+   "end-game scoring cards",
+   "coins as secondary resource"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a fixed number of rounds, accumulate the most prestige points by constructing buildings, advancing the Cardinal's and King's favor tracks, and completing end-game bonus objectives."
  },
  "similar": [
   "Underwater Cities",
@@ -36,6 +49,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "c52a2b5bc5fe39ba",
+ "_fingerprint": "f6a2c89c63d9489f",
  "_name": "Praga Caput Regni"
 }

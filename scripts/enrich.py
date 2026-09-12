@@ -65,16 +65,42 @@ import sys
 from common import ROOT, load_games
 
 AI = ROOT / "data" / "ai"
-SCHEMA_VERSION = 2
+# What the run has cost so far, one entry per claude call.
+SPEND = []
+SCHEMA_VERSION = 3
 
-WIN_CRITERIA = [
-    "Most points, many sources", "Most points, one or two sources",
-    "Most money", "Race to a finish", "Lowest-highest scoring",
-    "Special win condition", "Cooperative goal", "Other",
-]
 
-COUNTING_RULE = """
-Counting scoring sources: count the distinct scoring categories the rules themselves list at the end of the game, not the number of decisions or actions that feed them. Three or more largely independent categories is "many sources"; if everything you score flows from one or two of them, it is "one or two sources" however many ways there are to build them up. Apply the same count to breadth: "Focused" is one real route to points, "Some" two or three, "Broad" four or more that matter, and "Salad" is points for nearly everything you do.
+FACTS_BRIEF = """
+Scoring facts, reported rather than judged — the labels are worked out from
+these afterwards, so give what the rules say and nothing more:
+
+  "subsystems": the separate scoring engines a player builds up, each with its
+      own rules and economy. Most games have one or two; be honest rather than
+      generous. Carcassonne scores cities, roads, monasteries and
+      farms, but they all come from placing a tile and a meeple: that is ONE
+      subsystem, not four. Rajas of the Ganges really does run several
+      minigames side by side. Name them; do not pad the list.
+  "sources": the categories the rules total at the end, named.
+  "winning_score": what a winning score typically looks like, as a plain
+      number (10 for a race to 10, about 165 for Brass).
+  "tally": "running" if the score ticks along in front of everyone,
+      "endgame" if almost all of it is counted at the end, else "mixed".
+  "shape": "single_currency" when one currency decides it (money in Food Chain
+      Magnate), "objective_count" when you count achievements or objectives,
+      "lowest_category" when your score is your weakest category (Tigris &
+      Euphrates), "majority_control" when players contest shared majorities
+      rather than accumulating, else "sum".
+  "ends_by": how the game ENDS and who that leaves winning.
+      "target_score" — reaching a number ends it and that player has won;
+      "end_trigger" — someone completing something stops the game, but the
+          points still decide it (Azul's finished row, Wingspan's rounds);
+      "fixed_length" — a set number of rounds;
+      "exhaustion" — a deck or supply runs out;
+      "sudden_death" — a condition wins outright, there and then, without
+          counting anything (7 Wonders Duel's military or science supremacy);
+      "elimination"; or "coop_goal".
+  "sudden_death_common": true only where such a condition exists AND games
+      usually end that way rather than going the distance.
 """
 
 HEADER = """You are cataloguing a board game collection. Answer ONLY with a \
@@ -99,10 +125,16 @@ trading and negotiation, mostly parallel play",
 affect each other, and how much of the game state is shared versus each \
 player's own board or tableau"
   }},
-  "win_criteria": one of {criteria},
   "scoring": {{
-    "breadth": "Focused" | "Some" | "Broad" | "Salad",
-    "why": "one sentence on what actually decides the winner",
+    "subsystems": ["..."],
+    "sources": ["..."],
+    "winning_score": 0,
+    "tally": "running" | "endgame" | "mixed",
+    "shape": "sum" | "single_currency" | "objective_count" | \
+"lowest_category" | "majority_control",
+    "ends_by": "target_score" | "end_trigger" | "fixed_length" | \
+"exhaustion" | "sudden_death" | "elimination" | "coop_goal",
+    "sudden_death_common": false,
     "how_you_win": "one or two sentences on how a player actually wins, in \
 plain language"
   }},
@@ -168,10 +200,14 @@ Answer ONLY with a JSON object mapping each id to:
     "detail": "two or three sentences on how players affect each other and \
 how much of the state is shared versus each player's own board"
   }},
-  "win_criteria": one of {criteria},
   "scoring": {{
-    "breadth": "Focused" | "Some" | "Broad" | "Salad",
-    "why": "one sentence",
+    "subsystems": ["..."], "sources": ["..."], "winning_score": 0,
+    "tally": "running" | "endgame" | "mixed",
+    "shape": "sum" | "single_currency" | "objective_count" | \
+"lowest_category" | "majority_control",
+    "ends_by": "target_score" | "end_trigger" | "fixed_length" | \
+"exhaustion" | "sudden_death" | "elimination" | "coop_goal",
+    "sudden_death_common": false,
     "how_you_win": "one or two sentences"
   }},
   "similar": ["3-5 games"],
@@ -185,15 +221,27 @@ GAMES:
 """
 
 
-RESCORE = """For each game below, decide only how its winner is determined. \
-Use what you know about the game, reconciled with the BGG data given.
+RESCORE_WEB = """Look each game's rules up on the web before answering — \
+BoardGameGeek's page, the rulebook, a review that states the numbers. Do not \
+answer the ending or the winning score from memory. Add "checked": ["url", \
+...] to every entry naming the pages you actually read for those two fields.
 
-Answer ONLY with a JSON object mapping each id to:
+"""
+
+RESCORE = """For each game below, report only how its scoring works. Use what \
+you know about the game, reconciled with the BGG data given. Answer ONLY with \
+a JSON object mapping each id to:
 {{
-  "win_criteria": one of {criteria},
   "scoring": {{
-    "breadth": "Focused" | "Some" | "Broad" | "Salad",
-    "why": "one sentence on what actually decides the winner",
+    "subsystems": ["..."],
+    "sources": ["..."],
+    "winning_score": 0,
+    "tally": "running" | "endgame" | "mixed",
+    "shape": "sum" | "single_currency" | "objective_count" | \
+"lowest_category" | "majority_control",
+    "ends_by": "target_score" | "end_trigger" | "fixed_length" | \
+"exhaustion" | "sudden_death" | "elimination" | "coop_goal",
+    "sudden_death_common": false,
     "how_you_win": "one or two sentences on how a player actually wins, in \
 plain language"
   }}
@@ -215,8 +263,7 @@ def prompt_for(batch, header=None):
             mechanics=", ".join(g["mechanics"]) or "none listed",
             description=(g["description"] or "")[:700],
         ) for g in batch)
-    head = header or HEADER.format(criteria=json.dumps(WIN_CRITERIA),
-                                   rule=COUNTING_RULE)
+    head = header or HEADER.format(rule=FACTS_BRIEF)
     return head + body
 
 
@@ -245,6 +292,9 @@ def ask(prompt, model, online=False):
     if r.returncode != 0:
         raise RuntimeError((r.stderr or r.stdout)[-300:])
     envelope = json.loads(r.stdout)
+    cost = envelope.get("total_cost_usd")
+    if isinstance(cost, (int, float)):
+        SPEND.append(cost)
     text = envelope.get("result", "").strip()
     if text.startswith("```"):
         text = text.split("\n", 1)[1].rsplit("```", 1)[0]
@@ -252,10 +302,12 @@ def ask(prompt, model, online=False):
 
 
 def process(batch, model, describe=False, online=False, rescore=False):
-    header = (ONLINE.format(criteria=json.dumps(WIN_CRITERIA), rule=COUNTING_RULE)
-              if online
-              else RESCORE.format(criteria=json.dumps(WIN_CRITERIA),
-                                  rule=COUNTING_RULE) if rescore
+    # --rescore --online asks only for the scoring facts, but with the web
+    # open: the rules of a game are written down somewhere, and a fact the
+    # model half-remembers is exactly the case worth looking up.
+    header = ((RESCORE_WEB if online else "") + RESCORE.format(rule=FACTS_BRIEF)
+              if rescore
+              else ONLINE.format(rule=FACTS_BRIEF) if online
               else DESCRIBE if describe else None)
     answers = ask(prompt_for(batch, header), model, online=online)
     written = []
@@ -266,13 +318,13 @@ def process(batch, model, describe=False, online=False, rescore=False):
         if online:
             data["source"] = "web"
         if rescore:
-            # Only the two classifying fields are re-asked; everything else in
-            # the entry — summary, praise, interaction, sources — stands.
+            # Only the scoring facts are re-asked; everything else in the
+            # entry — summary, praise, interaction, sources — stands.
             existing = json.loads((AI / f'{g["id"]}.json').read_text())
-            if data.get("win_criteria"):
-                existing["win_criteria"] = data["win_criteria"]
-            existing.setdefault("scoring", {}).update(
-                {k: v for k, v in (data.get("scoring") or {}).items() if v})
+            existing.pop("win_criteria", None)
+            facts = data.get("scoring") or {}
+            if facts:
+                existing["scoring"] = facts
             data = existing
         if describe:
             # Fill only the blanks; the structural fields from the first pass
@@ -331,6 +383,7 @@ def main():
             if cached.exists():
                 todo.append(g)
             continue
+
         if a.describe or a.online:
             # Only entries the first pass could not speak to.
             if not cached.exists():
@@ -382,7 +435,9 @@ def main():
                 failed += len(batch)
                 print(f"  batch FAILED ({batch[0]['name']}…): {e}",
                       file=sys.stderr, flush=True)
-    print(f"done: {done} enriched, {failed} failed")
+    spent = sum(SPEND)
+    money = f", ${spent:.2f} spent" if spent else ""
+    print(f"done: {done} enriched, {failed} failed{money}")
 
 
 if __name__ == "__main__":

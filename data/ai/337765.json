@@ -16,11 +16,23 @@
   "kind": "open conflict and alliances",
   "detail": "Players directly contest control of regions on a shared map through battles and shifting alliances, while trick-taking hands determine turn strength and options. The map and influence tracks are fully shared, with only card hands kept private."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score is built from three largely independent pillars — territorial control won through tricks, Church favor from monasteries, and alliances from marriages — plus Viking-related bonuses.",
-  "how_you_win": "Win tricks with your hand of cards to place pieces and claim provinces, build monasteries for Church favor, and arrange marriages for alliances while fending off Viking raids; the player with the most points across these pillars at game end becomes High King."
+  "subsystems": [
+   "area majority over provinces (trick-taking driven)",
+   "marriage alliance network",
+   "church/monastery favor"
+  ],
+  "sources": [
+   "provinces controlled",
+   "marriage alliance bonuses",
+   "church favor track"
+  ],
+  "winning_score": 50,
+  "tally": "endgame",
+  "shape": "majority_control",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You use trick-taking-style card play to gain majority control of Irish provinces while building out marriage alliances and church favor; once the High King condition is triggered, whoever holds the most province control and alliance/favor bonuses wins."
  },
  "similar": [
   "El Grande",
@@ -34,6 +46,6 @@
   "JonGetsGames",
   "Before You Play"
  ],
- "_fingerprint": "55733c0dd721ef86",
+ "_fingerprint": "b37fad82c40d72f9",
  "_name": "Brian Boru: High King of Ireland"
 }

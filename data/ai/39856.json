@@ -18,11 +18,20 @@
   "kind": "storytelling, voting, and bluffing",
   "detail": "Every round the storyteller's clue and card become shared information that all other players react to by choosing cards and voting, directly affecting each other's scoring chances. There's no personal board; the interaction is entirely social, mediated through card choice and guessing."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Every point in the game comes from the single mechanism of guessing correctly or fooling other players about the storyteller's card.",
-  "how_you_win": "As storyteller you give a clue vague enough that some but not all players guess your card, and as a guesser you try to identify the storyteller's card while also fooling others with your own submitted card; the player with the most accumulated points after several rounds wins."
+  "subsystems": [
+   "storyteller guessing-game scoring"
+  ],
+  "sources": [
+   "points for correct/partial guesses of the storyteller's card",
+   "points for other players picking your decoy card"
+  ],
+  "winning_score": 30,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "Each round players score based on whether others correctly guess the storyteller's card (never all or none) and whether their own decoy cards fool others; the first player to cross 30 points wins."
  },
  "similar": [
   "Mysterium",
@@ -36,6 +45,6 @@
   "The Dice Tower",
   "Before You Play"
  ],
- "_fingerprint": "ddcfaa1e70febd6f",
+ "_fingerprint": "45e47cd4ab5ea77e",
  "_name": "Dixit"
 }

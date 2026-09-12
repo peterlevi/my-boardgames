@@ -17,11 +17,15 @@
   "kind": "cooperative communication and shared deduction",
   "detail": "Both players alternate giving clues to each other over the same shared grid, and each player's assassin squares differ from the other's key card, so misjudging a clue can cost the whole team a turn or the game. The board and win/loss state are entirely shared between the two players."
  },
- "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Both players win or lose together based solely on whether all green agent cards are found before time or guesses run out or the assassin is hit.",
-  "how_you_win": "Working from different keycards, both players give and interpret clues together to identify all 15 shared agent words within a limited number of turns/guesses, without touching an assassin word."
+  "subsystems": [],
+  "sources": [],
+  "winning_score": 15,
+  "tally": "endgame",
+  "shape": "objective_count",
+  "ends_by": "coop_goal",
+  "sudden_death_common": false,
+  "how_you_win": "Both players cooperatively give each other one-word clues to find all 15 shared green agent cards within a limited number of clues; the team wins if all agents are found before the clues run out or an assassin card is touched."
  },
  "similar": [
   "Codenames",
@@ -35,6 +39,6 @@
   "Before You Play",
   "JonGetsGames"
  ],
- "_fingerprint": "a92822058213a29d",
+ "_fingerprint": "4398b7f2a50ccdf0",
  "_name": "Codenames: Duet"
 }

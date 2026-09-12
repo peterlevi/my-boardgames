@@ -18,11 +18,22 @@
   "kind": "worker placement blocking over shared action spaces",
   "detail": "Players compete for the same limited worker-placement slots each round, so being crowded out of a key action is a constant threat, while track networks and tech development are largely built on each player's own board. The shared map and action spaces are the main point of contact between players."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points are earned separately for track network expansion, technology and locomotive upgrades, and engineer/factory bonuses, giving several genuinely different avenues to the final total rather than one dominant engine.",
-  "how_you_win": "Assign workers to lay track across the map, research and build better locomotives and factories, and use engineers to boost efficiency; the player who has built the largest, most advanced railway network and banked the most points from these combined tracks wins."
+  "subsystems": [
+   "rail network construction (route/connection VP)",
+   "technology track upgrades"
+  ],
+  "sources": [
+   "network connections built",
+   "technology track bonuses",
+   "end-game objective/contract bonuses"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Build the most valuable connected rail network and advance technology through worker placement; the player with the highest combined VP after the fixed number of rounds wins."
  },
  "similar": [
   "Great Western Trail",
@@ -35,6 +46,6 @@
   "Watch It Played",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "dc793aa05aea6258",
+ "_fingerprint": "df4be7745e2114c9",
  "_name": "Ultimate Railroads"
 }

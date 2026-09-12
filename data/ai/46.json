@@ -16,11 +16,20 @@
   "kind": "auction / bidding",
   "detail": "Every round is a shared, direct bidding war over the same cards, so almost the entire game is about reading opponents' money and appetite rather than managing a private tableau."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Each round's cargo is scored by total value and by having the most of individual goods, and leftover money converts to points at the end, so three distinct payouts feed the final total.",
-  "how_you_win": "You bid your points/money to win sets of goods cards each round, trying to end each round with the most valuable overall cargo and majorities in specific goods; the highest cumulative score after three rounds wins."
+  "subsystems": [
+   "auction-driven goods collection"
+  ],
+  "sources": [
+   "per-round majority bonuses for each commodity type",
+   "total value of goods cargo held at round end"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over exactly three rounds you bid on cards of goods to fill your ships, scoring bonuses each round for holding the most of a given good plus points for your total cargo value, and the highest cumulative total after round three wins."
  },
  "similar": [
   "Ra",
@@ -34,6 +43,6 @@
   "The Dice Tower",
   "Gaming Rules!"
  ],
- "_fingerprint": "9b1ea2607b4362a9",
+ "_fingerprint": "e01742c1b576bab3",
  "_name": "Medici"
 }

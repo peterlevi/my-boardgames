@@ -18,11 +18,22 @@
   "kind": "area proximity and indirect competition for terrain",
   "detail": "Players mostly build out their own faction's network on their own terrain colors, but the shared hex map means adjacency to opponents' buildings grants power/resource bonuses and contested terrain can block expansion, so the map itself is the main shared state rather than direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points accumulate from round-by-round action scoring, cult track final scoring, network/area bonuses, favor and bonus tiles, and building upgrades, none of which reduces to a single dominant source.",
-  "how_you_win": "You win by scoring the most victory points overall, earned through building and upgrading structures, advancing on cult tracks, and completing bonus/favor tile objectives across the game."
+  "subsystems": [
+   "building/network economy (terraforming and structure upgrades)",
+   "cult track advancement"
+  ],
+  "sources": [
+   "round scoring tile bonuses",
+   "cult track bonus points",
+   "favor and town tile points",
+   "final scoring for largest network and cult track position"
+  ],
+  "winning_score": 140,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "how_you_win": "Across six rounds you build and upgrade structures for round-bonus points while separately climbing cult tracks for their own rewards; after the final round, network size and cult positions are added in, and the highest total wins."
  },
  "similar": [
   "Terra Mystica",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "afe423de59935331",
+ "_fingerprint": "99072f4971a52cda",
  "_name": "Age of Innovation"
 }

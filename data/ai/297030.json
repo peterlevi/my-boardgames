@@ -16,11 +16,24 @@
   "kind": "action-space blocking and worker denial",
   "detail": "Players compete for limited spaces around the rotating obelisk and can be shut out of an action if someone takes it first, and dice/worker strength is a shared, visible resource others plan around. Most of each player's engine (temple grid, monuments) lives on their own board, so a large share of the state is private."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accumulate from building up the temple's tiers, advancing along the moon/god tracks, and completing statue and cult bonuses, with the highest total at game end winning.",
-  "how_you_win": "Grow the temple, advance your favor with the gods, and grab scoring opportunities each era before Maat's reckoning resets things; whoever holds the most points when the temple is complete wins."
+  "subsystems": [
+   "obelisk construction/height",
+   "temple offering discs",
+   "card/tile objectives"
+  ],
+  "sources": [
+   "obelisk levels",
+   "temple discs",
+   "resource/card bonuses",
+   "leftover resources"
+  ],
+  "winning_score": 150,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You build up the obelisk, place temple offering discs, and complete card objectives across a fixed sequence of epochs punctuated by Maat's reckoning; whoever has the most total points when the last epoch ends wins."
  },
  "similar": [
   "Teotihuacan: City of Gods",
@@ -34,6 +47,6 @@
   "Watch It Played",
   "Heavy Cardboard"
  ],
- "_fingerprint": "406027e9d0729a49",
+ "_fingerprint": "90433090438d15fd",
  "_name": "Tekhenu: Obelisk of the Sun"
 }

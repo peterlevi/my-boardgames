@@ -18,11 +18,23 @@
   "kind": "shared board competition for canal routes and tiles",
   "detail": "Players build on a shared hex board where canal placement and land claims can block or route around opponents, but most of the engine-building happens on individual player boards. Competition for limited action cards and building sites is the main point of contact."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from several separate categories — canal/road network built, settlements founded, goods harvested and delivered, and building tiles constructed — rather than one dominant engine.",
-  "how_you_win": "Use action-retrieval cards to dig canals, found settlements, harvest and process goods, and construct buildings across the hex map; the player who has built up the most across these categories by game end wins."
+  "subsystems": [
+   "hex-grid settlement and canal building",
+   "action-retrieval goods economy"
+  ],
+  "sources": [
+   "buildings and settlements on the board",
+   "completed canal networks",
+   "harvested/delivered goods",
+   "leftover money"
+  ],
+  "winning_score": 100,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You place workers to gather goods and expand roads/settlements across the oasis, and once the game-ending condition fires, points from buildings, network completion and goods are totaled to find the winner."
  },
  "similar": [
   "Fresh Fish",
@@ -36,6 +48,6 @@
   "Watch It Played",
   "The Dice Tower"
  ],
- "_fingerprint": "a80f042fb91b3be6",
+ "_fingerprint": "1f60b87d66f09637",
  "_name": "Faiyum"
 }

@@ -18,11 +18,23 @@
   "kind": "worker placement blocking and area-movement race",
   "detail": "Players compete for the same limited worker-placement spaces each round and race along a shared circular track around the castle, which can block or slow opponents, while resource and card development otherwise sit on each player's own tableau."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score is built from several distinct categories — court influence, garden/warrior tracks, and race-track bonuses — each contributing independently rather than one dominant engine.",
-  "how_you_win": "Draft action cards each round to advance your clan along multiple tracks (court, garden, warriors) and race for early-completion bonuses, ending with the highest combined score across those categories."
+  "subsystems": [
+   "Card melding/splaying engine (courtier cards)",
+   "Province area-majority influence",
+   "Seasonal garden/tea-ceremony objectives"
+  ],
+  "sources": [
+   "Played/splayed courtier card values",
+   "Province majority bonuses",
+   "Season scoring cards"
+  ],
+  "winning_score": 90,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You build up a tableau of courtier cards via melding and splaying while competing for majority influence in the castle's provinces; when the end trigger occurs, VP from card values, province majorities, and season objectives are summed and the highest total wins."
  },
  "similar": [
   "Tekhenu: Obelisk of the Sun",
@@ -36,6 +48,6 @@
   "JonGetsGames",
   "Before You Play"
  ],
- "_fingerprint": "cdb1d62ad4ad421b",
+ "_fingerprint": "c28900dd0d8cbaaf",
  "_name": "The White Castle"
 }

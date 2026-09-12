@@ -17,11 +17,19 @@
   "kind": "direct one-on-one combat with hand-based bluffing",
   "detail": "Fighters share a single map and directly attack, block, and maneuver against each other, with hand management creating bluffing over held cards; almost all game state is shared and contested rather than private."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "As with the rest of the Unmatched series, the sole objective is defeating the opposing hero(es) by depleting their health.",
-  "how_you_win": "You win by maneuvering your hero and sidekick to land attacks that bring the opponent's life total to zero first."
+  "subsystems": [
+   "combat health tracking"
+  ],
+  "sources": [
+   "opponent fighters' remaining health"
+  ],
+  "winning_score": 0,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "elimination",
+  "sudden_death_common": false,
+  "how_you_win": "You win by reducing all of an opponent's characters' health to zero through card-driven attacks, defeating their side entirely; there is no point total."
  },
  "similar": [
   "Unmatched: Battle of Legends, Volume One",
@@ -34,6 +42,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "1e9c0d93f398fe54",
+ "_fingerprint": "85084fc31606637e",
  "_name": "Unmatched: Cobble & Fog"
 }

@@ -18,11 +18,25 @@
   "kind": "area control and racing against a shared AI threat",
   "detail": "Players compete for the same systems and resources on a shared galactic map and can attack each other's fleets, while all also react to a common scripted Voidborn menace that pressures everyone; each player still manages a large personal tech tree and command-card tableau."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Each House earns victory points from multiple independent tracks (military conquest, technology, quests, and objectives) while the group must also hold off a shared Voidborn threat that can end the game for everyone.",
-  "how_you_win": "Accumulate the most victory points through combat, tech advancement, and completing objectives/quests before or as the shared Voidborn threat track resolves; if the Voidborn overwhelm the Domineum everyone can lose regardless of individual scores."
+  "subsystems": [
+   "Tech tree advancement",
+   "Quest/objective completion",
+   "Military conquest and battles",
+   "Council/diplomacy influence"
+  ],
+  "sources": [
+   "Tech track VP",
+   "Completed quest tiles",
+   "Battle outcomes",
+   "Council influence bonuses"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Over several rounds you advance your tech tree, complete quest objectives, and fight battles against rivals or the Voidborn threat; when the game-ending trigger (usually the threat track maxing out or a fixed number of ages) is reached, whoever has accumulated the most VP across these tracks wins."
  },
  "similar": [
   "Eclipse: Second Dawn for the Galaxy",
@@ -36,6 +50,6 @@
   "Watch It Played",
   "No Pun Included"
  ],
- "_fingerprint": "dc00557c0d5313b6",
+ "_fingerprint": "c124948a09eaeec8",
  "_name": "Voidfall"
 }

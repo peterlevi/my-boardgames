@@ -17,11 +17,19 @@
   "kind": "direct tactical combat and area denial",
   "detail": "Players act on a single shared hex map, using line of sight, suppression, and initiative order to directly block, ambush, or shoot each other's units. Nearly all meaningful state (the map, unit positions, casualties) is shared and contested rather than sitting on a private tableau."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Each scenario defines its own objective (control specific hexes, eliminate enough enemy units, or survive until a turn limit) rather than a running point total.",
-  "how_you_win": "You win by completing the scenario's specific battlefield objective, such as holding key terrain or breaking the enemy's ability to fight, using your deck of unit cards to maneuver and shoot better than your opponent."
+  "subsystems": [
+   "objective-hex control"
+  ],
+  "sources": [
+   "victory points from controlled objective hexes"
+  ],
+  "winning_score": 8,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "Each scenario prints a small set of objective hexes; holding them at the end of a turn scores VP, and the first side to reach the scenario's printed target (commonly 6-9) wins that mission."
  },
  "similar": [
   "Undaunted: Normandy",
@@ -35,6 +43,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "e300fc9d2beea1a3",
+ "_fingerprint": "16651d643814e916",
  "_name": "Undaunted: North Africa"
 }

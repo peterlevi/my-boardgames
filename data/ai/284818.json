@@ -17,11 +17,23 @@
   "kind": "worker placement with shared building slots and take-that elements",
   "detail": "Players place workers on shared action spots that others can also use (with the provost/turn-order mechanic affecting who benefits), and buildings placed by one player can be used by others for a fee. Most resource management happens on a shared board rather than isolated player boards."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from buildings constructed, prestige tiles, favor track progress, and end-game bonuses, several of which are hidden until scoring.",
-  "how_you_win": "Players place workers on action spaces to gather resources and erect buildings around the growing castle; the player with the most victory points, tallied from multiple independent tracks and bonuses at the end, wins."
+  "subsystems": [
+   "building construction for points and resources",
+   "castle contribution for end-game bonuses"
+  ],
+  "sources": [
+   "buildings constructed",
+   "leftover/converted resources",
+   "castle contribution rewards",
+   "end-game building set bonuses"
+  ],
+  "winning_score": 80,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Players place workers to gather resources, construct buildings for points and privileges, and contribute to the castle; once the castle is completed the game ends shortly after and whoever has accumulated the most points wins."
  },
  "similar": [
   "Caylus",
@@ -35,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "19bf8b049dabcc4c",
+ "_fingerprint": "cd6ad307770799e2",
  "_name": "Caylus 1303"
 }

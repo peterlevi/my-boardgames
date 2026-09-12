@@ -18,11 +18,21 @@
   "kind": "spot/rondel competition for resources",
   "detail": "Players race for shared spaces on a central rondel and monk track, occasionally blocking each other from ideal actions, but nearly all scoring happens on each player's own barrel board independent of others."
  },
- "win_criteria": "Lowest-highest scoring",
  "scoring": {
-  "breadth": "Some",
-  "why": "Each barrel row scores only as far as its shortest completed row reaches, so your weakest ingredient track caps your points regardless of how far the others advanced.",
-  "how_you_win": "Expand your garden and harvest grain, hops, fruit, and water in balance, then place them into barrel rows; because scoring is capped by your shortest row, the player who keeps all resource tracks evenly developed (plus refinement bonuses) scores highest."
+  "subsystems": [
+   "garden tile placement & barrel brewing"
+  ],
+  "sources": [
+   "points scored per barrel brewed (based on garden row fill levels)",
+   "end-game building/statue bonus tiles",
+   "leftover coins/resources"
+  ],
+  "winning_score": 110,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You score points continuously by brewing barrels, limited by whichever ingredient row in your garden is least developed, then add bonus-tile points at game end; the highest total wins."
  },
  "similar": [
   "Trajan",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "0e0232507df26b2e",
+ "_fingerprint": "30b11490833e8303",
  "_name": "Heaven & Ale"
 }

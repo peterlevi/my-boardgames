@@ -16,11 +16,25 @@
   "kind": "simultaneous sealed bidding and drafting from shared taverns",
   "detail": "Every round players bid directly against each other for the same pool of cards, and bid order determines who gets first pick, so opponents' choices constantly reshape what's left for you. The taverns are fully shared state, while each player's growing army of dwarves is their own private tableau."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Each of the five dwarf classes (warriors, hunters, miners, blacksmiths, explorers) scores by its own independent rule, plus a leftover-gold bonus, so the winner needs a balanced army rather than one strong suit.",
-  "how_you_win": "You bid gold each round to draft dwarves into five class rows; at the end you total each class's separate scoring formula plus bonus gold, and the highest combined total wins."
+  "subsystems": [
+   "Dwarf-class army scoring (five distinct formulas: blacksmiths, warriors, rangers, miners, mercenaries/heroes)",
+   "Leftover gold value"
+  ],
+  "sources": [
+   "blacksmith total",
+   "warrior total",
+   "ranger total",
+   "miner gold bonus",
+   "hero bonuses",
+   "leftover coins"
+  ],
+  "winning_score": 220,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "After 3 reigns of bidding coins to recruit dwarves into your army, each of the five character classes is scored by its own rule and the totals (plus leftover coin value) are summed; the highest total wins."
  },
  "similar": [
   "Ra",
@@ -34,6 +48,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "bd44e32f0678e3b7",
+ "_fingerprint": "7f1659066328856f",
  "_name": "Nidavellir"
 }

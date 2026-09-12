@@ -18,11 +18,33 @@
   "kind": "card drafting with neighbor-only conflict and trading",
   "detail": "Players draft cards from a shared, rotating hand and can only fight or trade resources with the two players seated beside them, so most of the tableau you build is your own private board while the drafted card pool is the only shared state."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Points come from military conflict tokens, coins, civilian buildings, science symbols/sets, commercial structures, guild cards, and wonder stages, so almost every card type contributes its own scoring category.",
-  "how_you_win": "You win by having the most victory points after three ages, gathered across military, science, coins, and building categories."
+  "subsystems": [
+   "Military conflict (comparing shields with neighbors each age for escalating victory/defeat tokens)",
+   "Science (collecting symbols for per-type squared totals plus a bonus for complete sets of three distinct symbols)",
+   "Direct-value card and coin economy (civilian, commerce and guild cards, wonder stages, and coins converted to points at the end)"
+  ],
+  "sources": [
+   "military",
+   "coins/treasury",
+   "wonders",
+   "civilian structures",
+   "science",
+   "commerce",
+   "guilds"
+  ],
+  "winning_score": 65,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over three ages of card drafting, build a civilization of wonders, buildings, and resources; add up points from military conflicts, treasury coins, wonders, civilian/commerce/guild cards, and squared science-symbol sets at the end of Age III, and the highest total wins.",
+  "checked": [
+   "https://rules.dized.com/game/pmaODHsUS_65I0ac8XvnoQ/mSkL0GqyQ4KUIU0YY9UcNw/scoring",
+   "https://www.ultraboardgames.com/7wonders/scoring.php",
+   "https://boardgamegeek.com/thread/614194/7-wonders-analysis-of-scores-of-first-25-games",
+   "https://en.wikipedia.org/wiki/7_Wonders_(board_game)"
+  ]
  },
  "similar": [
   "7 Wonders Duel",
@@ -36,6 +58,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "a7ef41ddd65e4d44",
+ "_fingerprint": "1d5c895a8647e2b0",
  "_name": "7 Wonders"
 }

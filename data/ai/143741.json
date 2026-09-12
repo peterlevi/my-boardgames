@@ -16,11 +16,19 @@
   "kind": "hidden roles and open conflict",
   "detail": "Players openly attack each other with dice results while trying to deduce or conceal team allegiance, and character abilities let players directly target others' dice or health. There's no private board; the shared dice pool and public health tokens are the entire game state."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There's no scoring at all — the game ends the instant one hidden-role team achieves its kill objective.",
-  "how_you_win": "As Sheriff or a Deputy you win by eliminating all Outlaws and the Renegade; as an Outlaw you win by killing the Sheriff; as the Renegade you win by being the sole survivor."
+  "subsystems": [
+   "life points (bullets)"
+  ],
+  "sources": [
+   "player elimination status"
+  ],
+  "winning_score": 0,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "elimination",
+  "sudden_death_common": false,
+  "how_you_win": "There is no point score; each player has hidden team allegiance and loses life points from dice hits. The Sheriff's team wins by killing all Outlaws and the Renegade, Outlaws win by killing the Sheriff, and the Renegade wins by being the sole survivor."
  },
  "similar": [
   "Bang!",
@@ -33,6 +41,6 @@
   "Watch It Played",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "7a5d2fe6eb285f00",
+ "_fingerprint": "7cd0efe0d4051b94",
  "_name": "BANG! The Dice Game"
 }

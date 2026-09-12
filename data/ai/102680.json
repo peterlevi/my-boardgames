@@ -18,11 +18,27 @@
   "kind": "drafting shared tiles and competing for senate/track position",
   "detail": "Players draft from shared forum tiles and race up common tracks (like the Senate), so there is real competition for limited resources and position, but most of the actual play happens on each player's own bowl tableau. Direct attacks or blocking of opponents is rare."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Trajan is a textbook Feld 'point salad': the mancala-style action selection feeds six largely independent tracks (building, trading, forum tiles, military, senate, Trajan tableau), each converting into VP in its own way.",
-  "how_you_win": "Cycle pieces between the six bowls of your tableau to trigger building, trading, military, senate, forum, and Trajan-tile actions, advancing on their respective tracks and cashing in tribune/province cards; the player with the highest combined score from all these tracks at game end wins."
+  "subsystems": [
+   "senate influence track",
+   "forum trading (mancala goods delivery)",
+   "military campaign (map area control)",
+   "building tableau construction",
+   "Trajan tile bonus track"
+  ],
+  "sources": [
+   "senate track position",
+   "forum deliveries",
+   "military conquests",
+   "buildings built",
+   "end-game Trajan tile bonuses"
+  ],
+  "winning_score": 90,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Continuously score VP across six parallel tracks (senate, forum, military, buildings, Trajan tiles) driven by a mancala-style action-selection system; highest cumulative score after the fixed number of rounds wins."
  },
  "similar": [
   "Amerigo",
@@ -36,6 +52,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "e5659bb776a80caf",
+ "_fingerprint": "ac5ca92a9bdd23af",
  "_name": "Trajan"
 }

@@ -17,11 +17,22 @@
   "kind": "area majority and forced conflict resolution",
   "detail": "Players place tiles and leaders on a single shared map, so territories frequently merge and trigger direct majority battles between players' leaders for control of a kingdom. Almost the entire board is shared state; there is no private tableau, so every placement can help or hinder an opponent's position."
  },
- "win_criteria": "Lowest-highest scoring",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points are tallied separately in four independent leader colors (war, farming, commerce, culture/monuments), and a player's final score is their own weakest color, so the winner is whoever has the highest such minimum.",
-  "how_you_win": "Place tiles and leaders to build majority control of provinces across all four colors, using internal and external conflicts to shift control in your favor, then compare each player's lowest-scoring color — the player whose weakest color is still the highest wins."
+  "subsystems": [
+   "Four-color leader majority battles (war, farming, trade, governance) fought through tile placement and leader movement"
+  ],
+  "sources": [
+   "red (soldier/war) points",
+   "green (farmer) points",
+   "black (trader) points",
+   "blue (governor) points"
+  ],
+  "winning_score": 15,
+  "tally": "endgame",
+  "shape": "lowest_category",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You place tiles and leaders to win regional conflicts in four colored categories, but your victory points in each category are kept hidden; when the tile supply runs out, each player's score is their weakest of the four categories, so you win by keeping every category strong rather than maximizing one."
  },
  "similar": [
   "Tigris & Euphrates",
@@ -35,6 +46,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "bbc1f38a8c1af9c7",
+ "_fingerprint": "0da50443b2e5c694",
  "_name": "Yellow & Yangtze"
 }

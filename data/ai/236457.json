@@ -17,11 +17,22 @@
   "kind": "worker sabotage and shared building sites",
   "detail": "Players compete for the same worker-placement spots and can pay to jail an opponent's worker or raid their warehouse, so turn order and timing matter a lot. Buildings under construction are a shared board state everyone contributes bricks to, while resources, virtue, and money are tracked on individual player boards."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final VP combines constructed building values, leftover silver, Old West Kingdom card bonuses, and virtue/apprentice adjustments, so no single track dominates.",
-  "how_you_win": "Build valuable buildings, manage your workers and virtue level, and end with the highest combined VP total once silver and card bonuses are added."
+  "subsystems": [
+   "building construction for VP",
+   "virtue/corruption track"
+  ],
+  "sources": [
+   "constructed buildings",
+   "virtue track bonus/penalty",
+   "leftover resources/coins"
+  ],
+  "winning_score": 65,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Send workers to gather materials and construct buildings for VP while managing a virtue/corruption track; when a building stack is depleted the game ends and the highest total VP wins."
  },
  "similar": [
   "Raiders of the North Sea",
@@ -35,6 +46,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "831db33e1eec7069",
+ "_fingerprint": "f3463b19fe55b606",
  "_name": "Architects of the West Kingdom"
 }

@@ -18,11 +18,19 @@
   "kind": "stock investment and market manipulation on a shared board",
   "detail": "All chains and the tile grid are fully shared and public, so a tile placement that merges two hotel chains directly determines bonus payouts and share values for every player holding stock in those chains."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Tile placement and mergers only matter because they build chains whose stock you hold, and the game is decided purely by converting all assets to cash at the end.",
-  "how_you_win": "You win by having the most cash after all stock is sold for its final value when the game ends."
+  "subsystems": [
+   "hotel chain stock investment and merger payouts"
+  ],
+  "sources": [
+   "cash on hand",
+   "value of stock held in active chains"
+  ],
+  "winning_score": 12000,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "end_trigger",
+  "how_you_win": "You buy stock in hotel chains you found or grow through tile placement, cashing in majority bonuses when chains merge; a player triggers the game's end (a chain reaching 41 tiles, or all chains safe), stock converts to cash, and the richest player wins."
  },
  "similar": [
   "Acquire (variants)",
@@ -36,6 +44,6 @@
   "JonGetsGames",
   "GameNight!"
  ],
- "_fingerprint": "7c1503a819eb7e4c",
+ "_fingerprint": "cc70484dba2ddffd",
  "_name": "Acquire"
 }

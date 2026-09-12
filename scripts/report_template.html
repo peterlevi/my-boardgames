@@ -302,13 +302,13 @@ th.w-win { width:146px; } th.w-br { width:104px; }
    the table painted with every column and then jumped when the page script
    finally ran — most of a second later on a slow machine. */
 .mode-any .c-verdict, .mode-any .c-bestPct, .mode-any .c-appr,
-:root:not(.mode-any) .c-win, :root:not(.mode-any) .c-breadth { display:none; }
+:root:not(.mode-any) .c-win, :root:not(.mode-any) .c-salad { display:none; }
 /* The column picker. One class per hidden column on the table beats setting
    display on 265 rows' worth of cells. */
 .off-th .c-th, .off-rk .c-rk, .off-av .c-av, .off-my .c-my,
 .off-y .c-y, .off-ds .c-ds, .off-pl .c-pl, .off-tmax .c-tmax,
 .off-w .c-w, .off-ix .c-ix, .off-acq .c-acq, .off-lp .c-lp, .off-ed .c-ed,
-.off-pp .c-pp, .off-win .c-win, .off-breadth .c-breadth,
+.off-pp .c-pp, .off-win .c-win, .off-salad .c-salad,
 .off-verdict .c-verdict, .off-bestPct .c-bestPct,
 .off-appr .c-appr, .off-rt .c-rt { display:none; }
 
@@ -487,6 +487,7 @@ table.poll tr.peak th { color:var(--ink); font-weight:700; }
 .detail-inner h4 em { font-style:normal; color:var(--warn); text-transform:none;
   letter-spacing:0; }
 td .wc { font-size:.78rem; white-space:nowrap; }
+td .wc .sd { color:var(--warn); font-weight:700; cursor:help; }
 td.gamecell { min-width:170px; }
 th, td { padding:8px 7px; }
 @media (max-width:760px) {
@@ -523,7 +524,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 /* Fixed layout cannot shrink a column below its stated width: past the point
    where the widths stop fitting, the header labels overlap their neighbours
    instead of the table getting narrower. So columns leave in order of what
-   can be spared — Win condition and Breadth first (they only show at "Any"
+   can be spared — Win condition and Point salad first (they only show at "Any"
    anyway), then Designer, the widest of what is left. */
 @media (max-width:1260px) {
   .hide-lg { display:none; }
@@ -582,7 +583,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   var KEY = 'bgg-cols-v5';
   var OFF_BY_DEFAULT = { y: 1, acq: 1, lp: 1, ed: 1, pp: 1 };
   var ALL = ['th', 'rk', 'av', 'my', 'y', 'ds', 'pl', 'tmax', 'w', 'ix',
-             'acq', 'lp', 'ed', 'pp', 'win', 'breadth', 'verdict', 'rt'];
+             'acq', 'lp', 'ed', 'pp', 'win', 'salad', 'verdict', 'rt'];
   try {
     var saved = JSON.parse(window.localStorage.getItem(KEY) || 'null');
     if (!saved) return;
@@ -735,8 +736,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <div class="row">
       <div class="f"><label for="win">Win condition</label>
         <select id="win"><!--__WIN_OPTIONS__--></select></div>
-      <div class="f"><label for="breadth">Point salad</label>
-        <select id="breadth"><!--__BREADTH_OPTIONS__--></select></div>
+      <div class="f"><label for="salad">Point salad</label>
+        <select id="salad"><!--__SALAD_OPTIONS__--></select></div>
     </div>
     <div class="row">
       <div class="f"><label>BGG rating</label>
@@ -832,7 +833,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       title="When the collection entry itself last changed">Edited</th>
     <th class="num hide-sm c-pp w-price" data-k="pp" data-col="pp">Price paid</th>
     <th class="hide-sm hide-lg c-win w-win" data-k="win" data-col="win">Win condition</th>
-    <th class="hide-sm hide-lg c-breadth w-br" data-k="breadth" data-col="breadth">Point salad</th>
+    <th class="hide-sm hide-lg c-salad w-br" data-k="salad" data-col="salad">Point salad</th>
     <th class="num hide-sm c-verdict w-atn" data-k="verdict" data-col="verdict">__ATN__</th>
     <th class="num hide-sm wide-only c-bestPct w-pct" data-k="bestPct" data-col="bestPct">Best</th>
     <th class="num hide-sm c-appr w-pct" data-k="appr" data-col="appr">Appr</th>
@@ -987,7 +988,7 @@ function refreshTagList() {
 
 var F = {
   q: el('q'), players: el('players'), mode: el('mode'),
-  ix: el('ix'), win: el('win'), breadth: el('breadth'), tagmode: el('tagmode'),
+  ix: el('ix'), win: el('win'), salad: el('salad'), tagmode: el('tagmode'),
   smin: el('smin'), smax: el('smax'),
   mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
@@ -1001,7 +1002,7 @@ function applyDefaults() {
   F.players.value = OPTS.players;
   F.mode.value = OPTS.mode;
   F.win.value = OPTS.win;
-  F.breadth.value = OPTS.breadth;
+  F.salad.value = OPTS.salad;
   F.exp.value = OPTS.expansions;
   F.ix.value = '';
   F.tagmode.value = 'all';
@@ -1086,7 +1087,7 @@ function partition() {
   var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
   var ymin = num(F.ymin.value), ymax = num(F.ymax.value);
-  var ix = F.ix.value, win = F.win.value, breadth = F.breadth.value;
+  var ix = F.ix.value, win = F.win.value, salad = F.salad.value;
   var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
 
@@ -1105,7 +1106,7 @@ function partition() {
     var pass = structural && tagsOk(g, picked, tmode) &&
       !(ix && (ai.ixl || g.ix) !== ix) &&
       !(win !== 'any' && ai.wc !== win) &&
-      !(breadth !== 'any' && ai.br !== breadth) &&
+      !(salad !== 'any' && ai.br !== salad) &&
       !(smin !== null && !(g.av >= smin)) && !(smax !== null && !(g.av <= smax)) &&
       !(mymin !== null && !(g.my >= mymin)) && !(mymax !== null && !(g.my <= mymax)) &&
       !(wmin !== null && !(g.w >= wmin)) && !(wmax !== null && !(g.w <= wmax)) &&
@@ -1134,10 +1135,12 @@ function describe() {
 
   var extra = [];
   if (F.ix.value) extra.push(F.ix.value.toLowerCase() + ' interaction');
-  if (F.win.value !== 'any') extra.push(F.win.value.toLowerCase());
-  if (F.breadth.value !== 'any') {
+  if (F.win.value !== 'any') {
+    extra.push((WIN_LABEL[F.win.value] || F.win.value).toLowerCase());
+  }
+  if (F.salad.value !== 'any') {
     extra.push('point salad: ' +
-      (SALAD_LABEL[F.breadth.value] || F.breadth.value).toLowerCase());
+      (SALAD_LABEL[F.salad.value] || F.salad.value).toLowerCase());
   }
   var picked = pickedTags();
   if (picked.length) {
@@ -1184,9 +1187,8 @@ function sortRows(rows) {
         return ['Low', 'Medium', 'High'].indexOf((g.ai && g.ai.ixl) || g.ix);
       case 'ds': return (g.ds && g.ds[0]) || null;
       case 'win': return (g.ai && g.ai.wc) || null;
-      case 'breadth': {
-        var order = ['Focused', 'Some', 'Broad', 'Salad']
-          .indexOf((g.ai && g.ai.br) || '');
+      case 'salad': {
+        var order = SALAD_ORDER.indexOf((g.ai && g.ai.br) || '');
         return order < 0 ? null : order;
       }
       default: return g[sortKey];
@@ -1220,10 +1222,14 @@ function esc(t) {
                   .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-var SALAD_LABEL = { Focused: 'No, sharp focus', Some: 'Just a touch',
-  Broad: 'Quite a lot', Salad: 'Total point salad' };
-var SALAD_SHORT = { Focused: 'No', Some: 'A touch',
-  Broad: 'Quite a lot', Salad: 'Total salad' };
+var SALAD_ORDER = ['no', 'touch', 'lot', 'total'];
+var SALAD_LABEL = { no: 'No, sharp focus', touch: 'Just a touch',
+  lot: 'Quite a lot', total: 'Total point salad' };
+var WIN_LABEL = { race: 'Race to a target', points: 'Most points at the end',
+  money: 'Most money', lowest: 'Highest of your lowest',
+  majority: 'Majority control', sudden: 'Sudden-death condition',
+  coop: 'Cooperative goal', elimination: 'Last player standing',
+  other: 'Other' };
 
 function meterClass(p) {
   return p >= 85 ? 'm4' : p >= 70 ? 'm3' : p >= 50 ? 'm2' : 'm1';
@@ -1482,16 +1488,17 @@ function buildDetail(g) {
     ['Designers', designerPills(g)],
     ['Interaction', ((g.ai && g.ai.ixl) || g.ix)],
     ['Point salad', (g.ai && SALAD_LABEL[g.ai.br]) || '—'],
-    ['Win condition', (g.ai && g.ai.wc) || '—']
+    ['Win condition', (g.ai && WIN_LABEL[g.ai.wc]) || '—']
   ];
   var ai = g.ai || {};
-  var howWin = ai.howwin || ai.why;
+  var howWin = ai.howwin;
   return '<div class="detail-inner">' +
     '<div>' +
       mediaBlock(g) +
       opinionBlock(g) +
       (howWin ? '<h4>How you win' +
-        (ai.wc ? ' — ' + esc(ai.wc) : '') + '</h4><p>' + esc(howWin) +
+        (ai.wc ? ' — ' + esc(WIN_LABEL[ai.wc] || ai.wc) : '') +
+        (ai.sd ? ', or sudden death' : '') + '</h4><p>' + esc(howWin) +
         '</p>' : '') +
       (ai.ixd ? '<h4>Interaction — ' + esc(ai.ixl || '') +
         (ai.ixk ? ', ' + esc(ai.ixk) : '') + '</h4><p>' + esc(ai.ixd) +
@@ -1889,7 +1896,7 @@ function syncSelects() {
 function markFilters() {
   var defaults = {
     q: '', players: String(OPTS.players), mode: OPTS.mode, ix: '',
-    win: OPTS.win, breadth: OPTS.breadth, exp: OPTS.expansions,
+    win: OPTS.win, salad: OPTS.salad, exp: OPTS.expansions,
     tagmode: 'all',
     smin: '', smax: '', mymin: '', mymax: '', wmin: '', wmax: '',
     tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: ''
@@ -1938,12 +1945,12 @@ var COLUMNS = [
   { k: 'lp', n: 'Last played', off: true },
   { k: 'ed', n: 'Edited', off: true },
   { k: 'pp', n: 'Price paid', off: true },
-  { k: 'win', n: 'Win condition' }, { k: 'breadth', n: 'Point salad' },
+  { k: 'win', n: 'Win condition' }, { k: 'salad', n: 'Point salad' },
   { k: 'verdict', n: 'At N / Best / Appr' }, { k: 'rt', n: 'Ratings' }
 ];
 /* The order cells sit in, including the two columns that are never optional. */
 var DEFAULT_ORDER = ['th', 'rk', 'av', 'my', 'n', 'y', 'ds', 'pl', 'tmax', 'w',
-  'ix', 'acq', 'lp', 'ed', 'pp', 'win', 'breadth', 'verdict', 'bestPct',
+  'ix', 'acq', 'lp', 'ed', 'pp', 'win', 'salad', 'verdict', 'bestPct',
   'appr', 'rt'];
 var COLKEY = 'bgg-cols-v5';
 var colState = {}, gameMode = 'ds', colOrder = DEFAULT_ORDER.slice();

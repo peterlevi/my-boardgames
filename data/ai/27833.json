@@ -18,11 +18,19 @@
   "kind": "network building and route competition",
   "detail": "Players compete for the same track spaces, cities, and goods cubes on a shared board, so building into contested areas or grabbing high-value goods directly affects opponents' options. Turn order is auctioned, adding another layer of direct interaction each round."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Your position on the shared VP/income track is driven almost entirely by the goods deliveries you complete each round, converted directly into track movement.",
-  "how_you_win": "Build track, grab the right colored goods, and run them as far as possible to good cities each round; whoever has advanced furthest on the VP track when the game ends wins."
+  "subsystems": [
+   "goods delivery along a rail network onto a shared income/VP track"
+  ],
+  "sources": [
+   "position on the income/victory-point track after deliveries"
+  ],
+  "winning_score": 100,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Build track, upgrade your train, and deliver goods for the longest routes, choosing each time whether to bank the profit as cash or push your marker forward on the shared VP track; after a fixed number of rounds the furthest-advanced player wins."
  },
  "similar": [
   "Age of Steam",
@@ -36,6 +44,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "8fb63263cf1806a2",
+ "_fingerprint": "0721e73651f7bb4f",
  "_name": "Steam"
 }

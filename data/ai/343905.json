@@ -16,11 +16,25 @@
   "kind": "mostly parallel play",
   "detail": "Each player builds and optimizes their own hex-tile board largely independently, with light competition only over shared tile supply and turn order. Most of the game state lives on individual player boards rather than a shared map."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Nearly every action you take — building, farming, gathering, trading, and fulfilling contracts — feeds its own scoring track or bonus that's added up at the end.",
-  "how_you_win": "Draft action tiles round after round to build houses, raise cattle, produce and trade goods, and complete contracts, banking points from many separate tracks and end-game bonuses; the player with the highest combined total when the final round ends wins."
+  "subsystems": [
+   "population/settlement growth",
+   "contract fulfillment",
+   "exploration tile (expedition) sets",
+   "building network development"
+  ],
+  "sources": [
+   "era-end scoring for population and buildings",
+   "completed contracts",
+   "collected expedition/exploration tile sets",
+   "leftover resources and multiplier bonuses"
+  ],
+  "winning_score": 170,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across four eras you build up population, buildings, and fulfilled contracts, plus sets of exploration tiles, with VP tallied at the end of each era; the highest cumulative total after the fourth era wins."
  },
  "similar": [
   "Great Western Trail",
@@ -34,6 +48,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "96e889befcd945d6",
+ "_fingerprint": "0a76304ebd4aae9a",
  "_name": "Boonlake"
 }

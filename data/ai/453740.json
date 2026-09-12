@@ -19,11 +19,19 @@
   "kind": "Direct market manipulation, auctions, negotiation",
   "detail": "The economy is entirely shared and player-created: every player's pricing, buying, and selling decisions directly move the market other players depend on. Auctions are player-vs-player (a shipper can choose to sell to the bank at double the top bid or must buy at that price themselves), and players can deliberately refuse to trade with a rival to choke off their income — the board state is almost entirely communal rather than separate player boards."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Everything — factories, containers, and trading — exists only to convert into cash via auctions and secret container values, so final wealth is the sole measure.",
-  "how_you_win": "You manufacture and ship containers, auction them off to other players (or sell your own secretly valuable ones), and whoever ends the game with the most money wins."
+  "subsystems": [
+   "production/trade cash economy (build factories, produce and sell containers)"
+  ],
+  "sources": [
+   "cash on hand at game end (including value of unsold containers/warehouse goods)"
+  ],
+  "winning_score": 120,
+  "tally": "endgame",
+  "shape": "single_currency",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You manufacture, ship, and auction containers in a closed economy where money only moves between players; the game ends once production materials/pieces run out, and whoever has amassed the most cash wins."
  },
  "similar": [
   "Antiquity",
@@ -39,6 +47,6 @@
   "https://www.allplay.com/board-games/container"
  ],
  "source": "web",
- "_fingerprint": "b0afa1cbf5e6731b",
+ "_fingerprint": "787302276dfafbaf",
  "_name": "Container"
 }

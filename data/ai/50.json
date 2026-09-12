@@ -17,11 +17,19 @@
   "kind": "shared discard denial, parallel expeditions",
   "detail": "Each player builds their own separate expeditions in front of them, but the shared discard piles mean you're constantly deciding whether to hand your opponent a useful card or deny them one. It's mostly parallel play punctuated by these discard-timing decisions."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Every point comes from the same mechanism — an expedition's played-card total minus its entry cost, multiplied by any handshake cards — just applied separately to each of the color suits.",
-  "how_you_win": "Play cards to build ascending expeditions in the colors worth pursuing (each costs 20 points to open), discard the rest, then sum all expedition scores across three hands; the higher total wins."
+  "subsystems": [
+   "expedition scoring per color (card total minus 20 start cost, handshake multiplier, 8+ card bonus)"
+  ],
+  "sources": [
+   "each color's expedition"
+  ],
+  "winning_score": 60,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Each expedition you start costs 20 points before it earns anything back, so an expedition left incomplete or with only low cards loses points; once the deck runs out, whoever's total across all expeditions (multiplied up by handshake cards) is higher wins."
  },
  "similar": [
   "Jaipur",
@@ -35,6 +43,6 @@
   "Rahdo Runs Through",
   "The Game Boy Geek"
  ],
- "_fingerprint": "9cdf65e7da868ba9",
+ "_fingerprint": "0cabb5728b5b3e82",
  "_name": "Lost Cities"
 }

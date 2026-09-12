@@ -18,11 +18,26 @@
   "kind": "shared board space drafting with mostly parallel tableau-building",
   "detail": "Players compete for the same limited spaces on shared tracks and the fair/market area, so timing and blocking matter, but each player mostly develops their own private engine of contracts and buildings. Direct conflict is minimal; interaction is mostly about racing for the same resource nodes."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accumulate independently from fulfilled contracts, cathedral construction contributions, sets of coats of arms, recruited noble personalities, and fair participation, so no single engine dominates.",
-  "how_you_win": "Use dice-based action drafting to travel between cities, gather resources, fulfill wool/iron contracts, contribute to cathedrals, collect coat-of-arms sets, and recruit personalities; whoever has amassed the most prestige points across these varied tracks at the end wins."
+  "subsystems": [
+   "contract fulfillment (wool/iron goods)",
+   "cathedral construction investment",
+   "coat-of-arms set collection",
+   "noble favor / notable people bonuses"
+  ],
+  "sources": [
+   "contracts completed",
+   "cathedral level reached",
+   "coat-of-arms sets collected",
+   "favor track position",
+   "notable people card bonuses"
+  ],
+  "winning_score": 160,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Accumulate the most VP across several parallel engines (contracts, cathedrals, coats of arms, favor/notable people) over a fixed number of rounds; most total prestige wins."
  },
  "similar": [
   "Newton",
@@ -36,6 +51,6 @@
   "Watch It Played",
   "No Pun Included"
  ],
- "_fingerprint": "9111cb452fa2ef24",
+ "_fingerprint": "0696d6830dc6a13c",
  "_name": "Tiletum"
 }

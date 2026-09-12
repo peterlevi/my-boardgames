@@ -18,11 +18,22 @@
   "kind": "bluffing and take-that via hidden role selection",
   "detail": "Players secretly choose characters whose powers can steal gold, destroy buildings, or kill another player's turn entirely, so deducing who picked what and targeting them is central. Your own city (tableau of districts) is private and separate, but character effects reach directly into opponents' gold and buildings."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Score is essentially the sum of building costs in your city, with a small number of situational bonuses (completing all colors, being first to eight buildings) layered on top.",
-  "how_you_win": "Each round you secretly select a character role for its ability and income, then use gold to construct buildings; once someone reaches seven (or eight) buildings the round finishes and whoever has the highest building-cost total, plus any bonuses, wins."
+  "subsystems": [
+   "city building (building card values and bonuses)"
+  ],
+  "sources": [
+   "building card values",
+   "all-five-colors completion bonus",
+   "first-to-finish bonus",
+   "unique building special abilities"
+  ],
+  "winning_score": 30,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Each round you draft a character role for income and abilities and use it to construct buildings in your city; once a player completes seven buildings the round finishes and whoever has the highest total building value, plus color and completion bonuses, wins."
  },
  "similar": [
   "Coup",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "2f3b9330369bffd8",
+ "_fingerprint": "905aa20a9f4b3661",
  "_name": "Citadels"
 }

@@ -18,11 +18,21 @@
   "kind": "worker placement blocking and stealing resources",
   "detail": "Players compete for the same limited worker placement spots on a shared city board, and can bump, block, or outbid each other for locations and resources needed to stage their shows. Each player still develops their own tricks and reputation track privately, so the shared board is the main point of friction."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "The single fame track is the game's real currency, driven almost entirely by staging successful magic performances plus a secondary layer of achievement/goal cards, rather than many disconnected scoring systems.",
-  "how_you_win": "Train your illusionist and workers, gather components and blueprints, and perform magic tricks on stage to earn fame based on trick quality and reputation, supplemented by completing personal achievement goals; the illusionist with the most fame at the end is the winner."
+  "subsystems": [
+   "fame track from staged performances",
+   "trick/discipline mastery bonuses"
+  ],
+  "sources": [
+   "performance fame earned",
+   "endgame bonuses from mastered tricks, reputation, and leftover resources"
+  ],
+  "winning_score": 50,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Build up an illusionist's fame by staging increasingly impressive shows over a fixed number of days, with final bonuses added at the end; most fame wins."
  },
  "similar": [
   "Alchemists",
@@ -36,6 +46,6 @@
   "Watch It Played",
   "The Dice Tower"
  ],
- "_fingerprint": "1ccf013881863432",
+ "_fingerprint": "9c0a85f91c0eaf7f",
  "_name": "Trickerion: Legends of Illusion"
 }

@@ -18,11 +18,21 @@
   "kind": "stock manipulation and route competition",
   "detail": "As in other 18xx games, players buy and sell shares in shared public companies, directly affecting each other's holdings and who controls the presidency, while operating rounds compete for the same track connections and revenue on one shared map."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "As in other 18xx titles, all decisions about track, trains, and share trading are just means to increase your personal cash-plus-share-value total.",
-  "how_you_win": "You win by having the highest total personal value (cash on hand plus your shareholdings' worth) at game end."
+  "subsystems": [
+   "stock market share trading",
+   "railroad operations (track-laying and train runs)"
+  ],
+  "sources": [
+   "cash on hand",
+   "value of shares held",
+   "value of private/minor companies owned"
+  ],
+  "winning_score": 5000,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "exhaustion",
+  "how_you_win": "You grow your net worth by running trains for revenue and trading company stock, and when the bank's money supply runs out the player with the highest total value wins."
  },
  "similar": [
   "1830: Railways & Robber Barons",
@@ -36,6 +46,6 @@
   "Watch It Played",
   "JonGetsGames"
  ],
- "_fingerprint": "a09e2ec95e8adf54",
+ "_fingerprint": "5252e93212d1945e",
  "_name": "18Chesapeake"
 }

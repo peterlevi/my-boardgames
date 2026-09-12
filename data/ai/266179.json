@@ -16,11 +16,23 @@
   "kind": "shared worker placement and race for network slots",
   "detail": "Players compete for the same limited worker-placement actions and gate connections, so timing and blocking matter, but most of your engine (routes, settlers, resources) lives on your own board. The shared exoplanet map is where majority and space races actually collide."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come from three largely separate sources: advancing your settlers along the colonist tracks, majority/position bonuses on those tracks, and completed personal objective cards.",
-  "how_you_win": "You build gate networks and send Human/Android/Robot settlers through them to advance on the corresponding tracks and fulfill objectives; the player with the most total points at game end wins."
+  "subsystems": [
+   "exoplanet zone majority control via settlers",
+   "space-gate network construction bonus",
+   "technology/objective card bonuses"
+  ],
+  "sources": [
+   "zone occupation points on the three exoplanets",
+   "connected-gate network bonuses",
+   "technology card end-game bonuses"
+  ],
+  "winning_score": 70,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You use worker placement and gate-building to move settlers across a growing network onto exoplanet zones, scoring for majority presence and connected gates as zones fill up; when the exoplanets are fully colonized, remaining bonuses (technology, network) are added and the highest total wins."
  },
  "similar": [
   "Yokohama",
@@ -34,6 +46,6 @@
   "Rahdo Runs Through",
   "BoardGameCo"
  ],
- "_fingerprint": "0e6a8537228abd56",
+ "_fingerprint": "34a41ba52be8f21a",
  "_name": "Space Gate Odyssey"
 }

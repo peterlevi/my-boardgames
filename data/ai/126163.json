@@ -18,11 +18,23 @@
   "kind": "worker placement blocking on shared rotating gears",
   "detail": "All players place workers on the same set of gears, so popular spots get blocked or bumped, forcing rivals onto worse options, while resource and building tracks are otherwise managed on each player's own board. The temple tracks and available action spots are the main shared state."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score combines temple-track bonuses, constructed buildings, monuments, and leftover-resource conversion, so several distinct engines each contribute meaningfully to the total.",
-  "how_you_win": "Place workers on the rotating gears to gather resources and take increasingly valuable actions as time advances, using corn and resources to climb temple tracks, construct buildings, and build monuments; the player with the highest combined score from these sources when the calendar ends wins."
+  "subsystems": [
+   "temple track advancement",
+   "building/tech construction"
+  ],
+  "sources": [
+   "temple track position (running plus end bonus)",
+   "buildings constructed",
+   "crystal skull bonuses",
+   "leftover resources"
+  ],
+  "winning_score": 90,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Climb the four temple tracks and construct buildings using dynamic worker placement on the rotating gears; the player with the most VP once the calendar completes its cycle wins."
  },
  "similar": [
   "Trajan",
@@ -36,6 +48,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "36fe7bc39c527f2e",
+ "_fingerprint": "8a9c4349bdc4b3b0",
  "_name": "Tzolk'in: The Mayan Calendar"
 }

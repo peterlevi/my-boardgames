@@ -18,11 +18,23 @@
   "kind": "mostly parallel play with shared resource/market competition",
   "detail": "Each player operates their own machine and board almost independently, with interaction limited to competing for shared market slots, turn order, and end-game scoring positions rather than direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Nearly every system in the game — machine parts built, contracts fulfilled, board tracks climbed, and end-game bonuses — converts into points, typical of Lacerda's interlocking economic engines.",
-  "how_you_win": "Build and upgrade your weather machine, fulfill contracts and track objectives across several interlocking tracks, and finish with the highest total after all the various scoring categories are tallied."
+  "subsystems": [
+   "Regional weather-dial tracks (rain, wind, temperature) each with independent VP payouts",
+   "City/project completion",
+   "University degree/tech advancement"
+  ],
+  "sources": [
+   "Weather track bonuses per region",
+   "Completed city contracts/projects",
+   "Degrees and technology milestones"
+  ],
+  "winning_score": 130,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You juggle several independent weather-adjustment tracks and project/degree tracks, each paying VP as you hit milestones; when the end-trigger condition is reached, VP from all these subsystems plus leftover resources are totaled and the highest sum wins."
  },
  "similar": [
   "On Mars",
@@ -36,6 +48,6 @@
   "Watch It Played",
   "JonGetsGames"
  ],
- "_fingerprint": "95b8c18ffdeca3e4",
+ "_fingerprint": "4140d91cd18ee86d",
  "_name": "Weather Machine"
 }

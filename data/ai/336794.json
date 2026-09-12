@@ -18,11 +18,23 @@
   "kind": "shared tile pool scramble plus open conflict in flight",
   "detail": "During building, everyone grabs from the same public pool of tiles in real time, so speed and spatial awareness directly cost opponents pieces they wanted. During flight, players share the same event deck and can end up firing on or colliding with each other's ships, with the board state (position on the track) fully shared and visible."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Across the multi-flight campaign, credits are gained from delivered goods and completed flights and lost to damage, so the final credit total decides the winner.",
-  "how_you_win": "Build a resilient ship each flight, haul valuable cargo through hazards while keeping your ship and crew intact, and finish the campaign with more credits than your rivals."
+  "subsystems": [
+   "ship building (real-time component drafting)",
+   "flight scoring (cargo, damage, bonuses)"
+  ],
+  "sources": [
+   "value of delivered cargo",
+   "credits from event/bonus tiles",
+   "penalties for lost crew and components",
+   "completion bonuses"
+  ],
+  "winning_score": 30,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "After three increasingly dangerous flights, the player with the most credits — from delivered goods and bonuses minus penalties for lost crew and ship parts — wins."
  },
  "similar": [
   "Space Alert",
@@ -36,6 +48,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "a228f3eb3bc17a57",
+ "_fingerprint": "63128f8b8df3fc8b",
  "_name": "Galaxy Trucker (Second Edition)"
 }

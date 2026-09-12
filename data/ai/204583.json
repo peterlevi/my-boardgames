@@ -18,11 +18,19 @@
   "kind": "mostly parallel play with a competitive draft",
   "detail": "The only shared resource is the row of available dominoes each round, where picking a strong tile bumps you later in the next turn order; beyond that, each player builds and scores their own separate kingdom grid with no way to affect anyone else's board directly."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Every point comes from the same formula — the size of each connected kingdom region multiplied by its crown count — so the whole game reduces to one scoring category applied region by region.",
-  "how_you_win": "Draft dominoes and place them to build connected same-terrain regions containing crowns; at the end, multiply each region's tile count by its crowns and sum everything, and the highest total wins."
+  "subsystems": [
+   "kingdom tile-laying scored by connected terrain regions multiplied by crowns"
+  ],
+  "sources": [
+   "each connected same-terrain region's tile count times its crown count, summed across the kingdom"
+  ],
+  "winning_score": 45,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You win by arranging your drafted dominoes into large, crown-heavy connected terrain regions, since each region scores its tile count times its crown count and these are totaled once all dominoes are placed."
  },
  "similar": [
   "Azul",
@@ -36,6 +44,6 @@
   "Before You Play",
   "JonGetsGames"
  ],
- "_fingerprint": "e10234a9badddeb2",
+ "_fingerprint": "2c287379bfc91c75",
  "_name": "Kingdomino"
 }

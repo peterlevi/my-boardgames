@@ -18,11 +18,22 @@
   "kind": "shared market dynamics and indirect competition",
   "detail": "There's no direct player-versus-player conflict, but every purchase or sale shifts the shared market prices that everyone else must then react to, making the market itself the primary shared game state alongside each player's individual city tableau."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Points leak out of almost every system in the game at once — mining output, market trading, building construction, and tile-laying bonuses — so the winner is whoever balanced all of them best rather than one dominant engine.",
-  "how_you_win": "Use double-sided action cards to mine silver, trade on the fluctuating market, place tiles, and construct buildings around Kutná Hora; the player with the highest combined score from all these economic activities at the end wins."
+  "subsystems": [
+   "silver mining and market trading for money on a fluctuating supply/demand market",
+   "city building via tile placement for endgame bonuses"
+  ],
+  "sources": [
+   "profit from mining and trading silver",
+   "points from placed buildings/city tiles",
+   "completed plans or contracts"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You win by profiting the most from mining and trading silver on the game's dynamic market while also scoring points for the buildings and tiles you've added to the growing city."
  },
  "similar": [
   "Le Havre",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "2440ac890e3c6dc5",
+ "_fingerprint": "61067278c5fb7a09",
  "_name": "Kutná Hora: The City of Silver"
 }

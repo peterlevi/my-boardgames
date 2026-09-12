@@ -18,11 +18,17 @@
   "kind": "open conflict on a shared grid",
   "detail": "Both players' units occupy and fight directly on the same battlefield, with attacks, movement, and card play constantly affecting the opponent's board state. There is no parallel play; nearly every action is a direct confrontation."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no scoring track at all; the game ends the instant one player's summoner is destroyed.",
-  "how_you_win": "Summon units, maneuver them across the battlefield, and use attacks to kill the enemy summoner before they kill yours."
+  "subsystems": [
+   "unit combat aimed at destroying the enemy summoner"
+  ],
+  "sources": [],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "elimination",
+  "sudden_death_common": false,
+  "how_you_win": "There is no point total: you summon units, maneuver them on the grid, and attack until you destroy the opposing summoner (or they destroy yours) outright."
  },
  "similar": [
   "Star Wars: The Deckbuilding Game",
@@ -36,6 +42,6 @@
   "The Dice Tower",
   "Before You Play"
  ],
- "_fingerprint": "867e6acd8a2bc60a",
+ "_fingerprint": "468d87a3a7a67bf8",
  "_name": "Summoner Wars (Second Edition)"
 }

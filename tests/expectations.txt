@@ -1,0 +1,34 @@
+# What the scoring rules have to get right, in the owner's own words.
+#
+#   <game name> : salad=<no|touch|lot|total|<=level|>=level>  win=<key>
+#
+# These are a test, not data: nothing here is fed into the report. Run
+#   python3 scripts/check_scoring.py
+# after changing scripts/scoring.py or the facts pass, and it says which of
+# these the rules now agree with.
+
+# Not point salads, however many lines are on the scorepad.
+Food Chain Magnate          : salad=no      win=money
+The Great Zimbabwe          : salad=no      win=race
+Innovation                  : salad=no
+Biblios                     : salad=no
+Catan                       : salad=no      win=race
+Dune: Imperium              : salad<=touch  win=race
+Dune: Imperium – Uprising   : salad<=touch  win=race
+Root                        : salad<=touch
+7 Wonders Duel              : salad<=touch
+
+# Two related sources, or one scored per colour: a touch at most.
+Brass: Birmingham           : salad=touch
+Brass: Lancashire           : salad<=touch
+Carcassonne Big Box 6       : salad<=touch
+Kingdomino                  : salad<=touch
+Ingenious 3D                : salad<=touch
+Tigris & Euphrates          : salad<=touch  win=lowest
+Yellow & Yangtze            : salad<=touch  win=lowest
+Sidereal Confluence         : salad<=touch
+
+# Separate minigames, tallied up: the real thing.
+Rajas of the Ganges         : salad>=lot
+Conspiracy: Abyss Universe  : salad>=touch
+Ark Nova                    : salad>=lot

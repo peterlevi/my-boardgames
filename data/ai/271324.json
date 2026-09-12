@@ -17,11 +17,23 @@
   "kind": "mostly parallel drafting and engine building",
   "detail": "Players see and pass around the same pool of cards, so they can deny each other specific cards by drafting them first, but production, resources, and scoring all live on each player's own empire board with almost no direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score adds up printed points on built development cards, empire-wide bonuses/multipliers, leftover resources, and achievement thresholds.",
-  "how_you_win": "Draft cards each round, choose which to recycle for resources and which to construct into your Empire for ongoing production and points, then finish with the highest combined score from your buildings, resources, and bonuses."
+  "subsystems": [
+   "constructing Development cards for printed and conditional VP",
+   "Empire Development track from recycled excess resources for milestone bonuses"
+  ],
+  "sources": [
+   "VP printed on built developments",
+   "conditional bonus VP from development effects",
+   "Empire Development milestone VP",
+   "leftover resource penalties"
+  ],
+  "winning_score": 35,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Draft and build Development cards over 4 rounds to grow your production engine, recycling excess resources to climb the Empire Development track; after round 4, sum VP from built developments (including their conditions) and track bonuses, minus unused resources, for the highest total."
  },
  "similar": [
   "7 Wonders",
@@ -35,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "b0e5c03a5a21696e",
+ "_fingerprint": "9933db6957d3780b",
  "_name": "It's a Wonderful World"
 }

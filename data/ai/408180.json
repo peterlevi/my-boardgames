@@ -18,11 +18,23 @@
   "kind": "worker placement blocking and area majority",
   "detail": "Players compete for limited worker-placement spots and area-majority positions on the shared base, so timing and blocking opponents from key actions matters, while most engine-building happens on individual player boards."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Scoring draws from area-majority control of the base, the specific corporation projects funded, contracts completed, and resource/income tracks, with no single one dominating.",
-  "how_you_win": "Build structures to gain area majority on the Moon base, fund corporation projects for bonus abilities and scoring opportunities, and finish with the most points once these are tallied."
+  "subsystems": [
+   "zone area majority on the shared moon board",
+   "corporation project scoring (varies by the 3 corporations in play)",
+   "income/contracts"
+  ],
+  "sources": [
+   "zone majority bonuses",
+   "corporation-specific project points",
+   "leftover resources/income"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Players place structures to contest majority control of the moon's zones and fund corporation projects that unlock their own scoring rules; once the shared board/track fills and triggers the endgame, zone majorities and corporation project points are totaled for the highest score."
  },
  "similar": [
   "Merv: The Heart of the Silk Road",
@@ -36,6 +48,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "641d8958de231892",
+ "_fingerprint": "fece515598496d31",
  "_name": "Shackleton Base: A Journey to the Moon"
 }

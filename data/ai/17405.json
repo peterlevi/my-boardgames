@@ -18,11 +18,21 @@
   "kind": "stock manipulation and route competition",
   "detail": "Players hold shares in the same corporations and can force presidency changes or dump stock to hurt rivals, while operating rounds see everyone competing for the same limited track connections and revenue-generating routes on a shared map."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Track-building and train-running only matter insofar as they generate revenue that becomes cash or boosts share price, so everything funnels into one net-worth figure.",
-  "how_you_win": "The player with the greatest combined wealth — cash plus the value of stock and private companies held — when the game ends wins."
+  "subsystems": [
+   "stock market share trading",
+   "railroad operations (track-laying and train runs)"
+  ],
+  "sources": [
+   "cash on hand",
+   "value of shares held",
+   "value of private companies owned"
+  ],
+  "winning_score": 6000,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "exhaustion",
+  "how_you_win": "As in other 18xx games, you build up net worth (cash plus share value) through operating railroads and trading stock, and the richest player when the bank breaks wins."
  },
  "similar": [
   "1830: Railways & Robber Barons",
@@ -36,6 +46,6 @@
   "Watch It Played",
   "JonGetsGames"
  ],
- "_fingerprint": "eac36478cf9d5ede",
+ "_fingerprint": "6b6bc5f6b3d6d68c",
  "_name": "1846: The Race for the Midwest"
 }

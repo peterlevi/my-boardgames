@@ -18,11 +18,22 @@
   "kind": "drafting and light auction/blocking",
   "detail": "Players draft dice in turn order and can be blocked from taking the die or advisor they wanted, and the shared player-order track and artisan/ship spaces create competition for limited slots. Most of the actual building happens on each player's own tableau and tracks, so it's parallel development with periodic friction points."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score adds up several largely independent tracks: monastery relationship levels, completed expedition cards, favor/coat-of-arms tiles collected each round, and a small conversion of leftover ducats.",
-  "how_you_win": "You draft dice each round to gather colored cubes, coins, and favors, spend those to advance monastery tracks and fund expeditions, and the player with the highest combined total across all these tracks at game end wins."
+  "subsystems": [
+   "card-effect VP engine (four color decks: nobility, clergy, merchants, explorers)",
+   "monastery/ship favor track"
+  ],
+  "sources": [
+   "victory point track advanced by played cards",
+   "monastery pilgrimage track position",
+   "end-game set/majority bonuses on cards"
+  ],
+  "winning_score": 85,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You draft dice each round to buy cards and take actions, most of which push your marker up a shared VP track immediately, then add a final round of card-driven bonuses; after the fixed number of rounds the highest total wins."
  },
  "similar": [
   "Concordia",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "27df1b3a7f025f18",
+ "_fingerprint": "950fe01cde9ee165",
  "_name": "Coimbra"
 }

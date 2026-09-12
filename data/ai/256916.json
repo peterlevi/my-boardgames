@@ -18,11 +18,22 @@
   "kind": "parallel economic building with light space competition",
   "detail": "Players build on a shared map and can be blocked from settling certain cities first, but most of the game is independent engine-building on your own tableau of cards. Interaction is indirect, coming from racing for the same city slots and resource availability rather than direct attacks."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final scoring runs through each personality card a player has collected, and these cards reward distinct, largely unrelated things (city-color majorities, saved coins, sold goods, house colors, colonist count), so the total comes from several independent categories.",
-  "how_you_win": "You use cards on your personal deck to move colonists, build houses, and produce/trade goods, and at game end you total up bonuses from each personality card you've acquired, with the highest sum winning."
+  "subsystems": [
+   "resource-type multiplier scoring (brick, food, tools, wine, cloth production cards)",
+   "colonist network / Prefect city-diversity bonus"
+  ],
+  "sources": [
+   "Vis cards multiplying owned production buildings per good",
+   "Prefect card region bonus",
+   "leftover coins"
+  ],
+  "winning_score": 120,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You spend the game building production buildings and buying multiplier cards for the five goods; once a player exhausts their colonists/cards the end is triggered, and everyone then totals goods-multiplier VP plus the Prefect city bonus, highest wins."
  },
  "similar": [
   "Concordia",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "b4bcc1749a5421db",
+ "_fingerprint": "f78640bc2d84ec08",
  "_name": "Concordia Venus"
 }

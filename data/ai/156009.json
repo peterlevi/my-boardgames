@@ -16,11 +16,21 @@
   "kind": "push-your-luck with opportunistic taking",
   "detail": "Any player can grab cards revealed into the shared harbor before the active player, so there's constant opportunistic sniping of good cards, though each player's own tableau of recruited cards/coins is private. The shared deck and harbor row are the main point of contact between players."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "The game ends the instant someone reaches the victory-point threshold, and those points come mainly from hired person cards and completed expeditions, with a small passive bonus for leftover coins.",
-  "how_you_win": "Push your luck drawing ship cards for coins, then spend coins to hire valuable person cards and complete expeditions; the first to reach the required VP total (nudged up by leftover coins) ends the game and wins."
+  "subsystems": [
+   "hiring persons for VP with type-set bonuses",
+   "completing expeditions for VP and rewards"
+  ],
+  "sources": [
+   "victory points from hired persons",
+   "victory points from expeditions"
+  ],
+  "winning_score": 12,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "Push your luck drawing cards to earn coins for hiring persons (worth VP, with bonuses for owning multiple types) and completing expeditions with your ships; once any player reaches 12 points the current round finishes and the highest score wins."
  },
  "similar": [
   "Jaipur",
@@ -34,6 +44,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "317d2d8fc6e5df29",
+ "_fingerprint": "ddff7af2c8cd0094",
  "_name": "Port Royal"
 }

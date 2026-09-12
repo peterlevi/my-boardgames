@@ -16,11 +16,19 @@
   "kind": "blind bidding and drafting",
   "detail": "Players bid against each other for the same cards during the market phase and compete directly for majority control in each of the five categories. The card marketplace and gold reserves are shared/visible state, while each player's collected cards and coins form their own hidden holdings until scoring."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "The rules explicitly award victory points in five separate categories, each won independently by whoever holds the most of that resource or worker type.",
-  "how_you_win": "Bid your limited gold to acquire cards in five categories (illuminators, scribes, manuscripts, scrolls, supplies), then claim whichever categories you hold the most of; the player with the highest combined score across all five categories wins."
+  "subsystems": [
+   "category majority bidding (illuminators, scribes, manuscripts, scrolls, supplies)"
+  ],
+  "sources": [
+   "five auctioned categories"
+  ],
+  "winning_score": 25,
+  "tally": "endgame",
+  "shape": "majority_control",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Through a series of auctions you try to hold the majority of cards in each of five categories; once the deck runs out, whoever holds the majority in a category scores all its points, and the highest total wins."
  },
  "similar": [
   "For Sale",
@@ -34,6 +42,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "e023ecdf62aabc38",
+ "_fingerprint": "1613c35e4638d300",
  "_name": "Biblios"
 }

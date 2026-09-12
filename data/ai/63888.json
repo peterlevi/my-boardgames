@@ -18,11 +18,20 @@
   "kind": "open tableau effects, forced exchanges, and direct attacks",
   "detail": "All players' tableaus are fully public, and dogma effects constantly let players share, steal, transfer, or destroy cards across the table, so the shared board state matters as much as any individual player's cards."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Broad",
-  "why": "The game is normally won by claiming a set number of special Achievement cards, unlocked by reaching icon thresholds across several resource colors, not by tallying a running score.",
-  "how_you_win": "You play and use technology cards to build up icons of different colors and trigger their special abilities, spending resources to claim Achievement cards; the first player to collect enough Achievements wins immediately (or, if the deck runs out first, whoever has the most Achievements wins)."
+  "subsystems": [
+   "card tableau/dogma engine"
+  ],
+  "sources": [
+   "age achievements (score pile thresholds)",
+   "special achievements (icon/tag conditions)"
+  ],
+  "winning_score": 6,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "Play and activate technology cards to build icons and grow your score pile, claiming an Achievement whenever your score pile meets an age's threshold; the first player to hold enough Achievements (or all five Special Achievements) wins immediately."
  },
  "similar": [
   "Innovation Ultimate",
@@ -36,6 +45,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "68ac02a4e0b117b5",
+ "_fingerprint": "5e327ebf582fa396",
  "_name": "Innovation"
 }

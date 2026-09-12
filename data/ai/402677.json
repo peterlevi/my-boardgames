@@ -18,11 +18,22 @@
   "kind": "Shared triggers, indirect blocking",
   "detail": "Each player runs their own city/board, but triggering a Production phase hands every player a bonus based on their own invention tracks, so opponents' actions constantly \"drip\" benefits to you. Expanding districts and using shared worker-placement/rondel spaces also opens or closes opportunities for others, so interaction is mostly indirect rather than direct confrontation."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score sums district development, resource/production tracks, contracts or goals, and end-game bonuses that are each scored independently.",
-  "how_you_win": "You cycle your magnate around the rondel to produce resources and expand your city's buildings and districts, converting efficient production and completed objectives into victory points; the highest total at game end wins."
+  "subsystems": [
+   "city/production network built via rondel-driven worker placement",
+   "contract and objective fulfillment"
+  ],
+  "sources": [
+   "end-game building and network value",
+   "completed contracts/objectives",
+   "leftover resources/bonuses"
+  ],
+  "winning_score": 150,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You cycle a magnate around a rondel to place workers, grow your city's production and trade network, and fulfill contracts; the game ends once end conditions trigger and the player with the most combined points wins."
  },
  "similar": [
   "Bitoku",
@@ -39,6 +50,6 @@
   "https://devirgames.com/the-kemushi-saga-a-magical-world-for-devir-board-games"
  ],
  "source": "web",
- "_fingerprint": "9b28f2b433823657",
+ "_fingerprint": "437f24e287fe1c7a",
  "_name": "Daitoshi"
 }

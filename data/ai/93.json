@@ -18,11 +18,20 @@
   "kind": "area majority and blocking",
   "detail": "Players fight directly over the same regions, repositioning knights to break or hold majorities, while secretly loading the castillo for a surprise placement each round. Almost all meaningful state (the board, King position, regions) is shared; only hands of power cards and the castillo are private."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Everything funnels into area-majority scoring of regions at three checkpoints (rounds 3, 6, 9), so whoever controls the most valuable regions with caballeros wins.",
-  "how_you_win": "You bid for turn order/action strength, move knights onto the board, and win by holding 1st/2nd/3rd place in as many high-value regions as possible when scoring hits, accumulating the most total points by round 9."
+  "subsystems": [
+   "area majority control of regions via caballeros"
+  ],
+  "sources": [
+   "region control points (1st/2nd/3rd)",
+   "secret Castillo region (final scoring only)"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "majority_control",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Have the most caballeros in each region when it's scored (after rounds 3, 6 and 9), including the hidden Castillo region scored only at the end; highest total after nine rounds wins."
  },
  "similar": [
   "Tikal",
@@ -36,6 +45,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "48a6a88b6dc33cb3",
+ "_fingerprint": "25e8f81676dd6d5f",
  "_name": "El Grande"
 }

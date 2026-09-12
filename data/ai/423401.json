@@ -19,11 +19,24 @@
   "kind": "Indirect blocking and drafting competition",
   "detail": "Players mostly build their own engines and boards independently; the main interaction point is turn-order blocking during dice/action drafting (taking a die or space before an opponent can), plus competing for area majority/presence on a shared board. There is no direct conflict or combat, and reviewers explicitly describe interaction as minimal, calling out 'little to no player interaction apart from the blocking during dice placement.'"
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "As a civilization-building game, final score combines area majority/influence, clan development, resource and building accumulation, and other end-game bonuses.",
-  "how_you_win": "You draft actions to grow your clan's territory, buildings, and development track over the game, and the player with the highest combined score from these various sources at the end wins."
+  "subsystems": [
+   "clan development (buildings/population growth)",
+   "area majority/regional influence",
+   "mythology/culture track"
+  ],
+  "sources": [
+   "buildings constructed",
+   "regional majority control",
+   "cultural/mythology track position",
+   "end-game clan bonuses"
+  ],
+  "winning_score": 150,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across a fixed sequence of eras you develop your clan through buildings, area influence, and cultural achievements rather than warfare, and the player with the highest combined total at the end of the final era is Minos."
  },
  "similar": [
   "Coimbra",
@@ -39,6 +52,6 @@
   "https://boardgamegeek.com/boardgame/423401/minos-dawn-of-the-bronze-age"
  ],
  "source": "web",
- "_fingerprint": "00c32e9b852da1f4",
+ "_fingerprint": "470958530289ff2a",
  "_name": "Minos: Dawn of the Bronze Age"
 }

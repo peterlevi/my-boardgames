@@ -18,11 +18,23 @@
   "kind": "competition for shared technologies and board positions",
   "detail": "Players compete for limited era cards, shared technology slots, and bonus tiles on a common board, occasionally blocking each other's plans, but most of a turn is spent optimizing your own personal player board and engine rather than interacting directly."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "True to Lacerda's style, the final score aggregates points from several largely independent categories — invented technology cards, progress along societal tracks, and end-game bonus tiles.",
-  "how_you_win": "You move workers through historical eras to invent technologies and advance societal development tracks, collecting cards and track bonuses along the way; final score sums points from your invented cards, track positions, and end-game bonuses, and the highest total wins."
+  "subsystems": [
+   "invention research & development across disciplines",
+   "era-end prestige/leadership bonuses"
+  ],
+  "sources": [
+   "points from completed inventions",
+   "prestige/reputation track position",
+   "end-of-era leadership bonuses",
+   "leftover resources"
+  ],
+  "winning_score": 150,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Research and complete inventions across several disciplines while climbing prestige tracks, scoring points continuously plus bonuses at the end of each era; after the fixed number of eras, the highest total wins."
  },
  "similar": [
   "On Mars",
@@ -36,6 +48,6 @@
   "Rahdo Runs Through",
   "Heavy Cardboard"
  ],
- "_fingerprint": "3d5bacf0defc6445",
+ "_fingerprint": "001fba3d4722c26d",
  "_name": "Inventions: Evolution of Ideas"
 }

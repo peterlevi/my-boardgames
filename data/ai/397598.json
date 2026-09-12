@@ -18,11 +18,24 @@
   "kind": "Worker placement contention and area conflict",
   "detail": "As in the base game, players contend for placement spots and battle over a shared combat track, with new elements like sandworms and spy actions adding extra ways to interfere with opponents. Team mode adds a shared victory state between two players against another pair."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Uprising layers even more scoring paths onto the base game—sietch/sandworm rewards, contracts, spies, and team scoring—on top of combat, council seats, and tech.",
-  "how_you_win": "Build influence and combat strength while cashing in contracts, sietch/sandworm bonuses, and council/tech scoring; the game ends once a player or team reaches the victory point threshold and the highest total wins."
+  "subsystems": [
+   "deck-building/worker-placement resource economy (spice, solari, water, troops)",
+   "combat on Arrakis (troop commitment, now including sandworm-riding and Homeworld tracks)"
+  ],
+  "sources": [
+   "combat victory points",
+   "Intrigue cards",
+   "Tech tile bonuses",
+   "faction alliance bonuses",
+   "contract rewards"
+  ],
+  "winning_score": 10,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "Same core loop as base Dune: Imperium — build your deck/economy, fight for combat victory points on Arrakis, and add bonuses from Intrigue, Tech, contracts, and faction tracks; reaching 10 points ends the game immediately and determines the winner."
  },
  "similar": [
   "Dune: Imperium",
@@ -36,6 +49,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "d552f22e31c66e34",
+ "_fingerprint": "23c570adc00694ff",
  "_name": "Dune: Imperium – Uprising"
 }

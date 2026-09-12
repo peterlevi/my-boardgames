@@ -16,11 +16,24 @@
   "kind": "shared pyramid competition and space blocking",
   "detail": "Players race to place tiles on the communal pyramid of the sun for bonuses, and board spaces can be occupied or taken, but each player's own dice, resources, and technology track are private and largely unaffected by others' choices."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Contributions to the pyramid, the technology track, mask collection, and a final scoring card covering several categories all add up to the winning total.",
-  "how_you_win": "Advance your workers, build layers of the pyramid, research techs, and gather masks and resources that convert to points at the final reckoning; most total points wins."
+  "subsystems": [
+   "pyramid layer building",
+   "technology tracks",
+   "end-game bonus/warrior scoring"
+  ],
+  "sources": [
+   "pyramid completion",
+   "technology advancement",
+   "end-game scoring cards",
+   "leftover resources/VP-as-currency"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You spend banked victory points as a resource throughout the game to climb techs and build the pyramid, then cash in remaining points and bonuses once the pyramid is completed and the game ends; the highest total wins."
  },
  "similar": [
   "Tzolk'in: The Mayan Calendar",
@@ -34,6 +47,6 @@
   "Watch It Played",
   "Heavy Cardboard"
  ],
- "_fingerprint": "23807385da675a93",
+ "_fingerprint": "79846397864d3f82",
  "_name": "Teotihuacan: City of Gods"
 }

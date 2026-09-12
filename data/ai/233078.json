@@ -18,11 +18,22 @@
   "kind": "negotiation, trading, and open military conflict",
   "detail": "Players share a single galaxy map and constantly negotiate trade agreements, alliances, and non-aggression pacts while also directly invading and battling over the same systems. Almost the entire game state — the map, trade, political votes — is shared and contested rather than private."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Victory points come from completing a wide, ever-changing mix of public and secret objectives spanning military conquest, economy, politics, and exploration, plus one-off bonuses like the Mecatol Rex custodians token.",
-  "how_you_win": "Expand your faction across the galaxy through exploration, construction, trade, and combat, using those actions to satisfy public and secret objective conditions; the first player to reach the target number of victory points (commonly 10) wins."
+  "subsystems": [
+   "public and secret objective completion"
+  ],
+  "sources": [
+   "public objectives scored",
+   "secret objectives scored",
+   "Support for the Throne/agenda bonuses",
+   "Imperial strategy card (Mecatol Rex)"
+  ],
+  "winning_score": 10,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "Score victory points primarily by completing public and secret objectives (plus a few bonus sources); the first player to reach 10 VP wins immediately."
  },
  "similar": [
   "Eclipse: Second Dawn for the Galaxy",
@@ -36,6 +47,6 @@
   "Heavy Cardboard",
   "The Secret Cabal"
  ],
- "_fingerprint": "6da7819a85ad61ff",
+ "_fingerprint": "affa95534c4cd93b",
  "_name": "Twilight Imperium: Fourth Edition"
 }

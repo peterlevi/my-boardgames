@@ -17,11 +17,22 @@
   "kind": "area blocking and race for shared spots",
   "detail": "Players compete for the same limited flower-plot connections on a shared board, and buying a tree can directly sever a link an opponent needed, but each player's gems, upgrades, and apprentices are otherwise tracked mostly independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points accumulate continuously from claiming flower-garden majorities and tree effects, then get topped up by leftover gems and achievement bonuses at the end.",
-  "how_you_win": "Place flowers and trees to win control of garden groups and trigger their scoring, spend gems to advance apprentices toward useful upgrades, and finish with a higher running total than your opponents."
+  "subsystems": [
+   "planting and harvesting flower gardens for immediate VP via apprentices",
+   "buying trees and permanent upgrades for bonus VP"
+  ],
+  "sources": [
+   "garden harvest points",
+   "tree points",
+   "upgrade bonus points"
+  ],
+  "winning_score": 45,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Plant flowers and send apprentices to harvest completed garden groups for VP while buying trees and upgrades that boost future scoring; when the triggering condition (rondel/supply exhaustion) ends the game, the highest total wins."
  },
  "similar": [
   "Azul",
@@ -35,6 +46,6 @@
   "Before You Play",
   "The Dice Tower"
  ],
- "_fingerprint": "8a87a5888548413c",
+ "_fingerprint": "1c9b8bf8db8d9b20",
  "_name": "Ishtar: Gardens of Babylon"
 }

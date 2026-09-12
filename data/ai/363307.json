@@ -18,11 +18,21 @@
   "kind": "Shared drafting pool, private boards",
   "detail": "Each player develops an entirely separate personal board with no spatial competition, unlike Photosynthesis's single shared board. The main touchpoint is drafting biome cards from a shared pool, where players weigh what they take against what they leave behind, since unchosen cards boost the shared Fertility zone."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Score mostly tracks how well you filled your planet with light-fed trees and biome tiles, with a couple of end-game bonus cards layered on top.",
-  "how_you_win": "Draft biome cards to grow trees and other elements in high-light regions of your planet grid, then total tree/biome scoring plus any bonus-card objectives for the highest score."
+  "subsystems": [
+   "grid-coverage tile placement building a personal ecosystem board"
+  ],
+  "sources": [
+   "tree points multiplied by regional fertility",
+   "bush/lake/animal bonus points",
+   "end-of-round scoring bonuses"
+  ],
+  "winning_score": 90,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You draft biome cards each round to plant trees, bushes, and lakes on your personal board, trying to concentrate growth in the most fertile regions without trees overshadowing each other; after a fixed number of rounds, all elements are scored and the highest total wins."
  },
  "similar": [
   "Photosynthesis",
@@ -37,6 +47,6 @@
   "boardgamegeek.com/boardgame/363307/evergreen (search snippet only, 403 on direct fetch)"
  ],
  "source": "web",
- "_fingerprint": "e8c72ebc652bf0c4",
+ "_fingerprint": "3ab041ce6b86e609",
  "_name": "Evergreen"
 }

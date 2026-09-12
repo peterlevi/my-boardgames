@@ -25,6 +25,8 @@ import subprocess
 from pathlib import Path
 
 from common import ROOT, load_games, playtime, load_overrides
+from scoring import (SALAD_LABEL, SALAD_PILL, SALAD_SHORT, WIN_LABEL,
+                     WIN_ORDER, WIN_SHORT, salad, sudden_death, win)
 
 THUMBS = ROOT / "data" / "thumbs"
 
@@ -149,31 +151,6 @@ EM_DASH = "\u2014"
 
 # More interaction reads as the better end of the ramp.
 IX_PILL = {"High": "p3", "Medium": "p2", "Low": "p1"}
-BREADTH_PILL = {"Focused": "p3", "Some": "p2", "Broad": "p1", "Salad": "pw"}
-# The stored values stay Focused/Some/Broad/Salad — that is what the opinion
-# database writes — but nobody says "breadth" about a board game, so the
-# column, the filter and its options all talk about point salad instead.
-BREADTH_LABELS = {
-    "Focused": "No, sharp focus",
-    "Some": "Just a touch",
-    "Broad": "Quite a lot",
-    "Salad": "Total point salad",
-}
-# Room in the column is tighter than in the dropdown.
-BREADTH_SHORT = {
-    "Focused": "No", "Some": "A touch",
-    "Broad": "Quite a lot", "Salad": "Total salad",
-}
-# Column headings must be short; the full phrase stays in the filter.
-WIN_SHORT = {
-    "Most points, many sources": "Points, many sources",
-    "Most points, one or two sources": "Points, few sources",
-    "Most money": "Money", "Race to a finish": "Race",
-    "Lowest-highest scoring": "Low-high",
-    "Special win condition": "Special", "Cooperative goal": "Co-op goal",
-    "Other": "Other",
-}
-WIN_CRITERIA = list(WIN_SHORT)
 
 
 
@@ -295,9 +272,9 @@ def trim_ai(ai):
     if not ai:
         return None
     conf = ai.get("confidence", "low")
-    out = {"cf": conf, "wc": ai.get("win_criteria"),
-           "br": (ai.get("scoring") or {}).get("breadth"),
-           "why": (ai.get("scoring") or {}).get("why"),
+    facts = ai.get("scoring") or {}
+    out = {"cf": conf, "wc": win(facts), "sd": sudden_death(facts),
+           "br": salad(facts), "srcs_n": len(facts.get("sources") or []),
            "ixl": (ai.get("interaction") or {}).get("level"),
            "ixk": (ai.get("interaction") or {}).get("kind"),
            "ixd": (ai.get("interaction") or {}).get("detail"),
@@ -383,7 +360,7 @@ def passes_static(g, s, a, mode):
     ai = g["ai"] or {}
     if a.win != "any" and ai.get("wc") != a.win:
         return False
-    if a.breadth != "any" and ai.get("br") != a.breadth:
+    if a.salad != "any" and ai.get("br") != a.salad:
         return False
     return True
 
@@ -399,9 +376,9 @@ def describe(a):
 
     extra = []
     if a.win != "any":
-        extra.append(WIN_SHORT.get(a.win, a.win).lower())
-    if a.breadth != "any":
-        extra.append(a.breadth.lower() + " scoring")
+        extra.append(WIN_LABEL.get(a.win, a.win).lower())
+    if a.salad != "any":
+        extra.append("point salad: " + SALAD_LABEL[a.salad].lower())
     if a.expansions == "drop":
         extra.append("expansions ignored")
     # With a filter applied, "All games, X" is noise — the filter is the subject.
@@ -452,12 +429,13 @@ def rows_html(data, a):
                    f' title="{esc(ai.get("ixk") or "derived from mechanics")}">'
                    f'{ix_level}</span>')
         win_html = (f'<span class="wc" title="{esc(ai.get("why") or "")}">'
-                    f'{esc(WIN_SHORT.get(ai.get("wc"), ai.get("wc") or EM_DASH))}'
+                    f'{esc(WIN_SHORT.get(ai.get("wc"), EM_DASH))}'
+                    f'{"<span class=\'sd\' title=\'Can also end in sudden death\'>*</span>" if ai.get("sd") else ""}'
                     f'</span>')
         br = ai.get("br")
-        br_html = (f'<span class="tag {BREADTH_PILL.get(br, "p1")}"'
-                   f' title="Point salad: {esc(BREADTH_LABELS.get(br, br))}">'
-                   f'{BREADTH_SHORT.get(br, br)}</span>' if br else EM_DASH)
+        br_html = (f'<span class="tag {SALAD_PILL.get(br, "p1")}"'
+                   f' title="Point salad: {esc(SALAD_LABEL.get(br, br))}">'
+                   f'{SALAD_SHORT.get(br, br)}</span>' if br else EM_DASH)
         who = g["ds"]
         designer = (f'<span title="{esc(", ".join(who))}">{esc(who[0])}'
                     + (f' <span class="more">+{len(who) - 1}</span>'
@@ -497,7 +475,7 @@ def rows_html(data, a):
             f'<td class="num hide-sm c-ed" data-col="ed">{g.get("ed") or EM_DASH}</td>'
             f'<td class="num hide-sm c-pp" data-col="pp">{price_html}</td>'
             f'<td class="hide-sm hide-lg c-win" data-col="win">{win_html}</td>'
-            f'<td class="hide-sm hide-lg c-breadth" data-col="breadth">{br_html}</td>'
+            f'<td class="hide-sm hide-lg c-salad" data-col="salad">{br_html}</td>'
             f'<td class="num hide-sm c-verdict j-verdict" data-col="verdict">{v}</td>'
             f'<td class="num bar hide-sm wide-only c-bestPct j-best" data-col="bestPct">'
             f'{bar(s["bestPct"]) if s else EM_DASH}</td>'
@@ -674,7 +652,7 @@ def main():
     ap.add_argument("--mode", choices=["best", "good", "any"], default="good",
                     help="opening player-count rule")
     ap.add_argument("--win", default="any")
-    ap.add_argument("--breadth", default="any",
+    ap.add_argument("--salad", default="any",
                     choices=["any", "Focused", "Some", "Broad", "Salad"])
     ap.add_argument("--expansions", choices=["fold", "show", "drop"],
                     default="fold", help="fold: hide expansion rows but let "
@@ -693,7 +671,7 @@ def main():
     data.sort(key=lambda g: (g["rk"] is None, g["rk"] or 10 ** 9))
     tpl = (HERE / "report_template.html").read_text(encoding="utf-8")
     opts = {"players": a.players, "mode": a.mode, "win": a.win,
-            "breadth": a.breadth,
+            "salad": a.salad,
             "expansions": a.expansions}
 
     rows, shown = rows_html(data, a)
@@ -708,10 +686,9 @@ def main():
                      ("good", "Good at that count"),
                      ("best", "Best at that count")], a.mode)
     wins = options([("any", "Doesn't matter")]
-                   + [(w, w) for w in WIN_CRITERIA], a.win)
-    breadths = options([("any", "Doesn't matter")]
-                       + [(b, l) for b, l in BREADTH_LABELS.items()],
-                       a.breadth)
+                   + [(w, WIN_LABEL[w]) for w in WIN_ORDER], a.win)
+    salads = options([("any", "Doesn't matter")]
+                     + [(k, l) for k, l in SALAD_LABEL.items()], a.salad)
     exps = options([("fold", "Hide, but count for base game"),
                     ("show", "Show as their own rows"),
                     ("drop", "Ignore completely")], a.expansions)
@@ -728,7 +705,7 @@ def main():
             .replace("<!--__MODE_OPTIONS__-->", modes)
             .replace("<!--__EXP_OPTIONS__-->", exps)
             .replace("<!--__WIN_OPTIONS__-->", wins)
-            .replace("<!--__BREADTH_OPTIONS__-->", breadths)
+            .replace("<!--__SALAD_OPTIONS__-->", salads)
             .replace("__SHOWN__", str(shown))
             .replace("__DESC__", esc(describe(a)))
             .replace("/*__DATA__*/", json.dumps(data, ensure_ascii=False,

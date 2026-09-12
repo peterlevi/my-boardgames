@@ -18,11 +18,24 @@
   "kind": "shared board, parallel objective completion",
   "detail": "All players build on and affect the same growing garden of plots and bamboo, so the panda eating bamboo or another player irrigating a plot you wanted does affect your plans, but most scoring comes from your own hidden objective cards. Interaction is indirect and mostly about tempo and shared resources rather than direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points come from three independent objective decks (plot, pattern, and panda/bamboo-eating objectives), each scored on its own track.",
-  "how_you_win": "Collect and complete plot, pattern, and panda objective cards by growing bamboo, irrigating land, and feeding the panda; whoever banks the most objective points wins."
+  "subsystems": [
+   "plot/irrigation objective cards",
+   "panda bamboo-eating objective sets",
+   "gardener bamboo-growing objective sets"
+  ],
+  "sources": [
+   "completed plot objectives",
+   "completed panda objectives",
+   "completed gardener objectives",
+   "improvement-tile bonus"
+  ],
+  "winning_score": 35,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Collect and complete objective cards by shaping irrigated plots, feeding the panda matching bamboo colors, and growing bamboo with the gardener; each fulfilled objective scores its printed value, and whoever has the most points once the end condition triggers wins."
  },
  "similar": [
   "Kingdomino",
@@ -36,6 +49,6 @@
   "Gaming Rules!",
   "The Dice Tower"
  ],
- "_fingerprint": "2a1f4812ed31f289",
+ "_fingerprint": "e733eebba2838dd6",
  "_name": "Takenoko"
 }

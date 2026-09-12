@@ -16,11 +16,19 @@
   "kind": "Forced-choice auction/extortion",
   "detail": "The harbor with its limited ship slots is a shared, contested space, but each player also keeps a private warehouse of goods. Interaction is direct: a player sets price/terms on a deal and an opponent is forced to pick which side of it they get stuck with, actively shaping rivals' outcomes rather than just competing indirectly."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The only thing that actually scores is successfully loading a ship with the exact combination of goods it demands before it sails.",
-  "how_you_win": "Win auctions to stock your warehouse with the right goods, then deliver a complete matching cargo to a ship before it departs; whoever completes the most valuable deliveries has the most points when the fleet is gone."
+  "subsystems": [
+   "goods delivery to ships"
+  ],
+  "sources": [
+   "completed ship deliveries"
+  ],
+  "winning_score": 40,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You draft and hoard commodities to complete full shipments demanded by waiting ships; each fulfilled ship scores points immediately, and whoever has scored the most when the goods deck runs out and the fleet departs wins."
  },
  "similar": [],
  "sources": [
@@ -32,6 +40,6 @@
   "https://www.angespielt.de/kritiken/vor-dem-wind"
  ],
  "source": "web",
- "_fingerprint": "5b35dc18350debe2",
+ "_fingerprint": "1e75f7ea06ed2d0f",
  "_name": "Before the Wind"
 }

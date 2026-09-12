@@ -18,11 +18,24 @@
   "kind": "area majority and worker placement competition",
   "detail": "Players compete for limited action spaces and regional influence on a shared board, occasionally blocking each other's plans, but each player also develops a private tableau of buildings and resources. Much of the tension comes from indirect competition over scarce spaces rather than direct attacks."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accrue from temple track advancement, regional area-majority control, building construction, and set-collected worker/resource bonuses, each a separate scoring channel.",
-  "how_you_win": "Place workers around the rondel to gather resources, build structures, climb the sun temple, and contest the four regions; the player with the highest combined total across these categories wins."
+  "subsystems": [
+   "Sun Temple track (variable category bonuses per step)",
+   "regional area-majority conquest",
+   "city network construction"
+  ],
+  "sources": [
+   "Temple of the Sun step bonuses",
+   "regional majority control points",
+   "constructed building/network points",
+   "leftover resource conversion"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Advance up the Sun Temple to bank category-based bonus points, contest majority control of the four Suyu regions, and build out your city network; once the game-ending trigger is reached, all these sources are added up and the highest total wins."
  },
  "similar": [
   "Tzolk'in: The Mayan Calendar",
@@ -36,6 +49,6 @@
   "Watch It Played",
   "No Pun Included"
  ],
- "_fingerprint": "910a6e24b7a49fd3",
+ "_fingerprint": "6223a94c3000bfde",
  "_name": "Tawantinsuyu: The Inca Empire"
 }

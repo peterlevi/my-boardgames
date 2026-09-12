@@ -18,11 +18,25 @@
   "kind": "mostly parallel play with light drafting",
   "detail": "Players choose token sets and animal cards from a small shared display, so timing what you take can deny others their preferred pick, but each player builds and scores their own landscape board entirely independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Nearly every terrain type has its own scoring rule (water, fields, forest, mountains, buildings/moon), on top of separate animal habitat cards, so almost every placement scores something.",
-  "how_you_win": "You draft terrain tokens to build patterns matching multiple scoring shapes and settle animals into completed habitats, winning by having the highest sum across all these terrain and animal categories."
+  "subsystems": [
+   "terrain token pattern scoring (five token types, each with its own rule)",
+   "animal habitat card collection"
+  ],
+  "sources": [
+   "red buildings sets",
+   "yellow fields largest group",
+   "blue water longest chain",
+   "green trees canopy pairs",
+   "grey mountains height/adjacency",
+   "completed animal cards"
+  ],
+  "winning_score": 75,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Place terrain tokens to build patterns satisfying your animal cards' habitat needs; all terrain and animal scoring is tallied only at the end, once the token supply runs low and the game ends."
  },
  "similar": [
   "Cascadia",
@@ -36,6 +50,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "42ab58bbf745a443",
+ "_fingerprint": "499cdee91ac20b8f",
  "_name": "Harmonies"
 }

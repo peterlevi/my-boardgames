@@ -16,11 +16,21 @@
   "kind": "hidden movement and open conflict",
   "detail": "Both sides move fleets and fight directly over the same shared galaxy map, and the Empire is actively hunting the Rebellion's hidden base location, so nearly every action affects the other player. Each side does hold private hands and hidden information, but the map and combat are fully shared stakes."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Neither side tallies points; the Empire wins by locating and destroying the hidden Rebel base, while the Rebels win by surviving with their base intact until the reputation/turn track runs out.",
-  "how_you_win": "The Rebel player hides and relocates their base while completing missions to stay alive; the Imperial player hunts for that base with fleets and troops, and whichever side achieves its unique objective first wins."
+  "subsystems": [
+   "Rebel reputation track from completed mission objectives",
+   "Imperial hunt to locate and destroy the Rebel base"
+  ],
+  "sources": [
+   "Rebel reputation gained/lost from objective cards",
+   "discovery and destruction of the Rebel base"
+  ],
+  "winning_score": 20,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "The Empire searches the galaxy to locate and then destroy the hidden Rebel base, which wins immediately for the Empire; the Rebels instead complete objective missions to build reputation and stall the hunt, winning if they survive with enough reputation once the turn track runs out."
  },
  "similar": [
   "War of the Ring",
@@ -34,6 +44,6 @@
   "Rahdo Runs Through",
   "Heavy Cardboard"
  ],
- "_fingerprint": "30b3fe49dfaa7d0b",
+ "_fingerprint": "32ceda43b5413dfa",
  "_name": "Star Wars: Rebellion"
 }

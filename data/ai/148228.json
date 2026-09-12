@@ -16,11 +16,20 @@
   "kind": "resource denial and card sniping",
   "detail": "Players draw from the same limited pool of gem tokens and the same face-up card row, so taking a token or buying a card someone else needed is the main way you affect opponents. Otherwise each player builds their own private engine of cards largely independent of others' boards."
  },
- "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Prestige points come almost entirely from the face value of purchased development cards, with noble visits adding a small fixed bonus.",
-  "how_you_win": "You collect gem chips to buy increasingly valuable cards, and the instant a player reaches 15 points the round finishes and the highest-scoring player wins."
+  "subsystems": [
+   "gem-card development engine (with automatic noble bonuses)"
+  ],
+  "sources": [
+   "prestige points on purchased development cards",
+   "noble tile bonus points"
+  ],
+  "winning_score": 15,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "You collect gem chips to buy increasingly valuable development cards, whose discounts snowball your buying power, and nobles visit automatically once you meet their gem requirements; the instant a player reaches 15 points the round finishes out and whoever has the highest total wins."
  },
  "similar": [
   "Century: Spice Road",
@@ -34,6 +43,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "c8270261bca9cddd",
+ "_fingerprint": "e82a184e9fd0421b",
  "_name": "Splendor"
 }

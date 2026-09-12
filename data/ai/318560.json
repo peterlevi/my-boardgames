@@ -18,11 +18,24 @@
   "kind": "route blocking and area competition",
   "detail": "Players extend witch paths across a shared hex board and compete for the same crystals, prophecy scrolls, and scoring tiles, so claiming a spot can block or slow a rival's route, even though each player also tracks their own private cauldron and score."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Scoring draws from several separate systems — the cauldron/crystals, the pentagram, prophecy scrolls, and network connections — characteristic of Knizia's multi-track point designs.",
-  "how_you_win": "Move your witches to collect crystals, build spell networks, and fulfill prophecy scroll conditions, finishing with the highest total across these combined scoring tracks."
+  "subsystems": [
+   "Witch network/path building around the Witchstone",
+   "Crystal collection from the cauldron",
+   "Prophecy scroll set completion"
+  ],
+  "sources": [
+   "Network connection VP",
+   "Collected crystal sets",
+   "Completed prophecy scrolls",
+   "Pentagram/wand bonuses"
+  ],
+  "winning_score": 100,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You extend your witch's network toward the Witchstone, scoop crystals from the cauldron, and complete prophecy scroll conditions; once the end trigger is reached, VP from network reach, crystal sets, and prophecies are totaled and the highest score wins."
  },
  "similar": [
   "Yellow & Yangtze",
@@ -36,6 +49,6 @@
   "JonGetsGames",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "fdecf9cb09ed6c19",
+ "_fingerprint": "4131b6220f2d13f8",
  "_name": "Witchstone"
 }

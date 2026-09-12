@@ -18,11 +18,26 @@
   "kind": "area majority with occasional direct combat",
   "detail": "Players build largely on their own player mat and home territory but must contest the same hex map for resources, encounters, and territory control, with combat and popularity affecting shared standings. Most turns are independent optimization, punctuated by pivotal territorial clashes."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "The end-game tally combines coins, territories controlled, resources on hand, and a popularity multiplier, so several independent tracks feed the final score.",
-  "how_you_win": "Trigger the game's end by being first to complete six stars, then win by having the highest combined score from coins, territories, resources, and popularity."
+  "subsystems": [
+   "territory/area control",
+   "resource and coin economy",
+   "popularity track",
+   "structure & recruit achievements (stars)"
+  ],
+  "sources": [
+   "territories controlled",
+   "structures built",
+   "recruits enlisted",
+   "achievements (stars) completed",
+   "coins on hand"
+  ],
+  "winning_score": 80,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "The game ends as soon as any player places their sixth star (achievement); final score multiplies territories, structures, recruits, and completed objectives by a popularity-based coin value, then adds leftover cash, with the highest total winning."
  },
  "similar": [
   "Root",
@@ -36,6 +51,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "aed7a7a639617452",
+ "_fingerprint": "afbf8ef578dd4195",
  "_name": "Scythe"
 }

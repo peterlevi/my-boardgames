@@ -17,11 +17,19 @@
   "kind": "direct targeting, bluffing and deduction",
   "detail": "Almost every card played targets another specific player, forcing guesses, comparisons, or eliminations, so the entire game state is about what your opponents might be holding rather than any private tableau. There is essentially no solitaire play — every turn is about the other players."
  },
- "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Each round yields exactly one Affection token for whoever is left holding the highest card or is last standing, and the game ends the instant someone collects the token count set for the player count.",
-  "how_you_win": "Use card abilities to deduce and eliminate opponents or force favorable comparisons at round's end; win enough rounds to collect the required number of Affection tokens before anyone else does."
+  "subsystems": [
+   "round-winner favor tokens"
+  ],
+  "sources": [
+   "favor tokens accumulated across rounds"
+  ],
+  "winning_score": 7,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "Each round ends by elimination or deck exhaustion, and the last player standing (or holder of the highest card) takes a favor token; the first player to collect the target number of tokens (set by player count) wins the match."
  },
  "similar": [
   "Coup",
@@ -35,6 +43,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "f00719d855f74d82",
+ "_fingerprint": "6b3008fcf9637742",
  "_name": "Love Letter"
 }

@@ -18,11 +18,21 @@
   "kind": "worker placement blocking on a shared grid",
   "detail": "Both players place figures on the same central grid, and taking a space denies it to the opponent for that round, creating constant tactical blocking. The central board is fully shared while each player's tribe card tableau and resources remain private."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Score is mostly the point values printed on the tribe and extension cards you've drafted over the game, with leftover goods only mattering as a minor end-game conversion.",
-  "how_you_win": "Use your two workers each round to gather goods and draft tribe/extension cards from the board, then total the point values on the cards you've collected; most points wins."
+  "subsystems": [
+   "worker-placement resource gathering to acquire tribe cards"
+  ],
+  "sources": [
+   "small tribe card point values",
+   "big tribe card bonuses (built from 5-card sets)",
+   "leftover gold/goods"
+  ],
+  "winning_score": 50,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Place your two meeples each round on the board's border and center to gather goods and gold, spending them on small and big tribe cards; when the big tribe card deck runs out the game ends, and whoever's cards and leftovers total the most points wins."
  },
  "similar": [
   "Jaipur",
@@ -36,6 +46,6 @@
   "The Dice Tower",
   "Gaming Rules!"
  ],
- "_fingerprint": "af5ab28f8a277cad",
+ "_fingerprint": "e5a8f8aa296f1c5d",
  "_name": "Targi"
 }

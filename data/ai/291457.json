@@ -18,11 +18,25 @@
   "kind": "cooperative coordination via simultaneous card initiative",
   "detail": "Players choose action cards secretly and reveal them together, so combo-ing abilities and managing shared initiative order is the main way characters affect each other, while the monster/map state is fully shared. Each hero still manages a private hand and character sheet independent of the others."
  },
- "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Each scenario is won or lost as a team based on completing its specific objective before running out of health, cards, or turns.",
-  "how_you_win": "Work together using each character's action cards to defeat monsters, protect objectives, or escape as required by the scenario, completing it before the party is exhausted."
+  "subsystems": [
+   "scenario objective completion",
+   "character experience/leveling",
+   "loot & gold economy",
+   "personal battle goals"
+  ],
+  "sources": [
+   "scenario objectives completed",
+   "experience gained toward leveling",
+   "gold looted",
+   "battle goals fulfilled"
+  ],
+  "winning_score": 0,
+  "tally": "mixed",
+  "shape": "objective_count",
+  "ends_by": "coop_goal",
+  "sudden_death_common": false,
+  "how_you_win": "There's no competitive score: the party wins a scenario by completing its stated objective before all characters become exhausted, and progresses the campaign scenario by scenario."
  },
  "similar": [
   "Gloomhaven",
@@ -36,6 +50,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "2a97553f04e4438a",
+ "_fingerprint": "a42331d33ee70a99",
  "_name": "Gloomhaven: Jaws of the Lion"
 }

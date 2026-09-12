@@ -18,11 +18,21 @@
   "kind": "Open conflict and shared resource competition",
   "detail": "Players build private species tableaus but compete directly for a shared, limited food supply on the watering hole, and carnivores can directly attack and eat opponents' species, making predation a direct player-vs-player action."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The only thing that matters at game end is how much population—food converted into species size—you've kept alive across your species boards.",
-  "how_you_win": "Evolve traits to help your species feed and survive changing climate and predators; the player with the most total population across their species at the end wins."
+  "subsystems": [
+   "species-building via trait cards, food, and population/body size on individual species boards"
+  ],
+  "sources": [
+   "surviving population size per species",
+   "body size per species",
+   "climate-related survival bonuses"
+  ],
+  "winning_score": 40,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You play trait cards to grow species that compete for scarce food and fend off predators and climate swings between hot and cold; after a set number of rounds, each surviving species scores population plus body size, and the player with the highest total wins."
  },
  "similar": [
   "Evolution",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "d2f59cebd5f613d5",
+ "_fingerprint": "5aa9d1076ddad601",
  "_name": "Evolution: Climate"
 }

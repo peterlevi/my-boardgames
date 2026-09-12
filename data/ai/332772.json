@@ -18,11 +18,24 @@
   "kind": "mostly parallel play with shared map exploration",
   "detail": "Players expand onto a shared hex map and compete to recruit limited survivor cards and unlock tech, but each player mainly manages their own tribe board and engine with little direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score combines technology tiles researched, populated ancient sites, city/network development, and campaign milestone bonuses into one grand total.",
-  "how_you_win": "Across a five-part campaign you explore the map, gather resources, build factories and cities, and unlock forgotten technologies, banking VP from many independent categories; the highest total score at the end wins."
+  "subsystems": [
+   "technology tile acquisition and tech-tree advancement",
+   "population/citizen recruitment and city building",
+   "exploration site development"
+  ],
+  "sources": [
+   "technology VP",
+   "city/population VP",
+   "exploration site bonuses",
+   "end-game bonus cards"
+  ],
+  "winning_score": 110,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a fixed number of rounds per scenario, develop technology, grow your city and population, and populate exploration sites; the player with the most total VP from these sources when the scenario ends wins."
  },
  "similar": [
   "Scythe",
@@ -36,6 +49,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "000c2ee823fb7694",
+ "_fingerprint": "a423f71f47144ee3",
  "_name": "Revive"
 }

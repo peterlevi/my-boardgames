@@ -18,11 +18,19 @@
   "kind": "take that and direct conflict",
   "detail": "Players shoot, punch, and steal directly from each other on a fully shared train board, and the programmed-action queue means your plans routinely get disrupted by others' cards. Nearly all meaningful state (loot, bandit positions, the marshal) is shared and constantly contested."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Everything you loot from the train (purses, strongboxes, jewelry, the marshal's own money) converts to a single cash total, and bullets in your deck simply subtract from it.",
-  "how_you_win": "You program movement and grab cards through the train cars to steal loot while dodging or inflicting bullet cards, and whoever has the most money once all loot is collected wins."
+  "subsystems": [
+   "loot collection (purses, jewelry, strongbox)"
+  ],
+  "sources": [
+   "loot cards held in hand at game end"
+  ],
+  "winning_score": 1500,
+  "tally": "endgame",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a fixed sequence of programmed-movement rounds you grab loot cards from passengers, the marshal's car, and rival bandits; loot values are only revealed and totaled at the very end, and the richest bandit wins."
  },
  "similar": [
   "Flamme Rouge",
@@ -36,6 +44,6 @@
   "Before You Play",
   "JonGetsGames"
  ],
- "_fingerprint": "52024afe65acabb7",
+ "_fingerprint": "487f2c45e3fadd77",
  "_name": "Colt Express"
 }

@@ -18,11 +18,17 @@
   "kind": "take that and push your luck",
   "detail": "Players directly target each other with attack, skip, and 'make another player draw' cards, and the shared deck is the entire game state everyone is manipulating. Almost every turn is a decision about who to hurt or how to dodge the exploding kitten, so the game is nearly all interaction with no private tableau."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no scoring at all; players are eliminated by drawing an Exploding Kitten they can't defuse, and whoever is left un-exploded wins.",
-  "how_you_win": "Survive by avoiding or defusing Exploding Kitten cards until every other player has exploded out of the game."
+  "subsystems": [],
+  "sources": [
+   "last player remaining"
+  ],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "elimination",
+  "sudden_death_common": true,
+  "how_you_win": "You win simply by being the last player left who hasn't drawn an Exploding Kitten; there are no points at all, just survival."
  },
  "similar": [
   "Munchkin",
@@ -36,6 +42,6 @@
   "Before You Play",
   "Geek & Sundry"
  ],
- "_fingerprint": "ccd008cb07f63597",
+ "_fingerprint": "cc496f8543d08728",
  "_name": "Exploding Kittens: Party Pack"
 }

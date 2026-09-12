@@ -16,11 +16,17 @@
   "kind": "cooperative clue-giving with communication limits",
   "detail": "One player (the ghost) silently guides the rest of the group toward shared answers using visual cards, so the entire game state is communal and success depends on collective interpretation rather than individual boards."
  },
- "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no point total; the players win only if the Medium can correctly guess the ghost's chosen suspect, location, and weapon before the shared vision deck runs out.",
-  "how_you_win": "Mediums send vision cards to help psychics guess the correct suspect/location/weapon combination the ghost has in mind, and the group must reach the correct final answer within a limited number of rounds to win together."
+  "subsystems": [
+   "cooperative clue interpretation/deduction"
+  ],
+  "sources": [],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "objective_count",
+  "ends_by": "coop_goal",
+  "sudden_death_common": true,
+  "how_you_win": "There's no point total: mediums must correctly identify the suspect, location, and weapon from the ghost's visions within a limited number of rounds, then all guess correctly together in a final vision to win outright, or the team loses."
  },
  "similar": [
   "Dixit",
@@ -34,6 +40,6 @@
   "The Dice Tower",
   "Gaming Rules!"
  ],
- "_fingerprint": "851398b990c37fe4",
+ "_fingerprint": "35937f387ff9365e",
  "_name": "Mysterium"
 }

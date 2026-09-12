@@ -20,11 +20,22 @@
   "kind": "Shared market and interdependent roles",
   "detail": "Sinkside players gather resources that feed Skyside players' construction, and a shared, fluctuating market means every purchase or sale changes prices for the whole table. Positive actions frequently benefit other players as a side effect, and players compete for the same quests, guild seals, and outpost placements, so timing and reading opponents matters a lot."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Score is built from multiple separate engines: cards/crew developed and played from your action-retrieval deck, resources gathered and delivered on the Sinkside exploration board, and buildings/contracts completed on the Landside city board.",
-  "how_you_win": "Players alternate between a 'Sinkside' phase of dice-and-tile exploration to gather resources and a 'Landside' phase of playing retrieved action cards to build up their fleet/city and fulfill contracts; whoever has amassed the most points from these combined systems by game end wins."
+  "subsystems": [
+   "Sinkside resource-gathering and crafting",
+   "Topside flotilla tile-building and delivery"
+  ],
+  "sources": [
+   "goods delivered to the flotilla",
+   "tiles/structures added to the flotilla",
+   "completed objectives"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You alternate between gathering resources at sea and building up the shared Flotilla with what you deliver, and once the end-game trigger fires, the player with the most points from deliveries and construction wins."
  },
  "similar": [
   "Trickerion",
@@ -39,6 +50,6 @@
   "https://boardgamegeek.com/boardgame/275969/flotilla/ratings?rated=1&comment=1"
  ],
  "source": "web",
- "_fingerprint": "08b07b645bbe4e67",
+ "_fingerprint": "5d06367280a0c75a",
  "_name": "Flotilla"
 }

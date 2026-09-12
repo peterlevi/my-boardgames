@@ -16,11 +16,19 @@
   "kind": "auction and bidding",
   "detail": "Players bid against each other for shared market offers using cards from their own hand, so every bid affects what remains available and how much competitors can spend later. There's no shared board beyond the market itself; most of the game state is what's visible in each player's hand and completed sets."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The only thing that matters is how many completed 3-of-a-kind goods sets you sell over the course of the auctions.",
-  "how_you_win": "You bid your hand of goods/money cards to acquire matching sets of three goods cards, sell completed sets to the bank for points, and the player with the highest total from sold sets when the deck runs out wins."
+  "subsystems": [
+   "set-collection auction of goods cards"
+  ],
+  "sources": [
+   "total value of collected goods-card sets"
+  ],
+  "winning_score": 40,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You bid your hand of goods cards (which double as both money and points) to win auctioned lots and assemble sets of three matching goods; once the auction deck runs out, whoever holds the highest total value of goods cards wins."
  },
  "similar": [
   "Ra",
@@ -33,6 +41,6 @@
   "Watch It Played",
   "The Dice Tower"
  ],
- "_fingerprint": "84b339630f2c2903",
+ "_fingerprint": "7c032d286e260f65",
  "_name": "Byzanz"
 }

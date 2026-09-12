@@ -19,11 +19,21 @@
   "kind": "Shared worker placement, blocking, and voting",
   "detail": "Most of the game state is communal rather than private: the Senate grid, Major Project tracks, and passed laws are all shared, and single-use action spaces mean players directly block each other's options. Voting on legislation also lets players collectively alter shared scoring conditions that affect everyone."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Prestige comes from several distinct end-game channels: influence built on federation planets, contracts fulfilled, personal objectives completed, and votes won during council phases.",
-  "how_you_win": "Over five rounds you place two different types of workers to build influence on planets, complete contracts, and pursue secret objectives, then periodically vote on federation matters; the delegation with the most accumulated prestige after five years is admitted and wins."
+  "subsystems": [
+   "double-sided worker placement action engine",
+   "federation council majority influence"
+  ],
+  "sources": [
+   "prestige earned from actions each round",
+   "end-of-game majority/influence bonuses in the federation"
+  ],
+  "winning_score": 50,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across 5 fixed rounds you place workers to develop your delegation and earn prestige, and whoever has accumulated the most prestige (including final influence bonuses) after year 5 is admitted to the federation as the winner."
  },
  "similar": [
   "Bruxelles 1893: Belle Époque"
@@ -37,6 +47,6 @@
   "boardgamegeek.com/boardgame/345868/federation (search snippet only)"
  ],
  "source": "web",
- "_fingerprint": "b443b3aae01341e4",
+ "_fingerprint": "1b3d5d96f18e5bd6",
  "_name": "Federation"
 }

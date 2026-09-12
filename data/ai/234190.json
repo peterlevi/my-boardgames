@@ -16,11 +16,19 @@
   "kind": "take-that sabotage",
   "detail": "Players directly destroy, steal, or neigh away each other's unicorn cards, so most of the tension comes from attacking whoever is closest to seven unicorns; each player's stable is their own small tableau but it's constantly under threat from everyone else."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no scoring track at all; the game ends the instant one player completes the required set of unicorns.",
-  "how_you_win": "You win by being the first player to get seven unicorn cards into your stable, while using magic, downgrade, and 'neigh' cards to build your own army and sabotage everyone else's."
+  "subsystems": [
+   "unicorn stable collection"
+  ],
+  "sources": [
+   "unicorn cards in your stable"
+  ],
+  "winning_score": 7,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "The first player to have 7 unicorns in their stable at any point immediately wins, though attack/instant cards from opponents can knock you back below that count."
  },
  "similar": [
   "Exploding Kittens",
@@ -33,6 +41,6 @@
   "The Dice Tower",
   "Before You Play"
  ],
- "_fingerprint": "7cd121ee01476aad",
+ "_fingerprint": "ccadd4d14562e3f5",
  "_name": "Unstable Unicorns"
 }

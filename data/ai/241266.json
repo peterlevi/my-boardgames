@@ -18,11 +18,22 @@
   "kind": "shared grid competition with fee-based cooperation",
   "detail": "Workers are placed on a shared board, so claiming a good resource cluster denies it to others, and using a building adjacent to someone else's forces you to pay them, tying players' personal tableaus together through small transactional interactions."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Final score combines points for the variety of building types you've constructed, leftover resources/money, and personal goal bonuses, so it draws from a few separate buckets rather than one dominant one.",
-  "how_you_win": "Send workers around the town to gather resources and construct buildings over four rounds; at the end, the player with the highest total from building variety, leftover assets, and any personal objectives wins."
+  "subsystems": [
+   "worker placement to gather resources and construct buildings, each with its own scoring effect",
+   "contract fulfillment by turning in resource sets"
+  ],
+  "sources": [
+   "endgame points from building effects",
+   "points from completed contracts",
+   "leftover resources/money"
+  ],
+  "winning_score": 50,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You win by using your four rounds of worker placements to construct the most valuable combination of buildings and complete resource contracts, each contributing points to your final total."
  },
  "similar": [
   "Village",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "8c70b1abbfdccab7",
+ "_fingerprint": "28bb4ff28fff016e",
  "_name": "Little Town"
 }

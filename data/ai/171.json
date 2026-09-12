@@ -17,11 +17,15 @@
   "kind": "open conflict, direct confrontation",
   "detail": "The entire board is shared and every move directly affects the opponent's options, threats, and pieces; players are in constant direct conflict trying to capture pieces and threaten the king. There is no private player board — the game state is entirely public and mutual."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no scoring at all; the game ends the instant one king is checkmated (or via draw/resignation).",
-  "how_you_win": "You maneuver your pieces to threaten the opposing king so it cannot escape capture (checkmate), which immediately ends the game in your favor."
+  "subsystems": [],
+  "sources": [],
+  "winning_score": 1,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "There is no point total; you win by checkmating the opponent's king so it has no legal way to escape capture, or by their resignation."
  },
  "similar": [
   "Xiangqi",
@@ -35,6 +39,6 @@
   "Hanging Pawns",
   "Watch It Played"
  ],
- "_fingerprint": "815fb3185a4ad784",
+ "_fingerprint": "2b8201e512e20ea8",
  "_name": "Chess"
 }

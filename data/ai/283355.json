@@ -18,11 +18,22 @@
   "kind": "Negotiation, alliances, and open conflict",
   "detail": "Players openly negotiate treachery card trades, troop movements, and alliances every turn, and battles are resolved via secret bidding of forces and cards against a shared board (the planet map). Almost the entire game state, the map and spice, is shared and contested, with only hand cards and faction advantages kept private."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game is decided by controlling three of the board's five strongholds (or meeting a faction-specific alternate condition), not by accumulating points.",
-  "how_you_win": "Move troops and use faction powers, alliances, and spice to seize and hold three strongholds (Fremen need only two, and only after turn 10); some factions like the Guild or Bene Gesserit instead win via their own special alternate conditions."
+  "subsystems": [
+   "area control of strongholds",
+   "faction-specific alternate win conditions (Fremen, Guild, Bene Gesserit prediction, Harkonnen/Atreides/Emperor alliance combos)"
+  ],
+  "sources": [
+   "stronghold control",
+   "alliance combinations",
+   "faction special conditions"
+  ],
+  "winning_score": 3,
+  "tally": "endgame",
+  "shape": "majority_control",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "You win the instant you (with allies) control the required number of strongholds at the start of your turn, or the instant your faction's special condition is met (e.g., Fremen surviving to the last turn, Guild controlling any stronghold alone, Bene Gesserit's secret prediction coming true); there is no accumulated score."
  },
  "similar": [
   "Dune: Imperium",
@@ -36,6 +47,6 @@
   "The Broken Meeple",
   "No Pun Included"
  ],
- "_fingerprint": "6380f739f33512f7",
+ "_fingerprint": "a2c2a47dfb89bf3c",
  "_name": "Dune"
 }

@@ -16,11 +16,15 @@
   "kind": "open accusation, bluffing, and group voting",
   "detail": "As in the base game, players openly discuss and accuse one another before a simultaneous vote resolves the round, with new roles adding more ways to manipulate or gather information from other players' secret roles. Almost the entire experience is shared, verbal, and interactive rather than solitary."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no scoring at all; the outcome is decided purely by whether the group's daytime deduction and vote correctly identifies (or fails to identify) a Werewolf, now complicated by Daybreak's extra hidden roles.",
-  "how_you_win": "After a night of secret role actions among an expanded set of roles, players discuss and then simultaneously vote for who to eliminate; if a Werewolf is voted out the Village-aligned team wins, otherwise the Werewolf or other hidden team wins."
+  "subsystems": [],
+  "sources": [],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "majority_control",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "As in the base game, there's no point score: after one night of expanded role abilities, all players vote simultaneously to lynch one player, and whichever team's win condition matches that outcome wins immediately."
  },
  "similar": [
   "One Night Ultimate Werewolf",
@@ -34,6 +38,6 @@
   "Before You Play",
   "How to Play"
  ],
- "_fingerprint": "b36c53f9ba2d4a12",
+ "_fingerprint": "c1ddb4681ec40a8a",
  "_name": "One Night Ultimate Werewolf: Daybreak"
 }

@@ -17,11 +17,19 @@
   "kind": "direct one-on-one combat with hand-based bluffing",
   "detail": "The two heroes fight directly on a shared point-to-point map, attacking and defending with cards from hand, so essentially the entire game state is contested rather than private."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Same core Unmatched engine: victory is elimination of the opposing hero via life-total depletion, not points.",
-  "how_you_win": "You win by reducing your opponent's hero's health to zero through positioning and card-driven combat before they do it to you."
+  "subsystems": [
+   "combat health tracking"
+  ],
+  "sources": [
+   "opponent fighters' remaining health"
+  ],
+  "winning_score": 0,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "elimination",
+  "sudden_death_common": false,
+  "how_you_win": "You win by reducing all of an opponent's characters' health to zero through card-driven attacks, defeating their side entirely; there is no point total."
  },
  "similar": [
   "Unmatched: Battle of Legends, Volume One",
@@ -34,6 +42,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "68af075274fd72ca",
+ "_fingerprint": "f416fd9afc3312d4",
  "_name": "Unmatched: Robin Hood vs. Bigfoot"
 }

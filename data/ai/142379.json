@@ -18,11 +18,20 @@
   "kind": "Mostly parallel play with a shared shrinking map",
   "detail": "Players move and place tiles on a shared modular board that changes for everyone as the city locks down, but scoring and routes are largely individual, with interaction coming from competing for the same map spaces and enclosure timing rather than direct conflict."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Some",
-  "why": "Only players who get their pawn out of the city before lockdown are eligible to win, and among those the one who recovered the most money wins.",
-  "how_you_win": "Route your thief through the city collecting stashed cash and investment payouts while racing to an exit tile before the police lockdown track fills; among everyone who escapes, the richest wins."
+  "subsystems": [
+   "route-building movement and money collection while escaping the city"
+  ],
+  "sources": [
+   "cash recovered en route",
+   "end-of-route escape bonuses"
+  ],
+  "winning_score": 60,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Each player secretly plots a route out of the city, collecting stashed money and completing objectives along the way; once the lockdown track closes off the city (or players reach an exit), scores are tallied and the player with the most recovered cash and bonuses wins."
  },
  "similar": [
   "On Mars",
@@ -36,6 +45,6 @@
   "Rahdo Runs Through",
   "Space-Biff"
  ],
- "_fingerprint": "e2a32d8ff1a4c667",
+ "_fingerprint": "ed751423722aff26",
  "_name": "Escape Plan"
 }

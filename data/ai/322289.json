@@ -18,11 +18,23 @@
   "kind": "action/worker-spot claiming and contract competition",
   "detail": "Players compete for limited worker-placement spots and race to complete contracts before others, with claimed actions blocking rivals from the same spot that round. Most of the board (map, action spaces) is shared, while each player also manages their own ship, contracts, and personal tableau."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accrue from completed contracts, exploration/discovery tiles, reputation track position, and end-game set bonuses as separate categories.",
-  "how_you_win": "You place workers to gather resources, move your ship to explore the islands, and fulfill contracts for reputation and rewards; the player with the most points from combined contracts, exploration, and bonuses at the end wins."
+  "subsystems": [
+   "contract delivery via pick-up-and-deliver routes",
+   "notebook/species set collection",
+   "ship and reputation track bonuses"
+  ],
+  "sources": [
+   "completed contracts",
+   "notebook page/species bonuses",
+   "end-game track and leftover resource bonuses"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a fixed number of rounds you send workers to fulfill delivery contracts and fill in your research notebook; final points come from contracts completed, notebook bonuses, and track positions, with the highest total winning."
  },
  "similar": [
   "Lorenzo il Magnifico",
@@ -36,6 +48,6 @@
   "Watch It Played",
   "No Pun Included"
  ],
- "_fingerprint": "353f54ceaec4261f",
+ "_fingerprint": "d3401212239e7009",
  "_name": "Darwin's Journey"
 }

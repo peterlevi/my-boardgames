@@ -16,11 +16,20 @@
   "kind": "market competition and pricing pressure",
   "detail": "As in the base game, players sell goods into a shared market where pricing and demand are affected by what others produce, while each player's factory development happens on their own tableau of cards."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "As in the full game, victory is decided by the value of your own share holdings at the end, built purely through factory profitability.",
-  "how_you_win": "Run and upgrade factories to sell goods profitably, driving your share price up, then finish holding the most valuable block of your own shares."
+  "subsystems": [
+   "factory production & sales economy",
+   "stock/share market"
+  ],
+  "sources": [
+   "value of your own held shares"
+  ],
+  "winning_score": 80,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Open and upgrade factories, sell goods, and buy your own shares across three decades of four rounds each; the player whose shares are worth most at the end wins."
  },
  "similar": [
   "Arkwright",
@@ -33,6 +42,6 @@
   "Watch It Played",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "a8318b43ffbd1b95",
+ "_fingerprint": "6d3b1deebbb66672",
  "_name": "Arkwright: The Card Game"
 }

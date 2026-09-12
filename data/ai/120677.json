@@ -16,11 +16,24 @@
   "kind": "territory adjacency and area competition",
   "detail": "Players build on a single shared hex board where adjacency to other players' structures grants bonuses, so land grabs and blocking opponents' expansion routes are central; cult tracks are also a shared, contested resource."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from building structures and upgrades, climbing the four cult tracks, favor-tile bonuses, and end-game area/cult scoring, all summed at the end.",
-  "how_you_win": "Terraform land to expand your network of structures, upgrade buildings for income, and advance on the cult tracks; the player with the most total points after the final round wins."
+  "subsystems": [
+   "cult track advancement",
+   "territory/building network scoring",
+   "favor tile bonuses"
+  ],
+  "sources": [
+   "cult track bumps",
+   "end-of-round scoring tiles",
+   "final area/network scoring",
+   "final cult track scoring"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over six rounds you terraform and build settlements to gain points from round scoring tiles and cult advancement, then add final bonuses for largest connected network and cult positions; the highest total after round six wins."
  },
  "similar": [
   "Gaia Project",
@@ -34,6 +47,6 @@
   "Watch It Played",
   "JonGetsGames"
  ],
- "_fingerprint": "6397a3ebced5fc85",
+ "_fingerprint": "92d3232e0a311144",
  "_name": "Terra Mystica"
 }

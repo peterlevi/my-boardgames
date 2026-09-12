@@ -16,11 +16,19 @@
   "kind": "shared board construction, set collection",
   "detail": "Both players contribute cards to the same shared mandala mountains and later choose from them in turn order, directly competing for which colors end up in their own river and cup. Most of the visible board state is shared, while each player's collected river/cup is private."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Every point traces back to just two zones — the cards claimed into your cup and your river — valued by color once the shared mandalas are filled.",
-  "how_you_win": "Play cards into the communal mandalas, then choose colors to claim into your river or cup as mandalas complete; when the deck runs out, total your cup and river, and the higher score wins."
+  "subsystems": [
+   "head-to-head color majority scoring from river/cup card collections"
+  ],
+  "sources": [
+   "each color's collected cards, compared between players"
+  ],
+  "winning_score": 30,
+  "tally": "mixed",
+  "shape": "majority_control",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "As each mandala fills with all six colors, players draft cards from it into their own river and cup; once the cards run out, each color is scored by comparing who collected more of it, and the player with the higher overall total wins."
  },
  "similar": [
   "Battle Line",
@@ -33,6 +41,6 @@
   "Watch It Played",
   "JonGetsGames"
  ],
- "_fingerprint": "6620089c57afc751",
+ "_fingerprint": "f930f17d67078c78",
  "_name": "Mandala"
 }

@@ -18,11 +18,15 @@
   "kind": "team communication and word-association deduction",
   "detail": "The entire 25-card grid is shared, and one player's clue directly shapes their whole team's guesses each turn, with opposing teams racing against each other on the same board. There's no private player state at all — it's fully public information filtered through hidden knowledge held only by spymasters."
  },
- "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no scoring; the only thing that matters is which team's spymaster gets all of their agents identified first.",
-  "how_you_win": "Your spymaster gives one-word clues linking multiple cards; your team guesses which words are yours, and the first team to have all its agent cards identified (without hitting the assassin) wins."
+  "subsystems": [],
+  "sources": [],
+  "winning_score": 9,
+  "tally": "endgame",
+  "shape": "objective_count",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Your spymaster gives one-word clues to help your team identify all of your team's agent cards on the grid before the other team finds all of theirs; touching the assassin card causes an instant loss for that team."
  },
  "similar": [
   "Codenames: Duet",
@@ -36,6 +40,6 @@
   "Before You Play",
   "JonGetsGames"
  ],
- "_fingerprint": "6dc4549db86744ac",
+ "_fingerprint": "813d7f1098c065e6",
  "_name": "Codenames"
 }

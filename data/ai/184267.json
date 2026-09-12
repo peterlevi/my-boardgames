@@ -16,11 +16,25 @@
   "kind": "competition for shared map hexes and contracts",
   "detail": "Players compete for limited hex tiles, contracts, and action spaces on the shared Mars map, occasionally blocking each other's plans, but each player mostly develops their own engine and colony independently. The bulk of the game state is a private player board rather than a shared one."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Score is built from mission-track progress, fulfilled contracts, a hidden private agenda, and constructed modules/tiles, each a mostly independent scoring channel.",
-  "how_you_win": "You manage resources and movement to build modules, complete contracts, and advance along D.O.M.E. mission tracks while pursuing your secret company agenda; the player with the most total points at the end wins."
+  "subsystems": [
+   "D.O.M.E. mission completion",
+   "Private agenda progression",
+   "Base/network building (modules and tracks)",
+   "Mineral/resource economy"
+  ],
+  "sources": [
+   "mission points",
+   "private agenda points",
+   "network/base construction",
+   "leftover resources and artifacts"
+  ],
+  "winning_score": 170,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across a fixed number of rounds you complete shared D.O.M.E. missions and your own private agenda while building out your base network, scoring points along the way plus end-game bonuses; the highest total wins."
  },
  "similar": [
   "Gaia Project",
@@ -34,6 +48,6 @@
   "Rahdo Runs Through",
   "Heavy Cardboard"
  ],
- "_fingerprint": "40eeb70be7619474",
+ "_fingerprint": "bc63ef3995c01aa3",
  "_name": "On Mars"
 }

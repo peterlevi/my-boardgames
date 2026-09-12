@@ -18,11 +18,21 @@
   "kind": "area majority and blocking",
   "detail": "Players place settlers and villages on a shared island board, directly contesting the same resource tiles and blocking each other's expansion routes. Nearly all the game state is shared on the central board, with only your token supply kept private."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from three largely independent tallies: an exploration-phase bonus for the islands you've spread across, end-game sets of the resource tiles your villages have claimed, and the size of the village networks you've linked together.",
-  "how_you_win": "Spread settlers across the islands during exploration to grab resource tiles and good positions, then place villages in the settlement phase to collect matching resource sets and connect them into large networks; whoever totals the most points across exploration, resources, and networks wins."
+  "subsystems": [
+   "resource set (variety) collection",
+   "island majority control"
+  ],
+  "sources": [
+   "diversity bonus for different resource types gathered",
+   "majority-controlled islands"
+  ],
+  "winning_score": 55,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You place settler/village tokens over two phases to both collect a wide variety of resource types (scored for diversity at the end of each phase) and end up with majority presence on valuable islands (scored at the end of the settlement phase); highest combined total wins."
  },
  "similar": [
   "Yellow & Yangtze",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "2bfca1c29c4a7bf5",
+ "_fingerprint": "40569c22a67081d5",
  "_name": "Blue Lagoon"
 }

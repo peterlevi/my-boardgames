@@ -18,11 +18,21 @@
   "kind": "stock auctions and share dilution",
   "detail": "Players bid against each other for company shares and decide when a company issues new stock, directly affecting the value of shares other players hold; the rail network and company treasuries are fully shared state, with almost no private player board."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The only thing that matters at the end is total personal wealth, combining cash on hand with the value of railroad shares held.",
-  "how_you_win": "Bid on and hold shares in railroads you build up (or let others build up) so that by the game's end your cash plus your shares' value exceeds every other player's."
+  "subsystems": [
+   "Railroad share ownership and stock value",
+   "Track-building/network investment"
+  ],
+  "sources": [
+   "Cash on hand",
+   "Value of held shares"
+  ],
+  "winning_score": 250,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a maximum of eight rounds you bid for and hold shares in railroads while investing in track that builds those railroads' value; the game ends after the fixed number of rounds and whoever has the highest net worth (cash plus share value) wins."
  },
  "similar": [
   "Chicago Express",
@@ -36,6 +46,6 @@
   "The Dice Tower",
   "Gaming Rules!"
  ],
- "_fingerprint": "3997f1244d71de13",
+ "_fingerprint": "1564877f0576aab3",
  "_name": "Wabash Cannonball"
 }

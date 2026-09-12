@@ -18,11 +18,22 @@
   "kind": "role selection and shared shipping/market competition",
   "detail": "Players affect each other mainly by picking roles that deny bonus benefits to others and by competing for limited shipping space and a shared trading house, but the plantations and buildings themselves sit on each player's own board. The colonist supply and ships are the main shared resources creating tension."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Nearly all VP comes from two engines — shipping goods to Europe and the built value of your buildings — even though several building types have their own bonus-scoring quirks.",
-  "how_you_win": "Grow and ship crops for victory points, and construct buildings (staffed with colonists) that are worth points on their own and boost your production; whoever has the most total points when the supply runs out or someone fills their city wins."
+  "subsystems": [
+   "shipping/selling goods for hidden VP",
+   "constructing buildings (production and victory-point buildings)"
+  ],
+  "sources": [
+   "hidden VP chips earned from shipping and selling goods",
+   "points printed on constructed buildings",
+   "bonus VP from certain large buildings"
+  ],
+  "winning_score": 50,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "The game ends when a player builds their 12th building or a key supply runs out; the winner has the most total points from hidden VP chips plus the points printed on their buildings."
  },
  "similar": [
   "Le Havre",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "cfc997e518b1df1a",
+ "_fingerprint": "2067592ce2a52c0c",
  "_name": "Puerto Rico"
 }

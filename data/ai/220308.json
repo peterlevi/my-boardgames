@@ -18,11 +18,26 @@
   "kind": "territorial adjacency and shared tech-track racing",
   "detail": "Players expand onto a shared hex map where planet adjacency and terraforming range matter, so building near a rival can block their expansion or trigger federations together. The six research tracks and round bonuses are also raced against everyone else, but each player otherwise manages their own faction board largely independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score sums income/building VP, tech-track advancement, federation tiles, and both round and final scoring bonus tiles.",
-  "how_you_win": "Terraform and settle planets to expand your network, climb the six tech tracks, and form federations, converting all of that into victory points that are tallied at game end."
+  "subsystems": [
+   "building/colonization network",
+   "research (tech tracks)",
+   "federations",
+   "round & final scoring tiles"
+  ],
+  "sources": [
+   "round scoring bonuses",
+   "tech track advancement points",
+   "federation points",
+   "two final scoring tiles",
+   "leftover resources converted to points"
+  ],
+  "winning_score": 170,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "After 6 fixed rounds, the player with the highest combined total from research, federations, round bonuses, and two final scoring tiles wins."
  },
  "similar": [
   "Terra Mystica",
@@ -36,6 +51,6 @@
   "Watch It Played",
   "No Pun Included"
  ],
- "_fingerprint": "91322a5ff02d1ac2",
+ "_fingerprint": "799ddb379b8f2e10",
  "_name": "Gaia Project"
 }

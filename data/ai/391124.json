@@ -18,11 +18,23 @@
   "kind": "market competition and race timing",
   "detail": "Players compete for the same limited technology upgrades and race slots on a shared board, and flooding the market with similar car models depresses everyone's prices, so choices are interdependent even though each player mostly develops their own production line."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final standing is a tally that blends money on hand, the value of vehicles engineered and sold, technology/engine development, and results from the Grand Prix races, so no single track dominates.",
-  "how_you_win": "Move around the rondel to research engines and bodies, manufacture and sell cars on the market, and enter races to earn prestige; whoever accumulates the most points across production, sales, and racing when the game ends wins."
+  "subsystems": [
+   "vehicle manufacturing and sales for money",
+   "Grand Prix race results for bonus points",
+   "engine/body set collection for bonus points"
+  ],
+  "sources": [
+   "money earned from selling manufactured cars",
+   "race placement bonuses",
+   "completed engine/body set bonuses"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You win by ending with the most points/money, built mainly from designing and selling successful car models over the game's rounds, topped up with bonuses from strong Grand Prix showings and completed vehicle sets."
  },
  "similar": [
   "Kraftwagen (2011)",
@@ -36,6 +48,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "c46040c13a81d8b3",
+ "_fingerprint": "7db94b64188298de",
  "_name": "Kraftwagen: Age of Engineering"
 }

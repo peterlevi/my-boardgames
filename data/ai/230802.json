@@ -17,11 +17,21 @@
   "kind": "tile drafting and denial",
   "detail": "Players draft from shared factory displays and can deliberately take tiles they don't need just to dump penalty tiles on an opponent, but each player builds their pattern on their own private board. The shared supply of tiles is the main point of contact between players."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Scoring comes from just two things: adjacency chains scored as you tile your wall each round, and the end-game completion bonuses for rows, columns, and colors.",
-  "how_you_win": "Draft tiles to complete pattern rows so they score adjacency points on your wall, avoid floor-line penalties, and pick up end-game bonuses for finished rows/columns/colors."
+  "subsystems": [
+   "wall tile-placement scoring"
+  ],
+  "sources": [
+   "adjacency points per round",
+   "end-game row/column/color bonuses",
+   "floor-line penalties"
+  ],
+  "winning_score": 75,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Draft tiles each round to fill your wall pattern, scoring adjacency points as you place them and penalties for overflow; once someone completes a horizontal row the game ends after final bonuses and the highest total wins."
  },
  "similar": [
   "Sagrada",
@@ -35,6 +45,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "98a1eab44f44043a",
+ "_fingerprint": "152fb07ebb6aefd7",
  "_name": "Azul"
 }

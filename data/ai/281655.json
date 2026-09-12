@@ -18,11 +18,24 @@
   "kind": "competing for claims, auctions, and shared board space",
   "detail": "Players bid against each other for cards and race to claim limited sites on the shared solar-system map, so territory and resource claims are contested even though each player's rocket and tech tree development happens independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points accrue from multiple independent channels — patents researched, sites colonized/claimed, and successful freight or exploration missions.",
-  "how_you_win": "Design and fly rockets to explore, claim, and colonize sites across the solar system while researching patents and delivering cargo; the player who accumulates the most VP from these combined ventures by game end wins."
+  "subsystems": [
+   "colony-site network & site value scoring",
+   "corporate stock/political influence (Module 0)",
+   "technology/patent card economy"
+  ],
+  "sources": [
+   "colony site VP (weighted by site multiplier/type)",
+   "stock or political majorities",
+   "patent cards",
+   "first-achievement bonus VP"
+  ],
+  "winning_score": 40,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Once an end-game trigger fires (such as a deck running out or a set number of colonies being founded), the player with the most VP from colonized sites, tech, and bonuses wins."
  },
  "similar": [
   "Bios: Megafauna",
@@ -36,6 +49,6 @@
   "Heavy Cardboard",
   "The Undead Viking"
  ],
- "_fingerprint": "e82bf80a9a6d9317",
+ "_fingerprint": "9be61b34b2e19854",
  "_name": "High Frontier 4 All"
 }

@@ -144,12 +144,33 @@ database above. Where that is unavailable it falls back to a rule in
 category tags: tags meaning players act *on* each other score High,
 competition over a shared pool Medium, parallel play Low.
 
-**Wins by** and **scoring breadth**, both in the expanded row, also come from
-the opinion database. An earlier attempt derived breadth from mechanic tags
-alone and is gone: it put Food Chain Magnate — a shared bank, a shared
-customer pool, one currency — in the *broad* bucket, and called more than half
-the collection focused. BGG's tags describe what you *do*, never how you
-*win*, and no weighting of them recovers the difference.
+**Win condition** and **Point salad** are computed, not asked for. The
+opinion pass reports *facts* about a game's scoring — the separate subsystems
+a player builds, the categories the rules total, what a winning score looks
+like, whether points are tallied as you go or at the end, the shape of the
+score, and how the game ends — and
+[`scripts/scoring.py`](scripts/scoring.py) turns those into the two labels by
+rules you can read:
+
+- one currency, a count of objectives, your *lowest* category, or a contest
+  over shared majorities is never a salad, however many things feed it;
+- a target score reached at 10 or 30 points is a race, not an accumulation;
+- one engine is at most a touch of salad even when the scorepad has four lines
+  — Carcassonne's cities, roads, farms and monasteries all come out of placing
+  one tile;
+- a game that usually ends on a sudden-death condition is not really decided
+  by its tally.
+
+Asking the model for the labels directly did not work: it filed Food Chain
+Magnate, whose only currency is money, as *broad*, and Rajas of the Ganges —
+four separate tallies — as *some*. Facts it can report; verdicts it guesses.
+[`tests/expectations.txt`](tests/expectations.txt) pins the rules to
+judgements from someone who has played the games, and
+`python3 scripts/check_scoring.py` says whether they still agree.
+
+An even earlier attempt derived the same thing from mechanic tags alone. BGG's
+tags describe what you *do*, never how you *win*, and no weighting of them
+recovers the difference.
 
 **Traits** are groupings rather than judgments. Each means "this game has at
 least one of these mechanics", defined in

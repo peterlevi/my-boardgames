@@ -16,11 +16,23 @@
   "kind": "worker placement blocking",
   "detail": "Players compete for a shared row of action/building spaces so taking one denies it to others that round, but the bulk of the game happens on each player's private board of hexes and buildings. There's no direct attack on opponents' resources or scores."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score sums printed building victory points, prestige goods (books, ceramics, ornaments, relics), converted leftover coins, and penalties for unused land, so no single system dominates.",
-  "how_you_win": "Build an efficient chain of production buildings that turns raw resources into high-value prestige goods and point-earning structures, then finish with the highest combined total of building VPs, goods, and money."
+  "subsystems": [
+   "Building construction (fixed-VP buildings)",
+   "Goods refinement (upgrading raw resources into fixed-value goods)"
+  ],
+  "sources": [
+   "Building point values",
+   "Refined goods (books, ceramics, ornaments, relics)",
+   "Leftover resources/coins",
+   "Unused building plots (negative VP)"
+  ],
+  "winning_score": 150,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Construct a valuable engine of buildings and refine raw goods into high-value finished goods like relics and ornaments, then total it all once the fixed number of rounds ends; empty building sites subtract points."
  },
  "similar": [
   "Le Havre",
@@ -34,6 +46,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "1b45f2e63ef2b7ae",
+ "_fingerprint": "739fc681feefbb4a",
  "_name": "Ora et Labora"
 }

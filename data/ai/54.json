@@ -18,11 +18,21 @@
   "kind": "area majority and treasure stealing",
   "detail": "Players contest the same temples for majority control at two scored 'volcano' events, and can steal treasures directly from an opponent's holdings via the market action, so much of the shared board state is directly fought over rather than built in isolation. Movement and tile placement also block or open routes for other players' explorers."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Final score comes down to which temples you control (majority of markers there) and how many matched sets of treasures you've collected, with everything else (movement, camps, gates) just serving those two ends.",
-  "how_you_win": "Explore the modular jungle board, place worker-explorers to claim majority control of temples and collect treasure tokens, then score points at chosen intervals for temple control (weighted by temple height) and for sets of treasures; highest total at game end wins."
+  "subsystems": [
+   "temple area-majority control (scored at 3 interim scorings plus game end)",
+   "treasure tile set collection"
+  ],
+  "sources": [
+   "temple control points",
+   "held treasure sets/singles at endgame"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Have the most points from controlling temples at three interim scoring rounds and the final scoring, plus points for treasures held, once all jungle tiles have been drawn and placed."
  },
  "similar": [
   "Java",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "ab9863ae70b79f9d",
+ "_fingerprint": "236324d8be340505",
  "_name": "Tikal"
 }

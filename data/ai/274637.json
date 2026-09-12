@@ -17,11 +17,19 @@
   "kind": "direct one-on-one combat with hand-based bluffing",
   "detail": "Both players fight on the same shared map, directly attacking and blocking each other's characters, and hand management creates bluffing over which card the opponent is holding for an ambush or defense."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The only thing that matters is reducing the opposing hero's life total to zero through combat.",
-  "how_you_win": "You win by using your deck's attack cards and abilities to whittle your opponent's health to zero before they do the same to you."
+  "subsystems": [
+   "combat health tracking"
+  ],
+  "sources": [
+   "opponent fighters' remaining health"
+  ],
+  "winning_score": 0,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "elimination",
+  "sudden_death_common": false,
+  "how_you_win": "You win by reducing all of an opponent's characters' health to zero through card-driven attacks, defeating their side entirely; there is no point total."
  },
  "similar": [
   "Unmatched: Cobble & Fog",
@@ -35,6 +43,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "c36817ec02fb21b1",
+ "_fingerprint": "29995e3cba0104db",
  "_name": "Unmatched: Battle of Legends, Volume One"
 }

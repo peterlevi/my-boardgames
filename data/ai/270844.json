@@ -18,11 +18,22 @@
   "kind": "take-that raiding and card drafting",
   "detail": "Each player builds their own tableau of buildings, but ships let players actively raid opponents' islands to steal resources or damage their engine, and cards are drafted from a shared row, so choices affect what's available to rivals."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score sums several independent categories — constructed buildings, completed raids, faction bonuses, and leftover resources.",
-  "how_you_win": "Build up your empire's card tableau, raid other locations for extra rewards, and complete your faction's special objectives; whoever totals the most points across buildings, raids, and bonuses at the end wins."
+  "subsystems": [
+   "settlement/tableau building & resource production",
+   "exploration & conquest raiding"
+  ],
+  "sources": [
+   "VP printed on location and unit cards",
+   "raid/expedition rewards",
+   "round-end bonus VP tokens"
+  ],
+  "winning_score": 40,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over five rounds, players build up settlements and raid rivals or explore for rewards; whoever has accumulated the most victory points by the end wins."
  },
  "similar": [
   "Imperial Settlers",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "054b72c4651e3413",
+ "_fingerprint": "2bcf0da767c23f54",
  "_name": "Imperial Settlers: Empires of the North"
 }

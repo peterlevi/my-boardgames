@@ -16,11 +16,21 @@
   "kind": "network and market blocking",
   "detail": "Players indirectly compete for map space and shared market demand for coal and cotton, so placement decisions constrain opponents' future options. The board and market are fully shared while each player's money and hand of cards stay private."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "As in its sequel, points come from just two tallies — VP on your built links and VP on your flipped industry tiles — totaled at the end of each era.",
-  "how_you_win": "Develop and flip cotton, coal, iron, and manufactured-goods tiles while extending your canal and rail network; the player with the highest combined link-and-industry score after the rail era wins."
+  "subsystems": [
+   "industry tile development",
+   "canal/rail network building"
+  ],
+  "sources": [
+   "VP from flipped (established) industry tiles",
+   "VP from connected canal and rail links"
+  ],
+  "winning_score": 165,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You build and establish (flip) industry tiles and link them with canals then rails; VP is counted for industries and links at the end of the canal phase and again at the end of the rail phase, and the highest total wins."
  },
  "similar": [
   "Brass: Birmingham",
@@ -34,6 +44,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "34266fc8236f93f6",
+ "_fingerprint": "da5362733669db2a",
  "_name": "Brass: Lancashire"
 }

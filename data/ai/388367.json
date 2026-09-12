@@ -18,11 +18,20 @@
   "kind": "open tableau effects, forced exchanges, and direct attacks",
   "detail": "As with base Innovation, all tableaus are public and dogma effects let players constantly share, steal, or destroy each other's cards, with expansions adding further ways for players to affect one another's boards."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Broad",
-  "why": "This omnibus keeps Innovation's core win condition of racing to claim enough Achievement cards via icon thresholds, with the added expansions and Age 11 offering more routes to those thresholds.",
-  "how_you_win": "You play and use technology cards to build up icons of different colors and trigger their special abilities, spending resources to claim Achievement cards; the first player to collect enough Achievements wins immediately (or, if the deck runs out first, whoever has the most Achievements wins)."
+  "subsystems": [
+   "card tableau/dogma engine"
+  ],
+  "sources": [
+   "age achievements (score pile thresholds)",
+   "special achievements (icon/tag conditions)"
+  ],
+  "winning_score": 6,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "Play and activate technology cards to build icons and grow your score pile, claiming an Achievement whenever your score pile meets an age's threshold; the first player to hold enough Achievements (or all five Special Achievements) wins immediately, now across an expanded 11-age card pool."
  },
  "similar": [
   "Innovation",
@@ -36,6 +45,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "c138f3081e7fa87c",
+ "_fingerprint": "dd68f656e42feddf",
  "_name": "Innovation Ultimate"
 }

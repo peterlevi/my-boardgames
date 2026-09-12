@@ -18,11 +18,22 @@
   "kind": "card-based raids and drafting from a shared market",
   "detail": "As in Classics, players raid each other with military cards and draft from a shared card row, while each civilization's deck and tableau remain private and individually managed."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "As with other Imperium volumes, actions across factions all ultimately convert into cards worth victory points, making the final tally a single combined pool rather than several independent categories.",
-  "how_you_win": "You draft and play cards to grow your civilization's military and economic base, keeping the most valuable cards in your deck; at game end you sum the victory points on all your owned cards, and the highest total wins."
+  "subsystems": [
+   "tableau/deck-building VP engine",
+   "civilization-specific end-game bonus"
+  ],
+  "sources": [
+   "VP printed on acquired nation/tableau cards",
+   "civilization's unique end-game scoring card",
+   "leftover resources"
+  ],
+  "winning_score": 40,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Recruit and play cards into your tableau to accumulate victory points through the game, then add your civilization's specific end-game bonus once the nation deck has been exhausted for the final time; highest total wins."
  },
  "similar": [
   "Imperium: Classics",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "db7ee8eaef5bd5a7",
+ "_fingerprint": "c3e3aa93068ffd55",
  "_name": "Imperium: Legends"
 }

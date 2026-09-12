@@ -18,11 +18,19 @@
   "kind": "shared market competition, mostly parallel play",
   "detail": "Players compete for limited copies of cards from a shared central supply and can be affected by Attack cards, but each player otherwise builds and plays their own deck independently. The market is the main shared resource; the rest of the game state is private to each player's deck."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Despite the variety of kingdom cards enabling different strategies, the only thing that ultimately counts is victory points printed on Estates, Duchies, Provinces, and kingdom Victory/Curse cards in your deck.",
-  "how_you_win": "You buy cards to build an efficient deck engine that generates money and actions, then convert that engine into buying Victory cards (and avoiding Curses) before the supply piles run out; the player with the most victory points in their deck at game end wins."
+  "subsystems": [
+   "victory-point card accumulation via deck-building"
+  ],
+  "sources": [
+   "victory cards (Estates, Duchies, Provinces) and any Kingdom cards with VP value in your deck"
+  ],
+  "winning_score": 35,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You buy cards to build an efficient deck and convert money into victory-point cards; the game ends when the Province pile or any three supply piles empty, and whoever has the most VP in their deck wins."
  },
  "similar": [
   "Dominion: Intrigue",
@@ -36,6 +44,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "b6056546a1552b5d",
+ "_fingerprint": "f3103f5654d428cb",
  "_name": "Dominion"
 }

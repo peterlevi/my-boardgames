@@ -16,11 +16,19 @@
   "kind": "cooperative resource and crisis management",
   "detail": "Players jointly manage a shared ship board, shared resource pools, and shared threats, discussing and coordinating which worker-dice to commit where each round. Individual player roles exist but nearly all meaningful state — power, hull integrity, exploration progress — is shared and affected by everyone's choices."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Scoring is split across discovered planets, completed missions, and researched technology, each contributing points independently.",
-  "how_you_win": "Guide your robot crew to explore, complete mission and discovery cards, and research technology before the ship's systems degrade too far; the player with the most accumulated points from these separate objectives wins."
+  "subsystems": [
+   "exploration, combat and construction actions on a shared journey track"
+  ],
+  "sources": [
+   "points scored from worker-placement actions (excavation, combat, building)"
+  ],
+  "winning_score": 55,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You place robot workers each round to explore, fight and build aboard the ship, scoring points immediately for successful actions; when the ship's journey track reaches its end the player with the most accumulated points wins."
  },
  "similar": [
   "Robinson Crusoe: Adventures on the Cursed Island",
@@ -34,6 +42,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "059d19bb2258bfe6",
+ "_fingerprint": "0ea9c3288a9372e1",
  "_name": "Black Angel"
 }

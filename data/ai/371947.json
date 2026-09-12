@@ -16,11 +16,30 @@
   "kind": "Area majority + card drafting competition",
   "detail": "Players build their own performer tableau privately, but everyone competes for majority control in the same towns/cities as the shared Barnum caravan advances, and available artist/performance cards are drafted from a shared pool. Direct confrontation is limited, but timing your performances to beat rivals to area majorities is a constant tension."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Fame comes from immediate performance payouts, end-of-game majority bonuses in each circus ring, and bonuses tied to developing your troupe, so several independent tracks feed the final score.",
-  "how_you_win": "You win by accumulating the most fame points through staging performances and securing majority/bonus awards in the circus rings by the end of the game."
+  "subsystems": [
+   "Show performances: matching hired artists to a town/city's requested lineup for immediate fame",
+   "Regional tent/pedestal majority scoring triggered whenever Barnum's tour token passes through an area",
+   "End-game objective and scoring cards collected during play"
+  ],
+  "sources": [
+   "performance fame",
+   "regional area majority",
+   "end-game scoring cards",
+   "secret objective card"
+  ],
+  "winning_score": 90,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Hire artists into your three-ring board and send them out to perform shows that match what each town, small city, or big city audience wants, banking fame immediately, while also contesting regional tent majorities as Barnum tours the board; when Barnum completes the loop the final region scores, end-game cards are tallied, and the highest total fame wins.",
+  "checked": [
+   "https://www.thefamilygamers.com/3-ring-circus/",
+   "https://officialgamerules.org/game-rules/3-ring-circus-rules/",
+   "https://boardgameoverlord.com/board-game-reviews/how-many-rings-in-a-circus-3-a-3-ring-circus-review/",
+   "https://www.whatboardgame.com/post/3-ring-circus-board-game-review"
+  ]
  },
  "similar": [
   "Wingspan",
@@ -33,6 +52,6 @@
   "https://boardgamegeek.com/boardgame/371947/3-ring-circus"
  ],
  "source": "web",
- "_fingerprint": "4f87a05ef6fdcf13",
+ "_fingerprint": "2fdfc4f78829247c",
  "_name": "3 Ring Circus"
 }

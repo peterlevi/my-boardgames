@@ -20,11 +20,22 @@
   "kind": "Competitive bidding and shared resource claiming",
   "detail": "Players compete directly over a shared set of airport/destination cards and route claims through open, visible bidding - being outbid sends your worker back for reuse, so it's tense but not a hard lockout. Money is public knowledge, which shapes bidding strategy, and Pan Am's own expansion (via die rolls and events) can seize routes players already claimed, forcing a sale - so the shared board state and stock market are the main channels through which players affect each other, while each player's own fleet/route income functions more like a personal engine feeding the shared stock race."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game ends after the final era and whoever has amassed the greatest net worth in cash, routes, and stock wins.",
-  "how_you_win": "Buy planes and routes, sell them to the growing Pan Am company for profit, and invest in Pan Am stock, finishing with more total net worth than any rival."
+  "subsystems": [
+   "route/landing-rights ownership and income",
+   "Pan Am stock investment"
+  ],
+  "sources": [
+   "cash on hand",
+   "value of held Pan Am stock",
+   "route income"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across four historical eras you bid for routes and buy planes to generate income, while investing spare cash in Pan Am stock; the game ends after the last era and whoever has the most total money (cash plus stock value) wins."
  },
  "similar": [
   "Chicago Express",
@@ -42,6 +53,6 @@
   "https://techraptor.net/tabletop/reviews/pan-am-board-game-review-0"
  ],
  "source": "web",
- "_fingerprint": "93623219284944f7",
+ "_fingerprint": "220565f0a01737e9",
  "_name": "Pan Am"
 }

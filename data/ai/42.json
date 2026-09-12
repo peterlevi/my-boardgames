@@ -16,11 +16,23 @@
   "kind": "open conflict and territorial tile placement",
   "detail": "All tiles and leaders are placed on one shared board, and kingdoms merging or leaders clashing directly destroys opponents' tiles and points, so nearly the entire game state is contested rather than private."
  },
- "win_criteria": "Lowest-highest scoring",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Each player's final score is their weakest of four color totals (red, blue, green, black), so all four leader types matter and neglecting any one caps your score.",
-  "how_you_win": "Place tiles and leaders to trigger internal and external conflicts that award treasure in four colors; because your score is only as high as your worst color, you win by building a balanced civilization rather than maximizing one color."
+  "subsystems": [
+   "civilization building via tile and leader placement"
+  ],
+  "sources": [
+   "red points",
+   "blue points",
+   "green points",
+   "black points",
+   "treasure from internal conflicts"
+  ],
+  "winning_score": 10,
+  "tally": "running",
+  "shape": "lowest_category",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You place tiles and leaders to accumulate points in four separate colors through farming, trade, religion, and government, with conflicts letting you steal or destroy rivals' points; when the tile supply runs out, your score is only your weakest color, so the player whose lowest category is highest wins."
  },
  "similar": [
   "Through the Desert",
@@ -34,6 +46,6 @@
   "JonGetsGames",
   "Before You Play"
  ],
- "_fingerprint": "7688c2532f57ad2b",
+ "_fingerprint": "4678bf56703ad2b6",
  "_name": "Tigris & Euphrates"
 }

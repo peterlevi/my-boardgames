@@ -17,11 +17,19 @@
   "kind": "shared tile spaces and light blocking",
   "detail": "Players move across the same board and can land on tiles already occupied by an opponent (paying them a small bonus) or beat them to the last needed good, but each player otherwise builds up goods and money on their own personal mat."
  },
- "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game ends the instant a player banks the required number of rubies, so there's no comparative final tally.",
-  "how_you_win": "Move your merchant around the bazaar's tiles, gathering goods and money and converting them into rubies, and be the first to collect the target number of rubies."
+  "subsystems": [
+   "ruby accumulation through selling goods and fulfilling contracts"
+  ],
+  "sources": [
+   "rubies collected"
+  ],
+  "winning_score": 5,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "target_score",
+  "sudden_death_common": true,
+  "how_you_win": "Move your merchant around the bazaar gathering and selling goods, fulfilling contracts, and completing bonus-card sets to earn rubies; the first player to collect the required number of rubies (5, scaled slightly by player count) wins immediately."
  },
  "similar": [
   "The Voyages of Marco Polo",
@@ -35,6 +43,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "45c4096b49242d7e",
+ "_fingerprint": "0e03070dfcfe63fb",
  "_name": "Istanbul: Big Box"
 }

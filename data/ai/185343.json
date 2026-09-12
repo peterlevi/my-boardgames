@@ -16,11 +16,25 @@
   "kind": "worker placement competing for shared spaces and contracts",
   "detail": "Players place workers on shared action spaces and compete for limited contracts and tech upgrades, but each player's production engine and base develop mostly on their own board."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Victory points accrue from the exodus/tech tracks, converter upgrades, resource and artifact bonuses, and end-game scoring tiles, all largely independent.",
-  "how_you_win": "Using worker placement across present and future time zones via time-travel loops, you build converters, tech, and resources to advance the exodus track and complete bonus tiles; the Path with the most accumulated victory points at the end wins."
+  "subsystems": [
+   "structure building (Exo tiles) for direct VP",
+   "Continuum tech track",
+   "contracts and mission objectives"
+  ],
+  "sources": [
+   "built structures",
+   "Continuum track position",
+   "completed contracts",
+   "end-game bonus tiles",
+   "apocalypse track penalties"
+  ],
+  "winning_score": 70,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You use time-travel loops to send resources and workers back to earlier rounds, building structures and advancing on the Continuum tech track while completing contracts; the game ends once the shared apocalypse meter is triggered, and the highest combined score from buildings, track position, and contracts wins."
  },
  "similar": [
   "Trickerion",
@@ -34,6 +48,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "324a5de02621248f",
+ "_fingerprint": "0f079248a0910d22",
  "_name": "Anachrony"
 }

@@ -17,11 +17,23 @@
   "kind": "worker placement with some spot-blocking",
   "detail": "Players occupy shared action spaces so there is some blocking and racing for key contract tiles, but most of the game is building your own tableau and fulfilling your own contracts. The shared board state (available spaces, contract tiles) is the main point of contact between players."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score sums contract rewards, trophies, gold, favor track position, and building bonuses collected across the campaign of worker-placement turns.",
-  "how_you_win": "You fulfill contracts and complete quests using resources gathered through worker placement and dice rolling, banking VP from many different sources; the player with the most points at game end wins."
+  "subsystems": [
+   "worker placement to gather resources/followers",
+   "contract (quest) fulfillment for VP and bonus rewards"
+  ],
+  "sources": [
+   "completed contracts",
+   "quest/artifact tiles",
+   "favor/reputation track",
+   "leftover resources"
+  ],
+  "winning_score": 65,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Use worker placement and dice to gather resources and recruit followers, fulfilling contract cards for VP and bonuses; when the contract/quest supply runs out, the player with the most total VP from contracts, tiles, and leftover resources wins."
  },
  "similar": [
   "Architects of the West Kingdom",
@@ -35,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "1ad1537d3ab956c8",
+ "_fingerprint": "4e9251e224ff1901",
  "_name": "Raiders of Scythia"
 }

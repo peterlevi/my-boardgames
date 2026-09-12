@@ -17,11 +17,24 @@
   "kind": "route and building competition",
   "detail": "Players compete for limited trail spots and buildings while otherwise developing separate decks and boards, mirroring the interaction pattern of the base game."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Scoring is split across sheep/wool delivery value, buildings, station-style upgrades, and objective bonuses, mirroring the multi-track structure of the GWT series.",
-  "how_you_win": "You breed and diversify sheep, deliver wool along the trail, and invest in buildings and upgrades, winning by accumulating the most points across these separate tracks."
+  "subsystems": [
+   "sheep delivery/deck-building loop",
+   "building network",
+   "breed/worker development tracks"
+  ],
+  "sources": [
+   "delivery track advances (running)",
+   "buildings owned",
+   "wool/breed value bonuses",
+   "worker track position"
+  ],
+  "winning_score": 170,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Score points continuously by delivering increasingly valuable sheep, then add end-game bonuses from buildings and worker-track progress once the final round is triggered."
  },
  "similar": [
   "Great Western Trail",
@@ -35,6 +48,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "ae857f10c41a2035",
+ "_fingerprint": "9b7b02e3bcfd97cb",
  "_name": "Great Western Trail: New Zealand"
 }

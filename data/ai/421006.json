@@ -18,11 +18,25 @@
   "kind": "asymmetric race and area majority",
   "detail": "Players draft from a shared card row and directly contest control over regions of Middle-earth on a shared modular board, while racing on parallel tracks (the Ring's progress vs. Sauron's hunt). Very little happens in isolation — almost every action either advances your own race or directly threatens the opponent's."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Some",
-  "why": "Each chapter ends the instant an asymmetric objective is met — Sauron controlling enough Free Cities or corrupting the Fellowship, or the Fellowship completing the Quest track — so there is no running point total to compare.",
-  "how_you_win": "As the Fellowship, push the Quest track toward Mount Doom while defending or evacuating threatened cities; as Sauron, capture enough Free Cities or corrupt the ring-bearers before the Quest completes."
+  "subsystems": [
+   "quest track advancement (Fellowship)",
+   "city/army conquest and race allegiance (Sauron)",
+   "skills, treasure and presence tracks feeding chapter-end points"
+  ],
+  "sources": [
+   "quest progress",
+   "conquered cities/allegiances",
+   "skills",
+   "treasure",
+   "presence"
+  ],
+  "winning_score": 0,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "The Fellowship player wins instantly by completing the quest track (destroying the Ring), while Sauron wins instantly by conquering enough cities/killing the Fellowship; if neither happens by the end of the third chapter, the player with the most accumulated points from skills, treasure and influence wins."
  },
  "similar": [
   "7 Wonders Duel",
@@ -36,6 +50,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "764c0012dfc98742",
+ "_fingerprint": "bb0f9988d5d1f35f",
  "_name": "The Lord of the Rings: Duel for Middle-earth"
 }

@@ -16,11 +16,22 @@
   "kind": "mostly parallel play with occasional area majority",
   "detail": "Each player mostly develops their own board and card tableau independently, with limited direct interaction through shared majority spaces on the board rather than direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accrue independently from progress in workshops, houses, people, trade shops, and the harbor, each tracked on its own chart on the player board.",
-  "how_you_win": "You place cards to advance markers along five separate production/trade tracks on your personal board; whoever has advanced furthest across these combined tracks at the end has the most points and wins."
+  "subsystems": [
+   "tableau/pattern building across production stages (workshops, houses, people)",
+   "harbor shipping area majority"
+  ],
+  "sources": [
+   "completed production patterns",
+   "harbor/trade majority bonuses",
+   "end-game tableau bonuses"
+  ],
+  "winning_score": 120,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You place action pawns and tiles to build out glass-production chains and ship goods through the harbor; when the triggering track/tile supply is exhausted, points from completed patterns and shipping majorities are totaled and the highest sum wins."
  },
  "similar": [
   "Yellow & Yangtze",
@@ -34,6 +45,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "8f31d1a74e2a1617",
+ "_fingerprint": "458cdaaa21470350",
  "_name": "Mille Fiori"
 }

@@ -16,11 +16,17 @@
   "kind": "cooperative deduction with limited communication",
   "detail": "Players share a common board state and pool of clues but face restrictions on how much they can openly discuss, so success depends on collectively inferring hidden information rather than direct player-vs-player conflict."
  },
- "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no competitive scoring; the team either completes its mission objectives against Mind MGMT before running out of resources/time, or they collectively lose.",
-  "how_you_win": "Players work together, moving and using variable agent abilities to complete the scenario's objectives before the shared timer or resource runs out; success or failure is shared by the whole team."
+  "subsystems": [
+   "cooperative mission/case objective tracking"
+  ],
+  "sources": [],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "objective_count",
+  "ends_by": "coop_goal",
+  "sudden_death_common": false,
+  "how_you_win": "There is no point total; the team wins by cooperatively completing the case's objectives (evading or countering Mind MGMT) before the antagonist track fills or the scenario's failure condition is triggered."
  },
  "similar": [
   "Hanabi",
@@ -34,6 +40,6 @@
   "The Dice Tower",
   "Before You Play"
  ],
- "_fingerprint": "b6bdb25398913d23",
+ "_fingerprint": "608e7ead7d419c56",
  "_name": "Mind MGMT: The Psychic Espionage “Game.”"
 }

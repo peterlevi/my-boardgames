@@ -16,11 +16,19 @@
   "kind": "area majority and shared drafting",
   "detail": "Players draft from shared card and resource pools and compete for area-majority control on the city map, so timing and positioning affect opponents' options. Each player's own specialist network and resource engine, however, are built and optimized largely independently on their own board."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from several independent channels: network/area control of city districts, resolved event cards, and end-game objective bonuses.",
-  "how_you_win": "Move around the rondel to gather specialists and resources, build a network to control city districts, and resolve crisis event cards; whoever has the most points from territory control and solved crises when the game ends wins."
+  "subsystems": [
+   "victory-point track used as spendable resource, driven by network/route building and specialists"
+  ],
+  "sources": [
+   "victory points accumulated (and partly spent) via the rondel, network connections, and specialist deck"
+  ],
+  "winning_score": 140,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You spend and regrow victory points as your working currency while building routes and recruiting specialists; when the specialist deck or event track triggers the game's end, whoever has the most VP left wins."
  },
  "similar": [
   "Mombasa",
@@ -34,6 +42,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "b05984ae72980763",
+ "_fingerprint": "c2d19da85874661d",
  "_name": "Blackout: Hong Kong"
 }

@@ -18,11 +18,23 @@
   "kind": "phase selection with shared bonuses, mostly parallel tableau building",
   "detail": "Players choose action phases simultaneously and everyone benefits from whichever phases are chosen, with a small bonus to whoever picked it, so there's indirect competition over phase selection and the VP chip pool. Each player's tableau of worlds and developments is entirely their own."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score sums VP chips earned from producing/consuming goods, victory point tags on played cards, and bonuses from goal cards — several distinct scoring channels.",
-  "how_you_win": "Select action phases each round to develop worlds, produce and consume goods for VP chips, and build a tableau of cards with scoring bonuses; when the deck runs out or a 12-card tableau is built, whoever has the most combined points wins."
+  "subsystems": [
+   "tableau building of worlds and developments",
+   "production/consumption cycle for VP chips",
+   "military conquest of worlds"
+  ],
+  "sources": [
+   "VP printed on played cards",
+   "VP chips earned from consuming goods",
+   "bonus VP from card abilities"
+  ],
+  "winning_score": 40,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "The game ends when a player's tableau reaches 12 cards or the VP chip pool is exhausted; the winner has the most combined points from card values and collected VP chips."
  },
  "similar": [
   "San Juan",
@@ -36,6 +48,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "6363fa940148bd01",
+ "_fingerprint": "9322bd16f449822d",
  "_name": "Race for the Galaxy"
 }

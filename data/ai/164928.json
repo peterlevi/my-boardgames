@@ -16,11 +16,24 @@
   "kind": "mostly parallel play with shared board spaces",
   "detail": "Players compete for limited slots on shared action spaces and the shared trade/travel tracks, so timing and first-mover advantage matter, but each player's engine (bag, board, followers) is entirely their own. There's no direct combat or resource theft."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accumulate from development-track milestones, built farmhouses/trading posts, city tiles, and leftover money/goods, so victory depends on several largely independent tracks at once.",
-  "how_you_win": "Recruit followers and deploy them to advance the trade, construction, science and other tracks, expand your trading-post network and city, then end with the highest total across all these combined sources."
+  "subsystems": [
+   "Development track (VP gained while advancing)",
+   "Farmland sets (endgame VP for distinct follower types collected)",
+   "Trading posts and city buildings"
+  ],
+  "sources": [
+   "Development track VP",
+   "Farmland set bonuses",
+   "Trading post/building VP",
+   "End-game bonus tiles"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Recruit followers and deploy them to advance along the development track, which scores points immediately, while also building trading posts and collecting sets of followers on farmland tiles for bonuses at game end when the round track runs out."
  },
  "similar": [
   "The Voyages of Marco Polo",
@@ -34,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "ff908650772e977b",
+ "_fingerprint": "8f6f60009fd357a3",
  "_name": "Orléans"
 }

@@ -18,11 +18,17 @@
   "kind": "cooperative trick-taking with restricted communication",
   "detail": "Every trick affects the whole team's shared mission state, and the entire challenge is inferring teammates' hands from extremely limited signals rather than open talk. There's no individual tableau; the trick pile and mission tasks are fully shared."
  },
- "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There's no point total; each mission just specifies task cards that must be fulfilled by specific players through the tricks taken.",
-  "how_you_win": "The team plays trick-taking hands while communicating only through very limited signals, and the group wins a mission by ensuring the right players win the right specific cards in tricks."
+  "subsystems": [],
+  "sources": [
+   "completion of each mission's specific task conditions"
+  ],
+  "winning_score": 0,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "coop_goal",
+  "sudden_death_common": false,
+  "how_you_win": "There is no score; each of the 50 missions assigns players individual card-based tasks (like 'I will win no tricks' or 'this card wins a specific trick'), and the team wins that mission only if every task is completed correctly through the trick-taking play."
  },
  "similar": [
   "The Mind",
@@ -36,6 +42,6 @@
   "Before You Play",
   "JonGetsGames"
  ],
- "_fingerprint": "2e41d6c2fb563338",
+ "_fingerprint": "dab4762d7e93005d",
  "_name": "The Crew: The Quest for Planet Nine"
 }

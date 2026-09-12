@@ -16,11 +16,22 @@
   "kind": "tile placement and area majority contests",
   "detail": "Players place tiles onto a shared, ever-growing map and place meeples to claim roads, cities, cloisters, and fields, directly contesting the same features for majority control. The map is entirely communal while each player's meeples and score are tracked individually."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Between the base game's roads, cities, monasteries and farms and the bundled expansions' traders, ferries, gold mines and other bonuses, scoring is spread across many independent tile-placement rewards.",
-  "how_you_win": "You place tiles to build roads, cities, monasteries and farms (plus expansion features like trade goods or ferries) and deploy meeples to claim them, scoring points as features complete and for farms at game end; the highest total wins."
+  "subsystems": [
+   "tile-placement land features (roads, cities, monasteries, farms)",
+   "trade-goods majority bonus (Traders & Builders)"
+  ],
+  "sources": [
+   "completed cities/roads/monasteries scored during play",
+   "farm points scored at game end",
+   "goods-token majorities scored at game end"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You place tiles and meeples to build roads, cities, and monasteries (scored as they're completed) and claim farms and goods majorities (scored at the end); when the tile supply runs out, the player with the most total points wins."
  },
  "similar": [
   "Kingdomino",
@@ -34,6 +45,6 @@
   "Before You Play",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "96bb6dc688ed4c06",
+ "_fingerprint": "53acbb677e55fc58",
  "_name": "Carcassonne Big Box 6"
 }

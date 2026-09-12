@@ -18,11 +18,22 @@
   "kind": "mostly parallel building with light drafting competition",
   "detail": "Players build separate factory tableaus and mainly interact by racing to grab the same blueprint cards from a shared market before opponents do. There's little direct conflict once a blueprint is claimed, since production happens independently on each player's own board."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points accrue from multiple channels at once — the printed VP on built factory/blueprint cards, bonuses for completed contracts, and end-game conversions of leftover goods or money — rather than a single scoring line.",
-  "how_you_win": "Draft and build a tableau of factory blueprints using dice as workers, fulfill contracts with the goods you manufacture, and end the game with the highest combined total of building, contract, and resource points."
+  "subsystems": [
+   "factory/building tableau construction",
+   "contract fulfillment via goods production"
+  ],
+  "sources": [
+   "VP printed on built factories",
+   "completed contracts",
+   "leftover goods and gold"
+  ],
+  "winning_score": 50,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You race to construct the most valuable set of factories and fulfill goods contracts before someone triggers the game's end, then totals from buildings and contracts decide the winner."
  },
  "similar": [
   "Gizmos",
@@ -36,6 +47,6 @@
   "Watch It Played",
   "The Dice Tower"
  ],
- "_fingerprint": "90a8a876bff5a4a3",
+ "_fingerprint": "898ee113dbcda5b1",
  "_name": "Fantastic Factories"
 }

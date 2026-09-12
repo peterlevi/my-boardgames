@@ -16,11 +16,22 @@
   "kind": "mostly parallel play with shared tile market",
   "detail": "Players draft tiles from a shared central display based on dice rolls, so faster or luckier players can snatch tiles others wanted, but most of the game happens on each player's own principality board. There is little direct conflict beyond racing for the same limited tiles."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Points come from filling regions with many different tile types (castles, knowledge, trade, mines, livestock, buildings) plus separate bonus tiles, a hallmark Feld scoring salad.",
-  "how_you_win": "You use dice to select and place hexagonal tiles into your princedom's regions, triggering each tile type's own scoring rule plus bonus-tile goals; after five rounds, the player with the most total points wins."
+  "subsystems": [
+   "region tile-placement with per-tile-type scoring rules",
+   "silver income and trade-good bonus tracks"
+  ],
+  "sources": [
+   "points from filled regions of each tile color",
+   "bonus points from trade-good and shipping tracks",
+   "phase-completion and full-board bonuses"
+  ],
+  "winning_score": 220,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Using dice-matched worker placement, you draft settlement tiles and place them into regions on your princedom board, each tile type scoring by its own rule (castles, knowledge, ships, livestock, mines, etc.); after five structured rounds the player with the most accumulated points wins."
  },
  "similar": [
   "Village",
@@ -34,6 +45,6 @@
   "Rahdo Runs Through",
   "Heavy Cardboard"
  ],
- "_fingerprint": "74129cdb9e5d8405",
+ "_fingerprint": "37d955fcd7eca51a",
  "_name": "The Castles of Burgundy"
 }

@@ -6,7 +6,7 @@ rather than being an opinion about how a game plays. They earn their place
 because BGG's vocabulary is granular — eleven separate auction mechanics — and
 you usually want the family, not the variant.
 
-(An earlier attempt used these to compute a single "scoring breadth" score.
+(An earlier attempt used these to compute a single point-salad score.
 That failed: it called Food Chain Magnate broad, and more than half the
 collection focused. The groupings survive; the scale does not.)
 """

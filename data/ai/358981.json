@@ -16,11 +16,20 @@
   "kind": "Head-to-head card battle with bluffing",
   "detail": "Two players play cards directly against each other across three shared theater rows each round, with card effects letting you flip, move, or negate opponent's cards. There's no separate personal board — the theaters are entirely shared state, and much of the game is reading and reacting to the opponent's hand."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "A player wins instantly if a theater's support total reaches 12, or otherwise wins by holding a support majority in two of the three theaters when the round ends.",
-  "how_you_win": "You and your opponent alternately play numbered cards face-up or face-down into the theaters (here Intelligence, Diplomacy, Economics, optionally mixed with the base game's Air/Land/Sea); you win by controlling two of three theaters' support totals at round's end, or instantly if any theater hits 12+ support."
+  "subsystems": [
+   "theater majority battles (each round contests three theaters)"
+  ],
+  "sources": [
+   "theater point totals compared each round",
+   "damage inflicted on the losing player"
+  ],
+  "winning_score": 12,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "Each round you and your opponent play cards into three theaters; whoever has the higher total in at least two of three theaters wins the round and deals the loser damage equal to the point gaps in the theaters they lost. The first player to take 12 damage loses, so you win by grinding the opponent's damage track up to 12."
  },
  "similar": [
   "Air, Land & Sea",
@@ -34,6 +43,6 @@
   "https://rolltoreview.com/spies-lies-and-supplies-review/"
  ],
  "source": "web",
- "_fingerprint": "d6fc7f81a467a2f7",
+ "_fingerprint": "7dcd1ec3c144a2d2",
  "_name": "Air, Land, & Sea: Spies, Lies, & Supplies"
 }

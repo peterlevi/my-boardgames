@@ -17,11 +17,19 @@
   "kind": "cooperative clue-giving and communication",
   "detail": "All non-active players see the same secret word and simultaneously write clues into a shared pool that gets filtered by matching duplicates, so nearly the entire game state — the surviving clues — is shaped collectively by everyone's choices at once."
  },
- "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no individual winner — the group succeeds together based purely on how many of the mystery words the active player correctly guesses.",
-  "how_you_win": "Teammates each write a one-word clue for the guesser without duplicating each other, and the table 'wins' by maximizing correct guesses across all rounds, ideally for a perfect cooperative score."
+  "subsystems": [
+   "cooperative word-guessing tally"
+  ],
+  "sources": [
+   "correct guesses across 13 rounds"
+  ],
+  "winning_score": 13,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "As a team, give one-word clues (with duplicates removed) so the active player can guess each mystery word; the shared score is the number of correct guesses out of 13 cards, judged against a satisfaction scale rather than against other players."
  },
  "similar": [
   "Codenames",
@@ -35,6 +43,6 @@
   "The Dice Tower",
   "Before You Play"
  ],
- "_fingerprint": "71e83a9c7a7653eb",
+ "_fingerprint": "f857c90af27190aa",
  "_name": "Just One"
 }

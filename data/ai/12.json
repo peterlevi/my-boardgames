@@ -18,11 +18,25 @@
   "kind": "open auction and bidding",
   "detail": "Every auction is a shared, direct competition where players bid against each other for the same set of tiles, and choosing to call Ra affects everyone's turn timing. Individual tile collections are private, but the auction pool and Ra track are entirely shared."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Each epoch scores several distinct, independently-tallied tile categories (civilizations, monuments, pharaohs, gold, Niles/floods, gods) that all feed into the same running total.",
-  "how_you_win": "Win auctions with your sun disks to collect valuable tile sets each epoch, balancing immediate scoring tiles against ones that only pay off (or protect you from penalties) at epoch's end; highest cumulative score after three epochs wins."
+  "subsystems": [
+   "civilization tile sets",
+   "Nile and Flood river tiles",
+   "monument tile majorities",
+   "Pharaoh tile majority/minority bonus",
+   "gold tiles",
+   "sun tile end-game conversion"
+  ],
+  "sources": [
+   "scoring at the end of each of the three epochs across all tile categories",
+   "final epoch bonus for remaining sun value"
+  ],
+  "winning_score": 40,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over three epochs, accumulate the most points from civilization sets, Nile/Flood tiles, monument majorities, Pharaoh tile counts, and gold, with sun tiles adding a bonus in the final epoch."
  },
  "similar": [
   "Amun-Re",
@@ -36,6 +50,6 @@
   "JonGetsGames",
   "Before You Play"
  ],
- "_fingerprint": "7058b4a1189286fe",
+ "_fingerprint": "6cbc5f600d9ab2a1",
  "_name": "Ra"
 }

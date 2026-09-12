@@ -74,7 +74,8 @@ can be 99% approved at 4 while being Best at 6.
 
 ## Say when a column is an opinion
 
-`interaction`, `win_criteria`, `scoring.breadth`, the opinion text and
+`interaction`, the scoring facts behind **Win condition** and **Point
+salad**, the opinion text and
 `traits` are **derived locally, not BGG data** — BGG exposes none of them.
 Whenever you present any of them, say so.
 

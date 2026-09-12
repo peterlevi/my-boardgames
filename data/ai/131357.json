@@ -18,11 +18,19 @@
   "kind": "bluffing and direct confrontation",
   "detail": "Every action can be challenged or blocked by any other player, and coup/assassinate actions directly strip opponents of influence cards, so the game is almost entirely about player-vs-player confrontation. There's no personal board; the shared state is just coins and each player's hidden two cards, constantly under threat."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no scoring at all; the game tracks only who still has hidden influence (character cards) left.",
-  "how_you_win": "You bluff and challenge other players' claimed character powers to eliminate their influence cards, and the last player left with any influence remaining wins."
+  "subsystems": [
+   "influence card elimination"
+  ],
+  "sources": [
+   "remaining hidden influence/character cards"
+  ],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "single_currency",
+  "ends_by": "elimination",
+  "sudden_death_common": false,
+  "how_you_win": "There is no point total; you bluff and use character powers to make opponents lose their two hidden influence cards, and the last player left with any influence wins."
  },
  "similar": [
   "The Resistance",
@@ -36,6 +44,6 @@
   "JonGetsGames",
   "Before You Play"
  ],
- "_fingerprint": "feb63d2dc6b13f6d",
+ "_fingerprint": "008e04d1c9d794d6",
  "_name": "Coup"
 }

@@ -18,11 +18,25 @@
   "kind": "auction and route blocking",
   "detail": "Players bid against each other for turn order and huts, and compete for limited routes and resources on a shared board, actively blocking rivals' expansion. Nearly all board state — routes, huts, and available resources — is contested and shared."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "The four ages each reward a different specialist god track (rhino/human/baboon/bird), plus trade income, so no single category decides the outcome.",
-  "how_you_win": "You build monument levels, deploy specialists, and trade resources for money, aiming to score well across each era's favored specialist type since only 3 of 4 ages are randomly kept for final scoring."
+  "subsystems": [
+   "monument building (raising monuments in levels)",
+   "craftsman placement (technology cards)"
+  ],
+  "sources": [
+   "monument levels",
+   "craftsmen placed"
+  ],
+  "winning_score": 25,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "You earn victory points by raising your monuments to higher levels and by placing craftsmen (each worth points shown on its technology card), while acquiring stronger gods, specialists, and technologies raises your own personal Victory Requirement (starting at 20, capped at 40). The game ends the instant any player's points reach or exceed their own Victory Requirement, and that player wins (ties broken by overage, then total points, then turn order).",
+  "checked": [
+   "https://www.ultraboardgames.com/the-great-zimbabwe/game-rules.php",
+   "https://boardgamegeek.com/boardgame/111341/the-great-zimbabwe"
+  ]
  },
  "similar": [
   "Antiquity",
@@ -36,6 +50,6 @@
   "Watch It Played",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "c6ab0951505816b3",
+ "_fingerprint": "7710b68bb7bc384e",
  "_name": "The Great Zimbabwe"
 }

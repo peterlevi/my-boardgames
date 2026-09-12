@@ -16,11 +16,24 @@
   "kind": "worker placement over shared action spaces",
   "detail": "Players compete for the same limited production and R&D action spaces and can block each other from key spots or race for track bonuses, while each maintains their own assembly line and resources on a personal board."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Endgame VP is drawn from fulfilled contracts, R&D/tech progress, production/efficiency bonuses, and leftover resources or money.",
-  "how_you_win": "Manage your production line's flow of parts and workers to fulfill kanban contracts, invest in R&D and process improvements, and finish with more total victory points than your opponents."
+  "subsystems": [
+   "fulfilling sales/production orders for VP",
+   "R&D technology tree development for bonus VP",
+   "track progress (e.g., investor/relations tracks) for endgame bonuses"
+  ],
+  "sources": [
+   "order fulfillment VP",
+   "R&D tree completion bonuses",
+   "track position endgame bonuses",
+   "leftover resource/token VP"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Manage production departments to fulfill EV orders, advance R&D and relationship tracks, and trigger bonus payouts; when the end-game trigger fires, total VP from orders, tech, and tracks determines the winner."
  },
  "similar": [
   "Kanban: Automotive Revolution",
@@ -34,6 +47,6 @@
   "Watch It Played",
   "No Pun Included"
  ],
- "_fingerprint": "32925b76520af946",
+ "_fingerprint": "f73952b64602378e",
  "_name": "Kanban EV"
 }

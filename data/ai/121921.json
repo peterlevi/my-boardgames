@@ -18,11 +18,21 @@
   "kind": "cooperative planning against the game",
   "detail": "Players jointly manage a shared island map, shared resource pool, and shared threats, deciding together each round how to allocate limited actions; the challenge comes from coordinating against the game system rather than against each other."
  },
- "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Success or failure hinges on completing the scenario's specific objective (discovering the island's secret, escaping, etc.) before the players run out of morale, health, or time, not on accumulating points.",
-  "how_you_win": "Players cooperatively manage a shared action queue to gather food, build shelter, and fight threats while advancing the scenario's storyline; the group wins together by achieving the scenario's goal before the deck of weeks runs out or the survivors perish."
+  "subsystems": [
+   "scenario objective completion (building/survival tasks)",
+   "morale and event/adventure card management"
+  ],
+  "sources": [
+   "scenario victory conditions",
+   "morale track"
+  ],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "objective_count",
+  "ends_by": "coop_goal",
+  "sudden_death_common": false,
+  "how_you_win": "All players cooperate to survive events and complete the specific scenario's victory conditions (e.g., building a shelter, defeating a threat) before time runs out or the group's morale is depleted."
  },
  "similar": [
   "Tokaido",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "10ee0e6d36fb54e4",
+ "_fingerprint": "d07bdd178f2406f9",
  "_name": "Robinson Crusoe: Adventures on the Cursed Island"
 }

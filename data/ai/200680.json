@@ -16,11 +16,31 @@
   "kind": "worker placement blocking, mostly parallel farm boards",
   "detail": "Players compete for the same limited action spaces each round, so claiming one denies it to everyone else that turn, but each player otherwise develops their own farm tableau independently. Conflict is entirely about racing for shared spaces, not attacking another player's board."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Final score sums fields, pastures, every crop and animal type, house/family size, played improvement/occupation cards, unused spaces, and begging penalties.",
-  "how_you_win": "Over 14 rounds you use worker placement to expand your house, plow fields, fence pastures, grow crops and animals, and play cards while feeding your family at each harvest; whoever's farm tallies the highest score across all these categories wins."
+  "subsystems": [
+   "farm development (fields, pastures, animals, rooms)",
+   "occupation and minor improvement cards"
+  ],
+  "sources": [
+   "fields",
+   "pastures",
+   "grain",
+   "vegetables",
+   "sheep/boar/cattle",
+   "fenced stables",
+   "family members",
+   "house type",
+   "occupations played",
+   "minor improvements",
+   "card bonus points",
+   "begging cards (negative)"
+  ],
+  "winning_score": 35,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over 14 rounds you use your family's worker placements to grow crops, raise animals, expand and furnish your house, and play occupation/improvement cards; at the end everything is scored category by category (with penalties for empty categories), and the highest total wins."
  },
  "similar": [
   "Le Havre",
@@ -34,6 +54,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "f1449b92848e1c18",
+ "_fingerprint": "119ea862fb08462b",
  "_name": "Agricola (Revised Edition)"
 }

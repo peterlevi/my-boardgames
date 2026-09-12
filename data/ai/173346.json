@@ -18,11 +18,33 @@
   "kind": "direct card denial and open conflict",
   "detail": "Players draft from a single shared card pyramid where taking a card can deny it to the opponent, and both a shared military track and shared science track can trigger an instant win, making almost every choice directly affect the other player rather than just your own tableau."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Salad",
-  "why": "The game can end instantly via military supremacy or completing six different science symbols, and if neither triggers, points are tallied across military, science, coins, and several building/wonder categories.",
-  "how_you_win": "You win immediately by pushing the military marker to your opponent's capital or by collecting six distinct science symbols; otherwise the player with more total points across all categories at the end of Age III wins."
+  "subsystems": [
+   "Military conflict pawn tug-of-war (can end the game instantly as Military Supremacy, or otherwise yields tiered victory points)",
+   "Science symbol/progress-token collection (can end the game instantly as Scientific Supremacy at six distinct symbols, or otherwise yields set/square bonuses)",
+   "Civilian economy of buildings, wonders and coins (blue/yellow/purple cards, wonder stages, coins converted to points)"
+  ],
+  "sources": [
+   "military track",
+   "civilian buildings",
+   "commercial buildings",
+   "guilds",
+   "science symbols and progress tokens",
+   "wonders",
+   "coins/treasury"
+  ],
+  "winning_score": 70,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "sudden_death",
+  "sudden_death_common": false,
+  "how_you_win": "Draft cards across three ages to build military strength, scientific symbols, and a civilization of buildings and wonders; a player wins instantly by pushing the conflict pawn into the opponent's capital (military supremacy) or by collecting six different science symbols (scientific supremacy), and otherwise, at the end of Age III, whoever has the most total victory points from military, buildings, wonders, science and coins wins a civilian victory.",
+  "checked": [
+   "https://www.rulespal.com/7-wonders-duel/rulebook",
+   "https://www.geekyhobbies.com/7-wonders-duel-board-game-rules-and-instructions-for-how-to-play/",
+   "https://boardgamegeek.com/thread/1556582/civilian-victory-scoring",
+   "https://arxiv.org/html/2406.00741v1"
+  ]
  },
  "similar": [
   "7 Wonders",
@@ -36,6 +58,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "48f15128d8cde503",
+ "_fingerprint": "8d5055d533516fc4",
  "_name": "7 Wonders Duel"
 }

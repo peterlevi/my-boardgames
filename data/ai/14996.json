@@ -16,11 +16,21 @@
   "kind": "route blocking, otherwise parallel set collection",
   "detail": "Players share a single map of routes, so claiming a route you need before an opponent can is the main point of contact, but each player's hand of cards and completed tickets are private and otherwise played in parallel."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come from the length of claimed routes, completed destination tickets, and a bonus for the longest continuous route, while failed tickets subtract points.",
-  "how_you_win": "Collect train car cards to claim routes across the map, complete as many of your destination tickets as possible, and try to build the single longest continuous route; the highest point total when someone runs low on trains wins."
+  "subsystems": [
+   "route claiming"
+  ],
+  "sources": [
+   "claimed route lengths",
+   "completed destination tickets",
+   "longest continuous route bonus"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You score points immediately for each route you claim while collecting destination tickets that pay off (or penalize) at the end; once a player drops to two or fewer train cars everyone gets one final turn, then tickets and the longest-route bonus are added to decide the winner."
  },
  "similar": [
   "Ticket to Ride",
@@ -34,6 +44,6 @@
   "JonGetsGames",
   "Before You Play"
  ],
- "_fingerprint": "dd416365a5d413ea",
+ "_fingerprint": "e1e3b827b80c76af",
  "_name": "Ticket to Ride: Europe"
 }

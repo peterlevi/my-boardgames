@@ -19,11 +19,24 @@
   "kind": "Parallel building, indirect competition",
   "detail": "Players mostly develop their own civilization console and tracks independently, racing for the same map territory and shared goal/scoring tiles rather than directly attacking each other. Reviewers note 'there's very little your opponents can do to interfere' — the worst you can do is temporarily weaken a rival tribe, not stop them scoring — so most of the game is solitaire-style optimization with light positional competition over shared spaces."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "As a dense Feld design, points accrue continuously from nearly every action track: technology, evolution, exploration, buildings, and end-game bonus conditions.",
-  "how_you_win": "You steer your civilization through parallel development tracks (tech, evolution, expansion, etc.), converting dice and resources into progress and points on many tracks at once; the highest cumulative score after the final round wins."
+  "subsystems": [
+   "technology track advancement",
+   "evolutionary trait/mutation development",
+   "territory exploration and development"
+  ],
+  "sources": [
+   "tech track positions",
+   "evolved traits",
+   "explored/developed territory",
+   "end-game objective and track bonuses"
+  ],
+  "winning_score": 130,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You guide a civilization's technological and biological evolution across several parallel tracks and expand over the board using dice-driven actions; the game ends once an end-condition is triggered, and the player with the highest combined score across all tracks and bonuses wins."
  },
  "similar": [
   "The Castles of Burgundy",
@@ -39,6 +52,6 @@
   "https://unknowns.de/forum/thread/24435-civolution-deep-print-games-stefan-feld/"
  ],
  "source": "web",
- "_fingerprint": "2651526626297111",
+ "_fingerprint": "824cf829b8a08c27",
  "_name": "Civolution"
 }

@@ -16,11 +16,24 @@
   "kind": "king-of-the-hill area majority and shared rondel spaces",
   "detail": "Players displace each other's bishops and knights from contested city spaces in a king-of-the-hill mechanic and compete for the same rondel slots, but each player otherwise builds their own tableau of cards and buildings independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accrue from buildings constructed, manuscripts illuminated, travelers recruited, bonus/commission cards, and silver held at game end, none of which dominates alone.",
-  "how_you_win": "You win by juggling several parallel tracks, constructing buildings, collecting manuscripts, recruiting travelers, and completing bonus cards, to end the game with the highest combined victory point total."
+  "subsystems": [
+   "construction building with coin conversion",
+   "district majority control",
+   "card combo/set bonuses"
+  ],
+  "sources": [
+   "constructions built",
+   "bronze/silver/gold coins converted to VP",
+   "majority control of city districts",
+   "corruption penalties"
+  ],
+  "winning_score": 90,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You place workers to build constructions and collect coins, cards, and district influence; the game ends when the round card deck is exhausted, and the player with the most VP after converting coins and subtracting corruption wins."
  },
  "similar": [
   "Architects of the West Kingdom",
@@ -34,6 +47,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "4f79be8f94add145",
+ "_fingerprint": "bc5535256ccce3d7",
  "_name": "Viscounts of the West Kingdom"
 }

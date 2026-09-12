@@ -18,11 +18,23 @@
   "kind": "mostly parallel play with light competition for map tiles",
   "detail": "Players mostly develop their own caravan and score their own tableau of tags and journal entries; the main shared element is the modular map, where claiming a tile or route can deny it to opponents, but there is no direct conflict or negotiation."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from several largely independent end-game categories — mapping land, water, and sky, journal entries at the House of Wisdom, and completed favor/goal tracks — so no single activity dominates the final tally.",
-  "how_you_win": "Send your caravan out each round to place tiles extending land, river, and star routes, cash in journal entries and favors along the way, and finish with the highest combined score across all these tracks."
+  "subsystems": [
+   "Land/water/sky map tile placement and set collection",
+   "House of Wisdom research track",
+   "Resource/good conversion for end-game bonuses"
+  ],
+  "sources": [
+   "Mapped tile sets",
+   "House of Wisdom track position",
+   "End-game bonus card requirements"
+  ],
+  "winning_score": 100,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You spend the game placing land, water, and sky tiles to build matching sets and advancing on the House of Wisdom track; once a player triggers the end (e.g., exhausting a track or supply), everyone tallies tile-set VP plus end-game bonus cards, and the highest total wins."
  },
  "similar": [
   "Architects of the West Kingdom",
@@ -36,6 +48,6 @@
   "JonGetsGames",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "e4bb5e96aba75e3b",
+ "_fingerprint": "847c7f5ba771efe2",
  "_name": "Wayfarers of the South Tigris"
 }

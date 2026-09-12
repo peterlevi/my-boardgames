@@ -17,11 +17,19 @@
   "kind": "simultaneous real-time competition",
   "detail": "All players stare at the same shared board and race to shout out the shortest solution first; there's no individual tableau at all, just a single communal puzzle everyone attacks at once."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Every point comes from the same single source: being first to correctly call and execute a minimal-move solution to the current robot-target puzzle.",
-  "how_you_win": "Players simultaneously study the board and shout out how many moves they think it takes to route the target robot to its marked square; whoever finds a valid solution in the fewest moves claims the point, and the first to a set number of points (or most after a fixed number of puzzles) wins."
+  "subsystems": [
+   "puzzle-solving for fewest-move robot solutions"
+  ],
+  "sources": [
+   "solved target chips"
+  ],
+  "winning_score": 8,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Call out the solution using the fewest robot moves to reach the current target before anyone else; the player who has collected the most target chips once the chip supply is exhausted wins."
  },
  "similar": [
   "Rush Hour",
@@ -34,6 +42,6 @@
   "Watch It Played",
   "The Dice Tower"
  ],
- "_fingerprint": "8cbfb14ab2644f96",
+ "_fingerprint": "4f7dc91720d5e18e",
  "_name": "Ricochet Robots"
 }

@@ -16,11 +16,22 @@
   "kind": "mostly parallel play with shared shape reveals",
   "detail": "Everyone draws the same revealed shape onto their own individual map each turn, so the only shared element is the shape and scoring conditions being revealed, while each player's grid stays completely private. There's essentially no direct player-to-player action beyond racing to fulfill the same public objectives better than others."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Each of the four seasons scores against a different pair of random edict cards covering forests, villages, farms/water and monster-blocking, plus separate coin/ambition bonuses, so no single category dominates.",
-  "how_you_win": "You draw shapes onto your map each season to satisfy that season's scoring edicts while boxing out monster incursions, and the player with the highest cumulative score after four seasons wins."
+  "subsystems": [
+   "territory drawing scored against changing seasonal edicts",
+   "monster-incursion penalty tracking"
+  ],
+  "sources": [
+   "points from four seasonal edict scorings",
+   "coin bonus applied in the final season",
+   "point deductions for unblocked monster tiles"
+  ],
+  "winning_score": 65,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You draw terrain shapes onto your map to satisfy two edict cards revealed each season while blocking monster incursions; at the end of each of the four seasons you score against that season's edicts, and after the fourth season the player with the highest cumulative total (minus monster penalties) wins."
  },
  "similar": [
   "Kingdomino",
@@ -34,6 +45,6 @@
   "Before You Play",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "56b5197fde6b22f3",
+ "_fingerprint": "220efab0daec5391",
  "_name": "Cartographers"
 }

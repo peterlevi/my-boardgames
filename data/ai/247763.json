@@ -18,11 +18,25 @@
   "kind": "competition for shared action slots and cards",
   "detail": "Players compete for a limited number of colored slots along the shared card row and for special action spaces on the main board, so timing and denial matter, but each player otherwise develops their own underwater city network independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score combines city-track progress, built colonies/domes, certificate and exploration bonuses, and special project cards, each a largely independent VP pile.",
-  "how_you_win": "You win by advancing your underwater city network further and building up more colonies, special projects, and completed cards than your opponents by game end, tallying several separate VP categories."
+  "subsystems": [
+   "city/tunnel network expansion",
+   "colonize-card set matching",
+   "production-track endgame multipliers",
+   "loan/debt penalty"
+  ],
+  "sources": [
+   "city and tunnel tiles",
+   "colonize card bonuses",
+   "metal/kelp/buildings track scoring cards",
+   "unpaid loans"
+  ],
+  "winning_score": 110,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over three fixed eras you build an underwater city network, play colonize cards for actions and matching bonuses, and collect scoring cards that multiply your final resource-track levels; whoever totals the most points after subtracting unpaid loans wins."
  },
  "similar": [
   "Pipeline",
@@ -36,6 +50,6 @@
   "Watch It Played",
   "No Pun Included"
  ],
- "_fingerprint": "246f6d31b6ebf584",
+ "_fingerprint": "539c717b2e1aacc0",
  "_name": "Underwater Cities"
 }

@@ -18,11 +18,25 @@
   "kind": "worker placement blocking with golems on a shared board",
   "detail": "Players take turns on shared action spaces, so popular spots get blocked, and golems move through a shared neighborhood map where they can affect or threaten other players' students and buildings. Each player otherwise develops their own tableau of cards and resources largely independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final VP combines golem strength/parts, completed sets, student/favor advancement, and end-game bonuses.",
-  "how_you_win": "Build and empower golems, manage students to fulfill orders and favors, and collect sets, converting your engine's output into the most victory points by the end."
+  "subsystems": [
+   "golem construction & control",
+   "development/action cards",
+   "city quarter majority control",
+   "resource/potion economy"
+  ],
+  "sources": [
+   "golem level/completion points",
+   "fulfilled development cards",
+   "quarter control majority bonuses",
+   "leftover resources converted to points"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "After the fixed number of rounds, the player with the most combined points from golem development, completed cards, and quarter control wins."
  },
  "similar": [
   "Lorenzo il Magnifico",
@@ -36,6 +50,6 @@
   "Watch It Played",
   "Heavy Cardboard"
  ],
- "_fingerprint": "31bfa53355b3d093",
+ "_fingerprint": "f796b4ff03bcefd4",
  "_name": "Golem"
 }

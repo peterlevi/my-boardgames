@@ -18,11 +18,23 @@
   "kind": "Worker placement contention and area conflict",
   "detail": "Players compete for the same limited worker-placement spots and for board control in the combat zone, so blocking and racing for key spots matters, while each player's deck and tableau are private engines. Combat is a shared, visible tug-of-war that directly determines who scores and who loses troops."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points accumulate from several largely independent tracks—combat/conflict, Spice Must Flow, High Council seats, Great Houses agendas, and technology/leader abilities—and the game ends once a player crosses the point threshold.",
-  "how_you_win": "Deploy agents and win conflicts to gather points from combat, council seats, imperium/tech cards, and faction alliances; once someone reaches 10 points the round finishes and the highest total wins."
+  "subsystems": [
+   "deck-building/worker-placement resource economy (spice, solari, water, troops)",
+   "combat on Arrakis (troop commitment for victory points)"
+  ],
+  "sources": [
+   "combat victory points",
+   "Intrigue cards",
+   "Tech tile bonuses",
+   "faction alliance bonuses (Emperor, Spacing Guild, Bene Gesserit, Fremen)"
+  ],
+  "winning_score": 10,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "You place agents to build an economy and deck, commit troops to combats on Arrakis to earn victory points, and supplement them with Intrigue cards, Tech tiles, and faction bonuses; the game ends the instant someone hits 10 points (or after round 10 with final tallying), and that total decides the winner."
  },
  "similar": [
   "Dune: Imperium – Uprising",
@@ -36,6 +48,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "2f4118d79f6967a1",
+ "_fingerprint": "0443e3d56222e9af",
  "_name": "Dune: Imperium"
 }

@@ -16,11 +16,20 @@
   "kind": "following and resource denial",
   "detail": "Players choose an action for everyone to follow, meaning your choices directly enable or restrict what opponents can do next turn, while each player still maintains their own private tableau of materials and works."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "The bulk of your score comes from the point values printed on completed Works, with a secondary contribution from leftover materials/goods at game end.",
-  "how_you_win": "You use multi-purpose cards to gather materials and complete Works cards; the game ends when a player finishes enough Works or the deck runs out, and the player with the most points from completed Works (plus leftover goods) wins."
+  "subsystems": [
+   "multi-use card economy (tasks, materials, works)"
+  ],
+  "sources": [
+   "completed works",
+   "materials sold to visitors"
+  ],
+  "winning_score": 20,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You use cards flexibly for tasks, materials, or works, completing and selling works for points; the game ends once a player completes enough works or the deck runs low, and the highest point total wins."
  },
  "similar": [
   "Glory to Rome",
@@ -34,6 +43,6 @@
   "The Dice Tower",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "cac61c9a40057754",
+ "_fingerprint": "bb2b93878e60daf8",
  "_name": "Mottainai"
 }

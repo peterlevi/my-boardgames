@@ -16,11 +16,20 @@
   "kind": "bribery, negotiation, and voting",
   "detail": "Players spend hidden victory-point tokens to bribe each other for votes on a shared enclosure track, so almost every turn is a direct negotiation affecting a single communal board state. There is no private tableau of note; the entire game is about converting private points into public influence over others."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Laurels (the game's only victory currency) are earned mainly by winning bribed majority votes to advance your animal up the enclosure hierarchy, with some extra laurels coming from leftover support tokens at game end.",
-  "how_you_win": "Use bribery tokens and shifting alliances to win majority support at each level of the enclosure hierarchy, climbing your animal upward tier by tier; whoever has accumulated the most laurels when the game ends is elected Zoo Mascot."
+  "subsystems": [
+   "Majority-vote elections that advance animal species up the enclosure hierarchy, with laurels doubling as score and bribery currency"
+  ],
+  "sources": [
+   "laurels won by backing the successful species in an election",
+   "laurels received as bribes from other players"
+  ],
+  "winning_score": 20,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You quietly accumulate laurels by voting for species that win the majority at each enclosure and by accepting bribes from rivals seeking your support; once a species reaches the top Zoo Mascot spot the game ends immediately, and whoever has secretly amassed the most laurels wins."
  },
  "similar": [
   "Intrigue",
@@ -34,6 +43,6 @@
   "Before You Play",
   "JonGetsGames"
  ],
- "_fingerprint": "22e8f11db7c49730",
+ "_fingerprint": "a2dad32df98b5e8f",
  "_name": "Zoo Vadis"
 }

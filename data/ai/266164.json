@@ -16,11 +16,21 @@
   "kind": "area majority and territorial competition",
   "detail": "Players place pieces on a shared hex map where majority in each region determines who scores, so placements are constantly contesting the same spaces. There is very little private player board; almost all the meaningful state is shared on the map."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Score comes from majority control of the token networks you build into cities, plus the special ruler tiles you pick up along the way.",
-  "how_you_win": "Place tokens to build connected networks that dominate cities in majority, and grab powerful ruler bonus tiles, to end with the most points."
+  "subsystems": [
+   "city majority control scoring",
+   "farmer/harvest bonus multiplier"
+  ],
+  "sources": [
+   "completed city points (by majority)",
+   "farm-adjacency bonus points"
+  ],
+  "winning_score": 60,
+  "tally": "mixed",
+  "shape": "majority_control",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Place tribe tokens to gain majority control in cities (scored as they complete) and adjacent farm land to multiply that score; when the tile supply runs out remaining areas are scored and the highest total wins."
  },
  "similar": [
   "El Grande",
@@ -33,6 +43,6 @@
   "Watch It Played",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "330c52184ba5bcac",
+ "_fingerprint": "b35508bc22dc81fc",
  "_name": "Babylonia"
 }

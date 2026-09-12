@@ -18,11 +18,23 @@
   "kind": "worker placement blocking with mostly independent tableau-building",
   "detail": "Players compete for the same limited action spaces on a shared board, so timing and blocking opponents' preferred actions matters early in a round. Beyond that scramble for actions, almost all of the game's depth plays out privately on each player's own board as they tile-pack resources and occupations."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Final score sums many largely independent tracks: occupation and resource tiles covering your board (with uncovered blue squares as penalties), ships built, exploration/discovery tiles, animals kept, and various goods and bonus cards.",
-  "how_you_win": "You take worker-placement actions each round to gather resources and acquire tiles, then spend the game tightly packing those tiles onto your personal board (like a puzzle) to cover penalty squares and trigger bonuses; whoever accumulates the highest net total across all these categories at the end wins."
+  "subsystems": [
+   "home-board tile-laying and coverage",
+   "voyage/expedition exploration tracks"
+  ],
+  "sources": [
+   "board coverage bonus minus empty squares",
+   "ship tiles",
+   "highest tile reached on each expedition track",
+   "occupations and unused goods penalties"
+  ],
+  "winning_score": 130,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a fixed number of rounds you place polyomino tiles to cover your board and send Vikings on voyages; at the end you total board coverage, the best tile reached on each voyage track, and other bonuses/penalties, and the highest total wins."
  },
  "similar": [
   "Le Havre",
@@ -36,6 +48,6 @@
   "Watch It Played",
   "The Dice Tower"
  ],
- "_fingerprint": "c976f7f5aadbf11c",
+ "_fingerprint": "f8340cf50183807a",
  "_name": "A Feast for Odin"
 }

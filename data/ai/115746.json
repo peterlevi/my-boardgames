@@ -18,11 +18,22 @@
   "kind": "open military conflict and hidden information tension",
   "detail": "Free Peoples and Shadow directly battle over a shared map of regions and strongholds, while the Ring-bearer's secret movement and the political track create asymmetric information both sides are constantly reading and reacting to; almost all game state is shared and contested."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Some",
-  "why": "Victory is decided by two parallel asymmetric tracks — Shadow's military conquest of Free People strongholds/cities versus the Fellowship's secret progress toward destroying the Ring — rather than by accumulating points.",
-  "how_you_win": "As Shadow you win by capturing enough Free People cities and strongholds; as the Free Peoples you win by sneaking the Ring-bearer to Mount Doom before Shadow achieves military conquest or the Ring is corrupted."
+  "subsystems": [
+   "Military conquest of cities/strongholds",
+   "Fellowship/Ring progress and corruption",
+   "Political track activation of Free People nations"
+  ],
+  "sources": [
+   "Conquered city/stronghold count",
+   "Ring's fate (reaches Mount Doom or is corrupted)"
+  ],
+  "winning_score": 1,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "Shadow wins outright by conquering enough Free People cities and strongholds, or Free Peoples win if the Ring-bearer reaches Mount Doom; alternatively Shadow wins if the Fellowship is fully corrupted before either military threshold is met."
  },
  "similar": [
   "Twilight Struggle",
@@ -36,6 +47,6 @@
   "The Dice Tower",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "8882781fcf8edcd8",
+ "_fingerprint": "c095cf577fff0efe",
  "_name": "War of the Ring: Second Edition"
 }

@@ -17,11 +17,25 @@
   "kind": "constrained bidding and area majority",
   "detail": "Every site is won through a simultaneous or escalating bid against the same pool of rivals, so you are constantly reacting to what others are chasing and can price them out of a site. The city itself is a fully shared board, and neighborhood/wonder scoring depends on who has built where relative to everyone else."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score sums several independent categories: completed neighborhood color sets, patron card requirements, public and private objectives, and the shared Wonder bonus.",
-  "how_you_win": "You bid spatially to win building sites, construct tiles that satisfy patrons and objectives, and contribute to the Wonder; whoever accumulates the most prestige points across all these categories wins."
+  "subsystems": [
+   "neighborhood color-set building",
+   "patron card matching",
+   "public and secret objectives",
+   "shared Wonder contribution bonus"
+  ],
+  "sources": [
+   "neighborhood/color group bonuses",
+   "patron card bonuses",
+   "objective card bonuses",
+   "Wonder bonus"
+  ],
+  "winning_score": 130,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You win construction sites via a spatial bidding auction, build up color-matched neighborhoods that satisfy your patrons and objectives, and contribute to the shared Wonder; when the board's sites run out, whoever totals the most points across neighborhoods, patrons, objectives, and the Wonder wins."
  },
  "similar": [
   "Ra",
@@ -35,6 +49,6 @@
   "Rahdo Runs Through",
   "BoardGameCo"
  ],
- "_fingerprint": "f3616e97929100e6",
+ "_fingerprint": "1582df8d7da5371d",
  "_name": "Skyrise"
 }

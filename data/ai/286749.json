@@ -18,11 +18,22 @@
   "kind": "network claiming and displacement (take that)",
   "detail": "Players compete for the same routes and cities on a shared map, and can knock a rival's piece back to their personal supply to take their spot. Upgrade tracks and general stock remain private, but the map itself is fully contested."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points come from claiming trade routes, using bonus tiles, and completing the book/key advancement tracks, each a fairly independent point engine.",
-  "how_you_win": "You place traders along routes to claim them and push up the two ability tracks, winning by combining route points, track completion bonuses, and city presence into the highest total."
+  "subsystems": [
+   "route network building with counting offices",
+   "skill track advancement for permanent bonus tiles"
+  ],
+  "sources": [
+   "bonus tiles from skill tracks (running)",
+   "city key/office majority bonuses",
+   "end-game track position bonuses"
+  ],
+  "winning_score": 90,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Claim trade routes to place counting offices, advancing skill tracks for bonus VP as you go, then add city-majority and track-position bonuses once a player triggers the end by running out of pieces or filling a track."
  },
  "similar": [
   "Concordia",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "ca95a0bd0bb73328",
+ "_fingerprint": "2630b02ef32c0989",
  "_name": "Hansa Teutonica: Big Box"
 }

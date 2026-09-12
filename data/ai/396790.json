@@ -16,11 +16,24 @@
   "kind": "network building and competition for map locations",
   "detail": "Players compete for limited city connections, resources, and contract slots on a shared map, so route-building choices can block or route around opponents. Each player still runs a mostly independent tech-tree engine on their own player board."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from completed contracts, tech-track advancement, railway/network connections, and end-game bonuses tied to buildings, so several largely independent engines all feed the final score.",
-  "how_you_win": "You build railways and power plants, fulfill contracts, and climb technology tracks over a fixed number of rounds; the player with the highest combined score at the end wins."
+  "subsystems": [
+   "Railway/power-line network building",
+   "Contract fulfillment",
+   "Tech track progression bonuses"
+  ],
+  "sources": [
+   "network connections",
+   "completed contracts",
+   "tech track position",
+   "leftover resources"
+  ],
+  "winning_score": 150,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You build connected railway/power networks and complete contracts for running VP, then add tech-track bonuses once the depleting building/era supply triggers the final round; highest total wins."
  },
  "similar": [
   "Barrage",
@@ -34,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "02835433ca3b4ebd",
+ "_fingerprint": "4c75eed273301aee",
  "_name": "Nucleum"
 }

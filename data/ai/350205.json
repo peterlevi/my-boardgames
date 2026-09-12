@@ -18,11 +18,19 @@
   "kind": "commodity speculation and shared market pressure",
   "detail": "Players buy and sell into a shared, dynamic commodity market whose prices shift based on collective actions, so one player's speculation directly affects what others can profitably do, even though factory development itself sits on individual player boards."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from several separate channels: fulfilling customer car orders, advancing tech/production tracks, and commodity speculation gains.",
-  "how_you_win": "Expand your car factory's production lines, speculate on rising and falling commodity prices to buy cheap materials, and fulfill increasingly advanced customer orders; the player who combines these best for the most points wins."
+  "subsystems": [
+   "integrated car manufacturing & commodity-speculation economy"
+  ],
+  "sources": [
+   "cash and asset value at game end"
+  ],
+  "winning_score": 1000,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Money is the score throughout; after the fixed number of model years, whoever has amassed the most wealth from manufacturing and selling cars and speculating on commodities wins."
  },
  "similar": [
   "Food Chain Magnate",
@@ -36,6 +44,6 @@
   "Watch It Played",
   "The Undead Viking"
  ],
- "_fingerprint": "9562d2c70440ebc0",
+ "_fingerprint": "384a228cbe98e29d",
  "_name": "Horseless Carriage"
 }

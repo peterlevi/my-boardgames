@@ -18,11 +18,25 @@
   "kind": "worker placement blocking and competitive auctions",
   "detail": "Players place workers on a shared board of galleries, artists, and transport routes, so taking a spot or artist denies it to opponents, and the auction mechanism pits players directly against each other's bids. Each player still runs their own gallery and finances mostly independently between these contested moments."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Broad",
-  "why": "The rules state outright that you maximize your money to win, earned through selling art, running exhibitions, and building reputation.",
-  "how_you_win": "Promote artists, stage exhibitions, and sell art through your gallery to build reputation and cash, winning by having the most money at game end."
+  "subsystems": [
+   "art dealing (buying/selling paintings)",
+   "artist promotion & reputation",
+   "exhibitions and contracts",
+   "assistant/visitor management"
+  ],
+  "sources": [
+   "cash from art sales",
+   "contract payouts",
+   "reputation-driven bonuses",
+   "leftover assets at game end"
+  ],
+  "winning_score": 120,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "The player who has amassed the most money by the end of the fixed number of exhibitions/rounds — through promoting artists, running exhibitions, and fulfilling contracts — wins."
  },
  "similar": [
   "On Mars",
@@ -36,6 +50,6 @@
   "Watch It Played",
   "Heavy Cardboard"
  ],
- "_fingerprint": "9db02d5ee52672e0",
+ "_fingerprint": "7245a69ea93832be",
  "_name": "The Gallerist"
 }

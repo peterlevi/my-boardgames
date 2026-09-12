@@ -16,11 +16,23 @@
   "kind": "mostly parallel play with light competition for shared spaces and market",
   "detail": "Players share a worker-placement board and market where the best spots or offers can be taken by others first, but each player's population and production tableau otherwise develops independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Score combines fulfilled population-need contracts, exploration and expedition tiles, ship/building development, and end-game scoring cards.",
-  "how_you_win": "You draft cards to grow your island's population tiers, fulfill their good requirements, expand overseas, and complete contracts and objectives; the player with the highest combined score from these sources when the game ends wins."
+  "subsystems": [
+   "population and building development (hidden victory-point cards)",
+   "contracts/trade routes",
+   "expedition/exploration board"
+  ],
+  "sources": [
+   "hidden VP values on played building/population cards",
+   "fulfilled contracts",
+   "exploration board rewards"
+  ],
+  "winning_score": 130,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You grow your island's population and production chains by playing cards, many of which carry hidden victory points not revealed until the end; the game ends once a triggering condition (such as maxing out population or the exploration board) is reached, and all hidden and open points are totalled to find the winner."
  },
  "similar": [
   "Le Havre",
@@ -34,6 +46,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "0b4188689f96326c",
+ "_fingerprint": "59cfce83c88060e5",
  "_name": "Anno 1800: The Board Game"
 }

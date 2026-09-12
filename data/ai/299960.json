@@ -16,11 +16,23 @@
   "kind": "worker placement and shared market competition",
   "detail": "Players compete for shared action spaces and a shared pool of students and professors to recruit, but each player's scoring engine and university tableau develops independently."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score combines a reputation track, discipline-specific student/professor sets, exchange bonuses, and end-game objective tiles.",
-  "how_you_win": "As a university headmaster you draft students and professors, build up your four discipline tracks and reputation, and exchange knowledge with rivals; the school with the highest combined score across these tracks and bonuses at game end wins."
+  "subsystems": [
+   "discipline reputation tracks (four faculties)",
+   "student recruitment and graduation",
+   "professor/staff engine"
+  ],
+  "sources": [
+   "reputation gained on the four discipline tracks",
+   "graduated student bonuses",
+   "end-game bonus/objective tiles"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You recruit professors and students and advance your university's standing across four academic disciplines over a set number of rounds; final reputation from all tracks plus graduated students and bonus tiles is totalled, and the highest score wins."
  },
  "similar": [
   "Lisboa",
@@ -34,6 +46,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "706371588ecc5917",
+ "_fingerprint": "0dd2cdef54475211",
  "_name": "Alma Mater"
 }

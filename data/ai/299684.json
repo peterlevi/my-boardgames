@@ -17,11 +17,22 @@
   "kind": "shared tracks with light racing",
   "detail": "Players advance along common economy, culture, and military tracks and can be first to claim limited achievements, but most of a turn is spent managing your own dice results and resources somewhat independently of opponents."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points build from your positions on the Culture, Military, and Economy tracks, from completed Achievements, and from converting resources like Knowledge into Glory.",
-  "how_you_win": "Each turn pick two actions to push your city-state up its economy, military, and culture tracks, unlock achievements, and convert accumulated resources into points, ending with the highest overall total."
+  "subsystems": [
+   "advancing Culture/Military/Economy tracks for endgame VP",
+   "unlocking achievement tiles for milestone VP"
+  ],
+  "sources": [
+   "track position endgame VP",
+   "achievement VP",
+   "leftover resources"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Take paired actions each turn to climb the Culture, Military, and Economy tracks and unlock achievements; once a player triggers the endgame condition, total VP from track positions and achievements decides the winner."
  },
  "similar": [
   "Trajan",
@@ -35,6 +46,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "04c8c70bfcb77d3d",
+ "_fingerprint": "34ab0593dbe86248",
  "_name": "Khôra: Rise of an Empire"
 }

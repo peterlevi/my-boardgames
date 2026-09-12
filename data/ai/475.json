@@ -18,11 +18,21 @@
   "kind": "bidding and area majority",
   "detail": "Players bid against each other for regional control and palace-building rights using cards from a shared hand, directly blocking or outbidding rivals each round. The shared board state of regional influence markers means every win or loss directly affects everyone else's position."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from winning provinces via card auctions, building palaces from consecutive province wins, and holding majorities in collected commodities, three fairly distinct engines.",
-  "how_you_win": "Bid influence cards to win control of each region (or peel off to collect commodities instead), build palaces when you win regions in a row, and end up with the most combined influence and commodity points."
+  "subsystems": [
+   "province auction chain-building (palaces)",
+   "commodity majority collection"
+  ],
+  "sources": [
+   "longest unbroken chain of consecutively won palace provinces",
+   "majority-held commodity types"
+  ],
+  "winning_score": 30,
+  "tally": "endgame",
+  "shape": "majority_control",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Win province auctions with the right favor cards to build the longest unbroken chain of palaces, and hold the majority in valuable commodities; both totals are added after the fixed run of provinces/rounds, and the highest sum wins."
  },
  "similar": [
   "Ra",
@@ -36,6 +46,6 @@
   "The Dice Tower",
   "Gaming Rules!"
  ],
- "_fingerprint": "9c64ad9ccb406d96",
+ "_fingerprint": "04c3b26a6965463c",
  "_name": "Taj Mahal"
 }

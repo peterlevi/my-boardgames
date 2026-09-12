@@ -17,11 +17,20 @@
   "kind": "open conquest and area denial",
   "detail": "Players attack directly onto the same shared map to take each other's territories, so board space is a constant fight rather than parallel development. Whose race is in decline and who is expanding shifts the balance of power every round."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Every round's score is just the number of regions your active and declining races occupy, tallied turn after turn, with leftover victory coins as a minor tie-breaker resource.",
-  "how_you_win": "Each turn you score points equal to the territories your race(s) control, choosing when to let a race 'go into decline' to start a fresh one; the highest cumulative total after the last turn wins."
+  "subsystems": [
+   "territory count per active/declined race, converted to VP each turn"
+  ],
+  "sources": [
+   "territories occupied by your current race",
+   "territories occupied by races in decline"
+  ],
+  "winning_score": 100,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Each turn you score one point per territory your active (or declining) race controls, banking that tally turn after turn; after the fixed number of rounds for the player count, whoever has accumulated the most points wins."
  },
  "similar": [
   "Vinci",
@@ -35,6 +44,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "493669c675eb2501",
+ "_fingerprint": "e01480e437254842",
  "_name": "Small World"
 }

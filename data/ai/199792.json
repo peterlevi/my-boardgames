@@ -18,11 +18,22 @@
   "kind": "Mostly parallel play with shared card drafting",
   "detail": "Players build their own individual city tableau and worker pool privately, interacting mainly by racing for the same limited cards and events in a shared central display and occasionally taking a spot an opponent wanted."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from the value of cards built into your tableau, played events, seasonal/journey bonuses, and leftover resources, so no single category dominates.",
-  "how_you_win": "Use workers to gather resources and play critters/constructions into your city, complete events and journeys, and end with the highest combined point total from cards, events, and bonuses."
+  "subsystems": [
+   "tableau-building via worker placement and card play"
+  ],
+  "sources": [
+   "printed points on Common/Unique cards",
+   "Prosperity card multiplier bonuses",
+   "Event card achievements",
+   "Journey card bonuses"
+  ],
+  "winning_score": 60,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You place workers across three seasons to gather resources and build a tableau of critter and construction cards, chasing Events (shared achievements) and Journey cards; after the fixed season structure ends, you total all card points, Event points, and Journey points, and the highest sum wins."
  },
  "similar": [
   "Wingspan",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "30b8cc1b70f76306",
+ "_fingerprint": "c866c008f5af0312",
  "_name": "Everdell"
 }

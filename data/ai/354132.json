@@ -19,11 +19,22 @@
   "kind": "Market racing and shared stock",
   "detail": "Players share regional markets where the fastest ship to arrive gets first pick of available goods, so speed and timing directly affect what's left for others. Players can also buy shares in each other's companies, tying part of everyone's fortune to rivals' fluctuating success, though each player still manages their own ships, cash, and holdings on a mostly individual board."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Some",
-  "why": "Final standing is determined by total wealth—cash on hand plus the value of company and personal shares—rather than a points track.",
-  "how_you_win": "Trade goods profitably, invest in your own and rival companies' shares, and time the fluctuating market so your combined cash and share value is highest when the game ends."
+  "subsystems": [
+   "shipping/trade route economy (goods pick-up and delivery)",
+   "stock market investment in the trading companies"
+  ],
+  "sources": [
+   "cash on hand",
+   "value of owned shares",
+   "dividends earned"
+  ],
+  "winning_score": 100,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You run trade routes for profit and buy shares in the various national trading companies as their prices fluctuate; after a fixed number of rounds the game ends and whoever has amassed the most total wealth (cash plus share value) wins."
  },
  "similar": [
   "Le Havre",
@@ -38,6 +49,6 @@
   "https://boardgamegeek.com/boardgame/354132/east-india-companies"
  ],
  "source": "web",
- "_fingerprint": "d6270d1911cc35f5",
+ "_fingerprint": "322a21c01acc46be",
  "_name": "East India Companies"
 }

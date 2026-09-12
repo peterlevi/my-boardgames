@@ -16,11 +16,19 @@
   "kind": "direct combat deckbuilding",
   "detail": "Players draw from the same shared trade row to build their decks, then attack each other's Authority directly with combat, so both the acquisition pool and the damage race are constantly shared and contested. There's little parallel play — every turn is aimed at either building your deck or hurting your opponent."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no accumulating score at all — the game hinges entirely on depleting the opponent's Authority total to zero.",
-  "how_you_win": "You acquire ships and bases from the trade row to generate Combat, and win the instant you reduce your opponent's Authority to 0 (or, cooperatively/solo, defeat the shared threat)."
+  "subsystems": [
+   "deckbuilding combat/trade engine tracked against a single Authority pool"
+  ],
+  "sources": [
+   "opponent's remaining Authority"
+  ],
+  "winning_score": 0,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "elimination",
+  "sudden_death_common": false,
+  "how_you_win": "You buy Ships and Bases from the trade row to generate more trade or combat, using combat to chip away at your opponent's Authority; once an opponent's Authority is driven down to 0, they're knocked out and you win."
  },
  "similar": [
   "Star Realms",
@@ -34,6 +42,6 @@
   "Rahdo Runs Through",
   "BoardGameCo"
  ],
- "_fingerprint": "4d436584397a24e4",
+ "_fingerprint": "65bf69c9451109a3",
  "_name": "Star Realms: Frontiers"
 }

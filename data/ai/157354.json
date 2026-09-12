@@ -18,11 +18,24 @@
   "kind": "blocking and area denial on a shared board",
   "detail": "All meeples and tiles sit on one shared board, and every move changes what's available to the next player, so positioning and denying good moves to opponents is central. Players also bid against each other for turn order and can directly attack opponents' meeples with assassins."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accrue from several separate systems: Vizier and Elder meeples collected, goods sold from Merchant meeples, palaces/palm trees built by Builders, gold held, and Djinn cards acquired, with Assassins instead used to remove rivals' meeples.",
-  "how_you_win": "You bid for turn order, then move a group of meeples across the shared board (Mancala-style) to collect same-colored meeples and trigger the tile's effect, building up a hidden gold total and card/tile bonuses; the player with the highest combined score when the board is depleted wins."
+  "subsystems": [
+   "meeple-clearing tribe abilities (Elders, Assassins, Builders, Merchants, Viziers)",
+   "gold/resource economy with quadratic conversion",
+   "Djinn card collection"
+  ],
+  "sources": [
+   "gold (1 pt each)",
+   "resources (squared/triangular conversion)",
+   "Djinn card bonuses",
+   "Elder card VP conditions"
+  ],
+  "winning_score": 220,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You move and clear meeples from the mancala-style board to trigger tribe abilities, hoarding gold, resources and Djinns; the game ends once meeples run out, and final scoring (with resources scaling quadratically) decides who has the most points."
  },
  "similar": [
   "The Isle of Cats",
@@ -36,6 +49,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "0d34e56745430484",
+ "_fingerprint": "6ebf959a530aa234",
  "_name": "Five Tribes: The Djinns of Naqala"
 }

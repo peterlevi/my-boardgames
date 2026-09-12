@@ -18,11 +18,23 @@
   "kind": "dice drafting, mostly parallel play",
   "detail": "Players take turns drafting available dice from a shared pool, which affects what workers others can access, but otherwise everyone fills in their own park sheet independently. The shared element is limited to the dice pool and turn order; scoring and board state are entirely personal."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score combines separate categories for dinosaurs housed, attraction values, guest ratings/DNA, and road-connection bonuses to park exits.",
-  "how_you_win": "You draft dice to fund and place dinosaurs and attractions in your park grid while connecting them to exits with roads; whoever tallies the most combined points across all these categories at the end wins."
+  "subsystems": [
+   "dice-worker placement to gain resources/actions",
+   "polyomino park-building for attraction, dinosaur, and route scoring"
+  ],
+  "sources": [
+   "attraction values",
+   "dinosaur ratings",
+   "guest/reputation bonuses",
+   "road/route connection bonuses"
+  ],
+  "winning_score": 60,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across a set number of rounds you draft dice to place attractions and dinosaurs onto your park sheet and connect them with roads; final score sums all categories, and the highest total wins."
  },
  "similar": [
   "Dinosaur Island",
@@ -36,6 +48,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "a6d0d85626b199c6",
+ "_fingerprint": "f15880629e81eb47",
  "_name": "Dinosaur Island: Rawr 'n Write"
 }

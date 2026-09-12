@@ -20,11 +20,22 @@
   "kind": "Direct competition for trade routes, cities, and battles",
   "detail": "Players contest a shared market (only five trade slots) and a shared map of poleis, so one player's trading, military movement, or diplomatic overtures actively block or threaten the other's supply lines and territorial control. Combat and sieges are resolved directly between opponents' forces, and diplomats (proxenoi) can flip a contested city, making almost every action zero-sum against the opponent rather than played on a private tableau."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "At game end the empire with the higher combined Population and Prestige totals wins, so victory rests on two parallel tallies rather than one figure or many disparate ones.",
-  "how_you_win": "Expand territory to grow population, and trade, build, and use diplomacy or force to gain prestige, finishing with a higher Population+Prestige total than your opponent."
+  "subsystems": [
+   "economic growth (population, resources, market trade)",
+   "military conflict & territory control",
+   "diplomacy/city allegiance"
+  ],
+  "sources": [
+   "population",
+   "prestige"
+  ],
+  "winning_score": 50,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Grow your empire's population through territory and trade while earning prestige through military and diplomatic success; whoever has the higher combined population and prestige when the game's fixed span of turns ends wins."
  },
  "similar": [
   "Pericles: The Peloponnesian Wars",
@@ -41,6 +52,6 @@
   "https://boardgamegeek.com/boardgame/303551/polis"
  ],
  "source": "web",
- "_fingerprint": "ae50d086028eff33",
+ "_fingerprint": "cfb8b9bd4c07c01b",
  "_name": "Polis"
 }

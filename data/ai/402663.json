@@ -18,11 +18,21 @@
   "kind": "mostly parallel play with worker-placement blocking",
   "detail": "Players mainly build their own engine on a personal board, occasionally competing for the same worker-placement spots or investment opportunities on the shared board. There is light indirect competition for contracts and resources but little direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score combines geothermal/lithium operations, stock and company investments, and contract fulfillment, so no single track dominates.",
-  "how_you_win": "Build up your lithium extraction and processing operations, invest in companies, and fulfill contracts to end the game with the highest combined score from assets and stock holdings."
+  "subsystems": [
+   "worker-placement production chain (brine to lithium)",
+   "investing in and holding stock in companies",
+   "contracts"
+  ],
+  "sources": [
+   "cash on hand at game end"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "There is no separate victory point track: players spend the game producing and selling lithium, investing in rival companies, and fulfilling contracts, and after the fixed number of rounds whoever has amassed the most money wins."
  },
  "similar": [
   "Teotihuacan: City of Gods",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "c4817d80aa4c1cf5",
+ "_fingerprint": "30a3181fa29b781c",
  "_name": "Salton Sea"
 }

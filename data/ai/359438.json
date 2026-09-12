@@ -18,11 +18,20 @@
   "kind": "mostly parallel play with worker-placement and market competition",
   "detail": "Players mainly optimize their own card-queue and resource engine, occasionally competing for limited worker-placement spots or investment opportunities in shared companies. There is little to no direct conflict between players."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Your final score is literally your CrypCoin total, built up from company stock investments, research payouts, and helium-3 sales, so several income streams feed the same money total.",
-  "how_you_win": "Invest mined resources into companies to grow their stock value, support research and helium-3 collection for extra income, and end the seven rounds with the most CrypCoin."
+  "subsystems": [
+   "card-programmed worker placement/investment engine",
+   "scientist research & helium-3 collection"
+  ],
+  "sources": [
+   "CrypCoin earned from investments and outposts"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over seven fixed rounds, players program cards to invest mined resources in companies, spread outposts, and support research; whoever has earned the most CrypCoin by the end of round seven wins."
  },
  "similar": [
   "Great Western Trail",
@@ -36,6 +45,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "240a0ba2655b972e",
+ "_fingerprint": "218815e71ee174c2",
  "_name": "Skymines"
 }

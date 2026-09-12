@@ -18,11 +18,20 @@
   "kind": "team communication and espionage/deduction",
   "detail": "Players directly try to deceive the opposing team while informing their own, with the shared clue history being read and mined by both sides every round. There's no personal board; the entire game state (clues given, guesses) is shared information contested between two teams."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The outcome is decided by which team first accumulates two interception tokens (losing) versus two miscommunication tokens, not by a point total.",
-  "how_you_win": "Your team gives numeric clues tied to secret words so teammates can decode them while the opposing team tries to intercept your code; you win when the other team reaches two failed communications or your team avoids two successful enemy interceptions first."
+  "subsystems": [
+   "team clue-encoding/decoding to protect and intercept codes"
+  ],
+  "sources": [
+   "miscommunication tokens (own team fails to decode)",
+   "interception tokens (opposing team decodes your clues)"
+  ],
+  "winning_score": 2,
+  "tally": "running",
+  "shape": "lowest_category",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "Your team loses if it collects two miscommunication tokens or the enemy team collects two interception tokens against you first; whichever team avoids hitting either limit longer (across up to 8 rounds) wins."
  },
  "similar": [
   "Codenames",
@@ -36,6 +45,6 @@
   "Before You Play",
   "The Dice Tower"
  ],
- "_fingerprint": "9bab4a6cba316069",
+ "_fingerprint": "5a1b994526f959b3",
  "_name": "Decrypto"
 }

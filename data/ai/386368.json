@@ -18,11 +18,21 @@
   "kind": "mostly parallel play with light competition for shared resources",
   "detail": "Each player builds their own tableau and progresses along personal tracks, so most of the game happens on individual boards rather than a shared space. Interaction is limited to competing over shared card offers or race elements rather than direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score is a sum across several largely independent tracks: temple/wall construction progress, completed quests/tasks, resource and tech development, and leftover holdings.",
-  "how_you_win": "Use your hand of multi-use cards to gather resources, advance tech tracks, and chain actions that push the temple (Ezra) or city wall (Nehemiah) construction forward and complete objectives; the player with the most accumulated points across these tracks at the end wins."
+  "subsystems": [
+   "temple/city construction track",
+   "faith and resource tech tracks"
+  ],
+  "sources": [
+   "renown/VP track advancement",
+   "endgame track-completion and bonus-card totals"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You advance a personal VP track by chaining card actions to build up Jerusalem and progress tech tracks, and whoever has the most points when the game-end condition is triggered wins."
  },
  "similar": [
   "Raiders of the North Sea",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "The Player's Aid"
  ],
- "_fingerprint": "50af9403a9e8388f",
+ "_fingerprint": "5fc0cb543ac1a21f",
  "_name": "Ezra and Nehemiah"
 }

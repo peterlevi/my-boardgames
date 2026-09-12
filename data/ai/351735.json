@@ -16,11 +16,26 @@
   "kind": "shared track space competition, mostly parallel engine-building",
   "detail": "Players affect each other mainly by racing to occupy track spaces and research slots before opponents, and by drafting from shared open tableaus of theories and tools. Each player otherwise develops a private engine and board largely independent of what others are doing."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score adds up track advancement bonuses, city/university tile values, completed Great Discoveries, and leftover resource penalties, so no single track dominates.",
-  "how_you_win": "You advance along theory tracks, place tiles in cities, and complete Discovery cards over the game; whoever totals the most points from all these end-game sources combined wins."
+  "subsystems": [
+   "Theory publishing (color-coded theory cards)",
+   "Building construction",
+   "Improvement track position bonuses",
+   "End-game set collection & leftover resource conversion"
+  ],
+  "sources": [
+   "published theories",
+   "constructed buildings",
+   "track bonuses",
+   "color-set bonuses",
+   "leftover money"
+  ],
+  "winning_score": 180,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a fixed number of rounds (set by player count), you travel to universities publishing theory cards and building tools/constructions for immediate VP, then add end-game bonuses for track position and matched theory-color sets; highest total wins."
  },
  "similar": [
   "Tzolk'in: The Mayan Calendar",
@@ -34,6 +49,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "409a4dd906130b88",
+ "_fingerprint": "addabf814f526285",
  "_name": "Newton & Great Discoveries"
 }

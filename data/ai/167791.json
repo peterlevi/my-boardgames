@@ -16,11 +16,25 @@
   "kind": "shared board race, mostly parallel tableau building",
   "detail": "Players affect each other by racing to claim milestones and awards and by placing tiles on a shared Mars map for adjacency bonuses, but each player's card tableau and production engine is entirely their own."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Your terraform rating, played project cards, milestones, awards, and greenery/city placement all generate points that are totaled once Mars is terraformed.",
-  "how_you_win": "Play cards and take actions to raise your terraform rating and build cities and greeneries, while chasing milestones and awards for bonus points; highest total when Mars is terraformed wins."
+  "subsystems": [
+   "terraform rating/parameter tracks",
+   "project card victory points",
+   "milestones and awards"
+  ],
+  "sources": [
+   "terraform rating",
+   "greeneries and cities",
+   "card VP",
+   "milestones",
+   "awards"
+  ],
+  "winning_score": 95,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You raise your terraform rating and play cards that build tiles or grant points while temperature, oxygen, and oceans climb; once all three parameters max out the game ends after that round, and the highest combined total wins."
  },
  "similar": [
   "Terraforming Mars: Ares Expedition",
@@ -34,6 +48,6 @@
   "Watch It Played",
   "No Pun Included"
  ],
- "_fingerprint": "143e26ab3d5f29d1",
+ "_fingerprint": "78213c2420ec97c7",
  "_name": "Terraforming Mars"
 }

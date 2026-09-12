@@ -18,11 +18,26 @@
   "kind": "mostly parallel play with occasional 'when another player...' triggers",
   "detail": "Each player builds their own three-row habitat tableau independently; the shared birdfeeder and bird tray create light competition for resources and cards, and some bird powers trigger off other players' actions, but there is no direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Points accrue from bird cards played, eggs laid, cached food, tucked cards, and bonus/round-goal cards, so almost every action contributes to a different scoring bucket.",
-  "how_you_win": "Play birds into your habitats to build an engine that generates food, eggs, and card draws, then tally points from birds, eggs, food, tucked cards, and bonus cards for the highest total."
+  "subsystems": [
+   "Bird tableau engine across habitat rows (eggs, cached food, tucked cards, bird abilities)",
+   "Round-end goals",
+   "Bonus card objectives"
+  ],
+  "sources": [
+   "Bird card point values",
+   "Eggs laid",
+   "Food cached",
+   "Tucked cards",
+   "Round goal points",
+   "Bonus card points"
+  ],
+  "winning_score": 90,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You play birds into three habitat rows over exactly four rounds, accumulating eggs, cached food, and tucked cards each turn; at the end of the fourth round you total bird points, eggs, food, tucked cards, round-goal points, and bonus-card points, and the highest sum wins."
  },
  "similar": [
   "Everdell",
@@ -36,6 +51,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "0a385d940b9701b8",
+ "_fingerprint": "12770c1963444dae",
  "_name": "Wingspan"
 }

@@ -18,11 +18,21 @@
   "kind": "card drafting with poverty-dumping take-that",
   "detail": "Players draft from a shared row of cards, competing for the best buildings, and some cards let you dump poverty onto opponents, directly hurting their income; otherwise each player develops their own separate city tableau."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Your score is essentially the printed value of the buildings you've constructed in your city, reduced by however much poverty you've generated relative to others, so it collapses to one main value offset by one penalty.",
-  "how_you_win": "Play cards to build up your city tableau and run it each round for income and effects while managing loans and the poverty you create; at the end, tally your buildings' point values minus poverty penalties, and the highest total wins."
+  "subsystems": [
+   "city-building tableau via cards, each providing VP and generating money, poverty, or ongoing effects"
+  ],
+  "sources": [
+   "VP values of built cards",
+   "leftover money at game end",
+   "poverty markers subtracted from the total"
+  ],
+  "winning_score": 80,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You win by building the highest-value tableau of London cards while managing poverty and loans, with leftover money added and poverty subtracted once the card supply runs out."
  },
  "similar": [
   "Brass: Birmingham",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "5b8a9f3b9e600d43",
+ "_fingerprint": "27c9812d22e7366b",
  "_name": "London (Second Edition)"
 }

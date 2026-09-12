@@ -17,11 +17,24 @@
   "kind": "mostly parallel play with light drafting competition",
   "detail": "Each player develops their own colony board independently; the only shared contention is drafting which dice/buildings to take before opponents do. There is no direct attack or negotiation between players."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accrue from several independent building types, mission cards, and end-game bonuses that all get tallied together.",
-  "how_you_win": "Expand your colony efficiently with polyomino building tiles activated by dice, complete missions, and accumulate more total points than opponents by game end."
+  "subsystems": [
+   "colony building network (polyomino placement & activation)",
+   "expedition/ship track",
+   "mission tile objectives"
+  ],
+  "sources": [
+   "building bonuses",
+   "ship track position",
+   "completed missions",
+   "leftover resources"
+  ],
+  "winning_score": 70,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Players expand a colony grid by placing and activating building tiles with dice; once someone triggers the endgame (building into the colony's final row), remaining turns finish and points from buildings, the ship track, and completed missions are totaled, highest sum wins."
  },
  "similar": [
   "Fresco",
@@ -35,6 +48,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "a708c9b7326a859f",
+ "_fingerprint": "ac4aac7cc96dc5ab",
  "_name": "Santa Maria"
 }

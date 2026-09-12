@@ -16,11 +16,21 @@
   "kind": "route blocking and area enclosure",
   "detail": "All camels are placed on a single shared board, and players directly cut off each other's expansion routes and race to claim oases and enclose empty territory, so almost the entire game state is shared and contested."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from reaching oases, building the longest caravan line in each of five colors, enclosing empty desert regions, and small watering-hole bonus tiles, all kept hidden until the end.",
-  "how_you_win": "Place camel pieces to build connected caravan routes that reach oases, try to have the longest line of each color, and enclose sections of empty desert; whoever's hidden score totals highest at the end wins."
+  "subsystems": [
+   "caravan route placement"
+  ],
+  "sources": [
+   "oases reached",
+   "enclosed desert territory",
+   "longest-caravan bonus tiles"
+  ],
+  "winning_score": 70,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You place camels to snake caravans across the desert, reaching oases and enclosing empty regions; scores stay hidden until the end, and once a player exhausts one of their camel colors the game ends and the highest hidden total wins."
  },
  "similar": [
   "Tigris & Euphrates",
@@ -34,6 +44,6 @@
   "JonGetsGames",
   "Before You Play"
  ],
- "_fingerprint": "4cab8ec151c8d6b0",
+ "_fingerprint": "ce6d921ed45cd856",
  "_name": "Through the Desert"
 }

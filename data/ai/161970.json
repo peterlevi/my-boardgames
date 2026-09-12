@@ -16,11 +16,24 @@
   "kind": "shared public information race with indirect blocking",
   "detail": "Players see each other's public experiments and published theories, so racing to deduce and publish first matters, but each player's own ingredients and private reasoning stay hidden. There's no direct attack, just competitive deduction over shared public clues."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Reputation is a single running track built by publishing theories and debunking rivals, with leftover gold converted into extra reputation only at the very end.",
-  "how_you_win": "Over six rounds you test ingredients via the app to deduce true alchemical properties, then risk reputation publishing your own theories and debunking rivals' wrong ones; whoever ends with the highest reputation, after converting spare gold, wins."
+  "subsystems": [
+   "theory publishing and testing",
+   "potion sales to adventurers"
+  ],
+  "sources": [
+   "reputation from selling potions",
+   "reputation from publishing theories",
+   "endgame correctness reveal (bonus/penalty)",
+   "artifact bonuses",
+   "debunking rival theories"
+  ],
+  "winning_score": 15,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across six rounds you test ingredients to deduce the true alchemy rules, sell potions to adventurers, and publish theories about ingredients for reputation; risky theories can backfire when the truth is revealed at game end, and whoever has the most reputation after that reveal wins."
  },
  "similar": [
   "Chai",
@@ -34,6 +47,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "2cd64339add2017f",
+ "_fingerprint": "f1f4c5c7bdce22be",
  "_name": "Alchemists"
 }

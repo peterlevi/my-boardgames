@@ -18,11 +18,25 @@
   "kind": "indirect blocking over shared worker-placement spots",
   "detail": "Players compete for the same limited action spaces and market cards, so taking a spot denies it to others that round, but each player's deck, resources, and exploration progress are entirely their own. There's no direct attack — interaction is about tempo and racing for the same opportunities."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from leftover resources and idols, position on the research/knowledge track, guardians defeated, and the artifacts, temples, and monuments printed on acquired cards.",
-  "how_you_win": "Explore the island, gather resources and artifacts, and use worker placement to research the temple track and defeat guardians; after round 5, all leftover assets and card bonuses convert to VP, and the highest total wins."
+  "subsystems": [
+   "deck-built artifact/idol card VP",
+   "research track majority position",
+   "guardian tokens defeated",
+   "leftover resource penalty"
+  ],
+  "sources": [
+   "cards",
+   "research track",
+   "guardians",
+   "leftover resources/keys"
+  ],
+  "winning_score": 80,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over five rounds you gather resources to explore, buy cards and defeat guardians; at the end all card values, research-track position and guardian tokens are totaled (with a penalty for hoarded resources), and the highest total wins."
  },
  "similar": [
   "Res Arcana",
@@ -36,6 +50,6 @@
   "Watch It Played",
   "JonGetsGames"
  ],
- "_fingerprint": "c3bf7033060dd40e",
+ "_fingerprint": "7c87bd21e1643780",
  "_name": "Lost Ruins of Arnak"
 }

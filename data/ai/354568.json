@@ -16,11 +16,23 @@
   "kind": "auction and bidding for shared provinces",
   "detail": "Players bid directly against each other for the same limited set of provinces each round, competing head-to-head for resources, then develop pyramids and farms on their own individual boards."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come almost entirely from pyramid stones built across the two kingdoms, with power/sacrifice cards providing the only other notable bonus.",
-  "how_you_win": "Each round you bid for provinces, then spend gold and power cards to buy stones and build your pyramid while making a sacrifice to Amun-Re; the pharaoh with the most pyramid-plus-card points after both kingdoms wins."
+  "subsystems": [
+   "pyramid building on auctioned provinces",
+   "power card sets (secret endgame bonus)"
+  ],
+  "sources": [
+   "pyramid stones scored at end of epoch 1",
+   "pyramid stones scored at end of epoch 2 (final)",
+   "power card combinations",
+   "farmer/sacrifice bonuses"
+  ],
+  "winning_score": 70,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You bid for provinces, farm and trade for gold, and spend that gold on pyramid stones and secret power cards; pyramids are scored at the end of each of the two epochs and power-card sets add bonus points, with the highest total after epoch two winning."
  },
  "similar": [
   "Ra",
@@ -34,6 +46,6 @@
   "JonGetsGames",
   "Before You Play"
  ],
- "_fingerprint": "114be19f73a5bc07",
+ "_fingerprint": "4324f172c30bcee5",
  "_name": "Amun-Re: 20th Anniversary Edition"
 }

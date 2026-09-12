@@ -18,11 +18,22 @@
   "kind": "area majority, tile placement, and direct competition for survival",
   "detail": "Players place elements and take actions on a shared, shrinking hex map, directly displacing and eliminating each other's species to control regions. Nearly the entire board is contested shared space, with minimal private player area beyond an action-pawn track."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Scoring cards drawn each round reward varying combinations of species population, food, and unique traits/adaptations across different elements, so almost every board state can be scored.",
-  "how_you_win": "You evolve and spread your species across the ocean's ecosystem, competing for dominance in food chains and habitats while adapting to revealed scoring criteria each round; the player with the most accumulated points when the ice age scoring ends wins."
+  "subsystems": [
+   "area-majority domination scoring on the hex map",
+   "action-card driven VP gains (colonization, migration, wandering, etc.)"
+  ],
+  "sources": [
+   "dominance points on scored map elements",
+   "VP chips earned from actions",
+   "final scoring round bonuses"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "majority_control",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "You play action cards to spread your species and gain dominance across ocean regions and habitat types; over six rounds you accumulate VP chips and score bonus points for majority control of scored elements, with the highest total at the end winning."
  },
  "similar": [
   "Dominant Species",
@@ -36,6 +47,6 @@
   "The Dice Tower",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "d29e206cc937b2f5",
+ "_fingerprint": "43e60a14081a3d4a",
  "_name": "Dominant Species: Marine"
 }

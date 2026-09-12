@@ -17,11 +17,15 @@
   "kind": "team communication and visual-association deduction",
   "detail": "Like the original, the whole grid of image cards is shared and one player's clue guides their entire team's guesses each turn, with two teams racing on the same board. All game information is public except for the spymasters' hidden knowledge of which cards belong to whom."
  },
- "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Identical structure to base Codenames, just with image cards instead of words; only the order of contacting all agents matters.",
-  "how_you_win": "Spymasters give one-word clues pointing to multiple image cards; the first team to have all of its agents correctly identified by teammates wins."
+  "subsystems": [],
+  "sources": [],
+  "winning_score": 9,
+  "tally": "endgame",
+  "shape": "objective_count",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Spymasters give one-word clues about picture cards to help their team identify all of their agents before the opposing team does; touching the assassin card causes an instant loss."
  },
  "similar": [
   "Codenames",
@@ -35,6 +39,6 @@
   "Before You Play",
   "JonGetsGames"
  ],
- "_fingerprint": "16bae85ca175b2a8",
+ "_fingerprint": "9c68160cfd6a1d06",
  "_name": "Codenames: Pictures"
 }

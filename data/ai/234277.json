@@ -16,11 +16,23 @@
   "kind": "worker placement blocking via claim-action turn order",
   "detail": "Players compete for the same limited worker-placement spots and buildings, with a turn-order-claiming mechanism meaning earlier turns cost more, directly affecting who gets first pick. Beyond that shared board, each player builds their own private village and resource engine."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Nearly every building you construct, resource you convert, and cod/ship token you collect has its own point value, so almost any action taken over the game contributes to the final tally.",
-  "how_you_win": "You place workers to gather fish and wood, build buildings that each grant their own end-game points, and convert leftover money and resources into victory points; the highest total at game end wins."
+  "subsystems": [
+   "Building construction (fixed-VP buildings)",
+   "Contracts (fulfilling resource orders for VP)"
+  ],
+  "sources": [
+   "Building point values",
+   "Completed contracts",
+   "Leftover coins (3 coins = 1 VP)",
+   "Unused building plots (negative VP)"
+  ],
+  "winning_score": 130,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Build up the most valuable set of buildings and fulfilled contracts over the game's fixed number of rounds, converting leftover coins into extra points while avoiding empty building sites, which cost points."
  },
  "similar": [
   "Agricola",
@@ -34,6 +46,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "6f2344935e2569c8",
+ "_fingerprint": "2017fe0f6dccb4ef",
  "_name": "Nusfjord"
 }

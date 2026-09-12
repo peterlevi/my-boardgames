@@ -17,11 +17,21 @@
   "kind": "open conflict and area control on a shared map",
   "detail": "Both players maneuver armies across the same point-to-point map and directly clash in battles, with card play determining troop commitment and outcomes. The entire board state is shared and contested at every turn."
  },
- "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Some",
-  "why": "Political points, tracked on a single scoring track, come from just controlling home provinces at the start of a turn and capturing enemy leader blocks in battle, and the first side to the target score wins outright.",
-  "how_you_win": "Move armies to control your key home provinces and win battles that capture enemy leaders, pushing your political-points marker to the winning threshold before your opponent does."
+  "subsystems": [
+   "army/leader casualty tracking (per-side victory point pool)",
+   "capital/road objective capture"
+  ],
+  "sources": [
+   "remaining victory points on each side's leadership track",
+   "control of both capitals"
+  ],
+  "winning_score": 0,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "Each side starts with a pool of victory points that drains as its units are killed in battle; a side that hits zero loses immediately, and a side can also win outright by capturing both capitals, so games are usually decided by one of these sudden endings rather than running the full turn track."
  },
  "similar": [
   "Twilight Struggle",
@@ -35,6 +45,6 @@
   "The Dice Tower",
   "Beau Lac"
  ],
- "_fingerprint": "b484fcbc8a38c6b1",
+ "_fingerprint": "c0ade666bc870469",
  "_name": "Sekigahara: The Unification of Japan"
 }

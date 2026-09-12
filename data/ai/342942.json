@@ -18,11 +18,25 @@
   "kind": "mostly parallel play with light drafting competition",
   "detail": "Each player builds their own zoo on a private board and mostly optimizes their own engine, but there is competition over which animal and sponsor cards are available to draft and over shared conservation project thresholds. Turn order and icon count on the shared action cards create some indirect jostling, but boards otherwise develop independently."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Your final score is read off a single combined appeal/conservation track, so those two tracks effectively decide everything.",
-  "how_you_win": "Build up your zoo's appeal and fund conservation projects to advance your marker as far as possible along the interlocking scoring track; the highest position wins."
+  "subsystems": [
+   "zoo enclosures/appeal",
+   "conservation project track",
+   "reputation track",
+   "sponsor/direct-VP cards"
+  ],
+  "sources": [
+   "appeal",
+   "conservation points",
+   "reputation-based bonus (combined via lookup table)",
+   "direct points from cards"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Build your zoo and advance conservation/reputation tracks; when someone crosses the end of the reputation track a final round is played, then appeal and conservation are combined via a table and added to direct card points for the highest total."
  },
  "similar": [
   "Terraforming Mars",
@@ -36,6 +50,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "753ffc60c6e073a4",
+ "_fingerprint": "8a514481570c1094",
  "_name": "Ark Nova"
 }

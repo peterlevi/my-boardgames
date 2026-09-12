@@ -17,11 +17,25 @@
   "kind": "area majority and worker placement competition",
   "detail": "Players contest the same districts and placement spots, so territorial influence and timing directly affect rivals, while much of the engine-building (resources, cards, upgrades) happens on individual player boards. The shared Manhattan map is where most direct competition plays out."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "As with other Vital Lacerda designs, points leak out of nearly every system at once: contracts, district influence, product upgrades, reputation/heat management, and multiple end-game bonuses all contribute.",
-  "how_you_win": "You place workers to run your speakeasy, manufacture and deliver bootleg goods, fulfill contracts, and build influence across Manhattan's districts; whoever has synthesized the most points from these many tracks at the end wins."
+  "subsystems": [
+   "speakeasy production and delivery of goods",
+   "district territory/turf majority control",
+   "corruption/bribery track",
+   "end-game favor/objective bonuses"
+  ],
+  "sources": [
+   "delivered goods income and prestige",
+   "district control bonuses",
+   "corruption track position",
+   "end-game objective/favor scoring"
+  ],
+  "winning_score": 160,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You build up a speakeasy operation, running goods and worker-placement actions to grow production, extend influence over Manhattan's districts, and manage corruption, while banking points along the way; when the end trigger is reached, end-game bonuses are tallied and the highest overall score wins."
  },
  "similar": [
   "On Mars",
@@ -35,6 +49,6 @@
   "Rahdo Runs Through",
   "Heavy Cardboard"
  ],
- "_fingerprint": "687646f51c4ef81e",
+ "_fingerprint": "d450cb2abbb41dbc",
  "_name": "Speakeasy"
 }

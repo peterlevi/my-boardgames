@@ -18,11 +18,19 @@
   "kind": "mostly parallel racing with light blocking",
   "detail": "Players race along a shared modular board and can occasionally block a path space or contest a shortcut, but each player's deck and hand are entirely their own. The main shared element is the board itself and the race positions on it."
  },
- "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no scoring at all — the game ends the instant a player's pawn crosses the finish line.",
-  "how_you_win": "Build and upgrade your expedition deck with helpers and equipment so you can move efficiently through the jungle; the first player to get their pawn across the golden border wins outright."
+  "subsystems": [
+   "deck-building for movement along the path"
+  ],
+  "sources": [
+   "distance traveled along the board"
+  ],
+  "winning_score": 24,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "sudden_death",
+  "sudden_death_common": true,
+  "how_you_win": "Be the first player to move your expedition token from the start to the golden border at the far end of the jungle path; there is no separate point count."
  },
  "similar": [
   "Dominion",
@@ -36,6 +44,6 @@
   "Before You Play",
   "JonGetsGames"
  ],
- "_fingerprint": "22c78ee80aa98380",
+ "_fingerprint": "d8e4ea9318450ff4",
  "_name": "The Quest for El Dorado"
 }

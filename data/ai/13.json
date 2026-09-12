@@ -16,11 +16,25 @@
   "kind": "trading and negotiation with blocking",
   "detail": "Players negotiate resource trades directly with each other every turn and can block opponents' expansion or steal resources with the robber, making the shared hex board and trade economy central to the experience. Individual settlements and hands are private, but the resource-producing board and robber placement are entirely shared and contested."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points come from several distinct sources — settlements, cities, longest road, largest army, and hidden VP development cards — any combination of which can reach the target.",
-  "how_you_win": "You collect resources from dice rolls and trades to build roads, settlements and cities and buy development cards; the first player to reach 10 victory points (counting buildings, longest road, largest army and VP cards) wins."
+  "subsystems": [
+   "settlements and cities built on the board",
+   "longest road bonus",
+   "largest army bonus",
+   "hidden victory-point development cards"
+  ],
+  "sources": [
+   "settlement/city building points",
+   "longest continuous road bonus",
+   "largest knight army bonus",
+   "hidden development-card victory points"
+  ],
+  "winning_score": 10,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "You build settlements, upgrade them to cities, and extend roads using resources gathered from dice rolls, while competing for the longest-road and largest-army bonuses and collecting hidden victory-point cards; the first player whose total (public and hidden) reaches 10 points wins immediately."
  },
  "similar": [
   "Ticket to Ride",
@@ -34,6 +48,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "8dee95893ff12b19",
+ "_fingerprint": "4728615a4f82f73a",
  "_name": "Catan"
 }

@@ -18,11 +18,20 @@
   "kind": "area majority and blocking via tile placement",
   "detail": "Players place tiles on a shared hex map, contesting adjacent territory and majority in shared regions (houses, temples, terraces); the turn-order auction directly determines who gets to react to whom. Almost the entire board is shared and contested, so nearly every placement affects opponents' options."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from repeated area-majority scorings across provinces plus separate tallies for markets, temples, and buildings.",
-  "how_you_win": "You place tiles and buildings to control the most territory in each color region when scoring rounds trigger, accumulating points from majorities, markets, and temples; most total points after the final scoring wins."
+  "subsystems": [
+   "temple building and area-majority scoring around temples"
+  ],
+  "sources": [
+   "victory points from temple-level scorings during the game",
+   "final majority bonuses"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "majority_control",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You place pieces to raise temples on a shrinking hex map; each time a temple reaches a new level, everyone with majority influence on the surrounding tiles scores, and the player with the most points when the tiles run out wins."
  },
  "similar": [
   "Java",
@@ -36,6 +45,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "91dd49e0c07414ba",
+ "_fingerprint": "580184adf5dd9403",
  "_name": "Cuzco"
 }

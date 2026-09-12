@@ -17,11 +17,21 @@
   "kind": "network and market blocking",
   "detail": "Players compete indirectly for space on a shared map and for limited resources in a shared coal/iron market, so building near or ahead of opponents can starve their options. Most of the tension comes from anticipating others' moves rather than direct conflict."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Everything you do ultimately cashes out through just two tallies — the VP printed on your canal/rail links and the VP printed on your flipped industry tiles — scored once at the end of each era.",
-  "how_you_win": "Build and flip (sell or use) industry tiles from six different industries while extending your canal and rail network across the canal and rail eras; the player with the highest combined link-and-industry VP after the rail era wins."
+  "subsystems": [
+   "industry tile development",
+   "canal/rail network building"
+  ],
+  "sources": [
+   "VP from flipped (established) industry tiles",
+   "VP from connected canal and rail links"
+  ],
+  "winning_score": 180,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You build and 'flip' industry tiles (by fulfilling demand) and connect them with canals/rails; VP from industries and links is tallied at the end of the canal era and again at the end of the rail era, and the highest total wins."
  },
  "similar": [
   "Brass: Lancashire",
@@ -36,6 +46,6 @@
   "JonGetsGames",
   "Heavy Cardboard"
  ],
- "_fingerprint": "02d185558fc37f22",
+ "_fingerprint": "9f21e6f87c384ea0",
  "_name": "Brass: Birmingham"
 }

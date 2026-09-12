@@ -18,11 +18,19 @@
   "kind": "simultaneous card placement and penalty avoidance",
   "detail": "All players reveal cards simultaneously onto shared rows, and where your card lands depends entirely on everyone else's plays, often forcing you to take a bad row because of others' choices. The row state is fully shared and constantly reshaped by every player's card each turn."
  },
- "win_criteria": "Lowest-highest scoring",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The only thing that matters is minimizing the bull's-head penalty points accumulated from cards you're forced to take.",
-  "how_you_win": "Play number cards trying to avoid being the one who takes a row of cards, since the row you take gives you penalty points; the player with the fewest penalty points when someone crosses the threshold wins."
+  "subsystems": [
+   "row-placement penalty avoidance (bull-head cards)"
+  ],
+  "sources": [
+   "bull-head penalty points collected from rows you're forced to take"
+  ],
+  "winning_score": 20,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Play cards each turn trying not to be the one who completes a row of five and must take its bull-heads; penalties accumulate across hands until someone crosses 66, ending the game, and the lowest total penalty score wins."
  },
  "similar": [
   "Coloretto",
@@ -36,6 +44,6 @@
   "Gaming Rules!",
   "The Dice Tower"
  ],
- "_fingerprint": "56f1cfaa2a430e55",
+ "_fingerprint": "63dad806cdedf988",
  "_name": "Take 5: 30th Anniversary Edition"
 }

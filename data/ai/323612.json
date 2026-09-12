@@ -16,11 +16,23 @@
   "kind": "mostly parallel play with some area majority",
   "detail": "Most of a player's engine — hand of yōkai cards, resources, and abilities — is private and built up largely independently of opponents. Interaction comes mainly from competing for shared worker-placement spots and area-majority scoring on the shared board rather than direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from several largely independent tracks: area majority in the forest, completed structures/sets, and yōkai-driven bonuses.",
-  "how_you_win": "Play yōkai cards and place dice-workers to gather resources, build structures, gain majority influence over forest areas, and complete card sets; whoever has converted the most of this activity into victory points at the end wins."
+  "subsystems": [
+   "area majority (forest/torii placement)",
+   "hand/deck-building engine (yōkai cards)",
+   "set collection and objectives (pilgrims/kodamas)"
+  ],
+  "sources": [
+   "area control majorities",
+   "resource/production tracks",
+   "completed objectives and sets"
+  ],
+  "winning_score": 110,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "You build an engine of yōkai cards to place kodamas for area majorities, collect pilgrims and complete objectives; when a supply/track depletion triggers the endgame, the player with the most points from all these sources wins."
  },
  "similar": [
   "Res Arcana",
@@ -34,6 +46,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "b418abae61dd64da",
+ "_fingerprint": "3984ea321f33d15d",
  "_name": "Bitoku"
 }

@@ -19,11 +19,25 @@
   "kind": "Worker-placement bumping on a shared board",
   "detail": "Players compete for the same central worker-placement spots but can bump an occupying opponent's worker off, with the bumped player receiving income as compensation rather than being fully blocked. Most of the actual building — ships, technologies, company network — happens on individual player boards, so shared state is limited mainly to the contested placement spots and market/track positions."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accrue from building out your ship/network, satisfying guest contracts and set collection, and end-game tech/network bonuses, all summed at the end.",
-  "how_you_win": "Grow your company by building ship modules, running routes, fulfilling passenger/contract goals, and researching upgrades, ending with the highest combined point total."
+  "subsystems": [
+   "ship/route network building",
+   "technology/invention track",
+   "guest satisfaction set collection",
+   "company income & investment"
+  ],
+  "sources": [
+   "end-game bonus cards",
+   "completed guest/contract sets",
+   "network connections built",
+   "leftover resources/income"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a fixed number of years/rounds, the player who accumulates the most points from network expansion, technology, and satisfied guests wins."
  },
  "similar": [
   "Anachrony",
@@ -38,6 +52,6 @@
   "https://boardgamegeek.com/thread/3619185/galactic-cruise-a-solo-and-multiplayer-review"
  ],
  "source": "web",
- "_fingerprint": "7358aaa10d99011a",
+ "_fingerprint": "9039b59597ddef61",
  "_name": "Galactic Cruise"
 }

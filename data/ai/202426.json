@@ -18,11 +18,19 @@
   "kind": "real-time trading and negotiation",
   "detail": "Players spend most of each round simultaneously negotiating and trading resources and technology directly with one another, since production chains depend on goods only other races can supply. Individual economies are private, but the entire game hinges on constant shared bartering."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Each race has its own hidden scoring rules tied to different resources, technologies, and colonization, so victory points accumulate from several race-specific economic sources rather than one shared track.",
-  "how_you_win": "Grow your race's production economy through trading and negotiation each round, converting resources into hidden victory points per your race's unique scoring conditions, then have the most VP at the end."
+  "subsystems": [
+   "race-specific economy converting traded goods into hidden victory points"
+  ],
+  "sources": [
+   "hidden victory point track (fed by resource conversion each round)"
+  ],
+  "winning_score": 50,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Each round players trade and negotiate for resources, then convert what they've collected into hidden victory points via their own race's conversion track; after the fixed number of rounds, the highest hidden total (revealed at the end) wins."
  },
  "similar": [
   "Cosmic Encounter",
@@ -36,6 +44,6 @@
   "Rahdo Runs Through",
   "Shut Up & Sit Down"
  ],
- "_fingerprint": "717104349f25641f",
+ "_fingerprint": "bd280607ba207c5b",
  "_name": "Sidereal Confluence"
 }

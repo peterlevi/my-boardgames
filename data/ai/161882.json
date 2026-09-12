@@ -17,11 +17,20 @@
   "kind": "auction/bidding and shared-company manipulation",
   "detail": "Players bid against each other for the right to take the next action, and crucially any shareholder can build track, upgrade a town, or call dividends for a company — so the five railway companies are fully shared state that everyone manipulates, not just their nominal owner."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "It's a Winsome cube-rail/18xx-style game where shares are cashed in and the player with the most money at the end wins.",
-  "how_you_win": "Buy and build up railway companies, collect dividends as they pay out, and end the game holding more total cash (from dividends plus your remaining share value) than any other player."
+  "subsystems": [
+   "stock ownership and dividends across five railway companies"
+  ],
+  "sources": [
+   "cash on hand",
+   "value of remaining unsold shares"
+  ],
+  "winning_score": 35,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Build track and issue/buy shares to collect dividends over the game; once all towns have been upgraded to cities the game ends after a final dividend, and whoever has the most cash (plus leftover share value) wins."
  },
  "similar": [
   "Chicago Express",
@@ -35,6 +44,6 @@
   "The Dice Tower",
   "No Pun Included"
  ],
- "_fingerprint": "7da818b1cd55576f",
+ "_fingerprint": "68041f4dfa492cac",
  "_name": "Irish Gauge"
 }

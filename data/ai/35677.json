@@ -18,11 +18,22 @@
   "kind": "mostly parallel play with some building-fee taxation",
   "detail": "Players mainly develop their own tableau of buildings and resources, but the shared offer spaces and the fact that you pay rivals when using buildings they own not you creates light indirect interaction. Turn order and taking whole offer stacks before opponents can also matter tactically."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final ranking is total franc value: cash on hand plus the sale value of all remaining goods, buildings, and ships.",
-  "how_you_win": "Build up a portfolio of buildings, ships, and stockpiled goods while keeping enough food to avoid penalties; at game end everything you own is converted to its money value and the richest player wins."
+  "subsystems": [
+   "integrated goods-production/building-and-ship economy"
+  ],
+  "sources": [
+   "cash on hand",
+   "building values",
+   "ship values",
+   "leftover goods value"
+  ],
+  "winning_score": 300,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "After the fixed number of round cycles, total up cash plus the value of all buildings, ships and leftover goods you own; the richest player wins."
  },
  "similar": [
   "Agricola",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "03d35643a1f92e5b",
+ "_fingerprint": "d2e2fea0bdedeaa3",
  "_name": "Le Havre"
 }

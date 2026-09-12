@@ -16,11 +16,19 @@
   "kind": "bluffing and blocking",
   "detail": "Players secretly choose roles that are revealed simultaneously, and bold actions get blocked if multiple players choose the same bold role, directly punishing predictable play. The delivery board and potions are shared, while each player's chosen cards stay hidden until reveal."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come mainly from delivering potions to matching-colored houses, with a secondary bonus for houses you've built yourself.",
-  "how_you_win": "Each round, secretly choose bold or timid versions of witch, druid, and gatherer roles to collect and fly potions across the map, delivering them to matching-colored houses for points; whoever has the most delivery points after seven rounds wins."
+  "subsystems": [
+   "potion delivery via risk-based role selection"
+  ],
+  "sources": [
+   "VP from potions delivered to matching houses"
+  ],
+  "winning_score": 45,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Each round you simultaneously commit action cards (playing them 'bold' for a stronger but riskier effect or 'shy' for a safe weaker one) to move potions to matching-colored houses for VP; after 7 rounds, the most VP wins."
  },
  "similar": [
   "Witch's Brew",
@@ -34,6 +42,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "0ed92094f1c6ef04",
+ "_fingerprint": "6ed161ce07b7b432",
  "_name": "Broom Service"
 }

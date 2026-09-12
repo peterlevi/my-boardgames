@@ -18,11 +18,22 @@
   "kind": "open conflict and take-that attacks",
   "detail": "Attacks from the player in Tokyo hit everyone else simultaneously, and everyone else's attacks hit whoever is in Tokyo, so the shared 'who occupies Tokyo' state is the main lever players fight over. There's no private tableau of real consequence beyond your own health and cards; the board state is almost entirely shared and adversarial."
  },
- "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game ends the instant a single monster reaches 20 Victory Points (or is the last one left alive), so hitting that VP threshold first is what actually decides the winner.",
-  "how_you_win": "Roll and re-roll dice each turn to collect victory points, energy (for power cards), and attacks; race to be the first to 20 victory points, or survive as the last monster standing after knocking everyone else out."
+  "subsystems": [
+   "dice-rolling engine producing VP/energy/heal/attack each turn",
+   "power cards bought with energy for ongoing effects or direct VP"
+  ],
+  "sources": [
+   "VP rolled directly on dice",
+   "Tokyo occupation VP bonus each turn",
+   "VP granted by power cards"
+  ],
+  "winning_score": 20,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "target_score",
+  "sudden_death_common": false,
+  "how_you_win": "You race to 20 victory points earned mainly from dice symbols and the bonus for holding Tokyo, though in practice games often end early when all but one monster has been attacked to elimination."
  },
  "similar": [
   "King of New York",
@@ -36,6 +47,6 @@
   "Rahdo Runs Through",
   "Geek & Sundry"
  ],
- "_fingerprint": "97275d155c0ad025",
+ "_fingerprint": "a7734c60e2d62c24",
  "_name": "King of Tokyo"
 }

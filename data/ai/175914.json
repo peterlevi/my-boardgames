@@ -18,11 +18,19 @@
   "kind": "direct competition for a shared customer pool and blocking",
   "detail": "All players sell into the same finite demand track, so opening a restaurant or advertisement directly reduces what's available to everyone else, and recipe/discount choices are explicitly aimed at undercutting opponents. Employee hiring and firing timing lets you deny cheap staff to rivals, so most of the tension is about denying resources rather than sharing a board."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Broad",
-  "why": "The game ends after a fixed number of rounds and whoever has accumulated the most cash (from product sales, minus wages and training costs) wins.",
-  "how_you_win": "Build a hierarchy of employees and restaurants, market and sell burgers/pizza/drinks at the highest prices you can sustain, and keep wage costs under control so you finish with more cash than anyone else."
+  "subsystems": [
+   "restaurant chain profit engine (marketing, hiring, serving customers)"
+  ],
+  "sources": [
+   "cash on hand at game end"
+  ],
+  "winning_score": 60,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "The player with the most cash when the house/milestone supply runs out wins; you earn cash by advertising to and serving customers while managing salaries, hiring, and expansion costs."
  },
  "similar": [
   "Brass: Birmingham",
@@ -36,6 +44,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "d80cdc426ccd6fb0",
+ "_fingerprint": "09139ae745f9f931",
  "_name": "Food Chain Magnate"
 }

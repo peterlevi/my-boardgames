@@ -18,11 +18,25 @@
   "kind": "shared map competition with mostly parallel engines",
   "detail": "Players compete for limited building plots and church/reconstruction tiles on a shared city map, and taking a market action can shift prices for everyone, but most of the depth comes from optimizing your own personal player board and card engine rather than direct conflict."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Lisboa is built around numerous largely independent scoring tracks — nobility houses, factories, ships, city tiles, the king's favor, and card bonuses — so victory depends on stacking gains across many unrelated systems.",
-  "how_you_win": "Use action cards to run factories, trade goods, build ships, place city tiles, and curry favor with the king and nobility; whoever ends the game with the highest total across these many scoring avenues wins."
+  "subsystems": [
+   "factory production and goods trading for money",
+   "tile-laying reconstruction of Lisbon for endgame VP",
+   "King's favor and privilege tracks",
+   "illicit money forging as a side economy"
+  ],
+  "sources": [
+   "points from placed building/product tiles",
+   "leftover money converted to VP at game end",
+   "favor track bonuses",
+   "forgery gains and risks"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You win by weaving together profitable factory production and trade, tiles placed while rebuilding the city, royal favor bonuses, and any money you've forged, converting whatever cash remains into points once the game-ending deck runs out."
  },
  "similar": [
   "Vinhos",
@@ -36,6 +50,6 @@
   "Rahdo Runs Through",
   "No Pun Included"
  ],
- "_fingerprint": "906d59bfae83e8bd",
+ "_fingerprint": "6e11b626f1e9b606",
  "_name": "Lisboa"
 }

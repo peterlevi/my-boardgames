@@ -18,11 +18,20 @@
   "kind": "auction/bidding and resource market competition",
   "detail": "Players directly compete for power plants in open auctions and for limited resources in a shared market whose prices rise and fall based on collective demand, and city connections on the shared map can block or wall off rivals' expansion routes. Each player has their own plants and cities but the map, resource supply, and plant market are entirely shared and contested."
  },
- "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game ends when a player's network hits the size trigger, and the winner is whoever powers the most cities that final round, not whoever has the most money or points.",
-  "how_you_win": "Build the largest network of connected cities and buy enough power plants and resources to actually supply electricity to as many of them as possible; when the end trigger hits, whoever powers the most cities wins (ties broken by leftover money)."
+  "subsystems": [
+   "network/power-plant economy (bidding for plants, buying resources, connecting cities)"
+  ],
+  "sources": [
+   "number of cities powered at game end",
+   "money as tiebreaker"
+  ],
+  "winning_score": 17,
+  "tally": "mixed",
+  "shape": "objective_count",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Once a player's network reaches the game's city threshold, one final round is played and whoever powers the most cities wins, with leftover money breaking ties."
  },
  "similar": [
   "Brass: Birmingham",
@@ -36,6 +45,6 @@
   "Rahdo Runs Through",
   "JonGetsGames"
  ],
- "_fingerprint": "351a77aca9f3d983",
+ "_fingerprint": "cf7d87ceddf5ac39",
  "_name": "Power Grid"
 }

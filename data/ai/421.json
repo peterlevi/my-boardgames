@@ -18,11 +18,21 @@
   "kind": "stock manipulation and economic warfare",
   "detail": "Players buy, sell, and dump shares of the same public companies, so one player's stock moves directly change prices and even hand company presidencies to others. Company operations (track, trains, dividends) are public and permanently alter the shared map and market, so almost nothing happens in isolation."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Every action (auctioning shares, laying track, running trains, paying dividends) ultimately converts into either cash on hand or share value, and only net worth at the end counts.",
-  "how_you_win": "You win by ending the game with the highest total of cash in hand plus the market value of your remaining shares."
+  "subsystems": [
+   "stock market share trading",
+   "railroad operations (track-laying and train runs)"
+  ],
+  "sources": [
+   "cash on hand",
+   "value of shares held",
+   "value of private companies owned"
+  ],
+  "winning_score": 7000,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "exhaustion",
+  "how_you_win": "You accumulate the greatest total net worth, cash plus the market value of your shares and privates, and the game ends when the bank runs out of money; whoever has the most is declared the winner."
  },
  "similar": [
   "1846: The Race for the Midwest",
@@ -36,6 +46,6 @@
   "Watch It Played",
   "JonGetsGames"
  ],
- "_fingerprint": "993b55d23ff3529c",
+ "_fingerprint": "61b625afb1812ae3",
  "_name": "1830: Railways & Robber Barons"
 }

@@ -17,11 +17,19 @@
   "kind": "trading and negotiation",
   "detail": "The entire game revolves around open trading and deal-making between players, with almost no private strategy beyond your fixed hand order. The shared trading pool and market are constantly being negotiated over in real time."
  },
- "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The only thing that matters is how many gold coins you've banked from selling harvested bean fields to the market.",
-  "how_you_win": "Play beans from the front of your hand into fields you can't rearrange, harvest a field for coins scaled to how many of that bean type you accumulated, and trade or gift beans with opponents to build bigger, more valuable fields than they can; the richest player when the draw deck is exhausted for the third time wins."
+  "subsystems": [
+   "bean planting and selling for coins"
+  ],
+  "sources": [
+   "coins earned from selling harvested bean fields"
+  ],
+  "winning_score": 18,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "You plant beans of a single type per field and sell the field for coins according to that bean's payout table when you choose to harvest; when the draw deck has been exhausted the required number of times, whoever has the most coins wins."
  },
  "similar": [
   "Coloretto",
@@ -35,6 +43,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "90dead16860d84ef",
+ "_fingerprint": "171a548282b7ca30",
  "_name": "Bohnanza"
 }

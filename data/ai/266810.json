@@ -16,11 +16,26 @@
   "kind": "worker placement with a shared threat track",
   "detail": "Players place workers on shared action spaces, competing for limited slots, and everyone contributes to and draws from a communal 'outpost' track of raiders. Most building and scoring happens on individual player boards, so the interaction is indirect rather than confrontational."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score combines the Virtue track, City tiles, travel/combat contribution rewards, and collected artifacts, none of which alone decides the game.",
-  "how_you_win": "Recruit workers to build structures, repel raiders, and undertake travels while managing Virtue and collecting bonus tiles, then total points from all these tracks at game end."
+  "subsystems": [
+   "outpost building along the road",
+   "apprentice colour majorities on buildings",
+   "quest card fulfillment",
+   "combat-strength (raid) track progress"
+  ],
+  "sources": [
+   "outposts",
+   "buildings/apprentices",
+   "quests",
+   "combat strength",
+   "leftover silver"
+  ],
+  "winning_score": 90,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Over a set number of rounds you place paladins to build outposts, recruit apprentices onto buildings, complete quests, and fend off raiders; whoever totals the most points from all these tracks plus leftover silver at game end wins."
  },
  "similar": [
   "Architects of the West Kingdom",
@@ -34,6 +49,6 @@
   "Rahdo Runs Through",
   "The Dice Tower"
  ],
- "_fingerprint": "4401f13ac861d29d",
+ "_fingerprint": "4de3c4694df6cc83",
  "_name": "Paladins of the West Kingdom"
 }

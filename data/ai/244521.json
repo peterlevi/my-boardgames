@@ -18,11 +18,21 @@
   "kind": "mostly parallel play with light take-that via ranking",
   "detail": "Each player has their own bag, cauldron, and chips, drawing and busting independently and simultaneously with no direct targeting. The main interaction is comparative: final ranking each round determines rat/ruby rewards, and everyone buys from the same shared chip market."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Score is driven almost entirely by how far you push your potion each round (converted to points), with rubies (bought with leftover points) as a secondary points source.",
-  "how_you_win": "Push your luck drawing ingredient chips into your pot each round to brew as strong a potion as possible without exploding, converting potion strength into victory points (and spare points into rubies); most points after the final round wins."
+  "subsystems": [
+   "push-your-luck potion brewing (bag-building for pot value)"
+  ],
+  "sources": [
+   "cumulative VP from pot value each round",
+   "bonus VP from the ruby/rat-tail track",
+   "bonus points from leftover coins in the final round"
+  ],
+  "winning_score": 70,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Across 9 rounds, push your luck drawing ingredient chips to build the highest-value potion each round, accumulating the most total victory points."
  },
  "similar": [
   "The Quest for El Dorado",
@@ -36,6 +46,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "068610c973fa68bb",
+ "_fingerprint": "857cd97855f3dc8e",
  "_name": "Quacks"
 }

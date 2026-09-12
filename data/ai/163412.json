@@ -16,11 +16,21 @@
   "kind": "race and denial for shared pieces",
   "detail": "Both players draw from the same circle of available patches and race along a shared time track, so taking a good patch or moving ahead in time directly denies options to the other player. Each player's quilt board itself is private and not directly attacked."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Final score is simply leftover buttons minus a penalty for each empty square on your quilt board, plus a small bonus for covering the special 7x7 area.",
-  "how_you_win": "Race to buy patches that tile your board efficiently and generate button income, ending with more net buttons (income minus empty-square penalties) than your opponent."
+  "subsystems": [
+   "quilt board tile placement (which also drives button income)"
+  ],
+  "sources": [
+   "buttons remaining",
+   "empty-square penalty (-2 each)",
+   "7x7 special tile bonus"
+  ],
+  "winning_score": 10,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": "fixed_length",
+  "sudden_death_common": false,
+  "how_you_win": "Whoever ends with more buttons after subtracting 2 points per empty square on their 9x9 board (plus the 7x7 bonus tile if earned) wins once both players' time tokens reach the end of the time track."
  },
  "similar": [
   "Patchwork Doodle",
@@ -34,6 +44,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "7c858567ff55c042",
+ "_fingerprint": "e716ce19894d0d4b",
  "_name": "Patchwork"
 }

@@ -18,11 +18,25 @@
   "kind": "route and building competition",
   "detail": "Players share one trail and race for limited building spots, station placements, and staff hires, so positioning and timing matter a great deal. Each player otherwise develops a private deck, herd, and player board largely independent of others."
  },
- "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score is a sum of several largely independent tracks: cattle delivered, buildings placed along the trail, Kansas City tiles, station upgrades/objective cards, with hazards subtracting.",
-  "how_you_win": "You build an engine of cards, workers, and buildings to repeatedly herd valuable cattle from Texas to Kansas City, converting deliveries and infrastructure into the most victory points by game end."
+  "subsystems": [
+   "cattle delivery/deck-building loop",
+   "building network on the trail",
+   "worker development tracks (engineers/craftsmen)"
+  ],
+  "sources": [
+   "delivery track advances (running)",
+   "buildings owned",
+   "hazards removed",
+   "engineer track position",
+   "station/tycoon bonuses"
+  ],
+  "winning_score": 175,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": "end_trigger",
+  "sudden_death_common": false,
+  "how_you_win": "Build up score continuously by delivering ever-better cattle herds to Kansas City, then add end-game bonuses from buildings, hazards removed and the engineer track once someone triggers the final round."
  },
  "similar": [
   "Orléans",
@@ -36,6 +50,6 @@
   "Rahdo Runs Through",
   "Before You Play"
  ],
- "_fingerprint": "90bd96ea52cdc88c",
+ "_fingerprint": "0e87100c82a45d24",
  "_name": "Great Western Trail"
 }

@@ -16,11 +16,20 @@
   "kind": "closed economy bidding",
   "detail": "All fireflies are drawn from and returned to the same shared supply, so every token you commit to a card is one your opponents can't use, and you're watching their pace to time your own bids. There's no private tableau of note beyond the cards you've claimed."
  },
- "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The only thing that matters is the printed point value of the critter cards you've collected, offset by negative wild-critter cards.",
-  "how_you_win": "You place fireflies one at a time to bid on critter cards; when a card fills up you take it (or the wild critter goes to whoever placed last), and at the end the player with the highest total card value wins."
+  "subsystems": [
+   "firefly-bidding auction for creature cards"
+  ],
+  "sources": [
+   "collected tame-critter card values",
+   "negative wild-critter cards"
+  ],
+  "winning_score": 30,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": "exhaustion",
+  "sudden_death_common": false,
+  "how_you_win": "Players place fireflies one at a time onto revealed cards to bid for desirable critters while avoiding overpaying for cards that turn out to be worthless wild critters; once the deck is exhausted, whoever's collected cards sum to the highest total (positive critters minus negative ones) wins."
  },
  "similar": [
   "Coloretto",
@@ -34,6 +43,6 @@
   "Rahdo Runs Through",
   "BoardGameCo"
  ],
- "_fingerprint": "972ec308e655e223",
+ "_fingerprint": "0a4985fe703358ac",
  "_name": "Smile"
 }

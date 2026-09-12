@@ -16,11 +16,19 @@
   "kind": "cooperative planning and shared board state",
   "detail": "All players share one board and one set of win/loss conditions, so every action (treating disease, trading cards, building stations) directly affects the whole team's chances. Turns are taken individually but decisions are made through constant group discussion about the shared map."
  },
- "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no individual score; the group either discovers cures for all four diseases before the player deck or outbreak limits run out, or they collectively lose.",
-  "how_you_win": "All players cooperate, using role abilities to treat infections and gather the right cards at research stations, discovering all four disease cures before the outbreak or infection limits are reached."
+  "subsystems": [
+   "disease curing"
+  ],
+  "sources": [
+   "cures discovered for the four diseases"
+  ],
+  "winning_score": 4,
+  "tally": "running",
+  "shape": "objective_count",
+  "ends_by": "coop_goal",
+  "sudden_death_common": false,
+  "how_you_win": "Players cooperate, using actions and cards to treat infections and collect matching city cards to discover cures; the team wins once all four diseases have been cured before the player deck runs out or outbreaks spiral out of control."
  },
  "similar": [
   "Pandemic Legacy: Season 1",
@@ -34,6 +42,6 @@
   "The Dice Tower",
   "Rahdo Runs Through"
  ],
- "_fingerprint": "09eb51bc27924401",
+ "_fingerprint": "e035c08ef09f0a36",
  "_name": "Pandemic"
 }

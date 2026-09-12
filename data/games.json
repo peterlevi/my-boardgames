@@ -53,6 +53,11 @@
    "Bruce Shelley": "1329",
    "Francis Tresham": "58"
   },
+  "publishers": [
+   "The Avalon Hill Game Co",
+   "Lookout Games",
+   "999 Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -261,6 +266,11 @@
   "designer_ids": {
    "Thomas Lehmann": "150"
   },
+  "publishers": [
+   "Deep Thought Games, LLC",
+   "GMT Games",
+   "Golden Spike Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -460,6 +470,10 @@
   "designer_ids": {
    "Scott Petersen": "12357"
   },
+  "publishers": [
+   "All-Aboard Games",
+   "Game Harbor"
+  ],
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -662,6 +676,11 @@
    "Remo Conzadori": "49759",
    "Fabio Lopiano": "100575"
   },
+  "publishers": [
+   "Devir",
+   "CMON Global Limited",
+   "CrowD Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Area control"
@@ -858,6 +877,11 @@
   "designer_ids": {
    "Antoine Bauza": "9714"
   },
+  "publishers": [
+   "Repos Production",
+   "ADC Blackfire Entertainment",
+   "Asterion Press"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -1097,6 +1121,11 @@
    "Antoine Bauza": "9714",
    "Bruno Cathala": "1727"
   },
+  "publishers": [
+   "Repos Production",
+   "ADC Blackfire Entertainment",
+   "asmodee"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -1284,6 +1313,11 @@
   "designer_ids": {
    "Sid Sackson": "4"
   },
+  "publishers": [
+   "3M",
+   "The Avalon Hill Game Co",
+   "Arclight Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -1488,6 +1522,11 @@
   "designer_ids": {
    "Helge Ostertag": "4407"
   },
+  "publishers": [
+   "Capstone Games",
+   "Feuerland Spiele",
+   "Cranio Creations"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -1701,6 +1740,11 @@
   "designer_ids": {
    "Uwe Rosenberg": "10"
   },
+  "publishers": [
+   "Lookout Games",
+   "999 Games",
+   "asmodee"
+  ],
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -1883,6 +1927,11 @@
   "designer_ids": {
    "Uwe Rosenberg": "10"
   },
+  "publishers": [
+   "Lookout Games",
+   "999 Games",
+   "asmodee"
+  ],
   "traits": [
    "Parallel engine",
    "Worker placement of any kind"
@@ -2072,6 +2121,11 @@
   "designer_ids": {
    "Jon Perry": "73364"
   },
+  "publishers": [
+   "Arcane Wonders",
+   "Games7Days",
+   "Lucky Duck Games"
+  ],
   "traits": [
    "Area control"
   ],
@@ -2249,6 +2303,11 @@
   "designer_ids": {
    "Matúš Kotry": "75718"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "Arclight Games",
+   "Cranio Creations"
+  ],
   "traits": [
    "End-game bonuses",
    "Auction of any kind",
@@ -2440,6 +2499,11 @@
    "Stefano Luperto": "2729",
    "Antonio Tinto": "6816"
   },
+  "publishers": [
+   "eggertspiele",
+   "Arclight Games",
+   "Plan B Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Worker placement of any kind",
@@ -2623,6 +2687,9 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "Alley Cat Games"
+  ],
   "traits": [
    "Auction of any kind",
    "Area control"
@@ -2826,6 +2893,11 @@
    "Richard Ámann": "76971",
    "Viktor Péter": "76578"
   },
+  "publishers": [
+   "Mindclash Games",
+   "Albi",
+   "Albi Polska"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -3019,6 +3091,11 @@
   "designer_ids": {
    "Martin Wallace": "6"
   },
+  "publishers": [
+   "KOSMOS",
+   "999 Games",
+   "Albi"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -3236,6 +3313,11 @@
    "S J Macdonald": "103821",
    "Shem Phillips": "12547"
   },
+  "publishers": [
+   "Garphill Games",
+   "Angry Lion Games",
+   "Banana Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -3460,6 +3542,11 @@
   "designer_ids": {
    "Mathias Wigge": "138517"
   },
+  "publishers": [
+   "Feuerland Spiele",
+   "Capstone Games",
+   "CMON Global Limited"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -3656,6 +3743,11 @@
   "designer_ids": {
    "Stefan Risthaus": "5766"
   },
+  "publishers": [
+   "Capstone Games",
+   "Spielworxx",
+   "Enjoy Game"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -3856,6 +3948,11 @@
   "designer_ids": {
    "Stefan Risthaus": "5766"
   },
+  "publishers": [
+   "Game Brewer",
+   "Delta Vision Publishing",
+   "Dexker Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -4047,6 +4144,11 @@
   "designer_ids": {
    "Michael Kiesling": "42"
   },
+  "publishers": [
+   "Next Move Games",
+   "Plan B Games",
+   "Belleville (Бельвіль)"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -4234,6 +4336,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "Ludonova",
+   "Arclight Games",
+   "Stork Games"
+  ],
   "traits": [
    "Area control",
    "Drafting of any kind",
@@ -4396,6 +4503,11 @@
   "designer_ids": {
    "Germán P. Millán": "89099"
   },
+  "publishers": [
+   "Devir",
+   "Broadway Toys LTD",
+   "Hobby World"
+  ],
   "traits": [
    "Drafting of any kind"
   ],
@@ -4569,6 +4681,11 @@
    "Michael Palm": "461",
    "Lukas Zach": "7808"
   },
+  "publishers": [
+   "DV Games",
+   "ABACUSSPIELE",
+   "Albi"
+  ],
   "traits": [
    "Direct conflict",
    "Hidden information",
@@ -4782,6 +4899,11 @@
    "Tommaso Battista": "108836",
    "Simone Luciani": "35418"
   },
+  "publishers": [
+   "Cranio Creations",
+   "CrowD Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -4956,6 +5078,11 @@
   "designer_ids": {
    "Scott Almes": "43431"
   },
+  "publishers": [
+   "Deep Print Games",
+   "999 Games",
+   "Albi"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -5126,6 +5253,10 @@
   "designer_ids": {
    "Torsten Landsvogt": "8537"
   },
+  "publishers": [
+   "Mayfair Games",
+   "Phalanx Games B.V."
+  ],
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -5274,6 +5405,11 @@
   "designer_ids": {
    "Dennis K. Chan": "129749"
   },
+  "publishers": [
+   "Rio Grande Games",
+   "CrowD Games",
+   "Ghenos Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -5446,6 +5582,11 @@
   "designer_ids": {
    "Steve Finn": "10060"
   },
+  "publishers": [
+   "Dr. Finn's Games",
+   "Asterion Press",
+   "GaGa Games"
+  ],
   "traits": [
    "Set collection",
    "Contested market",
@@ -5629,6 +5770,11 @@
   "designer_ids": {
    "Germán P. Millán": "89099"
   },
+  "publishers": [
+   "Devir",
+   "Board Game Rookie",
+   "CMON Global Limited"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -5808,6 +5954,11 @@
    "Xavier Georges": "11312",
    "Alain Orban": "7369"
   },
+  "publishers": [
+   "Pearl Games",
+   "asmodee",
+   "CrowD Games"
+  ],
   "traits": [
    "Parallel engine",
    "Area control",
@@ -6005,6 +6156,11 @@
   "designer_ids": {
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "eggertspiele",
+   "Arclight Games",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -6199,6 +6355,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "Blue Orange (EU)",
+   "Blue Orange Games",
+   "ADC Blackfire Entertainment"
+  ],
   "traits": [
    "Set collection",
    "Area control",
@@ -6398,6 +6559,11 @@
   "designer_ids": {
    "Uwe Rosenberg": "10"
   },
+  "publishers": [
+   "AMIGO",
+   "999 Games",
+   "Albi"
+  ],
   "traits": [
    "Set collection",
    "Direct conflict"
@@ -6606,6 +6772,11 @@
   "designer_ids": {
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "dlp games",
+   "Arrakis Games",
+   "Capstone Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -6816,6 +6987,11 @@
    "Matt Tolman": "32943",
    "Martin Wallace": "6"
   },
+  "publishers": [
+   "Roxley",
+   "Arclight Games",
+   "Board Game Rookie"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -7029,6 +7205,11 @@
   "designer_ids": {
    "Martin Wallace": "6"
   },
+  "publishers": [
+   "Roxley",
+   "Warfrog Games",
+   "Arclight Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -7212,6 +7393,11 @@
   "designer_ids": {
    "Peer Sylvester": "5554"
   },
+  "publishers": [
+   "Osprey Games",
+   "Boardgame Mall",
+   "CMON Global Limited"
+  ],
   "traits": [
    "End-game bonuses",
    "Area control",
@@ -7411,6 +7597,11 @@
    "Andreas Pelikan": "8397",
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "alea",
+   "Ravensburger AG",
+   "Arclight Games"
+  ],
   "traits": [
    "Set collection",
    "Network building"
@@ -7600,6 +7791,11 @@
   "designer_ids": {
    "Etienne Espreman": "69130"
   },
+  "publishers": [
+   "Pearl Games",
+   "asmodee",
+   "Heidelberger Spieleverlag"
+  ],
   "traits": [
    "Auction of any kind",
    "Area control",
@@ -7794,6 +7990,10 @@
    "Jeroen Doumen": "270",
    "Joris Wiersinga": "407"
   },
+  "publishers": [
+   "Splotter Spellen",
+   "Capstone Games"
+  ],
   "traits": [
    "Worker placement of any kind",
    "Network building"
@@ -7980,6 +8180,11 @@
   "designer_ids": {
    "Emanuele Ornella": "2762"
   },
+  "publishers": [
+   "AMIGO",
+   "Lautapelit.fi",
+   "Mont Tàber"
+  ],
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -8164,6 +8369,10 @@
    "Kristian Amundsen Østby": "4063",
    "Eilif Svensson": "9637"
   },
+  "publishers": [
+   "Aporta Games",
+   "WoodCat"
+  ],
   "traits": [
    "Drafting of any kind"
   ],
@@ -8328,6 +8537,11 @@
   "designer_ids": {
    "Klaus-Jürgen Wrede": "398"
   },
+  "publishers": [
+   "Hans im Glück",
+   "999 Games",
+   "Devir"
+  ],
   "traits": [
    "Tableau multipliers",
    "Area control"
@@ -8549,6 +8763,11 @@
   "designer_ids": {
    "Xavier Georges": "11312"
   },
+  "publishers": [
+   "Quined Games",
+   "Emperor Penguin Games",
+   "HOT Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -8757,6 +8976,11 @@
   "designer_ids": {
    "Jordy Adan": "109218"
   },
+  "publishers": [
+   "Thunderworks Games",
+   "Arclight Games",
+   "Buró"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -9090,6 +9314,11 @@
   "designer_ids": {
    "Stefan Feld": "4958"
   },
+  "publishers": [
+   "alea",
+   "Ravensburger AG",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -9315,6 +9544,11 @@
   "designer_ids": {
    "Klaus Teuber": "11"
   },
+  "publishers": [
+   "KOSMOS",
+   "64 Ounce Games",
+   "999 Games"
+  ],
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -9518,6 +9752,11 @@
   "designer_ids": {
    "Uwe Rosenberg": "10"
   },
+  "publishers": [
+   "Lookout Games",
+   "999 Games",
+   "CrowD Games"
+  ],
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -9733,6 +9972,11 @@
   "designer_ids": {
    "William Attia": "5629"
   },
+  "publishers": [
+   "Space Cowboys",
+   "CrowD Games",
+   "DiceTree Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -9994,6 +10238,11 @@
   "designer_ids": {
    "(Uncredited)": "3"
   },
+  "publishers": [
+   "(Public Domain)",
+   "(Self-Published)",
+   "(Unknown)"
+  ],
   "traits": [],
   "videos": [
    {
@@ -10163,6 +10412,11 @@
   "designer_ids": {
    "Bruno Faidutti": "125"
   },
+  "publishers": [
+   "Windrider Games",
+   "999 Games",
+   "Arclight Games"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -10362,6 +10616,11 @@
   "designer_ids": {
    "Stefan Feld": "4958"
   },
+  "publishers": [
+   "Deep Print Games",
+   "DiceTree Games",
+   "Gémklub"
+  ],
   "traits": [
    "Multi-track",
    "Parallel engine",
@@ -10544,6 +10803,11 @@
   "designer_ids": {
    "Vlaada Chvátil": "789"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "asmodee",
+   "Boardgame Space"
+  ],
   "traits": [
    "Co-operative"
   ],
@@ -10747,6 +11011,11 @@
    "Vlaada Chvátil": "789",
    "Scot Eaton": "68016"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "asmodee",
+   "Brain Games"
+  ],
   "traits": [
    "Co-operative"
   ],
@@ -10913,6 +11182,11 @@
   "designer_ids": {
    "Vlaada Chvátil": "789"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "Boardgame Space",
+   "Brain Games"
+  ],
   "traits": [
    "Co-operative"
   ],
@@ -11119,6 +11393,11 @@
    "Flaminia Brasini": "6818",
    "Virginio Gigli": "6817"
   },
+  "publishers": [
+   "eggertspiele",
+   "Broadway Toys LTD",
+   "Galápagos Jogos"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -11311,6 +11590,11 @@
   "designer_ids": {
    "Christophe Raimbault": "28912"
   },
+  "publishers": [
+   "Ludonaute",
+   "asmodee",
+   "Asterion Press"
+  ],
   "traits": [
    "Direct conflict"
   ],
@@ -11512,6 +11796,11 @@
   "designer_ids": {
    "Mac Gerdts": "6045"
   },
+  "publishers": [
+   "PD-Verlag",
+   "Matagot",
+   "New Games Order, LLC"
+  ],
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -11708,6 +11997,11 @@
    "Bruno Cathala": "1727",
    "Charles Chevallier": "34672"
   },
+  "publishers": [
+   "Bombyx",
+   "Broadway Toys LTD",
+   "Buró"
+  ],
   "traits": [
    "Set collection",
    "Tableau multipliers",
@@ -11897,6 +12191,9 @@
    "Thomas Ewert": "8061",
    "Kevin Nesbitt": "11028"
   },
+  "publishers": [
+   "Allplay"
+  ],
   "traits": [
    "Set collection",
    "Contested market",
@@ -12095,6 +12392,11 @@
   "designer_ids": {
    "Rikki Tahta": "64108"
   },
+  "publishers": [
+   "Indie Boards & Cards",
+   "La Mame Games",
+   "(Unknown)"
+  ],
   "traits": [
    "Direct conflict",
    "Hidden information"
@@ -12282,6 +12584,11 @@
   "designer_ids": {
    "Thomas Sing": "45563"
   },
+  "publishers": [
+   "KOSMOS",
+   "999 Games",
+   "Black Sea Games"
+  ],
   "traits": [
    "Co-operative"
   ],
@@ -12470,6 +12777,11 @@
    "Michał Oracz": "5143",
    "Michał Walczak": "85259"
   },
+  "publishers": [
+   "Portal Games",
+   "Edge Entertainment",
+   "Galápagos Jogos"
+  ],
   "traits": [
    "End-game bonuses",
    "Area control",
@@ -12664,6 +12976,11 @@
    "Michael Kiesling": "42",
    "Wolfgang Kramer": "7"
   },
+  "publishers": [
+   "Super Meeple",
+   "CMON Global Limited",
+   "Conclave Editora"
+  ],
   "traits": [
    "Tableau multipliers",
    "Auction of any kind",
@@ -12847,6 +13164,11 @@
   "designer_ids": {
    "Dani Garcia": "117012"
   },
+  "publishers": [
+   "Devir",
+   "HIT Games",
+   "Portal Games"
+  ],
   "traits": [
    "Multi-track",
    "Worker placement of any kind"
@@ -13050,6 +13372,11 @@
    "Simone Luciani": "35418",
    "Nestore Mangone": "52377"
   },
+  "publishers": [
+   "ThunderGryph Games",
+   "Blackrock Games",
+   "CMON Global Limited"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -13234,6 +13561,11 @@
   "designer_ids": {
    "Thomas Dagenais-Lespérance": "82239"
   },
+  "publishers": [
+   "Scorpion Masqué",
+   "2 Pionki",
+   "ADC Blackfire Entertainment"
+  ],
   "traits": [
    "Co-operative"
   ],
@@ -13456,6 +13788,11 @@
    "David McGregor": "105446",
    "Marissa Misura": "105447"
   },
+  "publishers": [
+   "Pandasaurus Games",
+   "Catch Up Games",
+   "MINDOK"
+  ],
   "traits": [
    "Worker placement of any kind",
    "Drafting of any kind",
@@ -13640,6 +13977,11 @@
   "designer_ids": {
    "Jean-Louis Roubira": "11547"
   },
+  "publishers": [
+   "Libellud",
+   "ADC Blackfire Entertainment",
+   "Anne"
+  ],
   "traits": [],
   "videos": [
    {
@@ -13841,6 +14183,11 @@
   "designer_ids": {
    "Chad Jensen": "6331"
   },
+  "publishers": [
+   "GMT Games",
+   "Banana Games",
+   "Board Game Rookie"
+  ],
   "traits": [
    "Area control",
    "Worker placement of any kind",
@@ -14026,6 +14373,11 @@
   "designer_ids": {
    "Donald X. Vaccarino": "10525"
   },
+  "publishers": [
+   "Rio Grande Games",
+   "999 Games",
+   "Albi"
+  ],
   "traits": [
    "Direct conflict",
    "Deck or bag building",
@@ -14216,6 +14568,11 @@
    "Jack Kittredge": "35",
    "Peter Olotka": "36"
   },
+  "publishers": [
+   "Gale Force Nine, LLC",
+   "Lavka Games",
+   "Surfin' Meeple China"
+  ],
   "traits": [
    "Auction of any kind",
    "Area control",
@@ -14431,6 +14788,11 @@
   "designer_ids": {
    "Paul Dennen": "92370"
   },
+  "publishers": [
+   "Dire Wolf",
+   "Arclight Games",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "Parallel engine",
    "Tableau multipliers",
@@ -14617,6 +14979,11 @@
   "designer_ids": {
    "Paul Dennen": "92370"
   },
+  "publishers": [
+   "Dire Wolf",
+   "Arclight Games",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -14811,6 +15178,11 @@
   "designer_ids": {
    "Pascal Ribrault": "139834"
   },
+  "publishers": [
+   "HUCH!",
+   "R&R Games",
+   "Atalia"
+  ],
   "traits": [
    "Contested market",
    "Worker placement of any kind",
@@ -14995,6 +15367,11 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games",
+   "Angry Lion Games",
+   "Giochix.it"
+  ],
   "traits": [
    "Area control",
    "Drafting of any kind"
@@ -15204,6 +15581,11 @@
   "designer_ids": {
    "James A. Wilson": "91302"
   },
+  "publishers": [
+   "Starling Games (II)",
+   "Abraxas",
+   "Arclight Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -15390,6 +15772,11 @@
   "designer_ids": {
    "Hjalmar Hach": "91211"
   },
+  "publishers": [
+   "Horrible Guild",
+   "999 Games",
+   "Games7Days"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -15571,6 +15958,11 @@
    "Dmitry Knorre": "39262",
    "Sergey Machin": "9247"
   },
+  "publishers": [
+   "North Star Games, LLC",
+   "(Web published)",
+   "Funforge"
+  ],
   "traits": [
    "Direct conflict",
    "Hidden information"
@@ -15764,6 +16156,11 @@
    "Elan Lee": "80158",
    "Shane Small": "5874"
   },
+  "publishers": [
+   "Exploding Kittens",
+   "ADC Blackfire Entertainment",
+   "Galápagos Jogos"
+  ],
   "traits": [
    "Set collection",
    "Direct conflict"
@@ -15967,6 +16364,11 @@
    "S J Macdonald": "103821",
    "Shem Phillips": "12547"
   },
+  "publishers": [
+   "Garphill Games",
+   "CHUR GAMES",
+   "CMON Global Limited"
+  ],
   "traits": [
    "Multi-track",
    "Parallel engine"
@@ -16167,6 +16569,11 @@
   "designer_ids": {
    "Friedemann Friese": "141"
   },
+  "publishers": [
+   "2F-Spiele",
+   "Arclight Games",
+   "Rio Grande Games"
+  ],
   "traits": [
    "Parallel engine",
    "Deck or bag building",
@@ -16378,6 +16785,11 @@
    "Joseph Z. Chen": "97506",
    "Justin Faulkner": "109582"
   },
+  "publishers": [
+   "Metafactory Games",
+   "BoardM Factory",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -16604,6 +17016,11 @@
   "designer_ids": {
    "Uwe Rosenberg": "10"
   },
+  "publishers": [
+   "Feuerland Spiele",
+   "Cranio Creations",
+   "Devir"
+  ],
   "traits": [
    "Parallel engine",
    "Tableau multipliers",
@@ -16782,6 +17199,11 @@
    "Dimitri Perrier": "106956",
    "Matthieu Verdier": "123695"
   },
+  "publishers": [
+   "Explor8",
+   "Cranio Creations",
+   "CrowD Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Area control",
@@ -16956,6 +17378,11 @@
   "designer_ids": {
    "Bruno Cathala": "1727"
   },
+  "publishers": [
+   "Days of Wonder",
+   "Arclight Games",
+   "Asterion Press"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -17150,6 +17577,11 @@
    "J.B. Howell": "97699",
    "Michael Mihealsick": "115813"
   },
+  "publishers": [
+   "WizKids (I)",
+   "Galápagos Jogos",
+   "Intrafin Games"
+  ],
   "traits": [
    "Contested market",
    "Deck or bag building",
@@ -17353,6 +17785,11 @@
    "Jeroen Doumen": "270",
    "Joris Wiersinga": "407"
   },
+  "publishers": [
+   "Lucky Duck Games",
+   "Splotter Spellen",
+   "Angry Lion Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -17566,6 +18003,11 @@
    "Jens Drögemüller": "4300",
    "Helge Ostertag": "4407"
   },
+  "publishers": [
+   "Feuerland Spiele",
+   "Automa Factory",
+   "Capstone Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -17765,6 +18207,11 @@
    "Dennis Northcott": "154241",
    "Koltin Thompson": "128912"
   },
+  "publishers": [
+   "Kinson Key Games",
+   "CrowD Games",
+   "Dranda Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -17968,6 +18415,11 @@
   "designer_ids": {
    "Vlaada Chvátil": "789"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "Cranio Creations",
+   "Devir"
+  ],
   "traits": [
    "Multi-track"
   ],
@@ -18163,6 +18615,11 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games",
+   "Angry Lion Games",
+   "CrowD Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -18370,6 +18827,11 @@
   "designer_ids": {
    "Xavier Georges": "11312"
   },
+  "publishers": [
+   "Pearl Games",
+   "Heidelberger Spieleverlag",
+   "Hobby Japan"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -18593,6 +19055,11 @@
   "designer_ids": {
    "Isaac Childres": "69802"
   },
+  "publishers": [
+   "Cephalofair Games",
+   "Albi",
+   "Albi Polska"
+  ],
   "traits": [
    "Parallel engine",
    "Direct conflict",
@@ -18775,6 +19242,11 @@
    "Virginio Gigli": "6817",
    "Simone Luciani": "35418"
   },
+  "publishers": [
+   "Cranio Creations",
+   "CrowD Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -18968,6 +19440,11 @@
    "Wolfgang Kramer": "7",
    "Richard Ulrich": "8"
   },
+  "publishers": [
+   "Hans im Glück",
+   "999 Games",
+   "Användbart Litet Företag"
+  ],
   "traits": [
    "Auction of any kind",
    "Area control",
@@ -19164,6 +19641,11 @@
   "designer_ids": {
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "eggertspiele",
+   "999 Games",
+   "Arclight Games"
+  ],
   "traits": [
    "Set collection",
    "Multi-track",
@@ -19360,6 +19842,11 @@
   "designer_ids": {
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "eggertspiele",
+   "Arclight Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "Set collection",
    "Multi-track",
@@ -19556,6 +20043,11 @@
   "designer_ids": {
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "eggertspiele",
+   "Arclight Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "Set collection",
    "Multi-track",
@@ -19756,6 +20248,9 @@
    "Jeroen Doumen": "270",
    "Joris Wiersinga": "407"
   },
+  "publishers": [
+   "Splotter Spellen"
+  ],
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -19952,6 +20447,11 @@
   "designer_ids": {
    "Andreas Steding": "1018"
   },
+  "publishers": [
+   "Game Brewer",
+   "CrowD Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "Set collection",
    "Area control",
@@ -20144,6 +20644,11 @@
   "designer_ids": {
    "Andreas Steding": "1018"
   },
+  "publishers": [
+   "Pegasus Spiele",
+   "Board Game Rookie",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -20335,6 +20840,11 @@
   "designer_ids": {
    "Johan Benvenuto": "95323"
   },
+  "publishers": [
+   "Libellud",
+   "ADC Blackfire Entertainment",
+   "CoolPlay"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -20531,6 +21041,11 @@
   "designer_ids": {
    "Uwe Rosenberg": "10"
   },
+  "publishers": [
+   "Lookout Games",
+   "999 Games",
+   "asmodee"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -20726,6 +21241,11 @@
    "Michael Kiesling": "42",
    "Andreas Schmidt": "30744"
   },
+  "publishers": [
+   "eggertspiele",
+   "Arclight Games",
+   "Ediciones MasQueOca"
+  ],
   "traits": [
    "Multi-track"
   ],
@@ -20918,6 +21438,11 @@
    "Vangelis Bagiartakis": "35005",
    "Varnavas Timotheou": "130887"
   },
+  "publishers": [
+   "Hegemonic Project Games",
+   "Board Game Rookie",
+   "CMON Global Limited"
+  ],
   "traits": [
    "Worker placement of any kind"
   ],
@@ -21133,6 +21658,11 @@
    "Jon Manker": "52913",
    "Dom Rougier": "118461"
   },
+  "publishers": [
+   "Ion Game Design",
+   "Sierra Madre Games",
+   "500 Nuances de Geek"
+  ],
   "traits": [
    "Auction of any kind",
    "Direct conflict",
@@ -21323,6 +21853,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "Ravensburger AG",
+   "Across the Board",
+   "Allplay"
+  ],
   "traits": [
    "Auction of any kind"
   ],
@@ -21509,6 +22044,10 @@
    "Jeroen Doumen": "270",
    "Joris Wiersinga": "407"
   },
+  "publishers": [
+   "Splotter Spellen",
+   "Ediciones MasQueOca"
+  ],
   "traits": [
    "Multi-track",
    "Tableau multipliers",
@@ -21704,6 +22243,11 @@
   "designer_ids": {
    "Amabel Holland": "50619"
   },
+  "publishers": [
+   "Capstone Games",
+   "Winsome Games",
+   "Maldito Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -21895,6 +22439,11 @@
    "Joanna Kijanka": "117118",
    "Ignacy Trzewiczek": "4735"
   },
+  "publishers": [
+   "Portal Games",
+   "Arclight Games",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "Direct conflict",
    "Worker placement of any kind"
@@ -22076,6 +22625,11 @@
   "designer_ids": {
    "Alexander Huemer": "80866"
   },
+  "publishers": [
+   "Capstone Games",
+   "Frosted Games",
+   "Game Harbor"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -22276,6 +22830,11 @@
    "Nigel Buckle": "5864",
    "Dávid Turczi": "76227"
   },
+  "publishers": [
+   "Osprey Games",
+   "Banana Games",
+   "Board Game Rookie"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -22463,6 +23022,11 @@
    "Nigel Buckle": "5864",
    "Dávid Turczi": "76227"
   },
+  "publishers": [
+   "Osprey Games",
+   "Banana Games",
+   "Board Game Rookie"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -22663,6 +23227,10 @@
    "Jeroen Doumen": "270",
    "Joris Wiersinga": "407"
   },
+  "publishers": [
+   "Splotter Spellen",
+   "One Moment Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -22850,6 +23418,10 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "KOSMOS",
+   "999 Games"
+  ],
   "traits": [
    "Tableau multipliers",
    "Co-operative"
@@ -23032,6 +23604,11 @@
   "designer_ids": {
    "Carl Chudyk": "6001"
   },
+  "publishers": [
+   "Asmadi Games",
+   "4GAMES",
+   "Asterion Press"
+  ],
   "traits": [
    "Multi-track",
    "Tableau multipliers",
@@ -23236,6 +23813,11 @@
   "designer_ids": {
    "Carl Chudyk": "6001"
   },
+  "publishers": [
+   "Asmadi Games",
+   "4GAMES",
+   "Grail Games"
+  ],
   "traits": [
    "Multi-track",
    "Tableau multipliers",
@@ -23416,6 +23998,11 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games",
+   "CrowD Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "Parallel engine",
    "Worker placement of any kind"
@@ -23607,6 +24194,10 @@
   "designer_ids": {
    "Amabel Holland": "50619"
   },
+  "publishers": [
+   "Capstone Games",
+   "Winsome Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -23797,6 +24388,11 @@
    "Bruno Cathala": "1727",
    "Evan Singh": "118799"
   },
+  "publishers": [
+   "IELLO",
+   "Buró",
+   "Devir"
+  ],
   "traits": [
    "Multi-track",
    "Area control"
@@ -23989,6 +24585,11 @@
   "designer_ids": {
    "Rüdiger Dorn": "381"
   },
+  "publishers": [
+   "Pegasus Spiele",
+   "Albi",
+   "Alderac Entertainment Group"
+  ],
   "traits": [
    "Set collection",
    "Network building"
@@ -24173,6 +24774,11 @@
   "designer_ids": {
    "Frédéric Guérard": "66017"
   },
+  "publishers": [
+   "La Boîte de Jeu",
+   "Blackrock Games",
+   "Engames"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -24354,6 +24960,11 @@
    "Ludovic Roudy": "51255",
    "Bruno Sautter": "51055"
   },
+  "publishers": [
+   "Repos Production",
+   "ADC Blackfire Entertainment",
+   "Arclight Games"
+  ],
   "traits": [
    "Co-operative"
   ],
@@ -24547,6 +25158,11 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games",
+   "Arclight Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "Parallel engine",
    "Worker placement of any kind"
@@ -24758,6 +25374,11 @@
    "Sebastian Bleasdale": "7448",
    "Richard Breese": "134"
   },
+  "publishers": [
+   "R&D Games",
+   "Arclight Games",
+   "Czacha Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -24936,6 +25557,11 @@
   "designer_ids": {
    "Head Quarter Simulation Game Club": "117987"
   },
+  "publishers": [
+   "IELLO",
+   "BoardBros",
+   "Devir"
+  ],
   "traits": [
    "Multi-track",
    "Parallel engine",
@@ -25132,6 +25758,11 @@
   "designer_ids": {
    "Peer Sylvester": "5554"
   },
+  "publishers": [
+   "Osprey Games",
+   "Doit Games",
+   "Fox in the Box"
+  ],
   "traits": [
    "Contested market",
    "Area control"
@@ -25320,6 +25951,11 @@
   "designer_ids": {
    "Richard Garfield": "14"
   },
+  "publishers": [
+   "IELLO",
+   "Boardgame Space",
+   "Brädspel.se"
+  ],
   "traits": [
    "Direct conflict",
    "Drafting of any kind"
@@ -25525,6 +26161,11 @@
   "designer_ids": {
    "Bruno Cathala": "1727"
   },
+  "publishers": [
+   "Blue Orange (EU)",
+   "Blue Orange Games",
+   "(Unknown)"
+  ],
   "traits": [
    "Area control",
    "Drafting of any kind"
@@ -25705,6 +26346,11 @@
   "designer_ids": {
    "Matthias Cramer": "34699"
   },
+  "publishers": [
+   "Arcane Wonders",
+   "Giochix.it",
+   "Ludomanos"
+  ],
   "traits": [
    "Set collection",
    "Multi-track",
@@ -25896,6 +26542,11 @@
    "Petr Čáslava": "126872",
    "Pavel Jarosch": "152611"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "Cranio Creations",
+   "Devir"
+  ],
   "traits": [
    "Contested market"
   ],
@@ -26088,6 +26739,11 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games",
+   "Angry Lion Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -26272,6 +26928,11 @@
    "Shun Taguchi": "75617",
    "Aya Taguchi": "75618"
   },
+  "publishers": [
+   "Studio GG",
+   "Arclight Games",
+   "BoardBros"
+  ],
   "traits": [
    "Set collection",
    "Worker placement of any kind"
@@ -26459,6 +27120,11 @@
   "designer_ids": {
    "Martin Wallace": "6"
   },
+  "publishers": [
+   "Osprey Games",
+   "Arclight Games",
+   "FoxGames"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -26655,6 +27321,11 @@
    "Antoine Bauza": "9714",
    "Bruno Cathala": "1727"
   },
+  "publishers": [
+   "Repos Production",
+   "ADC Blackfire Entertainment",
+   "CoolPlay"
+  ],
   "traits": [
    "Set collection",
    "Multi-track",
@@ -26835,6 +27506,11 @@
    "Virginio Gigli": "6817",
    "Simone Luciani": "35418"
   },
+  "publishers": [
+   "Cranio Creations",
+   "Delta Vision Publishing",
+   "Korea Boardgames"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -27018,6 +27694,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "KOSMOS",
+   "999 Games",
+   "Albi"
+  ],
   "traits": [
    "Set collection"
   ],
@@ -27209,6 +27890,11 @@
    "Elwen": "127823",
    "Mín": "127822"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "Brädspel.se",
+   "Cranio Creations"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -27400,6 +28086,11 @@
    "Justin Kemppainen": "72460",
    "Alexandar Ortloff-Tang": "85379"
   },
+  "publishers": [
+   "Z-Man Games",
+   "ADC Blackfire Entertainment",
+   "asmodee"
+  ],
   "traits": [
    "Direct conflict"
   ],
@@ -27595,6 +28286,11 @@
   "designer_ids": {
    "Kasper Lapp": "95143"
   },
+  "publishers": [
+   "Sit Down!",
+   "2Tomatoes Games",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "Parallel engine",
    "Co-operative"
@@ -27801,6 +28497,11 @@
    "Trevor Benjamin": "90410",
    "Brett J. Gilbert": "56058"
   },
+  "publishers": [
+   "Lookout Games",
+   "999 Games",
+   "Compaya.hu: Gamer Café Kft."
+  ],
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -27985,6 +28686,11 @@
   "designer_ids": {
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "Game's Up",
+   "BoardM Factory",
+   "Capstone Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -28178,6 +28884,11 @@
    "Ekaterina Gorn": "94364",
    "Igor Sklyuev": "94365"
   },
+  "publishers": [
+   "Cryptozoic Entertainment",
+   "Grimspire",
+   "Hobby World"
+  ],
   "traits": [
    "Direct conflict"
   ],
@@ -28355,6 +29066,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "AMIGO",
+   "ABACUSSPIELE",
+   "APE Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -28543,6 +29259,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "Schmidt Spiele",
+   "999 Games",
+   "Devir"
+  ],
   "traits": [
    "Tableau multipliers",
    "Area control",
@@ -28729,6 +29450,11 @@
    "Jay Cormier": "20990",
    "Sen-Foong Lim": "20991"
   },
+  "publishers": [
+   "Off the Page Games",
+   "Corax Games",
+   "CrowD Games"
+  ],
   "traits": [
    "Hidden information",
    "Co-operative"
@@ -28922,6 +29648,11 @@
   "designer_ids": {
    "Stan Kordonskiy": "98387"
   },
+  "publishers": [
+   "Board&Dice",
+   "Board Bound",
+   "CMON Global Limited"
+  ],
   "traits": [
    "Parallel engine",
    "Area control",
@@ -29100,6 +29831,11 @@
   "designer_ids": {
    "Carl Chudyk": "6001"
   },
+  "publishers": [
+   "4GAMES",
+   "Asmadi Games",
+   "Ludofy Creative"
+  ],
   "traits": [
    "Set collection",
    "Co-operative"
@@ -29295,6 +30031,11 @@
    "Oleksandr Nevskiy": "49695",
    "Oleg Sidorenko": "51434"
   },
+  "publishers": [
+   "Libellud",
+   "ADC Blackfire Entertainment",
+   "Enigma (Bergsala Enigma)"
+  ],
   "traits": [
    "Co-operative"
   ],
@@ -29493,6 +30234,11 @@
   "designer_ids": {
    "Mac Gerdts": "6045"
   },
+  "publishers": [
+   "PD-Verlag",
+   "Cranio Creations",
+   "Ediciones MasQueOca"
+  ],
   "traits": [
    "Multi-track",
    "Contested market"
@@ -29686,6 +30432,10 @@
    "Simone Luciani": "35418",
    "Nestore Mangone": "52377"
   },
+  "publishers": [
+   "Cranio Creations",
+   "Ediciones MasQueOca"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -29858,6 +30608,11 @@
   "designer_ids": {
    "Serge Laget": "295"
   },
+  "publishers": [
+   "GRRRE Games",
+   "Blackrock Games",
+   "Evrikus"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -30056,6 +30811,11 @@
    "Simone Luciani": "35418",
    "Dávid Turczi": "76227"
   },
+  "publishers": [
+   "Board&Dice",
+   "Board Bound",
+   "CMON Global Limited"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -30238,6 +30998,11 @@
   "designer_ids": {
    "Uwe Rosenberg": "10"
   },
+  "publishers": [
+   "Lookout Games",
+   "CrowD Games",
+   "Hobby Japan"
+  ],
   "traits": [
    "Worker placement of any kind",
    "Drafting of any kind"
@@ -30435,6 +31200,11 @@
   "designer_ids": {
    "Cole Wehrle": "35585"
   },
+  "publishers": [
+   "Leder Games",
+   "2Tomatoes Games",
+   "CMON Global Limited"
+  ],
   "traits": [
    "Parallel engine",
    "Area control",
@@ -30648,6 +31418,11 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games",
+   "Angry Lion Games",
+   "Arclight Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -30845,6 +31620,11 @@
    "Ted Alspach": "6046",
    "Akihisa Okui": "69462"
   },
+  "publishers": [
+   "Bézier Games",
+   "GaGa Games",
+   "Games7Days"
+  ],
   "traits": [
    "Hidden information"
   ],
@@ -31056,6 +31836,11 @@
    "Ted Alspach": "6046",
    "Akihisa Okui": "69462"
   },
+  "publishers": [
+   "Bézier Games",
+   "Games7Days",
+   "MYBG Co., Ltd."
+  ],
   "traits": [
    "Hidden information"
   ],
@@ -31263,6 +32048,11 @@
   "designer_ids": {
    "Uwe Rosenberg": "10"
   },
+  "publishers": [
+   "Lookout Games",
+   "999 Games",
+   "Filosofia Éditions"
+  ],
   "traits": [
    "Contested market",
    "Worker placement of any kind",
@@ -31463,6 +32253,11 @@
   "designer_ids": {
    "Reiner Stockhausen": "158"
   },
+  "publishers": [
+   "dlp games",
+   "Arclight Games",
+   "Arrakis Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -31663,6 +32458,11 @@
    "S J Macdonald": "103821",
    "Shem Phillips": "12547"
   },
+  "publishers": [
+   "Garphill Games",
+   "Renegade Game Studios",
+   "Banana Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -31861,6 +32661,9 @@
    "Prospero Hall": "102313",
    "Peter Lee": "15913"
   },
+  "publishers": [
+   "Funko Games"
+  ],
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -32082,6 +32885,11 @@
   "designer_ids": {
    "Matt Leacock": "378"
   },
+  "publishers": [
+   "Z-Man Games",
+   "(Unknown)",
+   "ADC Blackfire Entertainment"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -32276,6 +33084,11 @@
   "designer_ids": {
    "Uwe Rosenberg": "10"
   },
+  "publishers": [
+   "Lookout Games",
+   "999 Games",
+   "asmodee"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -32459,6 +33272,11 @@
   "designer_ids": {
    "Fran Diaz": "30466"
   },
+  "publishers": [
+   "Devir",
+   "Fox in the Box",
+   "GaGa Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -32660,6 +33478,11 @@
   "designer_ids": {
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "Pegasus Spiele",
+   "999 Games",
+   "Bard Centrum Gier"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -32866,6 +33689,11 @@
   "designer_ids": {
    "Friedemann Friese": "141"
   },
+  "publishers": [
+   "2F-Spiele",
+   "2Tomatoes Games",
+   "999 Games"
+  ],
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -33068,6 +33896,11 @@
   "designer_ids": {
    "Vladimír Suchý": "9307"
   },
+  "publishers": [
+   "Delicious Games",
+   "Arrakis Games",
+   "Atalia"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -33256,6 +34089,11 @@
   "designer_ids": {
    "Andreas Seyfarth": "117"
   },
+  "publishers": [
+   "alea",
+   "Ravensburger AG",
+   "Albi"
+  ],
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -33446,6 +34284,11 @@
   "designer_ids": {
    "Vladimír Suchý": "9307"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "asmodee",
+   "Cranio Creations"
+  ],
   "traits": [
    "Worker placement of any kind",
    "Drafting of any kind"
@@ -33645,6 +34488,11 @@
   "designer_ids": {
    "Wolfgang Warsch": "80162"
   },
+  "publishers": [
+   "CMYK",
+   "Schmidt Spiele",
+   "999 Games"
+  ],
   "traits": [
    "Multi-track",
    "Deck or bag building"
@@ -33840,6 +34688,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "Ravensburger AG",
+   "999 Games",
+   "Arclight Games"
+  ],
   "traits": [
    "Deck or bag building",
    "Drafting of any kind"
@@ -34026,6 +34879,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "alea",
+   "Ravensburger AG",
+   "25th Century Games"
+  ],
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -34228,6 +35086,11 @@
   "designer_ids": {
    "Thomas Lehmann": "150"
   },
+  "publishers": [
+   "Rio Grande Games",
+   "ABACUSSPIELE",
+   "Albi"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -34416,6 +35279,11 @@
   "designer_ids": {
    "Shem Phillips": "12547"
   },
+  "publishers": [
+   "Garphill Games",
+   "CMON Global Limited",
+   "Fever Games"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -34613,6 +35481,11 @@
    "Inka Brand": "6940",
    "Markus Brand": "6941"
   },
+  "publishers": [
+   "HUCH!",
+   "999 Games",
+   "Devir"
+  ],
   "traits": [
    "Multi-track",
    "Worker placement of any kind",
@@ -34808,6 +35681,11 @@
    "Inka Brand": "6940",
    "Markus Brand": "6941"
   },
+  "publishers": [
+   "HUCH!",
+   "Dice Realm",
+   "nostalgia (III)"
+  ],
   "traits": [],
   "videos": [
    {
@@ -34990,6 +35868,11 @@
    "Isra C.": "77002",
    "Shei S.": "77173"
   },
+  "publishers": [
+   "Devir",
+   "999 Games",
+   "Banana Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -35187,6 +36070,11 @@
   "designer_ids": {
    "Don Eskridge": "11906"
   },
+  "publishers": [
+   "Indie Boards & Cards",
+   "Board Game VN",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "Hidden information",
    "Co-operative"
@@ -35414,6 +36302,11 @@
    "Eilif Svensson": "9637",
    "Anna Wermlund": "109215"
   },
+  "publishers": [
+   "Aporta Games",
+   "Across the Board",
+   "BGA Plus"
+  ],
   "traits": [
    "Multi-track",
    "Deck or bag building",
@@ -35588,6 +36481,11 @@
   "designer_ids": {
    "Alex Randolph": "24"
   },
+  "publishers": [
+   "Hans im Glück",
+   "ABACUSSPIELE",
+   "Devir"
+  ],
   "traits": [],
   "videos": [
    {
@@ -35916,6 +36814,11 @@
    "Joanna Kijanka": "117118",
    "Ignacy Trzewiczek": "4735"
   },
+  "publishers": [
+   "Portal Games",
+   "Albi",
+   "Arclight Games"
+  ],
   "traits": [
    "Parallel engine",
    "Worker placement of any kind",
@@ -36142,6 +37045,11 @@
   "designer_ids": {
    "Cole Wehrle": "35585"
   },
+  "publishers": [
+   "Leder Games",
+   "2Tomatoes Games",
+   "Arclight Games"
+  ],
   "traits": [
    "Area control",
    "Direct conflict"
@@ -36330,6 +37238,11 @@
   "designer_ids": {
    "David Bernal": "119825"
   },
+  "publishers": [
+   "Devir",
+   "CMON Global Limited",
+   "Hobby World"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -36513,6 +37426,11 @@
    "Kristian Amundsen Østby": "4063",
    "Eilif Svensson": "9637"
   },
+  "publishers": [
+   "Aporta Games",
+   "Arrakis Games",
+   "Dal Tenda"
+  ],
   "traits": [
    "Set collection",
    "Drafting of any kind",
@@ -36731,6 +37649,11 @@
   "designer_ids": {
    "Jamey Stegmaier": "62640"
   },
+  "publishers": [
+   "Stonemaier Games",
+   "Albi",
+   "Angry Lion Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -36920,6 +37843,11 @@
   "designer_ids": {
    "Matt Calkins": "7535"
   },
+  "publishers": [
+   "GMT Games",
+   "Devir",
+   "GaGa Games"
+  ],
   "traits": [
    "Auction of any kind",
    "Hidden information"
@@ -37097,6 +38025,11 @@
    "Fabio Lopiano": "100575",
    "Nestore Mangone": "52377"
   },
+  "publishers": [
+   "Sorry We Are French",
+   "4GAMES",
+   "Arrakis Games"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -37286,6 +38219,11 @@
   "designer_ids": {
    "TauCeti Deichmann": "25517"
   },
+  "publishers": [
+   "WizKids (I)",
+   "Banana Games",
+   "Frosted Games"
+  ],
   "traits": [
    "Multi-track",
    "Parallel engine",
@@ -37511,6 +38449,11 @@
    "Viktor Kobilke": "8108",
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "Deep Print Games",
+   "BoardM Factory",
+   "Galápagos Jogos"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -37687,6 +38630,11 @@
    "Sébastien Pauchon": "6736",
    "Adam Wyse": "97437"
   },
+  "publishers": [
+   "Roxley",
+   "Arclight Games",
+   "CoolPlay"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -37885,6 +38833,11 @@
   "designer_ids": {
    "Philippe Keyaerts": "49"
   },
+  "publishers": [
+   "Days of Wonder",
+   "asmodee",
+   "Asterion Press"
+  ],
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -38052,6 +39005,9 @@
   "designer_ids": {
    "Michael Schacht": "86"
   },
+  "publishers": [
+   "Z-Man Games"
+  ],
   "traits": [
    "Contested market",
    "Auction of any kind"
@@ -38230,6 +39186,11 @@
   "designer_ids": {
    "Cédric Lefebvre": "35741"
   },
+  "publishers": [
+   "Ludonaute",
+   "3 Emme Games",
+   "asmodee"
+  ],
   "traits": [
    "Worker placement of any kind",
    "Network building"
@@ -38409,6 +39370,11 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games",
+   "CrowD Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "Area control",
    "Worker placement of any kind",
@@ -38601,6 +39567,11 @@
   "designer_ids": {
    "Marc André": "50969"
   },
+  "publishers": [
+   "Space Cowboys",
+   "Asterion Press",
+   "Belleville (Бельвіль)"
+  ],
   "traits": [
    "Set collection",
    "Drafting of any kind"
@@ -38784,6 +39755,11 @@
    "Robert Dougherty": "4113",
    "Darwin Kastle": "4059"
   },
+  "publishers": [
+   "Wise Wizard Games",
+   "Devir",
+   "Hobby World"
+  ],
   "traits": [
    "Parallel engine",
    "Direct conflict",
@@ -38968,6 +39944,11 @@
   "designer_ids": {
    "Corey Konieczka": "6651"
   },
+  "publishers": [
+   "Fantasy Flight Games",
+   "ADC Blackfire Entertainment",
+   "Asterion Press"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -39158,6 +40139,11 @@
   "designer_ids": {
    "Martin Wallace": "6"
   },
+  "publishers": [
+   "Mayfair Games",
+   "Devir",
+   "Edge Entertainment"
+  ],
   "traits": [
    "Auction of any kind",
    "Network building"
@@ -39363,6 +40349,11 @@
   "designer_ids": {
    "Colby Dauch": "12953"
   },
+  "publishers": [
+   "Plaid Hat Games",
+   "BoardM Factory",
+   "Cube Factory of Ideas"
+  ],
   "traits": [
    "Direct conflict",
    "Deck or bag building"
@@ -39537,6 +40528,11 @@
    "David Spada": "93322",
    "Daniele Tascini": "59986"
   },
+  "publishers": [
+   "Board&Dice",
+   "CMON Global Limited",
+   "DiceTree Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -39718,6 +40714,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "alea",
+   "Ravensburger AG",
+   "ABACUSSPIELE"
+  ],
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -39906,6 +40907,11 @@
   "designer_ids": {
    "Wolfgang Kramer": "7"
   },
+  "publishers": [
+   "AMIGO",
+   "999 Games",
+   "Adamigo"
+  ],
   "traits": [
    "Co-operative"
   ],
@@ -40138,6 +41144,11 @@
   "designer_ids": {
    "Antoine Bauza": "9714"
   },
+  "publishers": [
+   "Bombyx",
+   "Matagot",
+   "asmodee"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -40333,6 +41344,11 @@
   "designer_ids": {
    "Andreas Steiger": "57305"
   },
+  "publishers": [
+   "KOSMOS",
+   "999 Games",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -40511,6 +41527,11 @@
   "designer_ids": {
    "Dávid Turczi": "76227"
   },
+  "publishers": [
+   "Board&Dice",
+   "CMON Global Limited",
+   "CrowD Games"
+  ],
   "traits": [
    "Set collection",
    "Multi-track",
@@ -40718,6 +41739,11 @@
    "Daniele Tascini": "59986",
    "Dávid Turczi": "76227"
   },
+  "publishers": [
+   "Board&Dice",
+   "BoardM Factory",
+   "CMON Global Limited"
+  ],
   "traits": [
    "Parallel engine",
    "Tableau multipliers",
@@ -40925,6 +41951,11 @@
   "designer_ids": {
    "Daniele Tascini": "59986"
   },
+  "publishers": [
+   "NSKN Games",
+   "Board&Dice",
+   "Bucaneiros Jogos"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -41128,6 +42159,11 @@
    "Jens Drögemüller": "4300",
    "Helge Ostertag": "4407"
   },
+  "publishers": [
+   "Feuerland Spiele",
+   "Bard Centrum Gier",
+   "Capstone Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -41345,6 +42381,11 @@
   "designer_ids": {
    "Jacob Fryxelius": "52075"
   },
+  "publishers": [
+   "FryxGames",
+   "Arclight Games",
+   "Brädspel.se"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -41530,6 +42571,11 @@
   "designer_ids": {
    "Vlaada Chvátil": "789"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "Cranio Creations",
+   "Devir"
+  ],
   "traits": [
    "Parallel engine",
    "Tableau multipliers",
@@ -41726,6 +42772,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "KOSMOS",
+   "Allplay",
+   "Devir"
+  ],
   "traits": [
    "End-game bonuses",
    "Area control",
@@ -41924,6 +42975,11 @@
   "designer_ids": {
    "Alan R. Moon": "9"
   },
+  "publishers": [
+   "Days of Wonder",
+   "ADC Blackfire Entertainment",
+   "Asterion Press"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -42132,6 +43188,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "Hans im Glück",
+   "25th Century Games",
+   "999 Games"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -42330,6 +43391,11 @@
    "Michael Kiesling": "42",
    "Wolfgang Kramer": "7"
   },
+  "publishers": [
+   "Ravensburger AG",
+   "Super Meeple",
+   "ABACUSSPIELE"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -42521,6 +43587,11 @@
    "Simone Luciani": "35418",
    "Daniele Tascini": "59986"
   },
+  "publishers": [
+   "Board&Dice",
+   "Board Bound",
+   "CMON Global Limited"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -42713,6 +43784,11 @@
   "designer_ids": {
    "Stefan Feld": "4958"
   },
+  "publishers": [
+   "Ammonit Spiele",
+   "Asterion Press",
+   "Broadway Toys LTD"
+  ],
   "traits": [
    "Set collection",
    "Drafting of any kind"
@@ -42911,6 +43987,11 @@
    "Richard Ámann": "76971",
    "Viktor Péter": "76578"
   },
+  "publishers": [
+   "Mindclash Games",
+   "Corax Games",
+   "Super Meeple"
+  ],
   "traits": [
    "Worker placement of any kind"
   ],
@@ -43098,6 +44179,11 @@
    "Xavier Georges": "11312",
    "Alain Orban": "7369"
   },
+  "publishers": [
+   "Pearl Games",
+   "asmodee",
+   "Galápagos Jogos"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -43317,6 +44403,11 @@
    "Corey Konieczka": "6651",
    "Christian T. Petersen": "21"
   },
+  "publishers": [
+   "Fantasy Flight Games",
+   "ADC Blackfire Entertainment",
+   "Arclight Games"
+  ],
   "traits": [
    "Multi-track",
    "Contested market",
@@ -43518,6 +44609,11 @@
    "Simone Luciani": "35418",
    "Daniele Tascini": "59986"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "Cranio Creations",
+   "Devir"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -43693,6 +44789,11 @@
    "Helmut Ohley": "2748",
    "Leonhard \"Lonny\" Orgler": "1828"
   },
+  "publishers": [
+   "Hans im Glück",
+   "BoardM Factory",
+   "Devir"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -43881,6 +44982,11 @@
    "Trevor Benjamin": "90410",
    "David Thompson (I)": "67071"
   },
+  "publishers": [
+   "Osprey Games",
+   "Doit Games",
+   "GaGa Games"
+  ],
   "traits": [
    "Deck or bag building",
    "Drafting of any kind"
@@ -44049,6 +45155,11 @@
   "designer_ids": {
    "Vladimír Suchý": "9307"
   },
+  "publishers": [
+   "Delicious Games",
+   "Arrakis Games",
+   "Atalia"
+  ],
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -44240,6 +45351,11 @@
    "Rob Daviau": "442",
    "Justin D. Jacobson": "4083"
   },
+  "publishers": [
+   "Mondo Games",
+   "Restoration Games",
+   "Albi"
+  ],
   "traits": [
    "Direct conflict",
    "Co-operative"
@@ -44438,6 +45554,11 @@
    "Chris Leder": "28008",
    "Kevin Rodgers": "121697"
   },
+  "publishers": [
+   "Mondo Games",
+   "Restoration Games",
+   "Albi"
+  ],
   "traits": [
    "Direct conflict",
    "Co-operative"
@@ -44622,6 +45743,11 @@
    "Rob Daviau": "442",
    "Justin D. Jacobson": "4083"
   },
+  "publishers": [
+   "Mondo Games",
+   "Restoration Games",
+   "Albi"
+  ],
   "traits": [],
   "videos": [],
   "image": "https://cf.geekdo-images.com/5Fr8QPIazZRgEMnN2bwJ0g__original/img/si2jJWDVMO-EGy-r0RR7aVjLtO8=/0x0/filters:format(jpeg)/pic4621589.jpg",
@@ -44765,6 +45891,11 @@
   "designer_ids": {
    "Ramy Badie": "104097"
   },
+  "publishers": [
+   "Breaking Games",
+   "(Self-Published)",
+   "ADC Blackfire Entertainment"
+  ],
   "traits": [
    "Set collection",
    "Direct conflict"
@@ -44976,6 +46107,11 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games",
+   "Choo Choo Games",
+   "Korea Boardgames"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -45172,6 +46308,11 @@
    "S J Macdonald": "103821",
    "Shem Phillips": "12547"
   },
+  "publishers": [
+   "Garphill Games",
+   "Banana Games",
+   "CMON Global Limited"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -45373,6 +46514,11 @@
    "Nigel Buckle": "5864",
    "Dávid Turczi": "76227"
   },
+  "publishers": [
+   "Mindclash Games",
+   "Albi",
+   "CrowD Games"
+  ],
   "traits": [
    "Parallel engine",
    "Co-operative"
@@ -45572,6 +46718,11 @@
   "designer_ids": {
    "John Bohrer": "366"
   },
+  "publishers": [
+   "Queen Games",
+   "Winsome Games",
+   "M-Ágnes"
+  ],
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -45785,6 +46936,11 @@
    "Marco Maggi": "934",
    "Francesco Nepitello": "935"
   },
+  "publishers": [
+   "Ares Games",
+   "Angry Lion Games",
+   "Devir"
+  ],
   "traits": [
    "Area control",
    "Co-operative"
@@ -45989,6 +47145,11 @@
    "S J Macdonald": "103821",
    "Shem Phillips": "12547"
   },
+  "publishers": [
+   "Garphill Games",
+   "CMON Global Limited",
+   "Fever Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -46188,6 +47349,11 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games",
+   "CrowD Games",
+   "Delta Vision Publishing"
+  ],
   "traits": [
    "Set collection",
    "Worker placement of any kind"
@@ -46381,6 +47547,11 @@
    "Isra C.": "77002",
    "Shei S.": "77173"
   },
+  "publishers": [
+   "Devir",
+   "999 Games",
+   "Banana Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -46586,6 +47757,11 @@
   "designer_ids": {
    "Elizabeth Hargrave": "111338"
   },
+  "publishers": [
+   "Stonemaier Games",
+   "999 Games",
+   "Angry Lion Games"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -46779,6 +47955,11 @@
    "Martino Chiacchiera": "76530",
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "HUCH!",
+   "999 Games",
+   "Atalia"
+  ],
   "traits": [
    "End-game bonuses",
    "Drafting of any kind",
@@ -46982,6 +48163,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "Grail Games",
+   "17wanzy (Yihu BG)",
+   "Lavka Games"
+  ],
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -47180,6 +48366,11 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "Bitewing Games",
+   "Niza Gams",
+   "Old Dawg"
+  ],
   "traits": [
    "End-game bonuses",
    "Direct conflict",
@@ -47380,6 +48571,11 @@
    "Antoine Bauza": "9714",
    "Bruno Cathala": "1727"
   },
+  "publishers": [
+   "Repos Production",
+   "ADC Blackfire Entertainment",
+   "Asterion Press"
+  ],
   "traits": [
    "Set collection",
    "Drafting of any kind"
@@ -47475,6 +48671,11 @@
   "designer_ids": {
    "Klaus Teuber": "11"
   },
+  "publishers": [
+   "KOSMOS",
+   "999 Games",
+   "Albi"
+  ],
   "traits": [
    "Network building"
   ],
@@ -47582,6 +48783,11 @@
   "designer_ids": {
    "Klaus Teuber": "11"
   },
+  "publishers": [
+   "KOSMOS",
+   "999 Games",
+   "Albi"
+  ],
   "traits": [
    "Network building"
   ],
@@ -47685,6 +48891,11 @@
   "designer_ids": {
    "Klaus Teuber": "11"
   },
+  "publishers": [
+   "Catan GmbH",
+   "Catan Studio",
+   "KOSMOS"
+  ],
   "traits": [
    "Network building"
   ],
@@ -47793,6 +49004,11 @@
    "Jeroen Doumen": "270",
    "Joris Wiersinga": "407"
   },
+  "publishers": [
+   "Splotter Spellen",
+   "Ediciones MasQueOca",
+   "Galápagos Jogos"
+  ],
   "traits": [
    "Deck or bag building",
    "Drafting of any kind",
@@ -47907,6 +49123,11 @@
   "designer_ids": {
    "Alexander Pfister": "11767"
   },
+  "publishers": [
+   "eggertspiele",
+   "Arclight Games",
+   "Ediciones MasQueOca"
+  ],
   "traits": [
    "Deck or bag building"
   ],
@@ -48009,6 +49230,9 @@
   "designer_ids": {
    "Carl Chudyk": "6001"
   },
+  "publishers": [
+   "Asmadi Games"
+  ],
   "traits": [
    "Tableau multipliers"
   ],
@@ -48099,6 +49323,9 @@
   "designer_ids": {
    "Carl Chudyk": "6001"
   },
+  "publishers": [
+   "Asmadi Games"
+  ],
   "traits": [
    "Set collection",
    "Tableau multipliers"
@@ -48187,6 +49414,11 @@
    "Carl Chudyk": "6001",
    "Chris Cieslik": "7011"
   },
+  "publishers": [
+   "Asmadi Games",
+   "IELLO",
+   "Asterion Press"
+  ],
   "traits": [
    "Set collection",
    "Tableau multipliers"
@@ -48283,6 +49515,9 @@
   "designer_ids": {
    "Carl Chudyk": "6001"
   },
+  "publishers": [
+   "Asmadi Games"
+  ],
   "traits": [
    "Set collection",
    "Tableau multipliers"
@@ -48394,6 +49629,11 @@
   "designer_ids": {
    "Frédéric Guérard": "66017"
   },
+  "publishers": [
+   "La Boîte de Jeu",
+   "Engames",
+   "Evrikus"
+  ],
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -48514,6 +49754,11 @@
    "Elwen": "127823",
    "Mín": "127822"
   },
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "Cranio Creations",
+   "Devir"
+  ],
   "traits": [
    "Parallel engine",
    "Worker placement of any kind",
@@ -48622,6 +49867,9 @@
   "designer_ids": {
    "Kevin Nesbitt": "11028"
   },
+  "publishers": [
+   "Allplay"
+  ],
   "traits": [
    "Set collection",
    "Contested market",
@@ -48726,6 +49974,11 @@
   "designer_ids": {
    "Reiner Stockhausen": "158"
   },
+  "publishers": [
+   "dlp games",
+   "Arrakis Games",
+   "Baldar"
+  ],
   "traits": [
    "Worker placement of any kind",
    "Deck or bag building",
@@ -48822,6 +50075,10 @@
   "designer_ids": {
    "Reiner Knizia": "2"
   },
+  "publishers": [
+   "25th Century Games",
+   "DiceTree Games"
+  ],
   "traits": [],
   "videos": [
    {
@@ -48915,6 +50172,11 @@
   "designer_ids": {
    "Cole Wehrle": "35585"
   },
+  "publishers": [
+   "Leder Games",
+   "2Tomatoes Games",
+   "CMON Global Limited"
+  ],
   "traits": [],
   "videos": [
    {
@@ -49026,6 +50288,11 @@
    "Patrick Leder": "4773",
    "Cole Wehrle": "35585"
   },
+  "publishers": [
+   "Leder Games",
+   "2Tomatoes Games",
+   "Arclight Games"
+  ],
   "traits": [
    "Area control",
    "Direct conflict"
@@ -49144,6 +50411,11 @@
    "Kai Starck": "99547",
    "Jamey Stegmaier": "62640"
   },
+  "publishers": [
+   "Stonemaier Games",
+   "Albi",
+   "Angry Lion Games"
+  ],
   "traits": [
    "Area control"
   ],
@@ -49254,6 +50526,9 @@
   "designer_ids": {
    "Morgan Dontanville": "6422"
   },
+  "publishers": [
+   "Mayfair Games"
+  ],
   "traits": [
    "Auction of any kind",
    "Network building"
@@ -49367,6 +50642,9 @@
   "designer_ids": {
    "Morgan Dontanville": "6422"
   },
+  "publishers": [
+   "Mayfair Games"
+  ],
   "traits": [
    "Auction of any kind",
    "Network building"
@@ -49476,6 +50754,11 @@
    "Jacob Fryxelius": "52075",
    "Jonathan Fryxelius": "52077"
   },
+  "publishers": [
+   "FryxGames",
+   "Stronghold Games",
+   "Arclight Games"
+  ],
   "traits": [
    "Set collection",
    "Contested market",
@@ -49581,6 +50864,9 @@
   "designer_ids": {
    "Vital Lacerda": "12396"
   },
+  "publishers": [
+   "Eagle-Gryphon Games"
+  ],
   "traits": [
    "Parallel engine",
    "Worker placement of any kind"
@@ -49676,6 +50962,11 @@
    "Marco Maggi": "934",
    "Francesco Nepitello": "935"
   },
+  "publishers": [
+   "Ares Games",
+   "Devir",
+   "GaGa Games"
+  ],
   "traits": [
    "Area control"
   ],

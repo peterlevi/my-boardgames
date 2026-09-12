@@ -117,6 +117,7 @@ def compact(games, tag_idx, inline=True, private=None):
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
             "pl": g["plays"], "ds": g["designers"],
             "dsid": g.get("designer_ids") or {},
+            "pb": g.get("publishers") or [],
             "lp": g.get("last_played"),
             "ed": g.get("edited"),
             "rt": g["ratings"], "ow": g["owners"],
@@ -405,6 +406,7 @@ def haystack(g, tags):
     ai = g.get("ai") or {}
     bits = [g["n"], str(g["y"] or "")]
     bits += g.get("ds") or []
+    bits += g.get("pb") or []
     bits += [tags[i]["n"] for i in g.get("tg") or [] if i < len(tags)]
     bits += [WIN_LABEL.get(w, "") for w in ai.get("wcs") or []]
     bits += [SALAD_LABEL.get(ai.get("br"), ""), ai.get("ixl") or g.get("ix") or ""]

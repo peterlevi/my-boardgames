@@ -656,6 +656,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <dt>BGG · Mine</dt><dd>BGG's average rating, and your own rating from
         your collection. Both are out of 10.</dd>
       <dt>Plays</dt><dd>Plays you have logged on BGG.</dd>
+      <dt>Search</dt><dd>Looks at everything on the row and in its expanded
+        panel: the name, the year, the designers and publisher, every
+        property, how the game is won and how much of a salad it is. What
+        matched is highlighted when you open the row.</dd>
       <dt>Game</dt><dd>The columns button above the table, at the right,
         decides what rides along with the name: nothing, the year, the
         designer, or both. Whatever the name carries loses its own column.
@@ -1110,7 +1114,7 @@ var HAY = [];
 function hay(i, g) {
   if (HAY[i] !== undefined) return HAY[i];
   var ai = g.ai || {};
-  var bits = [g.n, g.y || ''].concat(g.ds || []);
+  var bits = [g.n, g.y || ''].concat(g.ds || [], g.pb || []);
   (g.tg || []).forEach(function (t) { if (TAGS[t]) bits.push(TAGS[t].n); });
   (ai.wcs || []).forEach(function (w) { bits.push(WIN_LABEL[w] || w); });
   bits.push(SALAD_LABEL[ai.br] || '');
@@ -1547,6 +1551,8 @@ function buildDetail(g) {
     ['Owners', g.ow ? g.ow.toLocaleString() : '—'],
     ['Your plays', g.pl],
     ['Designers', designerPills(g)],
+    ['Publisher', (g.pb || []).length
+      ? g.pb.map(function (p) { return hl(p); }).join(', ') : '—'],
     ['Interaction', hl((g.ai && g.ai.ixl) || g.ix)],
     ['Point salad', hl((g.ai && SALAD_LABEL[g.ai.br]) || '—')],
     ['Winning score', (g.ai && g.ai.sc

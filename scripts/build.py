@@ -79,6 +79,10 @@ def parse_item(it, is_expansion=False):
     categories = links(it, "boardgamecategory")
     families = links(it, "boardgamefamily")
     designers = links(it, "boardgamedesigner")
+    # BGG lists every edition's publisher — twenty of them for a popular game,
+    # mostly foreign-language reprints — with the original first. The first
+    # few are the ones anybody means.
+    publishers = links(it, "boardgamepublisher")[:3]
     # Their BGG ids come free with the same links, and are what a designer's
     # own BGG page is addressed by.
     designer_ids = {l.get("value"): l.get("id") for l in it.findall("link")
@@ -118,6 +122,7 @@ def parse_item(it, is_expansion=False):
         maxplaytime=num(attr(it, "maxplaytime"), int),
         mechanics=mechanics, categories=categories, families=families,
         designers=designers, designer_ids=designer_ids,
+        publishers=publishers,
         traits=traits.of(mechanics), videos=videos[:3],
         image=(it.findtext("image") or "").strip() or None,
         interaction=level, interaction_shared=shared,
@@ -275,6 +280,7 @@ def games_from_csv(rows):
             minplaytime=num(r.get("minplaytime"), int) or 0,
             maxplaytime=num(r.get("maxplaytime"), int) or 0,
             mechanics=[], categories=[], families=[], designers=[],
+            publishers=[],
             designer_ids={}, traits=[], videos=[], image=None, thumbnail=None,
             description=None,
             interaction=None, interaction_shared=None,

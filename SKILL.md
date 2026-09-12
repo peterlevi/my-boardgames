@@ -61,7 +61,7 @@ For anything the flags don't cover, read `data/games.json` directly — one
 object per game with `name`, `rank`, `weight`, `average`, `year`, `plays`,
 `my_rating`, `last_played`, `minplayers`/`maxplayers`,
 `minplaytime`/`maxplaytime`, `mechanics`, `categories`, `families`,
-`designers`, `types`, `interaction`, `is_expansion`, `expands`, the raw `poll`
+`designers`, `publishers`, `types`, `interaction`, `is_expansion`, `expands`, the raw `poll`
 (`{"4": {"Best": n, "Recommended": n, "Not Recommended": n}}`), and `ai` — the
 opinion entry, whose `scoring` block holds the facts the labels are computed
 from.

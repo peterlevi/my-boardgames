@@ -235,15 +235,23 @@ td.designer .more { color:var(--muted); }
   letter-spacing:-.01em; font-variant-numeric:tabular-nums; white-space:nowrap; }
 #desc { font-size:.85rem; color:var(--muted); }
 #outcount { font-size:.85rem; color:var(--accent); }
-.titlebar #reset { font-weight:700; font-size:.86rem; padding:0;
-  text-decoration:none; align-self:baseline; }
-/* The counts and the link out to BGG belong together, at the weight and size
-   of the reset link beside them rather than as a quieter subtitle. */
-.headmeta { display:flex; align-items:baseline; gap:14px;
-  font-size:.86rem; font-weight:700; }
+/* What the collection is, under its name. */
+.headmeta { display:flex; align-items:baseline; gap:14px; margin:2px 0 0;
+  font-size:.86rem; font-weight:700; flex-wrap:wrap; }
 .headmeta #counts { color:var(--ink); }
 .headmeta a { color:var(--accent); }
 .headmeta a:hover { color:var(--ink); }
+/* "More filters" on the left, "Reset filters" hard right — level with it, and
+   in the same column as the columns button further down. */
+.filterbar { display:flex; align-items:flex-start; gap:16px; }
+.filterbar #more { flex:1 1 auto; min-width:0; }
+.filterbar #reset { margin-left:auto; margin-top:20px; padding:0 4px 10px 0;
+  /* button.link aligns itself to the bottom of its row; here it must stay put
+     on the summary's line when "More filters" opens below it. */
+  align-self:flex-start;
+  font-weight:700; font-size:.84rem; text-decoration:none; white-space:nowrap;
+  line-height:1.35; }
+.filterbar #reset:hover { color:var(--ink); }
 .titlebar #reset:hover { color:var(--ink); }
 button.link { background:none; border:none; color:var(--accent); cursor:pointer;
   font:inherit; padding:7px 0; align-self:flex-end; }
@@ -602,8 +610,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 <input type="checkbox" id="legendtoggle">
 <div class="titlebar">
   <h1>__HEADLINE__</h1>
-  <span class="headmeta"><span id="counts">__COUNTS__</span><!--__BGGLINK__--></span>
-  <button class="link" id="reset" type="button">Reset filters</button>
   <label for="legendtoggle" id="legendlink">What the data means</label>
   <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"
      title="This report's source on GitHub" aria-label="Source on GitHub">
@@ -701,6 +707,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     </section>
     </div>
 
+<p class="headmeta"><span id="counts">__COUNTS__</span><!--__BGGLINK__--></p>
+
 <div class="panel">
   <div class="row">
     <div class="f"><label for="q">Search</label>
@@ -717,6 +725,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <div class="f"><label for="exp">Expansions</label>
       <select id="exp"><!--__EXP_OPTIONS__--></select></div>
   </div>
+  <div class="filterbar">
   <details id="more">
     <summary>More filters</summary>
     <div class="row">
@@ -766,6 +775,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     </div>
     <div id="tagbox" class="tagbox"></div>
   </details>
+  <button class="link" id="reset" type="button">Reset filters</button>
+  </div>
 </div>
 
 <div class="resultline"><span id="count">__SHOWN__ games</span><span
@@ -1493,10 +1504,10 @@ function buildDetail(g) {
     '</dl>' + pollMatrix(g) +
     '<div class="outlinks">' +
     '<a class="game" href="https://boardgamegeek.com/boardgame/' + g.id +
-    '" target="_blank" rel="noopener">Open on BGG →</a>' +
+    '" target="_blank" rel="noopener">Open on BGG ↗</a>' +
     '<a class="game" href="https://www.google.com/search?tbm=vid&q=' +
     encodeURIComponent(g.n + ' how to play board game') +
-    '" target="_blank" rel="noopener">How to play video →</a>' +
+    '" target="_blank" rel="noopener">How to play video ↗</a>' +
     '</div></div>' +
     '</div>';
 }

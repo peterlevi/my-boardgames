@@ -599,7 +599,7 @@ def bgg_link():
     if not who:
         return ""
     return (f'<a href="https://boardgamegeek.com/collection/user/{esc(who)}"'
-            f' target="_blank" rel="noopener">Open on BGG →</a>')
+            f' target="_blank" rel="noopener">Open on BGG ↗</a>')
 
 
 def root_class(a):

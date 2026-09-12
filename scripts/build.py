@@ -126,6 +126,18 @@ def load_ai():
     return out
 
 
+def load_bgg_ids():
+    """Name -> BGG id for games outside the collection, from scripts/bggids.py.
+    Absent is fine: a name without an id falls back to a BGG search link."""
+    f = ROOT / "data" / "bgg_ids.json"
+    if not f.exists():
+        return {}
+    try:
+        return json.loads(f.read_text())
+    except Exception:  # noqa: BLE001
+        return {}
+
+
 def ids_in(name):
     """Object ids listed in one of the collection exports, in file order."""
     f = RAW / name
@@ -177,8 +189,16 @@ def main():
 
     plays, mine = collection_stats()
     ai = load_ai()
+    bgg_ids = load_bgg_ids()
     for g in games:
         g["ai"] = ai.get(g["id"])
+        if g["ai"] and g["ai"].get("similar"):
+            # Carry the id alongside each name so the report can link straight
+            # at the game; `id` stays None when the name never resolved.
+            g["ai"]["similar"] = [
+                {"name": n, "id": (bgg_ids.get((n or "").strip().lower()) or {}).get("id")}
+                for n in g["ai"]["similar"]
+            ]
         g["plays"] = plays.get(g["id"], 0)
         g["my_rating"] = mine.get(g["id"])
 

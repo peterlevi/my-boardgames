@@ -1,0 +1,438 @@
+{
+ "7 wonders": {
+  "id": "68448",
+  "name": "7 Wonders",
+  "year": "2010"
+ },
+ "7 wonders duel": {
+  "id": "173346",
+  "name": "7 Wonders Duel",
+  "year": "2015"
+ },
+ "a feast for odin": {
+  "id": "177736",
+  "name": "A Feast for Odin",
+  "year": "2016"
+ },
+ "a game of thrones: the board game": null,
+ "age of steam": {
+  "id": "4098",
+  "name": "Age of Steam",
+  "year": "2002"
+ },
+ "agricola": {
+  "id": "31260",
+  "name": "Agricola",
+  "year": "2007"
+ },
+ "alien frontiers": {
+  "id": "48726",
+  "name": "Alien Frontiers",
+  "year": "2010"
+ },
+ "amerigo": {
+  "id": "38924",
+  "name": "Amerigo",
+  "year": "2008"
+ },
+ "amun-re": {
+  "id": "5404",
+  "name": "Amun-Re",
+  "year": "2003"
+ },
+ "antike duellum": {
+  "id": "104955",
+  "name": "Antike Duellum",
+  "year": "2012"
+ },
+ "antiquity": {
+  "id": "13122",
+  "name": "Antiquity",
+  "year": "2004"
+ },
+ "avalon": {
+  "id": "1862",
+  "name": "Avalon",
+  "year": "1994"
+ },
+ "bang!": {
+  "id": "3955",
+  "name": "BANG!",
+  "year": "2002"
+ },
+ "barrage": {
+  "id": "251247",
+  "name": "Barrage",
+  "year": "2019"
+ },
+ "between two cities": {
+  "id": "168435",
+  "name": "Between Two Cities",
+  "year": "2015"
+ },
+ "blue lagoon": {
+  "id": "244331",
+  "name": "Blue Lagoon",
+  "year": "2018"
+ },
+ "bohnanza": {
+  "id": "11",
+  "name": "Bohnanza",
+  "year": "1997"
+ },
+ "bora bora": {
+  "id": "127060",
+  "name": "Bora Bora",
+  "year": "2013"
+ },
+ "brass: birmingham": {
+  "id": "224517",
+  "name": "Brass: Birmingham",
+  "year": "2018"
+ },
+ "bus: cottbus extra": null,
+ "carcassonne": {
+  "id": "822",
+  "name": "Carcassonne",
+  "year": "2000"
+ },
+ "caverna: the cave farmers": {
+  "id": "102794",
+  "name": "Caverna: The Cave Farmers",
+  "year": "2013"
+ },
+ "caylus": {
+  "id": "18602",
+  "name": "Caylus",
+  "year": "2005"
+ },
+ "century: spice road": {
+  "id": "209685",
+  "name": "Century: Spice Road",
+  "year": "2017"
+ },
+ "chinatown": {
+  "id": "47",
+  "name": "Chinatown",
+  "year": "1999"
+ },
+ "co2: second chance": {
+  "id": "214887",
+  "name": "CO2: Second Chance",
+  "year": "2018"
+ },
+ "coloretto": {
+  "id": "5782",
+  "name": "Coloretto",
+  "year": "2003"
+ },
+ "concordia": {
+  "id": "124361",
+  "name": "Concordia",
+  "year": "2013"
+ },
+ "container": {
+  "id": "23463",
+  "name": "Container",
+  "year": null
+ },
+ "coup": {
+  "id": "1653",
+  "name": "Coup",
+  "year": "1991"
+ },
+ "first martians": null,
+ "food chain magnate": {
+  "id": "175914",
+  "name": "Food Chain Magnate",
+  "year": "2015"
+ },
+ "for sale": {
+  "id": "172",
+  "name": "For Sale",
+  "year": "1997"
+ },
+ "gaia project": {
+  "id": "220308",
+  "name": "Gaia Project",
+  "year": "2017"
+ },
+ "hera and zeus": {
+  "id": "638",
+  "name": "Hera and Zeus",
+  "year": "2000"
+ },
+ "in the year of the dragon": {
+  "id": "31594",
+  "name": "In the Year of the Dragon",
+  "year": "2007"
+ },
+ "indonesia": {
+  "id": "19777",
+  "name": "Indonesia",
+  "year": "2005"
+ },
+ "innovation": {
+  "id": "63888",
+  "name": "Innovation",
+  "year": "2010"
+ },
+ "jaipur": {
+  "id": "54043",
+  "name": "Jaipur",
+  "year": "2009"
+ },
+ "kanban ev": {
+  "id": "284378",
+  "name": "Kanban EV",
+  "year": "2020"
+ },
+ "kanban: automotive revolution": {
+  "id": "109276",
+  "name": "Kanban: Automotive Revolution",
+  "year": "2014"
+ },
+ "kemet": {
+  "id": "127023",
+  "name": "Kemet",
+  "year": "2012"
+ },
+ "le havre": {
+  "id": "35677",
+  "name": "Le Havre",
+  "year": "2008"
+ },
+ "liar's dice": null,
+ "lisboa": {
+  "id": "161533",
+  "name": "Lisboa",
+  "year": "2017"
+ },
+ "lost cities": {
+  "id": "50",
+  "name": "Lost Cities",
+  "year": "1999"
+ },
+ "love letter": {
+  "id": "129622",
+  "name": "Love Letter",
+  "year": "2012"
+ },
+ "mafia": {
+  "id": "6109",
+  "name": "Mafia",
+  "year": "1981"
+ },
+ "manhattan project": null,
+ "medici": {
+  "id": "46",
+  "name": "Medici",
+  "year": "1995"
+ },
+ "modern art": {
+  "id": "118",
+  "name": "Modern Art",
+  "year": "1992"
+ },
+ "northern pacific": {
+  "id": "138704",
+  "name": "Northern Pacific",
+  "year": "2013"
+ },
+ "on mars": {
+  "id": "184267",
+  "name": "On Mars",
+  "year": "2020"
+ },
+ "one night ultimate werewolf": {
+  "id": "147949",
+  "name": "One Night Ultimate Werewolf",
+  "year": "2014"
+ },
+ "one night ultimate werewolf: daybreak": {
+  "id": "163166",
+  "name": "One Night Ultimate Werewolf: Daybreak",
+  "year": "2015"
+ },
+ "patchwork": {
+  "id": "41585",
+  "name": "Patchwork",
+  "year": "2009"
+ },
+ "power grid": {
+  "id": "2651",
+  "name": "Power Grid",
+  "year": "2004"
+ },
+ "puerto rico": {
+  "id": "3076",
+  "name": "Puerto Rico",
+  "year": "2002"
+ },
+ "res arcana": {
+  "id": "262712",
+  "name": "Res Arcana",
+  "year": "2019"
+ },
+ "root": {
+  "id": "237182",
+  "name": "Root",
+  "year": "2018"
+ },
+ "secret hitler": {
+  "id": "188834",
+  "name": "Secret Hitler",
+  "year": "2016"
+ },
+ "skull": {
+  "id": "67466",
+  "name": "Skull",
+  "year": "1993"
+ },
+ "skull king": {
+  "id": "150145",
+  "name": "Skull King",
+  "year": "2013"
+ },
+ "splendor duel": {
+  "id": "364073",
+  "name": "Splendor Duel",
+  "year": "2022"
+ },
+ "star wars: rebellion": {
+  "id": "187645",
+  "name": "Star Wars: Rebellion",
+  "year": "2016"
+ },
+ "steam": {
+  "id": "27833",
+  "name": "Steam",
+  "year": "2009"
+ },
+ "sub terra": {
+  "id": "204472",
+  "name": "Sub Terra",
+  "year": "2017"
+ },
+ "suburbia": {
+  "id": "81185",
+  "name": "Suburbia",
+  "year": "2001"
+ },
+ "teotihuacan: city of gods": {
+  "id": "229853",
+  "name": "Teotihuacan: City of Gods",
+  "year": "2018"
+ },
+ "terra mystica": {
+  "id": "120677",
+  "name": "Terra Mystica",
+  "year": "2012"
+ },
+ "the castles of burgundy": {
+  "id": "84876",
+  "name": "The Castles of Burgundy",
+  "year": "2011"
+ },
+ "the gallerist": {
+  "id": "125153",
+  "name": "The Gallerist",
+  "year": "2015"
+ },
+ "the networks": null,
+ "the princes of florence": {
+  "id": "555",
+  "name": "The Princes of Florence",
+  "year": "2000"
+ },
+ "the resistance": {
+  "id": "41114",
+  "name": "The Resistance",
+  "year": "2009"
+ },
+ "the voyages of marco polo": {
+  "id": "171623",
+  "name": "The Voyages of Marco Polo",
+  "year": "2015"
+ },
+ "this war of mine: the board game": {
+  "id": "188920",
+  "name": "This War of Mine: The Board Game",
+  "year": "2017"
+ },
+ "ticket to ride": {
+  "id": "9209",
+  "name": "Ticket to Ride",
+  "year": "2004"
+ },
+ "ticket to ride: nordic countries": {
+  "id": "31627",
+  "name": "Ticket to Ride: Nordic Countries",
+  "year": "2007"
+ },
+ "tokaido": {
+  "id": "123540",
+  "name": "Tokaido",
+  "year": "2012"
+ },
+ "traders of osaka": {
+  "id": "24827",
+  "name": "Traders of Osaka",
+  "year": "2006"
+ },
+ "trajan": {
+  "id": "741",
+  "name": "Trajan",
+  "year": "1991"
+ },
+ "trudvang legends": {
+  "id": "266064",
+  "name": "Trudvang Legends",
+  "year": "2022"
+ },
+ "twilight struggle": {
+  "id": "12333",
+  "name": "Twilight Struggle",
+  "year": "2005"
+ },
+ "tzolk'in: the mayan calendar": {
+  "id": "126163",
+  "name": "Tzolk'in: The Mayan Calendar",
+  "year": "2012"
+ },
+ "union pacific": {
+  "id": "94",
+  "name": "Union Pacific",
+  "year": "1999"
+ },
+ "vikings": {
+  "id": "6926",
+  "name": "Vikings",
+  "year": "1987"
+ },
+ "village": {
+  "id": "104006",
+  "name": "Village",
+  "year": "2011"
+ },
+ "vinhos deluxe edition": {
+  "id": "175640",
+  "name": "Vinhos: Deluxe Edition",
+  "year": "2016"
+ },
+ "weather machine": {
+  "id": "237179",
+  "name": "Weather Machine",
+  "year": "2022"
+ },
+ "werewolf": {
+  "id": "925",
+  "name": "Werewolf",
+  "year": "1986"
+ },
+ "yokohama": {
+  "id": "196340",
+  "name": "Yokohama",
+  "year": "2016"
+ }
+}

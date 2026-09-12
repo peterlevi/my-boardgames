@@ -53,6 +53,17 @@ people say" panel come from.
 python3 scripts/sync.py              # runs it as part of the pipeline
 python3 scripts/enrich.py            # or on its own
 python3 scripts/enrich.py --force    # redo everything
+```
+
+`scripts/bggids.py` turns the names in those summaries' "people who like this
+also like" lists into BGG ids, so the pill for a game you do not own links
+straight at the game rather than at a search page. One search request per
+*new* name, cached in `data/bgg_ids.json`; names that are descriptions rather
+than titles ("18xx family") cache as `null` and keep the search link.
+
+```bash
+python3 scripts/bggids.py            # resolve names not yet cached
+python3 scripts/bggids.py --retry    # ask again for names that found nothing
 python3 scripts/sync.py --no-ai      # skip it deliberately
 ```
 
@@ -183,6 +194,7 @@ scripts/thumbs.py      BGG image CDN     -> data/thumbs/*.jpg   (network)
 scripts/gallery.py     geekdo gallery    -> data/gallery/*.json (network)
 scripts/build.py       data/raw          -> data/games.json     (offline)
 scripts/enrich.py      `claude` CLI      -> data/ai/*.json      (optional)
+scripts/bggids.py      BGG search API    -> data/bgg_ids.json   (network)
 scripts/report.py      data/games.json   -> a single HTML file  (offline)
 
 scripts/query.py       data/games.json   -> a terminal table    (offline)

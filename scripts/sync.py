@@ -13,6 +13,7 @@ Runs the pipeline end to end:
     thumbs.py    thumbnails for any new games    (network, image CDN)
     gallery.py   gallery image URLs, new games   (network, geekdo)
     enrich.py    opinion database, new games     (local `claude`, optional)
+    bggids.py    BGG ids for newly named games   (network, BGG API)
     build.py     data/games.json                 (offline)
     report.py    reports/collection.html         (offline)
 
@@ -52,6 +53,10 @@ def main():
     run("build.py")
     if "--no-ai" not in argv:
         run("enrich.py", *(["--force"] if full else []))
+        # enrich.py is what names the similar games, so their ids can only be
+        # looked up afterwards. Cached, so this costs nothing for known names.
+        if "--no-fetch" not in argv:
+            run("bggids.py")
     run("build.py")
     if "--no-report" in argv:
         print("\nData refreshed. Commit data/ and push to republish.")

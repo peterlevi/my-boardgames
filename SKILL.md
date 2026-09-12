@@ -41,9 +41,11 @@ to write unbalanced markup, so a stray tag fails the build rather than
 rendering wrong.
 
 `scripts/sync.py` runs the whole pipeline: fetch → thumbs → gallery → build →
-enrich → report. Everything except `fetch.py`, `thumbs.py`, `gallery.py` and
-`enrich.py` is offline, and `enrich.py` skips itself cleanly when the `claude`
-CLI is missing.
+enrich → bggids → report. Everything except `fetch.py`, `thumbs.py`,
+`gallery.py`, `enrich.py` and `bggids.py` is offline, and `enrich.py` skips
+itself cleanly when the `claude` CLI is missing. `bggids.py` resolves the
+similar-game names enrich.py produces into BGG ids (`data/bgg_ids.json`) so
+those pills link at the game; unresolved names fall back to a BGG search.
 
 For anything the flags don't cover, read `data/games.json` directly — one
 object per game with `name`, `rank`, `weight`, `average`, `year`, `plays`,

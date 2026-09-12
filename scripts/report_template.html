@@ -423,8 +423,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <select id="mode"><!--__MODE_OPTIONS__--></select></div>
     <div class="f"><label for="ix">Interaction</label>
       <select id="ix">
-        <option value="">Any</option><option>Low</option>
-        <option>Medium</option><option>High</option>
+        <option value="">Any</option><option>High</option>
+        <option>Medium</option><option>Low</option>
       </select></div>
     <div class="f"><label for="exp">Expansions</label>
       <select id="exp"><!--__EXP_OPTIONS__--></select></div>
@@ -1120,14 +1120,21 @@ function opinionBlock(g) {
       return '<li>' + esc(t) + '</li>';
     }).join('') + '</ul>';
   }
-  var sim = (ai.sim || []).map(function (n) {
+  var sim = (ai.sim || []).map(function (e) {
+    // Entries carry a resolved BGG id where scripts/bggids.py found one.
+    var n = typeof e === 'string' ? e : e.name, id = typeof e === 'string' ? null : e.id;
     var i = OWNED[n.toLowerCase()];
     if (i === undefined) {
-      // Not in the collection: nothing to filter to, so send them to BGG.
-      return '<a class="chip" target="_blank" rel="noopener" ' +
-        'href="https://boardgamegeek.com/geeksearch.php?action=search' +
-        '&objecttype=boardgame&q=' + encodeURIComponent(n) +
-        '" title="Not in your collection — look it up on BGG">' + esc(n) +
+      // Not in the collection: nothing to filter to, so send them to BGG —
+      // straight to the game when its id is known, and only otherwise to a
+      // search, which is all a bare name ("18xx family") can support.
+      var href = id
+        ? 'https://boardgamegeek.com/boardgame/' + id
+        : 'https://boardgamegeek.com/geeksearch.php?action=search' +
+          '&objecttype=boardgame&q=' + encodeURIComponent(n);
+      return '<a class="chip" target="_blank" rel="noopener" href="' + href +
+        '" title="Not in your collection — ' +
+        (id ? 'open it on BGG' : 'look it up on BGG') + '">' + esc(n) +
         ' <span class="ext">↗</span></a>';
     }
     return '<button type="button" class="chip owned" data-game="' + i +
@@ -1261,14 +1268,16 @@ TBODY.addEventListener('click', function (e) {
   scrollRowToTop(tr);
 });
 
-/** Sticky headers overlap the top of the table, so a row scrolled flush to the
- *  viewport top would hide under them. Only pay that toll where the headers are
- *  actually sticky — on narrow screens they scroll away with the table. */
+/** How much of the viewport the pinned chrome covers: the header row plus
+ *  whatever it is itself pinned below (the sticky result line). Measuring only
+ *  the header's height missed that 46px offset and tucked the row half under
+ *  it. Zero on narrow screens, where the headers scroll away with the table. */
 function headerPad() {
   var th = document.querySelector('thead th');
-  if (!th) return 0;
-  var pos = window.getComputedStyle ? window.getComputedStyle(th).position : '';
-  return pos === 'sticky' ? th.getBoundingClientRect().height : 0;
+  if (!th || !window.getComputedStyle) return 0;
+  var cs = window.getComputedStyle(th);
+  if (cs.position !== 'sticky') return 0;
+  return (parseFloat(cs.top) || 0) + th.getBoundingClientRect().height;
 }
 
 /** A hand-rolled tween rather than scroll-behavior:smooth, whose duration the
@@ -1297,9 +1306,10 @@ function smoothScrollTo(y) {
   scrollAnim = requestAnimationFrame(step);
 }
 
-/** Bring a just-expanded row to the top so its panel is what you are looking at. */
+/** Bring a just-expanded row to the top so its panel is what you are looking
+ *  at, its top edge flush against the bottom of the header row. */
 function scrollRowToTop(tr) {
-  smoothScrollTo(window.pageYOffset + tr.getBoundingClientRect().top - headerPad() - 8);
+  smoothScrollTo(window.pageYOffset + tr.getBoundingClientRect().top - headerPad());
 }
 
 [].forEach.call(document.querySelectorAll('th[data-k]'), function (th) {
@@ -1474,7 +1484,11 @@ function markFilters() {
     if (!input) return;
     var box = input.closest('.f');
     if (!box) return;
-    var off = String(input.value) !== String(defaults[k]);
+    // Rule's default is the N/A it shows while no player count is set, so any
+    // real choice counts as active — including "Good", where the page starts.
+    var off = k === 'mode'
+      ? +F.players.value !== 0
+      : String(input.value) !== String(defaults[k]);
     if (off) box.classList.add('active'); else box.classList.remove('active');
   });
   // Without a player count there is no count to be best or good at.

@@ -144,11 +144,26 @@
     "how_you_win": "you win by building profitable train routes for companies you control and by trading shares shrewdly enough that your personal wealth outpaces everyone else's"
    },
    "similar": [
-    "1846: The Race for the Midwest",
-    "18Chesapeake",
-    "Age of Steam",
-    "Brass: Birmingham",
-    "Container"
+    {
+     "name": "1846: The Race for the Midwest",
+     "id": null
+    },
+    {
+     "name": "18Chesapeake",
+     "id": null
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    }
    ],
    "teachers": [
     "Heavy Cardboard",
@@ -290,11 +305,26 @@
     "how_you_win": "you win by running efficient, well-connected train routes through corporations you control and by trading shares to maximize personal wealth rather than any single company's success"
    },
    "similar": [
-    "1830: Railways & Robber Barons",
-    "18Chesapeake",
-    "Age of Steam",
-    "Brass: Birmingham",
-    "1817"
+    {
+     "name": "1830: Railways & Robber Barons",
+     "id": null
+    },
+    {
+     "name": "18Chesapeake",
+     "id": null
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "1817",
+     "id": null
+    }
    ],
    "teachers": [
     "Heavy Cardboard",
@@ -444,11 +474,26 @@
     "how_you_win": "you win by building and running profitable railroad routes through companies you control and by buying and selling stock at the right moments"
    },
    "similar": [
-    "1830: Railways & Robber Barons",
-    "1846: The Race for the Midwest",
-    "Ticket to Ride",
-    "Age of Steam",
-    "1817"
+    {
+     "name": "1830: Railways & Robber Barons",
+     "id": null
+    },
+    {
+     "name": "1846: The Race for the Midwest",
+     "id": null
+    },
+    {
+     "name": "Ticket to Ride",
+     "id": "9209"
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "1817",
+     "id": null
+    }
    ],
    "teachers": [
     "Heavy Cardboard",
@@ -574,10 +619,22 @@
     "how_you_win": "Accumulate the most fame by touring your circus through towns and cities, staging performances that match ordered performer requirements, and controlling regions when the Barnum track advances."
    },
    "similar": [
-    "Wingspan",
-    "Luna Capital",
-    "Castell",
-    "Merv: The Silk Road"
+    {
+     "name": "Wingspan",
+     "id": null
+    },
+    {
+     "name": "Luna Capital",
+     "id": null
+    },
+    {
+     "name": "Castell",
+     "id": null
+    },
+    {
+     "name": "Merv: The Silk Road",
+     "id": null
+    }
    ],
    "sources": [
     "https://boardgameoverlord.com/board-game-reviews/how-many-rings-in-a-circus-3-a-3-ring-circus-review/",
@@ -753,11 +810,26 @@
     "how_you_win": "you win by accumulating the highest total score across these disparate categories, often by picking one or two engines (like science or military) to specialize in while staying safe elsewhere"
    },
    "similar": [
-    "7 Wonders Duel",
-    "Race for the Galaxy",
-    "Sushi Go!",
-    "Century: Spice Road",
-    "Innovation"
+    {
+     "name": "7 Wonders Duel",
+     "id": "173346"
+    },
+    {
+     "name": "Race for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Sushi Go!",
+     "id": null
+    },
+    {
+     "name": "Century: Spice Road",
+     "id": "209685"
+    },
+    {
+     "name": "Innovation",
+     "id": "63888"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -898,11 +970,26 @@
     "how_you_win": "you win either by pushing the military marker to your opponent's capital, by collecting six different science symbols, or by having the higher total score when the card supply runs out"
    },
    "similar": [
-    "7 Wonders",
-    "Star Realms",
-    "Jaipur",
-    "Targi",
-    "Tzolk'in: The Mayan Calendar"
+    {
+     "name": "7 Wonders",
+     "id": "68448"
+    },
+    {
+     "name": "Star Realms",
+     "id": null
+    },
+    {
+     "name": "Jaipur",
+     "id": "54043"
+    },
+    {
+     "name": "Targi",
+     "id": null
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -1059,11 +1146,26 @@
     "how_you_win": "you win by holding majority stock in chains right before they merge or end the game, cashing in for large bonuses and high share payouts"
    },
    "similar": [
-    "Acquire (variants)",
-    "Container",
-    "Chinatown",
-    "Airlines Europe",
-    "Fund Manager"
+    {
+     "name": "Acquire (variants)",
+     "id": null
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "Chinatown",
+     "id": "47"
+    },
+    {
+     "name": "Airlines Europe",
+     "id": null
+    },
+    {
+     "name": "Fund Manager",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -1206,11 +1308,26 @@
     "how_you_win": "you win by expanding your building network efficiently, advancing on the cult tracks, and timing upgrades to score well against the round-specific and final scoring bonuses"
    },
    "similar": [
-    "Terra Mystica",
-    "Gaia Project",
-    "Cascadia",
-    "Barrage",
-    "Brass: Birmingham"
+    {
+     "name": "Terra Mystica",
+     "id": "120677"
+    },
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    },
+    {
+     "name": "Cascadia",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    }
    ],
    "teachers": [
     "Heavy Cardboard",
@@ -1349,11 +1466,26 @@
     "how_you_win": "Build the most balanced, developed farm across all scoring categories while keeping your family fed every harvest, then total the highest score at game end."
    },
    "similar": [
-    "Le Havre",
-    "Caverna",
-    "A Feast for Odin",
-    "Puerto Rico",
-    "Grand Austria Hotel"
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Caverna",
+     "id": null
+    },
+    {
+     "name": "A Feast for Odin",
+     "id": "177736"
+    },
+    {
+     "name": "Puerto Rico",
+     "id": "3076"
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -1482,11 +1614,26 @@
     "how_you_win": "End the game with the most developed, well-rounded farm judged across fields, pastures, animals and rooms."
    },
    "similar": [
-    "Agricola",
-    "Caverna",
-    "Catan",
-    "Ticket to Ride",
-    "Stone Age"
+    {
+     "name": "Agricola",
+     "id": "31260"
+    },
+    {
+     "name": "Caverna",
+     "id": null
+    },
+    {
+     "name": "Catan",
+     "id": null
+    },
+    {
+     "name": "Ticket to Ride",
+     "id": "9209"
+    },
+    {
+     "name": "Stone Age",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -1601,11 +1748,26 @@
     "how_you_win": "Win the majority of theaters (or all three) in a round to score victory points, first player to reach 12 total points wins the match."
    },
    "similar": [
-    "Air, Land & Sea",
-    "Air, Land & Sea: Critters at War",
-    "Battle Line",
-    "Schotten Totten",
-    "Hanamikoji"
+    {
+     "name": "Air, Land & Sea",
+     "id": null
+    },
+    {
+     "name": "Air, Land & Sea: Critters at War",
+     "id": null
+    },
+    {
+     "name": "Battle Line",
+     "id": null
+    },
+    {
+     "name": "Schotten Totten",
+     "id": null
+    },
+    {
+     "name": "Hanamikoji",
+     "id": null
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/air-land-sea-spies-lies-supplies/",
@@ -1747,11 +1909,26 @@
     "how_you_win": "Correctly deduce ingredient properties, publish accurate theories before rivals, and manage your reputation to end with the highest net score."
    },
    "similar": [
-    "Chai",
-    "Mysterium",
-    "The Search for Planet X",
-    "Sherlock Holmes Consulting Detective",
-    "Cryptid"
+    {
+     "name": "Chai",
+     "id": null
+    },
+    {
+     "name": "Mysterium",
+     "id": null
+    },
+    {
+     "name": "The Search for Planet X",
+     "id": null
+    },
+    {
+     "name": "Sherlock Holmes Consulting Detective",
+     "id": null
+    },
+    {
+     "name": "Cryptid",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -1883,11 +2060,26 @@
     "how_you_win": "Build the highest-reputation university by amassing the best students, professors, and bonus achievements across all four disciplines by game's end."
    },
    "similar": [
-    "Lisboa",
-    "Teotihuacan",
-    "Trickerion",
-    "The Gallerist",
-    "Tzolk'in"
+    {
+     "name": "Lisboa",
+     "id": "161533"
+    },
+    {
+     "name": "Teotihuacan",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Tzolk'in",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -2015,11 +2207,26 @@
     "how_you_win": "Win provinces at auction, use their income wisely, and build the most valuable pyramids with bonus tile combos by game end."
    },
    "similar": [
-    "Ra",
-    "Tigris & Euphrates",
-    "Samurai",
-    "Taj Mahal",
-    "El Grande"
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "Tigris & Euphrates",
+     "id": null
+    },
+    {
+     "name": "Samurai",
+     "id": null
+    },
+    {
+     "name": "Taj Mahal",
+     "id": null
+    },
+    {
+     "name": "El Grande",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -2153,11 +2360,26 @@
     "how_you_win": "Build the most efficient production and contract-fulfillment engine, using time-travel loops to convert resources into the most victory points by game end."
    },
    "similar": [
-    "Trickerion",
-    "Tzolk'in",
-    "Gaia Project",
-    "On Mars",
-    "Newton"
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Tzolk'in",
+     "id": null
+    },
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Newton",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -2314,11 +2536,26 @@
     "how_you_win": "Build production chains to keep your population happy and be the first to complete your contract track, typically winning outright by ending the game."
    },
    "similar": [
-    "Le Havre",
-    "Puerto Rico",
-    "Trellis",
-    "Terraforming Mars",
-    "Great Western Trail"
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Puerto Rico",
+     "id": "3076"
+    },
+    {
+     "name": "Trellis",
+     "id": null
+    },
+    {
+     "name": "Terraforming Mars",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -2479,11 +2716,26 @@
     "how_you_win": "You win by efficiently converting raw resources into building contributions and contracts across the game while managing whether you lean virtuous or corrupt for bonus points at the end."
    },
    "similar": [
-    "Raiders of the North Sea",
-    "Paladins of the West Kingdom",
-    "Marco Polo",
-    "Tzolk'in: The Mayan Calendar",
-    "Grand Austria Hotel"
+    {
+     "name": "Raiders of the North Sea",
+     "id": null
+    },
+    {
+     "name": "Paladins of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Marco Polo",
+     "id": null
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -2638,11 +2890,26 @@
     "how_you_win": "You win by building an efficient engine of animals, enclosures, and sponsors that generates appeal and conservation points faster than your opponents across the mid-to-late game."
    },
    "similar": [
-    "Terraforming Mars",
-    "Marco Polo",
-    "Great Western Trail",
-    "Res Arcana",
-    "Concordia"
+    {
+     "name": "Terraforming Mars",
+     "id": null
+    },
+    {
+     "name": "Marco Polo",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "Concordia",
+     "id": "124361"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -2792,11 +3059,26 @@
     "how_you_win": "You win by growing your factories' output and efficiency to drive up your share price, then holding the most valuable block of shares at game end."
    },
    "similar": [
-    "Brass: Birmingham",
-    "Age of Steam",
-    "El Grande",
-    "Container",
-    "Le Havre"
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "El Grande",
+     "id": null
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -2935,11 +3217,26 @@
     "how_you_win": "You win by efficiently upgrading and running your factories to increase your share value over the three decades of play."
    },
    "similar": [
-    "Arkwright",
-    "Brass: Birmingham",
-    "Container",
-    "Age of Steam",
-    "Concordia"
+    {
+     "name": "Arkwright",
+     "id": null
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Concordia",
+     "id": "124361"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -3080,11 +3377,26 @@
     "how_you_win": "You win by placing tiles to maximize adjacency chains and completing bonus rows, columns, and color sets while minimizing penalty tiles."
    },
    "similar": [
-    "Sagrada",
-    "Kingdomino",
-    "Patchwork",
-    "Azul: Summer Pavilion",
-    "Calico"
+    {
+     "name": "Sagrada",
+     "id": null
+    },
+    {
+     "name": "Kingdomino",
+     "id": null
+    },
+    {
+     "name": "Patchwork",
+     "id": "41585"
+    },
+    {
+     "name": "Azul: Summer Pavilion",
+     "id": null
+    },
+    {
+     "name": "Calico",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -3203,11 +3515,26 @@
     "how_you_win": "You win by controlling the most valuable combinations of regions and cities when the sudden-death ending is triggered."
    },
    "similar": [
-    "El Grande",
-    "Tigris & Euphrates",
-    "Blue Lagoon",
-    "Yellow & Yangtze",
-    "Through the Desert"
+    {
+     "name": "El Grande",
+     "id": null
+    },
+    {
+     "name": "Tigris & Euphrates",
+     "id": null
+    },
+    {
+     "name": "Blue Lagoon",
+     "id": "244331"
+    },
+    {
+     "name": "Yellow & Yangtze",
+     "id": null
+    },
+    {
+     "name": "Through the Desert",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -3316,11 +3643,26 @@
     "how_you_win": "Accumulate the most points across in-round and end-game scoring from tile placement, temple favors, and balance bonuses over four years/rounds."
    },
    "similar": [
-    "Bitoku",
-    "Silk",
-    "The Red Cathedral",
-    "Kanagawa",
-    "The White Castle"
+    {
+     "name": "Bitoku",
+     "id": null
+    },
+    {
+     "name": "Silk",
+     "id": null
+    },
+    {
+     "name": "The Red Cathedral",
+     "id": null
+    },
+    {
+     "name": "Kanagawa",
+     "id": null
+    },
+    {
+     "name": "The White Castle",
+     "id": null
+    }
    ],
    "sources": [
     "https://www.boardgamequest.com/bamboo-review/",
@@ -3484,11 +3826,26 @@
     "how_you_win": "You win by your team being the one still standing: the Sheriff's side eliminates all outlaws, the outlaws eliminate the Sheriff, or the renegade is the last player alive."
    },
    "similar": [
-    "Bang!",
-    "Coup",
-    "One Night Ultimate Werewolf",
-    "Skull King",
-    "Liar's Dice"
+    {
+     "name": "Bang!",
+     "id": "3955"
+    },
+    {
+     "name": "Coup",
+     "id": "1653"
+    },
+    {
+     "name": "One Night Ultimate Werewolf",
+     "id": "147949"
+    },
+    {
+     "name": "Skull King",
+     "id": "150145"
+    },
+    {
+     "name": "Liar's Dice",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -3616,11 +3973,26 @@
     "how_you_win": "You win by building the tallest, most efficient dam-and-turbine network while completing contracts and patents, converting stored water into energy more effectively than your rivals."
    },
    "similar": [
-    "Great Western Trail",
-    "Teotihuacan: City of Gods",
-    "On Mars",
-    "The Gallerist",
-    "Trickerion: Legends of Illusion"
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Trickerion: Legends of Illusion",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -3750,11 +4122,26 @@
     "how_you_win": "You win by building the more efficient production chain over six alternating years, ending with more points from goods sold and upgrades than your opponent."
    },
    "similar": [
-    "7 Wonders Duel",
-    "Jaipur",
-    "Innovation",
-    "Targi",
-    "Habitat"
+    {
+     "name": "7 Wonders Duel",
+     "id": "173346"
+    },
+    {
+     "name": "Jaipur",
+     "id": "54043"
+    },
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "Targi",
+     "id": null
+    },
+    {
+     "name": "Habitat",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -3992,11 +4379,26 @@
     "how_you_win": "You win by out-teching and out-developing your rivals, grabbing key achievements before they do, and ending with the highest combined score across research, economy, and influence."
    },
    "similar": [
-    "Race for the Galaxy",
-    "Through the Ages",
-    "Roll for the Galaxy",
-    "Innovation",
-    "Eclipse: Second Dawn for the Galaxy"
+    {
+     "name": "Race for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Through the Ages",
+     "id": null
+    },
+    {
+     "name": "Roll for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "Eclipse: Second Dawn for the Galaxy",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -4128,11 +4530,26 @@
     "how_you_win": "You win by securing majority holdings in more of the five card categories than any other player, using careful bidding and drafting to outmaneuver rivals."
    },
    "similar": [
-    "For Sale",
-    "Ra",
-    "Fresh Fish",
-    "Medici",
-    "Modern Art"
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "Fresh Fish",
+     "id": null
+    },
+    {
+     "name": "Medici",
+     "id": "46"
+    },
+    {
+     "name": "Modern Art",
+     "id": "118"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -4262,11 +4679,26 @@
     "how_you_win": "You win by building the most efficient engine of yōkai and pilgrims, converting resources into area influence and end-game bonuses faster than your opponents."
    },
    "similar": [
-    "Res Arcana",
-    "Everdell",
-    "Architects of the West Kingdom",
-    "Trickerion: Legends of Illusion",
-    "Tekhenu: Obelisk of the Sun"
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "Everdell",
+     "id": null
+    },
+    {
+     "name": "Architects of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Trickerion: Legends of Illusion",
+     "id": null
+    },
+    {
+     "name": "Tekhenu: Obelisk of the Sun",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -4402,11 +4834,26 @@
     "how_you_win": "The group wins by managing power, resources, and crises well enough to keep the ship alive and complete its objectives before systems fail or time runs out."
    },
    "similar": [
-    "Robinson Crusoe: Adventures on the Cursed Island",
-    "First Martians: Adventures on the Red Planet",
-    "Nemesis",
-    "Space Alert",
-    "Andor"
+    {
+     "name": "Robinson Crusoe: Adventures on the Cursed Island",
+     "id": null
+    },
+    {
+     "name": "First Martians: Adventures on the Red Planet",
+     "id": null
+    },
+    {
+     "name": "Nemesis",
+     "id": null
+    },
+    {
+     "name": "Space Alert",
+     "id": null
+    },
+    {
+     "name": "Andor",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -4549,11 +4996,26 @@
     "how_you_win": "You win by building the most efficient network of specialists and resources while securing area-majority control across the city, out-scoring rivals across multiple tracks by game end."
    },
    "similar": [
-    "Mombasa",
-    "Great Western Trail",
-    "Maracaibo",
-    "Barrage",
-    "Anachrony"
+    {
+     "name": "Mombasa",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Maracaibo",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -4691,11 +5153,26 @@
     "how_you_win": "You win by combining collected resource sets, controlling the most islands via village majority, and building the biggest connected settlement network by game end."
    },
    "similar": [
-    "Yellow & Yangtze",
-    "Tigris & Euphrates",
-    "Ta Yu",
-    "Isle of Skye",
-    "Web of Power"
+    {
+     "name": "Yellow & Yangtze",
+     "id": null
+    },
+    {
+     "name": "Tigris & Euphrates",
+     "id": null
+    },
+    {
+     "name": "Ta Yu",
+     "id": null
+    },
+    {
+     "name": "Isle of Skye",
+     "id": null
+    },
+    {
+     "name": "Web of Power",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -4852,11 +5329,26 @@
     "how_you_win": "You win by ending the game with the most coins, earned by harvesting large, well-timed sets of matching bean cards."
    },
    "similar": [
-    "Coloretto",
-    "For Sale",
-    "Traders of Osaka",
-    "Chinatown",
-    "The Princes of Florence"
+    {
+     "name": "Coloretto",
+     "id": "5782"
+    },
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "Traders of Osaka",
+     "id": "24827"
+    },
+    {
+     "name": "Chinatown",
+     "id": "47"
+    },
+    {
+     "name": "The Princes of Florence",
+     "id": "555"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -4996,11 +5488,26 @@
     "how_you_win": "You win by building the most efficient personal engine, converting resources into upgraded buildings and completing scoring goals for the highest total VP."
    },
    "similar": [
-    "Great Western Trail",
-    "Maracaibo",
-    "Merv: The Heart of the Silk Road",
-    "Barrage",
-    "Trismegistus"
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Maracaibo",
+     "id": null
+    },
+    {
+     "name": "Merv: The Heart of the Silk Road",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Trismegistus",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -5165,11 +5672,26 @@
     "how_you_win": "You win by having the most valuable flipped industries connected to your canal and rail network at the end of each of the two scoring eras."
    },
    "similar": [
-    "Brass: Lancashire",
-    "Age of Steam",
-    "Barrage",
-    "Great Western Trail",
-    "Age of Industry"
+    {
+     "name": "Brass: Lancashire",
+     "id": null
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Age of Industry",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -5313,11 +5835,26 @@
     "how_you_win": "You win by maximizing the value of your connected, flipped industry tiles at the two scoring points of the canal and rail eras."
    },
    "similar": [
-    "Brass: Birmingham",
-    "Age of Steam",
-    "Age of Industry",
-    "Barrage",
-    "Le Havre"
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Age of Industry",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -5460,11 +5997,26 @@
     "how_you_win": "You win by amassing the most influence across military victories, church favor, and marriage alliances when the High King condition is triggered."
    },
    "similar": [
-    "El Grande",
-    "Blood Rage",
-    "Kemet",
-    "Libertalia",
-    "Raiders of the North Sea"
+    {
+     "name": "El Grande",
+     "id": null
+    },
+    {
+     "name": "Blood Rage",
+     "id": null
+    },
+    {
+     "name": "Kemet",
+     "id": "127023"
+    },
+    {
+     "name": "Libertalia",
+     "id": null
+    },
+    {
+     "name": "Raiders of the North Sea",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -5602,11 +6154,26 @@
     "how_you_win": "You win by delivering the most potions to houses and castles across the game's rounds before the track runs out."
    },
    "similar": [
-    "Witch's Brew",
-    "Hawaii",
-    "Kobayakawa",
-    "Incan Gold / Diamant",
-    "Traders of Osaka"
+    {
+     "name": "Witch's Brew",
+     "id": null
+    },
+    {
+     "name": "Hawaii",
+     "id": null
+    },
+    {
+     "name": "Kobayakawa",
+     "id": null
+    },
+    {
+     "name": "Incan Gold / Diamant",
+     "id": null
+    },
+    {
+     "name": "Traders of Osaka",
+     "id": "24827"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -5747,11 +6314,26 @@
     "how_you_win": "You win by combining the highest-value building construction with successful art creation and patron/prestige bonuses by game end."
    },
    "similar": [
-    "Vikings",
-    "Le Havre",
-    "Caylus",
-    "The Gallerist",
-    "Manhattan Project"
+    {
+     "name": "Vikings",
+     "id": "6926"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Caylus",
+     "id": "18602"
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Manhattan Project",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -5884,11 +6466,26 @@
     "how_you_win": "You win by building and expanding bus routes that most efficiently ferry passengers to work, bar, and home destinations while undermining rivals' ability to do the same."
    },
    "similar": [
-    "Antiquity",
-    "Container",
-    "The Great Zimbabwe",
-    "Food Chain Magnate",
-    "Age of Steam"
+    {
+     "name": "Antiquity",
+     "id": "13122"
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "The Great Zimbabwe",
+     "id": null
+    },
+    {
+     "name": "Food Chain Magnate",
+     "id": "175914"
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -6033,11 +6630,26 @@
     "how_you_win": "You win by successfully bidding on and collecting sets of three matching goods cards, using your remaining hand cards as bidding currency until the deck runs out."
    },
    "similar": [
-    "Ra",
-    "Modern Art",
-    "Amun-Re",
-    "For Sale",
-    "Medici"
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "Modern Art",
+     "id": "118"
+    },
+    {
+     "name": "Amun-Re",
+     "id": "5404"
+    },
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "Medici",
+     "id": "46"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -6150,11 +6762,26 @@
     "how_you_win": "You win by balancing which cards you keep for direct points against which you donate to the capital for power synergies, ending with the highest total score."
    },
    "similar": [
-    "Capital Lux",
-    "Jaipur",
-    "Big Shot",
-    "Coloretto",
-    "Le Havre: The Inland Port"
+    {
+     "name": "Capital Lux",
+     "id": null
+    },
+    {
+     "name": "Jaipur",
+     "id": "54043"
+    },
+    {
+     "name": "Big Shot",
+     "id": null
+    },
+    {
+     "name": "Coloretto",
+     "id": "5782"
+    },
+    {
+     "name": "Le Havre: The Inland Port",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -6292,11 +6919,26 @@
     "how_you_win": "You win by placing tiles and meeples to complete and control the most valuable roads, cities, cloisters, and fields by game end."
    },
    "similar": [
-    "Kingdomino",
-    "Isle of Skye",
-    "Karuba",
-    "Patchwork",
-    "Cascadia"
+    {
+     "name": "Kingdomino",
+     "id": null
+    },
+    {
+     "name": "Isle of Skye",
+     "id": null
+    },
+    {
+     "name": "Karuba",
+     "id": null
+    },
+    {
+     "name": "Patchwork",
+     "id": "41585"
+    },
+    {
+     "name": "Cascadia",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -6448,11 +7090,26 @@
     "how_you_win": "You win by building the most efficient economic engine of connections, industries, and technology upgrades to accumulate the most victory points by game end."
    },
    "similar": [
-    "Brass: Birmingham",
-    "Age of Steam",
-    "Le Havre",
-    "K2",
-    "Barrage"
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "K2",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -6735,11 +7392,26 @@
     "how_you_win": "You win by shaping your map each season to best satisfy that season's scoring edicts while minimizing monster incursions, ending with the highest total reputation."
    },
    "similar": [
-    "Kingdomino",
-    "Take the Lead",
-    "Silver & Gold",
-    "Welcome To...",
-    "Railroad Ink"
+    {
+     "name": "Kingdomino",
+     "id": null
+    },
+    {
+     "name": "Take the Lead",
+     "id": null
+    },
+    {
+     "name": "Silver & Gold",
+     "id": null
+    },
+    {
+     "name": "Welcome To...",
+     "id": null
+    },
+    {
+     "name": "Railroad Ink",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -6893,11 +7565,26 @@
     "how_you_win": "You win by efficiently using dice rolls to place matching tiles into your regions, completing sets and bonus goals for the highest total score after five rounds."
    },
    "similar": [
-    "Village",
-    "Orleans",
-    "Barony",
-    "Le Havre",
-    "Fields of Arle"
+    {
+     "name": "Village",
+     "id": "104006"
+    },
+    {
+     "name": "Orleans",
+     "id": null
+    },
+    {
+     "name": "Barony",
+     "id": null
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Fields of Arle",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -7055,11 +7742,26 @@
     "how_you_win": "You win by expanding settlements and cities across the island while securing bonus points from road networks or knight cards, reaching ten points first."
    },
    "similar": [
-    "Ticket to Ride",
-    "Puerto Rico",
-    "Carcassonne",
-    "Bohnanza",
-    "Power Grid"
+    {
+     "name": "Ticket to Ride",
+     "id": "9209"
+    },
+    {
+     "name": "Puerto Rico",
+     "id": "3076"
+    },
+    {
+     "name": "Carcassonne",
+     "id": "822"
+    },
+    {
+     "name": "Bohnanza",
+     "id": "11"
+    },
+    {
+     "name": "Power Grid",
+     "id": "2651"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -7223,11 +7925,26 @@
     "how_you_win": "You build up your cave and farm efficiently across many categories over several rounds, then tally points at the end; whoever has optimized the most productive, well-rounded setup wins."
    },
    "similar": [
-    "Agricola",
-    "Le Havre",
-    "A Feast for Odin",
-    "Terra Mystica",
-    "Barrage"
+    {
+     "name": "Agricola",
+     "id": "31260"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "A Feast for Odin",
+     "id": "177736"
+    },
+    {
+     "name": "Terra Mystica",
+     "id": "120677"
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -7374,11 +8091,26 @@
     "how_you_win": "You build valuable buildings along the road and earn favor/prestige points through the game, and the player with the most total points at the end wins."
    },
    "similar": [
-    "Caylus",
-    "Le Havre",
-    "The Voyages of Marco Polo",
-    "Anachrony",
-    "Barrage"
+    {
+     "name": "Caylus",
+     "id": "18602"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -7569,11 +8301,26 @@
     "how_you_win": "You win by maneuvering your pieces to trap the opponent's king in checkmate, or if your opponent resigns or runs out of time."
    },
    "similar": [
-    "Xiangqi",
-    "Shogi",
-    "Go",
-    "Hive",
-    "Onitama"
+    {
+     "name": "Xiangqi",
+     "id": null
+    },
+    {
+     "name": "Shogi",
+     "id": null
+    },
+    {
+     "name": "Go",
+     "id": null
+    },
+    {
+     "name": "Hive",
+     "id": null
+    },
+    {
+     "name": "Onitama",
+     "id": null
+    }
    ],
    "teachers": [
     "GothamChess",
@@ -7721,11 +8468,26 @@
     "how_you_win": "You collect gold via your chosen character each round and spend it to build districts; once someone completes eight districts the game ends that round, and total district value plus bonuses determines the winner."
    },
    "similar": [
-    "Coup",
-    "Sheriff of Nottingham",
-    "Libertalia",
-    "The Resistance",
-    "Machi Koro"
+    {
+     "name": "Coup",
+     "id": "1653"
+    },
+    {
+     "name": "Sheriff of Nottingham",
+     "id": null
+    },
+    {
+     "name": "Libertalia",
+     "id": null
+    },
+    {
+     "name": "The Resistance",
+     "id": "41114"
+    },
+    {
+     "name": "Machi Koro",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -7848,11 +8610,26 @@
     "how_you_win": "Accumulate the most 'diamond' victory points across dozens of overlapping scoring systems spanning exploration, tech, and civilization development."
    },
    "similar": [
-    "The Castles of Burgundy",
-    "Trickerion",
-    "Bonfire",
-    "Anachrony",
-    "Great Western Trail"
+    {
+     "name": "The Castles of Burgundy",
+     "id": "84876"
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Bonfire",
+     "id": null
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/civolution/",
@@ -8016,11 +8793,26 @@
     "how_you_win": "Your team wins by correctly identifying all of your agent words before the other team does, or if the other team accidentally picks the assassin card."
    },
    "similar": [
-    "Codenames: Duet",
-    "Codenames: Pictures",
-    "Decrypto",
-    "Just One",
-    "Wavelength"
+    {
+     "name": "Codenames: Duet",
+     "id": null
+    },
+    {
+     "name": "Codenames: Pictures",
+     "id": null
+    },
+    {
+     "name": "Decrypto",
+     "id": null
+    },
+    {
+     "name": "Just One",
+     "id": null
+    },
+    {
+     "name": "Wavelength",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -8145,11 +8937,26 @@
     "how_you_win": "You and your partner win by jointly identifying all 15 agent words across both key cards before the turn counter runs out or an assassin card is picked."
    },
    "similar": [
-    "Codenames",
-    "Codenames: Pictures",
-    "The Crew",
-    "Hanabi",
-    "Decrypto"
+    {
+     "name": "Codenames",
+     "id": null
+    },
+    {
+     "name": "Codenames: Pictures",
+     "id": null
+    },
+    {
+     "name": "The Crew",
+     "id": null
+    },
+    {
+     "name": "Hanabi",
+     "id": null
+    },
+    {
+     "name": "Decrypto",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -8299,11 +9106,26 @@
     "how_you_win": "Your team wins by identifying all of your image-agents before the opposing team does, or if the opponents accidentally select the assassin."
    },
    "similar": [
-    "Codenames",
-    "Codenames: Duet",
-    "Dixit",
-    "Mysterium",
-    "Decrypto"
+    {
+     "name": "Codenames",
+     "id": null
+    },
+    {
+     "name": "Codenames: Duet",
+     "id": null
+    },
+    {
+     "name": "Dixit",
+     "id": null
+    },
+    {
+     "name": "Mysterium",
+     "id": null
+    },
+    {
+     "name": "Decrypto",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -8438,11 +9260,26 @@
     "how_you_win": "You win by advancing furthest on the most lucrative combination of tracks and cashing in end-game bonus tiles that reward your specific strategy."
    },
    "similar": [
-    "Concordia",
-    "The Voyages of Marco Polo",
-    "Grand Austria Hotel",
-    "Le Havre",
-    "Great Western Trail"
+    {
+     "name": "Concordia",
+     "id": "124361"
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -8594,11 +9431,26 @@
     "how_you_win": "You win by looting the most valuable cash, jewels, and strongbox items while avoiding getting shot or knocked off the train too often."
    },
    "similar": [
-    "Flamme Rouge",
-    "Adrenaline",
-    "King of Tokyo",
-    "Elysium",
-    "Hey, That's My Fish!"
+    {
+     "name": "Flamme Rouge",
+     "id": null
+    },
+    {
+     "name": "Adrenaline",
+     "id": null
+    },
+    {
+     "name": "King of Tokyo",
+     "id": null
+    },
+    {
+     "name": "Elysium",
+     "id": null
+    },
+    {
+     "name": "Hey, That's My Fish!",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -8750,11 +9602,26 @@
     "how_you_win": "You win by building a trade network and card engine tuned to score maximally off your chosen scoring card at game end."
    },
    "similar": [
-    "Concordia",
-    "The Great Zimbabwe",
-    "Trajan",
-    "Le Havre",
-    "Puerto Rico"
+    {
+     "name": "Concordia",
+     "id": "124361"
+    },
+    {
+     "name": "The Great Zimbabwe",
+     "id": null
+    },
+    {
+     "name": "Trajan",
+     "id": "741"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Puerto Rico",
+     "id": "3076"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -8891,11 +9758,26 @@
     "how_you_win": "You win by being the first to complete your card pyramid with the needed matches (keys or triads) among your rows."
    },
    "similar": [
-    "Abyss",
-    "Sushi Go!",
-    "Fantasy Realms",
-    "Jaipur",
-    "7 Wonders"
+    {
+     "name": "Abyss",
+     "id": null
+    },
+    {
+     "name": "Sushi Go!",
+     "id": null
+    },
+    {
+     "name": "Fantasy Realms",
+     "id": null
+    },
+    {
+     "name": "Jaipur",
+     "id": "54043"
+    },
+    {
+     "name": "7 Wonders",
+     "id": "68448"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -9037,11 +9919,26 @@
     "how_you_win": "Convert manufactured containers into cash through production, sale, and auction cycles; whoever has the most money when the container supply depletes and the game ends wins."
    },
    "similar": [
-    "Antiquity",
-    "Le Havre",
-    "Automobiles",
-    "Chinatown",
-    "Kanban EV"
+    {
+     "name": "Antiquity",
+     "id": "13122"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Automobiles",
+     "id": null
+    },
+    {
+     "name": "Chinatown",
+     "id": "47"
+    },
+    {
+     "name": "Kanban EV",
+     "id": "284378"
+    }
    ],
    "sources": [
     "https://elusivemeeple.com/2022/12/03/container-review/",
@@ -9191,11 +10088,26 @@
     "how_you_win": "You win by successfully bluffing, blocking, and eliminating opponents' influence cards until you're the last family standing."
    },
    "similar": [
-    "The Resistance",
-    "Love Letter",
-    "Skull",
-    "Secret Hitler",
-    "Bang!"
+    {
+     "name": "The Resistance",
+     "id": "41114"
+    },
+    {
+     "name": "Love Letter",
+     "id": "129622"
+    },
+    {
+     "name": "Skull",
+     "id": "67466"
+    },
+    {
+     "name": "Secret Hitler",
+     "id": "188834"
+    },
+    {
+     "name": "Bang!",
+     "id": "3955"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -9336,11 +10248,26 @@
     "how_you_win": "The team wins a mission by ensuring every assigned task card is won by the right player at the right trick, communicating only through one limited token per round."
    },
    "similar": [
-    "The Mind",
-    "Hanabi",
-    "Sky Team",
-    "Trick of the Rails",
-    "Decrypto"
+    {
+     "name": "The Mind",
+     "id": null
+    },
+    {
+     "name": "Hanabi",
+     "id": null
+    },
+    {
+     "name": "Sky Team",
+     "id": null
+    },
+    {
+     "name": "Trick of the Rails",
+     "id": null
+    },
+    {
+     "name": "Decrypto",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -9479,11 +10406,26 @@
     "how_you_win": "You win by controlling contested regions each scoring round to accumulate more victory points than your opponents by game end."
    },
    "similar": [
-    "Rising Sun",
-    "Blood Rage",
-    "Kemet",
-    "Root",
-    "Chaos in the Old World"
+    {
+     "name": "Rising Sun",
+     "id": null
+    },
+    {
+     "name": "Blood Rage",
+     "id": null
+    },
+    {
+     "name": "Kemet",
+     "id": "127023"
+    },
+    {
+     "name": "Root",
+     "id": "237182"
+    },
+    {
+     "name": "Chaos in the Old World",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -9624,11 +10566,26 @@
     "how_you_win": "Accumulate the most points by controlling majorities in regions and building efficiently timed temple/terrace structures across the shared map."
    },
    "similar": [
-    "Java",
-    "Mexica",
-    "Tikal",
-    "Web of Power",
-    "Torres"
+    {
+     "name": "Java",
+     "id": null
+    },
+    {
+     "name": "Mexica",
+     "id": null
+    },
+    {
+     "name": "Tikal",
+     "id": null
+    },
+    {
+     "name": "Web of Power",
+     "id": null
+    },
+    {
+     "name": "Torres",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -9761,11 +10718,26 @@
     "how_you_win": "Highest total score at game end wins; final scores typically land in the low 100s to mid 200s, tallied from multiple tracks and end-game bonuses."
    },
    "similar": [
-    "Bitoku",
-    "Ark Nova",
-    "Anachrony",
-    "Underwater Cities",
-    "Barrage"
+    {
+     "name": "Bitoku",
+     "id": null
+    },
+    {
+     "name": "Ark Nova",
+     "id": null
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/daitoshi/",
@@ -9910,11 +10882,26 @@
     "how_you_win": "Build an efficient engine that completes high-value contracts and advances your research track faster than opponents, converting actions into points across several parallel tracks."
    },
    "similar": [
-    "Lorenzo il Magnifico",
-    "Tzolk'in",
-    "The Gallerist",
-    "Barrage",
-    "On Mars"
+    {
+     "name": "Lorenzo il Magnifico",
+     "id": null
+    },
+    {
+     "name": "Tzolk'in",
+     "id": null
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -10070,11 +11057,26 @@
     "how_you_win": "Your team wins by causing the opposing team to rack up two miscommunication tokens before your own team collects two interception tokens against you."
    },
    "similar": [
-    "Codenames",
-    "Just One",
-    "Wavelength",
-    "The Mind",
-    "Concept"
+    {
+     "name": "Codenames",
+     "id": null
+    },
+    {
+     "name": "Just One",
+     "id": null
+    },
+    {
+     "name": "Wavelength",
+     "id": null
+    },
+    {
+     "name": "The Mind",
+     "id": null
+    },
+    {
+     "name": "Concept",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -10216,11 +11218,26 @@
     "how_you_win": "Fill your park sheet efficiently with high-value dinosaurs and attractions connected to exits, maximizing points across multiple scoring categories by game end."
    },
    "similar": [
-    "Dinosaur Island",
-    "Welcome To...",
-    "Cartographers",
-    "Petal",
-    "My City Roll & Write"
+    {
+     "name": "Dinosaur Island",
+     "id": null
+    },
+    {
+     "name": "Welcome To...",
+     "id": null
+    },
+    {
+     "name": "Cartographers",
+     "id": null
+    },
+    {
+     "name": "Petal",
+     "id": null
+    },
+    {
+     "name": "My City Roll & Write",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -10366,11 +11383,26 @@
     "how_you_win": "Score points steadily by guessing right as a listener or crafting clues that split the vote as storyteller, and be the first to cross the finish line on the score track."
    },
    "similar": [
-    "Mysterium",
-    "Concept",
-    "Once Upon a Time",
-    "Story Cubes",
-    "Imagine"
+    {
+     "name": "Mysterium",
+     "id": null
+    },
+    {
+     "name": "Concept",
+     "id": null
+    },
+    {
+     "name": "Once Upon a Time",
+     "id": null
+    },
+    {
+     "name": "Story Cubes",
+     "id": null
+    },
+    {
+     "name": "Imagine",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -10516,11 +11548,26 @@
     "how_you_win": "Out-compete other species for majority control across the most valuable habitats and elements over repeated scoring rounds, ending with the highest cumulative total."
    },
    "similar": [
-    "Dominant Species",
-    "Tichu",
-    "Vast: The Crystal Caverns",
-    "Root",
-    "Kanban EV"
+    {
+     "name": "Dominant Species",
+     "id": null
+    },
+    {
+     "name": "Tichu",
+     "id": null
+    },
+    {
+     "name": "Vast: The Crystal Caverns",
+     "id": null
+    },
+    {
+     "name": "Root",
+     "id": "237182"
+    },
+    {
+     "name": "Kanban EV",
+     "id": "284378"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -10654,11 +11701,26 @@
     "how_you_win": "Build an efficient engine of action/treasure cards to buy Victory cards faster and more efficiently than opponents before the Province pile (or three piles) empties."
    },
    "similar": [
-    "Dominion: Intrigue",
-    "Star Realms",
-    "Clank!",
-    "Puerto Rico",
-    "Ascension"
+    {
+     "name": "Dominion: Intrigue",
+     "id": null
+    },
+    {
+     "name": "Star Realms",
+     "id": null
+    },
+    {
+     "name": "Clank!",
+     "id": null
+    },
+    {
+     "name": "Puerto Rico",
+     "id": "3076"
+    },
+    {
+     "name": "Ascension",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -10813,11 +11875,26 @@
     "how_you_win": "Control a majority of the game's strongholds (or fulfill your faction's unique win condition, like the Bene Gesserit's prediction) at the end of a turn."
    },
    "similar": [
-    "Dune: Imperium",
-    "Rex: Final Days of an Empire",
-    "Cosmic Encounter",
-    "Twilight Imperium",
-    "Diplomacy"
+    {
+     "name": "Dune: Imperium",
+     "id": null
+    },
+    {
+     "name": "Rex: Final Days of an Empire",
+     "id": null
+    },
+    {
+     "name": "Cosmic Encounter",
+     "id": null
+    },
+    {
+     "name": "Twilight Imperium",
+     "id": null
+    },
+    {
+     "name": "Diplomacy",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -10962,11 +12039,26 @@
     "how_you_win": "Be the first to reach 10 victory points, earned through winning territory battles, gaining faction alliances, and playing scoring cards."
    },
    "similar": [
-    "Dune: Imperium – Uprising",
-    "Trickerion",
-    "Lords of Waterdeep",
-    "Tyrants of the Underdark",
-    "Clank!: A Deck-Building Adventure"
+    {
+     "name": "Dune: Imperium – Uprising",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Lords of Waterdeep",
+     "id": null
+    },
+    {
+     "name": "Tyrants of the Underdark",
+     "id": null
+    },
+    {
+     "name": "Clank!: A Deck-Building Adventure",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -11121,11 +12213,26 @@
     "how_you_win": "Reach the victory point threshold first through combat victories, faction favor, and scoring cards, or as a team in the 6-player mode."
    },
    "similar": [
-    "Dune: Imperium",
-    "Trickerion",
-    "Lords of Waterdeep",
-    "Clank!: A Deck-Building Adventure",
-    "Tyrants of the Underdark"
+    {
+     "name": "Dune: Imperium",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Lords of Waterdeep",
+     "id": null
+    },
+    {
+     "name": "Clank!: A Deck-Building Adventure",
+     "id": null
+    },
+    {
+     "name": "Tyrants of the Underdark",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -11262,11 +12369,26 @@
     "how_you_win": "The richest player at game end wins, with typical final totals around 125–175 points/money combined from cash and share value."
    },
    "similar": [
-    "Le Havre",
-    "Navegador",
-    "Imperial Steam",
-    "John Company",
-    "Merchant of Venus"
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Navegador",
+     "id": null
+    },
+    {
+     "name": "Imperial Steam",
+     "id": null
+    },
+    {
+     "name": "John Company",
+     "id": null
+    },
+    {
+     "name": "Merchant of Venus",
+     "id": null
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/east-india-companies/",
@@ -11396,11 +12518,26 @@
     "how_you_win": "Plan the most efficient escape route to gather the most money and reach an exit tile before the map closes off, scoring highest at the end."
    },
    "similar": [
-    "On Mars",
-    "The Networks",
-    "Vinhos Deluxe Edition",
-    "Kanban EV",
-    "CO2: Second Chance"
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "The Networks",
+     "id": null
+    },
+    {
+     "name": "Vinhos Deluxe Edition",
+     "id": "175640"
+    },
+    {
+     "name": "Kanban EV",
+     "id": "284378"
+    },
+    {
+     "name": "CO2: Second Chance",
+     "id": "214887"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -11573,11 +12710,26 @@
     "how_you_win": "Build the highest-scoring city by playing point-generating cards, completing special events, and end-game bonus conditions before the four seasons end."
    },
    "similar": [
-    "Wingspan",
-    "Res Arcana",
-    "Menara",
-    "Viticulture",
-    "Paladins of the West Kingdom"
+    {
+     "name": "Wingspan",
+     "id": null
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "Menara",
+     "id": null
+    },
+    {
+     "name": "Viticulture",
+     "id": null
+    },
+    {
+     "name": "Paladins of the West Kingdom",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -11708,8 +12860,14 @@
     "how_you_win": "Accumulate the highest total across sunlight, forest-size, and fertility bonuses by the end of round 4, with scores commonly landing in the 80-200 range."
    },
    "similar": [
-    "Photosynthesis",
-    "Tang Garden"
+    {
+     "name": "Photosynthesis",
+     "id": null
+    },
+    {
+     "name": "Tang Garden",
+     "id": null
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/evergreen/",
@@ -11868,11 +13026,26 @@
     "how_you_win": "Build and protect species that accumulate the most points from population size and traits by the end of the final round."
    },
    "similar": [
-    "Evolution",
-    "Wingspan",
-    "Bios: Megafauna",
-    "Dominant Species",
-    "Ecos: First Continent"
+    {
+     "name": "Evolution",
+     "id": null
+    },
+    {
+     "name": "Wingspan",
+     "id": null
+    },
+    {
+     "name": "Bios: Megafauna",
+     "id": null
+    },
+    {
+     "name": "Dominant Species",
+     "id": null
+    },
+    {
+     "name": "Ecos: First Continent",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -12033,11 +13206,26 @@
     "how_you_win": "You win by being the only player left who hasn't drawn an exploding kitten card, using defuse and deflection cards to survive."
    },
    "similar": [
-    "Munchkin",
-    "Sushi Go Party!",
-    "Skull",
-    "Throw Throw Burrito",
-    "Coup"
+    {
+     "name": "Munchkin",
+     "id": null
+    },
+    {
+     "name": "Sushi Go Party!",
+     "id": null
+    },
+    {
+     "name": "Skull",
+     "id": "67466"
+    },
+    {
+     "name": "Throw Throw Burrito",
+     "id": null
+    },
+    {
+     "name": "Coup",
+     "id": "1653"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -12175,11 +13363,26 @@
     "how_you_win": "You win by efficiently chaining cards to advance building projects and fulfill objectives, ending with the most victory points."
    },
    "similar": [
-    "Raiders of the North Sea",
-    "Architects of the West Kingdom",
-    "Trade Towns",
-    "Fresh Fish",
-    "Blackout: Hong Kong"
+    {
+     "name": "Raiders of the North Sea",
+     "id": null
+    },
+    {
+     "name": "Architects of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Trade Towns",
+     "id": null
+    },
+    {
+     "name": "Fresh Fish",
+     "id": null
+    },
+    {
+     "name": "Blackout: Hong Kong",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -12320,11 +13523,26 @@
     "how_you_win": "You win by building the most efficient network of canals and settlements to generate goods and complete scoring bonuses by game end."
    },
    "similar": [
-    "Fresh Fish",
-    "Power Grid",
-    "Le Havre",
-    "Bora Bora",
-    "Fields of Arle"
+    {
+     "name": "Fresh Fish",
+     "id": null
+    },
+    {
+     "name": "Power Grid",
+     "id": "2651"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Bora Bora",
+     "id": "127060"
+    },
+    {
+     "name": "Fields of Arle",
+     "id": null
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -12486,11 +13704,26 @@
     "how_you_win": "You win by assembling the most efficient chain of factory cards to fulfill contracts and rack up building bonuses before the game ends."
    },
    "similar": [
-    "Gizmos",
-    "Trickerion",
-    "Machi Koro",
-    "Century: Spice Road",
-    "Roll for the Galaxy"
+    {
+     "name": "Gizmos",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Machi Koro",
+     "id": null
+    },
+    {
+     "name": "Century: Spice Road",
+     "id": "209685"
+    },
+    {
+     "name": "Roll for the Galaxy",
+     "id": null
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -12643,11 +13876,26 @@
     "how_you_win": "You win by using worker-placement actions to gather resources and acquire occupations/animals, then packing your player board efficiently enough to avoid negative points for empty squares."
    },
    "similar": [
-    "Le Havre",
-    "Caverna",
-    "Agricola",
-    "Fields of Arle",
-    "Barrage"
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Caverna",
+     "id": null
+    },
+    {
+     "name": "Agricola",
+     "id": "31260"
+    },
+    {
+     "name": "Fields of Arle",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -12772,7 +14020,10 @@
     "how_you_win": "Score the most prestige points after 5 rounds by combining Major Project majorities, legislation outcomes, and character bonuses; ties result in a shared victory."
    },
    "similar": [
-    "Bruxelles 1893: Belle Époque"
+    {
+     "name": "Bruxelles 1893: Belle Époque",
+     "id": null
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/federation/",
@@ -12926,11 +14177,26 @@
     "how_you_win": "You win by cleverly moving meeples to trigger tile and djinn effects, accumulating the most gold and points by the end of the game."
    },
    "similar": [
-    "The Isle of Cats",
-    "Yspahan",
-    "Trekking Through History",
-    "Raiders of the North Sea",
-    "Lords of Vegas"
+    {
+     "name": "The Isle of Cats",
+     "id": null
+    },
+    {
+     "name": "Yspahan",
+     "id": null
+    },
+    {
+     "name": "Trekking Through History",
+     "id": null
+    },
+    {
+     "name": "Raiders of the North Sea",
+     "id": null
+    },
+    {
+     "name": "Lords of Vegas",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -13063,11 +14329,26 @@
     "how_you_win": "Accumulate the most victory points by completing quests early (they pay less the longer they sit), building and connecting flotilla tiles, and winning guild seals (10 points for first, 5 for second per guild)."
    },
    "similar": [
-    "Trickerion",
-    "Anachrony",
-    "Terraforming Mars",
-    "Great Western Trail",
-    "Underwater Cities"
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    },
+    {
+     "name": "Terraforming Mars",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    }
    ],
    "sources": [
     "https://spacebiff.com/2020/01/15/flotilla/",
@@ -13220,11 +14501,26 @@
     "how_you_win": "You build a machine of restaurants, staff, and marketing that serves more customers more profitably than anyone else, then hold onto that lead to the final count."
    },
    "similar": [
-    "Brass: Birmingham",
-    "Underwater Cities",
-    "Container",
-    "Automobiles",
-    "Anachrony"
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "Automobiles",
+     "id": null
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -13369,11 +14665,26 @@
     "how_you_win": "You out-expand and out-tech your rivals across multiple scoring tracks at once, timing your buildings and federations to hit round and final bonuses better than anyone else."
    },
    "similar": [
-    "Terra Mystica",
-    "The Great Zimbabwe",
-    "Underwater Cities",
-    "Anachrony",
-    "Teotihuacan: City of Gods"
+    {
+     "name": "Terra Mystica",
+     "id": "120677"
+    },
+    {
+     "name": "The Great Zimbabwe",
+     "id": null
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -13535,11 +14846,26 @@
     "how_you_win": "Tally points from multiple sources across the three eras — the highest total becomes the new company CEO."
    },
    "similar": [
-    "Anachrony",
-    "Barrage",
-    "On Mars",
-    "Great Western Trail",
-    "Lisboa"
+    {
+     "name": "Anachrony",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Lisboa",
+     "id": "161533"
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/galactic-cruise/",
@@ -13680,11 +15006,26 @@
     "how_you_win": "You build a ship greedy enough to carry valuable cargo but sturdy enough to survive the flight, then cash in deliveries while losing less than your rivals to disasters."
    },
    "similar": [
-    "Space Alert",
-    "Merchants & Marauders",
-    "Roll for the Galaxy",
-    "Cosmic Encounter",
-    "Flotilla"
+    {
+     "name": "Space Alert",
+     "id": null
+    },
+    {
+     "name": "Merchants & Marauders",
+     "id": null
+    },
+    {
+     "name": "Roll for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Cosmic Encounter",
+     "id": null
+    },
+    {
+     "name": "Flotilla",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -13826,11 +15167,26 @@
     "how_you_win": "You cultivate artists, sell and exhibit their art profitably, and climb the reputation track faster than your rivals, converting a well-run gallery into the highest end-game score."
    },
    "similar": [
-    "On Mars",
-    "Vinhos Deluxe Edition",
-    "Kanban: Automotive Revolution",
-    "Weather Machine",
-    "Lisboa"
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Vinhos Deluxe Edition",
+     "id": "175640"
+    },
+    {
+     "name": "Kanban: Automotive Revolution",
+     "id": "109276"
+    },
+    {
+     "name": "Weather Machine",
+     "id": "237179"
+    },
+    {
+     "name": "Lisboa",
+     "id": "161533"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -13984,11 +15340,26 @@
     "how_you_win": "You expand and defend your visible districts in the shared city while stockpiling scoring tiles in hand, ending with more accumulated points than anyone else."
    },
    "similar": [
-    "Suburbia",
-    "Between Two Cities",
-    "Innovation",
-    "7 Wonders",
-    "Yokohama"
+    {
+     "name": "Suburbia",
+     "id": "81185"
+    },
+    {
+     "name": "Between Two Cities",
+     "id": "168435"
+    },
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "7 Wonders",
+     "id": "68448"
+    },
+    {
+     "name": "Yokohama",
+     "id": "196340"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -14135,11 +15506,26 @@
     "how_you_win": "The party wins by clearing a scenario's stated objective, usually defeating specific enemies or reaching a location, while keeping characters from exhausting their hands or losing all their health."
    },
    "similar": [
-    "Gloomhaven",
-    "Frosthaven",
-    "Sleeping Gods",
-    "Tainted Grail: The Fall of Avalon",
-    "Marvel Champions: The Card Game"
+    {
+     "name": "Gloomhaven",
+     "id": null
+    },
+    {
+     "name": "Frosthaven",
+     "id": null
+    },
+    {
+     "name": "Sleeping Gods",
+     "id": null
+    },
+    {
+     "name": "Tainted Grail: The Fall of Avalon",
+     "id": null
+    },
+    {
+     "name": "Marvel Champions: The Card Game",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -14272,11 +15658,26 @@
     "how_you_win": "You build an efficient engine of students and golems, converting resources and completed goals into victory points faster and more consistently than your opponents."
    },
    "similar": [
-    "Lorenzo il Magnifico",
-    "Grand Austria Hotel",
-    "Tzolk'in: The Mayan Calendar",
-    "Underwater Cities",
-    "Trickerion: Legends of Illusion"
+    {
+     "name": "Lorenzo il Magnifico",
+     "id": null
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "Trickerion: Legends of Illusion",
+     "id": null
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -14420,11 +15821,26 @@
     "how_you_win": "You move and reinforce knights to control the most valuable regions right when scoring occurs, repeating this over nine rounds to finish with the highest total."
    },
    "similar": [
-    "Tikal",
-    "Web of Power",
-    "Louis XIV",
-    "Traders of Genoa",
-    "Chinatown"
+    {
+     "name": "Tikal",
+     "id": null
+    },
+    {
+     "name": "Web of Power",
+     "id": null
+    },
+    {
+     "name": "Louis XIV",
+     "id": null
+    },
+    {
+     "name": "Traders of Genoa",
+     "id": null
+    },
+    {
+     "name": "Chinatown",
+     "id": "47"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -14570,11 +15986,26 @@
     "how_you_win": "You build the most efficient cattle-driving and railroad engine, repeatedly delivering strong herds while collecting building and objective bonuses, to end with the highest total score."
    },
    "similar": [
-    "Orléans",
-    "Voyages of Marco Polo",
-    "Concordia",
-    "Brass: Birmingham",
-    "Le Havre"
+    {
+     "name": "Orléans",
+     "id": null
+    },
+    {
+     "name": "Voyages of Marco Polo",
+     "id": null
+    },
+    {
+     "name": "Concordia",
+     "id": "124361"
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -14712,11 +16143,26 @@
     "how_you_win": "You build an efficient herd-and-worker engine to deliver valuable cattle repeatedly while grabbing building and objective bonuses, finishing with the highest score."
    },
    "similar": [
-    "Great Western Trail",
-    "Great Western Trail: New Zealand",
-    "Orléans",
-    "Concordia",
-    "Voyages of Marco Polo"
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail: New Zealand",
+     "id": null
+    },
+    {
+     "name": "Orléans",
+     "id": null
+    },
+    {
+     "name": "Concordia",
+     "id": "124361"
+    },
+    {
+     "name": "Voyages of Marco Polo",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -14856,11 +16302,26 @@
     "how_you_win": "You upgrade your deck and herd to deliver increasingly valuable sheep while collecting building and objective bonuses, ending with the highest score."
    },
    "similar": [
-    "Great Western Trail",
-    "Great Western Trail: Argentina",
-    "Orléans",
-    "Concordia",
-    "Voyages of Marco Polo"
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail: Argentina",
+     "id": null
+    },
+    {
+     "name": "Orléans",
+     "id": null
+    },
+    {
+     "name": "Concordia",
+     "id": "124361"
+    },
+    {
+     "name": "Voyages of Marco Polo",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -15011,11 +16472,26 @@
     "how_you_win": "You build routes and huts to produce specific goods, then use god cards and monuments to multiply that production into victory points, out-scaling opponents in your chosen specialty."
    },
    "similar": [
-    "Antiquity",
-    "Food Chain Magnate",
-    "Indonesia",
-    "Container",
-    "Bus: Cottbus Extra"
+    {
+     "name": "Antiquity",
+     "id": "13122"
+    },
+    {
+     "name": "Food Chain Magnate",
+     "id": "175914"
+    },
+    {
+     "name": "Indonesia",
+     "id": "19777"
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "Bus: Cottbus Extra",
+     "id": null
+    }
    ],
    "teachers": [
     "Heavy Cardboard",
@@ -15155,11 +16631,26 @@
     "how_you_win": "You place workers efficiently to gather resources and complete valuable card sets while timing your currency exchanges, ending with the most accumulated points."
    },
    "similar": [
-    "Amerigo",
-    "Hansa Teutonica",
-    "Fresko",
-    "Vasco da Gama",
-    "Cacao"
+    {
+     "name": "Amerigo",
+     "id": "38924"
+    },
+    {
+     "name": "Hansa Teutonica",
+     "id": null
+    },
+    {
+     "name": "Fresko",
+     "id": null
+    },
+    {
+     "name": "Vasco da Gama",
+     "id": null
+    },
+    {
+     "name": "Cacao",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -15292,11 +16783,26 @@
     "how_you_win": "You use your limited actions to claim trade routes and upgrade your abilities faster than opponents, banking points from routes and bonuses to finish with the highest total."
    },
    "similar": [
-    "Concordia",
-    "El Grande",
-    "The Voyages of Marco Polo",
-    "Navegador",
-    "Yokohama"
+    {
+     "name": "Concordia",
+     "id": "124361"
+    },
+    {
+     "name": "El Grande",
+     "id": null
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Navegador",
+     "id": null
+    },
+    {
+     "name": "Yokohama",
+     "id": "196340"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -15435,11 +16941,26 @@
     "how_you_win": "You place terrain tokens to form valuable habitat patterns and settle animals onto completed habitats, ending with the highest combined score from habitats and animals."
    },
    "similar": [
-    "Cascadia",
-    "Calico",
-    "Dorfromantik: The Board Game",
-    "Photosynthesis",
-    "Sobek"
+    {
+     "name": "Cascadia",
+     "id": null
+    },
+    {
+     "name": "Calico",
+     "id": null
+    },
+    {
+     "name": "Dorfromantik: The Board Game",
+     "id": null
+    },
+    {
+     "name": "Photosynthesis",
+     "id": null
+    },
+    {
+     "name": "Sobek",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -15586,11 +17107,26 @@
     "how_you_win": "You win by converting resources through buildings into money and constructed buildings/ships, accumulating the highest combined value at the end of the round track."
    },
    "similar": [
-    "Agricola",
-    "Caverna",
-    "A Feast for Odin",
-    "Puerto Rico",
-    "Fields of Arle"
+    {
+     "name": "Agricola",
+     "id": "31260"
+    },
+    {
+     "name": "Caverna",
+     "id": null
+    },
+    {
+     "name": "A Feast for Odin",
+     "id": "177736"
+    },
+    {
+     "name": "Puerto Rico",
+     "id": "3076"
+    },
+    {
+     "name": "Fields of Arle",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -15726,11 +17262,26 @@
     "how_you_win": "You win by arranging barrel tiles into long same-colored horizontal runs across upgraded rows, maximizing multiplied scoring at game end."
    },
    "similar": [
-    "Trajan",
-    "Villagers",
-    "Barrage",
-    "The Voyages of Marco Polo",
-    "Vinhos"
+    {
+     "name": "Trajan",
+     "id": "741"
+    },
+    {
+     "name": "Villagers",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Vinhos",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -15871,11 +17422,26 @@
     "how_you_win": "You win by fulfilling your class's unique objective (e.g., the Working Class securing enough welfare and wages, the Capitalist accumulating enough profit) before or better than your rivals achieve theirs."
    },
    "similar": [
-    "Kapital",
-    "Root",
-    "Founders of Gloomhaven",
-    "Brass: Birmingham",
-    "Vital Lacerda's Lisboa"
+    {
+     "name": "Kapital",
+     "id": null
+    },
+    {
+     "name": "Root",
+     "id": "237182"
+    },
+    {
+     "name": "Founders of Gloomhaven",
+     "id": null
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Vital Lacerda's Lisboa",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -16043,11 +17609,26 @@
     "how_you_win": "You win by successfully landing, claiming, and industrializing enough valuable sites across the solar system to out-score opponents by game end."
    },
    "similar": [
-    "Bios: Megafauna",
-    "Pax Renaissance",
-    "Greenland",
-    "Age of Steam",
-    "Gaia Project"
+    {
+     "name": "Bios: Megafauna",
+     "id": null
+    },
+    {
+     "name": "Pax Renaissance",
+     "id": null
+    },
+    {
+     "name": "Greenland",
+     "id": null
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -16182,11 +17763,26 @@
     "how_you_win": "You win by accumulating the highest total of status-point cards while ensuring you are not the player left with the smallest remaining bankroll."
    },
    "similar": [
-    "For Sale",
-    "Ra",
-    "Modern Art",
-    "Verräter",
-    "Medici"
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "Modern Art",
+     "id": "118"
+    },
+    {
+     "name": "Verräter",
+     "id": null
+    },
+    {
+     "name": "Medici",
+     "id": "46"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -16326,11 +17922,26 @@
     "how_you_win": "You win by out-earning opponents through shrewd factory investment and timing your commodity trades better than the market punishes you."
    },
    "similar": [
-    "Food Chain Magnate",
-    "Antiquity",
-    "The Great Zimbabwe",
-    "Indonesia",
-    "Container"
+    {
+     "name": "Food Chain Magnate",
+     "id": "175914"
+    },
+    {
+     "name": "Antiquity",
+     "id": "13122"
+    },
+    {
+     "name": "The Great Zimbabwe",
+     "id": null
+    },
+    {
+     "name": "Indonesia",
+     "id": "19777"
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    }
    ],
    "teachers": [
     "Heavy Cardboard",
@@ -16470,11 +18081,26 @@
     "how_you_win": "You win by holding shares in companies whose stock values you helped grow through smart track expansion, ending with the highest personal net worth."
    },
    "similar": [
-    "Irish Gauge",
-    "Chicago Express",
-    "Age of Steam",
-    "18xx family",
-    "Snowdonia"
+    {
+     "name": "Irish Gauge",
+     "id": null
+    },
+    {
+     "name": "Chicago Express",
+     "id": null
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "18xx family",
+     "id": null
+    },
+    {
+     "name": "Snowdonia",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -16595,11 +18221,26 @@
     "how_you_win": "You win by building the most efficient combination of buildings and completing objective cards while using raids to hamper rivals, ending with the highest total score."
    },
    "similar": [
-    "Imperial Settlers",
-    "Raiders of the North Sea",
-    "Champions of Midgard",
-    "Trickerion",
-    "Robinson Crusoe"
+    {
+     "name": "Imperial Settlers",
+     "id": null
+    },
+    {
+     "name": "Raiders of the North Sea",
+     "id": null
+    },
+    {
+     "name": "Champions of Midgard",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Robinson Crusoe",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -16753,11 +18394,26 @@
     "how_you_win": "Build the most efficient factory-and-rail engine, fulfill profitable contracts, and hold the strongest net worth when the sudden-death ending is triggered."
    },
    "similar": [
-    "Age of Steam",
-    "Irish Gauge",
-    "Indonesia",
-    "Brass: Birmingham",
-    "Snowdonia"
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Irish Gauge",
+     "id": null
+    },
+    {
+     "name": "Indonesia",
+     "id": "19777"
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Snowdonia",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -16897,11 +18553,26 @@
     "how_you_win": "Score the most points by completing your civilization's mission objectives and building up tag synergies across the ages until the game ends."
    },
    "similar": [
-    "Imperium: Legends",
-    "Race for the Galaxy",
-    "Innovation",
-    "Nemo's War",
-    "Tyrants of the Underdark"
+    {
+     "name": "Imperium: Legends",
+     "id": null
+    },
+    {
+     "name": "Race for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "Nemo's War",
+     "id": null
+    },
+    {
+     "name": "Tyrants of the Underdark",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -17041,11 +18712,26 @@
     "how_you_win": "Complete your civilization's objectives and accumulate tag-based bonuses to have the highest score when the final age ends."
    },
    "similar": [
-    "Imperium: Classics",
-    "Race for the Galaxy",
-    "Innovation",
-    "Nemo's War",
-    "Tyrants of the Underdark"
+    {
+     "name": "Imperium: Classics",
+     "id": null
+    },
+    {
+     "name": "Race for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "Nemo's War",
+     "id": null
+    },
+    {
+     "name": "Tyrants of the Underdark",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -17200,11 +18886,26 @@
     "how_you_win": "Grow and merge companies to dominate shipping and production routes, converting efficient logistics into the highest net worth by game's end."
    },
    "similar": [
-    "Antiquity",
-    "Container",
-    "The Great Zimbabwe",
-    "Brass: Birmingham",
-    "Age of Steam"
+    {
+     "name": "Antiquity",
+     "id": "13122"
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "The Great Zimbabwe",
+     "id": null
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -17329,11 +19030,26 @@
     "how_you_win": "Place tiles to keep all six of your color scores climbing evenly, since your final score is determined by your weakest color, not your strongest."
    },
    "similar": [
-    "Ingenious",
-    "Qwirkle",
-    "Kingdomino",
-    "Azul",
-    "Tsuro"
+    {
+     "name": "Ingenious",
+     "id": null
+    },
+    {
+     "name": "Qwirkle",
+     "id": null
+    },
+    {
+     "name": "Kingdomino",
+     "id": null
+    },
+    {
+     "name": "Azul",
+     "id": null
+    },
+    {
+     "name": "Tsuro",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -17476,11 +19192,26 @@
     "how_you_win": "Collect the required number of achievement cards (earned via top-card values and special effects) before your opponents, or hold the highest score if the age-10 card supply is exhausted first."
    },
    "similar": [
-    "Innovation Ultimate",
-    "Glory to Rome",
-    "Res Arcana",
-    "Race for the Galaxy",
-    "Roll for the Galaxy"
+    {
+     "name": "Innovation Ultimate",
+     "id": null
+    },
+    {
+     "name": "Glory to Rome",
+     "id": null
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "Race for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Roll for the Galaxy",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -17614,11 +19345,26 @@
     "how_you_win": "Reach the required number of achievements before your opponents, or hold the highest score if the top-age deck is exhausted first."
    },
    "similar": [
-    "Innovation",
-    "Res Arcana",
-    "Glory to Rome",
-    "Race for the Galaxy",
-    "Roll for the Galaxy"
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "Glory to Rome",
+     "id": null
+    },
+    {
+     "name": "Race for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Roll for the Galaxy",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -17748,11 +19494,26 @@
     "how_you_win": "Build the most efficient technology-development engine, completing era objectives and accumulating bonuses to finish with the highest total score."
    },
    "similar": [
-    "On Mars",
-    "Gaia Project",
-    "Barrage",
-    "The Gallerist",
-    "Underwater Cities"
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -17898,11 +19659,26 @@
     "how_you_win": "Buy and time shares wisely and push companies to pay dividends at the right moment so you end with more cash than everyone else."
    },
    "similar": [
-    "Chicago Express",
-    "Australian Rails",
-    "1830",
-    "Steam Barons",
-    "Volldampf"
+    {
+     "name": "Chicago Express",
+     "id": null
+    },
+    {
+     "name": "Australian Rails",
+     "id": null
+    },
+    {
+     "name": "1830",
+     "id": null
+    },
+    {
+     "name": "Steam Barons",
+     "id": null
+    },
+    {
+     "name": "Volldampf",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -18032,11 +19808,26 @@
     "how_you_win": "Build the largest, most efficiently connected garden network and grab upgrade bonuses before opponents cut off your links."
    },
    "similar": [
-    "Azul",
-    "Yspahan",
-    "Coloma",
-    "Habitats",
-    "Cacao"
+    {
+     "name": "Azul",
+     "id": null
+    },
+    {
+     "name": "Yspahan",
+     "id": null
+    },
+    {
+     "name": "Coloma",
+     "id": null
+    },
+    {
+     "name": "Habitats",
+     "id": null
+    },
+    {
+     "name": "Cacao",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -18168,11 +19959,26 @@
     "how_you_win": "Be the first to gather the target number of rubies by efficiently chaining tile actions to acquire and trade up goods."
    },
    "similar": [
-    "The Voyages of Marco Polo",
-    "Orleans",
-    "Merchants of Venice",
-    "Trickerion",
-    "The Gallerist"
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Orleans",
+     "id": null
+    },
+    {
+     "name": "Merchants of Venice",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -18308,11 +20114,26 @@
     "how_you_win": "Build the most efficient multi-resource production engine and cash in development bonuses before the final era ends."
    },
    "similar": [
-    "7 Wonders",
-    "Res Arcana",
-    "Century: Spice Road",
-    "Terraforming Mars",
-    "Bloodstones"
+    {
+     "name": "7 Wonders",
+     "id": "68448"
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "Century: Spice Road",
+     "id": "209685"
+    },
+    {
+     "name": "Terraforming Mars",
+     "id": null
+    },
+    {
+     "name": "Bloodstones",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -18461,11 +20282,26 @@
     "how_you_win": "The team succeeds together by maximizing correct guesses, ideally reaching a perfect score."
    },
    "similar": [
-    "Codenames",
-    "Wavelength",
-    "The Mind",
-    "Decrypto",
-    "Concept"
+    {
+     "name": "Codenames",
+     "id": null
+    },
+    {
+     "name": "Wavelength",
+     "id": null
+    },
+    {
+     "name": "The Mind",
+     "id": null
+    },
+    {
+     "name": "Decrypto",
+     "id": null
+    },
+    {
+     "name": "Concept",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -18597,11 +20433,26 @@
     "how_you_win": "Optimize your production line and complete more valuable orders and objectives than your opponents before the game ends."
    },
    "similar": [
-    "Kanban: Automotive Revolution",
-    "On Mars",
-    "Gaia Project",
-    "Barrage",
-    "Lisboa"
+    {
+     "name": "Kanban: Automotive Revolution",
+     "id": "109276"
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Lisboa",
+     "id": "161533"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -18748,11 +20599,26 @@
     "how_you_win": "Win key tile auctions to assemble an efficient village while also exploiting both your own and opponents' tiles for resources and points."
    },
    "similar": [
-    "Suburbia",
-    "Village",
-    "Caylus",
-    "The Voyages of Marco Polo",
-    "Alien Frontiers"
+    {
+     "name": "Suburbia",
+     "id": "81185"
+    },
+    {
+     "name": "Village",
+     "id": "104006"
+    },
+    {
+     "name": "Caylus",
+     "id": "18602"
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Alien Frontiers",
+     "id": "48726"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -18887,11 +20753,26 @@
     "how_you_win": "Climb the economy, culture, and military tracks efficiently and claim achievements ahead of opponents to finish with the most points."
    },
    "similar": [
-    "Trajan",
-    "Tzolk'in: The Mayan Calendar",
-    "Yokohama",
-    "Teotihuacan: City of Gods",
-    "Nusfjord"
+    {
+     "name": "Trajan",
+     "id": "741"
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Yokohama",
+     "id": "196340"
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    },
+    {
+     "name": "Nusfjord",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -19026,11 +20907,26 @@
     "how_you_win": "You win by aligning your hidden loyalty with the faction that ends up strongest and by having contributed strongly to that faction's regions."
    },
    "similar": [
-    "El Grande",
-    "Inis",
-    "Chaos in the Old World",
-    "Tammany Hall",
-    "Blood Rage"
+    {
+     "name": "El Grande",
+     "id": null
+    },
+    {
+     "name": "Inis",
+     "id": null
+    },
+    {
+     "name": "Chaos in the Old World",
+     "id": null
+    },
+    {
+     "name": "Tammany Hall",
+     "id": null
+    },
+    {
+     "name": "Blood Rage",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -19180,11 +21076,26 @@
     "how_you_win": "You win by racing to 20 victory points through dice rolls and Tokyo occupation, or by being the last monster left alive."
    },
    "similar": [
-    "King of New York",
-    "Munchkin",
-    "Cthulhu Wars",
-    "Dice Forge",
-    "Machi Koro"
+    {
+     "name": "King of New York",
+     "id": null
+    },
+    {
+     "name": "Munchkin",
+     "id": null
+    },
+    {
+     "name": "Cthulhu Wars",
+     "id": null
+    },
+    {
+     "name": "Dice Forge",
+     "id": null
+    },
+    {
+     "name": "Machi Koro",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -19329,11 +21240,26 @@
     "how_you_win": "You win by arranging dominoes so that large matching-terrain regions overlap with as many crowns as possible."
    },
    "similar": [
-    "Azul",
-    "Kingdomino Origins",
-    "Karuba",
-    "Cascadia",
-    "Isle of Cats"
+    {
+     "name": "Azul",
+     "id": null
+    },
+    {
+     "name": "Kingdomino Origins",
+     "id": null
+    },
+    {
+     "name": "Karuba",
+     "id": null
+    },
+    {
+     "name": "Cascadia",
+     "id": null
+    },
+    {
+     "name": "Isle of Cats",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -19468,11 +21394,26 @@
     "how_you_win": "You win by efficiently developing engine and body technology, selling cars profitably, and placing well in the Grand Prix races."
    },
    "similar": [
-    "Kraftwagen (2011)",
-    "Automobiles",
-    "Age of Steam",
-    "Container",
-    "Long Shot: The Dice Game"
+    {
+     "name": "Kraftwagen (2011)",
+     "id": null
+    },
+    {
+     "name": "Automobiles",
+     "id": null
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "Long Shot: The Dice Game",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -19611,11 +21552,26 @@
     "how_you_win": "You win by developing a strong mix of mining, production, and trading actions that outpaces opponents' points across several scoring categories."
    },
    "similar": [
-    "Le Havre",
-    "Brass: Birmingham",
-    "Underwater Cities",
-    "Barrage",
-    "Great Western Trail"
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -19761,11 +21717,26 @@
     "how_you_win": "You win by chaining production and construction actions into an efficient long-term engine that scores across many categories by game end."
    },
    "similar": [
-    "Vinhos",
-    "On Mars",
-    "Great Western Trail",
-    "The Gallerist",
-    "Brass: Birmingham"
+    {
+     "name": "Vinhos",
+     "id": null
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -19894,11 +21865,26 @@
     "how_you_win": "You win by efficiently gathering resources and constructing a well-chosen combination of buildings that scores across multiple categories."
    },
    "similar": [
-    "Village",
-    "Grand Austria Hotel",
-    "Viticulture",
-    "Agricola",
-    "New Bedford"
+    {
+     "name": "Village",
+     "id": "104006"
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    },
+    {
+     "name": "Viticulture",
+     "id": null
+    },
+    {
+     "name": "Agricola",
+     "id": "31260"
+    },
+    {
+     "name": "New Bedford",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -20030,11 +22016,26 @@
     "how_you_win": "You win by building an efficient income-generating tableau, managing poverty, and repaying your loans while ending with more cash than opponents."
    },
    "similar": [
-    "Brass: Birmingham",
-    "Race for the Galaxy",
-    "San Juan",
-    "Glory to Rome",
-    "Coup"
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Race for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "San Juan",
+     "id": null
+    },
+    {
+     "name": "Glory to Rome",
+     "id": null
+    },
+    {
+     "name": "Coup",
+     "id": "1653"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -20171,11 +22172,26 @@
     "how_you_win": "As the Fellowship you advance the Quest track while building up skills and holding off Sauron; as Sauron you dominate regions and race to catch Frodo before the quest completes."
    },
    "similar": [
-    "7 Wonders Duel",
-    "Star Wars: The Duel",
-    "Watergate",
-    "Jaws the Board Game",
-    "Battle Line"
+    {
+     "name": "7 Wonders Duel",
+     "id": "173346"
+    },
+    {
+     "name": "Star Wars: The Duel",
+     "id": null
+    },
+    {
+     "name": "Watergate",
+     "id": null
+    },
+    {
+     "name": "Jaws the Board Game",
+     "id": null
+    },
+    {
+     "name": "Battle Line",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -20307,11 +22323,26 @@
     "how_you_win": "Build an efficient personal engine by claiming high-value development cards and resource conversions before opponents, then convert everything into victory points at game end."
    },
    "similar": [
-    "Great Western Trail",
-    "Tzolk'in: The Mayan Calendar",
-    "The Voyages of Marco Polo",
-    "Underwater Cities",
-    "Barrage"
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -20441,11 +22472,26 @@
     "how_you_win": "Commit to expeditions where you can play enough high-value cards to overcome the -20 point starting cost, while avoiding spreading too thin across colors."
    },
    "similar": [
-    "Jaipur",
-    "Battle Line",
-    "Schotten Totten",
-    "7 Wonders Duel",
-    "Air, Land, & Sea"
+    {
+     "name": "Jaipur",
+     "id": "54043"
+    },
+    {
+     "name": "Battle Line",
+     "id": null
+    },
+    {
+     "name": "Schotten Totten",
+     "id": null
+    },
+    {
+     "name": "7 Wonders Duel",
+     "id": "173346"
+    },
+    {
+     "name": "Air, Land, & Sea",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -20600,11 +22646,26 @@
     "how_you_win": "Efficiently combine deckbuilding purchases with worker placement to advance your research track and acquire high-value artifacts and guardians before the fifth round ends."
    },
    "similar": [
-    "Res Arcana",
-    "Tzolk'in: The Mayan Calendar",
-    "Everdell",
-    "Clank!: A Deck-Building Adventure",
-    "Great Western Trail"
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Everdell",
+     "id": null
+    },
+    {
+     "name": "Clank!: A Deck-Building Adventure",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -20750,11 +22811,26 @@
     "how_you_win": "Survive each short round holding the highest card or by outlasting eliminated opponents, and accumulate favor tokens across enough rounds to hit the winning threshold."
    },
    "similar": [
-    "Coup",
-    "The Fox in the Forest",
-    "Sushi Go!",
-    "Skull",
-    "No Thanks!"
+    {
+     "name": "Coup",
+     "id": "1653"
+    },
+    {
+     "name": "The Fox in the Forest",
+     "id": null
+    },
+    {
+     "name": "Sushi Go!",
+     "id": null
+    },
+    {
+     "name": "Skull",
+     "id": "67466"
+    },
+    {
+     "name": "No Thanks!",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -20917,11 +22993,26 @@
     "how_you_win": "Silently coordinate to move each hero to their equipment, meeting point, and the exit before the sand timer expires or the alarm maxes out."
    },
    "similar": [
-    "Space Alert",
-    "The Mind",
-    "Escape: The Curse of the Temple",
-    "Sky Team",
-    "Chronicles of Crime"
+    {
+     "name": "Space Alert",
+     "id": null
+    },
+    {
+     "name": "The Mind",
+     "id": null
+    },
+    {
+     "name": "Escape: The Curse of the Temple",
+     "id": null
+    },
+    {
+     "name": "Sky Team",
+     "id": null
+    },
+    {
+     "name": "Chronicles of Crime",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -21046,11 +23137,26 @@
     "how_you_win": "Play cards into the shared mandalas and time your color choices during the clearing phase to end up holding the colors that turn out most valuable."
    },
    "similar": [
-    "Battle Line",
-    "Schotten Totten",
-    "Jaipur",
-    "Lost Cities",
-    "Fantasy Realms"
+    {
+     "name": "Battle Line",
+     "id": null
+    },
+    {
+     "name": "Schotten Totten",
+     "id": null
+    },
+    {
+     "name": "Jaipur",
+     "id": "54043"
+    },
+    {
+     "name": "Lost Cities",
+     "id": "50"
+    },
+    {
+     "name": "Fantasy Realms",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -21205,11 +23311,26 @@
     "how_you_win": "Efficiently route your ship each round to build influence, fulfill high-value contracts, and complete card combinations that outscore opponents by the end of round four."
    },
    "similar": [
-    "Great Western Trail",
-    "Underwater Cities",
-    "The Gallerist",
-    "Anachrony",
-    "Barrage"
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -21338,11 +23459,26 @@
     "how_you_win": "You expand your empire's planets and military strength faster than opponents, often finishing them off or simply controlling more territory when the game ends."
    },
    "similar": [
-    "Cosmic Encounter",
-    "Eclipse",
-    "Twilight Imperium",
-    "Small World",
-    "Nexus Ops"
+    {
+     "name": "Cosmic Encounter",
+     "id": null
+    },
+    {
+     "name": "Eclipse",
+     "id": null
+    },
+    {
+     "name": "Twilight Imperium",
+     "id": null
+    },
+    {
+     "name": "Small World",
+     "id": null
+    },
+    {
+     "name": "Nexus Ops",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -21488,11 +23624,26 @@
     "how_you_win": "You outbid others carefully to end each round holding the most valuable and highest-quantity goods without overspending your money."
    },
    "similar": [
-    "Ra",
-    "For Sale",
-    "High Society",
-    "Modern Art",
-    "Taj Mahal"
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "High Society",
+     "id": null
+    },
+    {
+     "name": "Modern Art",
+     "id": "118"
+    },
+    {
+     "name": "Taj Mahal",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -21616,11 +23767,26 @@
     "how_you_win": "You optimize your engine across the five boards to generate the most cumulative points by game end."
    },
    "similar": [
-    "Yellow & Yangtze",
-    "Through the Ages",
-    "Tigris & Euphrates",
-    "Blue Lagoon",
-    "The Palaces of Carrara"
+    {
+     "name": "Yellow & Yangtze",
+     "id": null
+    },
+    {
+     "name": "Through the Ages",
+     "id": null
+    },
+    {
+     "name": "Tigris & Euphrates",
+     "id": null
+    },
+    {
+     "name": "Blue Lagoon",
+     "id": "244331"
+    },
+    {
+     "name": "The Palaces of Carrara",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -21767,11 +23933,26 @@
     "how_you_win": "The team works together to correctly deduce hidden locations/identities and complete the scenario objective before running out of time or attempts."
    },
    "similar": [
-    "Hanabi",
-    "The Mind",
-    "Codenames Duet",
-    "Sherlock Holmes Consulting Detective",
-    "Decrypto"
+    {
+     "name": "Hanabi",
+     "id": null
+    },
+    {
+     "name": "The Mind",
+     "id": null
+    },
+    {
+     "name": "Codenames Duet",
+     "id": null
+    },
+    {
+     "name": "Sherlock Holmes Consulting Detective",
+     "id": null
+    },
+    {
+     "name": "Decrypto",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -21903,11 +24084,26 @@
     "how_you_win": "You win by accumulating the most points, primarily from Decree/Palace cards you've tucked and from area majority/presence scored with warriors (at set rounds), supplemented by many smaller bonuses from actions and tracks."
    },
    "similar": [
-    "Coimbra",
-    "Tiletum",
-    "The Artemis Project",
-    "Rurik: Dawn of Kiev",
-    "Dice Hospital"
+    {
+     "name": "Coimbra",
+     "id": null
+    },
+    {
+     "name": "Tiletum",
+     "id": null
+    },
+    {
+     "name": "The Artemis Project",
+     "id": null
+    },
+    {
+     "name": "Rurik: Dawn of Kiev",
+     "id": null
+    },
+    {
+     "name": "Dice Hospital",
+     "id": null
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/minos-dawn-of-the-bronze-age/",
@@ -22042,11 +24238,26 @@
     "how_you_win": "You efficiently gather materials and complete works to satisfy your character's specific completion requirement before anyone else does."
    },
    "similar": [
-    "Glory to Rome",
-    "San Juan",
-    "Innovation",
-    "Res Arcana",
-    "Fivecard"
+    {
+     "name": "Glory to Rome",
+     "id": null
+    },
+    {
+     "name": "San Juan",
+     "id": null
+    },
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "Fivecard",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -22204,11 +24415,26 @@
     "how_you_win": "The mediums correctly interpret the ghost's visions to identify the culprit before the seven hours (turns) run out."
    },
    "similar": [
-    "Dixit",
-    "Detective: A Modern Crime Board Game",
-    "The Vale of Eternity",
-    "Photosynthesis",
-    "Just One"
+    {
+     "name": "Dixit",
+     "id": null
+    },
+    {
+     "name": "Detective: A Modern Crime Board Game",
+     "id": null
+    },
+    {
+     "name": "The Vale of Eternity",
+     "id": null
+    },
+    {
+     "name": "Photosynthesis",
+     "id": null
+    },
+    {
+     "name": "Just One",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -22350,11 +24576,26 @@
     "how_you_win": "You build the most efficient trading and colonization engine, converting goods and buildings into victory points and leftover money by game's end."
    },
    "similar": [
-    "Antike",
-    "Imperial",
-    "Puerto Rico",
-    "Notre Dame",
-    "Concordia"
+    {
+     "name": "Antike",
+     "id": null
+    },
+    {
+     "name": "Imperial",
+     "id": null
+    },
+    {
+     "name": "Puerto Rico",
+     "id": "3076"
+    },
+    {
+     "name": "Notre Dame",
+     "id": null
+    },
+    {
+     "name": "Concordia",
+     "id": "124361"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -22475,11 +24716,26 @@
     "how_you_win": "You win by building the most efficient engine to rack up points across research, discoveries, and bonus tracks by game end."
    },
    "similar": [
-    "Tzolk'in: The Mayan Calendar",
-    "Lorenzo il Magnifico",
-    "Great Western Trail",
-    "Nucleum",
-    "Trickerion: Legends of Illusion"
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Lorenzo il Magnifico",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Nucleum",
+     "id": null
+    },
+    {
+     "name": "Trickerion: Legends of Illusion",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -22615,11 +24871,26 @@
     "how_you_win": "You win by out-bidding rivals to assemble the highest-scoring combination of blacksmiths, hunters, warriors, explorers, miners, and heroes."
    },
    "similar": [
-    "Ra",
-    "For Sale",
-    "Libertalia",
-    "Blue Lagoon",
-    "Raiders of the North Sea"
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "Libertalia",
+     "id": null
+    },
+    {
+     "name": "Blue Lagoon",
+     "id": "244331"
+    },
+    {
+     "name": "Raiders of the North Sea",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -22761,11 +25032,26 @@
     "how_you_win": "You win by building the most efficient network and tech engine to maximize points from contracts, connections, and bonuses by game end."
    },
    "similar": [
-    "Barrage",
-    "Age of Innovation",
-    "Great Western Trail",
-    "Lorenzo il Magnifico",
-    "Res Arcana"
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Age of Innovation",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Lorenzo il Magnifico",
+     "id": null
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -22900,11 +25186,26 @@
     "how_you_win": "You win by running the most profitable fishing and building economy, ending the game with the most money and building value."
    },
    "similar": [
-    "Agricola",
-    "Le Havre",
-    "A Feast for Odin",
-    "Caverna: The Cave Farmers",
-    "Fields of Arle"
+    {
+     "name": "Agricola",
+     "id": "31260"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "A Feast for Odin",
+     "id": "177736"
+    },
+    {
+     "name": "Caverna: The Cave Farmers",
+     "id": "102794"
+    },
+    {
+     "name": "Fields of Arle",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -23059,11 +25360,26 @@
     "how_you_win": "You win by either holding onto the Chancellorship against challengers or by successfully overthrowing it and surviving as the new ruling power."
    },
    "similar": [
-    "Root",
-    "Pax Pamir: Second Edition",
-    "Twilight Imperium: Fourth Edition",
-    "Rising Sun",
-    "Kemet"
+    {
+     "name": "Root",
+     "id": "237182"
+    },
+    {
+     "name": "Pax Pamir: Second Edition",
+     "id": null
+    },
+    {
+     "name": "Twilight Imperium: Fourth Edition",
+     "id": null
+    },
+    {
+     "name": "Rising Sun",
+     "id": null
+    },
+    {
+     "name": "Kemet",
+     "id": "127023"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -23212,11 +25528,26 @@
     "how_you_win": "You win by building the most efficient colony engine, completing contracts and objectives to out-score opponents by game end."
    },
    "similar": [
-    "Gaia Project",
-    "Lisboa",
-    "CO2: Second Chance",
-    "The Gallerist",
-    "Weather Machine"
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    },
+    {
+     "name": "Lisboa",
+     "id": "161533"
+    },
+    {
+     "name": "CO2: Second Chance",
+     "id": "214887"
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Weather Machine",
+     "id": "237179"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -23383,11 +25714,26 @@
     "how_you_win": "You win as a villager by correctly identifying and voting out a werewolf, or as a werewolf by convincing the group to lynch someone else."
    },
    "similar": [
-    "One Night Ultimate Werewolf: Daybreak",
-    "Secret Hitler",
-    "The Resistance",
-    "Avalon",
-    "Mafia"
+    {
+     "name": "One Night Ultimate Werewolf: Daybreak",
+     "id": "163166"
+    },
+    {
+     "name": "Secret Hitler",
+     "id": "188834"
+    },
+    {
+     "name": "The Resistance",
+     "id": "41114"
+    },
+    {
+     "name": "Avalon",
+     "id": "1862"
+    },
+    {
+     "name": "Mafia",
+     "id": "6109"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -23546,11 +25892,26 @@
     "how_you_win": "You win as a villager-aligned player by correctly identifying and voting out a werewolf, or as a werewolf-aligned player by escaping detection."
    },
    "similar": [
-    "One Night Ultimate Werewolf",
-    "One Night Ultimate Vampire",
-    "Secret Hitler",
-    "The Resistance",
-    "Mafia"
+    {
+     "name": "One Night Ultimate Werewolf",
+     "id": "147949"
+    },
+    {
+     "name": "One Night Ultimate Vampire",
+     "id": null
+    },
+    {
+     "name": "Secret Hitler",
+     "id": "188834"
+    },
+    {
+     "name": "The Resistance",
+     "id": "41114"
+    },
+    {
+     "name": "Mafia",
+     "id": "6109"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -23690,11 +26051,26 @@
     "how_you_win": "You win by converting cheap raw resources into valuable finished goods and prestigious buildings faster and more efficiently than opponents."
    },
    "similar": [
-    "Le Havre",
-    "Agricola",
-    "Caverna",
-    "A Feast for Odin",
-    "Fields of Arle"
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Agricola",
+     "id": "31260"
+    },
+    {
+     "name": "Caverna",
+     "id": null
+    },
+    {
+     "name": "A Feast for Odin",
+     "id": "177736"
+    },
+    {
+     "name": "Fields of Arle",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -23849,11 +26225,26 @@
     "how_you_win": "You win by building the most efficient follower engine and converting it into the most development/research/trade points by game end."
    },
    "similar": [
-    "The Voyages of Marco Polo",
-    "Grand Austria Hotel",
-    "Great Western Trail",
-    "Trickerion",
-    "Le Havre"
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -23993,11 +26384,26 @@
     "how_you_win": "You win by efficiently using your workers to build valuable structures, complete commissions, and rack up virtue and combat bonuses faster than opponents."
    },
    "similar": [
-    "Architects of the West Kingdom",
-    "Raiders of the North Sea",
-    "Viscounts of the West Kingdom",
-    "Charterstone",
-    "Grand Austria Hotel"
+    {
+     "name": "Architects of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Raiders of the North Sea",
+     "id": null
+    },
+    {
+     "name": "Viscounts of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Charterstone",
+     "id": null
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -24144,11 +26550,26 @@
     "how_you_win": "Convert route income and one-time route-sale payouts into capital, then time your stock purchases (cheaper early, but price is volatile) to end the game holding more Pan Am shares than any opponent."
    },
    "similar": [
-    "Chicago Express",
-    "Airlines Europe",
-    "Power Grid",
-    "18XX stock/route games (e.g. 1830)",
-    "Steam/Age of Steam"
+    {
+     "name": "Chicago Express",
+     "id": null
+    },
+    {
+     "name": "Airlines Europe",
+     "id": null
+    },
+    {
+     "name": "Power Grid",
+     "id": "2651"
+    },
+    {
+     "name": "18XX stock/route games (e.g. 1830)",
+     "id": null
+    },
+    {
+     "name": "Steam/Age of Steam",
+     "id": null
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/pan-am/",
@@ -24299,11 +26720,26 @@
     "how_you_win": "The team wins by discovering cures for all four diseases before the outbreak marker maxes out or the player deck runs out."
    },
    "similar": [
-    "Pandemic Legacy: Season 1",
-    "Forbidden Island",
-    "Flash Point: Fire Rescue",
-    "Ghost Stories",
-    "Pandemic: The Cure"
+    {
+     "name": "Pandemic Legacy: Season 1",
+     "id": null
+    },
+    {
+     "name": "Forbidden Island",
+     "id": null
+    },
+    {
+     "name": "Flash Point: Fire Rescue",
+     "id": null
+    },
+    {
+     "name": "Ghost Stories",
+     "id": null
+    },
+    {
+     "name": "Pandemic: The Cure",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -24444,11 +26880,26 @@
     "how_you_win": "You win by filling your quilt board efficiently with patches that earn buttons, leaving the fewest empty squares while ending with the most spare buttons."
    },
    "similar": [
-    "Patchwork Doodle",
-    "Cottage Garden",
-    "Karuba",
-    "Barenpark",
-    "Calico"
+    {
+     "name": "Patchwork Doodle",
+     "id": null
+    },
+    {
+     "name": "Cottage Garden",
+     "id": null
+    },
+    {
+     "name": "Karuba",
+     "id": null
+    },
+    {
+     "name": "Barenpark",
+     "id": null
+    },
+    {
+     "name": "Calico",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -24584,11 +27035,26 @@
     "how_you_win": "Survive four eras while managing population feeding and prestige; whoever accumulates more prestige and controls more population/poleis at the end wins, but a player who lets credibility hit zero or fails to feed their population loses immediately regardless of points."
    },
    "similar": [
-    "Pericles: The Peloponnesian Wars",
-    "Blue Moon",
-    "Taj Mahal",
-    "Scythe",
-    "COIN series games (e.g. Gandhi, All Bridges Burning)"
+    {
+     "name": "Pericles: The Peloponnesian Wars",
+     "id": null
+    },
+    {
+     "name": "Blue Moon",
+     "id": null
+    },
+    {
+     "name": "Taj Mahal",
+     "id": null
+    },
+    {
+     "name": "Scythe",
+     "id": null
+    },
+    {
+     "name": "COIN series games (e.g. Gandhi, All Bridges Burning)",
+     "id": null
+    }
    ],
    "sources": [
     "https://www.meeplemountain.com/reviews/polis-second-edition/",
@@ -24743,11 +27209,26 @@
     "how_you_win": "You win by amassing the most victory points from recruited characters and completed expeditions once someone triggers the game-end threshold."
    },
    "similar": [
-    "Jaipur",
-    "Coloretto",
-    "The Great Split",
-    "Fresh Fish",
-    "Nova Luna"
+    {
+     "name": "Jaipur",
+     "id": "54043"
+    },
+    {
+     "name": "Coloretto",
+     "id": "5782"
+    },
+    {
+     "name": "The Great Split",
+     "id": null
+    },
+    {
+     "name": "Fresh Fish",
+     "id": null
+    },
+    {
+     "name": "Nova Luna",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -24906,11 +27387,26 @@
     "how_you_win": "Once someone's network reaches the endgame city threshold, everyone gets one final turn to power as many cities as possible, and whoever powers the most cities wins (money is the tiebreaker)."
    },
    "similar": [
-    "Brass: Birmingham",
-    "Le Havre",
-    "Container",
-    "Kanban: Automotive Revolution",
-    "Snowdonia"
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "Kanban: Automotive Revolution",
+     "id": "109276"
+    },
+    {
+     "name": "Snowdonia",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -25042,11 +27538,26 @@
     "how_you_win": "You win by efficiently combining building placements, majority control, and track advancement to rack up more total points than opponents by game end."
    },
    "similar": [
-    "Underwater Cities",
-    "The Voyages of Marco Polo",
-    "Barrage",
-    "Merv: The Heart of the Silk Road",
-    "Pipeline"
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Merv: The Heart of the Silk Road",
+     "id": null
+    },
+    {
+     "name": "Pipeline",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -25188,11 +27699,26 @@
     "how_you_win": "You win by converting production and shipping into victory points faster than opponents, since leftover doubloons don't count at the end."
    },
    "similar": [
-    "Le Havre",
-    "San Juan",
-    "Caylus",
-    "Race for the Galaxy",
-    "Container"
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "San Juan",
+     "id": null
+    },
+    {
+     "name": "Caylus",
+     "id": "18602"
+    },
+    {
+     "name": "Race for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -25319,11 +27845,26 @@
     "how_you_win": "You win by building the most efficient combination of claimed planets, researched technologies, and infrastructure to out-score opponents after eight rounds."
    },
    "similar": [
-    "The Voyages of Marco Polo",
-    "Barrage",
-    "Praga Caput Regni",
-    "Underwater Cities",
-    "Teotihuacan: City of Gods"
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Praga Caput Regni",
+     "id": null
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -25467,11 +28008,26 @@
     "how_you_win": "You win by building a bag of ingredients that reliably brews powerful potions round after round without exploding too often, ending with the most points."
    },
    "similar": [
-    "The Quest for El Dorado",
-    "Machi Koro",
-    "Valeria: Card Kingdoms",
-    "Trellis",
-    "Century: Spice Road"
+    {
+     "name": "The Quest for El Dorado",
+     "id": null
+    },
+    {
+     "name": "Machi Koro",
+     "id": null
+    },
+    {
+     "name": "Valeria: Card Kingdoms",
+     "id": null
+    },
+    {
+     "name": "Trellis",
+     "id": null
+    },
+    {
+     "name": "Century: Spice Road",
+     "id": "209685"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -25617,11 +28173,26 @@
     "how_you_win": "You win by building an efficient movement deck and choosing the best path to be the first player to cross the finish line."
    },
    "similar": [
-    "Dominion",
-    "Quacks of Quedlinburg",
-    "Whistle Stop",
-    "Flamme Rouge",
-    "Coimbra"
+    {
+     "name": "Dominion",
+     "id": null
+    },
+    {
+     "name": "Quacks of Quedlinburg",
+     "id": null
+    },
+    {
+     "name": "Whistle Stop",
+     "id": null
+    },
+    {
+     "name": "Flamme Rouge",
+     "id": null
+    },
+    {
+     "name": "Coimbra",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -25762,11 +28333,26 @@
     "how_you_win": "You win by winning auctions for valuable tile sets and managing your suns wisely across three epochs to end with the highest cumulative score."
    },
    "similar": [
-    "Amun-Re",
-    "Modern Art",
-    "For Sale",
-    "Blue Lagoon",
-    "Medici"
+    {
+     "name": "Amun-Re",
+     "id": "5404"
+    },
+    {
+     "name": "Modern Art",
+     "id": "118"
+    },
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "Blue Lagoon",
+     "id": "244331"
+    },
+    {
+     "name": "Medici",
+     "id": "46"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -25910,11 +28496,26 @@
     "how_you_win": "You win by assembling a tableau of synergistic worlds and developments that generates victory points faster than opponents before the card or chip supply runs out."
    },
    "similar": [
-    "San Juan",
-    "Roll for the Galaxy",
-    "Puerto Rico",
-    "Innovation",
-    "Res Arcana"
+    {
+     "name": "San Juan",
+     "id": null
+    },
+    {
+     "name": "Roll for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Puerto Rico",
+     "id": "3076"
+    },
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -26051,11 +28652,26 @@
     "how_you_win": "You win by efficiently converting workers and resources into completed contracts and building improvements over the course of the game."
    },
    "similar": [
-    "Architects of the West Kingdom",
-    "Paladins of the West Kingdom",
-    "Raiders of the North Sea",
-    "Trickerion",
-    "Grand Austria Hotel"
+    {
+     "name": "Architects of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Paladins of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Raiders of the North Sea",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -26196,11 +28812,26 @@
     "how_you_win": "You win by using dice efficiently to gain fame and money simultaneously so your two markers intersect before any opponent's do."
    },
    "similar": [
-    "The Castles of Burgundy",
-    "Trickerion",
-    "Great Western Trail",
-    "Orleans",
-    "Kingdom Builder"
+    {
+     "name": "The Castles of Burgundy",
+     "id": "84876"
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Orleans",
+     "id": null
+    },
+    {
+     "name": "Kingdom Builder",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -26325,10 +28956,22 @@
     "how_you_win": "You win by developing your province efficiently enough that your fame and wealth trackers converge before anyone else's."
    },
    "similar": [
-    "Rajas of the Ganges",
-    "Welcome To...",
-    "That's Pretty Clever",
-    "Second Chance"
+    {
+     "name": "Rajas of the Ganges",
+     "id": null
+    },
+    {
+     "name": "Welcome To...",
+     "id": null
+    },
+    {
+     "name": "That's Pretty Clever",
+     "id": null
+    },
+    {
+     "name": "Second Chance",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -26473,11 +29116,26 @@
     "how_you_win": "You win by completing high-value contracts and securing good positions on the communal cathedral more efficiently than your opponents."
    },
    "similar": [
-    "Barrage",
-    "Tzolk'in: The Mayan Calendar",
-    "Trickerion",
-    "Raiders of Scythia",
-    "Merv: The Heart of the Silk Road"
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Raiders of Scythia",
+     "id": null
+    },
+    {
+     "name": "Merv: The Heart of the Silk Road",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -26650,11 +29308,26 @@
     "how_you_win": "Good wins by getting three quests to succeed and surviving the Merlin assassination; Evil wins by failing three quests or correctly identifying Merlin afterward."
    },
    "similar": [
-    "The Resistance",
-    "Secret Hitler",
-    "One Night Ultimate Werewolf",
-    "Coup",
-    "Werewolf"
+    {
+     "name": "The Resistance",
+     "id": "41114"
+    },
+    {
+     "name": "Secret Hitler",
+     "id": "188834"
+    },
+    {
+     "name": "One Night Ultimate Werewolf",
+     "id": "147949"
+    },
+    {
+     "name": "Coup",
+     "id": "1653"
+    },
+    {
+     "name": "Werewolf",
+     "id": "925"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -26787,11 +29460,26 @@
     "how_you_win": "You win by building the most efficient civilization engine, unlocking and using technologies faster than opponents to rack up victory points."
    },
    "similar": [
-    "Scythe",
-    "Brass: Birmingham",
-    "Trickerion",
-    "Anachrony",
-    "Terraforming Mars"
+    {
+     "name": "Scythe",
+     "id": null
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    },
+    {
+     "name": "Terraforming Mars",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -27053,11 +29741,26 @@
     "how_you_win": "You win by accumulating the most solved puzzles by consistently being fastest to find (or beat) the optimal move sequence."
    },
    "similar": [
-    "Rush Hour",
-    "Karuba",
-    "Anomia",
-    "Ivan's Hard Puzzles",
-    "Metro"
+    {
+     "name": "Rush Hour",
+     "id": null
+    },
+    {
+     "name": "Karuba",
+     "id": null
+    },
+    {
+     "name": "Anomia",
+     "id": null
+    },
+    {
+     "name": "Ivan's Hard Puzzles",
+     "id": null
+    },
+    {
+     "name": "Metro",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -27216,11 +29919,26 @@
     "how_you_win": "Players win by collectively completing the scenario's specific objectives (such as surviving a set number of weeks or discovering an item) before running out of morale or resources."
    },
    "similar": [
-    "Tokaido",
-    "This War of Mine: The Board Game",
-    "Trudvang Legends",
-    "First Martians",
-    "Sub Terra"
+    {
+     "name": "Tokaido",
+     "id": "123540"
+    },
+    {
+     "name": "This War of Mine: The Board Game",
+     "id": "188920"
+    },
+    {
+     "name": "Trudvang Legends",
+     "id": "266064"
+    },
+    {
+     "name": "First Martians",
+     "id": null
+    },
+    {
+     "name": "Sub Terra",
+     "id": "204472"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -27383,11 +30101,26 @@
     "how_you_win": "Race to 30 points before anyone else, scoring via your faction's unique engine (crafting, battles, quests, or alliances) while disrupting the current leader."
    },
    "similar": [
-    "Vast: The Crystal Caverns",
-    "Oath",
-    "Spirit Island",
-    "Cole Wehrle's Pax Pamir",
-    "Undaunted"
+    {
+     "name": "Vast: The Crystal Caverns",
+     "id": null
+    },
+    {
+     "name": "Oath",
+     "id": null
+    },
+    {
+     "name": "Spirit Island",
+     "id": null
+    },
+    {
+     "name": "Cole Wehrle's Pax Pamir",
+     "id": null
+    },
+    {
+     "name": "Undaunted",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -27520,11 +30253,26 @@
     "how_you_win": "Build the most efficient production and investment engine over seven rounds to end with the highest combined score from CrypCoin-style earnings and bonuses."
    },
    "similar": [
-    "Teotihuacan: City of Gods",
-    "Merv: The Heart of the Silk Road",
-    "Barrage",
-    "On Mars",
-    "Skymines"
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    },
+    {
+     "name": "Merv: The Heart of the Silk Road",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Skymines",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -27662,11 +30410,26 @@
     "how_you_win": "Chain building activations efficiently across your colony to generate the most victory points by the end of the round track."
    },
    "similar": [
-    "Fresco",
-    "Trismegistus",
-    "Bonfire",
-    "Barenpark",
-    "Praga Caput Regni"
+    {
+     "name": "Fresco",
+     "id": null
+    },
+    {
+     "name": "Trismegistus",
+     "id": null
+    },
+    {
+     "name": "Bonfire",
+     "id": null
+    },
+    {
+     "name": "Barenpark",
+     "id": null
+    },
+    {
+     "name": "Praga Caput Regni",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -27831,11 +30594,26 @@
     "how_you_win": "Trigger the game's end by completing six stars, then have the highest combined coin total from resources, territories, popularity, and structures."
    },
    "similar": [
-    "Root",
-    "Blood Rage",
-    "Tapestry",
-    "Rise of Fenris (Scythe's own campaign expansion)",
-    "Terraforming Mars"
+    {
+     "name": "Root",
+     "id": "237182"
+    },
+    {
+     "name": "Blood Rage",
+     "id": null
+    },
+    {
+     "name": "Tapestry",
+     "id": null
+    },
+    {
+     "name": "Rise of Fenris (Scythe's own campaign expansion)",
+     "id": null
+    },
+    {
+     "name": "Terraforming Mars",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -27968,11 +30746,26 @@
     "how_you_win": "Control a majority of the map's key roads and castles, or destroy enough enemy leader blocks, to trigger an instant victory."
    },
    "similar": [
-    "Twilight Struggle",
-    "1775: Rebellion",
-    "Nevsky",
-    "Hannibal: Rome vs Carthage",
-    "Undaunted"
+    {
+     "name": "Twilight Struggle",
+     "id": "12333"
+    },
+    {
+     "name": "1775: Rebellion",
+     "id": null
+    },
+    {
+     "name": "Nevsky",
+     "id": null
+    },
+    {
+     "name": "Hannibal: Rome vs Carthage",
+     "id": null
+    },
+    {
+     "name": "Undaunted",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -28109,11 +30902,26 @@
     "how_you_win": "Efficiently sequence worker placements to fund corporation projects and secure structure majorities, ending with the highest total score."
    },
    "similar": [
-    "Merv: The Heart of the Silk Road",
-    "On Mars",
-    "Barrage",
-    "Teotihuacan: City of Gods",
-    "Trickerion"
+    {
+     "name": "Merv: The Heart of the Silk Road",
+     "id": null
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -28274,11 +31082,26 @@
     "how_you_win": "Trade aggressively to fuel your race's unique economy, research technologies, and colonize planets to accumulate the most hidden victory points by the final round."
    },
    "similar": [
-    "Cosmic Encounter",
-    "Chinatown",
-    "Prosperity",
-    "Bohnanza",
-    "Struggle of Empires"
+    {
+     "name": "Cosmic Encounter",
+     "id": null
+    },
+    {
+     "name": "Chinatown",
+     "id": "47"
+    },
+    {
+     "name": "Prosperity",
+     "id": null
+    },
+    {
+     "name": "Bohnanza",
+     "id": "11"
+    },
+    {
+     "name": "Struggle of Empires",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -28414,11 +31237,26 @@
     "how_you_win": "Build the most efficient resource-extraction and investment engine to finish the seven rounds with the most CrypCoin."
    },
    "similar": [
-    "Great Western Trail",
-    "Maracaibo",
-    "Merv: The Heart of the Silk Road",
-    "On Mars",
-    "Salton Sea"
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Maracaibo",
+     "id": null
+    },
+    {
+     "name": "Merv: The Heart of the Silk Road",
+     "id": null
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Salton Sea",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -28556,11 +31394,26 @@
     "how_you_win": "You win by out-bidding rivals for the most valuable sites and stitching them into scoring neighborhoods and objectives more efficiently than anyone else by game end."
    },
    "similar": [
-    "Ra",
-    "Metropolys",
-    "Suburbia",
-    "Praga Caput Regni",
-    "Underwater Cities"
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "Metropolys",
+     "id": null
+    },
+    {
+     "name": "Suburbia",
+     "id": "81185"
+    },
+    {
+     "name": "Praga Caput Regni",
+     "id": null
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -28696,11 +31549,26 @@
     "how_you_win": "You win by maximizing territory count turn after turn, timing when to let a race decline and launch a stronger one before the game ends."
    },
    "similar": [
-    "Vinci",
-    "Risk",
-    "Kemet",
-    "El Grande",
-    "Blood Rage"
+    {
+     "name": "Vinci",
+     "id": null
+    },
+    {
+     "name": "Risk",
+     "id": null
+    },
+    {
+     "name": "Kemet",
+     "id": "127023"
+    },
+    {
+     "name": "El Grande",
+     "id": null
+    },
+    {
+     "name": "Blood Rage",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -28830,11 +31698,26 @@
     "how_you_win": "You win by claiming the highest-value creature cards while managing your firefly supply so you aren't forced onto negative wild cards."
    },
    "similar": [
-    "Coloretto",
-    "For Sale",
-    "Bohnanza",
-    "Sushi Go",
-    "Point Salad"
+    {
+     "name": "Coloretto",
+     "id": "5782"
+    },
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "Bohnanza",
+     "id": "11"
+    },
+    {
+     "name": "Sushi Go",
+     "id": null
+    },
+    {
+     "name": "Point Salad",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -28954,11 +31837,26 @@
     "how_you_win": "You win by building the most efficient settler network across the space gates and converting that into colonization and objective points faster than your rivals."
    },
    "similar": [
-    "Yokohama",
-    "Trickerion",
-    "Gizmos",
-    "Teotihuacan: City of Gods",
-    "Kanban: Driver's Edition"
+    {
+     "name": "Yokohama",
+     "id": "196340"
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Gizmos",
+     "id": null
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    },
+    {
+     "name": "Kanban: Driver's Edition",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -29094,11 +31992,26 @@
     "how_you_win": "You win by building the most efficient speakeasy operation, converting resources and territorial influence into the widest spread of scoring opportunities by game end."
    },
    "similar": [
-    "On Mars",
-    "Lisboa",
-    "Escape Plan",
-    "The Gallerist",
-    "Vinhos"
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Lisboa",
+     "id": "161533"
+    },
+    {
+     "name": "Escape Plan",
+     "id": null
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Vinhos",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -29235,11 +32148,26 @@
     "how_you_win": "You win by being first to reach 15 points, usually by building a gem-discount engine that lets you afford high-value cards faster than opponents."
    },
    "similar": [
-    "Century: Spice Road",
-    "Res Arcana",
-    "7 Wonders",
-    "Concordia",
-    "Splendor Duel"
+    {
+     "name": "Century: Spice Road",
+     "id": "209685"
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "7 Wonders",
+     "id": "68448"
+    },
+    {
+     "name": "Concordia",
+     "id": "124361"
+    },
+    {
+     "name": "Splendor Duel",
+     "id": "364073"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -29356,11 +32284,26 @@
     "how_you_win": "You win by building a deck of ships and bases efficient enough to reduce your opponent's Authority to zero before they do the same to you."
    },
    "similar": [
-    "Star Realms",
-    "Star Realms: Colony Wars",
-    "Hero Realms",
-    "Ascension",
-    "Dominion"
+    {
+     "name": "Star Realms",
+     "id": null
+    },
+    {
+     "name": "Star Realms: Colony Wars",
+     "id": null
+    },
+    {
+     "name": "Hero Realms",
+     "id": null
+    },
+    {
+     "name": "Ascension",
+     "id": null
+    },
+    {
+     "name": "Dominion",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -29509,11 +32452,26 @@
     "how_you_win": "The Empire wins by finding and destroying the hidden Rebel base before time runs out, while the Rebellion wins by surviving and racking up enough objective successes."
    },
    "similar": [
-    "War of the Ring",
-    "Fury of Dracula",
-    "Twilight Imperium: Fourth Edition",
-    "Forbidden Stars",
-    "Cthulhu Wars"
+    {
+     "name": "War of the Ring",
+     "id": null
+    },
+    {
+     "name": "Fury of Dracula",
+     "id": null
+    },
+    {
+     "name": "Twilight Imperium: Fourth Edition",
+     "id": null
+    },
+    {
+     "name": "Forbidden Stars",
+     "id": null
+    },
+    {
+     "name": "Cthulhu Wars",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -29658,11 +32616,26 @@
     "how_you_win": "You win by efficiently building track and delivering goods to score the most victory points over the course of the game."
    },
    "similar": [
-    "Age of Steam",
-    "Container",
-    "Chicago Express",
-    "Irish Gauge",
-    "Snowdonia"
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "Chicago Express",
+     "id": null
+    },
+    {
+     "name": "Irish Gauge",
+     "id": null
+    },
+    {
+     "name": "Snowdonia",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -29788,11 +32761,26 @@
     "how_you_win": "You win by maneuvering your units to destroy the opposing summoner before yours falls."
    },
    "similar": [
-    "Star Wars: The Deckbuilding Game",
-    "BattleCON",
-    "Smash Up",
-    "Netrunner",
-    "Ashes: Rise of the Phoenixborn"
+    {
+     "name": "Star Wars: The Deckbuilding Game",
+     "id": null
+    },
+    {
+     "name": "BattleCON",
+     "id": null
+    },
+    {
+     "name": "Smash Up",
+     "id": null
+    },
+    {
+     "name": "Netrunner",
+     "id": null
+    },
+    {
+     "name": "Ashes: Rise of the Phoenixborn",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -29923,11 +32911,26 @@
     "how_you_win": "You win by efficiently converting dice into buildings and contract fulfillment to out-score opponents across multiple scoring categories."
    },
    "similar": [
-    "Teotihuacan",
-    "Tzolk'in: The Mayan Calendar",
-    "Trickerion",
-    "The Voyages of Marco Polo",
-    "Anachrony"
+    {
+     "name": "Teotihuacan",
+     "id": null
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -30068,11 +33071,26 @@
     "how_you_win": "You win by winning enough regional auctions to build a spread of different palace types and collect valuable commodities, edging out rivals in overall influence."
    },
    "similar": [
-    "Ra",
-    "Amun-Re",
-    "Samurai",
-    "Blue Lagoon",
-    "Tigris & Euphrates"
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "Amun-Re",
+     "id": "5404"
+    },
+    {
+     "name": "Samurai",
+     "id": null
+    },
+    {
+     "name": "Blue Lagoon",
+     "id": "244331"
+    },
+    {
+     "name": "Tigris & Euphrates",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -30234,11 +33252,26 @@
     "how_you_win": "You win by having the fewest penalty points when another player crosses the losing threshold, achieved by avoiding taking full rows."
    },
    "similar": [
-    "Coloretto",
-    "No Thanks!",
-    "For Sale",
-    "Camel Up",
-    "The Game"
+    {
+     "name": "Coloretto",
+     "id": "5782"
+    },
+    {
+     "name": "No Thanks!",
+     "id": null
+    },
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "Camel Up",
+     "id": null
+    },
+    {
+     "name": "The Game",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -30394,11 +33427,26 @@
     "how_you_win": "You win by completing the most objective cards, which are revealed and fulfilled by growing bamboo and shaping the garden in the ways each card demands."
    },
    "similar": [
-    "Kingdomino",
-    "My Little Scythe",
-    "Cottage Garden",
-    "Karuba",
-    "Ticket to Ride"
+    {
+     "name": "Kingdomino",
+     "id": null
+    },
+    {
+     "name": "My Little Scythe",
+     "id": null
+    },
+    {
+     "name": "Cottage Garden",
+     "id": null
+    },
+    {
+     "name": "Karuba",
+     "id": null
+    },
+    {
+     "name": "Ticket to Ride",
+     "id": "9209"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -30526,11 +33574,26 @@
     "how_you_win": "You win by drafting and building a stronger combination of tribe and goods cards than your opponent by game's end."
    },
    "similar": [
-    "Jaipur",
-    "Lost Cities",
-    "Hera and Zeus",
-    "Patchwork",
-    "7 Wonders Duel"
+    {
+     "name": "Jaipur",
+     "id": "54043"
+    },
+    {
+     "name": "Lost Cities",
+     "id": "50"
+    },
+    {
+     "name": "Hera and Zeus",
+     "id": "638"
+    },
+    {
+     "name": "Patchwork",
+     "id": "41585"
+    },
+    {
+     "name": "7 Wonders Duel",
+     "id": "173346"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -30678,11 +33741,26 @@
     "how_you_win": "You win by balancing worker placement efficiency with area influence and temple advancement to accumulate the most victory points."
    },
    "similar": [
-    "Tzolk'in: The Mayan Calendar",
-    "Teotihuacan",
-    "Tabannusi: Builders of Ur",
-    "Trismegistus",
-    "The Voyages of Marco Polo"
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Teotihuacan",
+     "id": null
+    },
+    {
+     "name": "Tabannusi: Builders of Ur",
+     "id": null
+    },
+    {
+     "name": "Trismegistus",
+     "id": null
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -30824,11 +33902,26 @@
     "how_you_win": "You out-engine opponents by chaining action-wheel turns into temple growth, god advancement, and monument completion faster than they can."
    },
    "similar": [
-    "Teotihuacan: City of Gods",
-    "Trismegistus: The Great Alchemist",
-    "Anachrony",
-    "Tzolk'in: The Mayan Calendar",
-    "Newton"
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    },
+    {
+     "name": "Trismegistus: The Great Alchemist",
+     "id": null
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Newton",
+     "id": null
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -30970,11 +34063,26 @@
     "how_you_win": "You win by efficiently growing and cashing in your worker dice to out-produce rivals across the pyramid, tech tree, and god tracks."
    },
    "similar": [
-    "Tzolk'in: The Mayan Calendar",
-    "Trismegistus: The Great Alchemist",
-    "Tekhenu: Obelisk of the Sun",
-    "Newton",
-    "Underwater Cities"
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Trismegistus: The Great Alchemist",
+     "id": null
+    },
+    {
+     "name": "Tekhenu: Obelisk of the Sun",
+     "id": null
+    },
+    {
+     "name": "Newton",
+     "id": null
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -31135,11 +34243,26 @@
     "how_you_win": "You win by out-expanding and out-upgrading opponents on the shared board while squeezing extra points from cult tracks and favors along the way."
    },
    "similar": [
-    "Gaia Project",
-    "Teotihuacan: City of Gods",
-    "Concordia",
-    "Tzolk'in: The Mayan Calendar",
-    "Brass: Birmingham"
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    },
+    {
+     "name": "Concordia",
+     "id": "124361"
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -31286,11 +34409,26 @@
     "how_you_win": "You win by building the most efficient card engine while also grabbing enough milestones and awards to edge out rivals on the final tally."
    },
    "similar": [
-    "Terraforming Mars: Ares Expedition",
-    "Gaia Project",
-    "Underwater Cities",
-    "On Mars",
-    "Scythe"
+    {
+     "name": "Terraforming Mars: Ares Expedition",
+     "id": null
+    },
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    },
+    {
+     "name": "Underwater Cities",
+     "id": null
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Scythe",
+     "id": null
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -31428,11 +34566,26 @@
     "how_you_win": "You win by out-teching and out-culturing opponents while keeping enough military to avoid being raided for points."
    },
    "similar": [
-    "Clash of Cultures",
-    "Innovation",
-    "Nations",
-    "Concordia",
-    "Brass: Birmingham"
+    {
+     "name": "Clash of Cultures",
+     "id": null
+    },
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "Nations",
+     "id": null
+    },
+    {
+     "name": "Concordia",
+     "id": "124361"
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -31582,11 +34735,26 @@
     "how_you_win": "You win by building the most efficient network of camel trains that reaches oases and encloses territory while denying opponents the same opportunities."
    },
    "similar": [
-    "Tigris & Euphrates",
-    "Ingenious",
-    "Blokus",
-    "Hive",
-    "Yspahan"
+    {
+     "name": "Tigris & Euphrates",
+     "id": null
+    },
+    {
+     "name": "Ingenious",
+     "id": null
+    },
+    {
+     "name": "Blokus",
+     "id": null
+    },
+    {
+     "name": "Hive",
+     "id": null
+    },
+    {
+     "name": "Yspahan",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -31735,11 +34903,26 @@
     "how_you_win": "You win by claiming a network of routes that completes your secret tickets while denying opponents key connections."
    },
    "similar": [
-    "Ticket to Ride",
-    "Ticket to Ride: Nordic Countries",
-    "Steam",
-    "Northern Pacific",
-    "Union Pacific"
+    {
+     "name": "Ticket to Ride",
+     "id": "9209"
+    },
+    {
+     "name": "Ticket to Ride: Nordic Countries",
+     "id": "31627"
+    },
+    {
+     "name": "Steam",
+     "id": null
+    },
+    {
+     "name": "Northern Pacific",
+     "id": null
+    },
+    {
+     "name": "Union Pacific",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -31882,11 +35065,26 @@
     "how_you_win": "You win by carefully bringing all four of your victory point colors up together while using conflicts to weaken opponents' weakest categories even further."
    },
    "similar": [
-    "Through the Desert",
-    "Ra",
-    "Amun-Re",
-    "Blue Lagoon",
-    "Yspahan"
+    {
+     "name": "Through the Desert",
+     "id": null
+    },
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "Amun-Re",
+     "id": "5404"
+    },
+    {
+     "name": "Blue Lagoon",
+     "id": "244331"
+    },
+    {
+     "name": "Yspahan",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -32035,11 +35233,26 @@
     "how_you_win": "You win by controlling the most valuable temples when scoring triggers and by collecting well-matched sets of treasures to cash in."
    },
    "similar": [
-    "Java",
-    "Mexica",
-    "Torres",
-    "Amun-Re",
-    "El Grande"
+    {
+     "name": "Java",
+     "id": null
+    },
+    {
+     "name": "Mexica",
+     "id": null
+    },
+    {
+     "name": "Torres",
+     "id": null
+    },
+    {
+     "name": "Amun-Re",
+     "id": "5404"
+    },
+    {
+     "name": "El Grande",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -32182,11 +35395,26 @@
     "how_you_win": "You win by building the most efficient combination of contract fulfillment, cathedral investment, and noble favors before the game's rounds run out."
    },
    "similar": [
-    "Newton",
-    "Marco Polo II",
-    "Anno 1800",
-    "Lorenzo il Magnifico",
-    "Res Arcana"
+    {
+     "name": "Newton",
+     "id": null
+    },
+    {
+     "name": "Marco Polo II",
+     "id": null
+    },
+    {
+     "name": "Anno 1800",
+     "id": null
+    },
+    {
+     "name": "Lorenzo il Magnifico",
+     "id": null
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -32322,11 +35550,26 @@
     "how_you_win": "You win by efficiently cycling your mancala bowls to fuel whichever combination of the six scoring tracks you can push furthest."
    },
    "similar": [
-    "Amerigo",
-    "In the Year of the Dragon",
-    "Bora Bora",
-    "The Castles of Burgundy",
-    "Antike Duellum"
+    {
+     "name": "Amerigo",
+     "id": "38924"
+    },
+    {
+     "name": "In the Year of the Dragon",
+     "id": "31594"
+    },
+    {
+     "name": "Bora Bora",
+     "id": "127060"
+    },
+    {
+     "name": "The Castles of Burgundy",
+     "id": "84876"
+    },
+    {
+     "name": "Antike Duellum",
+     "id": "104955"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -32455,11 +35698,26 @@
     "how_you_win": "You win by staging the most impressive magic tricks during the show phases, built from ingredients and blueprints you've assembled through the week."
    },
    "similar": [
-    "Alchemists",
-    "Coimbra",
-    "Grand Austria Hotel",
-    "Argent: The Consortium",
-    "Lords of Waterdeep"
+    {
+     "name": "Alchemists",
+     "id": null
+    },
+    {
+     "name": "Coimbra",
+     "id": null
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    },
+    {
+     "name": "Argent: The Consortium",
+     "id": null
+    },
+    {
+     "name": "Lords of Waterdeep",
+     "id": null
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -32606,11 +35864,26 @@
     "how_you_win": "You win by combining efficient use of your dice across religious, military, and civil actions with a well-chosen set of scoring cards kept hidden until the final tally."
    },
    "similar": [
-    "Lorenzo il Magnifico",
-    "Tzolk'in: The Mayan Calendar",
-    "Grand Austria Hotel",
-    "Trajan",
-    "The Voyages of Marco Polo"
+    {
+     "name": "Lorenzo il Magnifico",
+     "id": null
+    },
+    {
+     "name": "Tzolk'in: The Mayan Calendar",
+     "id": "126163"
+    },
+    {
+     "name": "Grand Austria Hotel",
+     "id": null
+    },
+    {
+     "name": "Trajan",
+     "id": "741"
+    },
+    {
+     "name": "The Voyages of Marco Polo",
+     "id": "171623"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -32768,11 +36041,26 @@
     "how_you_win": "You win by being the first to reach the victory point threshold (commonly 10) through a mix of completed public objectives, secret objectives, and holding key systems like Mecatol Rex."
    },
    "similar": [
-    "Eclipse: Second Dawn for the Galaxy",
-    "Rex: Final Days of an Empire",
-    "Star Wars: Rebellion",
-    "Forbidden Stars",
-    "Cosmic Encounter"
+    {
+     "name": "Eclipse: Second Dawn for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Rex: Final Days of an Empire",
+     "id": null
+    },
+    {
+     "name": "Star Wars: Rebellion",
+     "id": "187645"
+    },
+    {
+     "name": "Forbidden Stars",
+     "id": null
+    },
+    {
+     "name": "Cosmic Encounter",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -32907,11 +36195,26 @@
     "how_you_win": "You win by timing your gear placements to gather resources efficiently and converting them into temple advancement and building points before the game's 26 rounds end."
    },
    "similar": [
-    "Trajan",
-    "Caverna: The Cave Farmers",
-    "Le Havre",
-    "Puerto Rico",
-    "Teotihuacan: City of Gods"
+    {
+     "name": "Trajan",
+     "id": "741"
+    },
+    {
+     "name": "Caverna: The Cave Farmers",
+     "id": "102794"
+    },
+    {
+     "name": "Le Havre",
+     "id": "35677"
+    },
+    {
+     "name": "Puerto Rico",
+     "id": "3076"
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -33034,11 +36337,26 @@
     "how_you_win": "You win by building the most efficient combination of rail network expansion and technological upgrades, converting worker actions into points across multiple scoring tracks by game end."
    },
    "similar": [
-    "Great Western Trail",
-    "Age of Steam",
-    "Lorenzo il Magnifico",
-    "Barrage",
-    "Snowdonia"
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Lorenzo il Magnifico",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Snowdonia",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -33160,11 +36478,26 @@
     "how_you_win": "You complete the specific mission objective, usually by holding key hexes or breaking the other side's force, before the scenario's turn limit runs out."
    },
    "similar": [
-    "Undaunted: Normandy",
-    "Undaunted: Reinforcements",
-    "Undaunted: 2200",
-    "Memoir '44",
-    "Battle Line"
+    {
+     "name": "Undaunted: Normandy",
+     "id": null
+    },
+    {
+     "name": "Undaunted: Reinforcements",
+     "id": null
+    },
+    {
+     "name": "Undaunted: 2200",
+     "id": null
+    },
+    {
+     "name": "Memoir '44",
+     "id": null
+    },
+    {
+     "name": "Battle Line",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -33294,11 +36627,26 @@
     "how_you_win": "You out-build and out-tech your opponents across three eras, converting resources into cities, tunnels, and completed contracts that add up to the highest final score."
    },
    "similar": [
-    "Pipeline",
-    "Barrage",
-    "Teotihuacan: City of Gods",
-    "Praga Caput Regni",
-    "On Mars"
+    {
+     "name": "Pipeline",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    },
+    {
+     "name": "Praga Caput Regni",
+     "id": null
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    }
    ],
    "teachers": [
     "Rahdo Runs Through",
@@ -33444,11 +36792,26 @@
     "how_you_win": "You win by using movement, attacks, and scheme cards to whittle the opposing hero(es) down to zero life before they do the same to you."
    },
    "similar": [
-    "Unmatched: Cobble & Fog",
-    "Unmatched: Robin Hood vs. Bigfoot",
-    "BattleCON",
-    "Smash Up",
-    "Star Wars: The Card Game"
+    {
+     "name": "Unmatched: Cobble & Fog",
+     "id": null
+    },
+    {
+     "name": "Unmatched: Robin Hood vs. Bigfoot",
+     "id": null
+    },
+    {
+     "name": "BattleCON",
+     "id": null
+    },
+    {
+     "name": "Smash Up",
+     "id": null
+    },
+    {
+     "name": "Star Wars: The Card Game",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -33597,10 +36960,22 @@
     "how_you_win": "You win by out-maneuvering and out-carding the opponent to bring their hero's (or heroes') health to zero first."
    },
    "similar": [
-    "Unmatched: Battle of Legends, Volume One",
-    "Unmatched: Robin Hood vs. Bigfoot",
-    "BattleCON",
-    "Smash Up"
+    {
+     "name": "Unmatched: Battle of Legends, Volume One",
+     "id": null
+    },
+    {
+     "name": "Unmatched: Robin Hood vs. Bigfoot",
+     "id": null
+    },
+    {
+     "name": "BattleCON",
+     "id": null
+    },
+    {
+     "name": "Smash Up",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -33709,10 +37084,22 @@
     "how_you_win": "You win by using positioning, ranged attacks or terrain destruction, and well-timed defense cards to reduce the opposing hero to zero health."
    },
    "similar": [
-    "Unmatched: Battle of Legends, Volume One",
-    "Unmatched: Cobble & Fog",
-    "BattleCON",
-    "Smash Up"
+    {
+     "name": "Unmatched: Battle of Legends, Volume One",
+     "id": null
+    },
+    {
+     "name": "Unmatched: Cobble & Fog",
+     "id": null
+    },
+    {
+     "name": "BattleCON",
+     "id": null
+    },
+    {
+     "name": "Smash Up",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -33864,10 +37251,22 @@
     "how_you_win": "You win by being the first to get seven unicorn cards into your stable while using attack cards to slow everyone else down."
    },
    "similar": [
-    "Exploding Kittens",
-    "Munchkin",
-    "Fluxx",
-    "Throw Throw Burrito"
+    {
+     "name": "Exploding Kittens",
+     "id": null
+    },
+    {
+     "name": "Munchkin",
+     "id": null
+    },
+    {
+     "name": "Fluxx",
+     "id": null
+    },
+    {
+     "name": "Throw Throw Burrito",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -34019,11 +37418,26 @@
     "how_you_win": "You win by building an efficient wine-production and sales engine that converts vineyards, oenologists, and market access into the most victory points by game end."
    },
    "similar": [
-    "Kanban EV",
-    "On Mars",
-    "Lisboa",
-    "The Gallerist",
-    "Escape Plan"
+    {
+     "name": "Kanban EV",
+     "id": "284378"
+    },
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Lisboa",
+     "id": "161533"
+    },
+    {
+     "name": "The Gallerist",
+     "id": "125153"
+    },
+    {
+     "name": "Escape Plan",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -34167,11 +37581,26 @@
     "how_you_win": "You win by combining resource generation, card plays, and well-timed follower placement to rack up the most victory points across buildings, influence, and bonuses by the end of the game."
    },
    "similar": [
-    "Architects of the West Kingdom",
-    "Paladins of the West Kingdom",
-    "Raiders of the North Sea",
-    "Trickerion",
-    "Lords of Waterdeep"
+    {
+     "name": "Architects of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Paladins of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Raiders of the North Sea",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Lords of Waterdeep",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -34309,11 +37738,26 @@
     "how_you_win": "You out-tech and out-expand your rivals while contributing enough to the fight against the Voidborn, ending with the highest combined score."
    },
    "similar": [
-    "Eclipse: Second Dawn for the Galaxy",
-    "Gaia Project",
-    "Twilight Imperium: Fourth Edition",
-    "Great Western Trail",
-    "Anachrony"
+    {
+     "name": "Eclipse: Second Dawn for the Galaxy",
+     "id": null
+    },
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    },
+    {
+     "name": "Twilight Imperium: Fourth Edition",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    }
    ],
    "teachers": [
     "Heavy Cardboard",
@@ -34468,11 +37912,26 @@
     "how_you_win": "You win by timing your stock purchases and company investments so your total portfolio value outpaces the other investors when the final round ends."
    },
    "similar": [
-    "Chicago Express",
-    "1830: Railways & Robber Barons",
-    "Age of Steam",
-    "Container",
-    "Brass: Birmingham"
+    {
+     "name": "Chicago Express",
+     "id": null
+    },
+    {
+     "name": "1830: Railways & Robber Barons",
+     "id": null
+    },
+    {
+     "name": "Age of Steam",
+     "id": null
+    },
+    {
+     "name": "Container",
+     "id": "23463"
+    },
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -34621,11 +38080,26 @@
     "how_you_win": "The Shadow player wins by capturing enough Free People strongholds, while the Free Peoples win by reaching Mount Doom with the Ring or by surviving long enough that Sauron cannot break through militarily."
    },
    "similar": [
-    "Twilight Struggle",
-    "A Game of Thrones: The Board Game",
-    "Kemet",
-    "Star Wars: Rebellion",
-    "Root"
+    {
+     "name": "Twilight Struggle",
+     "id": "12333"
+    },
+    {
+     "name": "A Game of Thrones: The Board Game",
+     "id": null
+    },
+    {
+     "name": "Kemet",
+     "id": "127023"
+    },
+    {
+     "name": "Star Wars: Rebellion",
+     "id": "187645"
+    },
+    {
+     "name": "Root",
+     "id": "237182"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -34778,11 +38252,26 @@
     "how_you_win": "You win by efficiently exploring and mapping more territory than your rivals while completing journal and bonus objectives that add up to the highest total score."
    },
    "similar": [
-    "Architects of the West Kingdom",
-    "Rajas of the Ganges",
-    "Great Western Trail",
-    "The Isle of Cats",
-    "Barrage"
+    {
+     "name": "Architects of the West Kingdom",
+     "id": null
+    },
+    {
+     "name": "Rajas of the Ganges",
+     "id": null
+    },
+    {
+     "name": "Great Western Trail",
+     "id": null
+    },
+    {
+     "name": "The Isle of Cats",
+     "id": null
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -34907,11 +38396,26 @@
     "how_you_win": "You win by building the most efficient personal engine, converting resources into completed weather effects and contracts faster and cleaner than your opponents while limiting harmful side effects."
    },
    "similar": [
-    "On Mars",
-    "Escape Plan",
-    "Gaia Project",
-    "Barrage",
-    "Anachrony"
+    {
+     "name": "On Mars",
+     "id": "184267"
+    },
+    {
+     "name": "Escape Plan",
+     "id": null
+    },
+    {
+     "name": "Gaia Project",
+     "id": "220308"
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    },
+    {
+     "name": "Anachrony",
+     "id": null
+    }
    ],
    "teachers": [
     "Heavy Cardboard",
@@ -35053,11 +38557,26 @@
     "how_you_win": "You win by splaying and melding cards for combo bonuses, timing your worker placements to out-race rivals around the castle track, and converting resources into influence points more efficiently than the table."
    },
    "similar": [
-    "Tekhenu: Obelisk of the Sun",
-    "Ark Nova",
-    "Trickerion",
-    "Barony",
-    "Teotihuacan: City of Gods"
+    {
+     "name": "Tekhenu: Obelisk of the Sun",
+     "id": null
+    },
+    {
+     "name": "Ark Nova",
+     "id": null
+    },
+    {
+     "name": "Trickerion",
+     "id": null
+    },
+    {
+     "name": "Barony",
+     "id": null
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -35225,11 +38744,26 @@
     "how_you_win": "You win by building an efficient chain of bird powers that lets you rack up eggs, food, and cards faster than opponents, then converting that engine into the highest combined score across all categories."
    },
    "similar": [
-    "Everdell",
-    "Ark Nova",
-    "Cascadia",
-    "Res Arcana",
-    "Fauna"
+    {
+     "name": "Everdell",
+     "id": null
+    },
+    {
+     "name": "Ark Nova",
+     "id": null
+    },
+    {
+     "name": "Cascadia",
+     "id": null
+    },
+    {
+     "name": "Res Arcana",
+     "id": "262712"
+    },
+    {
+     "name": "Fauna",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -35363,11 +38897,26 @@
     "how_you_win": "You win by extending your witch network efficiently to claim crystals and prophecy bonuses ahead of opponents, ending with the highest combined score across the game's several scoring tracks."
    },
    "similar": [
-    "Yellow & Yangtze",
-    "Tigris & Euphrates",
-    "Ra",
-    "Blue Lagoon",
-    "Through the Desert"
+    {
+     "name": "Yellow & Yangtze",
+     "id": null
+    },
+    {
+     "name": "Tigris & Euphrates",
+     "id": null
+    },
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "Blue Lagoon",
+     "id": "244331"
+    },
+    {
+     "name": "Through the Desert",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -35520,11 +39069,26 @@
     "how_you_win": "You win by having the highest 'lowest score' across the four leader types (Governor, Soldier, Farmer/Trader combined with Artisan wildcards), forcing balanced growth rather than a single dominant strategy."
    },
    "similar": [
-    "Tigris & Euphrates",
-    "Blue Lagoon",
-    "Samurai",
-    "Through the Desert",
-    "El Grande"
+    {
+     "name": "Tigris & Euphrates",
+     "id": null
+    },
+    {
+     "name": "Blue Lagoon",
+     "id": "244331"
+    },
+    {
+     "name": "Samurai",
+     "id": null
+    },
+    {
+     "name": "Through the Desert",
+     "id": null
+    },
+    {
+     "name": "El Grande",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",
@@ -35677,11 +39241,26 @@
     "how_you_win": "You win by successfully campaigning your species to the top enclosure through bribery and vote-trading, ending the game with the most laurels/support at the top spot."
    },
    "similar": [
-    "Intrigue",
-    "Medici vs. Strozzi",
-    "Cannes",
-    "For Sale",
-    "The Traitors of Camelot"
+    {
+     "name": "Intrigue",
+     "id": null
+    },
+    {
+     "name": "Medici vs. Strozzi",
+     "id": null
+    },
+    {
+     "name": "Cannes",
+     "id": null
+    },
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "The Traitors of Camelot",
+     "id": null
+    }
    ],
    "teachers": [
     "Watch It Played",

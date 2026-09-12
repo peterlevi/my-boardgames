@@ -209,7 +209,7 @@ def collection_stats():
     """Play counts and the owner's own rating both ride along with the
     collection export (`stats=1`), so neither costs an extra API call. An
     unrated game carries value="N/A"."""
-    plays, mine, acquired = {}, {}, {}
+    plays, mine, acquired, edited = {}, {}, {}, {}
     for name in ("collection.xml", "expansions.xml"):
         f = RAW / name
         if not f.exists():
@@ -224,6 +224,12 @@ def collection_stats():
             priv = it.find("privateinfo")
             if priv is not None and priv.get("acquisitiondate"):
                 acquired[oid] = priv.get("acquisitiondate")[:10]
+            # When the collection entry itself last changed. Not the date you
+            # got the game — an edited entry moves — so it is called what it
+            # is rather than standing in for something else.
+            st = it.find("status")
+            if st is not None and st.get("lastmodified"):
+                edited[oid] = st.get("lastmodified")[:10]
             rating = it.find("stats/rating")
             v = rating.get("value") if rating is not None else None
             if v and v != "N/A":
@@ -231,7 +237,7 @@ def collection_stats():
                     mine[oid] = float(v)
                 except ValueError:
                     pass
-    return plays, mine, acquired
+    return plays, mine, acquired, edited
 
 
 def csv_rows():
@@ -328,7 +334,7 @@ def main():
         print(f"no cached BGG data — building from data/collection.csv "
               f"({len(games)} items, no mechanics, poll percentages or images)")
 
-    plays, mine, acquired = collection_stats()
+    plays, mine, acquired, edited = collection_stats()
     private = load_private()
     csv_plays, csv_rating = {}, {}
     for r in rows:
@@ -361,6 +367,7 @@ def main():
         g["acquired"] = priv.get("acquired") or acquired.get(g["id"])
         g["price_paid"] = priv.get("price") if keep_private else None
         g["currency"] = priv.get("currency") if keep_private else None
+        g["edited"] = edited.get(g["id"])
         g["last_played"] = (played.get(g["id"]) or {}).get("last") or None
 
     out = ROOT / "data" / "games.json"

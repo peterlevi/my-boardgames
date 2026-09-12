@@ -39,7 +39,7 @@ h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 .note { font-size:.85rem; }
 .note b { color:var(--ink); }
 
-.titlebar { display:flex; align-items:baseline; column-gap:12px; row-gap:2px;
+.titlebar { display:flex; align-items:baseline; column-gap:22px; row-gap:2px;
   flex-wrap:wrap; margin-bottom:2px; }
 .titlebar .sub { margin:0; font-size:.9rem; }
 /* The legend is a checkbox toggle, not a <details>: its body has to sit
@@ -592,8 +592,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 <div class="wrap">
 <input type="checkbox" id="legendtoggle">
 <div class="titlebar">
-  <h1>Board game collection</h1>
-  <span class="sub">__NGAMES__ games · __NEXP__ expansions</span>
+  <h1>__HEADLINE__</h1>
   <button class="link" id="reset" type="button">Reset filters</button>
   <label for="legendtoggle" id="legendlink">What the columns mean</label>
   <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"

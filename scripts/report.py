@@ -553,6 +553,18 @@ def check_balanced(html):
 OFF_BY_DEFAULT = ("y", "acq", "lp", "ed", "pp")
 
 
+def headline(data):
+    """The title line: what the collection is, counts and all, in one voice."""
+    games = sum(1 for g in data if not g["exp"])
+    exps = sum(1 for g in data if g["exp"])
+    def plural(n, word):
+        return f"{n} {word}" + ("" if n == 1 else "s")
+    text = "Collection of " + plural(games, "board game")
+    if exps:
+        text += " and " + plural(exps, "expansion")
+    return text
+
+
 def root_class(a):
     """The default column state, written into <html> so the first paint is
     already right — for a browser with scripts blocked, and as the base the
@@ -691,6 +703,7 @@ def main():
             .replace("__ROOTCLASS__", root_class(a))
             .replace("__REPO_URL__", esc(repo_url()))
             .replace("__STAMP__", dt.date.today().isoformat())
+            .replace("__HEADLINE__", esc(headline(data)))
             .replace("__NGAMES__", str(sum(1 for g in data if not g["exp"])))
             .replace("__NEXP__", str(sum(1 for g in data if g["exp"]))))
 

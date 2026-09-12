@@ -20,31 +20,28 @@
  },
  "scoring": {
   "subsystems": [
-   "Conflict (combat) rewards",
+   "Conflict/combat resolution",
    "Faction influence & alliances"
   ],
   "sources": [
-   "Combat rewards at Arrakis",
+   "Conflict card rewards (winning/placing)",
+   "Faction influence thresholds (2 and 4 influence)",
+   "Alliance tiles (first to 4 influence with a faction)",
+   "Imperium/market cards with printed VP",
    "Intrigue cards",
-   "Alliance with Great Houses",
-   "Landsraad council agendas"
+   "Leader/upgrade abilities (e.g. Swordmaster) granting VP"
   ],
   "winning_score": 10,
   "tally": "running",
-  "shape": "single_currency",
+  "shape": "sum",
   "ends_by": [
    "target_score",
    "exhaustion"
   ],
-  "how_you_win": "You gain Victory Points continuously by winning Conflicts with troop strength and by building Influence and Alliances with the Great Houses and Guild-like factions; at the end of any round in which a player has reached 10+ VP, or once the Conflict deck runs out, the game ends and whoever has the most VP wins (ties broken by spice, solari, water, then troops).",
+  "how_you_win": "A player wins by being the first to reach 10 victory points, earned from winning conflicts, building faction influence and alliances, and cards/abilities that grant points directly; if the conflict card deck runs out before anyone hits 10, the game ends and whoever has the most points wins.",
   "checked": [
-   "https://www.rulespal.com/dune-imperium/rulebook"
-  ],
-  "endings": [
-   {
-    "how": "target_score",
-    "decided_by": "points"
-   }
+   "https://meepletrail.com/how-to-play-dune-imperium",
+   "https://en.wikipedia.org/wiki/Dune:_Imperium"
   ]
  },
  "similar": [

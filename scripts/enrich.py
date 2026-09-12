@@ -461,8 +461,10 @@ def main():
                 facts = json.loads(cached.read_text()).get("scoring") or {}
             except Exception:  # noqa: BLE001
                 facts = {}
-            # Never talk over facts that were read off a rules page.
-            if a.endings and facts.get("checked") and not a.force:
+            # A verified record may still be missing what settles each of
+            # its endings; scoring.py keeps the verified endings and takes
+            # only the decisions from this pass.
+            if a.endings and facts.get("endings") and not a.force:
                 continue
             todo.append(g)
             continue

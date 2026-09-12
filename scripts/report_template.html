@@ -724,7 +724,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 <div class="panel">
   <div class="row">
     <div class="f"><label for="q">Search</label>
-      <input id="q" type="search" placeholder="Game name…" autocomplete="off"></div>
+      <input id="q" type="search" placeholder="Game name, designer, trait…" autocomplete="off"></div>
     <div class="f"><label for="players">Players</label>
       <select id="players"><!--__OPTIONS__--></select></div>
     <div class="f"><label for="mode">Rule</label>
@@ -736,15 +736,15 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       </select></div>
     <div class="f"><label for="exp">Expansions</label>
       <select id="exp"><!--__EXP_OPTIONS__--></select></div>
+    <div class="f"><label for="win">Win condition</label>
+      <select id="win"><!--__WIN_OPTIONS__--></select></div>
+    <div class="f"><label for="salad">Point salad</label>
+      <select id="salad"><!--__SALAD_OPTIONS__--></select></div>
   </div>
   <div class="filterbar">
   <details id="more">
     <summary>More filters</summary>
     <div class="row">
-      <div class="f"><label for="win">Win condition</label>
-        <select id="win"><!--__WIN_OPTIONS__--></select></div>
-      <div class="f"><label for="salad">Point salad</label>
-        <select id="salad"><!--__SALAD_OPTIONS__--></select></div>
     </div>
     <div class="row">
       <div class="f"><label>BGG rating</label>
@@ -1082,6 +1082,24 @@ function tagsOk(g, picked, mode) {
 }
 function or0(v) { return (v === null || v === undefined) ? 0 : v; }
 
+/** Everything the page shows about a game, as one lowercase string: name,
+ *  year, designers, every property, how it is won, how much of a salad, the
+ *  interaction level. Built once per game and kept, since a search runs it
+ *  over every row on every keystroke. */
+var HAY = [];
+function hay(i, g) {
+  if (HAY[i] !== undefined) return HAY[i];
+  var ai = g.ai || {};
+  var bits = [g.n, g.y || ''].concat(g.ds || []);
+  (g.tg || []).forEach(function (t) { if (TAGS[t]) bits.push(TAGS[t].n); });
+  (ai.wcs || []).forEach(function (w) { bits.push(WIN_LABEL[w] || w); });
+  bits.push(SALAD_LABEL[ai.br] || '');
+  bits.push(ai.ixl || g.ix || '');
+  if (g.exp) bits.push('expansion');
+  HAY[i] = bits.join(' ').toLowerCase();
+  return HAY[i];
+}
+
 /** Split every row into two buckets: rows passing the filters, and rows that
  *  only the search term matched. The second bucket is what lets a search find
  *  a game the current filters would otherwise hide. */
@@ -1101,7 +1119,7 @@ function partition() {
   var inside = [], outside = [];
   for (var i = 0; i < DATA.length; i++) {
     var g = DATA[i];
-    var hit = !term || (g.n + ' ' + (g.y || '')).toLowerCase().indexOf(term) !== -1;
+    var hit = !term || hay(i, g).indexOf(term) !== -1;
     if (!hit) continue;
 
     // Expansion visibility is structural rather than a filter you relax, so

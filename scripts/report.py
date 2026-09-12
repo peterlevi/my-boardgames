@@ -393,7 +393,24 @@ def describe(a):
     return text[0].upper() + text[1:]
 
 
-def rows_html(data, a):
+def haystack(g, tags):
+    """Everything about a game that the page shows anywhere, as one lowercase
+    string to search: the name and year, the designers, every property it
+    carries, how it is won, how much of a salad it is, and the interaction
+    level. Searching "econo" should find the games tagged Economic, and
+    searching a designer or a year should find those too."""
+    ai = g.get("ai") or {}
+    bits = [g["n"], str(g["y"] or "")]
+    bits += g.get("ds") or []
+    bits += [tags[i]["n"] for i in g.get("tg") or [] if i < len(tags)]
+    bits += [WIN_LABEL.get(w, "") for w in ai.get("wcs") or []]
+    bits += [SALAD_LABEL.get(ai.get("br"), ""), ai.get("ixl") or g.get("ix") or ""]
+    if g.get("exp"):
+        bits.append("expansion")
+    return " ".join(b for b in bits if b).lower()
+
+
+def rows_html(data, a, tags=()):
     """Every row, rendered as real markup.
 
     The page script owns only the cells that change with the player count; the
@@ -455,7 +472,7 @@ def rows_html(data, a):
                       if g.get("pp") else EM_DASH)
         rank = g["rk"] if g["rk"] else EM_DASH
         inline = f'<span class="vinline">{v}</span>' if n else ""
-        search = esc(f'{g["n"]} {g["y"] or ""}'.lower())
+        search = esc(haystack(g, tags))
 
         out.append(
             f'<tr class="game-row" data-i="{i}" data-search="{search}"{"" if shown else " hidden"}>'
@@ -677,7 +694,7 @@ def main():
             "salad": a.salad,
             "expansions": a.expansions}
 
-    rows, shown = rows_html(data, a)
+    rows, shown = rows_html(data, a, tags)
     def options(pairs, current):
         return "".join(
             f'<option value="{esc(v)}"{" selected" if v == current else ""}>'

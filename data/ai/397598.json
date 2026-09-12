@@ -20,15 +20,18 @@
  },
  "scoring": {
   "subsystems": [
-   "Conflict (combat) rewards",
-   "Faction influence & alliances"
+   "Combat/Conflict track (troop strength, garrison, leader combat bonuses)",
+   "Faction influence & alliances (four factions, each with its own influence track)",
+   "Imperium Row card economy (Technology tiles, Intrigue cards, Spice Must Flow cards)",
+   "Secret Objective cards (Uprising-specific)"
   ],
   "sources": [
-   "Combat rewards at Arrakis",
-   "Intrigue/spy cards",
-   "Alliance with Great Houses",
-   "Landsraad council agendas",
-   "Contracts"
+   "Conflict/battle wins",
+   "Faction alliance tokens (per faction reaching Ally status)",
+   "Technology tile VP",
+   "Intrigue card VP effects",
+   "Spice Must Flow cards (converted to VP via endgame Intrigue cards)",
+   "Secret Objective card VP (Uprising)"
   ],
   "winning_score": 10,
   "tally": "running",
@@ -37,15 +40,11 @@
    "target_score",
    "exhaustion"
   ],
-  "how_you_win": "As in the base game, you build Victory Points through Conflict victories and Faction influence/alliances, with the added twist that winning a Conflict whose battle icon matches a card in your supply also scores a VP; the game ends at the close of a round in which a player has 10+ VP, or when the Conflict deck is exhausted, and the player with the most VP wins (ties broken by spice, solari, water, then troops).",
+  "how_you_win": "Players build a deck/worker-placement engine to win conflicts, ally with factions, and accumulate cards that grant Victory Points on a shared, publicly visible track; once any player reaches 10+ VP (or the Conflict Deck runs out), the current round finishes and whoever has the most VP wins, with spice, solari, water, and troops as tiebreakers.",
   "checked": [
-   "https://www.rulespal.com/dune-imperium-uprising/rulebook"
-  ],
-  "endings": [
-   {
-    "how": "target_score",
-    "decided_by": "points"
-   }
+   "https://www.rulespal.com/dune-imperium-uprising/rulebook",
+   "https://boardgamegeek.com/boardgame/397598/dune-imperium-uprising",
+   "https://geekdad.com/2020/12/control-the-spice-and-control-the-universe-in-dune-imperium/"
   ]
  },
  "similar": [

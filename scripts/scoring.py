@@ -53,9 +53,21 @@ _ERA = _re.compile(r"[,(]?\s*\b(canal|rail|first|second|third|final|each)?\s*"
 _ERA_PREFIX = _re.compile(r"^\s*(canal|rail|first|second|third|final)\s+", _re.I)
 _PAREN = _re.compile(r"\([^)]*\)")
 # Sweeping the table into points at the end is not a category of its own.
+# "One currency" only means money when the categories actually name money:
+# Dune: Imperium's single currency is victory points, Food Chain Magnate's is
+# cash, and the two want opposite answers.
+_MONEY = _re.compile(r"\b(money|cash|coins?|profit|dividends?|credits?|loot|"
+                     r"gold|wealth|capital|net worth|share value|shares?|"
+                     r"stock)\b|[£$]", _re.I)
 _LEFTOVERS = _re.compile(
     r"(leftover|left-over|unused|spare|remaining)\s+\w*\s*"
     r"(money|cash|coins?|resources?|goods|workers?)|money[- ]to[- ]vp", _re.I)
+
+
+def is_money(f):
+    """Whether a single-currency game is really played for money."""
+    text = " ".join(str(x) for x in ((f or {}).get("sources") or []))
+    return bool(_MONEY.search(text))
 
 
 def categories(f):
@@ -93,7 +105,7 @@ SALAD_LABEL = {
 }
 # The column has less room than the dropdown.
 SALAD_SHORT = {"no": "No", "touch": "A touch", "lot": "Quite a lot",
-               "total": "Total salad"}
+               "total": "Point salad"}
 SALAD_PILL = {"no": "p3", "touch": "p2", "lot": "p1", "total": "pw"}
 
 WIN_ORDER = ["race", "points", "objectives", "money", "lowest", "majority",
@@ -143,9 +155,17 @@ def endings(f):
     single string."""
     f = f or {}
     pairs = f.get("endings")
-    # Endings read off a rules page outrank a later list recalled from memory.
-    if f.get("checked") and f.get("ends_by"):
-        pairs = None
+    verified = f.get("ends_by") if f.get("checked") else None
+    if isinstance(verified, str):
+        verified = [verified]
+    if verified and isinstance(pairs, list) and pairs:
+        # A record read off a rules page keeps its own endings; the later pass
+        # is only allowed to say what settles each of them.
+        by = {}
+        for pr in pairs:
+            if isinstance(pr, dict) and pr.get("how"):
+                by[pr["how"]] = pr.get("decided_by") or ""
+        pairs = [{"how": h, "decided_by": by.get(h, "")} for h in verified]
     if isinstance(pairs, list) and pairs and isinstance(pairs[0], dict):
         out = []
         for p in pairs:
@@ -195,7 +215,7 @@ def salad(f):
     # One currency out of one or two engines is a money game, not a salad —
     # Food Chain Magnate, 1846. Four engines funnelling into money is not:
     # The Gallerist pays you for art, reputation, influence and contracts.
-    if shape == "single_currency" and subs <= 2:
+    if shape == "single_currency" and is_money(f) and subs <= 2:
         return "no"
     # Counting objectives is not accumulating points, however many kinds of
     # objective there are.
@@ -253,7 +273,7 @@ def salad(f):
     return level
 
 
-def _win_for(end, by, shape):
+def _win_for(end, by, shape, fallback="", money=True):
     """One ending, as a way of winning. `by` is what the rules say settles it;
     the score's shape stands in when a record does not say."""
     if end == "coop_goal":
@@ -262,12 +282,18 @@ def _win_for(end, by, shape):
         return "elimination"
     if by == "instant" or (not by and end == "sudden_death"):
         return "sudden"
-    from_shape = {"single_currency": "money", "lowest_category": "lowest",
+    from_shape = {"single_currency": "money" if money else "points",
+                  "lowest_category": "lowest",
                   "majority_control": "majority",
                   "objective_count": "objectives"}.get(shape, "points")
     # "Points" is the vaguest answer there is, so the score's own shape wins
     # over it: Sekigahara's points are control of castles, Food Chain
     # Magnate's are money, Tigris & Euphrates' are your weakest colour.
+    # An ending that merely stops the game is settled the same way as the
+    # rest of the game unless it says otherwise: Dune: Imperium runs out of
+    # conflict cards and still counts the same victory points.
+    if not by and fallback:
+        by = fallback
     settles = from_shape if by in ("", "points") else by
     # Reaching a threshold first is a race — unless what you are racing to
     # collect is objectives, which is Innovation's achievements.
@@ -284,9 +310,12 @@ def wins(f):
     if not f:
         return []
     shape = (f.get("shape") or "").strip()
+    ends = endings(f) or [("", "")]
+    fallback = next((by for _, by in ends if by and by != "instant"), "")
+    money = is_money(f)
     out = []
-    for how, by in endings(f) or [("", "")]:
-        w = _win_for(how, by, shape)
+    for how, by in ends:
+        w = _win_for(how, by, shape, fallback, money)
         if w not in out:
             out.append(w)
     return out[:3]

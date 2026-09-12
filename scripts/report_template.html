@@ -149,7 +149,7 @@ td.designer .more { color:var(--muted); }
   text-decoration:none; align-self:baseline; }
 .titlebar #reset:hover { color:var(--ink); }
 button.link { background:none; border:none; color:var(--accent); cursor:pointer;
-  font:inherit; text-decoration:underline; padding:7px 0; align-self:flex-end; }
+  font:inherit; padding:7px 0; align-self:flex-end; }
 details > summary { cursor:pointer; color:var(--accent); font-size:.84rem;
   font-weight:700; padding:12px 0 10px; list-style:none; width:max-content;
   display:flex; align-items:center; gap:7px; }
@@ -207,12 +207,12 @@ tbody tr:hover { background:var(--panel); }
    centres the whole cover inside a rounded, tinted box. Every thumbnail then
    has the same rounded silhouette whatever the cover's shape, with nothing
    cropped away. */
+a, a:hover, button.link, .linkish { text-decoration:none; }
 img.thumb { width:44px; height:44px; object-fit:contain; border-radius:7px;
   display:block; background:var(--tile); padding:2px; }
 td.thumb { width:44px; padding-right:0; }
 .game { color:var(--ink); font-weight:600; }
-a.game { text-decoration:none; }
-a.game:hover { color:var(--accent); text-decoration:underline; }
+a.game:hover { color:var(--accent); }
 .chip .n { color:var(--muted); font-variant-numeric:tabular-nums; }
 .chip .ext { opacity:.6; }
 .yr { color:var(--muted); font-weight:400; font-size:.85em; }
@@ -289,7 +289,7 @@ tr.detail > td { padding:0; border-bottom:1px solid var(--line); }
   background:var(--chip); color:var(--ink); cursor:pointer; font-family:inherit; }
 .chip:hover { box-shadow:inset 0 0 0 1px var(--accent); }
 .linkish { background:none; border:0; padding:0; font:inherit; cursor:pointer;
-  color:var(--accent); text-decoration:underline; }
+  color:var(--accent); }
 /* The nested poll table has to opt out of the main table's rules: it inherited
    table-layout:fixed, which squeezed the label column to 1px and clipped "4+"
    down to "4", and the sticky header's upward background shadow, which painted

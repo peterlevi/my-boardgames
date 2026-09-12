@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from majorities in houses/regions, temple levels, and terraces, so overall board control across several scoring categories decides the winner",
-  "how_you_win": "Accumulate the most points by controlling majorities in regions and building efficiently timed temple/terrace structures across the shared map."
+  "why": "Points come from repeated area-majority scorings across provinces plus separate tallies for markets, temples, and buildings.",
+  "how_you_win": "You place tiles and buildings to control the most territory in each color region when scoring rounds trigger, accumulating points from majorities, markets, and temples; most total points after the final scoring wins."
  },
  "similar": [
   "Java",

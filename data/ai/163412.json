@@ -19,8 +19,8 @@
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Final score is buttons remaining minus a penalty for empty squares on your quilt",
-  "how_you_win": "You win by filling your quilt board efficiently with patches that earn buttons, leaving the fewest empty squares while ending with the most spare buttons."
+  "why": "Final score is simply leftover buttons minus a penalty for each empty square on your quilt board, plus a small bonus for covering the special 7x7 area.",
+  "how_you_win": "Race to buy patches that tile your board efficiently and generate button income, ending with more net buttons (income minus empty-square penalties) than your opponent."
  },
  "similar": [
   "Patchwork Doodle",

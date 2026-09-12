@@ -18,11 +18,11 @@
   "kind": "card-based raids and drafting from a shared market",
   "detail": "As in Classics, players raid each other with military cards and draft from a shared card row, while each civilization's deck and tableau remain private and individually managed."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from completing faction-specific missions, tag bonuses, and end-game scoring, mirroring Classics' structure.",
-  "how_you_win": "Complete your civilization's objectives and accumulate tag-based bonuses to have the highest score when the final age ends."
+  "breadth": "Some",
+  "why": "As with other Imperium volumes, actions across factions all ultimately convert into cards worth victory points, making the final tally a single combined pool rather than several independent categories.",
+  "how_you_win": "You draft and play cards to grow your civilization's military and economic base, keeping the most valuable cards in your deck; at game end you sum the victory points on all your owned cards, and the highest total wins."
  },
  "similar": [
   "Imperium: Classics",

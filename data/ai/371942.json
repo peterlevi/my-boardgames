@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score combines court influence, resource-management bonuses, card-melding sets, and end-game track positions.",
-  "how_you_win": "You win by splaying and melding cards for combo bonuses, timing your worker placements to out-race rivals around the castle track, and converting resources into influence points more efficiently than the table."
+  "why": "Final score is built from several distinct categories — court influence, garden/warrior tracks, and race-track bonuses — each contributing independently rather than one dominant engine.",
+  "how_you_win": "Draft action cards each round to advance your clan along multiple tracks (court, garden, warriors) and race for early-completion bonuses, ending with the highest combined score across those categories."
  },
  "similar": [
   "Tekhenu: Obelisk of the Sun",

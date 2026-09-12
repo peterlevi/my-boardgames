@@ -21,8 +21,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There is no point scoring; the game ends immediately when a summoner is destroyed.",
-  "how_you_win": "You win by maneuvering your units to destroy the opposing summoner before yours falls."
+  "why": "There is no scoring track at all; the game ends the instant one player's summoner is destroyed.",
+  "how_you_win": "Summon units, maneuver them across the battlefield, and use attacks to kill the enemy summoner before they kill yours."
  },
  "similar": [
   "Star Wars: The Deckbuilding Game",

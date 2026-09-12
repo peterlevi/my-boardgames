@@ -20,8 +20,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There is no scoring; the game is decided entirely by checkmate, resignation, or draw conditions.",
-  "how_you_win": "You win by maneuvering your pieces to trap the opponent's king in checkmate, or if your opponent resigns or runs out of time."
+  "why": "There is no scoring at all; the game ends the instant one king is checkmated (or via draw/resignation).",
+  "how_you_win": "You maneuver your pieces to threaten the opposing king so it cannot escape capture (checkmate), which immediately ends the game in your favor."
  },
  "similar": [
   "Xiangqi",

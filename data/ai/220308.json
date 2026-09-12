@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score sums research advancement, building/federation bonuses, round scoring tiles, and end-game scoring tiles, so no single source dominates.",
-  "how_you_win": "You out-expand and out-tech your rivals across multiple scoring tracks at once, timing your buildings and federations to hit round and final bonuses better than anyone else."
+  "why": "Final score sums income/building VP, tech-track advancement, federation tiles, and both round and final scoring bonus tiles.",
+  "how_you_win": "Terraform and settle planets to expand your network, climb the six tech tracks, and form federations, converting all of that into victory points that are tallied at game end."
  },
  "similar": [
   "Terra Mystica",

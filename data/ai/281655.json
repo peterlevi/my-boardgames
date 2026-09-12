@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory points accrue from claimed sites, factories, and technology, so the winner is whoever built the most productive off-world economy.",
-  "how_you_win": "You win by successfully landing, claiming, and industrializing enough valuable sites across the solar system to out-score opponents by game end."
+  "why": "Victory points accrue from multiple independent channels — patents researched, sites colonized/claimed, and successful freight or exploration missions.",
+  "how_you_win": "Design and fly rockets to explore, claim, and colonize sites across the solar system while researching patents and delivering cargo; the player who accumulates the most VP from these combined ventures by game end wins."
  },
  "similar": [
   "Bios: Megafauna",

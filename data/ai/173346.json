@@ -20,9 +20,9 @@
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Some",
-  "why": "the game usually ends by points but can end instantly via military supremacy or collecting enough distinct science symbols",
-  "how_you_win": "you win either by pushing the military marker to your opponent's capital, by collecting six different science symbols, or by having the higher total score when the card supply runs out"
+  "breadth": "Salad",
+  "why": "The game can end instantly via military supremacy or completing six different science symbols, and if neither triggers, points are tallied across military, science, coins, and several building/wonder categories.",
+  "how_you_win": "You win immediately by pushing the military marker to your opponent's capital or by collecting six distinct science symbols; otherwise the player with more total points across all categories at the end of Age III wins."
  },
  "similar": [
   "7 Wonders",

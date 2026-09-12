@@ -53,8 +53,8 @@ gallery images load remotely.
 
 `scripts/enrich.py` builds `data/ai/<id>.json` — one grounded summary per game
 — using the `claude` CLI if it is on PATH, and skipping cleanly if it is not.
-That is where **Wins by**, **Breadth**, the interaction *kind*, and the "what
-people say" panel come from.
+That is where **Win condition**, **Point salad**, the interaction *kind*, and
+the "what people say" panel come from.
 
 ```bash
 python3 scripts/sync.py              # runs it as part of the pipeline
@@ -74,13 +74,21 @@ python3 scripts/bggids.py --retry    # ask again for names that found nothing
 python3 scripts/sync.py --no-ai      # skip it deliberately
 ```
 
-Three passes, in increasing order of cost:
+Four passes, in increasing order of cost:
 
 | pass | what it asks | cost per game |
 |---|---|---|
 | default | what the model already knows, grounded in the BGG data | ~$0.002 |
+| `--rescore` | only the win condition and point-salad call, merged into the existing entry | ~$0.001 |
 | `--describe` | how it plays, from the BGG text only — no reception | ~$0.002 |
 | `--online` | searches the web and cites its sources | ~$0.07 |
+
+`--rescore` is for when the *classification* is what changed rather than the
+game: the prompt now spells out that scoring sources are counted from the
+categories the rules score at the end, not from the number of actions that
+feed them — so Brass, where everything comes down to industries and links,
+stops being filed under "many sources". Re-running it costs a fraction of a
+full pass and leaves every other field alone.
 
 `--online` exists because training data is simply *absent* for recent games,
 not vague. Fifteen games here came back "low confidence"; looking them up

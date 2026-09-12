@@ -18,11 +18,11 @@
   "kind": "role selection and shared shipping/market competition",
   "detail": "Players affect each other mainly by picking roles that deny bonus benefits to others and by competing for limited shipping space and a shared trading house, but the plantations and buildings themselves sit on each player's own board. The colonist supply and ships are the main shared resources creating tension."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Victory points come mainly from buildings and shipped goods, with money serving only as a means to that end.",
-  "how_you_win": "You win by converting production and shipping into victory points faster than opponents, since leftover doubloons don't count at the end."
+  "why": "Nearly all VP comes from two engines — shipping goods to Europe and the built value of your buildings — even though several building types have their own bonus-scoring quirks.",
+  "how_you_win": "Grow and ship crops for victory points, and construct buildings (staffed with colonists) that are worth points on their own and boost your production; whoever has the most total points when the supply runs out or someone fills their city wins."
  },
  "similar": [
   "Le Havre",

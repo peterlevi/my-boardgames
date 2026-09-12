@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from specializing heavily in one or two resource types and multiplying their value with god cards, so early, deep commitment to a scoring path usually wins.",
-  "how_you_win": "You build routes and huts to produce specific goods, then use god cards and monuments to multiply that production into victory points, out-scaling opponents in your chosen specialty."
+  "why": "The four ages each reward a different specialist god track (rhino/human/baboon/bird), plus trade income, so no single category decides the outcome.",
+  "how_you_win": "You build monument levels, deploy specialists, and trade resources for money, aiming to score well across each era's favored specialist type since only 3 of 4 ages are randomly kept for final scoring."
  },
  "similar": [
   "Antiquity",

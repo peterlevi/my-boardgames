@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from completing a mix of plot, gardener, and panda objective cards collected during play.",
-  "how_you_win": "You win by completing the most objective cards, which are revealed and fulfilled by growing bamboo and shaping the garden in the ways each card demands."
+  "why": "Victory points come from three independent objective decks (plot, pattern, and panda/bamboo-eating objectives), each scored on its own track.",
+  "how_you_win": "Collect and complete plot, pattern, and panda objective cards by growing bamboo, irrigating land, and feeding the panda; whoever banks the most objective points wins."
  },
  "similar": [
   "Kingdomino",

@@ -18,11 +18,11 @@
   "kind": "area majority with hidden loyalties and bluffing",
   "detail": "Every army cube goes onto one shared map, so contesting a region directly denies or overtakes another player's position there. Because everyone's ultimate scoring depends on which faction ends up dominant, players are constantly reading each other's hidden allegiance and either reinforcing or undermining specific regions to steer the outcome."
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Other",
  "scoring": {
   "breadth": "Focused",
-  "why": "Your score depends on backing whichever faction actually ends up dominant on the map, not on accumulating points from varied sources.",
-  "how_you_win": "You win by aligning your hidden loyalty with the faction that ends up strongest and by having contributed strongly to that faction's regions."
+  "why": "The map resolves into whichever faction (Scottish, Welsh, or English) holds the most support, and victory goes to the player who backed that winning faction hardest relative to their own hidden allegiance, not to whoever has the most raw points.",
+  "how_you_win": "Secretly commit influence markers to regions and factions over the course of the game; when the kingdom's balance of power is finally revealed, the faction with the most support becomes dominant, and among the players who favored that faction, the one who supported it most wins."
  },
  "similar": [
   "El Grande",

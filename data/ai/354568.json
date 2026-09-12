@@ -18,9 +18,9 @@
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Victory points come primarily from pyramid blocks built plus bonus tiles, so pyramid count and value decide the winner.",
-  "how_you_win": "Win provinces at auction, use their income wisely, and build the most valuable pyramids with bonus tile combos by game end."
+  "breadth": "Some",
+  "why": "Points come almost entirely from pyramid stones built across the two kingdoms, with power/sacrifice cards providing the only other notable bonus.",
+  "how_you_win": "Each round you bid for provinces, then spend gold and power cards to buy stones and build your pyramid while making a sacrifice to Amun-Re; the pharaoh with the most pyramid-plus-card points after both kingdoms wins."
  },
  "similar": [
   "Ra",

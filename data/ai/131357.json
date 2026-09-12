@@ -21,8 +21,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no scoring; the last player left with any influence cards remaining wins outright.",
-  "how_you_win": "You win by successfully bluffing, blocking, and eliminating opponents' influence cards until you're the last family standing."
+  "why": "There is no scoring at all; the game tracks only who still has hidden influence (character cards) left.",
+  "how_you_win": "You bluff and challenge other players' claimed character powers to eliminate their influence cards, and the last player left with any influence remaining wins."
  },
  "similar": [
   "The Resistance",

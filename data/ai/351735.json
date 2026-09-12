@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score aggregates points from research completed, discoveries made, tools built, and end-game bonuses.",
-  "how_you_win": "You win by building the most efficient engine to rack up points across research, discoveries, and bonus tracks by game end."
+  "why": "Final score adds up track advancement bonuses, city/university tile values, completed Great Discoveries, and leftover resource penalties, so no single track dominates.",
+  "how_you_win": "You advance along theory tracks, place tiles in cities, and complete Discovery cards over the game; whoever totals the most points from all these end-game sources combined wins."
  },
  "similar": [
   "Tzolk'in: The Mayan Calendar",

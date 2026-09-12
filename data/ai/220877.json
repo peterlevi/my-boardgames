@@ -20,8 +20,8 @@
  "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Some",
-  "why": "The game ends and is won the instant a player's money and fame markers meet on their crossing tracks",
-  "how_you_win": "You win by using dice efficiently to gain fame and money simultaneously so your two markers intersect before any opponent's do."
+  "why": "The game ends the instant a player's money marker and fame marker meet on their two opposed tracks, so reaching that intersection first is the entire win condition rather than a final tally.",
+  "how_you_win": "You use workers and dice to build your province, gain goods, and earn karma, pushing your fame token and money token along two tracks that run in opposite directions; the first player whose tokens meet or cross wins immediately."
  },
  "similar": [
   "The Castles of Burgundy",

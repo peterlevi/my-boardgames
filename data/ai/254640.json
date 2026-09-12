@@ -20,8 +20,8 @@
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "The group's cumulative score is the number of mystery words correctly guessed across all rounds.",
-  "how_you_win": "The team succeeds together by maximizing correct guesses, ideally reaching a perfect score."
+  "why": "There is no individual winner — the group succeeds together based purely on how many of the mystery words the active player correctly guesses.",
+  "how_you_win": "Teammates each write a one-word clue for the guesser without duplicating each other, and the table 'wins' by maximizing correct guesses across all rounds, ideally for a perfect cooperative score."
  },
  "similar": [
   "Codenames",

@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from multiple tracks including planets, technologies, and end-game bonuses, so overall efficiency across systems decides the winner.",
-  "how_you_win": "You win by building the most efficient combination of claimed planets, researched technologies, and infrastructure to out-score opponents after eight rounds."
+  "why": "Points come from multiple independent systems — claimed pulsars/planets, researched technologies, and end-game track bonuses — that each add up separately.",
+  "how_you_win": "Draft dice each round to explore space, claim valuable pulsars, and research technologies that build an efficient engine; after 8 rounds, whoever has accumulated the most points across pulsars, tech, and bonuses wins."
  },
  "similar": [
   "The Voyages of Marco Polo",

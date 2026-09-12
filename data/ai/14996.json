@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Points come from route length, completed (or failed) destination tickets, and a longest-route bonus, so the winner balances efficient route claims with well-chosen tickets.",
-  "how_you_win": "You win by claiming a network of routes that completes your secret tickets while denying opponents key connections."
+  "why": "Points come from the length of claimed routes, completed destination tickets, and a bonus for the longest continuous route, while failed tickets subtract points.",
+  "how_you_win": "Collect train car cards to claim routes across the map, complete as many of your destination tickets as possible, and try to build the single longest continuous route; the highest point total when someone runs low on trains wins."
  },
  "similar": [
   "Ticket to Ride",

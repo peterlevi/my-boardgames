@@ -18,9 +18,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come from settlements, cities, longest road, largest army, and development cards, rewarding balanced expansion.",
-  "how_you_win": "You win by expanding settlements and cities across the island while securing bonus points from road networks or knight cards, reaching ten points first."
+  "breadth": "Broad",
+  "why": "Victory points come from several distinct sources — settlements, cities, longest road, largest army, and hidden VP development cards — any combination of which can reach the target.",
+  "how_you_win": "You collect resources from dice rolls and trades to build roads, settlements and cities and buy development cards; the first player to reach 10 victory points (counting buildings, longest road, largest army and VP cards) wins."
  },
  "similar": [
   "Ticket to Ride",

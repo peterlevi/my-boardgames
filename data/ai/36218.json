@@ -20,9 +20,9 @@
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Victory points come almost entirely from Victory cards bought and stuffed into your deck, so efficient deck-thinning and timing of VP purchases decides the winner",
-  "how_you_win": "Build an efficient engine of action/treasure cards to buy Victory cards faster and more efficiently than opponents before the Province pile (or three piles) empties."
+  "breadth": "Some",
+  "why": "Despite the variety of kingdom cards enabling different strategies, the only thing that ultimately counts is victory points printed on Estates, Duchies, Provinces, and kingdom Victory/Curse cards in your deck.",
+  "how_you_win": "You buy cards to build an efficient deck engine that generates money and actions, then convert that engine into buying Victory cards (and avoiding Curses) before the supply piles run out; the player with the most victory points in their deck at game end wins."
  },
  "similar": [
   "Dominion: Intrigue",

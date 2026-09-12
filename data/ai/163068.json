@@ -18,11 +18,11 @@
   "kind": "worker placement blocking and stealing resources",
   "detail": "Players compete for the same limited worker placement spots on a shared city board, and can bump, block, or outbid each other for locations and resources needed to stage their shows. Each player still develops their own tricks and reputation track privately, so the shared board is the main point of friction."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Fame is earned mainly by staging tricks well during shows, supplemented by reputation and end-game bonuses.",
-  "how_you_win": "You win by staging the most impressive magic tricks during the show phases, built from ingredients and blueprints you've assembled through the week."
+  "why": "The single fame track is the game's real currency, driven almost entirely by staging successful magic performances plus a secondary layer of achievement/goal cards, rather than many disconnected scoring systems.",
+  "how_you_win": "Train your illusionist and workers, gather components and blueprints, and perform magic tricks on stage to earn fame based on trick quality and reputation, supplemented by completing personal achievement goals; the illusionist with the most fame at the end is the winner."
  },
  "similar": [
   "Alchemists",

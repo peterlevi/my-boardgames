@@ -21,8 +21,8 @@
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is the richest-in-status player among those who didn't finish with the least money.",
-  "how_you_win": "You win by accumulating the highest total of status-point cards while ensuring you are not the player left with the smallest remaining bankroll."
+  "why": "The winner is simply whoever has the highest total value of won status cards, as long as they aren't in last place on remaining money.",
+  "how_you_win": "Bid your limited cash to win prestige cards (avoiding the negative ones) while making sure you don't end with the least money left, since that eliminates you from winning; among remaining players, highest card total wins."
  },
  "similar": [
   "For Sale",

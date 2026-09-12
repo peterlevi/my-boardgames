@@ -20,8 +20,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There is no scoring; the duel ends the moment one hero's health track hits zero.",
-  "how_you_win": "You win by using positioning, ranged attacks or terrain destruction, and well-timed defense cards to reduce the opposing hero to zero health."
+  "why": "Same core Unmatched engine: victory is elimination of the opposing hero via life-total depletion, not points.",
+  "how_you_win": "You win by reducing your opponent's hero's health to zero through positioning and card-driven combat before they do it to you."
  },
  "similar": [
   "Unmatched: Battle of Legends, Volume One",

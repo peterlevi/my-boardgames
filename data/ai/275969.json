@@ -23,8 +23,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from completed quests (diminishing value over time), collected artifacts, connected flotilla tile placement, and guild seals",
-  "how_you_win": "Accumulate the most victory points by completing quests early (they pay less the longer they sit), building and connecting flotilla tiles, and winning guild seals (10 points for first, 5 for second per guild)."
+  "why": "Score is built from multiple separate engines: cards/crew developed and played from your action-retrieval deck, resources gathered and delivered on the Sinkside exploration board, and buildings/contracts completed on the Landside city board.",
+  "how_you_win": "Players alternate between a 'Sinkside' phase of dice-and-tile exploration to gather resources and a 'Landside' phase of playing retrieved action cards to build up their fleet/city and fulfill contracts; whoever has amassed the most points from these combined systems by game end wins."
  },
  "similar": [
   "Trickerion",

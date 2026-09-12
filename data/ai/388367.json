@@ -20,9 +20,9 @@
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Some",
-  "why": "Winning is primarily a race to collect enough achievements, with a score comparison as the fallback if the deck runs out.",
-  "how_you_win": "Reach the required number of achievements before your opponents, or hold the highest score if the top-age deck is exhausted first."
+  "breadth": "Broad",
+  "why": "This omnibus keeps Innovation's core win condition of racing to claim enough Achievement cards via icon thresholds, with the added expansions and Age 11 offering more routes to those thresholds.",
+  "how_you_win": "You play and use technology cards to build up icons of different colors and trigger their special abilities, spending resources to claim Achievement cards; the first player to collect enough Achievements wins immediately (or, if the deck runs out first, whoever has the most Achievements wins)."
  },
  "similar": [
   "Innovation",

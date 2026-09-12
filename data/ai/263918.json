@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Scoring is split across four seasonal edict cards plus monster penalties, so a well-rounded map usually wins.",
-  "how_you_win": "You win by shaping your map each season to best satisfy that season's scoring edicts while minimizing monster incursions, ending with the highest total reputation."
+  "why": "Each of the four seasons scores against a different pair of random edict cards covering forests, villages, farms/water and monster-blocking, plus separate coin/ambition bonuses, so no single category dominates.",
+  "how_you_win": "You draw shapes onto your map each season to satisfy that season's scoring edicts while boxing out monster incursions, and the player with the highest cumulative score after four seasons wins."
  },
  "similar": [
   "Kingdomino",

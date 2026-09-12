@@ -18,11 +18,11 @@
   "kind": "storytelling, voting, and bluffing",
   "detail": "Every round the storyteller's clue and card become shared information that all other players react to by choosing cards and voting, directly affecting each other's scoring chances. There's no personal board; the interaction is entirely social, mediated through card choice and guessing."
  },
- "win_criteria": "Race to a finish",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Points come from correctly guessing the storyteller's card or fooling others into picking your own, so balancing cleverness and ambiguity decides the winner",
-  "how_you_win": "Score points steadily by guessing right as a listener or crafting clues that split the vote as storyteller, and be the first to cross the finish line on the score track."
+  "why": "Every point in the game comes from the single mechanism of guessing correctly or fooling other players about the storyteller's card.",
+  "how_you_win": "As storyteller you give a clue vague enough that some but not all players guess your card, and as a guesser you try to identify the storyteller's card while also fooling others with your own submitted card; the player with the most accumulated points after several rounds wins."
  },
  "similar": [
   "Mysterium",

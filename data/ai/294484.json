@@ -20,8 +20,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There is no point total; a side wins the instant it reduces all opposing fighters to zero health.",
-  "how_you_win": "You win by out-maneuvering and out-carding the opponent to bring their hero's (or heroes') health to zero first."
+  "why": "As with the rest of the Unmatched series, the sole objective is defeating the opposing hero(es) by depleting their health.",
+  "how_you_win": "You win by maneuvering your hero and sidekick to land attacks that bring the opponent's life total to zero first."
  },
  "similar": [
   "Unmatched: Battle of Legends, Volume One",

@@ -19,8 +19,8 @@
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no score; the team either cures all four diseases or loses to outbreaks/depleted decks",
-  "how_you_win": "The team wins by discovering cures for all four diseases before the outbreak marker maxes out or the player deck runs out."
+  "why": "There is no individual score; the group either discovers cures for all four diseases before the player deck or outbreak limits run out, or they collectively lose.",
+  "how_you_win": "All players cooperate, using role abilities to treat infections and gather the right cards at research stations, discovering all four disease cures before the outbreak or infection limits are reached."
  },
  "similar": [
   "Pandemic Legacy: Season 1",

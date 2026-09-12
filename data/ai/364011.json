@@ -20,8 +20,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from cattle deliveries, buildings, and objective bonuses much like the original GWT, rewarding an efficient overall engine.",
-  "how_you_win": "You build an efficient herd-and-worker engine to deliver valuable cattle repeatedly while grabbing building and objective bonuses, finishing with the highest score."
+  "why": "As in the base game, points come from several separate channels: cattle delivered, trail buildings, station/objective bonuses, and farmer-related bonuses, none of which dominate alone.",
+  "how_you_win": "You optimize your herd and rondel actions to repeatedly deliver cattle to Buenos Aires while investing in buildings and upgrades, ending with the highest combined point total."
  },
  "similar": [
   "Great Western Trail",

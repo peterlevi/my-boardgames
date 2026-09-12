@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score combines influence built in three nations, completed contracts and quests, card set bonuses, and leftover coins.",
-  "how_you_win": "Efficiently route your ship each round to build influence, fulfill high-value contracts, and complete card combinations that outscore opponents by the end of round four."
+  "why": "Final score sums nation influence-track positions, gold converted to VP, structures built, combat/trade outcomes, and bonuses from the personal story track accumulated over four rounds.",
+  "how_you_win": "Sail your ship around the course, delivering goods and taking port actions to build influence with three nations, construct buildings, and follow your story chapters; after four rounds, the combined totals from all these tracks decide the winner."
  },
  "similar": [
   "Great Western Trail",

@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accrue from completed contracts, species collection, notebook advancement, and end-game bonuses, so overall efficiency across systems decides the winner",
-  "how_you_win": "Build an efficient engine that completes high-value contracts and advances your research track faster than opponents, converting actions into points across several parallel tracks."
+  "why": "Points accrue from completed contracts, exploration/discovery tiles, reputation track position, and end-game set bonuses as separate categories.",
+  "how_you_win": "You place workers to gather resources, move your ship to explore the islands, and fulfill contracts for reputation and rewards; the player with the most points from combined contracts, exploration, and bonuses at the end wins."
  },
  "similar": [
   "Lorenzo il Magnifico",

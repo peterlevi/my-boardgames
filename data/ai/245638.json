@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from ship tracks, monastery relics, coats of arms, and end-game bonuses, so the winner is whoever built the most efficient combination of tracks.",
-  "how_you_win": "You win by advancing furthest on the most lucrative combination of tracks and cashing in end-game bonus tiles that reward your specific strategy."
+  "why": "Final score adds up several largely independent tracks: monastery relationship levels, completed expedition cards, favor/coat-of-arms tiles collected each round, and a small conversion of leftover ducats.",
+  "how_you_win": "You draft dice each round to gather colored cubes, coins, and favors, spend those to advance monastery tracks and fund expeditions, and the player with the highest combined total across all these tracks at game end wins."
  },
  "similar": [
   "Concordia",

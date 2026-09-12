@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from completed roads, cities, cloisters, and farmland, so a winning strategy usually spreads across several of these sources.",
-  "how_you_win": "You win by placing tiles and meeples to complete and control the most valuable roads, cities, cloisters, and fields by game end."
+  "why": "Between the base game's roads, cities, monasteries and farms and the bundled expansions' traders, ferries, gold mines and other bonuses, scoring is spread across many independent tile-placement rewards.",
+  "how_you_win": "You place tiles to build roads, cities, monasteries and farms (plus expansion features like trade goods or ferries) and deploy meeples to claim them, scoring points as features complete and for farms at game end; the highest total wins."
  },
  "similar": [
   "Kingdomino",

@@ -21,8 +21,8 @@
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Victory points come primarily from delivering goods along built track, converted from income at round's end.",
-  "how_you_win": "You win by efficiently building track and delivering goods to score the most victory points over the course of the game."
+  "why": "Your position on the shared VP/income track is driven almost entirely by the goods deliveries you complete each round, converted directly into track movement.",
+  "how_you_win": "Build track, grab the right colored goods, and run them as far as possible to good cities each round; whoever has advanced furthest on the VP track when the game ends wins."
  },
  "similar": [
   "Age of Steam",

@@ -18,11 +18,11 @@
   "kind": "card-based raids and drafting from a shared market",
   "detail": "Players attack each other's civilizations with military cards and compete to draft cards from a shared market row, but each player otherwise builds and prunes their own personal deck independently."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accumulate from completed civilization objectives, tag-based bonuses, and end-game scoring cards rather than one dominant source.",
-  "how_you_win": "Score the most points by completing your civilization's mission objectives and building up tag synergies across the ages until the game ends."
+  "breadth": "Some",
+  "why": "Nearly every action feeds toward accumulating cards worth printed victory points, so the end-game tally is essentially one pool counted across your deck, hand, and discard.",
+  "how_you_win": "You draft and play cards to build military, cultural, and economic strength, converting good plays into permanent cards that stay in your deck; when the game ends you total the victory points printed on all your owned cards, and the highest total wins."
  },
  "similar": [
   "Imperium: Legends",

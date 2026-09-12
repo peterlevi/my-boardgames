@@ -16,11 +16,11 @@
   "kind": "worker placement blocking via claim-action turn order",
   "detail": "Players compete for the same limited worker-placement spots and buildings, with a turn-order-claiming mechanism meaning earlier turns cost more, directly affecting who gets first pick. Beyond that shared board, each player builds their own private village and resource engine."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Final scoring converts remaining money and a few building bonuses into victory points, so overall wealth largely decides the winner.",
-  "how_you_win": "You win by running the most profitable fishing and building economy, ending the game with the most money and building value."
+  "breadth": "Salad",
+  "why": "Nearly every building you construct, resource you convert, and cod/ship token you collect has its own point value, so almost any action taken over the game contributes to the final tally.",
+  "how_you_win": "You place workers to gather fish and wood, build buildings that each grant their own end-game points, and convert leftover money and resources into victory points; the highest total at game end wins."
  },
  "similar": [
   "Agricola",

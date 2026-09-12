@@ -20,8 +20,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from completed contracts, city development, and end-game bonuses stacked across several tracks",
-  "how_you_win": "You win by efficiently converting workers and resources into completed contracts and building improvements over the course of the game."
+  "why": "Final score sums contract rewards, trophies, gold, favor track position, and building bonuses collected across the campaign of worker-placement turns.",
+  "how_you_win": "You fulfill contracts and complete quests using resources gathered through worker placement and dice rolling, banking VP from many different sources; the player with the most points at game end wins."
  },
  "similar": [
   "Architects of the West Kingdom",

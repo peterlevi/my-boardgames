@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from attractions, dinosaurs, roads/routes to exits, and bonus objectives, so efficient overall park design decides the winner",
-  "how_you_win": "Fill your park sheet efficiently with high-value dinosaurs and attractions connected to exits, maximizing points across multiple scoring categories by game end."
+  "why": "Final score combines separate categories for dinosaurs housed, attraction values, guest ratings/DNA, and road-connection bonuses to park exits.",
+  "how_you_win": "You draft dice to fund and place dinosaurs and attractions in your park grid while connecting them to exits with roads; whoever tallies the most combined points across all these categories at the end wins."
  },
  "similar": [
   "Dinosaur Island",

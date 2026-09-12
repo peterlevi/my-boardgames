@@ -20,9 +20,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come primarily from temple track advancement, buildings, and monuments, all fed by the same corn/resource engine.",
-  "how_you_win": "You win by timing your gear placements to gather resources efficiently and converting them into temple advancement and building points before the game's 26 rounds end."
+  "breadth": "Broad",
+  "why": "Final score combines temple-track bonuses, constructed buildings, monuments, and leftover-resource conversion, so several distinct engines each contribute meaningfully to the total.",
+  "how_you_win": "Place workers on the rotating gears to gather resources and take increasingly valuable actions as time advances, using corn and resources to climb temple tracks, construct buildings, and build monuments; the player with the highest combined score from these sources when the calendar ends wins."
  },
  "similar": [
   "Trajan",

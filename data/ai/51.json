@@ -17,11 +17,11 @@
   "kind": "simultaneous real-time competition",
   "detail": "All players stare at the same shared board and race to shout out the shortest solution first; there's no individual tableau at all, just a single communal puzzle everyone attacks at once."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Points are won by being first to correctly solve a robot's path in the fewest moves, repeated over many rounds",
-  "how_you_win": "You win by accumulating the most solved puzzles by consistently being fastest to find (or beat) the optimal move sequence."
+  "why": "Every point comes from the same single source: being first to correctly call and execute a minimal-move solution to the current robot-target puzzle.",
+  "how_you_win": "Players simultaneously study the board and shout out how many moves they think it takes to route the target robot to its marked square; whoever finds a valid solution in the fewest moves claims the point, and the first to a set number of points (or most after a fixed number of puzzles) wins."
  },
  "similar": [
   "Rush Hour",

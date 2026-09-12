@@ -21,8 +21,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game ends when one team accumulates enough interceptions or miscommunications, so the winner is determined by which team avoids losing conditions longer",
-  "how_you_win": "Your team wins by causing the opposing team to rack up two miscommunication tokens before your own team collects two interception tokens against you."
+  "why": "The outcome is decided by which team first accumulates two interception tokens (losing) versus two miscommunication tokens, not by a point total.",
+  "how_you_win": "Your team gives numeric clues tied to secret words so teammates can decode them while the opposing team tries to intercept your code; you win when the other team reaches two failed communications or your team avoids two successful enemy interceptions first."
  },
  "similar": [
   "Codenames",

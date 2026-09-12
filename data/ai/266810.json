@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from buildings constructed, commissions completed, virtue/piety, and defeated raiders",
-  "how_you_win": "You win by efficiently using your workers to build valuable structures, complete commissions, and rack up virtue and combat bonuses faster than opponents."
+  "why": "Final score combines the Virtue track, City tiles, travel/combat contribution rewards, and collected artifacts, none of which alone decides the game.",
+  "how_you_win": "Recruit workers to build structures, repel raiders, and undertake travels while managing Virtue and collecting bonus tiles, then total points from all these tracks at game end."
  },
  "similar": [
   "Architects of the West Kingdom",

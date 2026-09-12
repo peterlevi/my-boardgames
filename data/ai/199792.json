@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from card values, city size, special events, and end-game bonuses, rewarding a well-rounded, synergistic tableau.",
-  "how_you_win": "Build the highest-scoring city by playing point-generating cards, completing special events, and end-game bonus conditions before the four seasons end."
+  "why": "Points come from the value of cards built into your tableau, played events, seasonal/journey bonuses, and leftover resources, so no single category dominates.",
+  "how_you_win": "Use workers to gather resources and play critters/constructions into your city, complete events and journeys, and end with the highest combined point total from cards, events, and bonuses."
  },
  "similar": [
   "Wingspan",

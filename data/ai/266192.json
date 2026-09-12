@@ -20,9 +20,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points accumulate from bird cards, eggs, cached food, tucked cards, bonus cards, and round-end goals, so a balanced engine beats a narrow one.",
-  "how_you_win": "You win by building an efficient chain of bird powers that lets you rack up eggs, food, and cards faster than opponents, then converting that engine into the highest combined score across all categories."
+  "breadth": "Salad",
+  "why": "Points accrue from bird cards played, eggs laid, cached food, tucked cards, and bonus/round-goal cards, so almost every action contributes to a different scoring bucket.",
+  "how_you_win": "Play birds into your habitats to build an engine that generates food, eggs, and card draws, then tally points from birds, eggs, food, tucked cards, and bonus cards for the highest total."
  },
  "similar": [
   "Everdell",

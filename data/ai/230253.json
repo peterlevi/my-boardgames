@@ -19,8 +19,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no points salad — the only thing tracked is each player's Authority total.",
-  "how_you_win": "You win by building a deck of ships and bases efficient enough to reduce your opponent's Authority to zero before they do the same to you."
+  "why": "There is no accumulating score at all — the game hinges entirely on depleting the opponent's Authority total to zero.",
+  "how_you_win": "You acquire ships and bases from the trade row to generate Combat, and win the instant you reduce your opponent's Authority to 0 (or, cooperatively/solo, defeat the shared threat)."
  },
  "similar": [
   "Star Realms",

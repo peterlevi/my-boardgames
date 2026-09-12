@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from temple climbing, area influence in the four regions, buildings, and end-game bonuses.",
-  "how_you_win": "You win by balancing worker placement efficiency with area influence and temple advancement to accumulate the most victory points."
+  "why": "Points accrue from temple track advancement, regional area-majority control, building construction, and set-collected worker/resource bonuses, each a separate scoring channel.",
+  "how_you_win": "Place workers around the rondel to gather resources, build structures, climb the sun temple, and contest the four regions; the player with the highest combined total across these categories wins."
  },
  "similar": [
   "Tzolk'in: The Mayan Calendar",

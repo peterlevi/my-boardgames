@@ -170,6 +170,14 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 .tagbox .none { padding:10px; color:var(--muted); }
 td.designer { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
   font-size:.82rem; }
+/* Year and designer live in their own columns until those are dropped for
+   width, at which point they reappear as a second line under the name —
+   the information stays, it just stops costing two columns. */
+.gamecell .meta { display:none; font-size:.78rem; color:var(--muted);
+  margin-top:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+@media (max-width:1180px) {
+  .gamecell .meta { display:block; }
+}
 td.designer .more { color:var(--muted); }
 .pair span { color:var(--muted); font-size:.85rem; }
 /* The only thing pinned while scrolling: the count, what it is counting, and
@@ -218,9 +226,10 @@ th.w-thumb { width:52px; } th.w-rank { width:56px; }
 th.w-hex { width:54px; } th.w-plays { width:58px; }
 th.w-time { width:72px; } th.w-weight { width:70px; }
 th.w-ix { width:86px; } th.w-designer { width:150px; }
+th.w-year { width:64px; }
 th.w-atn { width:64px; } th.w-pct { width:66px; }
 th.w-ratings { width:74px; }
-th.w-win { width:124px; } th.w-br { width:82px; }
+th.w-win { width:124px; } th.w-br { width:104px; }
 /* The poll columns read a player count, so with the count at "Any" all three
    are dashes. The table swaps them for the two fields that always have a
    value — what wins the game, and how broadly it scores. */
@@ -299,6 +308,11 @@ td.score.mine-col { padding-right:9px; }
 .bar > .track > i.m4 { background:var(--m4); }
 .bar > .track > i.m3 { background:var(--m3); }
 .bar > .track > i.m2 { background:var(--m2); }
+/* Weight runs the other way round: light is the easy end. */
+.bar > .track > i.wt1 { background:var(--m4); }
+.bar > .track > i.wt2 { background:var(--m3); }
+.bar > .track > i.wt3 { background:var(--m2); }
+.bar > .track > i.wt4 { background:var(--warn); }
 .bar .pct { font-size:.82rem; font-variant-numeric:tabular-nums; }
 .dot { color:var(--muted); }
 /* On a phone the At N column is dropped for width, so the verdict rides along
@@ -496,7 +510,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <dt>BGG · Mine</dt><dd>BGG's average rating, and your own rating from
         your collection. Both are out of 10.</dd>
       <dt>Plays</dt><dd>Plays you have logged on BGG.</dd>
-      <dt>Weight</dt><dd>BGG's complexity vote, 1 (light) to 5 (heavy).</dd>
+      <dt>Game · Year · Designer</dt><dd>Three columns on a wide screen; when
+        the window cannot hold them, year and designer fold into a second line
+        under the game's name rather than disappearing.</dd>
+      <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale, shown as a bar:
+        green is light, red is heavy.</dd>
       <dt>Interact</dt><dd>How much the players' games touch each other —
         Low, Medium or High. Not a BGG statistic; see below.</dd>
       <dt>At N</dt><dd>What the player-count poll says about the count you
@@ -520,8 +538,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         count.</dd>
       <dt>Win condition</dt><dd>What actually decides the winner — most points,
         a race, elimination, and so on.</dd>
-      <dt>Breadth</dt><dd>How many different things earn you points: one
-        main route, a few, many, or a full point salad.</dd>
+      <dt>Point salad</dt><dd>How many different things earn you points:
+        no — a sharp focus, just a touch, quite a lot, or a total point
+        salad.</dd>
       <dt>Properties</dt><dd>One field over everything a game is tagged with —
         BGG's categories, mechanics, families and designers, plus a few named
         groupings of mechanics — searchable by name or by description.
@@ -534,7 +553,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <p>Everything above is BGG's own data, cached locally — every filter runs
     in this page and nothing calls out to BGG.</p>
     <p>Three fields are not BGG's: <b>Interact</b>, <b>Win condition</b> and
-    <b>Breadth</b>, along with the “What people say” notes in an
+    <b>Point salad</b>, along with the “What people say” notes in an
     expanded row, come from a local database built with Claude from what is
     known about each game (a few looked up on the web, marked where so). No
     such data exists in BGG's API. Treat them as a rough sort, not fact; where
@@ -567,7 +586,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <div class="row">
       <div class="f"><label for="win">Win condition</label>
         <select id="win"><!--__WIN_OPTIONS__--></select></div>
-      <div class="f"><label for="breadth">Breadth</label>
+      <div class="f"><label for="breadth">Point salad</label>
         <select id="breadth"><!--__BREADTH_OPTIONS__--></select></div>
     </div>
     <div class="row">
@@ -591,6 +610,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         <div class="pair"><input id="plmin" type="number" min="0" step="1"
           placeholder="0"><span>to</span><input id="plmax" type="number" min="0"
           step="1" placeholder="any"></div></div>
+      <div class="f"><label>Year</label>
+        <div class="pair"><input id="ymin" type="number" min="1900" step="1"
+          placeholder="any"><span>to</span><input id="ymax" type="number"
+          min="1900" step="1" placeholder="any"></div></div>
     </div>
     <div class="row">
       <div class="f"><label for="tagsearch">Filter by properties</label>
@@ -620,19 +643,20 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="num w-hex" data-k="av">BGG</th>
     <th class="num w-hex" data-k="my">Mine</th>
     <th data-k="n">Game</th>
+    <th class="num hide-md w-year" data-k="y">Year</th>
+    <th class="hide-md w-designer" data-k="ds">Designer</th>
     <th class="num hide-sm hide-s w-plays" data-k="pl">Plays</th>
     <th class="num w-time" data-k="tmax">Time</th>
     <th class="num hide-sm hide-xs w-weight" data-k="w">Weight</th>
     <th class="hide-sm hide-xs w-ix" data-k="ix">Interact</th>
-    <th class="hide-sm hide-md w-designer" data-k="ds">Designer</th>
     <th class="hide-sm hide-lg c-win w-win" data-k="win">Win condition</th>
-    <th class="hide-sm hide-lg c-br w-br" data-k="breadth">Breadth</th>
+    <th class="hide-sm hide-lg c-br w-br" data-k="breadth">Point salad</th>
     <th class="num hide-sm c-atn w-atn" data-k="verdict">__ATN__</th>
     <th class="num hide-sm wide-only c-best w-pct" data-k="bestPct">Best</th>
     <th class="num hide-sm c-appr w-pct" data-k="appr">Appr</th>
     <th class="num hide-sm w-ratings" data-k="rt" class="w-ratings" title="How many people have rated the game on BGG">Ratings</th>
   </tr></thead>
-  <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="16"
+  <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="17"
     id="septext"></td></tr><!--__ROWS__--></tbody>
 </table>
 </div>
@@ -775,7 +799,8 @@ var F = {
   smin: el('smin'), smax: el('smax'),
   mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
-  tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'), exp: el('exp')
+  tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'),
+  ymin: el('ymin'), ymax: el('ymax'), exp: el('exp')
 };
 
 function applyDefaults() {
@@ -791,7 +816,7 @@ function applyDefaults() {
   tagRows.forEach(function (r) { r.firstChild.checked = false; });
   refreshTagList();
   ['smin', 'smax', 'mymin', 'mymax', 'wmin', 'wmax', 'tmin', 'tmax',
-   'plmin', 'plmax']
+   'plmin', 'plmax', 'ymin', 'ymax']
     .forEach(function (k) { F[k].value = ''; });
 }
 
@@ -855,6 +880,7 @@ function partition() {
   var wmin = num(F.wmin.value), wmax = num(F.wmax.value);
   var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
+  var ymin = num(F.ymin.value), ymax = num(F.ymax.value);
   var ix = F.ix.value, win = F.win.value, breadth = F.breadth.value;
   var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
@@ -881,6 +907,7 @@ function partition() {
       !(tmin !== null && !(or0(g.tmin) >= tmin)) &&
       !(tmax !== null && !(or0(g.tmax) <= tmax)) &&
       !(plmin !== null && g.pl < plmin) && !(plmax !== null && g.pl > plmax) &&
+      !(ymin !== null && !(g.y >= ymin)) && !(ymax !== null && !(g.y <= ymax)) &&
       (!n || qualifies(s, mode));
 
     if (pass) inside.push([i, s]);
@@ -904,7 +931,8 @@ function describe() {
   if (F.ix.value) extra.push(F.ix.value.toLowerCase() + ' interaction');
   if (F.win.value !== 'any') extra.push(F.win.value.toLowerCase());
   if (F.breadth.value !== 'any') {
-    extra.push(F.breadth.value.toLowerCase() + ' scoring');
+    extra.push('point salad: ' +
+      (SALAD_LABEL[F.breadth.value] || F.breadth.value).toLowerCase());
   }
   var picked = pickedTags();
   if (picked.length) {
@@ -925,6 +953,7 @@ function describe() {
   pair('wmin', 'wmax', 'weight');
   pair('tmin', 'tmax', 'time', ' min');
   pair('plmin', 'plmax', 'plays');
+  pair('ymin', 'ymax', 'year');
   if (expMode === 'drop') extra.push('expansions ignored');
   // With a filter applied, "All games, X" is noise — the filter is the subject.
   if (head) return head + (extra.length ? ', ' + extra.join(', ') : '');
@@ -984,6 +1013,11 @@ function esc(t) {
   return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;')
                   .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
+
+var SALAD_LABEL = { Focused: 'No, sharp focus', Some: 'Just a touch',
+  Broad: 'Quite a lot', Salad: 'Total point salad' };
+var SALAD_SHORT = { Focused: 'No', Some: 'A touch',
+  Broad: 'Quite a lot', Salad: 'Total salad' };
 
 function meterClass(p) {
   return p >= 85 ? 'm4' : p >= 70 ? 'm3' : p >= 50 ? 'm2' : 'm1';
@@ -1221,7 +1255,7 @@ function buildDetail(g) {
     ['Your plays', g.pl],
     ['Designers', designerPills(g)],
     ['Interaction', ((g.ai && g.ai.ixl) || g.ix)],
-    ['Breadth', (g.ai && g.ai.br) || '—'],
+    ['Point salad', (g.ai && SALAD_LABEL[g.ai.br]) || '—'],
     ['Win condition', (g.ai && g.ai.wc) || '—']
   ];
   var ai = g.ai || {};
@@ -1632,7 +1666,7 @@ function markFilters() {
     win: OPTS.win, breadth: OPTS.breadth, exp: OPTS.expansions,
     tagmode: 'all',
     smin: '', smax: '', mymin: '', mymax: '', wmin: '', wmax: '',
-    tmin: '', tmax: '', plmin: '', plmax: ''
+    tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: ''
   };
   Object.keys(F).forEach(function (k) {
     var input = F[k];

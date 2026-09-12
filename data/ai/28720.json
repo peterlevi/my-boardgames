@@ -16,11 +16,11 @@
   "kind": "network and market blocking",
   "detail": "Players indirectly compete for map space and shared market demand for coal and cotton, so placement decisions constrain opponents' future options. The board and market are fully shared while each player's money and hand of cards stay private."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Points come from flipped industry tiles and connected links, scored once at the end of each of the two eras",
-  "how_you_win": "You win by maximizing the value of your connected, flipped industry tiles at the two scoring points of the canal and rail eras."
+  "why": "As in its sequel, points come from just two tallies — VP on your built links and VP on your flipped industry tiles — totaled at the end of each era.",
+  "how_you_win": "Develop and flip cotton, coal, iron, and manufactured-goods tiles while extending your canal and rail network; the player with the highest combined link-and-industry score after the rail era wins."
  },
  "similar": [
   "Brass: Birmingham",

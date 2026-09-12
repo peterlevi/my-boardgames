@@ -20,8 +20,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from buildings built, favor with the castle, and end-game bonuses, so success requires a mix of building efficiently and timing your worker placements.",
-  "how_you_win": "You build valuable buildings along the road and earn favor/prestige points through the game, and the player with the most total points at the end wins."
+  "why": "Points come from buildings constructed, prestige tiles, favor track progress, and end-game bonuses, several of which are hidden until scoring.",
+  "how_you_win": "Players place workers on action spaces to gather resources and erect buildings around the growing castle; the player with the most victory points, tallied from multiple independent tracks and bonuses at the end, wins."
  },
  "similar": [
   "Caylus",

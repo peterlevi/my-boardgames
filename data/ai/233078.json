@@ -18,11 +18,11 @@
   "kind": "negotiation, trading, and open military conflict",
   "detail": "Players share a single galaxy map and constantly negotiate trade agreements, alliances, and non-aggression pacts while also directly invading and battling over the same systems. Almost the entire game state — the map, trade, political votes — is shared and contested rather than private."
  },
- "win_criteria": "Race to a finish",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from public and secret objectives spanning military, economic, and political achievements, and the game ends the instant someone hits the target score.",
-  "how_you_win": "You win by being the first to reach the victory point threshold (commonly 10) through a mix of completed public objectives, secret objectives, and holding key systems like Mecatol Rex."
+  "breadth": "Salad",
+  "why": "Victory points come from completing a wide, ever-changing mix of public and secret objectives spanning military conquest, economy, politics, and exploration, plus one-off bonuses like the Mecatol Rex custodians token.",
+  "how_you_win": "Expand your faction across the galaxy through exploration, construction, trade, and combat, using those actions to satisfy public and secret objective conditions; the first player to reach the target number of victory points (commonly 10) wins."
  },
  "similar": [
   "Eclipse: Second Dawn for the Galaxy",

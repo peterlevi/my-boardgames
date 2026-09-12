@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from built structures, completed contracts, certificates, and end-game bonuses, so the winner is whoever built the most efficient overall network.",
-  "how_you_win": "You out-build and out-tech your opponents across three eras, converting resources into cities, tunnels, and completed contracts that add up to the highest final score."
+  "why": "Final score combines city-track progress, built colonies/domes, certificate and exploration bonuses, and special project cards, each a largely independent VP pile.",
+  "how_you_win": "You win by advancing your underwater city network further and building up more colonies, special projects, and completed cards than your opponents by game end, tallying several separate VP categories."
  },
  "similar": [
   "Pipeline",

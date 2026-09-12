@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory points accumulate from researched technologies, economic development, system influence, and completed achievements, so a strong game usually draws from several of these simultaneously.",
-  "how_you_win": "You win by out-teching and out-developing your rivals, grabbing key achievements before they do, and ending with the highest combined score across research, economy, and influence."
+  "why": "Victory points come independently from researched technologies, economic development, system control/colonization, and shared achievements.",
+  "how_you_win": "Research techs to boost your economy, science, and influence, colonize and control star systems, and race to claim shared galactic achievements; whoever has the most combined points when the achievements run out wins."
  },
  "similar": [
   "Race for the Galaxy",

@@ -18,9 +18,9 @@
  },
  "win_criteria": "Lowest-highest scoring",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Only your lowest-scoring color category counts at the end, so the winner is whoever balances all four leader types rather than maxing any single one.",
-  "how_you_win": "You win by carefully bringing all four of your victory point colors up together while using conflicts to weaken opponents' weakest categories even further."
+  "breadth": "Broad",
+  "why": "Each player's final score is their weakest of four color totals (red, blue, green, black), so all four leader types matter and neglecting any one caps your score.",
+  "how_you_win": "Place tiles and leaders to trigger internal and external conflicts that award treasure in four colors; because your score is only as high as your worst color, you win by building a balanced civilization rather than maximizing one color."
  },
  "similar": [
   "Through the Desert",

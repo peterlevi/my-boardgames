@@ -21,8 +21,8 @@
  "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game ends the instant someone hits 20 victory points or is the last monster standing.",
-  "how_you_win": "You win by racing to 20 victory points through dice rolls and Tokyo occupation, or by being the last monster left alive."
+  "why": "The game ends the instant a single monster reaches 20 Victory Points (or is the last one left alive), so hitting that VP threshold first is what actually decides the winner.",
+  "how_you_win": "Roll and re-roll dice each turn to collect victory points, energy (for power cards), and attacks; race to be the first to 20 victory points, or survive as the last monster standing after knocking everyone else out."
  },
  "similar": [
   "King of New York",

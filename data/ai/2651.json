@@ -21,8 +21,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "The player who can power the most cities on the final turn wins, so network size and plant capacity are what matter.",
-  "how_you_win": "Once someone's network reaches the endgame city threshold, everyone gets one final turn to power as many cities as possible, and whoever powers the most cities wins (money is the tiebreaker)."
+  "why": "The game ends when a player's network hits the size trigger, and the winner is whoever powers the most cities that final round, not whoever has the most money or points.",
+  "how_you_win": "Build the largest network of connected cities and buy enough power plants and resources to actually supply electricity to as many of them as possible; when the end trigger hits, whoever powers the most cities wins (ties broken by leftover money)."
  },
  "similar": [
   "Brass: Birmingham",

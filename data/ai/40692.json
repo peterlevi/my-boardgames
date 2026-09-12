@@ -17,11 +17,11 @@
   "kind": "open conquest and area denial",
   "detail": "Players attack directly onto the same shared map to take each other's territories, so board space is a constant fight rather than parallel development. Whose race is in decline and who is expanding shifts the balance of power every round."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come mainly from territories held at the end of each round plus a handful of race/power bonus conditions.",
-  "how_you_win": "You win by maximizing territory count turn after turn, timing when to let a race decline and launch a stronger one before the game ends."
+  "breadth": "Focused",
+  "why": "Every round's score is just the number of regions your active and declining races occupy, tallied turn after turn, with leftover victory coins as a minor tie-breaker resource.",
+  "how_you_win": "Each turn you score points equal to the territories your race(s) control, choosing when to let a race 'go into decline' to start a fresh one; the highest cumulative total after the last turn wins."
  },
  "similar": [
   "Vinci",

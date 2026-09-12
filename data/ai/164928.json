@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from trade stations, developments, research track, and town hall tiles",
-  "how_you_win": "You win by building the most efficient follower engine and converting it into the most development/research/trade points by game end."
+  "why": "Points accumulate from development-track milestones, built farmhouses/trading posts, city tiles, and leftover money/goods, so victory depends on several largely independent tracks at once.",
+  "how_you_win": "Recruit followers and deploy them to advance the trade, construction, science and other tracks, expand your trading-post network and city, then end with the highest total across all these combined sources."
  },
  "similar": [
   "The Voyages of Marco Polo",

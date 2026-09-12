@@ -21,8 +21,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "the player with the greatest personal net worth of cash and shares at game end wins",
-  "how_you_win": "you win by building and running profitable railroad routes through companies you control and by buying and selling stock at the right moments"
+  "why": "As in other 18xx titles, all decisions about track, trains, and share trading are just means to increase your personal cash-plus-share-value total.",
+  "how_you_win": "You win by having the highest total personal value (cash on hand plus your shareholdings' worth) at game end."
  },
  "similar": [
   "1830: Railways & Robber Barons",

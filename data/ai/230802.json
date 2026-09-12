@@ -19,9 +19,9 @@
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Scoring is driven almost entirely by how tiles are placed for adjacency and row/column completion bonuses.",
-  "how_you_win": "You win by placing tiles to maximize adjacency chains and completing bonus rows, columns, and color sets while minimizing penalty tiles."
+  "breadth": "Some",
+  "why": "Scoring comes from just two things: adjacency chains scored as you tile your wall each round, and the end-game completion bonuses for rows, columns, and colors.",
+  "how_you_win": "Draft tiles to complete pattern rows so they score adjacency points on your wall, avoid floor-line penalties, and pick up end-game bonuses for finished rows/columns/colors."
  },
  "similar": [
   "Sagrada",

@@ -18,9 +18,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from colonization progress, technology, objectives, and network efficiency, so several strategies can compete.",
-  "how_you_win": "You win by building the most efficient settler network across the space gates and converting that into colonization and objective points faster than your rivals."
+  "breadth": "Some",
+  "why": "Points come from three largely separate sources: advancing your settlers along the colonist tracks, majority/position bonuses on those tracks, and completed personal objective cards.",
+  "how_you_win": "You build gate networks and send Human/Android/Robot settlers through them to advance on the corresponding tracks and fulfill objectives; the player with the most total points at game end wins."
  },
  "similar": [
   "Yokohama",

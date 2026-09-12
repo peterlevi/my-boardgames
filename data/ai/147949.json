@@ -19,8 +19,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no score; the village team wins by voting out a werewolf, while werewolves win by evading detection or having no werewolves in play unnoticed.",
-  "how_you_win": "You win as a villager by correctly identifying and voting out a werewolf, or as a werewolf by convincing the group to lynch someone else."
+  "why": "There is no scoring at all; the outcome is decided purely by whether the group's daytime deduction and vote correctly identifies (or fails to identify) a Werewolf.",
+  "how_you_win": "After a night of secret role actions, players discuss and then simultaneously vote for who to eliminate; if a Werewolf is voted out the Village team wins, otherwise the Werewolf (or other hidden) team wins."
  },
  "similar": [
   "One Night Ultimate Werewolf: Daybreak",

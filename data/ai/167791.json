@@ -18,9 +18,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score sums terraforming contribution, milestones, awards, tile placement, and card-specific victory points, so no single track guarantees the win.",
-  "how_you_win": "You win by building the most efficient card engine while also grabbing enough milestones and awards to edge out rivals on the final tally."
+  "breadth": "Salad",
+  "why": "Your terraform rating, played project cards, milestones, awards, and greenery/city placement all generate points that are totaled once Mars is terraformed.",
+  "how_you_win": "Play cards and take actions to raise your terraform rating and build cities and greeneries, while chasing milestones and awards for bonus points; highest total when Mars is terraformed wins."
  },
  "similar": [
   "Terraforming Mars: Ares Expedition",

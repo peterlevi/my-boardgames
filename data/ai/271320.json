@@ -18,9 +18,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from completing regions of many different tile types plus end-game bonuses, rewarding a well-rounded principality.",
-  "how_you_win": "You win by efficiently using dice rolls to place matching tiles into your regions, completing sets and bonus goals for the highest total score after five rounds."
+  "breadth": "Salad",
+  "why": "Points come from filling regions with many different tile types (castles, knowledge, trade, mines, livestock, buildings) plus separate bonus tiles, a hallmark Feld scoring salad.",
+  "how_you_win": "You use dice to select and place hexagonal tiles into your princedom's regions, triggering each tile type's own scoring rule plus bonus-tile goals; after five rounds, the player with the most total points wins."
  },
  "similar": [
   "Village",

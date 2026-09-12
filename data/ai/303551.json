@@ -22,9 +22,9 @@
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Final score is built from prestige and population/city control rather than many disparate scoring categories, but the game can also end instantly via a loss condition (starvation or zero prestige) rather than a points count.",
-  "how_you_win": "Survive four eras while managing population feeding and prestige; whoever accumulates more prestige and controls more population/poleis at the end wins, but a player who lets credibility hit zero or fails to feed their population loses immediately regardless of points."
+  "breadth": "Some",
+  "why": "At game end the empire with the higher combined Population and Prestige totals wins, so victory rests on two parallel tallies rather than one figure or many disparate ones.",
+  "how_you_win": "Expand territory to grow population, and trade, build, and use diplomacy or force to gain prestige, finishing with a higher Population+Prestige total than your opponent."
  },
  "similar": [
   "Pericles: The Peloponnesian Wars",

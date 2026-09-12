@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accrue from corporation projects, structures built, and area-majority bonuses on the shared base.",
-  "how_you_win": "Efficiently sequence worker placements to fund corporation projects and secure structure majorities, ending with the highest total score."
+  "why": "Scoring draws from area-majority control of the base, the specific corporation projects funded, contracts completed, and resource/income tracks, with no single one dominating.",
+  "how_you_win": "Build structures to gain area majority on the Moon base, fund corporation projects for bonus abilities and scoring opportunities, and finish with the most points once these are tallied."
  },
  "similar": [
   "Merv: The Heart of the Silk Road",

@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score sums building values, leftover goods, and bonus tiles, rewarding whoever built the most efficient production chain",
-  "how_you_win": "You win by converting cheap raw resources into valuable finished goods and prestigious buildings faster and more efficiently than opponents."
+  "why": "Final score sums printed building victory points, prestige goods (books, ceramics, ornaments, relics), converted leftover coins, and penalties for unused land, so no single system dominates.",
+  "how_you_win": "Build an efficient chain of production buildings that turns raw resources into high-value prestige goods and point-earning structures, then finish with the highest combined total of building VPs, goods, and money."
  },
  "similar": [
   "Le Havre",

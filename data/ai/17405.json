@@ -21,8 +21,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "final net worth (cash plus share value) at game end determines the winner",
-  "how_you_win": "you win by running efficient, well-connected train routes through corporations you control and by trading shares to maximize personal wealth rather than any single company's success"
+  "why": "Track-building and train-running only matter insofar as they generate revenue that becomes cash or boosts share price, so everything funnels into one net-worth figure.",
+  "how_you_win": "The player with the greatest combined wealth — cash plus the value of stock and private companies held — when the game ends wins."
  },
  "similar": [
   "1830: Railways & Robber Barons",

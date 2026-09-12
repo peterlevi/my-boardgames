@@ -20,9 +20,9 @@
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There is no points total; the game ends immediately when either side achieves a military conquest threshold or the Ring's fate is resolved.",
-  "how_you_win": "The Shadow player wins by capturing enough Free People strongholds, while the Free Peoples win by reaching Mount Doom with the Ring or by surviving long enough that Sauron cannot break through militarily."
+  "breadth": "Some",
+  "why": "Victory is decided by two parallel asymmetric tracks — Shadow's military conquest of Free People strongholds/cities versus the Fellowship's secret progress toward destroying the Ring — rather than by accumulating points.",
+  "how_you_win": "As Shadow you win by capturing enough Free People cities and strongholds; as the Free Peoples you win by sneaking the Ring-bearer to Mount Doom before Shadow achieves military conquest or the Ring is corrupted."
  },
  "similar": [
   "Twilight Struggle",

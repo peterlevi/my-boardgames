@@ -16,11 +16,11 @@
   "kind": "open conflict and take-that attacks",
   "detail": "Players directly attack each other's planets and fleets and can target opponents with disruptive cards, so a large share of the game state (galaxy map, planet ownership) is shared and contested rather than private."
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Victory usually comes from accumulating the most planets/influence or eliminating rivals rather than a points salad",
-  "how_you_win": "You expand your empire's planets and military strength faster than opponents, often finishing them off or simply controlling more territory when the game ends."
+  "breadth": "Broad",
+  "why": "Victory points accumulate from colonizing/upgrading planets, researching technology, completing objective cards, and winning battles, and the highest total after the final round wins.",
+  "how_you_win": "You build up your empire across several rounds, expanding planets, tech, and military strength, and score points from all these fronts; whoever has the most points when the game ends wins."
  },
  "similar": [
   "Cosmic Encounter",

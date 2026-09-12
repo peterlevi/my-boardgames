@@ -19,8 +19,8 @@
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Final score is simply the sum of your claimed creature card values minus any wild critters you were stuck with.",
-  "how_you_win": "You win by claiming the highest-value creature cards while managing your firefly supply so you aren't forced onto negative wild cards."
+  "why": "The only thing that matters is the printed point value of the critter cards you've collected, offset by negative wild-critter cards.",
+  "how_you_win": "You place fireflies one at a time to bid on critter cards; when a card fills up you take it (or the wild critter goes to whoever placed last), and at the end the player with the highest total card value wins."
  },
  "similar": [
   "Coloretto",

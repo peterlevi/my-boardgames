@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from multiple interlocking systems (workshops, houses, trade, harbor, majorities)",
-  "how_you_win": "You optimize your engine across the five boards to generate the most cumulative points by game end."
+  "why": "Points accrue independently from progress in workshops, houses, people, trade shops, and the harbor, each tracked on its own chart on the player board.",
+  "how_you_win": "You place cards to advance markers along five separate production/trade tracks on your personal board; whoever has advanced furthest across these combined tracks at the end has the most points and wins."
  },
  "similar": [
   "Yellow & Yangtze",

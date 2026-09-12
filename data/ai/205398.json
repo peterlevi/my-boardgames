@@ -18,11 +18,11 @@
   "kind": "bluffing and take-that via hidden role selection",
   "detail": "Players secretly choose characters whose powers can steal gold, destroy buildings, or kill another player's turn entirely, so deducing who picked what and targeting them is central. Your own city (tableau of districts) is private and separate, but character effects reach directly into opponents' gold and buildings."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Score comes from the point values of built districts plus bonuses for completing eight, having all colors, or building first, so district selection and completion timing decide the winner.",
-  "how_you_win": "You collect gold via your chosen character each round and spend it to build districts; once someone completes eight districts the game ends that round, and total district value plus bonuses determines the winner."
+  "why": "Score is essentially the sum of building costs in your city, with a small number of situational bonuses (completing all colors, being first to eight buildings) layered on top.",
+  "how_you_win": "Each round you secretly select a character role for its ability and income, then use gold to construct buildings; once someone reaches seven (or eight) buildings the round finishes and whoever has the highest building-cost total, plus any bonuses, wins."
  },
  "similar": [
   "Coup",

@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from research track position, temples/idols uncovered, leftover resources, and card bonuses at game end.",
-  "how_you_win": "Efficiently combine deckbuilding purchases with worker placement to advance your research track and acquire high-value artifacts and guardians before the fifth round ends."
+  "why": "Points come from leftover resources and idols, position on the research/knowledge track, guardians defeated, and the artifacts, temples, and monuments printed on acquired cards.",
+  "how_you_win": "Explore the island, gather resources and artifacts, and use worker placement to research the temple track and defeat guardians; after round 5, all leftover assets and card bonuses convert to VP, and the highest total wins."
  },
  "similar": [
   "Res Arcana",

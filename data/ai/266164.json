@@ -18,9 +18,9 @@
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Points come almost entirely from area-majority control of cities and regions on the shared map.",
-  "how_you_win": "You win by controlling the most valuable combinations of regions and cities when the sudden-death ending is triggered."
+  "breadth": "Some",
+  "why": "Score comes from majority control of the token networks you build into cities, plus the special ruler tiles you pick up along the way.",
+  "how_you_win": "Place tokens to build connected networks that dominate cities in majority, and grab powerful ruler bonus tiles, to end with the most points."
  },
  "similar": [
   "El Grande",

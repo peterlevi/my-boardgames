@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Each race has hidden victory point conditions tied to technology, colonization, and economy that only reveal their value at the end.",
-  "how_you_win": "Trade aggressively to fuel your race's unique economy, research technologies, and colonize planets to accumulate the most hidden victory points by the final round."
+  "why": "Each race has its own hidden scoring rules tied to different resources, technologies, and colonization, so victory points accumulate from several race-specific economic sources rather than one shared track.",
+  "how_you_win": "Grow your race's production economy through trading and negotiation each round, converting resources into hidden victory points per your race's unique scoring conditions, then have the most VP at the end."
  },
  "similar": [
   "Cosmic Encounter",

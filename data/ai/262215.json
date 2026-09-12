@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory points come from area control, specialist networks, resource management, and end-game bonuses, so strong scores typically combine several of these systems.",
-  "how_you_win": "You win by building the most efficient network of specialists and resources while securing area-majority control across the city, out-scoring rivals across multiple tracks by game end."
+  "why": "Points come from several independent channels: network/area control of city districts, resolved event cards, and end-game objective bonuses.",
+  "how_you_win": "Move around the rondel to gather specialists and resources, build a network to control city districts, and resolve crisis event cards; whoever has the most points from territory control and solved crises when the game ends wins."
  },
  "similar": [
   "Mombasa",

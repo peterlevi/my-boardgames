@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from resource set collection, village majorities on islands, and the largest connected network, so no single strategy dominates",
-  "how_you_win": "You win by combining collected resource sets, controlling the most islands via village majority, and building the biggest connected settlement network by game end."
+  "why": "Points come from three largely independent tallies: an exploration-phase bonus for the islands you've spread across, end-game sets of the resource tiles your villages have claimed, and the size of the village networks you've linked together.",
+  "how_you_win": "Spread settlers across the islands during exploration to grab resource tiles and good positions, then place villages in the settlement phase to collect matching resource sets and connect them into large networks; whoever totals the most points across exploration, resources, and networks wins."
  },
  "similar": [
   "Yellow & Yangtze",

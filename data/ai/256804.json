@@ -18,11 +18,11 @@
   "kind": "take that and push your luck",
   "detail": "Players directly target each other with attack, skip, and 'make another player draw' cards, and the shared deck is the entire game state everyone is manipulating. Almost every turn is a decision about who to hurt or how to dodge the exploding kitten, so the game is nearly all interaction with no private tableau."
  },
- "win_criteria": "Other",
+ "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There is no scoring — it's survival, so the winner is simply the last player who hasn't exploded.",
-  "how_you_win": "You win by being the only player left who hasn't drawn an exploding kitten card, using defuse and deflection cards to survive."
+  "why": "There is no scoring at all; players are eliminated by drawing an Exploding Kitten they can't defuse, and whoever is left un-exploded wins.",
+  "how_you_win": "Survive by avoiding or defusing Exploding Kitten cards until every other player has exploded out of the game."
  },
  "similar": [
   "Munchkin",

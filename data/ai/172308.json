@@ -18,9 +18,9 @@
  },
  "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Victory points come almost entirely from delivering potions to villages and completing castle deliveries",
-  "how_you_win": "You win by delivering the most potions to houses and castles across the game's rounds before the track runs out."
+  "breadth": "Some",
+  "why": "Points come mainly from delivering potions to matching-colored houses, with a secondary bonus for houses you've built yourself.",
+  "how_you_win": "Each round, secretly choose bold or timid versions of witch, druid, and gatherer roles to collect and fly potions across the map, delivering them to matching-colored houses for points; whoever has the most delivery points after seven rounds wins."
  },
  "similar": [
   "Witch's Brew",

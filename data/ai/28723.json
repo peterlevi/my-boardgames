@@ -16,11 +16,11 @@
   "kind": "Forced-choice auction/extortion",
   "detail": "The harbor with its limited ship slots is a shared, contested space, but each player also keeps a private warehouse of goods. Interaction is direct: a player sets price/terms on a deal and an opponent is forced to pick which side of it they get stuck with, actively shaping rivals' outcomes rather than just competing indirectly."
  },
- "win_criteria": "Most money",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "No evidence turned up of multiple disconnected scoring tracks; it centers on money earned from completed ship deliveries",
-  "how_you_win": "Deliver the right combination of goods to ships before they depart to earn Guilders, ending with the most money (inferred from available sources, not independently confirmed)."
+  "why": "The only thing that actually scores is successfully loading a ship with the exact combination of goods it demands before it sails.",
+  "how_you_win": "Win auctions to stock your warehouse with the right goods, then deliver a complete matching cargo to a ship before it departs; whoever completes the most valuable deliveries has the most points when the fleet is gone."
  },
  "similar": [],
  "sources": [

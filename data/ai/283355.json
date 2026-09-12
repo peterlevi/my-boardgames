@@ -21,8 +21,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "Victory comes from occupying strongholds on the map (or a faction-specific alternate win) rather than accumulating points.",
-  "how_you_win": "Control a majority of the game's strongholds (or fulfill your faction's unique win condition, like the Bene Gesserit's prediction) at the end of a turn."
+  "why": "The game is decided by controlling three of the board's five strongholds (or meeting a faction-specific alternate condition), not by accumulating points.",
+  "how_you_win": "Move troops and use faction powers, alliances, and spice to seize and hold three strongholds (Fremen need only two, and only after turn 10); some factions like the Guild or Bene Gesserit instead win via their own special alternate conditions."
  },
  "similar": [
   "Dune: Imperium",

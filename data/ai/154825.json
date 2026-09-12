@@ -20,8 +20,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game is won on the value of your own share holdings rather than a broad mix of point sources.",
-  "how_you_win": "You win by growing your factories' output and efficiency to drive up your share price, then holding the most valuable block of shares at game end."
+  "why": "Victory is decided purely by the value of your own shareholding, so everything you do exists to push your share price up.",
+  "how_you_win": "Grow your factories' output and profitability to drive up your share price, then hold enough of your own shares that their total value is highest at game end."
  },
  "similar": [
   "Brass: Birmingham",

@@ -19,9 +19,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come from completed contracts plus majority bonuses on the shared cathedral and leftover resources",
-  "how_you_win": "You win by completing high-value contracts and securing good positions on the communal cathedral more efficiently than your opponents."
+  "breadth": "Broad",
+  "why": "Victory points accumulate directly as a spendable resource from contracts, cathedral construction contributions, and end-game bonuses for leftover resources and rondel position.",
+  "how_you_win": "You move around a rondel to gather dice/resources, deliver them to build sections of the cathedral and fulfill contracts, collecting VP tokens along the way; whoever has the most VP when the cathedral is finished wins."
  },
  "similar": [
   "Barrage",

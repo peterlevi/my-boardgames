@@ -16,11 +16,11 @@
   "kind": "bribery, negotiation, and voting",
   "detail": "Players spend hidden victory-point tokens to bribe each other for votes on a shared enclosure track, so almost every turn is a direct negotiation affecting a single communal board state. There is no private tableau of note; the entire game is about converting private points into public influence over others."
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The winner is whichever species reaches and holds the top 'Zoo Mascot' enclosure, determined by accumulated laurels earned through votes",
-  "how_you_win": "You win by successfully campaigning your species to the top enclosure through bribery and vote-trading, ending the game with the most laurels/support at the top spot."
+  "breadth": "Some",
+  "why": "Laurels (the game's only victory currency) are earned mainly by winning bribed majority votes to advance your animal up the enclosure hierarchy, with some extra laurels coming from leftover support tokens at game end.",
+  "how_you_win": "Use bribery tokens and shifting alliances to win majority support at each level of the enclosure hierarchy, climbing your animal upward tier by tier; whoever has accumulated the most laurels when the game ends is elected Zoo Mascot."
  },
  "similar": [
   "Intrigue",

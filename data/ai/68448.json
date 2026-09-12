@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Salad",
-  "why": "final score is a sum of several unrelated categories (military, coins, wonders, civilian buildings, science, guilds) with little overlap between them",
-  "how_you_win": "you win by accumulating the highest total score across these disparate categories, often by picking one or two engines (like science or military) to specialize in while staying safe elsewhere"
+  "why": "Points come from military conflict tokens, coins, civilian buildings, science symbols/sets, commercial structures, guild cards, and wonder stages, so almost every card type contributes its own scoring category.",
+  "how_you_win": "You win by having the most victory points after three ages, gathered across military, science, coins, and building categories."
  },
  "similar": [
   "7 Wonders Duel",

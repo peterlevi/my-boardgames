@@ -18,11 +18,11 @@
   "kind": "stock investment and competitive track/network building",
   "detail": "Companies and the rail network are entirely shared, so building track for one company can help or block rivals' connections, and stock ownership order determines whose track gets built first, directly tying players' fortunes together."
  },
- "win_criteria": "Most money",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Final wealth from stock value and cash on hand determines the winner, in classic 18xx-lite fashion.",
-  "how_you_win": "You win by holding shares in companies whose stock values you helped grow through smart track expansion, ending with the highest personal net worth."
+  "breadth": "Some",
+  "why": "Victory points are generated primarily as income from shares tied to the rail network you've helped build, functioning as a resource rather than a side bonus.",
+  "how_you_win": "Buy shares in railroad companies and build/lease track to expand their networks; each share pays out VP income based on the company's connections, so the player who accumulates the most VP through smart investment and expansion wins."
  },
  "similar": [
   "Irish Gauge",

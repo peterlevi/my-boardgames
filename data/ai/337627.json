@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from tech advancement, combat victories, quest completion and faction objectives, so the winner is whoever built the most efficient overall engine rather than excelling at one path.",
-  "how_you_win": "You out-tech and out-expand your rivals while contributing enough to the fight against the Voidborn, ending with the highest combined score."
+  "why": "Each House earns victory points from multiple independent tracks (military conquest, technology, quests, and objectives) while the group must also hold off a shared Voidborn threat that can end the game for everyone.",
+  "how_you_win": "Accumulate the most victory points through combat, tech advancement, and completing objectives/quests before or as the shared Voidborn threat track resolves; if the Voidborn overwhelm the Domineum everyone can lose regardless of individual scores."
  },
  "similar": [
   "Eclipse: Second Dawn for the Galaxy",

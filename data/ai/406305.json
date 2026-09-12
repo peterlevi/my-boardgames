@@ -20,8 +20,8 @@
  "win_criteria": "Lowest-highest scoring",
  "scoring": {
   "breadth": "Broad",
-  "why": "Each player tracks six color scores simultaneously, and the winner is decided by whoever's lowest color score is highest.",
-  "how_you_win": "Place tiles to keep all six of your color scores climbing evenly, since your final score is determined by your weakest color, not your strongest."
+  "why": "Your final score is your single weakest-scoring color, not your total, so you must raise every color roughly evenly instead of specializing.",
+  "how_you_win": "You stack and place tessellating tiles to extend lines of matching colored symbols, scoring in whichever colors you touch; your final score equals your lowest-scoring color, so the player who is least weak across all colors wins."
  },
  "similar": [
   "Ingenious",

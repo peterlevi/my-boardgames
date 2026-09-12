@@ -20,9 +20,9 @@
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Some",
-  "why": "Winning usually comes from racing to collect enough achievements, though a fallback score comparison decides things if the deck runs out.",
-  "how_you_win": "Collect the required number of achievement cards (earned via top-card values and special effects) before your opponents, or hold the highest score if the age-10 card supply is exhausted first."
+  "breadth": "Broad",
+  "why": "The game is normally won by claiming a set number of special Achievement cards, unlocked by reaching icon thresholds across several resource colors, not by tallying a running score.",
+  "how_you_win": "You play and use technology cards to build up icons of different colors and trigger their special abilities, spending resources to claim Achievement cards; the first player to collect enough Achievements wins immediately (or, if the deck runs out first, whoever has the most Achievements wins)."
  },
  "similar": [
   "Innovation Ultimate",

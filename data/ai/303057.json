@@ -23,8 +23,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "Routes, planes, and directive-card bonuses all exist mainly to generate cash, which is then funneled into a single win condition: owning the most Pan Am stock at game end.",
-  "how_you_win": "Convert route income and one-time route-sale payouts into capital, then time your stock purchases (cheaper early, but price is volatile) to end the game holding more Pan Am shares than any opponent."
+  "why": "The game ends after the final era and whoever has amassed the greatest net worth in cash, routes, and stock wins.",
+  "how_you_win": "Buy planes and routes, sell them to the growing Pan Am company for profit, and invest in Pan Am stock, finishing with more total net worth than any rival."
  },
  "similar": [
   "Chicago Express",

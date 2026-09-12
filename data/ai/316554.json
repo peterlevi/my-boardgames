@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory points come from multiple tracks: combat wins, faction alliances, Imperium row cards, and intrigue cards, so a well-rounded strategy usually wins.",
-  "how_you_win": "Be the first to reach 10 victory points, earned through winning territory battles, gaining faction alliances, and playing scoring cards."
+  "why": "Victory points accumulate from several largely independent tracks—combat/conflict, Spice Must Flow, High Council seats, Great Houses agendas, and technology/leader abilities—and the game ends once a player crosses the point threshold.",
+  "how_you_win": "Deploy agents and win conflicts to gather points from combat, council seats, imperium/tech cards, and faction alliances; once someone reaches 10 points the round finishes and the highest total wins."
  },
  "similar": [
   "Dune: Imperium – Uprising",

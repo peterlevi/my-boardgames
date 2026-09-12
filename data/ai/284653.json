@@ -19,8 +19,8 @@
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "The team either succeeds at the mission objective or loses collectively; there's no individual point salad",
-  "how_you_win": "The team works together to correctly deduce hidden locations/identities and complete the scenario objective before running out of time or attempts."
+  "why": "There is no competitive scoring; the team either completes its mission objectives against Mind MGMT before running out of resources/time, or they collectively lose.",
+  "how_you_win": "Players work together, moving and using variable agent abilities to complete the scenario's objectives before the shared timer or resource runs out; success or failure is shared by the whole team."
  },
  "similar": [
   "Hanabi",

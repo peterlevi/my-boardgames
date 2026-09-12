@@ -18,9 +18,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come from a handful of fixed farm-development categories without the added card-based scoring of the full game.",
-  "how_you_win": "End the game with the most developed, well-rounded farm judged across fields, pastures, animals and rooms."
+  "breadth": "Broad",
+  "why": "Score is a sum of core farm categories (rooms, fields, pastures, crops, animals, family size, begging) with no cards, but still spans many independent categories.",
+  "how_you_win": "Two family meeples take worker-placement actions each round to build rooms, plow fields, fence pastures, and stock animals and crops while feeding the family at each harvest; the farm with the highest total across the scoring categories wins."
  },
  "similar": [
   "Agricola",

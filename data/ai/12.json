@@ -20,9 +20,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from monuments, civilizations, gold, and other tile sets scored across three epochs, so balanced collecting wins out.",
-  "how_you_win": "You win by winning auctions for valuable tile sets and managing your suns wisely across three epochs to end with the highest cumulative score."
+  "breadth": "Salad",
+  "why": "Each epoch scores several distinct, independently-tallied tile categories (civilizations, monuments, pharaohs, gold, Niles/floods, gods) that all feed into the same running total.",
+  "how_you_win": "Win auctions with your sun disks to collect valuable tile sets each epoch, balancing immediate scoring tiles against ones that only pay off (or protect you from penalties) at epoch's end; highest cumulative score after three epochs wins."
  },
  "similar": [
   "Amun-Re",

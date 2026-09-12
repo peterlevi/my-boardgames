@@ -20,9 +20,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "Reviewers explicitly describe it as point-salad, with scoring spread across four Wilderness tracks, invention advancement, and continuous point accumulation through the game",
-  "how_you_win": "Highest total score at game end wins; final scores typically land in the low 100s to mid 200s, tallied from multiple tracks and end-game bonuses."
+  "breadth": "Broad",
+  "why": "Final score sums district development, resource/production tracks, contracts or goals, and end-game bonuses that are each scored independently.",
+  "how_you_win": "You cycle your magnate around the rondel to produce resources and expand your city's buildings and districts, converting efficient production and completed objectives into victory points; the highest total at game end wins."
  },
  "similar": [
   "Bitoku",

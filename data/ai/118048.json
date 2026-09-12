@@ -18,11 +18,11 @@
   "kind": "worker placement blocking on a shared grid",
   "detail": "Both players place figures on the same central grid, and taking a space denies it to the opponent for that round, creating constant tactical blocking. The central board is fully shared while each player's tribe card tableau and resources remain private."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from a combination of collected tribe cards, goods sets, and end-game bonuses from the council and other cards.",
-  "how_you_win": "You win by drafting and building a stronger combination of tribe and goods cards than your opponent by game's end."
+  "breadth": "Some",
+  "why": "Score is mostly the point values printed on the tribe and extension cards you've drafted over the game, with leftover goods only mattering as a minor end-game conversion.",
+  "how_you_win": "Use your two workers each round to gather goods and draft tribe/extension cards from the board, then total the point values on the cards you've collected; most points wins."
  },
  "similar": [
   "Jaipur",

@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from settlements, buildings, goods delivered, and network efficiency at game end.",
-  "how_you_win": "You win by building the most efficient network of canals and settlements to generate goods and complete scoring bonuses by game end."
+  "why": "Points come from several separate categories — canal/road network built, settlements founded, goods harvested and delivered, and building tiles constructed — rather than one dominant engine.",
+  "how_you_win": "Use action-retrieval cards to dig canals, found settlements, harvest and process goods, and construct buildings across the hex map; the player who has built up the most across these categories by game end wins."
  },
  "similar": [
   "Fresh Fish",

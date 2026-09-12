@@ -18,11 +18,11 @@
   "kind": "mostly parallel play with some building-fee taxation",
   "detail": "Players mainly develop their own tableau of buildings and resources, but the shared offer spaces and the fact that you pay rivals when using buildings they own not you creates light indirect interaction. Turn order and taking whole offer stacks before opponents can also matter tactically."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most money",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score sums money, buildings, and ships, so the winner is whoever built the most efficient economic engine by game end.",
-  "how_you_win": "You win by converting resources through buildings into money and constructed buildings/ships, accumulating the highest combined value at the end of the round track."
+  "why": "Final ranking is total franc value: cash on hand plus the sale value of all remaining goods, buildings, and ships.",
+  "how_you_win": "Build up a portfolio of buildings, ships, and stockpiled goods while keeping enough food to avoid penalties; at game end everything you own is converted to its money value and the richest player wins."
  },
  "similar": [
   "Agricola",

@@ -18,11 +18,11 @@
   "kind": "shared city board with tile stacking and district takeover",
   "detail": "Players build directly onto a single shared city map, and placing a new tile can bury or extend a rival's district, changing who benefits from its output. Alongside that shared board, each player keeps a private hand of resource, building, and role cards that they manage largely on their own."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from yellow scoring tiles retained in hand, district size and control at game end, and end-game bonuses, so no single engine dominates.",
-  "how_you_win": "You expand and defend your visible districts in the shared city while stockpiling scoring tiles in hand, ending with more accumulated points than anyone else."
+  "breadth": "Some",
+  "why": "Score comes mainly from the values of tiles banked into your personal city plus district-majority control bonuses.",
+  "how_you_win": "Place and layer tiles to grow your personal city, banking higher-value tiles as they get covered and contesting majority control of city districts, then total those points at the end."
  },
  "similar": [
   "Suburbia",

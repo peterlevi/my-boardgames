@@ -16,11 +16,11 @@
   "kind": "open conflict and alliances",
   "detail": "Players directly contest control of regions on a shared map through battles and shifting alliances, while trick-taking hands determine turn strength and options. The map and influence tracks are fully shared, with only card hands kept private."
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "The game centers on accumulating influence through three pillars (battles, church, marriage) that combine to trigger and determine the High King",
-  "how_you_win": "You win by amassing the most influence across military victories, church favor, and marriage alliances when the High King condition is triggered."
+  "breadth": "Broad",
+  "why": "Final score is built from three largely independent pillars — territorial control won through tricks, Church favor from monasteries, and alliances from marriages — plus Viking-related bonuses.",
+  "how_you_win": "Win tricks with your hand of cards to place pieces and claim provinces, build monasteries for Church favor, and arrange marriages for alliances while fending off Viking raids; the player with the most points across these pillars at game end becomes High King."
  },
  "similar": [
   "El Grande",

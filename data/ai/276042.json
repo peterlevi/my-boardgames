@@ -18,11 +18,11 @@
   "kind": "open drafting with shared card pool",
   "detail": "Players draw from and leave cards in a shared communal pool, so choices affect what's available to opponents next, but each player builds their own private pyramid tableau. Interaction is indirect denial rather than direct confrontation."
  },
- "win_criteria": "Race to a finish",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game ends the instant a player completes their pyramid with the required matching keys or sets, making it a race rather than a points contest.",
-  "how_you_win": "You win by being the first to complete your card pyramid with the needed matches (keys or triads) among your rows."
+  "breadth": "Some",
+  "why": "The end trigger (two or three matching keys) forces final scoring, and points come mainly from the card values in your pyramid, weighted by how well colors line up in columns — a single value-and-color-matching system rather than separate categories.",
+  "how_you_win": "You draft cards to build a five-row shrinking pyramid, trying to line up colors in columns while triggering the key-based game end at an advantageous moment, and the player whose completed pyramid totals the most points wins."
  },
  "similar": [
   "Abyss",

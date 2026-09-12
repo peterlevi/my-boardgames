@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accrue from card values, goods consumed, and bonus chips, so building the most efficient combo of a dozen cards decides the winner.",
-  "how_you_win": "You win by assembling a tableau of synergistic worlds and developments that generates victory points faster than opponents before the card or chip supply runs out."
+  "why": "Final score sums VP chips earned from producing/consuming goods, victory point tags on played cards, and bonuses from goal cards — several distinct scoring channels.",
+  "how_you_win": "Select action phases each round to develop worlds, produce and consume goods for VP chips, and build a tableau of cards with scoring bonuses; when the deck runs out or a 12-card tableau is built, whoever has the most combined points wins."
  },
  "similar": [
   "San Juan",

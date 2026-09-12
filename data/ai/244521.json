@@ -21,8 +21,8 @@
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Victory points accumulate from potion strength each round plus a few bonus rubies, so consistently brewing strong potions decides the winner.",
-  "how_you_win": "You win by building a bag of ingredients that reliably brews powerful potions round after round without exploding too often, ending with the most points."
+  "why": "Score is driven almost entirely by how far you push your potion each round (converted to points), with rubies (bought with leftover points) as a secondary points source.",
+  "how_you_win": "Push your luck drawing ingredient chips into your pot each round to brew as strong a potion as possible without exploding, converting potion strength into victory points (and spare points into rubies); most points after the final round wins."
  },
  "similar": [
   "The Quest for El Dorado",

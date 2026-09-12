@@ -20,8 +20,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from dam height, energy production efficiency, contracts fulfilled, patents, and end-game objectives, so a winning strategy usually stacks several of these rather than maxing one.",
-  "how_you_win": "You win by building the tallest, most efficient dam-and-turbine network while completing contracts and patents, converting stored water into energy more effectively than your rivals."
+  "why": "Points accrue continuously from energy production relative to demand, plus separate end-game totals for contracts, patents, and constructed board position.",
+  "how_you_win": "Build and raise dams, tunnels, and powerhouses to keep generating energy above demand each round, then add bonus points from completed contracts, patents, and board presence at game end; the highest total wins."
  },
  "similar": [
   "Great Western Trail",

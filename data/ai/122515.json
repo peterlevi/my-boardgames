@@ -20,8 +20,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from tile abilities, resources, skills, and bonus tiles accumulated across four rounds.",
-  "how_you_win": "Win key tile auctions to assemble an efficient village while also exploiting both your own and opponents' tiles for resources and points."
+  "why": "Points come from the abilities of tiles won for your village, from stockpiled resources and skills, from special boat/other tiles, and from any leftover workers.",
+  "how_you_win": "Use your colored workers to win auctions for tiles across four seasonal rounds, build a village whose tile abilities generate resources and points, and end with the highest accumulated total."
  },
  "similar": [
   "Suburbia",

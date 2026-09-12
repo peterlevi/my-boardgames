@@ -19,9 +19,9 @@
  },
  "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game ends immediately once a player controls enough key road/castle spaces or eliminates enough of the opponent's leaders.",
-  "how_you_win": "Control a majority of the map's key roads and castles, or destroy enough enemy leader blocks, to trigger an instant victory."
+  "breadth": "Some",
+  "why": "Political points, tracked on a single scoring track, come from just controlling home provinces at the start of a turn and capturing enemy leader blocks in battle, and the first side to the target score wins outright.",
+  "how_you_win": "Move armies to control your key home provinces and win battles that capture enemy leaders, pushing your political-points marker to the winning threshold before your opponent does."
  },
  "similar": [
   "Twilight Struggle",

@@ -20,9 +20,9 @@
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game isn't decided by points but by which side reaches its objective first — the Ring's destruction or Sauron's conquest/capture.",
-  "how_you_win": "As the Fellowship you advance the Quest track while building up skills and holding off Sauron; as Sauron you dominate regions and race to catch Frodo before the quest completes."
+  "breadth": "Some",
+  "why": "Each chapter ends the instant an asymmetric objective is met — Sauron controlling enough Free Cities or corrupting the Fellowship, or the Fellowship completing the Quest track — so there is no running point total to compare.",
+  "how_you_win": "As the Fellowship, push the Quest track toward Mount Doom while defending or evacuating threatened cities; as Sauron, capture enough Free Cities or corrupt the ring-bearers before the Quest completes."
  },
  "similar": [
   "7 Wonders Duel",

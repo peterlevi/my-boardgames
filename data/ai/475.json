@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from building palaces of each type and controlling commodities, with the lowest category among certain sets acting as a scoring cap.",
-  "how_you_win": "You win by winning enough regional auctions to build a spread of different palace types and collect valuable commodities, edging out rivals in overall influence."
+  "why": "Points come from winning provinces via card auctions, building palaces from consecutive province wins, and holding majorities in collected commodities, three fairly distinct engines.",
+  "how_you_win": "Bid influence cards to win control of each region (or peel off to collect commodities instead), build palaces when you win regions in a row, and end up with the most combined influence and commodity points."
  },
  "similar": [
   "Ra",

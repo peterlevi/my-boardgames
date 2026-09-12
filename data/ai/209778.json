@@ -20,9 +20,9 @@
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Other",
-  "why": "There are no points; the team either completes every hero's objectives before the timer runs out or fails.",
-  "how_you_win": "Silently coordinate to move each hero to their equipment, meeting point, and the exit before the sand timer expires or the alarm maxes out."
+  "breadth": "Focused",
+  "why": "The team wins or loses together the instant all heroes reach the exit tile, or loses if the sand timer runs out or too many 'don't panic' cards are used, with no individual scoring involved.",
+  "how_you_win": "Working in real time with strict communication limits, guide each hero (any player can move any hero) to their shop and then to the exit before the sand timer expires."
  },
  "similar": [
   "Space Alert",

@@ -21,8 +21,8 @@
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "Success is measured by completing each scenario's objective before the party is wiped out or runs out of cards, not by a points race.",
-  "how_you_win": "The party wins by clearing a scenario's stated objective, usually defeating specific enemies or reaching a location, while keeping characters from exhausting their hands or losing all their health."
+  "why": "Each scenario is won or lost as a team based on completing its specific objective before running out of health, cards, or turns.",
+  "how_you_win": "Work together using each character's action cards to defeat monsters, protect objectives, or escape as required by the scenario, completing it before the party is exhausted."
  },
  "similar": [
   "Gloomhaven",

@@ -20,8 +20,8 @@
  "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no points; only which team contacts all their agents first without touching the assassin decides the outcome.",
-  "how_you_win": "Your team wins by identifying all of your image-agents before the opposing team does, or if the opponents accidentally select the assassin."
+  "why": "Identical structure to base Codenames, just with image cards instead of words; only the order of contacting all agents matters.",
+  "how_you_win": "Spymasters give one-word clues pointing to multiple image cards; the first team to have all of its agents correctly identified by teammates wins."
  },
  "similar": [
   "Codenames",

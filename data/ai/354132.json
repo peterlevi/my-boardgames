@@ -21,9 +21,9 @@
  },
  "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Final score is just cash on hand plus the current value of held shares — no separate tracks or bonus categories",
-  "how_you_win": "The richest player at game end wins, with typical final totals around 125–175 points/money combined from cash and share value."
+  "breadth": "Some",
+  "why": "Final standing is determined by total wealth—cash on hand plus the value of company and personal shares—rather than a points track.",
+  "how_you_win": "Trade goods profitably, invest in your own and rival companies' shares, and time the fluctuating market so your combined cash and share value is highest when the game ends."
  },
  "similar": [
   "Le Havre",

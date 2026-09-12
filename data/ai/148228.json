@@ -16,11 +16,11 @@
   "kind": "resource denial and card sniping",
   "detail": "Players draw from the same limited pool of gem tokens and the same face-up card row, so taking a token or buying a card someone else needed is the main way you affect opponents. Otherwise each player builds their own private engine of cards largely independent of others' boards."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "Points come almost entirely from development card prestige values plus occasional noble visit bonuses.",
-  "how_you_win": "You win by being first to reach 15 points, usually by building a gem-discount engine that lets you afford high-value cards faster than opponents."
+  "why": "Prestige points come almost entirely from the face value of purchased development cards, with noble visits adding a small fixed bonus.",
+  "how_you_win": "You collect gem chips to buy increasingly valuable cards, and the instant a player reaches 15 points the round finishes and the highest-scoring player wins."
  },
  "similar": [
   "Century: Spice Road",

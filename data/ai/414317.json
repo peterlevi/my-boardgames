@@ -20,9 +20,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from multiple completed habitat types and settled animal sets, so building the most efficient, diverse landscape wins.",
-  "how_you_win": "You place terrain tokens to form valuable habitat patterns and settle animals onto completed habitats, ending with the highest combined score from habitats and animals."
+  "breadth": "Salad",
+  "why": "Nearly every terrain type has its own scoring rule (water, fields, forest, mountains, buildings/moon), on top of separate animal habitat cards, so almost every placement scores something.",
+  "how_you_win": "You draft terrain tokens to build patterns matching multiple scoring shapes and settle animals into completed habitats, winning by having the highest sum across all these terrain and animal categories."
  },
  "similar": [
   "Cascadia",

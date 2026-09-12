@@ -20,8 +20,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There is no point total; the match ends the instant one side's fighters are all reduced to zero health.",
-  "how_you_win": "You win by using movement, attacks, and scheme cards to whittle the opposing hero(es) down to zero life before they do the same to you."
+  "why": "The only thing that matters is reducing the opposing hero's life total to zero through combat.",
+  "how_you_win": "You win by using your deck's attack cards and abilities to whittle your opponent's health to zero before they do the same to you."
  },
  "similar": [
   "Unmatched: Cobble & Fog",

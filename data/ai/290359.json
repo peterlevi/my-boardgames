@@ -20,8 +20,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "Each scenario has its own victory objective (control points, eliminate units, survive turns) rather than an accumulated score.",
-  "how_you_win": "You complete the specific mission objective, usually by holding key hexes or breaking the other side's force, before the scenario's turn limit runs out."
+  "why": "Each scenario defines its own objective (control specific hexes, eliminate enough enemy units, or survive until a turn limit) rather than a running point total.",
+  "how_you_win": "You win by completing the scenario's specific battlefield objective, such as holding key terrain or breaking the enemy's ability to fight, using your deck of unit cards to maneuver and shoot better than your opponent."
  },
  "similar": [
   "Undaunted: Normandy",

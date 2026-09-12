@@ -22,8 +22,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "There is essentially one path to victory — accumulate more end-game cash than opponents by trading containers profitably",
-  "how_you_win": "Convert manufactured containers into cash through production, sale, and auction cycles; whoever has the most money when the container supply depletes and the game ends wins."
+  "why": "Everything — factories, containers, and trading — exists only to convert into cash via auctions and secret container values, so final wealth is the sole measure.",
+  "how_you_win": "You manufacture and ship containers, auction them off to other players (or sell your own secretly valuable ones), and whoever ends the game with the most money wins."
  },
  "similar": [
   "Antiquity",

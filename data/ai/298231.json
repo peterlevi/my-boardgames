@@ -20,8 +20,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from neighborhood completion, patron cards, public/secret objectives, and the shared wonder, so no single strategy dominates.",
-  "how_you_win": "You win by out-bidding rivals for the most valuable sites and stitching them into scoring neighborhoods and objectives more efficiently than anyone else by game end."
+  "why": "Final score sums several independent categories: completed neighborhood color sets, patron card requirements, public and private objectives, and the shared Wonder bonus.",
+  "how_you_win": "You bid spatially to win building sites, construct tiles that satisfy patrons and objectives, and contribute to the Wonder; whoever accumulates the most prestige points across all these categories wins."
  },
  "similar": [
   "Ra",

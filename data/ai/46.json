@@ -16,11 +16,11 @@
   "kind": "auction / bidding",
   "detail": "Every round is a shared, direct bidding war over the same cards, so almost the entire game is about reading opponents' money and appetite rather than managing a private tableau."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Points come from having the most/best cargo of specific goods each round plus overall ship value",
-  "how_you_win": "You outbid others carefully to end each round holding the most valuable and highest-quantity goods without overspending your money."
+  "breadth": "Some",
+  "why": "Each round's cargo is scored by total value and by having the most of individual goods, and leftover money converts to points at the end, so three distinct payouts feed the final total.",
+  "how_you_win": "You bid your points/money to win sets of goods cards each round, trying to end each round with the most valuable overall cargo and majorities in specific goods; the highest cumulative score after three rounds wins."
  },
  "similar": [
   "Ra",

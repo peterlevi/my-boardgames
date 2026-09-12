@@ -21,8 +21,8 @@
  "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no point scoring; the only thing that matters is which team contacts all of their agents first without hitting the assassin.",
-  "how_you_win": "Your team wins by correctly identifying all of your agent words before the other team does, or if the other team accidentally picks the assassin card."
+  "why": "There is no scoring; the only thing that matters is which team's spymaster gets all of their agents identified first.",
+  "how_you_win": "Your spymaster gives one-word clues linking multiple cards; your team guesses which words are yours, and the first team to have all its agent cards identified (without hitting the assassin) wins."
  },
  "similar": [
   "Codenames: Duet",

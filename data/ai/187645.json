@@ -19,8 +19,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no points total — the game ends when the Empire destroys the Rebel base, the Rebellion completes enough objectives, or a turn limit is reached.",
-  "how_you_win": "The Empire wins by finding and destroying the hidden Rebel base before time runs out, while the Rebellion wins by surviving and racking up enough objective successes."
+  "why": "Neither side tallies points; the Empire wins by locating and destroying the hidden Rebel base, while the Rebels win by surviving with their base intact until the reputation/turn track runs out.",
+  "how_you_win": "The Rebel player hides and relocates their base while completing missions to stay alive; the Imperial player hunts for that base with fleets and troops, and whichever side achieves its unique objective first wins."
  },
  "similar": [
   "War of the Ring",

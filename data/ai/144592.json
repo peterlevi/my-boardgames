@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from constructing building levels, creating and selling art, and gaining patrons and prestige",
-  "how_you_win": "You win by combining the highest-value building construction with successful art creation and patron/prestige bonuses by game end."
+  "why": "Final score combines how far you've built up your own house, the art you've created and sold, and leftover money, offset by nuisance penalties picked up along the way.",
+  "how_you_win": "Use worker placement and bidding to build up your house, gather patrons and materials to create and sell art, and manage your finances while minimizing nuisance penalties; the player with the highest combined score across these elements at the end wins."
  },
  "similar": [
   "Vikings",

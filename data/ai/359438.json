@@ -18,11 +18,11 @@
   "kind": "mostly parallel play with worker-placement and market competition",
   "detail": "Players mainly optimize their own card-queue and resource engine, occasionally competing for limited worker-placement spots or investment opportunities in shared companies. There is little to no direct conflict between players."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most money",
  "scoring": {
   "breadth": "Broad",
-  "why": "CrypCoin earnings come from company investments, resource sales, and research bonuses accumulated across seven rounds.",
-  "how_you_win": "Build the most efficient resource-extraction and investment engine to finish the seven rounds with the most CrypCoin."
+  "why": "Your final score is literally your CrypCoin total, built up from company stock investments, research payouts, and helium-3 sales, so several income streams feed the same money total.",
+  "how_you_win": "Invest mined resources into companies to grow their stock value, support research and helium-3 collection for extra income, and end the seven rounds with the most CrypCoin."
  },
  "similar": [
   "Great Western Trail",

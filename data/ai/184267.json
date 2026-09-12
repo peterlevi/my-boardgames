@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accrue from contracts, tech tracks, tile placement bonuses, and personal agenda goals.",
-  "how_you_win": "You win by building the most efficient colony engine, completing contracts and objectives to out-score opponents by game end."
+  "why": "Score is built from mission-track progress, fulfilled contracts, a hidden private agenda, and constructed modules/tiles, each a mostly independent scoring channel.",
+  "how_you_win": "You manage resources and movement to build modules, complete contracts, and advance along D.O.M.E. mission tracks while pursuing your secret company agenda; the player with the most total points at the end wins."
  },
  "similar": [
   "Gaia Project",

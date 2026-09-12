@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from gold, resource sets, tile control, and djinn abilities that combo together.",
-  "how_you_win": "You win by cleverly moving meeples to trigger tile and djinn effects, accumulating the most gold and points by the end of the game."
+  "why": "Points accrue from several separate systems: Vizier and Elder meeples collected, goods sold from Merchant meeples, palaces/palm trees built by Builders, gold held, and Djinn cards acquired, with Assassins instead used to remove rivals' meeples.",
+  "how_you_win": "You bid for turn order, then move a group of meeples across the shared board (Mancala-style) to collect same-colored meeples and trigger the tile's effect, building up a hidden gold total and card/tile bonuses; the player with the highest combined score when the board is depleted wins."
  },
  "similar": [
   "The Isle of Cats",

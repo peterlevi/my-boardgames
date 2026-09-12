@@ -20,9 +20,9 @@
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Other",
-  "why": "There's no point scoring; a team wins by succeeding or failing enough quests, or Evil wins by assassinating Merlin at the end",
-  "how_you_win": "Good wins by getting three quests to succeed and surviving the Merlin assassination; Evil wins by failing three quests or correctly identifying Merlin afterward."
+  "breadth": "Focused",
+  "why": "The outcome is decided entirely by whether Good or Evil wins a majority of the mission votes (or Evil identifies Merlin afterward), with no point totals involved.",
+  "how_you_win": "Hidden loyal and evil players alternate proposing and voting on mission teams; Good wins by succeeding on three missions, Evil wins by failing three missions or, if Good reaches three successes, by correctly identifying Merlin."
  },
  "similar": [
   "The Resistance",

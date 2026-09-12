@@ -20,8 +20,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "The only currency is coins earned from harvesting bean sets, so the game comes down to trading efficiency",
-  "how_you_win": "You win by ending the game with the most coins, earned by harvesting large, well-timed sets of matching bean cards."
+  "why": "The only thing that matters is how many gold coins you've banked from selling harvested bean fields to the market.",
+  "how_you_win": "Play beans from the front of your hand into fields you can't rearrange, harvest a field for coins scaled to how many of that bean type you accumulated, and trade or gift beans with opponents to build bigger, more valuable fields than they can; the richest player when the draw deck is exhausted for the third time wins."
  },
  "similar": [
   "Coloretto",

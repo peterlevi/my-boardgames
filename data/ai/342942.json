@@ -18,11 +18,11 @@
   "kind": "mostly parallel play with light drafting competition",
   "detail": "Each player builds their own zoo on a private board and mostly optimizes their own engine, but there is competition over which animal and sponsor cards are available to draft and over shared conservation project thresholds. Turn order and icon count on the shared action cards create some indirect jostling, but boards otherwise develop independently."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Final score blends appeal-based points, conservation project points, and end-game bonus cards, so no single scoring source dominates.",
-  "how_you_win": "You win by building an efficient engine of animals, enclosures, and sponsors that generates appeal and conservation points faster than your opponents across the mid-to-late game."
+  "breadth": "Some",
+  "why": "Your final score is read off a single combined appeal/conservation track, so those two tracks effectively decide everything.",
+  "how_you_win": "Build up your zoo's appeal and fund conservation projects to advance your marker as far as possible along the interlocking scoring track; the highest position wins."
  },
  "similar": [
   "Terraforming Mars",

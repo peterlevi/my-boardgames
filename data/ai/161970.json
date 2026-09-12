@@ -16,11 +16,11 @@
   "kind": "shared public information race with indirect blocking",
   "detail": "Players see each other's public experiments and published theories, so racing to deduce and publish first matters, but each player's own ingredients and private reasoning stay hidden. There's no direct attack, just competitive deduction over shared public clues."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Points mostly come from correctly published theories and favor tokens, with reputation loss for wrong publications limiting how much risk a player can afford.",
-  "how_you_win": "Correctly deduce ingredient properties, publish accurate theories before rivals, and manage your reputation to end with the highest net score."
+  "why": "Reputation is a single running track built by publishing theories and debunking rivals, with leftover gold converted into extra reputation only at the very end.",
+  "how_you_win": "Over six rounds you test ingredients via the app to deduce true alchemical properties, then risk reputation publishing your own theories and debunking rivals' wrong ones; whoever ends with the highest reputation, after converting spare gold, wins."
  },
  "similar": [
   "Chai",

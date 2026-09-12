@@ -19,9 +19,9 @@
  },
  "win_criteria": "Lowest-highest scoring",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Victory is determined by your lowest score among the four leader colors, so a player must balance advancement across all categories rather than maximizing one",
-  "how_you_win": "You win by having the highest 'lowest score' across the four leader types (Governor, Soldier, Farmer/Trader combined with Artisan wildcards), forcing balanced growth rather than a single dominant strategy."
+  "breadth": "Broad",
+  "why": "Points are tallied separately in four independent leader colors (war, farming, commerce, culture/monuments), and a player's final score is their own weakest color, so the winner is whoever has the highest such minimum.",
+  "how_you_win": "Place tiles and leaders to build majority control of provinces across all four colors, using internal and external conflicts to shift control in your favor, then compare each player's lowest-scoring color — the player whose weakest color is still the highest wins."
  },
  "similar": [
   "Tigris & Euphrates",

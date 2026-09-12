@@ -20,8 +20,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from constructed buildings, completed contracts, virtue/corruption bonuses, and apprentices, so a winning strategy usually stacks several of these together.",
-  "how_you_win": "You win by efficiently converting raw resources into building contributions and contracts across the game while managing whether you lean virtuous or corrupt for bonus points at the end."
+  "why": "Final VP combines constructed building values, leftover silver, Old West Kingdom card bonuses, and virtue/apprentice adjustments, so no single track dominates.",
+  "how_you_win": "Build valuable buildings, manage your workers and virtue level, and end with the highest combined VP total once silver and card bonuses are added."
  },
  "similar": [
   "Raiders of the North Sea",

@@ -20,9 +20,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Victory points come from a mix of visible building progress and hidden bonus cards revealed only at game end.",
-  "how_you_win": "You win by combining efficient use of your dice across religious, military, and civil actions with a well-chosen set of scoring cards kept hidden until the final tally."
+  "breadth": "Salad",
+  "why": "Nearly every action card played banks small amounts of hidden victory points across many separate categories (religious, military, civil dice spent, citizens, events, cash), only revealed at the end.",
+  "how_you_win": "Assign your dice-workers to religious, military, and civil actions, play cards from your hand to trigger effects (many of which secretly bank hidden VP), and manage cash and citizens over four eras; the player with the most accumulated hidden and open points at the end wins."
  },
  "similar": [
   "Lorenzo il Magnifico",

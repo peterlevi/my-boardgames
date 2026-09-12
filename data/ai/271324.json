@@ -20,8 +20,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from constructed buildings, empire development track bonuses, and leftover resources at game end.",
-  "how_you_win": "Build the most efficient multi-resource production engine and cash in development bonuses before the final era ends."
+  "why": "Final score adds up printed points on built development cards, empire-wide bonuses/multipliers, leftover resources, and achievement thresholds.",
+  "how_you_win": "Draft cards each round, choose which to recycle for resources and which to construct into your Empire for ongoing production and points, then finish with the highest combined score from your buildings, resources, and bonuses."
  },
  "similar": [
   "7 Wonders",

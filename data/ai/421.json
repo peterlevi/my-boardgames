@@ -21,8 +21,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "the game ends when the bank runs low on cash and whoever has the highest personal net worth (cash plus share value) wins",
-  "how_you_win": "you win by building profitable train routes for companies you control and by trading shares shrewdly enough that your personal wealth outpaces everyone else's"
+  "why": "Every action (auctioning shares, laying track, running trains, paying dividends) ultimately converts into either cash on hand or share value, and only net worth at the end counts.",
+  "how_you_win": "You win by ending the game with the highest total of cash in hand plus the market value of your remaining shares."
  },
  "similar": [
   "1846: The Race for the Midwest",

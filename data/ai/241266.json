@@ -20,9 +20,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Score comes from a mix of building bonuses, resource stockpiles, and end-game building set bonuses, rewarding balanced development.",
-  "how_you_win": "You win by efficiently gathering resources and constructing a well-chosen combination of buildings that scores across multiple categories."
+  "breadth": "Some",
+  "why": "Final score combines points for the variety of building types you've constructed, leftover resources/money, and personal goal bonuses, so it draws from a few separate buckets rather than one dominant one.",
+  "how_you_win": "Send workers around the town to gather resources and construct buildings over four rounds; at the end, the player with the highest total from building variety, leftover assets, and any personal objectives wins."
  },
  "similar": [
   "Village",

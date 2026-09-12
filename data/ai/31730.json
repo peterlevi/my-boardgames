@@ -21,8 +21,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game is decided purely by each player's personal cash plus the market value of their share holdings at game end.",
-  "how_you_win": "You win by timing your stock purchases and company investments so your total portfolio value outpaces the other investors when the final round ends."
+  "why": "The only thing that matters at the end is total personal wealth, combining cash on hand with the value of railroad shares held.",
+  "how_you_win": "Bid on and hold shares in railroads you build up (or let others build up) so that by the game's end your cash plus your shares' value exceeds every other player's."
  },
  "similar": [
   "Chicago Express",

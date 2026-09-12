@@ -20,8 +20,8 @@
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no scoring; the team either finds all agent words within the turn limit or fails by hitting an assassin or running out of turns.",
-  "how_you_win": "You and your partner win by jointly identifying all 15 agent words across both key cards before the turn counter runs out or an assassin card is picked."
+  "why": "Both players win or lose together based solely on whether all green agent cards are found before time or guesses run out or the assassin is hit.",
+  "how_you_win": "Working from different keycards, both players give and interpret clues together to identify all 15 shared agent words within a limited number of turns/guesses, without touching an assassin word."
  },
  "similar": [
   "Codenames",

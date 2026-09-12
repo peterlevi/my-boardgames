@@ -20,9 +20,9 @@
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "First faction to reach 30 victory points (or their unique alternate win condition) wins, and each faction scores points through entirely different means.",
-  "how_you_win": "Race to 30 points before anyone else, scoring via your faction's unique engine (crafting, battles, quests, or alliances) while disrupting the current leader."
+  "breadth": "Broad",
+  "why": "Each faction races up a shared victory-point track using its own distinct VP-generating engine, and the game can also end via a faction-specific dominance or coalition condition instead of pure points.",
+  "how_you_win": "Reach 30 victory points before anyone else, earned through faction-specific actions like building, battling, crafting, or completing quests, or trigger your faction's special dominance/coalition victory."
  },
  "similar": [
   "Vast: The Crystal Caverns",

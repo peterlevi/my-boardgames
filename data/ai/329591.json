@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accrue from track built, technology upgrades, and end-game bonuses across several tracks.",
-  "how_you_win": "You win by building the most efficient combination of rail network expansion and technological upgrades, converting worker actions into points across multiple scoring tracks by game end."
+  "why": "Points are earned separately for track network expansion, technology and locomotive upgrades, and engineer/factory bonuses, giving several genuinely different avenues to the final total rather than one dominant engine.",
+  "how_you_win": "Assign workers to lay track across the map, research and build better locomotives and factories, and use engineers to boost efficiency; the player who has built the largest, most advanced railway network and banked the most points from these combined tracks wins."
  },
  "similar": [
   "Great Western Trail",

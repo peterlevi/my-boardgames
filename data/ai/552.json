@@ -16,11 +16,11 @@
   "kind": "direct route blocking and economic sabotage",
   "detail": "Players share the same city map and can build routes that intercept, block, or steal passengers destined for a rival's buses, and can deliberately target a leader to bankrupt them. The board and passenger pool are fully shared, so almost every action affects what routes remain viable for opponents."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Points come almost entirely from successfully delivering passengers to their destinations before routes are disrupted.",
-  "how_you_win": "You win by building and expanding bus routes that most efficiently ferry passengers to work, bar, and home destinations while undermining rivals' ability to do the same."
+  "breadth": "Some",
+  "why": "Final wealth (cash plus the value of any company stock held) decides the winner, not a points track.",
+  "how_you_win": "You build bus routes and shuttle passengers between homes, work and bars for delivery fees, while also buying and selling stock in bus companies for dividends; whoever ends the game with the most money wins."
  },
  "similar": [
   "Antiquity",

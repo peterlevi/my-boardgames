@@ -19,8 +19,8 @@
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "The winner is whoever accumulates the most valuable completed sets of goods cards by game end.",
-  "how_you_win": "You win by successfully bidding on and collecting sets of three matching goods cards, using your remaining hand cards as bidding currency until the deck runs out."
+  "why": "The only thing that matters is how many completed 3-of-a-kind goods sets you sell over the course of the auctions.",
+  "how_you_win": "You bid your hand of goods/money cards to acquire matching sets of three goods cards, sell completed sets to the bank for points, and the player with the highest total from sold sets when the deck runs out wins."
  },
  "similar": [
   "Ra",

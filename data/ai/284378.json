@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accrue from efficient production, completed vehicle orders, R&D advancement, and track bonuses.",
-  "how_you_win": "Optimize your production line and complete more valuable orders and objectives than your opponents before the game ends."
+  "why": "Endgame VP is drawn from fulfilled contracts, R&D/tech progress, production/efficiency bonuses, and leftover resources or money.",
+  "how_you_win": "Manage your production line's flow of parts and workers to fulfill kanban contracts, invest in R&D and process improvements, and finish with more total victory points than your opponents."
  },
  "similar": [
   "Kanban: Automotive Revolution",

@@ -19,8 +19,8 @@
  "win_criteria": "Special win condition",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no point scoring at all; the game ends the instant one team's win condition is met.",
-  "how_you_win": "You win by your team being the one still standing: the Sheriff's side eliminates all outlaws, the outlaws eliminate the Sheriff, or the renegade is the last player alive."
+  "why": "There's no scoring at all — the game ends the instant one hidden-role team achieves its kill objective.",
+  "how_you_win": "As Sheriff or a Deputy you win by eliminating all Outlaws and the Renegade; as an Outlaw you win by killing the Sheriff; as the Renegade you win by being the sole survivor."
  },
  "similar": [
   "Bang!",

@@ -18,11 +18,11 @@
   "kind": "competition for shared routes, contracts, and market space",
   "detail": "Players build on the same map and compete for the same limited contracts, workers, and delivery routes, indirectly blocking each other by claiming space and depressing shared markets rather than attacking directly. Each player still runs their own factory/track engine, so much of the state is personal even though the map and contract pool are shared."
  },
- "win_criteria": "Most money",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "The game ends abruptly once the Trieste connection is made, and whoever has the highest net worth (cash plus assets) at that moment wins.",
-  "how_you_win": "Build the most efficient factory-and-rail engine, fulfill profitable contracts, and hold the strongest net worth when the sudden-death ending is triggered."
+  "breadth": "Broad",
+  "why": "Final score combines contract-fulfillment points, factory and network value, company share ownership, and leftover cash converted at game end, so no single track dominates the outcome.",
+  "how_you_win": "You build track and factories to deliver goods and fulfill profitable contracts while buying shares in companies; once someone completes the Trieste connection, everyone totals contracts, shares, and cash into a final net-worth score, and the highest total wins."
  },
  "similar": [
   "Age of Steam",

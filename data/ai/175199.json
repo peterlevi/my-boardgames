@@ -16,11 +16,11 @@
   "kind": "following and resource denial",
   "detail": "Players choose an action for everyone to follow, meaning your choices directly enable or restrict what opponents can do next turn, while each player still maintains their own private tableau of materials and works."
  },
- "win_criteria": "Special win condition",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "The game ends when someone completes their personal victory condition (filling their needs) rather than a points count",
-  "how_you_win": "You efficiently gather materials and complete works to satisfy your character's specific completion requirement before anyone else does."
+  "breadth": "Some",
+  "why": "The bulk of your score comes from the point values printed on completed Works, with a secondary contribution from leftover materials/goods at game end.",
+  "how_you_win": "You use multi-purpose cards to gather materials and complete Works cards; the game ends when a player finishes enough Works or the deck runs out, and the player with the most points from completed Works (plus leftover goods) wins."
  },
  "similar": [
   "Glory to Rome",

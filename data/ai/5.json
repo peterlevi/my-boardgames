@@ -21,8 +21,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "final cash total, including money from stock sold and merger bonuses, decides the winner",
-  "how_you_win": "you win by holding majority stock in chains right before they merge or end the game, cashing in for large bonuses and high share payouts"
+  "why": "Tile placement and mergers only matter because they build chains whose stock you hold, and the game is decided purely by converting all assets to cash at the end.",
+  "how_you_win": "You win by having the most cash after all stock is sold for its final value when the game ends."
  },
  "similar": [
   "Acquire (variants)",

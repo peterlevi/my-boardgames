@@ -21,9 +21,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "There are many nominal scoring inputs (cards, tracks, resources, farms, warriors, player board bonuses) but reviewers note only a couple of sources actually move the needle much.",
-  "how_you_win": "You win by accumulating the most points, primarily from Decree/Palace cards you've tucked and from area majority/presence scored with warriors (at set rounds), supplemented by many smaller bonuses from actions and tracks."
+  "breadth": "Broad",
+  "why": "As a civilization-building game, final score combines area majority/influence, clan development, resource and building accumulation, and other end-game bonuses.",
+  "how_you_win": "You draft actions to grow your clan's territory, buildings, and development track over the game, and the player with the highest combined score from these various sources at the end wins."
  },
  "similar": [
   "Coimbra",

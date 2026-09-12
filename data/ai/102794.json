@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score sums points from dwellings, fields, pastures, animals, ore/ruby goods, and dungeon/weapon tracks, so a wide, balanced cave usually beats a narrow one.",
-  "how_you_win": "You build up your cave and farm efficiently across many categories over several rounds, then tally points at the end; whoever has optimized the most productive, well-rounded setup wins."
+  "why": "Final tally sums points from rooms/caves dug, pastures and fields, each type of animal, resources and dwarves, with penalties for empty spaces and unused resources.",
+  "how_you_win": "Over several rounds you place workers to expand and furnish your cave, farm and breed animals, and equip dwarves for adventures; at game end you total points across many independent categories and the highest total wins."
  },
  "similar": [
   "Agricola",

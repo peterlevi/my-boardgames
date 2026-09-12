@@ -21,8 +21,8 @@
  "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Focused",
-  "why": "Score is primarily driven by the size and food-carrying capacity of surviving species at game end.",
-  "how_you_win": "Build and protect species that accumulate the most points from population size and traits by the end of the final round."
+  "why": "The only thing that matters at game end is how much population—food converted into species size—you've kept alive across your species boards.",
+  "how_you_win": "Evolve traits to help your species feed and survive changing climate and predators; the player with the most total population across their species at the end wins."
  },
  "similar": [
   "Evolution",

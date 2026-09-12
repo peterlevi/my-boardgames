@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from contracts, cathedral contributions, noble favor, and end-game bonuses across several tracks.",
-  "how_you_win": "You win by building the most efficient combination of contract fulfillment, cathedral investment, and noble favors before the game's rounds run out."
+  "why": "Points accumulate independently from fulfilled contracts, cathedral construction contributions, sets of coats of arms, recruited noble personalities, and fair participation, so no single engine dominates.",
+  "how_you_win": "Use dice-based action drafting to travel between cities, gather resources, fulfill wool/iron contracts, contribute to cathedrals, collect coat-of-arms sets, and recruit personalities; whoever has amassed the most prestige points across these varied tracks at the end wins."
  },
  "similar": [
   "Newton",

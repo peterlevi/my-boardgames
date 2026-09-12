@@ -21,8 +21,8 @@
  "win_criteria": "Lowest-highest scoring",
  "scoring": {
   "breadth": "Focused",
-  "why": "Players accumulate bull-head penalty points from taken rows, and the game ends when someone crosses a threshold.",
-  "how_you_win": "You win by having the fewest penalty points when another player crosses the losing threshold, achieved by avoiding taking full rows."
+  "why": "The only thing that matters is minimizing the bull's-head penalty points accumulated from cards you're forced to take.",
+  "how_you_win": "Play number cards trying to avoid being the one who takes a row of cards, since the row you take gives you penalty points; the player with the fewest penalty points when someone crosses the threshold wins."
  },
  "similar": [
   "Coloretto",

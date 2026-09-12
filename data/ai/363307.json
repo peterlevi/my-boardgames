@@ -18,11 +18,11 @@
   "kind": "Shared drafting pool, private boards",
   "detail": "Each player develops an entirely separate personal board with no spatial competition, unlike Photosynthesis's single shared board. The main touchpoint is drafting biome cards from a shared pool, where players weigh what they take against what they leave behind, since unchosen cards boost the shared Fertility zone."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Salad",
-  "why": "One review explicitly calls it salad scoring, with points from seasonal sunlight exposure, largest contiguous forest bonuses, and endgame fertility-biome scoring as largely independent tracks",
-  "how_you_win": "Accumulate the highest total across sunlight, forest-size, and fertility bonuses by the end of round 4, with scores commonly landing in the 80-200 range."
+  "breadth": "Some",
+  "why": "Score mostly tracks how well you filled your planet with light-fed trees and biome tiles, with a couple of end-game bonus cards layered on top.",
+  "how_you_win": "Draft biome cards to grow trees and other elements in high-light regions of your planet grid, then total tree/biome scoring plus any bonus-card objectives for the highest score."
  },
  "similar": [
   "Photosynthesis",

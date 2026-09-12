@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from completed routes, city presence bonuses, upgrade track completion, and endgame network bonuses, so efficient action use across all of these decides the winner.",
-  "how_you_win": "You use your limited actions to claim trade routes and upgrade your abilities faster than opponents, banking points from routes and bonuses to finish with the highest total."
+  "why": "Victory points come from claiming trade routes, using bonus tiles, and completing the book/key advancement tracks, each a fairly independent point engine.",
+  "how_you_win": "You place traders along routes to claim them and push up the two ability tracks, winning by combining route points, track completion bonuses, and city presence into the highest total."
  },
  "similar": [
   "Concordia",

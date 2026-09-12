@@ -19,8 +19,8 @@
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "The group either successfully identifies the correct suspect/location/weapon combination in time or fails together",
-  "how_you_win": "The mediums correctly interpret the ghost's visions to identify the culprit before the seven hours (turns) run out."
+  "why": "There is no point total; the players win only if the Medium can correctly guess the ghost's chosen suspect, location, and weapon before the shared vision deck runs out.",
+  "how_you_win": "Mediums send vision cards to help psychics guess the correct suspect/location/weapon combination the ghost has in mind, and the group must reach the correct final answer within a limited number of rounds to win together."
  },
  "similar": [
   "Dixit",

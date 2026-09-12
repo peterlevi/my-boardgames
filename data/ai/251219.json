@@ -20,8 +20,8 @@
  "win_criteria": "Race to a finish",
  "scoring": {
   "breadth": "Focused",
-  "why": "The game ends the instant a player collects the required number of rubies.",
-  "how_you_win": "Be the first to gather the target number of rubies by efficiently chaining tile actions to acquire and trade up goods."
+  "why": "The game ends the instant a player banks the required number of rubies, so there's no comparative final tally.",
+  "how_you_win": "Move your merchant around the bazaar's tiles, gathering goods and money and converting them into rubies, and be the first to collect the target number of rubies."
  },
  "similar": [
   "The Voyages of Marco Polo",

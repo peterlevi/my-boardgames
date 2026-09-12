@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from building progress, completed goals, and end-game bonuses across several tracks.",
-  "how_you_win": "You win by efficiently chaining cards to advance building projects and fulfill objectives, ending with the most victory points."
+  "why": "Final score is a sum across several largely independent tracks: temple/wall construction progress, completed quests/tasks, resource and tech development, and leftover holdings.",
+  "how_you_win": "Use your hand of multi-use cards to gather resources, advance tech tracks, and chain actions that push the temple (Ezra) or city wall (Nehemiah) construction forward and complete objectives; the player with the most accumulated points across these tracks at the end wins."
  },
  "similar": [
   "Raiders of the North Sea",

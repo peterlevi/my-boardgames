@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "points accumulate from building placement, cult track advancement, favor tiles, and end-game bonus scoring conditions, all of which combine at game end",
-  "how_you_win": "you win by expanding your building network efficiently, advancing on the cult tracks, and timing upgrades to score well against the round-specific and final scoring bonuses"
+  "why": "Victory points accumulate from round-by-round action scoring, cult track final scoring, network/area bonuses, favor and bonus tiles, and building upgrades, none of which reduces to a single dominant source.",
+  "how_you_win": "You win by scoring the most victory points overall, earned through building and upgrading structures, advancing on cult tracks, and completing bonus/favor tile objectives across the game."
  },
  "similar": [
   "Terra Mystica",

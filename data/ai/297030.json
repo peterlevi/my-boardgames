@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from temple tile placement, god favor tracks, monuments, and end-game bonuses, so the winner is whoever builds the most efficient combination rather than maxing one track.",
-  "how_you_win": "You out-engine opponents by chaining action-wheel turns into temple growth, god advancement, and monument completion faster than they can."
+  "why": "Points accumulate from building up the temple's tiers, advancing along the moon/god tracks, and completing statue and cult bonuses, with the highest total at game end winning.",
+  "how_you_win": "Grow the temple, advance your favor with the gods, and grab scoring opportunities each era before Maat's reckoning resets things; whoever holds the most points when the temple is complete wins."
  },
  "similar": [
   "Teotihuacan: City of Gods",

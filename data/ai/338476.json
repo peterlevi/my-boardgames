@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Final score comes from development card values, leftover resources, military strength, and faith/vatican track position all added together.",
-  "how_you_win": "Build an efficient personal engine by claiming high-value development cards and resource conversions before opponents, then convert everything into victory points at game end."
+  "why": "Final score adds VP printed on development, territory, character, and building cards to military-track position, faith bonuses, and leftover resources converted at game end.",
+  "how_you_win": "Across six rounds, place family members (boosted by dice values) to collect resources and acquire cards from four decks, then total all card VP, track bonuses, and end-game conversions; the highest sum wins."
  },
  "similar": [
   "Great Western Trail",

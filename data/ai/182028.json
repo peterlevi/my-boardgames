@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Culture points accumulate every round from civil actions, buildings, and wonders, with military events able to swing totals sharply, so the winner is whoever manages the broadest balanced civilization.",
-  "how_you_win": "You win by out-teching and out-culturing opponents while keeping enough military to avoid being raided for points."
+  "why": "Culture points earned from technologies, wonders, buildings, and political/military actions across three ages are summed, with military weakness able to subtract heavily.",
+  "how_you_win": "Develop your civilization's technology, buildings, wonders, and leaders each age to generate culture points, while keeping enough military strength to avoid losing points to aggression; most culture at the end of Age III wins."
  },
  "similar": [
   "Clash of Cultures",

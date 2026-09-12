@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from built factories, completed contracts, and end-game bonuses.",
-  "how_you_win": "You win by assembling the most efficient chain of factory cards to fulfill contracts and rack up building bonuses before the game ends."
+  "why": "Victory points accrue from multiple channels at once — the printed VP on built factory/blueprint cards, bonuses for completed contracts, and end-game conversions of leftover goods or money — rather than a single scoring line.",
+  "how_you_win": "Draft and build a tableau of factory blueprints using dice as workers, fulfill contracts with the goods you manufacture, and end the game with the highest combined total of building, contract, and resource points."
  },
  "similar": [
   "Gizmos",

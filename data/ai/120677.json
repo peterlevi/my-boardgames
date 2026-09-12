@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points trickle in throughout the game from building, network size, cult track position, favor tiles, and town founding, plus a final area-scoring round.",
-  "how_you_win": "You win by out-expanding and out-upgrading opponents on the shared board while squeezing extra points from cult tracks and favors along the way."
+  "why": "Points come from building structures and upgrades, climbing the four cult tracks, favor-tile bonuses, and end-game area/cult scoring, all summed at the end.",
+  "how_you_win": "Terraform land to expand your network of structures, upgrade buildings for income, and advance on the cult tracks; the player with the most total points after the final round wins."
  },
  "similar": [
   "Gaia Project",

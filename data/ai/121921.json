@@ -20,9 +20,9 @@
  },
  "win_criteria": "Cooperative goal",
  "scoring": {
-  "breadth": "Other",
-  "why": "There's no victory points; success or failure is determined by scenario-specific objectives like survival, discovery, or building requirements",
-  "how_you_win": "Players win by collectively completing the scenario's specific objectives (such as surviving a set number of weeks or discovering an item) before running out of morale or resources."
+  "breadth": "Focused",
+  "why": "Success or failure hinges on completing the scenario's specific objective (discovering the island's secret, escaping, etc.) before the players run out of morale, health, or time, not on accumulating points.",
+  "how_you_win": "Players cooperatively manage a shared action queue to gather food, build shelter, and fight threats while advancing the scenario's storyline; the group wins together by achieving the scenario's goal before the deck of weeks runs out or the survivors perish."
  },
  "similar": [
   "Tokaido",

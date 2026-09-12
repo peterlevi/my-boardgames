@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from resource collection, area majority, card sets, and end-game bonuses, so a winning engine typically combines several scoring paths rather than one.",
-  "how_you_win": "You win by building the most efficient engine of yōkai and pilgrims, converting resources into area influence and end-game bonuses faster than your opponents."
+  "why": "Points come from several largely independent tracks: area majority in the forest, completed structures/sets, and yōkai-driven bonuses.",
+  "how_you_win": "Play yōkai cards and place dice-workers to gather resources, build structures, gain majority influence over forest areas, and complete card sets; whoever has converted the most of this activity into victory points at the end wins."
  },
  "similar": [
   "Res Arcana",

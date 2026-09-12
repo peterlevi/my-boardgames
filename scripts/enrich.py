@@ -73,6 +73,10 @@ WIN_CRITERIA = [
     "Special win condition", "Cooperative goal", "Other",
 ]
 
+COUNTING_RULE = """
+Counting scoring sources: count the distinct scoring categories the rules themselves list at the end of the game, not the number of decisions or actions that feed them. Three or more largely independent categories is "many sources"; if everything you score flows from one or two of them, it is "one or two sources" however many ways there are to build them up. Apply the same count to breadth: "Focused" is one real route to points, "Some" two or three, "Broad" four or more that matter, and "Salad" is points for nearly everything you do.
+"""
+
 HEADER = """You are cataloguing a board game collection. Answer ONLY with a \
 JSON object mapping each game's id to its entry. No prose, no code fence.
 
@@ -109,6 +113,7 @@ Played, Rahdo Runs Through, JonGetsGames, Before You Play. Never invent a \
 video title or URL."]
 }}
 
+{rule}
 GAMES:
 """
 
@@ -175,7 +180,25 @@ how much of the state is shared versus each player's own board"
 
 If the search genuinely turns up nothing, say so with "confidence": "low" and \
 empty fields. Never pad the answer out with plausible invention.
+{rule}
+GAMES:
+"""
 
+
+RESCORE = """For each game below, decide only how its winner is determined. \
+Use what you know about the game, reconciled with the BGG data given.
+
+Answer ONLY with a JSON object mapping each id to:
+{{
+  "win_criteria": one of {criteria},
+  "scoring": {{
+    "breadth": "Focused" | "Some" | "Broad" | "Salad",
+    "why": "one sentence on what actually decides the winner",
+    "how_you_win": "one or two sentences on how a player actually wins, in \
+plain language"
+  }}
+}}
+{rule}
 GAMES:
 """
 
@@ -192,7 +215,8 @@ def prompt_for(batch, header=None):
             mechanics=", ".join(g["mechanics"]) or "none listed",
             description=(g["description"] or "")[:700],
         ) for g in batch)
-    head = header or HEADER.format(criteria=json.dumps(WIN_CRITERIA))
+    head = header or HEADER.format(criteria=json.dumps(WIN_CRITERIA),
+                                   rule=COUNTING_RULE)
     return head + body
 
 
@@ -213,7 +237,10 @@ def ask(prompt, model, online=False):
                 # read the web.
                 "--disallowedTools", "Bash", "Write", "Edit", "NotebookEdit",
                 "--permission-mode", "bypassPermissions"]
+    # Without an explicit /dev/null the CLI waits on stdin and then warns
+    # about it, which lands in the output and breaks the JSON parse.
     r = subprocess.run(cmd, capture_output=True, text=True,
+                       stdin=subprocess.DEVNULL,
                        timeout=600 if online else 240)
     if r.returncode != 0:
         raise RuntimeError((r.stderr or r.stdout)[-300:])
@@ -224,8 +251,11 @@ def ask(prompt, model, online=False):
     return json.loads(text)
 
 
-def process(batch, model, describe=False, online=False):
-    header = (ONLINE.format(criteria=json.dumps(WIN_CRITERIA)) if online
+def process(batch, model, describe=False, online=False, rescore=False):
+    header = (ONLINE.format(criteria=json.dumps(WIN_CRITERIA), rule=COUNTING_RULE)
+              if online
+              else RESCORE.format(criteria=json.dumps(WIN_CRITERIA),
+                                  rule=COUNTING_RULE) if rescore
               else DESCRIBE if describe else None)
     answers = ask(prompt_for(batch, header), model, online=online)
     written = []
@@ -235,6 +265,15 @@ def process(batch, model, describe=False, online=False):
             continue
         if online:
             data["source"] = "web"
+        if rescore:
+            # Only the two classifying fields are re-asked; everything else in
+            # the entry — summary, praise, interaction, sources — stands.
+            existing = json.loads((AI / f'{g["id"]}.json').read_text())
+            if data.get("win_criteria"):
+                existing["win_criteria"] = data["win_criteria"]
+            existing.setdefault("scoring", {}).update(
+                {k: v for k, v in (data.get("scoring") or {}).items() if v})
+            data = existing
         if describe:
             # Fill only the blanks; the structural fields from the first pass
             # stay as they were, and the panel gets labelled as descriptive.
@@ -266,6 +305,12 @@ def main():
                     help="second pass over low-confidence entries")
     ap.add_argument("--online", action="store_true",
                     help="look entries up on the web (slow, costs real money)")
+    ap.add_argument("--only", metavar="IDS",
+                    help="comma-separated game ids, for retrying the handful "
+                         "a failed batch left behind")
+    ap.add_argument("--rescore", action="store_true",
+                    help="re-ask only win_criteria and scoring for every "
+                         "cached entry, leaving the rest of it alone")
     a = ap.parse_args()
 
     if not shutil.which("claude"):
@@ -274,11 +319,18 @@ def main():
         return
 
     AI.mkdir(parents=True, exist_ok=True)
+    only = {i.strip() for i in a.only.split(",")} if a.only else None
     todo = []
     for g in load_games():
         if g["is_expansion"]:
             continue
+        if only and str(g["id"]) not in only:
+            continue
         cached = AI / f'{g["id"]}.json'
+        if a.rescore:
+            if cached.exists():
+                todo.append(g)
+            continue
         if a.describe or a.online:
             # Only entries the first pass could not speak to.
             if not cached.exists():
@@ -315,7 +367,8 @@ def main():
 
     done = failed = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=a.jobs) as pool:
-        futures = {pool.submit(process, b, a.model, a.describe, a.online): b
+        futures = {pool.submit(process, b, a.model, a.describe,
+                               a.online, a.rescore): b
                    for b in batches}
         for f in concurrent.futures.as_completed(futures):
             batch = futures[f]

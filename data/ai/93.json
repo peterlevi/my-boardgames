@@ -18,11 +18,11 @@
   "kind": "area majority and blocking",
   "detail": "Players fight directly over the same regions, repositioning knights to break or hold majorities, while secretly loading the castillo for a surprise placement each round. Almost all meaningful state (the board, King position, regions) is shared; only hands of power cards and the castillo are private."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Majority control of each region at three scoring rounds determines who scores big, so the winner is whoever holds the most valuable majorities when the scoring hits.",
-  "how_you_win": "You move and reinforce knights to control the most valuable regions right when scoring occurs, repeating this over nine rounds to finish with the highest total."
+  "breadth": "Focused",
+  "why": "Everything funnels into area-majority scoring of regions at three checkpoints (rounds 3, 6, 9), so whoever controls the most valuable regions with caballeros wins.",
+  "how_you_win": "You bid for turn order/action strength, move knights onto the board, and win by holding 1st/2nd/3rd place in as many high-value regions as possible when scoring hits, accumulating the most total points by round 9."
  },
  "similar": [
   "Tikal",

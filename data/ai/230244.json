@@ -16,11 +16,11 @@
   "kind": "cooperative resource and crisis management",
   "detail": "Players jointly manage a shared ship board, shared resource pools, and shared threats, discussing and coordinating which worker-dice to commit where each round. Individual player roles exist but nearly all meaningful state — power, hull integrity, exploration progress — is shared and affected by everyone's choices."
  },
- "win_criteria": "Cooperative goal",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Success or failure hinges on whether the crew collectively keeps the ship functional and reaches its destination rather than on accumulating points against each other.",
-  "how_you_win": "The group wins by managing power, resources, and crises well enough to keep the ship alive and complete its objectives before systems fail or time runs out."
+  "breadth": "Broad",
+  "why": "Scoring is split across discovered planets, completed missions, and researched technology, each contributing points independently.",
+  "how_you_win": "Guide your robot crew to explore, complete mission and discovery cards, and research technology before the ship's systems degrade too far; the player with the most accumulated points from these separate objectives wins."
  },
  "similar": [
   "Robinson Crusoe: Adventures on the Cursed Island",

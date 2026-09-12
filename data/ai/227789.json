@@ -18,11 +18,11 @@
   "kind": "spot/rondel competition for resources",
   "detail": "Players race for shared spaces on a central rondel and monk track, occasionally blocking each other from ideal actions, but nearly all scoring happens on each player's own barrel board independent of others."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Lowest-highest scoring",
  "scoring": {
   "breadth": "Some",
-  "why": "Points come from barrel-tile layering bonuses plus building and garden upgrades, all converging on a final tally.",
-  "how_you_win": "You win by arranging barrel tiles into long same-colored horizontal runs across upgraded rows, maximizing multiplied scoring at game end."
+  "why": "Each barrel row scores only as far as its shortest completed row reaches, so your weakest ingredient track caps your points regardless of how far the others advanced.",
+  "how_you_win": "Expand your garden and harvest grain, hops, fruit, and water in balance, then place them into barrel rows; because scoring is capped by your shortest row, the player who keeps all resource tracks evenly developed (plus refinement bonuses) scores highest."
  },
  "similar": [
   "Trajan",

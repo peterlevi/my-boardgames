@@ -20,9 +20,9 @@
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Other",
-  "why": "Each class has its own distinct victory condition tied to its economic role rather than a shared point total.",
-  "how_you_win": "You win by fulfilling your class's unique objective (e.g., the Working Class securing enough welfare and wages, the Capitalist accumulating enough profit) before or better than your rivals achieve theirs."
+  "breadth": "Focused",
+  "why": "There is no shared point total; each class role wins by satisfying its own distinct economic/political objective cards.",
+  "how_you_win": "Playing as the working class, capitalists, middle class, or the state, you push policy, wages, prices, and production to hit your class's specific secret goals (e.g., low unemployment for workers, high profit for capitalists); whoever best fulfills their own class's agenda wins."
  },
  "similar": [
   "Kapital",

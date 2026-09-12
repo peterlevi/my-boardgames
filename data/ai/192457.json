@@ -18,11 +18,11 @@
   "kind": "area control and open conflict",
   "detail": "Players directly fight over the same regions on a shared board, with combat, resource denial, and VP-scoring zones constantly contested. Nearly the entire board state is shared territory, so almost every action affects opponents' position and economy."
  },
- "win_criteria": "Most points, one or two sources",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Victory points are earned each round mainly from controlling key regions and resources, so the winner is whoever holds the most valuable territory over time.",
-  "how_you_win": "You win by controlling contested regions each scoring round to accumulate more victory points than your opponents by game end."
+  "breadth": "Broad",
+  "why": "Victory points accrue from several independent streams — territory control each round, faction-specific bonuses, and units/resources converted directly into VP tokens — rather than one formula.",
+  "how_you_win": "You move units and fight to control territories and resources across a shared board using an asymmetric faction, and the player who accumulates the most victory points from area control and faction abilities by the game's end wins."
  },
  "similar": [
   "Rising Sun",

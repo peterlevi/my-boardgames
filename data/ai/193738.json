@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from cattle deliveries, buildings, railroad stations, and objective cards, so overall efficiency across several tracks decides the winner.",
-  "how_you_win": "You build the most efficient cattle-driving and railroad engine, repeatedly delivering strong herds while collecting building and objective bonuses, to end with the highest total score."
+  "why": "Final score is a sum of several largely independent tracks: cattle delivered, buildings placed along the trail, Kansas City tiles, station upgrades/objective cards, with hazards subtracting.",
+  "how_you_win": "You build an engine of cards, workers, and buildings to repeatedly herd valuable cattle from Texas to Kansas City, converting deliveries and infrastructure into the most victory points by game end."
  },
  "similar": [
   "Orléans",

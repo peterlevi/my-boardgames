@@ -21,8 +21,8 @@
  "win_criteria": "Cooperative goal",
  "scoring": {
   "breadth": "Focused",
-  "why": "There's no point total; the team either completes all assigned tasks in the mission correctly or fails it.",
-  "how_you_win": "The team wins a mission by ensuring every assigned task card is won by the right player at the right trick, communicating only through one limited token per round."
+  "why": "There's no point total; each mission just specifies task cards that must be fulfilled by specific players through the tricks taken.",
+  "how_you_win": "The team plays trick-taking hands while communicating only through very limited signals, and the group wins a mission by ensuring the right players win the right specific cards in tricks."
  },
  "similar": [
   "The Mind",

@@ -16,11 +16,11 @@
   "kind": "shared resource contribution with individual scoring",
   "detail": "Players choose whether to keep drafted cards in their own tableau or contribute them to a shared capital area whose powers benefit everyone, so decisions constantly ripple into what opponents can do next round. Most of the board is a shared capital area while each player keeps a separate personal tableau for direct scoring."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Some",
-  "why": "Points accumulate from character cards kept for personal scoring plus bonuses triggered through capital contributions.",
-  "how_you_win": "You win by balancing which cards you keep for direct points against which you donate to the capital for power synergies, ending with the highest total score."
+  "why": "Points come from character cards you keep in your own home base plus end-of-round bonuses tied to the shared capital, so it boils down to two related tallies.",
+  "how_you_win": "Each round you either play characters into your home base to bank their point value or contribute them to the shared capital to trigger powers and majority bonuses; after the final round, the highest total score wins."
  },
  "similar": [
   "Capital Lux",

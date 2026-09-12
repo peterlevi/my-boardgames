@@ -20,8 +20,8 @@
  "win_criteria": "Most money",
  "scoring": {
   "breadth": "Focused",
-  "why": "Cash on hand at game end, built from share value and dividends received, decides the winner.",
-  "how_you_win": "Buy and time shares wisely and push companies to pay dividends at the right moment so you end with more cash than everyone else."
+  "why": "It's a Winsome cube-rail/18xx-style game where shares are cashed in and the player with the most money at the end wins.",
+  "how_you_win": "Buy and build up railway companies, collect dividends as they pay out, and end the game holding more total cash (from dividends plus your remaining share value) than any other player."
  },
  "similar": [
   "Chicago Express",

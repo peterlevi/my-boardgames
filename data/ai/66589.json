@@ -19,8 +19,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from buildings, privileges, colonies, and money converted at the end",
-  "how_you_win": "You build the most efficient trading and colonization engine, converting goods and buildings into victory points and leftover money by game's end."
+  "why": "Final score is built from buildings constructed, colonies founded/upgraded, and privilege track position, each contributing points independently of the money economy used to fuel them.",
+  "how_you_win": "You use a rotating rondel to gather workers, sail ships to found and improve colonies, and construct buildings, converting your economic engine into victory points from buildings, colonies, and privileges; the highest total at the end wins."
  },
  "similar": [
   "Antike",

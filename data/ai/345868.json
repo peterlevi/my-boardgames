@@ -22,8 +22,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accrue from Major Project majority payouts, Senate/voting actions, passed laws, and character recruitment as several only loosely connected tracks",
-  "how_you_win": "Score the most prestige points after 5 rounds by combining Major Project majorities, legislation outcomes, and character bonuses; ties result in a shared victory."
+  "why": "Prestige comes from several distinct end-game channels: influence built on federation planets, contracts fulfilled, personal objectives completed, and votes won during council phases.",
+  "how_you_win": "Over five rounds you place two different types of workers to build influence on planets, complete contracts, and pursue secret objectives, then periodically vote on federation matters; the delegation with the most accumulated prestige after five years is admitted and wins."
  },
  "similar": [
   "Bruxelles 1893: Belle Époque"

@@ -16,11 +16,11 @@
   "kind": "mostly parallel play with light competition for shared spaces and market",
   "detail": "Players share a worker-placement board and market where the best spots or offers can be taken by others first, but each player's population and production tableau otherwise develops independently."
  },
- "win_criteria": "Race to a finish",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "The game ends when a player completes their contract track, so being first to satisfy population demands and fulfill contracts decides the winner.",
-  "how_you_win": "Build production chains to keep your population happy and be the first to complete your contract track, typically winning outright by ending the game."
+  "breadth": "Broad",
+  "why": "Score combines fulfilled population-need contracts, exploration and expedition tiles, ship/building development, and end-game scoring cards.",
+  "how_you_win": "You draft cards to grow your island's population tiers, fulfill their good requirements, expand overseas, and complete contracts and objectives; the player with the highest combined score from these sources when the game ends wins."
  },
  "similar": [
   "Le Havre",

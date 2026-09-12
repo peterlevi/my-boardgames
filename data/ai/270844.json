@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from built structures, completed objectives, and successful raids/exploration by game end.",
-  "how_you_win": "You win by building the most efficient combination of buildings and completing objective cards while using raids to hamper rivals, ending with the highest total score."
+  "why": "Final score sums several independent categories — constructed buildings, completed raids, faction bonuses, and leftover resources.",
+  "how_you_win": "Build up your empire's card tableau, raid other locations for extra rewards, and complete your faction's special objectives; whoever totals the most points across buildings, raids, and bonuses at the end wins."
  },
  "similar": [
   "Imperial Settlers",

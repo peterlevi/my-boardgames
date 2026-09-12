@@ -16,11 +16,11 @@
   "kind": "push-your-luck with opportunistic taking",
   "detail": "Any player can grab cards revealed into the shared harbor before the active player, so there's constant opportunistic sniping of good cards, though each player's own tableau of recruited cards/coins is private. The shared deck and harbor row are the main point of contact between players."
  },
- "win_criteria": "Most points, many sources",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Some",
-  "why": "First to 12 points ends the round, then points come from person cards and expedition tiles collected",
-  "how_you_win": "You win by amassing the most victory points from recruited characters and completed expeditions once someone triggers the game-end threshold."
+  "why": "The game ends the instant someone reaches the victory-point threshold, and those points come mainly from hired person cards and completed expeditions, with a small passive bonus for leftover coins.",
+  "how_you_win": "Push your luck drawing ship cards for coins, then spend coins to hire valuable person cards and complete expeditions; the first to reach the required VP total (nudged up by leftover coins) ends the game and wins."
  },
  "similar": [
   "Jaipur",

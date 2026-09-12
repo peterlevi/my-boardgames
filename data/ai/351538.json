@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points come from home-tile values, unique spirit tiles, completed balance 'contracts,' and a left/right imbalance penalty rather than one dominant track",
-  "how_you_win": "Accumulate the most points across in-round and end-game scoring from tile placement, temple favors, and balance bonuses over four years/rounds."
+  "why": "Happiness points accumulate from several largely independent systems — family/worker actions, bamboo grove development, and building/objective completion — rather than one dominant track.",
+  "how_you_win": "Optimize your worker and family actions each season to grow bamboo, satisfy family needs, and complete buildings/objectives, ending with the most happiness points."
  },
  "similar": [
   "Bitoku",

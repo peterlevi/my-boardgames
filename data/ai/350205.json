@@ -18,11 +18,11 @@
   "kind": "commodity speculation and shared market pressure",
   "detail": "Players buy and sell into a shared, dynamic commodity market whose prices shift based on collective actions, so one player's speculation directly affects what others can profitably do, even though factory development itself sits on individual player boards."
  },
- "win_criteria": "Most money",
+ "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Success is measured by accumulated capital from successful manufacturing and market speculation.",
-  "how_you_win": "You win by out-earning opponents through shrewd factory investment and timing your commodity trades better than the market punishes you."
+  "breadth": "Broad",
+  "why": "Points come from several separate channels: fulfilling customer car orders, advancing tech/production tracks, and commodity speculation gains.",
+  "how_you_win": "Expand your car factory's production lines, speculate on rising and falling commodity prices to buy cheap materials, and fulfill increasingly advanced customer orders; the player who combines these best for the most points wins."
  },
  "similar": [
   "Food Chain Magnate",

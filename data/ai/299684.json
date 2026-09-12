@@ -20,8 +20,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Victory points accumulate from track positions, claimed achievements, and end-game bonuses tied to your developed city-state.",
-  "how_you_win": "Climb the economy, culture, and military tracks efficiently and claim achievements ahead of opponents to finish with the most points."
+  "why": "Victory points build from your positions on the Culture, Military, and Economy tracks, from completed Achievements, and from converting resources like Knowledge into Glory.",
+  "how_you_win": "Each turn pick two actions to push your city-state up its economy, military, and culture tracks, unlock achievements, and convert accumulated resources into points, ending with the highest overall total."
  },
  "similar": [
   "Trajan",

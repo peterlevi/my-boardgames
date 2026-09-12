@@ -19,9 +19,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Broad",
-  "why": "Points come from garden size, gems collected, purchased upgrades, and apprentice placement.",
-  "how_you_win": "Build the largest, most efficiently connected garden network and grab upgrade bonuses before opponents cut off your links."
+  "breadth": "Some",
+  "why": "Points accumulate continuously from claiming flower-garden majorities and tree effects, then get topped up by leftover gems and achievement bonuses at the end.",
+  "how_you_win": "Place flowers and trees to win control of garden groups and trigger their scoring, spend gems to advance apprentices toward useful upgrades, and finish with a higher running total than your opponents."
  },
  "similar": [
   "Azul",

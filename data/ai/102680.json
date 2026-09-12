@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Salad",
-  "why": "Six different tracks — building, trading, military, Senate, forum tiles, and Trajan tiles — each contribute points in different ways.",
-  "how_you_win": "You win by efficiently cycling your mancala bowls to fuel whichever combination of the six scoring tracks you can push furthest."
+  "why": "Trajan is a textbook Feld 'point salad': the mancala-style action selection feeds six largely independent tracks (building, trading, forum tiles, military, senate, Trajan tableau), each converting into VP in its own way.",
+  "how_you_win": "Cycle pieces between the six bowls of your tableau to trigger building, trading, military, senate, forum, and Trajan-tile actions, advancing on their respective tracks and cashing in tribune/province cards; the player with the highest combined score from all these tracks at game end wins."
  },
  "similar": [
   "Amerigo",

@@ -20,9 +20,9 @@
  },
  "win_criteria": "Most money",
  "scoring": {
-  "breadth": "Focused",
-  "why": "Credits earned from deliveries and survival bonuses, minus penalties for lost components and crew, decide the winner.",
-  "how_you_win": "You build a ship greedy enough to carry valuable cargo but sturdy enough to survive the flight, then cash in deliveries while losing less than your rivals to disasters."
+  "breadth": "Broad",
+  "why": "Across the multi-flight campaign, credits are gained from delivered goods and completed flights and lost to damage, so the final credit total decides the winner.",
+  "how_you_win": "Build a resilient ship each flight, haul valuable cargo through hazards while keeping your ship and crew intact, and finish the campaign with more credits than your rivals."
  },
  "similar": [
   "Space Alert",

@@ -18,9 +18,9 @@
  },
  "win_criteria": "Race to a finish",
  "scoring": {
-  "breadth": "Focused",
-  "why": "As in the original, the game ends the moment a player's fame and money markers meet",
-  "how_you_win": "You win by developing your province efficiently enough that your fame and wealth trackers converge before anyone else's."
+  "breadth": "Some",
+  "why": "As in the parent game, the race between the fame and money markers on opposing tracks ends the game the moment they intersect, so no separate final scoring occurs.",
+  "how_you_win": "Rolling and assigning dice, you develop your province, trade goods at market, and court palace personalities to advance your fame and money markers toward each other; the first player to make them meet wins."
  },
  "similar": [
   "Rajas of the Ganges",

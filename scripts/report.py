@@ -143,12 +143,19 @@ EM_DASH = "\u2014"
 # More interaction reads as the better end of the ramp.
 IX_PILL = {"High": "p3", "Medium": "p2", "Low": "p1"}
 BREADTH_PILL = {"Focused": "p3", "Some": "p2", "Broad": "p1", "Salad": "pw"}
-# The bare words read as jargon in a dropdown — say what each one means.
+# The stored values stay Focused/Some/Broad/Salad — that is what the opinion
+# database writes — but nobody says "breadth" about a board game, so the
+# column, the filter and its options all talk about point salad instead.
 BREADTH_LABELS = {
-    "Focused": "Focused — one main way to score",
-    "Some": "Some — a few ways to score",
-    "Broad": "Broad — many ways to score",
-    "Salad": "Salad — points from everywhere",
+    "Focused": "No, sharp focus",
+    "Some": "Just a touch",
+    "Broad": "Quite a lot",
+    "Salad": "Total point salad",
+}
+# Room in the column is tighter than in the dropdown.
+BREADTH_SHORT = {
+    "Focused": "No", "Some": "A touch",
+    "Broad": "Quite a lot", "Salad": "Total salad",
 }
 # Column headings must be short; the full phrase stays in the filter.
 WIN_SHORT = {
@@ -214,6 +221,17 @@ def meter_class(pct):
     if pct >= 50:
         return "m2"
     return "m1"
+
+
+def weight_bar(w):
+    """Weight reads faster as a colour than as a number: green for light,
+    red for heavy, the fill showing where it sits on BGG's 1-5 scale."""
+    if not w:
+        return EM_DASH
+    cls = "wt4" if w >= 4 else "wt3" if w >= 3 else "wt2" if w >= 2 else "wt1"
+    return (f'<span class="pct">{w:.2f}</span><span class="track">'
+            f'<i class="{cls}" style="width:{min(w / 5 * 100, 100):.0f}%"></i>'
+            f'</span>')
 
 
 def bar(pct):
@@ -407,7 +425,7 @@ def rows_html(data, a):
         if via:
             badges += f'<span class="tag exp" title="{esc(via)}">+EXP</span>'
         v = verdict_html(s, n)
-        weight = f'{g["w"]:.2f}' if g["w"] else EM_DASH
+        weight = weight_bar(g["w"])
         ai = g["ai"] or {}
         ix_level = ai.get("ixl") or g["ix"]
         ix_html = (f'<span class="tag {IX_PILL.get(ix_level, "p1")}"'
@@ -417,12 +435,19 @@ def rows_html(data, a):
                     f'{esc(WIN_SHORT.get(ai.get("wc"), ai.get("wc") or EM_DASH))}'
                     f'</span>')
         br = ai.get("br")
-        br_html = (f'<span class="tag {BREADTH_PILL.get(br, "p1")}">{br}</span>'
-                   if br else EM_DASH)
+        br_html = (f'<span class="tag {BREADTH_PILL.get(br, "p1")}"'
+                   f' title="Point salad: {esc(BREADTH_LABELS.get(br, br))}">'
+                   f'{BREADTH_SHORT.get(br, br)}</span>' if br else EM_DASH)
         who = g["ds"]
         designer = (f'<span title="{esc(", ".join(who))}">{esc(who[0])}'
                     + (f' <span class="more">+{len(who) - 1}</span>'
                        if len(who) > 1 else '') + '</span>') if who else EM_DASH
+        # Year and designer have their own columns on a wide screen and fold
+        # into a second line under the name when those columns are dropped.
+        meta = " · ".join(x for x in (str(g["y"] or ""),
+                                      ", ".join(who[:2]) + (f' +{len(who) - 2}'
+                                                            if len(who) > 2 else ""))
+                          if x)
         rank = g["rk"] if g["rk"] else EM_DASH
         inline = f'<span class="vinline">{v}</span>' if n else ""
         search = esc(f'{g["n"]} {g["y"] or ""}'.lower())
@@ -434,13 +459,14 @@ def rows_html(data, a):
             f'<td class="score">{bgg_hex(g)}</td>'
             f'<td class="score mine-col">{mine_hex(g)}</td>'
             f'<td class="gamecell">'
-            f'<span class="game">{esc(g["n"])}</span> '
-            f'<span class="yr">{g["y"] or ""}</span>{badges}{inline}</td>'
+            f'<span class="game">{esc(g["n"])}</span>{badges}{inline}'
+            f'<span class="meta">{meta}</span></td>'
+            f'<td class="num hide-md w-year-col">{g["y"] or EM_DASH}</td>'
+            f'<td class="hide-md designer">{designer}</td>'
             f'<td class="num hide-sm hide-s">{g["pl"]}</td>'
             f'<td class="num">{esc(g["t"])}</td>'
-            f'<td class="num hide-sm hide-xs">{weight}</td>'
+            f'<td class="num bar hide-sm hide-xs">{weight}</td>'
             f'<td class="hide-sm hide-xs">{ix_html}</td>'
-            f'<td class="hide-sm hide-md designer">{designer}</td>'
             f'<td class="hide-sm hide-lg c-win">{win_html}</td>'
             f'<td class="hide-sm hide-lg c-br">{br_html}</td>'
             f'<td class="num hide-sm c-atn j-verdict">{v}</td>'

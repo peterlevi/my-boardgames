@@ -77,6 +77,9 @@ the database is absent. `traits` are groupings of mechanics from
 `scripts/traits.py` — "has at least one of these" — not judgments.
 
 Tune those files or re-run `scripts/enrich.py --force`, then `build.py`.
+`--rescore` re-asks only the win condition and point-salad call and merges
+it into the existing entries, for when the classification rule changed
+rather than the game.
 
 ## Refreshing (network — needs the user's OK)
 

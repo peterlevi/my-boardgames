@@ -18,9 +18,9 @@
  },
  "win_criteria": "Most points, many sources",
  "scoring": {
-  "breadth": "Some",
-  "why": "Points come from several sources at once: each color's longest chain, oasis control, and largest enclosed empty area, so a well-rounded network usually beats one huge single-color snake.",
-  "how_you_win": "You win by building the most efficient network of camel trains that reaches oases and encloses territory while denying opponents the same opportunities."
+  "breadth": "Broad",
+  "why": "Points come from reaching oases, building the longest caravan line in each of five colors, enclosing empty desert regions, and small watering-hole bonus tiles, all kept hidden until the end.",
+  "how_you_win": "Place camel pieces to build connected caravan routes that reach oases, try to have the longest line of each color, and enclose sections of empty desert; whoever's hidden score totals highest at the end wins."
  },
  "similar": [
   "Tigris & Euphrates",

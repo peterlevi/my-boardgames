@@ -18,9 +18,9 @@
  },
  "win_criteria": "Special win condition",
  "scoring": {
-  "breadth": "Focused",
-  "why": "There's no point total; a player wins by fulfilling their faction's specific victory condition, such as the Chancellor retaining power or a challenger seizing it.",
-  "how_you_win": "You win by either holding onto the Chancellorship against challengers or by successfully overthrowing it and surviving as the new ruling power."
+  "breadth": "Some",
+  "why": "Victory is decided by whether the ruling faction (or a rebelling Exile/Citizen faction) satisfies that game's specific Vision requirement, usually tied to favor in certain banners, relics, or sites rather than a running point total.",
+  "how_you_win": "You jockey for military and political control of the map, and at the end of a Chronicle whichever faction currently holds power checks if it meets the randomly drawn Vision's condition; if it does the Chancellor/Dynasty wins, otherwise a rebel faction that met the requirement takes over instead."
  },
  "similar": [
   "Root",

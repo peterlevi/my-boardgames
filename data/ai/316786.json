@@ -21,8 +21,8 @@
  "win_criteria": "Most points, many sources",
  "scoring": {
   "breadth": "Broad",
-  "why": "Points accumulate from district construction, contracts fulfilled, temple advancement, and end-game bonuses.",
-  "how_you_win": "You win by efficiently converting dice into buildings and contract fulfillment to out-score opponents across multiple scoring categories."
+  "why": "Final score adds up district construction, contract fulfillment, temple/port progress, and end-game majority bonuses, each tracked somewhat independently.",
+  "how_you_win": "Use your worker and the dice you draft to build in the city's districts, fulfill contracts, and advance in the temple, then total all these separate point sources at the end for the highest score."
  },
  "similar": [
   "Teotihuacan",

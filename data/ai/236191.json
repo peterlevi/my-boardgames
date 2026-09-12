@@ -18,11 +18,11 @@
   "kind": "card drafting with poverty-dumping take-that",
   "detail": "Players draft from a shared row of cards, competing for the best buildings, and some cards let you dump poverty onto opponents, directly hurting their income; otherwise each player develops their own separate city tableau."
  },
- "win_criteria": "Most money",
+ "win_criteria": "Most points, one or two sources",
  "scoring": {
   "breadth": "Some",
-  "why": "The winner is whoever ends the game with the most money after repaying all loans, balancing income against accumulated poverty.",
-  "how_you_win": "You win by building an efficient income-generating tableau, managing poverty, and repaying your loans while ending with more cash than opponents."
+  "why": "Your score is essentially the printed value of the buildings you've constructed in your city, reduced by however much poverty you've generated relative to others, so it collapses to one main value offset by one penalty.",
+  "how_you_win": "Play cards to build up your city tableau and run it each round for income and effects while managing loans and the poverty you create; at the end, tally your buildings' point values minus poverty penalties, and the highest total wins."
  },
  "similar": [
   "Brass: Birmingham",

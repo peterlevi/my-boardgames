@@ -114,8 +114,12 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
   pointer-events:none; }
 .selbtn { display:flex; align-items:center; gap:8px; width:100%;
   cursor:pointer; text-align:left; white-space:nowrap; }
-.selbtn::after { content:"⌄"; margin-left:auto; color:var(--muted);
-  font-size:1.05em; line-height:0.7; }
+/* A drawn chevron rather than the "⌄" glyph, which sits low in its em box and
+   no amount of line-height centres reliably across fonts. */
+.selbtn::after { content:""; margin-left:auto; flex:none;
+  width:7px; height:7px; border-right:1.6px solid var(--muted);
+  border-bottom:1.6px solid var(--muted); border-radius:1px;
+  transform:translateY(-2px) rotate(45deg); }
 .sel.open .selbtn, .selbtn:focus-visible { outline:2px solid var(--accent);
   outline-offset:-1px; }
 .sellist { position:absolute; z-index:30; top:calc(100% + 4px); left:0;

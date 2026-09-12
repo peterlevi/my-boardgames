@@ -2,6 +2,7 @@
 """Normalise the cached XML into data/games.json.
 
     python3 scripts/build.py
+    python3 scripts/build.py --no-private   # leave price paid out
 
 Note: in BGG's XML most scalars live in a `value` attribute, not element
 text — `<playingtime value="90"/>`, `<averageweight value="3.86"/>`. Reading
@@ -13,6 +14,7 @@ uses that to let an expansion's player-count poll speak for its base game.
 """
 import json
 import re
+import sys
 import xml.etree.ElementTree as ET
 
 import interaction
@@ -45,11 +47,18 @@ def parse_item(it, is_expansion=False):
     st = it.find("statistics/ratings")
 
     rank = None
+    types = []
     if st is not None:
         for r in st.findall("ranks/rank"):
             if r.get("name") == "boardgame":
                 v = r.get("value")
                 rank = int(v) if v and v.isdigit() else None
+            elif r.get("type") == "family":
+                # BGG's own sections — Strategy, Family, Thematic and so on.
+                # A game is listed in one only if it is ranked there.
+                label = (r.get("friendlyname") or "").replace(" Rank", "").strip()
+                if label and r.get("value", "").isdigit():
+                    types.append(label)
 
     poll = {}
     for p in it.findall("poll"):
@@ -92,7 +101,7 @@ def parse_item(it, is_expansion=False):
     level, shared = interaction.classify(name, mechanics, categories)
     return dict(
         id=it.get("id"), name=name, year=num(attr(it, "yearpublished"), int),
-        rank=rank, is_expansion=is_expansion, expands=expands,
+        rank=rank, types=types, is_expansion=is_expansion, expands=expands,
         thumbnail=(it.findtext("thumbnail") or "").strip() or None,
         weight=num(attr(st, "averageweight")), average=num(attr(st, "average")),
         geek=num(attr(st, "bayesaverage")),
@@ -128,6 +137,40 @@ def load_ai():
             out[f.stem] = json.loads(f.read_text())
         except Exception:  # noqa: BLE001
             continue
+    return out
+
+
+def load_private():
+    """Price paid and acquisition date from a BGG collection CSV export.
+
+    BGG hands these out in the CSV you can download from your own collection
+    page but not through the XML API, which has no access to the private part
+    of a collection entry however it is authenticated. Drop the export at
+    data/collection.csv and the columns fill in.
+    """
+    f = ROOT / "data" / "collection.csv"
+    if not f.exists():
+        return {}
+    import csv
+    out = {}
+    with f.open(newline="", encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            oid = row.get("objectid")
+            if not oid or row.get("own") != "1":
+                continue
+            rec = {}
+            price = (row.get("pricepaid") or "").strip()
+            if price and price not in ("0.00", "0"):
+                try:
+                    rec["price"] = float(price)
+                except ValueError:
+                    pass
+                rec["currency"] = (row.get("pp_currency") or "").strip()
+            acq = (row.get("acquisitiondate") or "").strip()
+            if acq:
+                rec["acquired"] = acq[:10]
+            if rec:
+                out[oid] = rec
     return out
 
 
@@ -199,7 +242,75 @@ def collection_stats():
     return plays, mine, acquired, price, added
 
 
+def csv_rows():
+    """The owned rows of a BGG collection CSV export, if one is present."""
+    f = ROOT / "data" / "collection.csv"
+    if not f.exists():
+        return []
+    import csv
+    with f.open(newline="", encoding="utf-8") as fh:
+        return [r for r in csv.DictReader(fh) if r.get("own") == "1"]
+
+
+def counts_from(value):
+    """"3,4,5" -> [3, 4, 5]. BGG writes the recommendation summary this way."""
+    out = []
+    for part in (value or "").split(","):
+        part = part.strip().rstrip("+")
+        if part.isdigit():
+            out.append(int(part))
+    return out
+
+
+def games_from_csv(rows):
+    """Build the collection from the CSV export alone, for people who would
+    rather not hand the tool an API token.
+
+    The export carries the numbers — rank, ratings, weight, times, play counts
+    — and BGG's own summary of which player counts are best and which are
+    recommended, which is what the player-count filters actually need. What it
+    cannot carry is everything the /thing endpoint knows: mechanics,
+    categories, designers, the full poll with its percentages, descriptions
+    and images. Those parts of the report simply stay empty.
+    """
+    def num(v, cast=float):
+        try:
+            return cast(v)
+        except (TypeError, ValueError):
+            return None
+
+    games = []
+    for r in rows:
+        rank = num(r.get("rank"), int)
+        weight = num(r.get("avgweight"))
+        games.append(dict(
+            id=r.get("objectid"), name=r.get("objectname") or "",
+            year=num(r.get("yearpublished"), int),
+            rank=rank if rank else None,
+            types=[], weight=round(weight, 4) if weight else None,
+            average=num(r.get("average")), geek=num(r.get("baverage")),
+            ratings=None, owners=num(r.get("numowned"), int),
+            minplayers=num(r.get("minplayers"), int) or 0,
+            maxplayers=num(r.get("maxplayers"), int) or 0,
+            minplaytime=num(r.get("minplaytime"), int) or 0,
+            maxplaytime=num(r.get("maxplaytime"), int) or 0,
+            mechanics=[], categories=[], families=[], designers=[],
+            designer_ids={}, traits=[], videos=[], image=None, thumbnail=None,
+            description=None,
+            interaction=None, interaction_shared=None,
+            poll={}, best_at=counts_from(r.get("bggbestplayers")),
+            rec_at=counts_from(r.get("bggrecplayers")),
+            is_expansion=(r.get("itemtype") == "expansion"), expands=None,
+            source="csv",
+        ))
+    return games
+
+
 def main():
+    # Price paid is the one field here that is nobody else's business: it goes
+    # into data/games.json, which is committed, and into a report that is
+    # published. --no-private leaves it out of both.
+    keep_private = "--no-private" not in sys.argv
     # The collection exports say what is owned and which of it is an expansion;
     # the per-id detail files supply everything else. Driving the build from the
     # collection means a game you no longer own simply stops appearing.
@@ -218,7 +329,28 @@ def main():
         print(f"warning: {len(missing)} owned item(s) have no cached detail — "
               f"run scripts/fetch.py")
 
+    rows = csv_rows()
+    if not games and rows:
+        # No API cache at all: build what the CSV export can support.
+        games = games_from_csv(rows)
+        print(f"no cached BGG data — building from data/collection.csv "
+              f"({len(games)} items, no mechanics, poll percentages or images)")
+
     plays, mine, acquired, price, added = collection_stats()
+    private = load_private()
+    csv_plays, csv_rating = {}, {}
+    for r in rows:
+        oid = r.get("objectid")
+        try:
+            csv_plays[oid] = int(r.get("numplays") or 0)
+        except ValueError:
+            pass
+        try:
+            v = float(r.get("rating") or 0)
+            if v:
+                csv_rating[oid] = v
+        except ValueError:
+            pass
     played = load_plays()
     ai = load_ai()
     bgg_ids = load_bgg_ids()
@@ -231,10 +363,12 @@ def main():
                 {"name": n, "id": (bgg_ids.get((n or "").strip().lower()) or {}).get("id")}
                 for n in g["ai"]["similar"]
             ]
-        g["plays"] = plays.get(g["id"], 0)
-        g["my_rating"] = mine.get(g["id"])
-        g["acquired"] = acquired.get(g["id"])
-        g["price_paid"] = price.get(g["id"])
+        g["plays"] = plays.get(g["id"], csv_plays.get(g["id"], 0))
+        g["my_rating"] = mine.get(g["id"]) or csv_rating.get(g["id"])
+        priv = private.get(g["id"], {})
+        g["acquired"] = priv.get("acquired") or acquired.get(g["id"])
+        g["price_paid"] = priv.get("price") if keep_private else None
+        g["currency"] = priv.get("currency") if keep_private else None
         g["added"] = added.get(g["id"])
         g["last_played"] = (played.get(g["id"]) or {}).get("last") or None
 

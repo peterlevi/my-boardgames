@@ -1,6 +1,9 @@
 # Real credentials — never commit
 credentials.env
 
+# A BGG collection CSV export: it carries what you paid for each game
+data/collection.csv
+
 # Python
 __pycache__/
 *.pyc

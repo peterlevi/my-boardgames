@@ -43,9 +43,10 @@ def thumb_uri(game):
 TAG_KINDS = [
     ("trait", "traits", "trait"),
     ("category", "categories", "cat"),
-    ("mechanic", "mechanics", "mech"),
+    ("mechanism", "mechanics", "mech"),
     ("designer", "designers", "designer"),
     ("family", "families", "family"),
+    ("type", "types", "type"),
 ]
 
 # BGG families are a long tail of one-offs and housekeeping; anything appearing
@@ -113,7 +114,8 @@ def compact(games, tag_idx, inline=True):
             "pl": g["plays"], "ds": g["designers"],
             "dsid": g.get("designer_ids") or {},
             "lp": g.get("last_played"), "acq": g.get("acquired"),
-            "pp": g.get("price_paid"), "add": g.get("added"),
+            "pp": g.get("price_paid"), "ppc": g.get("currency"),
+            "add": g.get("added"),
             "rt": g["ratings"], "ow": g["owners"],
             "de": (g["description"] or "")[:900],
             "mn": g["minplayers"], "mx": g["maxplayers"],
@@ -121,8 +123,10 @@ def compact(games, tag_idx, inline=True):
             "img": g.get("image"), "vid": g.get("videos") or [],
             "gal": load_gallery(g["id"], g.get("image")),
             "ix": g["interaction"], "exp": 1 if g["is_expansion"] else 0,
-            "of": g["expands"], "t": playtime(g),
+            "of": g["expands"] or [], "t": playtime(g),
             "top": max((v[0] for v in poll.values()), default=0),
+            "bestAt": g.get("best_at") or [],
+            "recAt": g.get("rec_at") or [],
             "poll": poll,
             "tg": sorted(tag_idx[(kind, t)]
                          for kind, field, _ in TAG_KINDS
@@ -181,6 +185,13 @@ def stats_at(g, n):
     """Mirror of statsAt() in the page script."""
     d = g["poll"].get(str(n))
     if not d:
+        # A CSV-built collection has no poll, only BGG's summary of which
+        # counts are best and which are recommended — enough for the verdict,
+        # not enough for a percentage.
+        best, rec = g.get("bestAt") or [], g.get("recAt") or []
+        if n in best or n in rec:
+            return {"best": None, "total": None, "bestPct": None, "appr": None,
+                    "isBest": n in best, "good": n in rec or n in best}
         return None
     b, r, x = d
     total = b + r + x
@@ -197,6 +208,8 @@ def qualifies(s, mode):
     if mode == "best":
         return s["isBest"]
     if mode == "good":
+        if s["bestPct"] is None:
+            return bool(s.get("good"))
         return s["isBest"] or s["bestPct"] >= 50
     return True
 
@@ -237,6 +250,8 @@ def weight_bar(w):
 
 
 def bar(pct):
+    if pct is None:
+        return EM_DASH
     return (f'<span class="pct">{pct:.0f}%</span><span class="track">'
             f'<i class="{meter_class(pct)}" '
             f'style="width:{min(pct, 100):.0f}%"></i></span>')
@@ -350,7 +365,9 @@ def verdict_html(s, mode_n):
         return '<span class="dot">—</span>'
     if s["isBest"]:
         return '<span class="tag best">Best</span>'
-    if s["bestPct"] >= 50:
+    # A CSV-built collection has no percentage, only BGG's recommendation.
+    good = s.get("good") if s["bestPct"] is None else s["bestPct"] >= 50
+    if good:
         return '<span class="tag good">Good</span>'
     return '<span class="dot">plays</span>'
 
@@ -448,6 +465,12 @@ def rows_html(data, a):
         # Designer" column choice and for widths that drop the column.
         who_short = (esc(", ".join(who[:2]))
                      + (f' +{len(who) - 2}' if len(who) > 2 else "")) if who else ""
+        # Empty parts are left out entirely: the separator is drawn by CSS
+        # between them, so an empty span would leave a stray dot behind.
+        meta_html = ((f'<span class="m-yr">{g["y"]}</span>' if g["y"] else "")
+                     + (f'<span class="m-ds">{who_short}</span>' if who_short else ""))
+        price_html = (f'{g["pp"]:.2f}&nbsp;{esc(g.get("ppc") or "")}'.strip()
+                      if g.get("pp") else EM_DASH)
         rank = g["rk"] if g["rk"] else EM_DASH
         inline = f'<span class="vinline">{v}</span>' if n else ""
         search = esc(f'{g["n"]} {g["y"] or ""}'.lower())
@@ -461,9 +484,7 @@ def rows_html(data, a):
             f'<td class="gamecell c-n" data-col="n">'
             f'<span class="game">{esc(g["n"])}</span> '
             f'<span class="yr">{g["y"] or ""}</span>{badges}{inline}'
-            f'<span class="meta"><span class="m-yr">{g["y"] or ""}</span>'
-            f'<span class="m-sep"> · </span>'
-            f'<span class="m-ds">{who_short}</span></span></td>'
+            f'<span class="meta">{meta_html}</span></td>'
             f'<td class="num c-y" data-col="y">{g["y"] or EM_DASH}</td>'
             f'<td class="hide-md designer c-ds" data-col="ds">{designer}</td>'
             f'<td class="num hide-sm hide-s c-pl" data-col="pl">{g["pl"]}</td>'
@@ -473,7 +494,7 @@ def rows_html(data, a):
             f'<td class="num hide-sm c-acq" data-col="acq">{g.get("acq") or EM_DASH}</td>'
             f'<td class="num hide-sm c-lp" data-col="lp">{g.get("lp") or EM_DASH}</td>'
             f'<td class="num hide-sm c-add" data-col="add">{g.get("add") or EM_DASH}</td>'
-            f'<td class="num hide-sm c-pp" data-col="pp">{esc(g.get("pp") or EM_DASH)}</td>'
+            f'<td class="num hide-sm c-pp" data-col="pp">{price_html}</td>'
             f'<td class="hide-sm hide-lg c-win" data-col="win">{win_html}</td>'
             f'<td class="hide-sm hide-lg c-breadth" data-col="breadth">{br_html}</td>'
             f'<td class="num hide-sm c-verdict j-verdict" data-col="verdict">{v}</td>'
@@ -613,7 +634,8 @@ def main():
             .replace("/*__TAGS__*/", json.dumps(tags, ensure_ascii=False,
                                                 separators=(",", ":")))
             .replace("__ATN__", f"At {a.players}p" if a.players else "At N")
-            .replace("__TABLECLASS__", "" if a.players else "mode-any")
+            .replace("__TABLECLASS__",
+                     ("gm-ds" if a.players else "mode-any gm-ds"))
             .replace("__REPO_URL__", esc(repo_url()))
             .replace("__STAMP__", dt.date.today().isoformat())
             .replace("__NGAMES__", str(sum(1 for g in data if not g["exp"])))

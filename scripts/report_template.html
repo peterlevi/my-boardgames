@@ -189,6 +189,7 @@ th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
 .tagbox .tkind.trait { color:var(--best); }
 .tagbox .tkind.cat { color:var(--accent); }
 .tagbox .tkind.designer { color:var(--warn); }
+.tagbox .tkind.type { color:var(--m3); }
 .tagbox .tcount { color:var(--muted); font-variant-numeric:tabular-nums;
   text-align:right; }
 .tagbox .tot { opacity:.62; font-size:.92em; }
@@ -252,7 +253,7 @@ th.w-date { width:106px; } th.w-price { width:96px; }
 th.w-year { width:64px; }
 th.w-atn { width:64px; } th.w-pct { width:66px; }
 th.w-ratings { width:74px; }
-th.w-win { width:124px; } th.w-br { width:104px; }
+th.w-win { width:146px; } th.w-br { width:104px; }
 /* The poll columns read a player count, so with the count at "Any" all three
    are dashes. The table swaps them for the two fields that always have a
    value — what wins the game, and how broadly it scores. */
@@ -272,11 +273,13 @@ table.off-appr .c-appr, table.off-rt .c-rt { display:none; }
    piece by piece, so one rule set covers "year and designer", "designer only"
    and the width fallback. */
 .gamecell .yr, .gamecell .meta,
-.gamecell .m-yr, .gamecell .m-sep, .gamecell .m-ds { display:none; }
+.gamecell .m-yr, .gamecell .m-ds { display:none; }
 table.gm-year .gamecell .yr { display:inline; }
 table.gm-yeards .gamecell .meta, table.gm-ds .gamecell .meta { display:block; }
-table.gm-yeards .gamecell .m-yr, table.gm-yeards .gamecell .m-sep,
-table.gm-yeards .gamecell .m-ds, table.gm-ds .gamecell .m-ds { display:inline; }
+table.gm-yeards .gamecell .m-yr, table.gm-yeards .gamecell .m-ds,
+table.gm-ds .gamecell .m-ds { display:inline; }
+/* The separator belongs to whichever pair is actually on screen. */
+table.gm-yeards .gamecell .m-yr + .m-ds::before { content:" · "; }
 /* The designer column goes for width long before the name is in trouble, so
    it falls back into the cell rather than vanishing. */
 @media (max-width:1180px) {
@@ -706,9 +709,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <div class="colmenu" hidden>
       <p class="colhead">Game column</p>
       <label><input type="radio" name="gamemode" value="name"> Game</label>
-      <label><input type="radio" name="gamemode" value="year" checked>
+      <label><input type="radio" name="gamemode" value="year">
         Game, Year</label>
-      <label><input type="radio" name="gamemode" value="ds">
+      <label><input type="radio" name="gamemode" value="ds" checked>
         Game, Designer</label>
       <label><input type="radio" name="gamemode" value="yeards">
         Game, Year, Designer</label>
@@ -792,6 +795,9 @@ function el(id) { return document.getElementById(id); }
 
 // 213 mechanics and categories, rendered once and then shown or hidden by the
 // search box; rebuilding the list on every keystroke would be wasteful.
+var KIND_LABEL = { trait: 'trait', cat: 'category', mech: 'mechanism',
+  designer: 'designer', family: 'family', type: 'type' };
+
 var tagBox = document.getElementById('tagbox');
 var tagRows = TAGS.map(function (t, i) {
   var label = document.createElement('label');
@@ -804,9 +810,7 @@ var tagRows = TAGS.map(function (t, i) {
     '<span class="tdesc"></span>';
   label.querySelector('.tname').textContent = t.n;
   var kindEl = label.querySelector('.tkind');
-  kindEl.textContent = { cat: 'category', mech: 'mechanic',
-                         trait: 'trait', designer: 'designer',
-                         family: 'family' }[t.k] || t.k;
+  kindEl.textContent = KIND_LABEL[t.k] || t.k;
   kindEl.className = 'tkind ' + t.k;
   label.querySelector('.tcount').innerHTML =
     t.c + ' <span class="tot">of ' + t.c + '</span>';
@@ -858,11 +862,18 @@ function recountTags(visibleIdx) {
  *  always be seen and undone. */
 function applyTagVisibility() {
   var q = document.getElementById('tagsearch').value.trim().toLowerCase();
+  // Every word has to land somewhere, so "worker german" finds a property that
+  // is both, and typing a kind — trait, mechanism, category, type, designer,
+  // family — brings up everything of that kind.
+  var words = q ? q.split(/\s+/) : [];
   var shown = 0;
   for (var i = 0; i < tagRows.length; i++) {
     var t = TAGS[i], row = tagRows[i], on = row.firstChild.checked;
-    var matches = !q || t.n.toLowerCase().indexOf(q) !== -1 ||
-                  t.d.toLowerCase().indexOf(q) !== -1;
+    var hay = (t.n + ' ' + t.d + ' ' + (KIND_LABEL[t.k] || t.k)).toLowerCase();
+    var matches = true;
+    for (var wi = 0; wi < words.length; wi++) {
+      if (hay.indexOf(words[wi]) === -1) { matches = false; break; }
+    }
     var reachable = row.dataset.now === undefined || +row.dataset.now > 0;
     var hit = on || (matches && reachable);
     row.hidden = !hit;
@@ -914,7 +925,17 @@ function applyDefaults() {
 /** Aggregate the poll for one game at n players, or null if nobody voted. */
 function statsAt(g, n) {
   var d = g.poll[n];
-  if (!d) return null;
+  if (!d) {
+    // A CSV-built collection has no poll, only BGG's own summary of best and
+    // recommended counts: enough for the verdict, not for a percentage.
+    var best = g.bestAt || [], rec = g.recAt || [];
+    if (best.indexOf(n) !== -1 || rec.indexOf(n) !== -1) {
+      return { best: null, total: null, bestPct: null, appr: null,
+               isBest: best.indexOf(n) !== -1,
+               good: rec.indexOf(n) !== -1 || best.indexOf(n) !== -1 };
+    }
+    return null;
+  }
   var b = d[0], r = d[1], x = d[2], total = b + r + x;
   if (!total) return null;
   return { best: b, total: total, bestPct: 100 * b / total,
@@ -924,7 +945,9 @@ function statsAt(g, n) {
 function qualifies(s, mode) {
   if (!s) return false;
   if (mode === 'best') return s.isBest;
-  if (mode === 'good') return s.isBest || s.bestPct >= 50;
+  if (mode === 'good') {
+    return s.bestPct === null ? !!s.good : (s.isBest || s.bestPct >= 50);
+  }
   return true;
 }
 
@@ -1079,7 +1102,7 @@ function sortRows(rows) {
     }
   }
   var text = sortKey === 'n' || sortKey === 'ds' || sortKey === 'win' ||
-             sortKey === 'acq' || sortKey === 'lp';
+             sortKey === 'acq' || sortKey === 'lp' || sortKey === 'add';
   rows.sort(function (a, b) {
     var x = get(a), y = get(b);
     // Missing values (unranked, unrated, never played) sink to the bottom in
@@ -1116,6 +1139,7 @@ function meterClass(p) {
 }
 
 function bar(p) {
+  if (p === null || p === undefined) return '<span class="dot">&mdash;</span>';
   return '<span class="pct">' + p.toFixed(0) + '%</span>' +
          '<span class="track"><i class="' + meterClass(p) + '" style="width:' +
          Math.min(p, 100).toFixed(0) + '%"></i></span>';
@@ -1124,7 +1148,8 @@ function bar(p) {
 function verdictHtml(s, n) {
   if (!n || !s) return '<span class="dot">&mdash;</span>';
   if (s.isBest) return '<span class="tag p3">Best</span>';
-  if (s.bestPct >= 50) return '<span class="tag p2">Good</span>';
+  var good = s.bestPct === null ? !!s.good : s.bestPct >= 50;
+  if (good) return '<span class="tag p2">Good</span>';
   return '<span class="tag p1">plays</span>';
 }
 
@@ -1817,8 +1842,8 @@ document.addEventListener('click', function (e) {
  *  it carries is the separate "Game column" choice. */
 var COLUMNS = [
   { k: 'th', n: 'Cover' }, { k: 'rk', n: 'Rank' }, { k: 'av', n: 'BGG' },
-  { k: 'my', n: 'Mine' }, { k: 'y', n: 'Year', off: true },
-  { k: 'ds', n: 'Designer' }, { k: 'pl', n: 'Plays' },
+  { k: 'my', n: 'Mine' }, { k: 'y', n: 'Year' },
+  { k: 'ds', n: 'Designer', off: true }, { k: 'pl', n: 'Plays' },
   { k: 'tmax', n: 'Time' }, { k: 'w', n: 'Weight' }, { k: 'ix', n: 'Interact' },
   { k: 'acq', n: 'Acquired', off: true },
   { k: 'lp', n: 'Last played', off: true },
@@ -1831,8 +1856,8 @@ var COLUMNS = [
 var DEFAULT_ORDER = ['th', 'rk', 'av', 'my', 'n', 'y', 'ds', 'pl', 'tmax', 'w',
   'ix', 'acq', 'lp', 'add', 'pp', 'win', 'breadth', 'verdict', 'bestPct',
   'appr', 'rt'];
-var COLKEY = 'bgg-cols-v2';
-var colState = {}, gameMode = 'year', colOrder = DEFAULT_ORDER.slice();
+var COLKEY = 'bgg-cols-v3';
+var colState = {}, gameMode = 'ds', colOrder = DEFAULT_ORDER.slice();
 
 function colDefaults() {
   var out = {};
@@ -1923,7 +1948,7 @@ function applyOrder() {
 
 function resetCols() {
   colState = colDefaults();
-  gameMode = 'year';
+  gameMode = 'ds';
   colOrder = DEFAULT_ORDER.slice();
   saveCols();
   buildColList();

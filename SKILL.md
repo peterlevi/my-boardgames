@@ -40,6 +40,12 @@ a parse error there and silently disables everything, and `report.py` refuses
 to write unbalanced markup, so a stray tag fails the build rather than
 rendering wrong.
 
+Without a BGG token, drop a collection CSV export at `data/collection.csv`:
+`build.py` falls back to it (no mechanics, poll percentages or images, but
+ranks, ratings, weights, play counts and BGG's best/recommended player counts
+all survive) and `sync.py` skips every network step. With a token, the same
+file is still the only source of **price paid** and **acquisition date**.
+
 `scripts/sync.py` runs the whole pipeline: fetch → plays → thumbs → gallery →
 build → enrich → bggids → report. `plays.py` caches the play log
 (`data/plays.json`), which is where "last played" comes from — the collection

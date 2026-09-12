@@ -202,6 +202,31 @@ python3 scripts/build.py
 python3 scripts/report.py -o reports/collection.html
 ```
 
+## Without an API token: the CSV route
+
+BGG's XML API needs a token. If you would rather not have one, export your
+collection from BGG (Collection → *Download* → CSV) and drop it at
+`data/collection.csv`:
+
+```bash
+cp ~/Downloads/collection.csv data/collection.csv
+python3 scripts/sync.py         # notices there is no token and builds anyway
+```
+
+The export carries the numbers — rank, BGG and your own rating, weight, play
+counts, times, player counts, price paid — plus BGG's own summary of which
+counts are *best* and which are *recommended*, which is what the player-count
+filters actually need. What it cannot carry is everything the `/thing`
+endpoint knows: mechanics, categories, designers, the poll percentages,
+descriptions and images. Those columns and filters stay empty.
+
+The same file is worth dropping in even when you do have a token, because it
+is the only way to get **price paid** and **acquisition date**: BGG keeps
+those in the private part of a collection entry and the API never returns
+them, however it is authenticated. `data/collection.csv` is gitignored — it
+says what you paid for every game — but note that a price that reaches
+`data/games.json` is committed and published with the report.
+
 ## How it works
 
 ```

@@ -28,6 +28,7 @@ A routine resync is cheap: two collection requests plus one request per twenty
 *new* games, so an unchanged collection costs three requests in total. Run it
 whenever you have logged plays, changed ratings, or bought something.
 """
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -42,9 +43,27 @@ def run(script, *args):
         raise SystemExit(f"{script} failed ({r.returncode})")
 
 
+def csv_only():
+    """No credentials but a CSV export present: everything network is skipped.
+
+    A BGG collection CSV carries the numbers and BGG's own summary of which
+    player counts are best or recommended, which is enough for the report's
+    main question. It has no mechanics, poll percentages or images, so those
+    parts stay empty.
+    """
+    from common import ROOT
+    if (ROOT / "credentials.env").exists() or os.environ.get("BGG_TOKEN"):
+        return False
+    return (ROOT / "data" / "collection.csv").exists()
+
+
 def main():
     argv = sys.argv[1:]
     full = "--full" in argv
+    if csv_only() and "--no-fetch" not in argv:
+        print("No BGG token, but data/collection.csv is here — building from "
+              "the export alone.")
+        argv = argv + ["--no-fetch"]
     if "--no-fetch" not in argv:
         run("fetch.py", *(["--full"] if full else []))
         run("plays.py")

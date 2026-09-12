@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head>
+<html lang="en" class="__ROOTCLASS__"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Board game collection</title>
@@ -147,24 +147,42 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
 .iconbtn { background:none; border:0; padding:4px; cursor:pointer;
   color:var(--muted); display:flex; align-items:center; border-radius:6px; }
 .iconbtn:hover, .colpick.open .iconbtn { color:var(--ink); background:var(--panel); }
+/* Two columns: what the Game cell carries on the left, with "Reset to
+   default" parked at its foot, and the column list on the right. */
 .colmenu { position:absolute; z-index:30; top:calc(100% + 6px); right:0;
   background:var(--panel); border:1px solid var(--line); border-radius:9px;
   box-shadow:0 10px 28px rgba(0,0,0,.14);
-  padding:8px 4px; max-height:70vh; overflow-y:auto; min-width:230px; }
+  padding:8px 4px; max-height:70vh; overflow-y:auto;
+  /* An absolutely positioned box shrinks to fit the space its anchor leaves —
+     which here is the width of a 25px button — so the width has to be stated
+     rather than inferred. */
+  width:max-content; max-width:calc(100vw - 24px);
+  display:grid; grid-template-columns:max-content max-content; gap:0 10px; }
+.colcol { display:flex; flex-direction:column; min-width:0; }
+.colcol + .colcol { border-left:1px solid var(--line); padding-left:10px; }
+@media (max-width:560px) {
+  .colmenu { grid-template-columns:max-content; }
+  .colcol + .colcol { border-left:0; padding-left:0;
+    border-top:1px solid var(--line); margin-top:6px; padding-top:6px; }
+}
 :root:not([data-theme="light"]) .colmenu { box-shadow:0 10px 28px rgba(0,0,0,.5); }
 .colhint { text-transform:none; letter-spacing:0; opacity:.8; }
-.colfoot { margin:6px 10px 2px; }
+.colfoot { margin:auto 8px 2px; padding-top:10px; }
 .colfoot .link { font-size:.8rem; padding:0; }
 .colmenu label.locked { opacity:.45; }
 /* The header being dragged, and where it would land. */
 th.dragging { opacity:.45; }
 th.dropbefore { box-shadow:inset 2px 0 0 var(--accent); }
 th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
-.colmenu label { display:flex; align-items:center; gap:8px; padding:5px 10px;
-  border-radius:6px; cursor:pointer; font-size:.85rem; white-space:nowrap; }
+.colmenu label { display:flex; align-items:center; gap:7px; padding:3px 8px;
+  border-radius:6px; cursor:pointer; font-size:.8rem; white-space:nowrap; }
+/* Eighteen columns in one list runs off the bottom of the screen, so the list
+   itself splits in two — three columns of menu in all. */
+#collist { columns:2; column-gap:12px; }
+#collist label { break-inside:avoid; }
 .colmenu label:hover { background:var(--bg); }
 .colmenu input { margin:0; }
-.colhead { margin:6px 10px 3px; font-size:.66rem; text-transform:uppercase;
+.colhead { margin:6px 8px 3px; font-size:.64rem; text-transform:uppercase;
   letter-spacing:.06em; color:var(--muted); }
 .colhead:first-child { margin-top:2px; }
 
@@ -257,35 +275,39 @@ th.w-win { width:146px; } th.w-br { width:104px; }
 /* The poll columns read a player count, so with the count at "Any" all three
    are dashes. The table swaps them for the two fields that always have a
    value — what wins the game, and how broadly it scores. */
-table.mode-any .c-verdict, table.mode-any .c-bestPct, table.mode-any .c-appr,
-table:not(.mode-any) .c-win, table:not(.mode-any) .c-breadth { display:none; }
+/* All of this hangs off the root element, set before the page paints: the
+   server writes the defaults into <html> and a script in the head swaps in
+   whatever this browser last chose. Hanging it off the table instead meant
+   the table painted with every column and then jumped when the page script
+   finally ran — most of a second later on a slow machine. */
+.mode-any .c-verdict, .mode-any .c-bestPct, .mode-any .c-appr,
+:root:not(.mode-any) .c-win, :root:not(.mode-any) .c-breadth { display:none; }
 /* The column picker. One class per hidden column on the table beats setting
    display on 265 rows' worth of cells. */
-table.off-th .c-th, table.off-rk .c-rk, table.off-av .c-av, table.off-my .c-my,
-table.off-y .c-y, table.off-ds .c-ds, table.off-pl .c-pl, table.off-tmax .c-tmax,
-table.off-w .c-w, table.off-ix .c-ix, table.off-acq .c-acq, table.off-lp .c-lp, table.off-ed .c-ed,
-table.off-pp .c-pp,
-table.off-win .c-win, table.off-breadth .c-breadth,
-table.off-verdict .c-verdict, table.off-bestPct .c-bestPct,
-table.off-appr .c-appr, table.off-rt .c-rt { display:none; }
+.off-th .c-th, .off-rk .c-rk, .off-av .c-av, .off-my .c-my,
+.off-y .c-y, .off-ds .c-ds, .off-pl .c-pl, .off-tmax .c-tmax,
+.off-w .c-w, .off-ix .c-ix, .off-acq .c-acq, .off-lp .c-lp, .off-ed .c-ed,
+.off-pp .c-pp, .off-win .c-win, .off-breadth .c-breadth,
+.off-verdict .c-verdict, .off-bestPct .c-bestPct,
+.off-appr .c-appr, .off-rt .c-rt { display:none; }
 
 /* What the Game column itself carries. Anything on the second line is hidden
    piece by piece, so one rule set covers "year and designer", "designer only"
    and the width fallback. */
 .gamecell .yr, .gamecell .meta,
 .gamecell .m-yr, .gamecell .m-ds { display:none; }
-table.gm-year .gamecell .yr { display:inline; }
-table.gm-yeards .gamecell .meta, table.gm-ds .gamecell .meta { display:block; }
-table.gm-yeards .gamecell .m-yr, table.gm-yeards .gamecell .m-ds,
-table.gm-ds .gamecell .m-ds { display:inline; }
+.gm-year .gamecell .yr { display:inline; }
+.gm-yeards .gamecell .meta, .gm-ds .gamecell .meta { display:block; }
+.gm-yeards .gamecell .m-yr, .gm-yeards .gamecell .m-ds,
+.gm-ds .gamecell .m-ds { display:inline; }
 /* The separator belongs to whichever pair is actually on screen. */
-table.gm-yeards .gamecell .m-yr + .m-ds::before { content:" · "; }
+.gm-yeards .gamecell .m-yr + .m-ds::before { content:" · "; }
 /* The designer column goes for width long before the name is in trouble, so
    it falls back into the cell rather than vanishing. */
 @media (max-width:1180px) {
-  table:not(.off-ds) .gamecell .meta,
-  table:not(.off-ds) .gamecell .m-ds { display:inline; }
-  table:not(.off-ds) .gamecell .meta { display:block; }
+  :root:not(.off-ds) .gamecell .meta,
+  :root:not(.off-ds) .gamecell .m-ds { display:inline; }
+  :root:not(.off-ds) .gamecell .meta { display:block; }
 }
 td.gamecell { min-width:0; }
 a.game { overflow-wrap:anywhere; }
@@ -531,6 +553,41 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .vinline { display:inline-block; margin-left:6px; vertical-align:middle; }
 }
 </style>
+<script>
+/* Before the body parses: put this browser's saved column choice on <html>,
+   so the table paints once, in its final shape. The server has already
+   written the defaults there for anyone with scripts off. */
+(function () {
+  var KEY = 'bgg-cols-v5';
+  var OFF_BY_DEFAULT = { y: 1, acq: 1, lp: 1, ed: 1, pp: 1 };
+  var ALL = ['th', 'rk', 'av', 'my', 'y', 'ds', 'pl', 'tmax', 'w', 'ix',
+             'acq', 'lp', 'ed', 'pp', 'win', 'breadth', 'verdict', 'rt'];
+  try {
+    var saved = JSON.parse(window.localStorage.getItem(KEY) || 'null');
+    if (!saved) return;
+    var root = document.documentElement;
+    var keep = [];
+    // Whatever the server wrote about player mode stays; the rest is ours.
+    (root.className || '').split(/\s+/).forEach(function (c) {
+      if (c === 'mode-any') keep.push(c);
+    });
+    keep.push('gm-' + (saved.game || 'ds'));
+    ALL.forEach(function (k) {
+      var on = saved.cols && typeof saved.cols[k] === 'boolean'
+        ? saved.cols[k] : !OFF_BY_DEFAULT[k];
+      if (!on) keep.push('off-' + k);
+    });
+    if (saved.cols && saved.cols.verdict === false) {
+      keep.push('off-bestPct');
+      keep.push('off-appr');
+    }
+    var game = saved.game || 'ds';
+    if (game === 'year' || game === 'yeards') keep.push('off-y');
+    if (game === 'ds' || game === 'yeards') keep.push('off-ds');
+    root.className = keep.join(' ');
+  } catch (e) { /* storage off: the server's defaults stand */ }
+})();
+</script>
 </head><body>
 <div class="wrap">
 <input type="checkbox" id="legendtoggle">
@@ -710,24 +767,28 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         ><path fill="currentColor" d="M1.5 2h3v12h-3V2Zm5 0h3v12h-3V2Zm5 0h3v12h-3V2Z"
         /></svg></button>
     <div class="colmenu" hidden>
-      <p class="colhead">Game column</p>
-      <label><input type="radio" name="gamemode" value="name"> Game</label>
-      <label><input type="radio" name="gamemode" value="year">
-        Game, Year</label>
-      <label><input type="radio" name="gamemode" value="ds" checked>
-        Game, Designer</label>
-      <label><input type="radio" name="gamemode" value="yeards">
-        Game, Year, Designer</label>
-      <p class="colhead">Columns <span class="colhint">drag a header to
-        reorder</span></p>
-      <div id="collist"></div>
-      <p class="colfoot"><button type="button" class="link" id="colsreset"
-        >Reset to default</button></p>
+      <div class="colcol">
+        <p class="colhead">Game column</p>
+        <label><input type="radio" name="gamemode" value="name"> Game</label>
+        <label><input type="radio" name="gamemode" value="year">
+          Game, Year</label>
+        <label><input type="radio" name="gamemode" value="ds" checked>
+          Game, Designer</label>
+        <label><input type="radio" name="gamemode" value="yeards">
+          Game, Year, Designer</label>
+        <p class="colfoot"><button type="button" class="link" id="colsreset"
+          >Reset to default</button></p>
+      </div>
+      <div class="colcol">
+        <p class="colhead">Columns <span class="colhint">drag a header to
+          reorder</span></p>
+        <div id="collist"></div>
+      </div>
     </div>
   </span></div>
 
 <div class="scroll">
-<table class="__TABLECLASS__">
+<table>
   <thead><tr>
     <th class="thumb c-th w-thumb" data-col="th">Cover</th>
     <th class="num hide-sm c-rk w-rank" data-k="rk" data-col="rk">Rank</th>
@@ -780,6 +841,7 @@ const TAGS = /*__TAGS__*/;
 var ROWS = [];
 var TBODY = document.getElementById('rows');
 var TABLE = TBODY.parentNode;
+var ROOT = document.documentElement;
 [].forEach.call(TBODY.querySelectorAll('tr'), function (tr) {
   ROWS[+tr.getAttribute('data-i')] = tr;
 });
@@ -1912,7 +1974,7 @@ function applyCols() {
     if (!colState[c.k] || swallowedByGame(c.k)) cls.push('off-' + c.k);
   });
   if (!colState.verdict) { cls.push('off-bestPct'); cls.push('off-appr'); }
-  TABLE.setAttribute('data-cols', cls.join(' '));
+  ROOT.setAttribute('data-cols', cls.join(' '));
   paintTableClass();
   var on = COLUMNS.filter(function (c) {
     return colState[c.k] && !swallowedByGame(c.k);
@@ -1928,10 +1990,11 @@ function applyCols() {
   });
 }
 
-/** The player-count swap and the picker both live in the table's class list. */
+/** The player-count swap and the picker both live on the root element, which
+ *  is where the head script has already put this browser's choice. */
 function paintTableClass() {
   var n = +F.players.value;
-  TABLE.className = (n ? '' : 'mode-any ') + (TABLE.getAttribute('data-cols') || '');
+  ROOT.className = (n ? '' : 'mode-any ') + (ROOT.getAttribute('data-cols') || '');
 }
 
 /** Put every row's cells in the chosen order. appendChild moves nodes, so one

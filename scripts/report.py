@@ -548,6 +548,23 @@ def check_balanced(html):
         raise SystemExit("unbalanced markup: " + "; ".join(problems[:5]))
 
 
+# Columns that start hidden. The page script has the same list; both have to
+# agree or the table paints in one shape and settles into another.
+OFF_BY_DEFAULT = ("y", "acq", "lp", "ed", "pp")
+
+
+def root_class(a):
+    """The default column state, written into <html> so the first paint is
+    already right — for a browser with scripts blocked, and as the base the
+    head script swaps out when this browser has chosen something else."""
+    cls = ["gm-ds"] + [f"off-{k}" for k in OFF_BY_DEFAULT]
+    if not a.players:
+        cls.insert(0, "mode-any")
+    # "Game, Designer" carries the designer, so its own column stands down.
+    cls.append("off-ds")
+    return " ".join(cls)
+
+
 def repo_url():
     """The GitHub link in the corner, read from the checkout's own origin so a
     fork points at itself. Falls back to this project's home."""
@@ -634,8 +651,7 @@ def main():
             .replace("/*__TAGS__*/", json.dumps(tags, ensure_ascii=False,
                                                 separators=(",", ":")))
             .replace("__ATN__", f"At {a.players}p" if a.players else "At N")
-            .replace("__TABLECLASS__",
-                     ("gm-ds" if a.players else "mode-any gm-ds"))
+            .replace("__ROOTCLASS__", root_class(a))
             .replace("__REPO_URL__", esc(repo_url()))
             .replace("__STAMP__", dt.date.today().isoformat())
             .replace("__NGAMES__", str(sum(1 for g in data if not g["exp"])))

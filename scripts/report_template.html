@@ -796,6 +796,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     asked for directly. Treat them as a rough sort, not fact; where the
     database has nothing, Interaction falls back to a rule over the game's
     mechanics.</p>
+    <p>The filters and the sort are kept in the page's address as you set
+    them, so the link in your address bar is the view you are looking at —
+    copy it to send someone exactly this table. <b>Reset filters</b> clears
+    it again.</p>
     <p>Click any row to expand it. Pills inside filter the table to that
     designer, mechanic or game — except games you do not own, which link out
     to BGG.</p>
@@ -1970,6 +1974,7 @@ el('reset').addEventListener('click', function () {
   sortKey = 'rk';
   sortDesc = false;
   forgetFilters();
+  writeUrl();
   syncClearQ();
   syncSelects();
   markSort();
@@ -2418,6 +2423,7 @@ function saveFilters() {
       sort: sortKey, desc: sortDesc
     }));
   } catch (e) { /* storage off: nothing to remember with */ }
+  writeUrl();
 }
 
 function loadFilters() {
@@ -2444,6 +2450,104 @@ function forgetFilters() {
   try { window.localStorage.removeItem(FILTKEY); } catch (e) { /* fine */ }
 }
 
+/** The same state, in the address bar.
+ *
+ *  localStorage remembers the view for this browser; the URL makes it
+ *  sendable. Only what differs from the page's own defaults is written, so an
+ *  untouched view keeps a clean link and a shared one carries exactly the
+ *  filters that were set and nothing else.
+ *
+ *  The hash, not the query string: this is a static file with no server to
+ *  care, and on GitHub Pages a query would be sent upstream for nothing.
+ */
+function defaultFilterValues() {
+  // Every value is compared against a form field, so they are all strings
+  // here. OPTS.players in particular arrives as a *number*, and a typed
+  // comparison against it silently dropped the player count from the link.
+  var d = {
+    q: '', players: OPTS.players, mode: OPTS.mode, win: OPTS.win,
+    salad: OPTS.salad, exp: OPTS.expansions, ix: '', tagmode: 'all',
+    played: 'any', smin: '', smax: '', mymin: '', mymax: '', wmin: '',
+    wmax: '', tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: ''
+  };
+  Object.keys(d).forEach(function (k) {
+    d[k] = d[k] === null || d[k] === undefined ? '' : String(d[k]);
+  });
+  return d;
+}
+
+function encodeState() {
+  var def = defaultFilterValues(), parts = [];
+  Object.keys(F).forEach(function (k) {
+    var v = F[k].value;
+    if (k in def && v !== def[k] && v !== '') {
+      parts.push(k + '=' + encodeURIComponent(v));
+    }
+  });
+  // Tags travel by name; the index moves whenever the collection changes.
+  var tags = pickedTags().map(function (i) { return TAGS[i].k + '|' + TAGS[i].n; });
+  if (tags.length) parts.push('tags=' + encodeURIComponent(tags.join('~')));
+  if (sortKey !== 'rk' || sortDesc) {
+    parts.push('sort=' + encodeURIComponent(sortKey) + (sortDesc ? '.d' : ''));
+  }
+  return parts.join('&');
+}
+
+/** Rewrite the address bar without touching history, so the back button still
+ *  leaves the page rather than walking back through every filter change.
+ *  replaceState is allowed on file:// in current browsers, but it has not
+ *  always been, so a failure quietly leaves the URL alone rather than
+ *  throwing in the middle of a render. */
+function writeUrl() {
+  var enc = encodeState();
+  var url = location.pathname + location.search + (enc ? '#' + enc : '');
+  try {
+    history.replaceState(null, '', url);
+  } catch (e) { /* older file:// rules: the view still works, just not the link */ }
+}
+
+/** Returns true when the URL carried a view, so it can win over storage. */
+function readUrl() {
+  var hash = (location.hash || '').replace(/^#/, '');
+  if (!hash) return false;
+  var got = {};
+  hash.split('&').forEach(function (bit) {
+    var i = bit.indexOf('=');
+    if (i > 0) {
+      try { got[bit.slice(0, i)] = decodeURIComponent(bit.slice(i + 1)); }
+      catch (e) { /* a hand-mangled link: skip the bit, keep the rest */ }
+    }
+  });
+  var def = defaultFilterValues();
+  Object.keys(F).forEach(function (k) {
+    F[k].value = typeof got[k] === 'string' ? got[k] : (def[k] || '');
+  });
+  tagRows.forEach(function (r) { r.firstChild.checked = false; });
+  if (got.tags) {
+    var want = {};
+    got.tags.split('~').forEach(function (key) { want[key] = 1; });
+    for (var i = 0; i < TAGS.length; i++) {
+      if (want[TAGS[i].k + '|' + TAGS[i].n] && tagRows[i]) {
+        tagRows[i].firstChild.checked = true;
+      }
+    }
+  }
+  sortKey = 'rk';
+  sortDesc = false;
+  if (got.sort) {
+    var d = got.sort.slice(-2) === '.d';
+    var k = d ? got.sort.slice(0, -2) : got.sort;
+    // Only accept a column this page actually has.
+    if (document.querySelector('th[data-k="' + k.replace(/"/g, '') + '"]')) {
+      sortKey = k;
+      sortDesc = d;
+    }
+  }
+  refreshTagList();
+  rangeToPlayed();
+  return true;
+}
+
 /** Put the caret on whichever column the sort is actually using. */
 function markSort() {
   [].forEach.call(document.querySelectorAll('th'), function (o) {
@@ -2458,7 +2562,18 @@ buildColMenu();
 applyOrder();
 applyCols();
 applyDefaults();
-loadFilters();
+// A link that carries a view wins over what this browser last had open.
+if (!readUrl()) loadFilters();
+// writeUrl uses replaceState, which never fires this — so a hashchange means
+// the address bar was edited by hand, or a typed link was followed.
+window.addEventListener('hashchange', function () {
+  applyDefaults();
+  readUrl();
+  syncClearQ();
+  syncSelects();
+  markSort();
+  render();
+});
 syncClearQ();
 syncSelects();
 refreshTagList();

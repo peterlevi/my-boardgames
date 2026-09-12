@@ -27,6 +27,11 @@ browser:
 - **Columns** you choose and reorder by dragging a header, remembered per
   browser — including *Last played* from your BGG play log, and what the game
   column carries (name alone, or with the year, the designer, or both)
+- **A shareable view**: every filter and the sort are written into the URL as
+  you set them, so a link carries exactly what you were looking at. Opening
+  one wins over what that browser last had open; only what differs from the
+  page's defaults is written, so an untouched view keeps a clean link and
+  *Reset filters* empties it again
 - **Player count** with three rules — plays at N, *good* at N, or *best* at N,
   read from BGG's own `suggested_numplayers` poll
 - **Expansions** folded in: an owned expansion can qualify its base game at a

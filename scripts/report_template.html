@@ -868,6 +868,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   <thead><tr>
     <th class="thumb c-th w-thumb" data-col="th">Cover</th>
     <th class="num hide-sm c-rk w-rank" data-k="rk" data-col="rk">Rank</th>
+    <th class="num hide-sm c-rt w-ratings" data-k="rt" data-col="rt"
+      title="How many people have rated the game on BGG">Ratings</th>
     <th class="num c-av w-hex" data-k="av" data-col="av">BGG</th>
     <th class="num c-my w-hex" data-k="my" data-col="my">Mine</th>
     <th class="c-n" data-k="n" data-col="n">Game</th>
@@ -889,8 +891,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="num hide-sm c-verdict w-atn" data-k="verdict" data-col="verdict">__ATN__</th>
     <th class="num hide-sm wide-only c-bestPct w-pct" data-k="bestPct" data-col="bestPct">Best</th>
     <th class="num hide-sm c-appr w-pct" data-k="appr" data-col="appr">Appr</th>
-    <th class="num hide-sm c-rt w-ratings" data-k="rt" data-col="rt"
-      title="How many people have rated the game on BGG">Ratings</th>
   </tr></thead>
   <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="17"
     id="septext"></td></tr><!--__ROWS__--></tbody>
@@ -1247,6 +1247,12 @@ function describe() {
 }
 
 var sortKey = 'rk', sortDesc = false;
+/** Which way a column sorts when you first click it. Rank starts at 1, but
+ *  nobody wants the least-rated game or the shortest play first. */
+var SORT_DESC_FIRST = {
+  rt: true, av: true, my: true, pl: true, tmax: true, w: true, ix: true,
+  sc: true, pp: true, acq: true, lp: true, ed: true, bestPct: true, appr: true
+};
 
 function sortRows(rows) {
   function get(row) {
@@ -1259,7 +1265,11 @@ function sortRows(rows) {
       case 'ix':
         return ['Low', 'Medium', 'High'].indexOf((g.ai && g.ai.ixl) || g.ix);
       case 'ds': return (g.ds && g.ds[0]) || null;
-      case 'win': return (g.ai && g.ai.wc) || null;
+      case 'win': {
+        // In the order the dropdown lists them, not alphabetically.
+        var i = WIN_ORDER.indexOf((g.ai && g.ai.wc) || '');
+        return i < 0 ? null : i;
+      }
       case 'sc': return (g.ai && g.ai.scn) || null;
       case 'salad': {
         var order = SALAD_ORDER.indexOf((g.ai && g.ai.br) || '');
@@ -1268,7 +1278,7 @@ function sortRows(rows) {
       default: return g[sortKey];
     }
   }
-  var text = sortKey === 'n' || sortKey === 'ds' || sortKey === 'win' ||
+  var text = sortKey === 'n' || sortKey === 'ds' ||
              sortKey === 'acq' || sortKey === 'lp' || sortKey === 'ed';
   rows.sort(function (a, b) {
     var x = get(a), y = get(b);
@@ -1297,8 +1307,10 @@ function esc(t) {
 }
 
 var SALAD_ORDER = ['no', 'touch', 'lot', 'total'];
+var WIN_ORDER = ['race', 'points', 'objectives', 'money', 'lowest', 'majority',
+  'sudden', 'coop', 'elimination', 'other'];
 var SALAD_LABEL = { no: 'No, sharp focus', touch: 'Just a touch',
-  lot: 'Quite a lot', total: 'Total point salad' };
+  lot: 'Quite a lot', total: 'Yes, point salad' };
 var WIN_LABEL = { race: 'Race to a target', points: 'Most points at the end',
   money: 'Most money', lowest: 'Highest of your lowest',
   majority: 'Majority control', sudden: 'Sudden-death condition',
@@ -1835,7 +1847,7 @@ function scrollRowToTop(tr) {
     // Cover has no sort, and a click that is really the tail of a drag must
     // not reorder the rows as well as the columns.
     if (!k || Date.now() - draggedAt < 300) return;
-    sortDesc = (k === sortKey) ? !sortDesc : false;
+    sortDesc = (k === sortKey) ? !sortDesc : !!SORT_DESC_FIRST[k];
     sortKey = k;
     markSort();
     render();
@@ -2083,7 +2095,8 @@ document.addEventListener('click', function (e) {
  *  trio travels as one entry, and Game is not here: it is always on, and what
  *  it carries is the separate "Game column" choice. */
 var COLUMNS = [
-  { k: 'th', n: 'Cover' }, { k: 'rk', n: 'Rank' }, { k: 'av', n: 'BGG' },
+  { k: 'th', n: 'Cover' }, { k: 'rk', n: 'Rank' }, { k: 'rt', n: 'Ratings' },
+  { k: 'av', n: 'BGG' },
   { k: 'my', n: 'Mine' }, { k: 'y', n: 'Year' },
   { k: 'ds', n: 'Designer', off: true }, { k: 'pl', n: 'Plays' },
   { k: 'tmax', n: 'Time' }, { k: 'w', n: 'Weight' }, { k: 'ix', n: 'Interaction' },
@@ -2094,13 +2107,13 @@ var COLUMNS = [
   { k: 'win', n: 'Win condition' },
   { k: 'sc', n: 'Winning score', off: true },
   { k: 'salad', n: 'Point salad' },
-  { k: 'verdict', n: 'At N / Best / Appr' }, { k: 'rt', n: 'Ratings' }
+  { k: 'verdict', n: 'At N / Best / Appr' }
 ];
 /* The order cells sit in, including the two columns that are never optional. */
-var DEFAULT_ORDER = ['th', 'rk', 'av', 'my', 'n', 'y', 'ds', 'pl', 'tmax', 'w',
-  'ix', 'acq', 'lp', 'ed', 'pp', 'win', 'sc', 'salad', 'verdict', 'bestPct',
-  'appr', 'rt'];
-var COLKEY = 'bgg-cols-v7';
+var DEFAULT_ORDER = ['th', 'rk', 'rt', 'av', 'my', 'n', 'y', 'ds', 'pl', 'tmax',
+  'w', 'ix', 'acq', 'lp', 'ed', 'pp', 'win', 'sc', 'salad', 'verdict',
+  'bestPct', 'appr'];
+var COLKEY = 'bgg-cols-v8';
 var colState = {}, gameMode = 'ds', colOrder = DEFAULT_ORDER.slice();
 
 function colDefaults() {

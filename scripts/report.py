@@ -483,6 +483,8 @@ def rows_html(data, a, tags=()):
             f'<tr class="game-row" data-i="{i}" data-search="{search}"{"" if shown else " hidden"}>'
             f'<td class="thumb c-th" data-col="th">{thumb}</td>'
             f'<td class="num hide-sm c-rk" data-col="rk">{rank}</td>'
+            f'<td class="num hide-sm c-rt" data-col="rt" title="{g["rt"] or 0} BGG ratings">'
+            f'{fmt_count(g["rt"])}</td>'
             f'<td class="score c-av" data-col="av">{bgg_hex(g)}</td>'
             f'<td class="score mine-col c-my" data-col="my">{mine_hex(g)}</td>'
             f'<td class="gamecell c-n" data-col="n">'
@@ -509,8 +511,6 @@ def rows_html(data, a, tags=()):
             f'{bar(s["bestPct"]) if s else EM_DASH}</td>'
             f'<td class="num bar hide-sm c-appr j-appr" data-col="appr">'
             f'{bar(s["appr"]) if s else EM_DASH}</td>'
-            f'<td class="num hide-sm c-rt" data-col="rt" title="{g["rt"] or 0} BGG ratings">'
-            f'{fmt_count(g["rt"])}</td>'
             f'</tr>')
     shown = sum(1 for o in out if not o.startswith(tuple()) and " hidden>" not in o)
     return "\n".join(out), shown

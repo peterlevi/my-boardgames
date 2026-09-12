@@ -167,7 +167,7 @@ SALAD_LABEL = {
     "no": "No, sharp focus",
     "touch": "Just a touch",
     "lot": "Quite a lot",
-    "total": "Total point salad",
+    "total": "Yes, point salad",
 }
 # The column has less room than the dropdown.
 SALAD_SHORT = {"no": "No", "touch": "A touch", "lot": "Quite a lot",

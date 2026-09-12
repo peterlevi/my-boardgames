@@ -46,6 +46,10 @@
    "Bruce Shelley",
    "Francis Tresham"
   ],
+  "designer_ids": {
+   "Bruce Shelley": "1329",
+   "Francis Tresham": "58"
+  },
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -146,15 +150,15 @@
    "similar": [
     {
      "name": "1846: The Race for the Midwest",
-     "id": null
+     "id": "17405"
     },
     {
      "name": "18Chesapeake",
-     "id": null
+     "id": "253608"
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Brass: Birmingham",
@@ -218,6 +222,9 @@
   "designers": [
    "Thomas Lehmann"
   ],
+  "designer_ids": {
+   "Thomas Lehmann": "150"
+  },
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -307,15 +314,15 @@
    "similar": [
     {
      "name": "1830: Railways & Robber Barons",
-     "id": null
+     "id": "421"
     },
     {
      "name": "18Chesapeake",
-     "id": null
+     "id": "253608"
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Brass: Birmingham",
@@ -323,7 +330,7 @@
     },
     {
      "name": "1817",
-     "id": null
+     "id": "63170"
     }
    ],
    "teachers": [
@@ -381,6 +388,9 @@
   "designers": [
    "Scott Petersen"
   ],
+  "designer_ids": {
+   "Scott Petersen": "12357"
+  },
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -476,11 +486,11 @@
    "similar": [
     {
      "name": "1830: Railways & Robber Barons",
-     "id": null
+     "id": "421"
     },
     {
      "name": "1846: The Race for the Midwest",
-     "id": null
+     "id": "17405"
     },
     {
      "name": "Ticket to Ride",
@@ -488,11 +498,11 @@
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "1817",
-     "id": null
+     "id": "63170"
     }
    ],
    "teachers": [
@@ -546,6 +556,10 @@
    "Remo Conzadori",
    "Fabio Lopiano"
   ],
+  "designer_ids": {
+   "Remo Conzadori": "49759",
+   "Fabio Lopiano": "100575"
+  },
   "traits": [
    "End-game bonuses",
    "Area control"
@@ -621,19 +635,19 @@
    "similar": [
     {
      "name": "Wingspan",
-     "id": null
+     "id": "266192"
     },
     {
      "name": "Luna Capital",
-     "id": null
+     "id": "323613"
     },
     {
      "name": "Castell",
-     "id": null
+     "id": "238638"
     },
     {
      "name": "Merv: The Silk Road",
-     "id": null
+     "id": "306040"
     }
    ],
    "sources": [
@@ -711,6 +725,9 @@
   "designers": [
    "Antoine Bauza"
   ],
+  "designer_ids": {
+   "Antoine Bauza": "9714"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -816,11 +833,11 @@
     },
     {
      "name": "Race for the Galaxy",
-     "id": null
+     "id": "28143"
     },
     {
      "name": "Sushi Go!",
-     "id": null
+     "id": "133473"
     },
     {
      "name": "Century: Spice Road",
@@ -907,6 +924,10 @@
    "Antoine Bauza",
    "Bruno Cathala"
   ],
+  "designer_ids": {
+   "Antoine Bauza": "9714",
+   "Bruno Cathala": "1727"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -976,7 +997,7 @@
     },
     {
      "name": "Star Realms",
-     "id": null
+     "id": "147020"
     },
     {
      "name": "Jaipur",
@@ -984,7 +1005,7 @@
     },
     {
      "name": "Targi",
-     "id": null
+     "id": "118048"
     },
     {
      "name": "Tzolk'in: The Mayan Calendar",
@@ -1051,6 +1072,9 @@
   "designers": [
    "Sid Sackson"
   ],
+  "designer_ids": {
+   "Sid Sackson": "4"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -1160,11 +1184,11 @@
     },
     {
      "name": "Airlines Europe",
-     "id": null
+     "id": "90419"
     },
     {
      "name": "Fund Manager",
-     "id": null
+     "id": "39191"
     }
    ],
    "teachers": [
@@ -1225,6 +1249,9 @@
   "designers": [
    "Helge Ostertag"
   ],
+  "designer_ids": {
+   "Helge Ostertag": "4407"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -1318,7 +1345,7 @@
     },
     {
      "name": "Cascadia",
-     "id": null
+     "id": "295947"
     },
     {
      "name": "Barrage",
@@ -1395,6 +1422,9 @@
   "designers": [
    "Uwe Rosenberg"
   ],
+  "designer_ids": {
+   "Uwe Rosenberg": "10"
+  },
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -1472,7 +1502,7 @@
     },
     {
      "name": "Caverna",
-     "id": null
+     "id": "102794"
     },
     {
      "name": "A Feast for Odin",
@@ -1484,7 +1514,7 @@
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     }
    ],
    "teachers": [
@@ -1535,6 +1565,9 @@
   "designers": [
    "Uwe Rosenberg"
   ],
+  "designer_ids": {
+   "Uwe Rosenberg": "10"
+  },
   "traits": [
    "Parallel engine",
    "Worker placement of any kind"
@@ -1620,11 +1653,11 @@
     },
     {
      "name": "Caverna",
-     "id": null
+     "id": "102794"
     },
     {
      "name": "Catan",
-     "id": null
+     "id": "13"
     },
     {
      "name": "Ticket to Ride",
@@ -1632,7 +1665,7 @@
     },
     {
      "name": "Stone Age",
-     "id": null
+     "id": "34635"
     }
    ],
    "teachers": [
@@ -1686,6 +1719,9 @@
   "designers": [
    "Jon Perry"
   ],
+  "designer_ids": {
+   "Jon Perry": "73364"
+  },
   "traits": [
    "Area control"
   ],
@@ -1750,23 +1786,23 @@
    "similar": [
     {
      "name": "Air, Land & Sea",
-     "id": null
+     "id": "247367"
     },
     {
      "name": "Air, Land & Sea: Critters at War",
-     "id": null
+     "id": "247367"
     },
     {
      "name": "Battle Line",
-     "id": null
+     "id": "760"
     },
     {
      "name": "Schotten Totten",
-     "id": null
+     "id": "372"
     },
     {
      "name": "Hanamikoji",
-     "id": null
+     "id": "158600"
     }
    ],
    "sources": [
@@ -1828,6 +1864,9 @@
   "designers": [
    "Matúš Kotry"
   ],
+  "designer_ids": {
+   "Matúš Kotry": "75718"
+  },
   "traits": [
    "End-game bonuses",
    "Auction of any kind",
@@ -1911,23 +1950,23 @@
    "similar": [
     {
      "name": "Chai",
-     "id": null
+     "id": "253185"
     },
     {
      "name": "Mysterium",
-     "id": null
+     "id": "113997"
     },
     {
      "name": "The Search for Planet X",
-     "id": null
+     "id": "279537"
     },
     {
      "name": "Sherlock Holmes Consulting Detective",
-     "id": null
+     "id": "2511"
     },
     {
      "name": "Cryptid",
-     "id": null
+     "id": "246784"
     }
    ],
    "teachers": [
@@ -1980,6 +2019,13 @@
    "Stefano Luperto",
    "Antonio Tinto"
   ],
+  "designer_ids": {
+   "Acchittocca": "6601",
+   "Flaminia Brasini": "6818",
+   "Virginio Gigli": "6817",
+   "Stefano Luperto": "2729",
+   "Antonio Tinto": "6816"
+  },
   "traits": [
    "End-game bonuses",
    "Worker placement of any kind",
@@ -2066,11 +2112,11 @@
     },
     {
      "name": "Teotihuacan",
-     "id": null
+     "id": "229853"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "The Gallerist",
@@ -2078,7 +2124,7 @@
     },
     {
      "name": "Tzolk'in",
-     "id": null
+     "id": "126163"
     }
    ],
    "teachers": [
@@ -2129,6 +2175,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Auction of any kind",
    "Area control"
@@ -2213,19 +2262,19 @@
     },
     {
      "name": "Tigris & Euphrates",
-     "id": null
+     "id": "42"
     },
     {
      "name": "Samurai",
-     "id": null
+     "id": "3"
     },
     {
      "name": "Taj Mahal",
-     "id": null
+     "id": "475"
     },
     {
      "name": "El Grande",
-     "id": null
+     "id": "93"
     }
    ],
    "teachers": [
@@ -2296,6 +2345,11 @@
    "Richard Ámann",
    "Viktor Péter"
   ],
+  "designer_ids": {
+   "Dávid Turczi": "76227",
+   "Richard Ámann": "76971",
+   "Viktor Péter": "76578"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -2362,11 +2416,11 @@
    "similar": [
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Tzolk'in",
-     "id": null
+     "id": "126163"
     },
     {
      "name": "Gaia Project",
@@ -2378,7 +2432,7 @@
     },
     {
      "name": "Newton",
-     "id": null
+     "id": "170937"
     }
    ],
    "teachers": [
@@ -2450,6 +2504,9 @@
   "designers": [
    "Martin Wallace"
   ],
+  "designer_ids": {
+   "Martin Wallace": "6"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -2546,15 +2603,15 @@
     },
     {
      "name": "Trellis",
-     "id": null
+     "id": "23233"
     },
     {
      "name": "Terraforming Mars",
-     "id": null
+     "id": "167791"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     }
    ],
    "teachers": [
@@ -2631,6 +2688,10 @@
    "S J Macdonald",
    "Shem Phillips"
   ],
+  "designer_ids": {
+   "S J Macdonald": "103821",
+   "Shem Phillips": "12547"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -2718,15 +2779,15 @@
    "similar": [
     {
      "name": "Raiders of the North Sea",
-     "id": null
+     "id": "170042"
     },
     {
      "name": "Paladins of the West Kingdom",
-     "id": null
+     "id": "266810"
     },
     {
      "name": "Marco Polo",
-     "id": null
+     "id": "2280"
     },
     {
      "name": "Tzolk'in: The Mayan Calendar",
@@ -2734,7 +2795,7 @@
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     }
    ],
    "teachers": [
@@ -2816,6 +2877,9 @@
   "designers": [
    "Mathias Wigge"
   ],
+  "designer_ids": {
+   "Mathias Wigge": "138517"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -2892,15 +2956,15 @@
    "similar": [
     {
      "name": "Terraforming Mars",
-     "id": null
+     "id": "167791"
     },
     {
      "name": "Marco Polo",
-     "id": null
+     "id": "2280"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Res Arcana",
@@ -2975,6 +3039,9 @@
   "designers": [
    "Stefan Risthaus"
   ],
+  "designer_ids": {
+   "Stefan Risthaus": "5766"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -3065,11 +3132,11 @@
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "El Grande",
-     "id": null
+     "id": "93"
     },
     {
      "name": "Container",
@@ -3140,6 +3207,9 @@
   "designers": [
    "Stefan Risthaus"
   ],
+  "designer_ids": {
+   "Stefan Risthaus": "5766"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -3219,7 +3289,7 @@
    "similar": [
     {
      "name": "Arkwright",
-     "id": null
+     "id": "154825"
     },
     {
      "name": "Brass: Birmingham",
@@ -3231,7 +3301,7 @@
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Concordia",
@@ -3295,6 +3365,9 @@
   "designers": [
    "Michael Kiesling"
   ],
+  "designer_ids": {
+   "Michael Kiesling": "42"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -3379,11 +3452,11 @@
    "similar": [
     {
      "name": "Sagrada",
-     "id": null
+     "id": "107448"
     },
     {
      "name": "Kingdomino",
-     "id": null
+     "id": "204583"
     },
     {
      "name": "Patchwork",
@@ -3391,11 +3464,11 @@
     },
     {
      "name": "Azul: Summer Pavilion",
-     "id": null
+     "id": "287954"
     },
     {
      "name": "Calico",
-     "id": null
+     "id": "283155"
     }
    ],
    "teachers": [
@@ -3454,6 +3527,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Area control",
    "Drafting of any kind",
@@ -3517,11 +3593,11 @@
    "similar": [
     {
      "name": "El Grande",
-     "id": null
+     "id": "93"
     },
     {
      "name": "Tigris & Euphrates",
-     "id": null
+     "id": "42"
     },
     {
      "name": "Blue Lagoon",
@@ -3529,11 +3605,11 @@
     },
     {
      "name": "Yellow & Yangtze",
-     "id": null
+     "id": "244114"
     },
     {
      "name": "Through the Desert",
-     "id": null
+     "id": "503"
     }
    ],
    "teachers": [
@@ -3582,6 +3658,9 @@
   "designers": [
    "Germán P. Millán"
   ],
+  "designer_ids": {
+   "Germán P. Millán": "89099"
+  },
   "traits": [
    "Drafting of any kind"
   ],
@@ -3645,23 +3724,23 @@
    "similar": [
     {
      "name": "Bitoku",
-     "id": null
+     "id": "323612"
     },
     {
      "name": "Silk",
-     "id": null
+     "id": "255037"
     },
     {
      "name": "The Red Cathedral",
-     "id": null
+     "id": "227224"
     },
     {
      "name": "Kanagawa",
-     "id": null
+     "id": "200147"
     },
     {
      "name": "The White Castle",
-     "id": null
+     "id": "371942"
     }
    ],
    "sources": [
@@ -3726,6 +3805,10 @@
    "Michael Palm",
    "Lukas Zach"
   ],
+  "designer_ids": {
+   "Michael Palm": "461",
+   "Lukas Zach": "7808"
+  },
   "traits": [
    "Direct conflict",
    "Hidden information",
@@ -3909,6 +3992,10 @@
    "Tommaso Battista",
    "Simone Luciani"
   ],
+  "designer_ids": {
+   "Tommaso Battista": "108836",
+   "Simone Luciani": "35418"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -3975,7 +4062,7 @@
    "similar": [
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Teotihuacan: City of Gods",
@@ -3991,7 +4078,7 @@
     },
     {
      "name": "Trickerion: Legends of Illusion",
-     "id": null
+     "id": "163068"
     }
    ],
    "teachers": [
@@ -4052,6 +4139,9 @@
   "designers": [
    "Scott Almes"
   ],
+  "designer_ids": {
+   "Scott Almes": "43431"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -4136,11 +4226,11 @@
     },
     {
      "name": "Targi",
-     "id": null
+     "id": "118048"
     },
     {
      "name": "Habitat",
-     "id": null
+     "id": "31512"
     }
    ],
    "teachers": [
@@ -4194,6 +4284,9 @@
   "designers": [
    "Torsten Landsvogt"
   ],
+  "designer_ids": {
+   "Torsten Landsvogt": "8537"
+  },
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -4315,6 +4408,9 @@
   "designers": [
    "Dennis K. Chan"
   ],
+  "designer_ids": {
+   "Dennis K. Chan": "129749"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -4381,15 +4477,15 @@
    "similar": [
     {
      "name": "Race for the Galaxy",
-     "id": null
+     "id": "28143"
     },
     {
      "name": "Through the Ages",
-     "id": null
+     "id": "25613"
     },
     {
      "name": "Roll for the Galaxy",
-     "id": null
+     "id": "132531"
     },
     {
      "name": "Innovation",
@@ -4397,7 +4493,7 @@
     },
     {
      "name": "Eclipse: Second Dawn for the Galaxy",
-     "id": null
+     "id": "246900"
     }
    ],
    "teachers": [
@@ -4455,6 +4551,9 @@
   "designers": [
    "Steve Finn"
   ],
+  "designer_ids": {
+   "Steve Finn": "10060"
+  },
   "traits": [
    "Set collection",
    "Contested market",
@@ -4540,7 +4639,7 @@
     },
     {
      "name": "Fresh Fish",
-     "id": null
+     "id": "1017"
     },
     {
      "name": "Medici",
@@ -4608,6 +4707,9 @@
   "designers": [
    "Germán P. Millán"
   ],
+  "designer_ids": {
+   "Germán P. Millán": "89099"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -4685,19 +4787,19 @@
     },
     {
      "name": "Everdell",
-     "id": null
+     "id": "199792"
     },
     {
      "name": "Architects of the West Kingdom",
-     "id": null
+     "id": "236457"
     },
     {
      "name": "Trickerion: Legends of Illusion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Tekhenu: Obelisk of the Sun",
-     "id": null
+     "id": "297030"
     }
    ],
    "teachers": [
@@ -4754,6 +4856,11 @@
    "Xavier Georges",
    "Alain Orban"
   ],
+  "designer_ids": {
+   "Sébastien Dujardin": "38335",
+   "Xavier Georges": "11312",
+   "Alain Orban": "7369"
+  },
   "traits": [
    "Parallel engine",
    "Area control",
@@ -4836,23 +4943,23 @@
    "similar": [
     {
      "name": "Robinson Crusoe: Adventures on the Cursed Island",
-     "id": null
+     "id": "121921"
     },
     {
      "name": "First Martians: Adventures on the Red Planet",
-     "id": null
+     "id": "192455"
     },
     {
      "name": "Nemesis",
-     "id": null
+     "id": "3481"
     },
     {
      "name": "Space Alert",
-     "id": null
+     "id": "38453"
     },
     {
      "name": "Andor",
-     "id": null
+     "id": "155108"
     }
    ],
    "teachers": [
@@ -4912,6 +5019,9 @@
   "designers": [
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -4998,15 +5108,15 @@
    "similar": [
     {
      "name": "Mombasa",
-     "id": null
+     "id": "172386"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Maracaibo",
-     "id": null
+     "id": "276025"
     },
     {
      "name": "Barrage",
@@ -5014,7 +5124,7 @@
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     }
    ],
    "teachers": [
@@ -5071,6 +5181,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Set collection",
    "Area control",
@@ -5155,23 +5268,23 @@
    "similar": [
     {
      "name": "Yellow & Yangtze",
-     "id": null
+     "id": "244114"
     },
     {
      "name": "Tigris & Euphrates",
-     "id": null
+     "id": "42"
     },
     {
      "name": "Ta Yu",
-     "id": null
+     "id": "117"
     },
     {
      "name": "Isle of Skye",
-     "id": null
+     "id": "176494"
     },
     {
      "name": "Web of Power",
-     "id": null
+     "id": "491"
     }
    ],
    "teachers": [
@@ -5234,6 +5347,9 @@
   "designers": [
    "Uwe Rosenberg"
   ],
+  "designer_ids": {
+   "Uwe Rosenberg": "10"
+  },
   "traits": [
    "Set collection",
    "Direct conflict"
@@ -5414,6 +5530,9 @@
   "designers": [
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -5490,15 +5609,15 @@
    "similar": [
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Maracaibo",
-     "id": null
+     "id": "276025"
     },
     {
      "name": "Merv: The Heart of the Silk Road",
-     "id": null
+     "id": "306040"
     },
     {
      "name": "Barrage",
@@ -5506,7 +5625,7 @@
     },
     {
      "name": "Trismegistus",
-     "id": null
+     "id": "440942"
     }
    ],
    "teachers": [
@@ -5588,6 +5707,11 @@
    "Matt Tolman",
    "Martin Wallace"
   ],
+  "designer_ids": {
+   "Gavan Brown": "32887",
+   "Matt Tolman": "32943",
+   "Martin Wallace": "6"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -5674,11 +5798,11 @@
    "similar": [
     {
      "name": "Brass: Lancashire",
-     "id": null
+     "id": "28720"
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Barrage",
@@ -5686,11 +5810,11 @@
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Age of Industry",
-     "id": null
+     "id": "35953"
     }
    ],
    "teachers": [
@@ -5764,6 +5888,9 @@
   "designers": [
    "Martin Wallace"
   ],
+  "designer_ids": {
+   "Martin Wallace": "6"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -5841,11 +5968,11 @@
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Age of Industry",
-     "id": null
+     "id": "35953"
     },
     {
      "name": "Barrage",
@@ -5911,6 +6038,9 @@
   "designers": [
    "Peer Sylvester"
   ],
+  "designer_ids": {
+   "Peer Sylvester": "5554"
+  },
   "traits": [
    "End-game bonuses",
    "Area control",
@@ -5999,11 +6129,11 @@
    "similar": [
     {
      "name": "El Grande",
-     "id": null
+     "id": "93"
     },
     {
      "name": "Blood Rage",
-     "id": null
+     "id": "170216"
     },
     {
      "name": "Kemet",
@@ -6011,11 +6141,11 @@
     },
     {
      "name": "Libertalia",
-     "id": null
+     "id": "125618"
     },
     {
      "name": "Raiders of the North Sea",
-     "id": null
+     "id": "170042"
     }
    ],
    "teachers": [
@@ -6070,6 +6200,10 @@
    "Andreas Pelikan",
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Andreas Pelikan": "8397",
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "Set collection",
    "Network building"
@@ -6156,15 +6290,15 @@
    "similar": [
     {
      "name": "Witch's Brew",
-     "id": null
+     "id": "13325"
     },
     {
      "name": "Hawaii",
-     "id": null
+     "id": "106217"
     },
     {
      "name": "Kobayakawa",
-     "id": null
+     "id": "142325"
     },
     {
      "name": "Incan Gold / Diamant",
@@ -6228,6 +6362,9 @@
   "designers": [
    "Etienne Espreman"
   ],
+  "designer_ids": {
+   "Etienne Espreman": "69130"
+  },
   "traits": [
    "Auction of any kind",
    "Area control",
@@ -6332,7 +6469,7 @@
     },
     {
      "name": "Manhattan Project",
-     "id": null
+     "id": "375573"
     }
    ],
    "teachers": [
@@ -6388,6 +6525,10 @@
    "Jeroen Doumen",
    "Joris Wiersinga"
   ],
+  "designer_ids": {
+   "Jeroen Doumen": "270",
+   "Joris Wiersinga": "407"
+  },
   "traits": [
    "Worker placement of any kind",
    "Network building"
@@ -6476,7 +6617,7 @@
     },
     {
      "name": "The Great Zimbabwe",
-     "id": null
+     "id": "111341"
     },
     {
      "name": "Food Chain Magnate",
@@ -6484,7 +6625,7 @@
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     }
    ],
    "teachers": [
@@ -6540,6 +6681,9 @@
   "designers": [
    "Emanuele Ornella"
   ],
+  "designer_ids": {
+   "Emanuele Ornella": "2762"
+  },
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -6696,6 +6840,10 @@
    "Kristian Amundsen Østby",
    "Eilif Svensson"
   ],
+  "designer_ids": {
+   "Kristian Amundsen Østby": "4063",
+   "Eilif Svensson": "9637"
+  },
   "traits": [
    "Drafting of any kind"
   ],
@@ -6764,7 +6912,7 @@
    "similar": [
     {
      "name": "Capital Lux",
-     "id": null
+     "id": "205046"
     },
     {
      "name": "Jaipur",
@@ -6772,7 +6920,7 @@
     },
     {
      "name": "Big Shot",
-     "id": null
+     "id": "1125"
     },
     {
      "name": "Coloretto",
@@ -6780,7 +6928,7 @@
     },
     {
      "name": "Le Havre: The Inland Port",
-     "id": null
+     "id": "129051"
     }
    ],
    "teachers": [
@@ -6830,6 +6978,9 @@
   "designers": [
    "Klaus-Jürgen Wrede"
   ],
+  "designer_ids": {
+   "Klaus-Jürgen Wrede": "398"
+  },
   "traits": [
    "Tableau multipliers",
    "Area control"
@@ -6921,15 +7072,15 @@
    "similar": [
     {
      "name": "Kingdomino",
-     "id": null
+     "id": "204583"
     },
     {
      "name": "Isle of Skye",
-     "id": null
+     "id": "176494"
     },
     {
      "name": "Karuba",
-     "id": null
+     "id": "183251"
     },
     {
      "name": "Patchwork",
@@ -6937,7 +7088,7 @@
     },
     {
      "name": "Cascadia",
-     "id": null
+     "id": "295947"
     }
    ],
    "teachers": [
@@ -7008,6 +7159,9 @@
   "designers": [
    "Xavier Georges"
   ],
+  "designer_ids": {
+   "Xavier Georges": "11312"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -7096,7 +7250,7 @@
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Le Havre",
@@ -7104,7 +7258,7 @@
     },
     {
      "name": "K2",
-     "id": null
+     "id": "73761"
     },
     {
      "name": "Barrage",
@@ -7180,6 +7334,9 @@
   "designers": [
    "Jordy Adan"
   ],
+  "designer_ids": {
+   "Jordy Adan": "109218"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -7394,7 +7551,7 @@
    "similar": [
     {
      "name": "Kingdomino",
-     "id": null
+     "id": "204583"
     },
     {
      "name": "Take the Lead",
@@ -7402,15 +7559,15 @@
     },
     {
      "name": "Silver & Gold",
-     "id": null
+     "id": "270673"
     },
     {
      "name": "Welcome To...",
-     "id": null
+     "id": "233867"
     },
     {
      "name": "Railroad Ink",
-     "id": null
+     "id": "245654"
     }
    ],
    "teachers": [
@@ -7482,6 +7639,9 @@
   "designers": [
    "Stefan Feld"
   ],
+  "designer_ids": {
+   "Stefan Feld": "4958"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -7571,11 +7731,11 @@
     },
     {
      "name": "Orleans",
-     "id": null
+     "id": "164928"
     },
     {
      "name": "Barony",
-     "id": null
+     "id": "167513"
     },
     {
      "name": "Le Havre",
@@ -7583,7 +7743,7 @@
     },
     {
      "name": "Fields of Arle",
-     "id": null
+     "id": "159675"
     }
    ],
    "teachers": [
@@ -7660,6 +7820,9 @@
   "designers": [
    "Klaus Teuber"
   ],
+  "designer_ids": {
+   "Klaus Teuber": "11"
+  },
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -7828,6 +7991,9 @@
   "designers": [
    "Uwe Rosenberg"
   ],
+  "designer_ids": {
+   "Uwe Rosenberg": "10"
+  },
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -8007,6 +8173,9 @@
   "designers": [
    "William Attia"
   ],
+  "designer_ids": {
+   "William Attia": "5629"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -8105,7 +8274,7 @@
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     },
     {
      "name": "Barrage",
@@ -8234,6 +8403,9 @@
   "designers": [
    "(Uncredited)"
   ],
+  "designer_ids": {
+   "(Uncredited)": "3"
+  },
   "traits": [],
   "videos": [
    {
@@ -8303,11 +8475,11 @@
    "similar": [
     {
      "name": "Xiangqi",
-     "id": null
+     "id": "2393"
     },
     {
      "name": "Shogi",
-     "id": null
+     "id": "2065"
     },
     {
      "name": "Go",
@@ -8315,11 +8487,11 @@
     },
     {
      "name": "Hive",
-     "id": null
+     "id": "2655"
     },
     {
      "name": "Onitama",
-     "id": null
+     "id": "160477"
     }
    ],
    "teachers": [
@@ -8377,6 +8549,9 @@
   "designers": [
    "Bruno Faidutti"
   ],
+  "designer_ids": {
+   "Bruno Faidutti": "125"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -8474,11 +8649,11 @@
     },
     {
      "name": "Sheriff of Nottingham",
-     "id": null
+     "id": "157969"
     },
     {
      "name": "Libertalia",
-     "id": null
+     "id": "125618"
     },
     {
      "name": "The Resistance",
@@ -8486,7 +8661,7 @@
     },
     {
      "name": "Machi Koro",
-     "id": null
+     "id": "143884"
     }
    ],
    "teachers": [
@@ -8545,6 +8720,9 @@
   "designers": [
    "Stefan Feld"
   ],
+  "designer_ids": {
+   "Stefan Feld": "4958"
+  },
   "traits": [
    "Multi-track",
    "Parallel engine",
@@ -8616,19 +8794,19 @@
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Bonfire",
-     "id": null
+     "id": "304420"
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     }
    ],
    "sources": [
@@ -8693,6 +8871,9 @@
   "designers": [
    "Vlaada Chvátil"
   ],
+  "designer_ids": {
+   "Vlaada Chvátil": "789"
+  },
   "traits": [
    "Co-operative"
   ],
@@ -8795,23 +8976,23 @@
    "similar": [
     {
      "name": "Codenames: Duet",
-     "id": null
+     "id": "224037"
     },
     {
      "name": "Codenames: Pictures",
-     "id": null
+     "id": "198773"
     },
     {
      "name": "Decrypto",
-     "id": null
+     "id": "65952"
     },
     {
      "name": "Just One",
-     "id": null
+     "id": "254640"
     },
     {
      "name": "Wavelength",
-     "id": null
+     "id": "2745"
     }
    ],
    "teachers": [
@@ -8868,6 +9049,10 @@
    "Vlaada Chvátil",
    "Scot Eaton"
   ],
+  "designer_ids": {
+   "Vlaada Chvátil": "789",
+   "Scot Eaton": "68016"
+  },
   "traits": [
    "Co-operative"
   ],
@@ -8939,23 +9124,23 @@
    "similar": [
     {
      "name": "Codenames",
-     "id": null
+     "id": "178900"
     },
     {
      "name": "Codenames: Pictures",
-     "id": null
+     "id": "198773"
     },
     {
      "name": "The Crew",
-     "id": null
+     "id": "284083"
     },
     {
      "name": "Hanabi",
-     "id": null
+     "id": "98778"
     },
     {
      "name": "Decrypto",
-     "id": null
+     "id": "65952"
     }
    ],
    "teachers": [
@@ -9007,6 +9192,9 @@
   "designers": [
    "Vlaada Chvátil"
   ],
+  "designer_ids": {
+   "Vlaada Chvátil": "789"
+  },
   "traits": [
    "Co-operative"
   ],
@@ -9108,23 +9296,23 @@
    "similar": [
     {
      "name": "Codenames",
-     "id": null
+     "id": "178900"
     },
     {
      "name": "Codenames: Duet",
-     "id": null
+     "id": "224037"
     },
     {
      "name": "Dixit",
-     "id": null
+     "id": "39856"
     },
     {
      "name": "Mysterium",
-     "id": null
+     "id": "113997"
     },
     {
      "name": "Decrypto",
-     "id": null
+     "id": "65952"
     }
    ],
    "teachers": [
@@ -9186,6 +9374,10 @@
    "Flaminia Brasini",
    "Virginio Gigli"
   ],
+  "designer_ids": {
+   "Flaminia Brasini": "6818",
+   "Virginio Gigli": "6817"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -9270,7 +9462,7 @@
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     },
     {
      "name": "Le Havre",
@@ -9278,7 +9470,7 @@
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     }
    ],
    "teachers": [
@@ -9341,6 +9533,9 @@
   "designers": [
    "Christophe Raimbault"
   ],
+  "designer_ids": {
+   "Christophe Raimbault": "28912"
+  },
   "traits": [
    "Direct conflict"
   ],
@@ -9433,23 +9628,23 @@
    "similar": [
     {
      "name": "Flamme Rouge",
-     "id": null
+     "id": "199478"
     },
     {
      "name": "Adrenaline",
-     "id": null
+     "id": "202408"
     },
     {
      "name": "King of Tokyo",
-     "id": null
+     "id": "70323"
     },
     {
      "name": "Elysium",
-     "id": null
+     "id": "163968"
     },
     {
      "name": "Hey, That's My Fish!",
-     "id": null
+     "id": "8203"
     }
    ],
    "teachers": [
@@ -9513,6 +9708,9 @@
   "designers": [
    "Mac Gerdts"
   ],
+  "designer_ids": {
+   "Mac Gerdts": "6045"
+  },
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -9608,7 +9806,7 @@
     },
     {
      "name": "The Great Zimbabwe",
-     "id": null
+     "id": "111341"
     },
     {
      "name": "Trajan",
@@ -9676,6 +9874,10 @@
    "Bruno Cathala",
    "Charles Chevallier"
   ],
+  "designer_ids": {
+   "Bruno Cathala": "1727",
+   "Charles Chevallier": "34672"
+  },
   "traits": [
    "Set collection",
    "Tableau multipliers",
@@ -9760,15 +9962,15 @@
    "similar": [
     {
      "name": "Abyss",
-     "id": null
+     "id": "32564"
     },
     {
      "name": "Sushi Go!",
-     "id": null
+     "id": "133473"
     },
     {
      "name": "Fantasy Realms",
-     "id": null
+     "id": "223040"
     },
     {
      "name": "Jaipur",
@@ -9830,6 +10032,11 @@
    "Thomas Ewert",
    "Kevin Nesbitt"
   ],
+  "designer_ids": {
+   "Franz-Benno Delonge": "57",
+   "Thomas Ewert": "8061",
+   "Kevin Nesbitt": "11028"
+  },
   "traits": [
    "Set collection",
    "Contested market",
@@ -9929,7 +10136,7 @@
     },
     {
      "name": "Automobiles",
-     "id": null
+     "id": "180680"
     },
     {
      "name": "Chinatown",
@@ -9997,6 +10204,9 @@
   "designers": [
    "Rikki Tahta"
   ],
+  "designer_ids": {
+   "Rikki Tahta": "64108"
+  },
   "traits": [
    "Direct conflict",
    "Hidden information"
@@ -10163,6 +10373,9 @@
   "designers": [
    "Thomas Sing"
   ],
+  "designer_ids": {
+   "Thomas Sing": "45563"
+  },
   "traits": [
    "Co-operative"
   ],
@@ -10250,23 +10463,23 @@
    "similar": [
     {
      "name": "The Mind",
-     "id": null
+     "id": "244992"
     },
     {
      "name": "Hanabi",
-     "id": null
+     "id": "98778"
     },
     {
      "name": "Sky Team",
-     "id": null
+     "id": "373106"
     },
     {
      "name": "Trick of the Rails",
-     "id": null
+     "id": "118497"
     },
     {
      "name": "Decrypto",
-     "id": null
+     "id": "65952"
     }
    ],
    "teachers": [
@@ -10324,6 +10537,11 @@
    "Michał Oracz",
    "Michał Walczak"
   ],
+  "designer_ids": {
+   "Grant Rodiek": "50231",
+   "Michał Oracz": "5143",
+   "Michał Walczak": "85259"
+  },
   "traits": [
    "End-game bonuses",
    "Area control",
@@ -10408,11 +10626,11 @@
    "similar": [
     {
      "name": "Rising Sun",
-     "id": null
+     "id": "205896"
     },
     {
      "name": "Blood Rage",
-     "id": null
+     "id": "170216"
     },
     {
      "name": "Kemet",
@@ -10424,7 +10642,7 @@
     },
     {
      "name": "Chaos in the Old World",
-     "id": null
+     "id": "43111"
     }
    ],
    "teachers": [
@@ -10484,6 +10702,10 @@
    "Michael Kiesling",
    "Wolfgang Kramer"
   ],
+  "designer_ids": {
+   "Michael Kiesling": "42",
+   "Wolfgang Kramer": "7"
+  },
   "traits": [
    "Tableau multipliers",
    "Auction of any kind",
@@ -10568,23 +10790,23 @@
    "similar": [
     {
      "name": "Java",
-     "id": null
+     "id": "855"
     },
     {
      "name": "Mexica",
-     "id": null
+     "id": "2955"
     },
     {
      "name": "Tikal",
-     "id": null
+     "id": "54"
     },
     {
      "name": "Web of Power",
-     "id": null
+     "id": "491"
     },
     {
      "name": "Torres",
-     "id": null
+     "id": "88"
     }
    ],
    "teachers": [
@@ -10637,6 +10859,9 @@
   "designers": [
    "Dani Garcia"
   ],
+  "designer_ids": {
+   "Dani Garcia": "117012"
+  },
   "traits": [
    "Multi-track",
    "Worker placement of any kind"
@@ -10720,19 +10945,19 @@
    "similar": [
     {
      "name": "Bitoku",
-     "id": null
+     "id": "323612"
     },
     {
      "name": "Ark Nova",
-     "id": null
+     "id": "342942"
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "Barrage",
@@ -10805,6 +11030,10 @@
    "Simone Luciani",
    "Nestore Mangone"
   ],
+  "designer_ids": {
+   "Simone Luciani": "35418",
+   "Nestore Mangone": "52377"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -10884,11 +11113,11 @@
    "similar": [
     {
      "name": "Lorenzo il Magnifico",
-     "id": null
+     "id": "203993"
     },
     {
      "name": "Tzolk'in",
-     "id": null
+     "id": "126163"
     },
     {
      "name": "The Gallerist",
@@ -10957,6 +11186,9 @@
   "designers": [
    "Thomas Dagenais-Lespérance"
   ],
+  "designer_ids": {
+   "Thomas Dagenais-Lespérance": "82239"
+  },
   "traits": [
    "Co-operative"
   ],
@@ -11059,23 +11291,23 @@
    "similar": [
     {
      "name": "Codenames",
-     "id": null
+     "id": "178900"
     },
     {
      "name": "Just One",
-     "id": null
+     "id": "254640"
     },
     {
      "name": "Wavelength",
-     "id": null
+     "id": "2745"
     },
     {
      "name": "The Mind",
-     "id": null
+     "id": "244992"
     },
     {
      "name": "Concept",
-     "id": null
+     "id": "147151"
     }
    ],
    "teachers": [
@@ -11142,6 +11374,11 @@
    "David McGregor",
    "Marissa Misura"
   ],
+  "designer_ids": {
+   "Brian Lewis": "58135",
+   "David McGregor": "105446",
+   "Marissa Misura": "105447"
+  },
   "traits": [
    "Worker placement of any kind",
    "Drafting of any kind",
@@ -11220,23 +11457,23 @@
    "similar": [
     {
      "name": "Dinosaur Island",
-     "id": null
+     "id": "13848"
     },
     {
      "name": "Welcome To...",
-     "id": null
+     "id": "233867"
     },
     {
      "name": "Cartographers",
-     "id": null
+     "id": "263918"
     },
     {
      "name": "Petal",
-     "id": null
+     "id": "462532"
     },
     {
      "name": "My City Roll & Write",
-     "id": null
+     "id": "351476"
     }
    ],
    "teachers": [
@@ -11295,6 +11532,9 @@
   "designers": [
    "Jean-Louis Roubira"
   ],
+  "designer_ids": {
+   "Jean-Louis Roubira": "11547"
+  },
   "traits": [],
   "videos": [
    {
@@ -11385,15 +11625,15 @@
    "similar": [
     {
      "name": "Mysterium",
-     "id": null
+     "id": "113997"
     },
     {
      "name": "Concept",
-     "id": null
+     "id": "147151"
     },
     {
      "name": "Once Upon a Time",
-     "id": null
+     "id": "61664"
     },
     {
      "name": "Story Cubes",
@@ -11401,7 +11641,7 @@
     },
     {
      "name": "Imagine",
-     "id": null
+     "id": "22222"
     }
    ],
    "teachers": [
@@ -11466,6 +11706,9 @@
   "designers": [
    "Chad Jensen"
   ],
+  "designer_ids": {
+   "Chad Jensen": "6331"
+  },
   "traits": [
    "Area control",
    "Worker placement of any kind",
@@ -11550,15 +11793,15 @@
    "similar": [
     {
      "name": "Dominant Species",
-     "id": null
+     "id": "62219"
     },
     {
      "name": "Tichu",
-     "id": null
+     "id": "215"
     },
     {
      "name": "Vast: The Crystal Caverns",
-     "id": null
+     "id": "170416"
     },
     {
      "name": "Root",
@@ -11625,6 +11868,9 @@
   "designers": [
    "Donald X. Vaccarino"
   ],
+  "designer_ids": {
+   "Donald X. Vaccarino": "10525"
+  },
   "traits": [
    "Direct conflict",
    "Deck or bag building",
@@ -11703,11 +11949,11 @@
    "similar": [
     {
      "name": "Dominion: Intrigue",
-     "id": null
+     "id": "40834"
     },
     {
      "name": "Star Realms",
-     "id": null
+     "id": "147020"
     },
     {
      "name": "Clank!",
@@ -11719,7 +11965,7 @@
     },
     {
      "name": "Ascension",
-     "id": null
+     "id": "10403"
     }
    ],
    "teachers": [
@@ -11788,6 +12034,11 @@
    "Jack Kittredge",
    "Peter Olotka"
   ],
+  "designer_ids": {
+   "Bill Eberle": "34",
+   "Jack Kittredge": "35",
+   "Peter Olotka": "36"
+  },
   "traits": [
    "Auction of any kind",
    "Area control",
@@ -11877,23 +12128,23 @@
    "similar": [
     {
      "name": "Dune: Imperium",
-     "id": null
+     "id": "316554"
     },
     {
      "name": "Rex: Final Days of an Empire",
-     "id": null
+     "id": "104363"
     },
     {
      "name": "Cosmic Encounter",
-     "id": null
+     "id": "15"
     },
     {
      "name": "Twilight Imperium",
-     "id": null
+     "id": "24"
     },
     {
      "name": "Diplomacy",
-     "id": null
+     "id": "483"
     }
    ],
    "teachers": [
@@ -11965,6 +12216,9 @@
   "designers": [
    "Paul Dennen"
   ],
+  "designer_ids": {
+   "Paul Dennen": "92370"
+  },
   "traits": [
    "Parallel engine",
    "Tableau multipliers",
@@ -12041,23 +12295,23 @@
    "similar": [
     {
      "name": "Dune: Imperium – Uprising",
-     "id": null
+     "id": "397598"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Lords of Waterdeep",
-     "id": null
+     "id": "110327"
     },
     {
      "name": "Tyrants of the Underdark",
-     "id": null
+     "id": "189932"
     },
     {
      "name": "Clank!: A Deck-Building Adventure",
-     "id": null
+     "id": "201808"
     }
    ],
    "teachers": [
@@ -12123,6 +12377,9 @@
   "designers": [
    "Paul Dennen"
   ],
+  "designer_ids": {
+   "Paul Dennen": "92370"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -12215,23 +12472,23 @@
    "similar": [
     {
      "name": "Dune: Imperium",
-     "id": null
+     "id": "316554"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Lords of Waterdeep",
-     "id": null
+     "id": "110327"
     },
     {
      "name": "Clank!: A Deck-Building Adventure",
-     "id": null
+     "id": "201808"
     },
     {
      "name": "Tyrants of the Underdark",
-     "id": null
+     "id": "189932"
     }
    ],
    "teachers": [
@@ -12286,6 +12543,9 @@
   "designers": [
    "Pascal Ribrault"
   ],
+  "designer_ids": {
+   "Pascal Ribrault": "139834"
+  },
   "traits": [
    "Contested market",
    "Worker placement of any kind",
@@ -12375,19 +12635,19 @@
     },
     {
      "name": "Navegador",
-     "id": null
+     "id": "66589"
     },
     {
      "name": "Imperial Steam",
-     "id": null
+     "id": "338760"
     },
     {
      "name": "John Company",
-     "id": null
+     "id": "211716"
     },
     {
      "name": "Merchant of Venus",
-     "id": null
+     "id": "230"
     }
    ],
    "sources": [
@@ -12444,6 +12704,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "Area control",
    "Drafting of any kind"
@@ -12524,7 +12787,7 @@
     },
     {
      "name": "The Networks",
-     "id": null
+     "id": "72321"
     },
     {
      "name": "Vinhos Deluxe Edition",
@@ -12625,6 +12888,9 @@
   "designers": [
    "James A. Wilson"
   ],
+  "designer_ids": {
+   "James A. Wilson": "91302"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -12712,7 +12978,7 @@
    "similar": [
     {
      "name": "Wingspan",
-     "id": null
+     "id": "266192"
     },
     {
      "name": "Res Arcana",
@@ -12720,15 +12986,15 @@
     },
     {
      "name": "Menara",
-     "id": null
+     "id": "244608"
     },
     {
      "name": "Viticulture",
-     "id": null
+     "id": "128621"
     },
     {
      "name": "Paladins of the West Kingdom",
-     "id": null
+     "id": "266810"
     }
    ],
    "teachers": [
@@ -12784,6 +13050,9 @@
   "designers": [
    "Hjalmar Hach"
   ],
+  "designer_ids": {
+   "Hjalmar Hach": "91211"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -12862,11 +13131,11 @@
    "similar": [
     {
      "name": "Photosynthesis",
-     "id": null
+     "id": "218603"
     },
     {
      "name": "Tang Garden",
-     "id": null
+     "id": "252153"
     }
    ],
    "sources": [
@@ -12935,6 +13204,11 @@
    "Dmitry Knorre",
    "Sergey Machin"
   ],
+  "designer_ids": {
+   "Dominic Crapuchettes": "3245",
+   "Dmitry Knorre": "39262",
+   "Sergey Machin": "9247"
+  },
   "traits": [
    "Direct conflict",
    "Hidden information"
@@ -13028,23 +13302,23 @@
    "similar": [
     {
      "name": "Evolution",
-     "id": null
+     "id": "1080"
     },
     {
      "name": "Wingspan",
-     "id": null
+     "id": "266192"
     },
     {
      "name": "Bios: Megafauna",
-     "id": null
+     "id": "97915"
     },
     {
      "name": "Dominant Species",
-     "id": null
+     "id": "62219"
     },
     {
      "name": "Ecos: First Continent",
-     "id": null
+     "id": "279254"
     }
    ],
    "teachers": [
@@ -13101,6 +13375,11 @@
    "Elan Lee",
    "Shane Small"
   ],
+  "designer_ids": {
+   "Matthew Inman": "71478",
+   "Elan Lee": "80158",
+   "Shane Small": "5874"
+  },
   "traits": [
    "Set collection",
    "Direct conflict"
@@ -13208,11 +13487,11 @@
    "similar": [
     {
      "name": "Munchkin",
-     "id": null
+     "id": "1927"
     },
     {
      "name": "Sushi Go Party!",
-     "id": null
+     "id": "192291"
     },
     {
      "name": "Skull",
@@ -13220,7 +13499,7 @@
     },
     {
      "name": "Throw Throw Burrito",
-     "id": null
+     "id": "274533"
     },
     {
      "name": "Coup",
@@ -13282,6 +13561,10 @@
    "S J Macdonald",
    "Shem Phillips"
   ],
+  "designer_ids": {
+   "S J Macdonald": "103821",
+   "Shem Phillips": "12547"
+  },
   "traits": [
    "Multi-track",
    "Parallel engine"
@@ -13365,11 +13648,11 @@
    "similar": [
     {
      "name": "Raiders of the North Sea",
-     "id": null
+     "id": "170042"
     },
     {
      "name": "Architects of the West Kingdom",
-     "id": null
+     "id": "236457"
     },
     {
      "name": "Trade Towns",
@@ -13377,11 +13660,11 @@
     },
     {
      "name": "Fresh Fish",
-     "id": null
+     "id": "1017"
     },
     {
      "name": "Blackout: Hong Kong",
-     "id": null
+     "id": "262215"
     }
    ],
    "teachers": [
@@ -13441,6 +13724,9 @@
   "designers": [
    "Friedemann Friese"
   ],
+  "designer_ids": {
+   "Friedemann Friese": "141"
+  },
   "traits": [
    "Parallel engine",
    "Deck or bag building",
@@ -13525,7 +13811,7 @@
    "similar": [
     {
      "name": "Fresh Fish",
-     "id": null
+     "id": "1017"
     },
     {
      "name": "Power Grid",
@@ -13541,7 +13827,7 @@
     },
     {
      "name": "Fields of Arle",
-     "id": null
+     "id": "159675"
     }
    ],
    "teachers": [
@@ -13614,6 +13900,10 @@
    "Joseph Z. Chen",
    "Justin Faulkner"
   ],
+  "designer_ids": {
+   "Joseph Z. Chen": "97506",
+   "Justin Faulkner": "109582"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -13706,15 +13996,15 @@
    "similar": [
     {
      "name": "Gizmos",
-     "id": null
+     "id": "246192"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Machi Koro",
-     "id": null
+     "id": "143884"
     },
     {
      "name": "Century: Spice Road",
@@ -13722,7 +14012,7 @@
     },
     {
      "name": "Roll for the Galaxy",
-     "id": null
+     "id": "132531"
     }
    ],
    "teachers": [
@@ -13805,6 +14095,9 @@
   "designers": [
    "Uwe Rosenberg"
   ],
+  "designer_ids": {
+   "Uwe Rosenberg": "10"
+  },
   "traits": [
    "Parallel engine",
    "Tableau multipliers",
@@ -13882,7 +14175,7 @@
     },
     {
      "name": "Caverna",
-     "id": null
+     "id": "102794"
     },
     {
      "name": "Agricola",
@@ -13890,7 +14183,7 @@
     },
     {
      "name": "Fields of Arle",
-     "id": null
+     "id": "159675"
     },
     {
      "name": "Barrage",
@@ -13949,6 +14242,10 @@
    "Dimitri Perrier",
    "Matthieu Verdier"
   ],
+  "designer_ids": {
+   "Dimitri Perrier": "106956",
+   "Matthieu Verdier": "123695"
+  },
   "traits": [
    "End-game bonuses",
    "Area control",
@@ -14022,7 +14319,7 @@
    "similar": [
     {
      "name": "Bruxelles 1893: Belle Époque",
-     "id": null
+     "id": "345155"
     }
    ],
    "sources": [
@@ -14092,6 +14389,9 @@
   "designers": [
    "Bruno Cathala"
   ],
+  "designer_ids": {
+   "Bruno Cathala": "1727"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -14179,23 +14479,23 @@
    "similar": [
     {
      "name": "The Isle of Cats",
-     "id": null
+     "id": "281259"
     },
     {
      "name": "Yspahan",
-     "id": null
+     "id": "22345"
     },
     {
      "name": "Trekking Through History",
-     "id": null
+     "id": "353288"
     },
     {
      "name": "Raiders of the North Sea",
-     "id": null
+     "id": "170042"
     },
     {
      "name": "Lords of Vegas",
-     "id": null
+     "id": "20437"
     }
    ],
    "teachers": [
@@ -14252,6 +14552,10 @@
    "J.B. Howell",
    "Michael Mihealsick"
   ],
+  "designer_ids": {
+   "J.B. Howell": "97699",
+   "Michael Mihealsick": "115813"
+  },
   "traits": [
    "Contested market",
    "Deck or bag building",
@@ -14331,23 +14635,23 @@
    "similar": [
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     },
     {
      "name": "Terraforming Mars",
-     "id": null
+     "id": "167791"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     }
    ],
    "sources": [
@@ -14418,6 +14722,10 @@
    "Jeroen Doumen",
    "Joris Wiersinga"
   ],
+  "designer_ids": {
+   "Jeroen Doumen": "270",
+   "Joris Wiersinga": "407"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -14507,7 +14815,7 @@
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "Container",
@@ -14515,11 +14823,11 @@
     },
     {
      "name": "Automobiles",
-     "id": null
+     "id": "180680"
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     }
    ],
    "teachers": [
@@ -14593,6 +14901,10 @@
    "Jens Drögemüller",
    "Helge Ostertag"
   ],
+  "designer_ids": {
+   "Jens Drögemüller": "4300",
+   "Helge Ostertag": "4407"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -14671,15 +14983,15 @@
     },
     {
      "name": "The Great Zimbabwe",
-     "id": null
+     "id": "111341"
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     },
     {
      "name": "Teotihuacan: City of Gods",
@@ -14758,6 +15070,11 @@
    "Dennis Northcott",
    "Koltin Thompson"
   ],
+  "designer_ids": {
+   "T.K. King": "129131",
+   "Dennis Northcott": "154241",
+   "Koltin Thompson": "128912"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -14848,7 +15165,7 @@
    "similar": [
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     },
     {
      "name": "Barrage",
@@ -14860,7 +15177,7 @@
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Lisboa",
@@ -14926,6 +15243,9 @@
   "designers": [
    "Vlaada Chvátil"
   ],
+  "designer_ids": {
+   "Vlaada Chvátil": "789"
+  },
   "traits": [
    "Multi-track"
   ],
@@ -15008,23 +15328,23 @@
    "similar": [
     {
      "name": "Space Alert",
-     "id": null
+     "id": "38453"
     },
     {
      "name": "Merchants & Marauders",
-     "id": null
+     "id": "25292"
     },
     {
      "name": "Roll for the Galaxy",
-     "id": null
+     "id": "132531"
     },
     {
      "name": "Cosmic Encounter",
-     "id": null
+     "id": "15"
     },
     {
      "name": "Flotilla",
-     "id": null
+     "id": "16287"
     }
    ],
    "teachers": [
@@ -15088,6 +15408,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -15251,6 +15574,9 @@
   "designers": [
    "Xavier Georges"
   ],
+  "designer_ids": {
+   "Xavier Georges": "11312"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -15442,6 +15768,9 @@
   "designers": [
    "Isaac Childres"
   ],
+  "designer_ids": {
+   "Isaac Childres": "69802"
+  },
   "traits": [
    "Parallel engine",
    "Direct conflict",
@@ -15508,23 +15837,23 @@
    "similar": [
     {
      "name": "Gloomhaven",
-     "id": null
+     "id": "174430"
     },
     {
      "name": "Frosthaven",
-     "id": null
+     "id": "295770"
     },
     {
      "name": "Sleeping Gods",
-     "id": null
+     "id": "255984"
     },
     {
      "name": "Tainted Grail: The Fall of Avalon",
-     "id": null
+     "id": "264220"
     },
     {
      "name": "Marvel Champions: The Card Game",
-     "id": null
+     "id": "285774"
     }
    ],
    "teachers": [
@@ -15581,6 +15910,11 @@
    "Virginio Gigli",
    "Simone Luciani"
   ],
+  "designer_ids": {
+   "Flaminia Brasini": "6818",
+   "Virginio Gigli": "6817",
+   "Simone Luciani": "35418"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -15660,11 +15994,11 @@
    "similar": [
     {
      "name": "Lorenzo il Magnifico",
-     "id": null
+     "id": "203993"
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     },
     {
      "name": "Tzolk'in: The Mayan Calendar",
@@ -15672,11 +16006,11 @@
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "Trickerion: Legends of Illusion",
-     "id": null
+     "id": "163068"
     }
    ],
    "teachers": [
@@ -15739,6 +16073,10 @@
    "Wolfgang Kramer",
    "Richard Ulrich"
   ],
+  "designer_ids": {
+   "Wolfgang Kramer": "7",
+   "Richard Ulrich": "8"
+  },
   "traits": [
    "Auction of any kind",
    "Area control",
@@ -15823,19 +16161,19 @@
    "similar": [
     {
      "name": "Tikal",
-     "id": null
+     "id": "54"
     },
     {
      "name": "Web of Power",
-     "id": null
+     "id": "491"
     },
     {
      "name": "Louis XIV",
-     "id": null
+     "id": "13642"
     },
     {
      "name": "Traders of Genoa",
-     "id": null
+     "id": "1345"
     },
     {
      "name": "Chinatown",
@@ -15903,6 +16241,9 @@
   "designers": [
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "Set collection",
    "Multi-track",
@@ -15988,7 +16329,7 @@
    "similar": [
     {
      "name": "Orléans",
-     "id": null
+     "id": "164928"
     },
     {
      "name": "Voyages of Marco Polo",
@@ -16061,6 +16402,9 @@
   "designers": [
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "Set collection",
    "Multi-track",
@@ -16145,15 +16489,15 @@
    "similar": [
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Great Western Trail: New Zealand",
-     "id": null
+     "id": "380607"
     },
     {
      "name": "Orléans",
-     "id": null
+     "id": "164928"
     },
     {
      "name": "Concordia",
@@ -16220,6 +16564,9 @@
   "designers": [
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "Set collection",
    "Multi-track",
@@ -16304,15 +16651,15 @@
    "similar": [
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Great Western Trail: Argentina",
-     "id": null
+     "id": "364011"
     },
     {
      "name": "Orléans",
-     "id": null
+     "id": "164928"
     },
     {
      "name": "Concordia",
@@ -16383,6 +16730,10 @@
    "Jeroen Doumen",
    "Joris Wiersinga"
   ],
+  "designer_ids": {
+   "Jeroen Doumen": "270",
+   "Joris Wiersinga": "407"
+  },
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -16545,6 +16896,9 @@
   "designers": [
    "Andreas Steding"
   ],
+  "designer_ids": {
+   "Andreas Steding": "1018"
+  },
   "traits": [
    "Set collection",
    "Area control",
@@ -16637,19 +16991,19 @@
     },
     {
      "name": "Hansa Teutonica",
-     "id": null
+     "id": "43015"
     },
     {
      "name": "Fresko",
-     "id": null
+     "id": "66188"
     },
     {
      "name": "Vasco da Gama",
-     "id": null
+     "id": "41002"
     },
     {
      "name": "Cacao",
-     "id": null
+     "id": "171499"
     }
    ],
    "teachers": [
@@ -16706,6 +17060,9 @@
   "designers": [
    "Andreas Steding"
   ],
+  "designer_ids": {
+   "Andreas Steding": "1018"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -16789,7 +17146,7 @@
     },
     {
      "name": "El Grande",
-     "id": null
+     "id": "93"
     },
     {
      "name": "The Voyages of Marco Polo",
@@ -16797,7 +17154,7 @@
     },
     {
      "name": "Navegador",
-     "id": null
+     "id": "66589"
     },
     {
      "name": "Yokohama",
@@ -16858,6 +17215,9 @@
   "designers": [
    "Johan Benvenuto"
   ],
+  "designer_ids": {
+   "Johan Benvenuto": "95323"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -16943,23 +17303,23 @@
    "similar": [
     {
      "name": "Cascadia",
-     "id": null
+     "id": "295947"
     },
     {
      "name": "Calico",
-     "id": null
+     "id": "283155"
     },
     {
      "name": "Dorfromantik: The Board Game",
-     "id": null
+     "id": "370591"
     },
     {
      "name": "Photosynthesis",
-     "id": null
+     "id": "218603"
     },
     {
      "name": "Sobek",
-     "id": null
+     "id": "67185"
     }
    ],
    "teachers": [
@@ -17019,6 +17379,9 @@
   "designers": [
    "Uwe Rosenberg"
   ],
+  "designer_ids": {
+   "Uwe Rosenberg": "10"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -17113,7 +17476,7 @@
     },
     {
      "name": "Caverna",
-     "id": null
+     "id": "102794"
     },
     {
      "name": "A Feast for Odin",
@@ -17125,7 +17488,7 @@
     },
     {
      "name": "Fields of Arle",
-     "id": null
+     "id": "159675"
     }
    ],
    "teachers": [
@@ -17182,6 +17545,10 @@
    "Michael Kiesling",
    "Andreas Schmidt"
   ],
+  "designer_ids": {
+   "Michael Kiesling": "42",
+   "Andreas Schmidt": "30744"
+  },
   "traits": [
    "Multi-track"
   ],
@@ -17268,7 +17635,7 @@
     },
     {
      "name": "Villagers",
-     "id": null
+     "id": "241724"
     },
     {
      "name": "Barrage",
@@ -17280,7 +17647,7 @@
     },
     {
      "name": "Vinhos",
-     "id": null
+     "id": "42052"
     }
    ],
    "teachers": [
@@ -17342,6 +17709,10 @@
    "Vangelis Bagiartakis",
    "Varnavas Timotheou"
   ],
+  "designer_ids": {
+   "Vangelis Bagiartakis": "35005",
+   "Varnavas Timotheou": "130887"
+  },
   "traits": [
    "Worker placement of any kind"
   ],
@@ -17424,7 +17795,7 @@
    "similar": [
     {
      "name": "Kapital",
-     "id": null
+     "id": "311484"
     },
     {
      "name": "Root",
@@ -17432,7 +17803,7 @@
     },
     {
      "name": "Founders of Gloomhaven",
-     "id": null
+     "id": "214032"
     },
     {
      "name": "Brass: Birmingham",
@@ -17521,6 +17892,12 @@
    "Jon Manker",
    "Dom Rougier"
   ],
+  "designer_ids": {
+   "Phil Eklund": "174",
+   "Justin Grey": "120251",
+   "Jon Manker": "52913",
+   "Dom Rougier": "118461"
+  },
   "traits": [
    "Auction of any kind",
    "Direct conflict",
@@ -17611,19 +17988,19 @@
    "similar": [
     {
      "name": "Bios: Megafauna",
-     "id": null
+     "id": "97915"
     },
     {
      "name": "Pax Renaissance",
-     "id": null
+     "id": "198953"
     },
     {
      "name": "Greenland",
-     "id": null
+     "id": "156501"
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Gaia Project",
@@ -17678,6 +18055,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Auction of any kind"
   ],
@@ -17777,7 +18157,7 @@
     },
     {
      "name": "Verräter",
-     "id": null
+     "id": "72"
     },
     {
      "name": "Medici",
@@ -17835,6 +18215,10 @@
    "Jeroen Doumen",
    "Joris Wiersinga"
   ],
+  "designer_ids": {
+   "Jeroen Doumen": "270",
+   "Joris Wiersinga": "407"
+  },
   "traits": [
    "Multi-track",
    "Tableau multipliers",
@@ -17932,7 +18316,7 @@
     },
     {
      "name": "The Great Zimbabwe",
-     "id": null
+     "id": "111341"
     },
     {
      "name": "Indonesia",
@@ -17999,6 +18383,9 @@
   "designers": [
    "Amabel Holland"
   ],
+  "designer_ids": {
+   "Amabel Holland": "50619"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -18083,15 +18470,15 @@
    "similar": [
     {
      "name": "Irish Gauge",
-     "id": null
+     "id": "161882"
     },
     {
      "name": "Chicago Express",
-     "id": null
+     "id": "31730"
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "18xx family",
@@ -18099,7 +18486,7 @@
     },
     {
      "name": "Snowdonia",
-     "id": null
+     "id": "119432"
     }
    ],
    "teachers": [
@@ -18159,6 +18546,10 @@
    "Joanna Kijanka",
    "Ignacy Trzewiczek"
   ],
+  "designer_ids": {
+   "Joanna Kijanka": "117118",
+   "Ignacy Trzewiczek": "4735"
+  },
   "traits": [
    "Direct conflict",
    "Worker placement of any kind"
@@ -18223,23 +18614,23 @@
    "similar": [
     {
      "name": "Imperial Settlers",
-     "id": null
+     "id": "154203"
     },
     {
      "name": "Raiders of the North Sea",
-     "id": null
+     "id": "170042"
     },
     {
      "name": "Champions of Midgard",
-     "id": null
+     "id": "172287"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Robinson Crusoe",
-     "id": null
+     "id": "51319"
     }
    ],
    "teachers": [
@@ -18308,6 +18699,9 @@
   "designers": [
    "Alexander Huemer"
   ],
+  "designer_ids": {
+   "Alexander Huemer": "80866"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -18396,11 +18790,11 @@
    "similar": [
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Irish Gauge",
-     "id": null
+     "id": "161882"
     },
     {
      "name": "Indonesia",
@@ -18412,7 +18806,7 @@
     },
     {
      "name": "Snowdonia",
-     "id": null
+     "id": "119432"
     }
    ],
    "teachers": [
@@ -18475,6 +18869,10 @@
    "Nigel Buckle",
    "Dávid Turczi"
   ],
+  "designer_ids": {
+   "Nigel Buckle": "5864",
+   "Dávid Turczi": "76227"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -18555,11 +18953,11 @@
    "similar": [
     {
      "name": "Imperium: Legends",
-     "id": null
+     "id": "318182"
     },
     {
      "name": "Race for the Galaxy",
-     "id": null
+     "id": "28143"
     },
     {
      "name": "Innovation",
@@ -18567,11 +18965,11 @@
     },
     {
      "name": "Nemo's War",
-     "id": null
+     "id": "39232"
     },
     {
      "name": "Tyrants of the Underdark",
-     "id": null
+     "id": "189932"
     }
    ],
    "teachers": [
@@ -18629,6 +19027,10 @@
    "Nigel Buckle",
    "Dávid Turczi"
   ],
+  "designer_ids": {
+   "Nigel Buckle": "5864",
+   "Dávid Turczi": "76227"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -18714,11 +19116,11 @@
    "similar": [
     {
      "name": "Imperium: Classics",
-     "id": null
+     "id": "318184"
     },
     {
      "name": "Race for the Galaxy",
-     "id": null
+     "id": "28143"
     },
     {
      "name": "Innovation",
@@ -18726,11 +19128,11 @@
     },
     {
      "name": "Nemo's War",
-     "id": null
+     "id": "39232"
     },
     {
      "name": "Tyrants of the Underdark",
-     "id": null
+     "id": "189932"
     }
    ],
    "teachers": [
@@ -18796,6 +19198,10 @@
    "Jeroen Doumen",
    "Joris Wiersinga"
   ],
+  "designer_ids": {
+   "Jeroen Doumen": "270",
+   "Joris Wiersinga": "407"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -18896,7 +19302,7 @@
     },
     {
      "name": "The Great Zimbabwe",
-     "id": null
+     "id": "111341"
     },
     {
      "name": "Brass: Birmingham",
@@ -18904,7 +19310,7 @@
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     }
    ],
    "teachers": [
@@ -18956,6 +19362,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Tableau multipliers",
    "Co-operative"
@@ -19032,23 +19441,23 @@
    "similar": [
     {
      "name": "Ingenious",
-     "id": null
+     "id": "9674"
     },
     {
      "name": "Qwirkle",
-     "id": null
+     "id": "25669"
     },
     {
      "name": "Kingdomino",
-     "id": null
+     "id": "204583"
     },
     {
      "name": "Azul",
-     "id": null
+     "id": "230802"
     },
     {
      "name": "Tsuro",
-     "id": null
+     "id": "16992"
     }
    ],
    "teachers": [
@@ -19105,6 +19514,9 @@
   "designers": [
    "Carl Chudyk"
   ],
+  "designer_ids": {
+   "Carl Chudyk": "6001"
+  },
   "traits": [
    "Multi-track",
    "Tableau multipliers",
@@ -19194,11 +19606,11 @@
    "similar": [
     {
      "name": "Innovation Ultimate",
-     "id": null
+     "id": "388367"
     },
     {
      "name": "Glory to Rome",
-     "id": null
+     "id": "19857"
     },
     {
      "name": "Res Arcana",
@@ -19206,11 +19618,11 @@
     },
     {
      "name": "Race for the Galaxy",
-     "id": null
+     "id": "28143"
     },
     {
      "name": "Roll for the Galaxy",
-     "id": null
+     "id": "132531"
     }
    ],
    "teachers": [
@@ -19270,6 +19682,9 @@
   "designers": [
    "Carl Chudyk"
   ],
+  "designer_ids": {
+   "Carl Chudyk": "6001"
+  },
   "traits": [
    "Multi-track",
    "Tableau multipliers",
@@ -19355,15 +19770,15 @@
     },
     {
      "name": "Glory to Rome",
-     "id": null
+     "id": "19857"
     },
     {
      "name": "Race for the Galaxy",
-     "id": null
+     "id": "28143"
     },
     {
      "name": "Roll for the Galaxy",
-     "id": null
+     "id": "132531"
     }
    ],
    "teachers": [
@@ -19413,6 +19828,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "Parallel engine",
    "Worker placement of any kind"
@@ -19512,7 +19930,7 @@
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     }
    ],
    "teachers": [
@@ -19571,6 +19989,9 @@
   "designers": [
    "Amabel Holland"
   ],
+  "designer_ids": {
+   "Amabel Holland": "50619"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -19661,23 +20082,23 @@
    "similar": [
     {
      "name": "Chicago Express",
-     "id": null
+     "id": "31730"
     },
     {
      "name": "Australian Rails",
-     "id": null
+     "id": "935"
     },
     {
      "name": "1830",
-     "id": null
+     "id": "421"
     },
     {
      "name": "Steam Barons",
-     "id": null
+     "id": "56890"
     },
     {
      "name": "Volldampf",
-     "id": null
+     "id": "1338"
     }
    ],
    "teachers": [
@@ -19728,6 +20149,10 @@
    "Bruno Cathala",
    "Evan Singh"
   ],
+  "designer_ids": {
+   "Bruno Cathala": "1727",
+   "Evan Singh": "118799"
+  },
   "traits": [
    "Multi-track",
    "Area control"
@@ -19810,23 +20235,23 @@
    "similar": [
     {
      "name": "Azul",
-     "id": null
+     "id": "230802"
     },
     {
      "name": "Yspahan",
-     "id": null
+     "id": "22345"
     },
     {
      "name": "Coloma",
-     "id": null
+     "id": "186692"
     },
     {
      "name": "Habitats",
-     "id": null
+     "id": "200853"
     },
     {
      "name": "Cacao",
-     "id": null
+     "id": "171499"
     }
    ],
    "teachers": [
@@ -19886,6 +20311,9 @@
   "designers": [
    "Rüdiger Dorn"
   ],
+  "designer_ids": {
+   "Rüdiger Dorn": "381"
+  },
   "traits": [
    "Set collection",
    "Network building"
@@ -19965,15 +20393,15 @@
     },
     {
      "name": "Orleans",
-     "id": null
+     "id": "164928"
     },
     {
      "name": "Merchants of Venice",
-     "id": null
+     "id": "13551"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "The Gallerist",
@@ -20039,6 +20467,9 @@
   "designers": [
    "Frédéric Guérard"
   ],
+  "designer_ids": {
+   "Frédéric Guérard": "66017"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -20128,11 +20559,11 @@
     },
     {
      "name": "Terraforming Mars",
-     "id": null
+     "id": "167791"
     },
     {
      "name": "Bloodstones",
-     "id": null
+     "id": "284587"
     }
    ],
    "teachers": [
@@ -20188,6 +20619,10 @@
    "Ludovic Roudy",
    "Bruno Sautter"
   ],
+  "designer_ids": {
+   "Ludovic Roudy": "51255",
+   "Bruno Sautter": "51055"
+  },
   "traits": [
    "Co-operative"
   ],
@@ -20284,23 +20719,23 @@
    "similar": [
     {
      "name": "Codenames",
-     "id": null
+     "id": "178900"
     },
     {
      "name": "Wavelength",
-     "id": null
+     "id": "2745"
     },
     {
      "name": "The Mind",
-     "id": null
+     "id": "244992"
     },
     {
      "name": "Decrypto",
-     "id": null
+     "id": "65952"
     },
     {
      "name": "Concept",
-     "id": null
+     "id": "147151"
     }
    ],
    "teachers": [
@@ -20354,6 +20789,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "Parallel engine",
    "Worker placement of any kind"
@@ -20525,6 +20963,10 @@
    "Sebastian Bleasdale",
    "Richard Breese"
   ],
+  "designer_ids": {
+   "Sebastian Bleasdale": "7448",
+   "Richard Breese": "134"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -20672,6 +21114,9 @@
   "designers": [
    "Head Quarter Simulation Game Club"
   ],
+  "designer_ids": {
+   "Head Quarter Simulation Game Club": "117987"
+  },
   "traits": [
    "Multi-track",
    "Parallel engine",
@@ -20771,7 +21216,7 @@
     },
     {
      "name": "Nusfjord",
-     "id": null
+     "id": "234277"
     }
    ],
    "teachers": [
@@ -20832,6 +21277,9 @@
   "designers": [
    "Peer Sylvester"
   ],
+  "designer_ids": {
+   "Peer Sylvester": "5554"
+  },
   "traits": [
    "Contested market",
    "Area control"
@@ -20909,23 +21357,23 @@
    "similar": [
     {
      "name": "El Grande",
-     "id": null
+     "id": "93"
     },
     {
      "name": "Inis",
-     "id": null
+     "id": "155821"
     },
     {
      "name": "Chaos in the Old World",
-     "id": null
+     "id": "43111"
     },
     {
      "name": "Tammany Hall",
-     "id": null
+     "id": "30645"
     },
     {
      "name": "Blood Rage",
-     "id": null
+     "id": "170216"
     }
    ],
    "teachers": [
@@ -20991,6 +21439,9 @@
   "designers": [
    "Richard Garfield"
   ],
+  "designer_ids": {
+   "Richard Garfield": "14"
+  },
   "traits": [
    "Direct conflict",
    "Drafting of any kind"
@@ -21078,23 +21529,23 @@
    "similar": [
     {
      "name": "King of New York",
-     "id": null
+     "id": "160499"
     },
     {
      "name": "Munchkin",
-     "id": null
+     "id": "1927"
     },
     {
      "name": "Cthulhu Wars",
-     "id": null
+     "id": "139976"
     },
     {
      "name": "Dice Forge",
-     "id": null
+     "id": "194594"
     },
     {
      "name": "Machi Koro",
-     "id": null
+     "id": "143884"
     }
    ],
    "teachers": [
@@ -21159,6 +21610,9 @@
   "designers": [
    "Bruno Cathala"
   ],
+  "designer_ids": {
+   "Bruno Cathala": "1727"
+  },
   "traits": [
    "Area control",
    "Drafting of any kind"
@@ -21242,19 +21696,19 @@
    "similar": [
     {
      "name": "Azul",
-     "id": null
+     "id": "230802"
     },
     {
      "name": "Kingdomino Origins",
-     "id": null
+     "id": "340041"
     },
     {
      "name": "Karuba",
-     "id": null
+     "id": "183251"
     },
     {
      "name": "Cascadia",
-     "id": null
+     "id": "295947"
     },
     {
      "name": "Isle of Cats",
@@ -21312,6 +21766,9 @@
   "designers": [
    "Matthias Cramer"
   ],
+  "designer_ids": {
+   "Matthias Cramer": "34699"
+  },
   "traits": [
    "Set collection",
    "Multi-track",
@@ -21400,11 +21857,11 @@
     },
     {
      "name": "Automobiles",
-     "id": null
+     "id": "180680"
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Container",
@@ -21412,7 +21869,7 @@
     },
     {
      "name": "Long Shot: The Dice Game",
-     "id": null
+     "id": "295374"
     }
    ],
    "teachers": [
@@ -21472,6 +21929,11 @@
    "Petr Čáslava",
    "Pavel Jarosch"
   ],
+  "designer_ids": {
+   "Ondřej Bystroň": "152610",
+   "Petr Čáslava": "126872",
+   "Pavel Jarosch": "152611"
+  },
   "traits": [
    "Contested market"
   ],
@@ -21562,7 +22024,7 @@
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "Barrage",
@@ -21570,7 +22032,7 @@
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     }
    ],
    "teachers": [
@@ -21634,6 +22096,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -21719,7 +22184,7 @@
    "similar": [
     {
      "name": "Vinhos",
-     "id": null
+     "id": "42052"
     },
     {
      "name": "On Mars",
@@ -21727,7 +22192,7 @@
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "The Gallerist",
@@ -21784,6 +22249,10 @@
    "Shun Taguchi",
    "Aya Taguchi"
   ],
+  "designer_ids": {
+   "Shun Taguchi": "75617",
+   "Aya Taguchi": "75618"
+  },
   "traits": [
    "Set collection",
    "Worker placement of any kind"
@@ -21871,11 +22340,11 @@
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     },
     {
      "name": "Viticulture",
-     "id": null
+     "id": "128621"
     },
     {
      "name": "Agricola",
@@ -21883,7 +22352,7 @@
     },
     {
      "name": "New Bedford",
-     "id": null
+     "id": "157413"
     }
    ],
    "teachers": [
@@ -21943,6 +22412,9 @@
   "designers": [
    "Martin Wallace"
   ],
+  "designer_ids": {
+   "Martin Wallace": "6"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -22022,15 +22494,15 @@
     },
     {
      "name": "Race for the Galaxy",
-     "id": null
+     "id": "28143"
     },
     {
      "name": "San Juan",
-     "id": null
+     "id": "8217"
     },
     {
      "name": "Glory to Rome",
-     "id": null
+     "id": "19857"
     },
     {
      "name": "Coup",
@@ -22107,6 +22579,10 @@
    "Antoine Bauza",
    "Bruno Cathala"
   ],
+  "designer_ids": {
+   "Antoine Bauza": "9714",
+   "Bruno Cathala": "1727"
+  },
   "traits": [
    "Set collection",
    "Multi-track",
@@ -22182,7 +22658,7 @@
     },
     {
      "name": "Watergate",
-     "id": null
+     "id": "12150"
     },
     {
      "name": "Jaws the Board Game",
@@ -22190,7 +22666,7 @@
     },
     {
      "name": "Battle Line",
-     "id": null
+     "id": "760"
     }
    ],
    "teachers": [
@@ -22253,6 +22729,11 @@
    "Virginio Gigli",
    "Simone Luciani"
   ],
+  "designer_ids": {
+   "Flaminia Brasini": "6818",
+   "Virginio Gigli": "6817",
+   "Simone Luciani": "35418"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -22325,7 +22806,7 @@
    "similar": [
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Tzolk'in: The Mayan Calendar",
@@ -22337,7 +22818,7 @@
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "Barrage",
@@ -22403,6 +22884,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Set collection"
   ],
@@ -22478,11 +22962,11 @@
     },
     {
      "name": "Battle Line",
-     "id": null
+     "id": "760"
     },
     {
      "name": "Schotten Totten",
-     "id": null
+     "id": "372"
     },
     {
      "name": "7 Wonders Duel",
@@ -22490,7 +22974,7 @@
     },
     {
      "name": "Air, Land, & Sea",
-     "id": null
+     "id": "247367"
     }
    ],
    "teachers": [
@@ -22566,6 +23050,10 @@
    "Elwen",
    "Mín"
   ],
+  "designer_ids": {
+   "Elwen": "127823",
+   "Mín": "127822"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -22656,15 +23144,15 @@
     },
     {
      "name": "Everdell",
-     "id": null
+     "id": "199792"
     },
     {
      "name": "Clank!: A Deck-Building Adventure",
-     "id": null
+     "id": "201808"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     }
    ],
    "teachers": [
@@ -22722,6 +23210,11 @@
    "Justin Kemppainen",
    "Alexandar Ortloff-Tang"
   ],
+  "designer_ids": {
+   "Seiji Kanai": "9495",
+   "Justin Kemppainen": "72460",
+   "Alexandar Ortloff-Tang": "85379"
+  },
   "traits": [
    "Direct conflict"
   ],
@@ -22817,11 +23310,11 @@
     },
     {
      "name": "The Fox in the Forest",
-     "id": null
+     "id": "221965"
     },
     {
      "name": "Sushi Go!",
-     "id": null
+     "id": "133473"
     },
     {
      "name": "Skull",
@@ -22829,7 +23322,7 @@
     },
     {
      "name": "No Thanks!",
-     "id": null
+     "id": "12942"
     }
    ],
    "teachers": [
@@ -22892,6 +23385,9 @@
   "designers": [
    "Kasper Lapp"
   ],
+  "designer_ids": {
+   "Kasper Lapp": "95143"
+  },
   "traits": [
    "Parallel engine",
    "Co-operative"
@@ -22995,23 +23491,23 @@
    "similar": [
     {
      "name": "Space Alert",
-     "id": null
+     "id": "38453"
     },
     {
      "name": "The Mind",
-     "id": null
+     "id": "244992"
     },
     {
      "name": "Escape: The Curse of the Temple",
-     "id": null
+     "id": "113294"
     },
     {
      "name": "Sky Team",
-     "id": null
+     "id": "373106"
     },
     {
      "name": "Chronicles of Crime",
-     "id": null
+     "id": "239188"
     }
    ],
    "teachers": [
@@ -23067,6 +23563,10 @@
    "Trevor Benjamin",
    "Brett J. Gilbert"
   ],
+  "designer_ids": {
+   "Trevor Benjamin": "90410",
+   "Brett J. Gilbert": "56058"
+  },
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -23139,11 +23639,11 @@
    "similar": [
     {
      "name": "Battle Line",
-     "id": null
+     "id": "760"
     },
     {
      "name": "Schotten Totten",
-     "id": null
+     "id": "372"
     },
     {
      "name": "Jaipur",
@@ -23155,7 +23655,7 @@
     },
     {
      "name": "Fantasy Realms",
-     "id": null
+     "id": "223040"
     }
    ],
    "teachers": [
@@ -23227,6 +23727,9 @@
   "designers": [
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -23313,11 +23816,11 @@
    "similar": [
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "The Gallerist",
@@ -23325,7 +23828,7 @@
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     },
     {
      "name": "Barrage",
@@ -23387,6 +23890,10 @@
    "Ekaterina Gorn",
    "Igor Sklyuev"
   ],
+  "designer_ids": {
+   "Ekaterina Gorn": "94364",
+   "Igor Sklyuev": "94365"
+  },
   "traits": [
    "Direct conflict"
   ],
@@ -23461,23 +23968,23 @@
    "similar": [
     {
      "name": "Cosmic Encounter",
-     "id": null
+     "id": "15"
     },
     {
      "name": "Eclipse",
-     "id": null
+     "id": "824"
     },
     {
      "name": "Twilight Imperium",
-     "id": null
+     "id": "24"
     },
     {
      "name": "Small World",
-     "id": null
+     "id": "40692"
     },
     {
      "name": "Nexus Ops",
-     "id": null
+     "id": "15363"
     }
    ],
    "teachers": [
@@ -23533,6 +24040,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -23634,7 +24144,7 @@
     },
     {
      "name": "High Society",
-     "id": null
+     "id": "220"
     },
     {
      "name": "Modern Art",
@@ -23642,7 +24152,7 @@
     },
     {
      "name": "Taj Mahal",
-     "id": null
+     "id": "475"
     }
    ],
    "teachers": [
@@ -23693,6 +24203,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Tableau multipliers",
    "Area control",
@@ -23769,15 +24282,15 @@
    "similar": [
     {
      "name": "Yellow & Yangtze",
-     "id": null
+     "id": "244114"
     },
     {
      "name": "Through the Ages",
-     "id": null
+     "id": "25613"
     },
     {
      "name": "Tigris & Euphrates",
-     "id": null
+     "id": "42"
     },
     {
      "name": "Blue Lagoon",
@@ -23785,7 +24298,7 @@
     },
     {
      "name": "The Palaces of Carrara",
-     "id": null
+     "id": "129948"
     }
    ],
    "teachers": [
@@ -23849,6 +24362,10 @@
    "Jay Cormier",
    "Sen-Foong Lim"
   ],
+  "designer_ids": {
+   "Jay Cormier": "20990",
+   "Sen-Foong Lim": "20991"
+  },
   "traits": [
    "Hidden information",
    "Co-operative"
@@ -23935,23 +24452,23 @@
    "similar": [
     {
      "name": "Hanabi",
-     "id": null
+     "id": "98778"
     },
     {
      "name": "The Mind",
-     "id": null
+     "id": "244992"
     },
     {
      "name": "Codenames Duet",
-     "id": null
+     "id": "224037"
     },
     {
      "name": "Sherlock Holmes Consulting Detective",
-     "id": null
+     "id": "2511"
     },
     {
      "name": "Decrypto",
-     "id": null
+     "id": "65952"
     }
    ],
    "teachers": [
@@ -24013,6 +24530,9 @@
   "designers": [
    "Stan Kordonskiy"
   ],
+  "designer_ids": {
+   "Stan Kordonskiy": "98387"
+  },
   "traits": [
    "Parallel engine",
    "Area control",
@@ -24086,23 +24606,23 @@
    "similar": [
     {
      "name": "Coimbra",
-     "id": null
+     "id": "245638"
     },
     {
      "name": "Tiletum",
-     "id": null
+     "id": "351913"
     },
     {
      "name": "The Artemis Project",
-     "id": null
+     "id": "254713"
     },
     {
      "name": "Rurik: Dawn of Kiev",
-     "id": null
+     "id": "228328"
     },
     {
      "name": "Dice Hospital",
-     "id": null
+     "id": "218121"
     }
    ],
    "sources": [
@@ -24160,6 +24680,9 @@
   "designers": [
    "Carl Chudyk"
   ],
+  "designer_ids": {
+   "Carl Chudyk": "6001"
+  },
   "traits": [
    "Set collection",
    "Co-operative"
@@ -24240,11 +24763,11 @@
    "similar": [
     {
      "name": "Glory to Rome",
-     "id": null
+     "id": "19857"
     },
     {
      "name": "San Juan",
-     "id": null
+     "id": "8217"
     },
     {
      "name": "Innovation",
@@ -24322,6 +24845,10 @@
    "Oleksandr Nevskiy",
    "Oleg Sidorenko"
   ],
+  "designer_ids": {
+   "Oleksandr Nevskiy": "49695",
+   "Oleg Sidorenko": "51434"
+  },
   "traits": [
    "Co-operative"
   ],
@@ -24417,23 +24944,23 @@
    "similar": [
     {
      "name": "Dixit",
-     "id": null
+     "id": "39856"
     },
     {
      "name": "Detective: A Modern Crime Board Game",
-     "id": null
+     "id": "223321"
     },
     {
      "name": "The Vale of Eternity",
-     "id": null
+     "id": "385529"
     },
     {
      "name": "Photosynthesis",
-     "id": null
+     "id": "218603"
     },
     {
      "name": "Just One",
-     "id": null
+     "id": "254640"
     }
    ],
    "teachers": [
@@ -24492,6 +25019,9 @@
   "designers": [
    "Mac Gerdts"
   ],
+  "designer_ids": {
+   "Mac Gerdts": "6045"
+  },
   "traits": [
    "Multi-track",
    "Contested market"
@@ -24578,11 +25108,11 @@
    "similar": [
     {
      "name": "Antike",
-     "id": null
+     "id": "19600"
     },
     {
      "name": "Imperial",
-     "id": null
+     "id": "24181"
     },
     {
      "name": "Puerto Rico",
@@ -24590,7 +25120,7 @@
     },
     {
      "name": "Notre Dame",
-     "id": null
+     "id": "25554"
     },
     {
      "name": "Concordia",
@@ -24653,6 +25183,10 @@
    "Simone Luciani",
    "Nestore Mangone"
   ],
+  "designer_ids": {
+   "Simone Luciani": "35418",
+   "Nestore Mangone": "52377"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -24722,19 +25256,19 @@
     },
     {
      "name": "Lorenzo il Magnifico",
-     "id": null
+     "id": "203993"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Nucleum",
-     "id": null
+     "id": "396790"
     },
     {
      "name": "Trickerion: Legends of Illusion",
-     "id": null
+     "id": "163068"
     }
    ],
    "teachers": [
@@ -24792,6 +25326,9 @@
   "designers": [
    "Serge Laget"
   ],
+  "designer_ids": {
+   "Serge Laget": "295"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -24881,7 +25418,7 @@
     },
     {
      "name": "Libertalia",
-     "id": null
+     "id": "125618"
     },
     {
      "name": "Blue Lagoon",
@@ -24889,7 +25426,7 @@
     },
     {
      "name": "Raiders of the North Sea",
-     "id": null
+     "id": "170042"
     }
    ],
    "teachers": [
@@ -24955,6 +25492,10 @@
    "Simone Luciani",
    "Dávid Turczi"
   ],
+  "designer_ids": {
+   "Simone Luciani": "35418",
+   "Dávid Turczi": "76227"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -25038,15 +25579,15 @@
     },
     {
      "name": "Age of Innovation",
-     "id": null
+     "id": "383179"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Lorenzo il Magnifico",
-     "id": null
+     "id": "203993"
     },
     {
      "name": "Res Arcana",
@@ -25102,6 +25643,9 @@
   "designers": [
    "Uwe Rosenberg"
   ],
+  "designer_ids": {
+   "Uwe Rosenberg": "10"
+  },
   "traits": [
    "Worker placement of any kind",
    "Drafting of any kind"
@@ -25204,7 +25748,7 @@
     },
     {
      "name": "Fields of Arle",
-     "id": null
+     "id": "159675"
     }
    ],
    "teachers": [
@@ -25270,6 +25814,9 @@
   "designers": [
    "Cole Wehrle"
   ],
+  "designer_ids": {
+   "Cole Wehrle": "35585"
+  },
   "traits": [
    "Parallel engine",
    "Area control",
@@ -25366,15 +25913,15 @@
     },
     {
      "name": "Pax Pamir: Second Edition",
-     "id": null
+     "id": "256960"
     },
     {
      "name": "Twilight Imperium: Fourth Edition",
-     "id": null
+     "id": "233078"
     },
     {
      "name": "Rising Sun",
-     "id": null
+     "id": "205896"
     },
     {
      "name": "Kemet",
@@ -25446,6 +25993,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -25606,6 +26156,10 @@
    "Ted Alspach",
    "Akihisa Okui"
   ],
+  "designer_ids": {
+   "Ted Alspach": "6046",
+   "Akihisa Okui": "69462"
+  },
   "traits": [
    "Hidden information"
   ],
@@ -25790,6 +26344,10 @@
    "Ted Alspach",
    "Akihisa Okui"
   ],
+  "designer_ids": {
+   "Ted Alspach": "6046",
+   "Akihisa Okui": "69462"
+  },
   "traits": [
    "Hidden information"
   ],
@@ -25898,7 +26456,7 @@
     },
     {
      "name": "One Night Ultimate Vampire",
-     "id": null
+     "id": "180956"
     },
     {
      "name": "Secret Hitler",
@@ -25971,6 +26529,9 @@
   "designers": [
    "Uwe Rosenberg"
   ],
+  "designer_ids": {
+   "Uwe Rosenberg": "10"
+  },
   "traits": [
    "Contested market",
    "Worker placement of any kind",
@@ -26061,7 +26622,7 @@
     },
     {
      "name": "Caverna",
-     "id": null
+     "id": "102794"
     },
     {
      "name": "A Feast for Odin",
@@ -26069,7 +26630,7 @@
     },
     {
      "name": "Fields of Arle",
-     "id": null
+     "id": "159675"
     }
    ],
    "teachers": [
@@ -26137,6 +26698,9 @@
   "designers": [
    "Reiner Stockhausen"
   ],
+  "designer_ids": {
+   "Reiner Stockhausen": "158"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -26231,15 +26795,15 @@
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Le Havre",
@@ -26302,6 +26866,10 @@
    "S J Macdonald",
    "Shem Phillips"
   ],
+  "designer_ids": {
+   "S J Macdonald": "103821",
+   "Shem Phillips": "12547"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -26386,23 +26954,23 @@
    "similar": [
     {
      "name": "Architects of the West Kingdom",
-     "id": null
+     "id": "236457"
     },
     {
      "name": "Raiders of the North Sea",
-     "id": null
+     "id": "170042"
     },
     {
      "name": "Viscounts of the West Kingdom",
-     "id": null
+     "id": "296151"
     },
     {
      "name": "Charterstone",
-     "id": null
+     "id": "197376"
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     }
    ],
    "teachers": [
@@ -26464,6 +27032,10 @@
    "Prospero Hall",
    "Peter Lee"
   ],
+  "designer_ids": {
+   "Prospero Hall": "102313",
+   "Peter Lee": "15913"
+  },
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -26552,11 +27124,11 @@
    "similar": [
     {
      "name": "Chicago Express",
-     "id": null
+     "id": "31730"
     },
     {
      "name": "Airlines Europe",
-     "id": null
+     "id": "90419"
     },
     {
      "name": "Power Grid",
@@ -26651,6 +27223,9 @@
   "designers": [
    "Matt Leacock"
   ],
+  "designer_ids": {
+   "Matt Leacock": "378"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -26722,23 +27297,23 @@
    "similar": [
     {
      "name": "Pandemic Legacy: Season 1",
-     "id": null
+     "id": "161936"
     },
     {
      "name": "Forbidden Island",
-     "id": null
+     "id": "65244"
     },
     {
      "name": "Flash Point: Fire Rescue",
-     "id": null
+     "id": "100901"
     },
     {
      "name": "Ghost Stories",
-     "id": null
+     "id": "37046"
     },
     {
      "name": "Pandemic: The Cure",
-     "id": null
+     "id": "150658"
     }
    ],
    "teachers": [
@@ -26809,6 +27384,9 @@
   "designers": [
    "Uwe Rosenberg"
   ],
+  "designer_ids": {
+   "Uwe Rosenberg": "10"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -26882,23 +27460,23 @@
    "similar": [
     {
      "name": "Patchwork Doodle",
-     "id": null
+     "id": "264239"
     },
     {
      "name": "Cottage Garden",
-     "id": null
+     "id": "204027"
     },
     {
      "name": "Karuba",
-     "id": null
+     "id": "183251"
     },
     {
      "name": "Barenpark",
-     "id": null
+     "id": "219513"
     },
     {
      "name": "Calico",
-     "id": null
+     "id": "283155"
     }
    ],
    "teachers": [
@@ -26961,6 +27539,9 @@
   "designers": [
    "Fran Diaz"
   ],
+  "designer_ids": {
+   "Fran Diaz": "30466"
+  },
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -27037,19 +27618,19 @@
    "similar": [
     {
      "name": "Pericles: The Peloponnesian Wars",
-     "id": null
+     "id": "199904"
     },
     {
      "name": "Blue Moon",
-     "id": null
+     "id": "9446"
     },
     {
      "name": "Taj Mahal",
-     "id": null
+     "id": "475"
     },
     {
      "name": "Scythe",
-     "id": null
+     "id": "169786"
     },
     {
      "name": "COIN series games (e.g. Gandhi, All Bridges Burning)",
@@ -27123,6 +27704,9 @@
   "designers": [
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -27219,15 +27803,15 @@
     },
     {
      "name": "The Great Split",
-     "id": null
+     "id": "366752"
     },
     {
      "name": "Fresh Fish",
-     "id": null
+     "id": "1017"
     },
     {
      "name": "Nova Luna",
-     "id": null
+     "id": "284435"
     }
    ],
    "teachers": [
@@ -27294,6 +27878,9 @@
   "designers": [
    "Friedemann Friese"
   ],
+  "designer_ids": {
+   "Friedemann Friese": "141"
+  },
   "traits": [
    "Parallel engine",
    "Contested market",
@@ -27405,7 +27992,7 @@
     },
     {
      "name": "Snowdonia",
-     "id": null
+     "id": "119432"
     }
    ],
    "teachers": [
@@ -27466,6 +28053,9 @@
   "designers": [
    "Vladimír Suchý"
   ],
+  "designer_ids": {
+   "Vladimír Suchý": "9307"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -27540,7 +28130,7 @@
    "similar": [
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "The Voyages of Marco Polo",
@@ -27552,11 +28142,11 @@
     },
     {
      "name": "Merv: The Heart of the Silk Road",
-     "id": null
+     "id": "306040"
     },
     {
      "name": "Pipeline",
-     "id": null
+     "id": "2946"
     }
    ],
    "teachers": [
@@ -27617,6 +28207,9 @@
   "designers": [
    "Andreas Seyfarth"
   ],
+  "designer_ids": {
+   "Andreas Seyfarth": "117"
+  },
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -27705,7 +28298,7 @@
     },
     {
      "name": "San Juan",
-     "id": null
+     "id": "8217"
     },
     {
      "name": "Caylus",
@@ -27713,7 +28306,7 @@
     },
     {
      "name": "Race for the Galaxy",
-     "id": null
+     "id": "28143"
     },
     {
      "name": "Container",
@@ -27770,6 +28363,9 @@
   "designers": [
    "Vladimír Suchý"
   ],
+  "designer_ids": {
+   "Vladimír Suchý": "9307"
+  },
   "traits": [
    "Worker placement of any kind",
    "Drafting of any kind"
@@ -27855,11 +28451,11 @@
     },
     {
      "name": "Praga Caput Regni",
-     "id": null
+     "id": "308765"
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "Teotihuacan: City of Gods",
@@ -27927,6 +28523,9 @@
   "designers": [
    "Wolfgang Warsch"
   ],
+  "designer_ids": {
+   "Wolfgang Warsch": "80162"
+  },
   "traits": [
    "Multi-track",
    "Deck or bag building"
@@ -28010,19 +28609,19 @@
    "similar": [
     {
      "name": "The Quest for El Dorado",
-     "id": null
+     "id": "217372"
     },
     {
      "name": "Machi Koro",
-     "id": null
+     "id": "143884"
     },
     {
      "name": "Valeria: Card Kingdoms",
-     "id": null
+     "id": "170561"
     },
     {
      "name": "Trellis",
-     "id": null
+     "id": "23233"
     },
     {
      "name": "Century: Spice Road",
@@ -28092,6 +28691,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Deck or bag building",
    "Drafting of any kind"
@@ -28175,7 +28777,7 @@
    "similar": [
     {
      "name": "Dominion",
-     "id": null
+     "id": "36218"
     },
     {
      "name": "Quacks of Quedlinburg",
@@ -28183,15 +28785,15 @@
     },
     {
      "name": "Whistle Stop",
-     "id": null
+     "id": "221318"
     },
     {
      "name": "Flamme Rouge",
-     "id": null
+     "id": "199478"
     },
     {
      "name": "Coimbra",
-     "id": null
+     "id": "245638"
     }
    ],
    "teachers": [
@@ -28252,6 +28854,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -28419,6 +29024,9 @@
   "designers": [
    "Thomas Lehmann"
   ],
+  "designer_ids": {
+   "Thomas Lehmann": "150"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -28498,11 +29106,11 @@
    "similar": [
     {
      "name": "San Juan",
-     "id": null
+     "id": "8217"
     },
     {
      "name": "Roll for the Galaxy",
-     "id": null
+     "id": "132531"
     },
     {
      "name": "Puerto Rico",
@@ -28570,6 +29178,9 @@
   "designers": [
    "Shem Phillips"
   ],
+  "designer_ids": {
+   "Shem Phillips": "12547"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -28654,23 +29265,23 @@
    "similar": [
     {
      "name": "Architects of the West Kingdom",
-     "id": null
+     "id": "236457"
     },
     {
      "name": "Paladins of the West Kingdom",
-     "id": null
+     "id": "266810"
     },
     {
      "name": "Raiders of the North Sea",
-     "id": null
+     "id": "170042"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     }
    ],
    "teachers": [
@@ -28731,6 +29342,10 @@
    "Inka Brand",
    "Markus Brand"
   ],
+  "designer_ids": {
+   "Inka Brand": "6940",
+   "Markus Brand": "6941"
+  },
   "traits": [
    "Multi-track",
    "Worker placement of any kind",
@@ -28818,19 +29433,19 @@
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Orleans",
-     "id": null
+     "id": "164928"
     },
     {
      "name": "Kingdom Builder",
-     "id": null
+     "id": "107529"
     }
    ],
    "teachers": [
@@ -28887,6 +29502,10 @@
    "Inka Brand",
    "Markus Brand"
   ],
+  "designer_ids": {
+   "Inka Brand": "6940",
+   "Markus Brand": "6941"
+  },
   "traits": [],
   "videos": [
    {
@@ -28958,19 +29577,19 @@
    "similar": [
     {
      "name": "Rajas of the Ganges",
-     "id": null
+     "id": "220877"
     },
     {
      "name": "Welcome To...",
-     "id": null
+     "id": "233867"
     },
     {
      "name": "That's Pretty Clever",
-     "id": null
+     "id": "244522"
     },
     {
      "name": "Second Chance",
-     "id": null
+     "id": "60600"
     }
    ],
    "teachers": [
@@ -29033,6 +29652,10 @@
    "Isra C.",
    "Shei S."
   ],
+  "designer_ids": {
+   "Isra C.": "77002",
+   "Shei S.": "77173"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -29126,15 +29749,15 @@
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Raiders of Scythia",
-     "id": null
+     "id": "301880"
     },
     {
      "name": "Merv: The Heart of the Silk Road",
-     "id": null
+     "id": "306040"
     }
    ],
    "teachers": [
@@ -29197,6 +29820,9 @@
   "designers": [
    "Don Eskridge"
   ],
+  "designer_ids": {
+   "Don Eskridge": "11906"
+  },
   "traits": [
    "Hidden information",
    "Co-operative"
@@ -29389,6 +30015,12 @@
    "Eilif Svensson",
    "Anna Wermlund"
   ],
+  "designer_ids": {
+   "Helge Meissner": "109214",
+   "Kristian Amundsen Østby": "4063",
+   "Eilif Svensson": "9637",
+   "Anna Wermlund": "109215"
+  },
   "traits": [
    "Multi-track",
    "Deck or bag building",
@@ -29462,7 +30094,7 @@
    "similar": [
     {
      "name": "Scythe",
-     "id": null
+     "id": "169786"
     },
     {
      "name": "Brass: Birmingham",
@@ -29470,15 +30102,15 @@
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     },
     {
      "name": "Terraforming Mars",
-     "id": null
+     "id": "167791"
     }
    ],
    "teachers": [
@@ -29534,6 +30166,9 @@
   "designers": [
    "Alex Randolph"
   ],
+  "designer_ids": {
+   "Alex Randolph": "24"
+  },
   "traits": [],
   "videos": [
    {
@@ -29743,15 +30378,15 @@
    "similar": [
     {
      "name": "Rush Hour",
-     "id": null
+     "id": "5082"
     },
     {
      "name": "Karuba",
-     "id": null
+     "id": "183251"
     },
     {
      "name": "Anomia",
-     "id": null
+     "id": "67877"
     },
     {
      "name": "Ivan's Hard Puzzles",
@@ -29759,7 +30394,7 @@
     },
     {
      "name": "Metro",
-     "id": null
+     "id": "559"
     }
    ],
    "teachers": [
@@ -29837,6 +30472,10 @@
    "Joanna Kijanka",
    "Ignacy Trzewiczek"
   ],
+  "designer_ids": {
+   "Joanna Kijanka": "117118",
+   "Ignacy Trzewiczek": "4735"
+  },
   "traits": [
    "Parallel engine",
    "Worker placement of any kind",
@@ -29933,7 +30572,7 @@
     },
     {
      "name": "First Martians",
-     "id": null
+     "id": "192455"
     },
     {
      "name": "Sub Terra",
@@ -30026,6 +30665,9 @@
   "designers": [
    "Cole Wehrle"
   ],
+  "designer_ids": {
+   "Cole Wehrle": "35585"
+  },
   "traits": [
    "Area control",
    "Direct conflict"
@@ -30103,15 +30745,15 @@
    "similar": [
     {
      "name": "Vast: The Crystal Caverns",
-     "id": null
+     "id": "170416"
     },
     {
      "name": "Oath",
-     "id": null
+     "id": "291572"
     },
     {
      "name": "Spirit Island",
-     "id": null
+     "id": "162886"
     },
     {
      "name": "Cole Wehrle's Pax Pamir",
@@ -30119,7 +30761,7 @@
     },
     {
      "name": "Undaunted",
-     "id": null
+     "id": "268864"
     }
    ],
    "teachers": [
@@ -30176,6 +30818,9 @@
   "designers": [
    "David Bernal"
   ],
+  "designer_ids": {
+   "David Bernal": "119825"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -30259,7 +30904,7 @@
     },
     {
      "name": "Merv: The Heart of the Silk Road",
-     "id": null
+     "id": "306040"
     },
     {
      "name": "Barrage",
@@ -30271,7 +30916,7 @@
     },
     {
      "name": "Skymines",
-     "id": null
+     "id": "359438"
     }
    ],
    "teachers": [
@@ -30329,6 +30974,10 @@
    "Kristian Amundsen Østby",
    "Eilif Svensson"
   ],
+  "designer_ids": {
+   "Kristian Amundsen Østby": "4063",
+   "Eilif Svensson": "9637"
+  },
   "traits": [
    "Set collection",
    "Drafting of any kind",
@@ -30412,23 +31061,23 @@
    "similar": [
     {
      "name": "Fresco",
-     "id": null
+     "id": "66188"
     },
     {
      "name": "Trismegistus",
-     "id": null
+     "id": "440942"
     },
     {
      "name": "Bonfire",
-     "id": null
+     "id": "304420"
     },
     {
      "name": "Barenpark",
-     "id": null
+     "id": "219513"
     },
     {
      "name": "Praga Caput Regni",
-     "id": null
+     "id": "308765"
     }
    ],
    "teachers": [
@@ -30516,6 +31165,9 @@
   "designers": [
    "Jamey Stegmaier"
   ],
+  "designer_ids": {
+   "Jamey Stegmaier": "62640"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -30600,11 +31252,11 @@
     },
     {
      "name": "Blood Rage",
-     "id": null
+     "id": "170216"
     },
     {
      "name": "Tapestry",
-     "id": null
+     "id": "18585"
     },
     {
      "name": "Rise of Fenris (Scythe's own campaign expansion)",
@@ -30612,7 +31264,7 @@
     },
     {
      "name": "Terraforming Mars",
-     "id": null
+     "id": "167791"
     }
    ],
    "teachers": [
@@ -30676,6 +31328,9 @@
   "designers": [
    "Matt Calkins"
   ],
+  "designer_ids": {
+   "Matt Calkins": "7535"
+  },
   "traits": [
    "Auction of any kind",
    "Hidden information"
@@ -30752,19 +31407,19 @@
     },
     {
      "name": "1775: Rebellion",
-     "id": null
+     "id": "128996"
     },
     {
      "name": "Nevsky",
-     "id": null
+     "id": "249590"
     },
     {
      "name": "Hannibal: Rome vs Carthage",
-     "id": null
+     "id": "234"
     },
     {
      "name": "Undaunted",
-     "id": null
+     "id": "268864"
     }
    ],
    "teachers": [
@@ -30819,6 +31474,10 @@
    "Fabio Lopiano",
    "Nestore Mangone"
   ],
+  "designer_ids": {
+   "Fabio Lopiano": "100575",
+   "Nestore Mangone": "52377"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -30904,7 +31563,7 @@
    "similar": [
     {
      "name": "Merv: The Heart of the Silk Road",
-     "id": null
+     "id": "306040"
     },
     {
      "name": "On Mars",
@@ -30920,7 +31579,7 @@
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     }
    ],
    "teachers": [
@@ -30979,6 +31638,9 @@
   "designers": [
    "TauCeti Deichmann"
   ],
+  "designer_ids": {
+   "TauCeti Deichmann": "25517"
+  },
   "traits": [
    "Multi-track",
    "Parallel engine",
@@ -31084,7 +31746,7 @@
    "similar": [
     {
      "name": "Cosmic Encounter",
-     "id": null
+     "id": "15"
     },
     {
      "name": "Chinatown",
@@ -31092,7 +31754,7 @@
     },
     {
      "name": "Prosperity",
-     "id": null
+     "id": "20166"
     },
     {
      "name": "Bohnanza",
@@ -31100,7 +31762,7 @@
     },
     {
      "name": "Struggle of Empires",
-     "id": null
+     "id": "9625"
     }
    ],
    "teachers": [
@@ -31169,6 +31831,10 @@
    "Viktor Kobilke",
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Viktor Kobilke": "8108",
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -31239,15 +31905,15 @@
    "similar": [
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Maracaibo",
-     "id": null
+     "id": "276025"
     },
     {
      "name": "Merv: The Heart of the Silk Road",
-     "id": null
+     "id": "306040"
     },
     {
      "name": "On Mars",
@@ -31255,7 +31921,7 @@
     },
     {
      "name": "Salton Sea",
-     "id": null
+     "id": "402663"
     }
    ],
    "teachers": [
@@ -31312,6 +31978,11 @@
    "Sébastien Pauchon",
    "Adam Wyse"
   ],
+  "designer_ids": {
+   "Gavan Brown": "32887",
+   "Sébastien Pauchon": "6736",
+   "Adam Wyse": "97437"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -31400,7 +32071,7 @@
     },
     {
      "name": "Metropolys",
-     "id": null
+     "id": "25568"
     },
     {
      "name": "Suburbia",
@@ -31408,11 +32079,11 @@
     },
     {
      "name": "Praga Caput Regni",
-     "id": null
+     "id": "308765"
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     }
    ],
    "teachers": [
@@ -31474,6 +32145,9 @@
   "designers": [
    "Philippe Keyaerts"
   ],
+  "designer_ids": {
+   "Philippe Keyaerts": "49"
+  },
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -31551,11 +32225,11 @@
    "similar": [
     {
      "name": "Vinci",
-     "id": null
+     "id": "60"
     },
     {
      "name": "Risk",
-     "id": null
+     "id": "181"
     },
     {
      "name": "Kemet",
@@ -31563,11 +32237,11 @@
     },
     {
      "name": "El Grande",
-     "id": null
+     "id": "93"
     },
     {
      "name": "Blood Rage",
-     "id": null
+     "id": "170216"
     }
    ],
    "teachers": [
@@ -31614,6 +32288,9 @@
   "designers": [
    "Michael Schacht"
   ],
+  "designer_ids": {
+   "Michael Schacht": "86"
+  },
   "traits": [
    "Contested market",
    "Auction of any kind"
@@ -31712,11 +32389,11 @@
     },
     {
      "name": "Sushi Go",
-     "id": null
+     "id": "133473"
     },
     {
      "name": "Point Salad",
-     "id": null
+     "id": "274960"
     }
    ],
    "teachers": [
@@ -31764,6 +32441,9 @@
   "designers": [
    "Cédric Lefebvre"
   ],
+  "designer_ids": {
+   "Cédric Lefebvre": "35741"
+  },
   "traits": [
    "Worker placement of any kind",
    "Network building"
@@ -31843,11 +32523,11 @@
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Gizmos",
-     "id": null
+     "id": "246192"
     },
     {
      "name": "Teotihuacan: City of Gods",
@@ -31855,7 +32535,7 @@
     },
     {
      "name": "Kanban: Driver's Edition",
-     "id": null
+     "id": "109276"
     }
    ],
    "teachers": [
@@ -31911,6 +32591,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "Area control",
    "Worker placement of any kind",
@@ -32002,7 +32685,7 @@
     },
     {
      "name": "Escape Plan",
-     "id": null
+     "id": "142379"
     },
     {
      "name": "The Gallerist",
@@ -32010,7 +32693,7 @@
     },
     {
      "name": "Vinhos",
-     "id": null
+     "id": "42052"
     }
    ],
    "teachers": [
@@ -32069,6 +32752,9 @@
   "designers": [
    "Marc André"
   ],
+  "designer_ids": {
+   "Marc André": "50969"
+  },
   "traits": [
    "Set collection",
    "Drafting of any kind"
@@ -32221,6 +32907,10 @@
    "Robert Dougherty",
    "Darwin Kastle"
   ],
+  "designer_ids": {
+   "Robert Dougherty": "4113",
+   "Darwin Kastle": "4059"
+  },
   "traits": [
    "Parallel engine",
    "Direct conflict",
@@ -32286,23 +32976,23 @@
    "similar": [
     {
      "name": "Star Realms",
-     "id": null
+     "id": "147020"
     },
     {
      "name": "Star Realms: Colony Wars",
-     "id": null
+     "id": "182631"
     },
     {
      "name": "Hero Realms",
-     "id": null
+     "id": "198994"
     },
     {
      "name": "Ascension",
-     "id": null
+     "id": "10403"
     },
     {
      "name": "Dominion",
-     "id": null
+     "id": "36218"
     }
    ],
    "teachers": [
@@ -32373,6 +33063,9 @@
   "designers": [
    "Corey Konieczka"
   ],
+  "designer_ids": {
+   "Corey Konieczka": "6651"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -32454,23 +33147,23 @@
    "similar": [
     {
      "name": "War of the Ring",
-     "id": null
+     "id": "2228"
     },
     {
      "name": "Fury of Dracula",
-     "id": null
+     "id": "20963"
     },
     {
      "name": "Twilight Imperium: Fourth Edition",
-     "id": null
+     "id": "233078"
     },
     {
      "name": "Forbidden Stars",
-     "id": null
+     "id": "175155"
     },
     {
      "name": "Cthulhu Wars",
-     "id": null
+     "id": "139976"
     }
    ],
    "teachers": [
@@ -32525,6 +33218,9 @@
   "designers": [
    "Martin Wallace"
   ],
+  "designer_ids": {
+   "Martin Wallace": "6"
+  },
   "traits": [
    "Auction of any kind",
    "Network building"
@@ -32618,7 +33314,7 @@
    "similar": [
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Container",
@@ -32626,15 +33322,15 @@
     },
     {
      "name": "Chicago Express",
-     "id": null
+     "id": "31730"
     },
     {
      "name": "Irish Gauge",
-     "id": null
+     "id": "161882"
     },
     {
      "name": "Snowdonia",
-     "id": null
+     "id": "119432"
     }
    ],
    "teachers": [
@@ -32696,6 +33392,9 @@
   "designers": [
    "Colby Dauch"
   ],
+  "designer_ids": {
+   "Colby Dauch": "12953"
+  },
   "traits": [
    "Direct conflict",
    "Deck or bag building"
@@ -32763,23 +33462,23 @@
    "similar": [
     {
      "name": "Star Wars: The Deckbuilding Game",
-     "id": null
+     "id": "374173"
     },
     {
      "name": "BattleCON",
-     "id": null
+     "id": "89409"
     },
     {
      "name": "Smash Up",
-     "id": null
+     "id": "122522"
     },
     {
      "name": "Netrunner",
-     "id": null
+     "id": "1301"
     },
     {
      "name": "Ashes: Rise of the Phoenixborn",
-     "id": null
+     "id": "167400"
     }
    ],
    "teachers": [
@@ -32840,6 +33539,10 @@
    "David Spada",
    "Daniele Tascini"
   ],
+  "designer_ids": {
+   "David Spada": "93322",
+   "Daniele Tascini": "59986"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -32913,7 +33616,7 @@
    "similar": [
     {
      "name": "Teotihuacan",
-     "id": null
+     "id": "229853"
     },
     {
      "name": "Tzolk'in: The Mayan Calendar",
@@ -32921,7 +33624,7 @@
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "The Voyages of Marco Polo",
@@ -32929,7 +33632,7 @@
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     }
    ],
    "teachers": [
@@ -32983,6 +33686,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Set collection",
    "Auction of any kind",
@@ -33081,7 +33787,7 @@
     },
     {
      "name": "Samurai",
-     "id": null
+     "id": "3"
     },
     {
      "name": "Blue Lagoon",
@@ -33089,7 +33795,7 @@
     },
     {
      "name": "Tigris & Euphrates",
-     "id": null
+     "id": "42"
     }
    ],
    "teachers": [
@@ -33142,6 +33848,9 @@
   "designers": [
    "Wolfgang Kramer"
   ],
+  "designer_ids": {
+   "Wolfgang Kramer": "7"
+  },
   "traits": [
    "Co-operative"
   ],
@@ -33258,7 +33967,7 @@
     },
     {
      "name": "No Thanks!",
-     "id": null
+     "id": "12942"
     },
     {
      "name": "For Sale",
@@ -33266,11 +33975,11 @@
     },
     {
      "name": "Camel Up",
-     "id": null
+     "id": "153938"
     },
     {
      "name": "The Game",
-     "id": null
+     "id": "173090"
     }
    ],
    "teachers": [
@@ -33344,6 +34053,9 @@
   "designers": [
    "Antoine Bauza"
   ],
+  "designer_ids": {
+   "Antoine Bauza": "9714"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -33429,19 +34141,19 @@
    "similar": [
     {
      "name": "Kingdomino",
-     "id": null
+     "id": "204583"
     },
     {
      "name": "My Little Scythe",
-     "id": null
+     "id": "226320"
     },
     {
      "name": "Cottage Garden",
-     "id": null
+     "id": "204027"
     },
     {
      "name": "Karuba",
-     "id": null
+     "id": "183251"
     },
     {
      "name": "Ticket to Ride",
@@ -33506,6 +34218,9 @@
   "designers": [
    "Andreas Steiger"
   ],
+  "designer_ids": {
+   "Andreas Steiger": "57305"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -33655,6 +34370,9 @@
   "designers": [
    "Dávid Turczi"
   ],
+  "designer_ids": {
+   "Dávid Turczi": "76227"
+  },
   "traits": [
    "Set collection",
    "Multi-track",
@@ -33747,15 +34465,15 @@
     },
     {
      "name": "Teotihuacan",
-     "id": null
+     "id": "229853"
     },
     {
      "name": "Tabannusi: Builders of Ur",
-     "id": null
+     "id": "316786"
     },
     {
      "name": "Trismegistus",
-     "id": null
+     "id": "440942"
     },
     {
      "name": "The Voyages of Marco Polo",
@@ -33822,6 +34540,10 @@
    "Daniele Tascini",
    "Dávid Turczi"
   ],
+  "designer_ids": {
+   "Daniele Tascini": "59986",
+   "Dávid Turczi": "76227"
+  },
   "traits": [
    "Parallel engine",
    "Tableau multipliers",
@@ -33912,7 +34634,7 @@
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     },
     {
      "name": "Tzolk'in: The Mayan Calendar",
@@ -33920,7 +34642,7 @@
     },
     {
      "name": "Newton",
-     "id": null
+     "id": "170937"
     }
    ],
    "teachers": [
@@ -33992,6 +34714,9 @@
   "designers": [
    "Daniele Tascini"
   ],
+  "designer_ids": {
+   "Daniele Tascini": "59986"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -34073,15 +34798,15 @@
     },
     {
      "name": "Tekhenu: Obelisk of the Sun",
-     "id": null
+     "id": "297030"
     },
     {
      "name": "Newton",
-     "id": null
+     "id": "170937"
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     }
    ],
    "teachers": [
@@ -34156,6 +34881,10 @@
    "Jens Drögemüller",
    "Helge Ostertag"
   ],
+  "designer_ids": {
+   "Jens Drögemüller": "4300",
+   "Helge Ostertag": "4407"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -34340,6 +35069,9 @@
   "designers": [
    "Jacob Fryxelius"
   ],
+  "designer_ids": {
+   "Jacob Fryxelius": "52075"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -34411,7 +35143,7 @@
    "similar": [
     {
      "name": "Terraforming Mars: Ares Expedition",
-     "id": null
+     "id": "328871"
     },
     {
      "name": "Gaia Project",
@@ -34419,7 +35151,7 @@
     },
     {
      "name": "Underwater Cities",
-     "id": null
+     "id": "247763"
     },
     {
      "name": "On Mars",
@@ -34427,7 +35159,7 @@
     },
     {
      "name": "Scythe",
-     "id": null
+     "id": "169786"
     }
    ],
    "teachers": [
@@ -34490,6 +35222,9 @@
   "designers": [
    "Vlaada Chvátil"
   ],
+  "designer_ids": {
+   "Vlaada Chvátil": "789"
+  },
   "traits": [
    "Parallel engine",
    "Tableau multipliers",
@@ -34568,7 +35303,7 @@
    "similar": [
     {
      "name": "Clash of Cultures",
-     "id": null
+     "id": "40765"
     },
     {
      "name": "Innovation",
@@ -34576,7 +35311,7 @@
     },
     {
      "name": "Nations",
-     "id": null
+     "id": "126042"
     },
     {
      "name": "Concordia",
@@ -34649,6 +35384,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "End-game bonuses",
    "Area control",
@@ -34737,23 +35475,23 @@
    "similar": [
     {
      "name": "Tigris & Euphrates",
-     "id": null
+     "id": "42"
     },
     {
      "name": "Ingenious",
-     "id": null
+     "id": "9674"
     },
     {
      "name": "Blokus",
-     "id": null
+     "id": "2453"
     },
     {
      "name": "Hive",
-     "id": null
+     "id": "2655"
     },
     {
      "name": "Yspahan",
-     "id": null
+     "id": "22345"
     }
    ],
    "teachers": [
@@ -34817,6 +35555,9 @@
   "designers": [
    "Alan R. Moon"
   ],
+  "designer_ids": {
+   "Alan R. Moon": "9"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -34913,15 +35654,15 @@
     },
     {
      "name": "Steam",
-     "id": null
+     "id": "27833"
     },
     {
      "name": "Northern Pacific",
-     "id": null
+     "id": "138704"
     },
     {
      "name": "Union Pacific",
-     "id": null
+     "id": "94"
     }
    ],
    "teachers": [
@@ -34994,6 +35735,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -35067,7 +35811,7 @@
    "similar": [
     {
      "name": "Through the Desert",
-     "id": null
+     "id": "503"
     },
     {
      "name": "Ra",
@@ -35083,7 +35827,7 @@
     },
     {
      "name": "Yspahan",
-     "id": null
+     "id": "22345"
     }
    ],
    "teachers": [
@@ -35154,6 +35898,10 @@
    "Michael Kiesling",
    "Wolfgang Kramer"
   ],
+  "designer_ids": {
+   "Michael Kiesling": "42",
+   "Wolfgang Kramer": "7"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -35235,15 +35983,15 @@
    "similar": [
     {
      "name": "Java",
-     "id": null
+     "id": "855"
     },
     {
      "name": "Mexica",
-     "id": null
+     "id": "2955"
     },
     {
      "name": "Torres",
-     "id": null
+     "id": "88"
     },
     {
      "name": "Amun-Re",
@@ -35251,7 +35999,7 @@
     },
     {
      "name": "El Grande",
-     "id": null
+     "id": "93"
     }
    ],
    "teachers": [
@@ -35313,6 +36061,10 @@
    "Simone Luciani",
    "Daniele Tascini"
   ],
+  "designer_ids": {
+   "Simone Luciani": "35418",
+   "Daniele Tascini": "59986"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -35397,11 +36149,11 @@
    "similar": [
     {
      "name": "Newton",
-     "id": null
+     "id": "170937"
     },
     {
      "name": "Marco Polo II",
-     "id": null
+     "id": "283948"
     },
     {
      "name": "Anno 1800",
@@ -35409,7 +36161,7 @@
     },
     {
      "name": "Lorenzo il Magnifico",
-     "id": null
+     "id": "203993"
     },
     {
      "name": "Res Arcana",
@@ -35469,6 +36221,9 @@
   "designers": [
    "Stefan Feld"
   ],
+  "designer_ids": {
+   "Stefan Feld": "4958"
+  },
   "traits": [
    "Set collection",
    "Drafting of any kind"
@@ -35630,6 +36385,10 @@
    "Richard Ámann",
    "Viktor Péter"
   ],
+  "designer_ids": {
+   "Richard Ámann": "76971",
+   "Viktor Péter": "76578"
+  },
   "traits": [
    "Worker placement of any kind"
   ],
@@ -35700,23 +36459,23 @@
    "similar": [
     {
      "name": "Alchemists",
-     "id": null
+     "id": "161970"
     },
     {
      "name": "Coimbra",
-     "id": null
+     "id": "245638"
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     },
     {
      "name": "Argent: The Consortium",
-     "id": null
+     "id": "144797"
     },
     {
      "name": "Lords of Waterdeep",
-     "id": null
+     "id": "110327"
     }
    ],
    "teachers": [
@@ -35785,6 +36544,11 @@
    "Xavier Georges",
    "Alain Orban"
   ],
+  "designer_ids": {
+   "Sébastien Dujardin": "38335",
+   "Xavier Georges": "11312",
+   "Alain Orban": "7369"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -35866,7 +36630,7 @@
    "similar": [
     {
      "name": "Lorenzo il Magnifico",
-     "id": null
+     "id": "203993"
     },
     {
      "name": "Tzolk'in: The Mayan Calendar",
@@ -35874,7 +36638,7 @@
     },
     {
      "name": "Grand Austria Hotel",
-     "id": null
+     "id": "182874"
     },
     {
      "name": "Trajan",
@@ -35960,6 +36724,11 @@
    "Corey Konieczka",
    "Christian T. Petersen"
   ],
+  "designer_ids": {
+   "Dane Beltrami": "96049",
+   "Corey Konieczka": "6651",
+   "Christian T. Petersen": "21"
+  },
   "traits": [
    "Multi-track",
    "Contested market",
@@ -36043,11 +36812,11 @@
    "similar": [
     {
      "name": "Eclipse: Second Dawn for the Galaxy",
-     "id": null
+     "id": "246900"
     },
     {
      "name": "Rex: Final Days of an Empire",
-     "id": null
+     "id": "104363"
     },
     {
      "name": "Star Wars: Rebellion",
@@ -36055,11 +36824,11 @@
     },
     {
      "name": "Forbidden Stars",
-     "id": null
+     "id": "175155"
     },
     {
      "name": "Cosmic Encounter",
-     "id": null
+     "id": "15"
     }
    ],
    "teachers": [
@@ -36125,6 +36894,10 @@
    "Simone Luciani",
    "Daniele Tascini"
   ],
+  "designer_ids": {
+   "Simone Luciani": "35418",
+   "Daniele Tascini": "59986"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -36267,6 +37040,10 @@
    "Helmut Ohley",
    "Leonhard \"Lonny\" Orgler"
   ],
+  "designer_ids": {
+   "Helmut Ohley": "2748",
+   "Leonhard \"Lonny\" Orgler": "1828"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -36339,15 +37116,15 @@
    "similar": [
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Lorenzo il Magnifico",
-     "id": null
+     "id": "203993"
     },
     {
      "name": "Barrage",
@@ -36355,7 +37132,7 @@
     },
     {
      "name": "Snowdonia",
-     "id": null
+     "id": "119432"
     }
    ],
    "teachers": [
@@ -36420,6 +37197,10 @@
    "Trevor Benjamin",
    "David Thompson (I)"
   ],
+  "designer_ids": {
+   "Trevor Benjamin": "90410",
+   "David Thompson (I)": "67071"
+  },
   "traits": [
    "Deck or bag building",
    "Drafting of any kind"
@@ -36480,23 +37261,23 @@
    "similar": [
     {
      "name": "Undaunted: Normandy",
-     "id": null
+     "id": "268864"
     },
     {
      "name": "Undaunted: Reinforcements",
-     "id": null
+     "id": "313441"
     },
     {
      "name": "Undaunted: 2200",
-     "id": null
+     "id": "401978"
     },
     {
      "name": "Memoir '44",
-     "id": null
+     "id": "10630"
     },
     {
      "name": "Battle Line",
-     "id": null
+     "id": "760"
     }
    ],
    "teachers": [
@@ -36556,6 +37337,9 @@
   "designers": [
    "Vladimír Suchý"
   ],
+  "designer_ids": {
+   "Vladimír Suchý": "9307"
+  },
   "traits": [
    "End-game bonuses",
    "Parallel engine",
@@ -36629,7 +37413,7 @@
    "similar": [
     {
      "name": "Pipeline",
-     "id": null
+     "id": "2946"
     },
     {
      "name": "Barrage",
@@ -36641,7 +37425,7 @@
     },
     {
      "name": "Praga Caput Regni",
-     "id": null
+     "id": "308765"
     },
     {
      "name": "On Mars",
@@ -36712,6 +37496,10 @@
    "Rob Daviau",
    "Justin D. Jacobson"
   ],
+  "designer_ids": {
+   "Rob Daviau": "442",
+   "Justin D. Jacobson": "4083"
+  },
   "traits": [
    "Direct conflict",
    "Co-operative"
@@ -36794,23 +37582,23 @@
    "similar": [
     {
      "name": "Unmatched: Cobble & Fog",
-     "id": null
+     "id": "294484"
     },
     {
      "name": "Unmatched: Robin Hood vs. Bigfoot",
-     "id": null
+     "id": "274638"
     },
     {
      "name": "BattleCON",
-     "id": null
+     "id": "89409"
     },
     {
      "name": "Smash Up",
-     "id": null
+     "id": "122522"
     },
     {
      "name": "Star Wars: The Card Game",
-     "id": null
+     "id": "103886"
     }
    ],
    "teachers": [
@@ -36880,6 +37668,12 @@
    "Chris Leder",
    "Kevin Rodgers"
   ],
+  "designer_ids": {
+   "Rob Daviau": "442",
+   "Justin D. Jacobson": "4083",
+   "Chris Leder": "28008",
+   "Kevin Rodgers": "121697"
+  },
   "traits": [
    "Direct conflict",
    "Co-operative"
@@ -36962,19 +37756,19 @@
    "similar": [
     {
      "name": "Unmatched: Battle of Legends, Volume One",
-     "id": null
+     "id": "274637"
     },
     {
      "name": "Unmatched: Robin Hood vs. Bigfoot",
-     "id": null
+     "id": "274638"
     },
     {
      "name": "BattleCON",
-     "id": null
+     "id": "89409"
     },
     {
      "name": "Smash Up",
-     "id": null
+     "id": "122522"
     }
    ],
    "teachers": [
@@ -37036,6 +37830,10 @@
    "Rob Daviau",
    "Justin D. Jacobson"
   ],
+  "designer_ids": {
+   "Rob Daviau": "442",
+   "Justin D. Jacobson": "4083"
+  },
   "traits": [],
   "videos": [],
   "image": "https://cf.geekdo-images.com/5Fr8QPIazZRgEMnN2bwJ0g__original/img/si2jJWDVMO-EGy-r0RR7aVjLtO8=/0x0/filters:format(jpeg)/pic4621589.jpg",
@@ -37086,19 +37884,19 @@
    "similar": [
     {
      "name": "Unmatched: Battle of Legends, Volume One",
-     "id": null
+     "id": "274637"
     },
     {
      "name": "Unmatched: Cobble & Fog",
-     "id": null
+     "id": "294484"
     },
     {
      "name": "BattleCON",
-     "id": null
+     "id": "89409"
     },
     {
      "name": "Smash Up",
-     "id": null
+     "id": "122522"
     }
    ],
    "teachers": [
@@ -37152,6 +37950,9 @@
   "designers": [
    "Ramy Badie"
   ],
+  "designer_ids": {
+   "Ramy Badie": "104097"
+  },
   "traits": [
    "Set collection",
    "Direct conflict"
@@ -37253,19 +38054,19 @@
    "similar": [
     {
      "name": "Exploding Kittens",
-     "id": null
+     "id": "172225"
     },
     {
      "name": "Munchkin",
-     "id": null
+     "id": "1927"
     },
     {
      "name": "Fluxx",
-     "id": null
+     "id": "258"
     },
     {
      "name": "Throw Throw Burrito",
-     "id": null
+     "id": "274533"
     }
    ],
    "teachers": [
@@ -37334,6 +38135,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -37436,7 +38240,7 @@
     },
     {
      "name": "Escape Plan",
-     "id": null
+     "id": "142379"
     }
    ],
    "teachers": [
@@ -37497,6 +38301,10 @@
    "S J Macdonald",
    "Shem Phillips"
   ],
+  "designer_ids": {
+   "S J Macdonald": "103821",
+   "Shem Phillips": "12547"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -37583,23 +38391,23 @@
    "similar": [
     {
      "name": "Architects of the West Kingdom",
-     "id": null
+     "id": "236457"
     },
     {
      "name": "Paladins of the West Kingdom",
-     "id": null
+     "id": "266810"
     },
     {
      "name": "Raiders of the North Sea",
-     "id": null
+     "id": "170042"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Lords of Waterdeep",
-     "id": null
+     "id": "110327"
     }
    ],
    "teachers": [
@@ -37663,6 +38471,10 @@
    "Nigel Buckle",
    "Dávid Turczi"
   ],
+  "designer_ids": {
+   "Nigel Buckle": "5864",
+   "Dávid Turczi": "76227"
+  },
   "traits": [
    "Parallel engine",
    "Co-operative"
@@ -37740,7 +38552,7 @@
    "similar": [
     {
      "name": "Eclipse: Second Dawn for the Galaxy",
-     "id": null
+     "id": "246900"
     },
     {
      "name": "Gaia Project",
@@ -37748,15 +38560,15 @@
     },
     {
      "name": "Twilight Imperium: Fourth Edition",
-     "id": null
+     "id": "233078"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     }
    ],
    "teachers": [
@@ -37819,6 +38631,9 @@
   "designers": [
    "John Bohrer"
   ],
+  "designer_ids": {
+   "John Bohrer": "366"
+  },
   "traits": [
    "End-game bonuses",
    "Contested market",
@@ -37914,15 +38729,15 @@
    "similar": [
     {
      "name": "Chicago Express",
-     "id": null
+     "id": "31730"
     },
     {
      "name": "1830: Railways & Robber Barons",
-     "id": null
+     "id": "421"
     },
     {
      "name": "Age of Steam",
-     "id": null
+     "id": "4098"
     },
     {
      "name": "Container",
@@ -37999,6 +38814,11 @@
    "Marco Maggi",
    "Francesco Nepitello"
   ],
+  "designer_ids": {
+   "Roberto Di Meglio": "3247",
+   "Marco Maggi": "934",
+   "Francesco Nepitello": "935"
+  },
   "traits": [
    "Area control",
    "Co-operative"
@@ -38086,7 +38906,7 @@
     },
     {
      "name": "A Game of Thrones: The Board Game",
-     "id": null
+     "id": "103343"
     },
     {
      "name": "Kemet",
@@ -38165,6 +38985,10 @@
    "S J Macdonald",
    "Shem Phillips"
   ],
+  "designer_ids": {
+   "S J Macdonald": "103821",
+   "Shem Phillips": "12547"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -38254,19 +39078,19 @@
    "similar": [
     {
      "name": "Architects of the West Kingdom",
-     "id": null
+     "id": "236457"
     },
     {
      "name": "Rajas of the Ganges",
-     "id": null
+     "id": "220877"
     },
     {
      "name": "Great Western Trail",
-     "id": null
+     "id": "193738"
     },
     {
      "name": "The Isle of Cats",
-     "id": null
+     "id": "281259"
     },
     {
      "name": "Barrage",
@@ -38327,6 +39151,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "Set collection",
    "Worker placement of any kind"
@@ -38402,7 +39229,7 @@
     },
     {
      "name": "Escape Plan",
-     "id": null
+     "id": "142379"
     },
     {
      "name": "Gaia Project",
@@ -38414,7 +39241,7 @@
     },
     {
      "name": "Anachrony",
-     "id": null
+     "id": "185343"
     }
    ],
    "teachers": [
@@ -38485,6 +39312,10 @@
    "Isra C.",
    "Shei S."
   ],
+  "designer_ids": {
+   "Isra C.": "77002",
+   "Shei S.": "77173"
+  },
   "traits": [
    "End-game bonuses",
    "Multi-track",
@@ -38559,19 +39390,19 @@
    "similar": [
     {
      "name": "Tekhenu: Obelisk of the Sun",
-     "id": null
+     "id": "297030"
     },
     {
      "name": "Ark Nova",
-     "id": null
+     "id": "342942"
     },
     {
      "name": "Trickerion",
-     "id": null
+     "id": "163068"
     },
     {
      "name": "Barony",
-     "id": null
+     "id": "167513"
     },
     {
      "name": "Teotihuacan: City of Gods",
@@ -38656,6 +39487,9 @@
   "designers": [
    "Elizabeth Hargrave"
   ],
+  "designer_ids": {
+   "Elizabeth Hargrave": "111338"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -38746,15 +39580,15 @@
    "similar": [
     {
      "name": "Everdell",
-     "id": null
+     "id": "199792"
     },
     {
      "name": "Ark Nova",
-     "id": null
+     "id": "342942"
     },
     {
      "name": "Cascadia",
-     "id": null
+     "id": "295947"
     },
     {
      "name": "Res Arcana",
@@ -38762,7 +39596,7 @@
     },
     {
      "name": "Fauna",
-     "id": null
+     "id": "16230"
     }
    ],
    "teachers": [
@@ -38815,6 +39649,10 @@
    "Martino Chiacchiera",
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Martino Chiacchiera": "76530",
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "End-game bonuses",
    "Drafting of any kind",
@@ -38899,11 +39737,11 @@
    "similar": [
     {
      "name": "Yellow & Yangtze",
-     "id": null
+     "id": "244114"
     },
     {
      "name": "Tigris & Euphrates",
-     "id": null
+     "id": "42"
     },
     {
      "name": "Ra",
@@ -38915,7 +39753,7 @@
     },
     {
      "name": "Through the Desert",
-     "id": null
+     "id": "503"
     }
    ],
    "teachers": [
@@ -38985,6 +39823,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "Set collection",
    "Parallel engine",
@@ -39071,7 +39912,7 @@
    "similar": [
     {
      "name": "Tigris & Euphrates",
-     "id": null
+     "id": "42"
     },
     {
      "name": "Blue Lagoon",
@@ -39079,15 +39920,15 @@
     },
     {
      "name": "Samurai",
-     "id": null
+     "id": "3"
     },
     {
      "name": "Through the Desert",
-     "id": null
+     "id": "503"
     },
     {
      "name": "El Grande",
-     "id": null
+     "id": "93"
     }
    ],
    "teachers": [
@@ -39146,6 +39987,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [
    "End-game bonuses",
    "Direct conflict",
@@ -39243,11 +40087,11 @@
    "similar": [
     {
      "name": "Intrigue",
-     "id": null
+     "id": "265"
     },
     {
      "name": "Medici vs. Strozzi",
-     "id": null
+     "id": "24762"
     },
     {
      "name": "Cannes",
@@ -39318,6 +40162,10 @@
    "Antoine Bauza",
    "Bruno Cathala"
   ],
+  "designer_ids": {
+   "Antoine Bauza": "9714",
+   "Bruno Cathala": "1727"
+  },
   "traits": [
    "Set collection",
    "Drafting of any kind"
@@ -39407,6 +40255,9 @@
   "designers": [
    "Klaus Teuber"
   ],
+  "designer_ids": {
+   "Klaus Teuber": "11"
+  },
   "traits": [
    "Network building"
   ],
@@ -39508,6 +40359,9 @@
   "designers": [
    "Klaus Teuber"
   ],
+  "designer_ids": {
+   "Klaus Teuber": "11"
+  },
   "traits": [
    "Network building"
   ],
@@ -39605,6 +40459,9 @@
   "designers": [
    "Klaus Teuber"
   ],
+  "designer_ids": {
+   "Klaus Teuber": "11"
+  },
   "traits": [
    "Network building"
   ],
@@ -39706,6 +40563,10 @@
    "Jeroen Doumen",
    "Joris Wiersinga"
   ],
+  "designer_ids": {
+   "Jeroen Doumen": "270",
+   "Joris Wiersinga": "407"
+  },
   "traits": [
    "Deck or bag building",
    "Drafting of any kind",
@@ -39814,6 +40675,9 @@
   "designers": [
    "Alexander Pfister"
   ],
+  "designer_ids": {
+   "Alexander Pfister": "11767"
+  },
   "traits": [
    "Deck or bag building"
   ],
@@ -39910,6 +40774,9 @@
   "designers": [
    "Carl Chudyk"
   ],
+  "designer_ids": {
+   "Carl Chudyk": "6001"
+  },
   "traits": [
    "Tableau multipliers"
   ],
@@ -39994,6 +40861,9 @@
   "designers": [
    "Carl Chudyk"
   ],
+  "designer_ids": {
+   "Carl Chudyk": "6001"
+  },
   "traits": [
    "Set collection",
    "Tableau multipliers"
@@ -40075,6 +40945,10 @@
    "Carl Chudyk",
    "Chris Cieslik"
   ],
+  "designer_ids": {
+   "Carl Chudyk": "6001",
+   "Chris Cieslik": "7011"
+  },
   "traits": [
    "Set collection",
    "Tableau multipliers"
@@ -40165,6 +41039,9 @@
   "designers": [
    "Carl Chudyk"
   ],
+  "designer_ids": {
+   "Carl Chudyk": "6001"
+  },
   "traits": [
    "Set collection",
    "Tableau multipliers"
@@ -40270,6 +41147,9 @@
   "designers": [
    "Frédéric Guérard"
   ],
+  "designer_ids": {
+   "Frédéric Guérard": "66017"
+  },
   "traits": [
    "End-game bonuses",
    "Set collection",
@@ -40383,6 +41263,10 @@
    "Elwen",
    "Mín"
   ],
+  "designer_ids": {
+   "Elwen": "127823",
+   "Mín": "127822"
+  },
   "traits": [
    "Parallel engine",
    "Worker placement of any kind",
@@ -40485,6 +41369,9 @@
   "designers": [
    "Kevin Nesbitt"
   ],
+  "designer_ids": {
+   "Kevin Nesbitt": "11028"
+  },
   "traits": [
    "Set collection",
    "Contested market",
@@ -40583,6 +41470,9 @@
   "designers": [
    "Reiner Stockhausen"
   ],
+  "designer_ids": {
+   "Reiner Stockhausen": "158"
+  },
   "traits": [
    "Worker placement of any kind",
    "Deck or bag building",
@@ -40673,6 +41563,9 @@
   "designers": [
    "Reiner Knizia"
   ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
   "traits": [],
   "videos": [
    {
@@ -40760,6 +41653,9 @@
   "designers": [
    "Cole Wehrle"
   ],
+  "designer_ids": {
+   "Cole Wehrle": "35585"
+  },
   "traits": [],
   "videos": [
    {
@@ -40864,6 +41760,10 @@
    "Patrick Leder",
    "Cole Wehrle"
   ],
+  "designer_ids": {
+   "Patrick Leder": "4773",
+   "Cole Wehrle": "35585"
+  },
   "traits": [
    "Area control",
    "Direct conflict"
@@ -40975,6 +41875,10 @@
    "Kai Starck",
    "Jamey Stegmaier"
   ],
+  "designer_ids": {
+   "Kai Starck": "99547",
+   "Jamey Stegmaier": "62640"
+  },
   "traits": [
    "Area control"
   ],
@@ -41079,6 +41983,9 @@
   "designers": [
    "Morgan Dontanville"
   ],
+  "designer_ids": {
+   "Morgan Dontanville": "6422"
+  },
   "traits": [
    "Auction of any kind",
    "Network building"
@@ -41186,6 +42093,9 @@
   "designers": [
    "Morgan Dontanville"
   ],
+  "designer_ids": {
+   "Morgan Dontanville": "6422"
+  },
   "traits": [
    "Auction of any kind",
    "Network building"
@@ -41288,6 +42198,10 @@
    "Jacob Fryxelius",
    "Jonathan Fryxelius"
   ],
+  "designer_ids": {
+   "Jacob Fryxelius": "52075",
+   "Jonathan Fryxelius": "52077"
+  },
   "traits": [
    "Set collection",
    "Contested market",
@@ -41387,6 +42301,9 @@
   "designers": [
    "Vital Lacerda"
   ],
+  "designer_ids": {
+   "Vital Lacerda": "12396"
+  },
   "traits": [
    "Parallel engine",
    "Worker placement of any kind"
@@ -41474,6 +42391,11 @@
    "Marco Maggi",
    "Francesco Nepitello"
   ],
+  "designer_ids": {
+   "Roberto Di Meglio": "3247",
+   "Marco Maggi": "934",
+   "Francesco Nepitello": "935"
+  },
   "traits": [
    "Area control"
   ],

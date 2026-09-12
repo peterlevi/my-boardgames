@@ -8,9 +8,16 @@ night: *what should we play, with this many people, in this much time?*
 
 [![The report](docs/screenshot.png)](https://peterlevi.github.io/my-boardgames/)
 
+Click any row and it opens underneath, scrolled up under the header: gallery
+shots, what players say about the game, how you win, how much the players'
+games touch each other, the full player-count poll, and pills that filter the
+table to a designer, mechanic or similar game.
+
+[![An expanded row](docs/screenshot-expanded.png)](https://peterlevi.github.io/my-boardgames/)
+
 Everything but the fetch runs offline, so day-to-day use costs no API calls.
-The published page and the screenshot above are both rebuilt from the cached
-data on every push.
+The published page and both screenshots above are rebuilt from the cached data
+on every push.
 
 ## What the report does
 
@@ -198,7 +205,7 @@ scripts/bggids.py      BGG search API    -> data/bgg_ids.json   (network)
 scripts/report.py      data/games.json   -> a single HTML file  (offline)
 
 scripts/query.py       data/games.json   -> a terminal table    (offline)
-scripts/screenshot.py  the report        -> docs/screenshot.png (offline)
+scripts/screenshot.py  the report        -> docs/screenshot*.png (offline)
 
 scripts/common.py             paths, credentials, shared filter logic
 scripts/interaction.py        the fallback interaction rule
@@ -260,9 +267,9 @@ The live page is built and published by
 `main`, using GitHub Pages' artifact deployment — there is no `gh-pages`
 branch, and the report itself is never committed.
 
-The same workflow re-renders `docs/screenshot.png` and commits it when it has
-changed, so the image at the top of this file always matches the current
-report. That commit is made with `GITHUB_TOKEN`, whose pushes deliberately do
+The same workflow re-renders both `docs/screenshot*.png` and commits them when
+they have changed, so the images at the top of this file always match the
+current report. That commit is made with `GITHUB_TOKEN`, whose pushes deliberately do
 not trigger further workflow runs, so it cannot loop.
 
 The build is offline and needs no secrets, which is the whole reason it is safe

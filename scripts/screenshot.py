@@ -3,6 +3,7 @@
 
     python3 scripts/screenshot.py [--html reports/collection.html]
                                   [-o docs/screenshot.png]
+                                  [--expand "Yellow & Yangtze"]
 
 Uses Playwright's Chromium when it is installed (that is what CI does), and
 otherwise falls back to whatever Chrome is on the machine — so it works
@@ -11,6 +12,12 @@ locally without a 150 MB browser download.
 The shot is deliberately clipped to the top of the page — the header, the
 filter bar and the first handful of rows — because the point is to show what
 the thing looks like, not to dump 85 rows into the README.
+
+`--expand NAME` clicks that game's row first, so the shot shows the detail
+panel as you actually meet it: scrolled up under the header by the row-expand
+tween. The click is injected into a throwaway copy of the HTML rather than
+driven through the browser, so it works the same under Playwright and under
+the plain-Chrome fallback, which cannot script the page.
 """
 import argparse
 import sys
@@ -19,6 +26,41 @@ from pathlib import Path
 from common import ROOT
 
 WIDTH, HEIGHT = 1400, 980
+
+EXPAND_JS = """
+<script>
+window.addEventListener('load', function () {
+  var want = %s;
+  setTimeout(function () {
+    var rows = document.querySelectorAll('tbody tr.game-row');
+    for (var i = 0; i < rows.length; i++) {
+      var cell = rows[i].querySelector('.game');
+      if (cell && cell.textContent.trim() === want) {
+        var row = rows[i];
+        row.click();
+        // Jump to the tween's destination instead of trusting the animation:
+        // headless Chrome runs on virtual time and may shoot mid-scroll.
+        setTimeout(function () {
+          window.scrollTo(0, Math.max(0, window.pageYOffset +
+            row.getBoundingClientRect().top - headerPad()));
+        }, 400);
+        break;
+      }
+    }
+  }, 400);
+});
+</script>
+"""
+
+
+def with_expand(src, name):
+    """A throwaway copy of the page that opens one game on load."""
+    import json
+    html = src.read_text(encoding="utf-8")
+    tmp = src.with_name(src.stem + ".expanded.html")
+    tmp.write_text(html.replace("</body>", EXPAND_JS % json.dumps(name) + "</body>"),
+                   encoding="utf-8")
+    return tmp
 
 
 def shoot_playwright(src, out):
@@ -32,8 +74,9 @@ def shoot_playwright(src, out):
                                 device_scale_factor=2)
         page.goto(src.as_uri())
         # The table is rendered server-side, but give the script its moment to
-        # apply the opening filters and lazy images time to decode.
-        page.wait_for_timeout(1500)
+        # apply the opening filters, run any injected click, and let the lazy
+        # images decode.
+        page.wait_for_timeout(2200)
         page.screenshot(path=str(out))
         browser.close()
     return True
@@ -61,7 +104,7 @@ def shoot_chrome(src, out):
             [exe, "--headless", "--disable-gpu", "--hide-scrollbars",
              f"--user-data-dir={profile}",
              f"--window-size={WIDTH},{HEIGHT}",
-             "--virtual-time-budget=4000",
+             "--virtual-time-budget=6000",
              f"--screenshot={out}", src.as_uri()],
             capture_output=True, text=True)
     if not out.exists():
@@ -70,10 +113,19 @@ def shoot_chrome(src, out):
     return True
 
 
+def clear(out):
+    """A stale file from a previous run would otherwise read as success —
+    shoot_chrome only checks that the path exists afterwards."""
+    if out.exists():
+        out.unlink()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--html", default="reports/collection.html")
     ap.add_argument("-o", "--out", default="docs/screenshot.png")
+    ap.add_argument("--expand", metavar="NAME",
+                    help="click this game's row before shooting")
     a = ap.parse_args()
 
     src = ROOT / a.html
@@ -83,7 +135,15 @@ def main():
     out = ROOT / a.out
     out.parent.mkdir(parents=True, exist_ok=True)
 
-    if not (shoot_playwright(src, out) or shoot_chrome(src, out)):
+    clear(out)
+    tmp = with_expand(src, a.expand) if a.expand else None
+    shot_src = tmp or src
+    try:
+        ok = shoot_playwright(shot_src, out) or shoot_chrome(shot_src, out)
+    finally:
+        if tmp:
+            tmp.unlink(missing_ok=True)
+    if not ok:
         raise SystemExit(
             "No browser available. Either install Playwright\n"
             "  pip install playwright && playwright install chromium\n"

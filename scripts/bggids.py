@@ -20,6 +20,7 @@ import json
 import subprocess
 import sys
 import time
+import unicodedata
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.parse import quote_plus
@@ -32,10 +33,11 @@ SPACING = 3          # seconds between searches; the endpoint is a light one,
 
 
 def norm(name):
-    """Fold the differences that stop a title matching itself: case, the
-    various dashes, and the ", &"/"and" spelling of a joined title."""
-    s = name.lower().replace("–", "-").replace("—", "-")
-    s = s.replace(" and ", " & ")
+    """Fold the differences that stop a title matching itself: case, accents,
+    the various dashes, and the ", &"/"and" spelling of a joined title."""
+    s = unicodedata.normalize("NFKD", name.lower())
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = s.replace("–", "-").replace("—", "-").replace(" and ", " & ")
     return "".join(c for c in s if c.isalnum() or c == "&")
 
 
@@ -63,6 +65,20 @@ def search(name, token, exact):
     return out
 
 
+SEPARATORS = (":", " -", " –", " —", " (")
+
+
+def subtitled(hit_name, want):
+    """True when the hit is the query plus a subtitle — "Caverna" is listed on
+    BGG as "Caverna: The Cave Farmers", and people say the short name. The
+    separator is required so "Go" cannot swallow "Go Nuts for Donuts"."""
+    for sep in SEPARATORS:
+        head = hit_name.split(sep)[0]
+        if head != hit_name and norm(head) == want:
+            return True
+    return False
+
+
 def pick(name, hits):
     """BGG returns search hits in id order, not by relevance, so the oldest
     matching id wins ties — which is usually the original edition rather than a
@@ -73,6 +89,13 @@ def pick(name, hits):
     exact = [h for h in hits if norm(h["name"]) == want]
     if exact:
         return min(exact, key=lambda h: int(h["id"]))
+    # Short queries are too ambiguous to match on a prefix alone.
+    if len(want) >= 3:
+        subs = [h for h in hits if subtitled(h["name"], want)]
+        if subs:
+            # Lowest id, not shortest name: the original ("Caverna: The Cave
+            # Farmers") predates its spin-offs ("Caverna: Cave vs Cave").
+            return min(subs, key=lambda h: int(h["id"]))
     return hits[0] if len(hits) == 1 else None
 
 

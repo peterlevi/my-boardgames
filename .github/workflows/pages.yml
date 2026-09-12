@@ -47,20 +47,23 @@ jobs:
       - name: Render the report
         run: python3 scripts/report.py -o site/index.html
 
-      - name: Refresh the README screenshot
-        run: python3 scripts/screenshot.py --html site/index.html -o docs/screenshot.png
+      - name: Refresh the README screenshots
+        run: |
+          python3 scripts/screenshot.py --html site/index.html -o docs/screenshot.png
+          python3 scripts/screenshot.py --html site/index.html \
+            --expand "Yellow & Yangtze" -o docs/screenshot-expanded.png
 
-      - name: Commit the screenshot if it changed
+      - name: Commit the screenshots if they changed
         # Pushes made with GITHUB_TOKEN do not trigger further workflow runs,
         # so this cannot loop.
         run: |
-          if git diff --quiet -- docs/screenshot.png; then
-            echo "screenshot unchanged"
+          if git diff --quiet -- docs/; then
+            echo "screenshots unchanged"
           else
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add docs/screenshot.png
-            git commit -m "Refresh README screenshot [skip ci]"
+            git add docs/
+            git commit -m "Refresh README screenshots [skip ci]"
             git push
           fi
 

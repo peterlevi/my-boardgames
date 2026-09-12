@@ -19,6 +19,8 @@ import argparse
 import base64
 import datetime as dt
 import json
+import re
+import subprocess
 from pathlib import Path
 
 from common import ROOT, load_games, playtime, load_overrides
@@ -109,12 +111,13 @@ def compact(games, tag_idx, inline=True):
             "tmin": g["minplaytime"], "tmax": g["maxplaytime"],
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
             "pl": g["plays"], "ds": g["designers"],
+            "dsid": g.get("designer_ids") or {},
             "rt": g["ratings"], "ow": g["owners"],
             "de": (g["description"] or "")[:900],
             "mn": g["minplayers"], "mx": g["maxplayers"],
             "ai": trim_ai(g.get("ai")),
             "img": g.get("image"), "vid": g.get("videos") or [],
-            "gal": load_gallery(g["id"]),
+            "gal": load_gallery(g["id"], g.get("image")),
             "ix": g["interaction"], "exp": 1 if g["is_expansion"] else 0,
             "of": g["expands"], "t": playtime(g),
             "top": max((v[0] for v in poll.values()), default=0),
@@ -140,6 +143,13 @@ EM_DASH = "\u2014"
 # More interaction reads as the better end of the ramp.
 IX_PILL = {"High": "p3", "Medium": "p2", "Low": "p1"}
 BREADTH_PILL = {"Focused": "p3", "Some": "p2", "Broad": "p1", "Salad": "pw"}
+# The bare words read as jargon in a dropdown — say what each one means.
+BREADTH_LABELS = {
+    "Focused": "Focused — one main way to score",
+    "Some": "Some — a few ways to score",
+    "Broad": "Broad — many ways to score",
+    "Salad": "Salad — points from everywhere",
+}
 # Column headings must be short; the full phrase stays in the filter.
 WIN_SHORT = {
     "Most points, many sources": "Points, many",
@@ -182,15 +192,13 @@ def qualifies(s, mode):
     return True
 
 
-def reading(g, n, by_base, fold, min_votes, mode):
+def reading(g, n, by_base, fold, mode):
     s = stats_at(g, n)
-    if s and s["total"] < min_votes:
-        s = None
     if not fold or g["exp"] or qualifies(s, mode):
         return s, None
     for e in by_base.get(g["id"], []):
         cand = stats_at(e, n)
-        if not cand or cand["total"] < min_votes:
+        if not cand:
             continue
         if qualifies(cand, mode):
             return cand, e["n"]
@@ -217,16 +225,34 @@ def bar(pct):
 # Opinion fields from the local database. A low-confidence entry means the
 # model did not recognise the game, so its opinion fields are dropped rather
 # than shown — the report never presents a guess as a finding.
-def load_gallery(gid):
-    """Gallery image URLs cached by scripts/gallery.py. Only URLs travel in the
-    page; the images themselves load from BGG when a row is expanded."""
+def pic_id(url):
+    """BGG serves one image under many URLs — the same `picNNNNNNN` behind
+    different size and filter transforms — so the URL is useless as an
+    identity. The pic id is the thing that is actually the same picture."""
+    m = re.search(r"/(pic\d+)\.", url or "")
+    return m.group(1) if m else (url or "")
+
+
+def load_gallery(gid, cover=None):
+    """Gallery image URLs cached by scripts/gallery.py, minus the box cover and
+    any repeat of another shot. Only URLs travel in the page; the images
+    themselves load from BGG when a row is expanded."""
     f = ROOT / "data" / "gallery" / f"{gid}.json"
     if not f.exists():
         return []
     try:
-        return json.loads(f.read_text())[:5]
+        gal = json.loads(f.read_text())
     except Exception:  # noqa: BLE001
         return []
+    seen = {pic_id(cover)} if cover else set()
+    out = []
+    for im in gal:
+        k = pic_id(im.get("u"))
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append(im)
+    return out[:5]
 
 
 def trim_ai(ai):
@@ -371,7 +397,7 @@ def rows_html(data, a):
     fold = a.expansions == "fold"
     out = []
     for i, g in enumerate(data):
-        s, via = (reading(g, n, by_base, fold, a.min_votes, mode)
+        s, via = (reading(g, n, by_base, fold, mode)
                   if n else (None, None))
         shown = passes_static(g, s, a, mode)
 
@@ -410,14 +436,16 @@ def rows_html(data, a):
             f'<td class="gamecell">'
             f'<span class="game">{esc(g["n"])}</span> '
             f'<span class="yr">{g["y"] or ""}</span>{badges}{inline}</td>'
-            f'<td class="num hide-sm">{g["pl"]}</td>'
+            f'<td class="num hide-sm hide-s">{g["pl"]}</td>'
             f'<td class="num">{esc(g["t"])}</td>'
-            f'<td class="num hide-sm">{weight}</td>'
-            f'<td class="hide-sm">{ix_html}</td>'
-            f'<td class="hide-sm designer">{designer}</td>'
-            f'<td class="num hide-sm j-verdict">{v}</td>'
-            f'<td class="num bar hide-sm wide-only j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
-            f'<td class="num bar hide-sm j-appr">{bar(s["appr"]) if s else EM_DASH}</td>'
+            f'<td class="num hide-sm hide-xs">{weight}</td>'
+            f'<td class="hide-sm hide-xs">{ix_html}</td>'
+            f'<td class="hide-sm hide-md designer">{designer}</td>'
+            f'<td class="hide-sm hide-lg c-win">{win_html}</td>'
+            f'<td class="hide-sm hide-lg c-br">{br_html}</td>'
+            f'<td class="num hide-sm c-atn j-verdict">{v}</td>'
+            f'<td class="num bar hide-sm wide-only c-best j-best">{bar(s["bestPct"]) if s else EM_DASH}</td>'
+            f'<td class="num bar hide-sm c-appr j-appr">{bar(s["appr"]) if s else EM_DASH}</td>'
             f'<td class="num hide-sm" title="{g["rt"] or 0} BGG ratings">'
             f'{fmt_count(g["rt"])}</td>'
             f'</tr>')
@@ -464,6 +492,23 @@ def check_balanced(html):
         raise SystemExit("unbalanced markup: " + "; ".join(problems[:5]))
 
 
+def repo_url():
+    """The GitHub link in the corner, read from the checkout's own origin so a
+    fork points at itself. Falls back to this project's home."""
+    default = "https://github.com/peterlevi/my-boardgames"
+    try:
+        out = subprocess.run(["git", "-C", str(HERE.parent), "config",
+                              "--get", "remote.origin.url"],
+                             capture_output=True, text=True, timeout=5).stdout.strip()
+    except Exception:  # noqa: BLE001
+        return default
+    if not out:
+        return default
+    if out.startswith("git@"):                      # git@github.com:user/repo.git
+        out = "https://" + out[4:].replace(":", "/", 1)
+    return out[:-4] if out.endswith(".git") else out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--players", type=int, default=0,
@@ -476,7 +521,6 @@ def main():
     ap.add_argument("--expansions", choices=["fold", "show", "drop"],
                     default="fold", help="fold: hide expansion rows but let "
                                          "them speak for their base game")
-    ap.add_argument("--min-votes", type=int, default=10)
     ap.add_argument("--link-thumbs", action="store_true",
                     help="hotlink thumbnails to BGG instead of inlining them")
     ap.add_argument("-o", "--out", default="reports/collection.html")
@@ -491,7 +535,7 @@ def main():
     tpl = (HERE / "report_template.html").read_text(encoding="utf-8")
     opts = {"players": a.players, "mode": a.mode, "win": a.win,
             "breadth": a.breadth,
-            "expansions": a.expansions, "minVotes": a.min_votes}
+            "expansions": a.expansions}
 
     rows, shown = rows_html(data, a)
     def options(pairs, current):
@@ -507,7 +551,7 @@ def main():
     wins = options([("any", "Doesn't matter")]
                    + [(w, w) for w in WIN_CRITERIA], a.win)
     breadths = options([("any", "Doesn't matter")]
-                       + [(b, b) for b in ("Focused", "Some", "Broad", "Salad")],
+                       + [(b, l) for b, l in BREADTH_LABELS.items()],
                        a.breadth)
     exps = options([("fold", "Hide, but count for base game"),
                     ("show", "Show as their own rows"),
@@ -526,7 +570,6 @@ def main():
             .replace("<!--__EXP_OPTIONS__-->", exps)
             .replace("<!--__WIN_OPTIONS__-->", wins)
             .replace("<!--__BREADTH_OPTIONS__-->", breadths)
-            .replace("__MINVOTES__", str(a.min_votes))
             .replace("__SHOWN__", str(shown))
             .replace("__DESC__", esc(describe(a)))
             .replace("/*__DATA__*/", json.dumps(data, ensure_ascii=False,
@@ -534,6 +577,9 @@ def main():
             .replace("/*__OPTS__*/", json.dumps(opts))
             .replace("/*__TAGS__*/", json.dumps(tags, ensure_ascii=False,
                                                 separators=(",", ":")))
+            .replace("__ATN__", f"At {a.players}p" if a.players else "At N")
+            .replace("__TABLECLASS__", "" if a.players else "mode-any")
+            .replace("__REPO_URL__", esc(repo_url()))
             .replace("__STAMP__", dt.date.today().isoformat())
             .replace("__NGAMES__", str(sum(1 for g in data if not g["exp"])))
             .replace("__NEXP__", str(sum(1 for g in data if g["exp"]))))

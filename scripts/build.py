@@ -70,6 +70,10 @@ def parse_item(it, is_expansion=False):
     categories = links(it, "boardgamecategory")
     families = links(it, "boardgamefamily")
     designers = links(it, "boardgamedesigner")
+    # Their BGG ids come free with the same links, and are what a designer's
+    # own BGG page is addressed by.
+    designer_ids = {l.get("value"): l.get("id") for l in it.findall("link")
+                    if l.get("type") == "boardgamedesigner"}
     # BGG returns a mixed bag; instructional videos are the teaching ones, and
     # English first since that is what this collection wants.
     videos = []
@@ -104,7 +108,8 @@ def parse_item(it, is_expansion=False):
         minplaytime=num(attr(it, "minplaytime"), int),
         maxplaytime=num(attr(it, "maxplaytime"), int),
         mechanics=mechanics, categories=categories, families=families,
-        designers=designers, traits=traits.of(mechanics), videos=videos[:3],
+        designers=designers, designer_ids=designer_ids,
+        traits=traits.of(mechanics), videos=videos[:3],
         image=(it.findtext("image") or "").strip() or None,
         interaction=level, interaction_shared=shared,
         poll=poll,

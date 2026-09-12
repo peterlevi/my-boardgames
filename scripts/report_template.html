@@ -42,16 +42,50 @@ h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 .titlebar { display:flex; align-items:baseline; column-gap:12px; row-gap:2px;
   flex-wrap:wrap; margin-bottom:2px; }
 .titlebar .sub { margin:0; font-size:.9rem; }
-/* Anchored to the right, and the body is taken out of flow: as a normal flex
-   child the open paragraph filled the line, leaving margin-left:auto nothing
-   to push against, so the link jumped to the left edge on every expand. */
-.titlebar details { margin-left:auto; position:relative; }
-.titlebar details > p { position:absolute; z-index:20; top:calc(100% + 4px);
-  right:0; width:min(72ch, calc(100vw - 48px)); margin:0;
+/* The legend is a checkbox toggle, not a <details>: its body has to sit
+   outside the title line to span the full table width, and a <details> keeps
+   its body inside itself. The checkbox precedes both, so ~ reaches them, and
+   it works with scripts blocked the way <details> did. */
+#legendtoggle { position:absolute; width:1px; height:1px; opacity:0;
+  margin:0; pointer-events:none; }
+#legendlink { margin-left:auto; cursor:pointer; color:var(--accent);
+  font-size:.84rem; font-weight:700; display:flex; align-items:center;
+  gap:7px; white-space:nowrap; }
+#legendlink::before { content:"▸"; font-size:1.15em; line-height:1; }
+#legendtoggle:checked ~ .titlebar #legendlink::before { content:"▾"; }
+#legendlink:hover { color:var(--ink); }
+#legendtoggle:focus-visible ~ .titlebar #legendlink { outline:2px solid
+  var(--accent); outline-offset:3px; border-radius:3px; }
+/* The GitHub mark sits last on the title line, after the legend link. */
+#repo { color:var(--ink); display:flex; align-items:center; margin-left:18px;
+  /* A flex item on a baseline-aligned line aligns its own baseline, which for
+     an icon is its bottom edge — it sat low against the text. Centring it on
+     the text's own cap height puts it level with the link beside it. */
+  align-self:center; }
+#repo:hover { color:var(--muted); }
+/* max-width:none beats the .sub rule it shares a class with, whose 75ch cap
+   was squeezing the panel to half the table's width. */
+.legendbody { display:none; max-width:none; margin:10px 0 2px;
   background:var(--panel); border:1px solid var(--line); border-radius:9px;
-  padding:14px 16px; box-shadow:0 10px 28px rgba(0,0,0,.12); }
-:root:not([data-theme="light"]) .titlebar details > p {
-  box-shadow:0 10px 28px rgba(0,0,0,.5); }
+  padding:16px 18px; columns:2; column-gap:38px; }
+#legendtoggle:checked ~ .legendbody { display:block; }
+.legendbody > section { break-inside:avoid; display:block; }
+.legendbody > section + section { margin-top:16px; }
+.legendbody p { margin:0 0 10px; }
+.legendbody section:last-child p:last-child { margin-bottom:0; }
+.legendbody dl { display:grid; grid-template-columns:max-content 1fr;
+  gap:3px 14px; margin:0; }
+.legendbody dt { color:var(--ink); font-weight:700; white-space:nowrap; }
+.legendbody dd { margin:0; }
+.legendbody h5 { margin:0 0 5px; font-size:.68rem; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--muted); }
+@media (max-width:860px) {
+  .legendbody { columns:1; }
+}
+@media (max-width:640px) {
+  .legendbody dl { grid-template-columns:1fr; gap:0 0; }
+  .legendbody dd { margin:0 0 7px; }
+}
 .panel { padding:10px 0 8px; margin-top:6px; }
 .row { display:flex; gap:10px 26px; align-items:flex-end; flex-wrap:wrap; }
 .row + .row { margin-top:20px; }
@@ -111,9 +145,12 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
   padding:4px; }
 /* A grid, not a flex row: across 710 rows of wildly different name lengths,
    flex leaves the kind, count and description ragged all the way down. */
+/* One gap everywhere: the tick, the name, the kind, the count and the
+   description were 8px apart but their columns were sized so unevenly that
+   the count crowded the description while the kind floated alone. */
 .tagbox label { display:grid;
   grid-template-columns:16px minmax(0,15em) 6.5em 5.5em 1fr;
-  align-items:baseline; gap:8px; padding:4px 8px; border-radius:6px;
+  align-items:baseline; gap:0 18px; padding:4px 10px; border-radius:6px;
   cursor:pointer; font-size:.82rem; }
 .tagbox label:hover { background:var(--bg); }
 .tagbox input { margin:0; position:relative; top:2px; }
@@ -139,7 +176,9 @@ td.designer .more { color:var(--muted); }
    the column headers. The filters scroll away — they are a thing you set, not
    a thing you read. */
 .resultline { position:sticky; top:0; z-index:6; background:var(--bg);
-  margin:0; padding:10px 0 7px; border-top:1px solid var(--line);
+  /* Space above the rule, so the results read as a new section rather than as
+     the last row of the filter panel. */
+  margin:22px 0 0; padding:10px 0 7px; border-top:1px solid var(--line);
   display:flex; align-items:baseline; gap:14px; flex-wrap:wrap; }
 #count { font-size:1.15rem; font-weight:700; color:var(--ink);
   letter-spacing:-.01em; font-variant-numeric:tabular-nums; white-space:nowrap; }
@@ -178,9 +217,15 @@ table { width:100%; table-layout:fixed; border-collapse:separate;
 th.w-thumb { width:52px; } th.w-rank { width:56px; }
 th.w-hex { width:54px; } th.w-plays { width:58px; }
 th.w-time { width:72px; } th.w-weight { width:70px; }
-th.w-ix { width:86px; } th.w-designer { width:210px; }
+th.w-ix { width:86px; } th.w-designer { width:150px; }
 th.w-atn { width:64px; } th.w-pct { width:66px; }
 th.w-ratings { width:74px; }
+th.w-win { width:124px; } th.w-br { width:82px; }
+/* The poll columns read a player count, so with the count at "Any" all three
+   are dashes. The table swaps them for the two fields that always have a
+   value — what wins the game, and how broadly it scores. */
+table.mode-any .c-atn, table.mode-any .c-best, table.mode-any .c-appr,
+table:not(.mode-any) .c-win, table:not(.mode-any) .c-br { display:none; }
 td.gamecell { min-width:0; }
 a.game { overflow-wrap:anywhere; }
 th, td { padding:8px 9px; text-align:left; border-bottom:1px solid var(--line);
@@ -214,6 +259,11 @@ td.thumb { width:44px; padding-right:0; }
 .game { color:var(--ink); font-weight:600; }
 a.game:hover { color:var(--accent); }
 .chip .n { color:var(--muted); font-variant-numeric:tabular-nums; }
+/* Designer pills in "At a glance": the pill filters, the arrow leaves. */
+.dspills { display:flex; flex-wrap:wrap; gap:4px 6px; }
+.dspill { display:inline-flex; align-items:center; gap:2px; }
+.extlink { color:var(--muted); font-size:.78rem; padding:0 2px; line-height:1; }
+.extlink:hover { color:var(--accent); }
 .chip .ext { opacity:.6; }
 .yr { color:var(--muted); font-weight:400; font-size:.85em; }
 /* Every categorical cell — the player-count verdict, interaction, salad
@@ -361,6 +411,27 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   th, td { padding:8px 5px; }
   td.designer { max-width:104px; }
 }
+/* Fixed layout cannot shrink a column below its stated width: past the point
+   where the widths stop fitting, the header labels overlap their neighbours
+   instead of the table getting narrower. So columns leave in order of what
+   can be spared — Win condition and Breadth first (they only show at "Any"
+   anyway), then Designer, the widest of what is left. */
+@media (max-width:1260px) {
+  .hide-lg { display:none; }
+}
+@media (max-width:1180px) {
+  .hide-md { display:none; }
+}
+/* Below this the game's own name is what suffers, so Plays goes too — it is
+   the column you consult, not the one you scan. */
+@media (max-width:1000px) {
+  .hide-s { display:none; }
+}
+/* Narrower still and the name column is down to a word or two, so Weight and
+   Interact go: both are one glance in the expanded row. */
+@media (max-width:860px) {
+  .hide-xs { display:none; }
+}
 @media (max-width:1000px) and (min-width:701px) {
   .scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
   th { position:static; }
@@ -396,22 +467,84 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 </style>
 </head><body>
 <div class="wrap">
+<input type="checkbox" id="legendtoggle">
 <div class="titlebar">
   <h1>Board game collection</h1>
   <span class="sub">__NGAMES__ games · __NEXP__ expansions</span>
   <button class="link" id="reset" type="button">Reset filters</button>
-  <details id="legend"><summary>What the columns mean</summary>
-    <p class="sub note"><b>Best at N</b> = N drew more “Best” votes than any
-    other count in BGG's player-count poll. <b>Good at N</b> = Best, or ≥50% of
-    voters at N called N the best count. <b>Appr</b> = (Best + Recommended) ÷
-    all votes at N. <b>Interaction</b> is <em>not</em> a BGG statistic — no such
-    data exists in their API — it is derived from each game's mechanics and
-    categories, so treat it as a rough sort, not a fact. One filter field covers every property a game has —
-    BGG's own categories, mechanics, designers and families, plus a few named
-    groupings of mechanics — searchable by name or description. Every filter runs in the page; nothing here calls out
-    to BGG.</p>
-  </details>
+  <label for="legendtoggle" id="legendlink">What the columns mean</label>
+  <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"
+     title="This report's source on GitHub" aria-label="Source on GitHub">
+    <svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true"
+      ><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47
+      7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09
+      -.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21
+      1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+      0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18
+      1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08
+      2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54
+      1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42
+      -3.58-8-8-8Z"/></svg>
+  </a>
 </div>
+
+    <div class="legendbody sub note">
+    <section>
+    <h5>Columns</h5>
+    <dl>
+      <dt>Rank</dt><dd>BGG's overall rank. Unranked games sort last.</dd>
+      <dt>BGG · Mine</dt><dd>BGG's average rating, and your own rating from
+        your collection. Both are out of 10.</dd>
+      <dt>Plays</dt><dd>Plays you have logged on BGG.</dd>
+      <dt>Weight</dt><dd>BGG's complexity vote, 1 (light) to 5 (heavy).</dd>
+      <dt>Interact</dt><dd>How much the players' games touch each other —
+        Low, Medium or High. Not a BGG statistic; see below.</dd>
+      <dt>At N</dt><dd>What the player-count poll says about the count you
+        picked. <b>Best at N</b> = N drew more “Best” votes than any other
+        count. <b>Good at N</b> = best, or ≥50% of voters at N called N the
+        best count.</dd>
+      <dt>Best · Appr</dt><dd>At the chosen count: the share of voters calling
+        it the best count, and approval = (Best + Recommended) ÷ all votes at
+        that count. Blank until you pick a count.</dd>
+      <dt>Ratings</dt><dd>How many people have rated the game on BGG — a rough
+        proxy for how well known it is.</dd>
+    </dl>
+    </section>
+    <section>
+    <h5>Filters worth explaining</h5>
+    <dl>
+      <dt>Rule</dt><dd>How strict the player count is: plays at it, good at
+        it, or best at it. N/A until a count is chosen.</dd>
+      <dt>Expansions</dt><dd>Hidden by default but still counted: an
+        expansion's own poll can be what makes the base game good at a
+        count.</dd>
+      <dt>Win condition</dt><dd>What actually decides the winner — most points,
+        a race, elimination, and so on.</dd>
+      <dt>Breadth</dt><dd>How many different things earn you points: one
+        main route, a few, many, or a full point salad.</dd>
+      <dt>Properties</dt><dd>One field over everything a game is tagged with —
+        BGG's categories, mechanics, families and designers, plus a few named
+        groupings of mechanics — searchable by name or by description.
+        “8 of 41” counts matches within the filters already applied. Match
+        ticked properties by all, any, or none.</dd>
+    </dl>
+    </section>
+    <section>
+    <h5>Where the data comes from</h5>
+    <p>Everything above is BGG's own data, cached locally — every filter runs
+    in this page and nothing calls out to BGG.</p>
+    <p>Three fields are not BGG's: <b>Interact</b>, <b>Win condition</b> and
+    <b>Breadth</b>, along with the “What people say” notes in an
+    expanded row, come from a local database built with Claude from what is
+    known about each game (a few looked up on the web, marked where so). No
+    such data exists in BGG's API. Treat them as a rough sort, not fact; where
+    the database has nothing, Interact falls back to a rule over the game's
+    mechanics.</p>
+    <p>Click any row to expand it. Pills inside filter the table to that
+    designer, mechanic or game — except games you do not own, which link out
+    to BGG.</p>
+    </section>
+    </div>
 
 <div class="panel">
   <div class="row">
@@ -432,13 +565,13 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   <details id="more">
     <summary>More filters</summary>
     <div class="row">
-      <div class="f"><label for="win">Wins by</label>
+      <div class="f"><label for="win">Win condition</label>
         <select id="win"><!--__WIN_OPTIONS__--></select></div>
-      <div class="f"><label for="breadth">Scoring breadth</label>
+      <div class="f"><label for="breadth">Breadth</label>
         <select id="breadth"><!--__BREADTH_OPTIONS__--></select></div>
     </div>
     <div class="row">
-      <div class="f"><label>BGG score</label>
+      <div class="f"><label>BGG rating</label>
         <div class="pair"><input id="smin" type="number" min="0" max="10" step="0.1"
           placeholder="0"><span>to</span><input id="smax" type="number" min="0"
           max="10" step="0.1" placeholder="10"></div></div>
@@ -446,7 +579,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         <div class="pair"><input id="mymin" type="number" min="0" max="10" step="0.5"
           placeholder="0"><span>to</span><input id="mymax" type="number" min="0"
           max="10" step="0.5" placeholder="10"></div></div>
-      <div class="f"><label>Complexity</label>
+      <div class="f"><label>Weight</label>
         <div class="pair"><input id="wmin" type="number" min="0" max="5" step="0.1"
           placeholder="0"><span>to</span><input id="wmax" type="number" min="0"
           max="5" step="0.1" placeholder="5"></div></div>
@@ -458,8 +591,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         <div class="pair"><input id="plmin" type="number" min="0" step="1"
           placeholder="0"><span>to</span><input id="plmax" type="number" min="0"
           step="1" placeholder="any"></div></div>
-      <div class="f"><label for="votes">Min poll votes</label>
-        <input id="votes" type="number" min="0" step="5" value="__MINVOTES__"></div>
     </div>
     <div class="row">
       <div class="f"><label for="tagsearch">Filter by properties</label>
@@ -482,24 +613,26 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   id="desc">__DESC__</span><span id="outcount" hidden></span></p>
 
 <div class="scroll">
-<table>
+<table class="__TABLECLASS__">
   <thead><tr>
     <th class="thumb w-thumb"></th>
     <th class="num hide-sm w-rank" data-k="rk">Rank</th>
     <th class="num w-hex" data-k="av">BGG</th>
     <th class="num w-hex" data-k="my">Mine</th>
     <th data-k="n">Game</th>
-    <th class="num hide-sm w-plays" data-k="pl">Plays</th>
+    <th class="num hide-sm hide-s w-plays" data-k="pl">Plays</th>
     <th class="num w-time" data-k="tmax">Time</th>
-    <th class="num hide-sm w-weight" data-k="w">Weight</th>
-    <th class="hide-sm w-ix" data-k="ix">Interact</th>
-    <th class="hide-sm w-designer" data-k="ds">Designer</th>
-    <th class="num hide-sm w-atn" data-k="verdict">At N</th>
-    <th class="num hide-sm wide-only w-pct" data-k="bestPct">Best</th>
-    <th class="num hide-sm w-pct" data-k="appr">Appr</th>
+    <th class="num hide-sm hide-xs w-weight" data-k="w">Weight</th>
+    <th class="hide-sm hide-xs w-ix" data-k="ix">Interact</th>
+    <th class="hide-sm hide-md w-designer" data-k="ds">Designer</th>
+    <th class="hide-sm hide-lg c-win w-win" data-k="win">Win condition</th>
+    <th class="hide-sm hide-lg c-br w-br" data-k="breadth">Breadth</th>
+    <th class="num hide-sm c-atn w-atn" data-k="verdict">__ATN__</th>
+    <th class="num hide-sm wide-only c-best w-pct" data-k="bestPct">Best</th>
+    <th class="num hide-sm c-appr w-pct" data-k="appr">Appr</th>
     <th class="num hide-sm w-ratings" data-k="rt" class="w-ratings" title="How many people have rated the game on BGG">Ratings</th>
   </tr></thead>
-  <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="14"
+  <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="16"
     id="septext"></td></tr><!--__ROWS__--></tbody>
 </table>
 </div>
@@ -525,6 +658,7 @@ const TAGS = /*__TAGS__*/;
 // ES2019, for the same reason.
 var ROWS = [];
 var TBODY = document.getElementById('rows');
+var TABLE = TBODY.parentNode;
 [].forEach.call(TBODY.querySelectorAll('tr'), function (tr) {
   ROWS[+tr.getAttribute('data-i')] = tr;
 });
@@ -641,8 +775,7 @@ var F = {
   smin: el('smin'), smax: el('smax'),
   mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
-  tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'), exp: el('exp'),
-  votes: el('votes')
+  tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'), exp: el('exp')
 };
 
 function applyDefaults() {
@@ -652,7 +785,6 @@ function applyDefaults() {
   F.win.value = OPTS.win;
   F.breadth.value = OPTS.breadth;
   F.exp.value = OPTS.expansions;
-  F.votes.value = OPTS.minVotes;
   F.ix.value = '';
   F.tagmode.value = 'all';
   document.getElementById('tagsearch').value = '';
@@ -686,14 +818,13 @@ function qualifies(s, mode) {
  *  only gets to speak if the base game does NOT already qualify — an expansion
  *  is there to open up a count the base game can't do well, not to restate one
  *  it already does. */
-function reading(g, n, fold, minVotes, mode) {
+function reading(g, n, fold, mode) {
   var base = statsAt(g, n);
-  if (base && base.total < minVotes) base = null;
   if (!fold || g.exp || qualifies(base, mode)) return base;
   var list = EXP_OF[g.id] || [];
   for (var i = 0; i < list.length; i++) {
     var s = statsAt(list[i], n);
-    if (!s || s.total < minVotes) continue;
+    if (!s) continue;
     if (qualifies(s, mode)) { s.via = list[i].n; return s; }
   }
   return base;
@@ -719,7 +850,6 @@ function or0(v) { return (v === null || v === undefined) ? 0 : v; }
 function partition() {
   var term = F.q.value.trim().toLowerCase();
   var n = +F.players.value, mode = F.mode.value, expMode = F.exp.value;
-  var minVotes = +F.votes.value || 0;
   var smin = num(F.smin.value), smax = num(F.smax.value);
   var mymin = num(F.mymin.value), mymax = num(F.mymax.value);
   var wmin = num(F.wmin.value), wmax = num(F.wmax.value);
@@ -739,7 +869,7 @@ function partition() {
     // it applies to the search results too.
     var structural = !(g.exp && expMode !== 'show');
 
-    var s = n ? reading(g, n, fold, minVotes, mode) : null;
+    var s = n ? reading(g, n, fold, mode) : null;
     var ai = g.ai || {};
     var pass = structural && tagsOk(g, picked, tmode) &&
       !(ix && (ai.ixl || g.ix) !== ix) &&
@@ -819,12 +949,16 @@ function sortRows(rows) {
       case 'ix':
         return ['Low', 'Medium', 'High'].indexOf((g.ai && g.ai.ixl) || g.ix);
       case 'ds': return (g.ds && g.ds[0]) || null;
-      case 'breadth':
-        return ['Focused', 'Some', 'Broad', 'Salad'].indexOf(g.br);
+      case 'win': return (g.ai && g.ai.wc) || null;
+      case 'breadth': {
+        var order = ['Focused', 'Some', 'Broad', 'Salad']
+          .indexOf((g.ai && g.ai.br) || '');
+        return order < 0 ? null : order;
+      }
       default: return g[sortKey];
     }
   }
-  var text = sortKey === 'n' || sortKey === 'ds';
+  var text = sortKey === 'n' || sortKey === 'ds' || sortKey === 'win';
   rows.sort(function (a, b) {
     var x = get(a), y = get(b);
     if (text) {
@@ -954,6 +1088,10 @@ function render() {
     : inside.length + ' row' + (inside.length === 1 ? '' : 's') +
       (inside.length !== games ? ' (' + games + ' games)' : '');
   el('desc').textContent = describe();
+  // Name the poll column after the count it is reading: "At 4p".
+  var atn = document.querySelector('th[data-k="verdict"]');
+  if (atn) atn.textContent = n ? 'At ' + n + 'p' : 'At N';
+  TABLE.className = n ? '' : 'mode-any';
   markFilters();
   recountTags(inside.map(function (r) { return r[0]; }));
 
@@ -980,11 +1118,10 @@ function tagsOfKind(g, kind) {
 function filterByTag(i) {
   var row = tagRows[i];
   if (!row) return;
-  var players = F.players.value, mode = F.mode.value, votes = F.votes.value;
+  var players = F.players.value, mode = F.mode.value;
   applyDefaults();
   F.players.value = players;
   F.mode.value = mode;
-  F.votes.value = votes;
   row.firstChild.checked = true;
   syncSelects();
   el('more').open = true;
@@ -1038,6 +1175,31 @@ function mediaBlock(g) {
   }).join('') + '</div>';
 }
 
+/** Designers as pills: each one filters the table to that designer, and the
+ *  arrow beside it opens their own page on BGG. */
+function designerPills(g) {
+  var html = (g.ds || []).map(function (d) {
+        var i = TAGS.findIndex(function (t) {
+          return t.k === 'designer' && t.n === d;
+        });
+        // The pill filters the table, exactly like a mechanic or category
+        // pill; the arrow beside it opens the designer's own page on BGG.
+        var pill = i < 0
+          ? '<span class="chip">' + esc(d) + '</span>'
+          : '<button type="button" class="chip designer" data-tag="' + i +
+            '" title="Filter by this designer">' + esc(d) +
+            ' <span class="n">' + TAGS[i].c + '</span></button>';
+        var id = (g.dsid || {})[d];
+        var out = id
+          ? '<a class="extlink" target="_blank" rel="noopener" href="' +
+            'https://boardgamegeek.com/boardgamedesigner/' + esc(id) +
+            '" title="Open ' + esc(d) + ' on BGG">↗</a>'
+          : '';
+        return '<span class="dspill">' + pill + out + '</span>';
+      }).join('');
+  return html ? '<span class="dspills">' + html + '</span>' : '—';
+}
+
 function buildDetail(g) {
   function chips(idxs, cls) {
     if (!idxs.length) return '';
@@ -1057,17 +1219,10 @@ function buildDetail(g) {
     ['Ratings on BGG', g.rt ? g.rt.toLocaleString() : '—'],
     ['Owners', g.ow ? g.ow.toLocaleString() : '—'],
     ['Your plays', g.pl],
-    ['Designers', (g.ds || []).map(function (d) {
-        var i = TAGS.findIndex(function (t) {
-          return t.k === 'designer' && t.n === d;
-        });
-        return i < 0 ? esc(d)
-          : '<button type="button" class="linkish" data-tag="' + i + '">' +
-            esc(d) + '</button>';
-      }).join(', ') || '—'],
+    ['Designers', designerPills(g)],
     ['Interaction', ((g.ai && g.ai.ixl) || g.ix)],
-    ['Scoring breadth', (g.ai && g.ai.br) || '—'],
-    ['Wins by', (g.ai && g.ai.wc) || '—']
+    ['Breadth', (g.ai && g.ai.br) || '—'],
+    ['Win condition', (g.ai && g.ai.wc) || '—']
   ];
   var ai = g.ai || {};
   var howWin = ai.howwin || ai.why;
@@ -1475,7 +1630,7 @@ function markFilters() {
   var defaults = {
     q: '', players: String(OPTS.players), mode: OPTS.mode, ix: '',
     win: OPTS.win, breadth: OPTS.breadth, exp: OPTS.expansions,
-    votes: String(OPTS.minVotes), tagmode: 'all',
+    tagmode: 'all',
     smin: '', smax: '', mymin: '', mymax: '', wmin: '', wmax: '',
     tmin: '', tmax: '', plmin: '', plmax: ''
   };

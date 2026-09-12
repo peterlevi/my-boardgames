@@ -19,6 +19,7 @@ import argparse
 import base64
 import datetime as dt
 import json
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -553,16 +554,52 @@ def check_balanced(html):
 OFF_BY_DEFAULT = ("y", "acq", "lp", "ed", "pp")
 
 
-def headline(data):
-    """The title line: what the collection is, counts and all, in one voice."""
+def owner():
+    """Whose collection this is, for the title. Read softly: the report has to
+    build without credentials — from a CSV export, or in CI."""
+    name = os.environ.get("BGG_USERNAME")
+    if name:
+        return name.strip()
+    f = ROOT / "credentials.env"
+    if f.exists():
+        for line in f.read_text().splitlines():
+            if line.strip().startswith("BGG_USERNAME"):
+                return line.split("=", 1)[-1].strip()
+    # build.py leaves the name here, which is what CI reads: the credentials
+    # file is gitignored, the username is not a secret.
+    meta = ROOT / "data" / "meta.json"
+    if meta.exists():
+        try:
+            return json.loads(meta.read_text()).get("owner")
+        except Exception:  # noqa: BLE001
+            pass
+    return None
+
+
+def plural(n, word):
+    return f"{n} {word}" + ("" if n == 1 else "s")
+
+
+def headline():
+    who = owner()
+    return f"{who}'s collection" if who else "Board game collection"
+
+
+def counts(data):
     games = sum(1 for g in data if not g["exp"])
     exps = sum(1 for g in data if g["exp"])
-    def plural(n, word):
-        return f"{n} {word}" + ("" if n == 1 else "s")
-    text = "Collection of " + plural(games, "board game")
+    text = plural(games, "game")
     if exps:
         text += " and " + plural(exps, "expansion")
     return text
+
+
+def bgg_link():
+    who = owner()
+    if not who:
+        return ""
+    return (f'<a href="https://boardgamegeek.com/collection/user/{esc(who)}"'
+            f' target="_blank" rel="noopener">Open on BGG →</a>')
 
 
 def root_class(a):
@@ -703,7 +740,9 @@ def main():
             .replace("__ROOTCLASS__", root_class(a))
             .replace("__REPO_URL__", esc(repo_url()))
             .replace("__STAMP__", dt.date.today().isoformat())
-            .replace("__HEADLINE__", esc(headline(data)))
+            .replace("__HEADLINE__", esc(headline()))
+            .replace("__COUNTS__", esc(counts(data)))
+            .replace("<!--__BGGLINK__-->", bgg_link())
             .replace("__NGAMES__", str(sum(1 for g in data if not g["exp"])))
             .replace("__NEXP__", str(sum(1 for g in data if g["exp"]))))
 

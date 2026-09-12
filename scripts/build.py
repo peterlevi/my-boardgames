@@ -12,6 +12,7 @@ base games they attach to, via the inbound boardgameexpansion link. The report
 uses that to let an expansion's player-count poll speak for its base game.
 """
 import json
+import os
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -205,6 +206,22 @@ def collection_stats():
     return plays, mine, acquired, edited
 
 
+def note_owner():
+    """Record whose collection this is, so the report can say so even where the
+    credentials are not — in CI, or from a checkout without them. A BGG
+    username is public; nothing secret goes in here."""
+    name = os.environ.get("BGG_USERNAME")
+    f = ROOT / "credentials.env"
+    if not name and f.exists():
+        for line in f.read_text().splitlines():
+            if line.strip().startswith("BGG_USERNAME"):
+                name = line.split("=", 1)[-1].strip()
+    if not name:
+        return
+    meta = ROOT / "data" / "meta.json"
+    meta.write_text(json.dumps({"owner": name}, indent=1) + "\n")
+
+
 def csv_rows():
     """The owned rows of a BGG collection CSV export, if one is present."""
     f = ROOT / "data" / "collection.csv"
@@ -329,6 +346,7 @@ def main():
         g["edited"] = edited.get(g["id"])
         g["last_played"] = (played.get(g["id"]) or {}).get("last") or None
 
+    note_owner()
     out = ROOT / "data" / "games.json"
     out.write_text(json.dumps(games, indent=1, ensure_ascii=False))
     base = sum(1 for g in games if not g["is_expansion"])

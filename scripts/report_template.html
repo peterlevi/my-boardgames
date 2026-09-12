@@ -237,6 +237,13 @@ td.designer .more { color:var(--muted); }
 #outcount { font-size:.85rem; color:var(--accent); }
 .titlebar #reset { font-weight:700; font-size:.86rem; padding:0;
   text-decoration:none; align-self:baseline; }
+/* The counts and the link out to BGG belong together, at the weight and size
+   of the reset link beside them rather than as a quieter subtitle. */
+.headmeta { display:flex; align-items:baseline; gap:14px;
+  font-size:.86rem; font-weight:700; }
+.headmeta #counts { color:var(--ink); }
+.headmeta a { color:var(--accent); }
+.headmeta a:hover { color:var(--ink); }
 .titlebar #reset:hover { color:var(--ink); }
 button.link { background:none; border:none; color:var(--accent); cursor:pointer;
   font:inherit; padding:7px 0; align-self:flex-end; }
@@ -595,8 +602,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 <input type="checkbox" id="legendtoggle">
 <div class="titlebar">
   <h1>__HEADLINE__</h1>
+  <span class="headmeta"><span id="counts">__COUNTS__</span><!--__BGGLINK__--></span>
   <button class="link" id="reset" type="button">Reset filters</button>
-  <label for="legendtoggle" id="legendlink">What the columns mean</label>
+  <label for="legendtoggle" id="legendlink">What the data means</label>
   <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"
      title="This report's source on GitHub" aria-label="Source on GitHub">
     <svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true"

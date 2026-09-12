@@ -42,7 +42,16 @@ h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 .titlebar { display:flex; align-items:baseline; column-gap:12px; row-gap:2px;
   flex-wrap:wrap; margin-bottom:2px; }
 .titlebar .sub { margin:0; font-size:.9rem; }
-.titlebar details { margin-left:auto; }
+/* Anchored to the right, and the body is taken out of flow: as a normal flex
+   child the open paragraph filled the line, leaving margin-left:auto nothing
+   to push against, so the link jumped to the left edge on every expand. */
+.titlebar details { margin-left:auto; position:relative; }
+.titlebar details > p { position:absolute; z-index:20; top:calc(100% + 4px);
+  right:0; width:min(72ch, calc(100vw - 48px)); margin:0;
+  background:var(--panel); border:1px solid var(--line); border-radius:9px;
+  padding:14px 16px; box-shadow:0 10px 28px rgba(0,0,0,.12); }
+:root:not([data-theme="light"]) .titlebar details > p {
+  box-shadow:0 10px 28px rgba(0,0,0,.5); }
 .panel { padding:10px 0 8px; margin-top:6px; }
 .row { display:flex; gap:10px 26px; align-items:flex-end; flex-wrap:wrap; }
 .row + .row { margin-top:20px; }
@@ -144,13 +153,20 @@ button.link { background:none; border:none; color:var(--accent); cursor:pointer;
 details > summary { cursor:pointer; color:var(--accent); font-size:.84rem;
   font-weight:700; padding:12px 0 10px; list-style:none; width:max-content;
   display:flex; align-items:center; gap:7px; }
+/* One vertical rhythm through the whole panel: 20px above "More filters",
+   20px between it and the first row inside, 20px between every row after. */
+#more > summary { padding:0; }
+#more > .row:first-of-type { margin-top:20px; }
 details > summary:hover { color:var(--ink); }
 details > summary::-webkit-details-marker { display:none; }
 details > summary::before { content:"▸"; font-size:1.15em; line-height:1;
   display:inline-block; }
 details[open] > summary::before { content:"▾"; }
-#more { margin-top:2px; }
-#more > .row:first-of-type { margin-top:2px; }
+/* The same 20px that separates the filter rows below it, so "More filters"
+   reads as the next row rather than as a tail on the one above. */
+#more { margin-top:20px; }
+#more > summary { padding-top:0; }
+
 
 /* Fixed layout, so a full-width expanded row cannot renegotiate the column
    widths underneath it. Widths come from the header cells below. */
@@ -609,6 +625,10 @@ function applyTagVisibility() {
   var n = pickedTags().length;
   document.getElementById('tagpicked').textContent = n ? n + ' selected' : '';
   document.getElementById('tagclear').hidden = !n;
+  // Ticked properties are the filter's real state, not the search box's text,
+  // so the title bolds on the count the way every other filter bolds off default.
+  var tagBox = document.getElementById('tagsearch').closest('.f');
+  if (tagBox) { if (n) tagBox.classList.add('active'); else tagBox.classList.remove('active'); }
 }
 
 function refreshTagList() {

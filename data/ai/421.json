@@ -45,7 +45,12 @@
     "how": "sudden_death",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": [
+   6000,
+   10000
+  ],
+  "score_note": "scales with player count/length"
  },
  "similar": [
   "1846: The Race for the Midwest",

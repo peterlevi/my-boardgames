@@ -36,7 +36,12 @@
     "how": "end_trigger",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": [
+   7,
+   7
+  ],
+  "score_note": "first to 7 unicorns in play, fixed target"
  },
  "similar": [
   "Exploding Kittens",

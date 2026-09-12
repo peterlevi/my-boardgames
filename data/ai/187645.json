@@ -48,7 +48,9 @@
     "how": "fixed_length",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "won via asymmetric objective conditions, not a numeric score"
  },
  "similar": [
   "War of the Ring",

@@ -64,6 +64,40 @@ _LEFTOVERS = _re.compile(
     r"(money|cash|coins?|resources?|goods|workers?)|money[- ]to[- ]vp", _re.I)
 
 
+def score_range(f):
+    """The range a winning score typically falls in, or None where a score is
+    not what decides the game — a cooperative goal, a last player standing, a
+    sudden-death condition. Optional: it is only there if the enrichment pass
+    has been run with --scores."""
+    rng = (f or {}).get("score_range")
+    if not isinstance(rng, list) or len(rng) != 2:
+        return None
+    try:
+        lo, hi = float(rng[0]), float(rng[1])
+    except (TypeError, ValueError):
+        return None
+    if lo <= 0 and hi <= 0:
+        return None
+    lo, hi = min(lo, hi), max(lo, hi)
+    return (int(round(lo)), int(round(hi)))
+
+
+def score_text(f):
+    """That range as it reads in a column: "130–170", or "10" when it is a
+    single number, or "" when the game is not won on a score."""
+    rng = score_range(f)
+    if not rng:
+        return ""
+    lo, hi = rng
+    return str(lo) if lo == hi else f"{lo}\u2013{hi}"
+
+
+def score_sort(f):
+    """Where the range sits, for sorting: its midpoint."""
+    rng = score_range(f)
+    return None if not rng else (rng[0] + rng[1]) / 2
+
+
 def is_money(f):
     """Whether a single-currency game is really played for money."""
     text = " ".join(str(x) for x in ((f or {}).get("sources") or []))

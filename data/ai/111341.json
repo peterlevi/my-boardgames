@@ -43,7 +43,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   60,
+   100
+  ],
+  "score_note": "scales up with more players"
  },
  "similar": [
   "Antiquity",

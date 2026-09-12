@@ -46,6 +46,10 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   20,
+   30
   ]
  },
  "similar": [

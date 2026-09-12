@@ -45,7 +45,12 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   8,
+   14
+  ],
+  "score_note": "lower with more players"
  },
  "similar": [
   "Tigris & Euphrates",

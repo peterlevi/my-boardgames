@@ -41,7 +41,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   100,
+   150
+  ],
+  "score_note": "higher with fewer players"
  },
  "similar": [
   "Ra",

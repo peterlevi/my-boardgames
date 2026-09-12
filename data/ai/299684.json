@@ -45,6 +45,10 @@
     "how": "end_trigger",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   35,
+   55
   ]
  },
  "similar": [

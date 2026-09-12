@@ -49,7 +49,9 @@
     "how": "fixed_length",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "military conquest count or ring corruption track"
  },
  "similar": [
   "Twilight Struggle",

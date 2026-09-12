@@ -42,7 +42,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   100,
+   160
+  ],
+  "score_note": "lower with more players"
  },
  "similar": [
   "Le Havre",

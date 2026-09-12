@@ -43,7 +43,9 @@
     "how": "exhaustion",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "scenario objectives decide, not a shared score"
  },
  "similar": [
   "Undaunted: Normandy",

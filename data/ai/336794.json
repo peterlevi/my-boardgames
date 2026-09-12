@@ -42,7 +42,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   20,
+   60
+  ],
+  "score_note": "credits, can go negative early"
  },
  "similar": [
   "Space Alert",

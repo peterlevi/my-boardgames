@@ -40,7 +40,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   200,
+   350
+  ],
+  "score_note": "much lower in short variants"
  },
  "similar": [
   "Agricola",

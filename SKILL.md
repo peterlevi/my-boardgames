@@ -49,7 +49,7 @@ read by `report.py` at render time, never folded into `data/games.json`, so
 nothing private is committed or published.
 
 `scripts/sync.py` runs the whole pipeline: fetch → plays → thumbs → gallery →
-build → enrich → bggids → report. `plays.py` caches the play log
+build → enrich → bggids → build → report. `plays.py` caches the play log
 (`data/plays.json`), which is where "last played" comes from — the collection
 export carries how many times you have played a game but not when. Everything except `fetch.py`, `thumbs.py`,
 `gallery.py`, `enrich.py` and `bggids.py` is offline, and `enrich.py` skips
@@ -59,9 +59,19 @@ those pills link at the game; unresolved names fall back to a BGG search.
 
 For anything the flags don't cover, read `data/games.json` directly — one
 object per game with `name`, `rank`, `weight`, `average`, `year`, `plays`,
-`minplayers`/`maxplayers`, `minplaytime`/`maxplaytime`, `mechanics`,
-`categories`, `interaction`, `point_salad`, `is_expansion`, `expands`, and the
-raw `poll` (`{"4": {"Best": n, "Recommended": n, "Not Recommended": n}}`).
+`my_rating`, `last_played`, `minplayers`/`maxplayers`,
+`minplaytime`/`maxplaytime`, `mechanics`, `categories`, `families`,
+`designers`, `types`, `interaction`, `is_expansion`, `expands`, the raw `poll`
+(`{"4": {"Best": n, "Recommended": n, "Not Recommended": n}}`), and `ai` — the
+opinion entry, whose `scoring` block holds the facts the labels are computed
+from.
+
+**Win condition and point salad are not stored; they are computed.** Call
+`scoring.wins(facts)` and `scoring.salad(facts)` on `game["ai"]["scoring"]`
+rather than looking for a field, and `scoring.score_text(facts)` for the
+winning-score range. `python3 scripts/check_scoring.py` says whether those
+rules still agree with the judgements in `tests/expectations.txt`; run it after
+touching either.
 
 ## Terms
 
@@ -88,9 +98,11 @@ the database is absent. `traits` are groupings of mechanics from
 `scripts/traits.py` — "has at least one of these" — not judgments.
 
 Tune those files or re-run `scripts/enrich.py --force`, then `build.py`.
-`--rescore` re-asks only the win condition and point-salad call and merges
-it into the existing entries, for when the classification rule changed
-rather than the game.
+`--rescore` re-asks only the scoring facts and merges them into the existing
+entries, for when the classification rule changed rather than the game;
+`--sources`, `--endings` and `--scores` each re-ask one part of them. Add
+`--online` to any of those and the answer has to cite the page it came from,
+which is what fixes a fact the model half-remembers.
 
 ## Refreshing (network — needs the user's OK)
 

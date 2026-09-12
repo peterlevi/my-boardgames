@@ -53,7 +53,12 @@
     "how": "end_trigger",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": [
+   180,
+   300
+  ],
+  "score_note": "money-based, wide variance"
  },
  "similar": [
   "On Mars",

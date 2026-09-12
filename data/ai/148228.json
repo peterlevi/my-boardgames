@@ -37,7 +37,12 @@
     "how": "target_score",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   15,
+   20
+  ],
+  "score_note": "game ends once someone hits 15, but the round finishes so final total often runs a bit higher"
  },
  "similar": [
   "Century: Spice Road",

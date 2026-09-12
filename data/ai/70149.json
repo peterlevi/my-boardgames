@@ -41,7 +41,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   120,
+   180
+  ],
+  "score_note": "scales up with fewer players (longer game)"
  },
  "similar": [
   "Le Havre",

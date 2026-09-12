@@ -41,7 +41,12 @@
     "how": "exhaustion",
     "decided_by": "lowest"
    }
-  ]
+  ],
+  "score_range": [
+   10,
+   18
+  ],
+  "score_note": "score = lowest color total"
  },
  "similar": [
   "Ingenious",

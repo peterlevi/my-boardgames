@@ -42,7 +42,12 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   12,
+   15
+  ],
+  "score_note": "first to 12+ pts at round end wins"
  },
  "similar": [
   "Air, Land & Sea",

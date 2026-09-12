@@ -300,6 +300,28 @@ GAMES:
 """
 
 
+SCORES = """For each game below, give the range a winning score typically \
+falls in — the number the winner actually ends on, not the maximum possible.
+
+Leave it null when a score is not what decides the game: a cooperative goal, \
+the last player standing, a sudden-death condition, a race whose target is \
+fixed by the rules rather than reached by accumulating (Catan's ten points \
+are the target, so that IS the winning score), or anything where players do \
+not keep a score at all.
+
+If the range differs by player count in a way worth knowing, say so in "note" \
+in a handful of words; otherwise leave "note" empty.
+
+Answer ONLY with a JSON object mapping each id to:
+{{
+  "score_range": [low, high] | null,
+  "note": ""
+}}
+
+GAMES:
+"""
+
+
 def prompt_for(batch, header=None):
     body = "".join(
         ENTRY.format(
@@ -351,11 +373,12 @@ def ask(prompt, model, online=False):
 
 
 def process(batch, model, describe=False, online=False, rescore=False,
-            endings=False, sources=False):
+            endings=False, sources=False, scores=False):
     # --rescore --online asks only for the scoring facts, but with the web
     # open: the rules of a game are written down somewhere, and a fact the
     # model half-remembers is exactly the case worth looking up.
-    header = (SOURCES if sources
+    header = (SCORES if scores
+              else SOURCES if sources
               else ENDINGS if endings
               else (RESCORE_WEB if online else "") + RESCORE.format(rule=FACTS_BRIEF)
               if rescore
@@ -369,7 +392,16 @@ def process(batch, model, describe=False, online=False, rescore=False,
             continue
         if online:
             data["source"] = "web"
-        if sources:
+        if scores:
+            # Only the winning-score range is written; everything else stands.
+            existing = json.loads((AI / f'{g["id"]}.json').read_text())
+            rng = data.get("score_range")
+            sc = existing.setdefault("scoring", {})
+            sc["score_range"] = rng if isinstance(rng, list) and len(rng) == 2 else None
+            if data.get("note"):
+                sc["score_note"] = data["note"]
+            data = existing
+        elif sources:
             # Only the list of scoring categories is re-asked; the winning
             # score, the endings and anything checked on the web stay put.
             existing = json.loads((AI / f'{g["id"]}.json').read_text())
@@ -429,6 +461,8 @@ def main():
     ap.add_argument("--only", metavar="IDS",
                     help="comma-separated game ids, for retrying the handful "
                          "a failed batch left behind")
+    ap.add_argument("--scores", action="store_true",
+                    help="re-ask only the typical winning-score range")
     ap.add_argument("--sources", action="store_true",
                     help="re-ask only which categories a game scores, "
                          "merging into the facts already there")
@@ -454,7 +488,7 @@ def main():
         if only and str(g["id"]) not in only:
             continue
         cached = AI / f'{g["id"]}.json'
-        if a.endings or a.sources:
+        if a.endings or a.sources or a.scores:
             if not cached.exists():
                 continue
             try:
@@ -465,6 +499,8 @@ def main():
             # its endings; scoring.py keeps the verified endings and takes
             # only the decisions from this pass.
             if a.endings and facts.get("endings") and not a.force:
+                continue
+            if a.scores and "score_range" in facts and not a.force:
                 continue
             todo.append(g)
             continue
@@ -520,7 +556,7 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=a.jobs) as pool:
         futures = {pool.submit(process, b, a.model, a.describe,
                                a.online, a.rescore, a.endings,
-                               a.sources): b
+                               a.sources, a.scores): b
                    for b in batches}
         for f in concurrent.futures.as_completed(futures):
             batch = futures[f]

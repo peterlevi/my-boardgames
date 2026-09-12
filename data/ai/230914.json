@@ -50,7 +50,12 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   90,
+   140
+  ],
+  "score_note": "expansions push scores well above base Carcassonne"
  },
  "similar": [
   "Kingdomino",

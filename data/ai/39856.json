@@ -39,7 +39,12 @@
     "how": "target_score",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   30,
+   40
+  ],
+  "score_note": "target is 30, or 40 with 6 players; round finishes so it can exceed target"
  },
  "similar": [
   "Mysterium",

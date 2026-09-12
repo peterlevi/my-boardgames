@@ -41,7 +41,9 @@
     "how": "end_trigger",
     "decided_by": "majority"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "area control/reduction, no accumulated score"
  },
  "similar": [
   "El Grande",

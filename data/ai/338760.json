@@ -41,7 +41,12 @@
     "how": "sudden_death",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": [
+   100,
+   200
+  ],
+  "score_note": "net worth in florins"
  },
  "similar": [
   "Age of Steam",

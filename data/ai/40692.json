@@ -37,7 +37,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   60,
+   100
+  ],
+  "score_note": "fewer players get more turns each, pushing scores higher"
  },
  "similar": [
   "Vinci",

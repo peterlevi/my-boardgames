@@ -41,7 +41,12 @@
     "how": "exhaustion",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": [
+   30,
+   70
+  ],
+  "score_note": "final cash on hand, varies with player count/economy"
  },
  "similar": [
   "Antiquity",

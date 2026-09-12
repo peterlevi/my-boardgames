@@ -44,7 +44,12 @@
     "how": "fixed_length",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": [
+   120,
+   220
+  ],
+  "score_note": "net worth in game dollars"
  },
  "similar": [
   "Chicago Express",

@@ -44,7 +44,12 @@
     "how": "exhaustion",
     "decided_by": "lowest"
    }
-  ]
+  ],
+  "score_range": [
+   8,
+   14
+  ],
+  "score_note": "score is your weakest category count"
  },
  "similar": [
   "Through the Desert",

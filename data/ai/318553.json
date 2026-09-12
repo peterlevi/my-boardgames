@@ -45,7 +45,9 @@
     "how": "sudden_death",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "race: win when fame/money markers meet"
  },
  "similar": [
   "Rajas of the Ganges",

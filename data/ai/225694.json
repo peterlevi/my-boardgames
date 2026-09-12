@@ -48,7 +48,8 @@
     "how": "fixed_length",
     "decided_by": "lowest"
    }
-  ]
+  ],
+  "score_range": null
  },
  "similar": [
   "Codenames",

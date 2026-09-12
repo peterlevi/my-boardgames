@@ -39,7 +39,12 @@
     "how": "fixed_length",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": [
+   50,
+   80
+  ],
+  "score_note": "cash value, scales with players"
  },
  "similar": [
   "Chicago Express",

@@ -47,7 +47,9 @@
     "how": "sudden_death",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "won via one of several non-score conditions"
  },
  "similar": [
   "Root",

@@ -13,10 +13,16 @@ Runs the pipeline end to end:
     plays.py     the play log, for "last played" (network, BGG API)
     thumbs.py    thumbnails for any new games    (network, image CDN)
     gallery.py   gallery image URLs, new games   (network, geekdo)
+    build.py     data/games.json                 (offline)
     enrich.py    opinion database, new games     (local `claude`, optional)
     bggids.py    BGG ids for newly named games   (network, BGG API)
-    build.py     data/games.json                 (offline)
+    build.py     again, now with the opinions    (offline)
     report.py    reports/collection.html         (offline)
+
+The report's **Win condition**, **Point salad** and **Winning score** are not
+stored anywhere: scripts/scoring.py computes them at render time from the
+facts enrich.py collects, and scripts/check_scoring.py says whether those
+rules still agree with the judgements in tests/expectations.txt.
 
 enrich.py needs the `claude` CLI. If it is not installed the step reports that
 and is skipped, and the report simply renders without the columns and panels

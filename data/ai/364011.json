@@ -45,7 +45,12 @@
     "how": "end_trigger",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   120,
+   170
+  ],
+  "score_note": "higher end at 3-4p"
  },
  "similar": [
   "Great Western Trail",

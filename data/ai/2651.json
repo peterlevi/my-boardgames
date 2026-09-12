@@ -39,7 +39,12 @@
     "how": "end_trigger",
     "decided_by": "objectives"
    }
-  ]
+  ],
+  "score_range": [
+   14,
+   21
+  ],
+  "score_note": "target city count fixed by player count"
  },
  "similar": [
   "Brass: Birmingham",

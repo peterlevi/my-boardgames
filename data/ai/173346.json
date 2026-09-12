@@ -55,7 +55,9 @@
     "how": "sudden_death",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "can end early via military/science sudden death"
  },
  "similar": [
   "7 Wonders",

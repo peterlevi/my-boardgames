@@ -44,7 +44,12 @@
     "how": "target_score",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   10,
+   10
+  ],
+  "score_note": "game ends the instant a player hits the target (10 VP standard, 14 in longer variant)"
  },
  "similar": [
   "Eclipse: Second Dawn for the Galaxy",

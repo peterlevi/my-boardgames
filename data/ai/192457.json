@@ -42,7 +42,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   10,
+   20
+  ],
+  "score_note": "VP also spent as a resource during play"
  },
  "similar": [
   "Rising Sun",

@@ -46,7 +46,12 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   40,
+   90
+  ],
+  "score_note": "higher with more players"
  },
  "similar": [
   "Brass: Birmingham",

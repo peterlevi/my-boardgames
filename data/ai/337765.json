@@ -46,6 +46,10 @@
     "how": "end_trigger",
     "decided_by": "majority"
    }
+  ],
+  "score_range": [
+   25,
+   45
   ]
  },
  "similar": [

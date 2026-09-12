@@ -53,6 +53,10 @@
     "how": "fixed_length",
     "decided_by": "instant"
    }
+  ],
+  "score_range": [
+   40,
+   70
   ]
  },
  "similar": [

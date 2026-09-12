@@ -46,7 +46,12 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   40,
+   55
+  ],
+  "score_note": "5p games often score higher"
  },
  "similar": [
   "Le Havre",

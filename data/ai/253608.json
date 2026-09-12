@@ -46,6 +46,10 @@
     "how": "sudden_death",
     "decided_by": "money"
    }
+  ],
+  "score_range": [
+   4000,
+   7000
   ]
  },
  "similar": [

@@ -41,7 +41,9 @@
     "how": "exhaustion",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "win by destroying enemy summoner, no score kept"
  },
  "similar": [
   "Star Wars: The Deckbuilding Game",

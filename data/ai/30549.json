@@ -45,7 +45,9 @@
     "how": "sudden_death",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "cooperative win/loss"
  },
  "similar": [
   "Pandemic Legacy: Season 1",

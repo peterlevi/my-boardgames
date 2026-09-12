@@ -36,7 +36,12 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   15,
+   35
+  ],
+  "score_note": "swingy; scales up with player count"
  },
  "similar": [
   "Intrigue",

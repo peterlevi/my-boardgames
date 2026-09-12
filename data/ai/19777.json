@@ -38,7 +38,12 @@
     "how": "end_trigger",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": [
+   100,
+   250
+  ],
+  "score_note": "final fortune (cash+shares)"
  },
  "similar": [
   "Antiquity",

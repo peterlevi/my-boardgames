@@ -44,6 +44,10 @@
     "how": "elimination",
     "decided_by": "instant"
    }
+  ],
+  "score_range": [
+   200,
+   280
   ]
  },
  "similar": [

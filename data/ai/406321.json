@@ -42,7 +42,9 @@
     "how": "coop_goal",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "lowest bull-head total wins; game ends when someone crosses the 66-point threshold"
  },
  "similar": [
   "Coloretto",

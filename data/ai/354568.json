@@ -41,7 +41,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   80,
+   120
+  ],
+  "score_note": "varies with turns/player count"
  },
  "similar": [
   "Ra",

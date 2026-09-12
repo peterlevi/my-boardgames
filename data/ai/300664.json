@@ -42,7 +42,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   150,
+   350
+  ],
+  "score_note": "share value, not accumulated VP"
  },
  "similar": [
   "Arkwright",

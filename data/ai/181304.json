@@ -38,7 +38,9 @@
     "how": "fixed_length",
     "decided_by": "objectives"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "cooperative, no player score"
  },
  "similar": [
   "Dixit",

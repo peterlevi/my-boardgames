@@ -171,7 +171,12 @@
       "how": "sudden_death",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     6000,
+     10000
+    ],
+    "score_note": "scales with player count/length"
    },
    "similar": [
     {
@@ -364,6 +369,10 @@
       "how": "sudden_death",
       "decided_by": "money"
      }
+    ],
+    "score_range": [
+     3000,
+     6000
     ]
    },
    "similar": [
@@ -565,6 +574,10 @@
       "how": "sudden_death",
       "decided_by": "money"
      }
+    ],
+    "score_range": [
+     4000,
+     7000
     ]
    },
    "similar": [
@@ -737,6 +750,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     60,
+     90
     ]
    },
    "similar": [
@@ -966,7 +983,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     50,
+     75
+    ],
+    "score_note": "higher totals with more players"
    },
    "similar": [
     {
@@ -1168,7 +1190,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "can end early via military/science sudden death"
    },
    "similar": [
     {
@@ -1369,7 +1393,12 @@
       "how": "end_trigger",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     6000,
+     12000
+    ],
+    "score_note": "wide swing based on mergers"
    },
    "similar": [
     {
@@ -1570,6 +1599,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     160
     ]
    },
    "similar": [
@@ -1765,6 +1798,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     30,
+     45
     ]
    },
    "similar": [
@@ -1948,6 +1985,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     20,
+     30
     ]
    },
    "similar": [
@@ -2112,7 +2153,12 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     12,
+     15
+    ],
+    "score_note": "first to 12+ pts at round end wins"
    },
    "similar": [
     {
@@ -2304,6 +2350,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     20,
+     40
     ]
    },
    "similar": [
@@ -2489,6 +2539,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     100
     ]
    },
    "similar": [
@@ -2665,7 +2719,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     80,
+     120
+    ],
+    "score_note": "varies with turns/player count"
    },
    "similar": [
     {
@@ -2855,6 +2914,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     150,
+     250
     ]
    },
    "similar": [
@@ -3062,6 +3125,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -3278,6 +3345,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -3485,6 +3556,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     130
     ]
    },
    "similar": [
@@ -3684,7 +3759,12 @@
       "how": "fixed_length",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     300,
+     600
+    ],
+    "score_note": "share value, not accumulated VP"
    },
    "similar": [
     {
@@ -3872,7 +3952,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     150,
+     350
+    ],
+    "score_note": "share value, not accumulated VP"
    },
    "similar": [
     {
@@ -5827,6 +5912,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     110
     ]
    },
    "similar": [
@@ -6019,6 +6108,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     80,
+     130
     ]
    },
    "similar": [
@@ -6209,6 +6302,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     25,
+     45
     ]
    },
    "similar": [
@@ -6409,6 +6506,10 @@
       "how": "exhaustion",
       "decided_by": "money"
      }
+    ],
+    "score_range": [
+     16,
+     25
     ]
    },
    "similar": [
@@ -6598,6 +6699,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     160
     ]
    },
    "similar": [
@@ -6817,6 +6922,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     120,
+     180
     ]
    },
    "similar": [
@@ -7012,6 +7121,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     140
     ]
    },
    "similar": [
@@ -7208,6 +7321,10 @@
       "how": "end_trigger",
       "decided_by": "majority"
      }
+    ],
+    "score_range": [
+     25,
+     45
     ]
    },
    "similar": [
@@ -7394,6 +7511,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     35,
+     55
     ]
    },
    "similar": [
@@ -7583,6 +7704,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     45,
+     75
     ]
    },
    "similar": [
@@ -7765,7 +7890,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     50,
+     90
+    ],
+    "score_note": "varies with route length and player count"
    },
    "similar": [
     {
@@ -7954,6 +8084,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     30,
+     45
     ]
    },
    "similar": [
@@ -8113,6 +8247,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     15,
+     25
     ]
    },
    "similar": [
@@ -8306,7 +8444,12 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     90,
+     140
+    ],
+    "score_note": "expansions push scores well above base Carcassonne"
    },
    "similar": [
     {
@@ -8509,6 +8652,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     80,
+     120
     ]
    },
    "similar": [
@@ -8840,6 +8987,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     55,
+     75
     ]
    },
    "similar": [
@@ -9053,6 +9204,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     150,
+     220
     ]
    },
    "similar": [
@@ -9261,7 +9416,12 @@
       "how": "target_score",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     10,
+     10
+    ],
+    "score_note": "first to 10 VP wins, target is the score"
    },
    "similar": [
     {
@@ -9476,6 +9636,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     80,
+     130
     ]
    },
    "similar": [
@@ -9672,6 +9836,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     80,
+     110
     ]
    },
    "similar": [
@@ -9907,7 +10075,8 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -10101,6 +10270,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     20,
+     35
     ]
    },
    "similar": [
@@ -10273,6 +10446,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     120,
+     200
     ]
    },
    "similar": [
@@ -10481,7 +10658,8 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -10653,7 +10831,8 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -10847,7 +11026,8 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -11035,6 +11215,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     100
     ]
    },
    "similar": [
@@ -11231,6 +11415,10 @@
       "how": "fixed_length",
       "decided_by": "money"
      }
+    ],
+    "score_range": [
+     1000,
+     2000
     ]
    },
    "similar": [
@@ -11430,6 +11618,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     160
     ]
    },
    "similar": [
@@ -11616,6 +11808,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     15,
+     25
     ]
    },
    "similar": [
@@ -11805,7 +12001,12 @@
       "how": "exhaustion",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     30,
+     70
+    ],
+    "score_note": "final cash on hand, varies with player count/economy"
    },
    "similar": [
     {
@@ -11994,7 +12195,8 @@
       "how": "elimination",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -12177,7 +12379,8 @@
       "how": "coop_goal",
       "decided_by": "objectives"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -12366,7 +12569,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     10,
+     20
+    ],
+    "score_note": "VP also spent as a resource during play"
    },
    "similar": [
     {
@@ -12553,6 +12761,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -12735,6 +12947,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     140
     ]
    },
    "similar": [
@@ -12928,6 +13144,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     130
     ]
    },
    "similar": [
@@ -13137,7 +13357,8 @@
       "how": "fixed_length",
       "decided_by": "lowest"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -13327,6 +13548,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     60,
+     100
     ]
    },
    "similar": [
@@ -13517,7 +13742,12 @@
       "how": "target_score",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     30,
+     40
+    ],
+    "score_note": "target is 30, or 40 with 6 players; round finishes so it can exceed target"
    },
    "similar": [
     {
@@ -15648,7 +15878,8 @@
       "how": "elimination",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -15843,6 +16074,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     130
     ]
    },
    "similar": [
@@ -16035,6 +16270,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     50,
+     80
     ]
    },
    "similar": [
@@ -16249,6 +16488,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     30,
+     45
     ]
    },
    "similar": [
@@ -16449,7 +16692,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     100,
+     160
+    ],
+    "score_note": "lower with more players"
    },
    "similar": [
     {
@@ -16621,6 +16869,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -16807,6 +17059,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     180,
+     260
     ]
    },
    "similar": [
@@ -16992,6 +17248,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -17197,7 +17457,12 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     40,
+     90
+    ],
+    "score_note": "higher with more players"
    },
    "similar": [
     {
@@ -17390,6 +17655,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     160,
+     220
     ]
    },
    "similar": [
@@ -17603,6 +17872,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     140
     ]
    },
    "similar": [
@@ -17792,7 +18065,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     20,
+     60
+    ],
+    "score_note": "credits, can go negative early"
    },
    "similar": [
     {
@@ -17992,7 +18270,12 @@
       "how": "end_trigger",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     180,
+     300
+    ],
+    "score_note": "money-based, wide variance"
    },
    "similar": [
     {
@@ -18192,6 +18475,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     100
     ]
    },
    "similar": [
@@ -18398,7 +18685,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "cooperative"
    },
    "similar": [
     {
@@ -18582,6 +18871,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     140
     ]
    },
    "similar": [
@@ -18774,6 +19067,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     120
     ]
    },
    "similar": [
@@ -18972,7 +19269,12 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     120,
+     170
+    ],
+    "score_note": "higher end at 3-4p"
    },
    "similar": [
     {
@@ -19161,7 +19463,12 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     120,
+     170
+    ],
+    "score_note": "higher end at 3-4p"
    },
    "similar": [
     {
@@ -19351,7 +19658,12 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     110,
+     160
+    ],
+    "score_note": "higher end at 3-4p"
    },
    "similar": [
     {
@@ -19551,7 +19863,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     60,
+     100
+    ],
+    "score_note": "scales up with more players"
    },
    "similar": [
     {
@@ -19739,6 +20056,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     55,
+     85
     ]
    },
    "similar": [
@@ -19922,7 +20243,12 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     80,
+     130
+    ],
+    "score_note": "scales up with more players"
    },
    "similar": [
     {
@@ -20112,6 +20438,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     65,
+     100
     ]
    },
    "similar": [
@@ -20304,7 +20634,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     200,
+     350
+    ],
+    "score_note": "much lower in short variants"
    },
    "similar": [
     {
@@ -20487,6 +20822,10 @@
       "how": "exhaustion",
       "decided_by": "lowest"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -20679,7 +21018,8 @@
       "how": "fixed_length",
       "decided_by": "objectives"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -20902,7 +21242,8 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -21080,6 +21421,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     20,
+     45
     ]
    },
    "similar": [
@@ -21267,6 +21612,10 @@
       "how": "fixed_length",
       "decided_by": "money"
      }
+    ],
+    "score_range": [
+     50,
+     90
     ]
    },
    "similar": [
@@ -21451,7 +21800,12 @@
       "how": "end_trigger",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     50,
+     90
+    ],
+    "score_note": "cash+share value; scales with player count"
    },
    "similar": [
     {
@@ -21620,6 +21974,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     40,
+     65
     ]
    },
    "similar": [
@@ -21820,7 +22178,12 @@
       "how": "sudden_death",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     100,
+     200
+    ],
+    "score_note": "net worth in florins"
    },
    "similar": [
     {
@@ -22008,6 +22371,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     35,
+     65
     ]
    },
    "similar": [
@@ -22196,6 +22563,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     35,
+     65
     ]
    },
    "similar": [
@@ -22395,7 +22766,12 @@
       "how": "end_trigger",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     100,
+     250
+    ],
+    "score_note": "final fortune (cash+shares)"
    },
    "similar": [
     {
@@ -22565,7 +22941,12 @@
       "how": "exhaustion",
       "decided_by": "lowest"
      }
-    ]
+    ],
+    "score_range": [
+     10,
+     18
+    ],
+    "score_note": "score = lowest color total"
    },
    "similar": [
     {
@@ -22765,7 +23146,8 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -22954,7 +23336,8 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": null
    },
    "similar": [
     {
@@ -23132,6 +23515,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     160
     ]
    },
    "similar": [
@@ -23324,6 +23711,10 @@
       "how": "exhaustion",
       "decided_by": "money"
      }
+    ],
+    "score_range": [
+     50,
+     90
     ]
    },
    "similar": [
@@ -23507,6 +23898,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     20,
+     35
     ]
    },
    "similar": [
@@ -23682,7 +24077,12 @@
       "how": "target_score",
       "decided_by": "objectives"
      }
-    ]
+    ],
+    "score_range": [
+     5,
+     6
+    ],
+    "score_note": "target is 5 rubies at 2 players, 6 at 3-5"
    },
    "similar": [
     {
@@ -23864,6 +24264,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     60,
+     90
     ]
    },
    "similar": [
@@ -24058,7 +24462,9 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "cooperative, no competitive winning score"
    },
    "similar": [
     {
@@ -24244,6 +24650,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     150
     ]
    },
    "similar": [
@@ -24438,6 +24848,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     95
     ]
    },
    "similar": [
@@ -24624,6 +25038,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     35,
+     55
     ]
    },
    "similar": [
@@ -24805,7 +25223,9 @@
       "how": "end_trigger",
       "decided_by": "majority"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "area control/reduction, no accumulated score"
    },
    "similar": [
     {
@@ -25006,7 +25426,12 @@
       "how": "target_score",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     15,
+     20
+    ],
+    "score_note": "often ends earlier by elimination instead of reaching 20"
    },
    "similar": [
     {
@@ -28978,7 +29403,9 @@
       "how": "fixed_length",
       "decided_by": "objectives"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "cooperative, no player score"
    },
    "similar": [
     {
@@ -29167,7 +29594,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     50,
+     90
+    ],
+    "score_note": "higher with fewer players"
    },
    "similar": [
     {
@@ -29334,6 +29766,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     130
     ]
    },
    "similar": [
@@ -29519,7 +29955,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     100,
+     150
+    ],
+    "score_note": "higher with fewer players"
    },
    "similar": [
     {
@@ -29712,6 +30153,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     140
     ]
    },
    "similar": [
@@ -29890,6 +30335,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     110
     ]
    },
    "similar": [
@@ -30100,7 +30549,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "won via one of several non-score conditions"
    },
    "similar": [
     {
@@ -30300,6 +30751,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     140
     ]
    },
    "similar": [
@@ -30511,7 +30966,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "team win, no score"
    },
    "similar": [
     {
@@ -30714,7 +31171,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "team win, no score"
    },
    "similar": [
     {
@@ -30902,7 +31361,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     120,
+     180
+    ],
+    "score_note": "scales up with fewer players (longer game)"
    },
    "similar": [
     {
@@ -31106,6 +31570,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     50,
+     75
     ]
    },
    "similar": [
@@ -31297,6 +31765,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     40,
+     60
     ]
    },
    "similar": [
@@ -31492,7 +31964,12 @@
       "how": "fixed_length",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     120,
+     220
+    ],
+    "score_note": "net worth in game dollars"
    },
    "similar": [
     {
@@ -31696,7 +32173,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "cooperative win/loss"
    },
    "similar": [
     {
@@ -31883,6 +32362,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     5,
+     30
     ]
    },
    "similar": [
@@ -32074,6 +32557,10 @@
       "how": "elimination",
       "decided_by": "instant"
      }
+    ],
+    "score_range": [
+     30,
+     60
     ]
    },
    "similar": [
@@ -32279,6 +32766,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     25,
+     40
     ]
    },
    "similar": [
@@ -32482,7 +32973,12 @@
       "how": "end_trigger",
       "decided_by": "objectives"
      }
-    ]
+    ],
+    "score_range": [
+     14,
+     21
+    ],
+    "score_note": "target city count fixed by player count"
    },
    "similar": [
     {
@@ -32666,6 +33162,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     80,
+     120
     ]
    },
    "similar": [
@@ -32859,7 +33359,12 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     40,
+     55
+    ],
+    "score_note": "5p games often score higher"
    },
    "similar": [
     {
@@ -33043,6 +33548,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     110
     ]
    },
    "similar": [
@@ -33232,6 +33741,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     60,
+     90
     ]
    },
    "similar": [
@@ -33421,7 +33934,9 @@
       "how": "end_trigger",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "pure race to the border, no score"
    },
    "similar": [
     {
@@ -33612,6 +34127,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     30,
+     60
     ]
    },
    "similar": [
@@ -33808,6 +34327,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     35,
+     55
     ]
    },
    "similar": [
@@ -33995,6 +34518,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -34191,7 +34718,9 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "race: win when fame/money markers meet"
    },
    "similar": [
     {
@@ -34370,7 +34899,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "race: win when fame/money markers meet"
    },
    "similar": [
     {
@@ -34560,6 +35091,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     30,
+     45
     ]
    },
    "similar": [
@@ -36872,7 +37407,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     15,
+     30
+    ],
+    "score_note": "varies with player count and rounds played"
    },
    "similar": [
     {
@@ -37055,6 +37595,10 @@
       "how": "fixed_length",
       "decided_by": "money"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -37245,6 +37789,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     80,
+     130
     ]
    },
    "similar": [
@@ -37425,7 +37973,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     60,
+     100
+    ],
+    "score_note": "fewer players get more turns each, pushing scores higher"
    },
    "similar": [
     {
@@ -37596,6 +38149,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     20,
+     40
     ]
    },
    "similar": [
@@ -37763,6 +38320,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     90,
+     140
     ]
    },
    "similar": [
@@ -37948,6 +38509,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     150
     ]
    },
    "similar": [
@@ -38129,7 +38694,12 @@
       "how": "target_score",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     15,
+     20
+    ],
+    "score_note": "game ends once someone hits 15, but the round finishes so final total often runs a bit higher"
    },
    "similar": [
     {
@@ -38296,7 +38866,9 @@
       "how": "coop_goal",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "Authority is a life total reduced to 0, not an accumulated score"
    },
    "similar": [
     {
@@ -38500,7 +39072,9 @@
       "how": "fixed_length",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "won via asymmetric objective conditions, not a numeric score"
    },
    "similar": [
     {
@@ -38693,6 +39267,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     100
     ]
    },
    "similar": [
@@ -38866,7 +39444,9 @@
       "how": "exhaustion",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "win by destroying enemy summoner, no score kept"
    },
    "similar": [
     {
@@ -39051,6 +39631,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     80,
+     120
     ]
    },
    "similar": [
@@ -39238,6 +39822,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     30,
+     45
     ]
    },
    "similar": [
@@ -39445,7 +40033,9 @@
       "how": "coop_goal",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "lowest bull-head total wins; game ends when someone crosses the 66-point threshold"
    },
    "similar": [
     {
@@ -39649,6 +40239,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     30,
+     50
     ]
    },
    "similar": [
@@ -39821,6 +40415,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     30,
+     45
     ]
    },
    "similar": [
@@ -40023,6 +40621,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     60,
+     90
     ]
    },
    "similar": [
@@ -40218,6 +40820,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     60,
+     90
     ]
    },
    "similar": [
@@ -40413,6 +41019,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     60,
+     100
     ]
    },
    "similar": [
@@ -40622,7 +41232,12 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     100,
+     170
+    ],
+    "score_note": "higher in 2p, lower with more players"
    },
    "similar": [
     {
@@ -40819,6 +41434,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     80,
+     120
     ]
    },
    "similar": [
@@ -41008,6 +41627,10 @@
       "how": "elimination",
       "decided_by": "instant"
      }
+    ],
+    "score_range": [
+     200,
+     280
     ]
    },
    "similar": [
@@ -41204,6 +41827,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     60,
+     100
     ]
    },
    "similar": [
@@ -41399,6 +42026,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     145
     ]
    },
    "similar": [
@@ -41593,7 +42224,12 @@
       "how": "exhaustion",
       "decided_by": "lowest"
      }
-    ]
+    ],
+    "score_range": [
+     8,
+     14
+    ],
+    "score_note": "score is your weakest category count"
    },
    "similar": [
     {
@@ -41789,6 +42425,10 @@
       "how": "exhaustion",
       "decided_by": "majority"
      }
+    ],
+    "score_range": [
+     90,
+     140
     ]
    },
    "similar": [
@@ -41984,6 +42624,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     150
     ]
    },
    "similar": [
@@ -42171,6 +42815,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     65,
+     95
     ]
    },
    "similar": [
@@ -42346,6 +42994,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -42551,6 +43203,10 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     15,
+     25
     ]
    },
    "similar": [
@@ -42761,7 +43417,12 @@
       "how": "target_score",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     10,
+     10
+    ],
+    "score_note": "game ends the instant a player hits the target (10 VP standard, 14 in longer variant)"
    },
    "similar": [
     {
@@ -42946,6 +43607,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     50,
+     90
     ]
    },
    "similar": [
@@ -43117,6 +43782,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     120,
+     220
     ]
    },
    "similar": [
@@ -43289,7 +43958,9 @@
       "how": "exhaustion",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "scenario objectives decide, not a shared score"
    },
    "similar": [
     {
@@ -43468,6 +44139,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     100
     ]
    },
    "similar": [
@@ -43659,7 +44334,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "win by defeating opponent's fighters, no score"
    },
    "similar": [
     {
@@ -43855,7 +44532,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "win by defeating opponent's fighters, no score"
    },
    "similar": [
     {
@@ -44005,7 +44684,9 @@
       "how": "sudden_death",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "win by defeating opponent's fighters, no score"
    },
    "similar": [
     {
@@ -44196,7 +44877,12 @@
       "how": "end_trigger",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": [
+     7,
+     7
+    ],
+    "score_note": "first to 7 unicorns in play, fixed target"
    },
    "similar": [
     {
@@ -44391,6 +45077,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     100,
+     150
     ]
    },
    "similar": [
@@ -44585,6 +45275,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     50,
+     75
     ]
    },
    "similar": [
@@ -44782,6 +45476,10 @@
       "how": "fixed_length",
       "decided_by": "instant"
      }
+    ],
+    "score_range": [
+     40,
+     70
     ]
    },
    "similar": [
@@ -44981,7 +45679,12 @@
       "how": "fixed_length",
       "decided_by": "money"
      }
-    ]
+    ],
+    "score_range": [
+     50,
+     80
+    ],
+    "score_note": "cash value, scales with players"
    },
    "similar": [
     {
@@ -45187,7 +45890,9 @@
       "how": "fixed_length",
       "decided_by": "instant"
      }
-    ]
+    ],
+    "score_range": null,
+    "score_note": "military conquest count or ring corruption track"
    },
    "similar": [
     {
@@ -45393,6 +46098,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     55,
+     80
     ]
    },
    "similar": [
@@ -45567,6 +46276,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     50,
+     80
     ]
    },
    "similar": [
@@ -45758,6 +46471,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     70,
+     100
     ]
    },
    "similar": [
@@ -45975,6 +46692,10 @@
       "how": "fixed_length",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     65,
+     100
     ]
    },
    "similar": [
@@ -46158,6 +46879,10 @@
       "how": "end_trigger",
       "decided_by": "points"
      }
+    ],
+    "score_range": [
+     60,
+     90
     ]
    },
    "similar": [
@@ -46362,7 +47087,12 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     8,
+     14
+    ],
+    "score_note": "lower with more players"
    },
    "similar": [
     {
@@ -46558,7 +47288,12 @@
       "how": "exhaustion",
       "decided_by": "points"
      }
-    ]
+    ],
+    "score_range": [
+     15,
+     35
+    ],
+    "score_note": "swingy; scales up with player count"
    },
    "similar": [
     {

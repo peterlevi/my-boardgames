@@ -51,7 +51,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   50,
+   75
+  ],
+  "score_note": "higher totals with more players"
  },
  "similar": [
   "7 Wonders Duel",

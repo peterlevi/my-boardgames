@@ -39,7 +39,12 @@
     "how": "end_trigger",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": [
+   50,
+   90
+  ],
+  "score_note": "cash+share value; scales with player count"
  },
  "similar": [
   "Irish Gauge",

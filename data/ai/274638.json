@@ -38,7 +38,9 @@
     "how": "sudden_death",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "win by defeating opponent's fighters, no score"
  },
  "similar": [
   "Unmatched: Battle of Legends, Volume One",

@@ -37,6 +37,10 @@
     "how": "exhaustion",
     "decided_by": "points"
    }
+  ],
+  "score_range": [
+   30,
+   45
   ]
  },
  "similar": [

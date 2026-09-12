@@ -41,7 +41,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   50,
+   90
+  ],
+  "score_note": "varies with route length and player count"
  },
  "similar": [
   "Antiquity",

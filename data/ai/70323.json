@@ -46,7 +46,12 @@
     "how": "target_score",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   15,
+   20
+  ],
+  "score_note": "often ends earlier by elimination instead of reaching 20"
  },
  "similar": [
   "King of New York",

@@ -42,7 +42,9 @@
     "how": "coop_goal",
     "decided_by": "instant"
    }
-  ]
+  ],
+  "score_range": null,
+  "score_note": "Authority is a life total reduced to 0, not an accumulated score"
  },
  "similar": [
   "Star Realms",

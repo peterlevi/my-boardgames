@@ -42,7 +42,12 @@
     "how": "target_score",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   10,
+   10
+  ],
+  "score_note": "first to 10 VP wins, target is the score"
  },
  "similar": [
   "Ticket to Ride",

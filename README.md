@@ -77,21 +77,29 @@ python3 scripts/bggids.py --retry    # ask again for names that found nothing
 python3 scripts/sync.py --no-ai      # skip it deliberately
 ```
 
-Four passes, in increasing order of cost:
+The passes, in increasing order of cost. Each of the narrow ones re-asks a
+single part of an entry and merges it in, leaving everything else alone —
+which matters, because an answer recalled from memory must never overwrite one
+that was read off a rules page:
 
-| pass | what it asks | cost per game |
+| pass | what it asks | measured cost per game |
 |---|---|---|
-| default | what the model already knows, grounded in the BGG data | ~$0.002 |
-| `--rescore` | only the win condition and point-salad call, merged into the existing entry | ~$0.001 |
+| default | everything it knows about a game, grounded in the BGG data | ~$0.002 |
+| `--sources` | only the categories a game scores | ~$0.01 |
+| `--endings` | only how a game can end, and what settles each ending | ~$0.01 |
+| `--scores` | only the range a winning score typically falls in | ~$0.01 |
+| `--rescore` | all of the scoring facts at once | ~$0.02 |
 | `--describe` | how it plays, from the BGG text only — no reception | ~$0.002 |
-| `--online` | searches the web and cites its sources | ~$0.07 |
+| `--online` | adds the web, and makes the answer cite the page it came from | ~$0.14 |
+| `--force` | redo entries that are already cached | — |
+| `--only IDS` | just these games, for retrying a failed batch | — |
 
-`--rescore` is for when the *classification* is what changed rather than the
-game: the prompt now spells out that scoring sources are counted from the
-categories the rules score at the end, not from the number of actions that
-feed them — so Brass, where everything comes down to industries and links,
-stops being filed under "many sources". Re-running it costs a fraction of a
-full pass and leaves every other field alone.
+`--online` combines with the narrow passes, and that combination is what
+fixes a fact the model half-remembers: The Great Zimbabwe was recorded as
+ending "by exhaustion at 90 points", twice, until the answer had to cite a
+rules page — at which point it came back as a race to about 25, which is what
+it is. Verified entries are marked, and no later memory-only pass will
+overwrite them.
 
 `--online` exists because training data is simply *absent* for recent games,
 not vague. Fifteen games here came back "low confidence"; looking them up
@@ -265,16 +273,22 @@ scripts/thumbs.py      BGG image CDN     -> data/thumbs/*.jpg   (network)
 scripts/gallery.py     geekdo gallery    -> data/gallery/*.json (network)
 scripts/build.py       data/raw          -> data/games.json     (offline)
 scripts/enrich.py      `claude` CLI      -> data/ai/*.json      (optional)
+                       (win condition, point salad and winning score are
+                        computed from these at render time, not stored)
 scripts/bggids.py      BGG search API    -> data/bgg_ids.json   (network)
 scripts/report.py      data/games.json   -> a single HTML file  (offline)
 
 scripts/query.py       data/games.json   -> a terminal table    (offline)
 scripts/screenshot.py  the report        -> docs/screenshot*.png (offline)
 
+scripts/check_scoring.py  tests/expectations.txt -> a pass/fail count (offline)
+
 scripts/common.py             paths, credentials, shared filter logic
+scripts/scoring.py            win condition and point salad, from the facts
 scripts/interaction.py        the fallback interaction rule
 scripts/traits.py             named groupings of BGG mechanics
 scripts/report_template.html  the page's markup, styles and browser-side code
+tests/expectations.txt        judgements scripts/scoring.py has to agree with
 ```
 
 Only `fetch.py` and `thumbs.py` touch the network. `data/raw/` and

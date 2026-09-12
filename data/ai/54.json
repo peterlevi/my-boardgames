@@ -41,6 +41,10 @@
     "how": "exhaustion",
     "decided_by": "majority"
    }
+  ],
+  "score_range": [
+   90,
+   140
   ]
  },
  "similar": [

@@ -10,7 +10,7 @@
   --great-bg:#f6efd8; --warn:#8a4b32; --warn-bg:#f4e5de;
   --chip:#eae6de; --tile:#dcd6c9;
   /* Meter scale, strong to weak, so a percentage reads before it is parsed. */
-  --m4:#3f8a5f; --m3:#7d9b45; --m2:#c0952b; --m1:#b3aca1;
+  --m4:#3f8a5f; --m3:#7d9b45; --m2:#c0952b; --m1:#b3aca1; --hit:#f6e6a8;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -18,7 +18,7 @@
     --accent:#d3ab7d; --best:#8fd0a6; --best-bg:#1d3226; --great:#e0c477;
     --great-bg:#332d15; --warn:#e5a488; --warn-bg:#38241c;
     --chip:#2b2822; --tile:#322d25;
-    --m4:#6fbf8e; --m3:#a3c274; --m2:#dcbc6a; --m1:#6b665d;
+    --m4:#6fbf8e; --m3:#a3c274; --m2:#dcbc6a; --m1:#6b665d; --hit:#6a5a22;
   }
 }
 * { box-sizing:border-box; }
@@ -89,19 +89,23 @@ h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
   .legendbody dd { margin:0 0 7px; }
 }
 .panel { padding:10px 0 8px; margin-top:6px; }
-.row { display:flex; gap:10px 26px; align-items:flex-end; flex-wrap:wrap; }
+/* Tight enough that the whole first row of filters — search through point
+   salad — sits on one line at the table's width. */
+.row { display:flex; gap:10px 16px; align-items:flex-end; flex-wrap:wrap; }
 .row + .row { margin-top:20px; }
 .f { display:flex; flex-direction:column; gap:3px; }
 .f > label { font-size:.68rem; text-transform:uppercase; letter-spacing:.06em;
   color:var(--muted); font-weight:600; }
 /* Ticks and dots in the page's own brown rather than the browser's blue. */
 input[type="checkbox"], input[type="radio"] { accent-color:var(--accent); }
-input, select, .selbtn { font:inherit; font-size:.84rem; color:var(--ink);
+input, select, .selbtn { font:inherit; font-size:.8rem; color:var(--ink);
   background:var(--panel); border:1px solid var(--line); border-radius:7px;
-  padding:6px 9px; }
+  padding:6px 8px; }
 .f > label { font-size:.66rem; }
 input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px; }
-#q { width:230px; max-width:100%; }
+/* The search box soaks up whatever the other filters leave. */
+.f.grow { flex:1 1 200px; min-width:170px; }
+#q { width:100%; min-width:0; }
 .pair { display:flex; align-items:center; gap:5px; }
 .pair input { width:66px; }
 #tagsearch { width:230px; max-width:100%; }
@@ -292,6 +296,7 @@ th.w-hex { width:54px; } th.w-plays { width:58px; }
 th.w-time { width:72px; } th.w-weight { width:70px; }
 th.w-ix { width:86px; } th.w-designer { width:150px; }
 th.w-date { width:106px; } th.w-price { width:96px; }
+th.w-score { width:112px; }
 th.w-year { width:64px; }
 th.w-atn { width:64px; } th.w-pct { width:66px; }
 th.w-ratings { width:74px; }
@@ -310,7 +315,7 @@ th.w-win { width:146px; } th.w-br { width:104px; }
    display on 265 rows' worth of cells. */
 .off-th .c-th, .off-rk .c-rk, .off-av .c-av, .off-my .c-my,
 .off-y .c-y, .off-ds .c-ds, .off-pl .c-pl, .off-tmax .c-tmax,
-.off-w .c-w, .off-ix .c-ix, .off-acq .c-acq, .off-lp .c-lp, .off-ed .c-ed,
+.off-w .c-w, .off-ix .c-ix, .off-acq .c-acq, .off-lp .c-lp, .off-ed .c-ed, .off-sc .c-sc,
 .off-pp .c-pp, .off-win .c-win, .off-salad .c-salad,
 .off-verdict .c-verdict, .off-bestPct .c-bestPct,
 .off-appr .c-appr, .off-rt .c-rt { display:none; }
@@ -366,6 +371,9 @@ td.thumb { width:44px; padding-right:0; }
 .game { color:var(--ink); font-weight:600; }
 a.game:hover { color:var(--accent); }
 .chip .n { color:var(--muted); font-variant-numeric:tabular-nums; }
+/* What the search matched, inside an expanded row. */
+mark { background:var(--hit); color:inherit; font-weight:700;
+  border-radius:3px; padding:0 2px; }
 /* Designer pills in "At a glance": the pill filters, the arrow leaves. */
 .dspills { display:flex; flex-wrap:wrap; gap:4px 6px; }
 .dspill { display:inline-flex; align-items:center; gap:2px; }
@@ -588,9 +596,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
    written the defaults there for anyone with scripts off. */
 (function () {
   var KEY = 'bgg-cols-v5';
-  var OFF_BY_DEFAULT = { y: 1, acq: 1, lp: 1, ed: 1, pp: 1 };
+  var OFF_BY_DEFAULT = { y: 1, acq: 1, lp: 1, ed: 1, sc: 1, pp: 1 };
   var ALL = ['th', 'rk', 'av', 'my', 'y', 'ds', 'pl', 'tmax', 'w', 'ix',
-             'acq', 'lp', 'ed', 'pp', 'win', 'salad', 'verdict', 'rt'];
+             'acq', 'lp', 'ed', 'sc', 'pp', 'win', 'salad', 'verdict', 'rt'];
   try {
     var saved = JSON.parse(window.localStorage.getItem(KEY) || 'null');
     if (!saved) return;
@@ -654,6 +662,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         Designer also folds back under the name when the window is too narrow
         to hold its column.</dd>
       <dt>Last played</dt><dd>The most recent date in your BGG play log.</dd>
+      <dt>Winning score</dt><dd>The range a winning score typically falls in,
+        blank where a score is not what decides the game. Off by default, and
+        only filled in when the optional enrichment step has been run.</dd>
       <dt>Edited</dt><dd>When the collection entry itself last changed on
         BGG — a rating, a play count, anything. Not when you got the
         game.</dd>
@@ -723,7 +734,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 
 <div class="panel">
   <div class="row">
-    <div class="f"><label for="q">Search</label>
+    <div class="f grow"><label for="q">Search</label>
       <input id="q" type="search" placeholder="Game name, designer, trait…" autocomplete="off"></div>
     <div class="f"><label for="players">Players</label>
       <select id="players"><!--__OPTIONS__--></select></div>
@@ -836,6 +847,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="hide-sm hide-xs c-ix w-ix" data-k="ix" data-col="ix">Interact</th>
     <th class="num hide-sm c-acq w-date" data-k="acq" data-col="acq">Acquired</th>
     <th class="num hide-sm c-lp w-date" data-k="lp" data-col="lp">Last played</th>
+    <th class="num hide-sm c-sc w-score" data-k="sc" data-col="sc"
+      title="What a winning score typically looks like">Winning score</th>
     <th class="num hide-sm c-ed w-date" data-k="ed" data-col="ed"
       title="When the collection entry itself last changed">Edited</th>
     <th class="num hide-sm c-pp w-price" data-k="pp" data-col="pp">Price paid</th>
@@ -1159,6 +1172,8 @@ function describe() {
   }
 
   var extra = [];
+  var term = F.q.value.trim();
+  if (term) extra.push('matching “' + term + '”');
   if (F.ix.value) extra.push(F.ix.value.toLowerCase() + ' interaction');
   if (F.win.value !== 'any') {
     extra.push((WIN_LABEL[F.win.value] || F.win.value).toLowerCase());
@@ -1212,6 +1227,7 @@ function sortRows(rows) {
         return ['Low', 'Medium', 'High'].indexOf((g.ai && g.ai.ixl) || g.ix);
       case 'ds': return (g.ds && g.ds[0]) || null;
       case 'win': return (g.ai && g.ai.wc) || null;
+      case 'sc': return (g.ai && g.ai.scn) || null;
       case 'salad': {
         var order = SALAD_ORDER.indexOf((g.ai && g.ai.br) || '');
         return order < 0 ? null : order;
@@ -1456,6 +1472,19 @@ function mediaBlock(g) {
 
 /** Designers as pills: each one filters the table to that designer, and the
  *  arrow beside it opens their own page on BGG. */
+/** Wrap whatever the search matched, so an expanded row shows why it is
+ *  there — a game can turn up for its designer, a mechanic or its year, none
+ *  of which is the name you typed next to. */
+function hl(text) {
+  var t = String(text === null || text === undefined ? '' : text);
+  var term = F.q.value.trim();
+  if (!term) return esc(t);
+  var i = t.toLowerCase().indexOf(term.toLowerCase());
+  if (i === -1) return esc(t);
+  return esc(t.slice(0, i)) + '<mark>' + esc(t.slice(i, i + term.length)) +
+         '</mark>' + esc(t.slice(i + term.length));
+}
+
 function designerPills(g) {
   var html = (g.ds || []).map(function (d) {
         var i = TAGS.findIndex(function (t) {
@@ -1464,9 +1493,9 @@ function designerPills(g) {
         // The pill filters the table, exactly like a mechanic or category
         // pill; the arrow beside it opens the designer's own page on BGG.
         var pill = i < 0
-          ? '<span class="chip">' + esc(d) + '</span>'
+          ? '<span class="chip">' + hl(d) + '</span>'
           : '<button type="button" class="chip designer" data-tag="' + i +
-            '" title="Filter by this designer">' + esc(d) +
+            '" title="Filter by this designer">' + hl(d) +
             ' <span class="n">' + TAGS[i].c + '</span></button>';
         var id = (g.dsid || {})[d];
         var out = id
@@ -1496,7 +1525,7 @@ function buildDetail(g) {
     if (!idxs.length) return '';
     return '<div class="chips">' + idxs.map(function (i) {
       return '<button type="button" class="chip ' + cls + '" data-tag="' + i +
-        '" title="Filter by this">' + esc(TAGS[i].n) +
+        '" title="Filter by this">' + hl(TAGS[i].n) +
         ' <span class="n">' + TAGS[i].c + '</span></button>';
     }).join('') + '</div>';
   }
@@ -1511,11 +1540,14 @@ function buildDetail(g) {
     ['Owners', g.ow ? g.ow.toLocaleString() : '—'],
     ['Your plays', g.pl],
     ['Designers', designerPills(g)],
-    ['Interaction', ((g.ai && g.ai.ixl) || g.ix)],
-    ['Point salad', (g.ai && SALAD_LABEL[g.ai.br]) || '—'],
-    ['Win condition', (g.ai && (g.ai.wcs || []).map(function (w) {
+    ['Interaction', hl((g.ai && g.ai.ixl) || g.ix)],
+    ['Point salad', hl((g.ai && SALAD_LABEL[g.ai.br]) || '—')],
+    ['Winning score', (g.ai && g.ai.sc
+      ? esc(g.ai.sc) + (g.ai.scnote ? ' <span class="yr">(' + esc(g.ai.scnote) +
+        ')</span>' : '') : '—')],
+    ['Win condition', hl((g.ai && (g.ai.wcs || []).map(function (w) {
         return WIN_LABEL[w] || w;
-      }).join(', ')) || '—']
+      }).join(', ')) || '—')]
   ];
   var ai = g.ai || {};
   var howWin = ai.howwin;
@@ -1781,7 +1813,13 @@ function scrollRowToTop(tr) {
 Object.keys(F).forEach(function (k) {
   if (!F[k]) { return; }   // a renamed control should not abort setup
   F[k].addEventListener('input', render);
-  F[k].addEventListener('change', render);
+  // A text field also fires `change` when it loses focus, which re-rendered
+  // the table between the mousedown and the mouseup of the very click that
+  // blurred it — so the first click on a row after typing went nowhere.
+  // Selects need both: `input` on a select is newer and not reliable on older
+  // mobile Safari, which is why the player-count picker once did nothing on
+  // the phone.
+  if (F[k].tagName === 'SELECT') F[k].addEventListener('change', render);
 });
 tagBox.addEventListener('change', function () { refreshTagList(); render(); });
 el('tagclear').addEventListener('click', function () {
@@ -1971,6 +2009,7 @@ var COLUMNS = [
   { k: 'tmax', n: 'Time' }, { k: 'w', n: 'Weight' }, { k: 'ix', n: 'Interact' },
   { k: 'acq', n: 'Acquired', off: true },
   { k: 'lp', n: 'Last played', off: true },
+  { k: 'sc', n: 'Winning score', off: true },
   { k: 'ed', n: 'Edited', off: true },
   { k: 'pp', n: 'Price paid', off: true },
   { k: 'win', n: 'Win condition' }, { k: 'salad', n: 'Point salad' },
@@ -1978,9 +2017,9 @@ var COLUMNS = [
 ];
 /* The order cells sit in, including the two columns that are never optional. */
 var DEFAULT_ORDER = ['th', 'rk', 'av', 'my', 'n', 'y', 'ds', 'pl', 'tmax', 'w',
-  'ix', 'acq', 'lp', 'ed', 'pp', 'win', 'salad', 'verdict', 'bestPct',
+  'ix', 'acq', 'lp', 'ed', 'sc', 'pp', 'win', 'salad', 'verdict', 'bestPct',
   'appr', 'rt'];
-var COLKEY = 'bgg-cols-v5';
+var COLKEY = 'bgg-cols-v6';
 var colState = {}, gameMode = 'ds', colOrder = DEFAULT_ORDER.slice();
 
 function colDefaults() {

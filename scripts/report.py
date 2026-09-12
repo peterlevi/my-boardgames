@@ -26,7 +26,8 @@ from pathlib import Path
 
 from common import ROOT, load_games, playtime, load_overrides
 from scoring import (SALAD_LABEL, SALAD_PILL, SALAD_SHORT, WIN_LABEL,
-                     WIN_ORDER, WIN_SHORT, salad, win, wins)
+                     WIN_ORDER, WIN_SHORT, salad, score_sort, score_text,
+                     win, wins)
 
 THUMBS = ROOT / "data" / "thumbs"
 
@@ -275,6 +276,8 @@ def trim_ai(ai):
     facts = ai.get("scoring") or {}
     out = {"cf": conf, "wc": win(facts), "wcs": wins(facts),
            "br": salad(facts), "srcs_n": len(facts.get("sources") or []),
+           "sc": score_text(facts), "scn": score_sort(facts),
+           "scnote": facts.get("score_note") or "",
            "ixl": (ai.get("interaction") or {}).get("level"),
            "ixk": (ai.get("interaction") or {}).get("kind"),
            "ixd": (ai.get("interaction") or {}).get("detail"),
@@ -492,6 +495,9 @@ def rows_html(data, a, tags=()):
             f'<td class="hide-sm hide-xs c-ix" data-col="ix">{ix_html}</td>'
             f'<td class="num hide-sm c-acq" data-col="acq">{g.get("acq") or EM_DASH}</td>'
             f'<td class="num hide-sm c-lp" data-col="lp">{g.get("lp") or EM_DASH}</td>'
+            f'<td class="num hide-sm c-sc" data-col="sc"'
+            f'{f" title={esc(ai.get("scnote"))!r}" if ai.get("scnote") else ""}>'
+            f'{esc(ai.get("sc") or "") or EM_DASH}</td>'
             f'<td class="num hide-sm c-ed" data-col="ed">{g.get("ed") or EM_DASH}</td>'
             f'<td class="num hide-sm c-pp" data-col="pp">{price_html}</td>'
             f'<td class="hide-sm hide-lg c-win" data-col="win">{win_html}</td>'
@@ -549,7 +555,7 @@ def check_balanced(html):
 
 # Columns that start hidden. The page script has the same list; both have to
 # agree or the table paints in one shape and settles into another.
-OFF_BY_DEFAULT = ("y", "acq", "lp", "ed", "pp")
+OFF_BY_DEFAULT = ("y", "acq", "lp", "ed", "sc", "pp")
 
 
 def owner():

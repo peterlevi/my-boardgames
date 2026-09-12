@@ -40,7 +40,12 @@
     "how": "fixed_length",
     "decided_by": "points"
    }
-  ]
+  ],
+  "score_range": [
+   100,
+   170
+  ],
+  "score_note": "higher in 2p, lower with more players"
  },
  "similar": [
   "Gaia Project",

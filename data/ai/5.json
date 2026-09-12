@@ -39,7 +39,12 @@
     "how": "end_trigger",
     "decided_by": "money"
    }
-  ]
+  ],
+  "score_range": [
+   6000,
+   12000
+  ],
+  "score_note": "wide swing based on mergers"
  },
  "similar": [
   "Acquire (variants)",

@@ -57,6 +57,18 @@ def csv_only():
     return (ROOT / "data" / "collection.csv").exists()
 
 
+def csv_note():
+    """Say, once per sync, how to get the fields the API will not hand over."""
+    from common import ROOT
+    if (ROOT / "data" / "collection.csv").exists():
+        return
+    print("\nPrice paid and acquisition date are not in the XML API — BGG keeps\n"
+          "them in the private part of a collection entry. To fill those two\n"
+          "columns, open your collection on boardgamegeek.com, choose\n"
+          "Download → CSV, and save the file as data/collection.csv; the next\n"
+          "build picks it up. (It is gitignored: it says what you paid.)")
+
+
 def main():
     argv = sys.argv[1:]
     full = "--full" in argv
@@ -72,6 +84,7 @@ def main():
     # build first: enrich.py reads games.json, so a newly added game has to be
     # in it before it can be enriched.
     run("build.py")
+    csv_note()
     if "--no-ai" not in argv:
         run("enrich.py", *(["--force"] if full else []))
         # enrich.py is what names the similar games, so their ids can only be

@@ -209,7 +209,7 @@ def collection_stats():
     """Play counts and the owner's own rating both ride along with the
     collection export (`stats=1`), so neither costs an extra API call. An
     unrated game carries value="N/A"."""
-    plays, mine, acquired, price, added = {}, {}, {}, {}, {}
+    plays, mine, acquired = {}, {}, {}
     for name in ("collection.xml", "expansions.xml"):
         f = RAW / name
         if not f.exists():
@@ -219,19 +219,11 @@ def collection_stats():
             plays[oid] = int(it.findtext("numplays") or 0)
             # Only present when BGG chooses to return private fields; it does
             # not for an API token, so this is usually empty.
+            # Present only if BGG ever starts returning private fields to an
+            # API token; it does not today.
             priv = it.find("privateinfo")
-            if priv is not None:
-                if priv.get("acquisitiondate"):
-                    acquired[oid] = priv.get("acquisitiondate")[:10]
-                if priv.get("pricepaid") and priv.get("pricepaid") != "0.00":
-                    cur = priv.get("pricepaidcurrency") or ""
-                    price[oid] = f'{priv.get("pricepaid")} {cur}'.strip()
-            # The only date BGG gives away for a collection entry: when the
-            # entry last changed. For an entry nobody has edited since, that
-            # is the day the game was added.
-            st = it.find("status")
-            if st is not None and st.get("lastmodified"):
-                added[oid] = st.get("lastmodified")[:10]
+            if priv is not None and priv.get("acquisitiondate"):
+                acquired[oid] = priv.get("acquisitiondate")[:10]
             rating = it.find("stats/rating")
             v = rating.get("value") if rating is not None else None
             if v and v != "N/A":
@@ -239,7 +231,7 @@ def collection_stats():
                     mine[oid] = float(v)
                 except ValueError:
                     pass
-    return plays, mine, acquired, price, added
+    return plays, mine, acquired
 
 
 def csv_rows():
@@ -336,7 +328,7 @@ def main():
         print(f"no cached BGG data — building from data/collection.csv "
               f"({len(games)} items, no mechanics, poll percentages or images)")
 
-    plays, mine, acquired, price, added = collection_stats()
+    plays, mine, acquired = collection_stats()
     private = load_private()
     csv_plays, csv_rating = {}, {}
     for r in rows:
@@ -369,7 +361,6 @@ def main():
         g["acquired"] = priv.get("acquired") or acquired.get(g["id"])
         g["price_paid"] = priv.get("price") if keep_private else None
         g["currency"] = priv.get("currency") if keep_private else None
-        g["added"] = added.get(g["id"])
         g["last_played"] = (played.get(g["id"]) or {}).get("last") or None
 
     out = ROOT / "data" / "games.json"

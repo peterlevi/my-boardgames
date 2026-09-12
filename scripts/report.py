@@ -115,7 +115,6 @@ def compact(games, tag_idx, inline=True):
             "dsid": g.get("designer_ids") or {},
             "lp": g.get("last_played"), "acq": g.get("acquired"),
             "pp": g.get("price_paid"), "ppc": g.get("currency"),
-            "add": g.get("added"),
             "rt": g["ratings"], "ow": g["owners"],
             "de": (g["description"] or "")[:900],
             "mn": g["minplayers"], "mx": g["maxplayers"],
@@ -493,7 +492,6 @@ def rows_html(data, a):
             f'<td class="hide-sm hide-xs c-ix" data-col="ix">{ix_html}</td>'
             f'<td class="num hide-sm c-acq" data-col="acq">{g.get("acq") or EM_DASH}</td>'
             f'<td class="num hide-sm c-lp" data-col="lp">{g.get("lp") or EM_DASH}</td>'
-            f'<td class="num hide-sm c-add" data-col="add">{g.get("add") or EM_DASH}</td>'
             f'<td class="num hide-sm c-pp" data-col="pp">{price_html}</td>'
             f'<td class="hide-sm hide-lg c-win" data-col="win">{win_html}</td>'
             f'<td class="hide-sm hide-lg c-breadth" data-col="breadth">{br_html}</td>'

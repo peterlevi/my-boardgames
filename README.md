@@ -223,9 +223,12 @@ descriptions and images. Those columns and filters stay empty.
 The same file is worth dropping in even when you do have a token, because it
 is the only way to get **price paid** and **acquisition date**: BGG keeps
 those in the private part of a collection entry and the API never returns
-them, however it is authenticated. `data/collection.csv` is gitignored — it
-says what you paid for every game — but note that a price that reaches
-`data/games.json` is committed and published with the report.
+them, however it is authenticated. Nothing else fills those columns — the
+sync says as much when the file is missing rather than substituting a date
+that only looks right. `data/collection.csv` is gitignored, since it says what
+you paid for every game; a price that reaches `data/games.json` is committed
+and published with the report, so `python3 scripts/build.py --no-private`
+leaves it out.
 
 ## How it works
 

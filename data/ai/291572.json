@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area control, open conflict, and negotiation",
-  "detail": "Nearly the entire game state is one shared map and shared card supply: warbands occupy and fight over the same regions, and combat can banish an opponent's pieces or strip them of relics, secrets, and favor. Players also strike explicit deals, promises, and alliances with each other, making Oath one of the more directly confrontational and negotiation-heavy games on this list.",
+  "kind": "direct area-majority conflict, dice-based attacks, and open negotiation/betrayal",
+  "detail": "Players fight over the same regions and Chancellor's favor with dice combat, actively deny each other cards and sites, and negotiate deals or betrayals that shape who wins outright. The legacy layer means today's conflicts and alliances change the shared world state for every future game, so almost nothing here is played in isolation.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": true
+  "negotiation": true,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [
@@ -69,5 +70,15 @@
   "Heavy Cardboard"
  ],
  "_fingerprint": "0595026d44630f16",
- "_name": "Oath"
+ "_name": "Oath",
+ "theme": {
+  "said": "praised for its Chronicle system 'writing real history', though the underlying area-majority/combat engine is often noted as similar to other Wehrle/Root-style games underneath",
+  "why": "the World Deck's Records, Relics, and shifting Vision (which literally rewrites next game's win condition based on what happened this game) exist only because the game is trying to model how history and legend accumulate across reigns",
+  "fit": 58
+ },
+ "style": {
+  "said": "unknown",
+  "why": "A euro-ish area-influence economy is wrapped in a legacy narrative with real conflict, dice, and take-that that can swing the game hard.",
+  "style": 60
+ }
 }

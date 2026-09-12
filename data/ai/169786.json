@@ -15,13 +15,19 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area control and mech combat",
-  "detail": "Factions move units and mechs across one shared hex map, contesting territory and triggering combat that can eliminate opponents' pieces or steal resources. Encounter cards and popularity tracks add further ways one player's choices constrain or hurt another.",
+  "kind": "area control/territory contests and occasional combat encounters, layered over mostly independent engine building",
+  "detail": "Territory and combat exist and matter for scoring (area majority, king-of-the-hill elements), and a well-timed attack or blocked hex can genuinely hurt an opponent, but most turns are spent quietly building your own faction's economic engine on your own player mat. Direct clashes are the exception players plan around, not the constant state of the game.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/thread/2598269/is-scythe-multiplayer-solitaire",
+   "https://boardgamegeek.com/thread/2091832/feels-like-multiplayer-solitaire-i-disagree"
+  ],
+  "said": "Scythe is frequently discussed as looking far more conflict-heavy than it plays — reviewers note 'combat is rare and mostly a threat rather than something that happens', and it's often grouped with games people call 'multiplayer solitaire with a war-torn coat of paint', even though its box art and theme promise a wargame.",
+  "confidence": "medium"
  },
  "scoring": {
   "subsystems": [

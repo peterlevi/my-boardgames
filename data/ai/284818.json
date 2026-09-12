@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement and building-slot denial",
-  "detail": "Players place workers on a shared, expanding board of buildings (some built by opponents), so claiming an action space or a building slot can block others from using it that round. Resource production and scoring are tracked individually, but the central board where all the action happens is fully shared.",
+  "kind": "claiming shared worker-placement buildings and fighting over turn/provost order",
+  "detail": "Players place workers on a shared row of buildings, and taking a spot (or the building's owner collecting a fee from you) directly limits what others can do that round. Still, a large part of each turn is spent developing your own tableau/city, so the shared board is a real but secondary battleground.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "the Caylus line is often praised for letting you \"block\" a building or squeeze an opponent out of the provost track, though 1303 is described as a lighter, faster remix of that tension"
  },
  "scoring": {
   "subsystems": [

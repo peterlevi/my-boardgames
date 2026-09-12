@@ -13,13 +13,19 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction for a shared commodity pool",
-  "detail": "Players bid against each other for sets of commodity cards revealed from a shared deck, so the pool being bid on is entirely common even though each player's won cards go to their own private cargo/collection. Winning a bid denies those specific cards to every other bidder, making blocking-by-outbidding the core interaction.",
+  "kind": "once-around auction bidding against each other for the same cards",
+  "detail": "Every card set is bid on by all players simultaneously in a single pass, so each bid is aimed directly at denying rivals a valuable set or set-majority bonus. The only shared resource is the auction itself, but since the entire game consists of nothing but these auctions, interaction is constant and central.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/boardgame/46/medici",
+   "https://www.boardgamequest.com/medici-review/",
+   "https://en.wikipedia.org/wiki/Medici_(board_game)"
+  ],
+  "said": "Part of Knizia's 'auction trilogy'; players describe it as tense bidding where you're constantly reading opponents' cash and driving prices up to hurt them, not just to win the lot"
  },
  "scoring": {
   "subsystems": [

@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "share auction and track-building on a shared map",
-  "detail": "Players build track cubes for the same five companies onto one shared map of Ireland, so a company's route and city connections are common property that affects every shareholder's dividends. Shares of each company are auctioned off one at a time, a shared pool everyone bids into, and building or upgrading a town can shape payouts for all holders of that stock, not just the acting player.",
+  "kind": "auctioning shares of the same five companies and manipulating shared stock/dividend timing",
+  "detail": "Every company is shared property: you bid against opponents for its shares, and building track or forcing a dividend call changes payouts for everyone who holds that stock, including rivals. Much of the skill is choosing when to trigger dividends or end the game specifically to hurt other shareholders, so almost the entire game state (five companies' shares and track) is communal rather than personal.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Winsome cube-rail games are known as \"18xx lite\" and are frequently called cutthroat and mean; players talk about \"screwing\" other shareholders and timing dividend calls to hurt rivals"
  },
  "scoring": {
   "subsystems": [

@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open negotiation and territorial combat",
-  "detail": "All factions move and battle for control of the same map of Arrakis, so territory and Spice are directly contested. Deals, bribes, and alliances are negotiated openly between players every turn, and combat can destroy an opponent's forces outright.",
+  "kind": "secret alliances, betrayal, and bidding/bribery over the same board and spice",
+  "detail": "Players negotiate treachery cards, alliances, and troop movements directly with each other every turn, and the entire game revolves around a shared map and shared spice supply that everyone fights and bargains over. Good moves are frequently chosen specifically to deny or manipulate another faction, and alliances can flip mid-game.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": true
+  "negotiation": true,
+  "said": "Widely called the archetypal negotiation game — reviewers describe constant secret alliances, backstabbing, and 'you must ally or die'; often cited as 'the best negotiation game ever made'"
  },
  "scoring": {
   "subsystems": [
@@ -73,5 +74,15 @@
   "No Pun Included"
  ],
  "_fingerprint": "a2c2a47dfb89bf3c",
- "_name": "Dune"
+ "_name": "Dune",
+ "theme": {
+  "said": "widely called 'the best simulation of a novel via mechanics,' 'the theme and rules are inseparable,' rarely if ever described as pasted-on",
+  "why": "the storm crossing the desert, the sandworm devouring spice and troops in the open desert, Bene Gesserit's secret prediction of the winning faction and turn, and the Atreides player alone knowing the traitors are all mechanics lifted directly from specific plot devices in the book",
+  "fit": 92
+ },
+ "style": {
+  "said": "dudes on a map / thematic negotiation wargame",
+  "why": "Wildly asymmetric factions battle, bluff, and betray each other over territory with combat resolved by cards and dice, and the narrative of alliances and treachery matters as much as efficiency",
+  "style": 72
+ }
 }

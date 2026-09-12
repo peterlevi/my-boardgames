@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority and shared tech tree race",
-  "detail": "Players move influence onto a shared galactic map of star systems, contesting the same systems for area-majority control, and research technologies from a shared tech tree where researching a tech can trigger effects for everyone and remove options for others. There is no direct attack or piece capture; interaction is through claiming shared map territory and shared technology slots before opponents do.",
+  "kind": "racing to claim shared tech tiles and system/colony spots before rivals do",
+  "detail": "Each player runs their own tech/economy engine on a personal board, but the technologies and star systems available to claim are a single shared pool, so grabbing a tile or achievement before an opponent can is a routine part of play. Much of a turn is still spent optimizing your own engine rather than directly interfering with anyone.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

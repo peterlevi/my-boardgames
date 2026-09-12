@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared board with location blocking",
-  "detail": "Worker-dice move around one common modular board of location tiles, and each location offers only one of two areas at a time, so occupying a tile can deny its action or bonus to other players that round. Resources and technology tiles sit on shared board spaces to be claimed, though each player builds their own separate temple/warehouse structures with what they gather.",
+  "kind": "competing for limited worker-placement/upgrade spots and a shared tech/market track",
+  "detail": "Workers move around one shared board and the two actions per tile (upgrade vs. bonus) are single-use until refreshed, so getting there first denies an opponent that option, and the tech/temple tracks and pyramid layers are shared spaces people race to claim. Still, each player's dice and resource engine develops independently, so a large share of turns is internal optimization rather than direct confrontation.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recurring reputation recalled; treating as fallback to mechanics"
  },
  "scoring": {
   "subsystems": [

@@ -12,14 +12,19 @@
   "can feel more solitaire than interactive"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "shared board with occasional take-that cards",
-  "detail": "Ocean, city and greenery tiles all go on one shared Mars map and count toward shared global parameters, so good tile spots and parameter milestones are contested. Most of the game is otherwise parallel engine-building on private tableaus, but a subset of cards let a player directly remove an opponent's resources, production or plants.",
+  "level": "Low",
+  "kind": "mostly independent tableau/engine building with a shared Mars board and milestone/award race",
+  "detail": "Each player builds their own card engine and production chain in parallel; the shared Mars board (temperature, oxygen, oceans, tile placement) and the milestones/awards are things everyone watches and races toward rather than fights over directly. A handful of attack cards let you hit an opponent's production, but they're a minor exception to an otherwise solitaire-feeling structure.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/thread/1860079/player-interaction",
+   "https://boardgamegeek.com/thread/2117400/level-of-interactivity-and-conflict"
+  ],
+  "said": "one of the most commonly cited \"multiplayer solitaire\" games — \"you're just optimizing your own tableau\", \"a shared board you barely touch each other on\", occasional \"take that\" cards feel like an afterthought"
  },
  "scoring": {
   "subsystems": [

@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "spatial auction and area control",
-  "detail": "All players bid for and build on the same rising cityscape, so winning a site directly determines what is available to opponents. Adjacency and majority scoring mean placements constantly interact, but there is no direct attack on opponents' pieces.",
+  "kind": "constrained spatial bidding for building sites, where your bid amount also sets what others can afford next",
+  "detail": "Players bid against each other for specific plots on a shared modular tower, and the auction mechanism is spatially constrained so a bid is often chosen specifically to deny a rival the site they need for their neighborhood or wonder. The building tower, patron demands, and objectives are all shared/contested resources rather than private boards, making almost every turn a direct interaction with opponents' plans.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strongly established consensus phrases, but reviewers frequently describe it as a tense, cutthroat spatial auction where you bid to deny opponents the tiles they need"
  },
  "scoring": {
   "subsystems": [

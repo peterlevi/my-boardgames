@@ -15,13 +15,18 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "route blocking and goods competition",
-  "detail": "All players build track onto the same map, and a link once built by someone else can't be reused for free, so track space and city connections are actively contested. Goods cubes appear on a shared board and any player's train can pick up and deliver any cube, so players race each other for the same deliveries; turn order is also decided by an auction/bidding round each turn.",
+  "kind": "auctioning for turn order and racing/blocking for the same track links and delivery cubes",
+  "detail": "Every round opens with a cash auction where your bid directly costs an opponent position and money, and the shared board has a finite number of track hexes and city links, so laying track to complete your route often denies the exact link someone else needed. Goods cubes are drawn onto a shared map and picked over competitively, making a large share of the game state fought over rather than private.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://www.therewillbe.games/forum/13-eurogames/196835-martin-wallace-s-steam-anyone",
+   "https://boardgamegeek.com/boardgame/27833/steam"
+  ],
+  "said": "Age of Steam's descendants are routinely called 'brutal', 'mean', and 'cutthroat' — players talk about the turn-order auction as a game in itself, and about 'blocking' track to strangle a rival's route."
  },
  "scoring": {
   "subsystems": [

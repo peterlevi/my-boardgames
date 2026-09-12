@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict and direct attack",
-  "detail": "Players roll dice to deal damage directly to opponents' health, and whoever holds the single Tokyo space earns bonus points while being attacked by everyone else, so occupying it both helps the holder and blocks that benefit from others. Power cards are bought from a shared face-up row, giving players a common pool alongside the constant direct damage that can eliminate opponents.",
+  "kind": "direct dice-rolled attacks that damage every other player and forced occupation of a contested space",
+  "detail": "Attack results hit all opponents (or the sole occupant of Tokyo) simultaneously, and staying in or entering Tokyo is a constant tug-of-war since it earns points but exposes you to everyone's attacks. There is essentially no private board — health, position, and card purchases are all shared pressure points aimed squarely at other players.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "widely called 'take-that', 'mean', and 'a brawl' — reviewers note 'you can't just turtle in your corner, someone will drag you into Tokyo and beat on you'"
  },
  "scoring": {
   "subsystems": [

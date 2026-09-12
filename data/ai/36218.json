@@ -14,14 +14,15 @@
   "Solvability of optimal strategies in some card combos"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "shared supply with occasional attacks",
-  "detail": "Each player builds and plays a private deck, so most of the game state is individual. Interaction comes from the shared kingdom card supply piles, which can be emptied to deny cards to opponents, and from Attack cards (e.g. Witch, Militia) that force opponents to discard, gain curses, or lose cards.",
+  "level": "Medium",
+  "kind": "racing for limited supply piles and, when attack cards are in the kingdom, directly hurting opponents' hands/decks",
+  "detail": "Most of a turn is spent optimizing your own deck privately, but the shared card supply piles are finite and can run out, denying options to others, and any attack cards drafted into the game let you directly discard, curse, or slow down opponents. How interactive a given game feels depends heavily on which kingdom cards are in play that session.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "often called \"multiplayer solitaire\" for its base engine-building, but attack cards (witch, militia) make it feel much more \"take that\" and \"mean\" when included"
  },
  "scoring": {
   "subsystems": [

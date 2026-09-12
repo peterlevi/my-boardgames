@@ -16,13 +16,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "closed-economy trading and price manipulation",
-  "detail": "Players build their own factories and containers on individual boards, but everyone sells into the same shared harbor auctions and a single closed pool of money, so one player's pricing and selling choices directly move what others can earn. Direct negotiation and side-deals over container values and prices are central, with blocking arising mainly from limited auction slots and market timing rather than piece-to-piece conflict.",
+  "kind": "direct player-to-player trading, price-setting, and auctioning off goods to (or against) rivals in a closed economy",
+  "detail": "Money and containers only exist in fixed supply among the players, so every sale, price you set, or good you buy comes directly at another player's expense — you can undercut rivals' prices or refuse to buy their overpriced goods to squeeze them. Almost the whole game is the shared market and shared money pool rather than an independent personal board.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": true
+  "negotiation": true,
+  "said": "\"cutthroat\", \"screw your neighbor\", \"brutal economy\" — Container's reputation is built almost entirely around its nasty, adversarial market"
  },
  "scoring": {
   "subsystems": [

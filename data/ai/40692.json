@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area control and conquest",
-  "detail": "Every race's tokens occupy the same map, and expanding means actively rolling to conquer and remove opponents' tokens from shared territories. Nearly the entire game state is this one contested board rather than separate player areas.",
+  "kind": "direct territorial conquest and forced attacks on adjacent opponents",
+  "detail": "Players actively invade and remove opponents' tokens from a single shared map to claim territory for victory points, so a good move is frequently chosen specifically to knock a rival's race down. There is no private board at all — every region belongs to the shared map, and races decline specifically because they get ground down by neighbors.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "known for 'you have to attack to score', an aggressive conquest game where players fight over the same shrinking map — often called mean or brutal for a family-weight title"
  },
  "scoring": {
   "subsystems": [

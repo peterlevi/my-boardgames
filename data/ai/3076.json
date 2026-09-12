@@ -15,12 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared markets and role selection, no direct conflict",
-  "detail": "Each player builds on their own island board, but the doubloon bank, colonist supply, three ships, and trading house are shared and limited, so filling a ship or selling a good can shut other players out of that action for the round. Role selection determines who acts first and gets a bonus, but nothing lets a player directly harm another's board.",
+  "kind": "role selection that grants opponents partial use, plus a shared, capacity-limited shipping line",
+  "detail": "Choosing a role (e.g., Captain, Mayor) lets everyone act but you take the best slice, and picking it at the right moment can deny a rival their ideal role that turn. The three communal ships and the limited pool of certain buildings/plantations create genuine competition, even though each player mainly develops their own board.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
-  "shared_pool": true
+  "shared_pool": true,
+  "said": "\"the role you pick benefits everyone but you get the bonus\", \"the ships will screw you\", \"denying someone the corn/quarry\" — commonly cited as a euro with more bite than its calm theme suggests"
  },
  "scoring": {
   "subsystems": [

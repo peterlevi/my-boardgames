@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "rondel action-blocking with a shared market",
-  "detail": "Ships and colonies sit on one shared map, and the rondel forces players to move through the same sequence of action spaces, so an opponent occupying or having just used a spot changes your options. Goods are sold into a shared market whose price drops as it's sold into, so players race each other to sell before the price collapses; there is no direct attack on opponents' pieces.",
+  "kind": "shared market prices and limited colony/building spots",
+  "detail": "Selling goods depresses the shared market price for everyone and desirable colony sites and privileges are limited, so timing and grabbing spots before rivals matters. Most of a turn, though, is spent advancing your own rondel position, ships, and buildings independently of what others are doing.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown, though Gerdts rondel games are frequently described as efficient parallel engine-building where the market and colony spots are the only real points of friction"
  },
  "scoring": {
   "subsystems": [

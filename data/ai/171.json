@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "direct capture and confrontation",
-  "detail": "Every piece moves on one shared 8x8 board, and moving onto an opponent's square captures it outright while pieces also block each other's lines of movement. The entire game state is shared — there is no private player board or resource.",
+  "kind": "direct capture and blocking of the opponent's pieces on a fully shared board",
+  "detail": "The entire board is shared, and any move is only meaningful in terms of what it threatens, defends, or denies the opponent. Nearly every decision is made because of what the other player can or cannot do in response.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"every move is a threat,\" the archetypal head-to-head duel — chess reviewers and players describe it as pure confrontation with no hidden information"
  },
  "scoring": {
   "subsystems": [],

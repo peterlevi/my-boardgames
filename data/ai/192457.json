@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area control war game",
-  "detail": "Factions fight over the same regions of one shared map, with units engaging opposing units in combat to kill them and seize territory. Nearly the entire board state is contested and mutually visible, and movement/combat choices are used to deny key zones and directly eliminate rival forces.",
+  "kind": "area majority combat over a shared map, with cards used to bluff strength and trigger fights for specific regions",
+  "detail": "Factions physically occupy and fight over the same limited set of territories, and combat is resolved via hidden card commitments aimed directly at whoever else is contesting that spot. The board is the entire shared game state — there is no separate personal board, so control of any region is a constant tug-of-war between players.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"brutal\", \"cutthroat area control\", \"mean\" — regularly discussed as one of the nastier area-majority wargames, with players actively fighting over the same territories"
  },
  "scoring": {
   "subsystems": [
@@ -67,5 +68,15 @@
   "No Pun Included"
  ],
  "_fingerprint": "542a1b022130240a",
- "_name": "Cry Havoc"
+ "_name": "Cry Havoc",
+ "theme": {
+  "said": "unknown",
+  "why": "each faction's units and abilities are built to match its sci-fi identity (human mechs holding ground, aliens swarming and evolving, machines self-replicating), so faction asymmetry is thematically motivated even though the underlying area-control chassis is generic",
+  "fit": 52
+ },
+ "style": {
+  "said": "euro-ameritrash hybrid / asymmetric war game",
+  "why": "Asymmetric factions with miniatures fight directly over map areas using card-driven combat, blending a resource economy with real conflict and swingy skirmishes",
+  "style": 60
+ }
 }

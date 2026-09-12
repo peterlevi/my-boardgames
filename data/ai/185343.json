@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with shared action spaces and contracts",
-  "detail": "Players place workers on a common central board of action spaces and draft from shared contract offerings, so claiming an action or contract removes it from the others. Each player also manages a private base/tech board, so a significant share of the game state is individual even though the contested actions are shared.",
+  "kind": "worker placement blocking on a shared action board plus a shared end-game timing race",
+  "detail": "Action spaces (including the powerful but limited Exodus/Rift actions) can only be used by one player at a time, so timing a claim to beat a rival is a real tactic, and the paradox/loan mechanics interact with a shared timeline. Most turns, though, are spent optimizing an individual tableau of buildings and resource chains that don't directly touch other players' boards.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Reviewers describe Anachrony as a dense engine-building puzzle where much of the satisfaction comes from optimizing your own production chain, though the shared action-space board and the competitive race to power up (or delay) the Time Rifts add real contested moments"
  },
  "scoring": {
   "subsystems": [

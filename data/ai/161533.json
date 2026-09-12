@@ -14,14 +14,20 @@
   "not accessible to casual or new gamers"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "drafting and market competition, mostly parallel building",
-  "detail": "Each player develops their own city area on an individual board, so most construction is private, but goods arrive on a shared central board and are drafted from a common market/warehouse, so taking a good, ship delivery, or card can deny it to others. There is no direct action targeting another player's board.",
+  "level": "Low",
+  "kind": "occasional competition for drafted tiles and market goods, otherwise parallel engine-building",
+  "detail": "Players draft tiles and goods from shared displays, which can occasionally deny an opponent a piece they wanted, but the overwhelming majority of turns are spent optimizing an individual, intricate personal board and card engine. The game supports a genuine solo mode, underlining how little the outcome depends on what opponents do.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://www.meeplemountain.com/reviews/lisboa/",
+   "https://thethoughtfulgamer.com/2018/04/02/lisboa-first-impression/",
+   "https://fuzzyllamareviews.com/2020/03/17/lisboa/"
+  ],
+  "said": "often called 'multiplayer solitaire' despite its weight — reviewers note 'you're mostly optimizing your own engine' and 'interaction is light for how big and dense the game feels', reinforced by its explicit solo mode"
  },
  "scoring": {
   "subsystems": [

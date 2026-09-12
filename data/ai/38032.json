@@ -12,14 +12,15 @@
   "less impactful with lower player counts"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "competitive bidding on a shared market",
-  "detail": "Players bid against each other for goods cards revealed from a common stack, so winning a lot denies those goods to everyone else. Each player's holdings and sets are kept privately, so beyond the shared auction pool there's no shared board or direct actions against opponents.",
+  "level": "High",
+  "kind": "closed-economy bidding against other players for goods cards",
+  "detail": "Every card in the game is won through a bidding war where your money is also your future bidding power and your victory points, so each bid directly targets what opponents can afford or acquire next. There is no private board — the entire game state is the shared auction stack and each player's bid history.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

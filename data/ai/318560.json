@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "network building around a shared cauldron",
-  "detail": "All players extend their networks onto the same central Witchstone board and draw magic crystals from one shared cauldron, so claiming a hex or scooping crystals directly reduces what's available to others. There is no ability to harm an opponent's pieces directly, only to out-race them for shared space and resources.",
+  "kind": "drafting crystals/tiles from a shared cauldron and competing for network/end-game bonuses",
+  "detail": "Players draw from the same limited cauldron of magic crystals and compete for shared prophecy-scroll bonuses and network connections, so taking a resource or bonus first can deny it to others. Most of the turn, though, is spent extending your own private network of witches and spells.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — as a Knizia design it's generally described in the same vein as his other tile/network games, competitive but not aggressive, with drafting from a shared pool as the main touchpoint"
  },
  "scoring": {
   "subsystems": [

@@ -14,13 +14,15 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "dice drafting, mostly parallel colony building",
-  "detail": "Each player builds on their own individual colony board with no destructive conflict, but all players draft from the same shared pool of dice each round, so taking a die can deny a needed color or value to an opponent. Beyond the dice draft, boards and progress are entirely separate.",
+  "kind": "drafting dice from a shared pool that others also want",
+  "detail": "The only shared element is the common pool of dice each round — taking a die you need denies it to someone else, but that's the extent of the friction. The overwhelming majority of decisions (placing polyominoes, activating rows/columns) happen entirely on your own private colony board with no way to affect an opponent's.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "the publisher's own description states the game 'has no direct destructive player conflict', and it's generally discussed as a relaxed, low-conflict euro built around your own colony board.",
+  "confidence": "medium"
  },
  "scoring": {
   "subsystems": [

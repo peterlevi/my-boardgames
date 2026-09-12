@@ -14,14 +14,15 @@
   "can feel more like a solitaire optimization puzzle on each player's turn"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "area control and combat on a shared galaxy map",
-  "detail": "Empires expand across a common hexagonal galaxy map, contesting the same systems and fighting battles that can destroy or capture an opponent's units. Each player runs their own tech and command-card engine, but territory, combat, and a shared cosmic threat all play out on the same board.",
+  "level": "Medium",
+  "kind": "racing shared objectives and occasional area-control skirmishes over sectors",
+  "detail": "Most of a turn is spent developing your own faction's tech tree, fleets, and command cards, but players do contest specific sectors and objective tiles, and can engage each other in combat when paths cross. The shared galaxy map and limited objective slots create real but intermittent friction rather than constant conflict.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — reviews for this heavy sci-fi civ game more often praise its interlocking tech-tree puzzle and 'this is basically a soft 4X' than describe real conflict; players often note combat is rare and easily avoided despite the war-torn setting"
  },
  "scoring": {
   "subsystems": [

@@ -12,14 +12,15 @@
   "Some swinginess from dice/event randomness"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "shared board with limited worker slots",
-  "detail": "All players place dice-workers on the same modular ship board and draw from a common pool of exploration/module tiles, so taking a space or tile denies it to others. There is no direct attack on opponents' pieces; interaction is mostly about racing for scarce shared spaces and resources rather than a fully separate player board each.",
+  "level": "Low",
+  "kind": "occasional blocking of shared worker-placement spots while each player builds their own spaceship",
+  "detail": "Each player develops a private spaceship and crew largely independently, with the shared board mainly limiting a few action spaces and events rather than creating direct conflict. Interaction is mostly incidental blocking rather than moves chosen to hurt a specific rival.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "carries a strong \"multiplayer solitaire\" reputation, reinforced by its built-in solo mode and each player quietly assembling their own ship"
  },
  "scoring": {
   "subsystems": [

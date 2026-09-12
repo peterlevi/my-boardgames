@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict via military and espionage",
-  "detail": "Each player develops their own race and empire separately, but the Take That mechanic lets you send spies or fleets to directly attack and damage an opponent's planets or plans. Most of the board state (empire development) is private to each player, with conflict occurring through targeted offensive actions rather than a shared board.",
+  "kind": "direct attacks and theft against opponents' cards/planets",
+  "detail": "Players use multi-use cards to raid, sabotage, and steal from rivals' tableaus and planet cards, so a large share of turns are spent deciding whose progress to wreck rather than only building your own. The shared space is the set of opposing empires themselves, not just a common board, making this explicitly confrontational.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Take That mechanic is core to its identity; reviewers describe it as a light, aggressive space game where 'you will get attacked' and races raid each other's card rows and planets"
  },
  "scoring": {
   "subsystems": [

@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "risk-based space contention",
-  "detail": "Potions are delivered across one shared map, and players simultaneously choose roles knowing that multiple players being 'bold' on the same role causes a clash where only one succeeds and others can lose goods. This creates frequent indirect conflict over shared locations and a common potion supply, without any card or action that targets an opponent directly.",
+  "kind": "simultaneous role selection where picking the same role as a braver opponent costs you the action",
+  "detail": "Each round players secretly commit to roles, and if two players choose the same role, only the bolder version resolves while the other player is punished or gets a lesser bonus — so predicting and clashing with opponents' choices matters a lot. Beyond that risk-timing conflict, delivery routes and the shared map are more of a race than a direct fight.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recurring interaction-specific reputation recalled; falling back on mechanics"
  },
  "scoring": {
   "subsystems": [

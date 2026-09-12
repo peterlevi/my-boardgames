@@ -14,14 +14,15 @@
   "rulebook and iconography are notoriously unclear for a first play"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "exploration with temple control and treasure stealing",
-  "detail": "All explorers move across one shared, incrementally revealed jungle map, competing for control of temples and volcano spaces. A player can move onto a space to seize majority control or steal treasures an opponent was holding, so pieces act directly on each other's holdings rather than just occupying separate territory.",
+  "level": "Medium",
+  "kind": "racing to claim area-majority at temples each round, plus directly stealing opponents' held treasures",
+  "detail": "Players spend the same pool of action points either to explore new jungle or to reinforce their own temple presence, and at the end of each round whoever has the most tribe members at a temple scores it — so placement decisions are frequently aimed at denying a rival the majority. The explicit treasure-stealing rule (matching or beating another player's set) adds a direct, targeted swing on top of the mostly-personal task of managing your own action economy.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "often called surprisingly aggressive and tense for a Kramer/Kiesling design — praised for the tight action-point squeeze and the fights over temple majority and treasure"
  },
  "scoring": {
   "subsystems": [

@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared rondel and city board with spot-blocking",
-  "detail": "Players move around a shared rondel to take actions and construct buildings on a common city board, where taken spaces and building slots become unavailable to others. Card/resource engines (deck and bag building) are managed individually, so only the rondel and the city map are contested territory.",
+  "kind": "competing for limited rondel/board spaces and area-majority bonuses",
+  "detail": "Players compete for the same limited spaces on the shared rondel-like action wheel and for area-majority control tied to the King of the Hill mechanic, both of which can be denied to an opponent by taking them first. Much of the rest of a turn, however, is spent developing an individual player board of cards and resources.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — falling back on mechanics"
  },
  "scoring": {
   "subsystems": [

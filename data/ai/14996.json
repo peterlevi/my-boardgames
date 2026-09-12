@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "route claiming with a shared card market",
-  "detail": "Routes are claimed on one shared map, and once a player takes a route it is unavailable to everyone else, which can break rivals' planned connections. Train car cards are drawn from a shared face-up row and deck, so visible cards can be taken before an opponent gets them.",
+  "kind": "racing to claim shared routes on one map before an opponent does",
+  "detail": "All routes are claimed from one shared map, and once a segment is taken it's gone, so a rival can deliberately block a route you need to complete a ticket. But most of a turn is spent quietly drawing cards and planning your own connections, so the blocking is real but occasional rather than constant.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "known for the moment someone \"snipes\" a route you were planning on, but generally regarded as light and family-friendly rather than mean"
  },
  "scoring": {
   "subsystems": [

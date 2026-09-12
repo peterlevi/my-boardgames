@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared city board with worker capture",
-  "detail": "Players move and place workers on one shared city board of buildings, competing for the same locations and a common resource market, and the corrupt track lets a player capture and jail an opponent's worker or block their virtuous path. So beyond space contention, pieces can be removed from play by a rival's direct action.",
+  "kind": "locking/jailing opponents' workers and stealing their goods",
+  "detail": "Players place workers on largely separate action spots to gather resources and build contracts, but Virtue/Vice cards let you imprison a rival's worker, rob their stockpile, or block their building progress. Most of a turn is still spent developing your own contracts and buildings; the take-that cards are a periodic, targeted disruption rather than a constant fight over shared space.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Often called one of the more aggressive worker-placement games — reviewers note you can jail an opponent's worker, steal their goods via the Black Market, or torch their progress with Warrant cards, more \"take-that\" than typical Euro worker placement"
  },
  "scoring": {
   "subsystems": [

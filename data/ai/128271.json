@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared tile-laying with area majority",
-  "detail": "All players build onto one shared city grid, stacking and layering tiles to claim majority control of districts, so where you place directly affects who scores those tiles. Tiles and cards are drafted from a shared row each round, adding further competition over which pieces are available.",
+  "kind": "area-majority scoring on one shared, ever-shifting city grid",
+  "detail": "All players build into a single shared city where tiles are literally stacked on top of each other, so placing on or near an opponent's tile can bury their building or shift majority control of a district's points. The drafting of tiles from a shared row also means denying a useful tile to a rival is a real consideration, though a fair share of scoring comes from a player's own private hand of tiles.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

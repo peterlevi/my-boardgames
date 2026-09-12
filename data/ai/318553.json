@@ -13,12 +13,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "parallel roll-and-write with shared dice rolls",
-  "detail": "Each player fills in their own paper sheet using dice results that are rolled once and shared by everyone, so the randomness is common but the developing province, goods, and tracks are entirely individual. There is no shared board, market, or ability to affect another player's sheet.",
+  "kind": "shared dice pool in a roll-and-write race",
+  "detail": "All players use the same rolled dice each round, so there is light competition to grab the best die before others do, but each player then fills in their own sheet independently. The win condition is a race against the other players' tracks, watched rather than directly contested.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
-  "shared_pool": false
+  "shared_pool": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

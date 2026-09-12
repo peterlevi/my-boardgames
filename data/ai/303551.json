@@ -17,13 +17,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area control with open military conflict",
-  "detail": "Both players' forces occupy and move across a single shared territory map, competing for control of the same regions and access to five shared trade markets. Combat lets a player directly attack and siege the opponent's controlled polis, so a large share of the game state (territory, markets) is contested rather than personal.",
+  "kind": "direct military conflict and diplomacy over shared territories",
+  "detail": "As a two-player wargame, players fight over control of the same territories via combat and sieges, and can also try to diplomatically flip a rival's polis to their side, directly taking something from the opponent. Supply routes and markets are likewise contested rather than personal, so most of the game state is shared and fought over.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [
@@ -78,5 +79,15 @@
  ],
  "source": "web",
  "_fingerprint": "cfb8b9bd4c07c01b",
- "_name": "Polis"
+ "_name": "Polis",
+ "theme": {
+  "said": "unknown — thin BGG presence, but description reads as fairly standard civ-lite area control with an economic layer bolted on",
+  "why": "needing to feed the population you control before it produces goods, and being able to woo a rival polis to defect through diplomacy rather than only combat, are rules that plainly derive from real city-state politics rather than being generic filler",
+  "fit": 48
+ },
+ "style": {
+  "said": "unknown",
+  "why": "A market-and-supply economy is contested directly through dice-resolved battles and sieges between two civilizations, blending trade with war.",
+  "style": 55
+ }
 }

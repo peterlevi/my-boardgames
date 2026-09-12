@@ -12,14 +12,15 @@
   "can feel overly mathematical/optimization-puzzle-like rather than exciting"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "drafting and space-blocking on a shared travel board",
-  "detail": "Player pawns move along the same point-to-point map of cities and can claim the same limited tiles/theory spots, so getting there first denies them to others. An open drafting row of student and travel cards is shared by all players, but each player otherwise builds their own tableau of tracks with little direct effect on opponents beyond that contested board and offer row.",
+  "level": "Medium",
+  "kind": "drafting limited research tiles and action spaces on a shared board",
+  "detail": "Players mostly build their own tech track and toolbox, but the open draft of tiles/cards and the shared map of universities/cities means a tile or spot you want can be taken first. Most of the state (your track, tools, card engine) is private; the shared parts are the drafting pool and a handful of contested locations.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

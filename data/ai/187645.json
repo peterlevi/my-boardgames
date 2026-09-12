@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict over a shared galaxy map",
-  "detail": "Empire and Rebellion forces occupy and move across the same galaxy board, directly battling with combat cards and dice to destroy or capture each other's units and control systems. Nearly all game state is shared and contested rather than split into private player areas.",
+  "kind": "direct area-movement conflict, hidden-information hunting, and card-based sabotage between opposing factions",
+  "detail": "The Empire and Rebellion fight over the exact same galaxy map, with combat, hidden unit movement, and leader-driven events explicitly targeting the other side's forces and hidden objectives. Virtually the whole board and mission structure is shared and contested — there are no separate private boards, only opposing plans collapsing into direct confrontation.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "widely described as a tense, highly confrontational hidden-movement wargame — hunting the Rebel base, direct battles, and card-driven sabotage between the two sides define the experience"
  },
  "scoring": {
   "subsystems": [
@@ -70,5 +71,15 @@
   "Heavy Cardboard"
  ],
  "_fingerprint": "32ceda43b5413dfa",
- "_name": "Star Wars: Rebellion"
+ "_name": "Star Wars: Rebellion",
+ "theme": {
+  "said": "widely praised as one of the most thematic Star Wars games ever made; \"the mechanics ARE the theme\", hidden movement described as genuinely modeling the fog of war of hunting a rebel base across a galaxy",
+  "why": "the Rebel base's location is a genuine secret token the Rebel player tracks, and the entire Imperial half of the game is built around search-and-destroy against that hidden information, which only makes sense as a model of the movies' central premise.",
+  "fit": 84
+ },
+ "style": {
+  "said": "dudes on a map / ameritrash with a euro chassis",
+  "why": "Asymmetric factions with hidden movement, combat dice, and a card-driven narrative arc sit on top of an action/worker-allocation engine, but direct conflict and swingy dice decide the war.",
+  "style": 72
+ }
 }

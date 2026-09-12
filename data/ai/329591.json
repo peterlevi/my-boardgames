@@ -14,14 +14,15 @@
   "not a lot of thematic train-building flavor beyond the track-laying visuals"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "worker placement with individual networks",
-  "detail": "Players place workers on a shared row of action spaces to gain resources and tech, so taking a space or a market good first denies it to others that round, but each player then builds their own railway network on their own board. There is no way to damage or remove an opponent's track or workers directly.",
+  "level": "Low",
+  "kind": "claiming limited worker-placement action spots ahead of opponents",
+  "detail": "Each player expands their own rail network and tech tracks largely independently, with the main shared element being a set of worker-placement action spaces that can be taken before a rival gets to them. There's no direct attacking or blocking of opponents' rail lines, so the game plays mostly as parallel empire-building with a light race for popular actions.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — discussed mostly as a big, meaty worker-placement/tech-track railway builder rather than for table friction"
  },
  "scoring": {
   "subsystems": [

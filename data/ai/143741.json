@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "hidden roles with direct dice-based attacks",
-  "detail": "Players secretly belong to teams (Sheriff, Outlaws, Renegades) and use dice results to directly shoot other players, removing their life points and eliminating them from the game. Each player manages their own dice and life track rather than a shared board, so interaction happens entirely through targeted attacks rather than shared spatial or resource state.",
+  "kind": "direct dice attacks between players plus hidden-team elimination",
+  "detail": "Every player is constantly rolling to shoot others or must dodge incoming hits, and the hidden Sheriff/Outlaw/Renegade roles mean deciding who to attack is the entire game. There is essentially no private board state — the whole game is players acting directly on each other until one side is eliminated.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Described in reviews as a fast, brutal \"everyone shoot everyone\" party game — phrases like \"hidden roles turn on you,\" \"pure chaos,\" and \"you're always a target\" recur"
  },
  "scoring": {
   "subsystems": [],

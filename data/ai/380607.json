@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared trail with limited building spots and market rows",
-  "detail": "As in the base game, all players traverse and build along one shared trail board, so occupying a building spot or path denies it to others. Sheep breeds and other cards come from shared market rows, while each player's flock and personal board remain their own with no direct player-versus-player attacks.",
+  "kind": "Same GWT-family interaction: building fees and contested track/delivery spaces",
+  "detail": "As with the other Great Western Trail titles, each player runs their own rondel/deck engine, while the shared board contributes building-usage payments and a limited number of track and delivery positions to race for. A supported solo mode again signals the multiplayer layer is additive rather than central.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — too new for an established reputation distinct from the GWT series"
  },
  "scoring": {
   "subsystems": [

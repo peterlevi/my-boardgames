@@ -15,12 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel push-your-luck with a shared market and race bonuses",
-  "detail": "Each player draws from their own bag into their own pot, so play is largely parallel, but ingredients are bought from one shared central display and the first players to pass certain points on the shared scoring track claim one-time bonuses, denying them to slower players. No action lets a player directly affect another's pot.",
+  "kind": "simultaneous, private push-your-luck with only a shared ingredient market",
+  "detail": "Everyone draws and pushes their luck in their own bag/pot at the same time, so the game state that matters is almost entirely personal. The only shared element is the refilling ingredient shop, which is a minor draft rather than something players fight over.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
-  "shared_pool": true
+  "shared_pool": true,
+  "said": "\"multiplayer solitaire\" is the phrase used constantly for Quacks — players note you barely need to watch anyone else's pot"
  },
  "scoring": {
   "subsystems": [

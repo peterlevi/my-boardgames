@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "tile placement leading to open conflict",
-  "detail": "Tiles and leaders are placed on one shared grid, and when rival civilizations connect, external conflicts directly remove the losing player's leader or tiles from the board; internal conflicts can also unseat an opponent's leader. Tiles are drawn blind rather than from a visible market, so the interaction is entirely through spatial contact and combat, not a shared supply.",
+  "kind": "direct external and internal conflicts that eliminate opponents' leaders/tiles",
+  "detail": "Civilizations grow on a shared grid until they touch, triggering conflicts where committed tiles are removed from the board and a rival's leader can be ousted, so expansion is inseparable from confrontation. Scoring by your weakest color also pushes players to actively target and suppress whichever category an opponent is leading in, making denial a constant, deliberate strategy.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "called Knizia's masterpiece of conflict, described as \"brutal\", \"vicious\", with reviewers noting leaders are toppled and civilizations destroyed by neighbors"
  },
  "scoring": {
   "subsystems": [

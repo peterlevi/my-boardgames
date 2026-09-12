@@ -14,14 +14,16 @@
   "downtime in higher player counts"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker placement with contested spaces and a shared market",
-  "detail": "Players place workers on a shared board of action spots and draw contracts from common offers, so occupying a spot or taking a contract denies it to others. There is no direct attack on opponents' holdings; each player otherwise develops their own production chain independently.",
+  "level": "Medium",
+  "kind": "competing for limited worker-placement spots and investing in shared companies via stock holding",
+  "detail": "Players place workers on a common board where a taken spot is unavailable to others, and the Stock Holding/Investment mechanics mean multiple players can hold stakes in the same companies, so one player's investment choices affect the payouts others receive. Most of the turn, though, is still spent developing your own personal production engine.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — falling back to mechanics",
+  "confidence": "low"
  },
  "scoring": {
   "subsystems": [

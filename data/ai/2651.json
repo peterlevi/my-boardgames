@@ -14,14 +14,15 @@
   "Fiddly bookkeeping with resources and money"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "auction and shared resource market with route blocking",
-  "detail": "Players bid against each other for power plants from a shared, publicly visible market, and buy fuel from a common resource market whose prices rise as it is depleted. Building a network on the shared city map claims connections and city slots that competitors can no longer use, though there is no way to directly harm an opponent's plants or cities.",
+  "level": "Medium",
+  "kind": "bidding against each other for power plants, then squeezing a shared resource market",
+  "detail": "The plant auction is a direct bidding war, and buying fuel means taking it out of a common pool at rising prices, which can leave an opponent's plant unfuelable that turn. Network expansion itself is mostly parallel (plenty of routes), so the sharp interaction is concentrated in the auction and market phases rather than the board.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"punishes the leader\" via reverse turn order, \"the auction can get vicious\", \"you can starve someone of cheap coal/oil\" — reviewers call it a euro with real teeth compared to typical network builders"
  },
  "scoring": {
   "subsystems": [

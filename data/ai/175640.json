@@ -14,13 +14,19 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with area-majority land grabs",
-  "detail": "Players place workers on a shared board of regions and buildings, competing for limited action spots and for majority control of wine regions that pay out at harvest. Most production happens on each player's own vineyard tableau, but the regional map and its limited placement spots are fully shared and contested.",
+  "kind": "competing for regional area majority and market/order-track position, with catch-the-leader hindrances",
+  "detail": "Players vie for majority control in shared wine regions and for position on the wine-order/demand track, and a catch-the-leader mechanism actively hampers whoever is ahead. Even so, a large share of each turn goes into building and upgrading your own private vineyard and winery engine.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://thethoughtfulgamer.com/2019/07/03/vinhos-review/",
+   "https://www.boardgamequest.com/vinhos-deluxe-edition-review/",
+   "https://boardgamegeek.com/boardgame/175640/vinhos-deluxe-edition"
+  ],
+  "said": "unknown — falling back on mechanics"
  },
  "scoring": {
   "subsystems": [

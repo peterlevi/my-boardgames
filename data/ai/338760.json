@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "network building and market competition",
-  "detail": "All players build factories and rail links onto one shared map, so track and city connections can be contested or blocked outright. Goods sold into a common market and public contracts fulfilled on a first-come basis mean players are constantly racing each other for the same deliveries, but without any direct action against an opponent's pieces.",
+  "kind": "auction for turn order, competing for limited public contracts, and a shared goods market whose prices drop as you sell",
+  "detail": "Players bid against each other for turn order each round, race to claim scarce public contracts before rivals do, and dump goods into a common market that depreciates as it fills up, so timing sales to beat others matters. Most of a turn, though, is spent building your own factory and rail network tile by tile, so the shared elements are pressure points rather than constant collisions.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

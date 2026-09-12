@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open conflict, diplomacy and area control on a shared galaxy",
-  "detail": "All players expand, build, and fight across one shared modular galaxy map, so claiming systems and jump lanes directly denies them to rivals. Fleets engage in dice-based combat that destroys opponents' units, while formal trading and a voting phase mean deals and political maneuvering are core to play, not incidental.",
+  "kind": "military conquest, trading/negotiation, and voting all aimed directly at rivals",
+  "detail": "Players fight over the same planets and Mecatol Rex, negotiate trades and alliances that shift constantly, and vote in a shared political phase that can directly hurt or help specific opponents. Almost every action — combat, trade, tech denial, voting — is chosen because of what it does to another player, not in isolation.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": true
+  "negotiation": true,
+  "said": "the archetypal \"cutthroat\" 4X — reviewers describe it as built on negotiation, backstabbing, and direct combat over the same galaxy"
  },
  "scoring": {
   "subsystems": [
@@ -69,5 +70,15 @@
   "The Secret Cabal"
  ],
  "_fingerprint": "affa95534c4cd93b",
- "_name": "Twilight Imperium: Fourth Edition"
+ "_name": "Twilight Imperium: Fourth Edition",
+ "theme": {
+  "said": "factions are called flavorful and distinct, but the core engine is often described as \"Risk/4X with a tech tree\" — the action-card selection, combat dice, and command-token economy are shared 4X scaffolding that shows up reskinned in many space games",
+  "why": "faction special abilities (Hacan trade bonuses, Ghosts of Creuss wormhole movement) are clearly pulled from lore, but the underlying strategy phase, tech tree, and combat resolution are generic engine-building mechanisms that would run the same if the factions were unnamed colors.",
+  "fit": 58
+ },
+ "style": {
+  "said": "epic 4X / ameritrash with euro tech trees",
+  "why": "Highly asymmetric races, combat dice, and possible player elimination through military conquest dominate despite an underlying tech/resource economy and voting.",
+  "style": 76
+ }
 }

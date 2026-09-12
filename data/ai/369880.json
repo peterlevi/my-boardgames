@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "closed two-player drafting over a shared card row",
-  "detail": "Each round the two players draft from a shared, alternating set of cards representing goods and resources, so a card taken by one player is removed from what the other can use. Each village's stored goods, beer, and bread production is tracked on that player's own area, keeping most ongoing production private even though the drafting pool is shared.",
+  "kind": "closed drafting from a shared card pool between two players",
+  "detail": "Each round both players draft from and pass shared multi-use cards, so taking a card for its bread/beer value denies your one opponent that exact option. Beyond the draft, each village still manages its own fields and production largely independently.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

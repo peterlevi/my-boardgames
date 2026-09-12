@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "tile placement and area majority on a shared map",
-  "detail": "Every tile drawn is placed onto one growing shared landscape, and meeples placed on roads, cities, and fields compete for majority control of those same shared features, directly blocking opponents from claiming them. There is no shared draw pool (each player draws and plays their own tile) and, aside from the minor Robbers mini-expansion, no direct action taken against another player's pieces.",
+  "kind": "contesting shared roads, cities and farmer fields for area-majority scoring",
+  "detail": "Players place tiles onto one shared, ever-growing map and can extend, complete, or add meeples to features an opponent started, fighting over majority control of cities, roads, and fields. A large part of the game is still just placing your own tiles for your own points, so it sits between a pure race and a direct fight.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

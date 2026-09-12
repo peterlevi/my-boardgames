@@ -14,14 +14,20 @@
   "not approachable for casual groups"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "worker placement with market competition",
-  "detail": "Players place workers on a common board of action spaces and travel a shared point-to-point map, so occupying a spot or path can shut it off to opponents that round. Invention/idea cards are drawn from a shared supply, while each player's own developed technologies and resources remain on their individual board.",
+  "level": "Low",
+  "kind": "worker placement on a shared board, but with enough space and asymmetric worker types that blocking is rare",
+  "detail": "Players place workers on a common board and can theoretically occupy a spot someone else wanted, but Lacerda designs typically provide enough alternative actions and paths that direct blocking is uncommon and easily worked around. The bulk of the game is each player threading their own multi-step engine through their personal tableau of ideas and inventions.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/thread/3343210/review-of-inventions-by-lacerda",
+   "https://boardgamegeek.com/boardgame/347305/inventions-evolution-of-ideas",
+   "https://talkingshelfspace.com/review-inventions-evolution-of-ideas/"
+  ],
+  "said": "unknown, but consistent with Vital Lacerda's other heavy euros, which reviewers commonly describe as intricate solo puzzles played at the same table rather than games where players fight over the same things"
  },
  "scoring": {
   "subsystems": [

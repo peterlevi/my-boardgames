@@ -12,14 +12,15 @@
   "less satisfying with very analytical groups expecting tight logic"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "cooperative deduction, no player-vs-player interaction",
-  "detail": "The ghost deals a private set of vision cards to whichever medium is being helped, so almost all game state sits on that one medium's own tableau rather than a shared board. Players only ever cooperate to interpret clues and vote together at the end; nothing is contested, attacked, or drawn from a common pool.",
+  "level": "High",
+  "kind": "cooperative clue-giving and group discussion to interpret shared vision cards",
+  "detail": "The ghost communicates through cards visible to specific mediums, who then discuss and vote as a group to converge on the solution, so nearly all game state (the clues, the guesses, the shrinking suspect pool) is shared. There's no personal board at all; the whole game is players affecting each other's interpretation of the same evidence.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown, but as a cooperative party deduction game it's built entirely around mediums discussing and interpreting the same visions together"
  },
  "scoring": {
   "subsystems": [
@@ -60,5 +61,15 @@
   "Gaming Rules!"
  ],
  "_fingerprint": "35937f387ff9365e",
- "_name": "Mysterium"
+ "_name": "Mysterium",
+ "theme": {
+  "said": "often called a reskinned Dixit/Clue hybrid, 'the ghost theme is flavor over a picture-clue guessing game', though some say the vision-card interpretation genuinely feels séance-like",
+  "why": "a ghost silently handing over surreal dream-image cards that mediums must interpret models the séance premise reasonably well, but the underlying deduction structure (match clue-cards to suspect/location/weapon) is the same abstract logic engine as any Clue-style game",
+  "fit": 27
+ },
+ "style": {
+  "said": "cooperative party/deduction game",
+  "why": "It is fully cooperative with no conflict or elimination, but the real-time guessing and storytelling make the experience matter far more than any optimization.",
+  "style": 45
+ }
 }

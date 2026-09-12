@@ -13,14 +13,15 @@
   "Can be dominated by a few fast players"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "shared puzzle board, robots block each other",
-  "detail": "All robots sit on one shared board and every player is solving the same puzzle simultaneously in real time. The core mechanic is that a moving robot only stops when it hits a wall or another player's robot, so opponents' pieces directly shape what routes are possible.",
+  "level": "Medium",
+  "kind": "simultaneous real-time competition to solve the same shared puzzle first",
+  "detail": "All players stare at the same board and robot positions and race to be the first to call out a valid solution in the fewest moves, so the core tension is direct competition over one shared puzzle state. However, no player's move changes another's options mid-puzzle the way blocking or attacking would — it's a shared target everyone is independently trying to crack fastest.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "often called a 'real-time puzzle race' where everyone shouts out solutions to beat each other to the fewest moves"
  },
  "scoring": {
   "subsystems": [

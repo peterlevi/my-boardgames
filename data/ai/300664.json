@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "economic competition through a shared market",
-  "detail": "As in its parent game, each player develops their own factories from their own hand of cards, while a shared market for selling goods and a shared pool of available upgrade cards create indirect competition. Selling into the same market or taking an improvement card before someone else can suppress prices or opportunities for rivals, but no one acts directly on another player's factories.",
+  "kind": "same shared market-price mechanic as Arkwright, in lighter card-game form",
+  "detail": "As in the full board game, selling goods depresses that good's market price for all players, so timing and volume choices ripple across the table, and cards/upgrades are drafted from a shared, dwindling supply. Most turns are still about managing your own hand and factories rather than direct confrontation.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — I don't have confident recall of specific recurring player phrases for this title"
  },
  "scoring": {
   "subsystems": [

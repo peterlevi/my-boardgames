@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "card drafting plus open warfare",
-  "detail": "Each player develops their own civilization board, but civil, military and action cards are drafted from shared face-up rows, so taking a card denies it to opponents. Military strength is also compared directly and can be used to wage war, causing culture loss and aggression against a specific rival.",
+  "kind": "direct card drafting against each other plus military aggression and action-denial",
+  "detail": "Cards are drafted via a shared, dwindling market where taking one directly denies it to opponents, and military strength lets you pillage resources, force civil wars, or tie up an opponent's actions, so a good move is frequently chosen specifically to hurt someone else. Very little of the state is purely internal — even peaceful strategies must constantly react to what rivals are building toward.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "widely called \"cutthroat\", \"brutal\", \"take-that\", with reviewers warning the military and civil-action war can wreck an opponent's civilization outright"
  },
  "scoring": {
   "subsystems": [

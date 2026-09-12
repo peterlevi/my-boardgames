@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "guessing and voting on shared clues",
-  "detail": "One player's card and clue are shared with the whole table each round, and every other player votes by choosing which submitted card matches that clue. Scoring depends on how well players' guesses converge or diverge, but there is no shared board, pool, or direct action against another player's assets.",
+  "kind": "crafting a clue aimed at your fellow guessers while voting on everyone else's submitted cards",
+  "detail": "The storyteller's clue must be judged against decoys other players contribute, and everyone's guess directly determines another player's score, so each round is a shared judgment exercise rather than parallel play. There's no private board or resource track; the entire game state is the shared table of cards and votes, though there is no blocking or denial of resources.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — falls back on the game's targeted-clue and voting mechanics"
  },
  "scoring": {
   "subsystems": [

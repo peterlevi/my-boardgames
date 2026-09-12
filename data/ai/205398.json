@@ -14,14 +14,15 @@
   "Can run long with more experienced/cutthroat players"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "hidden-role drafting with occasional direct attacks",
-  "detail": "Each player privately builds their own city from a personal hand of building cards, but every round players draft from a shared pool of character roles, so choosing one denies it to everyone else. Certain characters (Thief, Warlord, Assassin) let a player directly steal gold from, destroy a building of, or entirely skip an opponent.",
+  "level": "High",
+  "kind": "role abilities that steal gold, skip a turn, or destroy an opponent's building",
+  "detail": "Choosing a character is as much about denying a rival's plan as advancing your own, since Assassin/Thief/Warlord exist purely to target another player's resources or buildings. Much of the tension comes from guessing who picked which role so you can hit the right target.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "regularly called \"cutthroat\" and \"take-that\" thanks to the Assassin, Thief, and Warlord roles that let one player wreck another's turn or building"
  },
  "scoring": {
   "subsystems": [

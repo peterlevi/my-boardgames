@@ -12,14 +12,15 @@
   "Can feel solitaire-ish with little direct interaction"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker placement with building competition, mostly parallel play",
-  "detail": "Each player develops their own island of land tiles and buildings, so the productive infrastructure is entirely personal. Interaction comes from worker-placement spaces (including certain buildings) that only one player can use per round, and from unique buildings that can only be built once, denying them to everyone else.",
+  "level": "Medium",
+  "kind": "racing to claim limited building tiles from a shared supply",
+  "detail": "Each player runs their own engine on their own board, but many building types exist in limited copies in a shared pool, so building one before an opponent denies them that option. Beyond that scarcity race, there is no direct attack, blocking of opponents' boards, or negotiation — most of the turn is spent optimizing your own tableau.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Commonly described alongside Rosenberg's other 'farming' games as largely solitaire-ish, but with a recurring note that the shared pool of building tiles creates a race — 'grab the good buildings before someone else does' rather than direct confrontation."
  },
  "scoring": {
   "subsystems": [

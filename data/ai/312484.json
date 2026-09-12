@@ -14,14 +14,15 @@
   "some randomness in which cards/sites are available"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "worker placement and card drafting on a shared island",
-  "detail": "All players place workers on the same island board of locations, and a location can only be used once per round, so occupying it denies that action to others; a shared market row of cards is also drafted from by everyone. Each player otherwise builds their own deck and resource engine privately, with no direct attacks on opponents.",
+  "level": "Low",
+  "kind": "mostly parallel deck-building and exploration; the only shared elements are a market row and action spaces that can be co-occupied for a resource cost",
+  "detail": "Each player runs their own deck/board of resources and expedition track, and the ability to place on an occupied space (by paying extra) removes most of the blocking bite worker placement usually has. The shared market card row and end-game majority scoring are watched more than fought over.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "commonly described as \"basically solitaire with a shared timer\" and \"very light interaction for a worker placement game\" — action spaces can be shared for a fee rather than truly blocked"
  },
  "scoring": {
   "subsystems": [

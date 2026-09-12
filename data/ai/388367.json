@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "tableau building with shared card supply and direct effects",
-  "detail": "This is the same core Innovation engine (plus its expansions): private per-player tableaus fed by shared age piles, where drawing a card can deny it to the rest of the table. Many dogma effects reach across the table to directly affect an opponent's cards or resources.",
+  "kind": "dogma effects that force opponents to hand over cards, splay their piles, or share icon effects, across an expanded set of ages/expansions",
+  "detail": "This is the full Innovation system (base game plus all five expansions), so the same demand/share dogma effects that let one player force cards, discards, or actions onto another remain the core engine. The added expansions layer in more direct-conflict tools rather than diluting them, keeping tableaus constantly exposed to opponents' turns.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "same reputation as base Innovation — 'chaotic', 'take-that', frequently called brutal for how directly dogma effects hit opponents"
  },
  "scoring": {
   "subsystems": [

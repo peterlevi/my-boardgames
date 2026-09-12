@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "physical positioning and direct attacks on a shared train",
-  "detail": "All bandits move around the same train cars and can punch, shoot, or steal loot directly from whichever other bandit occupies that space. Nearly the whole game state — the train, the loot tokens, the bullet supply — is shared rather than owned by an individual player.",
+  "kind": "programmed movement collisions plus direct attacks (punching, shooting, stealing loot) on the same train cars",
+  "detail": "Players queue actions blind, then watch them resolve simultaneously on a shared train, so you are constantly punching bandits off cars, shooting people in other cars, and stealing the exact loot someone else was going for. Almost the entire game is one shared, contested space (the train), not separate boards.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"take that\", \"chaotic\", \"more fun than it has any right to be because everyone's plans fall apart\" — regularly praised for how much bandits punch, shoot, and steal from each other"
  },
  "scoring": {
   "subsystems": [

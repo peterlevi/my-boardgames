@@ -12,14 +12,15 @@
   "some find the tile abstraction thematically thin"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "drafting from a shared supply onto private boards",
-  "detail": "Tiles are drawn to a shared display track and players pick from it based on dice results, so taking a tile you need denies it to opponents scrambling for the same spot. Each player then places their chosen tiles onto their own separate principality board, so the shared element is limited to the supply, not the building area itself.",
+  "level": "Medium",
+  "kind": "racing to grab the tile you need from a shared display before an opponent does",
+  "detail": "Tiles and goods are drawn to a shared central display, and turn order (set by dice rolled each round) determines who gets first pick, so denying a rival their ideal tile is a real, recurring tactic. Still, the bulk of each turn is spent placing tiles into your own private princedom board rather than acting directly on anyone else's position.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

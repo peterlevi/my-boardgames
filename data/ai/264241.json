@@ -12,14 +12,15 @@
   "niche appeal mostly to fans of abstract two-player duels"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "shared build with a common draw pool",
-  "detail": "Both players play cards into two shared central mandalas that they build together, then take turns drawing from that common mountain into their own private river and cup. Choosing a color for yourself removes it from what the opponent can take, so the shared mandala functions as both a shared building space and a contested shared pool.",
+  "level": "High",
+  "kind": "both players build the same shared mandala boards, then take turns choosing which colors from the shared mountain each of you gets",
+  "detail": "Cards are played into shared central mandalas that both players build together, and once a mandala is complete players alternately pick colors from it — every color one player takes is one the other cannot have, directly affecting final set values. There is a small private river/cup, but the core scoring resource is the shared, contested mandala.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — falling back to mechanics"
  },
  "scoring": {
   "subsystems": [

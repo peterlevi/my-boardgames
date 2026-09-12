@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "tile placement triggering forced mergers",
-  "detail": "All tiles are placed onto one shared grid that forms the hotel chains, so a placement can trigger a merger that forcibly absorbs an opponent's chain and its board presence. Stock in each chain is bought from a single shared bank supply available to everyone, and merger payouts are determined by who holds the most shares in the absorbed company.",
+  "kind": "forcing mergers between shared hotel chains that pay out (or wipe out) other players' stock holdings",
+  "detail": "Tiles are placed on a single shared board, and when chains merge, majority/minority shareholders are paid out while the loser's stock can become worthless — a decision explicitly aimed at benefiting yourself by hurting specific opponents' holdings. Most of the tension comes from timing placements to trigger mergers favorably against particular rivals, not from independent development.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "A classic often called 'cutthroat' for its hostile-takeover mergers — players talk about timing a merger to wipe out a rival's majority position or to trigger a takeover that benefits you at someone else's expense."
  },
  "scoring": {
   "subsystems": [

@@ -14,14 +14,15 @@
   "shuffling/sleeving overhead between games"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "card drafting with take-that attacks",
-  "detail": "Each civilization builds its own personal deck and tableau, but cards are drafted from a shared market row where taking one denies it to the rest of the table. War and conflict cards let a player directly damage or set back an opponent's civilization rather than only building up their own.",
+  "level": "Low",
+  "kind": "occasional raid actions that let you steal cards or resources from an opponent's tableau",
+  "detail": "Each player mostly develops their own deck and civilization independently, choosing cards from a shared drafting row; direct conflict only surfaces through specific raid cards that let a militarily stronger player pillage another's discard or hand. The shared draft row is the main point of contact, but the bulk of play is parallel deck-building on your own tableau.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "often described as feeling closer to multiplayer solitaire than the 'Take That' tag suggests, with occasional raid/attack cards providing the only direct friction"
  },
  "scoring": {
   "subsystems": [

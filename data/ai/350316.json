@@ -14,14 +14,15 @@
   "mechanically similar to the designers' other games, so less novel for series fans"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker placement race with a shared draft",
-  "detail": "Each player fills in their own personal map of the South Tigris, but they compete for the same limited worker-placement spots and draft tiles/cards from shared common rows, so taking a spot or a tile can deny it to an opponent. The core building happens on individual player boards rather than a communal one.",
+  "level": "Medium",
+  "kind": "competing for limited worker-placement action spots and area majority on shared modular map tiles",
+  "detail": "Players place dice-workers on a shared action board where spots can be taken before you get to them, and they compete for area-majority control on the modular exploration tiles. Still, a large portion of each turn is spent advancing your own caravan and journal track independent of what others do.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — Garphill/Shem Phillips games are generally noted for being fairly parallel with some competitive edge over shared worker spots and map tiles rather than being described as mean or cutthroat"
  },
  "scoring": {
   "subsystems": [

@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "route blocking and stock manipulation",
-  "detail": "Corporations lay track and place stations on one common map, so tile and station placement regularly blocks rival corporations from the best routes and hexes. Ownership is resolved through a shared stock market where all players buy and sell shares in the same set of public companies, and the majority holder directs a company's operations for everyone invested in it.",
+  "kind": "auctioning/bidding for corporations, blocking hexes on a compact shared map, and share manipulation",
+  "detail": "The compact Midwest map means track-laying and route claims collide constantly, and the private-company auction plus stock rounds put players in direct competition over the same companies. As in other 18xx games, presidents can make choices (train buys, dividends) that directly benefit or hurt fellow shareholders.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "1846 is frequently cited as one of the more aggressive, tightly-fought 18xx titles — 'brutal', 'you will get blocked', with a reputation for a smaller map that forces direct confrontation over corporations and routes."
  },
  "scoring": {
   "subsystems": [

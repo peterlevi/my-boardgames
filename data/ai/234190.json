@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "take-that card game",
-  "detail": "Each player builds their own unicorn army in front of them, but everyone draws from and discards to shared piles, and Neigh and downgrade cards let players destroy or disable cards directly in an opponent's army. Interaction is driven almost entirely by these targeted attack cards rather than by contesting any shared board.",
+  "kind": "take-that attacks and stealing/destroying opponents' unicorns",
+  "detail": "Neigh, downgrade, and attack cards let players directly destroy or steal cards from an opponent's unicorn stable, and racing to seven unicorns means blocking the leader is often the correct play. Each player has their own stable, but it is constantly raided by everyone else's hand.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "marketed and reviewed as a 'betray your friends' take-that game; players describe it as 'mean', 'chaotic', and 'cutthroat for a cute theme'"
  },
  "scoring": {
   "subsystems": [

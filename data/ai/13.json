@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open board conflict with trading and blocking",
-  "detail": "All settlements, roads, and cities are built on one shared hex map, so placement spacing rules and road routes actively block opponents from expanding into the same areas. The robber and certain development cards let a player directly steal resources or cards from an opponent, and players freely trade resources with each other, making negotiation a core mechanic.",
+  "kind": "trading resources with opponents and blocking/stealing via the robber",
+  "detail": "Players constantly negotiate trades with each other, and rolling a 7 lets you place the robber to shut down a rival's best hex and steal a card straight from their hand, both aimed squarely at other players. The shared board, shared dice production, and open trading mean a large share of every turn is about what it does to (or for) someone else.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": true
+  "negotiation": true,
+  "said": "Catan's reputation centers on trading, the robber, and 'that guy who won't trade with you' — commonly described as a game built around negotiation, blocking, and occasionally 'brutal' robber placement that can cripple a leader."
  },
  "scoring": {
   "subsystems": [

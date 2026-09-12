@@ -12,14 +12,19 @@
   "can feel like solitaire with occasional bumps"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "shared board with competitive drafting",
-  "detail": "Players place onto one shared 109-space board covering production, houses, trade, and harbor, competing for area majority in these common zones. They also draft from a shared row of workshop cards, where taking one denies it to opponents, so both the board presence and the card supply are contested shared resources.",
+  "level": "Medium",
+  "kind": "drafting from a shared board row plus end-game area-majority scoring at a few shared locations",
+  "detail": "Players draft available action spaces and goods from a shared 109-space board, and the harbor/houses areas reward majority presence, so there is real competition over timing and taking spots before rivals do. Even so, most of a turn is spent advancing your own production chain and personal tableau, matching Knizia's typical 'compete over shared spaces, otherwise optimize alone' pattern.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/thread/3403271/impressions-of-mille-fiori-and-how-to-design-an-in",
+   "https://www.meeplemountain.com/reviews/mille-fiori/"
+  ],
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

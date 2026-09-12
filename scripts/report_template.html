@@ -218,6 +218,8 @@ th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
 .colhead { margin:6px 8px 3px; font-size:.64rem; text-transform:uppercase;
   letter-spacing:.06em; color:var(--muted); }
 .colhead:first-child { margin-top:2px; }
+/* A second heading inside the same column needs air above it. */
+.colhead2 { margin-top:12px; }
 
 .tagbox { max-height:208px; overflow-y:auto; margin-top:8px;
   border:1px solid var(--line); border-radius:8px; background:var(--panel);
@@ -420,6 +422,14 @@ mark { background:var(--hit); color:inherit; font-weight:700;
 .hex { display:inline-flex; align-items:center; justify-content:center;
   width:34px; aspect-ratio:0.86603; color:#fff; font-weight:700; font-size:.78rem;
   font-variant-numeric:tabular-nums; letter-spacing:-.02em;
+  /* Flex centring centres the line box, not the glyphs. The line box reserves
+     descender room below the baseline that digits never use, so their visual
+     centre lands about .08em above the middle of the hexagon — small, but
+     visible in a column of them. Padding on a border-box with a fixed
+     aspect-ratio shifts the content box by half the padding, so .2em of it
+     buys the ~.1em correction and scales with the font. Measured in the
+     browser rather than guessed: the ink sat 1.27px high at this size. */
+  box-sizing:border-box; padding-top:.2em;
   clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
 .hex.none { background:#9b9b9b; font-weight:600; }
 td.score { width:34px; padding-right:4px; }
@@ -435,6 +445,13 @@ td.score.mine-col { padding-right:9px; }
 .bar > .track > i.m4 { background:var(--m4); }
 .bar > .track > i.m3 { background:var(--m3); }
 .bar > .track > i.m2 { background:var(--m2); }
+/* Point salad ships as both the band and the raw percentage; one of them is
+   hidden. The percentage is a measured quantity, so it right-aligns and uses
+   tabular figures — a column of them should line up on the % sign. */
+.salpct { display:none; font-variant-numeric:tabular-nums; }
+:root.sal-pct .salband { display:none; }
+:root.sal-pct .salpct { display:inline; }
+:root.sal-pct .c-salad { text-align:right; }
 /* Weight runs the other way round: light is the easy end. */
 .bar > .track > i.wt1 { background:var(--m4); }
 .bar > .track > i.wt2 { background:var(--m3); }
@@ -574,7 +591,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .hide-s { display:none; }
 }
 /* Narrower still and the name column is down to a word or two, so Weight and
-   Interact go: both are one glance in the expanded row. */
+   Interaction go: both are one glance in the expanded row. */
 @media (max-width:860px) {
   .hide-xs { display:none; }
 }
@@ -616,7 +633,12 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
    so the table paints once, in its final shape. The server has already
    written the defaults there for anyone with scripts off. */
 (function () {
-  var KEY = 'bgg-cols-v5';
+  // MUST match COLKEY in the page script below. They drifted apart once
+  // (v5 here against v8 there) and the symptom is subtle: the head script
+  // silently finds nothing, so saved columns only appear after the body's
+  // script runs and the table visibly reflows — the very thing this block
+  // exists to prevent.
+  var KEY = 'bgg-cols-v8';
   var OFF_BY_DEFAULT = { y: 1, acq: 1, lp: 1, ed: 1, sc: 1, pp: 1 };
   var ALL = ['th', 'rk', 'av', 'my', 'y', 'ds', 'pl', 'tmax', 'w', 'ix',
              'acq', 'lp', 'ed', 'pp', 'win', 'sc', 'salad', 'verdict', 'rt'];
@@ -630,6 +652,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       if (c === 'mode-any') keep.push(c);
     });
     keep.push('gm-' + (saved.game || 'ds'));
+    if (saved.salad === 'pct') keep.push('sal-pct');
     ALL.forEach(function (k) {
       var on = saved.cols && typeof saved.cols[k] === 'boolean'
         ? saved.cols[k] : !OFF_BY_DEFAULT[k];
@@ -737,7 +760,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         count.</dd>
       <dt>Win condition</dt><dd>What actually decides the winner — most points,
         a race, elimination, and so on.</dd>
-      <dt>Point salad</dt><dd>How many different things earn you points:
+      <dt>Point salad</dt><dd>Shown as four bands by default, or as the
+        underlying 0-100 score — the columns menu switches between them, and
+        the filter always uses the bands. How many different things earn you
+        points:
         no — a sharp focus, just a touch, quite a lot, or a total point
         salad.</dd>
 
@@ -756,8 +782,12 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <b>Point salad</b>, along with the “What people say” notes in an
     expanded row, come from a local database built with Claude from what is
     known about each game (a few looked up on the web, marked where so). No
-    such data exists in BGG's API. Treat them as a rough sort, not fact; where
-    the database has nothing, Interact falls back to a rule over the game's
+    such data exists in BGG's API. <b>Interaction</b> is the phrase players
+    keep using about a game — “multiplayer solitaire”, “cutthroat”, “a race
+    you watch” — turned into a level; <b>Win condition</b> and <b>Point
+    salad</b> are computed from reported facts about how a game is scored, not
+    asked for directly. Treat them as a rough sort, not fact; where the
+    database has nothing, Interaction falls back to a rule over the game's
     mechanics.</p>
     <p>Click any row to expand it. Pills inside filter the table to that
     designer, mechanic or game — except games you do not own, which link out
@@ -866,6 +896,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
           Game, Designer</label>
         <label><input type="radio" name="gamemode" value="yeards">
           Game, Year, Designer</label>
+        <p class="colhead colhead2">Point salad</p>
+        <label><input type="radio" name="saladmode" value="band" checked>
+          Four bands</label>
+        <label><input type="radio" name="saladmode" value="pct">
+          Percentage</label>
         <p class="colfoot"><button type="button" class="link" id="colsreset"
           >Reset to default</button></p>
       </div>
@@ -1286,6 +1321,9 @@ function sortRows(rows) {
       }
       case 'sc': return (g.ai && g.ai.scn) || null;
       case 'salad': {
+        // Sort by the number while the column shows it; fall back to the
+        // band for any record that predates the score.
+        if (g.ai && typeof g.ai.brn === 'number') return g.ai.brn;
         var order = SALAD_ORDER.indexOf((g.ai && g.ai.br) || '');
         return order < 0 ? null : order;
       }
@@ -2127,8 +2165,10 @@ var COLUMNS = [
 var DEFAULT_ORDER = ['th', 'rk', 'rt', 'av', 'my', 'n', 'y', 'ds', 'pl', 'tmax',
   'w', 'ix', 'acq', 'lp', 'ed', 'pp', 'win', 'sc', 'salad', 'verdict',
   'bestPct', 'appr'];
+// MUST match KEY in the head script above.
 var COLKEY = 'bgg-cols-v8';
-var colState = {}, gameMode = 'ds', colOrder = DEFAULT_ORDER.slice();
+var colState = {}, gameMode = 'ds', saladMode = 'band',
+    colOrder = DEFAULT_ORDER.slice();
 
 function colDefaults() {
   var out = {};
@@ -2145,6 +2185,7 @@ function loadCols() {
         if (typeof saved.cols[c.k] === 'boolean') colState[c.k] = saved.cols[c.k];
       });
       if (saved.game) gameMode = saved.game;
+      if (saved.salad) saladMode = saved.salad;
       if (saved.order && saved.order.length) {
         // Keep only known keys, then append anything the saved order predates.
         var seen = {};
@@ -2162,7 +2203,8 @@ function loadCols() {
 function saveCols() {
   try {
     window.localStorage.setItem(COLKEY, JSON.stringify(
-      { cols: colState, game: gameMode, order: colOrder }));
+      { cols: colState, game: gameMode, salad: saladMode,
+        order: colOrder }));
   } catch (e) { /* nothing to do about it */ }
 }
 
@@ -2175,6 +2217,7 @@ function swallowedByGame(k) {
 
 function applyCols() {
   var cls = ['gm-' + gameMode];
+  if (saladMode === 'pct') cls.push('sal-pct');
   COLUMNS.forEach(function (c) {
     if (!colState[c.k] || swallowedByGame(c.k)) cls.push('off-' + c.k);
   });
@@ -2221,6 +2264,7 @@ function applyOrder() {
 function resetCols() {
   colState = colDefaults();
   gameMode = 'ds';
+  saladMode = 'band';
   colOrder = DEFAULT_ORDER.slice();
   saveCols();
   buildColList();
@@ -2241,6 +2285,8 @@ function buildColList() {
     }).join('');
   [].forEach.call(document.querySelectorAll('input[name="gamemode"]'),
     function (r) { r.checked = r.value === gameMode; });
+  [].forEach.call(document.querySelectorAll('input[name="saladmode"]'),
+    function (r) { r.checked = r.value === saladMode; });
 }
 
 /* Dragging a header to move its column. */
@@ -2314,6 +2360,15 @@ function buildColMenu() {
       r.addEventListener('change', function () {
         if (!r.checked) return;
         gameMode = r.value;
+        saveCols();
+        applyCols();
+      });
+    });
+  [].forEach.call(document.querySelectorAll('input[name="saladmode"]'),
+    function (r) {
+      r.addEventListener('change', function () {
+        if (!r.checked) return;
+        saladMode = r.value;
         saveCols();
         applyCols();
       });

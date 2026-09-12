@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared-map race with claims and tech trading",
-  "detail": "Every player's rockets explore and can claim mining or settlement sites on one shared map of the solar system, so a site taken by one player is generally unavailable to another, and patent/technology cards are bid on and traded from a shared market. Despite that shared board and negotiated trades, there is no combat or forced loss of an opponent's pieces in the core game.",
+  "kind": "auctioning for patent cards and racing to claim the same mining/water sites first",
+  "detail": "Players bid against each other for patent cards and can be locked out of a solar-system site if a rival claims and exploits it first, so there is real competition over a shared board of sites. But the bulk of play is single-player trajectory and rocket-building optimization on your own player area, which is why the game's reputation leans toward parallel play despite the auctions.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": true
+  "negotiation": true,
+  "said": "Frequently called a 'solo puzzle you happen to play with others' — reviewers emphasize the dense solitaire-style route/thrust optimization, with auctions and site claims as the main point of contact."
  },
  "scoring": {
   "subsystems": [
@@ -67,5 +68,15 @@
   "The Undead Viking"
  ],
  "_fingerprint": "9be61b34b2e19854",
- "_name": "High Frontier 4 All"
+ "_name": "High Frontier 4 All",
+ "theme": {
+  "said": "constantly described as 'the mechanics ARE the theme', 'you're literally doing orbital mechanics homework', 'the most simulation-accurate space game ever made'",
+  "why": "thrust cards are keyed to real propulsion technologies with actual specific-impulse and delta-v values, so plotting a burn from Earth to a real asteroid orbit only works if you understand real orbital mechanics",
+  "fit": 96
+ },
+ "style": {
+  "said": "heavy euro / economic simulation",
+  "why": "Players race an asymmetric-but-not-combative tech and trade economy with no direct conflict, letting a dense simulation of orbital mechanics decide outcomes.",
+  "style": 15
+ }
 }

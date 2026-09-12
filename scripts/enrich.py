@@ -60,6 +60,7 @@ import hashlib
 import json
 import shutil
 import subprocess
+import time
 import sys
 
 from common import ROOT, load_games
@@ -225,6 +226,15 @@ GAMES:
 """
 
 
+INTERACTION_WEB = """Search for each game before answering — BoardGameGeek \
+forum threads and reviews are the best source; the game name plus \
+"interaction", "multiplayer solitaire", "cutthroat" or "mean" finds the \
+argument quickly. Rate what players actually report, not what the box \
+suggests, and add "checked": ["url", ...] to every entry naming the pages you
+read.
+
+"""
+
 RESCORE_WEB = """Look each game's rules up on the web before answering — \
 BoardGameGeek's page, the rulebook, a review that states the numbers. Do not \
 answer the ending or the winning score from memory. Add "checked": ["url", \
@@ -323,30 +333,181 @@ GAMES:
 """
 
 
-INTERACTION = """For each game below, report how players actually affect each \
-other — as facts, not as a rating. Answer ONLY with a JSON object mapping each \
-id to:
+THEME = """For each game below, judge how tightly its mechanics fit its \
+theme — whether the rules model the subject, or whether the subject is a \
+label on a structure that could have been about anything.
+
+The question is ONLY about the rules. It is not about whether the theme is \
+serious, beautiful, well produced, or heavily written. A silly or joke theme \
+can fit its mechanics perfectly; a lavish, lore-heavy production can be a \
+generic engine underneath. Judge what the rules do.
+
+The test that settles it: would somebody who knows the real subject recognise \
+the rules as a model of it, and be able to predict what they do? If yes, the \
+fit is high, however daft the setting. If the rules would work unchanged with \
+every noun replaced, the fit is low, however rich the setting.
+
+Work in this order, and do not pick the number until the last step.
+
+1. "said": what do experienced players say about this game's theme, in their \
+words — "pasted-on theme", "could be about anything", "abstract with a skin", \
+"the theme drips off it", "the mechanics ARE the theme"? Report the phrases, \
+but weigh them carefully, because players use "pasted on" loosely: very often \
+they mean the theme is thin, silly or unserious, which is a comment about \
+tone, not about mechanical fit. Only count such a phrase as evidence when it \
+is plainly about the RULES not matching the subject. If you do not know the \
+game's reputation, begin this field with "unknown".
+2. "why": one sentence naming the clearest rule either way — a rule that only \
+makes sense because of the subject, or a rule that plainly does not care what \
+the subject is.
+3. "fit": an integer 0-100. Use the whole range; do not round to tens.
+
+  0-20   the theme is a coat of paint. Renaming every component would cost \
+the game nothing. Most abstracts and many classic euros live here: an \
+area-majority game where the regions could be anything, a network game where \
+the goods could be anything.
+  21-40  evocative but decorative: the subject suggests the components and \
+the art, not the rules.
+  41-60  some rules clearly come from the subject; others are generic \
+scaffolding bolted alongside them.
+  61-80  most rules are recognisably about the subject, and knowing the \
+subject helps you play.
+  81-100 the mechanics could not be about anything else. The rules simulate \
+the subject closely enough that understanding the subject teaches you the \
+game.
+
+Two worked examples of the distinction, to calibrate against. A game about \
+running fast-food chains where you hire and train staff, where marketing \
+creates demand in specific neighbourhoods, where you undercut rivals on price \
+and must pay every employee's wage whether or not they produced anything, is \
+a HIGH fit — that is how the business actually works, and the cartoon art \
+does not change it. A game about medieval merchants whose rules are a pure \
+network-and-majority puzzle, where the goods and cities are interchangeable \
+counters, is a LOW fit however historical the setting.
+
+Answer ONLY with a JSON object mapping each id to:
+{{
+  "theme": {{
+    "said": "the recurring phrases, or unknown",
+    "why": "one sentence",
+    "fit": 0-100
+  }}
+}}
+
+GAMES:
+"""
+
+
+STYLE = """For each game below, place it on the euro-to-ameritrash axis that \
+players argue about.
+
+Work in this order, and do not pick the number until the last step.
+
+1. "said": how does the community actually describe this game — "classic \
+euro", "point salad euro", "euro-game", "ameritrash", "dudes on a map", \
+"thematic game", "euro-trash hybrid", "war game"? If you do not know, begin \
+with "unknown" and reason from the rules below.
+2. "why": one sentence naming the features that place it — the things that \
+actually decide this are direct conflict, how much randomness resolves \
+important moments, whether players can be eliminated or badly damaged by \
+others, whether powers are asymmetric, and whether the rules serve a story or \
+an economy.
+3. "style": an integer 0-100.
+
+  0-20   pure euro: no direct conflict, little or no luck after setup, \
+indirect competition through shared markets and actions, everyone symmetric, \
+the game ends on a fixed trigger and points decide it.
+  21-40  euro with an edge: blocking, a shared map, or modest randomness, but \
+still an economy first.
+  41-60  genuine hybrid: a euro economy carrying real conflict or real \
+swings, or a thematic game with tight euro scaffolding.
+  61-80  ameri-leaning: direct attacks, dice or cards resolving key moments, \
+asymmetric powers, a narrative arc.
+  81-100 full ameritrash: player elimination or crushing attacks, big \
+randomness, miniatures and story, the experience matters more than the \
+optimisation.
+
+Do not use weight, length or table size as evidence — heavy does not mean \
+euro, long does not mean ameritrash.
+
+Answer ONLY with a JSON object mapping each id to:
+{{
+  "style": {{
+    "said": "the recurring phrases, or unknown",
+    "why": "one sentence",
+    "style": 0-100
+  }}
+}}
+
+GAMES:
+"""
+
+
+# Interaction is the one axis where asking for a label works, but only if the
+# evidence is demanded first. Four schemes were scored against the owner's own
+# calls for 26 games (tests/interaction_calls.txt, scripts/check_interaction.py):
+# a calibrated judgement 21/26, "what does the community say" 21/26, a web
+# search with citations 21/26 at ten times the price, and this one — say what
+# players call the game, then name the mechanism, then commit to a level —
+# 22/26 for the same ~$0.013 a game. Ordering is the whole difference: asked
+# for a level first, the model reasons from weight and table presence and rates
+# every heavy euro High. Asked for the phrase first, it reaches for
+# "multiplayer solitaire" or "cutthroat", and the phrase is usually right.
+#
+# The remaining misses are not really errors. They are the games where the
+# quoted phrase is genuinely the community's and the owner disagrees with it:
+# everyone calls Scythe and Patchwork multiplayer solitaire except him. No
+# amount of grounding fixes that, which is why the web pass bought nothing.
+INTERACTION = """For each game below, rate how much the players' games \
+touch each other in practice — how often what one player does changes what \
+another can do or score.
+
+Work in this order, and do not decide the level until the last step. What \
+players SAY about a game is the evidence; the mechanics are only the fallback \
+when nobody has said anything.
+
+1. "said": what do experienced players actually say about interaction in this \
+game, in their words? Quote the phrases that recur in reviews and forum \
+threads — "multiplayer solitaire", "cutthroat", "take-that", "you can't \
+really stop anyone", "brutal blocking", "a race you watch", "mean". When the \
+recurring praise or complaint is specifically about interaction, that is the \
+strongest evidence there is. If you do not know the game's reputation, begin \
+this field with "unknown" and fall back on the mechanics listed below.
+2. "kind": the one thing through which players most affect each other, in a \
+few words — e.g. bidding against each other, blocking spots on a shared map, \
+mostly parallel engine building.
+3. "level": Low, Medium or High, following what you wrote above.
+
+  High — players routinely and directly affect each other: bidding against \
+each other in an auction, taking the exact thing an opponent needed, \
+attacking, blocking a key spot, fighting over the same space, negotiating. A \
+game where a good move is often chosen BECAUSE of what it denies someone \
+else. Games players call "cutthroat" or "mean" belong here.
+  Medium — real competition over shared things (a common market, limited \
+action spaces, area majorities), but most of a turn is spent building your \
+own position.
+  Low — you mostly play your own game on your own board; the shared parts are \
+a refilling market or a race you watch rather than fight over. Games players \
+call "multiplayer solitaire" belong here.
+
+Two traps, and they pull in opposite directions. A heavy euro sprawling over \
+a big shared map is often Low despite its table presence, because the players \
+are optimising in parallel and the map is scenery. An auction or trick-taking \
+game with no board at all is High, because every bid is aimed at an opponent. \
+Weight, table size, playing time and theme are not evidence. A war theme \
+whose armies rarely meet is not High.
+
+Answer ONLY with a JSON object mapping each id to:
 {{
   "interaction": {{
-    "shared_space": true when everyone's pieces go onto one shared board, map \
-or tableau, rather than each player building on their own;
-    "blocking": true when taking something can deny it to an opponent — a \
-space, a route, a tile, a card someone else wanted;
-    "direct_attack": true when you can act ON an opponent: damage, steal, \
-capture, force a discard, remove their pieces;
-    "shared_pool": true when there is a common market, row or supply everyone \
-draws from;
-    "negotiation": true when players make deals, trade or form alliances;
-    "kind": "a few words, e.g. blocking and area denial, open conflict, \
-trading and negotiation, mostly parallel play",
+    "said": "the recurring phrases players use, or unknown",
+    "kind": "a few words on what the interaction is",
+    "level": "Low" | "Medium" | "High",
     "detail": "two or three sentences: through what actions players actually \
 affect each other, and how much of the game state is shared versus each \
 player's own board"
   }}
 }}
-
-Judge the game as it is played, not as it is marketed. A shared board that \
-everyone places onto is shared_space even when the scoring is individual.
 
 GAMES:
 """
@@ -376,7 +537,34 @@ def fingerprint(g):
     return hashlib.sha256(basis.encode()).hexdigest()[:16]
 
 
-def ask(prompt, model, online=False):
+def _extract(text):
+    """The model's answer as a dict, tolerating the wrappers it sometimes adds.
+
+    Three of them show up in practice: a ```json fence, a sentence of preamble
+    before the object, and a trailing "Let me know if..." after it. Slicing
+    from the first brace to the last is enough for all three, and is still
+    strict about what is between them.
+    """
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.split("\n", 1)[1].rsplit("```", 1)[0]
+    start, end = text.find("{"), text.rfind("}")
+    if start < 0 or end < start:
+        raise ValueError("no JSON object in answer: %r" % text[:200])
+    return json.loads(text[start:end + 1])
+
+
+def ask(prompt, model, online=False, tries=3):
+    """One `claude` call, retried when the answer comes back unusable.
+
+    Empty answers are not rare enough to ignore: a full-collection pass
+    measured 25 of 242 batches returning an empty `result`, which the caller
+    used to report as a failed batch and skip. Skipping is the worst outcome
+    available, because --force then silently leaves those games on whatever an
+    earlier, differently-prompted pass had said, and the database quietly
+    becomes a mixture of schemes. A retry costs one more call and fixes almost
+    all of them.
+    """
     cmd = ["claude", "-p", prompt, "--output-format", "json", "--model", model]
     if online:
         cmd += ["--allowedTools", "WebSearch", "WebFetch",
@@ -385,29 +573,110 @@ def ask(prompt, model, online=False):
                 # read the web.
                 "--disallowedTools", "Bash", "Write", "Edit", "NotebookEdit",
                 "--permission-mode", "bypassPermissions"]
-    # Without an explicit /dev/null the CLI waits on stdin and then warns
-    # about it, which lands in the output and breaks the JSON parse.
-    r = subprocess.run(cmd, capture_output=True, text=True,
-                       stdin=subprocess.DEVNULL,
-                       timeout=600 if online else 240)
-    if r.returncode != 0:
-        raise RuntimeError((r.stderr or r.stdout)[-300:])
-    envelope = json.loads(r.stdout)
-    cost = envelope.get("total_cost_usd")
-    if isinstance(cost, (int, float)):
-        SPEND.append(cost)
-    text = envelope.get("result", "").strip()
-    if text.startswith("```"):
-        text = text.split("\n", 1)[1].rsplit("```", 1)[0]
-    return json.loads(text)
+    last = None
+    for attempt in range(tries):
+        if attempt:
+            time.sleep(2 ** attempt)
+        # Without an explicit /dev/null the CLI waits on stdin and then warns
+        # about it, which lands in the output and breaks the JSON parse.
+        r = subprocess.run(cmd, capture_output=True, text=True,
+                           stdin=subprocess.DEVNULL,
+                           timeout=600 if online else 240)
+        if r.returncode != 0:
+            last = RuntimeError((r.stderr or r.stdout)[-300:])
+            continue
+        try:
+            envelope = json.loads(r.stdout)
+        except ValueError as e:
+            last = e
+            continue
+        cost = envelope.get("total_cost_usd")
+        if isinstance(cost, (int, float)):
+            SPEND.append(cost)
+        # An error envelope carries its reason in `result` — "Not logged in",
+        # a usage limit — and retrying an empty one is pointless noise.
+        if envelope.get("is_error"):
+            raise RuntimeError(str(envelope.get("result"))[:200])
+        try:
+            return _extract(envelope.get("result") or "")
+        except ValueError as e:
+            last = e
+    raise last or RuntimeError("no answer")
+
+# Fields graded on an ordered scale, so several samples can be reduced to
+# their median rather than to whichever answer happened to come back first.
+VOTED = {"level": ["Low", "Medium", "High"]}
+# The same idea for fields that are already numbers. These need it more than
+# the labels do: three samples of the 0-100 theme fit move by a median of 7
+# points and by as much as 27 on a contested game, so a single sample is a
+# draw rather than a reading.
+VOTED_NUM = ("fit", "style", "score")
+
+
+def sample(prompt, model, online, samples):
+    """One answer, or the per-field majority of several.
+
+    Interaction labels flap: run the same prompt over the same 26 games three
+    times and 6 to 11 of them come back different at least once, because the
+    call is genuinely close for a lot of games. Scoring against the owner's
+    own judgements, one sample lands at 22/26 and the median of three at
+    23/26 — a point of accuracy, but mostly a lot less churn in a file that
+    gets committed and published. It costs three times as much, so it is
+    opt-in; the answers are cached per game either way, so a collection pays
+    for it once.
+    """
+    answers = [ask(prompt, model, online=online) for _ in range(samples)]
+    if len(answers) == 1:
+        return answers[0]
+    merged = {}
+    for key in answers[0]:
+        entries = [a[key] for a in answers if isinstance(a.get(key), dict)]
+        if not entries:
+            continue
+        # The first answer supplies the prose; only the graded fields are
+        # voted on, and a tie falls back to the first answer's value.
+        out = dict(entries[0])
+        for field in VOTED_NUM:
+            for holder in ([out] if field in out else
+                           [v for v in out.values() if isinstance(v, dict)
+                            and field in v]):
+                seen = []
+                for e in entries:
+                    box = e if field in e else next(
+                        (v for v in e.values()
+                         if isinstance(v, dict) and field in v), {})
+                    val = box.get(field)
+                    if isinstance(val, (int, float)):
+                        seen.append(val)
+                if seen:
+                    holder[field] = int(round(sorted(seen)[len(seen) // 2]))
+        for field, order in VOTED.items():
+            for holder in ([out] if field in out else
+                           [v for v in out.values() if isinstance(v, dict)
+                            and field in v]):
+                seen = []
+                for e in entries:
+                    box = e if field in e else next(
+                        (v for v in e.values()
+                         if isinstance(v, dict) and field in v), {})
+                    val = box.get(field)
+                    if val in order:
+                        seen.append(order.index(val))
+                if seen:
+                    holder[field] = order[sorted(seen)[len(seen) // 2]]
+        merged[key] = out
+    return merged
 
 
 def process(batch, model, describe=False, online=False, rescore=False,
-            endings=False, sources=False, scores=False, interaction=False):
+            endings=False, sources=False, scores=False, interaction=False,
+            theme=False, style=False, samples=1):
     # --rescore --online asks only for the scoring facts, but with the web
     # open: the rules of a game are written down somewhere, and a fact the
     # model half-remembers is exactly the case worth looking up.
-    header = (INTERACTION if interaction
+    header = (THEME if theme
+              else STYLE if style
+              else (INTERACTION_WEB if online else "") + INTERACTION if interaction
               else SCORES if scores
               else SOURCES if sources
               else ENDINGS if endings
@@ -415,7 +684,7 @@ def process(batch, model, describe=False, online=False, rescore=False,
               if rescore
               else ONLINE.format(rule=FACTS_BRIEF) if online
               else DESCRIBE if describe else None)
-    answers = ask(prompt_for(batch, header), model, online=online)
+    answers = sample(prompt_for(batch, header), model, online, samples)
     written = []
     for g in batch:
         data = answers.get(str(g["id"])) or answers.get(g["id"])
@@ -423,7 +692,15 @@ def process(batch, model, describe=False, online=False, rescore=False,
             continue
         if online:
             data["source"] = "web"
-        if interaction:
+        if theme or style:
+            # Only the new axis is written; nothing else in the record moves.
+            key = "theme" if theme else "style"
+            existing = json.loads((AI / f'{g["id"]}.json').read_text())
+            got = data.get(key)
+            if got:
+                existing.setdefault(key, {}).update(got)
+            data = existing
+        elif interaction:
             # Only the interaction facts are rewritten; the level itself is
             # computed from them at render time.
             existing = json.loads((AI / f'{g["id"]}.json').read_text())
@@ -493,6 +770,9 @@ def main():
     ap.add_argument("--batch", type=int, default=8,
                     help="games per claude call (CLI startup dominates)")
     ap.add_argument("--model", default="claude-sonnet-5")
+    ap.add_argument("--samples", type=int, default=1, metavar="N",
+                    help="ask N times and keep the median of the graded "
+                         "fields; steadier labels for N times the money")
     ap.add_argument("--describe", action="store_true",
                     help="second pass over low-confidence entries")
     ap.add_argument("--online", action="store_true",
@@ -500,6 +780,10 @@ def main():
     ap.add_argument("--only", metavar="IDS",
                     help="comma-separated game ids, for retrying the handful "
                          "a failed batch left behind")
+    ap.add_argument("--theme", action="store_true",
+                    help="re-ask only how tightly mechanics fit the theme")
+    ap.add_argument("--style", action="store_true",
+                    help="re-ask only where a game sits on euro-ameritrash")
     ap.add_argument("--interaction", action="store_true",
                     help="re-ask only how players affect each other")
     ap.add_argument("--scores", action="store_true",
@@ -529,7 +813,8 @@ def main():
         if only and str(g["id"]) not in only:
             continue
         cached = AI / f'{g["id"]}.json'
-        if a.endings or a.sources or a.scores or a.interaction:
+        if (a.endings or a.sources or a.scores or a.interaction
+                or a.theme or a.style):
             if not cached.exists():
                 continue
             try:
@@ -543,9 +828,19 @@ def main():
                 continue
             if a.scores and "score_range" in facts and not a.force:
                 continue
+            if (a.theme or a.style) and not a.force:
+                key = "theme" if a.theme else "style"
+                field = "fit" if a.theme else "style"
+                rec = json.loads(cached.read_text()).get(key) or {}
+                if isinstance(rec.get(field), (int, float)):
+                    continue
             if a.interaction and not a.force:
                 ix = json.loads(cached.read_text()).get("interaction") or {}
-                if "shared_space" in ix:
+                # "said" is what the current pass writes. Records from the
+                # earlier schemes carry a level without it, and those are
+                # exactly the ones worth re-asking, so the skip has to key on
+                # the new field rather than on merely having a level.
+                if ix.get("said"):
                     continue
             todo.append(g)
             continue
@@ -601,7 +896,8 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=a.jobs) as pool:
         futures = {pool.submit(process, b, a.model, a.describe,
                                a.online, a.rescore, a.endings,
-                               a.sources, a.scores, a.interaction): b
+                               a.sources, a.scores, a.interaction,
+                               a.theme, a.style, a.samples): b
                    for b in batches}
         for f in concurrent.futures.as_completed(futures):
             batch = futures[f]

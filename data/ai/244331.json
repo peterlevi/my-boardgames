@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area control and resource denial on one board",
-  "detail": "Every settler and village token is placed onto a single shared hex map, and since resources and adjacency spots are limited, taking a tile or connection can directly deny it to an opponent. There is no common market and no way to act directly on another player's pieces.",
+  "kind": "area-majority contests over shared island resources and blocking expansion paths",
+  "detail": "Players place settlers/villages that must connect to the shared lagoon or their own network, and scoring is won by claiming majority on specific resource tiles and islands, so placements are often chosen to deny an opponent a majority or a connection route. Still, most of a turn is your own token placement rather than a direct clash, so the board is shared territory to be contested rather than fought over move-by-move.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recurring reputation recalled; falling back on mechanics"
  },
  "scoring": {
   "subsystems": [

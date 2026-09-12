@@ -15,12 +15,17 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction over a shared tile pool",
-  "detail": "Tiles are revealed face-up in one shared row and won through bidding, so winning a lot directly denies it to every other player, and any player can end the round early by invoking Ra. Beyond the auction itself, players have no direct interaction with each other's collected tiles.",
+  "kind": "closed-economy bidding where every sun spent is aimed at beating a specific rival",
+  "detail": "Every auction is a direct bid against the other players for a shared, shrinking set of tiles, and a common tactic is bidding purely to deny an opponent a tile you don't even want yourself. Almost the entire game state — the tile pool and the timing of when an epoch ends — is shared and fought over rather than sitting on private boards.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
-  "shared_pool": true
+  "shared_pool": true,
+  "checked": [
+   "https://boardgamegeek.com/boardgame/12/ra",
+   "https://en.wikipedia.org/wiki/Ra_(board_game)"
+  ],
+  "said": "\"cutthroat auction\", \"you bid to deny, not just to win\", \"cruel when someone snipes your god tile\" — Ra is repeatedly cited as one of the more directly combative auction games"
  },
  "scoring": {
   "subsystems": [

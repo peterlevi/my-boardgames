@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "simultaneous drafting, mostly parallel empire building",
-  "detail": "Each player builds their own tableau of construction cards and produces resources independently, so the boards themselves are not shared. Interaction happens only at the draft: cards are picked from hands passed around the table, so taking a card you want denies it to everyone else, but there is no common market, attack, or trading.",
+  "kind": "drafting cards away from opponents, otherwise building an independent production engine",
+  "detail": "The draft lets you deny a card someone else wanted, and a shared resource/recycling market creates mild competition, but construction, production, and scoring happen entirely on each player's own tableau with no direct targeting. Most of a round is spent optimizing your own empire rather than reacting to what opponents do.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "frequently called \"multiplayer solitaire\" or compared to 7 Wonders — praised for smooth engine-building but criticized because \"you rarely look at other players' tableaus\""
  },
  "scoring": {
   "subsystems": [

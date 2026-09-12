@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking with a shared market and combat",
-  "detail": "As in the base Dune: Imperium, players occupy exclusive spaces on a shared board and draft from a shared card row, denying options to opponents. Combat over Arrakis (now including sandworms) directly removes opposing troops, and an optional team mode ties two players' fates together, while deck-building remains private.",
+  "kind": "bumping opponents off shared spaces, Conflict-track fights, and (in 6p mode) team-based opposition",
+  "detail": "Shared worker-placement spots and the Conflict track remain the main friction points, now joined by sandworm riding and spy interactions that can target opponents. Most of a turn is still personal deck/tableau development, with the team variant adding a more overtly adversarial layer.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Reviewers describe it the same way as base Imperium — bumping opponents from spaces and fighting over Conflict — with the added team mode making cooperation/opposition even more explicit ('two-team struggle')"
  },
  "scoring": {
   "subsystems": [

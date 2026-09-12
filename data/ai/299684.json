@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "parallel city-state development with contested achievements",
-  "detail": "Each player advances their own economy, culture, and military tracks and manages their own city-state largely independently. Interaction is limited to racing for a shared set of Achievements and unlockable bonuses that only one player can claim first, denying them to the rest of the table.",
+  "kind": "racing up shared tracks and drafting dice-driven actions, with light competition for achievement tiles",
+  "detail": "Players race to unlock achievements and climb tracks that are visible to everyone, creating some tension over who gets there first, but there's no direct attack, blocking, or shared board to fight over beyond that race. Each player mostly manages their own city-state's tracks and resources independently turn to turn.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

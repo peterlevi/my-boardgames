@@ -15,13 +15,19 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "shared board with heavy positional blocking",
-  "detail": "All restaurants, houses, and billboards are built onto a single shared city board, and customer movement along shared streets means where you build directly steers or starves opponents' customer traffic. Marketing and menu cards are also drafted from a shared offer, and delayed simultaneous action selection means players are constantly reacting to what others chose that turn.",
+  "kind": "fighting over the same customers, streets and hiring/training order",
+  "detail": "Every house's custom is shared and finite, so marketing, price wars and delivery routes exist specifically to steal customers from opponents before they can grab them. Being first to train an employee type means every future copy is free, so a huge part of strategy is denying opponents that training slot. Almost the entire map and customer base is contested common ground rather than a private board.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/boardgame/175914/food-chain-magnate",
+   "https://boardgamegeek.com/thread/1561391/the-gallerist-or-food-chain-magnate",
+   "https://en.wikipedia.org/wiki/Food_Chain_Magnate"
+  ],
+  "said": "\"cutthroat\", \"brutal\", \"one of the meanest games ever made\", \"not for the faint of heart\""
  },
  "scoring": {
   "subsystems": [
@@ -71,5 +77,15 @@
   "No Pun Included"
  ],
  "_fingerprint": "09139ae745f9f931",
- "_name": "Food Chain Magnate"
+ "_name": "Food Chain Magnate",
+ "theme": {
+  "said": "'the most thematic euro ever made,' 'you actually learn how a fast-food chain runs,' essentially never called pasted-on",
+  "why": "employees must be paid a wage every round whether or not they act, marketing only creates demand in houses that can see the billboard, and new hires must be trained by someone already possessing the skill, each mirroring a real business constraint rather than an abstract resource rule",
+  "fit": 94
+ },
+ "style": {
+  "said": "brutal euro",
+  "why": "A zero-luck economic engine of hiring, marketing and routes where players ruthlessly block and starve each other's businesses, but there is no direct attack, elimination, or asymmetric power",
+  "style": 32
+ }
 }

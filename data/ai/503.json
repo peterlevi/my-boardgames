@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "pure blocking and area denial",
-  "detail": "All caravans are placed onto one shared desert board, and since routes can never cross, every placement can wall off territory or an oasis an opponent needs. There is no attacking of pieces or shared card/resource pool; the entire game is fought through spatial denial.",
+  "kind": "direct spatial blocking of opponents' caravan routes and contested oases",
+  "detail": "Camels are placed on a shared hex desert where an opponent's tribe can physically wall off your route to an oasis or a bonus region, so much of the game is choosing placements specifically to cut off rivals rather than just grow your own network. Because the desert is one shared grid with no private board, essentially all meaningful decisions are made in reference to what others are doing.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "frequently compared to Go, with players noting caravans \"block\" each other and fight over the same oases"
  },
  "scoring": {
   "subsystems": [

@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority on a shared castle board",
-  "detail": "Workers are placed into shared zones of Himeji Castle (garden, walls, court), where crowding out a zone or claiming its bonus can lock out rivals, and a shared card row supplies the actions everyone drafts from. Scoring tracks and card collections are otherwise kept individually.",
+  "kind": "drafting limited actions before opponents can take them, plus area movement/scoring competition",
+  "detail": "Each round players draft from a shared, limited pool of action dice, so taking the action you want can deny it to someone else, and area movement affects shared court influence. Most of your turn still develops your own clan's tableau and tracks independently.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — reviews highlight the action-drafting dice as the main point of tension ('you have to guess what others will take'), rather than describing it as mean or cutthroat"
  },
  "scoring": {
   "subsystems": [

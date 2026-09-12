@@ -14,14 +14,19 @@
   "Niche appeal since it doesn't fit the 'usual heavy Lacerda' expectation"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "race and area denial on a shared map",
-  "detail": "All players move across the same modular city map, racing to grab money tiles and secure an escape route before rivals reach the same hexes first. Route and path tiles come from a shared pool that is drafted round by round, but no action targets an opponent directly.",
+  "level": "Medium",
+  "kind": "racing for and drafting the same limited tiles/routes across a shared modular board",
+  "detail": "Players move across a common hex map and draft from a shared pool of route tiles, so taking a tile or path can directly block or disadvantage another escaping thief. Still, each player pursues their own optimized escape route rather than attacking others outright.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://www.meeplemountain.com/reviews/escape-plan/",
+   "https://tabletoptogether.com/2020/03/24/first-impressions-escape-plan/"
+  ],
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

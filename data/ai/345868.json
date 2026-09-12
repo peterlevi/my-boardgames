@@ -16,13 +16,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and worker placement on a shared board",
-  "detail": "Delegates are placed as workers onto shared planets and federation tracks, and area-majority scoring means players are directly competing for control of the same spaces. Voting rounds determine shared outcomes for everyone but are not deal-making or trading between players.",
+  "kind": "area-majority fights over planets plus voting and dual-sided worker placement that blocks opponents",
+  "detail": "Players jostle for majority control of the same five member planets, vote on outcomes that affect everyone, and use a double-sided worker placement where taking a spot can deny or hinder another player's options. Most of the contested game state (planet influence, votes) is shared rather than sitting on private boards.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown, though the publisher itself markets it as 'an interactive Eurogame'"
  },
  "scoring": {
   "subsystems": [

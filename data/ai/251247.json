@@ -14,13 +14,19 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "worker placement and route/area contesting on a shared map",
-  "detail": "Players build dams, pipelines, and power plants on one shared map of river basins, and once a river section or connection is claimed it is unavailable to opponents, directly shaping each other's available routes. Worker placement is also on shared action spaces with a limited number of slots, so both the map and the action spaces are contested common state.",
+  "kind": "diverting shared water flow to cut off opponents' turbines, plus blocking placement spots",
+  "detail": "The river's water is a single shared resource: building or raising your dam upstream directly reduces how much flow (and thus power) reaches opponents downstream. Combined with tight worker-placement competition for the same construction and contract spaces, a large share of good moves are chosen specifically to deny an opponent.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/thread/3132498/how-interactive-is-it",
+   "https://www.boardgamequest.com/barrage-review/",
+   "https://www.meeplemountain.com/reviews/barrage/"
+  ],
+  "said": "described as unusually cutthroat and aggressive for a heavy Euro — players talk about starving a rival's dam of water and fighting hard over the same worker-placement spots"
  },
  "scoring": {
   "subsystems": [
@@ -67,5 +73,15 @@
   "JonGetsGames"
  ],
  "_fingerprint": "d9e301f12a67eb78",
- "_name": "Barrage"
+ "_name": "Barrage",
+ "theme": {
+  "said": "reviewers often call it 'a dry engine with a dam skin' or 'AoE resource optimization,' but many also praise the water-flow mechanic specifically as elegant and simulative",
+  "why": "the literal upstream-downstream water flow, where dams built higher on a river reduce the flow (and thus power potential) available to opponents built lower, is a direct model of hydrology, but the worker placement, patents, and contracts around it are generic euro scaffolding",
+  "fit": 48
+ },
+ "style": {
+  "said": "heavy euro",
+  "why": "A worker-placement resource-and-network economy with no direct conflict beyond spot competition, no elimination, and outcomes decided by optimization rather than luck or story",
+  "style": 15
+ }
 }

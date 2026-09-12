@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "territorial worker placement and influence",
-  "detail": "Mobsters place workers and influence across the same set of Manhattan districts, competing for majority control and limited district actions. Taking a district or action spot can deny it to opponents, though there is no direct removal of opponents' pieces.",
+  "kind": "blocking worker-placement spots and area-majority influence over shared districts",
+  "detail": "Players compete for the same worker-placement actions and jockey for majority influence in shared Manhattan districts, so spot-blocking and majority swings do affect opponents directly. But a large share of turns is spent managing your own hand, resources, and business upgrades, making the interaction real but secondary to individual engine-building.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Lacerda's worker-placement/area-majority games are often noted for tight, interlocking systems that can still feel fairly parallel — reviewers of his catalog frequently flag that despite the busy board, much of the game is 'run your own machine' with occasional blocking"
  },
  "scoring": {
   "subsystems": [

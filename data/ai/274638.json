@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "asymmetric duel on a shared map",
-  "detail": "This two-player set has both fighters occupying and moving across the same board, so positioning blocks routes and enables attacks. Combat directly damages and can eliminate the opposing hero or sidekick, with no other channel of interaction.",
+  "kind": "direct card-based combat between the two heroes",
+  "detail": "This two-player-only set has players attacking and defending directly against each other's figures on a shared map every turn, with hand and positioning decisions made in direct response to the opponent's threats. There is no independent board state to develop in isolation.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "reviewers frame it the same way as the rest of Unmatched — a head-to-head duel where 'you're always reacting to what they just played'"
  },
  "scoring": {
   "subsystems": [

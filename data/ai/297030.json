@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared rotating action wheel",
-  "detail": "Players draft actions from one shared rotating wheel board, so taking an action space removes it for others until the wheel turns again, creating constant contention over timing and position. Pattern-building and god-favor tracks are otherwise developed on each player's own board, so interaction is concentrated on the shared action wheel rather than on the player boards themselves.",
+  "kind": "drafting action/god tiles and turn order priority from a shared rotating disk",
+  "detail": "Players draft gods, tiles, and act in an order set by a shared rotating sun-disk, so taking a slot or priority position denies it to others, and the Maat reckoning track is a shared resource everyone pushes on. Most of the turn, though, is spent building your own pyramid tableau and pattern, so the board is largely parallel with periodic contested chokepoints.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recurring reputation recalled; treating as fallback to mechanics"
  },
  "scoring": {
   "subsystems": [

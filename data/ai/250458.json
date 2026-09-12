@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement feeding a shared area-majority contest",
-  "detail": "Each player runs their own cart network to produce and move goods, but delivered goods are placed onto four shared court tracks where end-game majority is contested, so that part of the board is common to everyone. Action spaces can be stacked, meaning taking one first is cheaper and forces later players to pay more, though nothing is ever removed from an opponent.",
+  "kind": "Worker-placement paths where opponents collect resources/money off your moves, plus area majority for the storage rooms",
+  "detail": "Placing and moving workers along shared house columns triggers payouts to opponents whose pieces sit on the path, so your actions constantly hand out (or withhold) resources to others, and the storage rooms are won by area majority. It's more entangled than a pure parallel euro, but each player still runs their own hand and card set as the main focus.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown for specific quoted phrases, but generally noted as tighter and more contested than a typical worker-placement game"
  },
  "scoring": {
   "subsystems": [

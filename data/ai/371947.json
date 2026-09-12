@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority and hiring competition",
-  "detail": "Players move their circus troupe across a shared network of towns and cities, competing for majority influence and performance slots in the same locations. Artists and upgrades are hired from a common available pool, so taking one denies it to the other players, though each player otherwise builds up their own cast and fame track independently.",
+  "kind": "competing for area-majority control of towns/cities and the limited performance slots within them",
+  "detail": "Players move along a shared point-to-point map and vie for majority influence in the same towns and cities, which is a real point of contention, but a large part of each turn is spent developing your own troupe and cards. The shared board matters for scoring but doesn't produce the constant direct clashes of a blocking or combat game.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — this is a lower-profile title without a strong documented reputation for interaction in common discussion."
  },
  "scoring": {
   "subsystems": [

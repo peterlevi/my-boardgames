@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "action drafting with shared board areas for majority",
-  "detail": "Players take actions from a shared rotating action space (the crane) where a used space is removed from what opponents can pick that round, and contribute pieces to shared structures like the bridge and cathedral where position and majority matter to all players. Each player also has a personal board and resource track that stays entirely their own.",
+  "kind": "drafting shared action-crane slots and competing for area-majority bonuses on the map",
+  "detail": "Taking an action-crane space or a hex tile removes it from what opponents can take that round, and the enclosure/area-majority scoring on the shared board rewards beating others to specific regions. Still, most of a turn is spent optimizing your own personal board and card engine rather than reacting to a rival's move.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — Suchý's euros (this one included) are more often praised for their tight solo-optimization puzzle than discussed in terms of hitting opponents"
  },
  "scoring": {
   "subsystems": [

@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority with direct removal effects",
-  "detail": "Caballeros from every player are placed onto the same regional map and scored by majority, so every placement competes for control of the same spaces. Some power/action cards let a player directly remove or displace opponents' caballeros from a region, going beyond simple space denial into a direct hit on their board presence.",
+  "kind": "Area-majority battles over shared regions plus bidding for turn order/action strength",
+  "detail": "Every round players bid (via power cards) for turn order and caballero supply, then place knights directly into the same nine regions to contest majority, often specifically to bump a rival out of first or second place. The board state is almost entirely shared — your own 'engine' barely exists outside the regions everyone is fighting over.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Frequently called one of the most confrontational euros ever made — \"a fight over the same nine regions,\" \"you're always reading what everyone else is about to do,\" \"the king screws you as much as your opponents do\""
  },
  "scoring": {
   "subsystems": [
@@ -66,5 +67,15 @@
   "JonGetsGames"
  ],
  "_fingerprint": "25e8f81676dd6d5f",
- "_name": "El Grande"
+ "_name": "El Grande",
+ "theme": {
+  "said": "frequently cited as the archetypal 'pasted-on theme' euro, 'medieval Spain wallpaper on a cube-majority game,' 'could be about painting fences and nothing would change'",
+  "why": "caballeros are undifferentiated cubes contested for regional majority scoring, and nothing about knights, courts, or Spanish nobility explains why moving a stat-based number of cubes from a court into a region determines control, since any area-majority theme would produce the identical ruleset",
+  "fit": 16
+ },
+ "style": {
+  "said": "classic euro (area majority)",
+  "why": "An auction-driven action-point economy with symmetric caballero placement and scoring at fixed intervals, softened only by blocking and modest hidden-bid uncertainty rather than true conflict or luck",
+  "style": 28
+ }
 }

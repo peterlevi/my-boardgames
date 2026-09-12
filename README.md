@@ -63,7 +63,23 @@ the "what people say" panel come from.
 python3 scripts/sync.py              # runs it as part of the pipeline
 python3 scripts/enrich.py            # or on its own
 python3 scripts/enrich.py --force    # redo everything
+python3 scripts/enrich.py --samples 3  # median of three, for a judged axis
 ```
+
+The pass is batched — eight games per `claude` call, because the agent's boot
+dominates the cost, not its thinking — and every answer is cached per game and
+committed, so a resync pays only for genuinely new games and anyone cloning
+the repo pays nothing. Measured at roughly **$0.013 a game**, which is $13 for
+a thousand-game collection. An answer that comes back empty is retried rather
+than skipped: without that, a full run dropped 25 of 242 batches, and because
+`--force` only writes on success those games silently kept labels from an
+earlier, differently-prompted pass.
+
+Two further passes exist but have not been run over the collection yet —
+`--theme` (how tightly the mechanics fit the theme) and `--style` (euro
+against ameritrash). Both are measured on a probe set and written up in
+[`_meta/PLAN-thematic-ameritrash.md`](_meta/PLAN-thematic-ameritrash.md),
+along with what it would cost to finish them.
 
 `scripts/bggids.py` turns the names in those summaries' "people who like this
 also like" lists into BGG ids, so the pill for a game you do not own links
@@ -146,15 +162,45 @@ Three things in the report are **not** BGG data, and it says so wherever it
 shows them.
 
 **Interaction** — BGG has no such field, and neither does geekgroup's API. The
-level, and the description of *how* players interact, come from the opinion
-database above: a judgement, not a computation. Weighing it from facts — a
-shared board, blocking on it, acting on an opponent, a common market,
-negotiation — was tried and reverted, because it has no way to see an auction:
-Ra, High Society and Medici came out *Low*, where bidding against each other is
-the whole game. Where the opinion database is unavailable it falls back to a
-rule in [`scripts/interaction.py`](scripts/interaction.py) reading BGG's
-mechanic and category tags: tags meaning players act *on* each other score
-High, competition over a shared pool Medium, parallel play Low.
+level comes from the opinion database above, from a pass that is asked for
+*evidence before a verdict*: first what experienced players actually say about
+the game — "multiplayer solitaire", "cutthroat", "a race you watch", "mean" —
+then the mechanism, and only then the level. That ordering is the whole trick.
+Asked for a level directly, the model reasons from weight and table presence
+and rates every heavy euro High; asked what the community says first, it
+reaches for the phrase, and the phrase is usually right. The prompt also names
+the two traps explicitly, because they pull in opposite directions: a heavy
+euro sprawling over a shared map is often *Low* (the map is scenery, the
+players optimise in parallel), while an auction game with no board at all is
+*High* (every bid is aimed at an opponent).
+
+It is measured, not assumed. [`tests/interaction_calls.txt`](tests/interaction_calls.txt)
+records the owner's own call for 26 reference games, and
+[`scripts/check_interaction.py`](scripts/check_interaction.py) scores any
+scheme against it. Four were tried:
+
+| scheme | cost per game | score |
+|---|---|---|
+| ask for a calibrated judgement | ~$0.013 | 21/26 |
+| ask what the community says | ~$0.013 | 21/26 |
+| **ask for the evidence, then the level** | **~$0.013** | **22/26** |
+| search the web, with citations | ~$0.13 | 21/26 |
+
+Ten times the money for the web pass bought nothing, so the cheap pass is the
+one in the pipeline. The remaining misses are not really model errors: they
+are games where the recurring community phrase *is* the one the pass quoted
+and the owner simply disagrees with it — Scythe and Patchwork are called
+multiplayer solitaire by everyone but him. That is close to the ceiling of any
+community-grounded method.
+
+Weighing the level from facts — a shared board, blocking on it, acting on an
+opponent, a common market, negotiation — was tried and reverted, because it
+has no way to see an auction: Ra, High Society and Medici came out *Low*,
+where bidding against each other is the whole game. Where the opinion database
+is unavailable it falls back to a rule in
+[`scripts/interaction.py`](scripts/interaction.py) reading BGG's mechanic and
+category tags: tags meaning players act *on* each other score High,
+competition over a shared pool Medium, parallel play Low.
 
 **Win condition** and **Point salad** are computed, not asked for. The
 opinion pass reports *facts* about a game's scoring — the separate subsystems
@@ -173,12 +219,41 @@ rules you can read:
 - a game that usually ends on a sudden-death condition is not really decided
   by its tally.
 
+Point salad is computed as a **0-100 number first**, and the four words are a
+band cut from it (`SALAD_BANDS` in the same file). That is worth knowing for
+two reasons. It costs nothing extra — there is no second model call and no
+sampling noise, because this is arithmetic over facts rather than a judgement
+— and it makes *how many bands the report shows* a presentation choice rather
+than a property of the data. The column can be switched between the four
+bands and the raw percentage from the columns menu; the bands are the default
+and the filter always uses them.
+
+Moving from stepped labels to a ramped number changed 21 of 242 verdicts,
+every one of them downwards, and fixed some plain errors on the way: the old
+rule compounded a full level per condition and so called Lost Cities and Azul
+full point salads. The pinned judgements are unaffected — the acceptance test
+scores the same 39 of 40 either way.
+
 Asking the model for the labels directly did not work: it filed Food Chain
 Magnate, whose only currency is money, as *broad*, and Rajas of the Ganges —
 four separate tallies — as *some*. Facts it can report; verdicts it guesses.
 [`tests/expectations.txt`](tests/expectations.txt) pins the rules to
 judgements from someone who has played the games, and
-`python3 scripts/check_scoring.py` says whether they still agree.
+`python3 scripts/check_scoring.py` says whether they still agree. Interaction
+has the same safety net one level down:
+[`tests/interaction_calls.txt`](tests/interaction_calls.txt) records the same
+person's call for 26 games and `python3 scripts/check_interaction.py` scores
+whatever is in the opinion database against it — optionally alongside
+competing schemes, passed as JSON files of name to level.
+
+Both checks matter more than they look, because a judged axis is noisy.
+Asking the same question three times moves a 0-100 answer by a median of 7
+points and by as much as 27 on a contested game, so a single sample is a draw
+rather than a reading, and two prompts can never be compared from one run
+each. `enrich.py --samples N` asks N times and keeps the median of the graded
+fields — ordinal or numeric — for N times the money. The default is 1, which
+is fine when the answers are cached once and committed; use 3 when comparing
+prompts or calibrating against someone's own calls.
 
 An even earlier attempt derived the same thing from mechanic tags alone. BGG's
 tags describe what you *do*, never how you *win*, and no weighting of them
@@ -286,6 +361,7 @@ scripts/query.py       data/games.json   -> a terminal table    (offline)
 scripts/screenshot.py  the report        -> docs/screenshot*.png (offline)
 
 scripts/check_scoring.py  tests/expectations.txt -> a pass/fail count (offline)
+scripts/check_interaction.py  tests/interaction_calls.txt -> a score  (offline)
 
 scripts/common.py             paths, credentials, shared filter logic
 scripts/scoring.py            win condition and point salad, from the facts
@@ -293,6 +369,8 @@ scripts/interaction.py        the fallback interaction rule
 scripts/traits.py             named groupings of BGG mechanics
 scripts/report_template.html  the page's markup, styles and browser-side code
 tests/expectations.txt        judgements scripts/scoring.py has to agree with
+tests/interaction_calls.txt   the owner's own interaction calls, as a score
+_meta/                        plans for work not yet finished
 ```
 
 Only `fetch.py` and `thumbs.py` touch the network. `data/raw/` and

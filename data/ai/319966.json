@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and influence on a shared map",
-  "detail": "Players commit hidden influence cards to the same regions on a shared map of the divided kingdom, and gaining majority in a region comes directly at the expense of rivals who committed there too. There is no direct attack or shared resource market; the contest is entirely about out-maneuvering others for control of common territory.",
+  "kind": "secret influence tokens placed to swing area majorities and mislead opponents about your true faction loyalty",
+  "detail": "Every player secretly commits tokens to contested regions, and revealing them shifts majority control that directly determines which faction (and which player's hidden allegiance) wins, so a token placed is almost always aimed at denying or misleading someone else. Communication limits and memory push players to bluff and read opponents rather than build independently, making nearly the entire shared map state contested rather than personal.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "praised as one of the more directly confrontational hidden-info games; players describe it as 'cutthroat', 'a game about betrayal and misdirection', and note 'you're never sure who's really winning until the reveal'"
  },
  "scoring": {
   "subsystems": [

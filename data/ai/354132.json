@@ -16,13 +16,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "market speculation and a shared trade network",
-  "detail": "Ships move and deliver goods across one shared map of ports and trade routes, and every player buys and sells into a single fluctuating commodity market. Players can also buy shares in each other's companies, tying their fortunes together, but there is no way to directly harm an opponent's position.",
+  "kind": "competing for worker-placement spots and buying/selling shares in a shared market and in each other's companies",
+  "detail": "Players place workers on limited shared spaces and can invest in or undermine competitors' companies through the stock market, directly affecting each other's fortunes. Route-building and ship management, however, are largely done on each player's own board.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

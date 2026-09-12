@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement and closed drafting over shared staff/students",
-  "detail": "Players place workers on shared action spaces and draft staff and students from common pools, so picking one denies it to everyone else. Each player still builds their own school board of disciplines, so interaction is limited to contention over the shared spaces and pools rather than acting directly on opponents.",
+  "kind": "worker placement and drafting over a shared market of professors and students",
+  "detail": "Players place workers and draft staff/students from limited shared pools, so taking a strong professor or student is often chosen because a rival wanted it. Each player still builds their own faculty's reputation and disciplines independently on their own board.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

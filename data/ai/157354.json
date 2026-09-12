@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "shared board manipulation with elimination",
-  "detail": "All meeples sit on one shared mancala-style board, and every move redistributes meeples that other players will later have to pick up, so positioning constantly affects everyone's options. The Assassin and Vizier characters let a player directly remove an opponent's meeples or steal their resources, and turn order itself is won through a bidding auction against the other players.",
+  "kind": "bidding for turn order and moving/removing meeples that directly sets up or ruins opponents' plays",
+  "detail": "The auction for turn order is aimed squarely at denying rivals the meeple distribution they want, and the mancala-style meeple pickups constantly rearrange the shared board in ways that can set up or wreck another player's intended move. Nearly the entire game state is the one shared board and tile/slave market, leaving little private tableau to retreat to.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "cutthroat, mean, refreshingly nasty, take-that"
  },
  "scoring": {
   "subsystems": [

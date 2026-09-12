@@ -12,14 +12,15 @@
   "individual boards can feel solitaire-ish"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "parallel building with contested contracts and achievements",
-  "detail": "Each player develops their own island board privately, but everyone drafts from shared contract and market offerings, and race-style achievement bonuses can be claimed by whoever gets there first, taking them away from slower players. There is no direct action on an opponent's board or pieces.",
+  "level": "Medium",
+  "kind": "competing for shared contracts and a shared fluctuating market",
+  "detail": "Players race to fulfill contract cards drawn from a shared deck and buy/sell through a common market whose prices shift based on everyone's trading, so grabbing a lucrative contract or good trade window before a rival does is a real consideration. The underlying island development — placing buildings, chaining production — happens on each player's own board independently.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recalled table-talk reputation for this title specifically, falling back on its mechanics"
  },
  "scoring": {
   "subsystems": [

@@ -16,14 +16,15 @@
   "Ultimately most decisions funnel into a single money/stock-accumulation race, so despite thematic variety the actual win condition is narrow"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "competitive bidding and route auction on a shared map",
-  "detail": "All players bid against each other for the same landing rights and routes on one shared world map and can buy from a common pool of planes, so acquiring a route or plane removes it from what opponents can get. Stock in the Pan Am company is also a shared holding players compete to control, though there is no way to directly damage or seize an opponent's existing assets.",
+  "level": "High",
+  "kind": "bidding against each other for routes and landing rights",
+  "detail": "Core turns are auctions where players directly bid against one another for exclusive routes, planes, and stock, so winning something is defined by denying it to opponents. Stock holding and investing in the shared Pan Am company add further zero-sum competition over the same limited pool of value.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Marketed and reviewed around 'outbid rivals for lucrative landing rights' — auction-driven economic games in this vein are typically called cutthroat, since every route you win is a route someone else didn't get."
  },
  "scoring": {
   "subsystems": [

@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and conflict on a shared map",
-  "detail": "All players place tiles and leaders onto one shared hexagonal map, competing for majority control of regions and kingdoms. Placing a tile or leader can trigger conflicts that remove an opponent's leaders or force kingdom splits, and claiming key spaces denies them to rivals, so almost the entire game state is shared rather than held on individual player boards.",
+  "kind": "tile placement triggering internal/external conflicts that capture or displace rival leaders",
+  "detail": "The entire hex map is shared, and placing a tile can trigger a conflict that eliminates or displaces an opponent's leader or tiles, so a strong move is often chosen specifically to attack or block a rival's kingdom. Very little happens on a private 'own board' — nearly every placement is judged by its effect on the shared territories and the four contested scoring categories.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Reviewers consistently frame it as Knizia's Tigris & Euphrates lineage — 'a friendlier but still cutthroat cousin of T&E', praised for its 'internal conflict' tension and 'brutal' leader takeovers, though some call it 'dry' or 'mathematical' rather than mean-spirited."
  },
  "scoring": {
   "subsystems": [

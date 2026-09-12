@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with public deduction",
-  "detail": "Players place workers on a shared board of action spaces, so taking a space (a sale, a favorite slot, testing ingredients) can deny it to a rival, and everyone draws ingredients from a shared supply. There is no direct attack on opponents; interaction comes from racing for spaces and reasoning about the public information other players' guesses reveal.",
+  "kind": "turn-order bidding plus racing to publish theories before others do",
+  "detail": "Players pay to move up in turn order and openly bid for the right to test/publish first, and reputation/points are earned by being first to correctly identify an alchemical property, so being scooped matters. But the deductive reasoning itself is done privately against the app, keeping much of the game a parallel logic puzzle.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Often called a \"brain-burning deduction puzzle\" that can feel solitaire-like during the app-based potion testing, but players also note the turn-order bidding and the race to publish correct theories before someone else claims that reputation create real pressure"
  },
  "scoring": {
   "subsystems": [

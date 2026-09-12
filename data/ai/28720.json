@@ -12,14 +12,15 @@
   "Low direct interaction can feel isolating"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "network building and market depletion",
-  "detail": "As in its successor, industries and rail/canal links are built onto a single shared map, and coal, iron and beer come from common markets that empty out with use, letting players box each other out of routes or cheap resources. Interaction stays indirect, through shared space and shared markets rather than direct attacks.",
+  "level": "High",
+  "kind": "same shared coal/iron markets and network-link contests as Brass: Birmingham",
+  "detail": "As in Birmingham, coal and iron come from communal markets that any player's industry can drain, and building canals/rails onto limited link spaces routinely blocks rivals' routes or sales. The scarcity of resources and connections means opponents' choices constantly reshape what's available to you.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "the original Brass, often called \"mean\" and \"unforgiving,\" with players noting you must actively watch and disrupt opponents' supply chains"
  },
  "scoring": {
   "subsystems": [

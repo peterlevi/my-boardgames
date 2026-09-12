@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "hidden roles, accusation and persuasion",
-  "detail": "There is no board or pieces at all; players affect each other purely through discussion, voting on quest teams, and accusing or defending against suspicion of being evil. All state (who's on a team, votes, quest results) is fully shared and public except each player's hidden loyalty, which is the entire crux of the game.",
+  "kind": "hidden-role voting, accusation, and persuasion aimed directly at other players",
+  "detail": "Every mission vote and accusation is a direct social move targeted at specific opponents, and the entire game state (who is trusted, who is suspected) is shared and constantly reshaped by what other players say and vote. There is essentially no private board — the game is nothing but players acting on and against each other.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": true
+  "negotiation": true,
+  "said": "commonly described with words like 'bluffing', 'accusing', 'paranoia-inducing', and 'you're constantly arguing about who to trust'"
  },
  "scoring": {
   "subsystems": [

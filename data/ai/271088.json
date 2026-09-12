@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "tile placement and area denial on a shared garden",
-  "detail": "All players plant flowers and place trees onto the same central garden board, and buying a tree can physically sever a link between flower spots an opponent needed, denying them access or points. Gems and upgrades sit in a common supply that whoever acts first claims, so most of the meaningful state is shared rather than owned individually.",
+  "kind": "racing to claim flower/gem spots on a shared rondel-influenced board and buying trees to cut off opponents' links",
+  "detail": "Players compete for the same limited flower and gem spots and can purchase trees specifically to block a link between two spots an opponent wants to use. Beyond that direct blocking, much of the scoring (upgrades, apprentices) is pursued on one's own track, so it's a shared board with real but intermittent conflict rather than constant fighting.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

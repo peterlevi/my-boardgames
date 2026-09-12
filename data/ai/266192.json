@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel engine-building with a shared bird tray",
-  "detail": "Each player builds their own habitat rows independently, with almost no ability to touch an opponent's tableau directly. The only shared elements are the central bird tray and birdfeeder dice, where taking a bird or food resource can leave less for the next player.",
+  "kind": "mostly parallel engine-building on separate boards, with a shared birdfeeder and race for cards/bonuses",
+  "detail": "Each player builds their own row of birds and combos almost entirely independently; the shared dice tower and card/bonus-card draft are the only points of contact, and those are minor compared to the private engine you're optimizing. This is the game most often cited as the template for 'multiplayer solitaire.'",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "famously called 'multiplayer solitaire' by a large share of reviewers, who note each player mostly plays on their own player board with only the bird feeder dice and occasional bonus cards touching others"
  },
  "scoring": {
   "subsystems": [

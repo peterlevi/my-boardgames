@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "map expansion with market bidding",
-  "detail": "Colonists settle into shared cities on a common map, and each city's limited capacity means settling early can block rivals from that spot. Players also bid against each other in a shared Dutch-auction market for the same deck of personae cards, though resource production and hand-building remain private.",
+  "kind": "racing for the same city settlement spots and colonist/persona cards from a shared pool",
+  "detail": "Cities can only be settled by one player, and certain persona cards or bonus tiles are first-come, so there is some race tension, but combat, blocking, and direct attacks don't exist. The bulk of play is each player optimizing their own hand of action cards and personal production network independently.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"multiplayer solitaire\" is the recurring complaint/description leveled at Concordia and its variants, alongside \"peaceful\" and \"no direct conflict\""
  },
  "scoring": {
   "subsystems": [

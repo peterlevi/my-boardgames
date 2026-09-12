@@ -12,14 +12,15 @@
   "luck of the card flip affects available options"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "shared market drafting",
-  "detail": "Players draw chips from a common supply and buy or reserve cards from a shared row of development cards, so taking a card or the last of a gem color denies it to opponents. Each player's tableau of owned cards is otherwise built and scored individually.",
+  "level": "Medium",
+  "kind": "drafting from and denying cards in a shared market row",
+  "detail": "All players draw chips from and buy/reserve cards out of the same small market, so taking or reserving the specific card a rival needs is a recognized, deliberate denial move, and nobles are a shared prize as well. Still, most of a turn is spent quietly accumulating your own chip and card engine rather than directly clashing with opponents.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "often called nearly 'multiplayer solitaire' with a shared market, though many note you can 'screw' an opponent by sniping the exact gem card they were saving up for"
  },
  "scoring": {
   "subsystems": [

@@ -14,14 +14,15 @@
   "can feel like a solitaire game with others at the table"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker placement with shared buildings and fees",
-  "detail": "The town's goods-offer spaces and buildings sit on one shared board, and whoever owns a building collects a fee whenever another player uses it, so choices are economically entangled even though money and goods are tracked separately per player. Claiming a space or building for your turn denies it to opponents that round, but no pieces are removed and there is no negotiation.",
+  "level": "Medium",
+  "kind": "racing for shared resource offer-spaces and charging opponents tolls to use your buildings",
+  "detail": "Each round's new goods sit on shared offer spaces that any player can grab, so timing a resource grab before an opponent needs it is a real tactic, and buildings you own charge other players a fee whenever they use them. Most of a turn, though, is spent optimizing your own production chain and building queue, which stays entirely on your own board.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Often described as 'less solitaire than Agricola' — reviewers note the toll/fee system and contested offer spaces give it more teeth than typical Rosenberg engine-builders, though it's still mainly about your own buildings."
  },
  "scoring": {
   "subsystems": [

@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "push-your-luck with take-that attacks",
-  "detail": "Everyone draws from one shared deck, and cards let you force opponents to draw extra, skip their turn, or dump the exploding kitten back into someone else's near-term draws. There's no board or tableau at all — the entire game state is the single shared deck and discard pile, plus whatever cards are in each player's hand.",
+  "kind": "forcing draws onto opponents and skipping/attacking their turns",
+  "detail": "Cards let you force another player to draw multiple cards, skip their turn, or make them the next to face the exploding kitten, so most plays are aimed directly at a chosen opponent. There is no personal board at all; the entire game state is the shared draw deck everyone is manipulating.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "russian roulette, take that, screw-your-neighbor party game"
  },
  "scoring": {
   "subsystems": [],

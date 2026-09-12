@@ -13,14 +13,15 @@
   "Not a huge structural change if you already own base Codenames"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "shared grid picture-guessing race",
-  "detail": "As in base Codenames, both teams clue against one shared grid of image cards, racing to identify their own agents first. Players cannot act on opponents directly, though a wrong guess can help the other team or trigger the assassin.",
+  "level": "Medium",
+  "kind": "guessing on a shared image grid where mistakes benefit the opposing team",
+  "detail": "As in the original, both teams' agents sit on the same board of picture cards, so misreads can advance the opponents or end the game. Most of a turn is still one spymaster crafting a clue for their own team rather than directly reacting to the rival team's play.",
   "shared_space": true,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "carries the same reputation as base Codenames — the tension comes from a wrong guess handing the rival team a card or ending the game via the assassin"
  },
  "scoring": {
   "subsystems": [],

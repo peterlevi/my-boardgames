@@ -12,14 +12,15 @@
   "luck of card order can swing outcomes"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "shared auction cards, indirect blocking",
-  "detail": "Players bid fireflies onto a shared row of critter cards, so committing tokens to a card can push it out of reach or make it unattractive for others. There is no direct attack; interaction is entirely through this common bidding tableau.",
+  "level": "High",
+  "kind": "closed-economy bidding on shared creature cards",
+  "detail": "All players bid fireflies onto the same small set of shared cards, so taking a card away from the count someone else was building toward, or forcing them to overbid, is a constant direct effect on their options. The entire game state is the shared row of cards being bid on; there is no private board at all.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — a small closed-economy auction filler generally described as light but pointed, since every firefly you place either helps you or is 'wasted' pushing a rival's bid"
  },
  "scoring": {
   "subsystems": [

@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement and rondel action-blocking",
-  "detail": "Players move a shared rondel and place workers on a common modular city board, so choosing an action or space can occupy it and prevent others from using it that round. Most of the strategic tension comes from this contested shared board and action selection rather than any direct attacks or a common resource pool.",
+  "kind": "claiming limited rondel/worker-placement spots before opponents can use them",
+  "detail": "Players affect each other mainly by occupying rondel positions and worker-placement action spaces, denying a spot to whoever moves next, and by competing for shared city-building resources. Most of a turn is still spent developing an individual city, so the shared board is a contested backdrop rather than the focus of every decision.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no established player consensus yet for this 2024 release"
  },
  "scoring": {
   "subsystems": [

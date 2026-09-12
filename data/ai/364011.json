@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared trail with limited building spots and market rows",
-  "detail": "Players share one trail board where movement and the limited building locations at each stop can be claimed or blocked by a single player. Cattle and other cards are drawn from shared displays, but each player's own herd and player board development stay private with no direct attacks between players.",
+  "kind": "Same as Great Western Trail: building fees and contested track/delivery spaces, now alongside farmer paths",
+  "detail": "Keeps GWT's structure of a mostly personal rondel/deck engine with shared trail buildings (paying opponents when you use theirs) and limited delivery/route spaces that players race for. The explicit solo mode suggests the core loop holds up without opponents, reinforcing that interaction is a secondary layer, not the main event.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — spinoff hasn't accumulated the same volume of discussion as the original, though it's generally described in the same terms as base GWT"
  },
  "scoring": {
   "subsystems": [

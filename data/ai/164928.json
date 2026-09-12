@@ -12,14 +12,15 @@
   "Trading/event track bookkeeping can slow turns"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker placement on a shared board with a common recruitment supply",
-  "detail": "Followers are placed as workers onto a single shared town board of locations, and once a location's capacity is filled for the round it's closed off to everyone else, so players race for the same spots. New followers are also drawn from a common supply, limiting what is available to be recruited by opponents, while each player's own bag/deck of recruited followers stays private.",
+  "level": "Medium",
+  "kind": "contesting shared travel/trade spaces and a common event/tech track",
+  "detail": "Players move followers around one shared board and compete for the same limited town/trade-post spaces and tech-track bonuses, so being first to a location matters. Most of the engine (the bag of followers, its upgrades) is still built and optimized independently on a personal player mat.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Often praised as a tight solo-feeling puzzle ('efficient engine building') but reviewers also flag that trading posts and travel spaces on the shared board get crowded — 'you have to time your placements or someone else grabs the spot first.'"
  },
  "scoring": {
   "subsystems": [

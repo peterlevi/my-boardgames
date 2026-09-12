@@ -14,13 +14,15 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "two-player wargame, direct combat",
-  "detail": "Both players' armies occupy and move across the same point-to-point map, fighting battles that destroy or capture the opponent's units. Nearly the entire game state, the map and unit positions, is shared and contested rather than owned separately.",
+  "kind": "direct military conflict and blocking over shared provinces/roads",
+  "detail": "With only two players and no private board at all, literally every action — moving armies, contesting a province, cutting a supply route, committing units to battle — is aimed at what the other side is doing. The entire map is one contested shared space.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Sekigahara is talked about as a tense, elegant two-player wargame where 'every move is a threat', praised for how tightly the two sides are forced to fight over the same handful of provinces and supply lines.",
+  "confidence": "high"
  },
  "scoring": {
   "subsystems": [
@@ -68,5 +70,15 @@
   "Beau Lac"
  ],
  "_fingerprint": "c0ade666bc870469",
- "_name": "Sekigahara: The Unification of Japan"
+ "_name": "Sekigahara: The Unification of Japan",
+ "theme": {
+  "said": "frequently praised as a masterclass in theme-through-mechanism — 'the units flip and defect exactly like the real clans did', 'you feel the fragile, improvised alliance system of the actual campaign'",
+  "why": "hidden units that flip loyalty when captured or bribed, and daimyo blocks that must be pried away from an opponent's control rather than simply destroyed, model the real historical uncertainty over which clans would actually fight for whom at Sekigahara",
+  "fit": 81
+ },
+ "style": {
+  "said": "card-driven wargame",
+  "why": "Two players wage direct territorial war for control of Japan, but combat is resolved deterministically by played card values rather than dice, keeping randomness low.",
+  "style": 60
+ }
 }

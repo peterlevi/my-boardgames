@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "card drafting with neighbor conflict",
-  "detail": "Each player develops their own city board, but cards are drafted from hands passed around the table, so picking a card denies it to whichever neighbor would otherwise receive it. Military strength is compared directly against each player's two table neighbors at set points, inflicting victory-point losses on the weaker side, making conflict a direct, localized attack rather than a whole-table effect.",
+  "kind": "card drafting that denies cards to neighbors, plus military conflict limited to your two immediate neighbors",
+  "detail": "Each round you see cards passed from neighbors and can deny them a card by taking it yourself, and military strength is compared only against your left and right neighbor, so interaction is real but narrow and localized. The bulk of scoring comes from your own tableau engine (resources, science, civic buildings), which each player builds largely independently.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Widely described as feeling like 'multiplayer solitaire with light neighbor interaction' — players note that beyond drafting away a card your neighbor wanted and occasional military skirmishes, most of the game is building your own tableau."
  },
  "scoring": {
   "subsystems": [

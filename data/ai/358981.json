@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "simultaneous card duel over shared theaters",
-  "detail": "Both players play cards into the same three theater lanes each round, fighting for majority control of each; many cards let you flip, move, or discard cards the opponent has already committed. Almost the entire game state (the three theaters and the cards in them) is shared and contested, with no private board of your own.",
+  "kind": "direct card-vs-card confrontation across shared theaters",
+  "detail": "Each theater (here Intelligence, Diplomacy, Economics) is a shared battlefield where a card's value depends entirely on what the opponent commits there, and abilities routinely flip, remove, or copy the opponent's cards. There is no private board at all — the three theaters are the entire game state, contested every turn.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recalled reputation for this specific expansion module, falling back on the base Air, Land & Sea system, which players describe as a tight two-player duel where \"every card is a threat or a bluff aimed straight at your opponent\""
  },
  "scoring": {
   "subsystems": [

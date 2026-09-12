@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with a shared draft pool",
-  "detail": "Each player develops an entirely private planet board. The only point of contact is a shared row of biome cards each round: taking one leaves fewer options for opponents, and cards left behind become more fertile for whoever eventually takes them. There is no shared board or direct attack.",
+  "kind": "drafting biome cards from a shared row, where unchosen cards enrich shared terrain",
+  "detail": "Players choose from a shared row of biome cards, and what's left behind becomes more valuable for whoever takes it next, giving a light drafting tension. Otherwise each player grows their own personal ecosystem board independently.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

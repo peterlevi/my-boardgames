@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area majority and tile-placement blocking",
-  "detail": "Players place tiles and structures onto one shared hex map, competing for area majority and zones of control on the same spaces. Taking a hex or building height there can block opponents from that location or majority, though there is no direct attacking of opponents' pieces.",
+  "kind": "auctioning for turn order and fighting for temple/area majority on a shared hex map",
+  "detail": "Turn order is auctioned each round, and tile placement is restricted by a zone-of-control rule that lets one player physically block where another can build or move, while temple levels are contested through direct area majority. Almost the entire board is shared territory rather than a private tableau, so most decisions are made in reaction to what rivals are doing.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — inferring from the Mask Trilogy's reputation for tight area-majority fights and zone-of-control blocking"
  },
  "scoring": {
   "subsystems": [

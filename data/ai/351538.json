@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "action drafting with individual gardens",
-  "detail": "Players select seasonal actions from a shared action wheel/board, and claiming an action or resource can deny it to opponents for that round. Each player then builds and manages their own separate bamboo garden and family board, so the bulk of the game state (the tableau being built) is private to each player.",
+  "kind": "drafting limited action spots shared by all players",
+  "detail": "Players take turns claiming action spaces that become unavailable to others that round, but the deeper game — arranging bamboo tiles and family needs — plays out on each player's own board. The shared element is mainly about action-order timing rather than players actively targeting one another's positions.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — I don't have confident recall of recurring player commentary on this title's interactivity"
  },
  "scoring": {
   "subsystems": [

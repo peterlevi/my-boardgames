@@ -14,14 +14,15 @@
   "iconography-heavy cards need a learning session"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "card drafting with raids",
-  "detail": "Each player builds their own kingdom tableau of location and building cards, but locations are explored from a shared offer row, so taking one denies it to opponents. Raid cards let a player sail out and directly damage, steal from, or destroy an opponent's buildings and resources.",
+  "level": "High",
+  "kind": "raiding and pillaging opponents' buildings/locations directly",
+  "detail": "Location and raid cards let you directly attack an opponent's tableau, destroying or disabling buildings they've invested in, which is a deliberate, targeted denial move rather than a side effect. Each player still builds an individual empire, but the raiding layer means a good play is frequently chosen specifically because of what it takes away from a rival.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "The 'Take That' mechanic tag and Imperial Settlers lineage are consistently flagged by players as making this a 'mean' entry — raiding and pillaging opponents' locations is called out as the game's signature interaction."
  },
  "scoring": {
   "subsystems": [

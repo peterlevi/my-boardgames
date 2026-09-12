@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared map with action retrieval and spatial blocking",
-  "detail": "Players move and place workers across one common city map and rail network, so occupying a location or route can block others from using it or force them to pay for access. Beyond that shared map, most production and development happens on each player's own individual player board.",
+  "kind": "the 'Follow' mechanic plus competing for limited action spaces and shared track connections",
+  "detail": "Taking an action space can let opponents 'follow' your choice for a lesser benefit, and players compete over the same limited worker-placement spots and rail/production network, so timing an action to deny or bait others matters. Even so, each player mainly develops their own industrial empire on their own board.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

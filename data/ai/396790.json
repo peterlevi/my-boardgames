@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "network-building and route/spot blocking on a shared map",
-  "detail": "Railways, power lines, and buildings are placed onto one common map, so claiming a hex, connection, or contract can physically block or devalue a route an opponent needed. A shared market and action-retrieval board are also drawn from by everyone, though there is no way to damage or remove an opponent's pieces directly.",
+  "kind": "claiming action cards before rivals and competing for shared network routes/resources",
+  "detail": "The action-retrieval system means once you take a strong action card, opponents can't use that exact one until it cycles back, so timing to grab it first matters. The network board, coal/uranium market, and post rewards are shared and contestable, but each player still spends most of a turn developing their own rail lines and tech track.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

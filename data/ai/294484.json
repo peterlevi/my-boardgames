@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "asymmetric duel on a shared map",
-  "detail": "As in other Unmatched sets, heroes and sidekicks share one map, contesting zones and lines of sight to block each other's movement and attacks. Combat cards resolve direct damage that can eliminate an opponent's characters outright.",
+  "kind": "direct card-based combat between adjacent heroes",
+  "detail": "As with the base system, movement and attacks target specific opposing figures on a shared point-to-point map, and combat cards are played directly against what the opponent has committed. The entire board state is contested — there is no solitaire portion of a turn.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "same 'no equals' combat identity as the rest of the line; players talk about Invisible Man's ambushes and Dracula's drain as directly punishing the opponent"
  },
  "scoring": {
   "subsystems": [

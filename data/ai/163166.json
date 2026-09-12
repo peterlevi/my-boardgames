@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "hidden-role deduction with added kill/attack roles",
-  "detail": "Like the base game, night actions let roles such as the Vigilante or Bombardier actually kill or force death onto another player's role, going further than the original's card-swapping. A shared center pool of extra cards is still used by several roles, and the game still resolves through discussion and a single simultaneous vote rather than any shared board.",
+  "kind": "hidden-role deduction, accusation, and a single group vote deciding everyone's fate",
+  "detail": "As an expansion adding more roles to the same One Night format, it keeps the identical structure of secret night actions followed by open accusation and a single collective vote. Every player's fate hinges entirely on how well they read and argue with the others, with no individual board or private track.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"you have to convince everyone else you're not the werewolf\", accusation and bluffing are the entire game"
  },
  "scoring": {
   "subsystems": [],

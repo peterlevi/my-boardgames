@@ -23,6 +23,16 @@ The report's **Win condition**, **Point salad** and **Winning score** are not
 stored anywhere: scripts/scoring.py computes them at render time from the
 facts enrich.py collects, and scripts/check_scoring.py says whether those
 rules still agree with the judgements in tests/expectations.txt.
+scripts/check_interaction.py does the same for the interaction level against
+tests/interaction_calls.txt.
+
+The second build.py above is not optional, and it is the step that is easy to
+forget when running the pieces by hand. report.py renders from the `ai`
+payload build.py copies into games.json, never from data/ai/ directly, so an
+enrich.py run that is not followed by a build.py run changes nothing on
+screen while the checks — which do read data/ai/ — report new numbers.
+report.py warns when it spots that, but only sync.py gets the order right for
+free.
 
 enrich.py needs the `claude` CLI. If it is not installed the step reports that
 and is skipped, and the report simply renders without the columns and panels

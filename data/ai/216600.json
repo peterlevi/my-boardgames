@@ -14,14 +14,15 @@
   "Iconography-heavy cards need reference lookups early on"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "shared market drafting, parallel tableau building",
-  "detail": "During the market phase all players draft blueprints, workers, or upgrades from a shared common market, so grabbing one denies it to the others. Actually building factories and using dice workers happens on each player's own private tableau with no direct interaction.",
+  "level": "Medium",
+  "kind": "drafting blueprints and placing dice workers on limited shared action spots",
+  "detail": "Each round players choose from a shared blueprint market and place dice on common worker-placement spots, so a spot or blueprint taken by one player is denied to the rest. Beyond that contested market, most of the turn is spent building an individual factory tableau.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

@@ -14,12 +14,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "individual boards with a shared market and limited bonuses",
-  "detail": "Each player develops their own province board with dice and tiles, but goods are sold into a shared market and a limited number of personalities and bonus spaces on shared tracks can only be claimed by one player each, so racing for those slots matters. Players cannot act directly on each other's provinces.",
+  "kind": "shared market stalls and dice-draft turn order in a race to the finish",
+  "detail": "Players affect each other mainly by depleting shared market goods or taking a favorable die/turn-order position before others can, and by racing along the money/fame tracks that end the game when they cross. Most of a turn is spent building your own province on your own board, with the shared elements functioning more as a common pool to watch than a space to fight over.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
-  "shared_pool": true
+  "shared_pool": true,
+  "said": "often described as a light, family-weight 'race' game with turn order and market tension rather than conflict"
  },
  "scoring": {
   "subsystems": [

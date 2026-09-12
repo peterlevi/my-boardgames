@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "shifting alliances with open conflict for control",
-  "detail": "Players place and contest influence across a shared map of Irish regions, forming and breaking alliances and marriages, while combat and Viking raids let them directly unseat or damage rivals' positions. Control of key regions changes hands through both negotiation and direct confrontation, with little of the game confined to a private player board.",
+  "kind": "trick-taking against opponents combined with fighting for area-majority influence",
+  "detail": "Trick-taking is inherently a direct contest — every card played is aimed at winning or denying a trick from another player — and this is layered with area-majority/King-of-the-Hill fights over the same regions of Ireland. Most of the game state (tricks won, contested areas) is shared and actively fought over rather than built up privately.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": true
+  "negotiation": true,
+  "said": "unknown — no strong recurring interaction-specific reputation recalled; falling back on mechanics"
  },
  "scoring": {
   "subsystems": [

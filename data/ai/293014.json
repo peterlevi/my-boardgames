@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "simultaneous blind bidding on a shared card pool",
-  "detail": "All players bid coins on the same set of tavern card rows, and choosing a card in bid order removes it from the pool for everyone below you, so a strong bid can deny a coveted dwarf or hero to an opponent. Beyond that shared bidding pool, each player's army and scoring track is entirely their own, with no way to act directly on another player's board.",
+  "kind": "simultaneous sealed bidding against everyone else for the same tavern cards",
+  "detail": "Every round players bid coins on shared taverns, and bid order directly determines who gets the strongest dwarves and heroes before they're gone, so a bid is often chosen to deny a rival a card as much as to get one yourself. The coin-value mechanic (getting your rejected coins back stronger) also depends entirely on what others bid, making almost the whole turn about reading and countering opponents.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

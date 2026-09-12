@@ -12,14 +12,15 @@
   "Underrated but overlooked, so less community support and fewer plays"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "worker placement with competitive bidding",
-  "detail": "Workers are placed on a shared modular action board and buildings compete for area-majority prestige, so occupying a space or district can shut others out of it. Auctions add another layer of direct competition over the same limited actions, though players never act on each other's pieces directly.",
+  "level": "High",
+  "kind": "bidding against other players for actions/turn order plus area-majority control",
+  "detail": "Access to actions on the modular board is auctioned or bid for, meaning what you can do each round is directly determined by outbidding opponents, and area-majority scoring adds further direct contests over the same spaces. This keeps most of a round centered on what others are willing to pay or claim rather than isolated development.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recurring interaction-specific reputation recalled; falling back on mechanics"
  },
  "scoring": {
   "subsystems": [

@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "asymmetric duel on a shared map",
-  "detail": "Both heroes and their sidekicks move and fight on one shared point-to-point map, so positioning blocks movement and lines of attack. Combat directly damages and eliminates opposing characters, making the fight itself the entire point of contact between players.",
+  "kind": "direct card-based combat between adjacent heroes",
+  "detail": "Every turn is spent maneuvering to attack, defend, or scheme directly against an opponent's hero using cards played face-down in conflict, with damage and card loss immediately affecting the other player's hand and health. There is no private board — the shared map and combat math are the entire game.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "the tagline itself is combative — 'in battle, there are no equals' — and players describe matchups as tight tactical duels decided by direct attacks and blocks"
  },
  "scoring": {
   "subsystems": [

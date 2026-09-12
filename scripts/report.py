@@ -19,6 +19,7 @@ import argparse
 import base64
 import datetime as dt
 import json
+import sys
 import os
 import re
 import subprocess
@@ -26,7 +27,7 @@ from pathlib import Path
 
 from common import ROOT, load_games, playtime, load_overrides
 from scoring import (SALAD_LABEL, SALAD_PILL, SALAD_SHORT, WIN_LABEL,
-                     WIN_ORDER, WIN_SHORT, salad, score_sort, score_text,
+                     WIN_ORDER, WIN_SHORT, salad, salad_score, score_sort, score_text,
                      win, wins)
 
 THUMBS = ROOT / "data" / "thumbs"
@@ -229,6 +230,25 @@ def weight_bar(w):
             f'</span>')
 
 
+def salad_cell(band, n):
+    """Point salad as either the band or the raw 0-100, both in the markup.
+
+    The number is what scoring.py actually computes; the four words are a cut
+    of it. Emitting both and letting a root class choose keeps the toggle free
+    of a re-render, and keeps sorting on the number either way.
+    """
+    if not band and n is None:
+        return EM_DASH
+    pill = (f'<span class="tag salband {SALAD_PILL.get(band, "p1")}"'
+            f' title="Point salad: {esc(SALAD_LABEL.get(band, band))}">'
+            f'{SALAD_SHORT.get(band, band)}</span>' if band else
+            f'<span class="salband">{EM_DASH}</span>')
+    pct = (f'<span class="salpct" title="{esc(SALAD_LABEL.get(band, band or ""))}">'
+           f'{n}%</span>' if n is not None else
+           f'<span class="salpct">{EM_DASH}</span>')
+    return pill + pct
+
+
 def bar(pct):
     if pct is None:
         return EM_DASH
@@ -276,7 +296,8 @@ def trim_ai(ai):
     conf = ai.get("confidence", "low")
     facts = ai.get("scoring") or {}
     out = {"cf": conf, "wc": win(facts), "wcs": wins(facts),
-           "br": salad(facts), "srcs_n": len(facts.get("sources") or []),
+           "br": salad(facts), "brn": salad_score(facts),
+           "srcs_n": len(facts.get("sources") or []),
            "sc": score_text(facts), "scn": score_sort(facts),
            "scnote": facts.get("score_note") or "",
            "ixl": (ai.get("interaction") or {}).get("level"),
@@ -458,9 +479,11 @@ def rows_html(data, a, tags=()):
             + "".join(f'<span>{esc(WIN_SHORT.get(w, w))}</span>' for w in ways)
             + '</span>') if ways else EM_DASH
         br = ai.get("br")
-        br_html = (f'<span class="tag {SALAD_PILL.get(br, "p1")}"'
-                   f' title="Point salad: {esc(SALAD_LABEL.get(br, br))}">'
-                   f'{SALAD_SHORT.get(br, br)}</span>' if br else EM_DASH)
+        # Both renderings ship in the markup and CSS picks one, so switching
+        # between the band and the percentage is a class on <html> rather than
+        # a re-render — and the server's default (the bands) is what anyone
+        # with scripts off sees.
+        br_html = salad_cell(br, ai.get("brn"))
         who = g["ds"]
         designer = (f'<span title="{esc(", ".join(who))}">{esc(who[0])}'
                     + (f' <span class="more">+{len(who) - 1}</span>'
@@ -673,6 +696,30 @@ def repo_url():
     return out[:-4] if out.endswith(".git") else out
 
 
+def warn_if_stale():
+    """Say so when the opinion database has moved on and games.json has not.
+
+    The page renders from the `ai` payload that build.py copies into
+    games.json, never from data/ai/ directly, so an enrich.py run that is not
+    followed by a build.py run changes nothing on screen. That silence is the
+    trap: the scoring checks read data/ai/ and report a new number while the
+    report still shows the old labels, and the two disagree with no error
+    anywhere. A mtime comparison is enough to catch it.
+    """
+    games = ROOT / "data" / "games.json"
+    ai = ROOT / "data" / "ai"
+    if not games.exists() or not ai.is_dir():
+        return
+    newer = [f.name for f in ai.glob("*.json")
+             if f.stat().st_mtime > games.stat().st_mtime]
+    if newer:
+        print(f"warning: {len(newer)} opinion record(s) are newer than "
+              f"data/games.json ({', '.join(sorted(newer)[:3])}"
+              f"{'...' if len(newer) > 3 else ''}). "
+              f"Run `python3 scripts/build.py` first or the page will show "
+              f"stale labels.", file=sys.stderr)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--players", type=int, default=0,
@@ -690,6 +737,7 @@ def main():
     ap.add_argument("-o", "--out", default="reports/collection.html")
     a = ap.parse_args()
 
+    warn_if_stale()
     games = load_games()
     tags, tag_idx = tag_index(games)
     data = compact(games, tag_idx, inline=not a.link_thumbs,

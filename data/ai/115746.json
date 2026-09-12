@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "open military conflict on a shared war map",
-  "detail": "Free Peoples and Shadow armies fight directly on one shared map of Middle-earth, with combat that destroys or displaces the opponent's units and area control over regions and strongholds. Nearly the entire game state - the map, the political track, and the hunt for the Ring - is shared and mutually affected.",
+  "kind": "direct military combat and area control across a shared map, plus a hidden race for the Ring",
+  "detail": "One side attacks strongholds and nations while the other defends and races to destroy the Ring, so nearly every action (army movement, combat, political track pushes) is aimed squarely at what the opponent is trying to do. The map, political track, and event cards are entirely shared contested space with essentially no private engine.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "widely called one of the best head-to-head conflict games ever made — 'a brutal, tense clash', 'every region is contested', reviewers describe it as a true two-sided struggle rather than parallel play"
  },
  "scoring": {
   "subsystems": [
@@ -71,5 +72,15 @@
   "Rahdo Runs Through"
  ],
  "_fingerprint": "c095cf577fff0efe",
- "_name": "War of the Ring: Second Edition"
+ "_name": "War of the Ring: Second Edition",
+ "theme": {
+  "said": "regarded as one of the most thematic wargames in the hobby, praised for how the Political Track and Fellowship track \"tell the story of the book\" rather than just resolving combat",
+  "why": "Free People nations sit inert on a Political Track until attacked or persuaded, directly modeling their real reluctance to join the war until Sauron forces their hand or Gandalf/companions rally them.",
+  "fit": 86
+ },
+ "style": {
+  "said": "classic dudes-on-a-map wargame",
+  "why": "Two asymmetric sides wage direct area-movement warfare resolved by dice and combat cards, with a narrative Ring-quest thread layered over rather than a shared economy.",
+  "style": 70
+ }
 }

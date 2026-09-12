@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with a shared market and space competition",
-  "detail": "Workers are placed on a shared action board where filled spaces (and cards taken from the open market) are removed from opponents' options for the round, so choices are contested even though building projects and personal tableaus stay individual. There is no way to act directly on another player's pieces or resources.",
+  "kind": "paying opponents to reuse their occupied worker-placement spots",
+  "detail": "Instead of spots being fully blocked, a player can place on an action space an opponent already occupies by paying that opponent a resource, so turn order and space choice have a direct financial effect on others. Outside of that toll mechanic and some shared market/track competition, each player mostly develops their own tableau and city defenses.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Reviewers of the West Kingdom trilogy commonly note it's 'friendly worker placement' — 'you can place on a spot someone else already used, you just pay them a fee,' which is called out as a distinctive, comparatively gentle form of interaction."
  },
  "scoring": {
   "subsystems": [

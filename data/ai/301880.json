@@ -13,13 +13,14 @@
   "Dice mitigation can feel swingy for some workers"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker placement with blocking on a shared map",
-  "detail": "Players place workers on shared map locations and draw from shared contracts and resources, so occupying a spot or claiming a contract denies it to opponents that round. There is no mechanism to directly damage or steal from another player's own tableau.",
+  "level": "Medium",
+  "kind": "worker placement on shared action spots plus contract/resource competition",
+  "detail": "Players place workers of different types on a shared row of action spaces and compete for limited contract cards and resources, so a popular spot or contract can be denied to you by an opponent taking it first. Most of the turn, though, is spent developing your own tribe/warband and fulfilling your own contracts, so the board is more contested than a pure engine-builder but not adversarial.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
-  "shared_pool": true
+  "shared_pool": true,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "deduction and direct targeting",
-  "detail": "Each player plays one card at a time and most cards let you name, inspect, compare against, or eliminate a specific opponent, so the entire game is players acting directly on each other rather than building anything shared. There is no shared board or market — just a hand of cards and a deck, with player elimination as the direct consequence of guessing right.",
+  "kind": "direct targeted card effects (guessing/eliminating/forcing discards) aimed at specific opponents each turn",
+  "detail": "Nearly every card played names another player and directly threatens their hand or survival — there is essentially no private engine to build, only your one card and your read on opponents. The entire small game state (who's still in, who holds what) is shared and contested.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "reviewers regularly call it \"pure take-that\" and \"you're always targeting someone\" — cards exist almost entirely to eliminate or expose opponents"
  },
  "scoring": {
   "subsystems": [

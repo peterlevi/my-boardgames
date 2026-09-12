@@ -15,13 +15,15 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "asymmetric area-control warfare with deals",
-  "detail": "All factions place and move pieces on one shared woodland map, battling to remove each other's warriors and seize control of clearings. Players also draw from a shared card deck, and because each faction is so different in power, informal negotiation and alliances between weaker players against a leader are common.",
+  "kind": "direct military combat and area control over a shared point-to-point map, plus card-based denial",
+  "detail": "Every faction is racing for the same clearings, and battles, removal of enemy pieces, and card 'take that' effects are core actions each turn. Almost the entire board is shared contested space; there is very little of a private player board to retreat into.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": true
+  "negotiation": true,
+  "said": "Root's reputation is built on interaction: players call it 'cutthroat', warn newcomers that 'someone will always be at war with you', and describe it as a game where 'the map is a battlefield, not scenery' — the asymmetric factions exist specifically to fight over the same handful of clearings.",
+  "confidence": "high"
  },
  "scoring": {
   "subsystems": [
@@ -77,5 +79,15 @@
   "Actualol"
  ],
  "_fingerprint": "ad0195d156d1c648",
- "_name": "Root"
+ "_name": "Root",
+ "theme": {
+  "said": "called out for genuinely asymmetric factions that map to real power structures, though some say the woodland-critter art is just a friendly skin over what is otherwise a Cosmic-Encounter-style asymmetric area-control war game",
+  "why": "the Woodland Alliance's Sympathy/Revolt mechanic — building hidden support that suddenly erupts into an armed uprising — is a rule that only makes sense if you're modeling an insurgency rather than a conventional army",
+  "fit": 70
+ },
+ "style": {
+  "said": "asymmetric war game / euro-ameritrash hybrid",
+  "why": "Wildly asymmetric factions fight for direct territorial control with combat and take-that, but each faction runs on its own tight euro-like engine.",
+  "style": 65
+ }
 }

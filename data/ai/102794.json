@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "worker placement with action-space blocking",
-  "detail": "Players place workers on a shared board of action spaces, and once a space is taken it's unavailable to others that round, creating direct competition for key actions like ore, wood, or breeding. The actual farm/cave building happens on each player's own private board, so most of the tableau itself is not shared.",
+  "kind": "occasionally racing for the same worker-placement spot or resource tile",
+  "detail": "Each player expands their own cave and farm on their own board, and the only friction is a worker placement space being taken before your turn comes around. There is no combat, trading, or direct attack between players' boards — almost the entire game state you manipulate is your own.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"multiplayer solitaire\" is the phrase that follows Rosenberg's designs everywhere, and Caverna is usually cited as the calmer, less confrontational cousin of Agricola"
  },
  "scoring": {
   "subsystems": [

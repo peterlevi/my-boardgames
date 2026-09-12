@@ -15,12 +15,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "dice drafting and a race to claim shared spaces",
-  "detail": "Players build their own engine on a personal board, but each round's dice come from one communal pool everyone drafts from, and pulsars and track bonuses on the shared map are claimed first-come-first-served, denying them to others. There is no way to act directly on an opponent's pieces.",
+  "kind": "drafting from a shared pool of dice and racing to claim unique pulsar/planet tiles",
+  "detail": "Each round's dice are a communal pool, so taking the die you want can leave an opponent with a worse choice, and pulsars/technologies are limited unique tiles that go to whoever claims them first. Beyond that contested draft and claim, most turns are spent building your own private tableau of technologies and orbits.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
-  "shared_pool": true
+  "shared_pool": true,
+  "said": "unknown — generally described as a smooth, satisfying engine-builder rather than a game people call mean"
  },
  "scoring": {
   "subsystems": [

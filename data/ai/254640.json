@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "fully cooperative, no competition between players",
-  "detail": "All players work toward one shared score by giving clues to help a single active player guess a word each round, with no opposing sides, no resource competition, and no ability to hinder or help through deals. The only mechanical link between players is the duplicate-clue elimination rule, which rewards coordination rather than conflict.",
+  "kind": "fully cooperative simultaneous clue-writing where identical clues are cancelled",
+  "detail": "This is a cooperative party game, so the interaction is collaborative rather than adversarial: every clue-giver's word choice directly changes what other players are allowed to show the guesser, since duplicate clues are removed. The entire game state (the pool of surviving clues) is jointly produced by all non-guessing players every round.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

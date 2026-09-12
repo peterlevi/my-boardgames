@@ -12,14 +12,15 @@
   "needs a full table and careful faction balance to sing"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "area control and terrain race",
-  "detail": "All players terraform and build on one shared hex map, so adjacent territory and terrain conversion are directly contested, and reaching a spot first (or a favorable cult-track slot) denies it to everyone else. There is no combat or card market; conflict is purely positional and about turn-order priority on shared tracks.",
+  "level": "Medium",
+  "kind": "spatial blocking for adjacent terrain plus racing/blocking on the shared cult tracks",
+  "detail": "Players terraform and build on a shared hex map, so claiming a spot for the town/adjacency bonus can block an opponent's expansion route, and the four cult tracks are a zero-sum race where priority and bonus slots get taken away from you. Even so, each faction mostly develops its own economy and structures turn to turn, keeping much of the game parallel.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "often labeled \"multiplayer solitaire\" at first glance, but frequent forum pushback that it's actually quietly cutthroat — \"more interactive than it looks\", fights over terraforming spots and cult track position"
  },
  "scoring": {
   "subsystems": [

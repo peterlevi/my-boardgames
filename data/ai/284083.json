@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "cooperative trick-taking with limited communication",
-  "detail": "All players contribute cards to the same sequence of shared tricks, and each trick's outcome depends on everyone's plays together toward common and individual task goals. There is no competition, blocking, or attacking; interaction is purely coordinative, constrained by strict communication limits rather than dealmaking.",
+  "kind": "cooperative trick-taking where every card played changes who can win the trick and complete shared/individual mission cards",
+  "detail": "Players win tricks together, and each card led or played forces partners to react within suit-following rules, while extremely limited communication means you're constantly reasoning about what others hold. The trick pile and mission objectives are entirely shared state — there's no independent personal board to retreat to.",
   "shared_space": true,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"one of the best cooperative trick-takers\", praised for tense, restricted communication where you have to infer partners' hands"
  },
  "scoring": {
   "subsystems": [

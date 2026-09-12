@@ -14,14 +14,15 @@
   "quarterbacking risk if one player reads all the rules"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "cooperative play on a shared map",
-  "detail": "All characters move and fight on the same map tiles against shared monsters, so positioning can block allies' paths or line of sight and characters can be in each other's way. There is no player-versus-player attack or shared card pool since each character keeps a private hand and deck, and coordination is cooperative rather than a negotiated exchange.",
+  "level": "High",
+  "kind": "cooperative turn-order combos and shared monster targeting on one battle map",
+  "detail": "Because it's cooperative, players don't deny each other, but the shared initiative system, positioning on one map, and a common pool of monsters means every card and move is chosen around what teammates need — blocking a hex for an ally, timing a card to combo with theirs, or focusing the same enemy. Very little of the state is private; the map, monster health and turn order are all shared and constantly shaped by each player's choices.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"you have to combo initiative with your teammates\", \"one bad card ruins the whole round\", \"it's a puzzle you solve together\""
  },
  "scoring": {
   "subsystems": [
@@ -75,5 +76,15 @@
   "The Dice Tower"
  ],
  "_fingerprint": "a42331d33ee70a99",
- "_name": "Gloomhaven: Jaws of the Lion"
+ "_name": "Gloomhaven: Jaws of the Lion",
+ "theme": {
+  "said": "'the card-based stamina system IS the fantasy of exhaustion,' praised for gloomy dungeon-crawl immersion rather than called pasted-on",
+  "why": "each character's hand doubles as both their available actions and their stamina bar, so a fighter tiring out mid-battle and being forced to long-rest is mechanically identical to running low on cards, directly modeling combat fatigue",
+  "fit": 78
+ },
+ "style": {
+  "said": "thematic dungeon crawler",
+  "why": "Miniatures, a narrative campaign, and card/dice-resolved combat with character death drive the experience, far outweighing any economic optimization",
+  "style": 85
+ }
 }

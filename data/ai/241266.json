@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared board with pay-to-use buildings",
-  "detail": "All workers and buildings go onto one shared town grid, so placing a worker claims the surrounding resource tiles for that turn, denying them to others, and buildings constructed by one player can be used by anyone who pays them a coin. Most of the game state (the town map and its buildings) is shared rather than owned privately.",
+  "kind": "placing workers adjacent to opponents' buildings, which forces a payment to them",
+  "detail": "A player who places next to another's building must pay that owner a coin, so building placement is a direct, constant economic exchange between opponents rather than purely personal development. Resource tiles around the shared grid are also limited, so worker placement choices routinely compete with what others are trying to collect.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

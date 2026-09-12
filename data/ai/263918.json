@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with shared objectives",
-  "detail": "Each player draws on their own private grid sheet in response to the same revealed shape and scoring cards, so everyone is racing to satisfy the same public objectives rather than acting on each other's boards or pieces. There is no shared space, blocking, or direct interaction—only the pressure of comparing final scores against the same rules everyone faced.",
+  "kind": "shared edict cards drawn for everyone, occasionally punctuated by Ambush/Dragul tiles placed onto an opponent's own map",
+  "detail": "Everyone draws from the same deck of shapes and scoring edicts simultaneously, but each player fills in their own private grid, so most of the game is a parallel drawing puzzle. The explicit take-that element — forcing a monster shape onto a rival's sheet — is real but occasional, not the core of most turns.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

@@ -12,14 +12,20 @@
   "some feel it lacks the depth of Glory to Rome"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "follow-based shared deck, mostly parallel tableaus",
-  "detail": "Each player builds and manages their own tableau of cards used as tasks, materials, or works, so most of the board state is a private area per player. Interaction comes from choosing an action from a shared deck of role cards that other players may then 'follow' to take a lesser version of the same action, but there is no direct attack or shared physical board.",
+  "level": "High",
+  "kind": "Follow mechanic: your role choice lets every opponent piggyback on your action",
+  "detail": "On your turn you pick an action and every other player may follow it, so your choice directly hands opponents opportunities (or you choose actions specifically to deny them a good follow). Hand and tableau are personal, but the constant follow decisions make what one player does routinely reshape what others can do that same turn.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "http://hiewandboardgames.blogspot.com/2015/10/mottainai.html",
+   "https://www.jestatharogue.com/game-reviews/review-mottainai/",
+   "https://boardgamegeek.com/thread/3265946/mottainai-in-defense-of-a-masterpiece"
+  ],
+  "said": "unknown, but as a Glory to Rome successor it inherits that game's reputation for tight 'read the table' interaction where opponents can follow and profit from your chosen action"
  },
  "scoring": {
   "subsystems": [

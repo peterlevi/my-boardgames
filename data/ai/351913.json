@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "shared dice draft with limited action spaces",
-  "detail": "Players draft from one shared pool of rolled dice and take actions on a common set of location and contract spaces, so an opponent taking a die or a spot first can deny it to you. Most of a player's cathedral, family favor and nobility progress is built on their own tableau, so the shared elements are the drafting pool and market rather than a shared building surface.",
+  "kind": "drafting shared action/contract spaces and racing for limited bonuses",
+  "detail": "Each player mostly builds their own path through contracts, resources, and cathedral contributions on their personal board; the shared elements are drafting slots and end-of-round bonuses that can run out first. Turns are dominated by optimizing your own engine rather than acting on what an opponent is doing.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — typically discussed as a dense, satisfying \"salad of mechanisms\" engine-builder rather than for its player-to-player friction"
  },
  "scoring": {
   "subsystems": [

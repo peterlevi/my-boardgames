@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement on shared rotating gears",
-  "detail": "All players place their workers onto the same connected gears, and a spot taken by one player is unavailable to others that round, with the shared temples/tech tracks also fought over positionally. There is no way to damage or steal directly from another player's resources or board; interaction is purely through contesting shared spaces and timing.",
+  "kind": "competing for limited, time-shifting action spots on shared gears",
+  "detail": "Because the gears move workers automatically and spots are limited, players must anticipate and sometimes race or block each other for the most valuable upcoming positions. That said, most of the actual production and building happens on each player's own resource track and buildings, so the contest is mainly over the shared spaces rather than direct attacks.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "commonly framed as a tight worker-placement puzzle where the gears force real competition for the best (later) spots, though many still find it plays fairly parallel"
  },
  "scoring": {
   "subsystems": [

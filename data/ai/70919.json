@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "shared garden with light positional blocking",
-  "detail": "All players place land tiles and move the single shared panda and gardener onto one common garden layout, so plot placement and irrigation affect what any player can later use. Weather die rolls and objective cards are drawn from shared supplies, and the panda eating bamboo affects everyone's plans, but scoring is via private objective cards so there's no direct attack between players.",
+  "kind": "a shared board and shared panda/gardener pieces, but private objective cards",
+  "detail": "Land plots, irrigation, and the panda/gardener are on one shared board, so moving the panda can eat bamboo another player was quietly counting on for a secret objective. Most of the game, though, is each player privately collecting hidden goal cards at their own pace, with the shared board acting more like scenery than a fought-over resource.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Widely described as a relaxed, family-friendly game where 'everyone is doing their own thing' with only occasional friction over the shared panda."
  },
  "scoring": {
   "subsystems": [

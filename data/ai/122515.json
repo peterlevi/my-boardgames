@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction and cross-village worker placement",
-  "detail": "Tiles arrive on shared boats each season and are bid on by all players, a common pool that shrinks as tiles are won. Crucially, workers can be sent not only to a player's own village tiles but also onto opponents' tiles to use their abilities, meaning rival villages become part of the shared action space rather than fully private boards.",
+  "kind": "bidding against opponents for shared tiles, and sending your own workers onto opponents' villages to use their tile abilities",
+  "detail": "Any tile up for auction can be won by an opponent, and crucially, workers of a matching color can be used on tiles in any player's village, not just your own, so opponents constantly benefit from or disrupt each other's boards. Combined with the endgame's frantic bidding and the ability to outbid someone right as they're about to activate a key tile, most of the game plays out through direct contests over the same shared tiles.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "commonly called cutthroat and mean, especially in the winter round; players talk about \"working other people's tiles\" and bidding wars that can strip a rival's key tile away"
  },
  "scoring": {
   "subsystems": [

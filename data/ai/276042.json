@@ -14,14 +14,15 @@
   "overshadowed by the deeper Abyss base game"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "drafting from a shared discard into private tableaus",
-  "detail": "Players draw from a shared deck and can also claim shared piles of discarded cards sorted by color, so grabbing a color denies it to opponents who need it. Each player then builds their own private pyramid-shaped tableau with no further direct interaction.",
+  "level": "Medium",
+  "kind": "drafting from a shared, shrinking pool of cards grouped by color",
+  "detail": "Every card you take or leave behind changes what's available (and what color groups accumulate) for the next player, so drafting choices are made partly to deny others useful colors or numbers. There's no attacking or board conflict, but the shared draft pool means your pick directly shapes opponents' options each turn.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — a light filler card game with little written specifically about its interaction level"
  },
  "scoring": {
   "subsystems": [

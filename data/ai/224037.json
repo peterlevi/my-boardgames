@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "cooperative shared grid, communication limited",
-  "detail": "Both players look at the same 5x5 grid from different key cards and cooperatively give each other clues to find all agents before running out of turns or hitting an assassin. There is no opposition between players, only a constrained communication puzzle over a fully shared board state.",
+  "kind": "fully shared board and joint win/loss condition between two cooperating players",
+  "detail": "Both players see different halves of the same grid and must give clues based on what the other person can and cannot see, so every clue is chosen entirely around the other player's perspective. Success or failure is a single shared outcome, not two separate scores.",
   "shared_space": true,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "praised as a genuinely tense two-player cooperative puzzle where communication limits force you to think from your partner's point of view"
  },
  "scoring": {
   "subsystems": [],

@@ -14,14 +14,15 @@
   "Less table presence and buzz than Power Grid or Fresh Fish"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "shared drafting, otherwise parallel boards",
-  "detail": "Players each build out their own hex-grid canal network and buildings on a personal board, so most of the state is private. Interaction comes from an open drafting/market row of action or building cards that everyone pulls from, where taking a desired card denies it to opponents.",
+  "level": "Low",
+  "kind": "drafting from a shared action/route board that others can also use",
+  "detail": "Players mostly retrieve their own action tiles and build out a personal network of canals and settlements, a hallmark of Friese's solo-friendly designs. The shared hex board and open drafting create mild competition for the best routes and tiles, but there is no direct attack or blocking of another player's plans.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

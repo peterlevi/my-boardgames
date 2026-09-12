@@ -13,14 +13,20 @@
   "still largely a multiplayer-solitaire puzzle with limited direct interaction"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "shared-board tile placement",
-  "detail": "As in the original Ingenious, all players place their tiles onto the same central board (now stackable in 3D), so a placement can extend or cut off lines that matter to other players' scores. There's no attacking opponents' pieces or drawing from a shared market; tiles are drawn privately.",
+  "level": "Medium",
+  "kind": "placing tiles on a shared grid so that your placement can block or set up the color-lines available to others",
+  "detail": "Players place tiles on the same board (now stackable in 3D), and because scoring lines run through shared hexes, a placement can simultaneously boost your own colors while cutting off the extension an opponent was counting on. Still, each player tracks their own six-color hand privately and optimizes their own worst color, so a large share of the game is solitary color management around a shared, contested board.",
   "shared_space": true,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/boardgame/406305/ingenious-3d",
+   "https://boardgamegeek.com/boardgame/9674/ingenious",
+   "https://www.boardgamequest.com/top-10-multiplayer-solitaire-games/"
+  ],
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

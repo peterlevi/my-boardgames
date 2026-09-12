@@ -15,13 +15,19 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "pure bidding auction",
-  "detail": "There is no board; a single common deck of cards is revealed one at a time and every player bids on it with their own money cards, so winning a card comes entirely at the expense of the other bidders' chance at it and can drain the cash they need at game end. There is no direct attack on an opponent's holdings and no negotiation, just competitive bidding on shared cards.",
+  "kind": "constrained bidding directly against the other players for the same cards",
+  "detail": "Every card is won or avoided through open bidding where you watch and react to exactly what money opponents commit, and passing at the right moment to let a rival overpay is a core strategy. There is no personal board at all — the entire game state is the shared auction and everyone's shrinking cash pile.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/thread/3557205/high-society-a-pocket-sized-masterpiece-of-agonizi",
+   "https://www.boardgamequest.com/high-society-review/",
+   "https://boardgamegeek.com/boardgame/220/high-society"
+  ],
+  "said": "Classic Knizia bidding game constantly described as 'pure psychology' and 'a bidding duel' — every auction is explicitly about outlasting or bluffing specific opponents."
  },
  "scoring": {
   "subsystems": [

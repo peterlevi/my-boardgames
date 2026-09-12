@@ -14,12 +14,13 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area-majority contests on a shared structure with a shared dice market",
-  "detail": "All players contribute blocks to the same central cathedral tower, and each level is scored by area majority among whoever placed there, making placement a direct contest for shared space. Dice and materials are also taken from a shared central market, so claiming a die can deny it to another player, though no action lets a player directly harm an opponent's own supply.",
+  "kind": "rondel resource-taking plus area-majority contributions to a shared cathedral",
+  "detail": "Players draw resources from a shared rondel where taking a space can deny it to others, and contributions to the communal cathedral structure are scored by area-majority-like influence, so timing and placement choices are made partly to out-contribute rivals. Still, a large share of each turn goes into managing your own contracts and resources rather than direct confrontation.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
-  "shared_pool": true
+  "shared_pool": true,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

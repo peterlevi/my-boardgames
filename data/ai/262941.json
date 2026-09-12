@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "area control and extinction pressure",
-  "detail": "Species pawns from every player sit on one shared hex map of ocean regions, and losing the fight for dominance in a region can wipe your species out of it entirely. The action-selection track is also a shared draft, so an early pick denies that action (and its position) to everyone else.",
+  "kind": "fighting for area majority and directly removing/displacing opposing species on a shared hex map",
+  "detail": "Players place pawns and use action tiles to dominate the same hexes, and elimination/domination effects can wipe out an opponent's presence from a region entirely, so a strong move is frequently chosen specifically to hurt a rival rather than just to build your own position. Nearly the whole map is shared contested space rather than a personal board.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — inferring from designer Chad Jensen's reputation for brutal, cutthroat area-control designs (as in the original Dominant Species)"
  },
  "scoring": {
   "subsystems": [

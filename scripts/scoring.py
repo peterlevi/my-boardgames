@@ -244,14 +244,23 @@ def how_ends(f):
     return [how for how, _ in endings(f)]
 
 
-def salad(f):
-    """How much of a point salad, from the facts. Returns a SALAD_ORDER key.
+def salad_score(f):
+    """How much of a point salad, as 0-100 rather than one of four words.
 
-    The backbone is the owner's own heuristic: when the highest score wins and
-    winning totals run into the high tens or hundreds, purely additive, never
-    zero-sum, that is the signal. Everything else adjusts it — how many
-    separate engines feed the total, how many lines the rules add up, whether
-    it is all counted at the end, and whether the game even goes the distance.
+    Every ingredient is already in the facts the model reports, and the
+    four-way label was only ever these numbers collapsed early: how big a
+    winning score is, how many categories the rules total, how many separate
+    subsystems feed them, and whether it is all counted at the end. Computing
+    the number first and bucketing it afterwards costs nothing extra — there
+    is no second model call and no sampling noise, because this is arithmetic
+    over facts, not a judgement — and it makes how many bands the report shows
+    a presentation choice rather than a property of the data.
+
+    The caps matter as much as the additions. A game that can end on a
+    condition is not really decided by its tally; two lines on the scorepad
+    are not a salad however big the numbers on them get (Brass wins with 180
+    points out of exactly two interdependent tallies); and a contested or
+    minimum-of score is not an accumulation at all.
     """
     if not f:
         return None
@@ -263,67 +272,94 @@ def salad(f):
     subs = len([x for x in (f.get("subsystems") or []) if x])
     srcs = len(categories(f))
 
+    # The disqualifiers. Each is a reason the tally is not what the game is
+    # about, so they land near the bottom of the scale rather than at a
+    # single zero: a co-op has no tally to speak of, while a money game with
+    # four categories feeding it is further up than one with a single engine.
     if "coop_goal" in ends_all:
-        return "no"
-    # One currency out of one or two engines is a money game, not a salad —
-    # Food Chain Magnate, 1846. Four engines funnelling into money is not:
-    # The Gallerist pays you for art, reputation, influence and contracts.
-    if shape == "single_currency" and is_money(f) and subs <= 2:
-        return "no"
-    # Counting objectives is not accumulating points, however many kinds of
-    # objective there are.
+        return 0
     if shape == "objective_count":
-        return "no"
+        return _spread(2, srcs)
+    if shape == "single_currency" and is_money(f) and subs <= 2:
+        return _spread(4, srcs)
     if shape == "majority_control" and srcs <= 1:
-        return "no"
-    # A target reached at 10 or 30 points is a race.
+        return _spread(2, srcs)
     if ends == "target_score" and score is not None and score <= RACE_SCORE:
-        return "no"
+        return _spread(3, srcs)
     if subs <= 1 and srcs <= 1:
-        return "no"
-    # Nobody calls a game won with eight points a salad, whatever is on the
-    # scorepad: Biblios totals five categories and ends at three.
+        return 2
     if score is not None and score <= SMALL_SCORE:
-        return "no"
+        return _spread(5, srcs)
 
+    # How big the winning total is, ramped rather than stepped, worth a bit
+    # over half the scale on its own.
     if score is None:
-        level = "touch" if subs <= 2 else "lot"
+        size = 22 if subs <= 2 else 34
     elif score < MID_SCORE:
-        level = "touch"
+        size = _ramp(score, SMALL_SCORE, MID_SCORE, 8, 26)
     elif score < BIG_SCORE:
-        level = "lot"
+        size = _ramp(score, MID_SCORE, BIG_SCORE, 26, 44)
     else:
-        level = "total"
+        size = _ramp(score, BIG_SCORE, 250, 44, 55)
 
-    if srcs >= 4:
-        level = _step(level, 1)
-    if subs >= 3:
-        level = _step(level, 1)
+    breadth = {0: 0, 1: 0, 2: 8, 3: 18, 4: 26}.get(srcs, 30)
+    engines = {0: 0, 1: 0, 2: 5, 3: 11}.get(subs, 15)
+    total = size + breadth + engines
     if (f.get("tally") or "").strip() == "endgame":
-        level = _step(level, 1)
+        total += 5
 
-    # A game that can end on a condition is not really decided by its tally,
-    # wherever that ending sits in the list.
+    # The ceilings, in the same order the label version applied them.
     if "sudden_death" in ends_all:
-        level = _cap(level, "touch")
-    # So are two lines on the scorepad out of two engines, however big the
-    # numbers on them get: Brass wins with 180 points from exactly two
-    # interdependent tallies, links and industries, and nobody calls that a
-    # salad.
-    if srcs <= 2 and subs <= 2:
-        level = _cap(level, "touch")
-    # Few categories, however big the numbers on them: Brass wins with 170
-    # points out of links and industries, and nobody calls that a salad. The
-    # top of the scale is reserved for games that really do pay you for four
-    # different things — a big number on its own is not enough.
+        total = min(total, SALAD_BANDS[1] - 1)
     if srcs <= 2:
-        level = _cap(level, "touch")
+        total = min(total, SALAD_BANDS[1] - 1)
     elif srcs == 3:
-        level = _cap(level, "lot")
-    # Contested or minimum-of scores are not accumulations.
+        total = min(total, SALAD_BANDS[2] - 1)
     if shape in ("lowest_category", "majority_control"):
-        level = _cap(level, "lot")
-    return level
+        total = min(total, SALAD_BANDS[2] - 1)
+    return max(0, min(100, int(round(total))))
+
+
+def _ramp(x, lo, hi, out_lo, out_hi):
+    """x within [lo, hi] mapped onto [out_lo, out_hi], clamped."""
+    if hi <= lo:
+        return out_lo
+    t = max(0.0, min(1.0, (x - lo) / (hi - lo)))
+    return out_lo + t * (out_hi - out_lo)
+
+
+def _spread(base, srcs):
+    """Keep the disqualified games faintly ordered by how broad they are, so
+    the column still sorts sensibly down at the bottom of the scale."""
+    return min(SALAD_BANDS[0] - 1, base + min(srcs, 5))
+
+
+# Where the four words sit on the 0-100 scale. Only the presentation depends
+# on these, and more bands can be cut from the same number without touching
+# anything that computes it.
+SALAD_BANDS = (11, 40, 72)
+
+
+def salad_from_score(n):
+    if n is None:
+        return None
+    if n < SALAD_BANDS[0]:
+        return "no"
+    if n < SALAD_BANDS[1]:
+        return "touch"
+    if n < SALAD_BANDS[2]:
+        return "lot"
+    return "total"
+
+
+def salad(f):
+    """How much of a point salad, as one of SALAD_ORDER.
+
+    Thin wrapper now: the number is the thing that is computed, and the word
+    is a band cut from it. Keeping the two in one place is what makes "how
+    many bands does the report show" a question about presentation only.
+    """
+    return salad_from_score(salad_score(f))
 
 
 def _win_for(end, by, shape, fallback="", money=True, primary=False):

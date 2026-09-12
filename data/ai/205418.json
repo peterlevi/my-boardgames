@@ -12,14 +12,15 @@
   "still has worker-placement blocking that can frustrate younger players"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "worker placement action blocking",
-  "detail": "Players build up their own individual farms, with the only interaction coming from a shared board of action spaces where placing a worker occupies that space for the round and blocks others from using it. There is no common market, direct conflict, or negotiation beyond this competition for limited actions.",
+  "level": "Low",
+  "kind": "worker placement action-space blocking only, no competitive card drafting",
+  "detail": "With the occupation/improvement decks removed, the only place players bump into each other is claiming the same board action before someone else does; with just two workers each and simplified rounds, most of a turn is spent quietly growing your own farm. It keeps the skeleton of Agricola's blocking but loses the layer that made the full game contentious.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Marketed and reviewed as the gentler, family-friendly cut-down of Agricola; the occupation/minor-improvement card game (the part that creates card-snipe tension in the full game) is stripped out, and reviewers describe it as calmer and more solo-feeling than the original"
  },
  "scoring": {
   "subsystems": [

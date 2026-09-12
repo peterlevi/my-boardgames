@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "drafting from shared pools with light board conflict",
-  "detail": "Each round players draft dice and buy cards from common shared displays, so taking one denies it to opponents, and ships move along a shared discovery board where positioning matters. Most building, production, and scoring still happen on each player's own personal tableau.",
+  "kind": "bidding coin/goods against each other for favor cards, plus limited seats on the council track and market spaces",
+  "detail": "Each round players bid on the same set of favor cards, and only one player can occupy a given council seat or take a given market good, so timing and outbidding others matters. Most of the turn, though, is spent advancing your own dice down personal tracks and building your own tableau, so the shared parts are contested but narrow.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — not a commonly quoted-for-interaction title; described more often as a satisfying euro engine-builder with some bite from the auction"
  },
  "scoring": {
   "subsystems": [

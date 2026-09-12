@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement blocking with a shared market and combat",
-  "detail": "Agents are placed on a shared board of exclusive action spaces, so occupying one denies it to opponents that round. A shared Imperium Row market supplies the cards everyone drafts from, and troops committed to the Arrakis conflict fight directly against rivals' forces, while deck and tableau building stay private to each player.",
+  "kind": "bumping opponents off shared worker-placement spots and fighting over the shared Conflict track",
+  "detail": "The agent-placement spaces and the weekly Conflict card are shared and contested — players can outbid each other for a spot or clash directly for spice, solari, and troops. But a large portion of each turn is spent building your own deck and tableau independent of what others do.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Often described as 'worker placement with teeth' — players note you can pay to bump an opponent off an occupied space, and the Conflict track pulls players into direct fights over troops and rewards, though much of deckbuilding still feels like solo engine-tuning"
  },
  "scoring": {
   "subsystems": [

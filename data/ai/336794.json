@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "real-time grabbing and race positioning",
-  "detail": "During ship-building, all players grab tiles simultaneously from one common pile, so speed and blocking of desired pieces matters directly. During the flight phase, ships share a single track where position determines who meets hazards first and who can be shot at or bumped by others' fire, though most dangers come from the game's event cards rather than direct player actions.",
+  "kind": "real-time competition for a shared tile pool, then relative-position collisions and attacks during flight",
+  "detail": "The building phase has all players simultaneously grabbing from the same open pile of ship parts, so speed and snatching the piece a rival needs is core to the game. During flight, ships share the same route and relative movement means faster ships strike slower ones first, cannons and comets can wreck a rival's cargo or crew directly, turning the outcome into a running collision between everyone's ships rather than parallel play.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"chaotic\", \"real-time scramble\", \"everyone grabs for the same pile of tiles\", \"you will ram your friends' ships\""
  },
  "scoring": {
   "subsystems": [
@@ -67,5 +68,15 @@
   "The Dice Tower"
  ],
  "_fingerprint": "63128f8b8df3fc8b",
- "_name": "Galaxy Trucker (Second Edition)"
+ "_name": "Galaxy Trucker (Second Edition)",
+ "theme": {
+  "said": "'frantic tile-slapping IS the theme,' 'you're basically building IKEA furniture at gunpoint,' rarely called abstract",
+  "why": "the real-time scramble to slap together a ship before the timer runs out models a rushed, cut-rate trucking outfit, and the ensuing flight where exposed crew and cargo get ripped off by meteors is a direct consequence of how sloppily you built in that scramble",
+  "fit": 68
+ },
+ "style": {
+  "said": "chaotic thematic game",
+  "why": "A real-time build phase gives way to dice-driven hazards that can wreck ships and crew, with humor and survival mattering more than optimization even though there's no player-vs-player elimination",
+  "style": 62
+ }
 }

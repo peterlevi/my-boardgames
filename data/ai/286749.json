@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "network building with piece displacement",
-  "detail": "All players place their trader pieces onto the same map of routes and cities, and completing a link or city lets you bump an opponent's existing piece off it back to their personal supply, directly setting them back. Almost all contested state is the shared map itself; there is no common market or negotiation between players.",
+  "kind": "Displacing opponents' merchants off contested trade routes to complete your own",
+  "detail": "Completing a route means kicking a rival's piece back to their supply (with a small compensation), so a large share of decisions are made specifically to deny or disrupt an opponent's network. The trade-route board is entirely shared, and skill development is one of the few things that stays personal.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Widely described as \"mean,\" \"take-that for a euro,\" and known for the mechanic where you physically bump opponents' pieces off trade routes — reviewers regularly flag it as unusually aggressive for its genre"
  },
  "scoring": {
   "subsystems": [
@@ -72,5 +73,15 @@
   "Before You Play"
  ],
  "_fingerprint": "2630b02ef32c0989",
- "_name": "Hansa Teutonica: Big Box"
+ "_name": "Hansa Teutonica: Big Box",
+ "theme": {
+  "said": "widely called one of the most abstract, dry euros around — 'the trade routes could be anything', 'pure network optimization with a Hansa skin', 'no theme at all really'",
+  "why": "displacing another player's marker along a route and choosing between adding a bonus die or upgrading a personal ability track is pure abstract optimization that has nothing to do with Hanseatic trade specifically",
+  "fit": 14
+ },
+ "style": {
+  "said": "classic euro",
+  "why": "Player pieces get displaced instead of destroyed, powers are symmetric, and outcomes hinge on efficient route-building rather than luck.",
+  "style": 20
+ }
 }

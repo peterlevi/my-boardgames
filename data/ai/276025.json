@@ -14,14 +14,15 @@
   "can feel like several games stapled together"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "shared map with space and contract competition",
-  "detail": "Players move their own ships around one shared course of city tiles, so the map and its action/delivery spaces are common territory even though each player tracks separate resources and progress. Taking a tile action, contract, or quest first can deny it to opponents, but there's no direct attack on opponents' pieces or resources.",
+  "level": "Low",
+  "kind": "mostly independent movement and city-building on a shared map, with occasional light competition over contracts, stock, and end-of-round bonus order",
+  "detail": "Each player sails their own ship along the shared course and develops their own city presence, book of quests, and upgrade track largely independently of what others do. Shared elements like limited contracts, stock holding, and round-bonus priority create minor friction, but the bulk of turns are spent optimizing your own route and engine.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Pfister's games (this one included) are frequently called \"multiplayer solitaire\" and \"a very solo experience despite the table full of players\" in reviews"
  },
  "scoring": {
   "subsystems": [

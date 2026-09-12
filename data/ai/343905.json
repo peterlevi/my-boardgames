@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play with a shared card/tile display",
-  "detail": "Each player develops their own hex-tile board and personal tableau, so most of the game state is individual. Interaction is limited to picking from a shared display of tiles and multi-use cards, and to a 'follow' mechanic letting others piggyback on a chosen action, rather than any shared board or direct conflict.",
+  "kind": "mostly parallel engine-building with an occasional Follow action off other players' choices",
+  "detail": "Like most big Pfister-style economic euros, each player mainly develops their own tableau/board through resource chains and tile placement, with a solo mode underscoring how self-contained a game can be. The 'Follow' mechanic lets you piggyback on another player's chosen action, which is the main point of contact, but it doesn't let you take or deny what an opponent needs.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recurring interaction-specific reputation recalled; falling back on mechanics"
  },
  "scoring": {
   "subsystems": [

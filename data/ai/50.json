@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "mostly parallel play with a shared discard row",
-  "detail": "Each player lays out their own expedition columns privately, so the bulk of the game is parallel, but cards discarded go face-up onto shared piles that either player can later take, so discarding (or refusing to discard) a needed card affects what the opponent can access. There's no way to act directly on an opponent's expeditions.",
+  "kind": "shared discard piles you can deny/take from, and a mutual push-your-luck race on parallel expedition tracks",
+  "detail": "Each player mostly builds their own expeditions in their own rows, but the discard piles are shared: refusing to discard a needed card or snatching one your opponent wants is a real, recurring tactical decision. The scoring race itself is watched rather than fought over directly, keeping it short of High.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "often filed under Knizia's \"multiplayer solitaire\" reputation, but players also note \"you're both racing for the same discards\" and \"denying your opponent a card they need\""
  },
  "scoring": {
   "subsystems": [

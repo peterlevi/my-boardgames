@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "competitive drafting, mostly parallel play",
-  "detail": "Each player builds up their own tribe and factory boards independently with no fighting or direct attacks. Interaction happens mainly through open drafting of shared offers (survivors, sites, technologies), where taking an option denies it to opponents.",
+  "kind": "competitive drafting of shared tiles/technologies with otherwise parallel civilization building",
+  "detail": "Players compete lightly to draft the best available exploration tiles, citizens, or technologies from shared offers before opponents can take them, but each player then builds out their own tribe board independently. The design explicitly avoids direct conflict, so most of the game plays out as parallel optimization on personal boards.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "publisher and reviewers describe it as having 'no fighting or direct conflict', built for a relaxed, non-confrontational civ-building experience"
  },
  "scoring": {
   "subsystems": [

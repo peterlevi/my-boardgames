@@ -14,14 +14,15 @@
   "Imbalanced if one team has a much better clue-giver"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "shared grid word-guessing race",
-  "detail": "Both teams read clues against one shared 5x5 grid of word cards, racing to reveal their own words first. There is no way to act on the opposing team directly, though a wrong guess can accidentally hand them a card or end the game via the assassin.",
+  "level": "Medium",
+  "kind": "guessing on a single shared 25-card grid where mistakes benefit the rival team",
+  "detail": "Both teams' agents live on the same board, so a bad guess can advance the opposing team or trigger the assassin and end the game for everyone. Most of the actual thinking, though, is a spymaster crafting their own clue rather than reacting to the other team's moves.",
   "shared_space": true,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "players describe Codenames as tense specifically because a wrong guess can hand the other team a card or end the game outright by hitting the assassin"
  },
  "scoring": {
   "subsystems": [],

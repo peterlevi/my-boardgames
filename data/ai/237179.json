@@ -14,14 +14,19 @@
   "high cost and heavy production may be daunting for casual groups"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "worker placement with a shared market",
-  "detail": "Players develop their own personal machine/board, but all actions are taken from a shared central board of worker-placement spaces and a common resource market, so occupying a spot or buying up a good affects what remains for others. There is no direct player-versus-player attack.",
+  "level": "Medium",
+  "kind": "blocking scarce worker-placement action spaces and shared dial/track positions",
+  "detail": "Much of the game is spent efficiently sequencing your own actions and upgrades, but the limited worker-placement spots and shared tracks mean opponents can deny you a specific action or position first. It leans toward parallel optimization more than direct confrontation.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://www.meeplemountain.com/reviews/weather-machine/",
+   "https://boardgamegeek.com/boardgame/237179/weather-machine"
+  ],
+  "said": "like other Vital Lacerda designs, players often note it plays as a tight solo optimization puzzle with limited direct conflict, though some worker-placement spots and the shared weather dial can be contested"
  },
  "scoring": {
   "subsystems": [

@@ -14,14 +14,15 @@
   "top-heavy production makes it an intimidating table presence"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "worker placement with a shared component market",
-  "detail": "Workers are placed on one shared city board of locations, so a spot taken by an opponent is unavailable that round, and the component shop is a shared market everyone buys from. Final magic shows are performed and scored individually, without any mechanism to damage or steal directly from an opponent's tricks or resources.",
+  "level": "High",
+  "kind": "blind worker placement that can bump/block opponents' spots, plus paying to sabotage a rival's show",
+  "detail": "Workers are placed face-down and revealed by speed, so a faster player can claim or contest a space an opponent was counting on, and the game explicitly allows hiring help to sabotage a competitor's magic show. This turns key turns into direct targeting rather than just parallel building, even though each player still runs their own tableau of tricks and staff.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "known for its simultaneous worker-placement reveal creating real blocking and for letting players sabotage rivals' performances — reviews call it tense and sometimes \"mean\" compared to typical worker placement"
  },
  "scoring": {
   "subsystems": [

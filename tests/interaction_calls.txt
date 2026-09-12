@@ -1,0 +1,33 @@
+# The owner's own interaction calls for the reference set, quoted from his
+# review of the levels the report showed. They are the acceptance test for any
+# interaction scheme. Three kinds of call:
+#   = Level     exactly this
+#   >= Level    at least this
+#   <= Level    at most this
+# Names are matched as a prefix of the game name in data/games.json.
+Terraforming Mars                = Low
+Food Chain Magnate               = High
+Scythe                           = Medium
+Bus                              = High
+The Great Zimbabwe               = Medium
+Ra                               = High
+High Society                     = High
+Medici                           = High
+The Quest for El Dorado          >= Medium
+Mille Fiori                      >= Medium
+Ingenious                        >= Medium
+Patchwork                        = Medium
+7 Wonders Duel                   >= Medium
+Innovation                       = High
+Mottainai                        <= Medium
+Barrage                          = High
+Gaia Project                     = Low
+Steam                            = High
+The Gallerist                    <= Medium
+Lisboa                           <= Medium
+On Mars                          <= Medium
+Kanban EV                        <= Medium
+Vinhos                           <= Medium
+Escape Plan                      <= Medium
+Weather Machine                  <= Medium
+Inventions: Evolution of Ideas   <= Medium

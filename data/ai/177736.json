@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "worker placement blocking, private board building",
-  "detail": "Turns are driven by placing workers on a shared action-space board, where occupying a space locks it away from every other player for the round, creating real contention over popular actions. The tile-laying and farm/ship layout itself happens entirely on each player's own individual board, which no one else can affect.",
+  "kind": "grabbing shared worker-placement actions, then solving your own board alone",
+  "detail": "Players compete briefly for a limited set of action spaces on a shared board, but the bulk of each turn is spent fitting tiles into your own personal Tetris-like board with no effect on anyone else. Reviewers consistently describe it as a solo puzzle experience with only a thin layer of shared action-space competition.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "multiplayer solitaire, a puzzle you solve on your own board"
  },
  "scoring": {
   "subsystems": [

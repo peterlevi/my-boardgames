@@ -14,14 +14,16 @@
   "somewhat overshadowed by Pfister's more popular titles"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "shared market with worker-placement blocking",
-  "detail": "Players draw from common card offerings and compete for limited worker-placement/investment slots, so taking a spot or resource can deny it to others. Company boards and personal engines are otherwise individually built, with no direct attacks between players.",
+  "level": "Medium",
+  "kind": "claiming turn order/action priority and investing in shared companies via stock holding",
+  "detail": "The 'claim action' turn-order mechanic means going first for a coveted action comes at a cost others can undercut, and stock holding lets multiple players invest in and profit from the same companies. Much of the rest of the game, however, is private hand/card-programming management of your own production chain.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — falling back to mechanics",
+  "confidence": "low"
  },
  "scoring": {
   "subsystems": [

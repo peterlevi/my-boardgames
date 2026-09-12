@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "area majority with open drafting",
-  "detail": "Players build networks and vie for area majority on a shared city map, and also draft specialists from a common open row of cards, so choices there are visible and can be denied to rivals. Beyond taking spaces/cards first, there is no direct attack between players.",
+  "kind": "contesting the same rondel/network action spaces and limited district tiles",
+  "detail": "Players compete for the same rondel positions, specialists, and network tiles, so being beaten to a spot or resource stings, but most of the turn is spent managing your own deck/network rather than acting against a specific opponent. The shared board creates real scarcity, while scoring and engine-building stay largely on each player's own tableau.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "like Pfister's other heavy Euros, often discussed as an efficient, punishing engine-optimization game rather than a direct-conflict one, with tight competition for the same spaces"
  },
  "scoring": {
   "subsystems": [

@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared board with positional interference",
-  "detail": "Every player's family members and assistants move across the same modular bazaar grid, occupying the same tiles as opponents. Landing on or claiming a tile can bump another player's piece back to base or take the tile's benefit before they reach it, but there is no direct damage or a common resource market — each tile's yield belongs to whoever occupies it.",
+  "kind": "occupying shared bazaar tiles and bumping/blocking opponents' dealers on the mancala board",
+  "detail": "Only one dealer may occupy most tiles at a time, so parking on a tile a rival needs (or racing to a limited bonus tile/contract) is a real tactic. However, each player's caravan, money, and goods are private, so a large share of turns are spent quietly optimizing your own delivery route rather than contesting others.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "often described as light-to-medium interaction: players note you can \"block\" a bazaar tile by sitting your dealer there, but much of the game is optimizing your own route"
  },
  "scoring": {
   "subsystems": [

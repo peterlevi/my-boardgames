@@ -13,13 +13,19 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "route-building and area denial",
-  "detail": "All players place route markers and buses onto the same city board, so competing routes physically block each other from claiming the best streets. There's no direct attack on opponents' pieces, but nearly the entire game state (streets, passengers, buildings) is one shared map rather than individual player boards.",
+  "kind": "physically blocking opponents' bus routes and passenger paths on a shared board",
+  "detail": "Players place route tiles on a shared street grid and can deliberately block a rival's bus line or steal the passengers they were angling for, so a move is often chosen specifically to deny someone else's plan. The board, the passenger pool, and the destination buildings are all shared and contested every turn, leaving little of the game as private optimization.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/boardgame/552/bus/ratings?comment=1",
+   "http://hiewandboardgames.blogspot.com/2020/04/bus.html",
+   "https://www.tabletopgaming.co.uk/reviews/bus/"
+  ],
+  "said": "Splotter's reputation here is 'brutal', 'vicious', 'you will get screwed' — Bus is frequently cited as one of the meanest, most cutthroat games in the hobby, with route-blocking fights that can outright ruin an opponent's turn."
  },
  "scoring": {
   "subsystems": [

@@ -14,14 +14,15 @@
   "Alpha-player problem in co-op can dominate decisions"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "cooperative, shared board and resources",
-  "detail": "Players jointly occupy one island map that grows through tile placement, and share a common pool of resources, threats, and event outcomes. There is no competition between players; all pieces and progress belong to the group working toward a common goal.",
+  "level": "High",
+  "kind": "fully cooperative shared board, resources, and threats requiring joint planning every turn",
+  "detail": "All players act on one shared island board, shared resource pool, and shared threat/health trackers, so every player's action choice directly changes what the others must or can do next to keep the group alive. Because success or failure is entirely collective, the game state is almost entirely shared rather than split across individual boards.",
   "shared_space": true,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "cooperative game frequently described as tense and demanding constant coordination, with players needing to plan actions together to survive shared threats"
  },
  "scoring": {
   "subsystems": [
@@ -72,5 +73,15 @@
   "JonGetsGames"
  ],
  "_fingerprint": "d07bdd178f2406f9",
- "_name": "Robinson Crusoe: Adventures on the Cursed Island"
+ "_name": "Robinson Crusoe: Adventures on the Cursed Island",
+ "theme": {
+  "said": "constantly praised as a tightly thematic survival sim — 'the mechanics ARE castaway survival', 'you feel every scarce resource and every night of freezing'",
+  "why": "the action-queue system forcing you to commit to actions before seeing the weather/event card, then punishing you with hunger, injury, or morale loss if you guessed wrong, directly models the uncertainty and improvisation of real castaway survival",
+  "fit": 83
+ },
+ "style": {
+  "said": "thematic cooperative game",
+  "why": "Dice-driven events, asymmetric survivor roles, and a strong narrative of survival push the experience well past pure optimization, even though it's cooperative.",
+  "style": 75
+ }
 }

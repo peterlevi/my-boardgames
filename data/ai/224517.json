@@ -13,14 +13,15 @@
   "Can feel like multiplayer solitaire with only indirect interaction"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "network building and market depletion",
-  "detail": "Industries and links are built onto one shared map of Birmingham, and coal, iron and beer are drawn from common markets that deplete as players use them, so a purchase or a placed link can directly block a rival's plans. There is no way to act on an opponent's pieces directly, only to compete for the same shared spaces and resources.",
+  "level": "High",
+  "kind": "fighting over shared coal/iron markets and contested network links/city spots",
+  "detail": "Coal and iron are drawn from shared, depleting markets that everyone's builds affect, and canal/rail links plus city spaces are limited, so a good move is very often chosen specifically to deny an opponent the resource or link they were counting on. The board and markets are almost entirely shared state rather than private tableaus.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "widely described as \"brutal,\" \"cutthroat,\" and \"vicious\" — players frequently note you can get \"screwed\" by others exhausting the resource markets or blocking your network"
  },
  "scoring": {
   "subsystems": [
@@ -71,5 +72,15 @@
   "Heavy Cardboard"
  ],
  "_fingerprint": "9f21e6f87c384ea0",
- "_name": "Brass: Birmingham"
+ "_name": "Brass: Birmingham",
+ "theme": {
+  "said": "'Brass is a spreadsheet with a top hat,' 'the goods could be cubes of any color,' though some defend the canal-to-rail era shift and the beer requirement as historically grounded",
+  "why": "the beer-as-required-resource-to-sell-goods mechanic and the hard pivot from canal-era to rail-era networks nod at real infrastructure history, but the core loop of link-building, demand flags, and card-driven actions is an interchangeable network/majority puzzle",
+  "fit": 34
+ },
+ "style": {
+  "said": "classic euro",
+  "why": "A pure economic engine of loans, industries and route-building with symmetric player options, negligible randomness, and victory by points at a fixed game-end trigger",
+  "style": 10
+ }
 }

@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "route blocking and stock manipulation",
-  "detail": "As in other 18xx titles, every company's track and stations go onto a single shared regional map, so tile placement can physically block a rival company's expansion or claim a contested city slot. Company shares are bought and sold in one common stock market, and whoever holds the most shares in a company controls its operating decisions on behalf of all its shareholders.",
+  "kind": "share auctions/ownership, presidency control, and contested track placement on a shared map",
+  "detail": "Players bid for and hold stock in the same corporations, so decisions about dividends, train purchases, and share dumps directly affect co-owners' fortunes. Track and station placement compete for the same hexes, making blocking a rival's route a core, constant tactic.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown specific quotes, but as an 18xx title it inherits the series' reputation for cutthroat stock play and route blocking."
  },
  "scoring": {
   "subsystems": [

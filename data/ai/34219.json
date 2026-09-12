@@ -12,14 +12,15 @@
   "Can feel too random for players wanting more control"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "sequential card auction",
-  "detail": "Cards representing books, resources, and gold are revealed one at a time from a shared deck and auctioned or drafted, so winning a card directly removes it from what other players can acquire. Each player's won cards form a private collection scored individually, meaning the shared state is limited to the single card up for bid at any moment.",
+  "level": "High",
+  "kind": "drafting and then blind-bidding gold against opponents for the same lots of cards",
+  "detail": "Players alternate placing cards into shared lots or their own hand, then bid gold to win entire lots outright, so a move is frequently made to keep a category out of a rival's hands rather than just to help yourself. Virtually the whole game — the lots and the categories being contested — is shared table state, not private tableau building.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "praised as a small filler with real bite, built around alternating card draft and blind-bidding auctions where denying a rival a lot is often the point"
  },
  "scoring": {
   "subsystems": [

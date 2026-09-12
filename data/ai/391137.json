@@ -16,13 +16,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with a shared market and network",
-  "detail": "Everyone places workers onto the same modular board of locations and buys from a shared market, so taking a spot or a good denies it to opponents. Each player also builds their own ships and technology track privately, but the contested locations and market are the main point of friction, with no direct attacks between players.",
+  "kind": "worker placement on shared action/market spaces plus a shared company network that others' connections extend",
+  "detail": "Players place workers on common spaces and draft from a shared market, so timing and blocking of key spots matters, and the game's own framing notes that one supervisor's network expansion can open routes others benefit from. That said, each player mainly builds their own ship line and tech engine, so shared spaces are contested but not fought over adversarially.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

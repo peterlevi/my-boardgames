@@ -14,14 +14,15 @@
   "Overshadowed in the hobby by other 'engine building animal' games like Wingspan"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "shared food pool with predation",
-  "detail": "Each player manages a private set of species boards, but all species feed from one shared Watering Hole food supply that can run out before everyone has eaten. Carnivore species can directly attack and eat population off an opponent's species, and shared climate swings add further pressure on food and survival traits.",
+  "level": "High",
+  "kind": "carnivores directly attacking and eating opponents' species for food",
+  "detail": "Players openly prey on each other's species via carnivore traits, removing population and denying food, so a strong move is often chosen specifically to hurt another player's board. The shared watering hole and climate track add further contested resources on top of these direct attacks.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Known for direct 'take that' attacks — carnivore species can eat other players' herbivores, and reviewers describe it as far meaner than typical engine-building card games"
  },
  "scoring": {
   "subsystems": [

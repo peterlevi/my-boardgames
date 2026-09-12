@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "take-that effects with a shared card market",
-  "detail": "Each player builds their own personal tableau of city cards, so the core building is private, but cards are drafted from a shared market (denying picks to others) and some cards have take-that effects that directly hurt an opponent's poverty track or income. Direct targeting exists but is a secondary layer on top of mostly parallel tableau-building.",
+  "kind": "occasional take-that cards plus a relative-poverty comparison at scoring",
+  "detail": "Most turns involve building an individual card tableau and running your own city, so direct conflict is intermittent rather than constant. But some cards actively hinder opponents, and poverty is scored relative to what everyone else generates, so a portion of the shared state genuinely depends on others' choices rather than existing purely as personal progress.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "generally seen as a fairly solitaire engine-builder despite its 'Take That' tag — reviewers describe it as 'you're mostly building your own tableau' with only occasional nasty cards, and note poverty is judged 'relative to the other players'"
  },
  "scoring": {
   "subsystems": [

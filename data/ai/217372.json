@@ -15,12 +15,17 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "racing and blocking on a shared path",
-  "detail": "All players move their pieces along the same modular board toward the goal, and since a space can only hold one piece, players routinely block each other's routes and force detours. Expedition cards are also bought from a shared visible market, so grabbing one can deny it to a rival, though no card lets a player act directly on an opponent's team.",
+  "kind": "mostly a parallel race, with occasional blocking in narrow jungle passages",
+  "detail": "Each player builds and thins their own expedition deck to move along the shared path faster, so the board is a race you watch more than a space you contest. The Zone of Control does allow situational blocking in tight corridors, but this is a minor tactic layered on top of what is fundamentally parallel deck-building.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
-  "shared_pool": true
+  "shared_pool": true,
+  "checked": [
+   "https://boardgamegeek.com/thread/2034327/player-blocking",
+   "https://boardgamegeek.com/boardgame/217372/the-quest-for-el-dorado"
+  ],
+  "said": "categorized by BGG itself as \"Racing\"; player comments tend to focus on optimizing your own deck and expedition rather than fighting opponents — \"it's a race, not a brawl\""
  },
  "scoring": {
   "subsystems": [

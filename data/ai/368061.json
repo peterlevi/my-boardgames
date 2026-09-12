@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "negotiation, bribery, and voting for shared positions",
-  "detail": "Players move their animal pieces up one shared point-to-point hierarchy of enclosures, and only a limited number of slots exist at each level, so advancing can block a rival from a spot they wanted. Victory points/laurels function as a shared bargaining currency that players openly trade, bribe with, and vote with to influence who gets elected, making the interaction almost entirely about deal-making rather than direct attacks on opponents' pieces.",
+  "kind": "bribery and voting to move shared pieces up a contested hierarchy",
+  "detail": "Every advancement comes from persuading or bribing other players to vote for you, so the whole board state — who occupies which enclosure — is a single shared, constantly contested resource rather than anyone's private position. A good move is defined almost entirely by whose ascent it blocks or enables, making the game essentially one continuous round of interpersonal negotiation.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": true
+  "negotiation": true,
+  "said": "Described as a light, chaotic 'negotiation game' in the vein of Knizia's Intrigue/Medici vs. Strozzi lineage — praised for 'dealmaking' and table talk, but criticized for 'feel-bad' moments when the table 'gangs up' on a leader and for being swingy and kingmaker-prone."
  },
  "scoring": {
   "subsystems": [

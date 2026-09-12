@@ -15,13 +15,19 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with a shared art market",
-  "detail": "Players place workers on a shared action board and buy/sell art through a common speculative market, so occupying a space or driving up an artist's price affects everyone else's options. Each player's own gallery and contracts are private, but the market and worker spaces are the shared contested resource.",
+  "kind": "drafting the same artists/contracts and renting the action spaces opponents place",
+  "detail": "Players compete for a shared pool of artists, art pieces and contracts, and a signature mechanic lets a player use a space an opponent placed by paying them a fee, directly tying one player's turn efficiency to another's board. Even so, most of the game is spent managing your own gallery, reputation and staff rather than directly blocking or attacking others.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/thread/1456948/solo-review-the-gallerist-for-1-player",
+   "https://boardgamegeek.com/boardgame/125153/the-gallerist/ratings?rated=1&comment=1",
+   "https://boardgamegeek.com/thread/2175659/dislike-multiplayer-solitaire-is-vital-lacerda-for"
+  ],
+  "said": "unknown — but The Gallerist is often noted for its unusual twist where opponents can pay to use spaces you built"
  },
  "scoring": {
   "subsystems": [

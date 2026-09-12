@@ -13,13 +13,20 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement on shared action spaces, individual production boards",
-  "detail": "Each player runs their own factory board and production chain independently, but actions are taken from a common set of worker placement spots with limited slots, so occupying one denies it to opponents for the round. There is no direct attack between players' factories, and any effect on others comes purely from racing for the same limited actions.",
+  "kind": "worker placement on shared action spaces and a shared production/delivery track",
+  "detail": "Spaces on the shared board can be taken before an opponent gets to them, and some tracks (like deliveries or market spots) are contested, which forces real-time tactical adjustment. Still, a large portion of the game is spent building and sequencing your own factory/upgrades independent of what others are doing, in typical Lacerda fashion.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://www.boardgamequest.com/kanban-ev-review/",
+   "https://bombardgames.com/kanban-ev-board-game-review/",
+   "https://boardgamegeek.com/thread/2556827/choosing-workstation-is-lying-worker-space-blocked",
+   "https://boardgamegeek.com/thread/2582865/kanban-ev-if-you-work-and-no-one-around-see-it-hav"
+  ],
+  "said": "Lacerda's heavier designs are often described as intricate solo puzzles at a shared table — reviewers note worker-placement blocking exists but the bigger draw is each player's own optimization engine"
  },
  "scoring": {
   "subsystems": [

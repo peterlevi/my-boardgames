@@ -15,13 +15,15 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "trading and negotiation",
-  "detail": "Players run separate economies but survive only by freely trading resources and technology cards with each other during real-time negotiation phases. Almost all meaningful interaction is through deals struck directly between players rather than through any shared board; there is no combat or space control.",
+  "kind": "real-time simultaneous negotiation and trading between all players every round",
+  "detail": "Each round's economy is driven by a real-time free-for-all where players must trade resources and goods directly with each other to fuel their factions — no faction can function in isolation. Almost the entire game state (who has what to trade, who needs what) is visible and contested between players simultaneously.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": true
+  "negotiation": true,
+  "said": "Sidereal Confluence is known almost entirely for its interaction: players call the trading phase 'controlled chaos', note that 'you cannot succeed without trading with everyone else', and describe it as feeling cooperative in the moment despite being zero-sum in the end.",
+  "confidence": "high"
  },
  "scoring": {
   "subsystems": [

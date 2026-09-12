@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared card row, push-your-luck drafting",
-  "detail": "Cards are revealed into a shared harbor row that any player can take goods or hire people from, so a card taken by one player is no longer available to the others. Each player's collected ships and person cards form a separate personal tableau, and there is no way to act directly against an opponent's holdings.",
+  "kind": "racing to claim cards from a shared harbor row before opponents do",
+  "detail": "Cards revealed into the harbor are available to any player on their turn, so a good person or expedition card can be grabbed out from under you, and ship cards impose costs that can hurt whoever is unlucky when they're drawn. Each player's own tableau of hired people and completed expeditions is otherwise built independently.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Reviewers frequently mention the push-your-luck tension of drawing for a shared harbor row — 'someone else can snap up the person or ship card you were saving for' — and light 'take that' via ships that make you pay or lose coins."
  },
  "scoring": {
   "subsystems": [

@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction and area majority over a shared map",
-  "detail": "Players bid for provinces on one shared map and later compete for area majority in those provinces, so winning a province or majority directly denies it to rivals. Building and farming happen on the player's own province tiles, but the underlying territory and its majority scoring are fully shared.",
+  "kind": "open bidding against other players for provinces",
+  "detail": "The whole first half of each round is a face-to-face auction where players spend gold to outbid each other for province tiles, meaning a bid is frequently made specifically to deny or overpay a rival. The temple/sacrifice scoring afterward is more private, but the auction — the game's central tension — is entirely interactive.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "A classic Knizia auction game, regularly described by players as \"cutthroat\" — you openly bid against the table for provinces, and driving up someone else's price (or sniping the tile they need) is a core tactic"
  },
  "scoring": {
   "subsystems": [

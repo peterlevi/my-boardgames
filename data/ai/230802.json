@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "drafting and forced discards",
-  "detail": "Players draft tiles from shared factory displays and a shared center pool, and taking a color can leave undesirable leftovers for the next player or force them into penalty tiles. Each player then places tiles on their own private pattern board and wall, so the only shared game state is the tile supply, not the boards themselves.",
+  "kind": "drafting from shared tile displays to deny colors or force penalties on rivals",
+  "detail": "Tiles are drafted from communal factory displays, and a common tactic is taking tiles you don't need just to leave an opponent with only colors that will cost them penalty points. Scoring and pattern-building happen entirely on each player's own board, so the shared part is the drafting pool rather than a fought-over board state.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Known for being surprisingly mean for a light abstract — players talk about \"screwing\" opponents by taking tiles that force them into penalty spaces, and \"tile drafting with teeth\""
  },
  "scoring": {
   "subsystems": [

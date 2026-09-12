@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "hidden-role deduction, bluffing, and accusation",
-  "detail": "During the night phase, roles like the Robber and Troublemaker directly steal or swap another player's hidden role card, secretly changing what that opponent is playing as. Three extra cards form a shared center pool that several roles interact with, and the game resolves through open accusation and a simultaneous vote rather than any board or tableau.",
+  "kind": "hidden-role deduction, accusation, and a single group vote deciding everyone's fate",
+  "detail": "The whole ten-minute game is players talking, lying, and pointing fingers at each other based on secret night actions, ending in one shared vote that can eliminate any player. There is no private board at all — the entire game state is the conversation and suspicion between players.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "\"you have to convince everyone else you're not the werewolf\", accusation and bluffing are the entire game"
  },
  "scoring": {
   "subsystems": [],

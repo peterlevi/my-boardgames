@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel play",
-  "detail": "Each player builds their own city and tech track independently, chaining cards on their own tableau much like the designers' earlier Rajas/Coimbra-lineage solo-friendly games. There is no shared board, market, or way to act on another player's position; the game is fundamentally solitaire-per-player with scores compared at the end.",
+  "kind": "racing to claim shared building/track spots before opponents do",
+  "detail": "Like other Garphill/Shem Phillips city-building games, most of a turn is spent chaining your own cards and advancing your own tech tracks. The only shared element is a common pool of building or resource spots that can run out first, so interaction is limited to indirect racing rather than direct interference.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

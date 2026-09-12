@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction drafting into a shared harbor of ships",
-  "detail": "Players bid on and collect goods cards from a shared drafting pool, then load their goods onto a common set of ships in the harbor; since each ship accepts cargo from only one trader and leaves once full, loading a ship first blocks other players from using it. The harbor and ship states are shared and visible to all, while each player's hand of goods cards is private.",
+  "kind": "bidding against other traders for cargo space and ship contracts",
+  "detail": "Players bid against each other for goods and for the right to load specific ships, so timing a purchase or a delivery is often aimed squarely at beating a rival to it. Almost the entire game state — the goods market and the waiting ships — is shared and contested rather than owned individually.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

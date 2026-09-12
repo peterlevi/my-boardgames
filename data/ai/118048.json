@@ -14,14 +14,15 @@
   "Rules for the grid take a game or two to internalize"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "shared grid with row/column denial",
-  "detail": "The two players place workers on one shared 5x5 grid, and once a worker occupies a row or column, the opponent cannot place in that same row or column that round, making every placement a direct denial of options. Goods and tribe cards are drawn from a shared central market, so both the board and the available cards are common contested resources.",
+  "level": "Medium",
+  "kind": "blocking the limited outer action spaces the only other player also needs",
+  "detail": "With just two players and a fixed ring of 16 action spaces, taking a spot you need also removes it from the one opponent who could otherwise use it, making spot-blocking a constant tactical concern. Even so, much of each turn is spent managing your own hand of cards and central grid of goods and tribe cards, which are private.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

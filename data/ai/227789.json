@@ -14,14 +14,15 @@
   "theme feels pasted on"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "shared action selection, private tableau building",
-  "detail": "Players pick from a shared row of action/resource spaces that becomes temporarily unavailable once taken, so timing and blocking of these common spots is the main way opponents affect each other. The actual construction — garden tiles and barrel filling — happens entirely on each player's own separate board, with no attacks or negotiation.",
+  "level": "Medium",
+  "kind": "claiming rondel/action spots before rivals and racing the shared scoring track",
+  "detail": "Turn order is claimed by choosing action spaces, so a good move often denies a rival the exact rondel space or tile they wanted next, and the barrel-aging track is a shared, contested resource. Even so, each player is mostly filling in their own cloister garden grid, so the shared friction is real but secondary to individual optimization.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recurring player-quotes recalled; falling back to mechanics."
  },
  "scoring": {
   "subsystems": [

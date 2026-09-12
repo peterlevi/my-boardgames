@@ -15,13 +15,19 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "auction-driven tile placement with blocking",
-  "detail": "Players build resource and monument tiles onto one shared modular board of terrain, so the land, its yields, and adjacency bonuses are public and contested; grabbing a tile or a specialist can deny it to everyone else. Turn order and privileges are decided by open bidding, and goods are sold into a common demand track, but no one removes or damages an opponent's pieces directly.",
+  "kind": "Auctioning for turn order/resources and competing for the same scarce goods and trade routes on a shared board",
+  "detail": "Players bid against each other for priority and resources every round, and the market and route network are shared and scarce enough that taking a good, a route, or a monument slot is frequently aimed squarely at denying a rival. Splotter's design philosophy leans hard into this kind of direct economic conflict rather than parallel building.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://www.meeplemountain.com/reviews/the-great-zimbabwe/",
+   "http://hiewandboardgames.blogspot.com/2012/11/the-great-zimbabwe.html",
+   "https://boardgamegeek.com/boardgame/111341/the-great-zimbabwe"
+  ],
+  "said": "A Splotter game with the studio's usual reputation for being \"brutal,\" \"cutthroat,\" and \"you will get screwed if you're not careful\" — known for punishing economies and direct competition for scarce resources"
  },
  "scoring": {
   "subsystems": [

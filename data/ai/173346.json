@@ -15,13 +15,19 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "shared card display with direct military and science conflict",
-  "detail": "Both players draft from one shared pyramid-shaped display of cards, and a card can only be taken once it's uncovered, so the order in which cards are exposed constantly blocks or opens options for the opponent. A shared military track and science-token track let actions push consequences directly onto the opponent, including a possible instant military or science victory.",
+  "kind": "drafting from a shared visible/hidden card display, a shared military track that can end the game outright, and a shared science track",
+  "detail": "Both players draft from the same staggered card display, so timing and denial (taking a card your opponent needs, or unlocking one that helps only you) are central decisions every turn. The military track is a tug-of-war that can trigger sudden-death victory, and completing science sets can knock out an opponent's options, so the shared state is constantly being fought over rather than just built in parallel.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/thread/3284292/high-interactive-games",
+   "https://bitewinggames.com/tabletop-tastes-2-salty-player-interaction/",
+   "https://tabletoptogether.com/2015/12/13/review-7-wonders-duel/"
+  ],
+  "said": "Commonly praised as far more interactive than the base game — reviewers say it 'ditches the solitaire feel', calling out the shared card row, direct military tug-of-war, and instant-win conditions as genuinely tense head-to-head play."
  },
  "scoring": {
   "subsystems": [

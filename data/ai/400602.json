@@ -15,14 +15,15 @@
   "Reception is polarized — some player groups split roughly a third love it, a third dislike it"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "area control and drafting on a shared continent",
-  "detail": "Civilizations expand across one shared continent board and compete for the same regions and resource dice, so claiming a spot can lock rivals out of it. There is no direct attack between players; each civilization also develops its own private tech and evolution tracks alongside the shared map.",
+  "level": "Medium",
+  "kind": "mostly parallel civilization development with shared drafting and exploration tracks",
+  "detail": "Each player grows their own civilization on an individual board, but open drafting of technologies/actions and movement onto a shared modular map creates real competition over limited options and territory. It leans toward parallel play, but the drafting order and map claims give opponents' choices some bite.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — Civolution is recent enough that a settled table reputation for interaction hasn't crystallized"
  },
  "scoring": {
   "subsystems": [

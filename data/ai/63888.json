@@ -15,13 +15,19 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "tableau building with shared card supply and direct effects",
-  "detail": "Each player melds and splays their own tableau of technology cards, but all draw from common age piles and can achieve shared achievements, so taking a top card denies it to others. Dogma effects frequently act directly on opponents, forcing them to transfer, lose, or reveal cards.",
+  "kind": "dogma card effects that force opponents to hand over cards, splay their piles, or let you 'share' in their icons",
+  "detail": "Activating a card's dogma effect frequently forces every opponent with fewer matching icons to give you cards, discard, or otherwise suffer the effect, and 'demand' icons let you compel actions directly on an opponent's board. There is no personal board to retreat to — tableaus are constantly exposed to and altered by other players' turns.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://islaythedragon.com/guides/name-on-the-box-top/the-name-on-the-box-top-carl-chudyk/",
+   "https://www.decisionspacepodcast.com/articles/a-game-strategy-guide-for-carl-chudyks-innovation",
+   "https://boardgamegeek.com/boardgame/63888/innovation"
+  ],
+  "said": "recurring reviewer language calls it 'chaotic', 'take-that', and 'brutal' — dogma effects routinely let you demand cards from opponents or steal their achievements"
  },
  "scoring": {
   "subsystems": [

@@ -13,13 +13,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement action blocking",
-  "detail": "Each player develops their own private farm board, but all players place workers on a single shared row of action spaces, and once a space is taken it is unavailable to everyone else that round. Beyond this contest for actions, the farms themselves and food management are entirely separate per player.",
+  "kind": "worker placement action-space blocking plus a shared pool of occupation/minor-improvement cards",
+  "detail": "Every round players claim single-use action spaces (wood, clay, the various improvement/occupation card draws, breeding spaces), so a good move often denies a resource or card an opponent was clearly building toward. Most of the actual farm-building — fencing, planting, feeding — happens on each player's own board, so the shared layer is the action-space race, not the scoring itself.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Reviewers often note Agricola rewards \"denying the next player the action you just took\" and that with 3-4 players the board \"gets tight fast\" as occupation/improvement cards and key action spaces get sniped; it's not usually called \"solitaire\" so much as \"a tight race for spaces\""
  },
  "scoring": {
   "subsystems": [

@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared board with contested dice draws",
-  "detail": "Players activate one of five shared districts on a common city board and must take a die from it, so district and die availability is contested turn to turn. Area-majority scoring in the districts and ports means occupying a spot can deny influence to others, but there is no direct attack on opponents' pieces, and each player still develops their own tableau of buildings.",
+  "kind": "drafting dice/resources from shared district pools and competing for area-majority influence in city regions",
+  "detail": "Players draw from shared colored dice pools tied to five city regions, so taking a die can leave worse options for the next player, and district/region majorities are contested end-game scoring. Most of a turn, however, is spent converting resources on your own personal tableau of contracts and buildings.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

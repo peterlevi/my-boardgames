@@ -14,13 +14,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "tactical combat on a shared battlefield",
-  "detail": "Two players maneuver their own units on one shared hex map, using line of sight and positioning to block routes and set up attacks. Combat directly removes enemy units from the board and can even remove cards from an opponent's deck, so nearly all meaningful state is shared or directly contested rather than private.",
+  "kind": "direct combat and line-of-fire on a shared hex map",
+  "detail": "Units from both sides occupy the same hex map and directly shoot, suppress, and eliminate each other's cards from play, permanently weakening the opponent's deck. Almost the entire game state — the map, unit positions, and casualties — is shared and contested every turn, with no meaningful private board.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "reviewers call it a tight two-player tactical duel — 'a chess-like battle', 'brutal card and casualty management', combat that directly whittles the other side's deck"
  },
  "scoring": {
   "subsystems": [
@@ -68,5 +69,15 @@
   "The Dice Tower"
  ],
  "_fingerprint": "16651d643814e916",
- "_name": "Undaunted: North Africa"
+ "_name": "Undaunted: North Africa",
+ "theme": {
+  "said": "praised as an elegant simulation where deck-building itself IS the tactical attrition — reviewers note it avoids \"pasted-on\" complaints because casualties physically leave your deck",
+  "why": "wounded/killed units are removed from your card pool rather than just losing hit points, so your deck literally shrinks and weakens as your unit takes real losses, modeling attrition rather than abstracting it.",
+  "fit": 81
+ },
+ "style": {
+  "said": "euro-style wargame / gateway wargame",
+  "why": "A tight deck/bag-building economy and card-driven action selection carry the game, with combat and dice present but casualties attritional rather than eliminating, keeping it hybrid rather than full wargame.",
+  "style": 48
+ }
 }

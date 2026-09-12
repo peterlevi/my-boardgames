@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "route-building and blocking on a shared map",
-  "detail": "Every company's track goes onto the same hex map, so a spur one company builds can block the cheapest path for a rival company, and leasing rules force players to negotiate track access economically rather than diplomatically. Ownership is via stock, so most of the game state (the map, share prices) is shared, while a player's own holdings are private.",
+  "kind": "buying stock to control build order and leasing track across a shared rail network",
+  "detail": "Build order in the operating rounds is determined by share purchase order, so buying into a company can jump you ahead of a rival's construction, and leasing track from another player's company ties your expansion directly to their network. Even so, a large part of each turn is spent extending your own line across the shared hex map rather than fighting head-to-head.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — no strong recurring player-quotes recalled; falling back to mechanics, though 18xx-adjacent stock-and-rail games are commonly called cutthroat over share timing."
  },
  "scoring": {
   "subsystems": [

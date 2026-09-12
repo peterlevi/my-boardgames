@@ -14,14 +14,15 @@
   "some tracks feel stronger than others depending on tile draws"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "area majority and forum drafting with military conflict",
-  "detail": "Each player runs their own mancala-style tableau, but the forum tiles are drawn from a shared market, the Senate track is a shared race, and the province map is contested through area majority. Military actions let a player fight for control of a province, directly displacing an opponent's legionaries there.",
+  "level": "Low",
+  "kind": "drafting from a shared forum/market and racing for the same bonus tiles",
+  "detail": "Each player cycles pieces around their own six-bowl mancala tableau in relative isolation, and the main shared elements are the forum tiles and Rome track bonuses that can be taken before others get to them. There's a light race element, but almost no direct targeting of opponents.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "frequently described by Feld fans and critics alike as \"multiplayer solitaire\" — everyone quietly running their own mancala engine"
  },
  "scoring": {
   "subsystems": [

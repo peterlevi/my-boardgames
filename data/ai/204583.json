@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "drafting and area denial",
-  "detail": "Each player builds their own kingdom grid, so boards are private, but every domino is picked from a shared, visible row and turn order is set by prior picks, so taking a tile can deny a rival the exact terrain or crown combo they wanted. There's no direct interaction with an opponent's kingdom itself, just competition over the shared draft.",
+  "kind": "drafting order determines who gets first pick of the next tile row",
+  "detail": "Players choose dominoes from a shared row, and pick order (set by previous choices) can deny someone their preferred tile, but each player then places it entirely on their own separate kingdom grid. The bulk of the game is solved individually as a placement puzzle, with the shared row functioning more like a market you watch than a space you fight over.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "generally described as light family fare where 'you're mostly building your own kingdom'; some note the draft order creates 'a bit of tension over who gets the good tile' but it rarely feels confrontational"
  },
  "scoring": {
   "subsystems": [

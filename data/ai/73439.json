@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "worker placement with rentable rivals and disruptive events",
-  "detail": "Everyone's dice-workers get placed on a shared board of limited action spaces, so claiming a spot (cathedral, city, market) can shut opponents out of it. Players can also pay to activate an opponent's idle dice for their own benefit, and event/activity cards can inflict direct setbacks, while a shared card row is drafted from by all.",
+  "kind": "paying opponents to use their dice-workers, and competing for limited action slots and event effects",
+  "detail": "Beyond simply placing your own dice, you can pay another player's idle worker-dice to perform an action for you, and a shared Events deck (including raids that hit everyone) ties the players' fortunes together each round. Still, a large share of a turn is spent developing your own hand of house cards and dice pool independently.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "praised as unusually interactive for a dice-worker-placement game — players note you can \"rent\" or block each other's dice-workers and everyone feels the shared Events/raids"
  },
  "scoring": {
   "subsystems": [

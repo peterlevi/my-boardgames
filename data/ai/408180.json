@@ -15,13 +15,15 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared base with area majority and contested projects",
-  "detail": "Agencies build structures together on the one shared Moon base map and compete for area majority there, while also drawing from shared corporation projects that reward or restrict based on who funds them first. There is no direct attack on opponents' pieces, but placement and project choices frequently block what others can do.",
+  "kind": "worker placement on limited shared spots plus area majority scoring on the shared base",
+  "detail": "Players compete for the same worker-placement actions and corporation projects, and build on a shared crater map where area majority determines scoring, so taking a spot or a region before someone else matters. Each player also runs their own resource/production engine, so a large share of turns is still self-contained optimization.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown — falling back to mechanics",
+  "confidence": "low"
  },
  "scoring": {
   "subsystems": [

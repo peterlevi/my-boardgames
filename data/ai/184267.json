@@ -12,14 +12,20 @@
   "heavy analysis paralysis potential given the sheer number of interlocking decisions"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "tile placement and spot-blocking on a shared Mars map",
-  "detail": "Colonists and modules are placed onto one shared hex map of Mars, so claiming a hex or resource vein can block an opponent from expanding into it. Contracts and a shared market of goods are likewise drawn from by all players, but there is no mechanism to directly damage or remove another player's pieces.",
+  "level": "Medium",
+  "kind": "competing for limited contracts and worker-placement/travel spots on a shared board",
+  "detail": "Lacerda designs are dense personal puzzles, but On Mars has a genuine race for a limited pool of contracts and shared locations/movement paths that can be blocked or claimed first. Most of the complexity is still in optimizing your own base and supply chain, so contact is real but intermittent rather than constant.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://www.meeplemountain.com/reviews/on-mars/",
+   "https://boardgamegeek.com/thread/3676808/help-wanted-please-help-me-like-on-mars",
+   "https://punchboard.co.uk/on-mars-review/"
+  ],
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

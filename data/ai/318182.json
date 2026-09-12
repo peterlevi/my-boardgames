@@ -14,14 +14,15 @@
   "requires owning or pairing with Classics to get full faction variety"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "card drafting with take-that attacks",
-  "detail": "Same engine as its sister title: players grow a private deck/tableau for their own civilization, but pull cards from a shared drafting row, and conflict-themed cards allow direct attacks on rivals. Most of the board state (each player's deck and discard) stays private to that player.",
+  "level": "Low",
+  "kind": "mostly parallel deck-building with a shared draft row, no dedicated Take That mechanic",
+  "detail": "As with its sibling Imperium: Classics, players draft cards from a common row to build out their own civilization's deck and tableau, but Legends drops the explicit take-that raiding tag, meaning even less direct conflict. Nearly all decisions affect only your own engine; the shared row is the only thing players are racing over.",
   "shared_space": false,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

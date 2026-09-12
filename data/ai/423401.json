@@ -15,14 +15,15 @@
   "Best experienced at low player counts (1-2), which undercuts its billing as a 1-4 player game"
  ],
  "interaction": {
-  "level": "Low",
-  "kind": "area majority and open drafting for influence",
-  "detail": "Clans place pieces onto one shared map of Crete and compete for area majority/influence in the same regions, so a large part of the board is common contested territory. Players also draft freely from shared card/action options, where taking one can remove it from what an opponent could otherwise take, though there's no direct damage between players.",
+  "level": "Medium",
+  "kind": "action drafting and area-majority influence over shared clan/board spaces",
+  "detail": "Players draft actions and compete for area-majority influence on shared locations tied to Minoan clan development, so taking a spot or resource often comes at a rival's expense. However, a large part of each turn is spent developing an individual clan's identity and economy in parallel, keeping most of the game on each player's own board.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

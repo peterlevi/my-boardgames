@@ -15,13 +15,19 @@
  ],
  "interaction": {
   "level": "Medium",
-  "kind": "shared galaxy map with territorial blocking",
-  "detail": "Factions build structures on hexes of one shared galactic map, and adjacency/range rules mean claiming or terraforming a planet can block an opponent's expansion path or federation formation. Research tracks and round bonuses are individually tracked, but the physical map and its limited planets are the main contested shared resource.",
+  "kind": "competing for adjacent hexes, tech-track slots and federations on a shared map",
+  "detail": "Players terraform and settle a shared hex map, so proximity to opponents affects power gains and who can wall off expansion routes, and research tracks/round bonuses are a limited shared resource. But because the galaxy is large and factions inhabit different planet types, most of a turn is still spent optimizing your own tech and building chain rather than directly clashing with a neighbor.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "checked": [
+   "https://boardgamegeek.com/thread/2031704/player-interaction",
+   "https://meepleandthemoose.com/2026/07/25/gaia-project-board-game-review/",
+   "https://bgmanual.com/boardgames/14/gaia-project"
+  ],
+  "said": "unknown — often compared unfavorably to its predecessor Terra Mystica as the more 'multiplayer solitaire' of the two, with less of the adjacency-based interaction that made Terra Mystica feel tense"
  },
  "scoring": {
   "subsystems": [

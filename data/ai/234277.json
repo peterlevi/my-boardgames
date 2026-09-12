@@ -12,14 +12,15 @@
   "building tile draws add some luck to available strategies"
  ],
  "interaction": {
-  "level": "Medium",
-  "kind": "worker placement with action and building blocking",
-  "detail": "Workers are placed on one shared board of action and building spaces, and the 'claim action' rule means once a space or building is taken it is gone for every other player that round. A limited pool of building tiles and fish-market prices are likewise shared and depleted by whoever gets there first, but players never act directly on each other's boats or crews.",
+  "level": "Low",
+  "kind": "claim-order worker placement on a shared board of buildings",
+  "detail": "The 'claim action' turn order means taking a popular spot pushes you later in turn order, giving mild tension over who acts first, but this is a soft cost rather than direct conflict. The bulk of play is quietly building your own harbor/production chain, which is why it plays like a calmer, more solitaire-ish Rosenberg design than his worker-placement classics.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "unknown"
  },
  "scoring": {
   "subsystems": [

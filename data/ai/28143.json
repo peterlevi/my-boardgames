@@ -15,12 +15,13 @@
  ],
  "interaction": {
   "level": "Low",
-  "kind": "mostly parallel tableau-building with shared phase bonuses",
-  "detail": "Each player develops their own tableau of worlds and developments privately, drawing from a shared deck and a shared pool of victory-point chips that depletes for everyone and can end the game. The main point of contact is simultaneous phase selection, where choosing a phase no one else picked earns a bonus, but players cannot directly target or damage each other's tableau.",
+  "kind": "simultaneous phase selection that lets everyone piggyback on your chosen phase",
+  "detail": "Players secretly pick a phase each round, and picking one others also want to use gives you a bonus but still lets rivals act in it, so the interaction is soft and indirect. The bulk of play is building an individual card tableau and engine with little effect on what an opponent can do.",
   "shared_space": false,
   "blocking": false,
   "direct_attack": false,
-  "shared_pool": true
+  "shared_pool": true,
+  "said": "frequently called \"multiplayer solitaire\" — praised as a fantastic game you mostly play against your own tableau, with the phase-selection tension noted as the one social hook"
  },
  "scoring": {
   "subsystems": [

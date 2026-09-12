@@ -15,13 +15,14 @@
  ],
  "interaction": {
   "level": "High",
-  "kind": "head-to-head combat",
-  "detail": "Two summoners deploy units onto one shared grid battlefield and fight directly: units attack and destroy each other's cards, and the goal is to strike down the opposing summoner. Each player builds and draws from their own separate deck, so there is no shared card pool, only direct conflict on the shared board.",
+  "kind": "direct combat and card removal on a shared battle grid",
+  "detail": "The entire game is two armies fighting on one shared grid: units attack and destroy each other's cards outright, and the win condition is killing the opposing summoner directly. There is no private board — the only state that matters is the contested battlefield between the two players.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": true,
   "shared_pool": false,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Reviewers describe it as a 'tactical dueling card game' where you're 'cutting down the enemy summoner' — it's tagged Take That and discussed in the same breath as chess-like head-to-head skirmish games."
  },
  "scoring": {
   "subsystems": [

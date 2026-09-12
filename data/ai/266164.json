@@ -12,14 +12,15 @@
   "less well-known so harder to find opponents familiar with it"
  ],
  "interaction": {
-  "level": "High",
-  "kind": "area majority and route contesting on a shared map",
-  "detail": "All players place their nobles, priests, and craftsmen tiles onto one shared hexagonal map, directly contesting adjacency to the same cities and temples to trigger scoring. Tiles are drafted from a common open supply, so both the placement space and the piece pool are shared, though there is no removal or capture of opponents' pieces.",
+  "level": "Medium",
+  "kind": "area-majority fights over shared cities and connected regions on the map",
+  "detail": "Nobles, priests, and craftsmen are placed onto a shared map where adjacency to the same cities and rulers determines who scores majorities, so opponents' placements directly affect the value of your own. It leans more interactive than typical tile-laying games, though each player still manages their own hand and piece supply.",
   "shared_space": true,
   "blocking": true,
   "direct_attack": false,
   "shared_pool": true,
-  "negotiation": false
+  "negotiation": false,
+  "said": "Regarded as one of Knizia's more confrontational tile-placement designs — players note you're constantly fighting over the same regions and rulers rather than building in isolation"
  },
  "scoring": {
   "subsystems": [

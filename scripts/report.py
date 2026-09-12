@@ -88,7 +88,7 @@ def tag_index(games):
     return tags, idx
 
 
-def compact(games, tag_idx, inline=True):
+def compact(games, tag_idx, inline=True, private=None):
     """Trim to what the page actually renders, and precompute per-game values
     the browser would otherwise recompute on every keystroke."""
     out, missing = [], 0
@@ -113,8 +113,7 @@ def compact(games, tag_idx, inline=True):
             "pmin": g["minplayers"], "pmax": g["maxplayers"],
             "pl": g["plays"], "ds": g["designers"],
             "dsid": g.get("designer_ids") or {},
-            "lp": g.get("last_played"), "acq": g.get("acquired"),
-            "pp": g.get("price_paid"), "ppc": g.get("currency"),
+            "lp": g.get("last_played"),
             "ed": g.get("edited"),
             "rt": g["ratings"], "ow": g["owners"],
             "de": (g["description"] or "")[:900],
@@ -128,6 +127,7 @@ def compact(games, tag_idx, inline=True):
             "bestAt": g.get("best_at") or [],
             "recAt": g.get("rec_at") or [],
             "poll": poll,
+            **(private or {}).get(g["id"], {}),
             "tg": sorted(tag_idx[(kind, t)]
                          for kind, field, _ in TAG_KINDS
                          for t in set(g.get(field, []))
@@ -565,6 +565,42 @@ def root_class(a):
     return " ".join(cls)
 
 
+def load_private():
+    """Price paid and acquisition date, read at render time from a gitignored
+    CSV export — never from data/games.json.
+
+    BGG keeps these in the private part of a collection entry and the XML API
+    never returns them, so they can only come from the CSV you download
+    yourself. They are also nobody else's business: keeping them out of the
+    normalised data means the committed file and any report built without the
+    CSV (CI's, for instance) cannot carry them by accident.
+    """
+    f = ROOT / "data" / "collection.csv"
+    if not f.exists():
+        return {}
+    import csv
+    out = {}
+    with f.open(newline="", encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            oid = row.get("objectid")
+            if not oid or row.get("own") != "1":
+                continue
+            rec = {}
+            price = (row.get("pricepaid") or "").strip()
+            if price and price not in ("0.00", "0"):
+                try:
+                    rec["pp"] = float(price)
+                except ValueError:
+                    pass
+                rec["ppc"] = (row.get("pp_currency") or "").strip()
+            acq = (row.get("acquisitiondate") or "").strip()
+            if acq:
+                rec["acq"] = acq[:10]
+            if rec:
+                out[oid] = rec
+    return out
+
+
 def repo_url():
     """The GitHub link in the corner, read from the checkout's own origin so a
     fork points at itself. Falls back to this project's home."""
@@ -601,7 +637,8 @@ def main():
 
     games = load_games()
     tags, tag_idx = tag_index(games)
-    data = compact(games, tag_idx, inline=not a.link_thumbs)
+    data = compact(games, tag_idx, inline=not a.link_thumbs,
+                   private=load_private())
     # The page opens sorted by rank; emit the rows that way so a viewer with no
     # JavaScript gets the same order rather than raw cache order.
     data.sort(key=lambda g: (g["rk"] is None, g["rk"] or 10 ** 9))

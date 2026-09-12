@@ -630,10 +630,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         game.</dd>
       <dt>Acquired · Price paid</dt><dd>Both live in the private part of a
         collection entry, which the API never returns. They come from a CSV
-        export of your collection instead — download it from your BGG
-        collection page and save it as <code>data/collection.csv</code>; the
-        sync says so too. Blank for any game you have not filled in on
-        BGG.</dd>
+        export instead — download it from your BGG collection page and save it
+        as <code>data/collection.csv</code>. That file is gitignored and read
+        only while a report is being written, so these two columns exist only
+        in reports you build yourself: nothing private reaches the saved data
+        or a hosted copy.</dd>
       <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale, shown as a bar:
         green is light, red is heavy.</dd>
       <dt>Interact</dt><dd>How much the players' games touch each other —

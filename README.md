@@ -225,10 +225,13 @@ is the only way to get **price paid** and **acquisition date**: BGG keeps
 those in the private part of a collection entry and the API never returns
 them, however it is authenticated. Nothing else fills those columns — the
 sync says as much when the file is missing rather than substituting a date
-that only looks right. `data/collection.csv` is gitignored, since it says what
-you paid for every game; a price that reaches `data/games.json` is committed
-and published with the report, so `python3 scripts/build.py --no-private`
-leaves it out.
+that only looks right.
+
+Those two fields never leave the machine. `data/collection.csv` is gitignored,
+and `report.py` reads it *while rendering* rather than `build.py` folding it
+into `data/games.json`, so the committed data cannot carry a price and neither
+can the hosted page, which is built from a checkout that has no CSV in it.
+They appear only in a report you build yourself.
 
 ## How it works
 

@@ -2,7 +2,6 @@
 """Normalise the cached XML into data/games.json.
 
     python3 scripts/build.py
-    python3 scripts/build.py --no-private   # leave price paid out
 
 Note: in BGG's XML most scalars live in a `value` attribute, not element
 text — `<playingtime value="90"/>`, `<averageweight value="3.86"/>`. Reading
@@ -140,40 +139,6 @@ def load_ai():
     return out
 
 
-def load_private():
-    """Price paid and acquisition date from a BGG collection CSV export.
-
-    BGG hands these out in the CSV you can download from your own collection
-    page but not through the XML API, which has no access to the private part
-    of a collection entry however it is authenticated. Drop the export at
-    data/collection.csv and the columns fill in.
-    """
-    f = ROOT / "data" / "collection.csv"
-    if not f.exists():
-        return {}
-    import csv
-    out = {}
-    with f.open(newline="", encoding="utf-8") as fh:
-        for row in csv.DictReader(fh):
-            oid = row.get("objectid")
-            if not oid or row.get("own") != "1":
-                continue
-            rec = {}
-            price = (row.get("pricepaid") or "").strip()
-            if price and price not in ("0.00", "0"):
-                try:
-                    rec["price"] = float(price)
-                except ValueError:
-                    pass
-                rec["currency"] = (row.get("pp_currency") or "").strip()
-            acq = (row.get("acquisitiondate") or "").strip()
-            if acq:
-                rec["acquired"] = acq[:10]
-            if rec:
-                out[oid] = rec
-    return out
-
-
 def load_plays():
     """When each game was last played, from scripts/plays.py. Absent is fine."""
     f = ROOT / "data" / "plays.json"
@@ -305,10 +270,6 @@ def games_from_csv(rows):
 
 
 def main():
-    # Price paid is the one field here that is nobody else's business: it goes
-    # into data/games.json, which is committed, and into a report that is
-    # published. --no-private leaves it out of both.
-    keep_private = "--no-private" not in sys.argv
     # The collection exports say what is owned and which of it is an expansion;
     # the per-id detail files supply everything else. Driving the build from the
     # collection means a game you no longer own simply stops appearing.
@@ -334,8 +295,7 @@ def main():
         print(f"no cached BGG data — building from data/collection.csv "
               f"({len(games)} items, no mechanics, poll percentages or images)")
 
-    plays, mine, acquired, edited = collection_stats()
-    private = load_private()
+    plays, mine, _acquired, edited = collection_stats()
     csv_plays, csv_rating = {}, {}
     for r in rows:
         oid = r.get("objectid")
@@ -363,10 +323,9 @@ def main():
             ]
         g["plays"] = plays.get(g["id"], csv_plays.get(g["id"], 0))
         g["my_rating"] = mine.get(g["id"]) or csv_rating.get(g["id"])
-        priv = private.get(g["id"], {})
-        g["acquired"] = priv.get("acquired") or acquired.get(g["id"])
-        g["price_paid"] = priv.get("price") if keep_private else None
-        g["currency"] = priv.get("currency") if keep_private else None
+        # Nothing private goes in here: data/games.json is committed and
+        # published. Price paid and acquisition date are read straight from
+        # the gitignored CSV by report.py, at render time.
         g["edited"] = edited.get(g["id"])
         g["last_played"] = (played.get(g["id"]) or {}).get("last") or None
 

@@ -44,7 +44,9 @@ Without a BGG token, drop a collection CSV export at `data/collection.csv`:
 `build.py` falls back to it (no mechanics, poll percentages or images, but
 ranks, ratings, weights, play counts and BGG's best/recommended player counts
 all survive) and `sync.py` skips every network step. With a token, the same
-file is still the only source of **price paid** and **acquisition date**.
+file is still the only source of **price paid** and **acquisition date** —
+read by `report.py` at render time, never folded into `data/games.json`, so
+nothing private is committed or published.
 
 `scripts/sync.py` runs the whole pipeline: fetch → plays → thumbs → gallery →
 build → enrich → bggids → report. `plays.py` caches the play log

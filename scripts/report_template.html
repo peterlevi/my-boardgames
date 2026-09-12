@@ -1235,8 +1235,7 @@ TBODY.addEventListener('click', function (e) {
     render();
     var target = TBODY.querySelector('tr[data-i="' + gi + '"]');
     if (target && !target.hidden) {
-      target.click();
-      target.scrollIntoView({ block: 'center' });
+      target.click();          // which scrolls the row to the top for us
     }
     return;
   }
@@ -1259,7 +1258,49 @@ TBODY.addEventListener('click', function (e) {
     document.querySelectorAll('thead th').length + '">' + buildDetail(g) + '</td>';
   tr.parentNode.insertBefore(row, tr.nextSibling);
   openDetail = row;
+  scrollRowToTop(tr);
 });
+
+/** Sticky headers overlap the top of the table, so a row scrolled flush to the
+ *  viewport top would hide under them. Only pay that toll where the headers are
+ *  actually sticky — on narrow screens they scroll away with the table. */
+function headerPad() {
+  var th = document.querySelector('thead th');
+  if (!th) return 0;
+  var pos = window.getComputedStyle ? window.getComputedStyle(th).position : '';
+  return pos === 'sticky' ? th.getBoundingClientRect().height : 0;
+}
+
+/** A hand-rolled tween rather than scroll-behavior:smooth, whose duration the
+ *  browser picks and stretches with distance — expanding a row near the bottom
+ *  of a long list crawled. Fixed 260ms keeps it quick from anywhere. */
+var scrollAnim = null;
+function smoothScrollTo(y) {
+  var max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+  y = Math.max(0, Math.min(y, max));
+  var start = window.pageYOffset, delta = y - start;
+  if (scrollAnim) { cancelAnimationFrame(scrollAnim); scrollAnim = null; }
+  var reduce = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || Math.abs(delta) < 2 || !window.requestAnimationFrame) {
+    window.scrollTo(0, y);
+    return;
+  }
+  var t0 = null;
+  function step(ts) {
+    if (t0 === null) t0 = ts;
+    var p = Math.min(1, (ts - t0) / 260);
+    var e = 1 - Math.pow(1 - p, 3);            // ease-out cubic
+    window.scrollTo(0, start + delta * e);
+    scrollAnim = p < 1 ? requestAnimationFrame(step) : null;
+  }
+  scrollAnim = requestAnimationFrame(step);
+}
+
+/** Bring a just-expanded row to the top so its panel is what you are looking at. */
+function scrollRowToTop(tr) {
+  smoothScrollTo(window.pageYOffset + tr.getBoundingClientRect().top - headerPad() - 8);
+}
 
 [].forEach.call(document.querySelectorAll('th[data-k]'), function (th) {
   th.addEventListener('click', function () {

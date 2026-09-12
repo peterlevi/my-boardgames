@@ -463,8 +463,8 @@ def rows_html(data, a):
                        if len(who) > 1 else '') + '</span>') if who else EM_DASH
         # The designer also rides in the game cell, for the "Game, Year,
         # Designer" column choice and for widths that drop the column.
-        who_short = (esc(", ".join(who[:2]))
-                     + (f' +{len(who) - 2}' if len(who) > 2 else "")) if who else ""
+        who_short = (esc(", ".join(who[:4]))
+                     + (f' +{len(who) - 4}' if len(who) > 4 else "")) if who else ""
         # Empty parts are left out entirely: the separator is drawn by CSS
         # between them, so an empty span would leave a stray dot behind.
         meta_html = ((f'<span class="m-yr">{g["y"]}</span>' if g["y"] else "")

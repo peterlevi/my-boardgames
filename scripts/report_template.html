@@ -1321,6 +1321,7 @@ function render() {
   var oc = el('outcount');
   oc.textContent = outside.length ? '+' + outside.length + ' outside filters' : '';
   oc.hidden = !outside.length;
+  saveFilters();
 }
 
 // Clicking a row opens a panel underneath with everything the columns cannot
@@ -1710,10 +1711,7 @@ function scrollRowToTop(tr) {
     if (!k || Date.now() - draggedAt < 300) return;
     sortDesc = (k === sortKey) ? !sortDesc : false;
     sortKey = k;
-    [].forEach.call(document.querySelectorAll('th'), function (o) {
-      o.removeAttribute('aria-sort');
-    });
-    th.setAttribute('aria-sort', sortDesc ? 'descending' : 'ascending');
+    markSort();
     render();
   });
 });
@@ -1737,9 +1735,13 @@ document.getElementById('tagsearch')
 el('reset').addEventListener('click', function () {
   applyDefaults();
   // A reset clears the player-count rule too, rather than returning to the
-  // count the page happened to open on.
+  // count the page happened to open on — and forgets what was remembered.
   F.players.value = '0';
+  sortKey = 'rk';
+  sortDesc = false;
+  forgetFilters();
   syncSelects();
+  markSort();
   render();
 });
 
@@ -1768,6 +1770,11 @@ setStickyTop();
 // stays in the DOM and keeps its value, so nothing here is load-bearing: with
 // scripts blocked the plain selects are what you get, and they work.
 function enhanceSelect(sel) {
+  // Measured before anything moves: a native <select> is already sized to its
+  // widest option, so adopting that width means the swap changes nothing on
+  // screen. Measuring the options afterwards instead left every control a few
+  // pixels off and the filter row visibly re-flowed on load.
+  var keepWidth = Math.ceil(sel.getBoundingClientRect().width);
   var wrap = document.createElement('span');
   wrap.className = 'sel enhanced';
   sel.parentNode.insertBefore(wrap, sel);
@@ -1833,19 +1840,10 @@ function enhanceSelect(sel) {
   sel.addEventListener('change', sync);
   sync();
 
-  // Size to the longest option once, so choosing a shorter one does not make
-  // the control — and everything after it on the row — jump leftwards.
-  var widest = 0;
-  var probe = document.createElement('span');
-  probe.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;';
-  probe.style.font = getComputedStyle(btn).font;
-  document.body.appendChild(probe);
-  [].forEach.call(sel.options, function (o) {
-    probe.textContent = o.text;
-    widest = Math.max(widest, probe.getBoundingClientRect().width);
-  });
-  probe.parentNode.removeChild(probe);
-  btn.style.width = Math.ceil(widest) + 42 + 'px';
+  // Pin that width, so choosing a shorter option does not make the control —
+  // and everything after it on the row — jump leftwards. Not on a phone,
+  // where the controls are told to fill half the row instead.
+  if (keepWidth && window.innerWidth > 700) wrap.style.width = keepWidth + 'px';
   wrap._close = function () { open(false); };
   wrap._sync = sync;
   return wrap;
@@ -2135,13 +2133,66 @@ function buildColMenu() {
   wireDrag();
 }
 
+/* ---- remembering the filters ----------------------------------------- */
+/** The filters and the sort live in this browser alongside the column choice,
+ *  so coming back to the page finds it as you left it. Tags are stored by
+ *  name rather than index: the index moves whenever the collection changes.
+ */
+var FILTKEY = 'bgg-filters-v1';
+
+function saveFilters() {
+  try {
+    var vals = {};
+    Object.keys(F).forEach(function (k) { vals[k] = F[k].value; });
+    window.localStorage.setItem(FILTKEY, JSON.stringify({
+      v: vals,
+      tags: pickedTags().map(function (i) { return TAGS[i].k + '|' + TAGS[i].n; }),
+      sort: sortKey, desc: sortDesc
+    }));
+  } catch (e) { /* storage off: nothing to remember with */ }
+}
+
+function loadFilters() {
+  var saved;
+  try {
+    saved = JSON.parse(window.localStorage.getItem(FILTKEY) || 'null');
+  } catch (e) { return; }
+  if (!saved) return;
+  Object.keys(F).forEach(function (k) {
+    if (saved.v && typeof saved.v[k] === 'string') F[k].value = saved.v[k];
+  });
+  var want = {};
+  (saved.tags || []).forEach(function (key) { want[key] = 1; });
+  for (var i = 0; i < TAGS.length; i++) {
+    if (want[TAGS[i].k + '|' + TAGS[i].n] && tagRows[i]) {
+      tagRows[i].firstChild.checked = true;
+    }
+  }
+  if (saved.sort) { sortKey = saved.sort; sortDesc = !!saved.desc; }
+}
+
+function forgetFilters() {
+  try { window.localStorage.removeItem(FILTKEY); } catch (e) { /* fine */ }
+}
+
+/** Put the caret on whichever column the sort is actually using. */
+function markSort() {
+  [].forEach.call(document.querySelectorAll('th'), function (o) {
+    o.removeAttribute('aria-sort');
+  });
+  var th = document.querySelector('th[data-k="' + sortKey + '"]');
+  if (th) th.setAttribute('aria-sort', sortDesc ? 'descending' : 'ascending');
+}
+
 loadCols();
 buildColMenu();
 applyOrder();
 applyCols();
 applyDefaults();
+loadFilters();
+syncSelects();
 refreshTagList();
-document.querySelector('th[data-k="rk"]').setAttribute('aria-sort', 'ascending');
+markSort();
 render();
 </script>
 </body></html>

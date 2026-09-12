@@ -294,7 +294,7 @@ table { width:100%; table-layout:fixed; border-collapse:separate;
 th.w-thumb { width:52px; } th.w-rank { width:56px; }
 th.w-hex { width:54px; } th.w-plays { width:58px; }
 th.w-time { width:72px; } th.w-weight { width:70px; }
-th.w-ix { width:86px; } th.w-designer { width:150px; }
+th.w-ix { width:104px; } th.w-designer { width:150px; }
 th.w-date { width:106px; } th.w-price { width:96px; }
 th.w-score { width:112px; }
 th.w-year { width:64px; }
@@ -677,7 +677,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         or a hosted copy.</dd>
       <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale, shown as a bar:
         green is light, red is heavy.</dd>
-      <dt>Interact</dt><dd>How much the players' games touch each other —
+      <dt>Interaction</dt><dd>How much the players' games touch each other —
         Low, Medium or High. Not a BGG statistic; see below.</dd>
       <dt>At N</dt><dd>What the player-count poll says about the count you
         picked. <b>Best at N</b> = N drew more “Best” votes than any other
@@ -715,7 +715,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <h5>Where the data comes from</h5>
     <p>Everything above is BGG's own data, cached locally — every filter runs
     in this page and nothing calls out to BGG.</p>
-    <p>Three fields are not BGG's: <b>Interact</b>, <b>Win condition</b> and
+    <p>Three fields are not BGG's: <b>Interaction</b>, <b>Win condition</b> and
     <b>Point salad</b>, along with the “What people say” notes in an
     expanded row, come from a local database built with Claude from what is
     known about each game (a few looked up on the web, marked where so). No
@@ -747,6 +747,12 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       </select></div>
     <div class="f"><label for="exp">Expansions</label>
       <select id="exp"><!--__EXP_OPTIONS__--></select></div>
+    <div class="f"><label for="played">Played</label>
+      <select id="played">
+        <option value="any">Any</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select></div>
     <div class="f"><label for="win">Win condition</label>
       <select id="win"><!--__WIN_OPTIONS__--></select></div>
     <div class="f"><label for="salad">Point salad</label>
@@ -844,7 +850,7 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="num hide-sm hide-s c-pl w-plays" data-k="pl" data-col="pl">Plays</th>
     <th class="num c-tmax w-time" data-k="tmax" data-col="tmax">Time</th>
     <th class="num hide-sm hide-xs c-w w-weight" data-k="w" data-col="w">Weight</th>
-    <th class="hide-sm hide-xs c-ix w-ix" data-k="ix" data-col="ix">Interact</th>
+    <th class="hide-sm hide-xs c-ix w-ix" data-k="ix" data-col="ix">Interaction</th>
     <th class="num hide-sm c-acq w-date" data-k="acq" data-col="acq">Acquired</th>
     <th class="num hide-sm c-lp w-date" data-k="lp" data-col="lp">Last played</th>
     <th class="num hide-sm c-sc w-score" data-k="sc" data-col="sc"
@@ -1013,7 +1019,7 @@ var F = {
   mymin: el('mymin'), mymax: el('mymax'),
   wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
   tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'),
-  ymin: el('ymin'), ymax: el('ymax'),
+  ymin: el('ymin'), ymax: el('ymax'), played: el('played'),
   exp: el('exp')
 };
 
@@ -1026,6 +1032,7 @@ function applyDefaults() {
   F.exp.value = OPTS.expansions;
   F.ix.value = '';
   F.tagmode.value = 'all';
+  F.played.value = 'any';
   document.getElementById('tagsearch').value = '';
   tagRows.forEach(function (r) { r.firstChild.checked = false; });
   refreshTagList();
@@ -1812,6 +1819,21 @@ function scrollRowToTop(tr) {
 // nothing on the phone. Listen for both.
 Object.keys(F).forEach(function (k) {
   if (!F[k]) { return; }   // a renamed control should not abort setup
+  if (k === 'played') {
+    F[k].addEventListener('change', function () {
+      playedToRange();
+      render();
+    });
+    return;
+  }
+  if (k === 'plmin' || k === 'plmax') {
+    F[k].addEventListener('input', function () {
+      rangeToPlayed();
+      syncSelects();
+      render();
+    });
+    return;
+  }
   F[k].addEventListener('input', render);
   // A text field also fires `change` when it loses focus, which re-rendered
   // the table between the mousedown and the mouseup of the very click that
@@ -1957,6 +1979,22 @@ function syncSelects() {
   enhanced.forEach(function (w) { if (w._sync) w._sync(); });
 }
 
+/** "Played" is a friendlier face on the Plays range: picking one sets the
+ *  numbers, and typing numbers sets it back — anything that is neither
+ *  "never" nor "at least once", like 0 to 2, reads as Any. */
+function playedToRange() {
+  var v = F.played.value;
+  F.plmin.value = v === 'yes' ? '1' : v === 'no' ? '0' : '';
+  F.plmax.value = v === 'no' ? '0' : '';
+}
+
+function rangeToPlayed() {
+  var lo = F.plmin.value.trim(), hi = F.plmax.value.trim();
+  F.played.value = (lo === '' && hi === '') ? 'any'
+    : (lo === '0' && hi === '0') ? 'no'
+    : (lo === '1' && hi === '') ? 'yes' : 'any';
+}
+
 /** Reflect filter state in the chrome: which controls are off their default,
  *  and whether Rule means anything at all. */
 function markFilters() {
@@ -1965,7 +2003,8 @@ function markFilters() {
     win: OPTS.win, salad: OPTS.salad, exp: OPTS.expansions,
     tagmode: 'all',
     smin: '', smax: '', mymin: '', mymax: '', wmin: '', wmax: '',
-    tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: ''
+    tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: '',
+    played: 'any'
   };
   Object.keys(F).forEach(function (k) {
     var input = F[k];
@@ -2006,7 +2045,7 @@ var COLUMNS = [
   { k: 'th', n: 'Cover' }, { k: 'rk', n: 'Rank' }, { k: 'av', n: 'BGG' },
   { k: 'my', n: 'Mine' }, { k: 'y', n: 'Year' },
   { k: 'ds', n: 'Designer', off: true }, { k: 'pl', n: 'Plays' },
-  { k: 'tmax', n: 'Time' }, { k: 'w', n: 'Weight' }, { k: 'ix', n: 'Interact' },
+  { k: 'tmax', n: 'Time' }, { k: 'w', n: 'Weight' }, { k: 'ix', n: 'Interaction' },
   { k: 'acq', n: 'Acquired', off: true },
   { k: 'lp', n: 'Last played', off: true },
   { k: 'sc', n: 'Winning score', off: true },
@@ -2267,6 +2306,7 @@ function loadFilters() {
     }
   }
   if (saved.sort) { sortKey = saved.sort; sortDesc = !!saved.desc; }
+  rangeToPlayed();
 }
 
 function forgetFilters() {

@@ -307,7 +307,7 @@ def salad(f):
     return level
 
 
-def _win_for(end, by, shape, fallback="", money=True):
+def _win_for(end, by, shape, fallback="", money=True, primary=False):
     """One ending, as a way of winning. `by` is what the rules say settles it;
     the score's shape stands in when a record does not say."""
     if end == "coop_goal":
@@ -315,6 +315,12 @@ def _win_for(end, by, shape, fallback="", money=True):
     if end == "elimination":
         return "elimination"
     if by == "instant" or (not by and end == "sudden_death"):
+        # Winning the moment you finish something is a race when that is how
+        # the game normally ends — The Quest for El Dorado's finish line — and
+        # a sudden death when it is the alternative to the usual ending, like
+        # Root's dominance card next to its race to thirty.
+        if primary and end != "sudden_death":
+            return "race"
         return "sudden"
     from_shape = {"single_currency": "money" if money else "points",
                   "lowest_category": "lowest",
@@ -348,8 +354,8 @@ def wins(f):
     fallback = next((by for _, by in ends if by and by != "instant"), "")
     money = is_money(f)
     out = []
-    for how, by in ends:
-        w = _win_for(how, by, shape, fallback, money)
+    for n, (how, by) in enumerate(ends):
+        w = _win_for(how, by, shape, fallback, money, primary=(n == 0))
         if w not in out:
             out.append(w)
     return out[:3]

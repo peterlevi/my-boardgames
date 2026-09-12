@@ -92,6 +92,8 @@ h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
 .f { display:flex; flex-direction:column; gap:3px; }
 .f > label { font-size:.68rem; text-transform:uppercase; letter-spacing:.06em;
   color:var(--muted); font-weight:600; }
+/* Ticks and dots in the page's own brown rather than the browser's blue. */
+input[type="checkbox"], input[type="radio"] { accent-color:var(--accent); }
 input, select, .selbtn { font:inherit; font-size:.84rem; color:var(--ink);
   background:var(--panel); border:1px solid var(--line); border-radius:7px;
   padding:6px 9px; }

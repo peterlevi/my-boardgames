@@ -20,21 +20,31 @@
  },
  "scoring": {
   "subsystems": [
-   "Regional weather-dial tracks (rain, wind, temperature) each with independent VP payouts",
-   "City/project completion",
-   "University degree/tech advancement"
+   "R&D/technology track progression",
+   "contract fulfillment",
+   "city development and reputation"
   ],
   "sources": [
-   "Weather track bonuses per region",
-   "Completed city contracts/projects",
-   "Degrees and technology milestones"
+   "Contracts/requests fulfilled",
+   "Automatons built",
+   "Storm penalties",
+   "Sector/track completion bonuses"
   ],
-  "winning_score": 130,
+  "turn_actions": 5,
+  "winning_score": 180,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You juggle several independent weather-adjustment tracks and project/degree tracks, each paying VP as you hit milestones; when the end-trigger condition is reached, VP from all these subsystems plus leftover resources are totaled and the highest sum wins."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "Players use action points to research technologies, adjust weather stats, and fulfill contracts across a shared board; the game ends when a triggering track/condition is reached, and whoever has accumulated the most points from research, contracts, and city development wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "On Mars",

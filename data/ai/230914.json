@@ -18,20 +18,39 @@
  },
  "scoring": {
   "subsystems": [
-   "tile-placement land features (roads, cities, monasteries, farms)",
-   "trade-goods majority bonus (Traders & Builders)"
+   "tile & meeple placement scoring (roads, cities, monasteries, farms — including Inns & Cathedrals' higher-stakes big roads/cities)",
+   "trade goods majority scoring (wine/cloth/grain, from Traders & Builders)",
+   "gold bar accumulation scoring (from The Gold Mines)"
   ],
   "sources": [
-   "completed cities/roads/monasteries scored during play",
-   "farm points scored at game end",
-   "goods-token majorities scored at game end"
+   "completed roads (1 pt/tile, 2 with an inn)",
+   "completed cities (2 pts/tile+shield, 3 with a cathedral)",
+   "completed monasteries (9 pts)",
+   "incomplete features at game end (1 pt/tile)",
+   "farms scored at game end (3 pts per adjacent completed city, majority)",
+   "trade goods majority bonus (10 pts each for most wine/cloth/grain)",
+   "gold bar tiered endgame bonus",
+   "messenger mini-expansion bonus points/actions"
   ],
-  "winning_score": 100,
+  "winning_score": 150,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You place tiles and meeples to build roads, cities, and monasteries (scored as they're completed) and claim farms and goods majorities (scored at the end); when the tile supply runs out, the player with the most total points wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Players place tiles and meeples to claim roads, cities, monasteries and farms, scoring roads/cities/monasteries as soon as they're completed and farms plus trade-goods and gold-bar bonuses only at the end; when the tile supply runs out the game ends and the highest total wins.",
+  "checked": [
+   "https://carcassonne.fandom.com/wiki/Big_Box_6",
+   "https://www.ultraboardgames.com/carcassonne/game-rules.php",
+   "https://boardgamegeek.com/thread/2110156/typical-scores",
+   "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/zm7812_carcassonne_exp2_rules.pdf"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Kingdomino",

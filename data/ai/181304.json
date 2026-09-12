@@ -18,15 +18,27 @@
  },
  "scoring": {
   "subsystems": [
-   "cooperative clue interpretation/deduction"
+   "cooperative vision-clue deduction"
   ],
-  "sources": [],
+  "sources": [
+   "correct suspect/location/weapon guesses",
+   "final vision accuracy"
+  ],
+  "turn_actions": 1,
   "winning_score": 0,
   "tally": "endgame",
   "shape": "objective_count",
-  "ends_by": "coop_goal",
-  "sudden_death_common": true,
-  "how_you_win": "There's no point total: mediums must correctly identify the suspect, location, and weapon from the ghost's visions within a limited number of rounds, then all guess correctly together in a final vision to win outright, or the team loses."
+  "ends_by": [
+   "coop_goal",
+   "fixed_length"
+  ],
+  "how_you_win": "There's no score; the mediums win by correctly deducing the culprit, location, and weapon from the ghost's visions, then confirming it with a correct final guess, all before the clock of vision cards runs out.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "objectives"
+   }
+  ]
  },
  "similar": [
   "Dixit",

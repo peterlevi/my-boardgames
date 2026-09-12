@@ -18,22 +18,36 @@
  },
  "scoring": {
   "subsystems": [
-   "fulfilling sales/production orders for VP",
-   "R&D technology tree development for bonus VP",
-   "track progress (e.g., investor/relations tracks) for endgame bonuses"
+   "assembly line production/efficiency",
+   "R&D and patent development",
+   "contract fulfillment and sales"
   ],
   "sources": [
-   "order fulfillment VP",
-   "R&D tree completion bonuses",
-   "track position endgame bonuses",
-   "leftover resource/token VP"
+   "VP from completed customer contracts",
+   "VP from R&D track and patent progress",
+   "VP from assembly line efficiency bonuses",
+   "VP from marketing/sales track position",
+   "penalties for unmet demand or inefficiency"
   ],
-  "winning_score": 120,
+  "turn_actions": 5,
+  "winning_score": 180,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Manage production departments to fulfill EV orders, advance R&D and relationship tracks, and trigger bonus payouts; when the end-game trigger fires, total VP from orders, tech, and tracks determines the winner."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "Players use action points across departments (R&D, assembly stations, sales, imports) to build an efficient EV production engine, fulfill contracts, and advance tech/patent tracks; after the fixed number of rounds, all engine, contract, and track VP are totaled and the highest score wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Kanban: Automotive Revolution",

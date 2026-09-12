@@ -18,17 +18,28 @@
  },
  "scoring": {
   "subsystems": [
-   "potion delivery via risk-based role selection"
+   "potion delivery along a path",
+   "house building"
   ],
   "sources": [
-   "VP from potions delivered to matching houses"
+   "potion delivery VP (per track space reached)",
+   "house building VP",
+   "brave-role bonus VP"
   ],
-  "winning_score": 45,
+  "turn_actions": 1,
+  "winning_score": 25,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Each round you simultaneously commit action cards (playing them 'bold' for a stronger but riskier effect or 'shy' for a safe weaker one) to move potions to matching-colored houses for VP; after 7 rounds, the most VP wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After 7 rounds of 4 turns each, whoever has earned the most VP from delivering potions to houses and building houses along the way wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Witch's Brew",

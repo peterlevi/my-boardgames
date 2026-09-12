@@ -21,22 +21,31 @@
  },
  "scoring": {
   "subsystems": [
-   "technology track advancement",
-   "evolutionary trait/mutation development",
-   "territory exploration and development"
+   "technology/evolution track advancement",
+   "territorial exploration and area presence",
+   "event/mission objective completion"
   ],
   "sources": [
-   "tech track positions",
-   "evolved traits",
-   "explored/developed territory",
-   "end-game objective and track bonuses"
+   "Development track progress (tech/culture tracks)",
+   "Evolution cards acquired",
+   "Territory exploration/control",
+   "Achievement or wonder completion bonuses"
   ],
-  "winning_score": 130,
+  "turn_actions": 3,
+  "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You guide a civilization's technological and biological evolution across several parallel tracks and expand over the board using dice-driven actions; the game ends once an end-condition is triggered, and the player with the highest combined score across all tracks and bonuses wins."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "Over a set number of ages, players advance their civilization along tech and evolution tracks, explore territory, and complete objectives, scoring points along several tracks; the highest combined total at the end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "The Castles of Burgundy",

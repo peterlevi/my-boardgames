@@ -19,16 +19,25 @@
   "detail": "Every trick affects the whole team's shared mission state, and the entire challenge is inferring teammates' hands from extremely limited signals rather than open talk. There's no individual tableau; the trick pile and mission tasks are fully shared."
  },
  "scoring": {
-  "subsystems": [],
-  "sources": [
-   "completion of each mission's specific task conditions"
+  "subsystems": [
+   "cooperative task completion"
   ],
-  "winning_score": 0,
-  "tally": "running",
+  "sources": [],
+  "turn_actions": 1,
+  "winning_score": 50,
+  "tally": "endgame",
   "shape": "objective_count",
-  "ends_by": "coop_goal",
-  "sudden_death_common": false,
-  "how_you_win": "There is no score; each of the 50 missions assigns players individual card-based tasks (like 'I will win no tricks' or 'this card wins a specific trick'), and the team wins that mission only if every task is completed correctly through the trick-taking play."
+  "ends_by": [
+   "coop_goal",
+   "sudden_death"
+  ],
+  "how_you_win": "The team is dealt a hand of tasks (cards each player must win in specific tricks, sometimes in order) and coordinates with a single limited communication token; a mission is won only if every assigned task is completed exactly as required, with campaign progress measured by how many of the 50 numbered missions the group clears.",
+  "endings": [
+   {
+    "how": "coop_goal",
+    "decided_by": "objectives"
+   }
+  ]
  },
  "similar": [
   "The Mind",

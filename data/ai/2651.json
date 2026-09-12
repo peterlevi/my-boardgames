@@ -20,18 +20,26 @@
  },
  "scoring": {
   "subsystems": [
-   "network/power-plant economy (bidding for plants, buying resources, connecting cities)"
+   "network/power economy (plants, resources, cities powered)"
   ],
   "sources": [
-   "number of cities powered at game end",
-   "money as tiebreaker"
+   "cities powered in the final round",
+   "leftover money (tiebreaker)"
   ],
+  "turn_actions": 3,
   "winning_score": 17,
-  "tally": "mixed",
+  "tally": "endgame",
   "shape": "objective_count",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Once a player's network reaches the game's city threshold, one final round is played and whoever powers the most cities wins, with leftover money breaking ties."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Once someone's network reaches the game-end city threshold, one more round is played and whoever powers the most cities that round wins, ties broken by cash on hand.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "objectives"
+   }
+  ]
  },
  "similar": [
   "Brass: Birmingham",

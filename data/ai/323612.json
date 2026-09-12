@@ -18,21 +18,32 @@
  },
  "scoring": {
   "subsystems": [
-   "area majority (forest/torii placement)",
-   "hand/deck-building engine (yōkai cards)",
-   "set collection and objectives (pilgrims/kodamas)"
+   "yōkai card engine-building",
+   "forest-path area majority",
+   "kodama/pilgrim set collection"
   ],
   "sources": [
-   "area control majorities",
-   "resource/production tracks",
-   "completed objectives and sets"
+   "points from forest board space majorities",
+   "points from constructed shrines/structures",
+   "points from completed kodama or pilgrim sets",
+   "end-game yōkai card bonuses",
+   "wisdom/objective track bonuses"
   ],
-  "winning_score": 110,
+  "turn_actions": 3,
+  "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You build an engine of yōkai cards to place kodamas for area majorities, collect pilgrims and complete objectives; when a supply/track depletion triggers the endgame, the player with the most points from all these sources wins."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "You play yōkai cards to place dice-workers around the forest board, building up area majorities, structures and card sets that score along the way and again at game end; the highest combined total wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Res Arcana",

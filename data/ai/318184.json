@@ -20,20 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "tableau/deck-building VP engine",
-   "civilization-specific end-game bonus"
+   "tableau/deck-building engine (card VP and effects)",
+   "objective completion (Nation/legacy track)"
   ],
   "sources": [
-   "VP printed on acquired nation/tableau cards",
-   "civilization's unique end-game scoring card",
-   "leftover resources"
+   "Civilization cards played",
+   "Territory/war trophies",
+   "Nation objective completion"
   ],
+  "turn_actions": 3,
   "winning_score": 40,
-  "tally": "mixed",
+  "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Recruit and play cards into your tableau to accumulate victory points through the game, then add your civilization's specific end-game bonus once the nation deck has been exhausted for the final time; highest total wins."
+  "ends_by": [
+   "exhaustion",
+   "sudden_death"
+  ],
+  "how_you_win": "You build up your civilization's deck by playing and trading cards for their icons/effects; when the era/event decks run out (or a player is forced into game-ending civil collapse) totals are tallied and the highest VP from cards and completed objectives wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Imperium: Legends",

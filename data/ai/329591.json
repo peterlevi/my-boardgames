@@ -20,20 +20,31 @@
  },
  "scoring": {
   "subsystems": [
-   "rail network construction (route/connection VP)",
-   "technology track upgrades"
+   "Railroad network construction",
+   "Technology track advancement"
   ],
   "sources": [
-   "network connections built",
-   "technology track bonuses",
-   "end-game objective/contract bonuses"
+   "Track network length/connections",
+   "Technology track advancement bonuses",
+   "Factory/production points",
+   "End-game bonus cards",
+   "Engineer efficiency bonus"
   ],
-  "winning_score": 100,
-  "tally": "mixed",
+  "turn_actions": 4,
+  "winning_score": 150,
+  "tally": "endgame",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Build the most valuable connected rail network and advance technology through worker placement; the player with the highest combined VP after the fixed number of rounds wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "You place workers to extend track, upgrade locomotives/technology, and produce goods; when the round track or supply runs out, points from network size, tech levels, and bonus cards are totaled and the highest sum wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Great Western Trail",

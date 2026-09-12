@@ -20,20 +20,34 @@
  },
  "scoring": {
   "subsystems": [
-   "card-effect VP engine (four color decks: nobility, clergy, merchants, explorers)",
-   "monastery/ship favor track"
+   "four Influence Track majorities",
+   "Voyage card set-collection/multiplier scoring",
+   "Pilgrim (Santiago) track progress",
+   "Character-card Diploma set collection",
+   "leftover coin/shield/crown conversion"
   ],
   "sources": [
-   "victory point track advanced by played cards",
-   "monastery pilgrimage track position",
-   "end-game set/majority bonuses on cards"
+   "Monastery relationship track bonuses",
+   "Expedition (voyage) track bonus",
+   "Played card set/majority bonuses"
   ],
-  "winning_score": 85,
+  "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You draft dice each round to buy cards and take actions, most of which push your marker up a shared VP track immediately, then add a final round of card-driven bonuses; after the fixed number of rounds the highest total wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Play out exactly four rounds drafting and spending dice on tracks, voyages, and characters, then tally influence-track position bonuses, voyage rewards, diplomas, pilgrim progress, and leftover resources; whoever has the most total VP wins (ties go to earlier turn order).",
+  "checked": [
+   "https://dbldkr.com/how-to-play-coimbra-6-minute-guide/",
+   "https://www.meeplemountain.com/reviews/coimbra/"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Concordia",

@@ -21,23 +21,31 @@
  },
  "scoring": {
   "subsystems": [
-   "ship/route network building",
-   "technology/invention track",
+   "network/route connections between planets",
    "guest satisfaction set collection",
-   "company income & investment"
+   "technology/workforce upgrades"
   ],
   "sources": [
-   "end-game bonus cards",
-   "completed guest/contract sets",
-   "network connections built",
-   "leftover resources/income"
+   "connection completion bonuses",
+   "guest set-collection VP",
+   "end-game bonus tile VP",
+   "contract/goal completion VP",
+   "technology track VP"
   ],
+  "turn_actions": 5,
   "winning_score": 120,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a fixed number of years/rounds, the player who accumulates the most points from network expansion, technology, and satisfied guests wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over a fixed number of rounds, build out your ship's network, satisfy guests, and invent technologies; the player with the most accumulated VP at the end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Anachrony",

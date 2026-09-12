@@ -20,20 +20,28 @@
  },
  "scoring": {
   "subsystems": [
-   "tableau-building via worker placement and card play"
+   "tableau of played critters/constructions",
+   "special events and journeys"
   ],
   "sources": [
-   "printed points on Common/Unique cards",
-   "Prosperity card multiplier bonuses",
-   "Event card achievements",
-   "Journey card bonuses"
+   "Cards (base value and card-ability bonuses)",
+   "Events"
   ],
-  "winning_score": 60,
+  "turn_actions": 3,
+  "winning_score": 55,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You place workers across three seasons to gather resources and build a tableau of critter and construction cards, chasing Events (shared achievements) and Journey cards; after the fixed season structure ends, you total all card points, Event points, and Journey points, and the highest sum wins."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "After all players complete the four seasons ending in Winter, whoever has the most points from played cards, completed events, and journeys wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Wingspan",

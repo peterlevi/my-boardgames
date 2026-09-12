@@ -18,23 +18,30 @@
  },
  "scoring": {
   "subsystems": [
-   "Dwarf-class army scoring (five distinct formulas: blacksmiths, warriors, rangers, miners, mercenaries/heroes)",
-   "Leftover gold value"
+   "army composition scoring (per-class formulas)"
   ],
   "sources": [
-   "blacksmith total",
-   "warrior total",
-   "ranger total",
-   "miner gold bonus",
-   "hero bonuses",
-   "leftover coins"
+   "Blacksmiths",
+   "Warriors",
+   "Hunters",
+   "Explorers",
+   "Miners",
+   "Heroes"
   ],
-  "winning_score": 220,
+  "turn_actions": 1,
+  "winning_score": 110,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "After 3 reigns of bidding coins to recruit dwarves into your army, each of the five character classes is scored by its own rule and the totals (plus leftover coin value) are summed; the highest total wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After 3 eras of blind coin-bidding to draft dwarf cards, you total each of the five class-specific formulas plus hero bonuses; the highest combined total wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Ra",

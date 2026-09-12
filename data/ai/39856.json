@@ -20,18 +20,26 @@
  },
  "scoring": {
   "subsystems": [
-   "storyteller guessing-game scoring"
+   "storytelling/voting guess-matching"
   ],
   "sources": [
-   "points for correct/partial guesses of the storyteller's card",
-   "points for other players picking your decoy card"
+   "Storytelling guesses/votes"
   ],
+  "turn_actions": 1,
   "winning_score": 30,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "Each round players score based on whether others correctly guess the storyteller's card (never all or none) and whether their own decoy cards fool others; the first player to cross 30 points wins."
+  "ends_by": [
+   "target_score",
+   "exhaustion"
+  ],
+  "how_you_win": "As storyteller you want some but not all players to guess your card, and as a guesser you want to identify the storyteller's card while fooling others with your own; first to 30 points wins.",
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Mysterium",

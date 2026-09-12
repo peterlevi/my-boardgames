@@ -19,23 +19,31 @@
  },
  "scoring": {
   "subsystems": [
-   "speakeasy production and delivery of goods",
-   "district territory/turf majority control",
-   "corruption/bribery track",
-   "end-game favor/objective bonuses"
+   "district area majority",
+   "product production and delivery chain",
+   "contract/objective fulfillment",
+   "reputation/infamy track"
   ],
   "sources": [
-   "delivered goods income and prestige",
-   "district control bonuses",
-   "corruption track position",
-   "end-game objective/favor scoring"
+   "Infamy track",
+   "Territory/district control (area majority)",
+   "Contracts/deliveries fulfilled"
   ],
-  "winning_score": 160,
+  "turn_actions": 5,
+  "winning_score": 150,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You build up a speakeasy operation, running goods and worker-placement actions to grow production, extend influence over Manhattan's districts, and manage corruption, while banking points along the way; when the end trigger is reached, end-game bonuses are tallied and the highest overall score wins."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "Build up your speakeasy operation by controlling districts, brewing and delivering product to fulfill contracts, and climbing the reputation track; the highest combined score when the game-end trigger fires wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "On Mars",

@@ -18,21 +18,32 @@
  },
  "scoring": {
   "subsystems": [
-   "technology research",
-   "area majority/influence over star systems",
-   "achievements/events"
+   "technology research tree",
+   "galactic colonization/area majority",
+   "achievement completion"
   ],
   "sources": [
-   "technology cards researched",
-   "systems controlled/colonized",
-   "achievements completed"
+   "VP printed on researched technology cards",
+   "VP from controlled/colonized star systems",
+   "VP from claimed achievements",
+   "VP from economic development track",
+   "endgame event bonuses"
   ],
-  "winning_score": 120,
+  "turn_actions": 3,
+  "winning_score": 70,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You research technologies, expand economic and military influence across systems, and complete shared achievements; once enough achievements are claimed the game ends and the player with the most combined victory points wins."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Each turn you research a technology, which both advances your economy/colonization and can score points directly; the game ends once enough achievements are collectively claimed, and the player with the most accumulated VP from tech, colonies and achievements wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Race for the Galaxy",

@@ -20,17 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "goods delivery along a rail network onto a shared income/VP track"
+   "goods delivery network (VP/income track advancement)"
   ],
   "sources": [
-   "position on the income/victory-point track after deliveries"
+   "Goods delivery (link-length payouts)"
   ],
-  "winning_score": 100,
+  "turn_actions": 2,
+  "winning_score": 60,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Build track, upgrade your train, and deliver goods for the longest routes, choosing each time whether to bank the profit as cash or push your marker forward on the shared VP track; after a fixed number of rounds the furthest-advanced player wins."
+  "ends_by": [
+   "exhaustion",
+   "end_trigger"
+  ],
+  "how_you_win": "Deliver goods across your rail network, choosing each time whether to advance your victory point marker or your income marker; the game ends when the goods-cube supply runs dry, and whoever's VP marker (after loan penalties) is furthest ahead wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Age of Steam",

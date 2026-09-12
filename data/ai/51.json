@@ -19,17 +19,25 @@
  },
  "scoring": {
   "subsystems": [
-   "puzzle-solving for fewest-move robot solutions"
+   "move-count puzzle solving"
   ],
   "sources": [
-   "solved target chips"
+   "target chips won per puzzle"
   ],
+  "turn_actions": 1,
   "winning_score": 8,
   "tally": "running",
   "shape": "objective_count",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Call out the solution using the fewest robot moves to reach the current target before anyone else; the player who has collected the most target chips once the chip supply is exhausted wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Players race in real time to call out the fewest moves needed to route the matching robot to its target; whoever proves a valid solution at that count claims the chip, and whoever holds the most chips when the target deck runs out wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Rush Hour",

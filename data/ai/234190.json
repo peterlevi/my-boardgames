@@ -18,17 +18,25 @@
  },
  "scoring": {
   "subsystems": [
-   "unicorn stable collection"
+   "unicorn army building (playing unicorn cards to your stable while disrupting others)"
   ],
   "sources": [
-   "unicorn cards in your stable"
+   "number of unicorn cards currently in your stable (target 7)"
   ],
+  "turn_actions": 3,
   "winning_score": 7,
   "tally": "running",
   "shape": "objective_count",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "The first player to have 7 unicorns in their stable at any point immediately wins, though attack/instant cards from opponents can knock you back below that count."
+  "ends_by": [
+   "target_score"
+  ],
+  "how_you_win": "Draw and play unicorn, magic, and downgrade cards each turn to grow your own stable while sabotaging opponents'; the first player to have 7 unicorns in their stable wins immediately.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Exploding Kittens",

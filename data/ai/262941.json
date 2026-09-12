@@ -20,20 +20,27 @@
  },
  "scoring": {
   "subsystems": [
-   "area-majority domination scoring on the hex map",
-   "action-card driven VP gains (colonization, migration, wandering, etc.)"
+   "domination-card area-majority scoring",
+   "extinction/survival management"
   ],
   "sources": [
-   "dominance points on scored map elements",
-   "VP chips earned from actions",
-   "final scoring round bonuses"
+   "Habitat/element domination (majority control of habitat tile types, triggered repeatedly by Domination cards)"
   ],
+  "turn_actions": 9,
   "winning_score": 100,
-  "tally": "mixed",
+  "tally": "running",
   "shape": "majority_control",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You play action cards to spread your species and gain dominance across ocean regions and habitat types; over six rounds you accumulate VP chips and score bonus points for majority control of scored elements, with the highest total at the end winning."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "You place species pawns to hold majorities on hexes matching whichever elements the current domination cards target, scoring points each round; the player with the most accumulated points when the era ends wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Dominant Species",

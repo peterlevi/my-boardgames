@@ -18,18 +18,26 @@
  },
  "scoring": {
   "subsystems": [
-   "gem-card development engine (with automatic noble bonuses)"
+   "development card prestige engine"
   ],
   "sources": [
-   "prestige points on purchased development cards",
-   "noble tile bonus points"
+   "Development cards (prestige points)",
+   "Nobles"
   ],
+  "turn_actions": 3,
   "winning_score": 15,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "You collect gem chips to buy increasingly valuable development cards, whose discounts snowball your buying power, and nobles visit automatically once you meet their gem requirements; the instant a player reaches 15 points the round finishes out and whoever has the highest total wins."
+  "ends_by": [
+   "target_score"
+  ],
+  "how_you_win": "Collect gem chips to buy development cards that generate prestige points and permanent discounts; the round after a player reaches 15 points is completed and whoever has the most points wins.",
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Century: Spice Road",

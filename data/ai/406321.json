@@ -20,17 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "row-placement penalty avoidance (bull-head cards)"
+   "card-row penalty avoidance (bull-head collection)"
   ],
   "sources": [
-   "bull-head penalty points collected from rows you're forced to take"
+   "Bull's-head penalty points"
   ],
+  "turn_actions": 1,
   "winning_score": 20,
   "tally": "running",
-  "shape": "single_currency",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Play cards each turn trying not to be the one who completes a row of five and must take its bull-heads; penalties accumulate across hands until someone crosses 66, ending the game, and the lowest total penalty score wins."
+  "shape": "sum",
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Simultaneously play cards trying to avoid being the one who completes a row of 5 (taking its bull-heads); once someone's total penalty reaches 66 the game stops, and the player with the fewest accumulated bull-heads wins.",
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "lowest"
+   },
+   {
+    "how": "coop_goal",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Coloretto",

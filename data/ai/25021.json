@@ -19,19 +19,34 @@
  },
  "scoring": {
   "subsystems": [
-   "army/leader casualty tracking (per-side victory point pool)",
-   "capital/road objective capture"
+   "territorial control (political points from castles and resource locations)"
   ],
   "sources": [
-   "remaining victory points on each side's leadership track",
-   "control of both capitals"
+   "eliminating enemy leader blocks",
+   "controlling opponent territory/road spaces"
   ],
-  "winning_score": 0,
-  "tally": "running",
-  "shape": "single_currency",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "Each side starts with a pool of victory points that drains as its units are killed in battle; a side that hits zero loses immediately, and a side can also win outright by capturing both capitals, so games are usually decided by one of these sudden endings rather than running the full turn track."
+  "winning_score": 14,
+  "tally": "endgame",
+  "shape": "majority_control",
+  "ends_by": [
+   "sudden_death",
+   "fixed_length"
+  ],
+  "how_you_win": "You win instantly if you kill the enemy leader (or, as Tokugawa, capture Hideyori); if neither leader falls, the game ends after week 7 and whoever controls more political points — castles at 2 each, resource locations at 1 each — wins.",
+  "checked": [
+   "https://www.ultraboardgames.com/sekigahara/game-rules.php",
+   "https://www.gmtgames.com/living_rules/SekigaharaRules-2013.pdf"
+  ],
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Twilight Struggle",

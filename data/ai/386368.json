@@ -20,19 +20,38 @@
  },
  "scoring": {
   "subsystems": [
-   "temple/city construction track",
-   "faith and resource tech tracks"
+   "Temple construction",
+   "City walls & gates construction",
+   "Torah/Scribes teaching track",
+   "Altar fire & land development tracks"
   ],
   "sources": [
-   "renown/VP track advancement",
-   "endgame track-completion and bonus-card totals"
+   "Temple construction",
+   "Wall construction",
+   "Favor track",
+   "Objective/bonus cards"
   ],
-  "winning_score": 120,
+  "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You advance a personal VP track by chaining card actions to build up Jerusalem and progress tech tracks, and whoever has the most points when the game-end condition is triggered wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over three weeks of daily worker actions you build the Temple, rebuild walls and gates, teach the Torah, and tend the altar and land; after the third Sabbath all VP sources are tallied and whoever has the most wins.",
+  "checked": [
+   "https://board-game-rules.com/boardgames/ezra-and-nehemiah/",
+   "https://www.meeplemountain.com/reviews/ezra-and-nehemiah/"
+  ],
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Raiders of the North Sea",

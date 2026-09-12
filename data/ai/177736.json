@@ -20,21 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "home-board tile-laying and coverage",
-   "voyage/expedition exploration tracks"
+   "Board-coverage puzzle (home board + Norway board)",
+   "Occupation/exploration/animal tracks"
   ],
   "sources": [
-   "board coverage bonus minus empty squares",
-   "ship tiles",
-   "highest tile reached on each expedition track",
-   "occupations and unused goods penalties"
+   "Board/exploration coverage",
+   "Livestock",
+   "Ships",
+   "Occupation card bonuses"
   ],
-  "winning_score": 130,
+  "turn_actions": 1,
+  "winning_score": 100,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a fixed number of rounds you place polyomino tiles to cover your board and send Vikings on voyages; at the end you total board coverage, the best tile reached on each voyage track, and other bonuses/penalties, and the highest total wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over a fixed number of rounds of worker placement you gather goods, occupations, and animals and must tile your personal board with them to avoid steep penalties for empty squares; the player with the highest total after summing all categories and subtracting uncovered spaces wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Le Havre",

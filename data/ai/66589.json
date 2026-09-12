@@ -18,21 +18,29 @@
  },
  "scoring": {
   "subsystems": [
-   "colonization/shipping for direct VP",
-   "building network scored via periodic influence-track scorings plus a final money-to-VP conversion"
+   "trade/colonization economy",
+   "privilege (nobility) track"
   ],
   "sources": [
-   "colonies founded",
-   "buildings (factories, shipyards, churches) scored at intermediate scoring rounds",
-   "privileges/favor track",
-   "leftover money converted at game end"
+   "Buildings built",
+   "Colony production majority",
+   "Privilege track position"
   ],
+  "turn_actions": 6,
   "winning_score": 90,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You use rondel actions to found colonies, build up production buildings, and gain privileges; VP comes both immediately from colonizing and from periodic scorings of your buildings, plus a final conversion of leftover money, and the highest total when the game-end trigger is reached wins."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Win by accumulating the most victory points from constructing buildings, dominating colony production of sugar/gold/spices, and climbing the privilege track, tallied once the end-game trigger ends the game.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Antike",

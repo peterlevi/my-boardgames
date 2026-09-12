@@ -20,20 +20,31 @@
  },
  "scoring": {
   "subsystems": [
-   "silver mining and market trading for money on a fluctuating supply/demand market",
-   "city building via tile placement for endgame bonuses"
+   "mining/silver economy",
+   "building/city development"
   ],
   "sources": [
-   "profit from mining and trading silver",
-   "points from placed buildings/city tiles",
-   "completed plans or contracts"
+   "silver ore sold",
+   "building construction points",
+   "contract completion",
+   "market goods sold",
+   "endgame set/majority bonuses"
   ],
-  "winning_score": 100,
+  "turn_actions": 5,
+  "winning_score": 0,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You win by profiting the most from mining and trading silver on the game's dynamic market while also scoring points for the buildings and tiles you've added to the growing city."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "Players queue cards to mine silver, trade on a dynamic market, and construct buildings in the city; the game ends after a set number of rounds/events and the player with the most accumulated points wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Le Havre",

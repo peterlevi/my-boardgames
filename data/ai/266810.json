@@ -18,24 +18,32 @@
  },
  "scoring": {
   "subsystems": [
-   "outpost building along the road",
-   "apprentice colour majorities on buildings",
-   "quest card fulfillment",
-   "combat-strength (raid) track progress"
+   "city building (tile placement for VP and set bonuses)",
+   "recruiting paladins (colored set collection)",
+   "combat against invaders (defeated-enemy tokens)",
+   "faith vs. corruption balance"
   ],
   "sources": [
-   "outposts",
-   "buildings/apprentices",
-   "quests",
-   "combat strength",
-   "leftover silver"
+   "VP from buildings placed",
+   "VP from recruited paladins/colored sets",
+   "VP from enemies defeated",
+   "faith bonus / corruption penalty at game end",
+   "leftover resources (minor)"
   ],
-  "winning_score": 90,
+  "turn_actions": 5,
+  "winning_score": 70,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a set number of rounds you place paladins to build outposts, recruit apprentices onto buildings, complete quests, and fend off raiders; whoever totals the most points from all these tracks plus leftover silver at game end wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Place workers to build fortifications, recruit paladins, and fight off invaders while managing faith against corruption; highest total score when the final round ends wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Architects of the West Kingdom",

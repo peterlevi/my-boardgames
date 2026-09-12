@@ -20,19 +20,37 @@
  },
  "scoring": {
   "subsystems": [
-   "scenario objective completion (building/survival tasks)",
-   "morale and event/adventure card management"
+   "scenario objective completion",
+   "building/construction",
+   "exploration & discovery"
   ],
   "sources": [
-   "scenario victory conditions",
-   "morale track"
+   "building VP",
+   "discovery tile VP",
+   "event token penalties",
+   "leftover resource bonus",
+   "morale bonus"
   ],
-  "winning_score": 0,
+  "turn_actions": 5,
+  "winning_score": 15,
   "tally": "endgame",
-  "shape": "objective_count",
-  "ends_by": "coop_goal",
-  "sudden_death_common": false,
-  "how_you_win": "All players cooperate to survive events and complete the specific scenario's victory conditions (e.g., building a shelter, defeating a threat) before time runs out or the group's morale is depleted."
+  "shape": "sum",
+  "ends_by": [
+   "coop_goal",
+   "fixed_length",
+   "elimination"
+  ],
+  "how_you_win": "Players cooperatively explore, gather, hunt and build over a fixed number of weeks to complete the scenario's goal before time runs out or the group is defeated; success is then scored from building and discovery points minus event penalties.",
+  "endings": [
+   {
+    "how": "coop_goal",
+    "decided_by": "objectives"
+   },
+   {
+    "how": "elimination",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Tokaido",

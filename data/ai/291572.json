@@ -18,20 +18,36 @@
  },
  "scoring": {
   "subsystems": [
-   "Area control via warbands on sites/regions",
-   "Favor and secrets accumulation (Vision comparison)"
+   "favor & secret accumulation (suits)",
+   "military control of sites/regions",
+   "vision/objective fulfillment for Exiles"
   ],
   "sources": [
-   "favor tokens by suit",
-   "secrets",
-   "relics/banners held"
+   "Favor (by suit)",
+   "Secrets",
+   "Site/warband control",
+   "Relics and banners",
+   "Vision card fulfillment"
   ],
-  "winning_score": 8,
-  "tally": "mixed",
+  "turn_actions": 6,
+  "winning_score": 1,
+  "tally": "endgame",
   "shape": "majority_control",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "The Chancellor wins immediately if they hold the most of the favor/secrets named by the current Vision card; otherwise, any Exile who meets or beats that same Vision requirement wins instead and becomes the new Chancellor, so the game can end abruptly at the close of any Chancellor's turn."
+  "ends_by": [
+   "sudden_death",
+   "elimination"
+  ],
+  "how_you_win": "The reigning Chancellor wins by satisfying whatever Oath the previous game set (usually majority control of a suit's favor or sites); an Exile instead wins by secretly completing their Vision card and revealing it to depose the Chancellor.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "objectives"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Root",

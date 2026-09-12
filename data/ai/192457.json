@@ -20,18 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "territorial majority control for VP",
-   "resource economy funding unit/card purchases"
+   "area-majority territory control",
+   "resource harvesting/conversion (faction-specific economies)"
   ],
   "sources": [
-   "VP earned each round from controlling resource-producing territories"
+   "Ore",
+   "Personnel",
+   "Energy"
   ],
+  "turn_actions": 4,
   "winning_score": 15,
   "tally": "running",
   "shape": "majority_control",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Each round you fight for majority control of territories that pay out victory points (and resources used to recruit more units); once a player's VP total reaches the game's threshold it triggers the final round, after which the highest VP total wins."
+  "ends_by": [
+   "target_score",
+   "fixed_length"
+  ],
+  "how_you_win": "Four asymmetric factions fight for area control of a hex map and its resources; victory points (which also double as a spendable resource) accrue from holding territory and harvesting resources in faction-specific ways, and the first to reach the target VP total, or the leader when the round limit hits, wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Rising Sun",

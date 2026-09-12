@@ -20,20 +20,36 @@
  },
  "scoring": {
   "subsystems": [
-   "Military conquest of cities/strongholds",
-   "Fellowship/Ring progress and corruption",
-   "Political track activation of Free People nations"
+   "military conquest",
+   "Fellowship/Ring corruption race",
+   "political alignment of Free Peoples nations"
   ],
   "sources": [
-   "Conquered city/stronghold count",
-   "Ring's fate (reaches Mount Doom or is corrupted)"
+   "Military conquest (cities/strongholds)",
+   "Ring quest (Fellowship/corruption)"
   ],
-  "winning_score": 1,
+  "turn_actions": 5,
+  "winning_score": 10,
   "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "Shadow wins outright by conquering enough Free People cities and strongholds, or Free Peoples win if the Ring-bearer reaches Mount Doom; alternatively Shadow wins if the Fellowship is fully corrupted before either military threshold is met."
+  "shape": "objective_count",
+  "ends_by": [
+   "sudden_death"
+  ],
+  "how_you_win": "Shadow wins immediately by capturing a set number of Free Peoples' cities and strongholds, while the Free Peoples win if the Ring-bearer destroys the Ring at Mount Doom before corruption overwhelms the Fellowship; whichever threshold is hit first ends the game on the spot.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "instant"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Twilight Struggle",

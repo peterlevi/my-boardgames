@@ -26,7 +26,7 @@ from pathlib import Path
 
 from common import ROOT, load_games, playtime, load_overrides
 from scoring import (SALAD_LABEL, SALAD_PILL, SALAD_SHORT, WIN_LABEL,
-                     WIN_ORDER, WIN_SHORT, salad, sudden_death, win)
+                     WIN_ORDER, WIN_SHORT, salad, win, wins)
 
 THUMBS = ROOT / "data" / "thumbs"
 
@@ -273,7 +273,7 @@ def trim_ai(ai):
         return None
     conf = ai.get("confidence", "low")
     facts = ai.get("scoring") or {}
-    out = {"cf": conf, "wc": win(facts), "sd": sudden_death(facts),
+    out = {"cf": conf, "wc": win(facts), "wcs": wins(facts),
            "br": salad(facts), "srcs_n": len(facts.get("sources") or []),
            "ixl": (ai.get("interaction") or {}).get("level"),
            "ixk": (ai.get("interaction") or {}).get("kind"),
@@ -358,7 +358,7 @@ def passes_static(g, s, a, mode):
     if a.players and not qualifies(s, mode):
         return False
     ai = g["ai"] or {}
-    if a.win != "any" and ai.get("wc") != a.win:
+    if a.win != "any" and a.win not in (ai.get("wcs") or []):
         return False
     if a.salad != "any" and ai.get("br") != a.salad:
         return False
@@ -428,10 +428,13 @@ def rows_html(data, a):
         ix_html = (f'<span class="tag {IX_PILL.get(ix_level, "p1")}"'
                    f' title="{esc(ai.get("ixk") or "derived from mechanics")}">'
                    f'{ix_level}</span>')
-        win_html = (f'<span class="wc" title="{esc(ai.get("why") or "")}">'
-                    f'{esc(WIN_SHORT.get(ai.get("wc"), EM_DASH))}'
-                    f'{"<span class=\'sd\' title=\'Can also end in sudden death\'>*</span>" if ai.get("sd") else ""}'
-                    f'</span>')
+        ways = ai.get("wcs") or ([ai["wc"]] if ai.get("wc") else [])
+        # Every way to win, stacked; the type shrinks so three still fit a row.
+        win_html = (
+            f'<span class="wc n{len(ways)}" '
+            f'title="{esc(" or ".join(WIN_LABEL.get(w, w) for w in ways))}">'
+            + "".join(f'<span>{esc(WIN_SHORT.get(w, w))}</span>' for w in ways)
+            + '</span>') if ways else EM_DASH
         br = ai.get("br")
         br_html = (f'<span class="tag {SALAD_PILL.get(br, "p1")}"'
                    f' title="Point salad: {esc(SALAD_LABEL.get(br, br))}">'

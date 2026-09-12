@@ -21,22 +21,32 @@
  },
  "scoring": {
   "subsystems": [
-   "clan development (buildings/population growth)",
-   "area majority/regional influence",
-   "mythology/culture track"
+   "territorial area-majority control",
+   "economic resource development",
+   "clan reputation/technology track"
   ],
   "sources": [
-   "buildings constructed",
-   "regional majority control",
-   "cultural/mythology track position",
-   "end-game clan bonuses"
+   "area majority control points",
+   "resources stored/produced",
+   "buildings or improvements constructed",
+   "reputation/technology track position",
+   "end-game bonus objectives"
   ],
-  "winning_score": 150,
+  "turn_actions": 4,
+  "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Across a fixed sequence of eras you develop your clan through buildings, area influence, and cultural achievements rather than warfare, and the player with the highest combined total at the end of the final era is Minos."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "Accumulate the most prestige by controlling territories, developing your clan's economy and technology, and completing bonus objectives, with the highest total after the final round crowning the new Minos.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Coimbra",

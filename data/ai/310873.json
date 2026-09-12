@@ -18,23 +18,33 @@
  },
  "scoring": {
   "subsystems": [
-   "resource production and goods sale for money",
-   "railway network expansion",
-   "technology track advancement",
-   "building/city development bonuses"
+   "city/building network development",
+   "employee training and specialist tracks",
+   "philanthropy (library donation) track",
+   "bonus/objective tile collection"
   ],
   "sources": [
-   "end-game tech track positions",
-   "constructed buildings and city development",
-   "remaining money",
-   "delivery/contract bonuses"
+   "points from buildings constructed in cities",
+   "bonus tiles awarded for building achievements",
+   "philanthropy track position at game end",
+   "newspaper/investor track majorities",
+   "leftover income converted to points"
   ],
-  "winning_score": 180,
+  "turn_actions": 5,
+  "winning_score": 120,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You retrieve action cards to produce and sell resources, extend your rail network, advance up technology tracks, and construct buildings; after the fixed number of rounds, the player with the highest combined total from tech tracks, buildings, and leftover money wins."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "You win by accumulating the most points across building construction, bonus tiles, philanthropy, and track majorities once the game's end condition is triggered.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Brass: Birmingham",

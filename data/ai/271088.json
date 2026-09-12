@@ -19,20 +19,33 @@
  },
  "scoring": {
   "subsystems": [
-   "planting and harvesting flower gardens for immediate VP via apprentices",
-   "buying trees and permanent upgrades for bonus VP"
+   "garden/flower majority-control engine (flowerbeds and the fountains they connect to)",
+   "tree and skill purchasing economy (bought with gems earned from the garden engine)"
   ],
   "sources": [
-   "garden harvest points",
-   "tree points",
-   "upgrade bonus points"
+   "victory points per flower in flowerbeds you control",
+   "fountain-control bonus (largest connected flowerbed at each fountain)",
+   "points printed on purchased tree cards",
+   "bonus points from unlocked skill upgrades"
   ],
-  "winning_score": 45,
-  "tally": "running",
+  "winning_score": 65,
+  "tally": "endgame",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Plant flowers and send apprentices to harvest completed garden groups for VP while buying trees and upgrades that boost future scoring; when the triggering condition (rondel/supply exhaustion) ends the game, the highest total wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Send apprentices to grow and control flowerbeds (scoring a point per flower and contesting majority control of the fountains those beds connect to), while spending gems earned along the way on tree cards and skill upgrades that add further points; when two of the vegetation-tile supply piles run dry the game ends and the highest combined total wins.",
+  "checked": [
+   "https://www.ultraboardgames.com/ishtar-gardens-of-babylon/game-rules.php",
+   "https://boardgamegeek.com/boardgame/271088/ishtar-gardens-of-babylon",
+   "https://medium.com/@meeplegamers/ishtar-gardens-of-babylon-by-iello-review-112b338598a7"
+  ],
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Azul",

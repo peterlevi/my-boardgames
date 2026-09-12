@@ -20,18 +20,35 @@
  },
  "scoring": {
   "subsystems": [
-   "team clue-encoding/decoding to protect and intercept codes"
+   "team code communication/interception"
   ],
   "sources": [
-   "miscommunication tokens (own team fails to decode)",
-   "interception tokens (opposing team decodes your clues)"
+   "miscommunication tokens against your own team",
+   "interception tokens earned by the opposing team decoding your clues"
   ],
+  "turn_actions": 1,
   "winning_score": 2,
   "tally": "running",
-  "shape": "lowest_category",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "Your team loses if it collects two miscommunication tokens or the enemy team collects two interception tokens against you first; whichever team avoids hitting either limit longer (across up to 8 rounds) wins."
+  "shape": "single_currency",
+  "ends_by": [
+   "sudden_death",
+   "fixed_length"
+  ],
+  "how_you_win": "Your team loses immediately if you rack up 2 miscommunication tokens or the opposing team correctly intercepts 2 of your codes; if 8 rounds pass without either happening, the team with fewer total bad tokens wins.",
+  "endings": [
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "lowest"
+   }
+  ]
  },
  "similar": [
   "Codenames",

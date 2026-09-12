@@ -20,22 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "plot/irrigation objective cards",
-   "panda bamboo-eating objective sets",
-   "gardener bamboo-growing objective sets"
+   "plot-pattern objectives",
+   "bamboo-growth (gardener) objectives",
+   "panda (bamboo-eating) objectives"
   ],
   "sources": [
-   "completed plot objectives",
-   "completed panda objectives",
-   "completed gardener objectives",
-   "improvement-tile bonus"
+   "Plot pattern objectives",
+   "Gardener (bamboo growth) objectives",
+   "Panda (bamboo collection) objectives"
   ],
-  "winning_score": 35,
-  "tally": "running",
+  "turn_actions": 5,
+  "winning_score": 40,
+  "tally": "mixed",
   "shape": "objective_count",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Collect and complete objective cards by shaping irrigated plots, feeding the panda matching bamboo colors, and growing bamboo with the gardener; each fulfilled objective scores its printed value, and whoever has the most points once the end condition triggers wins."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Take two actions per turn (place/irrigate tiles, move the gardener or panda, draw objectives) to secretly complete plot, bamboo, and panda objective cards; the game ends once enough objectives are completed, and the highest total card value (plus emperor bonus) wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Kingdomino",

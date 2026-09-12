@@ -20,20 +20,28 @@
  },
  "scoring": {
   "subsystems": [
-   "city building (building card values and bonuses)"
+   "building cost/value economy with character role bonuses"
   ],
   "sources": [
-   "building card values",
-   "all-five-colors completion bonus",
-   "first-to-finish bonus",
-   "unique building special abilities"
+   "Gold value of built districts",
+   "Bonus for completing your city (first vs. later)",
+   "Bonus for having all five district colors",
+   "Special purple-district bonus points"
   ],
+  "turn_actions": 2,
   "winning_score": 30,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Each round you draft a character role for income and abilities and use it to construct buildings in your city; once a player completes seven buildings the round finishes and whoever has the highest total building value, plus color and completion bonuses, wins."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Players draft secret character roles each round to gather gold and build districts; once someone completes their eighth building the round finishes, buildings are totaled by cost plus bonuses, and the highest score wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Coup",

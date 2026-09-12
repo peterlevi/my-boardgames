@@ -19,17 +19,26 @@
  },
  "scoring": {
   "subsystems": [
-   "cooperative word-guessing tally"
+   "clue-giving and word guessing"
   ],
   "sources": [
-   "correct guesses across 13 rounds"
+   "one point per mystery word correctly guessed"
   ],
+  "turn_actions": 1,
   "winning_score": 13,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "As a team, give one-word clues (with duplicates removed) so the active player can guess each mystery word; the shared score is the number of correct guesses out of 13 cards, judged against a satisfaction scale rather than against other players."
+  "ends_by": [
+   "fixed_length",
+   "coop_goal"
+  ],
+  "how_you_win": "All but the active player write a one-word clue for a secret word (duplicates are discarded), and the active player tries to guess it from what remains; the group scores a point per correct guess across a set number of rounds and cooperatively tries to maximize (or beat a prior) total, with no individual winner.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Codenames",

@@ -18,19 +18,27 @@
  },
  "scoring": {
   "subsystems": [
-   "quilt board tile placement (which also drives button income)"
+   "button economy & quilt board"
   ],
   "sources": [
-   "buttons remaining",
-   "empty-square penalty (-2 each)",
-   "7x7 special tile bonus"
+   "buttons remaining at game end",
+   "minus 2 points per empty square on your quilt board",
+   "+7 bonus for first to complete a 7x7 area"
   ],
+  "turn_actions": 1,
   "winning_score": 10,
-  "tally": "mixed",
+  "tally": "endgame",
   "shape": "single_currency",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Whoever ends with more buttons after subtracting 2 points per empty square on their 9x9 board (plus the 7x7 bonus tile if earned) wins once both players' time tokens reach the end of the time track."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Buy patches to cover your board and generate button income; once both time tokens reach the end of the track, the player with more buttons (after penalties for holes) wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Patchwork Doodle",

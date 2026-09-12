@@ -20,17 +20,28 @@
  },
  "scoring": {
   "subsystems": [
-   "integrated car manufacturing & commodity-speculation economy"
+   "car production/tech-tree engine",
+   "stock market speculation"
   ],
   "sources": [
-   "cash and asset value at game end"
+   "Company net worth (cash + factory value)",
+   "Technology track position"
   ],
-  "winning_score": 1000,
+  "turn_actions": 5,
+  "winning_score": 150,
   "tally": "running",
   "shape": "single_currency",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Money is the score throughout; after the fixed number of model years, whoever has amassed the most wealth from manufacturing and selling cars and speculating on commodities wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "You design, manufacture, and sell cars while speculating on the market for parts and stock; the player with the most money when the game ends wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Food Chain Magnate",

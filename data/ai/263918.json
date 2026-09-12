@@ -18,20 +18,30 @@
  },
  "scoring": {
   "subsystems": [
-   "territory drawing scored against changing seasonal edicts",
-   "monster-incursion penalty tracking"
+   "seasonal edict scoring (drawing terrain shapes to match active scoring cards)"
   ],
   "sources": [
-   "points from four seasonal edict scorings",
-   "coin bonus applied in the final season",
-   "point deductions for unblocked monster tiles"
+   "Season A scoring card points",
+   "Season B scoring card points",
+   "Season C scoring card points",
+   "Season D scoring card points",
+   "coin bonuses from placed ruin/coin tiles",
+   "monster tile penalty for empty squares"
   ],
-  "winning_score": 65,
+  "turn_actions": 1,
+  "winning_score": 60,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You draw terrain shapes onto your map to satisfy two edict cards revealed each season while blocking monster incursions; at the end of each of the four seasons you score against that season's edicts, and after the fourth season the player with the highest cumulative total (minus monster penalties) wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "You win by drawing the offered shapes onto your map to best satisfy the four active seasonal scoring cards, ending with the highest total reputation after the fourth season.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Kingdomino",

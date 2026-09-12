@@ -18,25 +18,35 @@
  },
  "scoring": {
   "subsystems": [
-   "farm development (fields, pastures, animals, rooms)"
+   "farm development (fields, pastures, animals, house/family)"
   ],
   "sources": [
-   "fields",
-   "pastures",
-   "grain",
-   "vegetables",
-   "animals",
-   "fenced stables",
-   "family members",
-   "house type",
-   "begging penalties"
+   "Fields",
+   "Pastures",
+   "Grain",
+   "Vegetables",
+   "Sheep",
+   "Wild Boar",
+   "Cattle",
+   "House (rooms)",
+   "Family members",
+   "Begging markers",
+   "Unused spaces"
   ],
+  "turn_actions": 1,
   "winning_score": 30,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "The same farm-building race as Agricola but stripped of the occupation/improvement card decks; after 14 rounds you total up points across fields, pastures, animals, and house categories, and the highest sum wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Grow and develop your farm (fields, animals, house, family) without leaving spaces empty or going hungry; highest sum of farm categories after 14 rounds wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Agricola",

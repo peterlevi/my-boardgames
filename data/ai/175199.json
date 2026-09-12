@@ -18,18 +18,32 @@
  },
  "scoring": {
   "subsystems": [
-   "multi-use card economy (tasks, materials, works)"
+   "multi-use card economy (task/material/work)"
   ],
   "sources": [
-   "completed works",
-   "materials sold to visitors"
+   "value of completed works",
+   "materials sold to the temple",
+   "bonus effects from completed works"
   ],
+  "turn_actions": 1,
   "winning_score": 20,
-  "tally": "endgame",
+  "tally": "running",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You use cards flexibly for tasks, materials, or works, completing and selling works for points; the game ends once a player completes enough works or the deck runs low, and the highest point total wins."
+  "ends_by": [
+   "exhaustion",
+   "end_trigger"
+  ],
+  "how_you_win": "Win by using your cards cleverly as tasks, materials, or completed works so that when the deck runs out, you have the highest total value of built works and sold materials.",
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Glory to Rome",

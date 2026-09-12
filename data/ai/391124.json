@@ -20,21 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "vehicle manufacturing and sales for money",
-   "Grand Prix race results for bonus points",
-   "engine/body set collection for bonus points"
+   "vehicle production/sales",
+   "race performance"
   ],
   "sources": [
-   "money earned from selling manufactured cars",
-   "race placement bonuses",
-   "completed engine/body set bonuses"
+   "vehicles sold (price/demand)",
+   "contract/order bonuses",
+   "race placement points",
+   "leftover resources/money"
   ],
-  "winning_score": 100,
+  "turn_actions": 4,
+  "winning_score": 0,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You win by ending with the most points/money, built mainly from designing and selling successful car models over the game's rounds, topped up with bonuses from strong Grand Prix showings and completed vehicle sets."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "Players move around a rondel to develop engines and car bodies, manufacture and sell vehicles for money, and race cars for bonus points; after a set number of rounds the player with the most money/points wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Kraftwagen (2011)",

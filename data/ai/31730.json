@@ -20,19 +20,26 @@
  },
  "scoring": {
   "subsystems": [
-   "Railroad share ownership and stock value",
-   "Track-building/network investment"
+   "railroad stock investment and network building"
   ],
   "sources": [
-   "Cash on hand",
-   "Value of held shares"
+   "Railroad share value"
   ],
-  "winning_score": 250,
+  "turn_actions": 3,
+  "winning_score": 80,
   "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a maximum of eight rounds you bid for and hold shares in railroads while investing in track that builds those railroads' value; the game ends after the fixed number of rounds and whoever has the highest net worth (cash plus share value) wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "Over up to eight rounds players auction railroad shares and build track to raise each railroad's share value; the winner is whoever ends with the most total wealth in cash plus share value.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Chicago Express",

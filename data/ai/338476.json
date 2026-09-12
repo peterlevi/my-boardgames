@@ -20,23 +20,34 @@
  },
  "scoring": {
   "subsystems": [
-   "development card VP (Territory/Building/Character/Venture cards)",
-   "faith track bonuses/penalties",
-   "military points vs excommunication tiles",
-   "end-game resource-to-VP conversion"
+   "Development card collection (Territories, Buildings, Characters, Ventures)",
+   "Military track",
+   "Faith/Church track"
   ],
   "sources": [
-   "cards",
-   "faith track",
-   "military track",
-   "leftover resources"
+   "Territory card VP",
+   "Building card VP",
+   "Character card VP",
+   "Venture card VP",
+   "Military track end-of-age bonus",
+   "Faith track end-of-age bonus",
+   "Leftover resources converted at game end",
+   "Excommunication tile penalties"
   ],
-  "winning_score": 160,
+  "turn_actions": 1,
+  "winning_score": 150,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over six rounds you place dice-workers to collect cards and resources that grant victory points, then convert leftover resources and military standing into extra points at the end; the highest total after the final round wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After 6 rounds across 3 Ages, the player with the most victory points wins, points coming from collected development cards, military/faith track bonuses, and leftover resources, minus any excommunication penalties.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Great Western Trail",

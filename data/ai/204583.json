@@ -20,17 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "kingdom tile-laying scored by connected terrain regions multiplied by crowns"
+   "tile-placement territory-connection engine"
   ],
   "sources": [
-   "each connected same-terrain region's tile count times its crown count, summed across the kingdom"
+   "territory size × crowns for each connected terrain group",
+   "Middle Kingdom bonus for keeping the castle centered (variant)",
+   "Harmony bonus for a completed 5x5 grid (variant)"
   ],
   "winning_score": 45,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You win by arranging your drafted dominoes into large, crown-heavy connected terrain regions, since each region scores its tile count times its crown count and these are totaled once all dominoes are placed."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Draft and place dominoes into your own 5x5 kingdom so that same-terrain squares connect into large crowned territories; once all dominoes have been drafted and placed the game ends, and whoever's summed territory scores (squares x crowns) are highest wins, with ties broken by largest territory then most crowns.",
+  "checked": [
+   "https://www.ultraboardgames.com/kingdomino/game-rules.php",
+   "https://officialgamerules.org/game-rules/kingdomino/"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Azul",

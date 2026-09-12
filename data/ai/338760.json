@@ -20,21 +20,28 @@
  },
  "scoring": {
   "subsystems": [
-   "goods production, delivery & contract fulfillment",
-   "company share value/ownership"
+   "factory production & goods delivery",
+   "track network building",
+   "contract fulfillment"
   ],
   "sources": [
-   "contract fulfillment payouts",
-   "company share value",
-   "cash on hand",
-   "outstanding loans (negative)"
+   "Net worth (cash and factory value)"
   ],
+  "turn_actions": 5,
   "winning_score": 250,
-  "tally": "running",
+  "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Build the highest net worth (cash plus company value) by placing rail track, running factories, and fulfilling profitable contracts; the game ends the moment someone completes the rail connection to Trieste, and net worth at that instant decides the winner."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "The game ends the moment a player's rail connects to Trieste; everyone then totals net worth (cash plus the value of factories, track and completed contracts, minus debt), and the richest player wins.",
+  "endings": [
+   {
+    "how": "sudden_death",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Age of Steam",

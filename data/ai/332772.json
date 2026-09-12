@@ -20,22 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "technology tile acquisition and tech-tree advancement",
-   "population/citizen recruitment and city building",
-   "exploration site development"
+   "settlement & network building",
+   "technology tree advancement",
+   "exploration/site population",
+   "citizen/faction bonuses"
   ],
   "sources": [
-   "technology VP",
-   "city/population VP",
-   "exploration site bonuses",
-   "end-game bonus cards"
+   "technology cards' unique scoring conditions",
+   "cities built",
+   "tribe/age track advancement"
   ],
-  "winning_score": 110,
-  "tally": "endgame",
+  "turn_actions": 4,
+  "winning_score": 120,
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a fixed number of rounds per scenario, develop technology, grow your city and population, and populate exploration sites; the player with the most total VP from these sources when the scenario ends wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Across the campaign's rounds, explore the map, build settlements and factories, and climb the technology tracks; the player with the highest combined VP from territory, tech and citizens at the end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Scythe",

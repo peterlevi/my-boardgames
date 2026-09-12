@@ -19,20 +19,36 @@
  },
  "scoring": {
   "subsystems": [
-   "province tile development generating goods and fame",
-   "goods market selling for money",
-   "palace personality recruitment via karma for fame"
+   "province tile-building (temples, palaces, forts, mills → fame)",
+   "markets and goods trading (marketplace worker actions → money)",
+   "palace favor actions (Great Mogul, Raja Man Singh, terrace, etc. → direct fame/money/rerolls)",
+   "river boat progression (advancing the boat for money/fame bonuses and karma)"
   ],
   "sources": [
-   "money track",
-   "fame track"
+   "fame from building tiles (2-4 fame depending on upgrade level)",
+   "money from market tiles placed",
+   "money collected via market worker actions",
+   "palace action grants (e.g. Great Mogul: 2 fame; Raja Man Singh: 3 money)",
+   "river space rewards (money and/or fame, some multiplied by karma level)",
+   "fame/money track bonus spaces (extra workers, karma increases, boat advances)"
   ],
-  "winning_score": 40,
+  "winning_score": 30,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "Develop your province, sell goods at market, and win over palace personalities to advance your money marker and fame marker along two opposing spiral tracks; the first player whose two markers meet immediately wins."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "You continuously push a fame marker clockwise and a money marker counter-clockwise around opposite tracks by developing your province, running markets, and using palace/river actions; the instant any player's two markers meet or cross, the round finishes and whichever qualifying player has pushed them furthest past each other wins.",
+  "checked": [
+   "https://www.yucata.de/en/Rules/Rajas",
+   "https://www.ultraboardgames.com/rajas-of-the-ganges/game-rules.php"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "The Castles of Burgundy",

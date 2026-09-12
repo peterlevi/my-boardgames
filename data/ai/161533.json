@@ -20,23 +20,34 @@
  },
  "scoring": {
   "subsystems": [
-   "factory production and goods trading for money",
-   "tile-laying reconstruction of Lisbon for endgame VP",
-   "King's favor and privilege tracks",
-   "illicit money forging as a side economy"
+   "industry tile production networks",
+   "building/tile placement scoring",
+   "bond/loan economy",
+   "endgame bonus objectives"
   ],
   "sources": [
-   "points from placed building/product tiles",
-   "leftover money converted to VP at game end",
-   "favor track bonuses",
-   "forgery gains and risks"
+   "goods produced and sold",
+   "building placement points",
+   "tile set bonuses",
+   "bond interest/penalties",
+   "king's favor/reputation track",
+   "endgame scoring cards"
   ],
-  "winning_score": 100,
+  "turn_actions": 5,
+  "winning_score": 150,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You win by weaving together profitable factory production and trade, tiles placed while rebuilding the city, royal favor bonuses, and any money you've forged, converting whatever cash remains into points once the game-ending deck runs out."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Players use multi-use cards to place tiles, produce and sell goods, manage bonds, and fulfill endgame objectives; the game ends when a stack of triggers is exhausted, and the highest total score from all subsystems wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Vinhos",

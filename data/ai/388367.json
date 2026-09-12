@@ -20,18 +20,37 @@
  },
  "scoring": {
   "subsystems": [
-   "card tableau/dogma engine"
+   "dogma-driven card tableau engine (score pile, splaying/tucking, and achievement claiming all flow from the same engine)"
   ],
   "sources": [
-   "age achievements (score pile thresholds)",
-   "special achievements (icon/tag conditions)"
+   "Score pile (accumulated card values)"
   ],
-  "winning_score": 6,
-  "tally": "running",
+  "winning_score": 5,
+  "tally": "mixed",
   "shape": "objective_count",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "Play and activate technology cards to build icons and grow your score pile, claiming an Achievement whenever your score pile meets an age's threshold; the first player to hold enough Achievements (or all five Special Achievements) wins immediately, now across an expanded 11-age card pool."
+  "ends_by": [
+   "sudden_death",
+   "exhaustion"
+  ],
+  "how_you_win": "Grow your score pile through dogma actions until you can claim enough achievements for your player count (e.g. 6 in a 2-player game, fewer with more players), which ends the game the instant you claim the last one; if the age deck runs out first (past age 10/11) without anyone reaching that threshold, whoever has the highest score-pile total wins instead.",
+  "checked": [
+   "https://www.ultraboardgames.com/innovation/game-rules.php",
+   "https://gamerules.com/rules/innovation/"
+  ],
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "objectives"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Innovation",

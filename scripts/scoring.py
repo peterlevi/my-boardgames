@@ -32,16 +32,57 @@ The rules encode a handful of signals:
 FACTS = {
     "subsystems": "the separate scoring engines a player builds, each with its "
                   "own rules and economy — not the lines on the scorepad",
-    "sources": "the categories the rules actually total at the end",
+    "sources": "every line you would write on a scorepad",
     "winning_score": "what a winning score typically looks like, as a number",
     "tally": "running | endgame | mixed",
     "shape": "sum | single_currency | objective_count | lowest_category | "
              "majority_control",
-    "ends_by": "target_score | end_trigger | fixed_length | exhaustion | "
-               "sudden_death | elimination | coop_goal",
-    "sudden_death_common": "true when games usually end on that condition "
-                           "rather than by running out",
+    "ends_by": "every ending the rules have, most common first: target_score "
+               "| end_trigger | fixed_length | exhaustion | sudden_death | "
+               "elimination | coop_goal",
 }
+
+# Words that mark a scoring line as optional rather than part of the game.
+OPTIONAL = ("variant", "expansion", "module", "promo", "mini-exp")
+# Qualifiers that split one category across eras, rounds or colours.
+import re as _re
+
+_ERA = _re.compile(r"[,(]?\s*\b(canal|rail|first|second|third|final|each)?\s*"
+                   r"(era|round|age|phase|scoring)\b.*$", _re.I)
+# The same category scored in two eras is written "canal links", "rail links".
+_ERA_PREFIX = _re.compile(r"^\s*(canal|rail|first|second|third|final)\s+", _re.I)
+_PAREN = _re.compile(r"\([^)]*\)")
+# Sweeping the table into points at the end is not a category of its own.
+_LEFTOVERS = _re.compile(
+    r"(leftover|left-over|unused|spare|remaining)\s+\w*\s*"
+    r"(money|cash|coins?|resources?|goods|workers?)|money[- ]to[- ]vp", _re.I)
+
+
+def categories(f):
+    """The distinct things a game scores, from the list the facts carry.
+
+    The facts are written exhaustively on purpose, which means the same
+    category turns up once per era — Brass scores links and industries in the
+    canal era and again in the rail era, and that is two categories, not four
+    — while optional variants, expansion modules and the end-of-game sweep of
+    leftover money into points ride along with them. All of it is folded away
+    here rather than in the prompt, because a list is easier to normalise than
+    a judgement is to elicit.
+    """
+    out, seen = [], set()
+    for raw in (f or {}).get("sources") or []:
+        text = str(raw or "").strip()
+        if not text or any(w in text.lower() for w in OPTIONAL):
+            continue
+        if _LEFTOVERS.search(text):
+            continue
+        key = _ERA_PREFIX.sub("", _ERA.sub("", _PAREN.sub("", text)))
+        key = key.strip(" ,;–-").lower()
+        if key and key not in seen:
+            seen.add(key)
+            out.append(text)
+    return out
+
 
 SALAD_ORDER = ["no", "touch", "lot", "total"]
 SALAD_LABEL = {
@@ -55,11 +96,12 @@ SALAD_SHORT = {"no": "No", "touch": "A touch", "lot": "Quite a lot",
                "total": "Total salad"}
 SALAD_PILL = {"no": "p3", "touch": "p2", "lot": "p1", "total": "pw"}
 
-WIN_ORDER = ["race", "points", "money", "lowest", "majority", "sudden",
-             "coop", "elimination", "other"]
+WIN_ORDER = ["race", "points", "objectives", "money", "lowest", "majority",
+             "sudden", "coop", "elimination", "other"]
 WIN_LABEL = {
     "race": "Race to a target",
     "points": "Most points at the end",
+    "objectives": "Enough objectives",
     "money": "Most money",
     "lowest": "Highest of your lowest",
     "majority": "Majority control",
@@ -69,15 +111,19 @@ WIN_LABEL = {
     "other": "Other",
 }
 WIN_SHORT = {
-    "race": "Race", "points": "Most points", "money": "Money",
+    "race": "Race", "points": "Most points", "objectives": "Objectives",
+    "money": "Money",
     "lowest": "Highest-lowest", "majority": "Majority", "sudden": "Sudden death",
     "coop": "Co-op goal", "elimination": "Elimination", "other": "Other",
 }
 
 # A target reached this early is a race, whatever else the game is doing.
 RACE_SCORE = 35
-# Below this, the winning score is too small to be an accumulation.
+# The bands a winning score falls into: too small to accumulate, modest,
+# substantial, and the three-figure totals that give the game away.
 SMALL_SCORE = 25
+MID_SCORE = 45
+BIG_SCORE = 90
 
 
 def _step(level, by):
@@ -90,74 +136,163 @@ def _cap(level, ceiling):
         else ceiling
 
 
+def endings(f):
+    """Every way the game can end, most common first, as (how, decided_by)
+    pairs. Three shapes of record read the same from here: the newest carries
+    `endings` as pairs, older ones a list of `ends_by` strings, oldest a
+    single string."""
+    f = f or {}
+    pairs = f.get("endings")
+    # Endings read off a rules page outrank a later list recalled from memory.
+    if f.get("checked") and f.get("ends_by"):
+        pairs = None
+    if isinstance(pairs, list) and pairs and isinstance(pairs[0], dict):
+        out = []
+        for p in pairs:
+            how = (p.get("how") or "").strip()
+            by = (p.get("decided_by") or "").strip()
+            if how and (how, by) not in out:
+                out.append((how, by))
+        return out[:3]
+    ends = f.get("ends_by") or []
+    if isinstance(ends, str):
+        ends = [ends]
+    seen, out = set(), []
+    for e in ends:
+        e = (e or "").strip()
+        if e and e not in seen:
+            seen.add(e)
+            out.append((e, ""))
+    return out[:3]
+
+
+def how_ends(f):
+    """Just the endings, without what settles them."""
+    return [how for how, _ in endings(f)]
+
+
 def salad(f):
-    """How much of a point salad, from the facts. Returns a SALAD_ORDER key."""
+    """How much of a point salad, from the facts. Returns a SALAD_ORDER key.
+
+    The backbone is the owner's own heuristic: when the highest score wins and
+    winning totals run into the high tens or hundreds, purely additive, never
+    zero-sum, that is the signal. Everything else adjusts it — how many
+    separate engines feed the total, how many lines the rules add up, whether
+    it is all counted at the end, and whether the game even goes the distance.
+    """
     if not f:
         return None
     shape = (f.get("shape") or "sum").strip()
-    ends = (f.get("ends_by") or "").strip()
+    ends_all = how_ends(f)
+    ends = ends_all[0] if ends_all else ""
     score = f.get("winning_score")
-    subs = [s for s in (f.get("subsystems") or []) if s]
-    tally = (f.get("tally") or "mixed").strip()
+    score = score if isinstance(score, (int, float)) and score > 0 else None
+    subs = len([x for x in (f.get("subsystems") or []) if x])
+    srcs = len(categories(f))
 
-    # One currency, a count of objectives, your lowest category, or a fight
-    # over shared majorities: none of these are salads however many things
-    # feed them.
-    if shape in ("single_currency", "objective_count", "lowest_category",
-                 "majority_control"):
+    if "coop_goal" in ends_all:
         return "no"
-    if ends == "coop_goal":
+    # One currency out of one or two engines is a money game, not a salad —
+    # Food Chain Magnate, 1846. Four engines funnelling into money is not:
+    # The Gallerist pays you for art, reputation, influence and contracts.
+    if shape == "single_currency" and subs <= 2:
         return "no"
-    # A target reached at 10 or 30 points is a race, not an accumulation.
-    if ends == "target_score" and isinstance(score, (int, float)) \
-            and score <= RACE_SCORE:
+    # Counting objectives is not accumulating points, however many kinds of
+    # objective there are.
+    if shape == "objective_count":
         return "no"
-    srcs = [s for s in (f.get("sources") or []) if s]
-    if len(subs) <= 1:
-        # One engine: the scorepad may still list several lines — Brass totals
-        # links and industries, Carcassonne cities, roads, farms — but they all
-        # come out of the same act. A touch of salad at most, and none at all
-        # when there is really only one line.
-        return "no" if len(srcs) <= 1 else "touch"
+    if shape == "majority_control" and srcs <= 1:
+        return "no"
+    # A target reached at 10 or 30 points is a race.
+    if ends == "target_score" and score is not None and score <= RACE_SCORE:
+        return "no"
+    if subs <= 1 and srcs <= 1:
+        return "no"
+    # Nobody calls a game won with eight points a salad, whatever is on the
+    # scorepad: Biblios totals five categories and ends at three.
+    if score is not None and score <= SMALL_SCORE:
+        return "no"
 
-    level = {2: "touch", 3: "lot"}.get(len(subs), "total")
-    # Counting everything at the end is the salad feeling, so it promotes. A
-    # running score does not demote: Rajas of the Ganges advances two markers
-    # in plain sight and is still three minigames bolted together.
-    if tally == "endgame":
+    if score is None:
+        level = "touch" if subs <= 2 else "lot"
+    elif score < MID_SCORE:
+        level = "touch"
+    elif score < BIG_SCORE:
+        level = "lot"
+    else:
+        level = "total"
+
+    if srcs >= 4:
         level = _step(level, 1)
-    if f.get("sudden_death_common"):
-        level = _step(level, -1)
-    if isinstance(score, (int, float)) and score <= SMALL_SCORE:
+    if subs >= 3:
+        level = _step(level, 1)
+    if (f.get("tally") or "").strip() == "endgame":
+        level = _step(level, 1)
+
+    # A game that can end on a condition is not really decided by its tally,
+    # wherever that ending sits in the list.
+    if "sudden_death" in ends_all:
         level = _cap(level, "touch")
+    # So are two lines on the scorepad out of two engines, however big the
+    # numbers on them get: Brass wins with 180 points from exactly two
+    # interdependent tallies, links and industries, and nobody calls that a
+    # salad.
+    if srcs <= 2 and subs <= 2:
+        level = _cap(level, "touch")
+    # Few categories, however big the numbers on them: Brass wins with 170
+    # points out of links and industries, and nobody calls that a salad. The
+    # top of the scale is reserved for games that really do pay you for four
+    # different things — a big number on its own is not enough.
+    if srcs <= 2:
+        level = _cap(level, "touch")
+    elif srcs == 3:
+        level = _cap(level, "lot")
+    # Contested or minimum-of scores are not accumulations.
+    if shape in ("lowest_category", "majority_control"):
+        level = _cap(level, "lot")
     return level
 
 
-def win(f):
-    """What decides the winner. Returns a WIN_ORDER key."""
-    if not f:
-        return None
-    shape = (f.get("shape") or "").strip()
-    ends = (f.get("ends_by") or "").strip()
-    if ends == "coop_goal":
+def _win_for(end, by, shape):
+    """One ending, as a way of winning. `by` is what the rules say settles it;
+    the score's shape stands in when a record does not say."""
+    if end == "coop_goal":
         return "coop"
-    if ends == "elimination":
+    if end == "elimination":
         return "elimination"
-    if shape == "single_currency":
-        return "money"
-    if shape == "lowest_category":
-        return "lowest"
-    if shape == "majority_control":
-        return "majority"
-    if ends == "target_score":
-        return "race"
-    if ends == "sudden_death":
+    if by == "instant" or (not by and end == "sudden_death"):
         return "sudden"
-    if shape in ("sum", "objective_count"):
-        return "points"
-    return "other"
+    from_shape = {"single_currency": "money", "lowest_category": "lowest",
+                  "majority_control": "majority",
+                  "objective_count": "objectives"}.get(shape, "points")
+    # "Points" is the vaguest answer there is, so the score's own shape wins
+    # over it: Sekigahara's points are control of castles, Food Chain
+    # Magnate's are money, Tigris & Euphrates' are your weakest colour.
+    settles = from_shape if by in ("", "points") else by
+    # Reaching a threshold first is a race — unless what you are racing to
+    # collect is objectives, which is Innovation's achievements.
+    if end == "target_score":
+        return "objectives" if settles == "objectives" else "race"
+    return {"points": "points", "money": "money", "objectives": "objectives",
+            "majority": "majority", "lowest": "lowest"}.get(settles, "points")
 
 
-def sudden_death(f):
-    """Whether a game that is decided on points can also end out of nowhere."""
-    return bool(f and f.get("sudden_death_common")) and win(f) != "sudden"
+def wins(f):
+    """Every way the game can be won, most common first — plenty of games have
+    two or three, and forcing Innovation to choose between its achievements,
+    its dogma wins and its points was losing most of the answer."""
+    if not f:
+        return []
+    shape = (f.get("shape") or "").strip()
+    out = []
+    for how, by in endings(f) or [("", "")]:
+        w = _win_for(how, by, shape)
+        if w not in out:
+            out.append(w)
+    return out[:3]
+
+
+def win(f):
+    """The main way to win, for sorting and for a one-word column."""
+    ws = wins(f)
+    return ws[0] if ws else None

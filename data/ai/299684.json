@@ -19,20 +19,33 @@
  },
  "scoring": {
   "subsystems": [
-   "advancing Culture/Military/Economy tracks for endgame VP",
-   "unlocking achievement tiles for milestone VP"
+   "culture/military/economy achievement tracks",
+   "resource conversion race"
   ],
   "sources": [
-   "track position endgame VP",
-   "achievement VP",
-   "leftover resources"
+   "VP from unlocked Culture, Military, and Economy achievements",
+   "VP from final track positions",
+   "VP from Glory track knowledge-token conversions"
   ],
+  "turn_actions": 7,
   "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Take paired actions each turn to climb the Culture, Military, and Economy tracks and unlock achievements; once a player triggers the endgame condition, total VP from track positions and achievements decides the winner."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Each turn players take 2 of 7 available actions, using dice results to advance Taxes, Troop, and Glory tracks and unlock achievements in Culture, Military, and Economy; once a track is maxed out or achievements are exhausted, the game ends and accumulated achievement and track VP are totaled for the highest score.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   },
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Trajan",

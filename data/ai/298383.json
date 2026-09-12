@@ -20,23 +20,31 @@
  },
  "scoring": {
   "subsystems": [
-   "golem construction & control",
-   "development/action cards",
-   "city quarter majority control",
-   "resource/potion economy"
+   "golem building and growth",
+   "student network area control",
+   "objective/bonus card fulfillment"
   ],
   "sources": [
-   "golem level/completion points",
-   "fulfilled development cards",
-   "quarter control majority bonuses",
-   "leftover resources converted to points"
+   "golem set-completion VP",
+   "neighborhood majority control VP",
+   "round objective card VP",
+   "end-game bonus tile VP",
+   "leftover resources/coins"
   ],
-  "winning_score": 100,
+  "turn_actions": 4,
+  "winning_score": 130,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "After the fixed number of rounds, the player with the most combined points from golem development, completed cards, and quarter control wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Grow and manage golems while sending students to control neighborhoods and complete objectives; after the fixed number of rounds, the player with the most combined VP wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Lorenzo il Magnifico",

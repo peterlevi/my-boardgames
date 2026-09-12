@@ -20,22 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "monument building (raising monuments in levels)",
-   "craftsman placement (technology cards)"
+   "monument building/raising",
+   "craftsman hiring"
   ],
   "sources": [
-   "monument levels",
-   "craftsmen placed"
+   "Board-pattern prestige triggered by Gods",
+   "Monuments"
   ],
   "winning_score": 25,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "You earn victory points by raising your monuments to higher levels and by placing craftsmen (each worth points shown on its technology card), while acquiring stronger gods, specialists, and technologies raises your own personal Victory Requirement (starting at 20, capped at 40). The game ends the instant any player's points reach or exceed their own Victory Requirement, and that player wins (ties broken by overage, then total points, then turn order).",
+  "ends_by": [
+   "target_score"
+  ],
+  "how_you_win": "Trade resources to raise monuments and to hire craftsmen, each of which scores victory points immediately onto a shared track; you win the instant your total meets or exceeds your personal victory requirement (base 20, raised by any gods/specialists you took, up to 40).",
   "checked": [
    "https://www.ultraboardgames.com/the-great-zimbabwe/game-rules.php",
-   "https://boardgamegeek.com/boardgame/111341/the-great-zimbabwe"
+   "https://www.meeplemountain.com/reviews/the-great-zimbabwe/"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
   ]
  },
  "similar": [

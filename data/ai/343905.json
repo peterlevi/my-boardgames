@@ -18,23 +18,31 @@
  },
  "scoring": {
   "subsystems": [
-   "population/settlement growth",
-   "contract fulfillment",
-   "exploration tile (expedition) sets",
-   "building network development"
+   "tile-placement settlement/building",
+   "goods production and trading",
+   "contract/order fulfillment"
   ],
   "sources": [
-   "era-end scoring for population and buildings",
-   "completed contracts",
-   "collected expedition/exploration tile sets",
-   "leftover resources and multiplier bonuses"
+   "building tile VP",
+   "completed contract/order VP",
+   "progress track bonus VP",
+   "end-game set/majority bonuses"
   ],
-  "winning_score": 170,
+  "turn_actions": 4,
+  "winning_score": 130,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Across four eras you build up population, buildings, and fulfilled contracts, plus sets of exploration tiles, with VP tallied at the end of each era; the highest cumulative total after the fourth era wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "Over a fixed number of rounds players build up tiles, production, and fulfilled contracts; whoever has the highest total VP once the game ends wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Great Western Trail",

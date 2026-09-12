@@ -20,23 +20,34 @@
  },
  "scoring": {
   "subsystems": [
-   "cattle delivery/deck-building loop",
-   "building network on the trail",
-   "worker development tracks (engineers/craftsmen)"
+   "Cattle drive & delivery to Kansas City",
+   "Railroad building (engineers/stations)",
+   "Building network along the trail"
   ],
   "sources": [
-   "delivery track advances (running)",
-   "buildings owned",
-   "hazards removed",
-   "engineer track position",
-   "station/tycoon bonuses"
+   "cattle delivered value at Kansas City",
+   "buildings built on the trail",
+   "objective cards fulfilled",
+   "railroad track tiles placed",
+   "stations built/upgraded",
+   "Kansas City buildings owned",
+   "leftover money"
   ],
-  "winning_score": 175,
+  "turn_actions": 6,
+  "winning_score": 130,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Build up score continuously by delivering ever-better cattle herds to Kansas City, then add end-game bonuses from buildings, hazards removed and the engineer track once someone triggers the final round."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Deliver valuable cattle herds to Kansas City repeatedly while building your own trail buildings and railroad; when the end trigger fires (final delivery lap / supply exhaustion), whoever summed the most points across all sources wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Orléans",

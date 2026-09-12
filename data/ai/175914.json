@@ -20,17 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "restaurant chain profit engine (marketing, hiring, serving customers)"
+   "Single cash economy: hiring, training, marketing, and selling to grow revenue and cash on hand"
   ],
   "sources": [
-   "cash on hand at game end"
+   "Money/profit"
   ],
-  "winning_score": 60,
+  "winning_score": 1000,
   "tally": "running",
   "shape": "single_currency",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "The player with the most cash when the house/milestone supply runs out wins; you earn cash by advertising to and serving customers while managing salaries, hiring, and expansion costs."
+  "ends_by": [
+   "exhaustion",
+   "elimination"
+  ],
+  "how_you_win": "Build and run a fast-food chain by hiring, training, marketing, and selling burgers and drinks; when the bank runs out of money for the second time the game ends and whoever holds the most cash wins, while running out of your own cash bankrupts and eliminates you first.",
+  "checked": [
+   "https://cardboardappendix.com/games/food-chain-magnate/rulebook/",
+   "https://boardgamegeek.com/thread/1527852/statistics"
+  ],
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Brass: Birmingham",

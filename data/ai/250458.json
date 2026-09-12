@@ -19,21 +19,30 @@
  },
  "scoring": {
   "subsystems": [
-   "resource collection via the rotating wheel",
-   "banquet card set collection on personal grid",
-   "resource track majority bonuses"
+   "Silver/money economy",
+   "Privilege tile sets",
+   "Favor/quest cards"
   ],
   "sources": [
-   "banquet cards played",
-   "grid pattern bonuses",
-   "end-game track majority bonuses"
+   "Court tiles",
+   "Forbidden City area majority",
+   "Goods delivered to the harbor"
   ],
+  "turn_actions": 1,
   "winning_score": 55,
   "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Place workers each round to gather resources, spend them on banquet cards that fill your personal grid for pattern bonuses, and add majority bonuses on the resource tracks at the end of a fixed number of rounds."
+  "shape": "single_currency",
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "Place workers to gather resources, trade them on the fluctuating market for silver, and spend that silver on privilege tiles and favors; silver left over converts directly to points, and the highest total at game end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Amerigo",

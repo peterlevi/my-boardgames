@@ -20,21 +20,34 @@
  },
  "scoring": {
   "subsystems": [
-   "tableau building of worlds and developments",
-   "production/consumption cycle for VP chips",
-   "military conquest of worlds"
+   "tableau of worlds/developments (endgame VP)",
+   "producing & consuming goods for VP chips (running)"
   ],
   "sources": [
-   "VP printed on played cards",
-   "VP chips earned from consuming goods",
-   "bonus VP from card abilities"
+   "printed VP on played cards",
+   "bonus VP from card abilities/takeovers",
+   "VP chips from consuming goods",
+   "phase-selection VP bonuses"
   ],
-  "winning_score": 40,
+  "turn_actions": 5,
+  "winning_score": 45,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "The game ends when a player's tableau reaches 12 cards or the VP chip pool is exhausted; the winner has the most combined points from card values and collected VP chips."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Build the highest-scoring tableau of worlds and developments while earning VP chips from producing and consuming goods, until a 12-card tableau or the VP chip pool ends the game.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "San Juan",

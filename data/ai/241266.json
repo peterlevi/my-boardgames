@@ -20,20 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "worker placement to gather resources and construct buildings, each with its own scoring effect",
-   "contract fulfillment by turning in resource sets"
+   "building construction",
+   "endgame scoring cards"
   ],
   "sources": [
-   "endgame points from building effects",
-   "points from completed contracts",
-   "leftover resources/money"
+   "buildings constructed",
+   "resources stockpiled",
+   "endgame scorecard bonuses",
+   "money"
   ],
-  "winning_score": 50,
-  "tally": "mixed",
+  "turn_actions": 1,
+  "winning_score": 0,
+  "tally": "endgame",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You win by using your four rounds of worker placements to construct the most valuable combination of buildings and complete resource contracts, each contributing points to your final total."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over four rounds, players place workers to gather resources from adjacent tiles and construct buildings; after the last round, endgame scorecards convert buildings, resources, and money into points, and the highest total wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Village",

@@ -18,22 +18,31 @@
  },
  "scoring": {
   "subsystems": [
-   "construction building with coin conversion",
-   "district majority control",
-   "card combo/set bonuses"
+   "apprentice recruitment / building / commission engine",
+   "corruption vs. silver-bribery balance",
+   "district area-control (King of the Hill)"
   ],
   "sources": [
-   "constructions built",
-   "bronze/silver/gold coins converted to VP",
-   "majority control of city districts",
-   "corruption penalties"
+   "Bishops recruited",
+   "Buildings",
+   "Manuscripts",
+   "City district control"
   ],
+  "turn_actions": 4,
   "winning_score": 90,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You place workers to build constructions and collect coins, cards, and district influence; the game ends when the round card deck is exhausted, and the player with the most VP after converting coins and subtracting corruption wins."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "Send apprentices around the board to recruit more apprentices, construct buildings, and fulfill commissions for VP, while managing corruption (which costs VP unless paid off with silver); highest total VP when the apprentice supply or rounds run out wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Architects of the West Kingdom",

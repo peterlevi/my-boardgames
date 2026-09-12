@@ -19,19 +19,29 @@
  },
  "scoring": {
   "subsystems": [
-   "wall tile-placement scoring"
+   "tile drafting and wall placement"
   ],
   "sources": [
-   "adjacency points per round",
-   "end-game row/column/color bonuses",
-   "floor-line penalties"
+   "wall placement points each round (with adjacency bonuses)",
+   "floor line penalty for overflow tiles",
+   "end-game bonus for completed horizontal rows",
+   "end-game bonus for completed vertical columns",
+   "end-game bonus for completing a full color set"
   ],
-  "winning_score": 75,
+  "turn_actions": 1,
+  "winning_score": 60,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Draft tiles each round to fill your wall pattern, scoring adjacency points as you place them and penalties for overflow; once someone completes a horizontal row the game ends after final bonuses and the highest total wins."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Draft tiles each round to fill pattern lines and transfer completed lines onto your wall for points, minus penalties for overflow; once someone completes a horizontal wall row the game ends after that round plus bonuses, and the highest total wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Sagrada",

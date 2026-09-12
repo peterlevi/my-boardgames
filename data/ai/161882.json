@@ -19,18 +19,28 @@
  },
  "scoring": {
   "subsystems": [
-   "stock ownership and dividends across five railway companies"
+   "share ownership and dividend economy"
   ],
   "sources": [
    "cash on hand",
-   "value of remaining unsold shares"
+   "dividends collected during play",
+   "final market value of held shares (based on company track/city connections)"
   ],
-  "winning_score": 35,
+  "turn_actions": 4,
+  "winning_score": 40,
   "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Build track and issue/buy shares to collect dividends over the game; once all towns have been upgraded to cities the game ends after a final dividend, and whoever has the most cash (plus leftover share value) wins."
+  "ends_by": [
+   "exhaustion",
+   "end_trigger"
+  ],
+  "how_you_win": "Players auction and hold shares in five railway companies, build track and upgrade towns to raise dividends, and collect dividend payouts over the game; when track cubes run out or the endgame trigger hits, cash plus the sale value of held shares is totaled and the richest player wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Chicago Express",

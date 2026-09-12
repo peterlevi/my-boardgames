@@ -18,19 +18,33 @@
  },
  "scoring": {
   "subsystems": [
-   "industry tile development",
-   "canal/rail network building"
+   "network & industry development engine (build links and industry tiles, then flip/use them for VP)"
   ],
   "sources": [
-   "VP from flipped (established) industry tiles",
-   "VP from connected canal and rail links"
+   "canal links (VP per gold circle in connected locations)",
+   "rail links (VP per gold circle in connected locations)",
+   "industry tiles by type (cotton mills, coal mines, iron works, breweries, ports) scored on flipping",
+   "leftover money converted to VP (1 VP per £10) at game end"
   ],
   "winning_score": 165,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You build and establish (flip) industry tiles and link them with canals then rails; VP is counted for industries and links at the end of the canal phase and again at the end of the rail phase, and the highest total wins."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "Across the Canal Era and Rail Era, each of which ends when the draw deck and all hands are exhausted, players build and flip industry tiles and connect them with canals/rail; VP are tallied at the end of each era from flipped tiles, links, and leftover cash, and the highest total after both eras wins.",
+  "checked": [
+   "https://boardgamegeek.com/wiki/page/thing:28720",
+   "https://en.wikipedia.org/wiki/Brass_(board_game)",
+   "https://www.boardgamesbot.com/brass-lancashire/how-to-play"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Brass: Birmingham",

@@ -20,20 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "settlement/tableau building & resource production",
-   "exploration & conquest raiding"
+   "building/production engine",
+   "raid/exploration track"
   ],
   "sources": [
-   "VP printed on location and unit cards",
-   "raid/expedition rewards",
-   "round-end bonus VP tokens"
+   "Buildings",
+   "Raiding/combat",
+   "Exploration",
+   "Faction (clan) track bonus"
   ],
+  "turn_actions": 4,
   "winning_score": 40,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over five rounds, players build up settlements and raid rivals or explore for rewards; whoever has accumulated the most victory points by the end wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over three eras you build cards for ongoing benefits and send ships to raid or explore; after the third era, points from buildings, completed raids, and bonus tiles are totaled and the highest sum wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Imperial Settlers",

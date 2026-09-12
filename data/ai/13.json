@@ -18,23 +18,31 @@
  },
  "scoring": {
   "subsystems": [
-   "settlements and cities built on the board",
-   "longest road bonus",
-   "largest army bonus",
-   "hidden victory-point development cards"
+   "settlement/city/road building network (fed by resource trading), which also yields Longest Road, Largest Army, and VP development-card bonuses"
   ],
   "sources": [
-   "settlement/city building points",
-   "longest continuous road bonus",
-   "largest knight army bonus",
-   "hidden development-card victory points"
+   "settlements",
+   "cities",
+   "longest road",
+   "largest army",
+   "victory point development cards"
   ],
   "winning_score": 10,
-  "tally": "mixed",
+  "tally": "running",
   "shape": "sum",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "You build settlements, upgrade them to cities, and extend roads using resources gathered from dice rolls, while competing for the longest-road and largest-army bonuses and collecting hidden victory-point cards; the first player whose total (public and hidden) reaches 10 points wins immediately."
+  "ends_by": [
+   "target_score"
+  ],
+  "how_you_win": "Build settlements (1 VP) and upgrade them to cities (2 VP), and pick up bonus VP from Longest Road, Largest Army, or hidden VP development cards; the first player to reach 10 VP on their turn wins immediately.",
+  "checked": [
+   "https://catanrules.com/victory-points/"
+  ],
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Ticket to Ride",

@@ -20,22 +20,35 @@
  },
  "scoring": {
   "subsystems": [
-   "building-district majority control",
-   "contract fulfillment for goods/coin/points",
-   "temple track advancement"
+   "district building",
+   "contract fulfillment",
+   "region area majority",
+   "temple/piety track"
   ],
   "sources": [
-   "district majority bonuses",
-   "completed contracts",
-   "temple track position",
-   "leftover resources/coins"
+   "Building districts (area majority)",
+   "Temple track advancement",
+   "Port trade / contracts"
   ],
+  "turn_actions": 1,
   "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Accumulate the most points by winning majority control in the city's building districts, fulfilling contracts with gathered dice/resources, and climbing the temple track; the game ends once the city's districts are built out, and totals are tallied then."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "Over the game's fixed rounds you activate districts to build, fulfill contracts, and climb the temple track; the highest combined total of building VP, contracts, region majorities, and temple bonuses wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   },
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Teotihuacan",

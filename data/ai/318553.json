@@ -18,20 +18,34 @@
  },
  "scoring": {
   "subsystems": [
-   "province development via dice",
-   "goods market selling for money",
-   "palace personality recruitment for fame"
+   "province building network (roll-and-write connections → fame)",
+   "goods market trading (selling goods → money, escalating value per kind sold)",
+   "river/karma track progression (bonuses and tie-break resource)"
   ],
   "sources": [
-   "money track",
-   "fame track"
+   "fame from connecting buildings (1-3 points depending on upgrade)",
+   "money from selling goods when a market is connected (up to 3 at once, escalating value)",
+   "money from the Trader palace action (sell up to 2 goods)",
+   "river advancement bonuses (money and/or fame)",
+   "bonus symbols on tracks/province edges (fame or money)",
+   "karma track (used only as a tiebreaker, not itself scored)"
   ],
-  "winning_score": 30,
+  "winning_score": 20,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "As in the original game, advance a money marker and a fame marker along two opposing tracks using dice results to trade goods, win personalities, and sail the river; the first to have both markers meet wins instantly."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "As in the parent game, you fill in your pad to push a fame track and a money track toward each other from opposite ends; the moment one player's fame and money entries intersect, the round is finished out and whoever's tracks cross the intersection point by the most wins (ties broken by karma collected/used).",
+  "checked": [
+   "https://www.yucata.de/en/Rules/RajasDice"
+  ],
+  "endings": [
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Rajas of the Ganges",

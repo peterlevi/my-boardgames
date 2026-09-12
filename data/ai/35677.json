@@ -20,20 +20,27 @@
  },
  "scoring": {
   "subsystems": [
-   "integrated goods-production/building-and-ship economy"
+   "resource-processing & building/ship ownership economy"
   ],
   "sources": [
-   "cash on hand",
-   "building values",
-   "ship values",
-   "leftover goods value"
+   "Money",
+   "Buildings",
+   "Ships"
   ],
+  "turn_actions": 1,
   "winning_score": 300,
-  "tally": "endgame",
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "After the fixed number of round cycles, total up cash plus the value of all buildings, ships and leftover goods you own; the richest player wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After a fixed number of rounds, add up your cash, the value of every building you own, and the value of every ship you own; the highest total wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Agricola",

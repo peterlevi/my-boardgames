@@ -20,20 +20,31 @@
  },
  "scoring": {
   "subsystems": [
-   "public and secret objective completion"
+   "Public objective scoring",
+   "Secret objective scoring",
+   "Special point sources (Mecatol/relics/Support for the Throne)"
   ],
   "sources": [
-   "public objectives scored",
-   "secret objectives scored",
-   "Support for the Throne/agenda bonuses",
-   "Imperial strategy card (Mecatol Rex)"
+   "Completed public objectives",
+   "Completed secret objective",
+   "Support for the Throne gifts",
+   "Imperial strategy card point",
+   "Relic/legendary planet bonuses"
   ],
+  "turn_actions": 3,
   "winning_score": 10,
   "tally": "running",
   "shape": "objective_count",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "Score victory points primarily by completing public and secret objectives (plus a few bonus sources); the first player to reach 10 VP wins immediately."
+  "ends_by": [
+   "target_score"
+  ],
+  "how_you_win": "You expand, build, and fight to complete public and secret objectives each round, scoring victory points as you go; the first player to reach 10 points wins immediately.",
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Eclipse: Second Dawn for the Galaxy",

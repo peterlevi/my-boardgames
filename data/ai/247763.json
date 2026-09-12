@@ -20,23 +20,31 @@
  },
  "scoring": {
   "subsystems": [
-   "city/tunnel network expansion",
-   "colonize-card set matching",
-   "production-track endgame multipliers",
-   "loan/debt penalty"
+   "special-project card resolution (each card scores by its own printed condition)",
+   "underwater city network building (domes + tunnels) for connection bonuses"
   ],
   "sources": [
-   "city and tunnel tiles",
-   "colonize card bonuses",
-   "metal/kelp/buildings track scoring cards",
-   "unpaid loans"
+   "VP printed on special project cards as played",
+   "end-game bonus tiles for network/dome-tunnel completion",
+   "certificate track end-game bonus tiles",
+   "population/exploration card VP",
+   "final scoring cards revealed at game end",
+   "unused action cards left in hand (small penalty)"
   ],
-  "winning_score": 110,
+  "turn_actions": 5,
+  "winning_score": 120,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over three fixed eras you build an underwater city network, play colonize cards for actions and matching bonuses, and collect scoring cards that multiply your final resource-track levels; whoever totals the most points after subtracting unpaid loans wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over 6 rounds, place cards into matching colored action slots to build domes, tunnels and special projects, then total all VP from cards played, network completion bonuses, and the certificate track at game end.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Pipeline",

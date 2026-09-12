@@ -18,19 +18,37 @@
  },
  "scoring": {
   "subsystems": [
-   "Rebel reputation track from completed mission objectives",
-   "Imperial hunt to locate and destroy the Rebel base"
+   "objective card resolution (reputation/loyalty shifts)",
+   "military combat and area control",
+   "turn/game-clock track"
   ],
   "sources": [
-   "Rebel reputation gained/lost from objective cards",
-   "discovery and destruction of the Rebel base"
+   "Rebel Reputation track (uprising)",
+   "Base elimination (Empire's objective)"
   ],
-  "winning_score": 20,
-  "tally": "running",
+  "turn_actions": 3,
+  "winning_score": 0,
+  "tally": "mixed",
   "shape": "objective_count",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "The Empire searches the galaxy to locate and then destroy the hidden Rebel base, which wins immediately for the Empire; the Rebels instead complete objective missions to build reputation and stall the hunt, winning if they survive with enough reputation once the turn track runs out."
+  "ends_by": [
+   "sudden_death",
+   "end_trigger"
+  ],
+  "how_you_win": "The Empire wins immediately by locating and destroying the Rebel base with the Death Star; the Rebels win by surviving until the turn track runs out, using objective cards and combat to shift system loyalty and reputation in their favor.",
+  "endings": [
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   },
+   {
+    "how": "target_score",
+    "decided_by": "instant"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "War of the Ring",

@@ -20,24 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "Bird tableau engine across habitat rows (eggs, cached food, tucked cards, bird abilities)",
-   "Round-end goals",
-   "Bonus card objectives"
+   "bird tableau engine across forest, grassland and wetland habitats"
   ],
   "sources": [
-   "Bird card point values",
-   "Eggs laid",
-   "Food cached",
-   "Tucked cards",
-   "Round goal points",
-   "Bonus card points"
+   "Bird cards",
+   "Bonus cards",
+   "End-of-round goals",
+   "Eggs",
+   "Food cached on cards",
+   "Tucked cards"
   ],
+  "turn_actions": 4,
   "winning_score": 90,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You play birds into three habitat rows over exactly four rounds, accumulating eggs, cached food, and tucked cards each turn; at the end of the fourth round you total bird points, eggs, food, tucked cards, round-goal points, and bonus-card points, and the highest sum wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over four rounds players play birds into a habitat network, gaining food, laying eggs, and drawing cards through that engine; whoever has accumulated the most points from bird cards, eggs, cached food, tucked cards, bonus cards, and round goals at the end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Everdell",

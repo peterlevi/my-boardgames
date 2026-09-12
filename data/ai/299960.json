@@ -18,21 +18,31 @@
  },
  "scoring": {
   "subsystems": [
-   "discipline reputation tracks (four faculties)",
-   "student recruitment and graduation",
-   "professor/staff engine"
+   "student teaching & examinations across four disciplines",
+   "building construction",
+   "staff/bonus card effects"
   ],
   "sources": [
-   "reputation gained on the four discipline tracks",
-   "graduated student bonuses",
-   "end-game bonus/objective tiles"
+   "experience points earned from teaching, converted to VP",
+   "students who pass exams",
+   "buildings constructed",
+   "recruited staff abilities",
+   "end-game bonus/majority cards"
   ],
+  "turn_actions": 4,
   "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You recruit professors and students and advance your university's standing across four academic disciplines over a set number of rounds; final reputation from all tracks plus graduated students and bonus tiles is totalled, and the highest score wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Recruit staff and students, teach across the four disciplines to graduate students and accrue experience, and construct buildings; the highest combined victory-point total at the end of the fixed number of rounds wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Lisboa",

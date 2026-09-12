@@ -20,18 +20,39 @@
  },
  "scoring": {
   "subsystems": [
-   "crafting cards into victory points",
-   "faction-specific action engine (building/decrees, sympathy & revolts, quests, aiding)"
+   "faction-unique primary VP engine (Marquise: building construction; Eyrie: roost presence/Decree upkeep; Woodland Alliance: sympathy spread; Vagabond: quests and faction relationships)",
+   "universal secondary VP triggers (crafting items, removing enemy buildings/tokens)"
   ],
   "sources": [
-   "shared victory point track"
+   "crafting items for their printed value",
+   "building/development track (Marquise)",
+   "decree card compliance (Eyrie)",
+   "sympathy spread and revolts (Woodland Alliance)",
+   "quests completed (Vagabond)",
+   "aiding other factions (Vagabond)"
   ],
   "winning_score": 30,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "The game ends the instant a player's marker reaches 30 on the shared score track; each asymmetric faction feeds that track through its own actions (crafting, building, completing decrees, sympathy/revolts, or quests)."
+  "ends_by": [
+   "target_score",
+   "sudden_death"
+  ],
+  "how_you_win": "Each asymmetric faction races its own scoring engine (buildings, roosts, sympathy, or quests) plus shared crafting/battle points until someone hits 30 victory points and wins immediately; alternatively, a player holding an activated dominance card wins outright by completing that card's objective instead of chasing points.",
+  "checked": [
+   "https://www.therootdatabase.com/law/victory/en/",
+   "https://www.ultraboardgames.com/root/game-rules.php"
+  ],
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   },
+   {
+    "how": "end_trigger",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Vast: The Crystal Caverns",

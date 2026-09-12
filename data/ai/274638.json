@@ -19,17 +19,26 @@
  },
  "scoring": {
   "subsystems": [
-   "combat health tracking"
+   "combat resolution reducing a hero's health"
   ],
   "sources": [
-   "opponent fighters' remaining health"
+   "damage dealt through attack cards",
+   "health remaining on each hero"
   ],
+  "turn_actions": 3,
   "winning_score": 0,
   "tally": "running",
   "shape": "single_currency",
-  "ends_by": "elimination",
-  "sudden_death_common": false,
-  "how_you_win": "You win by reducing all of an opponent's characters' health to zero through card-driven attacks, defeating their side entirely; there is no point total."
+  "ends_by": [
+   "elimination"
+  ],
+  "how_you_win": "On your turn you move, play a scheme card, or attack the adjacent enemy hero with a matching-value card; the game ends the instant the opponent's hero is reduced to 0 health, with no further point counting.",
+  "endings": [
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Unmatched: Battle of Legends, Volume One",

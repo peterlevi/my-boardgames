@@ -18,21 +18,25 @@
  },
  "scoring": {
   "subsystems": [
-   "Building construction (fixed-VP buildings)",
-   "Contracts (fulfilling resource orders for VP)"
+   "building tableau construction"
   ],
   "sources": [
-   "Building point values",
-   "Completed contracts",
-   "Leftover coins (3 coins = 1 VP)",
-   "Unused building plots (negative VP)"
+   "Buildings"
   ],
-  "winning_score": 130,
+  "turn_actions": 1,
+  "winning_score": 35,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Build up the most valuable set of buildings and fulfilled contracts over the game's fixed number of rounds, converting leftover coins into extra points while avoiding empty building sites, which cost points."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Across a fixed number of rounds you place workers to gather fish and resources and use them to build valuable buildings; at the end, building VP plus remaining money determines the winner.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Agricola",

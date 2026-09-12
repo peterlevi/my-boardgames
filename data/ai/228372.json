@@ -20,18 +20,26 @@
  },
  "scoring": {
   "subsystems": [
-   "stock investment & railway track-building economy"
+   "railway network building & stock investment"
   ],
   "sources": [
-   "cash on hand",
-   "value of shares held (share price × shares owned)"
+   "Stock/company value (net worth from shares held)"
   ],
-  "winning_score": 80,
-  "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "When a triggering event ends the game (such as a share price maxing out or the map's track running out), whoever holds the greatest combined wealth in cash and railway stock wins."
+  "turn_actions": 3,
+  "winning_score": 40,
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Victory points double as money: you earn them through company income and spend them to build or lease track, so you win by balancing expansion against hoarding VP, ending with the highest total when the game triggers its end.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Irish Gauge",

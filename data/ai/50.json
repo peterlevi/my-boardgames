@@ -19,17 +19,28 @@
  },
  "scoring": {
   "subsystems": [
-   "expedition scoring per color (card total minus 20 start cost, handshake multiplier, 8+ card bonus)"
+   "Expedition card play (one per color suit)"
   ],
   "sources": [
-   "each color's expedition"
+   "Each color expedition's card-value sum",
+   "20-point commitment cost per expedition undertaken",
+   "Handshake card multipliers (x2/x3)",
+   "8+ card expedition length bonus"
   ],
+  "turn_actions": 1,
   "winning_score": 60,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Each expedition you start costs 20 points before it earns anything back, so an expedition left incomplete or with only low cards loses points; once the deck runs out, whoever's total across all expeditions (multiplied up by handshake cards) is higher wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "When the draw pile runs out, each player totals their color expeditions (card values minus a 20-point entry cost, multiplied by any handshake cards played, plus a length bonus); the higher total across the hand(s) played wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Jaipur",

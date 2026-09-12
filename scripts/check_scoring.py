@@ -11,7 +11,7 @@ person who has played these games.
 import sys
 
 from common import ROOT, load_games
-from scoring import SALAD_ORDER, salad, win
+from scoring import SALAD_ORDER, salad, win, wins
 
 FILE = ROOT / "tests" / "expectations.txt"
 
@@ -30,7 +30,7 @@ def parse():
             name = f"{name}:{head}"
         checks = {}
         for part in rest.split():
-            for op in ("<=", ">=", "="):
+            for op in ("<=", ">=", "!=", "="):
                 if op in part:
                     key, val = part.split(op, 1)
                     checks[key] = (op, val)
@@ -57,16 +57,19 @@ def main():
             failed.append((name, "not in the collection", "", ""))
             continue
         facts = (g.get("ai") or {}).get("scoring") or {}
-        got = {"salad": salad(facts), "win": win(facts)}
+        got = {"salad": salad(facts), "win": win(facts),
+               "wins": wins(facts)}
         for key, (op, val) in checks.items():
             if key == "win":
-                good = got["win"] == val
+                ways = got["wins"]
+                good = (val not in ways) if op == "!=" else (val in ways)
             else:
                 good = ok(op, got[key], val)
             if good:
                 passed += 1
             else:
-                failed.append((name, key, f"{op}{val}", str(got[key])))
+                failed.append((name, key, f"{op}{val}",
+                               str(got["wins"] if key == "win" else got[key])))
     print(f"{passed} checks pass, {len(failed)} fail")
     for name, key, want, got in failed:
         print(f"  {name[:34]:36} {key:6} want {want:10} got {got}")

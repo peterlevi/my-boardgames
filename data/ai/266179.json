@@ -18,21 +18,29 @@
  },
  "scoring": {
   "subsystems": [
-   "exoplanet zone majority control via settlers",
-   "space-gate network construction bonus",
-   "technology/objective card bonuses"
+   "exoplanet settlement pattern scoring (per-planet variable rules)",
+   "moon achievement cards",
+   "command station influence track"
   ],
   "sources": [
-   "zone occupation points on the three exoplanets",
-   "connected-gate network bonuses",
-   "technology card end-game bonuses"
+   "Exoplanet colonization (per-planet scoring conditions)",
+   "Specialist/objective bonuses"
   ],
-  "winning_score": 70,
+  "turn_actions": 4,
+  "winning_score": 120,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You use worker placement and gate-building to move settlers across a growing network onto exoplanet zones, scoring for majority presence and connected gates as zones fill up; when the exoplanets are fully colonized, remaining bonuses (technology, network) are added and the highest total wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "Send settlers through the gates to build the best patterns on each exoplanet (each scored by its own variable rule), complete moon achievements, and climb the command station track; highest combined total at game end wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Yokohama",

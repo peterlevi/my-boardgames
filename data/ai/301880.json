@@ -19,21 +19,32 @@
  },
  "scoring": {
   "subsystems": [
-   "worker placement to gather resources/followers",
-   "contract (quest) fulfillment for VP and bonus rewards"
+   "trade route contracts",
+   "homestead building",
+   "raiding/plunder"
   ],
   "sources": [
-   "completed contracts",
-   "quest/artifact tiles",
-   "favor/reputation track",
-   "leftover resources"
+   "contract fulfillment VP",
+   "homestead tile VP",
+   "raid rewards (silver/trinkets)",
+   "goal card bonus",
+   "leftover resource conversion"
   ],
-  "winning_score": 65,
+  "turn_actions": 1,
+  "winning_score": 70,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Use worker placement and dice to gather resources and recruit followers, fulfilling contract cards for VP and bonuses; when the contract/quest supply runs out, the player with the most total VP from contracts, tiles, and leftover resources wins."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "Place worker dice each turn to gather resources, fulfill contracts along the trade route, raid villages and build your homestead; the player with the most accumulated VP when the deck/track runs out wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Architects of the West Kingdom",

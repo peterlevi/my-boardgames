@@ -20,17 +20,25 @@
  },
  "scoring": {
   "subsystems": [
-   "auction/bidding for status cards"
+   "auction bidding for prestige and liability cards"
   ],
   "sources": [
-   "total point value of won status cards, times multiplier cards, minus penalty cards"
+   "Status/luxury cards"
   ],
+  "turn_actions": 1,
   "winning_score": 25,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "When the status-card deck runs out, the player with the highest total card value wins — but anyone left with the least money remaining is disqualified regardless of their points."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "You bid your limited cash to win valuable cards and avoid costly ones; once the last of the four special cards is drawn the game ends, the player left with the least money is disqualified, and among the rest the highest card total wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "For Sale",

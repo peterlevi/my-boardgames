@@ -20,20 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "dice-rolling engine producing VP/energy/heal/attack each turn",
-   "power cards bought with energy for ongoing effects or direct VP"
+   "victory point race",
+   "Tokyo control/combat elimination"
   ],
   "sources": [
-   "VP rolled directly on dice",
-   "Tokyo occupation VP bonus each turn",
-   "VP granted by power cards"
+   "dice-rolled victory points",
+   "Tokyo occupation bonus points",
+   "card-based point/effect gains"
   ],
+  "turn_actions": 1,
   "winning_score": 20,
   "tally": "running",
   "shape": "single_currency",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "You race to 20 victory points earned mainly from dice symbols and the bonus for holding Tokyo, though in practice games often end early when all but one monster has been attacked to elimination."
+  "ends_by": [
+   "target_score",
+   "elimination"
+  ],
+  "how_you_win": "Roll dice to collect victory points, energy (to buy power cards), and attacks; you win by reaching 20 victory points or by being the last monster with health remaining after eliminating all others.",
+  "endings": [
+   {
+    "how": "elimination",
+    "decided_by": "instant"
+   },
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "King of New York",

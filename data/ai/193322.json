@@ -18,21 +18,32 @@
  },
  "scoring": {
   "subsystems": [
-   "military conquest (spies/fleets attacking planets)",
-   "economic/colonial development (production, tech, colonization)"
+   "planetary colonization/economy",
+   "military conquest",
+   "technology development"
   ],
   "sources": [
-   "planets/colonies controlled",
-   "technology advances",
-   "military victories",
-   "leftover resources"
+   "colonized planets",
+   "battles won/military strength",
+   "technology track advancement",
+   "achievement tiles",
+   "credits/production"
   ],
+  "turn_actions": 4,
   "winning_score": 50,
-  "tally": "mixed",
+  "tally": "running",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You develop your race across several turns, choosing military conquest or peaceful expansion/tech, and whoever has accumulated the most victory points from planets, tech, and battles when the game ends wins."
+  "ends_by": [
+   "target_score",
+   "fixed_length"
+  ],
+  "how_you_win": "Accumulate the most empire (victory) points by colonizing planets, developing technology, and winning battles, either by reaching a target score first or holding the lead when the round limit ends.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Cosmic Encounter",

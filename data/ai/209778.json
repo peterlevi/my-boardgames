@@ -20,17 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "shared exit/objective completion under a real-time hourglass"
+   "Cooperative real-time task completion"
   ],
   "sources": [
-   "objectives completed (map exploration, item pickup, exit)"
+   "Objectives completed as a team (no point values)"
   ],
+  "turn_actions": 1,
   "winning_score": 0,
-  "tally": "mixed",
+  "tally": "endgame",
   "shape": "objective_count",
-  "ends_by": "coop_goal",
-  "sudden_death_common": true,
-  "how_you_win": "There is no point total: all players cooperatively guide every hero to explore the maze, collect their equipment, and reach the exit before the sand timer runs out, and the group wins or loses together."
+  "ends_by": [
+   "coop_goal",
+   "sudden_death"
+  ],
+  "how_you_win": "The team wins outright if all heroes gather their gear and reach the exit before the sand timer runs out or the vortex marker reaches the exploration deck; there is no score, only success or failure.",
+  "endings": [
+   {
+    "how": "coop_goal",
+    "decided_by": "objectives"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Space Alert",

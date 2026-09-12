@@ -21,12 +21,25 @@
  "scoring": {
   "subsystems": [],
   "sources": [],
-  "winning_score": 9,
+  "turn_actions": 1,
+  "winning_score": 0,
   "tally": "endgame",
-  "shape": "objective_count",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Your spymaster gives one-word clues to help your team identify all of your team's agent cards on the grid before the other team finds all of theirs; touching the assassin card causes an instant loss for that team."
+  "shape": "sudden_death",
+  "ends_by": [
+   "sudden_death",
+   "end_trigger"
+  ],
+  "how_you_win": "There are no points; a team wins the instant it has correctly identified all of its own agent cards on the board first, or immediately loses if it touches the assassin.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "objectives"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Codenames: Duet",

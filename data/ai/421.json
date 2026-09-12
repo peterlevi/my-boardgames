@@ -20,19 +20,32 @@
  },
  "scoring": {
   "subsystems": [
-   "stock market share trading",
-   "railroad operations (track-laying and train runs)"
+   "stock market investing",
+   "railroad operations (track-laying & train running)"
   ],
   "sources": [
-   "cash on hand",
-   "value of shares held",
-   "value of private companies owned"
+   "Cash on hand",
+   "Value of stock held"
   ],
+  "turn_actions": 5,
   "winning_score": 7000,
   "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "exhaustion",
-  "how_you_win": "You accumulate the greatest total net worth, cash plus the market value of your shares and privates, and the game ends when the bank runs out of money; whoever has the most is declared the winner."
+  "ends_by": [
+   "exhaustion",
+   "sudden_death"
+  ],
+  "how_you_win": "You alternate buying/selling railroad stock with operating the companies you control to lay track and run trains for revenue; when the bank runs out of money the game ends and whoever has the greatest total net worth (cash plus share value) wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "money"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "1846: The Race for the Midwest",

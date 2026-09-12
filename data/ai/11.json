@@ -19,17 +19,25 @@
  },
  "scoring": {
   "subsystems": [
-   "bean planting and selling for coins"
+   "bean field harvesting"
   ],
   "sources": [
-   "coins earned from selling harvested bean fields"
+   "coins from harvesting bean fields (per bean-type payout table)"
   ],
-  "winning_score": 18,
+  "turn_actions": 4,
+  "winning_score": 16,
   "tally": "running",
   "shape": "single_currency",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You plant beans of a single type per field and sell the field for coins according to that bean's payout table when you choose to harvest; when the draw deck has been exhausted the required number of times, whoever has the most coins wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Once the draw deck has been exhausted for the third time, whoever has accumulated the most gold coins from harvested bean fields wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Coloretto",

@@ -18,17 +18,29 @@
  },
  "scoring": {
   "subsystems": [
-   "character-card drafting into home base vs. shared capital"
+   "home-base character card scoring",
+   "shared capital contribution powers"
   ],
   "sources": [
-   "end-of-round points from cards kept in your home base"
+   "points from character cards kept in your home base",
+   "bonuses granted by capital powers you triggered",
+   "end-of-round set/majority bonuses"
   ],
+  "turn_actions": 1,
   "winning_score": 45,
-  "tally": "running",
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Each round you draft character cards, choosing to keep them in your own base for points or feed them into the shared capital for power effects; after a set number of rounds, the player with the most accumulated points wins."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "You win by having the most total points after several rounds, balancing cards kept for direct home-base points against cards donated to the shared capital for its powers.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Capital Lux",

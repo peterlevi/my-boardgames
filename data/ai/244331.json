@@ -20,19 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "resource set (variety) collection",
-   "island majority control"
+   "island territorial control (coverage, chains, per-island majority)",
+   "resource collection (sets, variety, statues)"
   ],
   "sources": [
-   "diversity bonus for different resource types gathered",
-   "majority-controlled islands"
+   "island-coverage bonus (8/7 islands settled)",
+   "largest island-chain bonus",
+   "per-island majority payout",
+   "resource set bonus (4+/3/2 of a kind)",
+   "resource-variety bonus (one of each type)",
+   "statues"
   ],
-  "winning_score": 55,
+  "winning_score": 85,
   "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You place settler/village tokens over two phases to both collect a wide variety of resource types (scored for diversity at the end of each phase) and end up with majority presence on valuable islands (scored at the end of the settlement phase); highest combined total wins."
+  "shape": "majority_control",
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "The exploration phase ends and is scored once players exhaust their villager pieces, the board resets, and the settlement phase then ends and is scored the same way when pieces run out again; the combined two-phase total decides the winner.",
+  "checked": [
+   "https://opinionatedgamers.com/2018/07/16/dale-yu-review-of-blue-lagoon/"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Yellow & Yangtze",

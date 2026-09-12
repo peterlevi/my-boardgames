@@ -20,21 +20,34 @@
  },
  "scoring": {
   "subsystems": [
-   "Land/water/sky map tile placement and set collection",
-   "House of Wisdom research track",
-   "Resource/good conversion for end-game bonuses"
+   "land/water tile set collection",
+   "space & inspiration card set collection",
+   "guild influence majority"
   ],
   "sources": [
-   "Mapped tile sets",
-   "House of Wisdom track position",
-   "End-game bonus card requirements"
+   "Mapping (land, water, sky)",
+   "Equipment/caravan upgrades",
+   "House of Wisdom journal entries"
   ],
-  "winning_score": 100,
+  "winning_score": 70,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You spend the game placing land, water, and sky tiles to build matching sets and advancing on the House of Wisdom track; once a player triggers the end (e.g., exhausting a track or supply), everyone tallies tile-set VP plus end-game bonus cards, and the highest total wins."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "You spend the game mapping land, water, and sky tiles into sets, upgrading your caravan, and building influence with the three guilds; once a player reaches the final column of the Journal track everyone else gets one last turn, then all these sources are tallied and the highest total wins.",
+  "checked": [
+   "https://toppingthetable.com/how-to-play/how-to-play-wayfarers-of-the-south-tigris/",
+   "https://zatu.com/en-us/blogs/how-to-play/how-to-play-wayfarers-of-the-south-tigris",
+   "https://boardgamebreakdown.com/wayfarers-of-the-south-tigris-review/",
+   "https://www.boardgamequest.com/wayfarers-of-the-south-tigris-review/"
+  ],
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Architects of the West Kingdom",

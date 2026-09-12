@@ -19,22 +19,32 @@
  },
  "scoring": {
   "subsystems": [
-   "sheep delivery/deck-building loop",
-   "building network",
-   "breed/worker development tracks"
+   "Sheep drive & delivery",
+   "Breed/wool value economy",
+   "Building network along the trail"
   ],
   "sources": [
-   "delivery track advances (running)",
-   "buildings owned",
-   "wool/breed value bonuses",
-   "worker track position"
+   "sheep delivered value",
+   "wool quality bonuses",
+   "buildings built on the trail",
+   "objective cards fulfilled",
+   "leftover money"
   ],
-  "winning_score": 170,
+  "turn_actions": 6,
+  "winning_score": 130,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Score points continuously by delivering increasingly valuable sheep, then add end-game bonuses from buildings and worker-track progress once the final round is triggered."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Deliver increasingly valuable sheep herds to market while building trail infrastructure; the player with the most accumulated points when the game-end trigger fires wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Great Western Trail",

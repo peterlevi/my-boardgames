@@ -20,20 +20,38 @@
  },
  "scoring": {
   "subsystems": [
-   "hidden victory-point citizen cards",
-   "cathedral construction (dice invested)"
+   "cathedral construction",
+   "event card majorities",
+   "character card evaluations",
+   "activity card placement"
   ],
   "sources": [
-   "revealed hidden-VP cards",
-   "cathedral construction progress",
-   "unused dice/resource penalties"
+   "VP tokens gained during play",
+   "cathedral cube VP",
+   "cathedral penalty for empty rows",
+   "event card top/second-place VP",
+   "activity card tradesman-position VP",
+   "character card bonus VP (one per character card in play, each with its own criteria)"
   ],
-  "winning_score": 35,
+  "winning_score": 45,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Fulfill hidden objective cards and contribute workers/dice to the cathedral through worker placement with dice; cards are revealed and totaled once the event deck runs out, highest score wins."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "Across a preset number of rounds (set by how many red event cards are seeded in, 4-6 depending on player count) you place die-workers to build the cathedral, contest event cards, staff activity spaces, and satisfy character-card conditions; whoever has summed the most victory points across all these sources when the last event card resolves wins.",
+  "checked": [
+   "https://en.doc.boardgamearena.com/Gamehelptroyes",
+   "https://www.ultraboardgames.com/troyes/game-rules.php",
+   "https://boardgamegeek.com/thread/908477/what-are-typical-scores"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Lorenzo il Magnifico",

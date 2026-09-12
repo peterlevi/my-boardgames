@@ -19,20 +19,36 @@
  },
  "scoring": {
   "subsystems": [
-   "building construction for VP",
-   "virtue/corruption track"
+   "Building & Cathedral construction (resource/worker-driven engine)",
+   "Virtue/reputation track"
   ],
   "sources": [
-   "constructed buildings",
-   "virtue track bonus/penalty",
-   "leftover resources/coins"
+   "printed VP on constructed buildings",
+   "building end-of-game bonus effects",
+   "Cathedral level VP",
+   "Virtue track final position (bonus or penalty)",
+   "unpaid Debts penalty (-2 each)",
+   "leftover Gold and Marble on player board (+1 each)",
+   "leftover Silver in sets of 10 (+1 per set)",
+   "Workers still in Prison penalty (-1 per 2)"
   ],
-  "winning_score": 65,
-  "tally": "mixed",
+  "winning_score": 40,
+  "tally": "endgame",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Send workers to gather materials and construct buildings for VP while managing a virtue/corruption track; when a building stack is depleted the game ends and the highest total VP wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Spend resources and workers to construct buildings and contribute to the Cathedral while managing your Virtue reputation and debts; once the Guildhall's worker supply runs out, everyone finishes the round and all VP sources are totaled, with the highest sum winning.",
+  "checked": [
+   "https://www.ultraboardgames.com/architects-of-the-west-kingdom/game-rules.php",
+   "https://boardgamegeek.com/thread/2090259/winning-scores"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Raiders of the North Sea",

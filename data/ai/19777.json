@@ -20,20 +20,25 @@
  },
  "scoring": {
   "subsystems": [
-   "company share value/ownership",
-   "shipping & goods-delivery network"
+   "corporate ownership/shares economy (single integrated engine covering production, shipping, and company value)"
   ],
   "sources": [
-   "value of held company shares",
-   "cash on hand",
-   "loans (negative)"
+   "Net worth (company share value)"
   ],
-  "winning_score": 500,
+  "turn_actions": 6,
+  "winning_score": 150,
   "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Grow your net worth (cash plus the value of shares held in rubber, oil, and shipping companies) by expanding routes and bidding for lucrative positions; once the tile supply for the final phase is exhausted, whoever has the highest net worth wins."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Each round players auction for turn order and take a role (production, shipping, entrepreneur, etc.) to grow companies and move goods for income; when a production track fills up the game ends and whoever holds the most total wealth (cash plus share value) wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Antiquity",

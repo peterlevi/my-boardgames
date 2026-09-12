@@ -20,12 +20,26 @@
  "scoring": {
   "subsystems": [],
   "sources": [],
-  "winning_score": 15,
+  "turn_actions": 1,
+  "winning_score": 0,
   "tally": "endgame",
-  "shape": "objective_count",
-  "ends_by": "coop_goal",
-  "sudden_death_common": false,
-  "how_you_win": "Both players cooperatively give each other one-word clues to find all 15 shared green agent cards within a limited number of clues; the team wins if all agents are found before the clues run out or an assassin card is touched."
+  "shape": "sudden_death",
+  "ends_by": [
+   "coop_goal",
+   "sudden_death",
+   "exhaustion"
+  ],
+  "how_you_win": "Both players cooperatively give clues to find all 15 agents between their two boards before running out of the shared timer track; touching an assassin or running out of turns loses instantly, with no point score involved.",
+  "endings": [
+   {
+    "how": "coop_goal",
+    "decided_by": "objectives"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Codenames",

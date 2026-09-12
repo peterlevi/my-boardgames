@@ -18,18 +18,25 @@
  },
  "scoring": {
   "subsystems": [
-   "firefly-bidding auction for creature cards"
+   "firefly bidding for creature cards"
   ],
   "sources": [
-   "collected tame-critter card values",
-   "negative wild-critter cards"
+   "Critters collected (printed point values)"
   ],
-  "winning_score": 30,
+  "turn_actions": 1,
+  "winning_score": 20,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Players place fireflies one at a time onto revealed cards to bid for desirable critters while avoiding overpaying for cards that turn out to be worthless wild critters; once the deck is exhausted, whoever's collected cards sum to the highest total (positive critters minus negative ones) wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Spend fireflies wisely across successive auctions to collect the most valuable creature cards while avoiding negative wild critters; highest total once all cards are claimed wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Coloretto",

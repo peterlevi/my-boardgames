@@ -20,20 +20,39 @@
  },
  "scoring": {
   "subsystems": [
-   "technology tracks (multiple parallel advancement tracks)",
-   "pulsar/planet tile collection and conversion"
+   "gyrodyne/pulsar power production (repeating per-round VP from spinning gyrodynes and completed transmitters)",
+   "colony network development (nonlinear area-growth bonus for stations built across planetary systems)",
+   "technology and goal-tile objectives (purchased tech cards and chosen goal tiles paying out end-game VP)"
   ],
   "sources": [
-   "points from technology track milestones",
-   "end-game set/conversion bonuses from planets and pulsars",
-   "leftover resources"
+   "spinning gyrodyne value scored every round (1/2/3 VP each)",
+   "completed transmitters scored each round",
+   "uncompleted (non-spinning) gyrodynes and unclaimed pulsars (1VP each at game end)",
+   "claimed pulsars bonus",
+   "colonies/stations on the board (nonlinear scale, e.g. 2→2VP, 8→20VP, 13→50VP, +3VP each beyond)",
+   "purchased technologies (several pay end-game VP)",
+   "goal tiles completed",
+   "initiative track final standing (7/4/2 VP for 1st/2nd/3rd)",
+   "leftover engineering cubes (1VP per pair)"
   ],
   "winning_score": 90,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Across the game's fixed 8 rounds, accumulate the most points by advancing technology tracks and collecting/converting planet and pulsar tiles into victory points."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over a fixed 8 rounds you rack up VP each round from your spinning gyrodynes and transmitters, then add end-game VP for colonies built, technologies bought, goal tiles completed, pulsars claimed, initiative-track placement, and leftover cubes; highest total wins.",
+  "checked": [
+   "https://www.meeplemountain.com/reviews/pulsar-2849/",
+   "https://opinionatedgamers.com/2017/12/29/dale-yu-review-of-pulsar-2849/",
+   "https://www.boardgamequest.com/pulsar-2849-review/"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "The Voyages of Marco Polo",

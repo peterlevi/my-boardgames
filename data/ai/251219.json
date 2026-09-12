@@ -19,17 +19,27 @@
  },
  "scoring": {
   "subsystems": [
-   "ruby accumulation through selling goods and fulfilling contracts"
+   "ruby collection via bazaar contracts and deliveries"
   ],
   "sources": [
-   "rubies collected"
+   "rubies from fulfilled merchant/governor contracts",
+   "rubies from selling goods",
+   "bonus rubies from special tiles and bonus cards"
   ],
+  "turn_actions": 5,
   "winning_score": 5,
   "tally": "running",
   "shape": "single_currency",
-  "ends_by": "target_score",
-  "sudden_death_common": true,
-  "how_you_win": "Move your merchant around the bazaar gathering and selling goods, fulfilling contracts, and completing bonus-card sets to earn rubies; the first player to collect the required number of rubies (5, scaled slightly by player count) wins immediately."
+  "ends_by": [
+   "target_score"
+  ],
+  "how_you_win": "Players move their merchant and assistants around the bazaar tiles gathering and delivering goods to complete contracts, each paying out rubies; the first player to collect the target number of rubies (typically 5) immediately wins.",
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "objectives"
+   }
+  ]
  },
  "similar": [
   "The Voyages of Marco Polo",

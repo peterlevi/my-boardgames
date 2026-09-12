@@ -19,19 +19,34 @@
  },
  "scoring": {
   "subsystems": [
-   "industry tile development",
-   "canal/rail network building"
+   "network building (canal/rail links)",
+   "industry development (building and flipping industry tiles)"
   ],
   "sources": [
-   "VP from flipped (established) industry tiles",
-   "VP from connected canal and rail links"
+   "link tile VP, canal era",
+   "link tile VP, rail era",
+   "flipped industry tile VP, canal era",
+   "flipped industry tile VP, rail era",
+   "end-of-game money-to-VP conversion (£4 = 1VP, max 15)"
   ],
-  "winning_score": 180,
-  "tally": "mixed",
+  "winning_score": 170,
+  "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You build and 'flip' industry tiles (by fulfilling demand) and connect them with canals/rails; VP from industries and links is tallied at the end of the canal era and again at the end of the rail era, and the highest total wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "The canal era ends when its card deck is exhausted and links/flipped industries are scored, then the rail era plays out the same way and is scored again; add leftover money converted to VP, and the highest total wins.",
+  "checked": [
+   "https://officialgamerules.org/game-rules/brass-birmingham/",
+   "https://boardgamegeek.com/thread/2756965/average-scores",
+   "https://boardgamegeek.com/thread/2698436/what-is-supposed-to-be-a-good-winning-score-to-aim"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Brass: Lancashire",

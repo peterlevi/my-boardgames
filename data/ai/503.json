@@ -18,19 +18,27 @@
  },
  "scoring": {
   "subsystems": [
-   "caravan route placement"
+   "Caravan route network building"
   ],
   "sources": [
-   "oases reached",
-   "enclosed desert territory",
-   "longest-caravan bonus tiles"
+   "Oasis adjacency",
+   "Enclosed desert territory",
+   "Longest caravan per color"
   ],
-  "winning_score": 70,
+  "turn_actions": 1,
+  "winning_score": 80,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You place camels to snake caravans across the desert, reaching oases and enclosing empty regions; scores stay hidden until the end, and once a player exhausts one of their camel colors the game ends and the highest hidden total wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "You place camels to build the longest caravans of each color, reach oases, and enclose water holes; scores are hidden until a player runs out of camels, then the highest total wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Tigris & Euphrates",

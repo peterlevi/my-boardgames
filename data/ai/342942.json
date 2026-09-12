@@ -20,23 +20,34 @@
  },
  "scoring": {
   "subsystems": [
-   "zoo enclosures/appeal",
-   "conservation project track",
-   "reputation track",
-   "sponsor/direct-VP cards"
+   "Appeal track (zoo attractiveness engine)",
+   "Conservation track (real-world conservation support engine)"
   ],
   "sources": [
-   "appeal",
-   "conservation points",
-   "reputation-based bonus (combined via lookup table)",
-   "direct points from cards"
+   "Appeal gained from animals housed in your zoo",
+   "Appeal from sponsor and bonus cards",
+   "Conservation points from supporting conservation projects",
+   "Conservation points from university/partner-zoo action cards",
+   "end-of-game bonus icons (hourglass) on played cards",
+   "final scoring/bonus card conditions"
   ],
   "winning_score": 120,
-  "tally": "mixed",
+  "tally": "running",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Build your zoo and advance conservation/reputation tracks; when someone crosses the end of the reputation track a final round is played, then appeal and conservation are combined via a table and added to direct card points for the highest total."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Build up Appeal by collecting and housing animals, and build up Conservation by supporting conservation projects; when the two markers meet on the shared scoring track, one final round is played and whoever has the highest combined Appeal-plus-Conservation total wins.",
+  "checked": [
+   "https://eriktwice.com/en/2022/11/13/ark-nova-how-does-the-scoring-work/",
+   "https://en.wikipedia.org/wiki/Ark_Nova"
+  ],
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Terraforming Mars",

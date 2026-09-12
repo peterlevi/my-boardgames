@@ -20,24 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "building/colonization network",
-   "research (tech tracks)",
-   "federations",
-   "round & final scoring tiles"
+   "technology research track",
+   "planet colonization / building network",
+   "federation formation"
   ],
   "sources": [
-   "round scoring bonuses",
-   "tech track advancement points",
-   "federation points",
-   "two final scoring tiles",
-   "leftover resources converted to points"
+   "Scoring tiles (round & final bonus VP)",
+   "Federations",
+   "Research/tech track bonuses"
   ],
+  "turn_actions": 7,
   "winning_score": 170,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "After 6 fixed rounds, the player with the highest combined total from research, federations, round bonuses, and two final scoring tiles wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over 6 rounds, expand your network of colonized planets, climb the six research tracks, and form federations; the player with the most combined round, final, and research VP at the end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Terra Mystica",

@@ -20,21 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "contract delivery via pick-up-and-deliver routes",
-   "notebook/species set collection",
-   "ship and reputation track bonuses"
+   "contract fulfillment (pick-up-and-deliver)",
+   "reputation/competence track bonuses"
   ],
   "sources": [
-   "completed contracts",
-   "notebook page/species bonuses",
-   "end-game track and leftover resource bonuses"
+   "Contracts fulfilled",
+   "Notebook (species page sets)",
+   "Track position bonuses (reputation/exploration)"
   ],
+  "turn_actions": 1,
   "winning_score": 120,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a fixed number of rounds you send workers to fulfill delivery contracts and fill in your research notebook; final points come from contracts completed, notebook bonuses, and track positions, with the highest total winning."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "You place workers to gather goods and fulfill delivery contracts, which score points directly and advance you on tracks that pay out bonuses at game end; the highest total after the set number of eras/rounds wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Lorenzo il Magnifico",

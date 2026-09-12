@@ -18,22 +18,29 @@
  },
  "scoring": {
   "subsystems": [
-   "cult track advancement",
-   "territory/building network scoring",
-   "favor tile bonuses"
+   "Terrain transformation & building network",
+   "Cult track advancement",
+   "Town formation"
   ],
   "sources": [
-   "cult track bumps",
-   "end-of-round scoring tiles",
-   "final area/network scoring",
-   "final cult track scoring"
+   "Round scoring bonuses for building actions/cult advances",
+   "Cult track position (final scoring)",
+   "Largest connected network of structures (final scoring)"
   ],
+  "turn_actions": 5,
   "winning_score": 120,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over six rounds you terraform and build settlements to gain points from round scoring tiles and cult advancement, then add final bonuses for largest connected network and cult positions; the highest total after round six wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over exactly six rounds you earn VP by building and upgrading structures, advancing on cult tracks, and forming towns, with the largest connected area and top cult positions scored at the end; most total VP wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Gaia Project",

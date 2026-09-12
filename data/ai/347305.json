@@ -20,21 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "invention research & development across disciplines",
-   "era-end prestige/leadership bonuses"
+   "invention building (research and construct invention cards for VP and ongoing effects)",
+   "corporation/share investment",
+   "field or era completion bonuses"
   ],
   "sources": [
-   "points from completed inventions",
-   "prestige/reputation track position",
-   "end-of-era leadership bonuses",
-   "leftover resources"
+   "Invention cards played",
+   "Track position bonuses",
+   "Set/majority bonuses"
   ],
-  "winning_score": 150,
+  "turn_actions": 6,
+  "winning_score": 180,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Research and complete inventions across several disciplines while climbing prestige tracks, scoring points continuously plus bonuses at the end of each era; after the fixed number of eras, the highest total wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "Players use worker placement to gather resources and research/build invention cards across technological fields, investing in corporations and racing through eras; when the eras run out, VP from inventions, completed fields, and corporation shares are totaled and the highest score wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "On Mars",

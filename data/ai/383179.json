@@ -20,20 +20,40 @@
  },
  "scoring": {
   "subsystems": [
-   "building/network economy (terraforming and structure upgrades)",
-   "cult track advancement"
+   "round scoring tiles & passing bonuses (building/network economy)",
+   "area/network majority scoring",
+   "discipline tracks (books)",
+   "favor/competency & town tiles",
+   "leftover resource conversion"
   ],
   "sources": [
-   "round scoring tile bonuses",
-   "cult track bonus points",
-   "favor and town tile points",
-   "final scoring for largest network and cult track position"
+   "Structure building VP",
+   "Round bonus tile VP",
+   "Cult track advancement VP",
+   "Favor tile VP",
+   "Town founding VP",
+   "End-game scoring tiles",
+   "Cult track final ranking bonus"
   ],
-  "winning_score": 140,
+  "winning_score": 150,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "how_you_win": "Across six rounds you build and upgrade structures for round-bonus points while separately climbing cult tracks for their own rewards; after the final round, network size and cult positions are added in, and the highest total wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over a fixed six rounds, players accumulate VP from round-tile building bonuses and passing bonuses as they go, then add end-game scoring for largest connected network, discipline-track standings, and leftover resources; the highest total wins.",
+  "checked": [
+   "https://boardgamegeek.com/thread/3154481/end-game-scoring-ranges",
+   "https://boardgamegeek.com/thread/3130109/how-to-win-a-game-of-age-of-innovation-in-less-tha",
+   "https://en.boardgamearena.com/gamepanel?game=ageofinnovation",
+   "https://www.supercheats.com/terra-mystica/walkthrough/scoring-tiles"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Terra Mystica",

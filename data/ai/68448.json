@@ -20,30 +20,37 @@
  },
  "scoring": {
   "subsystems": [
-   "Military conflict (comparing shields with neighbors each age for escalating victory/defeat tokens)",
-   "Science (collecting symbols for per-type squared totals plus a bonus for complete sets of three distinct symbols)",
-   "Direct-value card and coin economy (civilian, commerce and guild cards, wonder stages, and coins converted to points at the end)"
+   "card-tableau building (civil/commercial/guild structures, wonder stages, treasury)",
+   "military conflict",
+   "science (symbol sets)"
   ],
   "sources": [
-   "military",
-   "coins/treasury",
-   "wonders",
-   "civilian structures",
-   "science",
-   "commerce",
-   "guilds"
+   "Coins (treasury)",
+   "Wonder stages",
+   "Civilian (blue) structures",
+   "Commercial (yellow) structures",
+   "Military conflicts",
+   "Guilds (purple)",
+   "Science (green)"
   ],
-  "winning_score": 65,
+  "winning_score": 60,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over three ages of card drafting, build a civilization of wonders, buildings, and resources; add up points from military conflicts, treasury coins, wonders, civilian/commerce/guild cards, and squared science-symbol sets at the end of Age III, and the highest total wins.",
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After three fixed ages of card drafting, all seven scoring categories are totaled and the highest sum wins, ties broken by remaining coins.",
   "checked": [
-   "https://rules.dized.com/game/pmaODHsUS_65I0ac8XvnoQ/mSkL0GqyQ4KUIU0YY9UcNw/scoring",
-   "https://www.ultraboardgames.com/7wonders/scoring.php",
-   "https://boardgamegeek.com/thread/614194/7-wonders-analysis-of-scores-of-first-25-games",
-   "https://en.wikipedia.org/wiki/7_Wonders_(board_game)"
+   "https://videogamegeek.com/thread/614194/7-wonders-analysis-of-scores-of-first-25-games",
+   "https://thethoughtfulgamer.com/2020/05/05/10-strategy-tips-for-7-wonders/",
+   "https://en.wikipedia.org/wiki/7_Wonders_(board_game)",
+   "https://www.ultraboardgames.com/7wonders/scoring.php"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
   ]
  },
  "similar": [

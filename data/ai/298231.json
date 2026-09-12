@@ -19,23 +19,32 @@
  },
  "scoring": {
   "subsystems": [
-   "neighborhood color-set building",
-   "patron card matching",
-   "public and secret objectives",
-   "shared Wonder contribution bonus"
+   "patron card set collection",
+   "public/secret objective completion",
+   "shared wonder contribution",
+   "neighborhood color adjacency"
   ],
   "sources": [
-   "neighborhood/color group bonuses",
-   "patron card bonuses",
-   "objective card bonuses",
-   "Wonder bonus"
+   "Neighborhoods (built sites/area majority)",
+   "Patrons",
+   "Public objectives",
+   "Secret objectives",
+   "Wonder"
   ],
-  "winning_score": 130,
+  "turn_actions": 1,
+  "winning_score": 100,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You win construction sites via a spatial bidding auction, build up color-matched neighborhoods that satisfy your patrons and objectives, and contribute to the shared Wonder; when the board's sites run out, whoever totals the most points across neighborhoods, patrons, objectives, and the Wonder wins."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Win the spatial auctions to build in the best sites, then have the highest total score at game end from neighborhood bonuses, patron cards, public/secret objectives, and your contribution to the communal wonder.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Ra",

@@ -20,22 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "meeple-clearing tribe abilities (Elders, Assassins, Builders, Merchants, Viziers)",
-   "gold/resource economy with quadratic conversion",
-   "Djinn card collection"
+   "Merchant/goods selling for gold",
+   "Assassin elimination scoring",
+   "Vizier/Elder meeple collection",
+   "Djinn card acquisition and bonuses"
   ],
   "sources": [
-   "gold (1 pt each)",
-   "resources (squared/triangular conversion)",
-   "Djinn card bonuses",
-   "Elder card VP conditions"
+   "Vizier meeples",
+   "Builder/Palace tiles (Palm trees)",
+   "Djinn cards"
   ],
-  "winning_score": 220,
+  "turn_actions": 1,
+  "winning_score": 180,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You move and clear meeples from the mancala-style board to trigger tribe abilities, hoarding gold, resources and Djinns; the game ends once meeples run out, and final scoring (with resources scaling quadratically) decides who has the most points."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Each turn you move a group of meeples mancala-style across the board to place your last meeple on a tile and take its associated action (trade goods for gold, kill a meeple, collect a Vizier/Elder, or claim a Djinn); once meeples run out, gold and points from Djinns, kills, and held meeples are totalled and the richest player wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "The Isle of Cats",

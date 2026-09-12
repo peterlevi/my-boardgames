@@ -20,24 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "Lord placement into the reverse pyramid: determines your most influential Lord per color (Coat of Arms) and your largest same-color adjacent Coalition",
-   "Keys -> Locations: certain Lords grant silver/gold keys; two matching (or three any) keys let you claim a drafted Location card with a fixed or variable end-game IP value (and sometimes a special power)",
-   "Pearls -> Pearl Master: certain Lords grant Pearls; whoever holds the most Pearls holds the Pearl Master token, worth a flat bonus at game end"
+   "single pyramid-building/drafting engine (one reverse pyramid per player) that generates all scoring"
   ],
   "sources": [
-   "Influence Points of your most influential Lord of each color",
-   "Influence Points of the Locations you control",
-   "3 points per Lord in your single largest same-color adjacent Coalition",
-   "5-point bonus for holding the Pearl Master token at game end"
+   "Card value totals in your pyramid",
+   "Color set/majority bonuses",
+   "Key-triggered bonus rewards"
   ],
   "winning_score": 45,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You draft Lord cards into a 15-slot reverse pyramid; when anyone completes their 15th slot the game ends (each other player gets one last turn), then everyone totals the IP of their best Lord per color, their controlled Locations, 3 points per Lord in their biggest same-color block, and a 5-point bonus if they hold the Pearl Master token — highest total wins.",
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Draft cards each turn to fill out your reverse pyramid (5-4-3-2-1 rows); as soon as one player completes their pyramid, the game stops and everyone scores their best card per color, their biggest same-color chain, location-card bonuses, and the pearl/key majority bonus — highest total wins.",
   "checked": [
-   "https://cdn.1j1ju.com/medias/21/1b/13-conspiracy-abyss-universe-rulebook.pdf"
+   "https://zatu.com/en-us/blogs/reviews/conspiracy-abyss-universe-review",
+   "https://whatsericplaying.com/2023/02/13/conspiracy-abyss-universe/"
+  ],
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
   ]
  },
  "similar": [

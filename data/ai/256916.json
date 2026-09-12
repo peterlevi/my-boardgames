@@ -20,20 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "resource-type multiplier scoring (brick, food, tools, wine, cloth production cards)",
-   "colonist network / Prefect city-diversity bonus"
+   "colonist/production network scoring (goods types × colonist count)",
+   "personal bonus-card scoring (e.g. Vesta, Jupiter, Saturnus, Mercury)"
   ],
   "sources": [
-   "Vis cards multiplying owned production buildings per good",
-   "Prefect card region bonus",
-   "leftover coins"
+   "Colonist-type diversity bonus",
+   "Resource production network bonus",
+   "Trading post/market bonus",
+   "Card collection variety bonus"
   ],
-  "winning_score": 120,
+  "turn_actions": 1,
+  "winning_score": 130,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You spend the game building production buildings and buying multiplier cards for the five goods; once a player exhausts their colonists/cards the end is triggered, and everyone then totals goods-multiplier VP plus the Prefect city bonus, highest wins."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Players place colonists to produce and trade goods, replaying cards from a growing personal deck; once someone plays their last card of the triggering type the round finishes, and points are tallied for colonists per good type plus a chosen bonus card, highest total wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Concordia",

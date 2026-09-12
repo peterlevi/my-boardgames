@@ -18,18 +18,28 @@
  },
  "scoring": {
   "subsystems": [
-   "auction-driven goods collection"
+   "goods trading/auction economy"
   ],
   "sources": [
-   "per-round majority bonuses for each commodity type",
-   "total value of goods cargo held at round end"
+   "total cargo value",
+   "first-place commodity majority bonus",
+   "second-place commodity majority bonus"
   ],
-  "winning_score": 100,
+  "turn_actions": 1,
+  "winning_score": 90,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over exactly three rounds you bid on cards of goods to fill your ships, scoring bonuses each round for holding the most of a given good plus points for your total cargo value, and the highest cumulative total after round three wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "Win by ending the three rounds of auctioning cargo cards with the highest combined total of goods values plus majority bonuses for holding the most of each commodity type.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Ra",

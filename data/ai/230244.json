@@ -18,17 +18,36 @@
  },
  "scoring": {
   "subsystems": [
-   "exploration, combat and construction actions on a shared journey track"
+   "ship construction and upgrades",
+   "system exploration/discovery",
+   "personal objective and contract completion"
   ],
   "sources": [
-   "points scored from worker-placement actions (excavation, combat, building)"
+   "points for built modules/upgrades",
+   "points for explored or pacified systems",
+   "points for completed objectives",
+   "final-destination bonus",
+   "penalties for crew or resource losses"
   ],
-  "winning_score": 55,
-  "tally": "running",
+  "turn_actions": 5,
+  "winning_score": 40,
+  "tally": "endgame",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You place robot workers each round to explore, fight and build aboard the ship, scoring points immediately for successful actions; when the ship's journey track reaches its end the player with the most accumulated points wins."
+  "ends_by": [
+   "fixed_length",
+   "sudden_death"
+  ],
+  "how_you_win": "You place dice-workers to explore, build and fulfill objectives as the ship crosses a fixed number of chapters toward its destination; whoever has scored the most from construction, exploration and objectives at the end wins, unless a critical resource is depleted first and ends the game in defeat.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Robinson Crusoe: Adventures on the Cursed Island",

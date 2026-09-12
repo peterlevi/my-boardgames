@@ -20,20 +20,39 @@
  },
  "scoring": {
   "subsystems": [
-   "area control of strongholds",
-   "faction-specific alternate win conditions (Fremen, Guild, Bene Gesserit prediction, Harkonnen/Atreides/Emperor alliance combos)"
+   "stronghold area control",
+   "spice-funded bidding/shipping economy",
+   "combat resolution"
   ],
   "sources": [
-   "stronghold control",
-   "alliance combinations",
-   "faction special conditions"
+   "strongholds controlled",
+   "spice stockpile (resource, not points)",
+   "treachery/alliance card effects",
+   "battle plan strength"
   ],
+  "turn_actions": 4,
   "winning_score": 3,
   "tally": "endgame",
   "shape": "majority_control",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "You win the instant you (with allies) control the required number of strongholds at the start of your turn, or the instant your faction's special condition is met (e.g., Fremen surviving to the last turn, Guild controlling any stronghold alone, Bene Gesserit's secret prediction coming true); there is no accumulated score."
+  "ends_by": [
+   "sudden_death",
+   "fixed_length"
+  ],
+  "how_you_win": "A faction wins instantly by holding 3 of the 5 strongholds at the start of a Spice Blow/Nexus phase; if turn 10 ends with no such win, the Spacing Guild (or a faction with a correct secret prediction) wins alone instead.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "majority"
+   },
+   {
+    "how": "elimination",
+    "decided_by": "instant"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Dune: Imperium",

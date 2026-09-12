@@ -20,24 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "contract fulfillment (wool/iron goods)",
-   "cathedral construction investment",
-   "coat-of-arms set collection",
-   "noble favor / notable people bonuses"
+   "Contract fulfillment",
+   "Building/cathedral construction tracks",
+   "Noble favor tracks",
+   "Coat of arms set collection"
   ],
   "sources": [
-   "contracts completed",
-   "cathedral level reached",
-   "coat-of-arms sets collected",
-   "favor track position",
-   "notable people card bonuses"
+   "Contracts fulfilled",
+   "Cathedral track position",
+   "Coat of arms sets",
+   "Noble family favor tracks",
+   "Notable people (characters) recruited"
   ],
-  "winning_score": 160,
+  "turn_actions": 5,
+  "winning_score": 150,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Accumulate the most VP across several parallel engines (contracts, cathedrals, coats of arms, favor/notable people) over a fixed number of rounds; most total prestige wins."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "You draft actions to gather resources and fulfill contracts while advancing on favor and construction tracks; after the fixed number of eras, whoever's added-up VP from contracts, tracks, and sets is highest wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Newton",

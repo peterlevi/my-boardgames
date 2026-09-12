@@ -19,17 +19,25 @@
  },
  "scoring": {
   "subsystems": [
-   "round-winner favor tokens"
+   "Round-elimination duel"
   ],
   "sources": [
-   "favor tokens accumulated across rounds"
+   "Favor tokens for winning a round"
   ],
-  "winning_score": 7,
+  "turn_actions": 1,
+  "winning_score": 5,
   "tally": "running",
-  "shape": "sum",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "Each round ends by elimination or deck exhaustion, and the last player standing (or holder of the highest card) takes a favor token; the first player to collect the target number of tokens (set by player count) wins the match."
+  "shape": "objective_count",
+  "ends_by": [
+   "target_score"
+  ],
+  "how_you_win": "Win individual rounds by being the last player left or holding the highest card when the deck runs out to earn a favor token; the first to collect the target number of tokens (set by player count) wins the match.",
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "objectives"
+   }
+  ]
  },
  "similar": [
   "Coup",

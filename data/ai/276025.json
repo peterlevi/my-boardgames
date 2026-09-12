@@ -20,25 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "ship movement track bonus rewards",
-   "nation influence tracks (majority control)",
-   "chapter/story card completion",
-   "city building VP",
-   "end-game doubloon/goods-to-VP conversion"
+   "Ship movement track",
+   "City influence in three nations",
+   "Card/upgrade economy",
+   "Story/chapter quest track"
   ],
   "sources": [
-   "movement track",
-   "nation influence",
-   "chapters completed",
-   "buildings",
-   "leftover money/goods"
+   "Movement track position bonus",
+   "City influence majority tiles (3 nations)",
+   "Delivered goods",
+   "Permanent building/character card VP",
+   "Story chapter completion bonuses",
+   "Remaining coins at game end"
   ],
-  "winning_score": 220,
+  "turn_actions": 1,
+  "winning_score": 200,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Across four rounds you sail a circuit collecting bonuses, build influence in three nations, complete story chapters, and construct buildings, all adding points along the way; leftover money and goods convert to more points at the end, and the highest total wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After 4 rounds, players total VP from city-influence majorities across three nations, movement-track bonuses, permanent cards, delivered goods, story progress, and leftover coins; the highest total wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Great Western Trail",

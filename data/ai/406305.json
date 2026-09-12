@@ -19,17 +19,29 @@
  },
  "scoring": {
   "subsystems": [
-   "tile-placement pattern scoring across six colors"
+   "tile-placement line scoring across six colors"
   ],
   "sources": [
-   "score total in each of the six colors"
+   "Extending matching-colored lines"
   ],
-  "winning_score": 18,
+  "winning_score": 10,
   "tally": "running",
   "shape": "lowest_category",
-  "ends_by": "exhaustion",
-  "sudden_death_common": true,
-  "how_you_win": "Place stacking tiles to extend lines of matching symbols, scoring in all six colors as you go; your effective score is always your lowest color, so you win by having the best 'worst color' when tiles run out — or instantly if you're the first to max out a color while leading."
+  "ends_by": [
+   "exhaustion",
+   "sudden_death"
+  ],
+  "how_you_win": "Each tile placement scores points in two of six colors by extending lines of matching symbols; when no more tiles can be placed, your final score is your weakest color and the highest such score wins (or you win instantly if you ever max all six colors).",
+  "checked": [
+   "https://en.wikipedia.org/wiki/Ingenious_(board_game)",
+   "https://www.ultraboardgames.com/ingenious/game-rules.php"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "lowest"
+   }
+  ]
  },
  "similar": [
   "Ingenious",

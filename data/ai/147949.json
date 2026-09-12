@@ -19,12 +19,24 @@
  "scoring": {
   "subsystems": [],
   "sources": [],
-  "winning_score": 0,
+  "turn_actions": 2,
+  "winning_score": 1,
   "tally": "endgame",
   "shape": "majority_control",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "There is no point score: after one night of secret role abilities, all players vote simultaneously to lynch one player, and whichever team's win condition is met by that outcome (e.g., villagers win if a Werewolf is lynched) wins immediately."
+  "ends_by": [
+   "sudden_death"
+  ],
+  "how_you_win": "After a single night of secret role abilities and a day of discussion, everyone votes simultaneously to lynch one player; the village team wins if a Werewolf is lynched, the Werewolf team wins if not, and a lone role like the Tanner wins instead if they are the one lynched.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "majority"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "One Night Ultimate Werewolf: Daybreak",

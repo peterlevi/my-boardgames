@@ -18,21 +18,32 @@
  },
  "scoring": {
   "subsystems": [
-   "population and building development (hidden victory-point cards)",
-   "contracts/trade routes",
-   "expedition/exploration board"
+   "population growth",
+   "contract fulfillment",
+   "exploration/new world development"
   ],
   "sources": [
-   "hidden VP values on played building/population cards",
-   "fulfilled contracts",
-   "exploration board rewards"
+   "population level reached",
+   "contracts fulfilled",
+   "hidden victory point tiles collected",
+   "new world exploration tiles",
+   "end-game diversity/set bonuses"
   ],
-  "winning_score": 130,
-  "tally": "endgame",
+  "turn_actions": 4,
+  "winning_score": 50,
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You grow your island's population and production chains by playing cards, many of which carry hidden victory points not revealed until the end; the game ends once a triggering condition (such as maxing out population or the exploration board) is reached, and all hidden and open points are totalled to find the winner."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Develop your island by supplying increasingly advanced goods to grow population, fulfill contracts, and explore the New World for hidden points; the game ends when a player hits the top population tier or the tile supply runs out, and the highest combined total wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Le Havre",

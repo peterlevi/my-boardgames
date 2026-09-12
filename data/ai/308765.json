@@ -20,22 +20,34 @@
  },
  "scoring": {
   "subsystems": [
-   "building construction (bridge, university, cathedral)",
-   "favor tracks (Cardinal and King) with milestone bonuses",
-   "hexagonal district tile placement/majorities"
+   "house building & district majority",
+   "advancement on the bridge/university/cathedral tracks",
+   "end-game card/majority bonuses"
   ],
   "sources": [
-   "points from buildings constructed",
-   "bonuses from favor track milestones",
-   "end-game scoring cards",
-   "coins as secondary resource"
+   "points from placing houses",
+   "district majority bonuses",
+   "bridge track bonus points",
+   "university track bonus points",
+   "cathedral track bonus points",
+   "end-game bonuses from majorities and collected cards",
+   "leftover coins/resources"
   ],
-  "winning_score": 120,
+  "turn_actions": 6,
+  "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a fixed number of rounds, accumulate the most prestige points by constructing buildings, advancing the Cardinal's and King's favor tracks, and completing end-game bonus objectives."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "Accumulate the most points from placing houses and holding district majorities, advancing on the three special tracks, and end-game majority/card bonuses once the round track runs out.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Underwater Cities",

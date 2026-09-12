@@ -20,19 +20,26 @@
  },
  "scoring": {
   "subsystems": [
-   "species-building via trait cards, food, and population/body size on individual species boards"
+   "species population/body-size accumulation"
   ],
   "sources": [
-   "surviving population size per species",
-   "body size per species",
-   "climate-related survival bonuses"
+   "Species scoring (population and body size)"
   ],
-  "winning_score": 40,
+  "turn_actions": 4,
+  "winning_score": 25,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You play trait cards to grow species that compete for scarce food and fend off predators and climate swings between hot and cold; after a set number of rounds, each surviving species scores population plus body size, and the player with the highest total wins."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "At the end of the final round, total the population and body size of all your surviving species; the highest combined total wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Evolution",

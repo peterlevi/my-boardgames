@@ -18,19 +18,35 @@
  },
  "scoring": {
   "subsystems": [
-   "city majority control scoring",
-   "farmer/harvest bonus multiplier"
+   "City majority control (noble-tile chains)",
+   "Ziggurat placement/majority",
+   "Farmer/Crop Field placement"
   ],
   "sources": [
-   "completed city points (by majority)",
-   "farm-adjacency bonus points"
+   "noble-chain points when a city is surrounded (2 pts per matching noble)",
+   "running city-count bonus paid to every city owner each time a new city is claimed",
+   "Ziggurat adjacency points (1 per ziggurat touched)",
+   "Ziggurat majority bonus cards (one-off 10 pts or ongoing ability)",
+   "fixed-value Crop Field/farmer tiles (5/6/7 pts)",
+   "city-count-linked Crop Field tiles"
   ],
-  "winning_score": 60,
-  "tally": "mixed",
-  "shape": "majority_control",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Place tribe tokens to gain majority control in cities (scored as they complete) and adjacent farm land to multiply that score; when the tile supply runs out remaining areas are scored and the highest total wins."
+  "winning_score": 140,
+  "tally": "running",
+  "shape": "sum",
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Place noble, farmer, and clan tiles to win majority control of cities, gather points around Ziggurats, and fill Crop Fields, scoring points continuously as cities close and tiles are placed; the game ends the instant a player runs out of clan tokens or the board runs out of cities, and the highest accumulated total wins.",
+  "checked": [
+   "https://www.ultraboardgames.com/babylonia/game-rules.php",
+   "https://opinionatedgamers.com/2021/01/06/47465/"
+  ],
+  "endings": [
+   {
+    "how": "sudden_death",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "El Grande",

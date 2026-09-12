@@ -18,22 +18,32 @@
  },
  "scoring": {
   "subsystems": [
-   "Railway/power-line network building",
-   "Contract fulfillment",
-   "Tech track progression bonuses"
+   "rail/power network building",
+   "technology track advancement",
+   "contract fulfillment"
   ],
   "sources": [
-   "network connections",
-   "completed contracts",
-   "tech track position",
-   "leftover resources"
+   "Network connections (track & power-line)",
+   "Power plants built",
+   "Contracts delivered",
+   "Technology track position",
+   "End-game scoring tile"
   ],
-  "winning_score": 150,
+  "turn_actions": 4,
+  "winning_score": 120,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You build connected railway/power networks and complete contracts for running VP, then add tech-track bonuses once the depleting building/era supply triggers the final round; highest total wins."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "You win by earning the most VP from expanding your rail/power network, completing delivery contracts, and climbing technology tracks before the building/track supply runs out and ends the game.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Barrage",

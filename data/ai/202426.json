@@ -20,17 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "race-specific economy converting traded goods into hidden victory points"
+   "technology invention (VP awarded per new tech, scaled by the round's Sharing Bonus)",
+   "race-specific VP-producing converters (production recipes that output points directly)",
+   "end-game leftover resource/ship conversion"
   ],
   "sources": [
-   "hidden victory point track (fed by resource conversion each round)"
+   "Victory points converted from resources via economy/tech production each round"
   ],
-  "winning_score": 50,
-  "tally": "running",
+  "winning_score": 55,
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Each round players trade and negotiate for resources, then convert what they've collected into hidden victory points via their own race's conversion track; after the fixed number of rounds, the highest hidden total (revealed at the end) wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over six fixed rounds of simultaneous trading and production, players quietly bank victory points from inventing technologies and running VP converters; after the final round, leftover resources are converted to extra points and whoever has the most total VP wins, with no tiebreaker.",
+  "checked": [
+   "https://opinionatedgamers.com/2018/03/08/alan-how-review-of-sidereal-confluence-trading-and-negotiation-in-the-elysian-quadrant/",
+   "https://www.ultraboardgames.com/sidereal-confluence/game-rules.php"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Cosmic Encounter",

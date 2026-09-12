@@ -18,18 +18,31 @@
  },
  "scoring": {
   "subsystems": [
-   "factory production & sales economy",
-   "stock/share market"
+   "factory production/sales economy",
+   "VP-as-currency/share value"
   ],
   "sources": [
-   "value of your own held shares"
+   "income from selling goods",
+   "wages/upgrades paid in VP",
+   "share purchases",
+   "remaining VP at game end",
+   "share price growth",
+   "crisis penalties"
   ],
+  "turn_actions": 4,
   "winning_score": 80,
-  "tally": "running",
+  "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Open and upgrade factories, sell goods, and buy your own shares across three decades of four rounds each; the player whose shares are worth most at the end wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Open and upgrade factories with cards over three decades of four rounds each, spending VP as currency; the player with the most valuable block of shares at the end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Arkwright",

@@ -20,12 +20,25 @@
  "scoring": {
   "subsystems": [],
   "sources": [],
-  "winning_score": 1,
+  "turn_actions": 1,
+  "winning_score": 0,
   "tally": "endgame",
-  "shape": "sum",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "There is no point total; you win by checkmating the opponent's king so it has no legal way to escape capture, or by their resignation."
+  "shape": "sudden_death",
+  "ends_by": [
+   "sudden_death",
+   "elimination"
+  ],
+  "how_you_win": "There is no point score; you win by checkmating the opponent's king (or they resign or run out of time), with no tally involved.",
+  "endings": [
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Xiangqi",

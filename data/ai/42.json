@@ -18,21 +18,33 @@
  },
  "scoring": {
   "subsystems": [
-   "civilization building via tile and leader placement"
+   "single tile-placement/leader-network engine scored in four colors"
   ],
   "sources": [
-   "red points",
-   "blue points",
-   "green points",
-   "black points",
-   "treasure from internal conflicts"
+   "Red leader (war/conflict)",
+   "Black leader (temple/religion)",
+   "Blue leader (trade)",
+   "Green leader (farming)"
   ],
-  "winning_score": 10,
-  "tally": "running",
+  "winning_score": 15,
+  "tally": "mixed",
   "shape": "lowest_category",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You place tiles and leaders to accumulate points in four separate colors through farming, trade, religion, and government, with conflicts letting you steal or destroy rivals' points; when the tile supply runs out, your score is only your weakest color, so the player whose lowest category is highest wins."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "You build interconnected civilizations by placing tiles and leaders, winning internal and external conflicts to keep control of kingdoms, which earns points in four colors (red temples, blue farms, green markets, black government); when the tile supply runs out, your final score is only your weakest color, so the highest 'worst color' among all players wins.",
+  "checked": [
+   "https://en.wikipedia.org/wiki/Tigris_and_Euphrates",
+   "https://boardgamegeek.com/thread/198641/tigris-and-euphrates-if-you-never-draw-a-red-tile",
+   "https://boardgamegeek.com/thread/814268/average-3p-scores"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "lowest"
+   }
+  ]
  },
  "similar": [
   "Through the Desert",

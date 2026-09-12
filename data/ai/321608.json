@@ -20,20 +20,32 @@
  },
  "scoring": {
   "subsystems": [
-   "working-class wage/consumption economy",
-   "capitalist production & profit economy",
-   "middle-class small-business economy",
-   "state budget & policy economy"
+   "Working Class agenda track",
+   "Middle Class agenda track",
+   "Capitalist Class agenda track",
+   "State agenda track"
   ],
   "sources": [
-   "role-specific victory metric (e.g. worker wages/consumption, capitalist profit, business success, or national budget/stability)"
+   "State's national metrics",
+   "Capitalist company profit/value",
+   "Working class standard of living",
+   "Middle class political influence"
   ],
-  "winning_score": 20,
-  "tally": "endgame",
-  "shape": "objective_count",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Each asymmetric class has its own goal to hit by game end (e.g. capitalists want profit, workers want good wages/conditions, the state wants a balanced, stable nation); whoever best satisfies their class's own formula, among those who meet the minimum bar, wins."
+  "turn_actions": 5,
+  "winning_score": 50,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "Each player plays a different class with its own success metric (e.g. worker welfare vs. capitalist profit vs. state stability); whoever best advances their own class's agenda relative to its targets by game end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "objectives"
+   }
+  ]
  },
  "similar": [
   "Kapital",

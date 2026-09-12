@@ -18,29 +18,38 @@
  },
  "scoring": {
   "subsystems": [
-   "farm development (fields, pastures, animals, rooms)",
-   "occupation and minor improvement cards"
+   "farm development (fields, pastures, animals, house/family)",
+   "card play (occupations & minor improvements)"
   ],
   "sources": [
-   "fields",
-   "pastures",
-   "grain",
-   "vegetables",
-   "sheep/boar/cattle",
-   "fenced stables",
-   "family members",
-   "house type",
-   "occupations played",
-   "minor improvements",
-   "card bonus points",
-   "begging cards (negative)"
+   "Fields",
+   "Pastures",
+   "Grain",
+   "Vegetables",
+   "Sheep",
+   "Wild Boar",
+   "Cattle",
+   "House (rooms by material)",
+   "Family members",
+   "Occupations played",
+   "Minor improvements played",
+   "Begging markers",
+   "Unused spaces"
   ],
-  "winning_score": 35,
+  "turn_actions": 1,
+  "winning_score": 40,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over 14 rounds you use your family's worker placements to grow crops, raise animals, expand and furnish your house, and play occupation/improvement cards; at the end everything is scored category by category (with penalties for empty categories), and the highest total wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Build the best-rounded farm across fields, pastures, animals and house/family size while playing occupation and improvement cards for bonus points, avoiding empty spaces and unfed family members; highest total after 14 rounds wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Le Havre",

@@ -19,20 +19,33 @@
  },
  "scoring": {
   "subsystems": [
-   "Four-color leader majority battles (war, farming, trade, governance) fought through tile placement and leader movement"
+   "Tile placement & leader conflicts producing colored victory-point cubes across four areas of influence (administration, war, farming, trade), plus a wild gold currency"
   ],
   "sources": [
-   "red (soldier/war) points",
-   "green (farmer) points",
-   "black (trader) points",
-   "blue (governor) points"
+   "War",
+   "Farming",
+   "Commerce",
+   "Government"
   ],
-  "winning_score": 15,
-  "tally": "endgame",
+  "winning_score": 10,
+  "tally": "mixed",
   "shape": "lowest_category",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You place tiles and leaders to win regional conflicts in four colored categories, but your victory points in each category are kept hidden; when the tile supply runs out, each player's score is their weakest of the four categories, so you win by keeping every category strong rather than maximizing one."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "You gain colored points during play by placing tiles matching your leaders' areas and by winning conflicts between rival civilizations; when the tile bag is exhausted, each player freely converts their wild yellow/gold points into their other colors, and whoever has the highest score in their own weakest color wins.",
+  "checked": [
+   "https://boardgamegeek.com/filepage/198000/yellow-and-yangtze-rules-in-brief",
+   "https://news.direwolfdigital.com/yellow-and-yangtze-strategy/",
+   "https://www.pockettactics.com/yellow-and-yangtze/review",
+   "https://therewillbe.games/articles-boardgame-reviews/6823-yellow-and-yangtze-board-game-review"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Tigris & Euphrates",

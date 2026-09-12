@@ -20,17 +20,26 @@
  },
  "scoring": {
   "subsystems": [
-   "loot collection (purses, jewelry, strongbox)"
+   "loot collection during the heist"
   ],
   "sources": [
-   "loot cards held in hand at game end"
+   "Loot value collected (purses, jewels, strongbox)",
+   "Bullet card penalty"
   ],
+  "turn_actions": 1,
   "winning_score": 1500,
   "tally": "endgame",
   "shape": "single_currency",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a fixed sequence of programmed-movement rounds you grab loot cards from passengers, the marshal's car, and rival bandits; loot values are only revealed and totaled at the very end, and the richest bandit wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Players program a blind queue of movement, looting, and shooting cards that resolve in sequence over a set number of rounds; whoever holds the most valuable loot after subtracting for bullets received wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Flamme Rouge",

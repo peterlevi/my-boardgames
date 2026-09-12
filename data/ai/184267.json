@@ -18,23 +18,33 @@
  },
  "scoring": {
   "subsystems": [
-   "D.O.M.E. mission completion",
-   "Private agenda progression",
-   "Base/network building (modules and tracks)",
-   "Mineral/resource economy"
+   "mission/D.O.M.E. goal completion",
+   "surface building network",
+   "contract fulfillment",
+   "private agenda scoring"
   ],
   "sources": [
-   "mission points",
-   "private agenda points",
-   "network/base construction",
-   "leftover resources and artifacts"
+   "Mission goals completed",
+   "Buildings constructed",
+   "Contracts fulfilled",
+   "Company/production track position",
+   "Private agenda bonus"
   ],
-  "winning_score": 170,
+  "turn_actions": 5,
+  "winning_score": 130,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Across a fixed number of rounds you complete shared D.O.M.E. missions and your own private agenda while building out your base network, scoring points along the way plus end-game bonuses; the highest total wins."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "You win by scoring the most VP from completing D.O.M.E. mission goals, constructing buildings, fulfilling contracts, and your private agenda once the mission/round track ends the game.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Gaia Project",

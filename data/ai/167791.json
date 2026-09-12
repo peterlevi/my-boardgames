@@ -18,23 +18,32 @@
  },
  "scoring": {
   "subsystems": [
-   "terraform rating/parameter tracks",
-   "project card victory points",
-   "milestones and awards"
+   "Terraform Rating / global parameters",
+   "Card tableau engine",
+   "Milestones & Awards",
+   "Tile placement network"
   ],
   "sources": [
-   "terraform rating",
-   "greeneries and cities",
-   "card VP",
-   "milestones",
-   "awards"
+   "Terraforming Rating",
+   "Milestones",
+   "Awards",
+   "Card victory points",
+   "Tile placement adjacency bonuses (greenery/city)"
   ],
+  "turn_actions": 5,
   "winning_score": 95,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You raise your terraform rating and play cards that build tiles or grant points while temperature, oxygen, and oceans climb; once all three parameters max out the game ends after that round, and the highest combined total wins."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Once temperature, oxygen, and oceans all reach their maximums the generation finishes and final VP is tallied from Terraform Rating, cards, milestones, awards, and tiles; the highest total wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Terraforming Mars: Ares Expedition",

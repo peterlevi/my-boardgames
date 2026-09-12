@@ -21,17 +21,27 @@
  },
  "scoring": {
   "subsystems": [
-   "production/trade cash economy (build factories, produce and sell containers)"
+   "production and shipping economy",
+   "closed-market auction/trading"
   ],
   "sources": [
-   "cash on hand at game end (including value of unsold containers/warehouse goods)"
+   "Money (cash held at game end, built up from selling containers/goods)"
   ],
-  "winning_score": 120,
-  "tally": "endgame",
+  "turn_actions": 4,
+  "winning_score": 100,
+  "tally": "running",
   "shape": "single_currency",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You manufacture, ship, and auction containers in a closed economy where money only moves between players; the game ends once production materials/pieces run out, and whoever has amassed the most cash wins."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "Players build factories and ships to produce and haul containers, trading them with each other and auctioning them at the harbor in a closed economy; when the game's goods or rounds run out, whoever holds the most cash wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Antiquity",

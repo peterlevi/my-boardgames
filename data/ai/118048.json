@@ -20,19 +20,26 @@
  },
  "scoring": {
   "subsystems": [
-   "worker-placement resource gathering to acquire tribe cards"
+   "tribe card acquisition (resource-driven set collection)"
   ],
   "sources": [
-   "small tribe card point values",
-   "big tribe card bonuses (built from 5-card sets)",
-   "leftover gold/goods"
+   "Tribe cards",
+   "Goods collected"
   ],
-  "winning_score": 50,
+  "turn_actions": 1,
+  "winning_score": 40,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Place your two meeples each round on the board's border and center to gather goods and gold, spending them on small and big tribe cards; when the big tribe card deck runs out the game ends, and whoever's cards and leftovers total the most points wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Place workers around the grid each round to gather goods and trade them for tribe cards; after a fixed number of rounds, whoever holds the highest total value of acquired tribe cards wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Jaipur",

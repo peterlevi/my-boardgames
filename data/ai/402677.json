@@ -20,20 +20,31 @@
  },
  "scoring": {
   "subsystems": [
-   "city/production network built via rondel-driven worker placement",
-   "contract and objective fulfillment"
+   "Wilderness track exploitation (river, mountains, forests, underground)"
   ],
   "sources": [
-   "end-game building and network value",
-   "completed contracts/objectives",
-   "leftover resources/bonuses"
+   "City buildings/districts",
+   "Contraption progress",
+   "Goods/resource sets",
+   "Rondel track position bonuses"
   ],
-  "winning_score": 150,
-  "tally": "mixed",
+  "winning_score": 180,
+  "tally": "endgame",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You cycle a magnate around a rondel to place workers, grow your city's production and trade network, and fulfill contracts; the game ends once end conditions trigger and the player with the most combined points wins."
+  "ends_by": [
+   "end_trigger"
+  ],
+  "how_you_win": "Players spend the game exploiting nature through four Wilderness tracks (river, mountains, forests, underground) fed by the City action, while trying to keep Yokai conflicts on the river track from piling up penalties; once the second-to-last hex on any track is revealed everyone gets one final round, then all tracks plus leftover resources/workers are tallied and the highest total wins.",
+  "checked": [
+   "https://www.meeplemountain.com/reviews/daitoshi/",
+   "https://tabletopping.games/2025/02/07/daitoshi/"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Bitoku",

@@ -19,22 +19,31 @@
  },
  "scoring": {
   "subsystems": [
-   "dam/powerhouse construction & energy production",
-   "contracts",
-   "patents"
+   "energy production engine (dam height, water flow, turbines)",
+   "contracts and patents/objectives"
   ],
   "sources": [
-   "contracts fulfilled",
+   "energy production phase payouts (production vs demand)",
+   "fulfilled contracts",
    "patents held",
-   "constructed dam sections, conduits and powerhouses",
-   "executive bonus"
+   "Excellence Award milestones",
+   "leftover resources/gold at game end"
   ],
-  "winning_score": 180,
+  "turn_actions": 5,
+  "winning_score": 200,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over 5 fixed rounds you build up your dam, conduits and powerhouses while fulfilling energy contracts for running points; the player with the most combined points from contracts, patents and constructed infrastructure at the end wins."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "You score points at each periodic energy-production phase based on how much power your dam network generates relative to demand, then add endgame points from contracts, patents and milestones; the highest total after the final era wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Great Western Trail",

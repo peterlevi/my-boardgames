@@ -18,20 +18,43 @@
  },
  "scoring": {
   "subsystems": [
-   "region tile-placement with per-tile-type scoring rules",
-   "silver income and trade-good bonus tracks"
+   "silver mine income",
+   "livestock/animal breeding (chained matching-set scoring)",
+   "trade goods & shipping delivery",
+   "castle bonus-action engine",
+   "knowledge tile bonus actions/effects",
+   "worker generation actions",
+   "region-completion & phase-bonus layer applied across all tile types"
   ],
   "sources": [
-   "points from filled regions of each tile color",
-   "bonus points from trade-good and shipping tracks",
-   "phase-completion and full-board bonuses"
+   "region completion points (1–36 VP by region size)",
+   "phase-end region-completion bonus (10 down to 2 VP depending on phase)",
+   "first/second-to-finish-a-color race bonus",
+   "animal/livestock tile points (with same-animal chain multiplier)",
+   "goods delivered to trade depots",
+   "leftover silverlings at game end",
+   "unsold/undelivered goods at game end",
+   "leftover worker tiles at game end (2:1)",
+   "knowledge tile bonus VP"
   ],
-  "winning_score": 220,
-  "tally": "running",
+  "winning_score": 200,
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Using dice-matched worker placement, you draft settlement tiles and place them into regions on your princedom board, each tile type scoring by its own rule (castles, knowledge, ships, livestock, mines, etc.); after five structured rounds the player with the most accumulated points wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over five fixed phases, players roll dice and place tiles from their board into matching regions of their princedom, scoring points continuously for completed regions, animal sets and delivered goods, plus smaller conversions of leftover silver/goods/workers at the very end; the highest total VP wins, ties broken by fewest empty estate spaces.",
+  "checked": [
+   "https://www.ultraboardgames.com/castles-of-burgundy/game-rules.php",
+   "https://thethoughtfulgamer.com/2017/04/21/8-strategy-tips-castles-burgundy/",
+   "https://boardgamegeek.com/thread/983959/stats-avg-points-win-percent-etc-per-player-board"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Village",

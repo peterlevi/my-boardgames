@@ -18,19 +18,28 @@
  },
  "scoring": {
   "subsystems": [
-   "route claiming"
+   "Route claiming network",
+   "Destination ticket collection"
   ],
   "sources": [
-   "claimed route lengths",
-   "completed destination tickets",
-   "longest continuous route bonus"
+   "Claimed routes (train length)",
+   "Destination tickets",
+   "Longest continuous route bonus"
   ],
-  "winning_score": 120,
+  "turn_actions": 3,
+  "winning_score": 115,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You score points immediately for each route you claim while collecting destination tickets that pay off (or penalize) at the end; once a player drops to two or fewer train cars everyone gets one final turn, then tickets and the longest-route bonus are added to decide the winner."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "You score points immediately for each route you claim and add ticket and longest-route bonuses at the end; once a player drops to two or fewer train cars the game finishes and the highest total wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Ticket to Ride",

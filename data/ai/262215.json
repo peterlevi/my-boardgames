@@ -18,17 +18,31 @@
  },
  "scoring": {
   "subsystems": [
-   "victory-point track used as spendable resource, driven by network/route building and specialists"
+   "district/network area majority",
+   "order (contract) fulfillment",
+   "victory-point-as-resource economy"
   ],
   "sources": [
-   "victory points accumulated (and partly spent) via the rondel, network connections, and specialist deck"
+   "district majority bonuses",
+   "completed order rewards",
+   "banked VP from the VP-as-resource track",
+   "end-game network/set bonuses"
   ],
-  "winning_score": 140,
-  "tally": "running",
-  "shape": "single_currency",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You spend and regrow victory points as your working currency while building routes and recruiting specialists; when the specialist deck or event track triggers the game's end, whoever has the most VP left wins."
+  "turn_actions": 4,
+  "winning_score": 90,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "You move around the rondel to gather resources, place specialists to build majorities in city districts, and fulfill orders, all while spending and banking victory points as a resource; the game ends when a key stock or track is exhausted, and the highest total wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Mombasa",

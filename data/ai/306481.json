@@ -20,22 +20,36 @@
  },
  "scoring": {
   "subsystems": [
-   "Sun Temple track (variable category bonuses per step)",
-   "regional area-majority conquest",
-   "city network construction"
+   "Sun Temple offering track",
+   "region conquest/area majority",
+   "building construction",
+   "contract/end-game objectives"
   ],
   "sources": [
-   "Temple of the Sun step bonuses",
-   "regional majority control points",
-   "constructed building/network points",
-   "leftover resource conversion"
+   "Sun Temple track",
+   "Structures built",
+   "Village conquest",
+   "Personal objectives (quipu)"
   ],
+  "turn_actions": 4,
   "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Advance up the Sun Temple to bank category-based bonus points, contest majority control of the four Suyu regions, and build out your city network; once the game-ending trigger is reached, all these sources are added up and the highest total wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "Move worker types around the rondel to climb the Sun Temple, seize regional majorities, construct buildings, and complete contracts; the highest combined VP after the fixed number of rounds wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Tzolk'in: The Mayan Calendar",

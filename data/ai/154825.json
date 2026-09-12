@@ -19,18 +19,31 @@
  },
  "scoring": {
   "subsystems": [
-   "factory production & sales economy",
-   "stock/share market"
+   "factory production/sales economy",
+   "VP-as-currency/share value"
   ],
   "sources": [
-   "value of your own held shares"
+   "income from selling goods",
+   "wages paid to workers (spent VP)",
+   "machine/factory upgrades (spent VP)",
+   "share purchases",
+   "remaining VP at game end",
+   "share price growth"
   ],
-  "winning_score": 120,
-  "tally": "running",
+  "turn_actions": 6,
+  "winning_score": 150,
+  "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Run factories to produce and sell goods, using profits to buy up your own company's shares and raise their price; over a fixed number of rounds, whoever holds the most valuable block of own shares wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Run factories to produce and sell goods, spending victory points as your universal currency for wages and upgrades; at the end of a fixed number of rounds, the player whose block of owned shares is most valuable (share price × shares held) wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Brass: Birmingham",

@@ -20,19 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "quest voting and team success/failure",
-   "hidden role deduction and assassination"
+   "quest resolution",
+   "Assassin's Merlin guess"
   ],
   "sources": [
-   "quest results",
-   "Merlin assassination attempt"
+   "successful quests (Good)",
+   "failed quests (Evil)",
+   "Assassin's identification of Merlin"
   ],
-  "winning_score": 0,
-  "tally": "endgame",
+  "turn_actions": 1,
+  "winning_score": 3,
+  "tally": "running",
   "shape": "objective_count",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "Good wins by succeeding on 3 of 5 quests, but only if Evil then fails to assassinate Merlin; Evil wins by failing 3 quests or by correctly identifying and assassinating Merlin after a Good quest victory."
+  "ends_by": [
+   "target_score",
+   "sudden_death"
+  ],
+  "how_you_win": "Teams propose and vote on quest parties, and secret Evil players can sabotage a quest with a fail card; Good wins by succeeding three quests unless the Assassin then correctly identifies Merlin, otherwise Evil wins by failing three quests or via that Assassin guess.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "objectives"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "The Resistance",

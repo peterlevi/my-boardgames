@@ -20,18 +20,27 @@
  },
  "scoring": {
   "subsystems": [
-   "temple building and area-majority scoring around temples"
+   "area-majority region scoring via terrain/building placement"
   ],
   "sources": [
-   "victory points from temple-level scorings during the game",
-   "final majority bonuses"
+   "Palace networks (area-majority scoring)",
+   "Temples (height/surrounding influence)"
   ],
+  "turn_actions": 4,
   "winning_score": 100,
   "tally": "mixed",
   "shape": "majority_control",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You place pieces to raise temples on a shrinking hex map; each time a temple reaches a new level, everyone with majority influence on the surrounding tiles scores, and the player with the most points when the tiles run out wins."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "You build terrain and place temples/houses to hold the most pieces in regions when they are triggered for scoring (repeatedly through the game and again at the end); the player with the most accumulated region-majority points wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Java",

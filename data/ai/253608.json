@@ -20,19 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "stock market share trading",
-   "railroad operations (track-laying and train runs)"
+   "stock market investing",
+   "railroad operations (track-laying & train running)"
   ],
   "sources": [
-   "cash on hand",
-   "value of shares held",
-   "value of private/minor companies owned"
+   "Cash on hand",
+   "Value of stock held",
+   "Value of private/minor companies"
   ],
-  "winning_score": 5000,
+  "turn_actions": 4,
+  "winning_score": 1600,
   "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "exhaustion",
-  "how_you_win": "You grow your net worth by running trains for revenue and trading company stock, and when the bank's money supply runs out the player with the highest total value wins."
+  "ends_by": [
+   "exhaustion",
+   "sudden_death"
+  ],
+  "how_you_win": "Players buy private, minor, and public company shares and act as company presidents to build track and run trains for revenue; when the bank runs out of cash the game ends and the richest player (cash plus share value) wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "money"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "1830: Railways & Robber Barons",

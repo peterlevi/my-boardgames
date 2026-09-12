@@ -20,23 +20,40 @@
  },
  "scoring": {
   "subsystems": [
-   "art dealing (buying/selling paintings)",
-   "artist promotion & reputation",
-   "exhibitions and contracts",
-   "assistant/visitor management"
+   "Gallery art dealing (buying, promoting, and selling art)",
+   "International Market speculation (assistant majorities)",
+   "Reputation/Influence track",
+   "Contract & set-collection bonuses (Curator/Art Dealer cards)"
   ],
   "sources": [
-   "cash from art sales",
-   "contract payouts",
-   "reputation-driven bonuses",
-   "leftover assets at game end"
+   "Art sale profits",
+   "International Market majority payouts",
+   "Reputation tile money/influence",
+   "Exhibition value of displayed art",
+   "Renowned Works auction proceeds",
+   "Curator card set bonuses",
+   "Art Dealer card set bonuses",
+   "Influence track conversion to money",
+   "Leftover cash"
   ],
   "winning_score": 120,
-  "tally": "running",
+  "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "The player who has amassed the most money by the end of the fixed number of exhibitions/rounds — through promoting artists, running exhibitions, and fulfilling contracts — wins."
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "Run galleries, artists, and assistants to buy and sell art while building reputation and market position; once two of three end conditions (tickets, celebrity artists, visitors) are triggered the game finishes, everything converts to money, and the richest curator wins.",
+  "checked": [
+   "https://www.ultraboardgames.com/the-gallerist/game-rules.php",
+   "https://boardgamegeek.com/thread/1464245/what-kind-of-scores-are-people-getting"
+  ],
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "On Mars",

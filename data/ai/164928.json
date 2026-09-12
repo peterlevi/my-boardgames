@@ -18,22 +18,31 @@
  },
  "scoring": {
   "subsystems": [
-   "Development track (VP gained while advancing)",
-   "Farmland sets (endgame VP for distinct follower types collected)",
-   "Trading posts and city buildings"
+   "development track advancement (trade/craft/academic/warfare)",
+   "trading-post network on the regional map",
+   "end-game goods/bonus tiles"
   ],
   "sources": [
-   "Development track VP",
-   "Farmland set bonuses",
-   "Trading post/building VP",
-   "End-game bonus tiles"
+   "VP gained on landing on marked development-track spaces",
+   "trading stations built and connected on the map",
+   "university/academic track completion bonus",
+   "stored goods (wine, cloth, sheep) converted at game end",
+   "leftover coins (minor)"
   ],
-  "winning_score": 120,
+  "turn_actions": 6,
+  "winning_score": 70,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Recruit followers and deploy them to advance along the development track, which scores points immediately, while also building trading posts and collecting sets of followers on farmland tiles for bonuses at game end when the round track runs out."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Recruit and place followers each round to advance along development tracks, build a trading-post network, and bank goods; whoever has the most VP once the fixed round track runs out wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "The Voyages of Marco Polo",

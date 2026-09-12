@@ -20,21 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "hex-grid settlement and canal building",
-   "action-retrieval goods economy"
+   "Canal/settlement network building",
+   "Action-retrieval production engine"
   ],
   "sources": [
-   "buildings and settlements on the board",
-   "completed canal networks",
-   "harvested/delivered goods",
-   "leftover money"
+   "Settlements",
+   "Road/canal network",
+   "Monuments/buildings"
   ],
-  "winning_score": 100,
+  "turn_actions": 1,
+  "winning_score": 120,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You place workers to gather goods and expand roads/settlements across the oasis, and once the game-ending condition fires, points from buildings, network completion and goods are totaled to find the winner."
+  "ends_by": [
+   "exhaustion",
+   "fixed_length"
+  ],
+  "how_you_win": "Each turn you take back a set of action cards from your hex board and use them to gather goods, extend canals, and found settlements; once the game-ending condition is reached, points from settlements, network completion, and stored goods are totalled and the highest score wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Fresh Fish",

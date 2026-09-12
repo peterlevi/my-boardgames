@@ -18,17 +18,30 @@
  },
  "scoring": {
   "subsystems": [
-   "passenger delivery via bus route network"
+   "passenger-delivery income from your bus network",
+   "stock ownership in bus companies (yours and others')"
   ],
   "sources": [
-   "points from passengers delivered to destinations"
+   "cash earned delivering passengers to destinations",
+   "market value of shares in your own company",
+   "market value of shares you hold in opponents' companies",
+   "liquidation value of remaining track/buses/buildings at game end"
   ],
-  "winning_score": 30,
-  "tally": "running",
-  "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You build and extend bus routes to ferry passengers between homes, work, and bars, scoring points each time a passenger reaches its destination; when a player goes bankrupt the game shifts into a shorter closing phase, and whoever has racked up the most delivery points by the finish wins."
+  "turn_actions": 5,
+  "winning_score": 150,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": [
+   "exhaustion",
+   "end_trigger"
+  ],
+  "how_you_win": "You win by ending the game with the greatest total wealth — cash on hand plus the value of stock you hold in any company — built up by running an efficient passenger network and shrewdly investing in companies (including rivals').",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Antiquity",

@@ -22,20 +22,36 @@
  },
  "scoring": {
   "subsystems": [
-   "economic growth (population, resources, market trade)",
-   "military conflict & territory control",
-   "diplomacy/city allegiance"
+   "territorial population/control",
+   "market trade network (five markets)",
+   "military conflict (dice-based sieges/battles)",
+   "diplomacy for allegiance"
   ],
   "sources": [
-   "population",
-   "prestige"
+   "population supported across controlled territories",
+   "prestige from trade with markets",
+   "prestige from successful sieges/battles",
+   "prestige from diplomatic conversions"
   ],
-  "winning_score": 50,
-  "tally": "endgame",
+  "turn_actions": 5,
+  "winning_score": 40,
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Grow your empire's population through territory and trade while earning prestige through military and diplomatic success; whoever has the higher combined population and prestige when the game's fixed span of turns ends wins."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "Grow and feed your population across controlled territory, trade at the five markets, and fight or negotiate for rival territory; the empire with the greater combined population and prestige at the end wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   },
+   {
+    "how": "elimination",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Pericles: The Peloponnesian Wars",

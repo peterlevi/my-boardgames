@@ -20,19 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "stock market share trading",
-   "railroad operations (track-laying and train runs)"
+   "stock market investing",
+   "railroad operations (track-laying & train running)"
   ],
   "sources": [
-   "cash on hand",
-   "value of shares held",
-   "value of private companies owned"
+   "Cash on hand",
+   "Value of stock held",
+   "Value of private companies"
   ],
-  "winning_score": 6000,
+  "turn_actions": 4,
+  "winning_score": 1300,
   "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "exhaustion",
-  "how_you_win": "As in other 18xx games, you build up net worth (cash plus share value) through operating railroads and trading stock, and the richest player when the bank breaks wins."
+  "ends_by": [
+   "exhaustion",
+   "sudden_death"
+  ],
+  "how_you_win": "Investors trade shares in stock rounds while the corporations they control build track and run trains for revenue in operating rounds; the game ends when the bank breaks, and the player with the highest total net worth wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "money"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "1830: Railways & Robber Barons",

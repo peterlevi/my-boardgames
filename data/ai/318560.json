@@ -20,22 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "Witch network/path building around the Witchstone",
-   "Crystal collection from the cauldron",
-   "Prophecy scroll set completion"
+   "spellbook/crystal set collection",
+   "witch network path building"
   ],
   "sources": [
-   "Network connection VP",
-   "Collected crystal sets",
-   "Completed prophecy scrolls",
-   "Pentagram/wand bonuses"
+   "Prophecy scrolls",
+   "Cauldron crystal sets",
+   "Network routes",
+   "Pentagram"
   ],
-  "winning_score": 100,
-  "tally": "endgame",
+  "turn_actions": 3,
+  "winning_score": 90,
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You extend your witch's network toward the Witchstone, scoop crystals from the cauldron, and complete prophecy scroll conditions; once the end trigger is reached, VP from network reach, crystal sets, and prophecies are totaled and the highest score wins."
+  "ends_by": [
+   "exhaustion",
+   "end_trigger"
+  ],
+  "how_you_win": "Players scoop colored crystals to complete spellbook sets and extend their witch's network of paths around the Witchstone; the game ends when the crystal supply or a key track is exhausted, and the player with the most points from completed spells, network links, and prophecy bonuses wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Yellow & Yangtze",

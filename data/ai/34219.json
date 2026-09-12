@@ -18,17 +18,31 @@
  },
  "scoring": {
   "subsystems": [
-   "category majority bidding (illuminators, scribes, manuscripts, scrolls, supplies)"
+   "single drafting/bidding engine feeding five competing card categories"
   ],
   "sources": [
-   "five auctioned categories"
+   "Illuminators category majority",
+   "Scribes category majority",
+   "Manuscripts category majority",
+   "Scrolls category majority",
+   "Supplies category majority"
   ],
-  "winning_score": 25,
+  "winning_score": 17,
   "tally": "endgame",
   "shape": "majority_control",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Through a series of auctions you try to hold the majority of cards in each of five categories; once the deck runs out, whoever holds the majority in a category scores all its points, and the highest total wins."
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Once the draw pile is used up (bought or discarded), whoever holds the highest total in each of the five categories wins that category's die-value points, and the player with the highest sum across all five categories wins.",
+  "checked": [
+   "https://www.ultraboardgames.com/biblios/game-rules.php"
+  ],
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "majority"
+   }
+  ]
  },
  "similar": [
   "For Sale",

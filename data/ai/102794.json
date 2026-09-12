@@ -20,29 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "farming & animal breeding (fields, crops, livestock)",
-   "cave/dwelling excavation and furnishing",
-   "weapons & adventuring for rewards"
+   "farm/field economy (crops, pastures, animals)",
+   "cave development (rooms, tunnels, dwarves)",
+   "combat/adventure track (weapons, ore, ruby caves)"
   ],
   "sources": [
-   "dwarves",
-   "caverns/tunnels/shafts",
-   "stables",
-   "grain and vegetables",
-   "each type of livestock",
-   "ore and rubies",
-   "furnishings",
-   "weapon value",
-   "adventure rewards",
-   "begging tokens (negative)",
-   "unused space (negative)"
+   "fields and grain/vegetables",
+   "pastures and stables with animals (sheep, donkeys, boars, cattle)",
+   "furnished dwelling rooms and dwarves",
+   "special rooms/tunnels built",
+   "unused resources and rubies",
+   "weapons and adventure bonus tiles",
+   "begging markers (negative)"
   ],
-  "winning_score": 130,
+  "turn_actions": 1,
+  "winning_score": 140,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a fixed number of worker-placement rounds you grow your dwarf family, farm and breed animals, dig out and furnish your cave, and optionally arm dwarves for adventures; at the end all these categories are totaled and the highest sum wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Over a fixed number of rounds you place workers to grow your family, farm, and dig out your cave; at the end all your resources, animals, rooms, and bonus tiles are summed into a score, and the highest total wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Agricola",

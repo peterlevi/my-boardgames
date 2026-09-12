@@ -80,7 +80,10 @@ these afterwards, so give what the rules say and nothing more:
       farms, but they all come from placing a tile and a meeple: that is ONE
       subsystem, not four. Rajas of the Ganges really does run several
       minigames side by side. Name them; do not pad the list.
-  "sources": the categories the rules total at the end, named.
+  "sources": every line you would write on a scorepad, named — be exhaustive
+      rather than tidy. Brass really does have two (links, industries); a
+      middleweight euro usually has four to eight, and leaving some out is the
+      single most common way to get this wrong.
   "winning_score": what a winning score typically looks like, as a plain
       number (10 for a race to 10, about 165 for Brass).
   "tally": "running" if the score ticks along in front of everyone,
@@ -90,17 +93,20 @@ these afterwards, so give what the rules say and nothing more:
       "lowest_category" when your score is your weakest category (Tigris &
       Euphrates), "majority_control" when players contest shared majorities
       rather than accumulating, else "sum".
-  "ends_by": how the game ENDS and who that leaves winning.
+  "ends_by": how the game ENDS and who that leaves winning — a LIST, most
+      common first, because plenty of games have more than one ending.
+      Innovation is won either by claiming enough achievements or by a special
+      achievement; 7 Wonders Duel by military or science supremacy, or on
+      points if neither lands. Use these values:
       "target_score" — reaching a number ends it and that player has won;
       "end_trigger" — someone completing something stops the game, but the
           points still decide it (Azul's finished row, Wingspan's rounds);
       "fixed_length" — a set number of rounds;
       "exhaustion" — a deck or supply runs out;
       "sudden_death" — a condition wins outright, there and then, without
-          counting anything (7 Wonders Duel's military or science supremacy);
+          counting anything;
       "elimination"; or "coop_goal".
-  "sudden_death_common": true only where such a condition exists AND games
-      usually end that way rather than going the distance.
+      List only endings the rules really have, at most three.
 """
 
 HEADER = """You are cataloguing a board game collection. Answer ONLY with a \
@@ -132,9 +138,8 @@ player's own board or tableau"
     "tally": "running" | "endgame" | "mixed",
     "shape": "sum" | "single_currency" | "objective_count" | \
 "lowest_category" | "majority_control",
-    "ends_by": "target_score" | "end_trigger" | "fixed_length" | \
-"exhaustion" | "sudden_death" | "elimination" | "coop_goal",
-    "sudden_death_common": false,
+    "ends_by": ["target_score" | "end_trigger" | "fixed_length" | \
+"exhaustion" | "sudden_death" | "elimination" | "coop_goal"],
     "how_you_win": "one or two sentences on how a player actually wins, in \
 plain language"
   }},
@@ -205,9 +210,8 @@ how much of the state is shared versus each player's own board"
     "tally": "running" | "endgame" | "mixed",
     "shape": "sum" | "single_currency" | "objective_count" | \
 "lowest_category" | "majority_control",
-    "ends_by": "target_score" | "end_trigger" | "fixed_length" | \
-"exhaustion" | "sudden_death" | "elimination" | "coop_goal",
-    "sudden_death_common": false,
+    "ends_by": ["target_score" | "end_trigger" | "fixed_length" | \
+"exhaustion" | "sudden_death" | "elimination" | "coop_goal"],
     "how_you_win": "one or two sentences"
   }},
   "similar": ["3-5 games"],
@@ -239,14 +243,59 @@ a JSON object mapping each id to:
     "tally": "running" | "endgame" | "mixed",
     "shape": "sum" | "single_currency" | "objective_count" | \
 "lowest_category" | "majority_control",
-    "ends_by": "target_score" | "end_trigger" | "fixed_length" | \
-"exhaustion" | "sudden_death" | "elimination" | "coop_goal",
-    "sudden_death_common": false,
+    "ends_by": ["target_score" | "end_trigger" | "fixed_length" | \
+"exhaustion" | "sudden_death" | "elimination" | "coop_goal"],
     "how_you_win": "one or two sentences on how a player actually wins, in \
 plain language"
   }}
 }}
 {rule}
+GAMES:
+"""
+
+
+ENDINGS = """For each game below, list every way it can END and who that \
+leaves winning — most common first, at most three. Plenty of games have two or \
+three: Innovation is won by claiming enough achievements, or outright by a \
+special achievement, or on points when the draw pile runs dry.
+
+Answer ONLY with a JSON object mapping each id to:
+{{
+  "endings": [
+    {{
+      "how": "target_score" | "end_trigger" | "fixed_length" | "exhaustion" \
+| "sudden_death" | "elimination" | "coop_goal",
+      "decided_by": "points" | "money" | "objectives" | "majority" | \
+"lowest" | "instant"
+    }}
+  ]
+}}
+
+"how" is what stops the game: reaching a number, someone completing \
+something, a set number of rounds, a deck running out, a condition that wins \
+on the spot, elimination, or the players' shared goal. "decided_by" is what \
+then settles it: the highest total, the most money, a count of objectives, \
+control of contested majorities, your weakest category, or nothing further \
+because that condition won outright.
+
+GAMES:
+"""
+
+
+SOURCES = """For each game below, list the distinct CATEGORIES the rules score \
+— not every line of the scorepad.
+
+Count a category once however many times it is scored: Brass scores links and \
+industries in each of two eras, and that is two categories, not four. Ignore \
+optional variants and expansion modules; describe the game as it comes in the \
+box and is usually played. A conversion of leftovers into points at the end \
+(spare money, unused resources) is not a category of its own.
+
+Answer ONLY with a JSON object mapping each id to:
+{{
+  "sources": ["...", "..."]
+}}
+
 GAMES:
 """
 
@@ -301,11 +350,14 @@ def ask(prompt, model, online=False):
     return json.loads(text)
 
 
-def process(batch, model, describe=False, online=False, rescore=False):
+def process(batch, model, describe=False, online=False, rescore=False,
+            endings=False, sources=False):
     # --rescore --online asks only for the scoring facts, but with the web
     # open: the rules of a game are written down somewhere, and a fact the
     # model half-remembers is exactly the case worth looking up.
-    header = ((RESCORE_WEB if online else "") + RESCORE.format(rule=FACTS_BRIEF)
+    header = (SOURCES if sources
+              else ENDINGS if endings
+              else (RESCORE_WEB if online else "") + RESCORE.format(rule=FACTS_BRIEF)
               if rescore
               else ONLINE.format(rule=FACTS_BRIEF) if online
               else DESCRIBE if describe else None)
@@ -317,7 +369,24 @@ def process(batch, model, describe=False, online=False, rescore=False):
             continue
         if online:
             data["source"] = "web"
-        if rescore:
+        if sources:
+            # Only the list of scoring categories is re-asked; the winning
+            # score, the endings and anything checked on the web stay put.
+            existing = json.loads((AI / f'{g["id"]}.json').read_text())
+            got = data.get("sources")
+            if got:
+                existing.setdefault("scoring", {})["sources"] = got
+            data = existing
+        elif endings:
+            # Only the endings are re-asked; every number in the entry — the
+            # sources, the winning score, whatever was checked on the web —
+            # stays exactly as it was.
+            existing = json.loads((AI / f'{g["id"]}.json').read_text())
+            ends = data.get("endings")
+            if ends:
+                existing.setdefault("scoring", {})["endings"] = ends
+            data = existing
+        elif rescore:
             # Only the scoring facts are re-asked; everything else in the
             # entry — summary, praise, interaction, sources — stands.
             existing = json.loads((AI / f'{g["id"]}.json').read_text())
@@ -360,6 +429,12 @@ def main():
     ap.add_argument("--only", metavar="IDS",
                     help="comma-separated game ids, for retrying the handful "
                          "a failed batch left behind")
+    ap.add_argument("--sources", action="store_true",
+                    help="re-ask only which categories a game scores, "
+                         "merging into the facts already there")
+    ap.add_argument("--endings", action="store_true",
+                    help="re-ask only how each game can end, and what settles "
+                         "it, merging into the facts already there")
     ap.add_argument("--rescore", action="store_true",
                     help="re-ask only win_criteria and scoring for every "
                          "cached entry, leaving the rest of it alone")
@@ -379,9 +454,30 @@ def main():
         if only and str(g["id"]) not in only:
             continue
         cached = AI / f'{g["id"]}.json'
+        if a.endings or a.sources:
+            if not cached.exists():
+                continue
+            try:
+                facts = json.loads(cached.read_text()).get("scoring") or {}
+            except Exception:  # noqa: BLE001
+                facts = {}
+            # Never talk over facts that were read off a rules page.
+            if a.endings and facts.get("checked") and not a.force:
+                continue
+            todo.append(g)
+            continue
         if a.rescore:
-            if cached.exists():
-                todo.append(g)
+            if not cached.exists():
+                continue
+            try:
+                facts = (json.loads(cached.read_text()).get("scoring") or {})
+            except Exception:  # noqa: BLE001
+                facts = {}
+            # Facts read off a rules page beat facts recalled from memory, so
+            # an offline re-ask leaves them alone unless told otherwise.
+            if facts.get("checked") and not (a.force or a.online):
+                continue
+            todo.append(g)
             continue
 
         if a.describe or a.online:
@@ -421,7 +517,8 @@ def main():
     done = failed = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=a.jobs) as pool:
         futures = {pool.submit(process, b, a.model, a.describe,
-                               a.online, a.rescore): b
+                               a.online, a.rescore, a.endings,
+                               a.sources): b
                    for b in batches}
         for f in concurrent.futures.as_completed(futures):
             batch = futures[f]

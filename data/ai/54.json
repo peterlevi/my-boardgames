@@ -20,19 +20,28 @@
  },
  "scoring": {
   "subsystems": [
-   "temple area-majority control (scored at 3 interim scorings plus game end)",
-   "treasure tile set collection"
+   "Temple majority scoring",
+   "Treasure set collection"
   ],
   "sources": [
-   "temple control points",
-   "held treasure sets/singles at endgame"
+   "Temple control/majority",
+   "Treasure pair sets"
   ],
+  "turn_actions": 5,
   "winning_score": 120,
   "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "Have the most points from controlling temples at three interim scoring rounds and the final scoring, plus points for treasures held, once all jungle tiles have been drawn and placed."
+  "shape": "majority_control",
+  "ends_by": [
+   "exhaustion",
+   "end_trigger"
+  ],
+  "how_you_win": "You place guards to hold majority at tall temples and pair up treasures; at scoring checkpoints and game end, whoever controls the most valuable temples and turned in the most treasure pairs has the highest total.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "majority"
+   }
+  ]
  },
  "similar": [
   "Java",

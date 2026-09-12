@@ -20,19 +20,29 @@
  },
  "scoring": {
   "subsystems": [
-   "grid-coverage tile placement building a personal ecosystem board"
+   "personal grid biome development",
+   "end-game bonus objective cards"
   ],
   "sources": [
-   "tree points multiplied by regional fertility",
-   "bush/lake/animal bonus points",
-   "end-of-round scoring bonuses"
+   "Ecosystem elements planted in biomes",
+   "Light/sunlight bonus",
+   "End-game bonus objectives"
   ],
-  "winning_score": 90,
-  "tally": "endgame",
+  "turn_actions": 1,
+  "winning_score": 60,
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You draft biome cards each round to plant trees, bushes, and lakes on your personal board, trying to concentrate growth in the most fertile regions without trees overshadowing each other; after a fixed number of rounds, all elements are scored and the highest total wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "Draft biome cards over a fixed number of rounds to grow the most productive personal ecosystem grid; highest total from growth and bonus objectives wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Photosynthesis",

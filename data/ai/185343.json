@@ -18,23 +18,36 @@
  },
  "scoring": {
   "subsystems": [
-   "structure building (Exo tiles) for direct VP",
-   "Continuum tech track",
-   "contracts and mission objectives"
+   "building construction/engine",
+   "achievement tile fulfillment",
+   "ministry/ideology track advancement"
   ],
   "sources": [
-   "built structures",
-   "Continuum track position",
-   "completed contracts",
-   "end-game bonus tiles",
-   "apocalypse track penalties"
+   "buildings constructed",
+   "achievement tiles claimed",
+   "ministry track position",
+   "unused resources/energy (negative)",
+   "continuum/paradox effects"
   ],
-  "winning_score": 70,
+  "turn_actions": 5,
+  "winning_score": 130,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You use time-travel loops to send resources and workers back to earlier rounds, building structures and advancing on the Continuum tech track while completing contracts; the game ends once the shared apocalypse meter is triggered, and the highest combined score from buildings, track position, and contracts wins."
+  "ends_by": [
+   "fixed_length",
+   "exhaustion"
+  ],
+  "how_you_win": "Send workers through time to build an efficient production engine, construct buildings, advance your ministry track, and complete achievement tiles; the highest combined score when the round track or achievement supply runs out wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Trickerion",

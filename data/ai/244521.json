@@ -20,19 +20,27 @@
  },
  "scoring": {
   "subsystems": [
-   "push-your-luck potion brewing (bag-building for pot value)"
+   "potion pot push-your-luck brewing"
   ],
   "sources": [
-   "cumulative VP from pot value each round",
-   "bonus VP from the ruby/rat-tail track",
-   "bonus points from leftover coins in the final round"
+   "VP gained each round from pot value reached",
+   "bonus VP/ruby spaces on the pot path",
+   "end-game ruby-to-VP conversion"
   ],
-  "winning_score": 70,
+  "turn_actions": 2,
+  "winning_score": 75,
   "tally": "running",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Across 9 rounds, push your luck drawing ingredient chips to build the highest-value potion each round, accumulating the most total victory points."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Across 9 rounds, push your luck drawing ingredient chips to maximize pot value each round; the highest cumulative VP (plus converted rubies) at the end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "The Quest for El Dorado",

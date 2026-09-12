@@ -20,25 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "senate influence track",
-   "forum trading (mancala goods delivery)",
-   "military campaign (map area control)",
-   "building tableau construction",
-   "Trajan tile bonus track"
+   "Senate influence track",
+   "Military conquest track",
+   "Forum tile set collection",
+   "Building/ship construction"
   ],
   "sources": [
-   "senate track position",
-   "forum deliveries",
-   "military conquests",
-   "buildings built",
-   "end-game Trajan tile bonuses"
+   "Buildings constructed",
+   "Military province control",
+   "Colonization (ships/islands)",
+   "Senate favor track",
+   "Games hosted (colosseum)"
   ],
+  "turn_actions": 6,
   "winning_score": 90,
-  "tally": "running",
+  "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Continuously score VP across six parallel tracks (senate, forum, military, buildings, Trajan tiles) driven by a mancala-style action-selection system; highest cumulative score after the fixed number of rounds wins."
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "You cycle a mancala-style tableau to trigger building, trading, military, forum, and senate actions each turn, and the player whose combined totals across all these tracks and sets is highest at game end wins.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Amerigo",

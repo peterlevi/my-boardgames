@@ -17,18 +17,31 @@
   "detail": "Players openly attack each other with dice results while trying to deduce or conceal team allegiance, and character abilities let players directly target others' dice or health. There's no private board; the shared dice pool and public health tokens are the entire game state."
  },
  "scoring": {
-  "subsystems": [
-   "life points (bullets)"
-  ],
-  "sources": [
-   "player elimination status"
-  ],
+  "subsystems": [],
+  "sources": [],
+  "turn_actions": 1,
   "winning_score": 0,
-  "tally": "running",
-  "shape": "single_currency",
-  "ends_by": "elimination",
-  "sudden_death_common": false,
-  "how_you_win": "There is no point score; each player has hidden team allegiance and loses life points from dice hits. The Sheriff's team wins by killing all Outlaws and the Renegade, Outlaws win by killing the Sheriff, and the Renegade wins by being the sole survivor."
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": [
+   "elimination",
+   "sudden_death"
+  ],
+  "how_you_win": "There is no point score: players roll and re-roll dice to shoot, heal, or use special effects against hidden-role opponents; the Sheriff's team wins by eliminating all outlaws and the renegade, outlaws win by killing the Sheriff, and the renegade wins by being the sole survivor.",
+  "endings": [
+   {
+    "how": "elimination",
+    "decided_by": "instant"
+   },
+   {
+    "how": "elimination",
+    "decided_by": "instant"
+   },
+   {
+    "how": "elimination",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Bang!",

@@ -20,23 +20,32 @@
  },
  "scoring": {
   "subsystems": [
-   "civilization tile sets",
-   "Nile and Flood river tiles",
-   "monument tile majorities",
-   "Pharaoh tile majority/minority bonus",
-   "gold tiles",
-   "sun tile end-game conversion"
+   "epoch-end tile tallying (Pharaohs, Niles/Floods, Civilizations, Monuments, Gold, God tiles)",
+   "final leftover sun value"
   ],
-  "sources": [
-   "scoring at the end of each of the three epochs across all tile categories",
-   "final epoch bonus for remaining sun value"
-  ],
+  "turn_actions": 3,
   "winning_score": 40,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over three epochs, accumulate the most points from civilization sets, Nile/Flood tiles, monument majorities, Pharaoh tile counts, and gold, with sun tiles adding a bonus in the final epoch."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After 3 epochs of auctioning tiles with suns, add up each epoch's Pharaoh/Nile/Civilization/Monument/Gold/God scoring plus leftover suns; the highest total wins.",
+  "sources": [
+   "Pharaoh tiles (majority bonus/penalty per epoch)",
+   "Nile and Flood tiles (points per Nile if a flood is held)",
+   "Civilization tiles (threshold bonus/penalty for variety)",
+   "Monument tiles (variety compared across players)",
+   "Gold tiles (direct points)",
+   "Golden God tile (bonus per monument type)",
+   "leftover suns at game end"
+  ],
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Amun-Re",

@@ -21,20 +21,27 @@
  },
  "scoring": {
   "subsystems": [
-   "shipping/trade route economy (goods pick-up and delivery)",
-   "stock market investment in the trading companies"
+   "shipping/trading economy",
+   "stock ownership across companies"
   ],
   "sources": [
-   "cash on hand",
-   "value of owned shares",
-   "dividends earned"
+   "Company share value / net worth"
   ],
+  "turn_actions": 4,
   "winning_score": 100,
-  "tally": "running",
+  "tally": "mixed",
   "shape": "single_currency",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You run trade routes for profit and buy shares in the various national trading companies as their prices fluctuate; after a fixed number of rounds the game ends and whoever has amassed the most total wealth (cash plus share value) wins."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "When the game ends, total your cash plus the value of all shares you hold (in your own and other companies); the greatest net worth wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Le Havre",

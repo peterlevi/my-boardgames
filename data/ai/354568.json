@@ -18,21 +18,30 @@
  },
  "scoring": {
   "subsystems": [
-   "pyramid building on auctioned provinces",
-   "power card sets (secret endgame bonus)"
+   "pyramid building (two epochs)",
+   "sacrifice bonus",
+   "power-card effects (temples & bonuses)"
   ],
   "sources": [
-   "pyramid stones scored at end of epoch 1",
-   "pyramid stones scored at end of epoch 2 (final)",
-   "power card combinations",
-   "farmer/sacrifice bonuses"
+   "pyramid stones built each epoch (second epoch counts double)",
+   "largest sacrifice-to-Amun-Re bonus each epoch",
+   "temple points from power cards",
+   "province-set/majority bonus cards"
   ],
-  "winning_score": 70,
+  "turn_actions": 3,
+  "winning_score": 100,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You bid for provinces, farm and trade for gold, and spend that gold on pyramid stones and secret power cards; pyramids are scored at the end of each of the two epochs and power-card sets add bonus points, with the highest total after epoch two winning."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Win province auctions to fund pyramid-building and sacrifices to the gods across two epochs, using power cards for extra temple points; the highest total score after both epochs wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Ra",

@@ -19,21 +19,31 @@
  },
  "scoring": {
   "subsystems": [
-   "building construction for points and resources",
-   "castle contribution for end-game bonuses"
+   "building/action economy along the action queue",
+   "prestige/favor point accumulation"
   ],
   "sources": [
-   "buildings constructed",
-   "leftover/converted resources",
-   "castle contribution rewards",
-   "end-game building set bonuses"
+   "income from constructed buildings",
+   "prestige points from favors and events",
+   "bonus points from end-game scoring tiles",
+   "castle/road contribution points",
+   "leftover resources or gold (minor)"
   ],
-  "winning_score": 80,
+  "turn_actions": 1,
+  "winning_score": 35,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Players place workers to gather resources, construct buildings for points and privileges, and contribute to the castle; once the castle is completed the game ends shortly after and whoever has accumulated the most points wins."
+  "ends_by": [
+   "exhaustion",
+   "end_trigger"
+  ],
+  "how_you_win": "Players place workers along a shared action line each round to build buildings and gain prestige; the game ends once the road/era track is exhausted, and the player with the most prestige points wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Caylus",

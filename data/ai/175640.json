@@ -19,21 +19,29 @@
  },
  "scoring": {
   "subsystems": [
-   "wine production and market sales",
-   "vineyard/structure development",
-   "endgame cellar and contract bonuses"
+   "wine production & quality/export sales",
+   "vineyard/regional land expansion",
+   "financial management (money, loans, buildings)"
   ],
   "sources": [
-   "money earned from selling wine (converted to VP)",
-   "structures and vineyards built",
-   "leftover wine and building bonuses at game end"
+   "Wine region development",
+   "Buildings",
+   "Wine awards"
   ],
+  "turn_actions": 5,
   "winning_score": 120,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Across six years of harvests you plant and upgrade vineyards, produce and age wine, and sell it through trade fairs and exports for money that converts to VP, with structures and leftover wine adding bonus points at the end; the highest total wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Across 6 years, choose action-wheel spaces to plant vines, build wineries, produce and age wine, and sell it at fairs or export it; the player with the most combined VP from wine quality sold, vineyards, buildings, and leftover money at the end wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Kanban EV",

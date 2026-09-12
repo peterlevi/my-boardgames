@@ -20,15 +20,21 @@
  },
  "scoring": {
   "subsystems": [],
-  "sources": [
-   "last player remaining"
-  ],
+  "sources": [],
+  "turn_actions": 1,
   "winning_score": 0,
   "tally": "endgame",
   "shape": "sum",
-  "ends_by": "elimination",
-  "sudden_death_common": true,
-  "how_you_win": "You win simply by being the last player left who hasn't drawn an Exploding Kitten; there are no points at all, just survival."
+  "ends_by": [
+   "elimination"
+  ],
+  "how_you_win": "Players take turns drawing from the deck, using action cards to skip, peek, or force others to draw; whoever draws an Exploding Kitten is eliminated unless they play a Defuse, and the last player left un-exploded wins outright — there is no point score.",
+  "endings": [
+   {
+    "how": "elimination",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Munchkin",

@@ -20,19 +20,27 @@
  },
  "scoring": {
   "subsystems": [
-   "fame track from staged performances",
-   "trick/discipline mastery bonuses"
+   "Trick construction and show performance (fame)",
+   "Discipline skill tracks"
   ],
   "sources": [
-   "performance fame earned",
-   "endgame bonuses from mastered tricks, reputation, and leftover resources"
+   "Trick/show performance (fame points)",
+   "Magic relic/stone shard collection"
   ],
-  "winning_score": 50,
+  "turn_actions": 5,
+  "winning_score": 45,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Build up an illusionist's fame by staging increasingly impressive shows over a fixed number of days, with final bonuses added at the end; most fame wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "You place workers to gather components, train disciplines, and build tricks, then perform them at shows for fame; after the fixed number of acts/days, the illusionist with the most fame (plus end bonuses) wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Alchemists",

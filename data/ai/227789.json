@@ -20,19 +20,28 @@
  },
  "scoring": {
   "subsystems": [
-   "garden tile placement & barrel brewing"
+   "garden resource-track brewing engine",
+   "monastery/building tile bonus track"
   ],
   "sources": [
-   "points scored per barrel brewed (based on garden row fill levels)",
-   "end-game building/statue bonus tiles",
-   "leftover coins/resources"
+   "Beer barrels (ingredient quality)",
+   "Monastery garden columns"
   ],
-  "winning_score": 110,
+  "turn_actions": 5,
+  "winning_score": 90,
   "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "You score points continuously by brewing barrels, limited by whichever ingredient row in your garden is least developed, then add bonus-tile points at game end; the highest total wins."
+  "shape": "lowest_category",
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "You brew barrels whose value is capped by the weakest resource underneath them, so you win by keeping your garden's resource tracks evenly developed rather than maxed in one; add monastery tile bonuses at the end for the highest total.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "lowest"
+   }
+  ]
  },
  "similar": [
   "Trajan",

@@ -20,23 +20,35 @@
  },
  "scoring": {
   "subsystems": [
-   "quest track advancement (Fellowship)",
-   "city/army conquest and race allegiance (Sauron)",
-   "skills, treasure and presence tracks feeding chapter-end points"
+   "Quest advancement (Fellowship side)",
+   "Territorial conquest (Sauron side)"
   ],
   "sources": [
-   "quest progress",
-   "conquered cities/allegiances",
-   "skills",
-   "treasure",
-   "presence"
+   "Quest track position",
+   "Regions/cities controlled",
+   "Skill levels",
+   "Treasures/relics collected",
+   "Race/army tokens deployed"
   ],
-  "winning_score": 0,
+  "turn_actions": 1,
+  "winning_score": 5,
   "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "sudden_death",
-  "sudden_death_common": true,
-  "how_you_win": "The Fellowship player wins instantly by completing the quest track (destroying the Ring), while Sauron wins instantly by conquering enough cities/killing the Fellowship; if neither happens by the end of the third chapter, the player with the most accumulated points from skills, treasure and influence wins."
+  "shape": "majority_control",
+  "ends_by": [
+   "sudden_death",
+   "fixed_length"
+  ],
+  "how_you_win": "Sauron wins by dominating a majority of Middle-earth's regions or capturing the Fellowship, while the Fellowship wins by advancing the Quest track to destroy the Ring before being caught; there is no shared point total, just an asymmetric race to each side's own victory condition.",
+  "endings": [
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "7 Wonders Duel",

@@ -20,23 +20,40 @@
  },
  "scoring": {
   "subsystems": [
-   "Tech tree advancement",
-   "Quest/objective completion",
-   "Military conquest and battles",
-   "Council/diplomacy influence"
+   "objective/mission completion",
+   "tech and ascendancy development",
+   "military conquest and colonization"
   ],
   "sources": [
-   "Tech track VP",
-   "Completed quest tiles",
-   "Battle outcomes",
-   "Council influence bonuses"
+   "Territory/system control",
+   "Technology research",
+   "Objectives completed",
+   "Reputation/diplomacy"
   ],
-  "winning_score": 120,
+  "turn_actions": 4,
+  "winning_score": 60,
   "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Over several rounds you advance your tech tree, complete quest objectives, and fight battles against rivals or the Voidborn threat; when the game-ending trigger (usually the threat track maxing out or a fixed number of ages) is reached, whoever has accumulated the most VP across these tracks wins."
+  "shape": "objective_count",
+  "ends_by": [
+   "fixed_length",
+   "coop_goal",
+   "sudden_death"
+  ],
+  "how_you_win": "Across a scenario with a fixed number of rounds, players cooperatively fight the Voidborn threat while each racing to complete personal objectives and develop their House; the game is won by holding off the threat and then having the best combination of completed objectives, tech, and territory.",
+  "endings": [
+   {
+    "how": "coop_goal",
+    "decided_by": "instant"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   },
+   {
+    "how": "fixed_length",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Eclipse: Second Dawn for the Galaxy",

@@ -18,21 +18,30 @@
  },
  "scoring": {
   "subsystems": [
-   "personal house-building track",
-   "majority control auctions on city buildings",
-   "art creation and sale"
+   "building/house level construction",
+   "art creation and sale",
+   "auction-based majority blocking"
   ],
   "sources": [
-   "levels built on your own house",
-   "majority stakes in constructed buildings",
-   "artworks created and sold"
+   "house level VP",
+   "art sale VP/money",
+   "corruption penalty",
+   "end-game majority bonus on building levels"
   ],
-  "winning_score": 70,
+  "turn_actions": 3,
+  "winning_score": 50,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You use worker placement and bidding to build up your own house, take majority stakes in Art Nouveau buildings around the modular board, and create/sell artworks; the game ends when a key resource supply is depleted, and the highest combined VP wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After a fixed number of rounds, the player with the most VP from building levels, sold art, and majority bonuses, minus corruption penalties, wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Vikings",

@@ -20,21 +20,30 @@
  },
  "scoring": {
   "subsystems": [
-   "Card melding/splaying engine (courtier cards)",
-   "Province area-majority influence",
-   "Seasonal garden/tea-ceremony objectives"
+   "court track advancement (Gardener/Poet/Warrior/Courtier)",
+   "regional influence/majority"
   ],
   "sources": [
-   "Played/splayed courtier card values",
-   "Province majority bonuses",
-   "Season scoring cards"
+   "Koi pond (garden)",
+   "Warriors (wall)",
+   "Courtiers (gate influence)",
+   "Card techs/splaying achievements"
   ],
-  "winning_score": 90,
+  "turn_actions": 4,
+  "winning_score": 50,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "You build up a tableau of courtier cards via melding and splaying while competing for majority influence in the castle's provinces; when the end trigger occurs, VP from card values, province majorities, and season objectives are summed and the highest total wins."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "Players place dice-workers around the castle to gain resources and climb four court tracks while contesting regional influence; the game ends when a track is topped out or the round limit is reached, and the player with the highest combined track and influence score wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Tekhenu: Obelisk of the Sun",

@@ -20,19 +20,28 @@
  },
  "scoring": {
   "subsystems": [
-   "area-majority battles for control of regions",
-   "reserve followers held back that convert to bonus points tied to the ruling faction"
+   "hidden faction majority/influence"
   ],
   "sources": [
-   "points per region the ruling faction controls where you hold majority influence",
-   "endgame bonus for reserve followers matching the ruling faction"
+   "influence tokens placed on regions",
+   "faction strength track",
+   "endgame region control tally"
   ],
-  "winning_score": 30,
-  "tally": "mixed",
+  "turn_actions": 1,
+  "winning_score": 0,
+  "tally": "endgame",
   "shape": "majority_control",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "You back whichever faction ends up ruling the kingdom and try to hold majority influence in as many of its regions as possible, scoring points per region dominated plus bonus points from followers you held in reserve."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "Players secretly place influence to help one of three factions gain control of contested regions; when the map resolves, you win if the faction you backed (kept secret via hidden agenda) ends up dominant, not by accumulating points.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "majority"
+   }
+  ]
  },
  "similar": [
   "El Grande",

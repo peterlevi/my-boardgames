@@ -21,6 +21,9 @@ Root                        : salad<=touch
 # Two related sources, or one scored per colour: a touch at most.
 Brass: Birmingham           : salad=touch
 Brass: Lancashire           : salad<=touch
+# The Big Box is six expansions deep — inns, cathedrals, trade goods, gold
+# bars, the messenger — so seven scoring categories is the honest count, and
+# the rules call it a salad. The judgement below is about base Carcassonne.
 Carcassonne Big Box 6       : salad<=touch
 Kingdomino                  : salad<=touch
 Ingenious 3D                : salad<=touch
@@ -32,3 +35,20 @@ Sidereal Confluence         : salad<=touch
 Rajas of the Ganges         : salad>=lot
 Conspiracy: Abyss Universe  : salad>=touch
 Ark Nova                    : salad>=lot
+
+# Salads the first pass missed — several engines, or a three-figure total.
+The Gallerist              : salad>=lot
+The Castles of Burgundy    : salad>=lot
+Blue Lagoon                : salad>=lot
+Ishtar: Gardens of Babylon : salad>=lot
+Ezra and Nehemiah          : salad>=lot
+Daitoshi                   : salad>=lot
+Coimbra                    : salad>=lot
+Pulsar 2849                : salad>=lot
+Troyes                     : salad>=lot
+Architects of the West Kingdom : salad>=lot
+7 Wonders                  : salad>=lot
+Babylonia                  : salad>=touch
+
+# A wargame is not won on money.
+Sekigahara: The Unification of Japan : win!=money

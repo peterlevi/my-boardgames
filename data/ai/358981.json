@@ -18,18 +18,31 @@
  },
  "scoring": {
   "subsystems": [
-   "theater majority battles (each round contests three theaters)"
+   "theater majority battles"
   ],
   "sources": [
-   "theater point totals compared each round",
-   "damage inflicted on the losing player"
+   "card strength values contributed to each theater",
+   "theater point value awarded to the majority holder when a theater resolves"
   ],
+  "turn_actions": 1,
   "winning_score": 12,
   "tally": "running",
-  "shape": "single_currency",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "Each round you and your opponent play cards into three theaters; whoever has the higher total in at least two of three theaters wins the round and deals the loser damage equal to the point gaps in the theaters they lost. The first player to take 12 damage loses, so you win by grinding the opponent's damage track up to 12."
+  "shape": "majority_control",
+  "ends_by": [
+   "target_score",
+   "sudden_death"
+  ],
+  "how_you_win": "Play cards each round to hold the majority in at least two of the three theaters, banking each theater's point value; first player to reach 12 total points (or one who controls every theater at once, an instant win) takes the game.",
+  "endings": [
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Air, Land & Sea",

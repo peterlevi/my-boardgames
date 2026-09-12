@@ -20,21 +20,31 @@
  },
  "scoring": {
   "subsystems": [
-   "temple track advancement",
-   "building/tech construction"
+   "Temple tracks (four gods)",
+   "Building/monument construction",
+   "Resource-to-VP conversion"
   ],
   "sources": [
-   "temple track position (running plus end bonus)",
-   "buildings constructed",
-   "crystal skull bonuses",
-   "leftover resources"
+   "Temple track advancement rewards",
+   "Building construction VP",
+   "Monument construction VP",
+   "End-game resource conversion",
+   "Skull tribute VP"
   ],
-  "winning_score": 90,
+  "turn_actions": 2,
+  "winning_score": 70,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Climb the four temple tracks and construct buildings using dynamic worker placement on the rotating gears; the player with the most VP once the calendar completes its cycle wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "You place and later retrieve workers on rotating gears to climb temple tracks and construct buildings/monuments; after the fixed 26 turns (13 in shorter games), converted resources and accumulated VP are summed and the highest total wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Trajan",

@@ -18,17 +18,34 @@
  },
  "scoring": {
   "subsystems": [
-   "disease curing"
+   "disease cure progress",
+   "outbreak/infection pressure"
   ],
-  "sources": [
-   "cures discovered for the four diseases"
-  ],
-  "winning_score": 4,
-  "tally": "running",
+  "sources": [],
+  "turn_actions": 5,
+  "winning_score": 0,
+  "tally": "endgame",
   "shape": "objective_count",
-  "ends_by": "coop_goal",
-  "sudden_death_common": false,
-  "how_you_win": "Players cooperate, using actions and cards to treat infections and collect matching city cards to discover cures; the team wins once all four diseases have been cured before the player deck runs out or outbreaks spiral out of control."
+  "ends_by": [
+   "coop_goal",
+   "exhaustion",
+   "sudden_death"
+  ],
+  "how_you_win": "The team wins together by discovering cures for all four diseases before the player deck runs out, outbreaks reach eight, or any disease's cube supply is exhausted.",
+  "endings": [
+   {
+    "how": "coop_goal",
+    "decided_by": "objectives"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "instant"
+   },
+   {
+    "how": "sudden_death",
+    "decided_by": "instant"
+   }
+  ]
  },
  "similar": [
   "Pandemic Legacy: Season 1",

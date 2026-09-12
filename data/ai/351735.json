@@ -18,24 +18,29 @@
  },
  "scoring": {
   "subsystems": [
-   "Theory publishing (color-coded theory cards)",
-   "Building construction",
-   "Improvement track position bonuses",
-   "End-game set collection & leftover resource conversion"
+   "tech-track advancement (4 colored tracks)",
+   "discovery card collection & fulfillment"
   ],
   "sources": [
-   "published theories",
-   "constructed buildings",
-   "track bonuses",
-   "color-set bonuses",
-   "leftover money"
+   "Tech-track position",
+   "Discovery cards",
+   "End-game bonus objectives"
   ],
-  "winning_score": 180,
+  "turn_actions": 1,
+  "winning_score": 120,
   "tally": "mixed",
   "shape": "sum",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Over a fixed number of rounds (set by player count), you travel to universities publishing theory cards and building tools/constructions for immediate VP, then add end-game bonuses for track position and matched theory-color sets; highest total wins."
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "You win by accumulating the most VP from advancing your four tech tracks and playing/fulfilling Discovery cards, tallied once the game's end trigger closes out the final round.",
+  "endings": [
+   {
+    "how": "end_trigger",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Tzolk'in: The Mayan Calendar",

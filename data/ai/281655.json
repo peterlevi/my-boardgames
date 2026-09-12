@@ -20,22 +20,33 @@
  },
  "scoring": {
   "subsystems": [
-   "colony-site network & site value scoring",
-   "corporate stock/political influence (Module 0)",
-   "technology/patent card economy"
+   "exploration/mining/colonization engine",
+   "patent (technology) economy"
   ],
   "sources": [
-   "colony site VP (weighted by site multiplier/type)",
-   "stock or political majorities",
-   "patent cards",
-   "first-achievement bonus VP"
+   "Colonized sites",
+   "Patents/technology"
   ],
-  "winning_score": 40,
-  "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "end_trigger",
-  "sudden_death_common": false,
-  "how_you_win": "Once an end-game trigger fires (such as a deck running out or a set number of colonies being founded), the player with the most VP from colonized sites, tech, and bonuses wins."
+  "turn_actions": 6,
+  "winning_score": 12,
+  "tally": "endgame",
+  "shape": "objective_count",
+  "ends_by": [
+   "target_score",
+   "exhaustion",
+   "sudden_death"
+  ],
+  "how_you_win": "You send rockets to mine, refine, and found colonies across the solar system; the player with the most colonies (plus patents/cash as tiebreakers) when the game ends wins, or in the intro variant, outright first-to-colonize wins immediately.",
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   },
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Bios: Megafauna",

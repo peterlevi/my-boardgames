@@ -20,21 +20,32 @@
  },
  "scoring": {
   "subsystems": [
-   "deck-building/worker-placement resource economy (spice, solari, water, troops)",
-   "combat on Arrakis (troop commitment for victory points)"
+   "Conflict (combat) rewards",
+   "Faction influence & alliances"
   ],
   "sources": [
-   "combat victory points",
+   "Combat rewards at Arrakis",
    "Intrigue cards",
-   "Tech tile bonuses",
-   "faction alliance bonuses (Emperor, Spacing Guild, Bene Gesserit, Fremen)"
+   "Alliance with Great Houses",
+   "Landsraad council agendas"
   ],
   "winning_score": 10,
-  "tally": "mixed",
-  "shape": "sum",
-  "ends_by": "target_score",
-  "sudden_death_common": false,
-  "how_you_win": "You place agents to build an economy and deck, commit troops to combats on Arrakis to earn victory points, and supplement them with Intrigue cards, Tech tiles, and faction bonuses; the game ends the instant someone hits 10 points (or after round 10 with final tallying), and that total decides the winner."
+  "tally": "running",
+  "shape": "single_currency",
+  "ends_by": [
+   "target_score",
+   "exhaustion"
+  ],
+  "how_you_win": "You gain Victory Points continuously by winning Conflicts with troop strength and by building Influence and Alliances with the Great Houses and Guild-like factions; at the end of any round in which a player has reached 10+ VP, or once the Conflict deck runs out, the game ends and whoever has the most VP wins (ties broken by spice, solari, water, then troops).",
+  "checked": [
+   "https://www.rulespal.com/dune-imperium/rulebook"
+  ],
+  "endings": [
+   {
+    "how": "target_score",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Dune: Imperium – Uprising",

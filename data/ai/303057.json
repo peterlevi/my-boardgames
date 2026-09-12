@@ -22,20 +22,29 @@
  },
  "scoring": {
   "subsystems": [
-   "route/landing-rights ownership and income",
-   "Pan Am stock investment"
+   "route ownership & operation (income)",
+   "Pan Am stock investment (dividends)"
   ],
   "sources": [
-   "cash on hand",
-   "value of held Pan Am stock",
-   "route income"
+   "cash from operating owned routes",
+   "cash from selling routes to Pan Am",
+   "dividends from Pan Am stock holdings",
+   "cash gained/lost from era events"
   ],
-  "winning_score": 100,
-  "tally": "mixed",
+  "turn_actions": 5,
+  "winning_score": 300,
+  "tally": "running",
   "shape": "single_currency",
-  "ends_by": "fixed_length",
-  "sudden_death_common": false,
-  "how_you_win": "Across four historical eras you bid for routes and buy planes to generate income, while investing spare cash in Pan Am stock; the game ends after the last era and whoever has the most total money (cash plus stock value) wins."
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "Bid for landing rights, fly routes for income, and sell routes or buy Pan Am stock for payouts; the player with the most money after the four eras wins.",
+  "endings": [
+   {
+    "how": "fixed_length",
+    "decided_by": "money"
+   }
+  ]
  },
  "similar": [
   "Chicago Express",

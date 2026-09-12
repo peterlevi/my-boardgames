@@ -18,17 +18,25 @@
  },
  "scoring": {
   "subsystems": [
-   "head-to-head color majority scoring from river/cup card collections"
+   "Color collection into river/cup"
   ],
   "sources": [
-   "each color's collected cards, compared between players"
+   "Cards collected per color, valued by randomly revealed point tokens"
   ],
-  "winning_score": 30,
-  "tally": "mixed",
-  "shape": "majority_control",
-  "ends_by": "exhaustion",
-  "sudden_death_common": false,
-  "how_you_win": "As each mandala fills with all six colors, players draft cards from it into their own river and cup; once the cards run out, each color is scored by comparing who collected more of it, and the player with the higher overall total wins."
+  "turn_actions": 1,
+  "winning_score": 35,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": [
+   "exhaustion"
+  ],
+  "how_you_win": "Once all cards are distributed between the players' rivers and cups, each color's point value is revealed; whichever player holds the higher total value across their collected cards wins.",
+  "endings": [
+   {
+    "how": "exhaustion",
+    "decided_by": "points"
+   }
+  ]
  },
  "similar": [
   "Battle Line",

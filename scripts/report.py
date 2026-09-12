@@ -739,16 +739,6 @@ def main():
             .replace("/*__DATA__*/", json.dumps(data, ensure_ascii=False,
                                                 separators=(",", ":")))
             .replace("/*__OPTS__*/", json.dumps(opts))
-            # The head script compares this with what the browser saved, to
-            # know whether the server-rendered rows are the right ones.
-            .replace("/*__OPENSTATE__*/", json.dumps({
-                "q": "", "players": str(a.players), "mode": a.mode,
-                "ix": "", "win": a.win, "salad": a.salad,
-                "exp": a.expansions, "played": "any",
-                "smin": "", "smax": "", "mymin": "", "mymax": "",
-                "wmin": "", "wmax": "", "tmin": "", "tmax": "",
-                "plmin": "", "plmax": "", "ymin": "", "ymax": "",
-                "tagmode": "all"}))
             .replace("/*__TAGS__*/", json.dumps(tags, ensure_ascii=False,
                                                 separators=(",", ":")))
             .replace("__ATN__", f"At {a.players}p" if a.players else "At N")

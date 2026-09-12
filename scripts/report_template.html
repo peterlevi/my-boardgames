@@ -135,7 +135,11 @@ input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px
   pointer-events:none; }
 .selbtn { display:flex; align-items:center; gap:8px; width:100%;
   cursor:pointer; text-align:left; white-space:nowrap; }
-.prefilter #rows, .prefilter #count, .prefilter #desc { visibility:hidden; }
+body { transition:opacity .32s ease-out; }
+:root.fade body { opacity:0; }
+@media (prefers-reduced-motion: reduce) {
+  body { transition:none; }
+}
 
 /* A drawn chevron rather than the "⌄" glyph, which sits low in its em box and
    no amount of line-height centres reliably across fonts. */
@@ -642,27 +646,16 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   } catch (e) { /* storage off: the server's defaults stand */ }
 })();
 
-/* The table is rendered server-side in its opening state. If this browser
-   last left different filters on, those rows are the wrong ones, and showing
-   them for the second it takes to parse three megabytes and run the page
-   script is a visible flash. Hide the body until the first render when — and
-   only when — the saved state differs; a browser that left the defaults alone
-   sees the server's rows immediately, which is the common case. */
+/* Three megabytes of table parse in visible chunks, and a browser with saved
+   filters would be shown the wrong rows until the page script caught up.
+   Both read as a flicker, so the page starts on the background colour and
+   fades in once the first render is done. Only a browser running scripts
+   hides anything, and a timer lifts the veil even if the script never
+   arrives. */
 (function () {
-  var OPEN = /*__OPENSTATE__*/;
-  try {
-    var f = JSON.parse(window.localStorage.getItem('bgg-filters-v1') || 'null');
-    if (!f || !f.v) return;
-    var differs = (f.tags && f.tags.length) || f.sort !== 'rk' || !!f.desc;
-    Object.keys(OPEN).forEach(function (k) {
-      if (String(f.v[k] === undefined ? OPEN[k] : f.v[k]) !== String(OPEN[k])) {
-        differs = true;
-      }
-    });
-    if (differs) {
-      document.documentElement.className += ' prefilter';
-    }
-  } catch (e) { /* no storage, nothing to restore, nothing to hide */ }
+  var root = document.documentElement;
+  root.className += ' fade';
+  window.setTimeout(function () { root.classList.remove('fade'); }, 3000);
 })();
 </script>
 </head><body>
@@ -2413,6 +2406,7 @@ syncSelects();
 refreshTagList();
 markSort();
 render();
-ROOT.classList.remove('prefilter');
+// Everything is in its final shape: let the page in.
+ROOT.classList.remove('fade');
 </script>
 </body></html>

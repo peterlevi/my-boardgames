@@ -446,12 +446,19 @@ td.score.mine-col { padding-right:9px; }
 .bar > .track > i.m3 { background:var(--m3); }
 .bar > .track > i.m2 { background:var(--m2); }
 /* Point salad ships as both the band and the raw percentage; one of them is
-   hidden. The percentage is a measured quantity, so it right-aligns and uses
-   tabular figures — a column of them should line up on the % sign. */
+   hidden. The percentage borrows .bar wholesale from the weight column — same
+   type size, same track beneath — and right-aligns with tabular figures so a
+   column of them lines up on the % sign. */
 .salpct { display:none; font-variant-numeric:tabular-nums; }
 :root.sal-pct .salband { display:none; }
-:root.sal-pct .salpct { display:inline; }
+:root.sal-pct .salpct { display:block; }
 :root.sal-pct .c-salad { text-align:right; }
+/* Saladiness runs green to red: a sharp focus is light, a total salad is the
+   heavy end, matching how weight is coloured. */
+.bar > .track > i.sl1 { background:var(--m4); }
+.bar > .track > i.sl2 { background:var(--m3); }
+.bar > .track > i.sl3 { background:var(--m2); }
+.bar > .track > i.sl4 { background:var(--warn); }
 /* Weight runs the other way round: light is the easy end. */
 .bar > .track > i.wt1 { background:var(--m4); }
 .bar > .track > i.wt2 { background:var(--m3); }

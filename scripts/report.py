@@ -235,7 +235,10 @@ def salad_cell(band, n):
 
     The number is what scoring.py actually computes; the four words are a cut
     of it. Emitting both and letting a root class choose keeps the toggle free
-    of a re-render, and keeps sorting on the number either way.
+    of a re-render, and keeps sorting on the number either way. The percentage
+    borrows the weight column's presentation exactly — same .bar wrapper, so
+    the same type size and the same bar under it — because they are the same
+    kind of thing: a measured quantity on a fixed scale.
     """
     if not band and n is None:
         return EM_DASH
@@ -243,9 +246,15 @@ def salad_cell(band, n):
             f' title="Point salad: {esc(SALAD_LABEL.get(band, band))}">'
             f'{SALAD_SHORT.get(band, band)}</span>' if band else
             f'<span class="salband">{EM_DASH}</span>')
-    pct = (f'<span class="salpct" title="{esc(SALAD_LABEL.get(band, band or ""))}">'
-           f'{n}%</span>' if n is not None else
-           f'<span class="salpct">{EM_DASH}</span>')
+    if n is None:
+        return pill + f'<span class="salpct">{EM_DASH}</span>'
+    # Green is a sharp focus, red is a total salad — the same ramp the weight
+    # bar uses, and the bands are the same ones SALAD_BANDS cuts.
+    cls = "sl4" if n >= 72 else "sl3" if n >= 40 else "sl2" if n >= 12 else "sl1"
+    pct = (f'<span class="salpct bar" title='
+           f'"{esc(SALAD_LABEL.get(band, band or ""))}">'
+           f'<span class="pct">{n}%</span><span class="track">'
+           f'<i class="{cls}" style="width:{min(n, 100):.0f}%"></i></span></span>')
     return pill + pct
 
 

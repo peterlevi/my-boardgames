@@ -434,3 +434,29 @@ that existed to swap four columns for four others; as a setting it composes
 with the remaining presets instead of competing with them, and no longer
 resets the rest of the table on the way past.
 
+
+## D-26 — Fit is a fact about the question, not about the game
+
+Every other column states something about a game that would be true if
+nobody were looking: its weight, how long it runs, what the poll said. **Fit**
+states how well a game answers *what the filters are currently asking*, which
+makes it a different kind of thing, and the design follows from that.
+
+It is computed in the browser rather than in the build, because the build does
+not know the question. It cannot be filtered on, because it is derived from
+the filters and a filter over its own inputs is a loop. And sorting by it
+shows the whole collection: the filters stop being a gate and become the
+criteria being scored against, so a game that misses on one axis still has a
+place in the ranking — hiding it would be hiding the second-best answer.
+
+The score is a weighted mean of the axes that are actually set, each scored
+0-1, so with nothing set the column is a ranking by quality alone. Being
+outside a range is a distance rather than a zero: `FIT_TOL` says how far
+outside is worth nothing — a point and a half of weight, ninety minutes of
+play, forty points of salad, two levels of interaction. The ratings go in on
+separate scales, because a BGG average of 8.6 is extraordinary while a
+personal 8.6 is not, and both count where both exist.
+
+The numbers are a starting point, not a finding: the weights in `FIT_W` say
+that the player count matters more than the point-salad score, which is a
+preference, not a fact. They are meant to be argued with.

@@ -1039,6 +1039,9 @@ def rows_html(data, a, tags=()):
             f'<td class="score c-av" data-col="av">{bgg_hex(g)}</td>'
             f'<td class="score mine-col c-my" data-col="my">{mine_hex(g)}</td>'
             f'{game_cell}'
+            # Empty: fit is computed in the browser from the filters that are
+            # set, so it is painted by render() like the player-count cells.
+            f'<td class="hide-sm c-fit j-fit" data-col="fit"></td>'
             f'<td class="num drop3 c-y" data-col="y">{g["y"] or EM_DASH}</td>'
             f'<td class="drop2 designer c-ds" data-col="ds">{designer}</td>'
             f'<td class="num hide-sm hide-s c-pl" data-col="pl">{g["pl"]}</td>'
@@ -1115,7 +1118,7 @@ def check_balanced(html):
 # Best and Approved start off: "Good at Np" already carries the whole vote,
 # and the other two are for reading one half of it closely. The designer is
 # off because the Game column carries it — see root_class().
-OFF_BY_DEFAULT = ("acq", "lp", "ed", "sc", "pp", "bestp", "apprp")
+OFF_BY_DEFAULT = ("acq", "lp", "ed", "sc", "pp", "bestp", "apprp", "fit")
 
 
 # Columns that draw a pill with a second line under it. While any of them is
@@ -1126,7 +1129,7 @@ OFF_BY_DEFAULT = ("acq", "lp", "ed", "sc", "pp", "bestp", "apprp")
 # to agree or the row height changes a moment after the page appears.
 # They only draw two lines while the pills/numbers setting asks for both,
 # which is why root_class() checks that first.
-STACKED_COLS = ("tmax", "w", "ixk", "salad", "atn", "bestp", "apprp")
+STACKED_COLS = ("tmax", "w", "ixk", "salad", "atn", "bestp", "apprp", "fit")
 # ...of which these only exist while a player count is chosen.
 POLL_COLS = ("atn", "bestp", "apprp")
 

@@ -424,6 +424,8 @@ th.w-hex { width:54px; } th.w-plays { width:56px; }
    "Medium light" and "4 hours+" are the longest band names. */
 th.w-time { width:110px; } th.w-weight { width:114px; }
 th.w-ixk { width:106px; }
+th.w-fit { width:104px; }
+:root.det-compact th.w-fit { width:80px; }
 /* A column needs the width of what it is showing, and what it is showing is
    the Cells setting: the widths above are what a detailed table needs, and
    these are what a compact one does. Stating it this way is the point of
@@ -467,7 +469,7 @@ th.w-win { width:120px; } th.w-br { width:104px; }
 .mode-any .c-atn, .mode-any .c-bestp, .mode-any .c-apprp { display:none; }
 /* The column picker. One class per hidden column on the table beats setting
    display on 265 rows' worth of cells. */
-.off-gn .c-gn,
+.off-gn .c-gn, .off-fit .c-fit,
 .off-th .c-th, .off-rk .c-rk, .off-av .c-av, .off-my .c-my,
 .off-y .c-y, .off-ds .c-ds, .off-pl .c-pl, .off-tmax .c-tmax,
 .off-w .c-w, .off-acq .c-acq, .off-lp .c-lp, .off-ed .c-ed, .off-sc .c-sc,
@@ -562,6 +564,10 @@ mark { background:var(--hit); color:inherit; font-weight:700;
 .tag.p2 { color:var(--great); background:var(--great-bg); }
 .tag.p1 { color:var(--muted); background:var(--chip); }
 .tag.pw { color:var(--warn); background:var(--warn-bg); }
+/* One step above the top of that ramp, for the top of a five-band scale:
+   filled rather than tinted, so "Perfect" reads as the end of the scale
+   rather than as another shade of green. */
+.tag.p4 { color:var(--panel); background:var(--best); }
 .tag.exp  { color:var(--warn); background:var(--warn-bg); font-size:.65rem;
   margin-left:5px; vertical-align:middle; }
 /* An expansion you own is a fact about the shelf; an expansion that is *why*
@@ -971,14 +977,14 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   var KEY = 'bgg-cols-v13';
   // MUST agree with OFF_BY_DEFAULT in report.py and COLUMNS[].off below.
   var OFF_BY_DEFAULT = { acq: 1, lp: 1, ed: 1, sc: 1, pp: 1, ds: 1,
-                         bestp: 1, apprp: 1 };
-  var ALL = ['th', 'rk', 'av', 'my', 'y', 'ds', 'pl', 'ixk', 'gn',
+                         bestp: 1, apprp: 1, fit: 1 };
+  var ALL = ['th', 'rk', 'av', 'my', 'y', 'ds', 'pl', 'ixk', 'gn', 'fit',
              'acq', 'lp', 'ed', 'pp', 'win', 'sc', 'rt',
              'tmax', 'w', 'salad', 'atn', 'bestp', 'apprp'];
   // Columns that draw a pill over a second line, and so need taller rows —
   // but only while the cells are showing both halves. Mirrors STACKED_COLS in
   // report.py and in the page script.
-  var STACKED = ['tmax', 'w', 'ixk', 'salad', 'atn', 'bestp', 'apprp'];
+  var STACKED = ['tmax', 'w', 'ixk', 'salad', 'atn', 'bestp', 'apprp', 'fit'];
   var POLL = { atn: 1, bestp: 1, apprp: 1 };
   try {
     var saved = JSON.parse(window.localStorage.getItem(KEY) || 'null');
@@ -1328,6 +1334,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
          designer, both or neither — is the picker's "Game column" choice,
          and whichever field it carries retires that field's own column. -->
     <th class="c-gn w-game" data-k="n" data-col="gn">Game</th>
+    <!-- Computed in the browser against whatever the filters currently say,
+         so it is the one column with nothing to filter by. -->
+    <th class="hide-sm c-fit w-fit" data-k="fit" data-col="fit"
+      title="How well each game matches the filters, blended with how good it is">Fit</th>
     <th class="num c-y w-year drop3" data-k="y" data-col="y">Year</th>
     <th class="drop2 c-ds w-designer" data-k="ds" data-col="ds">Designer</th>
     <th class="num hide-sm hide-s c-pl w-plays" data-k="pl" data-col="pl">Plays</th>
@@ -1782,6 +1792,11 @@ function partition() {
   var tR = numRange(F.tband.value, BANDS.scales.tband);
   var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
+  // Sorting by fit turns the filters from a gate into the question being
+  // scored: a game that misses on one axis still has a place in the ranking,
+  // and hiding it would be hiding the second-best answer. Only the search and
+  // the expansion setting still decide what is in the table at all.
+  var ranking = sortKey === 'fit';
 
   var inside = [], outside = [];
   for (var i = 0; i < DATA.length; i++) {
@@ -1802,7 +1817,7 @@ function partition() {
 
     var s = n ? reading(g, n, fold, mode) : null;
     var ai = g.ai || {};
-    var pass = structural && tagsOk(g, picked, tmode) &&
+    var pass = structural && (ranking || tagsOk(g, picked, tmode) &&
       inRange(ixR, IX_LEVELS.indexOf(ai.ixl || g.ix)) &&
       inRange(saladR, ai.brn) &&
       inRange(wR, g.w) &&
@@ -1815,7 +1830,7 @@ function partition() {
       !(mymin !== null && !(g.my >= mymin)) && !(mymax !== null && !(g.my <= mymax)) &&
       !(plmin !== null && g.pl < plmin) && !(plmax !== null && g.pl > plmax) &&
       !(ymin !== null && !(g.y >= ymin)) && !(ymax !== null && !(g.y <= ymax)) &&
-      (!n || (s && s.via ? qualifies(s, mode) : standsAt(g, s, n, mode)));
+      (!n || (s && s.via ? qualifies(s, mode) : standsAt(g, s, n, mode))));
 
     if (pass) inside.push([i, s]);
     else if (searching && structural) outside.push([i, s]);
@@ -1909,6 +1924,13 @@ function describe() {
   pair('plmin', 'plmax', 'plays');
   pair('ymin', 'ymax', 'year');
   if (expMode === 'drop') extra.push('expansions ignored');
+  // Ranked rather than filtered: the same list of criteria, said as what the
+  // games are being scored against rather than as what they had to pass.
+  if (sortKey === 'fit') {
+    if (head) extra.unshift(head.charAt(0).toLowerCase() + head.slice(1));
+    return 'Everything, ranked by fit' +
+      (extra.length ? ' against ' + extra.join(', ') : '');
+  }
   // With a filter applied, "All games, X" is noise — the filter is the subject.
   if (head) return head + (extra.length ? ', ' + extra.join(', ') : '');
   if (!extra.length) {
@@ -1919,13 +1941,110 @@ function describe() {
   return t.charAt(0).toUpperCase() + t.slice(1);
 }
 
+/* ---- fit ---------------------------------------------------------------
+ * How well a game answers what the filters are currently asking, blended
+ * with how good the game is. Everything else in this report is a fact about
+ * a game; this is a fact about a game *and the question being asked*, which
+ * is why it is computed here rather than in the build, why it cannot be
+ * filtered on, and why sorting by it shows the whole collection: the filters
+ * stop being a gate and become the thing being scored against.
+ *
+ * Each axis you have set contributes a 0-1 match, weighted; the rating
+ * always contributes, so with nothing set at all the column is a ranking by
+ * quality. Being outside a range is not a zero — it is a distance, and TOL
+ * says how far outside is worth nothing: a whole point of weight, an hour
+ * and a half of play, forty points of salad, two levels of interaction.
+ */
+var FIT_W = { rating: 1.0, players: 1.6, tags: 1.4, weight: 1.2, time: 1.2,
+              ix: 1.0, salad: 1.0 };
+var FIT_TOL = { w: 1.5, tmax: 90, salad: 40, ix: 2 };
+/* Each rating on its own scale, because they do not mean the same thing. A
+   BGG average lives between about 5.5 and 8.8 — 8.6 is extraordinary there —
+   while a personal 1-10 is used to the top of its range. Both when both are
+   there, because "I liked it" and "it is well regarded" are different claims
+   and the column is meant to carry both. */
+function ratingFit(g) {
+  function clamp(v) { return Math.max(0, Math.min(1, v)); }
+  var bgg = g.av ? clamp((g.av - 5.5) / 3.3) : null;
+  var mine = (typeof g.my === 'number' && g.my) ? clamp((g.my - 5) / 4.5) : null;
+  if (mine === null) return bgg;
+  return bgg === null ? mine : 0.7 * mine + 0.3 * bgg;
+}
+/** 1 inside the range, falling to 0 `tol` beyond either end. */
+function rangeFit(r, v, tol) {
+  if (v === null || v === undefined) return null;
+  if (v >= r.lo && v <= r.hi) return 1;
+  var d = v < r.lo ? r.lo - v : v - r.hi;
+  return Math.max(0, 1 - d / tol);
+}
+function fitScore(g, s, n) {
+  var parts = [], sum = 0, weight = 0;
+  function add(kind, value, label) {
+    if (value === null) return;
+    sum += FIT_W[kind] * value;
+    weight += FIT_W[kind];
+    parts.push(label + ' ' + Math.round(value * 100) + '%');
+  }
+  var ai = g.ai || {};
+  var shownRating = (typeof g.my === 'number' && g.my) || g.av;
+  add('rating', ratingFit(g), 'rated ' +
+      (shownRating ? Math.round(shownRating * 10) / 10 : '—'));
+  if (n) {
+    // The verdict, on the same ladder the pill uses: best at this count,
+    // good at it, plays at it, or not at all.
+    var v = !s ? 0 : s.isBest ? 1
+          : (s.bestPct === null ? !!s.good : s.bestPct >= 50) ? 0.8
+          : 0.5;
+    add('players', v, n + 'p');
+  }
+  var ixR = numRange(F.ix.value, BANDS.scales.ix);
+  if (ixR) add('ix', rangeFit(ixR, IX_LEVELS.indexOf(ai.ixl || g.ix), FIT_TOL.ix),
+               'interaction');
+  var saladR = numRange(F.salad.value, BANDS.scales.salad);
+  if (saladR) add('salad', rangeFit(saladR, ai.brn, FIT_TOL.salad), 'point salad');
+  var wR = numRange(F.wband.value, BANDS.scales.wband);
+  if (wR) add('weight', rangeFit(wR, g.w, FIT_TOL.w), 'weight');
+  var tR = numRange(F.tband.value, BANDS.scales.tband);
+  if (tR) add('time', rangeFit(tR, g.tmax, FIT_TOL.tmax), 'length');
+  var picked = pickedTags();
+  if (picked.length) {
+    var mode = F.tagmode.value, hits = 0, has = g.tg || [];
+    for (var i = 0; i < picked.length; i++) {
+      if (has.indexOf(picked[i]) !== -1) hits++;
+    }
+    // Partial credit where the question allows it: "all of these" is a
+    // fraction, "any of these" and "none of these" are yes or no.
+    var frac = mode === 'all' ? hits / picked.length
+             : mode === 'any' ? (hits ? 1 : 0)
+             : (hits ? Math.max(0, 1 - hits / picked.length) : 1);
+    add('tags', frac, 'properties');
+  }
+  return { score: weight ? Math.round(100 * sum / weight) : null, parts: parts };
+}
+/* Five bands, strongest first. The top one is filled rather than tinted:
+   "Perfect" is the end of the scale, not another shade of green. */
+var FIT_BANDS = [[85, 'Perfect', 'p4'], [72, 'Great', 'p3'],
+                 [58, 'Good', 'p2'], [45, 'Fair', 'p1'], [0, 'Poor', 'pw']];
+function fitBand(v) {
+  for (var i = 0; i < FIT_BANDS.length; i++) {
+    if (v >= FIT_BANDS[i][0]) return FIT_BANDS[i];
+  }
+  return FIT_BANDS[FIT_BANDS.length - 1];
+}
+/** Worked out once per render and read by both the column and the sort. */
+var fitCache = {};
+function fitOf(i, g, s, n) {
+  if (!(i in fitCache)) fitCache[i] = fitScore(g, s, n);
+  return fitCache[i];
+}
+
 var sortKey = 'rk', sortDesc = false;
 /** Which way a column sorts when you first click it. Rank starts at 1, but
  *  nobody wants the least-rated game or the shortest play first. */
 var SORT_DESC_FIRST = {
   rt: true, av: true, my: true, pl: true, tmax: true, w: true, ix: true,
   sc: true, pp: true, acq: true, lp: true, ed: true, bestPct: true,
-  appr: true, verdict: true
+  appr: true, verdict: true, fit: true
 };
 
 function sortRows(rows) {
@@ -1959,6 +2078,7 @@ function sortRows(rows) {
       }
       case 'bestPct': return s ? s.bestPct : null;
       case 'appr': return s ? s.appr : null;
+      case 'fit': return fitOf(row[0], g, s, +F.players.value).score;
       case 'rt': return g.rt;
       case 'ix':
         return ['Low', 'Medium', 'High'].indexOf((g.ai && g.ai.ixl) || g.ix);
@@ -2133,6 +2253,14 @@ function paint(tr, g, s, n) {
     ? pillBar(approvedHtml(s), [meterHtml(s.appr)], false,
               'Approved at ' + n + 'p', pctText(s.appr)) : dash;
 
+  var fit = fitOf(+tr.getAttribute('data-i'), g, s, n);
+  tr.querySelector('.j-fit').innerHTML = fit.score === null ? dash
+    : pillBar('<span class="tag ' + fitBand(fit.score)[2] + '">' +
+              fitBand(fit.score)[1] + '</span>',
+              [meterHtml(fit.score)], false,
+              'Fit ' + fit.score + ' — ' + fit.parts.join(', '),
+              fit.score + '%');
+
   [].forEach.call(tr.querySelectorAll('.vinline'), function (el) {
     el.innerHTML = n ? v : '';
   });
@@ -2161,6 +2289,9 @@ function paint(tr, g, s, n) {
 
 function render() {
   closeDetail();
+  // Fit is scored against the filters, so last render's scores answered a
+  // different question.
+  fitCache = {};
   var parts = partition();
   var inside = sortRows(parts.inside);
   var outside = sortRows(parts.outside);
@@ -2234,7 +2365,9 @@ function render() {
     var th = document.querySelector('th[data-col="' + k + '"]');
     if (th) th.textContent = heads[k];
   });
-  paintTableClass();
+  // Choosing a player count adds a column, so the table has to be measured
+  // again — paintTableClass() alone would leave it one column too wide.
+  fitNow();
   // After the option texts change, or the Rule control keeps the caption it
   // had before the count moved.
   syncSelects();
@@ -3512,6 +3645,7 @@ var COLUMNS = [
   { k: 'av', n: 'BGG rating' },
   { k: 'my', n: 'My rating' },
   { k: 'gn', n: 'Game' },
+  { k: 'fit', n: 'Fit — how well it matches the filters', off: true },
   { k: 'y', n: 'Year' },
   { k: 'ds', n: 'Designer', off: true }, { k: 'pl', n: 'Plays' },
   { k: 'tmax', n: 'Time' },
@@ -3535,7 +3669,7 @@ var COLUMNS = [
 ];
 /* The order cells sit in. */
 var DEFAULT_ORDER = ['th', 'rk', 'rt', 'av', 'my',
-  'gn', 'y', 'ds', 'pl',
+  'gn', 'fit', 'y', 'ds', 'pl',
   'tmax', 'w', 'ixk',
   'salad', 'win', 'sc',
   'atn', 'bestp', 'apprp',
@@ -3544,7 +3678,7 @@ var DEFAULT_ORDER = ['th', 'rk', 'rt', 'av', 'my',
    and outranks ours, but only while it is an arrangement of the same list —
    otherwise a reordering here would never reach anyone who had opened the
    report before. Their column *choices* survive; only the order is retaken. */
-var ORDER_VERSION = 2;
+var ORDER_VERSION = 3;
 // MUST match KEY in the head script above. Bumped whenever the vocabulary
 // changes rather than the values: v12 dropped the columns that the Cells
 // setting replaced, v13 the three-way pills/numbers/both choice that became
@@ -3630,7 +3764,7 @@ function swallowedByGame(k) {
  *  scrollbar. */
 var FIT_ORDER = ['win', 'sc', 'ds', 'y', 'salad', 'ixk', 'pl', 'w',
                  'tmax', 'acq', 'lp', 'ed', 'pp', 'bestp', 'apprp',
-                 'rt', 'my', 'rk', 'th'];
+                 'rt', 'my', 'rk', 'fit', 'th'];
 /** Columns the table had no room for, this paint. */
 var autoDropped = {};
 
@@ -3671,24 +3805,43 @@ function fitColumns() {
   return out;
 }
 
+/** The columns the reader has asked for, before the table has been measured.
+ *  Kept, so re-fitting does not have to unpick the last fit's own drops. */
+var colBaseCls = [];
+
 function applyCols() {
-  var cls = ['gm-' + gameMode, 'det-' + detailMode];
+  colBaseCls = ['gm-' + gameMode, 'det-' + detailMode];
   COLUMNS.forEach(function (c) {
-    if (!colState[c.k] || swallowedByGame(c.k)) cls.push('off-' + c.k);
+    if (!colState[c.k] || swallowedByGame(c.k)) colBaseCls.push('off-' + c.k);
   });
-  ROOT.setAttribute('data-cols', cls.join(' '));
+  fitNow();
+}
+
+/** Paint what was asked for, measure it, and drop columns until it fits.
+ *
+ *  Called from applyCols() and again at the end of render(), because the set
+ *  of columns on screen also changes when the *player count* does: choosing
+ *  one brings its column in, and the table has to be re-measured against it.
+ */
+function fitNow() {
+  ROOT.setAttribute('data-cols', colBaseCls.join(' '));
   paintTableClass();
-  // Painted with everything that was asked for; now see what fits. Measuring
-  // after the paint rather than predicting from a width table is what lets
-  // this answer for any combination of columns, either cell mode, any window.
+  // Measuring after the paint rather than predicting from a width table is
+  // what lets this answer for any combination of columns, either cell mode,
+  // any window.
   autoDropped = fitColumns();
   var extra = Object.keys(autoDropped);
   if (extra.length) {
-    ROOT.setAttribute('data-cols', cls.concat(extra.map(function (k) {
+    ROOT.setAttribute('data-cols', colBaseCls.concat(extra.map(function (k) {
       return 'off-' + k;
     })).join(' '));
     paintTableClass();
   }
+  markColLabels();
+}
+
+/** Say, in the picker, which ticked columns are not on screen and why. */
+function markColLabels() {
   var on = COLUMNS.filter(function (c) {
     return colState[c.k] && !lockedReason(c.k);
   }).length;
@@ -3710,7 +3863,8 @@ function applyCols() {
  *  is where the head script has already put this browser's choice. */
 /** Columns that draw a pill over a second line. Mirrors STACKED_COLS in
  *  report.py and STACKED in the head script. */
-var STACKED_COLS = ['tmax', 'w', 'ixk', 'salad', 'atn', 'bestp', 'apprp'];
+var STACKED_COLS = ['tmax', 'w', 'ixk', 'salad', 'atn', 'bestp', 'apprp',
+                    'fit'];
 var POLL_COLS = { atn: 1, bestp: 1, apprp: 1 };
 
 /** True while any two-line column is actually on screen. The rows are given

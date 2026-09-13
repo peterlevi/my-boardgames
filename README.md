@@ -28,8 +28,10 @@ browser:
   browser — including *Last played* from your BGG play log, and what the game
   column carries (name alone, or with the year, the designer, or both)
 - **Search across everything shown**, plus BGG's alternate titles, which are
-  never displayed — so *bourgogne* finds The Castles of Burgundy. Accents are
-  folded on both sides, so *orleans* finds *Orléans*
+  never displayed — so *bourgogne* finds The Castles of Burgundy. Every word
+  has to land somewhere but they need not be adjacent or in order, so *board
+  dice* finds the Board&Dice games; accents are folded on both sides, so
+  *orleans* finds *Orléans*
 - **A shareable view**: every filter, the sort, and whichever game is expanded
   are written into the URL as you set them, so a link carries exactly what you
   were looking at — down to a single game. Opening one wins over what that

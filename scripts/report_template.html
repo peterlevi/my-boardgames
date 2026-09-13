@@ -729,8 +729,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <dt>Plays</dt><dd>Plays you have logged on BGG.</dd>
       <dt>Search</dt><dd>Looks at everything on the row and in its expanded
         panel: the name, the year, the designers and publisher, every
-        property, how the game is won and how much of a salad it is. What
-        matched is highlighted when you open the row.</dd>
+        property, how the game is won and how much of a salad it is, plus
+        BGG's other titles for the game, which are not shown. Every word has
+        to land somewhere, but not together and not in order — “board dice”
+        finds the Board&amp;Dice games. Accents are optional: “orleans” finds
+        Orléans. What matched is highlighted when you open the row.</dd>
       <dt>Game</dt><dd>The columns button above the table, at the right,
         decides what rides along with the name: nothing, the year, the
         designer, or both. Whatever the name carries loses its own column.
@@ -1212,6 +1215,19 @@ function deaccent(s) {
   return s.normalize ? s.normalize('NFD').replace(/[\u0300-\u036f]/g, '') : s;
 }
 
+/** The search box as a list of words, accent-folded and lowercased.
+ *
+ *  Every word has to land somewhere in the row's metadata, but they need not
+ *  land together or in order: "board dice" finds the Board&Dice games, whose
+ *  publisher is one unspaced token, and "knizia 2014" finds what he published
+ *  that year. Matching the whole box as one string only ever found text that
+ *  appeared verbatim, which is not how anyone types a search.
+ */
+function searchWords() {
+  var raw = deaccent(F.q.value.trim().toLowerCase());
+  return raw ? raw.split(/\s+/) : [];
+}
+
 function hay(i, g) {
   if (HAY[i] !== undefined) return HAY[i];
   var ai = g.ai || {};
@@ -1231,7 +1247,7 @@ function hay(i, g) {
  *  only the search term matched. The second bucket is what lets a search find
  *  a game the current filters would otherwise hide. */
 function partition() {
-  var term = deaccent(F.q.value.trim().toLowerCase());
+  var words = searchWords();
   var n = +F.players.value, mode = F.mode.value, expMode = F.exp.value;
   var smin = num(F.smin.value), smax = num(F.smax.value);
   var mymin = num(F.mymin.value), mymax = num(F.mymax.value);
@@ -1246,7 +1262,13 @@ function partition() {
   var inside = [], outside = [];
   for (var i = 0; i < DATA.length; i++) {
     var g = DATA[i];
-    var hit = !term || hay(i, g).indexOf(term) !== -1;
+    var hit = true;
+    if (words.length) {
+      var h = hay(i, g);
+      for (var w = 0; w < words.length; w++) {
+        if (h.indexOf(words[w]) === -1) { hit = false; break; }
+      }
+    }
     if (!hit) continue;
 
     // Expansion visibility is structural rather than a filter you relax, so
@@ -1269,7 +1291,7 @@ function partition() {
       (!n || qualifies(s, mode));
 
     if (pass) inside.push([i, s]);
-    else if (term && structural) outside.push([i, s]);
+    else if (words.length && structural) outside.push([i, s]);
   }
   return { inside: inside, outside: outside };
 }
@@ -1613,14 +1635,35 @@ function mediaBlock(g) {
  *  of which is the name you typed next to. */
 function hl(text) {
   var t = String(text === null || text === undefined ? '' : text);
-  var term = F.q.value.trim();
-  if (!term) return esc(t);
-  // Matched on the folded text, but sliced out of the original, so the
-  // accented spelling is what ends up highlighted on screen.
-  var i = deaccent(t.toLowerCase()).indexOf(deaccent(term.toLowerCase()));
-  if (i === -1) return esc(t);
-  return esc(t.slice(0, i)) + '<mark>' + esc(t.slice(i, i + term.length)) +
-         '</mark>' + esc(t.slice(i + term.length));
+  var words = searchWords();
+  if (!words.length) return esc(t);
+  // Matched against the folded text but sliced out of the original, so the
+  // accented spelling is what ends up on screen. The fold keeps a Latin
+  // letter one character wide, so the indices line up between the two.
+  var flat = deaccent(t.toLowerCase());
+  // Every word is marked wherever it lands, since they no longer have to
+  // appear together: searching "board dice" should light up both halves.
+  var hits = [];
+  words.forEach(function (w) {
+    for (var i = flat.indexOf(w); i !== -1; i = flat.indexOf(w, i + w.length)) {
+      hits.push([i, i + w.length]);
+    }
+  });
+  if (!hits.length) return esc(t);
+  hits.sort(function (a, b) { return a[0] - b[0]; });
+  // Overlapping or touching runs merge, so two words that happen to sit next
+  // to each other come out as one mark rather than two abutting ones.
+  var out = '', at = 0;
+  for (var k = 0; k < hits.length; k++) {
+    var start = hits[k][0], end = hits[k][1];
+    while (k + 1 < hits.length && hits[k + 1][0] <= end) {
+      end = Math.max(end, hits[++k][1]);
+    }
+    if (start < at) continue;
+    out += esc(t.slice(at, start)) + '<mark>' + esc(t.slice(start, end)) + '</mark>';
+    at = end;
+  }
+  return out + esc(t.slice(at));
 }
 
 function designerPills(g) {

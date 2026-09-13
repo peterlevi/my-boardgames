@@ -385,16 +385,16 @@ td.designer .more { color:var(--muted); }
 .headmeta a:hover { color:var(--ink); }
 /* "More filters" on the left, "Reset filters" hard right — level with it, and
    in the same column as the columns button further down. */
-.filterbar { display:flex; align-items:flex-start; gap:16px; }
-/* Shrinks rather than grows, so the switch beside it sits next to the words
-   "More filters" instead of being pushed to the far end of the row. Its own
-   panels still get the width they need: with min-width:0 the item gives way
-   to what is beside it and the rows inside wrap. */
-.filterbar #more { flex:0 1 auto; min-width:0; }
-/* The switch sits on the summary's line, a clear step away from it, and says
-   what it does in the same breath. */
-.fitsw { display:flex; align-items:baseline; gap:8px; cursor:pointer;
-  margin:20px 0 0 26px; align-self:flex-start; white-space:nowrap; }
+.filterbar { display:flex; align-items:flex-start; gap:16px;
+  position:relative; }
+.filterbar #more { flex:1 1 auto; min-width:0; }
+/* The switch sits on the summary's line, a clear step to the right of it —
+   which it cannot do as a flex sibling, because an open <details> takes the
+   width of its panels and shoves whatever follows to the far end of the row.
+   So it is positioned instead, and the offset is measured from the summary's
+   own text at load rather than guessed at. */
+.fitsw { position:absolute; top:20px; display:flex; align-items:baseline;
+  gap:8px; cursor:pointer; white-space:nowrap; }
 .fitsw input { margin:0; position:relative; top:1px; cursor:pointer; }
 .fitsw b { font-size:.84rem; font-weight:700; color:var(--accent); }
 .fitsw span { font-size:.76rem; color:var(--muted); white-space:normal; }
@@ -1996,6 +1996,8 @@ function describe() {
 var FIT_W = { rating: 1.0, played: 2.4, players: 1.6, tags: 1.4, weight: 1.2,
               time: 1.2, ix: 1.0, salad: 1.0 };
 var FIT_TOL = { w: 1.5, tmax: 90, salad: 40, ix: 2, pl: 6 };
+/* What is left of a score when the game cannot seat the player count. */
+var FIT_CANT_PLAY = 0.25;
 /** Which column each axis is evidence for, so a ranked table can colour the
  *  cell that earned it. The rating shows on both hexagons; the player-count
  *  axis on whichever of its three columns is up. */
@@ -2053,10 +2055,14 @@ function fitScore(g, s, n) {
   // coloured field claims a rating the game has not got.
   if (!mine) delete by.my;
   if (!g.av) delete by.av;
+  var seats = true;
   if (n) {
+    // Does the box seat this many at all — counting an owned expansion that
+    // extends it, when expansions are being folded in?
+    seats = s && s.via ? true : inRangeAt(g, n);
     // The verdict, on the same ladder the pill uses: best at this count,
     // good at it, plays at it, or not at all.
-    var v = !s ? 0 : s.isBest ? 1
+    var v = !seats || !s ? 0 : s.isBest ? 1
           : (s.bestPct === null ? !!s.good : s.bestPct >= 50) ? 0.8
           : 0.5;
     add('players', v, n + 'p');
@@ -2083,8 +2089,16 @@ function fitScore(g, s, n) {
              : (hits ? Math.max(0, 1 - hits / picked.length) : 1);
     add('tags', frac, 'properties');
   }
-  return { score: weight ? Math.round(100 * sum / weight) : null,
-           parts: parts, by: by };
+  var score = weight ? Math.round(100 * sum / weight) : null;
+  // A game that does not seat the count is not a candidate, however well it
+  // scores on everything else: five people cannot play a four-player game.
+  // Scaled rather than zeroed, so the ones that miss stay in a sensible
+  // order among themselves — but well below anything that can be played.
+  if (score !== null && !seats) {
+    score = Math.round(score * FIT_CANT_PLAY);
+    parts.unshift('does not play at ' + n + 'p');
+  }
+  return { score: score, parts: parts, by: by };
 }
 /* Five bands, strongest first. The top one is filled rather than tinted:
    "Perfect" is the end of the scale, not another shade of green. */
@@ -3049,6 +3063,18 @@ document.getElementById('tagsearch')
 document.getElementById('fittoggle').addEventListener('change', function () {
   setRanking(this.checked);
 });
+/* Park the switch just past "More filters". Measured from the summary's own
+   text — the range's right edge already has the ▸ marker behind it — so it
+   stays put when the panel opens and does not depend on a guessed width. */
+(function () {
+  var sum = document.querySelector('#more > summary');
+  var sw = document.getElementById('fitsw');
+  if (!sum || !sw) return;
+  var r = document.createRange();
+  r.selectNodeContents(sum);
+  var bar = sw.parentNode.getBoundingClientRect();
+  sw.style.left = Math.ceil(r.getBoundingClientRect().right - bar.left + 26) + 'px';
+})();
 el('reset').addEventListener('click', function () {
   applyDefaults();
   // A reset clears the player-count rule too, rather than returning to the
@@ -4409,6 +4435,9 @@ function readUrl() {
   // column preferences say: the view it carries does not make sense without
   // the scores it is ordered by.
   ranking = got.rank === '1';
+  // A ranked link that says nothing about the sort means the ranking itself:
+  // a hand-written #rank=1 should not arrive sorted by BGG rank.
+  if (ranking && !got.sort) { sortKey = 'fit'; sortDesc = true; }
   var fitsw = document.getElementById('fittoggle');
   if (fitsw) fitsw.checked = ranking;
   if (ranking && !colState.fit) {

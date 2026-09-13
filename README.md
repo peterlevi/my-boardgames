@@ -58,7 +58,8 @@ browser:
 - **BGG score** and **your own rating** side by side, as BGG's rating hexagons
 - **Complexity** and **play time** as named bands as well as numbers — weight
   in BGG's own vocabulary (Light, Medium light, Medium, Heavy, Extreme) cut at
-  the midpoints between the points BGG's own Game Weight poll names, and time
+  the midpoints between the points BGG's own Game Weight poll names — except
+  the top one, which sits at 4.2 where the unplayably heavy start — and time
   by its *upper* bound (Very short through Extreme), because the question at a
   game night is how long this could run, not how fast it could be over
 - **Number of plays**, as a range

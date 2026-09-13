@@ -242,7 +242,11 @@ WEIGHT_BANDS = [
     {"k": "light", "n": "Light", "lt": 1.5, "pill": "p3", "bar": "wt1"},
     {"k": "medlight", "n": "Medium light", "lt": 2.5, "pill": "p2", "bar": "wt2"},
     {"k": "medium", "n": "Medium", "lt": 3.5, "pill": "p2", "bar": "wt2"},
-    {"k": "medheavy", "n": "Heavy", "lt": 4.5, "pill": "p1", "bar": "wt3"},
+    # 4.2, not the 4.5 the other cuts' logic would give: above 4.2 a game is
+    # in the handful that get called unplayably heavy, and at 4.5 that band
+    # held eight games where Heavy held sixty. A band nobody is ever in says
+    # nothing.
+    {"k": "medheavy", "n": "Heavy", "lt": 4.2, "pill": "p1", "bar": "wt3"},
     {"k": "heavy", "n": "Extreme", "lt": None, "pill": "pw", "bar": "wt4"},
 ]
 
@@ -344,9 +348,12 @@ def scales():
         # bound rather than the one that ends at it. `hiExclusive` is about
         # filtering rather than reading: a game weighing exactly 3.5 is Heavy,
         # not Medium, so the top of a band is not in it.
+        # `labelRange`: the band names are BGG's vocabulary but the numbers
+        # are what the column shows, and "Medium light" does not say where it
+        # ends. The popup is where there is room to give both.
         "wband": {"min": 1, "max": 5, "step": 0.01, "unit": "",
                   "edgesMeet": True, "hiExclusive": True, "brief": "num",
-                  "stops": stops(weight_stops())},
+                  "labelRange": True, "stops": stops(weight_stops())},
         "salad": {"min": 0, "max": 100, "step": 1, "unit": "%",
                   "brief": "band",
                   "stops": stops([("No", 0, sb[0] - 1),

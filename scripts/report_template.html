@@ -290,6 +290,10 @@ th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
   font:inherit; color:var(--muted); cursor:pointer; border-radius:4px; }
 .vname:hover { color:var(--ink); }
 .vname.on { color:var(--ink); font-weight:600; }
+/* The numbers behind the name, which stay quiet whether the band is picked
+   or not: they are what the band *is*, not part of the choice. */
+.vname .vsub { margin-left:6px; font-style:normal; font-weight:400;
+  font-size:.92em; color:var(--muted); opacity:.85; }
 /* Clear of the bottom handle, and on the side the labels are, so it does not
    read as part of the scale. */
 /* Parked in the top-right corner, on the line of the topmost label: it is a
@@ -1128,8 +1132,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         or a hosted copy.</dd>
       <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale: a bar from
         green for light to red for heavy, and the band it falls in — Light,
-        Medium light, Medium, Heavy, Extreme — cut at the midpoints between
-        the points BGG's own Game Weight poll names, 1.5, 2.5, 3.5 and 4.5.
+        Medium light, Medium, Heavy, Extreme — cut at 1.5, 2.5 and 3.5, the
+        midpoints between the points BGG's own Game Weight poll names, and at
+        4.2, where the handful of games people call unplayably heavy start.
         Whether you see the band above the number or the number alone is the
         <b>Cells</b> setting in the columns menu — detailed or compact — and it
         is the same for every column that has both to show.</dd>
@@ -3365,6 +3370,14 @@ function vRange(input, scale, label) {
     var el = document.createElement('span');
     el.className = 'vname';
     el.textContent = st.n;
+    // A band name is BGG's word for a stretch of the scale; where the scale
+    // is a number the reader also knows, the popup has room to say both.
+    if (scale.labelRange) {
+      var sub = document.createElement('i');
+      sub.className = 'vsub';
+      sub.textContent = trim(st.lo) + '–' + trim(st.hi);
+      el.appendChild(sub);
+    }
     el.style.top = fracOfStop(i) * 100 + '%';
     el.title = 'Show only ' + st.n.toLowerCase();
     names.appendChild(el);

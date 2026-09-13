@@ -2014,8 +2014,8 @@ function describe() {
  * and a half of play, forty points of salad, two levels of interaction.
  */
 var FIT_W = { rating: 1.0, played: 2.4, players: 1.6, tags: 1.4, weight: 1.2,
-              time: 1.2, ix: 1.0, salad: 1.0, votes: 0.35 };
-var FIT_TOL = { w: 1.5, tmax: 90, salad: 40, ix: 2, pl: 6 };
+              time: 1.2, ix: 1.0, salad: 1.0, year: 1.0, votes: 0.35 };
+var FIT_TOL = { w: 1.5, tmax: 90, salad: 40, ix: 2, pl: 6, y: 10 };
 /* What is left of a score when the game cannot seat the player count. */
 var FIT_CANT_PLAY = 0.25;
 /** Which column each axis is evidence for, so a ranked table can colour the
@@ -2023,7 +2023,8 @@ var FIT_CANT_PLAY = 0.25;
  *  axis on whichever of its three columns is up. */
 var FIT_CELLS = { rating: ['av', 'my'], played: ['pl'], votes: ['rt'],
                   players: ['atn', 'bestp', 'apprp'], weight: ['w'],
-                  time: ['tmax'], ix: ['ixk'], salad: ['salad'] };
+                  time: ['tmax'], ix: ['ixk'], salad: ['salad'],
+                  year: ['y'] };
 /* Each rating on its own scale, because they do not mean the same thing. A
    BGG average lives between about 5.5 and 8.8 — 8.6 is extraordinary there —
    while a personal 1-10 is used to the top of its range. Both when both are
@@ -2107,6 +2108,14 @@ function fitScore(g, s, n) {
   if (wR) add('weight', rangeFit(wR, g.w, FIT_TOL.w), 'weight');
   var tR = numRange(F.tband.value, BANDS.scales.tband);
   if (tR) add('time', rangeFit(tR, g.tmax, FIT_TOL.tmax), 'length');
+  // Asking for a stretch of years is asking for a kind of game, and a game a
+  // few years either side of it is still that kind. A decade out is not.
+  var ylo = num(F.ymin.value), yhi = num(F.ymax.value);
+  if (ylo !== null || yhi !== null) {
+    add('year', rangeFit({ lo: ylo === null ? -Infinity : ylo,
+                           hi: yhi === null ? Infinity : yhi },
+                         g.y, FIT_TOL.y), 'year');
+  }
   var picked = pickedTags();
   if (picked.length) {
     var mode = F.tagmode.value, hits = 0, has = g.tg || [];

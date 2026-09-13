@@ -901,16 +901,20 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
    given away for nothing. They are sized for a *detailed* table, the wider of
    the two: a compact one carries the same columns 100px narrower and simply
    keeps them a little longer than it needs to. */
-@media (max-width:1276px) { .drop1 { display:none; } }
-@media (max-width:1180px) { .drop2 { display:none; } }
-@media (max-width:1156px) { .drop3 { display:none; } }
-@media (max-width:1104px) { .drop4 { display:none; } }
-@media (max-width:1000px) { .drop5 { display:none; } }
+/* All of this is the fallback: once the page script runs it measures the
+   table and drops columns in the same order until it fits, which is the same
+   question asked with the answer in hand — these breakpoints can only guess,
+   and they guess for the default columns. `jsfit` stands them down. */
+@media (max-width:1276px) { :root:not(.jsfit) .drop1 { display:none; } }
+@media (max-width:1180px) { :root:not(.jsfit) .drop2 { display:none; } }
+@media (max-width:1156px) { :root:not(.jsfit) .drop3 { display:none; } }
+@media (max-width:1104px) { :root:not(.jsfit) .drop4 { display:none; } }
+@media (max-width:1000px) { :root:not(.jsfit) .drop5 { display:none; } }
 /* A player count brings a column of its own, and it is wider than the Win
    condition it displaces, so every rung below the first arrives sooner. */
-@media (max-width:1276px) { :root:not(.mode-any) .drop3 { display:none; } }
-@media (max-width:1224px) { :root:not(.mode-any) .drop4 { display:none; } }
-@media (max-width:1120px) { :root:not(.mode-any) .drop5 { display:none; } }
+@media (max-width:1276px) { :root:not(.jsfit):not(.mode-any) .drop3 { display:none; } }
+@media (max-width:1224px) { :root:not(.jsfit):not(.mode-any) .drop4 { display:none; } }
+@media (max-width:1120px) { :root:not(.jsfit):not(.mode-any) .drop5 { display:none; } }
 /* Below this the game's own name is what suffers, so Plays goes too — it is
    the column you consult, not the one you scan. */
 @media (max-width:940px) {
@@ -2902,6 +2906,21 @@ if (typeof ResizeObserver === 'function') {
 }
 setStickyTop();
 
+/* A narrower window is the same question as one more column: does what is on
+   screen still fit. Re-asked on the next frame rather than on every pixel of
+   a drag, because answering it repaints the table. */
+(function () {
+  var queued = false;
+  window.addEventListener('resize', function () {
+    if (queued) return;
+    queued = true;
+    window.requestAnimationFrame(function () {
+      queued = false;
+      applyCols();
+    });
+  });
+})();
+
 // Replace each filter <select> with a styled equivalent. The native element
 // stays in the DOM and keeps its value, so nothing here is load-bearing: with
 // scripts blocked the plain selects are what you get, and they work.
@@ -3587,18 +3606,78 @@ function swallowedByGame(k) {
          (k === 'ds' && (gameMode === 'ds' || gameMode === 'yeards'));
 }
 
-/** Why a column cannot be turned on right now, or '' if it can. */
+/** The order columns leave in when they will not all fit, least missed
+ *  first. The first eight are the responsive ladder — Win condition and Win
+ *  scores, the designer, the year, point salad, interaction, then plays and
+ *  weight — because a table that is too wide is too wide whether the window
+ *  shrank or you asked for another column, and a reader should not have to
+ *  learn two orders for the same thing.
+ *
+ *  The tail is the last resort. Tick enough of the optional columns and even
+ *  the essentials have to go, but the game's name never does: a table of
+ *  numbers with nothing to say which game each row is would be worse than a
+ *  scrollbar. */
+var FIT_ORDER = ['win', 'sc', 'ds', 'y', 'salad', 'ixk', 'pl', 'w',
+                 'tmax', 'acq', 'lp', 'ed', 'pp', 'bestp', 'apprp',
+                 'rt', 'my', 'rk', 'th'];
+/** Columns the table had no room for, this paint. */
+var autoDropped = {};
+
+/** Why a column is not on screen although it is ticked, or '' if it is. */
 function lockedReason(k) {
-  return swallowedByGame(k) ? 'Shown inside the Game column' : '';
+  if (swallowedByGame(k)) return 'Shown inside the Game column';
+  if (autoDropped[k]) return 'No room for it at this width';
+  return '';
+}
+
+/** Drop columns, in FIT_ORDER, until the table fits the page.
+ *
+ *  Widths are read from the table itself rather than from a list kept here:
+ *  they are stated in the stylesheet, they differ between a detailed and a
+ *  compact table, and a second copy in the script would be one more thing to
+ *  keep in step. A fixed-layout table cannot shrink a column below its stated
+ *  width, so over budget the used widths *are* the stated ones; under budget
+ *  they add up to exactly the space available and nothing is dropped.
+ */
+function fitColumns() {
+  var scroll = document.querySelector('.scroll');
+  if (!scroll) return {};
+  var avail = scroll.clientWidth;
+  var width = {}, total = 0;
+  [].forEach.call(document.querySelectorAll('thead th'), function (th) {
+    if (window.getComputedStyle(th).display === 'none') return;
+    var k = th.getAttribute('data-col');
+    width[k] = parseFloat(window.getComputedStyle(th).width) || 0;
+    total += width[k];
+  });
+  var out = {};
+  for (var i = 0; i < FIT_ORDER.length && total > avail + 0.5; i++) {
+    var k = FIT_ORDER[i];
+    if (!(k in width)) continue;
+    out[k] = 1;
+    total -= width[k];
+  }
+  return out;
 }
 
 function applyCols() {
   var cls = ['gm-' + gameMode, 'det-' + detailMode];
   COLUMNS.forEach(function (c) {
-    if (!colState[c.k] || lockedReason(c.k)) cls.push('off-' + c.k);
+    if (!colState[c.k] || swallowedByGame(c.k)) cls.push('off-' + c.k);
   });
   ROOT.setAttribute('data-cols', cls.join(' '));
   paintTableClass();
+  // Painted with everything that was asked for; now see what fits. Measuring
+  // after the paint rather than predicting from a width table is what lets
+  // this answer for any combination of columns, either cell mode, any window.
+  autoDropped = fitColumns();
+  var extra = Object.keys(autoDropped);
+  if (extra.length) {
+    ROOT.setAttribute('data-cols', cls.concat(extra.map(function (k) {
+      return 'off-' + k;
+    })).join(' '));
+    paintTableClass();
+  }
   var on = COLUMNS.filter(function (c) {
     return colState[c.k] && !lockedReason(c.k);
   }).length;
@@ -3639,7 +3718,11 @@ function hasStackedColumn() {
 
 function paintTableClass() {
   var n = +F.players.value;
-  ROOT.className = (n ? '' : 'mode-any ') +
+  // `jsfit`: the width ladder is being run by fitColumns() from here on, so
+  // the stylesheet's own breakpoints stand down. They are the fallback for a
+  // browser with no JavaScript and for the first paint, where they guess from
+  // the window width alone — which is right only for the default columns.
+  ROOT.className = 'jsfit ' + (n ? '' : 'mode-any ') +
     (hasStackedColumn() ? 'stacked ' : '') +
     (ROOT.getAttribute('data-cols') || '');
 }

@@ -17,3 +17,6 @@ reports/
 
 # CI build output
 site/
+
+# Machine-specific agent confinement (absolute paths, this machine only)
+.claude/settings.local.json

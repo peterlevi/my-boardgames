@@ -1,0 +1,17 @@
+{
+  "$comment": "Committed, machine-independent settings for this repository. Machine-specific confinement lives in .claude/settings.local.json, which is gitignored — see _meta/README.md.",
+  "permissions": {
+    "defaultMode": "default",
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh release:*)"
+    ],
+    "deny": [
+      "Read(**/credentials.env)",
+      "Read(**/data/collection.csv)",
+      "Bash(sudo:*)",
+      "Bash(security:*)"
+    ]
+  }
+}

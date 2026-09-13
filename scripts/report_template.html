@@ -33,8 +33,16 @@ body { margin:0; background:var(--bg); color:var(--ink);
   font:15px/1.5 "Avenir Next","Segoe UI Variable Text","Segoe UI",Inter,
        "Nunito Sans",system-ui,-apple-system,sans-serif;
   font-variant-numeric:tabular-nums; }
+/* The page is 1280 and stays 1280. If a column set will not fit, the answer
+   is a narrower column or one fewer of them, never a wider page — past this
+   the table stops being readable at arm's length and the line lengths in the
+   expanded row go with it. Narrower windows scroll the table inside .scroll. */
 .wrap { max-width:1280px; margin:0 auto; padding:28px 16px 64px; }
 h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
+/* The title is the "home" link, but it should read as the title: no colour,
+   no underline until you reach for it. */
+h1 a { color:inherit; text-decoration:none; }
+h1 a:hover { text-decoration:none; }
 .sub { color:var(--muted); margin:0 0 6px; max-width:75ch; }
 .note { font-size:.85rem; }
 .note b { color:var(--ink); }
@@ -93,6 +101,10 @@ h1 { font-size:1.55rem; margin:0 0 6px; letter-spacing:-.01em; }
    salad — sits on one line at the table's width. */
 .row { display:flex; gap:10px 16px; align-items:flex-end; flex-wrap:wrap; }
 .row + .row { margin-top:20px; }
+/* Every filter takes the width of its own longest caption and no more —
+   sizeControls() measures them — and the search box takes what is left. That
+   is what fits nine of them on a line: sized to their content rather than to
+   an equal share, the four narrow ones cost about what one wide one did. */
 .f { display:flex; flex-direction:column; gap:3px; }
 .f > label { font-size:.68rem; text-transform:uppercase; letter-spacing:.06em;
   color:var(--muted); font-weight:600; }
@@ -203,6 +215,11 @@ body { transition:opacity .32s ease-out; }
 .colfoot { margin:auto 8px 2px; padding-top:10px; }
 .colfoot .link { font-size:.8rem; padding:0; }
 .colmenu label.locked { opacity:.45; }
+.colmenu button.colpreset { display:block; padding:3px 8px; font-size:.82rem;
+  text-align:left; width:100%; }
+.colmenu button.colpreset:hover { background:var(--bg); border-radius:6px;
+  color:var(--ink); }
+.colmenu button#colsreset { font-weight:700; font-size:.84rem; }
 /* The header being dragged, and where it would land. */
 th.dragging { opacity:.45; }
 th.dropbefore { box-shadow:inset 2px 0 0 var(--accent); }
@@ -210,8 +227,83 @@ th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
 .colmenu label { display:flex; align-items:center; gap:7px; padding:3px 8px;
   border-radius:6px; cursor:pointer; font-size:.8rem; white-space:nowrap; }
 /* Eighteen columns in one list runs off the bottom of the screen, so the list
-   itself splits in two — three columns of menu in all. */
-#collist { columns:2; column-gap:12px; }
+   itself splits in two. It was three for a while, because there were
+   thirty-four columns to list; collapsing each axis to one column took a
+   third of them out of the menu. */
+#colfilter { width:100%; margin:2px 0 8px; padding:5px 9px;
+  border:1px solid var(--line); border-radius:7px; background:var(--bg);
+  color:var(--ink); font:inherit; font-size:.82rem; }
+#colfilter:focus { outline:none; border-color:var(--accent); }
+.colnone { margin:6px 2px; color:var(--muted); font-size:.82rem; }
+#collist { columns:2; column-gap:18px; }
+/* The range popup: a vertical track, dots where the bands begin, and the band
+   names beside it. Vertical because the labels are horizontal — a name reads
+   straight across from the stretch of track it belongs to, which a horizontal
+   scale cannot do without turning the text on its side. */
+.vrng { position:absolute; z-index:30; top:calc(100% + 6px); left:0;
+  background:var(--panel); border:1px solid var(--line); border-radius:10px;
+  box-shadow:0 10px 28px rgba(0,0,0,.14); padding:22px 16px;
+  /* Wide enough for a stop's name and the reset link side by side, whatever
+     the control below it is. It used to take the control's width, which was
+     enough while the collapsed control said "Medium light to Heavy"; now that
+     it says "1.5–3.5" the popup came out narrow enough for "Reset to Any" to
+     land on top of the first label. */
+  min-width:244px; }
+:root:not([data-theme="light"]) .vrng { box-shadow:0 10px 28px rgba(0,0,0,.5); }
+.vbody { display:flex; gap:12px; padding:4px 0; touch-action:none;
+  cursor:pointer; user-select:none; }
+/* The track's height is set per scale, one step at a time, so every slider
+   has the same spacing between stops whatever it measures. */
+.vtrack { position:relative; width:22px; flex:none; }
+.vtrack::before { content:""; position:absolute; left:9px; top:0; bottom:0;
+  width:4px; border-radius:2px; background:var(--chip); }
+.vfill { position:absolute; left:9px; width:4px; border-radius:2px;
+  background:var(--accent); }
+/* Every stop is the same circle; being inside the range is what fills it,
+   the two ends included — a hollow end read as "not selected" when it is the
+   one thing that certainly is. */
+.vdot { position:absolute; left:7px; width:8px; height:8px;
+  margin-bottom:-4px; border-radius:50%; background:var(--panel);
+  border:2px solid var(--line); box-sizing:border-box; }
+.vdot.on { background:var(--accent); border-color:var(--accent); }
+/* The handles are the same circle, larger, and filled to match the stops
+   they sit on — they are ends of the range, not exceptions to it. */
+.vh { position:absolute; left:3.5px; width:15px; height:15px;
+  margin-bottom:-7.5px; border-radius:50%; background:var(--accent);
+  border:2px solid var(--panel); box-shadow:0 0 0 2px var(--accent);
+  box-sizing:border-box; cursor:grab; }
+.vh:focus-visible { outline:none; box-shadow:0 0 0 3px var(--chip); }
+/* Each name sits against the middle of the stretch it covers, which is why
+   the track is vertical: the text stays the right way up. */
+.vnames { position:relative; flex:1 1 auto; min-width:104px;
+  /* Room for the reset link parked in the corner, so a long first label
+     never runs underneath it. */
+  padding-right:74px;
+  font-size:.72rem; }
+/* A label is a button: it asks for exactly its own stop. */
+.vname { position:absolute; left:0; white-space:nowrap;
+  transform:translateY(50%); background:none; border:0; padding:0 2px;
+  font:inherit; color:var(--muted); cursor:pointer; border-radius:4px; }
+.vname:hover { color:var(--ink); }
+.vname.on { color:var(--ink); font-weight:600; }
+/* Clear of the bottom handle, and on the side the labels are, so it does not
+   read as part of the scale. */
+/* Parked in the top-right corner, on the line of the topmost label: it is a
+   way out of the control rather than a step on the scale, so it sits beside
+   the scale instead of under it — and out of the flow, so it costs the popup
+   no height. The 26px is where the first label's centre lands: the popup's
+   22px of top padding plus the body's 4px.
+   `.vrng button.vreset` rather than `.vreset`, because `button.link` is
+   element-plus-class and outranks a lone class: its `font:inherit` and its
+   7px of padding were quietly winning, which is why setting the size here
+   had no effect at all and why the gap underneath was larger than it looked.
+   The labels' type size, bold, in the link colour. */
+.vrng button.vreset { position:absolute; top:26px; right:16px;
+  transform:translateY(-50%); margin:0; padding:0;
+  font-size:.72rem; font-weight:700; line-height:1.1;
+  color:var(--accent); text-decoration:none; }
+.vrng button.vreset:hover { color:var(--ink); }
+
 #collist label { break-inside:avoid; }
 .colmenu label:hover { background:var(--bg); }
 .colmenu input { margin:0; }
@@ -229,10 +321,14 @@ th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
 /* One gap everywhere: the tick, the name, the kind, the count and the
    description were 8px apart but their columns were sized so unevenly that
    the count crowded the description while the kind floated alone. */
+/* The kind column is sized for the longest label there is — "interaction
+   kind" — on one line. At 6.5em it wrapped, and a wrapped kind makes its row
+   twice the height of every other one, which reads as a break in the list. */
 .tagbox label { display:grid;
-  grid-template-columns:16px minmax(0,15em) 6.5em 5.5em 1fr;
+  grid-template-columns:16px minmax(0,15em) 9.5em 5.5em 1fr;
   align-items:baseline; gap:0 18px; padding:4px 10px; border-radius:6px;
   cursor:pointer; font-size:.82rem; }
+.tagbox .tkind { white-space:nowrap; }
 .tagbox label:hover { background:var(--bg); }
 .tagbox input { margin:0; position:relative; top:2px; }
 .tagbox .tname { font-weight:600; white-space:nowrap; overflow:hidden;
@@ -322,53 +418,76 @@ table { width:100%; table-layout:fixed; border-collapse:separate;
 /* Each width fits its own label *plus the sort caret*, measured rather than
    guessed: the caret is always in the layout, so a column sized to the bare
    word clipped as soon as you sorted by it. */
-th.w-thumb { width:52px; } th.w-rank { width:56px; }
-th.w-hex { width:54px; } th.w-plays { width:58px; }
-th.w-time { width:72px; } th.w-weight { width:70px; }
-th.w-ix { width:104px; } th.w-designer { width:150px; }
+th.w-thumb { width:52px; } th.w-rank { width:54px; }
+th.w-hex { width:54px; } th.w-plays { width:56px; }
+/* Both now carry a pill over a bar, so they need the width a pill needs.
+   "Medium light" and "4 hours+" are the longest band names. */
+th.w-time { width:110px; } th.w-weight { width:114px; }
+th.w-ixk { width:106px; }
+/* A column needs the width of what it is showing, and what it is showing is
+   the Cells setting: the widths above are what a detailed table needs, and
+   these are what a compact one does. Stating it this way is the point of
+   having one column per axis — the column resizes rather than being swapped
+   for a narrower one with the same name. */
+/* Time, Weight and the poll columns print a short figure over a 44px bar, so
+   what a compact one needs is the wider of its own header and "240–480" —
+   narrower than the same column carrying a pill above the bar. */
+:root.det-compact th.w-time, :root.det-compact th.w-weight { width:74px; }
+:root.det-compact th.w-atn { width:96px; }
+:root.det-compact th.w-pct { width:88px; }
+/* Point salad and Interaction keep their pills when the table is compact — see
+   the cell rules below — so they are no narrower than the widths above, which
+   are already set by their names rather than their contents. POINT SALAD is
+   the widest header in the table and a th clips rather than wraps, so trimming
+   it to what the pill needs cost it its own name as soon as the table ran out
+   of slack to distribute. */
+th.w-designer { width:150px; }
 th.w-date { width:106px; } th.w-price { width:96px; }
-th.w-score { width:112px; }
-th.w-year { width:64px; }
-th.w-atn { width:64px; } th.w-pct { width:66px; }
-th.w-ratings { width:74px; }
-th.w-win { width:146px; } th.w-br { width:104px; }
-/* The poll columns read a player count, so with the count at "Any" all three
-   are dashes. The table swaps them for the two fields that always have a
-   value — what wins the game, and how broadly it scores. */
+th.w-score { width:100px; }
+th.w-year { width:52px; }
+/* Wide enough that the bar inside is still a bar. "At N" carries a label, a
+   track and a figure on one line, and at 84px the track came out 18px long —
+   a dash, not something you can read a value off. */
+th.w-atn { width:124px; } th.w-pct { width:88px; }
+th.w-ratings { width:58px; }
+th.w-win { width:120px; } th.w-br { width:104px; }
+/* The poll columns read a player count, so with the count at "Any" they have
+   nothing to say and stand down. Only they do: the columns that always have a
+   value — what wins the game, how broadly it scores — used to be swapped out
+   to make room for them, which meant choosing a player count silently took
+   away two columns nobody had asked to lose. */
 /* All of this hangs off the root element, set before the page paints: the
    server writes the defaults into <html> and a script in the head swaps in
    whatever this browser last chose. Hanging it off the table instead meant
    the table painted with every column and then jumped when the page script
    finally ran — most of a second later on a slow machine. */
-.mode-any .c-verdict, .mode-any .c-bestPct, .mode-any .c-appr,
-:root:not(.mode-any) .c-win, :root:not(.mode-any) .c-salad { display:none; }
+.mode-any .c-atn, .mode-any .c-bestp, .mode-any .c-apprp { display:none; }
 /* The column picker. One class per hidden column on the table beats setting
    display on 265 rows' worth of cells. */
+.off-gn .c-gn,
 .off-th .c-th, .off-rk .c-rk, .off-av .c-av, .off-my .c-my,
 .off-y .c-y, .off-ds .c-ds, .off-pl .c-pl, .off-tmax .c-tmax,
-.off-w .c-w, .off-ix .c-ix, .off-acq .c-acq, .off-lp .c-lp, .off-ed .c-ed, .off-sc .c-sc,
+.off-w .c-w, .off-acq .c-acq, .off-lp .c-lp, .off-ed .c-ed, .off-sc .c-sc,
 .off-pp .c-pp, .off-win .c-win, .off-salad .c-salad,
-.off-verdict .c-verdict, .off-bestPct .c-bestPct,
-.off-appr .c-appr, .off-rt .c-rt { display:none; }
+.off-atn .c-atn, .off-bestp .c-bestp, .off-apprp .c-apprp,
+.off-ixk .c-ixk,
+.off-rt .c-rt { display:none; }
 
-/* What the Game column itself carries. Anything on the second line is hidden
-   piece by piece, so one rule set covers "year and designer", "designer only"
-   and the width fallback. */
-.gamecell .yr, .gamecell .meta,
+/* What the Game column itself carries. The cell always renders both fields
+   and the mode on the root element shows the ones asked for, so the choice
+   costs nothing and cannot leave the year in two columns at once. The
+   separator belongs to the pair, not to the designer: with the year hidden it
+   would otherwise open the second line with a stray dot. */
+.gamecell .meta { display:none; }
+.gm-year .gamecell .meta, .gm-ds .gamecell .meta,
+.gm-yeards .gamecell .meta { display:block; }
 .gamecell .m-yr, .gamecell .m-ds { display:none; }
-.gm-year .gamecell .yr { display:inline; }
-.gm-yeards .gamecell .meta, .gm-ds .gamecell .meta { display:block; }
-.gm-yeards .gamecell .m-yr, .gm-yeards .gamecell .m-ds,
-.gm-ds .gamecell .m-ds { display:inline; }
-/* The separator belongs to whichever pair is actually on screen. */
+.gm-year .gamecell .m-yr, .gm-yeards .gamecell .m-yr,
+.gm-ds .gamecell .m-ds, .gm-yeards .gamecell .m-ds { display:inline; }
 .gm-yeards .gamecell .m-yr + .m-ds::before { content:" · "; }
 /* The designer column goes for width long before the name is in trouble, so
    it falls back into the cell rather than vanishing. */
-@media (max-width:1180px) {
-  :root:not(.off-ds) .gamecell .meta,
-  :root:not(.off-ds) .gamecell .m-ds { display:inline; }
-  :root:not(.off-ds) .gamecell .meta { display:block; }
-}
+th.w-game { width:300px; }
 td.gamecell { min-width:0; }
 a.game { overflow-wrap:anywhere; }
 th, td { padding:8px 9px; text-align:left; border-bottom:1px solid var(--line);
@@ -399,6 +518,14 @@ a, a:hover, button.link, .linkish { text-decoration:none; }
 img.thumb { width:44px; height:44px; object-fit:contain; border-radius:7px;
   display:block; background:var(--tile); padding:2px; }
 td.thumb { width:44px; padding-right:0; }
+/* A two-line column makes every row taller, and a 44px cover then floats in
+   the middle of it. The bigger cover is keyed off the same root class the row
+   padding is, so it is all rows or none — a cover that grew only on the rows
+   that happened to be tall would make the column ragged, and the column is
+   the one thing you scan by shape rather than by reading. */
+.stacked img.thumb { width:58px; height:58px; }
+.stacked td.thumb { width:58px; }
+.stacked th.w-thumb { width:58px; }
 .game { color:var(--ink); font-weight:600; }
 a.game:hover { color:var(--accent); }
 .chip .n { color:var(--muted); font-variant-numeric:tabular-nums; }
@@ -423,6 +550,10 @@ mark { background:var(--hit); color:inherit; font-weight:700;
 .tag.pw { color:var(--warn); background:var(--warn-bg); }
 .tag.exp  { color:var(--warn); background:var(--warn-bg); font-size:.65rem;
   margin-left:5px; vertical-align:middle; }
+/* An expansion you own is a fact about the shelf; an expansion that is *why*
+   this game qualifies at the chosen count is a fact about the answer. Same
+   badge, more weight. */
+.tag.exp.via { outline:1.5px solid var(--warn); }
 /* BGG's rating badge: a regular pointy-top hexagon in their muted palette,
    white text. The clip-path below only describes a *regular* hexagon when the
    box is taller than it is wide by 2/√3 (≈1.155) — at any other aspect ratio
@@ -453,14 +584,159 @@ td.score.mine-col { padding-right:9px; }
 .bar > .track > i.m4 { background:var(--m4); }
 .bar > .track > i.m3 { background:var(--m3); }
 .bar > .track > i.m2 { background:var(--m2); }
-/* Point salad ships as both the band and the raw percentage; one of them is
-   hidden. The percentage borrows .bar wholesale from the weight column — same
-   type size, same track beneath — and right-aligns with tabular figures so a
-   column of them lines up on the % sign. */
-.salpct { display:none; font-variant-numeric:tabular-nums; }
-:root.sal-pct .salband { display:none; }
-:root.sal-pct .salpct { display:block; }
-:root.sal-pct .c-salad { text-align:right; }
+/* One shape for every column that carries a judgement together with the
+   numbers behind it: the pill on top, its percentages stacked under it. Point
+   salad and the three player-count columns are the same object at different
+   widths, so they are drawn by one rule set rather than by several that drift
+   apart. The percentages borrow .bar wholesale from the weight column — same
+   type size, same track beneath — because they are the same kind of thing: a
+   measured quantity on a fixed scale. */
+.pb { display:block; }
+/* Both shapes are two lines of the same heights: something on top — a pill,
+   or the figure where a column has no pill — and the bar under it. That is
+   what lets a row read straight across: every pill and every number on one
+   line, every bar on the next, whichever variant each column is showing. */
+/* One height for both, set rather than inherited: a pill carries vertical
+   padding and a line-height of its own, so left to themselves the pill box
+   and the plain figure differ by a few pixels and every bar below them lands
+   at a different offset. box-sizing keeps the pill's shape while the height
+   is pinned. */
+.pb > .tag, .pb > .pbtop { display:inline-flex; align-items:center;
+  height:21px; box-sizing:border-box; padding-top:0; padding-bottom:0;
+  vertical-align:top; }
+.pb > .pbtop { font-size:.84rem; font-variant-numeric:tabular-nums;
+  justify-content:flex-end; }
+/* The second line is a fixed height too, so every one of these cells is the
+   same height overall. Cells are vertically centred, so a bar row carrying a
+   figure beside it and one carrying a bare track would otherwise centre
+   differently and shift the line above them apart by a few pixels. */
+.pb > .pbars { display:block; margin-top:2px; min-height:14px; }
+
+/* ---- detailed, or compact ---------------------------------------------
+   Every switchable cell ships all of its parts and the mode on the root
+   element decides which are painted. One setting governs the whole table, so
+   two columns cannot end up drawing different lines as they did when each
+   was picked separately.
+
+   Detailed: the pill answers, the bar and the figure beside it are the
+   evidence. The figure's own line is not needed — it is already next to the
+   bar.
+
+   Compact: one line per cell instead of two. Wherever the cell has a figure,
+   that figure takes the line the pill would have used, so a row still reads
+   straight across — the number where the pill was, the bar where the bar
+   was — and the figure beside the bar would only say it twice. */
+:root.det-detailed .pb > .pbtop { display:none; }
+:root.det-compact .pb.sw > .tag { display:none; }
+:root.det-compact .pb.sw .bar > .pct { display:none; }
+/* …except where the pill is the shorter form. Interaction's second line is
+   the kind of interaction, which is words, and point salad's figure is a
+   score whose band name says the same thing in a word — so both keep the
+   pill and drop the line under it. A column of words in a table of figures
+   reads as a different table. */
+:root.det-compact .pb.sw.keep-pill > .tag { display:inline-flex; }
+:root.det-compact .pb.sw.keep-pill > .pbtop,
+:root.det-compact .pb.sw.keep-pill > .pbars { display:none; }
+/* A figure-over-bar column is only as wide as its number needs; the cells
+   keeping a pill are not that shape and read from the left. Clamping one of
+   those to a bar's width was how "Shared market" came out as "Shar…". */
+:root.det-compact .pb.sw:not(.keep-pill) { text-align:right; }
+/* The bar sits directly under the figure, sharing its right edge. It used to
+   carry a 64px cap from when the bar stretched to fill the cell; against a
+   fixed 44px track that cap only parked the bar 10px to the left of the
+   number above it. */
+:root.det-compact .pb.sw:not(.keep-pill) > .pbars { margin-left:auto;
+  width:44px; }
+/* The figure is the thing being read in these columns, so it keeps the size
+   the other figures in the table have rather than the footnote size it wears
+   when a pill is above it. */
+:root.det-compact .pb.sw > .pbtop { font-size:.82rem; color:var(--ink); }
+/* Two rows, not three: the pill, then the bar and its figure on one line.
+   The bar is what a column of these is scanned by, so it takes the width and
+   flexes; the number is the footnote to it and sits small, right-aligned
+   against the cell's edge, where a column of them lines up on the % sign. */
+.pb .bar { display:flex; align-items:center; gap:5px; min-width:0;
+  font-variant-numeric:tabular-nums; }
+/* Fixed height, so the track centres at the same offset whether or not a
+   figure sits beside it — otherwise a bare bar rides 3px higher than one
+   with a number next to it. The dual column keeps its own rhythm: it stacks
+   two of these and is taller by design. */
+.pb:not(.dual) .bar { height:14px; }
+/* …except where the bar has nothing beside it. A figure-over-bar cell puts
+   its number on the line above, so the 14px row that exists to hold text
+   next to the bar is five pixels of nothing, and it showed as a gap between
+   the number and its bar. The row below it goes the same way: with the bar
+   sized to itself, a 14px floor under it is ten pixels of nothing at the
+   bottom of the cell, and since cells are vertically centred that pushed the
+   number and its bar above the middle of the row — visibly higher than the
+   year and the play count beside them. */
+:root.det-compact .pb.sw .bar { height:auto; }
+:root.det-compact .pb.sw > .pbars { min-height:0; }
+.pb .bar > .track { flex:0 0 44px; margin-top:0; }
+/* Everything on a cell's second line — a figure beside a bar, or a word in
+   place of one — is one size and one vertical treatment. They sit side by
+   side across a row, and reaching the same place by two different routes
+   (a centred flex row here, a line-height and a margin there) left them a
+   third of a line apart and a sixteenth of a pixel different in size. */
+.pb .bar > .pct, :root.det-detailed .pb .ixonly { font-size:.66rem;
+  color:var(--muted); line-height:1; }
+.pb .bar > .pct { flex:none; }
+/* Under a pill there is room for one kind of interaction, not three: the
+   other two stay in the cell and in the hover. */
+:root.det-detailed .pb .ixonly { height:14px; justify-content:center; }
+:root.det-detailed .pb .ixonly > span:nth-child(n+2) { display:none; }
+.pb .bar + .bar { margin-top:3px; }
+/* Which reading this is, where a column carries two and the header cannot
+   say. */
+.pb .bar > b { flex:none; font-weight:600; font-size:.58rem; color:var(--muted);
+  text-transform:uppercase; letter-spacing:.02em; }
+/* Two readings in one column: smaller type and a thinner track, so the pair
+   costs about what a single one did. */
+.pb.dual .bar > .pct { font-size:.6rem; }
+.pb.dual .bar > .track { height:3px; }
+/* The whole vote in one bar: best, recommended, and the rest. Short enough
+   to sit under a pill, so it borrows the expanded row's .stack colours at a
+   row's height rather than a panel's. */
+.pollbar > .stack { flex:0 0 44px; height:4px; border-radius:2px; }
+.pollbar > .stack > i { font-size:0; line-height:0; }
+/* A column of bare percentages lines up on the % sign, like any other number:
+   the cell right-aligns itself in numbers mode, and the header follows. */
+:root.det-compact th.c-tmax, :root.det-compact th.c-w,
+:root.det-compact th.c-atn, :root.det-compact th.c-bestp,
+:root.det-compact th.c-apprp { text-align:right; }
+/* Win scores is a number cell — .num sets the type size every other figure
+   in the table uses — but it left-aligns, so it sits beside Win condition
+   instead of at the far edge of its own column with a lake between them.
+   Dropping .num to get that was the wrong way round: it also dropped the
+   type size, and "6000–12000" came out larger than the year next to it. */
+td.c-sc, th.c-sc { text-align:left; }
+/* A pill over a line of small type needs room to breathe; at the old padding
+   the weight pill sat hard against its neighbours. */
+td.c-w, td.c-tmax, td.c-ixk { padding-left:10px; padding-right:10px; }
+/* A band name is a label, not a verdict, and it is the longest text any pill
+   in the table carries — it does not need the full pill padding to read. */
+.c-w .tag, .c-tmax .tag { padding-left:7px; padding-right:7px; }
+/* The measurement under a pill stops at the width of the widest pill in its
+   own column, so the second line reads as belonging to the first rather than
+   running the whole width of the cell. Per column, because each has a
+   different longest band name. */
+/* Measured from the rendered pill rather than guessed: the longest are
+   "Medium light" at 94 and "Point salad" at 83. */
+
+/* Rows carrying a two-line cell need more air: every one of those cells is
+   twice the height of a plain one, and at the normal padding the table closes
+   up around them. Only while such a column is on screen — a view of
+   single-line pills keeps the tighter rows. */
+.stacked tbody td { padding-top:10px; padding-bottom:10px; }
+/* The kinds on their own: no pill, because there is no level beside them to
+   rank against. Up to three, stacked one per line with the type stepping
+   down so they still fit a row — the same treatment the win conditions and
+   the designers get. */
+.ixonly { display:flex; flex-direction:column; line-height:1.3;
+  font-size:.78rem; }
+.ixonly.n2 { font-size:.74rem; line-height:1.25; }
+.ixonly.n3 { font-size:.7rem; line-height:1.2; }
+.ixonly > span { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 /* Saladiness runs green to red: a sharp focus is light, a total salad is the
    heavy end, matching how weight is coloured. */
 .bar > .track > i.sl1 { background:var(--m4); }
@@ -581,32 +857,42 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
    columns still show but space is tight. Below 700px enough columns are hidden
    that the table fits outright — and without an overflow ancestor the sticky
    header keeps working there, which is the whole point of freezing it. */
-/* Sixteen columns fit the 1280px column exactly. Below that the window itself
-   is the constraint, and Best% is dropped first: the At N verdict already
-   encodes it, and Appr carries the number worth scanning. */
+/* The default columns fit the 1280px page exactly. Below that the window
+   itself is the constraint, so the padding tightens. Nothing is dropped here any
+   more: the player-count columns each carry their pill and their numbers
+   together, so there is no longer a spare percentage column to lose. */
 @media (max-width:1310px) {
-  .wide-only { display:none; }
   th, td { padding:8px 5px; }
   td.designer { max-width:104px; }
 }
 /* Fixed layout cannot shrink a column below its stated width: past the point
    where the widths stop fitting, the header labels overlap their neighbours
-   instead of the table getting narrower. So columns leave in order of what
-   can be spared — Win condition and Point salad first (they only show at "Any"
-   anyway), then Designer, the widest of what is left. */
-@media (max-width:1260px) {
-  .hide-lg { display:none; }
-}
-@media (max-width:1180px) {
-  .hide-md { display:none; }
-}
+   instead of the table getting narrower. So columns leave in a stated order,
+   least missed first, and each step is its own class rather than a guess at
+   which breakpoint a column belongs to:
+     1  Win condition, Win scores   — one line each in the expanded row
+     2  Designer                    — the widest thing left, and it rides in
+                                      the game cell anyway
+     3  Year                        — likewise
+     4  Point salad                 — derived, and in the expanded row
+     5  Interaction                 — the same
+   Then Plays, then Weight, then everything but the name on a phone. */
+/* Win condition is first to go, and choosing a player count is enough on its
+   own: the count's column is wider than Win condition and the two together do
+   not leave the game's name a readable width. */
+:root:not(.mode-any) .drop1 { display:none; }
+@media (max-width:1260px) { .drop1 { display:none; } }
+@media (max-width:1180px) { .drop2 { display:none; } }
+@media (max-width:1120px) { .drop3 { display:none; } }
+@media (max-width:1060px) { .drop4 { display:none; } }
+@media (max-width:1000px) { .drop5 { display:none; } }
 /* Below this the game's own name is what suffers, so Plays goes too — it is
    the column you consult, not the one you scan. */
-@media (max-width:1000px) {
+@media (max-width:940px) {
   .hide-s { display:none; }
 }
-/* Narrower still and the name column is down to a word or two, so Weight and
-   Interaction go: both are one glance in the expanded row. */
+/* Narrower still and the name column is down to a word or two, so Weight goes:
+   it is one glance in the expanded row. */
 @media (max-width:860px) {
   .hide-xs { display:none; }
 }
@@ -653,10 +939,18 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   // silently finds nothing, so saved columns only appear after the body's
   // script runs and the table visibly reflows — the very thing this block
   // exists to prevent.
-  var KEY = 'bgg-cols-v8';
-  var OFF_BY_DEFAULT = { y: 1, acq: 1, lp: 1, ed: 1, sc: 1, pp: 1 };
-  var ALL = ['th', 'rk', 'av', 'my', 'y', 'ds', 'pl', 'tmax', 'w', 'ix',
-             'acq', 'lp', 'ed', 'pp', 'win', 'sc', 'salad', 'verdict', 'rt'];
+  var KEY = 'bgg-cols-v13';
+  // MUST agree with OFF_BY_DEFAULT in report.py and COLUMNS[].off below.
+  var OFF_BY_DEFAULT = { acq: 1, lp: 1, ed: 1, sc: 1, pp: 1, ds: 1,
+                         bestp: 1, apprp: 1 };
+  var ALL = ['th', 'rk', 'av', 'my', 'y', 'ds', 'pl', 'ixk', 'gn',
+             'acq', 'lp', 'ed', 'pp', 'win', 'sc', 'rt',
+             'tmax', 'w', 'salad', 'atn', 'bestp', 'apprp'];
+  // Columns that draw a pill over a second line, and so need taller rows —
+  // but only while the cells are showing both halves. Mirrors STACKED_COLS in
+  // report.py and in the page script.
+  var STACKED = ['tmax', 'w', 'ixk', 'salad', 'atn', 'bestp', 'apprp'];
+  var POLL = { atn: 1, bestp: 1, apprp: 1 };
   try {
     var saved = JSON.parse(window.localStorage.getItem(KEY) || 'null');
     if (!saved) return;
@@ -666,20 +960,25 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     (root.className || '').split(/\s+/).forEach(function (c) {
       if (c === 'mode-any') keep.push(c);
     });
-    keep.push('gm-' + (saved.game || 'ds'));
-    if (saved.salad === 'pct') keep.push('sal-pct');
-    ALL.forEach(function (k) {
-      var on = saved.cols && typeof saved.cols[k] === 'boolean'
-        ? saved.cols[k] : !OFF_BY_DEFAULT[k];
-      if (!on) keep.push('off-' + k);
-    });
-    if (saved.cols && saved.cols.verdict === false) {
-      keep.push('off-bestPct');
-      keep.push('off-appr');
-    }
     var game = saved.game || 'ds';
+    var detail = saved.detail || 'detailed';
+    keep.push('gm-' + game);
+    keep.push('det-' + detail);
+    var isOn = function (k) {
+      return saved.cols && typeof saved.cols[k] === 'boolean'
+        ? saved.cols[k] : !OFF_BY_DEFAULT[k];
+    };
+    ALL.forEach(function (k) { if (!isOn(k)) keep.push('off-' + k); });
+    // Whatever the Game column carries loses its own column: a year in two
+    // places at once is a wasted column. Mirrors swallowedByGame() below.
     if (game === 'year' || game === 'yeards') keep.push('off-y');
     if (game === 'ds' || game === 'yeards') keep.push('off-ds');
+    var anyCount = keep.indexOf('mode-any') >= 0;
+    var stacked = detail === 'detailed' && STACKED.some(function (k) {
+      if (!isOn(k)) return false;
+      return !(POLL[k] && anyCount);
+    });
+    if (stacked) keep.push('stacked');
     root.className = keep.join(' ');
   } catch (e) { /* storage off: the server's defaults stand */ }
 })();
@@ -700,7 +999,12 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 <div class="wrap">
 <input type="checkbox" id="legendtoggle">
 <div class="titlebar">
-  <h1>__HEADLINE__</h1>
+  <!-- The title doubles as "home": everything the URL carries goes back to
+       its default. An href rather than a bare click handler so it reads as a
+       link, can be middle-clicked, and still works as a plain navigation if
+       the script has not started yet. -->
+  <h1><a id="home" href="#" title="Back to the whole collection — clears the
+    filters, the sort and any open game">__HEADLINE__</a></h1>
   <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"
      title="This report's source on GitHub" aria-label="Source on GitHub">
     <svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true"
@@ -733,14 +1037,18 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         BGG's other titles for the game, which are not shown. Every word has
         to land somewhere, but not together and not in order — “board dice”
         finds the Board&amp;Dice games. Accents are optional: “orleans” finds
-        Orléans. What matched is highlighted when you open the row.</dd>
+        Orléans. What matched is highlighted when you open the row.
+        <br>“id:1234” is a word too, and matches only the game with that BGG
+        id — which is what a “you might also like” pill types for you, so it
+        lands on one game rather than on everything that mentions its
+        name.</dd>
       <dt>Game</dt><dd>The columns button above the table, at the right,
         decides what rides along with the name: nothing, the year, the
         designer, or both. Whatever the name carries loses its own column.
         Designer also folds back under the name when the window is too narrow
         to hold its column.</dd>
       <dt>Last played</dt><dd>The most recent date in your BGG play log.</dd>
-      <dt>Winning score</dt><dd>The range a winning score typically falls in,
+      <dt>Win scores</dt><dd>The range a winning score typically falls in,
         blank where a score is not what decides the game. Off by default, and
         only filled in when the optional enrichment step has been run.</dd>
       <dt>Edited</dt><dd>When the collection entry itself last changed on
@@ -753,18 +1061,33 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         only while a report is being written, so these two columns exist only
         in reports you build yourself: nothing private reaches the saved data
         or a hosted copy.</dd>
-      <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale, shown as a bar:
-        green is light, red is heavy.</dd>
+      <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale: a bar from
+        green for light to red for heavy, and the band it falls in — Light,
+        Medium light, Medium, Heavy, Extreme — cut at the midpoints between
+        the points BGG's own Game Weight poll names, 1.5, 2.5, 3.5 and 4.5.
+        Whether you see the band above the number or the number alone is the
+        <b>Cells</b> setting in the columns menu — detailed or compact — and it
+        is the same for every column that has both to show.</dd>
+      <dt>Time</dt><dd>The box's own range, banded by its <em>upper</em>
+        bound — at a game night the question is how long this could run, not
+        how quickly it could be over. Very short tops out under half an hour,
+        Short by 45 min, Medium by 90, Long by two hours, Very long by three,
+        and Extreme is anything past that.</dd>
       <dt>Interaction</dt><dd>How much the players' games touch each other —
-        Low, Medium or High. Not a BGG statistic; see below.</dd>
+        Low, Medium or High — and under it, what kind: direct attacks, area
+        control, a shared market, blocking, an auction, and so on. Neither is
+        a BGG statistic; see below.</dd>
       <dt>At N</dt><dd>What the player-count poll says about the count you
         picked. <b>Best at N</b> = N drew more “Best” votes than any other
         count. <b>Good at N</b> = best, or ≥50% of voters at N called N the
-        best count.</dd>
-      <dt>Best · Appr</dt><dd>At the chosen count: the share of voters calling
-        it the best count, and approval = (Best + Recommended) ÷ all votes at
-        that count. Blank until you pick a count.</dd>
-      <dt>Ratings</dt><dd>How many people have rated the game on BGG — a rough
+        best count. Under the pill sits the whole vote in one bar, and the
+        figure beside it reads <b>best</b> — the share calling it the best
+        count — then <b>recommended</b>, the share that would still sit down
+        for it. The columns menu offers those two as columns of their own,
+        <b>Best at N</b> and <b>Appr at N</b>, where approval is (Best +
+        Recommended) ÷ all votes at that count. All three are hidden while the
+        count is “Any”, because there is nothing for them to read.</dd>
+      <dt>Votes</dt><dd>How many people have rated the game on BGG — a rough
         proxy for how well known it is.</dd>
     </dl>
     </section>
@@ -773,20 +1096,36 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <dl>
       <dt>Rule</dt><dd>How strict the player count is: plays at it, good at
         it, or best at it. N/A until a count is chosen.</dd>
+      <dt>Interaction, Point salad, Weight, Time</dt><dd>Each opens a
+        two-handled range over the underlying number — weight is 1–5, time is
+        minutes, point salad is its 0–100 score — with the bands marked along
+        it as dots and named beside them. So you can ask for “anything up to
+        90 minutes” or “3.4 and heavier”, not just whole bands. Interaction is
+        Low, Medium or High with nothing in between, so it snaps to those
+        three. A range covering everything is the filter having no
+        opinion. ticking Light and Heavy shows games that are
+        either, not games that are somehow both. Ticking nothing is the
+        filter having no opinion. The title at the top of the page clears
+        every filter, the sort and any open game at once, and leaves your
+        column choices alone.</dd>
       <dt>Expansions</dt><dd>Hidden by default but still counted: an
         expansion's own poll can be what makes the base game good at a
         count.</dd>
       <dt>Win condition</dt><dd>What actually decides the winner — most points,
         a race, elimination, and so on.</dd>
-      <dt>Point salad</dt><dd>Shown as four bands by default, or as the
-        underlying 0-100 score — the columns menu switches between them, and
-        the filter always uses the bands. How many different things earn you
-        points:
-        no — a sharp focus, just a touch, quite a lot, or a total point
-        salad.</dd>
+      <dt>Point salad</dt><dd>How many different things earn you points:
+        no — a sharp focus, just a touch, quite a lot, or a total point salad.
+        The band is cut from an underlying 0-100 score, and the columns menu
+        offers the band, the score, or one column carrying both. The filter
+        always uses the bands.</dd>
+      <dt>Approved at N</dt><dd>Whether half the voters at that count think
+        the game works there at all — a yes/no question, so the pill answers
+        yes or no rather than repeating the Best/Good/Plays verdict beside
+        it.</dd>
 
       <dt>Properties</dt><dd>One field over everything a game is tagged with —
-        BGG's categories, mechanics, families and designers, plus a few named
+        BGG's categories, mechanics, families and designers, how the game is
+        won and what kind of interaction it has, plus a few named
         groupings of mechanics — searchable by name or by description.
         “8 of 41” counts matches within the filters already applied. Match
         ticked properties by all, any, or none.</dd>
@@ -816,13 +1155,24 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     designer, mechanic or game — except games you do not own, which link out
     to BGG.</p>
     <p>The columns button at the right of the count line turns columns on and
-    off and says what the Game column carries; drag a column's header to move
+    off; drag a column's header to move
     it, and "Reset to default" puts everything back. Your choices are
     remembered in this browser.</p>
     </section>
     </div>
 
 <div class="panel">
+  <!-- One row: everything you narrow the table with, in the order you reach
+       for it — what you type, who is playing, then the four properties. It
+       was two rows for a while, because nine controls would not fit; what
+       made them fit is that a collapsed control says the answer rather than
+       explaining itself. "Hide, but count for base game" became "Hide, but
+       factor in", and the range filters say "1.5–2.5" where they used to say
+       "Medium light to Medium".
+
+       The range filters are hidden inputs holding "lo-hi" on the underlying
+       scale; vRange() builds the control over each and they are inert
+       without JavaScript, like every other filter here. -->
   <div class="row">
     <div class="f grow"><label for="q">Search</label>
       <span class="searchbox"><input id="q" type="search"
@@ -833,11 +1183,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <select id="players"><!--__OPTIONS__--></select></div>
     <div class="f"><label for="mode">Rule</label>
       <select id="mode"><!--__MODE_OPTIONS__--></select></div>
-    <div class="f"><label for="ix">Interaction</label>
-      <select id="ix">
-        <option value="">Any</option><option>High</option>
-        <option>Medium</option><option>Low</option>
-      </select></div>
     <div class="f"><label for="exp">Expansions</label>
       <select id="exp"><!--__EXP_OPTIONS__--></select></div>
     <div class="f"><label for="played">Played</label>
@@ -846,16 +1191,18 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         <option value="yes">Yes</option>
         <option value="no">No</option>
       </select></div>
-    <div class="f"><label for="win">Win condition</label>
-      <select id="win"><!--__WIN_OPTIONS__--></select></div>
-    <div class="f"><label for="salad">Point salad</label>
-      <select id="salad"><!--__SALAD_OPTIONS__--></select></div>
+    <div class="f"><label id="ix-label">Interaction</label>
+      <input type="hidden" id="ix" value=""></div>
+    <div class="f"><label id="salad-label">Point salad</label>
+      <input type="hidden" id="salad" value=""></div>
+    <div class="f"><label id="wband-label">Weight</label>
+      <input type="hidden" id="wband" value=""></div>
+    <div class="f"><label id="tband-label">Max time</label>
+      <input type="hidden" id="tband" value=""></div>
   </div>
   <div class="filterbar">
   <details id="more">
     <summary>More filters</summary>
-    <div class="row">
-    </div>
     <div class="row">
       <div class="f"><label>BGG rating</label>
         <div class="pair"><input id="smin" type="number" min="0" max="10" step="0.1"
@@ -865,14 +1212,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         <div class="pair"><input id="mymin" type="number" min="0" max="10" step="0.5"
           placeholder="0"><span>to</span><input id="mymax" type="number" min="0"
           max="10" step="0.5" placeholder="10"></div></div>
-      <div class="f"><label>Weight</label>
-        <div class="pair"><input id="wmin" type="number" min="0" max="5" step="0.1"
-          placeholder="0"><span>to</span><input id="wmax" type="number" min="0"
-          max="5" step="0.1" placeholder="5"></div></div>
-      <div class="f"><label>Time (min)</label>
-        <div class="pair"><input id="tmin" type="number" min="0" step="5"
-          placeholder="0"><span>to</span><input id="tmax" type="number" min="0"
-          step="5" placeholder="any"></div></div>
       <div class="f"><label>Plays</label>
         <div class="pair"><input id="plmin" type="number" min="0" step="1"
           placeholder="0"><span>to</span><input id="plmax" type="number" min="0"
@@ -911,7 +1250,19 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         /></svg></button>
     <div class="colmenu" hidden>
       <div class="colcol">
-        <p class="colhead">Game column</p>
+        <p class="colhead">Presets</p>
+        <div id="colpresets"></div>
+        <!-- One setting for every column that has a pill and a number to
+             show, rather than one column per combination in the list.
+             Detailed gives each of those cells two lines; compact gives it
+             one — the figure where there is one, the pill where the figure
+             would need a sentence to explain it. -->
+        <p class="colhead colhead2">Cells</p>
+        <label><input type="radio" name="detailmode" value="detailed" checked>
+          Detailed</label>
+        <label><input type="radio" name="detailmode" value="compact">
+          Compact</label>
+        <p class="colhead colhead2">Game column</p>
         <label><input type="radio" name="gamemode" value="name"> Game</label>
         <label><input type="radio" name="gamemode" value="year">
           Game, Year</label>
@@ -919,18 +1270,16 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
           Game, Designer</label>
         <label><input type="radio" name="gamemode" value="yeards">
           Game, Year, Designer</label>
-        <p class="colhead colhead2">Point salad</p>
-        <label><input type="radio" name="saladmode" value="band" checked>
-          Four bands</label>
-        <label><input type="radio" name="saladmode" value="pct">
-          Percentage</label>
         <p class="colfoot"><button type="button" class="link" id="colsreset"
           >Reset to default</button></p>
       </div>
       <div class="colcol">
         <p class="colhead">Columns <span class="colhint">drag a header to
           reorder</span></p>
+        <input id="colfilter" type="search" autocomplete="off"
+          placeholder="Filter columns…" aria-label="Filter the column list">
         <div id="collist"></div>
+        <p class="colnone" id="colnone" hidden>No column matches that.</p>
       </div>
     </div>
   </span></div>
@@ -941,28 +1290,35 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="thumb c-th w-thumb" data-col="th">Cover</th>
     <th class="num hide-sm c-rk w-rank" data-k="rk" data-col="rk">Rank</th>
     <th class="num hide-sm c-rt w-ratings" data-k="rt" data-col="rt"
-      title="How many people have rated the game on BGG">Ratings</th>
+      title="How many people have rated the game on BGG">Votes</th>
     <th class="num c-av w-hex" data-k="av" data-col="av">BGG</th>
     <th class="num c-my w-hex" data-k="my" data-col="my">Mine</th>
-    <th class="c-n" data-k="n" data-col="n">Game</th>
-    <th class="num c-y w-year" data-k="y" data-col="y">Year</th>
-    <th class="hide-md c-ds w-designer" data-k="ds" data-col="ds">Designer</th>
+    <!-- One name column. What it carries under the name — the year, the
+         designer, both or neither — is the picker's "Game column" choice,
+         and whichever field it carries retires that field's own column. -->
+    <th class="c-gn w-game" data-k="n" data-col="gn">Game</th>
+    <th class="num c-y w-year drop3" data-k="y" data-col="y">Year</th>
+    <th class="drop2 c-ds w-designer" data-k="ds" data-col="ds">Designer</th>
     <th class="num hide-sm hide-s c-pl w-plays" data-k="pl" data-col="pl">Plays</th>
-    <th class="num c-tmax w-time" data-k="tmax" data-col="tmax">Time</th>
-    <th class="num hide-sm hide-xs c-w w-weight" data-k="w" data-col="w">Weight</th>
-    <th class="hide-sm hide-xs c-ix w-ix" data-k="ix" data-col="ix">Interaction</th>
+    <th class="c-tmax w-time" data-k="tmax" data-col="tmax">Time</th>
+    <th class="hide-sm hide-xs c-w w-weight" data-k="w" data-col="w">Weight</th>
+    <th class="hide-sm c-ixk w-ixk drop5" data-k="ix" data-col="ixk">Interaction</th>
     <th class="num hide-sm c-acq w-date" data-k="acq" data-col="acq">Acquired</th>
     <th class="num hide-sm c-lp w-date" data-k="lp" data-col="lp">Last played</th>
     <th class="num hide-sm c-ed w-date" data-k="ed" data-col="ed"
       title="When the collection entry itself last changed">Edited</th>
     <th class="num hide-sm c-pp w-price" data-k="pp" data-col="pp">Price paid</th>
-    <th class="hide-sm hide-lg c-win w-win" data-k="win" data-col="win">Win condition</th>
-    <th class="num hide-sm c-sc w-score" data-k="sc" data-col="sc"
-      title="What a winning score typically looks like">Winning score</th>
-    <th class="hide-sm hide-lg c-salad w-br" data-k="salad" data-col="salad">Point salad</th>
-    <th class="num hide-sm c-verdict w-atn" data-k="verdict" data-col="verdict">__ATN__</th>
-    <th class="num hide-sm wide-only c-bestPct w-pct" data-k="bestPct" data-col="bestPct">Best</th>
-    <th class="num hide-sm c-appr w-pct" data-k="appr" data-col="appr">Appr</th>
+    <th class="hide-sm c-win w-win drop1" data-k="win" data-col="win">Win condition</th>
+    <th class="num hide-sm c-sc w-score drop1" data-k="sc" data-col="sc"
+      title="What a winning score typically looks like">Win scores</th>
+    <!-- Point salad and the three player-count columns, named for what they
+         measure rather than for how much of it they show: how much is the
+         picker's pills/numbers setting, and it is the same for all of
+         them. -->
+    <th class="hide-sm c-salad w-br drop4" data-k="salad" data-col="salad">Point salad</th>
+    <th class="hide-sm c-atn w-atn" data-k="verdict" data-col="atn">__ATN__</th>
+    <th class="hide-sm c-bestp w-pct" data-k="bestPct" data-col="bestp">__BESTATN__</th>
+    <th class="hide-sm c-apprp w-pct" data-k="appr" data-col="apprp">__APPRATN__</th>
   </tr></thead>
   <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="17"
     id="septext"></td></tr><!--__ROWS__--></tbody>
@@ -981,6 +1337,10 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
 const DATA = /*__DATA__*/;
 const OPTS = /*__OPTS__*/;
 const TAGS = /*__TAGS__*/;
+/* The weight and time band tables, straight from report.py — the same rows
+   the server used to draw the pills. Defining them once and shipping them is
+   what keeps the filter, the pill and the column from disagreeing. */
+const BANDS = /*__BANDS__*/;
 
 // Every row already exists in the markup, rendered server-side; DATA[i] pairs
 // with the row carrying data-i="i". This script only filters, reorders, and
@@ -1112,30 +1472,29 @@ function refreshTagList() {
 
 var F = {
   q: el('q'), players: el('players'), mode: el('mode'),
-  ix: el('ix'), win: el('win'), salad: el('salad'), tagmode: el('tagmode'),
+  ix: el('ix'), salad: el('salad'), tagmode: el('tagmode'),
   smin: el('smin'), smax: el('smax'),
   mymin: el('mymin'), mymax: el('mymax'),
-  wmin: el('wmin'), wmax: el('wmax'), tmin: el('tmin'),
-  tmax: el('tmax'), plmin: el('plmin'), plmax: el('plmax'),
+  plmin: el('plmin'), plmax: el('plmax'),
   ymin: el('ymin'), ymax: el('ymax'), played: el('played'),
-  exp: el('exp')
+  exp: el('exp'), wband: el('wband'), tband: el('tband')
 };
 
 function applyDefaults() {
   F.q.value = '';
   F.players.value = OPTS.players;
   F.mode.value = OPTS.mode;
-  F.win.value = OPTS.win;
   F.salad.value = OPTS.salad;
   F.exp.value = OPTS.expansions;
-  F.ix.value = '';
+  F.ix.value = OPTS.ix;
+  F.wband.value = OPTS.wband;
+  F.tband.value = OPTS.tband;
   F.tagmode.value = 'all';
   F.played.value = 'any';
   document.getElementById('tagsearch').value = '';
   tagRows.forEach(function (r) { r.firstChild.checked = false; });
   refreshTagList();
-  ['smin', 'smax', 'mymin', 'mymax', 'wmin', 'wmax', 'tmin', 'tmax',
-   'plmin', 'plmax', 'ymin', 'ymax']
+  ['smin', 'smax', 'mymin', 'mymax', 'plmin', 'plmax', 'ymin', 'ymax']
     .forEach(function (k) { F[k].value = ''; });
 }
 
@@ -1159,6 +1518,23 @@ function statsAt(g, n) {
            appr: 100 * (b + r) / total, isBest: b === g.top && b > 0 };
 }
 
+/** Whether the box says this game takes n players at all.
+ *
+ *  BGG polls *every* count from one upwards, so a poll entry at n is no
+ *  evidence a game plays there: Catan's 1-player row carries 1,565 votes, of
+ *  which 1,560 say "not recommended". Asking only whether votes exist made
+ *  "Plays at 1p" true for essentially the whole collection. The player range
+ *  is a fact BGG publishes; the poll is what people think of it.
+ *
+ *  A missing range passes rather than hides the game — absent data is not
+ *  evidence against it. */
+function inRangeAt(g, n) {
+  if (!n) return true;
+  var lo = g.mn || 0, hi = g.mx || 0;
+  if (!lo && !hi) return true;
+  return (!lo || n >= lo) && (!hi || n <= hi);
+}
+
 function qualifies(s, mode) {
   if (!s) return false;
   if (mode === 'best') return s.isBest;
@@ -1174,14 +1550,21 @@ function qualifies(s, mode) {
  *  only gets to speak if the base game does NOT already qualify — an expansion
  *  is there to open up a count the base game can't do well, not to restate one
  *  it already does. */
+/** Whether a game answers for itself at n: in range, and passing the rule. */
+function standsAt(g, s, n, mode) {
+  return inRangeAt(g, n) && qualifies(s, mode);
+}
+
 function reading(g, n, fold, mode) {
   var base = statsAt(g, n);
-  if (!fold || g.exp || qualifies(base, mode)) return base;
+  if (!fold || g.exp || standsAt(g, base, n, mode)) return base;
   var list = EXP_OF[g.id] || [];
   for (var i = 0; i < list.length; i++) {
     var s = statsAt(list[i], n);
     if (!s) continue;
-    if (qualifies(s, mode)) { s.via = list[i].n; return s; }
+    // The expansion has to reach the count itself, not merely have been
+    // polled at it.
+    if (standsAt(list[i], s, n, mode)) { s.via = list[i].n; return s; }
   }
   return base;
 }
@@ -1215,17 +1598,122 @@ function deaccent(s) {
   return s.normalize ? s.normalize('NFD').replace(/[\u0300-\u036f]/g, '') : s;
 }
 
-/** The search box as a list of words, accent-folded and lowercased.
+/** The search box, accent-folded and lowercased, split into free-text words
+ *  and explicit "id:NNN" terms.
  *
  *  Every word has to land somewhere in the row's metadata, but they need not
  *  land together or in order: "board dice" finds the Board&Dice games, whose
  *  publisher is one unspaced token, and "knizia 2014" finds what he published
  *  that year. Matching the whole box as one string only ever found text that
  *  appeared verbatim, which is not how anyone types a search.
+ *
+ *  A name, though, is not an identity. Filtering to "Trickerion" by typing it
+ *  matches every row whose metadata contains that text — the base game, its
+ *  expansions, anything whose designer or family mentions it — so a gesture
+ *  that means *this one game* has to say which one. "id:421" matches the one
+ *  row whose BGG id is 421, exactly, and nothing else. It is a real search
+ *  term rather than a hidden mode, so it can be typed, shared in a URL and
+ *  combined with words like any other part of the query.
  */
-function searchWords() {
+function parseQuery() {
   var raw = deaccent(F.q.value.trim().toLowerCase());
-  return raw ? raw.split(/\s+/) : [];
+  var words = [], ids = [];
+  if (raw) {
+    raw.split(/\s+/).forEach(function (t) {
+      var m = /^id:(\d+)$/.exec(t);
+      if (m) ids.push(m[1]); else words.push(t);
+    });
+  }
+  return { words: words, ids: ids };
+}
+
+function searchWords() { return parseQuery().words; }
+
+/** A multi-valued filter's comma-separated value, as something to test
+ *  against. Null when nothing is picked, which is the filter having no
+ *  opinion rather than excluding everything — the reading the old "Any"
+ *  option used to carry. */
+function picks(value) {
+  var list = String(value || '').split(',').filter(Boolean);
+  if (!list.length) return null;
+  var has = {};
+  list.forEach(function (v) { has[v] = 1; });
+  return { list: list, has: has };
+}
+
+function inPicks(p, v) { return !p || !!p.has[v]; }
+
+/** A range filter's "lo-hi" as numbers, or null when it spans everything. */
+function numRange(value, scale) {
+  var m = /^(-?[\d.]+)-(-?[\d.]+)$/.exec(String(value || ''));
+  if (!m) return null;
+  var lo = +m[1], hi = +m[2];
+  if (!(lo <= hi)) return null;
+  // A scale that stops short of the real range means "and over" at the top
+  // and "and under" at the bottom, or a wide-open slider would drop the
+  // 480-minute games off the end of a 240-minute axis.
+  return { lo: lo <= scale.min && scale.openBottom ? -Infinity : lo,
+           hi: hi >= scale.max && scale.openTop ? Infinity : hi,
+           // The top of a band belongs to the next band up, on a scale whose
+           // bands meet at the edge. The last band keeps its own ceiling.
+           hiExcl: !!scale.hiExclusive && hi < scale.max };
+}
+
+/** Whether a game's number falls in the range. A game with no number on that
+ *  axis is not evidence against itself: it passes unless the filter is set. */
+function inRange(r, v) {
+  if (!r) return true;
+  if (v === null || v === undefined || v === '') return false;
+  return v >= r.lo && (r.hiExcl ? v < r.hi : v <= r.hi);
+}
+
+/** For an axis where a game has a range of its own rather than a point: the
+ *  low handle asks that the game's shortest length is at least that, the high
+ *  handle that its longest is at most that. Asking for 60–120 means a game
+ *  that can be played inside that window, not one that merely overlaps it. */
+function inSpan(r, lo, hi) {
+  if (!r) return true;
+  if (lo === null || lo === undefined) return false;
+  return or0(lo) >= r.lo && or0(hi) <= r.hi;
+}
+
+/** Like inPicks, for a game that carries several values on the axis: a game
+ *  won three ways matches a filter asking for any one of them. */
+function anyPick(p, values) {
+  if (!p) return true;
+  var vs = values || [];
+  for (var i = 0; i < vs.length; i++) if (p.has[vs[i]]) return true;
+  return false;
+}
+
+/** The band a value falls in. Mirrors band_of() in report.py and reads the
+ *  very same table, shipped into the page as BANDS. */
+function bandOf(bands, v) {
+  if (!v) return null;
+  for (var i = 0; i < bands.length; i++) {
+    if (bands[i].lt === null || v < bands[i].lt) return bands[i];
+  }
+  return bands[bands.length - 1];
+}
+
+function bandKey(bands, v) {
+  var b = bandOf(bands, v);
+  return b ? b.k : null;
+}
+
+/** The names of what a multi-valued filter has picked, for the sentence under
+ *  the count. */
+function pickNames(p, naming) {
+  return p ? p.list.map(naming) : [];
+}
+
+/** "id:421" is exact but says nothing to a reader; name the game instead.
+ *  Only for display — the box and the URL keep the id. */
+function queryLabel(term) {
+  return String(term).replace(/(^|\s)id:(\d+)(?=\s|$)/g, function (all, sp, id) {
+    var i = OWNED.byId[id];
+    return i === undefined ? all : sp + DATA[i].n;
+  });
 }
 
 function hay(i, g) {
@@ -1247,15 +1735,19 @@ function hay(i, g) {
  *  only the search term matched. The second bucket is what lets a search find
  *  a game the current filters would otherwise hide. */
 function partition() {
-  var words = searchWords();
+  var query = parseQuery(), words = query.words, ids = query.ids;
+  // An id term is a search like any other, so it too can pull a game out from
+  // under the current filters and show it below the divider.
+  var searching = words.length > 0 || ids.length > 0;
   var n = +F.players.value, mode = F.mode.value, expMode = F.exp.value;
   var smin = num(F.smin.value), smax = num(F.smax.value);
   var mymin = num(F.mymin.value), mymax = num(F.mymax.value);
-  var wmin = num(F.wmin.value), wmax = num(F.wmax.value);
-  var tmin = num(F.tmin.value), tmax = num(F.tmax.value);
   var plmin = num(F.plmin.value), plmax = num(F.plmax.value);
   var ymin = num(F.ymin.value), ymax = num(F.ymax.value);
-  var ix = F.ix.value, win = F.win.value, salad = F.salad.value;
+  var ixR = numRange(F.ix.value, BANDS.scales.ix);
+  var saladR = numRange(F.salad.value, BANDS.scales.salad);
+  var wR = numRange(F.wband.value, BANDS.scales.wband);
+  var tR = numRange(F.tband.value, BANDS.scales.tband);
   var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
 
@@ -1263,7 +1755,8 @@ function partition() {
   for (var i = 0; i < DATA.length; i++) {
     var g = DATA[i];
     var hit = true;
-    if (words.length) {
+    if (ids.length && ids.indexOf(String(g.id)) === -1) hit = false;
+    if (hit && words.length) {
       var h = hay(i, g);
       for (var w = 0; w < words.length; w++) {
         if (h.indexOf(words[w]) === -1) { hit = false; break; }
@@ -1278,20 +1771,22 @@ function partition() {
     var s = n ? reading(g, n, fold, mode) : null;
     var ai = g.ai || {};
     var pass = structural && tagsOk(g, picked, tmode) &&
-      !(ix && (ai.ixl || g.ix) !== ix) &&
-      !(win !== 'any' && (ai.wcs || []).indexOf(win) === -1) &&
-      !(salad !== 'any' && ai.br !== salad) &&
+      inRange(ixR, IX_LEVELS.indexOf(ai.ixl || g.ix)) &&
+      inRange(saladR, ai.brn) &&
+      inRange(wR, g.w) &&
+      // The same field the pill reads, so a game wearing "4 hours+" is
+      // always in the "4 hours or more" range. Testing the whole span
+      // instead was defensible on its own but made the two disagree: 1830
+      // (180-360) wore the top pill and fell out of the top range.
+      inRange(tR, g.tmax) &&
       !(smin !== null && !(g.av >= smin)) && !(smax !== null && !(g.av <= smax)) &&
       !(mymin !== null && !(g.my >= mymin)) && !(mymax !== null && !(g.my <= mymax)) &&
-      !(wmin !== null && !(g.w >= wmin)) && !(wmax !== null && !(g.w <= wmax)) &&
-      !(tmin !== null && !(or0(g.tmin) >= tmin)) &&
-      !(tmax !== null && !(or0(g.tmax) <= tmax)) &&
       !(plmin !== null && g.pl < plmin) && !(plmax !== null && g.pl > plmax) &&
       !(ymin !== null && !(g.y >= ymin)) && !(ymax !== null && !(g.y <= ymax)) &&
-      (!n || qualifies(s, mode));
+      (!n || (s && s.via ? qualifies(s, mode) : standsAt(g, s, n, mode)));
 
     if (pass) inside.push([i, s]);
-    else if (words.length && structural) outside.push([i, s]);
+    else if (searching && structural) outside.push([i, s]);
   }
   return { inside: inside, outside: outside };
 }
@@ -1309,15 +1804,41 @@ function describe() {
 
   var extra = [];
   var term = F.q.value.trim();
-  if (term) extra.push('matching “' + term + '”');
-  if (F.ix.value) extra.push(F.ix.value.toLowerCase() + ' interaction');
-  if (F.win.value !== 'any') {
-    extra.push((WIN_LABEL[F.win.value] || F.win.value).toLowerCase());
+  if (term) extra.push('matching “' + queryLabel(term) + '”');
+  // Several picks on one axis read as alternatives, because that is what they
+  // are: "low or high interaction", not two separate conditions.
+  function orList(names) { return names.join(' or '); }
+  /** A range, said in words: the bands it covers where it lines up with
+   *  them, the numbers where it does not. */
+  function rangeText(value, key, suffix) {
+    var scale = BANDS.scales[key];
+    var r = numRange(value, scale);
+    if (!r) return null;
+    function band(v) {
+      for (var i = 0; i < scale.stops.length; i++) {
+        if (v <= scale.stops[i].hi) return scale.stops[i];
+      }
+      return scale.stops[scale.stops.length - 1];
+    }
+    var openLo = r.lo === -Infinity, openHi = r.hi === Infinity;
+    var a = band(openLo ? scale.min : r.lo);
+    var b = band(openHi ? scale.max : r.hi);
+    var words;
+    if (openLo && openHi) return null;            // spans everything
+    else if (openLo) words = 'up to ' + b.n.toLowerCase();
+    else if (openHi) words = a.n.toLowerCase() + ' and up';
+    else words = a.n === b.n ? a.n.toLowerCase()
+                             : a.n.toLowerCase() + ' to ' + b.n.toLowerCase();
+    return words + (suffix || '');
   }
-  if (F.salad.value !== 'any') {
-    extra.push('point salad: ' +
-      (SALAD_LABEL[F.salad.value] || F.salad.value).toLowerCase());
-  }
+  var ixSpan = rangeText(F.ix.value, 'ix', ' interaction');
+  if (ixSpan) extra.push(ixSpan);
+  var saladSpan = rangeText(F.salad.value, 'salad', '');
+  if (saladSpan) extra.push('point salad: ' + saladSpan);
+  var wSpan = rangeText(F.wband.value, 'wband', ' weight');
+  if (wSpan) extra.push(wSpan);
+  var tSpan = rangeText(F.tband.value, 'tband', '');
+  if (tSpan) extra.push(tSpan);
   var picked = pickedTags();
   if (picked.length) {
     var joiner = { all: ' + ', any: ' or ', none: ' or ' };
@@ -1334,8 +1855,6 @@ function describe() {
   };
   pair('smin', 'smax', 'BGG');
   pair('mymin', 'mymax', 'my rating');
-  pair('wmin', 'wmax', 'weight');
-  pair('tmin', 'tmax', 'time', ' min');
   pair('plmin', 'plmax', 'plays');
   pair('ymin', 'ymax', 'year');
   if (expMode === 'drop') extra.push('expansions ignored');
@@ -1354,14 +1873,39 @@ var sortKey = 'rk', sortDesc = false;
  *  nobody wants the least-rated game or the shortest play first. */
 var SORT_DESC_FIRST = {
   rt: true, av: true, my: true, pl: true, tmax: true, w: true, ix: true,
-  sc: true, pp: true, acq: true, lp: true, ed: true, bestPct: true, appr: true
+  sc: true, pp: true, acq: true, lp: true, ed: true, bestPct: true,
+  appr: true, verdict: true
 };
 
 function sortRows(rows) {
   function get(row) {
     var g = DATA[row[0]], s = row[1];
     switch (sortKey) {
-      case 'verdict': return s ? (s.isBest ? 0 : 1) : 2;
+      case 'verdict': {
+        // The combined column shows a pill over two percentages, so it sorts
+        // the way it reads: the pill first, then Best %, then Approved %.
+        // One composite number rather than a comparator chain, because the
+        // sort below reverses a single value — so descending stays a true
+        // mirror instead of only flipping the first key.
+        if (!s) return null;
+        var rank = s.isBest ? 0 : (s.bestPct === null ? !!s.good
+                                                      : s.bestPct >= 50) ? 1 : 2;
+        // Higher is better, so *descending* reads Best, then Good, then
+        // Plays — which is the order anyone clicking this column wants
+        // first, and why 'verdict' is in SORT_DESC_FIRST. Ascending is the
+        // exact reverse of it.
+        //
+        // Rounded, because the column shows whole percentages: sorting on
+        // the hidden decimals puts rows that both read "79%" in an order the
+        // reader cannot account for. Rounding also makes the weighting
+        // strictly lexicographic — a Best step is worth 1,000,000 and a
+        // Best-percent step 1,000, while the Approved term can never exceed
+        // 100 — where scaling the raw values let a 50-point Approved gap
+        // cancel a 1-point Best gap, and 3%/22% sorted ahead of 2%/72%.
+        return (2 - rank) * 1000000 +
+               Math.round(or0(s.bestPct)) * 1000 +
+               Math.round(or0(s.appr));
+      }
       case 'bestPct': return s ? s.bestPct : null;
       case 'appr': return s ? s.appr : null;
       case 'rt': return g.rt;
@@ -1413,6 +1957,12 @@ function esc(t) {
 }
 
 var SALAD_ORDER = ['no', 'touch', 'lot', 'total'];
+/* The tick labels under the salad slider; SALAD_LABEL is a sentence. */
+var SALAD_SHORT = { no: 'No', touch: 'A touch', lot: 'Quite a lot',
+  total: 'Point salad' };
+/* The ordered scales the four sliders run over. Declared here rather than
+   where the controls are built, because partition() reads them too. */
+var IX_LEVELS = ['Low', 'Medium', 'High'];
 var WIN_ORDER = ['race', 'points', 'objectives', 'money', 'lowest', 'majority',
   'sudden', 'coop', 'elimination', 'other'];
 var SALAD_LABEL = { no: 'No, sharp focus', touch: 'Just a touch',
@@ -1427,11 +1977,85 @@ function meterClass(p) {
   return p >= 85 ? 'm4' : p >= 70 ? 'm3' : p >= 50 ? 'm2' : 'm1';
 }
 
-function bar(p) {
-  if (p === null || p === undefined) return '<span class="dot">&mdash;</span>';
-  return '<span class="pct">' + p.toFixed(0) + '%</span>' +
-         '<span class="track"><i class="' + meterClass(p) + '" style="width:' +
-         Math.min(p, 100).toFixed(0) + '%"></i></span>';
+/** One percentage with its bar underneath. Mirrors meter() in report.py —
+ *  the server draws these once and this redraws them when the player count
+ *  changes, so the two have to emit the same markup. */
+function meterHtml(p, cls, label) {
+  if (p === null || p === undefined) {
+    return '<span class="bar"><span class="pct">&mdash;</span></span>';
+  }
+  return '<span class="bar">' + (label ? '<b>' + esc(label) + '</b>' : '') +
+    '<span class="track"><i class="' + (cls || meterClass(p)) + '" style="width:' +
+    Math.min(p, 100).toFixed(0) + '%"></i></span>' +
+    '<span class="pct">' + p.toFixed(0) + '%</span></span>';
+}
+
+/** A verdict pill, a figure and the bar behind both. Mirrors pill_bar() in
+ *  report.py; see there for why every such column is one shape, and what the
+ *  `sw` class and the `top` figure are for. */
+function pillBar(pill, meters, dual, title, top) {
+  if (!pill && (!meters || !meters.length) &&
+      (top === null || top === undefined)) {
+    return '<span class="dot">&mdash;</span>';
+  }
+  return '<span class="pb sw' + (dual ? ' dual' : '') + '"' +
+    (title ? ' title="' + esc(title) + '"' : '') + '>' + (pill || '') +
+    (top === null || top === undefined
+      ? '' : '<span class="pbtop">' + esc(top) + '</span>') +
+    (meters && meters.length
+      ? '<span class="pbars">' + meters.join('') + '</span>' : '') +
+    '</span>';
+}
+
+/** The figures the poll columns print on their own line. Mirror pct_text()
+ *  and poll_figure() in report.py. */
+function pctText(p) {
+  return (p === null || p === undefined) ? '—' : Math.round(p) + '%';
+}
+
+function pollFigure(s) {
+  if (s.bestPct === null) return '—';
+  return Math.round(s.bestPct) + ' / ' +
+    Math.round(Math.max(s.appr - s.bestPct, 0)) + '%';
+}
+
+/** What the whole vote says, for a hover. Mirrors poll_title() in report.py. */
+function pollTitle(s, n) {
+  if (!s || s.bestPct === null) return 'At ' + n + 'p';
+  return 'At ' + n + 'p: ' + Math.round(s.bestPct) + '% call it best, ' +
+    Math.round(Math.max(s.appr - s.bestPct, 0)) + '% recommended, ' +
+    Math.round(100 - s.appr) + '% not — ' + s.total + ' votes';
+}
+
+/** One bar carrying the whole vote — best, then recommended, then the rest —
+ *  the way the expanded row draws it. Mirrors poll_stack() in report.py. */
+function pollStack(s) {
+  if (s.bestPct === null) {
+    return '<span class="bar"><span class="pct">&mdash;</span></span>';
+  }
+  var rec = Math.max(s.appr - s.bestPct, 0);
+  function seg(pct, cls) {
+    return pct >= 0.5
+      ? '<i class="' + cls + '" style="width:' + pct.toFixed(1) + '%"></i>' : '';
+  }
+  return '<span class="bar pollbar"><span class="stack">' +
+    seg(s.bestPct, 'b') + seg(rec, 'r') + seg(100 - s.appr, 'n') +
+    '</span><span class="pct">' + Math.round(s.bestPct) +
+    '&nbsp;/&nbsp;' + Math.round(rec) + '%</span></span>';
+}
+
+/** Approved at this count, or not. Mirrors approved_html() in report.py:
+ *  a column headed "Approved at 4p" asks a yes/no question, so the pill
+ *  answers that one rather than repeating the Best/Good/Plays verdict. */
+var APPROVED_MIN = 50;
+function approvedHtml(s) {
+  if (s.appr === null || s.appr === undefined) {
+    return s.good ? '<span class="tag p3">Yes</span>'
+                  : '<span class="tag p1">No</span>';
+  }
+  var yes = s.appr >= APPROVED_MIN;
+  return '<span class="tag ' + (yes ? 'p3' : 'pw') + '">' +
+    (yes ? 'Yes' : 'No') + '</span>';
 }
 
 function verdictHtml(s, n) {
@@ -1439,38 +2063,49 @@ function verdictHtml(s, n) {
   if (s.isBest) return '<span class="tag p3">Best</span>';
   var good = s.bestPct === null ? !!s.good : s.bestPct >= 50;
   if (good) return '<span class="tag p2">Good</span>';
-  return '<span class="tag p1">plays</span>';
+  return '<span class="tag p1">Plays</span>';
 }
 
 /** Repaint only the cells that depend on the selected player count. */
 function paint(tr, g, s, n) {
   var dash = '<span class="dot">&mdash;</span>';
   var v = verdictHtml(s, n);
-  tr.querySelector('.j-verdict').innerHTML = v;
-  tr.querySelector('.j-best').innerHTML = s ? bar(s.bestPct) : dash;
-  tr.querySelector('.j-appr').innerHTML = s ? bar(s.appr) : dash;
+  // Mirrors poll_cells() in report.py: the same verdict pill in all three,
+  // because the pill is the answer and the percentage is the evidence.
+  var tip = pollTitle(s, n);
+  tr.querySelector('.j-atn').innerHTML = (n && s)
+    ? pillBar(v, [pollStack(s)], false, tip, pollFigure(s)) : dash;
+  tr.querySelector('.j-bestp').innerHTML = (n && s)
+    ? pillBar(v, [meterHtml(s.bestPct)], false, 'Best at ' + n + 'p',
+              pctText(s.bestPct)) : dash;
+  tr.querySelector('.j-apprp').innerHTML = (n && s)
+    ? pillBar(approvedHtml(s), [meterHtml(s.appr)], false,
+              'Approved at ' + n + 'p', pctText(s.appr)) : dash;
 
-  var inline = tr.querySelector('.vinline');
-  if (inline) inline.innerHTML = n ? v : '';
+  [].forEach.call(tr.querySelectorAll('.vinline'), function (el) {
+    el.innerHTML = n ? v : '';
+  });
 
   // The +EXP badge marks a row qualified by an expansion rather than the base.
   // Found by class, never by child index: this used to be tr.children[3] and
   // silently became the wrong cell the moment a column was inserted before it,
   // throwing out of render() entirely.
-  var name = tr.querySelector('.gamecell');
-  var badge = name.querySelector('.tag.exp[data-via]');
-  if (s && s.via) {
-    if (!badge) {
-      badge = document.createElement('span');
-      badge.className = 'tag exp';
-      badge.setAttribute('data-via', '1');
-      badge.innerHTML = '+EXP';
-      name.insertBefore(badge, inline || null);
-    }
-    badge.title = s.via;
-  } else if (badge) {
-    badge.parentNode.removeChild(badge);
-  }
+  // The +EXP badge is server-rendered for every base game with owned
+  // expansions and stays put; only what it says changes. When an expansion is
+  // what makes the game qualify at this count, that is the more useful fact,
+  // so the title says it and the pill is marked.
+  // Every game-column variant carries its own copy of the badge; only one is
+  // ever on screen, but the hidden ones must not go stale.
+  [].forEach.call(tr.querySelectorAll('.gamecell .tag.exp[data-exp]'),
+    function (badge) {
+      if (s && s.via) {
+        badge.title = 'Qualifies at ' + n + 'p thanks to ' + s.via;
+        badge.classList.add('via');
+      } else {
+        badge.title = 'You own: ' + badge.getAttribute('data-exp');
+        badge.classList.remove('via');
+      }
+    });
 }
 
 function render() {
@@ -1498,7 +2133,7 @@ function render() {
 
   if (outside.length) {
     document.getElementById('septext').innerHTML =
-      'Also matching <b>' + esc(F.q.value.trim()) + '</b>, but outside the ' +
+      'Also matching <b>' + esc(queryLabel(F.q.value.trim())) + '</b>, but outside the ' +
       'current filters — ' + outside.length +
       (outside.length === 1 ? ' game' : ' games');
     sep.hidden = false;
@@ -1533,10 +2168,43 @@ function render() {
     : exps ? plural(games, 'game') + ' and ' + plural(exps, 'expansion')
            : plural(games, 'game');
   el('desc').textContent = describe();
-  // Name the poll column after the count it is reading: "At 4p".
-  var atn = document.querySelector('th[data-k="verdict"]');
-  if (atn) atn.textContent = n ? 'At ' + n + 'p' : 'At N';
+  // Name each poll column after the count it is reading: "At 4p".
+  var count = n ? n + 'p' : 'N';
+  // And the rule with it: "Good at 4p" says what "Good at that count" made
+  // you work out. The option text is the only place the count appears once
+  // the control is collapsed.
+  [].forEach.call(F.mode.options, function (o) {
+    var verb = { any: 'Plays', good: 'Good', best: 'Best' }[o.value];
+    if (verb) o.text = verb + ' at ' + count;
+  });
+  var heads = { atn: 'Good at ' + count, bestp: 'Best at ' + count,
+                apprp: 'Appr at ' + count };
+  Object.keys(heads).forEach(function (k) {
+    var th = document.querySelector('th[data-col="' + k + '"]');
+    if (th) th.textContent = heads[k];
+  });
   paintTableClass();
+  // After the option texts change, or the Rule control keeps the caption it
+  // had before the count moved.
+  syncSelects();
+  /* The Rule labels are rewritten with the player count on every render, so
+   sizing them from whatever they happen to say makes the control breathe as
+   the count changes — and Players, sitting right before it, looks like the
+   one that moved. Size it once for the widest label it can ever carry. */
+(function () {
+  var wrap = F.mode.parentNode;
+  if (!wrap || !wrap._widest) return;
+  var longest = 'N';
+  [].forEach.call(F.players.options, function (o) {
+    if (o.value !== '0' && o.value.length > longest.length) longest = o.value;
+  });
+  wrap._widest = function () {
+    return ['Plays', 'Good', 'Best'].map(function (v) {
+      return v + ' at ' + longest + 'p';
+    }).concat(['N/A']);
+  };
+})();
+sizeControls();
   markFilters();
   recountTags(inside.map(function (r) { return r[0]; }));
 
@@ -1714,7 +2382,9 @@ function buildDetail(g) {
   var rows = [
     ['Players', players],
     ['Play time', esc(g.t) + ' min'],
-    ['Weight', g.w ? g.w.toFixed(2) + ' / 5' : '—'],
+    ['Weight', g.w ? g.w.toFixed(2) + ' / 5' +
+      (g.wv ? ' <span class="yr">(' + g.wv.toLocaleString() +
+        ' votes)</span>' : '') : '—'],
     ['BGG average', g.av ? g.av.toFixed(2) : '—'],
     ['Your rating', g.my ? fmt(g.my) : 'not rated'],
     ['Ratings on BGG', g.rt ? g.rt.toLocaleString() : '—'],
@@ -1723,7 +2393,9 @@ function buildDetail(g) {
     ['Designers', designerPills(g)],
     ['Publisher', (g.pb || []).length
       ? g.pb.map(function (p) { return hl(p); }).join(', ') : '—'],
-    ['Interaction', hl((g.ai && g.ai.ixl) || g.ix)],
+    ['Interaction', hl((g.ai && g.ai.ixl) || g.ix) +
+      ((g.kinds && g.kinds.length) ? ' <span class="yr">(' +
+        hl(g.kinds.join(', ').toLowerCase()) + ')</span>' : '')],
     ['Point salad', hl((g.ai && SALAD_LABEL[g.ai.br]) || '—')],
     ['Winning score', (g.ai && g.ai.sc
       ? esc(g.ai.sc) + (g.ai.scnote ? ' <span class="yr">(' + esc(g.ai.scnote) +
@@ -1768,11 +2440,33 @@ function buildDetail(g) {
 
 function fmt(v) { return v % 1 === 0 ? String(v) : v.toFixed(1); }
 
+/** The collection indexed both ways, for deciding whether a "you might also
+ *  like" name is something you already own.
+ *
+ *  By id as well as by name, because the name is not reliable: the opinion
+ *  database says "Trickerion" where the collection says "Trickerion: Legends
+ *  of Illusion", and "Chicago Express" where BGG's entry — the same game,
+ *  the same id — is filed as "Wabash Cannonball". A name lookup sent all of
+ *  those off to BGG as though they were not owned. scripts/bggids.py has
+ *  already resolved each name to an id, so match on that first and fall back
+ *  to the name for entries it could not resolve. Matching on the part before
+ *  the colon was the obvious alternative and is wrong: "Agricola" is not
+ *  "Agricola: Family Edition", and claiming you own a game you do not is
+ *  worse than an unnecessary link out. */
 var OWNED = (function () {
-  var m = {};
-  DATA.forEach(function (g, i) { m[g.n.toLowerCase()] = i; });
-  return m;
+  var byName = {}, byId = {};
+  DATA.forEach(function (g, i) {
+    byName[g.n.toLowerCase()] = i;
+    byId[String(g.id)] = i;
+  });
+  return { byName: byName, byId: byId };
 })();
+
+/** The row index for a similar-game entry, or undefined if it is not owned. */
+function ownedIndex(name, id) {
+  var i = id === null || id === undefined ? undefined : OWNED.byId[String(id)];
+  return i === undefined ? OWNED.byName[String(name).toLowerCase()] : i;
+}
 
 /** What people say about the game, from the local opinion database. Absent or
  *  low-confidence entries render nothing at all rather than a guess. */
@@ -1788,7 +2482,7 @@ function opinionBlock(g) {
   var sim = (ai.sim || []).map(function (e) {
     // Entries carry a resolved BGG id where scripts/bggids.py found one.
     var n = typeof e === 'string' ? e : e.name, id = typeof e === 'string' ? null : e.id;
-    var i = OWNED[n.toLowerCase()];
+    var i = ownedIndex(n, id);
     if (i === undefined) {
       // Not in the collection: nothing to filter to, so send them to BGG —
       // straight to the game when its id is known, and only otherwise to a
@@ -1802,8 +2496,14 @@ function opinionBlock(g) {
         (id ? 'open it on BGG' : 'look it up on BGG') + '">' + esc(n) +
         ' <span class="ext">↗</span></a>';
     }
+    // The collection's own title can differ from the one the opinion database
+    // used, so say which shelf this is on when the two names disagree.
+    var owned = DATA[i].n;
+    var tip = owned.toLowerCase() === String(n).toLowerCase()
+      ? 'You own this — filter to it'
+      : 'You own this as “' + owned + '” — filter to it';
     return '<button type="button" class="chip owned" data-game="' + i +
-      '" title="You own this — filter to it">' + esc(n) + '</button>';
+      '" title="' + esc(tip) + '">' + esc(n) + '</button>';
   }).join('');
   var fromWeb = ai.src === 'web';
   var head = fromDesc
@@ -1916,7 +2616,9 @@ TBODY.addEventListener('click', function (e) {
       closeDetail();
       openId = null;
       applyDefaults();
-      el('q').value = DATA[gi].n;
+      // By id, not by name: a name is a substring match and "Trickerion"
+      // would drag in everything that mentions it. This lands on one row.
+      el('q').value = 'id:' + DATA[gi].id;
       syncSelects();
       refreshTagList();
       render();
@@ -2105,6 +2807,34 @@ el('reset').addEventListener('click', function () {
   render();
 });
 
+/** The title is "home": it puts back everything the address carries — the
+ *  filters, the sort and whichever game is open — and leaves alone everything
+ *  it does not, which is the column choice this browser has remembered.
+ *
+ *  It pushes a history entry rather than replacing one, because it is a
+ *  navigation in the same sense that opening a game is: back should return
+ *  you to the view you just left, not to the page before this one.
+ */
+el('home').addEventListener('click', function (e) {
+  e.preventDefault();
+  // asOneStep, not a bare writeUrl: the render in the middle would otherwise
+  // replaceState the cleared view over the entry being left, and back would
+  // land on the cleared view again instead of on what you were looking at.
+  asOneStep(function () {
+    applyDefaults();
+    F.players.value = '0';
+    sortKey = 'rk';
+    sortDesc = false;
+    closeDetail();
+    openId = null;
+    forgetFilters();
+    syncClearQ();
+    syncSelects();
+    markSort();
+    render();
+  });
+});
+
 // The result line is the only sticky thing above the table, so the header's
 // offset tracks its height — which changes when the description wraps.
 // Keep the divider spanning the full table even if columns are added later.
@@ -2166,6 +2896,11 @@ function enhanceSelect(sel) {
     var o = sel.options[sel.selectedIndex];
     caption.textContent = o ? o.text : '';
     items.forEach(function (li, i) {
+      // Re-read the label, not just the selection: the Rule options are
+      // renamed whenever the player count changes, and a list built once at
+      // startup went on offering "Good at N" under a button reading
+      // "Good at 4p".
+      if (sel.options[i]) li.textContent = sel.options[i].text;
       li.setAttribute('aria-selected', i === sel.selectedIndex ? 'true' : 'false');
     });
   }
@@ -2206,12 +2941,403 @@ function enhanceSelect(sel) {
   if (keepWidth && window.innerWidth > 700) wrap.style.width = keepWidth + 'px';
   wrap._close = function () { open(false); };
   wrap._sync = sync;
+  wrap._widest = function () {
+    return [].map.call(sel.options, function (o) { return o.text; })
+      .concat(['N/A']);
+  };
+  return wrap;
+}
+
+/** A range filter that looks like every other dropdown until you open it,
+ *  and then offers a vertical two-handled slider.
+ *
+ *  The value written into the hidden input is the *underlying number* —
+ *  "lo-hi" on the scale itself, so weight is 1-5, time is minutes and point
+ *  salad is its 0-100 score. The stops only name stretches of that number.
+ *  That keeps the precision the number has while reading in the vocabulary
+ *  the columns use, and it is why the numeric Weight and Time boxes under
+ *  "More filters" could go — this is them, legibly.
+ *
+ *  The stops are drawn **evenly spaced** however uneven their values are.
+ *  Time steps by 15, 15, 15, 30, 30, 60 and 60 minutes; spaced by value that
+ *  crushes the short end into a third of the track, and this is a scale you
+ *  read by its labels.
+ *
+ *  Vertical because the labels are horizontal: a name reads straight across
+ *  from the stop it belongs to, which no horizontal scale can do without
+ *  turning the text on its side.
+ */
+function vRange(input, scale, label) {
+  var stops = scale.stops, n = stops.length;
+  var lo = scale.min, hi = scale.max;
+  var loIdx = 0, hiIdx = n - 1;
+
+  var wrap = document.createElement('span');
+  wrap.className = 'sel enhanced';
+  input.parentNode.insertBefore(wrap, input);
+  wrap.appendChild(input);
+
+  var btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'selbtn';
+  btn.setAttribute('aria-haspopup', 'dialog');
+  btn.setAttribute('aria-expanded', 'false');
+  var caption = document.createElement('span');
+  btn.appendChild(caption);
+
+  var pop = document.createElement('div');
+  pop.className = 'vrng';
+  pop.hidden = true;
+  var track = document.createElement('div');
+  track.className = 'vtrack';
+  var fill = document.createElement('i');
+  fill.className = 'vfill';
+  track.appendChild(fill);
+
+  /* Position is ordinal: stop i sits at i / (n - 1), so every gap is the same
+     however far apart the values behind them are. The handles land on stops
+     and nowhere else — the two things asked of this control, equal spacing
+     and a circle per stop that fills when it is in range, only agree if a
+     stop is a place you can actually be. The stored range is still the
+     underlying number, [stops[lo].lo, stops[hi].hi], so what the table
+     filters on stays the real scale. */
+  function fracOfStop(i) { return n < 2 ? 0 : i / (n - 1); }
+  /* Reading a stored range back needs a different lookup at each end, and
+     conflating them was a real bug. On a scale whose bands meet at the edge —
+     weight, where Light is [1, 2) and Medium light [2, 3) — selecting Light
+     alone writes "1-2", and asking which band the 2 belongs to answers
+     "Medium light". The range came back two stops wide and a single weight
+     band could not be selected at all.
+
+     So: a low bound is the band that *contains* it, and a high bound is the
+     band that *ends* at it. */
+  function idxOfLo(v) {
+    for (var i = 0; i < n; i++) {
+      if (scale.hiExclusive ? v < stops[i].hi : v <= stops[i].hi) return i;
+    }
+    return n - 1;
+  }
+  function idxOfHi(v) {
+    for (var i = 0; i < n; i++) if (stops[i].hi >= v) return i;
+    return n - 1;
+  }
+  function idxAt(f) {
+    return Math.max(0, Math.min(n - 1, Math.round(f * (n - 1))));
+  }
+
+  var dots = stops.map(function (st, i) {
+    var dot = document.createElement('b');
+    dot.className = 'vdot';
+    dot.style.bottom = fracOfStop(i) * 100 + '%';
+    track.appendChild(dot);
+    return dot;
+  });
+  var handles = [0, 1].map(function (i) {
+    var h = document.createElement('span');
+    h.className = 'vh';
+    h.tabIndex = 0;
+    h.setAttribute('role', 'slider');
+    h.setAttribute('aria-label', (i ? 'Highest ' : 'Lowest ') + label);
+    track.appendChild(h);
+    return h;
+  });
+
+  var names = document.createElement('div');
+  names.className = 'vnames';
+  var labelEls = stops.map(function (st, i) {
+    var el = document.createElement('span');
+    el.className = 'vname';
+    el.textContent = st.n;
+    el.style.bottom = fracOfStop(i) * 100 + '%';
+    el.title = 'Show only ' + st.n.toLowerCase();
+    names.appendChild(el);
+    return el;
+  });
+
+  var body = document.createElement('div');
+  body.className = 'vbody';
+  body.appendChild(track);
+  body.appendChild(names);
+  var reset = document.createElement('button');
+  reset.type = 'button';
+  reset.className = 'link vreset';
+  reset.textContent = 'Reset to Any';
+  pop.appendChild(body);
+  pop.appendChild(reset);
+  // The track's height follows the number of gaps, so every scale has the
+  // same spacing between stops whatever it is measuring.
+  track.style.height = (n * 30) + 'px';
+  names.style.height = (n * 30) + 'px';
+
+  function isAny() { return loIdx === 0 && hiIdx === n - 1; }
+  /** What the collapsed control says. Nine filters share one row, so this is
+   *  as short as it can be while still being the answer: the stop names where
+   *  they are a word or two ("Low–Med", "45 min–2 hours"), and the numbers
+   *  being filtered on where the names are phrases ("1.5–2.5", "≤ 11%"). An
+   *  end sitting at the edge of the scale is said as a bound rather than
+   *  named, because nobody picked that stop — they picked "everything up to
+   *  here". `brief` on the scale decides which, and it is set in report.py
+   *  beside the stops themselves.
+   *
+   *  The popup still shows every stop by its full name, so the short form is
+   *  a reminder of a choice just made rather than the only place it is said.
+   */
+  function captionFor(i, j) {
+    if (i === 0 && j === n - 1) return 'Any';
+    var a = stops[i], b = stops[j];
+    // One stop is a thing with a name, and the name is what you clicked.
+    if (i === j) return a.s || a.n;
+    if (scale.brief === 'level') return (a.s || a.n) + '–' + (b.s || b.n);
+    var num = scale.brief === 'num';
+    // The unit belongs to the reading, not to each end of it: "12–39%", not
+    // "12%–39%".
+    var u = num ? (scale.unit || '') : '';
+    var lo1 = num ? trim(a.lo) : (a.s || a.n);
+    var hi1 = num ? trim(b.hi) : (b.s || b.n);
+    if (i === 0) return '≤ ' + hi1 + u;
+    if (j === n - 1) return lo1 + u + '+';
+    return lo1 + '–' + hi1 + u;
+  }
+  function captionText() { return captionFor(loIdx, hiIdx); }
+  /** 1.5, not 1.50; 12, not 12.0. */
+  function trim(v) { return String(Math.round(v * 100) / 100); }
+  function paint() {
+    fill.style.bottom = fracOfStop(loIdx) * 100 + '%';
+    fill.style.height = (fracOfStop(hiIdx) - fracOfStop(loIdx)) * 100 + '%';
+    handles[0].style.bottom = fracOfStop(loIdx) * 100 + '%';
+    handles[1].style.bottom = fracOfStop(hiIdx) * 100 + '%';
+    // A stop is lit when it is inside the range, so the circles read as the
+    // answer rather than as decoration.
+    stops.forEach(function (st, i) {
+      var on = i >= loIdx && i <= hiIdx;
+      dots[i].classList.toggle('on', on);
+      labelEls[i].classList.toggle('on', on);
+    });
+    [[handles[0], lo], [handles[1], hi]].forEach(function (pair) {
+      pair[0].setAttribute('aria-valuemin', scale.min);
+      pair[0].setAttribute('aria-valuemax', scale.max);
+      pair[0].setAttribute('aria-valuenow', pair[1]);
+    });
+    caption.textContent = captionText();
+  }
+  function commit() {
+    // The range the indices stand for, worked out *before* the value is
+    // written: doing it inside paint() meant every selection wrote the
+    // previous one's numbers and the table lagged a click behind.
+    lo = stops[loIdx].lo;
+    hi = stops[hiIdx].hi;
+    input.value = isAny() ? '' : lo + '-' + hi;
+    paint();
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+  }
+  /** Re-read the input, for Reset, a link, or the back button. */
+  function sync() {
+    var m = /^(-?[\d.]+)-(-?[\d.]+)$/.exec(String(input.value || ''));
+    loIdx = m ? idxOfLo(+m[1]) : 0;
+    hiIdx = m ? idxOfHi(+m[2]) : n - 1;
+    if (hiIdx < loIdx) { loIdx = 0; hiIdx = n - 1; }
+    if (isAny() && input.value) input.value = '';
+    lo = stops[loIdx].lo;
+    hi = stops[hiIdx].hi;
+    paint();
+  }
+
+  /* Dragging. Pointer events rather than a rotated <input type=range>: the
+     rotation makes the hit area lie about where it is, and two of them
+     overlapping made the lower handle unreachable at the top of the scale.
+
+     The whole body takes the gesture, labels included — the labels are the
+     widest thing in the popup, and aiming at a 22px track to pick a range is
+     needless precision. Which end is the low one is decided *as you drag*:
+     you grab a point and pull, and pulling past the other end turns the range
+     over rather than refusing to follow. */
+  var anchorIdx = -1, startIdx = -1, moved = false;
+  function fractionAt(clientY) {
+    var r = track.getBoundingClientRect();
+    return Math.max(0, Math.min(1, (r.bottom - clientY) / r.height));
+  }
+  function dragTo(i) {
+    i = Math.max(0, Math.min(n - 1, i));
+    loIdx = Math.min(anchorIdx, i);
+    hiIdx = Math.max(anchorIdx, i);
+    commit();
+  }
+  /** Which end of the range this target is, or -1. A label sitting at an end
+   *  counts as that end: it is the widest thing in the popup and the obvious
+   *  thing to grab, and having it start a fresh range instead was a surprise
+   *  every time. */
+  function endAt(target) {
+    var i = labelEls.indexOf(target);
+    if (target === handles[0]) return 0;
+    if (target === handles[1]) return 1;
+    if (i < 0) return -1;
+    if (i === loIdx && loIdx !== hiIdx) return 0;
+    if (i === hiIdx && loIdx !== hiIdx) return 1;
+    return -1;
+  }
+  body.addEventListener('pointerdown', function (e) {
+    var i = idxAt(fractionAt(e.clientY));
+    // Grabbing an end pins the other one; grabbing anywhere else starts a
+    // fresh range from where you pressed.
+    var end = endAt(e.target);
+    if (end === 0) { anchorIdx = hiIdx; i = loIdx; }
+    else if (end === 1) { anchorIdx = loIdx; i = hiIdx; }
+    else anchorIdx = i;
+    startIdx = i;
+    moved = false;
+    try { body.setPointerCapture(e.pointerId); } catch (err) { /* no pointer */ }
+    dragTo(i);
+    e.preventDefault();
+  });
+  body.addEventListener('pointermove', function (e) {
+    if (anchorIdx < 0) return;
+    var i = idxAt(fractionAt(e.clientY));
+    if (i !== startIdx) moved = true;
+    dragTo(i);
+  });
+  ['pointerup', 'pointercancel'].forEach(function (ev) {
+    body.addEventListener(ev, function (e) {
+      if (anchorIdx < 0) return;
+      // A press that never moved is a click, and a click on a stop — its
+      // circle or its label — asks for that stop alone.
+      if (!moved) {
+        anchorIdx = idxAt(fractionAt(e.clientY));
+        dragTo(anchorIdx);
+      }
+      anchorIdx = -1;
+    });
+  });
+  handles.forEach(function (h, i) {
+    h.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowUp' || e.key === 'ArrowRight' ? 1
+            : e.key === 'ArrowDown' || e.key === 'ArrowLeft' ? -1 : 0;
+      if (!d) return;
+      anchorIdx = i ? loIdx : hiIdx;
+      dragTo((i ? hiIdx : loIdx) + d);
+      anchorIdx = -1;
+      e.preventDefault();
+    });
+  });
+
+  function open(yes) {
+    if (yes) closeAll(wrap);
+    pop.hidden = !yes;
+    wrap.classList.toggle('open', yes);
+    btn.setAttribute('aria-expanded', yes ? 'true' : 'false');
+  }
+  reset.addEventListener('click', function () {
+    anchorIdx = 0;
+    dragTo(n - 1);
+    anchorIdx = -1;
+    // Clearing a filter is a finished gesture; leaving the menu open just
+    // makes you dismiss it yourself.
+    open(false);
+  });
+  btn.addEventListener('click', function () { open(pop.hidden); });
+  btn.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') open(false);
+    else if (e.key === 'Enter' || e.key === ' ') { open(pop.hidden); e.preventDefault(); }
+  });
+  pop.addEventListener('click', function (e) { e.stopPropagation(); });
+
+  wrap.appendChild(btn);
+  wrap.appendChild(pop);
+  sync();
+  wrap._close = function () { open(false); };
+  wrap._sync = sync;
+  // Every caption this control can ever show, so it is sized once and never
+  // changes width as you drag. Sizing it to the stop *names* was right while
+  // the caption named them; now that the caption is the short form, the names
+  // would leave a 40px lake inside a control that never says them.
+  wrap._widest = function () {
+    var all = [];
+    for (var i = 0; i < n; i++) {
+      for (var j = i; j < n; j++) all.push(captionFor(i, j));
+    }
+    return all;
+  };
   return wrap;
 }
 
 var enhanced = [];
 function closeAll(except) {
   enhanced.forEach(function (w) { if (w !== except) w._close(); });
+}
+
+/** How wide a string is in a given font, without putting it on the page.
+ *  Measuring by rendering meant showing each dropdown to size it, which the
+ *  browser paints. */
+function textWidth(text, font) {
+  var ctx = textWidth._ctx;
+  if (!ctx) {
+    ctx = textWidth._ctx = document.createElement('canvas').getContext('2d');
+  }
+  ctx.font = font;
+  return ctx.measureText(text).width;
+}
+
+/* Room for the caret, the padding and a little slack. */
+var SEL_CHROME = 52;
+
+/** Size every filter control to its *widest* caption rather than its current
+ *  one.
+ *
+ *  A control sized to "Any" had to be opened before you could see that
+ *  "Medium light" was an option, and choosing it then pushed everything after
+ *  it along the row. Pinning the width to the longest thing the control can
+ *  ever say costs a few pixels each and keeps the row still, which matters
+ *  more now that there are nine of them on it.
+ */
+/** How wide this control has to be to hold the longest thing it can say.
+ *
+ *  Canvas to rank the candidates, then the control itself to measure the top
+ *  few: a canvas measurement of the text alone came out several pixels under
+ *  what the button needs once its padding, caret and border are in, and the
+ *  widest caption then nudged the row along when you picked it. Ranking first
+ *  keeps this to three layout reads per control rather than one per option.
+ */
+function naturalWidth(wrap) {
+  var btn = wrap.querySelector('.selbtn');
+  var caption = btn.firstChild;
+  // Measured *bold*. A filter that is not at its default says so in bold, and
+  // every caption worth measuring is one: the widest thing a control can say
+  // is never "Any". Measuring in the regular weight left each of them about
+  // four per cent short, which is why picking a long band still shunted the
+  // row along after the width was supposedly pinned.
+  var box = wrap.closest('.f');
+  var wasActive = box && box.classList.contains('active');
+  if (box) box.classList.add('active');
+  var font = window.getComputedStyle(btn).font;
+  var all = wrap._widest().slice().sort(function (x, y) {
+    return textWidth(y, font) - textWidth(x, font);
+  }).slice(0, 3);
+  var w = 0;
+  if (!caption) {
+    all.forEach(function (t) { w = Math.max(w, textWidth(t, font) + SEL_CHROME); });
+  } else {
+    var was = caption.textContent, held = wrap.style.minWidth;
+    wrap.style.minWidth = '0';
+    all.forEach(function (t) {
+      caption.textContent = t;
+      w = Math.max(w, btn.getBoundingClientRect().width);
+    });
+    caption.textContent = was;
+    wrap.style.minWidth = held;
+  }
+  if (box && !wasActive) box.classList.remove('active');
+  return Math.ceil(w);
+}
+
+function sizeControls() {
+  enhanced.forEach(function (wrap) {
+    if (!wrap._widest) return;
+    // Measured once and remembered. Measuring again on a later call gave a
+    // slightly different answer — the row is in a different state by then —
+    // and the controls after it stepped sideways by a few pixels every time
+    // a filter changed, which is the one thing this function exists to stop.
+    if (wrap._natural == null) wrap._natural = naturalWidth(wrap);
+    wrap.style.minWidth = wrap._natural + 'px';
+  });
 }
 /** Re-read every styled dropdown from its native select. Needed whenever a
  *  value is set in code — Reset, or a tag click — because assigning .value
@@ -2240,11 +3366,11 @@ function rangeToPlayed() {
  *  and whether Rule means anything at all. */
 function markFilters() {
   var defaults = {
-    q: '', players: String(OPTS.players), mode: OPTS.mode, ix: '',
-    win: OPTS.win, salad: OPTS.salad, exp: OPTS.expansions,
-    tagmode: 'all',
-    smin: '', smax: '', mymin: '', mymax: '', wmin: '', wmax: '',
-    tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: '',
+    q: '', players: String(OPTS.players), mode: OPTS.mode, ix: OPTS.ix,
+    salad: OPTS.salad, exp: OPTS.expansions,
+    tagmode: 'all', wband: OPTS.wband, tband: OPTS.tband,
+    smin: '', smax: '', mymin: '', mymax: '',
+    plmin: '', plmax: '', ymin: '', ymax: '',
     played: 'any'
   };
   Object.keys(F).forEach(function (k) {
@@ -2274,37 +3400,73 @@ function markFilters() {
 [].forEach.call(document.querySelectorAll('.panel select'), function (sel) {
   enhanced.push(enhanceSelect(sel));
 });
+/** The four filters that take several values at once. Interaction and point
+ *  salad read their own vocabularies; weight and time read the band tables
+ *  the server shipped, so adding a band there adds it here too. */
+function bandOpts(bands) {
+  return bands.map(function (b) { return { v: b.k, n: b.n }; });
+}
+[[F.ix, 'ix', 'interaction'], [F.salad, 'salad', 'point salad'],
+ [F.wband, 'wband', 'weight'], [F.tband, 'tband', 'play time']
+].forEach(function (t) {
+  enhanced.push(vRange(t[0], BANDS.scales[t[1]], t[2]));
+});
+sizeControls();
 document.addEventListener('click', function (e) {
   if (!e.target.closest || !e.target.closest('.sel')) closeAll(null);
 });
 
 /* ---- column picker -------------------------------------------------- */
-/** Every column that can be turned off, in the order they ship in. The poll
- *  trio travels as one entry, and Game is not here: it is always on, and what
- *  it carries is the separate "Game column" choice. */
+/** Every column that can be turned off, in the order they ship in.
+ *
+ *  One column per thing measured. Each of these cells carries its pill, its
+ *  figure and its bar, and the "Cells" setting says which of them to paint —
+ *  so "Weight" is one row here rather than three ("band and number", "band
+ *  only", "number only"), and asking for numbers everywhere is one click
+ *  rather than four. The Game column is the same idea: one column, with a
+ *  setting for what rides under the name. */
 var COLUMNS = [
-  { k: 'th', n: 'Cover' }, { k: 'rk', n: 'Rank' }, { k: 'rt', n: 'Ratings' },
+  { k: 'th', n: 'Cover' }, { k: 'rk', n: 'Rank' }, { k: 'rt', n: 'Votes' },
   { k: 'av', n: 'BGG' },
-  { k: 'my', n: 'Mine' }, { k: 'y', n: 'Year' },
+  { k: 'my', n: 'Mine' },
+  { k: 'gn', n: 'Game' },
+  { k: 'y', n: 'Year' },
   { k: 'ds', n: 'Designer', off: true }, { k: 'pl', n: 'Plays' },
-  { k: 'tmax', n: 'Time' }, { k: 'w', n: 'Weight' }, { k: 'ix', n: 'Interaction' },
+  { k: 'tmax', n: 'Time' },
+  { k: 'w', n: 'Weight' },
+  { k: 'ixk', n: 'Interaction' },
   { k: 'acq', n: 'Acquired', off: true },
   { k: 'lp', n: 'Last played', off: true },
   { k: 'ed', n: 'Edited', off: true },
   { k: 'pp', n: 'Price paid', off: true },
   { k: 'win', n: 'Win condition' },
-  { k: 'sc', n: 'Winning score', off: true },
+  { k: 'sc', n: 'Win scores', off: true },
   { k: 'salad', n: 'Point salad' },
-  { k: 'verdict', n: 'At N / Best / Appr' }
+  // Three different questions about the same poll, not three renderings of
+  // one: which count to play at, how many call it the best, how many will
+  // sit down for it at all.
+  { k: 'atn', n: 'Good at N — the whole vote' },
+  { k: 'bestp', n: 'Best at N — best %', off: true },
+  { k: 'apprp', n: 'Appr at N — approved %', off: true }
 ];
-/* The order cells sit in, including the two columns that are never optional. */
-var DEFAULT_ORDER = ['th', 'rk', 'rt', 'av', 'my', 'n', 'y', 'ds', 'pl', 'tmax',
-  'w', 'ix', 'acq', 'lp', 'ed', 'pp', 'win', 'sc', 'salad', 'verdict',
-  'bestPct', 'appr'];
-// MUST match KEY in the head script above.
-var COLKEY = 'bgg-cols-v8';
-var colState = {}, gameMode = 'ds', saladMode = 'band',
-    colOrder = DEFAULT_ORDER.slice();
+/* The order cells sit in. */
+var DEFAULT_ORDER = ['th', 'rk', 'rt', 'av', 'my',
+  'gn', 'y', 'ds', 'pl',
+  'tmax', 'w', 'ixk', 'acq', 'lp', 'ed', 'pp',
+  'salad', 'win', 'sc',
+  'atn', 'bestp', 'apprp'];
+// MUST match KEY in the head script above. Bumped whenever the vocabulary
+// changes rather than the values: v12 dropped the columns that the Cells
+// setting replaced, v13 the three-way pills/numbers/both choice that became
+// detailed/compact. A saved "nums" is not a stale value, it is a word this
+// version does not know.
+var COLKEY = 'bgg-cols-v13';
+var colState = {},
+    colOrder = DEFAULT_ORDER.slice(),
+    // What rides under the game's name, and how much of a switchable cell to
+    // paint. Both default to what the server wrote into <html>.
+    gameMode = 'ds',
+    detailMode = 'detailed';
 
 function colDefaults() {
   var out = {};
@@ -2321,16 +3483,30 @@ function loadCols() {
         if (typeof saved.cols[c.k] === 'boolean') colState[c.k] = saved.cols[c.k];
       });
       if (saved.game) gameMode = saved.game;
-      if (saved.salad) saladMode = saved.salad;
+      if (saved.detail) detailMode = saved.detail;
       if (saved.order && saved.order.length) {
-        // Keep only known keys, then append anything the saved order predates.
+        // Keep only known keys, then slot in anything the saved order
+        // predates — next to the column it belongs beside, not at the end.
+        // Appending was how a column added later ended up at the foot of the
+        // table rather than beside the one it belongs with.
         var seen = {};
         colOrder = saved.order.filter(function (k) {
           if (seen[k] || DEFAULT_ORDER.indexOf(k) < 0) return false;
           seen[k] = 1;
           return true;
         });
-        DEFAULT_ORDER.forEach(function (k) { if (!seen[k]) colOrder.push(k); });
+        DEFAULT_ORDER.forEach(function (k, i) {
+          if (seen[k]) return;
+          // The nearest earlier column the saved order already knows about
+          // decides where this one lands.
+          var at = colOrder.length;
+          for (var j = i - 1; j >= 0; j--) {
+            var prev = colOrder.indexOf(DEFAULT_ORDER[j]);
+            if (prev >= 0) { at = prev + 1; break; }
+          }
+          colOrder.splice(at, 0, k);
+          seen[k] = 1;
+        });
       }
     }
   } catch (e) { /* private window, or storage off: defaults are fine */ }
@@ -2339,46 +3515,73 @@ function loadCols() {
 function saveCols() {
   try {
     window.localStorage.setItem(COLKEY, JSON.stringify(
-      { cols: colState, game: gameMode, salad: saladMode,
+      { cols: colState, game: gameMode, detail: detailMode,
         order: colOrder }));
   } catch (e) { /* nothing to do about it */ }
 }
 
-/** Year and designer cannot be in two places at once: whatever the Game column
- *  carries loses its own column, whatever the checkbox says. */
+/** Year and designer cannot be in two places at once: whatever the Game
+ *  column carries loses its own column, whatever the checkbox says. */
 function swallowedByGame(k) {
   return (k === 'y' && (gameMode === 'year' || gameMode === 'yeards')) ||
          (k === 'ds' && (gameMode === 'ds' || gameMode === 'yeards'));
 }
 
+/** Why a column cannot be turned on right now, or '' if it can. */
+function lockedReason(k) {
+  return swallowedByGame(k) ? 'Shown inside the Game column' : '';
+}
+
 function applyCols() {
-  var cls = ['gm-' + gameMode];
-  if (saladMode === 'pct') cls.push('sal-pct');
+  var cls = ['gm-' + gameMode, 'det-' + detailMode];
   COLUMNS.forEach(function (c) {
-    if (!colState[c.k] || swallowedByGame(c.k)) cls.push('off-' + c.k);
+    if (!colState[c.k] || lockedReason(c.k)) cls.push('off-' + c.k);
   });
-  if (!colState.verdict) { cls.push('off-bestPct'); cls.push('off-appr'); }
   ROOT.setAttribute('data-cols', cls.join(' '));
   paintTableClass();
   var on = COLUMNS.filter(function (c) {
-    return colState[c.k] && !swallowedByGame(c.k);
+    return colState[c.k] && !lockedReason(c.k);
   }).length;
   var btn = document.getElementById('colsbtn');
   if (btn) btn.title = on + ' of ' + COLUMNS.length + ' columns shown';
   [].forEach.call(document.querySelectorAll('#collist label'), function (lab) {
     var box = lab.firstChild;
     var k = box.getAttribute('data-colkey');
-    lab.classList.toggle('locked', swallowedByGame(k));
-    lab.title = swallowedByGame(k)
-      ? 'Shown inside the Game column' : '';
+    var why = lockedReason(k);
+    lab.classList.toggle('locked', !!why);
+    // Disabled, not merely dimmed: a checkbox you can tick that changes
+    // nothing on screen reads as a bug in the page.
+    box.disabled = !!why;
+    lab.title = why;
   });
 }
 
 /** The player-count swap and the picker both live on the root element, which
  *  is where the head script has already put this browser's choice. */
+/** Columns that draw a pill over a second line. Mirrors STACKED_COLS in
+ *  report.py and STACKED in the head script. */
+var STACKED_COLS = ['tmax', 'w', 'ixk', 'salad', 'atn', 'bestp', 'apprp'];
+var POLL_COLS = { atn: 1, bestp: 1, apprp: 1 };
+
+/** True while any two-line column is actually on screen. The rows are given
+ *  more air then — and bigger covers with it: those cells carry a pill *and*
+ *  a bar, and at the normal row padding the table closes up around them. Only
+ *  a detailed table does that; a compact cell is a figure over a bare bar, or
+ *  a pill on its own, and both sit comfortably in a tight row. */
+function hasStackedColumn() {
+  if (detailMode !== 'detailed') return false;
+  var anyCount = +F.players.value === 0;
+  return STACKED_COLS.some(function (k) {
+    if (!colState[k] || lockedReason(k)) return false;
+    return !(POLL_COLS[k] && anyCount);
+  });
+}
+
 function paintTableClass() {
   var n = +F.players.value;
-  ROOT.className = (n ? '' : 'mode-any ') + (ROOT.getAttribute('data-cols') || '');
+  ROOT.className = (n ? '' : 'mode-any ') +
+    (hasStackedColumn() ? 'stacked ' : '') +
+    (ROOT.getAttribute('data-cols') || '');
 }
 
 /** Put every row's cells in the chosen order. appendChild moves nodes, so one
@@ -2397,11 +3600,62 @@ function applyOrder() {
   ROWS.forEach(function (tr) { if (tr) sortRow(tr); });
 }
 
+/** Named column sets.
+ *
+ *  Each names the columns it wants on and everything else goes off, so a
+ *  preset cannot drift as columns are added — a new column is simply not in
+ *  any preset until someone puts it there.
+ *
+ *  "Only pills" and "Only numbers" used to live here, back when choosing
+ *  between them meant swapping four columns for four others. That is the
+ *  "Cells" setting now, which is a better home for it: it composes with these
+ *  rather than competing with them, and it does not quietly reset the rest of
+ *  the table on the way.
+ */
+var PRESETS = [
+  { n: 'Default columns', on: null },
+  // Nothing this report worked out for itself: no interaction and no point
+  // salad. Only what BGG publishes — and what wins the game, which is asked
+  // for in every preset.
+  { n: 'Only BGG-backed columns',
+    on: ['th', 'rk', 'rt', 'av', 'my', 'gn', 'y', 'ds', 'pl',
+         'tmax', 'w', 'atn', 'win'] }
+];
+
+function applyPreset(p) {
+  colState = p.on ? (function () {
+    var out = {};
+    COLUMNS.forEach(function (c) { out[c.k] = p.on.indexOf(c.k) >= 0; });
+    return out;
+  })() : colDefaults();
+  saveCols();
+  buildColList();
+  applyCols();
+  dismissDetail();
+}
+
+function buildPresets() {
+  var box = document.getElementById('colpresets');
+  if (!box) return;
+  box.innerHTML = '';
+  PRESETS.forEach(function (p) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'link colpreset';
+    b.textContent = p.n;
+    b.addEventListener('click', function () { applyPreset(p); });
+    box.appendChild(b);
+  });
+}
+
 function resetCols() {
   colState = colDefaults();
-  gameMode = 'ds';
-  saladMode = 'band';
   colOrder = DEFAULT_ORDER.slice();
+  // The two settings beside the list are part of "default" too: the link says
+  // reset to default, not reset the checkboxes.
+  gameMode = 'ds';
+  detailMode = 'detailed';
+  syncModes();
   saveCols();
   buildColList();
   applyOrder();
@@ -2409,20 +3663,42 @@ function resetCols() {
   dismissDetail();
 }
 
+/** Put the radio buttons where the state actually is — after a reset, and on
+ *  load, where the saved choice came out of storage rather than out of the
+ *  markup's own `checked`. */
+function syncModes() {
+  [].forEach.call(document.querySelectorAll('input[name="gamemode"]'),
+    function (r) { r.checked = r.value === gameMode; });
+  [].forEach.call(document.querySelectorAll('input[name="detailmode"]'),
+    function (r) { r.checked = r.value === detailMode; });
+}
+
 function buildColList() {
   var box = document.getElementById('collist');
   // The menu lists columns in the order they appear in the table.
   var byKey = {};
   COLUMNS.forEach(function (c) { byKey[c.k] = c; });
-  box.innerHTML = colOrder.filter(function (k) { return byKey[k]; })
-    .map(function (k) {
-      return '<label><input type="checkbox" data-colkey="' + k + '"' +
-        (colState[k] ? ' checked' : '') + '> ' + esc(byKey[k].n) + '</label>';
-    }).join('');
-  [].forEach.call(document.querySelectorAll('input[name="gamemode"]'),
-    function (r) { r.checked = r.value === gameMode; });
-  [].forEach.call(document.querySelectorAll('input[name="saladmode"]'),
-    function (r) { r.checked = r.value === saladMode; });
+  var html = '';
+  colOrder.forEach(function (k) {
+    if (!byKey[k]) return;
+    html += '<label><input type="checkbox" data-colkey="' + k + '"' +
+      (colState[k] ? ' checked' : '') + '> ' + esc(byKey[k].n) + '</label>';
+  });
+  box.innerHTML = html;
+  if (document.getElementById('colfilter')) filterColList();
+}
+
+/** Narrow the column list to what you typed, matching the menu's own labels. */
+function filterColList() {
+  var q = (document.getElementById('colfilter').value || '')
+    .trim().toLowerCase();
+  var any = false;
+  [].forEach.call(document.querySelectorAll('#collist label'), function (lab) {
+    var hit = !q || lab.textContent.toLowerCase().indexOf(q) >= 0;
+    lab.hidden = !hit;
+    if (hit) any = true;
+  });
+  document.getElementById('colnone').hidden = any;
 }
 
 /* Dragging a header to move its column. */
@@ -2482,6 +3758,39 @@ function wireDrag() {
 
 function buildColMenu() {
   buildColList();
+  buildPresets();
+  syncModes();
+  // The two settings beside the list. Each repaints the whole table by
+  // swapping one class on <html>, which is why neither needs to touch a cell.
+  [].forEach.call(document.querySelectorAll('input[name="gamemode"]'),
+    function (r) {
+      r.addEventListener('change', function () {
+        gameMode = r.value;
+        saveCols();
+        applyCols();
+        dismissDetail();
+      });
+    });
+  [].forEach.call(document.querySelectorAll('input[name="detailmode"]'),
+    function (r) {
+      r.addEventListener('change', function () {
+        detailMode = r.value;
+        saveCols();
+        applyCols();
+        dismissDetail();
+      });
+    });
+  var filter = document.getElementById('colfilter');
+  filter.addEventListener('input', function () { filterColList(); });
+  // Escape clears it rather than closing the menu, which is the more useful
+  // of the two while you are looking for something.
+  filter.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && filter.value) {
+      filter.value = '';
+      filterColList();
+      e.stopPropagation();
+    }
+  });
   var box = document.getElementById('collist');
   box.addEventListener('change', function (e) {
     var k = e.target.getAttribute('data-colkey');
@@ -2491,24 +3800,6 @@ function buildColMenu() {
     applyCols();
     dismissDetail();
   });
-  [].forEach.call(document.querySelectorAll('input[name="gamemode"]'),
-    function (r) {
-      r.addEventListener('change', function () {
-        if (!r.checked) return;
-        gameMode = r.value;
-        saveCols();
-        applyCols();
-      });
-    });
-  [].forEach.call(document.querySelectorAll('input[name="saladmode"]'),
-    function (r) {
-      r.addEventListener('change', function () {
-        if (!r.checked) return;
-        saladMode = r.value;
-        saveCols();
-        applyCols();
-      });
-    });
   document.getElementById('colsreset').addEventListener('click', resetCols);
   var btn = document.getElementById('colsbtn');
   var menu = document.querySelector('.colmenu');
@@ -2535,7 +3826,13 @@ function buildColMenu() {
  *  so coming back to the page finds it as you left it. Tags are stored by
  *  name rather than index: the index moves whenever the collection changes.
  */
-var FILTKEY = 'bgg-filters-v1';
+/* Bumped to v2 with the multi-valued filters: interaction and point salad
+   used to store a single value, and point salad stored the word "any" for no
+   filter at all. Read back into a filter that now means "a comma-separated
+   list of bands", "any" is a band nothing is in — so a saved v1 would open
+   the page on an empty table. A new key is a new vocabulary, not a stale
+   value. */
+var FILTKEY = 'bgg-filters-v2';
 
 function saveFilters() {
   try {
@@ -2591,10 +3888,11 @@ function defaultFilterValues() {
   // here. OPTS.players in particular arrives as a *number*, and a typed
   // comparison against it silently dropped the player count from the link.
   var d = {
-    q: '', players: OPTS.players, mode: OPTS.mode, win: OPTS.win,
-    salad: OPTS.salad, exp: OPTS.expansions, ix: '', tagmode: 'all',
-    played: 'any', smin: '', smax: '', mymin: '', mymax: '', wmin: '',
-    wmax: '', tmin: '', tmax: '', plmin: '', plmax: '', ymin: '', ymax: ''
+    q: '', players: OPTS.players, mode: OPTS.mode,
+    salad: OPTS.salad, exp: OPTS.expansions, ix: OPTS.ix, tagmode: 'all',
+    wband: OPTS.wband, tband: OPTS.tband,
+    played: 'any', smin: '', smax: '', mymin: '', mymax: '',
+    plmin: '', plmax: '', ymin: '', ymax: ''
   };
   Object.keys(d).forEach(function (k) {
     d[k] = d[k] === null || d[k] === undefined ? '' : String(d[k]);
@@ -2746,13 +4044,20 @@ function applyUrlState() {
   }
 }
 
-/** Put the caret on whichever column the sort is actually using. */
+/** Put the caret on whichever column the sort is actually using.
+ *
+ *  Every header sharing that sort key gets it, not just the first: the three
+ *  point-salad columns all sort by the same number, and marking only the
+ *  first one put the caret on a column that was hidden, so sorting by the one
+ *  you clicked showed no caret anywhere. */
 function markSort() {
   [].forEach.call(document.querySelectorAll('th'), function (o) {
     o.removeAttribute('aria-sort');
   });
-  var th = document.querySelector('th[data-k="' + sortKey + '"]');
-  if (th) th.setAttribute('aria-sort', sortDesc ? 'descending' : 'ascending');
+  [].forEach.call(document.querySelectorAll('th[data-k="' + sortKey + '"]'),
+    function (th) {
+      th.setAttribute('aria-sort', sortDesc ? 'descending' : 'ascending');
+    });
 }
 
 loadCols();

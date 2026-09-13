@@ -25,13 +25,24 @@ One self-contained HTML file holding the whole collection, filtered in the
 browser:
 
 - **Columns** you choose and reorder by dragging a header, remembered per
-  browser — including *Last played* from your BGG play log, and what the game
-  column carries (name alone, or with the year, the designer, or both)
+  browser — including *Last played* from your BGG play log. One column per
+  thing measured, with two settings beside the list: **Cells**, detailed or
+  compact, which is whether a cell shows its pill *and* its number or just the
+  shorter of the two; and **Game column**, which of the year and the designer
+  ride under the name. Whichever of those the name carries, that field's own
+  column stands down
 - **Search across everything shown**, plus BGG's alternate titles, which are
   never displayed — so *bourgogne* finds The Castles of Burgundy. Every word
   has to land somewhere but they need not be adjacent or in order, so *board
   dice* finds the Board&Dice games; accents are folded on both sides, so
-  *orleans* finds *Orléans*
+  *orleans* finds *Orléans*. `id:1234` is a word too, and matches the one game
+  with that BGG id — which is how clicking a game's pill filters to *that*
+  game rather than to every row whose text happens to mention it
+- **The player-count poll** as three columns, all answering the count you
+  picked: the verdict with the whole vote under it, the share calling it the
+  best count, and the share that approve of it at all. They stand down when
+  the count is *Any*, since they have nothing to read; nothing else moves out
+  of their way
 - **A shareable view**: every filter, the sort, and whichever game is expanded
   are written into the URL as you set them, so a link carries exactly what you
   were looking at — down to a single game. Opening one wins over what that
@@ -45,13 +56,32 @@ browser:
 - **Expansions** folded in: an owned expansion can qualify its base game at a
   count the base game can't manage alone
 - **BGG score** and **your own rating** side by side, as BGG's rating hexagons
-- **Complexity**, **play time**, **number of plays**, all as ranges
-- **Level of interaction** — low / medium / high, with the *kind* of
-  interaction on hover
-- **One filter field over every property** a game has — 710 of them here:
-  traits, categories, mechanics, designers and BGG families, searchable by name
-  or description, multi-select with match all / any / none. Counts read
-  "23 of 60": how many you would see if you ticked it, out of how many exist.
+- **Complexity** and **play time** as named bands as well as numbers — weight
+  in BGG's own vocabulary (Light, Medium light, Medium, Heavy, Extreme) cut at
+  the midpoints between the points BGG's own Game Weight poll names, and time
+  by its *upper* bound (Very short through Extreme), because the question at a
+  game night is how long this could run, not how fast it could be over
+- **Number of plays**, as a range
+- **Level of interaction** — low / medium / high — with the **kind** of
+  interaction under it in a word or two: direct attacks, area control, a
+  shared market, blocking, an auction, drafting, negotiation, and so on.
+  Computed from the opinion pass's own description of the mechanism by rules
+  in [`scripts/interaction.py`](scripts/interaction.py), not asked for
+- **Range filters** for the four ordered axes — interaction, point salad,
+  weight and time. Each looks like any other dropdown until you open it, and
+  then offers a two-handled vertical slider over the *underlying number*:
+  weight 1–5, time in minutes, point salad its 0–100 score, with the bands
+  marked as dots and named beside them. So "anything up to 90 minutes" and
+  "3.4 and heavier" are both askable. Interaction snaps to Low/Medium/High,
+  which is all a game can be. The title doubles as a *home*
+  link that clears every filter, the sort and any open game, while leaving
+  your column choices alone
+- **One filter field over every property** a game has: traits, categories,
+  mechanics, designers and BGG families, plus two vocabularies this report
+  derives itself — how a game is won, and what kind of interaction it has —
+  searchable by name or description, multi-select with match all / any / none.
+  Counts read "23 of 60": how many you would see if you ticked it, out of how
+  many exist.
 - Name search that reaches **past** the current filters, showing what they
   excluded under a divider rather than hiding it
 - Every column sortable
@@ -237,9 +267,9 @@ band cut from it (`SALAD_BANDS` in the same file). That is worth knowing for
 two reasons. It costs nothing extra — there is no second model call and no
 sampling noise, because this is arithmetic over facts rather than a judgement
 — and it makes *how many bands the report shows* a presentation choice rather
-than a property of the data. The column can be switched between the four
-bands and the raw percentage from the columns menu; the bands are the default
-and the filter always uses them.
+than a property of the data. The columns menu offers the band, the raw
+percentage, and one column carrying both; the combined one is the default and
+the filter always uses the bands.
 
 Moving from stepped labels to a ramped number changed 21 of 242 verdicts,
 every one of them downwards, and fixed some plain errors on the way: the old

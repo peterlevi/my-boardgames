@@ -3119,6 +3119,13 @@ el('home').addEventListener('click', function (e) {
     F.players.value = '0';
     sortKey = 'rk';
     sortDesc = false;
+    // Ranking is part of the view the address carries, so home clears it too.
+    // The Fit column itself stays: which columns are on is the preference
+    // this gesture is careful not to touch.
+    ranking = false;
+    sortBeforeFit = null;
+    var fitsw = document.getElementById('fittoggle');
+    if (fitsw) fitsw.checked = false;
     closeDetail();
     openId = null;
     forgetFilters();

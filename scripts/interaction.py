@@ -106,6 +106,96 @@ OVERRIDES = {
 LEVELS = ("Low", "Medium", "High")
 
 
+# What *kind* of interaction, in one or two words, as against how much of it.
+#
+# The level answers "do the players touch each other"; this answers "how".
+# It is computed, not asked for — the opinion pass already writes a sentence
+# describing the mechanism ("area-majority fights over shared cities",
+# "drafting from a shared display to deny colors"), and that sentence is the
+# fact. Turning it into one of a dozen words is a rule you can read and argue
+# with, which is the same division of labour win condition and point salad
+# use: facts from the model, verdicts from code.
+#
+# Asking the model for the category directly was not tried and should not be:
+# the prose it already returns is more specific than any label, and a second
+# question would cost money to get something less precise.
+#
+# ORDER IS THE RULE. The first pattern that matches wins, so the list runs
+# from the most particular kind of interaction to the most general. Area
+# control sits above direct attacks deliberately: "area-majority fights over
+# shared cities" is an area game, and putting attacks first filed every one
+# of them under the word "fights".
+KINDS = [
+    ("Hidden roles", r"hidden[- ]role|traitor|accus|betray|hidden[- ]team|"
+                     r"social deduc|who is"),
+    ("Negotiation", r"negotiat|trad(e|ing)|deal[- ]making|bribe|alliance|"
+                    r"\bvot(e|ing)|diplomac"),
+    ("Auction", r"auction|bidding|\bbids?\b|outbid"),
+    ("Area control", r"area[- ](majority|control|influence)|majorit|"
+                     r"control of (the )?(town|cit|region|territor|area|province)|"
+                     r"territor|contested (region|area|map)"),
+    # "fight" only where it is literal. Players "fight over" a market or a
+    # spot in half the euros in the collection, and reading that as combat
+    # filed Brass: Birmingham — "fighting over shared coal/iron markets and
+    # contested network links" — under direct attacks.
+    ("Direct attacks", r"\battack|combat|battle|"
+                       r"\bfight(?!(ing|s)?\s+(over|for)\b)|\bwar\b|shoot|"
+                       r"damage|kill|eliminat|take[- ]that|steal|\brob\b|"
+                       r"raid|invad|conquer|sabotag|destroy"),
+    ("Blocking", r"block|deny|denies|denying|cut(s|ting)? off|\block\b|"
+                 r"action[- ]space|worker placement|limited (action|building|"
+                 r"placement) (spot|space|slot)|contested (spot|space|slot|track)"),
+    ("Shared market", r"market|price|stock|shares?\b|commodit|hotel chain"),
+    ("Drafting", r"draft|shared (card |tile )?(display|pool)|passing cards"),
+    ("Shared actions", r"follow mechanic|piggyback|role selection|"
+                       r"same role|phase selection|everyone.*your (action|role)"),
+    ("Paying rivals", r"pay(ing|s)? (opponents|rivals|other players|them)|"
+                      r"building fees|forces a payment|toll"),
+    ("Race", r"\brac(e|ing)|before (others|rivals|opponents)|first to\b|"
+             r"end the game outright"),
+    ("Co-op", r"cooperat|co-op|against the game|shared goal|team"),
+    ("Parallel play", r"multiplayer solitaire|little (direct )?interaction|"
+                      r"minimal|almost no|no direct|parallel|indirect only"),
+]
+
+KIND_NAMES = [k for k, _ in KINDS]
+
+
+def _match_kinds(text):
+    """Every kind the text evidences, in KINDS order — most particular first."""
+    import re
+    t = (text or "").lower()
+    if not t:
+        return []
+    return [name for name, pat in KINDS if re.search(pat, t)]
+
+
+def classify_kinds(prose, mechanics=(), categories=(), level=None, limit=3):
+    """The kinds of interaction a game shows, most particular first.
+
+    A game rarely does one thing. Great Western Trail's own description —
+    "paying opponents to use their buildings, and racing for limited track
+    spaces" — is three kinds at once, and naming only the first throws away
+    most of what it says. The order is KINDS order, so the first is the most
+    particular and is what a single-line column shows.
+
+    Read in order of how much the source actually knows: the opinion pass's
+    own sentence first, then BGG's mechanic and category vocabulary for a game
+    that has no opinion entry. A game whose level came out Low and matched
+    nothing is parallel play by elimination — that *is* what Low means.
+    """
+    found = (_match_kinds(prose)
+             or _match_kinds(" ".join(list(mechanics) + list(categories)))
+             or (["Parallel play"] if level == "Low" else []))
+    return found[:limit]
+
+
+def classify_kind(prose, mechanics=(), categories=(), level=None):
+    """Just the most particular kind, for a column with one line to spend."""
+    found = classify_kinds(prose, mechanics, categories, level)
+    return found[0] if found else None
+
+
 def classify(name, mechanics, categories):
     """Return (level, shared_signal_total). See module docstring for the rule."""
     mech, cats = set(mechanics), set(categories)

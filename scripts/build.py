@@ -114,6 +114,13 @@ def parse_item(it, is_expansion=False):
         rank=rank, types=types, is_expansion=is_expansion, expands=expands,
         thumbnail=(it.findtext("thumbnail") or "").strip() or None,
         weight=num(attr(st, "averageweight")), average=num(attr(st, "average")),
+        # How many people voted on the weight. BGG's own page shows the whole
+        # Light-to-Heavy distribution behind this number, but the XML API does
+        # not return that poll — `/thing` carries only suggested_numplayers,
+        # suggested_playerage and language_dependence — so the average and the
+        # turnout are all there is to show without scraping the site, which
+        # Cloudflare blocks.
+        weight_votes=num(attr(st, "numweights"), int),
         geek=num(attr(st, "bayesaverage")),
         # How many people rated it: BGG calls this "usersrated" and labels it
         # "Ratings" on a game page. Unlike the poll votes it does not depend on

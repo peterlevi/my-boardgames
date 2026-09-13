@@ -246,3 +246,35 @@ Mafia = Organised crime.
 Print & Play = Distributed to print at home.
 Expansion for Base-game = An expansion rather than a standalone game.
 Trick-taking = Each round everyone plays a card and the best one takes the trick.
+
+# ---- how a game is won ----
+# Computed by scripts/scoring.py from the facts the opinion pass reports, not
+# a BGG field. Prefixed, because the same word can mean something else in
+# another vocabulary — see describe_tag() in report.py.
+win condition:Most points at the end = Play runs a set length and the biggest pile of points takes it.
+win condition:Race to a target = The game ends the moment somebody reaches a set figure, and getting there first is the win.
+win condition:Enough objectives = You win by finishing a number of goals rather than by out-scoring anyone.
+win condition:Most money = One currency settles it: whoever is richest at the end wins.
+win condition:Highest of your lowest = Your weakest category is your score, so nothing can be left behind.
+win condition:Majority control = Winning is holding more of the contested thing than anyone else.
+win condition:Sudden-death condition = Something can end the game outright, whatever the score says.
+win condition:Cooperative goal = Everyone wins or loses together, against the game rather than each other.
+win condition:Last player standing = Players are knocked out until one is left.
+win condition:Other = Decided by something the usual categories do not cover.
+
+# ---- what kind of interaction ----
+# Computed by scripts/interaction.py from the sentence the opinion pass writes
+# about the mechanism. The level says how much; these say how.
+interaction kind:Direct attacks = Players act on each other outright — combat, theft, take-that.
+interaction kind:Area control = Players compete for presence on a shared map or in shared regions.
+interaction kind:Blocking = The interaction is denial: taking the spot, action or card somebody else wanted.
+interaction kind:Shared market = A common pool or price track that everyone's choices push around.
+interaction kind:Auction = Players bid against each other, so every price is set by a rival.
+interaction kind:Drafting = Picking from a shared supply, where what you take is what they cannot have.
+interaction kind:Negotiation = Deal-making between players is the heart of it.
+interaction kind:Hidden roles = Somebody is not who they claim to be, and working that out is the game.
+interaction kind:Race = Everyone pushes for the same finish, so the pressure is tempo rather than conflict.
+interaction kind:Co-op = Players are on the same side, working one board together.
+interaction kind:Shared actions = One player's choice opens or limits what everyone else may do.
+interaction kind:Paying rivals = Using what an opponent built costs you and pays them.
+interaction kind:Parallel play = Players mostly build their own thing; the boards barely touch.

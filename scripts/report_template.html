@@ -215,6 +215,10 @@ body { transition:opacity .32s ease-out; }
 .colfoot { margin:auto 8px 2px; padding-top:10px; }
 .colfoot .link { font-size:.8rem; padding:0; }
 .colmenu label.locked { opacity:.45; }
+/* Fit is not a column about a game, it is a column about the question being
+   asked, so it sits below a line of its own. */
+.colsep { border-top:1px solid var(--line); margin:7px 8px 6px;
+  break-inside:avoid; }
 .colmenu button.colpreset { display:block; padding:3px 8px; font-size:.82rem;
   text-align:left; width:100%; }
 .colmenu button.colpreset:hover { background:var(--bg); border-radius:6px;
@@ -382,7 +386,20 @@ td.designer .more { color:var(--muted); }
 /* "More filters" on the left, "Reset filters" hard right — level with it, and
    in the same column as the columns button further down. */
 .filterbar { display:flex; align-items:flex-start; gap:16px; }
-.filterbar #more { flex:1 1 auto; min-width:0; }
+/* Shrinks rather than grows, so the switch beside it sits next to the words
+   "More filters" instead of being pushed to the far end of the row. Its own
+   panels still get the width they need: with min-width:0 the item gives way
+   to what is beside it and the rows inside wrap. */
+.filterbar #more { flex:0 1 auto; min-width:0; }
+/* The switch sits on the summary's line, a clear step away from it, and says
+   what it does in the same breath. */
+.fitsw { display:flex; align-items:baseline; gap:8px; cursor:pointer;
+  margin:20px 0 0 26px; align-self:flex-start; white-space:nowrap; }
+.fitsw input { margin:0; position:relative; top:1px; cursor:pointer; }
+.fitsw b { font-size:.84rem; font-weight:700; color:var(--accent); }
+.fitsw span { font-size:.76rem; color:var(--muted); white-space:normal; }
+.fitsw:hover b { color:var(--ink); }
+@media (max-width:1100px) { .fitsw span { display:none; } }
 .filterbar #reset { margin-left:auto; margin-top:20px; padding:0 4px 10px 0;
   /* button.link aligns itself to the bottom of its row; here it must stay put
      on the summary's line when "More filters" opens below it. */
@@ -525,6 +542,15 @@ th[data-k][aria-sort="descending"]::after { content:" ▼"; }
 td.num { text-align:right; white-space:nowrap; font-size:.84rem; }
 th.num { text-align:right; white-space:nowrap; }
 tbody tr:hover { background:var(--panel); }
+/* While the table is ranked by fit, every cell that fed the score says which
+   way it pushed: green for a column this game answered, amber for a near
+   miss, red for one it failed. The tints are the pill backgrounds, so a row
+   reads as the same three colours the pills use. Painted on the cell rather
+   than the row, because the point is *which* column helped.
+   Kept off the hover, which is how you tell the row you are pointing at. */
+:root.fitrank tbody tr:not(:hover) td.fq3 { background:var(--best-bg); }
+:root.fitrank tbody tr:not(:hover) td.fq2 { background:var(--great-bg); }
+:root.fitrank tbody tr:not(:hover) td.fq1 { background:var(--warn-bg); }
 /* Box art runs from 0.50 to 2.29 in aspect, so cropping to a square would cut
    the tall and wide covers badly. Instead the square IS the tile: `contain`
    centres the whole cover inside a rounded, tinted box. Every thumbnail then
@@ -1273,6 +1299,15 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     </div>
     <div id="tagbox" class="tagbox"></div>
   </details>
+  <!-- Ranking is a different question from filtering, so it gets a switch of
+       its own rather than a column you have to find in the picker: score
+       everything against the filters instead of hiding what misses them. -->
+  <label class="fitsw" id="fitsw">
+    <input type="checkbox" id="fittoggle">
+    <b>Rank by fit</b>
+    <span>score every game against the filters, best first, instead of
+      hiding what misses</span>
+  </label>
   <button class="link" id="reset" type="button">Reset filters</button>
   </div>
 </div>
@@ -1955,9 +1990,15 @@ function describe() {
  * says how far outside is worth nothing: a whole point of weight, an hour
  * and a half of play, forty points of salad, two levels of interaction.
  */
-var FIT_W = { rating: 1.0, players: 1.6, tags: 1.4, weight: 1.2, time: 1.2,
-              ix: 1.0, salad: 1.0 };
-var FIT_TOL = { w: 1.5, tmax: 90, salad: 40, ix: 2 };
+var FIT_W = { rating: 1.0, played: 2.4, players: 1.6, tags: 1.4, weight: 1.2,
+              time: 1.2, ix: 1.0, salad: 1.0 };
+var FIT_TOL = { w: 1.5, tmax: 90, salad: 40, ix: 2, pl: 6 };
+/** Which column each axis is evidence for, so a ranked table can colour the
+ *  cell that earned it. The rating shows on both hexagons; the player-count
+ *  axis on whichever of its three columns is up. */
+var FIT_CELLS = { rating: ['av', 'my'], played: ['pl'],
+                  players: ['atn', 'bestp', 'apprp'], weight: ['w'],
+                  time: ['tmax'], ix: ['ixk'], salad: ['salad'] };
 /* Each rating on its own scale, because they do not mean the same thing. A
    BGG average lives between about 5.5 and 8.8 — 8.6 is extraordinary there —
    while a personal 1-10 is used to the top of its range. Both when both are
@@ -1978,17 +2019,37 @@ function rangeFit(r, v, tol) {
   return Math.max(0, 1 - d / tol);
 }
 function fitScore(g, s, n) {
-  var parts = [], sum = 0, weight = 0;
+  var parts = [], sum = 0, weight = 0, by = {};
   function add(kind, value, label) {
     if (value === null) return;
     sum += FIT_W[kind] * value;
     weight += FIT_W[kind];
     parts.push(label + ' ' + Math.round(value * 100) + '%');
+    (FIT_CELLS[kind] || []).forEach(function (k) { by[k] = value; });
   }
   var ai = g.ai || {};
-  var shownRating = (typeof g.my === 'number' && g.my) || g.av;
+  // Whether you have played it is the strongest thing you can say about a
+  // game you own: "something we have never got to the table" and "the one we
+  // keep coming back to" are different requests, and a game that answers the
+  // wrong one is the wrong game however well it scores elsewhere.
+  var pl = g.pl || 0;
+  if (F.played.value === 'yes') add('played', pl > 0 ? 1 : 0, 'played');
+  else if (F.played.value === 'no') add('played', pl > 0 ? 0 : 1, 'unplayed');
+  else {
+    var plo = num(F.plmin.value), phi = num(F.plmax.value);
+    if (plo !== null || phi !== null) {
+      add('played', rangeFit({ lo: plo === null ? -Infinity : plo,
+                               hi: phi === null ? Infinity : phi },
+                             pl, FIT_TOL.pl), 'plays');
+    }
+  }
+  var mine = (typeof g.my === 'number' && g.my) || null;
   add('rating', ratingFit(g), 'rated ' +
-      (shownRating ? Math.round(shownRating * 10) / 10 : '—'));
+      (mine || g.av ? Math.round((mine || g.av) * 10) / 10 : '—'));
+  // Light the hexagon that actually said something. An empty cell on a
+  // coloured field claims a rating the game has not got.
+  if (!mine) delete by.my;
+  if (!g.av) delete by.av;
   if (n) {
     // The verdict, on the same ladder the pill uses: best at this count,
     // good at it, plays at it, or not at all.
@@ -2019,7 +2080,8 @@ function fitScore(g, s, n) {
              : (hits ? Math.max(0, 1 - hits / picked.length) : 1);
     add('tags', frac, 'properties');
   }
-  return { score: weight ? Math.round(100 * sum / weight) : null, parts: parts };
+  return { score: weight ? Math.round(100 * sum / weight) : null,
+           parts: parts, by: by };
 }
 /* Five bands, strongest first. The top one is filled rather than tinted:
    "Perfect" is the end of the scale, not another shade of green. */
@@ -2260,6 +2322,15 @@ function paint(tr, g, s, n) {
               [meterHtml(fit.score)], false,
               'Fit ' + fit.score + ' — ' + fit.parts.join(', '),
               fit.score + '%');
+  // Light every cell that fed the score. The classes are set whether or not
+  // the table is ranked; the stylesheet only paints them while it is, so
+  // switching ranking on and off does not mean repainting 265 rows.
+  [].forEach.call(tr.children, function (td) {
+    var v = fit.by[td.getAttribute('data-col')];
+    td.className = td.className.replace(/ ?fq[123]/g, '');
+    if (v === undefined) return;
+    td.className += v >= 0.8 ? ' fq3' : v >= 0.45 ? ' fq2' : ' fq1';
+  });
 
   [].forEach.call(tr.querySelectorAll('.vinline'), function (el) {
     el.innerHTML = n ? v : '';
@@ -2972,6 +3043,9 @@ el('qclear').addEventListener('click', function () {
 
 document.getElementById('tagsearch')
   .addEventListener('input', refreshTagList);
+document.getElementById('fittoggle').addEventListener('change', function () {
+  setRanking(this.checked);
+});
 el('reset').addEventListener('click', function () {
   applyDefaults();
   // A reset clears the player-count rule too, rather than returning to the
@@ -3669,16 +3743,19 @@ var COLUMNS = [
 ];
 /* The order cells sit in. */
 var DEFAULT_ORDER = ['th', 'rk', 'rt', 'av', 'my',
-  'gn', 'fit', 'y', 'ds', 'pl',
+  'gn', 'y', 'ds', 'pl',
   'tmax', 'w', 'ixk',
   'salad', 'win', 'sc',
   'atn', 'bestp', 'apprp',
-  'lp', 'ed', 'acq', 'pp'];
+  'lp', 'ed', 'acq', 'pp',
+  // Last, and behind a line in the picker: it is the one column that is about
+  // the question rather than about the game.
+  'fit'];
 /* Bumped whenever DEFAULT_ORDER changes. A saved arrangement is the reader's
    and outranks ours, but only while it is an arrangement of the same list —
    otherwise a reordering here would never reach anyone who had opened the
    report before. Their column *choices* survive; only the order is retaken. */
-var ORDER_VERSION = 3;
+var ORDER_VERSION = 4;
 // MUST match KEY in the head script above. Bumped whenever the vocabulary
 // changes rather than the values: v12 dropped the columns that the Cells
 // setting replaced, v13 the three-way pills/numbers/both choice that became
@@ -3888,6 +3965,7 @@ function paintTableClass() {
   // browser with no JavaScript and for the first paint, where they guess from
   // the window width alone — which is right only for the default columns.
   ROOT.className = 'jsfit ' + (n ? '' : 'mode-any ') +
+    (sortKey === 'fit' ? 'fitrank ' : '') +
     (hasStackedColumn() ? 'stacked ' : '') +
     (ROOT.getAttribute('data-cols') || '');
 }
@@ -3989,6 +4067,7 @@ function buildColList() {
   var html = '';
   colOrder.forEach(function (k) {
     if (!byKey[k]) return;
+    if (k === 'fit') html += '<div class="colsep"></div>';
     html += '<label><input type="checkbox" data-colkey="' + k + '"' +
       (colState[k] ? ' checked' : '') + '> ' + esc(byKey[k].n) + '</label>';
   });
@@ -4366,6 +4445,35 @@ function markSort() {
     function (th) {
       th.setAttribute('aria-sort', sortDesc ? 'descending' : 'ascending');
     });
+  var sw = document.getElementById('fittoggle');
+  // The switch *is* the sort: clicking another header stops ranking, and the
+  // box should say so rather than claiming a mode the table left.
+  if (sw) sw.checked = sortKey === 'fit';
+}
+
+/** The sort to come back to when ranking is switched off. */
+var sortBeforeFit = null;
+
+/** Rank by fit, or stop. Turning it on shows the column and sorts by it,
+ *  because a ranking you cannot see the scores for is a shuffled list. */
+function setRanking(on) {
+  if (on) {
+    if (sortKey !== 'fit') sortBeforeFit = { k: sortKey, d: sortDesc };
+    colState.fit = true;
+    sortKey = 'fit';
+    sortDesc = true;
+  } else {
+    colState.fit = false;
+    var was = sortBeforeFit || { k: 'rk', d: false };
+    sortKey = was.k;
+    sortDesc = was.d;
+    sortBeforeFit = null;
+  }
+  saveCols();
+  buildColList();
+  applyCols();
+  markSort();
+  render();
 }
 
 loadCols();

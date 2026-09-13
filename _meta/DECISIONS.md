@@ -460,3 +460,26 @@ personal 8.6 is not, and both count where both exist.
 The numbers are a starting point, not a finding: the weights in `FIT_W` say
 that the player count matters more than the point-salad score, which is a
 preference, not a fact. They are meant to be argued with.
+
+## D-27 — Ranking is a switch, not a column you have to find
+
+Fit started as a column in the picker, which put the interesting part — the
+table stops hiding things and starts ordering them — behind a checkbox in a
+menu, indistinguishable from "Price paid". It now has a switch beside *More
+filters*, **Rank by fit**, which shows the column and sorts by it in one
+gesture; the column itself moved to the end of the table and sits below a
+line of its own in the picker, because it is the one column that is about the
+question rather than about the game.
+
+The traffic lights came from the same thought. A single number is a verdict
+you cannot argue with, so every cell that fed it is tinted while the table is
+ranked — green where the game answered that column, amber for a near miss,
+red for a failure — in the pill colours the table already uses. The classes
+are painted whether or not ranking is on and the stylesheet only shows them
+while it is, so switching does not mean repainting 265 rows.
+
+Whether you have *played* it carries the most weight of any axis (2.4 against
+1.6 for the player count). "Something we have never got to the table" and
+"the one we keep coming back to" are different requests, and a game that
+answers the wrong one is the wrong game however well it scores elsewhere.
+

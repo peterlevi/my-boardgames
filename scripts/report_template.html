@@ -117,22 +117,28 @@ input, select, .selbtn { font:inherit; font-size:.8rem; color:var(--ink);
 input:focus, select:focus { outline:2px solid var(--accent); outline-offset:-1px; }
 /* The search box soaks up whatever the other filters leave. */
 .f.grow { flex:1 1 200px; min-width:170px; }
-#q { width:100%; min-width:0; padding-right:26px; }
+#q, #tagsearch { width:100%; min-width:0; padding-right:26px; }
 /* The browser's own clear button only appears on hover, in its own colour and
-   weight. This one is always there while there is something to clear, drawn
-   the same way as the dropdown chevrons. */
+   weight — a blue cross from the OS, in a page that has no blue in it. This
+   one is always there while there is something to clear, drawn the same way
+   as the dropdown chevrons. Both search boxes use it. */
 .searchbox { position:relative; display:block; }
-#q::-webkit-search-cancel-button, #q::-webkit-search-decoration {
+#q::-webkit-search-cancel-button, #q::-webkit-search-decoration,
+#tagsearch::-webkit-search-cancel-button,
+#tagsearch::-webkit-search-decoration {
   -webkit-appearance:none; appearance:none; }
-#qclear { position:absolute; top:50%; right:7px; transform:translateY(-50%);
+#qclear, #tagclearq { position:absolute; top:50%; right:7px;
+  transform:translateY(-50%);
   width:16px; height:16px; padding:0; border:0; background:none;
   cursor:pointer; }
-#qclear::before, #qclear::after { content:""; position:absolute; left:2px;
-  top:7px; width:12px; height:1.6px; border-radius:1px;
+#qclear::before, #qclear::after,
+#tagclearq::before, #tagclearq::after { content:""; position:absolute;
+  left:2px; top:7px; width:12px; height:1.6px; border-radius:1px;
   background:var(--muted); }
-#qclear::before { transform:rotate(45deg); }
-#qclear::after { transform:rotate(-45deg); }
-#qclear:hover::before, #qclear:hover::after { background:var(--ink); }
+#qclear::before, #tagclearq::before { transform:rotate(45deg); }
+#qclear::after, #tagclearq::after { transform:rotate(-45deg); }
+#qclear:hover::before, #qclear:hover::after,
+#tagclearq:hover::before, #tagclearq:hover::after { background:var(--ink); }
 .pair { display:flex; align-items:center; gap:5px; }
 .pair input { width:66px; }
 #tagsearch { width:230px; max-width:100%; }
@@ -404,10 +410,10 @@ td.designer .more { color:var(--muted); }
 .fitsw span { font-size:.76rem; color:var(--muted); white-space:normal; }
 .fitsw:hover b { color:var(--ink); }
 @media (max-width:1100px) { .fitsw span { display:none; } }
-.filterbar #reset { margin-left:auto; margin-top:20px; padding:0 4px 10px 0;
-  /* button.link aligns itself to the bottom of its row; here it must stay put
-     on the summary's line when "More filters" opens below it. */
-  align-self:flex-start;
+/* Out of the flow, like the switch: as a flex item it took a hundred pixels
+   off the row, and the panels inside "More filters" — the property table
+   especially — stopped that far short of the page. */
+.filterbar #reset { position:absolute; right:0; top:20px; padding:0 4px 10px 0;
   font-weight:700; font-size:.84rem; text-decoration:none; white-space:nowrap;
   line-height:1.35; }
 .filterbar #reset:hover { color:var(--ink); }
@@ -989,6 +995,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .resultline { margin:12px 0 2px; }
   #count { font-size:1.05rem; }
   button.link { flex-basis:100%; text-align:left; }
+  /* Back into the flow on a phone, where the row is a stack and there is no
+     corner to park in. The switch keeps its own line for the same reason. */
+  .filterbar #reset { position:static; }
+  .fitsw { position:static; left:auto !important; margin:12px 0 0; }
   th, td { padding:7px 6px; }
   img.thumb { width:38px; height:38px; }
   td.thumb { width:38px; }
@@ -1295,8 +1305,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     </div>
     <div class="row">
       <div class="f"><label for="tagsearch">Filter by properties</label>
-        <input id="tagsearch" type="search" placeholder="Search 710 properties…"
-               autocomplete="off"></div>
+        <span class="searchbox"><input id="tagsearch" type="search"
+          placeholder="Search 710 properties…" autocomplete="off"
+          ><button type="button" id="tagclearq" hidden
+            aria-label="Clear the property search"
+            title="Clear the property search"></button></span></div>
       <div class="f"><label for="tagmode">Match</label>
         <select id="tagmode">
           <option value="all">all ticked</option>
@@ -1578,6 +1591,8 @@ function applyDefaults() {
   F.tagmode.value = 'all';
   F.played.value = 'any';
   document.getElementById('tagsearch').value = '';
+  var tq = document.getElementById('tagclearq');
+  if (tq) tq.hidden = true;
   tagRows.forEach(function (r) { r.firstChild.checked = false; });
   refreshTagList();
   ['smin', 'smax', 'mymin', 'mymax', 'plmin', 'plmax', 'ymin', 'ymax']
@@ -1999,14 +2014,14 @@ function describe() {
  * and a half of play, forty points of salad, two levels of interaction.
  */
 var FIT_W = { rating: 1.0, played: 2.4, players: 1.6, tags: 1.4, weight: 1.2,
-              time: 1.2, ix: 1.0, salad: 1.0 };
+              time: 1.2, ix: 1.0, salad: 1.0, votes: 0.35 };
 var FIT_TOL = { w: 1.5, tmax: 90, salad: 40, ix: 2, pl: 6 };
 /* What is left of a score when the game cannot seat the player count. */
 var FIT_CANT_PLAY = 0.25;
 /** Which column each axis is evidence for, so a ranked table can colour the
  *  cell that earned it. The rating shows on both hexagons; the player-count
  *  axis on whichever of its three columns is up. */
-var FIT_CELLS = { rating: ['av', 'my'], played: ['pl'],
+var FIT_CELLS = { rating: ['av', 'my'], played: ['pl'], votes: ['rt'],
                   players: ['atn', 'bestp', 'apprp'], weight: ['w'],
                   time: ['tmax'], ix: ['ixk'], salad: ['salad'] };
 /* Each rating on its own scale, because they do not mean the same thing. A
@@ -2060,6 +2075,17 @@ function fitScore(g, s, n) {
   // coloured field claims a rating the game has not got.
   if (!mine) delete by.my;
   if (!g.av) delete by.av;
+  // How many people voted on it, counted lightly. A rating is worth more when
+  // thousands agree on it than when forty people do, and a game everyone has
+  // heard of is an easier thing to put on the table — but it is a tiebreaker,
+  // not a criterion, so it carries a third of a rating's weight. Logarithmic,
+  // because the difference between 200 votes and 2,000 is the same kind of
+  // difference as between 2,000 and 20,000.
+  if (g.rt) {
+    add('votes', Math.max(0, Math.min(1,
+        (Math.log(g.rt) / Math.LN10 - 2) / 2.7)),
+        (g.rt >= 1000 ? Math.round(g.rt / 1000) + 'k' : g.rt) + ' votes');
+  }
   var seats = true;
   if (n) {
     // Does the box seat this many at all — counting an owned expansion that
@@ -3063,8 +3089,19 @@ el('qclear').addEventListener('click', function () {
   F.q.focus();
 });
 
-document.getElementById('tagsearch')
-  .addEventListener('input', refreshTagList);
+(function () {
+  var box = document.getElementById('tagsearch');
+  var clear = document.getElementById('tagclearq');
+  function sync() { clear.hidden = !box.value; }
+  box.addEventListener('input', function () { sync(); refreshTagList(); });
+  clear.addEventListener('click', function () {
+    box.value = '';
+    sync();
+    refreshTagList();
+    box.focus();
+  });
+  sync();
+})();
 document.getElementById('fittoggle').addEventListener('change', function () {
   setRanking(this.checked);
 });
@@ -3920,6 +3957,26 @@ function lockedReason(k) {
  *  width, so over budget the used widths *are* the stated ones; under budget
  *  they add up to exactly the space available and nothing is dropped.
  */
+/** The columns a filter is currently asking about. They go last when the
+ *  table has to shed columns: you set a filter to see its answers, and taking
+ *  away the column that shows them is the least useful economy available. */
+function filteredCols() {
+  var on = {}, any = function (keys, yes) {
+    if (yes) keys.forEach(function (k) { on[k] = 1; });
+  };
+  any(['ixk'], !!F.ix.value);
+  any(['salad'], !!F.salad.value);
+  any(['w'], !!F.wband.value);
+  any(['tmax'], !!F.tband.value);
+  any(['atn', 'bestp', 'apprp'], +F.players.value > 0);
+  any(['pl'], F.played.value !== 'any' || !!F.plmin.value || !!F.plmax.value);
+  any(['av'], !!F.smin.value || !!F.smax.value);
+  any(['my'], !!F.mymin.value || !!F.mymax.value);
+  any(['y'], !!F.ymin.value || !!F.ymax.value);
+  any(['fit'], ranking);
+  return on;
+}
+
 function fitColumns() {
   var scroll = document.querySelector('.scroll');
   if (!scroll) return {};
@@ -3931,13 +3988,18 @@ function fitColumns() {
     width[k] = parseFloat(window.getComputedStyle(th).width) || 0;
     total += width[k];
   });
-  var out = {};
-  for (var i = 0; i < FIT_ORDER.length && total > avail + 0.5; i++) {
-    var k = FIT_ORDER[i];
-    if (!(k in width)) continue;
-    out[k] = 1;
-    total -= width[k];
-  }
+  var out = {}, spoken = filteredCols();
+  // Two passes over the same order: everything nobody asked about first, and
+  // only then — if it still does not fit — the columns a filter is using.
+  [false, true].forEach(function (evenSpoken) {
+    for (var i = 0; i < FIT_ORDER.length && total > avail + 0.5; i++) {
+      var k = FIT_ORDER[i];
+      if (!(k in width) || out[k]) continue;
+      if (!evenSpoken && spoken[k]) continue;
+      out[k] = 1;
+      total -= width[k];
+    }
+  });
   return out;
 }
 

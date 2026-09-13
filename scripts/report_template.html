@@ -1066,7 +1066,7 @@ function recountTags(visibleIdx) {
  *  ticked tag always stays, whatever the search or the count, so a choice can
  *  always be seen and undone. */
 function applyTagVisibility() {
-  var q = document.getElementById('tagsearch').value.trim().toLowerCase();
+  var q = deaccent(document.getElementById('tagsearch').value.trim().toLowerCase());
   // Every word has to land somewhere, so "worker german" finds a property that
   // is both, and typing a kind — trait, mechanism, category, type, designer,
   // family — brings up everything of that kind.
@@ -1074,7 +1074,7 @@ function applyTagVisibility() {
   var shown = 0;
   for (var i = 0; i < tagRows.length; i++) {
     var t = TAGS[i], row = tagRows[i], on = row.firstChild.checked;
-    var hay = (t.n + ' ' + t.d + ' ' + (KIND_LABEL[t.k] || t.k)).toLowerCase();
+    var hay = deaccent((t.n + ' ' + t.d + ' ' + (KIND_LABEL[t.k] || t.k)).toLowerCase());
     var matches = true;
     for (var wi = 0; wi < words.length; wi++) {
       if (hay.indexOf(words[wi]) === -1) { matches = false; break; }
@@ -1194,16 +1194,28 @@ function or0(v) { return (v === null || v === undefined) ? 0 : v; }
  *  interaction level. Built once per game and kept, since a search runs it
  *  over every row on every keystroke. */
 var HAY = [];
+
+/** Accents folded away, so "orleans" finds "Orleans" and "cafe" finds "cafe".
+ *  A Latin letter with one combining mark folds to a single character, so the
+ *  string keeps its length and the highlighter can still slice the original
+ *  by the index this found. Guarded because normalize is the one modern
+ *  String method this page uses. */
+function deaccent(s) {
+  return s.normalize ? s.normalize('NFD').replace(/[\u0300-\u036f]/g, '') : s;
+}
+
 function hay(i, g) {
   if (HAY[i] !== undefined) return HAY[i];
   var ai = g.ai || {};
-  var bits = [g.n, g.y || ''].concat(g.ds || [], g.pb || []);
+  // Alternate titles are searchable but never shown: somebody who knows the
+  // game as Les Chateaux de Bourgogne should still find it.
+  var bits = [g.n, g.y || ''].concat(g.alt || [], g.ds || [], g.pb || []);
   (g.tg || []).forEach(function (t) { if (TAGS[t]) bits.push(TAGS[t].n); });
   (ai.wcs || []).forEach(function (w) { bits.push(WIN_LABEL[w] || w); });
   bits.push(SALAD_LABEL[ai.br] || '');
   bits.push(ai.ixl || g.ix || '');
   if (g.exp) bits.push('expansion');
-  HAY[i] = bits.join(' ').toLowerCase();
+  HAY[i] = deaccent(bits.join(' ').toLowerCase());
   return HAY[i];
 }
 
@@ -1211,7 +1223,7 @@ function hay(i, g) {
  *  only the search term matched. The second bucket is what lets a search find
  *  a game the current filters would otherwise hide. */
 function partition() {
-  var term = F.q.value.trim().toLowerCase();
+  var term = deaccent(F.q.value.trim().toLowerCase());
   var n = +F.players.value, mode = F.mode.value, expMode = F.exp.value;
   var smin = num(F.smin.value), smax = num(F.smax.value);
   var mymin = num(F.mymin.value), mymax = num(F.mymax.value);
@@ -1595,7 +1607,9 @@ function hl(text) {
   var t = String(text === null || text === undefined ? '' : text);
   var term = F.q.value.trim();
   if (!term) return esc(t);
-  var i = t.toLowerCase().indexOf(term.toLowerCase());
+  // Matched on the folded text, but sliced out of the original, so the
+  // accented spelling is what ends up highlighted on screen.
+  var i = deaccent(t.toLowerCase()).indexOf(deaccent(term.toLowerCase()));
   if (i === -1) return esc(t);
   return esc(t.slice(0, i)) + '<mark>' + esc(t.slice(i, i + term.length)) +
          '</mark>' + esc(t.slice(i + term.length));

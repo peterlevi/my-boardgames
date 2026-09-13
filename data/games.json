@@ -2,6 +2,12 @@
  {
   "id": "421",
   "name": "1830: Railways & Robber Barons",
+  "alt_names": [
+   "1830: Ferrovie e Capitani d'Industria",
+   "1830: Schienenleger & Spekulanten",
+   "1830: The Game of Railroads and Robber Barons",
+   "1830：铁路与资本大鳄"
+  ],
   "year": 1986,
   "rank": 319,
   "types": [
@@ -227,6 +233,9 @@
  {
   "id": "17405",
   "name": "1846: The Race for the Midwest",
+  "alt_names": [
+   "1846: 美国中西部铁路竞速"
+  ],
   "year": 2005,
   "rank": 666,
   "types": [
@@ -435,6 +444,9 @@
  {
   "id": "253608",
   "name": "18Chesapeake",
+  "alt_names": [
+   "18切萨皮克"
+  ],
   "year": 2018,
   "rank": 1540,
   "types": [
@@ -650,6 +662,10 @@
  {
   "id": "371947",
   "name": "3 Ring Circus",
+  "alt_names": [
+   "3リングサーカス",
+   "Цирк трёх арен"
+  ],
   "year": 2023,
   "rank": 1608,
   "types": [
@@ -833,6 +849,18 @@
  {
   "id": "68448",
   "name": "7 Wonders",
+  "alt_names": [
+   "7 csoda",
+   "7 Cudów Świata",
+   "7 divů světa",
+   "7 Чудес",
+   "7 สิ่งมหัศจรรย์",
+   "7 원더스",
+   "Τα 7 θαύματα του κόσμου",
+   "七大奇蹟",
+   "七大奇迹",
+   "世界の七不思議"
+  ],
   "year": 2010,
   "rank": 118,
   "types": [
@@ -1082,6 +1110,20 @@
  {
   "id": "173346",
   "name": "7 Wonders Duel",
+  "alt_names": [
+   "7 Csoda Párbaj",
+   "7 Cudów Świata: Pojedynek",
+   "7 Divů světa: Duel",
+   "7 Чудес: Дуэль",
+   "7 สิ่งมหัศจรรย์ ดวล",
+   "7 원더스 대결",
+   "لعبة مبارزة العجائب السبعة",
+   "七大奇蹟 對決",
+   "七大奇迹:对决",
+   "七大奇迹：对决",
+   "七大对决",
+   "世界の七不思議:デュエル"
+  ],
   "year": 2015,
   "rank": 24,
   "types": [
@@ -1305,6 +1347,20 @@
  {
   "id": "5",
   "name": "Acquire",
+  "alt_names": [
+   "Acquire: 60th Anniversary Edition",
+   "Cartel",
+   "Grand Hôtel",
+   "Hotel-Haie",
+   "Hotel-König",
+   "Investor",
+   "Trust",
+   "アクワイア",
+   "併購風雲",
+   "并购",
+   "并购风云：60周年纪念版",
+   "어콰이어"
+  ],
   "year": 1963,
   "rank": 369,
   "types": [
@@ -1522,6 +1578,17 @@
  {
   "id": "383179",
   "name": "Age of Innovation",
+  "alt_names": [
+   "Era da Inovação",
+   "La Era de la Innovación",
+   "Era Innowacji",
+   "Terra Mystica: L'Era delle Scoperte",
+   "Terra Mystica: Találmányok kora",
+   "Ера інновацій",
+   "テラミスティカ：革新の時代",
+   "神秘大地：大創造時代",
+   "혁신의 시대"
+  ],
   "year": 2023,
   "rank": 56,
   "types": [
@@ -1738,6 +1805,20 @@
  {
   "id": "200680",
   "name": "Agricola (Revised Edition)",
+  "alt_names": [
+   "Agrícola (Edição Revisada)",
+   "Agrícola (edición revisada)",
+   "Agricola expert-editie",
+   "Agricola: Advanced Level",
+   "Agricola: Revised Edition",
+   "Agricola: Überarbeitete Neuauflage",
+   "Agricola: wersja dla graczy",
+   "Агрикола. Новое издание",
+   "アグリコラ：リバイズドエディション",
+   "农场主",
+   "農家樂",
+   "아그리콜라 (개정판)"
+  ],
   "year": 2016,
   "rank": 87,
   "types": [
@@ -1948,6 +2029,23 @@
  {
   "id": "205418",
   "name": "Agricola: Family Edition",
+  "alt_names": [
+   "Agricola Editia de Familie",
+   "Agricola rodzinna",
+   "Agricola: Edición Familiar",
+   "Agricola: Edizione Famiglia",
+   "Agricola: Familie-Editie",
+   "Agricola: Familienspiel",
+   "Agricola: Familieudgave",
+   "Agricola: Familieutgave",
+   "Agricola: Famille",
+   "Agricola: Perheversio",
+   "Agricola: The Family Game",
+   "Agricola: Wersja rodzinna",
+   "アグリコラ：ファミリーバージョン",
+   "農家樂：闔家歡樂版",
+   "아그리콜라 패밀리"
+  ],
   "year": 2016,
   "rank": 1706,
   "types": [
@@ -2146,6 +2244,13 @@
  {
   "id": "358981",
   "name": "Air, Land, & Sea: Spies, Lies, & Supplies",
+  "alt_names": [
+   "Animali in Guerra: Spie, Bugie e Fattorie",
+   "Bestioles En Guerre: Bobards, Pétards & Mouchards",
+   "Critters at War: Flies, Lies & Supplies",
+   "Zwierzęcy front: Spiski, piski i przyciski",
+   "Звірі на війні: Невидимі фронти"
+  ],
   "year": 2022,
   "rank": 1544,
   "types": [
@@ -2326,6 +2431,22 @@
  {
   "id": "161970",
   "name": "Alchemists",
+  "alt_names": [
+   "Alchemicy",
+   "De Alchemist",
+   "Die Alchemisten",
+   "Alchimistes",
+   "Alchimisti",
+   "Alchimiștii",
+   "Alchymisté",
+   "Alquimistas",
+   "Алхимики",
+   "Алхіміки",
+   "アルケミスト",
+   "煉金術士",
+   "알케미스트",
+   "연금술 아카데미"
+  ],
   "year": 2014,
   "rank": 179,
   "types": [
@@ -2533,6 +2654,11 @@
  {
   "id": "299960",
   "name": "Alma Mater",
+  "alt_names": [
+   "アルマ・マータ ～我らが母校～",
+   "盛譽學院",
+   "알마마터"
+  ],
   "year": 2020,
   "rank": 1269,
   "types": [
@@ -2733,6 +2859,7 @@
  {
   "id": "354568",
   "name": "Amun-Re: 20th Anniversary Edition",
+  "alt_names": [],
   "year": 2023,
   "rank": 2782,
   "types": [
@@ -2923,6 +3050,18 @@
  {
   "id": "185343",
   "name": "Anachrony",
+  "alt_names": [
+   "Anachrony Essential Edition",
+   "Anachrony Grundspiel",
+   "Anachrony: A jövő útjai",
+   "Anachrony: Edição Essencial",
+   "Анахронность",
+   "アナクロニー",
+   "时空乱序：精华版",
+   "时空错乱",
+   "時空亂序",
+   "아나크로니"
+  ],
   "year": 2017,
   "rank": 63,
   "types": [
@@ -3128,6 +3267,9 @@
  {
   "id": "311193",
   "name": "Anno 1800: The Board Game",
+  "alt_names": [
+   "Anno 1800: Das Brettspiel"
+  ],
   "year": 2020,
   "rank": 301,
   "types": [
@@ -3350,6 +3492,26 @@
  {
   "id": "236457",
   "name": "Architects of the West Kingdom",
+  "alt_names": [
+   "Architecten van het Westelijk Koninkrijk",
+   "Architectes du Royaume de l'Ouest",
+   "Architectes du royaume de l'ouest",
+   "Architekci Zachodniego Królestwa",
+   "Architekten des Westfrankenreichs",
+   "Architekti Západního království",
+   "Architetti del Regno Occidentale",
+   "Arquitectos del Reino del Oeste",
+   "Arquitetos do Reino Ocidental",
+   "A nyugati királyság építőmesterei",
+   "Архитекторы Западного Королевства",
+   "Архітектори Західного Королівства",
+   "สถาปนิกแห่งนครตะวันตก",
+   "西フランク王国の建築家",
+   "西國建築師",
+   "西國建築師 Architects of the West Kingdom",
+   "西方王国建筑师",
+   "서쪽 왕국의 건축가"
+  ],
   "year": 2018,
   "rank": 132,
   "types": [
@@ -3581,6 +3743,16 @@
  {
   "id": "342942",
   "name": "Ark Nova",
+  "alt_names": [
+   "Archa Nova",
+   "Arche Nova",
+   "Новий ковчег",
+   "นาวาสรรพสัตว์",
+   "アーク・ノヴァ 新たなる方舟",
+   "方舟动物园",
+   "方舟動物園",
+   "아크 노바"
+  ],
   "year": 2021,
   "rank": 2,
   "types": [
@@ -3803,6 +3975,9 @@
  {
   "id": "154825",
   "name": "Arkwright",
+  "alt_names": [
+   "阿克莱特"
+  ],
   "year": 2014,
   "rank": 881,
   "types": [
@@ -4017,6 +4192,12 @@
  {
   "id": "300664",
   "name": "Arkwright: The Card Game",
+  "alt_names": [
+   "Arkwright: A kártyajáték",
+   "Arkwright: El Juego de Cartas",
+   "Arkwright: Karetní hra",
+   "아크라이트: 카드 게임"
+  ],
   "year": 2021,
   "rank": 4211,
   "types": [
@@ -4221,6 +4402,15 @@
  {
   "id": "230802",
   "name": "Azul",
+  "alt_names": [
+   "Azul Mini",
+   "Azul Міні",
+   "アズール",
+   "アズール ミニ",
+   "花磚物語",
+   "아줄",
+   "아줄 미니"
+  ],
   "year": 2017,
   "rank": 99,
   "types": [
@@ -4427,6 +4617,9 @@
  {
   "id": "266164",
   "name": "Babylonia",
+  "alt_names": [
+   "バビロニア"
+  ],
   "year": 2019,
   "rank": 828,
   "types": [
@@ -4613,6 +4806,11 @@
  {
   "id": "351538",
   "name": "Bamboo",
+  "alt_names": [
+   "Bambou",
+   "Бамбук",
+   "竹靈之道"
+  ],
   "year": 2023,
   "rank": 2147,
   "types": [
@@ -4788,6 +4986,21 @@
  {
   "id": "143741",
   "name": "BANG! The Dice Game",
+  "alt_names": [
+   "Bang: Jocul de Zaruri",
+   "BANG: Le Jeu de Dés",
+   "BANG! El juego de dados",
+   "BANG! Gra kościana",
+   "Bang! Het dobbelspel",
+   "BANG! Kockajáték",
+   "Bang! Kostková hra",
+   "BANG! με Ζάρια",
+   "BANG! Игра със зарове",
+   "Бенґ! Кубикова гра",
+   "Бэнг! За пригоршню кубиков",
+   "砰！骰子版",
+   "뱅! 주사위 게임"
+  ],
   "year": 2013,
   "rank": 893,
   "types": [
@@ -5008,6 +5221,16 @@
  {
   "id": "251247",
   "name": "Barrage",
+  "alt_names": [
+   "Duzzasztómű",
+   "Přehrada",
+   "Wasserkraft",
+   "Гребля",
+   "Плотина",
+   "バラージ",
+   "强国争坝",
+   "버라지"
+  ],
   "year": 2019,
   "rank": 40,
   "types": [
@@ -5217,6 +5440,17 @@
  {
   "id": "369880",
   "name": "Beer & Bread",
+  "alt_names": [
+   "Brood & Bier",
+   "Cerveza y Pan",
+   "Hleb & pivo",
+   "D'Orge et de Blé",
+   "Pivo a chléb",
+   "Sör és kenyér",
+   "Пиво та хліб",
+   "Хляб и Бира",
+   "ビア＆ブレッド"
+  ],
   "year": 2022,
   "rank": 739,
   "types": [
@@ -5410,6 +5644,11 @@
  {
   "id": "28723",
   "name": "Before the Wind",
+  "alt_names": [
+   "Les vents du nord",
+   "Voor de Wind",
+   "Vor dem Wind"
+  ],
   "year": 2007,
   "rank": 3697,
   "types": [
@@ -5567,6 +5806,13 @@
  {
   "id": "317985",
   "name": "Beyond the Sun",
+  "alt_names": [
+   "Вдали от Солнца",
+   "За межами Сонця",
+   "ビヨンド・ザ・サン",
+   "太阳之外",
+   "태양 너머로"
+  ],
   "year": 2020,
   "rank": 114,
   "types": [
@@ -5754,6 +6000,15 @@
  {
   "id": "34219",
   "name": "Biblios",
+  "alt_names": [
+   "Scriptorium",
+   "Scripts & Scribes",
+   "Τα Χειρόγραφα του Αββαείου",
+   "Аббатство",
+   "ビブリオス",
+   "ビブリオス：中世の写本師",
+   "文獻室"
+  ],
   "year": 2007,
   "rank": 524,
   "types": [
@@ -5951,6 +6206,12 @@
  {
   "id": "323612",
   "name": "Bitoku",
+  "alt_names": [
+   "Битоку",
+   "ราชาภูติ",
+   "尚德之灵",
+   "森靈之道"
+  ],
   "year": 2021,
   "rank": 310,
   "types": [
@@ -6146,6 +6407,12 @@
  {
   "id": "230244",
   "name": "Black Angel",
+  "alt_names": [
+   "Чёрный ангел",
+   "ブラックエンジェル",
+   "黑天使号",
+   "블랙 엔젤"
+  ],
   "year": 2019,
   "rank": 1039,
   "types": [
@@ -6353,6 +6620,12 @@
  {
   "id": "262215",
   "name": "Blackout: Hong Kong",
+  "alt_names": [
+   "Гонконг во тьме",
+   "ブラックアウト香港",
+   "香港大停電",
+   "블랙아웃: 홍콩"
+  ],
   "year": 2018,
   "rank": 671,
   "types": [
@@ -6560,6 +6833,15 @@
  {
   "id": "244331",
   "name": "Blue Lagoon",
+  "alt_names": [
+   "Laguna",
+   "Laguna Albastră",
+   "Modrá laguna",
+   "Голубая лагуна",
+   "ブルーラグーン",
+   "青青珊瑚島",
+   "블루 라군"
+  ],
   "year": 2018,
   "rank": 925,
   "types": [
@@ -6765,6 +7047,30 @@
  {
   "id": "11",
   "name": "Bohnanza",
+  "alt_names": [
+   "Babszüret",
+   "Bohnanza Dahlia",
+   "Bohnanza: Fan Edition",
+   "Bohnanza: Ich glaub' es hackt!",
+   "Bohnanza: Jubiläumsedition",
+   "Bohnanza: Le Business des Haricots",
+   "Bohnanza: Por um Punhado de Feijões!",
+   "Bohnanza: Por un Puñado de Judías",
+   "Bohnanza: Φασούλι το Φασούλι",
+   "Bonanza",
+   "Boonanza",
+   "Fasolki",
+   "Fazole",
+   "Fazole: A je to v pytli!",
+   "Landleven Spel",
+   "Semenza",
+   "Бонанза",
+   "ボーナンザ",
+   "ボーナンザ",
+   "眾豆得金",
+   "種豆",
+   "보난자"
+  ],
   "year": 1997,
   "rank": 545,
   "types": [
@@ -6980,6 +7286,11 @@
  {
   "id": "343905",
   "name": "Boonlake",
+  "alt_names": [
+   "ブーンレイク",
+   "天恩湖",
+   "분레이크"
+  ],
   "year": 2021,
   "rank": 501,
   "types": [
@@ -7184,6 +7495,14 @@
  {
   "id": "224517",
   "name": "Brass: Birmingham",
+  "alt_names": [
+   "Brass. Бирмингем",
+   "Brass. Бірмінгем",
+   "ブラス：バーミンガム",
+   "工业革命：伯明翰(Chinese edition) (2018)",
+   "工業革命：伯明翰",
+   "브라스: 버밍엄"
+  ],
   "year": 2018,
   "rank": 1,
   "types": [
@@ -7429,6 +7748,16 @@
  {
   "id": "28720",
   "name": "Brass: Lancashire",
+  "alt_names": [
+   "Brass",
+   "Brass Deluxe",
+   "Brass. Ланкашир",
+   "Kohle: Mit Volldampf zum Reichtum",
+   "ブラス：ランカシャー",
+   "工業革命",
+   "工業革命：蘭開夏",
+   "브라스: 랭커셔"
+  ],
   "year": 2007,
   "rank": 22,
   "types": [
@@ -7638,6 +7967,16 @@
  {
   "id": "337765",
   "name": "Brian Boru: High King of Ireland",
+  "alt_names": [
+   "Brian Boru: Alto Rei da Irlanda",
+   "Brian Boru: Haut Roi d'Irlande",
+   "Brian Boru: Hochkönig von Irland",
+   "Brian Boru: Le Grand Roi d'Irlande",
+   "Brian Boru: Velkokrál Irska",
+   "Brian Boru: Wielki Król Irlandii",
+   "ブライアン・ボル〜アイルランドの上王",
+   "브리안 보루: 아일랜드 통일 전쟁"
+  ],
   "year": 2021,
   "rank": 732,
   "types": [
@@ -7849,6 +8188,12 @@
  {
   "id": "172308",
   "name": "Broom Service",
+  "alt_names": [
+   "Broom Service: Szalone czarownice",
+   "Верхом на метле",
+   "ブルームサービス",
+   "魔女快遞Broom Service"
+  ],
   "year": 2015,
   "rank": 669,
   "types": [
@@ -8050,6 +8395,7 @@
  {
   "id": "144592",
   "name": "Bruxelles 1893",
+  "alt_names": [],
   "year": 2013,
   "rank": 538,
   "types": [
@@ -8253,6 +8599,10 @@
  {
   "id": "552",
   "name": "Bus",
+  "alt_names": [
+   "Bus: Anniversary Edition",
+   "Bus: Complete Edition"
+  ],
   "year": 1999,
   "rank": 447,
   "types": [
@@ -8456,6 +8806,7 @@
  {
   "id": "38032",
   "name": "Byzanz",
+  "alt_names": [],
   "year": 2008,
   "rank": 3702,
   "types": [
@@ -8659,6 +9010,9 @@
  {
   "id": "316343",
   "name": "Capital Lux 2: Pocket",
+  "alt_names": [
+   "Хроніки Мегаполіса"
+  ],
   "year": 2021,
   "rank": 5454,
   "types": [],
@@ -8832,6 +9186,15 @@
  {
   "id": "230914",
   "name": "Carcassonne Big Box 6",
+  "alt_names": [
+   "Carcassonne Big Box",
+   "Carcassonne Plus 2017",
+   "Carcassonne: Big Box 2017",
+   "Каркасон: Голяма кутия",
+   "Каркассон: Big Box",
+   "卡卡頌2.0大盒版",
+   "카르카손: 빅 박스"
+  ],
   "year": 2017,
   "rank": null,
   "types": [],
@@ -9042,6 +9405,11 @@
  {
   "id": "310873",
   "name": "Carnegie",
+  "alt_names": [
+   "Карнеги",
+   "カーネギー",
+   "카네기"
+  ],
   "year": 2022,
   "rank": 130,
   "types": [
@@ -9260,6 +9628,31 @@
  {
   "id": "263918",
   "name": "Cartographers",
+  "alt_names": [
+   "Cartografii: O poveste în universul \"Roll Player\"",
+   "Cartógrafos",
+   "Cartógrafos: Um Conto de Roll Player",
+   "Cartógrafos: Un Relato de Roll Player",
+   "Cartographers: A Roll Player Tale",
+   "Cartographers: Ambientato nel mondo di Roll Player",
+   "Cartographers: Een Roll Playing Verhaal",
+   "Cartographers: Une épopée dans l'univers de Roll Player",
+   "Doodle Realms",
+   "Kartografi",
+   "Kartografové",
+   "Kartografowie",
+   "Kartografowie: Opowieść ze świata Roll Player",
+   "Kartográfusok",
+   "Der Kartograph: Ein Spiel im Roll Player Universum",
+   "Kuzey Kaşifleri",
+   "Ο Χαρτογράφος: Η Ιστορία Ενός Εξερευνητή",
+   "Картографи",
+   "Картографы",
+   "カートグラファー",
+   "王国制图师",
+   "王國製圖師",
+   "지도 제작자들"
+  ],
   "year": 2019,
   "rank": 185,
   "types": [
@@ -9606,6 +9999,13 @@
  {
   "id": "271320",
   "name": "The Castles of Burgundy",
+  "alt_names": [
+   "Les Châteaux de Bourgogne",
+   "Hrady v Burgundsku",
+   "Zamki Burgundii",
+   "勃根地城堡豪華版",
+   "버건디의 성"
+  ],
   "year": 2019,
   "rank": null,
   "types": [],
@@ -9834,6 +10234,72 @@
  {
   "id": "13",
   "name": "Catan",
+  "alt_names": [
+   "Catan (Колонизаторы)",
+   "Catan telepesei",
+   "Catan: Das Spiel",
+   "Catan: Die Bordspel",
+   "Catan: El Juego",
+   "Catan: Gra planszowa",
+   "Catan: Il Gioco",
+   "Catan: Landnemarnir",
+   "Catan: O Jogo",
+   "Catan: Osnovna igra",
+   "Catan: Základní hra",
+   "Catane",
+   "Catanin Uudisasukkaat",
+   "I Coloni di Catan",
+   "I Coloni di Catan: Il Gioco",
+   "I Coloni di Katan",
+   "Coloniștii din Catan",
+   "Colonizadores de Catan",
+   "Los Colonos de Catán",
+   "Les Colons de Catane",
+   "Les Colons de Katäne",
+   "Os Descobridores de Catan",
+   "Los Descubridores de Catán",
+   "Els Colons de Catan",
+   "Katan",
+   "Katan no Kaitakusya",
+   "Katanas ieceïotâji",
+   "Katanas Ieceļotāji",
+   "Katani Asustajad",
+   "Katano salos naujakuriai",
+   "Katano Salos Naujakuriai",
+   "De Kolonisten van Catan",
+   "Naseljenci otoka Catan",
+   "Naseljenici ostrva Katan",
+   "Naseljenici ostrva Katan / Насељеници острва Катан",
+   "Naseljenici Otoka Catan",
+   "Die Ontdekkers van Catan",
+   "Osadníci z Katanu",
+   "Osadnicy z Catanu",
+   "The Settlers",
+   "Settlers fra Catan",
+   "The Settlers fra Catan",
+   "Settlers från Catan",
+   "The Settlers från Catan",
+   "The Settlers of Catan",
+   "Die Siedler von Catan",
+   "World's Smallest Catan",
+   "Οι Άποικοι του Κατάν",
+   "Заселниците на Катан",
+   "Катан",
+   "Колонизаторы",
+   "המתיישבים של קטאן",
+   "קטאן",
+   "นักบุกเบิกแห่ง Catan",
+   "カタン スタンダード版",
+   "カタンの開拓者",
+   "カタンの開拓者たち",
+   "カタンの開拓者たち スタンダード版",
+   "卡坦 : 基礎",
+   "卡坦岛",
+   "卡坦島",
+   "카탄",
+   "카탄: 보드게임의 제왕",
+   "카탄의 개척자"
+  ],
   "year": 1995,
   "rank": 626,
   "types": [
@@ -10058,6 +10524,20 @@
  {
   "id": "102794",
   "name": "Caverna: The Cave Farmers",
+  "alt_names": [
+   "Caverna",
+   "Caverna: Die Höhlenbauern",
+   "Caverna: I Contadini delle Caverne",
+   "Caverna: il Popolo delle Montagne",
+   "Caverna: Los Granjeros Trogloditas",
+   "Caverna: Sedláci z jeskyní",
+   "Caverna: Пещерные фермеры",
+   "Kawerna: Rolnicy z Jaskiń",
+   "カヴェルナ: 洞窟の農夫たち",
+   "洞穴農夫",
+   "洞穴農夫",
+   "카베르나: 동굴 속 농부들"
+  ],
   "year": 2013,
   "rank": 62,
   "types": [
@@ -10288,6 +10768,12 @@
  {
   "id": "284818",
   "name": "Caylus 1303",
+  "alt_names": [
+   "Caylus 1303:腓力四世的建築師們",
+   "Келюс 1303",
+   "ケイラス1303",
+   "케일러스 1303"
+  ],
   "year": 2019,
   "rank": 1027,
   "types": [
@@ -10499,6 +10985,178 @@
  {
   "id": "171",
   "name": "Chess",
+  "alt_names": [
+   "2020 Battle for The White House Chess Set",
+   "Ajax Chessmen",
+   "Ajedrez",
+   "Ajedrez con Reloj Profesional",
+   "All American Chessmen",
+   "Ambassador Chess",
+   "Archesco Gemini Chess Set",
+   "Backpack Chess",
+   "Best Chess Set Ever",
+   "Boxwood Chessmen",
+   "Buffy the Vampire Slayer Chess Set",
+   "Chess for Dummies",
+   "Chess for Juniors",
+   "Chess King's 48",
+   "Chess Men",
+   "Chess Set",
+   "Chess Tablette",
+   "Chess Teacher",
+   "Chess Tutor",
+   "Chesseasy",
+   "ChessGenius",
+   "Chessmaster",
+   "Chessmen",
+   "Chicago Chess",
+   "Children's Chess",
+   "Classic Chess Set",
+   "Cờ Vua",
+   "Coca Cola Chess",
+   "Connoisseur Chess Set",
+   "Damas e Xadrez",
+   "Dark Wood Chess Set",
+   "DC Superheroes Chess: Schach",
+   "DC Superheroes Special Collection",
+   "Deluxe Chess",
+   "Deluxe Chess Tutor",
+   "Deluxe Glass Chess Set",
+   "Destiny Chess",
+   "Disney Chess",
+   "Disney Mickey Mouse Chess",
+   "Disney Villains Chess",
+   "Doctor Who Animated Chess",
+   "Echecs",
+   "Escacs",
+   "Excalibur: Squire",
+   "Familie Feuerstein",
+   "FIDE chess",
+   "Fridgechess",
+   "Gallant Knight",
+   "Game Decor Chess",
+   "Golden Chess and Checker-Board",
+   "Groovy Tube: Knights and Castles",
+   "Hand-Painted Wooden Children's Chess",
+   "Harry Potter Chess",
+   "Harry Potter Wizard Chess",
+   "Der Herr der Ringe: Die Rückkehr des Königs Schach",
+   "Initiation aux Echecs",
+   "Introductory Chess",
+   "Jeu d'Échec Hiéroglyphes",
+   "Le Jeu d'échecs",
+   "Jeu d'Échecs Deluxe",
+   "Justice League Chess Set",
+   "Karim Rashid Chess Set",
+   "Kasparov Atlas",
+   "Kasparov MK12 SciSys",
+   "Kingsway Staunton Tournament Style Chess Set",
+   "La$ Vega$ Chess",
+   "Learn Chess the Easy Way",
+   "The Legend of Zelda Chess Set",
+   "Lego Harry Potter Hogwarts Wizard's Chess",
+   "LEGO Iconic Chess Set",
+   "The Little Jewel Magnetic Chess Set",
+   "Lord of The Rings Battle for Middle Earth Chess Set",
+   "The Lord of the Rings: The Fellowship of the Ring Chess Set",
+   "The Lord of the Rings: The Return of the King  Chess Set",
+   "The Lord of the Rings: The Two Towers Chess Set",
+   "Magnet Schach Heyne",
+   "Magnet-Schach",
+   "Magnetic Chess",
+   "Magnetic Schach",
+   "Magnetic Staunton Chess Set",
+   "Manchester United ChampionsChess Set",
+   "Marvel Chess",
+   "Marvel Heroes Chess",
+   "Meeple Chess",
+   "Mickey the True Original 90th Anniversary Collector's Chess Set",
+   "Minecraft Chess",
+   "MoMA Chess Set",
+   "The Monsters Chess Set",
+   "Muppet Show Chess",
+   "New York Chess",
+   "On the Move Wooden Chess Set",
+   "One Set Chess Men",
+   "Open Chess",
+   "Orion 2000",
+   "Paper Chess",
+   "Peanuts Chess",
+   "Pirates of the Caribbean Chess",
+   "Pirates of the Caribbean: At World's End Chess",
+   "Pirates of the Caribbean: Dead Man's Chest Chess",
+   "Plastic Chessmen",
+   "Pocket Chess",
+   "Renaissance Chessmen",
+   "The Rose Chess",
+   "Royal Staunton Chess",
+   "Šachmatai",
+   "Šachy",
+   "Šah",
+   "Sakk",
+   "Šakki",
+   "Ŝako",
+   "Satranç",
+   "Scacchi",
+   "Schaak",
+   "Schaakschool",
+   "Schaakspel",
+   "Schach",
+   "Schäch Schule",
+   "Schachkassette",
+   "Schachschule",
+   "Schachspiel mit einsteckbaren Figuren und Dame-Steinen",
+   "Schachspiel: Schweine gegen den Rest der Tierwelt",
+   "Schack",
+   "Schaken",
+   "Schaken",
+   "SciSys Travel Mate II",
+   "Scooby-Doo! Chess",
+   "Sculptured Chess By Ganine",
+   "Sculptured Chess By Ganine",
+   "Sculptured Chess By Ganine",
+   "Set of Chessmen",
+   "Shakki",
+   "Shrek Chess Game",
+   "The Simpsons 3-D Chess",
+   "Sjakk",
+   "Skak",
+   "Skák",
+   "South Park Collector Chess Game",
+   "Space Chess",
+   "Star Wars 3D Chess Game",
+   "Star Wars Chess",
+   "Star Wars Chess: Schach",
+   "Star Wars The Official Chess Collection",
+   "Star Wars: Episode II Attack of the Clones – Pewter & Bronze Effect Chess Set",
+   "Star Wars: Saga Edition Chess Set",
+   "Staunton 3",
+   "Staunton Boxwood Chess",
+   "Staunton Chess",
+   "Super Mario Brothers Chess",
+   "Super Mario Chess",
+   "Szachy",
+   "A Team Fortress Game of Chess",
+   "Tezuka Osamu Characters Chess",
+   "Tournament Chess Set",
+   "Tournament Chessmen",
+   "Tournament Quality Chess",
+   "Transformers Chess",
+   "Travelling Chess",
+   "Wizard's Chess for Beginniners",
+   "World's Smallest Chess",
+   "Xadrez",
+   "Xake",
+   "Σκάκι",
+   "Шахи",
+   "Шахматы",
+   "אישקוקה",
+   "שח",
+   "שח מט",
+   "チェス",
+   "西洋棋",
+   "체스"
+  ],
   "year": 1475,
   "rank": 463,
   "types": [
@@ -10746,6 +11404,25 @@
  {
   "id": "205398",
   "name": "Citadels",
+  "alt_names": [
+   "Citadela",
+   "Citadela DeLuxe",
+   "Citadele",
+   "Citadella",
+   "Citadelles",
+   "Citadelles: Quatrième édition",
+   "Ciudadelas",
+   "Cytadela",
+   "Machiavelli",
+   "Machiavelli Deluxe",
+   "Цитадели",
+   "Цитадели Делюкс",
+   "Цитаделі",
+   "あやつり人形",
+   "富饒之城",
+   "荣耀之城",
+   "시타델"
+  ],
   "year": 2016,
   "rank": 574,
   "types": [
@@ -10955,6 +11632,12 @@
  {
   "id": "400602",
   "name": "Civolution",
+  "alt_names": [
+   "Civolución",
+   "シヴォリューション",
+   "文明演化",
+   "시볼루션"
+  ],
   "year": 2024,
   "rank": 160,
   "types": [
@@ -11144,6 +11827,41 @@
  {
   "id": "178900",
   "name": "Codenames",
+  "alt_names": [
+   "Codenames (کدنیمز)",
+   "Codenames Afrikaans",
+   "Codenames Arabic: رسائل سرية",
+   "Codenames Edisi Indonesia",
+   "Codenames Québec",
+   "Codenames XXL",
+   "Codenames: Кодовые Имена XXL",
+   "Codi secret",
+   "Código secreto",
+   "Codinomes",
+   "Fedőnevek",
+   "Fedőnevek",
+   "Krycí jména",
+   "Krycí jména XXL",
+   "Krycie mená",
+   "Nome in Codice",
+   "Nome in Codice XXL",
+   "Nume de Cod",
+   "Nume de Cod XXL",
+   "Tajniacy",
+   "Κωδική Ονομασία",
+   "Кодови имена",
+   "Кодові імена",
+   "Кодові імена: гра слів",
+   "Кодовые Имена",
+   "שם-קוד",
+   "الأسماء الحركية",
+   "コードネーム",
+   "コードネーム XXL",
+   "機密代號",
+   "機密代號: 廣東話版",
+   "行动代号",
+   "코드네임"
+  ],
   "year": 2015,
   "rank": 163,
   "types": [
@@ -11362,6 +12080,27 @@
  {
   "id": "224037",
   "name": "Codenames: Duet",
+  "alt_names": [
+   "Codenames: Duet XXL",
+   "Codenames: Duett",
+   "Codenames: Duo",
+   "Código Secreto: Dueto",
+   "Código Secreto: Dúo",
+   "Fedőnevek: Négyszemközt",
+   "Krycí jména: Duet",
+   "Krycie mená: Duet",
+   "Nome in Codice Duetto",
+   "Nume de cod Duet",
+   "Nume de Cod: Duet XXL",
+   "Tajniacy: Duet",
+   "Кодови имена: Тандем",
+   "Кодові імена: Дует",
+   "Кодовые имена. Дуэт",
+   "שם-קוד דואט",
+   "コードネーム：デュエット",
+   "行动代号：二重奏",
+   "코드네임: 듀엣"
+  ],
   "year": 2017,
   "rank": 276,
   "types": [
@@ -11546,6 +12285,31 @@
  {
   "id": "198773",
   "name": "Codenames: Pictures",
+  "alt_names": [
+   "Codenames: Images",
+   "Codenames: Pictures XXL",
+   "Codenames: Slike",
+   "Codenames: Εικόνες",
+   "Código Secreto: Imágenes",
+   "Código Secreto: Imagens",
+   "Fedőnevek képekkel",
+   "Fedőnevek: Képekkel",
+   "Krycí jména: Obrázky",
+   "Nome in Codice: Visual",
+   "Nume de Cod: Imagini",
+   "Nume de Cod: Imagini XXL",
+   "Tajniacy: Obrazki",
+   "Tajniacy: Obrazki XXL",
+   "Кодови имена: Картини",
+   "Кодові Імена: Малюнки",
+   "Кодовые имена: Картинки",
+   "שם-קוד תמונות",
+   "الأسماء الحركية النسخة المصورة",
+   "کدنیمز تصاویر (Codenames: Pictures)",
+   "コードネーム：ピクチャーズ",
+   "行动代号：图片版",
+   "코드네임: 픽처스"
+  ],
   "year": 2016,
   "rank": 514,
   "types": [
@@ -11752,6 +12516,11 @@
  {
   "id": "245638",
   "name": "Coimbra",
+  "alt_names": [
+   "コインブラ",
+   "科英布拉",
+   "코임브라"
+  ],
   "year": 2018,
   "rank": 266,
   "types": [
@@ -11955,6 +12724,18 @@
  {
   "id": "158899",
   "name": "Colt Express",
+  "alt_names": [
+   "Colt Express XXL",
+   "Colt Express Η Ληστεία του Τραίνου",
+   "Colt Express: 10th Anniversary Edition",
+   "Колт Експрес",
+   "Кольт Експрес",
+   "Кольт Экспресс",
+   "ขุมทรัพย์ม้าเหล็ก",
+   "コルト・エクスプレス",
+   "柯爾特快車",
+   "콜트 익스프레스"
+  ],
   "year": 2014,
   "rank": 564,
   "types": [
@@ -12166,6 +12947,9 @@
  {
   "id": "256916",
   "name": "Concordia Venus",
+  "alt_names": [
+   "コンコルディア　ヴィーナス"
+  ],
   "year": 2018,
   "rank": 104,
   "types": [
@@ -12380,6 +13164,16 @@
  {
   "id": "276042",
   "name": "Conspiracy: Abyss Universe",
+  "alt_names": [
+   "Abyss Conspiracy: Οι Άρχοντες του Βυθού",
+   "Abyss: Verschwörung",
+   "Conspiracy: Intrighi nel Mondo di Abyss",
+   "Konspiracja: Uniwersum Abyss",
+   "Spiknutí: Království hlubiny",
+   "Повелители Бездны",
+   "دسیسه",
+   "深淵：密謀"
+  ],
   "year": 2019,
   "rank": 1304,
   "types": [
@@ -12580,6 +13374,7 @@
  {
   "id": "453740",
   "name": "Container",
+  "alt_names": [],
   "year": 2026,
   "rank": 1462,
   "types": [
@@ -12786,6 +13581,27 @@
  {
   "id": "131357",
   "name": "Coup",
+  "alt_names": [
+   "Coup X",
+   "Coup کودتا",
+   "Coup: City State",
+   "Coup: Ciudad Corrupta",
+   "Coup: Cuộc chiến vương quyền",
+   "Coup: Noční klub",
+   "Coup: Urbis",
+   "Coup: Паропанк",
+   "Coup. Переворот",
+   "Coup+ (+کودتا)",
+   "Entrika",
+   "Światowy Konflikt",
+   "Το Κόλπο",
+   "Το Κόλπο: 2ος Κύκλος",
+   "Переворот",
+   "הפיכה עיר-מדינה",
+   "เกมโค่นอำนาจ",
+   "クー",
+   "政變疑雲"
+  ],
   "year": 2012,
   "rank": 727,
   "types": [
@@ -12985,6 +13801,30 @@
  {
   "id": "284083",
   "name": "The Crew: The Quest for Planet Nine",
+  "alt_names": [
+   "The Crew",
+   "The Crew: Alla Scoperta del Pianeta Nove",
+   "The Crew: En quête de la neuvième planète",
+   "The Crew: În căutarea celei de-a noua planete",
+   "The Crew: Iskanje devetega planeta",
+   "The Crew: Küldetés a 9. bolygóhoz",
+   "De Crew: Op weg naar de 9e Planeet",
+   "Die Crew: Reist gemeinsam zum 9. Planeten",
+   "Keşif: Gezegen 9 Görevi",
+   "Odysea: Společně k deváté planetě",
+   "Posada: Potraga za devetom planetom",
+   "A Tripulação: Em Busca do Nono Planeta",
+   "La Tripulación: En busca del noveno planeta",
+   "Załoga: W poszukiwaniu dziewiątej planety",
+   "Η Αποστολή: Αναζητώντας τον Ένατο Πλανήτη",
+   "Екипаж",
+   "Екіпаж: Пошуки дев'ятої планети",
+   "Экипаж: Экспедиция к девятой планете",
+   "הצוות: המסע לכוכב הלכת תשע",
+   "ザ・クルー 第９惑星の探索",
+   "星際探險隊",
+   "스페이스 크루: 9번째 행성을 찾아서"
+  ],
   "year": 2019,
   "rank": 96,
   "types": [
@@ -13180,6 +14020,7 @@
  {
   "id": "192457",
   "name": "Cry Havoc",
+  "alt_names": [],
   "year": 2016,
   "rank": 1025,
   "types": [
@@ -13395,6 +14236,9 @@
  {
   "id": "249411",
   "name": "Cuzco",
+  "alt_names": [
+   "쿠스코"
+  ],
   "year": 2018,
   "rank": 2492,
   "types": [
@@ -13597,6 +14441,9 @@
  {
   "id": "402677",
   "name": "Daitoshi",
+  "alt_names": [
+   "다이토시"
+  ],
   "year": 2024,
   "rank": 2003,
   "types": [
@@ -13797,6 +14644,15 @@
  {
   "id": "322289",
   "name": "Darwin's Journey",
+  "alt_names": [
+   "Darwin utazásai",
+   "Darwinovy cesty",
+   "Wyprawa Darwina",
+   "Путешествие Дарвина",
+   "ダーウィンズ・ジャーニー",
+   "达尔文的旅程",
+   "다윈의 여정"
+  ],
   "year": 2023,
   "rank": 90,
   "types": [
@@ -14002,6 +14858,21 @@
  {
   "id": "225694",
   "name": "Decrypto",
+  "alt_names": [
+   "Decrypto XL",
+   "Decrypto: 5th Anniversary Edition",
+   "Kódfejtő",
+   "Kriptograf",
+   "Декодер",
+   "Декрипто",
+   "รหัสลับอัจฉริยะ",
+   "デクリプト",
+   "截碼戰",
+   "截碼戰 黑盒版",
+   "谍报风云",
+   "谍报风云：5周年纪念版",
+   "디크립토"
+  ],
   "year": 2018,
   "rank": 117,
   "types": [
@@ -14223,6 +15094,9 @@
  {
   "id": "318009",
   "name": "Dinosaur Island: Rawr 'n Write",
+  "alt_names": [
+   "Ostrov dinosaurů: Hoď & kroť"
+  ],
   "year": 2021,
   "rank": 635,
   "types": [
@@ -14428,6 +15302,19 @@
  {
   "id": "39856",
   "name": "Dixit",
+  "alt_names": [
+   "Dixit ديكست",
+   "Диксит",
+   "Діксіт",
+   "ディクシット",
+   "妙不可言",
+   "妙語說書人",
+   "画物语",
+   "言不達意",
+   "隻字片語",
+   "隻言片語",
+   "딕싯"
+  ],
   "year": 2008,
   "rank": 435,
   "types": [
@@ -14634,6 +15521,13 @@
  {
   "id": "262941",
   "name": "Dominant Species: Marine",
+  "alt_names": [
+   "Dominant Species: Mořská říše",
+   "Dominant Species: Władcy Oceanu",
+   "Доминирующие виды: Мировой океан",
+   "优势物种：海洋",
+   "優勢物種 海洋"
+  ],
   "year": 2021,
   "rank": 776,
   "types": [
@@ -14841,6 +15735,19 @@
  {
   "id": "36218",
   "name": "Dominion",
+  "alt_names": [
+   "Dominion: Basisspiel",
+   "Dominion: In naam van de koning",
+   "Dominion: Rozdarte Królestwo",
+   "Dominion: Tweede Editie",
+   "Dominion: Valtakunta",
+   "Dominion: Ο κυρίαρχος",
+   "Доминион",
+   "דומיניון",
+   "ドミニオン",
+   "皇舆争霸",
+   "도미니언"
+  ],
   "year": 2008,
   "rank": 146,
   "types": [
@@ -15034,6 +15941,11 @@
  {
   "id": "283355",
   "name": "Dune",
+  "alt_names": [
+   "Dune: Der Wüstenplanet",
+   "Дюна",
+   "沙丘：征服与背叛"
+  ],
   "year": 2019,
   "rank": 214,
   "types": [
@@ -15271,6 +16183,18 @@
  {
   "id": "316554",
   "name": "Dune: Imperium",
+  "alt_names": [
+   "Dina: Imperijum",
+   "Diuna: Imperium",
+   "Duna: Imperium",
+   "Duna: Impérium",
+   "Dűne: Impérium",
+   "Дюна: Империя",
+   "Дюна: Імперіум",
+   "デューン 砂の惑星：インペリウム",
+   "沙丘：帝国",
+   "듄: 임페리움"
+  ],
   "year": 2020,
   "rank": 6,
   "types": [
@@ -15478,6 +16402,21 @@
  {
   "id": "397598",
   "name": "Dune: Imperium – Uprising",
+  "alt_names": [
+   "Diuna: Imperium – Powstanie",
+   "Duna: Impérium – Povstání",
+   "Duna: Imperium – Uprising",
+   "Dune: Imperiul – Revolta",
+   "Dűne: Impérium – Felkelés",
+   "Dune: Imperium – Insurrección",
+   "Dune: Imperium – Insurrection",
+   "Dune: Imperium – Insurrezione",
+   "Дюна: Империя – Восстание",
+   "Дюна: Імперіум – Піднесення",
+   "デューン 砂の惑星：インペリウム 反乱",
+   "沙丘：帝国 - 起义",
+   "듄 임페리움: 봉기"
+  ],
   "year": 2023,
   "rank": 5,
   "types": [
@@ -15698,6 +16637,11 @@
  {
   "id": "354132",
   "name": "East India Companies",
+  "alt_names": [
+   "Compagnie delle indie",
+   "Ост-Индская компания",
+   "동인도회사"
+  ],
   "year": 2023,
   "rank": 2668,
   "types": [
@@ -15896,6 +16840,10 @@
  {
   "id": "142379",
   "name": "Escape Plan",
+  "alt_names": [
+   "逃跑计划",
+   "이스케이프 플랜"
+  ],
   "year": 2019,
   "rank": 642,
   "types": [
@@ -16090,6 +17038,24 @@
  {
   "id": "199792",
   "name": "Everdell",
+  "alt_names": [
+   "Divukraj",
+   "Everdel",
+   "Everdell, H Εύφορη Κοιλάδα",
+   "Everdell: Az Örökfa Árnyékában",
+   "Everdell: Edición esencial",
+   "Everdell: Essentials Edition",
+   "Everdell: Temel Sürüm",
+   "Valea de Smarald",
+   "Евердел",
+   "Евърдел",
+   "Эверделл",
+   "Эверделл: Базовое издание",
+   "ดินแดนแห่งมนต์เสน่ห์",
+   "エバーデール",
+   "仙境幽谷",
+   "에버델"
+  ],
   "year": 2018,
   "rank": 46,
   "types": [
@@ -16325,6 +17291,11 @@
  {
   "id": "363307",
   "name": "Evergreen",
+  "alt_names": [
+   "Evergreen: зелена планета",
+   "Зеленый мир",
+   "에버그린"
+  ],
   "year": 2022,
   "rank": 843,
   "types": [
@@ -16506,6 +17477,11 @@
  {
   "id": "182134",
   "name": "Evolution: Climate",
+  "alt_names": [
+   "Evolution: Climat",
+   "Эволюция: Естественный отбор – Климат",
+   "에볼루션: 기후"
+  ],
   "year": 2016,
   "rank": 550,
   "types": [
@@ -16718,6 +17694,17 @@
  {
   "id": "256804",
   "name": "Exploding Kittens: Party Pack",
+  "alt_names": [
+   "Eksplodujące Kotki: Imprezka",
+   "Exploding Kittens Party Pack Editie",
+   "Exploding Kittens: Édition Festive",
+   "Exploding Kittens: Para a Galera",
+   "Robbanó cicák: Partipakk",
+   "Výbušná koťátka: Párty karty",
+   "Výbušná koťátka: Párty karty",
+   "Вибухові кошенята: Паті-пак",
+   "เหมียวระเบิดปาร์ตี้แพ็ค"
+  ],
   "year": 2017,
   "rank": 2171,
   "types": [
@@ -16932,6 +17919,13 @@
  {
   "id": "386368",
   "name": "Ezra and Nehemiah",
+  "alt_names": [
+   "Esdra e Neemia",
+   "Esdras e Neemias",
+   "Esdras et Néhémie",
+   "Esra und Nehemia",
+   "エズラとネヘミヤ"
+  ],
   "year": 2024,
   "rank": 465,
   "types": [
@@ -17142,6 +18136,10 @@
  {
   "id": "318983",
   "name": "Faiyum",
+  "alt_names": [
+   "Fayún",
+   "파이윰"
+  ],
   "year": 2020,
   "rank": 1137,
   "types": [
@@ -17349,6 +18347,14 @@
  {
   "id": "216600",
   "name": "Fantastic Factories",
+  "alt_names": [
+   "Fábricas Fantásticas",
+   "Fantastiques fabriques",
+   "Fantastyczne Fabryki",
+   "Iparkodó iparosok",
+   "骰子工廠",
+   "판타스틱 팩토리"
+  ],
   "year": 2019,
   "rank": 576,
   "types": [
@@ -17578,6 +18584,21 @@
  {
   "id": "177736",
   "name": "A Feast for Odin",
+  "alt_names": [
+   "À la gloire d'Odin",
+   "Um Banquete a Odin",
+   "El Banquete de Odín",
+   "Ein Fest für Odin",
+   "La Festa per Odino",
+   "Hostina pro Ódina",
+   "Odin",
+   "Uczta dla Odyna",
+   "Во славу Одина",
+   "オーディンの祝祭",
+   "奥丁的盛宴",
+   "奧丁的盛宴",
+   "오딘을 위하여"
+  ],
   "year": 2016,
   "rank": 26,
   "types": [
@@ -17794,6 +18815,10 @@
  {
   "id": "345868",
   "name": "Federation",
+  "alt_names": [
+   "Federación",
+   "Федерация"
+  ],
   "year": 2022,
   "rank": 709,
   "types": [
@@ -17969,6 +18994,20 @@
  {
   "id": "157354",
   "name": "Five Tribes: The Djinns of Naqala",
+  "alt_names": [
+   "Five Tribes: Die Dschinn von Naqala",
+   "Five Tribes: I Geni di Naqala",
+   "Five Tribes: Les Djinns de Naqala",
+   "Five Tribes: Los genios de Naqala",
+   "Five Tribes: Naquala dzsinnjei",
+   "Five Tribes: Os Gênios de Naqala",
+   "Pięć Klanów: Dżiny Naqali",
+   "П'ять Каст",
+   "Пять племён",
+   "ファイブ・トライブズ",
+   "五大部落",
+   "다섯 부족"
+  ],
   "year": 2014,
   "rank": 98,
   "types": [
@@ -18182,6 +19221,7 @@
  {
   "id": "275969",
   "name": "Flotilla",
+  "alt_names": [],
   "year": 2019,
   "rank": 3685,
   "types": [
@@ -18383,6 +19423,14 @@
  {
   "id": "175914",
   "name": "Food Chain Magnate",
+  "alt_names": [
+   "Food Chain Magnate: Special Edition",
+   "Králové rychlého občerstvení",
+   "フードチェーンマグネイト",
+   "快餐大亨",
+   "快餐連鎖大亨",
+   "푸드 체인 매그네이트"
+  ],
   "year": 2015,
   "rank": 51,
   "types": [
@@ -18618,6 +19666,20 @@
  {
   "id": "220308",
   "name": "Gaia Project",
+  "alt_names": [
+   "Gaia Project: Galaxie Terra Mystica",
+   "Gaia projekt",
+   "Progetto Gaia",
+   "Projekt Gaja",
+   "Projet Gaia",
+   "Projeto Gaia",
+   "Terra Mystica: Projeto Gaia",
+   "Проект \"Гайя\"",
+   "Проєкт \"Гая\"",
+   "テラミスティカ：ガイアプロジェクト",
+   "蓋亞計畫",
+   "가이아 프로젝트"
+  ],
   "year": 2017,
   "rank": 13,
   "types": [
@@ -18831,6 +19893,11 @@
  {
   "id": "391137",
   "name": "Galactic Cruise",
+  "alt_names": [
+   "Crucero Galáctico",
+   "Галактический круиз",
+   "갤럭틱 크루즈"
+  ],
   "year": 2025,
   "rank": 107,
   "types": [
@@ -19060,6 +20127,18 @@
  {
   "id": "336794",
   "name": "Galaxy Trucker (Second Edition)",
+  "alt_names": [
+   "Ciężarówką przez Galaktykę (Druga Edycja)",
+   "Galaxy Trucker: Druhé, vytuněné vydání",
+   "Galaxy Trucker: Zweite Edition",
+   "Ταξιδιώτες Του Διαστήματος",
+   "Космические Дальнобойщики",
+   "Космобійники",
+   "מובילים בגלקסיה",
+   "ギャラクシートラッカー",
+   "银河卡车司机",
+   "갤럭시 트러커"
+  ],
   "year": 2021,
   "rank": 624,
   "types": [
@@ -19274,6 +20353,14 @@
  {
   "id": "125153",
   "name": "The Gallerist",
+  "alt_names": [
+   "Галерист",
+   "ギャラリスト",
+   "画廊",
+   "藝廊經紀人",
+   "갤러리스트",
+   "더 갤러리스트"
+  ],
   "year": 2015,
   "rank": 85,
   "types": [
@@ -19495,6 +20582,10 @@
  {
   "id": "128271",
   "name": "Ginkgopolis",
+  "alt_names": [
+   "銀杏都市（ギンコポリス）",
+   "银杏城"
+  ],
   "year": 2012,
   "rank": 441,
   "types": [
@@ -19710,6 +20801,23 @@
  {
   "id": "291457",
   "name": "Gloomhaven: Jaws of the Lion",
+  "alt_names": [
+   "Gloomhaven: Colții Leului",
+   "Gloomhaven: Die Pranken des Löwen",
+   "Gloomhaven: Fauces del León",
+   "Gloomhaven: Lavlje Čeljusti",
+   "Gloomhaven: Les Mâchoires du lion",
+   "Gloomhaven: Lví chřtán",
+   "Gloomhaven: Presas do Leão",
+   "Gloomhaven: Szczęki Lwa",
+   "Gloomhaven. Мрачная гавань: Челюсти льва",
+   "Homályrév: Az oroszlánfalka",
+   "Темна гавань. Щелепи лева",
+   "กลูมเฮเวนคมเขี้ยวราชสีห์",
+   "グルームヘイヴン スタートセット 獅子のあぎと",
+   "幽港迷城：雄狮蛮颚",
+   "글룸헤이븐: 사자의 턱"
+  ],
   "year": 2020,
   "rank": 12,
   "types": [
@@ -19939,6 +21047,13 @@
  {
   "id": "298383",
   "name": "Golem",
+  "alt_names": [
+   "Gólem",
+   "Голем",
+   "Ґолем",
+   "傀儡魔像",
+   "골렘"
+  ],
   "year": 2021,
   "rank": 747,
   "types": [
@@ -20138,6 +21253,12 @@
  {
   "id": "93",
   "name": "El Grande",
+  "alt_names": [
+   "エルグランデ",
+   "城主",
+   "大王",
+   "大领主"
+  ],
   "year": 1995,
   "rank": 101,
   "types": [
@@ -20355,6 +21476,17 @@
  {
   "id": "193738",
   "name": "Great Western Trail",
+  "alt_names": [
+   "Great Western",
+   "Great Western Trail: Aventură prin Vestul Sălbatic",
+   "Great Western Trail: La Gran Ruta del Oeste",
+   "A nagy western utazás",
+   "Великий западный путь",
+   "グレート ウエスタン トレイル",
+   "大西部之路",
+   "大西鐵路",
+   "그레이트 웨스턴 트레일"
+  ],
   "year": 2016,
   "rank": 21,
   "types": [
@@ -20569,6 +21701,16 @@
  {
   "id": "364011",
   "name": "Great Western Trail: Argentina",
+  "alt_names": [
+   "Great Western Trail: Argentine",
+   "Great Western Trail: Argentinien",
+   "Great Western Trail: Argentyna",
+   "A nagy western utazás: Argentína",
+   "Великий Западный Путь. Аргентина",
+   "グレート・ウエスタン・トレイル：アルゼンチン",
+   "大西部开拓者：阿根廷开拓史",
+   "大西部開拓者：阿根廷開拓史"
+  ],
   "year": 2022,
   "rank": 199,
   "types": [
@@ -20774,6 +21916,19 @@
  {
   "id": "380607",
   "name": "Great Western Trail: New Zealand",
+  "alt_names": [
+   "Great Western Trail: Neuseeland",
+   "Great Western Trail: Nouvelle-Zélande",
+   "Great Western Trail: Nova Zelândia",
+   "Great Western Trail: Nowa Zelandia",
+   "Great Western Trail: Nueva Zelanda",
+   "Great Western Trail: Nuova Zelanda",
+   "Great Western Trail: Új-Zéland",
+   "Великий Западный Путь: Новая Зеландия",
+   "グレート・ウエスタン・トレイル：ニュージーランド",
+   "大西部开拓者：新西兰开拓史",
+   "大西部開拓者：紐西蘭開拓史"
+  ],
   "year": 2023,
   "rank": 73,
   "types": [
@@ -20980,6 +22135,7 @@
  {
   "id": "111341",
   "name": "The Great Zimbabwe",
+  "alt_names": [],
   "year": 2012,
   "rank": 365,
   "types": [
@@ -21199,6 +22355,10 @@
  {
   "id": "250458",
   "name": "Gùgōng",
+  "alt_names": [
+   "Запретный город",
+   "자금성"
+  ],
   "year": 2018,
   "rank": 495,
   "types": [
@@ -21402,6 +22562,14 @@
  {
   "id": "286749",
   "name": "Hansa Teutonica: Big Box",
+  "alt_names": [
+   "Hansa Teutonica: Bővített kiadás",
+   "Ганзейский союз: полное издание",
+   "Ганзейський союз: Повне видання",
+   "ハンザ・テウトニカ ビッグボックス",
+   "漢薩同盟大盒版",
+   "한자 토이토니카: 빅 박스"
+  ],
   "year": 2020,
   "rank": null,
   "types": [],
@@ -21611,6 +22779,19 @@
  {
   "id": "414317",
   "name": "Harmonies",
+  "alt_names": [
+   "Harmoni",
+   "Harmónia",
+   "Krajina zvířat",
+   "Ostoja",
+   "Αρμονία",
+   "Гармония",
+   "Гармонія",
+   "Природа",
+   "ハーモニーズ",
+   "自然和弦",
+   "하모니즈"
+  ],
   "year": 2024,
   "rank": 53,
   "types": [
@@ -21816,6 +22997,14 @@
  {
   "id": "35677",
   "name": "Le Havre",
+  "alt_names": [
+   "Гавр",
+   "ル・アーブル",
+   "ル・アーブル　コンプリートパック",
+   "ル・アーブル＋ル・グランアモー",
+   "港都情濃",
+   "르 아브르"
+  ],
   "year": 2008,
   "rank": 83,
   "types": [
@@ -22024,6 +23213,12 @@
  {
   "id": "227789",
   "name": "Heaven & Ale",
+  "alt_names": [
+   "Le Bien & Le Malt",
+   "Mennyei ser",
+   "ヘブン＆エール",
+   "天堂与美酒"
+  ],
   "year": 2017,
   "rank": 401,
   "types": [
@@ -22222,6 +23417,12 @@
  {
   "id": "321608",
   "name": "Hegemony: Lead Your Class to Victory",
+  "alt_names": [
+   "Hegemony: Führe deine Klasse zum Sieg",
+   "Hegemony: Poprowadź Swoją Klasę do Zwycięstwa",
+   "Гегемония: Классовая борьба",
+   "領國者：帶領你的人民邁向勝利"
+  ],
   "year": 2023,
   "rank": 41,
   "types": [
@@ -22426,6 +23627,11 @@
  {
   "id": "281655",
   "name": "High Frontier 4 All",
+  "alt_names": [
+   "Высокий рубеж: Для всех",
+   "高边疆第四版",
+   "하이 프론티어 4 올"
+  ],
   "year": 2020,
   "rank": 707,
   "types": [
@@ -22671,6 +23877,21 @@
  {
   "id": "220",
   "name": "High Society",
+  "alt_names": [
+   "Alta società",
+   "Animalement Vôtre",
+   "Bale i skandale",
+   "Beestenveiling",
+   "Einfach tierisch!",
+   "Le Grand Jeu",
+   "Milionerzy i bankruci",
+   "Вище Суспільство",
+   "Высшее общество",
+   "جامعه اشرافی",
+   "ハイソサエティ",
+   "上流社會",
+   "하이 소사이어티"
+  ],
   "year": 1995,
   "rank": 535,
   "types": [
@@ -22869,6 +24090,7 @@
  {
   "id": "350205",
   "name": "Horseless Carriage",
+  "alt_names": [],
   "year": 2023,
   "rank": 1405,
   "types": [
@@ -23070,6 +24292,7 @@
  {
   "id": "228372",
   "name": "Iberian Gauge",
+  "alt_names": [],
   "year": 2017,
   "rank": 1936,
   "types": [
@@ -23270,6 +24493,16 @@
  {
   "id": "270844",
   "name": "Imperial Settlers: Empires of the North",
+  "alt_names": [
+   "Colonos del Imperio: Imperios del Norte",
+   "Imperial Settlers: Empires du Nord",
+   "Osadnicy: Królestwa Północy",
+   "Settlers: Vládcové Severu",
+   "Поселенцы: Северные Империи",
+   "エンパイア・オブ・ザ・ノース ～北方の開拓者たち～",
+   "帝國拓荒者：北方帝國",
+   "임페리얼 세틀러: 북방의 제국들"
+  ],
   "year": 2019,
   "rank": 610,
   "types": [
@@ -23454,6 +24687,10 @@
  {
   "id": "338760",
   "name": "Imperial Steam",
+  "alt_names": [
+   "蒸氣帝國",
+   "임페리얼 스팀"
+  ],
   "year": 2021,
   "rank": 951,
   "types": [
@@ -23670,6 +24907,20 @@
  {
   "id": "318184",
   "name": "Imperium: Classics",
+  "alt_names": [
+   "Imperium: Antique",
+   "Imperium: Antyk",
+   "Imperium: Clásicos",
+   "Imperium: Clássicos",
+   "Imperium: Dějiny",
+   "Imperium: Klassik",
+   "Imperium: Ókori birodalmak",
+   "Империи: Классика",
+   "帝国：经典",
+   "帝国の時代：インペリウム・クラシック",
+   "帝國:經典",
+   "임페리움: 클래식"
+  ],
   "year": 2021,
   "rank": 335,
   "types": [
@@ -23873,6 +25124,18 @@
  {
   "id": "318182",
   "name": "Imperium: Legends",
+  "alt_names": [
+   "Imperium: Legendarios",
+   "Imperium: Legenden",
+   "Imperium: Légendes",
+   "Imperium: Legendy",
+   "Imperium: Lendas",
+   "Империи: Легенды",
+   "帝国：传奇",
+   "帝国の時代：インペリウム・レジェンド",
+   "帝國:傳奇",
+   "임페리움: 레전드"
+  ],
   "year": 2021,
   "rank": 455,
   "types": [
@@ -24076,6 +25339,7 @@
  {
   "id": "19777",
   "name": "Indonesia",
+  "alt_names": [],
   "year": 2005,
   "rank": 302,
   "types": [
@@ -24290,6 +25554,10 @@
  {
   "id": "406305",
   "name": "Ingenious 3D",
+  "alt_names": [
+   "Einfach Genial 3D",
+   "Genius 3D"
+  ],
   "year": 2024,
   "rank": 5301,
   "types": [],
@@ -24480,6 +25748,16 @@
  {
   "id": "63888",
   "name": "Innovation",
+  "alt_names": [
+   "Innowacje",
+   "Inovace",
+   "Инновация",
+   "Інновація",
+   "חידושים והמצאות",
+   "イノベーション",
+   "创世发明",
+   "曠世發明"
+  ],
   "year": 2010,
   "rank": 382,
   "types": [
@@ -24697,6 +25975,7 @@
  {
   "id": "388367",
   "name": "Innovation Ultimate",
+  "alt_names": [],
   "year": 2025,
   "rank": 1120,
   "types": [
@@ -24898,6 +26177,12 @@
  {
   "id": "347305",
   "name": "Inventions: Evolution of Ideas",
+  "alt_names": [
+   "Inventions: Ewolucja Idei",
+   "Inventions: La evolución de las ideas",
+   "Изобретения: Эволюция идей",
+   "インベンション：知の進化"
+  ],
   "year": 2024,
   "rank": 756,
   "types": [
@@ -25096,6 +26381,7 @@
  {
   "id": "161882",
   "name": "Irish Gauge",
+  "alt_names": [],
   "year": 2014,
   "rank": 1251,
   "types": [
@@ -25302,6 +26588,15 @@
  {
   "id": "271088",
   "name": "Ishtar: Gardens of Babylon",
+  "alt_names": [
+   "Ishtar: Die Gärten von Babylon",
+   "Ishtar: I Giardini di Babilonia",
+   "Ishtar: Jardines de Babilonia",
+   "Ishtar: Jardins da Babilônia",
+   "Ishtar: Les Jardins de Babylone",
+   "Ishtar: Ogrody Babilonu",
+   "イシュタル：バビロンの庭園"
+  ],
   "year": 2019,
   "rank": 1779,
   "types": [
@@ -25500,6 +26795,13 @@
  {
   "id": "251219",
   "name": "Istanbul: Big Box",
+  "alt_names": [
+   "Стамбул: Повне видання",
+   "Стамбул: Полное издание",
+   "イスタンブール BIG BOX",
+   "伊斯坦堡大盒版",
+   "이스탄불: 빅 박스"
+  ],
   "year": 2018,
   "rank": null,
   "types": [],
@@ -25691,6 +26993,20 @@
  {
   "id": "271324",
   "name": "It's a Wonderful World",
+  "alt_names": [
+   "É Um Maravilhoso Mundo",
+   "Nowy wspaniały świat",
+   "Svět divů",
+   "Egy szép új világ",
+   "Eine wundervolle Welt",
+   "Един прекрасен свят",
+   "Цей дивовижний світ",
+   "Этот безумный мир",
+   "สร้างโลกมหัศจรรย์",
+   "イッツアワンダフルワールド",
+   "美丽新世界",
+   "원더풀 월드"
+  ],
   "year": 2019,
   "rank": 188,
   "types": [
@@ -25888,6 +27204,23 @@
  {
   "id": "254640",
   "name": "Just One",
+  "alt_names": [
+   "Ainult Üks",
+   "Csak egy",
+   "Jedním slovem",
+   "Jednym słowem",
+   "Just One: Μια Λέξη Μόνο",
+   "Só uma",
+   "Tikai viens",
+   "Tiktai Vienas",
+   "Една дума",
+   "Намёк Понял!",
+   "Одним словом",
+   "במילה אחת",
+   "ジャスト・ワン",
+   "獨家暗語",
+   "저스트 원!"
+  ],
   "year": 2018,
   "rank": 159,
   "types": [
@@ -26095,6 +27428,11 @@
  {
   "id": "284378",
   "name": "Kanban EV",
+  "alt_names": [
+   "Канбан Электро",
+   "カンバンEV",
+   "칸반 EV"
+  ],
   "year": 2020,
   "rank": 42,
   "types": [
@@ -26302,6 +27640,13 @@
  {
   "id": "122515",
   "name": "Keyflower",
+  "alt_names": [
+   "Кифлауэр",
+   "キーフラワー",
+   "大五月花號",
+   "奇伍德花季号",
+   "키플라워"
+  ],
   "year": 2012,
   "rank": 136,
   "types": [
@@ -26511,6 +27856,17 @@
  {
   "id": "299684",
   "name": "Khôra: Rise of an Empire",
+  "alt_names": [
+   "KHÔRA: Ascensão de um Império",
+   "Khôra: Aufstieg eines Imperiums",
+   "Khôra: El Nacimiento de un Imperio",
+   "Khôra: L'apogée d'un empire",
+   "Khôra: Rozkwit Imperium",
+   "Khôra: Zlatý věk",
+   "Хора: Розквіт імперії",
+   "Хора: Становление империи",
+   "코라: 제국의 번성"
+  ],
   "year": 2021,
   "rank": 904,
   "types": [
@@ -26712,6 +28068,17 @@
  {
   "id": "319966",
   "name": "The King Is Dead: Second Edition",
+  "alt_names": [
+   "The King Is Dead: Druga Edycja",
+   "The King Is Dead: Lunga Vita al Re",
+   "The King Is Dead: Segunda Edición",
+   "Der König ist tot",
+   "Král je mrtev",
+   "Morto un Re...: The King Is Dead – Edizione Deluxe",
+   "O Rei Morreu: Segunda Edição",
+   "Le Roi est Mort",
+   "国王已逝：第二版"
+  ],
   "year": 2020,
   "rank": 374,
   "types": [
@@ -26906,6 +28273,26 @@
  {
   "id": "70323",
   "name": "King of Tokyo",
+  "alt_names": [
+   "King of Tokyo ملك توكيو",
+   "King of Tokyo: La Furia dei Mostri",
+   "Kralj Tokija",
+   "Potwory w Tokio",
+   "Regele din Tokyo",
+   "O Rei de Tóquio",
+   "Tokió Királya",
+   "Vládce Tokia",
+   "Ο Βασιλιάς Του Τόκυο",
+   "Володар Токіо",
+   "Кралят на Токио",
+   "Повелитель Токио",
+   "מלך טוקיו",
+   "ราชันแห่งโตเกียว",
+   "キング・オブ・トーキョー",
+   "新・キング・オブ・トーキョー",
+   "東京之王",
+   "킹 오브 도쿄"
+  ],
   "year": 2011,
   "rank": 507,
   "types": [
@@ -27123,6 +28510,21 @@
  {
   "id": "204583",
   "name": "Kingdomino",
+  "alt_names": [
+   "K-Domino'Z",
+   "Kingdomino XXL",
+   "Kingdomino: Expo 2020",
+   "Kingdomino: Ένα Ντόμινο για το Βασιλιά",
+   "Kingdomino. Доміношне Королівство",
+   "Доміношне Королівство",
+   "Кингдомино",
+   "Лоскутное Королевство",
+   "Поскутное Королевство",
+   "קינגדומינו",
+   "キングドミノ",
+   "多米諾王國",
+   "킹도미노"
+  ],
   "year": 2016,
   "rank": 333,
   "types": [
@@ -27327,6 +28729,10 @@
  {
   "id": "391124",
   "name": "Kraftwagen: Age of Engineering",
+  "alt_names": [
+   "Kraftwagen l'Era dell'Ingegneria",
+   "Kraftwagen: L'Ère de l'Ingénierie"
+  ],
   "year": 2024,
   "rank": 4093,
   "types": [],
@@ -27519,6 +28925,18 @@
  {
   "id": "385610",
   "name": "Kutná Hora: The City of Silver",
+  "alt_names": [
+   "Kutná Hora: Az Ezüstváros",
+   "Kutná Hora: Az Ezüstváros",
+   "Kutna Hora: Grad srebra",
+   "Kutná Hora: La cité de l'argent",
+   "Kutná Hora: La Città dell'Argento",
+   "Kutná Hora: La Ciudad de la Plata",
+   "Kutná Hora: Město stříbra",
+   "Kutná Hora: Miasto srebra",
+   "Kutná Hora: Stadt des Silbers",
+   "쿠트나 호라: 은의 도시"
+  ],
   "year": 2023,
   "rank": 481,
   "types": [
@@ -27720,6 +29138,11 @@
  {
   "id": "161533",
   "name": "Lisboa",
+  "alt_names": [
+   "Лиссабон",
+   "里斯本",
+   "리스보아"
+  ],
   "year": 2017,
   "rank": 70,
   "types": [
@@ -27934,6 +29357,16 @@
  {
   "id": "241266",
   "name": "Little Town",
+  "alt_names": [
+   "Little Town Builders",
+   "Naše osada",
+   "Городишко",
+   "Маленьке містечко",
+   "เมืองในฝัน",
+   "リトルタウンビルダーズ",
+   "小小村莊",
+   "리틀 타운"
+  ],
   "year": 2017,
   "rank": 1199,
   "types": [
@@ -28122,6 +29555,14 @@
  {
   "id": "236191",
   "name": "London (Second Edition)",
+  "alt_names": [
+   "London",
+   "London  伦敦",
+   "Londres",
+   "Londyn",
+   "Лондон",
+   "ロンドン"
+  ],
   "year": 2017,
   "rank": 509,
   "types": [
@@ -28315,6 +29756,22 @@
  {
   "id": "421006",
   "name": "The Lord of the Rings: Duel for Middle-earth",
+  "alt_names": [
+   "A Gyűrűk Ura: Párbaj Középföldéért",
+   "Der Herr der Ringe: Duell um Mittelerde",
+   "The Lord of the Rings: Μονομαχία για τη Μέση Γη",
+   "Pán prstenů: Duel o Středozem",
+   "Le Seigneur des Anneaux: Duel pour la Terre du Milieu",
+   "O Senhor dos Anéis: Duelo pela Terra Média",
+   "El Señor de los Anillos: El Duelo por la Tierra Media",
+   "Il Signore degli Anelli: Duel for Middle-earth",
+   "Władca Pierścieni: Pojedynek o Śródziemie",
+   "Властелинът на пръстените: Дуел за Средната земя",
+   "Володар Перснів: Дуель за Середзем'я",
+   "指輪物語：デュエル 中つ国の決戦",
+   "魔戒：中洲对决",
+   "반지의 제왕: 가운데땅에서의 대결"
+  ],
   "year": 2024,
   "rank": 19,
   "types": [
@@ -28517,6 +29974,9 @@
  {
   "id": "338476",
   "name": "Lorenzo il Magnifico: Big Box",
+  "alt_names": [
+   "위대한 로렌초 마스터 에디션"
+  ],
   "year": 2021,
   "rank": null,
   "types": [],
@@ -28716,6 +30176,32 @@
  {
   "id": "50",
   "name": "Lost Cities",
+  "alt_names": [
+   "Les Cités Perdues",
+   "Città Perdute",
+   "Le Città Perdute",
+   "Elveszett Városok",
+   "Exploradores",
+   "Izgubljena Mesta",
+   "Kadonneet Kaupungit",
+   "Lost Cities Duel",
+   "Lost Cities: Das Duell",
+   "Lost Cities: Exploradores",
+   "Lost Cities: Le Duel",
+   "Lost Cities: Pojedynek",
+   "Zaginione Miasta",
+   "Zaginione Miasta: Pojedynek",
+   "Ztracená města",
+   "Χαμένες Πολιτείες",
+   "Затерянные города",
+   "شهرهای گمشده",
+   "ロストシティ",
+   "ロストシティ　オリジナル",
+   "失落的城市",
+   "山海再临",
+   "遗忘之城",
+   "로스트 시티"
+  ],
   "year": 1999,
   "rank": 348,
   "types": [
@@ -28907,6 +30393,29 @@
  {
   "id": "312484",
   "name": "Lost Ruins of Arnak",
+  "alt_names": [
+   "Arnak elveszett romjai",
+   "Arnak Harabeleri",
+   "Arnak: Kadonneet rauniot",
+   "Izgubljene ruševine Arnaka",
+   "Le Rovine Perdute di Arnak",
+   "As Ruínas Perdidas de Arnak",
+   "Las Ruinas Perdidas de Arnak",
+   "Les Ruines Perdues de Narak",
+   "De verdwenen ruïnes van Arnak",
+   "Die verlorenen Ruinen von Arnak",
+   "Zaginiona wyspa Arnak",
+   "Ztracený ostrov Arnak",
+   "Τα Ερείπια του Άρνακ",
+   "Загублені руїни Арнаку",
+   "Изгубените руини на Арнак",
+   "Руины острова Арнак",
+   "חורבותיה של ארנאק",
+   "นครสาบสูญแห่งอาร์นัค",
+   "アルナックの失われし遺跡",
+   "阿納克遺蹟|阿纳克遗迹",
+   "아르낙의 잊혀진 유적"
+  ],
   "year": 2020,
   "rank": 30,
   "types": [
@@ -29129,6 +30638,26 @@
  {
   "id": "277085",
   "name": "Love Letter",
+  "alt_names": [
+   "List miłosny",
+   "List miłosny (Edycja Premium)",
+   "Love Letter Classic",
+   "Love Letter: Deluxe Edition",
+   "Love Letter: Segunda edição",
+   "Love Letter: Sender",
+   "Milostný dopis",
+   "Szerelmes Levél",
+   "Листи Закоханих",
+   "Тайное послание",
+   "מכתב אהבה",
+   "رسالة الحب",
+   "จดหมายรัก",
+   "情书",
+   "情書",
+   "狐妖小红娘：情书",
+   "러브 레터",
+   "쿠키런 러브레터"
+  ],
   "year": 2019,
   "rank": 314,
   "types": [
@@ -29337,6 +30866,17 @@
  {
   "id": "209778",
   "name": "Magic Maze",
+  "alt_names": [
+   "Hrdinové bez záruky",
+   "Magic Maze",
+   "Magic Maze: Weź i czmychaj",
+   "МагоМаркет",
+   "Мол Магика",
+   "עולם הקסם",
+   "飛躍魔盜團",
+   "飞跃魔盗团",
+   "매직 메이즈"
+  ],
   "year": 2017,
   "rank": 806,
   "types": [
@@ -29560,6 +31100,11 @@
  {
   "id": "264241",
   "name": "Mandala",
+  "alt_names": [
+   "マンダラ",
+   "曼荼羅 Mandala",
+   "만다라"
+  ],
   "year": 2019,
   "rank": 575,
   "types": [
@@ -29744,6 +31289,12 @@
  {
   "id": "276025",
   "name": "Maracaibo",
+  "alt_names": [
+   "Маракайбо",
+   "マラカイボ",
+   "马拉开波",
+   "마라카이보"
+  ],
   "year": 2019,
   "rank": 91,
   "types": [
@@ -29966,6 +31517,12 @@
  {
   "id": "193322",
   "name": "Master of Orion: The Board Game",
+  "alt_names": [
+   "Master of Orion",
+   "Master of Orion: Desková hra",
+   "Master of Orion: Gra Planszowa",
+   "Master of Orion: Настольная игра"
+  ],
   "year": 2016,
   "rank": 2641,
   "types": [
@@ -30161,6 +31718,9 @@
  {
   "id": "46",
   "name": "Medici",
+  "alt_names": [
+   "메디치"
+  ],
   "year": 1995,
   "rank": 729,
   "types": [
@@ -30374,6 +31934,10 @@
  {
   "id": "346501",
   "name": "Mille Fiori",
+  "alt_names": [
+   "Венецианская мозаика",
+   "ミルフィオリ"
+  ],
   "year": 2021,
   "rank": 681,
   "types": [
@@ -30566,6 +32130,17 @@
  {
   "id": "284653",
   "name": "Mind MGMT: The Psychic Espionage “Game.”",
+  "alt_names": [
+   "Mind MGMT",
+   "MIND MGMT: „Hra“ o psychické špionáži",
+   "Mind MGMT: A paranormális kémkedés „játéka\"",
+   "MIND MGMT: Das parapsychische Spionage-\"Spiel\"",
+   "Mind MGMT: El “juego” de espionaje psíquico.",
+   "Mind MGMT: O \"Jogo\" de Espionagem Psíquica",
+   "MIND MGMT: Ігри розуму",
+   "MIND MGMT. Управление «Разум»",
+   "心灵特工"
+  ],
   "year": 2021,
   "rank": 327,
   "types": [
@@ -30773,6 +32348,16 @@
  {
   "id": "423401",
   "name": "Minos: Dawn of the Bronze Age",
+  "alt_names": [
+   "Minos: Anbruch der Bronzezeit",
+   "Minos: Aurora da Idade do Bronze",
+   "Minos: El amanecer de la edad de bronce",
+   "Minos: L'Alba dell'Età del Bronzo",
+   "Minos: L'Aube de l'Âge de Bronze",
+   "Minos: Úsvit doby bronzové",
+   "Минос: Рассвет бронзового века",
+   "ミノス：青銅器時代の夜明け"
+  ],
   "year": 2024,
   "rank": 1818,
   "types": [
@@ -30972,6 +32557,10 @@
  {
   "id": "175199",
   "name": "Mottainai",
+  "alt_names": [
+   "Mottainai Mini",
+   "Моттаинай"
+  ],
   "year": 2015,
   "rank": 1299,
   "types": [
@@ -31176,6 +32765,10 @@
  {
   "id": "181304",
   "name": "Mysterium",
+  "alt_names": [
+   "ミステリウム",
+   "詭祕莊園"
+  ],
   "year": 2015,
   "rank": 460,
   "types": [
@@ -31404,6 +32997,10 @@
  {
   "id": "66589",
   "name": "Navegador",
+  "alt_names": [
+   "Casa da India",
+   "ナヴェガドール"
+  ],
   "year": 2010,
   "rank": 379,
   "types": [
@@ -31609,6 +33206,10 @@
  {
   "id": "351735",
   "name": "Newton & Great Discoveries",
+  "alt_names": [
+   "Newton & Grosse Entdeckungen",
+   "Newton Edición Revisada"
+  ],
   "year": 2021,
   "rank": null,
   "types": [],
@@ -31790,6 +33391,15 @@
  {
   "id": "293014",
   "name": "Nidavellir",
+  "alt_names": [
+   "De Dwergen van Nidavellir",
+   "Nidavelir",
+   "Нидавелир",
+   "Нидавеллир",
+   "Нідавеллір",
+   "ニダヴェリア",
+   "니다벨리르"
+  ],
   "year": 2020,
   "rank": 260,
   "types": [
@@ -31991,6 +33601,14 @@
  {
   "id": "396790",
   "name": "Nucleum",
+  "alt_names": [
+   "Nukleum",
+   "Нуклеум",
+   "ニュークレウム",
+   "核子激盪",
+   "核子激荡",
+   "뉴클리엄"
+  ],
   "year": 2023,
   "rank": 131,
   "types": [
@@ -32199,6 +33817,10 @@
  {
   "id": "234277",
   "name": "Nusfjord",
+  "alt_names": [
+   "Нусфьорд",
+   "ヌースフィヨルド"
+  ],
   "year": 2017,
   "rank": 389,
   "types": [
@@ -32392,6 +34014,19 @@
  {
   "id": "291572",
   "name": "Oath",
+  "alt_names": [
+   "Oath Reich & Exil: Die Chroniken",
+   "Oath: A birodalom és a száműzetés krónikái",
+   "Oath: Chronicles of Empire & Exile",
+   "Oath: Cronache di Esuli e Sovrani",
+   "Oath: Crônicas de Império e Exílio",
+   "Oath: Crónicas del Imperio y el Exilio",
+   "Oath: Kroniki Władzy i Banicji",
+   "Oath: Kroniky říše a vyhnanství",
+   "Обет: Хроники завоеваний и изгнаний",
+   "流离圣誓：帝国与流放者的编年史",
+   "맹세: 제국과 추방자의 연대기"
+  ],
   "year": 2021,
   "rank": 338,
   "types": [
@@ -32625,6 +34260,13 @@
  {
   "id": "184267",
   "name": "On Mars",
+  "alt_names": [
+   "A Mars",
+   "На Марсе",
+   "オン・マーズ",
+   "火星之上",
+   "온 마스"
+  ],
   "year": 2020,
   "rank": 59,
   "types": [
@@ -32845,6 +34487,27 @@
  {
   "id": "147949",
   "name": "One Night Ultimate Werewolf",
+  "alt_names": [
+   "1 Nacht Weerwolven & Waaghalzen",
+   "๑ คืนปริศนาเกมล่ามนุษย์หมาป่า",
+   "Licántropo",
+   "Loup Garou pour Une Nuit",
+   "Una Nit: L'Home Llop",
+   "Una Noche: El Hombre Lobo",
+   "One Night Ultimate Werewolf: ΛΥΚΑΝΘΡΩΠΟΣ ΓΙΑ ΜΙΑ ΝΥΧΤΑ",
+   "A rettegés éjszakája: Vérfarkas",
+   "Vlkodlaci za úplňku",
+   "Vollmondnacht: Werwölfe",
+   "Weerwolven 1 Nacht",
+   "Werwölfe: Vollmondnacht",
+   "Wilkołaki",
+   "Wilkołaki: Pełnia księżyca",
+   "Однажды ночью: Оборотни",
+   "Остання ніч: Перевертні",
+   "איש זאב ללילה אחד",
+   "一夜終極狼人",
+   "한밤의 늑대인간"
+  ],
   "year": 2014,
   "rank": 690,
   "types": [
@@ -33069,6 +34732,19 @@
  {
   "id": "163166",
   "name": "One Night Ultimate Werewolf: Daybreak",
+  "alt_names": [
+   "1 Nacht Weerwolven & Waaghalzen: Dageraad",
+   "1 คืนปริศนา รุ่งอรุณ",
+   "Licantropo: Prima Luce",
+   "Loup-garou pour un crépuscule",
+   "Vlkodlaci za úsvitu",
+   "Weerwolven Dageraad",
+   "Werwölfe Morgengrauen",
+   "Wilkołaki: Mroczny Świt",
+   "Остання ніч: світанок",
+   "一夜終極狼人：破曉",
+   "한밤의 늑대인간: 황혼에서 새벽까지"
+  ],
   "year": 2015,
   "rank": 826,
   "types": [
@@ -33285,6 +34961,12 @@
  {
   "id": "70149",
   "name": "Ora et Labora",
+  "alt_names": [
+   "Ora & Labora",
+   "祈り、働け",
+   "祈禱與工作",
+   "기도하고 일하라"
+  ],
   "year": 2011,
   "rank": 248,
   "types": [
@@ -33489,6 +35171,14 @@
  {
   "id": "164928",
   "name": "Orléans",
+  "alt_names": [
+   "Orlean",
+   "Орлеан",
+   "オルレアン",
+   "奥尔良",
+   "奧爾良",
+   "오를레앙"
+  ],
   "year": 2014,
   "rank": 35,
   "types": [
@@ -33708,6 +35398,24 @@
  {
   "id": "266810",
   "name": "Paladins of the West Kingdom",
+  "alt_names": [
+   "A Nyugati Királyság Lovagjai",
+   "Paladijnen van het Westelijk Koninkrijk",
+   "Paladine des Westfrankenreichs",
+   "Paladines del Reino del Oeste",
+   "Paladini del Regno Occidentale",
+   "Paladinos do Reino Ocidental",
+   "Paladinové Západního království",
+   "Paladinové Západního království",
+   "Paladins du Royaume de l'Ouest",
+   "Paladyni Zachodniego Królestwa",
+   "Паладини Західного Королівства",
+   "Паладины западного королевства",
+   "西フランク王国の聖騎士",
+   "西国圣武士",
+   "西國聖騎士",
+   "서쪽 왕국의 성기사"
+  ],
   "year": 2019,
   "rank": 82,
   "types": [
@@ -33914,6 +35622,7 @@
  {
   "id": "303057",
   "name": "Pan Am",
+  "alt_names": [],
   "year": 2020,
   "rank": 458,
   "types": [
@@ -34127,6 +35836,32 @@
  {
   "id": "30549",
   "name": "Pandemic",
+  "alt_names": [
+   "EPIZOotic",
+   "Pandemia",
+   "Pandemia 10 Aniversario",
+   "Pandemia: Una Nuova Sfida",
+   "Pandemic, 10 Jahre Jubiläumsedition",
+   "Pandemic, Edición 10º Aniversario",
+   "Pandemic: 10° Anniversario",
+   "Pandemic: 10th Anniversary Edition",
+   "Pandemic: Edition 10ème anniversaire",
+   "Pandemic: Una nuova sfida",
+   "Pandémie",
+   "Pandemie",
+   "Πανδημία",
+   "Пандемия",
+   "Пандемія",
+   "פנדמיק",
+   "جائحة",
+   "เกมโรคระบาด",
+   "パンデミック",
+   "パンデミック：10周年記念版",
+   "パンデミック：新たなる試練",
+   "瘟疫危机",
+   "瘟疫危機",
+   "팬데믹"
+  ],
   "year": 2008,
   "rank": 174,
   "types": [
@@ -34340,6 +36075,52 @@
  {
   "id": "163412",
   "name": "Patchwork",
+  "alt_names": [
+   "Patchwork Décimo Aniversario",
+   "Patchwork Jubileumeditie",
+   "Patchwork Specials: 10 Year Anniversary Edition",
+   "Patchwork: 10 éves jubileumi kiadás",
+   "Patchwork: 10 Jahre Jubiläumsedition",
+   "Patchwork: Americana Edition",
+   "Patchwork: Christmas Edition",
+   "Patchwork: Edición Andina",
+   "Patchwork: Edición Halloween",
+   "Patchwork: Edición San Valentín",
+   "Patchwork: Edition 10ème Anniversaire",
+   "Patchwork: Edycja Zimowa",
+   "Patchwork: Folklore Anden",
+   "Patchwork: Folklore China",
+   "Patchwork: Folklore Polen",
+   "Patchwork: Folklore Skandinavien",
+   "Patchwork: Folklore Taiwan",
+   "Patchwork: Halloween Edition",
+   "Patchwork: Jogakbo",
+   "Patchwork: Nordic",
+   "Patchwork: Polski Folklor",
+   "Patchwork: Szerelmes kiadás",
+   "Patchwork: Téli kiadás",
+   "Patchwork: Valentine's Day Edition",
+   "Patchwork: Valentinstag Edition",
+   "Patchwork: Winter Edition",
+   "Patchwork: Χειροτεχνήματα",
+   "Tilkkutäkki",
+   "Yamalı Yorgan",
+   "Печворк",
+   "Печворк: Український фольклор",
+   "Пэчворк",
+   "שמיכת טלאים",
+   "เย็บปักถักร้อย",
+   "パッチワーク",
+   "パッチワーク：10周年記念バージョン",
+   "パッチワーク：冬の贈り物",
+   "拼布對決: 臺灣意象",
+   "拼布艺术:中国版",
+   "拼布藝術",
+   "补补贴贴",
+   "패치워크",
+   "패치워크 10주년 기념판",
+   "패치워크: 크리스마스 에디션"
+  ],
   "year": 2014,
   "rank": 149,
   "types": [
@@ -34547,6 +36328,9 @@
  {
   "id": "303551",
   "name": "Polis",
+  "alt_names": [
+   "Полис: Пелопоннесская война"
+  ],
   "year": 2020,
   "rank": 2051,
   "types": [
@@ -34766,6 +36550,15 @@
  {
   "id": "156009",
   "name": "Port Royal",
+  "alt_names": [
+   "Port Rojal",
+   "Πορτ Ρουαγιάλ",
+   "Порт Роял",
+   "Порт-Ройал",
+   "ポートロイヤル",
+   "皇家港",
+   "포트 로얄"
+  ],
   "year": 2014,
   "rank": 641,
   "types": [
@@ -34983,6 +36776,34 @@
  {
   "id": "2651",
   "name": "Power Grid",
+  "alt_names": [
+   "Alta Tensão",
+   "Alta Tensao",
+   "Alta Tensión",
+   "Alta Tensión (Reenergizado)",
+   "Alta Tensione",
+   "Funkenschlag",
+   "Funkenschlag (Recharged Version)",
+   "Haute Tension",
+   "Hoogspanning",
+   "Hoogspanning (Recharged Versie)",
+   "Megawatts",
+   "Nagyfeszültség",
+   "Power Grid (Recharged Version)",
+   "Power Grid (Versao Energizada)",
+   "Reţeaua Energetică",
+   "Visoki Napon",
+   "Vysoké Napětí",
+   "Wysokie Napięcie",
+   "Wysokie Napięcie: Doładowana Wersja",
+   "Энергосеть",
+   "เกมโรงไฟฟ้า",
+   "電力会社",
+   "電力会社 充電完了！",
+   "電力公司",
+   "파워그리드",
+   "파워그리드 재충전"
+  ],
   "year": 2004,
   "rank": 76,
   "types": [
@@ -35202,6 +37023,13 @@
  {
   "id": "308765",
   "name": "Praga Caput Regni",
+  "alt_names": [
+   "Прага Сердце Империи",
+   "ปราก มหานครแห่งจักรวรรดิ",
+   "プラハ　王国の首都",
+   "王都布拉格",
+   "왕국의 수도 프라하"
+  ],
   "year": 2020,
   "rank": 196,
   "types": [
@@ -35401,6 +37229,11 @@
  {
   "id": "3076",
   "name": "Puerto Rico",
+  "alt_names": [
+   "Πουέρτο Ρίκο",
+   "波多黎各",
+   "푸에르토 리코"
+  ],
   "year": 2002,
   "rank": 57,
   "types": [
@@ -35609,6 +37442,12 @@
  {
   "id": "228341",
   "name": "Pulsar 2849",
+  "alt_names": [
+   "Пульсар 2849",
+   "パルサー2849",
+   "脈衝星 2849",
+   "펄서 2849"
+  ],
   "year": 2017,
   "rank": 317,
   "types": [
@@ -35807,6 +37646,33 @@
  {
   "id": "244521",
   "name": "Quacks",
+  "alt_names": [
+   "Les Charlatans de Belcastel",
+   "Ciarlatani di Quedlinburgo",
+   "Kuruzslók Quedlinburgban",
+   "Kvacksalvare",
+   "Kvakksalver",
+   "Kvaksalver",
+   "Kvedlalové z Kvedlinburku",
+   "Kvedlinburgas pūšļotāji",
+   "Kvedlinburgi soolapuhujad",
+   "De Kwakzalvers van Kakelenburg",
+   "Pócimas y Brebajes",
+   "The Quacks of Quedlinburg",
+   "Quacks: Deluxe Edition",
+   "Die Quacksalber von Quedlinburg",
+   "Räävelin Rohtotohtorit",
+   "Szarlatani z Pasikurowic",
+   "Οι Τσαρλατάνοι του Κουέντλινμπουργκ",
+   "Пройдисвіти Кведлінбурга",
+   "Шарлатаны из Кведлинбурга",
+   "שוק השיקויים",
+   "جادوگران",
+   "クアックサルバー",
+   "郎中闖江湖",
+   "郎中闖江湖Q版",
+   "크베들린부르크의 돌팔이 약장수"
+  ],
   "year": 2018,
   "rank": 81,
   "types": [
@@ -36010,6 +37876,24 @@
  {
   "id": "217372",
   "name": "The Quest for El Dorado",
+  "alt_names": [
+   "La Course vers El Dorado",
+   "El Dorado",
+   "Eldorádó legendája",
+   "Hledání Eldoráda",
+   "The Legendary El Dorado",
+   "Wettlauf nach El Dorado",
+   "Wyprawa do El Dorado",
+   "De Zoektocht naar El Dorado",
+   "Αναζητώντας το Ελ Ντοράντο",
+   "В поисках Эльдорадо",
+   "У пошуках Ельдорадо",
+   "ล่าขุมทรัพย์นครทองคำ",
+   "エルドラドを探して　新版",
+   "大梦归唐",
+   "衝向黃金城：秘境歷險",
+   "황금의 땅 엘도라도"
+  ],
   "year": 2017,
   "rank": 120,
   "types": [
@@ -36215,6 +38099,15 @@
  {
   "id": "12",
   "name": "Ra",
+  "alt_names": [
+   "Rá: A Nílus völgyének krónikája",
+   "Reiner Knizia's Ra",
+   "Ра",
+   "ラー",
+   "太陽神",
+   "태양신 라",
+   "태양신 라 : 아크릴에디션"
+  ],
   "year": 1999,
   "rank": 113,
   "types": [
@@ -36424,6 +38317,17 @@
  {
   "id": "28143",
   "name": "Race for the Galaxy",
+  "alt_names": [
+   "Dobyvatelé Vesmíru",
+   "Galaxia: La conquista",
+   "Race for the Galaxy: Narodziny Imperiów",
+   "Борьба за галактику",
+   "レース・フォー・ザ・ギャラクシー",
+   "レース・フォー・ザ・ギャラクシー 第二版",
+   "銀河競逐 (银河竞逐)",
+   "银河竞逐：第二版",
+   "레이스 포 더 갤럭시"
+  ],
   "year": 2007,
   "rank": 94,
   "types": [
@@ -36634,6 +38538,21 @@
  {
   "id": "301880",
   "name": "Raiders of Scythia",
+  "alt_names": [
+   "Invasores de Cítia",
+   "Nájezdníci ze Skýtie",
+   "Najeźdźcy ze Scytii",
+   "Pillards de Scythie",
+   "Predoni di Scizia",
+   "Räuber aus Skythien",
+   "Rovers van Scythië",
+   "Saqueadores de Escitia",
+   "Szkítia fosztogatói",
+   "Вершники Скіфії",
+   "Всадники Скифии",
+   "スキタイの侵略者",
+   "스키티아의 침략자"
+  ],
   "year": 2020,
   "rank": 402,
   "types": [
@@ -36835,6 +38754,15 @@
  {
   "id": "220877",
   "name": "Rajas of the Ganges",
+  "alt_names": [
+   "Ganges",
+   "I Ragià del Gange",
+   "Raja's van de Ganges",
+   "Раджи Ганга",
+   "ガンジスの藩王",
+   "恆河王侯",
+   "갠지스의 라자"
+  ],
   "year": 2017,
   "rank": 170,
   "types": [
@@ -37043,6 +38971,9 @@
  {
   "id": "318553",
   "name": "Rajas of the Ganges: The Dice Charmers",
+  "alt_names": [
+   "갠지스의 라자: 다이스차머"
+  ],
   "year": 2020,
   "rank": 1128,
   "types": [
@@ -37229,6 +39160,18 @@
  {
   "id": "227224",
   "name": "The Red Cathedral",
+  "alt_names": [
+   "La Cathédrale Rouge",
+   "Czerwona Katedra",
+   "Katedrála",
+   "De Rode Kathedraal",
+   "Die Rote Kathedrale",
+   "A vörös katedrális",
+   "Красный собор",
+   "聖瓦西里大教堂",
+   "赤の大聖堂",
+   "붉은 대성당"
+  ],
   "year": 2020,
   "rank": 227,
   "types": [
@@ -37438,6 +39381,18 @@
  {
   "id": "128882",
   "name": "The Resistance: Avalon",
+  "alt_names": [
+   "Avalon",
+   "Avalon อวาลอน",
+   "Avalon: Rycerze Króla Artura",
+   "La Resistencia: Ávalon",
+   "Der Widerstand: Avalon",
+   "ΑΒΑΛΟΝ",
+   "Авалон",
+   "レジスタンス: アヴァロン",
+   "抵抗組織：阿瓦隆",
+   "레지스탕스 아발론"
+  ],
   "year": 2012,
   "rank": 239,
   "types": [
@@ -37674,6 +39629,14 @@
  {
   "id": "332772",
   "name": "Revive",
+  "alt_names": [
+   "Ébredés",
+   "Obleva",
+   "Проект \"Возрождение\"",
+   "リバイブ",
+   "黎明新生",
+   "리바이브"
+  ],
   "year": 2022,
   "rank": 92,
   "types": [
@@ -37874,6 +39837,16 @@
  {
   "id": "51",
   "name": "Ricochet Robots",
+  "alt_names": [
+   "Rasende Roboter",
+   "Ricochet Robot",
+   "Rock'n'Roll Robot",
+   "Száguldó Robotok",
+   "ハイパーロボット",
+   "碰撞機器人",
+   "리코셰 로봇",
+   "총알탄 로봇"
+  ],
   "year": 1999,
   "rank": 926,
   "types": [
@@ -38190,6 +40163,31 @@
  {
   "id": "121921",
   "name": "Robinson Crusoe: Adventures on the Cursed Island",
+  "alt_names": [
+   "Robinson Crusoe: Abenteuer auf der verfluchten Insel",
+   "Robinson Crusoe: Adventure on the Cursed Island",
+   "Robinson Crusoe: Adventures on the Cursed Island – Open & Play Campaign",
+   "Robinson Crusoe: Aventuras en la Isla Maldita",
+   "Robinson Crusoe: Aventuras en la Isla Maldita – Edición Coleccionista",
+   "Robinson Crusoe: Aventuras na Ilha Amaldiçoada",
+   "Robinson Crusoé: Aventures sur l'île maudite",
+   "Robinson Crusoé: Aventures sur l'île Maudite – Edition Collector",
+   "Robinson Crusoe: Avventure sull'Isola Maledetta – Collector Edition",
+   "Robinson Crusoe: Collector's Edition",
+   "Robinson Crusoe: Deluxe",
+   "Robinson Crusoe: Dobrodružství na prokletém ostrově",
+   "Robinson Crusoe: Edycja Kolekcjonerska",
+   "Robinson Crusoe: Gyűjtői kiadás",
+   "Robinson Crusoe: Kalandok Az Elátkozott Szigeten",
+   "Robinson Crusoe: Przygoda na przeklętej wyspie",
+   "Robinson Crusoe: Viaggio verso l'Isola Maledetta",
+   "Robinson Crusoes Vermächtnis",
+   "Робинзон Крузо: Приключения на таинственном острове",
+   "Робінзон Крузо: Пригоди на проклятому острові",
+   "ロビンソン・クルーソー",
+   "鲁滨逊漂流记：诅咒岛之迷",
+   "로빈슨 크루소: 저주받은 섬의 모험"
+  ],
   "year": 2012,
   "rank": 121,
   "types": [
@@ -38429,6 +40427,14 @@
  {
   "id": "237182",
   "name": "Root",
+  "alt_names": [
+   "Root Macht und Recht im Waldland",
+   "Root: A Game of Woodland Might and Right",
+   "Корни",
+   "ルート ～はるけき森のどうぶつ戦記～",
+   "茂林源記",
+   "루트"
+  ],
   "year": 2018,
   "rank": 34,
   "types": [
@@ -38677,6 +40683,12 @@
  {
   "id": "402663",
   "name": "Salton Sea",
+  "alt_names": [
+   "Солтон-Си",
+   "ソルトン・シー",
+   "索尔顿湖",
+   "索爾頓湖"
+  ],
   "year": 2024,
   "rank": 1648,
   "types": [
@@ -38874,6 +40886,11 @@
  {
   "id": "229220",
   "name": "Santa Maria",
+  "alt_names": [
+   "Санта-Мария",
+   "聖瑪利亞 SANTA MARIA",
+   "산타 마리아"
+  ],
   "year": 2017,
   "rank": 546,
   "types": [
@@ -39079,6 +41096,15 @@
  {
   "id": "169786",
   "name": "Scythe",
+  "alt_names": [
+   "Sçythe",
+   "Коса",
+   "Серп",
+   "大鎌戦役",
+   "鐮刀戰爭",
+   "사이드",
+   "사이쓰"
+  ],
   "year": 2016,
   "rank": 27,
   "types": [
@@ -39313,6 +41339,11 @@
  {
   "id": "25021",
   "name": "Sekigahara: The Unification of Japan",
+  "alt_names": [
+   "Sekigahara: La Unificación de Japón",
+   "Сэкигахара",
+   "세키가하라"
+  ],
   "year": 2011,
   "rank": 235,
   "types": [
@@ -39522,6 +41553,18 @@
  {
   "id": "408180",
   "name": "Shackleton Base: A Journey to the Moon",
+  "alt_names": [
+   "Baza Shackleton: Podbój Kosmosu",
+   "Mondbasis Shackleton",
+   "Shackleton Base: Uma Jornada para a Lua",
+   "Shackleton Base: Un viaje a la Luna",
+   "Shackleton Base: Viaggio sulla Luna",
+   "Shackleton Holdbázis: A kráter árnyékában",
+   "База \"Шеклтон\": Путешествие на Луну",
+   "シャクルトンベース　月への旅",
+   "月球南极基地",
+   "섀클턴 베이스"
+  ],
   "year": 2024,
   "rank": 368,
   "types": [
@@ -39724,6 +41767,14 @@
  {
   "id": "202426",
   "name": "Sidereal Confluence",
+  "alt_names": [
+   "Confluence Sidérale: Edition Remasterisee",
+   "Sidereal Confluence: Remastered Edition",
+   "Sidereal Confluence: Trading and Negotiation in the Elysian Quadrant",
+   "Siderische Konfluenz: Handel und Wandel im Elysium-Sektor",
+   "Звездное слияние",
+   "星河交汇"
+  ],
   "year": 2017,
   "rank": 395,
   "types": [
@@ -39950,6 +42001,11 @@
  {
   "id": "359438",
   "name": "Skymines",
+  "alt_names": [
+   "スカイマイン",
+   "天际矿脉",
+   "스카이마인"
+  ],
   "year": 2022,
   "rank": 559,
   "types": [
@@ -40149,6 +42205,12 @@
  {
   "id": "298231",
   "name": "Skyrise",
+  "alt_names": [
+   "Neboderi",
+   "Парящий город",
+   "スカイライズ",
+   "天际城"
+  ],
   "year": 2024,
   "rank": 730,
   "types": [
@@ -40354,6 +42416,13 @@
  {
   "id": "40692",
   "name": "Small World",
+  "alt_names": [
+   "Маленький мир",
+   "โลกใหญ่ใบเล็ก",
+   "スモールワールド",
+   "小世界",
+   "小小世界"
+  ],
   "year": 2009,
   "rank": 412,
   "types": [
@@ -40550,6 +42619,7 @@
  {
   "id": "227893",
   "name": "Smile",
+  "alt_names": [],
   "year": 2017,
   "rank": 5155,
   "types": [],
@@ -40734,6 +42804,9 @@
  {
   "id": "266179",
   "name": "Space Gate Odyssey",
+  "alt_names": [
+   "太空之门：奥德赛"
+  ],
   "year": 2019,
   "rank": 3600,
   "types": [
@@ -40916,6 +42989,12 @@
  {
   "id": "375459",
   "name": "Speakeasy",
+  "alt_names": [
+   "Zugkocsma",
+   "Спикизи",
+   "地下酒吧 Speakeasy",
+   "스피크 이지"
+  ],
   "year": 2025,
   "rank": 219,
   "types": [
@@ -41116,6 +43195,18 @@
  {
   "id": "148228",
   "name": "Splendor",
+  "alt_names": [
+   "Розкіш",
+   "Роскошь",
+   "Шляхта",
+   "ספלנדור",
+   "جواهري",
+   "เกมค้าเพชร",
+   "宝石の煌き",
+   "璀璨宝石",
+   "璀璨寶石",
+   "스플렌더"
+  ],
   "year": 2014,
   "rank": 243,
   "types": [
@@ -41313,6 +43404,10 @@
  {
   "id": "230253",
   "name": "Star Realms: Frontiers",
+  "alt_names": [
+   "Star Realms: Frontières",
+   "Звёздные империи: Фронтир"
+  ],
   "year": 2018,
   "rank": 318,
   "types": [
@@ -41493,6 +43588,19 @@
  {
   "id": "187645",
   "name": "Star Wars: Rebellion",
+  "alt_names": [
+   "Star Wars: Lázadás",
+   "Star Wars: Lázadás",
+   "Star Wars: Rebelia",
+   "Star Wars: Rebelie",
+   "Star Wars: Rébellion",
+   "Звёздные Войны: Восстание",
+   "Зоряні війни: Повстання",
+   "スターウォーズ:反乱",
+   "星球大战：叛乱",
+   "星球大战：起义军",
+   "스타워즈: 리벨리온"
+  ],
   "year": 2016,
   "rank": 10,
   "types": [
@@ -41720,6 +43828,17 @@
  {
   "id": "27833",
   "name": "Steam",
+  "alt_names": [
+   "Martin Wallace's Totally Renamed Train Game",
+   "Raíles: Millonarios del Vapor",
+   "Steam: Auf Schienen zum Ruhm",
+   "Steam: Les voies de la richesse",
+   "Steam: Rails to Riches",
+   "Steam: Wyścig do Bogactwa",
+   "Steam. Железнодорожный магнат",
+   "Stoom: Rails, Roem en Rijkdom",
+   "蒸汽：致富之道"
+  ],
   "year": 2009,
   "rank": 350,
   "types": [
@@ -41932,6 +44051,16 @@
  {
   "id": "332800",
   "name": "Summoner Wars (Second Edition)",
+  "alt_names": [
+   "Summoner Wars (2ª Edição)",
+   "Summoner Wars (2e édition): Master Set",
+   "Summoner Wars (Druga edycja)",
+   "Summoner Wars (Druhé vydání)",
+   "Summoner Wars (Második kiadás)",
+   "Summoner Wars (Segunda Edición)",
+   "召唤师战争：大师版",
+   "서머너 워즈: 마스터 세트"
+  ],
   "year": 2021,
   "rank": 359,
   "types": [
@@ -42118,6 +44247,14 @@
  {
   "id": "316786",
   "name": "Tabannusi: Builders of Ur",
+  "alt_names": [
+   "Tabannusi: Baumeister von Ur",
+   "Tabannusi: Budowniczowie Ur",
+   "Tabannusi: Constructores de Ur",
+   "Tabannusi: i Costruttori di Ur",
+   "Tabannusi: Les Bâtisseurs d'Ur",
+   "타반누시: 우르의 건축가들"
+  ],
   "year": 2021,
   "rank": 1917,
   "types": [
@@ -42318,6 +44455,11 @@
  {
   "id": "475",
   "name": "Taj Mahal",
+  "alt_names": [
+   "Tadsch Mahal",
+   "タージ・マハル",
+   "泰姬陵"
+  ],
   "year": 2000,
   "rank": 708,
   "types": [
@@ -42520,6 +44662,19 @@
  {
   "id": "406321",
   "name": "Take 5: 30th Anniversary Edition",
+  "alt_names": [
+   "¡Toma 6!: Edición 30 Aniversario",
+   "6 bere! 30 let",
+   "6 nimmt! 30 Years Anniversary Edition",
+   "6 nimmt!: 30 Jahre-Edition",
+   "6 Qui Prend: Édition Spéciale 30 ans",
+   "6. bierze!: Wydanie jubileuszowe",
+   "Take 5! Jubileum Editie",
+   "ニムト30周年記念版",
+   "牛頭王：30週年紀念版",
+   "誰是牛頭王 30週年版",
+   "젝스 님트!: 30주년 기념판"
+  ],
   "year": 2024,
   "rank": null,
   "types": [],
@@ -42743,6 +44898,14 @@
  {
   "id": "70919",
   "name": "Takenoko",
+  "alt_names": [
+   "Такеноко",
+   "טקנוקו",
+   "تاكينوكو",
+   "ทาเคโนโกะ",
+   "タケノコ",
+   "御竹園"
+  ],
   "year": 2011,
   "rank": 444,
   "types": [
@@ -42962,6 +45125,14 @@
  {
   "id": "118048",
   "name": "Targi",
+  "alt_names": [
+   "Targui",
+   "Tuareg",
+   "Τουαρέγκ",
+   "タルギ",
+   "大漠商豪",
+   "타르기"
+  ],
   "year": 2012,
   "rank": 177,
   "types": [
@@ -43149,6 +45320,15 @@
  {
   "id": "306481",
   "name": "Tawantinsuyu: The Inca Empire",
+  "alt_names": [
+   "Tawantinsuyu: Das Inkareich",
+   "Tawantinsuyu: El Imperio Inca",
+   "Tawantinsuyu: Imperium Inków",
+   "Tawantinsuyu: L'empire Inca",
+   "Tawantinsuyu: O Império Inca",
+   "Тауантинсуйу: Империя инков",
+   "타완틴수유: 잉카 제국의 진짜 이름"
+  ],
   "year": 2020,
   "rank": 1262,
   "types": [
@@ -43366,6 +45546,17 @@
  {
   "id": "297030",
   "name": "Tekhenu: Obelisk of the Sun",
+  "alt_names": [
+   "Tekhenu: Der Sonnenobelisk",
+   "Tekhenu: El obelisco del sol",
+   "Tekhenu: L'Obélisque du Soleil",
+   "Tekhenu: Obelisco del Sole",
+   "Tekhenu: Obelisco do Sol",
+   "Tekhenu: Obelisk Słońca",
+   "Техену: Обелиск Солнца",
+   "方尖碑：太阳神碑塔",
+   "테케누: 태양의 오벨리스크"
+  ],
   "year": 2020,
   "rank": 432,
   "types": [
@@ -43576,6 +45767,19 @@
  {
   "id": "229853",
   "name": "Teotihuacan: City of Gods",
+  "alt_names": [
+   "Teotihuacan: Az istenek városa",
+   "Teotihuacan: Città degli Dei",
+   "Teotihuacán: Ciudad de Dioses",
+   "Teotihuacan: Die Stadt der Götter",
+   "Teotihuacan: La Cité Des Dieux",
+   "Teotihuacan: Miasto Bogów",
+   "Teotihuacan: Stad der Goden",
+   "Теотиуакан. Город богов",
+   "テオティワカン：シティオブゴッズ",
+   "特奧蒂瓦坎：眾神之城",
+   "테오티우아칸: 신들의 도시"
+  ],
   "year": 2018,
   "rank": 112,
   "types": [
@@ -43786,6 +45990,12 @@
  {
   "id": "120677",
   "name": "Terra Mystica",
+  "alt_names": [
+   "Терра Мистика",
+   "テラミスティカ",
+   "神秘大地",
+   "테라 미스티카"
+  ],
   "year": 2012,
   "rank": 36,
   "types": [
@@ -44011,6 +46221,24 @@
  {
   "id": "167791",
   "name": "Terraforming Mars",
+  "alt_names": [
+   "A Mars terraformálása",
+   "Mars: Teraformace",
+   "Teraformiranje Marsa",
+   "Terraformacja Marsa",
+   "Terraformarea Planetei Marte",
+   "Terraforming Mars: Ο Αποικισμός Του Άρη",
+   "Покорение Марса",
+   "Тераформирай Марс",
+   "Тераформування Марса",
+   "חיים על מאדים",
+   "टेराफॉर्मिंग मार्स",
+   "พลิกพิภพดาวอังคาร",
+   "テラフォーミング・マーズ",
+   "殖民火星",
+   "重塑火星",
+   "테라포밍 마스"
+  ],
   "year": 2016,
   "rank": 9,
   "types": [
@@ -44227,6 +46455,25 @@
  {
   "id": "182028",
   "name": "Through the Ages: A New Story of Civilization",
+  "alt_names": [
+   "Cywilizacja: Poprzez Wieki",
+   "Im Wandel der Zeitalter: Ein neue Geschichte der Zivilisation",
+   "Korokon át: A civilizáció új története",
+   "Through the Ages",
+   "Through the Ages: Eine neue Geschichte der Zivilisation",
+   "Through the Ages: L'Histoire vous appartient",
+   "Through the Ages: Nový příběh civilizace",
+   "Through the Ages: Rivivi la Storia della Civiltà",
+   "Through the Ages: Uma Nova História da Civilização",
+   "Through the Ages: Una Nueva Historia de la Civilización",
+   "Крізь епохи: Нова історія цивілізації",
+   "Сквозь Века. Новая История Цивилизации",
+   "דרך העידנים",
+   "スルー･ジ･エイジズ:新たなる文明の物語",
+   "历史巨轮：人类文明新篇章",
+   "쓰루 디 에이지스: 문명에 관한 새로운 이야기",
+   "쓰루 디 에이지스: 새로운 인류 문명 발전 대서사시"
+  ],
   "year": 2015,
   "rank": 18,
   "types": [
@@ -44431,6 +46678,20 @@
  {
   "id": "503",
   "name": "Through the Desert",
+  "alt_names": [
+   "A través del desierto",
+   "Aavikon Karavaanit",
+   "Át a sivatagon",
+   "Durch die Wüste",
+   "Heersers der Woestijn",
+   "Nel Deserto",
+   "Przez Pustynię",
+   "La Traversée du désert",
+   "Καραβάνια της Ερήμου",
+   "דרך המדבר",
+   "砂漠を越えて",
+   "穿越荒漠"
+  ],
   "year": 1998,
   "rank": 528,
   "types": [
@@ -44642,6 +46903,28 @@
  {
   "id": "14996",
   "name": "Ticket to Ride: Europe",
+  "alt_names": [
+   "¡Aventureros al Tren! Europa",
+   "Les Aventuriers du Rail: Europe",
+   "Jízdenky, prosím! Evropa",
+   "Menolippu Eurooppa",
+   "Ticket to Ride אירופה",
+   "Ticket to Ride: Europa",
+   "Ticket to Ride: Európa",
+   "Ticket to Ride: Evrópa",
+   "Ticket to Ride: Evropa",
+   "Ticket to Ride: Ευρώπη",
+   "Ticket to Ride: Европа",
+   "Ticket to Ride: Європа",
+   "Wsiąść do Pociągu: Europa",
+   "Zug um Zug: Europa",
+   "سكة سفر: أوروبا",
+   "เกมต่อรถไฟยุโรป",
+   "チケット・トゥ・ライド・ヨーロッパ",
+   "鐵道任務-歐洲篇",
+   "铁路环游：欧洲篇",
+   "티켓 투 라이드: 유럽"
+  ],
   "year": 2005,
   "rank": 180,
   "types": [
@@ -44852,6 +47135,21 @@
  {
   "id": "42",
   "name": "Tigris & Euphrates",
+  "alt_names": [
+   "Eufraat & Tigris",
+   "Eufraat en Tigris",
+   "Eufrat & Tigris",
+   "Eufrat i Tygrys",
+   "Euphrat & Tigris",
+   "Tigre et Euphrate",
+   "Tigri & Eufrate",
+   "Tigris & Euphrates with Ziggurat Expansion",
+   "Tigris y Éufrates",
+   "Тигр и Евфрат",
+   "チグリス・ユーフラテス",
+   "两河流域",
+   "티그리스 & 유프라테스"
+  ],
   "year": 1997,
   "rank": 133,
   "types": [
@@ -45062,6 +47360,12 @@
  {
   "id": "54",
   "name": "Tikal",
+  "alt_names": [
+   "Тикаль",
+   "ตีกัล",
+   "蒂卡尔古城",
+   "티칼"
+  ],
   "year": 1999,
   "rank": 391,
   "types": [
@@ -45273,6 +47577,13 @@
  {
   "id": "351913",
   "name": "Tiletum",
+  "alt_names": [
+   "Тилетум",
+   "นคราแห่งวาณิช",
+   "ティルトゥム",
+   "蒂尔特之辉",
+   "틸레툼"
+  ],
   "year": 2022,
   "rank": 280,
   "types": [
@@ -45483,6 +47794,13 @@
  {
   "id": "102680",
   "name": "Trajan",
+  "alt_names": [
+   "Trajano",
+   "Траян",
+   "トラヤヌス",
+   "圖拉真",
+   "트라야누스"
+  ],
   "year": 2011,
   "rank": 151,
   "types": [
@@ -45685,6 +48003,11 @@
  {
   "id": "163068",
   "name": "Trickerion: Legends of Illusion",
+  "alt_names": [
+   "Trickerion: Légende de l'illusion",
+   "Trickerion: Meister der Magie",
+   "大魔术师：魔幻传奇"
+  ],
   "year": 2015,
   "rank": 124,
   "types": [
@@ -45875,6 +48198,10 @@
  {
   "id": "73439",
   "name": "Troyes",
+  "alt_names": [
+   "特鲁瓦",
+   "트루아"
+  ],
   "year": 2010,
   "rank": 142,
   "types": [
@@ -46095,6 +48422,21 @@
  {
   "id": "233078",
   "name": "Twilight Imperium: Fourth Edition",
+  "alt_names": [
+   "Twilight Imperium: 4. kiadás",
+   "Twilight Imperium: Čtvrtá edice",
+   "Twilight Imperium: Cuarta Edición",
+   "Twilight Imperium: Quarta Edição",
+   "Twilight Imperium: Quarta Edizione",
+   "Twilight Imperium: Quatrième Édition",
+   "Twilight Imperium: Świt Nowej Ery",
+   "Twilight Imperium: Vierte Edition",
+   "Сумерки империи: Четвёртое издание",
+   "Сутінки імперії: Четверте видання",
+   "トワイライト・インぺリウム第4版",
+   "帝国曙光 第4版",
+   "여명의 제국"
+  ],
   "year": 2017,
   "rank": 7,
   "types": [
@@ -46331,6 +48673,24 @@
  {
   "id": "126163",
   "name": "Tzolk'in: The Mayan Calendar",
+  "alt_names": [
+   "Tzolk'in: Calendarul Maiaș",
+   "Tzolk'in: De Kalender van de Maya's",
+   "Tzolk'in: Der Maya-Kalender",
+   "Tzolk'in: El Calendario Maya",
+   "Tzolk'in: Il Calendario Maya",
+   "Tzolk'in: Kalendarz Majów",
+   "Tzolk'in: le calendrier maya",
+   "Tzolk'in: Mayský kalendář",
+   "Tzolkin: The Mayan Calendar",
+   "Цольк'ін: Календар мая",
+   "Цолькин: Календарь Майя",
+   "ツォルキン：マヤ神聖歴",
+   "卓尔金历：玛雅日历",
+   "卓爾金曆:馬雅曆法",
+   "卓爾金歷：瑪雅日曆",
+   "촐킨: 마야의 달력"
+  ],
   "year": 2012,
   "rank": 77,
   "types": [
@@ -46531,6 +48891,11 @@
  {
   "id": "329591",
   "name": "Ultimate Railroads",
+  "alt_names": [
+   "กำเนิดทางรถไฟเปลี่ยนโลก",
+   "終極鐵路",
+   "얼티밋 레일로드"
+  ],
   "year": 2021,
   "rank": null,
   "types": [],
@@ -46716,6 +49081,15 @@
  {
   "id": "290359",
   "name": "Undaunted: North Africa",
+  "alt_names": [
+   "Destemidos: Norte da África",
+   "Inflexibles: Afrique du Nord",
+   "Nieustraszeni: Afryka Północna",
+   "Odhodlaní: Severní Afrika",
+   "Undaunted: Nordafrika",
+   "Неустрашимые: Северная Африка",
+   "언던티드: 북아프리카"
+  ],
   "year": 2020,
   "rank": 589,
   "types": [
@@ -46915,6 +49289,17 @@
  {
   "id": "247763",
   "name": "Underwater Cities",
+  "alt_names": [
+   "Cidades submersas",
+   "Podmořská města",
+   "Podwodne Miasta",
+   "Víz alatti városok",
+   "Підводні міста",
+   "Подводные города",
+   "アンダーウォーターシティーズ",
+   "水下城市 Underwater Cities",
+   "언더워터 시티즈"
+  ],
   "year": 2018,
   "rank": 52,
   "types": [
@@ -47109,6 +49494,27 @@
  {
   "id": "274637",
   "name": "Unmatched: Battle of Legends, Volume One",
+  "alt_names": [
+   "Unmatched: Bătălia Legendelor – Volumul 1",
+   "Unmatched: Battle of Legends – Volume um",
+   "Unmatched: Battle of Legends, Volumen Uno",
+   "Unmatched: Bitwa Legend, część 1",
+   "Unmatched: Combat de Légende, Volume 1",
+   "Unmatched: Combats de légende, volume 1",
+   "Unmatched: Gevecht der Legendes",
+   "Unmatched: Kampf der Legenden, Kapitel 1",
+   "Unmatched: Legendák ligája, Első felvonás",
+   "Unmatched: Souboj legend",
+   "Unmatched: Volume 1",
+   "Unmatched: Битва Легенд, Том Первый",
+   "Unmatched: Битва Легенд, Частина перша",
+   "Οι Αταίριαστοι: Η Μάχη των Θρύλων",
+   "Несравними: Битката на легендите част 1",
+   "ללא מתחרים: קרב מהאגדות כרך 1",
+   "アンマッチド：バトル・オブ・レジェンド Vol.1",
+   "无双对决：传奇之战第一卷",
+   "언매치드: 배틀 오브 레전드, Volume One"
+  ],
   "year": 2019,
   "rank": 293,
   "types": [
@@ -47313,6 +49719,19 @@
  {
   "id": "294484",
   "name": "Unmatched: Cobble & Fog",
+  "alt_names": [
+   "Unmatched: Árny & Köd",
+   "Unmatched: Becos & Brumas",
+   "Unmatched: Bruk i Mgła",
+   "Unmatched: Ceață și Fum",
+   "Unmatched: Souboj v mlze",
+   "Unmatched: Місто туманів",
+   "Unmatched: Туман над мостовой",
+   "Несравними: Сенки и мъгли",
+   "アンマッチド　コブル＆フォッグ",
+   "无双对决：卵石与烟雾",
+   "언매치드: 코블 & 포그"
+  ],
   "year": 2020,
   "rank": 193,
   "types": [
@@ -47518,6 +49937,17 @@
  {
   "id": "274638",
   "name": "Unmatched: Robin Hood vs. Bigfoot",
+  "alt_names": [
+   "Unmatched: Robin Hood vs Pé-Grande",
+   "Unmatched: Robin Hood vs. Wielka Stopa",
+   "Unmatched: Робин Гуд vs Бигфут",
+   "Unmatched: Робін Гуд проти Біґфута",
+   "Οι Αταίριαστοι: Ρομπέν των Δασών vs Μεγαλοπόδαρος",
+   "Несравними: Робин Худ срещу Голямата Стъпка",
+   "ללא מתחרים: רובין הוד נגד ביג פוט",
+   "无双对决：罗宾汉vs大脚怪",
+   "언매치드: 로빈 후드 vs. 빅풋"
+  ],
   "year": 2019,
   "rank": 429,
   "types": [
@@ -47681,6 +50111,15 @@
  {
   "id": "234190",
   "name": "Unstable Unicorns",
+  "alt_names": [
+   "Labilní jednorožci",
+   "Nestabilni jednorozi",
+   "Odjechane Jednorożce",
+   "Unikornisok: A rémes ménes",
+   "Відчайдушні однороги",
+   "Лабилни еднорози",
+   "Неудержимые единорожки"
+  ],
   "year": 2017,
   "rank": 3578,
   "types": [
@@ -47888,6 +50327,12 @@
  {
   "id": "175640",
   "name": "Vinhos: Deluxe Edition",
+  "alt_names": [
+   "Vinhos: Edición Deluxe",
+   "Vinhos: Русское издание",
+   "葡萄酒：豪华版",
+   "비뉴스 딜럭스 에디션"
+  ],
   "year": 2016,
   "rank": 156,
   "types": [
@@ -48107,6 +50552,21 @@
  {
   "id": "296151",
   "name": "Viscounts of the West Kingdom",
+  "alt_names": [
+   "Burggrafen des Westfrankenreichs",
+   "Burggraven van het Westelijk Koninkrijk",
+   "A nyugati királyság várgrófjai",
+   "Vicomtes du Royaume de l'Ouest",
+   "Vikomti Západního království",
+   "Viscondes do Reino Ocidental",
+   "Visconti del Regno Occidentale",
+   "Vizcondes del Reino del Oeste",
+   "Wicehrabiowie Zachodniego Królestwa",
+   "Виконты Западного Королевства",
+   "Віконти Західного Королівства",
+   "西フランク王国の子爵",
+   "西國子爵"
+  ],
   "year": 2020,
   "rank": 200,
   "types": [
@@ -48316,6 +50776,12 @@
  {
   "id": "337627",
   "name": "Voidfall",
+  "alt_names": [
+   "Опустошение",
+   "ヴォイドフォール",
+   "虚空降临",
+   "보이드폴"
+  ],
   "year": 2023,
   "rank": 80,
   "types": [
@@ -48528,6 +50994,9 @@
  {
   "id": "31730",
   "name": "Wabash Cannonball",
+  "alt_names": [
+   "Chicago Express"
+  ],
   "year": 2007,
   "rank": 655,
   "types": [
@@ -48743,6 +51212,21 @@
  {
   "id": "115746",
   "name": "War of the Ring: Second Edition",
+  "alt_names": [
+   "Guerra del Anillo: Segunda Edición",
+   "La Guerra dell'Anello: Seconda Edizione",
+   "Guerra do Anel: Segunda Edição",
+   "La Guerre de l'anneau",
+   "Der Ringkrieg",
+   "Der Ringkrieg: 2. Edition",
+   "Válka o prsten: Druhá edice",
+   "Wojna o Pierścień: Druga Edycja",
+   "Війна Персня: Друге видання",
+   "Война Кольца: Второе издание",
+   "วอร์ ออฟ เดอะ ริง: มหากาพย์สงครามแห่งแผ่นดินมิดเดิ้ลเอิร์ธ",
+   "魔戒聖戰",
+   "반지 전쟁"
+  ],
   "year": 2011,
   "rank": 8,
   "types": [
@@ -48972,6 +51456,23 @@
  {
   "id": "350316",
   "name": "Wayfarers of the South Tigris",
+  "alt_names": [
+   "Cestovatelé Jižního Tigridu",
+   "A Dél-Tigris vándorai",
+   "Reisende des Südtigris",
+   "Reizigers van de Zuidelijke Tigris",
+   "Viajantes do Sul do Tigre",
+   "Viajeros de las tierras del sur",
+   "Viandanti a Sud del Tigri",
+   "Voyageurs du Tigre du Sud",
+   "Wędrowcy Znad Południowego Tygrysu",
+   "Мандрівники Південного Тигру",
+   "Путешественники с южного Тигра",
+   "南チグリスの旅人",
+   "南河旅人",
+   "南河旅人",
+   "남티그리스의 여행가"
+  ],
   "year": 2022,
   "rank": 347,
   "types": [
@@ -49193,6 +51694,12 @@
  {
   "id": "237179",
   "name": "Weather Machine",
+  "alt_names": [
+   "Időjárásgép",
+   "Машина погоды",
+   "天气机器",
+   "웨더 머신"
+  ],
   "year": 2022,
   "rank": 724,
   "types": [
@@ -49386,6 +51893,21 @@
  {
   "id": "371942",
   "name": "The White Castle",
+  "alt_names": [
+   "Beli dvorac",
+   "Biały Zamek",
+   "Bílý hrad",
+   "Le Château Blanc",
+   "A fehér várkastély",
+   "Die Weiße Burg",
+   "Het Witte Kasteel van Himeji",
+   "Белый Замок",
+   "Білий замок",
+   "姬路城",
+   "白鷺城",
+   "白鷺城／ホワイト・キャッスル",
+   "백로성"
+  ],
   "year": 2023,
   "rank": 72,
   "types": [
@@ -49592,6 +52114,25 @@
  {
   "id": "266192",
   "name": "Wingspan",
+  "alt_names": [
+   "Fesztáv",
+   "Flügelschlag",
+   "Na křídlech",
+   "Na skrzydłach",
+   "Spārnotie",
+   "Sparnuotieji",
+   "Tiivulised",
+   "Wingspan srpsko izdanje",
+   "Wingspan: Lumea păsărilor",
+   "Άνοιγμα φτερών",
+   "Крила",
+   "Криле",
+   "Крылья",
+   "ปีกปักษา",
+   "ウイングスパン",
+   "展翅翱翔",
+   "윙스팬"
+  ],
   "year": 2019,
   "rank": 38,
   "types": [
@@ -49824,6 +52365,13 @@
  {
   "id": "318560",
   "name": "Witchstone",
+  "alt_names": [
+   "Wiedźmia Skała",
+   "Скала ведьм",
+   "ウィッチストーン",
+   "巫師之石",
+   "위치스톤"
+  ],
   "year": 2021,
   "rank": 847,
   "types": [
@@ -50022,6 +52570,11 @@
  {
   "id": "244114",
   "name": "Yellow & Yangtze",
+  "alt_names": [
+   "Хуанхэ и Янцзы",
+   "長江黃河",
+   "황하와 장강"
+  ],
   "year": 2018,
   "rank": 755,
   "types": [
@@ -50242,6 +52795,10 @@
  {
   "id": "368061",
   "name": "Zoo Vadis",
+  "alt_names": [
+   "Зоократия",
+   "动物元老院"
+  ],
   "year": 2023,
   "rank": 764,
   "types": [
@@ -50454,6 +53011,17 @@
  {
   "id": "202976",
   "name": "7 Wonders Duel: Pantheon",
+  "alt_names": [
+   "7 Csoda Párbaj: Panteon",
+   "7 Cudów Świata: Pojedynek – Panteon",
+   "7 Divů Světa: Duel – Panteon",
+   "7 Wonders Duel: Panteão",
+   "7 Чудес Дуэль: Пантеон",
+   "7 สิ่งมหัศจรรย์ ดวล ตัวเสริมวิหารแพนธีออน",
+   "7 원더스 대결 확장: 판테온",
+   "七大奇蹟 對決：帕特農",
+   "七大奇迹：对决万神殿"
+  ],
   "year": 2016,
   "rank": null,
   "types": [],
@@ -50559,6 +53127,65 @@
  {
   "id": "926",
   "name": "Catan: Cities & Knights",
+  "alt_names": [
+   "Catan telepesei: Lovagok és Városok",
+   "Catan: Borgir og riddarar",
+   "Catan: Byer & Riddere",
+   "Catan: Cidades e Cavaleiros",
+   "Catan: Città e Cavalieri",
+   "Catan: Ciudades y Caballeros",
+   "Catan: Gradovi i Vitezovi",
+   "Catan: Gradovi i vitezovi",
+   "Catan: Kaupungit ja Ritarit",
+   "Catan: Linnad Ja Rüütlid",
+   "Catan: Lovagok és városok",
+   "Catan: Mesta in Vitezi",
+   "Catan: Miasta i Rycerze",
+   "Catan: Miestai ir riteriai",
+   "Catan: Pilsētas Un Bruņinieki",
+   "Catan: Şövalyeler & Şehirler",
+   "Catan: Städer & riddare",
+   "Catan: Städte & Ritter",
+   "Catan: Städte & Ritter",
+   "Catan: Steden & Ridders",
+   "Catan: Villes & Chevaliers",
+   "Catan: Πόλεις & Ιππότες",
+   "Catan: Города и рыцари",
+   "The Cities and Knights of Catan",
+   "I Coloni di Catani: Città e Cavalieri",
+   "Colonistii din Catan: Orase si Cavaleri",
+   "Los Colonos de Catán: Ciudades y Caballeros",
+   "Les Colons de Catane: Villes et Chevaliers",
+   "Katanas ieceļotāji: Pilsētas un bruņiniek",
+   "Katani asustajad: Linnad ja rüütlid",
+   "Katano salos naujakuriai: Miestai ir riteriai",
+   "De Kolonisten van Catan: Steden & Ridders",
+   "Miasta i Rycerze z Catanu",
+   "Naseljenci otoka Catan: Mesta in vitezi",
+   "Osadníci z Katanu: rozšíření Města a rytíři",
+   "Osadnicy z Catanu: Miasta i Rycerze",
+   "Settlers fra Catan: Byer & Riddere",
+   "The Settlers fra Catan: Byer og Riddere",
+   "Settlers från Catan: Städer och Riddare",
+   "Settlers of Catan: Cities & Knights",
+   "The Settlers of Catan: Cities & Knights",
+   "The Settlers of Catan: Cities and Knights",
+   "Die Siedler von Catan: Städte & Ritter",
+   "Οι Άποικοι του Κατάν: Πόλεις και Ιππότες",
+   "Οι πόλεις του Κατάν",
+   "Катан: Города и рыцари",
+   "Катан: Міста й лицарі",
+   "Колонизаторы: Города и рыцари",
+   "המתיישבים של קטאן: ערים ואבירים",
+   "קטאן: ערים ואבירים",
+   "カタン 都市と騎士版",
+   "カタンの開拓者たち 都市と騎士版",
+   "卡坦：城市與騎士",
+   "卡坦島騎士擴充",
+   "卡坦島騎士擴充",
+   "카탄 확장: 도시와 기사",
+   "카탄의 개척자: 도시와 기사"
+  ],
   "year": 1998,
   "rank": null,
   "types": [],
@@ -50668,6 +53295,59 @@
  {
   "id": "325",
   "name": "Catan: Seafarers",
+  "alt_names": [
+   "Catan: Denizciler",
+   "Catan: Jūrų keliautojai",
+   "Catan: Marinai",
+   "Catan: Marins",
+   "Catan: Meresõitjad / Jūrasbraucēji / Jūrų Keliautojai",
+   "Catan: Navegadores",
+   "Catan: Navegantes",
+   "Catan: Pomorci",
+   "Catan: Sæfararnir",
+   "Catan: Seefahrer",
+   "Catan: Seefahrer",
+   "Catan: Sjöfarare",
+   "Catan: Søfarer",
+   "Catan: Tengeri utazó",
+   "Catan: Zeevaarders",
+   "Catan: Żeglarze",
+   "Catan: Θαλασσοπόροι",
+   "Catan: Мореходы",
+   "Catane: Marins",
+   "Catanin uudisasukkaat: Merenkävijät",
+   "I Coloni di Catan: Marinai",
+   "Colonistii din Catan: Navigatorii",
+   "Les Colons de Catane: Les Marins de Catane",
+   "Katan: Jūrų keliautojai",
+   "Katanas ieceļotāji: Jūrasbraucēji",
+   "Katani Asustajad: Meresõitjad",
+   "Katano salos naujakuriai: Jūrų keliautojai",
+   "De Kolonisten van Catan: De Zeevaarders",
+   "Naseljenci otoka Catan: Mornarji",
+   "Los Navegantes de Catán",
+   "Osadníci z Katanu: Námořníci",
+   "Osadnicy z Catanu: Żeglarze",
+   "The Seafarers of Catan",
+   "The Settlers fra Catan: Sjøfarer",
+   "Settlers fra Catan: Sjøfarere",
+   "The Settlers fra Catan: Søfarer",
+   "Settlers från Catan: Sjöfarare",
+   "The Settlers of Catan: Seafarers",
+   "Die Siedler von Catan: Seefahrer",
+   "Żeglarze z Catanu",
+   "Οι Άποικοι του Κατάν: Θαλασσοπόροι",
+   "Οι θαλασσοπόροι του Κατάν",
+   "Заселниците на Катан: Мореплаватели",
+   "Катан: Мореплавці",
+   "Колонизаторы: Мореходы",
+   "קטאן: יורדי הים",
+   "カタン 航海者版",
+   "カタンの開拓者たち 航海者版",
+   "卡坦島海洋擴充",
+   "카탄 확장: 항해사",
+   "카탄의 개척자: 항해사"
+  ],
   "year": 1997,
   "rank": null,
   "types": [],
@@ -50780,6 +53460,20 @@
  {
   "id": "56157",
   "name": "Catan: Treasures, Dragons & Adventurers",
+  "alt_names": [
+   "Catan Comori, Dragoni & Exploratori",
+   "Catan: Schatten, Draken & Ontdekkingsreizigers",
+   "Catan: Schätze, Drachen & Entdecker ‐ Szenarien für Erweiterungen",
+   "Catan: Skarby, smoki i odkrywcy",
+   "Catan: Tesori, Draghi e Scopritori",
+   "Catan: Tesoros, dragones y aventureros",
+   "Catan: Trésors, Dragons & Explorateurs",
+   "Catan: Zakladi, zmaji in raziskovalci",
+   "Osadníci z Katanu: Poklady, draci a objevitelé",
+   "Die Siedler von Catan: Schätze, Drachen & Entdecker",
+   "Съкровища, Дракони & Откриватели",
+   "卡坦島寶藏、巨龍與冒險者擴充"
+  ],
   "year": 2009,
   "rank": null,
   "types": [],
@@ -50888,6 +53582,13 @@
  {
   "id": "261526",
   "name": "Food Chain Magnate: The Ketchup Mechanism & Other Ideas",
+  "alt_names": [
+   "Food Chain Magnate: El Mecanismo del Ketchup y Otras Ideas",
+   "Food Chain Magnate: Ketchup e Altre Idee",
+   "Food Chain Magnate: Mechanika ketchupu i inne pomysły",
+   "Food Chain Magnate: Special Edition – The Ketchup Mechanism & Other Ideas",
+   "快餐連鎖大亨：蕃身機制與茄妙構想"
+  ],
   "year": 2019,
   "rank": null,
   "types": [],
@@ -51013,6 +53714,15 @@
  {
   "id": "245744",
   "name": "Great Western Trail: Rails to the North",
+  "alt_names": [
+   "Great Western Trail: Kolej na Północ",
+   "Great Western Trail: Rieles hacia el norte",
+   "Great Western Trail: Ruée vers le nord",
+   "Великий западный путь: Дорога на Север",
+   "グレート・ウエスタン・トレイル拡張　 北部への道",
+   "大西部之路：北方铁路",
+   "그레이트 웨스턴 트레일: 북부행 철도"
+  ],
   "year": 2018,
   "rank": null,
   "types": [],
@@ -51120,6 +53830,7 @@
  {
   "id": "185796",
   "name": "Innovation: Artifacts of History",
+  "alt_names": [],
   "year": 2016,
   "rank": null,
   "types": [],
@@ -51211,6 +53922,7 @@
  {
   "id": "150669",
   "name": "Innovation: Cities of Destiny",
+  "alt_names": [],
   "year": 2016,
   "rank": null,
   "types": [],
@@ -51300,6 +54012,12 @@
  {
   "id": "92898",
   "name": "Innovation: Echoes of the Past",
+  "alt_names": [
+   "Innovation: Echoes",
+   "Innovation: Échos",
+   "Innowacje: Echa Przeszłości",
+   "イノベーション：エコーズ"
+  ],
   "year": 2011,
   "rank": null,
   "types": [],
@@ -51405,6 +54123,7 @@
  {
   "id": "122323",
   "name": "Innovation: Figures in the Sand",
+  "alt_names": [],
   "year": 2013,
   "rank": null,
   "types": [],
@@ -51509,6 +54228,16 @@
  {
   "id": "298851",
   "name": "It's a Wonderful World: Corruption & Ascension",
+  "alt_names": [
+   "It's a Wonderful World: Auge y Corrupción",
+   "It's a Wonderful World: Corruzione & Ascesa",
+   "It's a Wonderful World: 荒廃と隆盛",
+   "Egy szép új világ: Romlottság & Megdicsőülés",
+   "Eine wundervolle Welt: Korruption & Aufstieg",
+   "Этот безумный мир: кризис и процветание",
+   "美丽新世界：堕落与飞跃",
+   "원더풀 월드: 부패와 진보"
+  ],
   "year": 2020,
   "rank": null,
   "types": [],
@@ -51638,6 +54367,24 @@
  {
   "id": "341254",
   "name": "Lost Ruins of Arnak: Expedition Leaders",
+  "alt_names": [
+   "Arnak elveszett romjai: Expedícióvezetők",
+   "Arnak: Uudet Retkikunnat",
+   "Lost Ruins of Arnak: Lideri de expediție",
+   "Le Rovine Perdute di Arnak: Capi Spedizione",
+   "As Ruínas Perdidas de Arnak: Líderes de Expedição",
+   "Las Ruinas Perdidas de Arnak: Líderes de la Expedición",
+   "Les Ruines Perdues De Narak: Chefs d'Expédition",
+   "De Verdwenen Ruïnes van Arnak: Expeditieleiders",
+   "Die verlorenen Ruinen von Arnak: Die Expeditionsleiter",
+   "Zaginiona wyspa Arnak: Przywódcy ekspedycji",
+   "Ztracený ostrov Arnak: Velitelé expedic",
+   "Загублені руїни Арнаку: Лідери експедицій",
+   "Руины острова Арнак: Лидеры экспедиции",
+   "ผู้นำคณะสำรวจ",
+   "アルナックの失われし遺跡：調査隊長",
+   "아르낙의 잊혀진 유적: 탐험 대장"
+  ],
   "year": 2021,
   "rank": null,
   "types": [],
@@ -51754,6 +54501,7 @@
  {
   "id": "468181",
   "name": "More Containers",
+  "alt_names": [],
   "year": 2026,
   "rank": null,
   "types": [],
@@ -51858,6 +54606,18 @@
  {
   "id": "204814",
   "name": "Orléans: Trade & Intrigue",
+  "alt_names": [
+   "Orlean: Handel i Intryga",
+   "Orléans: Comércio & Intriga",
+   "Orléans: Comercio e Intriga",
+   "Orléans: Commerce & Intrigue",
+   "Orléans: Handel & Intrige",
+   "Orléans: Intrigo",
+   "Орлеан: Торговля и интриги",
+   "オルレアン 交易と陰謀",
+   "奧爾良：貿易與陰謀",
+   "오를레앙: 교역과 음모"
+  ],
   "year": 2016,
   "rank": null,
   "types": [],
@@ -51972,6 +54732,7 @@
  {
   "id": "426753",
   "name": "Ra: Traders",
+  "alt_names": [],
   "year": 2025,
   "rank": null,
   "types": [],
@@ -52062,6 +54823,19 @@
  {
   "id": "272638",
   "name": "Root: The Exiles and Partisans Deck",
+  "alt_names": [
+   "Root: Balíček vyhnanců a partyzánů",
+   "Root: Baralho de Exilados e Partisans",
+   "Root: Exilanten & Partisanen",
+   "Root: Exilanten und Partisanen",
+   "Root: Mazo de Exiliados y Partisanos",
+   "Root: Mazzo Esuli e Partigiani",
+   "Root: Száműzöttek és partizánok pakli",
+   "Root: Talia Banitów i Partyzantów",
+   "Корни: Изгнанники и партизаны",
+   "茂林源記:流放者牌組",
+   "루트: 망명자와 게릴라 카드 팩"
+  ],
   "year": 2020,
   "rank": null,
   "types": [],
@@ -52165,6 +54939,20 @@
  {
   "id": "272637",
   "name": "Root: The Underworld Expansion",
+  "alt_names": [
+   "Root: A Földmélyi kiegészítő",
+   "Root: Die Unterwelt-Erweiterung",
+   "Root: Espansione Il Mondo Sotterraneo",
+   "Root: Expansão Submundo",
+   "Root: Expansión Los Subterráneos",
+   "Root: Monde Souterrain",
+   "Root: Podziemia",
+   "Root: Rozšíření Podzemní říše",
+   "Корни: Подземный мир",
+   "ルート 拡張 ～そびえる山のいきもの乱記～",
+   "茂林源記：地底擴充",
+   "루트: 언더월드 확장"
+  ],
   "year": 2020,
   "rank": null,
   "types": [],
@@ -52296,6 +55084,22 @@
  {
   "id": "223555",
   "name": "Scythe: The Wind Gambit",
+  "alt_names": [
+   "Scythe: Csapás a fellegekből",
+   "Scythe: Gambito dos Ventos",
+   "Scythe: Igrając z Wiatrem",
+   "Scythe: Kolosse der Lüfte",
+   "Scythe: Stratèges des cieux",
+   "Scythe: Titáni nebes",
+   "Scythe: Vientos de guerra y paz",
+   "Коса: Вітровий гамбіт",
+   "Серп. Небесный Гамбит",
+   "サイズ: 大鎌戦役 – 拡張 風に舞う策謀",
+   "鐮刀戰爭：風中的詭計",
+   "镰刀战争:风中的诡计",
+   "사이드 확장: 윈드 갬빗",
+   "사이쓰: 윈드 갬빗"
+  ],
   "year": 2017,
   "rank": null,
   "types": [],
@@ -52417,6 +55221,9 @@
  {
   "id": "93544",
   "name": "Steam: Map Expansion #1",
+  "alt_names": [
+   "Steam: Mid-Atlantic United States, Belgium, & Luxembourg"
+  ],
   "year": 2011,
   "rank": null,
   "types": [],
@@ -52532,6 +55339,9 @@
  {
   "id": "109144",
   "name": "Steam: Map Expansion #2",
+  "alt_names": [
+   "Steam: China, Great Britain, & California"
+  ],
   "year": 2011,
   "rank": null,
   "types": [],
@@ -52632,6 +55442,21 @@
  {
   "id": "255681",
   "name": "Terraforming Mars: Colonies",
+  "alt_names": [
+   "A Mars Terraformálása: Távoli gyarmatok",
+   "Mars: Teraformace – Kolonie",
+   "Terraformacja Marsa: Kolonie",
+   "Terraforming Mars: Colônias",
+   "Terraforming Mars: Colonias",
+   "Terraforming Mars: Kolonien",
+   "Terraforming Mars: Kolonies",
+   "Покорение Марса: Колонии",
+   "Тераформування Марса: Колонії",
+   "ภาคเสริมพลิกภิภพดาวอังคาร: อาณานิคม",
+   "テラフォーミング　マーズ拡張　コロニーズ",
+   "重塑火星：殖民地",
+   "테라포밍 마스 확장: 개척기지"
+  ],
   "year": 2018,
   "rank": null,
   "types": [],
@@ -52759,6 +55584,7 @@
  {
   "id": "339951",
   "name": "Vinhos Deluxe Edition: Expansion Bundle",
+  "alt_names": [],
   "year": 2020,
   "rank": null,
   "types": [],
@@ -52841,6 +55667,17 @@
  {
   "id": "122328",
   "name": "War of the Ring: Lords of Middle-earth",
+  "alt_names": [
+   "Guerra del Anillo: Señores de la Tierra Media",
+   "La Guerra dell'Anello: I Signori della Terra di Mezzo",
+   "Guerra do Anel: Senhores da Terra-Média",
+   "La Guerre de l'Anneau: les Seigneurs de la Terre du Milieu",
+   "Der Ringkrieg: Die Herren von Mittelerde",
+   "Válka o prsten: Páni Středozemě",
+   "Wojna o Pierścień: Panowie Śródziemia",
+   "Війна Персня. Володарі Середзем'я",
+   "Война Кольца: Владыки Средиземья"
+  ],
   "year": 2012,
   "rank": null,
   "types": [],

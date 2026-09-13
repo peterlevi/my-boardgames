@@ -20,6 +20,7 @@ import base64
 import datetime as dt
 import json
 import sys
+import unicodedata
 import os
 import re
 import subprocess
@@ -112,6 +113,7 @@ def compact(games, tag_idx, inline=True, private=None):
                 poll[n] = [b, r, x]
         out.append({
             "id": g["id"], "n": g["name"], "y": g["year"], "rk": g["rank"],
+            "alt": g.get("alt_names") or [],
             "th": thumb, "w": g["weight"], "av": g["average"],
             "gk": g["geek"], "my": g["my_rating"],
             "tmin": g["minplaytime"], "tmax": g["maxplaytime"],
@@ -427,14 +429,30 @@ def describe(a):
     return text[0].upper() + text[1:]
 
 
+def fold(text):
+    """Accents folded away, so "orleans" finds "Orleans".
+
+    Latin letters that carry a single combining mark come back as one
+    character each, so positions survive the fold and the browser-side
+    highlighter can still slice the original string by the index it found.
+    """
+    return "".join(c for c in unicodedata.normalize("NFD", text)
+                   if not unicodedata.combining(c))
+
+
 def haystack(g, tags):
     """Everything about a game that the page shows anywhere, as one lowercase
     string to search: the name and year, the designers, every property it
     carries, how it is won, how much of a salad it is, and the interaction
     level. Searching "econo" should find the games tagged Economic, and
-    searching a designer or a year should find those too."""
+    searching a designer or a year should find those too.
+
+    Also BGG's alternate titles, which are never shown: somebody who knows a
+    game as Les Chateaux de Bourgogne should still find it.
+    """
     ai = g.get("ai") or {}
     bits = [g["n"], str(g["y"] or "")]
+    bits += g.get("alt") or []
     bits += g.get("ds") or []
     bits += g.get("pb") or []
     bits += [tags[i]["n"] for i in g.get("tg") or [] if i < len(tags)]
@@ -442,7 +460,7 @@ def haystack(g, tags):
     bits += [SALAD_LABEL.get(ai.get("br"), ""), ai.get("ixl") or g.get("ix") or ""]
     if g.get("exp"):
         bits.append("expansion")
-    return " ".join(b for b in bits if b).lower()
+    return fold(" ".join(b for b in bits if b).lower())
 
 
 def rows_html(data, a, tags=()):

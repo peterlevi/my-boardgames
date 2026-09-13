@@ -44,6 +44,11 @@ def clean_description(raw):
 def parse_item(it, is_expansion=False):
     name = next((n.get("value") for n in it.findall("name")
                  if n.get("type") == "primary"), "")
+    # BGG's other titles for the same game — foreign editions, mostly. Never
+    # shown, but worth searching: somebody looking for Les Chateaux de
+    # Bourgogne should find The Castles of Burgundy.
+    alt = [n.get("value") for n in it.findall("name")
+           if n.get("type") == "alternate" and n.get("value")]
     st = it.find("statistics/ratings")
 
     rank = None
@@ -104,7 +109,8 @@ def parse_item(it, is_expansion=False):
 
     level, shared = interaction.classify(name, mechanics, categories)
     return dict(
-        id=it.get("id"), name=name, year=num(attr(it, "yearpublished"), int),
+        id=it.get("id"), name=name, alt_names=alt,
+        year=num(attr(it, "yearpublished"), int),
         rank=rank, types=types, is_expansion=is_expansion, expands=expands,
         thumbnail=(it.findtext("thumbnail") or "").strip() or None,
         weight=num(attr(st, "averageweight")), average=num(attr(st, "average")),

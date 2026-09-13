@@ -27,6 +27,9 @@ browser:
 - **Columns** you choose and reorder by dragging a header, remembered per
   browser — including *Last played* from your BGG play log, and what the game
   column carries (name alone, or with the year, the designer, or both)
+- **Search across everything shown**, plus BGG's alternate titles, which are
+  never displayed — so *bourgogne* finds The Castles of Burgundy. Accents are
+  folded on both sides, so *orleans* finds *Orléans*
 - **A shareable view**: every filter, the sort, and whichever game is expanded
   are written into the URL as you set them, so a link carries exactly what you
   were looking at — down to a single game. Opening one wins over what that

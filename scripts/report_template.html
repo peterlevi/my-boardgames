@@ -1185,12 +1185,14 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         placeholder="Game name, designer, trait…" autocomplete="off"
         ><button type="button" id="qclear" hidden aria-label="Clear the search"
         title="Clear the search"></button></span></div>
+    <!-- Expansions first: it decides what a *row* is, so it comes before the
+         filters that decide which rows. -->
+    <div class="f"><label for="exp">Expansions</label>
+      <select id="exp"><!--__EXP_OPTIONS__--></select></div>
     <div class="f"><label for="players">Players</label>
       <select id="players"><!--__OPTIONS__--></select></div>
     <div class="f"><label for="mode">Rule</label>
       <select id="mode"><!--__MODE_OPTIONS__--></select></div>
-    <div class="f"><label for="exp">Expansions</label>
-      <select id="exp"><!--__EXP_OPTIONS__--></select></div>
     <div class="f"><label for="played">Played</label>
       <select id="played">
         <option value="any">Any</option>

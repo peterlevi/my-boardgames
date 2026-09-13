@@ -1822,17 +1822,36 @@ function describe() {
     var scale = BANDS.scales[key];
     var r = numRange(value, scale);
     if (!r) return null;
-    function band(v) {
+    // Each end needs its own lookup, on a scale whose bands meet at the edge:
+    // a low bound is in the band that *contains* it and a high bound ends the
+    // band it belongs to. Asking one question for both is what made a filter
+    // set to 45–60 min describe itself as "30 to 60 min".
+    function bandLo(v) {
       for (var i = 0; i < scale.stops.length; i++) {
-        if (v <= scale.stops[i].hi) return scale.stops[i];
+        var s = scale.stops[i];
+        if (scale.edgesMeet ? v < s.hi : v <= s.hi) return s;
+      }
+      return scale.stops[scale.stops.length - 1];
+    }
+    function bandHi(v) {
+      for (var i = 0; i < scale.stops.length; i++) {
+        if (scale.stops[i].hi >= v) return scale.stops[i];
       }
       return scale.stops[scale.stops.length - 1];
     }
     var openLo = r.lo === -Infinity, openHi = r.hi === Infinity;
-    var a = band(openLo ? scale.min : r.lo);
-    var b = band(openHi ? scale.max : r.hi);
+    var a = bandLo(openLo ? scale.min : r.lo);
+    var b = bandHi(openHi ? scale.max : r.hi);
     var words;
     if (openLo && openHi) return null;            // spans everything
+    // Where the stops are themselves named as ranges, say the union rather
+    // than both names: "15 to 60 min", not "15–30 min to 45–60 min".
+    else if (scale.spanNames) {
+      var u = scale.unit || '';
+      words = openLo ? 'up to ' + b.hi + u
+            : openHi ? a.lo + u + ' and up'
+            : a.lo + ' to ' + b.hi + u;
+    }
     else if (openLo) words = 'up to ' + b.n.toLowerCase();
     else if (openHi) words = a.n.toLowerCase() + ' and up';
     else words = a.n === b.n ? a.n.toLowerCase()
@@ -3021,7 +3040,7 @@ function vRange(input, scale, label) {
      band that *ends* at it. */
   function idxOfLo(v) {
     for (var i = 0; i < n; i++) {
-      if (scale.hiExclusive ? v < stops[i].hi : v <= stops[i].hi) return i;
+      if (scale.edgesMeet ? v < stops[i].hi : v <= stops[i].hi) return i;
     }
     return n - 1;
   }
@@ -3104,7 +3123,7 @@ function vRange(input, scale, label) {
     // of it: "12–39%", not "12%–39%".
     var u = scale.unit || '';
     if (i === 0) return '≤ ' + trim(b.hi) + u;
-    if (j === n - 1) return trim(a.lo) + u + '+';
+    if (j === n - 1) return '≥ ' + trim(a.lo) + u;
     return trim(a.lo) + '–' + trim(b.hi) + u;
   }
   function captionText() { return captionFor(loIdx, hiIdx); }
@@ -3287,6 +3306,11 @@ function textWidth(text, font) {
 
 /* Room for the caret, the padding and a little slack. */
 var SEL_CHROME = 52;
+/* Air between the longest caption and the caret. Sized to the widest thing it
+   can say, a control puts its caret exactly one 8px gap after the text, which
+   reads as cramped — the caret looks pushed against the edge rather than
+   parked at it. The width comes off the search box, which has plenty. */
+var CAPTION_AIR = 10;
 
 /** Size every filter control to its *widest* caption rather than its current
  *  one.
@@ -3325,16 +3349,24 @@ function naturalWidth(wrap) {
     all.forEach(function (t) { w = Math.max(w, textWidth(t, font) + SEL_CHROME); });
   } else {
     var was = caption.textContent, held = wrap.style.minWidth;
+    // The inline width comes off too, not just the minimum. enhanceSelect()
+    // pins the wrap to the width the native <select> had so the page does not
+    // jump on load, and that pin *caps* the button: every candidate measured
+    // exactly the old width, so the control could never come out wider than
+    // the thing it replaced, however long its longest caption was.
+    var heldW = wrap.style.width;
     wrap.style.minWidth = '0';
+    wrap.style.width = '';
     all.forEach(function (t) {
       caption.textContent = t;
       w = Math.max(w, btn.getBoundingClientRect().width);
     });
     caption.textContent = was;
     wrap.style.minWidth = held;
+    wrap.style.width = heldW;
   }
   if (box && !wasActive) box.classList.remove('active');
-  return Math.ceil(w);
+  return Math.ceil(w) + CAPTION_AIR;
 }
 
 function sizeControls() {

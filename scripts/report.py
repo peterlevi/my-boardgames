@@ -339,8 +339,13 @@ def scales():
         # every weight between 3.99 and 4 in no band at all, and there are
         # four such games. `hiExclusive` says the top of a band belongs to the
         # next one — except for the last, which owns its own ceiling.
+        # `edgesMeet` says a band starts where the one below it ends, so
+        # reading a stored range back finds the band that *contains* the low
+        # bound rather than the one that ends at it. `hiExclusive` is about
+        # filtering rather than reading: a game weighing exactly 3.5 is Heavy,
+        # not Medium, so the top of a band is not in it.
         "wband": {"min": 1, "max": 5, "step": 0.01, "unit": "",
-                  "hiExclusive": True, "brief": "num",
+                  "edgesMeet": True, "hiExclusive": True, "brief": "num",
                   "stops": stops(weight_stops())},
         "salad": {"min": 0, "max": 100, "step": 1, "unit": "%",
                   "brief": "band",
@@ -353,16 +358,24 @@ def scales():
         # actually planned around. Both ends are open — the lowest stop means
         # "no lower bound", the highest "no upper bound" — so a wide-open
         # slider cannot drop the 480-minute games off a 240-minute axis.
+        #
+        # Each stop is named for the stretch it covers rather than for the
+        # time it runs up to, and the boundary belongs to both neighbours: a
+        # 90-minute game is in "60–90 min" and in "90–120 min" both. That is
+        # the useful reading for a filter — you are asking "could we fit this
+        # in before ten" — and unlike the weight column there is no pill here
+        # that has to pick one band for the game.
         "tband": {"min": 0, "max": 240, "step": 5, "unit": " min",
                   "openBottom": True, "openTop": True, "brief": "num",
-                  "stops": stops([("15 min or less", 0, 15, "15 min"),
-                                  ("30 min", 16, 30),
-                                  ("45 min", 31, 45),
-                                  ("1 hour", 46, 60),
-                                  ("90 min", 61, 90),
-                                  ("2 hours", 91, 120),
-                                  ("3 hours", 121, 180),
-                                  ("4 hours or more", 181, 240, "4 hours")])},
+                  "edgesMeet": True, "spanNames": True,
+                  "stops": stops([("≤ 15 min", 0, 15),
+                                  ("15–30 min", 15, 30),
+                                  ("30–45 min", 30, 45),
+                                  ("45–60 min", 45, 60),
+                                  ("60–90 min", 60, 90),
+                                  ("90–120 min", 90, 120),
+                                  ("120–180 min", 120, 180),
+                                  ("≥ 180 min", 180, 240)])},
     }
 
 

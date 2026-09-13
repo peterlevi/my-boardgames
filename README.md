@@ -27,11 +27,14 @@ browser:
 - **Columns** you choose and reorder by dragging a header, remembered per
   browser — including *Last played* from your BGG play log, and what the game
   column carries (name alone, or with the year, the designer, or both)
-- **A shareable view**: every filter and the sort are written into the URL as
-  you set them, so a link carries exactly what you were looking at. Opening
-  one wins over what that browser last had open; only what differs from the
-  page's defaults is written, so an untouched view keeps a clean link and
-  *Reset filters* empties it again
+- **A shareable view**: every filter, the sort, and whichever game is expanded
+  are written into the URL as you set them, so a link carries exactly what you
+  were looking at — down to a single game. Opening one wins over what that
+  browser last had open; only what differs from the page's defaults is
+  written, so an untouched view keeps a clean link and *Reset filters* empties
+  it again. Expanding a game is a navigation, so **back** closes it again
+  instead of leaving the page, while filters and sort replace the entry rather
+  than adding one — a history step per keystroke would make back useless
 - **Player count** with three rules — plays at N, *good* at N, or *best* at N,
   read from BGG's own `suggested_numplayers` poll
 - **Expansions** folded in: an owned expansion can qualify its base game at a

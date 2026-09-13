@@ -796,10 +796,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     asked for directly. Treat them as a rough sort, not fact; where the
     database has nothing, Interaction falls back to a rule over the game's
     mechanics.</p>
-    <p>The filters and the sort are kept in the page's address as you set
-    them, so the link in your address bar is the view you are looking at —
-    copy it to send someone exactly this table. <b>Reset filters</b> clears
-    it again.</p>
+    <p>The filters, the sort and the game you have expanded are kept in the
+    page's address as you set them, so the link in your address bar is the
+    view you are looking at — copy it to send someone exactly this table, or
+    one game in it. The back button closes an expanded game rather than
+    leaving the page. <b>Reset filters</b> clears it again.</p>
     <p>Click any row to expand it. Pills inside filter the table to that
     designer, mechanic or game — except games you do not own, which link out
     to BGG.</p>
@@ -1500,12 +1501,19 @@ function render() {
   var oc = el('outcount');
   oc.textContent = outside.length ? '+' + outside.length + ' outside filters' : '';
   oc.hidden = !outside.length;
+  // Before saveFilters, which is what writes the URL: the open game is part
+  // of the state the URL carries, so it has to be settled first.
+  paintDetail();
   saveFilters();
 }
 
 // Clicking a row opens a panel underneath with everything the columns cannot
 // fit. Built on demand — 242 of these up front would bloat the page.
 var openDetail = null;
+/* The *wanted* open game, by BGG id, kept apart from the row element because
+   render() tears the detail row out every time. Surviving a re-render is what
+   lets a link carry it and the back button restore it. */
+var openId = null, openWantsScroll = false;
 
 function tagsOfKind(g, kind) {
   var out = [];
@@ -1758,6 +1766,18 @@ function closeDetail() {
   if (openDetail) { openDetail.parentNode.removeChild(openDetail); openDetail = null; }
 }
 
+/** Close it and mean it. closeDetail only takes the row out of the DOM, and
+ *  the next render puts it back — which is what we want across a filter
+ *  change, but not when a column change has closed it for layout reasons.
+ *  Here the game stops being open at all, and the link follows. */
+function dismissDetail() {
+  closeDetail();
+  if (openId != null) {
+    openId = null;
+    writeUrl(false);
+  }
+}
+
 var lightbox = null, lbShots = [], lbIndex = 0;
 
 function openLightbox(shots, index) {
@@ -1849,16 +1869,47 @@ TBODY.addEventListener('click', function (e) {
   if (!tr || !tr.hasAttribute('data-i')) return;
   var wasOpen = openDetail && openDetail.previousSibling === tr;
   closeDetail();
-  if (wasOpen) return;
+  if (wasOpen) {
+    openId = null;
+    writeUrl(true);
+    return;
+  }
   var g = DATA[+tr.getAttribute('data-i')];
+  openId = g.id;
+  mountDetail(tr, g);
+  // Opening a game is a navigation: the back button should close it again
+  // rather than leave the page.
+  writeUrl(true);
+  scrollRowToTop(tr);
+});
+
+/** The detail row itself, built the same way whoever asked for it. */
+function mountDetail(tr, g) {
   var row = document.createElement('tr');
   row.className = 'detail';
   row.innerHTML = '<td colspan="' + visibleCols() + '">' +
     buildDetail(g) + '</td>';
   tr.parentNode.insertBefore(row, tr.nextSibling);
   openDetail = row;
-  scrollRowToTop(tr);
-});
+}
+
+/** Re-open whatever should be open after a render, and forget it if the
+ *  current filters have hidden that game — an open row the table no longer
+ *  contains would be a link that lies about what it shows. */
+function paintDetail() {
+  if (openId == null) return;
+  var idx = -1;
+  for (var i = 0; i < DATA.length; i++) {
+    if (String(DATA[i].id) === String(openId)) { idx = i; break; }
+  }
+  var tr = idx < 0 ? null : ROWS[idx];
+  if (!tr || tr.hidden) { openId = null; return; }
+  mountDetail(tr, DATA[idx]);
+  if (openWantsScroll) {
+    openWantsScroll = false;
+    scrollRowToTop(tr);
+  }
+}
 
 /** How much of the viewport the pinned chrome covers: the header row plus
  *  whatever it is itself pinned below (the sticky result line). Measuring only
@@ -1973,8 +2024,12 @@ el('reset').addEventListener('click', function () {
   F.players.value = '0';
   sortKey = 'rk';
   sortDesc = false;
+  // Reset is the clean-slate gesture, so the open game goes too — otherwise
+  // the link it leaves behind still points at a game.
+  closeDetail();
+  openId = null;
   forgetFilters();
-  writeUrl();
+  writeUrl(false);
   syncClearQ();
   syncSelects();
   markSort();
@@ -2282,7 +2337,7 @@ function resetCols() {
   buildColList();
   applyOrder();
   applyCols();
-  closeDetail();
+  dismissDetail();
 }
 
 function buildColList() {
@@ -2365,7 +2420,7 @@ function buildColMenu() {
     colState[k] = e.target.checked;
     saveCols();
     applyCols();
-    closeDetail();
+    dismissDetail();
   });
   [].forEach.call(document.querySelectorAll('input[name="gamemode"]'),
     function (r) {
@@ -2423,7 +2478,9 @@ function saveFilters() {
       sort: sortKey, desc: sortDesc
     }));
   } catch (e) { /* storage off: nothing to remember with */ }
-  writeUrl();
+  // Replace, never push: this runs on every render, and a history entry per
+  // keystroke in the search box would make the back button useless.
+  writeUrl(false);
 }
 
 function loadFilters() {
@@ -2490,6 +2547,8 @@ function encodeState() {
   if (sortKey !== 'rk' || sortDesc) {
     parts.push('sort=' + encodeURIComponent(sortKey) + (sortDesc ? '.d' : ''));
   }
+  // Last, so a link to a game reads as "this view, this game".
+  if (openId != null) parts.push('g=' + encodeURIComponent(openId));
   return parts.join('&');
 }
 
@@ -2498,13 +2557,28 @@ function encodeState() {
  *  replaceState is allowed on file:// in current browsers, but it has not
  *  always been, so a failure quietly leaves the URL alone rather than
  *  throwing in the middle of a render. */
-function writeUrl() {
+function writeUrl(push) {
+  // Applying a view that came *from* history must not write back to it: the
+  // render this triggers would replaceState over the entry we just moved to,
+  // which silently throws away everything forward of it.
+  if (applyingUrl) return;
   var enc = encodeState();
   var url = location.pathname + location.search + (enc ? '#' + enc : '');
+  lastUrl = enc;
   try {
-    history.replaceState(null, '', url);
+    // Opening or closing a game is a navigation and gets a history entry, so
+    // the back button closes it. Filters and sort replace instead: a history
+    // entry per keystroke in the search box would make going back useless.
+    if (push) history.pushState(null, '', url);
+    else history.replaceState(null, '', url);
   } catch (e) { /* older file:// rules: the view still works, just not the link */ }
 }
+
+/* What the address last said, so a popstate or a hashchange that only echoes
+   our own write is ignored rather than re-rendering the table. */
+var lastUrl = null;
+/* Set while a view from the back/forward buttons is being applied. */
+var applyingUrl = false;
 
 /** Returns true when the URL carried a view, so it can win over storage. */
 function readUrl() {
@@ -2543,9 +2617,43 @@ function readUrl() {
       sortDesc = d;
     }
   }
+  openId = null;
+  if (got.g) {
+    // Compared as text: ids arrive from the server as strings and out of the
+    // URL as strings, and a stray Number() on one side of this silently
+    // matched nothing at all.
+    for (var j = 0; j < DATA.length; j++) {
+      if (String(DATA[j].id) === String(got.g)) { openId = DATA[j].id; break; }
+    }
+    // Only an id this collection actually has; a stale link opens nothing
+    // rather than silently showing the wrong game.
+    openWantsScroll = openId != null;
+  }
   refreshTagList();
   rangeToPlayed();
+  lastUrl = hash;
   return true;
+}
+
+/** Re-apply the whole view from the address bar. Used for the back and
+ *  forward buttons, and for an address edited by hand. */
+function applyUrlState() {
+  var hash = (location.hash || '').replace(/^#/, '');
+  if (hash === lastUrl) return;     // our own write echoing back
+  lastUrl = hash;
+  applyingUrl = true;
+  try {
+    closeDetail();
+    applyDefaults();
+    openId = null;
+    if (hash) readUrl();
+    syncClearQ();
+    syncSelects();
+    markSort();
+    render();
+  } finally {
+    applyingUrl = false;
+  }
 }
 
 /** Put the caret on whichever column the sort is actually using. */
@@ -2564,16 +2672,11 @@ applyCols();
 applyDefaults();
 // A link that carries a view wins over what this browser last had open.
 if (!readUrl()) loadFilters();
-// writeUrl uses replaceState, which never fires this — so a hashchange means
-// the address bar was edited by hand, or a typed link was followed.
-window.addEventListener('hashchange', function () {
-  applyDefaults();
-  readUrl();
-  syncClearQ();
-  syncSelects();
-  markSort();
-  render();
-});
+// Back and forward. A hash-only history move fires both popstate and
+// hashchange, and an address edited by hand fires only hashchange, so both
+// are wired to the same guarded function rather than either alone.
+window.addEventListener('popstate', applyUrlState);
+window.addEventListener('hashchange', applyUrlState);
 syncClearQ();
 syncSelects();
 refreshTagList();

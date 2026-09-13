@@ -617,8 +617,12 @@ mark { background:var(--hit); color:inherit; font-weight:700;
   box-sizing:border-box; padding-top:.2em;
   clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
 .hex.none { background:#9b9b9b; font-weight:600; }
-td.score { width:34px; padding-right:4px; }
-td.score.mine-col { padding-right:9px; }
+/* Centred, header and hexagon alike. The padding that used to nudge them
+   apart was invisible while the cell was the colour of the page; against a
+   fit tint the cell has edges, and a hexagon pushed to one side of it looks
+   like a mistake. */
+td.score, th.c-av, th.c-my { text-align:center; padding-left:4px;
+  padding-right:4px; }
 /* A percentage plus a bar directly under it, coloured by value rather than a
    uniform brown, so a column of them is scannable at a glance. Scoped to
    .track, not to any span — an em-dash placeholder is also a span. */
@@ -1827,11 +1831,10 @@ function partition() {
   var tR = numRange(F.tband.value, BANDS.scales.tband);
   var picked = pickedTags(), tmode = F.tagmode.value;
   var fold = expMode === 'fold';
-  // Sorting by fit turns the filters from a gate into the question being
-  // scored: a game that misses on one axis still has a place in the ranking,
-  // and hiding it would be hiding the second-best answer. Only the search and
-  // the expansion setting still decide what is in the table at all.
-  var ranking = sortKey === 'fit';
+  // Ranking turns the filters from a gate into the question being scored: a
+  // game that misses on one axis still has a place in the ranking, and hiding
+  // it would be hiding the second-best answer. Only the search and the
+  // expansion setting still decide what is in the table at all.
 
   var inside = [], outside = [];
   for (var i = 0; i < DATA.length; i++) {
@@ -1961,7 +1964,7 @@ function describe() {
   if (expMode === 'drop') extra.push('expansions ignored');
   // Ranked rather than filtered: the same list of criteria, said as what the
   // games are being scored against rather than as what they had to pass.
-  if (sortKey === 'fit') {
+  if (ranking) {
     if (head) extra.unshift(head.charAt(0).toLowerCase() + head.slice(1));
     return 'Everything, ranked by fit' +
       (extra.length ? ' against ' + extra.join(', ') : '');
@@ -3053,6 +3056,13 @@ el('reset').addEventListener('click', function () {
   F.players.value = '0';
   sortKey = 'rk';
   sortDesc = false;
+  // Ranking is a way of looking at the filters, so it goes with them. The
+  // column stays: which columns are on is a preference, and reset has never
+  // touched those.
+  ranking = false;
+  sortBeforeFit = null;
+  var fitsw = document.getElementById('fittoggle');
+  if (fitsw) fitsw.checked = false;
   // Reset is the clean-slate gesture, so the open game goes too — otherwise
   // the link it leaves behind still points at a game.
   closeDetail();
@@ -3965,7 +3975,7 @@ function paintTableClass() {
   // browser with no JavaScript and for the first paint, where they guess from
   // the window width alone — which is right only for the default columns.
   ROOT.className = 'jsfit ' + (n ? '' : 'mode-any ') +
-    (sortKey === 'fit' ? 'fitrank ' : '') +
+    (ranking ? 'fitrank ' : '') +
     (hasStackedColumn() ? 'stacked ' : '') +
     (ROOT.getAttribute('data-cols') || '');
 }
@@ -4301,6 +4311,9 @@ function encodeState() {
   if (sortKey !== 'rk' || sortDesc) {
     parts.push('sort=' + encodeURIComponent(sortKey) + (sortDesc ? '.d' : ''));
   }
+  // Ranking decides which rows are in the table at all, so it travels with
+  // the view rather than living in this browser's preferences.
+  if (ranking) parts.push('rank=1');
   // Last, so a link to a game reads as "this view, this game".
   if (openId != null) parts.push('g=' + encodeURIComponent(openId));
   return parts.join('&');
@@ -4392,6 +4405,17 @@ function readUrl() {
       sortDesc = d;
     }
   }
+  // A link that ranks arrives with the column on, whatever this browser's
+  // column preferences say: the view it carries does not make sense without
+  // the scores it is ordered by.
+  ranking = got.rank === '1';
+  var fitsw = document.getElementById('fittoggle');
+  if (fitsw) fitsw.checked = ranking;
+  if (ranking && !colState.fit) {
+    colState.fit = true;
+    buildColList();
+    applyCols();
+  }
   openId = null;
   if (got.g) {
     // Compared as text: ids arrive from the server as strings and out of the
@@ -4445,19 +4469,25 @@ function markSort() {
     function (th) {
       th.setAttribute('aria-sort', sortDesc ? 'descending' : 'ascending');
     });
-  var sw = document.getElementById('fittoggle');
-  // The switch *is* the sort: clicking another header stops ranking, and the
-  // box should say so rather than claiming a mode the table left.
-  if (sw) sw.checked = sortKey === 'fit';
 }
 
+/** Whether the table is ranked rather than filtered.
+ *
+ *  A mode of its own rather than "the sort happens to be fit": inside a
+ *  ranking you still want to ask "of these, which is shortest" without the
+ *  ninety games the filters would have hidden coming back. Sorting by another
+ *  column reorders the ranking; it does not leave it. */
+var ranking = false;
 /** The sort to come back to when ranking is switched off. */
 var sortBeforeFit = null;
 
 /** Rank by fit, or stop. Turning it on shows the column and sorts by it,
  *  because a ranking you cannot see the scores for is a shuffled list. */
 function setRanking(on) {
-  if (on) {
+  ranking = !!on;
+  var sw = document.getElementById('fittoggle');
+  if (sw) sw.checked = ranking;
+  if (ranking) {
     if (sortKey !== 'fit') sortBeforeFit = { k: sortKey, d: sortDesc };
     colState.fit = true;
     sortKey = 'fit';

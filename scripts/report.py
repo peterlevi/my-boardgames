@@ -321,9 +321,14 @@ def scales():
         # A game is Low, Medium or High and nothing in between, so this one
         # snaps to its stops.
         # `brief` is how the collapsed control says what is picked, with nine
-        # filters sharing one row: "level" names the stops and nothing else,
-        # "num" prints the numbers it is filtering on, "name" the stop labels.
-        # Both of the latter say an end that reaches the edge of the scale as
+        # filters sharing one row:
+        #   "level" — name the stops, always ("Med", "Med–High").
+        #   "band"  — name one stop, but give a span as numbers: the band
+        #             names here are phrases and two of them will not fit.
+        #   "num"   — always the numbers being filtered on. Weight and time
+        #             are read as quantities rather than as words, and "Light"
+        #             does not say where it stops while "≤ 1.5" does.
+        # The numeric forms say an end that reaches the edge of the scale as
         # "≤ x" or "x+" rather than naming a stop nobody chose.
         "ix": {"min": 0, "max": 2, "step": 1, "unit": "", "snap": True,
                "brief": "level",
@@ -338,7 +343,7 @@ def scales():
                   "hiExclusive": True, "brief": "num",
                   "stops": stops(weight_stops())},
         "salad": {"min": 0, "max": 100, "step": 1, "unit": "%",
-                  "brief": "num",
+                  "brief": "band",
                   "stops": stops([("No", 0, sb[0] - 1),
                                   ("A touch", sb[0], sb[1] - 1),
                                   ("Quite a lot", sb[1], sb[2] - 1),
@@ -349,7 +354,7 @@ def scales():
         # "no lower bound", the highest "no upper bound" — so a wide-open
         # slider cannot drop the 480-minute games off a 240-minute axis.
         "tband": {"min": 0, "max": 240, "step": 5, "unit": " min",
-                  "openBottom": True, "openTop": True, "brief": "name",
+                  "openBottom": True, "openTop": True, "brief": "num",
                   "stops": stops([("15 min or less", 0, 15, "15 min"),
                                   ("30 min", 16, 30),
                                   ("45 min", 31, 45),

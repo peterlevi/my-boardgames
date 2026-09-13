@@ -487,7 +487,13 @@ th.w-win { width:120px; } th.w-br { width:104px; }
 .gm-yeards .gamecell .m-yr + .m-ds::before { content:" · "; }
 /* The designer column goes for width long before the name is in trouble, so
    it falls back into the cell rather than vanishing. */
-th.w-game { width:300px; }
+/* The name is the widest thing in the row and the one you read first, so it
+   gets the largest share of the budget. It has to be *stated*: a fixed-layout
+   table hands the leftover width to the columns with no width of their own,
+   which is what this column used to rely on — and with the poll columns on
+   there is no leftover, so the name came out fourteen pixels wide. Declared,
+   it gets its share of the slack instead of all of it or none. */
+th.w-game { width:334px; }
 td.gamecell { min-width:0; }
 a.game { overflow-wrap:anywhere; }
 th, td { padding:8px 9px; text-align:left; border-bottom:1px solid var(--line);
@@ -3085,18 +3091,19 @@ function vRange(input, scale, label) {
   function captionFor(i, j) {
     if (i === 0 && j === n - 1) return 'Any';
     var a = stops[i], b = stops[j];
-    // One stop is a thing with a name, and the name is what you clicked.
-    if (i === j) return a.s || a.n;
-    if (scale.brief === 'level') return (a.s || a.n) + '–' + (b.s || b.n);
     var num = scale.brief === 'num';
-    // The unit belongs to the reading, not to each end of it: "12–39%", not
-    // "12%–39%".
-    var u = num ? (scale.unit || '') : '';
-    var lo1 = num ? trim(a.lo) : (a.s || a.n);
-    var hi1 = num ? trim(b.hi) : (b.s || b.n);
-    if (i === 0) return '≤ ' + hi1 + u;
-    if (j === n - 1) return lo1 + u + '+';
-    return lo1 + '–' + hi1 + u;
+    // One stop is a thing with a name — except on the scales read as
+    // quantities, where the range it covers is the more useful fact: "Medium
+    // light" does not say where it stops and "1.5–2.5" does.
+    if (i === j && !num) return a.s || a.n;
+    if (scale.brief === 'level') return (a.s || a.n) + '–' + (b.s || b.n);
+    // Everything past here is a span on a scale whose names are phrases, so
+    // it reads as numbers. The unit belongs to the reading, not to each end
+    // of it: "12–39%", not "12%–39%".
+    var u = scale.unit || '';
+    if (i === 0) return '≤ ' + trim(b.hi) + u;
+    if (j === n - 1) return trim(a.lo) + u + '+';
+    return trim(a.lo) + '–' + trim(b.hi) + u;
   }
   function captionText() { return captionFor(loIdx, hiIdx); }
   /** 1.5, not 1.50; 12, not 12.0. */

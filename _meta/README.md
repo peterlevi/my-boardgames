@@ -62,6 +62,16 @@ whole of `git status`, not just the files you edited — a stray artefact from
 another tool landing in `docs/` and being swept in by `git add -A` has
 happened, and in a public repository that is a leak, not an untidiness.
 
+**No committed file knows where it is checked out.** Not the README, not
+`SKILL.md`, not a script, not a workflow. The scripts resolve their paths from
+`__file__` (`common.py` sets `ROOT`), so a checkout works anywhere under any
+name; documentation refers to "this repository" and to paths relative to its
+root. Anything machine-specific — absolute paths, one person's directory
+layout — belongs in a gitignored file, which today means
+`.claude/settings.local.json` and `credentials.env`. Someone cloning this on
+another machine should never read a sentence about somebody else's setup, and
+a folder that gets renamed or moved should break nothing that is committed.
+
 **Do not hardcode the owner's own judgements.** The derived columns must come
 from general rules over facts. When a rule disagrees with the owner, the
 disagreement is recorded as a test case in `tests/`, and the rule is either

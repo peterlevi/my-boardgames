@@ -1844,18 +1844,22 @@ TBODY.addEventListener('click', function (e) {
   if (gameBtn) {
     e.stopPropagation();
     // Filter down to that game, then open it — the same gesture as clicking a
-    // tag, so the table always reflects what you just asked for.
+    // tag, so the table always reflects what you just asked for. Both halves
+    // are one history step, so back returns to the game you came from.
     var gi = +gameBtn.getAttribute('data-game');
-    closeDetail();
-    applyDefaults();
-    el('q').value = DATA[gi].n;
-    syncSelects();
-    refreshTagList();
-    render();
-    var target = TBODY.querySelector('tr[data-i="' + gi + '"]');
-    if (target && !target.hidden) {
-      target.click();          // which scrolls the row to the top for us
-    }
+    asOneStep(function () {
+      closeDetail();
+      openId = null;
+      applyDefaults();
+      el('q').value = DATA[gi].n;
+      syncSelects();
+      refreshTagList();
+      render();
+      var target = TBODY.querySelector('tr[data-i="' + gi + '"]');
+      if (target && !target.hidden) {
+        target.click();        // which scrolls the row to the top for us
+      }
+    });
     return;
   }
   var tagBtn = e.target.closest('[data-tag]');
@@ -2561,7 +2565,7 @@ function writeUrl(push) {
   // Applying a view that came *from* history must not write back to it: the
   // render this triggers would replaceState over the entry we just moved to,
   // which silently throws away everything forward of it.
-  if (applyingUrl) return;
+  if (applyingUrl || urlHeld) return;
   var enc = encodeState();
   var url = location.pathname + location.search + (enc ? '#' + enc : '');
   lastUrl = enc;
@@ -2579,6 +2583,27 @@ function writeUrl(push) {
 var lastUrl = null;
 /* Set while a view from the back/forward buttons is being applied. */
 var applyingUrl = false;
+/* Held above zero while a composite gesture is mid-flight; see asOneStep. */
+var urlHeld = 0;
+
+/** Run a gesture that changes the filters *and* opens a game as a single
+ *  history step.
+ *
+ *  Following a "people who like this also like" chip does both: it filters
+ *  the table down to that game and then expands it. Done naively the render
+ *  in the middle writes a filters-only URL over the entry we came from —
+ *  replaceState, because that is what a filter change does — and the game
+ *  that was open is gone from history before the new one is pushed. Going
+ *  back then lands on a filtered table rather than the previous game, which
+ *  is exactly what hopping from game to game and pressing back looked like.
+ *
+ *  So the writes are held for the duration and one push happens at the end.
+ */
+function asOneStep(fn) {
+  urlHeld++;
+  try { fn(); } finally { urlHeld--; }
+  writeUrl(true);
+}
 
 /** Returns true when the URL carried a view, so it can win over storage. */
 function readUrl() {

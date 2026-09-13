@@ -448,7 +448,10 @@ th.w-year { width:52px; }
 /* Wide enough that the bar inside is still a bar. "At N" carries a label, a
    track and a figure on one line, and at 84px the track came out 18px long —
    a dash, not something you can read a value off. */
-th.w-atn { width:124px; } th.w-pct { width:88px; }
+/* Exactly what Win condition costs, which is the column a player count
+   displaces: choosing a count then changes what the table says without
+   changing how wide it is. */
+th.w-atn { width:120px; } th.w-pct { width:88px; }
 th.w-ratings { width:58px; }
 th.w-win { width:120px; } th.w-br { width:104px; }
 /* The poll columns read a player count, so with the count at "Any" they have
@@ -494,6 +497,11 @@ th.w-win { width:120px; } th.w-br { width:104px; }
    there is no leftover, so the name came out fourteen pixels wide. Declared,
    it gets its share of the slack instead of all of it or none. */
 th.w-game { width:334px; }
+/* …but only what is left after the rest. A detailed cell is wider than a
+   compact one — a pill *and* a bar where compact has a figure over a bar — so
+   the same 334 that fits with room to spare in a compact table put the
+   detailed one 26px past the page and gave it a scrollbar. */
+:root.det-detailed th.w-game { width:306px; }
 td.gamecell { min-width:0; }
 a.game { overflow-wrap:anywhere; }
 th, td { padding:8px 9px; text-align:left; border-bottom:1px solid var(--line);
@@ -887,11 +895,22 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
    own: the count's column is wider than Win condition and the two together do
    not leave the game's name a readable width. */
 :root:not(.mode-any) .drop1 { display:none; }
-@media (max-width:1260px) { .drop1 { display:none; } }
+/* Each threshold is the window width at which the columns still on screen
+   stop fitting the page, measured rather than guessed — a rung that fires
+   late is a table with a scrollbar, and one that fires early is a column
+   given away for nothing. They are sized for a *detailed* table, the wider of
+   the two: a compact one carries the same columns 100px narrower and simply
+   keeps them a little longer than it needs to. */
+@media (max-width:1276px) { .drop1 { display:none; } }
 @media (max-width:1180px) { .drop2 { display:none; } }
-@media (max-width:1120px) { .drop3 { display:none; } }
-@media (max-width:1060px) { .drop4 { display:none; } }
+@media (max-width:1156px) { .drop3 { display:none; } }
+@media (max-width:1104px) { .drop4 { display:none; } }
 @media (max-width:1000px) { .drop5 { display:none; } }
+/* A player count brings a column of its own, and it is wider than the Win
+   condition it displaces, so every rung below the first arrives sooner. */
+@media (max-width:1276px) { :root:not(.mode-any) .drop3 { display:none; } }
+@media (max-width:1224px) { :root:not(.mode-any) .drop4 { display:none; } }
+@media (max-width:1120px) { :root:not(.mode-any) .drop5 { display:none; } }
 /* Below this the game's own name is what suffers, so Plays goes too — it is
    the column you consult, not the one you scan. */
 @media (max-width:940px) {
@@ -1189,24 +1208,24 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
          filters that decide which rows. -->
     <div class="f"><label for="exp">Expansions</label>
       <select id="exp"><!--__EXP_OPTIONS__--></select></div>
-    <div class="f"><label for="players">Players</label>
-      <select id="players"><!--__OPTIONS__--></select></div>
-    <div class="f"><label for="mode">Rule</label>
-      <select id="mode"><!--__MODE_OPTIONS__--></select></div>
     <div class="f"><label for="played">Played</label>
       <select id="played">
         <option value="any">Any</option>
         <option value="yes">Yes</option>
         <option value="no">No</option>
       </select></div>
+    <div class="f"><label for="players">Players</label>
+      <select id="players"><!--__OPTIONS__--></select></div>
+    <div class="f"><label for="mode">Rule</label>
+      <select id="mode"><!--__MODE_OPTIONS__--></select></div>
+    <div class="f"><label id="tband-label">Max time</label>
+      <input type="hidden" id="tband" value=""></div>
+    <div class="f"><label id="wband-label">Weight</label>
+      <input type="hidden" id="wband" value=""></div>
     <div class="f"><label id="ix-label">Interaction</label>
       <input type="hidden" id="ix" value=""></div>
     <div class="f"><label id="salad-label">Point salad</label>
       <input type="hidden" id="salad" value=""></div>
-    <div class="f"><label id="wband-label">Weight</label>
-      <input type="hidden" id="wband" value=""></div>
-    <div class="f"><label id="tband-label">Max time</label>
-      <input type="hidden" id="tband" value=""></div>
   </div>
   <div class="filterbar">
   <details id="more">

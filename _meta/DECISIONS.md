@@ -78,10 +78,20 @@ roughly what one does. Every answer is cached per game and committed, so a
 resync pays only for genuinely new games and anyone cloning the repo pays
 nothing. Measured at about $0.013 a game.
 
-## D-10 — The screenshot commit in CI must tolerate a race
+## D-10 — Generated screenshots are published, never committed
 
-The workflow commits refreshed screenshots and pushes them. Any commit
-landing on the branch in between makes a bare push fail on a race that has
-nothing to do with screenshots, turning a good build red. It retries,
-rebasing onto whatever arrived; the commit only ever touches `docs/*.png`, so
-it cannot conflict with source.
+The README's screenshots are rendered by CI into the published site and
+linked absolutely, rather than committed to the repository.
+
+They were committed at first, by a step inside the build that pushed them
+back to the branch. Two costs followed. Any commit landing on the branch
+between the job's checkout and that push made it fail on a race that had
+nothing to do with screenshots, turning good builds red; a retry that rebased
+fixed that, but only by working around the design. And because the images are
+regenerated on every push, the repository accumulated a stream of
+half-megabyte binaries that nothing ever reads back — most of its growth, for
+files that are pure output.
+
+Publishing them beside the report removes the write permission, the bot
+commit and the race together. The cost is that the README's images need the
+published site to be up.

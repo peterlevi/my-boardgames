@@ -18,5 +18,8 @@ reports/
 # CI build output
 site/
 
+# README screenshots: rendered by CI into the published site, never committed
+docs/
+
 # Machine-specific agent confinement (absolute paths, this machine only)
 .claude/settings.local.json

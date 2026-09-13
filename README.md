@@ -6,14 +6,14 @@ night: *what should we play, with this many people, in this much time?*
 
 **→ [Browse the live report](https://peterlevi.github.io/my-boardgames/)**
 
-[![The report](docs/screenshot.png)](https://peterlevi.github.io/my-boardgames/)
+[![The report](https://peterlevi.github.io/my-boardgames/screenshot.png)](https://peterlevi.github.io/my-boardgames/)
 
 Click any row and it opens underneath, scrolled up under the header: gallery
 shots, what players say about the game, how you win, how much the players'
 games touch each other, the full player-count poll, and pills that filter the
 table to a designer, mechanic or similar game.
 
-[![An expanded row](docs/screenshot-expanded.png)](https://peterlevi.github.io/my-boardgames/)
+[![An expanded row](https://peterlevi.github.io/my-boardgames/screenshot-expanded.png)](https://peterlevi.github.io/my-boardgames/)
 
 Everything but the fetch runs offline, so day-to-day use costs no API calls.
 The published page and both screenshots above are rebuilt from the cached data
@@ -371,7 +371,7 @@ scripts/bggids.py      BGG search API    -> data/bgg_ids.json   (network)
 scripts/report.py      data/games.json   -> a single HTML file  (offline)
 
 scripts/query.py       data/games.json   -> a terminal table    (offline)
-scripts/screenshot.py  the report        -> docs/screenshot*.png (offline)
+scripts/screenshot.py  the report        -> a PNG of it        (offline)
 
 scripts/check_scoring.py  tests/expectations.txt -> a pass/fail count (offline)
 scripts/check_interaction.py  tests/interaction_calls.txt -> a score  (offline)
@@ -440,10 +440,13 @@ The live page is built and published by
 `main`, using GitHub Pages' artifact deployment — there is no `gh-pages`
 branch, and the report itself is never committed.
 
-The same workflow re-renders both `docs/screenshot*.png` and commits them when
-they have changed, so the images at the top of this file always match the
-current report. That commit is made with `GITHUB_TOKEN`, whose pushes deliberately do
-not trigger further workflow runs, so it cannot loop.
+The same workflow re-renders both screenshots and publishes them beside the
+report, and the README above links to them there. They are deliberately not
+committed: they change on every push, so in the repository they would be a
+stream of half-megabyte binaries nothing reads back, and the commit carrying
+them had to be pushed from inside the build — which raced with ordinary
+pushes and turned good builds red. The cost of the swap is that the two
+images above need the published site to be up.
 
 The build is offline and needs no secrets, which is the whole reason it is safe
 to run on every push.

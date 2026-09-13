@@ -2,7 +2,7 @@
 """Render the built report to a PNG for the README.
 
     python3 scripts/screenshot.py [--html reports/collection.html]
-                                  [-o docs/screenshot.png]
+                                  [-o site/screenshot.png]
                                   [--expand "Yellow & Yangtze"]
 
 Uses Playwright's Chromium when it is installed (that is what CI does), and
@@ -51,6 +51,33 @@ window.addEventListener('load', function () {
 });
 </script>
 """
+
+
+def check_not_blank(out, width, height):
+    """Refuse to hand back an image that is obviously empty.
+
+    The page starts at `opacity: 0` and its own script fades it in, so a
+    capture taken before that script finishes is a single flat colour — and a
+    flat PNG compresses to a few kilobytes where a real one is hundreds. That
+    is exactly what the plain-Chrome fallback produces for `--expand`: it
+    cannot drive the page, and it exits 0 with a blank file.
+
+    Silent success is the dangerous part. The README's screenshots are
+    published rather than committed, so nothing downstream would notice a
+    blank one; a build that fails is much better than a site that quietly
+    shows nothing. This is a smoke test, not a validator — it catches "the
+    renderer produced nothing", not "the layout is subtly wrong".
+    """
+    size = out.stat().st_size if out.exists() else 0
+    floor = max(20_000, width * height // 100)
+    if size < floor:
+        raise SystemExit(
+            f"{out} is {size} bytes for {width}x{height} — under the {floor} "
+            f"byte floor, so it is almost certainly a blank capture. The page "
+            f"fades itself in, so this usually means the shot was taken "
+            f"before its script ran. --expand needs Playwright; the plain "
+            f"Chrome fallback cannot drive the page."
+        )
 
 
 def with_expand(src, name):
@@ -123,7 +150,7 @@ def clear(out):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--html", default="reports/collection.html")
-    ap.add_argument("-o", "--out", default="docs/screenshot.png")
+    ap.add_argument("-o", "--out", default="site/screenshot.png")
     ap.add_argument("--expand", metavar="NAME",
                     help="click this game's row before shooting")
     a = ap.parse_args()
@@ -149,6 +176,7 @@ def main():
             "  pip install playwright && playwright install chromium\n"
             "or install Google Chrome / Chromium.")
 
+    check_not_blank(out, WIDTH, HEIGHT)
     kb = out.stat().st_size // 1024
     print(f"{out} ({WIDTH}x{HEIGHT}, {kb} KB)")
 

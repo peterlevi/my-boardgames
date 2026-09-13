@@ -252,6 +252,14 @@ th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
 .tagbox .none { padding:10px; color:var(--muted); }
 td.designer { overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
   font-size:.82rem; }
+/* Designers stack one per line, like the win conditions, and the type steps
+   down so three still sit inside a row. Each line clips on its own, because
+   the cell's ellipsis only applies to a single run of text. */
+td.designer .dsl { display:flex; flex-direction:column; line-height:1.25;
+  white-space:nowrap; }
+td.designer .dsl > span { overflow:hidden; text-overflow:ellipsis; }
+td.designer .dsl.n2 { font-size:.74rem; }
+td.designer .dsl.n3 { font-size:.67rem; }
 .gamecell .meta { font-size:.78rem; color:var(--muted); margin-top:2px;
   overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 td.designer .more { color:var(--muted); }

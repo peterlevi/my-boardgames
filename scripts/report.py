@@ -512,9 +512,20 @@ def rows_html(data, a, tags=()):
         # with scripts off sees.
         br_html = salad_cell(br, ai.get("brn"))
         who = g["ds"]
-        designer = (f'<span title="{esc(", ".join(who))}">{esc(who[0])}'
-                    + (f' <span class="more">+{len(who) - 1}</span>'
-                       if len(who) > 1 else '') + '</span>') if who else EM_DASH
+        # Up to three designers stacked one per line, the type stepping down
+        # so they still fit a row — the same treatment the win conditions get.
+        # Past three, the third line carries the +N.
+        if who:
+            shown = who[:3]
+            extra = len(who) - len(shown)
+            last = (esc(shown[-1])
+                    + (f' <span class="more">+{extra}</span>' if extra else ''))
+            designer = (
+                f'<span class="dsl n{len(shown)}" title="{esc(", ".join(who))}">'
+                + "".join(f'<span>{esc(d)}</span>' for d in shown[:-1])
+                + f'<span>{last}</span></span>')
+        else:
+            designer = EM_DASH
         # The designer also rides in the game cell, for the "Game, Year,
         # Designer" column choice and for widths that drop the column.
         who_short = (esc(", ".join(who[:4]))

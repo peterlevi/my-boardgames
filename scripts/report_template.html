@@ -267,13 +267,13 @@ th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
    the two ends included — a hollow end read as "not selected" when it is the
    one thing that certainly is. */
 .vdot { position:absolute; left:7px; width:8px; height:8px;
-  margin-bottom:-4px; border-radius:50%; background:var(--panel);
+  margin-top:-4px; border-radius:50%; background:var(--panel);
   border:2px solid var(--line); box-sizing:border-box; }
 .vdot.on { background:var(--accent); border-color:var(--accent); }
 /* The handles are the same circle, larger, and filled to match the stops
    they sit on — they are ends of the range, not exceptions to it. */
 .vh { position:absolute; left:3.5px; width:15px; height:15px;
-  margin-bottom:-7.5px; border-radius:50%; background:var(--accent);
+  margin-top:-7.5px; border-radius:50%; background:var(--accent);
   border:2px solid var(--panel); box-shadow:0 0 0 2px var(--accent);
   box-sizing:border-box; cursor:grab; }
 .vh:focus-visible { outline:none; box-shadow:0 0 0 3px var(--chip); }
@@ -286,7 +286,7 @@ th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
   font-size:.72rem; }
 /* A label is a button: it asks for exactly its own stop. */
 .vname { position:absolute; left:0; white-space:nowrap;
-  transform:translateY(50%); background:none; border:0; padding:0 2px;
+  transform:translateY(-50%); background:none; border:0; padding:0 2px;
   font:inherit; color:var(--muted); cursor:pointer; border-radius:4px; }
 .vname:hover { color:var(--ink); }
 .vname.on { color:var(--ink); font-weight:600; }
@@ -3303,11 +3303,12 @@ function vRange(input, scale, label) {
   fill.className = 'vfill';
   track.appendChild(fill);
 
-  /* Position is ordinal: stop i sits at i / (n - 1), so every gap is the same
-     however far apart the values behind them are. The handles land on stops
-     and nowhere else — the two things asked of this control, equal spacing
-     and a circle per stop that fills when it is in range, only agree if a
-     stop is a place you can actually be. The stored range is still the
+  /* Position is ordinal: stop i sits at i / (n - 1) *down* from the top, so
+     every gap is the same however far apart the values behind them are and
+     the scale reads the way a list does — smallest first. The handles land on
+     stops and nowhere else — the two things asked of this control, equal
+     spacing and a circle per stop that fills when it is in range, only agree
+     if a stop is a place you can actually be. The stored range is still the
      underlying number, [stops[lo].lo, stops[hi].hi], so what the table
      filters on stays the real scale. */
   function fracOfStop(i) { return n < 2 ? 0 : i / (n - 1); }
@@ -3337,7 +3338,7 @@ function vRange(input, scale, label) {
   var dots = stops.map(function (st, i) {
     var dot = document.createElement('b');
     dot.className = 'vdot';
-    dot.style.bottom = fracOfStop(i) * 100 + '%';
+    dot.style.top = fracOfStop(i) * 100 + '%';
     track.appendChild(dot);
     return dot;
   });
@@ -3357,7 +3358,7 @@ function vRange(input, scale, label) {
     var el = document.createElement('span');
     el.className = 'vname';
     el.textContent = st.n;
-    el.style.bottom = fracOfStop(i) * 100 + '%';
+    el.style.top = fracOfStop(i) * 100 + '%';
     el.title = 'Show only ' + st.n.toLowerCase();
     names.appendChild(el);
     return el;
@@ -3412,10 +3413,10 @@ function vRange(input, scale, label) {
   /** 1.5, not 1.50; 12, not 12.0. */
   function trim(v) { return String(Math.round(v * 100) / 100); }
   function paint() {
-    fill.style.bottom = fracOfStop(loIdx) * 100 + '%';
+    fill.style.top = fracOfStop(loIdx) * 100 + '%';
     fill.style.height = (fracOfStop(hiIdx) - fracOfStop(loIdx)) * 100 + '%';
-    handles[0].style.bottom = fracOfStop(loIdx) * 100 + '%';
-    handles[1].style.bottom = fracOfStop(hiIdx) * 100 + '%';
+    handles[0].style.top = fracOfStop(loIdx) * 100 + '%';
+    handles[1].style.top = fracOfStop(hiIdx) * 100 + '%';
     // A stop is lit when it is inside the range, so the circles read as the
     // answer rather than as decoration.
     stops.forEach(function (st, i) {
@@ -3464,7 +3465,7 @@ function vRange(input, scale, label) {
   var anchorIdx = -1, startIdx = -1, moved = false;
   function fractionAt(clientY) {
     var r = track.getBoundingClientRect();
-    return Math.max(0, Math.min(1, (r.bottom - clientY) / r.height));
+    return Math.max(0, Math.min(1, (clientY - r.top) / r.height));
   }
   function dragTo(i) {
     i = Math.max(0, Math.min(n - 1, i));
@@ -3519,8 +3520,10 @@ function vRange(input, scale, label) {
   });
   handles.forEach(function (h, i) {
     h.addEventListener('keydown', function (e) {
-      var d = e.key === 'ArrowUp' || e.key === 'ArrowRight' ? 1
-            : e.key === 'ArrowDown' || e.key === 'ArrowLeft' ? -1 : 0;
+      // Down is further along the scale, because the scale now reads
+      // downwards: the smallest stop is at the top.
+      var d = e.key === 'ArrowDown' || e.key === 'ArrowRight' ? 1
+            : e.key === 'ArrowUp' || e.key === 'ArrowLeft' ? -1 : 0;
       if (!d) return;
       anchorIdx = i ? loIdx : hiIdx;
       dragTo((i ? hiIdx : loIdx) + d);

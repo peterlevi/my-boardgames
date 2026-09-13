@@ -1334,11 +1334,6 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="c-tmax w-time" data-k="tmax" data-col="tmax">Time</th>
     <th class="hide-sm hide-xs c-w w-weight" data-k="w" data-col="w">Weight</th>
     <th class="hide-sm c-ixk w-ixk drop5" data-k="ix" data-col="ixk">Interaction</th>
-    <th class="num hide-sm c-acq w-date" data-k="acq" data-col="acq">Acquired</th>
-    <th class="num hide-sm c-lp w-date" data-k="lp" data-col="lp">Last played</th>
-    <th class="num hide-sm c-ed w-date" data-k="ed" data-col="ed"
-      title="When the collection entry itself last changed">Edited</th>
-    <th class="num hide-sm c-pp w-price" data-k="pp" data-col="pp">Price paid</th>
     <th class="hide-sm c-win w-win drop1" data-k="win" data-col="win">Win condition</th>
     <th class="num hide-sm c-sc w-score drop1" data-k="sc" data-col="sc"
       title="What a winning score typically looks like">Win scores</th>
@@ -1350,6 +1345,12 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     <th class="hide-sm c-atn w-atn" data-k="verdict" data-col="atn">__ATN__</th>
     <th class="hide-sm c-bestp w-pct" data-k="bestPct" data-col="bestp">__BESTATN__</th>
     <th class="hide-sm c-apprp w-pct" data-k="appr" data-col="apprp">__APPRATN__</th>
+    <!-- What you did with the game rather than what the game is. -->
+    <th class="num hide-sm c-lp w-date" data-k="lp" data-col="lp">Last played</th>
+    <th class="num hide-sm c-ed w-date" data-k="ed" data-col="ed"
+      title="When the collection entry itself last changed">Last edited</th>
+    <th class="num hide-sm c-acq w-date" data-k="acq" data-col="acq">Acquired</th>
+    <th class="num hide-sm c-pp w-price" data-k="pp" data-col="pp">Price paid</th>
   </tr></thead>
   <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="17"
     id="septext"></td></tr><!--__ROWS__--></tbody>
@@ -3506,18 +3507,16 @@ document.addEventListener('click', function (e) {
  *  setting for what rides under the name. */
 var COLUMNS = [
   { k: 'th', n: 'Cover' }, { k: 'rk', n: 'Rank' }, { k: 'rt', n: 'Votes' },
-  { k: 'av', n: 'BGG' },
-  { k: 'my', n: 'Mine' },
+  // The headers are "BGG" and "Mine", which is all a 54px column has room
+  // for; here there is room to say what they are.
+  { k: 'av', n: 'BGG rating' },
+  { k: 'my', n: 'My rating' },
   { k: 'gn', n: 'Game' },
   { k: 'y', n: 'Year' },
   { k: 'ds', n: 'Designer', off: true }, { k: 'pl', n: 'Plays' },
   { k: 'tmax', n: 'Time' },
   { k: 'w', n: 'Weight' },
   { k: 'ixk', n: 'Interaction' },
-  { k: 'acq', n: 'Acquired', off: true },
-  { k: 'lp', n: 'Last played', off: true },
-  { k: 'ed', n: 'Edited', off: true },
-  { k: 'pp', n: 'Price paid', off: true },
   { k: 'win', n: 'Win condition' },
   { k: 'sc', n: 'Win scores', off: true },
   { k: 'salad', n: 'Point salad' },
@@ -3526,14 +3525,26 @@ var COLUMNS = [
   // sit down for it at all.
   { k: 'atn', n: 'Good at N — the whole vote' },
   { k: 'bestp', n: 'Best at N — best %', off: true },
-  { k: 'apprp', n: 'Appr at N — approved %', off: true }
+  { k: 'apprp', n: 'Appr at N — approved %', off: true },
+  // What *you* did with the game rather than what the game is: they go last,
+  // together, and they are all off by default.
+  { k: 'lp', n: 'Last played', off: true },
+  { k: 'ed', n: 'Last edited', off: true },
+  { k: 'acq', n: 'Acquired', off: true },
+  { k: 'pp', n: 'Price paid', off: true }
 ];
 /* The order cells sit in. */
 var DEFAULT_ORDER = ['th', 'rk', 'rt', 'av', 'my',
   'gn', 'y', 'ds', 'pl',
-  'tmax', 'w', 'ixk', 'acq', 'lp', 'ed', 'pp',
+  'tmax', 'w', 'ixk',
   'salad', 'win', 'sc',
-  'atn', 'bestp', 'apprp'];
+  'atn', 'bestp', 'apprp',
+  'lp', 'ed', 'acq', 'pp'];
+/* Bumped whenever DEFAULT_ORDER changes. A saved arrangement is the reader's
+   and outranks ours, but only while it is an arrangement of the same list —
+   otherwise a reordering here would never reach anyone who had opened the
+   report before. Their column *choices* survive; only the order is retaken. */
+var ORDER_VERSION = 2;
 // MUST match KEY in the head script above. Bumped whenever the vocabulary
 // changes rather than the values: v12 dropped the columns that the Cells
 // setting replaced, v13 the three-way pills/numbers/both choice that became
@@ -3563,7 +3574,7 @@ function loadCols() {
       });
       if (saved.game) gameMode = saved.game;
       if (saved.detail) detailMode = saved.detail;
-      if (saved.order && saved.order.length) {
+      if (saved.order && saved.order.length && saved.ov === ORDER_VERSION) {
         // Keep only known keys, then slot in anything the saved order
         // predates — next to the column it belongs beside, not at the end.
         // Appending was how a column added later ended up at the foot of the
@@ -3595,7 +3606,7 @@ function saveCols() {
   try {
     window.localStorage.setItem(COLKEY, JSON.stringify(
       { cols: colState, game: gameMode, detail: detailMode,
-        order: colOrder }));
+        order: colOrder, ov: ORDER_VERSION }));
   } catch (e) { /* nothing to do about it */ }
 }
 

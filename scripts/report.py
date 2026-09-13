@@ -1045,10 +1045,6 @@ def rows_html(data, a, tags=()):
             f'<td class="c-tmax" data-col="tmax">{t_html}</td>'
             f'<td class="hide-sm hide-xs c-w" data-col="w">{w_html}</td>'
             f'<td class="hide-sm drop5 c-ixk" data-col="ixk">{ix_html}</td>'
-            f'<td class="num hide-sm c-acq" data-col="acq">{g.get("acq") or EM_DASH}</td>'
-            f'<td class="num hide-sm c-lp" data-col="lp">{g.get("lp") or EM_DASH}</td>'
-            f'<td class="num hide-sm c-ed" data-col="ed">{g.get("ed") or EM_DASH}</td>'
-            f'<td class="num hide-sm c-pp" data-col="pp">{price_html}</td>'
             f'<td class="hide-sm drop1 c-win" data-col="win">{win_html}</td>'
             f'<td class="num hide-sm drop1 c-sc" data-col="sc"'
             f'{f" title={esc(ai.get("scnote"))!r}" if ai.get("scnote") else ""}>'
@@ -1060,6 +1056,12 @@ def rows_html(data, a, tags=()):
             f'{best_html}</td>'
             f'<td class="hide-sm c-apprp j-apprp" data-col="apprp">'
             f'{appr_html}</td>'
+            # What you did with the game rather than what the game is: last,
+            # together, and off unless you ask for them.
+            f'<td class="num hide-sm c-lp" data-col="lp">{g.get("lp") or EM_DASH}</td>'
+            f'<td class="num hide-sm c-ed" data-col="ed">{g.get("ed") or EM_DASH}</td>'
+            f'<td class="num hide-sm c-acq" data-col="acq">{g.get("acq") or EM_DASH}</td>'
+            f'<td class="num hide-sm c-pp" data-col="pp">{price_html}</td>'
             f'</tr>')
     shown = sum(1 for o in out if not o.startswith(tuple()) and " hidden>" not in o)
     return "\n".join(out), shown

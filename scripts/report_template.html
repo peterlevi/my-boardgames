@@ -374,6 +374,21 @@ td.designer .dsl.n3 { font-size:.67rem; }
   overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 td.designer .more { color:var(--muted); }
 .pair span { color:var(--muted); font-size:.85rem; }
+/* Phone-only controls: a way into the filters, and a sort that does not need
+   column headers to tap. Both are laid out here and switched on in the phone
+   block at the foot of this stylesheet. */
+.mfbtn, .msort { display:none; }
+.mfbtn { align-items:center; gap:6px; margin-top:12px; padding:7px 12px;
+  background:var(--panel); border:1px solid var(--line); border-radius:8px;
+  font:inherit; font-size:.84rem; font-weight:700; color:var(--accent);
+  cursor:pointer; }
+.mfbtn::before { content:"▸"; font-size:1.05em; line-height:1; }
+:root.filt-open .mfbtn::before { content:"▾"; }
+.msort { margin-left:auto; align-items:center; gap:4px; }
+.msort select { padding:4px 6px; font-size:.78rem; max-width:44vw; }
+#msortdir { width:26px; height:26px; padding:0; flex:none; cursor:pointer;
+  background:var(--panel); border:1px solid var(--line); border-radius:7px;
+  color:var(--muted); font-size:.8rem; line-height:1; }
 /* The only thing pinned while scrolling: the count, what it is counting, and
    the column headers. The filters scroll away — they are a thing you set, not
    a thing you read. */
@@ -743,7 +758,16 @@ td.score, th.c-av, th.c-my { text-align:center; padding-left:4px;
 .pb .bar > .pct { flex:none; }
 /* Under a pill there is room for one kind of interaction, not three: the
    other two stay in the cell and in the hover. */
-:root.det-detailed .pb .ixonly { height:14px; justify-content:center; }
+/* line-height 1 is the *cap* height of the type, so a descender has nowhere
+   to go and `overflow:hidden` on the line — which is there for the ellipsis —
+   sliced the tail off every g and y. The box stays 14px and the line inside
+   it gets the room the glyphs need. */
+:root.det-detailed .pb .ixonly { height:14px; justify-content:center;
+  line-height:1.35; }
+/* …and the line must not be squeezed back into it. A flex item shrinks along
+   the main axis by default, so a 14.3px line inside a 14px box lost a quarter
+   of a pixel — which is exactly the tail of a g. */
+:root.det-detailed .pb .ixonly > span { flex:none; }
 :root.det-detailed .pb .ixonly > span:nth-child(n+2) { display:none; }
 .pb .bar + .bar { margin-top:3px; }
 /* Which reading this is, where a column carries two and the header cannot
@@ -977,7 +1001,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 }
 
 @media (max-width:700px) {
-  .hide-sm { display:none; }
+  /* `.hide-sm` and the drop ladder are the table's way of coping with a
+     narrow window: fewer columns. A card has no columns to lose, so they all
+     stand down here and the card decides for itself what it carries. */
+  .hide-sm, .hide-s, .hide-xs, .drop1, .drop2, .drop3, .drop4, .drop5 {
+    display:revert; }
   /* The filter panel wraps to ~480px tall on a phone; sticky, it would eat most
      of the viewport and leave no room for the table. */
   .panel { position:static; padding-top:10px; }
@@ -987,10 +1015,13 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .row + .row { margin-top:14px; }
   .titlebar { row-gap:0; }
   .titlebar h1 { margin-bottom:0; }
-  /* Two filters per line instead of one, to keep the panel short. */
-  .f { flex:1 1 calc(50% - 5px); min-width:0; }
+  /* Two filters per line instead of one, to keep the panel short. Half the
+     row *minus half the gap*: at "50% - 5px" against this block's 14px gap
+     the pair came to four pixels over the line and every control took a line
+     of its own, doubling the height of the panel. */
+  .f { flex:1 1 calc(50% - 7px); min-width:0; }
   .f.grow { flex-basis:100%; }
-  .f select, .f input { width:100%; }
+  .f select, .f input, .f .sel { width:100%; }
   .pair input { width:100%; min-width:0; }
   .resultline { margin:12px 0 2px; }
   #count { font-size:1.05rem; }
@@ -999,13 +1030,94 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
      corner to park in. The switch keeps its own line for the same reason. */
   .filterbar #reset { position:static; }
   .fitsw { position:static; left:auto !important; margin:12px 0 0; }
-  th, td { padding:7px 6px; }
-  img.thumb { width:38px; height:38px; }
-  td.thumb { width:38px; }
-  .hex { width:30px; font-size:.72rem; }
-  td.score { width:30px; }
   a.game { font-size:.92rem; }
-  .vinline { display:inline-block; margin-left:6px; vertical-align:middle; }
+
+  /* ---- the table becomes a list of cards ----------------------------
+     A table needs columns, and a phone has room for two of them — which is
+     why this used to show a cover, a rating and a name and nothing else. A
+     card has no columns: the same cells become a strip of pills that wraps,
+     so the phone shows *more* than the desktop's narrow set rather than
+     less. Nothing is re-rendered to do it; the cells are the ones already
+     in the row, laid out differently.
+
+     The header row goes with the table, which also settles the alignment:
+     a sticky <thead> under a sticky result line has to agree with it about
+     its own height to the pixel, and on a phone it did not. */
+  table, tbody, tr, td { display:block; }
+  thead { display:none; }
+  table { margin-top:0; }
+  tr.game-row { display:flex; flex-wrap:wrap; align-items:center;
+    gap:5px 7px; padding:11px 0 12px;
+    border-bottom:1px solid var(--line); }
+  tr.game-row > td { border:0; padding:0; width:auto; }
+  /* The cover and the name share the first line; everything else wraps under
+     them as pills. */
+  /* The name comes straight after the cover and everything else follows it,
+     whatever order the columns are in: a card is read name-first. */
+  tr.game-row > td { order:2; }
+  td.c-th { order:0; flex:none; align-self:flex-start; }
+  /* Wide enough to hold the line beside the cover and the ratings, narrow
+     enough that it does not push itself onto a line of its own. */
+  td.c-gn { order:1; flex:1 1 52%; min-width:0; }
+  img.thumb { width:52px; height:52px; }
+  .gamecell .meta { font-size:.78rem; }
+  /* Only what a pill fits in. The rest of the columns have no place in a
+     card: rank and votes are for comparing rows, not reading one. */
+  tr.game-row > td.c-rk, tr.game-row > td.c-rt, tr.game-row > td.c-ds,
+  tr.game-row > td.c-y, tr.game-row > td.c-sc, tr.game-row > td.c-acq,
+  tr.game-row > td.c-lp, tr.game-row > td.c-ed, tr.game-row > td.c-pp,
+  tr.game-row > td.c-bestp, tr.game-row > td.c-apprp { display:none; }
+  /* A cell with nothing to say is a stray dash in the middle of a strip. */
+  tr.game-row > td.c-tmax:not(:has(.tag)),
+  tr.game-row > td.c-w:not(:has(.tag)),
+  tr.game-row > td.c-ixk:not(:has(.tag)),
+  tr.game-row > td.c-salad:not(:has(.tag)),
+  tr.game-row > td.c-fit:not(:has(.tag)),
+  tr.game-row > td.c-win:not(:has(.wc)),
+  tr.game-row > td.c-atn:not(:has(.tag)) { display:none; }
+  /* Pills only, whichever cell mode the desktop was left in: a bar 44px wide
+     says less on a phone than the word it sits under. */
+  :root.det-detailed .pb.sw > .pbars,
+  :root.det-compact .pb.sw > .pbars,
+  :root.det-compact .pb.sw > .pbtop { display:none; }
+  :root.det-compact .pb.sw > .tag { display:inline-flex; }
+  :root.det-compact .pb.sw { text-align:left; }
+  .pb, .pb > .tag { display:inline-flex; }
+  .pb > .tag, .pb > .pbtop { height:auto; }
+  /* Ways to win read along the strip rather than stacking: a card is a line
+     of chips, and a two-line block in the middle of it sets the row's height
+     for no good reason. */
+  td.c-win .wc, td.c-win .wc.n2, td.c-win .wc.n3 { flex-direction:row;
+    gap:5px; font-size:.72rem; line-height:1.5; color:var(--muted); }
+  td.c-win .wc > span + span::before { content:"· "; }
+  /* The play count is a number without a header now, so it says what it is.
+     The label leads rather than trails: "Plays 1" needs no plural, where
+     "1 plays" does. */
+  td.c-pl { font-size:.76rem; color:var(--muted); }
+  td.c-pl::before { content:"Plays "; }
+  td.score { width:auto; padding:0; }
+  .hex { width:30px; font-size:.72rem; }
+  /* The verdict already has a pill of its own in the strip. */
+  .vinline { display:none; }
+  /* Fit's tint is the whole card's business on a phone, not one cell's. */
+  :root.fitrank tbody tr:not(:hover) td.fq1,
+  :root.fitrank tbody tr:not(:hover) td.fq2,
+  :root.fitrank tbody tr:not(:hover) td.fq3 { background:none; }
+
+  /* The columns menu has no columns to choose on a phone. */
+  .colpick { display:none; }
+  /* Filters are a thing you open, not a wall you scroll past: closed, the
+     games start above the fold. */
+  /* One disclosure, not two: everything you set — the nine controls, More
+     filters, the fit switch and Reset — lives behind the same button, so the
+     page opens on games rather than on a page of controls. */
+  .mfbtn { display:flex; margin:0; align-self:center; }
+  :root:not(.filt-open) .panel > .row > .f:not(.grow),
+  :root:not(.filt-open) .filterbar { display:none; }
+  .filterbar { flex-wrap:wrap; gap:10px 16px; }
+  .filterbar #reset { flex:0 0 auto; }
+  .fitsw { margin:0; }
+  .msort { display:flex; }
 }
 </style>
 <script>
@@ -1259,6 +1371,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
         placeholder="Game name, designer, trait…" autocomplete="off"
         ><button type="button" id="qclear" hidden aria-label="Clear the search"
         title="Clear the search"></button></span></div>
+    <!-- Phone only: the rest of the panel is a wall on a small screen, so it
+         opens on demand and the games start near the top. Search stays out
+         here, because it is the one you reach for without thinking. -->
+    <button type="button" id="mfilters" class="mfbtn"
+      aria-expanded="false">Filters</button>
     <!-- Expansions first: it decides what a *row* is, so it comes before the
          filters that decide which rows. -->
     <div class="f"><label for="exp">Expansions</label>
@@ -1336,6 +1453,12 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 
 <div class="resultline"><span id="count">__SHOWN__ games</span><span
   id="desc">__DESC__</span><span id="outcount" hidden></span>
+  <!-- Phone only: with no column headers to tap, the sort needs somewhere to
+       live. Its options are built from the headers themselves. -->
+  <span class="msort" id="msortwrap">
+    <select id="msort" aria-label="Sort by"></select>
+    <button type="button" id="msortdir" aria-label="Reverse the sort"></button>
+  </span>
   <span class="colpick" id="colsf">
     <button type="button" id="colsbtn" class="iconbtn" aria-expanded="false"
       title="Choose columns" aria-label="Choose columns"
@@ -2013,11 +2136,17 @@ function describe() {
  * says how far outside is worth nothing: a whole point of weight, an hour
  * and a half of play, forty points of salad, two levels of interaction.
  */
-var FIT_W = { rating: 1.0, played: 2.4, players: 1.6, tags: 1.4, weight: 1.2,
+/* The player count outweighs everything else when one is set, because it is
+   the only axis that decides whether the evening can happen at all. The
+   others say how much you would enjoy the game; this one says whether you
+   can play it. */
+var FIT_W = { rating: 1.0, played: 2.4, players: 3.0, tags: 1.4, weight: 1.2,
               time: 1.2, ix: 1.0, salad: 1.0, year: 1.0, votes: 0.35 };
 var FIT_TOL = { w: 1.5, tmax: 90, salad: 40, ix: 2, pl: 6, y: 10 };
-/* What is left of a score when the game cannot seat the player count. */
+/* What is left of a score when the game cannot seat the player count, and
+   when it can but the poll says it should not. */
 var FIT_CANT_PLAY = 0.25;
+var FIT_UNAPPROVED = 0.5;
 /** Which column each axis is evidence for, so a ranked table can colour the
  *  cell that earned it. The rating shows on both hexagons; the player-count
  *  axis on whichever of its three columns is up. */
@@ -2087,16 +2216,25 @@ function fitScore(g, s, n) {
         (Math.log(g.rt) / Math.LN10 - 2) / 2.7)),
         (g.rt >= 1000 ? Math.round(g.rt / 1000) + 'k' : g.rt) + ' votes');
   }
-  var seats = true;
+  var seats = true, approved = true;
   if (n) {
     // Does the box seat this many at all — counting an owned expansion that
     // extends it, when expansions are being folded in?
     seats = s && s.via ? true : inRangeAt(g, n);
-    // The verdict, on the same ladder the pill uses: best at this count,
-    // good at it, plays at it, or not at all.
-    var v = !seats || !s ? 0 : s.isBest ? 1
-          : (s.bestPct === null ? !!s.good : s.bestPct >= 50) ? 0.8
-          : 0.5;
+    // How well it plays at the count, from the poll itself rather than from
+    // the three-rung verdict. The pill says "Plays" for anything inside the
+    // box's range, which put Innovation — where six people out of 324 think
+    // five works — on half marks, level with a game the vote merely prefers
+    // at another count. Approval carries it, with a bonus for the counts
+    // people actually call best.
+    var v = 0;
+    if (seats && s) {
+      v = s.bestPct === null
+        // A CSV-built collection has BGG's recommendation but no percentages.
+        ? (s.isBest ? 1 : s.good ? 0.8 : 0.4)
+        : 0.75 * (s.appr / 100) + 0.25 * (s.bestPct / 100);
+      approved = s.appr === null || s.appr >= APPROVED_MIN;
+    }
     add('players', v, n + 'p');
   }
   var ixR = numRange(F.ix.value, BANDS.scales.ix);
@@ -2137,6 +2275,12 @@ function fitScore(g, s, n) {
   if (score !== null && !seats) {
     score = Math.round(score * FIT_CANT_PLAY);
     parts.unshift('does not play at ' + n + 'p');
+  } else if (score !== null && !approved) {
+    // It seats them, but most of the people who voted say it should not.
+    // Half, rather than the quarter a game that cannot seat them keeps: it
+    // is a bad idea rather than an impossible one.
+    score = Math.round(score * FIT_UNAPPROVED);
+    parts.unshift('most say no at ' + n + 'p');
   }
   return { score: score, parts: parts, by: by };
 }
@@ -3114,6 +3258,48 @@ el('qclear').addEventListener('click', function () {
 document.getElementById('fittoggle').addEventListener('change', function () {
   setRanking(this.checked);
 });
+
+/* The phone's two controls: a way into the filter panel, and a sort built
+   from the column headers themselves — so a column added, renamed or removed
+   arrives here without anyone remembering to update a second list. */
+(function () {
+  var open = document.getElementById('mfilters');
+  open.addEventListener('click', function () {
+    var on = !ROOT.classList.contains('filt-open');
+    ROOT.classList.toggle('filt-open', on);
+    open.setAttribute('aria-expanded', on ? 'true' : 'false');
+    // The controls were measured while the panel was hidden, where every
+    // width is zero; now that it is on screen they can be sized properly.
+    if (on) {
+      enhanced.forEach(function (w) { w._natural = null; });
+      sizeControls();
+    }
+  });
+
+  var sel = document.getElementById('msort');
+  var seen = {}, opts = '';
+  [].forEach.call(document.querySelectorAll('thead th[data-k]'), function (th) {
+    var k = th.getAttribute('data-k');
+    if (seen[k]) return;
+    seen[k] = 1;
+    // The header text, which for the poll columns already names the count.
+    opts += '<option value="' + esc(k) + '">' + esc(th.textContent.trim()) +
+      '</option>';
+  });
+  sel.innerHTML = opts;
+  sel.value = sortKey;
+  sel.addEventListener('change', function () {
+    sortDesc = !!SORT_DESC_FIRST[sel.value];
+    sortKey = sel.value;
+    markSort();
+    render();
+  });
+  document.getElementById('msortdir').addEventListener('click', function () {
+    sortDesc = !sortDesc;
+    markSort();
+    render();
+  });
+})();
 /* Park the switch just past "More filters". Measured from the summary's own
    text — the range's right edge already has the ▸ marker behind it — so it
    stays put when the panel opens and does not depend on a guessed width. */
@@ -3721,8 +3907,14 @@ function naturalWidth(wrap) {
 }
 
 function sizeControls() {
+  // Not on a phone, where the controls are told to fill half the row instead.
+  // Pinning them there is worse than useless: the measurement reads the width
+  // the control has just been given — the full row — and then pins it to
+  // that, so two-per-line became one-per-line and the panel twice as tall.
+  var phone = window.innerWidth <= 700;
   enhanced.forEach(function (wrap) {
     if (!wrap._widest) return;
+    if (phone) { wrap.style.minWidth = ''; return; }
     // Measured once and remembered. Measuring again on a later call gave a
     // slightly different answer — the row is in a different state by then —
     // and the controls after it stepped sideways by a few pixels every time
@@ -3989,6 +4181,13 @@ function filteredCols() {
 function fitColumns() {
   var scroll = document.querySelector('.scroll');
   if (!scroll) return {};
+  // Nothing to fit when the table is a list of cards: a card wraps instead of
+  // overflowing. Checked on the header rather than on a width, because that
+  // is the thing card mode actually turns off — and because a hidden <thead>
+  // still reports its children's desktop widths, which had this dropping nine
+  // columns on a phone that had room for all of them.
+  var head = document.querySelector('thead');
+  if (!head || window.getComputedStyle(head).display === 'none') return {};
   var avail = scroll.clientWidth;
   var width = {}, total = 0;
   [].forEach.call(document.querySelectorAll('thead th'), function (th) {
@@ -4592,6 +4791,14 @@ function markSort() {
     function (th) {
       th.setAttribute('aria-sort', sortDesc ? 'descending' : 'ascending');
     });
+  // The phone's sort control says the same thing the caret does.
+  var ms = document.getElementById('msort');
+  if (ms && ms.value !== sortKey) ms.value = sortKey;
+  var md = document.getElementById('msortdir');
+  if (md) {
+    md.textContent = sortDesc ? '▼' : '▲';
+    md.title = sortDesc ? 'Largest first' : 'Smallest first';
+  }
 }
 
 /** Whether the table is ranked rather than filtered.

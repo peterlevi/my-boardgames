@@ -483,3 +483,39 @@ Whether you have *played* it carries the most weight of any axis (2.4 against
 "the one we keep coming back to" are different requests, and a game that
 answers the wrong one is the wrong game however well it scores elsewhere.
 
+
+## D-28 — A phone gets cards, not a narrower table
+
+The responsive design was the table with columns taken away: by the time the
+window was a phone, `.hide-sm` had removed everything but the cover, one
+rating and the name. Three columns is not a table, and a reader on a phone
+was getting *less* than the data supports rather than a different shape of
+it.
+
+Below 700px the rows become cards. The same cells, laid out as a flex row
+that wraps: cover and name on the first line, then a strip of pills — plays,
+time, weight, interaction, point salad, the ways to win, the player verdict
+and the fit — under them. Nothing is re-rendered to do it and no markup
+changed; the pills are the ones the desktop already draws, and the cell
+classes are the ones already on the row.
+
+The header row goes with the table, which settles the alignment complaint
+too: a sticky `<thead>` under a sticky result line has to agree with it to
+the pixel about its own height, and on a phone it did not. There is nothing
+left to disagree.
+
+Two controls appear to replace what the table gave away. Sorting loses its
+column headers, so a select and a direction button sit in the result line —
+built from the headers themselves, so a column added or renamed arrives
+there without anyone maintaining a second list. And the filter panel, which
+filled the whole first screen, goes behind a *Filters* button, with search
+left outside it because search is what you reach for without thinking.
+
+Three things broke on the way, all of them the same mistake — desktop
+machinery still running in a layout that has no use for it. The width ladder
+measured the hidden `<thead>` (a display:none element still reports its
+children's widths) and dropped nine columns the phone had room for; the
+control sizer measured a control that CSS had just set to `width:100%` and
+pinned it to the full row, so the filters came out one per line; and the
+half-width flex basis was five pixels short of the gap it had to clear.
+

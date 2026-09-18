@@ -1011,7 +1011,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .panel { position:static; padding-top:10px; }
   .wrap { padding-left:12px; padding-right:12px; }
   h1 { font-size:1.3rem; }
-  .row { gap:8px 14px; }
+  /* One rhythm for the whole panel: the gap between two wrapped lines of
+     controls is the same as the gap between two rows of them, so the filters
+     read as evenly spaced whether the break is a wrap or a new row. */
+  .row { gap:14px; }
   .row + .row { margin-top:14px; }
   .titlebar { row-gap:0; }
   .titlebar h1 { margin-bottom:0; }
@@ -1023,7 +1026,10 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .f.grow { flex-basis:100%; }
   .f select, .f input, .f .sel { width:100%; }
   .pair input { width:100%; min-width:0; }
-  .resultline { margin:12px 0 2px; }
+  /* Nothing is pinned on a phone. A frozen bar costs a tenth of a short
+     screen for something you read once, and there are no column headers left
+     that need to stay with the rows they name. */
+  .resultline { position:static; margin:12px 0 2px; }
   #count { font-size:1.05rem; }
   button.link { flex-basis:100%; text-align:left; }
   /* Back into the flow on a phone, where the row is a stack and there is no
@@ -1047,14 +1053,28 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   thead { display:none; }
   table { margin-top:0; }
   tr.game-row { display:flex; flex-wrap:wrap; align-items:center;
-    gap:5px 7px; padding:11px 0 12px;
+    gap:5px 6px; padding:11px 0 12px;
     border-bottom:1px solid var(--line); }
   tr.game-row > td { border:0; padding:0; width:auto; }
   /* The cover and the name share the first line; everything else wraps under
      them as pills. */
-  /* The name comes straight after the cover and everything else follows it,
-     whatever order the columns are in: a card is read name-first. */
+  /* The card reads in its own order, whatever order the columns are in: the
+     cover, the name, then the strip — how often you have played it, how long
+     it takes, how heavy, how much the players touch each other, how broadly
+     it scores, how it answers the player count, how well it fits — and the
+     ways to win on a line of their own at the foot.
+
+     Stated per cell rather than left to the column order, because dragging a
+     header on the desktop must not rearrange the card. */
   tr.game-row > td { order:2; }
+  /* Most useful first, because the strip wraps when it runs out of room and
+     what wraps should be what you would miss least. The fit and the verdict
+     at the count you asked for lead; the play count, which is a fact about
+     you rather than about tonight, brings up the rear. */
+  td.c-fit { order:3; } td.c-atn { order:4; } td.c-tmax { order:5; }
+  td.c-w { order:6; } td.c-ixk { order:7; } td.c-salad { order:8; }
+  td.c-pl { order:9; }
+  td.c-win { order:10; flex:0 0 100%; }
   td.c-th { order:0; flex:none; align-self:flex-start; }
   /* Wide enough to hold the line beside the cover and the ratings, narrow
      enough that it does not push itself onto a line of its own. */
@@ -1074,7 +1094,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   tr.game-row > td.c-salad:not(:has(.tag)),
   tr.game-row > td.c-fit:not(:has(.tag)),
   tr.game-row > td.c-win:not(:has(.wc)),
-  tr.game-row > td.c-atn:not(:has(.tag)) { display:none; }
+  tr.game-row > td.c-atn:not(:has(.tag)),
+  tr.game-row > td.c-av:not(:has(.hex)),
+  tr.game-row > td.c-my:not(:has(.hex)) { display:none; }
   /* Pills only, whichever cell mode the desktop was left in: a bar 44px wide
      says less on a phone than the word it sits under. */
   :root.det-detailed .pb.sw > .pbars,
@@ -1083,7 +1105,14 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   :root.det-compact .pb.sw > .tag { display:inline-flex; }
   :root.det-compact .pb.sw { text-align:left; }
   .pb, .pb > .tag { display:inline-flex; }
-  .pb > .tag, .pb > .pbtop { height:auto; }
+  /* Every chip on the strip sits on one line, at one height, and none of them
+     may break: a pill that wraps mid-word is unreadable, and one that is a
+     pixel taller than its neighbours makes the strip look ragged. Slightly
+     tighter than on the desktop so five of them clear a 390px screen without
+     orphaning the last. */
+  .pb > .tag, .pb > .pbtop { height:21px; align-items:center; }
+  .pb > .tag { font-size:.72rem; padding:2px 6px; white-space:nowrap; }
+  tr.game-row > td { line-height:21px; }
   /* Ways to win read along the strip rather than stacking: a card is a line
      of chips, and a two-line block in the middle of it sets the row's height
      for no good reason. */
@@ -1111,12 +1140,23 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   /* One disclosure, not two: everything you set — the nine controls, More
      filters, the fit switch and Reset — lives behind the same button, so the
      page opens on games rather than on a page of controls. */
-  .mfbtn { display:flex; margin:0; align-self:center; }
+  /* The button takes a line of its own, so the eight controls below it pair
+     off in their own order — expansions with played, players with rule, the
+     two ranges, the two verdicts — instead of the first one sharing a line
+     with the button and every pair after it being off by one. */
+  /* Drawn like "More filters" rather than as a box: it has to take the whole
+     line to keep the eight controls paired in their own order, and a
+     full-width box that says one word looks like a mistake. */
+  .mfbtn { display:flex; flex:0 0 100%; margin:0; padding:2px 0;
+    background:none; border:0; }
   :root:not(.filt-open) .panel > .row > .f:not(.grow),
   :root:not(.filt-open) .filterbar { display:none; }
-  .filterbar { flex-wrap:wrap; gap:10px 16px; }
-  .filterbar #reset { flex:0 0 auto; }
-  .fitsw { margin:0; }
+  /* "More filters" and "Reset filters" keep the ends of one line, as they do
+     on a wide screen; the switch takes the line under them. */
+  .filterbar { flex-wrap:wrap; gap:0 16px; }
+  .filterbar #more { order:1; flex:1 1 auto; }
+  .filterbar #reset { order:2; flex:0 0 auto; margin-top:20px; }
+  .fitsw { order:3; flex:0 0 100%; margin:20px 0 0; }
   .msort { display:flex; }
 }
 </style>

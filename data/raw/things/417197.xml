@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="417197">
+         <thumbnail>https://cf.geekdo-images.com/tyv6lPMlyU7YIUztlILQYQ__small/img/_CXQQbXsewUlde4R22XCRApxZ5k=/fit-in/200x150/filters:strip_icc()/pic8587890.png</thumbnail>
+      <image>https://cf.geekdo-images.com/tyv6lPMlyU7YIUztlILQYQ__original/img/KUY_vKJZenJVl0cv05Qkt-Gx-ao=/0x0/filters:format(png)/pic8587890.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Rebirth" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Nowa Ziemia" />
+			    				
+				<name type="alternate" sortindex="1" value="Obrození" />
+			    				
+				<name type="alternate" sortindex="1" value="Preporod" />
+			    				
+				<name type="alternate" sortindex="1" value="Rebirth: Aufbruch in eine neue Zeit" />
+			    				
+				<name type="alternate" sortindex="1" value="Rebirth: Yeni Çağa İlk Adım" />
+			    				
+				<name type="alternate" sortindex="1" value="Возрождение" />
+			    				
+				<name type="alternate" sortindex="1" value="โลกใหม่" />
+			    				
+				<name type="alternate" sortindex="1" value="重筑家园" />
+			
+						               													<description>Following a series of calamities that left civilization in shambles, societies around the world are being rebuilt anew in harmony with nature. Scotland lies in ruins, and the ancient clans have taken it upon themselves to restore the land. As clan leaders, you will compete for strategic control of the land by rebuilding its prestigious castles.
+
+Rebirth is a new tile-laying game from Reiner Knizia. The game revitalizes this classic genre by combining Knizia&amp;rsquo;s elegant mechanics with Mighty Boards&amp;rsquo; evocative world building. The result is a eurogame with smooth gameplay set in a lush and hopeful future.
+
+Each turn, players draw a tile from their supply and place it strategically on the board. These tiles represent your clan&amp;rsquo;s contribution to rebuilding the land. Rebirth rewards strategic foresight and clever tactical play, with tougher decisions emerging over the course of the game.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2024" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="170">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="3" />
+					<result value="Not Recommended" numvotes="81" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="16" />
+					<result value="Recommended" numvotes="88" />
+					<result value="Not Recommended" numvotes="25" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="96" />
+					<result value="Recommended" numvotes="36" />
+					<result value="Not Recommended" numvotes="1" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="58" />
+					<result value="Recommended" numvotes="74" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="70" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 2–4 players" />
+</poll-summary> 			               				<playingtime value="60" />
+						               				<minplaytime value="45" />
+						               				<maxplaytime value="60" />
+						               				<minage value="10" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="40">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="1" />
+					<result value="6" numvotes="2" />
+					<result value="8" numvotes="23" />
+					<result value="10" numvotes="12" />
+					<result value="12" numvotes="2" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="13">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="6" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="7" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1084" value="Environmental" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1010" value="Fantasy" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1013" value="Farming" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1016" value="Science Fiction" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2912" value="Contracts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2026" value="Hexagon Grid" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2002" value="Tile Placement" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64960" value="Components: Map (Continental / National scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="109412" value="Components: RE-Wood" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="11546" value="Country: Ireland" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="13105" value="Country: Scotland" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="114715" value="Crowdfunding: Xinwuji" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="78198" value="Misc: Watch It Played How To Videos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="76250" value="Theme: Environmental Protection / Degradation / Pollution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="48871" value="Theme: Nature" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="2" value="Reiner Knizia" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="156040" value="Anna &quot;Mikado&quot; Przybylska" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="111065" value="Vesna &quot;vesner&quot; Redesiuk" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33628" value="Mighty Boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10768" value="Cranio Creations" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2366" value="Devir" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="54949" value="DSV Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="37681" value="Fabrika Igr" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="29895" value="Frosted Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="12540" value="Game Harbor" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="58739" value="Geekach LLC" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="59159" value="Jelly Monster" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="62910" value="Kutugo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="56684" value="Laguna" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33626" value="Lucky Duck Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34627" value="Nasza Księgarnia" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="21053" value="Rexhry" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33998" value="Siam Board Games" />
+		
+									
+			
+
+			
+			<videos total="126">
+						<video id="632662" title="REBIRTH - TUTORIAL ¿CÓMO SE JUEGA? - ARCHIVO ARCANO" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=XYMmBS23RIc" username="ARCHIVOARCANO" userid="3274284" postdate="2026-09-30T04:45:48-05:00" />
+						<video id="632243" title="Partida y análisis de Rebirth — Aprende a jugar" category="session" language="Spanish" link="http://www.youtube.com/watch?v=Cp8HKNELkNc" username="Torre_Token" userid="3834177" postdate="2026-09-28T02:21:40-05:00" />
+						<video id="629916" title="Rebirth - Top or Flop? | Aftertalk" category="review" language="German" link="http://www.youtube.com/watch?v=2k3cGbRUQSA" username="ChrisYOURBOARDGAMERS" userid="1200498" postdate="2026-09-14T08:39:19-05:00" />
+						<video id="629152" title="ODEHRÁNO - Obrození [LET'S PLAY]" category="session" language="Czech" link="http://www.youtube.com/watch?v=uQ9gyNBzwt0" username="Odehrano" userid="4723107" postdate="2026-09-09T16:21:46-05:00" />
+						<video id="628244" title="A Full Review in 3 Minutes" category="review" language="English" link="http://www.youtube.com/watch?v=nu1pVdaCNnA" username="theperfectboardgame" userid="2837638" postdate="2026-09-03T21:06:06-05:00" />
+						<video id="627327" title="Top 100 Games of All Time: 70-61! (2026)" category="other" language="English" link="http://www.youtube.com/watch?v=vf-tn7Wq6cM" username="ZValentin" userid="2082778" postdate="2026-08-28T16:03:46-05:00" />
+						<video id="624796" title="Rebirth - Mapa IRLANDA: Como jogar e regras completas" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=emtz5yUJQkg" username="TORUGO" userid="1169932" postdate="2026-08-11T15:01:49-05:00" />
+						<video id="624502" title="Rebirth - Regras, gameplay e opiniões (review)" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=Au9Jo-IgQIg" username="TORUGO" userid="1169932" postdate="2026-08-09T18:01:49-05:00" />
+						<video id="624241" title="Rebirth | Abrindo a caixa | Unboxing detalhado" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=lXvrubeVkWQ" username="TORUGO" userid="1169932" postdate="2026-08-07T11:47:45-05:00" />
+						<video id="622439" title="Quick Peek: Rebirth | Rebuilding a Kingdom One Tile at a Time! ??" category="other" language="English" link="http://www.youtube.com/watch?v=3iTk6Lcqo3g" username="chesborn" userid="4387202" postdate="2026-07-27T07:00:23-05:00" />
+						<video id="622282" title="Rebirth - Como Jogar" category="instructional" language="Portuguese" link="http://www.youtube.com/watch?v=Xfcjw_iI2tY" username="Romir" userid="9484" postdate="2026-07-26T11:00:22-05:00" />
+						<video id="621279" title="Rebirth - Unboxing" category="unboxing" language="Portuguese" link="http://www.youtube.com/watch?v=3xaX0on97wU" username="Romir" userid="9484" postdate="2026-07-20T11:00:34-05:00" />
+						<video id="621182" title=" REBIRTH Limited Edition Unboxing | Kennerspiel des Jahres 2026 Winner | Re-Wood ASMR" category="unboxing" language="English" link="http://www.youtube.com/watch?v=QVqCKzM8dEY" username="GreyDragoner" userid="1483175" postdate="2026-07-19T14:38:47-05:00" />
+						<video id="621103" title="Wie wird Rebirth gespielt" category="instructional" language="German" link="http://www.youtube.com/watch?v=sjX0_VlSmI4" username="tinis_spielerei" userid="4216234" postdate="2026-07-19T01:50:56-05:00" />
+						<video id="620953" title="Rebirth Board Game | Review | Ireland" category="review" language="English" link="http://www.youtube.com/watch?v=EsHSMFdnCKM" username="fenirob" userid="478021" postdate="2026-07-17T11:00:22-05:00" />
+					</videos>
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="7828" />
+			<average value="7.76465" />
+			<bayesaverage value="7.19739" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="311" bayesaverage="7.19739" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="202" bayesaverage="7.29169" />
+											<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="44" bayesaverage="7.32471" />
+												</ranks>
+
+			<stddev value="1.12785" />
+			<median value="0" />
+			<owned value="13712" />
+			<trading value="68" />
+			<wanting value="594" />
+			<wishing value="6056" />
+			<numcomments value="1238" />
+			<numweights value="262" />
+			<averageweight value="1.9695" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

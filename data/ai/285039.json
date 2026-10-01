@@ -1,0 +1,40 @@
+{
+ "confidence": "low",
+ "summary": "Every card can be played as an island, or tucked under one as a boat, temple, good, or person, so the table fills with a patchwork of multi-use cards rather than a conventional board. Turns are tight, puzzly exercises in using a card's text now versus saving it to tuck later, in the vein of designer Carl Chudyk's other tucking games.",
+ "praised": [],
+ "criticised": [],
+ "interaction": {
+  "level": "Medium",
+  "kind": "shared tableau and card claiming",
+  "detail": "Islands are laid out face-up in a shared central area that all players draw from and build onto, so what you tuck onto a card can be used or contested by others reaching that same island. Each player also has their own home island and goods they're racing to bring back, keeping part of the game as a private, parallel objective."
+ },
+ "scoring": {
+  "subsystems": [
+   "goods delivery via the tucking/card-play engine"
+  ],
+  "sources": [
+   "goods brought back to your home island"
+  ],
+  "winning_score": 0,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": [
+   "target_score",
+   "exhaustion"
+  ],
+  "how_you_win": "You win by acquiring goods out in the Aegean and successfully returning them to your home island faster or more effectively than your opponents, who are racing to do the same."
+ },
+ "similar": [
+  "Innovation",
+  "Glory to Rome",
+  "Mottainai",
+  "Pikoko"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "52fd3b3292ccdf01",
+ "_name": "Aegean Sea"
+}

@@ -1,0 +1,44 @@
+{
+ "confidence": "low",
+ "summary": "Players draw and place hexagonal tiles to build out a shared landscape, competing for area-majority control around castles as clan leaders rebuilding a ruined Scotland. It plays as a fairly light, accessible tile-layer with contracts and end-game bonuses layered on top of Reiner Knizia's typically streamlined core rules.",
+ "praised": [],
+ "criticised": [],
+ "interaction": {
+  "level": "Medium",
+  "kind": "area majority on a shared hex grid",
+  "detail": "Tiles are placed onto one shared board, so where you build directly affects which castles and regions opponents can still contest, making it a game of jostling for position rather than independent tableau-building. Contracts and bonuses give each player some private goals layered on top of that shared map."
+ },
+ "scoring": {
+  "subsystems": [
+   "area-majority control of castles/regions",
+   "contracts",
+   "end-game bonuses"
+  ],
+  "sources": [
+   "castle/territory majorities",
+   "completed contracts",
+   "end-game bonus tiles"
+  ],
+  "winning_score": 0,
+  "tally": "endgame",
+  "shape": "sum",
+  "ends_by": [
+   "exhaustion",
+   "end_trigger"
+  ],
+  "how_you_win": "You win by accumulating the most points from controlling contested areas of the board and completing your contracts, tallied once tiles run out or the end trigger fires."
+ },
+ "similar": [
+  "Through the Desert",
+  "Samurai",
+  "Blue Lagoon",
+  "Tigris & Euphrates"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "fb9ce0fb49a70b5b",
+ "_name": "Rebirth"
+}

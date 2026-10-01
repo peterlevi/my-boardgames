@@ -1583,6 +1583,171 @@
   "last_played": null
  },
  {
+  "id": "285039",
+  "name": "Aegean Sea",
+  "alt_names": [],
+  "year": 2023,
+  "rank": 8316,
+  "types": [
+   "Strategy Game"
+  ],
+  "is_expansion": false,
+  "expands": [],
+  "thumbnail": "https://cf.geekdo-images.com/akwVzz0yNkwHof0AMV_7-A__small/img/5lNvb9FgNn3gdmETyLEjBKCItiA=/fit-in/200x150/filters:strip_icc()/pic6990339.png",
+  "weight": 3.6286,
+  "average": 6.36356,
+  "weight_votes": 35,
+  "geek": 5.62734,
+  "ratings": 441,
+  "owners": 1118,
+  "description": "Adventure through the 220 islands of the Aegean Sea in a game in which every card can be an island, or one of the boats, temples, goods, and peoples occupying it. Your ultimate goal is to acquire goods and bring them back to your home island — but of course, all your opponents are trying to do the same!\n\nAegean Sea comes with five different decks representing the Athenians, Spartans, Cretans, Rhodians, and Ephesians. Every card in the game is a unique island in the Aegean, with unique game text. Islands are placed face-up in the middle of the table, and other cards can be tucked underneath to represent boats, temples, goods, and populace (under the left, top, right, bottom edges).\n\nBoats let you transport goods. Population lets you have plurality at islands, which is required to take goods and use islands' effects. Temples (if with goods) allow you to draw more cards when you refresh your hand. And goods...are worth points!\n\nUse your cards and effects wisely, and you'll be victorious.",
+  "minplayers": 2,
+  "maxplayers": 5,
+  "playingtime": 60,
+  "minplaytime": 30,
+  "maxplaytime": 60,
+  "mechanics": [
+   "Hand Management",
+   "Melding and Splaying",
+   "Multi-Use Cards",
+   "Variable Player Powers"
+  ],
+  "categories": [
+   "Ancient",
+   "Card Game",
+   "Civilization"
+  ],
+  "families": [
+   "Ancient: Greece",
+   "Ancient: Sparta",
+   "Crowdfunding: BackerKit",
+   "Digital Implementations: Screentop.gg",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Region: Aegean Sea"
+  ],
+  "designers": [
+   "Carl Chudyk"
+  ],
+  "designer_ids": {
+   "Carl Chudyk": "6001"
+  },
+  "publishers": [
+   "Asmadi Games"
+  ],
+  "traits": [],
+  "videos": [
+   {
+    "title": "Aegean Sea: Game Flow and Teaching Tips",
+    "link": "http://www.youtube.com/watch?v=MFOomLkSQtM",
+    "who": "SmiteMeister",
+    "lang": "English"
+   },
+   {
+    "title": "Aegean Sea Rules and play thru Starts at 39:50",
+    "link": "http://www.youtube.com/watch?v=ncS0k1c222A",
+    "who": "VWValker",
+    "lang": "English"
+   },
+   {
+    "title": "Aegean Sea - How to Play and First Playthrough! | Optimal Play",
+    "link": "http://www.youtube.com/watch?v=wp70nGDJHdA",
+    "who": "optimalplay",
+    "lang": "English"
+   }
+  ],
+  "image": "https://cf.geekdo-images.com/akwVzz0yNkwHof0AMV_7-A__original/img/T78vQUxTlKAXpZ6OQIii9fZjWLQ=/0x0/filters:format(png)/pic6990339.png",
+  "interaction": "Low",
+  "interaction_shared": 0.0,
+  "poll": {
+   "1": {
+    "Best": 0,
+    "Recommended": 1,
+    "Not Recommended": 8
+   },
+   "2": {
+    "Best": 7,
+    "Recommended": 9,
+    "Not Recommended": 1
+   },
+   "3": {
+    "Best": 5,
+    "Recommended": 5,
+    "Not Recommended": 2
+   },
+   "4": {
+    "Best": 2,
+    "Recommended": 3,
+    "Not Recommended": 6
+   },
+   "5": {
+    "Best": 1,
+    "Recommended": 1,
+    "Not Recommended": 7
+   },
+   "5+": {
+    "Best": 0,
+    "Recommended": 0,
+    "Not Recommended": 7
+   }
+  },
+  "ai": {
+   "confidence": "low",
+   "summary": "Every card can be played as an island, or tucked under one as a boat, temple, good, or person, so the table fills with a patchwork of multi-use cards rather than a conventional board. Turns are tight, puzzly exercises in using a card's text now versus saving it to tuck later, in the vein of designer Carl Chudyk's other tucking games.",
+   "praised": [],
+   "criticised": [],
+   "interaction": {
+    "level": "Medium",
+    "kind": "shared tableau and card claiming",
+    "detail": "Islands are laid out face-up in a shared central area that all players draw from and build onto, so what you tuck onto a card can be used or contested by others reaching that same island. Each player also has their own home island and goods they're racing to bring back, keeping part of the game as a private, parallel objective."
+   },
+   "scoring": {
+    "subsystems": [
+     "goods delivery via the tucking/card-play engine"
+    ],
+    "sources": [
+     "goods brought back to your home island"
+    ],
+    "winning_score": 0,
+    "tally": "mixed",
+    "shape": "sum",
+    "ends_by": [
+     "target_score",
+     "exhaustion"
+    ],
+    "how_you_win": "You win by acquiring goods out in the Aegean and successfully returning them to your home island faster or more effectively than your opponents, who are racing to do the same."
+   },
+   "similar": [
+    {
+     "name": "Innovation",
+     "id": "63888"
+    },
+    {
+     "name": "Glory to Rome",
+     "id": "19857"
+    },
+    {
+     "name": "Mottainai",
+     "id": "175199"
+    },
+    {
+     "name": "Pikoko",
+     "id": "244505"
+    }
+   ],
+   "teachers": [
+    "Watch It Played",
+    "Rahdo Runs Through",
+    "JonGetsGames"
+   ],
+   "_fingerprint": "52fd3b3292ccdf01",
+   "_name": "Aegean Sea"
+  },
+  "plays": 0,
+  "my_rating": null,
+  "edited": "2026-09-28",
+  "last_played": null
+ },
+ {
   "id": "383179",
   "name": "Age of Innovation",
   "alt_names": [
@@ -22448,10 +22613,10 @@
    "_fingerprint": "7710b68bb7bc384e",
    "_name": "The Great Zimbabwe"
   },
-  "plays": 6,
+  "plays": 7,
   "my_rating": 9.5,
   "edited": "2025-09-22",
-  "last_played": "2025-10-11"
+  "last_played": "2026-09-25"
  },
  {
   "id": "250458",
@@ -24191,10 +24356,10 @@
    "_fingerprint": "d5d4b92312a6bf72",
    "_name": "High Society"
   },
-  "plays": 6,
+  "plays": 8,
   "my_rating": 8.5,
   "edited": "2025-09-22",
-  "last_played": "2025-09-13"
+  "last_played": "2026-09-25"
  },
  {
   "id": "350205",
@@ -29484,8 +29649,8 @@
    "_name": "Lisboa"
   },
   "plays": 1,
-  "my_rating": null,
-  "edited": "2025-09-22",
+  "my_rating": 7.5,
+  "edited": "2026-09-13",
   "last_played": "2026-02-05"
  },
  {
@@ -37184,10 +37349,10 @@
    "_fingerprint": "cf7d87ceddf5ac39",
    "_name": "Power Grid"
   },
-  "plays": 6,
+  "plays": 7,
   "my_rating": 8.2,
   "edited": "2025-09-22",
-  "last_played": "2025-07-12"
+  "last_played": "2026-09-18"
  },
  {
   "id": "308765",
@@ -38484,10 +38649,10 @@
    "_fingerprint": "6cbc5f600d9ab2a1",
    "_name": "Ra"
   },
-  "plays": 9,
+  "plays": 10,
   "my_rating": 8.7,
   "edited": "2025-10-02",
-  "last_played": "2026-07-30"
+  "last_played": "2026-09-25"
  },
  {
   "id": "28143",
@@ -39334,6 +39499,191 @@
   "plays": 0,
   "my_rating": null,
   "edited": "2025-09-22",
+  "last_played": null
+ },
+ {
+  "id": "417197",
+  "name": "Rebirth",
+  "alt_names": [
+   "Nowa Ziemia",
+   "Obrození",
+   "Preporod",
+   "Rebirth: Aufbruch in eine neue Zeit",
+   "Rebirth: Yeni Çağa İlk Adım",
+   "Возрождение",
+   "โลกใหม่",
+   "重筑家园"
+  ],
+  "year": 2024,
+  "rank": 311,
+  "types": [
+   "Strategy Game",
+   "Family Game"
+  ],
+  "is_expansion": false,
+  "expands": [],
+  "thumbnail": "https://cf.geekdo-images.com/tyv6lPMlyU7YIUztlILQYQ__small/img/_CXQQbXsewUlde4R22XCRApxZ5k=/fit-in/200x150/filters:strip_icc()/pic8587890.png",
+  "weight": 1.9695,
+  "average": 7.76465,
+  "weight_votes": 262,
+  "geek": 7.19739,
+  "ratings": 7828,
+  "owners": 13712,
+  "description": "Following a series of calamities that left civilization in shambles, societies around the world are being rebuilt anew in harmony with nature. Scotland lies in ruins, and the ancient clans have taken it upon themselves to restore the land. As clan leaders, you will compete for strategic control of the land by rebuilding its prestigious castles.\n\nRebirth is a new tile-laying game from Reiner Knizia. The game revitalizes this classic genre by combining Knizia’s elegant mechanics with Mighty Boards’ evocative world building. The result is a eurogame with smooth gameplay set in a lush and hopeful future.\n\nEach turn, players draw a tile from their supply and place it strategically on the board. These tiles represent your clan’s contribution to rebuilding the land. Rebirth rewards strategic foresight and clever tactical play, with tougher decisions emerging over the course of the game.\n\n—description from the publisher",
+  "minplayers": 2,
+  "maxplayers": 4,
+  "playingtime": 60,
+  "minplaytime": 45,
+  "maxplaytime": 60,
+  "mechanics": [
+   "Area Majority / Influence",
+   "Contracts",
+   "End Game Bonuses",
+   "Hexagon Grid",
+   "Tile Placement"
+  ],
+  "categories": [
+   "Environmental",
+   "Fantasy",
+   "Farming",
+   "Science Fiction"
+  ],
+  "families": [
+   "Components: Map (Continental / National scale)",
+   "Components: RE-Wood",
+   "Country: Ireland",
+   "Country: Scotland",
+   "Crowdfunding: Kickstarter",
+   "Crowdfunding: Xinwuji",
+   "Misc: Watch It Played How To Videos",
+   "Theme: Environmental Protection / Degradation / Pollution",
+   "Theme: Nature"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
+  "publishers": [
+   "Mighty Boards",
+   "Cranio Creations",
+   "Devir"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Set collection",
+   "Area control"
+  ],
+  "videos": [
+   {
+    "title": "REBIRTH - TUTORIAL ¿CÓMO SE JUEGA? - ARCHIVO ARCANO",
+    "link": "http://www.youtube.com/watch?v=XYMmBS23RIc",
+    "who": "ARCHIVOARCANO",
+    "lang": "Spanish"
+   },
+   {
+    "title": "Rebirth - Como Jogar",
+    "link": "http://www.youtube.com/watch?v=Xfcjw_iI2tY",
+    "who": "Romir",
+    "lang": "Portuguese"
+   },
+   {
+    "title": "Wie wird Rebirth gespielt",
+    "link": "http://www.youtube.com/watch?v=sjX0_VlSmI4",
+    "who": "tinis_spielerei",
+    "lang": "German"
+   }
+  ],
+  "image": "https://cf.geekdo-images.com/tyv6lPMlyU7YIUztlILQYQ__original/img/KUY_vKJZenJVl0cv05Qkt-Gx-ao=/0x0/filters:format(png)/pic8587890.png",
+  "interaction": "Medium",
+  "interaction_shared": 1.5,
+  "poll": {
+   "1": {
+    "Best": 0,
+    "Recommended": 3,
+    "Not Recommended": 81
+   },
+   "2": {
+    "Best": 16,
+    "Recommended": 88,
+    "Not Recommended": 25
+   },
+   "3": {
+    "Best": 96,
+    "Recommended": 36,
+    "Not Recommended": 1
+   },
+   "4": {
+    "Best": 58,
+    "Recommended": 74,
+    "Not Recommended": 4
+   },
+   "4+": {
+    "Best": 0,
+    "Recommended": 1,
+    "Not Recommended": 70
+   }
+  },
+  "ai": {
+   "confidence": "low",
+   "summary": "Players draw and place hexagonal tiles to build out a shared landscape, competing for area-majority control around castles as clan leaders rebuilding a ruined Scotland. It plays as a fairly light, accessible tile-layer with contracts and end-game bonuses layered on top of Reiner Knizia's typically streamlined core rules.",
+   "praised": [],
+   "criticised": [],
+   "interaction": {
+    "level": "Medium",
+    "kind": "area majority on a shared hex grid",
+    "detail": "Tiles are placed onto one shared board, so where you build directly affects which castles and regions opponents can still contest, making it a game of jostling for position rather than independent tableau-building. Contracts and bonuses give each player some private goals layered on top of that shared map."
+   },
+   "scoring": {
+    "subsystems": [
+     "area-majority control of castles/regions",
+     "contracts",
+     "end-game bonuses"
+    ],
+    "sources": [
+     "castle/territory majorities",
+     "completed contracts",
+     "end-game bonus tiles"
+    ],
+    "winning_score": 0,
+    "tally": "endgame",
+    "shape": "sum",
+    "ends_by": [
+     "exhaustion",
+     "end_trigger"
+    ],
+    "how_you_win": "You win by accumulating the most points from controlling contested areas of the board and completing your contracts, tallied once tiles run out or the end trigger fires."
+   },
+   "similar": [
+    {
+     "name": "Through the Desert",
+     "id": "503"
+    },
+    {
+     "name": "Samurai",
+     "id": "3"
+    },
+    {
+     "name": "Blue Lagoon",
+     "id": "244331"
+    },
+    {
+     "name": "Tigris & Euphrates",
+     "id": "42"
+    }
+   ],
+   "teachers": [
+    "Watch It Played",
+    "Rahdo Runs Through",
+    "JonGetsGames"
+   ],
+   "_fingerprint": "fb9ce0fb49a70b5b",
+   "_name": "Rebirth"
+  },
+  "plays": 0,
+  "my_rating": null,
+  "edited": "2026-09-25",
   "last_played": null
  },
  {

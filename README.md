@@ -32,7 +32,9 @@ browser:
   ride under the name. Whichever of those the name carries, that field's own
   column stands down
 - **Search across everything shown**, plus BGG's alternate titles, which are
-  never displayed — so *bourgogne* finds The Castles of Burgundy. Every word
+  never displayed — so *bourgogne* finds The Castles of Burgundy. That
+  includes your own comment on each collection entry, which the expanded row
+  shows as **Your comments**, so *(shrink)* finds what is still sealed. Every word
   has to land somewhere but they need not be adjacent or in order, so *board
   dice* finds the Board&Dice games; accents are folded on both sides, so
   *orleans* finds *Orléans*. `id:1234` is a word too, and matches the one game

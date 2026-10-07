@@ -844,6 +844,8 @@ tr.detail > td { padding:0; border-bottom:1px solid var(--line); }
 .detail-inner h4 { margin:0 0 4px; font-size:.7rem; text-transform:uppercase;
   letter-spacing:.06em; color:var(--muted); }
 .detail-inner p { margin:0 0 12px; font-size:.86rem; max-width:70ch; }
+/* The comment is typed on BGG one note per line; keep its line breaks. */
+.detail-inner p.mycomment { white-space:pre-line; }
 .detail-side { font-size:.82rem; }
 .detail-side dl { display:grid; grid-template-columns:auto 1fr; gap:3px 10px;
   margin:0 0 12px; }
@@ -1264,7 +1266,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       <dt>Plays</dt><dd>Plays you have logged on BGG.</dd>
       <dt>Search</dt><dd>Looks at everything on the row and in its expanded
         panel: the name, the year, the designers and publisher, every
-        property, how the game is won and how much of a salad it is, plus
+        property, how the game is won and how much of a salad it is, your own
+        comment on the collection entry — “(shrink)” finds what is still
+        sealed, “(open)” what is not — plus
         BGG's other titles for the game, which are not shown. Every word has
         to land somewhere, but not together and not in order — “board dice”
         finds the Board&amp;Dice games. Accents are optional: “orleans” finds
@@ -1986,6 +1990,8 @@ function hay(i, g) {
   // Alternate titles are searchable but never shown: somebody who knows the
   // game as Les Chateaux de Bourgogne should still find it.
   var bits = [g.n, g.y || ''].concat(g.alt || [], g.ds || [], g.pb || []);
+  // Your own comment on the collection entry, shown as "Your comments".
+  bits.push(g.cm || '');
   (g.tg || []).forEach(function (t) { if (TAGS[t]) bits.push(TAGS[t].n); });
   (ai.wcs || []).forEach(function (w) { bits.push(WIN_LABEL[w] || w); });
   bits.push(SALAD_LABEL[ai.br] || '');
@@ -2905,6 +2911,10 @@ function buildDetail(g) {
   return '<div class="detail-inner">' +
     '<div>' +
       mediaBlock(g) +
+      // Your own words come before anybody else's. Highlighted like the rest
+      // of the panel, since the comment is part of what the search looks at.
+      (g.cm ? '<h4>Your comments</h4><p class="mycomment">' + hl(g.cm) +
+        '</p>' : '') +
       opinionBlock(g) +
       (howWin ? '<h4>How you win' +
         ((ai.wcs || []).length ? ' — ' + esc(ai.wcs.map(function (w) {

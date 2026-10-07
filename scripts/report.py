@@ -185,6 +185,7 @@ def compact(games, tag_idx, inline=True, private=None):
             "pb": g.get("publishers") or [],
             "lp": g.get("last_played"),
             "ed": g.get("edited"),
+            "cm": g.get("comment"),
             "rt": g["ratings"], "ow": g["owners"],
             "wv": g.get("weight_votes"),
             "de": (g["description"] or "")[:900],
@@ -902,11 +903,13 @@ def haystack(g, tags):
     searching a designer or a year should find those too.
 
     Also BGG's alternate titles, which are never shown: somebody who knows a
-    game as Les Chateaux de Bourgogne should still find it.
+    game as Les Chateaux de Bourgogne should still find it. And your own
+    comment on the collection entry, so "shrink" finds what is still sealed.
     """
     ai = g.get("ai") or {}
     bits = [g["n"], str(g["y"] or "")]
     bits += g.get("alt") or []
+    bits.append(g.get("cm") or "")
     bits += g.get("ds") or []
     bits += g.get("pb") or []
     bits += [tags[i]["n"] for i in g.get("tg") or [] if i < len(tags)]

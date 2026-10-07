@@ -192,8 +192,10 @@ def ids_in(name):
 def collection_stats():
     """Play counts and the owner's own rating both ride along with the
     collection export (`stats=1`), so neither costs an extra API call. An
-    unrated game carries value="N/A"."""
-    plays, mine, acquired, edited = {}, {}, {}, {}
+    unrated game carries value="N/A". So does the comment on the collection
+    entry: public on BGG, and where the owner keeps a best-player-count note,
+    an "(open)" or "(shrink)" tag and a short review."""
+    plays, mine, acquired, edited, comments = {}, {}, {}, {}, {}
     for name in ("collection.xml", "expansions.xml"):
         f = RAW / name
         if not f.exists():
@@ -201,6 +203,9 @@ def collection_stats():
         for it in ET.parse(f).getroot().findall("item"):
             oid = it.get("objectid")
             plays[oid] = int(it.findtext("numplays") or 0)
+            comment = (it.findtext("comment") or "").strip()
+            if comment:
+                comments[oid] = comment
             # Only present when BGG chooses to return private fields; it does
             # not for an API token, so this is usually empty.
             # Present only if BGG ever starts returning private fields to an
@@ -221,7 +226,7 @@ def collection_stats():
                     mine[oid] = float(v)
                 except ValueError:
                     pass
-    return plays, mine, acquired, edited
+    return plays, mine, acquired, edited, comments
 
 
 def note_owner():
@@ -331,8 +336,8 @@ def main():
         print(f"no cached BGG data — building from data/collection.csv "
               f"({len(games)} items, no mechanics, poll percentages or images)")
 
-    plays, mine, _acquired, edited = collection_stats()
-    csv_plays, csv_rating = {}, {}
+    plays, mine, _acquired, edited, comments = collection_stats()
+    csv_plays, csv_rating, csv_comment = {}, {}, {}
     for r in rows:
         oid = r.get("objectid")
         try:
@@ -345,6 +350,8 @@ def main():
                 csv_rating[oid] = v
         except ValueError:
             pass
+        if (r.get("comment") or "").strip():
+            csv_comment[oid] = r["comment"].strip()
     played = load_plays()
     ai = load_ai()
     bgg_ids = load_bgg_ids()
@@ -363,6 +370,7 @@ def main():
         # published. Price paid and acquisition date are read straight from
         # the gitignored CSV by report.py, at render time.
         g["edited"] = edited.get(g["id"])
+        g["comment"] = comments.get(g["id"]) or csv_comment.get(g["id"])
         g["last_played"] = (played.get(g["id"]) or {}).get("last") or None
 
     note_owner()

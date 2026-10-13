@@ -2976,6 +2976,8 @@ function paintPickChip(inside, outside) {
   var chip = el('pickchip');
   chip.hidden = !chosen;
   if (!chosen) return;
+  // Edit opens the tray; with it open already there is nothing to open.
+  el('pickedit').hidden = picking;
   var hidden = chosen.length - inside.length - outside.length;
   el('picktext').innerHTML = 'Just your ' + plural(chosen.length, 'pick') +
     (hidden > 0 ? ' <span class="yr">(' + hidden +
@@ -3009,12 +3011,18 @@ function paintTray() {
  *  whole collection. Opening the tray over applied picks loads them into it
  *  to edit; with none applied, an older list in progress is picked up where
  *  it was left. */
+/** The tray's own state on screen, with nothing else touched — for a view
+ *  coming out of the URL, which renders once it has all been applied. */
+function showTray(on) {
+  picking = !!on;
+  el('tray').hidden = !picking;
+  el('pickbtn').setAttribute('aria-pressed', picking ? 'true' : 'false');
+}
+
 function setPicking(on) {
   if (on === picking) return;
-  picking = on;
+  showTray(on);
   if (on && chosen) tray = chosen.slice();
-  el('tray').hidden = !on;
-  el('pickbtn').setAttribute('aria-pressed', on ? 'true' : 'false');
   paintTray();
   // render() below saves the tray along with the filters.
   // The page changes width either way, so the columns are fitted again —
@@ -3088,8 +3096,9 @@ el('trayshow').addEventListener('click', function () {
     syncSelects();
     refreshTagList();
     chosen = tray.slice();
-    // setPicking renders; with the tray already shut, render here instead.
-    if (picking) setPicking(false); else render();
+    // The tray stays open: what is showing is the answer to it, and the next
+    // change to the picks is made right there.
+    render();
   });
 });
 el('pickedit').addEventListener('click', function () { setPicking(true); });
@@ -5104,6 +5113,9 @@ function encodeState() {
   if (ranking) parts.push('rank=1');
   // The picks, by id and in the order they were picked, repeats included.
   if (chosen) parts.push('sel=' + encodeURIComponent(picksToIds(chosen)));
+  // Whether the tray is open is part of the view: a link sent mid-pick opens
+  // with the picker out.
+  if (picking) parts.push('pick=1');
   // Last, so a link to a game reads as "this view, this game".
   if (openId != null) parts.push('g=' + encodeURIComponent(openId));
   return parts.join('&');
@@ -5203,6 +5215,7 @@ function readUrl() {
   // a hand-written #rank=1 should not arrive sorted by BGG rank.
   if (ranking && !got.sort) { sortKey = 'fit'; sortDesc = true; }
   chosen = got.sel ? idsToPicks(got.sel) : null;
+  showTray(got.pick === '1');
   var fitsw = document.getElementById('fittoggle');
   if (fitsw) fitsw.checked = ranking;
   if (ranking && !colState.fit) {
@@ -5239,13 +5252,8 @@ function applyUrlState() {
     closeDetail();
     applyDefaults();
     openId = null;
-    // A view from history decides the picks too; an open tray closes on it.
-    if (picking) {
-      picking = false;
-      el('tray').hidden = true;
-      el('pickbtn').setAttribute('aria-pressed', 'false');
-      fitNow();
-    }
+    // A view from history decides the picks and whether the tray is open.
+    showTray(false);
     chosen = null;
     if (hash) readUrl();
     syncClearQ();

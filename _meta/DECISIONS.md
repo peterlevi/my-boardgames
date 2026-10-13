@@ -544,7 +544,10 @@ through `pageY()`/`setPageY()` for that reason. On a phone the tray is a
 bottom sheet instead and the window scrolls as usual.
 
 The picks travel in the URL (`sel=`, BGG ids, `~`-separated, in pick order)
-so a shortlist can be sent. The tray in progress is a per-browser
+so a shortlist can be sent. Whether the tray is open travels too (`pick=1`):
+a link sent mid-pick opens with the picker out. *Show just these* leaves the
+tray open — the table is then the answer to it, and the next change to the
+picks is made right there. The tray in progress is a per-browser
 convenience and lives in localStorage only. Opening or closing the tray never
 changes what the table shows: applied picks stay applied (the chip's × is the
 way back to the whole collection), and opening the tray over them loads them

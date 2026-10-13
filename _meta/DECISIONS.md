@@ -556,3 +556,19 @@ these" clears the search and filters — the search that found the games would
 otherwise hide most of them — but keeps the player count and its rule, as
 clicking a tag does. If those hide a pick, the result line says how many.
 
+## D-30 — The wheel draws first, then spins to the answer
+
+The wheel of fortune has one equal sector per tray entry, so a game in the
+tray twice has twice the sectors and twice the chance — the tray is already
+the list of weighted options, and the wheel simply shows it. The winner is
+drawn before anything moves, uniformly over the entries, from
+`crypto.getRandomValues` with rejection sampling so the modulo favours no
+entry. The spin is then aimed at a random point well inside that sector
+(15–85% across, never on a line) with five to seven whole turns on top.
+Deriving the winner from wherever an eased animation happened to stop would
+also work, but would make fairness depend on the easing curve and on frame
+timing; this way the animation is only the presentation of a draw that is
+already fair.
+
+With reduced motion the wheel jumps to the result and there is no confetti.
+

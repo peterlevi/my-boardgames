@@ -1286,6 +1286,48 @@ td.c-add { text-align:right; white-space:nowrap; }
   line-height:inherit; }
 .pickchip .iconbtn { padding:0 5px; font-size:1.05rem; line-height:1.4; }
 
+/* The wheel's button: the tray's third action, the same size as the other
+   two, in the page's ink rather than its accent so the two filled buttons
+   do not read as one. */
+.traywheel { width:100%; font:inherit; font-weight:700; font-size:.98rem;
+  line-height:1.3; padding:12px; border-radius:9px; cursor:pointer;
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  background:var(--ink); color:var(--bg); border:1px solid var(--ink); }
+.traywheel:disabled { opacity:.45; cursor:default; }
+
+/* Over everything, the page and the tray blurred behind it. */
+.wheelpop { position:fixed; inset:0; z-index:60; display:flex;
+  align-items:center; justify-content:center; padding:16px;
+  background:rgba(27,26,23,.28); -webkit-backdrop-filter:blur(7px);
+  backdrop-filter:blur(7px); }
+.wheelcard { position:relative; background:var(--panel); border-radius:18px;
+  box-shadow:0 24px 70px rgba(0,0,0,.35); padding:22px 22px 18px;
+  width:min(560px, 100%); max-height:100%; overflow:auto;
+  display:flex; flex-direction:column; align-items:center; gap:14px; }
+.wheelx { position:absolute; top:10px; right:10px; font-size:1.3rem;
+  line-height:1; }
+.wheelbox { position:relative; width:min(480px, 78vmin);
+  aspect-ratio:1; }
+#wheelcanvas { width:100%; height:100%; display:block; }
+/* The pointer at twelve o'clock, pointing into the wheel. */
+.wheelpin { position:absolute; left:50%; top:-6px; width:0; height:0;
+  transform:translateX(-50%); border-left:15px solid transparent;
+  border-right:15px solid transparent; border-top:30px solid var(--ink);
+  filter:drop-shadow(0 2px 2px rgba(0,0,0,.3)); }
+.wheelresult { min-height:3.2em; text-align:center; display:flex;
+  align-items:center; justify-content:center; gap:12px; }
+.wheelresult img { width:56px; height:56px; object-fit:contain;
+  border-radius:9px; background:var(--tile); }
+.wheelresult .wlabel { font-size:.78rem; text-transform:uppercase;
+  letter-spacing:.06em; color:var(--muted); display:block; text-align:left; }
+.wheelresult b { font-size:1.45rem; line-height:1.2; display:block;
+  text-align:left; }
+.wheelresult .spinning { color:var(--muted); font-size:.95rem; }
+.wheelbtns { display:flex; gap:10px; width:100%; }
+.wheelbtns button { flex:1 1 0; }
+#confetti { position:fixed; inset:0; width:100vw; height:100vh;
+  z-index:70; pointer-events:none; display:none; }
+
 @media (max-width:700px) {
   /* No room for a column beside the cards: the tray is a sheet along the
      bottom instead, and the cards keep the full width above it. */
@@ -1769,8 +1811,35 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
   <div class="trayfoot">
     <button type="button" class="trayclear" id="trayclear">Clear selection</button>
     <button type="button" class="trayshow" id="trayshow">Show just these</button>
+    <button type="button" class="traywheel" id="traywheel"
+      title="Spin a wheel with one sector per pick — a game picked twice has two"
+      ><svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true"
+        ><circle cx="8" cy="8" r="6.75" fill="none" stroke="currentColor"
+          stroke-width="1.5"/><path fill="none" stroke="currentColor"
+          stroke-width="1.3" d="M8 1.25v13.5M1.25 8h13.5M3.2 3.2l9.6 9.6M12.8 3.2l-9.6 9.6"
+        /><circle cx="8" cy="8" r="1.6" fill="currentColor"/></svg
+      >Wheel of fortune</button>
   </div>
 </aside>
+
+<!-- The wheel of fortune: one equal sector per entry in the tray. -->
+<div id="wheel" class="wheelpop" hidden role="dialog" aria-modal="true"
+  aria-label="Wheel of fortune">
+  <div class="wheelcard">
+    <button type="button" class="iconbtn wheelx" id="wheelclose"
+      title="Close" aria-label="Close the wheel">&times;</button>
+    <div class="wheelbox">
+      <canvas id="wheelcanvas" width="520" height="520"></canvas>
+      <span class="wheelpin" aria-hidden="true"></span>
+    </div>
+    <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
+    <div class="wheelbtns">
+      <button type="button" class="trayclear" id="wheelagain">Spin again</button>
+      <button type="button" class="trayshow" id="wheeldone">Close</button>
+    </div>
+  </div>
+</div>
+<canvas id="confetti" aria-hidden="true"></canvas>
 
 <script>
 const DATA = /*__DATA__*/;
@@ -3015,6 +3084,11 @@ function paintTray() {
   el('trayempty').hidden = tray.length > 0;
   el('trayclear').disabled = !tray.length;
   el('trayshow').disabled = !tray.length;
+  // A wheel of one is not a choice.
+  el('traywheel').disabled = tray.length < 2;
+  el('traywheel').title = tray.length < 2
+    ? 'Add at least two games to spin for one'
+    : 'Spin a wheel with one sector per pick — a game picked twice has two';
 }
 
 /** Open or close the tray. The table stays exactly as it is either way —
@@ -3126,6 +3200,220 @@ document.querySelector('.wrap').addEventListener('animationend', function (e) {
   if (e.animationName === 'tableflash') e.currentTarget.classList.remove('flash');
 });
 el('pickedit').addEventListener('click', function () { setPicking(true); });
+
+/* ---- the wheel of fortune ---------------------------------------------- */
+/* One sector per entry in the tray, all the same size, so a game picked twice
+   has two sectors and twice the chance. The winner is drawn first — uniformly,
+   from the browser's cryptographic generator, with rejection so no entry is
+   favoured by the modulo — and the spin is then aimed at a point inside its
+   sector. What the wheel shows is therefore exactly what was drawn. */
+var WHEEL_COLORS = ['#b3414c', '#c0952b', '#3f8a5f', '#3778a8', '#8560a4',
+                    '#d0703a', '#2d7a4d', '#7a5c3e', '#b94a75', '#5b71ac'];
+var wheel = { open: false, rot: 0, entries: [], anim: null, imgs: [] };
+
+function fairIndex(n) {
+  if (n <= 1) return 0;
+  var c = window.crypto || window.msCrypto;
+  if (!c || !c.getRandomValues) return Math.floor(Math.random() * n);
+  var buf = new Uint32Array(1), limit = Math.floor(4294967296 / n) * n;
+  do { c.getRandomValues(buf); } while (buf[0] >= limit);
+  return buf[0] % n;
+}
+
+/** Colours round the wheel, never the same twice side by side — including
+ *  across the seam between the last sector and the first. */
+function wheelColor(i, n) {
+  var k = WHEEL_COLORS.length;
+  if (n > 1 && i === n - 1 && (n - 1) % k === 0) return WHEEL_COLORS[1];
+  return WHEEL_COLORS[i % k];
+}
+
+function drawWheel() {
+  var cv = el('wheelcanvas'), ctx = cv.getContext('2d');
+  var dpr = window.devicePixelRatio || 1;
+  var css = cv.getBoundingClientRect().width || 480;
+  var px = Math.round(css * dpr);
+  if (cv.width !== px) { cv.width = px; cv.height = px; }
+  var size = px, r = size / 2 - 4 * dpr, cx = size / 2, cy = size / 2;
+  var n = wheel.entries.length, a = 2 * Math.PI / n;
+  ctx.clearRect(0, 0, size, size);
+  for (var i = 0; i < n; i++) {
+    var start = -Math.PI / 2 + i * a + wheel.rot;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, r, start, start + a);
+    ctx.closePath();
+    ctx.fillStyle = wheelColor(i, n);
+    ctx.fill();
+    ctx.lineWidth = 2 * dpr;
+    ctx.strokeStyle = 'rgba(255,255,255,.85)';
+    ctx.stroke();
+    // The name along the sector's middle, reading outward from the hub.
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(start + a / 2);
+    var fs = Math.max(10, Math.min(22, 300 / n + 6)) * dpr * (css / 480);
+    ctx.font = '700 ' + fs + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
+    ctx.fillStyle = '#fff';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    ctx.shadowColor = 'rgba(0,0,0,.35)';
+    ctx.shadowBlur = 3 * dpr;
+    var name = DATA[wheel.entries[i]].n, room = r * 0.72;
+    if (ctx.measureText(name).width > room) {
+      while (name.length > 1 && ctx.measureText(name + '…').width > room) {
+        name = name.slice(0, -1);
+      }
+      name = name.replace(/\s+$/, '') + '…';
+    }
+    ctx.fillText(name, r - 14 * dpr, 0);
+    ctx.restore();
+  }
+  // The hub.
+  ctx.beginPath();
+  ctx.arc(cx, cy, r * 0.11, 0, 2 * Math.PI);
+  ctx.fillStyle = '#fff';
+  ctx.fill();
+  ctx.lineWidth = 3 * dpr;
+  ctx.strokeStyle = '#1b1a17';
+  ctx.stroke();
+}
+
+function reducedMotion() {
+  return window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+}
+
+function wheelResult(html) { el('wheelresult').innerHTML = html; }
+
+function spinWheel() {
+  var n = wheel.entries.length;
+  if (!n || wheel.anim) return;
+  var win = fairIndex(n), a = 2 * Math.PI / n;
+  // Somewhere inside the sector, never on a line, so nobody has to squint.
+  var f = 0.15 + 0.7 * (fairIndex(1000) / 1000);
+  var TAU = 2 * Math.PI;
+  // The pointer reads the sector at wheel angle (-rot) mod TAU.
+  var target = -(win + f) * a;
+  var delta = ((target - wheel.rot) % TAU + TAU) % TAU;
+  var from = wheel.rot, to = from + delta + TAU * (5 + fairIndex(3));
+  el('wheelagain').disabled = true;
+  wheelResult('<span class="spinning">Spinning…</span>');
+  function done() {
+    wheel.anim = null;
+    wheel.rot = to % TAU;
+    drawWheel();
+    el('wheelagain').disabled = false;
+    announceWinner(wheel.entries[win]);
+  }
+  if (reducedMotion()) { wheel.rot = to; done(); return; }
+  var t0 = null, dur = 5200;
+  function step(ts) {
+    if (!wheel.open) { wheel.anim = null; return; }
+    if (t0 === null) t0 = ts;
+    var p = Math.min(1, (ts - t0) / dur);
+    var e = 1 - Math.pow(1 - p, 4);            // ease-out quart
+    wheel.rot = from + (to - from) * e;
+    drawWheel();
+    if (p < 1) wheel.anim = requestAnimationFrame(step);
+    else done();
+  }
+  wheel.anim = requestAnimationFrame(step);
+}
+
+function announceWinner(i) {
+  var g = DATA[i];
+  var img = ROWS[i] && ROWS[i].querySelector('img.thumb');
+  wheelResult((img ? '<img alt="" src="' + esc(img.getAttribute('src')) + '">' : '') +
+    '<span><span class="wlabel">The wheel says</span><b>' + esc(g.n) +
+    '</b></span>');
+  if (!reducedMotion()) confetti();
+}
+
+function openWheel() {
+  if (!tray.length) return;
+  wheel.entries = tray.slice();
+  wheel.open = true;
+  el('wheel').hidden = false;
+  el('wheelagain').disabled = false;
+  wheelResult('');
+  drawWheel();
+  el('wheeldone').focus();
+  // A beat to take the wheel in before it goes.
+  setTimeout(function () { if (wheel.open) spinWheel(); }, 450);
+}
+
+function closeWheel() {
+  wheel.open = false;
+  if (wheel.anim) { cancelAnimationFrame(wheel.anim); wheel.anim = null; }
+  el('wheel').hidden = true;
+  stopConfetti();
+}
+
+el('traywheel').addEventListener('click', openWheel);
+el('wheelagain').addEventListener('click', spinWheel);
+el('wheeldone').addEventListener('click', closeWheel);
+el('wheelclose').addEventListener('click', closeWheel);
+el('wheel').addEventListener('click', function (e) {
+  if (e.target === e.currentTarget) closeWheel();      // the blurred backdrop
+});
+document.addEventListener('keydown', function (e) {
+  if (wheel.open && e.key === 'Escape') { e.stopImmediatePropagation(); closeWheel(); }
+}, true);
+window.addEventListener('resize', function () { if (wheel.open) drawWheel(); });
+
+/* Confetti over the whole screen: a few hundred paper scraps thrown up from
+   below the middle, falling and tumbling, gone after a few seconds. */
+var confettiAnim = null;
+function confetti() {
+  stopConfetti();
+  var cv = el('confetti'), ctx = cv.getContext('2d');
+  var dpr = window.devicePixelRatio || 1;
+  var W = window.innerWidth, H = window.innerHeight;
+  cv.width = W * dpr; cv.height = H * dpr;
+  cv.style.display = 'block';
+  ctx.scale(dpr, dpr);
+  var bits = [];
+  for (var i = 0; i < 260; i++) {
+    var ang = -Math.PI / 2 + (Math.random() - 0.5) * 1.9;
+    var sp = 9 + Math.random() * 13;
+    bits.push({
+      x: W / 2 + (Math.random() - 0.5) * W * 0.25, y: H * 0.62,
+      vx: Math.cos(ang) * sp, vy: Math.sin(ang) * sp,
+      w: 6 + Math.random() * 7, h: 3 + Math.random() * 5,
+      rot: Math.random() * 6.3, vr: (Math.random() - 0.5) * 0.35,
+      c: WHEEL_COLORS[i % WHEEL_COLORS.length]
+    });
+  }
+  var t0 = null;
+  function step(ts) {
+    if (t0 === null) t0 = ts;
+    var age = ts - t0;
+    ctx.clearRect(0, 0, W, H);
+    var alpha = age < 2600 ? 1 : Math.max(0, 1 - (age - 2600) / 900);
+    ctx.globalAlpha = alpha;
+    bits.forEach(function (b) {
+      b.vy += 0.32; b.vx *= 0.99; b.vy *= 0.99;
+      b.x += b.vx; b.y += b.vy; b.rot += b.vr;
+      ctx.save();
+      ctx.translate(b.x, b.y);
+      ctx.rotate(b.rot);
+      ctx.fillStyle = b.c;
+      // A scrap seen turning: its width swings with its spin.
+      ctx.fillRect(-b.w / 2, -b.h / 2, b.w * Math.cos(b.rot * 2), b.h);
+      ctx.restore();
+    });
+    if (alpha > 0) confettiAnim = requestAnimationFrame(step);
+    else stopConfetti();
+  }
+  confettiAnim = requestAnimationFrame(step);
+}
+function stopConfetti() {
+  if (confettiAnim) { cancelAnimationFrame(confettiAnim); confettiAnim = null; }
+  var cv = el('confetti');
+  cv.style.display = 'none';
+  cv.getContext('2d').setTransform(1, 0, 0, 1, 0, 0);
+}
 el('pickoff').addEventListener('click', function () {
   asOneStep(function () {
     chosen = null;

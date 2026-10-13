@@ -93,6 +93,9 @@ browser:
   then *Show just these*. The table becomes those picks, repeats included,
   and every filter, search and sort keeps working over them. The picks ride
   in the link as `sel=`, so a shortlist can be bookmarked or sent.
+- A **wheel of fortune** under the picks: one equal sector per entry, so a
+  game picked twice is twice as likely. The winner is drawn fairly and the
+  wheel spins to it, then says which game it is, with confetti.
 
 **Click any row** to expand it: gallery images in an inline viewer (arrow keys
 browse), what people say about the game, how you win, how players interact,

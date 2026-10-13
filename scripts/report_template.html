@@ -1196,6 +1196,12 @@ td.c-add { text-align:right; white-space:nowrap; }
   border-radius:999px; padding:3px 11px; font:inherit; font-size:.8rem;
   font-weight:700; color:var(--accent); cursor:pointer; white-space:nowrap; }
 .addbtn:hover { border-color:var(--accent); }
+.addall { display:none; align-self:center; }
+:root.picking .addall { display:inline-block; }
+/* Its right edge on the Add buttons' right edge, which sit inside the
+   cell's 7px padding. */
+@media (min-width:701px) { .addall { margin-right:7px; } }
+.addall:disabled { opacity:.45; cursor:default; border-color:var(--line); }
 /* A beat of confirmation on the button that was pressed. */
 .addbtn.added { background:var(--best-bg); color:var(--best);
   border-color:var(--best); }
@@ -1672,7 +1678,11 @@ td.c-add { text-align:right; white-space:nowrap; }
         <p class="colnone" id="colnone" hidden>No column matches that.</p>
       </div>
     </div>
-  </span></div>
+  </span>
+  <!-- Above the column of Add buttons, and only while the picker is open. -->
+  <button type="button" class="addbtn addall" id="addall"
+    title="Add every game in the table that is not in your picks yet"
+    >Add all&nbsp;&rarr;</button></div>
 
 <div class="scroll">
 <table>
@@ -2822,6 +2832,8 @@ function render() {
   });
   TBODY.appendChild(frag);
   paintPickChip(inside, outside);
+  shownPicks = inside.map(function (r) { return r[0]; });
+  paintAddAll();
 
   el('empty').hidden = inside.length + outside.length > 0;
 
@@ -2931,6 +2943,30 @@ function idsToPicks(text) {
 
 function plural(n, word) { return n + ' ' + word + (n === 1 ? '' : 's'); }
 
+/** The games the table is showing, as of the last render — what "Add all"
+ *  adds. The rows a search found outside the filters are not among them. */
+var shownPicks = [];
+
+/** Shown games that are not in the tray yet, each once. */
+function notYetPicked() {
+  var have = {}, out = [];
+  tray.forEach(function (i) { have[i] = 1; });
+  shownPicks.forEach(function (i) {
+    if (!have[i]) { have[i] = 1; out.push(i); }
+  });
+  return out;
+}
+
+function paintAddAll() {
+  var btn = el('addall');
+  if (!btn) return;
+  var n = notYetPicked().length;
+  btn.disabled = !n;
+  btn.title = n ? 'Add the ' + plural(n, 'game') + ' in the table that ' +
+    (n === 1 ? 'is' : 'are') + ' not in your picks yet'
+    : 'Everything in the table is in your picks already';
+}
+
 /** The result line says when the table is your picks, how many of them the
  *  current filters are hiding, and offers the way back out. */
 function paintPickChip(inside, outside) {
@@ -2992,6 +3028,7 @@ function setPicking(on) {
 /** Paint the tray and remember it, so a reload keeps a list in progress. */
 function trayChanged() {
   paintTray();
+  paintAddAll();
   saveFilters();
 }
 
@@ -3015,6 +3052,14 @@ el('pickbtn').addEventListener('click', function (e) {
   setPicking(!picking);
 });
 el('trayclose').addEventListener('click', function () { setPicking(false); });
+el('addall').addEventListener('click', function () {
+  var add = notYetPicked();
+  if (!add.length) return;
+  tray = tray.concat(add);
+  trayChanged();
+  var last = el('traylist').lastChild;
+  if (last) last.scrollIntoView({ block: 'nearest' });
+});
 el('traylist').addEventListener('click', function (e) {
   var rm = e.target.closest('[data-rm]');
   if (!rm) return;

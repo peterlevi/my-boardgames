@@ -1241,12 +1241,14 @@ td.c-add { text-align:right; white-space:nowrap; }
 .trayclear:disabled, .trayshow:disabled { opacity:.45; cursor:default; }
 
 /* The applied selection, said in the result line with a way back out. */
-.pickchip { display:inline-flex; align-items:baseline; gap:8px; flex:none;
-  white-space:nowrap;
-  background:var(--tray); border-radius:999px; padding:2px 6px 2px 12px;
-  font-size:.84rem; }
-.pickchip .iconbtn { display:inline; padding:0 4px; font-size:1rem;
-  line-height:1; }
+.pickchip { display:inline-flex; align-items:center; gap:10px; flex:none;
+  white-space:nowrap; background:var(--tray); border-radius:999px;
+  padding:3px 6px 3px 12px; font-size:.84rem; line-height:1.4; }
+/* The page's link buttons carry padding and sit on the bottom edge of their
+   row, which suits a filter bar and drops them below the text in here. */
+.pickchip button.link { padding:0; align-self:center; font-weight:700;
+  line-height:inherit; }
+.pickchip .iconbtn { padding:0 5px; font-size:1.05rem; line-height:1.4; }
 
 @media (max-width:700px) {
   /* No room for a column beside the cards: the tray is a sheet along the

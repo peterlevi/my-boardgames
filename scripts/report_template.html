@@ -1196,6 +1196,16 @@ td.c-add { text-align:right; white-space:nowrap; }
   border-radius:999px; padding:3px 11px; font:inherit; font-size:.8rem;
   font-weight:700; color:var(--accent); cursor:pointer; white-space:nowrap; }
 .addbtn:hover { border-color:var(--accent); }
+/* "Show just these": the table side takes the tray's colour and fades back. */
+@keyframes tableflash { from { background-color:var(--tray); }
+  to { background-color:var(--bg); } }
+/* The pinned result line and header row paint their own background, so they
+   take the same wash or they would stand out of it as pale bands. */
+.wrap.flash, .wrap.flash .resultline, .wrap.flash thead th {
+  animation:tableflash .7s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .wrap.flash, .wrap.flash .resultline, .wrap.flash thead th { animation:none; }
+}
 .addall { display:none; align-self:center; }
 :root.picking .addall { display:inline-block; }
 /* Its right edge on the Add buttons' right edge, which sit inside the
@@ -2840,6 +2850,7 @@ function render() {
   paintPickChip(inside, outside);
   shownPicks = inside.map(function (r) { return r[0]; });
   paintAddAll();
+  parkFitSwitch();
 
   el('empty').hidden = inside.length + outside.length > 0;
 
@@ -3100,6 +3111,19 @@ el('trayshow').addEventListener('click', function () {
     // change to the picks is made right there.
     render();
   });
+  flashTable();
+});
+/** Wash the page in the tray's colour and let it fade: the table beside the
+ *  tray has just been replaced, and with the tray still open nothing else
+ *  moves to say so. Restarted rather than queued if pressed again. */
+function flashTable() {
+  var w = document.querySelector('.wrap');
+  w.classList.remove('flash');
+  void w.offsetWidth;
+  w.classList.add('flash');
+}
+document.querySelector('.wrap').addEventListener('animationend', function (e) {
+  if (e.animationName === 'tableflash') e.currentTarget.classList.remove('flash');
 });
 el('pickedit').addEventListener('click', function () { setPicking(true); });
 el('pickoff').addEventListener('click', function () {
@@ -3765,16 +3789,26 @@ document.getElementById('fittoggle').addEventListener('change', function () {
 })();
 /* Park the switch just past "More filters". Measured from the summary's own
    text — the range's right edge already has the ▸ marker behind it — so it
-   stays put when the panel opens and does not depend on a guessed width. */
-(function () {
+   stays put when the panel opens and does not depend on a guessed width.
+
+   Measured again on every render and on resize, not once: a page that opened
+   at phone width, where the switch is in the flow and the summary reads
+   differently, kept a position that put it on top of "More filters" once the
+   window widened. Only measured while the switch is actually positioned. */
+function parkFitSwitch() {
   var sum = document.querySelector('#more > summary');
   var sw = document.getElementById('fitsw');
   if (!sum || !sw) return;
+  if (window.getComputedStyle(sw).position !== 'absolute') return;
   var r = document.createRange();
   r.selectNodeContents(sum);
+  var right = r.getBoundingClientRect().right;
+  if (!right) return;
   var bar = sw.parentNode.getBoundingClientRect();
-  sw.style.left = Math.ceil(r.getBoundingClientRect().right - bar.left + 26) + 'px';
-})();
+  sw.style.left = Math.ceil(right - bar.left + 26) + 'px';
+}
+parkFitSwitch();
+window.addEventListener('resize', parkFitSwitch);
 el('reset').addEventListener('click', function () {
   applyDefaults();
   // A reset clears the player-count rule too, rather than returning to the

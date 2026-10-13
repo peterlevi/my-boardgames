@@ -560,26 +560,35 @@ clicking a tag does. If those hide a pick, the result line says how many.
 
 The wheel of fortune has one equal sector per tray entry, so a game in the
 tray twice has twice the sectors and twice the chance — the tray is already
-the list of weighted options, and the wheel simply shows it.
+the list of weighted options, and the wheel simply shows it. Tray entries
+can be renamed in place (kept with the tray in localStorage until it is
+cleared, never in the URL), and the wheel shows and announces those names.
 
-It behaves like a physical wheel: friction (a constant part plus one that
-grows with speed), a peg on every sector boundary, and a spring-loaded
-flapper at twelve o'clock. A peg meets a spring that pushes back harder the
-further it bends the flapper; past the tip the flapper lets go. Bending it
-costs energy, so the end is a crawl from peg to peg, and a peg that arrives
-too slowly is pushed back — the wheel rocks backwards into the sector before
-(about a third of spins). The barrier is a share of the sector size, so a
-wheel of thirty sectors is not stopped dead by its own pegs.
+It is a simulated physical wheel, not an eased animation. The wheel turns
+against friction (kinetic, plus static once it has all but stopped). A
+flapper of springy plastic hangs from a pivot above the rim, with its own
+small inertia, spring and damping. Pegs sit on every boundary at the rim,
+and peg and flapper tip are circles that push each other apart through a
+stiff contact — so a peg bends and lifts the flapper until it slips
+underneath, the flapper flicks back and wobbles, and a peg that arrives too
+slowly is pushed back by the bent flapper and the wheel rocks backwards.
+The flapper is drawn as a cantilever reaching the simulated tip, so it never
+looks as if it passes through a peg. Each time a peg gets past, a short
+synthesised clack plays, louder the harder the flapper snaps back.
 
 Physics decides where a wheel stops, so fairness cannot come from the
 animation. The winner is drawn first, uniformly over the entries, from
-`crypto.getRandomValues` with rejection sampling. The simulation is stepped
-at a fixed 240Hz and is therefore exactly repeatable: a few hundred launch
-speeds are simulated from where the wheel stands (a few milliseconds), one
-of those that genuinely comes to rest on the winner is chosen at random, and
-that run is played back frame by frame. Every bounce on screen is the
-simulation's own; only the strength of the throw was chosen, so the odds are
-one in n per entry whatever the physics does. The throw is also scaled so a
-spin lasts about eight seconds whatever the number of sectors.
+`crypto.getRandomValues` with rejection sampling — that alone sets the odds,
+one in n per entry. The simulation is stepped at a fixed 240Hz (16 substeps
+while a peg is near the flapper) and is exactly repeatable, so a couple of
+hundred launch speeds are simulated from where the wheel stands (about a
+quarter of a second) and, of those that genuinely come to rest on the
+winner, the one with the most dramatic ending is played back: the last two
+pegs that really fought the flapper score high when one barely got through
+(the wheel all but stopped while the flapper was bent) or barely failed
+(bent it nearly as far as passing takes), with a bonus for a final rock
+back. Every bounce on screen is the simulation's own; only the throw was
+chosen, and choosing it never changes which entry wins. The throw is scaled
+so a spin lasts about thirteen seconds whatever the number of sectors.
 
 With reduced motion the wheel jumps to the result and there is no confetti.

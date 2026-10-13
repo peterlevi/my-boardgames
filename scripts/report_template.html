@@ -1248,8 +1248,14 @@ td.c-add { text-align:right; white-space:nowrap; }
 .traylist img, .traylist .noimg { display:block; width:72px; height:72px;
   margin:0 auto 5px; object-fit:contain; border-radius:9px;
   background:var(--tile); }
-.traylist .tname { font-weight:700; display:-webkit-box; -webkit-line-clamp:2;
-  -webkit-box-orient:vertical; overflow:hidden; word-break:break-word; }
+/* The whole name, however long: it wraps rather than trailing off. Click it
+   to rename the entry. */
+.traylist .tname { font-weight:700; display:block; overflow-wrap:anywhere;
+  border-radius:5px; padding:1px 3px; cursor:text; outline:none; }
+.traylist .tname:hover { box-shadow:inset 0 0 0 1px var(--line); }
+.traylist .tname:focus { background:var(--panel);
+  box-shadow:inset 0 0 0 1.5px var(--accent); }
+.traylist .tname.renamed { color:var(--accent); }
 .traylist li.fresh img { box-shadow:0 0 0 3px var(--accent); }
 /* Every tile carries its own way out. */
 /* White on black in either theme: it sits on a cover, and a cover can be
@@ -1306,15 +1312,9 @@ td.c-add { text-align:right; white-space:nowrap; }
   display:flex; flex-direction:column; align-items:center; gap:14px; }
 .wheelx { position:absolute; top:10px; right:10px; font-size:1.3rem;
   line-height:1; }
-.wheelbox { position:relative; width:min(480px, 78vmin);
-  aspect-ratio:1; }
+.wheelbox { position:relative; width:min(480px, 72vmin);
+  aspect-ratio:21 / 23; }
 #wheelcanvas { width:100%; height:100%; display:block; }
-/* The pointer at twelve o'clock, pointing into the wheel. */
-.wheelpin { position:absolute; left:50%; top:-6px; width:0; height:0;
-  transform:translateX(-50%); transform-origin:50% 0;
-  border-left:15px solid transparent;
-  border-right:15px solid transparent; border-top:30px solid var(--ink);
-  filter:drop-shadow(0 2px 2px rgba(0,0,0,.3)); }
 .wheelresult { min-height:3.2em; text-align:center; display:flex;
   align-items:center; justify-content:center; gap:12px; }
 .wheelresult img { width:56px; height:56px; object-fit:contain;
@@ -1830,8 +1830,7 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
     <button type="button" class="iconbtn wheelx" id="wheelclose"
       title="Close" aria-label="Close the wheel">&times;</button>
     <div class="wheelbox">
-      <canvas id="wheelcanvas" width="520" height="520"></canvas>
-      <span class="wheelpin" id="wheelpin" aria-hidden="true"></span>
+      <canvas id="wheelcanvas" width="480" height="526"></canvas>
     </div>
     <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
     <div class="wheelbtns">
@@ -2991,6 +2990,11 @@ var picking = false;
 /** What is in the tray: DATA indices in the order they were added. A game
  *  can be in it more than once — two copies on the table is a real answer. */
 var tray = [];
+/** Your own name for each entry in the tray, by position, or null for the
+ *  game's own. Kept with the tray in this browser, never in the link, and
+ *  gone when the tray is cleared. The wheel uses them. */
+var trayNames = [];
+function trayLabel(k) { return trayNames[k] || DATA[tray[k]].n; }
 /** The picks the table is showing, the same shape as the tray, or null for
  *  the whole collection. Carried in the URL as `sel`, so it can be sent. */
 var chosen = null;
@@ -3079,7 +3083,11 @@ function paintTray() {
       '">&times;</button>' +
       (th ? '<img alt="" src="' + esc(th) + '">'
             : '<span class="noimg"></span>') +
-      '<span class="tname">' + esc(g.n) + '</span></li>';
+      '<span class="tname' + (trayNames[k] ? ' renamed' : '') +
+      '" contenteditable="true" spellcheck="false" role="textbox" data-k="' + k +
+      '" title="' + (trayNames[k] ? 'Renamed from ' + esc(g.n) + ' — click to edit'
+                                    : 'Click to rename') + '">' +
+      esc(trayLabel(k)) + '</span></li>';
   }).join('');
   el('traycount').textContent = tray.length ? plural(tray.length, 'game') : '';
   el('trayempty').hidden = tray.length > 0;
@@ -3108,7 +3116,12 @@ function showTray(on) {
 function setPicking(on) {
   if (on === picking) return;
   showTray(on);
-  if (on && chosen) tray = chosen.slice();
+  // Applied picks become the tray to edit — unless the tray already is
+  // them, in which case it stays as it is, renamed entries and all.
+  if (on && chosen && picksToIds(chosen) !== picksToIds(tray)) {
+    tray = chosen.slice();
+    trayNames = [];
+  }
   paintTray();
   // render() below saves the tray along with the filters.
   // The page changes width either way, so the columns are fitted again —
@@ -3158,11 +3171,45 @@ el('addall').addEventListener('click', function () {
 el('traylist').addEventListener('click', function (e) {
   var rm = e.target.closest('[data-rm]');
   if (!rm) return;
-  tray.splice(+rm.getAttribute('data-rm'), 1);
+  var at = +rm.getAttribute('data-rm');
+  tray.splice(at, 1);
+  trayNames.splice(at, 1);
   trayChanged();
+});
+/* Renaming an entry: the name is editable in place. Enter or leaving it
+   keeps the new name, Escape puts the old one back, and an empty name — or
+   the game's own — goes back to the game's own. */
+function commitName(span) {
+  var k = +span.getAttribute('data-k');
+  if (!(k in tray)) return;
+  var v = span.textContent.replace(/\s+/g, ' ').trim();
+  trayNames[k] = v && v !== DATA[tray[k]].n ? v : null;
+  trayChanged();
+}
+el('traylist').addEventListener('keydown', function (e) {
+  var span = e.target.closest && e.target.closest('.tname');
+  if (!span) return;
+  if (e.key === 'Enter') { e.preventDefault(); span.blur(); }
+  else if (e.key === 'Escape') {
+    e.preventDefault();
+    e.stopPropagation();                  // not the picker's Escape too
+    span.textContent = trayLabel(+span.getAttribute('data-k'));
+    span.blur();
+  }
+});
+el('traylist').addEventListener('focusout', function (e) {
+  if (e.target.classList && e.target.classList.contains('tname')) commitName(e.target);
+});
+// Pasted text arrives as text, not as somebody else's markup.
+el('traylist').addEventListener('paste', function (e) {
+  if (!(e.target.closest && e.target.closest('.tname'))) return;
+  e.preventDefault();
+  var text = (e.clipboardData || window.clipboardData).getData('text');
+  document.execCommand('insertText', false, text.replace(/\s+/g, ' '));
 });
 el('trayclear').addEventListener('click', function () {
   tray = [];
+  trayNames = [];
   trayChanged();
 });
 el('trayshow').addEventListener('click', function () {
@@ -3210,7 +3257,8 @@ el('pickedit').addEventListener('click', function () { setPicking(true); });
    sector. What the wheel shows is therefore exactly what was drawn. */
 var WHEEL_COLORS = ['#b3414c', '#c0952b', '#3f8a5f', '#3778a8', '#8560a4',
                     '#d0703a', '#2d7a4d', '#7a5c3e', '#b94a75', '#5b71ac'];
-var wheel = { open: false, rot: 0, entries: [], anim: null, imgs: [] };
+var wheel = { open: false, rot: 0, psi: 0, entries: [], anim: null,
+              searching: false };
 
 function fairIndex(n) {
   if (n <= 1) return 0;
@@ -3232,65 +3280,134 @@ function wheelColor(i, n) {
 function drawWheel() {
   var cv = el('wheelcanvas'), ctx = cv.getContext('2d');
   var dpr = window.devicePixelRatio || 1;
-  var css = cv.getBoundingClientRect().width || 480;
-  var px = Math.round(css * dpr);
-  if (cv.width !== px) { cv.width = px; cv.height = px; }
-  var size = px, r = size / 2 - 4 * dpr, cx = size / 2, cy = size / 2;
+  var box = cv.getBoundingClientRect();
+  var cssW = box.width || 480, cssH = box.height || cssW * 23 / 21;
+  if (cv.width !== Math.round(cssW * dpr)) {
+    cv.width = Math.round(cssW * dpr);
+    cv.height = Math.round(cssH * dpr);
+  }
+  // The wheel's radius in device pixels, its centre low enough in the canvas
+  // to leave room above for the flapper and its mount.
+  var R = cv.width / 2.1, cx = cv.width / 2, cy = 1.25 * R;
+  var k = R / 480 * 2.1;                       // device px per "480px wheel" px
   var n = wheel.entries.length, a = 2 * Math.PI / n;
-  ctx.clearRect(0, 0, size, size);
+  ctx.clearRect(0, 0, cv.width, cv.height);
   for (var i = 0; i < n; i++) {
     var start = -Math.PI / 2 + i * a + wheel.rot;
     ctx.beginPath();
     ctx.moveTo(cx, cy);
-    ctx.arc(cx, cy, r, start, start + a);
+    ctx.arc(cx, cy, R, start, start + a);
     ctx.closePath();
     ctx.fillStyle = wheelColor(i, n);
     ctx.fill();
-    ctx.lineWidth = 2 * dpr;
-    ctx.strokeStyle = 'rgba(255,255,255,.85)';
+    ctx.lineWidth = 1.5 * dpr;
+    ctx.strokeStyle = 'rgba(255,255,255,.8)';
     ctx.stroke();
     // The name along the sector's middle, reading outward from the hub.
     ctx.save();
     ctx.translate(cx, cy);
     ctx.rotate(start + a / 2);
-    var fs = Math.max(9, Math.min(15, 160 / n + 6)) * dpr * (css / 480);
+    var fs = Math.max(8.5, Math.min(13, 120 / n + 5.5)) * k;
     ctx.font = '700 ' + fs + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
     ctx.fillStyle = '#fff';
     ctx.textAlign = 'right';
     ctx.textBaseline = 'middle';
     ctx.shadowColor = 'rgba(0,0,0,.35)';
     ctx.shadowBlur = 3 * dpr;
-    var name = DATA[wheel.entries[i]].n, room = r * 0.62;
+    var name = wheel.labels[i], room = R * 0.6;
     if (ctx.measureText(name).width > room) {
       while (name.length > 1 && ctx.measureText(name + '…').width > room) {
         name = name.slice(0, -1);
       }
       name = name.replace(/\s+$/, '') + '…';
     }
-    ctx.fillText(name, r - 24 * dpr * (css / 480), 0);
+    ctx.fillText(name, R - 26 * k, 0);
     ctx.restore();
   }
-  // The pegs, one on every boundary, just inside the rim: what the pointer
-  // catches on.
-  var pr = r - 9 * dpr * (css / 480), ps = Math.max(2.5, 4.2 * (css / 480)) * dpr;
+  // The rim.
+  ctx.beginPath();
+  ctx.arc(cx, cy, R, 0, 2 * Math.PI);
+  ctx.lineWidth = 3 * dpr;
+  ctx.strokeStyle = '#1b1a17';
+  ctx.stroke();
+  // The pegs, one on every boundary, right at the edge.
+  var G = WHEEL_G;
   for (var p = 0; p < n; p++) {
     var pa = -Math.PI / 2 + p * a + wheel.rot;
+    var gx = cx + G.rp * R * Math.cos(pa), gy = cy + G.rp * R * Math.sin(pa);
     ctx.beginPath();
-    ctx.arc(cx + pr * Math.cos(pa), cy + pr * Math.sin(pa), ps, 0, 2 * Math.PI);
-    ctx.fillStyle = '#fff';
+    ctx.arc(gx, gy, G.pr * R, 0, 2 * Math.PI);
+    ctx.fillStyle = '#e9e6df';
     ctx.fill();
-    ctx.lineWidth = 1.5 * dpr;
+    ctx.lineWidth = 1.4 * dpr;
     ctx.strokeStyle = '#1b1a17';
     ctx.stroke();
   }
   // The hub.
   ctx.beginPath();
-  ctx.arc(cx, cy, r * 0.11, 0, 2 * Math.PI);
+  ctx.arc(cx, cy, R * 0.1, 0, 2 * Math.PI);
   ctx.fillStyle = '#fff';
   ctx.fill();
   ctx.lineWidth = 3 * dpr;
   ctx.strokeStyle = '#1b1a17';
   ctx.stroke();
+  drawFlapper(ctx, cx, cy, R, dpr);
+}
+
+/** The flapper: a strip of springy plastic clamped at the top. Its tip is
+ *  where the physics says; the strip is drawn as a cantilever would bend to
+ *  get it there — straight down out of the clamp, curving towards the tip —
+ *  rather than as a rigid needle swinging through the pegs. */
+function drawFlapper(ctx, cx, cy, R, dpr) {
+  var G = WHEEL_G, psi = wheel.psi || 0;
+  var bx = cx, by = cy - G.py * R;                          // the clamp
+  var tx = cx + G.L * R * Math.sin(psi), ty = cy - (G.py - G.L * Math.cos(psi)) * R;
+  var c1x = bx, c1y = by + G.L * R * 0.62;                  // vertical out of the clamp
+  var N = 18, left = [], right = [];
+  for (var i = 0; i <= N; i++) {
+    var s = i / N, u = 1 - s;
+    var x = u * u * bx + 2 * u * s * c1x + s * s * tx;
+    var y = u * u * by + 2 * u * s * c1y + s * s * ty;
+    var dx = 2 * u * (c1x - bx) + 2 * s * (tx - c1x);
+    var dy = 2 * u * (c1y - by) + 2 * s * (ty - c1y);
+    var l = Math.sqrt(dx * dx + dy * dy) || 1;
+    var half = (0.026 * (1 - s) + 0.012 * s) * R;          // tapering to the tip
+    left.push([x - dy / l * half, y + dx / l * half]);
+    right.push([x + dy / l * half, y - dx / l * half]);
+  }
+  ctx.save();
+  ctx.shadowColor = 'rgba(0,0,0,.3)';
+  ctx.shadowBlur = 4 * dpr;
+  ctx.shadowOffsetY = 1.5 * dpr;
+  ctx.beginPath();
+  ctx.moveTo(left[0][0], left[0][1]);
+  for (i = 1; i <= N; i++) ctx.lineTo(left[i][0], left[i][1]);
+  // A rounded tip, the size of the contact the physics uses.
+  ctx.arc(tx, ty, G.tw * R, Math.atan2(left[N][1] - ty, left[N][0] - tx),
+          Math.atan2(right[N][1] - ty, right[N][0] - tx), false);
+  for (i = N; i >= 0; i--) ctx.lineTo(right[i][0], right[i][1]);
+  ctx.closePath();
+  var grad = ctx.createLinearGradient(bx - 0.03 * R, 0, bx + 0.03 * R, 0);
+  grad.addColorStop(0, '#c8323a');
+  grad.addColorStop(0.5, '#e8545a');
+  grad.addColorStop(1, '#a92530');
+  ctx.fillStyle = grad;
+  ctx.fill();
+  ctx.shadowColor = 'transparent';
+  ctx.lineWidth = 1.2 * dpr;
+  ctx.strokeStyle = 'rgba(80,10,15,.75)';
+  ctx.stroke();
+  // The clamp it hangs from.
+  ctx.beginPath();
+  if (ctx.roundRect) ctx.roundRect(bx - 0.05 * R, by - 0.05 * R, 0.1 * R, 0.07 * R, 0.015 * R);
+  else ctx.rect(bx - 0.05 * R, by - 0.05 * R, 0.1 * R, 0.07 * R);
+  ctx.fillStyle = '#1b1a17';
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(bx, by - 0.015 * R, 0.012 * R, 0, 2 * Math.PI);
+  ctx.fillStyle = '#9a958b';
+  ctx.fill();
+  ctx.restore();
 }
 
 function reducedMotion() {
@@ -3301,99 +3418,168 @@ function reducedMotion() {
 function wheelResult(html) { el('wheelresult').innerHTML = html; }
 
 /* ---- the wheel's physics ------------------------------------------------
-   A wheel with a peg at every sector boundary and a spring-loaded flapper at
-   twelve o'clock. Friction slows it (a constant part and one that grows with
-   speed). A peg running into the flapper meets a spring that pushes back
-   harder the further it gets; past the tip the flapper lets go. Bending the
-   flapper costs energy, so the last turns are a crawl from peg to peg — and a
-   peg that arrives too slowly is pushed back, and the wheel rocks backwards
-   into the sector before.
+   A wheel with a peg on every sector boundary at its rim, and a flapper of
+   springy plastic hanging from a pivot above it. Both are simulated: the
+   wheel turns against friction; the flapper swings on its spring with its
+   own little inertia and damping; and where a peg and the flapper's tip
+   meet, they push each other apart (a stiff contact, never an overlap). So a
+   peg bends the flapper aside and lifts it until it slips underneath, and
+   the flapper flicks back and wobbles; a peg that arrives too slowly cannot
+   lift it far enough and is pushed back, and the wheel rocks backwards.
 
-   Units: radians and seconds, the wheel's inertia taken as 1. Stepped at a
-   fixed 240Hz so a run is exactly repeatable — which is what lets the draw
-   stay fair (see spinWheel). */
-var WHEEL_PHYS = { mu: 0.30, c: 0.12, c2: 0.9, e: 0.10, hMax: 0.075 };
+   Units: the wheel's radius is 1 and its inertia 1; y points up from the
+   wheel's centre; angles are clockwise. Stepped at 240Hz, with 16 substeps
+   while a peg is near the flapper, so a run is exactly repeatable. */
+var WHEEL_G = { rp: 0.985, pr: 0.022, tw: 0.012, py: 1.13, L: 0.17 };
+var WHEEL_P = { mu: 0.18, c: 0.05, J: 1.2e-4, kappa: 0.55, zeta: 0.18,
+                kc: 1600, cc: 0.6 };
 var WHEEL_DT = 1 / 240;
 
 function wheelSim(theta0, omega0, n, record) {
-  var P = WHEEL_PHYS, TAU = 2 * Math.PI, a = TAU / n;
-  // How far either side of the flapper's tip a peg is in contact, and how
-  // much energy it takes to bend it all the way: a share of the sector, so a
-  // wheel of many narrow sectors is not stopped dead by its own pegs.
-  var h = Math.min(0.42 * a, P.hMax), k = 2 * (P.e * a) / (h * h);
-  var th = theta0, w = omega0, t = 0, still = 0, entry = 0, flap = 0;
-  var path = record ? [] : null, flaps = record ? [] : null;
+  var G = WHEEL_G, P = WHEEL_P, TAU = 2 * Math.PI, a = TAU / n;
+  var th = theta0, w = omega0, psi = 0, vpsi = 0, t = 0, still = 0;
+  var cpsi = 2 * P.zeta * Math.sqrt(P.kappa * P.J), reach = G.pr + G.tw;
+  var path = record ? [] : null, flaps = record ? [] : null, clicks = [];
+  var ep = null, eps = [];
   while (t < 40) {
-    var u = -th, j = Math.round(u / a), x = u - j * a;
-    var inZone = Math.abs(x) < h, push = 0;
-    var acc = -P.mu * (w > 0 ? 1 : w < 0 ? -1 : 0) - P.c * w;
-    if (inZone) {
-      // V = k/2 (h - |x|)^2 across the tip; x runs against the wheel.
-      push = -k * (h - Math.abs(x)) * (x > 0 ? 1 : -1);
-      acc += push - P.c2 * w;
-      if (!entry) entry = x > 0 ? 1 : -1;
-    } else {
-      entry = 0;
+    var j0 = Math.round(-th / a), near = false, q, ph;
+    for (q = -1; q <= 1; q++) {
+      ph = (j0 + q) * a + th;
+      if (Math.abs(ph) < 0.14) near = true;
     }
-    // Static friction: barely moving, and nothing pushing hard enough to
-    // move it, means it has stopped.
-    if (Math.abs(w) < 0.03 && Math.abs(push) < P.mu * 1.2) {
-      w = 0;
+    var sub = near ? 16 : 1, h = WHEEL_DT / sub, touching = null;
+    for (var st = 0; st < sub; st++) {
+      var tauW = -P.c * w, tauF = -P.kappa * psi - cpsi * vpsi;
+      // The mount stops the flapper swinging much past fifty degrees.
+      if (Math.abs(psi) > 0.9) tauF -= 40 * P.kappa * (psi - (psi > 0 ? 0.9 : -0.9));
+      var tx = G.L * Math.sin(psi), ty = G.py - G.L * Math.cos(psi);
+      touching = null;
+      if (near) for (q = -1; q <= 1; q++) {
+        ph = (j0 + q) * a + th;
+        var px = G.rp * Math.sin(ph), py = G.rp * Math.cos(ph);
+        var dx = tx - px, dy = ty - py, d = Math.sqrt(dx * dx + dy * dy);
+        if (d >= reach) continue;
+        touching = { j: j0 + q, ph: ph };
+        var nx = dx / d, ny = dy / d;
+        var vn = (G.L * Math.cos(psi) * vpsi - G.rp * Math.cos(ph) * w) * nx +
+                 (G.L * Math.sin(psi) * vpsi + G.rp * Math.sin(ph) * w) * ny;
+        var F = Math.max(0, P.kc * (reach - d) - P.cc * vn);
+        tauF += tx * F * ny - (ty - G.py) * F * nx;      // on the tip, about the pivot
+        tauW += px * F * ny - py * F * nx;                // on the peg, clockwise
+      }
+      // Kinetic friction while it turns; static once it has all but stopped,
+      // holding the wheel unless something pushes harder than it grips.
+      if (Math.abs(w) < 0.015 && Math.abs(tauW) <= P.mu * 1.3) {
+        w = 0;
+      } else {
+        var dir = w > 0 ? 1 : w < 0 ? -1 : (tauW > 0 ? 1 : -1);
+        var w2 = w + (tauW - P.mu * dir) * h;
+        w = (w !== 0 && (w2 > 0) !== (w > 0) && Math.abs(tauW) <= P.mu) ? 0 : w2;
+        th += w * h;
+      }
+      vpsi += tauF / P.J * h;
+      psi += vpsi * h;
+    }
+    // One episode per peg the flapper meets: how far it bent, how slowly
+    // the wheel was going, and whether the peg got past or was sent back.
+    if (touching && (!ep || ep.j !== touching.j)) {
+      if (ep) { ep.passed = false; eps.push(ep); }
+      ep = { j: touching.j, side: touching.ph < 0 ? -1 : 1, maxPsi: 0,
+             minW: Math.abs(w), end: t };
+    }
+    if (ep) {
+      ep.maxPsi = Math.max(ep.maxPsi, Math.abs(psi));
+      if (touching) { ep.minW = Math.min(ep.minW, Math.abs(w)); ep.end = t; }
+      var side = ep.j * a + th < 0 ? -1 : 1;
+      if (!touching && t - ep.end > 0.03) {
+        ep.passed = side !== ep.side;
+        // The clack: the flapper slapping back off a peg it let through.
+        if (ep.passed) clicks.push({ i: record ? path.length : 0,
+                                     v: Math.min(1, Math.abs(vpsi) / 14 + 0.15) });
+        eps.push(ep);
+        ep = null;
+      }
+    }
+    if (record) { path.push(th); flaps.push(psi); }
+    if (w === 0 && Math.abs(vpsi) < 0.05) {
       still += WHEEL_DT;
-      if (still > 0.2) break;
+      if (still > 0.3) break;
     } else {
       still = 0;
-      w += acc * WHEEL_DT;
-      th += w * WHEEL_DT;
-    }
-    if (record) {
-      // The flapper bends while the peg is on the side it came in from, and
-      // springs back, quickly but not instantly, once the peg is past.
-      var bend = inZone && (x > 0 ? 1 : -1) === entry
-        ? (h - Math.abs(x)) / h * entry : 0;
-      flap = Math.abs(bend) >= Math.abs(flap) ? bend : flap * 0.8;
-      path.push(th);
-      flaps.push(flap);
     }
     t += WHEEL_DT;
   }
+  if (ep) { ep.passed = false; eps.push(ep); }
   var rest = ((-th) % TAU + TAU) % TAU;
-  return { sector: Math.floor(rest / a) % n, t: t, th: th, path: path, flaps: flaps };
+  return { sector: Math.floor(rest / a) % n, t: t, path: path, flaps: flaps,
+           clicks: clicks, eps: eps };
 }
 
-/** Spin. The winner is drawn first, uniformly over the tray's entries. Then
- *  a few hundred launch speeds are run through the physics from where the
- *  wheel stands now, and one of those that really does come to rest on the
- *  winner is chosen at random and played back. Every bounce on screen is the
- *  simulation's own; the only thing chosen is how hard the wheel was thrown,
- *  so the odds stay exactly one in n per entry whatever the physics does. */
+/** How much of a nail-biter a run's ending is, from 0 to about 1. Only the
+ *  last two pegs that really fought the flapper count: one that barely got
+ *  through (the wheel all but stopped while it was bent) or one that barely
+ *  failed (it bent the flapper nearly as far as it takes to pass) scores
+ *  high; a peg brushed past at speed scores nothing. */
+var WHEEL_PASS_PSI = 0.8;
+function wheelDrama(run) {
+  var fights = run.eps.filter(function (e) { return e.maxPsi > 0.15; });
+  function close(e) {
+    if (!e) return 0;
+    return e.passed ? Math.max(0, 1 - e.minW / 0.6)
+                    : Math.min(1, e.maxPsi / WHEEL_PASS_PSI);
+  }
+  var last = fights[fights.length - 1], prev = fights[fights.length - 2];
+  var score = 0.6 * close(last) + 0.4 * close(prev);
+  // Stopped by the last peg it could not get over: the wheel rocks back.
+  if (last && !last.passed && close(last) > 0.6) score += 0.15;
+  return score;
+}
+
+/** Spin. The winner is drawn first, uniformly over the tray's entries: that
+ *  alone decides the odds, one in n per entry. Then a couple of hundred
+ *  throws are run through the physics from where the wheel stands, and of
+ *  those that genuinely come to rest on the winner, the one with the most
+ *  dramatic ending is played back. Every bounce on screen is the
+ *  simulation's own; only how hard the wheel was thrown was chosen. */
 function spinWheel() {
   var n = wheel.entries.length;
-  if (!n || wheel.anim) return;
+  if (!n || wheel.anim || wheel.searching) return;
   var win = fairIndex(n), TAU = 2 * Math.PI;
   var from = ((wheel.rot % TAU) + TAU) % TAU;
-  // Aim for about eight seconds whatever the number of sectors: fewer pegs
-  // brake less, so a wheel of four needs a gentler throw than one of thirty.
-  var probe = wheelSim(from, 16, n, false).t;
-  var base = Math.max(6, Math.min(40, 16 * 8 / probe));
-  var hits = [];
-  for (var round = 0; round < 3 && !hits.length; round++) {
-    var lo = base * (0.8 - 0.1 * round), span = base * (0.4 + 0.2 * round);
-    for (var i = 0; i < 360; i++) {
-      var v = lo + span * (i + Math.random()) / 360;
-      if (wheelSim(from, v, n, false).sector === win) hits.push(v);
-    }
-  }
   el('wheelagain').disabled = true;
   wheelResult('<span class="spinning">Spinning…</span>');
-  var run = hits.length ? wheelSim(from, hits[fairIndex(hits.length)], n, true)
-                        : null;
+  wheel.searching = true;
+  // Let the button and the line above paint before the search runs.
+  setTimeout(function () {
+    // Aim for about thirteen seconds whatever the number of sectors: fewer
+    // pegs brake less, so a wheel of four wants a gentler throw.
+    var probe = wheelSim(from, 9, n, false).t;
+    var base = Math.max(4, Math.min(30, 9 * 13 / probe));
+    var best = null, bestScore = -1;
+    for (var round = 0; round < 3 && !best; round++) {
+      var lo = base * (0.8 - 0.1 * round), span = base * (0.45 + 0.2 * round);
+      for (var i = 0; i < 200; i++) {
+        var v = lo + span * (i + Math.random()) / 200;
+        var r = wheelSim(from, v, n, false);
+        if (r.sector !== win) continue;
+        var sc = wheelDrama(r) + Math.random() * 0.02;  // ties go to chance
+        if (sc > bestScore) { bestScore = sc; best = v; }
+      }
+    }
+    wheel.searching = false;
+    if (!wheel.open) return;
+    playSpin(best === null ? null : wheelSim(from, best, n, true), win);
+  }, 30);
+}
+
+function playSpin(run, win) {
+  var TAU = 2 * Math.PI, n = wheel.entries.length;
   function done() {
     wheel.anim = null;
-    setPin(0);
+    wheel.psi = 0;
     drawWheel();
     el('wheelagain').disabled = false;
-    announceWinner(wheel.entries[win]);
+    announceWinner(win);
   }
   if (!run || reducedMotion()) {
     // Straight to the answer: the middle of the winning sector.
@@ -3401,13 +3587,18 @@ function spinWheel() {
     done();
     return;
   }
-  var t0 = null, last = run.path.length - 1;
+  var t0 = null, last = run.path.length - 1, ci = 0;
   function step(ts) {
     if (!wheel.open) { wheel.anim = null; return; }
     if (t0 === null) t0 = ts;
     var idx = Math.min(last, Math.floor((ts - t0) / 1000 / WHEEL_DT));
+    // Every clack the flapper made since the last frame.
+    while (ci < run.clicks.length && run.clicks[ci].i <= idx) {
+      if (idx - run.clicks[ci].i < 12) clack(run.clicks[ci].v);
+      ci++;
+    }
     wheel.rot = run.path[idx];
-    setPin(run.flaps[idx]);
+    wheel.psi = run.flaps[idx];
     drawWheel();
     if (idx < last) wheel.anim = requestAnimationFrame(step);
     else done();
@@ -3415,25 +3606,63 @@ function spinWheel() {
   wheel.anim = requestAnimationFrame(step);
 }
 
-/** Bend the pointer: a peg moving right along the top pushes its tip right,
- *  which for a pointer hanging from above is a turn anticlockwise. */
-function setPin(flap) {
-  el('wheelpin').style.transform =
-    'translateX(-50%) rotate(' + (-flap * 24).toFixed(2) + 'deg)';
+/* The clack, made rather than recorded: a few milliseconds of noise through
+   a band-pass, on a fast decay, with a little knock under it — a plastic
+   flapper slapping a peg. One AudioContext, made on the click that opened
+   the wheel, which is what browsers ask before a page may make a sound. */
+var wheelAudio = null;
+function wheelSound() {
+  if (wheelAudio) {
+    if (wheelAudio.state === 'suspended') wheelAudio.resume();
+    return wheelAudio;
+  }
+  var AC = window.AudioContext || window.webkitAudioContext;
+  if (!AC) return null;
+  try { wheelAudio = new AC(); } catch (e) { return null; }
+  return wheelAudio;
+}
+function clack(v) {
+  var ac = wheelAudio;
+  if (!ac || ac.state !== 'running') return;
+  var now = ac.currentTime, len = Math.floor(ac.sampleRate * 0.03);
+  var buf = ac.createBuffer(1, len, ac.sampleRate), d = buf.getChannelData(0);
+  for (var i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 4);
+  var noise = ac.createBufferSource();
+  noise.buffer = buf;
+  var bp = ac.createBiquadFilter();
+  bp.type = 'bandpass';
+  bp.frequency.value = 2600 + Math.random() * 500;
+  bp.Q.value = 1.6;
+  var g = ac.createGain();
+  g.gain.setValueAtTime(0.5 * v, now);
+  g.gain.exponentialRampToValueAtTime(0.001, now + 0.035);
+  noise.connect(bp); bp.connect(g); g.connect(ac.destination);
+  noise.start(now);
+  var knock = ac.createOscillator(), kg = ac.createGain();
+  knock.frequency.setValueAtTime(900, now);
+  knock.frequency.exponentialRampToValueAtTime(380, now + 0.03);
+  kg.gain.setValueAtTime(0.18 * v, now);
+  kg.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+  knock.connect(kg); kg.connect(ac.destination);
+  knock.start(now);
+  knock.stop(now + 0.05);
 }
 
-function announceWinner(i) {
-  var g = DATA[i];
+/** k is the winning entry, so a renamed one is announced by its new name. */
+function announceWinner(k) {
+  var i = wheel.entries[k];
   var img = ROWS[i] && ROWS[i].querySelector('img.thumb');
   wheelResult((img ? '<img alt="" src="' + esc(img.getAttribute('src')) + '">' : '') +
-    '<span><span class="wlabel">The wheel says</span><b>' + esc(g.n) +
+    '<span><span class="wlabel">The wheel says</span><b>' + esc(wheel.labels[k]) +
     '</b></span>');
   if (!reducedMotion()) confetti();
 }
 
 function openWheel() {
   if (!tray.length) return;
+  wheelSound();
   wheel.entries = tray.slice();
+  wheel.labels = tray.map(function (i, k) { return trayLabel(k); });
   wheel.open = true;
   el('wheel').hidden = false;
   el('wheelagain').disabled = false;
@@ -5457,7 +5686,8 @@ function saveFilters() {
       tags: pickedTags().map(function (i) { return TAGS[i].k + '|' + TAGS[i].n; }),
       sort: sortKey, desc: sortDesc,
       sel: chosen ? picksToIds(chosen) : '',
-      tray: picksToIds(tray)
+      tray: picksToIds(tray),
+      names: trayNames.slice(0, tray.length)
     }));
   } catch (e) { /* storage off: nothing to remember with */ }
   // Replace, never push: this runs on every render, and a history entry per
@@ -5758,7 +5988,10 @@ if (!readUrl()) loadFilters();
 try {
   var savedTray = JSON.parse(window.localStorage.getItem(FILTKEY) || 'null');
   tray = (savedTray && idsToPicks(savedTray.tray)) || [];
-} catch (e) { tray = []; }
+  trayNames = (savedTray && savedTray.names) || [];
+  // Only while it still lines up with the tray it was saved with.
+  if (trayNames.length > tray.length) trayNames = [];
+} catch (e) { tray = []; trayNames = []; }
 paintTray();
 // Back and forward. A hash-only history move fires both popstate and
 // hashchange, and an address edited by hand fires only hashchange, so both

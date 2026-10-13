@@ -11,6 +11,9 @@
   --chip:#eae6de; --tile:#dcd6c9;
   /* Meter scale, strong to weak, so a percentage reads before it is parsed. */
   --m4:#3f8a5f; --m3:#7d9b45; --m2:#c0952b; --m1:#b3aca1; --hit:#f6e6a8;
+  /* The game picker's column: a shade darker than the page, so it reads as
+     a tray beside the table rather than more of it. */
+  --tray:#ebe5d8; --trayw:300px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -19,6 +22,7 @@
     --great-bg:#332d15; --warn:#e5a488; --warn-bg:#38241c;
     --chip:#2b2822; --tile:#322d25;
     --m4:#6fbf8e; --m3:#a3c274; --m2:#dcbc6a; --m1:#6b665d; --hit:#6a5a22;
+    --tray:#0f0d09;
   }
 }
 * { box-sizing:border-box; }
@@ -1161,6 +1165,96 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .fitsw { order:3; flex:0 0 100%; margin:20px 0 0; }
   .msort { display:flex; }
 }
+
+/* ---- the game picker -----------------------------------------------------
+   A tray on the right that games are dropped into, one "Add →" at a time,
+   and a filter that then shows just those. Open, the page lets go of its
+   1280px: the table slides left to the window's edge and the tray takes the
+   space on the right, so nothing that was on screen ends up under it. */
+.pickbtn { margin-left:auto; display:flex; align-items:center; gap:6px;
+  background:none; border:1px solid var(--line); border-radius:7px;
+  padding:3px 10px 3px 8px; font:inherit; font-size:.84rem; font-weight:600;
+  color:var(--muted); cursor:pointer; white-space:nowrap; align-self:center; }
+.pickbtn:hover { color:var(--ink); background:var(--panel); }
+/* Pressed while the tray is open: sunk into the bar, in the tray's colour. */
+.pickbtn[aria-pressed="true"] { color:var(--ink); background:var(--tray);
+  border-color:var(--muted); box-shadow:inset 0 1px 3px rgba(0,0,0,.18); }
+.pickbtn + .colpick { margin-left:4px; }
+
+.c-add { display:none; }
+:root.picking .c-add { display:table-cell; }
+th.w-add { width:84px; }
+td.c-add { text-align:right; white-space:nowrap; }
+.addbtn { background:var(--panel); border:1px solid var(--line);
+  border-radius:999px; padding:3px 11px; font:inherit; font-size:.8rem;
+  font-weight:700; color:var(--accent); cursor:pointer; white-space:nowrap; }
+.addbtn:hover { border-color:var(--accent); }
+/* A beat of confirmation on the button that was pressed. */
+.addbtn.added { background:var(--best-bg); color:var(--best);
+  border-color:var(--best); }
+
+:root.picking .wrap { max-width:none; margin:0;
+  padding-right:calc(var(--trayw) + 16px); }
+#tray { position:fixed; top:0; right:0; bottom:0; width:var(--trayw);
+  z-index:25; background:var(--tray); border-left:1px solid var(--line);
+  display:flex; flex-direction:column; }
+.trayhead { display:flex; align-items:baseline; gap:8px;
+  padding:16px 16px 10px; }
+.trayhead b { font-size:1.05rem; }
+#traycount { color:var(--muted); font-size:.84rem; }
+#trayclose { margin-left:auto; align-self:center; font-size:1.2rem;
+  line-height:1; }
+.trayhint { margin:0; padding:0 16px; color:var(--muted); font-size:.84rem; }
+.traylist { list-style:none; margin:0; padding:4px 12px 12px; flex:1 1 auto;
+  overflow-y:auto; display:grid; align-content:start; gap:12px 8px;
+  grid-template-columns:repeat(auto-fill, minmax(82px, 1fr)); }
+.traylist li { position:relative; text-align:center; font-size:.78rem;
+  line-height:1.25; min-width:0; }
+.traylist img, .traylist .noimg { display:block; width:72px; height:72px;
+  margin:0 auto 5px; object-fit:contain; border-radius:9px;
+  background:var(--tile); }
+.traylist .tname { display:-webkit-box; -webkit-line-clamp:2;
+  -webkit-box-orient:vertical; overflow:hidden; word-break:break-word; }
+.traylist li.fresh img { box-shadow:0 0 0 3px var(--accent); }
+/* Every tile carries its own way out. */
+.trayrm { position:absolute; top:-6px; right:2px; width:22px; height:22px;
+  border-radius:50%; border:1px solid var(--line); background:var(--panel);
+  color:var(--muted); font-size:.9rem; line-height:1; padding:0;
+  cursor:pointer; }
+.trayrm:hover { color:var(--warn); border-color:var(--warn); }
+.trayfoot { padding:12px 16px 16px; border-top:1px solid var(--line);
+  display:flex; flex-direction:column; gap:8px; }
+.trayclear, .trayshow { width:100%; font:inherit; font-weight:700;
+  border-radius:9px; cursor:pointer; }
+.trayclear { padding:8px; font-size:.86rem; background:none;
+  border:1px solid var(--line); color:var(--ink); }
+.trayclear:hover { border-color:var(--muted); }
+.trayshow { padding:13px; font-size:1.02rem; border:0;
+  background:var(--accent); color:var(--panel); }
+.trayclear:disabled, .trayshow:disabled { opacity:.45; cursor:default; }
+
+/* The applied selection, said in the result line with a way back out. */
+.pickchip { display:inline-flex; align-items:baseline; gap:8px; flex:none;
+  white-space:nowrap;
+  background:var(--tray); border-radius:999px; padding:2px 6px 2px 12px;
+  font-size:.84rem; }
+.pickchip .iconbtn { display:inline; padding:0 4px; font-size:1rem;
+  line-height:1; }
+
+@media (max-width:700px) {
+  /* No room for a column beside the cards: the tray is a sheet along the
+     bottom instead, and the cards keep the full width above it. */
+  :root.picking .wrap { padding-right:16px; padding-bottom:52vh; }
+  #tray { top:auto; left:0; width:auto; height:46vh; border-left:0;
+    border-top:1px solid var(--line); box-shadow:0 -8px 24px rgba(0,0,0,.12); }
+  /* In the card's top-right corner, where the cover and the ratings leave
+     the first line empty: in the strip it would take a line of its own. */
+  :root.picking tr.game-row { position:relative; }
+  :root.picking tr.game-row > td.c-add { display:block; position:absolute;
+    top:11px; right:0; }
+  :root.picking tr.game-row > td.c-gn { padding-right:78px; }
+  .pickbtn { margin-left:0; }
+}
 </style>
 <script>
 /* Before the body parses: put this browser's saved column choice on <html>,
@@ -1497,12 +1591,22 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 
 <div class="resultline"><span id="count">__SHOWN__ games</span><span
   id="desc">__DESC__</span><span id="outcount" hidden></span>
+  <span class="pickchip" id="pickchip" hidden><span id="picktext"></span
+    ><button type="button" class="link" id="pickedit">Edit</button
+    ><button type="button" class="iconbtn" id="pickoff"
+      title="Show the whole collection again"
+      aria-label="Stop showing just your picks">&times;</button></span>
   <!-- Phone only: with no column headers to tap, the sort needs somewhere to
        live. Its options are built from the headers themselves. -->
   <span class="msort" id="msortwrap">
     <select id="msort" aria-label="Sort by"></select>
     <button type="button" id="msortdir" aria-label="Reverse the sort"></button>
   </span>
+  <button type="button" id="pickbtn" class="pickbtn" aria-pressed="false"
+    aria-controls="tray" title="Pick games into a list, then show just those"
+    ><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"
+      ><path fill="currentColor" d="M1 3h9v1.5H1V3Zm0 4h9v1.5H1V7Zm0 4h6v1.5H1V11Zm11-2h1.5v2.5H16V13h-2.5v2.5H12V13H9.5v-1.5H12V9Z"
+      /></svg>Game picker</button>
   <span class="colpick" id="colsf">
     <button type="button" id="colsbtn" class="iconbtn" aria-expanded="false"
       title="Choose columns" aria-label="Choose columns"
@@ -1585,6 +1689,9 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
       title="When the collection entry itself last changed">Last edited</th>
     <th class="num hide-sm c-acq w-date" data-k="acq" data-col="acq">Acquired</th>
     <th class="num hide-sm c-pp w-price" data-k="pp" data-col="pp">Price paid</th>
+    <!-- The game picker's column: always last, never sortable, never in the
+         column list, and on screen only while the picker is open. -->
+    <th class="c-add w-add" data-col="add" aria-label="Add to the picker"></th>
   </tr></thead>
   <tbody id="rows"><tr class="sep" id="sep" hidden><td colspan="17"
     id="septext"></td></tr><!--__ROWS__--></tbody>
@@ -1598,6 +1705,21 @@ opening selection; open the file in a browser for the full controls.</p></noscri
 polls from boardgamegeek.com; thumbnails embedded in the file. Interaction and
 point-salad columns are derived locally and are opinions, not BGG data.</footer>
 </div>
+
+<!-- The game picker's tray. Outside .wrap so it can sit against the window's
+     edge however wide the page is. -->
+<aside id="tray" hidden aria-label="Game picker">
+  <div class="trayhead"><b>Your picks</b><span id="traycount"></span
+    ><button type="button" class="iconbtn" id="trayclose"
+      title="Close the picker" aria-label="Close the picker">&times;</button></div>
+  <p class="trayhint" id="trayempty">Press <b>Add&nbsp;&rarr;</b> on a game to
+    drop it here. The same game can go in more than once.</p>
+  <ol class="traylist" id="traylist"></ol>
+  <div class="trayfoot">
+    <button type="button" class="trayclear" id="trayclear">Clear selection</button>
+    <button type="button" class="trayshow" id="trayshow">Show just these</button>
+  </div>
+</aside>
 
 <script>
 const DATA = /*__DATA__*/;
@@ -2026,7 +2148,15 @@ function partition() {
   // expansion setting still decide what is in the table at all.
 
   var inside = [], outside = [];
-  for (var i = 0; i < DATA.length; i++) {
+  // With picks applied, the table is the picks — repeats and all — and every
+  // filter, search and sort below works over them alone. Each entry carries
+  // which copy of its game it is, so a game picked twice gets two rows.
+  var pool = chosen || null, total = pool ? pool.length : DATA.length;
+  var copies = {};
+  for (var p = 0; p < total; p++) {
+    var i = pool ? pool[p] : p;
+    var copy = copies[i] || 0;
+    copies[i] = copy + 1;
     var g = DATA[i];
     var hit = true;
     if (ids.length && ids.indexOf(String(g.id)) === -1) hit = false;
@@ -2059,8 +2189,8 @@ function partition() {
       !(ymin !== null && !(g.y >= ymin)) && !(ymax !== null && !(g.y <= ymax)) &&
       (!n || (s && s.via ? qualifies(s, mode) : standsAt(g, s, n, mode))));
 
-    if (pass) inside.push([i, s]);
-    else if (searching && structural) outside.push([i, s]);
+    if (pass) inside.push([i, s, copy]);
+    else if (searching && structural) outside.push([i, s, copy]);
   }
   return { inside: inside, outside: outside };
 }
@@ -2161,6 +2291,9 @@ function describe() {
   // With a filter applied, "All games, X" is noise — the filter is the subject.
   if (head) return head + (extra.length ? ', ' + extra.join(', ') : '');
   if (!extra.length) {
+    // Not "all" of anything while the picks are the table; the chip beside
+    // this says what it is instead.
+    if (chosen) return '';
     return expMode === 'show' ? 'All games and expansions' : 'All games';
   }
   if (expMode === 'show') extra.push('including expansions');
@@ -2621,8 +2754,9 @@ function render() {
   var shownIdx = {};
   var i, idx, tr;
 
+  var usedDup = [];
   for (i = 0; i < inside.length; i++) {
-    idx = inside[i][0]; tr = ROWS[idx];
+    idx = inside[i][0]; tr = rowFor(idx, inside[i][2], usedDup);
     if (!tr) continue;
     shownIdx[idx] = 1;
     paint(tr, DATA[idx], inside[i][1], n);
@@ -2639,7 +2773,7 @@ function render() {
     sep.hidden = false;
     frag.appendChild(sep);
     for (i = 0; i < outside.length; i++) {
-      idx = outside[i][0]; tr = ROWS[idx];
+      idx = outside[i][0]; tr = rowFor(idx, outside[i][2], usedDup);
       if (!tr) continue;
       shownIdx[idx] = 1;
       paint(tr, DATA[idx], outside[i][1], n);
@@ -2654,7 +2788,15 @@ function render() {
   for (var j = 0; j < ROWS.length; j++) {
     if (ROWS[j] && !shownIdx[j]) ROWS[j].hidden = true;
   }
+  // Copies nobody asked for this time leave the table outright; the cache
+  // keeps them for the next render that wants them.
+  DUPS.forEach(function (list) {
+    (list || []).forEach(function (c) {
+      if (c && usedDup.indexOf(c) < 0 && c.parentNode) c.parentNode.removeChild(c);
+    });
+  });
   TBODY.appendChild(frag);
+  paintPickChip(inside, outside);
 
   el('empty').hidden = inside.length + outside.length > 0;
 
@@ -2718,6 +2860,176 @@ sizeControls();
   paintDetail();
   saveFilters();
 }
+
+/* ---- the game picker ---------------------------------------------------- */
+/** Whether the tray is open. */
+var picking = false;
+/** What is in the tray: DATA indices in the order they were added. A game
+ *  can be in it more than once — two copies on the table is a real answer. */
+var tray = [];
+/** The picks the table is showing, the same shape as the tray, or null for
+ *  the whole collection. Carried in the URL as `sel`, so it can be sent. */
+var chosen = null;
+/** What was applied when the tray was opened, so closing it without "Show
+ *  just these" puts that view back rather than losing it. */
+var chosenBeforePick = null;
+/** Extra rows for repeated picks: DUPS[i][copy]. A row is one element and an
+ *  element can only be in the table once, so the second copy of a game is a
+ *  clone of its row — painted, sorted and expanded like any other. */
+var DUPS = [];
+
+function rowFor(idx, copy, used) {
+  if (!copy) return ROWS[idx];
+  if (!ROWS[idx]) return null;
+  var list = DUPS[idx] || (DUPS[idx] = []);
+  if (!list[copy]) {
+    list[copy] = ROWS[idx].cloneNode(true);
+    list[copy].setAttribute('data-copy', copy);
+  }
+  used.push(list[copy]);
+  return list[copy];
+}
+
+/** Picks are stored and linked by BGG id; anything this collection no longer
+ *  has is dropped rather than shown as the wrong game. */
+function picksToIds(list) {
+  return list.map(function (i) { return DATA[i].id; }).join('~');
+}
+function idsToPicks(text) {
+  var byId = {}, out = [];
+  DATA.forEach(function (g, i) { byId[String(g.id)] = i; });
+  String(text || '').split('~').forEach(function (id) {
+    if (byId[id] !== undefined) out.push(byId[id]);
+  });
+  return out.length ? out : null;
+}
+
+function plural(n, word) { return n + ' ' + word + (n === 1 ? '' : 's'); }
+
+/** The result line says when the table is your picks, how many of them the
+ *  current filters are hiding, and offers the way back out. */
+function paintPickChip(inside, outside) {
+  var chip = el('pickchip');
+  chip.hidden = !chosen;
+  if (!chosen) return;
+  var hidden = chosen.length - inside.length - outside.length;
+  el('picktext').innerHTML = 'Just your ' + plural(chosen.length, 'pick') +
+    (hidden > 0 ? ' <span class="yr">(' + hidden +
+      ' hidden by the search or filters)</span>' : '');
+}
+
+function paintTray() {
+  var list = el('traylist');
+  list.innerHTML = tray.map(function (i, k) {
+    var g = DATA[i];
+    // The cover is embedded once, in the row, rather than shipped twice in
+    // DATA as well; the tray borrows it from there.
+    var img = ROWS[i] && ROWS[i].querySelector('img.thumb');
+    var th = img ? img.getAttribute('src') : '';
+    return '<li data-k="' + k + '">' +
+      '<button type="button" class="trayrm" data-rm="' + k + '" title="Remove ' +
+      esc(g.n) + ' from the picks" aria-label="Remove ' + esc(g.n) +
+      '">&times;</button>' +
+      (th ? '<img alt="" src="' + esc(th) + '">'
+            : '<span class="noimg"></span>') +
+      '<span class="tname">' + esc(g.n) + '</span></li>';
+  }).join('');
+  el('traycount').textContent = tray.length ? plural(tray.length, 'game') : '';
+  el('trayempty').hidden = tray.length > 0;
+  el('trayclear').disabled = !tray.length;
+  el('trayshow').disabled = !tray.length;
+}
+
+/** Open or close the tray. Opening it shows the whole collection to pick
+ *  from, with whatever was applied already in the tray to add to. */
+function setPicking(on) {
+  if (on === picking) return;
+  picking = on;
+  if (on) {
+    chosenBeforePick = chosen;
+    // Picks on screen are what you are editing, whatever an older list in
+    // progress said; with none applied, that list is picked up where it was.
+    if (chosen) tray = chosen.slice();
+    chosen = null;
+  } else {
+    chosen = chosenBeforePick;
+    chosenBeforePick = null;
+  }
+  el('tray').hidden = !on;
+  el('pickbtn').setAttribute('aria-pressed', on ? 'true' : 'false');
+  paintTray();
+  // render() below saves the tray along with the filters.
+  // The page changes width either way, so the columns are fitted again.
+  fitNow();
+  render();
+}
+
+/** Paint the tray and remember it, so a reload keeps a list in progress. */
+function trayChanged() {
+  paintTray();
+  saveFilters();
+}
+
+function addPick(i, btn) {
+  tray.push(i);
+  trayChanged();
+  var last = el('traylist').lastChild;
+  if (last) {
+    last.classList.add('fresh');
+    last.scrollIntoView({ block: 'nearest' });
+    setTimeout(function () { last.classList.remove('fresh'); }, 900);
+  }
+  if (btn) {
+    btn.classList.add('added');
+    setTimeout(function () { btn.classList.remove('added'); }, 600);
+  }
+}
+
+el('pickbtn').addEventListener('click', function (e) {
+  e.stopPropagation();
+  setPicking(!picking);
+});
+el('trayclose').addEventListener('click', function () { setPicking(false); });
+el('traylist').addEventListener('click', function (e) {
+  var rm = e.target.closest('[data-rm]');
+  if (!rm) return;
+  tray.splice(+rm.getAttribute('data-rm'), 1);
+  trayChanged();
+});
+el('trayclear').addEventListener('click', function () {
+  tray = [];
+  trayChanged();
+});
+el('trayshow').addEventListener('click', function () {
+  if (!tray.length) return;
+  chosenBeforePick = tray.slice();
+  // Applying picks is a navigation: back returns to the view you picked from.
+  asOneStep(function () {
+    closeDetail();
+    openId = null;
+    // A fresh look at the picks: the search that found them would otherwise
+    // hide most of them again. The player count and its rule stay, as they
+    // do for a tag — they are what you are usually still holding fixed.
+    var players = F.players.value, mode = F.mode.value;
+    applyDefaults();
+    F.players.value = players;
+    F.mode.value = mode;
+    syncClearQ();
+    syncSelects();
+    refreshTagList();
+    setPicking(false);
+  });
+});
+el('pickedit').addEventListener('click', function () { setPicking(true); });
+el('pickoff').addEventListener('click', function () {
+  asOneStep(function () {
+    chosen = null;
+    render();
+  });
+});
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && picking && !lightbox) setPicking(false);
+});
 
 // Clicking a row opens a panel underneath with everything the columns cannot
 // fit. Built on demand — 242 of these up front would bloat the page.
@@ -3096,6 +3408,12 @@ document.addEventListener('keydown', function (e) {
 });
 
 TBODY.addEventListener('click', function (e) {
+  var add = e.target.closest('[data-add]');
+  if (add) {                                  // into the picker, not open
+    e.stopPropagation();
+    addPick(+add.getAttribute('data-add'), add);
+    return;
+  }
   var shot = e.target.closest('[data-shot]');
   if (shot) {
     e.stopPropagation();
@@ -3380,6 +3698,10 @@ el('reset').addEventListener('click', function () {
   // the link it leaves behind still points at a game.
   closeDetail();
   openId = null;
+  // And the picks: reset means the whole collection again. The tray itself
+  // is kept — it is a list in progress, not a filter.
+  chosen = null;
+  chosenBeforePick = null;
   forgetFilters();
   writeUrl(false);
   syncClearQ();
@@ -3415,6 +3737,8 @@ el('home').addEventListener('click', function (e) {
     if (fitsw) fitsw.checked = false;
     closeDetail();
     openId = null;
+    chosen = null;
+    chosenBeforePick = null;
     forgetFilters();
     syncClearQ();
     syncSelects();
@@ -4345,6 +4669,7 @@ function paintTableClass() {
   // the window width alone — which is right only for the default columns.
   ROOT.className = 'jsfit ' + (n ? '' : 'mode-any ') +
     (ranking ? 'fitrank ' : '') +
+    (picking ? 'picking ' : '') +
     (hasStackedColumn() ? 'stacked ' : '') +
     (ROOT.getAttribute('data-cols') || '');
 }
@@ -4360,9 +4685,14 @@ function applyOrder() {
       if (k) byKey[k] = td;
     });
     colOrder.forEach(function (k) { if (byKey[k]) tr.appendChild(byKey[k]); });
+    // The picker's column is in no order of yours: it is always last.
+    if (byKey.add) tr.appendChild(byKey.add);
   }
   sortRow(document.querySelector('thead tr'));
   ROWS.forEach(function (tr) { if (tr) sortRow(tr); });
+  DUPS.forEach(function (list) {
+    (list || []).forEach(function (tr) { if (tr) sortRow(tr); });
+  });
 }
 
 /** Named column sets.
@@ -4480,6 +4810,8 @@ function markDrop(th, before) {
 
 function wireDrag() {
   [].forEach.call(document.querySelectorAll('thead th'), function (th) {
+    // The picker's column stays put, and nothing lands beyond it.
+    if (th.getAttribute('data-col') === 'add') return;
     th.setAttribute('draggable', 'true');
     th.addEventListener('dragstart', function (e) {
       dragKey = th.getAttribute('data-col');
@@ -4607,7 +4939,10 @@ function saveFilters() {
     window.localStorage.setItem(FILTKEY, JSON.stringify({
       v: vals,
       tags: pickedTags().map(function (i) { return TAGS[i].k + '|' + TAGS[i].n; }),
-      sort: sortKey, desc: sortDesc
+      sort: sortKey, desc: sortDesc,
+      sel: (function (s) { return s ? picksToIds(s) : ''; })(
+        picking ? chosenBeforePick : chosen),
+      tray: picksToIds(tray)
     }));
   } catch (e) { /* storage off: nothing to remember with */ }
   // Replace, never push: this runs on every render, and a history entry per
@@ -4632,6 +4967,7 @@ function loadFilters() {
     }
   }
   if (saved.sort) { sortKey = saved.sort; sortDesc = !!saved.desc; }
+  chosen = saved.sel ? idsToPicks(saved.sel) : null;
   rangeToPlayed();
 }
 
@@ -4683,6 +5019,11 @@ function encodeState() {
   // Ranking decides which rows are in the table at all, so it travels with
   // the view rather than living in this browser's preferences.
   if (ranking) parts.push('rank=1');
+  // The picks, by id and in the order they were picked, repeats included.
+  // While the tray is open the table is the whole collection, but the link
+  // still carries what was applied, so a reload does not lose it.
+  var sel = picking ? chosenBeforePick : chosen;
+  if (sel) parts.push('sel=' + encodeURIComponent(picksToIds(sel)));
   // Last, so a link to a game reads as "this view, this game".
   if (openId != null) parts.push('g=' + encodeURIComponent(openId));
   return parts.join('&');
@@ -4781,6 +5122,7 @@ function readUrl() {
   // A ranked link that says nothing about the sort means the ranking itself:
   // a hand-written #rank=1 should not arrive sorted by BGG rank.
   if (ranking && !got.sort) { sortKey = 'fit'; sortDesc = true; }
+  chosen = got.sel ? idsToPicks(got.sel) : null;
   var fitsw = document.getElementById('fittoggle');
   if (fitsw) fitsw.checked = ranking;
   if (ranking && !colState.fit) {
@@ -4817,6 +5159,15 @@ function applyUrlState() {
     closeDetail();
     applyDefaults();
     openId = null;
+    // A view from history decides the picks too; an open tray closes on it.
+    if (picking) {
+      picking = false;
+      chosenBeforePick = null;
+      el('tray').hidden = true;
+      el('pickbtn').setAttribute('aria-pressed', 'false');
+      fitNow();
+    }
+    chosen = null;
     if (hash) readUrl();
     syncClearQ();
     syncSelects();
@@ -4893,6 +5244,12 @@ applyCols();
 applyDefaults();
 // A link that carries a view wins over what this browser last had open.
 if (!readUrl()) loadFilters();
+// The tray is this browser's list in progress, whatever view the link is.
+try {
+  var savedTray = JSON.parse(window.localStorage.getItem(FILTKEY) || 'null');
+  tray = (savedTray && idsToPicks(savedTray.tray)) || [];
+} catch (e) { tray = []; }
+paintTray();
 // Back and forward. A hash-only history move fires both popstate and
 // hashchange, and an address edited by hand fires only hashchange, so both
 // are wired to the same guarded function rather than either alone.

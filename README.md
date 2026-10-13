@@ -88,6 +88,11 @@ browser:
 - Name search that reaches **past** the current filters, showing what they
   excluded under a divider rather than hiding it
 - Every column sortable
+- A **game picker** for deciding what to play: open it, press *Add →* on any
+  game to drop it into a tray on the right (the same game can go in twice),
+  then *Show just these*. The table becomes those picks, repeats included,
+  and every filter, search and sort keeps working over them. The picks ride
+  in the link as `sel=`, so a shortlist can be bookmarked or sent.
 
 **Click any row** to expand it: gallery images in an inline viewer (arrow keys
 browse), what people say about the game, how you win, how players interact,

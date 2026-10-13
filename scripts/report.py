@@ -1075,6 +1075,12 @@ def rows_html(data, a, tags=()):
             f'<td class="num hide-sm c-ed" data-col="ed">{g.get("ed") or EM_DASH}</td>'
             f'<td class="num hide-sm c-acq" data-col="acq">{g.get("acq") or EM_DASH}</td>'
             f'<td class="num hide-sm c-pp" data-col="pp">{price_html}</td>'
+            # The game picker's drop button. Always last and never in the
+            # column list: it is the picker's, not a fact about the game, and
+            # the stylesheet shows it only while the picker is open.
+            f'<td class="c-add" data-col="add"><button type="button"'
+            f' class="addbtn" data-add="{i}"'
+            f' title="Add {esc(g["n"])} to the picker">Add&nbsp;&rarr;</button></td>'
             f'</tr>')
     shown = sum(1 for o in out if not o.startswith(tuple()) and " hidden>" not in o)
     return "\n".join(out), shown

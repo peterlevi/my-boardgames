@@ -556,19 +556,30 @@ these" clears the search and filters — the search that found the games would
 otherwise hide most of them — but keeps the player count and its rule, as
 clicking a tag does. If those hide a pick, the result line says how many.
 
-## D-30 — The wheel draws first, then spins to the answer
+## D-30 — The wheel draws first, then physics finds a throw that agrees
 
 The wheel of fortune has one equal sector per tray entry, so a game in the
 tray twice has twice the sectors and twice the chance — the tray is already
-the list of weighted options, and the wheel simply shows it. The winner is
-drawn before anything moves, uniformly over the entries, from
-`crypto.getRandomValues` with rejection sampling so the modulo favours no
-entry. The spin is then aimed at a random point well inside that sector
-(15–85% across, never on a line) with five to seven whole turns on top.
-Deriving the winner from wherever an eased animation happened to stop would
-also work, but would make fairness depend on the easing curve and on frame
-timing; this way the animation is only the presentation of a draw that is
-already fair.
+the list of weighted options, and the wheel simply shows it.
+
+It behaves like a physical wheel: friction (a constant part plus one that
+grows with speed), a peg on every sector boundary, and a spring-loaded
+flapper at twelve o'clock. A peg meets a spring that pushes back harder the
+further it bends the flapper; past the tip the flapper lets go. Bending it
+costs energy, so the end is a crawl from peg to peg, and a peg that arrives
+too slowly is pushed back — the wheel rocks backwards into the sector before
+(about a third of spins). The barrier is a share of the sector size, so a
+wheel of thirty sectors is not stopped dead by its own pegs.
+
+Physics decides where a wheel stops, so fairness cannot come from the
+animation. The winner is drawn first, uniformly over the entries, from
+`crypto.getRandomValues` with rejection sampling. The simulation is stepped
+at a fixed 240Hz and is therefore exactly repeatable: a few hundred launch
+speeds are simulated from where the wheel stands (a few milliseconds), one
+of those that genuinely comes to rest on the winner is chosen at random, and
+that run is played back frame by frame. Every bounce on screen is the
+simulation's own; only the strength of the throw was chosen, so the odds are
+one in n per entry whatever the physics does. The throw is also scaled so a
+spin lasts about eight seconds whatever the number of sectors.
 
 With reduced motion the wheel jumps to the result and there is no confetti.
-

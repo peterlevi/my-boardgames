@@ -1311,7 +1311,8 @@ td.c-add { text-align:right; white-space:nowrap; }
 #wheelcanvas { width:100%; height:100%; display:block; }
 /* The pointer at twelve o'clock, pointing into the wheel. */
 .wheelpin { position:absolute; left:50%; top:-6px; width:0; height:0;
-  transform:translateX(-50%); border-left:15px solid transparent;
+  transform:translateX(-50%); transform-origin:50% 0;
+  border-left:15px solid transparent;
   border-right:15px solid transparent; border-top:30px solid var(--ink);
   filter:drop-shadow(0 2px 2px rgba(0,0,0,.3)); }
 .wheelresult { min-height:3.2em; text-align:center; display:flex;
@@ -1830,7 +1831,7 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
       title="Close" aria-label="Close the wheel">&times;</button>
     <div class="wheelbox">
       <canvas id="wheelcanvas" width="520" height="520"></canvas>
-      <span class="wheelpin" aria-hidden="true"></span>
+      <span class="wheelpin" id="wheelpin" aria-hidden="true"></span>
     </div>
     <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
     <div class="wheelbtns">
@@ -3252,22 +3253,35 @@ function drawWheel() {
     ctx.save();
     ctx.translate(cx, cy);
     ctx.rotate(start + a / 2);
-    var fs = Math.max(10, Math.min(22, 300 / n + 6)) * dpr * (css / 480);
+    var fs = Math.max(9, Math.min(15, 160 / n + 6)) * dpr * (css / 480);
     ctx.font = '700 ' + fs + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
     ctx.fillStyle = '#fff';
     ctx.textAlign = 'right';
     ctx.textBaseline = 'middle';
     ctx.shadowColor = 'rgba(0,0,0,.35)';
     ctx.shadowBlur = 3 * dpr;
-    var name = DATA[wheel.entries[i]].n, room = r * 0.72;
+    var name = DATA[wheel.entries[i]].n, room = r * 0.62;
     if (ctx.measureText(name).width > room) {
       while (name.length > 1 && ctx.measureText(name + '…').width > room) {
         name = name.slice(0, -1);
       }
       name = name.replace(/\s+$/, '') + '…';
     }
-    ctx.fillText(name, r - 14 * dpr, 0);
+    ctx.fillText(name, r - 24 * dpr * (css / 480), 0);
     ctx.restore();
+  }
+  // The pegs, one on every boundary, just inside the rim: what the pointer
+  // catches on.
+  var pr = r - 9 * dpr * (css / 480), ps = Math.max(2.5, 4.2 * (css / 480)) * dpr;
+  for (var p = 0; p < n; p++) {
+    var pa = -Math.PI / 2 + p * a + wheel.rot;
+    ctx.beginPath();
+    ctx.arc(cx + pr * Math.cos(pa), cy + pr * Math.sin(pa), ps, 0, 2 * Math.PI);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
+    ctx.lineWidth = 1.5 * dpr;
+    ctx.strokeStyle = '#1b1a17';
+    ctx.stroke();
   }
   // The hub.
   ctx.beginPath();
@@ -3286,39 +3300,126 @@ function reducedMotion() {
 
 function wheelResult(html) { el('wheelresult').innerHTML = html; }
 
+/* ---- the wheel's physics ------------------------------------------------
+   A wheel with a peg at every sector boundary and a spring-loaded flapper at
+   twelve o'clock. Friction slows it (a constant part and one that grows with
+   speed). A peg running into the flapper meets a spring that pushes back
+   harder the further it gets; past the tip the flapper lets go. Bending the
+   flapper costs energy, so the last turns are a crawl from peg to peg — and a
+   peg that arrives too slowly is pushed back, and the wheel rocks backwards
+   into the sector before.
+
+   Units: radians and seconds, the wheel's inertia taken as 1. Stepped at a
+   fixed 240Hz so a run is exactly repeatable — which is what lets the draw
+   stay fair (see spinWheel). */
+var WHEEL_PHYS = { mu: 0.30, c: 0.12, c2: 0.9, e: 0.10, hMax: 0.075 };
+var WHEEL_DT = 1 / 240;
+
+function wheelSim(theta0, omega0, n, record) {
+  var P = WHEEL_PHYS, TAU = 2 * Math.PI, a = TAU / n;
+  // How far either side of the flapper's tip a peg is in contact, and how
+  // much energy it takes to bend it all the way: a share of the sector, so a
+  // wheel of many narrow sectors is not stopped dead by its own pegs.
+  var h = Math.min(0.42 * a, P.hMax), k = 2 * (P.e * a) / (h * h);
+  var th = theta0, w = omega0, t = 0, still = 0, entry = 0, flap = 0;
+  var path = record ? [] : null, flaps = record ? [] : null;
+  while (t < 40) {
+    var u = -th, j = Math.round(u / a), x = u - j * a;
+    var inZone = Math.abs(x) < h, push = 0;
+    var acc = -P.mu * (w > 0 ? 1 : w < 0 ? -1 : 0) - P.c * w;
+    if (inZone) {
+      // V = k/2 (h - |x|)^2 across the tip; x runs against the wheel.
+      push = -k * (h - Math.abs(x)) * (x > 0 ? 1 : -1);
+      acc += push - P.c2 * w;
+      if (!entry) entry = x > 0 ? 1 : -1;
+    } else {
+      entry = 0;
+    }
+    // Static friction: barely moving, and nothing pushing hard enough to
+    // move it, means it has stopped.
+    if (Math.abs(w) < 0.03 && Math.abs(push) < P.mu * 1.2) {
+      w = 0;
+      still += WHEEL_DT;
+      if (still > 0.2) break;
+    } else {
+      still = 0;
+      w += acc * WHEEL_DT;
+      th += w * WHEEL_DT;
+    }
+    if (record) {
+      // The flapper bends while the peg is on the side it came in from, and
+      // springs back, quickly but not instantly, once the peg is past.
+      var bend = inZone && (x > 0 ? 1 : -1) === entry
+        ? (h - Math.abs(x)) / h * entry : 0;
+      flap = Math.abs(bend) >= Math.abs(flap) ? bend : flap * 0.8;
+      path.push(th);
+      flaps.push(flap);
+    }
+    t += WHEEL_DT;
+  }
+  var rest = ((-th) % TAU + TAU) % TAU;
+  return { sector: Math.floor(rest / a) % n, t: t, th: th, path: path, flaps: flaps };
+}
+
+/** Spin. The winner is drawn first, uniformly over the tray's entries. Then
+ *  a few hundred launch speeds are run through the physics from where the
+ *  wheel stands now, and one of those that really does come to rest on the
+ *  winner is chosen at random and played back. Every bounce on screen is the
+ *  simulation's own; the only thing chosen is how hard the wheel was thrown,
+ *  so the odds stay exactly one in n per entry whatever the physics does. */
 function spinWheel() {
   var n = wheel.entries.length;
   if (!n || wheel.anim) return;
-  var win = fairIndex(n), a = 2 * Math.PI / n;
-  // Somewhere inside the sector, never on a line, so nobody has to squint.
-  var f = 0.15 + 0.7 * (fairIndex(1000) / 1000);
-  var TAU = 2 * Math.PI;
-  // The pointer reads the sector at wheel angle (-rot) mod TAU.
-  var target = -(win + f) * a;
-  var delta = ((target - wheel.rot) % TAU + TAU) % TAU;
-  var from = wheel.rot, to = from + delta + TAU * (5 + fairIndex(3));
+  var win = fairIndex(n), TAU = 2 * Math.PI;
+  var from = ((wheel.rot % TAU) + TAU) % TAU;
+  // Aim for about eight seconds whatever the number of sectors: fewer pegs
+  // brake less, so a wheel of four needs a gentler throw than one of thirty.
+  var probe = wheelSim(from, 16, n, false).t;
+  var base = Math.max(6, Math.min(40, 16 * 8 / probe));
+  var hits = [];
+  for (var round = 0; round < 3 && !hits.length; round++) {
+    var lo = base * (0.8 - 0.1 * round), span = base * (0.4 + 0.2 * round);
+    for (var i = 0; i < 360; i++) {
+      var v = lo + span * (i + Math.random()) / 360;
+      if (wheelSim(from, v, n, false).sector === win) hits.push(v);
+    }
+  }
   el('wheelagain').disabled = true;
   wheelResult('<span class="spinning">Spinning…</span>');
+  var run = hits.length ? wheelSim(from, hits[fairIndex(hits.length)], n, true)
+                        : null;
   function done() {
     wheel.anim = null;
-    wheel.rot = to % TAU;
+    setPin(0);
     drawWheel();
     el('wheelagain').disabled = false;
     announceWinner(wheel.entries[win]);
   }
-  if (reducedMotion()) { wheel.rot = to; done(); return; }
-  var t0 = null, dur = 5200;
+  if (!run || reducedMotion()) {
+    // Straight to the answer: the middle of the winning sector.
+    wheel.rot = -(win + 0.5) * TAU / n;
+    done();
+    return;
+  }
+  var t0 = null, last = run.path.length - 1;
   function step(ts) {
     if (!wheel.open) { wheel.anim = null; return; }
     if (t0 === null) t0 = ts;
-    var p = Math.min(1, (ts - t0) / dur);
-    var e = 1 - Math.pow(1 - p, 4);            // ease-out quart
-    wheel.rot = from + (to - from) * e;
+    var idx = Math.min(last, Math.floor((ts - t0) / 1000 / WHEEL_DT));
+    wheel.rot = run.path[idx];
+    setPin(run.flaps[idx]);
     drawWheel();
-    if (p < 1) wheel.anim = requestAnimationFrame(step);
+    if (idx < last) wheel.anim = requestAnimationFrame(step);
     else done();
   }
   wheel.anim = requestAnimationFrame(step);
+}
+
+/** Bend the pointer: a peg moving right along the top pushes its tip right,
+ *  which for a pointer hanging from above is a turn anticlockwise. */
+function setPin(flap) {
+  el('wheelpin').style.transform =
+    'translateX(-50%) rotate(' + (-flap * 24).toFixed(2) + 'deg)';
 }
 
 function announceWinner(i) {

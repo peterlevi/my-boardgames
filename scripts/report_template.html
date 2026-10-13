@@ -1232,15 +1232,21 @@ td.c-add { text-align:right; white-space:nowrap; }
 .trayfoot { padding:12px 16px 16px; border-top:1px solid var(--line);
   display:flex; flex-direction:column; gap:8px; }
 .trayclear, .trayshow { width:100%; font:inherit; font-weight:700;
-  border-radius:9px; cursor:pointer; }
-.trayclear { padding:8px; font-size:.86rem; background:none;
-  border:1px solid var(--line); color:var(--ink); }
+  font-size:.98rem; line-height:1.3; padding:12px; border-radius:9px;
+  border:1px solid var(--line); cursor:pointer; }
+.trayclear { background:none; color:var(--ink); }
 .trayclear:hover { border-color:var(--muted); }
-.trayshow { padding:13px; font-size:1.02rem; border:0;
-  background:var(--accent); color:var(--panel); }
+.trayshow { background:var(--accent); border-color:var(--accent);
+  color:var(--panel); }
 .trayclear:disabled, .trayshow:disabled { opacity:.45; cursor:default; }
 
 /* The applied selection, said in the result line with a way back out. */
+/* On a wide screen it sits at the right end of the line, against the
+   columns button: it is a fact about the table, not a filter description. */
+@media (min-width:701px) {
+  .pickchip { margin-left:auto; align-self:center; }
+  .pickchip:not([hidden]) ~ .colpick { margin-left:12px; }
+}
 .pickchip { display:inline-flex; align-items:center; gap:10px; flex:none;
   white-space:nowrap; background:var(--tray); border-radius:999px;
   padding:3px 6px 3px 12px; font-size:.84rem; line-height:1.4; }

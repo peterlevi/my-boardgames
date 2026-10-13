@@ -1212,7 +1212,9 @@ td.c-add { text-align:right; white-space:nowrap; }
 #trayclose { margin-left:auto; align-self:center; font-size:1.2rem;
   line-height:1; }
 .trayhint { margin:0; padding:0 16px; color:var(--muted); font-size:.84rem; }
-.traylist { list-style:none; margin:0; padding:4px 12px 12px; flex:1 1 auto;
+/* Enough room above the first row that its remove buttons, which stand
+   proud of the tile, are not clipped by the scrolling box. */
+.traylist { list-style:none; margin:0; padding:10px 12px 12px; flex:1 1 auto;
   overflow-y:auto; display:grid; align-content:start; gap:12px 8px;
   grid-template-columns:repeat(auto-fill, minmax(82px, 1fr)); }
 .traylist li { position:relative; text-align:center; font-size:.78rem;
@@ -1224,11 +1226,12 @@ td.c-add { text-align:right; white-space:nowrap; }
   -webkit-box-orient:vertical; overflow:hidden; word-break:break-word; }
 .traylist li.fresh img { box-shadow:0 0 0 3px var(--accent); }
 /* Every tile carries its own way out. */
+/* The same brown and white as "Show just these". */
 .trayrm { position:absolute; top:-6px; right:2px; width:22px; height:22px;
-  border-radius:50%; border:1px solid var(--line); background:var(--panel);
-  color:var(--muted); font-size:.9rem; line-height:1; padding:0;
-  cursor:pointer; }
-.trayrm:hover { color:var(--warn); border-color:var(--warn); }
+  border-radius:50%; border:0; background:var(--accent); color:var(--panel);
+  font-size:.95rem; font-weight:700; line-height:22px; padding:0;
+  cursor:pointer; box-shadow:0 1px 3px rgba(0,0,0,.25); }
+.trayrm:hover { background:var(--ink); }
 .trayfoot { padding:12px 16px 16px; border-top:1px solid var(--line);
   display:flex; flex-direction:column; gap:8px; }
 .trayclear, .trayshow { width:100%; font:inherit; font-weight:700;

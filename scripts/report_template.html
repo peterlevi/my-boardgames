@@ -1206,8 +1206,14 @@ td.c-add { text-align:right; white-space:nowrap; }
 .addbtn.added { background:var(--best-bg); color:var(--best);
   border-color:var(--best); }
 
-:root.picking .wrap { max-width:none; margin:0;
-  padding-right:calc(var(--trayw) + 16px); }
+:root.picking .wrap { max-width:none; margin:0; }
+/* The page scrolls in its own box that stops where the tray starts, so its
+   scrollbar sits against the tray's edge instead of under the tray. */
+@media (min-width:701px) {
+  :root.picking { overflow:hidden; }
+  :root.picking body { position:fixed; top:0; bottom:0; left:0;
+    right:var(--trayw); overflow-y:auto; }
+}
 #tray { position:fixed; top:0; right:0; bottom:0; width:var(--trayw);
   z-index:25; background:var(--tray); border-left:1px solid var(--line);
   display:flex; flex-direction:column; }
@@ -1273,7 +1279,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 @media (max-width:700px) {
   /* No room for a column beside the cards: the tray is a sheet along the
      bottom instead, and the cards keep the full width above it. */
-  :root.picking .wrap { padding-right:16px; padding-bottom:52vh; }
+  :root.picking .wrap { padding-bottom:52vh; }
   #tray { top:auto; left:0; width:auto; height:46vh; border-left:0;
     border-top:1px solid var(--line); box-shadow:0 -8px 24px rgba(0,0,0,.12); }
   /* In the card's top-right corner, where the cover and the ratings leave
@@ -2907,9 +2913,6 @@ var tray = [];
 /** The picks the table is showing, the same shape as the tray, or null for
  *  the whole collection. Carried in the URL as `sel`, so it can be sent. */
 var chosen = null;
-/** What was applied when the tray was opened, so closing it without "Show
- *  just these" puts that view back rather than losing it. */
-var chosenBeforePick = null;
 /** Extra rows for repeated picks: DUPS[i][copy]. A row is one element and an
  *  element can only be in the table once, so the second copy of a game is a
  *  clone of its row — painted, sorted and expanded like any other. */
@@ -3001,28 +3004,26 @@ function paintTray() {
   el('trayshow').disabled = !tray.length;
 }
 
-/** Open or close the tray. Opening it shows the whole collection to pick
- *  from, with whatever was applied already in the tray to add to. */
+/** Open or close the tray. The table stays exactly as it is either way —
+ *  picks applied stay applied, and the chip's × is how you get back to the
+ *  whole collection. Opening the tray over applied picks loads them into it
+ *  to edit; with none applied, an older list in progress is picked up where
+ *  it was left. */
 function setPicking(on) {
   if (on === picking) return;
   picking = on;
-  if (on) {
-    chosenBeforePick = chosen;
-    // Picks on screen are what you are editing, whatever an older list in
-    // progress said; with none applied, that list is picked up where it was.
-    if (chosen) tray = chosen.slice();
-    chosen = null;
-  } else {
-    chosen = chosenBeforePick;
-    chosenBeforePick = null;
-  }
+  if (on && chosen) tray = chosen.slice();
   el('tray').hidden = !on;
   el('pickbtn').setAttribute('aria-pressed', on ? 'true' : 'false');
   paintTray();
   // render() below saves the tray along with the filters.
-  // The page changes width either way, so the columns are fitted again.
+  // The page changes width either way, so the columns are fitted again —
+  // and the scrolling moves between the window and the body, so the place
+  // you were reading is carried across.
+  var y = pageY();
   fitNow();
   render();
+  setPageY(y);
 }
 
 /** Paint the tray and remember it, so a reload keeps a list in progress. */
@@ -3072,7 +3073,6 @@ el('trayclear').addEventListener('click', function () {
 });
 el('trayshow').addEventListener('click', function () {
   if (!tray.length) return;
-  chosenBeforePick = tray.slice();
   // Applying picks is a navigation: back returns to the view you picked from.
   asOneStep(function () {
     closeDetail();
@@ -3087,7 +3087,9 @@ el('trayshow').addEventListener('click', function () {
     syncClearQ();
     syncSelects();
     refreshTagList();
-    setPicking(false);
+    chosen = tray.slice();
+    // setPicking renders; with the tray already shut, render here instead.
+    if (picking) setPicking(false); else render();
   });
 });
 el('pickedit').addEventListener('click', function () { setPicking(true); });
@@ -3592,15 +3594,29 @@ function headerPad() {
  *  browser picks and stretches with distance — expanding a row near the bottom
  *  of a long list crawled. Fixed 260ms keeps it quick from anywhere. */
 var scrollAnim = null;
+/** What scrolls the page: the window, or — while the picker is open on a wide
+ *  screen — the body, which then stops at the tray's edge. */
+function bodyScrolls() {
+  return window.getComputedStyle(document.body).position === 'fixed';
+}
+function pageY() {
+  return bodyScrolls() ? document.body.scrollTop : window.pageYOffset;
+}
+function setPageY(y) {
+  if (bodyScrolls()) document.body.scrollTop = y;
+  else window.scrollTo(0, y);
+}
+
 function smoothScrollTo(y) {
-  var max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+  var box = bodyScrolls() ? document.body : document.documentElement;
+  var max = Math.max(0, box.scrollHeight - box.clientHeight);
   y = Math.max(0, Math.min(y, max));
-  var start = window.pageYOffset, delta = y - start;
+  var start = pageY(), delta = y - start;
   if (scrollAnim) { cancelAnimationFrame(scrollAnim); scrollAnim = null; }
   var reduce = window.matchMedia &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce || Math.abs(delta) < 2 || !window.requestAnimationFrame) {
-    window.scrollTo(0, y);
+    setPageY(y);
     return;
   }
   var t0 = null;
@@ -3608,7 +3624,7 @@ function smoothScrollTo(y) {
     if (t0 === null) t0 = ts;
     var p = Math.min(1, (ts - t0) / 260);
     var e = 1 - Math.pow(1 - p, 3);            // ease-out cubic
-    window.scrollTo(0, start + delta * e);
+    setPageY(start + delta * e);
     scrollAnim = p < 1 ? requestAnimationFrame(step) : null;
   }
   scrollAnim = requestAnimationFrame(step);
@@ -3617,7 +3633,7 @@ function smoothScrollTo(y) {
 /** Bring a just-expanded row to the top so its panel is what you are looking
  *  at, its top edge flush against the bottom of the header row. */
 function scrollRowToTop(tr) {
-  smoothScrollTo(window.pageYOffset + tr.getBoundingClientRect().top - headerPad());
+  smoothScrollTo(pageY() + tr.getBoundingClientRect().top - headerPad());
 }
 
 [].forEach.call(document.querySelectorAll('th[data-k]'), function (th) {
@@ -3771,7 +3787,6 @@ el('reset').addEventListener('click', function () {
   // And the picks: reset means the whole collection again. The tray itself
   // is kept — it is a list in progress, not a filter.
   chosen = null;
-  chosenBeforePick = null;
   forgetFilters();
   writeUrl(false);
   syncClearQ();
@@ -3808,7 +3823,6 @@ el('home').addEventListener('click', function (e) {
     closeDetail();
     openId = null;
     chosen = null;
-    chosenBeforePick = null;
     forgetFilters();
     syncClearQ();
     syncSelects();
@@ -5010,8 +5024,7 @@ function saveFilters() {
       v: vals,
       tags: pickedTags().map(function (i) { return TAGS[i].k + '|' + TAGS[i].n; }),
       sort: sortKey, desc: sortDesc,
-      sel: (function (s) { return s ? picksToIds(s) : ''; })(
-        picking ? chosenBeforePick : chosen),
+      sel: chosen ? picksToIds(chosen) : '',
       tray: picksToIds(tray)
     }));
   } catch (e) { /* storage off: nothing to remember with */ }
@@ -5090,10 +5103,7 @@ function encodeState() {
   // the view rather than living in this browser's preferences.
   if (ranking) parts.push('rank=1');
   // The picks, by id and in the order they were picked, repeats included.
-  // While the tray is open the table is the whole collection, but the link
-  // still carries what was applied, so a reload does not lose it.
-  var sel = picking ? chosenBeforePick : chosen;
-  if (sel) parts.push('sel=' + encodeURIComponent(picksToIds(sel)));
+  if (chosen) parts.push('sel=' + encodeURIComponent(picksToIds(chosen)));
   // Last, so a link to a game reads as "this view, this game".
   if (openId != null) parts.push('g=' + encodeURIComponent(openId));
   return parts.join('&');
@@ -5232,7 +5242,6 @@ function applyUrlState() {
     // A view from history decides the picks too; an open tray closes on it.
     if (picking) {
       picking = false;
-      chosenBeforePick = null;
       el('tray').hidden = true;
       el('pickbtn').setAttribute('aria-pressed', 'false');
       fitNow();

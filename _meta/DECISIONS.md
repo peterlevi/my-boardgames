@@ -537,14 +537,18 @@ from the table when no longer wanted. `applyOrder()` sorts the clones too.
 The *Add →* column is the picker's, not the reader's: it is absent from the
 column list, cannot be dragged, always sorts to the end of a row, and the
 stylesheet shows it only while the tray is open. Opening the tray lets go
-of the 1280px page width so the table slides left rather than ending up
-under the tray; on a phone the tray is a bottom sheet instead.
+of the 1280px page width, and on a wide screen the body becomes the scroll
+container, stopping at the tray's edge — with the window scrolling, the
+page's scrollbar sat under the tray. The few places that scroll the page go
+through `pageY()`/`setPageY()` for that reason. On a phone the tray is a
+bottom sheet instead and the window scrolls as usual.
 
 The picks travel in the URL (`sel=`, BGG ids, `~`-separated, in pick order)
 so a shortlist can be sent. The tray in progress is a per-browser
-convenience and lives in localStorage only. Opening the picker while picks
-are applied loads those picks into the tray to edit; closing it without
-*Show just these* puts the applied picks back as they were. "Show just
+convenience and lives in localStorage only. Opening or closing the tray never
+changes what the table shows: applied picks stay applied (the chip's × is the
+way back to the whole collection), and opening the tray over them loads them
+into it to edit. "Show just
 these" clears the search and filters — the search that found the games would
 otherwise hide most of them — but keeps the player count and its rule, as
 clicking a tag does. If those hide a pick, the result line says how many.

@@ -1358,8 +1358,12 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelsnd[aria-pressed="false"] .on { display:none; }
 .wheelsnd[aria-pressed="false"] .off { display:inline; }
 .wheelsnd[aria-pressed="false"] { color:var(--warn); }
-.wheelbox { position:relative; width:min(480px, 72vmin);
-  aspect-ratio:42 / 47; }
+.wheelbox { position:relative; aspect-ratio:42 / 47;
+  /* As wide as fits, and never so tall that the card needs a scrollbar: the
+     rows under the wheel (result, seed, link, buttons) and the card's
+     padding take about 300px of the window's height. */
+  width:min(480px, 72vmin, calc((100vh - 300px) * 42 / 47));
+  width:min(480px, 72vmin, calc((100dvh - 300px) * 42 / 47)); }
 #wheelcanvas { width:100%; height:100%; display:block; }
 .wheelresult { min-height:3.2em; text-align:center; display:flex;
   align-items:center; justify-content:center; gap:12px; }

@@ -561,9 +561,12 @@ clicking a tag does. If those hide a pick, the result line says how many.
 The wheel of fortune has one equal sector per tray entry, so a game in the
 tray twice has twice the sectors and twice the chance — the tray is already
 the list of weighted options, and the wheel simply shows it. Tray entries
-can also be added by name — one of your games, from an autocomplete with
-covers, or any text at all; text entries spin with the rest but cannot be
-shown in the table. They can be renamed in place (kept with the tray in localStorage until it is
+can also be added from the "Search and add" field at the top of the tray —
+one of your games, from an autocomplete with covers, or any text at all;
+text entries spin with the rest but cannot be shown in the table. A query
+that only partly matches a game, from its front or its back ("Brass - vitan",
+"Vitan: Brass"), offers every game that part matches, added under the whole
+text as its name. They can be renamed in place (kept with the tray in localStorage until it is
 cleared, never in the URL), and the wheel shows and announces those names.
 
 It is a simulated physical wheel, not an eased animation. The wheel turns
@@ -598,6 +601,20 @@ pegs that really fought the flapper score high when one barely got through
 back. Every bounce on screen is the simulation's own; only the throw was
 chosen, and choosing it never changes which entry wins. Throws are taken
 from the friction law itself — a wheel thrown at v stops after about
-ln(1 + c·v/μ)/c seconds — so spins last eighteen to twenty-two seconds.
+ln(1 + c·v/μ)/c seconds — so spins last seventeen to twenty-one seconds,
+starting at under two turns a second.
+
+A spin is fully determined by the entries, the wheel's starting angle and
+the throw, and the simulation uses only arithmetic that is the same on every
+run (the one table built with sin and cos is rounded to 1e-7 so last-digit
+differences between engines cannot reach it). So the three ride in the URL
+as `spin=` while the wheel is open, and the wheel shows that link: opening
+it shows the same wheel, ready to play (sound needs a click first), and
+plays the identical spin — every bounce, the same winner. Clacks are played
+from the animation frame that shows a peg slipping out from under the stick,
+at most one per 40ms, so every sound you hear lines up with a peg you see.
+
+With 24 sectors or fewer, each carries its game's cover in a small circle at
+the rim end, turned so its top faces outward.
 
 With reduced motion the wheel jumps to the result and there is no confetti.

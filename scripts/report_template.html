@@ -1260,19 +1260,16 @@ td.c-add { text-align:right; white-space:nowrap; }
   box-shadow:0 0 0 3px var(--accent); }
 .traylist .noimg { display:flex; align-items:center; justify-content:center;
   font-size:2rem; font-weight:700; color:var(--muted); }
-/* The tile that adds by name: an empty square with a plus in it. */
-.trayaddbtn { display:block; width:100%; background:none; border:0; padding:0;
-  font:inherit; color:var(--muted); cursor:pointer; text-align:center; }
-.trayaddbtn .plus { display:flex; align-items:center; justify-content:center;
-  width:72px; height:72px; margin:0 auto 5px; border-radius:9px;
-  border:2px dashed var(--muted); opacity:.75; }
-.trayaddbtn:hover .plus { opacity:1; color:var(--ink); border-color:var(--ink); }
-.trayaddbtn .tname { cursor:pointer; font-weight:700; box-shadow:none; }
-.trayadd { padding:0 12px 10px; position:relative; }
+/* Search and add, always there at the top of the tray. Its suggestions float
+   over the tiles rather than pushing them down. */
+.trayadd { padding:0 12px 10px; position:relative; z-index:2; flex:none; }
 .trayadd input { width:100%; font:inherit; font-size:.92rem; padding:8px 10px;
-  border:1.5px solid var(--accent); border-radius:8px; background:var(--panel);
+  border:1px solid var(--line); border-radius:8px; background:var(--panel);
   color:var(--ink); outline:none; }
-.trayaddlist { list-style:none; margin:6px 0 0; padding:4px; border-radius:8px;
+.trayadd input:focus { border-color:var(--accent);
+  box-shadow:0 0 0 1px var(--accent); }
+.trayaddlist { position:absolute; left:12px; right:12px; top:100%;
+  list-style:none; margin:-4px 0 0; padding:4px; border-radius:8px;
   background:var(--panel); border:1px solid var(--line);
   box-shadow:0 8px 22px rgba(0,0,0,.12); max-height:300px; overflow-y:auto; }
 .trayaddlist:empty { display:none; }
@@ -1284,6 +1281,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 .trayaddlist .ph { display:flex; align-items:center; justify-content:center;
   color:var(--muted); font-weight:700; }
 .trayaddlist .free { color:var(--muted); }
+.trayaddlist .as { color:var(--muted); }
 .trayaddlist .free b { color:var(--ink); }
 /* Every tile carries its own way out. */
 /* White on black in either theme: it sits on a cover, and a cover can be
@@ -1353,6 +1351,16 @@ td.c-add { text-align:right; white-space:nowrap; }
   text-align:left; }
 .wheelresult .spinning { color:var(--muted); font-size:.95rem; }
 .wheelbtns { display:flex; gap:10px; width:100%; }
+/* The link that replays this exact spin. */
+.wheellink { display:flex; align-items:center; gap:10px; width:100%;
+  align-self:stretch; font-size:.8rem; }
+.wheellink input { flex:1 1 0; width:auto; min-width:0; font:inherit; font-size:.78rem;
+  color:var(--muted); background:var(--bg); border:1px solid var(--line);
+  border-radius:6px; padding:5px 8px; }
+/* flex:none — the phone layout gives every link button a row of its own,
+   which here squeezed the field down to a sliver. */
+.wheellink button.link { flex:none; padding:0; align-self:center;
+  font-weight:700; font-size:.82rem; white-space:nowrap; }
 .wheelbtns button { flex:1 1 0; }
 #confetti { position:fixed; inset:0; width:100vw; height:100vh;
   z-index:70; pointer-events:none; display:none; }
@@ -1835,10 +1843,10 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
     ><button type="button" class="iconbtn" id="trayclose"
       title="Close the picker" aria-label="Close the picker">&times;</button></div>
   <!-- Adding by name: one of your games, with its cover, or anything else. -->
-  <div class="trayadd" id="trayadd" hidden>
+  <div class="trayadd" id="trayadd">
     <input id="trayaddq" type="text" autocomplete="off" spellcheck="false"
-      placeholder="A game, or anything at all…" aria-label="Add by name"
-      aria-controls="trayaddlist">
+      placeholder="Search and add…" aria-label="Search your games, or type
+      anything, and add it" aria-controls="trayaddlist">
     <ul class="trayaddlist" id="trayaddlist" role="listbox"></ul>
   </div>
   <p class="trayhint" id="trayempty">Press <b>Add&nbsp;&rarr;</b> on a game to
@@ -1868,6 +1876,10 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
       <canvas id="wheelcanvas" width="480" height="526"></canvas>
     </div>
     <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
+    <div class="wheellink" id="wheellink" hidden>
+      <input id="wheellinkurl" readonly aria-label="Link to this spin">
+      <button type="button" class="link" id="wheellinkcopy">Copy link</button>
+    </div>
     <div class="wheelbtns">
       <button type="button" class="trayclear" id="wheelagain">Spin again</button>
       <button type="button" class="trayshow" id="wheeldone">Close</button>
@@ -3133,14 +3145,7 @@ function paintTray() {
       '" title="' + (trayNames[k] ? 'Renamed from ' + esc(own) + ' — click to edit'
                                     : 'Click to rename') + '">' +
       esc(trayLabel(k)) + '</span></li>';
-  }).join('') +
-    // Always last: a game by name, or anything that is not a game at all.
-    '<li class="trayaddtile"><button type="button" class="trayaddbtn"' +
-    ' title="Add a game, or anything else, by name">' +
-    '<span class="plus" aria-hidden="true"><svg viewBox="0 0 16 16" width="26"' +
-    ' height="26"><path fill="currentColor" d="M7.1 2h1.8v5.1H14v1.8H8.9V14H7.1' +
-    'V8.9H2V7.1h5.1z"/></svg></span><span class="tname">Add manually…</span>' +
-    '</button></li>';
+  }).join('');
   el('traycount').textContent = tray.length ? plural(tray.length, 'game') : '';
   el('trayempty').hidden = tray.length > 0;
   el('trayclear').disabled = !tray.length;
@@ -3262,48 +3267,75 @@ el('traylist').addEventListener('paste', function (e) {
 });
 /* ---- adding by name ---------------------------------------------------- */
 var addSel = 0, addItems = [];
-function openAdd() {
-  el('trayadd').hidden = false;
-  el('trayaddq').value = '';
-  paintAdd();
-  el('trayaddq').focus();
-}
 function closeAdd() {
-  el('trayadd').hidden = true;
   addItems = [];
+  el('trayaddlist').innerHTML = '';
 }
-/** Your games that match every word typed, best first — names that start
- *  with it, then by BGG rank — and, always last, what you typed as it is. */
+/** Your games that match what you typed, and, always last, what you typed as
+ *  it is. A game matches on every word — or on the words at the start, or at
+ *  the end, with the rest a label of yours: "Brass - vitan" and "Vitan: Brass"
+ *  both offer every Brass, added under the name you typed. Full matches come
+ *  first, then those that matched more words, then names that start with it,
+ *  then by BGG rank. */
 function paintAdd() {
   var q = el('trayaddq').value.trim();
-  var words = deaccent(q.toLowerCase()).split(/\s+/).filter(Boolean);
+  var words = deaccent(q.toLowerCase()).split(/\s+/).map(function (w) {
+    return w.replace(/[^a-z0-9]+/g, '');
+  }).filter(Boolean);
   var hits = [];
   if (words.length) {
     DATA.forEach(function (g, i) {
       var name = deaccent(g.n.toLowerCase());
-      for (var w = 0; w < words.length; w++) if (name.indexOf(words[w]) < 0) return;
-      hits.push({ i: i, starts: name.indexOf(words[0]) === 0 ? 0 : 1,
-                  rk: g.rk || 1e9 });
+      var has = function (w) { return name.indexOf(w) >= 0; };
+      var all = words.every(has), k = words.length;
+      if (!all) {
+        // The longest run of words, from the front or from the back, that
+        // all land in the name — and enough of it to mean something.
+        var front = 0, back = 0;
+        while (front < words.length && has(words[front])) front++;
+        while (back < words.length && has(words[words.length - 1 - back])) back++;
+        var part = front >= back ? words.slice(0, front) : words.slice(words.length - back);
+        k = part.length;
+        if (!k || part.join('').length < 3) return;
+      }
+      hits.push({ i: i, all: all ? 0 : 1, k: k,
+                  starts: name.indexOf(words[0]) === 0 ? 0 : 1, rk: g.rk || 1e9 });
     });
-    hits.sort(function (a, b) { return a.starts - b.starts || a.rk - b.rk; });
+    hits.sort(function (a, b) {
+      return a.all - b.all || b.k - a.k || a.starts - b.starts || a.rk - b.rk;
+    });
   }
-  addItems = hits.slice(0, 7).map(function (h) { return h.i; });
+  // A game matched on only some of the words carries what you typed as its
+  // name on the wheel.
+  addItems = hits.slice(0, 7).map(function (h) {
+    return h.all ? { i: h.i, label: q } : { i: h.i };
+  });
   if (q) addItems.push({ t: q });
   addSel = Math.min(addSel, Math.max(0, addItems.length - 1));
   el('trayaddlist').innerHTML = addItems.map(function (e, k) {
     var th = coverOf(e);
+    if (e.t !== undefined) {
+      return '<li role="option" data-a="' + k + '"' + (k === addSel ? ' class="on"' : '') +
+        '><span class="ph">+</span><span class="free">Add <b>“' + esc(e.t) +
+        '”</b> as it is</span></li>';
+    }
+    th = coverOf(e.i);
     return '<li role="option" data-a="' + k + '"' + (k === addSel ? ' class="on"' : '') + '>' +
-      (isFree(e)
-        ? '<span class="ph">+</span><span class="free">Add <b>“' + esc(e.t) +
-          '”</b> as it is</span>'
-        : (th ? '<img alt="" src="' + esc(th) + '">' : '<span class="ph"></span>') +
-          '<span>' + esc(DATA[e].n) + '</span>') + '</li>';
+      (th ? '<img alt="" src="' + esc(th) + '">' : '<span class="ph"></span>') +
+      '<span>' + esc(DATA[e.i].n) +
+      (e.label ? ' <span class="as">as “' + esc(e.label) + '”</span>' : '') +
+      '</span></li>';
   }).join('');
 }
 function chooseAdd(k) {
   var e = addItems[k];
   if (e === undefined) return;
-  tray.push(isFree(e) ? { t: e.t } : e);
+  if (e.t !== undefined) {
+    tray.push({ t: e.t });
+  } else {
+    tray.push(e.i);
+    trayNames[tray.length - 1] = e.label && e.label !== DATA[e.i].n ? e.label : null;
+  }
   trayChanged();
   var last = el('traylist').querySelector('li[data-k="' + (tray.length - 1) + '"]');
   if (last) {
@@ -3317,15 +3349,17 @@ function chooseAdd(k) {
   paintAdd();
   el('trayaddq').focus();
 }
-el('traylist').addEventListener('click', function (e) {
-  if (e.target.closest('.trayaddbtn')) openAdd();
-});
 el('trayaddq').addEventListener('input', function () { addSel = 0; paintAdd(); });
 el('trayaddq').addEventListener('keydown', function (e) {
   if (e.key === 'ArrowDown') { addSel = Math.min(addItems.length - 1, addSel + 1); paintAdd(); e.preventDefault(); }
   else if (e.key === 'ArrowUp') { addSel = Math.max(0, addSel - 1); paintAdd(); e.preventDefault(); }
   else if (e.key === 'Enter') { e.preventDefault(); chooseAdd(addSel); }
-  else if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); closeAdd(); }
+  else if (e.key === 'Escape') {
+    e.preventDefault();
+    e.stopPropagation();
+    el('trayaddq').value = '';
+    closeAdd();
+  }
 });
 // Choosing with the mouse must not blur the field first.
 el('trayaddlist').addEventListener('mousedown', function (e) { e.preventDefault(); });
@@ -3333,10 +3367,14 @@ el('trayaddlist').addEventListener('click', function (e) {
   var li = e.target.closest('[data-a]');
   if (li) chooseAdd(+li.getAttribute('data-a'));
 });
+// The suggestions go when the field is left, and come back with it.
 el('trayaddq').addEventListener('blur', function () {
   setTimeout(function () {
     if (document.activeElement !== el('trayaddq')) closeAdd();
   }, 150);
+});
+el('trayaddq').addEventListener('focus', function () {
+  if (el('trayaddq').value.trim()) paintAdd();
 });
 
 el('trayclear').addEventListener('click', function () {
@@ -3446,14 +3484,20 @@ function drawWheel() {
     ctx.textBaseline = 'middle';
     ctx.shadowColor = 'rgba(0,0,0,.35)';
     ctx.shadowBlur = 3 * dpr;
-    var name = wheel.labels[i], room = R * 0.6;
+    // With room for it, the game's cover in a small circle at the outer end
+    // of its sector, its top towards the rim, turning with the wheel.
+    var thumbs = n <= 24, tc = R * 0.855;
+    var td = Math.min(0.13 * R, 2 * tc * Math.sin(a / 2) * 0.78);
+    var textEnd = thumbs ? tc - td / 2 - 7 * k : R - 26 * k;
+    var name = wheel.labels[i], room = textEnd - R * 0.14;
     if (ctx.measureText(name).width > room) {
       while (name.length > 1 && ctx.measureText(name + '…').width > room) {
         name = name.slice(0, -1);
       }
       name = name.replace(/\s+$/, '') + '…';
     }
-    ctx.fillText(name, R - 26 * k, 0);
+    ctx.fillText(name, textEnd, 0);
+    if (thumbs) wheelThumb(ctx, wheel.entries[i], wheel.labels[i], tc, td, dpr);
     ctx.restore();
   }
   // The rim.
@@ -3532,6 +3576,56 @@ function drawFlapper(ctx, cx, cy, R, dpr) {
   ctx.restore();
 }
 
+/* The covers as images the canvas can draw, made once from the rows' own
+   embedded thumbnails; the wheel is redrawn as each one becomes ready. */
+var wheelImgs = {};
+function wheelImg(e) {
+  if (isFree(e)) return null;
+  var im = wheelImgs[e];
+  if (!im) {
+    im = wheelImgs[e] = new Image();
+    im.onload = function () { if (wheel.open && !wheel.anim) drawWheel(); };
+    im.src = coverOf(e);
+  }
+  return im.complete && im.naturalWidth ? im : null;
+}
+
+/** One cover, in the sector's own frame (x out along the radius): a circle
+ *  centred at x, cropped from the middle of the cover, turned so its top
+ *  faces the rim. Something added by hand gets its initial instead. */
+function wheelThumb(ctx, e, label, x, d, dpr) {
+  ctx.save();
+  ctx.shadowColor = 'transparent';
+  ctx.translate(x, 0);
+  ctx.rotate(Math.PI / 2);
+  ctx.beginPath();
+  ctx.arc(0, 0, d / 2, 0, 2 * Math.PI);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(255,255,255,.92)';
+  ctx.fill();
+  var im = wheelImg(e);
+  if (im) {
+    ctx.save();
+    ctx.clip();
+    var s = Math.min(im.naturalWidth, im.naturalHeight);
+    ctx.drawImage(im, (im.naturalWidth - s) / 2, (im.naturalHeight - s) / 2, s, s,
+                  -d / 2, -d / 2, d, d);
+    ctx.restore();
+  } else if (isFree(e)) {
+    ctx.fillStyle = '#6b6862';
+    ctx.font = '700 ' + (d * 0.5) + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(String(label || '?').charAt(0).toUpperCase(), 0, d * 0.03);
+  }
+  ctx.beginPath();
+  ctx.arc(0, 0, d / 2, 0, 2 * Math.PI);
+  ctx.lineWidth = 1.6 * dpr;
+  ctx.strokeStyle = 'rgba(255,255,255,.95)';
+  ctx.stroke();
+  ctx.restore();
+}
+
 function reducedMotion() {
   return window.matchMedia &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -3559,7 +3653,7 @@ function wheelResult(html) { el('wheelresult').innerHTML = html; }
    is exactly repeatable. */
 var WHEEL_G = { rp: 0.99, pr: 0.016, tw: 0.010, Ls: 0.15 };
 WHEEL_G.py = WHEEL_G.rp + 0.006 + WHEEL_G.Ls;   // the tip rests just above the pegs
-var WHEEL_P = { mu: 0.25, c: 0.15, kappa: 0.10, wf: 2 * Math.PI * 30,
+var WHEEL_P = { mu: 0.3, c: 0.06, kappa: 0.10, wf: 2 * Math.PI * 30,
                 zeta: 0.2 };
 var WHEEL_DT = 1 / 240;
 
@@ -3591,7 +3685,9 @@ var WHEEL_LIFT = (function () {
     }
     if (IN === null && lift > 0) IN = ph;
     if (IN !== null && REL === null && lift === 0) REL = ph;
-    tab[i] = REL === null ? lift : 0;
+    // Rounded, so the last-digit differences one browser's sin and cos may
+    // have from another's cannot change a replayed spin (see spinLink).
+    tab[i] = REL === null ? Math.round(lift * 1e7) / 1e7 : 0;
   }
   var at = function (ph) {
     if (ph <= IN || ph >= REL) return 0;
@@ -3712,14 +3808,14 @@ function spinWheel() {
   wheel.searching = true;
   // Let the button and the line above paint before the search runs.
   setTimeout(function () {
-    // Throws for an eighteen-to-twenty-two-second spin. With a drag that
+    // Throws for a seventeen-to-twenty-one-second spin. With a drag that
     // grows with speed and a constant one, a wheel thrown at v stops after
     // ln(1 + c v / mu) / c seconds, near enough — the pegs take a little off.
     var P = WHEEL_P;
     var throwFor = function (secs) { return P.mu / P.c * (Math.exp(P.c * secs) - 1); };
     var best = null, bestScore = -1;
     for (var round = 0; round < 3 && !best; round++) {
-      var lo = throwFor(18 - 2 * round), span = throwFor(22 + 2 * round) - lo;
+      var lo = throwFor(17 - 2 * round), span = throwFor(21 + 2 * round) - lo;
       for (var i = 0; i < 120; i++) {
         var v = lo + span * (i + Math.random()) / 120;
         var r = wheelSim(from, v, n, false);
@@ -3730,12 +3826,79 @@ function spinWheel() {
     }
     wheel.searching = false;
     if (!wheel.open) return;
-    playSpin(best === null ? null : wheelSim(from, best, n, true), win);
+    if (best === null) { playSpin(null, win); return; }
+    setSpinLink(from, best);
+    playSpin(wheelSim(from, best, n, true), win);
   }, 30);
+}
+
+/* ---- a spin you can send ------------------------------------------------
+   A spin is fully decided by the entries, where the wheel stood and how hard
+   it was thrown: the simulation uses nothing but arithmetic that comes out
+   the same every time, so those three replay it exactly — every bounce, every
+   clack, the same winner. They ride in the address as `spin=` while the
+   wheel is open, and the wheel shows the link. */
+function setSpinLink(from, v) {
+  wheel.link = encodeURIComponent(JSON.stringify({
+    e: wheel.entries.map(function (e) { return isFree(e) ? { t: e.t } : DATA[e].id; }),
+    l: wheel.entries.map(function (e, k) {
+      return wheel.labels[k] !== entryName(e) ? wheel.labels[k] : 0;
+    }),
+    r: from,
+    v: v
+  }));
+  writeUrl(false);
+  el('wheellinkurl').value = location.href;
+  el('wheellink').hidden = false;
+}
+
+function readSpinLink(text) {
+  try {
+    var o = JSON.parse(decodeURIComponent(text));
+    if (!o || !o.e || !o.e.length || typeof o.r !== 'number' || typeof o.v !== 'number') return null;
+    var byId = {};
+    DATA.forEach(function (g, i) { byId[String(g.id)] = i; });
+    var entries = [], labels = [];
+    o.e.forEach(function (it, k) {
+      var lab = (o.l || [])[k] || null;
+      var e = it && typeof it === 'object' ? { t: String(it.t || '') }
+            : byId[String(it)] !== undefined ? byId[String(it)]
+            : { t: lab || 'A game no longer here' };
+      entries.push(e);
+      labels.push(lab || entryName(e));
+    });
+    return { entries: entries, labels: labels, r: o.r, v: o.v, raw: text };
+  } catch (e) { return null; }
+}
+
+/** Open the wheel on a sent spin, ready to play it: the sound needs a click
+ *  of yours before a page may make any. */
+function openReplay(spin) {
+  wheelSound();
+  wheel.entries = spin.entries;
+  wheel.labels = spin.labels;
+  wheel.rot = spin.r;
+  wheel.psi = 0;
+  wheel.replay = spin;
+  wheel.link = spin.raw;
+  wheel.open = true;
+  // The first render has already rewritten the address without it.
+  writeUrl(false);
+  el('wheel').hidden = false;
+  el('wheelagain').disabled = false;
+  el('wheelagain').textContent = 'Play this spin';
+  el('wheellinkurl').value = location.href;
+  el('wheellink').hidden = false;
+  wheelResult('<span class="spinning">A spin someone sent: press play.</span>');
+  drawWheel();
+  el('wheelagain').focus();
 }
 
 function playSpin(run, win) {
   var TAU = 2 * Math.PI, n = wheel.entries.length;
+  // The run's own answer, which for a fresh spin is the one drawn and for a
+  // sent one is the one it always comes to.
+  if (run) win = run.sector;
   function done() {
     wheel.anim = null;
     wheel.psi = 0;
@@ -3749,20 +3912,24 @@ function playSpin(run, win) {
     done();
     return;
   }
-  var t0 = null, last = run.path.length - 1, ci = 0, ac = wheelAudio, a0 = 0;
+  var t0 = null, last = run.path.length - 1, ci = 0, lastClack = -1;
   function step(ts) {
     if (!wheel.open) { wheel.anim = null; return; }
-    if (t0 === null) {
-      t0 = ts;
-      a0 = ac ? ac.currentTime + 0.05 : 0;
-    }
+    if (t0 === null) t0 = ts;
     var el_s = (ts - t0) / 1000;
     var idx = Math.min(last, Math.floor(el_s / WHEEL_DT));
-    // The clacks of the next tenth of a second, each at its own moment: at
-    // full speed they come faster than frames do, and a ratchet is the sound.
-    while (ci < run.clicks.length && run.clicks[ci].t < el_s + 0.1) {
-      if (ac && run.clicks[ci].t >= el_s - 0.05) clack(run.clicks[ci].v, a0 + run.clicks[ci].t);
+    // A clack in the very frame that shows a peg slipping out from under the
+    // stick, so what you hear is what you see. Pegs can pass faster than
+    // that is pleasant to hear, so at most one clack every 40ms — the loudest
+    // of those that passed since — but never one without a peg behind it.
+    var loud = 0;
+    while (ci < run.clicks.length && run.clicks[ci].t <= idx * WHEEL_DT) {
+      loud = Math.max(loud, run.clicks[ci].v);
       ci++;
+    }
+    if (loud && el_s - lastClack >= 0.04) {
+      clack(loud);
+      lastClack = el_s;
     }
     wheel.rot = run.path[idx];
     wheel.psi = run.flaps[idx];
@@ -3829,8 +3996,12 @@ function openWheel() {
   wheelSound();
   wheel.entries = tray.slice();
   wheel.labels = tray.map(function (i, k) { return trayLabel(k); });
+  wheel.replay = null;
+  wheel.link = null;
   wheel.open = true;
   el('wheel').hidden = false;
+  el('wheellink').hidden = true;
+  el('wheelagain').textContent = 'Spin again';
   el('wheelagain').disabled = false;
   wheelResult('');
   drawWheel();
@@ -3844,10 +4015,38 @@ function closeWheel() {
   if (wheel.anim) { cancelAnimationFrame(wheel.anim); wheel.anim = null; }
   el('wheel').hidden = true;
   stopConfetti();
+  // The spin leaves the address with the wheel.
+  wheel.link = null;
+  wheel.replay = null;
+  writeUrl(false);
 }
 
 el('traywheel').addEventListener('click', openWheel);
-el('wheelagain').addEventListener('click', spinWheel);
+el('wheelagain').addEventListener('click', function () {
+  if (wheel.replay && !wheel.anim) {
+    // The sent spin, exactly: from where it stood, as hard as it was thrown.
+    var sp = wheel.replay;
+    wheel.replay = null;
+    el('wheelagain').textContent = 'Spin again';
+    el('wheelagain').disabled = true;
+    wheelResult('<span class="spinning">Spinning…</span>');
+    playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
+    return;
+  }
+  spinWheel();
+});
+el('wheellinkcopy').addEventListener('click', function () {
+  var box = el('wheellinkurl'), btn = el('wheellinkcopy');
+  var ok = function () {
+    btn.textContent = 'Copied';
+    setTimeout(function () { btn.textContent = 'Copy link'; }, 1400);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(box.value).then(ok, function () {
+      box.select(); document.execCommand('copy'); ok();
+    });
+  } else { box.select(); document.execCommand('copy'); ok(); }
+});
 el('wheeldone').addEventListener('click', closeWheel);
 el('wheelclose').addEventListener('click', closeWheel);
 el('wheel').addEventListener('click', function (e) {
@@ -5936,6 +6135,8 @@ function encodeState() {
   // Whether the tray is open is part of the view: a link sent mid-pick opens
   // with the picker out.
   if (picking) parts.push('pick=1');
+  // A spin on screen, so the address bar is a link to it.
+  if (wheel.open && wheel.link) parts.push('spin=' + wheel.link);
   // Last, so a link to a game reads as "this view, this game".
   if (openId != null) parts.push('g=' + encodeURIComponent(openId));
   return parts.join('&');
@@ -6144,6 +6345,11 @@ function setRanking(on) {
   render();
 }
 
+// A sent spin, taken from the address before the first render rewrites it.
+var SENT_SPIN = (function () {
+  var m = /(?:^#|&)spin=([^&]*)/.exec(location.hash || '');
+  return m ? m[1] : null;
+})();
 loadCols();
 buildColMenu();
 applyOrder();
@@ -6181,6 +6387,10 @@ syncSelects();
 refreshTagList();
 markSort();
 render();
+if (SENT_SPIN) {
+  var sentSpin = readSpinLink(SENT_SPIN);
+  if (sentSpin) openReplay(sentSpin);
+}
 // Everything is in its final shape: let the page in.
 ROOT.classList.remove('fade');
 </script>

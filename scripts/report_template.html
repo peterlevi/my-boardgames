@@ -1406,6 +1406,18 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelcount .word { font-size:15cqw; white-space:nowrap;
   transform:rotate(var(--rot)); animation:wordpop 1.1s ease-out both; }
 .wheelcount .word i { font-style:normal; display:inline-block; }
+/* A sent spin opened before any click: the browser holds its sound back, so
+   one tap — this — lets the sound in and starts the countdown. */
+.wheeltap { position:absolute; left:50%; top:calc(12.8% + 50cqw); z-index:3;
+  transform:translate(-50%, -50%) rotate(-4deg); border:0; cursor:pointer;
+  background:#1b1a17; color:#fff; font:inherit; font-weight:900;
+  font-size:8.5cqw; line-height:1; white-space:nowrap; padding:3.2cqw 5cqw;
+  border-radius:999px; box-shadow:1.2cqw 1.6cqw 0 rgba(0,0,0,.35);
+  animation:tappulse 1.1s ease-in-out infinite; }
+.wheeltap:hover { background:var(--accent); }
+@keyframes tappulse {
+  0%, 100% { transform:translate(-50%, -50%) rotate(-4deg) scale(1); }
+  50% { transform:translate(-50%, -50%) rotate(-4deg) scale(1.08); } }
 .wheelcount .win { max-width:92%; text-align:center; white-space:normal;
   line-height:1.04; overflow-wrap:anywhere; transform:rotate(var(--rot));
   animation:winpop 2.9s ease-out both; }
@@ -2009,6 +2021,8 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
     <div class="wheelbox">
       <canvas id="wheelcanvas" width="480" height="537"></canvas>
       <div class="wheelcount" id="wheelcount" aria-live="assertive"></div>
+      <button type="button" class="wheeltap" id="wheeltap" hidden
+        >&#9654; Tap to spin</button>
     </div>
     <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
     <!-- The seed: every spin has one, and the same seed is the same spin. -->
@@ -3868,6 +3882,9 @@ var WHEEL_DT = 1 / 240;
 var WHEEL_LIFT = (function () {
   // NONE: the pin is nowhere near the stick, whatever its angle.
   var G = WHEEL_G, PHI = 0.18, N = 1800, tab = new Float64Array(N + 1), NONE = -9;
+  // And the bottom of that range: a stick below it is not touching the pin
+  // at all, however high the top is.
+  var tabLo = new Float64Array(N + 1);
   var r = G.pr + G.rr, IN = null, REL = null;
   for (var i = 0; i <= N; i++) {
     var ph = -PHI + 2 * PHI * i / N;
@@ -3881,8 +3898,10 @@ var WHEEL_LIFT = (function () {
     };
     // Over every angle the stick can take, leaning either way: a stick
     // swinging back after letting one pin go must not swing into the next.
-    var top = NONE, sv;
-    for (sv = -0.7; sv <= 1.4; sv += 0.002) if (dist(sv) < r) top = sv;
+    var top = NONE, bottom = NONE, sv;
+    for (sv = -0.7; sv <= 1.4; sv += 0.002) {
+      if (dist(sv) < r) { top = sv; if (bottom === NONE) bottom = sv; }
+    }
     var lift = NONE;
     if (top !== NONE) {
       var lo = top, hi = Math.min(1.4, top + 0.01);
@@ -3897,6 +3916,7 @@ var WHEEL_LIFT = (function () {
     // Rounded, so the last-digit differences one browser's sin and cos may
     // have from another's cannot change a replayed spin (see spinLink).
     tab[i] = REL === null && lift !== NONE ? Math.round(lift * 1e7) / 1e7 : NONE;
+    tabLo[i] = tab[i] === NONE ? NONE : Math.round((bottom - 0.002) * 1e7) / 1e7;
   }
   // The least angle the stick may take with a pin at ph coming from the left
   // (it may be negative: only a stick leaning well over is in the way), or
@@ -3912,7 +3932,15 @@ var WHEEL_LIFT = (function () {
     if (tab[j] === NONE) return tab[j + 1];
     return tab[j] * (1 - t) + tab[j + 1] * t;
   };
-  return { at: at, IN: IN, REL: REL, NONE: NONE, max: Math.max.apply(null, tab) };
+  var lo = function (ph) {
+    if (ph <= IN || ph >= REL) return NONE;
+    var f = (ph + PHI) / (2 * PHI) * N, j = Math.floor(f);
+    // The lower of the two neighbours: a contact starts no later for it.
+    if (tabLo[j] === NONE) return tabLo[j + 1];
+    if (tabLo[j + 1] === NONE) return tabLo[j];
+    return Math.min(tabLo[j], tabLo[j + 1]);
+  };
+  return { at: at, lo: lo, IN: IN, REL: REL, NONE: NONE, max: Math.max.apply(null, tab) };
 })();
 
 var WHEEL_PSI_MAX = WHEEL_LIFT.max + 0.04;
@@ -3949,9 +3977,15 @@ function wheelSim(theta0, omega0, n, record) {
           // A pin in the stick's way, from the side the wheel is bringing
           // it — or, if it is not moving, from whichever side it is on.
           var goingL = w > 0 || (w === 0 && ph < 0);
-          if (fromL !== L.NONE && psi < fromL && goingL) e = eng[j] = { side: 1, max: 0, minW: Math.abs(w) };
-          else if (fromR !== L.NONE && psi > -fromR && !goingL) e = eng[j] = { side: -1, max: 0, minW: Math.abs(w) };
-          else continue;
+          // Only a stick actually inside the pin's range is touched by it:
+          // below the range it is clear, whatever the top of the range says.
+          // Testing only against the top had a pin leaving on one side, at
+          // the very edge of its reach, grab a resting stick from the other.
+          if (fromL !== L.NONE && psi < fromL && psi >= L.lo(ph) && goingL) {
+            e = eng[j] = { side: 1, max: 0, minW: Math.abs(w) };
+          } else if (fromR !== L.NONE && psi > -fromR && psi <= -L.lo(-ph) && !goingL) {
+            e = eng[j] = { side: -1, max: 0, minW: Math.abs(w) };
+          } else continue;
         }
         var x = e.side * ph;                     // the peg's angle as seen from its side
         if (x >= L.REL || x <= L.IN) {
@@ -4266,12 +4300,27 @@ function openReplay(spin) {
   wheelResult('');
   drawWheel();
   el('wheeldone').focus();
-  // It plays straight away, after the same beat a fresh spin gets. (Its
-  // sound waits for a click: the speaker button says so until then.)
+  // It plays straight away, after the same beat a fresh spin gets — unless
+  // the browser is holding the page's sound back (a link opened before any
+  // click is), in which case one tap lets the sound in and starts it, so the
+  // spin is never played silent.
   setTimeout(function () {
-    if (wheel.open && wheel.replay === spin) countdown(playReplay);
+    if (!(wheel.open && wheel.replay === spin)) return;
+    if (wheelAudio && wheelAudio.state === 'running') countdown(playReplay);
+    else {
+      el('wheeltap').hidden = false;
+      el('wheelagain').disabled = true;
+    }
   }, 350);
 }
+
+el('wheeltap').addEventListener('click', function () {
+  el('wheeltap').hidden = true;
+  var ac = wheelSound();
+  var go = function () { if (wheel.open && wheel.replay) countdown(playReplay); };
+  if (ac && ac.state !== 'running') ac.resume().then(go, go);
+  else go();
+});
 
 /* ---- the countdown ------------------------------------------------------
    Opening the wheel is an occasion: 3, 2, 1 and Spinning! pop up over its
@@ -4556,6 +4605,7 @@ function closeWheel() {
   wheel.won = null;
   wheel.open = false;
   stopCountdown();
+  el('wheeltap').hidden = true;
   if (wheel.anim) { cancelAnimationFrame(wheel.anim); wheel.anim = null; }
   el('wheel').hidden = true;
   stopConfetti();

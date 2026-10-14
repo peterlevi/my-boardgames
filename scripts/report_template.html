@@ -60,18 +60,24 @@ h1 a:hover { text-decoration:none; }
    it works with scripts blocked the way <details> did. */
 #legendtoggle { position:absolute; width:1px; height:1px; opacity:0;
   margin:0; pointer-events:none; }
-#legendlink { margin-left:auto; cursor:pointer; color:var(--accent);
-  font-size:.86rem; font-weight:700; display:flex; align-items:center;
+#legendlink { cursor:pointer; color:var(--accent);
+  font-size:.86rem; font-weight:700; display:inline-flex; align-items:center;
   gap:7px; white-space:nowrap; }
+.legendfoot { margin:14px 0 0; }
 #legendlink::before { content:"▸"; font-size:1.15em; line-height:1; }
-#legendtoggle:checked ~ .headmeta #legendlink::before { content:"▾"; }
+#legendtoggle:checked ~ .legendfoot #legendlink::before { content:"▾"; }
 #legendlink:hover { color:var(--ink); }
-#legendtoggle:focus-visible ~ .headmeta #legendlink { outline:2px solid
+#legendtoggle:focus-visible ~ .legendfoot #legendlink { outline:2px solid
   var(--accent); outline-offset:3px; border-radius:3px; }
 /* The GitHub mark sits last on the title line, after the legend link. */
 /* The legend link used to push this to the right; it lives a line lower now,
    so the mark has to take the slack itself. */
-#repo { color:var(--ink); display:flex; align-items:center; margin-left:auto;
+/* The header: the title and what the collection is on the left; the source
+   link and the game picker on the right, centred across both lines. */
+.masthead { display:flex; align-items:center; gap:20px; }
+.mastleft { flex:1 1 auto; min-width:0; }
+.mastright { flex:none; display:flex; align-items:center; gap:18px; }
+#repo { color:var(--ink); display:flex; align-items:center;
   /* A flex item on a baseline-aligned line aligns its own baseline, which for
      an icon is its bottom edge — it sat low against the text. Centring it on
      the text's own cap height puts it level with the link beside it. */
@@ -407,7 +413,6 @@ td.designer .more { color:var(--muted); }
 #outcount { font-size:.85rem; color:var(--accent); }
 /* What the collection is, under its name. */
 .headmeta { display:flex; align-items:baseline; gap:14px; margin:2px 0 0;
-  /* the legend link rides at the far right, under the GitHub mark */
   font-size:.86rem; font-weight:700; flex-wrap:wrap; }
 .headmeta #counts { color:var(--ink); }
 .headmeta a { color:var(--accent); }
@@ -1171,22 +1176,25 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
    and a filter that then shows just those. Open, the page lets go of its
    1280px: the table slides left to the window's edge and the tray takes the
    space on the right, so nothing that was on screen ends up under it. */
-.pickbtn { display:flex; align-items:center; gap:6px;
-  background:none; border:1px solid var(--line); border-radius:7px;
-  padding:3px 10px 3px 8px; font:inherit; font-size:.84rem; font-weight:600;
-  color:var(--muted); cursor:pointer; white-space:nowrap; align-self:center; }
-.pickbtn:hover { color:var(--ink); background:var(--panel); }
-/* Closer to the source link than the title is: the two are one group. */
-#repo + .pickbtn { margin-left:-10px; }
-/* Narrow, the title, the source link and this share one line only if this
-   gives up its words; the icon and the pressed state still say it all. */
-@media (max-width:820px) {
-  .pblabel { display:none; }
-  .pickbtn { padding:4px 7px; }
+/* The same brown, the same size as "Show just these": the picker is the
+   page's main thing to do, not a setting. */
+.pickbtn { display:flex; align-items:center; justify-content:center; gap:8px;
+  background:var(--accent); color:var(--panel); border:1px solid var(--accent);
+  border-radius:9px; padding:12px 22px; font:inherit; font-size:.98rem;
+  font-weight:700; line-height:1.3; cursor:pointer; white-space:nowrap; }
+.pickbtn:hover { filter:brightness(1.08); }
+/* Pressed while the tray is open: darker, and sunk in. */
+.pickbtn[aria-pressed="true"] { filter:brightness(.82);
+  box-shadow:inset 0 2px 6px rgba(0,0,0,.35); }
+/* A phone has no room beside the title for it: the button takes a row of its
+   own under the header, full width like the tray's own buttons, with the
+   source link at its end. */
+@media (max-width:700px) {
+  .masthead { flex-direction:column; align-items:stretch; gap:12px; }
+  .mastright { gap:14px; }
+  .mastright .pickbtn { flex:1 1 auto; order:1; }
+  .mastright #repo { order:2; }
 }
-/* Pressed while the tray is open: sunk into the bar, in the tray's colour. */
-.pickbtn[aria-pressed="true"] { color:var(--ink); background:var(--tray);
-  border-color:var(--muted); box-shadow:inset 0 1px 3px rgba(0,0,0,.18); }
 
 .c-add { display:none; }
 :root.picking .c-add { display:table-cell; }
@@ -1485,7 +1493,8 @@ td.c-add { text-align:right; white-space:nowrap; }
 </script>
 </head><body>
 <div class="wrap">
-<input type="checkbox" id="legendtoggle">
+<div class="masthead">
+<div class="mastleft">
 <div class="titlebar">
   <!-- The title doubles as "home": everything the URL carries goes back to
        its default. An href rather than a bare click handler so it reads as a
@@ -1493,6 +1502,10 @@ td.c-add { text-align:right; white-space:nowrap; }
        the script has not started yet. -->
   <h1><a id="home" href="#" title="Back to the whole collection — clears the
     filters, the sort and any open game">__HEADLINE__</a></h1>
+</div>
+<p class="headmeta"><span id="counts">__COUNTS__</span><!--__BGGLINK__--></p>
+</div>
+<div class="mastright">
   <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"
      title="This report's source on GitHub" aria-label="Source on GitHub">
     <svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true"
@@ -1507,158 +1520,16 @@ td.c-add { text-align:right; white-space:nowrap; }
       -3.58-8-8-8Z"/></svg>
   </a>
   <!-- The game picker opens a tray down the page's right edge, so its
-       switch lives at the top right, beside the source link. -->
+       switch lives at the top right, centred across both header lines. -->
   <button type="button" id="pickbtn" class="pickbtn" aria-pressed="false"
     aria-controls="tray" aria-label="Game picker"
     title="Game picker: pick games into a list, then show just those"
-    ><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"
+    ><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"
       ><path fill="currentColor" d="M1 3h9v1.5H1V3Zm0 4h9v1.5H1V7Zm0 4h6v1.5H1V11Zm11-2h1.5v2.5H16V13h-2.5v2.5H12V13H9.5v-1.5H12V9Z"
       /></svg><span class="pblabel">Game picker</span></button>
 </div>
+</div>
 
-
-<p class="headmeta"><span id="counts">__COUNTS__</span><!--__BGGLINK__-->
-  <label for="legendtoggle" id="legendlink">What the data means</label></p>
-    <div class="legendbody sub note">
-    <section>
-    <h5>Columns</h5>
-    <dl>
-      <dt>Rank</dt><dd>BGG's overall rank. Unranked games sort last.</dd>
-      <dt>BGG · Mine</dt><dd>BGG's average rating, and your own rating from
-        your collection. Both are out of 10.</dd>
-      <dt>Plays</dt><dd>Plays you have logged on BGG.</dd>
-      <dt>Search</dt><dd>Looks at everything on the row and in its expanded
-        panel: the name, the year, the designers and publisher, every
-        property, how the game is won and how much of a salad it is, your own
-        comment on the collection entry — “(shrink)” finds what is still
-        sealed, “(open)” what is not — plus
-        BGG's other titles for the game, which are not shown. Every word has
-        to land somewhere, but not together and not in order — “board dice”
-        finds the Board&amp;Dice games. Accents are optional: “orleans” finds
-        Orléans. What matched is highlighted when you open the row.
-        <br>“id:1234” is a word too, and matches only the game with that BGG
-        id — which is what a “you might also like” pill types for you, so it
-        lands on one game rather than on everything that mentions its
-        name.</dd>
-      <dt>Game</dt><dd>The columns button above the table, at the right,
-        decides what rides along with the name: nothing, the year, the
-        designer, or both. Whatever the name carries loses its own column.
-        Designer also folds back under the name when the window is too narrow
-        to hold its column.</dd>
-      <dt>Last played</dt><dd>The most recent date in your BGG play log.</dd>
-      <dt>Win scores</dt><dd>The range a winning score typically falls in,
-        blank where a score is not what decides the game. Off by default, and
-        only filled in when the optional enrichment step has been run.</dd>
-      <dt>Edited</dt><dd>When the collection entry itself last changed on
-        BGG — a rating, a play count, anything. Not when you got the
-        game.</dd>
-      <dt>Acquired · Price paid</dt><dd>Both live in the private part of a
-        collection entry, which the API never returns. They come from a CSV
-        export instead — download it from your BGG collection page and save it
-        as <code>data/collection.csv</code>. That file is gitignored and read
-        only while a report is being written, so these two columns exist only
-        in reports you build yourself: nothing private reaches the saved data
-        or a hosted copy.</dd>
-      <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale: a bar from
-        green for light to red for heavy, and the band it falls in — Light,
-        Medium light, Medium, Heavy, Extreme — cut at 1.5, 2.5 and 3.5, the
-        midpoints between the points BGG's own Game Weight poll names, and at
-        4.2, where the handful of games people call unplayably heavy start.
-        Whether you see the band above the number or the number alone is the
-        <b>Cells</b> setting in the columns menu — detailed or compact — and it
-        is the same for every column that has both to show.</dd>
-      <dt>Time</dt><dd>The box's own range, banded by its <em>upper</em>
-        bound — at a game night the question is how long this could run, not
-        how quickly it could be over. Very short tops out under half an hour,
-        Short by 45 min, Medium by 90, Long by two hours, Very long by three,
-        and Extreme is anything past that.</dd>
-      <dt>Interaction</dt><dd>How much the players' games touch each other —
-        Low, Medium or High — and under it, what kind: direct attacks, area
-        control, a shared market, blocking, an auction, and so on. Neither is
-        a BGG statistic; see below.</dd>
-      <dt>At N</dt><dd>What the player-count poll says about the count you
-        picked. <b>Best at N</b> = N drew more “Best” votes than any other
-        count. <b>Good at N</b> = best, or ≥50% of voters at N called N the
-        best count. Under the pill sits the whole vote in one bar, and the
-        figure beside it reads <b>best</b> — the share calling it the best
-        count — then <b>recommended</b>, the share that would still sit down
-        for it. The columns menu offers those two as columns of their own,
-        <b>Best at N</b> and <b>Appr at N</b>, where approval is (Best +
-        Recommended) ÷ all votes at that count. All three are hidden while the
-        count is “Any”, because there is nothing for them to read.</dd>
-      <dt>Votes</dt><dd>How many people have rated the game on BGG — a rough
-        proxy for how well known it is.</dd>
-    </dl>
-    </section>
-    <section>
-    <h5>Filters worth explaining</h5>
-    <dl>
-      <dt>Rule</dt><dd>How strict the player count is: plays at it, good at
-        it, or best at it. N/A until a count is chosen.</dd>
-      <dt>Interaction, Point salad, Weight, Time</dt><dd>Each opens a
-        two-handled range over the underlying number — weight is 1–5, time is
-        minutes, point salad is its 0–100 score — with the bands marked along
-        it as dots and named beside them. So you can ask for “anything up to
-        90 minutes” or “3.4 and heavier”, not just whole bands. Interaction is
-        Low, Medium or High with nothing in between, so it snaps to those
-        three. A range covering everything is the filter having no
-        opinion. ticking Light and Heavy shows games that are
-        either, not games that are somehow both. Ticking nothing is the
-        filter having no opinion. The title at the top of the page clears
-        every filter, the sort and any open game at once, and leaves your
-        column choices alone.</dd>
-      <dt>Expansions</dt><dd>Hidden by default but still counted: an
-        expansion's own poll can be what makes the base game good at a
-        count.</dd>
-      <dt>Win condition</dt><dd>What actually decides the winner — most points,
-        a race, elimination, and so on.</dd>
-      <dt>Point salad</dt><dd>How many different things earn you points:
-        no — a sharp focus, just a touch, quite a lot, or a total point salad.
-        The band is cut from an underlying 0-100 score, and the columns menu
-        offers the band, the score, or one column carrying both. The filter
-        always uses the bands.</dd>
-      <dt>Approved at N</dt><dd>Whether half the voters at that count think
-        the game works there at all — a yes/no question, so the pill answers
-        yes or no rather than repeating the Best/Good/Plays verdict beside
-        it.</dd>
-
-      <dt>Properties</dt><dd>One field over everything a game is tagged with —
-        BGG's categories, mechanics, families and designers, how the game is
-        won and what kind of interaction it has, plus a few named
-        groupings of mechanics — searchable by name or by description.
-        “8 of 41” counts matches within the filters already applied. Match
-        ticked properties by all, any, or none.</dd>
-    </dl>
-    </section>
-    <section>
-    <h5>Where the data comes from</h5>
-    <p>Everything above is BGG's own data, cached locally — every filter runs
-    in this page and nothing calls out to BGG.</p>
-    <p>Three fields are not BGG's: <b>Interaction</b>, <b>Win condition</b> and
-    <b>Point salad</b>, along with the “What people say” notes in an
-    expanded row, come from a local database built with Claude from what is
-    known about each game (a few looked up on the web, marked where so). No
-    such data exists in BGG's API. <b>Interaction</b> is the phrase players
-    keep using about a game — “multiplayer solitaire”, “cutthroat”, “a race
-    you watch” — turned into a level; <b>Win condition</b> and <b>Point
-    salad</b> are computed from reported facts about how a game is scored, not
-    asked for directly. Treat them as a rough sort, not fact; where the
-    database has nothing, Interaction falls back to a rule over the game's
-    mechanics.</p>
-    <p>The filters, the sort and the game you have expanded are kept in the
-    page's address as you set them, so the link in your address bar is the
-    view you are looking at — copy it to send someone exactly this table, or
-    one game in it. The back button closes an expanded game rather than
-    leaving the page. <b>Reset filters</b> clears it again.</p>
-    <p>Click any row to expand it. Pills inside filter the table to that
-    designer, mechanic or game — except games you do not own, which link out
-    to BGG.</p>
-    <p>The columns button at the right of the count line turns columns on and
-    off; drag a column's header to move
-    it, and "Reset to default" puts everything back. Your choices are
-    remembered in this browser.</p>
-    </section>
-    </div>
 
 <div class="panel">
   <!-- One row: everything you narrow the table with, in the order you reach
@@ -1872,6 +1743,151 @@ opening selection; open the file in a browser for the full controls.</p></noscri
 <footer>BGG snapshot __STAMP__ — ranks, weights, play counts and player-count
 polls from boardgamegeek.com; thumbnails embedded in the file. Interaction and
 point-salad columns are derived locally and are opinions, not BGG data.</footer>
+<!-- What the data means, at the foot of the page: a reference, opened when
+     wanted, rather than the first thing under the title. The checkbox comes
+     first so the link and the panel can both follow it with ~. -->
+<input type="checkbox" id="legendtoggle">
+<p class="legendfoot"><label for="legendtoggle" id="legendlink">What the data means</label></p>
+    <div class="legendbody sub note">
+    <section>
+    <h5>Columns</h5>
+    <dl>
+      <dt>Rank</dt><dd>BGG's overall rank. Unranked games sort last.</dd>
+      <dt>BGG · Mine</dt><dd>BGG's average rating, and your own rating from
+        your collection. Both are out of 10.</dd>
+      <dt>Plays</dt><dd>Plays you have logged on BGG.</dd>
+      <dt>Search</dt><dd>Looks at everything on the row and in its expanded
+        panel: the name, the year, the designers and publisher, every
+        property, how the game is won and how much of a salad it is, your own
+        comment on the collection entry — “(shrink)” finds what is still
+        sealed, “(open)” what is not — plus
+        BGG's other titles for the game, which are not shown. Every word has
+        to land somewhere, but not together and not in order — “board dice”
+        finds the Board&amp;Dice games. Accents are optional: “orleans” finds
+        Orléans. What matched is highlighted when you open the row.
+        <br>“id:1234” is a word too, and matches only the game with that BGG
+        id — which is what a “you might also like” pill types for you, so it
+        lands on one game rather than on everything that mentions its
+        name.</dd>
+      <dt>Game</dt><dd>The columns button above the table, at the right,
+        decides what rides along with the name: nothing, the year, the
+        designer, or both. Whatever the name carries loses its own column.
+        Designer also folds back under the name when the window is too narrow
+        to hold its column.</dd>
+      <dt>Last played</dt><dd>The most recent date in your BGG play log.</dd>
+      <dt>Win scores</dt><dd>The range a winning score typically falls in,
+        blank where a score is not what decides the game. Off by default, and
+        only filled in when the optional enrichment step has been run.</dd>
+      <dt>Edited</dt><dd>When the collection entry itself last changed on
+        BGG — a rating, a play count, anything. Not when you got the
+        game.</dd>
+      <dt>Acquired · Price paid</dt><dd>Both live in the private part of a
+        collection entry, which the API never returns. They come from a CSV
+        export instead — download it from your BGG collection page and save it
+        as <code>data/collection.csv</code>. That file is gitignored and read
+        only while a report is being written, so these two columns exist only
+        in reports you build yourself: nothing private reaches the saved data
+        or a hosted copy.</dd>
+      <dt>Weight</dt><dd>BGG's complexity vote on a 1–5 scale: a bar from
+        green for light to red for heavy, and the band it falls in — Light,
+        Medium light, Medium, Heavy, Extreme — cut at 1.5, 2.5 and 3.5, the
+        midpoints between the points BGG's own Game Weight poll names, and at
+        4.2, where the handful of games people call unplayably heavy start.
+        Whether you see the band above the number or the number alone is the
+        <b>Cells</b> setting in the columns menu — detailed or compact — and it
+        is the same for every column that has both to show.</dd>
+      <dt>Time</dt><dd>The box's own range, banded by its <em>upper</em>
+        bound — at a game night the question is how long this could run, not
+        how quickly it could be over. Very short tops out under half an hour,
+        Short by 45 min, Medium by 90, Long by two hours, Very long by three,
+        and Extreme is anything past that.</dd>
+      <dt>Interaction</dt><dd>How much the players' games touch each other —
+        Low, Medium or High — and under it, what kind: direct attacks, area
+        control, a shared market, blocking, an auction, and so on. Neither is
+        a BGG statistic; see below.</dd>
+      <dt>At N</dt><dd>What the player-count poll says about the count you
+        picked. <b>Best at N</b> = N drew more “Best” votes than any other
+        count. <b>Good at N</b> = best, or ≥50% of voters at N called N the
+        best count. Under the pill sits the whole vote in one bar, and the
+        figure beside it reads <b>best</b> — the share calling it the best
+        count — then <b>recommended</b>, the share that would still sit down
+        for it. The columns menu offers those two as columns of their own,
+        <b>Best at N</b> and <b>Appr at N</b>, where approval is (Best +
+        Recommended) ÷ all votes at that count. All three are hidden while the
+        count is “Any”, because there is nothing for them to read.</dd>
+      <dt>Votes</dt><dd>How many people have rated the game on BGG — a rough
+        proxy for how well known it is.</dd>
+    </dl>
+    </section>
+    <section>
+    <h5>Filters worth explaining</h5>
+    <dl>
+      <dt>Rule</dt><dd>How strict the player count is: plays at it, good at
+        it, or best at it. N/A until a count is chosen.</dd>
+      <dt>Interaction, Point salad, Weight, Time</dt><dd>Each opens a
+        two-handled range over the underlying number — weight is 1–5, time is
+        minutes, point salad is its 0–100 score — with the bands marked along
+        it as dots and named beside them. So you can ask for “anything up to
+        90 minutes” or “3.4 and heavier”, not just whole bands. Interaction is
+        Low, Medium or High with nothing in between, so it snaps to those
+        three. A range covering everything is the filter having no
+        opinion. ticking Light and Heavy shows games that are
+        either, not games that are somehow both. Ticking nothing is the
+        filter having no opinion. The title at the top of the page clears
+        every filter, the sort and any open game at once, and leaves your
+        column choices alone.</dd>
+      <dt>Expansions</dt><dd>Hidden by default but still counted: an
+        expansion's own poll can be what makes the base game good at a
+        count.</dd>
+      <dt>Win condition</dt><dd>What actually decides the winner — most points,
+        a race, elimination, and so on.</dd>
+      <dt>Point salad</dt><dd>How many different things earn you points:
+        no — a sharp focus, just a touch, quite a lot, or a total point salad.
+        The band is cut from an underlying 0-100 score, and the columns menu
+        offers the band, the score, or one column carrying both. The filter
+        always uses the bands.</dd>
+      <dt>Approved at N</dt><dd>Whether half the voters at that count think
+        the game works there at all — a yes/no question, so the pill answers
+        yes or no rather than repeating the Best/Good/Plays verdict beside
+        it.</dd>
+
+      <dt>Properties</dt><dd>One field over everything a game is tagged with —
+        BGG's categories, mechanics, families and designers, how the game is
+        won and what kind of interaction it has, plus a few named
+        groupings of mechanics — searchable by name or by description.
+        “8 of 41” counts matches within the filters already applied. Match
+        ticked properties by all, any, or none.</dd>
+    </dl>
+    </section>
+    <section>
+    <h5>Where the data comes from</h5>
+    <p>Everything above is BGG's own data, cached locally — every filter runs
+    in this page and nothing calls out to BGG.</p>
+    <p>Three fields are not BGG's: <b>Interaction</b>, <b>Win condition</b> and
+    <b>Point salad</b>, along with the “What people say” notes in an
+    expanded row, come from a local database built with Claude from what is
+    known about each game (a few looked up on the web, marked where so). No
+    such data exists in BGG's API. <b>Interaction</b> is the phrase players
+    keep using about a game — “multiplayer solitaire”, “cutthroat”, “a race
+    you watch” — turned into a level; <b>Win condition</b> and <b>Point
+    salad</b> are computed from reported facts about how a game is scored, not
+    asked for directly. Treat them as a rough sort, not fact; where the
+    database has nothing, Interaction falls back to a rule over the game's
+    mechanics.</p>
+    <p>The filters, the sort and the game you have expanded are kept in the
+    page's address as you set them, so the link in your address bar is the
+    view you are looking at — copy it to send someone exactly this table, or
+    one game in it. The back button closes an expanded game rather than
+    leaving the page. <b>Reset filters</b> clears it again.</p>
+    <p>Click any row to expand it. Pills inside filter the table to that
+    designer, mechanic or game — except games you do not own, which link out
+    to BGG.</p>
+    <p>The columns button at the right of the count line turns columns on and
+    off; drag a column's header to move
+    it, and "Reset to default" puts everything back. Your choices are
+    remembered in this browser.</p>
+    </section>
+    </div>
 </div>
 
 <!-- The game picker's tray. Outside .wrap so it can sit against the window's

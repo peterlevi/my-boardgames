@@ -3902,6 +3902,13 @@ function wheelSim(theta0, omega0, n, record) {
            clicks: clicks, eps: eps };
 }
 
+/** Whether the last pin that really pushed the stick got over it. */
+function lastPinPassed(run) {
+  var fights = run.eps.filter(function (e) { return e.max > 0.12; });
+  var last = fights[fights.length - 1];
+  return !!(last && last.passed);
+}
+
 /** How much of a nail-biter a run's ending is, from 0 to about 1. Only the
  *  last two pegs that really pushed the stick count: one that barely got
  *  through (the wheel all but stopped while it was under the stick) or one
@@ -3984,6 +3991,9 @@ function spinWheel(seedText) {
   seedTyped = false;
   var rand = seededRandom(seed);
   var win = Math.floor(rand() * n), from = wheelHome(n);
+  // And how it ends, on a fair coin: the last pin to fight the stick either
+  // gets over it or is stopped by it, half the time each.
+  var wantPass = rand() < 0.5;
   el('wheelagain').disabled = true;
   wheelResult('<span class="spinning">Spinning…</span>');
   wheel.searching = true;
@@ -3996,17 +4006,33 @@ function spinWheel(seedText) {
     // ln(1 + c v / mu) / c seconds, near enough — the pegs take a little off.
     var P = WHEEL_P;
     var throwFor = function (secs) { return P.mu / P.c * (Math.exp(P.c * secs) - 1); };
-    var best = null, bestScore = -1;
-    for (var round = 0; round < 3 && best === null; round++) {
+    // The best throw of each ending — [stopped, got over] — so the coin
+    // decides which kind is played, and the drama only which of that kind.
+    // An ending with the stick still leaning on a pin counts as neither, and
+    // is kept only as a last resort: more throws are tried, over a wider
+    // range, until one ends cleanly the chosen way.
+    var bestOf = [null, null], scoreOf = [-1e9, -1e9], want = wantPass ? 1 : 0;
+    var stuck = null, stuckScore = -1e9;
+    for (var round = 0; round < 4 && bestOf[want] === null; round++) {
       var lo = throwFor(17 - 2 * round), span = throwFor(21 + 2 * round) - lo;
       for (var i = 0; i < 120; i++) {
         var v = lo + span * (i + rand()) / 120;
         var r = wheelSim(from, v, n, false);
         if (r.sector !== win) continue;
         var sc = wheelDrama(r) + rand() * 0.02;      // ties go to the seed
-        if (sc > bestScore) { bestScore = sc; best = v; }
+        if (Math.abs(r.endPsi) > 0.08) {
+          if (sc > stuckScore) { stuckScore = sc; stuck = v; }
+          continue;
+        }
+        var kind = lastPinPassed(r) ? 1 : 0;
+        if (sc > scoreOf[kind]) { scoreOf[kind] = sc; bestOf[kind] = v; }
       }
     }
+    // The other ending only if no throw that lands on the winner ends this
+    // way cleanly; a stuck one only if nothing else does.
+    var best = bestOf[want];
+    if (best === null) best = bestOf[1 - want];
+    if (best === null) best = stuck;
     wheel.searching = false;
     if (!wheel.open) return;
     if (best === null) { playSpin(null, win); return; }

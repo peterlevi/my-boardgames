@@ -648,6 +648,15 @@ pushed back off it, as a real flapper does, instead of freezing with the
 stick balanced on the pin — and the drama score rejects endings where the
 stick is still leaning on one.
 
+How a spin ends is decided on a fair coin from the seed, before the throw
+is chosen: the last pin to really fight the stick either gets over it or is
+stopped by it, half the time each. Among the throws that land on the drawn
+winner, the most dramatic of the chosen kind is played; endings with the
+stick still leaning on a pin count as neither, and more throws, over a wider
+range, are tried until one ends cleanly the chosen way (the other kind, then
+a stuck one, only as fallbacks). Without the coin, the drama score's taste
+for a final push-back made "stopped" the ending almost every time.
+
 Browsers only let a page play sound after a click, and an audio context
 made before one (a sent spin opens on load) stays suspended until resumed
 during one. Every click and key in the wheel resumes it, and a speaker

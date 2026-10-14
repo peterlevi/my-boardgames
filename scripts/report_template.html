@@ -4154,6 +4154,7 @@ function spinWheel(seedText) {
   wheel.replay = null;
   wheel.won = null;
   clearWinFlash();
+  hideTapPill();
   // Back to the resting place first, briskly, if the last spin left it
   // anywhere else.
   rewindWheel(from, function () {
@@ -4308,16 +4309,36 @@ function openReplay(spin) {
     if (!(wheel.open && wheel.replay === spin)) return;
     if (wheelAudio && wheelAudio.state === 'running') countdown(playReplay);
     else {
-      el('wheeltap').hidden = false;
+      showTapPill('Tap to spin', function () {
+        if (wheel.replay) countdown(playReplay);
+      });
       el('wheelagain').disabled = true;
     }
   }, 350);
 }
 
-el('wheeltap').addEventListener('click', function () {
+/* The pill over the wheel: Tap to spin for a sent spin whose sound the
+   browser is holding back, and Spin again / Replay spin once a spin is over.
+   A tap lets the sound in (it is a click) and then does what it says. */
+var RELOAD_ICON = '<svg viewBox="0 0 16 16" width="1em" height="1em" aria-hidden="true"' +
+  ' style="vertical-align:-.12em"><path fill="none" stroke="currentColor"' +
+  ' stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"' +
+  ' d="M13.2 8.6A5.3 5.3 0 1 1 11.6 4.2M12 1.6v3h-3"/></svg>';
+/** icon: 'play' (a first spin) or 'again' (the reload arrow, for another). */
+function showTapPill(label, action, icon) {
+  var b = el('wheeltap');
+  b.innerHTML = (icon === 'again' ? RELOAD_ICON : '&#9654;') + ' ' + esc(label);
+  wheel.tapAction = action;
+  b.hidden = false;
+}
+function hideTapPill() {
+  clearTimeout(wheel.pillT);
   el('wheeltap').hidden = true;
-  var ac = wheelSound();
-  var go = function () { if (wheel.open && wheel.replay) countdown(playReplay); };
+}
+el('wheeltap').addEventListener('click', function () {
+  hideTapPill();
+  var ac = wheelSound(), act = wheel.tapAction;
+  var go = function () { if (wheel.open && act) act(); };
   if (ac && ac.state !== 'running') ac.resume().then(go, go);
   else go();
 });
@@ -4330,6 +4351,7 @@ el('wheeltap').addEventListener('click', function () {
 var COUNT_COLORS = ['#e07a5f', '#d9a521', '#1f7a7a'];
 function countdown(then) {
   var box = el('wheelcount');
+  hideTapPill();
   clearTimeout(wheel.countT);
   if (reducedMotion()) { box.innerHTML = ''; then(); return; }
   var k = 0;
@@ -4410,6 +4432,7 @@ function playReplay() {
   wheel.won = null;
   stopConfetti();
   clearWinFlash();
+  hideTapPill();
   rewindWheel(sp.r, function () {
     if (wheel.open && wheel.replay === sp) {
       playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
@@ -4434,6 +4457,15 @@ function playSpin(run, win) {
     drawWheel();
     el('wheelagain').disabled = false;
     announce();
+    // Then the pill for the next go, in the middle of the wheel, once the
+    // winner's name has had its moment.
+    clearTimeout(wheel.pillT);
+    wheel.pillT = setTimeout(function () {
+      if (!wheel.open || wheel.anim || wheel.searching || wheel.counting) return;
+      showTapPill(wheel.replay ? 'Replay spin' : 'Spin again', function () {
+        el('wheelagain').click();
+      }, 'again');
+    }, Math.max(300, (wheel.flashUntil || 0) - Date.now() + 150));
   }
   if (!run || reducedMotion()) {
     // Straight to the answer: the middle of the winning sector.
@@ -4571,6 +4603,7 @@ function flashWinner(k) {
   [523, 659, 784].forEach(function (f, i) { beep(f, 0.16, i * 0.12); });
   beep(1047, 0.45, 0.36);
   beep(1319, 0.45, 0.36);
+  wheel.flashUntil = Date.now() + 2900;
   wheel.countT = setTimeout(function () { el('wheelcount').innerHTML = ''; }, 2900);
 }
 
@@ -4605,7 +4638,7 @@ function closeWheel() {
   wheel.won = null;
   wheel.open = false;
   stopCountdown();
-  el('wheeltap').hidden = true;
+  hideTapPill();
   if (wheel.anim) { cancelAnimationFrame(wheel.anim); wheel.anim = null; }
   el('wheel').hidden = true;
   stopConfetti();

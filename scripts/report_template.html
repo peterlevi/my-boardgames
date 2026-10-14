@@ -3550,7 +3550,9 @@ function drawWheel() {
     ctx.save();
     ctx.translate(cx, cy);
     ctx.rotate(start + a / 2);
-    var fs = Math.max(8.5, Math.min(13, 120 / n + 5.5)) * k;
+    // The type no taller than the sector is wide halfway out, so a crowded
+    // wheel gets smaller letters.
+    var fs = Math.max(8 * k, Math.min(13 * k, 2 * R * 0.6 * Math.sin(a / 2) * 0.42));
     ctx.font = '700 ' + fs + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
     ctx.fillStyle = '#fff';
     ctx.textAlign = 'right';
@@ -3562,7 +3564,11 @@ function drawWheel() {
     var thumbs = n <= 24, tc = R * 0.855;
     var td = Math.min(0.13 * R, 2 * tc * Math.sin(a / 2) * 0.78);
     var textEnd = thumbs ? tc - td / 2 - 7 * k : R - 26 * k;
-    var name = wheel.labels[i], room = textEnd - R * 0.14;
+    // A sector narrows towards the hub: the name stops where the sector is
+    // still half as wide again as the letters are tall, and anything longer
+    // ends in an ellipsis rather than squeezing between the lines.
+    var inner = Math.max(R * 0.14, fs * 1.5 / (2 * Math.sin(a / 2)));
+    var name = wheel.labels[i], room = textEnd - inner;
     if (ctx.measureText(name).width > room) {
       while (name.length > 1 && ctx.measureText(name + '…').width > room) {
         name = name.slice(0, -1);

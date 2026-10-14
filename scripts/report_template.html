@@ -1418,8 +1418,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 @keyframes tappulse {
   0%, 100% { transform:translate(-50%, -50%) rotate(-4deg) scale(1); }
   50% { transform:translate(-50%, -50%) rotate(-4deg) scale(1.08); } }
-.wheelcount .win { -webkit-text-stroke-width:1.4cqw; max-width:92%;
-  text-align:center; white-space:normal;
+.wheelcount .win { max-width:92%; text-align:center; white-space:normal;
   line-height:1.04; overflow-wrap:anywhere; transform:rotate(var(--rot));
   animation:winpop 2.9s ease-out both; }
 @keyframes winpop {
@@ -4628,22 +4627,16 @@ function announceWinner(k) {
 }
 
 /** The winner's name over the middle of the wheel, the way Spinning! was
- *  shown — huge and tilted — in white, outlined and shadowed in the colour
- *  of its own sector, with a fanfare. Long names shrink to fit and may take
+ *  shown — huge, tilted, outlined and shadowed in black — in the colour of
+ *  its own sector, with a fanfare. Long names shrink to fit and may take
  *  two lines. */
 function flashWinner(k) {
   var name = wheel.labels[k] || '';
   var colour = wheelColor(k, wheel.entries.length);
   var size = Math.max(7.5, Math.min(16, 120 / Math.max(6, Math.min(name.length, 22))));
   clearTimeout(wheel.countT);
-  // White letters on the sector's own colour: outlined in it, and shadowed
-  // in a darker shade of it, where the countdown uses black.
-  var shade = '#' + colour.slice(1).match(/../g).map(function (h) {
-    return ('0' + Math.round(parseInt(h, 16) * 0.55).toString(16)).slice(-2);
-  }).join('');
-  el('wheelcount').innerHTML = '<span class="win" style="--rot:-4deg;color:#fff;' +
-    '-webkit-text-stroke-color:' + colour + ';text-shadow:1.2cqw 1.6cqw 0 ' + shade +
-    ';font-size:' + size.toFixed(1) + 'cqw">' + esc(name) + '</span>';
+  el('wheelcount').innerHTML = '<span class="win" style="--rot:-4deg;color:' +
+    colour + ';font-size:' + size.toFixed(1) + 'cqw">' + esc(name) + '</span>';
   [523, 659, 784].forEach(function (f, i) { beep(f, 0.16, i * 0.12); });
   beep(1047, 0.45, 0.36);
   beep(1319, 0.45, 0.36);

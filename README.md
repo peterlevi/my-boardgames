@@ -94,8 +94,11 @@ browser:
   and every filter, search and sort keeps working over them. The picks ride
   in the link as `sel=`, so a shortlist can be bookmarked or sent.
 - A **wheel of fortune** under the picks: one equal sector per entry, so a
-  game picked twice is twice as likely. The winner is drawn fairly and the
-  wheel spins to it, then says which game it is, with confetti.
+  game picked twice is twice as likely. It is a simulated physical wheel —
+  pegs at the rim, a plastic pointer that clacks over them — and the winner
+  is drawn fairly first, then a throw that really lands there is played,
+  with confetti at the end. Picks can be renamed, and *Add manually…* adds
+  a game by name, or anything else, to spin for.
 
 **Click any row** to expand it: gallery images in an inline viewer (arrow keys
 browse), what people say about the game, how you win, how players interact,

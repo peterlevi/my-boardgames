@@ -561,20 +561,28 @@ clicking a tag does. If those hide a pick, the result line says how many.
 The wheel of fortune has one equal sector per tray entry, so a game in the
 tray twice has twice the sectors and twice the chance — the tray is already
 the list of weighted options, and the wheel simply shows it. Tray entries
-can be renamed in place (kept with the tray in localStorage until it is
+can also be added by name — one of your games, from an autocomplete with
+covers, or any text at all; text entries spin with the rest but cannot be
+shown in the table. They can be renamed in place (kept with the tray in localStorage until it is
 cleared, never in the URL), and the wheel shows and announces those names.
 
 It is a simulated physical wheel, not an eased animation. The wheel turns
-against friction (kinetic, plus static once it has all but stopped). A
-flapper of springy plastic hangs from a pivot above the rim, with its own
-small inertia, spring and damping. Pegs sit on every boundary at the rim,
-and peg and flapper tip are circles that push each other apart through a
-stiff contact — so a peg bends and lifts the flapper until it slips
-underneath, the flapper flicks back and wobbles, and a peg that arrives too
-slowly is pushed back by the bent flapper and the wheel rocks backwards.
-The flapper is drawn as a cantilever reaching the simulated tip, so it never
-looks as if it passes through a peg. Each time a peg gets past, a short
-synthesised clack plays, louder the harder the flapper snaps back.
+against a drag that grows with speed (which takes the early speed off
+quickly) and a small constant one (which leaves a long crawl), plus static
+friction once it has all but stopped. The pointer is a short stiff stick on
+a damped spring, hanging from a pivot just above the rim. A peg that reaches
+the stick's tip shoves it aside along the peg's own outline — worked out
+once from the geometry as a table of how far the stick must lift for each
+peg angle — so the stick can never overlap a peg; once the tip rides over,
+the peg slips under and the stick snaps back. Holding it aside costs the
+wheel the spring's pull through that gearing, so every peg takes a little
+speed, and a slow one is pushed back and the wheel rocks into the sector
+before. An earlier version with a free flapper and a stiff penalty contact
+missed fast pegs entirely (they crossed the contact inside one step) and
+read as pegs passing through a flapper that never moved; the kinematic
+contact, stepped finely only while a peg is near, catches every one. Each
+peg that gets past plays a synthesised clack scheduled at its exact moment
+on the audio clock, so a fast spin is a ratchet, not a click per frame.
 
 Physics decides where a wheel stops, so fairness cannot come from the
 animation. The winner is drawn first, uniformly over the entries, from
@@ -588,7 +596,8 @@ pegs that really fought the flapper score high when one barely got through
 (the wheel all but stopped while the flapper was bent) or barely failed
 (bent it nearly as far as passing takes), with a bonus for a final rock
 back. Every bounce on screen is the simulation's own; only the throw was
-chosen, and choosing it never changes which entry wins. The throw is scaled
-so a spin lasts about thirteen seconds whatever the number of sectors.
+chosen, and choosing it never changes which entry wins. Throws are taken
+from the friction law itself — a wheel thrown at v stops after about
+ln(1 + c·v/μ)/c seconds — so spins last eighteen to twenty-two seconds.
 
 With reduced motion the wheel jumps to the result and there is no confetti.

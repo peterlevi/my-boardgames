@@ -4869,17 +4869,10 @@ function playSpin(run, win) {
     return;
   }
   var t0 = null, last = run.path.length - 1, ci = 0, lastClack = -1;
-  // A last pin that cannot get over sends the wheel back into the sector it
-  // came from, and that is the answer: it is said the moment the wheel turns
-  // back, not after it has finished settling. That moment is where the
-  // wheel's final run backwards begins.
+  // The answer is said once the wheel has stopped — even when a last pin
+  // it could not get over sends it rolling back, it waits for the roll back
+  // to settle.
   var callAt = last;
-  if (!lastPinPassed(run)) {
-    var k = last;
-    while (k > 0 && run.path[k] - run.path[k - 1] >= 0) k--;   // still at rest
-    while (k > 0 && run.path[k] - run.path[k - 1] < 0) k--;    // rolling back
-    if (k > 0 && k < last) callAt = k;
-  }
   // The wheel stays lit through the spin; only at the very end do the
   // lights close in on the stick — from the fourth-last pin it passes, but
   // no sooner than 2.5s before the winner is called — and the two pools
@@ -5200,8 +5193,7 @@ function openWheel() {
 function closeWheel() {
   // A winner that is one of your games is opened in the table, once the
   // wheel is out of the way. Something typed in by hand has no row to open.
-  // Set only once a winner has been announced — which, for a wheel sent back
-  // by its last pin, is while it is still settling.
+  // Set only once a winner has been announced, when the wheel has stopped.
   var won = wheel.won;
   wheel.won = null;
   wheel.open = false;

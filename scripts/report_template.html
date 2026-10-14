@@ -4025,23 +4025,48 @@ function drawTop() {
       var ang = phi + Math.PI / 2;
       ang = Math.atan2(Math.sin(ang), Math.cos(ang));
       var d = g.td * (1 + 0.9 * pop), turn = ang * (1 - pop);
+      // And out from the square crop to the whole cover, its own shape: the
+      // short side stays d, the long side grows as the cropped-off part of
+      // the picture comes back.
+      var e = wheel.entries[k];
+      var im = (wheel.zoomRes > 1 && wheelBigImg(e, true)) || wheelImg(e);
+      var iw = im ? im.naturalWidth : 1, ih = im ? im.naturalHeight : 1;
+      var sq = Math.min(iw, ih);
+      var sw = sq + (iw - sq) * pop, sh = sq + (ih - sq) * pop;
+      var W = d * sw / sq, H = d * sh / sq;
+      // A long cover — a wide box — would run off the view: its long side
+      // stops at 1.15 times what the square would have been.
+      var fit = Math.min(1, 1.15 * d / Math.max(W, H));
+      W *= fit; H *= fit;
+      var rad = Math.min(W, H) * 0.14;
+      function frame() {
+        ctx.beginPath();
+        if (ctx.roundRect) ctx.roundRect(-W / 2, -H / 2, W, H, rad);
+        else ctx.rect(-W / 2, -H / 2, W, H);
+      }
       ctx.save();
       ctx.translate(x, y);
       ctx.rotate(turn);
-      ctx.beginPath();
-      if (ctx.roundRect) ctx.roundRect(-d / 2, -d / 2, d, d, d * 0.16);
-      else ctx.rect(-d / 2, -d / 2, d, d);
+      frame();
       ctx.shadowColor = 'rgba(0,0,0,' + (0.75 * pop).toFixed(3) + ')';
       ctx.shadowBlur = d * 0.35;
       ctx.shadowOffsetY = d * 0.08;
       ctx.fillStyle = '#1b1a17';
       ctx.fill();
-      ctx.restore();
-      ctx.save();
-      ctx.translate(x, y);
-      ctx.rotate(turn - Math.PI / 2);
-      wheelThumb(ctx, wheel.entries[k], wheel.labels[k], 0, d, dpr);
-      ctx.restore();
+      ctx.shadowColor = 'transparent';
+      if (im) {
+        frame();
+        ctx.clip();
+        ctx.drawImage(im, (iw - sw) / 2, (ih - sh) / 2, sw, sh, -W / 2, -H / 2, W, H);
+        ctx.restore();
+      } else {
+        ctx.restore();
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(turn - Math.PI / 2);
+        wheelThumb(ctx, e, wheel.labels[k], 0, d, dpr);
+        ctx.restore();
+      }
     }
   }
   drawFlapper(ctx, g.cx, g.cy, g.R, dpr);

@@ -635,7 +635,9 @@ canvas at that resolution (capped at 16 million pixels) with the game's
 full-size image. Once the winner is called the lights go out — the
 pools fade and close — and the wheel sinks to one even dark, while the
 winning cover is lifted out of it on a layer above the lights: growing to
-nearly twice its size, turning upright, on a drop shadow. The stick is
+nearly twice its size, turning upright, opening out from the square crop
+to the cover's own shape (rounded still; a long one capped at 1.15 times
+the square, so a wide box stays in view), on a drop shadow. The stick is
 drawn on that same top layer, so the lights' shade never greys it. The
 wheel zooms inside its own frame, behind the curtains and the
 arch; Spin again or a replay pulls back out.

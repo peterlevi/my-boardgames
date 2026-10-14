@@ -1467,6 +1467,8 @@ td.c-add { text-align:right; white-space:nowrap; }
   font-size:.9rem; font-weight:700; color:var(--ink); background:var(--panel);
   border:1px solid var(--line); border-radius:6px; padding:5px 8px; }
 .wheelseed input:focus { outline:none; border-color:var(--accent); }
+.wheelseed input:disabled { opacity:.55; cursor:default; }
+.wheelseed .iconbtn:disabled { opacity:.35; cursor:default; }
 /* A sent spin's seed: shown, not offered for editing. */
 .wheelseed input.fixed { background:none; border-color:transparent;
   padding-left:0; cursor:default; }
@@ -4155,6 +4157,7 @@ function spinWheel(seedText) {
   wheel.won = null;
   clearWinFlash();
   hideTapPill();
+  setSeedBusy(true);
   // Back to the resting place first, briskly, if the last spin left it
   // anywhere else.
   rewindWheel(from, function () {
@@ -4352,6 +4355,7 @@ var COUNT_COLORS = ['#e07a5f', '#d9a521', '#1f7a7a'];
 function countdown(then) {
   var box = el('wheelcount');
   hideTapPill();
+  setSeedBusy(true);
   clearTimeout(wheel.countT);
   if (reducedMotion()) { box.innerHTML = ''; then(); return; }
   var k = 0;
@@ -4408,6 +4412,13 @@ function beep(freq, len, delay) {
   o.stop(t + len + 0.02);
 }
 
+/** The seed can't be changed while a spin is under way — from choosing the
+ *  throw, through the countdown, to the wheel coming to rest. */
+function setSeedBusy(on) {
+  el('wheelseedq').disabled = !!on;
+  el('wheelseeddice').disabled = !!on;
+}
+
 /** A sent spin is only ever that spin: the seed is shown but cannot be
  *  changed, there is no dice, and the button replays it rather than spinning
  *  anew. Opening the wheel from the tray puts all of that back. */
@@ -4433,6 +4444,7 @@ function playReplay() {
   stopConfetti();
   clearWinFlash();
   hideTapPill();
+  setSeedBusy(true);
   rewindWheel(sp.r, function () {
     if (wheel.open && wheel.replay === sp) {
       playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
@@ -4456,6 +4468,7 @@ function playSpin(run, win) {
     wheel.psi = 0;
     drawWheel();
     el('wheelagain').disabled = false;
+    setSeedBusy(false);
     announce();
     // Then the pill for the next go, in the middle of the wheel, once the
     // winner's name has had its moment.
@@ -4642,6 +4655,7 @@ function closeWheel() {
   wheel.open = false;
   stopCountdown();
   hideTapPill();
+  setSeedBusy(false);
   if (wheel.anim) { cancelAnimationFrame(wheel.anim); wheel.anim = null; }
   el('wheel').hidden = true;
   stopConfetti();

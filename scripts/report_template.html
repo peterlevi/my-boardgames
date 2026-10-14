@@ -4105,7 +4105,7 @@ function wheelHome(n) {
  *  bounce on screen is the simulation's own; only the throw was chosen. */
 function spinWheel(seedText) {
   var n = wheel.entries.length;
-  if (!n || wheel.anim || wheel.searching) return;
+  if (!n || wheel.anim || wheel.searching || wheel.counting) return;
   var seed = String(seedText || '').trim() || randomSeed();
   el('wheelseedq').value = seed;
   seedTyped = false;
@@ -4160,8 +4160,11 @@ function spinWheel(seedText) {
     wheel.searching = false;
     if (!wheel.open) return;
     if (best === null) { playSpin(null, win); return; }
+    // The seed and the link first, so what is about to happen can be sent
+    // before it happens; then the countdown; then the wheel goes.
     setSpinLink(from, best, seed);
-    playSpin(wheelSim(from, best, n, true), win);
+    var run = wheelSim(from, best, n, true);
+    countdown(function () { if (wheel.open) playSpin(run, win); });
   });
 }
 
@@ -4539,10 +4542,9 @@ function openWheel() {
   wheelResult('');
   drawWheel();
   el('wheeldone').focus();
-  // A beat to take the wheel in, then the countdown, then it goes.
-  setTimeout(function () {
-    if (wheel.open) countdown(function () { spinWheel(); });
-  }, 350);
+  // A beat to take the wheel in; spinWheel then picks the seed, shows the
+  // link, counts down, and goes.
+  setTimeout(function () { if (wheel.open) spinWheel(); }, 350);
 }
 
 function closeWheel() {

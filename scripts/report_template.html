@@ -2408,7 +2408,9 @@ function partition() {
 
     // Expansion visibility is structural rather than a filter you relax, so
     // it applies to the search results too.
-    var structural = !(g.exp && expMode !== 'show');
+    // A picked expansion is shown like any other pick, whatever the
+    // expansions setting says.
+    var structural = !!pool || !(g.exp && expMode !== 'show');
 
     var s = n ? reading(g, n, fold, mode) : null;
     var ai = g.ai || {};
@@ -3488,13 +3490,17 @@ el('trayshow').addEventListener('click', function () {
   asOneStep(function () {
     closeDetail();
     openId = null;
-    // A fresh look at the picks: the search that found them would otherwise
-    // hide most of them again. The player count and its rule stay, as they
-    // do for a tag — they are what you are usually still holding fixed.
-    var players = F.players.value, mode = F.mode.value;
+    // Exactly the picks, all of them: every filter goes, the player count
+    // and ranking by fit included, as Reset filters would clear them. The
+    // sort stays, unless it was the ranking's own.
     applyDefaults();
-    F.players.value = players;
-    F.mode.value = mode;
+    F.players.value = '0';
+    ranking = false;
+    sortBeforeFit = null;
+    var fitsw = document.getElementById('fittoggle');
+    if (fitsw) fitsw.checked = false;
+    if (sortKey === 'fit') { sortKey = 'rk'; sortDesc = false; }
+    markSort();
     syncClearQ();
     syncSelects();
     refreshTagList();

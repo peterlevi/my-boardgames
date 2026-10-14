@@ -632,7 +632,12 @@ middle line, wherever that comes to rest — on a wheel of a few wide
 sectors it can be well to one side of the stick), 5.5× where there are
 covers and 3.4× under the stick where there are not, and redraws the
 canvas at that resolution (capped at 16 million pixels) with the game's
-full-size image, the lights settled on it. The wheel zooms inside its own frame, behind the curtains and the
+full-size image. Once the winner is called the lights go out — the
+pools fade and close — and the wheel sinks to one even dark, while the
+winning cover is lifted out of it on a layer above the lights: growing to
+nearly twice its size, turning upright, on a drop shadow. The stick is
+drawn on that same top layer, so the lights' shade never greys it. The
+wheel zooms inside its own frame, behind the curtains and the
 arch; Spin again or a replay pulls back out.
 
 Every spin comes from a seed — a random word like `amber-otter-17`, or one

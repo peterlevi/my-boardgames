@@ -1449,6 +1449,8 @@ td.c-add { text-align:right; white-space:nowrap; }
   width:min(480px, 72vmin, calc((100vh - 300px) * 42 / 47));
   width:min(480px, 72vmin, calc((100dvh - 300px) * 42 / 47)); }
 #wheelcanvas { width:100%; height:100%; display:block; }
+#wheeltop { position:absolute; inset:0; width:100%; height:100%;
+  pointer-events:none; z-index:1; }
 /* As tall as the winner's cover from the start, so announcing it does not
    grow the card. */
 .wheelresult { min-height:56px; text-align:center; display:flex;
@@ -1671,7 +1673,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 /* And the colour of each beam, faintly, with a hot centre. */
 .wheellight .pool { position:absolute; width:calc(var(--r) * 2); aspect-ratio:1;
   border-radius:50%; transform:translate(-50%, -50%); mix-blend-mode:screen;
-  filter:blur(4px); }
+  filter:blur(4px); opacity:var(--glow, 1); }
 .wheellight .pool.warm { left:var(--x1); top:var(--y1);
   background:radial-gradient(circle, rgba(255,240,205,.34) 0%,
     rgba(255,220,160,.12) 45%, rgba(255,220,160,0) 72%); }
@@ -2232,6 +2234,9 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
       <div class="wheellight" id="wheellight" aria-hidden="true"
         ><i class="shade"></i><i class="pool warm"></i
         ><i class="pool cool"></i></div>
+      <!-- Over the lights: the stick, always in full, and the winner's cover
+           and outline once it is called. -->
+      <canvas id="wheeltop" width="480" height="537" aria-hidden="true"></canvas>
       </div>
       <div class="wheelcount" id="wheelcount" aria-live="assertive"></div>
       <button type="button" class="wheeltap" id="wheeltap" hidden
@@ -3956,25 +3961,6 @@ function drawWheel() {
     if (thumbs) wheelThumb(ctx, wheel.entries[i], wheel.labels[i], tc, td, dpr);
     ctx.restore();
   }
-  // The winner, once called, picked out in light gold — on a crowded wheel
-  // the only way to see which sliver it was.
-  if (wheel.focus && wheel.winK !== null && wheel.winK !== undefined) {
-    var ws = -Math.PI / 2 + wheel.winK * a + wheel.rot;
-    ctx.save();
-    ctx.beginPath();
-    ctx.moveTo(cx, cy);
-    ctx.arc(cx, cy, R, ws, ws + a);
-    ctx.closePath();
-    ctx.fillStyle = 'rgba(255,240,200,.16)';
-    ctx.fill();
-    ctx.lineJoin = 'round';
-    ctx.lineWidth = Math.max(2.5 * dpr, R * 0.006);
-    ctx.strokeStyle = '#ffe9a8';
-    ctx.shadowColor = 'rgba(255,214,120,.8)';
-    ctx.shadowBlur = 8 * dpr;
-    ctx.stroke();
-    ctx.restore();
-  }
   // The rim.
   ctx.beginPath();
   ctx.arc(cx, cy, R, 0, 2 * Math.PI);
@@ -4000,7 +3986,65 @@ function drawWheel() {
   ctx.lineWidth = 3 * dpr;
   ctx.strokeStyle = '#1b1a17';
   ctx.stroke();
-  drawFlapper(ctx, cx, cy, R, dpr);
+  wheel.geo = { w: cv.width, h: cv.height, R: R, cx: cx, cy: cy, dpr: dpr, a: a,
+                thumbs: n <= 24, tc: R * 0.855,
+                td: Math.min(0.13 * R, 2 * R * 0.855 * half * 0.78) };
+  drawTop();
+}
+
+/* The layer over the lights: the stick, so the shade never greys it; and,
+   once a winner is called, its sector outlined in light gold (on a crowded
+   wheel the only way to see which sliver it was) and its cover lifted off
+   the darkened wheel — growing, turning upright, on a shadow — as
+   wheel.pop goes from 0 to 1 (stageLights eases it). */
+function drawTop() {
+  var g = wheel.geo, cv = el('wheeltop');
+  if (!g || !cv) return;
+  var ctx = cv.getContext('2d');
+  if (cv.width !== g.w || cv.height !== g.h) { cv.width = g.w; cv.height = g.h; }
+  ctx.clearRect(0, 0, cv.width, cv.height);
+  var k = wheel.winK, a = g.a, dpr = g.dpr;
+  if (wheel.focus && k !== null && k !== undefined) {
+    var ws = -Math.PI / 2 + k * a + wheel.rot;
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(g.cx, g.cy);
+    ctx.arc(g.cx, g.cy, g.R, ws, ws + a);
+    ctx.closePath();
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = Math.max(2.5 * dpr, g.R * 0.006);
+    ctx.strokeStyle = '#ffe9a8';
+    ctx.shadowColor = 'rgba(255,214,120,.8)';
+    ctx.shadowBlur = 8 * dpr;
+    ctx.stroke();
+    ctx.restore();
+    var pop = wheel.pop || 0;
+    if (g.thumbs && pop > 0.001) {
+      var phi = ws + a / 2;
+      var x = g.cx + g.tc * Math.cos(phi), y = g.cy + g.tc * Math.sin(phi);
+      var ang = phi + Math.PI / 2;
+      ang = Math.atan2(Math.sin(ang), Math.cos(ang));
+      var d = g.td * (1 + 0.9 * pop), turn = ang * (1 - pop);
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate(turn);
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(-d / 2, -d / 2, d, d, d * 0.16);
+      else ctx.rect(-d / 2, -d / 2, d, d);
+      ctx.shadowColor = 'rgba(0,0,0,' + (0.75 * pop).toFixed(3) + ')';
+      ctx.shadowBlur = d * 0.35;
+      ctx.shadowOffsetY = d * 0.08;
+      ctx.fillStyle = '#1b1a17';
+      ctx.fill();
+      ctx.restore();
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.rotate(turn - Math.PI / 2);
+      wheelThumb(ctx, wheel.entries[k], wheel.labels[k], 0, d, dpr);
+      ctx.restore();
+    }
+  }
+  drawFlapper(ctx, g.cx, g.cy, g.R, dpr);
 }
 
 /** A name cut to the room it has, ending in an ellipsis if it had to be —
@@ -4445,6 +4489,7 @@ function spinWheel(seedText, prepareOnly) {
   wheel.focusW = 0;
   wheel.winK = null;
   wheel.focusPt = null;
+  wheel.popOn = false;
   clearWinFlash();
   if (!prepareOnly) {
     wheelZoom(false);
@@ -4776,6 +4821,7 @@ function playReplay() {
   wheel.focusW = 0;
   wheel.winK = null;
   wheel.focusPt = null;
+  wheel.popOn = false;
   wheelZoom(false);
   wheel.pinOff = sp.o;
   rewindWheel(sp.r, function () {
@@ -4948,6 +4994,7 @@ function announceWinner(k) {
   wheel.winK = k;
   if (!wheel.focusPt) wheel.focusPt = winFocus(k, wheel.rot);
   wheel.focus = true;
+  wheel.popOn = true;
   drawWheel();
   wheelZoom(true);
   var th = coverOf(wheel.entries[k]);
@@ -5043,12 +5090,22 @@ function stageLights() {
     var t = { x1: mix(wx1, fpx), y1: mix(wy1, fpy), x2: mix(wx2, fpx), y2: mix(wy2, fpy),
               r: mix(wr, 21), shade: mix(ws, 0.86) };
     Object.keys(t).forEach(function (k) { L[k] += (t[k] - L[k]) * ease; });
+    // Called: the lights go out — the pools fade and close — and the whole
+    // wheel sinks to one even dark, the winner's cover lifted out of it.
+    var pop0 = wheel.pop || 0, popT = wheel.popOn ? 1 : 0;
+    var pop = still ? popT : pop0 + Math.max(-1, Math.min(1, popT - pop0)) * Math.min(1, dt * 1.6);
+    if (Math.abs(popT - pop) < 0.002) pop = popT;
+    wheel.pop = pop;
+    var e = pop * pop * (3 - 2 * pop);
+    var rr = L.r * (1 - e), sh = L.shade + (0.8 - L.shade) * e;
+    if (pop !== pop0) drawTop();
     box.style.setProperty('--x1', L.x1.toFixed(2) + '%');
     box.style.setProperty('--y1', L.y1.toFixed(2) + '%');
     box.style.setProperty('--x2', L.x2.toFixed(2) + '%');
     box.style.setProperty('--y2', L.y2.toFixed(2) + '%');
-    box.style.setProperty('--r', L.r.toFixed(2) + '%');
-    box.style.setProperty('--shade', L.shade.toFixed(3));
+    box.style.setProperty('--r', rr.toFixed(2) + '%');
+    box.style.setProperty('--shade', sh.toFixed(3));
+    box.style.setProperty('--glow', (1 - e).toFixed(3));
     wheel.lightAnim = requestAnimationFrame(step);
   }
   wheel.lightAnim = requestAnimationFrame(step);
@@ -5148,10 +5205,12 @@ function closeWheel() {
   var won = wheel.won;
   wheel.won = null;
   wheel.open = false;
+  wheel.pop = 0;
   wheel.focus = false;
   wheel.focusW = 0;
   wheel.winK = null;
   wheel.focusPt = null;
+  wheel.popOn = false;
   wheelZoom(false, true);
   stageSpinning(false);
   stopCountdown();

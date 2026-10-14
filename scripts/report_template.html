@@ -1373,6 +1373,11 @@ td.c-add { text-align:right; white-space:nowrap; }
      thumb finds them; the wheel and its answer centred in what is left. */
   .wheelcard .wheelbox { margin-top:auto; }
   .wheelcard .wheelseed { margin-top:auto; }
+  /* Close exactly where the tray's is: the same 25px button, 11px down and
+     16px in from the corner, the same size of cross. (.wheelcard ahead of
+     both rules: the general ones come later in the sheet.) */
+  .wheelcard .wheelx { top:11px; right:16px; width:25px; height:25px;
+    padding:0; justify-content:center; font-size:1.2rem; line-height:1; }
   /* .wheelcard ahead of it: the general rule comes later in the sheet. */
   .wheelcard .wheelbox {
     width:min(calc(100vw - 32px), calc((100vh - 300px) * 42 / 47));

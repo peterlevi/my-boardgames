@@ -1505,9 +1505,10 @@ td.c-add { text-align:right; white-space:nowrap; }
 /* ---- the wheel's stage --------------------------------------------------
    An old circus stage at night: near-black, red velvet drawn back at the
    sides, a gilded arch overhead strung with warm bulbs, more bulbs down the
-   wings, smoke over wooden boards; two warm-white spotlights sway and cross
-   on the wheel, and gold sparkles drift up through the light. Spinning, the
-   lights brighten, the bulbs chase and the sparkles hurry; a winner flares
+   wings, smoke over wooden boards; two pools of light, warm and white,
+   wander over the wheel, and gold sparkles drift up through the light.
+   Spinning, the wheel is lit, the bulbs chase and the sparkles hurry; at the
+   very end the light closes in on the stick; a winner flares
    the stage gold and sets the bulbs blinking. Light text on it; reduced
    motion holds it all still. */
 .wheelcard { background:radial-gradient(ellipse 120% 90% at 50% 38%,
@@ -1516,16 +1517,14 @@ td.c-add { text-align:right; white-space:nowrap; }
   box-shadow:0 24px 80px rgba(0,0,0,.6), inset 0 0 60px rgba(0,0,0,.6);
   padding-left:clamp(22px, 9%, 54px); padding-right:clamp(22px, 9%, 54px);
   overflow:hidden; isolation:isolate; }
-.wheelcard > :not(.stage):not(.lights):not(.wheelx):not(.wheelsnd) {
+.wheelcard > :not(.stage):not(.wheelx):not(.wheelsnd) {
   position:relative; z-index:3; }
 .wheelcard .wheelx, .wheelcard .wheelsnd { z-index:5; color:#e9d8b4; }
 .wheelcard .wheelx:hover, .wheelcard .wheelsnd:hover { color:#fff;
   background:rgba(255,255,255,.08); }
 .wheelcard .wheelsnd[aria-pressed="false"] { color:#ff8a7a; }
-.stage, .lights { position:absolute; inset:0; pointer-events:none;
-  border-radius:inherit; overflow:hidden; }
-.stage { z-index:0; }
-.lights { z-index:4; }
+.stage { position:absolute; inset:0; pointer-events:none;
+  border-radius:inherit; overflow:hidden; z-index:0; }
 .stage-pool { position:absolute; left:50%; top:42%; width:120%;
   aspect-ratio:1; transform:translate(-50%, -50%);
   background:radial-gradient(circle, rgba(255,196,120,.20) 0%,
@@ -1589,22 +1588,6 @@ td.c-add { text-align:right; white-space:nowrap; }
       #5a3418 26px 46px, #7a4a24 46px 62px);
   transform:perspective(260px) rotateX(48deg); transform-origin:50% 100%;
   border-top:2px solid rgba(201,151,63,.55); }
-/* The spotlights: soft cones that cross on the wheel and light it. */
-.spot { position:absolute; top:-12%; width:70%; height:115%;
-  transform-origin:50% 0; mix-blend-mode:screen; filter:blur(10px);
-  clip-path:polygon(44% 0, 56% 0, 100% 100%, 0 100%);
-  transition:opacity .6s ease; opacity:.42; }
-.spot.warm { left:-28%;
-  background:linear-gradient(rgba(255,232,180,.55), rgba(255,214,150,.18) 60%,
-    rgba(255,214,150,0) 92%);
-  animation:spotwarm 8s ease-in-out infinite alternate; }
-.spot.cool { right:-28%;
-  background:linear-gradient(rgba(255,250,238,.55), rgba(255,244,225,.17) 60%,
-    rgba(255,244,225,0) 92%);
-  animation:spotcool 10s ease-in-out infinite alternate; }
-.wheelcard.spinning .spot { opacity:.62; filter:blur(8px) brightness(1.15); }
-.wheelcard.spinning .spot.warm { animation-duration:2.6s; }
-.wheelcard.spinning .spot.cool { animation-duration:3.1s; }
 /* The sparkles: specks of gold drifting up through the light, now and then
    catching it; a few are little four-pointed stars. */
 .motes i { position:absolute; bottom:-8px; width:3px; height:3px;
@@ -1625,8 +1608,6 @@ td.c-add { text-align:right; white-space:nowrap; }
 @keyframes curtainsway { from { transform:skewY(0deg); } to { transform:skewY(1.2deg); } }
 @keyframes curtainsway2 { from { transform:scaleX(-1) skewY(0deg); }
   to { transform:scaleX(-1) skewY(1.4deg); } }
-@keyframes spotwarm { from { transform:rotate(-26deg); } to { transform:rotate(-16deg); } }
-@keyframes spotcool { from { transform:rotate(26deg); } to { transform:rotate(15deg); } }
 @keyframes moterise { from { transform:translateY(0) translateX(0); }
   to { transform:translateY(-110vh) translateX(var(--drift, 20px)); } }
 @keyframes motetwinkle { 0%, 100% { opacity:.15; } 50% { opacity:.95; } }
@@ -1654,8 +1635,8 @@ td.c-add { text-align:right; white-space:nowrap; }
 /* The lights on the wheel. Over its face exactly — the wheel is 95.24% of
    the box's width, and its top is 0.143 widths (12.78% of the box) down — and
    clipped round: the face falls into shadow towards the rim, and two pools
-   of light, warm and white, wander across it as the beams sway, so the
-   sectors flare as they pass under them. A soft halo keeps the wheel apart
+   of light, warm and white, wander across it, so the sectors flare as they
+   pass under them. A soft halo keeps the wheel apart
    from the dark behind it. */
 .wheellight { position:absolute; left:2.38%; width:95.24%; top:12.78%;
   aspect-ratio:1; border-radius:50%; overflow:hidden; pointer-events:none;
@@ -1688,7 +1669,7 @@ td.c-add { text-align:right; white-space:nowrap; }
     rgba(255,244,225,.11) 45%, rgba(255,244,225,0) 72%); }
 @media (prefers-reduced-motion: reduce) {
   .wheellight .pool { animation:none !important; }
-  .stage *, .lights *, .wheelcard.won::after { animation:none !important; }
+  .stage *, .wheelcard.won::after { animation:none !important; }
   .motes { display:none; }
 }
 @media (max-width:700px) {
@@ -2205,8 +2186,7 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
   <div class="wheelcard">
     <!-- The stage: velvet curtains, a gilded arch strung with bulbs, a warm
          pool of light, wooden boards in smoke, sparkles drifting up through
-         the light — and two spotlights crossing on the wheel. All decoration, none of it in the
-         way of a click. -->
+         the light. All decoration, none of it in the way of a click. -->
     <div class="stage" aria-hidden="true">
       <div class="stage-pool"></div>
       <div class="floor"></div>
@@ -2217,10 +2197,6 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
       <div class="arch-trim"></div>
       <div class="bulbs" id="bulbs"></div>
       <div class="motes" id="motes"></div>
-    </div>
-    <div class="lights" aria-hidden="true">
-      <div class="spot warm"></div>
-      <div class="spot cool"></div>
     </div>
     <button type="button" class="iconbtn wheelx" id="wheelclose"
       title="Close" aria-label="Close the wheel">&times;</button>
@@ -4754,18 +4730,18 @@ function playSpin(run, win) {
     while (k > 0 && run.path[k] - run.path[k - 1] < 0) k--;    // rolling back
     if (k > 0 && k < last) callAt = k;
   }
-  // The lights find the stick before the wheel has made up its mind: they
-  // gather on it from a second and a half before the seventh-last pin it
-  // passes, are nearly all there (0.8) by that pin, and the two beams meet
-  // on it a second before the winner is called.
+  // The wheel stays lit through the spin; only at the very end do the
+  // lights close in on the stick — from the fourth-last pin it passes, but
+  // no sooner than 2.5s before the winner is called — and the two pools
+  // meet there half a second before it is.
   var callT = callAt * WHEEL_DT;
   var pre = run.clicks.filter(function (c) { return c.t <= callT; });
-  var t7 = pre.length >= 7 ? pre[pre.length - 7].t : 0;
-  var fA = Math.max(0, t7 - 1.5), fB = Math.max(t7, callT - 1);
+  var t4 = pre.length >= 4 ? pre[pre.length - 4].t : 0;
+  var fA = Math.max(t4, callT - 2.5), fB = Math.max(fA + 0.4, callT - 0.5);
   function focusAt(t) {
     if (t <= fA) return 0;
-    if (t < t7) { var u = (t - fA) / (t7 - fA); return 0.8 * u * u * (3 - 2 * u); }
-    return fB > t7 ? 0.8 + 0.2 * Math.min(1, (t - t7) / (fB - t7)) : 1;
+    var u = Math.min(1, (t - fA) / (fB - fA));
+    return u * u * (3 - 2 * u);
   }
   function step(ts) {
     if (!wheel.open) { wheel.anim = null; return; }
@@ -4941,8 +4917,9 @@ function stageLights() {
     var dt = last === null ? 0 : Math.min(0.05, (ts - last) / 1000);
     last = ts;
     if (!still) phase += dt * (wheel.anim ? 2.6 : 1);
-    // Wandering, the two beams each trace a slow figure of their own. As the
-    // wheel runs down they gather on the sector under the stick, at the top
+    // Wandering, the two pools each trace a slow figure of their own; while
+    // the wheel spins they widen and the shadow lifts, so all of it is lit.
+    // At the very end they gather on the sector under the stick, at the top
     // of the wheel (wheel.focusW, from playSpin), and meet there; called,
     // the winner keeps them. Focused, they narrow and the rest dims.
     var wx1 = 36 + 20 * Math.sin(phase * 0.41), wy1 = 34 + 16 * Math.sin(phase * 0.57 + 1.3);
@@ -4950,13 +4927,12 @@ function stageLights() {
     var f = wheel.focus ? 1 : (wheel.focusW || 0);
     var ease = still ? 1 : Math.min(1, dt * (f ? 9 : 3.2));
     var L = wheel.light || (wheel.light = { x1: wx1, y1: wy1, x2: wx2, y2: wy2,
-                                            r: 29, shade: 0.72, aim: 0 });
-    var wr = wheel.anim ? 32 : 29;
+                                            r: 29, shade: 0.72 });
+    var wr = wheel.anim ? 40 : 29, ws = wheel.anim ? 0.26 : 0.72;
     function mix(a, b) { return a + (b - a) * f; }
     var t = { x1: mix(wx1, 50), y1: mix(wy1, 20), x2: mix(wx2, 50), y2: mix(wy2, 20),
-              r: mix(wr, 21), shade: mix(0.72, 0.86), aim: f };
+              r: mix(wr, 21), shade: mix(ws, 0.86) };
     Object.keys(t).forEach(function (k) { L[k] += (t[k] - L[k]) * ease; });
-    aimSpots(L.aim);
     box.style.setProperty('--x1', L.x1.toFixed(2) + '%');
     box.style.setProperty('--y1', L.y1.toFixed(2) + '%');
     box.style.setProperty('--x2', L.x2.toFixed(2) + '%');
@@ -4966,24 +4942,6 @@ function stageLights() {
     wheel.lightAnim = requestAnimationFrame(step);
   }
   wheel.lightAnim = requestAnimationFrame(step);
-}
-
-/* The beams themselves swing round to the stick as the lights gather: each
-   cone turned, by `aim` of the way, from the middle of its sway to point
-   from where it hangs at the top of the wheel. CSS rotate adds to the
-   sway's own transform. */
-function aimSpots(aim) {
-  var card = document.querySelector('.wheelcard'), wl = el('wheellight');
-  if (!card || !wl) return;
-  var cr = card.getBoundingClientRect(), r = wl.getBoundingClientRect();
-  var tx = r.left - cr.left + r.width / 2, ty = r.top - cr.top + r.height * 0.2;
-  [['warm', -21], ['cool', 20.5]].forEach(function (s) {
-    var sp = card.querySelector('.spot.' + s[0]);
-    if (!sp) return;
-    var ox = sp.offsetLeft + sp.offsetWidth / 2, oy = sp.offsetTop;
-    var want = Math.atan2(-(tx - ox), ty - oy) * 180 / Math.PI;
-    sp.style.rotate = aim > 0.001 ? (aim * (want - s[1])).toFixed(2) + 'deg' : '';
-  });
 }
 
 function stageSpinning(on) {

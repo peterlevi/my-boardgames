@@ -1626,7 +1626,8 @@ td.c-add { text-align:right; white-space:nowrap; }
   --x1:30%; --y1:30%; --x2:68%; --y2:62%; --r:29%; }
 /* The dark, with two soft holes where the beams land: inside them the
    sectors show at full strength, everywhere else they sink into shadow. */
-.wheellight .shade { position:absolute; inset:0; background:rgba(12,4,22,.72);
+.wheellight .shade { position:absolute; inset:0;
+  background:rgba(12,4,22,var(--shade, .72));
   -webkit-mask-image:
     radial-gradient(circle at var(--x1) var(--y1), transparent 0,
       rgba(0,0,0,.25) calc(var(--r) * .55), #000 var(--r)),
@@ -3833,6 +3834,12 @@ function wheelColor(i, n) {
   return WHEEL_COLORS[i % k];
 }
 
+/** How light a #rrggbb colour reads, 0-255. */
+function sectorLuma(hex) {
+  var c = hex.slice(1).match(/../g).map(function (h) { return parseInt(h, 16); });
+  return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+}
+
 function drawWheel() {
   var cv = el('wheelcanvas'), ctx = cv.getContext('2d');
   var dpr = window.devicePixelRatio || 1;
@@ -3867,10 +3874,12 @@ function drawWheel() {
     // wheel gets smaller letters.
     var fs = Math.max(8 * k, Math.min(13 * k, 2 * R * 0.6 * Math.sin(a / 2) * 0.42));
     ctx.font = '700 ' + fs + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
-    ctx.fillStyle = '#fff';
+    // Dark ink on the light sectors (cream, yellow, gold), white on the rest.
+    var light = sectorLuma(wheelColor(i, n)) > 185;
+    ctx.fillStyle = light ? '#1b1a17' : '#fff';
     ctx.textAlign = 'right';
     ctx.textBaseline = 'middle';
-    ctx.shadowColor = 'rgba(0,0,0,.35)';
+    ctx.shadowColor = light ? 'rgba(255,255,255,.35)' : 'rgba(0,0,0,.35)';
     ctx.shadowBlur = 3 * dpr;
     // With room for it, the game's cover in a small circle at the outer end
     // of its sector, its top towards the rim, turning with the wheel.
@@ -4334,6 +4343,7 @@ function spinWheel(seedText, prepareOnly) {
   wheel.searching = true;
   wheel.replay = null;
   wheel.won = null;
+  wheel.focus = false;
   clearWinFlash();
   if (!prepareOnly) {
     el('wheelagain').disabled = true;
@@ -4648,6 +4658,7 @@ function playReplay() {
   clearWinFlash();
   hideTapPill();
   setSeedBusy(true);
+  wheel.focus = false;
   rewindWheel(sp.r, function () {
     if (wheel.open && wheel.replay === sp) {
       playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
@@ -4798,6 +4809,7 @@ function clack(v, when) {
 /** k is the winning entry, so a renamed one is announced by its new name. */
 function announceWinner(k) {
   wheel.won = wheel.entries[k];
+  wheel.focus = true;
   var th = coverOf(wheel.entries[k]);
   wheelResult((th ? '<img alt="" src="' + esc(th) + '">' : '') +
     '<span><span class="wlabel">The wheel says</span><b>' + esc(wheel.labels[k]) +
@@ -4854,13 +4866,24 @@ function stageLights() {
     var dt = last === null ? 0 : Math.min(0.05, (ts - last) / 1000);
     last = ts;
     if (!still) phase += dt * (wheel.anim ? 2.6 : 1);
-    var x1 = 36 + 20 * Math.sin(phase * 0.41), y1 = 34 + 16 * Math.sin(phase * 0.57 + 1.3);
-    var x2 = 64 + 20 * Math.sin(phase * 0.33 + 2.2), y2 = 64 + 16 * Math.cos(phase * 0.47);
-    box.style.setProperty('--x1', x1.toFixed(2) + '%');
-    box.style.setProperty('--y1', y1.toFixed(2) + '%');
-    box.style.setProperty('--x2', x2.toFixed(2) + '%');
-    box.style.setProperty('--y2', y2.toFixed(2) + '%');
-    box.style.setProperty('--r', (wheel.anim ? 32 : 29) + '%');
+    // Wandering, the two beams each trace a slow figure of their own. Once a
+    // winner is called they both swing onto it — the sector under the stick,
+    // at the top of the wheel — narrow, and the rest of the wheel dims.
+    var wx1 = 36 + 20 * Math.sin(phase * 0.41), wy1 = 34 + 16 * Math.sin(phase * 0.57 + 1.3);
+    var wx2 = 64 + 20 * Math.sin(phase * 0.33 + 2.2), wy2 = 64 + 16 * Math.cos(phase * 0.47);
+    var f = wheel.focus ? 1 : 0;
+    var ease = still ? 1 : Math.min(1, dt * 3.2);
+    var L = wheel.light || (wheel.light = { x1: wx1, y1: wy1, x2: wx2, y2: wy2,
+                                            r: 29, shade: 0.72 });
+    var t = f ? { x1: 47, y1: 19, x2: 53, y2: 21, r: 21, shade: 0.86 }
+              : { x1: wx1, y1: wy1, x2: wx2, y2: wy2, r: wheel.anim ? 32 : 29, shade: 0.72 };
+    Object.keys(t).forEach(function (k) { L[k] += (t[k] - L[k]) * ease; });
+    box.style.setProperty('--x1', L.x1.toFixed(2) + '%');
+    box.style.setProperty('--y1', L.y1.toFixed(2) + '%');
+    box.style.setProperty('--x2', L.x2.toFixed(2) + '%');
+    box.style.setProperty('--y2', L.y2.toFixed(2) + '%');
+    box.style.setProperty('--r', L.r.toFixed(2) + '%');
+    box.style.setProperty('--shade', L.shade.toFixed(3));
     wheel.lightAnim = requestAnimationFrame(step);
   }
   wheel.lightAnim = requestAnimationFrame(step);
@@ -4915,6 +4938,7 @@ function closeWheel() {
   var won = wheel.won;
   wheel.won = null;
   wheel.open = false;
+  wheel.focus = false;
   stageSpinning(false);
   stopCountdown();
   hideTapPill();

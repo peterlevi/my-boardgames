@@ -1591,8 +1591,8 @@ td.c-add { text-align:right; white-space:nowrap; }
 @keyframes curtainsway { from { transform:skewY(0deg); } to { transform:skewY(1.2deg); } }
 @keyframes curtainsway2 { from { transform:scaleX(-1) skewY(0deg); }
   to { transform:scaleX(-1) skewY(1.4deg); } }
-@keyframes spotwarm { from { transform:rotate(-30deg); } to { transform:rotate(-18deg); } }
-@keyframes spotviolet { from { transform:rotate(30deg); } to { transform:rotate(17deg); } }
+@keyframes spotwarm { from { transform:rotate(-26deg); } to { transform:rotate(-16deg); } }
+@keyframes spotviolet { from { transform:rotate(26deg); } to { transform:rotate(15deg); } }
 @keyframes moterise { from { transform:translateY(0) translateX(0); }
   to { transform:translateY(-110vh) translateX(var(--drift, 20px)); } }
 @keyframes motetwinkle { 0%, 100% { opacity:.15; } 50% { opacity:.95; } }
@@ -1614,7 +1614,42 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelcard .wheelbtns .trayclear:hover { border-color:#d9b46a; }
 .wheelcard .wheelbtns .trayshow { background:linear-gradient(#a8323e, #7d1823);
   border-color:#c24453; color:#fff; }
+/* The lights on the wheel. Over its face exactly — the wheel is 95.24% of
+   the box's width, and its top is 0.143 widths (12.78% of the box) down — and
+   clipped round: the face falls into shadow towards the rim, and two pools
+   of light, warm and violet, wander across it as the beams sway, so the
+   sectors flare as they pass under them. A soft halo keeps the wheel apart
+   from the dark behind it. */
+.wheellight { position:absolute; left:2.38%; width:95.24%; top:12.78%;
+  aspect-ratio:1; border-radius:50%; overflow:hidden; pointer-events:none;
+  z-index:1; box-shadow:0 0 46px 8px rgba(255,190,110,.2);
+  --x1:30%; --y1:30%; --x2:68%; --y2:62%; --r:29%; }
+/* The dark, with two soft holes where the beams land: inside them the
+   sectors show at full strength, everywhere else they sink into shadow. */
+.wheellight .shade { position:absolute; inset:0; background:rgba(12,4,22,.72);
+  -webkit-mask-image:
+    radial-gradient(circle at var(--x1) var(--y1), transparent 0,
+      rgba(0,0,0,.25) calc(var(--r) * .55), #000 var(--r)),
+    radial-gradient(circle at var(--x2) var(--y2), transparent 0,
+      rgba(0,0,0,.25) calc(var(--r) * .55), #000 var(--r));
+  mask-image:
+    radial-gradient(circle at var(--x1) var(--y1), transparent 0,
+      rgba(0,0,0,.25) calc(var(--r) * .55), #000 var(--r)),
+    radial-gradient(circle at var(--x2) var(--y2), transparent 0,
+      rgba(0,0,0,.25) calc(var(--r) * .55), #000 var(--r));
+  -webkit-mask-composite:source-in; mask-composite:intersect; }
+/* And the colour of each beam, faintly, with a hot centre. */
+.wheellight .pool { position:absolute; width:calc(var(--r) * 2); aspect-ratio:1;
+  border-radius:50%; transform:translate(-50%, -50%); mix-blend-mode:screen;
+  filter:blur(4px); }
+.wheellight .pool.warm { left:var(--x1); top:var(--y1);
+  background:radial-gradient(circle, rgba(255,240,205,.34) 0%,
+    rgba(255,220,160,.12) 45%, rgba(255,220,160,0) 72%); }
+.wheellight .pool.violet { left:var(--x2); top:var(--y2);
+  background:radial-gradient(circle, rgba(225,185,255,.30) 0%,
+    rgba(190,130,255,.10) 45%, rgba(190,130,255,0) 72%); }
 @media (prefers-reduced-motion: reduce) {
+  .wheellight .pool { animation:none !important; }
   .stage *, .lights *, .wheelcard.won::after { animation:none !important; }
   .motes { display:none; }
 }
@@ -2159,6 +2194,11 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
         stroke-linecap="round"><path d="M10.5 6l4 4M14.5 6l-4 4"/></g></svg></button>
     <div class="wheelbox">
       <canvas id="wheelcanvas" width="480" height="537"></canvas>
+      <!-- The stage lights where they land: pools of light on the wheel's
+           face, clipped to it, the rest of it falling into shadow. -->
+      <div class="wheellight" id="wheellight" aria-hidden="true"
+        ><i class="shade"></i><i class="pool warm"></i
+        ><i class="pool violet"></i></div>
       <div class="wheelcount" id="wheelcount" aria-live="assertive"></div>
       <button type="button" class="wheeltap" id="wheeltap" hidden
         >&#9654; Tap to spin</button>
@@ -4442,6 +4482,7 @@ function openReplay(spin) {
   // The first render has already rewritten the address without it.
   writeUrl(false);
   el('wheel').hidden = false;
+  stageLights();
   setReplayMode(true, spin.s);
   el('wheellinkurl').value = location.href;
   el('wheellink').classList.remove('off');
@@ -4802,6 +4843,29 @@ function stageMotes() {
   }
   host.innerHTML = html;
 }
+/* Where the two beams land on the wheel's face, as percentages of it: each
+   wanders on a slow figure of its own, faster while the wheel spins. */
+function stageLights() {
+  if (wheel.lightAnim) return;
+  var box = el('wheellight'), last = null, phase = Math.random() * 100;
+  var still = reducedMotion();
+  function step(ts) {
+    if (!wheel.open) { wheel.lightAnim = null; return; }
+    var dt = last === null ? 0 : Math.min(0.05, (ts - last) / 1000);
+    last = ts;
+    if (!still) phase += dt * (wheel.anim ? 2.6 : 1);
+    var x1 = 36 + 20 * Math.sin(phase * 0.41), y1 = 34 + 16 * Math.sin(phase * 0.57 + 1.3);
+    var x2 = 64 + 20 * Math.sin(phase * 0.33 + 2.2), y2 = 64 + 16 * Math.cos(phase * 0.47);
+    box.style.setProperty('--x1', x1.toFixed(2) + '%');
+    box.style.setProperty('--y1', y1.toFixed(2) + '%');
+    box.style.setProperty('--x2', x2.toFixed(2) + '%');
+    box.style.setProperty('--y2', y2.toFixed(2) + '%');
+    box.style.setProperty('--r', (wheel.anim ? 32 : 29) + '%');
+    wheel.lightAnim = requestAnimationFrame(step);
+  }
+  wheel.lightAnim = requestAnimationFrame(step);
+}
+
 function stageSpinning(on) {
   var c = document.querySelector('.wheelcard');
   if (c) c.classList.toggle('spinning', !!on);
@@ -4826,6 +4890,7 @@ function openWheel() {
   wheel.won = null;
   wheel.open = true;
   el('wheel').hidden = false;
+  stageLights();
   el('wheellink').classList.add('off');
   setReplayMode(false);
   wheel.prepared = null;

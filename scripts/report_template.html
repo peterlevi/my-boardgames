@@ -4245,6 +4245,15 @@ function openReplay(spin) {
   wheel.link = spin.raw;
   wheel.won = null;
   wheel.open = true;
+  // The tray becomes the list that was drawn from — games, entries typed in
+  // by hand, and the names they were given — and opens behind the wheel, so
+  // closing the wheel shows what was spun for, not this browser's own list.
+  if (!picking) setPicking(true);
+  tray = spin.entries.slice();
+  trayNames = spin.entries.map(function (e, k) {
+    return spin.labels[k] !== entryName(e) ? spin.labels[k] : null;
+  });
+  trayChanged();
   // The first render has already rewritten the address without it.
   writeUrl(false);
   el('wheel').hidden = false;

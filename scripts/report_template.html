@@ -3575,8 +3575,10 @@ el('pickedit').addEventListener('click', function () { setPicking(true); });
    from the browser's cryptographic generator, with rejection so no entry is
    favoured by the modulo — and the spin is then aimed at a point inside its
    sector. What the wheel shows is therefore exactly what was drawn. */
-var WHEEL_COLORS = ['#b3414c', '#c0952b', '#3f8a5f', '#3778a8', '#8560a4',
-                    '#d0703a', '#2d7a4d', '#7a5c3e', '#b94a75', '#5b71ac'];
+// Tabletop jewel tones: deep and warm enough to sit with the page, and no
+// two neighbours alike in hue or in weight.
+var WHEEL_COLORS = ['#1f7a7a', '#d9a521', '#c8553d', '#6a4c93', '#3a7d44',
+                    '#2b4c7e', '#e07a5f', '#8a9a3b', '#8e2c48', '#4f6d9a'];
 var wheel = { open: false, rot: 0, psi: 0, entries: [], anim: null,
               searching: false };
 
@@ -3809,7 +3811,11 @@ var WHEEL_G = { rp: 0.985, pr: 0.021, rr: 0.011, Ls: 0.2 };
 WHEEL_G.py = WHEEL_G.rp + 0.003 + WHEEL_G.Ls;   // the tip rests level with the pins
 // zeta: well damped, so a stick let go at full lift snaps back with a small
 // overshoot rather than swinging far out the other side.
-var WHEEL_P = { mu: 0.1, c: 0.12, kappa: 0.10, wf: 2 * Math.PI * 30,
+// c: a strong drag that grows with speed, so a fast throw loses most of its
+// speed in the first seconds; mu: a light constant friction, so what is left
+// dies out slowly over the last two or three sectors — and light enough that
+// the stick (kappa) can push a wheel stopped against a pin back off it.
+var WHEEL_P = { mu: 0.04, c: 0.85, kappa: 0.15, wf: 2 * Math.PI * 30,
                 zeta: 0.55 };
 var WHEEL_DT = 1 / 240;
 
@@ -3957,7 +3963,11 @@ function wheelSim(theta0, omega0, n, record) {
       }
     }
     if (record) { path.push(th); flaps.push(psi); }
-    if (w === 0 && Math.abs(vpsi) < 0.05) {
+    // Stopped: still, or so nearly that nobody could see it move. With the
+    // stick's push and the friction all but balanced, the wheel can creep at
+    // millionths of a radian a second for a long while before it is exactly
+    // still.
+    if (Math.abs(w) < 0.002 && Math.abs(vpsi) < 0.05) {
       still += WHEEL_DT;
       if (still > 0.3) break;
     } else {
@@ -4071,7 +4081,7 @@ function spinWheel(seedText) {
   // Back to the resting place first, briskly, if the last spin left it
   // anywhere else.
   rewindWheel(from, function () {
-    // Throws for a seventeen-to-twenty-one-second spin. With a drag that
+    // Throws for a six-to-eight-second spin. With a drag that
     // grows with speed and a constant one, a wheel thrown at v stops after
     // ln(1 + c v / mu) / c seconds, near enough — the pegs take a little off.
     var P = WHEEL_P;
@@ -4084,7 +4094,9 @@ function spinWheel(seedText) {
     var bestOf = [null, null], scoreOf = [-1e9, -1e9], want = wantPass ? 1 : 0;
     var stuck = null, stuckScore = -1e9;
     for (var round = 0; round < 4 && bestOf[want] === null; round++) {
-      var lo = throwFor(17 - 2 * round), span = throwFor(21 + 2 * round) - lo;
+      // Six to eight seconds of spin; a last pin that pushes the wheel back
+      // adds a second or so of rocking, which keeps the whole within nine.
+      var lo = throwFor(6 - 0.5 * round), span = throwFor(7.8 + 0.2 * round) - lo;
       for (var i = 0; i < 120; i++) {
         var v = lo + span * (i + rand()) / 120;
         var r = wheelSim(from, v, n, false);

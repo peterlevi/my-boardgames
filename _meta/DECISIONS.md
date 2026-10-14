@@ -602,8 +602,8 @@ pegs that really fought the flapper score high when one barely got through
 back. Every bounce on screen is the simulation's own; only the throw was
 chosen, and choosing it never changes which entry wins. Throws are taken
 from the friction law itself — a wheel thrown at v stops after about
-ln(1 + c·v/μ)/c seconds — so spins last seventeen to twenty-one seconds,
-starting at under two turns a second.
+ln(1 + c·v/μ)/c seconds — so spins last six to nine seconds, starting at one
+to six turns a second.
 
 Every spin comes from a seed — a random word like `amber-otter-17`, or one
 you type. The seed (hashed with xmur3, then mulberry32: integer arithmetic,
@@ -642,9 +642,11 @@ whole length, the pins as discs, with the lift table covering the stick
 leaning either way — so a stick swinging back after letting one pin go is
 blocked by the next one too. The stick is re-seated against its pins after
 the wheel moves in each step, so a drawn frame never shows the one-step lag
-that put the stick a pixel inside a pin. Static friction is no stronger
-than the stick (mu 0.1, with more of the braking in the speed-dependent
-drag, c 0.12): a stopped wheel with a pin pressed against the bent stick is
+that put the stick a pixel inside a pin. The constant friction is light
+(mu 0.04) and most of the braking is a strong speed-dependent drag (c 0.85),
+so a throw of one to six turns a second loses half its speed in under a
+second and the last two or three sectors are a slow crawl, in six to nine
+seconds all told; the stick is stiff enough (kappa 0.15) that a stopped wheel with a pin pressed against the bent stick is
 pushed back off it, as a real flapper does, instead of freezing with the
 stick balanced on the pin — and the drama score rejects endings where the
 stick is still leaning on one.

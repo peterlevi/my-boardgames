@@ -4624,9 +4624,12 @@ function openWheel() {
   wheelResult('');
   drawWheel();
   el('wheeldone').focus();
-  // A beat to take the wheel in; spinWheel then picks the seed, shows the
-  // link, counts down, and goes.
-  setTimeout(function () { if (wheel.open) spinWheel(); }, 350);
+  // It waits for Tap to spin, like a sent spin: the tap is the occasion's
+  // start, and spinWheel then picks the seed (a typed one, if there is one),
+  // shows the link, counts down, and goes.
+  showTapPill('Tap to spin', function () {
+    spinWheel(seedTyped ? el('wheelseedq').value : '');
+  });
 }
 
 function closeWheel() {

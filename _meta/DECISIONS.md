@@ -635,6 +635,19 @@ through ("kamen" showed it). The table now holds its last value up to the
 edge and the slope is measured inside the contact only; the stick is well
 damped (ζ 0.55), so it snaps back with a degree or two of overshoot.
 
+Stick and pins are collided as exactly the shapes that are drawn: the stick
+as a capsule (a bar of half-width rr from pivot to rounded tip) along its
+whole length, the pins as discs, with the lift table covering the stick
+leaning either way — so a stick swinging back after letting one pin go is
+blocked by the next one too. The stick is re-seated against its pins after
+the wheel moves in each step, so a drawn frame never shows the one-step lag
+that put the stick a pixel inside a pin. Static friction is no stronger
+than the stick (mu 0.1, with more of the braking in the speed-dependent
+drag, c 0.12): a stopped wheel with a pin pressed against the bent stick is
+pushed back off it, as a real flapper does, instead of freezing with the
+stick balanced on the pin — and the drama score rejects endings where the
+stick is still leaning on one.
+
 Browsers only let a page play sound after a click, and an audio context
 made before one (a sent spin opens on load) stays suspended until resumed
 during one. Every click and key in the wheel resumes it, and a speaker

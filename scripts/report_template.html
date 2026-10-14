@@ -1359,7 +1359,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelsnd[aria-pressed="false"] .off { display:inline; }
 .wheelsnd[aria-pressed="false"] { color:var(--warn); }
 .wheelbox { position:relative; width:min(480px, 72vmin);
-  aspect-ratio:21 / 23; }
+  aspect-ratio:42 / 47; }
 #wheelcanvas { width:100%; height:100%; display:block; }
 .wheelresult { min-height:3.2em; text-align:center; display:flex;
   align-items:center; justify-content:center; gap:12px; }
@@ -1909,7 +1909,7 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
         /></g><g class="off" fill="none" stroke="currentColor" stroke-width="1.5"
         stroke-linecap="round"><path d="M10.5 6l4 4M14.5 6l-4 4"/></g></svg></button>
     <div class="wheelbox">
-      <canvas id="wheelcanvas" width="480" height="526"></canvas>
+      <canvas id="wheelcanvas" width="480" height="537"></canvas>
     </div>
     <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
     <!-- The seed: every spin has one, and the same seed is the same spin. -->
@@ -3524,14 +3524,14 @@ function drawWheel() {
   var cv = el('wheelcanvas'), ctx = cv.getContext('2d');
   var dpr = window.devicePixelRatio || 1;
   var box = cv.getBoundingClientRect();
-  var cssW = box.width || 480, cssH = box.height || cssW * 23 / 21;
+  var cssW = box.width || 480, cssH = box.height || cssW * 47 / 42;
   if (cv.width !== Math.round(cssW * dpr)) {
     cv.width = Math.round(cssW * dpr);
     cv.height = Math.round(cssH * dpr);
   }
   // The wheel's radius in device pixels, its centre low enough in the canvas
   // to leave room above for the flapper and its mount.
-  var R = cv.width / 2.1, cx = cv.width / 2, cy = 1.25 * R;
+  var R = cv.width / 2.1, cx = cv.width / 2, cy = 1.3 * R;
   var k = R / 480 * 2.1;                       // device px per "480px wheel" px
   var n = wheel.entries.length, a = 2 * Math.PI / n;
   ctx.clearRect(0, 0, cv.width, cv.height);
@@ -3613,12 +3613,14 @@ function drawFlapper(ctx, cx, cy, R, dpr) {
   var bx = cx, by = cy - G.py * R;                          // the pivot
   var ux = Math.sin(psi), uy = Math.cos(psi);              // down the stick
   var tx = bx + G.Ls * R * ux, ty = by + G.Ls * R * uy;    // the tip
-  var w0 = 0.022 * R, w1 = G.tw * R;                       // tapering to the tip
+  // Wider at the pivot, tapering to exactly the collision width well before
+  // it comes anywhere near a pin.
+  var w0 = 0.018 * R, w1 = G.rr * R;
   var nx = uy, ny = -ux;                                   // across it
   ctx.save();
-  ctx.shadowColor = 'rgba(0,0,0,.3)';
-  ctx.shadowBlur = 4 * dpr;
-  ctx.shadowOffsetY = 1.5 * dpr;
+  ctx.shadowColor = 'rgba(0,0,0,.25)';
+  ctx.shadowBlur = 2 * dpr;
+  ctx.shadowOffsetY = 1 * dpr;
   ctx.beginPath();
   ctx.moveTo(bx + nx * w0, by + ny * w0);
   ctx.lineTo(tx + nx * w1, ty + ny * w1);
@@ -3722,11 +3724,15 @@ function wheelResult(html) { el('wheelresult').innerHTML = html; }
    wheel's centre; angles are clockwise. Stepped at 240Hz, in steps small
    enough for no peg to skip past the stick while one is near it, so a run
    is exactly repeatable. */
-var WHEEL_G = { rp: 0.99, pr: 0.016, tw: 0.010, Ls: 0.15 };
-WHEEL_G.py = WHEEL_G.rp + 0.006 + WHEEL_G.Ls;   // the tip rests just above the pegs
+/* The stick is a rigid bar of half-width rr, a capsule from the pivot to its
+   rounded tip, and a pin is a disc of radius pr — collided as exactly the
+   shapes that are drawn, along the stick's whole length, so the two can
+   never be seen overlapping. */
+var WHEEL_G = { rp: 0.985, pr: 0.021, rr: 0.011, Ls: 0.2 };
+WHEEL_G.py = WHEEL_G.rp + 0.003 + WHEEL_G.Ls;   // the tip rests level with the pins
 // zeta: well damped, so a stick let go at full lift snaps back with a small
 // overshoot rather than swinging far out the other side.
-var WHEEL_P = { mu: 0.3, c: 0.06, kappa: 0.10, wf: 2 * Math.PI * 30,
+var WHEEL_P = { mu: 0.1, c: 0.12, kappa: 0.10, wf: 2 * Math.PI * 30,
                 zeta: 0.55 };
 var WHEEL_DT = 1 / 240;
 
@@ -3736,19 +3742,25 @@ var WHEEL_DT = 1 / 240;
    peg first touches, REL where it slips underneath. From the right it is the
    same, mirrored. */
 var WHEEL_LIFT = (function () {
-  var G = WHEEL_G, PHI = 0.12, N = 1200, tab = new Float64Array(N + 1);
-  var r = G.pr + G.tw, IN = null, REL = null;
+  // NONE: the pin is nowhere near the stick, whatever its angle.
+  var G = WHEEL_G, PHI = 0.18, N = 1800, tab = new Float64Array(N + 1), NONE = -9;
+  var r = G.pr + G.rr, IN = null, REL = null;
   for (var i = 0; i <= N; i++) {
     var ph = -PHI + 2 * PHI * i / N;
     var px = G.rp * Math.sin(ph), py = G.rp * Math.cos(ph);
+    // From the pin's centre to the nearest point of the stick's centre line.
     var dist = function (s) {
-      return Math.sqrt(Math.pow(G.Ls * Math.sin(s) - px, 2) +
-                       Math.pow(G.py - G.Ls * Math.cos(s) - py, 2));
+      var bx = G.Ls * Math.sin(s), by = -G.Ls * Math.cos(s);   // pivot to tip
+      var qx = px, qy = py - G.py;                              // pivot to pin
+      var t = Math.max(0, Math.min(1, (qx * bx + qy * by) / (G.Ls * G.Ls)));
+      return Math.sqrt(Math.pow(qx - t * bx, 2) + Math.pow(qy - t * by, 2));
     };
-    var top = -1, sv;
-    for (sv = 0; sv <= 1.4; sv += 0.002) if (dist(sv) < r) top = sv;
-    var lift = 0;
-    if (top >= 0) {
+    // Over every angle the stick can take, leaning either way: a stick
+    // swinging back after letting one pin go must not swing into the next.
+    var top = NONE, sv;
+    for (sv = -0.7; sv <= 1.4; sv += 0.002) if (dist(sv) < r) top = sv;
+    var lift = NONE;
+    if (top !== NONE) {
       var lo = top, hi = Math.min(1.4, top + 0.01);
       for (var k = 0; k < 40; k++) {
         var m = (lo + hi) / 2;
@@ -3756,24 +3768,27 @@ var WHEEL_LIFT = (function () {
       }
       lift = hi;
     }
-    if (IN === null && lift > 0) IN = ph;
-    if (IN !== null && REL === null && lift === 0) REL = ph;
+    if (IN === null && lift !== NONE) IN = ph;
+    if (IN !== null && REL === null && lift === NONE) REL = ph;
     // Rounded, so the last-digit differences one browser's sin and cos may
     // have from another's cannot change a replayed spin (see spinLink).
-    tab[i] = REL === null ? Math.round(lift * 1e7) / 1e7 : 0;
+    tab[i] = REL === null && lift !== NONE ? Math.round(lift * 1e7) / 1e7 : NONE;
   }
+  // The least angle the stick may take with a pin at ph coming from the left
+  // (it may be negative: only a stick leaning well over is in the way), or
+  // NONE where the pin cannot touch it at all.
   var at = function (ph) {
-    if (ph <= IN || ph >= REL) return 0;
+    if (ph <= IN || ph >= REL) return NONE;
     var f = (ph + PHI) / (2 * PHI) * N, j = Math.floor(f), t = f - j;
-    // The release is an edge, not a slope: the tip leaves the peg from
-    // wherever it is. Interpolating down to the zero beyond it made a cliff
-    // one table step wide, and its slope — through the gearing that turns
-    // the stick's spring into torque — gave the wheel a violent shove in the
-    // instant a slow peg got through.
-    if (tab[j + 1] === 0 && tab[j] > 0) return tab[j];
+    // Both ends are edges, not slopes. At the release the stick leaves the
+    // pin from wherever it is: interpolating down past it made a cliff one
+    // table step wide whose slope, through the gearing that turns the
+    // stick's spring into torque, shoved the wheel as a slow pin got through.
+    if (tab[j + 1] === NONE) return tab[j];
+    if (tab[j] === NONE) return tab[j + 1];
     return tab[j] * (1 - t) + tab[j + 1] * t;
   };
-  return { at: at, IN: IN, REL: REL, max: Math.max.apply(null, tab) };
+  return { at: at, IN: IN, REL: REL, NONE: NONE, max: Math.max.apply(null, tab) };
 })();
 
 var WHEEL_PSI_MAX = WHEEL_LIFT.max + 0.04;
@@ -3807,8 +3822,11 @@ function wheelSim(theta0, omega0, n, record) {
         var j = j0 + q, ph = j * a + th, e = eng[j];
         var fromL = L.at(ph), fromR = L.at(-ph);
         if (!e) {
-          if (fromL > 0 && psi < fromL && w > 0) e = eng[j] = { side: 1, max: 0, minW: Math.abs(w) };
-          else if (fromR > 0 && psi > -fromR && w < 0) e = eng[j] = { side: -1, max: 0, minW: Math.abs(w) };
+          // A pin in the stick's way, from the side the wheel is bringing
+          // it — or, if it is not moving, from whichever side it is on.
+          var goingL = w > 0 || (w === 0 && ph < 0);
+          if (fromL !== L.NONE && psi < fromL && goingL) e = eng[j] = { side: 1, max: 0, minW: Math.abs(w) };
+          else if (fromR !== L.NONE && psi > -fromR && !goingL) e = eng[j] = { side: -1, max: 0, minW: Math.abs(w) };
           else continue;
         }
         var x = e.side * ph;                     // the peg's angle as seen from its side
@@ -3831,20 +3849,34 @@ function wheelSim(theta0, omega0, n, record) {
           var slope = sHi > sLo ? (L.at(sHi) - L.at(sLo)) / (sHi - sLo) : 0;
           psi = need;
           vpsi = slope * w;
-          tauW -= P.kappa * psi * e.side * slope;
+          // Only a stick bent away from rest pushes back on the pin; one
+          // leaning the other way is being righted by the pin and its spring
+          // together, and costs the wheel nothing.
+          if (psi * e.side > 0) tauW -= P.kappa * psi * e.side * slope;
         }
         e.max = Math.max(e.max, Math.abs(psi));
         e.minW = Math.min(e.minW, Math.abs(w));
       }
-      // Kinetic friction while it turns; static once it has all but stopped,
-      // holding the wheel unless something pushes harder than it grips.
-      if (Math.abs(w) < 0.01 && Math.abs(tauW) <= P.mu * 1.3) {
+      // Kinetic friction while it turns; static once it has all but stopped.
+      // Static friction no stronger than the stick: a stopped wheel with a
+      // pin pressed against the bent stick is pushed back off it, as a real
+      // flapper does, rather than held there for good.
+      if (Math.abs(w) < 0.01 && Math.abs(tauW) <= P.mu) {
         w = 0;
       } else {
         var dir = w > 0 ? 1 : w < 0 ? -1 : (tauW > 0 ? 1 : -1);
         var w2 = w + (tauW - P.mu * dir) * h;
         w = (w !== 0 && (w2 > 0) !== (w > 0) && Math.abs(tauW) <= P.mu) ? 0 : w2;
         th += w * h;
+      }
+      // The wheel has moved since the stick was set against its pins: set it
+      // again, so stick and pin are where each other says — two rigid things
+      // touching, never overlapping, in every frame that is drawn.
+      for (var ej in eng) {
+        var en = eng[ej], xx = en.side * (+ej * a + th);
+        if (xx <= L.IN || xx >= L.REL) continue;
+        var nn = en.side * L.at(xx);
+        if (en.side > 0 ? psi < nn : psi > nn) psi = nn;
       }
     }
     if (record) { path.push(th); flaps.push(psi); }
@@ -3858,7 +3890,7 @@ function wheelSim(theta0, omega0, n, record) {
   }
   for (var kk in eng) { eng[kk].passed = false; eps.push(eng[kk]); }
   var rest = ((-th) % TAU + TAU) % TAU;
-  return { sector: Math.floor(rest / a) % n, t: t, path: path, flaps: flaps,
+  return { sector: Math.floor(rest / a) % n, t: t, path: path, flaps: flaps, endPsi: psi,
            clicks: clicks, eps: eps };
 }
 
@@ -3876,6 +3908,9 @@ function wheelDrama(run) {
   }
   var last = fights[fights.length - 1], prev = fights[fights.length - 2];
   var score = 0.6 * close(last) + 0.4 * close(prev);
+  // Not one that ends with the stick still leaning on a pin: balanced there,
+  // it reads as stuck rather than as a close call.
+  if (Math.abs(run.endPsi) > 0.08) score -= 1;
   // Stopped by the last peg it could not get over: the wheel rocks back.
   if (last && !last.passed && close(last) > 0.6) score += 0.15;
   return score;

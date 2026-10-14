@@ -4140,25 +4140,30 @@ function wheelHome(n) {
  *  from the resting place, and of those that genuinely come to rest on the
  *  winner, the one with the most dramatic ending is played back. Every
  *  bounce on screen is the simulation's own; only the throw was chosen. */
-function spinWheel(seedText) {
+/** prepareOnly: work the spin out and show its seed and link, but wait —
+ *  the wheel has just opened and is waiting for Tap to spin. */
+function spinWheel(seedText, prepareOnly) {
   var n = wheel.entries.length;
   if (!n || wheel.anim || wheel.searching || wheel.counting) return;
   var seed = String(seedText || '').trim() || randomSeed();
   el('wheelseedq').value = seed;
   seedTyped = false;
+  wheel.prepared = null;
   var rand = seededRandom(seed);
   var win = Math.floor(rand() * n), from = wheelHome(n);
   // And how it ends, on a fair coin: the last pin to fight the stick either
   // gets over it or is stopped by it, half the time each.
   var wantPass = rand() < 0.5;
-  el('wheelagain').disabled = true;
   wheelResult('');            // the wheel says it is spinning
   wheel.searching = true;
   wheel.replay = null;
   wheel.won = null;
   clearWinFlash();
-  hideTapPill();
-  setSeedBusy(true);
+  if (!prepareOnly) {
+    el('wheelagain').disabled = true;
+    hideTapPill();
+    setSeedBusy(true);
+  }
   // Back to the resting place first, briskly, if the last spin left it
   // anywhere else.
   rewindWheel(from, function () {
@@ -4203,6 +4208,7 @@ function spinWheel(seedText) {
     // before it happens; then the countdown; then the wheel goes.
     setSpinLink(from, best, seed);
     var run = wheelSim(from, best, n, true);
+    if (prepareOnly) { wheel.prepared = { seed: seed, run: run, win: win }; return; }
     countdown(function () { if (wheel.open) playSpin(run, win); });
   });
 }
@@ -4411,6 +4417,24 @@ function beep(freq, len, delay) {
   o.connect(g); g.connect(ac.destination);
   o.start(t);
   o.stop(t + len + 0.02);
+}
+
+/** Start a spin: the one already worked out, if the seed field still shows
+ *  its seed; otherwise a fresh one from what is in the field (or a random
+ *  seed). A tap that comes while the prepared spin is still being worked
+ *  out waits for it. */
+function startSpin() {
+  if (wheel.searching) { setTimeout(startSpin, 50); return; }
+  var p = wheel.prepared, typed = el('wheelseedq').value.trim();
+  wheel.prepared = null;
+  if (p && typed === p.seed) {
+    hideTapPill();
+    el('wheelagain').disabled = true;
+    setSeedBusy(true);
+    countdown(function () { if (wheel.open) playSpin(p.run, p.win); });
+  } else {
+    spinWheel(seedTyped ? typed : '');
+  }
 }
 
 /** The seed can't be changed while a spin is under way — from choosing the
@@ -4639,6 +4663,7 @@ function openWheel() {
   el('wheel').hidden = false;
   el('wheellink').classList.add('off');
   setReplayMode(false);
+  wheel.prepared = null;
   wheel.rot = wheelHome(wheel.entries.length);
   wheel.psi = 0;
   wheelResult('');
@@ -4647,9 +4672,9 @@ function openWheel() {
   // It waits for Tap to spin, like a sent spin: the tap is the occasion's
   // start, and spinWheel then picks the seed (a typed one, if there is one),
   // shows the link, counts down, and goes.
-  showTapPill('Tap to spin', function () {
-    spinWheel(seedTyped ? el('wheelseedq').value : '');
-  });
+  // The seed and the link straight away; the tap plays exactly that.
+  spinWheel('', true);
+  showTapPill('Tap to spin', startSpin);
 }
 
 function closeWheel() {
@@ -4715,8 +4740,8 @@ el('wheelsnd').addEventListener('click', function () {
 });
 el('wheelagain').addEventListener('click', function () {
   if (wheel.replay) { playReplay(); return; }
-  // A seed you typed is spun as it is; otherwise a fresh one.
-  spinWheel(seedTyped ? el('wheelseedq').value : '');
+  // The prepared spin, a seed you typed, or a fresh one.
+  startSpin();
 });
 var seedTyped = false;
 el('wheelseedq').addEventListener('input', function () { seedTyped = true; });
@@ -4728,9 +4753,9 @@ el('wheelseedq').addEventListener('keydown', function (e) {
   }
 });
 el('wheelseeddice').addEventListener('click', function () {
-  el('wheelseedq').value = randomSeed();
-  seedTyped = true;
-  el('wheelseedq').focus();
+  // A new seed, worked out at once so the link shown is always this one's.
+  if (wheel.anim || wheel.searching || wheel.counting || wheel.replay) return;
+  spinWheel(randomSeed(), true);
 });
 el('wheellinkcopy').addEventListener('click', function () {
   var box = el('wheellinkurl'), btn = el('wheellinkcopy');

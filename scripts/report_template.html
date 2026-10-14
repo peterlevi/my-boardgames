@@ -6709,6 +6709,21 @@ function applyUrlState() {
     syncSelects();
     markSort();
     render();
+    // And the wheel: an address that carries a spin opens it on that spin —
+    // a link pasted into a tab already showing this page arrives here, not
+    // as a fresh load — and one that no longer does closes it.
+    var m = /(?:^|&)spin=([^&]*)/.exec(hash);
+    if (m && m[1] !== wheel.link) {
+      var sent = readSpinLink(m[1]);
+      if (sent) {
+        if (wheel.anim) { cancelAnimationFrame(wheel.anim); wheel.anim = null; }
+        stopConfetti();
+        openReplay(sent);
+      }
+    } else if (!m && wheel.open) {
+      wheel.won = null;               // leaving by history, not by choosing
+      closeWheel();
+    }
   } finally {
     applyingUrl = false;
   }

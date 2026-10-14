@@ -1519,19 +1519,11 @@ td.c-add { text-align:right; white-space:nowrap; }
   box-shadow:0 24px 80px rgba(0,0,0,.6), inset 0 0 60px rgba(0,0,0,.6);
   padding-left:clamp(22px, 9%, 54px); padding-right:clamp(22px, 9%, 54px);
   overflow:hidden; isolation:isolate; }
-.wheelcard > :not(.stage):not(.wheelx):not(.wheelsnd):not(.wheelbox):not(.zoomshade) {
+.wheelcard > :not(.stage):not(.wheelx):not(.wheelsnd) {
   position:relative; z-index:3; }
-/* The wheel under everything else on the stage, so that zoomed in it runs
-   on behind the answer and the controls, which a shade keeps readable. */
-.wheelcard > .wheelbox { z-index:2; }
-.zoomshade { position:absolute; left:0; right:0; bottom:0; height:45%; z-index:2;
-  pointer-events:none; opacity:0; transition:opacity 1.2s ease;
-  background:linear-gradient(rgba(6,2,2,0), rgba(6,2,2,.88) 40%); }
-.wheelcard.zoomed .zoomshade { opacity:1; }
-/* The camera: at the end of a spin the whole scene pushes in on the stick —
-   the wheel (by wheelZoom) and, a little, the stage around it. */
-.stage { transform-origin:50% 10%; transition:transform 1.4s cubic-bezier(.45,0,.2,1); }
-.wheelcard.zoomed .stage { transform:scale(1.15); }
+/* The camera: at the end of a spin the wheel pushes in on the stick (by
+   wheelZoom), inside its own frame, the stage around it left as it is. */
+.wheelcard.zoomed .wheelbox { overflow:hidden; }
 .wheelzoom { position:absolute; inset:0; transform-origin:0 0;
   transition:transform 1.4s cubic-bezier(.45,0,.2,1); }
 .wheelcard .wheelx, .wheelcard .wheelsnd { z-index:5; color:#e9d8b4; }
@@ -1583,14 +1575,15 @@ td.c-add { text-align:right; white-space:nowrap; }
   background:radial-gradient(ellipse 60% 143px at 50% 169px, transparent 97.2%,
     #6b4a17 97.4%, #f6dc8e 98.4%, #c9973f 99.2%, #7a5418 100%, transparent 100.3%);
   filter:drop-shadow(0 3px 4px rgba(0,0,0,.7)); }
-/* The bulbs: warm, glowing, each on its own slow flicker; spinning, they
-   chase round in order; a winner sets them all blinking at once. */
+/* The bulbs: warm, glowing, always chasing round in order — at a stroll
+   at rest, racing while the wheel spins; a winner sets them all blinking
+   at once. */
 .bulbs i { position:absolute; width:7px; height:7px; margin:-3.5px 0 0 -3.5px;
   border-radius:50%;
   background:radial-gradient(circle at 40% 35%, #fffbea 0 25%, #ffd27a 55%, #b8761f);
   box-shadow:0 0 6px 2px rgba(255,205,120,.75), 0 0 18px 5px rgba(255,165,70,.28);
-  animation:bulbglow 2.6s ease-in-out infinite;
-  animation-delay:calc(var(--i) * -0.37s); }
+  animation:bulbchase 2.4s linear infinite;
+  animation-delay:calc(var(--i) * 0.12s); }
 .wheelcard.spinning .bulbs i { animation:bulbchase .9s linear infinite;
   animation-delay:calc(var(--i) * 0.06s); }
 .wheelcard.won .bulbs i { animation:bulbwin .32s steps(1) 5; }
@@ -1626,7 +1619,6 @@ td.c-add { text-align:right; white-space:nowrap; }
 @keyframes moterise { from { transform:translateY(0) translateX(0); }
   to { transform:translateY(-110vh) translateX(var(--drift, 20px)); } }
 @keyframes motetwinkle { 0%, 100% { opacity:.15; } 50% { opacity:.95; } }
-@keyframes bulbglow { 0%, 100% { opacity:1; } 50% { opacity:.6; } }
 @keyframes bulbchase { 0% { opacity:1; } 30% { opacity:.25; } 100% { opacity:.25; } }
 @keyframes bulbwin { 0% { opacity:.15; } 50% { opacity:1; } }
 @keyframes stageflare { 0% { opacity:0; } 20% { opacity:1; } 100% { opacity:0; } }
@@ -1685,7 +1677,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 @media (prefers-reduced-motion: reduce) {
   .wheellight .pool { animation:none !important; }
   .stage *, .wheelcard.won::after { animation:none !important; }
-  .stage, .wheelzoom { transition:none; }
+  .wheelzoom { transition:none; }
   .motes { display:none; }
 }
 @media (max-width:700px) {
@@ -2237,7 +2229,6 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
       <button type="button" class="wheeltap" id="wheeltap" hidden
         >&#9654; Tap to spin</button>
     </div>
-    <div class="zoomshade" aria-hidden="true"></div>
     <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
     <!-- The seed: every spin has one, and the same seed is the same spin. -->
     <div class="wheelseed">
@@ -5001,7 +4992,6 @@ function wheelZoom(on, instant) {
   clearTimeout(wheel.zoomT);
   var z = WHEEL_ZOOM;
   zb.style.transition = instant ? 'none' : '';
-  card.querySelector('.stage').style.transition = instant ? 'none' : '';
   zb.style.transform = on ? 'translate(' + (50 * (1 - z)).toFixed(2) + '%,' +
     ((0.12 - 0.143 * z) * 42 / 47 * 100).toFixed(2) + '%) scale(' + z + ')' : '';
   card.classList.toggle('zoomed', !!on);

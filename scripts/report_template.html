@@ -1415,6 +1415,8 @@ td.c-add { text-align:right; white-space:nowrap; }
   border-radius:999px; box-shadow:1.2cqw 1.6cqw 0 rgba(0,0,0,.35);
   animation:tappulse 1.1s ease-in-out infinite; }
 .wheeltap:hover { background:var(--accent); }
+/* Zoomed in on a winner, the pill drops low, clear of the name. */
+.wheelcard.zoomed .wheeltap { top:84%; }
 @keyframes tappulse {
   0%, 100% { transform:translate(-50%, -50%) rotate(-4deg) scale(1); }
   50% { transform:translate(-50%, -50%) rotate(-4deg) scale(1.08); } }
@@ -1517,8 +1519,21 @@ td.c-add { text-align:right; white-space:nowrap; }
   box-shadow:0 24px 80px rgba(0,0,0,.6), inset 0 0 60px rgba(0,0,0,.6);
   padding-left:clamp(22px, 9%, 54px); padding-right:clamp(22px, 9%, 54px);
   overflow:hidden; isolation:isolate; }
-.wheelcard > :not(.stage):not(.wheelx):not(.wheelsnd) {
+.wheelcard > :not(.stage):not(.wheelx):not(.wheelsnd):not(.wheelbox):not(.zoomshade) {
   position:relative; z-index:3; }
+/* The wheel under everything else on the stage, so that zoomed in it runs
+   on behind the answer and the controls, which a shade keeps readable. */
+.wheelcard > .wheelbox { z-index:2; }
+.zoomshade { position:absolute; left:0; right:0; bottom:0; height:45%; z-index:2;
+  pointer-events:none; opacity:0; transition:opacity 1.2s ease;
+  background:linear-gradient(rgba(6,2,2,0), rgba(6,2,2,.88) 40%); }
+.wheelcard.zoomed .zoomshade { opacity:1; }
+/* The camera: at the end of a spin the whole scene pushes in on the stick —
+   the wheel (by wheelZoom) and, a little, the stage around it. */
+.stage { transform-origin:50% 10%; transition:transform 1.4s cubic-bezier(.45,0,.2,1); }
+.wheelcard.zoomed .stage { transform:scale(1.15); }
+.wheelzoom { position:absolute; inset:0; transform-origin:0 0;
+  transition:transform 1.4s cubic-bezier(.45,0,.2,1); }
 .wheelcard .wheelx, .wheelcard .wheelsnd { z-index:5; color:#e9d8b4; }
 .wheelcard .wheelx:hover, .wheelcard .wheelsnd:hover { color:#fff;
   background:rgba(255,255,255,.08); }
@@ -1670,6 +1685,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 @media (prefers-reduced-motion: reduce) {
   .wheellight .pool { animation:none !important; }
   .stage *, .wheelcard.won::after { animation:none !important; }
+  .stage, .wheelzoom { transition:none; }
   .motes { display:none; }
 }
 @media (max-width:700px) {
@@ -2209,16 +2225,19 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
         /></g><g class="off" fill="none" stroke="currentColor" stroke-width="1.5"
         stroke-linecap="round"><path d="M10.5 6l4 4M14.5 6l-4 4"/></g></svg></button>
     <div class="wheelbox">
+      <div class="wheelzoom" id="wheelzoom">
       <canvas id="wheelcanvas" width="480" height="537"></canvas>
       <!-- The stage lights where they land: pools of light on the wheel's
            face, clipped to it, the rest of it falling into shadow. -->
       <div class="wheellight" id="wheellight" aria-hidden="true"
         ><i class="shade"></i><i class="pool warm"></i
         ><i class="pool cool"></i></div>
+      </div>
       <div class="wheelcount" id="wheelcount" aria-live="assertive"></div>
       <button type="button" class="wheeltap" id="wheeltap" hidden
         >&#9654; Tap to spin</button>
     </div>
+    <div class="zoomshade" aria-hidden="true"></div>
     <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
     <!-- The seed: every spin has one, and the same seed is the same spin. -->
     <div class="wheelseed">
@@ -3857,9 +3876,12 @@ function sectorLuma(hex) {
 
 function drawWheel() {
   var cv = el('wheelcanvas'), ctx = cv.getContext('2d');
-  var dpr = window.devicePixelRatio || 1;
-  var box = cv.getBoundingClientRect();
-  var cssW = box.width || 480, cssH = box.height || cssW * 47 / 42;
+  // Zoomed in, drawn that much finer too, so the close-up stays sharp. Its
+  // layout size, not its on-screen one, which the zoom's transform scales.
+  var dpr = (window.devicePixelRatio || 1) * (wheel.zoomRes || 1);
+  var cssW = cv.offsetWidth || 480, cssH = cv.offsetHeight || cssW * 47 / 42;
+  // But never past 16 million pixels, the most some phones will draw.
+  dpr = Math.min(dpr, Math.sqrt(16e6 / (cssW * cssH)));
   if (cv.width !== Math.round(cssW * dpr)) {
     cv.width = Math.round(cssW * dpr);
     cv.height = Math.round(cssH * dpr);
@@ -4005,6 +4027,21 @@ function wheelImg(e) {
   return im.complete && im.naturalWidth ? im : null;
 }
 
+/** The full-size cover, for the close-up of a winner: fetched when the spin
+ *  that lands on it starts, so it is there by the time the camera is. */
+var wheelBig = {};
+function wheelBigImg(e, onlyIfReady) {
+  if (isFree(e) || !DATA[e] || !DATA[e].img) return null;
+  var im = wheelBig[e];
+  if (!im) {
+    if (onlyIfReady) return null;
+    im = wheelBig[e] = new Image();
+    im.onload = function () { if (wheel.open && wheel.zoomRes > 1 && !wheel.anim) drawWheel(); };
+    im.src = DATA[e].img;
+  }
+  return im.complete && im.naturalWidth ? im : null;
+}
+
 /** One cover, in the sector's own frame (x out along the radius): a circle
  *  centred at x, cropped from the middle of the cover, turned so its top
  *  faces the rim. Something added by hand gets its initial instead. */
@@ -4018,7 +4055,7 @@ function wheelThumb(ctx, e, label, x, d, dpr) {
   if (ctx.roundRect) ctx.roundRect(-d / 2, -d / 2, d, d, d * 0.16);
   else ctx.rect(-d / 2, -d / 2, d, d);
   ctx.closePath();
-  var im = wheelImg(e);
+  var im = (wheel.zoomRes > 1 && wheelBigImg(e, true)) || wheelImg(e);
   if (im) {
     ctx.clip();
     var s = Math.min(im.naturalWidth, im.naturalHeight);
@@ -4362,6 +4399,7 @@ function spinWheel(seedText, prepareOnly) {
   wheel.focusW = 0;
   clearWinFlash();
   if (!prepareOnly) {
+    wheelZoom(false);
     el('wheelagain').disabled = true;
     hideTapPill();
     setSeedBusy(true);
@@ -4676,6 +4714,7 @@ function playReplay() {
   setSeedBusy(true);
   wheel.focus = false;
   wheel.focusW = 0;
+  wheelZoom(false);
   rewindWheel(sp.r, function () {
     if (wheel.open && wheel.replay === sp) {
       playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
@@ -4688,6 +4727,7 @@ function playSpin(run, win) {
   // The run's own answer, which for a fresh spin is the one drawn and for a
   // sent one is the one it always comes to.
   if (run) win = run.sector;
+  wheelBigImg(wheel.entries[win]);
   var announced = false;
   function announce() {
     if (announced) return;
@@ -4764,6 +4804,7 @@ function playSpin(run, win) {
     wheel.rot = run.path[idx];
     wheel.psi = run.flaps[idx];
     wheel.focusW = focusAt(el_s);
+    if (wheel.focusW > 0) wheelZoom(true);
     drawWheel();
     if (idx >= callAt) announce();
     if (idx < last) wheel.anim = requestAnimationFrame(step);
@@ -4841,6 +4882,7 @@ function clack(v, when) {
 function announceWinner(k) {
   wheel.won = wheel.entries[k];
   wheel.focus = true;
+  wheelZoom(true);
   var th = coverOf(wheel.entries[k]);
   wheelResult((th ? '<img alt="" src="' + esc(th) + '">' : '') +
     '<span><span class="wlabel">The wheel says</span><b>' + esc(wheel.labels[k]) +
@@ -4944,6 +4986,33 @@ function stageLights() {
   wheel.lightAnim = requestAnimationFrame(step);
 }
 
+/* The camera. In: the wheel scaled up about the stick — centred across,
+   its rim a little below the top of its box — and redrawn finer to match;
+   out: back to the whole wheel, and to the ordinary resolution once there.
+   Percentages of the wheel's box, whose width is W and height 47/42 W; the
+   rim is 0.143 W down. Instant when closing, or for reduced motion. */
+var WHEEL_ZOOM = 3.4;
+function wheelZoom(on, instant) {
+  var zb = el('wheelzoom'), card = document.querySelector('.wheelcard');
+  if (!zb || !card) return;
+  if (reducedMotion()) { if (on) return; instant = true; }
+  if (!!wheel.zoomed === !!on && !instant) return;
+  wheel.zoomed = !!on;
+  clearTimeout(wheel.zoomT);
+  var z = WHEEL_ZOOM;
+  zb.style.transition = instant ? 'none' : '';
+  card.querySelector('.stage').style.transition = instant ? 'none' : '';
+  zb.style.transform = on ? 'translate(' + (50 * (1 - z)).toFixed(2) + '%,' +
+    ((0.12 - 0.143 * z) * 42 / 47 * 100).toFixed(2) + '%) scale(' + z + ')' : '';
+  card.classList.toggle('zoomed', !!on);
+  if (on) { wheel.zoomRes = z; drawWheel(); return; }
+  if (instant) { wheel.zoomRes = 1; return; }
+  wheel.zoomT = setTimeout(function () {
+    wheel.zoomRes = 1;
+    if (wheel.open && !wheel.anim) drawWheel();
+  }, 1450);
+}
+
 function stageSpinning(on) {
   var c = document.querySelector('.wheelcard');
   if (c) c.classList.toggle('spinning', !!on);
@@ -4996,6 +5065,7 @@ function closeWheel() {
   wheel.open = false;
   wheel.focus = false;
   wheel.focusW = 0;
+  wheelZoom(false, true);
   stageSpinning(false);
   stopCountdown();
   hideTapPill();

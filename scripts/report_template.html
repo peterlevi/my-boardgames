@@ -4139,12 +4139,18 @@ function playSpin(run, win) {
   // The run's own answer, which for a fresh spin is the one drawn and for a
   // sent one is the one it always comes to.
   if (run) win = run.sector;
+  var announced = false;
+  function announce() {
+    if (announced) return;
+    announced = true;
+    announceWinner(win);
+  }
   function done() {
     wheel.anim = null;
     wheel.psi = 0;
     drawWheel();
     el('wheelagain').disabled = false;
-    announceWinner(win);
+    announce();
   }
   if (!run || reducedMotion()) {
     // Straight to the answer: the middle of the winning sector.
@@ -4153,6 +4159,17 @@ function playSpin(run, win) {
     return;
   }
   var t0 = null, last = run.path.length - 1, ci = 0, lastClack = -1;
+  // A last pin that cannot get over sends the wheel back into the sector it
+  // came from, and that is the answer: it is said the moment the wheel turns
+  // back, not after it has finished settling. That moment is where the
+  // wheel's final run backwards begins.
+  var callAt = last;
+  if (!lastPinPassed(run)) {
+    var k = last;
+    while (k > 0 && run.path[k] - run.path[k - 1] >= 0) k--;   // still at rest
+    while (k > 0 && run.path[k] - run.path[k - 1] < 0) k--;    // rolling back
+    if (k > 0 && k < last) callAt = k;
+  }
   function step(ts) {
     if (!wheel.open) { wheel.anim = null; return; }
     if (t0 === null) t0 = ts;
@@ -4174,6 +4191,7 @@ function playSpin(run, win) {
     wheel.rot = run.path[idx];
     wheel.psi = run.flaps[idx];
     drawWheel();
+    if (idx >= callAt) announce();
     if (idx < last) wheel.anim = requestAnimationFrame(step);
     else done();
   }

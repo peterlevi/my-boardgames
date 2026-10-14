@@ -1364,6 +1364,16 @@ td.c-add { text-align:right; white-space:nowrap; }
   box-shadow:0 24px 70px rgba(0,0,0,.35); padding:22px 22px 18px;
   width:min(560px, 100%); max-height:100%; overflow:auto;
   display:flex; flex-direction:column; align-items:center; gap:14px; }
+/* A phone: the whole screen, and the wheel as big as the width allows. */
+@media (max-width:700px) {
+  .wheelpop { padding:0; }
+  .wheelcard { width:100%; height:100%; max-height:none; border-radius:0;
+    box-shadow:none; justify-content:center; padding:48px 16px 20px; }
+  /* .wheelcard ahead of it: the general rule comes later in the sheet. */
+  .wheelcard .wheelbox {
+    width:min(calc(100vw - 32px), calc((100vh - 300px) * 42 / 47));
+    width:min(calc(100vw - 32px), calc((100dvh - 300px) * 42 / 47)); }
+}
 .wheelx { position:absolute; top:10px; right:10px; font-size:1.3rem;
   line-height:1; }
 /* Sound on or off, top left: off shows a cross instead of the waves. */
@@ -1416,11 +1426,11 @@ td.c-add { text-align:right; white-space:nowrap; }
   z-index:70; pointer-events:none; display:none; }
 
 @media (max-width:700px) {
-  /* No room for a column beside the cards: the tray is a sheet along the
-     bottom instead, and the cards keep the full width above it. */
-  :root.picking .wrap { padding-bottom:52vh; }
-  #tray { top:auto; left:0; width:auto; height:46vh; border-left:0;
-    border-top:1px solid var(--line); box-shadow:0 -8px 24px rgba(0,0,0,.12); }
+  /* No room for a column beside the cards: the tray takes the whole screen,
+     games come in through Search and add at its top, and Show just these
+     closes it on the list it made. The page underneath stays put. */
+  :root.picking { overflow:hidden; }
+  #tray { left:0; width:auto; border-left:0; }
   /* In the card's top-right corner, where the cover and the ratings leave
      the first line empty: in the strip it would take a line of its own. */
   :root.picking tr.game-row { position:relative; }
@@ -3525,9 +3535,14 @@ el('trayshow').addEventListener('click', function () {
     syncSelects();
     refreshTagList();
     chosen = trayGames();
-    // The tray stays open: what is showing is the answer to it, and the next
-    // change to the picks is made right there.
-    render();
+    // Beside the table the tray stays open: what is showing is the answer to
+    // it, and the next change to the picks is made right there. On a phone
+    // the tray covers the list, so it closes on it.
+    if (window.matchMedia && window.matchMedia('(max-width:700px)').matches) {
+      setPicking(false);
+    } else {
+      render();
+    }
   });
   flashTable();
 });

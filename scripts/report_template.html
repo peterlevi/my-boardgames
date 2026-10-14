@@ -1365,7 +1365,9 @@ td.c-add { text-align:right; white-space:nowrap; }
   width:min(480px, 72vmin, calc((100vh - 300px) * 42 / 47));
   width:min(480px, 72vmin, calc((100dvh - 300px) * 42 / 47)); }
 #wheelcanvas { width:100%; height:100%; display:block; }
-.wheelresult { min-height:3.2em; text-align:center; display:flex;
+/* As tall as the winner's cover from the start, so announcing it does not
+   grow the card. */
+.wheelresult { min-height:56px; text-align:center; display:flex;
   align-items:center; justify-content:center; gap:12px; }
 .wheelresult img { width:56px; height:56px; object-fit:contain;
   border-radius:9px; background:var(--tile); }
@@ -1383,7 +1385,9 @@ td.c-add { text-align:right; white-space:nowrap; }
   font-size:.9rem; font-weight:700; color:var(--ink); background:var(--panel);
   border:1px solid var(--line); border-radius:6px; padding:5px 8px; }
 .wheelseed input:focus { outline:none; border-color:var(--accent); }
-/* The link that replays this exact spin. */
+/* The link that replays this exact spin. Its row is always there, only
+   invisible until there is a link, so the card keeps one height. */
+.wheellink.off { visibility:hidden; }
 .wheellink { display:flex; align-items:center; gap:10px; width:100%;
   align-self:stretch; font-size:.8rem; }
 .wheellink input { flex:1 1 0; width:auto; min-width:0; font:inherit; font-size:.78rem;
@@ -1932,7 +1936,7 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
             fill="currentColor"/><circle cx="11" cy="11" r="1.2"
             fill="currentColor"/></svg></button>
     </div>
-    <div class="wheellink" id="wheellink" hidden>
+    <div class="wheellink off" id="wheellink">
       <input id="wheellinkurl" readonly aria-label="Link to this spin">
       <button type="button" class="link" id="wheellinkcopy">Copy link</button>
     </div>
@@ -4057,7 +4061,7 @@ function setSpinLink(from, v, seed) {
   }));
   writeUrl(false);
   el('wheellinkurl').value = location.href;
-  el('wheellink').hidden = false;
+  el('wheellink').classList.remove('off');
 }
 
 function readSpinLink(text) {
@@ -4098,7 +4102,7 @@ function openReplay(spin) {
   el('wheelseedq').value = spin.s;
   seedTyped = false;
   el('wheellinkurl').value = location.href;
-  el('wheellink').hidden = false;
+  el('wheellink').classList.remove('off');
   wheelResult('<span class="spinning">A spin someone sent: press play.</span>');
   drawWheel();
   el('wheelagain').focus();
@@ -4232,7 +4236,7 @@ function openWheel() {
   wheel.link = null;
   wheel.open = true;
   el('wheel').hidden = false;
-  el('wheellink').hidden = true;
+  el('wheellink').classList.add('off');
   el('wheelagain').textContent = 'Spin again';
   el('wheelagain').disabled = false;
   el('wheelseedq').value = '';

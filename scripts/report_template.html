@@ -4064,7 +4064,7 @@ function spinWheel(seedText) {
   // gets over it or is stopped by it, half the time each.
   var wantPass = rand() < 0.5;
   el('wheelagain').disabled = true;
-  wheelResult('<span class="spinning">Spinning…</span>');
+  wheelResult('');            // the wheel says it is spinning
   wheel.searching = true;
   wheel.replay = null;
   wheel.won = null;
@@ -4431,7 +4431,7 @@ el('wheelagain').addEventListener('click', function () {
     wheel.replay = null;
     el('wheelagain').textContent = 'Spin again';
     el('wheelagain').disabled = true;
-    wheelResult('<span class="spinning">Spinning…</span>');
+    wheelResult('');            // the wheel says it is spinning
     playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
     return;
   }

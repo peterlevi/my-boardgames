@@ -1187,13 +1187,17 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 .pickbtn[aria-pressed="true"] { filter:brightness(.82);
   box-shadow:inset 0 2px 6px rgba(0,0,0,.35); }
 /* A phone has no room beside the title for it: the button takes a row of its
-   own under the header, full width like the tray's own buttons, with the
-   source link at its end. */
+   own under the header, full width like the tray's own buttons, and the
+   source link goes back to the top right corner, level with the title. */
 @media (max-width:700px) {
-  .masthead { flex-direction:column; align-items:stretch; gap:12px; }
-  .mastright { gap:14px; }
-  .mastright .pickbtn { flex:1 1 auto; order:1; }
-  .mastright #repo { order:2; }
+  .masthead { position:relative; flex-direction:column; align-items:stretch;
+    gap:12px; }
+  /* Room for the source link beside the title, and only there: the line
+     under it has the full width. */
+  .mastleft .titlebar { padding-right:34px; }
+  .mastright { display:block; }
+  .mastright .pickbtn { width:100%; }
+  .mastright #repo { position:absolute; top:0; right:0; height:1.95rem; }
 }
 
 .c-add { display:none; }

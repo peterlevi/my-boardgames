@@ -551,10 +551,11 @@ picks is made right there. The tray in progress is a per-browser
 convenience and lives in localStorage only. Opening or closing the tray never
 changes what the table shows: applied picks stay applied (the chip's × is the
 way back to the whole collection), and opening the tray over them loads them
-into it to edit. "Show just
-these" clears the search and filters — the search that found the games would
-otherwise hide most of them — but keeps the player count and its rule, as
-clicking a tag does. If those hide a pick, the result line says how many.
+into it to edit. "Show just these" clears every filter — the search, the
+player count and ranking by fit included, as Reset filters would — so the
+table is exactly the picks, and a picked expansion shows whatever the
+expansions setting says. Filters set afterwards narrow the picks, and the
+result line says how many they hide.
 
 ## D-30 — The wheel draws first, then physics finds a throw that agrees
 

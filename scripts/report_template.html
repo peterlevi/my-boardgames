@@ -3848,12 +3848,95 @@ el('pickedit').addEventListener('click', function () { setPicking(true); });
    from the browser's cryptographic generator, with rejection so no entry is
    favoured by the modulo — and the spin is then aimed at a point inside its
    sector. What the wheel shows is therefore exactly what was drawn. */
-// Tabletop jewel tones: deep and warm enough to sit with the page, and no
-// two neighbours alike in hue or in weight.
+// Tabletop jewel tones, for the confetti.
 var WHEEL_COLORS = ['#1f7a7a', '#d9a521', '#c8553d', '#6a4c93', '#3a7d44',
                     '#2b4c7e', '#e07a5f', '#8a9a3b', '#8e2c48', '#4f6d9a'];
 var wheel = { open: false, rot: 0, psi: 0, entries: [], anim: null,
               searching: false };
+// The wheel itself is dark oak, every sector alike, lettered in gold — and
+// the same gold counts down and calls the winner.
+var WHEEL_GOLD = '#e2bb62';
+
+/* Dark oak, drawn once: a brown ground with long wavering grain lines,
+   darker and lighter, the occasional knot of tighter ones. Plain
+   Math.random — it is texture, not the draw. */
+var woodTile = null;
+function woodTexture() {
+  if (woodTile) return woodTile;
+  var c = document.createElement('canvas'), W = 512, H = 512;
+  c.width = W; c.height = H;
+  var x = c.getContext('2d');
+  var g = x.createLinearGradient(0, 0, 0, H);
+  g.addColorStop(0, '#3a2414'); g.addColorStop(0.5, '#33200f'); g.addColorStop(1, '#3a2414');
+  x.fillStyle = g;
+  x.fillRect(0, 0, W, H);
+  for (var l = 0; l < 140; l++) {
+    var y0 = Math.random() * H, amp = 2 + Math.random() * 7;
+    var f1 = 0.004 + Math.random() * 0.01, f2 = 0.02 + Math.random() * 0.03;
+    var ph = Math.random() * 6.3, dark = Math.random() < 0.6;
+    x.beginPath();
+    for (var px = -4; px <= W + 4; px += 4) {
+      var py = y0 + amp * Math.sin(px * f1 + ph) + 1.2 * Math.sin(px * f2 + ph * 2);
+      if (px === -4) x.moveTo(px, py); else x.lineTo(px, py);
+    }
+    x.lineWidth = 0.6 + Math.random() * 2.2;
+    x.strokeStyle = dark ? 'rgba(18,9,3,' + (0.25 + Math.random() * 0.35).toFixed(2) + ')'
+                         : 'rgba(120,78,42,' + (0.12 + Math.random() * 0.2).toFixed(2) + ')';
+    x.stroke();
+    // Wrap the line round so the tile repeats without a seam.
+    x.save(); x.translate(0, y0 > H / 2 ? -H : H); x.stroke(); x.restore();
+  }
+  woodTile = c;
+  return c;
+}
+
+/* The wheel's wood, at rest (sector 0 from the top, clockwise), for n
+   sectors of radius R device pixels: each sector its own wedge of oak, the
+   grain running out from the hub as in a wheel made of wedges, every other
+   one a shade darker so neighbours part; on a crowded wheel, one sheet of
+   it. Drawn once per size and count, then only turned, so a spin costs one
+   image per frame rather than a wedge of pattern per sector. */
+var woodDiscCache = null;
+function woodDisc(n, R) {
+  var key = n + '|' + Math.round(R);
+  if (woodDiscCache && woodDiscCache.key === key) return woodDiscCache.c;
+  var c = document.createElement('canvas'), S = Math.ceil(2 * R) + 2;
+  c.width = c.height = S;
+  var x = c.getContext('2d'), m = S / 2, a = 2 * Math.PI / n;
+  var wood = x.createPattern(woodTexture(), 'repeat'), ws = R / 520;
+  if (n > 60) {
+    x.beginPath();
+    x.arc(m, m, R, 0, 2 * Math.PI);
+    x.clip();
+    x.translate(m, m);
+    x.scale(ws, ws);
+    x.fillStyle = wood;
+    x.fillRect(-R / ws, -R / ws, 2 * R / ws, 2 * R / ws);
+  } else {
+    for (var i = 0; i < n; i++) {
+      var start = -Math.PI / 2 + i * a;
+      x.save();
+      x.beginPath();
+      x.moveTo(m, m);
+      x.arc(m, m, R, start, start + a);
+      x.closePath();
+      x.clip();
+      x.translate(m, m);
+      x.rotate(start + a / 2);
+      x.scale(ws, ws);
+      x.translate(0, (i * 197) % 512);
+      x.fillStyle = wood;
+      x.fillRect(0, -R / ws - 512, R / ws + 4, 2 * R / ws + 1024);
+      if (i % 2) {
+        x.fillStyle = 'rgba(0,0,0,.22)';
+        x.fillRect(0, -R / ws - 512, R / ws + 4, 2 * R / ws + 1024);
+      }
+      x.restore();
+    }
+  }
+  woodDiscCache = { key: key, c: c };
+  return c;
+}
 
 function fairIndex(n) {
   if (n <= 1) return 0;
@@ -3862,32 +3945,6 @@ function fairIndex(n) {
   var buf = new Uint32Array(1), limit = Math.floor(4294967296 / n) * n;
   do { c.getRandomValues(buf); } while (buf[0] >= limit);
   return buf[0] % n;
-}
-
-/** Colours round the wheel, never the same twice side by side — including
- *  across the seam between the last sector and the first. */
-function wheelColor(i, n) {
-  var k = WHEEL_COLORS.length;
-  // A crowded wheel — sectors only a few pixels wide — would blur the
-  // palette, repeated round it every ten sectors, into grey: there it runs
-  // once round the whole wheel instead, each colour fading into the next.
-  if (n > 60) {
-    var t = i / n * k, c0 = Math.floor(t), f = t - c0;
-    var A = WHEEL_COLORS[c0 % k], B = WHEEL_COLORS[(c0 + 1) % k];
-    return '#' + [1, 3, 5].map(function (o) {
-      var x = Math.round(parseInt(A.substr(o, 2), 16) * (1 - f) +
-                         parseInt(B.substr(o, 2), 16) * f);
-      return (x < 16 ? '0' : '') + x.toString(16);
-    }).join('');
-  }
-  if (n > 1 && i === n - 1 && (n - 1) % k === 0) return WHEEL_COLORS[1];
-  return WHEEL_COLORS[i % k];
-}
-
-/** How light a #rrggbb colour reads, 0-255. */
-function sectorLuma(hex) {
-  var c = hex.slice(1).match(/../g).map(function (h) { return parseInt(h, 16); });
-  return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
 }
 
 function drawWheel() {
@@ -3916,17 +3973,23 @@ function drawWheel() {
   // pixels there — they would only grey the colours over.
   var sepW = Math.min(1.5 * dpr, R * a / 3), seps = R * a >= 4 * dpr;
   ctx.clearRect(0, 0, cv.width, cv.height);
+  // The oak, made once for this size and number of sectors (woodDisc) and
+  // turned with the wheel.
+  ctx.save();
+  ctx.translate(cx, cy);
+  ctx.rotate(wheel.rot);
+  var disc = woodDisc(n, R);
+  ctx.drawImage(disc, -disc.width / 2, -disc.height / 2);
+  ctx.restore();
   for (var i = 0; i < n; i++) {
     var start = -Math.PI / 2 + i * a + wheel.rot;
     ctx.beginPath();
     ctx.moveTo(cx, cy);
     ctx.arc(cx, cy, R, start, start + a);
     ctx.closePath();
-    ctx.fillStyle = wheelColor(i, n);
-    ctx.fill();
     if (seps) {
       ctx.lineWidth = sepW;
-      ctx.strokeStyle = '#1b1a17';
+      ctx.strokeStyle = '#120a04';
       ctx.stroke();
     }
     // The name along the sector's middle, reading outward from the hub.
@@ -3937,12 +4000,11 @@ function drawWheel() {
     // wheel gets smaller letters.
     var fs = Math.max(8 * k, Math.min(13 * k, 2 * R * 0.6 * half * 0.42));
     ctx.font = '700 ' + fs + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
-    // Dark ink on the light sectors (cream, yellow, gold), white on the rest.
-    var light = sectorLuma(wheelColor(i, n)) > 185;
-    ctx.fillStyle = light ? '#1b1a17' : '#fff';
+    // Gold leaf on the oak.
+    ctx.fillStyle = WHEEL_GOLD;
     ctx.textAlign = 'right';
     ctx.textBaseline = 'middle';
-    ctx.shadowColor = light ? 'rgba(255,255,255,.35)' : 'rgba(0,0,0,.35)';
+    ctx.shadowColor = 'rgba(0,0,0,.6)';
     ctx.shadowBlur = 3 * dpr;
     // With room for it, the game's cover in a small circle at the outer end
     // of its sector, its top towards the rim, turning with the wheel.
@@ -4730,7 +4792,7 @@ el('wheeltap').addEventListener('click', function () {
    middle, huge, each in a colour off the wheel, and the wheel goes on the
    word. A beep with each number and a brighter chord on the word, when the
    browser lets the page make a sound. Skipped with reduced motion. */
-var COUNT_COLORS = ['#e07a5f', '#d9a521', '#1f7a7a'];
+var COUNT_COLORS = [WHEEL_GOLD, WHEEL_GOLD, WHEEL_GOLD];
 function countdown(then) {
   var box = el('wheelcount');
   hideTapPill();
@@ -4750,11 +4812,10 @@ function countdown(then) {
       wheel.countT = setTimeout(next, 720);
       return;
     }
-    // The word, one colour per letter, and the wheel goes with it.
-    box.innerHTML = '<span class="word" style="--rot:-4deg">' +
-      'Spinning!'.split('').map(function (ch, i) {
-        return '<i style="color:' + WHEEL_COLORS[(i * 3) % WHEEL_COLORS.length] +
-          '">' + ch + '</i>';
+    // The word, in the wheel's gold, and the wheel goes with it.
+    box.innerHTML = '<span class="word" style="--rot:-4deg;color:' + WHEEL_GOLD + '">' +
+      'Spinning!'.split('').map(function (ch) {
+        return '<i>' + ch + '</i>';
       }).join('') + '</span>';
     beep(880, 0.18);
     beep(1320, 0.22, 0.06);
@@ -5031,7 +5092,7 @@ function announceWinner(k) {
  *  two lines. */
 function flashWinner(k) {
   var name = wheel.labels[k] || '';
-  var colour = wheelColor(k, wheel.entries.length);
+  var colour = WHEEL_GOLD;
   var size = Math.max(7.5, Math.min(16, 120 / Math.max(6, Math.min(name.length, 22))));
   clearTimeout(wheel.countT);
   el('wheelcount').innerHTML = '<span class="win" style="--rot:-4deg;color:' +

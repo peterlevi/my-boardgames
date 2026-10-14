@@ -622,9 +622,8 @@ in the link as `o`) so the winner's sector is under the stick at a point
 inside it the seed picks — the same as dealing the names round the wheel
 from a random place. A crowded wheel drops what would only smear: names
 once a sector's outer end is narrower than the letters, separator lines
-under four pixels, and past 60 entries the palette runs once round the
-whole wheel, fading colour to colour, instead of repeating every ten
-sectors (which blurs to grey). The winner's sector is outlined in light
+under four pixels, and past 60 entries the oak is one sheet rather than
+a wedge per sector. The winner's sector is outlined in light
 gold once called, the only way to find one sliver in a thousand.
 
 At the end the camera pushes in on the winner's cover (on its sector's
@@ -661,6 +660,12 @@ at most one per 40ms, so every sound you hear lines up with a peg you see.
 
 With 24 sectors or fewer, each carries its game's cover in a small circle at
 the rim end, turned so its top faces outward.
+
+The wheel is dark oak — each sector a wedge with the grain running out from
+the hub, alternate ones a shade darker — lettered in gold, and the same
+gold counts down, says "Spinning!" and flashes the winner's name. The oak
+is drawn once per size and sector count and turned whole each frame, so it
+costs one image per frame however many sectors.
 
 The release is an edge, and has to be treated as one. Twice the lift table
 was read across it — once by interpolating down to the zero beyond, once by

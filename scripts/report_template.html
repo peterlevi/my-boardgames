@@ -1245,6 +1245,7 @@ td.c-add { text-align:right; white-space:nowrap; }
   grid-template-columns:repeat(auto-fill, minmax(82px, 1fr)); }
 .traylist li { position:relative; text-align:center; font-size:.78rem;
   line-height:1.25; min-width:0; }
+.traylist img { cursor:pointer; }
 .traylist img, .traylist .noimg { display:block; width:72px; height:72px;
   margin:0 auto 5px; object-fit:contain; border-radius:9px;
   background:var(--tile); }
@@ -1305,12 +1306,15 @@ td.c-add { text-align:right; white-space:nowrap; }
   .traylist li:focus-within .trayrm, .traylist li:focus-within .trayclone {
     opacity:1; }
 }
-.trayfoot { padding:12px 16px 16px; border-top:1px solid var(--line);
-  display:flex; flex-direction:column; gap:8px; }
-.trayclear, .trayshow { display:flex; align-items:center; justify-content:center;
-  gap:8px; width:100%; font:inherit; font-weight:700;
-  font-size:.98rem; line-height:1.3; padding:12px; border-radius:9px;
-  border:1px solid var(--line); cursor:pointer; }
+/* The three actions side by side, equal widths, each its icon over a short
+   label: three full-width rows took a third of the tray's height. */
+.trayfoot { padding:12px 12px 14px; border-top:1px solid var(--line);
+  display:flex; gap:6px; }
+.trayclear, .trayshow, .traywheel { flex:1 1 0; min-width:0;
+  display:flex; flex-direction:column; align-items:center;
+  justify-content:center; gap:5px; font:inherit; font-weight:700;
+  font-size:.78rem; line-height:1.2; padding:9px 4px; border-radius:9px;
+  border:1px solid var(--line); cursor:pointer; text-align:center; }
 .trayclear { background:none; color:var(--ink); }
 .trayclear:hover { border-color:var(--muted); }
 .trayshow { background:var(--accent); border-color:var(--accent);
@@ -1333,13 +1337,9 @@ td.c-add { text-align:right; white-space:nowrap; }
   line-height:inherit; }
 .pickchip .iconbtn { padding:0 5px; font-size:1.05rem; line-height:1.4; }
 
-/* The wheel's button: the tray's third action, the same size as the other
-   two, in the page's ink rather than its accent so the two filled buttons
-   do not read as one. */
-.traywheel { width:100%; font:inherit; font-weight:700; font-size:.98rem;
-  line-height:1.3; padding:12px; border-radius:9px; cursor:pointer;
-  display:flex; align-items:center; justify-content:center; gap:8px;
-  background:var(--ink); color:var(--bg); border:1px solid var(--ink); }
+/* The wheel's button: in the page's ink rather than its accent, so the two
+   filled buttons do not read as one. */
+.traywheel { background:var(--ink); color:var(--bg); border-color:var(--ink); }
 .traywheel:disabled { opacity:.45; cursor:default; }
 
 /* Over everything, the page and the tray blurred behind it. */
@@ -1890,17 +1890,17 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
     drop it here. The same game can go in more than once.</p>
   <ol class="traylist" id="traylist"></ol>
   <div class="trayfoot">
+    <button type="button" class="trayshow" id="trayshow"
+      ><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"
+        ><path fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round" stroke-linejoin="round" d="M13.5 8H2.8M7 3.5L2.5 8 7 12.5"
+        /></svg>Show just these</button>
     <button type="button" class="trayclear" id="trayclear"
       ><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"
         ><path fill="none" stroke="currentColor" stroke-width="1.5"
           stroke-linecap="round" stroke-linejoin="round"
           d="M2.5 4h11M6 4V2.5h4V4M4 4l.7 9.5h6.6L12 4M6.6 6.5v4.5M9.4 6.5v4.5"
         /></svg>Clear selection</button>
-    <button type="button" class="trayshow" id="trayshow"
-      ><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"
-        ><path fill="none" stroke="currentColor" stroke-width="1.8"
-          stroke-linecap="round" stroke-linejoin="round" d="M13.5 8H2.8M7 3.5L2.5 8 7 12.5"
-        /></svg>Show just these</button>
     <button type="button" class="traywheel" id="traywheel"
       title="Spin a wheel with one sector per pick — a game picked twice has two"
       ><svg viewBox="0 0 16 16" width="17" height="17" aria-hidden="true"
@@ -3304,6 +3304,14 @@ el('addall').addEventListener('click', function () {
   if (last) last.scrollIntoView({ block: 'nearest' });
 });
 el('traylist').addEventListener('click', function (e) {
+  // A game's cover opens that game in the table; the name stays for renaming.
+  var cover = e.target.closest('img, .noimg');
+  if (cover && !e.target.closest('button')) {
+    var li = cover.closest('li[data-k]');
+    var entry = li ? tray[+li.getAttribute('data-k')] : undefined;
+    if (entry !== undefined && !isFree(entry)) showGameRow(entry);
+    return;
+  }
   // Another of the same, right after it, under the same name.
   var cl = e.target.closest('[data-clone]');
   if (cl) {

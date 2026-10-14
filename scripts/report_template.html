@@ -1501,6 +1501,127 @@ td.c-add { text-align:right; white-space:nowrap; }
     top:11px; right:0; }
   :root.picking tr.game-row > td.c-gn { padding-right:78px; }
 }
+
+/* ---- the wheel's stage --------------------------------------------------
+   A dark circus tent at night: deep violet, red velvet drawn back at the
+   sides, a scalloped valance with a gold fringe, a warm pool of light behind
+   the wheel and fog along the boards; two spotlights — one warm, one violet —
+   sway and cross on the wheel, and golden motes drift up through the light.
+   Spinning, the lights brighten and the motes hurry; a winner flares the
+   stage gold. Light text on it; reduced motion holds it all still. */
+.wheelcard { background:radial-gradient(ellipse 120% 90% at 50% 38%,
+    #2c1838 0%, #170c20 52%, #08040c 100%);
+  color:#f3e9d8; border:1px solid #3a2347;
+  box-shadow:0 24px 80px rgba(0,0,0,.6), inset 0 0 60px rgba(0,0,0,.6);
+  padding-left:clamp(22px, 9%, 54px); padding-right:clamp(22px, 9%, 54px);
+  overflow:hidden; isolation:isolate; }
+.wheelcard > :not(.stage):not(.lights):not(.wheelx):not(.wheelsnd) {
+  position:relative; z-index:3; }
+.wheelcard .wheelx, .wheelcard .wheelsnd { z-index:5; color:#e9d8b4; }
+.wheelcard .wheelx:hover, .wheelcard .wheelsnd:hover { color:#fff;
+  background:rgba(255,255,255,.08); }
+.wheelcard .wheelsnd[aria-pressed="false"] { color:#ff8a7a; }
+.stage, .lights { position:absolute; inset:0; pointer-events:none;
+  border-radius:inherit; overflow:hidden; }
+.stage { z-index:0; }
+.lights { z-index:4; }
+.stage-pool { position:absolute; left:50%; top:42%; width:120%;
+  aspect-ratio:1; transform:translate(-50%, -50%);
+  background:radial-gradient(circle, rgba(255,196,120,.20) 0%,
+    rgba(255,150,90,.08) 32%, transparent 60%);
+  animation:poolbreathe 6s ease-in-out infinite alternate; }
+.stage-fog { position:absolute; left:-10%; right:-10%; bottom:-6%; height:38%;
+  background:radial-gradient(ellipse 60% 70% at 30% 100%, rgba(140,80,190,.30),
+      transparent 70%),
+    radial-gradient(ellipse 55% 60% at 75% 100%, rgba(90,50,150,.28),
+      transparent 70%);
+  filter:blur(6px); animation:fogdrift 14s ease-in-out infinite alternate; }
+/* Velvet: folds as stripes of light and shadow, drawn back to a waist. */
+.curtain { position:absolute; top:0; bottom:0; width:min(16%, 96px);
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.55), transparent 40%, rgba(0,0,0,.25)),
+    repeating-linear-gradient(90deg, #4a0710 0 7px, #8d1624 7px 13px,
+      #b52331 13px 15px, #6a0d18 15px 21px);
+  clip-path:polygon(0 0, 100% 0, 92% 18%, 62% 46%, 48% 56%, 70% 82%, 88% 100%, 0 100%);
+  filter:drop-shadow(4px 0 10px rgba(0,0,0,.7));
+  transform-origin:0 0; animation:curtainsway 9s ease-in-out infinite alternate; }
+.curtain.right { left:auto; right:0; transform:scaleX(-1); transform-origin:50% 0;
+  animation-name:curtainsway2; animation-duration:11s; }
+.curtain.left { left:0; }
+/* The valance: a band of the same velvet, scalloped, fringed in gold. */
+.valance { position:absolute; left:0; right:0; top:0; height:42px;
+  background:
+    radial-gradient(circle at 50% 0, #8d1624 0 15px, #6a0d18 15px 17px,
+      #e0b356 17px 19px, transparent 19.5px) 0 14px / 36px 22px repeat-x,
+    linear-gradient(#3a050c, #6a0d18 60%, #8d1624);
+  background-size:36px 22px, 100% 16px;
+  background-repeat:repeat-x, no-repeat;
+  filter:drop-shadow(0 4px 6px rgba(0,0,0,.7)); }
+/* The spotlights: soft cones that cross on the wheel and light it. */
+.spot { position:absolute; top:-12%; width:70%; height:115%;
+  transform-origin:50% 0; mix-blend-mode:screen; filter:blur(10px);
+  clip-path:polygon(44% 0, 56% 0, 100% 100%, 0 100%);
+  transition:opacity .6s ease; opacity:.42; }
+.spot.warm { left:-28%;
+  background:linear-gradient(rgba(255,232,180,.55), rgba(255,214,150,.18) 60%,
+    rgba(255,214,150,0) 92%);
+  animation:spotwarm 8s ease-in-out infinite alternate; }
+.spot.violet { right:-28%;
+  background:linear-gradient(rgba(214,150,255,.5), rgba(170,110,255,.16) 60%,
+    rgba(170,110,255,0) 92%);
+  animation:spotviolet 10s ease-in-out infinite alternate; }
+.wheelcard.spinning .spot { opacity:.62; filter:blur(8px) brightness(1.15); }
+.wheelcard.spinning .spot.warm { animation-duration:2.6s; }
+.wheelcard.spinning .spot.violet { animation-duration:3.1s; }
+/* The motes: specks of gold drifting up through the light, now and then
+   catching it. */
+.motes i { position:absolute; bottom:-8px; width:3px; height:3px;
+  border-radius:50%; background:#ffe3a0;
+  box-shadow:0 0 6px 2px rgba(255,214,140,.65);
+  animation:moterise linear infinite, motetwinkle ease-in-out infinite; }
+.wheelcard.spinning .motes i { animation-duration:4s, 1.2s; }
+/* A winner: the whole stage flares gold, once. */
+.wheelcard.won::after { content:""; position:absolute; inset:0; z-index:4;
+  pointer-events:none; border-radius:inherit;
+  background:radial-gradient(circle at 50% 42%, rgba(255,214,120,.45),
+    rgba(255,170,80,.12) 45%, transparent 70%);
+  mix-blend-mode:screen; animation:stageflare 1.6s ease-out both; }
+@keyframes poolbreathe { from { opacity:.75; } to { opacity:1; } }
+@keyframes fogdrift { from { transform:translateX(-4%); } to { transform:translateX(4%); } }
+@keyframes curtainsway { from { transform:skewY(0deg); } to { transform:skewY(1.2deg); } }
+@keyframes curtainsway2 { from { transform:scaleX(-1) skewY(0deg); }
+  to { transform:scaleX(-1) skewY(1.4deg); } }
+@keyframes spotwarm { from { transform:rotate(-30deg); } to { transform:rotate(-18deg); } }
+@keyframes spotviolet { from { transform:rotate(30deg); } to { transform:rotate(17deg); } }
+@keyframes moterise { from { transform:translateY(0) translateX(0); }
+  to { transform:translateY(-110vh) translateX(var(--drift, 20px)); } }
+@keyframes motetwinkle { 0%, 100% { opacity:.15; } 50% { opacity:.95; } }
+@keyframes stageflare { 0% { opacity:0; } 20% { opacity:1; } 100% { opacity:0; } }
+/* What sits on the stage, in its light. */
+.wheelcard .wheelresult .wlabel { color:#d9b46a; }
+.wheelcard .wheelresult b { color:#fff; text-shadow:0 2px 12px rgba(255,190,110,.35); }
+.wheelcard .wheelseed label { color:#d9b46a; }
+.wheelcard .wheelseed input { background:rgba(255,255,255,.07); color:#fff;
+  border-color:rgba(255,255,255,.18); }
+.wheelcard .wheelseed input:focus { border-color:#d9b46a; }
+.wheelcard .wheelseed input.fixed { background:none; border-color:transparent; }
+.wheelcard .wheelseed .iconbtn { color:#e9d8b4; }
+.wheelcard .wheellink input { background:rgba(0,0,0,.35); color:#cdbfa8;
+  border-color:rgba(255,255,255,.14); }
+.wheelcard .wheellink button.link { color:#e9c46a; }
+.wheelcard .wheelbtns .trayclear { color:#f3e9d8; background:rgba(255,255,255,.04);
+  border-color:rgba(255,255,255,.22); }
+.wheelcard .wheelbtns .trayclear:hover { border-color:#d9b46a; }
+.wheelcard .wheelbtns .trayshow { background:linear-gradient(#a8323e, #7d1823);
+  border-color:#c24453; color:#fff; }
+@media (prefers-reduced-motion: reduce) {
+  .stage *, .lights *, .wheelcard.won::after { animation:none !important; }
+  .motes { display:none; }
+}
+@media (max-width:700px) {
+  .curtain { width:12%; }
+  .valance { height:34px; }
+}
 </style>
 <script>
 /* Before the body parses: put this browser's saved column choice on <html>,
@@ -2010,6 +2131,22 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
 <div id="wheel" class="wheelpop" hidden role="dialog" aria-modal="true"
   aria-label="Wheel of fortune">
   <div class="wheelcard">
+    <!-- The stage: velvet curtains, a fringed valance, a warm pool of light,
+         fog along the boards, motes drifting up through the light — and two
+         spotlights crossing on the wheel. All decoration, none of it in the
+         way of a click. -->
+    <div class="stage" aria-hidden="true">
+      <div class="stage-pool"></div>
+      <div class="stage-fog"></div>
+      <div class="curtain left"></div>
+      <div class="curtain right"></div>
+      <div class="valance"></div>
+      <div class="motes" id="motes"></div>
+    </div>
+    <div class="lights" aria-hidden="true">
+      <div class="spot warm"></div>
+      <div class="spot violet"></div>
+    </div>
     <button type="button" class="iconbtn wheelx" id="wheelclose"
       title="Close" aria-label="Close the wheel">&times;</button>
     <button type="button" class="iconbtn wheelsnd" id="wheelsnd"
@@ -4284,6 +4421,7 @@ function readSpinLink(text) {
  *  of yours before a page may make any. */
 function openReplay(spin) {
   wheelSound();
+  stageMotes();
   wheel.entries = spin.entries;
   wheel.labels = spin.labels;
   wheel.rot = spin.r;
@@ -4490,6 +4628,7 @@ function playSpin(run, win) {
   function done() {
     wheel.anim = null;
     wheel.psi = 0;
+    stageSpinning(false);
     drawWheel();
     el('wheelagain').disabled = false;
     setSeedBusy(false);
@@ -4547,6 +4686,7 @@ function playSpin(run, win) {
     if (idx < last) wheel.anim = requestAnimationFrame(step);
     else done();
   }
+  stageSpinning(true);
   wheel.anim = requestAnimationFrame(step);
 }
 
@@ -4623,6 +4763,7 @@ function announceWinner(k) {
     '</b></span>');
   if (reducedMotion()) return;
   confetti();
+  stageFlare();
   flashWinner(k);
 }
 
@@ -4644,8 +4785,39 @@ function flashWinner(k) {
   wheel.countT = setTimeout(function () { el('wheelcount').innerHTML = ''; }, 2900);
 }
 
+/* The stage's motes, scattered once: where they rise from, how fast, how
+   far they drift, when they twinkle. Decoration, so plain Math.random. */
+function stageMotes() {
+  var host = el('motes');
+  if (!host || host.childNodes.length) return;
+  var html = '';
+  for (var i = 0; i < 22; i++) {
+    var dur = 9 + Math.random() * 10, tw = 1.6 + Math.random() * 2.6;
+    html += '<i style="left:' + (4 + Math.random() * 92).toFixed(1) + '%;' +
+      '--drift:' + Math.round(Math.random() * 80 - 40) + 'px;' +
+      'animation-duration:' + dur.toFixed(1) + 's,' + tw.toFixed(1) + 's;' +
+      'animation-delay:-' + (Math.random() * dur).toFixed(1) + 's,-' +
+      (Math.random() * tw).toFixed(1) + 's;' +
+      'transform:scale(' + (0.6 + Math.random() * 0.9).toFixed(2) + ')"></i>';
+  }
+  host.innerHTML = html;
+}
+function stageSpinning(on) {
+  var c = document.querySelector('.wheelcard');
+  if (c) c.classList.toggle('spinning', !!on);
+}
+function stageFlare() {
+  var c = document.querySelector('.wheelcard');
+  if (!c) return;
+  c.classList.remove('won');
+  void c.offsetWidth;
+  c.classList.add('won');
+  setTimeout(function () { c.classList.remove('won'); }, 1700);
+}
+
 function openWheel() {
   if (!tray.length) return;
+  stageMotes();
   wheelSound();
   wheel.entries = tray.slice();
   wheel.labels = tray.map(function (i, k) { return trayLabel(k); });
@@ -4678,6 +4850,7 @@ function closeWheel() {
   var won = wheel.won;
   wheel.won = null;
   wheel.open = false;
+  stageSpinning(false);
   stopCountdown();
   hideTapPill();
   setSeedBusy(false);

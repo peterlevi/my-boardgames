@@ -1446,10 +1446,7 @@ td.c-add { text-align:right; white-space:nowrap; }
      padding take about 300px of the window's height. */
   width:min(480px, 72vmin, calc((100vh - 300px) * 42 / 47));
   width:min(480px, 72vmin, calc((100dvh - 300px) * 42 / 47)); }
-/* The wheel stands off the card: a soft shadow of the whole thing — wheel,
-   rim, stick and bracket — that may fall outside the canvas itself. */
-#wheelcanvas { width:100%; height:100%; display:block;
-  filter:drop-shadow(0 6px 10px rgba(0,0,0,.28)) drop-shadow(0 2px 3px rgba(0,0,0,.2)); }
+#wheelcanvas { width:100%; height:100%; display:block; }
 /* As tall as the winner's cover from the start, so announcing it does not
    grow the card. */
 .wheelresult { min-height:56px; text-align:center; display:flex;
@@ -3718,78 +3715,28 @@ function drawWheel() {
     if (thumbs) wheelThumb(ctx, wheel.entries[i], wheel.labels[i], tc, td, dpr);
     ctx.restore();
   }
-  // Light from the upper left, fixed while the wheel turns under it: a sheen
-  // where it falls and a falling-off towards the rim, so the face reads as
-  // gently domed rather than printed flat.
-  var lx = cx - 0.32 * R, ly = cy - 0.38 * R;
-  var shade = ctx.createRadialGradient(lx, ly, 0.05 * R, cx, cy, 1.02 * R);
-  shade.addColorStop(0, 'rgba(255,255,255,.26)');
-  shade.addColorStop(0.35, 'rgba(255,255,255,.07)');
-  shade.addColorStop(0.75, 'rgba(0,0,0,.06)');
-  shade.addColorStop(1, 'rgba(0,0,0,.30)');
+  // The rim.
   ctx.beginPath();
   ctx.arc(cx, cy, R, 0, 2 * Math.PI);
-  ctx.fillStyle = shade;
-  ctx.fill();
-  // The rim: a dark band with the light catching its upper left, and a thin
-  // bright line where it meets the face.
-  var rw = 0.034 * R;
-  var band = ctx.createLinearGradient(cx - R, cy - R, cx + R, cy + R);
-  band.addColorStop(0, '#6a5640');
-  band.addColorStop(0.45, '#2a221a');
-  band.addColorStop(1, '#0e0c09');
-  ctx.beginPath();
-  ctx.arc(cx, cy, R + rw, 0, 2 * Math.PI);
-  ctx.arc(cx, cy, R - 0.004 * R, 0, 2 * Math.PI, true);
-  ctx.fillStyle = band;
-  ctx.fill();
-  ctx.beginPath();
-  ctx.arc(cx, cy, R, 0, 2 * Math.PI);
-  ctx.lineWidth = 1 * dpr;
-  ctx.strokeStyle = 'rgba(255,240,215,.35)';
+  ctx.lineWidth = 3 * dpr;
+  ctx.strokeStyle = '#1b1a17';
   ctx.stroke();
-  // The pegs, one on every boundary, right at the edge: polished studs, lit
-  // from the same side as everything else.
+  // The pegs, one on every boundary, right at the edge.
   var G = WHEEL_G;
   for (var p = 0; p < n; p++) {
     var pa = -Math.PI / 2 + p * a + wheel.rot;
     var gx = cx + G.rp * R * Math.cos(pa), gy = cy + G.rp * R * Math.sin(pa);
-    var pr = G.pr * R;
-    var stud = ctx.createRadialGradient(gx - 0.35 * pr, gy - 0.4 * pr, 0.1 * pr,
-                                        gx, gy, pr);
-    stud.addColorStop(0, '#8d877d');
-    stud.addColorStop(0.45, '#2b2823');
-    stud.addColorStop(1, '#0b0a08');
-    ctx.save();
-    ctx.shadowColor = 'rgba(0,0,0,.45)';
-    ctx.shadowBlur = 2 * dpr;
-    ctx.shadowOffsetX = 0.6 * dpr;
-    ctx.shadowOffsetY = 1.2 * dpr;
     ctx.beginPath();
-    ctx.arc(gx, gy, pr, 0, 2 * Math.PI);
-    ctx.fillStyle = stud;
+    ctx.arc(gx, gy, G.pr * R, 0, 2 * Math.PI);
+    ctx.fillStyle = '#1b1a17';
     ctx.fill();
-    ctx.restore();
   }
-  // The hub: a raised glossy cap, with a shadow under it.
-  var hr = R * 0.1;
-  ctx.save();
-  ctx.shadowColor = 'rgba(0,0,0,.4)';
-  ctx.shadowBlur = 6 * dpr;
-  ctx.shadowOffsetY = 2.5 * dpr;
-  var cap = ctx.createRadialGradient(cx - 0.35 * hr, cy - 0.4 * hr, 0.1 * hr,
-                                     cx, cy, hr);
-  cap.addColorStop(0, '#ffffff');
-  cap.addColorStop(0.6, '#ece7dd');
-  cap.addColorStop(1, '#bdb6a8');
+  // The hub.
   ctx.beginPath();
-  ctx.arc(cx, cy, hr, 0, 2 * Math.PI);
-  ctx.fillStyle = cap;
+  ctx.arc(cx, cy, R * 0.1, 0, 2 * Math.PI);
+  ctx.fillStyle = '#fff';
   ctx.fill();
-  ctx.restore();
-  ctx.beginPath();
-  ctx.arc(cx, cy, hr, 0, 2 * Math.PI);
-  ctx.lineWidth = 2.5 * dpr;
+  ctx.lineWidth = 3 * dpr;
   ctx.strokeStyle = '#1b1a17';
   ctx.stroke();
   drawFlapper(ctx, cx, cy, R, dpr);
@@ -3807,11 +3754,9 @@ function drawFlapper(ctx, cx, cy, R, dpr) {
   var w0 = 0.018 * R, w1 = G.rr * R;
   var nx = uy, ny = -ux;                                   // across it
   ctx.save();
-  // It stands off the wheel: its shadow falls down and to the right.
-  ctx.shadowColor = 'rgba(0,0,0,.38)';
-  ctx.shadowBlur = 4 * dpr;
-  ctx.shadowOffsetX = 2 * dpr;
-  ctx.shadowOffsetY = 3.5 * dpr;
+  ctx.shadowColor = 'rgba(0,0,0,.25)';
+  ctx.shadowBlur = 2 * dpr;
+  ctx.shadowOffsetY = 1 * dpr;
   ctx.beginPath();
   ctx.moveTo(bx + nx * w0, by + ny * w0);
   ctx.lineTo(tx + nx * w1, ty + ny * w1);
@@ -3826,46 +3771,20 @@ function drawFlapper(ctx, cx, cy, R, dpr) {
   ctx.fillStyle = grad;
   ctx.fill();
   ctx.shadowColor = 'transparent';
-  ctx.shadowOffsetX = 0;
-  ctx.shadowOffsetY = 0;
   ctx.lineWidth = 1.2 * dpr;
   ctx.strokeStyle = 'rgba(80,10,15,.75)';
   ctx.stroke();
-  // A shine down the lit side of the plastic.
+  // The pivot, and the bracket it hangs from.
   ctx.beginPath();
-  ctx.moveTo(bx + nx * w0 * 0.45, by + ny * w0 * 0.45);
-  ctx.lineTo(tx + nx * w1 * 0.35, ty + ny * w1 * 0.35);
-  ctx.lineWidth = 1.6 * dpr;
-  ctx.lineCap = 'round';
-  ctx.strokeStyle = 'rgba(255,255,255,.55)';
-  ctx.stroke();
-  // The bracket it hangs from, with a little depth to it.
-  var bw = 0.09 * R, bh = 0.06 * R;
-  var brk = ctx.createLinearGradient(0, by - bh, 0, by);
-  brk.addColorStop(0, '#3d362e');
-  brk.addColorStop(1, '#111');
-  ctx.save();
-  ctx.shadowColor = 'rgba(0,0,0,.35)';
-  ctx.shadowBlur = 4 * dpr;
-  ctx.shadowOffsetY = 2 * dpr;
-  ctx.beginPath();
-  if (ctx.roundRect) ctx.roundRect(bx - bw / 2, by - bh, bw, bh, 0.014 * R);
-  else ctx.rect(bx - bw / 2, by - bh, bw, bh);
-  ctx.fillStyle = brk;
+  if (ctx.roundRect) ctx.roundRect(bx - 0.045 * R, by - 0.06 * R, 0.09 * R, 0.06 * R, 0.014 * R);
+  else ctx.rect(bx - 0.045 * R, by - 0.06 * R, 0.09 * R, 0.06 * R);
+  ctx.fillStyle = '#1b1a17';
   ctx.fill();
-  ctx.restore();
-  // And the pivot screw: polished metal, lit from the upper left.
-  var sr = 0.016 * R;
-  var screw = ctx.createRadialGradient(bx - 0.35 * sr, by - 0.4 * sr, 0.1 * sr,
-                                       bx, by, sr);
-  screw.addColorStop(0, '#f4f1ea');
-  screw.addColorStop(0.5, '#a39d92');
-  screw.addColorStop(1, '#4a463f');
   ctx.beginPath();
-  ctx.arc(bx, by, sr, 0, 2 * Math.PI);
-  ctx.fillStyle = screw;
+  ctx.arc(bx, by, 0.016 * R, 0, 2 * Math.PI);
+  ctx.fillStyle = '#9a958b';
   ctx.fill();
-  ctx.lineWidth = 1 * dpr;
+  ctx.lineWidth = 1.2 * dpr;
   ctx.strokeStyle = '#1b1a17';
   ctx.stroke();
   ctx.restore();

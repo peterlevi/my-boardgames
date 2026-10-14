@@ -604,11 +604,20 @@ from the friction law itself — a wheel thrown at v stops after about
 ln(1 + c·v/μ)/c seconds — so spins last seventeen to twenty-one seconds,
 starting at under two turns a second.
 
+Every spin comes from a seed — a random word like `amber-otter-17`, or one
+you type. The seed (hashed with xmur3, then mulberry32: integer arithmetic,
+the same in every browser) is all the randomness a spin has: it draws the
+winner and picks the throws to try, including the drama tie-break, and
+every spin starts from the same resting place — the stick in the middle of
+the first sector, between two pins — so the same seed on the same wheel is
+the same spin. The winner is still uniform over the entries for any seed
+nobody chose with the outcome in mind.
+
 A spin is fully determined by the entries, the wheel's starting angle and
 the throw, and the simulation uses only arithmetic that is the same on every
 run (the one table built with sin and cos is rounded to 1e-7 so last-digit
-differences between engines cannot reach it). So the three ride in the URL
-as `spin=` while the wheel is open, and the wheel shows that link: opening
+differences between engines cannot reach it). So the three, and the seed,
+ride in the URL as `spin=` while the wheel is open, and the wheel shows that link: opening
 it shows the same wheel, ready to play (sound needs a click first), and
 plays the identical spin — every bounce, the same winner. Clacks are played
 from the animation frame that shows a peg slipping out from under the stick,

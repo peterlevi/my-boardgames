@@ -1291,6 +1291,20 @@ td.c-add { text-align:right; white-space:nowrap; }
   font-size:.95rem; font-weight:700; line-height:22px; padding:0;
   cursor:pointer; box-shadow:0 1px 3px rgba(0,0,0,.25); }
 .trayrm:hover { background:var(--accent); }
+/* Clone: the same black disc, on the other corner. */
+.trayclone { position:absolute; top:-6px; left:2px; width:22px; height:22px;
+  border-radius:50%; border:0; background:#1b1a17; color:#fff; padding:0;
+  display:flex; align-items:center; justify-content:center; cursor:pointer;
+  box-shadow:0 1px 3px rgba(0,0,0,.25); }
+.trayclone:hover { background:var(--accent); }
+/* Both only on the tile you are over (or tabbed into); a touch screen has no
+   hover, so there they stay. */
+@media (hover:hover) {
+  .traylist .trayrm, .traylist .trayclone { opacity:0; transition:opacity .12s; }
+  .traylist li:hover .trayrm, .traylist li:hover .trayclone,
+  .traylist li:focus-within .trayrm, .traylist li:focus-within .trayclone {
+    opacity:1; }
+}
 .trayfoot { padding:12px 16px 16px; border-top:1px solid var(--line);
   display:flex; flex-direction:column; gap:8px; }
 .trayclear, .trayshow { width:100%; font:inherit; font-weight:700;
@@ -1351,6 +1365,14 @@ td.c-add { text-align:right; white-space:nowrap; }
   text-align:left; }
 .wheelresult .spinning { color:var(--muted); font-size:.95rem; }
 .wheelbtns { display:flex; gap:10px; width:100%; }
+.wheelseed { display:flex; align-items:center; gap:8px; width:100%;
+  align-self:stretch; font-size:.82rem; }
+.wheelseed label { font-weight:700; color:var(--muted); text-transform:uppercase;
+  font-size:.7rem; letter-spacing:.06em; }
+.wheelseed input { flex:1 1 0; width:auto; min-width:0; font:inherit;
+  font-size:.9rem; font-weight:700; color:var(--ink); background:var(--panel);
+  border:1px solid var(--line); border-radius:6px; padding:5px 8px; }
+.wheelseed input:focus { outline:none; border-color:var(--accent); }
 /* The link that replays this exact spin. */
 .wheellink { display:flex; align-items:center; gap:10px; width:100%;
   align-self:stretch; font-size:.8rem; }
@@ -1876,6 +1898,22 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
       <canvas id="wheelcanvas" width="480" height="526"></canvas>
     </div>
     <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
+    <!-- The seed: every spin has one, and the same seed is the same spin. -->
+    <div class="wheelseed">
+      <label for="wheelseedq">Seed</label>
+      <input id="wheelseedq" type="text" autocomplete="off" spellcheck="false"
+        placeholder="any word — Enter to spin it">
+      <button type="button" class="iconbtn" id="wheelseeddice"
+        title="A random seed" aria-label="Pick a random seed"
+        ><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"
+          ><rect x="1.5" y="1.5" width="13" height="13" rx="3" fill="none"
+            stroke="currentColor" stroke-width="1.4"/><circle cx="5" cy="5"
+            r="1.2" fill="currentColor"/><circle cx="11" cy="5" r="1.2"
+            fill="currentColor"/><circle cx="8" cy="8" r="1.2"
+            fill="currentColor"/><circle cx="5" cy="11" r="1.2"
+            fill="currentColor"/><circle cx="11" cy="11" r="1.2"
+            fill="currentColor"/></svg></button>
+    </div>
     <div class="wheellink" id="wheellink" hidden>
       <input id="wheellinkurl" readonly aria-label="Link to this spin">
       <button type="button" class="link" id="wheellinkcopy">Copy link</button>
@@ -3136,6 +3174,13 @@ function paintTray() {
       '<button type="button" class="trayrm" data-rm="' + k + '" title="Remove ' +
       esc(own) + ' from the picks" aria-label="Remove ' + esc(own) +
       '">&times;</button>' +
+      '<button type="button" class="trayclone" data-clone="' + k +
+      '" title="Add another of these" aria-label="Add another ' + esc(trayLabel(k)) +
+      '"><svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">' +
+      '<rect x="5" y="5" width="9" height="9" rx="2" fill="none" stroke="currentColor"' +
+      ' stroke-width="1.8"/><path d="M11 3V2.5A1.5 1.5 0 0 0 9.5 1h-7A1.5 1.5 0 0 0 1 ' +
+      '2.5v7A1.5 1.5 0 0 0 2.5 11H3" fill="none" stroke="currentColor"' +
+      ' stroke-width="1.8"/></svg></button>' +
       (th ? '<img alt="" src="' + esc(th) + '">'
           // Added by hand: no cover, so its initial on a plain tile.
           : '<span class="noimg">' + esc(trayLabel(k).charAt(0).toUpperCase()) +
@@ -3227,6 +3272,20 @@ el('addall').addEventListener('click', function () {
   if (last) last.scrollIntoView({ block: 'nearest' });
 });
 el('traylist').addEventListener('click', function (e) {
+  // Another of the same, right after it, under the same name.
+  var cl = e.target.closest('[data-clone]');
+  if (cl) {
+    var src = +cl.getAttribute('data-clone'), copy = tray[src];
+    tray.splice(src + 1, 0, isFree(copy) ? { t: copy.t } : copy);
+    trayNames.splice(src + 1, 0, trayNames[src] || null);
+    trayChanged();
+    var li = el('traylist').querySelector('li[data-k="' + (src + 1) + '"]');
+    if (li) {
+      li.classList.add('fresh');
+      setTimeout(function () { li.classList.remove('fresh'); }, 900);
+    }
+    return;
+  }
   var rm = e.target.closest('[data-rm]');
   if (!rm) return;
   var at = +rm.getAttribute('data-rm');
@@ -3471,7 +3530,7 @@ function drawWheel() {
     ctx.fillStyle = wheelColor(i, n);
     ctx.fill();
     ctx.lineWidth = 1.5 * dpr;
-    ctx.strokeStyle = 'rgba(255,255,255,.8)';
+    ctx.strokeStyle = '#1b1a17';
     ctx.stroke();
     // The name along the sector's middle, reading outward from the hub.
     ctx.save();
@@ -3513,11 +3572,8 @@ function drawWheel() {
     var gx = cx + G.rp * R * Math.cos(pa), gy = cy + G.rp * R * Math.sin(pa);
     ctx.beginPath();
     ctx.arc(gx, gy, G.pr * R, 0, 2 * Math.PI);
-    ctx.fillStyle = '#e9e6df';
+    ctx.fillStyle = '#1b1a17';
     ctx.fill();
-    ctx.lineWidth = 1.4 * dpr;
-    ctx.strokeStyle = '#1b1a17';
-    ctx.stroke();
   }
   // The hub.
   ctx.beginPath();
@@ -3598,31 +3654,26 @@ function wheelThumb(ctx, e, label, x, d, dpr) {
   ctx.shadowColor = 'transparent';
   ctx.translate(x, 0);
   ctx.rotate(Math.PI / 2);
+  // The same rounded square the covers are everywhere else on the page.
   ctx.beginPath();
-  ctx.arc(0, 0, d / 2, 0, 2 * Math.PI);
+  if (ctx.roundRect) ctx.roundRect(-d / 2, -d / 2, d, d, d * 0.16);
+  else ctx.rect(-d / 2, -d / 2, d, d);
   ctx.closePath();
-  ctx.fillStyle = 'rgba(255,255,255,.92)';
-  ctx.fill();
   var im = wheelImg(e);
   if (im) {
-    ctx.save();
     ctx.clip();
     var s = Math.min(im.naturalWidth, im.naturalHeight);
     ctx.drawImage(im, (im.naturalWidth - s) / 2, (im.naturalHeight - s) / 2, s, s,
                   -d / 2, -d / 2, d, d);
-    ctx.restore();
   } else if (isFree(e)) {
+    ctx.fillStyle = 'rgba(255,255,255,.85)';
+    ctx.fill();
     ctx.fillStyle = '#6b6862';
     ctx.font = '700 ' + (d * 0.5) + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(String(label || '?').charAt(0).toUpperCase(), 0, d * 0.03);
   }
-  ctx.beginPath();
-  ctx.arc(0, 0, d / 2, 0, 2 * Math.PI);
-  ctx.lineWidth = 1.6 * dpr;
-  ctx.strokeStyle = 'rgba(255,255,255,.95)';
-  ctx.stroke();
   ctx.restore();
 }
 
@@ -3697,6 +3748,8 @@ var WHEEL_LIFT = (function () {
   return { at: at, IN: IN, REL: REL, max: Math.max.apply(null, tab) };
 })();
 
+var WHEEL_PSI_MAX = WHEEL_LIFT.max + 0.04;
+
 function wheelSim(theta0, omega0, n, record) {
   var P = WHEEL_P, L = WHEEL_LIFT, TAU = 2 * Math.PI, a = TAU / n;
   var th = theta0, w = omega0, psi = 0, vpsi = 0, t = 0, still = 0;
@@ -3717,6 +3770,10 @@ function wheelSim(theta0, omega0, n, record) {
       var tauW = -P.c * w;
       vpsi += (-P.wf * P.wf * psi - 2 * P.zeta * P.wf * vpsi) * h;
       psi += vpsi * h;
+      // A peg flicks the stick hard at speed; the bracket stops it a little
+      // past the lift a peg ever needs, instead of letting it fly.
+      if (psi > WHEEL_PSI_MAX) { psi = WHEEL_PSI_MAX; if (vpsi > 0) vpsi = 0; }
+      else if (psi < -WHEEL_PSI_MAX) { psi = -WHEEL_PSI_MAX; if (vpsi < 0) vpsi = 0; }
       j0 = Math.round(-th / a);
       for (q = -1; q <= 1; q++) {
         var j = j0 + q, ph = j * a + th, e = eng[j];
@@ -3792,44 +3849,123 @@ function wheelDrama(run) {
   return score;
 }
 
-/** Spin. The winner is drawn first, uniformly over the tray's entries: that
- *  alone decides the odds, one in n per entry. Then a couple of hundred
- *  throws are run through the physics from where the wheel stands, and of
- *  those that genuinely come to rest on the winner, the one with the most
- *  dramatic ending is played back. Every bounce on screen is the
- *  simulation's own; only how hard the wheel was thrown was chosen. */
-function spinWheel() {
+/* ---- seeds ---------------------------------------------------------------
+   Every spin comes from a seed: a word, random unless you type one. The seed
+   is all the randomness a spin has — it draws the winner, and it picks the
+   throw — and every spin starts from the same resting place, so the same
+   seed on the same wheel is the same spin, always. */
+var SEED_A = ['amber', 'brave', 'clever', 'dusty', 'eager', 'fuzzy', 'golden',
+  'hidden', 'icy', 'jolly', 'keen', 'lucky', 'misty', 'noble', 'olive', 'proud',
+  'quiet', 'rusty', 'silver', 'tiny', 'vivid', 'wild', 'bold', 'calm', 'daring',
+  'fancy', 'gentle', 'merry', 'swift', 'sunny', 'cosmic', 'crimson', 'mellow',
+  'nimble', 'royal', 'stormy', 'velvet', 'witty', 'zesty', 'frosty'];
+var SEED_B = ['meeple', 'dice', 'token', 'tile', 'castle', 'dragon', 'otter',
+  'falcon', 'harbor', 'river', 'forest', 'train', 'comet', 'lantern', 'wizard',
+  'pirate', 'robot', 'tiger', 'panda', 'rocket', 'garden', 'island', 'market',
+  'temple', 'knight', 'oracle', 'raven', 'badger', 'canyon', 'galaxy', 'meadow',
+  'nomad', 'quill', 'saga', 'voyage', 'walrus', 'yeti', 'beacon', 'harvest',
+  'caravan'];
+function randomSeed() {
+  return SEED_A[fairIndex(SEED_A.length)] + '-' + SEED_B[fairIndex(SEED_B.length)] +
+    '-' + (10 + fairIndex(90));
+}
+/** A stream of numbers in [0, 1) that a seed word always gives the same way:
+ *  the word hashed (xmur3), then mulberry32. Integer arithmetic throughout,
+ *  so every browser agrees. */
+function seededRandom(text) {
+  var h = 1779033703 ^ text.length;
+  for (var i = 0; i < text.length; i++) {
+    h = Math.imul(h ^ text.charCodeAt(i), 3432918353);
+    h = h << 13 | h >>> 19;
+  }
+  h = Math.imul(h ^ h >>> 16, 2246822507);
+  h = Math.imul(h ^ h >>> 13, 3266489909);
+  var a = (h ^= h >>> 16) >>> 0;
+  return function () {
+    a = a + 0x6D2B79F5 | 0;
+    var t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  };
+}
+/** Where every spin starts: the pointer in the middle of the first sector,
+ *  between two pins and touching neither. */
+function wheelHome(n) {
+  var TAU = 2 * Math.PI;
+  return ((-Math.PI / n) % TAU + TAU) % TAU;
+}
+
+/** Spin from a seed. The seed draws the winner — uniformly over the tray's
+ *  entries, which alone decides the odds, one in n per entry — and then the
+ *  throws to try. A couple of hundred throws are run through the physics
+ *  from the resting place, and of those that genuinely come to rest on the
+ *  winner, the one with the most dramatic ending is played back. Every
+ *  bounce on screen is the simulation's own; only the throw was chosen. */
+function spinWheel(seedText) {
   var n = wheel.entries.length;
   if (!n || wheel.anim || wheel.searching) return;
-  var win = fairIndex(n), TAU = 2 * Math.PI;
-  var from = ((wheel.rot % TAU) + TAU) % TAU;
+  var seed = String(seedText || '').trim() || randomSeed();
+  el('wheelseedq').value = seed;
+  seedTyped = false;
+  var rand = seededRandom(seed);
+  var win = Math.floor(rand() * n), from = wheelHome(n);
   el('wheelagain').disabled = true;
   wheelResult('<span class="spinning">Spinning…</span>');
   wheel.searching = true;
-  // Let the button and the line above paint before the search runs.
-  setTimeout(function () {
+  wheel.replay = null;
+  // Back to the resting place first, briskly, if the last spin left it
+  // anywhere else.
+  rewindWheel(from, function () {
     // Throws for a seventeen-to-twenty-one-second spin. With a drag that
     // grows with speed and a constant one, a wheel thrown at v stops after
     // ln(1 + c v / mu) / c seconds, near enough — the pegs take a little off.
     var P = WHEEL_P;
     var throwFor = function (secs) { return P.mu / P.c * (Math.exp(P.c * secs) - 1); };
     var best = null, bestScore = -1;
-    for (var round = 0; round < 3 && !best; round++) {
+    for (var round = 0; round < 3 && best === null; round++) {
       var lo = throwFor(17 - 2 * round), span = throwFor(21 + 2 * round) - lo;
       for (var i = 0; i < 120; i++) {
-        var v = lo + span * (i + Math.random()) / 120;
+        var v = lo + span * (i + rand()) / 120;
         var r = wheelSim(from, v, n, false);
         if (r.sector !== win) continue;
-        var sc = wheelDrama(r) + Math.random() * 0.02;  // ties go to chance
+        var sc = wheelDrama(r) + rand() * 0.02;      // ties go to the seed
         if (sc > bestScore) { bestScore = sc; best = v; }
       }
     }
     wheel.searching = false;
     if (!wheel.open) return;
     if (best === null) { playSpin(null, win); return; }
-    setSpinLink(from, best);
+    setSpinLink(from, best, seed);
     playSpin(wheelSim(from, best, n, true), win);
-  }, 30);
+  });
+}
+
+/** Turn the wheel back to its resting place over a moment, the short way
+ *  round, then carry on. Already there, or with reduced motion, at once. */
+function rewindWheel(to, then) {
+  var TAU = 2 * Math.PI, from = ((wheel.rot % TAU) + TAU) % TAU;
+  var d = to - from;
+  if (d > Math.PI) d -= TAU;
+  if (d < -Math.PI) d += TAU;
+  if (Math.abs(d) < 1e-9 || reducedMotion()) {
+    wheel.rot = to;
+    wheel.psi = 0;
+    drawWheel();
+    setTimeout(then, 30);
+    return;
+  }
+  var t0 = null;
+  function step(ts) {
+    if (!wheel.open) return;
+    if (t0 === null) t0 = ts;
+    var p = Math.min(1, (ts - t0) / 450), e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+    wheel.rot = from + d * e;
+    wheel.psi = 0;
+    drawWheel();
+    if (p < 1) requestAnimationFrame(step);
+    else { wheel.rot = to; setTimeout(then, 30); }
+  }
+  requestAnimationFrame(step);
 }
 
 /* ---- a spin you can send ------------------------------------------------
@@ -3838,14 +3974,15 @@ function spinWheel() {
    the same every time, so those three replay it exactly — every bounce, every
    clack, the same winner. They ride in the address as `spin=` while the
    wheel is open, and the wheel shows the link. */
-function setSpinLink(from, v) {
+function setSpinLink(from, v, seed) {
   wheel.link = encodeURIComponent(JSON.stringify({
     e: wheel.entries.map(function (e) { return isFree(e) ? { t: e.t } : DATA[e].id; }),
     l: wheel.entries.map(function (e, k) {
       return wheel.labels[k] !== entryName(e) ? wheel.labels[k] : 0;
     }),
     r: from,
-    v: v
+    v: v,
+    s: seed
   }));
   writeUrl(false);
   el('wheellinkurl').value = location.href;
@@ -3867,7 +4004,7 @@ function readSpinLink(text) {
       entries.push(e);
       labels.push(lab || entryName(e));
     });
-    return { entries: entries, labels: labels, r: o.r, v: o.v, raw: text };
+    return { entries: entries, labels: labels, r: o.r, v: o.v, s: o.s || '', raw: text };
   } catch (e) { return null; }
 }
 
@@ -3887,6 +4024,8 @@ function openReplay(spin) {
   el('wheel').hidden = false;
   el('wheelagain').disabled = false;
   el('wheelagain').textContent = 'Play this spin';
+  el('wheelseedq').value = spin.s;
+  seedTyped = false;
   el('wheellinkurl').value = location.href;
   el('wheellink').hidden = false;
   wheelResult('<span class="spinning">A spin someone sent: press play.</span>');
@@ -4003,6 +4142,10 @@ function openWheel() {
   el('wheellink').hidden = true;
   el('wheelagain').textContent = 'Spin again';
   el('wheelagain').disabled = false;
+  el('wheelseedq').value = '';
+  seedTyped = false;
+  wheel.rot = wheelHome(wheel.entries.length);
+  wheel.psi = 0;
   wheelResult('');
   drawWheel();
   el('wheeldone').focus();
@@ -4033,7 +4176,21 @@ el('wheelagain').addEventListener('click', function () {
     playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
     return;
   }
-  spinWheel();
+  // A seed you typed is spun as it is; otherwise a fresh one.
+  spinWheel(seedTyped ? el('wheelseedq').value : '');
+});
+var seedTyped = false;
+el('wheelseedq').addEventListener('input', function () { seedTyped = true; });
+el('wheelseedq').addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    if (!wheel.anim && !wheel.searching) spinWheel(el('wheelseedq').value);
+  }
+});
+el('wheelseeddice').addEventListener('click', function () {
+  el('wheelseedq').value = randomSeed();
+  seedTyped = true;
+  el('wheelseedq').focus();
 });
 el('wheellinkcopy').addEventListener('click', function () {
   var box = el('wheellinkurl'), btn = el('wheellinkcopy');

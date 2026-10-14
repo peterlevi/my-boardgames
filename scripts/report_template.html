@@ -4383,6 +4383,7 @@ function spinWheel(seedText, prepareOnly) {
   wheel.replay = null;
   wheel.won = null;
   wheel.focus = false;
+  wheel.focusW = 0;
   clearWinFlash();
   if (!prepareOnly) {
     el('wheelagain').disabled = true;
@@ -4698,6 +4699,7 @@ function playReplay() {
   hideTapPill();
   setSeedBusy(true);
   wheel.focus = false;
+  wheel.focusW = 0;
   rewindWheel(sp.r, function () {
     if (wheel.open && wheel.replay === sp) {
       playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
@@ -4752,6 +4754,19 @@ function playSpin(run, win) {
     while (k > 0 && run.path[k] - run.path[k - 1] < 0) k--;    // rolling back
     if (k > 0 && k < last) callAt = k;
   }
+  // The lights find the stick before the wheel has made up its mind: they
+  // gather on it from a second and a half before the seventh-last pin it
+  // passes, are nearly all there (0.8) by that pin, and the two beams meet
+  // on it a second before the winner is called.
+  var callT = callAt * WHEEL_DT;
+  var pre = run.clicks.filter(function (c) { return c.t <= callT; });
+  var t7 = pre.length >= 7 ? pre[pre.length - 7].t : 0;
+  var fA = Math.max(0, t7 - 1.5), fB = Math.max(t7, callT - 1);
+  function focusAt(t) {
+    if (t <= fA) return 0;
+    if (t < t7) { var u = (t - fA) / (t7 - fA); return 0.8 * u * u * (3 - 2 * u); }
+    return fB > t7 ? 0.8 + 0.2 * Math.min(1, (t - t7) / (fB - t7)) : 1;
+  }
   function step(ts) {
     if (!wheel.open) { wheel.anim = null; return; }
     if (t0 === null) t0 = ts;
@@ -4772,6 +4787,7 @@ function playSpin(run, win) {
     }
     wheel.rot = run.path[idx];
     wheel.psi = run.flaps[idx];
+    wheel.focusW = focusAt(el_s);
     drawWheel();
     if (idx >= callAt) announce();
     if (idx < last) wheel.anim = requestAnimationFrame(step);
@@ -4925,18 +4941,22 @@ function stageLights() {
     var dt = last === null ? 0 : Math.min(0.05, (ts - last) / 1000);
     last = ts;
     if (!still) phase += dt * (wheel.anim ? 2.6 : 1);
-    // Wandering, the two beams each trace a slow figure of their own. Once a
-    // winner is called they both swing onto it — the sector under the stick,
-    // at the top of the wheel — narrow, and the rest of the wheel dims.
+    // Wandering, the two beams each trace a slow figure of their own. As the
+    // wheel runs down they gather on the sector under the stick, at the top
+    // of the wheel (wheel.focusW, from playSpin), and meet there; called,
+    // the winner keeps them. Focused, they narrow and the rest dims.
     var wx1 = 36 + 20 * Math.sin(phase * 0.41), wy1 = 34 + 16 * Math.sin(phase * 0.57 + 1.3);
     var wx2 = 64 + 20 * Math.sin(phase * 0.33 + 2.2), wy2 = 64 + 16 * Math.cos(phase * 0.47);
-    var f = wheel.focus ? 1 : 0;
-    var ease = still ? 1 : Math.min(1, dt * 3.2);
+    var f = wheel.focus ? 1 : (wheel.focusW || 0);
+    var ease = still ? 1 : Math.min(1, dt * (f ? 9 : 3.2));
     var L = wheel.light || (wheel.light = { x1: wx1, y1: wy1, x2: wx2, y2: wy2,
-                                            r: 29, shade: 0.72 });
-    var t = f ? { x1: 47, y1: 19, x2: 53, y2: 21, r: 21, shade: 0.86 }
-              : { x1: wx1, y1: wy1, x2: wx2, y2: wy2, r: wheel.anim ? 32 : 29, shade: 0.72 };
+                                            r: 29, shade: 0.72, aim: 0 });
+    var wr = wheel.anim ? 32 : 29;
+    function mix(a, b) { return a + (b - a) * f; }
+    var t = { x1: mix(wx1, 50), y1: mix(wy1, 20), x2: mix(wx2, 50), y2: mix(wy2, 20),
+              r: mix(wr, 21), shade: mix(0.72, 0.86), aim: f };
     Object.keys(t).forEach(function (k) { L[k] += (t[k] - L[k]) * ease; });
+    aimSpots(L.aim);
     box.style.setProperty('--x1', L.x1.toFixed(2) + '%');
     box.style.setProperty('--y1', L.y1.toFixed(2) + '%');
     box.style.setProperty('--x2', L.x2.toFixed(2) + '%');
@@ -4946,6 +4966,24 @@ function stageLights() {
     wheel.lightAnim = requestAnimationFrame(step);
   }
   wheel.lightAnim = requestAnimationFrame(step);
+}
+
+/* The beams themselves swing round to the stick as the lights gather: each
+   cone turned, by `aim` of the way, from the middle of its sway to point
+   from where it hangs at the top of the wheel. CSS rotate adds to the
+   sway's own transform. */
+function aimSpots(aim) {
+  var card = document.querySelector('.wheelcard'), wl = el('wheellight');
+  if (!card || !wl) return;
+  var cr = card.getBoundingClientRect(), r = wl.getBoundingClientRect();
+  var tx = r.left - cr.left + r.width / 2, ty = r.top - cr.top + r.height * 0.2;
+  [['warm', -21], ['cool', 20.5]].forEach(function (s) {
+    var sp = card.querySelector('.spot.' + s[0]);
+    if (!sp) return;
+    var ox = sp.offsetLeft + sp.offsetWidth / 2, oy = sp.offsetTop;
+    var want = Math.atan2(-(tx - ox), ty - oy) * 180 / Math.PI;
+    sp.style.rotate = aim > 0.001 ? (aim * (want - s[1])).toFixed(2) + 'deg' : '';
+  });
 }
 
 function stageSpinning(on) {
@@ -4999,6 +5037,7 @@ function closeWheel() {
   wheel.won = null;
   wheel.open = false;
   wheel.focus = false;
+  wheel.focusW = 0;
   stageSpinning(false);
   stopCountdown();
   hideTapPill();

@@ -665,11 +665,18 @@ The wheel is dark oak — each sector a wedge with the grain running out from
 the hub, alternate ones a shade darker — lettered in gold, with a gilt rim,
 gold lines between the sectors, brass studs for pins and a brass hub with
 rivets that turn with it (the dark pins and rim of the coloured wheel
-vanished on the wood). The grain is made once, pixel by pixel, from smooth
-noise: growth bands bent and pinched by it, darker late wood, fine streaks
-— straight drawn lines read as fake. The lights' shade is lighter than it
+vanished on the wood). The grain is drawn once, in layers — soft patches
+of colour, growth bands (a soft dark stripe with a crisp edge), fine grain,
+pores, and oak's pale ray flecks — every line following one shared flow,
+so neighbours bend together and pinch into arches. Lines that each
+wavered on their own read as fake, and a per-pixel noise texture read as
+plastic. The lights' shade is lighter than it
 was over the coloured sectors, or nothing of the grain survives. The same
-gold counts down, says "Spinning!" and flashes the winner's name. The oak
+gold counts down, says "Spinning!" and flashes the winner's name — upright,
+in Poiret One (an art-deco face, the page's one web font, falling back to
+the system's own offline), fading in out of a soft blur rather than
+bouncing. The Tap to spin / Spin again pill is deco capitals on black with
+a thin gold trim, a light running round it in place of a pulse. The oak
 is drawn once per size and sector count and turned whole each frame, so it
 costs one image per frame however many sectors.
 

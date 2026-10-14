@@ -3,12 +3,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Board game collection</title>
+<!-- One web font, for the wheel's show lettering (Poiret One, an art-deco
+     face). Offline, it falls back to the system's own. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap">
 <style>
 :root {
   --bg:#f7f6f3; --panel:#fff; --ink:#1b1a17; --muted:#6b6862; --line:#e2ded6;
   --accent:#7a5c3e; --best:#2f6b45; --best-bg:#e4f0e8; --great:#7a6320;
   --great-bg:#f6efd8; --warn:#8a4b32; --warn-bg:#f4e5de;
   --chip:#eae6de; --tile:#dcd6c9;
+  --deco:"Poiret One","Avenir Next","Futura","Century Gothic",system-ui,sans-serif;
   /* Meter scale, strong to weak, so a percentage reads before it is parsed. */
   --m4:#3f8a5f; --m3:#7d9b45; --m2:#c0952b; --m1:#b3aca1; --hit:#f6e6a8;
   /* The game picker's column: a shade darker than the page, so it reads as
@@ -1397,51 +1403,51 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelcount { position:absolute; left:0; width:100%; top:12.8%; aspect-ratio:1;
   display:flex; align-items:center; justify-content:center;
   pointer-events:none; z-index:2; }
-.wheelcount span { display:inline-block; font-family:"Avenir Next","Segoe UI",
-  system-ui,sans-serif; font-weight:900; line-height:1; letter-spacing:-.02em;
-  -webkit-text-stroke:.9cqw #1b1a17; paint-order:stroke fill;
-  text-shadow:1.2cqw 1.6cqw 0 #1b1a17; }
-.wheelcount .num { font-size:38cqw; transform:rotate(var(--rot));
-  animation:countpop .72s cubic-bezier(.2,1.4,.4,1) both; }
-.wheelcount .word { font-size:15cqw; white-space:nowrap;
-  transform:rotate(var(--rot)); animation:wordpop 1.1s ease-out both; }
+.wheelcount span { display:inline-block; font-family:var(--deco); font-weight:400;
+  line-height:1; letter-spacing:.04em; color:#e2bb62;
+  text-shadow:0 0 1.5cqw rgba(0,0,0,.9), 0 0 5cqw rgba(226,187,98,.28); }
+.wheelcount .num { font-size:40cqw; animation:decocount .72s ease-out both; }
+.wheelcount .word { font-size:11.5cqw; white-space:nowrap; text-transform:uppercase;
+  letter-spacing:.16em; animation:decoword 1.1s ease-out both; }
 .wheelcount .word i { font-style:normal; display:inline-block; }
 /* A sent spin opened before any click: the browser holds its sound back, so
-   one tap — this — lets the sound in and starts the countdown. */
+   one tap — this — lets the sound in and starts the countdown. Upright, in
+   deco capitals on black, a thin gold trim with a light running round it. */
+@property --trim { syntax:'<angle>'; inherits:false; initial-value:0deg; }
 .wheeltap { position:absolute; left:50%; top:calc(12.8% + 50cqw); z-index:3;
-  transform:translate(-50%, -50%) rotate(-4deg); border:0; cursor:pointer;
-  background:#1b1a17; color:#fff; font:inherit; font-weight:900;
-  font-size:8.5cqw; line-height:1; white-space:nowrap; padding:3.2cqw 5cqw;
-  border-radius:999px; box-shadow:1.2cqw 1.6cqw 0 rgba(0,0,0,.35);
-  animation:tappulse 1.1s ease-in-out infinite; }
-.wheeltap:hover { background:var(--accent); }
+  transform:translate(-50%, -50%); cursor:pointer;
+  color:#f3e2b4; font-family:var(--deco); font-weight:400; text-transform:uppercase;
+  letter-spacing:.18em; font-size:6cqw; line-height:1; white-space:nowrap;
+  padding:3cqw 5.5cqw 3cqw 6cqw; border-radius:999px;
+  border:1.5px solid transparent;
+  background:linear-gradient(rgba(10,6,4,.92), rgba(10,6,4,.92)) padding-box,
+    conic-gradient(from var(--trim), rgba(226,187,98,.35) 0deg, rgba(226,187,98,.35) 250deg,
+      #fff1c4 300deg, rgba(226,187,98,.35) 350deg) border-box;
+  box-shadow:0 1.5cqw 5cqw rgba(0,0,0,.6);
+  animation:trimrun 2.6s linear infinite; }
+.wheeltap svg path { stroke-width:1.4; }
+.wheeltap:hover { color:#fff; }
 /* Zoomed in on a winner, the pill drops low, clear of the name. */
 .wheelcard.zoomed .wheeltap { top:84%; }
-@keyframes tappulse {
-  0%, 100% { transform:translate(-50%, -50%) rotate(-4deg) scale(1); }
-  50% { transform:translate(-50%, -50%) rotate(-4deg) scale(1.08); } }
+@keyframes trimrun { to { --trim:360deg; } }
 .wheelcount .win { max-width:92%; text-align:center; white-space:normal;
-  line-height:1.04; overflow-wrap:anywhere; transform:rotate(var(--rot));
-  animation:winpop 2.9s ease-out both; }
-@keyframes winpop {
-  0% { opacity:0; transform:scale(2.8) rotate(var(--rot)); }
-  10% { opacity:1; transform:scale(.9) rotate(var(--rot)); }
-  17% { transform:scale(1.07) rotate(var(--rot)); }
-  24% { transform:scale(1) rotate(var(--rot)); }
-  80% { opacity:1; transform:scale(1.04) rotate(var(--rot)); }
-  100% { opacity:0; transform:scale(1.3) rotate(var(--rot)); } }
-@keyframes countpop {
-  0% { opacity:0; transform:scale(2.4) rotate(var(--rot)); }
-  30% { opacity:1; transform:scale(.9) rotate(var(--rot)); }
-  55% { transform:scale(1.06) rotate(var(--rot)); }
-  85% { opacity:1; transform:scale(1) rotate(var(--rot)); }
-  100% { opacity:0; transform:scale(.8) rotate(var(--rot)); } }
-@keyframes wordpop {
-  0% { opacity:0; transform:scale(2.6) rotate(var(--rot)); }
-  22% { opacity:1; transform:scale(.92) rotate(var(--rot)); }
-  38% { transform:scale(1.04) rotate(var(--rot)); }
-  60% { opacity:1; transform:scale(1) rotate(var(--rot)); }
-  100% { opacity:0; transform:scale(1.35) rotate(var(--rot)); } }
+  line-height:1.1; overflow-wrap:anywhere; animation:decowin 2.9s ease-out both; }
+/* In without a bounce: out of a soft blur, the letters drawing together. */
+@keyframes decowin {
+  0% { opacity:0; filter:blur(1.5cqw); letter-spacing:.3em; }
+  18% { opacity:1; filter:blur(0); letter-spacing:.04em; }
+  80% { opacity:1; }
+  100% { opacity:0; } }
+@keyframes decocount {
+  0% { opacity:0; transform:scale(1.12); filter:blur(1cqw); }
+  25% { opacity:1; transform:scale(1); filter:blur(0); }
+  80% { opacity:1; }
+  100% { opacity:0; transform:scale(.97); } }
+@keyframes decoword {
+  0% { opacity:0; letter-spacing:.45em; filter:blur(1cqw); }
+  30% { opacity:1; letter-spacing:.16em; filter:blur(0); }
+  70% { opacity:1; }
+  100% { opacity:0; } }
 .wheelbox { position:relative; aspect-ratio:42 / 47; container-type:inline-size;
   /* As wide as fits, and never so tall that the card needs a scrollbar: the
      rows under the wheel (result, seed, link, buttons) and the card's
@@ -1516,8 +1522,8 @@ td.c-add { text-align:right; white-space:nowrap; }
    the stage gold and sets the bulbs blinking. Light text on it; reduced
    motion holds it all still. */
 .wheelcard { background:radial-gradient(ellipse 120% 90% at 50% 38%,
-    #2a0b0d 0%, #140506 50%, #050202 100%);
-  color:#f3e9d8; border:1px solid #4a2a12;
+    #0f0707 0%, #070404 50%, #020101 100%);
+  color:#f3e9d8; border:1px solid #1e1512;
   box-shadow:0 24px 80px rgba(0,0,0,.6), inset 0 0 60px rgba(0,0,0,.6);
   padding-left:clamp(22px, 9%, 54px); padding-right:clamp(22px, 9%, 54px);
   overflow:hidden; isolation:isolate; }
@@ -1540,8 +1546,8 @@ td.c-add { text-align:right; white-space:nowrap; }
 .stage.front { z-index:3; }
 .stage-pool { position:absolute; left:50%; top:42%; width:120%;
   aspect-ratio:1; transform:translate(-50%, -50%);
-  background:radial-gradient(circle, rgba(255,196,120,.20) 0%,
-    rgba(255,150,90,.08) 32%, transparent 60%);
+  background:radial-gradient(circle, rgba(255,196,120,.08) 0%,
+    rgba(255,150,90,.03) 32%, transparent 60%);
   animation:poolbreathe 6s ease-in-out infinite alternate; }
 .stage-fog { position:absolute; left:-10%; right:-10%; bottom:-6%; height:38%;
   background:radial-gradient(ellipse 60% 70% at 30% 100%, rgba(205,195,190,.24),
@@ -3857,56 +3863,93 @@ var wheel = { open: false, rot: 0, psi: 0, entries: [], anim: null,
 // the same gold counts down and calls the winner.
 var WHEEL_GOLD = '#e2bb62';
 
-/* Dark oak, drawn once, pixel by pixel: growth bands across the tile,
-   bent and crowded by smooth noise so they waver and pinch like a real
-   board, darker late wood in each band, fine lengthwise streaks and pores,
-   and a slow drift of colour. The grain runs along x (a wedge's length);
-   across, the noise repeats every tile, so wedges tile without a seam.
-   Plain Math.random — it is texture, not the draw. */
+/* Dark oak, drawn once. The grain runs along x (a wedge's length) and
+   everything follows one shared flow — a few slow waves that move with how
+   far down the board a line is — so neighbouring lines bend together and
+   pinch into arches, as real grain does, instead of each wavering on its
+   own. Layered: a dark ground with soft patches of colour; growth bands,
+   each a soft dark stripe with a crisp edge; fine grain; open pores; and
+   the pale flecks of oak's rays. Every line is drawn again a tile up and
+   down, so wedges tile across without a seam. Plain Math.random — it is
+   texture, not the draw. */
 var woodTile = null;
 function woodTexture() {
   if (woodTile) return woodTile;
-  var W = 1024, H = 512, GN = 64;
-  var tab = new Float32Array(GN * GN);
-  for (var t = 0; t < tab.length; t++) tab[t] = Math.random();
-  // Value noise on a lattice that repeats every py cells down.
-  function vn(x, y, py) {
-    var xi = Math.floor(x), yi = Math.floor(y), xf = x - xi, yf = y - yi;
-    var u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf);
-    function h(i, j) { return tab[((i % GN) + GN) % GN + (((j % py) + py) % py) * GN]; }
-    var a = h(xi, yi), b = h(xi + 1, yi), c = h(xi, yi + 1), d = h(xi + 1, yi + 1);
-    return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
-  }
-  function fbm(x, y, py) {
-    var s = 0, amp = 0.5;
-    for (var o = 0; o < 4; o++) { s += amp * vn(x, y, py); x *= 2; y *= 2; py *= 2; amp *= 0.5; }
-    return s;
-  }
+  var W = 1024, H = 512, rnd = Math.random;
   var c = document.createElement('canvas');
   c.width = W; c.height = H;
-  var x = c.getContext('2d'), img = x.createImageData(W, H), px = img.data;
-  var rows = new Float32Array(H);
-  for (var r = 0; r < H; r++) rows[r] = Math.random();
-  var light = [122, 78, 42], dark = [30, 16, 6];
-  for (var yy = 0; yy < H; yy++) {
-    for (var xx = 0; xx < W; xx++) {
-      var nx = xx / W * 3, ny = yy / H * 4;
-      // Thirteen bands down the tile, pushed about by the noise.
-      var warp = fbm(nx, ny, 4) * 2.6 + fbm(nx * 4, ny, 4) * 0.35;
-      var band = (yy / H * 13 + warp) % 1;
-      // Early wood light and wide, late wood dark and narrow.
-      var late = Math.pow(0.5 + 0.5 * Math.sin(band * 2 * Math.PI), 4);
-      var drift = fbm(nx * 0.5, ny * 0.5, 4) - 0.5;
-      var streak = (rows[yy] - 0.5) * 0.12 + (Math.random() - 0.5) * 0.06;
-      var k = Math.min(1, Math.max(0, 0.35 + late * 0.55 + drift * 0.35 + streak));
-      var o = (yy * W + xx) * 4;
-      px[o] = light[0] + (dark[0] - light[0]) * k;
-      px[o + 1] = light[1] + (dark[1] - light[1]) * k;
-      px[o + 2] = light[2] + (dark[2] - light[2]) * k;
-      px[o + 3] = 255;
+  var x = c.getContext('2d');
+  x.fillStyle = '#2b190b';
+  x.fillRect(0, 0, W, H);
+  function wrapped(draw) { draw(0); draw(-H); draw(H); }
+  // Soft patches: the colour of a board is never even.
+  for (var b = 0; b < 16; b++) {
+    var bx = rnd() * W, by = rnd() * H, br = 80 + rnd() * 220, warm = rnd() < 0.6;
+    wrapped(function (o) {
+      var g = x.createRadialGradient(bx, by + o, 0, bx, by + o, br);
+      g.addColorStop(0, warm ? 'rgba(92,56,26,.35)' : 'rgba(12,6,2,.35)');
+      g.addColorStop(1, 'rgba(0,0,0,0)');
+      x.fillStyle = g;
+      x.fillRect(bx - br, by + o - br, 2 * br, 2 * br);
+    });
+  }
+  // The shared flow, for a line that starts y0 down.
+  var p1 = rnd() * 6.3, p2 = rnd() * 6.3, p3 = rnd() * 6.3;
+  function flow(px, y0) {
+    var t = y0 / H * 2 * Math.PI;
+    return 14 * Math.sin(px * 0.0045 + p1 + Math.sin(t) * 1.3) +
+           7 * Math.sin(px * 0.012 + p2 + t * 2) +
+           3 * Math.sin(px * 0.031 + p3 + t * 3);
+  }
+  function line(y0, wobble, width, style) {
+    var ph = rnd() * 6.3;
+    wrapped(function (o) {
+      x.beginPath();
+      for (var px = -8; px <= W + 8; px += 6) {
+        var py = y0 + o + flow(px, y0) + wobble * Math.sin(px * 0.05 + ph);
+        if (px === -8) x.moveTo(px, py); else x.lineTo(px, py);
+      }
+      x.lineWidth = width;
+      x.strokeStyle = style;
+      x.stroke();
+    });
+  }
+  // Growth bands: a soft dark stripe of late wood, its edge drawn crisp.
+  x.lineCap = 'round';
+  var nb = 18;
+  for (var k = 0; k < nb; k++) {
+    var y0 = (k + rnd() * 0.6) * H / nb;
+    line(y0, 0.8, 5 + rnd() * 9, 'rgba(10,5,2,' + (0.25 + rnd() * 0.2).toFixed(2) + ')');
+    line(y0 + 2, 0.5, 1 + rnd() * 1.2, 'rgba(8,4,1,' + (0.45 + rnd() * 0.25).toFixed(2) + ')');
+    line(y0 - 4, 0.6, 2 + rnd() * 2, 'rgba(140,92,48,' + (0.08 + rnd() * 0.1).toFixed(2) + ')');
+  }
+  // Fine grain, light and dark.
+  for (var f = 0; f < 260; f++) {
+    var dark = rnd() < 0.65;
+    line(rnd() * H, 0.4 + rnd(), 0.4 + rnd() * 0.9,
+         dark ? 'rgba(8,4,1,' + (0.1 + rnd() * 0.2).toFixed(2) + ')'
+              : 'rgba(150,100,55,' + (0.05 + rnd() * 0.1).toFixed(2) + ')');
+  }
+  // Pores, short dark nicks along the grain; and oak's rays, pale flecks.
+  function dash(n, len, width, style) {
+    x.fillStyle = style;
+    for (var d = 0; d < n; d++) {
+      var dx = rnd() * W, y0 = rnd() * H, l = len[0] + rnd() * len[1];
+      var dy = y0 + flow(dx, y0);
+      var ang = Math.atan2(flow(dx + 6, y0) - flow(dx, y0), 6);
+      wrapped(function (o) {
+        x.save();
+        x.translate(dx, dy + o);
+        x.rotate(ang);
+        x.beginPath();
+        x.ellipse(0, 0, l / 2, width / 2, 0, 0, 2 * Math.PI);
+        x.fill();
+        x.restore();
+      });
     }
   }
-  x.putImageData(img, 0, 0);
+  dash(2600, [2, 7], 0.9, 'rgba(6,3,1,.35)');
+  dash(220, [6, 18], 1.6, 'rgba(176,124,70,.13)');
   woodTile = c;
   return c;
 }
@@ -3992,7 +4035,7 @@ function drawWheel() {
   // A crowded wheel: lines between the sectors no thicker than a third of a
   // sector is wide at the rim, and none at all once a sector is under four
   // pixels there — they would only grey the colours over.
-  var sepW = Math.min(1.5 * dpr, R * a / 3), seps = R * a >= 4 * dpr;
+  var sepW = Math.min(0.6 * dpr, R * a / 3), seps = R * a >= 4 * dpr;
   ctx.clearRect(0, 0, cv.width, cv.height);
   // The oak, made once for this size and number of sectors (woodDisc) and
   // turned with the wheel.

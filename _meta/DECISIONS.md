@@ -662,7 +662,13 @@ With 24 sectors or fewer, each carries its game's cover in a small circle at
 the rim end, turned so its top faces outward.
 
 The wheel is dark oak — each sector a wedge with the grain running out from
-the hub, alternate ones a shade darker — lettered in gold, and the same
+the hub, alternate ones a shade darker — lettered in gold, with a gilt rim,
+gold lines between the sectors, brass studs for pins and a brass hub with
+rivets that turn with it (the dark pins and rim of the coloured wheel
+vanished on the wood). The grain is made once, pixel by pixel, from smooth
+noise: growth bands bent and pinched by it, darker late wood, fine streaks
+— straight drawn lines read as fake. The lights' shade is lighter than it
+was over the coloured sectors, or nothing of the grain survives. The same
 gold counts down, says "Spinning!" and flashes the winner's name. The oak
 is drawn once per size and sector count and turned whole each frame, so it
 costs one image per frame however many sectors.

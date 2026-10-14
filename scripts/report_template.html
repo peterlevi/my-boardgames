@@ -3857,35 +3857,56 @@ var wheel = { open: false, rot: 0, psi: 0, entries: [], anim: null,
 // the same gold counts down and calls the winner.
 var WHEEL_GOLD = '#e2bb62';
 
-/* Dark oak, drawn once: a brown ground with long wavering grain lines,
-   darker and lighter, the occasional knot of tighter ones. Plain
-   Math.random — it is texture, not the draw. */
+/* Dark oak, drawn once, pixel by pixel: growth bands across the tile,
+   bent and crowded by smooth noise so they waver and pinch like a real
+   board, darker late wood in each band, fine lengthwise streaks and pores,
+   and a slow drift of colour. The grain runs along x (a wedge's length);
+   across, the noise repeats every tile, so wedges tile without a seam.
+   Plain Math.random — it is texture, not the draw. */
 var woodTile = null;
 function woodTexture() {
   if (woodTile) return woodTile;
-  var c = document.createElement('canvas'), W = 512, H = 512;
-  c.width = W; c.height = H;
-  var x = c.getContext('2d');
-  var g = x.createLinearGradient(0, 0, 0, H);
-  g.addColorStop(0, '#3a2414'); g.addColorStop(0.5, '#33200f'); g.addColorStop(1, '#3a2414');
-  x.fillStyle = g;
-  x.fillRect(0, 0, W, H);
-  for (var l = 0; l < 140; l++) {
-    var y0 = Math.random() * H, amp = 2 + Math.random() * 7;
-    var f1 = 0.004 + Math.random() * 0.01, f2 = 0.02 + Math.random() * 0.03;
-    var ph = Math.random() * 6.3, dark = Math.random() < 0.6;
-    x.beginPath();
-    for (var px = -4; px <= W + 4; px += 4) {
-      var py = y0 + amp * Math.sin(px * f1 + ph) + 1.2 * Math.sin(px * f2 + ph * 2);
-      if (px === -4) x.moveTo(px, py); else x.lineTo(px, py);
-    }
-    x.lineWidth = 0.6 + Math.random() * 2.2;
-    x.strokeStyle = dark ? 'rgba(18,9,3,' + (0.25 + Math.random() * 0.35).toFixed(2) + ')'
-                         : 'rgba(120,78,42,' + (0.12 + Math.random() * 0.2).toFixed(2) + ')';
-    x.stroke();
-    // Wrap the line round so the tile repeats without a seam.
-    x.save(); x.translate(0, y0 > H / 2 ? -H : H); x.stroke(); x.restore();
+  var W = 1024, H = 512, GN = 64;
+  var tab = new Float32Array(GN * GN);
+  for (var t = 0; t < tab.length; t++) tab[t] = Math.random();
+  // Value noise on a lattice that repeats every py cells down.
+  function vn(x, y, py) {
+    var xi = Math.floor(x), yi = Math.floor(y), xf = x - xi, yf = y - yi;
+    var u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf);
+    function h(i, j) { return tab[((i % GN) + GN) % GN + (((j % py) + py) % py) * GN]; }
+    var a = h(xi, yi), b = h(xi + 1, yi), c = h(xi, yi + 1), d = h(xi + 1, yi + 1);
+    return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
   }
+  function fbm(x, y, py) {
+    var s = 0, amp = 0.5;
+    for (var o = 0; o < 4; o++) { s += amp * vn(x, y, py); x *= 2; y *= 2; py *= 2; amp *= 0.5; }
+    return s;
+  }
+  var c = document.createElement('canvas');
+  c.width = W; c.height = H;
+  var x = c.getContext('2d'), img = x.createImageData(W, H), px = img.data;
+  var rows = new Float32Array(H);
+  for (var r = 0; r < H; r++) rows[r] = Math.random();
+  var light = [122, 78, 42], dark = [30, 16, 6];
+  for (var yy = 0; yy < H; yy++) {
+    for (var xx = 0; xx < W; xx++) {
+      var nx = xx / W * 3, ny = yy / H * 4;
+      // Thirteen bands down the tile, pushed about by the noise.
+      var warp = fbm(nx, ny, 4) * 2.6 + fbm(nx * 4, ny, 4) * 0.35;
+      var band = (yy / H * 13 + warp) % 1;
+      // Early wood light and wide, late wood dark and narrow.
+      var late = Math.pow(0.5 + 0.5 * Math.sin(band * 2 * Math.PI), 4);
+      var drift = fbm(nx * 0.5, ny * 0.5, 4) - 0.5;
+      var streak = (rows[yy] - 0.5) * 0.12 + (Math.random() - 0.5) * 0.06;
+      var k = Math.min(1, Math.max(0, 0.35 + late * 0.55 + drift * 0.35 + streak));
+      var o = (yy * W + xx) * 4;
+      px[o] = light[0] + (dark[0] - light[0]) * k;
+      px[o + 1] = light[1] + (dark[1] - light[1]) * k;
+      px[o + 2] = light[2] + (dark[2] - light[2]) * k;
+      px[o + 3] = 255;
+    }
+  }
+  x.putImageData(img, 0, 0);
   woodTile = c;
   return c;
 }
@@ -3989,7 +4010,7 @@ function drawWheel() {
     ctx.closePath();
     if (seps) {
       ctx.lineWidth = sepW;
-      ctx.strokeStyle = '#120a04';
+      ctx.strokeStyle = 'rgba(214,170,82,.75)';
       ctx.stroke();
     }
     // The name along the sector's middle, reading outward from the hub.
@@ -4023,31 +4044,85 @@ function drawWheel() {
     if (thumbs) wheelThumb(ctx, wheel.entries[i], wheel.labels[i], tc, td, dpr);
     ctx.restore();
   }
-  // The rim.
+  // The rim: a gilt band, lit from above, on a dark edge.
+  var gilt = ctx.createLinearGradient(cx, cy - R, cx, cy + R);
+  gilt.addColorStop(0, '#f6dc8e');
+  gilt.addColorStop(0.45, '#c9973f');
+  gilt.addColorStop(1, '#7a5418');
   ctx.beginPath();
   ctx.arc(cx, cy, R, 0, 2 * Math.PI);
-  ctx.lineWidth = 3 * dpr;
-  ctx.strokeStyle = '#1b1a17';
+  ctx.lineWidth = Math.max(3 * dpr, R * 0.022);
+  ctx.strokeStyle = '#1a0f05';
+  ctx.stroke();
+  ctx.lineWidth = Math.max(1.5 * dpr, R * 0.012);
+  ctx.strokeStyle = gilt;
   ctx.stroke();
   // The pegs, right at the edge: one on every boundary, or with more
-  // sectors than pins, evenly spaced (wheelPins).
-  var G = WHEEL_G, np = wheelPins(n), ap = 2 * Math.PI / np;
+  // sectors than pins, evenly spaced (wheelPins) — brass studs, each with
+  // its own highlight, a dark ring round it to sit it on the wood.
+  var G = WHEEL_G, np = wheelPins(n), ap = 2 * Math.PI / np, pr = G.pr * R;
   for (var p = 0; p < np; p++) {
     var pa = -Math.PI / 2 + p * ap + wheel.rot - (wheel.pinOff || 0);
     var gx = cx + G.rp * R * Math.cos(pa), gy = cy + G.rp * R * Math.sin(pa);
+    var stud = ctx.createRadialGradient(gx - pr * 0.35, gy - pr * 0.4, pr * 0.1, gx, gy, pr);
+    stud.addColorStop(0, '#fff4cf');
+    stud.addColorStop(0.45, '#dcae4a');
+    stud.addColorStop(1, '#6f4b14');
     ctx.beginPath();
-    ctx.arc(gx, gy, G.pr * R, 0, 2 * Math.PI);
-    ctx.fillStyle = '#1b1a17';
+    ctx.arc(gx, gy, pr, 0, 2 * Math.PI);
+    ctx.fillStyle = stud;
+    ctx.fill();
+    ctx.lineWidth = Math.max(1, pr * 0.18);
+    ctx.strokeStyle = 'rgba(20,10,3,.85)';
+    ctx.stroke();
+  }
+  // The hub: a brass boss in a bezel, rivets round it turning with the
+  // wheel, a dark cap at the centre.
+  var hr = R * 0.12;
+  ctx.save();
+  ctx.shadowColor = 'rgba(0,0,0,.6)';
+  ctx.shadowBlur = hr * 0.5;
+  ctx.shadowOffsetY = hr * 0.12;
+  var bez = ctx.createLinearGradient(cx, cy - hr, cx, cy + hr);
+  bez.addColorStop(0, '#f2d384');
+  bez.addColorStop(0.5, '#a87a2c');
+  bez.addColorStop(1, '#5e3f10');
+  ctx.beginPath();
+  ctx.arc(cx, cy, hr, 0, 2 * Math.PI);
+  ctx.fillStyle = bez;
+  ctx.fill();
+  ctx.restore();
+  ctx.beginPath();
+  ctx.arc(cx, cy, hr, 0, 2 * Math.PI);
+  ctx.lineWidth = Math.max(1, hr * 0.06);
+  ctx.strokeStyle = '#1a0f05';
+  ctx.stroke();
+  var boss = ctx.createRadialGradient(cx - hr * 0.3, cy - hr * 0.35, hr * 0.05, cx, cy, hr * 0.78);
+  boss.addColorStop(0, '#fff3c8');
+  boss.addColorStop(0.4, '#d9a843');
+  boss.addColorStop(1, '#7a5418');
+  ctx.beginPath();
+  ctx.arc(cx, cy, hr * 0.78, 0, 2 * Math.PI);
+  ctx.fillStyle = boss;
+  ctx.fill();
+  ctx.lineWidth = Math.max(1, hr * 0.04);
+  ctx.strokeStyle = 'rgba(60,38,10,.9)';
+  ctx.stroke();
+  for (var rv = 0; rv < 8; rv++) {
+    var ra = wheel.rot + rv * Math.PI / 4;
+    var rx = cx + hr * 0.89 * Math.cos(ra), ry = cy + hr * 0.89 * Math.sin(ra);
+    ctx.beginPath();
+    ctx.arc(rx, ry, hr * 0.055, 0, 2 * Math.PI);
+    ctx.fillStyle = '#3a2410';
     ctx.fill();
   }
-  // The hub.
+  var cap = ctx.createRadialGradient(cx - hr * 0.08, cy - hr * 0.1, hr * 0.02, cx, cy, hr * 0.26);
+  cap.addColorStop(0, '#8a6a3a');
+  cap.addColorStop(1, '#24150a');
   ctx.beginPath();
-  ctx.arc(cx, cy, R * 0.1, 0, 2 * Math.PI);
-  ctx.fillStyle = '#fff';
+  ctx.arc(cx, cy, hr * 0.26, 0, 2 * Math.PI);
+  ctx.fillStyle = cap;
   ctx.fill();
-  ctx.lineWidth = 3 * dpr;
-  ctx.strokeStyle = '#1b1a17';
-  ctx.stroke();
   wheel.geo = { w: cv.width, h: cv.height, R: R, cx: cx, cy: cy, dpr: dpr, a: a,
                 thumbs: n <= 24, tc: R * 0.855,
                 td: Math.min(0.13 * R, 2 * R * 0.855 * half * 0.78) };
@@ -5162,12 +5237,14 @@ function stageLights() {
     var f = wheel.focus ? 1 : (wheel.focusW || 0);
     var ease = still ? 1 : Math.min(1, dt * (f ? 9 : 3.2));
     var L = wheel.light || (wheel.light = { x1: wx1, y1: wy1, x2: wx2, y2: wy2,
-                                            r: 29, shade: 0.72 });
-    var wr = wheel.anim ? 40 : 29, ws = wheel.anim ? 0.26 : 0.72;
+                                            r: 29, shade: 0.45 });
+    // (Lighter shade than a bright wheel would want: on dark oak a heavy
+    // one leaves nothing of the grain.)
+    var wr = wheel.anim ? 40 : 29, ws = wheel.anim ? 0.15 : 0.45;
     function mix(a, b) { return a + (b - a) * f; }
     var fp = wheel.focusPt || { x: 0.5, y: 0.2 }, fpx = fp.x * 100, fpy = fp.y * 100;
     var t = { x1: mix(wx1, fpx), y1: mix(wy1, fpy), x2: mix(wx2, fpx), y2: mix(wy2, fpy),
-              r: mix(wr, 21), shade: mix(ws, 0.86) };
+              r: mix(wr, 21), shade: mix(ws, 0.62) };
     Object.keys(t).forEach(function (k) { L[k] += (t[k] - L[k]) * ease; });
     // Called: the lights go out — the pools fade and close — and the whole
     // wheel sinks to one even dark, the winner's cover lifted out of it.
@@ -5176,7 +5253,7 @@ function stageLights() {
     if (Math.abs(popT - pop) < 0.002) pop = popT;
     wheel.pop = pop;
     var e = pop * pop * (3 - 2 * pop);
-    var rr = L.r * (1 - e), sh = L.shade + (0.8 - L.shade) * e;
+    var rr = L.r * (1 - e), sh = L.shade + (0.6 - L.shade) * e;
     if (pop !== pop0) drawTop();
     box.style.setProperty('--x1', L.x1.toFixed(2) + '%');
     box.style.setProperty('--y1', L.y1.toFixed(2) + '%');

@@ -1519,8 +1519,11 @@ td.c-add { text-align:right; white-space:nowrap; }
   box-shadow:0 24px 80px rgba(0,0,0,.6), inset 0 0 60px rgba(0,0,0,.6);
   padding-left:clamp(22px, 9%, 54px); padding-right:clamp(22px, 9%, 54px);
   overflow:hidden; isolation:isolate; }
-.wheelcard > :not(.stage):not(.wheelx):not(.wheelsnd) {
+.wheelcard > :not(.stage):not(.wheelx):not(.wheelsnd):not(.wheelbox) {
   position:relative; z-index:3; }
+/* The wheel behind the curtains and the arch (.stage.front), so zoomed in
+   it disappears behind them as a wheel on a stage would. */
+.wheelcard > .wheelbox { position:relative; z-index:2; }
 /* The camera: at the end of a spin the wheel pushes in on the stick (by
    wheelZoom), inside its own frame, the stage around it left as it is. */
 .wheelcard.zoomed .wheelbox { overflow:hidden; }
@@ -1532,6 +1535,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelcard .wheelsnd[aria-pressed="false"] { color:#ff8a7a; }
 .stage { position:absolute; inset:0; pointer-events:none;
   border-radius:inherit; overflow:hidden; z-index:0; }
+.stage.front { z-index:3; }
 .stage-pool { position:absolute; left:50%; top:42%; width:120%;
   aspect-ratio:1; transform:translate(-50%, -50%);
   background:radial-gradient(circle, rgba(255,196,120,.20) 0%,
@@ -2199,12 +2203,16 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
       <div class="stage-pool"></div>
       <div class="floor"></div>
       <div class="stage-fog"></div>
+      <div class="motes" id="motes"></div>
+    </div>
+    <!-- And in front of the wheel, framing it: the curtains, the arch and
+         its bulbs. Still behind the controls, which come later. -->
+    <div class="stage front" aria-hidden="true">
       <div class="curtain left"></div>
       <div class="curtain right"></div>
       <div class="arch"></div>
       <div class="arch-trim"></div>
       <div class="bulbs" id="bulbs"></div>
-      <div class="motes" id="motes"></div>
     </div>
     <button type="button" class="iconbtn wheelx" id="wheelclose"
       title="Close" aria-label="Close the wheel">&times;</button>
@@ -3855,6 +3863,18 @@ function fairIndex(n) {
  *  across the seam between the last sector and the first. */
 function wheelColor(i, n) {
   var k = WHEEL_COLORS.length;
+  // A crowded wheel — sectors only a few pixels wide — would blur the
+  // palette, repeated round it every ten sectors, into grey: there it runs
+  // once round the whole wheel instead, each colour fading into the next.
+  if (n > 60) {
+    var t = i / n * k, c0 = Math.floor(t), f = t - c0;
+    var A = WHEEL_COLORS[c0 % k], B = WHEEL_COLORS[(c0 + 1) % k];
+    return '#' + [1, 3, 5].map(function (o) {
+      var x = Math.round(parseInt(A.substr(o, 2), 16) * (1 - f) +
+                         parseInt(B.substr(o, 2), 16) * f);
+      return (x < 16 ? '0' : '') + x.toString(16);
+    }).join('');
+  }
   if (n > 1 && i === n - 1 && (n - 1) % k === 0) return WHEEL_COLORS[1];
   return WHEEL_COLORS[i % k];
 }
@@ -3882,6 +3902,14 @@ function drawWheel() {
   var R = cv.width / 2.1, cx = cv.width / 2, cy = 1.3 * R;
   var k = R / 480 * 2.1;                       // device px per "480px wheel" px
   var n = wheel.entries.length, a = 2 * Math.PI / n;
+  // Half a sector's width, as a fraction of its radius — capped at a half
+  // turn, so a wheel of one (or two) entries has room for a name and cover
+  // rather than none at all.
+  var half = Math.sin(Math.min(a / 2, Math.PI / 2));
+  // A crowded wheel: lines between the sectors no thicker than a third of a
+  // sector is wide at the rim, and none at all once a sector is under four
+  // pixels there — they would only grey the colours over.
+  var sepW = Math.min(1.5 * dpr, R * a / 3), seps = R * a >= 4 * dpr;
   ctx.clearRect(0, 0, cv.width, cv.height);
   for (var i = 0; i < n; i++) {
     var start = -Math.PI / 2 + i * a + wheel.rot;
@@ -3891,16 +3919,18 @@ function drawWheel() {
     ctx.closePath();
     ctx.fillStyle = wheelColor(i, n);
     ctx.fill();
-    ctx.lineWidth = 1.5 * dpr;
-    ctx.strokeStyle = '#1b1a17';
-    ctx.stroke();
+    if (seps) {
+      ctx.lineWidth = sepW;
+      ctx.strokeStyle = '#1b1a17';
+      ctx.stroke();
+    }
     // The name along the sector's middle, reading outward from the hub.
     ctx.save();
     ctx.translate(cx, cy);
     ctx.rotate(start + a / 2);
     // The type no taller than the sector is wide halfway out, so a crowded
     // wheel gets smaller letters.
-    var fs = Math.max(8 * k, Math.min(13 * k, 2 * R * 0.6 * Math.sin(a / 2) * 0.42));
+    var fs = Math.max(8 * k, Math.min(13 * k, 2 * R * 0.6 * half * 0.42));
     ctx.font = '700 ' + fs + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
     // Dark ink on the light sectors (cream, yellow, gold), white on the rest.
     var light = sectorLuma(wheelColor(i, n)) > 185;
@@ -3912,21 +3942,37 @@ function drawWheel() {
     // With room for it, the game's cover in a small circle at the outer end
     // of its sector, its top towards the rim, turning with the wheel.
     var thumbs = n <= 24, tc = R * 0.855;
-    var td = Math.min(0.13 * R, 2 * tc * Math.sin(a / 2) * 0.78);
+    var td = Math.min(0.13 * R, 2 * tc * half * 0.78);
     var textEnd = thumbs ? tc - td / 2 - 7 * k : R - 26 * k;
+    // No name at all where even its outer end is narrower than its letters
+    // are tall — a few hundred entries — rather than a smear of them.
+    if (2 * textEnd * half < fs * 1.05) { ctx.restore(); continue; }
     // A sector narrows towards the hub: the name stops where the sector is
     // still half as wide again as the letters are tall, and anything longer
     // ends in an ellipsis rather than squeezing between the lines.
-    var inner = Math.max(R * 0.14, fs * 1.5 / (2 * Math.sin(a / 2)));
-    var name = wheel.labels[i], room = textEnd - inner;
-    if (ctx.measureText(name).width > room) {
-      while (name.length > 1 && ctx.measureText(name + '…').width > room) {
-        name = name.slice(0, -1);
-      }
-      name = name.replace(/\s+$/, '') + '…';
-    }
+    var inner = Math.max(R * 0.14, fs * 1.5 / (2 * half));
+    var name = fitLabel(ctx, wheel.labels[i], textEnd - inner, fs);
     ctx.fillText(name, textEnd, 0);
     if (thumbs) wheelThumb(ctx, wheel.entries[i], wheel.labels[i], tc, td, dpr);
+    ctx.restore();
+  }
+  // The winner, once called, picked out in light gold — on a crowded wheel
+  // the only way to see which sliver it was.
+  if (wheel.focus && wheel.winK !== null && wheel.winK !== undefined) {
+    var ws = -Math.PI / 2 + wheel.winK * a + wheel.rot;
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, R, ws, ws + a);
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(255,240,200,.16)';
+    ctx.fill();
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = Math.max(2.5 * dpr, R * 0.006);
+    ctx.strokeStyle = '#ffe9a8';
+    ctx.shadowColor = 'rgba(255,214,120,.8)';
+    ctx.shadowBlur = 8 * dpr;
+    ctx.stroke();
     ctx.restore();
   }
   // The rim.
@@ -3935,10 +3981,11 @@ function drawWheel() {
   ctx.lineWidth = 3 * dpr;
   ctx.strokeStyle = '#1b1a17';
   ctx.stroke();
-  // The pegs, one on every boundary, right at the edge.
-  var G = WHEEL_G;
-  for (var p = 0; p < n; p++) {
-    var pa = -Math.PI / 2 + p * a + wheel.rot;
+  // The pegs, right at the edge: one on every boundary, or with more
+  // sectors than pins, evenly spaced (wheelPins).
+  var G = WHEEL_G, np = wheelPins(n), ap = 2 * Math.PI / np;
+  for (var p = 0; p < np; p++) {
+    var pa = -Math.PI / 2 + p * ap + wheel.rot - (wheel.pinOff || 0);
     var gx = cx + G.rp * R * Math.cos(pa), gy = cy + G.rp * R * Math.sin(pa);
     ctx.beginPath();
     ctx.arc(gx, gy, G.pr * R, 0, 2 * Math.PI);
@@ -3954,6 +4001,23 @@ function drawWheel() {
   ctx.strokeStyle = '#1b1a17';
   ctx.stroke();
   drawFlapper(ctx, cx, cy, R, dpr);
+}
+
+/** A name cut to the room it has, ending in an ellipsis if it had to be —
+ *  worked out once per name, size and room, not in every frame of a spin. */
+var labelFits = {}, labelFitCount = 0;
+function fitLabel(ctx, label, room, fs) {
+  var key = fs.toFixed(1) + '|' + Math.round(room) + '|' + label;
+  if (labelFits.hasOwnProperty(key)) return labelFits[key];
+  if (++labelFitCount > 4000) { labelFits = {}; labelFitCount = 0; }
+  var name = label;
+  if (ctx.measureText(name).width > room) {
+    while (name.length > 1 && ctx.measureText(name + '…').width > room) {
+      name = name.slice(0, -1);
+    }
+    name = name.replace(/\s+$/, '') + '…';
+  }
+  return (labelFits[key] = name);
 }
 
 /** The pointer: a short, stiff plastic stick on a pivot, drawn exactly where
@@ -4176,16 +4240,21 @@ var WHEEL_LIFT = (function () {
 
 var WHEEL_PSI_MAX = WHEEL_LIFT.max + 0.04;
 
-function wheelSim(theta0, omega0, n, record) {
+function wheelSim(theta0, omega0, n, record, off) {
+  // The sectors are a apart; the pins, which are all the physics sees, ap,
+  // and turned off behind the sectors (wheel.pinOff). theta0 and the path
+  // are the sectors' angle; th, inside, the pins'.
   var P = WHEEL_P, L = WHEEL_LIFT, TAU = 2 * Math.PI, a = TAU / n;
-  var th = theta0, w = omega0, psi = 0, vpsi = 0, t = 0, still = 0;
+  var ap = TAU / wheelPins(n);
+  off = off || 0;
+  var th = theta0 - off, w = omega0, psi = 0, vpsi = 0, t = 0, still = 0;
   var path = record ? [] : null, flaps = record ? [] : null, clicks = [];
   var eng = {}, eps = [], d = 1e-4;
   while (t < 60) {
     // Fine steps only while a peg is at, or about to reach, the stick.
-    var reach = Math.abs(w) * WHEEL_DT + 0.01, j0 = Math.round(-th / a), sub = 1;
+    var reach = Math.abs(w) * WHEEL_DT + 0.01, j0 = Math.round(-th / ap), sub = 1;
     for (var q = -1; q <= 1; q++) {
-      var ph0 = (j0 + q) * a + th;
+      var ph0 = (j0 + q) * ap + th;
       if (ph0 > L.IN - reach && ph0 < L.REL + reach ||
           -ph0 > L.IN - reach && -ph0 < L.REL + reach || eng[j0 + q]) {
         sub = Math.max(1, Math.ceil(Math.abs(w) * WHEEL_DT / 0.004));
@@ -4200,9 +4269,9 @@ function wheelSim(theta0, omega0, n, record) {
       // past the lift a peg ever needs, instead of letting it fly.
       if (psi > WHEEL_PSI_MAX) { psi = WHEEL_PSI_MAX; if (vpsi > 0) vpsi = 0; }
       else if (psi < -WHEEL_PSI_MAX) { psi = -WHEEL_PSI_MAX; if (vpsi < 0) vpsi = 0; }
-      j0 = Math.round(-th / a);
+      j0 = Math.round(-th / ap);
       for (q = -1; q <= 1; q++) {
-        var j = j0 + q, ph = j * a + th, e = eng[j];
+        var j = j0 + q, ph = j * ap + th, e = eng[j];
         var fromL = L.at(ph), fromR = L.at(-ph);
         if (!e) {
           // A pin in the stick's way, from the side the wheel is bringing
@@ -4262,13 +4331,13 @@ function wheelSim(theta0, omega0, n, record) {
       // again, so stick and pin are where each other says — two rigid things
       // touching, never overlapping, in every frame that is drawn.
       for (var ej in eng) {
-        var en = eng[ej], xx = en.side * (+ej * a + th);
+        var en = eng[ej], xx = en.side * (+ej * ap + th);
         if (xx <= L.IN || xx >= L.REL) continue;
         var nn = en.side * L.at(xx);
         if (en.side > 0 ? psi < nn : psi > nn) psi = nn;
       }
     }
-    if (record) { path.push(th); flaps.push(psi); }
+    if (record) { path.push(th + off); flaps.push(psi); }
     // Stopped: still, or so nearly that nobody could see it move. With the
     // stick's push and the friction all but balanced, the wheel can creep at
     // millionths of a radian a second for a long while before it is exactly
@@ -4282,8 +4351,8 @@ function wheelSim(theta0, omega0, n, record) {
     t += WHEEL_DT;
   }
   for (var kk in eng) { eng[kk].passed = false; eps.push(eng[kk]); }
-  var rest = ((-th) % TAU + TAU) % TAU;
-  return { sector: Math.floor(rest / a) % n, t: t, path: path, flaps: flaps, endPsi: psi,
+  var rest = ((-(th + off)) % TAU + TAU) % TAU;
+  return { sector: Math.floor(rest / a) % n, rest: rest, t: t, path: path, flaps: flaps, endPsi: psi,
            clicks: clicks, eps: eps };
 }
 
@@ -4292,28 +4361,6 @@ function lastPinPassed(run) {
   var fights = run.eps.filter(function (e) { return e.max > 0.12; });
   var last = fights[fights.length - 1];
   return !!(last && last.passed);
-}
-
-/** How much of a nail-biter a run's ending is, from 0 to about 1. Only the
- *  last two pegs that really pushed the stick count: one that barely got
- *  through (the wheel all but stopped while it was under the stick) or one
- *  that barely failed (lifted the stick nearly as far as passing takes)
- *  scores high; a peg brushed past at speed scores nothing. */
-function wheelDrama(run) {
-  var fights = run.eps.filter(function (e) { return e.max > 0.12; });
-  function close(e) {
-    if (!e) return 0;
-    return e.passed ? Math.max(0, 1 - e.minW / 0.5)
-                    : Math.min(1, e.max / WHEEL_LIFT.max);
-  }
-  var last = fights[fights.length - 1], prev = fights[fights.length - 2];
-  var score = 0.6 * close(last) + 0.4 * close(prev);
-  // Not one that ends with the stick still leaning on a pin: balanced there,
-  // it reads as stuck rather than as a close call.
-  if (Math.abs(run.endPsi) > 0.08) score -= 1;
-  // Stopped by the last peg it could not get over: the wheel rocks back.
-  if (last && !last.passed && close(last) > 0.6) score += 0.15;
-  return score;
 }
 
 /* ---- seeds ---------------------------------------------------------------
@@ -4355,19 +4402,30 @@ function seededRandom(text) {
     return ((t ^ t >>> 14) >>> 0) / 4294967296;
   };
 }
-/** Where every spin starts: the pointer in the middle of the first sector,
- *  between two pins and touching neither. */
+/** Where every spin starts: the pointer halfway between two pins, touching
+ *  neither — for a wheel with a pin on every boundary, the middle of the
+ *  first sector. */
 function wheelHome(n) {
   var TAU = 2 * Math.PI;
-  return ((-Math.PI / n) % TAU + TAU) % TAU;
+  return ((-Math.PI / wheelPins(n)) % TAU + TAU) % TAU;
 }
+/** How many pins the rim carries: one on every boundary between sectors, up
+ *  to 40; past that, 40, evenly spaced, wherever they fall among the
+ *  sectors. Closer than that the stick cannot settle between two of them —
+ *  the run never comes to rest — and they would merge on screen anyway. */
+var WHEEL_MAX_PINS = 40;
+function wheelPins(n) { return Math.min(n, WHEEL_MAX_PINS); }
 
 /** Spin from a seed. The seed draws the winner — uniformly over the tray's
- *  entries, which alone decides the odds, one in n per entry — and then the
- *  throws to try. A couple of hundred throws are run through the physics
- *  from the resting place, and of those that genuinely come to rest on the
- *  winner, the one with the most dramatic ending is played back. Every
- *  bounce on screen is the simulation's own; only the throw was chosen. */
+ *  entries, which alone decides the odds, one in n per entry — and then
+ *  throws. The pins are evenly spaced, so a run started a whole number of
+ *  pin gaps further round is the same run, pin for pin, ending that much
+ *  further round: one run of a throw says every place it could end, and the
+ *  start is turned so it ends on the winner. With a pin on every boundary
+ *  the first throw always has such a start; with more sectors than pins it
+ *  takes a throw in every (sectors ÷ pins) or so — still only a few
+ *  milliseconds of physics in all. Every bounce on screen is the
+ *  simulation's own; only the throw and the start were chosen. */
 /** prepareOnly: work the spin out and show its seed and link, but wait —
  *  the wheel has just opened and is waiting for Tap to spin. */
 function spinWheel(seedText, prepareOnly) {
@@ -4379,15 +4437,14 @@ function spinWheel(seedText, prepareOnly) {
   wheel.prepared = null;
   var rand = seededRandom(seed);
   var win = Math.floor(rand() * n), from = wheelHome(n);
-  // And how it ends, on a fair coin: the last pin to fight the stick either
-  // gets over it or is stopped by it, half the time each.
-  var wantPass = rand() < 0.5;
   wheelResult('');            // the wheel says it is spinning
   wheel.searching = true;
   wheel.replay = null;
   wheel.won = null;
   wheel.focus = false;
   wheel.focusW = 0;
+  wheel.winK = null;
+  wheel.focusPt = null;
   clearWinFlash();
   if (!prepareOnly) {
     wheelZoom(false);
@@ -4395,56 +4452,65 @@ function spinWheel(seedText, prepareOnly) {
     hideTapPill();
     setSeedBusy(true);
   }
-  // Back to the resting place first, briskly, if the last spin left it
-  // anywhere else.
-  rewindWheel(from, function () {
-    // Throws for a spin of about nine to eleven seconds. With a drag that
-    // grows with speed and a constant one, a wheel thrown at v stops after
-    // ln(1 + c v / mu) / c seconds, near enough — the pegs take a little off.
-    var P = WHEEL_P;
+  // Worked out a moment later, so the page has drawn the cleared answer.
+  setTimeout(function () {
+    // Throws for a spin of about nine to ten and a half seconds. With a
+    // drag that grows with speed and a constant one, a wheel thrown at v
+    // stops after ln(1 + c v / mu) / c seconds, near enough — the pegs take
+    // a little off. One that ends with the stick left leaning on a pin is
+    // passed over; so, rarely, is one that a rounding in the last digit tips
+    // into a neighbouring sector once turned.
+    var P = WHEEL_P, TAU = 2 * Math.PI, a = TAU / n;
+    var pins = wheelPins(n), gap = TAU / pins;
     var throwFor = function (secs) { return P.mu / P.c * (Math.exp(P.c * secs) - 1); };
-    // The best throw of each ending — [stopped, got over] — so the coin
-    // decides which kind is played, and the drama only which of that kind.
-    // An ending with the stick still leaning on a pin counts as neither, and
-    // is kept only as a last resort: more throws are tried, over a wider
-    // range, until one ends cleanly the chosen way.
-    var bestOf = [null, null], scoreOf = [-1e9, -1e9], want = wantPass ? 1 : 0;
-    var stuck = null, stuckScore = -1e9;
-    for (var round = 0; round < 4 && bestOf[want] === null; round++) {
-      // Eight and a half to ten and a quarter seconds of spin; a last pin
-      // that pushes the wheel back adds a second or so of rocking.
-      var lo = throwFor(8.5 - 0.5 * round), span = throwFor(10.3 + 0.2 * round) - lo;
-      for (var i = 0; i < 120; i++) {
-        var v = lo + span * (i + rand()) / 120;
-        var r = wheelSim(from, v, n, false);
-        if (r.sector !== win) continue;
-        var sc = wheelDrama(r) + rand() * 0.02;      // ties go to the seed
-        if (Math.abs(r.endPsi) > 0.08) {
-          if (sc > stuckScore) { stuckScore = sc; stuck = v; }
-          continue;
-        }
-        var kind = lastPinPassed(r) ? 1 : 0;
-        if (sc > scoreOf[kind]) { scoreOf[kind] = sc; bestOf[kind] = v; }
+    var lo = throwFor(8.5), hi = throwFor(10.5);
+    var start = from, off = 0, best = null, run = null;
+    for (var i = 0; i < 40 && !run; i++) {
+      var v = lo + (hi - lo) * rand();
+      var r = wheelSim(from, v, n, false);
+      if (Math.abs(r.endPsi) > 0.08) continue;
+      if (pins === n) {
+        // A pin on every boundary: started q sectors further round, it ends
+        // q sectors further round.
+        var q = ((r.sector - win) % n + n) % n;
+        start = (from + q * gap) % TAU;
+        off = 0;
+      } else {
+        // More sectors than pins, and the wheel only ever comes to rest at
+        // a few places between two pins: so the sectors are turned behind
+        // the pins instead, the winner's under the stick, at a point inside
+        // it the seed picks — the same as dealing the names round the wheel
+        // from a random place. The pins' run is untouched.
+        var u = 0.15 + 0.7 * rand();
+        off = ((r.rest - (win + u) * a) % TAU + TAU) % TAU;
+        start = (from + off) % TAU;
       }
+      var rr = wheelSim(start, v, n, true, off);
+      if (rr.sector === win) { run = rr; best = v; }
     }
-    // The other ending only if no throw that lands on the winner ends this
-    // way cleanly; a stuck one only if nothing else does.
-    var best = bestOf[want];
-    if (best === null) best = bestOf[1 - want];
-    if (best === null) best = stuck;
+    // Nothing in forty throws: let the last one land where it lands.
+    if (!run) { best = v; start = from; off = 0; run = wheelSim(from, v, n, true); }
+    run.off = off;
     wheel.searching = false;
     if (!wheel.open) return;
-    if (best === null) { playSpin(null, win); return; }
     // The seed and the link first, so what is about to happen can be sent
     // before it happens; then the countdown; then the wheel goes.
-    setSpinLink(from, best, seed);
-    var run = wheelSim(from, best, n, true);
-    if (prepareOnly) { wheel.prepared = { seed: seed, run: run, win: win }; return; }
-    countdown(function () { if (wheel.open) playSpin(run, win); });
-  });
+    setSpinLink(start, best, seed, off);
+    // And round to where it starts, briskly, the short way, the sectors
+    // set round the pins as this spin has them.
+    wheel.pinOff = off;
+    if (prepareOnly) {
+      wheel.prepared = { seed: seed, run: run, win: win };
+      rewindWheel(start, function () {});
+      return;
+    }
+    rewindWheel(start, function () {
+      countdown(function () { if (wheel.open) playSpin(run, win); });
+    });
+  }, 0);
 }
 
-/** Turn the wheel back to its resting place over a moment, the short way
+/** Turn the wheel to where a spin starts over a moment, the short way
  *  round, then carry on. Already there, or with reduced motion, at once. */
 function rewindWheel(to, then) {
   var TAU = 2 * Math.PI, from = ((wheel.rot % TAU) + TAU) % TAU;
@@ -4478,7 +4544,7 @@ function rewindWheel(to, then) {
    the same every time, so those three replay it exactly — every bounce, every
    clack, the same winner. They ride in the address as `spin=` while the
    wheel is open, and the wheel shows the link. */
-function setSpinLink(from, v, seed) {
+function setSpinLink(from, v, seed, off) {
   wheel.link = encodeURIComponent(JSON.stringify({
     e: wheel.entries.map(function (e) { return isFree(e) ? { t: e.t } : DATA[e].id; }),
     l: wheel.entries.map(function (e, k) {
@@ -4486,6 +4552,7 @@ function setSpinLink(from, v, seed) {
     }),
     r: from,
     v: v,
+    o: off || undefined,
     s: seed
   }));
   writeUrl(false);
@@ -4508,7 +4575,8 @@ function readSpinLink(text) {
       entries.push(e);
       labels.push(lab || entryName(e));
     });
-    return { entries: entries, labels: labels, r: o.r, v: o.v, s: o.s || '', raw: text };
+    return { entries: entries, labels: labels, r: o.r, v: o.v,
+             o: typeof o.o === 'number' ? o.o : 0, s: o.s || '', raw: text };
   } catch (e) { return null; }
 }
 
@@ -4520,6 +4588,7 @@ function openReplay(spin) {
   wheel.entries = spin.entries;
   wheel.labels = spin.labels;
   wheel.rot = spin.r;
+  wheel.pinOff = spin.o;
   wheel.psi = 0;
   wheel.replay = spin;
   wheel.link = spin.raw;
@@ -4705,10 +4774,13 @@ function playReplay() {
   setSeedBusy(true);
   wheel.focus = false;
   wheel.focusW = 0;
+  wheel.winK = null;
+  wheel.focusPt = null;
   wheelZoom(false);
+  wheel.pinOff = sp.o;
   rewindWheel(sp.r, function () {
     if (wheel.open && wheel.replay === sp) {
-      playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
+      playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true, sp.o), 0);
     }
   });
 }
@@ -4719,6 +4791,7 @@ function playSpin(run, win) {
   // sent one is the one it always comes to.
   if (run) win = run.sector;
   wheelBigImg(wheel.entries[win]);
+  wheel.focusPt = run ? winFocus(win, run.path[run.path.length - 1]) : null;
   var announced = false;
   function announce() {
     if (announced) return;
@@ -4872,7 +4945,10 @@ function clack(v, when) {
 /** k is the winning entry, so a renamed one is announced by its new name. */
 function announceWinner(k) {
   wheel.won = wheel.entries[k];
+  wheel.winK = k;
+  if (!wheel.focusPt) wheel.focusPt = winFocus(k, wheel.rot);
   wheel.focus = true;
+  drawWheel();
   wheelZoom(true);
   var th = coverOf(wheel.entries[k]);
   wheelResult((th ? '<img alt="" src="' + esc(th) + '">' : '') +
@@ -4963,7 +5039,8 @@ function stageLights() {
                                             r: 29, shade: 0.72 });
     var wr = wheel.anim ? 40 : 29, ws = wheel.anim ? 0.26 : 0.72;
     function mix(a, b) { return a + (b - a) * f; }
-    var t = { x1: mix(wx1, 50), y1: mix(wy1, 20), x2: mix(wx2, 50), y2: mix(wy2, 20),
+    var fp = wheel.focusPt || { x: 0.5, y: 0.2 }, fpx = fp.x * 100, fpy = fp.y * 100;
+    var t = { x1: mix(wx1, fpx), y1: mix(wy1, fpy), x2: mix(wx2, fpx), y2: mix(wy2, fpy),
               r: mix(wr, 21), shade: mix(ws, 0.86) };
     Object.keys(t).forEach(function (k) { L[k] += (t[k] - L[k]) * ease; });
     box.style.setProperty('--x1', L.x1.toFixed(2) + '%');
@@ -4977,12 +5054,27 @@ function stageLights() {
   wheel.lightAnim = requestAnimationFrame(step);
 }
 
-/* The camera. In: the wheel scaled up about the stick — centred across,
-   its rim a little below the top of its box — and redrawn finer to match;
-   out: back to the whole wheel, and to the ordinary resolution once there.
-   Percentages of the wheel's box, whose width is W and height 47/42 W; the
-   rim is 0.143 W down. Instant when closing, or for reduced motion. */
-var WHEEL_ZOOM = 3.4;
+/* Where the winner's cover will be once the wheel is at rest — on the
+   middle of its sector, where drawWheel puts it, 0.855 of the way out — as
+   fractions of the wheel's face, 0.5 its centre. On a wheel too crowded for
+   covers, a little further in, under the stick. On one of a few wide
+   sectors that can be well to one side of the stick, and the lights and
+   the camera go there, not to an empty stretch of colour. */
+function winFocus(k, rot) {
+  var n = wheel.entries.length, a = 2 * Math.PI / n;
+  var phi = -Math.PI / 2 + (k + 0.5) * a + rot, rf = n <= 24 ? 0.855 : 0.75;
+  return { x: 0.5 + 0.5 * rf * Math.cos(phi), y: 0.5 + 0.5 * rf * Math.sin(phi) };
+}
+/** How far the camera goes in: close on the cover, where there is one —
+ *  about a third of the box wide — and less on a coverless one. */
+function wheelZoomFor(n) { return n <= 24 ? 5.5 : 3.4; }
+
+/* The camera. In: the wheel scaled up about the winner's focus point
+   (winFocus), which is brought to the middle of the wheel's box, and redrawn
+   finer to match; out: back to the whole wheel, and to the ordinary
+   resolution once there. Percentages of the wheel's box, W wide and 47/42 W
+   tall; the wheel's face is 0.9524 W across, 0.0238 W in and 0.143 W down.
+   Instant when closing, or for reduced motion. */
 function wheelZoom(on, instant) {
   var zb = el('wheelzoom'), card = document.querySelector('.wheelcard');
   if (!zb || !card) return;
@@ -4990,10 +5082,12 @@ function wheelZoom(on, instant) {
   if (!!wheel.zoomed === !!on && !instant) return;
   wheel.zoomed = !!on;
   clearTimeout(wheel.zoomT);
-  var z = WHEEL_ZOOM;
+  var z = wheelZoomFor(wheel.entries.length);
+  var f = wheel.focusPt || { x: 0.5, y: 0.125 };
+  var fx = 0.0238 + 0.9524 * f.x, fy = 0.143 + 0.9524 * f.y;   // in W
   zb.style.transition = instant ? 'none' : '';
-  zb.style.transform = on ? 'translate(' + (50 * (1 - z)).toFixed(2) + '%,' +
-    ((0.12 - 0.143 * z) * 42 / 47 * 100).toFixed(2) + '%) scale(' + z + ')' : '';
+  zb.style.transform = on ? 'translate(' + ((0.5 - z * fx) * 100).toFixed(2) + '%,' +
+    ((47 / 84 - z * fy) * 42 / 47 * 100).toFixed(2) + '%) scale(' + z + ')' : '';
   card.classList.toggle('zoomed', !!on);
   if (on) { wheel.zoomRes = z; drawWheel(); return; }
   if (instant) { wheel.zoomRes = 1; return; }
@@ -5033,6 +5127,7 @@ function openWheel() {
   setReplayMode(false);
   wheel.prepared = null;
   wheel.rot = wheelHome(wheel.entries.length);
+  wheel.pinOff = 0;
   wheel.psi = 0;
   wheelResult('');
   drawWheel();
@@ -5055,6 +5150,8 @@ function closeWheel() {
   wheel.open = false;
   wheel.focus = false;
   wheel.focusW = 0;
+  wheel.winK = null;
+  wheel.focusPt = null;
   wheelZoom(false, true);
   stageSpinning(false);
   stopCountdown();

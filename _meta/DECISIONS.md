@@ -557,7 +557,7 @@ table is exactly the picks, and a picked expansion shows whatever the
 expansions setting says. Filters set afterwards narrow the picks, and the
 result line says how many they hide.
 
-## D-30 — The wheel draws first, then physics finds a throw that agrees
+## D-30 — The wheel draws first, then physics is turned to agree
 
 The wheel of fortune has one equal sector per tray entry, so a game in the
 tray twice has twice the sectors and twice the chance — the tray is already
@@ -589,29 +589,57 @@ peg that gets past plays a synthesised clack scheduled at its exact moment
 on the audio clock, so a fast spin is a ratchet, not a click per frame.
 
 Physics decides where a wheel stops, so fairness cannot come from the
-animation. The winner is drawn first, uniformly over the entries, from
-`crypto.getRandomValues` with rejection sampling — that alone sets the odds,
-one in n per entry. The simulation is stepped at a fixed 240Hz (16 substeps
-while a peg is near the flapper) and is exactly repeatable, so a couple of
-hundred launch speeds are simulated from where the wheel stands (about a
-quarter of a second) and, of those that genuinely come to rest on the
-winner, the one with the most dramatic ending is played back: the last two
-pegs that really fought the flapper score high when one barely got through
-(the wheel all but stopped while the flapper was bent) or barely failed
-(bent it nearly as far as passing takes), with a bonus for a final rock
-back. Every bounce on screen is the simulation's own; only the throw was
-chosen, and choosing it never changes which entry wins. Throws are taken
-from the friction law itself — a wheel thrown at v stops after about
-ln(1 + c·v/μ)/c seconds — so spins last nine to eleven and a half seconds,
-starting at two to five turns a second.
+animation. The winner is drawn first, uniformly over the entries — that
+alone sets the odds, one in n per entry. The simulation is stepped at a
+fixed 240Hz (finer while a peg is near the stick) and is exactly
+repeatable. A throw is picked at random from the friction law itself — a
+wheel thrown at v stops after about ln(1 + c·v/μ)/c seconds — for a spin of
+nine to ten and a half seconds, and run once. The pins are evenly spaced,
+so a run started a whole number of pin gaps further round is the same run,
+pin for pin, ending that much further round: that one run says where to
+start the wheel so the same throw ends on the winner, and the wheel is
+turned there before the countdown. Every bounce on screen is the
+simulation's own; only the throw and the start were chosen.
+
+Playing the physics out from a fixed start, with only the throw random,
+would not be fair: the end angle would cover the sectors unevenly. It is
+the random start (equivalently, the drawn winner) that makes every sector
+exactly as likely. An earlier version instead searched up to 480 throws
+from a fixed start for one that happened to land on the winner, scoring
+the endings for drama; with 244 entries the chance of a hit was 1 in 244
+per throw, it ran all 480, and froze the browser. Now a spin takes two
+runs of the physics (a few milliseconds), however many entries; how it
+ends — over the last pin or stopped by it — is the physics' own. Throws
+that end with the stick still leaning on a pin are passed over.
+
+The rim carries a pin on every boundary up to 40 entries, and 40 evenly
+spaced pins beyond that (`WHEEL_MAX_PINS`): closer than about 46 the stick
+cannot settle between two pins and a run never comes to rest. With more
+sectors than pins the wheel only ever stops at a few places between two
+pins, so some sectors could never be reached by turning the start; there
+the painted sectors are turned behind the pins instead (`pinOff`, carried
+in the link as `o`) so the winner's sector is under the stick at a point
+inside it the seed picks — the same as dealing the names round the wheel
+from a random place. A crowded wheel drops what would only smear: names
+once a sector's outer end is narrower than the letters, separator lines
+under four pixels, and past 60 entries the palette runs once round the
+whole wheel, fading colour to colour, instead of repeating every ten
+sectors (which blurs to grey). The winner's sector is outlined in light
+gold once called, the only way to find one sliver in a thousand.
+
+At the end the camera pushes in on the winner's cover (on its sector's
+middle line, wherever that comes to rest — on a wheel of a few wide
+sectors it can be well to one side of the stick), 5.5× where there are
+covers and 3.4× under the stick where there are not, and redraws the
+canvas at that resolution (capped at 16 million pixels) with the game's
+full-size image, the lights settled on it. The wheel zooms inside its own frame, behind the curtains and the
+arch; Spin again or a replay pulls back out.
 
 Every spin comes from a seed — a random word like `amber-otter-17`, or one
 you type. The seed (hashed with xmur3, then mulberry32: integer arithmetic,
 the same in every browser) is all the randomness a spin has: it draws the
-winner and picks the throws to try, including the drama tie-break, and
-every spin starts from the same resting place — the stick in the middle of
-the first sector, between two pins — so the same seed on the same wheel is
-the same spin. The winner is still uniform over the entries for any seed
+winner and picks the throw (and so the start), so the same seed on the
+same wheel is the same spin. The winner is still uniform over the entries for any seed
 nobody chose with the outcome in mind.
 
 A spin is fully determined by the entries, the wheel's starting angle and
@@ -648,17 +676,7 @@ throw of two to five turns a second loses half its speed in about a second
 and the last three or four sectors are a slow crawl, in nine to eleven and
 a half seconds all told; the stick is stiff enough (kappa 0.15) that a stopped wheel with a pin pressed against the bent stick is
 pushed back off it, as a real flapper does, instead of freezing with the
-stick balanced on the pin — and the drama score rejects endings where the
-stick is still leaning on one.
-
-How a spin ends is decided on a fair coin from the seed, before the throw
-is chosen: the last pin to really fight the stick either gets over it or is
-stopped by it, half the time each. Among the throws that land on the drawn
-winner, the most dramatic of the chosen kind is played; endings with the
-stick still leaning on a pin count as neither, and more throws, over a wider
-range, are tried until one ends cleanly the chosen way (the other kind, then
-a stuck one, only as fallbacks). Without the coin, the drama score's taste
-for a final push-back made "stopped" the ending almost every time.
+stick balanced on the pin.
 
 Browsers only let a page play sound after a click, and an audio context
 made before one (a sent spin opens on load) stays suspended until resumed

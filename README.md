@@ -96,7 +96,8 @@ browser:
 - A **wheel of fortune** under the picks: one equal sector per entry, so a
   game picked twice is twice as likely. It is a simulated physical wheel —
   pegs at the rim, a plastic pointer that clacks over them — and the winner
-  is drawn fairly first, then a throw that really lands there is played,
+  is drawn fairly first, then the wheel is turned so a real throw lands
+  there — fast with any number of entries,
   with confetti at the end. Picks can be renamed, and *Add manually…* adds
   a game by name, or anything else, to spin for.
 

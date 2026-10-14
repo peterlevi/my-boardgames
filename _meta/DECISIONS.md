@@ -626,4 +626,19 @@ at most one per 40ms, so every sound you hear lines up with a peg you see.
 With 24 sectors or fewer, each carries its game's cover in a small circle at
 the rim end, turned so its top faces outward.
 
+The release is an edge, and has to be treated as one. Twice the lift table
+was read across it — once by interpolating down to the zero beyond, once by
+a centred difference sampling past it — and either way a slope in the
+thousands came out, which through the stick's gearing flung the stick to
+the far side and shoved the wheel forward in the instant a slow peg got
+through ("kamen" showed it). The table now holds its last value up to the
+edge and the slope is measured inside the contact only; the stick is well
+damped (ζ 0.55), so it snaps back with a degree or two of overshoot.
+
+Browsers only let a page play sound after a click, and an audio context
+made before one (a sent spin opens on load) stays suspended until resumed
+during one. Every click and key in the wheel resumes it, and a speaker
+button shows whether sound is actually on — muted, or still blocked — and
+turns it on.
+
 With reduced motion the wheel jumps to the result and there is no confetti.

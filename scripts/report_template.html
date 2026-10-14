@@ -1352,6 +1352,12 @@ td.c-add { text-align:right; white-space:nowrap; }
   display:flex; flex-direction:column; align-items:center; gap:14px; }
 .wheelx { position:absolute; top:10px; right:10px; font-size:1.3rem;
   line-height:1; }
+/* Sound on or off, top left: off shows a cross instead of the waves. */
+.wheelsnd { position:absolute; top:10px; left:10px; }
+.wheelsnd .off { display:none; }
+.wheelsnd[aria-pressed="false"] .on { display:none; }
+.wheelsnd[aria-pressed="false"] .off { display:inline; }
+.wheelsnd[aria-pressed="false"] { color:var(--warn); }
 .wheelbox { position:relative; width:min(480px, 72vmin);
   aspect-ratio:21 / 23; }
 #wheelcanvas { width:100%; height:100%; display:block; }
@@ -1894,6 +1900,14 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
   <div class="wheelcard">
     <button type="button" class="iconbtn wheelx" id="wheelclose"
       title="Close" aria-label="Close the wheel">&times;</button>
+    <button type="button" class="iconbtn wheelsnd" id="wheelsnd"
+      aria-pressed="true"><svg viewBox="0 0 16 16" width="18" height="18"
+        aria-hidden="true"><path fill="currentColor"
+        d="M2 6h2.6L8 3.2v9.6L4.6 10H2z"/><g class="on" fill="none"
+        stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path
+        d="M10.3 5.7a3.2 3.2 0 0 1 0 4.6"/><path d="M12.2 3.9a5.8 5.8 0 0 1 0 8.2"
+        /></g><g class="off" fill="none" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round"><path d="M10.5 6l4 4M14.5 6l-4 4"/></g></svg></button>
     <div class="wheelbox">
       <canvas id="wheelcanvas" width="480" height="526"></canvas>
     </div>
@@ -3704,8 +3718,10 @@ function wheelResult(html) { el('wheelresult').innerHTML = html; }
    is exactly repeatable. */
 var WHEEL_G = { rp: 0.99, pr: 0.016, tw: 0.010, Ls: 0.15 };
 WHEEL_G.py = WHEEL_G.rp + 0.006 + WHEEL_G.Ls;   // the tip rests just above the pegs
+// zeta: well damped, so a stick let go at full lift snaps back with a small
+// overshoot rather than swinging far out the other side.
 var WHEEL_P = { mu: 0.3, c: 0.06, kappa: 0.10, wf: 2 * Math.PI * 30,
-                zeta: 0.2 };
+                zeta: 0.55 };
 var WHEEL_DT = 1 / 240;
 
 /* How far a peg at angle phi (from the top, coming from the left) forces the
@@ -3743,6 +3759,12 @@ var WHEEL_LIFT = (function () {
   var at = function (ph) {
     if (ph <= IN || ph >= REL) return 0;
     var f = (ph + PHI) / (2 * PHI) * N, j = Math.floor(f), t = f - j;
+    // The release is an edge, not a slope: the tip leaves the peg from
+    // wherever it is. Interpolating down to the zero beyond it made a cliff
+    // one table step wide, and its slope — through the gearing that turns
+    // the stick's spring into torque — gave the wheel a violent shove in the
+    // instant a slow peg got through.
+    if (tab[j + 1] === 0 && tab[j] > 0) return tab[j];
     return tab[j] * (1 - t) + tab[j + 1] * t;
   };
   return { at: at, IN: IN, REL: REL, max: Math.max.apply(null, tab) };
@@ -3796,7 +3818,11 @@ function wheelSim(theta0, omega0, n, record) {
         if (e.side > 0 ? psi <= need : psi >= need) {
           // The peg drives the stick, and holding it there costs the wheel
           // the spring's pull through the gearing of the contact.
-          var slope = (L.at(x + d) - L.at(x - d)) / (2 * d);
+          // The lift's slope, measured inside the contact only: a sample
+          // past the release edge reads zero and makes a slope in the
+          // thousands, which flung the stick across and shoved the wheel.
+          var sLo = Math.max(x - d, L.IN + 1e-9), sHi = Math.min(x + d, L.REL - 1e-9);
+          var slope = sHi > sLo ? (L.at(sHi) - L.at(sLo)) / (sHi - sLo) : 0;
           psi = need;
           vpsi = slope * w;
           tauW -= P.kappa * psi * e.side * slope;
@@ -4084,19 +4110,41 @@ function playSpin(run, win) {
    flapper slapping a peg. One AudioContext, made on the click that opened
    the wheel, which is what browsers ask before a page may make a sound. */
 var wheelAudio = null;
+/* Browsers only let a page make a sound after a click of yours, and an audio
+   context made before one — a sent spin opens on load — starts suspended and
+   stays so until resumed during one. So every click and key inside the wheel
+   resumes it, and the speaker button says whether sound is actually on. */
+var wheelMuted = (function () {
+  try { return window.localStorage.getItem('bgg-wheel-muted') === '1'; }
+  catch (e) { return false; }
+})();
 function wheelSound() {
   if (wheelAudio) {
-    if (wheelAudio.state === 'suspended') wheelAudio.resume();
+    if (wheelAudio.state === 'suspended') wheelAudio.resume().then(paintSound, paintSound);
+    paintSound();
     return wheelAudio;
   }
   var AC = window.AudioContext || window.webkitAudioContext;
   if (!AC) return null;
   try { wheelAudio = new AC(); } catch (e) { return null; }
+  wheelAudio.onstatechange = paintSound;
+  if (wheelAudio.state === 'suspended') wheelAudio.resume().then(paintSound, paintSound);
+  paintSound();
   return wheelAudio;
+}
+function paintSound() {
+  var b = el('wheelsnd');
+  if (!b) return;
+  var on = !wheelMuted && !!wheelAudio && wheelAudio.state === 'running';
+  b.setAttribute('aria-pressed', on ? 'true' : 'false');
+  b.title = wheelMuted ? 'Sound off — click to turn it on'
+    : on ? 'Sound on — click to mute'
+    : 'Sound is blocked until you click — click here to turn it on';
+  b.setAttribute('aria-label', on ? 'Mute the wheel' : 'Turn the wheel’s sound on');
 }
 function clack(v, when) {
   var ac = wheelAudio;
-  if (!ac || ac.state !== 'running') return;
+  if (wheelMuted || !ac || ac.state !== 'running') return;
   var now = Math.max(ac.currentTime, when || 0), len = Math.floor(ac.sampleRate * 0.03);
   var buf = ac.createBuffer(1, len, ac.sampleRate), d = buf.getChannelData(0);
   for (var i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 4);
@@ -4165,6 +4213,19 @@ function closeWheel() {
 }
 
 el('traywheel').addEventListener('click', openWheel);
+// Any click or key in the wheel is a chance to let the sound in.
+el('wheel').addEventListener('pointerdown', function () { wheelSound(); });
+el('wheel').addEventListener('keydown', function () { wheelSound(); });
+el('wheelsnd').addEventListener('click', function () {
+  var running = wheelAudio && wheelAudio.state === 'running';
+  // Blocked rather than muted: this click is what unblocks it.
+  wheelMuted = running && !wheelMuted ? true : false;
+  try { window.localStorage.setItem('bgg-wheel-muted', wheelMuted ? '1' : '0'); }
+  catch (e) { /* only this visit, then */ }
+  wheelSound();
+  // A clack to say it is on, once the browser has actually let it start.
+  if (!wheelMuted) setTimeout(function () { clack(0.6); }, 120);
+});
 el('wheelagain').addEventListener('click', function () {
   if (wheel.replay && !wheel.anim) {
     // The sent spin, exactly: from where it stood, as hard as it was thrown.

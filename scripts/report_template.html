@@ -1391,7 +1391,34 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelsnd[aria-pressed="false"] .on { display:none; }
 .wheelsnd[aria-pressed="false"] .off { display:inline; }
 .wheelsnd[aria-pressed="false"] { color:var(--warn); }
-.wheelbox { position:relative; aspect-ratio:42 / 47;
+/* The countdown, over the middle of the wheel itself (whose centre sits at
+   1.3 radii down a canvas 2.1 radii wide: 12.8% from the top of the box,
+   and a square as wide as the box). Sized in units of the box's width. */
+.wheelcount { position:absolute; left:0; width:100%; top:12.8%; aspect-ratio:1;
+  display:flex; align-items:center; justify-content:center;
+  pointer-events:none; z-index:2; }
+.wheelcount span { display:inline-block; font-family:"Avenir Next","Segoe UI",
+  system-ui,sans-serif; font-weight:900; line-height:1; letter-spacing:-.02em;
+  -webkit-text-stroke:.9cqw #1b1a17; paint-order:stroke fill;
+  text-shadow:1.2cqw 1.6cqw 0 #1b1a17; }
+.wheelcount .num { font-size:38cqw; transform:rotate(var(--rot));
+  animation:countpop .72s cubic-bezier(.2,1.4,.4,1) both; }
+.wheelcount .word { font-size:15cqw; white-space:nowrap;
+  transform:rotate(var(--rot)); animation:wordpop 1.1s ease-out both; }
+.wheelcount .word i { font-style:normal; display:inline-block; }
+@keyframes countpop {
+  0% { opacity:0; transform:scale(2.4) rotate(var(--rot)); }
+  30% { opacity:1; transform:scale(.9) rotate(var(--rot)); }
+  55% { transform:scale(1.06) rotate(var(--rot)); }
+  85% { opacity:1; transform:scale(1) rotate(var(--rot)); }
+  100% { opacity:0; transform:scale(.8) rotate(var(--rot)); } }
+@keyframes wordpop {
+  0% { opacity:0; transform:scale(2.6) rotate(var(--rot)); }
+  22% { opacity:1; transform:scale(.92) rotate(var(--rot)); }
+  38% { transform:scale(1.04) rotate(var(--rot)); }
+  60% { opacity:1; transform:scale(1) rotate(var(--rot)); }
+  100% { opacity:0; transform:scale(1.35) rotate(var(--rot)); } }
+.wheelbox { position:relative; aspect-ratio:42 / 47; container-type:inline-size;
   /* As wide as fits, and never so tall that the card needs a scrollbar: the
      rows under the wheel (result, seed, link, buttons) and the card's
      padding take about 300px of the window's height. */
@@ -1971,6 +1998,7 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
         stroke-linecap="round"><path d="M10.5 6l4 4M14.5 6l-4 4"/></g></svg></button>
     <div class="wheelbox">
       <canvas id="wheelcanvas" width="480" height="537"></canvas>
+      <div class="wheelcount" id="wheelcount" aria-live="assertive"></div>
     </div>
     <div class="wheelresult" id="wheelresult" aria-live="polite"></div>
     <!-- The seed: every spin has one, and the same seed is the same spin. -->
@@ -4217,7 +4245,67 @@ function openReplay(spin) {
   el('wheeldone').focus();
   // It plays straight away, after the same beat a fresh spin gets. (Its
   // sound waits for a click: the speaker button says so until then.)
-  setTimeout(function () { if (wheel.open && wheel.replay === spin) playReplay(); }, 450);
+  setTimeout(function () {
+    if (wheel.open && wheel.replay === spin) countdown(playReplay);
+  }, 350);
+}
+
+/* ---- the countdown ------------------------------------------------------
+   Opening the wheel is an occasion: 3, 2, 1 and Spinning! pop up over its
+   middle, huge, each in a colour off the wheel, and the wheel goes on the
+   word. A beep with each number and a brighter chord on the word, when the
+   browser lets the page make a sound. Skipped with reduced motion. */
+var COUNT_COLORS = ['#e07a5f', '#d9a521', '#1f7a7a'];
+function countdown(then) {
+  var box = el('wheelcount');
+  clearTimeout(wheel.countT);
+  if (reducedMotion()) { box.innerHTML = ''; then(); return; }
+  var k = 0;
+  wheel.counting = true;
+  el('wheelagain').disabled = true;
+  function next() {
+    if (!wheel.open || !wheel.counting) { box.innerHTML = ''; return; }
+    if (k < 3) {
+      box.innerHTML = '<span class="num" style="--rot:' + [-8, 7, -5][k] +
+        'deg;color:' + COUNT_COLORS[k] + '">' + (3 - k) + '</span>';
+      beep(k === 2 ? 700 : 560, 0.12);
+      k++;
+      wheel.countT = setTimeout(next, 720);
+      return;
+    }
+    // The word, one colour per letter, and the wheel goes with it.
+    box.innerHTML = '<span class="word" style="--rot:-4deg">' +
+      'Spinning!'.split('').map(function (ch, i) {
+        return '<i style="color:' + WHEEL_COLORS[(i * 3) % WHEEL_COLORS.length] +
+          '">' + ch + '</i>';
+      }).join('') + '</span>';
+    beep(880, 0.18);
+    beep(1320, 0.22, 0.06);
+    wheel.counting = false;
+    then();
+    wheel.countT = setTimeout(function () { box.innerHTML = ''; }, 1150);
+  }
+  next();
+}
+function stopCountdown() {
+  clearTimeout(wheel.countT);
+  wheel.counting = false;
+  el('wheelcount').innerHTML = '';
+}
+/** A short tone, if sound is on: a sine with a fast attack and decay. */
+function beep(freq, len, delay) {
+  var ac = wheelAudio;
+  if (wheelMuted || !ac || ac.state !== 'running') return;
+  var t = ac.currentTime + (delay || 0);
+  var o = ac.createOscillator(), g = ac.createGain();
+  o.type = 'triangle';
+  o.frequency.setValueAtTime(freq, t);
+  g.gain.setValueAtTime(0.0001, t);
+  g.gain.exponentialRampToValueAtTime(0.28, t + 0.012);
+  g.gain.exponentialRampToValueAtTime(0.0001, t + len);
+  o.connect(g); g.connect(ac.destination);
+  o.start(t);
+  o.stop(t + len + 0.02);
 }
 
 /** A sent spin is only ever that spin: the seed is shown but cannot be
@@ -4405,8 +4493,10 @@ function openWheel() {
   wheelResult('');
   drawWheel();
   el('wheeldone').focus();
-  // A beat to take the wheel in before it goes.
-  setTimeout(function () { if (wheel.open) spinWheel(); }, 450);
+  // A beat to take the wheel in, then the countdown, then it goes.
+  setTimeout(function () {
+    if (wheel.open) countdown(function () { spinWheel(); });
+  }, 350);
 }
 
 function closeWheel() {
@@ -4417,6 +4507,7 @@ function closeWheel() {
   var won = wheel.won;
   wheel.won = null;
   wheel.open = false;
+  stopCountdown();
   if (wheel.anim) { cancelAnimationFrame(wheel.anim); wheel.anim = null; }
   el('wheel').hidden = true;
   stopConfetti();

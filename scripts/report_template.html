@@ -1418,6 +1418,9 @@ td.c-add { text-align:right; white-space:nowrap; }
   font-size:.9rem; font-weight:700; color:var(--ink); background:var(--panel);
   border:1px solid var(--line); border-radius:6px; padding:5px 8px; }
 .wheelseed input:focus { outline:none; border-color:var(--accent); }
+/* A sent spin's seed: shown, not offered for editing. */
+.wheelseed input.fixed { background:none; border-color:transparent;
+  padding-left:0; cursor:default; }
 /* The link that replays this exact spin. Its row is always there, only
    invisible until there is a link, so the card keeps one height. */
 .wheellink.off { visibility:hidden; }
@@ -4201,19 +4204,50 @@ function openReplay(spin) {
   wheel.psi = 0;
   wheel.replay = spin;
   wheel.link = spin.raw;
+  wheel.won = null;
   wheel.open = true;
   // The first render has already rewritten the address without it.
   writeUrl(false);
   el('wheel').hidden = false;
-  el('wheelagain').disabled = false;
-  el('wheelagain').textContent = 'Play this spin';
-  el('wheelseedq').value = spin.s;
-  seedTyped = false;
+  setReplayMode(true, spin.s);
   el('wheellinkurl').value = location.href;
   el('wheellink').classList.remove('off');
-  wheelResult('<span class="spinning">A spin someone sent: press play.</span>');
+  wheelResult('');
   drawWheel();
-  el('wheelagain').focus();
+  el('wheeldone').focus();
+  // It plays straight away, after the same beat a fresh spin gets. (Its
+  // sound waits for a click: the speaker button says so until then.)
+  setTimeout(function () { if (wheel.open && wheel.replay === spin) playReplay(); }, 450);
+}
+
+/** A sent spin is only ever that spin: the seed is shown but cannot be
+ *  changed, there is no dice, and the button replays it rather than spinning
+ *  anew. Opening the wheel from the tray puts all of that back. */
+function setReplayMode(on, seed) {
+  var q = el('wheelseedq');
+  q.readOnly = !!on;
+  q.classList.toggle('fixed', !!on);
+  q.value = on ? seed || '' : '';
+  q.placeholder = on ? '' : 'any word — Enter to spin it';
+  el('wheelseeddice').hidden = !!on;
+  el('wheelagain').textContent = on ? 'Replay spin' : 'Spin again';
+  el('wheelagain').disabled = false;
+  seedTyped = false;
+}
+
+/** The sent spin, exactly: from where it stood, as hard as it was thrown. */
+function playReplay() {
+  var sp = wheel.replay;
+  if (!sp || wheel.anim || wheel.searching) return;
+  el('wheelagain').disabled = true;
+  wheelResult('');
+  wheel.won = null;
+  stopConfetti();
+  rewindWheel(sp.r, function () {
+    if (wheel.open && wheel.replay === sp) {
+      playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
+    }
+  });
 }
 
 function playSpin(run, win) {
@@ -4365,10 +4399,7 @@ function openWheel() {
   wheel.open = true;
   el('wheel').hidden = false;
   el('wheellink').classList.add('off');
-  el('wheelagain').textContent = 'Spin again';
-  el('wheelagain').disabled = false;
-  el('wheelseedq').value = '';
-  seedTyped = false;
+  setReplayMode(false);
   wheel.rot = wheelHome(wheel.entries.length);
   wheel.psi = 0;
   wheelResult('');
@@ -4437,16 +4468,7 @@ el('wheelsnd').addEventListener('click', function () {
   if (!wheelMuted) setTimeout(function () { clack(0.6); }, 120);
 });
 el('wheelagain').addEventListener('click', function () {
-  if (wheel.replay && !wheel.anim) {
-    // The sent spin, exactly: from where it stood, as hard as it was thrown.
-    var sp = wheel.replay;
-    wheel.replay = null;
-    el('wheelagain').textContent = 'Spin again';
-    el('wheelagain').disabled = true;
-    wheelResult('');            // the wheel says it is spinning
-    playSpin(wheelSim(sp.r, sp.v, wheel.entries.length, true), 0);
-    return;
-  }
+  if (wheel.replay) { playReplay(); return; }
   // A seed you typed is spun as it is; otherwise a fresh one.
   spinWheel(seedTyped ? el('wheelseedq').value : '');
 });
@@ -4455,7 +4477,8 @@ el('wheelseedq').addEventListener('input', function () { seedTyped = true; });
 el('wheelseedq').addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     e.preventDefault();
-    if (!wheel.anim && !wheel.searching) spinWheel(el('wheelseedq').value);
+    // A sent spin's seed is only shown, never spun anew.
+    if (!wheel.replay && !wheel.anim && !wheel.searching) spinWheel(el('wheelseedq').value);
   }
 });
 el('wheelseeddice').addEventListener('click', function () {

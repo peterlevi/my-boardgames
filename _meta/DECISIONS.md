@@ -633,7 +633,9 @@ under four pixels, and past 60 entries the oak is one sheet rather than
 a wedge per sector. The winner's sector is outlined in light
 gold once called, the only way to find one sliver in a thousand.
 
-At the end the camera pushes in on the winner's cover (on its sector's
+Only once the wheel has stopped — never during the last pins, which would
+give a close call away before it is decided — do the lights gather and the
+camera push in on the winner's cover (on its sector's
 middle line, wherever that comes to rest — on a wheel of a few wide
 sectors it can be well to one side of the stick), 5.5× where there are
 covers and 3.4× under the stick where there are not, and redraws the

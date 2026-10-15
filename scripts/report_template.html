@@ -4741,7 +4741,6 @@ function spinWheel(seedText, prepareOnly) {
   wheel.replay = null;
   wheel.won = null;
   wheel.focus = false;
-  wheel.focusW = 0;
   wheel.winK = null;
   wheel.focusPt = null;
   wheel.popOn = false;
@@ -5087,7 +5086,6 @@ function playReplay() {
   hideTapPill();
   setSeedBusy(true);
   wheel.focus = false;
-  wheel.focusW = 0;
   wheel.winK = null;
   wheel.focusPt = null;
   wheel.popOn = false;
@@ -5142,19 +5140,9 @@ function playSpin(run, win) {
   // it could not get over sends it rolling back, it waits for the roll back
   // to settle.
   var callAt = last;
-  // The wheel stays lit through the spin; only at the very end do the
-  // lights close in on the stick — from the fourth-last pin it passes, but
-  // no sooner than 2.5s before the winner is called — and the two pools
-  // meet there half a second before it is.
-  var callT = callAt * WHEEL_DT;
-  var pre = run.clicks.filter(function (c) { return c.t <= callT; });
-  var t4 = pre.length >= 4 ? pre[pre.length - 4].t : 0;
-  var fA = Math.max(t4, callT - 2.5), fB = Math.max(fA + 0.4, callT - 0.5);
-  function focusAt(t) {
-    if (t <= fA) return 0;
-    var u = Math.min(1, (t - fA) / (fB - fA));
-    return u * u * (3 - 2 * u);
-  }
+  // The wheel stays lit, the camera back, until it has stopped: closing in
+  // on the winner any sooner would give away a close call before it is
+  // decided. announceWinner brings in the lights and the camera.
   function step(ts) {
     if (!wheel.open) { wheel.anim = null; return; }
     if (t0 === null) t0 = ts;
@@ -5175,8 +5163,6 @@ function playSpin(run, win) {
     }
     wheel.rot = run.path[idx];
     wheel.psi = run.flaps[idx];
-    wheel.focusW = focusAt(el_s);
-    if (wheel.focusW > 0) wheelZoom(true);
     drawWheel();
     if (idx >= callAt) announce();
     if (idx < last) wheel.anim = requestAnimationFrame(step);
@@ -5337,12 +5323,11 @@ function stageLights() {
     if (!still) phase += dt * (wheel.anim ? 2.6 : 1);
     // Wandering, the two pools each trace a slow figure of their own; while
     // the wheel spins they widen and the shadow lifts, so all of it is lit.
-    // At the very end they gather on the sector under the stick, at the top
-    // of the wheel (wheel.focusW, from playSpin), and meet there; called,
-    // the winner keeps them. Focused, they narrow and the rest dims.
+    // Once the winner is called — the wheel at rest — they gather on its
+    // cover (wheel.focusPt) and meet there, narrowing as the rest dims.
     var wx1 = 36 + 20 * Math.sin(phase * 0.41), wy1 = 34 + 16 * Math.sin(phase * 0.57 + 1.3);
     var wx2 = 64 + 20 * Math.sin(phase * 0.33 + 2.2), wy2 = 64 + 16 * Math.cos(phase * 0.47);
-    var f = wheel.focus ? 1 : (wheel.focusW || 0);
+    var f = wheel.focus ? 1 : 0;
     var ease = still ? 1 : Math.min(1, dt * (f ? 9 : 3.2));
     var L = wheel.light || (wheel.light = { x1: wx1, y1: wy1, x2: wx2, y2: wy2,
                                             r: 29, shade: 0.45 });
@@ -5471,7 +5456,6 @@ function closeWheel() {
   wheel.open = false;
   wheel.pop = 0;
   wheel.focus = false;
-  wheel.focusW = 0;
   wheel.winK = null;
   wheel.focusPt = null;
   wheel.popOn = false;

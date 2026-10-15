@@ -731,3 +731,30 @@ button shows whether sound is actually on — muted, or still blocked — and
 turns it on.
 
 With reduced motion the wheel jumps to the result and there is no confetti.
+
+## D-31 — Wheel themes are data
+
+The wheel has themes — Stage (dark oak and gold on a circus stage, art-deco
+lettering), Spotlight (the jewel-coloured wheel on the red-black stage, with
+the playful lettering) and Classic (the jewel wheel on the plain card it
+started on, no stage or lights) — switched by a small button beside the
+sound, remembered in localStorage, and carried in a spin link (`t`) so
+everyone who replays a spin sees the wheel it was sent in (for that spin
+only; the receiver's own choice is left alone).
+
+A theme is a plain object in `WHEEL_THEMES`, not code: it sets three
+attributes on the popup that the stylesheet keys off — `data-stage`
+(curtains, arch, bulbs, dark card and controls, or the plain card),
+`data-letters` (`deco`: upright gold Limelight with a running trim on the
+pill; `pop`: heavy, outlined, tilted and bouncing) and `data-lights` — and
+gives the drawing and the show their values: the wheel's fill (oak or the
+jewel palette), the names' ink and font, the lines, rim, pins and hub; the
+countdown's, "Spinning!"'s and the winner's colours; the shade levels of
+the lights; whether the camera closes in on the stick as the wheel runs
+down; how far it zooms. Every theme ends on the winner's cover, zoomed and
+lifted. A new look is a new entry (and, if it needs one, a CSS block keyed
+on its `data-theme`).
+
+What a theme never touches: the draw, the throws, the physics, the timing,
+the ending — a seed is the same spin in every theme, checked by preparing
+one seed in all three and comparing winner, duration and final angle.

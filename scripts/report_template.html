@@ -1459,7 +1459,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelpop[data-letters=pop] .wheelcount .word { font-size:15cqw; white-space:nowrap;
   transform:rotate(var(--rot)); animation:wordpop 1.1s ease-out both; }
 .wheelpop[data-letters=pop] .wheelcount .win { max-width:92%; text-align:center;
-  white-space:normal; line-height:1.04; overflow-wrap:anywhere;
+  white-space:normal; line-height:1.04; overflow-wrap:normal;
   transform:rotate(var(--rot)); animation:winpop 2.9s ease-out both; }
 .wheelpop[data-letters=pop] .wheeltap { position:absolute; left:50%;
   top:calc(12.8% + 50cqw); z-index:3; transform:translate(-50%, -50%) rotate(-4deg);
@@ -1503,7 +1503,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelpop[data-letters=clean] .wheelcount .word { font-size:11cqw; white-space:nowrap;
   animation:decoword 1.1s ease-out both; }
 .wheelpop[data-letters=clean] .wheelcount .win { max-width:92%; text-align:center;
-  white-space:normal; overflow-wrap:anywhere; animation:decowin 2.9s ease-out both; }
+  white-space:normal; overflow-wrap:normal; animation:decowin 2.9s ease-out both; }
 .wheelpop[data-letters=clean] .wheeltap { position:absolute; left:50%;
   top:calc(12.8% + 50cqw); z-index:3; transform:translate(-50%, -50%); cursor:pointer;
   font-family:var(--show-font, sans-serif); font-weight:var(--show-weight, 700);
@@ -1840,7 +1840,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelpop[data-dark=on] .wheeltheme { color:var(--sc-icon, #e9d8b4); }
 
 .wheelpop[data-letters=deco] .wheelcount .win { max-width:92%; text-align:center; white-space:normal;
-  line-height:1.1; overflow-wrap:anywhere; animation:decowin 2.9s ease-out both; }
+  line-height:1.1; overflow-wrap:normal; animation:decowin 2.9s ease-out both; }
 /* In without a bounce: out of a soft blur, the letters drawing together. */
 @keyframes decowin {
   0% { opacity:0; letter-spacing:.3em; }
@@ -6139,6 +6139,17 @@ function flashWinner(k) {
   clearTimeout(wheel.countT);
   el('wheelcount').innerHTML = '<span class="win" style="--rot:-4deg;color:' +
     colour + ';font-size:' + size.toFixed(1) + 'cqw">' + esc(name) + '</span>';
+  // Lines break only between words: a word too long for the line (Decrypto,
+  // Innovation) shrinks the lettering until it fits whole, rather than
+  // dropping its last letters onto a line of their own. Measured with the
+  // entrance held still, since some of them start with the letters spread.
+  var win = el('wheelcount').firstChild, room = el('wheelcount').clientWidth * 0.92;
+  win.style.animation = 'none';
+  while (win.scrollWidth > Math.ceil(room) + 1 && size > 4) {
+    size -= 0.5;
+    win.style.fontSize = size.toFixed(1) + 'cqw';
+  }
+  win.style.animation = '';
   [523, 659, 784].forEach(function (f, i) { beep(f, 0.16, i * 0.12); });
   beep(1047, 0.45, 0.36);
   beep(1319, 0.45, 0.36);

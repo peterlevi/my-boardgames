@@ -3,12 +3,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Board game collection</title>
-<!-- The wheel's default theme's web font, Limelight, ready before its
-     first countdown; the other themes fetch theirs when chosen
-     (wheelFont). Offline, they fall back to the system's own. -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Limelight&display=swap">
+<!-- Nothing of the wheel's themes loads with the page: each theme's font
+     (wheelFont) and backdrop (wheel/<id>.*) are fetched when it is shown. -->
 <style>
 :root {
   --bg:#f7f6f3; --panel:#fff; --ink:#1b1a17; --muted:#6b6862; --line:#e2ded6;
@@ -4407,7 +4403,7 @@ var WHEEL_THEMES = [
             rim: 'gilt', pins: 'brass', hub: 'brass' },
     count: [WHEEL_GOLD, WHEEL_GOLD, WHEEL_GOLD], word: [WHEEL_GOLD], flash: WHEEL_GOLD,
     lights: { idle: 0.45, spin: 0.15, focus: 0.62, out: 0.6 },
-    approach: true, zoom: { covers: 5.5, plain: 3.4 },
+    approach: true, zoom: { covers: 5.5, plain: 3.4 }, gfont: 'Limelight',
     thumb: 'radial-gradient(circle at 50% 40%, #2a1610, #050202 70%)' },
   { id: 'spotlight', name: 'Spotlight', stage: true, dark: true, cones: true,
     letters: 'pop', face: Object.assign({}, JEWEL_FACE, { mark: WHEEL_MARK }),
@@ -4615,15 +4611,6 @@ function wheelColor(i, n) {
 function sectorLuma(hex) {
   var c = hex.slice(1).match(/../g).map(function (h) { return parseInt(h, 16); });
   return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
-}
-// The art-deco face the Stage theme letters in; the canvas only draws a web
-// font once it has loaded, so the wheel is drawn again when it has.
-// (Fetched as the page opens, so the first "3" is already in it.)
-if (document.fonts && document.fonts.load) {
-  document.fonts.load('400 20px "Limelight"').then(function () {
-    labelFits = {};
-    if (wheel.open) drawWheel();
-  }, function () {});
 }
 
 /* Dark oak, drawn once. The grain runs along x (a wedge's length) and

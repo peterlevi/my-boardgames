@@ -34,20 +34,22 @@ from scoring import (SALAD_LABEL, SALAD_PILL, SALAD_SHORT, WIN_LABEL,
 THUMBS = ROOT / "data" / "thumbs"
 
 
-def wheel_scenes():
-    """The wheel's scene themes: each scripts/wheel_scenes/<id>.json spec, with
-    its backdrop — <id>.webp or .jpg (generated paintings) or <id>.svg (drawn)
-    — inlined as a data URI, so the report still travels as one file."""
+def wheel_scenes(out_dir):
+    """The wheel's scene themes: each scripts/wheel_scenes/<id>.json spec, and
+    its backdrop — <id>.webp or .jpg (a generated painting), else <id>.svg
+    (drawn) — copied to wheel/ beside the report and linked from the spec,
+    not inlined: the page only fetches a backdrop when its theme is shown,
+    so the themes cost nothing on load."""
     out = []
+    dest = out_dir / "wheel"
     for spec_file in sorted((HERE / "wheel_scenes").glob("*.json")):
         spec = json.loads(spec_file.read_text(encoding="utf-8"))
-        # A painted (raster) backdrop if there is one, else the drawn SVG.
-        for ext, mime in ((".webp", "image/webp"), (".jpg", "image/jpeg"),
-                          (".svg", "image/svg+xml")):
+        for ext in (".webp", ".jpg", ".svg"):
             art = spec_file.with_suffix(ext)
             if art.exists():
-                spec["scene"] = ("data:" + mime + ";base64," +
-                                 base64.b64encode(art.read_bytes()).decode())
+                dest.mkdir(parents=True, exist_ok=True)
+                (dest / art.name).write_bytes(art.read_bytes())
+                spec["scene"] = "wheel/" + art.name
                 break
         out.append(spec)
     return out
@@ -1410,7 +1412,8 @@ def main():
             .replace("/*__DATA__*/", json.dumps(data, ensure_ascii=False,
                                                 separators=(",", ":")))
             .replace("/*__OPTS__*/", json.dumps(opts))
-            .replace("/*__WHEEL_SCENES__*/[]", json.dumps(wheel_scenes()))
+            .replace("/*__WHEEL_SCENES__*/[]",
+                     json.dumps(wheel_scenes((ROOT / a.out).parent)))
             .replace("/*__TAGS__*/", json.dumps(tags, ensure_ascii=False,
                                                 separators=(",", ":")))
             # The poll columns are named after the count they read. render()

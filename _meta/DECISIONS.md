@@ -778,9 +778,14 @@ Beyond the built-in looks, a theme can be a scene: `scripts/wheel_scenes/<id>.js
 (the same data as a built-in theme, plus its CSS variables, its Google font
 and a fallback colour) and a backdrop — `<id>.svg`, drawn by hand, or
 `<id>.webp`, a generated painting, preferred when both exist. The build
-inlines each backdrop as a data URI (`wheel_scenes()` in report.py), so the
-report still travels as one file; the paintings are ~40–110 KB each. Each
-theme's font is fetched only when it is chosen (`wheelFont`). A spec with a
+copies each backdrop to `wheel/` beside the report (`wheel_scenes()` in
+report.py) and links it from the spec. They were first inlined as data URIs
+to keep the report one file, but base64 images barely compress, and they
+were half of every page load (~1.2 of 2.3 MB transferred) for a wheel most
+visits never open; now nothing of the themes loads with the page — a
+backdrop is fetched when its theme is shown (the theme list's thumbnails
+when the list is opened), and each theme's font, Stage's Limelight
+included, when it is chosen (`wheelFont`). A spec with a
 built-in's id replaces it — the new Casino replaced the first, too-plain one.
 
 Thirteen are inspired by games in the collection — Food Chain, Great

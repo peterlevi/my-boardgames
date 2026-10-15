@@ -7977,11 +7977,11 @@
     "style": 10
    }
   },
-  "plays": 10,
+  "plays": 11,
   "my_rating": 10.0,
   "edited": "2025-09-22",
   "comment": "(open)\n\nInteresting, beautiful and thematic. This is one of the games that best model economy. The feeling of supply and demand is very real. High levels of interaction. \n\nSetup and tear-down are pretty nasty. It could also get a bit fiddly at moments, e.g. players looking for what they actually can do. As a result, it usually runs longer than one plans.\n\nEdit: After having played it 10+ times, I do think I like the mood of Birmingham a little bit more than Lancashire. Overall both versions are some of the very best games out there. Raising rating to 10.",
-  "last_played": "2025-05-31"
+  "last_played": "2026-10-08"
  },
  {
   "id": "28720",
@@ -24465,11 +24465,11 @@
    "_fingerprint": "d5d4b92312a6bf72",
    "_name": "High Society"
   },
-  "plays": 8,
+  "plays": 9,
   "my_rating": 8.5,
   "edited": "2025-09-22",
   "comment": "(open)\n\nJust pure, interactive fun.\n\nPlayed for first time, 4 times in a row with 5 players. Instant favorite. Plays fast, lots of fun, inspires great table talk, even some role playing. Lots of fun \"wow\" moments. Still thinky and requires both planning and some psychology. Games played differently due to different order in which cards were opened, it seems the game will offer enough variety. Osprey's edition has great art in Art Nouveau style that fits the game so well.\n\nKnizia's bidding games are simply amazing. It's difficult for me to say which one I like best between Ra, Medici and High Society - all are great!",
-  "last_played": "2026-09-25"
+  "last_played": "2026-10-08"
  },
  {
   "id": "350205",
@@ -33019,6 +33019,134 @@
   "last_played": null
  },
  {
+  "id": "118",
+  "name": "Modern Art",
+  "alt_names": [
+   "Art Moderne",
+   "Arte Moderna",
+   "Arte Moderno",
+   "Современное искусство",
+   "Сучасне мистецтво",
+   "هنر مدرن",
+   "スタンプス (Stamps)",
+   "モダンアート",
+   "现代艺术",
+   "现代艺术",
+   "現代藝術",
+   "現代藝術 (现代艺术)",
+   "모던 아트"
+  ],
+  "year": 1992,
+  "rank": 223,
+  "types": [
+   "Strategy Game"
+  ],
+  "is_expansion": false,
+  "expands": [],
+  "thumbnail": "https://cf.geekdo-images.com/wLto-xaabHwKQe_Bc4iD1Q__small/img/AUqMholGVlwXLjMcxwiziE_7Ffw=/fit-in/200x150/filters:strip_icc()/pic3458036.png",
+  "weight": 2.275,
+  "average": 7.52572,
+  "weight_votes": 1578,
+  "geek": 7.33277,
+  "ratings": 25890,
+  "owners": 34681,
+  "description": "Buying and selling paintings can be a very lucrative business.  Five different artists have produced a bunch of paintings, and it's the player's task to be both the buyer and the seller, hopefully making a profit in both roles.  He does this by putting a painting from his hand up for auction each turn.  He gets the money if some other player buys it, but must pay the bank if he buys it for himself.  After each round, paintings are valued by the number of paintings of that type that were sold.  The broker with the most cash after four rounds is the winner.\n\nPart of the Knizia auction trilogy.",
+  "minplayers": 3,
+  "maxplayers": 5,
+  "playingtime": 45,
+  "minplaytime": 45,
+  "maxplaytime": 45,
+  "mechanics": [
+   "Auction / Bidding",
+   "Auction: English",
+   "Auction: Once Around",
+   "Auction: Sealed Bid",
+   "Auction: Turn Order Until Pass",
+   "Commodity Speculation",
+   "Hand Management",
+   "Victory Points as a Resource"
+  ],
+  "categories": [
+   "Card Game",
+   "Economic"
+  ],
+  "families": [
+   "Components: Player Screens",
+   "Misc: Dice Tower Hall of Fame",
+   "Misc: LongPack Games",
+   "Series: 31 Minutos (Fractal Juegos)",
+   "Series: Book Box (DiceTree)",
+   "Theme: Art",
+   "Theme: Fine Art and Art Museums",
+   "Theme: Painting / Paintings"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "designer_ids": {
+   "Reiner Knizia": "2"
+  },
+  "publishers": [
+   "Hans im Glück",
+   "Arrakis Games",
+   "CMON Global Limited"
+  ],
+  "traits": [
+   "End-game bonuses",
+   "Contested market",
+   "Auction of any kind"
+  ],
+  "videos": [
+   {
+    "title": "Rulebook直說｜現代藝術｜Modern Art｜教學｜廣東話",
+    "link": "http://www.youtube.com/watch?v=VtQ2TOOnwKQ",
+    "who": "sonofkyo",
+    "lang": ""
+   }
+  ],
+  "image": "https://cf.geekdo-images.com/wLto-xaabHwKQe_Bc4iD1Q__original/img/s3Gai8XBTVfWFFlYpL4XF3kIlWU=/0x0/filters:format(png)/pic3458036.png",
+  "interaction": "Medium",
+  "interaction_shared": 5.0,
+  "poll": {
+   "1": {
+    "Best": 1,
+    "Recommended": 1,
+    "Not Recommended": 273
+   },
+   "2": {
+    "Best": 0,
+    "Recommended": 6,
+    "Not Recommended": 276
+   },
+   "3": {
+    "Best": 24,
+    "Recommended": 194,
+    "Not Recommended": 123
+   },
+   "4": {
+    "Best": 249,
+    "Recommended": 129,
+    "Not Recommended": 5
+   },
+   "5": {
+    "Best": 287,
+    "Recommended": 77,
+    "Not Recommended": 20
+   },
+   "5+": {
+    "Best": 4,
+    "Recommended": 17,
+    "Not Recommended": 192
+   }
+  },
+  "ai": null,
+  "plays": 0,
+  "my_rating": null,
+  "edited": "2026-10-15",
+  "comment": "(shrink)",
+  "last_played": null
+ },
+ {
   "id": "175199",
   "name": "Mottainai",
   "alt_names": [
@@ -38824,11 +38952,11 @@
    "_fingerprint": "6cbc5f600d9ab2a1",
    "_name": "Ra"
   },
-  "plays": 10,
+  "plays": 11,
   "my_rating": 8.7,
   "edited": "2025-10-02",
   "comment": "(open)\n\nAn amazing Reiner Knizia game. Rules are dead simple, turns are short so it plays super breezy, the total game time is not long, but still enough to build some tension. It's been super fun every time we've played it, at 3, 4 or 5 players. Also a very feel-good game, even if you lose, you've had a good time. Production of the 25th Century Games version is great.",
-  "last_played": "2026-09-25"
+  "last_played": "2026-10-08"
  },
  {
   "id": "28143",
@@ -39269,6 +39397,130 @@
   "my_rating": null,
   "edited": "2025-09-22",
   "comment": "3 (2, maybe 4)\n(shrink)",
+  "last_played": null
+ },
+ {
+  "id": "365357",
+  "name": "Railways of the Lost Atlas",
+  "alt_names": [
+   "Железные дороги утерянного атласа",
+   "レイルウェイズ・オブ・ザ・ロスト・アトラス",
+   "잊혀진 대륙의 철도들"
+  ],
+  "year": 2024,
+  "rank": 2676,
+  "types": [
+   "Strategy Game"
+  ],
+  "is_expansion": false,
+  "expands": [],
+  "thumbnail": "https://cf.geekdo-images.com/9BSUVLs2uXWdWfvkcxufnQ__small/img/QiQRcJyCu-R-OswrVTV1BoF6VV4=/fit-in/200x150/filters:strip_icc()/pic7194145.jpg",
+  "weight": 3.8966,
+  "average": 8.19654,
+  "weight_votes": 29,
+  "geek": 6.1028,
+  "ratings": 717,
+  "owners": 1660,
+  "description": "Railways of the Lost Atlas is an 18xx-style game set in a shifting landscape. The map, built by players as part of set-up, is different for each play. Players take on the role of individual investors who launch minor companies, build infrastructure, and generate revenue to increase their stock value or reinvest in the company. Minor companies eventually merge into major ones that have more freedom to expand their operations.\n\nThe twelve minor companies have distinct abilities that persist even after merging into a major to make for different combinations and unique company identities.\n\nEnjoy multiple game modes and modular options that allow groups to tailor the game to their needs.",
+  "minplayers": 1,
+  "maxplayers": 5,
+  "playingtime": 300,
+  "minplaytime": 60,
+  "maxplaytime": 300,
+  "mechanics": [
+   "Auction / Bidding",
+   "Investment",
+   "Modular Board",
+   "Network and Route Building",
+   "Ownership",
+   "Player Elimination",
+   "Stock Holding",
+   "Tile Placement",
+   "Variable Player Powers",
+   "Variable Set-up"
+  ],
+  "categories": [
+   "Economic",
+   "Trains"
+  ],
+  "families": [
+   "Crowdfunding: Kickstarter",
+   "Digital Implementations: TableTop Simulator Mod (TTS)",
+   "Series: 18xx"
+  ],
+  "designers": [
+   "Kevin Delger",
+   "Jacob Schacht"
+  ],
+  "designer_ids": {
+   "Kevin Delger": "146291",
+   "Jacob Schacht": "146290"
+  },
+  "publishers": [
+   "4GAMES",
+   "Asterisk Games",
+   "MTS Games"
+  ],
+  "traits": [
+   "Contested market",
+   "Auction of any kind",
+   "Direct conflict",
+   "Network building"
+  ],
+  "videos": [
+   {
+    "title": "Railways of the Lost Atlas - Playthrough With Friends",
+    "link": "http://www.youtube.com/watch?v=gNXOMBTuuSY",
+    "who": "HappyHexagon",
+    "lang": "English"
+   },
+   {
+    "title": "Game in a Nutshell - Railways of the Lost Atlas (how to play)",
+    "link": "http://www.youtube.com/watch?v=PgCEVz5rRRU",
+    "who": "tdbs",
+    "lang": "English"
+   }
+  ],
+  "image": "https://cf.geekdo-images.com/9BSUVLs2uXWdWfvkcxufnQ__original/img/TscxYwPlrj6yYly7GCPQs_MUVFo=/0x0/filters:format(jpeg)/pic7194145.jpg",
+  "interaction": "High",
+  "interaction_shared": 4.0,
+  "poll": {
+   "1": {
+    "Best": 0,
+    "Recommended": 2,
+    "Not Recommended": 14
+   },
+   "2": {
+    "Best": 2,
+    "Recommended": 14,
+    "Not Recommended": 6
+   },
+   "3": {
+    "Best": 7,
+    "Recommended": 14,
+    "Not Recommended": 3
+   },
+   "4": {
+    "Best": 17,
+    "Recommended": 7,
+    "Not Recommended": 1
+   },
+   "5": {
+    "Best": 3,
+    "Recommended": 8,
+    "Not Recommended": 8
+   },
+   "5+": {
+    "Best": 0,
+    "Recommended": 0,
+    "Not Recommended": 13
+   }
+  },
+  "ai": null,
+  "plays": 0,
+  "my_rating": null,
+  "edited": "2026-10-15",
+  "comment": "(shrink)",
   "last_played": null
  },
  {
@@ -55683,6 +55935,126 @@
   "plays": 0,
   "my_rating": null,
   "edited": "2025-09-30",
+  "comment": "(shrink)",
+  "last_played": null
+ },
+ {
+  "id": "438903",
+  "name": "Railways of the Lost Atlas: Landmarks of the Lost Atlas",
+  "alt_names": [
+   "Железные дороги утерянного атласа: Ориентиры утерянного атласа",
+   "ランドマークス・オブ・ザ・ロスト・アトラス",
+   "잊혀진 대륙의 철도들: 랜드마크"
+  ],
+  "year": 2026,
+  "rank": null,
+  "types": [],
+  "is_expansion": true,
+  "expands": [
+   "365357"
+  ],
+  "thumbnail": "https://cf.geekdo-images.com/wjrf4VbDFPx3MpnPmbV95w__small/img/h9xOGVDase3uZe6yaQnfjs6ffaE=/fit-in/200x150/filters:strip_icc()/pic9715156.jpg",
+  "weight": 4.0,
+  "average": 8.28772,
+  "weight_votes": 1,
+  "geek": 5.56187,
+  "ratings": 57,
+  "owners": 708,
+  "description": "Landmarks of the Lost Atlas introduces four new modules to expand your Railways of the Lost Atlas games. These modules can be included individually or in any combination:\n\nLandmarks add new strategies as well as added flavor to maps that include them.\n\nThe Metropolitan Transit Department adds a neutral Corporation to the game that players can use to benefit their own interests and/or hinder others.\n\nEvents create temporary changes to the core rules of the game that players will need to adapt to.\n\nNew Minor Companies and Major Corporations add variety to the Company abilities available in the game.\n\n—description from the publisher",
+  "minplayers": 1,
+  "maxplayers": 7,
+  "playingtime": 300,
+  "minplaytime": 60,
+  "maxplaytime": 300,
+  "mechanics": [
+   "Auction / Bidding",
+   "Investment",
+   "Modular Board",
+   "Network and Route Building",
+   "Ownership",
+   "Stock Holding",
+   "Tile Placement",
+   "Variable Player Powers",
+   "Variable Set-up"
+  ],
+  "categories": [
+   "Expansion for Base-game",
+   "Economic",
+   "Trains"
+  ],
+  "families": [
+   "Admin: Upcoming Releases",
+   "Crowdfunding: Kickstarter",
+   "Series: 18xx"
+  ],
+  "designers": [
+   "Kevin Delger",
+   "Jacob Schacht"
+  ],
+  "designer_ids": {
+   "Kevin Delger": "146291",
+   "Jacob Schacht": "146290"
+  },
+  "publishers": [
+   "Asterisk Games",
+   "4GAMES",
+   "MTS Games"
+  ],
+  "traits": [
+   "Contested market",
+   "Auction of any kind",
+   "Network building"
+  ],
+  "videos": [],
+  "image": "https://cf.geekdo-images.com/wjrf4VbDFPx3MpnPmbV95w__original/img/bEfx1N8MaTMaNIZ6xJjImyXnZ7o=/0x0/filters:format(jpeg)/pic9715156.jpg",
+  "interaction": "Medium",
+  "interaction_shared": 4.0,
+  "poll": {
+   "1": {
+    "Best": 0,
+    "Recommended": 0,
+    "Not Recommended": 1
+   },
+   "2": {
+    "Best": 0,
+    "Recommended": 1,
+    "Not Recommended": 0
+   },
+   "3": {
+    "Best": 0,
+    "Recommended": 1,
+    "Not Recommended": 0
+   },
+   "4": {
+    "Best": 1,
+    "Recommended": 0,
+    "Not Recommended": 0
+   },
+   "5": {
+    "Best": 0,
+    "Recommended": 0,
+    "Not Recommended": 1
+   },
+   "6": {
+    "Best": 0,
+    "Recommended": 0,
+    "Not Recommended": 1
+   },
+   "7": {
+    "Best": 0,
+    "Recommended": 0,
+    "Not Recommended": 1
+   },
+   "7+": {
+    "Best": 0,
+    "Recommended": 0,
+    "Not Recommended": 1
+   }
+  },
+  "ai": null,
+  "plays": 0,
+  "my_rating": null,
+  "edited": "2026-10-15",
   "comment": "(shrink)",
   "last_played": null
  },

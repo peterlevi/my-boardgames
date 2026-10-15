@@ -635,7 +635,8 @@ full-size image. Once the winner is called the lights go out — the
 pools fade and close — and the wheel sinks to one even dark, while the
 winning cover is lifted out of it on a layer above the lights: growing to
 nearly twice its size, turning upright, opening out from the square crop
-to the cover's own shape (rounded still; a long one capped at 1.15 times
+to the cover's own shape, its corners squaring off, both done a little over
+halfway through the lift ( a long one capped at 1.15 times
 the square, so a wide box stays in view), on a drop shadow. The stick is
 drawn on that same top layer, so the lights' shade never greys it. The
 wheel zooms inside its own frame, behind the curtains and the
@@ -674,11 +675,12 @@ plastic. The lights' shade is lighter than it
 was over the coloured sectors, or nothing of the grain survives. The same
 gold counts down, says "Spinning!" and flashes the winner's name — upright,
 in Limelight — a heavy art-deco face, filled with a gold-leaf gradient on a
-dark edge and a glow, fading in rather than bouncing (the fine Poiret One
-was too faint for it). The names on the wheel are in Poiret One; the canvas
-only draws a web font once it has loaded, so the wheel is drawn again then.
-Both are the page's only web fonts, fetched as it opens, and fall back to
-the system's own offline. The Tap to spin / Spin again pill is deco capitals on black with
+dark edge and a glow, fading in rather than bouncing (the fine Poiret One,
+tried first, was too faint). Limelight is the lettering of everything on
+the wheel — its names, the pill, the countdown, the winner — but not the
+controls under it. The canvas only draws a web font once it has loaded, so
+the wheel is drawn again then. It is the page's only web font, fetched as it
+opens, falling back to the system's own offline. The Tap to spin / Spin again pill is capitals on black with
 a thin gold trim, a light running round it in place of a pulse. The oak
 is drawn once per size and sector count and turned whole each frame, so it
 costs one image per frame however many sectors.

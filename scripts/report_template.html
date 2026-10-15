@@ -3,21 +3,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Board game collection</title>
-<!-- Two web fonts, for the wheel's show lettering: Poiret One, a fine
-     art-deco face, for the names and the pill; Limelight, a heavy one, for
-     the countdown and the winner. Offline, they fall back to the system's
-     own. -->
+<!-- One web font, for everything on the wheel: Limelight, a heavy
+     art-deco face. Offline, it falls back to the system's own. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Limelight&display=swap">
 <style>
 :root {
   --bg:#f7f6f3; --panel:#fff; --ink:#1b1a17; --muted:#6b6862; --line:#e2ded6;
   --accent:#7a5c3e; --best:#2f6b45; --best-bg:#e4f0e8; --great:#7a6320;
   --great-bg:#f6efd8; --warn:#8a4b32; --warn-bg:#f4e5de;
   --chip:#eae6de; --tile:#dcd6c9;
-  --deco:"Poiret One","Avenir Next","Futura","Century Gothic",system-ui,sans-serif;
-  --deco-bold:"Limelight","Didot","Bodoni 72",Georgia,serif;
+  --deco:"Limelight","Didot","Bodoni 72",Georgia,serif;
+  --deco-bold:var(--deco);
   /* Meter scale, strong to weak, so a percentage reads before it is parsed. */
   --m4:#3f8a5f; --m3:#7d9b45; --m2:#c0952b; --m1:#b3aca1; --hit:#f6e6a8;
   /* The game picker's column: a shade darker than the page, so it reads as
@@ -3874,17 +3872,15 @@ var wheel = { open: false, rot: 0, psi: 0, entries: [], anim: null,
 // The wheel itself is dark oak, every sector alike, lettered in gold — and
 // the same gold counts down and calls the winner.
 var WHEEL_GOLD = '#e2bb62';
-// The names on it in the fine art-deco face; the canvas only draws a web font
-// once it has loaded, so the wheel is drawn again when it has.
-var WHEEL_FONT = '"Poiret One","Avenir Next","Futura",system-ui,sans-serif';
-// (The countdown's heavy face is fetched now too, so the first "3" is
-// already in it rather than in the fallback.)
+// Everything on the wheel is in the one heavy art-deco face; the canvas only
+// draws a web font once it has loaded, so the wheel is drawn again when it
+// has. (Fetched as the page opens, so the first "3" is already in it.)
+var WHEEL_FONT = '"Limelight","Didot","Bodoni 72",Georgia,serif';
 if (document.fonts && document.fonts.load) {
-  document.fonts.load('400 20px "Poiret One"').then(function () {
+  document.fonts.load('400 20px "Limelight"').then(function () {
     labelFits = {};
     if (wheel.open) drawWheel();
   }, function () {});
-  document.fonts.load('400 20px "Limelight"').then(null, function () {});
 }
 
 /* Dark oak, drawn once. The grain runs along x (a wedge's length) and
@@ -4087,7 +4083,7 @@ function drawWheel() {
     // The type no taller than the sector is wide halfway out, so a crowded
     // wheel gets smaller letters.
     var fs = Math.max(8 * k, Math.min(13 * k, 2 * R * 0.6 * half * 0.42));
-    ctx.font = '400 ' + (fs * 1.12).toFixed(1) + 'px ' + WHEEL_FONT;
+    ctx.font = '400 ' + fs.toFixed(1) + 'px ' + WHEEL_FONT;
     // Gold leaf on the oak.
     ctx.fillStyle = WHEEL_GOLD;
     ctx.textAlign = 'right';
@@ -4236,13 +4232,17 @@ function drawTop() {
       var im = (wheel.zoomRes > 1 && wheelBigImg(e, true)) || wheelImg(e);
       var iw = im ? im.naturalWidth : 1, ih = im ? im.naturalHeight : 1;
       var sq = Math.min(iw, ih);
-      var sw = sq + (iw - sq) * pop, sh = sq + (ih - sq) * pop;
+      // Out to its own shape ahead of the lift, done a little over halfway,
+      // its corners squaring off as it goes.
+      var q = Math.min(1, pop / 0.55);
+      q = q * q * (3 - 2 * q);
+      var sw = sq + (iw - sq) * q, sh = sq + (ih - sq) * q;
       var W = d * sw / sq, H = d * sh / sq;
       // A long cover — a wide box — would run off the view: its long side
       // stops at 1.15 times what the square would have been.
       var fit = Math.min(1, 1.15 * d / Math.max(W, H));
       W *= fit; H *= fit;
-      var rad = Math.min(W, H) * 0.14;
+      var rad = Math.min(W, H) * 0.14 * (1 - q);
       function frame() {
         ctx.beginPath();
         if (ctx.roundRect) ctx.roundRect(-W / 2, -H / 2, W, H, rad);

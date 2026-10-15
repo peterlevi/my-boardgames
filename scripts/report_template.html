@@ -5782,6 +5782,9 @@ function showTapPill(label, action, icon) {
   b.innerHTML = (icon === 'again' ? RELOAD_ICON : '&#9654;') + ' ' + esc(label);
   wheel.tapAction = action;
   b.hidden = false;
+  // The button under the wheel does the same thing, so it says the same:
+  // never "Tap to spin" over the wheel and "Spin again" below it.
+  el('wheelagain').textContent = label;
 }
 function hideTapPill() {
   clearTimeout(wheel.pillT);

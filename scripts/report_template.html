@@ -1439,6 +1439,10 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheeltap:hover { color:#fff; }
 /* Zoomed in on a winner, the pill drops low, clear of the name. */
 .wheelcard.zoomed .wheeltap { top:84%; }
+/* With a cover in the close-up — centred, about 0.65 of the box wide — the
+   pill sits in the middle of the gap between a square one and the box's
+   foot. */
+.wheelcard.zoomed.covers .wheeltap { top:89.5%; }
 @keyframes trimrun { to { --trim:360deg; } }
 .wheelcount .win { max-width:92%; text-align:center; white-space:normal;
   line-height:1.1; overflow-wrap:anywhere; animation:decowin 2.9s ease-out both; }
@@ -4639,6 +4643,22 @@ function lastPinPassed(run) {
   return !!(last && last.passed);
 }
 
+/** How much of a nail-biter a run's ending is, from 0 to about 1. Only the
+ *  last two pegs that really pushed the stick count: one that barely got
+ *  through (the wheel all but stopped while it was under the stick) or one
+ *  that barely failed (lifted the stick nearly as far as passing takes)
+ *  scores high; a peg brushed past at speed scores nothing. */
+function wheelDrama(run) {
+  var fights = run.eps.filter(function (e) { return e.max > 0.12; });
+  function close(e) {
+    if (!e) return 0;
+    return e.passed ? Math.max(0, 1 - e.minW / 0.5)
+                    : Math.min(1, e.max / WHEEL_LIFT.max);
+  }
+  var last = fights[fights.length - 1], prev = fights[fights.length - 2];
+  return 0.6 * close(last) + 0.4 * close(prev);
+}
+
 /* ---- seeds ---------------------------------------------------------------
    Every spin comes from a seed: a word, random unless you type one. The seed
    is all the randomness a spin has — it draws the winner, and it picks the
@@ -4713,6 +4733,9 @@ function spinWheel(seedText, prepareOnly) {
   wheel.prepared = null;
   var rand = seededRandom(seed);
   var win = Math.floor(rand() * n), from = wheelHome(n);
+  // And how it ends, on a fair coin: the last pin to fight the stick either
+  // gets over it or is stopped by it, half the time each.
+  var wantPass = rand() < 0.5;
   wheelResult('');            // the wheel says it is spinning
   wheel.searching = true;
   wheel.replay = null;
@@ -4741,11 +4764,23 @@ function spinWheel(seedText, prepareOnly) {
     var pins = wheelPins(n), gap = TAU / pins;
     var throwFor = function (secs) { return P.mu / P.c * (Math.exp(P.c * secs) - 1); };
     var lo = throwFor(8.5), hi = throwFor(10.5);
-    var start = from, off = 0, best = null, run = null;
-    for (var i = 0; i < 40 && !run; i++) {
+    // A couple of dozen throws, a few milliseconds of physics each however
+    // many entries: of those that end the way the coin said, the closest
+    // call is played (wheelDrama) — any throw can be turned to end on the
+    // winner, so choosing among them for drama costs the odds nothing.
+    var cands = [], want = wantPass ? 1 : 0;
+    for (var i = 0; i < 24; i++) {
       var v = lo + (hi - lo) * rand();
       var r = wheelSim(from, v, n, false);
       if (Math.abs(r.endPsi) > 0.08) continue;
+      cands.push({ v: v, r: r, u: rand(),
+                   score: wheelDrama(r) + ((lastPinPassed(r) ? 1 : 0) === want ? 10 : 0) });
+    }
+    cands.sort(function (x, y) { return y.score - x.score; });
+    var start = from, off = 0, best = null, run = null;
+    for (var ci = 0; ci < cands.length && !run; ci++) {
+      var cd = cands[ci];
+      v = cd.v; r = cd.r;
       if (pins === n) {
         // A pin on every boundary: started q sectors further round, it ends
         // q sectors further round.
@@ -4758,14 +4793,16 @@ function spinWheel(seedText, prepareOnly) {
         // the pins instead, the winner's under the stick, at a point inside
         // it the seed picks — the same as dealing the names round the wheel
         // from a random place. The pins' run is untouched.
-        var u = 0.15 + 0.7 * rand();
+        var u = 0.15 + 0.7 * cd.u;
         off = ((r.rest - (win + u) * a) % TAU + TAU) % TAU;
         start = (from + off) % TAU;
       }
+      // (Rounding in the last digit can, very rarely, tip a turned run into
+      // a neighbour; then the next best throw.)
       var rr = wheelSim(start, v, n, true, off);
       if (rr.sector === win) { run = rr; best = v; }
     }
-    // Nothing in forty throws: let the last one land where it lands.
+    // Nothing usable at all: let the last one land where it lands.
     if (!run) { best = v; start = from; off = 0; run = wheelSim(from, v, n, true); }
     run.off = off;
     wheel.searching = false;
@@ -4862,6 +4899,7 @@ function readSpinLink(text) {
 function openReplay(spin) {
   wheelSound();
   stageMotes();
+  stageBulbs();
   wheel.entries = spin.entries;
   wheel.labels = spin.labels;
   wheel.rot = spin.r;
@@ -5372,6 +5410,7 @@ function wheelZoom(on, instant) {
   zb.style.transform = on ? 'translate(' + ((0.5 - z * fx) * 100).toFixed(2) + '%,' +
     ((47 / 84 - z * fy) * 42 / 47 * 100).toFixed(2) + '%) scale(' + z + ')' : '';
   card.classList.toggle('zoomed', !!on);
+  card.classList.toggle('covers', !!on && wheel.entries.length <= 24);
   if (on) { wheel.zoomRes = z; drawWheel(); return; }
   if (instant) { wheel.zoomRes = 1; return; }
   wheel.zoomT = setTimeout(function () {

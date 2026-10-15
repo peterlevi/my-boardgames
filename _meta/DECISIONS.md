@@ -607,10 +607,17 @@ the random start (equivalently, the drawn winner) that makes every sector
 exactly as likely. An earlier version instead searched up to 480 throws
 from a fixed start for one that happened to land on the winner, scoring
 the endings for drama; with 244 entries the chance of a hit was 1 in 244
-per throw, it ran all 480, and froze the browser. Now a spin takes two
-runs of the physics (a few milliseconds), however many entries; how it
-ends — over the last pin or stopped by it — is the physics' own. Throws
-that end with the stick still leaning on a pin are passed over.
+per throw, it ran all 480, and froze the browser. Now any throw can be
+turned to land on the winner, so the drama is chosen freely: a fair coin
+from the seed says how the spin ends — the last pin to fight the stick
+gets over it, or stops it — and of 24 throws (a few milliseconds of
+physics each, however many entries) the closest call of that kind is
+played: the wheel all but stopped as it crawls over, or the stick lifted
+nearly far enough before it is pushed back. Throws that end with the stick
+still leaning on a pin are passed over. A version that played the first
+throw that came, with no choosing, never showed a close call over the
+last pin. Without the coin, the drama score's taste for a final push-back
+made "stopped" the ending almost every time.
 
 The rim carries a pin on every boundary up to 40 entries, and 40 evenly
 spaced pins beyond that (`WHEEL_MAX_PINS`): closer than about 46 the stick

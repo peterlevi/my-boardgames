@@ -103,3 +103,10 @@ JavaScript takes about 120ms of that. Sorting is 541ms, a keystroke 32-84ms,
 the file 63MB. The fix is to render fewer rows — cap at a few hundred with a
 "show the rest" — not to optimise the script. At the real size (~265) none of
 this matters.
+
+**Testing the wheel without waiting for it.** A spin is ~3s of countdown and
+~10s of wheel. `wheel.speed = 8` (from the console) fast-forwards both — the
+run is simulated beforehand, so playback speed cannot change the result — and
+a whole spin to its winner takes about two seconds. For checks that need no
+animation at all, `spinWheel(seed, true)` prepares a spin without playing it
+(`wheel.prepared.run` / `.win`), and `wheelSim` runs the physics directly.

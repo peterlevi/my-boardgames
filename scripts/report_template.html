@@ -5219,7 +5219,7 @@ function countdown(then) {
         'deg;color:' + wheelTheme().count[k] + '">' + (3 - k) + '</span>';
       beep(k === 2 ? 700 : 560, 0.12);
       k++;
-      wheel.countT = setTimeout(next, 720);
+      wheel.countT = setTimeout(next, 720 / (wheel.speed || 1));
       return;
     }
     // The word, its letters in the theme's colours, and the wheel goes
@@ -5391,7 +5391,9 @@ function playSpin(run, win) {
   function step(ts) {
     if (!wheel.open) { wheel.anim = null; return; }
     if (t0 === null) t0 = ts;
-    var el_s = (ts - t0) / 1000;
+    // (wheel.speed: a fast-forward for trying things out — set it from the
+    // console; the run is worked out beforehand, so it ends the same.)
+    var el_s = (ts - t0) / 1000 * (wheel.speed || 1);
     var idx = Math.min(last, Math.floor(el_s / WHEEL_DT));
     // A clack in the very frame that shows a peg slipping out from under the
     // stick, so what you hear is what you see. Pegs can pass faster than

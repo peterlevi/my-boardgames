@@ -3,11 +3,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Board game collection</title>
-<!-- One web font, for the wheel's show lettering (Poiret One, an art-deco
-     face). Offline, it falls back to the system's own. -->
+<!-- Two web fonts, for the wheel's show lettering: Poiret One, a fine
+     art-deco face, for the names and the pill; Limelight, a heavy one, for
+     the countdown and the winner. Offline, they fall back to the system's
+     own. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap">
 <style>
 :root {
   --bg:#f7f6f3; --panel:#fff; --ink:#1b1a17; --muted:#6b6862; --line:#e2ded6;
@@ -15,6 +17,7 @@
   --great-bg:#f6efd8; --warn:#8a4b32; --warn-bg:#f4e5de;
   --chip:#eae6de; --tile:#dcd6c9;
   --deco:"Poiret One","Avenir Next","Futura","Century Gothic",system-ui,sans-serif;
+  --deco-bold:"Limelight","Didot","Bodoni 72",Georgia,serif;
   /* Meter scale, strong to weak, so a percentage reads before it is parsed. */
   --m4:#3f8a5f; --m3:#7d9b45; --m2:#c0952b; --m1:#b3aca1; --hit:#f6e6a8;
   /* The game picker's column: a shade darker than the page, so it reads as
@@ -1403,12 +1406,21 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelcount { position:absolute; left:0; width:100%; top:12.8%; aspect-ratio:1;
   display:flex; align-items:center; justify-content:center;
   pointer-events:none; z-index:2; }
-.wheelcount span { display:inline-block; font-family:var(--deco); font-weight:400;
-  line-height:1; letter-spacing:.04em; color:#e2bb62;
-  text-shadow:0 0 1.5cqw rgba(0,0,0,.9), 0 0 5cqw rgba(226,187,98,.28); }
+.wheelcount span { display:inline-block; font-family:var(--deco-bold); font-weight:400;
+  line-height:1; letter-spacing:.04em; color:#e2bb62; }
+/* Loud: gold leaf from pale to deep, a dark edge to lift it off the wheel,
+   and a glow round that. (Shadows on the letters themselves would paint
+   over a clipped fill, so they are filters on the box.) */
+.wheelcount .num, .wheelcount .word i, .wheelcount .win {
+  background:linear-gradient(180deg, #fff3c9 0%, #f0cf7a 35%, #c8933a 60%, #f3d68a 100%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  -webkit-text-stroke:.25cqw rgba(40,22,6,.9); }
+.wheelcount .num, .wheelcount .word, .wheelcount .win {
+  filter:drop-shadow(0 .5cqw 0 rgba(0,0,0,.9)) drop-shadow(0 0 2.5cqw rgba(0,0,0,.85))
+    drop-shadow(0 0 6cqw rgba(226,187,98,.45)); }
 .wheelcount .num { font-size:40cqw; animation:decocount .72s ease-out both; }
-.wheelcount .word { font-size:11.5cqw; white-space:nowrap; text-transform:uppercase;
-  letter-spacing:.16em; animation:decoword 1.1s ease-out both; }
+.wheelcount .word { font-size:12.5cqw; white-space:nowrap; text-transform:uppercase;
+  letter-spacing:.1em; animation:decoword 1.1s ease-out both; }
 .wheelcount .word i { font-style:normal; display:inline-block; }
 /* A sent spin opened before any click: the browser holds its sound back, so
    one tap — this — lets the sound in and starts the countdown. Upright, in
@@ -1434,18 +1446,18 @@ td.c-add { text-align:right; white-space:nowrap; }
   line-height:1.1; overflow-wrap:anywhere; animation:decowin 2.9s ease-out both; }
 /* In without a bounce: out of a soft blur, the letters drawing together. */
 @keyframes decowin {
-  0% { opacity:0; filter:blur(1.5cqw); letter-spacing:.3em; }
-  18% { opacity:1; filter:blur(0); letter-spacing:.04em; }
+  0% { opacity:0; letter-spacing:.3em; }
+  18% { opacity:1; letter-spacing:.04em; }
   80% { opacity:1; }
   100% { opacity:0; } }
 @keyframes decocount {
-  0% { opacity:0; transform:scale(1.12); filter:blur(1cqw); }
-  25% { opacity:1; transform:scale(1); filter:blur(0); }
+  0% { opacity:0; transform:scale(1.12); }
+  25% { opacity:1; transform:scale(1); }
   80% { opacity:1; }
   100% { opacity:0; transform:scale(.97); } }
 @keyframes decoword {
-  0% { opacity:0; letter-spacing:.45em; filter:blur(1cqw); }
-  30% { opacity:1; letter-spacing:.16em; filter:blur(0); }
+  0% { opacity:0; letter-spacing:.4em; }
+  30% { opacity:1; letter-spacing:.1em; }
   70% { opacity:1; }
   100% { opacity:0; } }
 .wheelbox { position:relative; aspect-ratio:42 / 47; container-type:inline-size;
@@ -3862,6 +3874,18 @@ var wheel = { open: false, rot: 0, psi: 0, entries: [], anim: null,
 // The wheel itself is dark oak, every sector alike, lettered in gold — and
 // the same gold counts down and calls the winner.
 var WHEEL_GOLD = '#e2bb62';
+// The names on it in the fine art-deco face; the canvas only draws a web font
+// once it has loaded, so the wheel is drawn again when it has.
+var WHEEL_FONT = '"Poiret One","Avenir Next","Futura",system-ui,sans-serif';
+// (The countdown's heavy face is fetched now too, so the first "3" is
+// already in it rather than in the fallback.)
+if (document.fonts && document.fonts.load) {
+  document.fonts.load('400 20px "Poiret One"').then(function () {
+    labelFits = {};
+    if (wheel.open) drawWheel();
+  }, function () {});
+  document.fonts.load('400 20px "Limelight"').then(null, function () {});
+}
 
 /* Dark oak, drawn once. The grain runs along x (a wedge's length) and
    everything follows one shared flow — a few slow waves that move with how
@@ -4063,7 +4087,7 @@ function drawWheel() {
     // The type no taller than the sector is wide halfway out, so a crowded
     // wheel gets smaller letters.
     var fs = Math.max(8 * k, Math.min(13 * k, 2 * R * 0.6 * half * 0.42));
-    ctx.font = '700 ' + fs + 'px "Avenir Next","Segoe UI",system-ui,sans-serif';
+    ctx.font = '400 ' + (fs * 1.12).toFixed(1) + 'px ' + WHEEL_FONT;
     // Gold leaf on the oak.
     ctx.fillStyle = WHEEL_GOLD;
     ctx.textAlign = 'right';
@@ -4256,7 +4280,7 @@ function drawTop() {
  *  worked out once per name, size and room, not in every frame of a spin. */
 var labelFits = {}, labelFitCount = 0;
 function fitLabel(ctx, label, room, fs) {
-  var key = fs.toFixed(1) + '|' + Math.round(room) + '|' + label;
+  var key = ctx.font + '|' + Math.round(room) + '|' + label;
   if (labelFits.hasOwnProperty(key)) return labelFits[key];
   if (++labelFitCount > 4000) { labelFits = {}; labelFitCount = 0; }
   var name = label;

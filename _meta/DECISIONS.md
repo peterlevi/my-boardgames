@@ -673,9 +673,12 @@ wavered on their own read as fake, and a per-pixel noise texture read as
 plastic. The lights' shade is lighter than it
 was over the coloured sectors, or nothing of the grain survives. The same
 gold counts down, says "Spinning!" and flashes the winner's name — upright,
-in Poiret One (an art-deco face, the page's one web font, falling back to
-the system's own offline), fading in out of a soft blur rather than
-bouncing. The Tap to spin / Spin again pill is deco capitals on black with
+in Limelight — a heavy art-deco face, filled with a gold-leaf gradient on a
+dark edge and a glow, fading in rather than bouncing (the fine Poiret One
+was too faint for it). The names on the wheel are in Poiret One; the canvas
+only draws a web font once it has loaded, so the wheel is drawn again then.
+Both are the page's only web fonts, fetched as it opens, and fall back to
+the system's own offline. The Tap to spin / Spin again pill is deco capitals on black with
 a thin gold trim, a light running round it in place of a pulse. The oak
 is drawn once per size and sector count and turned whole each frame, so it
 costs one image per frame however many sectors.

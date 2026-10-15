@@ -17,13 +17,17 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+# Pinned rather than ubuntu-latest: that label moves to Ubuntu 26 on
+# 2026-10-19, and the screenshot step installs Chromium with its system
+# packages through Playwright, which may not support a brand-new release on
+# day one. Move up deliberately, once a run on the new image is green.
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: pip
@@ -59,17 +63,17 @@ jobs:
           python3 scripts/screenshot.py --html site/index.html \
             --expand "Yellow & Yangtze" -o site/screenshot-expanded.png
 
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

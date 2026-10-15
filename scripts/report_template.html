@@ -3350,7 +3350,10 @@ function describe() {
    can play it. */
 var FIT_W = { rating: 1.0, played: 2.4, players: 3.0, tags: 1.4, weight: 1.2,
               time: 1.2, ix: 1.0, salad: 1.0, year: 1.0, votes: 0.35 };
-var FIT_TOL = { w: 1.5, tmax: 90, salad: 40, ix: 2, pl: 6, y: 10 };
+// Weight's tolerance is under one band (they are a point wide): at 1.5 a game
+// a whole band too heavy still scored 80% on weight and ranked "Perfect", so
+// asking for "Medium light or lighter" ranked Medium games among the best.
+var FIT_TOL = { w: 0.8, tmax: 90, salad: 40, ix: 2, pl: 6, y: 10 };
 /* What is left of a score when the game cannot seat the player count, and
    when it can but the poll says it should not. */
 var FIT_CANT_PLAY = 0.25;
@@ -3377,8 +3380,11 @@ function ratingFit(g) {
 /** 1 inside the range, falling to 0 `tol` beyond either end. */
 function rangeFit(r, v, tol) {
   if (v === null || v === undefined) return null;
-  if (v >= r.lo && v <= r.hi) return 1;
-  var d = v < r.lo ? r.lo - v : v - r.hi;
+  // In it by the same rule the filter uses: on a scale whose bands meet, the
+  // top of a band belongs to the next one up, so a 2.5 game asked "Medium
+  // light or lighter" is just outside — not a perfect match, as it was.
+  if (inRange(r, v)) return 1;
+  var d = v < r.lo ? r.lo - v : v - r.hi + (r.hiExcl ? 0.05 : 0);
   return Math.max(0, 1 - d / tol);
 }
 function fitScore(g, s, n) {
@@ -7593,7 +7599,8 @@ function vRange(input, scale, label) {
     // it reads as numbers. The unit belongs to the reading, not to each end
     // of it: "12–39%", not "12%–39%".
     var u = scale.unit || '';
-    if (i === 0) return '≤ ' + trim(b.hi) + u;
+    // A top that belongs to the next band up is not in the range: "< 2.5".
+    if (i === 0) return (scale.hiExclusive ? '< ' : '≤ ') + trim(b.hi) + u;
     if (j === n - 1) return '≥ ' + trim(a.lo) + u;
     return trim(a.lo) + '–' + trim(b.hi) + u;
   }

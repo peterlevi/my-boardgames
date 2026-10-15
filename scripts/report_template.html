@@ -1894,13 +1894,15 @@ td.c-add { text-align:right; white-space:nowrap; }
   font-size:.7rem; letter-spacing:.06em; }
 .wheelseed input { flex:1 1 0; width:auto; min-width:0; font:inherit;
   font-size:.9rem; font-weight:700; color:var(--ink); background:var(--panel);
-  border:1px solid var(--line); border-radius:6px; padding:5px 8px; }
+  border:1px solid var(--line); border-radius:6px; padding:5px 10px; }
 .wheelseed input:focus { outline:none; border-color:var(--accent); }
 .wheelseed input:disabled { opacity:.55; cursor:default; }
 .wheelseed .iconbtn:disabled { opacity:.35; cursor:default; }
 /* A sent spin's seed: shown, not offered for editing. */
 .wheelseed input.fixed { background:none; border-color:transparent;
-  padding-left:0; cursor:default; }
+  cursor:default; }
+/* (It keeps its padding: some themes give every field a box, this one too,
+   and text flush against a box's edge looked broken.) */
 /* The link that replays this exact spin. Its row is always there, only
    invisible until there is a link, so the card keeps one height. */
 .wheellink.off { visibility:hidden; }

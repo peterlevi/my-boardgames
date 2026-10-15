@@ -33139,7 +33139,74 @@
     "Not Recommended": 192
    }
   },
-  "ai": null,
+  "ai": {
+   "confidence": "high",
+   "summary": "Players alternate putting paintings up for auction using different auction types (open, one-time-around, sealed bid, fixed-price), and everyone races to read the market: which artists are about to spike in value and which are dead weight. At the end of each of the four rounds the top three selling artists pay out per copy sold, so money won is really about correctly reading what everyone else just signaled by buying.",
+   "praised": [
+    "tight, fast-playing auction puzzle with real psychological tension",
+    "varied auction types keep each round feeling different",
+    "simple rules hiding a lot of strategic depth",
+    "ages extremely well, holds up as a classic decades later"
+   ],
+   "criticised": [
+    "can feel swingy or 'mean' to new players who get caught holding worthless cards",
+    "kingmaking is possible when a player drives up a price they don't care about",
+    "some find the theme thin and the artist art dated",
+    "a bad early read can leave you with little to do for a round"
+   ],
+   "interaction": {
+    "level": "High",
+    "kind": "open auction and reading the market",
+    "detail": "Every auction is public and anyone can buy anyone else's offered painting, so bidding decisions constantly signal information and directly set the market values other players cash in on. The shared state is the painting valuations built from everyone's purchases; your own hand of cards to auction off is private but its worth is entirely determined by the collective market."
+   },
+   "scoring": {
+    "subsystems": [
+     "single auction/valuation economy"
+    ],
+    "sources": [
+     "cash earned selling paintings to other players",
+     "bank payouts when your artist finishes in the top 3 valued that round",
+     "cash spent buying paintings (a cost, not a source)"
+    ],
+    "winning_score": 500,
+    "tally": "mixed",
+    "shape": "single_currency",
+    "ends_by": [
+     "fixed_length",
+     "end_trigger"
+    ],
+    "how_you_win": "After four rounds of auctioning and end-of-round payouts for the top-selling artists, whoever has the most cash wins."
+   },
+   "similar": [
+    {
+     "name": "For Sale",
+     "id": "172"
+    },
+    {
+     "name": "Ra",
+     "id": null
+    },
+    {
+     "name": "High Society",
+     "id": "220"
+    },
+    {
+     "name": "Traders of Genoa",
+     "id": "1345"
+    },
+    {
+     "name": "Chinatown",
+     "id": "47"
+    }
+   ],
+   "teachers": [
+    "Watch It Played",
+    "Rahdo Runs Through",
+    "Gaming Rules!"
+   ],
+   "_fingerprint": "3575dc1ab7820b35",
+   "_name": "Modern Art"
+  },
   "plays": 0,
   "my_rating": null,
   "edited": "2026-10-15",
@@ -39516,7 +39583,76 @@
     "Not Recommended": 13
    }
   },
-  "ai": null,
+  "ai": {
+   "confidence": "medium",
+   "summary": "This is an 18xx-style train/stock game where players float small companies, lay track across a map that's reshuffled fresh each game, and run trains for revenue that either gets paid out as dividends or reinvested, with minor companies eventually merging into bigger ones. It's praised in 18xx circles for being approachable and replayable thanks to the modular, randomized map while keeping the genre's core stock-and-operate tension intact.",
+   "praised": [
+    "modular map setup makes every game geographically different, unusual for the genre",
+    "distinct persistent company abilities add identity through the minor-to-major merge",
+    "scales and reconfigures well via multiple included game modes",
+    "a relatively accessible on-ramp into 18xx-style play"
+   ],
+   "criticised": [
+    "still carries 18xx's heavy rules overhead and long playtime for newcomers",
+    "player elimination of busted companies/investors can sting in a long game",
+    "merger mechanics add bookkeeping that can slow turns",
+    "niche appeal mostly to people already into train/stock games"
+   ],
+   "interaction": {
+    "level": "High",
+    "kind": "stock market competition and route/track contention",
+    "detail": "Players compete for the same track routes and lucrative connections on a shared map, and also buy and sell shares in each other's companies, so your company's fortunes are directly affected by rivals' investment and building decisions. The map and the stock market are fully shared state; each company's treasury and train roster is its own sub-board within that shared system."
+   },
+   "scoring": {
+    "subsystems": [
+     "stock market investment/share value",
+     "company operations (track-building and train revenue)"
+    ],
+    "sources": [
+     "personal cash on hand",
+     "value of shares held in companies",
+     "dividends paid out from company revenue",
+     "company treasury reinvestment affecting future share price"
+    ],
+    "winning_score": 2000,
+    "tally": "mixed",
+    "shape": "sum",
+    "ends_by": [
+     "end_trigger",
+     "fixed_length"
+    ],
+    "how_you_win": "When the game-ending trigger (such as the bank running low on money) is reached, whoever has the highest total net worth of cash plus share value wins."
+   },
+   "similar": [
+    {
+     "name": "1830",
+     "id": "421"
+    },
+    {
+     "name": "1846",
+     "id": null
+    },
+    {
+     "name": "1889: Shikoku Railways",
+     "id": null
+    },
+    {
+     "name": "Irish Gauge",
+     "id": "161882"
+    },
+    {
+     "name": "Age of Steam",
+     "id": "4098"
+    }
+   ],
+   "teachers": [
+    "Watch It Played",
+    "Heavy Cardboard",
+    "Rahdo Runs Through"
+   ],
+   "_fingerprint": "474a8014dde0f407",
+   "_name": "Railways of the Lost Atlas"
+  },
   "plays": 0,
   "my_rating": null,
   "edited": "2026-10-15",

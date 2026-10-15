@@ -1,0 +1,53 @@
+{
+ "confidence": "high",
+ "summary": "Players alternate putting paintings up for auction using different auction types (open, one-time-around, sealed bid, fixed-price), and everyone races to read the market: which artists are about to spike in value and which are dead weight. At the end of each of the four rounds the top three selling artists pay out per copy sold, so money won is really about correctly reading what everyone else just signaled by buying.",
+ "praised": [
+  "tight, fast-playing auction puzzle with real psychological tension",
+  "varied auction types keep each round feeling different",
+  "simple rules hiding a lot of strategic depth",
+  "ages extremely well, holds up as a classic decades later"
+ ],
+ "criticised": [
+  "can feel swingy or 'mean' to new players who get caught holding worthless cards",
+  "kingmaking is possible when a player drives up a price they don't care about",
+  "some find the theme thin and the artist art dated",
+  "a bad early read can leave you with little to do for a round"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "open auction and reading the market",
+  "detail": "Every auction is public and anyone can buy anyone else's offered painting, so bidding decisions constantly signal information and directly set the market values other players cash in on. The shared state is the painting valuations built from everyone's purchases; your own hand of cards to auction off is private but its worth is entirely determined by the collective market."
+ },
+ "scoring": {
+  "subsystems": [
+   "single auction/valuation economy"
+  ],
+  "sources": [
+   "cash earned selling paintings to other players",
+   "bank payouts when your artist finishes in the top 3 valued that round",
+   "cash spent buying paintings (a cost, not a source)"
+  ],
+  "winning_score": 500,
+  "tally": "mixed",
+  "shape": "single_currency",
+  "ends_by": [
+   "fixed_length",
+   "end_trigger"
+  ],
+  "how_you_win": "After four rounds of auctioning and end-of-round payouts for the top-selling artists, whoever has the most cash wins."
+ },
+ "similar": [
+  "For Sale",
+  "Ra",
+  "High Society",
+  "Traders of Genoa",
+  "Chinatown"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Gaming Rules!"
+ ],
+ "_fingerprint": "3575dc1ab7820b35",
+ "_name": "Modern Art"
+}

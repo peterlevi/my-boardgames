@@ -1,0 +1,55 @@
+{
+ "confidence": "medium",
+ "summary": "This is an 18xx-style train/stock game where players float small companies, lay track across a map that's reshuffled fresh each game, and run trains for revenue that either gets paid out as dividends or reinvested, with minor companies eventually merging into bigger ones. It's praised in 18xx circles for being approachable and replayable thanks to the modular, randomized map while keeping the genre's core stock-and-operate tension intact.",
+ "praised": [
+  "modular map setup makes every game geographically different, unusual for the genre",
+  "distinct persistent company abilities add identity through the minor-to-major merge",
+  "scales and reconfigures well via multiple included game modes",
+  "a relatively accessible on-ramp into 18xx-style play"
+ ],
+ "criticised": [
+  "still carries 18xx's heavy rules overhead and long playtime for newcomers",
+  "player elimination of busted companies/investors can sting in a long game",
+  "merger mechanics add bookkeeping that can slow turns",
+  "niche appeal mostly to people already into train/stock games"
+ ],
+ "interaction": {
+  "level": "High",
+  "kind": "stock market competition and route/track contention",
+  "detail": "Players compete for the same track routes and lucrative connections on a shared map, and also buy and sell shares in each other's companies, so your company's fortunes are directly affected by rivals' investment and building decisions. The map and the stock market are fully shared state; each company's treasury and train roster is its own sub-board within that shared system."
+ },
+ "scoring": {
+  "subsystems": [
+   "stock market investment/share value",
+   "company operations (track-building and train revenue)"
+  ],
+  "sources": [
+   "personal cash on hand",
+   "value of shares held in companies",
+   "dividends paid out from company revenue",
+   "company treasury reinvestment affecting future share price"
+  ],
+  "winning_score": 2000,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "When the game-ending trigger (such as the bank running low on money) is reached, whoever has the highest total net worth of cash plus share value wins."
+ },
+ "similar": [
+  "1830",
+  "1846",
+  "1889: Shikoku Railways",
+  "Irish Gauge",
+  "Age of Steam"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Heavy Cardboard",
+  "Rahdo Runs Through"
+ ],
+ "_fingerprint": "474a8014dde0f407",
+ "_name": "Railways of the Lost Atlas"
+}

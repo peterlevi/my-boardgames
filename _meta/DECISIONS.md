@@ -676,8 +676,8 @@ was over the coloured sectors, or nothing of the grain survives. The same
 gold counts down, says "Spinning!" and flashes the winner's name — upright,
 in Limelight — a heavy art-deco face, filled with a gold-leaf gradient on a
 dark edge and a glow, fading in rather than bouncing (the fine Poiret One,
-tried first, was too faint). Limelight is the lettering of everything on
-the wheel — its names, the pill, the countdown, the winner — but not the
+tried first, was too faint). Limelight is the lettering of the whole
+modal — the wheel's names, the pill, the countdown, the winner, and the
 controls under it. The canvas only draws a web font once it has loaded, so
 the wheel is drawn again then. It is the page's only web font, fetched as it
 opens, falling back to the system's own offline. The Tap to spin / Spin again pill is capitals on black with

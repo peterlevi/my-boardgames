@@ -110,3 +110,15 @@ run is simulated beforehand, so playback speed cannot change the result — and
 a whole spin to its winner takes about two seconds. For checks that need no
 animation at all, `spinWheel(seed, true)` prepares a spin without playing it
 (`wheel.prepared.run` / `.win`), and `wheelSim` runs the physics directly.
+
+**Generating wheel backdrops locally.** Painted backdrops are generated on
+the Mac with Ollama's image model FLUX.2 [klein] 9B (`ollama pull
+x/flux2-klein:9b`, ~12 GB, macOS only for now) — not Gemini, and not a
+cloud service. `POST http://localhost:11434/api/generate` with
+`{"model": "x/flux2-klein:9b", "stream": false, "width": 768, "height": 1024,
+"seed": N, "prompt": "..."}` returns the PNG base64 in `"image"`, in about
+40 s. Then resize to 720 wide and save as `scripts/wheel_scenes/<id>.webp`
+(quality ~80). Prompting: describe the layout in words ("the upper middle is
+open sky, people along the left and right sides, the lowest part a plain
+calm meadow") — asked for "a large circle in the centre", it drew one.
+Describe the style rather than naming an artist.

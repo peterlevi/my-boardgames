@@ -771,3 +771,39 @@ in every theme so it stands out on any of them.
 What a theme never touches: the draw, the throws, the physics, the timing,
 the ending — a seed is the same spin in every theme, checked by preparing
 one seed in all three and comparing winner, duration and final angle.
+
+### Scene themes, inspired by games
+
+Beyond the built-in looks, a theme can be a scene: `scripts/wheel_scenes/<id>.json`
+(the same data as a built-in theme, plus its CSS variables, its Google font
+and a fallback colour) and a backdrop — `<id>.svg`, drawn by hand, or
+`<id>.webp`, a generated painting, preferred when both exist. The build
+inlines each backdrop as a data URI (`wheel_scenes()` in report.py), so the
+report still travels as one file; the paintings are ~40–110 KB each. Each
+theme's font is fetched only when it is chosen (`wheelFont`). A spec with a
+built-in's id replaces it — the new Casino replaced the first, too-plain one.
+
+Thirteen are inspired by games in the collection — Food Chain, Great
+Zimbabwe, Lancashire (Brass), Ra, Scythe, Dune, Azul, El Dorado, West
+Kingdom, Root, Harmonies, Speakeasy, Agricola — evoking each game's art
+style and palette without copying a cover, logo, title lettering or
+character. Vector suits the graphic styles (Ra's ornament, Azul's tiles,
+Lancashire's skyline); the painted styles (Scythe's oil painting, Root's
+storybook woodland, West Kingdom's animated caricature, Great Zimbabwe's
+golden-hour stone, Harmonies' bright geometric landscape, Food Chain's 50s
+advertising with its smiling people) never came close in vector, and are
+generated images, prompted for the style and palette and for a layout that
+keeps the centre clear for the wheel and the bottom calm for the controls.
+
+Readability over any backdrop: a scrim of the theme's own tone
+(`--scrim-rgb`) rises behind the answer and the controls, the result line
+gets a halo, fields and buttons sit on solid-enough fills, and the chips
+and icons up top have a blurred backing. Button and pill lettering is
+trimmed to the cap height (`text-box: trim-both cap alphabetic`), since
+capitals sat high in a line box that keeps room for descenders.
+
+Each theme also picks how its pill moves (pulse, bob, swing, sway, wobble,
+heartbeat, breathe, flicker, glint, running trim) and how its countdown and
+winner arrive (fade, drop, stamp, flip, rise), so the themes do not all
+blink the same way. The theme picker is a grid of square thumbnails — the
+backdrop with a little wheel in the theme's colours — over their names.

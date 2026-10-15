@@ -3,12 +3,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Board game collection</title>
-<!-- Web fonts for the wheel's themes: Limelight (Stage), Orbitron (Neon),
-     Playfair Display (Casino), Jost (Nordic), Comfortaa (Ocean), Pacifico
-     (Diner). Offline, they fall back to the system's own. -->
+<!-- The wheel's default theme's web font, Limelight, ready before its
+     first countdown; the other themes fetch theirs when chosen
+     (wheelFont). Offline, they fall back to the system's own. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Limelight&family=Orbitron:wght@700&family=Playfair+Display:wght@700&family=Jost:wght@400;500&family=Comfortaa:wght@700&family=Pacifico&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Limelight&display=swap">
 <style>
 :root {
   --bg:#f7f6f3; --panel:#fff; --ink:#1b1a17; --muted:#6b6862; --line:#e2ded6;
@@ -1524,6 +1524,151 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelpop[data-theme] .wheelcard::before, .wheelpop[data-theme] .wheelcard::after {
   pointer-events:none; z-index:0; }
 
+/* ---- Scene themes (scripts/wheel_scenes): the illustration covers the
+   card, over the theme's fallback colour; everything else comes from its
+   variables. On a light card, the controls take the --lc-* colours. */
+.wheelpop[data-scene=on] .wheelcard {
+  background:var(--scene) center / cover no-repeat, var(--card-bg, #1b1a17);
+  overflow:hidden; isolation:isolate; border:1px solid rgba(0,0,0,.25); }
+.wheelpop[data-scene=on][data-dark=off] .wheelcard { color:var(--lc-text, var(--ink)); }
+/* Readable over any picture: a soft scrim of the theme's own tone rising
+   behind the answer and the controls (--scrim-rgb to tint it), the result
+   lettered with a halo, and the chips and icons up top on a backing. The
+   scrim is above the picture and below everything on it. */
+.wheelpop[data-scene=on] .wheelcard::after { content:""; position:absolute;
+  left:0; right:0; bottom:0; height:44%; z-index:0; pointer-events:none;
+  background:linear-gradient(rgba(var(--scrim-rgb, 12, 9, 7), 0),
+    rgba(var(--scrim-rgb, 12, 9, 7), .62) 30%, rgba(var(--scrim-rgb, 12, 9, 7), .8)); }
+.wheelpop[data-scene=on][data-dark=off] .wheelcard::after {
+  background:linear-gradient(rgba(var(--scrim-rgb, 255, 251, 243), 0),
+    rgba(var(--scrim-rgb, 255, 251, 243), .7) 30%, rgba(var(--scrim-rgb, 255, 251, 243), .86)); }
+.wheelpop[data-scene=on][data-dark=on] .wheelresult b,
+.wheelpop[data-scene=on][data-dark=on] .wheelresult .wlabel,
+.wheelpop[data-scene=on][data-dark=on] .wheelseed label,
+.wheelpop[data-scene=on][data-dark=on] .wheellink button.link {
+  text-shadow:0 1px 2px rgba(0,0,0,.9), 0 0 10px rgba(0,0,0,.6); }
+.wheelpop[data-scene=on][data-dark=off] .wheelresult b,
+.wheelpop[data-scene=on][data-dark=off] .wheelresult .wlabel,
+.wheelpop[data-scene=on][data-dark=off] .wheelseed label,
+.wheelpop[data-scene=on][data-dark=off] .wheellink button.link {
+  text-shadow:0 0 2px rgba(255,255,255,.95), 0 0 10px rgba(255,255,255,.8); }
+.wheelpop[data-scene=on][data-dark=on] .wheelseed input,
+.wheelpop[data-scene=on][data-dark=on] .wheellink input {
+  background:rgba(8,6,4,.62); }
+.wheelpop[data-scene=on][data-dark=on] .wheelbtns .trayclear { background:rgba(8,6,4,.6); }
+.wheelpop[data-scene=on] .wheeltheme,
+.wheelpop[data-scene=on] .wheelsnd, .wheelpop[data-scene=on] .wheelx {
+  -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px); }
+.wheelpop[data-scene=on][data-dark=on] .wheeltheme,
+.wheelpop[data-scene=on][data-dark=on] .wheelsnd,
+.wheelpop[data-scene=on][data-dark=on] .wheelx { background:rgba(8,6,4,.55); border-radius:999px; }
+.wheelpop[data-scene=on][data-dark=off] .wheeltheme,
+.wheelpop[data-scene=on][data-dark=off] .wheelsnd,
+.wheelpop[data-scene=on][data-dark=off] .wheelx { background:rgba(255,252,245,.72); border-radius:999px; }
+.wheelpop[data-scene=on][data-dark=off] .wheelresult .wlabel,
+.wheelpop[data-scene=on][data-dark=off] .wheelseed label { color:var(--lc-accent, var(--muted)); }
+.wheelpop[data-scene=on][data-dark=off] .wheelresult b { color:var(--lc-text, var(--ink)); }
+.wheelpop[data-scene=on][data-dark=off] .wheelseed input,
+.wheelpop[data-scene=on][data-dark=off] .wheellink input {
+  background:var(--lc-field-bg, rgba(255,255,255,.75));
+  border-color:var(--lc-field-edge, var(--line)); color:var(--lc-text, var(--ink)); }
+.wheelpop[data-scene=on][data-dark=off] .wheellink button.link { color:var(--lc-accent, var(--accent)); }
+.wheelpop[data-scene=on][data-dark=off] .wheelbtns .trayshow {
+  background:var(--lc-btn-bg, var(--accent)); color:var(--lc-btn-ink, #fff);
+  border-color:var(--lc-btn-edge, var(--lc-btn-bg, var(--accent))); }
+.wheelpop[data-scene=on][data-dark=off] .wheelbtns .trayclear {
+  background:var(--lc-field-bg, rgba(255,255,255,.75));
+  border-color:var(--lc-btn-edge, var(--line)); color:var(--lc-text, var(--ink)); }
+.wheelpop[data-scene=on][data-dark=off] .wheelx,
+.wheelpop[data-scene=on][data-dark=off] .wheelsnd,
+.wheelpop[data-scene=on][data-dark=off] .wheeltheme { color:var(--lc-text, var(--ink)); }
+
+/* ---- How a clean-lettered theme's pill moves (data-pill) and its
+   countdown and winner arrive (data-show) — picked per theme, so no two
+   neighbours in the list behave alike. All keep the pill's centring. */
+.wheelpop[data-letters=clean][data-pill=pulse] .wheeltap { animation:pillpulse 1.2s ease-in-out infinite; }
+.wheelpop[data-letters=clean][data-pill=bob] .wheeltap { animation:pillbob 2.4s ease-in-out infinite; }
+.wheelpop[data-letters=clean][data-pill=swing] .wheeltap { transform-origin:50% -60%;
+  animation:pillswing 2s ease-in-out infinite; }
+.wheelpop[data-letters=clean][data-pill=sway] .wheeltap { animation:pillsway 3.2s ease-in-out infinite; }
+.wheelpop[data-letters=clean][data-pill=wobble] .wheeltap { animation:pillwobble 2.2s ease-in-out infinite; }
+.wheelpop[data-letters=clean][data-pill=heartbeat] .wheeltap { animation:pillbeat 1.5s ease-in-out infinite; }
+.wheelpop[data-letters=clean][data-pill=breathe] .wheeltap { animation:pillbreathe 3.6s ease-in-out infinite; }
+.wheelpop[data-letters=clean][data-pill=flicker] .wheeltap { animation:pillflicker 4s linear infinite; }
+.wheelpop[data-letters=clean][data-pill=glint] .wheeltap { overflow:hidden;
+  animation:pillglow 2.4s ease-in-out infinite; }
+.wheelpop[data-letters=clean][data-pill=glint] .wheeltap::after { content:"";
+  position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+  background:linear-gradient(105deg, transparent 35%, rgba(255,255,255,.55) 48%,
+    rgba(255,255,255,.1) 56%, transparent 62%) 0 0 / 260% 100% no-repeat;
+  animation:pillglint 2.8s ease-in-out infinite; }
+.wheelpop[data-letters=clean][data-pill=trim] .wheeltap {
+  border:1.5px solid transparent;
+  background:linear-gradient(var(--pill-bg), var(--pill-bg)) padding-box,
+    conic-gradient(from var(--trim), var(--pill-edge) 0deg, var(--pill-edge) 250deg,
+      #fff 300deg, var(--pill-edge) 350deg) border-box;
+  animation:trimrun 2.6s linear infinite; }
+@keyframes pillpulse { 0%, 100% { transform:translate(-50%, -50%) scale(1); }
+  50% { transform:translate(-50%, -50%) scale(1.07); } }
+@keyframes pillbob { 0%, 100% { transform:translate(-50%, -50%); }
+  50% { transform:translate(-50%, -62%); } }
+@keyframes pillswing { 0%, 100% { transform:translate(-50%, -50%) rotate(-5deg); }
+  50% { transform:translate(-50%, -50%) rotate(5deg); } }
+@keyframes pillsway { 0%, 100% { transform:translate(-53%, -50%) rotate(-1.5deg); }
+  50% { transform:translate(-47%, -50%) rotate(1.5deg); } }
+@keyframes pillwobble { 0%, 60%, 100% { transform:translate(-50%, -50%) scale(1, 1); }
+  10% { transform:translate(-50%, -50%) scale(1.12, .9); }
+  20% { transform:translate(-50%, -50%) scale(.92, 1.1); }
+  30% { transform:translate(-50%, -50%) scale(1.05, .96); }
+  42% { transform:translate(-50%, -50%) scale(.98, 1.02); } }
+@keyframes pillbeat { 0%, 40%, 100% { transform:translate(-50%, -50%) scale(1); }
+  10% { transform:translate(-50%, -50%) scale(1.1); }
+  20% { transform:translate(-50%, -50%) scale(1.02); }
+  30% { transform:translate(-50%, -50%) scale(1.08); } }
+@keyframes pillbreathe { 0%, 100% { transform:translate(-50%, -50%) scale(1); opacity:.92; }
+  50% { transform:translate(-50%, -50%) scale(1.035); opacity:1; } }
+@keyframes pillflicker { 0%, 100% { opacity:1; filter:none; }
+  41% { opacity:1; } 42% { opacity:.55; } 43% { opacity:1; } 45% { opacity:.7; }
+  46% { opacity:1; filter:drop-shadow(0 0 2cqw var(--pill-glow)); }
+  80% { filter:drop-shadow(0 0 1cqw var(--pill-glow)); } }
+@keyframes pillglint { 0%, 30% { background-position:130% 0; }
+  70%, 100% { background-position:-30% 0; } }
+/* Entrances for the countdown and the winner. */
+.wheelpop[data-letters=clean][data-show=drop] .wheelcount .num { animation:showdrop .72s cubic-bezier(.2,1.3,.4,1) both; }
+.wheelpop[data-letters=clean][data-show=drop] .wheelcount .word { animation:showdrop 1.1s cubic-bezier(.2,1.3,.4,1) both; }
+.wheelpop[data-letters=clean][data-show=drop] .wheelcount .win { animation:showdropwin 2.9s cubic-bezier(.2,1.3,.4,1) both; }
+.wheelpop[data-letters=clean][data-show=stamp] .wheelcount .num { animation:showstamp .72s ease-out both; }
+.wheelpop[data-letters=clean][data-show=stamp] .wheelcount .word { animation:showstamp 1.1s ease-out both; }
+.wheelpop[data-letters=clean][data-show=stamp] .wheelcount .win { animation:showstampwin 2.9s ease-out both; }
+.wheelpop[data-letters=clean][data-show=flip] .wheelcount .num { animation:showflip .72s ease-out both; }
+.wheelpop[data-letters=clean][data-show=flip] .wheelcount .word { animation:showflip 1.1s ease-out both; }
+.wheelpop[data-letters=clean][data-show=flip] .wheelcount .win { animation:showflipwin 2.9s ease-out both; }
+.wheelpop[data-letters=clean][data-show=rise] .wheelcount .num { animation:showrise .72s ease-out both; }
+.wheelpop[data-letters=clean][data-show=rise] .wheelcount .word { animation:showrise 1.1s ease-out both; }
+.wheelpop[data-letters=clean][data-show=rise] .wheelcount .win { animation:showrisewin 2.9s ease-out both; }
+@keyframes showdrop { 0% { opacity:0; transform:translateY(-60%); }
+  30% { opacity:1; transform:translateY(0); } 80% { opacity:1; } 100% { opacity:0; } }
+@keyframes showdropwin { 0% { opacity:0; transform:translateY(-40%); }
+  12% { opacity:1; transform:translateY(0); } 85% { opacity:1; } 100% { opacity:0; } }
+@keyframes showstamp { 0% { opacity:0; transform:scale(1.8); }
+  22% { opacity:1; transform:scale(.94); } 34% { transform:scale(1); }
+  80% { opacity:1; } 100% { opacity:0; } }
+@keyframes showstampwin { 0% { opacity:0; transform:scale(1.8); }
+  9% { opacity:1; transform:scale(.95); } 14% { transform:scale(1); }
+  85% { opacity:1; } 100% { opacity:0; } }
+@keyframes showflip { 0% { opacity:0; transform:perspective(60cqw) rotateX(-85deg); }
+  30% { opacity:1; transform:perspective(60cqw) rotateX(0); } 80% { opacity:1; }
+  100% { opacity:0; transform:perspective(60cqw) rotateX(60deg); } }
+@keyframes showflipwin { 0% { opacity:0; transform:perspective(60cqw) rotateY(-80deg); }
+  14% { opacity:1; transform:perspective(60cqw) rotateY(0); } 85% { opacity:1; }
+  100% { opacity:0; } }
+@keyframes showrise { 0% { opacity:0; transform:translateY(25%); filter:blur(1cqw); }
+  30% { opacity:1; transform:translateY(0); filter:blur(0); } 80% { opacity:1; }
+  100% { opacity:0; transform:translateY(-15%); } }
+@keyframes showrisewin { 0% { opacity:0; transform:translateY(20%); filter:blur(1cqw); }
+  14% { opacity:1; transform:translateY(0); filter:blur(0); } 85% { opacity:1; }
+  100% { opacity:0; } }
+
 /* ---- Neon: synthwave. A striped sunset sun behind the wheel, a glowing
    grid running towards it, violet-black; cyan neon and hot pink. */
 .wheelpop[data-theme=neon] {
@@ -1557,37 +1702,9 @@ td.c-add { text-align:right; white-space:nowrap; }
   background:linear-gradient(rgba(5,1,13,1), rgba(5,1,13,0) 35%),
     repeating-linear-gradient(90deg, rgba(255,43,214,.75) 0 2px, transparent 2px 64px),
     repeating-linear-gradient(0deg, rgba(0,240,255,.6) 0 2px, transparent 2px 40px);
-  transform:perspective(220px) rotateX(58deg); transform-origin:50% 100%;
-  animation:gridrun 1.2s linear infinite; }
-@keyframes gridrun { from { background-position:0 0, 0 0, 0 0; }
-  to { background-position:0 0, 0 0, 0 40px; } }
-
-/* ---- Casino: a roulette table. Green felt with its nap, a walnut and gold
-   frame, a gold-printed arc behind the controls; ivory serif, chrome. */
-.wheelpop[data-theme=casino] {
-  --show-font:"Playfair Display",Georgia,serif; --show-weight:700; --show-track:.01em;
-  --show-glow:0 .7cqw 0 rgba(0,0,0,.6), 0 0 4cqw rgba(0,0,0,.65);
-  --pill-bg:#0d0d0d; --pill-ink:#f6ead0; --pill-edge:#d4af37; --pill-glow:#d4af37;
-  --ui-font:"Playfair Display",Georgia,serif;
-  --sc-text:#f6ead0; --sc-icon:#eadcb5; --sc-accent:#e5c35a; --sc-accent2:#f3d77e;
-  --sc-muted:#d3dccd; --sc-glow:rgba(229,195,90,.35);
-  --sc-btn-a:#c4161c; --sc-btn-b:#7a0b10; --sc-btn-edge:#e5c35a;
-  --shade-rgb:2, 18, 10; --pool-a:255, 236, 190; --pool-b:255, 248, 225;
-  --halo:rgba(229,195,90,.25); }
-.wheelpop[data-theme=casino] .wheelcard {
-  background:radial-gradient(ellipse 90% 70% at 50% 40%, #217e50 0%, #145f3b 45%,
-    #0b3d26 80%, #062517 100%);
-  border:1px solid #062517;
-  box-shadow:0 24px 80px rgba(0,0,0,.6), inset 0 0 0 7px #3b2412,
-    inset 0 0 0 9px #c9a24a, inset 0 0 70px rgba(0,0,0,.55); }
-.wheelpop[data-theme=casino] .wheelcard::before { content:""; position:absolute;
-  inset:0; opacity:.6;
-  background:repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0 1px, transparent 1px 3px),
-    repeating-linear-gradient(-45deg, rgba(0,0,0,.06) 0 1px, transparent 1px 3px); }
-.wheelpop[data-theme=casino] .wheelcard::after { content:""; position:absolute;
-  left:7%; right:7%; bottom:12%; height:28%;
-  border:2px solid rgba(229,195,90,.38); border-bottom:none;
-  border-radius:50% 50% 0 0 / 100% 100% 0 0; }
+  transform:perspective(220px) rotateX(58deg); transform-origin:50% 100%; }
+/* (Still: a grid running towards you shimmered and flickered in the
+   perspective, its fine lines aliasing frame to frame.) */
 
 /* ---- Nordic: paper, two soft shapes of sage and clay, charcoal; quiet. */
 .wheelpop[data-theme=nordic] {
@@ -1674,18 +1791,54 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelpop[data-theme=diner] .wheelbtns .trayclear { background:#fff;
   border-color:#1d3557; color:#1d3557; }
 
-/* The theme list, top left beside the sound: the theme's name, in small
-   capitals, in a pill with a small caret; it opens the list. */
-.wheeltheme { position:absolute; top:12px; left:46px; font:inherit;
+/* Lettering optically centred in its pill or button: a line box keeps room
+   for descenders that capitals never use, so caps sat high. Trimmed to the
+   cap height and the baseline instead, with the padding grown to match.
+   (Browsers without text-box keep the old, slightly high look.) */
+.wheelcard .wheeltap, .wheelcard .wheeltheme .tname, .wheelcard .wheelbtns button {
+  text-box:trim-both cap alphabetic; }
+@supports (text-box:trim-both cap alphabetic) {
+  .wheelcard .wheeltap { padding-top:4.4cqw; padding-bottom:4.4cqw; }
+  .wheelcard .wheelbtns button { padding-top:.95em; padding-bottom:.95em; }
+  .wheelcard .wheeltheme { padding-top:5px; padding-bottom:5px; }
+}
+/* The theme list, top left beside the sound: the theme's thumbnail and
+   name in a small pill; it opens a grid of them all. */
+.wheelthemes { position:absolute; top:9px; left:44px; z-index:8; }
+.wheeltheme { display:flex; align-items:center; gap:6px; font:inherit;
   font-size:.66rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em;
-  color:inherit; opacity:.75; cursor:pointer; -webkit-appearance:none; appearance:none;
-  border:1px solid currentColor; border-radius:999px; padding:3px 22px 3px 9px;
-  background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%23888'/%3E%3C/svg%3E") no-repeat right 8px center; }
-.wheeltheme option { color:#1b1a17; background:#fff; text-transform:none; }
+  color:inherit; opacity:.85; cursor:pointer; background:rgba(0,0,0,.18);
+  border:1px solid currentColor; border-radius:999px; padding:2px 10px 2px 3px; }
+.wheeltheme .tthumb { width:20px; height:20px; border-radius:50%; }
+.wheeltheme .tthumb i { width:12px; height:12px; border-width:1px; }
+.tthumb { position:relative; display:flex; align-items:center; justify-content:center;
+  overflow:hidden; flex:none; box-shadow:inset 0 0 0 1px rgba(0,0,0,.15); }
+.tthumb i { display:block; border-radius:50%; border:2px solid;
+  box-shadow:0 2px 6px rgba(0,0,0,.45); }
+.wheelthemelist { position:absolute; top:calc(100% + 6px); left:0;
+  display:grid; grid-template-columns:repeat(4, 84px); gap:8px; padding:10px;
+  max-height:min(62vh, 470px); overflow:auto; border-radius:12px;
+  background:rgba(18,15,12,.96); border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 18px 50px rgba(0,0,0,.55); }
+.wheelthemelist[hidden] { display:none; }
+.wheelthemelist button { display:flex; flex-direction:column; align-items:center; gap:5px;
+  padding:4px; border:1px solid transparent; border-radius:9px; background:none;
+  color:#efe7da; font:inherit; font-family:"Avenir Next","Segoe UI",system-ui,sans-serif;
+  font-size:.68rem; font-weight:600; cursor:pointer;
+  text-align:center; line-height:1.15; text-transform:none; letter-spacing:0; }
+.wheelthemelist button:hover { background:rgba(255,255,255,.08); }
+.wheelthemelist button[aria-selected="true"] { border-color:#e2bb62;
+  background:rgba(226,187,98,.12); }
+.wheelthemelist .tthumb { width:72px; height:72px; border-radius:8px; }
+.wheelthemelist .tthumb i { width:40px; height:40px; }
+@media (max-width:700px) {
+  .wheelthemes { top:9px; left:50px; }
+  .wheelthemelist { grid-template-columns:repeat(3, 84px); }
+}
 .wheeltheme:hover { opacity:1; }
 .wheeltheme:disabled { opacity:.3; cursor:default; }
 .wheelpop[data-dark=on] .wheeltheme { color:var(--sc-icon, #e9d8b4); }
-@media (max-width:700px) { .wheeltheme { top:13px; left:52px; } }
+
 .wheelpop[data-letters=deco] .wheelcount .win { max-width:92%; text-align:center; white-space:normal;
   line-height:1.1; overflow-wrap:anywhere; animation:decowin 2.9s ease-out both; }
 /* In without a bounce: out of a soft blur, the letters drawing together. */
@@ -1787,7 +1940,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelpop[data-letters=deco] .wheelcard, .wheelpop[data-letters=deco] .wheelcard button,
 .wheelpop[data-letters=deco] .wheelcard input { font-family:var(--deco); }
 .wheelpop[data-letters=deco] .wheelcard b { font-weight:400; }
-.wheelcard > :not(.stage):not(.lights):not(.wheelx):not(.wheelsnd):not(.wheelbox):not(.wheeltheme) {
+.wheelcard > :not(.stage):not(.lights):not(.wheelx):not(.wheelsnd):not(.wheelbox):not(.wheelthemes) {
   position:relative; z-index:3; }
 /* The wheel behind the curtains and the arch (.stage.front), so zoomed in
    it disappears behind them as a wheel on a stage would. */
@@ -1797,7 +1950,7 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelcard.zoomed .wheelbox { overflow:hidden; }
 .wheelzoom { position:absolute; inset:0; transform-origin:0 0;
   transition:transform 1.4s cubic-bezier(.45,0,.2,1); }
-.wheelcard .wheelx, .wheelcard .wheelsnd, .wheelcard .wheeltheme { z-index:5; }
+.wheelcard .wheelx, .wheelcard .wheelsnd { z-index:5; }
 .wheelpop[data-dark=on] .wheelcard .wheelx, .wheelpop[data-dark=on] .wheelcard .wheelsnd { color:var(--sc-icon, #e9d8b4); }
 .wheelpop[data-dark=on] .wheelcard .wheelx:hover, .wheelpop[data-dark=on] .wheelcard .wheelsnd:hover { color:#fff;
   background:rgba(255,255,255,.08); }
@@ -2525,8 +2678,12 @@ point-salad columns are derived locally and are opinions, not BGG data.</footer>
     </div>
     <button type="button" class="iconbtn wheelx" id="wheelclose"
       title="Close" aria-label="Close the wheel">&times;</button>
-    <select class="wheeltheme" id="wheeltheme" title="The wheel's look"
-      aria-label="The wheel's look"></select>
+    <div class="wheelthemes" id="wheelthemes">
+      <button type="button" class="wheeltheme" id="wheeltheme" aria-haspopup="listbox"
+        aria-expanded="false" title="The wheel's look"></button>
+      <div class="wheelthemelist" id="wheelthemelist" role="listbox"
+        aria-label="The wheel's look" hidden></div>
+    </div>
     <button type="button" class="iconbtn wheelsnd" id="wheelsnd"
       aria-pressed="true"><svg viewBox="0 0 16 16" width="18" height="18"
         aria-hidden="true"><path fill="currentColor"
@@ -4205,7 +4362,14 @@ var WHEEL_METALS = {
   gilt: ['#f6dc8e', '#c9973f', '#7a5418'],
   chrome: ['#ffffff', '#b4bac4', '#4a505a'],
   pearl: ['#ffffff', '#e4ebf2', '#7f8c99'],
-  aqua: ['#d8f6ff', '#4fa3c7', '#0b3954']
+  aqua: ['#d8f6ff', '#4fa3c7', '#0b3954'],
+  copper: ['#ffd9c2', '#c8734a', '#5a2a14'],
+  iron: ['#d6d6d6', '#6c6f74', '#232528'],
+  bronze: ['#f3d9a4', '#a87b3c', '#4a3214'],
+  silver: ['#ffffff', '#c9ced6', '#6b727c'],
+  bone: ['#fffaf0', '#e3d6bd', '#8c7b5e'],
+  jade: ['#d8f5e3', '#3f9b6d', '#123d2a'],
+  lapis: ['#c8d6ff', '#2f4fb3', '#0c1a4d']
 };
 /** A rim, pin or hub spec's metal, or null for a flat colour. */
 function wheelMetal(spec) {
@@ -4230,16 +4394,18 @@ var WHEEL_THEMES = [
             rim: 'gilt', pins: 'brass', hub: 'brass' },
     count: [WHEEL_GOLD, WHEEL_GOLD, WHEEL_GOLD], word: [WHEEL_GOLD], flash: WHEEL_GOLD,
     lights: { idle: 0.45, spin: 0.15, focus: 0.62, out: 0.6 },
-    approach: true, zoom: { covers: 5.5, plain: 3.4 } },
+    approach: true, zoom: { covers: 5.5, plain: 3.4 },
+    thumb: 'radial-gradient(circle at 50% 40%, #2a1610, #050202 70%)' },
   { id: 'spotlight', name: 'Spotlight', stage: true, dark: true, cones: true,
     letters: 'pop', face: Object.assign({}, JEWEL_FACE, { mark: WHEEL_MARK }),
     count: ['#e07a5f', '#d9a521', '#1f7a7a'], word: WHEEL_COLORS, flash: 'sector',
     lights: { idle: 0.72, spin: 0.26, focus: 0.86, out: 0.86 },
-    approach: true, zoom: { covers: 5.5, plain: 3.4 } },
+    approach: true, zoom: { covers: 5.5, plain: 3.4 },
+    thumb: 'linear-gradient(90deg, #8d1624 0 14%, #2a0b0d 14% 86%, #8d1624 86%)' },
   { id: 'classic', name: 'Classic', stage: false, dark: false, letters: 'pop',
     face: JEWEL_FACE,
     count: ['#e07a5f', '#d9a521', '#1f7a7a'], word: WHEEL_COLORS, flash: 'sector',
-    lights: null, approach: false, zoom: { covers: 5.5, plain: 3.4 } },
+    lights: null, approach: false, zoom: { covers: 5.5, plain: 3.4 }, thumb: '#fff' },
   // Synthwave: a striped sunset sun and a glowing grid on violet-black; the
   // wheel dark glass, its names in cyan neon, its rim hot pink.
   { id: 'neon', name: 'Neon', stage: false, dark: true, letters: 'clean',
@@ -4255,7 +4421,9 @@ var WHEEL_THEMES = [
     count: ['#ff2bd6', '#7ff8ff', '#ffd319'],
     word: ['#ff2bd6', '#7ff8ff', '#ffd319', '#a37bff'], flash: '#7ff8ff',
     lights: { idle: 0.5, spin: 0.2, focus: 0.72, out: 0.75 },
-    approach: true, zoom: { covers: 5.5, plain: 3.4 } },
+    approach: true, zoom: { covers: 5.5, plain: 3.4 }, gfont: 'Orbitron:wght@700',
+    pill: 'flicker', show: 'flip',
+    thumb: 'linear-gradient(#1d0640 0 55%, #ff2bd6 55% 57%, #05010d 57%)' },
   // A roulette table: red and black on green felt, a green seam where two
   // of a colour would meet, ivory serif names, chrome and gold.
   { id: 'casino', name: 'Casino', stage: false, dark: true, letters: 'clean',
@@ -4280,7 +4448,8 @@ var WHEEL_THEMES = [
             mark: { color: '#2f3437', width: 3 },
             stick: ['#23272a', '#5a6268', 'rgba(20,22,24,.9)'] },
     count: ['#2f3437', '#7f9c96', '#c98b78'], word: ['#2f3437'], flash: '#2f3437',
-    lights: null, approach: false, zoom: { covers: 5.5, plain: 3.4 } },
+    lights: null, approach: false, zoom: { covers: 5.5, plain: 3.4 },
+    gfont: 'Jost:wght@400;500', pill: 'breathe', show: 'rise', thumb: '#f6f2ea' },
   // The deep: teal and navy with one coral, pearl pins, aqua metal, rays of
   // light from above and bubbles rising; the lights cyan.
   { id: 'ocean', name: 'Ocean', stage: false, dark: true, letters: 'clean',
@@ -4293,7 +4462,8 @@ var WHEEL_THEMES = [
     count: ['#7ff5ff', '#ffd6a5', '#7ff5ff'], word: ['#7ff5ff', '#a6f6ea', '#ffd6a5'],
     flash: '#ffd6a5',
     lights: { idle: 0.45, spin: 0.15, focus: 0.65, out: 0.65 },
-    approach: true, zoom: { covers: 5.5, plain: 3.4 } },
+    approach: true, zoom: { covers: 5.5, plain: 3.4 }, gfont: 'Comfortaa:wght@700',
+    pill: 'bob', show: 'rise', thumb: 'linear-gradient(#0f5a80, #010a16)' },
   // A 50s diner: cherry, cream, teal, mustard and navy in chrome, on a cream
   // card with a checkerboard floor; the show in a jukebox script.
   { id: 'diner', name: 'Diner', stage: false, dark: false, letters: 'clean',
@@ -4304,8 +4474,37 @@ var WHEEL_THEMES = [
             mark: { color: '#1d3557', width: 4 } },
     count: ['#e63946', '#2ec4b6', '#ffbe0b'],
     word: ['#e63946', '#2ec4b6', '#ffbe0b', '#1d3557'], flash: '#e63946',
-    lights: null, approach: false, zoom: { covers: 5.5, plain: 3.4 } }
+    lights: null, approach: false, zoom: { covers: 5.5, plain: 3.4 }, gfont: 'Pacifico',
+    pill: 'swing', show: 'stamp',
+    thumb: 'linear-gradient(#e63946 0 8%, #2ec4b6 8% 14%, #fff8ec 14%)' }
 ];
+
+/* Themes made of a scene and a spec — scripts/wheel_scenes/<id>.json and its
+   <id>.svg backdrop, inlined by the build — each inspired by a game's look.
+   A spec with the id of a built-in theme replaces it. How each one's pill
+   moves and its countdown arrives is chosen here, unless its spec says
+   (pill: WHEEL_PILLS; show: the entrances in the stylesheet). */
+var WHEEL_SCENES = /*__WHEEL_SCENES__*/[];
+var WHEEL_MOTION = {
+  casino: ['glint', 'flip'], foodchain: ['wobble', 'stamp'],
+  zimbabwe: ['heartbeat', 'drop'], brass: ['sway', 'rise'], ra: ['glint', 'drop'],
+  scythe: ['sway', 'rise'], dune: ['bob', 'rise'], azul: ['glint', 'flip'],
+  eldorado: ['swing', 'drop'], westkingdom: ['swing', 'stamp'],
+  root: ['wobble', 'drop'], harmonies: ['breathe', 'rise'],
+  speakeasy: ['trim', 'flip'], agricola: ['sway', 'stamp']
+};
+WHEEL_SCENES.forEach(function (sp) {
+  var motion = WHEEL_MOTION[sp.id] || ['pulse', 'fade'];
+  var t = { id: sp.id, name: sp.name, inspiredBy: sp.inspiredBy,
+    stage: false, dark: !!sp.dark, letters: 'clean',
+    face: Object.assign({ fill: 'jewels' }, sp.face),
+    count: sp.count, word: sp.word, flash: sp.flash,
+    lights: sp.lights || null, approach: !!(sp.approach && sp.lights),
+    zoom: { covers: 5.5, plain: 3.4 }, vars: sp.vars || {}, scene: sp.scene || null,
+    gfont: sp.gfont, thumb: sp.thumb, pill: sp.pill || motion[0], show: sp.show || motion[1] };
+  var at = WHEEL_THEMES.map(function (x) { return x.id; }).indexOf(t.id);
+  if (at >= 0) WHEEL_THEMES[at] = t; else WHEEL_THEMES.push(t);
+});
 var WHEEL_THEME_KEY = 'bgg-wheel-theme';
 function wheelTheme() {
   if (!wheel.theme) {
@@ -4325,23 +4524,44 @@ function applyWheelTheme() {
   pop.setAttribute('data-lights', t.lights ? 'on' : 'off');
   pop.setAttribute('data-dark', t.dark ? 'on' : 'off');
   pop.setAttribute('data-cones', t.cones ? 'on' : 'off');
-  // The canvas draws a web font only once it has loaded: draw again then.
-  if (document.fonts && document.fonts.load) {
-    document.fonts.load(t.face.font.replace('{px}', '20px')).then(function () {
-      labelFits = {};
-      if (wheel.open && wheelTheme() === t) drawWheel();
-    }, function () {});
-  }
-  var sel = el('wheeltheme');
-  if (!sel.options.length) {
-    sel.innerHTML = WHEEL_THEMES.map(function (x) {
-      return '<option value="' + x.id + '">' + esc(x.name) + '</option>';
-    }).join('');
-  }
-  sel.value = t.id;
+  pop.setAttribute('data-scene', t.scene ? 'on' : 'off');
+  pop.setAttribute('data-pill', t.pill || 'pulse');
+  pop.setAttribute('data-show', t.show || 'fade');
+  // The theme's own CSS variables on, the last one's off.
+  (wheel.themeVars || []).forEach(function (k) { pop.style.removeProperty(k); });
+  var vars = Object.assign({}, t.vars || {});
+  if (t.scene) vars['--scene'] = 'url("' + t.scene + '")';
+  if (t.thumb) vars['--card-bg'] = t.thumb;
+  Object.keys(vars).forEach(function (k) { pop.style.setProperty(k, vars[k]); });
+  wheel.themeVars = Object.keys(vars);
+  // Its font, fetched the first time it is wanted; the canvas draws a web
+  // font only once it has loaded, so the wheel is drawn again then.
+  wheelFont(t, function () {
+    labelFits = {};
+    if (wheel.open && wheelTheme() === t) drawWheel();
+  });
+  el('wheeltheme').innerHTML = themeThumb(t) + '<span class="tname">' + esc(t.name) + '</span>';
   labelFits = {};
   if (wheel.open) drawWheel();
 }
+/** Fetch a theme's Google font (once), then call back when the face its
+ *  wheel names are drawn in is ready. */
+var wheelFontsAsked = {};
+function wheelFont(t, then) {
+  if (t.gfont && !wheelFontsAsked[t.gfont]) {
+    wheelFontsAsked[t.gfont] = true;
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=' + t.gfont + '&display=swap';
+    link.onload = function () { wheelFont(t, then); };
+    document.head.appendChild(link);
+    return;
+  }
+  if (document.fonts && document.fonts.load) {
+    document.fonts.load(t.face.font.replace('{px}', '20px')).then(then, function () {});
+  }
+}
+
 /** A theme chosen from the list, remembered for next time. */
 function chooseWheelTheme(id) {
   wheel.theme = WHEEL_THEMES.filter(function (t) { return t.id === id; })[0] ||
@@ -5636,11 +5856,63 @@ function setSeedBusy(on) {
   el('wheelseedq').disabled = !!on;
   el('wheelseeddice').disabled = !!on;
   el('wheeltheme').disabled = !!on;
+  if (on) openThemeList(false);
 }
-el('wheeltheme').addEventListener('change', function () {
-  chooseWheelTheme(this.value);
-  this.blur();
+/* The theme list: a button with the theme's thumbnail and name, opening a
+   grid of every theme as a square thumbnail — its backdrop, with a little
+   wheel in its colours — over its name. */
+function themeThumb(t) {
+  var f = t.face, pal = f.fill === 'wood' ? ['#6b4524', '#4a2e16'] : (f.palette || WHEEL_COLORS);
+  var m = pal.length < 6 ? pal.length * 2 : pal.length, stops = [];
+  for (var i = 0; i < m; i++) {
+    stops.push(pal[i % pal.length] + ' ' + (i * 360 / m).toFixed(1) + 'deg ' +
+               ((i + 1) * 360 / m).toFixed(1) + 'deg');
+  }
+  var rim = wheelMetal(f.rim);
+  rim = rim ? rim[1] : (f.rim && f.rim.color) || '#1b1a17';
+  var bg = (t.scene ? "url('" + t.scene + "') center / cover no-repeat, " : '') +
+           (t.thumb || '#222');
+  return '<span class="tthumb" style="background:' + esc(bg) + '"><i style="background:' +
+    'conic-gradient(' + stops.join(',') + ');border-color:' + esc(rim) + '"></i></span>';
+}
+function openThemeList(open) {
+  var list = el('wheelthemelist'), btn = el('wheeltheme');
+  if (open && !list.childNodes.length) {
+    list.innerHTML = WHEEL_THEMES.map(function (t) {
+      return '<button type="button" role="option" data-id="' + esc(t.id) + '" title="' +
+        esc(t.inspiredBy ? 'Inspired by ' + t.inspiredBy : t.name) + '">' + themeThumb(t) +
+        '<span class="tname">' + esc(t.name) + '</span></button>';
+    }).join('');
+  }
+  if (open) {
+    Array.prototype.forEach.call(list.children, function (b) {
+      b.setAttribute('aria-selected', b.getAttribute('data-id') === wheelTheme().id);
+    });
+  }
+  list.hidden = !open;
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+el('wheeltheme').addEventListener('click', function (ev) {
+  ev.stopPropagation();
+  openThemeList(el('wheelthemelist').hidden);
 });
+el('wheelthemelist').addEventListener('click', function (ev) {
+  var b = ev.target.closest('[data-id]');
+  if (!b) return;
+  ev.stopPropagation();
+  openThemeList(false);
+  chooseWheelTheme(b.getAttribute('data-id'));
+});
+document.addEventListener('click', function () {
+  if (!el('wheelthemelist').hidden) openThemeList(false);
+});
+document.addEventListener('keydown', function (ev) {
+  if (ev.key === 'Escape' && !el('wheelthemelist').hidden) {
+    ev.stopPropagation();
+    openThemeList(false);
+  }
+}, true);
+
 
 /** A sent spin is only ever that spin: the seed is shown but cannot be
  *  changed, there is no dice, and the button replays it rather than spinning

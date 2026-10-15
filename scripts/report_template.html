@@ -3144,7 +3144,7 @@ function hay(i, g) {
   (g.tg || []).forEach(function (t) { if (TAGS[t]) bits.push(TAGS[t].n); });
   (ai.wcs || []).forEach(function (w) { bits.push(WIN_LABEL[w] || w); });
   bits.push(SALAD_LABEL[ai.br] || '');
-  bits.push(ai.ixl || g.ix || '');
+  bits.push(ai.ixl || g.ix || '', IX_LABEL[ai.ixl || g.ix] || '');
   if (g.exp) bits.push('expansion');
   HAY[i] = deaccent(bits.join(' ').toLowerCase());
   return HAY[i];
@@ -3611,6 +3611,10 @@ var SALAD_SHORT = { no: 'No', touch: 'A touch', lot: 'Quite a lot',
 /* The ordered scales the four sliders run over. Declared here rather than
    where the controls are built, because partition() reads them too. */
 var IX_LEVELS = ['Low', 'Medium', 'High'];
+/** How a level is said on the page (the data keeps "Medium"); mirrors
+ *  IX_LABEL in report.py. */
+var IX_LABEL = { Medium: 'Fair amount' };
+function ixName(level) { return IX_LABEL[level] || level || ''; }
 var WIN_ORDER = ['race', 'points', 'objectives', 'money', 'lowest', 'majority',
   'sudden', 'coop', 'elimination', 'other'];
 var SALAD_LABEL = { no: 'No, sharp focus', touch: 'Just a touch',
@@ -6753,7 +6757,7 @@ function buildDetail(g) {
     ['Designers', designerPills(g)],
     ['Publisher', (g.pb || []).length
       ? g.pb.map(function (p) { return hl(p); }).join(', ') : '—'],
-    ['Interaction', hl((g.ai && g.ai.ixl) || g.ix) +
+    ['Interaction', hl(ixName((g.ai && g.ai.ixl) || g.ix)) +
       ((g.kinds && g.kinds.length) ? ' <span class="yr">(' +
         hl(g.kinds.join(', ').toLowerCase()) + ')</span>' : '')],
     ['Point salad', hl((g.ai && SALAD_LABEL[g.ai.br]) || '—')],
@@ -6779,7 +6783,7 @@ function buildDetail(g) {
           return (WIN_LABEL[w] || w).toLowerCase();
         }).join(', or ')) : '') + '</h4><p>' + esc(howWin) +
         '</p>' : '') +
-      (ai.ixd ? '<h4>Interaction — ' + esc(ai.ixl || '') +
+      (ai.ixd ? '<h4>Interaction — ' + esc(ixName(ai.ixl)) +
         (ai.ixk ? ', ' + esc(ai.ixk) : '') + '</h4><p>' + esc(ai.ixd) +
         '</p>' : '') +
       (g.de ? '<h4>From BGG</h4><p>' + esc(g.de) + '…</p>' : '') +

@@ -242,6 +242,11 @@ EM_DASH = "\u2014"
 
 # More interaction reads as the better end of the ramp.
 IX_PILL = {"High": "p3", "Medium": "p2", "Low": "p1"}
+# How an interaction level is said. The data keeps Low/Medium/High (the
+# notes and the scoring use them); on the page the middle one is "Fair
+# amount", since a bare "Medium" read as a weight or a length beside the
+# columns that use that word too. Mirrored by IX_LABEL in the template.
+IX_LABEL = {"Medium": "Fair amount"}
 
 # Bands for the two BGG numbers that are easier to filter by name than by
 # range. Both tables are shipped into the page as JSON rather than written out
@@ -282,16 +287,20 @@ WEIGHT_BANDS = [
 # These are words, not numbers, and that is the point. The pill used to read
 # "4 hours+" for a game listed 40-200, which is a claim about the game the
 # game does not support — its top end passes four hours, but it can be over in
-# forty minutes. "Extreme" says where it sits without promising a figure, and
+# forty minutes. "Extra long" says where it sits without promising a figure, and
 # it frees this grouping from the filter's stops, which are finer and answer a
 # different question.
+#
+# The names are said as lengths ("Medium time", "Extra long"), never bare:
+# a "Medium" in the time column read as a weight beside the weight column's
+# own "Medium", and "Extreme" is the weight scale's top.
 TIME_BANDS = [
     {"k": "vshort", "n": "Very short", "lt": 30, "pill": "p3", "bar": "wt1"},
     {"k": "short", "n": "Short", "lt": 46, "pill": "p3", "bar": "wt1"},
-    {"k": "medium", "n": "Medium", "lt": 91, "pill": "p1", "bar": "wt2"},
+    {"k": "medium", "n": "Medium time", "lt": 91, "pill": "p1", "bar": "wt2"},
     {"k": "long", "n": "Long", "lt": 121, "pill": "p2", "bar": "wt3"},
     {"k": "vlong", "n": "Very long", "lt": 181, "pill": "pw", "bar": "wt4"},
-    {"k": "extreme", "n": "Extreme", "lt": None, "pill": "pw", "bar": "wt4"},
+    {"k": "extreme", "n": "Extra long", "lt": None, "pill": "pw", "bar": "wt4"},
 ]
 
 # Where a time bar runs out. Four hours is the top band's floor, so anything
@@ -358,7 +367,7 @@ def scales():
         # "≤ x" or "x+" rather than naming a stop nobody chose.
         "ix": {"min": 0, "max": 2, "step": 1, "unit": "", "snap": True,
                "brief": "level",
-               "stops": stops([("Low", 0, 0, "Low"), ("Medium", 1, 1, "Med"),
+               "stops": stops([("Low", 0, 0, "Low"), ("Fair amount", 1, 1, "Fair amount"),
                                ("High", 2, 2, "High")])},
         # Weight is the one continuous axis, so its bands meet at the edge
         # rather than a step below it: writing 3.99 for "just under 4" leaves
@@ -935,7 +944,8 @@ def haystack(g, tags):
     bits += g.get("pb") or []
     bits += [tags[i]["n"] for i in g.get("tg") or [] if i < len(tags)]
     bits += [WIN_LABEL.get(w, "") for w in ai.get("wcs") or []]
-    bits += [SALAD_LABEL.get(ai.get("br"), ""), ai.get("ixl") or g.get("ix") or ""]
+    ix_level = ai.get("ixl") or g.get("ix") or ""
+    bits += [SALAD_LABEL.get(ai.get("br"), ""), ix_level, IX_LABEL.get(ix_level, "")]
     if g.get("exp"):
         bits.append("expansion")
     return fold(" ".join(b for b in bits if b).lower())
@@ -987,7 +997,7 @@ def rows_html(data, a, tags=()):
         ix_level = ai.get("ixl") or g["ix"]
         ix_title = ai.get("ixk") or "derived from mechanics"
         ix_pill = (f'<span class="tag {IX_PILL.get(ix_level, "p1")}">'
-                   f'{ix_level}</span>')
+                   f'{IX_LABEL.get(ix_level, ix_level)}</span>')
         kinds = g.get("kinds") or []
         # The level over what kind of interaction it is — the same cell as
         # weight or point salad, with words on the second line instead of a

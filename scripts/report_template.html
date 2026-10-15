@@ -4355,6 +4355,7 @@ var WHEEL_GOLD = '#e2bb62';
               a metal (WHEEL_METALS) or a flat colour, glowing if it says
      count    the colours of 3, 2, 1; word, of the letters of Spinning!
      flash    the winner's name: a colour, or 'sector' (its sector's colour)
+              (flat pins may have an ink ring; a flat hub an inner disc)
               mark: the winner's outline; stick: its colours (defaults
               WHEEL_MARK, WHEEL_STICK)
      dark     controls light on dark (data-dark), or the page's own
@@ -4899,6 +4900,12 @@ function drawWheel() {
       ctx.arc(gx, gy, pr, 0, 2 * Math.PI);
       ctx.fillStyle = face.pins.color;
       ctx.fill();
+      if (face.pins.ring) {
+        ctx.shadowColor = 'transparent';
+        ctx.lineWidth = Math.max(1, pr * 0.3);
+        ctx.strokeStyle = face.pins.ring;
+        ctx.stroke();
+      }
       ctx.restore();
       continue;
     }
@@ -4927,6 +4934,16 @@ function drawWheel() {
     ctx.lineWidth = 3 * dpr;
     ctx.strokeStyle = face.hub.ring;
     ctx.stroke();
+    // An inner disc, for a printed bullseye of a hub.
+    if (face.hub.inner) {
+      ctx.shadowColor = 'transparent';
+      ctx.beginPath();
+      ctx.arc(cx, cy, R * 0.045, 0, 2 * Math.PI);
+      ctx.fillStyle = face.hub.inner;
+      ctx.fill();
+      ctx.lineWidth = 2 * dpr;
+      ctx.stroke();
+    }
     ctx.restore();
   }
   wheel.geo = { w: cv.width, h: cv.height, R: R, cx: cx, cy: cy, dpr: dpr, a: a,

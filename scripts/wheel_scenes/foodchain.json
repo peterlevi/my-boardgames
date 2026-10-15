@@ -1,46 +1,79 @@
 {
-  "id": "foodchain",
-  "name": "Food Chain",
-  "inspiredBy": "Food Chain Magnate",
-  "dark": false,
-  "gfont": "Lobster",
-  "face": {
-    "palette": ["#d8352a", "#fbf3e2", "#7fc4b8", "#161311", "#e8b23a"],
-    "seam": "#2f7f78",
-    "ink": "contrast",
-    "glow": "rgba(22,19,17,.35)",
-    "font": "400 {px} \"Lobster\",Georgia,cursive",
-    "sep": "#161311",
-    "sepW": 1.6,
-    "rim": "chrome",
-    "pins": "chrome",
-    "hub": "chrome",
-    "mark": {"color": "#161311", "glow": "rgba(232,178,58,.95)", "width": 4},
-    "stick": ["#b92a21", "#e2463a", "rgba(22,19,17,.9)"]
+ "id": "foodchain",
+ "name": "Food Chain",
+ "inspiredBy": "Food Chain Magnate",
+ "dark": false,
+ "gfont": "Lobster",
+ "face": {
+  "palette": [
+   "#d8352a",
+   "#fbf3e2",
+   "#7fc4b8",
+   "#161311",
+   "#e8b23a"
+  ],
+  "seam": "#2f7f78",
+  "ink": "contrast",
+  "glow": "rgba(22,19,17,.35)",
+  "font": "400 {px} \"Lobster\",Georgia,cursive",
+  "sep": "#161311",
+  "sepW": 1.6,
+  "rim": {
+   "color": "#161311",
+   "width": 0.016
   },
-  "count": ["#d8352a", "#e8b23a", "#fbf3e2"],
-  "word": ["#d8352a", "#2f7f78", "#e8b23a", "#161311"],
-  "flash": "#d8352a",
-  "lights": null,
-  "approach": false,
-  "thumb": "radial-gradient(circle at 50% 40%, #c4e7df, #a8d8cf 55%, #93c8bd)",
-  "vars": {
-    "--show-font": "\"Lobster\",Georgia,cursive",
-    "--show-weight": "400",
-    "--show-case": "none",
-    "--show-track": ".02em",
-    "--show-glow": "0 .5cqw 0 #161311, 0 0 .4cqw #161311, 0 0 3cqw rgba(251,243,226,.8)",
-    "--pill-bg": "#fbf3e2",
-    "--pill-ink": "#161311",
-    "--pill-edge": "#d8352a",
-    "--pill-glow": "#e8b23a",
-    "--ui-font": "\"Lobster\",Georgia,cursive",
-    "--lc-text": "#161311",
-    "--lc-accent": "#d8352a",
-    "--lc-btn-bg": "#d8352a",
-    "--lc-btn-ink": "#fbf3e2",
-    "--lc-btn-edge": "#161311",
-    "--lc-field-bg": "rgba(251,243,226,.88)",
-    "--lc-field-edge": "#161311"
-  }
+  "pins": {
+   "color": "#fbf3e2",
+   "ring": "#161311"
+  },
+  "hub": {
+   "fill": "#d8352a",
+   "ring": "#161311",
+   "inner": "#fbf3e2"
+  },
+  "mark": {
+   "color": "#161311",
+   "glow": "rgba(232,178,58,.95)",
+   "width": 4
+  },
+  "stick": [
+   "#d8352a",
+   "#d8352a",
+   "#161311"
+  ]
+ },
+ "count": [
+  "#d8352a",
+  "#e8b23a",
+  "#fbf3e2"
+ ],
+ "word": [
+  "#d8352a",
+  "#2f7f78",
+  "#e8b23a",
+  "#161311"
+ ],
+ "flash": "#d8352a",
+ "lights": null,
+ "approach": false,
+ "thumb": "radial-gradient(circle at 50% 40%, #c4e7df, #a8d8cf 55%, #93c8bd)",
+ "vars": {
+  "--show-font": "\"Lobster\",Georgia,cursive",
+  "--show-weight": "400",
+  "--show-case": "none",
+  "--show-track": ".02em",
+  "--show-glow": "0 .5cqw 0 #161311, 0 0 .4cqw #161311, 0 0 3cqw rgba(251,243,226,.8)",
+  "--pill-bg": "#fbf3e2",
+  "--pill-ink": "#161311",
+  "--pill-edge": "#d8352a",
+  "--pill-glow": "#e8b23a",
+  "--ui-font": "\"Lobster\",Georgia,cursive",
+  "--lc-text": "#161311",
+  "--lc-accent": "#d8352a",
+  "--lc-btn-bg": "#d8352a",
+  "--lc-btn-ink": "#fbf3e2",
+  "--lc-btn-edge": "#161311",
+  "--lc-field-bg": "rgba(251,243,226,.88)",
+  "--lc-field-edge": "#161311"
+ }
 }

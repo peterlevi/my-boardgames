@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<items totalitems="246" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse" pubdate="Thu, 15 Oct 2026 21:14:22 +0000">
+<items totalitems="247" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse" pubdate="Thu, 15 Oct 2026 21:32:14 +0000">
 		<item objecttype="thing" objectid="421" subtype="boardgame" collid="138338830">
 	<name sortindex="1">1830: Railways &amp; Robber Barons</name>
 		<yearpublished>1986</yearpublished>			<image>https://cf.geekdo-images.com/3EmD1SEI5fVpR4rbdkU0AA__original/img/M6qiL7ZNU_mjgZXHZjOrVxNamfU=/0x0/filters:format(jpeg)/pic882119.jpg</image>
@@ -1611,6 +1611,19 @@ It&#039;s an interesting game, that can also feel quite thematic. Also a pretty 
 	<numplays>0</numplays>			<comment>(shrink)
 </comment>			<haspartslist>-shrink
 </haspartslist>	</item>
+		<item objecttype="thing" objectid="341169" subtype="boardgame" collid="150530460">
+	<name sortindex="1">Great Western Trail: Second Edition</name>
+		<yearpublished>2021</yearpublished>			<image>https://cf.geekdo-images.com/gDn7AhrDlmfCLSz9ZqoNFQ__original/img/yecB1xO32nnjBAyskVOTq9LBuLo=/0x0/filters:format(jpeg)/pic5988511.jpg</image>
+		<thumbnail>https://cf.geekdo-images.com/gDn7AhrDlmfCLSz9ZqoNFQ__small/img/0pt6XrFHTXpNetwMo9rdY7PdhfQ=/fit-in/200x150/filters:strip_icc()/pic5988511.jpg</thumbnail>
+		<stats minplayers="1"																	maxplayers="4"																	minplaytime="75"																	maxplaytime="150"																	playingtime="150"																	numowned="26467" >
+				<rating value="N/A">			<usersrated value="18764" />			<average value="8.25837" />
+			<bayesaverage value="7.90347" />			<stddev value="1.2832" />
+			<median value="0" />			<ranks>
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="31" bayesaverage="7.90347" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="23" bayesaverage="7.96731" />
+											</ranks>		</rating>
+			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2026-10-15 16:30:34" />
+	<numplays>1</numplays>			<comment>(shrink)</comment>				</item>
 		<item objecttype="thing" objectid="111341" subtype="boardgame" collid="125409287">
 	<name sortindex="5">The Great Zimbabwe</name>
 		<yearpublished>2012</yearpublished>			<image>https://cf.geekdo-images.com/KoL5aL8f_OpyzB9yYSI8VA__original/img/gtQ1AZ8xqbjEq9KhLK6aoz9TQm8=/0x0/filters:format(jpeg)/pic1400856.jpg</image>

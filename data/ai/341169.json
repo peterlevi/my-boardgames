@@ -1,0 +1,61 @@
+{
+ "confidence": "high",
+ "summary": "Players build a personal deck of cattle cards and repeatedly drive herds down the trail from Texas to Kansas City, visiting buildings along the way to upgrade cards, hire staff, and manage hazards before cashing in the herd for money and points. Over several trips the trail fills up with buildings (yours and others'), a shared railroad gets extended westward, and your deck/tableau snowballs into a tight personal engine.",
+ "praised": [
+  "deeply interlocking systems (deck building, hand management, worker placement, railroad) that mesh without feeling bloated",
+  "high replayability from randomized building setup each game",
+  "satisfying sense of engine progression across multiple trail runs",
+  "meaningful, tense decisions on nearly every turn"
+ ],
+ "criticised": [
+  "steep rules overhead and long first play/teach",
+  "analysis paralysis from the sheer number of viable strategies",
+  "can feel mean when opponents build on prime trail spots you wanted and charge you fees",
+  "early turns can feel slow before engines come online"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "shared board contested via building placement and fees, racing for limited spots",
+  "detail": "The trail, Kansas City building plots, and the railroad track are a shared, contested space: players build on specific spots (locking others out or forcing them to pay a toll to use your building), race to be first to deliver along the delivery track for bonus points, and compete for limited jobs and railroad stations. Each player's own deck, hand, and personal tableau of workers/buildings remain private and non-interactive, so most turns are solitaire-engine optimization punctuated by contested placement moments."
+ },
+ "scoring": {
+  "subsystems": [
+   "cattle delivery to Kansas City",
+   "building network (constructing and renting out buildings)",
+   "railroad (track, stations, Engineers)",
+   "hazards/objectives (Cowboys removing hazards, certificates)"
+  ],
+  "sources": [
+   "points from delivery track position each time you reach Kansas City",
+   "bonus points for being first to reach certain cities",
+   "points from buildings you've constructed (value increases with building tier)",
+   "points from railroad stations built and track placement",
+   "points from hazards removed via Cowboys",
+   "objective/certificate tiles collected during the game",
+   "leftover money converted to points at game end",
+   "bonus from highest-value Engineer/worker tracks"
+  ],
+  "winning_score": 130,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": [
+   "end_trigger",
+   "fixed_length"
+  ],
+  "how_you_win": "The game ends once the building-construction track in San Francisco is filled (or after a fixed number of rounds in some variants), and whoever has accumulated the most total points from deliveries, buildings, railroad, hazards, objectives, and leftover cash wins."
+ },
+ "similar": [
+  "Brass: Birmingham",
+  "Teotihuacan: City of Gods",
+  "Mombasa",
+  "Maracaibo",
+  "Barrage"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "1e88dd766c3f95f9",
+ "_name": "Great Western Trail: Second Edition"
+}

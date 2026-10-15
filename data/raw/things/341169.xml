@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="341169">
+         <thumbnail>https://cf.geekdo-images.com/gDn7AhrDlmfCLSz9ZqoNFQ__small/img/0pt6XrFHTXpNetwMo9rdY7PdhfQ=/fit-in/200x150/filters:strip_icc()/pic5988511.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/gDn7AhrDlmfCLSz9ZqoNFQ__original/img/yecB1xO32nnjBAyskVOTq9LBuLo=/0x0/filters:format(jpeg)/pic5988511.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Great Western Trail: Second Edition" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Great Western Trail: Drugie wydanie" />
+			    				
+				<name type="alternate" sortindex="1" value="Great Western Trail: Drugo izdanje" />
+			    				
+				<name type="alternate" sortindex="1" value="Great Western Trail: Seconda Edizione" />
+			    				
+				<name type="alternate" sortindex="3" value="A nagy western utazás: Második kiadás" />
+			    				
+				<name type="alternate" sortindex="1" value="Великий Западный Путь: Второе издание" />
+			    				
+				<name type="alternate" sortindex="1" value="グレート・ウエスタン・トレイル第2版" />
+			    				
+				<name type="alternate" sortindex="1" value="大西部開拓者" />
+			    				
+				<name type="alternate" sortindex="1" value="그레이트 웨스턴 트레일 (2판)" />
+			
+						               													<description>America in the 19th century: You are a rancher and repeatedly herd your cattle from Texas to Kansas City, where you send them off by train. This earns you money and victory points. Needless to say, each time you arrive in Kansas City, you want to have your most valuable cattle in tow. However, the "Great Western Trail" not only requires that you keep your herd in good shape, but also that you wisely use the various buildings along the trail. Also, it might be a good idea to hire capable staff: cowboys to improve your herd, craftsmen to build your very own buildings, or engineers for the important railroad line.
+
+If you cleverly manage your herd and navigate the opportunities and pitfalls of Great Western Trail, you surely will gain the most victory points and win the game.
+
+The changes in the Second edition:
+
+
+     Brand New Artwork by Chris Quilliams
+     Solo Mode: A New Challenger in the West
+     Dual-Layered Player Boards
+     Addition of a new breed of cows: The Simmental breed
+     Two new reversible buildings (#11 &amp; 12)
+     Twelve Exchange Tokens, First introduced in the Rails of North Expansion, for more interaction with other players
+     Four new Master Tiles added for more strategy, replayability, and challenges
+
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2021" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="347">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="20" />
+					<result value="Recommended" numvotes="148" />
+					<result value="Not Recommended" numvotes="63" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="70" />
+					<result value="Recommended" numvotes="197" />
+					<result value="Not Recommended" numvotes="20" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="227" />
+					<result value="Recommended" numvotes="54" />
+					<result value="Not Recommended" numvotes="4" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="62" />
+					<result value="Recommended" numvotes="159" />
+					<result value="Not Recommended" numvotes="36" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="1" />
+					<result value="Not Recommended" numvotes="147" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 3 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="150" />
+						               				<minplaytime value="75" />
+						               				<maxplaytime value="150" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="53">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="1" />
+					<result value="10" numvotes="6" />
+					<result value="12" numvotes="26" />
+					<result value="14" numvotes="20" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="13">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="11" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1055" value="American West" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1089" value="Animals" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1013" value="Farming" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2664" value="Deck, Bag, and Pool Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2911" value="Ownership" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2813" value="Rondel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="3100" value="Tags" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2939" value="Track Movement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="7530" value="Animals: Cattle / Cows" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="19132" value="Cities: Kansas City (Missouri, USA)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="66553" value="Components: Control Boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="14835" value="Country: USA" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70360" value="Digital Implementations: Board Game Arena" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="54030" value="Game: Great Western Trail" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="27646" value="Mechanism: Tableau Building" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="43676" value="States: Texas" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="264228" value="Great Western Trail: At the Poker Table Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="359451" value="Great Western Trail: Second Edition – Rails To The North" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="293240" value="Super Power" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="458767" value="Great Western Trail (Second Edition) + Expansion: e-Raptor UV Print Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="382325" value="Great Western Trail (Second Edition): Board Bento Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="400170" value="Great Western Trail (Second Edition): Folded Space Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="377288" value="Great Western Trail (Second Edition): LevityGames Meeple Sticker Upgrade Kit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="363145" value="Great Western Trail (Second Edition): The GiftForge Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="417468" value="Great Western Trail: Second Edition – Laserox Organizer" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="364011" value="Great Western Trail: Argentina" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="431305" value="Great Western Trail: El Paso" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="380607" value="Great Western Trail: New Zealand" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="193738" value="Great Western Trail" inbound="true" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="238620" value="Great Western Trail: The Eleventh Building Tile" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="11767" value="Alexander Pfister" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="14057" value="Chris Quilliams" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1015" value="eggertspiele" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="3475" value="Arclight Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="50696" value="CoolPlay" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="6194" value="Delta Vision Publishing" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="24883" value="Ediciones MasQueOca" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="15605" value="Galápagos Jogos" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="4785" value="Ghenos Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5812" value="Lacerta" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="7466" value="Rebel Sp. z o.o." />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42760" value="Yayoi The Dreamer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="1466" value="Zvezda" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="56861" value="本长文化" />
+		
+									
+			
+
+			
+			<videos total="106">
+						<video id="621040" title="GWT Re-Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=F8S8nAIqS9M" username="DuffmanGaming" userid="2135717" postdate="2026-07-18T08:25:31-05:00" />
+						<video id="614056" title=" Great Western Trail Segunda Edición Juego de Mesa - Tutorial" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=4sZqB6p3VHY" username="Absurdmeeple" userid="2841780" postdate="2026-05-31T08:48:35-05:00" />
+						<video id="612943" title="Nopparallin arvostelussa Great Western Trail: second edition" category="review" language="Finnish" link="http://www.youtube.com/watch?v=CCiYT5dTFPA" username="Nopparalli" userid="1407333" postdate="2026-05-22T16:34:22-05:00" />
+						<video id="608093" title="Great Western Trail (2e) - 4p Play-through by Heavy Cardboard" category="session" language="English" link="http://www.youtube.com/watch?v=Dbu8wj4UKdY" username="eapeas" userid="377742" postdate="2026-04-18T13:00:44-05:00" />
+						<video id="602006" title="Great Western Trail nostalgia" category="other" language="English" link="http://www.youtube.com/watch?v=jWPUwam0IrM" username="AimeeAce" userid="4234752" postdate="2026-03-11T13:03:55-05:00" />
+						<video id="591854" title="Great Western Trail: Second Edition - Unboxing &amp; Reboxing - What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=zmAbb0te7iE" username="broseygames" userid="4181268" postdate="2026-01-10T21:59:29-06:00" />
+						<video id="585402" title="Розпаковування від каналу &quot;Ігровий затишок&quot;" category="unboxing" language="Ukrainian" link="http://www.youtube.com/watch?v=TBGvAidXA7c" username="davose" userid="1472043" postdate="2025-11-29T12:05:34-06:00" />
+						<video id="580868" title="Szybka Wrzutka - Great Western Trail (2ed.)" category="review" language="Polish" link="http://www.youtube.com/watch?v=ohv3fsxo1v0" username="SMGP Kosci" userid="1684808" postdate="2025-11-04T06:49:32-06:00" />
+						<video id="548954" title="GWT 2nd Edition Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=xhOShEv5Lqw" username="Wingman709" userid="1953255" postdate="2025-04-16T12:01:19-05:00" />
+						<video id="539784" title="Great Western Trail (Second Edition) - Unboxing" category="unboxing" language="English" link="http://www.youtube.com/watch?v=gZOCYoENbcM" username="Nap16" userid="20104" postdate="2025-02-23T08:23:59-06:00" />
+						<video id="539158" title="Which Great Western Trail Should You Buy?" category="review" language="English" link="http://www.youtube.com/watch?v=bns_zhkPVDk" username="Bryle" userid="1233729" postdate="2025-02-19T19:21:38-06:00" />
+						<video id="528496" title="Great Western Trail Ranked In 19 Seconds" category="review" language="English" link="http://www.youtube.com/watch?v=n99BaHWHdOM" username="Bryle" userid="1233729" postdate="2024-12-12T12:50:38-06:00" />
+						<video id="527205" title="Great Western Trail SOLO Opstelling" category="instructional" language="Dutch" link="http://www.youtube.com/watch?v=u3OyVN96QR0" username="VifDolceStanza" userid="3596856" postdate="2024-12-03T05:06:31-06:00" />
+						<video id="525881" title="Ersteindruck: Great Western Trail | Auf den Tisch!" category="other" language="German" link="http://www.youtube.com/watch?v=P5LVINTu8ws" username="Ironheart300" userid="1067703" postdate="2024-11-24T15:07:06-06:00" />
+						<video id="524990" title="[會員無廣告] 大西部開拓者 ????? ??????? ????? (?????? ???????) | 策略排行前 20的遊戲第二代! 就算牛仔很忙，也要學會! #中文字幕 #桌遊 #肥龍教學" category="instructional" language="Chinese" link="http://www.youtube.com/watch?v=bTdzJngCoHQ" username="czeslaw6300149" userid="798383" postdate="2024-11-19T05:24:35-06:00" />
+					</videos>
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="18764" />
+			<average value="8.25837" />
+			<bayesaverage value="7.90347" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="31" bayesaverage="7.90347" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="23" bayesaverage="7.96731" />
+												</ranks>
+
+			<stddev value="1.2832" />
+			<median value="0" />
+			<owned value="26467" />
+			<trading value="223" />
+			<wanting value="550" />
+			<wishing value="5534" />
+			<numcomments value="1980" />
+			<numweights value="582" />
+			<averageweight value="3.701" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

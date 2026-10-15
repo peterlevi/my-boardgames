@@ -22499,6 +22499,216 @@
   "last_played": null
  },
  {
+  "id": "341169",
+  "name": "Great Western Trail: Second Edition",
+  "alt_names": [
+   "Great Western Trail: Drugie wydanie",
+   "Great Western Trail: Drugo izdanje",
+   "Great Western Trail: Seconda Edizione",
+   "A nagy western utazás: Második kiadás",
+   "Великий Западный Путь: Второе издание",
+   "グレート・ウエスタン・トレイル第2版",
+   "大西部開拓者",
+   "그레이트 웨스턴 트레일 (2판)"
+  ],
+  "year": 2021,
+  "rank": 31,
+  "types": [
+   "Strategy Game"
+  ],
+  "is_expansion": false,
+  "expands": [],
+  "thumbnail": "https://cf.geekdo-images.com/gDn7AhrDlmfCLSz9ZqoNFQ__small/img/0pt6XrFHTXpNetwMo9rdY7PdhfQ=/fit-in/200x150/filters:strip_icc()/pic5988511.jpg",
+  "weight": 3.701,
+  "average": 8.25837,
+  "weight_votes": 582,
+  "geek": 7.90347,
+  "ratings": 18764,
+  "owners": 26467,
+  "description": "America in the 19th century: You are a rancher and repeatedly herd your cattle from Texas to Kansas City, where you send them off by train. This earns you money and victory points. Needless to say, each time you arrive in Kansas City, you want to have your most valuable cattle in tow. However, the \"Great Western Trail\" not only requires that you keep your herd in good shape, but also that you wisely use the various buildings along the trail. Also, it might be a good idea to hire capable staff: cowboys to improve your herd, craftsmen to build your very own buildings, or engineers for the important railroad line.\n\nIf you cleverly manage your herd and navigate the opportunities and pitfalls of Great Western Trail, you surely will gain the most victory points and win the game.\n\nThe changes in the Second edition:\n\n     Brand New Artwork by Chris Quilliams\n     Solo Mode: A New Challenger in the West\n     Dual-Layered Player Boards\n     Addition of a new breed of cows: The Simmental breed\n     Two new reversible buildings (#11 & 12)\n     Twelve Exchange Tokens, First introduced in the Rails of North Expansion, for more interaction with other players\n     Four new Master Tiles added for more strategy, replayability, and challenges\n\n—description from the publisher",
+  "minplayers": 1,
+  "maxplayers": 4,
+  "playingtime": 150,
+  "minplaytime": 75,
+  "maxplaytime": 150,
+  "mechanics": [
+   "Deck, Bag, and Pool Building",
+   "Hand Management",
+   "Ownership",
+   "Rondel",
+   "Set Collection",
+   "Solo / Solitaire Game",
+   "Tags",
+   "Track Movement",
+   "Variable Set-up"
+  ],
+  "categories": [
+   "American West",
+   "Animals",
+   "Farming"
+  ],
+  "families": [
+   "Animals: Cattle / Cows",
+   "Cities: Kansas City (Missouri, USA)",
+   "Components: Control Boards",
+   "Country: USA",
+   "Digital Implementations: Board Game Arena",
+   "Game: Great Western Trail",
+   "Mechanism: Tableau Building",
+   "Players: Games with Solitaire Rules",
+   "States: Texas"
+  ],
+  "designers": [
+   "Alexander Pfister"
+  ],
+  "designer_ids": {
+   "Alexander Pfister": "11767"
+  },
+  "publishers": [
+   "eggertspiele",
+   "Arclight Games",
+   "CoolPlay"
+  ],
+  "traits": [
+   "Set collection",
+   "Multi-track",
+   "Parallel engine",
+   "Tableau multipliers",
+   "Deck or bag building"
+  ],
+  "videos": [
+   {
+    "title": " Great Western Trail Segunda Edición Juego de Mesa - Tutorial",
+    "link": "http://www.youtube.com/watch?v=4sZqB6p3VHY",
+    "who": "Absurdmeeple",
+    "lang": "Spanish"
+   },
+   {
+    "title": "Great Western Trail SOLO Opstelling",
+    "link": "http://www.youtube.com/watch?v=u3OyVN96QR0",
+    "who": "VifDolceStanza",
+    "lang": "Dutch"
+   },
+   {
+    "title": "[會員無廣告] 大西部開拓者 ????? ??????? ????? (?????? ???????) | 策略排行前 20的遊戲第二代! 就算牛仔很忙，也要學會! #中文字幕 #桌遊 #肥龍教學",
+    "link": "http://www.youtube.com/watch?v=bTdzJngCoHQ",
+    "who": "czeslaw6300149",
+    "lang": "Chinese"
+   }
+  ],
+  "image": "https://cf.geekdo-images.com/gDn7AhrDlmfCLSz9ZqoNFQ__original/img/yecB1xO32nnjBAyskVOTq9LBuLo=/0x0/filters:format(jpeg)/pic5988511.jpg",
+  "interaction": "Low",
+  "interaction_shared": 0.25,
+  "poll": {
+   "1": {
+    "Best": 20,
+    "Recommended": 148,
+    "Not Recommended": 63
+   },
+   "2": {
+    "Best": 70,
+    "Recommended": 197,
+    "Not Recommended": 20
+   },
+   "3": {
+    "Best": 227,
+    "Recommended": 54,
+    "Not Recommended": 4
+   },
+   "4": {
+    "Best": 62,
+    "Recommended": 159,
+    "Not Recommended": 36
+   },
+   "4+": {
+    "Best": 0,
+    "Recommended": 1,
+    "Not Recommended": 147
+   }
+  },
+  "ai": {
+   "confidence": "high",
+   "summary": "Players build a personal deck of cattle cards and repeatedly drive herds down the trail from Texas to Kansas City, visiting buildings along the way to upgrade cards, hire staff, and manage hazards before cashing in the herd for money and points. Over several trips the trail fills up with buildings (yours and others'), a shared railroad gets extended westward, and your deck/tableau snowballs into a tight personal engine.",
+   "praised": [
+    "deeply interlocking systems (deck building, hand management, worker placement, railroad) that mesh without feeling bloated",
+    "high replayability from randomized building setup each game",
+    "satisfying sense of engine progression across multiple trail runs",
+    "meaningful, tense decisions on nearly every turn"
+   ],
+   "criticised": [
+    "steep rules overhead and long first play/teach",
+    "analysis paralysis from the sheer number of viable strategies",
+    "can feel mean when opponents build on prime trail spots you wanted and charge you fees",
+    "early turns can feel slow before engines come online"
+   ],
+   "interaction": {
+    "level": "Medium",
+    "kind": "shared board contested via building placement and fees, racing for limited spots",
+    "detail": "The trail, Kansas City building plots, and the railroad track are a shared, contested space: players build on specific spots (locking others out or forcing them to pay a toll to use your building), race to be first to deliver along the delivery track for bonus points, and compete for limited jobs and railroad stations. Each player's own deck, hand, and personal tableau of workers/buildings remain private and non-interactive, so most turns are solitaire-engine optimization punctuated by contested placement moments."
+   },
+   "scoring": {
+    "subsystems": [
+     "cattle delivery to Kansas City",
+     "building network (constructing and renting out buildings)",
+     "railroad (track, stations, Engineers)",
+     "hazards/objectives (Cowboys removing hazards, certificates)"
+    ],
+    "sources": [
+     "points from delivery track position each time you reach Kansas City",
+     "bonus points for being first to reach certain cities",
+     "points from buildings you've constructed (value increases with building tier)",
+     "points from railroad stations built and track placement",
+     "points from hazards removed via Cowboys",
+     "objective/certificate tiles collected during the game",
+     "leftover money converted to points at game end",
+     "bonus from highest-value Engineer/worker tracks"
+    ],
+    "winning_score": 130,
+    "tally": "mixed",
+    "shape": "sum",
+    "ends_by": [
+     "end_trigger",
+     "fixed_length"
+    ],
+    "how_you_win": "The game ends once the building-construction track in San Francisco is filled (or after a fixed number of rounds in some variants), and whoever has accumulated the most total points from deliveries, buildings, railroad, hazards, objectives, and leftover cash wins."
+   },
+   "similar": [
+    {
+     "name": "Brass: Birmingham",
+     "id": "224517"
+    },
+    {
+     "name": "Teotihuacan: City of Gods",
+     "id": "229853"
+    },
+    {
+     "name": "Mombasa",
+     "id": "172386"
+    },
+    {
+     "name": "Maracaibo",
+     "id": "276025"
+    },
+    {
+     "name": "Barrage",
+     "id": "251247"
+    }
+   ],
+   "teachers": [
+    "Watch It Played",
+    "Rahdo Runs Through",
+    "JonGetsGames"
+   ],
+   "_fingerprint": "1e88dd766c3f95f9",
+   "_name": "Great Western Trail: Second Edition"
+  },
+  "plays": 1,
+  "my_rating": null,
+  "edited": "2026-10-15",
+  "comment": "(shrink)",
+  "last_played": "2026-08-27"
+ },
+ {
   "id": "111341",
   "name": "The Great Zimbabwe",
   "alt_names": [],
@@ -39630,11 +39840,11 @@
     },
     {
      "name": "1846",
-     "id": null
+     "id": "17405"
     },
     {
      "name": "1889: Shikoku Railways",
-     "id": null
+     "id": "23540"
     },
     {
      "name": "Irish Gauge",

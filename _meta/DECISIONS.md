@@ -735,10 +735,15 @@ With reduced motion the wheel jumps to the result and there is no confetti.
 ## D-31 — Wheel themes are data
 
 The wheel has themes — Stage (dark oak and gold on a circus stage, art-deco
-lettering), Spotlight (the jewel-coloured wheel on the red-black stage, with
-the playful lettering) and Classic (the jewel wheel on the plain card it
-started on, no stage or lights) — switched by a small button beside the
-sound, remembered in localStorage, and carried in a spin link (`t`) so
+lettering), Spotlight (the jewel-coloured wheel on the red-black stage, cones
+of light sweeping over it, the playful lettering), Classic (the jewel wheel
+on the plain card it started on), Neon (synthwave: a striped sunset sun and a
+running grid, cyan neon and hot pink), Casino (a roulette wheel on green
+felt, red and black with a green seam, ivory serif, chrome and gold), Nordic
+(muted wedges on paper, charcoal, quiet), Ocean (teal and navy with one
+coral, light rays and bubbles, pearl and aqua metal) and Diner (cherry,
+cream, teal, mustard and navy in chrome, a checkerboard floor, a jukebox
+script) — chosen from a small list beside the sound, remembered in localStorage, and carried in a spin link (`t`) so
 everyone who replays a spin sees the wheel it was sent in (for that spin
 only; the receiver's own choice is left alone).
 
@@ -752,8 +757,16 @@ jewel palette), the names' ink and font, the lines, rim, pins and hub; the
 countdown's, "Spinning!"'s and the winner's colours; the shade levels of
 the lights; whether the camera closes in on the stick as the wheel runs
 down; how far it zooms. Every theme ends on the winner's cover, zoomed and
-lifted. A new look is a new entry (and, if it needs one, a CSS block keyed
-on its `data-theme`).
+lifted. Rims, pins and hubs are a named metal
+(`WHEEL_METALS`: brass, gilt, chrome, pearl, aqua) or a flat colour that may
+glow; the winner's outline and the stick are the theme's too — a gold
+outline that looked right on a dark wheel looked wrong on a light one. A new
+look is a new entry and, for its scenery, a CSS block keyed on its
+`data-theme`: the card's background, a `::before` and `::after` for its
+props (sun, grid, felt, rays, bubbles, checkerboard), and the `--show-*`,
+`--pill-*`, `--sc-*`, `--pool-*` variables for its lettering, pill,
+controls and lights. The lifted cover casts a soft, dark two-layer shadow
+in every theme so it stands out on any of them.
 
 What a theme never touches: the draw, the throws, the physics, the timing,
 the ending — a seed is the same spin in every theme, checked by preparing

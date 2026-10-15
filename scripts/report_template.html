@@ -1791,6 +1791,16 @@ td.c-add { text-align:right; white-space:nowrap; }
 .wheelpop[data-theme=diner] .wheelbtns .trayclear { background:#fff;
   border-color:#1d3557; color:#1d3557; }
 
+/* While the wheel is busy (wheelBusy): everything but the wheel, the close
+   and the sound buttons fades away, the scrim with it, so the theme's
+   picture shows whole. */
+.wheelcard > .wheelresult, .wheelcard > .wheelseed, .wheelcard > .wheellink,
+.wheelcard > .wheelbtns, .wheelcard > .wheelthemes { transition:opacity .45s ease; }
+.wheelcard.busy > .wheelresult, .wheelcard.busy > .wheelseed,
+.wheelcard.busy > .wheellink, .wheelcard.busy > .wheelbtns,
+.wheelcard.busy > .wheelthemes { opacity:0; pointer-events:none; }
+.wheelpop[data-scene=on] .wheelcard::after { transition:opacity .6s ease; }
+.wheelpop[data-scene=on] .wheelcard.busy::after { opacity:0; }
 /* Lettering optically centred in its pill or button: a line box keeps room
    for descenders that capitals never use, so caps sat high. Trimmed to the
    cap height and the baseline instead, with the padding grown to match.
@@ -5775,6 +5785,7 @@ function countdown(then) {
   var box = el('wheelcount');
   hideTapPill();
   setSeedBusy(true);
+  wheelBusy(true);
   clearTimeout(wheel.countT);
   if (reducedMotion()) { box.innerHTML = ''; then(); return; }
   var k = 0;
@@ -6330,6 +6341,14 @@ function wheelZoom(on, instant) {
 function stageSpinning(on) {
   var c = document.querySelector('.wheelcard');
   if (c) c.classList.toggle('spinning', !!on);
+  if (!on) wheelBusy(false);
+}
+/** From the countdown until the wheel stops, the answer and the controls
+ *  fade away — only the close and sound buttons stay — and the theme's
+ *  picture shows whole; they come back when it stops. */
+function wheelBusy(on) {
+  var c = document.querySelector('.wheelcard');
+  if (c) c.classList.toggle('busy', !!on);
 }
 function stageFlare() {
   var c = document.querySelector('.wheelcard');

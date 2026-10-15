@@ -4445,8 +4445,12 @@ WHEEL_G.py = WHEEL_G.rp + 0.003 + WHEEL_G.Ls;   // the tip rests level with the 
 // speed in the first seconds; mu: a light constant friction, so what is left
 // dies out slowly over the last two or three sectors — and light enough that
 // the stick (kappa) can push a wheel stopped against a pin back off it.
+// release: on a pin's far side the stick's tip slides off fast and most of
+// its spring goes into its own swing — only this share pushes the wheel on.
+// At full share a wheel that crawled over its last pin was flung half a
+// sector further, and a close call never looked like one.
 var WHEEL_P = { mu: 0.04, c: 0.6, kappa: 0.15, wf: 2 * Math.PI * 30,
-                zeta: 0.55 };
+                zeta: 0.55, release: 0.3 };
 var WHEEL_DT = 1 / 240;
 
 /* How far a peg at angle phi (from the top, coming from the left) forces the
@@ -4590,7 +4594,9 @@ function wheelSim(theta0, omega0, n, record, off) {
           // Only a stick bent away from rest pushes back on the pin; one
           // leaning the other way is being righted by the pin and its spring
           // together, and costs the wheel nothing.
-          if (psi * e.side > 0) tauW -= P.kappa * psi * e.side * slope;
+          if (psi * e.side > 0) {
+            tauW -= P.kappa * psi * e.side * slope * (slope < 0 ? P.release : 1);
+          }
         }
         e.max = Math.max(e.max, Math.abs(psi));
         e.minW = Math.min(e.minW, Math.abs(w));
@@ -5397,11 +5403,14 @@ function wheelZoomFor(n) { return n <= 24 ? 5.5 : 3.4; }
    and the lights' mark while the wheel runs down. */
 var WHEEL_STICK_PT = { x: 0.5, y: 0.13 };
 /** The camera's transform for zoom z on a point of the face (fractions),
- *  brought to the middle of the wheel's box. */
-function cameraAt(z, f) {
+ *  brought `centre` of the way (default all of it) from where it stands to
+ *  the middle of the wheel's box. */
+function cameraAt(z, f, centre) {
+  var c = centre === undefined ? 1 : centre;
   var fx = 0.0238 + 0.9524 * f.x, fy = 0.143 + 0.9524 * f.y;   // in W
-  return 'translate(' + ((0.5 - z * fx) * 100).toFixed(2) + '%,' +
-    ((47 / 84 - z * fy) * 42 / 47 * 100).toFixed(2) + '%) scale(' + z.toFixed(3) + ')';
+  var sx = fx + (0.5 - fx) * c, sy = fy + (47 / 84 - fy) * c;  // where it goes
+  return 'translate(' + ((sx - z * fx) * 100).toFixed(2) + '%,' +
+    ((sy - z * fy) * 42 / 47 * 100).toFixed(2) + '%) scale(' + z.toFixed(3) + ')';
 }
 /** The run-down: in on the stick by up to 2×, frame by frame with the
  *  wheel (w from 0 to 1), drawn at that finer resolution from the start. */
@@ -5416,7 +5425,9 @@ function wheelApproach(w) {
     card.classList.add('zoomed');
   }
   zb.style.transition = 'none';
-  zb.style.transform = cameraAt(1 + (WHEEL_APPROACH_ZOOM - 1) * w, WHEEL_STICK_PT);
+  // About the stick where it stands, drifting it a little towards the
+  // middle as it goes — from exactly the whole wheel, so nothing jumps.
+  zb.style.transform = cameraAt(1 + (WHEEL_APPROACH_ZOOM - 1) * w, WHEEL_STICK_PT, 0.35 * w);
 }
 
 /* The camera. In: the wheel scaled up about the winner's focus point

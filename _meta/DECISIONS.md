@@ -635,7 +635,9 @@ gold once called, the only way to find one sliver in a thousand.
 
 As the wheel runs down (from its fourth-last pin, at most three seconds
 before it stops) the lights close in on the stick and the camera eases in
-on it, to 2× — tension without a tell, since every sector passes the stick.
+on it, to 2× — about the stick where it stands, drifting it a little
+towards the middle, so it starts from exactly the whole wheel and nothing
+jumps — tension without a tell, since every sector passes the stick.
 Only once the wheel has stopped — never during the last pins, which would
 give a close call away before it is decided — do the lights swing to the
 winner and the camera push in, quickly, on its cover (on its sector's
@@ -718,7 +720,9 @@ throw of two to five turns a second loses half its speed in about a second
 and the last three or four sectors are a slow crawl, in nine to eleven and
 a half seconds all told; the stick is stiff enough (kappa 0.15) that a stopped wheel with a pin pressed against the bent stick is
 pushed back off it, as a real flapper does, instead of freezing with the
-stick balanced on the pin.
+stick balanced on the pin. On a pin's far side the stick's tip slides off fast,
+so only 30% of its spring pushes the wheel on (`release`); the rest goes
+into its own swing.
 
 Browsers only let a page play sound after a click, and an audio context
 made before one (a sent spin opens on load) stays suspended until resumed

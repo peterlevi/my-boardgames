@@ -5677,21 +5677,217 @@ function rewindWheel(to, then) {
    clack, the same winner. They ride in the address as `spin=` while the
    wheel is open, and the wheel shows the link. */
 function setSpinLink(from, v, seed, off) {
-  wheel.link = encodeURIComponent(JSON.stringify({
+  wheel.link = setSpinText({
     e: wheel.entries.map(function (e) { return isFree(e) ? { t: e.t } : DATA[e].id; }),
     l: wheel.entries.map(function (e, k) {
       return wheel.labels[k] !== entryName(e) ? wheel.labels[k] : 0;
     }),
     r: from,
     v: v,
-    o: off || undefined,
+    o: off,
     s: seed,
     t: wheelTheme().id
-  }));
+  });
   wheel.linkArgs = [from, v, seed, off];
+  // A fresh spin is something to send, so the address shows it short.
+  shortFor = encodeState();
   writeUrl(false);
-  el('wheellinkurl').value = location.href;
+  el('wheellinkurl').value = shareUrl();
   el('wheellink').classList.remove('off');
+}
+
+/* A spin as the text `spin=` carries. One spelling for every spin — nothing
+   empty written — because a short link is trusted only when it unpacks to
+   exactly this. */
+function setSpinText(o) {
+  return encodeURIComponent(JSON.stringify({
+    e: o.e,
+    l: (o.l || []).map(function (l) { return l || 0; }),
+    r: o.r,
+    v: o.v,
+    o: o.o || undefined,
+    s: o.s || undefined,
+    t: o.t || undefined
+  }));
+}
+
+/* ---- short links ---------------------------------------------------------
+   The address is a view plus, when the wheel is open, a whole spin as JSON:
+   percent-encoded, a sent spin ran to well over a thousand characters, and a
+   seed typed in Cyrillic cost six of them a letter. A short link carries the
+   same address, packed: `z=` and base64 of a little byte format. Unpacked, it
+   is the long address again, character for character, so everything that
+   reads the address only ever sees the long one.
+
+   The format is versioned by its first byte. Keys are numbered by their place
+   in HASH_KEYS, so that list may only ever grow at the end. */
+var HASH_KEYS = ['q', 'players', 'mode', 'salad', 'exp', 'ix', 'tagmode',
+  'wband', 'tband', 'played', 'smin', 'smax', 'mymin', 'mymax', 'plmin',
+  'plmax', 'ymin', 'ymax', 'tags', 'sort', 'rank', 'sel', 'pick', 'spin', 'g'];
+
+function packHash(hash) {
+  var out = [];
+  function uint(n) {
+    while (n >= 128) { out.push(n % 128 + 128); n = Math.floor(n / 128); }
+    out.push(n);
+  }
+  function f64(x) {
+    var b = new Uint8Array(new Float64Array([x]).buffer);
+    for (var i = 0; i < 8; i++) out.push(b[i]);
+  }
+  // Text one byte a letter whenever it fits in ASCII plus one 128-letter
+  // block of Unicode — Cyrillic, Greek, Hebrew… — and UTF-8 otherwise.
+  function str(s) {
+    var cps = Array.from(s, function (c) { return c.codePointAt(0); });
+    var base = null, fits = true;
+    cps.forEach(function (c) {
+      if (c < 128) return;
+      if (base === null) base = c - c % 128;
+      if (c < base || c >= base + 128) fits = false;
+    });
+    if (base === null) {
+      uint(cps.length * 3);
+      cps.forEach(function (c) { out.push(c); });
+    } else if (fits) {
+      uint(cps.length * 3 + 1);
+      uint(base / 128);
+      cps.forEach(function (c) { out.push(c < 128 ? c : c - base + 128); });
+    } else {
+      var u = unescape(encodeURIComponent(s));
+      uint(u.length * 3 + 2);
+      for (var i = 0; i < u.length; i++) out.push(u.charCodeAt(i));
+    }
+  }
+  function spin(o) {
+    var keys = [], at = {};
+    o.e.forEach(function (it) {
+      var k = JSON.stringify(it);
+      if (!(k in at)) { at[k] = keys.length; keys.push(it); }
+    });
+    uint(keys.length);
+    keys.forEach(function (it) {
+      if (typeof it === 'string' && /^[1-9]\d{0,14}$/.test(it)) uint(Number(it) * 2);
+      else { uint(1); str(JSON.stringify(it)); }
+    });
+    uint(o.e.length);
+    o.e.forEach(function (it) { uint(at[JSON.stringify(it)]); });
+    // Names are mostly a few words shared across the list ("Ana Azul",
+    // "Ana Root"), so each is written as places in one list of words.
+    var words = [], wat = {};
+    var labels = (o.l || []).map(function (l) {
+      if (typeof l !== 'string' || !l) return null;
+      return l.split(' ').map(function (w) {
+        if (!(w in wat)) { wat[w] = words.length; words.push(w); }
+        return wat[w];
+      });
+    });
+    uint(words.length);
+    words.forEach(str);
+    o.e.forEach(function (_, k) {
+      var l = labels[k];
+      uint(l ? l.length + 1 : 0);
+      (l || []).forEach(uint);
+    });
+    f64(o.r);
+    f64(o.v);
+    var has = (typeof o.o === 'number' ? 1 : 0) | (o.s ? 2 : 0) | (o.t ? 4 : 0);
+    uint(has);
+    if (has & 1) f64(o.o);
+    if (has & 2) str(String(o.s));
+    if (has & 4) str(String(o.t));
+  }
+  out.push(1);
+  var parts = hash ? hash.split('&') : [];
+  uint(parts.length);
+  parts.forEach(function (bit) {
+    var i = bit.indexOf('='), key = i < 0 ? bit : bit.slice(0, i);
+    var raw = i < 0 ? '' : bit.slice(i + 1), val = null;
+    try { val = decodeURIComponent(raw); } catch (e) { /* kept raw */ }
+    var n = HASH_KEYS.indexOf(key), o = null;
+    if (key === 'spin' && val !== null) {
+      try { o = JSON.parse(val); } catch (e) { o = null; }
+      if (!o || !Array.isArray(o.e) || typeof o.r !== 'number' || typeof o.v !== 'number' ||
+          setSpinText(o) !== raw) o = null;
+    }
+    // Only what unpacks to the very same characters is packed by meaning;
+    // anything else rides along as the text it was.
+    var exact = val !== null && encodeURIComponent(val) === raw && i >= 0;
+    var kind = o ? 2 : exact ? 1 : 0;
+    uint((n < 0 ? 0 : n + 1) * 3 + kind);
+    if (n < 0) str(key);
+    if (kind === 2) spin(o);
+    else str(kind === 1 ? val : bit.slice(key.length));
+  });
+  var bin = String.fromCharCode.apply(null, out);
+  return 'z=' + btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+/* The long address a short one stands for, or null if it is not one. */
+function unpackHash(hash) {
+  var m = /^z=([A-Za-z0-9_-]+)$/.exec(hash || '');
+  if (!m) return null;
+  try {
+    var b64 = m[1].replace(/-/g, '+').replace(/_/g, '/');
+    var bin = atob(b64 + '==='.slice((b64.length + 3) % 4));
+    var p = 0;
+    var byte = function () {
+      if (p >= bin.length) throw new Error('short');
+      return bin.charCodeAt(p++);
+    };
+    var uint = function () {
+      var n = 0, mul = 1, b;
+      do { b = byte(); n += (b % 128) * mul; mul *= 128; } while (b >= 128);
+      return n;
+    };
+    var f64 = function () {
+      var b = new Uint8Array(8);
+      for (var i = 0; i < 8; i++) b[i] = byte();
+      return new Float64Array(b.buffer)[0];
+    };
+    var str = function () {
+      var h = uint(), len = Math.floor(h / 3), kind = h % 3, s = '', i;
+      if (kind === 2) {
+        for (i = 0; i < len; i++) s += String.fromCharCode(byte());
+        return decodeURIComponent(escape(s));
+      }
+      var base = kind === 1 ? uint() * 128 : 0;
+      for (i = 0; i < len; i++) {
+        var c = byte();
+        s += String.fromCodePoint(c < 128 ? c : c - 128 + base);
+      }
+      return s;
+    };
+    if (byte() !== 1) return null;
+    var parts = [], np = uint();
+    for (var k = 0; k < np; k++) {
+      var h = uint(), n = Math.floor(h / 3), kind = h % 3;
+      var key = n ? HASH_KEYS[n - 1] : str();
+      if (key === undefined) return null;
+      if (kind === 0) { parts.push(key + str()); continue; }
+      if (kind === 1) { parts.push(key + '=' + encodeURIComponent(str())); continue; }
+      var keys = [], nk = uint();
+      for (var j = 0; j < nk; j++) {
+        var c = uint();
+        keys.push(c % 2 ? JSON.parse(str()) : String(c / 2));
+      }
+      var e = [], ne = uint();
+      for (j = 0; j < ne; j++) e.push(keys[uint()]);
+      var words = [], nw = uint();
+      for (j = 0; j < nw; j++) words.push(str());
+      var l = e.map(function () {
+        var c = uint(), w = [];
+        for (var q = 1; q < c; q++) w.push(words[uint()]);
+        return c ? w.join(' ') : 0;
+      });
+      var o = { e: e, l: l, r: f64(), v: f64() };
+      var has = uint();
+      if (has & 1) o.o = f64();
+      if (has & 2) o.s = str();
+      if (has & 4) o.t = str();
+      parts.push(key + '=' + setSpinText(o));
+    }
+    return p === bin.length ? parts.join('&') : null;
+  } catch (e) { return null; }
 }
 
 function readSpinLink(text) {
@@ -5744,11 +5940,12 @@ function openReplay(spin) {
   });
   trayChanged();
   // The first render has already rewritten the address without it.
+  shortFor = encodeState();
   writeUrl(false);
   el('wheel').hidden = false;
   stageLights();
   setReplayMode(true, spin.s);
-  el('wheellinkurl').value = location.href;
+  el('wheellinkurl').value = shareUrl();
   el('wheellink').classList.remove('off');
   wheelResult('');
   drawWheel();
@@ -8619,7 +8816,10 @@ function writeUrl(push) {
   // which silently throws away everything forward of it.
   if (applyingUrl || urlHeld) return;
   var enc = encodeState();
-  var url = location.pathname + location.search + (enc ? '#' + enc : '');
+  // Short while the view is still the one that was sent or spun; the first
+  // change of anything spells the address out again.
+  var shown = enc && enc === shortFor ? packHash(enc) : enc;
+  var url = location.pathname + location.search + (shown ? '#' + shown : '');
   lastUrl = enc;
   try {
     // Opening or closing a game is a navigation and gets a history entry, so
@@ -8628,6 +8828,25 @@ function writeUrl(push) {
     if (push) history.pushState(null, '', url);
     else history.replaceState(null, '', url);
   } catch (e) { /* older file:// rules: the view still works, just not the link */ }
+}
+
+/* The view the address shows packed, while nothing has changed since. */
+var shortFor = null;
+
+/* The address's view, always spelled out: a short link is unpacked here, so
+   nothing that reads the address ever has to know there are two forms. */
+function addressHash() {
+  var hash = (location.hash || '').replace(/^#/, '');
+  var long = unpackHash(hash);
+  if (long === null) return hash;
+  shortFor = long;
+  return long;
+}
+
+/* This view as a link to send: always the short form. */
+function shareUrl() {
+  var enc = encodeState();
+  return location.href.split('#')[0] + (enc ? '#' + packHash(enc) : '');
 }
 
 /* What the address last said, so a popstate or a hashchange that only echoes
@@ -8659,7 +8878,7 @@ function asOneStep(fn) {
 
 /** Returns true when the URL carried a view, so it can win over storage. */
 function readUrl() {
-  var hash = (location.hash || '').replace(/^#/, '');
+  var hash = addressHash();
   if (!hash) return false;
   var got = {};
   hash.split('&').forEach(function (bit) {
@@ -8731,7 +8950,7 @@ function readUrl() {
 /** Re-apply the whole view from the address bar. Used for the back and
  *  forward buttons, and for an address edited by hand. */
 function applyUrlState() {
-  var hash = (location.hash || '').replace(/^#/, '');
+  var hash = addressHash();
   if (hash === lastUrl) return;     // our own write echoing back
   lastUrl = hash;
   applyingUrl = true;
@@ -8828,7 +9047,7 @@ function setRanking(on) {
 
 // A sent spin, taken from the address before the first render rewrites it.
 var SENT_SPIN = (function () {
-  var m = /(?:^#|&)spin=([^&]*)/.exec(location.hash || '');
+  var m = /(?:^|&)spin=([^&]*)/.exec(addressHash());
   return m ? m[1] : null;
 })();
 loadCols();

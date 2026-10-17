@@ -5715,48 +5715,98 @@ function setSpinText(o) {
    The address is a view plus, when the wheel is open, a whole spin as JSON:
    percent-encoded, a sent spin ran to well over a thousand characters, and a
    seed typed in Cyrillic cost six of them a letter. A short link carries the
-   same address, packed: `z=` and base64 of a little byte format. Unpacked, it
-   is the long address again, character for character, so everything that
-   reads the address only ever sees the long one.
+   same address packed. Unpacked, it is the long address again, character for
+   character, so everything that reads the address only ever sees the long
+   one. Links sent before the current format was base64 bytes after `z=`
+   (version 1), and still open.
 
-   The format is versioned by its first byte. Keys are numbered by their place
-   in HASH_KEYS, so that list may only ever grow at the end. */
+   Keys are numbered by their place in HASH_KEYS, so that list may only ever
+   grow at the end. */
 var HASH_KEYS = ['q', 'players', 'mode', 'salad', 'exp', 'ix', 'tagmode',
   'wband', 'tband', 'played', 'smin', 'smax', 'mymin', 'mymax', 'plmin',
   'plmax', 'ymin', 'ymax', 'tags', 'sort', 'rank', 'sel', 'pick', 'spin', 'g'];
 
+/* Version 2: the same address at the level of bits, written as emoji, ten
+   bits each. Numbers take what they need — a place in a
+   list of six takes three bits, not a byte — and text is coded against a
+   fixed ranking of letters by how common they are, so the usual ones cost
+   four bits and the rare ones more. The rankings, HASH_KEYS and the order
+   of everything below are the format: they may only grow at the end. */
+var LINK_TEXT = [
+  // Latin: lower case by English frequency, then digits and capitals.
+  " etaoinsrhldcum" + "fpgwybvkxjqz.-1" + "023456789ETAOIN" + "SRHLDCUMFPGWYBV" +
+  "KXJQZ,'&:!?/()_",
+  // Cyrillic: Bulgarian and Russian by frequency, then capitals.
+  " оаеинтрсвлкдпм" + "зяугбчъйщшцжхью" + "фыэё.,-!?ПНСКДВ" + "МТАБГЕИЗЛОРУФХЦ" +
+  "ЧШЩЮЯЖЙЪЬЭЫЁ0123456789"
+];
+
+/* The 1024 emoji a link is written in, as runs of code points: each one an
+   emoji on its own (no joiners, skin tones or flag letters, which change
+   their neighbours), none newer than 2019 so older phones show them. Written
+   out rather than asked of the browser, whose idea of what is an emoji
+   depends on its age — and the list is the format, so it never changes. */
+var LINK_EMOJI = (function () {
+  var runs = [
+    [0x1F300, 0x1F320], [0x1F32D, 0x1F335], [0x1F337, 0x1F37C], [0x1F37E,
+    0x1F393], [0x1F3A0, 0x1F3CA], [0x1F3CF, 0x1F3D3], [0x1F3E0, 0x1F3F0],
+    0x1F3F4, [0x1F3F8, 0x1F3FA], [0x1F400, 0x1F43E], 0x1F440, [0x1F442,
+    0x1F4FC], [0x1F4FF, 0x1F53D], [0x1F54B, 0x1F54E], [0x1F550, 0x1F567],
+    0x1F57A, [0x1F595, 0x1F596], 0x1F5A4, [0x1F5FB, 0x1F64F], [0x1F680,
+    0x1F6C5], 0x1F6CC, [0x1F6D0, 0x1F6D2], [0x1F6D5, 0x1F6D7], [0x1F6DC,
+    0x1F6DF], [0x1F6EB, 0x1F6EC], [0x1F6F4, 0x1F6FC], [0x2614, 0x2615],
+    [0x2648, 0x2653], 0x267F, 0x2693, 0x26A1, [0x26AA, 0x26AB], [0x26BD,
+    0x26BE], [0x26C4, 0x26C5], 0x26CE, 0x26D4, 0x26EA, [0x26F2, 0x26F3],
+    0x26F5, 0x26FA, 0x26FD, 0x2705, [0x270A, 0x270B], 0x2728, 0x274C,
+    0x274E, [0x2753, 0x2755], 0x2757, [0x2795, 0x2797], 0x27B0, 0x27BF,
+    0x1F004, 0x1F0CF, 0x1F18E, [0x1F191, 0x1F19A], 0x1F201, 0x1F21A,
+    0x1F22F, [0x1F232, 0x1F236], [0x1F238, 0x1F23A], [0x1F250, 0x1F251],
+    [0x1F90C, 0x1F93A], [0x1F93C, 0x1F945], [0x1F947, 0x1F9AF], [0x1F9B4,
+    0x1F9F3]
+  ];
+  var abc = [];
+  runs.forEach(function (r) {
+    var a = typeof r === 'number' ? r : r[0], b = typeof r === 'number' ? r : r[1];
+    for (var c = a; c <= b; c++) abc.push(String.fromCodePoint(c));
+  });
+  return abc;
+})();
+var LINK_EMOJI_AT = {};
+LINK_EMOJI.forEach(function (e, i) { LINK_EMOJI_AT[e] = i; });
+
 function packHash(hash) {
-  var out = [];
-  function uint(n) {
-    while (n >= 128) { out.push(n % 128 + 128); n = Math.floor(n / 128); }
-    out.push(n);
+  var bits = [];
+  function put(n, w) { for (var i = w - 1; i >= 0; i--) bits.push(Math.floor(n / Math.pow(2, i)) % 2); }
+  // Exp-Golomb: small numbers in few bits, any number possible.
+  function num(n) {
+    var w = Math.floor(Math.log2(n + 1));
+    put(0, w); put(n + 1, w + 1);
   }
+  function width(count) { return count > 1 ? Math.ceil(Math.log2(count)) : 0; }
   function f64(x) {
     var b = new Uint8Array(new Float64Array([x]).buffer);
-    for (var i = 0; i < 8; i++) out.push(b[i]);
+    for (var i = 7; i >= 0; i--) put(b[i], 8);
   }
-  // Text one byte a letter whenever it fits in ASCII plus one 128-letter
-  // block of Unicode — Cyrillic, Greek, Hebrew… — and UTF-8 otherwise.
-  function str(s) {
-    var cps = Array.from(s, function (c) { return c.codePointAt(0); });
-    var base = null, fits = true;
-    cps.forEach(function (c) {
-      if (c < 128) return;
-      if (base === null) base = c - c % 128;
-      if (c < base || c >= base + 128) fits = false;
+  function textCost(s, t) {
+    var cost = 0, table = LINK_TEXT[t];
+    Array.from(s).forEach(function (c) {
+      var r = table.indexOf(c);
+      cost += r < 0 ? 4 * (Math.floor(table.length / 15) + 1) + 21 : 4 * (Math.floor(r / 15) + 1);
     });
-    if (base === null) {
-      uint(cps.length * 3);
-      cps.forEach(function (c) { out.push(c); });
-    } else if (fits) {
-      uint(cps.length * 3 + 1);
-      uint(base / 128);
-      cps.forEach(function (c) { out.push(c < 128 ? c : c - base + 128); });
-    } else {
-      var u = unescape(encodeURIComponent(s));
-      uint(u.length * 3 + 2);
-      for (var i = 0; i < u.length; i++) out.push(u.charCodeAt(i));
-    }
+    return cost;
+  }
+  function text(s) {
+    var t = textCost(s, 1) < textCost(s, 0) ? 1 : 0, table = LINK_TEXT[t];
+    var cs = Array.from(s);
+    put(t, 1);
+    num(cs.length);
+    cs.forEach(function (c) {
+      var r = table.indexOf(c), esc = r < 0;
+      if (esc) r = table.length;
+      for (var k = 0; k < Math.floor(r / 15); k++) put(15, 4);
+      put(r % 15, 4);
+      if (esc) put(c.codePointAt(0), 21);
+    });
   }
   function spin(o) {
     var keys = [], at = {};
@@ -5764,15 +5814,17 @@ function packHash(hash) {
       var k = JSON.stringify(it);
       if (!(k in at)) { at[k] = keys.length; keys.push(it); }
     });
-    uint(keys.length);
+    num(keys.length);
     keys.forEach(function (it) {
-      if (typeof it === 'string' && /^[1-9]\d{0,14}$/.test(it)) uint(Number(it) * 2);
-      else { uint(1); str(JSON.stringify(it)); }
+      if (typeof it === 'string' && /^[1-9]\d{0,14}$/.test(it)) {
+        put(0, 1);
+        var w = Number(it).toString(2).length;
+        num(w); put(Number(it), w);
+      } else { put(1, 1); text(JSON.stringify(it)); }
     });
-    uint(o.e.length);
-    o.e.forEach(function (it) { uint(at[JSON.stringify(it)]); });
-    // Names are mostly a few words shared across the list ("Ana Azul",
-    // "Ana Root"), so each is written as places in one list of words.
+    num(o.e.length);
+    var kw = width(keys.length);
+    o.e.forEach(function (it) { put(at[JSON.stringify(it)], kw); });
     var words = [], wat = {};
     var labels = (o.l || []).map(function (l) {
       if (typeof l !== 'string' || !l) return null;
@@ -5781,52 +5833,134 @@ function packHash(hash) {
         return wat[w];
       });
     });
-    uint(words.length);
-    words.forEach(str);
+    num(words.length);
+    words.forEach(text);
+    var ww = width(words.length);
     o.e.forEach(function (_, k) {
       var l = labels[k];
-      uint(l ? l.length + 1 : 0);
-      (l || []).forEach(uint);
+      num(l ? l.length : 0);
+      (l || []).forEach(function (i) { put(i, ww); });
     });
     f64(o.r);
     f64(o.v);
-    var has = (typeof o.o === 'number' ? 1 : 0) | (o.s ? 2 : 0) | (o.t ? 4 : 0);
-    uint(has);
-    if (has & 1) f64(o.o);
-    if (has & 2) str(String(o.s));
-    if (has & 4) str(String(o.t));
+    put(typeof o.o === 'number' ? 1 : 0, 1);
+    if (typeof o.o === 'number') f64(o.o);
+    put(o.s ? 1 : 0, 1);
+    if (o.s) text(String(o.s));
+    put(o.t ? 1 : 0, 1);
+    if (o.t) text(String(o.t));
   }
-  out.push(1);
+  put(2, 8);
   var parts = hash ? hash.split('&') : [];
-  uint(parts.length);
+  num(parts.length);
   parts.forEach(function (bit) {
     var i = bit.indexOf('='), key = i < 0 ? bit : bit.slice(0, i);
-    var raw = i < 0 ? '' : bit.slice(i + 1), val = null;
+    var raw = i < 0 ? '' : bit.slice(i + 1), val = null, o = null;
     try { val = decodeURIComponent(raw); } catch (e) { /* kept raw */ }
-    var n = HASH_KEYS.indexOf(key), o = null;
     if (key === 'spin' && val !== null) {
       try { o = JSON.parse(val); } catch (e) { o = null; }
       if (!o || !Array.isArray(o.e) || typeof o.r !== 'number' || typeof o.v !== 'number' ||
           setSpinText(o) !== raw) o = null;
     }
-    // Only what unpacks to the very same characters is packed by meaning;
-    // anything else rides along as the text it was.
     var exact = val !== null && encodeURIComponent(val) === raw && i >= 0;
-    var kind = o ? 2 : exact ? 1 : 0;
-    uint((n < 0 ? 0 : n + 1) * 3 + kind);
-    if (n < 0) str(key);
-    if (kind === 2) spin(o);
-    else str(kind === 1 ? val : bit.slice(key.length));
+    var n = HASH_KEYS.indexOf(key);
+    num(n + 1);
+    if (n < 0) text(key);
+    put(o ? 2 : exact ? 1 : 0, 2);
+    if (o) spin(o);
+    else text(exact ? val : bit.slice(key.length));
   });
-  var bin = String.fromCharCode.apply(null, out);
-  return 'z=' + btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  var s = '';
+  while (bits.length % 10) bits.push(0);
+  for (var j = 0; j < bits.length; j += 10) {
+    var c = 0;
+    for (var q = 0; q < 10; q++) c = c * 2 + bits[j + q];
+    s += LINK_EMOJI[c];
+  }
+  return s;
 }
 
-/* The long address a short one stands for, or null if it is not one. */
+function unpackV2(emoji) {
+  var bits = [], chars = Array.from(emoji);
+  for (var i = 0; i < chars.length; i++) {
+    var c = LINK_EMOJI_AT[chars[i]];
+    if (c === undefined) return null;
+    for (var q = 9; q >= 0; q--) bits.push(Math.floor(c / Math.pow(2, q)) % 2);
+  }
+  var p = 0;
+  function get(w) {
+    var n = 0;
+    for (var k = 0; k < w; k++) {
+      if (p >= bits.length) throw new Error('short');
+      n = n * 2 + bits[p++];
+    }
+    return n;
+  }
+  function num() {
+    var w = 0;
+    while (get(1) === 0) { if (++w > 52) throw new Error('bad'); }
+    return Math.pow(2, w) + get(w) - 1;
+  }
+  function width(count) { return count > 1 ? Math.ceil(Math.log2(count)) : 0; }
+  function f64() {
+    var b = new Uint8Array(8);
+    for (var k = 7; k >= 0; k--) b[k] = get(8);
+    return new Float64Array(b.buffer)[0];
+  }
+  function text() {
+    var table = LINK_TEXT[get(1)], len = num(), s = '';
+    for (var k = 0; k < len; k++) {
+      var r = 0, d;
+      while ((d = get(4)) === 15) r += 15;
+      r += d;
+      s += r < table.length ? table[r] : String.fromCodePoint(get(21));
+    }
+    return s;
+  }
+  if (get(8) !== 2) return null;
+  var parts = [], np = num();
+  for (var k = 0; k < np; k++) {
+    var n = num() - 1, key = n < 0 ? text() : HASH_KEYS[n];
+    if (key === undefined) return null;
+    var kind = get(2);
+    if (kind === 0) { parts.push(key + text()); continue; }
+    if (kind === 1) { parts.push(key + '=' + encodeURIComponent(text())); continue; }
+    var keys = [], nk = num();
+    for (var j = 0; j < nk; j++) {
+      keys.push(get(1) ? JSON.parse(text()) : String(get(num())));
+    }
+    var e = [], ne = num(), kw = width(nk);
+    for (j = 0; j < ne; j++) e.push(keys[get(kw)]);
+    var words = [], nw = num();
+    for (j = 0; j < nw; j++) words.push(text());
+    var ww = width(nw);
+    var l = e.map(function () {
+      var c = num(), w = [];
+      for (var q = 0; q < c; q++) w.push(words[get(ww)]);
+      return c ? w.join(' ') : 0;
+    });
+    var o = { e: e, l: l, r: f64(), v: f64() };
+    if (get(1)) o.o = f64();
+    if (get(1)) o.s = text();
+    if (get(1)) o.t = text();
+    if (e.some(function (x) { return x === undefined; })) return null;
+    parts.push(key + '=' + setSpinText(o));
+  }
+  // Only the padding of the last character may be left, and it is zeros.
+  if (bits.length - p >= 10 || bits.slice(p).some(function (b) { return b; })) return null;
+  return parts.join('&');
+}
+
+/* The long address a short one stands for, or null if it is not one:
+   version 2 in emoji, or version 1 as `z=` and base64. */
 function unpackHash(hash) {
-  var m = /^z=([A-Za-z0-9_-]+)$/.exec(hash || '');
-  if (!m) return null;
   try {
+    var packed = hash || '';
+    // The browser hands the fragment back percent-encoded.
+    if (/^%(E2|F0)/i.test(packed)) packed = decodeURIComponent(packed);
+    if (/^[^\x00-\x7F]/.test(packed)) return unpackV2(packed);
+    var m = /^z=([A-Za-z0-9_-]+)$/.exec(packed);
+    if (!m) return null;
     var b64 = m[1].replace(/-/g, '+').replace(/_/g, '/');
     var bin = atob(b64 + '==='.slice((b64.length + 3) % 4));
     var p = 0;

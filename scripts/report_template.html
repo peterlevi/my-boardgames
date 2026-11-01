@@ -426,6 +426,11 @@ td.designer .more { color:var(--muted); }
               background:var(--accent); color:var(--bg); }
 .headmeta a { color:var(--accent); }
 .headmeta a:hover { color:var(--ink); }
+/* "Open on BGG" and BGG's credit wrap as one unit, with a clear gap
+   between them; the logo is one line tall. */
+.bggbits { display:inline-flex; align-items:center; gap:26px; }
+.poweredby { display:inline-flex; }
+.poweredby img { height:1.5em; width:auto; display:block; }
 /* "More filters" on the left, "Reset filters" hard right — level with it, and
    in the same column as the columns button further down. */
 .filterbar { display:flex; align-items:flex-start; gap:16px;
@@ -2237,7 +2242,7 @@ td.c-add { text-align:right; white-space:nowrap; }
   <h1><a id="home" href="#" title="Back to the whole collection — clears the
     filters, the sort and any open game">__HEADLINE__</a></h1>
 </div>
-<p class="headmeta"><span id="counts">__COUNTS__</span><!--__BADGE__--><!--__BGGLINK__--></p>
+<p class="headmeta"><span id="counts">__COUNTS__</span><!--__BADGE__--><span class="bggbits"><!--__BGGLINK__--><!--__POWERED__--></span></p>
 </div>
 <div class="mastright">
   <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"

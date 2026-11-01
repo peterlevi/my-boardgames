@@ -1260,6 +1260,30 @@ def bgg_link(who):
             f' target="_blank" rel="noopener">Open on BGG ↗</a>')
 
 
+# BGG's terms ask every public page that uses their data to show the
+# "Powered by BGG" logo, linked back to BGG. The official file goes in
+# scripts/bgg_logo/ (see the README there) and is inlined, so the page stays
+# one self-contained file; until it is there, a plain-text credit stands in.
+BGG_LOGO_DIR = HERE / "bgg_logo"
+LOGO_TYPES = {".svg": "image/svg+xml", ".png": "image/png", ".webp": "image/webp"}
+
+
+def powered_by_bgg():
+    logo = next((f for f in sorted(BGG_LOGO_DIR.glob("powered-by-bgg.*"))
+                 if f.suffix.lower() in LOGO_TYPES), None)
+    if logo is None:
+        print("warning: no scripts/bgg_logo/powered-by-bgg.* file; the page "
+              "credits BGG in plain text instead of their logo", file=sys.stderr)
+        inner = "Powered by BGG"
+    else:
+        data = base64.b64encode(logo.read_bytes()).decode()
+        inner = (f'<img src="data:{LOGO_TYPES[logo.suffix.lower()]};base64,{data}"'
+                 f' alt="Powered by BGG">')
+    return (f'<a class="poweredby" href="https://boardgamegeek.com" '
+            f'target="_blank" rel="noopener" title="Data from BoardGameGeek">'
+            f'{inner}</a>')
+
+
 def badge(label):
     label = label.strip()[:24]
     return f'<span class="ownerbadge">{esc(label)}</span>' if label else ""
@@ -1484,6 +1508,7 @@ def main():
         "__COUNTS__": esc(counts(data)),
         "<!--__BGGLINK__-->": bgg_link(links_to),
         "<!--__BADGE__-->": badge(a.badge),
+        "<!--__POWERED__-->": powered_by_bgg(),
         "__NGAMES__": str(sum(1 for g in data if not g["exp"])),
         "__NEXP__": str(sum(1 for g in data if g["exp"])),
     })

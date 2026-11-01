@@ -578,4 +578,7 @@ JavaScript; a `<noscript>` note says so.
 
 MIT for the code. The collection data under `data/` is BoardGameGeek's,
 retrieved through their API and subject to
-[their terms of use](https://boardgamegeek.com/xmlapi/termsofuse).
+[their terms of use](https://boardgamegeek.com/xmlapi/termsofuse). Those
+terms ask public pages to show the "Powered by BGG" logo linked back to BGG:
+the page does, beside "Open on BGG", from the official file saved in
+`scripts/bgg_logo/` (until it is there, a plain-text credit stands in).

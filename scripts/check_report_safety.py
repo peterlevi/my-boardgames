@@ -6,13 +6,14 @@ Usage:  python3 scripts/check_report_safety.py
 Game names, comments, descriptions and opinion records are written by other
 people, so report.py must treat them as text. This copies one real game into
 a scratch data directory (MYBG_ROOT), rewrites its text fields with attacks,
-renders it with --owner and an empty --bgg-user, and checks:
+renders it with --owner, --badge and an empty --bgg-user, and checks:
 
 - the page has exactly the template's <script> elements, so "</script>" in
   a string did not end one early;
 - a name spelling a placeholder ("/*__DATA__*/") is shown, not filled;
 - a javascript: source link is dropped;
-- the title shows --owner, escaped, and there is no link to BGG.
+- the title shows --owner and the badge shows --badge, both escaped, and
+  there is no link to BGG.
 
 Exits non-zero on the first failure.
 """
@@ -22,6 +23,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ATTACK = '</script><script>alert(1)</script><!--'
 PLACEHOLDER = "/*__DATA__*/ __HEADLINE__ <!--__ROWS__-->"
+BADGE = "<b>Patron</b>"
 
 
 def hostile_game():
@@ -47,7 +49,7 @@ def main():
         out = Path(tmp) / "page.html"
         res = subprocess.run([sys.executable, str(HERE / "report.py"),
                               "--link-thumbs", f"--owner={ATTACK}",
-                              "--bgg-user=", "-o", str(out)],
+                              f"--badge={BADGE}", "--bgg-user=", "-o", str(out)],
                              env={**os.environ, "MYBG_ROOT": tmp})
         if res.returncode:
             sys.exit("FAIL: report.py could not render the hostile game")
@@ -71,6 +73,8 @@ def main():
         failures.append("--bgg-user= still links to BGG")
     if not re.search(r"<h1[^>]*>.*&lt;/script&gt;", html, re.S):
         failures.append("--owner is not in the title, escaped")
+    if '<span class="ownerbadge">&lt;b&gt;Patron&lt;/b&gt;</span>' not in html:
+        failures.append("--badge is not shown, escaped")
     for f in failures:
         print("FAIL:", f)
     if failures:

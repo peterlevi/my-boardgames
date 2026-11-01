@@ -422,6 +422,8 @@ td.designer .more { color:var(--muted); }
 .headmeta { display:flex; align-items:baseline; gap:14px; margin:2px 0 0;
   font-size:.86rem; font-weight:700; flex-wrap:wrap; }
 .headmeta #counts { color:var(--ink); }
+.ownerbadge { font-size:.8em; padding:1px 8px; border-radius:999px;
+              background:var(--accent); color:var(--bg); }
 .headmeta a { color:var(--accent); }
 .headmeta a:hover { color:var(--ink); }
 /* "More filters" on the left, "Reset filters" hard right — level with it, and
@@ -2235,7 +2237,7 @@ td.c-add { text-align:right; white-space:nowrap; }
   <h1><a id="home" href="#" title="Back to the whole collection — clears the
     filters, the sort and any open game">__HEADLINE__</a></h1>
 </div>
-<p class="headmeta"><span id="counts">__COUNTS__</span><!--__BGGLINK__--></p>
+<p class="headmeta"><span id="counts">__COUNTS__</span><!--__BADGE__--><!--__BGGLINK__--></p>
 </div>
 <div class="mastright">
   <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"

@@ -1260,6 +1260,11 @@ def bgg_link(who):
             f' target="_blank" rel="noopener">Open on BGG ↗</a>')
 
 
+def badge(label):
+    label = label.strip()[:24]
+    return f'<span class="ownerbadge">{esc(label)}</span>' if label else ""
+
+
 def root_class(a):
     """The default column state, written into <html> so the first paint is
     already right — for a browser with scripts blocked, and as the base the
@@ -1382,6 +1387,8 @@ def main():
     # them instead; --bgg-user= (empty) leaves out the link to BGG.
     ap.add_argument("--owner", help="name in the page title")
     ap.add_argument("--bgg-user", help="BGG username the page links to")
+    ap.add_argument("--badge", default="",
+                    help="a short label shown beside the counts, e.g. Patron")
     a = ap.parse_args()
     bad = [b for b in picks(a.salad) if b not in SALAD_LABEL]
     if a.salad != "any" and bad:
@@ -1476,6 +1483,7 @@ def main():
         "__HEADLINE__": esc(headline(shown_as)),
         "__COUNTS__": esc(counts(data)),
         "<!--__BGGLINK__-->": bgg_link(links_to),
+        "<!--__BADGE__-->": badge(a.badge),
         "__NGAMES__": str(sum(1 for g in data if not g["exp"])),
         "__NEXP__": str(sum(1 for g in data if g["exp"])),
     })

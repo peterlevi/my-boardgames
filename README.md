@@ -486,7 +486,8 @@ directory laid out the same way (at least `data/games.json`; `data/gallery/`
 and `data/thumbs/` if you have them). The page's code and the wheel art
 still come from this checkout. `--owner` sets the name in the title and
 `--bgg-user` the BGG collection it links to; `--bgg-user=` leaves the link
-out.
+out. `--badge` adds a short label beside the counts (the server uses it for
+a patron's "Patron" badge).
 
 ```bash
 MYBG_ROOT=/path/to/theirs python3 scripts/report.py --owner=Alex --bgg-user= \

@@ -22,8 +22,13 @@
      a tray beside the table rather than more of it. */
   --tray:#ebe5d8; --trayw:300px;
 }
+/* Dark: the system's choice unless this browser picked light with the
+   sun/moon switch, or a picked dark whatever the system says. Each dark rule
+   below comes in this pair. */
+:root { color-scheme:light; }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme:dark;
     --bg:#16150f; --panel:#201e18; --ink:#ece8df; --muted:#9b958a; --line:#332f27;
     --accent:#d3ab7d; --best:#8fd0a6; --best-bg:#1d3226; --great:#e0c477;
     --great-bg:#332d15; --warn:#e5a488; --warn-bg:#38241c;
@@ -31,6 +36,15 @@
     --m4:#6fbf8e; --m3:#a3c274; --m2:#dcbc6a; --m1:#6b665d; --hit:#6a5a22;
     --tray:#0f0d09;
   }
+}
+:root[data-theme="dark"] {
+  color-scheme:dark;
+    --bg:#16150f; --panel:#201e18; --ink:#ece8df; --muted:#9b958a; --line:#332f27;
+    --accent:#d3ab7d; --best:#8fd0a6; --best-bg:#1d3226; --great:#e0c477;
+    --great-bg:#332d15; --warn:#e5a488; --warn-bg:#38241c;
+    --chip:#2b2822; --tile:#322d25;
+    --m4:#6fbf8e; --m3:#a3c274; --m2:#dcbc6a; --m1:#6b665d; --hit:#6a5a22;
+    --tray:#0f0d09;
 }
 * { box-sizing:border-box; }
 /* `hidden` must win over any display rule, or a filtered-out row stays on
@@ -90,6 +104,20 @@ h1 a:hover { text-decoration:none; }
      the text's own cap height puts it level with the link beside it. */
   align-self:center; }
 #repo:hover { color:var(--muted); }
+/* Light or dark, whatever the system says. Shows the mode it switches to:
+   a moon on a light page, a sun on a dark one. Hidden until the page script
+   can work it. */
+#themesw { color:var(--ink); background:none; border:0; padding:0;
+  cursor:pointer; display:flex; align-items:center; align-self:center; }
+#themesw[hidden] { display:none; }
+#themesw:hover { color:var(--muted); }
+#themesw .ic-sun { display:none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) #themesw .ic-sun { display:block; }
+  :root:not([data-theme="light"]) #themesw .ic-moon { display:none; }
+}
+:root[data-theme="dark"] #themesw .ic-sun { display:block; }
+:root[data-theme="dark"] #themesw .ic-moon { display:none; }
 /* max-width:none beats the .sub rule it shares a class with, whose 75ch cap
    was squeezing the panel to half the table's width. */
 .legendbody { display:none; max-width:none; margin:10px 0 2px;
@@ -188,7 +216,10 @@ body { transition:opacity .32s ease-out; }
   min-width:100%; margin:0; padding:4px; list-style:none;
   background:var(--panel); border:1px solid var(--line); border-radius:8px;
   box-shadow:0 8px 24px rgba(0,0,0,.14); max-height:260px; overflow-y:auto; }
-:root:not([data-theme="light"]) .sellist { box-shadow:0 8px 24px rgba(0,0,0,.5); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .sellist { box-shadow:0 8px 24px rgba(0,0,0,.5); }
+}
+:root[data-theme="dark"] .sellist { box-shadow:0 8px 24px rgba(0,0,0,.5); }
 .sellist li { padding:6px 10px; border-radius:6px; cursor:pointer;
   font-size:.84rem; white-space:nowrap; }
 .sellist li[aria-selected="true"] { font-weight:700; }
@@ -233,7 +264,10 @@ body { transition:opacity .32s ease-out; }
   .colcol + .colcol { border-left:0; padding-left:0;
     border-top:1px solid var(--line); margin-top:6px; padding-top:6px; }
 }
-:root:not([data-theme="light"]) .colmenu { box-shadow:0 10px 28px rgba(0,0,0,.5); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .colmenu { box-shadow:0 10px 28px rgba(0,0,0,.5); }
+}
+:root[data-theme="dark"] .colmenu { box-shadow:0 10px 28px rgba(0,0,0,.5); }
 .colhint { text-transform:none; letter-spacing:0; opacity:.8; }
 .colfoot { margin:auto 8px 2px; padding-top:10px; }
 .colfoot .link { font-size:.8rem; padding:0; }
@@ -276,7 +310,10 @@ th.dropafter { box-shadow:inset -2px 0 0 var(--accent); }
      it says "1.5–3.5" the popup came out narrow enough for "Reset to Any" to
      land on top of the first label. */
   min-width:244px; }
-:root:not([data-theme="light"]) .vrng { box-shadow:0 10px 28px rgba(0,0,0,.5); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .vrng { box-shadow:0 10px 28px rgba(0,0,0,.5); }
+}
+:root[data-theme="dark"] .vrng { box-shadow:0 10px 28px rgba(0,0,0,.5); }
 .vbody { display:flex; gap:12px; padding:4px 0; touch-action:none;
   cursor:pointer; user-select:none; }
 /* The track's height is set per scale, one step at a time, so every slider
@@ -431,6 +468,14 @@ td.designer .more { color:var(--muted); }
 .bggbits { display:inline-flex; align-items:center; gap:26px; }
 .poweredby { display:inline-flex; }
 .poweredby img { height:1.5em; width:auto; display:block; }
+/* BGG's black-and-white logo, drawn in the page's ink: black on a light
+   page, white on a dark one. */
+.poweredby img { opacity:.85; }
+.poweredby:hover img { opacity:1; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .poweredby img { filter:invert(1); }
+}
+:root[data-theme="dark"] .poweredby img { filter:invert(1); }
 /* "More filters" on the left, "Reset filters" hard right — level with it, and
    in the same column as the columns button further down. */
 .filterbar { display:flex; align-items:flex-start; gap:16px;
@@ -608,6 +653,10 @@ a, a:hover, button.link, .linkish { text-decoration:none; }
 img.thumb { width:44px; height:44px; object-fit:contain; border-radius:7px;
   display:block; background:var(--tile); padding:2px; }
 td.thumb { width:44px; padding-right:0; }
+/* The width is the cover's own: with border-box the cell's left padding came
+   out of it, so the cover spilled 5px into the next cell, which shows once
+   that cell is tinted (rank by fit, with Rank and Votes hidden). */
+td.thumb, th.w-thumb { box-sizing:content-box; }
 /* A two-line column makes every row taller, and a 44px cover then floats in
    the middle of it. The bigger cover is keyed off the same root class the row
    padding is, so it is all rows or none — a cover that grew only on the rows
@@ -1208,10 +1257,11 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
     gap:12px; }
   /* Room for the source link beside the title, and only there: the line
      under it has the full width. */
-  .mastleft .titlebar { padding-right:34px; }
+  .mastleft .titlebar { padding-right:70px; }
   .mastright { display:block; }
   .mastright .pickbtn { width:100%; }
   .mastright #repo { position:absolute; top:0; right:0; height:1.95rem; }
+  .mastright #themesw { position:absolute; top:0; right:36px; height:1.95rem; }
 }
 
 .c-add { display:none; }
@@ -2165,6 +2215,17 @@ td.c-add { text-align:right; white-space:nowrap; }
 }
 </style>
 <script>
+/* Before anything paints: this browser's light/dark choice, if it made one.
+   MUST match THEMEKEY in the page script below. */
+(function () {
+  try {
+    var t = window.localStorage.getItem('bgg-theme');
+    if (t === 'light' || t === 'dark') {
+      document.documentElement.setAttribute('data-theme', t);
+    }
+  } catch (e) { /* storage off: the system's choice stands */ }
+})();
+
 /* Before the body parses: put this browser's saved column choice on <html>,
    so the table paints once, in its final shape. The server has already
    written the defaults there for anyone with scripts off. */
@@ -2245,6 +2306,17 @@ td.c-add { text-align:right; white-space:nowrap; }
 <p class="headmeta"><span id="counts">__COUNTS__</span><!--__BADGE__--><span class="bggbits"><!--__BGGLINK__--><!--__POWERED__--></span></p>
 </div>
 <div class="mastright">
+  <button id="themesw" type="button" hidden aria-label="Switch to dark mode"
+          title="Switch to dark mode">
+    <svg class="ic-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"
+      ><path fill="currentColor" d="M20.7 14.6A8.6 8.6 0 0 1 9.4 3.3a.8.8 0 0 0-1-1A10.2
+      10.2 0 1 0 21.7 15.6a.8.8 0 0 0-1-1z"/></svg>
+    <svg class="ic-sun" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"
+      ><circle cx="12" cy="12" r="4.6" fill="currentColor"/><g stroke="currentColor"
+      stroke-width="2" stroke-linecap="round"><path d="M12 1.8v2.6M12 19.6v2.6M1.8
+      12h2.6M19.6 12h2.6M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M4.8 19.2l1.8-1.8M17.4
+      6.6l1.8-1.8"/></g></svg>
+  </button>
   <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"
      title="This report's source on GitHub" aria-label="Source on GitHub">
     <svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true"
@@ -9234,6 +9306,30 @@ if (SENT_SPIN) {
   var sentSpin = readSpinLink(SENT_SPIN);
   if (sentSpin) openReplay(sentSpin);
 }
+// The sun/moon switch: flips to the other mode and remembers it here.
+(function () {
+  var THEMEKEY = 'bgg-theme';
+  var btn = document.getElementById('themesw');
+  var dark = window.matchMedia('(prefers-color-scheme: dark)');
+  var current = function () {
+    var t = ROOT.getAttribute('data-theme');
+    return t === 'light' || t === 'dark' ? t : (dark.matches ? 'dark' : 'light');
+  };
+  var label = function () {
+    var text = current() === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+    btn.setAttribute('aria-label', text);
+    btn.title = text;
+  };
+  btn.addEventListener('click', function () {
+    var next = current() === 'dark' ? 'light' : 'dark';
+    ROOT.setAttribute('data-theme', next);
+    try { window.localStorage.setItem(THEMEKEY, next); } catch (e) { /* this page only */ }
+    label();
+  });
+  if (dark.addEventListener) dark.addEventListener('change', label);
+  label();
+  btn.hidden = false;
+})();
 // Everything is in its final shape: let the page in.
 ROOT.classList.remove('fade');
 </script>

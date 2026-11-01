@@ -13,6 +13,9 @@ shots, what players say about the game, how you win, how much the players'
 games touch each other, the full player-count poll, and pills that filter the
 table to a designer, mechanic or similar game.
 
+The page follows the system's light or dark mode; the sun/moon button beside
+the source link switches it, and this browser remembers the choice.
+
 [![An expanded row](https://peterlevi.github.io/my-boardgames/screenshot-expanded.png)](https://peterlevi.github.io/my-boardgames/)
 
 Everything but the fetch runs offline, so day-to-day use costs no API calls.

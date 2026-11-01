@@ -48,6 +48,9 @@ jobs:
       - name: Normalise the cached XML
         run: python3 scripts/build.py
 
+      - name: Check that hostile text stays text
+        run: python3 scripts/check_report_safety.py
+
       - name: Render the report
         run: python3 scripts/report.py -o site/index.html
 

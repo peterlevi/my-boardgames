@@ -420,6 +420,7 @@ scripts/screenshot.py  the report        -> a PNG of it        (offline)
 
 scripts/check_scoring.py  tests/expectations.txt -> a pass/fail count (offline)
 scripts/check_interaction.py  tests/interaction_calls.txt -> a score  (offline)
+scripts/check_report_safety.py  hostile game text -> pass/fail      (offline)
 
 scripts/common.py             paths, credentials, shared filter logic
 scripts/scoring.py            win condition and point salad, from the facts
@@ -477,6 +478,27 @@ python3 scripts/query.py --players 5 --min-approval 90 --format json
 python3 scripts/report.py --players 5 --mode best -o reports/best-at-5.html
 python3 scripts/report.py --link-thumbs -o reports/small.html   # ~130 KB, needs internet
 ```
+
+### Rendering someone else's collection
+
+The scripts read `data/` from this checkout unless `MYBG_ROOT` names another
+directory laid out the same way (at least `data/games.json`; `data/gallery/`
+and `data/thumbs/` if you have them). The page's code and the wheel art
+still come from this checkout. `--owner` sets the name in the title and
+`--bgg-user` the BGG collection it links to; `--bgg-user=` leaves the link
+out.
+
+```bash
+MYBG_ROOT=/path/to/theirs python3 scripts/report.py --owner=Alex --bgg-user= \
+  --link-thumbs -o /path/to/theirs/page.html
+MYBG_ROOT=/path/to/theirs python3 scripts/enrich.py --limit 5
+```
+
+Everything in a game record is treated as text written by someone else:
+JSON in the page's scripts escapes `<`, `>` and `&`, placeholders are filled
+in one pass so a name cannot spell one, and only `http(s)` source links
+become links. `python3 scripts/check_report_safety.py` renders a hostile
+record and checks all of that; CI runs it before every build.
 
 ## Hosting
 

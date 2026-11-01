@@ -2,7 +2,13 @@
 import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+# Where data/ and credentials.env live: this checkout, unless MYBG_ROOT names
+# another directory. Code (templates, wheel scenes) always comes from the
+# checkout itself. The override is what lets a program reuse these scripts
+# on someone else's collection: it lays out a directory the way data/ is laid
+# out here and sets MYBG_ROOT before running them.
+ROOT = Path(os.environ.get("MYBG_ROOT") or
+            Path(__file__).resolve().parent.parent).resolve()
 RAW = ROOT / "data" / "raw"
 
 

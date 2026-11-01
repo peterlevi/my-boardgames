@@ -7192,7 +7192,7 @@ function opinionBlock(g) {
       // straight to the game when its id is known, and only otherwise to a
       // search, which is all a bare name ("18xx family") can support.
       var href = id
-        ? 'https://boardgamegeek.com/boardgame/' + id
+        ? 'https://boardgamegeek.com/boardgame/' + encodeURIComponent(id)
         : 'https://boardgamegeek.com/geeksearch.php?action=search' +
           '&objecttype=boardgame&q=' + encodeURIComponent(n);
       return '<a class="chip" target="_blank" rel="noopener" href="' + href +

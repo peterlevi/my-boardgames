@@ -812,3 +812,28 @@ heartbeat, breathe, flicker, glint, running trim) and how its countdown and
 winner arrive (fade, drop, stamp, flip, rise), so the themes do not all
 blink the same way. The theme picker is a grid of square thumbnails — the
 backdrop with a little wheel in the theme's colours — over their names.
+
+## D-32 — The scripts are a library too: data root, owner, untrusted text
+
+A hosted copy of this report renders other people's collections with these
+same scripts, so they take what differs as input instead of being patched:
+`MYBG_ROOT` moves `data/` (and `credentials.env`) to another directory,
+`report.py --owner/--bgg-user` replace the name read from credentials, and
+the code, template and wheel art always come from the checkout. An
+environment variable rather than a flag, because every script derives its
+paths from `common.ROOT` at import time, and one variable reaches all of them
+without threading a flag through each.
+
+Game text is written by other people — BGG's community, CSV uploads, model
+output — so the page treats all of it as text: `script_json` escapes `<`,
+`>`, `&`, U+2028 and U+2029 in every JSON value pasted into a `<script>`
+(otherwise a `</script>` in a description ends the block), `fill()` replaces
+every placeholder in one pass (chained `str.replace` searched text already
+inserted, so a name spelling `/*__DATA__*/` pulled the data in), and only
+`http(s)` sources become links (`javascript:` in an href runs on click).
+`check_report_safety.py` proves each, and fails against the old code.
+
+Dropping non-http links removed two sources from this collection's own page,
+recorded without a scheme ("boardgamegeek.com/thread/…"); they were relative
+links to nowhere before.
+

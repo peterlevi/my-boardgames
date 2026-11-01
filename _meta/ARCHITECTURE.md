@@ -37,9 +37,10 @@ order right for free.
 | `report.py` | the server-rendered rows, and everything that must exist without JavaScript |
 | `report_template.html` | the page's markup, styles and browser-side code |
 | `screenshot.py` | a PNG of the built report, for the README; CI renders it into the published site, never into the repository |
-| `common.py` | paths, credentials, filter logic shared between `query.py` and `report.py` |
+| `common.py` | paths (`ROOT`, overridable with `MYBG_ROOT`), credentials, filter logic shared between `query.py` and `report.py` |
 | `query.py` | the terminal answer to "what should we play" |
 | `check_scoring.py`, `check_interaction.py` | the acceptance tests |
+| `check_report_safety.py` | that hostile game text renders as text (D-32) |
 
 ## The pattern that makes the derived columns trustworthy
 

@@ -441,6 +441,39 @@ def esc(v):
             .replace(">", "&gt;").replace('"', "&quot;"))
 
 
+# Inside <script>, "</script>" or "<!--" in a string would end the block and
+# let the rest be read as markup. JSON allows any character to be written as
+# \uXXXX, so these are escaped in the output and decode to the same strings.
+# U+2028/U+2029 are line terminators to older JavaScript parsers.
+SCRIPT_UNSAFE = {"<": "\\u003c", ">": "\\u003e", "&": "\\u0026",
+                 "\u2028": "\\u2028", "\u2029": "\\u2029"}
+
+
+def script_json(obj, **kw):
+    """json.dumps for a value pasted into a <script> element. Game names,
+    comments, descriptions and opinion text are written by other people."""
+    text = json.dumps(obj, **kw)
+    for ch, rep in SCRIPT_UNSAFE.items():
+        text = text.replace(ch, rep)
+    return text
+
+
+def http_only(urls):
+    """The entries of a list of links that are web addresses. Anything else
+    in an href (javascript:, data:) runs or loads on click."""
+    return [u for u in urls or []
+            if isinstance(u, str) and u.lower().startswith(("https://", "http://"))]
+
+
+def fill(tpl, values):
+    """Replace every placeholder in one pass over the template. Chained
+    str.replace calls would search the text already inserted, so a game named
+    like a later placeholder would pull that placeholder's data into it."""
+    keys = sorted(values, key=len, reverse=True)
+    pattern = re.compile("|".join(re.escape(k) for k in keys))
+    return pattern.sub(lambda m: values[m.group(0)], tpl)
+
+
 def stats_at(g, n):
     """Mirror of statsAt() in the page script."""
     d = g["poll"].get(str(n))
@@ -794,7 +827,7 @@ def trim_ai(ai):
         out["up"] = ai.get("praised") or []
         out["dn"] = ai.get("criticised") or []
         out["sim"] = ai.get("similar") or []
-        out["srcs"] = (ai.get("sources") or [])[:4]
+        out["srcs"] = http_only(ai.get("sources"))[:4]
     return out
 
 
@@ -1207,8 +1240,7 @@ def plural(n, word):
     return f"{n} {word}" + ("" if n == 1 else "s")
 
 
-def headline():
-    who = owner()
+def headline(who):
     return f"{who}'s collection" if who else "Board game collection"
 
 
@@ -1221,8 +1253,7 @@ def counts(data):
     return text
 
 
-def bgg_link():
-    who = owner()
+def bgg_link(who):
     if not who:
         return ""
     return (f'<a href="https://boardgamegeek.com/collection/user/{esc(who)}"'
@@ -1346,6 +1377,11 @@ def main():
     ap.add_argument("--link-thumbs", action="store_true",
                     help="hotlink thumbnails to BGG instead of inlining them")
     ap.add_argument("-o", "--out", default="reports/collection.html")
+    # Both default to the BGG username from the environment, credentials.env
+    # or data/meta.json. A program rendering someone else's collection passes
+    # them instead; --bgg-user= (empty) leaves out the link to BGG.
+    ap.add_argument("--owner", help="name in the page title")
+    ap.add_argument("--bgg-user", help="BGG username the page links to")
     a = ap.parse_args()
     bad = [b for b in picks(a.salad) if b not in SALAD_LABEL]
     if a.salad != "any" and bad:
@@ -1353,6 +1389,9 @@ def main():
                          f"Choose from {', '.join(SALAD_LABEL)}, or any.")
 
     warn_if_stale()
+    who = owner() if a.owner is None or a.bgg_user is None else None
+    shown_as = who if a.owner is None else a.owner
+    links_to = who if a.bgg_user is None else a.bgg_user
     games = load_games()
     # Before the index, so the derived vocabularies are indexed with the rest.
     annotate(games)
@@ -1401,46 +1440,45 @@ def main():
     for g in data:
         g.pop("th", None)
 
-    html = (tpl
-            .replace("<!--__ROWS__-->", rows)
-            .replace("<!--__OPTIONS__-->", players)
-            .replace("<!--__MODE_OPTIONS__-->", modes)
-            .replace("<!--__EXP_OPTIONS__-->", exps)
-            # The band tables travel as data rather than being written out a
-            # second time in JavaScript: the filter, the pill and the column
-            # all read the same rows, so they cannot drift apart.
-            .replace("/*__BANDS__*/", json.dumps(
-                {"weight": WEIGHT_BANDS, "time": TIME_BANDS,
-                 "timeFull": TIME_FULL,
-                 # The interaction kinds the classifier can produce, in the
-                 # order it tries them, so the filter offers exactly what the
-                 # column can show.
-                 "ixkinds": ix_kinds(),
-                 "scales": scales()}))
-            .replace("__SHOWN__", str(shown))
-            .replace("__DESC__", esc(describe(a)))
-            .replace("/*__DATA__*/", json.dumps(data, ensure_ascii=False,
-                                                separators=(",", ":")))
-            .replace("/*__OPTS__*/", json.dumps(opts))
-            .replace("/*__WHEEL_SCENES__*/[]",
-                     json.dumps(wheel_scenes((ROOT / a.out).parent)))
-            .replace("/*__TAGS__*/", json.dumps(tags, ensure_ascii=False,
-                                                separators=(",", ":")))
-            # The poll columns are named after the count they read. render()
-            # rewrites these when the count changes; this is the first paint.
-            .replace("__ATN__", f"Good at {a.players}p" if a.players else "Good at N")
-            .replace("__BESTATN__",
-                     f"Best at {a.players}p" if a.players else "Best at N")
-            .replace("__APPRATN__",
-                     f"Appr at {a.players}p" if a.players else "Appr at N")
-            .replace("__ROOTCLASS__", root_class(a))
-            .replace("__REPO_URL__", esc(repo_url()))
-            .replace("__STAMP__", dt.date.today().isoformat())
-            .replace("__HEADLINE__", esc(headline()))
-            .replace("__COUNTS__", esc(counts(data)))
-            .replace("<!--__BGGLINK__-->", bgg_link())
-            .replace("__NGAMES__", str(sum(1 for g in data if not g["exp"])))
-            .replace("__NEXP__", str(sum(1 for g in data if g["exp"]))))
+    html = fill(tpl, {
+        "<!--__ROWS__-->": rows,
+        "<!--__OPTIONS__-->": players,
+        "<!--__MODE_OPTIONS__-->": modes,
+        "<!--__EXP_OPTIONS__-->": exps,
+        # The band tables travel as data rather than being written out a
+        # second time in JavaScript: the filter, the pill and the column
+        # all read the same rows, so they cannot drift apart.
+        "/*__BANDS__*/": script_json(
+            {"weight": WEIGHT_BANDS, "time": TIME_BANDS,
+             "timeFull": TIME_FULL,
+             # The interaction kinds the classifier can produce, in the
+             # order it tries them, so the filter offers exactly what the
+             # column can show.
+             "ixkinds": ix_kinds(),
+             "scales": scales()}),
+        "__SHOWN__": str(shown),
+        "__DESC__": esc(describe(a)),
+        "/*__DATA__*/": script_json(data, ensure_ascii=False,
+                                    separators=(",", ":")),
+        "/*__OPTS__*/": script_json(opts),
+        "/*__WHEEL_SCENES__*/[]":
+            script_json(wheel_scenes((ROOT / a.out).parent)),
+        "/*__TAGS__*/": script_json(tags, ensure_ascii=False,
+                                    separators=(",", ":")),
+        # The poll columns are named after the count they read. render()
+        # rewrites these when the count changes; this is the first paint.
+        "__ATN__": f"Good at {a.players}p" if a.players else "Good at N",
+        "__BESTATN__": f"Best at {a.players}p" if a.players else "Best at N",
+        "__APPRATN__": f"Appr at {a.players}p" if a.players else "Appr at N",
+        "__ROOTCLASS__": root_class(a),
+        "__REPO_URL__": esc(repo_url()),
+        "__STAMP__": dt.date.today().isoformat(),
+        "__HEADLINE__": esc(headline(shown_as)),
+        "__COUNTS__": esc(counts(data)),
+        "<!--__BGGLINK__-->": bgg_link(links_to),
+        "__NGAMES__": str(sum(1 for g in data if not g["exp"])),
+        "__NEXP__": str(sum(1 for g in data if g["exp"])),
+    })
 
     check_balanced(html)
 

@@ -463,11 +463,10 @@ td.designer .more { color:var(--muted); }
               background:var(--accent); color:var(--bg); }
 .headmeta a { color:var(--accent); }
 .headmeta a:hover { color:var(--ink); }
-/* "Open on BGG" and BGG's credit wrap as one unit, with a clear gap
-   between them; the logo is one line tall. */
-.bggbits { display:inline-flex; align-items:center; gap:26px; }
-.poweredby { display:inline-flex; }
-.poweredby img { height:1.5em; width:auto; display:block; }
+/* BGG's credit sits with the header icons, left of the theme switch, as
+   tall as they are. */
+.poweredby { display:flex; align-items:center; align-self:center; }
+.poweredby img { height:22px; width:auto; display:block; }
 /* BGG's black-and-white logo, drawn in the page's ink: black on a light
    page, white on a dark one. */
 .poweredby img { opacity:.85; }
@@ -1255,13 +1254,14 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
 @media (max-width:700px) {
   .masthead { position:relative; flex-direction:column; align-items:stretch;
     gap:12px; }
-  /* Room for the source link beside the title, and only there: the line
-     under it has the full width. */
-  .mastleft .titlebar { padding-right:70px; }
+  /* Room for the BGG logo and the two icons beside the title, and only
+     there: the line under it has the full width. */
+  .mastleft .titlebar { padding-right:186px; }
   .mastright { display:block; }
   .mastright .pickbtn { width:100%; }
   .mastright #repo { position:absolute; top:0; right:0; height:1.95rem; }
   .mastright #themesw { position:absolute; top:0; right:36px; height:1.95rem; }
+  .mastright .poweredby { position:absolute; top:0; right:72px; height:1.95rem; }
 }
 
 .c-add { display:none; }
@@ -2303,9 +2303,10 @@ td.c-add { text-align:right; white-space:nowrap; }
   <h1><a id="home" href="#" title="Back to the whole collection — clears the
     filters, the sort and any open game">__HEADLINE__</a></h1>
 </div>
-<p class="headmeta"><span id="counts">__COUNTS__</span><!--__BADGE__--><span class="bggbits"><!--__BGGLINK__--><!--__POWERED__--></span></p>
+<p class="headmeta"><span id="counts">__COUNTS__</span><!--__BADGE__--><!--__BGGLINK__--></p>
 </div>
 <div class="mastright">
+  <!--__POWERED__-->
   <button id="themesw" type="button" hidden aria-label="Switch to dark mode"
           title="Switch to dark mode">
     <svg class="ic-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"

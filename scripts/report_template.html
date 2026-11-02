@@ -1250,7 +1250,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   box-shadow:inset 0 2px 6px rgba(0,0,0,.35); }
 /* A phone has no room beside the title for it: the button takes a row of its
    own under the header, full width like the tray's own buttons, and the
-   source link goes back to the top right corner, level with the title. */
+   BGG logo and the icons go back to the top right corner, level with the
+   title. */
 @media (max-width:700px) {
   .masthead { position:relative; flex-direction:column; align-items:stretch;
     gap:12px; }
@@ -1259,8 +1260,8 @@ footer { margin-top:26px; color:var(--muted); font-size:.83rem; max-width:75ch; 
   .mastleft .titlebar { padding-right:186px; }
   .mastright { display:block; }
   .mastright .pickbtn { width:100%; }
-  .mastright #repo { position:absolute; top:0; right:0; height:1.95rem; }
-  .mastright #themesw { position:absolute; top:0; right:36px; height:1.95rem; }
+  .mastright #repo { position:absolute; top:0; right:36px; height:1.95rem; }
+  .mastright #themesw { position:absolute; top:0; right:0; height:1.95rem; }
   .mastright .poweredby { position:absolute; top:0; right:72px; height:1.95rem; }
 }
 
@@ -2307,17 +2308,6 @@ td.c-add { text-align:right; white-space:nowrap; }
 </div>
 <div class="mastright">
   <!--__POWERED__-->
-  <button id="themesw" type="button" hidden aria-label="Switch to dark mode"
-          title="Switch to dark mode">
-    <svg class="ic-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"
-      ><path fill="currentColor" d="M20.7 14.6A8.6 8.6 0 0 1 9.4 3.3a.8.8 0 0 0-1-1A10.2
-      10.2 0 1 0 21.7 15.6a.8.8 0 0 0-1-1z"/></svg>
-    <svg class="ic-sun" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"
-      ><circle cx="12" cy="12" r="4.6" fill="currentColor"/><g stroke="currentColor"
-      stroke-width="2" stroke-linecap="round"><path d="M12 1.8v2.6M12 19.6v2.6M1.8
-      12h2.6M19.6 12h2.6M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M4.8 19.2l1.8-1.8M17.4
-      6.6l1.8-1.8"/></g></svg>
-  </button>
   <a id="repo" href="__REPO_URL__" target="_blank" rel="noopener"
      title="This report's source on GitHub" aria-label="Source on GitHub">
     <svg viewBox="0 0 16 16" width="22" height="22" aria-hidden="true"
@@ -2331,6 +2321,17 @@ td.c-add { text-align:right; white-space:nowrap; }
       1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42
       -3.58-8-8-8Z"/></svg>
   </a>
+  <button id="themesw" type="button" hidden aria-label="Switch to dark mode"
+          title="Switch to dark mode">
+    <svg class="ic-moon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"
+      ><path fill="currentColor" d="M20.7 14.6A8.6 8.6 0 0 1 9.4 3.3a.8.8 0 0 0-1-1A10.2
+      10.2 0 1 0 21.7 15.6a.8.8 0 0 0-1-1z"/></svg>
+    <svg class="ic-sun" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"
+      ><circle cx="12" cy="12" r="4.6" fill="currentColor"/><g stroke="currentColor"
+      stroke-width="2" stroke-linecap="round"><path d="M12 1.8v2.6M12 19.6v2.6M1.8
+      12h2.6M19.6 12h2.6M4.8 4.8l1.8 1.8M17.4 17.4l1.8 1.8M4.8 19.2l1.8-1.8M17.4
+      6.6l1.8-1.8"/></g></svg>
+  </button>
   <!-- The game picker opens a tray down the page's right edge, so its
        switch lives at the top right, centred across both header lines. -->
   <button type="button" id="pickbtn" class="pickbtn" aria-pressed="false"

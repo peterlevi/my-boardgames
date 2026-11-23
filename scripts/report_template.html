@@ -3235,12 +3235,19 @@ function hay(i, g) {
  *  "fcm" for Food Chain Magnate, "tm" for both Terra Mystica and
  *  Terraforming Mars. From the whole name, from the name without a leading
  *  article, and from the title before its subtitle ("tm" for Terraforming
- *  Mars: Ares Expedition), for every name the game is known by. */
+ *  Mars: Ares Expedition), for the game's name and its longer forms. */
 var INITIALS = [];
 function initials(i) {
   if (INITIALS[i]) return INITIALS[i];
   var g = DATA[i], out = {};
-  [g.n].concat(g.alt || []).forEach(function (name) {
+  // Another name counts only when it carries the game's own title, as in
+  // "Terra Mystica: Gaia Project" — not a translation like Patchwork's
+  // Turkish "Yamalı Yorgan", whose "yy" would otherwise find Patchwork.
+  var own = deaccent(String(g.n).toLowerCase()).split(/\s*[:–—]\s*|\s+-\s+/)[0]
+    .replace(/^(the|a|an)\s+/, '');
+  [g.n].concat((g.alt || []).filter(function (name) {
+    return deaccent(String(name).toLowerCase()).indexOf(own) !== -1;
+  })).forEach(function (name) {
     var flat = deaccent(String(name).toLowerCase());
     [flat, flat.split(/\s*[:–—]\s*|\s+-\s+/)[0]].forEach(function (t) {
       var ws = t.split(/[^a-z0-9]+/).filter(Boolean);

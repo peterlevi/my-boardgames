@@ -3231,6 +3231,52 @@ function hay(i, g) {
   return HAY[i];
 }
 
+/** What a game goes by in first letters: "tgz" for The Great Zimbabwe,
+ *  "fcm" for Food Chain Magnate, "tm" for both Terra Mystica and
+ *  Terraforming Mars. From the whole name, from the name without a leading
+ *  article, and from the title before its subtitle ("tm" for Terraforming
+ *  Mars: Ares Expedition), for every name the game is known by. */
+var INITIALS = [];
+function initials(i) {
+  if (INITIALS[i]) return INITIALS[i];
+  var g = DATA[i], out = {};
+  [g.n].concat(g.alt || []).forEach(function (name) {
+    var flat = deaccent(String(name).toLowerCase());
+    [flat, flat.split(/\s*[:–—]\s*|\s+-\s+/)[0]].forEach(function (t) {
+      var ws = t.split(/[^a-z0-9]+/).filter(Boolean);
+      [ws, /^(the|a|an)$/.test(ws[0]) ? ws.slice(1) : ws].forEach(function (list) {
+        var ini = list.map(function (w) { return w[0]; }).join('');
+        if (ini.length >= 2) out[ini] = 1;
+      });
+    });
+  });
+  return (INITIALS[i] = out);
+}
+/** Every abbreviation some game answers to, so a word can be told to be one. */
+var ABBR = null;
+function isAbbr(w) {
+  if (!ABBR) {
+    ABBR = {};
+    DATA.forEach(function (g, i) { Object.assign(ABBR, initials(i)); });
+  }
+  var a = w.replace(/[^a-z0-9]/g, '');
+  return a.length >= 2 && ABBR[a] ? a : null;
+}
+/** Whether a search word lands on a game. A word that is some game's
+ *  abbreviation matches the games it abbreviates, and otherwise only the
+ *  start of a word — so "tm" finds Terra Mystica rather than every
+ *  description with "atmosphere" in it, while "ra" still finds Ra and
+ *  Railways as you type. Any other word matches anywhere, as it always has. */
+function wordHits(i, h, w) {
+  var a = isAbbr(w);
+  if (!a) return h.indexOf(w) !== -1;
+  if (initials(i)[a]) return true;
+  for (var k = h.indexOf(w); k !== -1; k = h.indexOf(w, k + 1)) {
+    if (!k || /[^a-z0-9]/.test(h[k - 1])) return true;
+  }
+  return false;
+}
+
 /** Split every row into two buckets: rows passing the filters, and rows that
  *  only the search term matched. The second bucket is what lets a search find
  *  a game the current filters would otherwise hide. */
@@ -3271,7 +3317,7 @@ function partition() {
     if (hit && words.length) {
       var h = hay(i, g);
       for (var w = 0; w < words.length; w++) {
-        if (h.indexOf(words[w]) === -1) { hit = false; break; }
+        if (!wordHits(i, h, words[w])) { hit = false; break; }
       }
     }
     if (!hit) continue;
@@ -4267,8 +4313,9 @@ function paintAdd() {
   var hits = [];
   if (words.length) {
     DATA.forEach(function (g, i) {
-      var name = deaccent(g.n.toLowerCase());
-      var has = function (w) { return name.indexOf(w) >= 0; };
+      var name = deaccent(g.n.toLowerCase()), ini = initials(i);
+      // "fcm" adds Food Chain Magnate, and "fcm vitan" adds it named so.
+      var has = function (w) { return name.indexOf(w) >= 0 || !!ini[w]; };
       var all = words.every(has), k = words.length;
       if (!all) {
         // The longest run of words, from the front or from the back, that
@@ -4280,11 +4327,12 @@ function paintAdd() {
         k = part.length;
         if (!k || part.join('').length < 3) return;
       }
-      hits.push({ i: i, all: all ? 0 : 1, k: k,
+      hits.push({ i: i, all: all ? 0 : 1, k: k, abbr: ini[words[0]] ? 0 : 1,
                   starts: name.indexOf(words[0]) === 0 ? 0 : 1, rk: g.rk || 1e9 });
     });
     hits.sort(function (a, b) {
-      return a.all - b.all || b.k - a.k || a.starts - b.starts || a.rk - b.rk;
+      return a.all - b.all || b.k - a.k || a.abbr - b.abbr || a.starts - b.starts ||
+        a.rk - b.rk;
     });
   }
   // A game matched on only some of the words carries what you typed as its
@@ -7094,7 +7142,10 @@ function hl(text) {
   // appear together: searching "board dice" should light up both halves.
   var hits = [];
   words.forEach(function (w) {
+    // An abbreviation is marked only where it starts a word, as it matched.
+    var abbr = isAbbr(w);
     for (var i = flat.indexOf(w); i !== -1; i = flat.indexOf(w, i + w.length)) {
+      if (abbr && i && /[a-z0-9]/.test(flat[i - 1])) continue;
       hits.push([i, i + w.length]);
     }
   });

@@ -1,0 +1,57 @@
+{
+ "confidence": "high",
+ "summary": "You run a Scottish clan building a production network that turns raw grain, wool, and wood into higher-value whisky, cloth, and tools, selling on a price-sensitive market or fulfilling exclusive contracts. It plays as a tight five-round optimization puzzle where efficient conversion chains and timing your sales matter far more than fighting over the board.",
+ "praised": [
+  "satisfying, flexible production-chain building",
+  "market prices that realistically swing with supply and demand",
+  "strong variable player powers (clans) and solo mode",
+  "scales well and rewards efficient planning"
+ ],
+ "criticised": [
+  "thin, pasted-on theme over a spreadsheet-like engine",
+  "can feel like multiplayer solitaire with little direct interaction",
+  "dense iconography and rules overhead for new players",
+  "early missteps are hard to recover from in only 5 rounds"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "shared market pressure and contract racing",
+  "detail": "Players mostly build and run separate production networks on their own boards, so most of the game is parallel, but selling goods depresses that good's price for everyone and exclusive contracts/land tiles can be claimed out from under you."
+ },
+ "scoring": {
+  "subsystems": [
+   "production/trade economy",
+   "contract fulfillment",
+   "building/upgrade development"
+  ],
+  "sources": [
+   "leftover money",
+   "unsold goods",
+   "fulfilled contracts",
+   "constructed buildings and upgrade cards",
+   "animals/whisky stock bonuses",
+   "end-game scoring tile objectives"
+  ],
+  "winning_score": 120,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After exactly 5 rounds, whoever has accumulated the most points from money, goods, buildings, and bonus objectives wins."
+ },
+ "similar": [
+  "Le Havre",
+  "Brass: Birmingham",
+  "Great Western Trail",
+  "Agricola",
+  "Teotihuacan: City of Gods"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "abf9d293dfc44704",
+ "_name": "Clans of Caledonia"
+}

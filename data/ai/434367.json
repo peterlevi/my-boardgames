@@ -1,0 +1,58 @@
+{
+ "confidence": "medium",
+ "summary": "Zaibatsu is a 2026 reworking of Sentieiro and Soledade's Nippon, an area-majority economic game where players grow industrial conglomerates by building factories, producing goods, and fulfilling contracts across shared markets during Japan's industrialization. I know the original Nippon's reputation well but haven't seen community reception for this specific new edition, so treat the opinion points below as inherited from the base game rather than confirmed for Zaibatsu.",
+ "praised": [
+  "high player agency — multiple viable paths to victory points",
+  "satisfying production-and-market economic engine",
+  "area-majority tension layered on top of engine-building",
+  "flexible, player-chosen scoring conditions add replayability"
+ ],
+ "criticised": [
+  "fiddly bookkeeping across many simultaneous tracks",
+  "steep learning curve for the weight class",
+  "can run long for a mid-weight economic game",
+  "theme is a dry backdrop for an abstract economic puzzle"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "area majority and market saturation",
+  "detail": "Players compete for majority influence in shared industries and race to saturate markets and claim contracts before others, while each player's factories and railroads are built on their own board."
+ },
+ "scoring": {
+  "subsystems": [
+   "area majority/influence",
+   "contract fulfillment",
+   "factory and railroad network growth"
+  ],
+  "sources": [
+   "contract completion",
+   "industry area-majority bonuses",
+   "factory and market values",
+   "railroad network bonuses",
+   "player-chosen end-game scoring conditions",
+   "leftover income/resources"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "The game ends once a triggering condition (such as exhausting key supplies or a player completing enough development) is met, and whoever scores highest across contracts, area majorities, and their own chosen scoring paths wins."
+ },
+ "similar": [
+  "Nippon",
+  "Brass: Birmingham",
+  "Teotihuacan: City of Gods",
+  "Kanban: Driver's Edition",
+  "Clans of Caledonia"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "Before You Play"
+ ],
+ "_fingerprint": "994cea59151b0797",
+ "_name": "Nippon: Zaibatsu"
+}

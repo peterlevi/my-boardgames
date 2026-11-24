@@ -1,0 +1,590 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="182874">
+         <thumbnail>https://cf.geekdo-images.com/PJRaImV8iXGAq2L-6rrn-w__small/img/CADXd2Eq6iDuB6ZR_JleRAFBUyM=/fit-in/200x150/filters:strip_icc()/pic2649931.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/PJRaImV8iXGAq2L-6rrn-w__original/img/8DrrN_WD5-jXfWj7ZFr0A3eqKPM=/0x0/filters:format(jpeg)/pic2649931.jpg</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Grand Austria Hotel" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Gran Hotel Austria" />
+			    				
+				<name type="alternate" sortindex="1" value="Гранд-готель &quot;Австрія&quot;" />
+			    				
+				<name type="alternate" sortindex="1" value="Гранд-отель &quot;Австрия&quot;" />
+			    				
+				<name type="alternate" sortindex="1" value="グランドオーストリアホテル" />
+			    				
+				<name type="alternate" sortindex="1" value="奧地利大飯店" />
+			    				
+				<name type="alternate" sortindex="1" value="그랜드 오스트리아 호텔" />
+			
+						               													<description>In the thick of the Viennese modern age, exquisite caf&amp;eacute;s are competing for customers. Inspiring artists, important politicians, and tourists from all over the world are populating Vienna and in need of a hotel room. This is your opportunity to turn your little caf&amp;eacute; into a world famous hotel. Hire staff, fulfill the wishes of your guests, and gain the emperor's favor. Only then will your caf&amp;eacute; become the Grand Austria Hotel.
+
+The start player rolls the dice, sorting them by the rolled number and placing them on the corresponding action spaces. On a turn, a player chooses one of the six actions and carries it out. The number of the available dice in the corresponding action spaces determines how much the player gets from the action. They then remove one of the dice and can carry out additional actions. With the different actions, a player can get the necessary drinks and dishes, prepare the rooms, or hire staff.
+
+But no hotel can grow without guests. To choose wisely which guests to attract and to complete their orders brings some important bonus actions. The staff cards also have different advantages, but the game ends after seven rounds and no player can do everything they want, so whoever makes the right decisions and finds the best way to create bonus actions will win.
+
+With 116 different cards and a new set-up in each game, Grand Austria Hotel provides a huge replay value. Each game stands on its own and demands new tactics and strategies.
+
+</description>
+										      	               				<yearpublished value="2015" />
+						               				<minplayers value="2" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="879">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="10" />
+					<result value="Recommended" numvotes="58" />
+					<result value="Not Recommended" numvotes="370" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="651" />
+					<result value="Recommended" numvotes="150" />
+					<result value="Not Recommended" numvotes="14" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="174" />
+					<result value="Recommended" numvotes="465" />
+					<result value="Not Recommended" numvotes="67" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="19" />
+					<result value="Recommended" numvotes="153" />
+					<result value="Not Recommended" numvotes="499" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="378" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 2 players" />
+  <result name="recommmendedwith" value="Recommended with 2–3 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="120" />
+						               				<minage value="12" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="94">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="4" />
+					<result value="10" numvotes="10" />
+					<result value="12" numvotes="55" />
+					<result value="14" numvotes="24" />
+					<result value="16" numvotes="1" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="36">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="33" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="3" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2838" value="Action Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2912" value="Contracts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2072" value="Dice Rolling" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2040" value="Hand Management" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2004" value="Set Collection" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2828" value="Turn Order: Progressive" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="18111" value="Cities: Vienna (Austria)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="12981" value="Country: Austria" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="28659" value="Crowdfunding: Wspieram" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="70354" value="Digital Implementations: Yucata" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="116294" value="Game: Grand Austria Hotel" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65163" value="Mechanism: Dice Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="65851" value="Players: Games with expansions that add solo play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="5841" value="Theme: Food / Cooking" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="106662" value="Theme: Hotels, Inns, Lodgings" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="326177" value="Grand Austria Hotel: Christmas Time Promo" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="238724" value="Grand Austria Hotel: Herr Moras" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="320780" value="Grand Austria Hotel: Let's Waltz!" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="238742" value="Grand Austria Hotel: Mag. Ferdinand" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="452116" value="Grand Austria Hotel: All-In Sleeve Pack" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="432549" value="Grand Austria Hotel: BGExpansions Upgrade Kit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="392596" value="Grand Austria Hotel: BoardGameSet Upgrade Set" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="342041" value="Grand Austria Hotel: Custom Dice" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="343005" value="Grand Austria Hotel: Deluxe Upgrade Pack" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="448935" value="Grand Austria Hotel: Dice Tower" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="435738" value="Grand Austria Hotel: InMyBox Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="332114" value="Grand Austria Hotel: Insert Here Insert" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="437543" value="Grand Austria Hotel: Laserox Organizer" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="262296" value="Grand Austria Hotel: Meeple Source Upgrade kit" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="332127" value="Grand Austria Hotel: Top Shelf Gamer Deluxe Token Bundle" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="428777" value="Grand Austria Hotel: Upended Games Organizer" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="398898" value="High Season: Grand Hotel Roll &amp; Write" />
+		
+									
+			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="6817" value="Virginio Gigli" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="35418" value="Simone Luciani" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="11507" value="Klemens Franz" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="234" value="Lookout Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10768" value="Cranio Creations" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34522" value="CrowD Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="39390" value="Engames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8832" value="Funforge" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="12540" value="Game Harbor" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="8291" value="Korea Boardgames" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="5812" value="Lacerta" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="46500" value="Lord of Boards" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30521" value="Mandoo Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10" value="Mayfair Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="32581" value="PaperGames (III)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="33010" value="SD Games" />
+		
+									
+			
+
+			
+			<videos total="177">
+						<video id="616694" title="Règles, partie, critique -- Pénélope &amp; Polgara" category="session" language="French" link="http://www.youtube.com/watch?v=pNuUeQBGB0M" username="servalwolverine" userid="1976235" postdate="2026-06-18T14:59:22-05:00" />
+						<video id="598577" title="Grand Austria Hotel" category="review" language="English" link="http://www.youtube.com/watch?v=RASK3vwfgnY" username="Melaniebarr" userid="1626931" postdate="2026-02-17T15:15:45-06:00" />
+						<video id="596094" title="Grand Austria Hotel" category="review" language="English" link="http://www.youtube.com/watch?v=bYcrMMRr7M4" username="Melaniebarr" userid="1626931" postdate="2026-02-04T19:42:50-06:00" />
+						<video id="588388" title="Grand Austria Hotel " category="review" language="Polish" link="http://www.youtube.com/watch?v=kPxFwftsgHA" username="Hidetoshi" userid="406745" postdate="2025-12-16T06:21:00-06:00" />
+						<video id="588387" title="Grand Austria Hotel - Rozgrywka | Gry Planszowe u Wookiego " category="other" language="Polish" link="http://www.youtube.com/watch?v=MohHNeKmZcs" username="Hidetoshi" userid="406745" postdate="2025-12-16T06:19:38-06:00" />
+						<video id="588386" title="Dlaczego warto kupić Grand Austria Hotel? | Gry Planszowe u Wookiego " category="review" language="Polish" link="http://www.youtube.com/watch?v=PetlCQoRMp4" username="Hidetoshi" userid="406745" postdate="2025-12-16T06:12:38-06:00" />
+						<video id="588385" title="Grand Hotel Austria | GTTV " category="review" language="Polish" link="http://www.youtube.com/watch?v=JFxMimfK6BI" username="Hidetoshi" userid="406745" postdate="2025-12-16T06:10:47-06:00" />
+						<video id="571370" title="Grand Austria Hotel - Unboxing &amp; Reboxing - What's in the Box?" category="unboxing" language="English" link="http://www.youtube.com/watch?v=CS9n_li2OjI" username="broseygames" userid="4181268" postdate="2025-09-10T20:50:00-05:00" />
+						<video id="570502" title="Grand Austria Hotel - Sirva bem seus hóspedes! | Regras e Gameplay | Tirando a Poeira" category="session" language="Portuguese" link="http://www.youtube.com/watch?v=cvIXJOhzCPc" username="TORUGO" userid="1169932" postdate="2025-09-05T18:16:08-05:00" />
+						<video id="559790" title="Огляд від TheDrotUA" category="review" language="Ukrainian" link="http://www.youtube.com/watch?v=p1FSfsWo4Os" username="davose" userid="1472043" postdate="2025-06-23T06:53:44-05:00" />
+						<video id="551176" title="Ersteindruck: Grand Austria Hotel | Auf den Tisch!" category="other" language="German" link="http://www.youtube.com/watch?v=F937WUyuLPk" username="Ironheart300" userid="1067703" postdate="2025-04-27T03:52:14-05:00" />
+						<video id="544806" title="Grand Austria hotel in about 3 minutes" category="review" language="English" link="http://www.youtube.com/watch?v=pusHFEIZE9o" username="J_3MBG" userid="53862" postdate="2025-03-21T13:49:22-05:00" />
+						<video id="543098" title="Grand Austria Hotel - Straight Up Solo with John LaRuffa" category="review" language="English" link="http://www.youtube.com/watch?v=gHddHYL2tug" username="magnus1515" userid="109899" postdate="2025-03-13T07:42:36-05:00" />
+						<video id="542704" title="Grand Austria Hotel - Unbiased Unboxing with John LaRuffa" category="unboxing" language="English" link="http://www.youtube.com/watch?v=WIYkCjGrgj4" username="magnus1515" userid="109899" postdate="2025-03-11T07:46:00-05:00" />
+						<video id="533676" title="Robert SoloPlay - Grand Austria Hotel - Átbeszélés" category="review" language="Hungarian" link="http://www.youtube.com/watch?v=csyWnsxSHH8" username="RobertSoloPlay" userid="2913260" postdate="2025-01-20T14:03:43-06:00" />
+					</videos>
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="25930" />
+			<average value="7.9625" />
+			<bayesaverage value="7.71573" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="68" bayesaverage="7.71573" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="52" bayesaverage="7.75511" />
+												</ranks>
+
+			<stddev value="1.25112" />
+			<median value="0" />
+			<owned value="33874" />
+			<trading value="213" />
+			<wanting value="1247" />
+			<wishing value="7458" />
+			<numcomments value="3932" />
+			<numweights value="990" />
+			<averageweight value="3.1909" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

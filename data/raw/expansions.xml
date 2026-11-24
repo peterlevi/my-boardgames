@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<items totalitems="24" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse" pubdate="Thu, 15 Oct 2026 21:32:31 +0000">
+<items totalitems="24" termsofuse="https://boardgamegeek.com/xmlapi/termsofuse" pubdate="Mon, 23 Nov 2026 20:41:21 +0000">
 		<item objecttype="thing" objectid="202976" subtype="boardgameexpansion" collid="98869296">
 	<name sortindex="1">7 Wonders Duel: Pantheon</name>
 		<yearpublished>2016</yearpublished>			<image>https://cf.geekdo-images.com/iQRqtxgRuh-4J5vYLdhsMg__original/img/rwOQ9RK6_C9gIy-g_dgkdF6Mb7Y=/0x0/filters:format(png)/pic3143885.png</image>
 		<thumbnail>https://cf.geekdo-images.com/iQRqtxgRuh-4J5vYLdhsMg__small/img/7KX-iJ5e3ZW0LnbEd9OQHRSpHG8=/fit-in/200x150/filters:strip_icc()/pic3143885.png</thumbnail>
-		<stats minplayers="2"																	maxplayers="2"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="52129" >
-				<rating value="8">			<usersrated value="16608" />			<average value="7.99385" />
-			<bayesaverage value="7.62231" />			<stddev value="1.20054" />
+		<stats minplayers="2"																	maxplayers="2"																	minplaytime="30"																	maxplaytime="30"																	playingtime="30"																	numowned="52429" >
+				<rating value="8">			<usersrated value="16679" />			<average value="7.99322" />
+			<bayesaverage value="7.62004" />			<stddev value="1.19898" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.62231" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.65966" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.62004" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.65792" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 07:37:50" />
 	<numplays>5</numplays>			<comment>2
@@ -20,12 +20,12 @@ Integrates well with the game, and adds a layer of depth. But it does break the 
 	<name sortindex="1">Catan: Cities &amp; Knights</name>
 		<yearpublished>1998</yearpublished>			<image>https://cf.geekdo-images.com/CQHOCJI6EFUUsQiGXS9oHg__original/img/o2_Y3Gog9AWWCnEN8MJTuyteZHc=/0x0/filters:format(jpeg)/pic8828016.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/CQHOCJI6EFUUsQiGXS9oHg__small/img/_dw5VORmaXo2j_MYCKVega8aYbw=/fit-in/200x150/filters:strip_icc()/pic8828016.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="4"																	minplaytime="90"																	maxplaytime="150"																	playingtime="150"																	numowned="49999" >
-				<rating value="6">			<usersrated value="22037" />			<average value="7.45421" />
-			<bayesaverage value="7.14792" />			<stddev value="1.46635" />
+		<stats minplayers="3"																	maxplayers="4"																	minplaytime="90"																	maxplaytime="150"																	playingtime="150"																	numowned="50270" >
+				<rating value="6">			<usersrated value="22124" />			<average value="7.45364" />
+			<bayesaverage value="7.14681" />			<stddev value="1.46727" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.14792" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.12524" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.14681" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.12469" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="1" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 14:12:50" />
 	<numplays>1</numplays>			<comment>4 (3)
@@ -36,13 +36,13 @@ Not bad, but feels a bit too fiddly, and changes the game too much, to an extent
 	<name sortindex="1">Catan: Seafarers</name>
 		<yearpublished>1997</yearpublished>			<image>https://cf.geekdo-images.com/v8ll_1CxVGP-KN-NqkoQsg__original/img/HQqjNMRHo7Nxuoa72J5yyIq-NCY=/0x0/filters:format(jpeg)/pic8828019.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/v8ll_1CxVGP-KN-NqkoQsg__small/img/1Kuh2BgF2fqDNHijFUZHBqjKwOA=/fit-in/200x150/filters:strip_icc()/pic8828019.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="4"																	minplaytime="90"																	maxplaytime="90"																	playingtime="90"																	numowned="53361" >
-				<rating value="7">			<usersrated value="21588" />			<average value="7.16542" />
-			<bayesaverage value="6.9102" />			<stddev value="1.34179" />
+		<stats minplayers="3"																	maxplayers="4"																	minplaytime="90"																	maxplaytime="90"																	playingtime="90"																	numowned="53662" >
+				<rating value="7">			<usersrated value="21663" />			<average value="7.1645" />
+			<bayesaverage value="6.9089" />			<stddev value="1.34232" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.9102" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.88367" />
-								<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="Not Ranked" bayesaverage="6.9317" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.9089" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.8827" />
+								<rank type="family" id="5499" name="familygames" friendlyname="Family Game Rank" value="Not Ranked" bayesaverage="6.9306" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 14:12:57" />
 	<numplays>2</numplays>			<comment>4 (3)
@@ -54,11 +54,11 @@ We usually prefer playing Catan without expansions, but if we are to add one, it
 	<name sortindex="1">Catan: Treasures, Dragons &amp; Adventurers</name>
 		<yearpublished>2009</yearpublished>			<image>https://cf.geekdo-images.com/jgEraz-Juo8NZKTOrfzo8w__original/img/5mu1wKyqie1yt9Hf3bdhq-ejLok=/0x0/filters:format(jpeg)/pic6125710.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/jgEraz-Juo8NZKTOrfzo8w__small/img/VcB_SaI8kTHqoxRyuM66c5RdbI8=/fit-in/200x150/filters:strip_icc()/pic6125710.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="4"																	minplaytime="90"																	maxplaytime="90"																	playingtime="90"																	numowned="1932" >
-				<rating value="N/A">			<usersrated value="281" />			<average value="7.50228" />
-			<bayesaverage value="5.68332" />			<stddev value="1.54888" />
+		<stats minplayers="3"																	maxplayers="4"																	minplaytime="90"																	maxplaytime="90"																	playingtime="90"																	numowned="1943" >
+				<rating value="N/A">			<usersrated value="282" />			<average value="7.5005" />
+			<bayesaverage value="5.68317" />			<stddev value="1.54642" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.68332" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.68317" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 14:13:13" />
 	<numplays>0</numplays>			<comment>(shrink)
@@ -68,12 +68,12 @@ We usually prefer playing Catan without expansions, but if we are to add one, it
 	<name sortindex="1">Food Chain Magnate: The Ketchup Mechanism &amp; Other Ideas</name>
 		<yearpublished>2019</yearpublished>			<image>https://cf.geekdo-images.com/5D_bKoIGmYkyWDlhrXdkNQ__original/img/E8qg1LhFMa6WPpXMncsI7PFX28o=/0x0/filters:format(jpeg)/pic4545980.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/5D_bKoIGmYkyWDlhrXdkNQ__small/img/wLK07N5hFoIuowkoq8M3etxb8_0=/fit-in/200x150/filters:strip_icc()/pic4545980.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="120"																	maxplaytime="240"																	playingtime="240"																	numowned="7082" >
-				<rating value="N/A">			<usersrated value="1336" />			<average value="8.78113" />
-			<bayesaverage value="6.64194" />			<stddev value="1.32938" />
+		<stats minplayers="2"																	maxplayers="6"																	minplaytime="120"																	maxplaytime="240"																	playingtime="240"																	numowned="7159" >
+				<rating value="N/A">			<usersrated value="1352" />			<average value="8.77262" />
+			<bayesaverage value="6.64714" />			<stddev value="1.33211" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.64194" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.92841" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.64714" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.93392" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-30 01:18:03" />
 	<numplays>0</numplays>			<comment>(shrink)</comment>			<haspartslist>-shrink</haspartslist>	</item>
@@ -81,12 +81,12 @@ We usually prefer playing Catan without expansions, but if we are to add one, it
 	<name sortindex="1">Great Western Trail: Rails to the North</name>
 		<yearpublished>2018</yearpublished>			<image>https://cf.geekdo-images.com/5p3A6CNiScrt8JWgU1a48g__original/img/IuhBP8gvKZVcdpDjs--jAQgQ-qI=/0x0/filters:format(jpeg)/pic4039881.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/5p3A6CNiScrt8JWgU1a48g__small/img/zfvAEo44RkFnRh-35Sie4RZq2dU=/fit-in/200x150/filters:strip_icc()/pic4039881.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="75"																	maxplaytime="150"																	playingtime="150"																	numowned="12438" >
-				<rating value="N/A">			<usersrated value="4095" />			<average value="8.41071" />
-			<bayesaverage value="7.32182" />			<stddev value="1.21709" />
+		<stats minplayers="2"																	maxplayers="4"																	minplaytime="75"																	maxplaytime="150"																	playingtime="150"																	numowned="12449" >
+				<rating value="N/A">			<usersrated value="4107" />			<average value="8.41049" />
+			<bayesaverage value="7.32085" />			<stddev value="1.21564" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.32182" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.54484" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.32085" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.54412" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 07:54:55" />
 	<numplays>0</numplays>			<comment>(shrink)
@@ -96,11 +96,11 @@ We usually prefer playing Catan without expansions, but if we are to add one, it
 	<name sortindex="1">Innovation: Artifacts of History</name>
 		<yearpublished>2016</yearpublished>			<image>https://cf.geekdo-images.com/YOLyhFbMMdGBFcMpOkQI3g__original/img/Zqty7W5k-zn-1uXl_IkYehvNpIo=/0x0/filters:format(jpeg)/pic3912059.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/YOLyhFbMMdGBFcMpOkQI3g__small/img/hjVyEmW26RJo00PlMucQ8Jn_0js=/fit-in/200x150/filters:strip_icc()/pic3912059.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="45"																	maxplaytime="60"																	playingtime="60"																	numowned="1017" >
-				<rating value="N/A">			<usersrated value="199" />			<average value="7.42754" />
-			<bayesaverage value="5.651" />			<stddev value="1.58146" />
+		<stats minplayers="2"																	maxplayers="5"																	minplaytime="45"																	maxplaytime="60"																	playingtime="60"																	numowned="1016" >
+				<rating value="N/A">			<usersrated value="201" />			<average value="7.42976" />
+			<bayesaverage value="5.65204" />			<stddev value="1.58108" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.651" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.65204" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 14:27:18" />
 	<numplays>0</numplays>			<comment>(shrink)
@@ -111,10 +111,10 @@ We usually prefer playing Catan without expansions, but if we are to add one, it
 		<yearpublished>2016</yearpublished>			<image>https://cf.geekdo-images.com/iXfgz17sknYySBuQ5qL8XA__original/img/ZoBjM4jW0RuKsyhnc7iJSRkaLGk=/0x0/filters:format(jpeg)/pic3912058.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/iXfgz17sknYySBuQ5qL8XA__small/img/Q3NHkXdhFHyfug2I21viKdOO5Zk=/fit-in/200x150/filters:strip_icc()/pic3912058.jpg</thumbnail>
 		<stats minplayers="2"																	maxplayers="4"																	minplaytime="30"																	maxplaytime="75"																	playingtime="75"																	numowned="1107" >
-				<rating value="N/A">			<usersrated value="266" />			<average value="7.77354" />
-			<bayesaverage value="5.72961" />			<stddev value="1.59618" />
+				<rating value="N/A">			<usersrated value="270" />			<average value="7.76208" />
+			<bayesaverage value="5.73076" />			<stddev value="1.59869" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.72961" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.73076" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 14:27:21" />
 	<numplays>0</numplays>			<comment>(shrink)
@@ -124,12 +124,12 @@ We usually prefer playing Catan without expansions, but if we are to add one, it
 	<name sortindex="1">Innovation: Echoes of the Past</name>
 		<yearpublished>2011</yearpublished>			<image>https://cf.geekdo-images.com/PZ8zW_w03U5sBhGcnNKHIw__original/img/XcMP9XUyg8y9theJCZkdlpkcBuY=/0x0/filters:format(jpeg)/pic3910611.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/PZ8zW_w03U5sBhGcnNKHIw__small/img/8UMNVv6pr3KE-kmJ5Eso7jROx9k=/fit-in/200x150/filters:strip_icc()/pic3910611.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="60"																	maxplaytime="60"																	playingtime="60"																	numowned="6200" >
-				<rating value="6.5">			<usersrated value="1891" />			<average value="7.54644" />
-			<bayesaverage value="6.40621" />			<stddev value="1.41645" />
+		<stats minplayers="2"																	maxplayers="5"																	minplaytime="60"																	maxplaytime="60"																	playingtime="60"																	numowned="6206" >
+				<rating value="6.5">			<usersrated value="1895" />			<average value="7.54686" />
+			<bayesaverage value="6.4051" />			<stddev value="1.41587" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.40621" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.58238" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.4051" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.58137" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 14:27:27" />
 	<numplays>1</numplays>			<comment>(open)
@@ -141,12 +141,12 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Innovation: Figures in the Sand</name>
 		<yearpublished>2013</yearpublished>			<image>https://cf.geekdo-images.com/itYfk5CYuc1X9Wq0jv8MGQ__original/img/PnyG7vWLHbgO57X6FEqMGuP1SpI=/0x0/filters:format(jpeg)/pic3910616.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/itYfk5CYuc1X9Wq0jv8MGQ__small/img/Nac9Hy2HigETah3A_M8AC2n7ODU=/fit-in/200x150/filters:strip_icc()/pic3910616.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="30"																	maxplaytime="75"																	playingtime="75"																	numowned="2605" >
-				<rating value="N/A">			<usersrated value="655" />			<average value="7.5083" />
-			<bayesaverage value="5.93804" />			<stddev value="1.49975" />
+		<stats minplayers="2"																	maxplayers="6"																	minplaytime="30"																	maxplaytime="75"																	playingtime="75"																	numowned="2602" >
+				<rating value="N/A">			<usersrated value="656" />			<average value="7.50448" />
+			<bayesaverage value="5.93634" />			<stddev value="1.5018" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.93804" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.07378" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.93634" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.07168" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 14:27:31" />
 	<numplays>1</numplays>			<comment>(shrink)
@@ -156,12 +156,12 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">It&#039;s a Wonderful World: Corruption &amp; Ascension</name>
 		<yearpublished>2020</yearpublished>			<image>https://cf.geekdo-images.com/Zid_TKFdhrEzxNWm4QK9YQ__original/img/uePB8nLq_ou7eNe5H3cRi2JYPfo=/0x0/filters:format(jpeg)/pic5792120.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/Zid_TKFdhrEzxNWm4QK9YQ__small/img/4vYs2S-o1gX0QBH1uqig21xRkxA=/fit-in/200x150/filters:strip_icc()/pic5792120.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="7"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="9624" >
-				<rating value="N/A">			<usersrated value="2111" />			<average value="8.11783" />
-			<bayesaverage value="6.70518" />			<stddev value="1.14337" />
+		<stats minplayers="1"																	maxplayers="7"																	minplaytime="45"																	maxplaytime="45"																	playingtime="45"																	numowned="9691" >
+				<rating value="N/A">			<usersrated value="2124" />			<average value="8.11883" />
+			<bayesaverage value="6.70646" />			<stddev value="1.14154" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.70518" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.92542" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="6.70646" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="6.92812" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-12-04 13:32:13" />
 	<numplays>0</numplays>			<comment>(shrink)</comment>				</item>
@@ -169,12 +169,12 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Lost Ruins of Arnak: Expedition Leaders</name>
 		<yearpublished>2021</yearpublished>			<image>https://cf.geekdo-images.com/U4aoXbKATU7YbA8bAT73FQ__original/img/TKJnD49aci6Soc214_MTUe1iNmg=/0x0/filters:format(png)/pic6253876.png</image>
 		<thumbnail>https://cf.geekdo-images.com/U4aoXbKATU7YbA8bAT73FQ__small/img/g0aac2-OQvMbEPXv1vIvSumPmkA=/fit-in/200x150/filters:strip_icc()/pic6253876.png</thumbnail>
-		<stats minplayers="1"																	maxplayers="4"																	minplaytime="30"																	maxplaytime="120"																	playingtime="120"																	numowned="36786" >
-				<rating value="N/A">			<usersrated value="9969" />			<average value="8.71732" />
-			<bayesaverage value="8.04088" />			<stddev value="1.00443" />
+		<stats minplayers="1"																	maxplayers="4"																	minplaytime="30"																	maxplaytime="120"																	playingtime="120"																	numowned="37198" >
+				<rating value="N/A">			<usersrated value="10070" />			<average value="8.71632" />
+			<bayesaverage value="8.0429" />			<stddev value="1.00378" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="8.04088" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="8.16407" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="8.0429" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="8.16697" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-12-04 13:33:30" />
 	<numplays>0</numplays>			<comment>(shrink)</comment>			<haspartslist>-shrink</haspartslist>	</item>
@@ -182,11 +182,11 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">More Containers</name>
 		<yearpublished>2026</yearpublished>			<image>https://cf.geekdo-images.com/90mBTr7byh16dKQIAGYUvA__original/img/hUF9KmQWe0OdlhR3mJ8spM42V-E=/0x0/filters:format(jpeg)/pic9506830.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/90mBTr7byh16dKQIAGYUvA__small/img/dQZ6BwbjORmvaSsLUwjbZl4H_KI=/fit-in/200x150/filters:strip_icc()/pic9506830.jpg</thumbnail>
-		<stats minplayers="3"																	maxplayers="5"																																																																				numowned="2331" >
-				<rating value="N/A">			<usersrated value="107" />			<average value="7.78433" />
-			<bayesaverage value="5.58421" />			<stddev value="1.63058" />
+		<stats minplayers="3"																	maxplayers="5"																																																																				numowned="2596" >
+				<rating value="N/A">			<usersrated value="123" />			<average value="7.72702" />
+			<bayesaverage value="5.59656" />			<stddev value="1.59662" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.58421" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.59656" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2026-07-05 04:12:54" />
 	<numplays>0</numplays>			<comment>(shrink)</comment>				</item>
@@ -194,12 +194,12 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Orléans: Trade &amp; Intrigue</name>
 		<yearpublished>2016</yearpublished>			<image>https://cf.geekdo-images.com/oIkUXEamzeUHHf-Jhow_zg__original/img/2bfq1WL5ILWHI7eDP-YmcHsZ3Pc=/0x0/filters:format(jpeg)/pic6228509.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/oIkUXEamzeUHHf-Jhow_zg__small/img/wbOQBQrLGZRxaOxlYzJ6sMgF6e4=/fit-in/200x150/filters:strip_icc()/pic6228509.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="90"																	maxplaytime="90"																	playingtime="90"																	numowned="14461" >
-				<rating value="N/A">			<usersrated value="3908" />			<average value="8.37988" />
-			<bayesaverage value="7.27727" />			<stddev value="1.0552" />
+		<stats minplayers="2"																	maxplayers="5"																	minplaytime="90"																	maxplaytime="90"																	playingtime="90"																	numowned="14511" >
+				<rating value="N/A">			<usersrated value="3914" />			<average value="8.37747" />
+			<bayesaverage value="7.27378" />			<stddev value="1.05771" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.27727" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.49807" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.27378" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.49572" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 07:31:43" />
 	<numplays>0</numplays>			<comment>(open)
@@ -208,11 +208,11 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Ra: Traders</name>
 		<yearpublished>2025</yearpublished>			<image>https://cf.geekdo-images.com/BC3Lz66IKiCmDk3m92_f1A__original/img/Yv4yFvXNX2_b64S1F9snJRqOXDM=/0x0/filters:format(png)/pic8362420.png</image>
 		<thumbnail>https://cf.geekdo-images.com/BC3Lz66IKiCmDk3m92_f1A__small/img/149fKktHp9AxFgCUttQgNKC5-gc=/fit-in/200x150/filters:strip_icc()/pic8362420.png</thumbnail>
-		<stats minplayers="2"																	maxplayers="5"																	minplaytime="30"																	maxplaytime="60"																	playingtime="60"																	numowned="2807" >
-				<rating value="N/A">			<usersrated value="371" />			<average value="7.91747" />
-			<bayesaverage value="5.82335" />			<stddev value="1.39577" />
+		<stats minplayers="2"																	maxplayers="5"																	minplaytime="30"																	maxplaytime="60"																	playingtime="60"																	numowned="2930" >
+				<rating value="N/A">			<usersrated value="392" />			<average value="7.91423" />
+			<bayesaverage value="5.83923" />			<stddev value="1.40316" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.82335" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.83923" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-30 01:19:40" />
 	<numplays>0</numplays>			<comment>(shrink)</comment>		<wantpartslist>-shrink</wantpartslist>		</item>
@@ -220,11 +220,11 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Railways of the Lost Atlas: Landmarks of the Lost Atlas</name>
 		<yearpublished>2026</yearpublished>			<image>https://cf.geekdo-images.com/wjrf4VbDFPx3MpnPmbV95w__original/img/bEfx1N8MaTMaNIZ6xJjImyXnZ7o=/0x0/filters:format(jpeg)/pic9715156.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/wjrf4VbDFPx3MpnPmbV95w__small/img/h9xOGVDase3uZe6yaQnfjs6ffaE=/fit-in/200x150/filters:strip_icc()/pic9715156.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="7"																	minplaytime="60"																	maxplaytime="300"																	playingtime="300"																	numowned="708" >
-				<rating value="N/A">			<usersrated value="57" />			<average value="8.28772" />
-			<bayesaverage value="5.56187" />			<stddev value="1.79884" />
+		<stats minplayers="1"																	maxplayers="7"																	minplaytime="60"																	maxplaytime="300"																	playingtime="300"																	numowned="968" >
+				<rating value="N/A">			<usersrated value="89" />			<average value="8.26629" />
+			<bayesaverage value="5.59743" />			<stddev value="1.74446" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.56187" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.59743" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2026-10-15 16:11:19" />
 	<numplays>0</numplays>			<comment>(shrink)</comment>				</item>
@@ -232,13 +232,13 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Root: The Exiles and Partisans Deck</name>
 		<yearpublished>2020</yearpublished>			<image>https://cf.geekdo-images.com/ci78uqda8Oz40A7wozLGaA__original/img/joHuZxT6XAMWr2jl-Kdd6QyQsRo=/0x0/filters:format(png)/pic6330375.png</image>
 		<thumbnail>https://cf.geekdo-images.com/ci78uqda8Oz40A7wozLGaA__small/img/D89paLyV9n6xE-NTQDRnn45MvHQ=/fit-in/200x150/filters:strip_icc()/pic6330375.png</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																																																																				numowned="20294" >
-				<rating value="N/A">			<usersrated value="3602" />			<average value="8.71721" />
-			<bayesaverage value="7.35395" />			<stddev value="1.14335" />
+		<stats minplayers="2"																	maxplayers="6"																																																																				numowned="20459" >
+				<rating value="N/A">			<usersrated value="3634" />			<average value="8.7151" />
+			<bayesaverage value="7.35523" />			<stddev value="1.14331" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.35395" />
-																<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="7.81918" />
-								<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.54634" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.35523" />
+																<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="7.82021" />
+								<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.5479" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 07:23:22" />
 	<numplays>0</numplays>			<comment>(open)
@@ -247,13 +247,13 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Root: The Underworld Expansion</name>
 		<yearpublished>2020</yearpublished>			<image>https://cf.geekdo-images.com/LzZVgiX-d1nA_MSmZmH5tA__original/img/QjducX9OMQbVZf6ei1bhuKRWlAs=/0x0/filters:format(jpeg)/pic4608840.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/LzZVgiX-d1nA_MSmZmH5tA__small/img/RlVbapd_2105eev01lqBqCA4tb0=/fit-in/200x150/filters:strip_icc()/pic4608840.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="6"																	minplaytime="60"																	maxplaytime="90"																	playingtime="90"																	numowned="29901" >
-				<rating value="N/A">			<usersrated value="6652" />			<average value="8.70596" />
-			<bayesaverage value="7.77494" />			<stddev value="1.10602" />
+		<stats minplayers="2"																	maxplayers="6"																	minplaytime="60"																	maxplaytime="90"																	playingtime="90"																	numowned="30147" >
+				<rating value="N/A">			<usersrated value="6714" />			<average value="8.70541" />
+			<bayesaverage value="7.77575" />			<stddev value="1.10577" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.77494" />
-																<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="8.02931" />
-								<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.91632" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.77575" />
+																<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="8.0288" />
+								<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.91727" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 07:23:49" />
 	<numplays>0</numplays>			<comment>(open)
@@ -262,12 +262,12 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Scythe: The Wind Gambit</name>
 		<yearpublished>2017</yearpublished>			<image>https://cf.geekdo-images.com/kcp2L5EPPr-okBb1jCtxpA__original/img/Z7yDWUewStx7ojT0dXKfuT7KJlc=/0x0/filters:format(jpeg)/pic3487272.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/kcp2L5EPPr-okBb1jCtxpA__small/img/WgVl13rTR8CIJos1iBek5BEbRbc=/fit-in/200x150/filters:strip_icc()/pic3487272.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="7"																	minplaytime="70"																	maxplaytime="140"																	playingtime="140"																	numowned="34609" >
-				<rating value="N/A">			<usersrated value="7998" />			<average value="7.76223" />
-			<bayesaverage value="7.17397" />			<stddev value="1.38749" />
+		<stats minplayers="1"																	maxplayers="7"																	minplaytime="70"																	maxplaytime="140"																	playingtime="140"																	numowned="34756" >
+				<rating value="N/A">			<usersrated value="8028" />			<average value="7.76084" />
+			<bayesaverage value="7.17151" />			<stddev value="1.38785" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.17397" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.26433" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.17151" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.26227" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 07:20:31" />
 	<numplays>0</numplays>			<comment>(open)
@@ -278,10 +278,10 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 		<thumbnail>https://cf.geekdo-images.com/0xl3LHm2Yfj27vYKalcLYQ__small/img/ZrYS2DABxOCMojDb7HKmeS1deyQ=/fit-in/200x150/filters:strip_icc()/pic986211.jpg</thumbnail>
 		<stats minplayers="2"																	maxplayers="6"																	minplaytime="120"																	maxplaytime="240"																	playingtime="240"																	numowned="1545" >
 				<rating value="N/A">			<usersrated value="319" />			<average value="7.75959" />
-			<bayesaverage value="5.76589" />			<stddev value="1.09278" />
+			<bayesaverage value="5.76495" />			<stddev value="1.09278" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.76589" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="5.86552" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.76495" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="5.86432" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 13:37:33" />
 	<numplays>0</numplays>			<comment>(open)
@@ -290,11 +290,11 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Steam: Map Expansion #2</name>
 		<yearpublished>2011</yearpublished>			<image>https://cf.geekdo-images.com/rWcG5F94S6L6voEBCev9aQ__original/img/R53cGQlBJO3R80kFZ598flHDHFw=/0x0/filters:format(png)/pic6310573.png</image>
 		<thumbnail>https://cf.geekdo-images.com/rWcG5F94S6L6voEBCev9aQ__small/img/HAs3otEKQcJAsyNT_oREAUig0PU=/fit-in/200x150/filters:strip_icc()/pic6310573.png</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="60"																	maxplaytime="60"																	playingtime="60"																	numowned="1437" >
-				<rating value="N/A">			<usersrated value="179" />			<average value="7.91341" />
-			<bayesaverage value="5.66545" />			<stddev value="1.11276" />
+		<stats minplayers="2"																	maxplayers="4"																	minplaytime="60"																	maxplaytime="60"																	playingtime="60"																	numowned="1443" >
+				<rating value="N/A">			<usersrated value="180" />			<average value="7.90833" />
+			<bayesaverage value="5.66537" />			<stddev value="1.11174" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.66545" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.66537" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 13:37:41" />
 	<numplays>0</numplays>			<comment>(open)
@@ -303,24 +303,24 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">Terraforming Mars: Colonies</name>
 		<yearpublished>2018</yearpublished>			<image>https://cf.geekdo-images.com/OyCyHETRL-RzzYKlF8jshA__original/img/SbCa7xHGKW3v8tYf2CwPYH4t0tQ=/0x0/filters:format(jpeg)/pic4193099.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/OyCyHETRL-RzzYKlF8jshA__small/img/WpvEB_JcNNPngED5fDPb3qZOUEA=/fit-in/200x150/filters:strip_icc()/pic4193099.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="5"																	minplaytime="120"																	maxplaytime="120"																	playingtime="120"																	numowned="32526" >
-				<rating value="N/A">			<usersrated value="8650" />			<average value="8.10246" />
-			<bayesaverage value="7.47587" />			<stddev value="1.28473" />
+		<stats minplayers="1"																	maxplayers="5"																	minplaytime="120"																	maxplaytime="120"																	playingtime="120"																	numowned="32687" >
+				<rating value="N/A">			<usersrated value="8703" />			<average value="8.10206" />
+			<bayesaverage value="7.47497" />			<stddev value="1.28462" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.47587" />
-																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.58654" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.47497" />
+																<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="Not Ranked" bayesaverage="7.58624" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-12-04 13:32:57" />
 	<numplays>0</numplays>			<comment>(shrink)</comment>			<haspartslist>-shrink</haspartslist>	</item>
 		<item objecttype="thing" objectid="339951" subtype="boardgameexpansion" collid="141653997">
-	<name sortindex="1">Vinhos Deluxe Edition: Expansion Bundle</name>
+	<name sortindex="1">Vinhos: Deluxe Edition – Expansion Bundle</name>
 		<yearpublished>2020</yearpublished>			<image>https://cf.geekdo-images.com/5Dp3lorhZcnGabTgWOkyNw__original/img/rwRj0vNIYs6YRlkpDrMlvezKIHg=/0x0/filters:format(jpeg)/pic6223732.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/5Dp3lorhZcnGabTgWOkyNw__small/img/VQKH9gb2N0nM7_-m42iHvS7I_5U=/fit-in/200x150/filters:strip_icc()/pic6223732.jpg</thumbnail>
-		<stats minplayers="1"																	maxplayers="4"																	minplaytime="60"																	maxplaytime="135"																	playingtime="135"																	numowned="1234" >
-				<rating value="N/A">			<usersrated value="142" />			<average value="8.1707" />
-			<bayesaverage value="5.64027" />			<stddev value="1.32843" />
+		<stats minplayers="1"																	maxplayers="4"																	minplaytime="60"																	maxplaytime="135"																	playingtime="135"																	numowned="1243" >
+				<rating value="N/A">			<usersrated value="145" />			<average value="8.16924" />
+			<bayesaverage value="5.64277" />			<stddev value="1.32526" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.64027" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="5.64277" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2026-01-23 01:21:22" />
 	<numplays>0</numplays>							</item>
@@ -328,13 +328,13 @@ Maybe as we play more and learn the cards better, it&#039;ll open up. We&#039;ll
 	<name sortindex="1">War of the Ring: Lords of Middle-earth</name>
 		<yearpublished>2012</yearpublished>			<image>https://cf.geekdo-images.com/zt2LzaUrs-jETOzumDuXjw__original/img/Ub3Iu3UZvyDen8l13VggO2TMKuU=/0x0/filters:format(jpeg)/pic1450880.jpg</image>
 		<thumbnail>https://cf.geekdo-images.com/zt2LzaUrs-jETOzumDuXjw__small/img/W4nkpElzS8C9bTGJHIW2L6I_CSU=/fit-in/200x150/filters:strip_icc()/pic1450880.jpg</thumbnail>
-		<stats minplayers="2"																	maxplayers="4"																	minplaytime="180"																	maxplaytime="180"																	playingtime="180"																	numowned="13261" >
-				<rating value="N/A">			<usersrated value="2537" />			<average value="8.67377" />
-			<bayesaverage value="7.03221" />			<stddev value="1.18212" />
+		<stats minplayers="2"																	maxplayers="4"																	minplaytime="180"																	maxplaytime="180"																	playingtime="180"																	numowned="13336" >
+				<rating value="N/A">			<usersrated value="2547" />			<average value="8.67642" />
+			<bayesaverage value="7.0318" />			<stddev value="1.18114" />
 			<median value="0" />			<ranks>
-												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.03221" />
-																<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="7.92211" />
-								<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="Not Ranked" bayesaverage="7.50749" />
+												<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="Not Ranked" bayesaverage="7.0318" />
+																<rank type="family" id="4664" name="wargames" friendlyname="War Game Rank" value="Not Ranked" bayesaverage="7.9156" />
+								<rank type="family" id="5496" name="thematic" friendlyname="Thematic Rank" value="Not Ranked" bayesaverage="7.50947" />
 											</ranks>		</rating>
 			</stats>	<status own="1" prevowned="0" fortrade="0" want="0" wanttoplay="0" wanttobuy="0" wishlist="0"  preordered="0" lastmodified="2025-09-22 07:32:29" />
 	<numplays>0</numplays>			<comment>2

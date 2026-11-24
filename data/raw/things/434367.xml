@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><item type="boardgame" id="434367">
+         <thumbnail>https://cf.geekdo-images.com/bOs_Um4cUUOpKnypCMykJA__small/img/WLGTv9N3yOkGWZSki-c0nc-L_oY=/fit-in/200x150/filters:strip_icc()/pic8844519.png</thumbnail>
+      <image>https://cf.geekdo-images.com/bOs_Um4cUUOpKnypCMykJA__original/img/RE_9_-ioTp31Fq_r5GZ_XKVGwzw=/0x0/filters:format(png)/pic8844519.png</image>
+   	                                  				
+				<name type="primary" sortindex="1" value="Nippon: Zaibatsu" />
+			
+						                               				
+				<name type="alternate" sortindex="1" value="Ниппон: Дзайбацу" />
+			    				
+				<name type="alternate" sortindex="1" value="니폰: 자이바츠" />
+			
+						               													<description>Nippon: Zaibatsu is a new edition of Nippon, a fast-paced, area-majority economic game. Players control "zaibatsu": massive conglomerates of interconnected companies driving Japan's economy in the Industrial Revolution era.
+
+During the game, players invest in new industries, build factories and railroads, and produce goods to saturate local markets and fulfill contracts &amp;mdash; all to grow their influence and power and to become rulers of the new modernized country. Players are free to choose their playstyle and winning strategy: They choose what they score victory points for, control the game's pace with income turns, and race each other to get the most beneficial factories, markets, and bonuses.
+
+All the core mechanisms of the original Nippon are present, but the components, art, and design are upgraded, and many gameplay features are reworked to get the game in line with modern trends. Nippon: Zaibatsu features new resource types, ships are heavily revised with new Iwakura mission rules, factories are much more variable, consolidation turns provide players with new rewards, and much more. Also, the game now has an automa-driven solo mode.
+
+&amp;mdash;description from the publisher
+
+</description>
+										      	               				<yearpublished value="2026" />
+						               				<minplayers value="1" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="133">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="3" />
+					<result value="Recommended" numvotes="49" />
+					<result value="Not Recommended" numvotes="22" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="19" />
+					<result value="Recommended" numvotes="68" />
+					<result value="Not Recommended" numvotes="17" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="42" />
+					<result value="Recommended" numvotes="57" />
+					<result value="Not Recommended" numvotes="2" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="71" />
+					<result value="Recommended" numvotes="27" />
+					<result value="Not Recommended" numvotes="7" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="48" />
+				</results>					
+	</poll>
+<poll-summary name="suggested_numplayers" title="User Suggested Number of Players">
+  <result name="bestwith" value="Best with 4 players" />
+  <result name="recommmendedwith" value="Recommended with 1–4 players" />
+</poll-summary> 			               				<playingtime value="120" />
+						               				<minplaytime value="60" />
+						               				<maxplaytime value="120" />
+						               				<minage value="15" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="12">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="1" />
+					<result value="12" numvotes="2" />
+					<result value="14" numvotes="9" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 			      			<poll name="language_dependence" title="Language Dependence" totalvotes="14">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="12" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="2" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="0" />
+					<result level="5" value="Unplayable in another language" numvotes="0" />
+				</results>					
+	</poll> 			      			 			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1021" value="Economic" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1088" value="Industry / Manufacturing" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2080" value="Area Majority / Influence" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2912" value="Contracts" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2875" value="End Game Bonuses" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2902" value="Income" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2041" value="Open Drafting" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2819" value="Solo / Solitaire Game" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2897" value="Variable Set-up" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2082" value="Worker Placement" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2933" value="Worker Placement, Different Worker Types" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="64960" value="Components: Map (Continental / National scale)" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="10634" value="Country: Japan" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="8374" value="Crowdfunding: Kickstarter" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="50152" value="History: Industrial Revolution" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="106729" value="Misc: GettingGames Tutorial Videos" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameexpansion" id="468446" value="Nippon: Genro" />
+		
+									
+			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="446681" value="Nippon: Zaibatsu – Metal Coins" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgameaccessory" id="464359" value="Nippon: Zaibatsu – Neoprene Playmat" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameimplementation" id="154809" value="Nippon" inbound="true" />
+		
+									
+			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="46810" value="Nuno Bizarro Sentieiro" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="46809" value="Paulo Soledade" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="152587" value="Maya Kurkhuli" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="34522" value="CrowD Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="56560" value="Boardgame Atelier" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="10768" value="Cranio Creations" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="31815" value="Czacha Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="42325" value="Grok Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="55324" value="HIT Games" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="30677" value="Maldito Games" />
+		
+									
+			
+
+			
+			<videos total="84">
+						<video id="642280" title="Nippon: Zaibatsu Playthrough" category="session" language="English" link="http://www.youtube.com/watch?v=1_zTaVpmRYw" username="Crh007" userid="2068178" postdate="2026-11-22T17:45:55-06:00" />
+						<video id="641307" title="Nippon Zaibatsu - Live Playthrough (Full Gameplay) | Epitrapaizoume.gr" category="session" language="Greek" link="http://www.youtube.com/watch?v=-AxviBIiBqI" username="evkefalas" userid="389019" postdate="2026-11-16T23:01:28-06:00" />
+						<video id="637988" title="Nippon Zaibatsu - Πως Παίζεται (How to Play) &amp; Review | Epitrapaizoume.gr" category="instructional" language="Greek" link="http://www.youtube.com/watch?v=CqDeoJlzYRQ" username="evkefalas" userid="389019" postdate="2026-10-29T00:01:19-05:00" />
+						<video id="636837" title="Nippon Zaibatsu - Explipartie solo" category="session" language="French" link="http://www.youtube.com/watch?v=oyXKrdBTKZE" username="Les_Ludovores" userid="3552908" postdate="2026-10-22T09:46:07-05:00" />
+						<video id="628045" title="اولین نگاه به بازی Nippon Zaibatsu Emperor Edition" category="unboxing" language="Persian" link="http://www.youtube.com/watch?v=w8jepgbZmjQ" username="BoardGameBox" userid="2912656" postdate="2026-09-02T11:45:19-05:00" />
+						<video id="628036" title="Tutorial Nippon: Zaibatsu en català" category="instructional" language="Catalan" link="http://www.youtube.com/watch?v=id7hyFMu-_Q" username="joanf" userid="3629653" postdate="2026-09-02T11:37:52-05:00" />
+						<video id="628035" title="Destroquelant Nippon: Zaibatsu (Unboxing)" category="unboxing" language="Catalan" link="http://www.youtube.com/watch?v=4SjyarHT-TA" username="joanf" userid="3629653" postdate="2026-09-02T11:36:58-05:00" />
+						<video id="627572" title="ceci n'est pas une video règle " category="review" language="French" link="http://www.youtube.com/watch?v=aY_FT6kXMgM" username="Cainayato" userid="136862" postdate="2026-08-30T13:45:55-05:00" />
+						<video id="626323" title="Nippon: Zaibatsu lekcją makroekonomii po Japońsku? | Recenzja gry planszowej" category="review" language="Polish" link="http://www.youtube.com/watch?v=29lOHjUlOKk" username="chmod700" userid="1837323" postdate="2026-08-21T17:55:17-05:00" />
+						<video id="623724" title="Opinando sobre NIPPON: ZAIBATSU" category="review" language="Spanish" link="http://www.youtube.com/watch?v=tJ6YRzU6R7c" username="rikardus66" userid="2802133" postdate="2026-08-05T00:51:36-05:00" />
+						<video id="620598" title="Nippon: Zaibatsu | Game Overview" category="instructional" language="English" link="http://www.youtube.com/watch?v=yC7vwi_Tt3w" username="Sethcloud1" userid="1555675" postdate="2026-07-14T21:47:58-05:00" />
+						<video id="620260" title="NIPPON: ZAIBATSU - ¿TOP 1 de 2026? - Reseña y Opinión" category="review" language="Spanish" link="http://www.youtube.com/watch?v=lkPX9LfHZKM" username="sanz33" userid="1298987" postdate="2026-07-13T02:51:18-05:00" />
+						<video id="619457" title="Unboxing: Nippon Zaibatsu" category="unboxing" language="Spanish" link="http://www.youtube.com/watch?v=b6gdFQpftOE" username="StarGamers" userid="1907987" postdate="2026-07-08T05:10:21-05:00" />
+						<video id="619427" title="Nippon Zaibatsu - Unboxing &amp; Εντυπώσεις (First Impressions) | Epitrapaizoume.gr" category="unboxing" language="Greek" link="http://www.youtube.com/watch?v=f3WQlQmtAps" username="evkefalas" userid="389019" postdate="2026-07-07T23:01:55-05:00" />
+						<video id="618240" title="Nippon: Zaibatsu - Tutorial - KludiK" category="instructional" language="Spanish" link="http://www.youtube.com/watch?v=JLnOlM_jEFw" username="karallan" userid="585668" postdate="2026-06-30T16:10:26-05:00" />
+					</videos>
+
+	
+
+	
+	
+	
+   		<statistics page="1">
+								<ratings>
+			<usersrated value="3625" />
+			<average value="8.47978" />
+			<bayesaverage value="7.22753" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="284" bayesaverage="7.22753" />
+																				<rank type="family" id="5497" name="strategygames" friendlyname="Strategy Game Rank" value="136" bayesaverage="7.45468" />
+												</ranks>
+
+			<stddev value="1.18361" />
+			<median value="0" />
+			<owned value="6877" />
+			<trading value="35" />
+			<wanting value="274" />
+			<wishing value="2354" />
+			<numcomments value="631" />
+			<numweights value="217" />
+			<averageweight value="3.6083" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>

@@ -1,0 +1,56 @@
+{
+ "confidence": "high",
+ "summary": "Each round a shared pool of dice is sorted onto action spaces, and players draft from them in turn order to gather resources, hire staff, and serve hotel guests who demand specific resource sets for points. It's a brisk, tense efficiency puzzle where you're constantly weighing a cheap-but-picked-over die against an expensive one that does exactly what you need.",
+ "praised": [
+  "clever dice-drafting that gives everyone access to any value at a cost",
+  "tight resource-to-guest matching puzzle",
+  "fast turns keep the game moving",
+  "good variety from staff and guest cards each session"
+ ],
+ "criticised": [
+  "largely multiplayer solitaire outside of dice-drafting order",
+  "dice and card luck can swing outcomes",
+  "fiddly bookkeeping of resources and tracks",
+  "theme feels bolted onto an abstract optimization engine"
+ ],
+ "interaction": {
+  "level": "Low",
+  "kind": "drafting order and indirect blocking",
+  "detail": "The dice pool and turn order are shared and taking a die before an opponent can is the main way you affect them, but each player serves guests and builds their hotel on an entirely separate personal board."
+ },
+ "scoring": {
+  "subsystems": [
+   "guest fulfillment",
+   "hotel floor construction",
+   "emperor favor track"
+  ],
+  "sources": [
+   "points from served guest cards",
+   "staff card bonuses",
+   "completed floor/room bonuses",
+   "color-completion bonus tiles",
+   "end-game emperor track bonus"
+  ],
+  "winning_score": 110,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": [
+   "fixed_length"
+  ],
+  "how_you_win": "After a set number of rounds tracked on the round track, the player with the most points from served guests, floor bonuses, and emperor favor wins."
+ },
+ "similar": [
+  "The Voyages of Marco Polo",
+  "Orléans",
+  "Trajan",
+  "Istanbul",
+  "Carpe Diem"
+ ],
+ "teachers": [
+  "Rahdo Runs Through",
+  "Watch It Played",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "097fc54bb2a897cb",
+ "_name": "Grand Austria Hotel"
+}

@@ -1,0 +1,57 @@
+{
+ "confidence": "medium",
+ "summary": "Set in the Abbasid House of Wisdom, players place dice-workers from the studio's signature action-retrieval system to gather resources, translate scrolls for points, climb knowledge tracks, and court three guilds for majority bonuses. It plays as a heavy, interlocking engine-builder with a lot of simultaneous tracks to juggle and a steep teach for a game with such an inviting, colorful look.",
+ "praised": [
+  "deep, interlocking strategic paths to score",
+  "the dice-as-workers action-retrieval system feels tense and tactical",
+  "strong production values and distinctive art",
+  "rewards building an efficient engine over the full game"
+ ],
+ "criticised": [
+  "heavy rules overhead and dense iconography for newcomers",
+  "long individual turns can slow the table",
+  "seen by some as reusing the studio's familiar formula once again",
+  "weight feels at odds with its light, cartoonish presentation"
+ ],
+ "interaction": {
+  "level": "Medium",
+  "kind": "worker/dice placement blocking and guild majority contests",
+  "detail": "Taking an action space or die before an opponent can denies it to them, and the three guild tracks are directly contested for majority bonuses, but most resource gathering and scroll translation happens on each player's own caravan board."
+ },
+ "scoring": {
+  "subsystems": [
+   "scroll translation",
+   "knowledge track advancement",
+   "guild influence majorities"
+  ],
+  "sources": [
+   "points from translated scrolls",
+   "knowledge track milestone bonuses",
+   "guild majority bonuses",
+   "leftover resources",
+   "end-game bonus objectives"
+  ],
+  "winning_score": 100,
+  "tally": "mixed",
+  "shape": "sum",
+  "ends_by": [
+   "end_trigger",
+   "exhaustion"
+  ],
+  "how_you_win": "The game ends once a deck is exhausted or a track is fully climbed, and the player with the most points from translated scrolls, knowledge progress, and guild influence wins."
+ },
+ "similar": [
+  "Architects of the West Kingdom",
+  "Paladins of the West Kingdom",
+  "Raiders of the North Sea",
+  "Trickerion: Legends of Illusion",
+  "The Voyages of Marco Polo"
+ ],
+ "teachers": [
+  "Watch It Played",
+  "Rahdo Runs Through",
+  "JonGetsGames"
+ ],
+ "_fingerprint": "6219474c78ff3891",
+ "_name": "Scholars of the South Tigris"
+}
